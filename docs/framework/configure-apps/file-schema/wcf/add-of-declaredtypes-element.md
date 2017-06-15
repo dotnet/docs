@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;declaredTypes&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,8 +30,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
   
 ## Syntax  
   
-```  
-  
+```xml  
 <add type="String">  
    <knownType type="String">  
        <parameter index="Integer"  
@@ -71,7 +70,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
   
 ## Example  
   
-```  
+```xml  
 <add type="MyCompany.Library.Shape,   
            MyAssembly, Version=2.0.0.0, Culture=neutral,  
            PublicKeyToken=XXXXXX, processorArchitecture=MSIL">  

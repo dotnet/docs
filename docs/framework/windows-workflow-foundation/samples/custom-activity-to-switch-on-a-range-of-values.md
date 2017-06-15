@@ -2,7 +2,7 @@
 title: "Custom Activity to Switch on a Range of Values | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -33,7 +33,6 @@ public sealed class SwitchRange<T> : NativeActivity where T : IComparable
    [DefaultValue(null)]  
    public Activity Default { get; set; }}  
 }  
-  
 ```  
   
 |Property|Description|  
@@ -56,7 +55,6 @@ public class CaseRange<T> where T : IComparable
   
     public Activity Action { get; set; }  
 }  
-  
 ```  
   
 > [!NOTE]
@@ -92,7 +90,6 @@ Activity SwitchRange = new SwitchRange<int>
     },  
     Default = new WriteLine { Text = "Default Case selected" }  
 };  
-  
 ```  
   
 #### To use this sample  

@@ -2,7 +2,7 @@
 title: "&lt;probing&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Specifies application base subdirectories for the common language runtime to sea
   
 ## Syntax  
   
-```  
+```xml  
 <probing privatePath="paths"/>  
 ```  
   
@@ -64,7 +64,7 @@ Specifies application base subdirectories for the common language runtime to sea
 ## Example  
  The following example shows how to specify application base subdirectories the runtime should search for assemblies.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

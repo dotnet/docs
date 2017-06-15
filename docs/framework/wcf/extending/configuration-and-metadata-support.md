@@ -39,7 +39,7 @@ This topic describes how to enable configuration and metadata support for bindin
 ### Extending BindingElementExtensionElement  
  The following example code is taken from the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. The `UdpTransportElement` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `UdpTransportBindingElement` to the configuration system. With a few basic overrides, the sample defines the configuration section name, the type of the binding element and how to create the binding element. Users can then register the extension section in a configuration file as follows.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <extensions>  
@@ -49,12 +49,11 @@ This topic describes how to enable configuration and metadata support for bindin
     </extensions>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The extension can be referenced from custom bindings to use UDP as the transport.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <bindings>  
@@ -66,7 +65,6 @@ This topic describes how to enable configuration and metadata support for bindin
     </bindings>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ### Adding Configuration for a Binding  
@@ -93,12 +91,11 @@ protected override void OnApplyConfiguration(string configurationName)
             if (this.ClientBaseAddress != null)  
                    udpBinding.ClientBaseAddress = ClientBaseAddress;  
 }  
-  
 ```  
   
  To register this handler with the configuration system, add the following section to the relevant configuration file.  
   
-```  
+```xml  
 <configuration>  
   <configSections>  
      <sectionGroup name="system.serviceModel">  
@@ -112,7 +109,7 @@ protected override void OnApplyConfiguration(string configurationName)
   
  It can then be referenced from the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) configuration section.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <client>  
@@ -125,7 +122,6 @@ protected override void OnApplyConfiguration(string configurationName)
     </client>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## Adding Metadata Support for a Binding Element  
@@ -157,7 +153,7 @@ if (soapBinding != null)
 #### WSDL Import  
  To extend the WSDL import system to handle importing the addresses, add the following configuration to the configuration file for Svcutil.exe as shown in the Svcutil.exe.config file:  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <client>  
@@ -217,7 +213,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
 #### Policy Import  
  To extend the policy import system, add the following configuration to the configuration file for Svcutil.exe as shown in the Svcutil.exe.config file:  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <client>  

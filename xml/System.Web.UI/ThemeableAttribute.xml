@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Passing `true` to this constructor is equivalent to using the <xref:System.Web.UI.ThemeableAttribute> field, while passing `false` is equivalent to using the <xref:System.Web.UI.ThemeableAttribute> field.  
+ Passing `true` to this constructor is equivalent to using the <xref:System.Web.UI.ThemeableAttribute.Yes> field, while passing `false` is equivalent to using the <xref:System.Web.UI.ThemeableAttribute.No> field.  
   
    
   
@@ -89,7 +89,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of the <xref:System.Web.UI.ThemeableAttribute> class is equivalent to the <xref:System.Web.UI.ThemeableAttribute> field. This is not necessarily equivalent to an instance that is created using the default class constructor.  
+ The default value of the <xref:System.Web.UI.ThemeableAttribute> class is equivalent to the <xref:System.Web.UI.ThemeableAttribute.Yes> field. This is not necessarily equivalent to an instance that is created using the default class constructor.  
   
  ]]></format>
         </remarks>

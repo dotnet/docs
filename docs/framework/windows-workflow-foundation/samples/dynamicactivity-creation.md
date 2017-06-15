@@ -2,7 +2,7 @@
 title: "DynamicActivity Creation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -44,7 +44,6 @@ DynamicActivity act = new DynamicActivity()
         }  
     },  
 };  
-  
 ```  
   
  The following code example shows the complete definition of the `DynamicActivity` that computes the average of the values in a list.  
@@ -103,7 +102,7 @@ DynamicActivity act = new DynamicActivity()
   
  When created in XAML, the input and output are declared as shown in the following example.  
   
-```  
+```xml  
 <Activity x:Class="Microsoft.Samples.DynamicActivityCreation.FindAverage"  
           xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"  
           xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"  
@@ -117,20 +116,18 @@ DynamicActivity act = new DynamicActivity()
 </Activity>  
 ```  
   
- The XAML can be created visually using the [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]. If it is included in a Visual Studio project, be sure to set its “Build Action” to “None” to prevent it from being compiled. The XAML can then be loaded dynamically using the following call.  
+ The XAML can be created visually using the [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]. If it is included in a Visual Studio project, be sure to set its "Build Action" to "None" to prevent it from being compiled. The XAML can then be loaded dynamically using the following call.  
   
 ```  
 Activity act2 = ActivityXamlServices.Load(@"FindAverage.xaml");  
-  
 ```  
   
- The <xref:System.Activities.DynamicActivity> instance created programmatically or through loading a XAML workflow can be used as shown in the following code example. Please note that “act” passed to the `WorkflowInvoker.Invoke` is the “act” <xref:System.Activities.Activity> defined in the first code example.  
+ The <xref:System.Activities.DynamicActivity> instance created programmatically or through loading a XAML workflow can be used as shown in the following code example. Please note that "act" passed to the `WorkflowInvoker.Invoke` is the "act" <xref:System.Activities.Activity> defined in the first code example.  
   
 ```  
 IDictionary<string, object> results = WorkflowInvoker.Invoke(act, new Dictionary<string, object> { { "Numbers", numbers } });  
   
 Console.WriteLine("The average calculated using the code activity is = " + results["Average"]);  
-  
 ```  
   
 #### To use this sample  

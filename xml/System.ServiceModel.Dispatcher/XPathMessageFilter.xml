@@ -264,6 +264,29 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a message or XML document satisfies the query criteria of the XPath filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods check one filter against a message. If you need to check the message against multiple filters, put the filters into a filter table and then use the match methods provided by the table.  
+  
+ If you only need to test the message headers and not the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
+  
+ If you need to test parts of the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
+  
+ For tests that involve XPath queries, use one of the remaining overloads of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Match">
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
@@ -317,7 +340,7 @@
         <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <summary>Determines whether a buffered message satisfies the query criteria of the XPath filter.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> satisfies the filter criteria; otherwise<see langword=" false" />.</returns>
+          <see langword="true" /> if the <see cref="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> satisfies the filter criteria; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -438,7 +461,7 @@
 ## Remarks  
  Some filters can be extremely expensive to evaluate or are very long running. Because filters operate on XML documents, the best way to set computational limits is to specify the maximum number of nodes that should be looked at during a filter evaluation.  
   
- The quota is initially set to <xref:System.Int32>.  
+ The quota is initially set to <xref:System.Int32.MaxValue>.  
   
  ]]></format>
         </remarks>
@@ -743,28 +766,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Match">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a message or XML document satisfies the query criteria of the XPath filter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These methods check one filter against a message. If you need to check the message against multiple filters, put the filters into a filter table and then use the match methods provided by the table.  
-  
- If you only need to test the message headers and not the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
-  
- If you need to test parts of the message body, use the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A> method.  
-  
- For tests that involve XPath queries, use one of the remaining overloads of the <xref:System.ServiceModel.Dispatcher.XPathMessageFilter.Match%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

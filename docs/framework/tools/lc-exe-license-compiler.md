@@ -44,7 +44,6 @@ The License Compiler reads text files that contain licensing information and pro
 ## Syntax  
   
 ```  
-  
       lc /target:  
       targetPE /complist:filename [/outdir:path]  
 /i:modules [/nologo] [/v]  
@@ -89,14 +88,13 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 ```  
   
 ## Response File Example  
- The following listing shows an example of a response file, `response.rsp`. For more information on response files, see [Response Files](http://msdn.microsoft.com/library/9f53987b-20ee-470a-ab62-fce997bb5e15).  
+ The following listing shows an example of a response file, `response.rsp`. For more information on response files, see [Response Files](/visualstudio/msbuild/msbuild-response-files).  
   
 ```  
 /target:hostapp.exe  
 /complist:hostapplic.txt   
 /i:WFCPrj.dll   
 /outdir:"C:\My Folder"  
-  
 ```  
   
  The following command line uses the `response.rsp` file.  

@@ -33,7 +33,7 @@
  The channel listeners and factories are used to construct the part of the channel stacks used to process incoming and outgoing messages.  
   
 > [!NOTE]
->  If a session-based binding is created with a <xref:System.ServiceModel.Channels.ContextBindingElement> and used with a contract that specifies <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> = <xref:System.ServiceModel.SessionMode>, an <xref:System.InvalidOperationException> is thrown when the channel is created with the following text: "Channel context management cannot be enabled or disabled after the channel is opened." You must set <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> to <xref:System.ServiceModel.SessionMode> or <xref:System.ServiceModel.SessionMode> or not use a session-based channel.  
+>  If a session-based binding is created with a <xref:System.ServiceModel.Channels.ContextBindingElement> and used with a contract that specifies <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> = <xref:System.ServiceModel.SessionMode.NotAllowed>, an <xref:System.InvalidOperationException> is thrown when the channel is created with the following text: "Channel context management cannot be enabled or disabled after the channel is opened." You must set <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> to <xref:System.ServiceModel.SessionMode.Allowed> or <xref:System.ServiceModel.SessionMode.Required> or not use a session-based channel.  
   
  When creating a custom binding, it is recommended that you add the <xref:System.ServiceModel.Channels.ContextBindingElement> to the <xref:System.ServiceModel.Channels.BindingElementCollection> of the custom binding before adding any reliability and security binding elements, if present. If you do not, your service may throw a <xref:System.ServiceModel.ProtocolException> with the following message:  
   
@@ -59,7 +59,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Sets the default values of <xref:System.Net.Security.ProtectionLevel> for <xref:System.Net.Security.ProtectionLevel> and <xref:System.ServiceModel.Channels.ContextExchangeMechanism> for <xref:System.ServiceModel.Channels.ContextExchangeMechanism>.  
+ Sets the default values of <xref:System.Net.Security.ProtectionLevel.Sign> for <xref:System.Net.Security.ProtectionLevel> and <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader> for <xref:System.ServiceModel.Channels.ContextExchangeMechanism>.  
   
  ]]></format>
         </remarks>
@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Sets the default value of <xref:System.ServiceModel.Channels.ContextExchangeMechanism> for <xref:System.ServiceModel.Channels.ContextExchangeMechanism>.  
+ Sets the default value of <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader> for <xref:System.ServiceModel.Channels.ContextExchangeMechanism>.  
   
  ]]></format>
         </remarks>

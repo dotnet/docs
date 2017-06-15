@@ -2,7 +2,7 @@
 title: "ICorDebugModule2::ApplyChanges Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ApplyChanges method [.NET Framework debugging]"
   - "ICorDebugModule2::ApplyChanges method [.NET Framework debugging]"
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

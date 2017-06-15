@@ -63,8 +63,8 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|`Type`|The <xref:System.Web.UI.WebControls.FontSize> value.|  
-|`Unit`|A <xref:System.Web.UI.WebControls.Unit> with the <xref:System.Web.UI.WebControls.Unit.Value%2A> property equal to `value` and the <xref:System.Web.UI.WebControls.Unit.Type%2A> property equal to the <xref:System.Web.UI.WebControls.UnitType> value.|  
+|`Type`|The <xref:System.Web.UI.WebControls.FontSize.AsUnit> value.|  
+|`Unit`|A <xref:System.Web.UI.WebControls.Unit> with the <xref:System.Web.UI.WebControls.Unit.Value%2A> property equal to `value` and the <xref:System.Web.UI.WebControls.Unit.Type%2A> property equal to the <xref:System.Web.UI.WebControls.UnitType.Point> value.|  
   
  ]]></format>
         </remarks>
@@ -235,7 +235,7 @@
   
 |Property|Initial Value|  
 |--------------|-------------------|  
-|`Type`|The <xref:System.Web.UI.WebControls.FontSize> value.|  
+|`Type`|The <xref:System.Web.UI.WebControls.FontSize.AsUnit> value.|  
 |`Unit`|A <xref:System.Web.UI.WebControls.Unit> with the <xref:System.Web.UI.WebControls.Unit.Value%2A> property equal to `value` and the <xref:System.Web.UI.WebControls.Unit.Type%2A> property equal to `type`.|  
   
  ]]></format>
@@ -269,7 +269,7 @@
   
 |String value|<xref:System.Web.UI.WebControls.FontUnit>|  
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|  
-|`xx-small`, `xxsmall`|<xref:System.Web.UI.WebControls.FontUnit>|  
+|`xx-small`, `xxsmall`|<xref:System.Web.UI.WebControls.FontUnit.XXSmall>|  
 |`x-small`, `xsmall`|<xref:System.Web.UI.WebControls.FontUnit.XSmall>|  
 |`x-large`, `xlarge`|<xref:System.Web.UI.WebControls.FontUnit.XLarge>|  
 |`xx-large`, `xxlarge`|<xref:System.Web.UI.WebControls.FontUnit.XXLarge>|  
@@ -279,9 +279,9 @@
 |`larger`|<xref:System.Web.UI.WebControls.FontUnit.Larger>|  
 |`medium`|<xref:System.Web.UI.WebControls.FontUnit.Medium>|  
   
- In all cases, the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property has the value <xref:System.Web.UI.WebControls.FontSize>. The string comparison is case insensitive.  
+ In all cases, the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property has the value <xref:System.Web.UI.WebControls.FontSize.NotSet>. The string comparison is case insensitive.  
   
- For all other values of `value`, a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class is created by treating `value` as a font size and setting the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property to <xref:System.Web.UI.WebControls.UnitType>.  
+ For all other values of `value`, a new instance of the <xref:System.Web.UI.WebControls.FontUnit> class is created by treating `value` as a font size and setting the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property to <xref:System.Web.UI.WebControls.UnitType.Point>.  
   
  ]]></format>
         </remarks>
@@ -435,7 +435,7 @@
  In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Larger"`. In browsers earlier than Internet Explorer 4.0, no HTML rendered output is created.  
   
 > [!NOTE]
->  Some browers do not recognize the <xref:System.Web.UI.WebControls.FontSize> font size. Check your browser for compatibility.  
+>  Some browers do not recognize the <xref:System.Web.UI.WebControls.FontSize.Larger> font size. Check your browser for compatibility.  
   
  ]]></format>
         </remarks>
@@ -741,7 +741,7 @@
  In Internet Explorer 4.0 and later, the HTML rendered output from a control with the <xref:System.Web.UI.WebControls.FontInfo.Size%2A> property set to this field is `style= "font-size:Smaller"`. In browsers earlier than Internet Explorer 4.0, no HTML rendered output is created.  
   
 > [!NOTE]
->  Some browers do not recognize the <xref:System.Web.UI.WebControls.FontSize> font size. Check your browser for compatibility.  
+>  Some browers do not recognize the <xref:System.Web.UI.WebControls.FontSize.Smaller> font size. Check your browser for compatibility.  
   
  ]]></format>
         </remarks>
@@ -827,7 +827,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.FontUnit.ToString%2A> method to retrieve the string representation of the <xref:System.Web.UI.WebControls.FontUnit> object using a culture-specific format provider for any numeric values that are in the string.  
   
- If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the unit value that is contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. The numeric portion of the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> value is formatted using the specified `formatProvider`. In other words, when the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize> value, the returned string representation is generated using the <xref:System.Web.UI.WebControls.Unit.ToString%28System.IFormatProvider%29?displayProperty=fullName> method on the unit object that is stored in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
+ If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize.AsUnit> value, the returned string is the string equivalent of the unit value that is contained in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property. The numeric portion of the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> value is formatted using the specified `formatProvider`. In other words, when the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to the <xref:System.Web.UI.WebControls.FontSize.AsUnit> value, the returned string representation is generated using the <xref:System.Web.UI.WebControls.Unit.ToString%28System.IFormatProvider%29?displayProperty=fullName> method on the unit object that is stored in the <xref:System.Web.UI.WebControls.FontUnit.Unit%2A> property.  
   
  If the <xref:System.Web.UI.WebControls.FontUnit.Type%2A> property is set to any other <xref:System.Web.UI.WebControls.FontSize> value, the returned string is the string equivalent of the <xref:System.Web.UI.WebControls.FontSize> value.  
   

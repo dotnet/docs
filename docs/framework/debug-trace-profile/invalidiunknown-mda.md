@@ -46,7 +46,7 @@ The `invalidIUnknown` managed debugging assistant (MDA) is activated when an inv
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidIUnknown />  

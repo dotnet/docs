@@ -2,7 +2,7 @@
 title: "&lt;endpointDiscovery&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;endpointDiscovery&gt;
 Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<endpointBehaviors>  
 \<behavior>  
@@ -26,8 +26,19 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
   
 ## Syntax  
   
-```  
-<behaviors>  <endpointBehaviors>    <behavior name="String">      <endpointDiscovery enabled="Boolean">        <scopes>          <add scope="URI"/>        </scopes>        <extensions>        </extensions>      </endpointDiscovery>    </behavior>  </endpointBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="String">
+      <endpointDiscovery enabled="Boolean">
+        <scopes>
+          <add scope="URI"/>
+        </scopes>
+        <extensions />
+      </endpointDiscovery>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  
@@ -62,8 +73,7 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 ## Example  
  The following configuration example specifies filtering scopes and extension metadata to be published for an endpoint.  
   
-```  
-  
+```xml  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -98,7 +108,6 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
     </behavior>  
   </endpointBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

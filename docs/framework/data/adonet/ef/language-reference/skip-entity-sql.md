@@ -2,7 +2,7 @@
 title: "SKIP (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,6 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
 ## Syntax  
   
 ```  
-  
 [ SKIP n ]  
 ```  
   

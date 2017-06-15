@@ -73,7 +73,6 @@ myTraceSwitch.Level = TraceLevel.Info
 MessageBox.Show(myTraceSwitch.TraceWarning.ToString())  
 ' This messagebox displays false.  
 MessageBox.Show(myTraceSwitch.TraceVerbose.ToString())  
-  
 ```  
   
 ```csharp  
@@ -85,7 +84,6 @@ myTraceSwitch.Level = System.Diagnostics.TraceLevel.Info;
 MessageBox.Show(myTraceSwitch.TraceWarning.ToString());  
 // This message box displays false.  
 MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());  
-  
 ```  
   
 ## Developer-Defined Switches  

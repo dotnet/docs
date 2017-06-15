@@ -2,6 +2,7 @@
 title: "&lt;caches&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,12 +24,12 @@ Registers the caches used for session tokens and token replay detection.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-    </caches>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <caches>  
+    </caches>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -60,7 +61,7 @@ Registers the caches used for session tokens and token replay detection.
 ## Example  
  The following XML shows the configuration of a custom cache for holding session security tokens (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). The configuration is taken from the `ClaimsAwareWebFarm` sample.  
   
-```  
+```xml  
 <caches>  
   <sessionSecurityTokenCache type="CacheLibrary.SharedSessionSecurityTokenCache, CacheLibrary">  
     <!--cacheServiceAddress points to the centralized session security token cache service running in the web farm.-->  

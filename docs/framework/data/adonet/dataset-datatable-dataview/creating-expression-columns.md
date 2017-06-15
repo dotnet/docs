@@ -2,7 +2,7 @@
 title: "Creating Expression Columns | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,6 @@ You can define an expression for a column, enabling it to contain a value calcul
 workTable.Columns.Add("Total",Type.GetType("System.Double"))  
 workTable.Columns.Add("SalesTax", Type.GetType("System.Double"), _  
   "Total * 0.086")  
-  
 ```  
   
 ```csharp  

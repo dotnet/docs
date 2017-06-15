@@ -2,7 +2,7 @@
 title: "Session | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,10 +47,9 @@ public interface ICalculatorSession
     [OperationContract]  
     double Result();  
 }  
-  
 ```  
   
- The service uses a <xref:System.ServiceModel.InstanceContextMode> of <xref:System.ServiceModel.InstanceContextMode> to bind a given service instance context to each incoming session. This allows the service to maintain the running result for each session in a local member variable.  
+ The service uses a <xref:System.ServiceModel.InstanceContextMode> of <xref:System.ServiceModel.InstanceContextMode.PerSession> to bind a given service instance context to each incoming session. This allows the service to maintain the running result for each session in a local member variable.  
   
 ```  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]  
@@ -76,7 +75,6 @@ public class CalculatorService : ICalculatorSession
     public double Result()  
     {  return result; }  
 }  
-  
 ```  
   
  When you run the sample, the client makes several requests to the server and requests the result, which it then displays in the client console window. Press ENTER in the client window to shut down the client.  

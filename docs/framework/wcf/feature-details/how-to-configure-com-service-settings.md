@@ -2,7 +2,7 @@
 title: "How to: Configure COM+ Service Settings | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,6 @@ public interface IFinances
     string Debit(string accountNo, double amount);  
     string Credit(string accountNo, double amount);  
 }  
-  
 ```  
   
  If the component is exposed as a Web service, the corresponding service contract that is exposed, and that clients would need to conform to, is as follows:  
@@ -49,7 +48,6 @@ public interface IFinancesContract : IDisposable
     [OperationContract]  
     string Credit(string accountNo, double amount);  
 }  
-  
 ```  
   
 > [!NOTE]
@@ -69,7 +67,7 @@ public interface IFinancesContract : IDisposable
   
      In the COM+-hosted case, the named pipes transport is used by default, but an off-machine transport like TCP can be used instead.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <system.serviceModel>  
@@ -102,7 +100,6 @@ public interface IFinancesContract : IDisposable
         </services>  
     </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

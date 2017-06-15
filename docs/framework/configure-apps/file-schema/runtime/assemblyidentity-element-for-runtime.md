@@ -2,7 +2,7 @@
 title: "&lt;assemblyIdentity&gt; Element for &lt;runtime&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,9 +38,8 @@ Contains identifying information about the assembly.
   
 ## Syntax  
   
-```  
-  
-   <assemblyIdentity    
+```xml  
+   <assemblyIdentity    
 name="assembly name"  
 publicKeyToken="public key token"  
 culture="assembly culture"/>  
@@ -86,28 +85,28 @@ culture="assembly culture"/>
   
  The following example shows a configuration file for two assemblies with the same name that target two different two processor architectures, and whose versions have not been maintained in synch. When the application executes on the x86 platform the first `<assemblyIdentity>` element applies and the other is ignored. If the application executes on a platform other than x86 or ia64, both are ignored.  
   
-```  
+```xml  
 <configuration>  
-   <runtime>  
-      <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
-         <dependentAssembly>  
-            <assemblyIdentity name="MyAssembly"  
-                  publicKeyToken="14a739be0244c389"  
-                  culture="neutral"  
-                  processorArchitecture="x86" />  
-            <bindingRedirect oldVersion= "1.0.0.0"   
-                  newVersion="1.1.0.0" />  
-         </dependentAssembly>  
-         <dependentAssembly>  
-            <assemblyIdentity name="MyAssembly"  
-                  publicKeyToken="14a739be0244c389"  
-                  culture="neutral"   
-                  processorArchitecture="ia64" />  
-            <bindingRedirect oldVersion="1.0.0.0"   
-                  newVersion="2.0.0.0" />  
-         </dependentAssembly>  
-      </assemblyBinding>  
-   </runtime>  
+   <runtime>  
+      <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
+         <dependentAssembly>  
+            <assemblyIdentity name="MyAssembly"  
+                  publicKeyToken="14a739be0244c389"  
+                  culture="neutral"  
+                  processorArchitecture="x86" />  
+            <bindingRedirect oldVersion= "1.0.0.0"   
+                  newVersion="1.1.0.0" />  
+         </dependentAssembly>  
+         <dependentAssembly>  
+            <assemblyIdentity name="MyAssembly"  
+                  publicKeyToken="14a739be0244c389"  
+                  culture="neutral"   
+                  processorArchitecture="ia64" />  
+            <bindingRedirect oldVersion="1.0.0.0"   
+                  newVersion="2.0.0.0" />  
+         </dependentAssembly>  
+      </assemblyBinding>  
+   </runtime>  
 </configuration>  
 ```  
   
@@ -116,7 +115,7 @@ culture="assembly culture"/>
 ## Example  
  The following example shows how to provide information about an assembly.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

@@ -1,6 +1,7 @@
 # [Statements, Expressions, and Operators](index.md)
 ## [Statements](statements.md)
 ## [Expressions](expressions.md)
+### [Expression-bodied members](expression-bodied-members.md)
 ## [Operators](operators.md)
 ## [Anonymous Functions](anonymous-functions.md)
 ### [Lambda Expressions](lambda-expressions.md)

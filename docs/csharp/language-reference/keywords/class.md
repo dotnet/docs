@@ -36,7 +36,6 @@ translation.priority.mt:
 Classes are declared using the keyword `class`, as shown in the following example:  
   
 ```  
-  
       class TestClass  
 {  
     // Methods, properties, fields, events, delegates   
@@ -66,12 +65,12 @@ Classes are declared using the keyword `class`, as shown in the following exampl
   
 -   [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-  
 -   [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)  
   
 -   [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
   
+-   [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+
 -   [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
   
 -   [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
@@ -109,7 +108,7 @@ Console.Write(child1.name);   // Error
  Finally, notice that for the object created using the default constructor (`child3`), the age field was initialized to zero by default.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

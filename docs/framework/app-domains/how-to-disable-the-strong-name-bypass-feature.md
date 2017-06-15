@@ -44,10 +44,10 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name s
   
 2.  Add the following entry:  
   
-    ```  
+    ```xml  
     <configuration>  
       <runtime>  
-         < bypassTrustedAppStrongNames enabled="false" />  
+        <bypassTrustedAppStrongNames enabled="false" />  
       </runtime>  
     </configuration>  
     ```  

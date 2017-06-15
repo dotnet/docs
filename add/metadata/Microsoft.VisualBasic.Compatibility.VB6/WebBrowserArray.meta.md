@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.#ctor(System.ComponentModel.IContainer)
 author: "stevehoag"
 ms.author: "shoag"

@@ -2,7 +2,7 @@
 title: "How to:Determine the Discovery Version of a Probe Request | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,6 @@ A discovery proxy may expose multiple discovery endpoints using different discov
     DiscoveryOperationContextExtension doce = OperationContext.Current.Extensions.Find<DiscoveryOperationContextExtension>();  
     // Access the discovery version from the DiscoveryOperationContextExtension  
     doce.DiscoveryVersion;  
-  
     ```  
   
 ## See Also  

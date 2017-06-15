@@ -67,7 +67,7 @@
   
  ]]></format>
     </remarks>
-    <threadsafe>Only the <see cref="M:System.Messaging.MessageQueue.GetAllMessages" />methodis thread safe.</threadsafe>
+    <threadsafe>Only the <see cref="M:System.Messaging.MessageQueue.GetAllMessages" /> method is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -201,7 +201,7 @@
         <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer. For information about the proper syntax for this parameter, see the Remarks section.</param>
+        <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer.</param>
         <param name="sharedModeDenyReceive">
           <see langword="true" /> to grant exclusive read access to the first application that accesses the queue; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class that references the Message Queuing queue at the specified path and with the specified read-access restriction.</summary>
@@ -852,7 +852,7 @@
   
  Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceive%2A> with transactions. If you want to perform a transactional asynchronous operation, call <xref:System.Messaging.MessageQueue.BeginPeek%2A>, and put the transaction and the (synchronous) <xref:System.Messaging.MessageQueue.Receive%2A> method within the event handler you create for the peek operation. Your event handler might contain functionality as shown in the following C# code.  
   
-```  
+```csharp  
 myMessageQueue.BeginTransaction();  
  myMessageQueue.Receive();  
  myMessageQueue.CommitTransaction();  
@@ -931,7 +931,7 @@ myMessageQueue.BeginTransaction();
   
  Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceive%2A> with transactions. If you want to perform a transactional asynchronous operation, call <xref:System.Messaging.MessageQueue.BeginPeek%2A>, and put the transaction and the (synchronous) <xref:System.Messaging.MessageQueue.Receive%2A> method within the event handler you create for the peek operation. Your event handler might contain functionality as shown in the following C# code.  
   
-```  
+```csharp  
 myMessageQueue.BeginTransaction();  
  myMessageQueue.Receive();  
  myMessageQueue.CommitTransaction();  
@@ -1010,7 +1010,7 @@ myMessageQueue.BeginTransaction();
   
  Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceive%2A> with transactions. If you want to perform a transactional asynchronous operation, call <xref:System.Messaging.MessageQueue.BeginPeek%2A>, and put the transaction and the (synchronous) <xref:System.Messaging.MessageQueue.Receive%2A> method within the event handler you create for the peek operation. Your event handler might contain functionality as shown in the following C# code.  
   
-```  
+```csharp  
 myMessageQueue.BeginTransaction();  
  myMessageQueue.Receive();  
  myMessageQueue.CommitTransaction();  
@@ -1087,7 +1087,7 @@ myMessageQueue.BeginTransaction();
   
  Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceive%2A> with transactions. If you want to perform a transactional asynchronous operation, call <xref:System.Messaging.MessageQueue.BeginPeek%2A>, and put the transaction and the (synchronous) <xref:System.Messaging.MessageQueue.Receive%2A> method within the event handler you create for the peek operation. Your event handler might contain functionality as shown in the following C# code.  
   
-```  
+```csharp  
 myMessageQueue.BeginTransaction();  
  myMessageQueue.Receive();  
  myMessageQueue.CommitTransaction();  
@@ -1166,7 +1166,7 @@ myMessageQueue.BeginTransaction();
   
  Do not use the asynchronous call <xref:System.Messaging.MessageQueue.BeginReceive%2A> with transactions. If you want to perform a transactional asynchronous operation, call <xref:System.Messaging.MessageQueue.BeginPeek%2A>, and put the transaction and the (synchronous) <xref:System.Messaging.MessageQueue.Receive%2A> method within the event handler you create for the peek operation. Your event handler might contain functionality as shown in the following C# code.  
   
-```  
+```csharp  
 myMessageQueue.BeginTransaction();  
  myMessageQueue.Receive();  
  myMessageQueue.CommitTransaction();  
@@ -1418,7 +1418,7 @@ myMessageQueue.BeginTransaction();
 ## Remarks  
  <xref:System.Messaging.MessageQueue.Close%2A> frees all resources associated with a <xref:System.Messaging.MessageQueue>, including shared resources if appropriate. The system re-acquires these resources automatically if they are still available, for example when you call the <xref:System.Messaging.MessageQueue.Send%28System.Object%29> method, as in the following C# code.  
   
-```  
+```csharp  
 myMessageQueue.Send("Text 1.");  
 myMessageQueue.Close();  
 myMessageQueue.Send("Text 2."); //Resources are re-acquired.  
@@ -6021,17 +6021,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property.  
   
- [Visual Basic]  
-  
  <xref:System.Messaging.MessageQueueTransaction> is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
   
-```  
+```vb  
 <System.MTAThreadAttribute>  
  public sub Main()  
-```  
-  
-```vb  
-  
 ```  
   
  The following table shows whether this method is available in various Workgroup modes.  
@@ -6222,17 +6216,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  The <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property applies to any object other than a <xref:System.Messaging.Message>. If you specify, for example, a label or a priority using the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> member, these values apply to any message that contains an object that is not of type <xref:System.Messaging.Message> when your application sends it to the queue. When sending a <xref:System.Messaging.Message>, the property values set for the <xref:System.Messaging.Message> take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> and the message's <xref:System.Messaging.Message.Formatter%2A?displayProperty=fullName> property takes precedence over the queue's <xref:System.Messaging.MessageQueue.Formatter%2A?displayProperty=fullName> property  
   
- [Visual Basic]  
-  
  <xref:System.Messaging.MessageQueueTransaction> is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
   
-```  
+```vb  
 <System.MTAThreadAttribute>  
  public sub Main()  
-```  
-  
-```vb  
-  
 ```  
   
  The following table shows whether this method is available in various Workgroup modes.  
@@ -6431,7 +6419,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
    
   
 ## Examples  
-<!-- TODO: review snippet reference  [!CODE [The following code example demonstrates the use of this method.](The following code example demonstrates the use of this method.)]  -->  
+ The following code example demonstrates the use of <xref:System.Messaging.MessageQueue.SetPermissions%28System.Messaging.AccessControlList%29>.      
   
  [!code-cpp[MessageQueue2#26](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue2/cpp/class1.cpp#26)]
  [!code-csharp[MessageQueue2#26](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue2/CS/class1.cs#26)]  
@@ -6770,17 +6758,11 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
   
  If you send a non-transactional message to a transactional queue, you will not be able to roll back the message in the event of an exception.  
   
- [Visual Basic]  
-  
  <xref:System.Messaging.MessageQueueTransaction> is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
   
-```  
+```vb  
 <System.MTAThreadAttribute>  
  public sub Main()  
-```  
-  
-```vb  
-  
 ```  
   
  The following table shows whether this property is available in various Workgroup modes.  

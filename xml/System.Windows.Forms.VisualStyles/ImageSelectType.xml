@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A visual style can define up to five multiple-image files for an element. These image files are specified by the <xref:System.Windows.Forms.VisualStyles.FilenameProperty> values <xref:System.Windows.Forms.VisualStyles.FilenameProperty> through <xref:System.Windows.Forms.VisualStyles.FilenameProperty>. The <xref:System.Windows.Forms.VisualStyles.ImageSelectType> values indicate when the visual style selects a different image file to draw the element.  
+ A visual style can define up to five multiple-image files for an element. These image files are specified by the <xref:System.Windows.Forms.VisualStyles.FilenameProperty> values <xref:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile1> through <xref:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile5>. The <xref:System.Windows.Forms.VisualStyles.ImageSelectType> values indicate when the visual style selects a different image file to draw the element.  
   
  The <xref:System.Windows.Forms.VisualStyles.ImageSelectType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
   

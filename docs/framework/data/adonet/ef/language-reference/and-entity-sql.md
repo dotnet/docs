@@ -2,7 +2,7 @@
 title: "&amp;&amp; (AND) (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,6 @@ Returns `true` if both expressions are `true`; otherwise, `false` or `NULL`.
 ## Syntax  
   
 ```  
-  
 boolean_expression AND boolean_expression  
 or  
 boolean_expression && boolean_expression  

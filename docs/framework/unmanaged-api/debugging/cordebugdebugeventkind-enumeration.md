@@ -18,6 +18,8 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 6075a6cd-97e6-4472-a090-0dd14860d1f3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -29,7 +31,6 @@ Indicates the type of event whose information is decoded by the [DecodeEvent](..
 ## Syntax  
   
 ```  
-  
 typedef enum CorDebugDebugEventKind {  
     DEBUG_EVENT_KIND_MODULE_LOADED                          = 1,  
     DEBUG_EVENT_KIND_MODULE_UNLOADED                        = 2,  
@@ -38,7 +39,6 @@ typedef enum CorDebugDebugEventKind {
     DEBUG_EVENT_KIND_MANAGED_EXCEPTION_CATCH_HANDLER_FOUND  = 5,  
     DEBUG_EVENT_KIND_MANAGED_EXCEPTION_UNHANDLED            = 6  
 } CorDebugRecordFormat;  
-  
 ```  
   
 ## Members  

@@ -2,7 +2,7 @@
 title: "Creating AutoIncrement Columns | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,6 @@ Dim workColumn As DataColumn = workTable.Columns.Add( _
 workColumn.AutoIncrement = true  
 workColumn.AutoIncrementSeed = 200  
 workColumn.AutoIncrementStep = 3  
-  
 ```  
   
 ```csharp  

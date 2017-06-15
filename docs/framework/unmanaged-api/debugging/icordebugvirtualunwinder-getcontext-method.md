@@ -2,7 +2,7 @@
 title: "ICorDebugVirtualUnwinder::GetContext Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,14 +23,12 @@ Gets the current context of this unwinder.
 ## Syntax  
   
 ```  
-  
 HRESULT GetContext(  
    [in] ULONG32 contextFlags,  
    [in] ULONG32 cbContextBuf,  
    [out] ULONG32* contextSize,  
    [out, size_is(cbContextBuf)] BYTE contextBuf[]  
 );  
-  
 ```  
   
 #### Parameters  

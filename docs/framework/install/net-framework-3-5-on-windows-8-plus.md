@@ -1,7 +1,7 @@
 ---
-title: "Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10 | Microsoft Docs"
+title: "Troubleshooting the installation of the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10 | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/20/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -18,6 +18,7 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
+
 # Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10
 The .NET Framework is an integral part of many applications running on Windows and provides common functionality for those applications to run. For developers, the .NET Framework provides a consistent programming model for building applications. if you are using the Windows operating system, the .NET Framework may already be installed on your computer. Specifically, the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included with [!INCLUDE[win8](../../../includes/win8-md.md)], the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included with [!INCLUDE[win81](../../../includes/win81-md.md)] and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included with Windows 10.  
   
@@ -55,7 +56,7 @@ The .NET Framework is an integral part of many applications running on Windows a
 ## Enable the .NET Framework 3.5 in Control Panel  
  You can enable the .NET Framework 3.5 yourself through Control Panel. This option requires an Internet connection.  
   
-1.  Press the Windows key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard, type Windows Features, and press Enter. This brings up the **Turn Windows features on or off** dialog box. Alternately, open Control Panel, click on the Programs items, and then click on “Turn Windows features on or off” under Programs and Features.  
+1.  Press the Windows key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard, type Windows Features, and press Enter. This brings up the **Turn Windows features on or off** dialog box. Alternately, open Control Panel, click on the Programs items, and then click on "Turn Windows features on or off" under Programs and Features.  
   
 2.  Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, press OK, and reboot your computer if prompted.  
   

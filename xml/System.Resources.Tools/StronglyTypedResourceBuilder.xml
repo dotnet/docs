@@ -224,7 +224,7 @@ System.Resources.ResourceManager rm = new System.Resources.ResourceManager("<res
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="basename " />or <paramref name="codeProvider" /> is <see langword="null" />.</exception>
+          <paramref name="basename" /> or <paramref name="codeProvider" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="VerifyResourceName">

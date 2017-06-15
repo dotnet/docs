@@ -2,7 +2,7 @@
 title: "&lt;wsDualHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
   
 ## Syntax  
   
-```  
-  
+```xml  
 <wsDualHttpBinding>  
         <binding name="string"  
         closeTimeout="TimeSpan"  
@@ -105,7 +104,7 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
 <bindings>  

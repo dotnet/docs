@@ -47,6 +47,8 @@ The C# code that comprises an application consists of statements made up of keyw
   
 -   [Expressions](../../../csharp/programming-guide/statements-expressions-operators/expressions.md)  
   
+    -   [Expression-bodied members](expression-bodied-members.md)
+ 
 -   [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
   
 -   [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)  
@@ -64,7 +66,7 @@ The C# code that comprises an application consists of statements made up of keyw
 -   [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

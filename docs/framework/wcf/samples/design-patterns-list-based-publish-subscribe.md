@@ -2,7 +2,7 @@
 title: "Design Patterns: List-Based Publish-Subscribe | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -112,7 +112,6 @@ public class PriceChangeEventArgs : EventArgs
         }  
   
     }  
-  
 ```  
   
  When you run the sample, launch several clients. The clients subscribe to the service. Then run the data source program, which sends information to the service. The service passes on the information to all subscribers. You can see activity on each client console confirming that the information has been received. Press ENTER in the client window to shut down the client.  

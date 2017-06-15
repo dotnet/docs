@@ -25,7 +25,7 @@ Packages construction arguments for a non-default constructor object element dec
 ## XAML Element Usage (Nondefault constructor)  
   
 ```  
-<object ...>  
+<object ...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  
@@ -35,7 +35,7 @@ Packages construction arguments for a non-default constructor object element dec
 ## XAML Element Usage (factory method)  
   
 ```  
-<object x:FactoryMethod="methodName"...>  
+<object x:FactoryMethod="methodName"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  
@@ -81,7 +81,7 @@ public class Food {
 }  
 ```  
   
-```  
+```xaml  
 <my:Food>  
     <x:Arguments>  
         <x:String>Apple</x:String>  
@@ -104,7 +104,7 @@ public Food TryLookupFood(string name)
 }  
 ```  
   
-```  
+```xaml  
 <my:Food x:FactoryMethod="TryLookupFood">  
     <x:Arguments>  
         <x:String>Apple</x:String>  

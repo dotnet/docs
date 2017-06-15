@@ -2,7 +2,7 @@
 title: "Troubleshooting Correlation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,18 +60,17 @@ class CustomFactory : WorkflowServiceHostFactory
  When this handler is invoked, the message can be retrieved by using the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs.Message%2A> property of the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs>, and will resemble the following message.  
   
 ```Output  
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
-  <s:Header>  
-    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>  
-    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService/AddItem</Action>  
-  </s:Header>  
-  <s:Body>  
-    <AddItem xmlns="http://tempuri.org/">  
-      <Item>Books</Item>  
-    </AddItem>  
-  </s:Body>  
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
+  <s:Header>  
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>  
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService/AddItem</Action>  
+  </s:Header>  
+  <s:Body>  
+    <AddItem xmlns="http://tempuri.org/">  
+      <Item>Books</Item>  
+    </AddItem>  
+  </s:Body>  
 </s:Envelope>  
-  
 ```  
   
  Inspecting messages dispatched to the <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived> handler may provide clues about why the message did not correlate to an instance of the workflow service.  
@@ -90,7 +89,7 @@ host.WorkflowExtensions.Add(new ConsoleTrackingParticipant());
 ## Use WCF Tracing  
  WCF tracing provides tracing of the flow of messages to and from a workflow service. This tracing information is useful when troubleshooting correlation issues, especially for content-based correlation. To enable tracing, specify the desired trace listeners in the `system.diagnostics` section of the `web.config` file if the workflow service is Web-hosted, or the `app.config` file if the workflow service is self-hosted. To include the contents of the messages in the trace file, specify `true` for `logEntireMessage` in the `messageLogging` element in the `diagnostics` section of `system.serviceModel`. In the following example, tracing information, including the content of the messages, is configured to be written to a file that is named `service.svclog`.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.diagnostics>  
@@ -209,7 +208,6 @@ public class AddItemMessage
     [MessageBodyMember]  
     public string Item;  
 }  
-  
 ```  
   
  This message contract is used by a <xref:System.ServiceModel.Activities.Receive> activity in a workflow. The `CartId` in the header of the message is used to correlate the message to the correct instance. If the XPath query that retrieves the `CartId` is created using the correlation dialogs in the workflow designer, the following incorrect XPath query is generated.  
@@ -256,7 +254,6 @@ sm:header()/tempuri:CartId
     <p1:OutArgument x:TypeArguments="m:AddItemMessage">[AddItemMessage]</p1:OutArgument>  
   </ReceiveMessageContent>  
 </Receive>  
-  
 ```  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] content-based correlation, see [Content Based](../../../../docs/framework/wcf/feature-details/content-based-correlation.md) and the [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md) sample.

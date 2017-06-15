@@ -2,7 +2,7 @@
 title: "&lt;authentication&gt; of &lt;clientCertificate&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies authentication behaviors for client certificates used by a service.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <authentication  
 customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
@@ -48,7 +47,7 @@ trustedStoreLocation="CurrentUser/LocalMachine"
 |Attribute|Description|  
 |---------------|-----------------|  
 |customCertificateValidatorType|Optional string. A type and assembly used to validate a custom type. This attribute must be set when `certificateValidationMode` is set to `Custom`.|  
-|certificateValidationMode|Optional enumeration. Specifies one of the modes used to validate credentials. This attribute is of the <xref:System.Servicemodel.Security.X509CertificateValidation> type. If set to `Custom`, then a `customCertificateValidator` must also be supplied. The default is `ChainTrust`.|  
+|certificateValidationMode|Optional enumeration. Specifies one of the modes used to validate credentials. This attribute is of the <xref:System.ServiceModel.Security.X509CertificateValidationMode> type. If set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom?displayProperty=fullName>, then a `customCertificateValidator` must also be supplied. The default is <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust?displayProperty=fullName>.|  
 |includeWindowsGroups|Optional Boolean. Specifies if Windows groups are included in the security context. Setting this attribute to `true` has a performance impact, as it results in a full group expansion. Set this attribute to `false` if you do not need to establish the list of groups a user belongs to.|  
 |mapClientCertificateToWindowsAcccount|Boolean. Specifies whether the client can be mapped to a Windows identity using the certificate. Active Directory must be enabled to do this.|  
 |revocationMode|Optional enumeration. One of the modes used to check for a revoked certificate lists (RCL). The default is `Online`. This value is ignored when using HTTP transport security.|  
@@ -95,7 +94,7 @@ trustedStoreLocation="CurrentUser/LocalMachine"
 ## Example  
  The following code specifies an X.509 certificate and a custom validation type in the `<authentication>` element.  
   
-```  
+```xml  
 <serviceBehaviors>  
  <behavior name="myServiceBehavior">  
   <clientCertificate>  

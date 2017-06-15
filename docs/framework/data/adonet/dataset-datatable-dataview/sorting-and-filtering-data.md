@@ -2,7 +2,7 @@
 title: "Sorting and Filtering Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +50,6 @@ Dim prodView As DataView = New DataView(prodDS.Tables("Products"), _
    "UnitsInStock <= ReorderLevel", _  
    "SupplierID, ProductName", _  
    DataViewRowState.CurrentRows)  
-  
 ```  
   
 ```csharp  

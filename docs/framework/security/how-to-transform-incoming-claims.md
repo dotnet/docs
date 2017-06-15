@@ -2,6 +2,7 @@
 title: "How To: Transform Incoming Claims | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -89,7 +90,6 @@ manager: "mbaldwin"
             </asp:GridView>  
         </p>  
     </asp:Content>  
-  
     ```  
   
 8.  Open the code-behind file named *Default.aspx.cs*. Replace the existing code with the following, then save the file:  
@@ -163,7 +163,7 @@ manager: "mbaldwin"
   
 11. In the root **Web.config** file, navigate to the **\<system.identityModel>** entry. Within the **\<identityConfiguration>** elements, add the following line and save the file:  
   
-    ```  
+    ```xml  
     <claimsAuthenticationManager type="ClaimsTransformation.ClaimsTransformationModule, ClaimsTransformation" />  
     ```  
   

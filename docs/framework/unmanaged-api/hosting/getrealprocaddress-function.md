@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetRealProcAddress function [.NET Framework hosting]"
 ms.assetid: f1f2fab1-400b-488f-95f2-d49c4fca3556
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

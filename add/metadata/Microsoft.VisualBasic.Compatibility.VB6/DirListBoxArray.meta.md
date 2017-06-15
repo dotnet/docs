@@ -377,13 +377,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DirListBoxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.DirListBoxArray.SelectedIndexChanged
 author: "stevehoag"
 ms.author: "shoag"

@@ -2,7 +2,7 @@
 title: "Message Security User Name | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +34,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
  The service exposes a single endpoint for communicating with the service, which is defined using the configuration file Web.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), which defaults to using message security. This sample sets the standard [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) to use client username authentication. The behavior specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the subject name as the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
-```  
+```xml  
 <system.serviceModel>  
   <protocolMapping>  
     <add scheme="http" binding="wsHttpBinding" />  
@@ -77,7 +77,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `securityMode` and `authenticationMode`. When running in a cross-computer scenario, the service endpoint address must be changed accordingly.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint address="http://localhost/servicemodelsamples/service.svc"   
@@ -139,7 +139,6 @@ Console.WriteLine(client.GetCallerIdentity());
 ...  
 //Closing the client gracefully closes the connection and cleans up resources.  
 client.Close();  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -151,7 +150,6 @@ Subtract(145,76.54) = 68.46
 Multiply(9,81.25) = 731.25  
 Divide(22,7) = 3.14285714285714  
 Press <ENTER> to terminate client.  
-  
 ```  
   
  The Setup.bat batch file included with the MessageSecurity samples enables you to configure the server with a relevant certificate to run a hosted application that requires certificate-based security. The batch file can be run in two modes. To run the batch file in the single-computer mode, type `setup.bat` at the command line. To run it in service mode type `setup.bat service`. You use this mode when running the sample across computers. See the setup procedure at the end of this topic for details.  
@@ -180,7 +178,6 @@ Press <ENTER> to terminate client.
   
     ```  
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople  
-  
     ```  
   
 -   Granting permissions on the certificate's private key  

@@ -2,7 +2,7 @@
 title: "&lt;disableCachingBindingFailures&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Specifies whether to disable the caching of binding failures that occur because 
   
 ## Syntax  
   
-```  
+```xml  
 <disableCachingBindingFailures enabled="0|1"/>  
 ```  
   
@@ -81,7 +81,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 ## Example  
  The following code example shows how to disable the caching of assembly binding failures that occur because the assembly was not found by probing.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <disableCachingBindingFailures enabled="1" />  

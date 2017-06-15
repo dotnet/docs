@@ -68,7 +68,6 @@ Public Class SerializeOverride()
     Dim writer As StreamWriter = New StreamWriter("Book.xml")  
     mySerializer.Serialize(writer, b);  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -93,7 +92,7 @@ public class SerializeOverride()
   
  The XML stream might resemble the following.  
   
-```  
+```xml  
 <Book>  
     <BookID>123456789</BookID>  
 </Book>  

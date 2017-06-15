@@ -25,7 +25,7 @@
  Graphics that use double buffering can reduce or eliminate flicker that is caused by redrawing a display surface. When you use double buffering, updated graphics are first drawn to a buffer in memory, and the contents of this buffer are then quickly written to some or all of the displayed surface. This relatively brief overwrite of the displayed graphics typically reduces or eliminates the flicker that sometimes occurs when graphics are updated.  
   
 > [!NOTE]
->  The simplest way to use double buffering is to set the <xref:System.Windows.Forms.ControlStyles> control style flag on a control using the <xref:System.Windows.Forms.Control.SetStyle%2A> method. Setting the <xref:System.Windows.Forms.ControlStyles> flag for a control redirects all painting for the control through a default graphics buffer, without requiring any additional code. This flag is set to `true` by default.  
+>  The simplest way to use double buffering is to set the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control style flag on a control using the <xref:System.Windows.Forms.Control.SetStyle%2A> method. Setting the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> flag for a control redirects all painting for the control through a default graphics buffer, without requiring any additional code. This flag is set to `true` by default.  
   
  The <xref:System.Drawing.BufferedGraphics> class has no public constructor and must be created by the <xref:System.Drawing.BufferedGraphicsContext> for an application domain using its <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method. You can retrieve the <xref:System.Drawing.BufferedGraphicsContext> for the current application domain from the static <xref:System.Drawing.BufferedGraphicsManager.Current%2A?displayProperty=fullName> property.  
   
@@ -42,9 +42,9 @@
   
 -   Drawing directly to the <xref:System.Windows.Forms.Control.Handle%2A> for a <xref:System.Windows.Forms.Form>.  
   
--   Drawing by overriding the <xref:System.Windows.Forms.Form.OnPaint%2A> method using the <xref:System.Windows.Forms.ControlStyles> control style.  
+-   Drawing by overriding the <xref:System.Windows.Forms.Form.OnPaint%2A> method using the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control style.  
   
--   Drawing by overriding the <xref:System.Windows.Forms.Form.OnPaint%2A> method for the form method without using the <xref:System.Windows.Forms.ControlStyles> control style.  
+-   Drawing by overriding the <xref:System.Windows.Forms.Form.OnPaint%2A> method for the form method without using the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control style.  
   
  In each mode, text is drawn that identifies the current mode and describes the behavior that occurs when each mouse button is pressed.  
   

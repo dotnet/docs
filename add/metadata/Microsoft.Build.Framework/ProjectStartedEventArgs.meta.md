@@ -11,12 +11,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.ProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.Collections.IEnumerable,System.Collections.IEnumerable)
 ms.author: "susanno"
 manager: "douge"

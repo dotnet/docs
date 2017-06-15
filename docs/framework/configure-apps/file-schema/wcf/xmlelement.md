@@ -2,7 +2,7 @@
 title: "&lt;xmlElement&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies an XML element that is sent in the message body to the Security Token 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <tokenRequestParameters>  
       <xmlElement xmlElement="String" />  
 </tokenRequestParameters>  

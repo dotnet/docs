@@ -2,7 +2,7 @@
 title: "&lt;routing&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,11 +24,10 @@ Represents a configuration section for defining a set of routing filters, which 
 ## Syntax  
   
 ```vb  
-   <routing>      <filters>        <filter customType=”String”                filterData=”String”                filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"                 name="String" />      </filters>      <routingTables>        <table name="String">          <entries>            <add endpoint="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
+   <routing>      <filters>        <filter customType="String"                filterData="String"                filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"                 name="String" />      </filters>      <routingTables>        <table name="String">          <entries>            <add endpoint="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

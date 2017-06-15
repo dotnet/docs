@@ -2,7 +2,7 @@
 title: "&lt;localIssuer&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
-  
+```xml  
 <localIssuer address="string"  
       binding="string"  
       bindingConfiguration="string" />  
@@ -65,7 +64,7 @@ endpointBehaviors section
 ## Example  
  The following example sets the `address`, `binding`, and `bindingConfiguration` attributes of a `localIssuer` element.  
   
-```  
+```xml  
 <system.serviceModel>  
  <behaviors>  
  <endpointBehaviors>  

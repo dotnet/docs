@@ -2,7 +2,7 @@
 title: "BasicBinding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
   
  To use the basic binding with default behavior, only the binding section name is required. If you want to configure the basic binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration by name by using the `bindingConfiguration` attribute of the <`endpoint`> element, as shown in the following sample code.  
   
-```  
+```xml  
 <services>  
     <service   
         type="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -46,12 +46,11 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
              contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </service>  
 </services>  
-  
 ```  
   
  In this sample, the binding configuration is named `"Binding1"` and is defined as shown in the following code example.  
   
-```  
+```xml  
 <bindings>  
    <basicHttpBinding>  
       <binding name="Binding1"   
@@ -72,7 +71,6 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
       </binding>  
    </basicHttpBinding>  
 </bindings>  
-  
 ```  
   
  The binding element provides attributes for setting the host name comparison mode, maximum message size, proxy options, timeouts, message encoding, and other options.  
@@ -80,7 +78,6 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -95,7 +92,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

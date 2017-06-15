@@ -2,7 +2,7 @@
 title: "How to: Display More than One Month in the Windows Forms MonthCalendar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,12 +31,10 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
     ```vb  
     MonthCalendar1.CalendarDimensions = New System.Drawing.Size (3,2)  
-  
     ```  
   
     ```csharp  
     monthCalendar1.CalendarDimensions = new System.Drawing.Size (3,2);  
-  
     ```  
   
     ```cpp  

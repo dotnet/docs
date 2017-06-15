@@ -265,7 +265,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property always returns <xref:System.Windows.LineBreakCondition>.  
+ This property always returns <xref:System.Windows.LineBreakCondition.BreakDesired>.  
   
  ]]></format>
         </remarks>
@@ -290,7 +290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property always returns <xref:System.Windows.LineBreakCondition>.  
+ This property always returns <xref:System.Windows.LineBreakCondition.BreakDesired>.  
   
  ]]></format>
         </remarks>
@@ -317,7 +317,7 @@
 ## Remarks  
  The end of content is taken to be the insertion position directly following the last character in the <xref:System.Windows.Controls.TextBlock>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.LogicalDirection> set to <xref:System.Windows.Documents.LogicalDirection>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.LogicalDirection> set to <xref:System.Windows.Documents.LogicalDirection.Forward>.  
   
  ]]></format>
         </remarks>
@@ -344,7 +344,7 @@
 ## Remarks  
  The beginning of content is taken to be the insertion position directly preceding the first character in the <xref:System.Windows.Controls.TextBlock>.  
   
- The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.LogicalDirection> set to <xref:System.Windows.Documents.LogicalDirection>.  
+ The <xref:System.Windows.Documents.TextPointer> returned by this property always has its <xref:System.Windows.Documents.LogicalDirection> set to <xref:System.Windows.Documents.LogicalDirection.Backward>.  
   
  ]]></format>
         </remarks>
@@ -1445,7 +1445,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy>.  
+ The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of <xref:System.Windows.LineStackingStrategy.MaxHeight> and the second <xref:System.Windows.Controls.TextBlock> has a value of <xref:System.Windows.LineStackingStrategy.BlockLineHeight>.  
   
  [!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
   
@@ -1930,7 +1930,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="element" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <see cref="P:System.Windows.Controls.TextBlock.LineHeight" />is set to a non-positive value.</exception>
+          <see cref="P:System.Windows.Controls.TextBlock.LineHeight" /> is set to a non-positive value.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetLineStackingStrategy">
@@ -2426,7 +2426,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.TextBlock>|  
+|Identifier field|<xref:System.Windows.Controls.TextBlock.TextEffectsProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    
@@ -2549,7 +2549,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.TextBlock>|  
+|Identifier field|<xref:System.Windows.Controls.TextBlock.TextWrappingProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    

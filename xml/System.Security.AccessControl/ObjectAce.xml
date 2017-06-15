@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +71,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +126,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,7 +143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags>, this property is ignored.  
+ If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent>, this property is ignored.  
   
  ]]></format>
         </remarks>
@@ -152,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +185,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -218,7 +226,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags>, this property is ignored.  
+ If the value of the <xref:System.Security.AccessControl.ObjectAce.ObjectAceFlags%2A> parameter does not contain the value <xref:System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent>, this property is ignored.  
   
  ]]></format>
         </remarks>

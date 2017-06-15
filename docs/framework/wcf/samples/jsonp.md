@@ -2,7 +2,7 @@
 title: "JSONP | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # JSONP
-This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST services. JSONP is a convention used to invoke cross-domain scripts by generating script tags in the current document. The result is returned in a specified callback function. JSONP is based on the idea that tags such as \<script src=”http://...” > can evaluate scripts from any domain and the script retrieved by those tags is evaluated within a scope in which other functions may already be defined.  
+This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST services. JSONP is a convention used to invoke cross-domain scripts by generating script tags in the current document. The result is returned in a specified callback function. JSONP is based on the idea that tags such as \<script src="http://..." > can evaluate scripts from any domain and the script retrieved by those tags is evaluated within a scope in which other functions may already be defined.  
   
 ## Demonstrates  
  Cross-domain scripting with JSONP.  
@@ -28,12 +28,11 @@ This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST se
 var proxy = new JsonpAjaxService.CustomerService();  
 proxy.set_enableJsonp(true);  
 proxy.GetCustomer(onSuccess, onFail, null);  
-  
 ```  
   
  The Web page can call the WCF REST service because the service is using the <xref:System.ServiceModel.Description.WebScriptEndpoint> with `crossDomainScriptAccessEnabled` set to `true`. Both of these configurations are done in the Web.config file under the \<system.serviceModel> element.  
   
-```  
+```xml  
 <system.serviceModel>  
   <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>  
   <standardEndpoints>  
@@ -48,14 +47,12 @@ proxy.GetCustomer(onSuccess, onFail, null);
   
 ```  
 http://localhost:33695/CustomerService/GetCustomer?callback=Sys._json0  
-  
 ```  
   
  Because the callback query string parameter has a value of `JsonPCallback`, the WCF service returns a JSONP response shown in the following example.  
   
 ```  
 Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Way","Name":"Bob"});  
-  
 ```  
   
  This JSONP response includes the customer data formatted as JSON, wrapped with the callback function name that the Web page requested. ScriptManager will execute this callback using a script tag to accomplish the cross-domain request, and then pass the result to the onSuccess handler that was passed to the GetCustomer operation of the ASP.NET AJAX proxy.  
@@ -77,4 +74,4 @@ Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Wa
   
 2.  Press F5 to launch  HYPERLINK "http://localhost:26648/JSONPClientPage.aspx" http://localhost:26648/JSONPClientPage.aspx in the browser.  
   
-3.  Notice that after the page loads, the text inputs for “Name” and “Address” are populated by values.  These values were supplied from a call to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service after the browser finished rendering the page.
+3.  Notice that after the page loads, the text inputs for "Name" and "Address" are populated by values.  These values were supplied from a call to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service after the browser finished rendering the page.

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumerateVariableHomes method [.NET Framework debugging]"
   - "ICorDebugCode4::EnumerateVariableHomes method [.NET Framework debugging]"
 ms.assetid: 802c01ff-8b80-4733-b6dd-03ab6ff7fa11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,11 +36,9 @@ Gets an enumerator to the local variables and arguments in a function.
 ## Syntax  
   
 ```  
-  
 HRESULT EnumerateVariableHomes(  
     [out] ICorDebugVariableHomeEnum **ppEnum  
 );  
-  
 ```  
   
 #### Parameters  

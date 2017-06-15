@@ -2,7 +2,7 @@
 title: "NamedPipe Activation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,14 +73,13 @@ public class CalculatorService : ICalculator
         return n1 / n2;  
     }  
 }  
-  
 ```  
   
  The sample uses a modified `netNamedPipeBinding` binding with no security. The binding is specified in the configuration files for the client and service. The binding type for the service is specified in the endpoint element’s `binding` attribute as shown in the following sample configuration.  
   
  If you want use a secured named pipe binding, change the server's security mode to the desired security setting and run svcutil.exe again on the client to obtain an updated client configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
         <services>  
             <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -121,7 +120,7 @@ public class CalculatorService : ICalculator
   
  The client’s endpoint information is configured as shown in the following sample code.  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <client>  

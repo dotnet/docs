@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;source&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Removes a listener from the `Listeners` collection for a trace source.
   
 ## Syntax  
   
-```  
+```xml  
 <remove name="listenerName" />  
 ```  
   
@@ -73,7 +73,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 ## Example  
  The following example shows how to use the `<remove>` element before using the `<add>` element to add the listener `console` to the `Listeners` collection for the trace source `TraceSourceApp`.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

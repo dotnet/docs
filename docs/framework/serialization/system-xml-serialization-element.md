@@ -30,8 +30,7 @@ The top-level element for controlling XML serialization. For more information ab
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.xml.serialization>  
 </system.xml.serialization>  
 ```  
@@ -58,7 +57,7 @@ The top-level element for controlling XML serialization. For more information ab
 ## Example  
  The following code example illustrates how to specify the serialization mode of a <xref:System.DateTime> object, and the addition of types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET Framework types.  
   
-```  
+```xml  
 <system.xml.serialization>  
     <xmlSerializer checkDeserializeAdvances="false" />  
     <dateTimeSerialization mode = "Local" />  

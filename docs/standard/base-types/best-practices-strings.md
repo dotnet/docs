@@ -52,13 +52,13 @@ manager: "wpickett"
   
 -   Use overloads that explicitly specify the string comparison rules for string operations. Typically, this involves calling a method overload that has a parameter of type <xref:System.StringComparison>.  
   
--   Use <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison?displayProperty=fullName> for comparisons as your safe default for culture-agnostic string matching.  
+-   Use <xref:System.StringComparison.Ordinal?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> for comparisons as your safe default for culture-agnostic string matching.  
   
--   Use comparisons with <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison?displayProperty=fullName> for better performance.  
+-   Use comparisons with <xref:System.StringComparison.Ordinal?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> for better performance.  
   
--   Use string operations that are based on <xref:System.StringComparison?displayProperty=fullName> when you display output to the user.  
+-   Use string operations that are based on <xref:System.StringComparison.CurrentCulture?displayProperty=fullName> when you display output to the user.  
   
--   Use the non-linguistic <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison?displayProperty=fullName> values instead of string operations based on <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when the comparison is linguistically irrelevant (symbolic, for example).  
+-   Use the non-linguistic <xref:System.StringComparison.Ordinal?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> values instead of string operations based on <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> when the comparison is linguistically irrelevant (symbolic, for example).  
   
 -   Use the <xref:System.String.ToUpperInvariant%2A?displayProperty=fullName> method instead of the <xref:System.String.ToLowerInvariant%2A?displayProperty=fullName> method when you normalize strings for comparison.  
   
@@ -72,7 +72,7 @@ manager: "wpickett"
   
 -   Do not use overloads that do not explicitly or implicitly specify the string comparison rules for string operations.  
   
--   Do not use string operations based on <xref:System.StringComparison?displayProperty=fullName> in most cases. One of the few exceptions is when you are persisting linguistically meaningful but culturally agnostic data.  
+-   Do not use string operations based on <xref:System.StringComparison.InvariantCulture?displayProperty=fullName> in most cases. One of the few exceptions is when you are persisting linguistically meaningful but culturally agnostic data.  
   
 -   Do not use an overload of the <xref:System.String.Compare%2A?displayProperty=fullName> or <xref:System.String.CompareTo%2A> method and test for a return value of zero to determine whether two strings are equal.  
   
@@ -86,12 +86,12 @@ manager: "wpickett"
   
 |StringComparison member|Description|  
 |-----------------------------|-----------------|  
-|<xref:System.StringComparison>|Performs a case-sensitive comparison using the current culture.|  
-|<xref:System.StringComparison>|Performs a case-insensitive comparison using the current culture.|  
-|<xref:System.StringComparison>|Performs a case-sensitive comparison using the invariant culture.|  
-|<xref:System.StringComparison>|Performs a case-insensitive comparison using the invariant culture.|  
-|<xref:System.StringComparison>|Performs an ordinal comparison.|  
-|<xref:System.StringComparison>|Performs a case-insensitive ordinal comparison.|  
+|<xref:System.StringComparison.CurrentCulture>|Performs a case-sensitive comparison using the current culture.|  
+|<xref:System.StringComparison.CurrentCultureIgnoreCase>|Performs a case-insensitive comparison using the current culture.|  
+|<xref:System.StringComparison.InvariantCulture>|Performs a case-sensitive comparison using the invariant culture.|  
+|<xref:System.StringComparison.InvariantCultureIgnoreCase>|Performs a case-insensitive comparison using the invariant culture.|  
+|<xref:System.StringComparison.Ordinal>|Performs an ordinal comparison.|  
+|<xref:System.StringComparison.OrdinalIgnoreCase>|Performs a case-insensitive ordinal comparison.|  
   
  For example, the <xref:System.String.IndexOf%2A> method, which returns the index of a substring in a <xref:System.String> object that matches either a character or a string, has nine overloads:  
   
@@ -170,7 +170,7 @@ manager: "wpickett"
  [!code-vb[Conceptual.Strings.BestPractices#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/turkish1.vb#13)]  
   
 ### Ordinal String Operations  
- Specifying the <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison?displayProperty=fullName> value in a method call signifies a non-linguistic comparison in which the features of natural languages are ignored. Methods that are invoked with these <xref:System.StringComparison> values base string operation decisions on simple byte comparisons instead of casing or equivalence tables that are parameterized by culture. In most cases, this approach best fits the intended interpretation of strings while making code faster and more reliable.  
+ Specifying the <xref:System.StringComparison.Ordinal?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> value in a method call signifies a non-linguistic comparison in which the features of natural languages are ignored. Methods that are invoked with these <xref:System.StringComparison> values base string operation decisions on simple byte comparisons instead of casing or equivalence tables that are parameterized by culture. In most cases, this approach best fits the intended interpretation of strings while making code faster and more reliable.  
   
  Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" does not match "Windows". This is essentially a call to the C runtime `strcmp` function. Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy. Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.  
   
@@ -189,7 +189,7 @@ manager: "wpickett"
  [!code-csharp[Conceptual.Strings.BestPractices#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/embeddednulls2.cs#20)]
  [!code-vb[Conceptual.Strings.BestPractices#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/embeddednulls2.vb#20)]  
   
- Case-insensitive ordinal comparisons are the next most conservative approach. These comparisons ignore most casing; for example, "windows" matches "Windows". When dealing with ASCII characters, this policy is equivalent to <xref:System.StringComparison?displayProperty=fullName>, except that it ignores the usual ASCII casing. Therefore, any character in [A, Z] (\u0041-\u005A) matches the corresponding character in [a,z] (\u0061-\007A). Casing outside the ASCII range uses the invariant culture's tables. Therefore, the following comparison:  
+ Case-insensitive ordinal comparisons are the next most conservative approach. These comparisons ignore most casing; for example, "windows" matches "Windows". When dealing with ASCII characters, this policy is equivalent to <xref:System.StringComparison.Ordinal?displayProperty=fullName>, except that it ignores the usual ASCII casing. Therefore, any character in [A, Z] (\u0041-\u005A) matches the corresponding character in [a,z] (\u0061-\007A). Casing outside the ASCII range uses the invariant culture's tables. Therefore, the following comparison:  
   
  [!code-csharp[Conceptual.Strings.BestPractices#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison2.cs#4)]
  [!code-vb[Conceptual.Strings.BestPractices#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison2.vb#4)]  
@@ -202,9 +202,9 @@ manager: "wpickett"
  These comparisons are still very fast.  
   
 > [!NOTE]
->  The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison?displayProperty=fullName>.  
+>  The string behavior of the file system, registry keys and values, and environment variables is best represented by <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName>.  
   
- Both <xref:System.StringComparison?displayProperty=fullName> and <xref:System.StringComparison?displayProperty=fullName> use the binary values directly, and are best suited for matching. When you are not sure about your comparison settings, use one of these two values. However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order. The results may look odd in most contexts if displayed to users.  
+ Both <xref:System.StringComparison.Ordinal?displayProperty=fullName> and <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> use the binary values directly, and are best suited for matching. When you are not sure about your comparison settings, use one of these two values. However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order. The results may look odd in most contexts if displayed to users.  
   
  Ordinal semantics are the default for <xref:System.String.Equals%2A?displayProperty=fullName> overloads that do not include a <xref:System.StringComparison> argument (including the equality operator). In any case, we recommend that you call an overload that has a <xref:System.StringComparison> parameter.  
   
@@ -213,7 +213,7 @@ manager: "wpickett"
   
  Case-insensitive comparisons with the invariant culture use the static <xref:System.Globalization.CultureInfo.CompareInfo%2A> property returned by the static <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property for comparison information as well. Any case differences among these translated characters are ignored.  
   
- Comparisons that use <xref:System.StringComparison?displayProperty=fullName> and <xref:System.StringComparison?displayProperty=fullName> work identically on ASCII strings. However, <xref:System.StringComparison?displayProperty=fullName> makes linguistic decisions that might not be appropriate for strings that have to be interpreted as a set of bytes. The `CultureInfo.InvariantCulture.CompareInfo` object makes the <xref:System.String.Compare%2A> method interpret certain sets of characters as equivalent. For example, the following equivalence is valid under the invariant culture:  
+ Comparisons that use <xref:System.StringComparison.InvariantCulture?displayProperty=fullName> and <xref:System.StringComparison.Ordinal?displayProperty=fullName> work identically on ASCII strings. However, <xref:System.StringComparison.InvariantCulture?displayProperty=fullName> makes linguistic decisions that might not be appropriate for strings that have to be interpreted as a set of bytes. The `CultureInfo.InvariantCulture.CompareInfo` object makes the <xref:System.String.Compare%2A> method interpret certain sets of characters as equivalent. For example, the following equivalence is valid under the invariant culture:  
   
  InvariantCulture: a + ̊ = å  
   
@@ -224,7 +224,7 @@ manager: "wpickett"
   
  When interpreting file names, cookies, or anything else where a combination such as "å" can appear, ordinal comparisons still offer the most transparent and fitting behavior.  
   
- On balance, the invariant culture has very few properties that make it useful for comparison. It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture. One of the few reasons to use <xref:System.StringComparison?displayProperty=fullName> for comparison is to persist ordered data for a cross-culturally identical display. For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.  
+ On balance, the invariant culture has very few properties that make it useful for comparison. It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture. One of the few reasons to use <xref:System.StringComparison.InvariantCulture?displayProperty=fullName> for comparison is to persist ordered data for a cross-culturally identical display. For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.  
   
  [Back to top](#top)  
   
@@ -234,10 +234,10 @@ manager: "wpickett"
   
 |Data|Behavior|Corresponding System.StringComparison<br /><br /> value|  
 |----------|--------------|-----------------------------------------------------|  
-|Case-sensitive internal identifiers.<br /><br /> Case-sensitive identifiers in standards such as XML and HTTP.<br /><br /> Case-sensitive security-related settings.|A non-linguistic identifier, where bytes match exactly.|<xref:System.StringComparison>|  
-|Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant; especially data stored in most Windows system services.|<xref:System.StringComparison>|  
-|Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison><br /><br /> -or-<br /><br /> <xref:System.StringComparison>|  
-|Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison><br /><br /> -or-<br /><br /> <xref:System.StringComparison>|  
+|Case-sensitive internal identifiers.<br /><br /> Case-sensitive identifiers in standards such as XML and HTTP.<br /><br /> Case-sensitive security-related settings.|A non-linguistic identifier, where bytes match exactly.|<xref:System.StringComparison.Ordinal>|  
+|Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant; especially data stored in most Windows system services.|<xref:System.StringComparison.OrdinalIgnoreCase>|  
+|Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison.InvariantCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.InvariantCultureIgnoreCase>|  
+|Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison.CurrentCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.CurrentCultureIgnoreCase>|  
   
  [Back to top](#top)  
   
@@ -246,14 +246,14 @@ manager: "wpickett"
  The following sections describe the methods that are most commonly used for string comparison.  
   
 ### String.Compare  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
- As the operation most central to string interpretation, all instances of these method calls should be examined to determine whether strings should be interpreted according to the current culture, or dissociated from the culture (symbolically). Typically, it is the latter, and a <xref:System.StringComparison?displayProperty=fullName> comparison should be used instead.  
+ As the operation most central to string interpretation, all instances of these method calls should be examined to determine whether strings should be interpreted according to the current culture, or dissociated from the culture (symbolically). Typically, it is the latter, and a <xref:System.StringComparison.Ordinal?displayProperty=fullName> comparison should be used instead.  
   
  The <xref:System.Globalization.CompareInfo?displayProperty=fullName> class, which is returned by the <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=fullName> property, also includes a <xref:System.Globalization.CompareInfo.Compare%2A> method that provides a large number of matching options (ordinal, ignoring white space, ignoring kana type, and so on) by means of the <xref:System.Globalization.CompareOptions> flag enumeration.  
   
 ### String.CompareTo  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
  This method does not currently offer an overload that specifies a <xref:System.StringComparison> type. It is usually possible to convert this method to the recommended <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> form.  
   
@@ -263,31 +263,31 @@ manager: "wpickett"
  [!code-vb[Conceptual.Strings.BestPractices#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/api1.vb#6)]  
   
 ### String.Equals  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.Ordinal?displayProperty=fullName>.  
   
  The <xref:System.String> class lets you test for equality by calling either the static or instance <xref:System.String.Equals%2A> method overloads, or by using the static equality operator. The overloads and operator use ordinal comparison by default. However, we still recommend that you call an overload that explicitly specifies the <xref:System.StringComparison> type even if you want to perform an ordinal comparison; this makes it easier to search code for a certain string interpretation.  
   
 ### String.ToUpper and String.ToLower  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
  You should be careful when you use these methods, because forcing a string to a uppercase or lowercase is often used as a small normalization for comparing strings regardless of case. If so, consider using a case-insensitive comparison.  
   
- The <xref:System.String.ToUpperInvariant%2A?displayProperty=fullName> and <xref:System.String.ToLowerInvariant%2A?displayProperty=fullName> methods are also available. <xref:System.String.ToUpperInvariant%2A> is the standard way to normalize case. Comparisons made using <xref:System.StringComparison?displayProperty=fullName> are behaviorally the composition of two calls: calling <xref:System.String.ToUpperInvariant%2A> on both string arguments, and doing a comparison using <xref:System.StringComparison?displayProperty=fullName>.  
+ The <xref:System.String.ToUpperInvariant%2A?displayProperty=fullName> and <xref:System.String.ToLowerInvariant%2A?displayProperty=fullName> methods are also available. <xref:System.String.ToUpperInvariant%2A> is the standard way to normalize case. Comparisons made using <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> are behaviorally the composition of two calls: calling <xref:System.String.ToUpperInvariant%2A> on both string arguments, and doing a comparison using <xref:System.StringComparison.Ordinal?displayProperty=fullName>.  
   
  Overloads are also available for converting to uppercase and lowercase in a specific culture, by passing a <xref:System.Globalization.CultureInfo> object that represents that culture to the method.  
   
 ### Char.ToUpper and Char.ToLower  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
  These methods work similarly to the <xref:System.String.ToUpper%2A?displayProperty=fullName> and <xref:System.String.ToLower%2A?displayProperty=fullName> methods described in the previous section.  
   
 ### String.StartsWith and String.EndsWith  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
  By default, both of these methods perform a culture-sensitive comparison.  
   
 ### String.IndexOf and String.LastIndexOf  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
  There is a lack of consistency in how the default overloads of these methods perform comparisons. All <xref:System.String.IndexOf%2A?displayProperty=fullName> and <xref:System.String.LastIndexOf%2A?displayProperty=fullName> methods that include a <xref:System.Char> parameter perform an ordinal comparison, but the default <xref:System.String.IndexOf%2A?displayProperty=fullName> and <xref:System.String.LastIndexOf%2A?displayProperty=fullName> methods that include a <xref:System.String> parameter perform a culture-sensitive comparison.  
   
@@ -312,7 +312,7 @@ manager: "wpickett"
 -   Case-insensitive ordinal comparison. This <xref:System.StringComparer> object is returned by the <xref:System.StringComparer.OrdinalIgnoreCase%2A?displayProperty=fullName> property.  
   
 ### Array.Sort and Array.BinarySearch  
- Default interpretation: <xref:System.StringComparison?displayProperty=fullName>.  
+ Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=fullName>.  
   
  When you store any data in a collection, or read persisted data from a file or database into a collection, switching the current culture can invalidate the invariants in the collection. The <xref:System.Array.BinarySearch%2A?displayProperty=fullName> method assumes that the elements in the array to be searched are already sorted. To sort any string element in the array, the <xref:System.Array.Sort%2A?displayProperty=fullName> method calls the <xref:System.String.Compare%2A?displayProperty=fullName> method to order individual elements. Using a culture-sensitive comparer can be dangerous if the culture changes between the time that the array is sorted and its contents are searched. For example, in the following code, storage and retrieval operate on the comparer that is provided implicitly by the `Thread.CurrentThread.CurrentCulture` property. If the culture can change between the calls to `StoreNames` and `DoesNameExist`, and especially if the array contents are persisted somewhere between the two method calls, the binary search may fail.  
   
@@ -324,7 +324,7 @@ manager: "wpickett"
  [!code-csharp[Conceptual.Strings.BestPractices#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect1.cs#8)]
  [!code-vb[Conceptual.Strings.BestPractices#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect1.vb#8)]  
   
- If this data is persisted and moved across cultures, and sorting is used to present this data to the user, you might consider using <xref:System.StringComparison?displayProperty=fullName>, which operates linguistically for better user output but is unaffected by changes in culture. The following example modifies the two previous examples to use the invariant culture for sorting and searching the array.  
+ If this data is persisted and moved across cultures, and sorting is used to present this data to the user, you might consider using <xref:System.StringComparison.InvariantCulture?displayProperty=fullName>, which operates linguistically for better user output but is unaffected by changes in culture. The following example modifies the two previous examples to use the invariant culture for sorting and searching the array.  
   
  [!code-csharp[Conceptual.Strings.BestPractices#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect1.cs#9)]
  [!code-vb[Conceptual.Strings.BestPractices#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect1.vb#9)]  
@@ -359,13 +359,11 @@ manager: "wpickett"
  However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property with <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> in the calls to <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> and <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>,   the persisted date and time data is successfully restored, as the following output shows.  
   
 ```  
-  
 06.05.1758 21:26  
 05.05.1818 07:19  
 22.04.1870 23:54  
 08.09.1890 06:47  
 18.02.1905 15:12  
-  
 ```  
   
 ## See Also  

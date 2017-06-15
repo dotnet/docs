@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,8 +18,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides options used to configure the processing performed by dataflow blocks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the net_v45. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions> is mutable and can be configured through its properties.  
+  
+ When specific configuration options are not set, the following defaults are used:  
+  
+|Options|Default|  
+|-------------|-------------|  
+|TaskScheduler|<xref:System.Threading.Tasks.TaskScheduler.Default%2A>|  
+|MaxMessagesPerTask|DataflowBlockOptions.Unbounded (-1)|  
+|CancellationToken|<xref:System.Threading.CancellationToken.None%2A>|  
+|BoundedCapacity|DataflowBlockOptions.Unbounded (-1)|  
+  
+ Dataflow blocks capture the state of the options at their construction. Subsequent changes to the provided <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions> instance should not affect the behavior of a dataflow block.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +53,11 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Dataflow.DataflowBlockOptions" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,13 +70,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of messages that may be buffered by the block.</summary>
+        <value>The maximum number of messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,13 +90,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the  <see cref="T:System.Threading.CancellationToken" /> to monitor for cancellation requests.</summary>
+        <value>The token.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,6 +110,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -103,13 +130,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the maximum number of messages that may be processed per task.</summary>
+        <value>The maximum number of messages. The default is -1, which indicates an unlimited number of messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,14 +150,22 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the format string to use when a block is queried for its name.</summary>
+        <value>The format string to use when a block is queried for its name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name format may contain up to two format items. {0} will be substituted with the block's name. {1} will be substituted with the block's Id, as is returned from the block's Completion.Id property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskScheduler">
@@ -141,13 +177,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskScheduler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the <see cref="T:System.Threading.Tasks.TaskScheduler" /> to use for scheduling tasks.</summary>
+        <value>The task scheduler.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,13 +197,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A constant used to specify an unlimited quantity for  <see cref="T:System.Threading.Tasks.Dataflow.DataflowBlockOptions" /> members that provide an upper bound. This field is constant.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

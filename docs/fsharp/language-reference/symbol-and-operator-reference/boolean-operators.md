@@ -1,5 +1,5 @@
 ---
-title: Boolean Operators (F#)
+title: Boolean Operators (F#) | Microsoft Docs
 description: Boolean Operators (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

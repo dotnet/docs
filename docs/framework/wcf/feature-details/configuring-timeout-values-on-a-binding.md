@@ -59,7 +59,6 @@ public static void Main()
                 // Handle exception ...  
             }  
         }  
-  
 ```  
   
  The following example shows how to configure timeouts on a binding in a configuration file.  
@@ -77,7 +76,6 @@ public static void Main()
       </wsHttpBinding>  
     </bindings>  
   </system.serviceModel>  
-  
 ```  
   
  More information about these settings can be found in the documentation for the <xref:System.ServiceModel.Channels.Binding> class.  
@@ -93,7 +91,7 @@ public static void Main()
   
 4.  ReceiveTimeout – is not used  
   
-### Client-side Timeouts  
+### Service-side Timeouts  
  On the service side:  
   
 1.  SendTimeout, OpentTimeout, CloseTimeout are the same as on the client  

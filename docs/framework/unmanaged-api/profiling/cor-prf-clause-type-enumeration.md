@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_CLAUSE_TYPE enumeration [.NET Framework profiling]"
 ms.assetid: f64c325a-ed3a-4aaf-b847-a88edbc4fefc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

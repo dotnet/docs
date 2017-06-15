@@ -2,7 +2,7 @@
 title: "Service Endpoints and Queue Addressing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ This topic discusses how clients address services that read from queues and how 
 ## MSMQ Addressing  
  MSMQ uses paths and format names to identify a queue. Paths specify a host name and a `QueueName`. Optionally, there can be a `Private$` between the host name and the `QueueName` to indicate a private queue that is not published in the Active Directory directory service.  
   
- Path names are mapped to “FormatNames” to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
+ Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] MSMQ path and format names, see [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
   
@@ -95,7 +95,7 @@ This topic discusses how clients address services that read from queues and how 
   
  net.msmq: //localhost/ [private/]  \<*custom-dead-letter-queue-name*>.  
   
- A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode> parameter must be used. For an example, see [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md).  
+ A [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter must be used. For an example, see [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md).  
   
 ## MsmqIntegrationBinding and Service Addressing  
  The `MsmqIntegrationBinding` is used for communication with traditional MSMQ applications. To ease interoperation with an existing MSMQ application, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports only format name addressing. Thus, messages sent using this binding must conform to the URI scheme:  

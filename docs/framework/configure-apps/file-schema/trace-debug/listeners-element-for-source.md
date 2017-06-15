@@ -2,7 +2,7 @@
 title: "&lt;listeners&gt; Element for &lt;source&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
   
 ## Syntax  
   
-```  
+```xml  
 <listeners>   
   <add>...</add>  
   <remove ... />  
@@ -75,7 +75,7 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
 ## Example  
  The following example shows how to use the `<listeners>` element to add a console trace listener to the `mySource` source and to remove the default trace listener.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

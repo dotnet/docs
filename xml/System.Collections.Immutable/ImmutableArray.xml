@@ -6,14 +6,20 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>  
+  
+ Provides methods for creating an array that is immutable; meaning it cannot be changed once it is created.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -25,6 +31,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -37,12 +44,16 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="array">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored in the array.</typeparam>
+        <param name="array">The sorted array to search.</param>
+        <param name="value">The object to search for.</param>
+        <summary>  
+  
+ Searches the sorted immutable array for a specified element using the default comparer and returns the zero-based index of the element, if it’s found.</summary>
+        <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="value" /> does not implement <see cref="T:System.IComparable" /> or the search encounters an element that does not implement <see cref="T:System.IComparable" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -54,6 +65,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -67,13 +79,17 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="array">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored in the array.</typeparam>
+        <param name="array">The sorted array to search.</param>
+        <param name="value">The object to search for.</param>
+        <param name="comparer">The comparer implementation to use when comparing elements, or null to use the default comparer.</param>
+        <summary>  
+  
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it’s found.</summary>
+        <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="comparer" /> is null and <paramref name="value" /> does not implement <see cref="T:System.IComparable" /> or the search encounters an element that does not implement <see cref="T:System.IComparable" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -85,6 +101,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -99,14 +116,18 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored in the array.</typeparam>
+        <param name="array">The sorted array to search.</param>
+        <param name="index">The starting index of the range to search.</param>
+        <param name="length">The length of the range to search.</param>
+        <param name="value">The object to search for.</param>
+        <summary>  
+  
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it’s found.</summary>
+        <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="value" /> does not implement <see cref="T:System.IComparable" /> or the search encounters an element that does not implement <see cref="T:System.IComparable" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch&lt;T&gt;">
@@ -118,6 +139,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -133,15 +155,19 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored in the array.</typeparam>
+        <param name="array">The sorted array to search.</param>
+        <param name="index">The starting index of the range to search.</param>
+        <param name="length">The length of the range to search.</param>
+        <param name="value">The object to search for.</param>
+        <param name="comparer">The comparer to use when comparing elements for equality or <see langword="null" /> to use the default comparer.</param>
+        <summary>  
+  
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element.</summary>
+        <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="comparer" /> is null and <paramref name="value" /> does not implement <see cref="T:System.IComparable" /> or the search encounters an element that does not implement <see cref="T:System.IComparable" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;T&gt;">
@@ -153,6 +179,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -162,9 +189,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <summary>  
+  
+ Creates an empty immutable array.</summary>
+        <returns>An empty immutable array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,6 +206,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -188,10 +218,12 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="item">The object to store in the array.</param>
+        <summary>  
+  
+ Creates an immutable array that contains the specified object.</summary>
+        <returns>Returns an immutable array that contains the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,6 +236,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -221,10 +254,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="items">The array of objects to populate the array with.</param>
+        <summary>  
+  
+ Creates an immutable array from the specified array of objects.</summary>
+        <returns>An immutable array that contains the array of items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,6 +272,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -249,11 +285,13 @@
         <Parameter Name="item2" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="item1">The first object to store in the array.</param>
+        <param name="item2">The second object to store in the array.</param>
+        <summary>  
+  
+ Creates an immutable array that contains the specified objects.</summary>
+        <returns>Returns an immutable array that contains the specified objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,6 +304,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -279,12 +318,14 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="items">The source array of objects.</param>
+        <param name="start">The index of the first element to copy from <c>items</c>.</param>
+        <param name="length">The number of elements from <c>items</c> to include in this immutable array.</param>
+        <summary>  
+  
+ Creates an immutable array with the specified objects from another immutable array.</summary>
+        <returns>An immutable array that contains the specified objects from the source array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,6 +338,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -310,12 +352,14 @@
         <Parameter Name="item3" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="item1">The first object to store in the array.</param>
+        <param name="item2">The second object to store in the array.</param>
+        <param name="item3">The third object to store in the array.</param>
+        <summary>  
+  
+ Creates an immutable array that contains the specified objects.</summary>
+        <returns>An immutable array that contains the specified objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,6 +372,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -341,12 +386,14 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="items">The source array of objects.</param>
+        <param name="start">The index of the first element to copy from <c>items</c>.</param>
+        <param name="length">The number of elements from <c>items</c> to include in this immutable array.</param>
+        <summary>  
+  
+ Creates an immutable array with specified objects from another array.</summary>
+        <returns>An immutable array that contains the specified objects from the source array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,6 +406,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -373,13 +421,15 @@
         <Parameter Name="item4" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item1">To be added.</param>
-        <param name="item2">To be added.</param>
-        <param name="item3">To be added.</param>
-        <param name="item4">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the array.</typeparam>
+        <param name="item1">The first object to store in the array.</param>
+        <param name="item2">The second object to store in the array.</param>
+        <param name="item3">The third object to store in the array.</param>
+        <param name="item4">The fourth object to store in the array.</param>
+        <summary>  
+  
+ Creates an immutable array that contains the specified objects.</summary>
+        <returns>An immutable array that contains the specified objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,6 +442,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder</ReturnType>
@@ -401,9 +452,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the builder.</typeparam>
+        <summary>  
+  
+ Creates a mutable array that can be converted to an <see cref="T:System.Collections.Immutable.ImmutableArray" /> without allocating new memory.</summary>
+        <returns>A mutable array of the specified type that can be efficiently converted to an immutable array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -416,6 +469,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder</ReturnType>
@@ -427,10 +481,12 @@
         <Parameter Name="initialCapacity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="initialCapacity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements stored in the builder.</typeparam>
+        <param name="initialCapacity">The initial capacity of the builder.</param>
+        <summary>  
+  
+ Creates a mutable array that can be converted to an <see cref="T:System.Collections.Immutable.ImmutableArray" /> without allocating new memory.</summary>
+        <returns>A mutable array of the specified type that can be efficiently converted to an immutable array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,6 +499,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -454,10 +511,12 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored in the array.</typeparam>
+        <param name="items">The elements to add to the array.</param>
+        <summary>  
+  
+ Creates a new <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> populated with the specified items.</summary>
+        <returns>An immutable array that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,6 +529,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</ReturnType>
@@ -485,11 +545,18 @@
       <Docs>
         <typeparam name="TSource">To be added.</typeparam>
         <typeparam name="TResult">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <param name="selector">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The source array to initialize the resulting array with.</param>
+        <param name="selector">The function to apply to each element from the source array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload allows efficient creation of an <xref:System.Collections.Immutable.ImmutableArray%601> based on an existing             <xref:System.Collections.Immutable.ImmutableArray%601>, where a mapping function needs to be applied to each element from             the source array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRange&lt;TSource,TResult&gt;">
@@ -501,6 +568,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</ReturnType>
@@ -518,13 +586,20 @@
       <Docs>
         <typeparam name="TSource">To be added.</typeparam>
         <typeparam name="TResult">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="selector">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The source array to initialize the resulting array with.</param>
+        <param name="start">The index of the first element in the source array to include in the resulting array.</param>
+        <param name="length">The number of elements from the source array to include in the resulting array.</param>
+        <param name="selector">The function to apply to each element from the source array included in the resulting array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload allows efficient creation of an <xref:System.Collections.Immutable.ImmutableArray%601> based on a slice of an existing             <xref:System.Collections.Immutable.ImmutableArray%601>, where a mapping function needs to be applied to each element from the source array             included in the resulting array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRange&lt;TSource,TArg,TResult&gt;">
@@ -536,6 +611,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</ReturnType>
@@ -554,12 +630,19 @@
         <typeparam name="TSource">To be added.</typeparam>
         <typeparam name="TArg">To be added.</typeparam>
         <typeparam name="TResult">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <param name="selector">To be added.</param>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The source array to initialize the resulting array with.</param>
+        <param name="selector">The function to apply to each element from the source array.</param>
+        <param name="arg">An argument to be passed to the selector mapping function.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload allows efficient creation of an <xref:System.Collections.Immutable.ImmutableArray%601> based on an existing             <xref:System.Collections.Immutable.ImmutableArray%601>, where a mapping function needs to be applied to each element from             the source array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateRange&lt;TSource,TArg,TResult&gt;">
@@ -571,6 +654,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TResult&gt;</ReturnType>
@@ -591,14 +675,21 @@
         <typeparam name="TSource">To be added.</typeparam>
         <typeparam name="TArg">To be added.</typeparam>
         <typeparam name="TResult">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <param name="start">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="selector">To be added.</param>
-        <param name="arg">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The source array to initialize the resulting array with.</param>
+        <param name="start">The index of the first element in the source array to include in the resulting array.</param>
+        <param name="length">The number of elements from the source array to include in the resulting array.</param>
+        <param name="selector">The function to apply to each element from the source array included in the resulting array.</param>
+        <param name="arg">An argument to be passed to the selector mapping function.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload allows efficient creation of an <xref:System.Collections.Immutable.ImmutableArray%601> based on a slice of an existing             <xref:System.Collections.Immutable.ImmutableArray%601>, where a mapping function needs to be applied to each element from the source array             included in the resulting array.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToImmutableArray&lt;TSource&gt;">
@@ -610,6 +701,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TSource&gt;</ReturnType>
@@ -621,10 +713,12 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of elements contained in <c>items</c>.</typeparam>
+        <param name="items">The collection of objects to copy to the immutable array.</param>
+        <summary>  
+  
+ Creates an immutable array from the specified collection.</summary>
+        <returns>An immutable array that contains the specified collection of objects.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

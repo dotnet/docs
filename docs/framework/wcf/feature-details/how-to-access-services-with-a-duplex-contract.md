@@ -2,7 +2,7 @@
 title: "How to: Access Services with a Duplex Contract | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,7 +61,6 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
             Console.Writeline("Equation({0})", equation)  
         End Sub  
     End Class  
-  
     ```  
   
 5.  Create an instance of the <xref:System.ServiceModel.InstanceContext> class. The constructor requires an instance of the client class.  

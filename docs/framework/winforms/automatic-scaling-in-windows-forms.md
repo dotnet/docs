@@ -81,7 +81,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] version 2.0 sur
 > [!CAUTION]
 > Arbitrary mixtures of DPI and font scaling modes are not supported. Although you may scale a user control using one mode (for example, DPI) and place it on a form using another mode (Font) with no issues, but mixing a base form in one mode and a derived form in another can lead to unexpected results.
 
-### Automatic Scaling in Action
+### Automatic scaling in action
 Windows Forms now uses the following logic to automatically scale forms and their contents:
 
 1. At design time, each <xref:System.Windows.Forms.ContainerControl> records the scaling mode and it current resolution in the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> and <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>, respectively.

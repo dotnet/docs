@@ -2,7 +2,7 @@
 title: "&lt;identity&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ The identity element allows a client developer to specify at design time the exp
   
 ## Syntax  
   
-```  
-  
+```xml  
 <identity>  
     <certificate encodedValue="String"/>  
     <certificateReference findValue="String"   

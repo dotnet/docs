@@ -2,7 +2,7 @@
 title: "WAITORTIMERCALLBACK Function Pointer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WAITORTIMERCALLBACK function pointer [.NET Framework hosting]"
 ms.assetid: 1fec4aef-0a06-4df0-bae7-d31a9ef9603d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

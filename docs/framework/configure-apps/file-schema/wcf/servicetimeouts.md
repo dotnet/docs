@@ -2,7 +2,7 @@
 title: "&lt;serviceTimeouts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies the timeout for a service.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <serviceTimeouts transactionTimeout="TimeSpan" />  
 ```  
   
@@ -41,7 +40,7 @@ Specifies the timeout for a service.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time a transaction must flow from client to server. The default is “00:00:00”.|  
+|`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time a transaction must flow from client to server. The default is "00:00:00".|  
   
 ### Child Elements  
  None.  

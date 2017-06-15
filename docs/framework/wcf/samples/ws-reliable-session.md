@@ -2,7 +2,7 @@
 title: "WS Reliable Session | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,17 +41,16 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
   
  The sample uses the `wsHttpBinding`. The binding is specified in the configuration files for both the client and service. The binding type is specified in the endpoint element’s `binding` attribute as shown in the following sample configuration.  
   
-```  
+```xml  
 <endpoint address=""  
           binding="wsHttpBinding"  
           bindingConfiguration="Binding1"   
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-  
 ```  
   
  The endpoint contains a `bindingConfiguration` attribute that references a binding configuration named "Binding1." The binding configuration enables reliable sessions by setting the `enabled` attribute of the [\<reliableSession>](../../../../docs/framework/configure-apps/file-schema/wcf/reliablesession.md) to `true`. Delivery assurances for ordered sessions are controlled by setting the ordered attribute to `true` or `false`. The default is `true`.  
   
-```  
+```xml  
 <bindings>  
     <wsHttpBinding>  
         <binding name="Binding1">  
@@ -59,10 +58,9 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
         </binding>  
     </wsHttpBinding>  
 </bindings>  
-  
 ```  
   
- The service implementation class implements <xref:System.ServiceModel.InstanceContextMode> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
+ The service implementation class implements <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
   
 ```  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)] public class CalculatorService : ICalculator  
@@ -74,7 +72,6 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -89,7 +86,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

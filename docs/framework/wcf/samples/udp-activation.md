@@ -2,7 +2,7 @@
 title: "UDP Activation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,7 +54,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
  The listener adapter is registered in the %SystemRoot%\System32\inetsrv\ApplicationHost.config in the <`listenerAdapters`> section as following:  
   
-```  
+```xml  
 <add name="net.udp" identity="S-1-5-21-2127521184-1604012920-1887927527-387045" />  
 ```  
   
@@ -70,7 +70,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
 ## HostedUDPTransportConfiguration  
  The information is registered in the Web.config as follows:  
   
-```  
+```xml  
 <serviceHostingEnvironment>  
 <add name="net.udp" transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />  
 </serviceHostingEnvironment>  
@@ -85,7 +85,6 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Build the project on Windows Vista. After compilation, it also performs the following operations in the post-build phase:  

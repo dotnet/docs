@@ -21,7 +21,7 @@ Traces are the publishing of specific messages that are generated during applica
 ## Enabling Tracing  
  To enable traces during transaction processing, you should edit your application’s configuration file. The following is an example.  
   
-```  
+```xml  
 <configuration>  
 <system.diagnostics>  
      <sources>  
@@ -35,7 +35,6 @@ Traces are the publishing of specific messages that are generated during applica
      </sources>  
 </system.diagnostics>  
 </configuration>  
-  
 ```  
   
  <xref:System.Transactions> traces are written to the source named "System.Transactions". You can use `add` to specify the name and type of the trace listener you want to use. In our example configuration, we named the Listener "tx" and added the standard .NET Framework trace listener (<xref:System.Diagnostics.XmlWriterTraceListener>) as the type we want to use. Use `initializeData` to set the name of the log file for that listener. In addition, you can substitute a fully qualified path for a simple file name.  
@@ -62,11 +61,11 @@ Traces are the publishing of specific messages that are generated during applica
 |TransactionAborted|Warning|TransactionTraceId|  
 |TransactionInDoubt|Warning|TransactionTraceId|  
 |TransactionScopeCreated|Info|TransactionScopeResult, which can be the following:<br /><br /> -   New transaction.<br />-   Transaction passed.<br />-   Dependent transaction passed.<br />-   Using current transaction.<br />-   No transaction.<br /><br /> new current TransactionTraceId|  
-|TransactionScopeDisposed|Info|TransactionTraceId of the scope’s “expected” current transaction.|  
-|TransactionScopeIncomplete|Warning|TransactionTraceId of the scope’s “expected” current transaction.|  
-|TransactionScopeNestedIncorrectly|Warning|TransactionTraceId of the scope’s “expected” current transaction.|  
+|TransactionScopeDisposed|Info|TransactionTraceId of the scope’s "expected" current transaction.|  
+|TransactionScopeIncomplete|Warning|TransactionTraceId of the scope’s "expected" current transaction.|  
+|TransactionScopeNestedIncorrectly|Warning|TransactionTraceId of the scope’s "expected" current transaction.|  
 |TransactionScopeCurrentTransactionChanged|Warning|Old current TransactionTraceId, other TransactionTraceId|  
-|TransactionScopeTimeout|Warning|TransactionTraceId of the scope’s “expected” current transaction.|  
+|TransactionScopeTimeout|Warning|TransactionTraceId of the scope’s "expected" current transaction.|  
 |DependentCloneCreated|Info|TransactionTraceId, type of dependent transaction created (RollbackIfNotComplete/BlockCommitUntilComplete)|  
 |DependentCloneComplete|Info|TransactionTraceId|  
 |RecoveryComplete|Info|Resource Manager GUID (from base)|  

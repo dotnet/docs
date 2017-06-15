@@ -32,9 +32,7 @@
 ## Examples  
  The following example shows how to use the ManagementConfiguration attribute to mark a property. This property is exposed to WMI.  
   
- [C#]  
-  
-```  
+```csharp  
 // Use the ManagementConfiguration attribute to specify that a property  
 // is a read/write property in the provider. Consumers will be  
 // able to get and set this property value through WMI.  
@@ -84,7 +82,7 @@ public double ReadableWritableProperty
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there is a commit method defined, it is responsible for updating all read-write WMI properties that use the <xref:System.Management.Instrumentation.ManagementConfigurationType> mode. It is identified by the <xref:System.Management.Instrumentation.ManagementCommitAttribute>.  
+ If there is a commit method defined, it is responsible for updating all read-write WMI properties that use the <xref:System.Management.Instrumentation.ManagementConfigurationType.OnCommit> mode. It is identified by the <xref:System.Management.Instrumentation.ManagementCommitAttribute>.  
   
  ]]></format>
         </remarks>

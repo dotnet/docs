@@ -2,7 +2,7 @@
 title: "ICorDebugRegisterSet::GetRegistersAvailable Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugRegisterSet::GetRegistersAvailable method [.NET Framework debugging]"
   - "GetRegistersAvailable method, ICorDebugRegisterSet interface [.NET Framework debugging]"
 ms.assetid: 4ba08ffa-55a2-4662-9d6d-4738f1db60c9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

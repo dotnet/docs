@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ExceptionUnwindFunctionEnter method [.NET Framework profiling]"
   - "ExceptionUnwindFunctionEnter method [.NET Framework profiling]"
 ms.assetid: ea3dc625-5650-4bf4-8e67-01e42be065b1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -50,7 +50,7 @@
 |Property|Initial Value|  
 |--------------|-------------------|  
 |FormatFlags|0 (no flags are set)|  
-|<xref:System.Drawing.StringFormat.HotkeyPrefix%2A>|<xref:System.Drawing.Text.HotkeyPrefix>|  
+|<xref:System.Drawing.StringFormat.HotkeyPrefix%2A>|<xref:System.Drawing.Text.HotkeyPrefix.None>|  
   
  ]]></format>
         </remarks>
@@ -235,7 +235,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the language that is used when local digits are substituted for western digits.</summary>
-        <value>A National Language Support (NLS) language identifier that identifies the language that will be used when local digits are substituted for western digits. You can pass the <see cref="P:System.Globalization.CultureInfo.LCID" /> property of a <see cref="T:System.Globalization.CultureInfo" /> object as the NLS language identifier. For example, suppose you create a <see cref="T:System.Globalization.CultureInfo" /> object by passing the string "ar-EG" to a <see cref="T:System.Globalization.CultureInfo" /> constructor. If you pass the <see cref="P:System.Globalization.CultureInfo.LCID" /> property of that <see cref="T:System.Globalization.CultureInfo" /> object along with.<see cref="F:System.Drawing.StringDigitSubstitute.Traditional" /> to the <see cref="M:System.Drawing.StringFormat.SetDigitSubstitution(System.Int32,System.Drawing.StringDigitSubstitute)" /> method, then Arabic-Indic digits will be substituted for western digits at display time.</value>
+        <value>A National Language Support (NLS) language identifier that identifies the language that will be used when local digits are substituted for western digits. You can pass the <see cref="P:System.Globalization.CultureInfo.LCID" /> property of a <see cref="T:System.Globalization.CultureInfo" /> object as the NLS language identifier. For example, suppose you create a <see cref="T:System.Globalization.CultureInfo" /> object by passing the string "ar-EG" to a <see cref="T:System.Globalization.CultureInfo" /> constructor. If you pass the <see cref="P:System.Globalization.CultureInfo.LCID" /> property of that <see cref="T:System.Globalization.CultureInfo" /> object along with <see cref="F:System.Drawing.StringDigitSubstitute.Traditional" /> to the <see cref="M:System.Drawing.StringFormat.SetDigitSubstitution(System.Int32,System.Drawing.StringDigitSubstitute)" /> method, then Arabic-Indic digits will be substituted for western digits at display time.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,11 +342,11 @@
 |Property|Initial Value|  
 |--------------|-------------------|  
 |<xref:System.Drawing.StringFormat.FormatFlags%2A>|0|  
-|<xref:System.Drawing.StringFormat.Alignment%2A>|<xref:System.Drawing.StringAlignment>|  
-|<xref:System.Drawing.StringFormat.LineAlignment%2A>|<xref:System.Drawing.StringAlignment>|  
-|<xref:System.Drawing.StringFormat.Trimming%2A>|<xref:System.Drawing.StringTrimming>|  
-|<xref:System.Drawing.StringFormat.HotkeyPrefix%2A>|<xref:System.Drawing.Text.HotkeyPrefix>|  
-|<xref:System.Drawing.StringFormat.DigitSubstitutionMethod%2A>|<xref:System.Drawing.StringDigitSubstitute>|  
+|<xref:System.Drawing.StringFormat.Alignment%2A>|<xref:System.Drawing.StringAlignment.Near>|  
+|<xref:System.Drawing.StringFormat.LineAlignment%2A>|<xref:System.Drawing.StringAlignment.Near>|  
+|<xref:System.Drawing.StringFormat.Trimming%2A>|<xref:System.Drawing.StringTrimming.Character>|  
+|<xref:System.Drawing.StringFormat.HotkeyPrefix%2A>|<xref:System.Drawing.Text.HotkeyPrefix.None>|  
+|<xref:System.Drawing.StringFormat.DigitSubstitutionMethod%2A>|<xref:System.Drawing.StringDigitSubstitute.User>|  
 |<xref:System.Drawing.StringFormat.DigitSubstitutionLanguage%2A>|0|  
   
  If you make changes to the <xref:System.Drawing.StringFormat> object returned from the <xref:System.Drawing.StringFormat.GenericDefault%2A> property, these changes persist, and future calls to the <xref:System.Drawing.StringFormat.GenericDefault%2A> property reflects these changes.  
@@ -378,12 +378,12 @@
   
 |Property|Initial Value|  
 |--------------|-------------------|  
-|<xref:System.Drawing.StringFormat.FormatFlags%2A>|24580 (<xref:System.Drawing.StringFormatFlags>, <xref:System.Drawing.StringFormatFlags> and <xref:System.Drawing.StringFormatFlags>.)|  
-|<xref:System.Drawing.StringFormat.Alignment%2A>|<xref:System.Drawing.StringAlignment>|  
-|<xref:System.Drawing.StringFormat.LineAlignment%2A>|<xref:System.Drawing.StringAlignment>|  
-|<xref:System.Drawing.StringFormat.Trimming%2A>|<xref:System.Drawing.StringTrimming>|  
-|<xref:System.Drawing.StringFormat.HotkeyPrefix%2A>|<xref:System.Drawing.Text.HotkeyPrefix>|  
-|<xref:System.Drawing.StringFormat.DigitSubstitutionMethod%2A>|<xref:System.Drawing.StringDigitSubstitute>|  
+|<xref:System.Drawing.StringFormat.FormatFlags%2A>|24580 (<xref:System.Drawing.StringFormatFlags.NoClip>, <xref:System.Drawing.StringFormatFlags.FitBlackBox> and <xref:System.Drawing.StringFormatFlags.LineLimit>.)|  
+|<xref:System.Drawing.StringFormat.Alignment%2A>|<xref:System.Drawing.StringAlignment.Near>|  
+|<xref:System.Drawing.StringFormat.LineAlignment%2A>|<xref:System.Drawing.StringAlignment.Near>|  
+|<xref:System.Drawing.StringFormat.Trimming%2A>|<xref:System.Drawing.StringTrimming.None>|  
+|<xref:System.Drawing.StringFormat.HotkeyPrefix%2A>|<xref:System.Drawing.Text.HotkeyPrefix.None>|  
+|<xref:System.Drawing.StringFormat.DigitSubstitutionMethod%2A>|<xref:System.Drawing.StringDigitSubstitute.User>|  
 |<xref:System.Drawing.StringFormat.DigitSubstitutionLanguage%2A>|0|  
   
  ]]></format>

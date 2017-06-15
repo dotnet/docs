@@ -22,20 +22,20 @@ manager: "wpickett"
 # Reading Entity Declarations and Entity References into the DOM
 An entity is a declaration that states a name to be used in the XML in place of content or markup. There are two parts to entities. First, you must tie a name to the replacement content using an entity declaration. An entity declaration is created by using the `<!ENTITY name "value">` syntax in a document type definition (DTD) or XML schema. Secondly, the name defined in the entity declaration is subsequently used in the XML. When used in the XML, it is called an entity reference. For example, the following entity declaration declares an entity of the name `publisher` being associated with the content of "Microsoft Press".  
   
-```  
+```xml  
 <!ENTITY publisher "Microsoft Press">  
 ```  
   
  The following example shows the use of this entity declaration in XML as an entity reference.  
   
-```  
+```xml  
 <author>Fred</author>  
 <pubinfo>Published by &publisher;</pubinfo>  
 ```  
   
  Some parsers automatically expand entities when a document is loaded into memory. Therefore, when the XML is being read into memory, entity declarations are remembered and saved. When the parser subsequently encounters `&;` characters, which identify a general entity reference, the parser looks up that name in an entity declaration table. The reference, `&publisher;` is replaced by the content that it represents. Using the following XML,  
   
-```  
+```xml  
 <author>Fred</author>  
 <pubinfo>Published by &publisher;</pubinfo>  
 ```  
@@ -44,7 +44,7 @@ An entity is a declaration that states a name to be used in the XML in place of 
   
  **Output**  
   
-```  
+```xml  
 <author>Fred</author>  
 <pubinfo>Published by Microsoft Press</pubinfo>  
 ```  

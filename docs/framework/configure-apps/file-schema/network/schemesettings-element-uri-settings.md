@@ -2,7 +2,7 @@
 title: "&lt;schemeSettings&gt; Element (Uri Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,9 +29,8 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
   
 ## Syntax  
   
-```  
-  
-      <schemeSettings>   
+```xml  
+      <schemeSettings>   
 </schemeSettings>  
 ```  
   
@@ -76,7 +75,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 ## Example  
  The following code example shows a configuration used by the <xref:System.Uri> class to support not escaping percent-encoded path delimiters for the http scheme.  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <schemeSettings>  

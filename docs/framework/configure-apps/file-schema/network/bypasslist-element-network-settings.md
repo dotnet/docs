@@ -2,7 +2,7 @@
 title: "&lt;bypasslist&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,9 +36,8 @@ Provides a set of regular expressions that describe addresses that do not use a 
   
 ## Syntax  
   
-```  
-  
-      <bypasslist>   
+```xml  
+      <bypasslist>   
 </bypasslist>  
 ```  
   
@@ -75,7 +74,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## Example  
  The following code example adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP addresses begin with 192.168.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

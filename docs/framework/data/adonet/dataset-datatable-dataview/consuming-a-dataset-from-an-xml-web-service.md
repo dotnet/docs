@@ -2,7 +2,7 @@
 title: "Consuming a DataSet from an XML Web Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -93,7 +93,6 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         Return custDS  
       End Function  
     End Class  
-  
     ```  
   
     ```csharp  
@@ -221,7 +220,6 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         customersDataSet.AcceptChanges()  
       End Sub  
     End Class  
-  
     ```  
   
     ```csharp  

@@ -6,6 +6,7 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -44,13 +45,25 @@
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedSetDebuggerProxy`1))</AttributeName>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableEnumerableDebuggerProxy`1))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of elements in the set.</typeparam>
+    <summary>Represents an immutable sorted set implementation.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Create a new immutable sorted set that is prepopulated with items by using the <xref:System.Collections.Immutable.ImmutableSortedSet.CreateRange%2A> method. When you manipulate an immutable set with methods such as <xref:System.Collections.Immutable.ImmutableSortedSet%601.Add%2A>, <xref:System.Collections.Immutable.ImmutableSortedSet%601.Reverse%2A> or <xref:System.Collections.Immutable.ImmutableSortedSet%601.Remove%2A>, a copy of the original sorted set is made, manipulations applied and a new immutable sorted set is returned.  
+  
+ If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A>method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,6 +75,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -70,10 +84,17 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to add.</param>
+        <summary>Adds the specified value to this immutable sorted set.</summary>
+        <returns>A new set with the element added, or this set if the element is already in this set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -85,15 +106,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Removes all elements from the immutable sorted set.</summary>
+        <returns>An empty set with the elements removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -105,6 +134,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -113,10 +143,18 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to check for.</param>
+        <summary>Determines whether this immutable sorted set contains the specified value.</summary>
+        <returns>
+          <see langword="true" /> if the set contains the specified value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -128,14 +166,22 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of elements in the immutable sorted set.</summary>
+        <value>The number of elements in the immutable sorted set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -147,12 +193,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an empty immutable sorted set.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,6 +212,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -173,10 +221,17 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The items to remove from this set.</param>
+        <summary>Removes a specified set of items from this immutable sorted set.</summary>
+        <returns>A new set with the items removed; or the original set if none of the items were in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -188,15 +243,27 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Enumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the immutable sorted set.</summary>
+        <returns>An enumerator that can be used to iterate through the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  When you  use this enumerator as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption and exceptions.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -208,6 +275,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -216,10 +284,17 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The value whose position is being sought.</param>
+        <summary>Gets the position within this immutable sorted set that the specified value appears in.</summary>
+        <returns>The index of the specified <paramref name="item" /> in the sorted set, if <paramref name="item" /> is found. If <paramref name="item" /> is not found and is less than one or more elements in this set, this method returns a negative number that is the bitwise complement of the index of the first element that is larger than value. If <paramref name="item" /> is not found and is greater than any of the elements in the set, this method returns a negative number that is the bitwise complement of the index of the last element plus 1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -231,6 +306,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -239,10 +315,17 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The set to intersect with this one.</param>
+        <summary>Creates an immutable sorted set that contains elements that exist both in this set and in the specified set.</summary>
+        <returns>A new immutable sorted set that contains any elements that exist in both sets.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -254,14 +337,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this immutable sorted set is empty.</summary>
+        <value>
+          <see langword="true" /> if this set is empty; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsProperSubsetOf">
@@ -273,6 +365,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -281,10 +374,20 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable sorted set is a proper (strict) subset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a proper subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the current set is empty, unless the `other` collection is also empty.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsProperSupersetOf">
@@ -296,6 +399,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -304,10 +408,20 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable sorted set is a proper superset of a specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a proper superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, unless the current set is also empty.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -319,6 +433,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -327,10 +442,20 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable sorted set is a subset of a specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty set is a subset of any other set, including another empty set. Therefore, this method returns `true` if the current set is empty, even if the `other` collection is also empty.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSupersetOf">
@@ -342,6 +467,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -350,10 +476,20 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable sorted set is a superset of a specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All collections, including empty sets, are supersets of an empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current sorted set is empty.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -365,6 +501,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -373,10 +510,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the element to retrieve from the sorted set.</param>
+        <summary>Gets the element of the immutable sorted set at the given index.</summary>
+        <value>The element at the given index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyComparer">
@@ -388,14 +532,22 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the comparer used to sort keys in the immutable sorted set.</summary>
+        <value>The comparer used to sort keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -407,14 +559,22 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the maximum value in the immutable sorted set, as defined by the comparer.</summary>
+        <value>The maximum value in the set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -426,14 +586,22 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the minimum value in the immutable sorted set, as defined by the comparer.</summary>
+        <value>The minimum value in the set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Overlaps">
@@ -445,6 +613,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -453,10 +622,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable sorted set and a specified collection share common elements.</summary>
+        <returns>
+          <see langword="true" /> if the current set and <paramref name="other" /> share at least one common element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -468,6 +645,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -476,10 +654,17 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The element to remove.</param>
+        <summary>Removes the specified value from this immutable sorted set.</summary>
+        <returns>A new immutable sorted set with the element removed, or this set if the element was not found in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reverse">
@@ -491,15 +676,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that iterates over this immutable sorted set in reverse order.</summary>
+        <returns>An enumerator that iterates over the immutable sorted set in reverse order.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEquals">
@@ -511,6 +704,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -519,10 +713,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable sorted set and the specified collection contain the same elements.</summary>
+        <returns>
+          <see langword="true" /> if the sets are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SymmetricExcept">
@@ -534,6 +736,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -542,10 +745,17 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The other sequence of items.</param>
+        <summary>Creates an immutable sorted set that contains elements that exist either in this set or in a given sequence, but not both.</summary>
+        <returns>The new immutable sorted set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Add">
@@ -557,6 +767,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -565,9 +776,18 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The value to add.</param>
+        <summary>Adds the specified value to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Clear">
@@ -579,14 +799,24 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all the items from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.CopyTo">
@@ -598,6 +828,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -607,10 +838,19 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from collection. The array must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly">
@@ -622,12 +862,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See the <see cref="T:System.Collections.Generic.ICollection`1" /> interface.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -641,6 +882,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -649,10 +891,20 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The object to remove from the collection.</param>
+        <summary>Removes the first occurrence of a specific object from the collection.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -664,15 +916,30 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Insert">
@@ -684,6 +951,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -693,10 +961,19 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="item">The object to insert into the set.</param>
+        <summary>Inserts an item in the set at the specified index..</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Item">
@@ -708,6 +985,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -717,7 +995,7 @@
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>See the <see cref="T:System.Collections.Generic.IList`1" /> interface.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -731,6 +1009,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -739,9 +1018,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the  item at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ISet&lt;T&gt;.Add">
@@ -753,6 +1041,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -761,10 +1050,20 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The element to add to the set.</param>
+        <summary>Adds an element to the current set and returns a value to indicate if the element was successfully added.</summary>
+        <returns>
+          <see langword="true" /> if the element is added to the set; <see langword="false" /> if the element is already in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ISet&lt;T&gt;.ExceptWith">
@@ -776,6 +1075,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -784,9 +1084,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection of items to remove from the set.</param>
+        <summary>Removes all elements in the specified collection from the current set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ISet&lt;T&gt;.IntersectWith">
@@ -798,6 +1107,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -806,9 +1116,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Modifies the current set so that it contains only elements that are also in a specified collection</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ISet&lt;T&gt;.SymmetricExceptWith">
@@ -820,6 +1139,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -828,9 +1148,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Modifies the current set so that it contains only elements that are present either in the current set or in the specified collection, but not both.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ISet&lt;T&gt;.UnionWith">
@@ -842,6 +1171,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -850,9 +1180,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Modifies the current set so that it contains all elements that are present in either the current set or the specified collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -864,6 +1203,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -873,10 +1213,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the set. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the set to an array, starting at a particular array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -888,6 +1237,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -898,7 +1248,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See the <see cref="T:System.Collections.ICollection" /> interface.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -912,6 +1262,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -922,7 +1273,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See <see cref="T:System.Collections.ICollection" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -936,15 +1287,30 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An enumerator object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -956,6 +1322,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -964,10 +1331,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to add to the set.</param>
+        <summary>Adds an item to the set.</summary>
+        <returns>The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -979,14 +1356,24 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all items from the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -998,6 +1385,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1006,10 +1394,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the set.</param>
+        <summary>Determines whether the set contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the object is found in the set; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1021,6 +1419,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1029,10 +1428,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the set.</param>
+        <summary>Determines the index of a specific item in the set.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1044,6 +1452,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1053,10 +1462,20 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The object to insert into the set.</param>
+        <summary>Inserts an item into the set at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1068,13 +1487,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
+        <value>true if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1087,13 +1507,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1106,6 +1527,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1114,10 +1536,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index.</param>
+        <summary>Gets or sets the <see cref="T:System.Object" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1129,6 +1552,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1137,9 +1561,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to remove from the set.</param>
+        <summary>Removes the first occurrence of a specific object from the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -1151,6 +1585,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1159,9 +1594,19 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the item at the specified index of the set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.Add">
@@ -1173,7 +1618,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1181,10 +1632,19 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The element to add.</param>
+        <summary>Adds the specified element to this immutable set.</summary>
+        <returns>A new set with the element added, or this set if the element is already in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.Clear">
@@ -1196,15 +1656,30 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves an empty immutable set that has the same sorting and ordering semantics as this instance.</summary>
+        <returns>An empty set that has the same sorting and ordering semantics as this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.Except">
@@ -1216,7 +1691,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1224,10 +1705,19 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The items to remove from this set.</param>
+        <summary>Removes the elements in the specified collection from the current immutable set.</summary>
+        <returns>The new set with the items removed; or the original set if none of the items were in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.Intersect">
@@ -1239,7 +1729,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1247,10 +1743,19 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Creates an immutable set that contains elements that exist in both this set and the specified set.</summary>
+        <returns>A new immutable set that contains any elements that exist in both sets.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.Remove">
@@ -1262,7 +1767,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1270,10 +1781,19 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The element to remove.</param>
+        <summary>Removes the specified element from this immutable set.</summary>
+        <returns>A new set with the specified element removed, or the current set if the element cannot be found in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.SymmetricExcept">
@@ -1285,7 +1805,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1293,10 +1819,19 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Creates an immutable set that contains only elements that are present either in the current set or in the specified collection, but not both.</summary>
+        <returns>A new set that contains the elements that are present only in the current set or in the specified collection, but not both.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableSet&lt;T&gt;.Union">
@@ -1308,7 +1843,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1316,10 +1857,19 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to add elements from.</param>
+        <summary>Creates a new immutable set that contains all elements that are present in either the current set or in the specified collection.</summary>
+        <returns>A new immutable set with the items added; or the original set if all the items were already in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToBuilder">
@@ -1331,15 +1881,27 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Builder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a collection that has the same contents as this immutable sorted set that can be efficiently manipulated by using standard mutable interfaces.</summary>
+        <returns>The sorted set builder.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A>method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
+  
+ This is an O(1) operation and results in only a single (small) memory allocation. The mutable collection that is returned is not thread safe.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -1351,6 +1913,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1360,11 +1923,20 @@
         <Parameter Name="actualValue" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="equalValue">To be added.</param>
-        <param name="actualValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="equalValue">The value to search for.</param>
+        <param name="actualValue">The value from the set that the search found, or the original value if the search yielded no match.</param>
+        <summary>Searches the set for a given value and returns the equal value it finds, if any.</summary>
+        <returns>A value indicating whether the search was successful.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can be useful when you want to reuse a previously stored reference instead of a newly constructed one (so that more sharing of references can occur) or to look up a value that has more complete data than the value you currently have, although their comparer functions indicate they are equal.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -1376,6 +1948,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -1384,10 +1957,17 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The items to add.</param>
+        <summary>Adds a given set of items to this immutable sorted set.</summary>
+        <returns>The new set with the items added; or the original set if all the items were already in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithComparer">
@@ -1399,6 +1979,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -1407,10 +1988,17 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="comparer">The comparer to check for.</param>
+        <summary>Returns the immutable sorted set that has the specified key comparer.</summary>
+        <returns>The immutable sorted set that has the specified key comparer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

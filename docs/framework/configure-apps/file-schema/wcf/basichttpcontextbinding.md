@@ -2,7 +2,7 @@
 title: "&lt;basicHttpContextBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
   
 ## Syntax  
   
-```  
-  
+```xml  
 <basicHttpContextBinding>  
    <binding   
        allowCookies="Boolean"  

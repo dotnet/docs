@@ -2,7 +2,7 @@
 title: "How to: Configure a Windows Communication Foundation Service to Use Port Sharing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +46,7 @@ The easiest way to use net.tcp:// port sharing in your [!INCLUDE[indigo1](../../
   
 1.  The following example shows how to enable port sharing and add the service endpoint using configuration elements.  
   
-```  
+```xml  
 <system.serviceModel>  
   <bindings>  
     <netTcpBinding name="portSharingBinding"   

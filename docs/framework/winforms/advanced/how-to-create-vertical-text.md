@@ -26,7 +26,7 @@ manager: "wpickett"
 You can use a <xref:System.Drawing.StringFormat> object to specify that text be drawn vertically rather than horizontally.  
   
 ## Example  
- The following example assigns the value <xref:System.Drawing.StringFormatFlags> to the <xref:System.Drawing.StringFormat.FormatFlags%2A> property of a <xref:System.Drawing.StringFormat> object. That <xref:System.Drawing.StringFormat> object is passed to the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> class. The value <xref:System.Drawing.StringFormatFlags> is a member of the <xref:System.Drawing.StringFormatFlags> enumeration.  
+ The following example assigns the value <xref:System.Drawing.StringFormatFlags.DirectionVertical> to the <xref:System.Drawing.StringFormat.FormatFlags%2A> property of a <xref:System.Drawing.StringFormat> object. That <xref:System.Drawing.StringFormat> object is passed to the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> class. The value <xref:System.Drawing.StringFormatFlags.DirectionVertical> is a member of the <xref:System.Drawing.StringFormatFlags> enumeration.  
   
  The following illustration shows the vertical text.  
   

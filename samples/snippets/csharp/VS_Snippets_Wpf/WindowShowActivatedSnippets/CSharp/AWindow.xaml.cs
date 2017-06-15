@@ -1,5 +1,5 @@
 ﻿//<SnippetShowUnactivatedCODEBEHIND>
-using System.Windows; // Window
+using System.Windows;
 
 namespace WindowShowActivatedSnippets
 {

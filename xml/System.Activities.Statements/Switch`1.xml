@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each case in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary consists of a value (serving as the key for the dictionary) and an activity (serving as the value for the dictionary). The <xref:System.Activities.Statements.Switch.Expression%2A> is evaluated and compared against the keys in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary. If a match is found, the corresponding activity is executed. Every key in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary must be unique according to the dictionary’s equality comparer.  
+ Each case in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary consists of a value (serving as the key for the dictionary) and an activity (serving as the value for the dictionary). The <xref:System.Activities.Statements.Switch`1.Expression%2A> is evaluated and compared against the keys in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary. If a match is found, the corresponding activity is executed. Every key in the <xref:System.Activities.Statements.Switch%601.Cases%2A> dictionary must be unique according to the dictionary’s equality comparer.  
   
    
   
@@ -38,6 +38,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
+  
+ [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Switch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -156,7 +175,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the activity executes, the case that is executed is the first case whose key matches the <xref:System.Activities.Statements.Switch.Expression%2A> property.  
+ When the activity executes, the case that is executed is the first case whose key matches the <xref:System.Activities.Statements.Switch`1.Expression%2A> property.  
   
    
   
@@ -187,7 +206,7 @@
         <ReturnType>System.Activities.Activity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the activity that is executed if no keys of entries in the <see cref="P:System.Activities.Statements.Switch.Cases" /> collection match the <see cref="P:System.Activities.Statements.Switch.Expression" /> property.</summary>
+        <summary>Represents the activity that is executed if no keys of entries in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> collection match the <see cref="P:System.Activities.Statements.Switch`1.Expression" /> property.</summary>
         <value>The default activity to execute.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,8 +253,8 @@
         <ReturnType>System.Activities.InArgument&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object to compare to the keys in the <see cref="P:System.Activities.Statements.Switch.Cases" /> collection.</summary>
-        <value>The object to compare to the keys in the <see cref="P:System.Activities.Statements.Switch.Cases" /> collection.</value>
+        <summary>Gets the object to compare to the keys in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> collection.</summary>
+        <value>The object to compare to the keys in the <see cref="P:System.Activities.Statements.Switch`1.Cases" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -276,24 +295,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Switch`1" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.Switch%601> activity. This example is from the [Using Procedural Activities](~/docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md) sample.  
-  
- [!code-csharp[wfs_Procedurals#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_procedurals/cs/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

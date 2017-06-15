@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeInfo::LoadErrorString method [.NET Framework hosting]"
   - "LoadErrorString method [.NET Framework hosting]"
 ms.assetid: 52c543ab-9ef5-4ee7-b836-c0ffc35cd45b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

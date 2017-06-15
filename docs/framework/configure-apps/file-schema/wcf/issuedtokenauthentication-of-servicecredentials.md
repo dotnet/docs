@@ -2,7 +2,7 @@
 title: "&lt;issuedTokenAuthentication&gt; of &lt;serviceCredentials&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Specifies a custom token issued as a service credential.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <issuedTokenAuthentication   
    allowUntrustedRsaIssuers="Boolean"  
    audienceUriMode="Always/BearerKeyOnly/Never"  
@@ -82,7 +81,7 @@ certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
   
  This element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
-```  
+```xml  
 <issuedTokenAuthorization>  
    <knownCertificates>  
       <add findValue="www.contoso.com"   

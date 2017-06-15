@@ -2,7 +2,7 @@
 title: "&lt;contractTypeNames&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +23,27 @@ A configuration section that specifies a list of contract type names, which are 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <dynamicEndpoint>           <standardEndpoint>             <discoveryClientSettings discoveryEndpoint=”String” >               <findCriteria duration=”TimeSpan”                  maxResults=”Integer”                   scopeMatchBy=”Uri” >                  <contractTypeNames>                     <add name="String" namespace="String" />                  <contractTypeNames>                  <extensions />                  <scopes>                    <add scope="URI"/>                  </scopes>               </findCriteria>             </discoveryClientSettings>          <standardEndpoint>       </dynamicEndpoint>            </standardEndpoints>  
+  <standardEndpoints>
+    <dynamicEndpoint>
+      <standardEndpoint>
+        <discoveryClientSettings discoveryEndpoint="String">
+          <findCriteria duration="TimeSpan" 
+                        maxResults="Integer" 
+                        scopeMatchBy="Uri">
+            <contractTypeNames>
+              <add name="String" namespace="String" />
+            <contractTypeNames>
+            <extensions />
+            <scopes>
+              <add scope="URI"/>
+            </scopes>
+          </findCriteria>
+        </discoveryClientSettings>
+      <standardEndpoint>
+    </dynamicEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

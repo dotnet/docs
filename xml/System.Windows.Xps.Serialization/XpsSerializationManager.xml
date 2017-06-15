@@ -138,10 +138,10 @@
   
 |FontSubsetterCommitPolicy|CountPolicy|  
 |-------------------------------|-----------------|  
-|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Always 1 (the whole document sequence).|  
-|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Number of documents.|  
-|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Number of pages.|  
-|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>|Not applicable.|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitEntireSequence>|Always 1 (the whole document sequence).|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitPerDocument>|Number of documents.|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitPerPage>|Number of pages.|  
+|<xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.None>|Not applicable.|  
   
  ]]></format>
         </remarks>
@@ -169,17 +169,17 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default font-subsetting policy is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>.  
+ The default font-subsetting policy is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitEntireSequence>.  
   
  When font glyphs for text in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved in the document package, the document text displays identically on any computer or printer.  If glyphs are not saved in document and the required font is not installed on the local computer or printer, the rendering device must substitute glyphs from another font.  Substituting glyphs can change the appearance of the text when a different font is used.  
   
  <xref:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy%2A> determines the granularity of font-subsetting.  
   
- <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> (default) is the most efficient and enables the pages of all documents in a document sequence to share one font-subset that contains only the glyphs that are actually used.  
+ <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitEntireSequence> (default) is the most efficient and enables the pages of all documents in a document sequence to share one font-subset that contains only the glyphs that are actually used.  
   
- When creating interleaved documents, font-subsetting across a document sequence can require a large amount of memory to hold the complete document until the final font-subset can be determined.  <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> or <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies> can be specified to reduce application memory requirements when you create interleaved documents.  
+ When creating interleaved documents, font-subsetting across a document sequence can require a large amount of memory to hold the complete document until the final font-subset can be determined.  <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitPerPage> or <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.CommitPerDocument> can be specified to reduce application memory requirements when you create interleaved documents.  
   
- When `policy` is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies>, all the glyphs for all fonts that are used in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved, even glyphs for characters that not actually used in the text.  
+ When `policy` is <xref:System.Windows.Xps.Serialization.FontSubsetterCommitPolicies.None>, all the glyphs for all fonts that are used in the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document are saved, even glyphs for characters that not actually used in the text.  
   
  ]]></format>
         </remarks>

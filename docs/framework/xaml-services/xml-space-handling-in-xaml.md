@@ -25,14 +25,14 @@ The `xml:space` attribute is an XML-defined attribute that declares the signific
   
 ## XAML Attribute Usage  
   
-```  
-<object xml:space="preserve" />  
+```xaml  
+<object xml:space="preserve" />  
 ```  
   
  \- or -  
   
-```  
-<object xml:space="default" />  
+```xaml  
+<object xml:space="default" />  
 ```  
   
 ## Remarks  

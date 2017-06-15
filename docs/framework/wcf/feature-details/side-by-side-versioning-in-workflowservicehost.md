@@ -2,7 +2,7 @@
 title: "Side by Side Versioning in WorkflowServiceHost | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -64,7 +64,6 @@ WorkflowService service = new WorkflowService
         Version = new Version(1, 0, 0, 0)  
     }  
 };  
-  
 ```  
   
 ```vb  
@@ -129,7 +128,6 @@ WorkflowService serviceV1 = new WorkflowService
   
 // Add the previous version of the service to the SupportedVersions collection.  
 host.SupportedVersions.Add(serviceV1);  
-  
 ```  
   
 ```vb  

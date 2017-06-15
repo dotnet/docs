@@ -2,7 +2,7 @@
 title: "AJAX Service Using Complex Types Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,7 +53,6 @@ function onSuccess(mathResult){
      document.getElementById("product").value = mathResult.product;  
      document.getElementById("quotient").value = mathResult.quotient;  
 }  
-  
 ```  
   
 ### To set up, build, and run the sample  

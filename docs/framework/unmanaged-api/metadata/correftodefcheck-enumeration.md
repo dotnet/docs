@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorRefToDefCheck enumeration [.NET Framework metadata]"
 ms.assetid: f9a80f1a-55af-4459-b095-8441aae16119
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

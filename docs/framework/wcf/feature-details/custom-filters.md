@@ -2,7 +2,7 @@
 title: "Custom Filters | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,7 +61,7 @@ public class MyMessageFilter: MessageFilter
  Before using a custom filter in a production environment, you should run performance tests to determine the average length of time that the filter takes to evaluate a message. When combined with the average processing time of the other filters used in the filter table, this will allow you to accurately determine the maximum timeout value that should be specified by the client application.  
   
 ## Usage  
- In order to use your custom filter with the Routing Service, you must add it to the filter table by specifying a new filter entry of type “Custom,” the fully qualified type name of the message filter, and the name of your assembly.  As with other MessageFilters, you can specify the string filterData that will be passed to your custom filter’s constructor.  
+ In order to use your custom filter with the Routing Service, you must add it to the filter table by specifying a new filter entry of type "Custom," the fully qualified type name of the message filter, and the name of your assembly.  As with other MessageFilters, you can specify the string filterData that will be passed to your custom filter’s constructor.  
   
  The following examples demonstrate using a custom filter with the Routing Service:  
   
@@ -88,5 +88,4 @@ RoutingConfiguration rc = new RoutingConfiguration();
 List<ServiceEndpoint> endpointList = new List<ServiceEndpoint>();  
 endpointList.Add(client);  
 rc.FilterTable.Add(new MyMessageFilter("CustomData"), endpointList);  
-  
 ```

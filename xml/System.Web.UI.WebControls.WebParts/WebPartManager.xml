@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.%23ctor%2A> constructor initializes several important variables used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. One assignment that directly impacts all Web Parts pages is the fact that the default page display mode is set to browse mode (<xref:System.Web.UI.WebControls.WebParts.WebPartManager>).  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.%23ctor%2A> constructor initializes several important variables used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. One assignment that directly impacts all Web Parts pages is the fact that the default page display mode is set to browse mode (<xref:System.Web.UI.WebControls.WebParts.WebPartManager.BrowseDisplayMode>).  
   
  ]]></format>
         </remarks>
@@ -452,6 +452,45 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanConnectWebParts">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls that will be participating in a connection to determine whether they are capable of being connected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method is used to determine whether two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls can be connected. The method is typically used as a conditional check prior to calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method checks a number of criteria that must be met before two controls can form a connection. The following list summarizes the primary criteria for making a connection. If all these criteria (plus some additional internal conditions) are met, the method returns `true`, meaning that the controls can be connected:  
+  
+-   The provider and consumer controls cannot be `null`, and they must be contained in the collection of controls referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A> property.  
+  
+-   The provider and consumer cannot be the same control. In other words a <xref:System.Web.UI.WebControls.WebParts.WebPart> control cannot connect to itself.  
+  
+-   The <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> objects (connection points) for both the provider and consumer cannot be `null`.  
+  
+-   The provider and consumer cannot be closed (neither control's <xref:System.Web.UI.WebControls.WebParts.WebPart.IsClosed%2A> property can be `true`).  
+  
+-   The <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.ControlType%2A> property of the connection point control must match the type of the control of both consumer and provider.  
+  
+-   The connection points must both be enabled (their <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.GetEnabled%2A> methods must both return `true`).  
+  
+-   Each connection point must not be attempting to form more connections than what is specified in its own <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.AllowsMultipleConnections%2A> property.  
+  
+-   If a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object (transformer) is required to connect incompatible controls, it cannot be `null`. However, if the controls are already compatible, the transformer must be `null`.  
+  
+-   The transformer (if used) must be referenced in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AvailableTransformers%2A> collection.  
+  
+-   The transformer (if used) must have interfaces that are compatible with the provider and the consumer so that it can transform data between the two controls. The secondary interfaces of the consumer and provider must also be compatible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanConnectWebParts">
       <MemberSignature Language="C#" Value="public bool CanConnectWebParts (System.Web.UI.WebControls.WebParts.WebPart provider, System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, System.Web.UI.WebControls.WebParts.WebPart consumer, System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanConnectWebParts(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint) cil managed" />
@@ -908,6 +947,39 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConnectWebParts">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a connection between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls (or other server controls capable of forming connections) that reside in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method forms a connection between any two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that can be connected. Before calling this method to create a connection, you might also want to call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method in a conditional check to ensure that the controls meet the requirements for forming a connection.  
+  
+> [!NOTE]
+>  It is also possible to create a connection between two server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. In general, the two controls would have to be custom server controls (for example, controls that inherit from <xref:System.Web.UI.WebControls.WebControl> or existing ASP.NET server controls) so that you could add the required members. The controls would also have to meet the requirements specified below.  
+  
+ Any type of connection scenario between two controls must meet the following requirements to be able to connect:  
+  
+-   Each control resides in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone (it does not have to be the same zone).  
+  
+-   As implemented in the Web Parts control set, the provider control in a connection implements an interface as a public method that serves as a callback to the provider, and has a `ConnectionProvider` metadata attribute on the method to identify it as a provider connection point. Because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints%2A> method that retrieves provider connection points is virtual, a derived <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control does not necessarily have to use the same metadata attribute.  
+  
+-   As implemented in the Web Parts control set, the consumer control in a connection also has a special method that enables it to get a reference to the interface that is exposed in the provider's callback method, and the consumer has a `ConnectionConsumer` metadata attribute on the method to identify it as a consumer connection point. Because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints%2A> method that retrieves consumer connection points is virtual, a derived <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control does not necessarily have to use the same metadata attribute.  
+  
+-   The callback methods must either be compatible, in that the consumer can use the type of interface supplied in the provider's callback method (meaning that the consumer and provider can share data directly), or the developer must use a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object to transform the data from the provider into a form that the consumer can use.  
+  
+    > [!IMPORTANT]
+    >  When you do not need a transformer, use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%29> method overload. When you need a transformer, use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPartTransformer%29> method overload.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConnectWebParts">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartConnection ConnectWebParts (System.Web.UI.WebControls.WebParts.WebPart provider, System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, System.Web.UI.WebControls.WebParts.WebPart consumer, System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.WebParts.WebPartConnection ConnectWebParts(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint) cil managed" />
@@ -2054,7 +2126,7 @@
 ## Examples  
  The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ExportSensitiveDataWarning%2A> property.  
   
- The code for the following Web page uses a standard <xref:System.Web.UI.WebControls.BulletedList> control and places it in a zone. The control will be wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, which enables it to act as a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control. To make the control exportable, an `ExportMode` attribute is added to the `<asp:bulletedlist>` element, and the attribute value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>, which means that both sensitive and non-sensitive data can be exported. Note also that in the `<asp:webpartmanager>` element, the `ExportSensitiveDataWarning` attribute is assigned a custom value.  
+ The code for the following Web page uses a standard <xref:System.Web.UI.WebControls.BulletedList> control and places it in a zone. The control will be wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, which enables it to act as a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control. To make the control exportable, an `ExportMode` attribute is added to the `<asp:bulletedlist>` element, and the attribute value is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.All>, which means that both sensitive and non-sensitive data can be exported. Note also that in the `<asp:webpartmanager>` element, the `ExportSensitiveDataWarning` attribute is assigned a custom value.  
   
  Note that for the code example to work, there is a setting you must add in the Web.config file to enable exporting Web Parts description files. Ensure that you have a Web.config file in the same directory as the Web page for this code example. Within the `<system.web>` section, make sure there is a `<webParts>` element with an `enableExport` attribute set to `true`, as in the following markup.  
   
@@ -2101,7 +2173,7 @@
   
  Properties on `webPart` are not exported by default. To enable export of a property, you must mark it with the `[Personalizable]` attribute in the source code. You can also optionally mark an exportable property as containing sensitive data, by setting the `isSensitive` parameter of the `[Personalizable]` attribute to `true`. By default, `isSensitive` is `false`. Developers can set the parameter to `true` to indicate that the data is sensitive.  
   
- To enable `webPart` to be exported, a developer sets its <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value to either <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode> (which includes all personalizable and sensitive properties), or to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>, which exports everything except for sensitive properties.  
+ To enable `webPart` to be exported, a developer sets its <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property value to either <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.All> (which includes all personalizable and sensitive properties), or to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.NonSensitiveData>, which exports everything except for sensitive properties.  
   
 > [!IMPORTANT]
 >  Allowing users to export data from controls, and to import data into other controls, entails some security risks. Developers should use the approach discussed above to protect sensitive data, and if they want to avoid the risk of exposing data altogether, they should not enable export on `webPart` at all. For details on Web Parts security issues, see [Securing Web Parts Pages](http://msdn.microsoft.com/library/8ada6210-ed00-4157-b3e9-a7e87e77caa2).  
@@ -2520,6 +2592,46 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsAuthorized">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server control can be added to a page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Part of the flexibility of the Web Parts feature is the ability to add server controls to Web pages at run time. There are a number of common scenarios in which a server control (which can be a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, a custom server control, a user control, or an ASP.NET control) can be added.  
+  
+ In the following common scenarios, the Web Parts control set attempts to add server controls to a page, and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method is called to authorize them:  
+  
+-   When a server control is added by declaring it in the markup of a Web page within a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
+  
+-   When a server control is added programmatically to a zone.  
+  
+-   When a user imports a server control into a Web Parts catalog of controls.  
+  
+-   When an existing server control is loaded from the personalization data store.  
+  
+-   When a server control is added to a <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control to make it available in a catalog of server controls.  
+  
+ In each scenario where controls are added, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method is called to ensure that all authorization criteria have been met to allow a control to be added. When a control is authorized, it is added normally as it would be if there was no filtering scenario. When a control is not authorized, the Web Parts control set can respond in several ways, depending on the context. The control set can silently fail to add an unauthorized part (if there is no need to inform the user), it can display an error message, or it can add an instance of the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> class as a placeholder. This placeholder object is not visible on the page, but is visible in the page source code to indicate that an unauthorized control was excluded.  
+  
+ The determinant of whether a control is authorized is the authorization filter. An authorization filter is a feature in the Web Parts control set that enables developers to exclude from a page any controls that do not meet the specified criteria.  
+  
+ To create a filtering scenario, developers must do two things. First, they must assign a string value (the value can be arbitrary) to the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control they plan to use in the scenario. They can also assign a value to this property for other types of server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, because if they are placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones, such controls are wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, and this control inherits the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property.  
+  
+ The second necessary step for creating a filtering scenario is to either override the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%28System.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> method, or to create an event handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event. In these methods, a developer can check the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property, and if the value indicates that the control should not be authorized, the developer ensures that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method returns a value of `false`.  
+  
+> [!NOTE]
+>  For code examples and a description of how to set up a customized filtering scenario using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method, see the topics for the overloads of the method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsAuthorized">
       <MemberSignature Language="C#" Value="public bool IsAuthorized (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAuthorized(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
@@ -2634,9 +2746,7 @@
   
  The second step is to override the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%28System.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> method, and create custom handling for authorization filters. Note that the code first checks whether the property has a value, so that any control that does not assign the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property will be added automatically. If a control has a filter, the code returns `true` only if the filter value is equal to `admin`. This demonstrates a simple mechanism you can use for displaying certain controls to certain users, depending on their role. While a full example using roles is beyond the scope of this topic, you could use the same logic as the overridden method in this code example, except that you could check whether the current user is in a role that matches the authorization filter value, and then add the control only for that user. This would enable you to create pages where some users would see all the controls, and other users would see only selected controls. This is how the logic that checks the filter might look if you used roles:  
   
- [Visual Basic]  
-  
-```  
+```vb  
 If Roles.IsUserInRole(Page.User.Identity.Name, authorizationFilter) Then  
   return True  
 Else  
@@ -2644,9 +2754,7 @@ Else
 End If  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 if(Roles.IsUserInRole(Page.User.Identity.Name, authorizationFilter))  
     return true;  
 else  
@@ -2959,9 +3067,7 @@ else
   
  Because setting up users in roles is beyond the scope of this topic, this code example does not check user roles in the filtering. However, the scenario of filtering controls according to user roles is likely to be one of the most common uses of this filtering feature. If you have roles on your site, and you want to check user roles in this method to filter controls, the method would resemble the following code block (versus the simpler approach in the preceding code example, which does not use roles).  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Protected Sub WebPartManager1_AuthorizeWebPart(ByVal sender _  
   As Object, ByVal e As WebPartAuthorizationEventArgs)  
   
@@ -2978,9 +3084,7 @@ Protected Sub WebPartManager1_AuthorizeWebPart(ByVal sender _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void mgr1_AuthorizeWebPart(object sender,   
   WebPartAuthorizationEventArgs e)  
 {  
@@ -4792,117 +4896,5 @@ protected void mgr1_AuthorizeWebPart(object sender,
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CanConnectWebParts">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Checks the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls that will be participating in a connection to determine whether they are capable of being connected.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method is used to determine whether two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls can be connected. The method is typically used as a conditional check prior to calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method.  
-  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method checks a number of criteria that must be met before two controls can form a connection. The following list summarizes the primary criteria for making a connection. If all these criteria (plus some additional internal conditions) are met, the method returns `true`, meaning that the controls can be connected:  
-  
--   The provider and consumer controls cannot be `null`, and they must be contained in the collection of controls referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A> property.  
-  
--   The provider and consumer cannot be the same control. In other words a <xref:System.Web.UI.WebControls.WebParts.WebPart> control cannot connect to itself.  
-  
--   The <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> objects (connection points) for both the provider and consumer cannot be `null`.  
-  
--   The provider and consumer cannot be closed (neither control's <xref:System.Web.UI.WebControls.WebParts.WebPart.IsClosed%2A> property can be `true`).  
-  
--   The <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.ControlType%2A> property of the connection point control must match the type of the control of both consumer and provider.  
-  
--   The connection points must both be enabled (their <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.GetEnabled%2A> methods must both return `true`).  
-  
--   Each connection point must not be attempting to form more connections than what is specified in its own <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.AllowsMultipleConnections%2A> property.  
-  
--   If a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object (transformer) is required to connect incompatible controls, it cannot be `null`. However, if the controls are already compatible, the transformer must be `null`.  
-  
--   The transformer (if used) must be referenced in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AvailableTransformers%2A> collection.  
-  
--   The transformer (if used) must have interfaces that are compatible with the provider and the consumer so that it can transform data between the two controls. The secondary interfaces of the consumer and provider must also be compatible.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsAuthorized">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server control can be added to a page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Part of the flexibility of the Web Parts feature is the ability to add server controls to Web pages at run time. There are a number of common scenarios in which a server control (which can be a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, a custom server control, a user control, or an ASP.NET control) can be added.  
-  
- In the following common scenarios, the Web Parts control set attempts to add server controls to a page, and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method is called to authorize them:  
-  
--   When a server control is added by declaring it in the markup of a Web page within a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
-  
--   When a server control is added programmatically to a zone.  
-  
--   When a user imports a server control into a Web Parts catalog of controls.  
-  
--   When an existing server control is loaded from the personalization data store.  
-  
--   When a server control is added to a <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control to make it available in a catalog of server controls.  
-  
- In each scenario where controls are added, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method is called to ensure that all authorization criteria have been met to allow a control to be added. When a control is authorized, it is added normally as it would be if there was no filtering scenario. When a control is not authorized, the Web Parts control set can respond in several ways, depending on the context. The control set can silently fail to add an unauthorized part (if there is no need to inform the user), it can display an error message, or it can add an instance of the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> class as a placeholder. This placeholder object is not visible on the page, but is visible in the page source code to indicate that an unauthorized control was excluded.  
-  
- The determinant of whether a control is authorized is the authorization filter. An authorization filter is a feature in the Web Parts control set that enables developers to exclude from a page any controls that do not meet the specified criteria.  
-  
- To create a filtering scenario, developers must do two things. First, they must assign a string value (the value can be arbitrary) to the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control they plan to use in the scenario. They can also assign a value to this property for other types of server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, because if they are placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones, such controls are wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, and this control inherits the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property.  
-  
- The second necessary step for creating a filtering scenario is to either override the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%28System.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> method, or to create an event handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.AuthorizeWebPart> event. In these methods, a developer can check the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property, and if the value indicates that the control should not be authorized, the developer ensures that the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method returns a value of `false`.  
-  
-> [!NOTE]
->  For code examples and a description of how to set up a customized filtering scenario using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method, see the topics for the overloads of the method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ConnectWebParts">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a connection between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls (or other server controls capable of forming connections) that reside in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method forms a connection between any two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that can be connected. Before calling this method to create a connection, you might also want to call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CanConnectWebParts%2A> method in a conditional check to ensure that the controls meet the requirements for forming a connection.  
-  
-> [!NOTE]
->  It is also possible to create a connection between two server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. In general, the two controls would have to be custom server controls (for example, controls that inherit from <xref:System.Web.UI.WebControls.WebControl> or existing ASP.NET server controls) so that you could add the required members. The controls would also have to meet the requirements specified below.  
-  
- Any type of connection scenario between two controls must meet the following requirements to be able to connect:  
-  
--   Each control resides in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone (it does not have to be the same zone).  
-  
--   As implemented in the Web Parts control set, the provider control in a connection implements an interface as a public method that serves as a callback to the provider, and has a `ConnectionProvider` metadata attribute on the method to identify it as a provider connection point. Because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints%2A> method that retrieves provider connection points is virtual, a derived <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control does not necessarily have to use the same metadata attribute.  
-  
--   As implemented in the Web Parts control set, the consumer control in a connection also has a special method that enables it to get a reference to the interface that is exposed in the provider's callback method, and the consumer has a `ConnectionConsumer` metadata attribute on the method to identify it as a consumer connection point. Because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints%2A> method that retrieves consumer connection points is virtual, a derived <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control does not necessarily have to use the same metadata attribute.  
-  
--   The callback methods must either be compatible, in that the consumer can use the type of interface supplied in the provider's callback method (meaning that the consumer and provider can share data directly), or the developer must use a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object to transform the data from the provider into a form that the consumer can use.  
-  
-    > [!IMPORTANT]
-    >  When you do not need a transformer, use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%29> method overload. When you need a transformer, use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPartTransformer%29> method overload.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

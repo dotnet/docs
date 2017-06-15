@@ -2,7 +2,7 @@
 title: "&lt;certificate&gt; of &lt;clientCertificate&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies an X.509 certificate used to sign and encrypt messages.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <certificate findValue = "String"   
 storeLocation = "CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
@@ -64,7 +63,7 @@ X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 ## Example  
  The following code specifies how to find an appropriate X.509 certificate and a custom validation type in the `<authentication>` element.  
   
-```  
+```xml  
 <serviceBehaviors>  
  <behavior name="myServiceBehavior">  
   <clientCertificate>  

@@ -1,5 +1,5 @@
 ---
-title: .NET Core
+title: .NET Core | Microsoft Docs
 description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
@@ -13,7 +13,7 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 
 # .NET Core
 
-> Check out the ["Getting Started" tutorials](getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+> Check out the ["Getting Started" tutorials](get-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. 
 
@@ -105,7 +105,7 @@ The product is broken into several pieces, enabling the various parts to be adap
 
 People commonly ask how .NET Core is implemented in order to support multiple operating systems. They typically ask if there are separate implementations or if [conditional compilation](https://en.wikipedia.org/wiki/Conditional_compilation) is used. It's both, with a strong bias towards conditional compilation.
 
-You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Platform-neutral code can be implemented as a single portable assembly that be used on all platforms.
+You can see in the chart below that the vast majority of [CoreFX](https://github.com/dotnet/corefx) is platform-neutral code that is shared across all platforms. Platform-neutral code can be implemented as a single portable assembly that is used on all platforms.
 
 ![CoreFX: Lines of Code per Platform](../images/corefx-platforms-loc.png)
 

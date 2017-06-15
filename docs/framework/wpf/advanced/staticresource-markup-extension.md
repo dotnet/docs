@@ -26,16 +26,16 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
 ## XAML Attribute Usage  
   
-```  
-<object property="{StaticResource key}" .../>  
+```xml  
+<object property="{StaticResource key}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xml  
 <object>  
   <object.property>  
-<StaticResource ResourceKey="key" .../>  
+<StaticResource ResourceKey="key" .../>  
   </object.property>  
 </object>  
 ```  
@@ -63,8 +63,8 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
  `StaticResource` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.StaticResourceExtension.ResourceKey%2A> property as a property=value pair:  
   
-```  
-<object property="{StaticResource ResourceKey=key}" .../>  
+```xml  
+<object property="{StaticResource ResourceKey=key}" .../>  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `StaticResource` has only one settable property, which is required, this verbose usage is not typical.  

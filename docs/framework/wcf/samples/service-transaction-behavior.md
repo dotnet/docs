@@ -2,7 +2,7 @@
 title: "Service Transaction Behavior | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,18 +43,16 @@ public interface ICalculator
     [TransactionFlow(TransactionFlowOption.Mandatory)]  
     double Divide(double n);  
 }  
-  
 ```  
   
  To enable the incoming transaction flow, the service is configured with the system-provided wsHttpBinding with the transactionFlow attribute set to `true`. This binding uses the interoperable WSAtomicTransactionOctober2004 protocol:  
   
-```  
+```xml  
 <bindings>  
   <wsHttpBinding>  
     <binding name="transactionalBinding" transactionFlow="true" />  
   </wsHttpBinding>  
 </bindings>  
-  
 ```  
   
  After initiating both a connection to the service and a transaction, the client accesses several service operations within the scope of that transaction and then completes the transaction and closes the connection:  

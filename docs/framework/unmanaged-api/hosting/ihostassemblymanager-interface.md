@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostAssemblyManager interface [.NET Framework hosting]"
 ms.assetid: dfec05bb-3cd7-4bd5-b396-a4f097c3a636
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

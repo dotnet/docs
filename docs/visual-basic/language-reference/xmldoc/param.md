@@ -39,7 +39,7 @@ Defines a parameter name and description.
   
 ## Syntax  
   
-```  
+```xml  
 <param name="name">description</param>  
 ```  
   

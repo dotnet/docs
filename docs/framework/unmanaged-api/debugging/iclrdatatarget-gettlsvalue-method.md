@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTLSValue method [.NET Framework debugging]"
   - "ICLRDataTarget::GetTLSValue method [.NET Framework debugging]"
 ms.assetid: 0d8a7730-edc9-4728-898f-41b219cf5a28
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

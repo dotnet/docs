@@ -6,14 +6,18 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of initialization methods for instances of the <see cref="T:System.Collections.Immutable.ImmutableList`1" /> class.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Create&lt;T&gt;">
@@ -25,6 +29,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -34,9 +39,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items to be stored in the .</typeparam>
+        <summary>Creates an empty immutable list.</summary>
+        <returns>An empty .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,6 +54,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -60,10 +66,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the .</typeparam>
+        <param name="item">The item to prepopulate the list with.</param>
+        <summary>Creates a new immutable list that contains the specified item.</summary>
+        <returns>A new  that contains the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +82,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -93,10 +100,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the .</typeparam>
+        <param name="items">An array that contains the items to prepopulate the list with.</param>
+        <summary>Creates a new immutable list that contains the specified array of items.</summary>
+        <returns>A new immutable list that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,6 +116,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;+Builder</ReturnType>
@@ -118,9 +126,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items stored by the collection.</typeparam>
+        <summary>Creates a new immutable list builder.</summary>
+        <returns>The immutable collection builder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,6 +141,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -144,10 +153,10 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the .</typeparam>
+        <param name="items">The items to add to the list.</param>
+        <summary>Creates a new immutable list that contains the specified items.</summary>
+        <returns>Returns an immutable list that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,6 +169,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -172,11 +182,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the list. The value can be null for reference types.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the list.</summary>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that extends from index to the last element, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,6 +199,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -202,12 +213,12 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the list.</summary>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the immutable list that extends from index to the last element, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,6 +231,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -233,12 +245,12 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <param name="startIndex">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</summary>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the Immutable list that extends from index to the last element, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,6 +263,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -265,13 +278,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <param name="startIndex">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        <param name="count">The number of elements in the section to search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</summary>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the Immutable list that extends from index to the last element, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,6 +297,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -296,11 +310,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the entire immutable list.</summary>
+        <returns>The zero-based index of the last occurrence of item within the entire the Immutable list, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -313,6 +327,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -326,12 +341,12 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the entire immutable list.</summary>
+        <returns>The zero-based index of the last occurrence of item within the entire the Immutable list, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,6 +359,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -357,12 +373,12 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <param name="startIndex">The zero-based starting index of the backward search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</summary>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the Immutable list that extends from the first element to index, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,6 +391,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -389,13 +406,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="item">The object to locate in the Immutable list. The value can be null for reference types.</param>
+        <param name="startIndex">The zero-based starting index of the backward search.</param>
+        <param name="count">The number of elements in the section to search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</summary>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the Immutable list that extends from the first element to index, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,6 +425,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -420,11 +438,11 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="value">The value to remove.</param>
+        <summary>Removes the specified value from this list.</summary>
+        <returns>A new immutable list with the element removed, or this list if the element is not in this list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,6 +455,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -449,11 +468,11 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="items">The items to remove if matches are found in this list.</param>
+        <summary>Removes the specified values from this list.</summary>
+        <returns>A new immutable list with the elements removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -466,6 +485,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -479,13 +499,14 @@
         <Parameter Name="newValue" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="list">To be added.</param>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the list.</typeparam>
+        <param name="list">The list to search.</param>
+        <param name="oldValue">The element to replace.</param>
+        <param name="newValue">The element to replace the old element with.</param>
+        <summary>Replaces the first equal element in the list with the specified element.</summary>
+        <returns>The new list -- even if the value being replaced is equal to the new value for that position.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown when the old value does not exist in the list.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToImmutableList&lt;TSource&gt;">
@@ -497,6 +518,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;TSource&gt;</ReturnType>
@@ -508,10 +530,10 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements in the sequence.</typeparam>
+        <param name="source">The sequence to enumerate.</param>
+        <summary>Enumerates a sequence and produces an immutable list of its contents.</summary>
+        <returns>An immutable list that contains the items in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

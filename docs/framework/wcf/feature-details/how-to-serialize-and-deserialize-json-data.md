@@ -2,7 +2,7 @@
 title: "How to: Serialize and Deserialize JSON Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -124,7 +124,6 @@ public static User ReadToObject(string json)
     ms.Close();  
     return deserializedUser;  
 }  
-  
 ```  
   
 > [!NOTE]

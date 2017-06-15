@@ -2,7 +2,7 @@
 title: "&lt;defaultCertificate&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
-  
+```xml  
 <defaultCertificate findValue="String"   
 storeLocation=" CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"   
@@ -87,7 +86,7 @@ x509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 ## Example  
  The following example specifies a certificate to use for endpoints whose URI begins with http://www.contoso.com and a certificate to use for all other endpoints that do not perform certificate negotiation.  
   
-```  
+```xml  
 <serviceCertificate>  
   <defaultCertificate findValue="www.contoso.com"   
                       storeLocation="LocalMachine"  

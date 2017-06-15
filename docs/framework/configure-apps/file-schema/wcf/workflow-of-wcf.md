@@ -2,7 +2,7 @@
 title: "&lt;workflow&gt; of WCF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ Configure a tracking participant that listens to the tracking records being emit
 ## Syntax  
   
 ```vb  
-   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
+   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
 ```  
   
 ## Attributes and Elements  
@@ -63,8 +63,7 @@ Configure a tracking participant that listens to the tracking records being emit
   
  The Provider Id that the ETW Tracking Participant uses for writing the Tracking Records to ETW is defined in the `<diagnostics>` section. The tracking participant has a profile associated with it to specify the tracking records it has subscribed to. This is defined by the `profileName` attribute of the `<add>` element. Once these are defined, the Tracking Participant is added to the `<etwTracking>` service behavior. This will add the selected Tracking Participants to the Workflow instance’s extensions, so that they begin to receive the Tracking Records.  
   
-```  
-  
+```xml  
 <configuration>   
   <system.web>   
     <compilation targetFrameworkMoniker=".NETFramework,Version=v4.0"/>   

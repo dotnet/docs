@@ -2,7 +2,7 @@
 title: "CustomChannelsTester | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +44,7 @@ The `CustomChannelsTester` is a tool that you can use to test your custom channe
   
      The following is the sample XML for the description of the test specifications (testspec.xml):  
   
-    ```  
+    ```xml  
     <TestSpec xmlns="http://WCF/TestSpec" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"   
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >  
     <ServiceContract>  

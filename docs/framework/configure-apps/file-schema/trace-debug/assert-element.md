@@ -2,7 +2,7 @@
 title: "&lt;assert&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,8 +35,7 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
   
 ## Syntax  
   
-```  
-  
+```xml  
 <assert assertuienabled="true|false" logfilename="file name"/>  
 ```  
   
@@ -73,7 +72,7 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
 ## Example  
  The following example shows how to disable displaying message boxes when you call **Debug.Assert** and write the messages to `c:\log.txt`.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <assert assertuienabled="false" logfilename="c:\log.txt"/>  

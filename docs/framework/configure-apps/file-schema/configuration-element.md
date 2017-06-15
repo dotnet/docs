@@ -34,8 +34,8 @@ The root element in every configuration file used by the common language runtime
 ## Syntax  
   
 ```xml  
-<configuration>   
-   \<!-- configuration settings -->   
+<configuration>   
+   <!-- configuration settings -->   
 </configuration>  
 ```  
   

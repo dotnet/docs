@@ -2,7 +2,7 @@
 title: "How to: Save Files Using the SaveFileDialog Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -78,7 +78,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
            fs.Close()  
         End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -121,7 +120,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
        fs.Close();  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -171,7 +169,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
   
     ```csharp  
     this.button2.Click += new System.EventHandler(this.button2_Click);  
-  
     ```  
   
     ```cpp  

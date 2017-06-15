@@ -2,7 +2,7 @@
 title: "Configuration Channel Factory | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,6 @@ Configuration newConfiguration = ConfigurationManager.OpenMappedExeConfiguration
   
 ConfigurationChannelFactory<ICalculatorChannel> factory1 = new ConfigurationChannelFactory<ICalculatorChannel>("endpoint1", newConfiguration, new EndpointAddress("http://localhost:8000/servicemodelsamples/service"));  
 ICalculatorChannel client1 = factory1.CreateChannel();  
-  
 ```  
   
 #### To set up, build, and run the sample  

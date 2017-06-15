@@ -2,7 +2,7 @@
 title: "Instancing Initialization | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,7 @@ This sample extends the [Pooling](../../../../docs/framework/wcf/samples/pooling
 ## IInstanceProvider  
  In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the EndpointDispatcher creates instances of a service class by using an instance provider that implements the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface. This interface has only two methods:  
   
--   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A>: When a message arrives, the Dispatcher calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method to create an instance of the service class to process the message. The frequency of the calls to this method is determined by the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property. For example if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode?displayProperty=fullName>, a new instance of service class is created to process each message that arrives, so <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> is called whenever a message arrives.  
+-   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A>: When a message arrives, the Dispatcher calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method to create an instance of the service class to process the message. The frequency of the calls to this method is determined by the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property. For example if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode.PerCall?displayProperty=fullName>, a new instance of service class is created to process each message that arrives, so <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> is called whenever a message arrives.  
   
 -   <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A>: When the service instance finishes processing the message, the EndpointDispatcher calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%2A> method. As in the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method, the frequency of the calls to this method is determined by the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property.  
   
@@ -37,7 +37,6 @@ This sample extends the [Pooling](../../../../docs/framework/wcf/samples/pooling
  The `ObjectPoolInstanceProvider` class contains the implementation for the object pool. This class implements the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface to interact with the service model layer. When the EndpointDispatcher calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method, instead of creating a new instance, the custom implementation looks for an existing object in an in-memory pool. If one is available, it is returned. Otherwise, `ObjectPoolInstanceProvider` checks whether the `ActiveObjectsCount` property (number of objects returned from the pool) has reached the maximum pool size. If not, a new instance is created and returned to the caller and `ActiveObjectsCount` is subsequently incremented. Otherwise an object creation request is queued for a configured period of time. The implementation for `GetObjectFromThePool` is shown in the following sample code.  
   
 ```  
-  
 private object GetObjectFromThePool()  
 {  
     bool didNotTimeout =   
@@ -130,7 +129,6 @@ public void ReleaseInstance(InstanceContext instanceContext, object instance)
   
     availableCount.Release(1);  
 }  
-  
 ```  
   
  The `ReleaseInstance` method provides a *clean up initialization* feature. Normally the pool maintains a minimum number of objects for the lifetime of the pool. However, there can be periods of excessive usage that require creating additional objects in the pool to reach the maximum limit specified in the configuration. Eventually when the pool becomes less active those surplus objects can become an extra overhead. Therefore when the `activeObjectsCount` reaches zero an idle timer is started that triggers and performs a clean-up cycle.  
@@ -140,7 +138,6 @@ if (activeObjectsCount == 0)
 {  
     idleTimer.Start();   
 }  
-  
 ```  
   
  ServiceModel layer extensions are hooked up using the following behaviors:  
@@ -221,7 +218,6 @@ if (obj is IObjectControl)
 {  
     ((IObjectControl)obj).Activate();  
 }  
-  
 ```  
   
  When returning an object to the pool, a check is required for the `CanBePooled` property before adding the object back to the pool.  
@@ -236,7 +232,6 @@ if (instance is IObjectControl)
        pool.Push(instance);  
     }  
 }  
-  
 ```  
   
  Because the service developer can decide whether an object can be pooled, the object count in the pool at a given time can go below the minimum size. Therefore you must check whether the object count has gone below the minimum level and perform the necessary initialization in the clean-up procedure.  

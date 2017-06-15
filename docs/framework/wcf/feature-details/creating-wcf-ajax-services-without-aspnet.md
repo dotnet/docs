@@ -2,7 +2,7 @@
 title: "Creating WCF AJAX Services without ASP.NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +42,7 @@ manager: "erikre"
   
  Alternatively, you can also use configuration to add an AJAX endpoint. Use the <xref:System.ServiceModel.WebHttpBinding> on the service endpoint and configure that endpoint with the <xref:System.ServiceModel.Description.WebHttpBehavior> as shown in the following code snippet.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <behaviors>  
@@ -79,24 +79,24 @@ string[] GetCities(string firstLetters);
   
  You can use the full Web Programming Model to customize these basic aspects. For example, you can use the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes to control the HTTP verb to which the operation responds or use the `UriTemplate` property of these respective attributes to specify custom URIs. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md) topic.  
   
- The JSON data format is often used in AJAX services. To create an operation that returns JSON instead of XML, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> (or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A>) property to <xref:System.ServiceModel.Web.WebMessageFormat>. The [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md) topic shows how built-in .NET types and data contract types map to JSON.  
+ The JSON data format is often used in AJAX services. To create an operation that returns JSON instead of XML, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> (or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A>) property to <xref:System.ServiceModel.Web.WebMessageFormat.Json>. The [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md) topic shows how built-in .NET types and data contract types map to JSON.  
   
  Normally, JSON requests and responses consist of just one item. For the preceding `GetCities` operation, the request resembles the following statement.  
   
 ```  
-“na”  
+"na"  
 ```  
   
  The response to that request resembles the following statement.  
   
 ```  
-[“Nairobi”, “Naples”, “Nashville”]  
+["Nairobi", "Naples", "Nashville"]  
 ```  
   
  If the operation takes an extra parameter, the request style must be wrapped to wrap both parameters in a single JSON object. An example of this style JSON message is in the following example.  
   
-```  
-{“firstLetters”: “na”, “maxNumber”: 2}  
+```json  
+{"firstLetters": "na", "maxNumber": 2}  
 ```  
   
  The following contract accepts this message.  
@@ -110,7 +110,7 @@ string[] GetCities(string firstLetters, int maxNumber);
 ## Accessing AJAX Services  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] AJAX endpoints always accept both JSON and XML requests.  
   
- HTTP POST requests with a content-type of “application/json” are treated as JSON, and those with content-type that indicate XML (for example, “text/xml”) are treated as XML.  
+ HTTP POST requests with a content-type of "application/json" are treated as JSON, and those with content-type that indicate XML (for example, "text/xml") are treated as XML.  
   
  HTTP GET requests contain all the request parameters in the URL itself.  
   

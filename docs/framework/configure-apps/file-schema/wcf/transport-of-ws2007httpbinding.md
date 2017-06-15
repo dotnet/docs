@@ -2,7 +2,7 @@
 title: "&lt;transport&gt; of &lt;ws2007HttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,6 @@ Defines authentication settings for the HTTP transport.
 ## Syntax  
   
 ```  
-  
 transport clientCredentialType =   
        "Basic/Certificate/Digest/None/Ntlm/Windows"  
        proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  

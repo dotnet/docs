@@ -2,7 +2,7 @@
 title: "How to: Add to or Remove from a Collection of Controls at Run Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,7 +52,6 @@ Common tasks in application development are adding controls to and removing cont
        ' handler for your application.  
        AddHandler NewPanelButton.Click, AddressOf NewPanelButton_Click  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -89,7 +88,6 @@ Common tasks in application development are adding controls to and removing cont
           NewPanelButton.Dispose()  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  

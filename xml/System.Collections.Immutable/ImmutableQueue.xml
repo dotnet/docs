@@ -6,14 +6,25 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a set of initialization methods for instances of the <see cref="T:System.Collections.Immutable.ImmutableQueue`1" /> class.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Queue>  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Create&lt;T&gt;">
@@ -25,6 +36,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -34,9 +46,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items to be stored in the immutable queue.</typeparam>
+        <summary>Creates an empty immutable queue.</summary>
+        <returns>An empty immutable queue.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,6 +61,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -60,10 +73,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable queue.</typeparam>
+        <param name="item">The item to prepopulate the queue with.</param>
+        <summary>Creates a new immutable queue that contains the specified item.</summary>
+        <returns>A new immutable queue that contains the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +89,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -93,10 +107,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable queue.</typeparam>
+        <param name="items">An array that contains the items to prepopulate the queue with.</param>
+        <summary>Creates a new immutable queue that contains the specified array of items.</summary>
+        <returns>A new immutable queue that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,6 +123,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -120,10 +135,10 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements in the queue.</typeparam>
+        <param name="items">The items to add to the queue before immutability is applied.</param>
+        <summary>Creates a new immutable queue that contains the specified items.</summary>
+        <returns>An immutable queue that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,6 +151,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableQueue&lt;T&gt;</ReturnType>
@@ -148,11 +164,11 @@
         <Parameter Name="value" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="queue">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements in the immutable queue.</typeparam>
+        <param name="queue">The queue to remove the item from.</param>
+        <param name="value">When this method returns, contains the item from the beginning of the queue.</param>
+        <summary>Removes the item at the beginning of the immutable queue, and returns the new queue.</summary>
+        <returns>The new queue with the item removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

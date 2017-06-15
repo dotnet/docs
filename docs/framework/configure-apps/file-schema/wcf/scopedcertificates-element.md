@@ -2,7 +2,7 @@
 title: "&lt;scopedCertificates&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
-  
+```xml  
 <scopedCertificates>  
       <add findValue="String"  
                 storeLocation="CurrentUser/LocalMachine"  
@@ -68,7 +67,7 @@ endpointBehaviors section
 ## Example  
  The following example specifies a service certificate for the client to use when communicating with endpoints whose domain name is http://www.contoso.com over the HTTP protocol.  
   
-```  
+```xml  
 <serviceCertificate>  
   <scopedCertificates>  
      <add targetUri="http://www.contoso.com"   

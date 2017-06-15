@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for bypasslist (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,10 +39,9 @@ Removes an IP address or DNS name from the proxy bypass list.
   
 ## Syntax  
   
-```  
-  
-      <remove   
-   name = "regular expression"   
+```xml  
+      <remove   
+   name = "regular expression"   
 />  
 ```  
   
@@ -77,7 +76,7 @@ Removes an IP address or DNS name from the proxy bypass list.
 ## Example  
  The following code example removes any previous definition for the adventure-works.com domain, and then adds the contoso.com domain to the bypass list.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

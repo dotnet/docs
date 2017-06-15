@@ -398,7 +398,7 @@
 ## Remarks  
  Two <xref:System.Windows.Forms.Padding> objects are equal if the padding values for each of the four edges – <xref:System.Windows.Forms.Padding.Left%2A>, <xref:System.Windows.Forms.Padding.Right%2A>, <xref:System.Windows.Forms.Padding.Top%2A>, and <xref:System.Windows.Forms.Padding.Bottom%2A> – are the same for both objects.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Equals%28System.Windows.Forms.Padding%2CSystem.Windows.Forms.Padding%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -430,7 +430,7 @@
 ## Remarks  
  This operation is the inverse of <xref:System.Windows.Forms.Padding.op_Equality%2A>.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.Padding.Compare%28System.Windows.Forms.Padding%2CSystem.Windows.Forms.Padding%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is the negation of <xref:System.Windows.Forms.Padding.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>

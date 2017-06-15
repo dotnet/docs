@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.MessageEventSubscription.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String)
 author: "Erikre"
 ms.author: "erikre"

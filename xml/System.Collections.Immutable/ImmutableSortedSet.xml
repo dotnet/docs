@@ -6,14 +6,18 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of initialization methods for instances of the <see cref="T:System.Collections.Immutable.ImmutableSortedSet`1" /> class.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Create&lt;T&gt;">
@@ -25,6 +29,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -34,9 +39,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items to be stored in the immutable set.</typeparam>
+        <summary>Creates an empty immutable sorted set.</summary>
+        <returns>An empty immutable sorted set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,6 +54,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -60,10 +66,10 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable set.</typeparam>
+        <param name="comparer">The implementation to use when comparing items in the set.</param>
+        <summary>Creates an empty immutable sorted set that uses the specified comparer.</summary>
+        <returns>An empty immutable set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +82,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -87,10 +94,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable set.</typeparam>
+        <param name="item">The item to prepopulate the set with.</param>
+        <summary>Creates a new immutable sorted set that contains the specified item.</summary>
+        <returns>A new immutable set that contains the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,6 +110,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -120,10 +128,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable set.</typeparam>
+        <param name="items">An array that contains the items to prepopulate the set with.</param>
+        <summary>Creates a new immutable sorted set that contains the specified array of items.</summary>
+        <returns>A new immutable set that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,6 +144,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -148,11 +157,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="comparer">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items stored in the immutable set.</typeparam>
+        <param name="comparer">The implementation to use when comparing items in the set.</param>
+        <param name="item">The item to prepopulate the set with.</param>
+        <summary>Creates a new immutable sorted set that contains the specified item and uses the specified comparer.</summary>
+        <returns>A new immutable set that contains the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,6 +174,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -183,11 +193,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="comparer">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable set.</typeparam>
+        <param name="comparer">The implementation to use when comparing items in the set.</param>
+        <param name="items">An array that contains the items to prepopulate the set with.</param>
+        <summary>Creates a new immutable sorted set that contains the specified array of items and uses the specified comparer.</summary>
+        <returns>A new immutable set that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,6 +210,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Builder</ReturnType>
@@ -209,9 +220,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items stored by the collection.</typeparam>
+        <summary>Returns a collection that can be used to build an immutable sorted set.</summary>
+        <returns>The immutable collection builder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,6 +235,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Builder</ReturnType>
@@ -235,10 +247,10 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items stored by the collection.</typeparam>
+        <param name="comparer">The comparer used to compare items in the set for equality.</param>
+        <summary>Returns a collection that can be used to build an immutable sorted set.</summary>
+        <returns>The immutable collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,6 +263,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -262,10 +275,10 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items stored by the collection.</typeparam>
+        <param name="items">The items to add to the set with before it’s immutable.</param>
+        <summary>Creates a new immutable collection that contains the specified items.</summary>
+        <returns>The new immutable set that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,6 +291,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -290,11 +304,11 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="comparer">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items stored by the collection.</typeparam>
+        <param name="comparer">The comparer to use to compare elements in this set.</param>
+        <param name="items">The items to add to the set before it’s immutable.</param>
+        <summary>Creates a new immutable collection that contains the specified items.</summary>
+        <returns>The new immutable set that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,6 +321,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;TSource&gt;</ReturnType>
@@ -318,10 +333,10 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements in the sequence.</typeparam>
+        <param name="source">The sequence to enumerate.</param>
+        <summary>Enumerates a sequence and produces an immutable sorted set of its contents.</summary>
+        <returns>An immutable sorted set that contains the items in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,6 +349,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;TSource&gt;</ReturnType>
@@ -346,11 +362,11 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;TSource&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements in the sequence.</typeparam>
+        <param name="source">The sequence to enumerate.</param>
+        <param name="comparer">The comparer to use for initializing and adding members to the sorted set.</param>
+        <summary>Enumerates a sequence, produces an immutable sorted set of its contents, and uses the specified comparer.</summary>
+        <returns>An immutable sorted set that contains the items in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

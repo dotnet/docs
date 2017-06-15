@@ -2,7 +2,7 @@
 title: "Message Correlation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,6 @@ public interface IOrderProcessor
     [OperationContract(IsOneWay = true, Action = "*")]  
     void SubmitPurchaseOrder(MsmqMessage<PurchaseOrder> msg);  
 }  
-  
 ```  
   
  The service operation processes the purchase order and displays the contents of the purchase order and its status in the service console window. The <xref:System.ServiceModel.OperationBehaviorAttribute> configures the operation to enlist in a transaction with the queue and to mark the transaction complete when the operation returns. The `PurchaseOrder` contains the order details that must be processed by the service.  
@@ -70,7 +69,6 @@ public class OrderProcessorService : IOrderProcessor
         client.Close();  
     }  
 }  
-  
 ```  
   
  The service uses a custom client `OrderResponseClient` to send the MSMQ message to the queue. Because the application that receives and processes the message is an MSMQ application and not a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, there is no implicit service contract between the two applications. So we cannot create a proxy using the Svcutil.exe tool in this scenario.  
@@ -78,7 +76,6 @@ public class OrderProcessorService : IOrderProcessor
  The custom proxy is essentially the same for all [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications that use the `msmqIntegrationBinding` binding to send messages. Unlike other proxies, it does not include a range of service operations. It is a submit message operation only.  
   
 ```  
-  
 [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderResponse  
 {  
@@ -106,7 +103,6 @@ public partial class OrderResponseClient : System.ServiceModel.ClientBase<IOrder
         base.Channel.SendOrderResponse(msg);  
     }  
 }  
-  
 ```  
   
  The service is self hosted. When using the MSMQ integration transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service contains <xref:System.Messaging> code to check for the existence of the queue and create it if necessary. The queue name is read from the configuration file.  
@@ -133,12 +129,11 @@ public static void Main()
             serviceHost.Close();  
       }  
 }  
-  
 ```  
   
  The MSMQ queue to which the order requests are sent is specified in the appSettings section of the configuration file. The client and service endpoints are defined in the system.serviceModel section of the configuration file. Both specify the `msmqIntegrationbinding` binding.  
   
-```  
+```xml  
 <appSettings>  
   <add key="orderQueueName" value=".\private$\Orders" />  
 </appSettings>  
@@ -173,7 +168,6 @@ public static void Main()
   </bindings>  
   
 </system.serviceModel>  
-  
 ```  
   
  The client application uses <xref:System.Messaging> to send a durable and transactional message to the queue. The message's body contains the purchase order.  
@@ -220,7 +214,6 @@ static void PlaceOrder()
     orderMessageID = msg.Id;  
     Console.WriteLine("Placed the order, waiting for response...");  
 }  
-  
 ```  
   
  The MSMQ queue from which the order responses are received is specified in an appSettings section of the configuration file, as shown in the following sample configuration.  
@@ -228,7 +221,7 @@ static void PlaceOrder()
 > [!NOTE]
 >  The queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.  
   
-```  
+```xml  
 <appSettings>  
     <add key=" orderResponseQueueName" value=".\private$\Orders" />  
 </appSettings>  
@@ -275,7 +268,6 @@ static void DisplayOrderStatus()
     }  
   }  
 }  
-  
 ```  
   
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client and sends a response back to the client. The client displays the response received from the service. Press ENTER in each console window to shut down the service and client.  

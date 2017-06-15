@@ -2,7 +2,7 @@
 title: "Transport: Custom Transactions over UDP Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -96,7 +96,6 @@ public class TransactionFlowInspector : IClientMessageInspector
       [...]  
  }  
 }  
-  
 ```  
   
  The `TransactionFlowInspector` itself is passed to the framework using a custom behavior: the `TransactionFlowBehavior`.  
@@ -246,7 +245,7 @@ if (transaction != null)
   
 10. Note that Svcutil.exe does not generate the binding extension configuration for the `sampleProfileUdpBinding`; you must add it manually.  
   
-    ```  
+    ```xml  
     <configuration>  
         <system.serviceModel>      
             …  

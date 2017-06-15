@@ -2,7 +2,7 @@
 title: "&lt;windows&gt; of &lt;clientCredentials&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
   
 ## Syntax  
   
-```  
-  
+```xml  
 <windows   
     allowedImpersonationLevel="Identification/Impersonation/Delegation/Anonymous/None"  
         allowNtlm="Boolean"  

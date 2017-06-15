@@ -23,12 +23,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.DelegatingHandler.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.DelegatingHandler.InnerHandler
 ms.author: "bobdel"
 manager: "markl"

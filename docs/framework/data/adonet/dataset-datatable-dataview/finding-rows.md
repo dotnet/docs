@@ -2,7 +2,7 @@
 title: "Finding Rows | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +42,6 @@ Else
     custView(rowIndex)("CustomerID").ToString(), _  
     custView(rowIndex)("CompanyName").ToString())  
 End If  
-  
 ```  
   
 ```csharp  
@@ -79,7 +78,6 @@ Else
       myDRV("CompanyName").ToString(), myDRV("ContactName").ToString())  
   Next  
 End If  
-  
 ```  
   
 ```csharp  

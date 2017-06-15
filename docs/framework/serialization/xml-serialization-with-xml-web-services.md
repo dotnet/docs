@@ -67,7 +67,6 @@ Public Class MyService
         return myOrder  
     End Function  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -99,7 +98,7 @@ public class MyService{
   
  The following code example calls `MyLiteralMethod`. The element name is changed to "LiteralOrderID".  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body>  
@@ -114,7 +113,7 @@ public class MyService{
   
  The following code example calls `MyEncodedMethod`. The element name is "EncodedOrderID".  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:types="http://tempuri.org/encodedTypes" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">  
@@ -140,7 +139,6 @@ Order
     Dim myOrder As Order = New Order()  
     return myOrder  
 End Function  
-  
 ```  
   
 ```csharp  
@@ -155,7 +153,7 @@ public Order MyLiteralMethod(){
   
  When invoked, the code returns XML that resembles the following.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body>  
@@ -182,7 +180,6 @@ Order
     myOrder.OrderID = ID  
     return myOrder  
 End Function  
-  
 ```  
   
 ```csharp  
@@ -199,7 +196,7 @@ Namespace="http://www.microsoft.com")] string ID){
   
  The SOAP request would resemble the following.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">  
     <soap:Body>  
@@ -224,7 +221,6 @@ Public Class Order
     XmlElement(ElementName:= "LiteralOrderID")> _  
     public OrderID As String  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -242,7 +238,7 @@ public class Order{
   
  The results of applying the `XmlTypeAttribute` and `SoapTypeAttribute` can be seen when you examine the service description, as shown in the following code example.  
   
-```  
+```xml  
     <s:element name="BookOrderForm" type="s0:BigBookService" />   
 - <s:complexType name="BigBookService">  
 - <s:sequence>  
@@ -260,7 +256,7 @@ public class Order{
   
  The effect of the `XmlRootAttribute` can also be seen in the HTTP GET and HTTP POST results, as follows.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <BookOrderForm xmlns="http://tempuri.org/">  
     <LiteralOrderID>string</LiteralOrderID>  

@@ -31,9 +31,7 @@
   
  Finally, the following code example shows how to modify the client configuration file to use the endpoint behavior with a particular endpoint.  
   
- <!-- TODO: review snippet reference [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  -->  
+ [!code-xml[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]   
   
  ]]></format>
     </remarks>
@@ -83,9 +81,7 @@
   
  Finally, the following code example shows how to modify the client configuration file to use the endpoint behavior with a particular endpoint.  
   
- <!-- TODO: review snippet reference [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  -->  
+ [!code-xml[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]   
   
  ]]></format>
         </remarks>
@@ -112,7 +108,7 @@
         <param name="request">The message to be sent to the service.</param>
         <param name="channel">The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object channel.</param>
         <summary>Enables inspection or modification of a message before a request message is sent to a service.</summary>
-        <returns>The object that is returned as the <paramref name="correlationState " />argument of the <see cref="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" /> method. This is <see langword="null" /> if no correlation state is used.  
+        <returns>The object that is returned as the <paramref name="correlationState" /> argument of the <see cref="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" /> method. This is <see langword="null" /> if no correlation state is used.  
   
  The best practice is to make this a <see cref="T:System.Guid" /> to ensure that no two <paramref name="correlationState" /> objects are the same.</returns>
         <remarks>
@@ -136,9 +132,7 @@
   
  Finally, the following code example shows how to modify the client configuration file to use the endpoint behavior with a particular endpoint.  
   
- <!-- TODO: review snippet reference [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  -->  
+ [!code-xml[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]   
   
  ]]></format>
         </remarks>

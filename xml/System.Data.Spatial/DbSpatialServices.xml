@@ -326,9 +326,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> contains <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateGeography">
@@ -354,7 +358,9 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> instance that contains the specified <paramref name="providerValue" /> and uses the specified <paramref name="spatialServices" /> as its spatial implementation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialServices" /> <paramref name="providerValue" /></exception>
+          <paramref name="spatialServices" />
+          <paramref name="providerValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateGeometry">
@@ -380,7 +386,9 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> instance that contains the specified <paramref name="providerValue" /> and uses the specified <paramref name="spatialServices" /> as its spatial implementation.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialServices" /> <paramref name="providerValue" /></exception>
+          <paramref name="spatialServices" />
+          <paramref name="providerValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="CreateProviderValue">
@@ -513,9 +521,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> crosses <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -559,9 +571,13 @@
         <returns>A new DbGeography value representing the difference of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Difference">
@@ -587,9 +603,13 @@
         <returns>A new DbGeometry value representing the difference between <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Disjoint">
@@ -616,9 +636,13 @@
           <see langword="true" /> if <paramref name="geographyValue" /> is disjoint from <paramref name="otherGeography" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Disjoint">
@@ -645,9 +669,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> is disjoint from <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Distance">
@@ -673,9 +701,13 @@
         <returns>A double value that specifies the distance between the two closest points in <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Distance">
@@ -701,9 +733,13 @@
         <returns>A double value that specifies the distance between the two closest points in <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="ElementAt">
@@ -1361,7 +1397,7 @@
       </Parameters>
       <Docs>
         <param name="geometryCollectionWellKnownBinary">A byte array that contains a well-known binary representation of the geometry value.</param>
-        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" />value should use.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new <see cref="T:System.Data.Spatial.DbGeometry" /> value should use.</param>
         <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> collection value based on the specified well-known binary value and coordinate system identifier (SRID).</summary>
         <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value as defined by the well-known binary value with the specified coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
         <remarks>To be added.</remarks>
@@ -3038,9 +3074,13 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value representing the intersection of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Intersection">
@@ -3066,9 +3106,13 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value representing the intersection of <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Intersects">
@@ -3095,9 +3139,13 @@
           <see langword="true" /> if <paramref name="geographyValue" /> intersects <paramref name="otherGeography" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Intersects">
@@ -3124,9 +3172,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> intersects <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Overlaps">
@@ -3153,9 +3205,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> overlaps <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="PointAt">
@@ -3244,9 +3300,14 @@
           <see langword="true" /> if this <paramref name="geometryValue" /> value relates to <paramref name="otherGeometry" /> according to the specified intersection pattern matrix; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /> <paramref name="matrix" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+          <paramref name="matrix" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialEquals">
@@ -3273,9 +3334,13 @@
           <see langword="true" /> if <paramref name="geographyValue" /> is spatially equal to <paramref name="otherGeography" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialEquals">
@@ -3302,9 +3367,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> is spatially equal to <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SymmetricDifference">
@@ -3330,9 +3399,13 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value representing the symmetric difference of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SymmetricDifference">
@@ -3358,9 +3431,13 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value representing the symmetric difference between <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Touches">
@@ -3387,9 +3464,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> touches <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -3415,9 +3496,13 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeography" /> value representing the union of <paramref name="geographyValue" /> and <paramref name="otherGeography" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyValue" /> <paramref name="otherGeography" /></exception>
+          <paramref name="geographyValue" />
+          <paramref name="otherGeography" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -3443,9 +3528,13 @@
         <returns>A new <see cref="T:System.Data.Spatial.DbGeometry" /> value representing the union of <paramref name="geometryValue" /> and <paramref name="otherGeometry" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Within">
@@ -3472,9 +3561,13 @@
           <see langword="true" /> if <paramref name="geometryValue" /> is within <paramref name="otherGeometry" />; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="otherGeometry" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="otherGeometry" />
+        </exception>
       </Docs>
     </Member>
   </Members>

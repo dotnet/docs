@@ -2,7 +2,7 @@
 title: "Map Implicit Relations Between Nested Schema Elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,7 +30,7 @@ An XML Schema definition language (XSD) schema can have complex types nested ins
   
  The following example shows a schema where **OrderDetail** is a child element of **Order**.  
   
-```  
+```xml  
 <xs:schema id="MyDataSet" xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  

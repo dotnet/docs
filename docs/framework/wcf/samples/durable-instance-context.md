@@ -2,7 +2,7 @@
 title: "Durable Instance Context | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -399,7 +399,7 @@ public class ShoppingCart : IShoppingCart
   
  Client applications must add the DurableInstanceContextChannel into the channel stack using a custom binding. To configure the channel declaratively in the configuration file, the binding element section has to be added to the binding element extensions collection.  
   
-```  
+```xml  
 <system.serviceModel>  
  <extensions>  
    <bindingElementExtensions>  
@@ -411,7 +411,7 @@ type="Microsoft.ServiceModel.Samples.DurableInstanceContextBindingElementSection
   
  Now the binding element can be used with a custom binding just like other standard binding elements:  
   
-```  
+```xml  
 <bindings>  
  <customBinding>  
    <binding name="TextOverHttp">  

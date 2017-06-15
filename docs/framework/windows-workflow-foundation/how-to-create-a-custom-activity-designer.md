@@ -14,11 +14,11 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Create a Custom Activity Designer
-Custom activity designers are typically implemented so that their associated activities are composable with other activities whose designers can be dropped on to the design surface with them. This functionality requires that a custom activity designer provide a “drop zone” where an arbitrary activity can be placed and also the means to manage the resulting collection of elements on the design surface. This topic describes how to create a custom activity designer that contains such a drop zone and how to create a custom activity designer that provides that editing functionality needed to manage the collection of designer elements.  
+Custom activity designers are typically implemented so that their associated activities are composable with other activities whose designers can be dropped on to the design surface with them. This functionality requires that a custom activity designer provide a "drop zone" where an arbitrary activity can be placed and also the means to manage the resulting collection of elements on the design surface. This topic describes how to create a custom activity designer that contains such a drop zone and how to create a custom activity designer that provides that editing functionality needed to manage the collection of designer elements.  
   
  Custom activity designers typically inherit from <xref:System.Activities.Presentation.ActivityDesigner> which is the default base activity designer type for any activities without a specific designer. This type provides the design-time experience of interacting with the property grid and configuring basic aspects such as managing colors and icons.  
   
- <xref:System.Activities.Presentation.ActivityDesigner> uses two helper controls, <xref:System.Activities.Presentation.WorkflowItemPresenter> and <xref:System.Activities.Presentation.WorkflowItemsPresenter> to make it easier to develop custom activity designers. They handle common functionality like dragging and dropping of child elements, deletion, selection, and addition of those child elements. The <xref:System.Activities.Presentation.WorkflowItemPresenter> allows a single child UI element inside, providing the “drop zone”, it while the <xref:System.Activities.Presentation.WorkflowItemsPresenter> can provide support multiple UI elements, including additional functionality like the ordering, moving, deleting, and adding of child elements.  
+ <xref:System.Activities.Presentation.ActivityDesigner> uses two helper controls, <xref:System.Activities.Presentation.WorkflowItemPresenter> and <xref:System.Activities.Presentation.WorkflowItemsPresenter> to make it easier to develop custom activity designers. They handle common functionality like dragging and dropping of child elements, deletion, selection, and addition of those child elements. The <xref:System.Activities.Presentation.WorkflowItemPresenter> allows a single child UI element inside, providing the "drop zone", it while the <xref:System.Activities.Presentation.WorkflowItemsPresenter> can provide support multiple UI elements, including additional functionality like the ordering, moving, deleting, and adding of child elements.  
   
  The other key part of the story that needs highlighting in the implementation of a custom activity designer concerns the way in which the visual edits are bound using [!INCLUDE[avalon2](../../../includes/avalon2-md.md)] data binding to the instance stored in memory of what we are editing in the designer. This is accomplished by the Model Item tree, which is also responsible for enabling change notification and the tracking of events like changes in states.  
   
@@ -56,8 +56,7 @@ Custom activity designers are typically implemented so that their associated act
   
 12. Open the RehostingWFDesigner.xaml file and paste the following code into it to define the UI for the application.  
   
-    ```  
-  
+    ```xml  
     <Window x:Class=" UsingWorkflowItemPresenter.RehostingWFDesigner"  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -106,13 +105,11 @@ Custom activity designers are typically implemented so that their associated act
             <Border Grid.Column="2" Name="PropertyBorder"/>  
         </Grid>  
     </Window>  
-  
     ```  
   
 13. To associate an activity designer with an activity type, you must register that activity designer with the metadata store. To do this, add the `RegisterMetadata` method to the `RehostingWFDesigner` class. Within the scope of the  `RegisterMetadata` method, create an <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> object and call the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> method to add the attributes to it. Call the <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> method to add the <xref:System.Activities.Presentation.Metadata.AttributeTable> to the metadata store. The following code contains the rehosting logic for the designer. It registers the metadata, puts the `SimpleNativeActivity` into the toolbox, and creates the workflow. Put this code into the RehostingWFDesigner.xaml.cs file.  
   
     ```  
-  
     using System;  
     using System.Activities.Core.Presentation;  
     using System.Activities.Presentation;  
@@ -158,7 +155,6 @@ Custom activity designers are typically implemented so that their associated act
             }  
         }  
     }  
-  
     ```  
   
 14. Right-click the References directory in Solution Explorer and select **Add Reference …** to bring up the **Add Reference** dialogue.  
@@ -173,7 +169,7 @@ Custom activity designers are typically implemented so that their associated act
   
     3.  System.ServiceModel.Activities.dll  
   
-17. Open the App.xaml file and change the value of the StartUpUri to “RehostingWFDesigner.xaml”.  
+17. Open the App.xaml file and change the value of the StartUpUri to "RehostingWFDesigner.xaml".  
   
 18. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.  
   
@@ -184,8 +180,7 @@ Custom activity designers are typically implemented so that their associated act
     > [!NOTE]
     >  The schema for <xref:System.Activities.Presentation.ActivityDesigner> allows the addition of only one child element to your custom activity designer definition; however, this element could be a `StackPanel`, `Grid`, or some other composite UI element.  
   
-    ```  
-  
+    ```xml  
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemPresenter.SimpleNativeDesigner"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -217,7 +212,6 @@ Custom activity designers are typically implemented so that their associated act
             <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}" />  
         </Grid>  
     </sap:ActivityDesigner>  
-  
     ```  
   
 21. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.  
@@ -227,7 +221,6 @@ Custom activity designers are typically implemented so that their associated act
 23. Implement the `SimpleNativeActivity` class by entering the following code into the SimpleNativeActivity.cs file.  
   
     ```  
-  
     using System.Activities;  
   
     namespace UsingWorkflowItemPresenter  
@@ -252,7 +245,6 @@ Custom activity designers are typically implemented so that their associated act
             }  
         }  
     }  
-  
     ```  
   
 24. Select **Build Solution** from the **Build** menu.  
@@ -265,7 +257,7 @@ Custom activity designers are typically implemented so that their associated act
   
 2.  Key differences are contained in the CustomParallelDesigner.xaml and RehostingWFDesigner.xaml.cs files. Here is the code from the CustomParallelDesigne.xaml file that defines the UI.  
   
-    ```  
+    ```xml  
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemsPresenter.CustomParallelDesigner"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -307,13 +299,11 @@ Custom activity designers are typically implemented so that their associated act
             <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}"/>  
         </Grid>  
     </sap:ActivityDesigner>  
-  
     ```  
   
 3.  Here is the code from the RehostingWFDesigner.xaml.cs file that provides the rehosting logic.  
   
     ```  
-  
     using System;  
     using System.Activities.Core.Presentation;  
     using System.Activities.Presentation;  

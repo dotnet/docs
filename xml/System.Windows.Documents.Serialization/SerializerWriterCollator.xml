@@ -112,6 +112,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.Write%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public abstract void Write (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Windows.Media.Visual visual) cil managed" />
@@ -175,6 +192,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public abstract void WriteAsync (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAsync(class System.Windows.Media.Visual visual) cil managed" />
@@ -313,39 +347,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, synchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.Write%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteAsync">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, asynchronously writes a given <see cref="T:System.Windows.Media.Visual" /> element to the serialization stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync%2A> methods write to the stream associated with the <xref:System.Windows.Documents.Serialization.SerializerWriter> that created the <xref:System.Windows.Documents.Serialization.SerializerWriterCollator> from the call to <xref:System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

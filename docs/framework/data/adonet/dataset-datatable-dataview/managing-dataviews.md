@@ -2,7 +2,7 @@
 title: "Managing DataViews | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -71,7 +71,6 @@ viewManager.DataViewSettings("Customers").Sort = "CompanyName"
 ' Bind to a DataGrid.  
 Dim grid As System.Windows.Forms.DataGrid = New System.Windows.Forms.DataGrid()  
 grid.SetDataBinding(viewManager, "Customers")  
-  
 ```  
   
 ```csharp  

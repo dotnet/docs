@@ -2,7 +2,7 @@
 title: "BasicBinding with Transport Security | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,30 +35,28 @@ This sample demonstrates the use of SSL transport security with the basic bindin
   
  The program code in the sample is identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. The endpoint definition and binding definition in the configuration file settings are modified to enable secure communication, as shown in the following sample configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
-   <services>  
-      <service   
-          type="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
-         <endpoint address=""  
-               binding="basicHttpBinding"  
-               bindingConfiguration="Binding1"   
-               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-      </service>  
+  <services>  
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"  
+             behaviorConfiguration="CalculatorServiceBehavior">  
+      <endpoint address=""  
+                binding="basicHttpBinding"  
+                bindingConfiguration="Binding1"   
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />  
+    </service>  
    </services>  
-    <bindings>  
-        <basicHttpBinding>  
-        <!-- Configure basicHttpBinding with Transport security -- >  
-        <!-- mode and clientCredentialType set to None.-->  
-           <binding name="Binding1">  
-               <security mode="Transport">  
-                   <transport clientCredentialType="None"/>  
-               </security>  
-           </binding>  
-        </basicHttpBinding>  
-    </bindings>  
-    ...  
+  <bindings>  
+    <basicHttpBinding>  
+      <!-- Configure basicHttpBinding with Transport security -- >  
+      <!-- mode and clientCredentialType set to None.-->  
+      <binding name="Binding1">  
+        <security mode="Transport">  
+          <transport clientCredentialType="None"/>  
+        </security>  
+      </binding>  
+    </basicHttpBinding>  
+  </bindings>  
 </system.serviceModel>  
 ```  
   
@@ -69,7 +67,6 @@ This sample demonstrates the use of SSL transport security with the basic bindin
 // created by Makecert.exe.  
 PermissiveCertificatePolicy.Enact(  
                            "CN=ServiceModelSamples-HTTPS-Server");  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -89,7 +86,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

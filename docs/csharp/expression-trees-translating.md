@@ -1,5 +1,5 @@
 ---
-title: Translating Expression Trees
+title: Translating Expression Trees | Microsoft Docs
 description: Translating Expression Trees
 keywords: .NET, .NET Core
 author: BillWagner
@@ -164,7 +164,6 @@ private static int Aggregate(Expression exp)
     }
     else throw new NotSupportedException("Haven't written this yet");
 }
-
 ```
 
 Running it on the same expression yields the following output:

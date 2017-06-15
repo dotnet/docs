@@ -29,7 +29,7 @@ The majority of the methods found in an **XmlConvert** class are used to convert
   
  **Input**  
   
-```  
+```xml  
 <Element>2001-02-27T11:13:23</Element>  
 ```  
   
@@ -39,7 +39,6 @@ The majority of the methods found in an **XmlConvert** class are used to convert
 reader.ReadStartElement()  
 Dim vDateTime As DateTime = XmlConvert.ToDateTime(reader.ReadString())  
 Console.WriteLine(vDateTime)  
-  
 ```  
   
 ```csharp  
@@ -55,7 +54,7 @@ Console.WriteLine(vDateTime);
   
  **Input**  
   
-```  
+```xml  
 <TestInt32>-2147483648</TestInt32>  
 ```  
   
@@ -64,7 +63,6 @@ Console.WriteLine(vDateTime);
 ```vb  
 Dim vInt32 As Int32 = -2147483648  
 writer.WriteElementString("TestInt32", XmlConvert.ToString(vInt32))  
-  
 ```  
   
 ```csharp  

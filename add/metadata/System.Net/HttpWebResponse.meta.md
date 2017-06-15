@@ -105,12 +105,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.HttpWebResponse.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.HttpWebResponse.Close
 ms.author: "bobdel"
 manager: "markl"

@@ -174,13 +174,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.DirectoryEntry.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.DirectoryEntry.NativeObject
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -280,13 +273,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.DirectoryEntry.NativeGuid
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.DirectoryEntry.RefreshCache
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

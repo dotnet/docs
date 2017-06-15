@@ -2,7 +2,7 @@
 title: "&lt;bypassTrustedAppStrongNames&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +34,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
   
 ## Syntax  
   
-```  
+```xml  
 <bypassTrustedAppStrongNames    
    enabled="true|false"/>  
 ```  
@@ -84,7 +84,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 ## Example  
  The following example shows how to specify the behavior that validates the strong-name signature on full-trust assemblies.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <bypassTrustedAppStrongNames enabled="false"/>  

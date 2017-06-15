@@ -2,7 +2,7 @@
 title: "&lt;udpAnnoucementEndpoint&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,15 +18,21 @@ manager: "erikre"
 # &lt;udpAnnoucementEndpoint&gt;
 This configuration element defines a standard endpoint that is used by services to send announcement messages over a UDP binding. It has a fixed contract and supports two discovery versions. In addition it has a fixed UDP binding and a default address value as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery version 1.1). You can specify the multicast address to use for sending and receiving the announcement messages.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<standardEndpoints>  
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion=”WSDiscovery11/WSDiscoveryApril2005”                  maxAnnouncementDelay=”Timespan”                   multicastAddress=”Uri”                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
+  <standardEndpoints>
+    <announcementEndpoint>
+      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
+                        maxAnnouncementDelay="Timespan"
+                        multicastAddress="Uri"
+                        name="String" />
+    </announcementEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   
@@ -57,8 +63,7 @@ This configuration element defines a standard endpoint that is used by services 
 ## Example  
  The following example demonstrates a client listening for announcement over a UDP multicast transport with default multicast address, and UDP multicast transport with specified multicast address.  
   
-```  
-  
+```xml  
 <services>  
   <service name="ServiceAnnouncementListener">  
       <endpoint name="udpAnnouncementEndpointStandard"  
@@ -78,7 +83,6 @@ This configuration element defines a standard endpoint that is used by services 
           multicastAddress="soap.udp://239.255.255.250:3703"/>          
   </udpAnnouncementEndpoint>  
 </standardEndpoints>  
-  
 ```  
   
 ## See Also  

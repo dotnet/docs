@@ -2,7 +2,7 @@
 title: "Partial Trust Feature Compatibility | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -137,7 +137,7 @@ manager: "erikre"
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   
--   <xref:System.Diagnostics.TraceOptions.CallStack?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceOptions.Callstack?displayProperty=fullName>  
   
 -   <xref:System.Diagnostics.TraceOptions.ProcessId?displayProperty=fullName>  
   

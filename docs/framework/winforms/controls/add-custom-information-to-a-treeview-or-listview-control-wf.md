@@ -44,7 +44,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
           Me.Text = fp.Substring(fp.LastIndexOf("\"))  
        End Sub  
     End Class  
-  
     ```  
   
     ```csharp  
@@ -58,7 +57,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
           this.Text = fp.Substring(fp.LastIndexOf("\\"));  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -87,7 +85,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     TreeView1.Nodes.Add(New myTreeNode (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.Personal) _  
        & "\ TextFile.txt ") )  
-  
     ```  
   
     ```csharp  
@@ -97,7 +94,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     treeView1.Nodes.Add(new myTreeNode (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.Personal) _  
        + @"\TextFile.txt") );  
-  
     ```  
   
     ```cpp  
@@ -109,7 +105,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        "\\TextFile.txt")));  
     ```  
   
-2.  If you are passed the tree node and it is typed as a <xref:System.Windows.Forms.TreeNode> class, then you will need to cast to your derived class. Casting is an explicit conversion from one type of object to another. For more information on casting, see [Implicit and Explicit Conversions](~/docs/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) ([!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]), [() Operator](~/docs/csharp/language-reference/operators/invocation-operator.md) ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]), or [Cast Operator: ()](http://msdn.microsoft.com/library/4c99eb92-1b19-4a5d-9840-5d8c29b8453e) ([!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]).  
+2.  If you are passed the tree node and it is typed as a <xref:System.Windows.Forms.TreeNode> class, then you will need to cast to your derived class. Casting is an explicit conversion from one type of object to another. For more information on casting, see [Implicit and Explicit Conversions](~/docs/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) ([!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)]), [() Operator](~/docs/csharp/language-reference/operators/invocation-operator.md) ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)]), or [Cast Operator: ()](/cpp/cpp/cast-operator-parens) ([!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]).  
   
     ```vb  
     Public Sub TreeView1_AfterSelect(ByVal sender As Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles TreeView1.AfterSelect  
@@ -117,7 +113,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        mynode = CType(e.node, myTreeNode)  
        MessageBox.Show("Node selected is " & mynode.filepath)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -127,7 +122,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        myTreeNode myNode = (myTreeNode)e.Node;  
        MessageBox.Show("Node selected is " + myNode.FilePath);  
     }  
-  
     ```  
   
     ```cpp  

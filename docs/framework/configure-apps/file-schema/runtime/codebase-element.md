@@ -2,7 +2,7 @@
 title: "&lt;codeBase&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,9 +38,8 @@ Specifies where the common language runtime can find an assembly.
   
 ## Syntax  
   
-```  
-  
-   <codeBase    
+```xml  
+   <codeBase    
 version="Assembly version"  
 href="URL of assembly"/>  
 ```  
@@ -83,7 +82,7 @@ href="URL of assembly"/>
 ## Example  
  The following example shows how to specify where the runtime can find an assembly.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

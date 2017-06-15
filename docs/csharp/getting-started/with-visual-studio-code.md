@@ -1,10 +1,10 @@
 ---
-title: Getting started with Visual Studio Code | C# Guide
-description: Learn how to create and debug your first .NET Core application in C# using VS Code. 
-keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
+title: Get started with Visual Studio Code - C# Guide | Microsoft Docs
+description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code. 
+keywords: C#, Get Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: mairaw
-ms.date: 03/07/2017
+ms.date: 5/02/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 ---
 
-# Getting Started with Visual Studio Code
+# Get Started with Visual Studio Code
 
 .NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
@@ -28,7 +28,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
 1. Open a project:
 
-    * Open VS Code.
+    * Open Visual Studio Code.
     * Click on the Explorer icon on the left menu and then click **Open Folder**.
     * Select the folder you want your C# project to be in and click **Select Folder**. For our example, we'll create a folder for our project named 'HelloWorld'. 
 
@@ -37,7 +37,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
     * Alternatively, you can select **File** > **Open Folder** from the main menu to open your project folder.
 
 2. Initialize a C# project:
-    * Open the Integrated Terminal from VS Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick).
+    * Open the Integrated Terminal from Visual Studio Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick).
     * In the terminal window, type `dotnet new console`.
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written, along with a C# project file named `HelloWorld.csproj`.
 
@@ -58,11 +58,11 @@ Let's get started with a simple "Hello World" program on .NET Core:
 You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
 ## Debug
-1. Open *Program.cs* by clicking on it. The first time you open a C# file in VS Code, [OmniSharp](http://www.omnisharp.net/) will load in the editor.
+1. Open *Program.cs* by clicking on it. The first time you open a C# file in Visual Studio Code, [OmniSharp](http://www.omnisharp.net/) will load in the editor.
 
   ![Open the Program.cs file](media/with-visual-studio-code/opencs.png)
 
-2. VS Code will prompt you to add the missing assets to build and debug your app. Select **Yes**. 
+2. Visual Studio Code will prompt you to add the missing assets to build and debug your app. Select **Yes**. 
 
   ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
 
@@ -86,8 +86,8 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 7. Select the green arrow at the top to continue debugging, or press the red square to stop.
 
 > [!TIP] 
-> For more information and troubleshooting tips on .NET Core debugging with OmniSharp in VS Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
+> For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
 ## See also
-- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)
+[Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   
+[Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

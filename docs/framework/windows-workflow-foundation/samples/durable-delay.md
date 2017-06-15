@@ -2,7 +2,7 @@
 title: "Durable Delay | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -41,9 +41,8 @@ This sample demonstrates how to use a durable delay, which is a delay that persi
   
     3.  Edit the WorkflowManagementService.exe.config file and add the following connection string inside the <`database`> element.  
   
-        ```  
+        ```xml  
         <database connectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=DefaultSampleStore;Integrated Security=True;Asynchronous Processing=True" />  
-  
         ```  
   
     4.  Navigate to the DurableDelay\CS directory.  

@@ -47,7 +47,7 @@ Securing an application is an ongoing process. There will never be a point where
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Securing Applications](http://msdn.microsoft.com/library/7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb)|Contains links to general security topics. Also contains links to topics for securing distributed applications, Web applications, mobile applications, and desktop applications.|  
+|[Securing Applications](/visualstudio/ide/securing-applications)|Contains links to general security topics. Also contains links to topics for securing distributed applications, Web applications, mobile applications, and desktop applications.|  
   
 ## Code Access Security (CAS)  
  Code access security (CAS) is a mechanism that helps limit the access that code has to protected resources and operations. In the .NET Framework, CAS performs the following functions:  

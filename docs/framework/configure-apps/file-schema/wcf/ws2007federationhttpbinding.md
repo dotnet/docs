@@ -2,7 +2,7 @@
 title: "&lt;ws2007FederationHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
   
 ## Syntax  
   
-```  
-  
+```xml  
 <ws2007FederationHttpBinding>  
     <binding   
         bypassProxyOnLocal="Boolean"  
@@ -101,7 +100,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
 <bindings>  

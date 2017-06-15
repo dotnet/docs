@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -21,8 +22,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a container of data attributes for passing between dataflow blocks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,13 +44,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="id">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="id">The ID of the message. Must be unique within the originating source block. It does not need to be globally unique.</param>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> with the specified attributes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,6 +64,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -61,9 +73,10 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">A boxed <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</param>
+        <summary>Checks boxed <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instances for equality by ID.</summary>
+        <returns>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +89,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -84,9 +98,10 @@
         <Parameter Name="other" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">Another  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</param>
+        <summary>Checks two  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instances for equality by ID without boxing.</summary>
+        <returns>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,14 +114,15 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Generates a hash code for the <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</summary>
+        <returns>The hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,13 +135,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ID of the message within the source.</summary>
+        <value>The ID contained in the  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,13 +155,15 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the validity of the message.</summary>
+        <value>
+          <see langword="true" /> if the ID of the message is different from 0. <see langword="false" /> if the ID of the message is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,6 +176,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -166,10 +186,11 @@
         <Parameter Name="right" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">A  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</param>
+        <param name="right">A  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</param>
+        <summary>Checks two  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instances for equality by ID.</summary>
+        <returns>
+          <see langword="true" /> if the instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,6 +203,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -191,10 +213,11 @@
         <Parameter Name="right" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">A  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</param>
+        <param name="right">A  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance.</param>
+        <summary>Checks two  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instances for non-equality by ID.</summary>
+        <returns>
+          <see langword="true" /> if the instances are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

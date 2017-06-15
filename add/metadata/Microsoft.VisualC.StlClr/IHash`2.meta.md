@@ -125,12 +125,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.IHash`2.max_load_factor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.IHash`2.swap(Microsoft.VisualC.StlClr.IHash{`0,`1})
 ms.author: "mblome"
 manager: "ghogen"

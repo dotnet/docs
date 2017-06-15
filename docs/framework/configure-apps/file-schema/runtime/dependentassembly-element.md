@@ -2,7 +2,7 @@
 title: "&lt;dependentAssembly&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
   
 ## Syntax  
   
-```  
+```xml  
 <dependentAssembly>   
 </dependentAssembly>  
 ```  
@@ -68,7 +68,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
 ## Example  
  The following example shows how to encapsulate assembly information for two assemblies.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

@@ -2,7 +2,7 @@
 title: "&lt;etwEnable&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
   
 ## Syntax  
   
-```  
+```xml  
 <etwEnable enabled="true|false"/>  
 ```  
   
@@ -71,7 +71,7 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
 ## Example  
  The following example shows how to enable ETW tracing for an application.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <etwEnable enabled="true" />  

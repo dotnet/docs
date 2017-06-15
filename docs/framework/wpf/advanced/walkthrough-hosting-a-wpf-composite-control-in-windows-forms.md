@@ -123,7 +123,6 @@ WPF composite control
  The code-behind file consists of a single namespace,                                  `MyControls`, which will contain two classes,                                  `MyControl1` and                                  `MyControlEventArgs`.  
   
 ```  
-  
 namespace MyControls  
 {  
   public partial class MyControl1 : Grid  
@@ -135,7 +134,6 @@ namespace MyControls
     //...  
   }  
 }  
-  
 ```  
   
  The first class,                                  `MyControl1`, is a partial class containing the code that implements the functionality of the                                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] defined in MyControl1.xaml. When MyControl1.xaml is parsed, the                                  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class,                                  `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
@@ -293,7 +291,7 @@ WPF composite control hosted in a Windows Forms application
   
 1.  Create a new                                  <xref:System.Windows.Forms.Integration.ElementHost> object.  
   
-2.  Set the control's                                  <xref:System.Windows.Forms.Control.Dock%2A> property to                                  <xref:System.Windows.Forms.DockStyle?displayProperty=fullName>.  
+2.  Set the control's                                  <xref:System.Windows.Forms.Control.Dock%2A> property to                                  <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=fullName>.  
   
 3.  Add the                                  <xref:System.Windows.Forms.Integration.ElementHost> control to the                                  <xref:System.Windows.Forms.Panel> control's                                  <xref:System.Windows.Forms.Control.Controls%2A> collection.  
   

@@ -2,7 +2,7 @@
 title: "How to: Create a Service Endpoint in Configuration | Microsoft Docs"
 ms.custom: ""
 ms.date: "2016-06-16"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,7 +73,6 @@ Endpoints provide clients with access to the functionality a [!INCLUDE[indigo1](
   </system.serviceModel>  
   
 </configuration>  
-  
 ```  
   
 ## Example  

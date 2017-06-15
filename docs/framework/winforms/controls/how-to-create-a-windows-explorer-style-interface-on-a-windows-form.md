@@ -2,7 +2,7 @@
 title: "How to: Create a Windows Explorer–Style Interface on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +48,7 @@ Windows Explorer is a common user-interface choice for applications because of i
     > [!NOTE]
     >  Do not use the **Select All** command on the **Edit** menu. If you do so, the property needed in the next step will not appear in the **Properties** window.  
   
-4.  In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+4.  In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
 5.  Press F5 to run the application.  
   

@@ -29,12 +29,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Exceptions.BuildAbortedException.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Exceptions.BuildAbortedException.#ctor(System.String,System.Exception)
 ms.author: "susanno"
 manager: "douge"

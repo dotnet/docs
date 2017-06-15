@@ -152,7 +152,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the region where the <see cref="T:System.Windows.Media.DrawingGroup" /> applies its <see cref="P:System.Windows.Media.DrawingGroup.BitmapEffect" /> and, optionally, a <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to use as input for its <see cref="P:System.Windows.Media.DrawingGroup.BitmapEffect" />.</summary>
-        <value>The region where the <see cref="P:System.Windows.Media.DrawingGroup.BitmapEffect" /> of the <see cref="T:System.Windows.Media.DrawingGroup" /> is applied and, optionally, the <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to use as input; or <see langword="null" /> if the <see cref="P:System.Windows.Media.DrawingGroup.BitmapEffect" /> applies to the whole <see cref="T:System.Windows.Media.DrawingGroup" /> and uses the <see cref="T:System.Windows.Media.DrawingGroup" /> as its input. The default is<see langword=" null" />.</value>
+        <value>The region where the <see cref="P:System.Windows.Media.DrawingGroup.BitmapEffect" /> of the <see cref="T:System.Windows.Media.DrawingGroup" /> is applied and, optionally, the <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> to use as input; or <see langword="null" /> if the <see cref="P:System.Windows.Media.DrawingGroup.BitmapEffect" /> applies to the whole <see cref="T:System.Windows.Media.DrawingGroup" /> and uses the <see cref="T:System.Windows.Media.DrawingGroup" /> as its input. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -163,7 +163,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.DrawingGroup>|  
+|Identifier field|<xref:System.Windows.Media.DrawingGroup.BitmapEffectInputProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -230,7 +230,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.DrawingGroup>|  
+|Identifier field|<xref:System.Windows.Media.DrawingGroup.ChildrenProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>

@@ -2,6 +2,7 @@
 title: "How To: Build Claims-Aware ASP.NET Application Using Windows Authentication | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -96,7 +97,6 @@ manager: "mbaldwin"
             </asp:GridView>  
         </p>  
     </asp:Content>  
-  
     ```  
   
      This step adds a GridView control to your *Default.aspx* page that will be populated with the claims retrieved from Windows authentication.  
@@ -126,13 +126,13 @@ manager: "mbaldwin"
   
 3.  To change the application’s authentication type, modify the **\<authentication>** block in the **\<system.web>** section of the project’s root *Web.config* file so that it only includes the following configuration entry:  
   
-    ```  
+    ```xml  
     <authentication mode="Windows" />  
     ```  
   
 4.  Finally, modify the **\<authorization>** block in the **\<system.web>** section of the same *Web.config* file to force authentication:  
   
-    ```  
+    ```xml  
     <authorization>  
         <deny users="?" />  
     </authorization>  

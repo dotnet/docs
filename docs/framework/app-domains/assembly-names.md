@@ -37,16 +37,14 @@ myTypes, Version=1.0.1234.0, Culture=en-US, PublicKeyToken=b77a5c561934e089c, Pr
  All assembly references to assemblies that make up the .NET Framework also must contain a fully qualified name of the assembly. For example, to reference the System.Data .NET Framework assembly for version 1.0 would include:  
   
 ```  
-  
 System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089  
-  
 ```  
   
  Note that the version corresponds to the version number of all .NET Framework assemblies that shipped with .NET Framework version 1.0. For .NET Framework assemblies, the culture value is always neutral, and the public key is the same as shown in the above example.  
   
  For example, to add an assembly reference in a configuration file to set up a trace listener, you would include the fully qualified name of the system .NET Framework assembly:  
   
-```  
+```xml  
 <add name="myListener" type="System.Diagnostics.TextWriterTraceListener, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" initializeData="c:\myListener.log" />  
 ```  
   

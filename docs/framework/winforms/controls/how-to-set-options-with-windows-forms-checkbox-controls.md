@@ -2,7 +2,7 @@
 title: "How to: Set Options with Windows Forms CheckBox Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +41,6 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
           Me.AllowDrop = False  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -54,7 +53,6 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
           this.AllowDrop = false;  
        }  
     }  
-  
     ```  
   
     ```cpp  

@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TInput">
@@ -20,9 +21,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TInput">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TInput">Specifies the type of data accepted by the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</typeparam>
+    <summary>Represents a dataflow block that is a target for data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OfferMessage">
@@ -34,6 +44,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
@@ -45,13 +56,22 @@
         <Parameter Name="consumeToAccept" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="messageHeader">To be added.</param>
-        <param name="messageValue">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="consumeToAccept">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="messageHeader">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance that represents the header of the message being offered.</param>
+        <param name="messageValue">The value of the message being offered.</param>
+        <param name="source">The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> offering the message. This may be null.</param>
+        <param name="consumeToAccept">Set to <see langword="true" /> to instruct the target to call <see cref="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)" /> synchronously during the call to <see cref="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />, prior to returning <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted" />, in order to consume the message.</param>
+        <summary>Offers a message to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />, giving the target the opportunity to consume or postpone the message.</summary>
+        <returns>The status of the offered message. If the message was accepted by the target, <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Accepted" /> is returned, and the source should no longer use the offered message, because it is now owned by the target. If the message was postponed by the target, <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Postponed" /> is returned as a notification that the target may later attempt to consume or reserve the message; in the meantime, the source still owns the message and may offer it to other blocks.  
+  
+ If the target would have otherwise postponed message, but source was <see langword="null" />, <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined" /> is instead returned.  
+  
+ If the target tried to accept the message but missed it due to the source delivering the message to another target or simply discarding it, <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.NotAvailable" /> is returned.  
+  
+ If the target chose not to accept the message, <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.Declined" /> is returned. If the target chose not to accept the message and will never accept another message from this source, <see cref="F:System.Threading.Tasks.Dataflow.DataflowMessageStatus.DecliningPermanently" /> is returned.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The  <paramref name="messageHeader" /> is not valid.  
+  
+ -or- <paramref name="consumeToAccept" /> may only be true if provided with a non-null <paramref name="source" />.</exception>
       </Docs>
     </Member>
   </Members>

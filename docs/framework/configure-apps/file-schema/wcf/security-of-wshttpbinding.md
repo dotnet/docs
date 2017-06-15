@@ -2,7 +2,7 @@
 title: "&lt;security&gt; of &lt;wsHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
   
 ## Syntax  
   
-```  
-  
+```xml  
 <security mode="Message/None/Transport/TransportWithMessageCredential">  
    <transport  
          clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

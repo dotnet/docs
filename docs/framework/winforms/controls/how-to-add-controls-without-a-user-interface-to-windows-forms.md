@@ -2,7 +2,7 @@
 title: "How to: Add Controls Without a User Interface to Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -59,7 +59,6 @@ A nonvisual control (or component) provides functionality to your application. U
        Dim timerKeepTrack As New System.Windows.Forms.Timer  
        timerKeepTrack.Interval = 1000  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -69,7 +68,6 @@ A nonvisual control (or component) provides functionality to your application. U
            System.Windows.Forms.Timer();  
        timerKeepTrack.Interval = 1000;  
     }  
-  
     ```  
   
     ```cpp  

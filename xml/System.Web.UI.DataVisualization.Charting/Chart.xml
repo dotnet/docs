@@ -590,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the alignment of the background image for the <xref:System.Web.UI.DataVisualization.Charting.Chart> control; it is only applied when the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>.  
+ This property determines the alignment of the background image for the <xref:System.Web.UI.DataVisualization.Charting.Chart> control; it is only applied when the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>.  
   
  ]]></format>
         </remarks>
@@ -673,7 +673,7 @@
   
  For more information about the available wrapping modes, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
   
- If the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageAlignment%2A> property setting.  
+ If the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImageAlignment%2A> property setting.  
   
  ]]></format>
         </remarks>
@@ -1102,7 +1102,7 @@
 ## Remarks  
  Compression is expressed as a percentage; for example, to use 50% compression, set this property to 50.  
   
- Compression is used for all rendering methods, as determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property, but only for JPEG images, which are specified by the <xref:System.Web.UI.DataVisualization.Charting.ChartImageType> enumeration value.  
+ Compression is used for all rendering methods, as determined by the <xref:System.Web.UI.DataVisualization.Charting.Chart.RenderType%2A> property, but only for JPEG images, which are specified by the <xref:System.Web.UI.DataVisualization.Charting.ChartImageType.Jpeg> enumeration value.  
   
  ]]></format>
         </remarks>
@@ -1138,7 +1138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode.UseHttpHandler%2A>.  
+ This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -1271,7 +1271,16 @@
   
  Other data point properties besides X and Y-values can be bound. The format is: PointProperty=Field[{Format}] [,PointProperty= Field[{Format}]]. For example:"Tooltip=Price{C1},Href=WebSiteName".  
   
- A list of these data point properties is as follows: <xref:System.Web.UI.DataVisualization.Charting.DataPoint.AxisLabel%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.ToolTip%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.Url%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.PostBackValue%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.Label%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.LegendText%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.LegendToolTip%2A> and <xref:System.Web.UI.DataVisualization.Charting.DataPoint.CustomProperties%2A>, which are the names of the custom properties.  
+These data point properties include: 
+
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Url%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.PostBackValue%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Label%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A?displayProperty=fullName>, which are the names of the custom properties.  
   
  ]]></format>
         </remarks>
@@ -1470,7 +1479,7 @@
 ## Remarks  
  The data points in a series can be bound to a data source at any time using the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataSource%2A> property.  
   
- To force the chart to bind to the data source, call the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataBind%2A> method.  
+ To force the chart to bind to the data source, call the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataBindTable%2A> method.  
   
  The following is a list of objects that you can use as the data source:  
   
@@ -1822,6 +1831,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines the chart element, if any, that is located at a point defined by the given X and Y coordinates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to determine the chart element, if any, that is located at a specified point.  
+  
+ This method is often used in some mouse-related event—for example, MouseDown—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
+  
+ The properties of the returned <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object can then be used to determine which chart element was clicked; the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTest">
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.HitTestResult HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.HitTestResult HitTest(int32 x, int32 y) cil managed" />
@@ -1970,7 +2000,7 @@
         <param name="x">The X-coordinate for the specified data point.</param>
         <param name="y">The Y-coordinate for the specified data point.</param>
         <param name="ignoreTransparent">A flag that indicates that transparent elements should be ignored.</param>
-        <param name="requestedElement">An array of <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElementType" /> objects that specify the types to test for, in order to filter the result. If omitted, checking for element types will be ignored and all element types will be valid.</param>
+        <param name="requestedElement">An array of <see cref="T:System.Web.UI.DataVisualization.Charting.ChartElementType" /> objects that specify the types to test for, in order to filter the result. If omitted, checking for element types will be ignored and all element types will be valid.</param>
         <summary>Determines whether a chart element that is one of the specified types is located at a point defined by the given X and Y coordinates.</summary>
         <returns>An array of <see cref="T:System.Web.UI.DataVisualization.Charting.HitTestResult" /> objects that provides information about the chart element, if any, found at the specified location. The array contains at least one element, which can be <see cref="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Nothing" />. The objects in the result are sorted from the top to the bottom of different layers of control.</returns>
         <remarks>
@@ -2018,7 +2048,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode.UseHttpHandler%2A>.  
+ This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
   
  When you render a chart image using the image tag method, a chart image is generated and then saved to disk at the server, in a format that is determined by the <xref:System.Web.UI.DataVisualization.Charting.ChartImageType> property.  
   
@@ -2144,7 +2174,7 @@
 ## Remarks  
  This property determines the type of image file that is used for rendering.  
   
- Possible file formats are <xref:System.Web.UI.DataVisualization.Charting.ChartImageType>, <xref:System.Web.UI.DataVisualization.Charting.ChartImageType>, <xref:System.Web.UI.DataVisualization.Charting.ChartImageType>, and <xref:System.Web.UI.DataVisualization.Charting.ChartImageType>.  
+ Possible file formats are <xref:System.Web.UI.DataVisualization.Charting.ChartImageType.Bmp>, <xref:System.Web.UI.DataVisualization.Charting.ChartImageType.Emf>, <xref:System.Web.UI.DataVisualization.Charting.ChartImageType.Jpeg>, and <xref:System.Web.UI.DataVisualization.Charting.ChartImageType.Png>.  
   
  ]]></format>
         </remarks>
@@ -2642,7 +2672,7 @@
  If no series or data point colors are explicitly specified, the colors used depend on the chart type and the <xref:System.Web.UI.DataVisualization.Charting.Chart> object's palette or the palette of an associated series, if one is specified.  
   
 > [!NOTE]
->  If the `Palette` property for both the <xref:System.Web.UI.DataVisualization.Charting.Chart> and <xref:System.Web.UI.DataVisualization.Charting.Series> objects is set to <xref:System.Web.UI.DataVisualization.Charting.ChartColorPalette>, and no color is assigned to the relevant data series or data points, the data points will not be drawn, and will be displayed as "empty" areas.  
+>  If the `Palette` property for both the <xref:System.Web.UI.DataVisualization.Charting.Chart> and <xref:System.Web.UI.DataVisualization.Charting.Series> objects is set to <xref:System.Web.UI.DataVisualization.Charting.ChartColorPalette.None>, and no color is assigned to the relevant data series or data points, the data points will not be drawn, and will be displayed as "empty" areas.  
   
  ]]></format>
         </remarks>
@@ -2809,11 +2839,11 @@
 ## Remarks  
  The following list describes the three ways in which a chart image can be rendered:  
   
--   The <xref:System.Web.UI.DataVisualization.Charting.RenderType> render type causes a temporary file to be saved to disk at the server. The chart is displayed at the client side using an \<IMG> tag, with its SRC attribute set to the URL specified by the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageLocation%2A>property.  
+-   The <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageTag> render type causes a temporary file to be saved to disk at the server. The chart is displayed at the client side using an \<IMG> tag, with its SRC attribute set to the URL specified by the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageLocation%2A>property.  
   
--   If the <xref:System.Web.UI.DataVisualization.Charting.RenderType> render type is specified, there are no temporary image files at the server. Instead, the chart image is sent as a binary stream, and is displayed using an \<IMG> tag with its SRC attribute set to another .aspx page that is responsible for generating the chart image.  
+-   If the <xref:System.Web.UI.DataVisualization.Charting.RenderType.BinaryStreaming> render type is specified, there are no temporary image files at the server. Instead, the chart image is sent as a binary stream, and is displayed using an \<IMG> tag with its SRC attribute set to another .aspx page that is responsible for generating the chart image.  
   
--   A render type of <xref:System.Web.UI.DataVisualization.Charting.RenderType> causes an image map to be created, but does not result in the display of an actual chart image. This option should only be taken when using an image map that has a render type of <xref:System.Web.UI.DataVisualization.Charting.RenderType>.  
+-   A render type of <xref:System.Web.UI.DataVisualization.Charting.RenderType.ImageMap> causes an image map to be created, but does not result in the display of an actual chart image. This option should only be taken when using an image map that has a render type of <xref:System.Web.UI.DataVisualization.Charting.RenderType.BinaryStreaming>.  
   
  Note that you can control how temporary image files are saved to disk using the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageLocation%2A>property.  
   
@@ -2873,7 +2903,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the control should draw right-to-left for Right-to-Left (RTL) languages.</summary>
-        <value>A <see cref="T:System.Windows.Forms.RightToLeft" /> enumeration value that indicates whether the control should draw right-to-left for Right-to-Left (RTL) languages. The default value is <see cref="T:System.Windows.Forms.RightToLeft.No" />.</value>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.RightToLeft" /> enumeration value that indicates whether the control should draw right-to-left for Right-to-Left (RTL) languages. The default value is <see cref="T:System.Web.UI.DataVisualization.Charting.RightToLeft.No" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3363,26 +3393,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HitTest">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines the chart element, if any, that is located at a point defined by the given X and Y coordinates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method to determine the chart element, if any, that is located at a specified point.  
-  
- This method is often used in some mouse-related event—for example, MouseDown—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
-  
- The properties of the returned <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object can then be used to determine which chart element was clicked; the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

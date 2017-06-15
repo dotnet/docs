@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_MODULE_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
@@ -43,7 +45,6 @@ typedef enum
     COR_PRF_MODULE_FLAT_LAYOUT      = 0x00000020,  
     COR_PRF_MODULE_WINDOWS_RUNTIME  = 0x00000040  
 }   COR_PRF_MODULE_FLAGS;  
-  
 ```  
   
 ## Members  

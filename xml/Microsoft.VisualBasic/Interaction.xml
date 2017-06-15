@@ -79,7 +79,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
  At run time, the `AppActivate` function activates any running application with a title that matches `Title` or with a process ID that matches `ProcessId`. If there is no exact match, it activates any application whose title string ends with `Title`. If there is more than one application named `Title`, the `AppActivate` function arbitrarily chooses one to activate.  
   
 > [!NOTE]
->  The `AppActivate` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission> .  
+>  The `AppActivate` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission> .  
   
    
   
@@ -131,7 +131,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
  At run time, the `AppActivate` function activates any running application with a title that matches `Title` or with a process ID that matches `ProcessId`. If there is no exact match, it activates any application whose title string ends with `Title`. If there is more than one application named `Title`, the `AppActivate` function arbitrarily chooses one to activate.  
   
 > [!NOTE]
->  The `AppActivate` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission> .  
+>  The `AppActivate` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission> .  
   
    
   
@@ -171,7 +171,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
  The pitch and duration of the beep depend on your hardware and system software and therefore vary among computers.  
   
 > [!NOTE]
->  The `Beep` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission>.  
+>  The `Beep` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission>.  
   
    
   
@@ -309,10 +309,10 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic. The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command " />function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</summary>
+        <summary>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic. The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</summary>
         <returns>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic.  
   
- The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command " />function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</returns>
+ The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -442,7 +442,7 @@ End Sub
         <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project to which the section or key setting applies.</param>
         <param name="Section">Required. <see langword="String" /> expression containing the name of the section from which the key setting is being deleted. If only <c>AppName</c> and <c>Section</c> are provided, the specified section is deleted along with all related key settings.</param>
         <param name="Key">Optional. <see langword="String" /> expression containing the name of the key setting being deleted.</param>
-        <summary>Deletes a section or key setting from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than the <see langword="DeleteSetting " />function. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" /> .</summary>
+        <summary>Deletes a section or key setting from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than the <see langword="DeleteSetting" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -626,7 +626,7 @@ End Sub
         <param name="PathName">Optional. <see langword="String" />. The full path and name of the file containing the object to retrieve. If <c>PathName</c> is omitted, <c>Class</c> is required.</param>
         <param name="Class">Required if <c>PathName</c> is not supplied. <see langword="String" />. A string representing the class of the object. The <c>Class</c> argument has the following syntax and parts:  
   
- <c>appname</c> <c>.</c> <c>objecttype</c>  
+ <c>appname</c><c>.</c><c>objecttype</c>  
   
  [1|1] Parameter  
   
@@ -846,7 +846,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
  To specify more than the first argument, you must use the `InputBox` function in an expression. If you omit any positional arguments, you must retain the corresponding comma delimiter.  
   
 > [!NOTE]
->  The `InputBox` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see  and <xref:System.Security.Permissions.UIPermission> .  
+>  The `InputBox` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> level, which may affect its execution in partial-trust situations. For more information, see  and <xref:System.Security.Permissions.UIPermission> .  
   
    
   
@@ -882,72 +882,72 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <c>Title</c>, the application name is placed in the title bar.</param>
         <summary>Displays a message in a dialog box, waits for the user to click a button, and then returns an integer indicating which button the user clicked.</summary>
         <returns>
-          <list type="table">  
-<item>  
-<term> Constant  
+          <list type="table">
+            <item>
+              <term> Constant  
   
- </term>  
-<description> Value  
+ </term>
+              <description> Value  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="OK" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="OK" />
+              </term>
+              <description> 1  
   
- </term>  
-<description> 1  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="Cancel" />
+              </term>
+              <description> 2  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Cancel" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="Abort" />
+              </term>
+              <description> 3  
   
- </term>  
-<description> 2  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="Retry" />
+              </term>
+              <description> 4  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Abort" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="Ignore" />
+              </term>
+              <description> 5  
   
- </term>  
-<description> 3  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="Yes" />
+              </term>
+              <description> 6  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Retry" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <see langword="No" />
+              </term>
+              <description> 7  
   
- </term>  
-<description> 4  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Ignore" />  
-  
- </term>  
-<description> 5  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Yes" />  
-  
- </term>  
-<description> 6  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="No" />  
-  
- </term>  
-<description> 7  
-  
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -960,7 +960,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
  If the dialog box contains a **Help** button, context-sensitive Help is provided for the dialog box. However, no value is returned until one of the other buttons is chosen. In Windows Form applications, choosing the **Help** button executes the <xref:System.Windows.Forms.Control.HelpRequested> event for the form.  
   
 > [!NOTE]
->  The `MsgBox` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission>.  
+>  The `MsgBox` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission>.  
   
  The `MsgBoxStyle` enumeration values are listed in the following table.  
   

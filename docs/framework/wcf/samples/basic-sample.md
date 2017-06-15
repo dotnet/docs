@@ -2,7 +2,7 @@
 title: "Basic Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -84,7 +84,6 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
    //Closing the client gracefully closes the connection and cleans up resources  
    client.Close();  
 }  
-  
 ```  
   
 #### To use this sample  

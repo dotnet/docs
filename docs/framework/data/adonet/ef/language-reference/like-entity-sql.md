@@ -2,7 +2,7 @@
 title: "LIKE (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,6 @@ Determines whether a specific character `String` matches a specified pattern.
 ## Syntax  
   
 ```  
-  
 match [NOT] LIKE pattern [ESCAPE escape]  
 ```  
   

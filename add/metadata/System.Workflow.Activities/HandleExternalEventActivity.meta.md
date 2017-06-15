@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.HandleExternalEventActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.HandleExternalEventActivity.ParameterBindings
 author: "Erikre"
 ms.author: "erikre"

@@ -27,11 +27,9 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT SaveToHistory(  
    __in_ecount(1) IStream* pHistoryStream  
 )  
-  
 ```  
   
 #### Parameters  

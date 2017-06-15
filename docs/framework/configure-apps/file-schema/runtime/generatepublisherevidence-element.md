@@ -2,7 +2,7 @@
 title: "&lt;generatePublisherEvidence&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
   
 ## Syntax  
   
-```  
+```xml  
 <generatePublisherEvidence    
    enabled="true|false"/>  
 ```  
@@ -79,11 +79,11 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 ## Example  
  The following example shows how to use the `<generatePublisherEvidence>` element to disable checking for CAS publisher policy for an application.  
   
-```  
+```xml  
 <configuration>  
-    <runtime>  
-        <generatePublisherEvidence enabled="false"/>  
-    </runtime>  
+    <runtime>  
+        <generatePublisherEvidence enabled="false"/>  
+    </runtime>  
 </configuration>  
 ```  
   

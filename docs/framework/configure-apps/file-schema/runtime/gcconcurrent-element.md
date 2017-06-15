@@ -2,7 +2,7 @@
 title: "&lt;gcConcurrent&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Specifies whether the common language runtime runs garbage collection on a separ
   
 ## Syntax  
   
-```  
+```xml  
 <gcConcurrent    
    enabled="true|false"/>  
 ```  
@@ -76,13 +76,11 @@ Specifies whether the common language runtime runs garbage collection on a separ
  By default, the runtime uses concurrent or background garbage collection, which is optimized for latency. If your application involves heavy user interaction, leave concurrent garbage collection enabled to minimize the application's pause time to perform garbage collection. If you set the `enabled` attribute of the `<gcConcurrent>` element to `false`, the runtime uses non-concurrent garbage collection, which is optimized for throughput. The following configuration file disables background garbage collection.  
   
 ```xml  
-  
 <configuration>  
    <runtime>  
       <gcConcurrent enabled="false"/>  
    </runtime>  
 </configuration>  
-  
 ```  
   
  If there is a `<gcConcurrentSetting>` setting in the machine configuration file, it defines the default value for all .NET Framework applications. The machine configuration file setting overrides the application configuration file setting.  
@@ -92,14 +90,12 @@ Specifies whether the common language runtime runs garbage collection on a separ
 ## Example  
  The following example enables concurrent garbage collection.  
   
-```  
-  
+```xml  
 <configuration>  
    <runtime>  
       <gcConcurrent enabled="true"/>  
    </runtime>  
 </configuration>  
-  
 ```  
   
 ## See Also  

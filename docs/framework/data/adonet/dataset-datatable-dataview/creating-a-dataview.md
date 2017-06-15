@@ -2,7 +2,7 @@
 title: "Creating a DataView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,6 @@ Dim custDV As DataView = New DataView(custDS.Tables("Customers"), _
     "Country = 'USA'", _  
     "ContactName", _  
     DataViewRowState.CurrentRows)  
-  
 ```  
   
 ```csharp  
@@ -43,7 +42,6 @@ DataView custDV = new DataView(custDS.Tables["Customers"],
   
 ```vb  
 Dim custDV As DataView = custDS.Tables("Customers").DefaultView  
-  
 ```  
   
 ```csharp  

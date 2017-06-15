@@ -6,6 +6,7 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -45,9 +46,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of elements in the list.</typeparam>
+    <summary>Represents an immutable list, which is a strongly typed list of objects that can be accessed by index.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you add or remove items from an immutable list, a copy of the original list is made with the items added or removed, and the original list is unchanged.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,6 +70,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -67,9 +79,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to add.</param>
+        <summary>Adds the specified object to the end of the immutable list.</summary>
+        <returns>A new immutable list with the object added, or the current list if it already contains the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,6 +94,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -90,9 +103,9 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="items">The collection whose elements will be added to the end of the list.</param>
+        <summary>Adds the elements of the specified collection to the end of the immutable list.</summary>
+        <returns>A new immutable list with the elements added, or the current list if it already contains the specified elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,6 +118,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -113,10 +127,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Searches the entire sorted list for an element using the default comparer and returns the zero-based index of the element.</summary>
+        <returns>The zero-based index of item in the sorted List, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than item or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.ICollection.Count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The default comparer cannot find a comparer implementation of the for type T.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -128,6 +143,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -137,11 +153,12 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate. The value can be null for reference types.</param>
+        <param name="comparer">The  comparer implementation to use when comparing elements or null to use the default comparer.</param>
+        <summary>Searches the entire sorted list for an element using the specified comparer and returns the zero-based index of the element.</summary>
+        <returns>The zero-based index of item in the sorted List, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than item or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.ICollection.Count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">comparer is <see langword="null" />, and the default comparer cannot find an comparer implementation for type T.</exception>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -153,6 +170,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -164,13 +182,17 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based starting index of the range to search.</param>
+        <param name="count">The length of the range to search.</param>
+        <param name="item">The object to locate. The value can be null for reference types.</param>
+        <param name="comparer">The comparer implementation to use when comparing elements, or <see langword="null" /> to use the default comparer.</param>
+        <summary>Searches a range of elements in the sorted list for an element using the specified comparer and returns the zero-based index of the element.</summary>
+        <returns>The zero-based index of item in the sorted list, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than item or, if there is no larger element, the bitwise complement of <paramref name="count" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">index is less than 0 or <paramref name="count" /> is less than 0.</exception>
+        <exception cref="T:System.ArgumentException">index and <paramref name="count" /> do not denote a valid range in the list.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="comparer" /> is <see langword="null" />, and the default comparer cannot find an comparer implementation for type T.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -182,14 +204,15 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Removes all elements from the immutable list.</summary>
+        <returns>An empty list that retains the same sort or unordered semantics that this instance has.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,6 +225,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -210,9 +234,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value to locate.</param>
+        <summary>Determines whether this immutable list contains the specified value.</summary>
+        <returns>
+          <see langword="true" /> if the list contains the specified value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,6 +250,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;TOutput&gt;</ReturnType>
@@ -236,9 +262,9 @@
         <Parameter Name="converter" Type="System.Func&lt;T,TOutput&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="converter">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TOutput">The type of the elements of the target array.</typeparam>
+        <param name="converter">A delegate that converts each element from one type to another type.</param>
+        <summary>Converts the elements in the current immutable list to another type, and returns a list containing the converted elements.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,6 +278,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -260,8 +287,8 @@
         <Parameter Name="array" Type="T[]" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</param>
+        <summary>Copies the entire immutable list to a compatible one-dimensional array, starting at the beginning of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,6 +301,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -283,9 +311,9 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,6 +326,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -309,11 +338,11 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index in the source immutable list at which copying begins.</param>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the immutable list. The array must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+        <param name="count">The number of elements to copy.</param>
+        <summary>Copies a range of elements from the immutable list to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -326,13 +355,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the list.</summary>
+        <value>The number of elements in the list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,12 +375,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an empty set with the default sort comparer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -363,6 +394,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -371,9 +403,10 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the elements to search for.</param>
+        <summary>Determines whether the immutable list contains elements that match the conditions defined by the specified predicate.</summary>
+        <returns>
+          <see langword="true" /> if the immutable list contains one or more elements that match the conditions defined by the specified predicate; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,6 +419,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -394,9 +428,9 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the first occurrence within the entire immutable list.</summary>
+        <returns>The first element that matches the conditions defined by the specified predicate, if found; otherwise, the default value for type <paramref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,6 +443,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -417,9 +452,9 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the elements to search for.</param>
+        <summary>Retrieves all the elements that match the conditions defined by the specified predicate.</summary>
+        <returns>An immutable list that contains all the elements that match the conditions defined by the specified predicate, if found; otherwise, an empty immutable list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,6 +467,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -440,9 +476,9 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the entire immutable list.</summary>
+        <returns>The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,6 +491,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -464,10 +501,10 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="startIndex">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="startIndex">The zero-based starting index of the search.</param>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the immutable list that extends from the specified index to the last element.</summary>
+        <returns>The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,6 +517,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -490,11 +528,11 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="startIndex">The zero-based starting index of the search.</param>
+        <param name="count">The number of elements in the section to search.</param>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the immutable list that starts at the specified index and contains the specified number of elements.</summary>
+        <returns>The zero-based index of the first occurrence of an element that matches the conditions defined by match, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,6 +545,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -515,9 +554,9 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the last occurrence within the entire immutable list.</summary>
+        <returns>The last element that matches the conditions defined by the specified predicate, if found; otherwise, the default value for type <paramref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,6 +569,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -538,9 +578,9 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the entire immutable list.</summary>
+        <returns>The zero-based index of the last occurrence of an element that matches the conditions defined by <paramref name="match" />, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -553,6 +593,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -562,10 +603,10 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="startIndex">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="startIndex">The zero-based starting index of the backward search.</param>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the immutable list that extends from the first element to the specified index.</summary>
+        <returns>The zero-based index of the last occurrence of an element that matches the conditions defined by <paramref name="match" />, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,6 +619,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -588,11 +630,11 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="startIndex">The zero-based starting index of the backward search.</param>
+        <param name="count">The number of elements in the section to search.</param>
+        <param name="match">The delegate that defines the conditions of the element to search for.</param>
+        <summary>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the immutable list that contains the specified number of elements and ends at the specified index.</summary>
+        <returns>The zero-based index of the last occurrence of an element that matches the conditions defined by <paramref name="match" />, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,6 +647,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -613,8 +656,8 @@
         <Parameter Name="action" Type="System.Action&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="action">The delegate to perform on each element of the immutable list.</param>
+        <summary>Performs the specified action on each element of the immutable list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,15 +670,25 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;+Enumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the immutable list.</summary>
+        <returns>An enumerator  that can be used to iterate through the immutable list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  When this enumerator is used as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption or exceptions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRange">
@@ -647,6 +700,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -656,10 +710,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index at which the range starts.</param>
+        <param name="count">The number of elements in the range.</param>
+        <summary>Creates a shallow copy of a range of elements in the source immutable list.</summary>
+        <returns>A shallow copy of a range of elements in the source immutable list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -672,6 +726,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -680,9 +735,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to locate in the immutable list. The value can be <c>null</c> for reference types.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the entire immutable list.</summary>
+        <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the entire immutable list, if found; otherwise, ?1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,6 +750,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -706,12 +762,12 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate in the list The value can be null for reference types.</param>
+        <param name="index">The zero-based starting index of the search. 0 (zero) is valid in an empty list.</param>
+        <param name="count">The number of elements in the section to search.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the list that starts at the specified index and contains the specified number of elements.</summary>
+        <returns>The zero-based index of the first occurrence of item within the range of elements in the list that starts at index and contains count number of elements, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -724,6 +780,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -733,10 +790,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index at which to insert the object.</param>
+        <param name="item">The object to insert.</param>
+        <summary>Inserts the specified object into the immutable list at the specified index.</summary>
+        <returns>The new immutable list after the object is inserted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,6 +806,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -758,10 +816,10 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index at which to insert the elements.</param>
+        <param name="items">The collection whose elements should be inserted.</param>
+        <summary>Inserts the elements of a collection into the immutable list at the specified index.</summary>
+        <returns>The new immutable list after the elements are inserted.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,6 +832,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -784,8 +843,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this list is empty.</summary>
+        <value>
+          <see langword="true" /> if the list is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,6 +858,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -806,9 +867,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the element to retrieve.</param>
+        <summary>Gets the element at the specified index of the list.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,6 +882,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -832,12 +894,12 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate in the list. The value can be null for reference types.</param>
+        <param name="index">The zero-based starting index of the backward search.</param>
+        <param name="count">The number of elements in the section to search.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the list that contains the specified number of elements and ends at the specified index.</summary>
+        <returns>The zero-based index of the last occurrence of item within the range of elements in the list that contains count number of elements and ends at index, if found; otherwise, –1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -850,6 +912,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -858,9 +921,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The object to remove.</param>
+        <summary>Removes the first occurrence of the specified object from this immutable list.</summary>
+        <returns>A new list with the object removed, or this list if the specified object is not in this list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -873,6 +936,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -882,10 +946,10 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value of the element to remove from the list.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Removes the first occurrence of the object that matches the specified value from this immutable list.</summary>
+        <returns>A new list with the object removed, or this list if the specified object is not in this list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,6 +962,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -906,9 +971,9 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions of the elements to remove.</param>
+        <summary>Removes all the elements that match the conditions defined by the specified predicate.</summary>
+        <returns>The new list with the elements removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -921,6 +986,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -929,9 +995,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the element at the specified index.</summary>
+        <returns>A new list with the element removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -944,6 +1010,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -952,9 +1019,9 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="items">The collection whose elements should be removed if matches are found in this list.</param>
+        <summary>Removes a range of elements from this immutable list.</summary>
+        <returns>A new list with the elements removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -967,6 +1034,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -976,10 +1044,10 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="items">The items to remove if matches are found in this list.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Removes the specified values from this list.</summary>
+        <returns>A new list with the elements removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -992,6 +1060,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1001,10 +1070,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The starting index to begin removal.</param>
+        <param name="count">The number of elements to remove.</param>
+        <summary>Removes a range of elements, starting from the specified index and containing the specified number of elements, from this immutable list.</summary>
+        <returns>A new list with the elements removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1017,6 +1086,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1026,11 +1096,13 @@
         <Parameter Name="newValue" Type="T" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oldValue">The element to replace.</param>
+        <param name="newValue">The element to replace <c>oldValue</c> with.</param>
+        <summary>Replaces the specified element in the immutable list with a new element.</summary>
+        <returns>The new list with the replaced element, even if it is equal to the old element.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="oldValue" /> does not exist in the immutable list.</exception>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -1042,6 +1114,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1052,11 +1125,11 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oldValue">The element to replace in the list.</param>
+        <param name="newValue">The element to replace <c>oldValue</c> with.</param>
+        <param name="equalityComparer">The comparer to use to check for equality.</param>
+        <summary>Replaces the specified element in the immutable list with a new element.</summary>
+        <returns>A new list with the object replaced, or this list if the specified object is not in this list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1069,14 +1142,15 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reverses the order of the elements in the entire immutable list.</summary>
+        <returns>The reversed list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1089,6 +1163,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1098,10 +1173,10 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based starting index of the range to reverse.</param>
+        <param name="count">The number of elements in the range to reverse.</param>
+        <summary>Reverses the order of the elements in the specified range of the immutable list.</summary>
+        <returns>The reversed list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1114,6 +1189,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1123,10 +1199,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The position in the list of the element to replace.</param>
+        <param name="value">The element to replace the old element with.</param>
+        <summary>Replaces an element at a given position in the immutable list with the specified element.</summary>
+        <returns>The new list with the replaced element, even if it is equal to the old element at that position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1139,14 +1215,15 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Sorts the elements in the entire immutable list using the default comparer.</summary>
+        <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1159,6 +1236,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1167,9 +1245,9 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comparer">The  implementation to use when comparing elements, or <see langword="null" /> to use the default comparer (<see cref="P:System.Collections.Generic.Comparer`1.Default" />).</param>
+        <summary>Sorts the elements in the entire immutable list using the specified comparer.</summary>
+        <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1182,6 +1260,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1190,9 +1269,9 @@
         <Parameter Name="comparison" Type="System.Comparison&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="comparison">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="comparison">The delegate to use when comparing elements.</param>
+        <summary>Sorts the elements in the entire immutable list using the specified comparer.</summary>
+        <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1205,6 +1284,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1215,11 +1295,11 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The zero-based starting index of the range to sort.</param>
+        <param name="count">The length of the range to sort.</param>
+        <param name="comparer">The implementation to use when comparing elements, or <see langword="null" /> to use the default comparer (<see cref="P:System.Collections.Generic.Comparer`1.Default" />).</param>
+        <summary>Sorts a range of elements in the immutable list using the specified comparer.</summary>
+        <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1232,6 +1312,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1240,9 +1321,17 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="item">The item to add.</param>
+        <summary>Adds the specified item to the immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Clear">
@@ -1254,14 +1343,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all items from the immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly">
@@ -1273,13 +1371,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1292,6 +1391,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1300,10 +1400,18 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="item">The object to remove.</param>
+        <summary>Removes the first occurrence of a specific object from the immutable list.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the list; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the original list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -1315,15 +1423,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the immutable list.</summary>
+        <returns>An enumerator that can be used to iterate through the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Insert">
@@ -1335,6 +1451,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1344,10 +1461,18 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="item">The object to insert.</param>
+        <summary>Inserts an object in the immutable list at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Item">
@@ -1359,6 +1484,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -1368,9 +1494,11 @@
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the value at the specified index.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">Thrown from getter when <paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">Always thrown from the setter.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.RemoveAt">
@@ -1382,6 +1510,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1390,9 +1519,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the value at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -1404,6 +1541,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1413,10 +1551,17 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from immutable list.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire immutable list to a compatible one-dimensional array, starting at the specified array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -1428,6 +1573,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1438,7 +1584,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See the <see cref="T:System.Collections.ICollection" /> interface.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1452,6 +1598,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1462,7 +1609,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>See <see cref="T:System.Collections.ICollection" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1476,15 +1623,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns an enumerator that iterates through the immutable list.</summary>
+        <returns>An enumerator that can be used to iterate through the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -1496,6 +1651,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1504,10 +1660,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to add to the list.</param>
+        <summary>Adds an item to the immutable list.</summary>
+        <returns>The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -1519,14 +1683,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Removes all items from the immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1538,6 +1711,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1546,10 +1720,19 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the list.</param>
+        <summary>Determines whether the immutable list contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the object is found in the list; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1561,6 +1744,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1569,10 +1753,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to locate in the list.</param>
+        <summary>Determines the index of a specific item in the immutable list.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1584,6 +1776,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1593,10 +1786,18 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The object to insert into the list.</param>
+        <summary>Inserts an item into the immutable list at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -1608,13 +1809,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
+        <value>true if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1627,13 +1829,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1646,6 +1849,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1654,10 +1858,12 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index.</param>
+        <summary>Gets or sets the <see cref="T:System.Object" /> at the specified index.</summary>
+        <value>The value at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">Thrown from getter when <paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">Always thrown from the setter.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove">
@@ -1669,6 +1875,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1677,9 +1884,17 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The object to remove from the list.</param>
+        <summary>Removes the first occurrence of a specific object from the immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -1691,6 +1906,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1699,9 +1915,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the item at the specified index of the immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException" />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Add">
@@ -1713,7 +1937,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1721,10 +1951,17 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to add.</param>
+        <summary>Adds the specified value to this immutable list.</summary>
+        <returns>A new list with the element added, or this list if the element is already in the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.AddRange">
@@ -1736,7 +1973,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1744,10 +1987,17 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="items">The values to add.</param>
+        <summary>Adds the specified values to this immutable list.</summary>
+        <returns>A new list with the elements added, or this list if the elements are already in the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Clear">
@@ -1759,15 +2009,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves an empty list that has the same sorting and ordering semantics as this instance.</summary>
+        <returns>An empty list that has the same sorting and ordering semantics as this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Insert">
@@ -1779,7 +2037,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1788,11 +2052,18 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to insert the value.</param>
+        <param name="item">The element to insert.</param>
+        <summary>Inserts the specified element at the specified index in the immutable list.</summary>
+        <returns>A new immutable list that includes the specified element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.InsertRange">
@@ -1804,7 +2075,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1813,11 +2090,18 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The index at which to insert the elements.</param>
+        <param name="items">The elements to insert.</param>
+        <summary>Inserts the specified elements at the specified index in the immutable list.</summary>
+        <returns>A new immutable list that includes the specified elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Remove">
@@ -1829,7 +2113,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1838,11 +2128,18 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value of the element to remove from the list.</param>
+        <param name="equalityComparer">The comparer to use to compare elements for equality.</param>
+        <summary>Removes the element with the specified value from the list.</summary>
+        <returns>Returns a new <see cref="T:System.Collections.Immutable.ImmutableList`1" /> with the specified element removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveAll">
@@ -1854,7 +2151,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1862,10 +2165,17 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="match">The delegate that defines the conditions of the elements to remove.</param>
+        <summary>Removes all the elements that match the conditions defined by the specified predicate.</summary>
+        <returns>A new immutable list with the elements removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveAt">
@@ -1877,7 +2187,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1885,10 +2201,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The index of the element to remove.</param>
+        <summary>Removes the element at the specified index of the immutable list.</summary>
+        <returns>A new list with the element removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
@@ -1900,7 +2223,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1909,11 +2238,20 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="items">The range of items to remove from the list, if found.</param>
+        <param name="equalityComparer">The equality comparer to use to compare elements.</param>
+        <summary>Removes a range of elements from this immutable list that match the items specified.</summary>
+        <returns>An immutable list with the items removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="items" /> or <paramref name="equalityComparer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
@@ -1925,7 +2263,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1934,11 +2278,18 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The starting index of the range of elements to remove.</param>
+        <param name="count">The number of elements to remove.</param>
+        <summary>Removes the specified number of elements at the specified location from this list.</summary>
+        <returns>A new list with the elements removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Replace">
@@ -1950,6 +2301,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -1960,12 +2312,13 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="oldValue">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oldValue">The element to replace.</param>
+        <param name="newValue">The element to replace the old element with.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>Replaces an element in the list with the specified element.</summary>
+        <returns>The new list.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown when the old value does not exist in the list.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.SetItem">
@@ -1977,7 +2330,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1986,11 +2345,18 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="index">The position in the list of the element to replace.</param>
+        <param name="value">The element to replace the old element with.</param>
+        <summary>Replaces an element in the list at a given position with the specified element.</summary>
+        <returns>The new list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToBuilder">
@@ -2002,15 +2368,23 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;+Builder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a list that has the same contents as this list and can be efficiently mutated across multiple operations using standard mutable interfaces.</summary>
+        <returns>The created list with the same contents as this list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an O(1) operation and results in only a single (small) memory allocation. The mutable list that is returned is not thread-safe.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrueForAll">
@@ -2022,6 +2396,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2030,11 +2405,30 @@
         <Parameter Name="match" Type="System.Predicate&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="match">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="match">The delegate that defines the conditions to check against the elements.</param>
+        <summary>Determines whether every element in the immutable list matches the conditions defined by the specified predicate.</summary>
+        <returns>
+          <see langword="true" /> if every element in the immutable list matches the conditions defined by the specified predicate; otherwise, <see langword="false" />. If the list has no elements, the return value is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a range of elements from this immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

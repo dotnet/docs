@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorProfilerInfo interface [.NET Framework profiling]"
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

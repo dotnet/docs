@@ -2,7 +2,7 @@
 title: "Building the Windows Communication Foundation Samples | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,7 +75,6 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be built
   
     ```  
     svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost/servicemodelsamples/service.svc/mex /l:vb /out:generatedClient.vb  
-  
     ```  
   
      If the service is a self-hosted type, use the following command.  

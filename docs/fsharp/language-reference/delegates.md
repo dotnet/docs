@@ -1,5 +1,5 @@
 ---
-title: Delegates (F#)
+title: Delegates (F#) | Microsoft Docs
 description: Delegates (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -40,7 +40,7 @@ The following code shows some of the different ways you can work with delegates.
 
 The output of the previous code example is as follows.
 
-```text
+```console
 aaaaa
 bbbbb
 ccccc

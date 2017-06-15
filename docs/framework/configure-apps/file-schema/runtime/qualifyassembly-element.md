@@ -2,7 +2,7 @@
 title: "&lt;qualifyAssembly&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,11 +37,10 @@ Specifies the full name of the assembly that should be dynamically loaded when a
   
 ## Syntax  
   
-```  
-  
+```xml  
       <qualifyAssembly partialName=  
       "PartialAssemblyName"  
-                 fullName="FullAssemblyName"/>  
+                 fullName="FullAssemblyName"/>  
 ```  
   
 ## Attributes and Elements  
@@ -73,7 +72,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 ## Example  
  The following example logically turns the call `Assembly.Load("math")` into `Assembly.Load("math,version=1.0.0.0,publicKeyToken=a1690a5ea44bab32,culture=neutral")`.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

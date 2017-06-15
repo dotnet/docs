@@ -2,7 +2,7 @@
 title: "&lt;proxy&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,14 +36,13 @@ Defines a proxy server.
   
 ## Syntax  
   
-```  
-  
-      <proxy   
-  autoDetect="true|false|unspecified"    
-  bypassonlocal="true|false|unspecified"   
+```xml  
+      <proxy   
+  autoDetect="true|false|unspecified"    
+  bypassonlocal="true|false|unspecified"   
 proxyaddress="uriString"  
-  scriptLocation="uriString"   
-  usesystemdefault="true|false|unspecified "   
+  scriptLocation="uriString"   
+  usesystemdefault="true|false|unspecified "   
 />  
 ```  
   
@@ -88,7 +87,7 @@ proxyaddress="uriString"
 ## Example  
  The following code example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

@@ -2,7 +2,7 @@
 title: "Supporting Tokens | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,7 +57,6 @@ public static Binding CreateMultiFactorAuthenticationBinding()
     // Create a CustomBinding based on the constructed security binding element.  
     return new CustomBinding(messageSecurity, httpTransport);  
 }  
-  
 ```  
   
  The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate. The sample uses `CN=localhost` as a subject name in the service X.509 certificate.  

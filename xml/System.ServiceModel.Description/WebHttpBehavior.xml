@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the <xref:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle%2A> property, the value of this property is used as the body style for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
+ If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the <xref:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle%2A> property, the value of this property is used as the body style for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare>.  
   
  ]]></format>
         </remarks>
@@ -249,7 +249,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingRequestFormat` property, the value of this property is used as the request format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat>.  
+ If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingRequestFormat` property, the value of this property is used as the request format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat.Xml>.  
   
  ]]></format>
         </remarks>
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingResponseFormat` property, the value of this property is used as the response format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat>.  
+ If the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> does not explicitly set the `OutgoingResponseFormat` property, the value of this property is used as the response format for the operation. The default value is <xref:System.ServiceModel.Web.WebMessageFormat.Xml>.  
   
  ]]></format>
         </remarks>
@@ -590,7 +590,7 @@ host.Description.Endpoints[0].Behaviors.Add(helpBehavior);
   
 -   The parameters specified in the <xref:System.UriTemplate> must be part of the operation.  
   
--   Operations that specify <xref:System.ServiceModel.Web.WebMessageBodyStyle> have, at most, one input parameter and can have no out parameters.  
+-   Operations that specify <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare> have, at most, one input parameter and can have no out parameters.  
   
  ]]></format>
         </remarks>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetTaskIdentifier method [.NET Framework hosting]"
   - "ICLRTask::SetTaskIdentifier method [.NET Framework hosting]"
 ms.assetid: bdb7f047-1e90-40fc-9e3b-d44a16509073
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

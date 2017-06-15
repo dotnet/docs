@@ -6,14 +6,18 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains interlocked exchange mechanisms for immutable collections.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="AddOrUpdate&lt;TKey,TValue&gt;">
@@ -25,6 +29,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -42,12 +47,12 @@
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>
         <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="addValueFactory">To be added.</param>
-        <param name="updateValueFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="location">The variable or field to atomically update if the specified  is not in the dictionary.</param>
+        <param name="key">The key for the value to add or update.</param>
+        <param name="addValueFactory">The function that receives the key and returns a new value to add to the dictionary when no value previously exists.</param>
+        <param name="updateValueFactory">The function that receives the key and prior value and returns the new value with which to update the dictionary.</param>
+        <summary>Obtains the value from a dictionary after having added it or updated an existing entry.</summary>
+        <returns>The added or updated value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,6 +65,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -77,12 +83,12 @@
       <Docs>
         <typeparam name="TKey">To be added.</typeparam>
         <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="addValue">To be added.</param>
-        <param name="updateValueFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="location">The variable or field to atomically update if the specified  is not in the dictionary.</param>
+        <param name="key">The key for the value to add or update.</param>
+        <param name="addValue">The value to use if no previous value exists.</param>
+        <param name="updateValueFactory">The function that receives the key and prior value and returns the new value with which to update the dictionary.</param>
+        <summary>Obtains the value from a dictionary after having added it or updated an existing entry.</summary>
+        <returns>The added or updated value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,6 +101,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -107,10 +114,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of items contained in the collection</typeparam>
+        <param name="location">The variable or field to atomically update.</param>
+        <param name="value">The value to enqueue.</param>
+        <summary>Atomically enqueues an element to the end of a queue.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,6 +130,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -137,13 +145,13 @@
         <Parameter Name="valueFactory" Type="System.Func&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="valueFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
+        <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
+        <param name="location">The variable or field to atomically update if the specified  is not in the dictionary.</param>
+        <param name="key">The key for the value to retrieve or add.</param>
+        <param name="valueFactory">The function to execute to obtain the value to insert into the dictionary if the key is not found. This delegate will not be invoked more than once.</param>
+        <summary>Gets the value for the specified key from the dictionary, or if the key was not found, adds a new value to the dictionary.</summary>
+        <returns>The value at the specified key or <paramref name="valueFactory" /> if the key was not present.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,6 +164,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -170,13 +179,13 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
+        <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
+        <param name="location">The variable or field to atomically update if the specified key is not in the dictionary.</param>
+        <param name="key">The key for the value to get or add.</param>
+        <param name="value">The value to add to the dictionary the key is not found.</param>
+        <summary>Gets the value for the specified key from the dictionary, or if the key was not found, adds a new value to the dictionary.</summary>
+        <returns>The value at the specified key or <paramref name="valueFactory" /> if the key was not present.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,6 +198,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -205,15 +215,15 @@
         <Parameter Name="factoryArgument" Type="TArg" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
+        <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
+        <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
         <typeparam name="TArg">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="valueFactory">To be added.</param>
-        <param name="factoryArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="location">The variable or field to update if the specified is not in the dictionary.</param>
+        <param name="key">The key for the value to retrieve or add.</param>
+        <param name="valueFactory">The function to execute to obtain the value to insert into the dictionary if the key is not found.</param>
+        <param name="factoryArgument">The argument to pass to the value factory.</param>
+        <summary>Gets the value for the specified key from the dictionary, or if the key was not found, adds a new value to the dictionary.</summary>
+        <returns>The value at the specified key or <paramref name="valueFactory" /> if the key was not present.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,6 +236,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -239,12 +250,14 @@
         <Parameter Name="comparand" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="comparand">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored by the array.</typeparam>
+        <param name="location">The destination, whose value is compared with <c>comparand</c> and possibly replaced.</param>
+        <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
+        <param name="comparand">The value that is compared to the value at <c>location</c>.</param>
+        <summary>  
+  
+ Compares two immutable arrays for equality and, if they are equal, replaces one of the arrays.</summary>
+        <returns>The original value in <paramref name="location" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,6 +270,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -269,11 +283,13 @@
         <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored by the array.</typeparam>
+        <param name="location">The array to set to the specified value.</param>
+        <param name="value">The value to which the <c>location</c> parameter is set.</param>
+        <summary>  
+  
+ Sets an array to the specified array and returns a reference to the original array, as an atomic operation.</summary>
+        <returns>The original value of <paramref name="location" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,6 +302,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -298,11 +315,14 @@
         <Parameter Name="value" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element stored by the array.</typeparam>
+        <param name="location">The array to set to the specified value.</param>
+        <param name="value">The value to which the <c>location</c> parameter is set, if it’s not initialized.</param>
+        <summary>  
+  
+ Sets an array to the specified array if the array has not been initialized.</summary>
+        <returns>
+          <see langword="true" /> if the array was assigned the specified value;  otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,6 +335,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -327,10 +348,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of items in the stack.</typeparam>
+        <param name="location">The stack to update.</param>
+        <param name="value">The value to push on the stack.</param>
+        <summary>Pushes a new element onto the stack.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,6 +364,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -357,13 +379,14 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
+        <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
+        <param name="location">The dictionary to update with the specified key and value.</param>
+        <param name="key">The key to add, if is not already defined in the dictionary.</param>
+        <param name="value">The value to add.</param>
+        <summary>Adds the specified key and value to the dictionary if the key is not in the dictionary.</summary>
+        <returns>
+          <see langword="true" /> if the key is not in the dictionary; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,6 +399,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -388,11 +412,12 @@
         <Parameter Name="value" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the queue.</typeparam>
+        <param name="location">The variable or field to atomically update.</param>
+        <param name="value">Set to the value from the head of the queue, if the queue not empty.</param>
+        <summary>Atomically removes and returns the specified element at the head of the queue, if the queue is not empty.</summary>
+        <returns>
+          <see langword="true" /> if the queue is not empty and the head element is removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -405,6 +430,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -417,11 +443,12 @@
         <Parameter Name="value" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the stack.</typeparam>
+        <param name="location">The stack to update.</param>
+        <param name="value">Receives the value removed from the stack, if the stack is not empty.</param>
+        <summary>Removes an element from the top of the stack, if there is an element to remove.</summary>
+        <returns>
+          <see langword="true" /> if an element is removed from the stack; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,6 +461,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -448,13 +476,14 @@
         <Parameter Name="value" Type="TValue&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
+        <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
+        <param name="location">The dictionary to update.</param>
+        <param name="key">The key to remove.</param>
+        <param name="value">Receives the value of the removed item, if the dictionary is not empty.</param>
+        <summary>Removes the element with the specified key, if the key exists.</summary>
+        <returns>
+          <see langword="true" /> if the key was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,6 +496,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -482,14 +512,15 @@
         <Parameter Name="comparisonValue" Type="TValue" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <param name="comparisonValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
+        <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
+        <param name="location">The dictionary to update.</param>
+        <param name="key">The key to update.</param>
+        <param name="newValue">The new value to set.</param>
+        <param name="comparisonValue">The current value for <c>key</c> in order for the update to succeed.</param>
+        <summary>Sets the specified key to the specified value if the specified key already is set to a specific value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="key" /> and <paramref name="comparisonValue" /> are present in the dictionary and comparison was updated to <paramref name="newValue" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,6 +533,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -518,11 +550,12 @@
         <Parameter Name="transformer" Type="System.Func&lt;T,T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="transformer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of data.</typeparam>
+        <param name="location">The variable or field to be changed, which may be accessed by multiple threads.</param>
+        <param name="transformer">A function that mutates the value. This function should be side-effect free,              as it may run multiple times when races occur with other threads.</param>
+        <summary>Mutates a value in-place with optimistic locking transaction semantics             via a specified transformation function.             The transformation is retried as many times as necessary to win the optimistic locking race.</summary>
+        <returns>
+          <c>true</c> if the location's value is changed by applying the result of the              <paramref name="transformer" /> function;             <c>false</c> if the location's value remained the same because the last              invocation of <paramref name="transformer" /> returned the existing value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,6 +568,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -553,13 +587,14 @@
         <Parameter Name="transformerArgument" Type="TArg" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TArg">To be added.</typeparam>
-        <param name="location">To be added.</param>
-        <param name="transformer">To be added.</param>
-        <param name="transformerArgument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of data.</typeparam>
+        <typeparam name="TArg">The type of argument passed to the <c>transformer</c>.</typeparam>
+        <param name="location">The variable or field to be changed, which may be accessed by multiple threads.</param>
+        <param name="transformer">A function that mutates the value. This function should be side-effect free,              as it may run multiple times when races occur with other threads.</param>
+        <param name="transformerArgument">The argument to pass to <c>transformer</c>.</param>
+        <summary>Mutates a value in-place with optimistic locking transaction semantics             via a specified transformation function.             The transformation is retried as many times as necessary to win the optimistic locking race.</summary>
+        <returns>
+          <c>true</c> if the location's value is changed by applying the result of the              <paramref name="transformer" /> function;             <c>false</c> if the location's value remained the same because the last              invocation of <paramref name="transformer" /> returned the existing value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

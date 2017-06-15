@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TOutput">
@@ -20,9 +21,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TOutput">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TOutput">Specifies the type of data supplied by the  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</typeparam>
+    <summary>Represents a dataflow block that is a source of data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the net_v45. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in vs_dev11_long, choose Manage NuGet Packages from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ConsumeMessage">
@@ -34,6 +44,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TOutput</ReturnType>
@@ -44,12 +55,24 @@
         <Parameter Name="messageConsumed" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="messageHeader">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="messageConsumed">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being consumed.</param>
+        <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> consuming the message.</param>
+        <param name="messageConsumed">
+          <see langword="true" /> if the message was successfully consumed; otherwise, <see langword="false" />.</param>
+        <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to accept and consume a T:System.Threading.Tasks.Dataflow.DataflowMessageHeader previously offered by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
+        <returns>The value of the consumed message. This may correspond to a different  <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> instance than was previously reserved and passed as the <paramref name="messageHeader" /> to <see cref="M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)" />. The consuming <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> must use the returned value instead of the value passed as <paramref name="messageValue" /> through <see cref="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />.  
+  
+ If the message requested is not available, the return value will be null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> instances linked to this <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> instance may use <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.ConsumeMessage%2A>, and it must only be used to consume <xref:System.Threading.Tasks.Dataflow.DataflowMessageHeader> instances previously offered by this source to the target.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The messageHeader is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">The target is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LinkTo">
@@ -61,6 +84,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -70,11 +94,13 @@
         <Parameter Name="linkOptions" Type="System.Threading.Tasks.Dataflow.DataflowLinkOptions" />
       </Parameters>
       <Docs>
-        <param name="target">To be added.</param>
-        <param name="linkOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="target">The  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to which to connect this source.</param>
+        <param name="linkOptions">A <see cref="T:System.Threading.Tasks.Dataflow.DataflowLinkOptions" /> instance that configures the link.</param>
+        <summary>Links the  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the specified  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
+        <returns>An IDisposable that, upon calling Dispose, will unlink the source from the target.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="target" /> is null (Nothing in Visual Basic) or  <paramref name="linkOptions" /> is null (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseReservation">
@@ -86,6 +112,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -95,10 +122,20 @@
         <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;" />
       </Parameters>
       <Docs>
-        <param name="messageHeader">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the reserved message being released.</param>
+        <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> releasing the message it previously reserved.</param>
+        <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to release a previously reserved <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> instances linked to this <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> instance may use `ReleaseReservation`, and it must only be used to release <xref:System.Threading.Tasks.Dataflow.DataflowMessageHeader> instances previously and successfully reserved by the target.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="messageHeader" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="target" /> did not have the message reserved.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReserveMessage">
@@ -110,6 +147,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -119,11 +157,25 @@
         <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;" />
       </Parameters>
       <Docs>
-        <param name="messageHeader">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="messageHeader">The <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> of the message being reserved.</param>
+        <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> reserving the message.</param>
+        <summary>Called by a linked <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to reserve a previously offered <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> by this <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
+        <returns>
+          <see langword="true" /> if the message was successfully reserved; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> instances linked to this <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> instance may use <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.ReserveMessage%2A>, and it must only be used to reserve <xref:System.Threading.Tasks.Dataflow.DataflowMessageHeader> instances previously offered by this source to the target.  
+  
+ If `true` is returned, the  <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> must subsequently call either  <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.ConsumeMessage%2A> or <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.ReleaseReservation%2A> for this message. Failure to do so may result in the source being unable to propagate any further messages to this or other targets.  
+  
+ <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.ReserveMessage%2A> must not be called while the target is holding any internal locks. Doing so will violate the lock hierarchy necessary to avoid deadlocks in a dataflow network.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="messageHeader" /> is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

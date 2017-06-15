@@ -2,7 +2,7 @@
 title: "ICorDebugThread2 Interface1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugThread2 interface [.NET Framework debugging]"
 ms.assetid: 678f89f9-cce7-46d1-af87-5e989abaa93c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

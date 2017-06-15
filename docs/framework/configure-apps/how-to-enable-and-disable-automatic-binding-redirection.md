@@ -61,7 +61,7 @@ Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you c
   
      The following shows an example project file with the element inserted.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />  
@@ -74,7 +74,6 @@ Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you c
       </PropertyGroup>  
     ...  
     </Project>  
-  
     ```  
   
 4.  Compile your app.  

@@ -2,7 +2,7 @@
 title: "&lt;pnrpPeerResolver&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
   
 ## Syntax  
   
-```  
-  
+```xml  
 <pnrpResolver resolverType="String" />  
 ```  
   
@@ -51,7 +50,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
   
 ## Example  
   
-```  
+```xml  
 <pnrpResolver resolverType="" />  
 ```  
   

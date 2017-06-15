@@ -2,7 +2,7 @@
 title: "How to: Hide ToolStripMenuItems | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,17 +32,14 @@ Hiding menu items is a way to control the user interface of your application and
   
     ```vb  
     MenuItem3.Visible = False  
-  
     ```  
   
     ```csharp  
     menuItem3.Visible = false;  
-  
     ```  
   
     ```cpp  
     menuItem3->Visible = false;  
-  
     ```  
   
 ## See Also  

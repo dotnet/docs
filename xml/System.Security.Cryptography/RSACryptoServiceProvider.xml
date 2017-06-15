@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,7 +95,7 @@
 ## Remarks  
  If no default key is found, a new key is created.  
   
- This constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+ This constructor creates an <xref:System.Security.Cryptography.KeyNumber.Exchange> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
   
    
   
@@ -117,6 +119,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,7 +142,7 @@
 ## Remarks  
  If no default key is found, a new key is created.  
   
- This constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+ This constructor creates an <xref:System.Security.Cryptography.KeyNumber.Exchange> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
   
    
   
@@ -163,6 +166,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -183,15 +187,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates or reuses a key container specified using the <xref:System.Security.Cryptography.CspParameters> field of the `parameters` parameter.  
+ This constructor creates or reuses a key container specified using the <xref:System.Security.Cryptography.CspParameters.KeyContainerName> field of the `parameters` parameter.  
   
- By default, this constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+ By default, this constructor creates an <xref:System.Security.Cryptography.KeyNumber.Exchange> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
   
- You can create a <xref:System.Security.Cryptography.KeyNumber> key pair suitable for authenticating (digitally signed) messages or files by setting the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the `parameters` parameter to the <xref:System.Security.Cryptography.KeyNumber> value. This type of key corresponds to the `AT_SIGNATURE` value used in CAPI.  
+ You can create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair suitable for authenticating (digitally signed) messages or files by setting the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the `parameters` parameter to the <xref:System.Security.Cryptography.KeyNumber.Signature> value. This type of key corresponds to the `AT_SIGNATURE` value used in CAPI.  
   
- If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
+ If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Exchange> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Signature> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
   
- To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber> key pair.  
+ To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair.  
   
    
   
@@ -215,6 +219,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -237,15 +242,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates or reuses a key container specified using the <xref:System.Security.Cryptography.CspParameters> field of the `parameters` parameter.  
+ This constructor creates or reuses a key container specified using the <xref:System.Security.Cryptography.CspParameters.KeyContainerName> field of the `parameters` parameter.  
   
- By default, this constructor creates an <xref:System.Security.Cryptography.KeyNumber> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+ By default, this constructor creates an <xref:System.Security.Cryptography.KeyNumber.Exchange> key pair suitable to encrypt session keys so that they can be safely stored and exchanged with other users.  The generated key corresponds to a key generated using the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
   
- You can create a <xref:System.Security.Cryptography.KeyNumber> key pair suitable for authenticating (digitally signed) messages or files by setting the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the `parameters` parameter to the <xref:System.Security.Cryptography.KeyNumber> value. This type of key corresponds to the `AT_SIGNATURE` value used in CAPI.  
+ You can create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair suitable for authenticating (digitally signed) messages or files by setting the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field of the `parameters` parameter to the <xref:System.Security.Cryptography.KeyNumber.Signature> value. This type of key corresponds to the `AT_SIGNATURE` value used in CAPI.  
   
- If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
+ If you create an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Exchange> value specified and then create another <xref:System.Security.Cryptography.RSACryptoServiceProvider> object with the <xref:System.Security.Cryptography.KeyNumber.Signature> value specified, both keys will be placed in a single container if both objects specify the same key container name.  
   
- To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber> key pair.  
+ To create a key that is compatible with stong-name signing using the <xref:System.Security.Cryptography.RSACryptoServiceProvider> class, you must create a <xref:System.Security.Cryptography.KeyNumber.Signature> key pair.  
   
    
   
@@ -273,6 +278,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -323,6 +329,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -379,7 +386,7 @@
   
  The key does not match the encrypted data. However, the exception wording may not be accurate. For example, it may say <c>Not enough storage is available to process this command</c>.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="rgb " />is <see langword="null" />.</exception>
+          <paramref name="rgb" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to decrypt. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt" /></permission>
       </Docs>
     </Member>
@@ -391,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -444,6 +452,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -466,6 +478,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -496,6 +509,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -554,7 +568,7 @@
   
  The <paramref name="fOAEP" /> parameter is <see langword="true" /> and OAEP padding is not supported.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="rgb " />is <see langword="null" />.</exception>
+          <paramref name="rgb" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">
@@ -565,6 +579,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -618,6 +633,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -640,6 +659,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -685,6 +705,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -749,6 +770,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -787,6 +809,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -829,6 +852,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -872,6 +896,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -925,6 +950,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -949,6 +978,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -987,6 +1017,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
@@ -1005,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1058,6 +1090,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1104,6 +1137,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1128,6 +1165,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1181,6 +1219,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1232,6 +1271,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1295,6 +1335,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1353,6 +1394,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1398,6 +1440,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1419,7 +1462,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this property to `true` is equivalent to passing the <xref:System.Security.Cryptography.CspProviderFlags> flag to a <xref:System.Security.Cryptography.CspParameters> object. The <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> property applies to all code in the current application domain, whereas the <xref:System.Security.Cryptography.CspParameters> object applies only to classes that explicitly reference it. These settings are useful when impersonating or running under an account whose user profile is not loaded. Setting <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> affects the key store location only if <xref:System.Security.Cryptography.RSACryptoServiceProvider> is initialized with no parameters.  
+ Setting this property to `true` is equivalent to passing the <xref:System.Security.Cryptography.CspProviderFlags.UseMachineKeyStore> flag to a <xref:System.Security.Cryptography.CspParameters> object. The <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> property applies to all code in the current application domain, whereas the <xref:System.Security.Cryptography.CspParameters> object applies only to classes that explicitly reference it. These settings are useful when impersonating or running under an account whose user profile is not loaded. Setting <xref:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore%2A> affects the key store location only if <xref:System.Security.Cryptography.RSACryptoServiceProvider> is initialized with no parameters.  
   
    
   
@@ -1442,6 +1485,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1498,6 +1542,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1562,6 +1607,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

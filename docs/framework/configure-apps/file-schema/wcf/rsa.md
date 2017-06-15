@@ -2,7 +2,7 @@
 title: "&lt;rsa&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,7 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
   
 ## Syntax  
   
-```  
-  
+```xml  
 <rsa value = "String" />  
 ```  
   
@@ -54,7 +53,7 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
 ## Example  
  The following configuration code specifies the public key value of an X.509 certificate that is used to authenticate a server.  
   
-```  
+```xml  
 <identity>  
   <rsa value = "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>  
 </identity>  

@@ -21,7 +21,6 @@ Holds a set of members that are defined in markup, which apply to the x:Class of
 ## XAML Attribute Usage  
   
 ```  
-  
 <object x:Class="className">  
   <x:Members>  
     oneOrMoreMembers  

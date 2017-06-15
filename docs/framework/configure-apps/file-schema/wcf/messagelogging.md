@@ -2,7 +2,7 @@
 title: "&lt;messageLogging&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ This element defines the settings for the message-logging capabilities of Window
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
    <diagnostics>  
        <messageLogging logEntireMessage="Boolean"  
@@ -75,7 +74,7 @@ This element defines the settings for the message-logging capabilities of Window
   
  You need to create a trace listener to activate message tracing. The listener itself can be any listener that works with the <xref:System.Diagnostics> tracing architecture. The following example demonstrates how to create such a listener.  
   
-```  
+```xml  
 <system.diagnostics>  
     <sources>  
           <source name="System.ServiceModel" switchValue="Verbose">  
@@ -110,7 +109,7 @@ This element defines the settings for the message-logging capabilities of Window
   
 ## Example  
   
-```  
+```xml  
 <messageLogging logEntireMessage="true"  
     logMalformedMessages="true"  
     logMessagesAtServiceLevel="true"  

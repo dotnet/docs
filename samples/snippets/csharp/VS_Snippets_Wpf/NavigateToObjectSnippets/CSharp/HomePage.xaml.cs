@@ -1,7 +1,7 @@
 //<SnippetPageThatNavsToObjectCODEBEHIND>
-using System.Windows; // RoutedEventArgs
-using System.Windows.Controls; // Page
-using System.Windows.Media; // Colors
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace SDKSample
 {

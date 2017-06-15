@@ -2,7 +2,7 @@
 title: "How to: Trigger Menu Events for Toolbar Buttons | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +46,6 @@ manager: "wpickett"
     ' Add the event handler delegate.  
        AddHandler ToolBar1.ButtonClick, AddressOf Me.ToolBar1_ButtonClick  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -59,7 +58,6 @@ manager: "wpickett"
        toolBar1.ButtonClick +=   
           new ToolBarButtonClickEventHandler(this.toolBar1_ButtonClick);  
     }  
-  
     ```  
   
     ```cpp  
@@ -95,7 +93,6 @@ manager: "wpickett"
            MessageBox.Show("Third toolbar button clicked")  
        End Select  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -117,7 +114,6 @@ manager: "wpickett"
              break;  
        }  
     }  
-  
     ```  
   
     ```cpp  

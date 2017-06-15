@@ -35,7 +35,6 @@ public static class Console {
     public void WriteLine(bool value);  
     ...  
 }  
-  
 ```  
   
  Because only methods, constructors, and indexed properties can have parameters, only those members can be overloaded.  

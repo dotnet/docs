@@ -2,7 +2,7 @@
 title: "ICorDebugSymbolProvider::GetCodeRange Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,13 +23,11 @@ Gets the method start address and size given a relative virtual address (RVA) in
 ## Syntax  
   
 ```  
-  
 HRESULT GetCodeRange(  
    [in] ULONG32 codeRva,   
    [out] ULONG32* pCodeStartAddress,   
    [out] ULONG32* pCodeSize  
 );  
-  
 ```  
   
 #### Parameters  

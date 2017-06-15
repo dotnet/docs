@@ -111,13 +111,11 @@ Windows Registry Editor Version 5.00
   
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework]  
 "MDA"="1"  
-  
 ```  
   
  If the computer is running a 32-bit application on a 64-bit operating system, then the MDA key should be set like the following:  
   
 ```  
-  
       Windows Registry Editor Version 5.00   
   
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework]  
@@ -154,7 +152,7 @@ Windows Registry Editor Version 5.00
 ### Enabling and Disabling MDAs by Using Application-Specific Configuration Settings  
  You can enable, disable, and configure some assistants individually in the MDA configuration file for the application. To enable the use of an application configuration file for configuring MDAs, either the MDA registry key or the COMPLUS_MDA environment variable must be set. The application configuration file is typically located in the same directory as the application's executable (.exe) file. The file name takes the form *ApplicationName*.mda.config; for example, notepad.exe.mda.config. Assistants that are enabled in the application configuration file may have attributes or elements specifically designed to control that assistant's behavior. The following example shows how to enable and configure the [marshaling](../../../docs/framework/debug-trace-profile/marshaling-mda.md).  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <marshaling>  
@@ -173,7 +171,7 @@ Windows Registry Editor Version 5.00
   
  The following example shows how to enable multiple MDAs by using their default settings.  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <illegalPrepareConstrainedRegion />  

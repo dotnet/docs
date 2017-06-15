@@ -2,7 +2,7 @@
 title: "@ServiceHost | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,6 @@ Associates the factory used to produce the service host with the service to be h
 ## Syntax  
   
 ```  
-  
 <% @ServiceHost   
 Service = "Service, ServiceNamespace"   
 Factory = "Factory, FactoryNamespace"  
@@ -54,8 +53,8 @@ CodeBehind = "CodeBehind"%>
   
  To use you own custom service host factory instead of the default factory, just provide the type name in the [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive as follows:  
   
-```  
-<% @ServiceHost Factory=”DerivedFactory” Service=”MyService” %>  
+```xml  
+<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>  
 ```  
   
  Keep the factory implementations as light as possible. If you have lots of custom logic, your code is more reusable if you put that logic inside your host instead of inside the factory.  

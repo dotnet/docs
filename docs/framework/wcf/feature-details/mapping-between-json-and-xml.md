@@ -2,7 +2,7 @@
 title: "Mapping Between JSON and XML | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,13 +28,13 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
   
  To clarify the concept of a mapping, the following example is of a JSON document.  
   
-```  
+```json  
 {"product":"pencil","price":12}  
 ```  
   
  To read this JSON document using one of the readers previously mentioned, use the same sequence of <xref:System.Xml.XmlDictionaryReader> calls as you would to read the following XML document.  
   
-```  
+```xml  
 <root type="object">  
     <product type="string">pencil</product>  
     <price type="number">12</price>  

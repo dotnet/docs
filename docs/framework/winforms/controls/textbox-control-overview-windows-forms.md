@@ -2,7 +2,7 @@
 title: "TextBox Control Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,6 @@ Private Sub InitializeMyControl()
    ' Put some text into the control first.  
    TextBox1.Text = "This is a TextBox control."  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -43,7 +42,6 @@ private void InitializeMyControl() {
    // Put some text into the control first.  
    textBox1.Text = "This is a TextBox control.";  
 }  
-  
 ```  
   
 ```cpp  

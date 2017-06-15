@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -46,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,7 +74,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type " />parameter.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,7 +122,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type " />parameter.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -130,6 +133,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,15 +164,15 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The <paramref name="identity" /> parameter is not an <see cref="T:System.Security.Principal.IdentityReference" /> object.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type " />parameter.  
+        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.  
   
  -or-  
   
- An incorrect enumeration was passed to the <paramref name="inheritanceFlags " />parameter.  
+ An incorrect enumeration was passed to the <paramref name="inheritanceFlags" /> parameter.  
   
  -or-  
   
- An incorrect enumeration was passed to the <paramref name="propagationFlags " />parameter.</exception>
+ An incorrect enumeration was passed to the <paramref name="propagationFlags" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -179,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -210,15 +215,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="identity" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type " />parameter.  
+        <exception cref="T:System.ArgumentOutOfRangeException">An incorrect enumeration was passed to the <paramref name="type" /> parameter.  
   
  -or-  
   
- An incorrect enumeration was passed to the <paramref name="inheritanceFlags " />parameter.  
+ An incorrect enumeration was passed to the <paramref name="inheritanceFlags" /> parameter.  
   
  -or-  
   
- An incorrect enumeration was passed to the <paramref name="propagationFlags " />parameter.</exception>
+ An incorrect enumeration was passed to the <paramref name="propagationFlags" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="FileSystemRights">
@@ -229,6 +234,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

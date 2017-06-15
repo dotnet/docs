@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +140,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -355,6 +359,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -411,6 +416,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -477,6 +483,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -548,6 +555,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -565,14 +573,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an enumerable collection of directory information that matches a specified search pattern.</summary>
         <returns>An enumerable collection of directories that matches <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -623,6 +631,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -641,7 +650,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of directory information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of directories that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -649,7 +658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -710,6 +719,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -788,6 +798,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -805,14 +816,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an enumerable collection of file information that matches a search pattern.</summary>
         <returns>An enumerable collection of files that matches <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -873,6 +884,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -891,7 +903,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of file information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of files that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -899,7 +911,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -962,6 +974,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1023,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1040,14 +1054,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an enumerable collection of file system information that matches a specified search pattern.</summary>
         <returns>An enumerable collection of file system information objects that matches <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1098,6 +1112,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1116,7 +1131,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Returns an enumerable collection of file system information that matches a specified search pattern and search subdirectory option.</summary>
         <returns>An enumerable collection of file system information objects that matches <paramref name="searchPattern" /> and <paramref name="searchOption" />.</returns>
@@ -1124,7 +1139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1177,6 +1192,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1236,6 +1252,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the access control list (ACL) entries for the current directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
+  
+ For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAccessControl">
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.DirectorySecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.DirectorySecurity GetAccessControl() cil managed" />
@@ -1312,52 +1348,19 @@
   
  Exceptions  
   
- <list type="table">  
-<listheader>  
-<term> Exception type  
+ <list type="table"><listheader><term> Exception type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.SystemException" />  
+ </description></listheader><item><term><see cref="T:System.SystemException" /></term><description> The directory could not be found or modified.  
   
- </term>  
-<description> The directory could not be found or modified.  
+ </description></item><item><term><see cref="T:System.UnauthorizedAccessException" /></term><description> The current process does not have access to open the directory.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.UnauthorizedAccessException" />  
+ </description></item><item><term><see cref="T:System.IO.IOException" /></term><description> An I/O error occurred while opening the directory.  
   
- </term>  
-<description> The current process does not have access to open the directory.  
+ </description></item><item><term><see cref="T:System.PlatformNotSupportedException" /></term><description> The current operating system is not Microsoft Windows 2000 or later.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.IO.IOException" />  
-  
- </term>  
-<description> An I/O error occurred while opening the directory.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.PlatformNotSupportedException" />  
-  
- </term>  
-<description> The current operating system is not Microsoft Windows 2000 or later.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="T:System.UnauthorizedAccessException" />  
-  
- </term>  
-<description> The directory is read-only.  
+ </description></item><item><term><see cref="T:System.UnauthorizedAccessException" /></term><description> The directory is read-only.  
   
  -or-  
   
@@ -1367,9 +1370,7 @@
   
  The caller does not have the required permission.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1391,6 +1392,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1455,6 +1457,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1472,14 +1475,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns an array of directories in the current <see cref="T:System.IO.DirectoryInfo" /> matching the given search criteria.</summary>
         <returns>An array of type <see langword="DirectoryInfo" /> matching <paramref name="searchPattern" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1516,7 +1519,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="searchPattern " />contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="searchPattern" /> contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path encapsulated in the <see langword="DirectoryInfo" /> object is invalid (for example, it is on an unmapped drive).</exception>
@@ -1532,6 +1535,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1550,7 +1554,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</param>
         <summary>Returns an array of directories in the current <see cref="T:System.IO.DirectoryInfo" /> matching the given search criteria and using a value to determine whether to search subdirectories.</summary>
         <returns>An array of type <see langword="DirectoryInfo" /> matching <paramref name="searchPattern" />.</returns>
@@ -1558,7 +1562,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1597,7 +1601,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="searchPattern " />contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="searchPattern" /> contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1615,6 +1619,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1688,6 +1693,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1705,14 +1711,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Returns a file list from the current directory matching the given search pattern.</summary>
         <returns>An array of type <see cref="T:System.IO.FileInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -1777,7 +1783,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="searchPattern " />contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="searchPattern" /> contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The path is invalid (for example, it is on an unmapped drive).</exception>
@@ -1793,6 +1799,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1811,7 +1818,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</param>
         <summary>Returns a file list from the current directory matching the given search pattern and using a value to determine whether to search subdirectories.</summary>
         <returns>An array of type <see cref="T:System.IO.FileInfo" />.</returns>
@@ -1885,7 +1892,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="searchPattern " />contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="searchPattern" /> contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1903,6 +1910,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1965,6 +1973,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1982,14 +1991,14 @@
         <Parameter Name="searchPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <summary>Retrieves an array of strongly typed <see cref="T:System.IO.FileSystemInfo" /> objects representing the files and subdirectories that match the specified search criteria.</summary>
         <returns>An array of strongly typed <see langword="FileSystemInfo" /> objects matching the search criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -2033,7 +2042,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="searchPattern " />contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="searchPattern" /> contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
@@ -2049,6 +2058,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2067,7 +2077,7 @@
         <Parameter Name="searchOption" Type="System.IO.SearchOption" />
       </Parameters>
       <Docs>
-        <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
+        <param name="searchPattern">The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions. The default pattern is "*", which returns all files.</param>
         <param name="searchOption">One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <see cref="F:System.IO.SearchOption.TopDirectoryOnly" />.</param>
         <summary>Retrieves an array of <see cref="T:System.IO.FileSystemInfo" /> objects that represent the files and subdirectories matching the specified search criteria.</summary>
         <returns>An array of file system entries that match the search criteria.</returns>
@@ -2075,7 +2085,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `searchPattern` can be a combination of literal and wildcard characters, but doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
+ `searchPattern` can be a combination of literal and wildcard characters, but it doesn't support regular expressions. The following wildcard specifiers are permitted in `searchPattern`.  
   
 |Wildcard specifier|Matches|  
 |------------------------|-------------|  
@@ -2105,7 +2115,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="searchPattern " />contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="searchPattern" /> contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="searchPattern" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -2122,6 +2132,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2192,6 +2203,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2239,6 +2251,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2284,6 +2297,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2385,6 +2399,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2405,25 +2420,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetAccessControl">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the access control list (ACL) entries for the current directory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
-  
- For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

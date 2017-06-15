@@ -2,7 +2,7 @@
 title: "&lt;state&gt; of WCF, &lt;workflowInstanceQuery&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -77,8 +77,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
 ## Example  
  The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
-```  
-  
+```xml  
 <workflowInstanceQueries>  
     <workflowInstanceQuery>  
       <states>  
@@ -86,7 +85,6 @@ Represents a collection of subscribed states from the tracked workflow instance 
       </states>  
     </workflowInstanceQuery>  
 </workflowInstanceQueries>  
-  
 ```  
   
 ## See Also  

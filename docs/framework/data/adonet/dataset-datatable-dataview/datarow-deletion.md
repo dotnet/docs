@@ -2,7 +2,7 @@
 title: "DataRow Deletion | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,6 @@ There are two methods you can use to delete a <xref:System.Data.DataRow> object 
   
 ```vb  
 workTable.Rows.Remove(workRow)  
-  
 ```  
   
 ```csharp  
@@ -37,7 +36,6 @@ workTable.Rows.Remove(workRow);
   
 ```vb  
 workRow.Delete  
-  
 ```  
   
 ```csharp  

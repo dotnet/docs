@@ -6,11 +6,21 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a dataflow block.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Complete">
@@ -22,14 +32,22 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Signals to the <see cref="T:System.Threading.Tasks.Dataflow.IDataflowBlock" /> that it should not accept nor produce any more messages nor consume any more postponed messages.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete%2A> has been called on a dataflow block, that block will complete, and its <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> task will enter a final state after it has processed all previously available data. <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete%2A> will not block waiting for completion to occur, but rather will initiate the request; to wait for completion to occur, the <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> task may be used.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Completion">
@@ -41,14 +59,22 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a  <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation and completion of the dataflow block.</summary>
+        <value>The task.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A dataflow block is considered completed when it is not currently processing a message and when it has guaranteed that it will not process any more messages. The returned <xref:System.Threading.Tasks.Task> will transition to a completed state when the associated block has completed. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state when the block completes its processing successfully according to the dataflow block’s defined semantics. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Faulted> state when the dataflow block has completed processing prematurely due to an unhandled exception, and it will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Canceled> state when the dataflow block has completed processing prematurely due to receiving a cancellation request. If the task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, its `Exception` property will return an <xref:System.AggregateException> containing the one or more exceptions that caused the block to fail.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fault">
@@ -60,6 +86,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -68,9 +95,17 @@
         <Parameter Name="exception" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exception">The  <see cref="T:System.Exception" /> that caused the faulting.</param>
+        <summary>Causes the <see cref="T:System.Threading.Tasks.Dataflow.IDataflowBlock" /> to complete in a  <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Fault%2A> has been called on a dataflow block, that block will complete, and its <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> task will enter a final state. Faulting a block, as with canceling a block, causes buffered messages (unprocessed input messages as well as unoffered output messages) to be lost.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

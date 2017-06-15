@@ -200,11 +200,39 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="maxBufferSize " /> is smaller than zero.</exception>
+          <paramref name="maxBufferSize" /> is smaller than zero.</exception>
         <exception cref="T:System.ObjectDisposedException">The message is closed.</exception>
         <exception cref="T:System.InvalidOperationException">The message has been copied, read or written.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to create a new copy of a message ready for sending.  
+  
+ When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.  
+  
+   
+  
+## Examples  
+ The following code example shows a client that uses the channel factory to send a message and read the reply.  
+  
+ [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
+ [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMessage">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message CreateMessage (System.ServiceModel.Channels.MessageVersion version, string action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message CreateMessage(class System.ServiceModel.Channels.MessageVersion version, string action) cil managed" />
@@ -669,6 +697,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBody&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the body of this <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After a message is created, the message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. Because the body of a message is a stream, it can only be written once, or read once.  
+  
+ Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.  
+  
+   
+  
+## Examples  
+ The following code example shows a client that uses the channel factory to send a message and read the reply.  
+  
+ [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
+ [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetBody&lt;T&gt;">
       <MemberSignature Language="C#" Value="public T GetBody&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetBody&lt;T&gt;() cil managed" />
@@ -1313,7 +1369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read, written, or copied when in the <xref:System.ServiceModel.Channels.MessageState> state. Other states are <xref:System.ServiceModel.Channels.MessageState>, <xref:System.ServiceModel.Channels.MessageState> and <xref:System.ServiceModel.Channels.MessageState>, which means that the respective action has been performed already once.  
+ Because the body of a <xref:System.ServiceModel.Channels.Message> object is a stream, it can only be read or written once. This is enforced by maintaining the current state of the <xref:System.ServiceModel.Channels.Message> object. A <xref:System.ServiceModel.Channels.Message> object can be read, written, or copied when in the <xref:System.ServiceModel.Channels.MessageState.Created> state. Other states are <xref:System.ServiceModel.Channels.MessageState.Read>, <xref:System.ServiceModel.Channels.MessageState.Written> and <xref:System.ServiceModel.Channels.MessageState.Copied>, which means that the respective action has been performed already once.  
   
  ]]></format>
         </remarks>
@@ -1400,6 +1456,24 @@
         <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteBody">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes the body element to XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method writes the body contents as well as the start and end tags of the element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteBody">
       <MemberSignature Language="C#" Value="public void WriteBody (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBody(class System.Xml.XmlDictionaryWriter writer) cil managed" />
@@ -1484,11 +1558,29 @@
         <summary>Serializes the body content using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer " />is <see langword="null" />.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The message is closed.</exception>
         <exception cref="T:System.InvalidOperationException">The message has been copied, read or written.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes the entire message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method serializes the entire message. Once a message is written, it cannot be rewritten unless there is a <xref:System.ServiceModel.Channels.MessageBuffer> for the message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteMessage">
       <MemberSignature Language="C#" Value="public void WriteMessage (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMessage(class System.Xml.XmlDictionaryWriter writer) cil managed" />
@@ -1624,100 +1716,8 @@
         <summary>Serializes the start envelope using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer " />is <see langword="null" />.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetBody&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the body of this <see cref="T:System.ServiceModel.Channels.Message" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After a message is created, the message body can be read using the <xref:System.ServiceModel.Channels.Message.GetBody%2A> methods on the returned message. The returned object encapsulates all the child elements within the `Body` element. Because the body of a message is a stream, it can only be written once, or read once.  
-  
- Use the <xref:System.ServiceModel.Channels.Message.GetBody%60%601%28System.Runtime.Serialization.XmlObjectSerializer%29> overload when working with JSON messages; the <xref:System.ServiceModel.Channels.Message.GetBody%60%601> overload does not work.  
-  
-   
-  
-## Examples  
- The following code example shows a client that uses the channel factory to send a message and read the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteMessage">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes the entire message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method serializes the entire message. Once a message is written, it cannot be rewritten unless there is a <xref:System.ServiceModel.Channels.MessageBuffer> for the message.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteBody">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes the body element to XML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes the body contents as well as the start and end tags of the element.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateMessage">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a message.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is used to create a new copy of a message ready for sending.  
-  
- When working with JSON messages use the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%2CSystem.Runtime.Serialization.XmlObjectSerializer%29> method, the <xref:System.ServiceModel.Channels.Message.CreateMessage%28System.ServiceModel.Channels.MessageVersion%2CSystem.String%2CSystem.Object%29> method does not work with JSON messages.  
-  
-   
-  
-## Examples  
- The following code example shows a client that uses the channel factory to send a message and read the reply.  
-  
- [!code-csharp[Message#0](~/samples/snippets/csharp/VS_Snippets_CFX/message/cs/client.cs#0)]
- [!code-vb[Message#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/message/vb/client.vb#0)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

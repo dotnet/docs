@@ -2,7 +2,7 @@
 title: "Request-Reply Correlation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,6 @@ SendReply ReplyToStartOrder = new SendReply
 };  
   
 // Construct a workflow using StartOrder and ReplyToStartOrder.  
-  
 ```  
   
 ### Explicitly Initializing Request-Reply Correlation  

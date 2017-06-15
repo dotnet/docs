@@ -2,7 +2,7 @@
 title: "How to: Use the ASP.NET Membership Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -120,13 +120,12 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
           </behavior>  
        </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
 ## Example  
  The following code shows the configuration for a service that uses the ASP membership feature.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
@@ -159,7 +158,6 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
     </bindings>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

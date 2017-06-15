@@ -2,7 +2,7 @@
 title: "&lt;callbackTimeouts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies the timeout value when flowing transactions from server to client.in a
   
 ## Syntax  
   
-```  
-  
+```xml  
 <callbackTimeOuts transactionTimeout="TimeSpan" />  
 ```  
   
@@ -41,7 +40,7 @@ Specifies the timeout value when flowing transactions from server to client.in a
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time within which transactions must complete or be automatically terminated. The default is “00:00:00”.|  
+|`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time within which transactions must complete or be automatically terminated. The default is "00:00:00".|  
   
 ### Child Elements  
  None.  

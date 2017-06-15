@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Operators Listed by Functionality (Visual Basic)
-See one of the categories listed below, or open this portion of the Help table of contents to see an alphabetical list of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] operators.  
+See one of the categories listed below, or open this portion of the Help table of contents to see an alphabetical list of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] operators.  
   
 ## Categories of Operators  
   

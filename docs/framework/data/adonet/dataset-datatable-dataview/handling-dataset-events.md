@@ -2,7 +2,7 @@
 title: "Handling DataSet Events | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,6 @@ Private Shared Sub DataSetMergeFailed(  _
   Console.WriteLine("Merge failed for table " & args.Table.TableName)  
   Console.WriteLine("Conflict = " & args.Conflict)  
 End Sub  
-  
 ```  
   
 ```csharp  

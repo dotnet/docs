@@ -2,7 +2,7 @@
 title: "&lt;system.diagnostics&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,9 +34,9 @@ Specifies trace listeners that collect, store, and route messages and the level 
   
 ## Syntax  
   
-```  
-\<system.diagnostics>   
-\</system.diagnostics>  
+```xml  
+<system.diagnostics>   
+</system.diagnostics>  
 ```  
   
 ## Attributes and Elements  
@@ -68,9 +68,9 @@ Specifies trace listeners that collect, store, and route messages and the level 
 > [!NOTE]
 >  In the .NET Framework version 2.0, you can use text to specify the value for a switch. For example, you can specify `true` for a <xref:System.Diagnostics.BooleanSwitch> or use the text representing an enumeration value such as `Error` for a <xref:System.Diagnostics.TraceSwitch>. The line `<add name="myTraceSwitch" value="Error" />` is equivalent to `<add name="myTraceSwitch" value="1" />`.  
   
-```  
+```xml  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <switches>  
          <add name="General" value="4" />  
       </switches>  
@@ -79,7 +79,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
             <add name="myListener" type="System.Diagnostics.TextWriterTraceListener, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" initializeData="MyListener.log" traceOutputOptions="ProcessId, LogicalOperationStack, Timestamp, ThreadId, Callstack, DateTime" />  
          </listeners>  
       </trace>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

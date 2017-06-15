@@ -1,6 +1,8 @@
 ---
 uid: System.Linq
-author: "BillWagner"
-ms.author: "wiwagn"
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
 manager: "wpickett"
 ---

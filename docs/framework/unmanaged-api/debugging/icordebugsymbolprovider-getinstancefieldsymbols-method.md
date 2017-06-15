@@ -2,7 +2,7 @@
 title: "ICorDebugSymbolProvider::GetInstanceFieldSymbols Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,7 +23,6 @@ Gets the instance field symbols that correspond to a typespec signature.
 ## Syntax  
   
 ```  
-  
 HRESULT GetInstanceFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
@@ -31,7 +30,6 @@ HRESULT GetInstanceFieldSymbols(
    [out] ULONG32 *pcFetchedSymbols,  
    [out, size_is(cRequestedSymbols), length_is(*pcFetchedSymbols)] ICorDebugInstanceFieldSymbol *pSymbols[]  
 );  
-  
 ```  
   
 #### Parameters  

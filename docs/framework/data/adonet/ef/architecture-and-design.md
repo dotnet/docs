@@ -2,7 +2,7 @@
 title: "Architecture and Design | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -326,7 +326,7 @@ ORDER BY sk1, sk2, ...
 ### Set Operations  
  The set operations DbUnionAllExpression, DbExceptExpression, and DbIntersectExpression are processed by the method VisitSetOpExpression. It creates a SqlBuilder of the shape  
   
-```  
+```xml  
 <leftSqlSelectStatement> <setOp> <rightSqlSelectStatement>  
 ```  
   

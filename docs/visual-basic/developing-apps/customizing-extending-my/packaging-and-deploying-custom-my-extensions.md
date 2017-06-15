@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Packaging and deploying custom My extensions (Visual Basic)
-Visual Basic provides an easy way for you to deploy your custom `My` namespace extensions by using Visual Studio templates. If you are creating a project template for which your `My` extensions are an integral part of the new project type, you can just include your custom `My` extension code with the project when you export the template. For more information about exporting project templates, see [How to: Create Project Templates](http://msdn.microsoft.com/library/a1a6999d-a34c-48a8-b1cf-027eb5c76398).  
+Visual Basic provides an easy way for you to deploy your custom `My` namespace extensions by using Visual Studio templates. If you are creating a project template for which your `My` extensions are an integral part of the new project type, you can just include your custom `My` extension code with the project when you export the template. For more information about exporting project templates, see [How to: Create Project Templates](/visualstudio/ide/how-to-create-project-templates).  
   
  If your custom `My` extension is in a single code file, you can export the file as an item template that users can add to any type of Visual Basic project. You can then customize the item template to enable additional capabilities and behavior for your custom `My` extension in a Visual Basic project. Those capabilities include the following:  
   
@@ -52,7 +52,7 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
  The first step in creating a deployment package for a custom `My` extension is to create the extension as a single code file. For details and guidance about how to create a custom `My` extension, see [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md).  
   
 ## Export a My namespace extension as an item template  
- After you have a code file that includes your `My` namespace extension, you can export the code file as a Visual Studio item template. For instructions on how to export a file as a Visual Studio item template, see [How to: Create Item Templates](http://msdn.microsoft.com/library/77bc53d4-d607-4820-a032-7e3b365891b5).  
+ After you have a code file that includes your `My` namespace extension, you can export the code file as a Visual Studio item template. For instructions on how to export a file as a Visual Studio item template, see [How to: Create Item Templates](/visualstudio/ide/how-to-create-item-templates).  
   
 > [!NOTE]
 >  If your `My` namespace extension has a dependency on a particular assembly, you can customize your item template to automatically install your `My` namespace extension when a reference to that assembly is added. As a result, you will want to exclude that assembly reference when you export the code file as a Visual Studio item template.  
@@ -65,7 +65,7 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
   
  For example, the following XML shows the contents of a CustomData file that will add the template item to the My Extensions folder of a Visual Basic project when a reference to the Microsoft.VisualBasic.PowerPacks.Vs.dll assembly is added to the project.  
   
-```  
+```xml  
 <VBMyExtensionTemplate   
     ID="Microsoft.VisualBasic.Samples.MyExtensions.MyPrinterInfo"   
     Version="1.0.0.0"  
@@ -84,7 +84,7 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
 ### Add the \<CustomDataSignature> element to the .vstemplate file  
  To identify your Visual Studio item template as a `My` namespace extension, you must also modify the .vstemplate file for your item template. You must add a `<CustomDataSignature>` element to the `<TemplateData>` element. The `<CustomDataSignature>` element must contain the text `Microsoft.VisualBasic.MyExtension`, as shown in the following example.  
   
-```  
+```xml  
 <CustomDataSignature>Microsoft.VisualBasic.MyExtension</CustomDataSignature>  
 ```  
   
@@ -92,7 +92,7 @@ Visual Basic provides an easy way for you to deploy your custom `My` namespace e
   
  The following example shows the contents of a .vstemplate file that has the `<CustomDataSignature>` element added.  
   
-```  
+```xml  
 <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
   <TemplateData>  
     <DefaultName>MyCustomExtensionModule.vb</DefaultName>  

@@ -2,7 +2,7 @@
 title: "How to: Determine Which TreeView Node Was Clicked (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +38,6 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
        ' Determine by checking the Node property of the TreeViewEventArgs.  
        MessageBox.Show(e.Node.Text)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -48,7 +47,6 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
        // Determine by checking the Text property.  
        MessageBox.Show(e.Node.Text);  
     }  
-  
     ```  
   
     ```cpp  

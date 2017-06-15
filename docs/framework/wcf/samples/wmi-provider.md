@@ -2,7 +2,7 @@
 title: "WMI Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,13 +24,12 @@ This sample demonstrates how to gather data from [!INCLUDE[indigo1](../../../../
   
  The built-in WMI provider is activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration:  
   
-```  
+```xml  
 <system.serviceModel>  
     ...  
     <diagnostics wmiProviderEnabled="true" />  
     ...  
 </system.serviceModel>  
-  
 ```  
   
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
@@ -47,7 +46,6 @@ This sample demonstrates how to gather data from [!INCLUDE[indigo1](../../../../
   
 ```  
 cscript EnumerateServices.js  
-  
 ```  
   
  The script accesses the instrumentation contained in the service and produces the following output:  
@@ -117,12 +115,10 @@ cscript EnumerateCustomObjects.js
  The script accesses the user-defined instrumentation contained in the services and produces the following output:  
   
 ```  
-  
 1 WMIObject(s) found.  
 |-PID:           30285bfd-9d66-4c4e-9be2-310499c5cef5  
 |-InstanceId:    3839  
 |-WMIInfo:       User Defined WMI Information.  
-  
 ```  
   
  The output shows that there is a single service running on the computer. The service exposes one endpoint that implements the `ICalculator` contract. The settings of the behavior and binding that are implemented by the endpoint are listed as the sum of individual elements of the messaging stack.  

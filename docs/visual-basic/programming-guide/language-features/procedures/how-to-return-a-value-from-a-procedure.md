@@ -58,7 +58,7 @@ A `Function` procedure returns a value to the calling code either by executing a
   
 1.  In at least one place in the `Function` procedure, assign a value to the procedure's name.  
   
-2.  When you execute an `Exit Function` or `End Function` statement, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] returns the value most recently assigned to the procedure's name.  
+2.  When you execute an `Exit Function` or `End Function` statement, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] returns the value most recently assigned to the procedure's name.  
   
 3.  You can have more than one `Exit Function` statement in the same procedure, and you can mix `Return` and `Exit Function` statements in the same procedure.  
   

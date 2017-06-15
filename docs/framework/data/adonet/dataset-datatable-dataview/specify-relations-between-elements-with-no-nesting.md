@@ -2,7 +2,7 @@
 title: "Specify Relations Between Elements with No Nesting | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,7 +20,7 @@ When elements are not nested, no implicit relations are created. You can, howeve
   
  The following example shows an XML Schema in which the **msdata:Relationship** annotation is specified between the **Order** and **OrderDetail** elements, which are not nested. The **msdata:Relationship** annotation is specified as the child element of the **Schema** element.  
   
-```  
+```xml  
 <xs:schema id="MyDataSet" xmlns=""   
              xmlns:xs="http://www.w3.org/2001/XMLSchema"   
              xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  

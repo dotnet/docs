@@ -1,9 +1,9 @@
 Imports Microsoft.VisualBasic
 Imports System
-Imports System.Windows 'uielement
-Imports System.Windows.Media 'visual operations
-Imports System.Windows.Media.Animation 'animation effect stuff
-Imports System.Windows.Controls 'Canvas
+Imports System.Windows
+Imports System.Windows.Media
+Imports System.Windows.Media.Animation
+Imports System.Windows.Controls
 Imports System.Collections.Generic
 Imports System.Windows.Input
 Imports System.Security.Permissions

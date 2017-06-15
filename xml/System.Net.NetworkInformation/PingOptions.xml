@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Ping</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -55,6 +56,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,7 +140,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="ttl " />is less than or equal to zero.</exception>
+          <paramref name="ttl" /> is less than or equal to zero.</exception>
       </Docs>
     </Member>
     <Member MemberName="DontFragment">
@@ -148,6 +151,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,7 +173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications use this property to control whether data sent to a remote host by the <xref:System.Net.NetworkInformation.Ping> class can be divided into multiple packets.  This option is useful if you want to test the maximum transmission unit (MTU) of the routers and gateways used to transmit the packet. If this property is `true` and the data sent to the remote host is larger then the MTU of a gateway or router between the sender and the remote host, the ping operation fails with status <xref:System.Net.NetworkInformation.IPStatus>.  
+ Applications use this property to control whether data sent to a remote host by the <xref:System.Net.NetworkInformation.Ping> class can be divided into multiple packets.  This option is useful if you want to test the maximum transmission unit (MTU) of the routers and gateways used to transmit the packet. If this property is `true` and the data sent to the remote host is larger then the MTU of a gateway or router between the sender and the remote host, the ping operation fails with status <xref:System.Net.NetworkInformation.IPStatus.PacketTooBig>.  
   
    
   
@@ -191,6 +195,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

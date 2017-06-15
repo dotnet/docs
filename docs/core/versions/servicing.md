@@ -1,5 +1,5 @@
 ---
-title: .NET Core Servicing
+title: .NET Core Servicing | Microsoft Docs
 description: .NET Core Servicing
 keywords: .NET, .NET Core
 ms.date: 06/20/2016
@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 48682290-4fd7-40dc-8a7b-bac528eba361
+redirect_url: /dotnet/articles/core/versions/index
 ---
 
 # 🔧 .NET Core Servicing

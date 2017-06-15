@@ -2,7 +2,7 @@
 title: "How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,14 +34,12 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
     DateTimePicker1.Format = DateTimePickerFormat.Custom  
     ' Display the date as "Mon 27 Feb 2012".  
     DateTimePicker1.CustomFormat = "ddd dd MMM yyyy"  
-  
     ```  
   
     ```csharp  
     dateTimePicker1.Format = DateTimePickerFormat.Custom;  
     // Display the date as "Mon 27 Feb 2012".  
     dateTimePicker1.CustomFormat = "ddd dd MMM yyyy";  
-  
     ```  
   
     ```cpp  
@@ -56,12 +54,10 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
     ```vb  
     DateTimePicker1.CustomFormat = "'Today is:' hh:mm:ss dddd MMMM dd, yyyy"  
-  
     ```  
   
     ```csharp  
     dateTimePicker1.CustomFormat = "'Today is:' hh:mm:ss dddd MMMM dd, yyyy";  
-  
     ```  
   
     ```cpp  

@@ -7,6 +7,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -54,6 +55,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +104,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,7 +136,7 @@
 ## Remarks  
  The absolute value of a <xref:System.Double> is its numeric value without its sign. For example, the absolute value of both 1.2e03 and -1.2e03 is 1.2e03.  
   
- If `value` is equal to <xref:System.Double> or <xref:System.Double>, the return value is <xref:System.Double>. If `value` is equal to <xref:System.Double>, the return value is <xref:System.Double>.  
+ If `value` is equal to <xref:System.Double.NegativeInfinity> or <xref:System.Double.PositiveInfinity>, the return value is <xref:System.Double.PositiveInfinity>. If `value` is equal to <xref:System.Double.NaN>, the return value is <xref:System.Double.NaN>.  
   
    
   
@@ -157,6 +160,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -207,6 +211,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +262,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -307,6 +313,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -362,6 +369,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -393,7 +401,7 @@
 ## Remarks  
  The absolute value of a <xref:System.Single> is its numeric value without its sign. For example, the absolute value of both 1.2e-03 and -1.2e03 is 1.2e03.  
   
- If `value` is equal to <xref:System.Single> or <xref:System.Single>, the return value is <xref:System.Single>. If `value` is equal to <xref:System.Single>, the return value is <xref:System.Single>.  
+ If `value` is equal to <xref:System.Single.NegativeInfinity> or <xref:System.Single.PositiveInfinity>, the return value is <xref:System.Single.PositiveInfinity>. If `value` is equal to <xref:System.Single.NaN>, the return value is <xref:System.Single.NaN>.  
   
    
   
@@ -417,6 +425,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -475,6 +484,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -535,6 +545,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -595,6 +606,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -677,6 +689,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -703,6 +719,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Ceiling">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the smallest integer greater than or equal to the specified number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Ceiling">
       <MemberSignature Language="C#" Value="public static decimal Ceiling (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Ceiling(valuetype System.Decimal d) cil managed" />
@@ -713,6 +748,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -761,6 +797,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -804,6 +841,312 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static byte Clamp (byte value, byte min, byte max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 Clamp(unsigned int8 value, unsigned int8 min, unsigned int8 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Byte,System.Byte,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+        <Parameter Name="min" Type="System.Byte" />
+        <Parameter Name="max" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static decimal Clamp (decimal value, decimal min, decimal max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Clamp(valuetype System.Decimal value, valuetype System.Decimal min, valuetype System.Decimal max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Decimal,System.Decimal,System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Decimal" />
+        <Parameter Name="min" Type="System.Decimal" />
+        <Parameter Name="max" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static double Clamp (double value, double min, double max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Clamp(float64 value, float64 min, float64 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Double,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="min" Type="System.Double" />
+        <Parameter Name="max" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static short Clamp (short value, short min, short max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int16 Clamp(int16 value, int16 min, int16 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Int16,System.Int16,System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+        <Parameter Name="min" Type="System.Int16" />
+        <Parameter Name="max" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static int Clamp (int value, int min, int max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Clamp(int32 value, int32 min, int32 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="min" Type="System.Int32" />
+        <Parameter Name="max" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static long Clamp (long value, long min, long max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Clamp(int64 value, int64 min, int64 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Int64,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="min" Type="System.Int64" />
+        <Parameter Name="max" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static sbyte Clamp (sbyte value, sbyte min, sbyte max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int8 Clamp(int8 value, int8 min, int8 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.SByte,System.SByte,System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.SByte" />
+        <Parameter Name="min" Type="System.SByte" />
+        <Parameter Name="max" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static float Clamp (float value, float min, float max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Clamp(float32 value, float32 min, float32 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="min" Type="System.Single" />
+        <Parameter Name="max" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static ushort Clamp (ushort value, ushort min, ushort max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 Clamp(unsigned int16 value, unsigned int16 min, unsigned int16 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.UInt16,System.UInt16,System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt16" />
+        <Parameter Name="min" Type="System.UInt16" />
+        <Parameter Name="max" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static uint Clamp (uint value, uint min, uint max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 Clamp(unsigned int32 value, unsigned int32 min, unsigned int32 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.UInt32,System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="min" Type="System.UInt32" />
+        <Parameter Name="max" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public static ulong Clamp (ulong value, ulong min, ulong max);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Clamp(unsigned int64 value, unsigned int64 min, unsigned int64 max) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Clamp(System.UInt64,System.UInt64,System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="min" Type="System.UInt64" />
+        <Parameter Name="max" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Cos">
       <MemberSignature Language="C#" Value="public static double Cos (double d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Cos(float64 d) cil managed" />
@@ -814,6 +1157,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -870,6 +1214,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -928,6 +1273,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -976,6 +1325,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -1020,6 +1373,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1065,6 +1419,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1113,6 +1468,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Floor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the largest integer less than or equal to the specified number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Floor">
       <MemberSignature Language="C#" Value="public static decimal Floor (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Floor(valuetype System.Decimal d) cil managed" />
@@ -1123,6 +1497,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1171,6 +1546,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1224,6 +1600,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1292,6 +1669,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1318,56 +1696,17 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the natural (base <see langword="e" />) logarithm of a specified number.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" /> parameter  
+ <list type="table"><listheader><term><paramref name="d" /> parameter  
   
- </term>  
-<description> Return value  
+ </term><description> Return value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Positive  
+ </description></listheader><item><term> Positive  
   
- </term>  
-<description> The natural logarithm of <paramref name="d" />; that is, ln <paramref name="d" />, or log e<paramref name="d" />  
+ </term><description> The natural logarithm of <paramref name="d" />; that is, ln <paramref name="d" />, or log e <paramref name="d" /></description></item><item><term> Zero  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term> Negative  
   
- </term>  
-<description> <see cref="F:System.Double.NegativeInfinity" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Negative  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1396,6 +1735,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1419,173 +1759,93 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the logarithm of a specified number in a specified base.</summary>
         <returns>One of the values in the following table. (+Infinity denotes <see cref="F:System.Double.PositiveInfinity" />, -Infinity denotes <see cref="F:System.Double.NegativeInfinity" />, and NaN denotes <see cref="F:System.Double.NaN" />.)  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="a" />  
+ <list type="table"><listheader><term><paramref name="a" /></term><description><paramref name="newBase" /></description><description> Return value  
   
- </term>  
-<description> <paramref name="newBase" />  
+ </description></listheader><item><term><paramref name="a" />&gt; 0  
   
- </description>  
-<description> Return value  
+ </term><description> (0 &lt;<paramref name="newBase" />&lt; 1) -or-(<paramref name="newBase" />&gt; 1)  
   
- </description>  
-</listheader>  
-<item>  
-<term> <paramref name="a" />&gt; 0  
+ </description><description> lognewBase(a)  
   
- </term>  
-<description> (0 &lt;<paramref name="newBase" />&lt; 1) -or-(<paramref name="newBase" />&gt; 1)  
+ </description></item><item><term><paramref name="a" />&lt; 0  
   
- </description>  
-<description> lognewBase(a)  
+ </term><description> (any value)  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" />&lt; 0  
+ </description><description> NaN  
   
- </term>  
-<description> (any value)  
+ </description></item><item><term> (any value)  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" />&lt; 0  
   
- </description>  
-</item>  
-<item>  
-<term> (any value)  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" />&lt; 0  
+ </description></item><item><term><paramref name="a" /> != 1  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> != 1  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = 0  
+ </description></item><item><term><paramref name="a" /> != 1  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = +Infinity  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> != 1  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = +Infinity  
+ </description></item><item><term><paramref name="a" /> = NaN  
   
- </description>  
-<description> NaN  
+ </term><description> (any value)  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = NaN  
+ </description><description> NaN  
   
- </term>  
-<description> (any value)  
+ </description></item><item><term> (any value)  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = NaN  
   
- </description>  
-</item>  
-<item>  
-<term> (any value)  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = NaN  
+ </description></item><item><term> (any value)  
   
- </description>  
-<description> NaN  
+ </term><description><paramref name="newBase" /> = 1  
   
- </description>  
-</item>  
-<item>  
-<term> (any value)  
+ </description><description> NaN  
   
- </term>  
-<description> <paramref name="newBase" /> = 1  
+ </description></item><item><term><paramref name="a" /> = 0  
   
- </description>  
-<description> NaN  
+ </term><description> 0 &lt;<paramref name="newBase" />&lt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 0  
+ </description><description> +Infinity  
   
- </term>  
-<description> 0 &lt;<paramref name="newBase" />&lt; 1  
+ </description></item><item><term><paramref name="a" /> = 0  
   
- </description>  
-<description> +Infinity  
+ </term><description><paramref name="newBase" />&gt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 0  
+ </description><description> -Infinity  
   
- </term>  
-<description> <paramref name="newBase" />&gt; 1  
+ </description></item><item><term><paramref name="a" /> =  +Infinity  
   
- </description>  
-<description> -Infinity  
+ </term><description> 0 &lt;<paramref name="newBase" />&lt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> =  +Infinity  
+ </description><description> -Infinity  
   
- </term>  
-<description> 0 &lt;<paramref name="newBase" />&lt; 1  
+ </description></item><item><term><paramref name="a" /> =  +Infinity  
   
- </description>  
-<description> -Infinity  
+ </term><description><paramref name="newBase" />&gt; 1  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> =  +Infinity  
+ </description><description> +Infinity  
   
- </term>  
-<description> <paramref name="newBase" />&gt; 1  
+ </description></item><item><term><paramref name="a" /> = 1  
   
- </description>  
-<description> +Infinity  
+ </term><description><paramref name="newBase" /> = 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 1  
+ </description><description> 0  
   
- </term>  
-<description> <paramref name="newBase" /> = 0  
+ </description></item><item><term><paramref name="a" /> = 1  
   
- </description>  
-<description> 0  
+ </term><description><paramref name="newBase" /> = +Infinity  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="a" /> = 1  
+ </description><description> 0  
   
- </term>  
-<description> <paramref name="newBase" /> = +Infinity  
-  
- </description>  
-<description> 0  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1610,6 +1870,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1636,56 +1897,19 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <summary>Returns the base 10 logarithm of a specified number.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" /> parameter  
+ <list type="table"><listheader><term><paramref name="d" /> parameter  
   
- </term>  
-<description> Return value  
+ </term><description> Return value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Positive  
+ </description></listheader><item><term> Positive  
   
- </term>  
-<description> The base 10 log of <paramref name="d" />; that is, log 10<paramref name="d" />.  
+ </term><description> The base 10 log of <paramref name="d" />; that is, log 10<paramref name="d" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <see cref="F:System.Double.NegativeInfinity" />  
+ </term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term> Negative  
   
- </description>  
-</item>  
-<item>  
-<term> Negative  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equal to <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equal to <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1714,6 +1938,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1765,6 +1990,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1816,6 +2042,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1867,6 +2094,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1918,6 +2146,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1969,6 +2198,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2020,6 +2250,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2074,6 +2305,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2125,6 +2357,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2179,6 +2412,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2233,6 +2467,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2287,6 +2522,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2338,6 +2574,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2389,6 +2626,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2440,6 +2678,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2491,6 +2730,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2542,6 +2782,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2593,6 +2834,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2647,6 +2889,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2698,6 +2941,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2752,6 +2996,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2806,6 +3051,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2860,6 +3106,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2905,6 +3152,7 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2969,1469 +3217,6 @@ Modulus = (Math.Abs(dividend) - (Math.Abs(divisor) *
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static decimal Round (decimal d);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Decimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Decimal" />
-      </Parameters>
-      <Docs>
-        <param name="d">A decimal number to be rounded.</param>
-        <summary>Rounds a decimal value to the nearest integral value.</summary>
-        <returns>The integer nearest parameter <paramref name="d" />. If the fractional component of <paramref name="d" /> is halfway between two integers, one of which is even and the other odd, the even number is returned. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static double Round (double a);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 a) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="a">A double-precision floating-point number to be rounded.</param>
-        <summary>Rounds a double-precision floating-point value to the nearest integral value.</summary>
-        <returns>The integer nearest <paramref name="a" />. If the fractional component of <paramref name="a" /> is halfway between two integers, one of which is even and the other odd, then the even number is returned. Note that this method returns a <see cref="T:System.Double" /> instead of an integral type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <block subset="none" type="usage">
-          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
-  
- [!code-csharp[System.Math.Round#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round2.cs#1)]
- [!code-vb[System.Math.Round#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round2.vb#1)]</para>
-        </block>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static decimal Round (decimal d, int decimals);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, int32 decimals) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.Int32)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Decimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Decimal" />
-        <Parameter Name="decimals" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="d">A decimal number to be rounded.</param>
-        <param name="decimals">The number of decimal places in the return value.</param>
-        <summary>Rounds a decimal value to a specified number of fractional digits.</summary>
-        <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
-        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static decimal Round (decimal d, MidpointRounding mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, valuetype System.MidpointRounding mode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.MidpointRounding)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Decimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Decimal" />
-        <Parameter Name="mode" Type="System.MidpointRounding" />
-      </Parameters>
-      <Docs>
-        <param name="d">A decimal number to be rounded.</param>
-        <param name="mode">Specification for how to round <c>d</c> if it is midway between two other numbers.</param>
-        <summary>Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
-        <returns>The integer nearest <paramref name="d" />. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
-        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static double Round (double value, int digits);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value, int32 digits) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.Int32)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="digits" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="value">A double-precision floating-point number to be rounded.</param>
-        <param name="digits">The number of fractional digits in the return value.</param>
-        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits.</summary>
-        <returns>The number nearest to <paramref name="value" /> that contains a number of fractional digits equal to <paramref name="digits" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="digits" /> is less than 0 or greater than 15.</exception>
-        <block subset="none" type="usage">
-          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.Int32)" /> method may not appear to round midpoint values to the nearest even value in the <paramref name="digits" /> decimal position. This is illustrated in the following example, where 2.135 is rounded to 2.13 instead of 2.14. This occurs because internally the method multiplies <paramref name="value" /> by 10<sup>digits</sup>, and the multiplication operation in this case suffers from a loss of precision.  
-  
- [!code-csharp[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
- [!code-vb[System.Math.Round#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round3.vb#2)]</para>
-        </block>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static double Round (double value, MidpointRounding mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value, valuetype System.MidpointRounding mode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.MidpointRounding)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="mode" Type="System.MidpointRounding" />
-      </Parameters>
-      <Docs>
-        <param name="value">A double-precision floating-point number to be rounded.</param>
-        <param name="mode">Specification for how to round <c>value</c> if it is midway between two other numbers.</param>
-        <summary>Rounds a double-precision floating-point value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
-        <returns>The integer nearest <paramref name="value" />. If <paramref name="value" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
-        <block subset="none" type="usage">
-          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.MidpointRounding)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
-  
- [!code-csharp[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
- [!code-vb[System.Math.Round#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round5.vb#4)]</para>
-        </block>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static decimal Round (decimal d, int decimals, MidpointRounding mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, int32 decimals, valuetype System.MidpointRounding mode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Decimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Decimal" />
-        <Parameter Name="decimals" Type="System.Int32" />
-        <Parameter Name="mode" Type="System.MidpointRounding" />
-      </Parameters>
-      <Docs>
-        <param name="d">A decimal number to be rounded.</param>
-        <param name="decimals">The number of decimal places in the return value.</param>
-        <param name="mode">Specification for how to round <c>d</c> if it is midway between two other numbers.</param>
-        <summary>Rounds a decimal value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
-        <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />. If <paramref name="d" /> has fewer fractional digits than <paramref name="decimals" />, <paramref name="d" /> is returned unchanged.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
-        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Round">
-      <MemberSignature Language="C#" Value="public static double Round (double value, int digits, MidpointRounding mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value, int32 digits, valuetype System.MidpointRounding mode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.Int32,System.MidpointRounding)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="digits" Type="System.Int32" />
-        <Parameter Name="mode" Type="System.MidpointRounding" />
-      </Parameters>
-      <Docs>
-        <param name="value">A double-precision floating-point number to be rounded.</param>
-        <param name="digits">The number of fractional digits in the return value.</param>
-        <param name="mode">Specification for how to round <c>value</c> if it is midway between two other numbers.</param>
-        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
-        <returns>The number nearest to <paramref name="value" /> that has a number of fractional digits equal to <paramref name="digits" />. If <paramref name="value" /> has fewer fractional digits than <paramref name="digits" />, <paramref name="value" /> is returned unchanged.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="digits" /> is less than 0 or greater than 15.</exception>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
-        <block subset="none" type="usage">
-          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.Int32,System.MidpointRounding)" /> method may not appear to round midpoint values as specified by the <paramref name="mode" /> parameter. This is illustrated in the following example, where 2.135 is rounded to 2.13 instead of 2.14. This occurs because internally the method multiplies <paramref name="value" /> by 10<sup>digits</sup>, and the multiplication operation in this case suffers from a loss of precision.  
-  
- [!code-csharp[System.Math.Round#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round4.cs#3)]
- [!code-vb[System.Math.Round#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round4.vb#3)]</para>
-        </block>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (decimal value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(valuetype System.Decimal value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Decimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Decimal" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed decimal number.</param>
-        <summary>Returns an integer that indicates the sign of a decimal number.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Decimal%29> method to determine the sign of a <xref:System.Decimal> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (double value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(float64 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed number.</param>
-        <summary>Returns an integer that indicates the sign of a double-precision floating-point number.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Double%29> method to determine the sign of a <xref:System.Double> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArithmeticException">
-          <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (short value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int16 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int16)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Int16" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed number.</param>
-        <summary>Returns an integer that indicates the sign of a 16-bit signed integer.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int16%29> method to determine the sign of an <xref:System.Int16> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (int value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int32 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int32)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed number.</param>
-        <summary>Returns an integer that indicates the sign of a 32-bit signed integer.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int32%29> method to determine the sign of an <xref:System.Int32> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (long value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int64 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int64)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Int64" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed number.</param>
-        <summary>Returns an integer that indicates the sign of a 64-bit signed integer.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int64%29> method to determine the sign of an <xref:System.Int64> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (sbyte value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int8 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.SByte)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.CLSCompliant(false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.SByte" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed number.</param>
-        <summary>Returns an integer that indicates the sign of an 8-bit signed integer.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.SByte%29> method to determine the sign of an <xref:System.SByte> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sign">
-      <MemberSignature Language="C#" Value="public static int Sign (float value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(float32 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Single)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="value">A signed number.</param>
-        <summary>Returns an integer that indicates the sign of a single-precision floating-point number.</summary>
-        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> Return value  
-  
- </term>  
-<description> Meaning  
-  
- </description>  
-</listheader>  
-<item>  
-<term> -1  
-  
- </term>  
-<description> <paramref name="value" /> is less than zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 0  
-  
- </term>  
-<description> <paramref name="value" /> is equal to zero.  
-  
- </description>  
-</item>  
-<item>  
-<term> 1  
-  
- </term>  
-<description> <paramref name="value" /> is greater than zero.  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example demonstrates how to use the <xref:System.Math.Sign%28System.Single%29> method to determine the sign of a <xref:System.Single> value and display it to the console.  
-  
- [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
- [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
- [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArithmeticException">
-          <paramref name="value" /> is equal to <see cref="F:System.Single.NaN" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Sin">
-      <MemberSignature Language="C#" Value="public static double Sin (double a);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Sin(float64 a) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sin(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="a">An angle, measured in radians.</param>
-        <summary>Returns the sine of the specified angle.</summary>
-        <returns>The sine of <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
-  
- Acceptable values of `a` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside of this range, the <xref:System.Math.Sin%2A> method returns `a` unchanged rather than throwing an exception.  
-  
-   
-  
-## Examples  
- The following example uses <xref:System.Math.Sin%2A> to evaluate certain trigonometric identities for selected angles.  
-  
- [!code-cpp[System.Math.SinCos#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinCos/CPP/sincos.cpp#1)]
- [!code-csharp[System.Math.SinCos#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinCos/CS/sincos.cs#1)]
- [!code-vb[System.Math.SinCos#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinCos/VB/sincos.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sinh">
-      <MemberSignature Language="C#" Value="public static double Sinh (double value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Sinh(float64 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sinh(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="value">An angle, measured in radians.</param>
-        <summary>Returns the hyperbolic sine of the specified angle.</summary>
-        <returns>The hyperbolic sine of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" />, <see cref="F:System.Double.PositiveInfinity" />, or <see cref="F:System.Double.NaN" />, this method returns a <see cref="T:System.Double" /> equal to <paramref name="value" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
-  
-   
-  
-## Examples  
- The following example uses <xref:System.Math.Sinh%2A> to evaluate certain hyperbolic identities for selected values.  
-  
- [!code-cpp[System.Math.SinhCosh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinhCosh/CPP/sinhcosh.cpp#1)]
- [!code-csharp[System.Math.SinhCosh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinhCosh/CS/sinhcosh.cs#1)]
- [!code-vb[System.Math.SinhCosh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinhCosh/VB/sinhcosh.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Sqrt">
-      <MemberSignature Language="C#" Value="public static double Sqrt (double d);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Sqrt(float64 d) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Sqrt(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="d">The number whose square root is to be found.</param>
-        <summary>Returns the square root of a specified number.</summary>
-        <returns>One of the values in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" /> parameter  
-  
- </term>  
-<description> Return value  
-  
- </description>  
-</listheader>  
-<item>  
-<term> Zero or positive  
-  
- </term>  
-<description> The positive square root of <paramref name="d" />.  
-  
- </description>  
-</item>  
-<item>  
-<term> Negative  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equals <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> Equals <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The square root of the area of a square represents the length of any side of the square. The following example displays the area of some cities in the United States and gives an impression of each city's size if it were represented by a square.  
-  
- [!code-csharp[System.Math.Sqrt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.sqrt/cs/sqrt1.cs#1)]
- [!code-vb[System.Math.Sqrt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.sqrt/vb/sqrt1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Tan">
-      <MemberSignature Language="C#" Value="public static double Tan (double a);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Tan(float64 a) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Tan(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="a" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="a">An angle, measured in radians.</param>
-        <summary>Returns the tangent of the specified angle.</summary>
-        <returns>The tangent of <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
-  
-   
-  
-## Examples  
- The following example demonstrates how to calculate the tangent of an angle and display it to the console.  
-  
- [!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
- [!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
- [!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Tanh">
-      <MemberSignature Language="C#" Value="public static double Tanh (double value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Tanh(float64 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Tanh(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="value">An angle, measured in radians.</param>
-        <summary>Returns the hyperbolic tangent of the specified angle.</summary>
-        <returns>The hyperbolic tangent of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" />, this method returns -1. If value is equal to <see cref="F:System.Double.PositiveInfinity" />, this method returns 1. If <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
-  
-   
-  
-## Examples  
- The following example uses <xref:System.Math.Tanh%2A> to evaluate certain hyperbolic tangent identities for selected values.  
-  
- [!code-cpp[System.Math.Tanh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Tanh/CPP/tanh.cpp#1)]
- [!code-csharp[System.Math.Tanh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Tanh/CS/tanh.cs#1)]
- [!code-vb[System.Math.Tanh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Tanh/VB/tanh.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Truncate">
-      <MemberSignature Language="C#" Value="public static decimal Truncate (decimal d);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Truncate(valuetype System.Decimal d) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Truncate(System.Decimal)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Decimal</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Decimal" />
-      </Parameters>
-      <Docs>
-        <param name="d">A number to truncate.</param>
-        <summary>Calculates the integral part of a specified decimal number.</summary>
-        <returns>The integral part of <paramref name="d" />; that is, the number that remains after any fractional digits have been discarded.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
-  
-   
-  
-## Examples  
- The following example calls the <xref:System.Math.Truncate%28System.Decimal%29> method to truncate both a positive and a negative <xref:System.Decimal> value.  
-  
- [!code-csharp[System.Math.Truncate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#2)]
- [!code-vb[System.Math.Truncate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#2)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Truncate">
-      <MemberSignature Language="C#" Value="public static double Truncate (double d);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Truncate(float64 d) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Math.Truncate(System.Double)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="d" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="d">A number to truncate.</param>
-        <summary>Calculates the integral part of a specified double-precision floating-point number.</summary>
-        <returns>The integral part of <paramref name="d" />; that is, the number that remains after any fractional digits have been discarded, or one of the values listed in the following table.  
-  
- <list type="table">  
-<listheader>  
-<term> <paramref name="d" />  
-  
- </term>  
-<description> Return value  
-  
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="F:System.Double.NaN" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NaN" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Double.NegativeInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.NegativeInfinity" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </term>  
-<description> <see cref="F:System.Double.PositiveInfinity" />  
-  
- </description>  
-</item>  
-</list></returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
-  
-   
-  
-## Examples  
- The following example calls the <xref:System.Math.Truncate%28System.Double%29> method to truncate both a positive and a negative <xref:System.Double> value.  
-  
- [!code-csharp[System.Math.Truncate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#1)]
- [!code-vb[System.Math.Truncate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <MemberGroup MemberName="Floor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the largest integer less than or equal to the specified number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Ceiling">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the smallest integer greater than or equal to the specified number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Truncate">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Calculates the integral part of a number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The number is rounded to the nearest integer towards zero.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
     <MemberGroup MemberName="Round">
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -4565,10 +3350,10 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
   
 |Overload|Rounding convention|  
 |--------------|-------------------------|  
-|<xref:System.Math.Round%28System.Decimal%29>|<xref:System.MidpointRounding>|  
-|<xref:System.Math.Round%28System.Double%29>|<xref:System.MidpointRounding>|  
-|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29>|<xref:System.MidpointRounding>|  
-|<xref:System.Math.Round%28System.Double%2CSystem.Int32%29>|<xref:System.MidpointRounding>|  
+|<xref:System.Math.Round%28System.Decimal%29>|<xref:System.MidpointRounding.ToEven>|  
+|<xref:System.Math.Round%28System.Double%29>|<xref:System.MidpointRounding.ToEven>|  
+|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29>|<xref:System.MidpointRounding.ToEven>|  
+|<xref:System.Math.Round%28System.Double%2CSystem.Int32%29>|<xref:System.MidpointRounding.ToEven>|  
 |<xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29>|Determined by `mode` parameter.|  
 |<xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
@@ -4613,7 +3398,7 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
   
 <a name="Round1_Example"></a>   
 ## Math.Round(Decimal) example  
- The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding> convention.  
+ The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding.ToEven> convention.  
   
  [!code-csharp[System.Math.Round#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/rounddecimal1.cs#6)]
  [!code-vb[System.Math.Round#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/rounddecimal1.vb#6)]  
@@ -4643,14 +3428,14 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
   
 <a name="Round5_Example"></a>   
 ## Math.Round(Decimal, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
+ The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
   
  [!code-csharp[System.Math.Round.Overload#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint1.cs#5)]
  [!code-vb[System.Math.Round.Overload#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint1.vb#5)]  
   
 <a name="Round6_Example"></a>   
 ## Math.Round(Double, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding>.  
+ The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
   
  [!code-csharp[System.Math.Round.Overload#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint2.cs#6)]
  [!code-vb[System.Math.Round.Overload#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint2.vb#6)]  
@@ -4689,5 +3474,1271 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
         </remarks>
       </Docs>
     </MemberGroup>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static decimal Round (decimal d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="d">A decimal number to be rounded.</param>
+        <summary>Rounds a decimal value to the nearest integral value.</summary>
+        <returns>The integer nearest parameter <paramref name="d" />. If the fractional component of <paramref name="d" /> is halfway between two integers, one of which is even and the other odd, the even number is returned. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static double Round (double a);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="a">A double-precision floating-point number to be rounded.</param>
+        <summary>Rounds a double-precision floating-point value to the nearest integral value.</summary>
+        <returns>The integer nearest <paramref name="a" />. If the fractional component of <paramref name="a" /> is halfway between two integers, one of which is even and the other odd, then the even number is returned. Note that this method returns a <see cref="T:System.Double" /> instead of an integral type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
+  
+ [!code-csharp[System.Math.Round#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round2.cs#1)]
+ [!code-vb[System.Math.Round#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round2.vb#1)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static decimal Round (decimal d, int decimals);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, int32 decimals) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Decimal" />
+        <Parameter Name="decimals" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="d">A decimal number to be rounded.</param>
+        <param name="decimals">The number of decimal places in the return value.</param>
+        <summary>Rounds a decimal value to a specified number of fractional digits.</summary>
+        <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
+        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static decimal Round (decimal d, MidpointRounding mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, valuetype System.MidpointRounding mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.MidpointRounding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Decimal" />
+        <Parameter Name="mode" Type="System.MidpointRounding" />
+      </Parameters>
+      <Docs>
+        <param name="d">A decimal number to be rounded.</param>
+        <param name="mode">Specification for how to round <c>d</c> if it is midway between two other numbers.</param>
+        <summary>Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
+        <returns>The integer nearest <paramref name="d" />. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
+        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static double Round (double value, int digits);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value, int32 digits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="digits" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">A double-precision floating-point number to be rounded.</param>
+        <param name="digits">The number of fractional digits in the return value.</param>
+        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits.</summary>
+        <returns>The number nearest to <paramref name="value" /> that contains a number of fractional digits equal to <paramref name="digits" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="digits" /> is less than 0 or greater than 15.</exception>
+        <block subset="none" type="usage">
+          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.Int32)" /> method may not appear to round midpoint values to the nearest even value in the <paramref name="digits" /> decimal position. This is illustrated in the following example, where 2.135 is rounded to 2.13 instead of 2.14. This occurs because internally the method multiplies <paramref name="value" /> by 10<sup>digits</sup>, and the multiplication operation in this case suffers from a loss of precision.  
+  
+ [!code-csharp[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
+ [!code-vb[System.Math.Round#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round3.vb#2)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static double Round (double value, MidpointRounding mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value, valuetype System.MidpointRounding mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.MidpointRounding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="mode" Type="System.MidpointRounding" />
+      </Parameters>
+      <Docs>
+        <param name="value">A double-precision floating-point number to be rounded.</param>
+        <param name="mode">Specification for how to round <c>value</c> if it is midway between two other numbers.</param>
+        <summary>Rounds a double-precision floating-point value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
+        <returns>The integer nearest <paramref name="value" />. If <paramref name="value" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
+        <block subset="none" type="usage">
+          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.MidpointRounding)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
+  
+ [!code-csharp[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
+ [!code-vb[System.Math.Round#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round5.vb#4)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static decimal Round (decimal d, int decimals, MidpointRounding mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Round(valuetype System.Decimal d, int32 decimals, valuetype System.MidpointRounding mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Decimal,System.Int32,System.MidpointRounding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Decimal" />
+        <Parameter Name="decimals" Type="System.Int32" />
+        <Parameter Name="mode" Type="System.MidpointRounding" />
+      </Parameters>
+      <Docs>
+        <param name="d">A decimal number to be rounded.</param>
+        <param name="decimals">The number of decimal places in the return value.</param>
+        <param name="mode">Specification for how to round <c>d</c> if it is midway between two other numbers.</param>
+        <summary>Rounds a decimal value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
+        <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />. If <paramref name="d" /> has fewer fractional digits than <paramref name="decimals" />, <paramref name="d" /> is returned unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
+        <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static double Round (double value, int digits, MidpointRounding mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value, int32 digits, valuetype System.MidpointRounding mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Round(System.Double,System.Int32,System.MidpointRounding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="digits" Type="System.Int32" />
+        <Parameter Name="mode" Type="System.MidpointRounding" />
+      </Parameters>
+      <Docs>
+        <param name="value">A double-precision floating-point number to be rounded.</param>
+        <param name="digits">The number of fractional digits in the return value.</param>
+        <param name="mode">Specification for how to round <c>value</c> if it is midway between two other numbers.</param>
+        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
+        <returns>The number nearest to <paramref name="value" /> that has a number of fractional digits equal to <paramref name="digits" />. If <paramref name="value" /> has fewer fractional digits than <paramref name="digits" />, <paramref name="value" /> is returned unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="digits" /> is less than 0 or greater than 15.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
+        <block subset="none" type="usage">
+          <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.Int32,System.MidpointRounding)" /> method may not appear to round midpoint values as specified by the <paramref name="mode" /> parameter. This is illustrated in the following example, where 2.135 is rounded to 2.13 instead of 2.14. This occurs because internally the method multiplies <paramref name="value" /> by 10<sup>digits</sup>, and the multiplication operation in this case suffers from a loss of precision.  
+  
+ [!code-csharp[System.Math.Round#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round4.cs#3)]
+ [!code-vb[System.Math.Round#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round4.vb#3)]</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed decimal number.</param>
+        <summary>Returns an integer that indicates the sign of a decimal number.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.Decimal%29> method to determine the sign of a <xref:System.Decimal> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of a double-precision floating-point number.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.Double%29> method to determine the sign of a <xref:System.Double> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArithmeticException">
+          <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of a 16-bit signed integer.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int16%29> method to determine the sign of an <xref:System.Int16> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of a 32-bit signed integer.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int32%29> method to determine the sign of an <xref:System.Int32> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of a 64-bit signed integer.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.Int64%29> method to determine the sign of an <xref:System.Int64> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of an 8-bit signed integer.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.SByte%29> method to determine the sign of an <xref:System.SByte> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static int Sign (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Sign(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sign(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">A signed number.</param>
+        <summary>Returns an integer that indicates the sign of a single-precision floating-point number.</summary>
+        <returns>A number that indicates the sign of <paramref name="value" />, as shown in the following table.  
+  
+ <list type="table"><listheader><term> Return value  
+  
+ </term><description> Meaning  
+  
+ </description></listheader><item><term> -1  
+  
+ </term><description><paramref name="value" /> is less than zero.  
+  
+ </description></item><item><term> 0  
+  
+ </term><description><paramref name="value" /> is equal to zero.  
+  
+ </description></item><item><term> 1  
+  
+ </term><description><paramref name="value" /> is greater than zero.  
+  
+ </description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Math.Sign%28System.Single%29> method to determine the sign of a <xref:System.Single> value and display it to the console.  
+  
+ [!code-cpp[Math.Sign#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.sign/CPP/sign.cpp#1)]
+ [!code-csharp[Math.Sign#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.sign/CS/sign.cs#1)]
+ [!code-vb[Math.Sign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.sign/VB/sign.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArithmeticException">
+          <paramref name="value" /> is equal to <see cref="F:System.Single.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Sin">
+      <MemberSignature Language="C#" Value="public static double Sin (double a);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Sin(float64 a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sin(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="a">An angle, measured in radians.</param>
+        <summary>Returns the sine of the specified angle.</summary>
+        <returns>The sine of <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+  
+ Acceptable values of `a` range from approximately -9223372036854775295 to approximately 9223372036854775295. For values outside of this range, the <xref:System.Math.Sin%2A> method returns `a` unchanged rather than throwing an exception.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Math.Sin%2A> to evaluate certain trigonometric identities for selected angles.  
+  
+ [!code-cpp[System.Math.SinCos#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinCos/CPP/sincos.cpp#1)]
+ [!code-csharp[System.Math.SinCos#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinCos/CS/sincos.cs#1)]
+ [!code-vb[System.Math.SinCos#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinCos/VB/sincos.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sinh">
+      <MemberSignature Language="C#" Value="public static double Sinh (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Sinh(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sinh(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">An angle, measured in radians.</param>
+        <summary>Returns the hyperbolic sine of the specified angle.</summary>
+        <returns>The hyperbolic sine of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" />, <see cref="F:System.Double.PositiveInfinity" />, or <see cref="F:System.Double.NaN" />, this method returns a <see cref="T:System.Double" /> equal to <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Math.Sinh%2A> to evaluate certain hyperbolic identities for selected values.  
+  
+ [!code-cpp[System.Math.SinhCosh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.SinhCosh/CPP/sinhcosh.cpp#1)]
+ [!code-csharp[System.Math.SinhCosh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.SinhCosh/CS/sinhcosh.cs#1)]
+ [!code-vb[System.Math.SinhCosh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.SinhCosh/VB/sinhcosh.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sqrt">
+      <MemberSignature Language="C#" Value="public static double Sqrt (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Sqrt(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Sqrt(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">The number whose square root is to be found.</param>
+        <summary>Returns the square root of a specified number.</summary>
+        <returns>One of the values in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="d" /> parameter  
+  
+ </term><description> Return value  
+  
+ </description></listheader><item><term> Zero or positive  
+  
+ </term><description> The positive square root of <paramref name="d" />.  
+  
+ </description></item><item><term> Negative  
+  
+ </term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equals <see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term> Equals <see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The square root of the area of a square represents the length of any side of the square. The following example displays the area of some cities in the United States and gives an impression of each city's size if it were represented by a square.  
+  
+ [!code-csharp[System.Math.Sqrt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.sqrt/cs/sqrt1.cs#1)]
+ [!code-vb[System.Math.Sqrt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.sqrt/vb/sqrt1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tan">
+      <MemberSignature Language="C#" Value="public static double Tan (double a);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Tan(float64 a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Tan(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="a">An angle, measured in radians.</param>
+        <summary>Returns the tangent of the specified angle.</summary>
+        <returns>The tangent of <paramref name="a" />. If <paramref name="a" /> is equal to <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.NegativeInfinity" />, or <see cref="F:System.Double.PositiveInfinity" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `a`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to calculate the tangent of an angle and display it to the console.  
+  
+ [!code-cpp[math.atanx#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.atanx/CPP/atan.cpp#1)]
+ [!code-csharp[math.atanx#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.atanx/CS/atan.cs#1)]
+ [!code-vb[math.atanx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.atanx/VB/atan.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tanh">
+      <MemberSignature Language="C#" Value="public static double Tanh (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Tanh(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Tanh(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">An angle, measured in radians.</param>
+        <summary>Returns the hyperbolic tangent of the specified angle.</summary>
+        <returns>The hyperbolic tangent of <paramref name="value" />. If <paramref name="value" /> is equal to <see cref="F:System.Double.NegativeInfinity" />, this method returns -1. If value is equal to <see cref="F:System.Double.PositiveInfinity" />, this method returns 1. If <paramref name="value" /> is equal to <see cref="F:System.Double.NaN" />, this method returns <see cref="F:System.Double.NaN" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The angle, `value`, must be in radians. Multiply by <xref:System.Math.PI?displayProperty=fullName>/180 to convert degrees to radians.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Math.Tanh%2A> to evaluate certain hyperbolic tangent identities for selected values.  
+  
+ [!code-cpp[System.Math.Tanh#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Math.Tanh/CPP/tanh.cpp#1)]
+ [!code-csharp[System.Math.Tanh#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Tanh/CS/tanh.cs#1)]
+ [!code-vb[System.Math.Tanh#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Tanh/VB/tanh.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Truncate">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the integral part of a number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The number is rounded to the nearest integer towards zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static decimal Truncate (decimal d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Decimal Truncate(valuetype System.Decimal d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Truncate(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="d">A number to truncate.</param>
+        <summary>Calculates the integral part of a specified decimal number.</summary>
+        <returns>The integral part of <paramref name="d" />; that is, the number that remains after any fractional digits have been discarded.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Math.Truncate%28System.Decimal%29> method to truncate both a positive and a negative <xref:System.Decimal> value.  
+  
+ [!code-csharp[System.Math.Truncate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#2)]
+ [!code-vb[System.Math.Truncate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static double Truncate (double d);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Truncate(float64 d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Math.Truncate(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="d" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="d">A number to truncate.</param>
+        <summary>Calculates the integral part of a specified double-precision floating-point number.</summary>
+        <returns>The integral part of <paramref name="d" />; that is, the number that remains after any fractional digits have been discarded, or one of the values listed in the following table.  
+  
+ <list type="table"><listheader><term><paramref name="d" /></term><description> Return value  
+  
+ </description></listheader><item><term><see cref="F:System.Double.NaN" /></term><description><see cref="F:System.Double.NaN" /></description></item><item><term><see cref="F:System.Double.NegativeInfinity" /></term><description><see cref="F:System.Double.NegativeInfinity" /></description></item><item><term><see cref="F:System.Double.PositiveInfinity" /></term><description><see cref="F:System.Double.PositiveInfinity" /></description></item></list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Math.Truncate%2A> rounds `d` to the nearest integer towards zero.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Math.Truncate%28System.Double%29> method to truncate both a positive and a negative <xref:System.Double> value.  
+  
+ [!code-csharp[System.Math.Truncate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Truncate/cs/Truncate1.cs#1)]
+ [!code-vb[System.Math.Truncate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Truncate/vb/Truncate1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

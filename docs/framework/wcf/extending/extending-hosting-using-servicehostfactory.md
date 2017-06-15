@@ -29,7 +29,6 @@ public static void Main()
   
    ...  
 }  
-  
 ```  
   
  This approach is not reusable. The code that manipulates the description is coded into the host program (in this case, the Main() function), so it is difficult to reuse that logic in other contexts. There are also other ways of adding an <xref:System.ServiceModel.Description.IServiceBehavior> that do not require imperative code. You can derive an attribute from <xref:System.ServiceModel.ServiceBehaviorAttribute> and put that on your service implementation type or you can make a custom behavior configurable and compose it dynamically using configuration.  
@@ -77,13 +76,12 @@ public class DerivedFactory : ServiceHostFactory
       return new DerivedHost( t, baseAddresses )  
    }  
 }  
-  
 ```  
   
  To use this factory instead of the default factory, provide the type name in the @ServiceHost directive as follows:  
   
 ```  
-<% @ServiceHost Factory=”DerivedFactory” Service=”MyService” %>  
+<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>  
 ```  
   
  While there is no technical limit on doing what you want to the <xref:System.ServiceModel.ServiceHost> you return from <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, we suggest that you keep your factory implementations as simple as possible. If you have lots of custom logic, it is better to put that logic inside of you host instead of inside the factory so that it can be reusable.  

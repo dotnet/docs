@@ -41,7 +41,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 2.  Insert the following standard header at the beginning of the file:  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
     ```  
@@ -50,7 +50,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 3.  Identify the owner of the manifest. In the following example, `myComApp` version 1 owns the manifest file.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
       <assemblyIdentity type="win32"   
@@ -62,7 +62,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 4.  Identify dependent assemblies. In the following example, `myComApp` depends on `myManagedComp`.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
       <assemblyIdentity type="win32"   
@@ -94,14 +94,14 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 2.  Insert the following standard header at the beginning of the file:  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
     ```  
   
 3.  Identify the owner of the file. The `<assemblyIdentity>` element of the `<dependentAssembly>` element in application manifest file must match the one in the component manifest. In the following example, `myManagedComp` version 1.2.3.4 owns the manifest file.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
            <assemblyIdentity  
@@ -128,7 +128,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
      The following component manifest identifies two classes, `testClass1` and `testClass2`.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
            <assemblyIdentity  

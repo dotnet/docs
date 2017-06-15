@@ -87,7 +87,7 @@
   
  The first time that one piece of content is navigated to from another piece of content, <xref:System.Windows.Controls.Frame> automatically displays a navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that allows users to navigate back and forward through navigation history. You can configure when the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is shown by setting the <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> property.  
   
- By default, <xref:System.Windows.Controls.Frame> will use its own navigation history only if a parent navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>) with its own navigation history cannot be found. This means that navigation history entries for the frame are mingled with navigation history entries for the parent navigator. To specify that a <xref:System.Windows.Controls.Frame> manages its own navigation history, set the <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property to <xref:System.Windows.Navigation.JournalOwnership>.  
+ By default, <xref:System.Windows.Controls.Frame> will use its own navigation history only if a parent navigator (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>) with its own navigation history cannot be found. This means that navigation history entries for the frame are mingled with navigation history entries for the parent navigator. To specify that a <xref:System.Windows.Controls.Frame> manages its own navigation history, set the <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property to <xref:System.Windows.Navigation.JournalOwnership.OwnsJournal>.  
   
  The most recent entry in back navigation history can be removed by calling <xref:System.Windows.Controls.Frame.RemoveBackEntry%2A>.  
   
@@ -244,7 +244,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Frame>|  
+|Identifier field|<xref:System.Windows.Controls.Frame.BackStackProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -389,7 +389,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Frame>|  
+|Identifier field|<xref:System.Windows.Controls.Frame.CanGoForwardProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -495,7 +495,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Frame>|  
+|Identifier field|<xref:System.Windows.Controls.Frame.ForwardStackProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -635,7 +635,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, <xref:System.Windows.Controls.Frame> will use its own navigation history only if a parent navigation host (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>) with its own journal cannot be found (for example, if a <xref:System.Windows.Controls.Frame> is hosted in content that is hosted by a <xref:System.Windows.Window>). To force <xref:System.Windows.Controls.Frame> to manage its own navigation history, set <xref:System.Windows.Controls.Frame.JournalOwnership%2A> to <xref:System.Windows.Navigation.JournalOwnership>.  
+ By default, <xref:System.Windows.Controls.Frame> will use its own navigation history only if a parent navigation host (<xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>) with its own journal cannot be found (for example, if a <xref:System.Windows.Controls.Frame> is hosted in content that is hosted by a <xref:System.Windows.Window>). To force <xref:System.Windows.Controls.Frame> to manage its own navigation history, set <xref:System.Windows.Controls.Frame.JournalOwnership%2A> to <xref:System.Windows.Navigation.JournalOwnership.OwnsJournal>.  
   
 <a name="dependencyPropertyInfo_FrameJournalOwnership"></a>   
 ## Dependency Property Information  
@@ -1023,11 +1023,11 @@
   
  You can ensure that navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] is always visible by setting:  
   
-1.  <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility>  
+1.  <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility.Visible>  
   
-2.  <xref:System.Windows.Controls.Frame.JournalOwnership%2A> to <xref:System.Windows.Navigation.JournalOwnership>  
+2.  <xref:System.Windows.Controls.Frame.JournalOwnership%2A> to <xref:System.Windows.Navigation.JournalOwnership.OwnsJournal>  
   
- You set <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility> if you want to hide the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. This might be the case when navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] doesn’t make sense with the content you are displaying from a <xref:System.Windows.Controls.Frame>, or because you are providing your own navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+ You set <xref:System.Windows.Navigation.NavigationUIVisibility> to <xref:System.Windows.Navigation.NavigationUIVisibility.Hidden> if you want to hide the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. This might be the case when navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] doesn’t make sense with the content you are displaying from a <xref:System.Windows.Controls.Frame>, or because you are providing your own navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
   
 <a name="dependencyPropertyInfo_FrameJournalNavigationUIVisibility"></a>   
 ## Dependency Property Information  
@@ -1040,7 +1040,7 @@
    
   
 ## Examples  
- The following example demonstrates how to make sure the navigation chrome of a <xref:System.Windows.Controls.Frame> is always visible by setting <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> to <xref:System.Windows.Navigation.NavigationUIVisibility>.  
+ The following example demonstrates how to make sure the navigation chrome of a <xref:System.Windows.Controls.Frame> is always visible by setting <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> to <xref:System.Windows.Navigation.NavigationUIVisibility.Visible>.  
   
  [!code-csharp[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/CSharp/Window1.xaml.cs#setnavigationuivisibility)]
  [!code-vb[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/visualbasic/window1.xaml.vb#setnavigationuivisibility)]
@@ -1212,7 +1212,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether a <see cref="T:System.Windows.Controls.Frame" /> isolates external [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content within a partial trust security sandbox (with the default <see langword="Internet " />permission set).</summary>
+        <summary>Gets or sets whether a <see cref="T:System.Windows.Controls.Frame" /> isolates external [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content within a partial trust security sandbox (with the default <see langword="Internet" /> permission set).</summary>
         <value>
           <see langword="true" /> if content is isolated within a partial trust security sandbox; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>

@@ -1,5 +1,5 @@
 ---
-title: Literals (F#)
+title: Literals (F#) | Microsoft Docs
 description: Literals (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -15,15 +15,12 @@ ms.assetid: 4b1d6e9d-f933-4cd4-966d-d643152c27e4
 # Literals
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+The API reference links in this article will take you to MSDN (for now).
 
 This topic provides a table that shows how to specify the type of a literal in F#.
 
-
 ## Literal Types
 The following table shows the literal types in F#. Characters that represent digits in hexadecimal notation are not case-sensitive; characters that identify the type are case-sensitive.
-
-
 
 |Type|Description|Suffix or prefix|Examples|
 |----|-----------|----------------|--------|
@@ -79,9 +76,21 @@ In pattern matching expressions, identifiers that begin with lowercase character
 
 Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
 
-```
+```fsharp
 let numbers = (0x9F, 0o77, 0b1010)
 // Result: numbers : int * int * int = (159, 63, 10)
+```
+
+## Underscores in Numeric Literals
+
+Starting with F# 4.1, you can separate digits with the underscore character (`_`).
+
+```fsharp
+let deadBeef = 0xDEAD_BEEF
+
+let deadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
+
+let ssn = 123_456_7890
 ```
 
 ## See Also

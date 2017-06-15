@@ -79,7 +79,7 @@ If the method call comes from a finalizer (that is, if *disposing* is `false`), 
 If you implement the dispose pattern for a base class, you must provide the following:  
   
 > [!IMPORTANT]
-> You should implement this pattern for all base classes that implement <xref:System.IDisposable> and are not `sealed` (`NotInheritable` in Visual Basic).  
+> You should implement this pattern for all base classes that implement <xref:System.IDisposable.Dispose> and are not `sealed` (`NotInheritable` in Visual Basic).  
   
 * A <xref:System.IDisposable.Dispose%2A> implementation that calls the `Dispose(Boolean)` method.  
   
@@ -168,5 +168,5 @@ The following example illustrates the dispose pattern for a derived class, `Disp
 <xref:Microsoft.Win32.SafeHandles>   
 <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName>   
 <xref:System.Object.Finalize%2A?displayProperty=fullName>   
-[How to: Define and Consume Classes and Structs (C++/CLI)](http://msdn.microsoft.com/library/1c03cb0d-1459-4b5e-af65-97d6b3094fd7)   
+[How to: Define and Consume Classes and Structs (C++/CLI)](/cpp/dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli)   
 [Dispose Pattern](../../../docs/standard/design-guidelines/dispose-pattern.md)

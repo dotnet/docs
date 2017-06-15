@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;claimTypeRequirements&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies the types of required and optional claims expected to appear in the fe
   
 ## Syntax  
   
-```  
-  
+```xml  
 <claimTypeRequirements>  
       <add claimType="URI"  
            isOptional="Boolean" />  
@@ -61,7 +60,7 @@ Specifies the types of required and optional claims expected to appear in the fe
 ## Example  
  The following configuration adds two claim type requirements to a security binding.  
   
-```  
+```xml  
 <bindings>  
     <wsFederationHttpBinding>  
       <binding name="myFederatedBinding">  

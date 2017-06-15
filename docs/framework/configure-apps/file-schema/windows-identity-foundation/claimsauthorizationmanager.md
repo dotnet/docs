@@ -2,6 +2,7 @@
 title: "&lt;claimsAuthorizationManager&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,14 +24,14 @@ Registers a claims authorization manager for the incoming claims.
   
 ## Syntax  
   
-```  
-\<system.identityModel>  
-  <identityConfiguration>  
-    \<claimsAuthorizationManager type = xs:string>  
-      <optionalConfigurationElements />  
-    </claimsAuthorizationManager>  
-  </identityConfiguration>  
-\</system.identityModel>  
+```xml  
+<system.identityModel>  
+  <identityConfiguration>  
+    <claimsAuthorizationManager type = xs:string>  
+      <optionalConfigurationElements />  
+    </claimsAuthorizationManager>  
+  </identityConfiguration>  
+</system.identityModel>  
 ```  
   
 ## Attributes and Elements  
@@ -62,8 +63,8 @@ Registers a claims authorization manager for the incoming claims.
 ## Example  
  The following XML shows the configuration for a claims authorization manager that implements policy composed of resource-action pairs each of which specifies boolean combinations of the claims that a requestor must possess to perform the action on the resource. The code that implements the claims authorization manager capable of using this policy can be found in the `ClaimsBasedAuthorization` sample.  
   
-```  
-\<system.identityModel>  
+```xml  
+<system.identityModel>  
     <identityConfiguration>  
       <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
         <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
@@ -86,5 +87,5 @@ Registers a claims authorization manager for the incoming claims.
         </policy>  
       </claimsAuthorizationManager>  
     <identityConfiguration>  
-\<system.identityModel>  
+<system.identityModel>  
 ```

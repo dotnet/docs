@@ -2,7 +2,7 @@
 title: "&lt;NetFx40_LegacySecurityPolicy&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
   
 ## Syntax  
   
-```  
+```xml  
 <NetFx40_LegacySecurityPolicy  
    enabled="true|false"/>  
 ```  
@@ -85,7 +85,7 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
 ## Example  
  The following example shows how to enable legacy CAS policy for an application.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <NetFx40_LegacySecurityPolicy enabled="true"/>  

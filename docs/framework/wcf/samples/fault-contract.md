@@ -2,7 +2,7 @@
 title: "Fault Contract | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,7 +62,6 @@ public class MathFault
         set { problemType = value; }  
     }  
 }  
-  
 ```  
   
  The `Divide` method throws a <xref:System.ServiceModel.FaultException%601> exception when a divide by zero exception occurs as shown in the following sample code. This exception results in a fault being sent to the client.  
@@ -109,7 +108,7 @@ catch (FaultException<MathFault> e)
   
  However, it is useful to see the internal details of a service failure when debugging. To turn off the secure behavior previously described, you can indicate that the details of every unhandled exception on the server should be included in the fault that is sent to the client. This is accomplished by setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> to `true`. You can either set it in code, or in configuration as shown in the following sample.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="CalculatorServiceBehavior">  
@@ -120,7 +119,7 @@ catch (FaultException<MathFault> e)
 </behaviors>  
 ```  
   
- Further, the behavior must be associated with the service by setting the `behaviorConfiguration` attribute of the service in the configuration file to “CalculatorServiceBehavior”.  
+ Further, the behavior must be associated with the service by setting the `behaviorConfiguration` attribute of the service in the configuration file to "CalculatorServiceBehavior".  
   
  To catch such faults on the client, the non-generic <xref:System.ServiceModel.FaultException> must be caught.  
   

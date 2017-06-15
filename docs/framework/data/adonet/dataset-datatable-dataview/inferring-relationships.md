@@ -2,7 +2,7 @@
 title: "Inferring Relationships | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,7 +20,7 @@ If an element that is inferred as a table has a child element that is also infer
   
  For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>  
     <ChildElement1 attr1="value1" attr2="value2"/>  

@@ -2,7 +2,7 @@
 title: "&lt;clear&gt; Element for &lt;namedCaches&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,7 @@ Clears all `namedCache` entries in the `namedCaches` collection for a memory cac
   
 ## Syntax  
   
-```  
+```xml  
 <namedCaches>  
     <clear name="default" />  
     <!-- child elements -->  

@@ -2,7 +2,7 @@
 title: "&lt;performanceCounter&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Enables or disables networking performance counters.
   
 ## Syntax  
   
-```  
+```xml  
 <performanceCounters  
   enabled="true|false"  
 />  
@@ -72,7 +72,7 @@ Enables or disables networking performance counters.
 ## Example  
  The following code example shows how to configure the <xref:System.Net> and related namespaces to enable networking performance counters.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  

@@ -39,6 +39,23 @@ A diagonal linear gradient with highlighted gradient stops
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinearGradientBrush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -55,7 +72,7 @@ A diagonal linear gradient with highlighted gradient stops
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
  ]]></format>
         </remarks>
@@ -80,7 +97,7 @@ A diagonal linear gradient with highlighted gradient stops
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
  ]]></format>
         </remarks>
@@ -107,7 +124,7 @@ A diagonal linear gradient with highlighted gradient stops
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
  ]]></format>
         </remarks>
@@ -136,7 +153,7 @@ A diagonal linear gradient with highlighted gradient stops
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
  ]]></format>
         </remarks>
@@ -165,7 +182,7 @@ A diagonal linear gradient with highlighted gradient stops
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
  ]]></format>
         </remarks>
@@ -196,7 +213,7 @@ A diagonal linear gradient with highlighted gradient stops
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>.  
   
  ]]></format>
         </remarks>
@@ -306,7 +323,7 @@ A diagonal linear gradient with highlighted gradient stops
 A diagonal linear gradient  
   
 ## Specifying Relative or Absolute Values  
- Note that the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property of a <xref:System.Windows.Media.LinearGradientBrush> determines whether its <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> is interpreted as a relative or absolute value. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is relative to the size of the painted area. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is expressed in device independent pixels. By default, the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> is set to <xref:System.Windows.Media.BrushMappingMode>, making the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> a relative value.  
+ Note that the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property of a <xref:System.Windows.Media.LinearGradientBrush> determines whether its <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> is interpreted as a relative or absolute value. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is relative to the size of the painted area. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode.Absolute> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is expressed in device independent pixels. By default, the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> is set to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>, making the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> a relative value.  
   
 <a name="dependencyPropertyInfo_EndPoint"></a>   
 ## Dependency Property Information  
@@ -366,7 +383,7 @@ A diagonal linear gradient
 A diagonal linear gradient  
   
 ## Specifying Relative or Absolute Values  
- Note that the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property of a <xref:System.Windows.Media.LinearGradientBrush> determines whether its <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> is interpreted as a relative or absolute value. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is relative to the size of the painted area. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> value is expressed in device independent pixels. By default, the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> is set to <xref:System.Windows.Media.BrushMappingMode>, making the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> a relative value.  
+ Note that the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property of a <xref:System.Windows.Media.LinearGradientBrush> determines whether its <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> is interpreted as a relative or absolute value. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is relative to the size of the painted area. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode.Absolute> specifies that the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> value is expressed in device independent pixels. By default, the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> is set to <xref:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox>, making the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> a relative value.  
   
 <a name="dependencyPropertyInfo_StartPoint"></a>   
 ## Dependency Property Information  
@@ -397,22 +414,5 @@ A diagonal linear gradient
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

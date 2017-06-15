@@ -2,7 +2,7 @@
 title: "How to: Enable Reordering of ToolStrip Items at Run Time in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,12 +34,10 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
   
     ```vb  
     toolStrip1.AllowItemReorder = True  
-  
     ```  
   
     ```csharp  
     toolStrip1.AllowItemReorder = true;  
-  
     ```  
   
 ## See Also  

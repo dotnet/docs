@@ -2,7 +2,7 @@
 title: "Discovery Versioning | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -52,5 +52,4 @@ oldVersionUdpEndpoint.Address = new EndpointAddress(oldVersionUdpEndpoint.Addres
   
 serviceHost.AddServiceEndpoint(newVersionUdpEndpoint);  
 serviceHost.AddServiceEndpoint(oldVersionUdpEndpoint);  
-  
 ```

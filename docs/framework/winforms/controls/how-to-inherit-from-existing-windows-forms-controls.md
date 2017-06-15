@@ -2,7 +2,7 @@
 title: "How to: Inherit from Existing Windows Forms Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -74,7 +74,6 @@ If you want to extend the functionality of an existing control, you can create a
        ' If you want to completely change the appearance of your control,  
        ' do not call MyBase.OnPaint(e).  
     End Sub  
-  
     ```  
   
     ```csharp  

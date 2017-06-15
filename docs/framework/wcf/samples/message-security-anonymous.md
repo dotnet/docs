@@ -2,7 +2,7 @@
 title: "Message Security Anonymous | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,12 +38,11 @@ public class CalculatorService : ICalculator
     }  
     ...  
 }  
-  
 ```  
   
  The service exposes a single endpoint for communicating with the service, defined using a configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a `wsHttpBinding` binding. The default security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.  
   
-```  
+```xml  
 <system.serviceModel>  
   
   <protocolMapping>  
@@ -70,7 +69,7 @@ public class CalculatorService : ICalculator
   
  The credentials to be used for service authentication are specified in the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md). The server certificate must contain the same value for the `SubjectName` as the value specified for the `findValue` attribute as shown in the following sample code.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior>  
@@ -87,12 +86,11 @@ public class CalculatorService : ICalculator
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint name=""  
@@ -118,7 +116,7 @@ public class CalculatorService : ICalculator
 </system.serviceModel>  
 ```  
   
- The sample sets the <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A> to <xref:System.ServiceModel.Security.X509CertificateValidationMode> for authenticating the service's certificate. This is done in the client's App.config file in the `behaviors` section. This means that if the certificate is in the user's Trusted People store, then it is trusted without performing a validation of the certificate's issuer chain. This setting is used here for convenience so that the sample can be run without requiring certificates issued by a certification authority (CA). This setting is less secure than the default, ChainTrust. The security implications of this setting should be carefully considered before using `PeerOrChainTrust` in production code.  
+ The sample sets the <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A> to <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust> for authenticating the service's certificate. This is done in the client's App.config file in the `behaviors` section. This means that if the certificate is in the user's Trusted People store, then it is trusted without performing a validation of the certificate's issuer chain. This setting is used here for convenience so that the sample can be run without requiring certificates issued by a certification authority (CA). This setting is less secure than the default, ChainTrust. The security implications of this setting should be carefully considered before using `PeerOrChainTrust` in production code.  
   
  The client implementation adds a call to the `IsCallerAnonymous` method and otherwise does not differ from the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
   
@@ -143,7 +141,6 @@ client.Close();
 Console.WriteLine();  
 Console.WriteLine("Press <ENTER> to terminate client.");  
 Console.ReadLine();  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -155,7 +152,6 @@ Subtract(145,76.54) = 68.46
 Multiply(9,81.25) = 731.25  
 Divide(22,7) = 3.14285714285714  
 Press <ENTER> to terminate client.  
-  
 ```  
   
  The Setup.bat batch file included with the Message Security Anonymous sample enables you to configure the server with a relevant certificate to run a hosted application that requires certificate-based security. The batch file can be run in two modes. To run the batch file in the single-computer mode, type `setup.bat` at the command line. To run it in service mode, type `setup.bat service`. Use this mode when running the sample across computers. See the setup procedure at the end of this topic for details.  
@@ -184,7 +180,6 @@ Press <ENTER> to terminate client.
   
     ```  
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople  
-  
     ```  
   
 -   Granting permissions on the certificate's private key.  
@@ -199,7 +194,6 @@ Press <ENTER> to terminate client.
     (ver | findstr "5.1") && set WP_ACCOUNT=%COMPUTERNAME%\ASPNET  
     echo Y|cacls.exe "%PRIVATE_KEY_FILE%" /E /G "%WP_ACCOUNT%":R  
     iisreset  
-  
     ```  
   
 > [!NOTE]

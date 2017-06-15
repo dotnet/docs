@@ -2,7 +2,7 @@
 title: "&lt;endToEndTracing&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ A configuration element that allows you to enable and disable different aspects 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
    <diagnostics>  
        <endToEndTracing activityTracing="Boolean"  

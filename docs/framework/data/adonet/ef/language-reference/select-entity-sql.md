@@ -2,7 +2,7 @@
 title: "SELECT (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,6 @@ Specifies the elements returned by a query.
 ## Syntax  
   
 ```  
-  
 SELECT [ ALL | DISTINCT ] [ topSubclause ] aliasedExpr   
       [{ , aliasedExpr }] FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause ]  
 or  

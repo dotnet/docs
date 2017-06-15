@@ -2,6 +2,7 @@
 title: "&lt;sessionTokenRequirement&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,16 +26,16 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurity
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">  
-        <sessionTokenRequirement lifetime=TimeSpan >  
-        </sessionTokenRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">  
+        <sessionTokenRequirement lifetime=TimeSpan >  
+        </sessionTokenRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -58,7 +59,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurity
   
 ## Example  
   
-```  
+```xml  
 <add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">           
     <sessionTokenRequirement lifetime="10:00" />  
 </add>  

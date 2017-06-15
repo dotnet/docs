@@ -2,7 +2,7 @@
 title: "How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +25,10 @@ manager: "wpickett"
 # How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms
 <xref:System.Windows.Forms.ToolStrip> controls give easy support to themes and styles. You can achieve completely custom appearance and behavior (look and feel) by setting either the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=fullName> property or the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> property to a custom renderer.  
   
- You can assign renderers to each individual <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.ContextMenuStrip>, or <xref:System.Windows.Forms.StatusStrip> control, or you can use the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> property to affect all objects by setting the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> property to <xref:System.Windows.Forms.ToolStripRenderMode?displayProperty=fullName>.  
+ You can assign renderers to each individual <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.ContextMenuStrip>, or <xref:System.Windows.Forms.StatusStrip> control, or you can use the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> property to affect all objects by setting the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> property to <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode?displayProperty=fullName>.  
   
 > [!NOTE]
->  <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> returns <xref:System.Windows.Forms.ToolStripRenderMode> only if the value of <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=fullName> is not `null`.  
+>  <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> returns <xref:System.Windows.Forms.ToolStripRenderMode.Custom> only if the value of <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=fullName> is not `null`.  
   
 ### To create a custom renderer  
   
@@ -46,12 +46,9 @@ manager: "wpickett"
             MyBase.OnRenderItemText(e)  
         End Sub  
     End Class  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     public class RedTextRenderer : _  
         System.Windows.Forms.ToolStripRenderer  
     {  
@@ -63,7 +60,6 @@ manager: "wpickett"
            base.OnRenderItemText(e);  
         }  
     }  
-  
     ```  
   
 ### To set the custom renderer to be the current renderer  
@@ -72,30 +68,22 @@ manager: "wpickett"
   
     ```vb  
     toolStrip1.Renderer = New RedTextRenderer()  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     toolStrip1.Renderer = new RedTextRenderer();  
-  
     ```  
   
-2.  Or to set the custom renderer for all <xref:System.Windows.Forms.ToolStrip> classes contained in your application: Set the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> property to the custom renderer and set the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property to <xref:System.Windows.Forms.ToolStripRenderMode>.  
+2.  Or to set the custom renderer for all <xref:System.Windows.Forms.ToolStrip> classes contained in your application: Set the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> property to the custom renderer and set the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property to <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
   
     ```vb  
     toolStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode  
     ToolStripManager.Renderer = New RedTextRenderer()  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     toolStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode;  
     ToolStripManager.Renderer = new RedTextRenderer();  
-  
     ```  
   
 ## See Also  

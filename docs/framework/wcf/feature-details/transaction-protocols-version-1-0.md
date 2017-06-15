@@ -2,7 +2,7 @@
 title: "Transaction Protocols version 1.0 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -147,7 +147,7 @@ manager: "erikre"
   
 #### CreateCoordinationContext  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>http://.../ws/2004/10/wscoor/CreateCoordinationContext</Action>  
@@ -169,12 +169,11 @@ manager: "erikre"
     </wscoor:CreateCoordinationContext>  
   </s:Body>  
 </s11:Envelope>  
-  
 ```  
   
 #### CreateCoordinationContextResponse  
   
-```  
+```xml  
 <s:Envelope>  
   <!-- Data below is shown in the clear for  
        illustration purposes only. -->  
@@ -252,7 +251,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContextResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Registration Messages  
@@ -260,7 +258,7 @@ manager: "erikre"
   
 #### Register  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>http://schemas.xmlsoap.org/ws/2004/10/wscoor/Register</a:Action>  
@@ -317,12 +315,11 @@ manager: "erikre"
     </wscoor:Register>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### Register Response  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>  
@@ -354,7 +351,6 @@ manager: "erikre"
     </wscoor:RegisterResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Two Phase Commit Protocol Messages  
@@ -362,7 +358,7 @@ manager: "erikre"
   
 #### Commit  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>http://.../ws/2004/10/wsat/Commit</a:Action>  
@@ -381,7 +377,6 @@ manager: "erikre"
     <wsat:Commit />  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Application Messages  
@@ -389,7 +384,7 @@ manager: "erikre"
   
 #### Application message-Request  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
 <!-- Addressing headers, all signed-->  

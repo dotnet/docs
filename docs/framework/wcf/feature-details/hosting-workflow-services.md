@@ -2,7 +2,7 @@
 title: "Hosting Workflow Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
   
 -   Place a .xamlx file that defines the workflow service in an IIS/WAS virtual directory. The .xamlx file specifies the endpoints to expose. Endpoints are specified in a `WorkflowService.Endpoints` element as shown in the following example.  
   
-    ```  
+    ```xml  
     <WorkflowService xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">  
       <WorkflowService.Endpoints>  
         <Endpoint ServiceContractName="IWorkFlowEchoService" AddressUri="">  
@@ -39,7 +39,6 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
       </WorkflowService.Endpoints>  
     <!-- ... -->  
     </WorkflowService>  
-  
     ```  
   
     > [!NOTE]

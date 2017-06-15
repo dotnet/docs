@@ -2,7 +2,7 @@
 title: "&lt;oneWay&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,17 +26,15 @@ Enables packet routing and the use of one-way methods for a custom binding.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <oneWay packetRoutable="Boolean">  
         <channelPoolSettings  
            idleTimeout"TimeSpan"  
           leaseTimeout"TimeSpan"  
-          maxOutboundConnectionsPerEndpopint=”Integer” />  
+          maxOutboundConnectionsPerEndpopint="Integer" />  
 ```  
   
-```  
-  
+```xml  
 </oneWay>  
 ```  
   

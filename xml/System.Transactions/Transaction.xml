@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions.Local</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -74,6 +78,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Transaction</ReturnType>
       </ReturnValue>
@@ -104,6 +112,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Transaction</ReturnType>
@@ -139,6 +151,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.DependentTransaction</ReturnType>
       </ReturnValue>
@@ -155,7 +171,7 @@
 ## Remarks  
  A dependent transaction is a transaction whose outcome depends on the outcome of the transaction from which it was cloned.  
   
- The `cloneoption` parameter controls what kind of dependent transaction to create. If a dependent transaction is created with <xref:System.Transactions.DependentCloneOption>, it blocks the commit process of the transaction until the transaction times out, or <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>. If it is created with <xref:System.Transactions.DependentCloneOption>, it automatically aborts the transaction if <xref:System.Transactions.CommittableTransaction.Commit%2A> is called before <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>.  
+ The `cloneoption` parameter controls what kind of dependent transaction to create. If a dependent transaction is created with <xref:System.Transactions.DependentCloneOption.BlockCommitUntilComplete>, it blocks the commit process of the transaction until the transaction times out, or <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>. If it is created with <xref:System.Transactions.DependentCloneOption.RollbackIfNotComplete>, it automatically aborts the transaction if <xref:System.Transactions.CommittableTransaction.Commit%2A> is called before <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the <xref:System.Transactions.DependentTransaction>.  
   
    
   
@@ -182,6 +198,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -221,6 +241,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnlistDurable">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enlists a durable resource manager to participate in a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnlistDurable">
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistDurable (Guid manager, System.Transactions.IEnlistmentNotification notification, System.Transactions.EnlistmentOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistDurable(valuetype System.Guid manager, class System.Transactions.IEnlistmentNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" />
@@ -234,6 +272,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Enlistment</ReturnType>
@@ -275,6 +317,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Enlistment</ReturnType>
       </ReturnValue>
@@ -315,6 +361,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -331,11 +381,11 @@
 ## Remarks  
  Enlistments in a transaction are volatile; that is, they do not survive the failure of the participant. In addition, this method only suggests the transaction manager to escalate control, but the escalation itself is not guaranteed. If escalation fails, the user is not notified and the transaction is rolled back.  
   
- The parameter `promotableSinglePhaseNotification` is used to communicate to the transaction manager the outcome of attempting to commit the resource manager's internal transaction.  If inconsistent data is reported, the transaction manager throws an exception. If an <xref:System.Transactions.TransactionStatus> outcome is reported, the transaction manager looks for the outcome notification in its own internal enlistment and ignores the reported response.  
+ The parameter `promotableSinglePhaseNotification` is used to communicate to the transaction manager the outcome of attempting to commit the resource manager's internal transaction.  If inconsistent data is reported, the transaction manager throws an exception. If an <xref:System.Transactions.TransactionStatus.InDoubt> outcome is reported, the transaction manager looks for the outcome notification in its own internal enlistment and ignores the reported response.  
   
  For more information on enlistments and escalation of a transaction, please see [Transaction Management Escalation](http://msdn.microsoft.com/en-us/5b87ae58-8ccf-4b9b-9715-41e4aade89b7). For more information on PSPE, see [Optimization Using Single Phase Commit and Promotable Single Phase Notification](http://msdn.microsoft.com/en-us/653d51d1-b4bf-4e34-9a6f-aec073f0f5bb).  
   
- **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction.LinkDemand> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
   
  ]]></format>
         </remarks>
@@ -354,6 +404,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -389,6 +443,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnlistVolatile">
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enlists a volatile resource manager to participate in a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnlistVolatile">
       <MemberSignature Language="C#" Value="public System.Transactions.Enlistment EnlistVolatile (System.Transactions.IEnlistmentNotification notification, System.Transactions.EnlistmentOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Transactions.Enlistment EnlistVolatile(class System.Transactions.IEnlistmentNotification notification, valuetype System.Transactions.EnlistmentOptions options) cil managed" />
@@ -402,6 +474,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Enlistment</ReturnType>
@@ -449,6 +525,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Enlistment</ReturnType>
       </ReturnValue>
@@ -487,6 +567,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -515,6 +599,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -538,6 +626,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -572,6 +664,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
@@ -601,6 +697,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -634,6 +734,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -665,6 +769,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.Enlistment</ReturnType>
@@ -701,6 +809,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
@@ -730,6 +842,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -761,6 +877,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -786,6 +906,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -824,6 +948,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -852,6 +980,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.TransactionCompletedEventHandler</ReturnType>
       </ReturnValue>
@@ -861,7 +993,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can register for this event instead of using a volatile enlistment to get outcome information for transactions. The parameter passed to the <xref:System.Transactions.TransactionCompletedEventHandler> delegate is a <xref:System.Transactions.Transaction> instance. You can then query the <xref:System.Transactions.Transaction.TransactionInformation%2A> property of the specific instance to get an instance of <xref:System.Transactions.TransactionInformation>, whose <xref:System.Transactions.TransactionInformation.Status%2A> property contains the status of a transaction with either the <xref:System.Transactions.TransactionStatus> or <xref:System.Transactions.TransactionStatus> value.  
+ You can register for this event instead of using a volatile enlistment to get outcome information for transactions. The parameter passed to the <xref:System.Transactions.TransactionCompletedEventHandler> delegate is a <xref:System.Transactions.Transaction> instance. You can then query the <xref:System.Transactions.Transaction.TransactionInformation%2A> property of the specific instance to get an instance of <xref:System.Transactions.TransactionInformation>, whose <xref:System.Transactions.TransactionInformation.Status%2A> property contains the status of a transaction with either the <xref:System.Transactions.TransactionStatus.Committed> or <xref:System.Transactions.TransactionStatus.Aborted> value.  
   
  **Caution** Signing up for this event negatively affects the performance of the transaction it is attached to.  
   
@@ -892,6 +1024,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.TransactionInformation</ReturnType>
       </ReturnValue>
@@ -901,41 +1037,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EnlistVolatile">
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enlists a volatile resource manager to participate in a transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Volatile resource managers cannot recovery from failure to complete a transaction in which they were participating. For more information on volatile and durable resources, as well as how to enlist a resource, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e). For more information on how a resource manager responds to commit notification and prepare the commit, see [Committing A Transaction In Single-Phase and Multi-Phase](http://msdn.microsoft.com/en-us/74b3cfe1-d33a-45b8-91f4-dfd6f6598c4d).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EnlistDurable">
-      <AssemblyInfo>
-        <AssemblyName>System.Transactions</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enlists a durable resource manager to participate in a transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

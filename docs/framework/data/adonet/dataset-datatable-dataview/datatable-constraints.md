@@ -2,7 +2,7 @@
 title: "DataTable Constraints | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +45,6 @@ Dim custOrderFK As ForeignKeyConstraint = New ForeignKeyConstraint("CustOrderFK"
 custOrderFK.DeleteRule = Rule.None    
 ' Cannot delete a customer value that has associated existing orders.  
 custDS.Tables("OrdersTable").Constraints.Add(custOrderFK)  
-  
 ```  
   
 ```csharp  
@@ -86,7 +85,6 @@ Dim custUnique As UniqueConstraint = _
     New UniqueConstraint(New DataColumn()   {custTable.Columns("CustomerID"), _  
     custTable.Columns("CompanyName")})  
 custDS.Tables("Customers").Constraints.Add(custUnique)  
-  
 ```  
   
 ```csharp  

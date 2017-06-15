@@ -147,7 +147,6 @@ public class LineItem
           }  
      }  
 }  
-  
 ```  
   
  The <xref:System.Runtime.Serialization.DataContractAttribute> signifies that zero or more of a type’s fields or properties are to be serialized, while the <xref:System.Runtime.Serialization.DataMemberAttribute> indicates that a particular field or property is to be serialized. The <xref:System.Runtime.Serialization.DataContractAttribute> can be applied to a class or structure. The <xref:System.Runtime.Serialization.DataMemberAttribute> can be applied to a field or a property, and the fields and properties to which the attribute is applied can be either public or private. Instances of types that have the <xref:System.Runtime.Serialization.DataContractAttribute> applied to them are referred to as data contracts in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. They are serialized into XML using <xref:System.Runtime.Serialization.DataContractSerializer>.  
@@ -204,7 +203,6 @@ public class LineItem
      [DataMember]  
      public decimal UnitPrice;  
 }  
-  
 ```  
   
  The Windows software development kit (SDK) includes a command-line tool called the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).Like the xsd.exe tool used with ASP.NET Web services, Svcutil.exe can generate definitions of .NET data types from XML Schema. The types are data contracts if the <xref:System.Runtime.Serialization.DataContractSerializer> can emit XML in the format defined by the XML Schema; otherwise, they are intended for serialization using the <xref:System.Xml.Serialization.XmlSerializer>. The tool, Svcutil.exe, can also be made to generate XML Schema from data contracts using its `/dataContractOnly` switch.  
@@ -280,7 +278,7 @@ public class Service : IEcho
   
  The next step is to associate an address and a binding with a service type. That is typically done in a configuration file, either by editing the file directly, or by using a configuration editor provided with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Here is an example of a configuration file.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
      <system.serviceModel>  
@@ -294,7 +292,6 @@ public class Service : IEcho
       </services>  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The binding specifies the set of protocols for communicating with the application. The following table lists the system-provided bindings that represent common options.  
@@ -320,7 +317,6 @@ public class Service : IEcho
 ```  
 [ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple]  
 public class DerivativesCalculatorServiceType: IDerivativesCalculator  
-  
 ```  
   
  Some behaviors, like <xref:System.ServiceModel.ServiceBehaviorAttribute>, are attributes. Others, the ones with properties that administrators would want to set, can be modified in the configuration of an application.  
@@ -345,7 +341,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
 2.  Create a service file with a .svc extension with an `@ ServiceHost` directive to identify the service type:  
   
     ```  
-    <%@ServiceHost language=”c#” Service="MyService" %>  
+    <%@ServiceHost language="c#" Service="MyService" %>  
     ```  
   
 3.  Copy the service file into a virtual directory, and the assembly into the \bin subdirectory of that virtual directory.  
@@ -368,7 +364,7 @@ Uri[] baseAdresses = new Uri[] {
  tcpBaseAddressUri};  
   
 using(ServiceHost host = new ServiceHost(  
-typeof(Service), //”Service” is the name of the service type baseAdresses))  
+typeof(Service), //"Service" is the name of the service type baseAdresses))  
 {  
      host.Open();  
   
@@ -393,7 +389,7 @@ typeof(Service), //”Service” is the name of the service type baseAdresses))
   
 2.  The administrator must configure the application to use the ASP.NET compatibility mode.  
   
-    ```  
+    ```xml  
     <configuration>  
          <system.serviceModel>  
           <services>  
@@ -406,7 +402,7 @@ typeof(Service), //”Service” is the name of the service type baseAdresses))
   
      [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications can also be configured to use .asmx as the extension for their service files rather than .svc.  
   
-    ```  
+    ```xml  
     <system.web>  
          <compilation>  
           <compilation debug="true">  
@@ -523,7 +519,7 @@ public interface IItemService
   
  This syntax yields an explicit representation of the structure of the messages, whereas the structure of messages is implied by the code of an ASP.NET Web service. Also, in the ASP.NET syntax, message headers are represented as properties of the service, such as the `ProtocolHeader` property in the previous example, whereas in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syntax, they are more accurately represented as properties of messages. Also, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows message headers to be added to the configuration of endpoints.  
   
-```  
+```xml  
 <service name="Service ">  
      <endpoint   
       address="EchoService"  
@@ -537,7 +533,6 @@ public interface IItemService
       </headers>  
      </endpoint>  
 </service>  
-  
 ```  
   
  That option allows you to avoid any reference to infrastructural protocol headers in the code for a client or service: the headers are added to messages because of how the endpoint is configured.  
@@ -548,7 +543,6 @@ public interface IItemService
  ASP.NET 2.0 made it possible to validate that a service is compliant with the Basic Profile 1.1 of the Web Services-Interoperability Organization (WS-I), and to insert a claim that the service is compliant into its WSDL. That is done using the `ConformsTo` and `EmitConformanceClaims` parameters of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute.  
   
 ```  
-  
 [WebService(Namespace = "http://tempuri.org/")]  
 [WebServiceBinding(  
      ConformsTo = WsiProfiles.BasicProfile1_1,  
@@ -564,7 +558,7 @@ public interface IEcho
   
  The WSDL that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates can be extensively customized. The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class provides some facilities for customizing the WSDL. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can also be configured to not generate WSDL, but rather to use a static WSDL file at a given URL.  
   
-```  
+```xml  
 <behaviors>  
      <behavior name="DescriptionBehavior">  
      <metadataPublishing   
@@ -691,7 +685,7 @@ void ITradingService.AddTrade(Trade trade)
   
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration system provides its own identity element for designating a particular user to impersonate. Also, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services can be independently configured for impersonation. Clients can be configured to impersonate the current user when they transmit requests.  
   
-```  
+```xml  
 <behaviors>  
      <behavior name="DerivativesCalculatorClientBehavior">  
       <clientCredentials>  
@@ -718,7 +712,7 @@ public void Receive(Message input)
   
  The role provider mechanism can actually be used independently of ASP.NET in any .NET application, including a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. The following sample configuration for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application shows how the use of an ASP.NET role provider is an option selected by means of the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
   
-```  
+```xml  
 <system.serviceModel>  
      <services>  
          <service name="Service.ResourceAccessServiceType"   
@@ -742,7 +736,7 @@ public void Receive(Message input)
   
  Authorization based on claims is accomplished by comparing a set of claims to the access requirements of the operation and, depending on the outcome of that comparison, granting or denying access to the operation. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you can specify a class to use to run claims-based authorization, once again by assigning a value to the `ServiceAuthorizationManager` property of <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
   
-```  
+```xml  
 <behaviors>  
      <behavior name='ServiceBehavior'>  
      <serviceAuthorization   

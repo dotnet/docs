@@ -2,7 +2,7 @@
 title: "ICorDebugVariableHome::GetCode Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetCode method [.NET Framework debugging]"
   - "GetCode method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: ef002890-4a7b-4a5d-abbf-16c60083f794
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,11 +36,9 @@ Gets the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](../
 ## Syntax  
   
 ```  
-  
 HRESULT GetCode(  
     [out] ICorDebugCode **ppCode  
 );  
-  
 ```  
   
 #### Parameters  

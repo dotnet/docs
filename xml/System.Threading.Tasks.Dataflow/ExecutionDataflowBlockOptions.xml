@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Threading.Tasks.Dataflow.DataflowBlockOptions</BaseTypeName>
@@ -17,8 +18,31 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides options used to configure the processing performed by dataflow blocks that process each message through the invocation of a user-provided delegate. These are dataflow blocks such as  <see cref="T:System.Threading.Tasks.Dataflow.ActionBlock`1" /> and  <see cref="T:System.Threading.Tasks.Dataflow.TransformBlock`2" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions> is mutable and can be configured through its properties.  
+  
+ When specific configuration options are not set, the following defaults are used:  
+  
+|Options|Default|  
+|-------------|-------------|  
+|TaskScheduler|<xref:System.Threading.Tasks.TaskScheduler.Default%2A>|  
+|CancellationToken|<xref:System.Threading.CancellationToken.None%2A>|  
+|MaxMessagesPerTask|DataflowBlockOptions.Unbounded (-1)|  
+|BoundedCapacity|DataflowBlockOptions.Unbounded (-1)|  
+|MaxDegreeOfParallelism|1|  
+  
+ Dataflow block capture the state of the options at their construction. Subsequent changes to the provided <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions> instance should not affect the behavior of a dataflow block.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +54,11 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new <see cref="T:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,13 +71,14 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum number of messages that may be processed by the block concurrently.</summary>
+        <value>The maximum number of messages.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,14 +91,22 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets whether code using the dataflow block is constrained to one producer at a time.</summary>
+        <value>Returns  <see cref="T:System.Boolean" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defaults to false, such that the block may be used by multiple producers concurrently. This property should only be set to true if the code using the block can guarantee that it will only ever be used by one producer (e.g. a source linked to the block) at a time, meaning that methods like Post, Complete, Fault, and OfferMessage will never be called concurrently. Some blocks may choose to capitalize on the knowledge that there will only be one producer at a time in order to provide better performance.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "&lt;system.serviceModel.activation&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,7 +21,7 @@ This configuration section represents the configuration settings for the SMSvcHo
 ## Sample Configuration File  
  The following is a sample configuration file (SMSvcHost.exe.config), which is used by the listener process SMSvcHost.exe.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <gcConcurrent enabled="false" />  

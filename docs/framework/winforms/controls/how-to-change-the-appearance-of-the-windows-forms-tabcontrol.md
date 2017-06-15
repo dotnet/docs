@@ -2,7 +2,7 @@
 title: "How to: Change the Appearance of the Windows Forms TabControl | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +47,7 @@ You can change the appearance of tabs in Windows Forms by using properties of th
   
 ### To arrange tabs on the side of the control  
   
--   Set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property of the <xref:System.Windows.Forms.TabControl> to <xref:System.Windows.Forms.TabAlignment> or <xref:System.Windows.Forms.TabAlignment>.  
+-   Set the <xref:System.Windows.Forms.TabControl.Alignment%2A> property of the <xref:System.Windows.Forms.TabControl> to <xref:System.Windows.Forms.TabAlignment.Left> or <xref:System.Windows.Forms.TabAlignment.Right>.  
   
 ### To programmatically enable or disable all controls on a tab  
   
@@ -55,12 +55,10 @@ You can change the appearance of tabs in Windows Forms by using properties of th
   
     ```vb  
     TabPage1.Enabled = False  
-  
     ```  
   
     ```csharp  
     tabPage1.Enabled = false;  
-  
     ```  
   
     ```cpp  
@@ -69,7 +67,7 @@ You can change the appearance of tabs in Windows Forms by using properties of th
   
 ### To display tabs as buttons  
   
--   Set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the <xref:System.Windows.Forms.TabControl> to <xref:System.Windows.Forms.TabAppearance> or <xref:System.Windows.Forms.TabAppearance>.  
+-   Set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the <xref:System.Windows.Forms.TabControl> to <xref:System.Windows.Forms.TabAppearance.Buttons> or <xref:System.Windows.Forms.TabAppearance.FlatButtons>.  
   
 ## See Also  
  [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)   

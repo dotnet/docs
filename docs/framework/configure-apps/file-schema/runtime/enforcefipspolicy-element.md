@@ -2,7 +2,7 @@
 title: "&lt;enforceFIPSPolicy&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +34,7 @@ Specifies whether to enforce a computer configuration requirement that cryptogra
   
 ## Syntax  
   
-```  
+```xml  
 <enforceFIPSPolicy enabled="true|false" />  
 ```  
   
@@ -72,7 +72,7 @@ Specifies whether to enforce a computer configuration requirement that cryptogra
 ## Example  
  The following example shows how to prevent the CLR from enforcing FIPS compliance.  
   
-```  
+```xml  
 <configuration>  
     <runtime>  
         <enforceFIPSPolicy enabled="false"/>  

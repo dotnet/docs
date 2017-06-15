@@ -2,7 +2,7 @@
 title: "StackTrace_SimpleContext Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SimpleContext structure [.NET Framework debugging]"
   - "StackTrace_SimpleContext structure [.NET Framework debugging]"
 ms.assetid: d4cef11f-a8ca-49bc-a1b8-6631f9e28f3e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

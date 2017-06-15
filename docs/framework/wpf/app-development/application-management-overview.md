@@ -87,7 +87,7 @@ All applications tend to share a common set of functionality that applies to app
   
  Traditionally, developers have needed to write some or all of this code for themselves, depending on the technology. However,                          [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] generates this code for you when the markup file of your application definition is configured as an                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`ApplicationDefinition` item, as shown in the following                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] project file:  
   
-```  
+```xml  
 <Project   
   DefaultTargets="Build"  
                         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -96,7 +96,6 @@ All applications tend to share a common set of functionality that applies to app
   <Compile Include="App.xaml.cs" />  
   ...  
 </Project>  
-  
 ```  
   
  Because the code-behind file contains code, it is marked as an                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`Compile` item, as is normal.  
@@ -197,7 +196,7 @@ All applications tend to share a common set of functionality that applies to app
  [!code-csharp[ApplicationStartupSnippets#HandleStartupCODEBEHIND](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml.cs#handlestartupcodebehind)]
  [!code-vb[ApplicationStartupSnippets#HandleStartupCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationStartupSnippets/visualbasic/application.xaml.vb#handlestartupcodebehind)]  
   
- The code handles                          <xref:System.Windows.Application.Startup> to check whether the                          **/StartMinimized** command-line argument was provided; if so, it opens the main window with a                          <xref:System.Windows.WindowState> of                          <xref:System.Windows.WindowState>. Note that because the                          <xref:System.Windows.Window.WindowState%2A> property must be set programmatically, the main                          <xref:System.Windows.Window> must be opened explicitly in code.  
+ The code handles                          <xref:System.Windows.Application.Startup> to check whether the                          **/StartMinimized** command-line argument was provided; if so, it opens the main window with a                          <xref:System.Windows.WindowState> of                          <xref:System.Windows.WindowState.Minimized>. Note that because the                          <xref:System.Windows.Window.WindowState%2A> property must be set programmatically, the main                          <xref:System.Windows.Window> must be opened explicitly in code.  
   
  [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] cannot retrieve and process command-line arguments because they are launched using                          [!INCLUDE[TLA#tla_clickonce](../../../../includes/tlasharptla-clickonce-md.md)] deployment (see                          [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)). However, they can retrieve and process query string parameters from the URLs that are used to launch them.  
   
@@ -251,17 +250,17 @@ All applications tend to share a common set of functionality that applies to app
 #### Shutdown Mode  
  Most applications shut down either when all the windows are closed or when the main window is closed. Sometimes, however, other application-specific conditions may determine when an application shuts down. You can specify the conditions under which your application will shut down by setting                                  <xref:System.Windows.Application.ShutdownMode%2A> with one of the following                                  <xref:System.Windows.ShutdownMode> enumeration values:  
   
--   <xref:System.Windows.ShutdownMode>  
+-   <xref:System.Windows.ShutdownMode.OnLastWindowClose>  
   
--   <xref:System.Windows.ShutdownMode>  
+-   <xref:System.Windows.ShutdownMode.OnMainWindowClose>  
   
--   <xref:System.Windows.ShutdownMode>  
+-   <xref:System.Windows.ShutdownMode.OnExplicitShutdown>  
   
- The default value of                                  <xref:System.Windows.Application.ShutdownMode%2A> is                                  <xref:System.Windows.ShutdownMode>, which means that an application automatically shuts down when the last window in the application is closed by the user. However, if your application should be shut down when the main window is closed,                                  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] automatically does that if you set                                  <xref:System.Windows.Application.ShutdownMode%2A> to                                  <xref:System.Windows.ShutdownMode>. This is shown in the following example.  
+ The default value of                                  <xref:System.Windows.Application.ShutdownMode%2A> is                                  <xref:System.Windows.ShutdownMode.OnLastWindowClose>, which means that an application automatically shuts down when the last window in the application is closed by the user. However, if your application should be shut down when the main window is closed,                                  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] automatically does that if you set                                  <xref:System.Windows.Application.ShutdownMode%2A> to                                  <xref:System.Windows.ShutdownMode.OnMainWindowClose>. This is shown in the following example.  
   
  [!code-xml[ApplicationShutdownModeSnippets#OnMainWindowCloseMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ApplicationShutdownModeSnippets/CS/Page1.xaml#onmainwindowclosemarkup)]  
   
- When you have application-specific shutdown conditions, you set                                  <xref:System.Windows.Application.ShutdownMode%2A> to                                  <xref:System.Windows.ShutdownMode>. In this case, it is your responsibility to shut an application down by explicitly calling the                                  <xref:System.Windows.Application.Shutdown%2A> method; otherwise, your application will continue running even if all the windows are closed. Note that                                  <xref:System.Windows.Application.Shutdown%2A> is called implicitly when the                                  <xref:System.Windows.Application.ShutdownMode%2A> is either                                  <xref:System.Windows.ShutdownMode> or                                  <xref:System.Windows.ShutdownMode>.  
+ When you have application-specific shutdown conditions, you set                                  <xref:System.Windows.Application.ShutdownMode%2A> to                                  <xref:System.Windows.ShutdownMode.OnExplicitShutdown>. In this case, it is your responsibility to shut an application down by explicitly calling the                                  <xref:System.Windows.Application.Shutdown%2A> method; otherwise, your application will continue running even if all the windows are closed. Note that                                  <xref:System.Windows.Application.Shutdown%2A> is called implicitly when the                                  <xref:System.Windows.Application.ShutdownMode%2A> is either                                  <xref:System.Windows.ShutdownMode.OnLastWindowClose> or                                  <xref:System.Windows.ShutdownMode.OnMainWindowClose>.  
   
 > [!NOTE]
 >  <xref:System.Windows.Application.ShutdownMode%2A> can be set from an                                      [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)], but it is ignored; an                                      [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is always shut down when it is navigated away from in a browser or when the browser that hosts the                                      [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is closed. For more information, see                                      [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md).  

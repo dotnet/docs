@@ -2,7 +2,7 @@
 title: "&lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Specifies a certificate to use when authenticating a service to the client.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <serviceCertificate />  
 ```  
   

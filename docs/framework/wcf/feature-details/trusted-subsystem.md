@@ -2,7 +2,7 @@
 title: "Trusted Subsystem | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,7 +54,7 @@ A client accesses one or more Web services that are distributed across a network
 ### Configuration  
  The following configuration sets up the same endpoint using configuration.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
@@ -106,7 +106,7 @@ A client accesses one or more Web services that are distributed across a network
 ### Configuration  
  The following configuration sets up the same endpoint using configuration. Note the two bindings: One secures the service hosted in the trusted subsystem and the other communicates between the trusted subsystem and the back-end service.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
@@ -177,7 +177,7 @@ A client accesses one or more Web services that are distributed across a network
 ### Configuration  
  The following code configures the client to use message security over the HTTP protocol and a user name and password for authentication. The user name and password can only be specified using code (it is not configurable).  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  

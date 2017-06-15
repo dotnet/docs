@@ -85,7 +85,7 @@
 |Item|Description|  
 |----------|-----------------|  
 |<xref:System.Windows.Forms.PictureBox.Image%2A>|`null`|  
-|<xref:System.Windows.Forms.PictureBox.SizeMode%2A>|<xref:System.Windows.Forms.PictureBoxSizeMode>|  
+|<xref:System.Windows.Forms.PictureBox.SizeMode%2A>|<xref:System.Windows.Forms.PictureBoxSizeMode.Normal>|  
   
    
   
@@ -343,7 +343,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -604,7 +604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The property value can be an actual path (for example, “C:\SomeFolder\SomeSubFolder\Picture.jpg”), a relative path (“\SomeSubFolder\Picture.jpg”), or a URL (http://contoso.com/images/Picture.jpg).  
+ The property value can be an actual path (for example, "C:\SomeFolder\SomeSubFolder\Picture.jpg"), a relative path ("\SomeSubFolder\Picture.jpg"), or a URL (http://contoso.com/images/Picture.jpg).  
   
  If a relative path is used, it will be considered relative to the working directory.  
   
@@ -1253,7 +1253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.PictureBox.OnResize%2A> method redraws the image if the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property is set to <xref:System.Windows.Forms.PictureBoxSizeMode>, <xref:System.Windows.Forms.PictureBoxSizeMode>, or <xref:System.Windows.Forms.PictureBoxSizeMode>.  
+ The <xref:System.Windows.Forms.PictureBox.OnResize%2A> method redraws the image if the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property is set to <xref:System.Windows.Forms.PictureBoxSizeMode.Zoom>, <xref:System.Windows.Forms.PictureBoxSizeMode.CenterImage>, or <xref:System.Windows.Forms.PictureBoxSizeMode.StretchImage>.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1417,9 +1417,9 @@
 ## Remarks  
  Valid values for this property are taken from the <xref:System.Windows.Forms.PictureBoxSizeMode> enumeration.  
   
- By default, in <xref:System.Windows.Forms.PictureBoxSizeMode> mode, the <xref:System.Drawing.Image> is positioned in the upper-left corner of the <xref:System.Windows.Forms.PictureBox>, and any part of the image that is too big for the <xref:System.Windows.Forms.PictureBox> is clipped. Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the image to stretch or shrink to fit the <xref:System.Windows.Forms.PictureBox>. Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the image to be stretched or shrunk to fit the <xref:System.Windows.Forms.PictureBox>; however, the aspect ratio in the original is maintained.  
+ By default, in <xref:System.Windows.Forms.PictureBoxSizeMode.Normal> mode, the <xref:System.Drawing.Image> is positioned in the upper-left corner of the <xref:System.Windows.Forms.PictureBox>, and any part of the image that is too big for the <xref:System.Windows.Forms.PictureBox> is clipped. Using the <xref:System.Windows.Forms.PictureBoxSizeMode.StretchImage> value causes the image to stretch or shrink to fit the <xref:System.Windows.Forms.PictureBox>. Using the <xref:System.Windows.Forms.PictureBoxSizeMode.Zoom> value causes the image to be stretched or shrunk to fit the <xref:System.Windows.Forms.PictureBox>; however, the aspect ratio in the original is maintained.  
   
- Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the control to resize to always fit the image. Using the <xref:System.Windows.Forms.PictureBoxSizeMode> value causes the image to be centered in the client area.  
+ Using the <xref:System.Windows.Forms.PictureBoxSizeMode.AutoSize> value causes the control to resize to always fit the image. Using the <xref:System.Windows.Forms.PictureBoxSizeMode.CenterImage> value causes the image to be centered in the client area.  
   
    
   

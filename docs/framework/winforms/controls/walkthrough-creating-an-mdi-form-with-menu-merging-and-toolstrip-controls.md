@@ -2,7 +2,7 @@
 title: "Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -155,7 +155,7 @@ The <xref:System.Windows.Forms?displayProperty=fullName> namespace supports mult
   
 3.  Select the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
-4.  In the Properties window, change the value of the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+4.  In the Properties window, change the value of the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left>.  
   
      The <xref:System.Windows.Forms.ToolStripPanel> control docks to the left side of the form, underneath the main menu. The MDI client area resizes to fit the <xref:System.Windows.Forms.ToolStripPanel> control.  
   

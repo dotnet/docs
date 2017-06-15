@@ -4,7 +4,7 @@ Imports System
 Imports System.Windows.Automation
 Imports System.Windows.Automation.Provider
 Imports System.Reflection
-Imports System.Runtime.InteropServices ' for DllImport
+Imports System.Runtime.InteropServices
 Imports System.IO
 
 

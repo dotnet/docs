@@ -2,7 +2,7 @@
 title: "ToolStripProgressBar Control Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ The <xref:System.Windows.Forms.ToolStripProgressBar> combines the rafting and re
   
 |Name|Description|  
 |----------|-----------------|  
-|<xref:System.Windows.Forms.ToolStripProgressBar.MarqueeAnimationSpeed%2A>|Gets or sets a value representing the delay between each <xref:System.Windows.Forms.ProgressBarStyle> display update, in milliseconds.|  
+|<xref:System.Windows.Forms.ToolStripProgressBar.MarqueeAnimationSpeed%2A>|Gets or sets a value representing the delay between each <xref:System.Windows.Forms.ProgressBarStyle.Marquee> display update, in milliseconds.|  
 |<xref:System.Windows.Forms.ProgressBar.Maximum%2A>|Gets or sets the upper bound of the range that is defined for this <xref:System.Windows.Forms.ToolStripProgressBar>.|  
 |<xref:System.Windows.Forms.ToolStripProgressBar.Minimum%2A>|Gets or sets the lower bound of the range that is defined for this <xref:System.Windows.Forms.ToolStripProgressBar>.|  
 |<xref:System.Windows.Forms.ToolStripProgressBar.Style%2A>|Gets or sets the style that the <xref:System.Windows.Forms.ToolStripProgressBar> uses to display the progress of an operation.|  

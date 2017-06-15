@@ -33,6 +33,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BeginResolve">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous call that resolves a metadata address into a collection of <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects for that service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods begin asynchronous versions of the <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginResolve">
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginResolve (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ContractDescription&gt; contracts, System.ServiceModel.EndpointAddress address, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginResolve(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.ContractDescription&gt; contracts, class System.ServiceModel.EndpointAddress address, class System.AsyncCallback callback, object asyncState) cil managed" />
@@ -328,6 +345,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Resolve">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads and resolves a metadata address into the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects for that service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=fullName> directly.  
+  
+ For all synchronous and asynchronous `Resolve` methods, an empty collection is returned if no endpoints were imported or if no endpoints matched the contract. If an empty collection is returned, a warning trace is written.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Resolve">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ServiceEndpointCollection Resolve (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ContractDescription&gt; contracts, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ServiceEndpointCollection Resolve(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.ContractDescription&gt; contracts, class System.ServiceModel.EndpointAddress address) cil managed" />
@@ -588,41 +624,5 @@
           <paramref name="contracts" /> is empty, at least one member of <paramref name="contracts" /> is null, or <paramref name="contracts" /> contains more than one contract with the same name and namespace.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginResolve">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous call that resolves a metadata address into a collection of <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects for that service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These methods begin asynchronous versions of the <xref:System.ServiceModel.Description.MetadataResolver.Resolve%2A> methods.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Resolve">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Downloads and resolves a metadata address into the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> objects for that service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To download metadata but not resolve the information into <xref:System.ServiceModel.Description.ServiceEndpoint> objects, use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=fullName> directly.  
-  
- For all synchronous and asynchronous `Resolve` methods, an empty collection is returned if no endpoints were imported or if no endpoints matched the contract. If an empty collection is returned, a warning trace is written.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

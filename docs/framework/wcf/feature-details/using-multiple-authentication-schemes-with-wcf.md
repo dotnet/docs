@@ -2,7 +2,7 @@
 title: "Using Multiple Authentication Schemes with WCF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,7 +19,7 @@ manager: "erikre"
 WCF now allows you to specify multiple authentication schemes on a single endpoint. Furthermore web hosted services can inherit their authentication settings directly from IIS. Self-hosted services can specify what authentication schemes can be used. For more information about setting authentication settings in IIS, see [IIS Authentication](http://go.microsoft.com/fwlink/?LinkId=232458)  
   
 ## IIS-Hosted Services  
- For IIS-hosted services, set the authentication schemes you wish to use in IIS. Then in your service’s web.config file, in your binding configuration specify clientCredential type as “InheritedFromHost” as shown in the following XML snippet:  
+ For IIS-hosted services, set the authentication schemes you wish to use in IIS. Then in your service’s web.config file, in your binding configuration specify clientCredential type as "InheritedFromHost" as shown in the following XML snippet:  
   
 ```xml  
 <bindings>  
@@ -51,7 +51,6 @@ else
      sab.AuthenticationSchemes = AuthenticationSchemes.Basic | AuthenticationSchemes.Negotiate | AuthenticationSchemes.Digest;  
 }  
 // ...  
-  
 ```  
   
  When configuring this in a config file, use the \<serviceAuthenticationManager> element as shown in the following XML snippet.  
@@ -88,7 +87,6 @@ else
      sab.AuthenticationSchemes = AuthenticationSchemes.Basic | AuthenticationSchemes.Negotiate | AuthenticationSchemes.Digest;  
 }  
 // ...  
-  
 ```  
   
  In config, it looks like this:  
@@ -122,10 +120,9 @@ else
   
 ```xml  
 <binding name="multipleBinding">  
-      <textMessageEncoding/>  
-      <httpTransport authenticationScheme="Negotiate, Ntlm, Digest, Basic" />  
-    </binding>  
-  
+      <textMessageEncoding/>  
+      <httpTransport authenticationScheme="Negotiate, Ntlm, Digest, Basic" />  
+    </binding>  
 ```  
   
 ## See Also  

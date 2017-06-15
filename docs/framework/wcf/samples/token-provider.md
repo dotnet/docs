@@ -2,7 +2,7 @@
 title: "Token Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ This sample demonstrates how to implement a custom token provider. A token provi
   
  The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, which uses message security by default. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using the serviceCredentials behavior. The serviceCredentials behavior allows you to configure a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.  
   
-```  
+```xml  
 <system.serviceModel>  
     <services>  
       <service   
@@ -86,12 +86,11 @@ This sample demonstrates how to implement a custom token provider. A token provi
       </serviceBehaviors>  
     </behaviors>  
   </system.serviceModel>  
-  
 ```  
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and message `clientCredentialType`.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint name=""  
@@ -133,7 +132,6 @@ This sample demonstrates how to implement a custom token provider. A token provi
         // return new UserNameSecurityToken containing information obtained from user  
         return new UserNameSecurityToken(username, password);  
     }  
-  
     ```  
   
 2.  Write custom security token manager.  
@@ -208,7 +206,6 @@ This sample demonstrates how to implement a custom token provider. A token provi
          client.ChannelFactory.Endpoint.Behaviors.Add(new MyUserNameClientCredentials());  
        // ...  
     }  
-  
     ```  
   
  On the service, to display the caller's information, use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code example. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.  
@@ -219,7 +216,6 @@ static void DisplayIdentityInformation()
     Console.WriteLine("\t\tSecurity context identity  :  {0}",   
         ServiceSecurityContext.Current.PrimaryIdentity.Name);  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -249,7 +245,6 @@ static void DisplayIdentityInformation()
   
     ```  
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople  
-  
     ```  
   
 > [!NOTE]

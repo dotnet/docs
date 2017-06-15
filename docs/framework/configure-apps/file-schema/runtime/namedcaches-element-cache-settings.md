@@ -2,7 +2,7 @@
 title: "&lt;namedCaches&gt; Element (Cache Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,9 +34,9 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ## Syntax  
   
-```  
+```xml  
 <namedCaches>  
-  <add name="default"   
+  <add name="default"   
 </namedCaches>  
 ```  
   
@@ -81,7 +81,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
  The `cacheMemoryLimitMegabytes` attribute and the `physicalMemoryPercentage` attribute are set to zero. Setting these attributes to zero means that the autosizing heuristics of the <xref:System.Runtime.Caching.MemoryCache> class are used. The cache implementation compares the current memory load against the absolute and percentage-based memory limits every two minutes.  
   
-```  
+```xml  
 <configuration>  
   
   <system.runtime.caching>  

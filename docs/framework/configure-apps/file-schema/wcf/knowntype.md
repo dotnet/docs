@@ -2,7 +2,7 @@
 title: "&lt;knownType&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
   
 ## Syntax  
   
-```  
-  
+```xml  
 <knownType type="String">  
      <parameter index="Integer"  
                 type="String" />  
@@ -65,7 +64,7 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
   
 ## Example  
   
-```  
+```xml  
 <add type="MyCompany.Library.Shape,   
            MyAssembly, Version=2.0.0.0, Culture=neutral,  
            PublicKeyToken=XXXXXX, processorArchitecture=MSIL">  

@@ -30,6 +30,31 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityConnection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid inadvertently putting objects such as <xref:System.Data.Common.CommandTrees> and <xref:System.Data.Objects.ObjectContext> out of sync with their metadata, <xref:System.Data.EntityClient.EntityConnection> must lock its metadata. No changes to the connection string are allowed after the metadata is locked. The following are two scenarios in which metadata is locked:  
+  
+-   The <xref:System.Data.EntityClient.EntityConnection> instance is constructed through the default constructor, or through the <xref:System.Data.EntityClient.EntityConnection.%23ctor%28System.String%29> constructor, which accepts a connection string. In either case the connection string might be changed multiple times before the connection is opened. Calling <xref:System.Data.EntityClient.EntityConnection.Open%2A> or <xref:System.Data.EntityClient.EntityConnection.GetMetadataWorkspace%2A> locks the metadata.  
+  
+-   The <xref:System.Data.EntityClient.EntityConnection> instance is constructed through the <xref:System.Data.EntityClient.EntityConnection.%23ctor%28System.Data.Metadata.Edm.MetadataWorkspace%2CSystem.Data.Common.DbConnection%29> constructor, which accepts a <xref:System.Data.Metadata.Edm.MetadataWorkspace> and a <xref:System.Data.Common.DbConnection>. In this case the metadata is locked at construction time. No changes to the connection string are ever allowed.  
+  
+ When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
+  
+ For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -188,7 +213,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A> method uses the <xref:System.Data.IsolationLevel> transaction isolation level. To specify a different isolation level, call <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>. This value might be interpreted differently by different underlying providers. If you want your application to be portable across multiple providers, it should explicitly specify the transaction isolation level by calling <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>.  
+ The <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A> method uses the <xref:System.Data.IsolationLevel.Unspecified> transaction isolation level. To specify a different isolation level, call <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>. This value might be interpreted differently by different underlying providers. If you want your application to be portable across multiple providers, it should explicitly specify the transaction isolation level by calling <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>.  
   
  At any particular moment there can be no more than one active transaction that was created through <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A>. An attempt to call any of the <xref:System.Data.EntityClient.EntityConnection.BeginTransaction%2A> overloads on an <xref:System.Data.EntityClient.EntityConnection> that already has a current transaction results in an <xref:System.InvalidOperationException>.  
   
@@ -604,7 +629,7 @@ Provider Connection String= 'Data Source=localhost;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Establishes a connection to the data source by calling the underlying data provider's<see langword=" Open" /> method.</summary>
+        <summary>Establishes a connection to the data source by calling the underlying data provider's <see langword="Open" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -688,30 +713,5 @@ Provider Connection String= 'Data Source=localhost;
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityConnection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To avoid inadvertently putting objects such as <xref:System.Data.Common.CommandTrees> and <xref:System.Data.Objects.ObjectContext> out of sync with their metadata, <xref:System.Data.EntityClient.EntityConnection> must lock its metadata. No changes to the connection string are allowed after the metadata is locked. The following are two scenarios in which metadata is locked:  
-  
--   The <xref:System.Data.EntityClient.EntityConnection> instance is constructed through the default constructor, or through the <xref:System.Data.EntityClient.EntityConnection.%23ctor%28System.String%29> constructor, which accepts a connection string. In either case the connection string might be changed multiple times before the connection is opened. Calling <xref:System.Data.EntityClient.EntityConnection.Open%2A> or <xref:System.Data.EntityClient.EntityConnection.GetMetadataWorkspace%2A> locks the metadata.  
-  
--   The <xref:System.Data.EntityClient.EntityConnection> instance is constructed through the <xref:System.Data.EntityClient.EntityConnection.%23ctor%28System.Data.Metadata.Edm.MetadataWorkspace%2CSystem.Data.Common.DbConnection%29> constructor, which accepts a <xref:System.Data.Metadata.Edm.MetadataWorkspace> and a <xref:System.Data.Common.DbConnection>. In this case the metadata is locked at construction time. No changes to the connection string are ever allowed.  
-  
- When metadata is loaded, the <xref:System.Data.EntityClient.EntityConnection> verifies that the conceptual model, the storage model, and the mapping file are all present.  
-  
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/en-us/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

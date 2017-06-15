@@ -2,7 +2,7 @@
 title: "&lt;workflowRuntime&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
   
 ## Syntax  
   
-```  
-  
+```xml  
 <workflowRuntime cachedInstanceExpiration="TimeSpan"  
                                   enablePerformanceCounters="Boolean"  
                                   name="String"  
@@ -71,7 +70,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
   
 ## Example  
   
-```  
+```xml  
 <serviceBehaviors>  
    <behavior name="ServiceBehavior">  
       <workflowRuntime name="WorkflowServiceHostRuntime"  

@@ -18,11 +18,6 @@
 ## Remarks  
  Use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A>, <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A>, and <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddTable%2A> to populate the builder, then call <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.CreateTable%2A> to acquire an <xref:System.Activities.Presentation.Metadata.AttributeTable> containing the desired collection of attributes.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_AttributeTableBuilder#1](WFD_AttributeTableBuilder#1)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -72,6 +67,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the contents of the provided attributes to this builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
+  
+ When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddCustomAttributes">
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (Type type, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Type type, class System.Attribute[] attributes) cil managed" />
@@ -364,24 +378,5 @@
         <exception cref="T:System.Activities.Presentation.Metadata.AttributeTableValidationException">the state of the table is invalid.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the contents of the provided attributes to this builder.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If an attribute conflicts with another attribute already included in the builder, the last attribute added replaces previous attributes.  
-  
- When building a large attribute table, use <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCallback%2A> to defer the work of creating attributes until they are needed.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

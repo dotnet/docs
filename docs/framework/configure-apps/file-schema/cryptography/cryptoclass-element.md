@@ -2,7 +2,7 @@
 title: "&lt;cryptoClass&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +38,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
   
 ## Syntax  
   
-```  
+```xml  
 <cryptoClass customClassName="fully qualified type name" />  
 ```  
   
@@ -67,7 +67,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 ## Example  
  The following example shows how use the **\<cryptoClass>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=fullName> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

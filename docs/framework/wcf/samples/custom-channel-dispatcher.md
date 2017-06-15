@@ -2,7 +2,7 @@
 title: "Custom Channel Dispatcher | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +48,6 @@ Server replied: You said: Howdy. Message id: 2
 Server replied: You said: Howdy. Message id: 3  
 Server replied: You said: Howdy. Message id: 4  
 Server replied: You said: Howdy. Message id: 5  
-  
 ```  
   
  You can also browse the service from a browser so that an HTTP-GET message gets processed on the server. This gets you well-formatted HTML text back.  

@@ -1,5 +1,5 @@
 ---
-title: Interpreting Expressions
+title: Interpreting Expressions | Microsoft Docs
 description: Interpreting Expressions
 keywords: .NET, .NET Core
 author: BillWagner
@@ -215,6 +215,23 @@ public class ParameterVisitor : Visitor
     {
         Console.WriteLine($"{prefix}This is an {NodeType} expression type");
         Console.WriteLine($"{prefix}Type: {node.Type.ToString()}, Name: {node.Name}, ByRef: {node.IsByRef}");
+    }
+}
+
+// Constant visitor:
+public class ConstantVisitor : Visitor
+{
+    private readonly ConstantExpression node;
+    public ConstantVisitor(ConstantExpression node) : base(node)
+    {
+        this.node = node;
+    }
+
+    public override void Visit(string prefix)
+    {
+        Console.WriteLine($"{prefix}This is an {NodeType} expression type");
+        Console.WriteLine($"{prefix}The type of the constant value is {node.Type}");
+        Console.WriteLine($"{prefix}The value of the constant value is {node.Value}");
     }
 }
 ```
@@ -497,7 +514,6 @@ public class MethodCallVisitor : Visitor
         }
     }
 }
-
 ```
 
 And the output for the expression tree would be:

@@ -18,6 +18,8 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 6643c2af-2ee6-4789-aa25-1d8eaf500c94
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -29,13 +31,11 @@ Called by the common language runtime (CLR) data access services to retrieve the
 ## Syntax  
   
 ```cpp  
-  
 HRESULT GetExceptionRecord(  
     [in] ULONG32 bufferSize,  
     [out] ULONG32* bufferUsed,  
     [out, size_is(bufferSize] BYTE* buffer  
 );  
-  
 ```  
   
 #### Parameters  

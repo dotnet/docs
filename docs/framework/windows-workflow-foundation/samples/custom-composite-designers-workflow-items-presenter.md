@@ -2,7 +2,7 @@
 title: "Custom Composite Designers - Workflow Items Presenter | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -20,7 +20,7 @@ The [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microso
   
 -   Creating a custom activity designer with a [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microsoft.com/library/system.activities.presentation.workflowitemspresenter\(v=vs.110\).aspx).  
   
--   Creating an activity designer with a “collapsed” and “expanded” view.  
+-   Creating an activity designer with a "collapsed" and "expanded" view.  
   
 -   Overriding a default designer in a rehosted application.  
   
@@ -59,7 +59,6 @@ The [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microso
       </ItemsPanelTemplate>  
     </sad:WorkflowItemsPresenter.ItemsPanel>  
   </sad:WorkflowItemsPresenter>  
-  
 ```  
   
 -   Perform an association of the `DesignerAttribute` to the `Parallel` type and then output the attributes reported.  
@@ -72,7 +71,6 @@ The [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microso
 // register metadata  
 (new DesignerMetadata()).Register();  
 RegisterCustomMetadata();  
-  
 ```  
   
 ```vb  
@@ -81,7 +79,6 @@ Dim metadata = New DesignerMetadata()
 metadata.Register()  
 ' register custom metadata  
 RegisterCustomMetadata()  
-  
 ```  
   
 -   -   Then, override the parallel in `RegisterCustomMetadata` method.  
@@ -97,7 +94,6 @@ void RegisterCustomMetadata()
       builder.AddCustomAttributes(typeof(Parallel), new DesignerAttribute(typeof(CustomParallelDesigner)));  
       MetadataStore.AddAttributeTable(builder.CreateTable());  
 }  
-  
 ```  
   
 ```vb  
@@ -106,7 +102,6 @@ Sub RegisterCustomMetadata()
    builder.AddCustomAttributes(GetType(Parallel), New DesignerAttribute(GetType(CustomParallelDesigner)))  
    MetadataStore.AddAttributeTable(builder.CreateTable())  
 End Sub  
-  
 ```  
   
 -   Finally, note the use of differing data templates and triggers to select the appropriate template based on the `IsRootDesigner` property.  
@@ -154,7 +149,6 @@ End Sub
     <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}"/>  
   </Grid>  
 </sad: ActivityDesigner>  
-  
 ```  
   
 > [!IMPORTANT]
@@ -168,4 +162,4 @@ End Sub
   
 ## See Also  
  <xref:System.Activities.Presentation.WorkflowItemsPresenter>   
- [Developing Applications with the Workflow Designer](http://msdn.microsoft.com/library/4cd062b1-b496-4668-bbc1-ee85545e066d)
+ [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

@@ -893,6 +893,40 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeScript">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes an Active Scripting function defined in an HTML page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example executes the contents of a script in a Web page. The code example requires that you have loaded the following Web page.  
+  
+```  
+<HTML>  
+<SCRIPT>  
+function test(name, address) {  
+window.alert("Name is " + name + "; address is " + address);  
+}  
+</SCRIPT>  
+  
+<BODY>  
+</BODY>  
+</HTML>  
+  
+```  
+  
+ [!code-csharp[System.Windows.Forms.HtmlDocument#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/CS/Form1.cs#9)]
+ [!code-vb[System.Windows.Forms.HtmlDocument#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/VB/Form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeScript">
       <MemberSignature Language="C#" Value="public object InvokeScript (string scriptName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeScript(string scriptName) cil managed" />
@@ -1585,39 +1619,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InvokeScript">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes an Active Scripting function defined in an HTML page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example executes the contents of a script in a Web page. The code example requires that you have loaded the following Web page.  
-  
-```  
-<HTML>  
-<SCRIPT>  
-function test(name, address) {  
-window.alert("Name is " + name + "; address is " + address);  
-}  
-</SCRIPT>  
-  
-<BODY>  
-</BODY>  
-</HTML>  
-  
-```  
-  
- [!code-csharp[System.Windows.Forms.HtmlDocument#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/CS/Form1.cs#9)]
- [!code-vb[System.Windows.Forms.HtmlDocument#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HtmlDocument/VB/Form1.vb#9)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

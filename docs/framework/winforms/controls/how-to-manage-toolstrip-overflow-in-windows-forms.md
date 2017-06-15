@@ -2,7 +2,7 @@
 title: "How to: Manage ToolStrip Overflow in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,13 +41,11 @@ When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit
     ```vb  
     toolStripTextBox1.Overflow = _  
     System.Windows.Forms.ToolStripItemOverflow.Never  
-  
     ```  
   
     ```csharp  
     toolStripTextBox1.Overflow = _  
     System.Windows.Forms.ToolStripItemOverflow.Never;  
-  
     ```  
   
 ## See Also  

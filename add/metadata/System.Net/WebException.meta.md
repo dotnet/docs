@@ -53,12 +53,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.WebException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"

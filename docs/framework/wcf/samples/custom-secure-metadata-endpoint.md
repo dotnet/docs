@@ -2,7 +2,7 @@
 title: "Custom Secure Metadata Endpoint | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,11 +24,10 @@ This sample demonstrates how to implement a service with a secure metadata endpo
 ## Service  
  The service in this sample has two endpoints. The application endpoint serves the `ICalculator` contract on a `WSHttpBinding` with `ReliableSession` enabled and `Message` security using certificates. The metadata endpoint also uses `WSHttpBinding`, with the same security settings but with no `ReliableSession`. Here is the relevant configuration:  
   
-```  
-<services>  
-    …  
+```xml  
+<services>   
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
-            behaviorConfiguration="CalculatorServiceBehavior">  
+             behaviorConfiguration="CalculatorServiceBehavior">  
      <!-- use base address provided by host -->  
      <endpoint address=""  
        binding="wsHttpBinding"  
@@ -74,7 +73,7 @@ svcutil http://localhost/servicemodelsamples/service.svc/mex
   
  The Svcutil.exe.config file looks like a normal client configuration file. The only unusual aspects are the client endpoint name and contract:  
   
-```  
+```xml  
 <endpoint name="http"  
           binding="wsHttpBinding"  
           bindingConfiguration="Binding1"  

@@ -2,7 +2,7 @@
 title: "How to: Create a Basic WCF Web HTTP Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,7 +70,6 @@ manager: "erikre"
      This sample demonstrates how to host a Web-Style service with a console application. You can also host such a service within IIS. To do this, specify the <xref:System.ServiceModel.Activation.WebServiceHostFactory> class in a .svc file as the following code demonstrates.  
   
     ```  
-  
           <%ServiceHost   
     language=c#  
     Debug="true"  

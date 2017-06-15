@@ -2,7 +2,7 @@
 title: "Compiler and Language Provider Settings Schema | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +51,7 @@ Compiler and language provider settings specify compiler configuration elements 
 ## Example  
  The following example illustrates a typical compiler configuration element.  
   
-```  
+```xml  
 <configuration>  
    <system.codedom>  
      <compilers>  

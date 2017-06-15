@@ -2,7 +2,7 @@
 title: "&lt;netTcpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ Specifies a secure, reliable, optimized binding suitable for cross-machine commu
   
 ## Syntax  
   
-```  
-  
+```xml  
 <netTcpBinding>  
    <binding   
       closeTimeout="TimeSpan"  
@@ -108,7 +107,7 @@ algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes
 ## Example  
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netTcpBinding binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration with a `bindingConfiguration` attribute. In the following example, a binding configuration is defined.  
   
-```  
+```xml  
 <services>  
   <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  

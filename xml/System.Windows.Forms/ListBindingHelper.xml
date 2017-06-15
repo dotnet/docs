@@ -273,7 +273,7 @@
       </Parameters>
       <Docs>
         <param name="list">The data source to examine for the list name.</param>
-        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects to find in the data source. This can be<see langword=" null" />.</param>
+        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects to find in the data source. This can be <see langword="null" />.</param>
         <summary>Returns the name of an underlying list, given a data source and optional <see cref="T:System.ComponentModel.PropertyDescriptor" /> array.</summary>
         <returns>The name of the list in the data source, as described by <paramref name="listAccessors" />, or the name of the data source type.</returns>
         <remarks>

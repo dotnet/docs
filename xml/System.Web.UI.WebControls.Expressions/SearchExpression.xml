@@ -31,7 +31,7 @@
   
  ]]></format>
     </remarks>
-    <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields" /> property is <see langword="null " />(<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)])</exception>
+    <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.Expressions.SearchExpression.DataFields" /> property is <see langword="null" /> (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)])</exception>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -168,9 +168,9 @@
   
 |Enumeration|Description|  
 |-----------------|-----------------|  
-|<xref:System.Web.UI.WebControls.Expressions.SearchType>|Indicates a search that starts anywhere in a field.|  
-|<xref:System.Web.UI.WebControls.Expressions.SearchType>|Indicates a search that starts at the beginning of a field.|  
-|<xref:System.Web.UI.WebControls.Expressions.SearchType>|Indicates a search that at the end of a field.|  
+|<xref:System.Web.UI.WebControls.Expressions.SearchType.StartsWith>|Indicates a search that starts anywhere in a field.|  
+|<xref:System.Web.UI.WebControls.Expressions.SearchType.Contains>|Indicates a search that starts at the beginning of a field.|  
+|<xref:System.Web.UI.WebControls.Expressions.SearchType.EndsWith>|Indicates a search that at the end of a field.|  
   
  ]]></format>
         </remarks>

@@ -2,7 +2,7 @@
 title: "How to: Save Files with the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,7 +60,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
        & "\Testdoc.rtf", _  
           RichTextBoxStreamType.RichNoOleObjs)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -74,7 +73,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
        + @"\Testdoc.rtf",  
           RichTextBoxStreamType.RichNoOleObjs);  
     }  
-  
     ```  
   
     ```cpp  

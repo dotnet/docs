@@ -2,7 +2,7 @@
 title: "&lt;GCCpuGroup&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether garbage collection supports multiple CPU groups.
   
 ## Syntax  
   
-```  
+```xml  
 <GCCpuGroup    
    enabled="true|false"/>  
 ```  
@@ -72,7 +72,7 @@ Specifies whether garbage collection supports multiple CPU groups.
 ## Example  
  The following example shows how to enable garbage collection for multiple CPU groups.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <GCCpuGroup enabled="true"/>  

@@ -2,7 +2,7 @@
 title: "ICorDebugModuleBreakpoint Interface1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugModuleBreakpoint interface [.NET Framework debugging]"
 ms.assetid: 34667162-f314-475f-ae1b-ce9cb0fcbb83
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

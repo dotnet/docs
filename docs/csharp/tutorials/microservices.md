@@ -1,5 +1,5 @@
 ---
-title: Microservices hosted in Docker | C#
+title: Microservices hosted in Docker - C# | Microsoft Docs
 description: Learn to create asp.net core services that run in Docker containers
 keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
 author: BillWagner
@@ -14,7 +14,7 @@ ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
 
 # Microservices hosted in Docker
 
-##Introduction
+## Introduction
 
 This tutorial details the tasks necessary to build and deploy
 an ASP.NET Core microservice in a Docker container. During the course
@@ -459,7 +459,7 @@ docker rm hello-docker
 If you want to remove unused images from your machine, you use this command:
 
 ```console
-docker rmi hello-docker
+docker rmi weather-microservice
 ```
 
 ## Conclusion 

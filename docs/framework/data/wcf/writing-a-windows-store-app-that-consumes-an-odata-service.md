@@ -57,7 +57,6 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     {  
         throw new Exception("Failed to create initial page");  
     }  
-  
     ```  
   
      This causes the GroupedItemsPage to be instantiated and it’s LoadState method is called. LoadState causes the static SampleDataSource instance to be created, which creates a collection of SampleDataGroup objects. Each SampleDataGroup object contains a collection of SampleDataItem objects. LoadState stores the collection of SampleDataGroup objects in the DefaultViewModel:  
@@ -68,7 +67,6 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
         var sampleDataGroups = SampleDataSource.GetGroups((String)navigationParameter);  
         this.DefaultViewModel["Groups"] = sampleDataGroups;  
     }  
-  
     ```  
   
      The DefaultViewModel is then bound to the GridView. This is referenced in the GroupedItemsPage.xaml file when configuring the data binding.  
@@ -80,7 +78,6 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
                 IsSourceGrouped="true"  
                 ItemsPath="TopItems"  
                 d:Source="{Binding AllGroups, Source={d:DesignInstance Type=data:SampleDataSource, IsDesignTimeCreatable=True}}"/>  
-  
     ```  
   
      The CollectionViewSource is used as a proxy for handling grouped collections. When binding occurs, it iterates through the collection of SampleDataGroup objects to populate the GridView.  The ItemsPath attribute tells the CollectionViewSource what property on each SampleDataGroup object to use to find the SampleDataItems it contains. In this case each SampleDataGroup object contains a TopItems collection of SampleDataItem objects.  
@@ -109,29 +106,28 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     ```csharp  
     public static async void LoadMovies()  
     {  
-        IEnumerable<Title> titles = await ((DataServiceQuery<Title>)Context.Titles  
-            .Expand("Genres,AudioFormats,AudioFormats/Language,Awards,Cast")  
-            .Where(t => t.Rating == "PG")  
-            .OrderByDescending(t => t.ReleaseYear)  
-            .Take(300)).ExecuteAsync();  
+        IEnumerable<Title> titles = await ((DataServiceQuery<Title>)Context.Titles  
+            .Expand("Genres,AudioFormats,AudioFormats/Language,Awards,Cast")  
+            .Where(t => t.Rating == "PG")  
+            .OrderByDescending(t => t.ReleaseYear)  
+            .Take(300)).ExecuteAsync();  
   
-        foreach (Title title in titles)  
-        {  
-            foreach (Genre netflixGenre in title.Genres)  
-            {  
-                SampleDataGroup genre = GetGroup(netflixGenre.Name);  
-                if (genre == null)  
-                {  
-                    genre = new SampleDataGroup(netflixGenre.Name, netflixGenre.Name, String.Empty, title.BoxArt.LargeUrl, String.Empty);  
-                    Instance.AllGroups.Add(genre);  
-                }  
-                var content = new StringBuilder();  
-                // Write additional things to content here if you want them to display in the item detail.  
-                genre.Items.Add(new SampleDataItem(title.Id, title.Name, String.Format("{0}rnrn{1} ({2})", title.Synopsis, title.Rating, title.ReleaseYear), title.BoxArt.HighDefinitionUrl ?? title.BoxArt.LargeUrl, "Description", content.ToString()));  
-            }  
-        }  
+        foreach (Title title in titles)  
+        {  
+            foreach (Genre netflixGenre in title.Genres)  
+            {  
+                SampleDataGroup genre = GetGroup(netflixGenre.Name);  
+                if (genre == null)  
+                {  
+                    genre = new SampleDataGroup(netflixGenre.Name, netflixGenre.Name, String.Empty, title.BoxArt.LargeUrl, String.Empty);  
+                    Instance.AllGroups.Add(genre);  
+                }  
+                var content = new StringBuilder();  
+                // Write additional things to content here if you want them to display in the item detail.  
+                genre.Items.Add(new SampleDataItem(title.Id, title.Name, String.Format("{0}rnrn{1} ({2})", title.Synopsis, title.Rating, title.ReleaseYear), title.BoxArt.HighDefinitionUrl ?? title.BoxArt.LargeUrl, "Description", content.ToString()));  
+            }  
+        }  
     }  
-  
     ```  
   
      The [Task-based Asynchronous Pattern](http://go.microsoft.com/fwlink/p/?LinkId=266651) (TAP) is used to asynchronously get 300 (Take) recent (OrderByDescending) PG-rated (Where) movies back from Netflix. The rest of the code constructs SimpleDataItems and SimpleDataGroups from the entities that were returned in the OData feed.  
@@ -141,13 +137,12 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     ```csharp  
     public static IEnumerable<SampleDataItem> Search(string searchString)  
     {  
-            var regex = new Regex(searchString, RegexOptions.CultureInvariant | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);  
-            return Instance.AllGroups  
-                .SelectMany(g => g.Items)  
-                .Where(m => regex.IsMatch(m.Title) || regex.IsMatch(m.Subtitle))  
-                    .Distinct(new SampleDataItemComparer());  
+            var regex = new Regex(searchString, RegexOptions.CultureInvariant | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);  
+            return Instance.AllGroups  
+                .SelectMany(g => g.Items)  
+                .Where(m => regex.IsMatch(m.Title) || regex.IsMatch(m.Subtitle))  
+                    .Distinct(new SampleDataItemComparer());  
     }  
-  
     ```  
   
      Also in SampleDataSource.cs a class called ExtensionMethods is defined. Each of these extension methods uses the TAP pattern to allow the SampleDataSource to execute an OData query without blocking the UI. For example, the following code uses the Task.Factory.FromAsync method to implement TAP.  
@@ -155,9 +150,8 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     ```csharp  
     public static async Task<IEnumerable<T>> ExecuteAsync<T>(this DataServiceQuery<T> query)  
     {  
-        return await Task.Factory.FromAsync<IEnumerable<T>>(query.BeginExecute(null, null), query.EndExecute);  
+        return await Task.Factory.FromAsync<IEnumerable<T>>(query.BeginExecute(null, null), query.EndExecute);  
     }  
-  
     ```  
   
      As in the default application, the main page of the application is GroupedItemsPage. This time, however, it displays the movies retrieved from Netflix grouped by genre.  When the GroupedItemsPage is instantiated, its LoadState method is called. LoadState causes the static SampleDataSource instance to be created, making a call to the Netflix OData service as discussed previously. LoadState stores the collection of genres (SampleDataGroup objects) in the DefaultViewModel:  
@@ -186,7 +180,6 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     this.DefaultViewModel["QueryText"] = queryText;  
     this.DefaultViewModel["Filters"] = filterList;  
     this.DefaultViewModel["ShowFilters"] = filterList.Count > 1;  
-  
     ```  
   
 3.  Insert the following two lines of code at line 81 in SearchResultsPage.xaml.cs to retrieve the search results.  
@@ -196,7 +189,6 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
                     //       to a collection of items with bindable Image, Title, Subtitle, and Description properties  
                     var searchValue = (string)this.DefaultViewModel["QueryText"];  
                     this.DefaultViewModel["Results"] = new List<SampleDataItem>(SampleDataSource.Search(searchValue));  
-  
     ```  
   
  When a user invokes Windows search, types in a search term and then touches the Netflix Demo app icon in the search bar, the LoadState method of the SearchResultsPage is executed. The navigation parameter sent to LoadState contains the query text. Next the Filter_SelectionChanged method is called which then calls the Search method on the SampleDataSource class. The results are returned and displayed in the SearchResultsPage.xaml page.  

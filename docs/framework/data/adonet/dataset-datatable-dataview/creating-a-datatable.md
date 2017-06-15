@@ -2,7 +2,7 @@
 title: "Creating a DataTable | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,6 @@ A <xref:System.Data.DataTable>, which represents one table of in-memory relation
   
 ```vb  
 Dim workTable as DataTable = New DataTable("Customers")  
-  
 ```  
   
 ```csharp  
@@ -46,7 +45,6 @@ DataTable workTable = new DataTable("Customers");
 Dim customers As DataSet = New DataSet  
 Dim customersTable As DataTable = _  
    customers.Tables.Add("CustomersTable")  
-  
 ```  
   
 ```csharp  

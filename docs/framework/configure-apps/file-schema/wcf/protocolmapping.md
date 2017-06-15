@@ -2,7 +2,7 @@
 title: "&lt;protocolMapping&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,11 +24,10 @@ Represents a configuration section for defining a set of default protocol mappin
 ## Syntax  
   
 ```vb  
-   <protocolMapping>    <add binding="String”         bindingConfiguration="String”         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
+   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  
@@ -52,15 +51,13 @@ Represents a configuration section for defining a set of default protocol mappin
 ## Example  
  The following configuration example shows the default protocol mapping in the machine.config file. You can override this default mapping at the machine level by modifying the machine.config file. Or if you would only like to override it within the scope of an application, you can override this section within your application configuration file and change the mapping for individual protocol schemes.  
   
-```  
-  
+```xml  
 <protocolMapping>  
-        <add scheme="http" binding="basicHttpBinding"/>  
-        <add scheme="net.tcp" binding="netTcpBinding"/>  
-        <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
-        <add scheme="net.msmq" binding="netMsmqBinding"/>  
+        <add scheme="http" binding="basicHttpBinding"/>  
+        <add scheme="net.tcp" binding="netTcpBinding"/>  
+        <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
+        <add scheme="net.msmq" binding="netMsmqBinding"/>  
 </protocolMapping>  
-  
 ```  
   
 ## See Also  

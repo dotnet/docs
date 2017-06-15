@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.ApplicationServices.NoStartupFormException.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

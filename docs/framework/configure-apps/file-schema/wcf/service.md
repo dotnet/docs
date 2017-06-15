@@ -2,7 +2,7 @@
 title: "&lt;service&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ The `service` element contains the settings for a Windows Communication Foundati
   
 ## Syntax  
   
-```  
-  
+```xml  
 <service behaviorConfiguration=String"  
         name="String"  
 </service>  
@@ -67,7 +66,7 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## Example  
  This is an example of a service configuration.  
   
-```  
+```xml  
 <service behaviorConfiguration="testChannelBehavior"   
      name="HelloWorld">  
      <endpoint   

@@ -2,7 +2,7 @@
 title: "How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -69,12 +69,10 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
     ```vb  
     ListBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID")  
-  
     ```  
   
     ```csharp  
     listBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID");  
-  
     ```  
   
 ## See Also  

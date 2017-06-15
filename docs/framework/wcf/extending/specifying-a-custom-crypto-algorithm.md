@@ -90,7 +90,6 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
             return length >= 128 && length <= 256;  
         }  
     }  
-  
 ```  
   
 ## Register the Custom Algorithm  
@@ -110,10 +109,9 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
         </cryptographySettings>  
     </mscorlib>  
 </configuration>  
-  
 ```  
   
- The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias “SHA256CSP”. The <`nameEntry`> element creates the mapping between the “SHA256CSP” alias and the specified URL (http://constoso.com/CustomAlgorithms/CustomHashAlgorithm ).  
+ The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias "SHA256CSP". The <`nameEntry`> element creates the mapping between the "SHA256CSP" alias and the specified URL (http://constoso.com/CustomAlgorithms/CustomHashAlgorithm ).  
   
  To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm%2A> System.String[])?qualifyHint=False&autoUpgrade=True method. This method creates both mappings. The following example shows how to call this method:  
   
@@ -121,7 +119,6 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
 // Register the custom URI string defined for the hashAlgorithm in MyCustomAlgorithmSuite class to create the   
 // SHA256CryptoServiceProvider hash algorithm object.  
 CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://constoso.com/CustomAlgorithms/CustomHashAlgorithm");  
-  
 ```  
   
 ## Configure the Binding  
@@ -130,7 +127,6 @@ CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://constoso.
 ```csharp  
 WSHttpBinding binding = new WSHttpBinding();  
             binding.Security.Message.AlgorithmSuite = new MyCustomAlgorithmSuite();  
-  
 ```  
   
  For a complete code example, see the [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md) sample.  

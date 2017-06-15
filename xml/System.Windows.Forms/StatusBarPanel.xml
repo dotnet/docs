@@ -37,7 +37,7 @@
   
  The <xref:System.Windows.Forms.StatusBar> control is typically used to display Help information or state information about your application. Often, it is important to display additional information about data that is presented in a panel. You can use the <xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A> property to display information whenever the mouse pointer rests on a panel.  
   
- Although the <xref:System.Windows.Forms.StatusBar> control is typically used to display textual information, you can also provide your own type of display to a <xref:System.Windows.Forms.StatusBarPanel>. The <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property enables you to specify how the <xref:System.Windows.Forms.StatusBarPanel> will be drawn. By default, the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property is used to display the value of the <xref:System.Windows.Forms.StatusBarPanel.Text%2A> property (and an icon, if specified in the <xref:System.Windows.Forms.StatusBarPanel.Icon%2A> property). If the property is set to <xref:System.Windows.Forms.StatusBarPanelStyle>, you can draw your own information into the panel. You can use this feature to draw a progress bar or an animated icon in the panel.  
+ Although the <xref:System.Windows.Forms.StatusBar> control is typically used to display textual information, you can also provide your own type of display to a <xref:System.Windows.Forms.StatusBarPanel>. The <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property enables you to specify how the <xref:System.Windows.Forms.StatusBarPanel> will be drawn. By default, the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property is used to display the value of the <xref:System.Windows.Forms.StatusBarPanel.Text%2A> property (and an icon, if specified in the <xref:System.Windows.Forms.StatusBarPanel.Icon%2A> property). If the property is set to <xref:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw>, you can draw your own information into the panel. You can use this feature to draw a progress bar or an animated icon in the panel.  
   
  When you create an instance of the <xref:System.Windows.Forms.StatusBarPanel> class, the read/write properties are set to initial values. For a list of these values, see the <xref:System.Windows.Forms.StatusBarPanel.%23ctor%2A> constructor.  
   
@@ -74,12 +74,12 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Windows.Forms.StatusBarPanel.Alignment%2A>|<xref:System.Windows.Forms.HorizontalAlignment>|  
-|<xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>|<xref:System.Windows.Forms.StatusBarPanelAutoSize>|  
-|<xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>|<xref:System.Windows.Forms.StatusBarPanelBorderStyle>|  
+|<xref:System.Windows.Forms.StatusBarPanel.Alignment%2A>|<xref:System.Windows.Forms.HorizontalAlignment.Left>|  
+|<xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A>|<xref:System.Windows.Forms.StatusBarPanelAutoSize.None>|  
+|<xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A>|<xref:System.Windows.Forms.StatusBarPanelBorderStyle.Sunken>|  
 |<xref:System.Windows.Forms.StatusBarPanel.Icon%2A>|`null`|  
 |<xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A>|10|  
-|<xref:System.Windows.Forms.StatusBarPanel.Style%2A>|<xref:System.Windows.Forms.StatusBarPanelStyle>|  
+|<xref:System.Windows.Forms.StatusBarPanel.Style%2A>|<xref:System.Windows.Forms.StatusBarPanelStyle.Text>|  
 |<xref:System.Windows.Forms.StatusBarPanel.Text%2A>|A zero-length string.|  
 |<xref:System.Windows.Forms.StatusBarPanel.ToolTipText%2A>|A zero-length string.|  
 |<xref:System.Windows.Forms.StatusBarPanel.Width%2A>|100|  
@@ -171,9 +171,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Forms.StatusBarPanel> objects set to <xref:System.Windows.Forms.StatusBarPanelAutoSize> have precedence over those panels set to the <xref:System.Windows.Forms.StatusBarPanelAutoSize> value. For example, a <xref:System.Windows.Forms.StatusBarPanel> that has its <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property set to <xref:System.Windows.Forms.StatusBarPanelAutoSize> is shortened if a <xref:System.Windows.Forms.StatusBarPanel> with the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property set to <xref:System.Windows.Forms.StatusBarPanelAutoSize> requires that space.  
+ <xref:System.Windows.Forms.StatusBarPanel> objects set to <xref:System.Windows.Forms.StatusBarPanelAutoSize.Contents> have precedence over those panels set to the <xref:System.Windows.Forms.StatusBarPanelAutoSize.Spring> value. For example, a <xref:System.Windows.Forms.StatusBarPanel> that has its <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property set to <xref:System.Windows.Forms.StatusBarPanelAutoSize.Spring> is shortened if a <xref:System.Windows.Forms.StatusBarPanel> with the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property set to <xref:System.Windows.Forms.StatusBarPanelAutoSize.Contents> requires that space.  
   
- You can use <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> to ensure that the contents of a <xref:System.Windows.Forms.StatusBarPanel> are properly displayed in a <xref:System.Windows.Forms.StatusBar> control that contains more than one panel. For example, you might want a panel that contains text to adjust automatically to the amount of text it is displaying (<xref:System.Windows.Forms.StatusBarPanelAutoSize>), while another panel on the <xref:System.Windows.Forms.StatusBar> that displays an owner-drawn progress bar would need to be a fixed size (<xref:System.Windows.Forms.StatusBarPanelAutoSize>).  
+ You can use <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> to ensure that the contents of a <xref:System.Windows.Forms.StatusBarPanel> are properly displayed in a <xref:System.Windows.Forms.StatusBar> control that contains more than one panel. For example, you might want a panel that contains text to adjust automatically to the amount of text it is displaying (<xref:System.Windows.Forms.StatusBarPanelAutoSize.Contents>), while another panel on the <xref:System.Windows.Forms.StatusBar> that displays an owner-drawn progress bar would need to be a fixed size (<xref:System.Windows.Forms.StatusBarPanelAutoSize.None>).  
   
    
   
@@ -288,7 +288,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -385,7 +385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A> property is used when the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property is set to <xref:System.Windows.Forms.StatusBarPanelAutoSize> or <xref:System.Windows.Forms.StatusBarPanelAutoSize> to prevent the <xref:System.Windows.Forms.StatusBarPanel> from automatically resizing to a width that is too small. When the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property is set to <xref:System.Windows.Forms.StatusBarPanelAutoSize>, the <xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A> property is automatically set to the same value as the <xref:System.Windows.Forms.StatusBarPanel.Width%2A> property.  
+ The <xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A> property is used when the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property is set to <xref:System.Windows.Forms.StatusBarPanelAutoSize.Contents> or <xref:System.Windows.Forms.StatusBarPanelAutoSize.Spring> to prevent the <xref:System.Windows.Forms.StatusBarPanel> from automatically resizing to a width that is too small. When the <xref:System.Windows.Forms.StatusBarPanel.AutoSize%2A> property is set to <xref:System.Windows.Forms.StatusBarPanelAutoSize.None>, the <xref:System.Windows.Forms.StatusBarPanel.MinWidth%2A> property is automatically set to the same value as the <xref:System.Windows.Forms.StatusBarPanel.Width%2A> property.  
   
  ]]></format>
         </remarks>
@@ -551,7 +551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property represents the text that is displayed when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property is set to <xref:System.Windows.Forms.StatusBarPanelStyle>. You can use this property to display information about your application in a <xref:System.Windows.Forms.StatusBar> control. For example, you can use the <xref:System.Windows.Forms.StatusBarPanel.Text%2A> property to display Help information when the user moves the mouse over a menu or to display the name and location of a file that is opened in an application. To align the text within a <xref:System.Windows.Forms.StatusBarPanel>, use the <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A> property.  
+ This property represents the text that is displayed when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A> property is set to <xref:System.Windows.Forms.StatusBarPanelStyle.Text>. You can use this property to display information about your application in a <xref:System.Windows.Forms.StatusBar> control. For example, you can use the <xref:System.Windows.Forms.StatusBarPanel.Text%2A> property to display Help information when the user moves the mouse over a menu or to display the name and location of a file that is opened in an application. To align the text within a <xref:System.Windows.Forms.StatusBarPanel>, use the <xref:System.Windows.Forms.StatusBarPanel.Alignment%2A> property.  
   
    
   

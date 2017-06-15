@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; of &lt;claimTypeRequirements&gt; element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies the types of claims to be removed in the federated credential.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <claimTypeRequirements>  
       <remove claimType="URI" />  
 </claimTypeRequirements>  

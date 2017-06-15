@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugMDA interface [.NET Framework debugging]"
 ms.assetid: 8ecbb854-295c-4dd4-b9fc-01ebeac46e06
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

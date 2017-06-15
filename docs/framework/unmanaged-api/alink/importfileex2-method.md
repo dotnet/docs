@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ImportFileEx2 method"
 ms.assetid: 02c789fd-16fc-48c6-9619-56e87e2a37ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "Adding Columns to a DataTable | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,6 @@ workCol.Unique = true
 workTable.Columns.Add("CustLName", Type.GetType("System.String"))  
 workTable.Columns.Add("CustFName", Type.GetType("System.String"))  
 workTable.Columns.Add("Purchases", Type.GetType("System.Double"))  
-  
 ```  
   
 ```csharp  

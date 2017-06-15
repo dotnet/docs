@@ -2,7 +2,7 @@
 title: "&lt;factorySettings&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;factorySettings&gt;
 Specifies the settings of the channel factory cache.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -25,8 +25,18 @@ Specifies the settings of the channel factory cache.
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">       <sendMessageChannelCache allowUnsafeCaching="Boolean" >                   <factorySettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />       </sendMessageChannelCache>    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <sendMessageChannelCache allowUnsafeCaching="Boolean" >
+        <factorySettings idleTimeout="TimeSpan" 
+                         leaseTimeout="TimeSpan" 
+                         maxItemsInCache="Integer" />
+      </sendMessageChannelCache>
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  
@@ -59,8 +69,7 @@ Specifies the settings of the channel factory cache.
 ## Example  
  In a hosted workflow service, you can specify the factory cache and channel cache settings in the application configuration file. To do so, add a service behavior that contains the cache settings for the factory and channel cache and add this service behavior to your service. The following example shows the contents of a configuration file that contains the **MyChannelCacheBehavior**  service behavior with the custom factory cache and channel cache settings. This service behavior is added to the service through the **behaviorConfiguarion** attribute.  
   
-```  
-  
+```xml  
 <configuration>    
   <system.serviceModel>  
     <!-- List of other config sections here -->   
@@ -80,7 +89,6 @@ Specifies the settings of the channel factory cache.
     </services>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

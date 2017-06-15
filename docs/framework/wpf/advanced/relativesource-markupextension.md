@@ -25,22 +25,22 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   
 ## XAML Attribute Usage  
   
-```  
-<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
+```xml  
+<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
 ```  
   
 ## XAML Attribute Usage (nested within Binding extension)  
   
-```  
-<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
+```xml  
+<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xml  
 <Binding>  
   <Binding.RelativeSource>  
-    <RelativeSource Mode="modeEnumValue"/>  
+    <RelativeSource Mode="modeEnumValue"/>  
   </Binding.RelativeSource>  
 </Binding>  
 - or   
@@ -48,7 +48,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   <Binding.RelativeSource>  
     <RelativeSource  
       Mode="FindAncestor"  
-      AncestorType="{x:Type typeName}"  
+      AncestorType="{x:Type typeName}"  
       AncestorLevel="intLevel"  
     />  
   </Binding.RelativeSource>  
@@ -59,8 +59,8 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   
 |||  
 |-|-|  
-|`modeEnumValue`|One of the following:<br /><br /> -   The string token `Self`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode>.<br />-   The string token `TemplatedParent`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode>.<br />-   The string token `PreviousData`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode>.<br />-   See below for information on `FindAncestor` mode.|  
-|`FindAncestor`|The string token `FindAncestor`. Using this token enters a mode whereby a `RelativeSource` specifies an ancestor type and optionally an ancestor level. This corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode>.|  
+|`modeEnumValue`|One of the following:<br /><br /> -   The string token `Self`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.Self>.<br />-   The string token `TemplatedParent`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.TemplatedParent>.<br />-   The string token `PreviousData`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.PreviousData>.<br />-   See below for information on `FindAncestor` mode.|  
+|`FindAncestor`|The string token `FindAncestor`. Using this token enters a mode whereby a `RelativeSource` specifies an ancestor type and optionally an ancestor level. This corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>.|  
 |`typeName`|Required for `FindAncestor` mode. The name of a type, which fills the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> property.|  
 |`intLevel`|Optional for `FindAncestor` mode. An ancestor level (evaluated towards the parent direction in the logical tree).|  
   
@@ -83,7 +83,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   
  In the following example, the first <xref:System.Windows.Controls.TextBlock> in the items template displays the current number. The second <xref:System.Windows.Controls.TextBlock> binding is a <xref:System.Windows.Data.MultiBinding> that nominally has two <xref:System.Windows.Data.Binding> consistuents: the current record, and a binding that deliberately uses the previous data record by using `{RelativeSource PreviousData}`. Then, a converter on the <xref:System.Windows.Data.MultiBinding> calculates the difference and returns it to the binding.  
   
-```  
+```xml  
 <ListBox Name="fibolist">  
     <ListBox.ItemTemplate>  
         <DataTemplate>  

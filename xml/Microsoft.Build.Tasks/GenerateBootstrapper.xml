@@ -91,7 +91,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets whether a component runs with elevated permissions when it is installed on a target computer.</summary>
-        <value>Returns<see langword=" True" /> if the installed component runs with elevated permissions; otherwise <see langword="False" />.</value>
+        <value>Returns <see langword="True" /> if the installed component runs with elevated permissions; otherwise <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -441,7 +441,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Visual Studio version, in the form &lt;major build.minor build&gt;, for example “4.0”.</summary>
+        <summary>The Visual Studio version, in the form &lt;major build.minor build&gt;, for example "4.0".</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

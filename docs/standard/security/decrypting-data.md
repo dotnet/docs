@@ -35,7 +35,6 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 ```vb  
 Dim RMCrypto As New RijndaelManaged()  
 Dim CryptStream As New CryptoStream(MyStream, RMCrypto.CreateDecryptor(RMCrypto.Key, RMCrypto.IV), CryptoStreamMode.Read)  
-  
 ```  
   
 ```csharp  
@@ -104,7 +103,6 @@ Module Module1
         End Try  
     End Sub  
 End Module  
-  
 ```  
   
 ```csharp  
@@ -194,7 +192,6 @@ Dim RSA As New RSACryptoServiceProvider()
 'Decrypt the symmetric key and IV.  
 SymmetricKey = RSA.Decrypt(EncryptedSymmetricKey, False)  
 SymmetricIV = RSA.Decrypt(EncryptedSymmetricIV, False)  
-  
 ```  
   
 ```csharp  

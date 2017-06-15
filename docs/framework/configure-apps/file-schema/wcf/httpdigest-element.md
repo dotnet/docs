@@ -2,7 +2,7 @@
 title: "&lt;httpDigest&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Specifies a digest type credential used when authenticating the client to a serv
   
 ## Syntax  
   
-```  
-  
+```xml  
 <digest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />  
 ```  
   

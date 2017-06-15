@@ -39,8 +39,7 @@ When reporting errors in code, hooking up model-view-controller (MVC) links, fir
   
 ```csharp  
 if (x == null) throw new ArgumentNullException(nameof(x));  
-WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”  
-  
+WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode"  
 ```  
   
 ## Key Use Cases  
@@ -51,7 +50,6 @@ WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”
 void f(string s) {  
     if (s == null) throw new ArgumentNullException(nameof(s));  
 }  
-  
 ```  
   
  MVC Action links:  
@@ -60,7 +58,6 @@ void f(string s) {
              @typeof(UserController),  
              @nameof(UserController.SignUp))  
 %>  
-  
 ```  
   
  INotifyPropertyChanged:  
@@ -69,13 +66,11 @@ int p {
     get { return this.p; }  
     set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too  
 }  
-  
 ```  
   
  XAML dependency property:  
  ```csharp  
 public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));  
-  
 ```  
   
  Logging:  
@@ -83,7 +78,6 @@ public static DependencyProperty AgeProperty = DependencyProperty.Register(nameo
 void f(int i) {  
     Log(nameof(f), "method entry");  
 }  
-  
 ```  
   
  Attributes:  
@@ -116,11 +110,10 @@ nameof(c.Method2) -> "Method2"
 nameof(z) -> "z" // inside of Method2 ok, inside Method1 is a compiler error  
 nameof(Stuff) = "Stuff"  
 nameof(T) -> "T" // works inside of method but not in attributes on the method  
-nameof(f) -> “f”  
+nameof(f) -> "f"  
 nameof(f<T>) -> syntax error  
 nameof(f<>) -> syntax error  
-nameof(Method2()) -> error “This expression does not have a name”  
-  
+nameof(Method2()) -> error "This expression does not have a name"  
 ```  
   
  Many of the above samples apply to Visual Basic.  Here are some specific Visual Basic examples:  
@@ -134,7 +127,6 @@ Dim x = Nothing
 NameOf(x.ToString(2)) -> ' error  "This expression does not have a name"  
 Dim o = Nothing  
 NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of instance; instance will not be evaluated"  
-  
 ```  
   
 ## Remarks  
@@ -145,11 +137,10 @@ NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of ins
  If you need to get the fully-qualified name, you can use the `typeof` expression along with `nameof`.  For example:
 ```csharp  
 class C {
-    void f(int i) {  
+    void f(int i) {  
         Log($"{typeof(C)}.{nameof(f)}", "method entry");  
     }
 }
-  
 ``` 
 
  Unfortunately `typeof` is not a constant expression like `nameof`, so `typeof` cannot be used in conjunction with `nameof` in all the same places as `nameof`.  For example, the following would cause a CS0182 compile error:
@@ -166,7 +157,7 @@ class C {
  There is no way to get a signatures information such as "`Method1 (str, str)`".  One way to do that is to use an Expression, `Expression e = () => A.B.Method1("s1", "s2")`, and pull the MemberInfo from the resulting expression tree.  
   
 ## Language Specifications  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
  For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
   

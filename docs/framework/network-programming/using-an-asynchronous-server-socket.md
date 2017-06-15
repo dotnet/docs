@@ -96,7 +96,6 @@ Public Sub StartListening()
     End Try  
     Console.WriteLine("Closing the listener...")  
 End Sub 'StartListening  
-  
 ```  
   
 ```csharp  
@@ -194,7 +193,6 @@ Public Shared Sub acceptCallback(ar As IAsyncResult)
     handler.BeginReceive(state.buffer, 0, state.BufferSize, 0, _  
         AddressOf AsynchronousSocketListener.readCallback, state)  
 End Sub 'acceptCallback  
-  
 ```  
   
 ```csharp  
@@ -241,7 +239,6 @@ Public Shared Sub readCallback(ar As IAsyncResult)
         End If  
     End If  
 End Sub 'readCallback  
-  
 ```  
   
 ```csharp  

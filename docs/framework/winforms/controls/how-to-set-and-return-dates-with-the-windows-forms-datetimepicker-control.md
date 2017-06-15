@@ -2,7 +2,7 @@
 title: "How to: Set and Return Dates with the Windows Forms DateTimePicker Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,12 +36,10 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
   
     ```vb  
     DateTimePicker1.Value = New DateTime(2001, 10, 20)  
-  
     ```  
   
     ```csharp  
     dateTimePicker1.Value = new DateTime(2001, 10, 20);  
-  
     ```  
   
     ```cpp  
@@ -58,7 +56,6 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
        DateTimePicker1.Value.DayOfWeek.ToString)  
     MessageBox.Show("Millisecond is: ",   
        DateTimePicker1.Value.Millisecond.ToString)  
-  
     ```  
   
     ```csharp  
@@ -68,7 +65,6 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
        dateTimePicker1.Value.DayOfWeek.ToString());  
     MessageBox.Show("Millisecond is: " +   
        dateTimePicker1.Value.Millisecond.ToString());  
-  
     ```  
   
     ```cpp  

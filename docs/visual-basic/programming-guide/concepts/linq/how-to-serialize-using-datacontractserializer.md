@@ -83,7 +83,6 @@ Public Class XElementNullContainer
         member = Nothing  
     End Sub  
 End Class  
-  
 ```  
   
  This example produces the following output:  

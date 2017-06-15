@@ -2,7 +2,7 @@
 title: "ICorDebugSymbolProvider2::GetFrameProps Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,13 +23,11 @@ Returns the method starting relative virtual address of a method and the parent 
 ## Syntax  
   
 ```  
-  
 HRESULT GetFrameProps(  
    [in] ULONG32 codeRva,  
    [out] ULONG32 *pCodeStartRva,  
    [out] ULONG32 *pParentFrameStartRva  
 );  
-  
 ```  
   
 #### Parameters  

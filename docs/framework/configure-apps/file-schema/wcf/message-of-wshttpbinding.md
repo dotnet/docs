@@ -2,7 +2,7 @@
 title: "&lt;message&gt; of &lt;wsHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Defines settings for message-level security of the [\<wsHttpBinding>](../../../.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <message   
    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
    clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  

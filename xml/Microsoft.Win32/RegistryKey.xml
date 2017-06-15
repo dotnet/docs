@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -36,7 +37,7 @@
  The registry acts as a central repository of information for the operating system and the applications on a computer. The registry is organized in a hierarchical format, based on a logical ordering of the elements stored within it (please see <xref:Microsoft.Win32.Registry> for the base-level items in this hierarchy). When storing information in the registry, select the appropriate location based on the type of information being stored. Be sure to avoid destroying information created by other applications, because this can cause those applications to exhibit unexpected behavior, and can also have an adverse effect upon your own application.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  Registry keys are the base unit of organization in the registry, and can be compared to folders in File Explorer. A particular key can have subkeys, just as a folder can have subfolders. Each key can be deleted, as long as the user has the appropriate permissions to do so, and the key is not a base key or at the level directly under the base keys. Each key can also have multiple values associated with it (a value can be compared to a file), which are used to store the information — for example, information about an application installed on the computer. Each value holds one particular piece of information, which can be retrieved or updated when required. For instance, you can create a <xref:Microsoft.Win32.RegistryKey> for your company, under the key HKEY_LOCAL_MACHINE\Software, and then a subkey for each application that your company creates. Each subkey holds the information specific to that application, such as color settings, screen location and size, or recognized file extensions.  
   
@@ -68,6 +69,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -163,6 +169,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -217,6 +227,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +287,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -304,7 +319,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subkey " />is <see langword="null" />.</exception>
+          <paramref name="subkey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object is closed (closed keys cannot be accessed).</exception>
         <exception cref="T:System.UnauthorizedAccessException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.</exception>
         <exception cref="T:System.IO.IOException">The nesting level exceeds 510.  
@@ -323,6 +338,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -386,6 +405,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -449,6 +469,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -479,7 +503,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subkey " />is <see langword="null" />.</exception>
+          <paramref name="subkey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object is closed. Closed keys cannot be accessed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.</exception>
         <exception cref="T:System.IO.IOException">The nesting level exceeds 510.  
@@ -498,6 +522,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -551,6 +576,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -599,6 +625,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -657,6 +684,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -697,6 +725,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -745,6 +774,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -792,6 +822,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -827,6 +858,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -863,6 +895,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -901,6 +934,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -930,7 +964,7 @@
 ## Remarks  
  The `view` parameter for this method is used in subsequent operations, such as opening subkeys.  
   
- If `view` is <xref:Microsoft.Win32.RegistryView> but the machine is running a 32-bit operating system, the returned key will use the <xref:Microsoft.Win32.RegistryView> view.  
+ If `view` is <xref:Microsoft.Win32.RegistryView.Registry64> but the machine is running a 32-bit operating system, the returned key will use the <xref:Microsoft.Win32.RegistryView.Registry32> view.  
   
  ]]></format>
         </remarks>
@@ -952,6 +986,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.RegistrySecurity</ReturnType>
@@ -983,6 +1021,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.RegistrySecurity</ReturnType>
@@ -1017,6 +1059,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1062,6 +1105,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1123,6 +1167,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1187,6 +1232,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1254,6 +1300,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1317,6 +1364,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1364,6 +1412,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1398,6 +1447,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1438,6 +1488,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1476,6 +1527,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
@@ -1528,6 +1583,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1555,7 +1614,7 @@
   
  In order for a key to be opened remotely, both the server and client machines must be running the remote registry service, and have remote administration enabled.  
   
- On the 64-bit versions of Windows, portions of the registry are stored separately for 32-bit and 64-bit applications. There is a 32-bit view for 32-bit applications and a 64-bit view for 64-bit applications. If `view` is <xref:Microsoft.Win32.RegistryView> but the remote machine is running a 32-bit operating system, the returned key will use the <xref:Microsoft.Win32.RegistryView> view.  
+ On the 64-bit versions of Windows, portions of the registry are stored separately for 32-bit and 64-bit applications. There is a 32-bit view for 32-bit applications and a 64-bit view for 64-bit applications. If `view` is <xref:Microsoft.Win32.RegistryView.Registry64> but the remote machine is running a 32-bit operating system, the returned key will use the <xref:Microsoft.Win32.RegistryView.Registry32> view.  
   
  ]]></format>
         </remarks>
@@ -1577,6 +1636,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1631,6 +1691,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1661,7 +1725,7 @@
    
   
 ## Examples  
- The following code example creates a subkey containing 100 key/value pairs and closes it. The example opens the subkey with <xref:Microsoft.Win32.RegistryKeyPermissionCheck>, records the time it takes to read all the values, and closes the subkey. The example opens the subkey with <xref:Microsoft.Win32.RegistryKeyPermissionCheck> and records the time it takes to read all the values. Finally, the example computes and displays the percentage improvement.  
+ The following code example creates a subkey containing 100 key/value pairs and closes it. The example opens the subkey with <xref:Microsoft.Win32.RegistryKeyPermissionCheck.Default>, records the time it takes to read all the values, and closes the subkey. The example opens the subkey with <xref:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree> and records the time it takes to read all the values. Finally, the example computes and displays the percentage improvement.  
   
  [!code-csharp[RegistryKey.OpenSubKey_PermCheck#1](~/samples/snippets/csharp/VS_Snippets_CLR/RegistryKey.OpenSubKey_PermCheck/cs/source.cs#1)]
  [!code-vb[RegistryKey.OpenSubKey_PermCheck#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RegistryKey.OpenSubKey_PermCheck/vb/source.vb#1)]  
@@ -1686,6 +1750,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1741,6 +1806,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1788,6 +1854,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1846,6 +1916,10 @@
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1867,7 +1941,7 @@
    
   
 ## Examples  
- The following code example creates a test key. The current user is allowed <xref:System.Security.AccessControl.RegistryRights> and <xref:System.Security.AccessControl.RegistryRights> rights but denied <xref:System.Security.AccessControl.RegistryRights> and <xref:System.Security.AccessControl.RegistryRights> rights. Subsequent attempts to manipulate the key succeed or fail depending on these permissions.  
+ The following code example creates a test key. The current user is allowed <xref:System.Security.AccessControl.RegistryRights.ReadKey> and <xref:System.Security.AccessControl.RegistryRights.Delete> rights but denied <xref:System.Security.AccessControl.RegistryRights.ChangePermissions> and <xref:System.Security.AccessControl.RegistryRights.WriteKey> rights. Subsequent attempts to manipulate the key succeed or fail depending on these permissions.  
   
  Before the key is deleted, the code pauses. You can switch to the registry editor and verify that the same access rights apply when the key is accessed using the registry editor. (This works best if you use **RunAs** from the command line to run the registry editor and the sample code as a local user without administrator rights. The registry editor always allows an administrator to change permissions, even if the particular administrator has been denied those rights. If you have defined a local user named TestUser, the command `runas /user:TestUser cmd` opens a command window from which you can run the registry editor and then the sample code.)  
   
@@ -1891,6 +1965,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1968,6 +2043,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2006,7 +2082,7 @@
  If the specified `name` does not exist in the key, it is created, and the associated value is set to `value`.  
   
 > [!NOTE]
->  Specifying the registry data type <xref:Microsoft.Win32.RegistryValueKind> is the same as using the <xref:Microsoft.Win32.RegistryKey.SetValue%2A> overload.  
+>  Specifying the registry data type <xref:Microsoft.Win32.RegistryValueKind.Unknown> is the same as using the <xref:Microsoft.Win32.RegistryKey.SetValue%2A> overload.  
   
  If the type of the specified `value` does not match the specified `valueKind`, and the data cannot be converted, <xref:System.ArgumentException> is thrown. For example, you can store a <xref:System.Int64?displayProperty=fullName> as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>, but only if its value is less than the maximum value of a <xref:System.Int32?displayProperty=fullName>. You cannot store a single string value as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>.  
   
@@ -2053,6 +2129,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2097,6 +2174,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2137,6 +2215,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2181,6 +2260,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

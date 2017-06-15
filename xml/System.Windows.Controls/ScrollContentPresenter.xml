@@ -121,7 +121,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ScrollContentPresenter>|  
+|Identifier field|<xref:System.Windows.Controls.ScrollContentPresenter.CanContentScrollProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -129,7 +129,6 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Windows.Controls.ScrollContentPresenter.CanContentScroll%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
   
- <!-- TODO: review snippet reference [!code-xml[styled_scrollviewer#1](~/samples/snippets/xaml/VS_Snippets_Wpf/Styled_ScrollViewer/XAML/default.xaml#1)]  -->
  [!code-xml[styled_scrollviewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Styled_ScrollViewer/CS/default.xaml#1)]  
   
  ]]></format>

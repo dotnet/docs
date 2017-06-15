@@ -2,7 +2,7 @@
 title: "How to: Validate Input with the Windows Forms DataGrid Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +50,6 @@ manager: "wpickett"
           End If  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -69,7 +68,6 @@ manager: "wpickett"
           }  
        }  
     }  
-  
     ```  
   
 2.  Connect the event handler to the event.  
@@ -81,7 +79,6 @@ manager: "wpickett"
     ' with a table called Customers.  
     ' Put this code in the form's Load event or its constructor.  
     AddHandler customersDataSet1.Tables("Customers").ColumnChanging, AddressOf Customers_ColumnChanging  
-  
     ```  
   
     ```csharp  
@@ -89,7 +86,6 @@ manager: "wpickett"
     // with a table called Customers.  
     // Put this code in the form's Load event or its constructor.  
     customersDataSet1.Tables["Customers"].ColumnChanging += new DataColumnChangeEventHandler(this.Customers_ColumnChanging);  
-  
     ```  
   
 ## See Also  

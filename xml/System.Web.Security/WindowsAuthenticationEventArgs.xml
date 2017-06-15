@@ -22,7 +22,7 @@
   
  You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.WindowsAuthenticationEventArgs> object supplied to the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
   
- The **WindowsAuthentication_OnAuthenticate** event is raised only when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
+ The **WindowsAuthentication_OnAuthenticate** event is raised only when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode.Windows> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
   
    
   

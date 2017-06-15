@@ -1,5 +1,5 @@
 ---
-title: Discriminated Unions (F#)
+title: Discriminated Unions (F#) | Microsoft Docs
 description: Discriminated Unions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -14,14 +14,12 @@ ms.assetid: 16e2a011-c785-48c8-859f-79df7f3a0e29
 
 # Discriminated Unions
 
-> [!NOTE]
-> The following article does not cover using the `struct` attribute for Records yet, which is an F# 4.1 feature.  It will be documented here.
-
 Discriminated unions provide support for values that can be one of a number of named cases, possibly each with different values and types. Discriminated unions are useful for heterogeneous data; data that can have special cases, including valid and error cases; data that varies in type from one instance to another; and as an alternative for small object hierarchies. In addition, recursive discriminated unions are used to represent tree data structures.
 
 ## Syntax
 
 ```fsharp
+[ attributes ]
 type type-name =
     | case-identifier1 [of [ fieldname1 : ] type1 [ * [ fieldname2 : ] type2 ...]
     | case-identifier2 [of [fieldname3 : ]type3 [ * [ fieldname4 : ]type4 ...]
@@ -83,6 +81,26 @@ let getShapeHeight shape =
 
 Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute to the union type definition.
 
+## Struct Discriminated Unions
+
+Starting with F# 4.1, you can also represent Discriminated Unions as structs.  This is done with the `[<Struct>]` attribute.
+
+```fsharp
+[<Struct>]
+type SingleCase = Case of string
+
+[<Struct>]
+type Multicase =
+    | Case1 of string
+    | Case2 of int
+    | Case3 of double
+```
+
+Because these are value types and not reference types, there are extra considerations compared with reference discriminated unions:
+
+1. They are copied as value types and have value type semantics.
+2. You cannot use a recursive type definition with a multicase struct Discriminated Union.
+3. You must provide unique case names for a multicase struct Discriminated Union.
 
 ## Using Discriminated Unions Instead of Object Hierarchies
 You can often use a discriminated union as a simpler alternative to a small object hierarchy. For example, the following discriminated union could be used instead of a `Shape` base class that has derived types for circle, square, and so on.
@@ -115,6 +133,15 @@ Discriminated unions work well if the nodes in the tree are heterogeneous. In th
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2006.fs)]
 
 When this code is executed, the value of `result` is 5.
+
+## Common Attributes
+
+The following attributes are commonly seen in discriminated unions:
+
+* `[RequireQualifiedAccess]`
+* `[NoEquality]`
+* `[NoComparison]`
+* `[Struct]` (F# 4.1 and higher)
 
 ## See Also
 [F# Language Reference](index.md)

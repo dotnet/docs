@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for connectionManagement (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,10 +38,9 @@ Removes an IP address or DNS name from the connection management list.
   
 ## Syntax  
   
-```  
-  
-      <remove   
-   name = "server name or IP address"   
+```xml  
+      <remove   
+   name = "server name or IP address"   
 />  
 ```  
   
@@ -74,7 +73,7 @@ Removes an IP address or DNS name from the connection management list.
 ## Example  
  The following code example removes any connection management list entries for the server www.adventure-works.com and then configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <connectionManagement>  

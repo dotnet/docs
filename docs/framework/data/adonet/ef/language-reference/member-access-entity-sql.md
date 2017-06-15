@@ -2,7 +2,7 @@
 title: ". (Member Access) (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,6 @@ The dot operator (.) is the [!INCLUDE[esql](../../../../../../includes/esql-md.m
 ## Syntax  
   
 ```  
-  
 expression.identifier  
 ```  
   

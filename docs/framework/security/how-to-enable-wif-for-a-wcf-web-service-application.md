@@ -2,6 +2,7 @@
 title: "How To: Enable WIF for a WCF Web Service Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -215,7 +216,7 @@ manager: "mbaldwin"
   
 6.  Open the *App.config* file and add the following XML as the first child element under the `<system.serviceModel>` element, then save the file:  
   
-    ```  
+    ```xml  
     <behaviors>  
        <endpointBehaviors>  
          <behavior>  
@@ -227,7 +228,6 @@ manager: "mbaldwin"
          </behavior>  
        </endpointBehaviors>  
      </behaviors>  
-  
     ```  
   
      This disables certificate validation.  

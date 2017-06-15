@@ -26,6 +26,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameFreeBuffer function [.NET Framework strong naming]"
 ms.assetid: eda21ecf-4734-4f92-aaba-9f34884385db
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -39,7 +41,7 @@ Frees memory that was allocated with a previous call to a strong name function s
 ## Syntax  
   
 ```  
-VOID StrongNameFreeBuffer (   
+VOID StrongNameFreeBuffer (   
    [in] BYTE   *pbMemory  
 );  
 ```  

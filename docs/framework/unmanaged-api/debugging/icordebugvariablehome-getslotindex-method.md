@@ -2,7 +2,7 @@
 title: "ICorDebugVariableHome::GetSlotIndex Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetSlotIndex method [.NET Framework debugging]"
   - "GetSlotIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,11 +36,9 @@ Gets the managed slot-index of a local variable.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSlotIndex(  
     [out] ULONG32 *pSlotIndex  
 );  
-  
 ```  
   
 #### Parameters  

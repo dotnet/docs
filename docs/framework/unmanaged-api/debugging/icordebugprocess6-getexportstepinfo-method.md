@@ -2,7 +2,7 @@
 title: "ICorDebugProcess6::GetExportStepInfo Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,12 +23,10 @@ Provides information on runtime exported functions to help step through managed 
 ## Syntax  
   
 ```  
-  
 HRESULT GetExportStepInfo(  
     [in] LPCWSTR pszExportName,   
     [out] CorDebugCodeInvokeKind* pInvokeKind,   
     [out] CorDebugCodeInvokePurpose* pInvokePurpose);  
-  
 ```  
   
 #### Parameters  

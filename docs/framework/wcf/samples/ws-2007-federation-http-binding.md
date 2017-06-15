@@ -2,7 +2,7 @@
 title: "WS 2007 Federation HTTP Binding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
   
  The sample makes the `ICalculator` contract available using the `ws2007FederationHttpBinding` element. The configuration of this binding on the client is shown in the following code.  
   
-```  
+```xml  
 <bindings>  
   <ws2007FederationHttpBinding>  
     <binding name="ServiceFed" >  
@@ -40,14 +40,13 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
     </binding>  
   </ws2007FederationHttpBinding>  
 </bindings>  
-  
 ```  
   
  On the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md), the `security` value specifies which security mode should be used. In this sample, `message` security is used, which is why the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) is specified inside the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md). The [\<issuer>](../../../../docs/framework/configure-apps/file-schema/wcf/issuer.md) element inside the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) specifies the address and binding for the STS that issues a security token to the client so that the client can authenticate to the `ICalculator` service.  
   
  The configuration of this binding on the service is shown in the following code.  
   
-```  
+```xml  
 <bindings>  
   <ws2007FederationHttpBinding>  
     <binding name="ServiceFed" >  
@@ -68,14 +67,13 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
     </binding>  
   </ws2007FederationHttpBinding>  
 </bindings>  
-  
 ```  
   
  On the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md), the `security` value specifies which security mode should be used. In this sample, `message` security is used, which is why the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) is specified inside the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md). The [\<issuerMetadata>](../../../../docs/framework/configure-apps/file-schema/wcf/issuermetadata.md) element of `ws2007FederationHttpBinding` inside the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) specifies the address and identity for an endpoint that can be used to retrieve metadata for the STS.  
   
  The behavior for the service is shown in the following code.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name ="ServiceBehaviour" >  
@@ -98,7 +96,6 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  The [\<issuedTokenAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md)> allows the service to specify constraints on the tokens it allows clients to present during authentication. This configuration specifies that tokens signed by a certificate whose subject name is CN=STS are accepted by the service.  

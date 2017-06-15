@@ -2,7 +2,7 @@
 title: "Message Security with a Windows Client | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +47,7 @@ This scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] cl
 ### Configuration  
  The following configuration can be used instead of the code to set up the service:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -94,7 +94,7 @@ This scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] cl
 ### Configuration  
  The following configuration is used to set the client properties.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

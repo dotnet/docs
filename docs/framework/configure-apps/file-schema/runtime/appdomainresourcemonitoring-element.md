@@ -2,7 +2,7 @@
 title: "&lt;appDomainResourceMonitoring&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
   
 ## Syntax  
   
-```  
+```xml  
 <appDomainResourceMonitoring    
    enabled="true|false"/>  
 ```  
@@ -73,7 +73,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
 ## Example  
  The following example shows how to enable application domain resource monitoring.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <appDomainResourceMonitoring enabled="true"/>  

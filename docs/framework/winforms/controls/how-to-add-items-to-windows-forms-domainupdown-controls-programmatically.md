@@ -2,7 +2,7 @@
 title: "How to: Add Items to Windows Forms DomainUpDown Controls Programmatically | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,12 +29,10 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
   
     ```vb  
     DomainUpDown1.Items.Add("noodles")  
-  
     ```  
   
     ```csharp  
     domainUpDown1.Items.Add("noodles");  
-  
     ```  
   
     ```cpp  
@@ -48,13 +46,11 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
     ```vb  
     ' Inserts an item at the third position in the list  
     DomainUpDown1.Items.Insert(2, "rice")  
-  
     ```  
   
     ```csharp  
     // Inserts an item at the third position in the list  
     domainUpDown1.Items.Insert(2, "rice");  
-  
     ```  
   
     ```cpp  

@@ -34,7 +34,6 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
     ```csharp  
     WindowsIdentity ImpersonatedIdentity = new WindowsIdentity(hToken);  
-  
     ```  
   
     ```vb  
@@ -45,7 +44,6 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
     ```csharp  
     WindowsImpersonationContext MyImpersonation = ImpersonatedIdentity.Impersonate();  
-  
     ```  
   
     ```vb  
@@ -56,7 +54,6 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
     ```csharp  
     MyImpersonation.Undo();  
-  
     ```  
   
     ```vb  

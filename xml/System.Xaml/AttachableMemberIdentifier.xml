@@ -231,7 +231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation returns a string form that parallels the XAML attachable member usage in markup. That string form is `declaringType``.``memberName`.  
+ This implementation returns a string form that parallels the XAML attachable member usage in markup. That string form is `declaringType.memberName`.  
   
  ]]></format>
         </remarks>

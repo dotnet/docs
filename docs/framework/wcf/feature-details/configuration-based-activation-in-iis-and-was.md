@@ -24,10 +24,10 @@ Normally when hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] 
 > [!NOTE]
 >  Each <`add`> element must specify a service or a factory attribute. Specifying both service and factory attributes is allowed.  
   
-```  
+```xml  
 <serviceHostingEnvironment>  
   <serviceActivations>  
-    <add relativeAddress="MyServiceAddress" service="Service" factory=”MyServiceHostFactory”/>  
+    <add relativeAddress="MyServiceAddress" service="Service" factory="MyServiceHostFactory"/>  
   </serviceActivations>  
 </serviceHostingEnvironment>  
 ```  
@@ -36,7 +36,7 @@ Normally when hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] 
   
 > [!NOTE]
 >  -   When using configuration-based activation, inline code in .svc files is not supported.  
-> -   The `relativeAddress` attribute must be set to a relative address such as “\<sub-directory>/service.svc” or “~/\<sub-directory/service.svc”.  
+> -   The `relativeAddress` attribute must be set to a relative address such as "\<sub-directory>/service.svc" or "~/\<sub-directory/service.svc".  
 > -   A configuration exception is thrown if you register a relative address that does not have a known extension associated with WCF.  
 > -   The relative address specified is relative to the root of the virtual application.  
 > -   Due to the hierarchical model of configuration, the registered relative addresses at machine and site level are inherited by virtual applications.  

@@ -2,7 +2,7 @@
 title: "&lt;bindingElementExtensions&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,7 +22,7 @@ This section enables the use of a custom binding element from a machine or appli
   
  The following example uses the `add` element, as well as the `name` attribute to add a binding extension to the `bindingElementExtensions` section of the configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
     <extensions>  
         <bindingElementExtensions>  
@@ -37,7 +37,7 @@ This section enables the use of a custom binding element from a machine or appli
   
  After the element and its configuration type are defined, the extension can be used as part of a custom binding as shown in the following example.  
   
-```  
+```xml  
 <customBinding>  
      <binding name="test2">  
          <udpTransport />  

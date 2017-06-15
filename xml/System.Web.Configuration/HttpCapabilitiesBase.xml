@@ -356,7 +356,7 @@
       <Docs>
         <summary>Gets a value indicating whether the browser supports page content following WML <see langword="&lt;select&gt;" /> or <see langword="&lt;input&gt;" /> elements.</summary>
         <value>
-          <see langword="true" /> if the browser supports page content following HTML <see langword="&lt;select&gt; " />or <see langword="&lt;input&gt; " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the browser supports page content following HTML <see langword="&lt;select&gt;" /> or <see langword="&lt;input&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1895,7 +1895,7 @@
       <Docs>
         <summary>Gets a value indicating whether the browser renders a line break after an HTML <see langword="&lt;input&gt;" /> element.</summary>
         <value>
-          <see langword="true" /> if the browser renders a line break after an HTML <see langword="&lt;input&gt; " />element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the browser renders a line break after an HTML <see langword="&lt;input&gt;" /> element; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2907,7 +2907,7 @@ CACHE-CONTROL: NO-CACHE
       <Docs>
         <summary>Gets a value indicating whether the browser supports the <see langword="color" /> attribute of HTML <see langword="&lt;font&gt;" /> elements.</summary>
         <value>
-          <see langword="true" /> if the browser supports the <see langword="color" /> attribute of HTML <see langword="&lt;font&gt; " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the browser supports the <see langword="color" /> attribute of HTML <see langword="&lt;font&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2963,7 +2963,7 @@ CACHE-CONTROL: NO-CACHE
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the browser supports the <see langword="size" /> attribute of HTML <see langword="&lt;font&gt; " />elements.</summary>
+        <summary>Gets a value indicating whether the browser supports the <see langword="size" /> attribute of HTML <see langword="&lt;font&gt;" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="size" /> attribute of HTML <see langword="&lt;font&gt;" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -3285,7 +3285,7 @@ CACHE-CONTROL: NO-CACHE
 ## Remarks  
  With UP.Browser 4.1 or UP.Browser 3.2, the <xref:System.Web.HttpResponse.Redirect%2A> method behaves as if the value of the <xref:System.Web.Configuration.HttpCapabilitiesBase.SupportsRedirectWithCookie%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object is `false`, unless the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> property in the <xref:System.Web.Configuration.SystemWebSectionGroup.SessionState%2A> section of Web.config has been explicitly set to `true`.  
   
- In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
+ In ASP.NET 1.1, the options for this setting were `true` or `false`, but with ASP.NET 2.0, the choices are expanded, and <xref:System.Web.HttpCookieMode.AutoDetect> is now the default setting. If your Web application has the `cookieless` attribute of the `<sessionState>` section in the Web.config file set to a Boolean value, <xref:System.Web.HttpResponse.Redirect%2A> should work as expected for these browsers.  
   
    
   

@@ -1,5 +1,5 @@
 ---
-title: .NET Core Versioning
+title: .NET Core Versioning | Microsoft Docs
 description: .NET Core Versioning
 keywords: .NET, .NET Core
 author: richlander
@@ -109,7 +109,7 @@ After shipping a .NET Core v1.0.0 stable version, patch-level changes (no new AP
 
 You can see patch updates demonstrated in the project.json examples below.
 
-```
+```json
 {
   "dependencies": {
     "Microsoft.NETCore.App": "1.0.1"
@@ -146,5 +146,4 @@ You can see major updates demonstrated in the following project file. (Note that
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 </Project>
-
 ```

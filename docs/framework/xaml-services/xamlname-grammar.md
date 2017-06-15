@@ -36,13 +36,11 @@ NameChar ::= NameStartChar | DecimalDigit | CombiningCharacter
 LetterCharacter ::= UnicodeLu | UnicodeLl | UnicodeLo | UnicodeLt | UnicodeNl   
 DecimalDigit ::= UnicodeNd   
 CombiningCharacter ::= UnicodeMn | UnicodeMc  
-  
 ```  
   
  Which assumes the following general category values as defined in the Unicode Character Database  
   
 ```  
-  
 Lu  
 Letter, Uppercase  
 Ll  

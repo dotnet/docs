@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::GetFunctionTailcall3Info method [.NET Framework profiling]"
   - "GetFunctionTailcall3Info method [.NET Framework profiling]"
 ms.assetid: afdb5ac9-5bf5-4b91-b7cb-f81db23d7da3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

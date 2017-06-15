@@ -52,7 +52,6 @@ Private Sub SerializeDataSet(filename As String)
     ser.Serialize(writer, ds)  
     writer.Close()  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -101,7 +100,6 @@ Private Sub SerializeNode(filename As String)
     ser.Serialize(writer, myNode)  
     writer.Close()  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -137,7 +135,6 @@ End Class
 Public Class Address  
     Public FirstName As String  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -153,7 +150,7 @@ public class Address
   
  The serialized XML output might resemble the following.  
   
-```  
+```xml  
 <PurchaseOrder>  
     <Address>  
         <FirstName>George</FirstName>  
@@ -173,7 +170,6 @@ Public Class Item
     Public ItemID As String  
     Public ItemPrice As decimal  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -187,13 +183,12 @@ public class Item
     public string ItemID  
     public decimal ItemPrice  
 }  
-  
 ```  
   
  The serialized class instance might resemble the following, if two items are ordered.  
   
-```  
-\<PurchaseOrder xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+```xml  
+<PurchaseOrder xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
     <Items>  
         <Item>  
             <ItemID>aaa111</ItemID>  
@@ -299,7 +294,6 @@ Public Class Employee
         EmpID = newID  
     End Sub  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -391,14 +385,14 @@ Imports Microsoft.VisualBasic
 ' the attribute sets the IsNullable property, which specifies whether  
 ' the xsi:null attribute appears if the class instance is set to  
 ' a null reference.   
-\<XmlRootAttribute("PurchaseOrder", _  
+<XmlRootAttribute("PurchaseOrder", _  
  Namespace := "http://www.cpandl.com", IsNullable := False)> _  
 Public Class PurchaseOrder  
     Public ShipTo As Address  
     Public OrderDate As String  
     ' The XmlArrayAttribute changes the XML element name  
     ' from the default of "OrderedItems" to "Items".   
-    \<XmlArrayAttribute("Items")> _  
+    <XmlArrayAttribute("Items")> _  
     Public OrderedItems() As OrderedItem  
     Public SubTotal As Decimal  
     Public ShipCost As Decimal  
@@ -409,14 +403,14 @@ Public Class Address
     ' The XmlAttribute instructs the XmlSerializer to serialize the   
     ' Name field as an XML attribute instead of an XML element (the   
     ' default behavior).   
-    \<XmlAttribute()> _  
+    <XmlAttribute()> _  
     Public Name As String  
     Public Line1 As String  
   
     ' Setting the IsNullable property to false instructs the  
     ' XmlSerializer that the XML attribute will not appear if  
     ' the City field is set to a null reference.   
-    \<XmlElementAttribute(IsNullable := False)> _  
+    <XmlElementAttribute(IsNullable := False)> _  
     Public City As String  
     Public State As String  
     Public Zip As String  
@@ -554,7 +548,6 @@ Public Class Test
         attr.Value & "'"))  
     End Sub 'serializer_UnknownAttribute  
 End Class 'Test  
-  
 ```  
   
 ```csharp  
@@ -750,9 +743,9 @@ public class Test
   
  The XML output might resemble the following.  
   
-```  
-\<?xml version="1.0" encoding="utf-8"?>  
-\<PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">  
+```xml  
+<?xml version="1.0" encoding="utf-8"?>  
+<PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">  
     <ShipTo Name="Teresa Atkinson">  
         <Line1>1 Main St.</Line1>  
         <City>AnyTown</City>  

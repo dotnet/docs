@@ -70,9 +70,8 @@ Content-Type: application/json
 Content-Length: 20   
 Host: localhost:15238  
 {   
-   "rating": 4   
+   "rating": 4   
 }  
-  
 ```  
   
 > [!WARNING]

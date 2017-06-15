@@ -2,6 +2,7 @@
 title: "&lt;tokenReplayCache&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,15 +25,15 @@ Registers a token replay cache with a service or a security token handler collec
   
 ## Syntax  
   
-```  
-\<system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-      \<tokenReplayCache type=xs:string>  
-      </tokenReplayCache>  
-    </caches>  
-  </identityConfiguration>  
-\</system.identityModel>  
+```xml  
+<system.identityModel>  
+  <identityConfiguration>  
+    <caches>  
+      <tokenReplayCache type=xs:string>  
+      </tokenReplayCache>  
+    </caches>  
+  </identityConfiguration>  
+</system.identityModel>  
 ```  
   
 ## Attributes and Elements  
@@ -59,7 +60,7 @@ Registers a token replay cache with a service or a security token handler collec
 ## Example  
  The following XML shows the configuration of a custom cache for detecting replayed tokens.  
   
-```  
+```xml  
 <caches>  
   <tokenReplayCache type="MyCacheLibrary.MyTokenReplayCache, MyCacheLibrary">  
   </tokenReplayCache>  

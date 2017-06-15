@@ -2,7 +2,7 @@
 title: "How to: Select Text in the Windows Forms TextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,7 +47,6 @@ You can select text programmatically in the Windows Forms <xref:System.Windows.F
           TextBox1.SelectionLength = TextBox1.Text.Length  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -58,7 +57,6 @@ You can select text programmatically in the Windows Forms <xref:System.Windows.F
           textBox1.SelectionLength = textBox1.Text.Length;  
        }  
     }  
-  
     ```  
   
     ```cpp  

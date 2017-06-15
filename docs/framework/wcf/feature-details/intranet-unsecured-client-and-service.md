@@ -2,7 +2,7 @@
 title: "Intranet Unsecured Client and Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +46,7 @@ The following illustration depicts a simple [!INCLUDE[indigo1](../../../../inclu
 ### Configuration  
  The following code sets up the same endpoint using configuration:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -92,7 +92,7 @@ The following illustration depicts a simple [!INCLUDE[indigo1](../../../../inclu
 ### Configuration  
  The following configuration code applies to the client:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

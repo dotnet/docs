@@ -2,7 +2,7 @@
 title: "How to: Layer Objects on Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -43,12 +43,10 @@ When you create a complex user interface, or work with a multiple document inter
   
     ```vb  
     txtFirstName.BringToFront()  
-  
     ```  
   
     ```csharp  
     txtFirstName.BringToFront();  
-  
     ```  
   
     ```cpp  

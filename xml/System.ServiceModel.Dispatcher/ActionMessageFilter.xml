@@ -74,7 +74,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="actions" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The<paramref name=" actions" /> array is empty.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="actions" /> array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Actions">
@@ -134,6 +134,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests whether a message or a buffered message matches one of the actions configured for the filter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and cannot examine the message body; the other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message.  Because an action filter does not examine the body, these methods are equivalent.  
+  
+ If you must check the message against multiple <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> objects, put the filters into an <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601> and then use the matching functionality provided by the table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Match">
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
@@ -195,27 +214,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="messageBuffer" /> is <see langword="null" />.</exception>
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Match">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tests whether a message or a buffered message matches one of the actions configured for the filter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and cannot examine the message body; the other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message.  Because an action filter does not examine the body, these methods are equivalent.  
-  
- If you must check the message against multiple <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> objects, put the filters into an <xref:System.ServiceModel.Dispatcher.IMessageFilterTable%601> and then use the matching functionality provided by the table.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

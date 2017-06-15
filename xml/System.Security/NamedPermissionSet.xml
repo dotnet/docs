@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.PermissionSet</BaseTypeName>
   </Base>
@@ -29,7 +33,6 @@
 ## Examples  
  The following code example shows the use of members of the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#1](System.Security.NamedPermissionSet#1)]  -->  
   
  ]]></format>
     </remarks>
@@ -43,6 +46,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,6 +71,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
@@ -74,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using this constructor creates a named permission set with no permissions but with an <xref:System.Security.Permissions.PermissionState> permission state. A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom user-defined permissions that implement <xref:System.Security.Permissions.IUnrestrictedPermission>. All permissions will have the equivalent of an `Unrestricted` permission state. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission> will be empty instances.  
+ Using this constructor creates a named permission set with no permissions but with an <xref:System.Security.Permissions.PermissionState.Unrestricted> permission state. A named permission set in an unrestricted state effectively contains all permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. The named permission set will contain all built-in permissions as well as all custom user-defined permissions that implement <xref:System.Security.Permissions.IUnrestrictedPermission>. All permissions will have the equivalent of an `Unrestricted` permission state. Permissions that do not implement <xref:System.Security.Permissions.IUnrestrictedPermission> will be empty instances.  
   
  ]]></format>
         </remarks>
@@ -89,6 +100,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -120,6 +135,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="permSet" Type="System.Security.PermissionSet" />
@@ -134,7 +153,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.%23ctor%2A> constructor to create a new <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#6](System.Security.NamedPermissionSet#6)]  -->  
   
  ]]></format>
         </remarks>
@@ -151,6 +169,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PermissionSet</ReturnType>
       </ReturnValue>
@@ -164,7 +186,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Copy%2A> method to create a copy of the current <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#5](System.Security.NamedPermissionSet#5)]  -->  
   
  ]]></format>
         </remarks>
@@ -178,6 +199,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,6 +229,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -221,7 +250,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Description%2A> property to display the description of the current <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#3](System.Security.NamedPermissionSet#3)]  -->  
   
  ]]></format>
         </remarks>
@@ -235,6 +263,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -264,7 +296,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Equals%2A> method to compare two <xref:System.Security.NamedPermissionSet> objects. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#5](System.Security.NamedPermissionSet#5)]  -->  
   
  ]]></format>
         </remarks>
@@ -278,6 +309,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,7 +335,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.FromXml%2A> method to recreate a <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#4](System.Security.NamedPermissionSet#4)]  -->  
   
  ]]></format>
         </remarks>
@@ -316,6 +350,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -350,6 +388,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -367,7 +409,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.Name%2A> property to display the name of a <xref:System.Security.NamedPermissionSet>. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#2](System.Security.NamedPermissionSet#2)]  -->  
   
  ]]></format>
         </remarks>
@@ -382,6 +423,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,7 +447,6 @@
 ## Examples  
  The following code example shows the use of the <xref:System.Security.NamedPermissionSet.ToXml%2A> method to recreate a <xref:System.Security.NamedPermissionSet> object. This code example is part of a larger example provided for the <xref:System.Security.NamedPermissionSet> class.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Security.NamedPermissionSet#4](System.Security.NamedPermissionSet#4)]  -->  
   
  ]]></format>
         </remarks>

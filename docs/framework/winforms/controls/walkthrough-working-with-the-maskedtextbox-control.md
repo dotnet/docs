@@ -2,7 +2,7 @@
 title: "Walkthrough: Working with the MaskedTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -81,7 +81,6 @@ Tasks illustrated in this walkthrough include:
         ToolTip1.ToolTipTitle = "Invalid Input"  
         ToolTip1.Show("We're sorry, but only digits (0-9) are allowed in dates.", MaskedTextBox1, 5000)  
     End Sub  
-  
     ```  
   
 ## Alert the User to a Type that Is Not Valid  
@@ -128,7 +127,6 @@ Tasks illustrated in this walkthrough include:
            e.Cancel = True  
         End If  
     End Sub  
-  
     ```  
   
 ## See Also  

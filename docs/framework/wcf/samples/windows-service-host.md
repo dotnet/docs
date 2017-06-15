@@ -2,7 +2,7 @@
 title: "Windows Service Host | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +42,7 @@ This sample demonstrates a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
   
  The endpoint that is defined uses the base address and a [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The following sample shows the configuration of the base address as well as the endpoint that exposes the CalculatorService.  
   
-```  
+```xml  
 <services>  
   <service name="Microsoft.ServiceModel.Samples.WcfCalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -58,7 +58,6 @@ This sample demonstrates a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
     ...  
   </service>  
 </services>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in both the service and client console windows. Press ENTER in each console window to shut down the service and client.  

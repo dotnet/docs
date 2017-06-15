@@ -202,13 +202,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Logging.FileLogTraceListener.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Logging.FileLogTraceListener.GetSupportedAttributes
 author: "stevehoag"
 ms.author: "shoag"

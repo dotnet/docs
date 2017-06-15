@@ -2,7 +2,7 @@
 title: "How to: Split a Window Horizontally | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,7 +30,7 @@ The following code example makes the splitter that divides the <xref:System.Wind
   
 ### To split a window horizontally  
   
-1.  Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation>.  
+1.  Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
     ```vb  
     Sub ShowSplitContainer()  
@@ -43,7 +43,6 @@ The following code example makes the splitter that divides the <xref:System.Wind
         splitContainer1.Orientation = Orientation.Horizontal  
         Controls.Add(splitContainer1)  
     End Sub  
-  
     ```  
   
     ```csharp  

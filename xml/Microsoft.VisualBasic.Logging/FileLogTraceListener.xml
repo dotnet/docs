@@ -33,7 +33,7 @@
   
     -   The `baseName` part is the fundamental log name, specified by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName%2A> property.  
   
-    -   The `dateStamp` part has the format "YYYY-MM-DD", and it is shown when <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> is <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>.  
+    -   The `dateStamp` part has the format "YYYY-MM-DD", and it is shown when <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> is <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly>.  
   
     -   If more than one log file is needed with the same `baseName` and `dateStamp`, the `version` part, a positive `Integer`, is added to the file name.  
   
@@ -59,7 +59,7 @@
   
  **Log Maintenance**  
   
--   The minimum frequency for creating new log files is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> property. When the value is <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>, a new log file is created at least once every day or week, and a date stamp is incorporated into the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> name.  
+-   The minimum frequency for creating new log files is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> property. When the value is <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly>, a new log file is created at least once every day or week, and a date stamp is incorporated into the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> name.  
   
 -   The maximum size (in bytes) of the log file is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property. If the log file size exceeds this size, additional messages written to the log are discarded and, depending on the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property, an exception is thrown.  
   
@@ -260,11 +260,11 @@
   
  The explicit form of the full log file name is `path`\\`baseName`[-`dateStamp`][-`iteration`].log, where  
   
--   The `path` part is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property and, if that property value is set to <xref:Microsoft.VisualBasic.Logging.LogFileLocation>, the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property.  
+-   The `path` part is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property and, if that property value is set to <xref:Microsoft.VisualBasic.Logging.LogFileLocation.Custom>, the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property.  
   
 -   The `baseName` part is the fundamental log name, specified by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName%2A> property.  
   
--   The `dateStamp` part has the format "YYYY-MM-DD", and it is shown when <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> is set to <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>.  
+-   The `dateStamp` part has the format "YYYY-MM-DD", and it is shown when <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> is set to <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly>.  
   
 -   If more than one log file is needed with the same `baseName` and `dateStamp`, the `iteration` part, a positive `Integer`, is added to the file name.  
   
@@ -322,7 +322,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property is set, it also sets the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property to <xref:Microsoft.VisualBasic.Logging.LogFileLocation>.  
+ When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property is set, it also sets the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property to <xref:Microsoft.VisualBasic.Logging.LogFileLocation.Custom>.  
   
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property will throw an exception if the directory cannot be resolved.  
   
@@ -381,9 +381,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property is set to <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption>, the log messages are silently discarded if there is not enough reserved disk space. This is the default behavior, and it prevents simple applications from failing if the disk gets too full.  
+ When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property is set to <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.DiscardMessages>, the log messages are silently discarded if there is not enough reserved disk space. This is the default behavior, and it prevents simple applications from failing if the disk gets too full.  
   
- More robust applications can set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property to <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption>, and add `Try...Catch` blocks around all code that writes to the log.  
+ More robust applications can set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property to <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.ThrowException>, and add `Try...Catch` blocks around all code that writes to the log.  
   
  ]]></format>
         </remarks>
@@ -504,11 +504,11 @@
   
  The explicit form of the full log-file name is `path`\\`baseName`[-`dateStamp`][-`iteration`].log, where:  
   
--   The `path` part is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property and, if that property value is set to <xref:Microsoft.VisualBasic.Logging.LogFileLocation>, the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property.  
+-   The `path` part is determined by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Location%2A> property and, if that property value is set to <xref:Microsoft.VisualBasic.Logging.LogFileLocation.Custom>, the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> property.  
   
 -   The `baseName` part is the fundamental log name, specified by the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.BaseFileName%2A> property.  
   
--   The `dateStamp` part has the format YYYY-MM-DD, and it is shown when <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> is <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>.  
+-   The `dateStamp` part has the format YYYY-MM-DD, and it is shown when <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A> is <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily> or <xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly>.  
   
 -   If more than one log file is needed with the same `baseName` and `dateStamp`, the `iteration` part, a positive `Integer`, is added to the file name.  
   
@@ -598,11 +598,11 @@
   
 |**Location value**|**Path**|  
 |------------------------|--------------|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileLocation>|The path for the application data that is shared among all users, with the format:<br /><br /> `BasePath`\\`CompanyName`\\`ProductName`\\`ProductVersion`<br /><br /> A typical value for `BasePath` is:<br /><br /> C:\Documents and Settings\All Users\Application Data<br /><br /> The values of `CompanyName`, `ProductName`, and `ProductVersion` come from the assembly.|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileLocation>|The path for the executable file that started the application.|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileLocation>|The path for the application data of a user, with the format:<br /><br /> `BasePath`\\`CompanyName`\\`ProductName`\\`ProductVersion`<br /><br /> A typical value for `BasePath` is:<br /><br /> C:\Documents and Settings\\`username`\Application Data<br /><br /> The values of `CompanyName`, `ProductName`, and `ProductVersion` come form the assembly.|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileLocation>|The path of the current system's temporary folder.|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileLocation>|If the string specified by <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> is not empty, then use it as the path; otherwise use the path for the application data of a user.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileLocation.CommonApplicationDirectory>|The path for the application data that is shared among all users, with the format:<br /><br /> `BasePath`\\`CompanyName`\\`ProductName`\\`ProductVersion`<br /><br /> A typical value for `BasePath` is:<br /><br /> C:\Documents and Settings\All Users\Application Data<br /><br /> The values of `CompanyName`, `ProductName`, and `ProductVersion` come from the assembly.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileLocation.ExecutableDirectory>|The path for the executable file that started the application.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileLocation.LocalUserApplicationDirectory>|The path for the application data of a user, with the format:<br /><br /> `BasePath`\\`CompanyName`\\`ProductName`\\`ProductVersion`<br /><br /> A typical value for `BasePath` is:<br /><br /> C:\Documents and Settings\\`username`\Application Data<br /><br /> The values of `CompanyName`, `ProductName`, and `ProductVersion` come form the assembly.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileLocation.TempDirectory>|The path of the current system's temporary folder.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileLocation.Custom>|If the string specified by <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.CustomLocation%2A> is not empty, then use it as the path; otherwise use the path for the application data of a user.|  
   
  ]]></format>
         </remarks>
@@ -634,9 +634,9 @@
   
 |**LogFileCreationSchedule value**|**Date in the log file name**|  
 |---------------------------------------|-----------------------------------|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>|Include the current date in the log file name.|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>|Do not include the date in the log file name.|  
-|<xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption>|Include the first day of the current week in the log file name.<br /><br /> The week starts on Saturday.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Daily>|Include the current date in the log file name.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.None>|Do not include the date in the log file name.|  
+|<xref:Microsoft.VisualBasic.Logging.LogFileCreationScheduleOption.Weekly>|Include the first day of the current week in the log file name.<br /><br /> The week starts on Saturday.|  
   
  ]]></format>
         </remarks>
@@ -710,6 +710,23 @@
         <exception cref="T:System.ArgumentException">When this property is set to a value less than 0.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the output file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData%2A> methods are not intended to be called by application code. These methods are called by members of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data to output.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceData">
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
@@ -758,12 +775,12 @@
 |`severity`|Always|The enumeration-value name of `eventType`.|  
 |`id`|Always|The string representation of `id`.|  
 |`message`|Always|The string representation of `data`.|  
-|`callStack`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
-|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`DateTime`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`callStack`|When the <xref:System.Diagnostics.TraceOptions.Callstack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
+|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions.LogicalOperationStack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`DateTime`|When the <xref:System.Diagnostics.TraceOptions.DateTime> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions.ProcessId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions.ThreadId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions.Timestamp> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
 |`HostName`|When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.IncludeHostName%2A> property is `True`.|The name of the computer.|  
   
  ]]></format>
@@ -824,18 +841,35 @@
 |`severity`|Always|The enumeration-value name of `eventType`.|  
 |`id`|Always|The string representation of `id`.|  
 |`message`|Always|The string consisting of the string representation of each element in `data`, each separated by <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.Delimiter%2A>.|  
-|`callStack`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
-|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`DateTime`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`callStack`|When the <xref:System.Diagnostics.TraceOptions.Callstack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
+|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions.LogicalOperationStack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`DateTime`|When the <xref:System.Diagnostics.TraceOptions.DateTime> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions.ProcessId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions.ThreadId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions.Timestamp> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
 |`HostName`|When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.IncludeHostName%2A> property is `True`.|The name of the computer.|  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace and event information to the output file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent%2A> methods are not intended to be called by application code. These methods are called by members of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data to output.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
@@ -884,12 +918,12 @@
 |`severity`|Always.|The enumeration-value name of `eventType`.|  
 |`id`|Always.|The string representation of `id`.|  
 |`message`|Always.|The value of `message`.|  
-|`callStack`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
-|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`DateTime`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`callStack`|When the <xref:System.Diagnostics.TraceOptions.Callstack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
+|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions.LogicalOperationStack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`DateTime`|When the <xref:System.Diagnostics.TraceOptions.DateTime> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions.ProcessId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions.ThreadId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions.Timestamp> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
 |`HostName`|When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.IncludeHostName%2A> property is `True`.|The name of the computer.|  
   
  ]]></format>
@@ -952,12 +986,12 @@
 |`severity`|Always|The enumeration-value name of `eventType`.|  
 |`id`|Always|The string representation of `id`.|  
 |`message`|Always|The data in `args` formatted with the `format` string and using the invariant culture for string conversions.|  
-|`callStack`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
-|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`DateTime`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
-|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
-|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`callStack`|When the <xref:System.Diagnostics.TraceOptions.Callstack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.Callstack%2A> property of `eventCache`.|  
+|`CorrelationID`|When the <xref:System.Diagnostics.TraceOptions.LogicalOperationStack> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`DateTime`|When the <xref:System.Diagnostics.TraceOptions.DateTime> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ProcessID`|When the <xref:System.Diagnostics.TraceOptions.ProcessId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.ProcessId%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
+|`ThreadID`|When the <xref:System.Diagnostics.TraceOptions.ThreadId> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The <xref:System.Diagnostics.TraceEventCache.ThreadId%2A> property of `eventCache`.|  
+|`Timestamp`|When the <xref:System.Diagnostics.TraceOptions.Timestamp> flag is set in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The string representation of the <xref:System.Diagnostics.TraceEventCache.Timestamp%2A> property of `eventCache`. The invariant culture is used for the string conversion.|  
 |`HostName`|When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.IncludeHostName%2A> property is `True`.|The name of the computer.|  
   
  ]]></format>
@@ -1026,39 +1060,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TraceData">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace data to the output file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceData%2A> methods are not intended to be called by application code. These methods are called by members of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data to output.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace and event information to the output file or stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.TraceEvent%2A> methods are not intended to be called by application code. These methods are called by members of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data to output.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

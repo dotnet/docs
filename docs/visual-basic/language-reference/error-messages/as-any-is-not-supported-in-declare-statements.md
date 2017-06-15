@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &#39;As Any&#39; is not supported in &#39;Declare&#39; statements
-The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and earlier versions to permit the use of arguments that could contain any type of data. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supports overloading, however, and so makes the `Any` data type obsolete.  
+The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and earlier versions to permit the use of arguments that could contain any type of data. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supports overloading, however, and so makes the `Any` data type obsolete.  
   
  **Error ID:** BC30828  
   
@@ -55,4 +55,4 @@ The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and e
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)   
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Creating Prototypes in Managed Code](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)
+ [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)

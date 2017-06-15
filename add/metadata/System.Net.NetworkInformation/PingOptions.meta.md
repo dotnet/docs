@@ -17,12 +17,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.NetworkInformation.PingOptions.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.NetworkInformation.PingOptions.#ctor(System.Int32,System.Boolean)
 ms.author: "bobdel"
 manager: "markl"

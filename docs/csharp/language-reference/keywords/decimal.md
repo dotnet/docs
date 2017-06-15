@@ -42,7 +42,6 @@ The `decimal` keyword indicates a 128-bit data type. Compared to floating-point 
  If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:  
   
 ```  
-  
 decimal myMoney = 300.5m;  
 ```  
   
@@ -52,14 +51,12 @@ decimal myMoney = 300.5m;
  The integral types are implicitly converted to `decimal` and the result evaluates to `decimal`. Therefore you can initialize a decimal variable using an integer literal, without the suffix, as follows:  
   
 ```  
-  
 decimal myMoney = 300;  
 ```  
   
  There is no implicit conversion between floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
   
 ```  
-  
       decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
@@ -86,7 +83,6 @@ Console.WriteLine(dec + dub);
 // You can fix the error by using explicit casting of either operand.  
 Console.WriteLine(dec + (decimal)dub);  
 Console.WriteLine((double)dec + dub);  
-  
 ```  
   
  The result is the following error:  
@@ -103,7 +99,7 @@ Console.WriteLine((double)dec + dub);
  [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_2.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Decimal>   
@@ -114,4 +110,4 @@ Console.WriteLine((double)dec + dub);
  [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
- [Standard Numeric Format Strings](http://msdn.microsoft.com/library/580e57eb-ac47-4ffd-bccd-3a1637c2f467)
+ [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

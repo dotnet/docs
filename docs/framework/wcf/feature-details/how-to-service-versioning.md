@@ -2,7 +2,7 @@
 title: "How To: Service Versioning | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,10 +73,9 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
                     binding="wsHttpBinding"  
                     contract="*" />  
         </client>  
-  
     ```  
   
-2.  Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the “CalcVer” custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the “CalcVer” header. The following example defines the required filters and namespace table.  
+2.  Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the "CalcVer" custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the "CalcVer" header. The following example defines the required filters and namespace table.  
   
     ```xml  
     <!-- use the namespace table element to define a prefix for our custom namespace-->  
@@ -101,9 +100,9 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     ```  
   
     > [!NOTE]
-    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace “http://www.w3.org/2003/05/soap-envelope”.  
+    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "http://www.w3.org/2003/05/soap-envelope".  
   
-3.  Define the filter table, which associates each filter with a client endpoint. If the message contains the “CalcVer” header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
+3.  Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
   
      The following defines the filter table and adds the filters defined earlier.  
   
@@ -124,7 +123,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     </filterTables>  
     ```  
   
-4.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating “filterTable1” with the service endpoints:  
+4.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints:  
   
     ```xml  
     <behaviors>  
@@ -135,7 +134,6 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
 ## Example  
@@ -219,14 +217,12 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     </routing>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## Example  
  The following is a complete listing of the client application.  
   
 ```csharp  
-  
 using System;  
 using System.ServiceModel;  
 using System.ServiceModel.Channels;  
@@ -332,7 +328,6 @@ namespace Microsoft.Samples.AdvancedFilters
         }  
     }  
 }  
-  
 ```  
   
 ## See Also  

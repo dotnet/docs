@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +89,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,7 +129,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path " />or <paramref name="contents" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" /> or <paramref name="contents" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> was not found.</exception>
@@ -157,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,7 +199,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> was not found.</exception>
@@ -222,6 +225,60 @@
  The caller does not have the required permission.</exception>
       </Docs>
     </Member>
+    <Member MemberName="AppendAllLinesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AppendAllLinesAsync (string path, System.Collections.Generic.IEnumerable&lt;string&gt; contents, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AppendAllLinesAsync(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllLinesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendAllLinesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AppendAllLinesAsync (string path, System.Collections.Generic.IEnumerable&lt;string&gt; contents, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AppendAllLinesAsync(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllLinesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AppendAllText">
       <MemberSignature Language="C#" Value="public static void AppendAllText (string path, string contents);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AppendAllText(string path, string contents) cil managed" />
@@ -230,6 +287,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -304,6 +362,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -372,6 +431,60 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to write to a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /></permission>
       </Docs>
     </Member>
+    <Member MemberName="AppendAllTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AppendAllTextAsync (string path, string contents, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AppendAllTextAsync(string path, string contents, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllTextAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendAllTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AppendAllTextAsync (string path, string contents, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AppendAllTextAsync(string path, string contents, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.AppendAllTextAsync(System.String,System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AppendText">
       <MemberSignature Language="C#" Value="public static System.IO.StreamWriter AppendText (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.StreamWriter AppendText(string path) cil managed" />
@@ -380,6 +493,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -443,6 +557,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -520,6 +635,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -604,6 +720,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -628,7 +745,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+ The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.None>; no other process or code can access the created file until the original file handle is closed.  
   
  This method is equivalent to the <xref:System.IO.File.Create%28System.String%2CSystem.Int32%29> method overload using the default buffer size.  
   
@@ -676,6 +793,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -702,7 +820,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>; no other process or code can access the created file until the original file handle is closed.  
+ The <xref:System.IO.FileStream> object created by this method has a default <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.None>; no other process or code can access the created file until the original file handle is closed.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -748,6 +866,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -868,6 +987,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -886,7 +1006,7 @@
       </Parameters>
       <Docs>
         <param name="path">The file to be opened for writing.</param>
-        <summary>Creates or opens a file for writing UTF-8 encoded text.</summary>
+        <summary>Creates or opens a file for writing UTF-8 encoded text. If the file already exists, its contents are overwritten.</summary>
         <returns>A <see cref="T:System.IO.StreamWriter" /> that writes to the specified file using UTF-8 encoding.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -934,6 +1054,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1003,6 +1127,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1085,6 +1210,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1155,6 +1284,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1205,6 +1335,24 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading from the specified file. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessControl">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for a specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for a specified file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAccessControl">
       <MemberSignature Language="C#" Value="public static System.Security.AccessControl.FileSecurity GetAccessControl (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.FileSecurity GetAccessControl(string path) cil managed" />
@@ -1233,7 +1381,7 @@
   
  An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
    
   
@@ -1295,7 +1443,7 @@
   
  An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
  ]]></format>
         </remarks>
@@ -1326,6 +1474,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1387,6 +1536,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1451,6 +1601,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1513,6 +1664,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1577,6 +1729,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1632,6 +1785,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1696,6 +1850,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1751,6 +1906,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1820,6 +1976,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1902,6 +2059,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1984,6 +2142,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2070,6 +2229,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2094,7 +2254,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with a <xref:System.IO.FileMode> value of <xref:System.IO.FileMode>, a <xref:System.IO.FileAccess> value of <xref:System.IO.FileAccess> and a <xref:System.IO.FileShare> value of <xref:System.IO.FileShare>.  
+ This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with a <xref:System.IO.FileMode> value of <xref:System.IO.FileMode.Open>, a <xref:System.IO.FileAccess> value of <xref:System.IO.FileAccess.Read> and a <xref:System.IO.FileShare> value of <xref:System.IO.FileShare.Read>.  
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
@@ -2138,6 +2298,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2200,6 +2361,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2224,9 +2386,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode>, the access set to <xref:System.IO.FileAccess>, and the share mode set to <xref:System.IO.FileShare>.  
+ This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode.OpenOrCreate>, the access set to <xref:System.IO.FileAccess.Write>, and the share mode set to <xref:System.IO.FileShare.None>.  
   
- The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as “This is a test of the OpenWrite method”) with a shorter string (such as “Second run”), the file will contain a mix of the strings (“Second runtest of the OpenWrite method”).  
+ The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as "This is a test of the OpenWrite method") with a shorter string (such as "Second run"), the file will contain a mix of the strings ("Second runtest of the OpenWrite method").  
   
  The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
   
@@ -2267,6 +2429,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2318,6 +2481,30 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <Member MemberName="ReadAllBytesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;byte[]&gt; ReadAllBytesAsync (string path, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; ReadAllBytesAsync(string path, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllBytesAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ReadAllLines">
       <MemberSignature Language="C#" Value="public static string[] ReadAllLines (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] ReadAllLines(string path) cil managed" />
@@ -2326,6 +2513,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2400,6 +2588,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2468,6 +2657,56 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <Member MemberName="ReadAllLinesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string[]&gt; ReadAllLinesAsync (string path, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string[]&gt; ReadAllLinesAsync(string path, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllLinesAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAllLinesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string[]&gt; ReadAllLinesAsync (string path, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string[]&gt; ReadAllLinesAsync(string path, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllLinesAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ReadAllText">
       <MemberSignature Language="C#" Value="public static string ReadAllText (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ReadAllText(string path) cil managed" />
@@ -2476,6 +2715,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2554,6 +2794,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2626,6 +2867,56 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to read from a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
       </Docs>
     </Member>
+    <Member MemberName="ReadAllTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; ReadAllTextAsync (string path, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; ReadAllTextAsync(string path, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllTextAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAllTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; ReadAllTextAsync (string path, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; ReadAllTextAsync(string path, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.ReadAllTextAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ReadLines">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; ReadLines (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; ReadLines(string path) cil managed" />
@@ -2634,6 +2925,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2720,6 +3012,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2787,6 +3080,24 @@
  The caller does not have the required permission.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Replace">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.File.Replace%2A> methods replace the contents of a specified file with the contents of another file.  They also create a backup of the file that was replaced.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Replace">
       <MemberSignature Language="C#" Value="public static void Replace (string sourceFileName, string destinationFileName, string destinationBackupFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Replace(string sourceFileName, string destinationFileName, string destinationBackupFileName) cil managed" />
@@ -2800,6 +3111,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2883,6 +3198,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3002,7 +3321,7 @@
   
 5.  Set the destination <xref:System.Security.AccessControl.FileSecurity> object to the destination file using the <xref:System.IO.File.SetAccessControl%2A> method.  
   
- In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
+ In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights.ReadAttributes> and <xref:System.Security.AccessControl.FileSystemRights.ReadExtendedAttributes>, deny <xref:System.Security.AccessControl.FileSystemRights.ListDirectory> on the parent directory.  
   
    
   
@@ -3043,6 +3362,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3070,7 +3390,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- Certain file attributes, such as <xref:System.IO.FileAttributes> and <xref:System.IO.FileAttributes>, can be combined. Other attributes, such as <xref:System.IO.FileAttributes>, must be used alone.  
+ Certain file attributes, such as <xref:System.IO.FileAttributes.Hidden> and <xref:System.IO.FileAttributes.ReadOnly>, can be combined. Other attributes, such as <xref:System.IO.FileAttributes.Normal>, must be used alone.  
   
  It is not possible to change the compression status of a <xref:System.IO.File> object using the <xref:System.IO.File.SetAttributes%2A> method.  
   
@@ -3119,6 +3439,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3175,6 +3496,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3231,6 +3553,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3293,6 +3616,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3346,6 +3670,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3408,6 +3733,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3461,6 +3787,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3517,6 +3844,32 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to write to a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
       </Docs>
     </Member>
+    <Member MemberName="WriteAllBytesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAllBytesAsync (string path, byte[] bytes, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAllBytesAsync(string path, unsigned int8[] bytes, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllBytesAsync(System.String,System.Byte[],System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteAllLines">
       <MemberSignature Language="C#" Value="public static void WriteAllLines (string path, System.Collections.Generic.IEnumerable&lt;string&gt; contents);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllLines(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents) cil managed" />
@@ -3525,6 +3878,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3568,7 +3922,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path " />or <paramref name="contents" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" /> or <paramref name="contents" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
@@ -3606,6 +3960,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3672,6 +4030,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3711,7 +4070,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path" />,<paramref name=" contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
@@ -3749,6 +4108,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3807,6 +4170,60 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to write to a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
       </Docs>
     </Member>
+    <Member MemberName="WriteAllLinesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAllLinesAsync (string path, System.Collections.Generic.IEnumerable&lt;string&gt; contents, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAllLinesAsync(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllLinesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAllLinesAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAllLinesAsync (string path, System.Collections.Generic.IEnumerable&lt;string&gt; contents, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAllLinesAsync(string path, class System.Collections.Generic.IEnumerable`1&lt;string&gt; contents, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllLinesAsync(System.String,System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WriteAllText">
       <MemberSignature Language="C#" Value="public static void WriteAllText (string path, string contents);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllText(string path, string contents) cil managed" />
@@ -3815,6 +4232,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3889,6 +4307,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3955,41 +4374,59 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to write to a file or directory. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Replace">
+    <Member MemberName="WriteAllTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAllTextAsync (string path, string contents, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAllTextAsync(string path, string contents, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllTextAsync(System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
       <Docs>
-        <summary>Replaces the contents of a specified file with the contents of another file, deleting the original file, and creating a backup of the replaced file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.IO.File.Replace%2A> methods replace the contents of a specified file with the contents of another file.  They also create a backup of the file that was replaced.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAccessControl">
+    </Member>
+    <Member MemberName="WriteAllTextAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task WriteAllTextAsync (string path, string contents, System.Text.Encoding encoding, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task WriteAllTextAsync(string path, string contents, class System.Text.Encoding encoding, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.File.WriteAllTextAsync(System.String,System.String,System.Text.Encoding,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="contents" Type="System.String" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
       <Docs>
-        <summary>Gets a <see cref="T:System.Security.AccessControl.FileSecurity" /> object that encapsulates the access control list (ACL) entries for a specified file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.IO.FileInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for a specified file.  
-  
- ]]></format>
-        </remarks>
+        <param name="path">To be added.</param>
+        <param name="contents">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
-    </MemberGroup>
+    </Member>
   </Members>
 </Type>

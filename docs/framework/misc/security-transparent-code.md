@@ -51,7 +51,7 @@ manager: "wpickett"
  Transparency was introduced in the .NET Framework version 2.0 to simplify the security model, and to make it easier to write and deploy secure libraries and applications. Transparent code is also used in Microsoft Silverlight, to simplify the development of partially trusted applications.  
   
 > [!NOTE]
->  When you develop a partially trusted application, you have to be aware of the permission requirements for your target hosts. You can develop an application that uses resources that are not allowed by some hosts. This application will compile without error, but will fail when it is loaded into the hosted environment. If you have developed your application using Visual Studio, you can enable debugging in partial trust or in a restricted permission set from the development environment. For more information, see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/6991ea91-5253-451b-923d-22273a3d38b1). The Calculate Permissions feature provided for ClickOnce applications is also available for any partially trusted application.  
+>  When you develop a partially trusted application, you have to be aware of the permission requirements for your target hosts. You can develop an application that uses resources that are not allowed by some hosts. This application will compile without error, but will fail when it is loaded into the hosted environment. If you have developed your application using Visual Studio, you can enable debugging in partial trust or in a restricted permission set from the development environment. For more information, see [How to: Debug a ClickOnce Application with Restricted Permissions](/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions). The Calculate Permissions feature provided for ClickOnce applications is also available for any partially trusted application.  
   
  [Back to top](#top)  
   
@@ -61,9 +61,9 @@ manager: "wpickett"
   
  The levels are as follows:  
   
--   Level 2 (<xref:System.Security.SecurityRuleSet>) – the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] transparency rules.  
+-   Level 2 (<xref:System.Security.SecurityRuleSet.Level2>) – the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] transparency rules.  
   
--   Level 1 (<xref:System.Security.SecurityRuleSet>) – the .NET Framework 2.0 transparency rules.  
+-   Level 1 (<xref:System.Security.SecurityRuleSet.Level1>) – the .NET Framework 2.0 transparency rules.  
   
  The primary difference between the two transparency levels is that level 1 does not enforce transparency rules for calls from outside the assembly and is intended only for compatibility.  
   
@@ -83,7 +83,7 @@ manager: "wpickett"
   
     -   Call native code or code that has the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribute.  
   
-    -   Call a member that is protected by a <xref:System.Security.Permissions.SecurityAction>.  
+    -   Call a member that is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand>.  
   
     -   Inherit from critical types.  
   

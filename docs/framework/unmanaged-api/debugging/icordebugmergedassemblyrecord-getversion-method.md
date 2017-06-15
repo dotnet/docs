@@ -23,14 +23,12 @@ Gets the assembly's version information.
 ## Syntax  
   
 ```  
-  
 HRESULT GetVersion(  
    [out] USHORT *pMajor,   
    [out] USHORT *pMinor,   
    [out] USHORT *pBuild,   
    [out] USHORT *pRevision  
 );  
-  
 ```  
   
 #### Parameters  

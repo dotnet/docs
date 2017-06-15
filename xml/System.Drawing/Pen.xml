@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Brush> is set to the color specified in the `brush` parameter, the <xref:System.Drawing.Pen.Width%2A> property is set to the value specified in the `width` parameter, and the units are set to <xref:System.Drawing.GraphicsUnit>.  
+ The <xref:System.Drawing.Brush> is set to the color specified in the `brush` parameter, the <xref:System.Drawing.Pen.Width%2A> property is set to the value specified in the `width` parameter, and the units are set to <xref:System.Drawing.GraphicsUnit.World>.  
   
  Note that the `brush` parameter also specifies the <xref:System.Drawing.Color> property of this <xref:System.Drawing.Pen>.  
   
@@ -206,9 +206,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines how the <xref:System.Drawing.Pen> draws closed curves and polygons. The <xref:System.Drawing.Drawing2D.PenAlignment> enumeration specifies five values; however, only two values—<xref:System.Drawing.Drawing2D.PenAlignment> and <xref:System.Drawing.Drawing2D.PenAlignment>—will change the appearance of a drawn line. <xref:System.Drawing.Drawing2D.PenAlignment> is the default value for this property and specifies that the width of the pen is centered on the outline of the curve or polygon. A value of <xref:System.Drawing.Drawing2D.PenAlignment> for this property specifies that the width of the pen is inside the outline of the curve or polygon. The other three values, <xref:System.Drawing.Drawing2D.PenAlignment>, <xref:System.Drawing.Drawing2D.PenAlignment>, and <xref:System.Drawing.Drawing2D.PenAlignment>, will result in a pen that is centered.  
+ This property determines how the <xref:System.Drawing.Pen> draws closed curves and polygons. The <xref:System.Drawing.Drawing2D.PenAlignment> enumeration specifies five values; however, only two values—<xref:System.Drawing.Drawing2D.PenAlignment.Center> and <xref:System.Drawing.Drawing2D.PenAlignment.Inset>—will change the appearance of a drawn line. <xref:System.Drawing.Drawing2D.PenAlignment.Center> is the default value for this property and specifies that the width of the pen is centered on the outline of the curve or polygon. A value of <xref:System.Drawing.Drawing2D.PenAlignment.Inset> for this property specifies that the width of the pen is inside the outline of the curve or polygon. The other three values, <xref:System.Drawing.Drawing2D.PenAlignment.Right>, <xref:System.Drawing.Drawing2D.PenAlignment.Left>, and <xref:System.Drawing.Drawing2D.PenAlignment.Outset>, will result in a pen that is centered.  
   
- A <xref:System.Drawing.Pen> that has its alignment set to <xref:System.Drawing.Drawing2D.PenAlignment> will yield unreliable results, sometimes drawing in the inset position and sometimes in the centered position. Also, an inset pen cannot be used to draw compound lines and cannot draw dashed lines with <xref:System.Drawing.Drawing2D.DashCap> dash caps.  
+ A <xref:System.Drawing.Pen> that has its alignment set to <xref:System.Drawing.Drawing2D.PenAlignment.Inset> will yield unreliable results, sometimes drawing in the inset position and sometimes in the centered position. Also, an inset pen cannot be used to draw compound lines and cannot draw dashed lines with <xref:System.Drawing.Drawing2D.DashCap.Triangle> dash caps.  
   
  ]]></format>
         </remarks>
@@ -320,7 +320,7 @@
   
  Suppose you want a pen to draw two parallel lines where the width of the first line is 20 percent of the pen's width, the width of the space that separates the two lines is 50 percent of the pen' s width, and the width of the second line is 30 percent of the pen's width. Start by creating a <xref:System.Drawing.Pen> and an array of real numbers. Set the compound array by passing the array with the values 0.0, 0.2, 0.7, and 1.0 to this property.  
   
- Do not set this property if the <xref:System.Drawing.Pen> has its <xref:System.Drawing.Pen.Alignment%2A> property set to <xref:System.Drawing.Drawing2D.PenAlignment>.  
+ Do not set this property if the <xref:System.Drawing.Pen> has its <xref:System.Drawing.Pen.Alignment%2A> property set to <xref:System.Drawing.Drawing2D.PenAlignment.Inset>.  
   
  ]]></format>
         </remarks>
@@ -384,7 +384,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not set this property to <xref:System.Drawing.Drawing2D.DashCap> if the <xref:System.Drawing.Pen> has its <xref:System.Drawing.Pen.Alignment%2A> property set to <xref:System.Drawing.Drawing2D.PenAlignment>.  
+ Do not set this property to <xref:System.Drawing.Drawing2D.DashCap.Triangle> if the <xref:System.Drawing.Pen> has its <xref:System.Drawing.Pen.Alignment%2A> property set to <xref:System.Drawing.Drawing2D.PenAlignment.Inset>.  
   
    
   
@@ -441,7 +441,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Assigning a value other than `null` to this property will set the <xref:System.Drawing.Drawing2D.DashStyle> property for this <xref:System.Drawing.Pen> to <xref:System.Drawing.Drawing2D.DashStyle>.  
+ Assigning a value other than `null` to this property will set the <xref:System.Drawing.Drawing2D.DashStyle> property for this <xref:System.Drawing.Pen> to <xref:System.Drawing.Drawing2D.DashStyle.Custom>.  
   
  The elements in the `dashArray` array set the length of each dash and space in the dash pattern. The first element sets the length of a dash, the second element sets the length of a space, the third element sets the length of a dash, and so on. Consequently, each element should be a non-zero positive number.  
   
@@ -482,7 +482,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of <xref:System.Drawing.Drawing2D.DashStyle> for this property specifies that a custom pattern of dashes and spaces, defined by the <xref:System.Drawing.Pen.DashPattern%2A> property, makes up lines drawn with this <xref:System.Drawing.Pen>. If the value of this property is <xref:System.Drawing.Drawing2D.DashStyle> and the value of the <xref:System.Drawing.Pen.DashPattern%2A> property is `null`, the pen draws solid lines.  
+ A value of <xref:System.Drawing.Drawing2D.DashStyle.Custom> for this property specifies that a custom pattern of dashes and spaces, defined by the <xref:System.Drawing.Pen.DashPattern%2A> property, makes up lines drawn with this <xref:System.Drawing.Pen>. If the value of this property is <xref:System.Drawing.Drawing2D.DashStyle.Custom> and the value of the <xref:System.Drawing.Pen.DashPattern%2A> property is `null`, the pen draws solid lines.  
   
  ]]></format>
         </remarks>

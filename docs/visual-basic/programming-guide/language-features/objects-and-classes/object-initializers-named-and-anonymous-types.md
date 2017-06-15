@@ -127,7 +127,7 @@ Object initializers enable you to specify properties for a complex object by usi
   
  Because the name of the type is not available, you cannot use an `As` clause to declare `cust13`. Its type must be inferred. Without using late binding, this limits the use of anonymous types to local variables.  
   
- Anonymous types provide critical support for [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] queries. For more information about the use of anonymous types in queries, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) and [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md).  
+ Anonymous types provide critical support for [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries. For more information about the use of anonymous types in queries, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md) and [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md).  
   
 ### Remarks About Anonymous Types  
   

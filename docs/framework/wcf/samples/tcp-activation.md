@@ -2,7 +2,7 @@
 title: "TCP Activation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -78,7 +78,7 @@ public class CalculatorService : ICalculator
   
  The following sample shows the configuration for the service:  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <services>  
@@ -116,7 +116,7 @@ public class CalculatorService : ICalculator
   
  The client's endpoint is configured as shown in the following sample code:  
   
-```  
+```xml  
 <system.serviceModel>  
     <bindings>  
         <netTcpBinding>  

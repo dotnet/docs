@@ -2,7 +2,7 @@
 title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
   
 ## Syntax  
   
-```  
+```xml  
 <filter   
   type="traceFilterClassName"   
   initializeData="data" />  
@@ -78,7 +78,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 ## Example  
  The following example shows how to use the `<filter>` element to add a filter to the listener `console` in the `Listeners` collection for the trace source `myTraceSource`, specifying the filter event level as `Error`.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

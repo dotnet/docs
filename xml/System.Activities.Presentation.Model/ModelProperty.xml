@@ -1,4 +1,4 @@
-<Type Name="ModelProperty" FullName="System.Activities.Presentation.Model.ModelProperty">
+﻿<Type Name="ModelProperty" FullName="System.Activities.Presentation.Model.ModelProperty">
   <TypeSignature Language="C#" Value="public abstract class ModelProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelProperty" />
@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of a <xref:System.Activities.Presentation.Model.ModelProperty> may come from a locally set value, or it may be inherited from somewhere higher up in the element hierarchy. Use the <xref:System.Activities.Design.Model.ModelItem.Source%2A> property of the value returned by <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> to determine the source of the property value.  
+ The value of a <xref:System.Activities.Presentation.Model.ModelProperty> may come from a locally set value, or it may be inherited from somewhere higher up in the element hierarchy. Use the <xref:System.Activities.Presentation.Model.ModelItem.Source*> property of the value returned by <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> to determine the source of the property value.  
   
  ]]></format>
     </remarks>
@@ -485,7 +485,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `value` is not a <xref:System.Activities.Presentation.Model.ModelItem>, it is wrapped in a <xref:System.Activities.Design.Model.ModelItem>, which is returned to the caller. It is valid to set `value` to `null`, in which case <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> will be `null`. This is different from calling <xref:System.Activities.Presentation.Model.ModelProperty.ClearValue%2A>.  
+ If `value` is not a <xref:System.Activities.Presentation.Model.ModelItem>, it is wrapped in a <xref:System.Activities.Presentation.Model.ModelItem>, which is returned to the caller. It is valid to set `value` to `null`, in which case <xref:System.Activities.Presentation.Model.ModelProperty.Value%2A> will be `null`. This is different from calling <xref:System.Activities.Presentation.Model.ModelProperty.ClearValue%2A>.  
   
 > [!NOTE]
 >  Using this method, the value will not be set on the underlying property until the editing context completes. To update the underlying property immediately, use <xref:System.Activities.Presentation.ArgumentAccessor.Setter%2A>.  

@@ -2,7 +2,7 @@
 title: "&lt;udpTransportSettings&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,16 +18,29 @@ manager: "erikre"
 # &lt;udpTransportSettings&gt;
 This configuration element exposes UDP transport settings for [\<udpDiscoveryEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md).  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<standardEndpoints>  
 \<udpDiscoveryEndpoint>  
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <udpDiscoveryEndpoint>           <standardEndpoint>               <updTransportSettings>                  duplicateMessageHistoryLength=”Integer”                  maxBufferPoolSize=”Integer”                   maxMulticastRetransmitCount=”Integer”                  maxPendingMessageCount=”Integer”                  maxReceivedMessageSize=”Integer”                  maxUnicastRetransmitCount=”Integer”                  multicastInterfaceId=”String”                  socketReceiveBufferSize=”Integer”                  timeToLive=”Integer” />           </standardEndpoint>       </udpDiscoveryEndpoint>            </standardEndpoints>  
+  <standardEndpoints>
+    <udpDiscoveryEndpoint>
+      <standardEndpoint>
+        <updTransportSettings duplicateMessageHistoryLength="Integer" 
+                              maxBufferPoolSize="Integer" 
+                              maxMulticastRetransmitCount="Integer" 
+                              maxPendingMessageCount="Integer" 
+                              maxReceivedMessageSize="Integer" 
+                              maxUnicastRetransmitCount="Integer" 
+                              multicastInterfaceId="String" 
+                              socketReceiveBufferSize="Integer" 
+                              timeToLive="Integer" />
+      </standardEndpoint>
+    </udpDiscoveryEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

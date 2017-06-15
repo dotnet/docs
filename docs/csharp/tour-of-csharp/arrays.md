@@ -1,5 +1,5 @@
 ---
-title: C# Arrays | A tour of the C# language
+title: C# Arrays - A tour of the C# language | Microsoft Docs
 description: Arrays are the most basic collection type in the C# langauge
 keywords: .NET, csharp, array, collection
 author: BillWagner

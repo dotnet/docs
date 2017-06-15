@@ -2,7 +2,7 @@
 title: "Hello World Custom Activity | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -37,7 +37,7 @@ This sample demonstrates several key features of [!INCLUDE[wf](../../../../inclu
  The following files are included in this project.  
   
  AppendString.cs  
- The custom activity that appends strings together. It takes in a string and combines it with a literal text string “ says hello world” to form a complete message as output.  
+ The custom activity that appends strings together. It takes in a string and combines it with a literal text string " says hello world" to form a complete message as output.  
   
  PrependString.cs  
  This activity prefixes a predefined string to an input string.  

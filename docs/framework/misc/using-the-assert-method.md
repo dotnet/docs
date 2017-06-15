@@ -101,7 +101,6 @@ Namespace LogUtil
       End Sub  
    End Class  
 End Namespace  
-  
 ```  
   
 ```csharp  
@@ -149,7 +148,6 @@ Namespace LogUtil
       End Sub  
    End Class  
 End Namespace  
-  
 ```  
   
 ```csharp  

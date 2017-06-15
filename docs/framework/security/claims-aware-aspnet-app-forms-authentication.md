@@ -2,6 +2,7 @@
 title: "How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -90,7 +91,6 @@ manager: "mbaldwin"
             </asp:GridView>  
         </p>  
     </asp:Content>  
-  
     ```  
   
      This step adds a GridView control to your *Default.aspx* page that will be populated with the claims retrieved from Forms authentication.  

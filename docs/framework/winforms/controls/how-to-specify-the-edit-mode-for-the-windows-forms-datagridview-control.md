@@ -2,7 +2,7 @@
 title: "How to: Specify the Edit Mode for the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,7 +27,7 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
   
 -   The <xref:System.Windows.Forms.DataGridView> control is enabled.  
   
--   The <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is not <xref:System.Windows.Forms.DataGridViewEditMode>.  
+-   The <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is not <xref:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically>.  
   
 -   The `ReadOnly` properties of the cell, row, column, and control are all set to `false`.  
   

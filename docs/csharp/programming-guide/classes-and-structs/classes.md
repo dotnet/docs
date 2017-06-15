@@ -58,7 +58,7 @@ A *class* is a construct that enables you to create your own custom types by gro
   
  [!code-cs[csProgGuideObjects#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_3.cs)]  
   
- We do not recommend creating object references such as this one that does not refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object, such as this:  
+ We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object, such as this:  
   
  [!code-cs[csProgGuideObjects#82](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_4.cs)]  
   
@@ -73,7 +73,7 @@ A *class* is a construct that enables you to create your own custom types by gro
   
  Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. For more information, see [Interfaces](../../../csharp/programming-guide/interfaces/index.md).  
   
- A class can be declared [abstract](../../../csharp/language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By constrast, a [sealed](../../../csharp/language-reference/keywords/sealed.md) class does not allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
+ A class can be declared [abstract](../../../csharp/language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../../csharp/language-reference/keywords/sealed.md) class does not allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
  Class definitions can be split between different source files. For more information, see [Partial Classes and Methods](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
   
@@ -84,14 +84,14 @@ A *class* is a construct that enables you to create your own custom types by gro
  [!code-cs[csProgGuideObjects#84](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_6.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)   
+ [Object-Oriented Programming](../concepts/object-oriented-programming.md)   
  [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)   
  [Members](../../../csharp/programming-guide/classes-and-structs/members.md)   
  [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [Objects](../../../csharp/programming-guide/classes-and-structs/objects.md)

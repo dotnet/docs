@@ -28,7 +28,6 @@
 ## Examples  
  The following example creates a <xref:System.Web.UI.WebControls.TableStyle> object and then uses the <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method to apply it to a generated <xref:System.Web.UI.WebControls.Table> object.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Web.UI.WebControls.TableStyle#1](System.Web.UI.WebControls.TableStyle#1)]  -->  
   
  ]]></format>
     </remarks>
@@ -314,10 +313,10 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.WebControls.GridLines>|No cell border is displayed.|  
-|<xref:System.Web.UI.WebControls.GridLines>|Only the upper and lower borders of the cells in the data list control are displayed.|  
-|<xref:System.Web.UI.WebControls.GridLines>|Only the left and right borders of the cells in the data list control are displayed.|  
-|<xref:System.Web.UI.WebControls.GridLines>|All borders of the cells in the data list control are displayed.|  
+|<xref:System.Web.UI.WebControls.GridLines.None>|No cell border is displayed.|  
+|<xref:System.Web.UI.WebControls.GridLines.Horizontal>|Only the upper and lower borders of the cells in the data list control are displayed.|  
+|<xref:System.Web.UI.WebControls.GridLines.Vertical>|Only the left and right borders of the cells in the data list control are displayed.|  
+|<xref:System.Web.UI.WebControls.GridLines.Both>|All borders of the cells in the data list control are displayed.|  
   
  The value of this property is stored in view state.  
   
@@ -357,10 +356,10 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The horizontal alignment is not set.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The table is left justified within its container.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The table is centered within its container.|  
-|<xref:System.Web.UI.WebControls.HorizontalAlign>|The table is right justified within its container.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.NotSet>|The horizontal alignment is not set.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Left>|The table is left justified within its container.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Center>|The table is centered within its container.|  
+|<xref:System.Web.UI.WebControls.HorizontalAlign.Right>|The table is right justified within its container.|  
   
  The value of this property is stored in view state.  
   

@@ -1,4 +1,4 @@
-# .NET Documentation
+# .NET Docs
 
 This repo contains work-in-progress documentation for .NET. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues). 
 
@@ -11,7 +11,7 @@ For more information, see the [.NET Foundation Code of Conduct](https://dotnetfo
 Samples Build Status
 ===
 
-
-| Framework | Ubuntu 16.04 (x64) | Windows Server 2012 R2 (x64)  |
+| Samples | Ubuntu 16.04<br/>_.NET Core 1.1.0_ | Ubuntu 16.04<br/>_.NET Core 2.0.0-preview_  |
 | ------------- |------------| -----|
-| .NET Core     | [![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-ubuntu1604-x64)](http://seoul.westus.cloudapp.azure.com/job/dotnetcore-samples-ubuntu1604-x64/) | [![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-windows2012-x64)](http://seoul.westus.cloudapp.azure.com/job/dotnetcore-samples-windows2012-x64/) |
+| `/samples/core` | ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/56/badge)| ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/57/badge) |
+|`/samples/csharp`| ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/54/badge)| ![](https://constructors.visualstudio.com/_apis/public/build/definitions/3186585f-1677-4c9e-a8b2-baac48a4032a/55/badge) |

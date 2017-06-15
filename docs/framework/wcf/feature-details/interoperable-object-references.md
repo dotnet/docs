@@ -2,7 +2,7 @@
 title: "Interoperable Object References | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,12 +35,11 @@ public class X
 public class SomeClass   
 {  
 }  
-  
 ```  
   
  With <xref:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences%2A> set to `false` (the default), the following XML is generated:  
   
-```  
+```xml  
 <X>  
    <A>contents of someInstance</A>  
    <B>contents of someInstance</B>  
@@ -49,7 +48,7 @@ public class SomeClass
   
  With <xref:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences%2A> set to `true`, the following XML is generated:  
   
-```  
+```xml  
 <X>  
    <A id="1">contents of someInstance</A>  
    <B ref="1" />  

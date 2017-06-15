@@ -2,7 +2,7 @@
 title: "&lt;clear&gt; Element for schemeSettings (Uri Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,10 +30,8 @@ Clears all existing scheme settings.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  
@@ -72,7 +70,7 @@ Clears all existing scheme settings.
 ## Example  
  The following code example shows a configuration used by the <xref:System.Uri> class that clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <schemeSettings>  

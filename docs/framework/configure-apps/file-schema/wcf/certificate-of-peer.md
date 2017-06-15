@@ -2,7 +2,7 @@
 title: "&lt;certificate&gt; of &lt;peer&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies a certificate used by a peer.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <certificate findValue = "String"   
 storeLocation = "CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

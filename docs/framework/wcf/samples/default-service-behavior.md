@@ -2,7 +2,7 @@
 title: "Default Service Behavior | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -49,7 +49,6 @@ public class CalculatorService : ICalculator
     }  
     ...  
 }  
-  
 ```  
   
  Service behaviors are specified with the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute. The following table describes some of these behaviors.  

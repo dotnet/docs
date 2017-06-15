@@ -2,7 +2,7 @@
 title: "LINQ to SQL Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -38,14 +38,12 @@ This sample demonstrates how to create an activity to use LINQ to SQL query enti
  The following code example uses the `FindInSqlTable` custom activity to find all rows in a SQL Server table named `Employee` where the `Role` column is equal to `SDE`.  
   
 ```csharp  
-  
 new FindInSqlTable<Employee>   
 {  
     ConnectionString = @"Data Source=.\SQLExpress;Initial Catalog=LinqToSqlSample;Integrated Security=True",                          
     Predicate = new LambdaValue<Func<Employee, bool>>(c => new Func<Employee, bool>(emp => emp.Role.Equals("SDE"))),  
     Result = new OutArgument<IList<Employee>>(employees)  
 },  
-  
 ```  
   
 #### To use this sample  

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Claims</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +105,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -149,6 +152,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -163,9 +167,18 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.ClaimsIdentity" />.</param>
+        <summary>Initializes an instance of <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, the reader is constructed from the bytes returned from <xref:System.Security.Claims.ClaimsIdentity.WriteTo%2A>. 
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +195,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
@@ -193,7 +210,7 @@
       <Docs>
         <param name="info">The serialized data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -205,6 +222,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,9 +237,29 @@
         <Parameter Name="other" Type="System.Security.Claims.ClaimsIdentity" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="other">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> to copy.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from an existing <see cref="T:System.Security.Claims.ClaimsIdentity" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the property value assignments for an instance of the <xref:System.Security.Claims.ClaimsIdentity> class from the <xref:System.Security.Claims.ClaimsIdentity> provided to the constructor.  
+  
+| Property | Value |
+| -------- | ----- |
+|<xref:System.Security.Claims.ClaimsIdentity.Actor%2A>|If the value of the `other.Actor` property isn't `null`, the `other.Actor` <xref:System.Security.Claims.ClaimsIdentity> is cloned and assigned; otherwise, `null`.|
+|<xref:System.Security.Claims.ClaimsIdentity.AuthenticationType%2A>|The value of the `other.AuthenticationType` property.|
+|<xref:System.Security.Claims.ClaimsIdentity.BootstrapContext%2A>|The value of the `other.BootstrapContext` property.|
+|<xref:System.Security.Claims.ClaimsIdentity.Claims%2A>|The `List<Claim>` of claims, if any, in the `other.Claims` property.|
+|<xref:System.Security.Claims.ClaimsIdentity.Label%2A>|The value of the `other.Label` property.|
+|<xref:System.Security.Claims.ClaimsIdentity.NameClaimType%2A>|The value of the `other.NameClaimType` property.|
+|<xref:System.Security.Claims.ClaimsIdentity.RoleClaimType%2A>|The value of the `other.RoleClaimType` property.|
+|<xref:System.Security.Claims.ClaimsIdentity.CustomSerializationData%2A>|If `other.CustomSerializationData` isn't `null`, `other.CustomSerializationData` is cloned and assigned; otherwise, `null`.|
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> is **null**.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -232,6 +270,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -278,6 +317,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -324,6 +364,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -378,6 +419,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
@@ -391,7 +436,7 @@
         <param name="info">The serialized data.</param>
         <param name="context">The context for serialization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is **null**.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -405,6 +450,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -453,6 +499,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -503,6 +550,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -555,6 +603,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -609,6 +658,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -644,6 +694,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -691,6 +742,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -738,6 +790,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -772,6 +825,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -816,6 +870,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -855,6 +910,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -872,7 +928,7 @@
       <Docs>
         <summary>Returns a new <see cref="T:System.Security.Claims.ClaimsIdentity" /> copied from this claims identity.</summary>
         <returns>A copy of the current instance.</returns>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>        
       </Docs>
     </Member>
     <Member MemberName="CreateClaim">
@@ -883,6 +939,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -900,10 +957,12 @@
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> that points to the claim.</param>
+        <summary>Provides an extensibility point for derived types to create a custom <see cref="T:System.Security.Claims.Claim" />.</summary>
+        <remarks></remarks>
+        <returns>A new <see cref="T:System.Security.Claims.Claim" />.</returns>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CustomSerializationData">
@@ -914,6 +973,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -928,9 +988,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
+        <remarks></remarks>
+        <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
       </Docs>
     </Member>
     <Member MemberName="DefaultIssuer">
@@ -941,6 +1001,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -955,8 +1016,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default issuer; “LOCAL AUTHORITY”.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The default issuer; "LOCAL AUTHORITY".</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultNameClaimType">
@@ -967,6 +1028,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -982,7 +1044,7 @@
       </ReturnValue>
       <Docs>
         <summary>The default name claim type; <see cref="F:System.Security.Claims.ClaimTypes.Name" />.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultRoleClaimType">
@@ -993,6 +1055,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1008,7 +1071,7 @@
       </ReturnValue>
       <Docs>
         <summary>The default role claim type; <see cref="F:System.Security.Claims.ClaimTypes.Role" />.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -1019,6 +1082,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1038,8 +1102,8 @@
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves all of the claims that are matched by the specified predicate.</summary>
+        <remarks></remarks>
         <returns>The matching claims. The list is read-only.</returns>
-        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1052,6 +1116,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1092,6 +1157,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1111,8 +1177,8 @@
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves the first claim that is matched by the specified predicate.</summary>
+        <remarks></remarks>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
-        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1125,6 +1191,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1144,8 +1211,8 @@
       <Docs>
         <param name="type">The claim type to match.</param>
         <summary>Retrieves the first claim with the specified claim type.</summary>
+        <remarks></remarks>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
-        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is **null**.</exception>
       </Docs>
@@ -1164,6 +1231,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Claims</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
@@ -1180,7 +1251,7 @@
         <param name="info">The object to populate with data.</param>
         <param name="context">The destination for this serialization. Can be <see langword="null" />.</param>
         <summary>Populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with data needed to serialize the current <see cref="T:System.Security.Claims.ClaimsIdentity" /> object.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1194,6 +1265,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1213,9 +1285,9 @@
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Determines whether this claims identity has a claim that is matched by the specified predicate.</summary>
+        <remarks></remarks>
         <returns>
           <see langword="true" /> if a matching claim exists; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1228,6 +1300,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1275,6 +1348,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1310,6 +1384,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1325,8 +1400,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the label for this claims identity.</summary>
+        <remarks></remarks>
         <value>The label.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1337,6 +1412,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1371,6 +1447,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1407,6 +1484,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1455,6 +1533,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1489,6 +1568,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1538,6 +1618,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1555,9 +1636,11 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The writer to use for data storage.</param>
+        <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
+        <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -1568,6 +1651,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Claims</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1586,10 +1670,12 @@
         <Parameter Name="userData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <param name="userData">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The writer to use for data storage.</param>
+        <param name="userData">Additional data provided by the derived type.</param>
+        <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
+        <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Adds a listener to the **Listeners** collection.
   
 ## Syntax  
   
-```  
+```xml  
 <add name="name"   
      type="trace listener class name, Version, Culture, PublicKeyToken"  
      initializeData="data"/>  
@@ -96,9 +96,9 @@ Adds a listener to the **Listeners** collection.
 ## Example  
  The following example shows how to use **\<add>** elements to add the listeners `MyListener` and `MyEventListener` to the **Listeners** collection. `MyListener` creates a file called `MyListener.log` and writes the output to the file. `MyEventListener` creates an entry in the event log.  
   
-```  
+```xml  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <trace autoflush="true" indentsize="0">  
          <listeners>  
             <add name="myListener" type="System.Diagnostics.TextWriterTraceListener, system, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" initializeData="c:\myListener.log" />  
@@ -108,7 +108,7 @@ Adds a listener to the **Listeners** collection.
                  type="System.Diagnostics.ConsoleTraceListener, system, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
          </listeners>  
       </trace>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

@@ -2,7 +2,7 @@
 title: "Generating Strongly Typed DataSets | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,6 @@ csc.exe /t:library XSDSchemaFileName.cs /r:System.dll /r:System.Data.dll
   
 ```vb  
 Imports XSDSchema.Namespace  
-  
 ```  
   
 ```csharp  
@@ -62,7 +61,6 @@ Dim customerRow As CustomerDataSet.CustomersRow
 For Each customerRow In customers.Customers  
   Console.WriteLine(customerRow.CustomerID)  
 Next  
-  
 ```  
   
 ```csharp  
@@ -80,7 +78,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
   
  Following is the XML Schema used for the example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema id="CustomerDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="CustomerDataSet" msdata:IsDataSet="true">  

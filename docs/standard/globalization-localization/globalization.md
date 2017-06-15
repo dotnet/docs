@@ -111,7 +111,7 @@ Globalization involves designing and developing a world-ready app that supports 
 ### Testing Strings for Equality  
  If you want to test two strings for equality rather than determining how they compare in the sort order, use the <xref:System.String.Equals%2A?displayProperty=fullName> method instead of a string comparison method such as <xref:System.String.Compare%2A?displayProperty=fullName> or <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName>.  
   
- Comparisons for equality are typically performed to access some resource conditionally. For example, you might perform a comparison for equality to verify a password or to confirm that a file exists. Such non-linguistic comparisons should always be ordinal rather than culture-sensitive. In general, you should call the instance <xref:System.String.Equals%28System.String%2CSystem.StringComparison%29?displayProperty=fullName> method or the static <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method with a value of <xref:System.StringComparison?displayProperty=fullName> for strings such as passwords, and a value of <xref:System.StringComparison?displayProperty=fullName> for strings such as file names or URIs.  
+ Comparisons for equality are typically performed to access some resource conditionally. For example, you might perform a comparison for equality to verify a password or to confirm that a file exists. Such non-linguistic comparisons should always be ordinal rather than culture-sensitive. In general, you should call the instance <xref:System.String.Equals%28System.String%2CSystem.StringComparison%29?displayProperty=fullName> method or the static <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName> method with a value of <xref:System.StringComparison.Ordinal?displayProperty=fullName> for strings such as passwords, and a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=fullName> for strings such as file names or URIs.  
   
  Comparisons for equality sometimes involve searches or substring comparisons rather than calls to the <xref:System.String.Equals%2A?displayProperty=fullName> method. In some cases, you may use a substring search to determine whether that substring equals another string. If the purpose of this comparison is non-linguistic, the search should also be ordinal rather than culture-sensitive.  
   
@@ -213,25 +213,21 @@ Globalization involves designing and developing a world-ready app that supports 
  When the data is restored on a system in the same time zone as the system on which it was serialized, the deserialized date and time values accurately reflect the original value, as the output shows:  
   
 ```  
-  
 '3/30/2013 6:00:00 PM' --> 3/30/2013 6:00:00 PM Unspecified  
 '2013-03-30T18:00:00' --> 3/30/2013 6:00:00 PM Unspecified  
 '2013-03-30T18:00:00.0000000-07:00' --> 3/30/2013 6:00:00 PM Local  
   
 3/30/2013 6:00:00 PM Local  
-  
 ```  
   
  However, if you restore the data on a system in a different time zone, only the date and time value that was formatted with the "o" (round-trip) standard format string preserves time zone information and therefore represents the same instant in time. Here's the output when the date and time data is restored on a system in the Romance Standard Time zone:  
   
 ```  
-  
 '3/30/2013 6:00:00 PM' --> 3/30/2013 6:00:00 PM Unspecified  
 '2013-03-30T18:00:00' --> 3/30/2013 6:00:00 PM Unspecified  
 '2013-03-30T18:00:00.0000000-07:00' --> 3/31/2013 3:00:00 AM Local  
   
 3/30/2013 6:00:00 PM Local  
-  
 ```  
   
  To accurately reflect a date and time value that represents a single moment of time regardless of the time zone of the system on which the data is deserialized, you can do any of the following:  
@@ -252,13 +248,11 @@ Globalization involves designing and developing a world-ready app that supports 
  When the data is serialized on a system in the Pacific Standard Time zone and deserialized on a system in the Romance Standard Time zone, the example displays the following output:  
   
 ```  
-  
 '2013-03-30T18:00:00.0000000-07:00' --> 3/31/2013 3:00:00 AM Local  
 'Sun, 31 Mar 2013 01:00:00 GMT' --> 3/31/2013 3:00:00 AM Local  
 '2013-03-31 01:00:00Z' --> 3/31/2013 3:00:00 AM Local  
   
 3/31/2013 3:00:00 AM Local  
-  
 ```  
   
  For more information, see [Converting Times Between Time Zones](../../../docs/standard/datetime/converting-between-time-zones.md).  

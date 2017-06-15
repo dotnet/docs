@@ -2,7 +2,7 @@
 title: "&lt;scopes&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;scopes&gt;
 Contains a collection of configuration elements that specify custom scope Uris that can be used to filter service endpoints during query.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<endpointBehaviors>  
 \<behavior>  
@@ -27,8 +27,18 @@ Contains a collection of configuration elements that specify custom scope Uris t
   
 ## Syntax  
   
-```  
-<behaviors>  <endpointBehaviors>    <behavior name="String">      <endpointDiscovery enable="Boolean">        <scopes>          <add scope="URI"/>        </scopes>      </endpointDiscovery>    </behavior>  </endpointBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="String">
+      <endpointDiscovery enable="Boolean">
+        <scopes>
+          <add scope="URI" />
+        </scopes>
+      </endpointDiscovery>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

@@ -35,14 +35,14 @@ If you are the administrator for a server that is shared by hosting several smal
 ## Example  
  The following XML fragment shows how to enable the `gcTrimCommitOnLowMemory` setting. Ellipses indicate other settings that would be in the `runtime` node.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
 <configuration>  
-    <runtime>  
-    . . .  
-    <gcTrimCommitOnLowMemory enabled="true"/>  
-    </runtime>  
-    . . .  
+    <runtime>  
+    . . .  
+    <gcTrimCommitOnLowMemory enabled="true"/>  
+    </runtime>  
+    . . .  
 </configuration>  
 ```  
   

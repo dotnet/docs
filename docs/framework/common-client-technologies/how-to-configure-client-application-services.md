@@ -65,7 +65,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 1.  On the **Services** page of the **Project Designer**, click **Advanced**.  
   
-     The **Advanced Settings for Services** dialog box appears, as shown in the following illustration. For more information about this dialog box, see [Advanced Settings for Services Dialog Box](http://msdn.microsoft.com/library/6dde4a2d-85e1-4275-aa55-24b84111be91).  
+     The **Advanced Settings for Services** dialog box appears, as shown in the following illustration. For more information about this dialog box, see [Advanced Settings for Services Dialog Box](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box).  
   
      ![Advanced Settings for Services dialog box](../../../docs/framework/common-client-technologies/media/casdialog.png "casdialog")  
   
@@ -136,13 +136,13 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 5.  Add an `<add>` element as a child of the `<providers>` element. You must specify `name` and `type` attributes as shown in the following example. The `type` attribute value must be an assembly-qualified type name. For more information, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> and [Assembly Names](../../../docs/framework/app-domains/assembly-names.md).  
   
-    ```  
+    ```xml  
     <add name="MyCustomRoleProvider" type="MyNamespace.MyRoleProvider, MyAssembly" />  
     ```  
   
 6.  Modify the `defaultProvider` attribute of the `<membership>` or `<roleManager>` element to specify the name value from the `<add>` element that you added in the previous step.  
   
-    ```  
+    ```xml  
     <roleManager enabled="true" defaultProvider="MyCustomRoleProvider">  
     ```  
   
@@ -150,7 +150,7 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
  [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)   
  [Client Application Services Overview](../../../docs/framework/common-client-technologies/client-application-services-overview.md)   
  [Services Page, Project Designer](https://msdn.microsoft.com/library/bb398109)   
- [Advanced Settings for Services Dialog Box](http://msdn.microsoft.com/library/6dde4a2d-85e1-4275-aa55-24b84111be91)   
+ [Advanced Settings for Services Dialog Box](/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)   
  [How to: Implement User Login with Client Application Services](../../../docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md)   
  [Walkthrough: Using Client Application Services](../../../docs/framework/common-client-technologies/walkthrough-using-client-application-services.md)   
  [Implementing a Membership Provider](http://msdn.microsoft.com/library/d8658b8e-c962-4f64-95e1-4acce35e4582)   

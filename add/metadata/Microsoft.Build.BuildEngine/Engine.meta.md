@@ -231,9 +231,3 @@ uid: Microsoft.Build.BuildEngine.Engine.#ctor(Microsoft.Build.BuildEngine.BuildP
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.BuildEngine.Engine.#ctor
-ms.author: "susanno"
-manager: "douge"
----

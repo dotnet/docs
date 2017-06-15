@@ -2,7 +2,7 @@
 title: "Dispatch by Body Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -64,7 +64,6 @@ public string SelectOperation(ref System.ServiceModel.Channels.Message message)
  Accessing the message body with <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> or any of the other methods that provide access to the message's body content causes the message to be marked as "read", which means that the message is invalid for any further processing. Therefore, the operation selector creates a copy of the incoming message with the method shown in the following code. Because the reader's position has not been changed during the inspection, it can be referenced by the newly created message to which the message properties and the message headers are also copied, which results in an exact clone of the original message:  
   
 ```  
-  
 private Message CreateMessageCopy(Message message,   
                                      XmlDictionaryReader body)  
 {  
@@ -73,7 +72,6 @@ private Message CreateMessageCopy(Message message,
     copy.Properties.CopyProperties(message.Properties);  
     return copy;  
 }  
-  
 ```  
   
 ## Adding an Operation Selector to a Service  
@@ -154,7 +152,7 @@ public interface IDispatchedByBody
   
  The client sends three messages to the service whose body content element is named `bodyA`, `bodyB`, and `bodyX`, respectively. As can be deferred from the previous description and the service contract shown, the incoming message with the `bodyA` element is dispatched to the `OperationForBodyA()` method. Because there is no explicit dispatch target for the message with the `bodyX` body element, the message is dispatched to the `DefaultOperation()`. Each of the service operations wraps the received message body into an element specific to the method and returns it, which is done to correlate input and output messages clearly for this sample:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="IBM437"?>  
 <replyBodyA xmlns="http://tempuri.org">  
    <q:bodyA xmlns:q="http://tempuri.org">test</q:bodyA>  
@@ -167,7 +165,6 @@ public interface IDispatchedByBody
 <replyDefault xmlns="http://tempuri.org">  
    <q:bodyX xmlns:q="http://tempuri.org">test</q:bodyX>  
 </replyDefault>  
-  
 ```  
   
 #### To set up, build, and run the sample  

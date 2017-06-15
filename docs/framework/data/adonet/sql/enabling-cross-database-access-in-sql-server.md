@@ -2,7 +2,7 @@
 title: "Enabling Cross-Database Access in SQL Server | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +44,6 @@ RECONFIGURE;
 ```  
 ALTER DATABASE Database1 SET DB_CHAINING ON;  
 ALTER DATABASE Database2 SET DB_CHAINING ON;  
-  
 ```  
   
 ### Dynamic SQL  

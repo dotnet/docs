@@ -2,7 +2,7 @@
 title: "&lt;smtp&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,12 +36,11 @@ Configures the delivery format, delivery method, and from address for sending e-
   
 ## Syntax  
   
-```  
-  
+```xml  
       <smtp  
-  deliveryFormat="format"   
-  deliveryMethod="method"   
-  from="from address"   
+  deliveryFormat="format"   
+  deliveryMethod="method"   
+  from="from address"   
   <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
   <network> … </network>  
 /smtp>  
@@ -74,7 +73,7 @@ Configures the delivery format, delivery method, and from address for sending e-
 ## Example  
  The following code example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <mailSettings>  

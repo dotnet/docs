@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for webRequestModules (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,10 +38,9 @@ Removes a custom Web request module from the application.
   
 ## Syntax  
   
-```  
-  
-      <remove   
-  name = "URI prefix"   
+```xml  
+      <remove   
+  name = "URI prefix"   
 />  
 ```  
   
@@ -74,7 +73,7 @@ Removes a custom Web request module from the application.
 ## Example  
  The following code example removes the existing Web request module for HTTP and then registers a new custom Web request module for HTTP requests to www.contoso.com.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <webRequestModules>  

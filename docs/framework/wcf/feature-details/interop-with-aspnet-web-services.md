@@ -2,7 +2,7 @@
 title: "Interoperability with ASP.NET Web Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,11 +55,10 @@ public class Service : IEcho
 ## Performance impact caused by loading the ServiceModel HttpModule  
  In the .NET Framework 3.0, the WCF `HttpModule` was installed in the root Web.config file such that every ASP.NET application was WCF enabled. This might affect performance, so you can remove `ServiceModel` for the Web.config file as shown in the following example.  
   
-```  
+```xml  
 <httpModules>  
-    <remove name=”ServiceModel” />  
+    <remove name="ServiceModel" />  
 <httpModules/>  
-  
 ```  
   
 ## See Also  

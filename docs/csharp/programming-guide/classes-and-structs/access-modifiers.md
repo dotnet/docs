@@ -76,7 +76,7 @@ All types and type members have an accessibility level, which controls whether t
   
  User-defined operators must always be declared as public. For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).  
   
- Destructors cannot have accessibility modifiers.  
+ Finalizers cannot have accessibility modifiers.  
   
  To set the access level for a class or struct member, add the appropriate keyword to the member declaration, as shown in the following example.  
   
@@ -93,7 +93,7 @@ All types and type members have an accessibility level, which controls whether t
  Delegates behave like classes and structs. By default, they have internal access when declared directly within a namespace, and private access when nested.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

@@ -2,7 +2,7 @@
 title: "ICorDebugVariableHome::GetRegister Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetRegister method [.NET Framework debugging]"
   - "GetRegister method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: a5eecd7b-b04c-4266-bff2-7c8771d519a8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,11 +36,9 @@ Gets the register that contains a variable with a location type of `VLT_REGISTER
 ## Syntax  
   
 ```  
-  
 HRESULT GetRegister(  
     [out] CorDebugRegister *pRegister  
 );  
-  
 ```  
   
 #### Parameters  

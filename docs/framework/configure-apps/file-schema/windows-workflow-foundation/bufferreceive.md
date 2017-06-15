@@ -2,7 +2,7 @@
 title: "&lt;bufferReceive&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;bufferReceive&gt;
 A service behavior that enables a service to use buffered receive processing, which enables a workflow service to process out-of-order messages.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,14 @@ A service behavior that enables a service to use buffered receive processing, wh
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel=”Integer” />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <bufferReceive maxPendingMessagesPerChannel="Integer" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

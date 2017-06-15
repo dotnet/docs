@@ -64,11 +64,11 @@ Declares the name, parameters, and code that define a `Sub` procedure.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ Partial ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async ]  
-Sub name [ (Of typeparamlist) ] [ (parameterlist) ] [ Implements implementslist | Handles eventlist ]  
-    [ statements ]  
-    [ Exit Sub ]  
-    [ statements ]  
+[ <attributelist> ] [ Partial ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async ]  
+Sub name [ (Of typeparamlist) ] [ (parameterlist) ] [ Implements implementslist | Handles eventlist ]  
+    [ statements ]  
+    [ Exit Sub ]  
+    [ statements ]  
 End Sub  
 ```  
   
@@ -96,7 +96,7 @@ End Sub
   
     -   `Protected Friend`  
   
-     See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+     See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 -   `proceduremodifiers`  
   

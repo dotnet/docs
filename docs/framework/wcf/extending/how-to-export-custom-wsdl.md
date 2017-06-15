@@ -199,7 +199,6 @@ return lines;
       return returnsElement;  
     }  
   }  
-  
 ```  
   
 ## See Also  

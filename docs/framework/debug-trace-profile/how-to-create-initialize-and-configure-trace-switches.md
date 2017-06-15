@@ -31,7 +31,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 <a name="create"></a>   
 ## Creating and initializing a trace switch  
- In order to use trace switches, you must first create them and place them in your code. There are two predefined classes from which you can create switch objects: the <xref:System.Diagnostics.BooleanSwitch?displayProperty=fullName> class and the <xref:System.Diagnostics.TraceSwitch?displayProperty=fullName> class. You would use <xref:System.Diagnostics.BooleanSwitch> if you care only about whether or not a tracing message appears; you would use <xref:System.Diagnostics.TraceSwitch> if you want to discriminate between levels of tracing. If you use a <xref:System.Diagnostics.TraceSwitch>, you can define your own debugging messages and associate them with different trace levels. You can use both types of switches with either tracing or debugging. By default, a <xref:System.Diagnostics.BooleanSwitch> is disabled and a <xref:System.Diagnostics.TraceSwitch> is set to level <xref:System.Diagnostics.TraceLevel?displayProperty=fullName>. Trace switches can be created and placed in any part of your code that might use them.  
+ In order to use trace switches, you must first create them and place them in your code. There are two predefined classes from which you can create switch objects: the <xref:System.Diagnostics.BooleanSwitch?displayProperty=fullName> class and the <xref:System.Diagnostics.TraceSwitch?displayProperty=fullName> class. You would use <xref:System.Diagnostics.BooleanSwitch> if you care only about whether or not a tracing message appears; you would use <xref:System.Diagnostics.TraceSwitch> if you want to discriminate between levels of tracing. If you use a <xref:System.Diagnostics.TraceSwitch>, you can define your own debugging messages and associate them with different trace levels. You can use both types of switches with either tracing or debugging. By default, a <xref:System.Diagnostics.BooleanSwitch> is disabled and a <xref:System.Diagnostics.TraceSwitch> is set to level <xref:System.Diagnostics.TraceLevel.Off?displayProperty=fullName>. Trace switches can be created and placed in any part of your code that might use them.  
   
  Although you can set trace levels and other configuration options in code, we recommend that you use the configuration file to manage the state of your switches. This is because managing the configuration of your switches in the configuration system gives you greater flexibility — you can turn on and off various switches and change levels without recompiling your application.  
   
@@ -46,7 +46,6 @@ Trace switches enable you to enable, disable, and filter tracing output.
     ```vb  
     Dim dataSwitch As New BooleanSwitch("Data", "DataAccess module")  
     Dim generalSwitch As New TraceSwitch("General", "Entire application")  
-  
     ```  
   
     ```csharp  
@@ -55,7 +54,6 @@ Trace switches enable you to enable, disable, and filter tracing output.
     System.Diagnostics.TraceSwitch generalSwitch =   
        new System.Diagnostics.TraceSwitch("General",   
        "Entire application");  
-  
     ```  
   
 <a name="configure"></a>   
@@ -89,7 +87,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
     -   **Visual C#:** In the **Add New Item** dialog box, choose **XML File**. Name this file **app.config**. In the XML editor, after the XML declaration, add the following XML:  
   
-        ```  
+        ```xml  
         <configuration>  
         </configuration>  
         ```  
@@ -98,7 +96,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 3.  After the `<configuration>` tag but before the `</configuration>` tag, add the appropriate XML to configure your switches. The following examples demonstrate a **BooleanSwitch** with a **DisplayName** property of `DataMessageSwitch` and a **TraceSwitch** with a **DisplayName** property of `TraceLevelSwitch`.  
   
-    ```  
+    ```xml  
     <system.diagnostics>  
        <switches>  
           <add name="DataMessagesSwitch" value="0" />  
@@ -117,7 +115,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
      The following example shows how the final code, including comments, might look:  
   
-    ```  
+    ```xml  
     <system.diagnostics>  
        <switches>  
           <!-- This switch controls data messages. In order to receive data   

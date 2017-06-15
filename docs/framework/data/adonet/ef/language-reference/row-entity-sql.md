@@ -2,7 +2,7 @@
 title: "ROW (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,6 @@ Constructs anonymous, structurally typed records from one or more values.
 ## Syntax  
   
 ```  
-  
 ROW ( expression [ AS alias ] [,...] )  
 ```  
   

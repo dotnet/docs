@@ -2,7 +2,7 @@
 title: "How to: Respond to Clicks in the Windows Forms DataGrid Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,6 @@ manager: "wpickett"
           & ", Row is " & myDataGrid.CurrentCell.RowNumber _  
           & ", Value is " & myDataGrid.Item(myDataGrid.CurrentCell))  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -95,7 +94,6 @@ manager: "wpickett"
   
        Console.WriteLine(message)  
     End Sub  
-  
     ```  
   
     ```csharp  

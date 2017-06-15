@@ -40,7 +40,7 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
   
 ## Syntax  
   
-```  
+```console  
 /linkresource:filename[,identifier[,accessibility-modifier]]  
 ```  
   
@@ -61,7 +61,7 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
   
  If `filename` is a .NET Framework resource file created, for example, by [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=fullName>. For all other resources, use the `GetManifestResource`* methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
   
- The file specified in `filename` can be any format. For example, you may want to make a native DLL part of the assembly, so that it can be installed into the global assembly cache and accessed from managed code in the assembly. The second of the following examples shows how to do this. You can do the same thing in the Assembly Linker. The third of the following examples shows how to do this. For more information, see [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex) and [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
+ The file specified in `filename` can be any format. For example, you may want to make a native DLL part of the assembly, so that it can be installed into the global assembly cache and accessed from managed code in the assembly. The second of the following examples shows how to do this. You can do the same thing in the Assembly Linker. The third of the following examples shows how to do this. For more information, see [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex) and [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md).  
   
  **/linkres** is the short form of **/linkresource**.  
   
@@ -70,14 +70,14 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
 ## Example  
  Compile `in.cs` and link to resource file `rf.resource`:  
   
-```  
+```console  
 csc /linkresource:rf.resource in.cs  
 ```  
   
 ## Example  
  Compile `A.cs` into a DLL, link to a native DLL N.dll, and put the output in the Global Assembly Cache (GAC). In this example, both A.dll and N.dll will reside in the GAC.  
   
-```  
+```console  
 csc /linkresource:N.dll /t:library A.cs  
 gacutil -i A.dll  
 ```  
@@ -85,7 +85,7 @@ gacutil -i A.dll
 ## Example  
  This example does the same thing as the previous one, but by using Assembly Linker options.  
   
-```  
+```console  
 csc /t:module A.cs  
 al /out:A.dll A.netmodule /link:N.dll   
 gacutil -i A.dll  
@@ -94,5 +94,5 @@ gacutil -i A.dll
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   
- [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)   
+ [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md)   
  [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

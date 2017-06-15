@@ -2,7 +2,7 @@
 title: "Custom Message Filter | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +46,6 @@ class MatchNoEAddressFilter : MessageFilter
   
 ```  
 public class FilteringEndpointBehaviorExtension : BehaviorExtensionElement  
-  
 ```  
   
  Variation 1 matches only addresses that contain an 'e' (but that have any Action) whereas Variation 2 matches only addresses that lack an 'e':  
@@ -58,12 +57,11 @@ if (Variation == 1)
 else  
     return new FilteringEndpointBehavior(  
         new MatchNoEAddressFilter(), new MatchAllMessageFilter());  
-  
 ```  
   
  In the configuration file, the service registers the new behavior:  
   
-```  
+```xml  
 <extensions>  
     <behaviorExtensions>  
         <add name="filteringEndpointBehavior" type="Microsoft.ServiceModel.Samples.FilteringEndpointBehaviorExtension, service" />  
@@ -73,7 +71,7 @@ else
   
  Then the service creates `endpointBehavior` configurations for each variation:  
   
-```  
+```xml  
 <endpointBehaviors>  
     <behavior name="endpoint1">  
         <filteringEndpointBehavior variation="1" />  
@@ -82,19 +80,17 @@ else
         <filteringEndpointBehavior variation="2" />  
     </behavior>  
 </endpointBehaviors>  
-  
 ```  
   
  Finally, the service's endpoint references one of the `behaviorConfigurations`:  
   
-```  
+```xml  
 <endpoint address=""  
         bindingConfiguration="ws"  
         listenUri=""   
         binding="wsHttpBinding"  
         contract="Microsoft.ServiceModel.Samples.IHello"   
         behaviorConfiguration="endpoint2" />  
-  
 ```  
   
  The implementation of the client application is straightforward; it creates two channels to the service's URI (by passing in that value as the second (`via`) parameter to <xref:System.ServiceModel.Channels.IChannelFactory%601.CreateChannel%28System.ServiceModel.EndpointAddress%29> and sends a single message on each channel, but it uses different endpoint addresses for each. As a result, the outbound messages from the client have different To designations, and the server responds accordingly, as demonstrated by the client's output:  
@@ -109,14 +105,13 @@ Hello
   
  Switching the variation in the server's configuration file causes the filter to be swapped and the client sees the opposite behavior (the message to `urn:e` succeeds, whereas the message to `urn:a` fails).  
   
-```  
+```xml  
 <endpoint address=""  
           bindingConfiguration="ws"  
           listenUri=""   
           binding="wsHttpBinding"  
           contract="Microsoft.ServiceModel.Samples.IHello"   
           behaviorConfiguration="endpoint1" />  
-  
 ```  
   
 > [!IMPORTANT]

@@ -48,7 +48,6 @@ Divides two numbers and returns only the remainder.
 ## Syntax  
   
 ```  
-  
 number1 Mod number2  
 ```  
   

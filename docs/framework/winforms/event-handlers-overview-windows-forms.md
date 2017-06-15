@@ -28,7 +28,6 @@ An event handler is a method that is bound to an event. When the event is raised
 Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click  
   
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -36,7 +35,6 @@ private void button1_Click(object sender, System.EventArgs e)
 {  
   
 }  
-  
 ```  
   
 ```cpp  

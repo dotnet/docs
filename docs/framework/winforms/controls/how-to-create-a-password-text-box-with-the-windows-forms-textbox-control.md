@@ -2,7 +2,7 @@
 title: "How to: Create a Password Text Box with the Windows Forms TextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +48,6 @@ A password box is a Windows Forms text box that displays placeholder characters 
        ' The control will allow no more than 14 characters.  
        TextBox1.MaxLength = 14  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -61,7 +60,6 @@ A password box is a Windows Forms text box that displays placeholder characters 
        // The control will allow no more than 14 characters.  
        textBox1.MaxLength = 14;  
     }  
-  
     ```  
   
     ```cpp  

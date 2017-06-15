@@ -2,7 +2,7 @@
 title: "How to: Create a Multipane User Interface with Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,7 +27,7 @@ manager: "wpickett"
 # How to: Create a Multipane User Interface with Windows Forms
 In the following procedure, you will create a multipane user interface that is similar to the one used in Microsoft Outlook, with a **Folder** list, a **Messages** pane, and a **Preview** pane. This arrangement is achieved chiefly through docking controls with the form.  
   
- When you dock a control, you determine which edge of the parent container a control is fastened to. Thus, if you set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>, the right edge of the control will be docked to the right edge of its parent control. Additionally, the docked edge of the control is resized to match that of its container control. For more information about how the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property works, see [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md).  
+ When you dock a control, you determine which edge of the parent container a control is fastened to. Thus, if you set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Right>, the right edge of the control will be docked to the right edge of its parent control. Additionally, the docked edge of the control is resized to match that of its container control. For more information about how the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property works, see [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md).  
   
  This procedure focuses on arranging the <xref:System.Windows.Forms.SplitContainer> and the other controls on the form, not on adding functionality to make the application mimic Microsoft Outlook.  
   
@@ -45,7 +45,6 @@ In the following procedure, you will create a multipane user interface that is s
         System.Windows.Forms.SplitContainer  
     Private WithEvents splitContainer2 As _  
         System.Windows.Forms.SplitContainer  
-  
     ```  
   
     ```csharp  
@@ -54,7 +53,6 @@ In the following procedure, you will create a multipane user interface that is s
     private System.Windows.Forms.RichTextBox richTextBox1;  
     private System.Windows.Forms. SplitContainer splitContainer2;  
     private System.Windows.Forms. SplitContainer splitContainer1;  
-  
     ```  
   
 2.  Create a procedure that defines your user interface. The following code sets the properties so that the form will resemble the user interface in Microsoft Outlook. However, by using other controls or docking them differently, it is just as easy to create other user interfaces that are equally flexible.  
@@ -119,7 +117,6 @@ In the following procedure, you will create a multipane user interface that is s
         Me.Controls.Add(Me.splitContainer2)  
         Me.Text = "Intricate UI Example"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -170,7 +167,6 @@ In the following procedure, you will create a multipane user interface that is s
         this.Controls.Add(this.splitContainer2);  
         this.Text = "Intricate UI Example";  
     }  
-  
     ```  
   
 3.  In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], add a call to the procedure you just created in the `New()` procedure. In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], add this line of code to the constructor for the form class.  
@@ -178,13 +174,11 @@ In the following procedure, you will create a multipane user interface that is s
     ```vb  
     ' Add this to the New procedure.  
     CreateOutlookUI()  
-  
     ```  
   
     ```csharp  
     // Add this to the form class's constructor.  
     createOutlookUI();  
-  
     ```  
   
 ## See Also  

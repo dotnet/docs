@@ -2,7 +2,7 @@
 title: "&lt;compiler&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,7 +38,7 @@ Specifies the compiler configuration attributes for a language provider.
   
 ## Syntax  
   
-```  
+```xml  
 <compiler  
   language="languageName[;...;...]"  
   extension="fileExtension[;...;...]"  
@@ -88,7 +88,7 @@ Specifies the compiler configuration attributes for a language provider.
 ## Example  
  The following example illustrates a typical compiler configuration element.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

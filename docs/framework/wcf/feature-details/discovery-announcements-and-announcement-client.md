@@ -2,7 +2,7 @@
 title: "Discovery Announcements and Announcement Client | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);
   
  The behavior can be configured in the configuration file as well, as shown in the following example.  
   
-```  
+```xml  
 <services>  
   <service behaviorConfiguration="CalculatorBehavior" name="Microsoft.Samples.Discovery.CalculatorService">  
     <!--Add Discovery Endpoint-->  
@@ -84,7 +84,6 @@ using (ServiceHost announcementServiceHost = new ServiceHost(announcementService
     Console.WriteLine("Press <ENTER> to terminate.");  
     Console.ReadLine();  
 }  
-  
 ```  
   
  When a Hello or Bye message is received, you can access the endpoint discovery metadata through <xref:System.ServiceModel.Discovery.AnnouncementEventArgs> as shown in the following example.  

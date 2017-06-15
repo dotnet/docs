@@ -2,7 +2,7 @@
 title: "Loosely-Typed Extensions Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,7 @@ The Syndication object model provides rich support for working with extension da
 ## Sample XML  
  For reference, the following XML document is used in this sample.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="IBM437"?>  
 <feed myAttribute="someValue" xmlns="http://www.w3.org/2005/Atom">  
   <title type="text"></title>  
@@ -56,7 +56,6 @@ w.w3.org/2001/XMLSchema" xmlns="">
     <Value attr1="someValue">15</Value>  
   </xElementExtension>  
 </feed>  
-  
 ```  
   
  This document contains the following pieces of extension data:  
@@ -78,7 +77,6 @@ w.w3.org/2001/XMLSchema" xmlns="">
 //Attribute extensions are stored in a dictionary indexed by   
 // XmlQualifiedName  
 feed.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue");  
-  
 ```  
   
  Element extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> collection. These extensions can by basic values such as strings, XML serializations of .NET Framework objects, or XML nodes coded by hand.  
@@ -87,17 +85,15 @@ feed.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue
   
 ```  
 feed.ElementExtensions.Add("simpleString", "", "hello, world!");  
-  
 ```  
   
- The XML namespace for this element is the empty namespace (“”) and its value is a text node that contains the string “hello, world!”.  
+ The XML namespace for this element is the empty namespace ("") and its value is a text node that contains the string "hello, world!".  
   
  One way to create complex element extensions that consist of many nested elements is to use the .NET Framework APIs for serialization (both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Xml.Serialization.XmlSerializer> are supported) as shown in the following examples.  
   
 ```  
 feed.ElementExtensions.Add( new DataContractExtension() { Key = "X", Value = 4 } );  
 feed.ElementExtensions.Add( new XmlSerializerExtension { Key = "Y", Value = 8 }, new XmlSerializer( typeof( XmlSerializerExtension ) ) );  
-  
 ```  
   
  In this example, the `DataContractExtension` and `XmlSerializerExtension` are custom types written for use with a serializer.  
@@ -109,7 +105,6 @@ feed.ElementExtensions.Add(new XElement("xElementExtension",
         new XElement("Key", new XAttribute("attr1", "someValue"), "Z"),  
         new XElement("Value", new XAttribute("attr1", "someValue"),   
         "15")).CreateReader());  
-  
 ```  
   
 ## Reading Extension Data  
@@ -117,7 +112,6 @@ feed.ElementExtensions.Add(new XElement("xElementExtension",
   
 ```  
 Console.WriteLine( feed.AttributeExtensions[ new XmlQualifiedName( "myAttribute", "" )]);  
-  
 ```  
   
  Element extensions are accessed using the `ReadElementExtensions<T>` method.  
@@ -138,19 +132,16 @@ foreach (XmlSerializerExtension xse in feed2.ElementExtensions.ReadElementExtens
 {  
     Console.WriteLine(xse.ToString());  
 }  
-  
 ```  
   
  It is also possible to obtain an `XmlReader` at individual element extensions by using the <xref:System.ServiceModel.Syndication.SyndicationElementExtension.GetReader> method.  
   
 ```  
-  
 foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<SyndicationElementExtension>(x => x.OuterName == "xElementExtension"))  
 {  
     XNode xelement = XElement.ReadFrom(extension.GetReader());  
     Console.WriteLine(xelement.ToString());  
 }  
-  
 ```  
   
 #### To set up, build, and run the sample  

@@ -2,7 +2,7 @@
 title: "WS Dual Http | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ The Dual Http sample demonstrates how to configure the `WSDualHttpBinding` bindi
   
  To configure a service endpoint with the `WSDualHttpBinding`, specify the binding in the endpoint configuration as shown.  
   
-```  
+```xml  
 <endpoint address=""  
          binding="wsDualHttpBinding"  
          contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex" />  
@@ -40,7 +40,7 @@ The Dual Http sample demonstrates how to configure the `WSDualHttpBinding` bindi
   
  On the client, you must configure an address that the server can use to connect to the client as shown in the following sample configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint address=  
@@ -74,7 +74,6 @@ Result(50)
 Result(882.5)  
 Result(441.25)  
 Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)  
-  
 ```  
   
  When you run the sample, you see the messages returned to the client on the callback interface sent from the service. Each intermediate result is displayed, followed by the entire equation upon completion of all operations. Press ENTER to shut down the client.  
@@ -85,7 +84,6 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
@@ -97,7 +95,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
     > [!IMPORTANT]
     >  When running the client in a cross-machine configuration, be sure to replace localhost in both the `address` attribute of the [endpoint](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element and the `clientBaseAddress` attribute of the [\<binding>](../../../../docs/framework/misc/binding.md) element of the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md) element with the name of the appropriate machine, as shown:  
   
-    ```  
+    ```xml  
     <client>  
         <endpoint name = ""  
           address=  

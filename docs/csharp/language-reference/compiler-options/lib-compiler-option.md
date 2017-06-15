@@ -37,7 +37,7 @@ The **/lib** option specifies the location of assemblies referenced by means of 
   
 ## Syntax  
   
-```  
+```console  
 /lib:dir1[,dir2]  
 ```  
   
@@ -65,7 +65,7 @@ The **/lib** option specifies the location of assemblies referenced by means of 
   
  An alternative to using **/lib** is to copy into the working directory any required assemblies; this will allow you to simply pass the assembly name to **/reference**. You can then delete the assemblies from the working directory. Since the path to the dependent assembly is not specified in the assembly manifest, the application can be started on the target computer and will find and use the assembly in the global assembly cache.  
   
- Because the compiler can reference the assembly does not imply the common language runtime will be able to find and load the assembly at runtime. See [How the Runtime Locates Assemblies](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34) for details on how the runtime searches for referenced assemblies.  
+ Because the compiler can reference the assembly does not imply the common language runtime will be able to find and load the assembly at runtime. See [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md) for details on how the runtime searches for referenced assemblies.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -80,7 +80,7 @@ The **/lib** option specifies the location of assemblies referenced by means of 
 ## Example  
  Compile t2.cs to create an .exe file. The compiler will look in the working directory and in the root directory of the C drive for assembly references.  
   
-```  
+```console  
 csc /lib:c:\ /reference:t2.dll t2.cs  
 ```  
   

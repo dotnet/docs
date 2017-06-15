@@ -2,7 +2,7 @@
 title: "&lt;security&gt; of &lt;customBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ Specifies the security options for a custom binding.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <security   
    allowSerializedSigningTokenOnReply="Boolean"  
    authenticationMode="AuthenticationMode"  
@@ -70,7 +69,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 |requireDerivedKeys|A Boolean value that specifies if keys can be derived from the original proof keys. The default is `true`.|  
 |requireSecurityContextCancellation|Optional. A Boolean value that specifies if security context should be cancelled and terminated when it is no longer needed. The default is `true`.|  
 |requireSignatureConfirmation|Optional. A Boolean value that specifies whether WS-Security signature confirmation is enabled. When set to `true`, message signatures are confirmed by the responder.  When the custom binding is configured for mutual certificates or it is configured to use issued tokens (WSS 1.1 bindings) this attribute defaults to `true`. Otherwise, the default is `false`.<br /><br /> Signature confirmation is used to confirm that the service is responding in full awareness of a request.|  
-|securityHeaderLayout|Optional. Specifies the ordering of the elements in security header. Valid values are<br /><br /> -   `Strict`: Items are added to the security header according to the general principle of “declare before use”.<br />-   `Lax`: Items are added to the security header in any order that confirms to WSS: SOAP Message security.<br />-   `LaxWithTimestampFirst`: Items are added to the security header in any order that confirms to WSS: SOAP Message security except that the first element in the security header must be a wsse:Timestamp element.<br />-   `LaxWithTimestampLast`: Items are added to the security header in any order that confirms to WSS: SOAP Message security except that the last element in the security header must be a wsse:Timestamp element.<br /><br /> The default is `Strict`.<br /><br /> This element is of type <xref:System.ServiceModel.Channels.SecurityHeaderLayout>.|  
+|securityHeaderLayout|Optional. Specifies the ordering of the elements in security header. Valid values are<br /><br /> -   `Strict`: Items are added to the security header according to the general principle of "declare before use".<br />-   `Lax`: Items are added to the security header in any order that confirms to WSS: SOAP Message security.<br />-   `LaxWithTimestampFirst`: Items are added to the security header in any order that confirms to WSS: SOAP Message security except that the first element in the security header must be a wsse:Timestamp element.<br />-   `LaxWithTimestampLast`: Items are added to the security header in any order that confirms to WSS: SOAP Message security except that the last element in the security header must be a wsse:Timestamp element.<br /><br /> The default is `Strict`.<br /><br /> This element is of type <xref:System.ServiceModel.Channels.SecurityHeaderLayout>.|  
   
 ## authenticationMode Attribute  
   
@@ -124,7 +123,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
   
  Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md).  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <services>  

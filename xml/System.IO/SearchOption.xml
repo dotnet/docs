@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -34,7 +35,7 @@
    
   
 ## Examples  
- The following example lists all the directories and files that begin with the letter "c", as in "c:\\". In this example, the <xref:System.IO.SearchOption> is used to specify that only the top-level directory should be searched.  
+ The following example lists all the directories and files that begin with the letter "c", as in "c:\\". In this example, the <xref:System.IO.SearchOption.AllDirectories> is used to specify that only the top-level directory should be searched.  
   
  [!code-cpp[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/cpp/searchoption.cpp#00)]
  [!code-csharp[System.IO.DirectoryInfo_SearchOptions#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.DirectoryInfo_SearchOptions/cs/searchoption.cs#00)]
@@ -52,6 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +79,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

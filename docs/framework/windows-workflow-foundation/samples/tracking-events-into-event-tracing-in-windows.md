@@ -2,7 +2,7 @@
 title: "Tracking Events into Event Tracing in Windows | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -123,7 +123,6 @@ This sample demonstrates how to enable [!INCLUDE[wf](../../../../includes/wf-md.
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
 ```  
   
 #### To clean up (Optional)  

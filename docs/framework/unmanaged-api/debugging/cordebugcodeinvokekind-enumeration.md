@@ -18,6 +18,8 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: e795e6a2-1008-4a81-af88-d777888e942e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -29,14 +31,12 @@ Describes how an exported function invokes managed code.
 ## Syntax  
   
 ```  
-  
 typedef enum CorDebugCodeInvokeKind  
 {  
     CODE_INVOKE_KIND_NONE,       
     CODE_INVOKE_KIND_RETURN,     
     CODE_INVOKE_KIND_TAILCALL,   
 } CorDebugCodeInvokeKind;  
-  
 ```  
   
 ## Members  

@@ -2,7 +2,7 @@
 title: "DataSet and XmlDataDocument Synchronization | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -77,7 +77,6 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
     ' Add code here to create the schema of the DataSet to view the data.  
   
     xmlDoc.Load("XMLDocument.xml")  
-  
     ```  
   
     ```csharp  

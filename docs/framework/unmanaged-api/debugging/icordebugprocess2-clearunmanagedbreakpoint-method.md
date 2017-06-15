@@ -2,7 +2,7 @@
 title: "ICorDebugProcess2::ClearUnmanagedBreakpoint Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ClearUnmanagedBreakpoint method [.NET Framework debugging]"
   - "ICorDebugProcess2::ClearUnmanagedBreakpoint method [.NET Framework debugging]"
 ms.assetid: 12ed0fff-7f0e-4d7a-bb70-b3376371f36c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

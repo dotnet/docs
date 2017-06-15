@@ -6,6 +6,7 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -39,7 +40,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>  
+  
+ A writable array accessor that can be converted into an <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> instance without allocating extra memory.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,6 +57,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -60,8 +66,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The object to add to the array.</param>
+        <summary>  
+  
+ Adds the specified item to the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,6 +82,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -82,8 +91,10 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the array.</param>
+        <summary>  
+  
+ Adds the specified items to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,6 +107,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -104,8 +116,10 @@
         <Parameter Name="items" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the array.</param>
+        <summary>  
+  
+ Adds the specified items to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,6 +132,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -126,8 +141,10 @@
         <Parameter Name="items" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the array.</param>
+        <summary>  
+  
+ Adds the specified items to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,6 +157,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -154,8 +172,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the array.</param>
+        <summary>  
+  
+ Adds the specified items to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,6 +188,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -177,9 +198,11 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the array.</param>
+        <param name="length">The number of elements from the source array to add.</param>
+        <summary>  
+  
+ Adds the specified items to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,6 +215,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -201,9 +225,11 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="items">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="items">The items to add to the array.</param>
+        <param name="length">The number of elements from the source array to add.</param>
+        <summary>  
+  
+ Adds the specified items to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,6 +242,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -231,9 +258,11 @@
         <Parameter Name="items" Type="System.Collections.Immutable.ImmutableArray&lt;TDerived&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TDerived">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TDerived">The type that derives from the type of item already in the array.</typeparam>
+        <param name="items">The items to add to the end of the array.</param>
+        <summary>  
+  
+ Adds the specified items that derive from the type currently in the array, to the end of the array</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,6 +275,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -261,9 +291,11 @@
         <Parameter Name="items" Type="System.Collections.Immutable.ImmutableArray&lt;TDerived&gt;+Builder" />
       </Parameters>
       <Docs>
-        <typeparam name="TDerived">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TDerived">The type that derives from the type of item already in the array.</typeparam>
+        <param name="items">The items to add to the end of the array.</param>
+        <summary>  
+  
+ Adds the specified items that derive from the type currently in the array, to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,6 +308,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -291,9 +324,11 @@
         <Parameter Name="items" Type="TDerived[]" />
       </Parameters>
       <Docs>
-        <typeparam name="TDerived">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="TDerived">The type that derives from the type of item already in the array.</typeparam>
+        <param name="items">The items to add to end of the array.</param>
+        <summary>  
+  
+ Adds the specified items that derive from the type currently in the array, to the end of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,12 +341,13 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Get and sets the length of the internal array.  When set the internal array is             reallocated to the given capacity if it is not already the specified length.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,13 +361,16 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>  
+  
+ Removes all items from the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,6 +383,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -352,9 +392,12 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The object to locate in the array.</param>
+        <summary>  
+  
+ Determines whether the array contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the object is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -367,6 +410,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -376,9 +420,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The array to copy to.</param>
+        <param name="index">The index to start the copy operation.</param>
+        <summary>  
+  
+ Copies the current contents to the specified array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,14 +437,26 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>  
+  
+ Gets or sets the number of items in the array.</summary>
+        <value>The number of items in the array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value is decreased, the array contents are truncated.  
+  
+ If the value is increased, the added elements are initialized to their default value.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -410,6 +468,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -421,8 +480,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>  
+  
+ Gets an object that can be used to iterate through the collection.</summary>
+        <returns>An object that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,6 +496,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -443,9 +505,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to locate in the array.</param>
+        <summary>  
+  
+ Determines the index of a specific item in the array.</summary>
+        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -458,6 +522,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -467,10 +532,12 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to locate in the array.</param>
+        <param name="startIndex">The starting position of the search.</param>
+        <summary>  
+  
+ Determines the index of the specified item.</summary>
+        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,6 +550,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -493,11 +561,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to locate in the array.</param>
+        <param name="startIndex">The starting position of the search.</param>
+        <param name="count">The number of elements to search.</param>
+        <summary>  
+  
+ Determines the index of the specified item.</summary>
+        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,6 +580,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -521,12 +592,14 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to locate in the array.</param>
+        <param name="startIndex">The index at which to begin the search.</param>
+        <param name="count">The starting position of the search.</param>
+        <param name="equalityComparer">The equality comparer to use in the search</param>
+        <summary>  
+  
+ Determines the index for the specified item.</summary>
+        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -539,6 +612,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -548,9 +622,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index at which to insert the item.</param>
+        <param name="item">The object to insert into the array.</param>
+        <summary>  
+  
+ Inserts an item in the array at the specified index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -563,6 +639,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -571,10 +648,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the item to get or set.</param>
+        <summary>  
+  
+ Gets or sets the item at the specified index.</summary>
+        <value>The item at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The specified index is not in the array.</exception>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -586,6 +666,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -594,9 +675,11 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to search for.</param>
+        <summary>  
+  
+ Determines the 0-based index of the last occurrence of the specified item in this array.</summary>
+        <returns>The 0-based index where the item was found; or -1 if it could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,6 +692,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -618,10 +702,12 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to search for.</param>
+        <param name="startIndex">The starting position of the search.</param>
+        <summary>  
+  
+ Determines the 0-based index of the last occurrence of the specified item in this array.</summary>
+        <returns>The 0-based index into the array where the item was found; or -1 if it could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,6 +720,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -644,11 +731,13 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to search for.</param>
+        <param name="startIndex">The starting position of the search.</param>
+        <param name="count">The number of elements to search.</param>
+        <summary>  
+  
+ Determines the 0-based index of the last occurrence of the specified item in this array.</summary>
+        <returns>The 0-based index into the array where the item was found; or -1 if it could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,6 +750,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -672,12 +762,14 @@
         <Parameter Name="equalityComparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="equalityComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The item to search for.</param>
+        <param name="startIndex">The starting position of the search.</param>
+        <param name="count">The number of elements to search.</param>
+        <param name="equalityComparer">The equality comparer to use in the search.</param>
+        <summary>  
+  
+ Determines the 0-based index of the last occurrence of the specified item in this array.</summary>
+        <returns>The 0-based index into the array where the item was found; or -1 if it could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,15 +782,17 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Extracts the internal array as an <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> and replaces it              with a zero length array.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">When <see cref="P:System.Collections.Immutable.ImmutableArray`1.Builder.Count" /> doesn't              equal <see cref="P:System.Collections.Immutable.ImmutableArray`1.Builder.Capacity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -710,6 +804,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -718,9 +813,12 @@
         <Parameter Name="element" Type="T" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">The item to remove.</param>
+        <summary>  
+  
+ Removes the specified element.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="element" /> was found and removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -733,6 +831,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -741,8 +840,10 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>  
+  
+ Removes the item at the specified index from the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -755,13 +856,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reverses the order of elements in the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -774,13 +876,16 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>  
+  
+ Sorts the contents of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,6 +898,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -801,8 +907,10 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="comparer">The comparer to use for sorting. If comparer is <see langword="null" />, the default comparer for the elements type in the array is used.</param>
+        <summary>  
+  
+ Sorts the contents of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -815,6 +923,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -823,9 +932,11 @@
         <Parameter Name="comparison" Type="System.Comparison&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="comparison">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="comparison">The <see cref="T:System.Comparison`1" /> to use when comparing elements.</param>
+        <summary>Sorts the elements in the entire array using             the specified <see cref="T:System.Comparison`1" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comparison" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -837,6 +948,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -847,10 +959,12 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="count">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The starting index for the sort.</param>
+        <param name="count">The number of elements to include in the sort.</param>
+        <param name="comparer">The comparer to use for sorting. If comparer is <see langword="null" />, the default comparer for the elements type in the array is used.</param>
+        <summary>  
+  
+ Sorts the contents of the array.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,13 +977,14 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
+        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -882,15 +997,25 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>  
+  
+ Returns an enumerator that iterates through the array.</summary>
+        <returns>An enumerator that iterates through the array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableArray%601.Builder> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -902,15 +1027,25 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>  
+  
+ Returns an enumerator that iterates through the array.</summary>
+        <returns>An enumerator that iterates through the array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableArray%601.Builder> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -922,14 +1057,17 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>  
+  
+ Creates a new array with the current contents of this <see cref="T:System.Collections.Immutable.ImmutableArray`1.Builder" />.</summary>
+        <returns>A new array with the contents of this <see cref="T:System.Collections.Immutable.ImmutableArray`1.Builder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,14 +1080,17 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>  
+  
+ Returns an immutable array that contains the current contents of this <see cref="T:System.Collections.Immutable.ImmutableArray`1.Builder" />.</summary>
+        <returns>An immutable array that contains the current contents of this <see cref="T:System.Collections.Immutable.ImmutableArray`1.Builder" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

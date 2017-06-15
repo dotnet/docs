@@ -31,7 +31,7 @@ Node sets are one of four basic data types that are returned from XML Path Langu
   
 ## Style Sheet  
   
-```  
+```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
   
     <xsl:variable name="x" select="bookstore/book/title"></xsl:variable>  
@@ -49,7 +49,7 @@ Node sets are one of four basic data types that are returned from XML Path Langu
   
 ## Input  
   
-```  
+```xml  
 <bookstore>  
    <book style="autobiography">  
       <title>Seven Years in Trenton</title>  

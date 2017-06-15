@@ -2,7 +2,7 @@
 title: "&lt;wsdlImporter&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;wsdlImporter&gt;
 Specifies all the WSDL importers that imports Web Services Description Language (WSDL) 1.1 metadata with WS-Policy attachments.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<client>  
 \<metadata>  
 \<wsdlImporters>  
@@ -26,12 +26,11 @@ Specifies all the WSDL importers that imports Web Services Description Language 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <metadata>  
-      <wsdlImporters>  
-      <wsdlImporter type="string" />  
-   </wsdlImporters>  
+  <wsdlImporters>  
+    <wsdlImporter type="string" />  
+  </wsdlImporters>  
 </metadata>  
 ```  
   

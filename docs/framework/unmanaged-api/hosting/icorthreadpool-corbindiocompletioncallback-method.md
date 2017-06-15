@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CorBindIoCompletionCallback method [.NET Framework hosting]"
   - "ICorThreadpool::CorBindIoCompletionCallback method [.NET Framework hosting]"
 ms.assetid: 2b159225-f09c-42f1-aa7c-44087e121249
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

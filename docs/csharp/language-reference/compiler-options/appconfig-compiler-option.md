@@ -35,7 +35,7 @@ The **/appconfig** compiler option enables a C# application to specify the locat
   
 ## Syntax  
   
-```  
+```console  
 /appconfig:file  
 ```  
   
@@ -58,7 +58,7 @@ The **/appconfig** compiler option enables a C# application to specify the locat
 ## Example  
  The following example shows an app.config file that enables an application to have references to both the .NET Framework implementation and the .NET Framework for Silverlight implementation of any .NET Framework assembly that exists in both implementations. The **/appconfig** compiler option specifies the location of this app.config file.  
   
-```  
+```xml  
 <configuration>  
       <runtime>  
       <assemblyBinding>  
@@ -71,5 +71,5 @@ The **/appconfig** compiler option enables a C# application to specify the locat
   
 ## See Also  
  [.NET Framework Assembly Unification Overview](http://msdn.microsoft.com/en-us/8d8cc65e-031d-463b-bde3-2c6dc2e3bc48)   
- [\<supportPortability> Element](http://msdn.microsoft.com/library/6453ef66-19b4-41f3-b712-52d0c2abc9ca)   
+ [\<supportPortability> Element](../../../framework/configure-apps/file-schema/runtime/supportportability-element.md)   
  [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)

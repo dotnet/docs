@@ -59,7 +59,7 @@ httpcfg.exe set urlacl /u http://myhost:8000/ /a "O:AOG:DAD:(A;;RPWPCCDCLCSWRCWD
 netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user  
 ```  
   
- This command adds an URL reservation for the specified URL namespace for the DOMAIN\user account.  For more information on using the netsh command type “netsh http add urlacl” in a command-prompt and press enter.  
+ This command adds an URL reservation for the specified URL namespace for the DOMAIN\user account.  For more information on using the netsh command type "netsh http add urlacl" in a command-prompt and press enter.  
   
 ## Configuring a Firewall Exception  
  When self-hosting a WCF service that communicates over HTTP, an exception must be added to the firewall configuration to allow inbound connections using a particular URL. For more information, see [Open a port in Windows Firewall (Windows 7)](http://go.microsoft.com/fwlink/?LinkId=239961)  

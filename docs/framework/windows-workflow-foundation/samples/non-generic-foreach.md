@@ -2,7 +2,7 @@
 title: "Non-Generic ForEach | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -57,18 +57,18 @@ string[] names = { "bill", "steve", "ray" };
 DelegateInArgument<object> iterationVariable = new DelegateInArgument<object>() { Name = "iterationVariable" };  
   
 Activity sampleUsage =  
-    new ForEach  
-    {  
-       Values = new InArgument<IEnumerable>(c=> names),  
-       Body = new ActivityAction<object>   
-       {                          
-           Argument = iterationVariable,  
-           Handler = new WriteLine  
-           {  
-               Text = new InArgument<string>(env => string.Format("Hello {0}",                                                               iterationVariable.Get(env)))  
-           }  
-       }  
-   };  
+    new ForEach  
+    {  
+       Values = new InArgument<IEnumerable>(c=> names),  
+       Body = new ActivityAction<object>   
+       {                          
+           Argument = iterationVariable,  
+           Handler = new WriteLine  
+           {  
+               Text = new InArgument<string>(env => string.Format("Hello {0}",                                                               iterationVariable.Get(env)))  
+           }  
+       }  
+   };  
 ```  
   
 |Condition|Message|Severity|Exception Type|  

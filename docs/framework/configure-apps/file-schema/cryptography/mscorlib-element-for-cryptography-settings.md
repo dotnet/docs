@@ -2,7 +2,7 @@
 title: "&lt;mscorlib&gt; Element for Cryptography Settings | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,9 +34,8 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
   
 ## Syntax  
   
-```  
-  
-      <mscorlib>   
+```xml  
+      <mscorlib>   
 </mscorlib>  
 ```  
   
@@ -61,7 +60,7 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 ## Example  
  The following example shows how to use the **\<mscorlib>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=fullName> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

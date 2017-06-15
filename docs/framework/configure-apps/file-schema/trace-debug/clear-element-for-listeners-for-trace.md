@@ -2,7 +2,7 @@
 title: "&lt;clear&gt; Element for &lt;listeners&gt; for &lt;trace&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Clears the `Listeners` collection for trace.
   
 ## Syntax  
   
-```  
+```xml  
 <clear/>  
 ```  
   
@@ -71,7 +71,7 @@ Clears the `Listeners` collection for trace.
 ## Example  
  The following example shows how to use the `<clear>` element before using the `<add>` element to add the listener `console` to the `Listeners` collection for trace.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

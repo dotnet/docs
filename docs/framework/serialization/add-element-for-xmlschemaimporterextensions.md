@@ -31,8 +31,7 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
   
 ## Syntax  
   
-```  
-  
+```xml  
 <add name = "typeName" type="fully qualified type [,Version=version number] [,Culture=culture] [,PublicKeyToken= token]"/>  
 ```  
   
@@ -58,7 +57,7 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 ## Example  
  The following code example adds an extension type that the XmlSchemaImporter can use when mapping types.  
   
-```  
+```xml  
 <configuration>  
   <system.xml.serialization>  
     <xmlSchemaImporterExtensions>  

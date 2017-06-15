@@ -18,6 +18,8 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: f854b68f-009c-4ffb-89cd-ca874d1c0fb7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -31,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetEventMask2(  
         [out] DWORD* pdwEventsLow,  
         [out] DWORD* pdwEventsHigh  
 );  
-  
 ```  
   
 #### Parameters  

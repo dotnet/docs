@@ -26,7 +26,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Secure Coding Guidelines for Unmanaged Code
-Some library code needs to call into unmanaged code (for example, native code APIs, such as Win32). Because this means going outside the security perimeter for managed code, due caution is required. If your code is security-neutral, both your code and any code that calls it must have unmanaged code permission (<xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag> flag specified).  
+Some library code needs to call into unmanaged code (for example, native code APIs, such as Win32). Because this means going outside the security perimeter for managed code, due caution is required. If your code is security-neutral, both your code and any code that calls it must have unmanaged code permission (<xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> flag specified).  
   
  However, it is often unreasonable for your caller to have such powerful permissions. In such cases, your trusted code can be the go-between, similar to the managed wrapper or library code described in [Securing Wrapper Code](../../../docs/framework/misc/securing-wrapper-code.md). If the underlying unmanaged code functionality is totally safe, it can be directly exposed; otherwise, a suitable permission check (demand) is required first.  
   
@@ -41,7 +41,7 @@ Some library code needs to call into unmanaged code (for example, native code AP
 ## Using SuppressUnmanagedCodeSecurityAttribute  
  There is a performance aspect to asserting and then calling unmanaged code. For every such call, the security system automatically demands unmanaged code permission, resulting in a stack walk each time. If you assert and immediately call unmanaged code, the stack walk can be meaningless: it consists of your assert and your unmanaged code call.  
   
- A custom attribute called <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> can be applied to unmanaged code entry points to disable the normal security check that demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag> permission specified. Extreme caution must always be taken when doing this, because this action creates an open door into unmanaged code with no runtime security checks. It should be noted that even with **SuppressUnmanagedCodeSecurityAttribute** applied, there is a one-time security check that happens at just-in-time (JIT) compilation to ensure that the immediate caller has permission to call unmanaged code.  
+ A custom attribute called <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> can be applied to unmanaged code entry points to disable the normal security check that demands <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission specified. Extreme caution must always be taken when doing this, because this action creates an open door into unmanaged code with no runtime security checks. It should be noted that even with **SuppressUnmanagedCodeSecurityAttribute** applied, there is a one-time security check that happens at just-in-time (JIT) compilation to ensure that the immediate caller has permission to call unmanaged code.  
   
  If you use the **SuppressUnmanagedCodeSecurityAttribute**, check the following points:  
   

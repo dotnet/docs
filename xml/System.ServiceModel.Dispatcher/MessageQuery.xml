@@ -92,6 +92,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Evaluate&lt;TResult&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, runs a query against the message and returns a value that satisfies the query.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and is not permitted to examine the body; the other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message. Message headers are automatically buffered and can be queried without being consumed. However, if the body is to be queried, then the entire message must be buffered because an unbuffered message body can be consumed by the query.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Evaluate&lt;TResult&gt;">
       <MemberSignature Language="C#" Value="public abstract TResult Evaluate&lt;TResult&gt; (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TResult Evaluate&lt;TResult&gt;(class System.ServiceModel.Channels.Message message) cil managed" />
@@ -160,22 +177,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Evaluate&lt;TResult&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, runs a query against the message and returns a value that satisfies the query.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the two overloads is that one takes a <xref:System.ServiceModel.Channels.Message> parameter and is not permitted to examine the body; the other takes a <xref:System.ServiceModel.Channels.MessageBuffer> parameter and can examine any part of the message. Message headers are automatically buffered and can be queried without being consumed. However, if the body is to be queried, then the entire message must be buffered because an unbuffered message body can be consumed by the query.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

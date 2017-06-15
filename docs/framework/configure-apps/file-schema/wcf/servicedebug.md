@@ -2,7 +2,7 @@
 title: "&lt;serviceDebug&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,12 +26,11 @@ Specifies debugging and help information features for a [!INCLUDE[indigo1](../..
   
 ## Syntax  
   
-```  
-  
-<serviceDebug     httpHelpPageBinding=”String”    httpHelpPageBindingConfiguration=”String”  
+```xml  
+<serviceDebug     httpHelpPageBinding="String"    httpHelpPageBindingConfiguration="String"  
     httpHelpPageEnabled="Boolean"  
     httpHelpPageUrl="Uri"  
-    httpsHelpPageBinding=”String”    httpsHelpPageBindingConfiguration=”String”  
+    httpsHelpPageBinding="String"    httpsHelpPageBindingConfiguration="String"  
     httpsHelpPageEnabled="Boolean"  
     httpsHelpPageUrl="Uri"  
     includeExceptionDetailInFaults="Boolean" />  

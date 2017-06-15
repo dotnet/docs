@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -26,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains e-mail addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType> type. This information is then accessed by the field templates to modify how the data field is processed.  
+ The <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute enables you to mark fields by using a type that is more specific than the database intrinsic type. The type name is selected from the <xref:System.ComponentModel.DataAnnotations.DataType> enumeration type. For example, a string data field that contains e-mail addresses can be specified as the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> type. This information is then accessed by the field templates to modify how the data field is processed.  
   
  You use the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute for the following reasons:  
   
@@ -53,15 +54,15 @@
   
 -   It implements a metadata partial class and the associated metadata class.  
   
--   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType> enumerated value. This indicates to the Text.ascx field template that it should customize the display of e-mail addresses.  
+-   In the associated metadata class, it applies the <xref:System.ComponentModel.DataAnnotations.DataTypeAttribute> attribute to the EmailAddress data field by specifying the <xref:System.ComponentModel.DataAnnotations.DataType.EmailAddress> enumerated value. This indicates to the Text.ascx field template that it should customize the display of e-mail addresses.  
   
 -   It modifies the Text.ascx field template to customize the display of the EmailAddress data fields.  
   
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Customer.cs#1)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Customer.vb#1)]  
   
- <!-- TODO: review snippet reference [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)]  -->  
+ <!-- TODO: review snippet reference [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx#2)] -->
+ <!-- TODO: review snippet reference [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx#2)] -->   
   
  [!code-csharp[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/CS/Text.ascx.cs#3)]
  [!code-vb[System.ComponentModel.DataAnnotations.DataTypeAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.ComponentModel.DataAnnotations.DataTypeAttribute/VB/Text.ascx.vb#3)]  
@@ -86,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -124,6 +126,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -156,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -179,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -202,6 +207,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -225,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -256,6 +263,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

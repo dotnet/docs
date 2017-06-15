@@ -2,7 +2,7 @@
 title: "&lt;allowAccounts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,7 @@ Contains a collection of configuration elements that specify user accounts for p
   
 ## Syntax  
   
-```  
-  
+```xml  
 <allowAccounts>  
    <add securityIdentifier="String"/>  
 </allowAccounts>  

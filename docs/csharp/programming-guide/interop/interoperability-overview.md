@@ -43,13 +43,13 @@ The topic describes methods to enable interoperability between C# managed code a
 ## Platform Invoke  
  *Platform invoke* is a service that enables managed code to call unmanaged functions that are implemented in dynamic link libraries (DLLs), such as those in the Microsoft Win32 API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed.  
   
- For more information, see [Consuming Unmanaged DLL Functions](http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045) and [How to: Use Platform Invoke to Play a Wave File](../../../csharp/programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md).  
+ For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md) and [How to: Use Platform Invoke to Play a Wave File](../../../csharp/programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md).  
   
 > [!NOTE]
->  The [Common Language Runtime](http://msdn.microsoft.com/library/059a624e-f7db-4134-ba9f-08b676050482) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [.NET Framework Security](http://go.microsoft.com/fwlink/?LinkId=37122).  
+>  The [Common Language Runtime](../../../standard/clr.md) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [.NET Framework Security](http://go.microsoft.com/fwlink/?LinkId=37122).  
   
 ## C++ Interop  
- You can use C++ interop, also known as It Just Works (IJW), to wrap a native C++ class so that it can be consumed by code that is authored in C# or another .NET Framework language. To do this, you write C++ code to wrap a native DLL or COM component. Unlike other .NET Framework languages, [!INCLUDE[vcprvc](../../../csharp/programming-guide/interop/includes/vcprvc_md.md)] has interoperability support that enables managed and unmanaged code to be located in the same application and even in the same file. You then build the C++ code by using the **/clr** compiler switch to produce a managed assembly. Finally, you add a reference to the assembly in your C# project and use the wrapped objects just as you would use other managed classes.  
+ You can use C++ interop, also known as It Just Works (IJW), to wrap a native C++ class so that it can be consumed by code that is authored in C# or another .NET Framework language. To do this, you write C++ code to wrap a native DLL or COM component. Unlike other .NET Framework languages, [!INCLUDE[vcprvc](~/includes/vcprvc-md.md)] has interoperability support that enables managed and unmanaged code to be located in the same application and even in the same file. You then build the C++ code by using the **/clr** compiler switch to produce a managed assembly. Finally, you add a reference to the assembly in your C# project and use the wrapped objects just as you would use other managed classes.  
   
 ## Exposing COM Components to C#  
  You can consume a COM component from a C# project. The general steps are as follows:  
@@ -58,7 +58,7 @@ The topic describes methods to enable interoperability between C# managed code a
   
 2.  Add to the project a reference to the COM component or type library.  
   
-     When you add the reference, [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] uses the [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] adds to the project a reference to the generated assembly.  
+     When you add the reference, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds to the project a reference to the generated assembly.  
   
 3.  Create an instance of a class that is defined in the RCW. This, in turn, creates an instance of the COM object.  
   
@@ -71,11 +71,11 @@ The topic describes methods to enable interoperability between C# managed code a
   
 1.  Add interop attributes in the C# project.  
   
-     You can make an assembly COM visible by modifying [!INCLUDE[csprcs](../../../csharp/includes/csprcs_md.md)] project properties. For more information, see [Assembly Information Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box).  
+     You can make an assembly COM visible by modifying [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties. For more information, see [Assembly Information Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box).  
   
 2.  Generate a COM type library and register it for COM usage.  
   
-     You can modify [!INCLUDE[csprcs](../../../csharp/includes/csprcs_md.md)] project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] uses the [Regasm.exe (Assembly Registration Tool)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
+     You can modify [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Regasm.exe (Assembly Registration Tool)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
   
  For more information, see [Exposing .NET Framework Components to COM](http://msdn.microsoft.com/library/e42a65f7-1e61-411f-b09a-aca1bbce24c6) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
   

@@ -2,7 +2,7 @@
 title: "StackPanel | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,6 +45,6 @@ The <xref:System.Windows.Controls.StackPanel> element is used to stack child ele
 ## Related Sections  
  [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
   
- [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
  [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)

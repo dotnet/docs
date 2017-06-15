@@ -2,7 +2,7 @@
 title: "How to: Add Enhancements to ToolStripMenuItems | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -61,7 +61,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
   
 ### To add an image to a menu command  
   
--   Set the menu command's <xref:System.Windows.Forms.ToolStripItem.Image%2A> property to the name of the image. If the <xref:System.Windows.Forms.ToolStripItemDisplayStyle> property of this menu command is set to <xref:System.Windows.Forms.ToolStripItemDisplayStyle> or <xref:System.Windows.Forms.ToolStripItemDisplayStyle>, the image cannot be displayed.  
+-   Set the menu command's <xref:System.Windows.Forms.ToolStripItem.Image%2A> property to the name of the image. If the <xref:System.Windows.Forms.ToolStripItemDisplayStyle> property of this menu command is set to <xref:System.Windows.Forms.ToolStripItemDisplayStyle.Text> or <xref:System.Windows.Forms.ToolStripItemDisplayStyle.None>, the image cannot be displayed.  
   
 > [!NOTE]
 >  The image margin can also show a check mark if you so choose. Also, you can set the <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property of the image to `true`, and the image will appear with a hatched border around it at run time.  
@@ -87,9 +87,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
   
 -   After you define your <xref:System.Windows.Forms.MenuStrip> and the items it will contain, use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> or <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method to add the menu commands and <xref:System.Windows.Forms.ToolStripSeparator> controls to the <xref:System.Windows.Forms.MenuStrip> in the order you want.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     ' This code adds a top-level File menu to the MenuStrip.  
     Me.menuStrip1.Items.Add(New ToolStripMenuItem() _  
     {Me.fileToolStripMenuItem})  
@@ -101,12 +99,9 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
     ToolStripMenuItem() {Me.newToolStripMenuItem, _  
     Me.openToolStripMenuItem, Me.toolStripSeparator1, _  
     Me.saveToolStripMenuItem, Me.exitToolStripMenuItem})  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     // This code adds a top-level File menu to the MenuStrip.  
     this.menuStrip1.Items.Add(new ToolStripItem[]_  
     {this.fileToolStripMenuItem});  

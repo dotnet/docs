@@ -78,11 +78,11 @@ void SomeMethod()
   
 -   Not take part in a transaction at all. There is no ambient transaction as a result.  
   
- If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption>, and an ambient transaction is present, the scope joins that transaction. If, on the other hand, there is no ambient transaction, then the scope creates a new transaction, and become the root scope. This is the default value. When <xref:System.Transactions.TransactionScopeOption> is used, the code inside the scope does not need to behave differently whether it is the root or just joining the ambient transaction. It should operate identically in both cases.  
+ If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.Required>, and an ambient transaction is present, the scope joins that transaction. If, on the other hand, there is no ambient transaction, then the scope creates a new transaction, and become the root scope. This is the default value. When <xref:System.Transactions.TransactionScopeOption.Required> is used, the code inside the scope does not need to behave differently whether it is the root or just joining the ambient transaction. It should operate identically in both cases.  
   
- If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption>, it is always the root scope. It starts a new transaction, and its transaction becomes the new ambient transaction inside the scope.  
+ If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.RequiresNew>, it is always the root scope. It starts a new transaction, and its transaction becomes the new ambient transaction inside the scope.  
   
- If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption>, it never takes part in a transaction, regardless of whether an ambient transaction is present. A scope instantiated with this value always have **null** as its ambient transaction.  
+ If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.Suppress>, it never takes part in a transaction, regardless of whether an ambient transaction is present. A scope instantiated with this value always have **null** as its ambient transaction.  
   
  The above options are summarized in the following table.  
   
@@ -122,11 +122,11 @@ using(TransactionScope scope1 = new TransactionScope())
 }  
 ```  
   
- The example shows a code block without any ambient transaction creating a new scope (`scope1`) with <xref:System.Transactions.TransactionScopeOption>. The scope `scope1` is a root scope as it creates a new transaction (Transaction A) and makes Transaction A the ambient transaction. `Scope1` then creates three more objects, each with a different <xref:System.Transactions.TransactionScopeOption> value. For example, `scope2` is created with <xref:System.Transactions.TransactionScopeOption>, and since there is an ambient transaction, it joins the first transaction created by `scope1`. Note that `scope3` is the root scope of a new transaction, and that `scope4` has no ambient transaction.  
+ The example shows a code block without any ambient transaction creating a new scope (`scope1`) with <xref:System.Transactions.TransactionScopeOption.Required>. The scope `scope1` is a root scope as it creates a new transaction (Transaction A) and makes Transaction A the ambient transaction. `Scope1` then creates three more objects, each with a different <xref:System.Transactions.TransactionScopeOption> value. For example, `scope2` is created with <xref:System.Transactions.TransactionScopeOption.Required>, and since there is an ambient transaction, it joins the first transaction created by `scope1`. Note that `scope3` is the root scope of a new transaction, and that `scope4` has no ambient transaction.  
   
- Although the default and most commonly used value of <xref:System.Transactions.TransactionScopeOption> is <xref:System.Transactions.TransactionScopeOption>, each of the other values has its unique purpose.  
+ Although the default and most commonly used value of <xref:System.Transactions.TransactionScopeOption> is <xref:System.Transactions.TransactionScopeOption.Required>, each of the other values has its unique purpose.  
   
- <xref:System.Transactions.TransactionScopeOption> is useful when you want to preserve the operations performed by the code section, and do not want to abort the ambient transaction if the operations fail. For example, when you want to perform logging or audit operations, or when you want to publish events to subscribers regardless of whether your ambient transaction commits or aborts. This value allows you to have a non-transactional code section inside a transaction scope, as shown in the following example.  
+ <xref:System.Transactions.TransactionScopeOption.Suppress> is useful when you want to preserve the operations performed by the code section, and do not want to abort the ambient transaction if the operations fail. For example, when you want to perform logging or audit operations, or when you want to publish events to subscribers regardless of whether your ambient transaction commits or aborts. This value allows you to have a non-transactional code section inside a transaction scope, as shown in the following example.  
   
 ```csharp  
 using(TransactionScope scope1 = new TransactionScope())  
@@ -145,7 +145,6 @@ using(TransactionScope scope1 = new TransactionScope())
      {}  
    //Rest of scope1  
 }  
-  
 ```  
   
 ### Voting inside a nested scope  
@@ -159,11 +158,11 @@ using(TransactionScope scope1 = new TransactionScope())
  When a scope joins an ambient transaction but specifies a smaller timeout than the one the ambient transaction is set to, the new, shorter timeout is enforced on the <xref:System.Transactions.TransactionScope> object, and the scope must end within the nested time specified, or the transaction is automatically aborted. If the nested scope's timeout is more than that of the ambient transaction, it has no effect.  
   
 ## Setting the TransactionScope isolation level  
- Some of the overloaded constructors of <xref:System.Transactions.TransactionScope> accept a structure of type <xref:System.Transactions.TransactionOptions> to specify an isolation level, in addition to a timeout value. By default, the transaction executes with isolation level set to <xref:System.Transactions.IsolationLevel>. Selecting an isolation level other than <xref:System.Transactions.IsolationLevel> is commonly used for read-intensive systems. This requires a solid understanding of transaction processing theory and the semantics of the transaction itself, the concurrency issues involved, and the consequences for system consistency.  
+ Some of the overloaded constructors of <xref:System.Transactions.TransactionScope> accept a structure of type <xref:System.Transactions.TransactionOptions> to specify an isolation level, in addition to a timeout value. By default, the transaction executes with isolation level set to <xref:System.Transactions.IsolationLevel.Serializable>. Selecting an isolation level other than <xref:System.Transactions.IsolationLevel.Serializable> is commonly used for read-intensive systems. This requires a solid understanding of transaction processing theory and the semantics of the transaction itself, the concurrency issues involved, and the consequences for system consistency.  
   
  In addition, not all resource managers support all levels of isolation, and they may elect to take part in the transaction at a higher level than the one configured.  
   
- Every isolation level besides <xref:System.Transactions.IsolationLevel> is susceptible to inconsistency resulting from other transactions accessing the same information. The difference between the different isolation levels is in the way read and write locks are used. A lock can be held only when the transaction accesses the data in the resource manager, or it can be held until the transaction is committed or aborted. The former is better for throughput, the latter for consistency. The two kinds of locks and the two kinds of operations (read/write) give four basic isolation levels. See <xref:System.Transactions.IsolationLevel> for more information.  
+ Every isolation level besides <xref:System.Transactions.IsolationLevel.Serializable> is susceptible to inconsistency resulting from other transactions accessing the same information. The difference between the different isolation levels is in the way read and write locks are used. A lock can be held only when the transaction accesses the data in the resource manager, or it can be held until the transaction is committed or aborted. The former is better for throughput, the latter for consistency. The two kinds of locks and the two kinds of operations (read/write) give four basic isolation levels. See <xref:System.Transactions.IsolationLevel> for more information.  
   
  When using nested <xref:System.Transactions.TransactionScope> objects, all nested scopes must be configured to use exactly the same isolation level if they want to join the ambient transaction. If a nested <xref:System.Transactions.TransactionScope> object tries to join the ambient transaction yet it specifies a different isolation level, an <xref:System.ArgumentException> is thrown.  
   

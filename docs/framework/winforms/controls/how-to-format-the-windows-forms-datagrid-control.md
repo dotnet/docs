@@ -2,7 +2,7 @@
 title: "How to: Format the Windows Forms DataGrid Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -108,7 +108,6 @@ manager: "wpickett"
        ' the GridTableStylesCollection.   
        myDataGrid.TableStyles.Add(TSAuthors)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -132,7 +131,6 @@ manager: "wpickett"
        // the GridTableStylesCollection.   
        dataGrid1.TableStyles.Add(TSAuthors);  
     }  
-  
     ```  
   
     ```cpp  

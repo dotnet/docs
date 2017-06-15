@@ -254,6 +254,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetContract">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the contract description for a specified type of contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetContract">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType) cil managed" />
@@ -598,23 +616,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetContract">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the contract description for a specified type of contract.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,7 +2,7 @@
 title: "ICorDebugModuleDebugEvent::GetModule Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,11 +23,9 @@ Gets the merged module that was just loaded or unloaded.
 ## Syntax  
   
 ```  
-  
 HRESULT GetModule(  
    [out]ICorDebugModule **ppModule  
 );  
-  
 ```  
   
 #### Parameters  

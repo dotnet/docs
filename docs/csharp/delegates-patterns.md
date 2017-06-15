@@ -1,5 +1,5 @@
 ---
-title: Common Patterns for Delegates
+title: Common Patterns for Delegates | Microsoft Docs
 description: Common Patterns for Delegates
 keywords: .NET, .NET Core
 author: BillWagner

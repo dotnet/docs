@@ -44,7 +44,6 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
     var queryB = from num in numberList.AsParallel()  
                  where num % 2 > 0  
                  select num; //not as good for PLINQ  
-  
     ```  
   
 2.  The number of logical cores on the system (degree of parallelism).  
@@ -70,7 +69,7 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
 ## When PLINQ Chooses Sequential Mode  
  PLINQ will always attempt to execute a query at least as fast as the query would run sequentially. Although PLINQ does not look at how computationally expensive the user delegates are, or how big the input source is, it does look for certain query "shapes." Specifically, it looks for query operators or combinations of operators that typically cause a query to execute more slowly in parallel mode. When it finds such shapes, PLINQ by default falls back to sequential mode.  
   
- However, after measuring a specific query's performance, you may determine that it actually runs faster in parallel mode. In such cases you can use the <xref:System.Linq.ParallelExecutionMode?displayProperty=fullName> flag via the <xref:System.Linq.ParallelEnumerable.WithExecutionMode%2A> method to instruct PLINQ to parallelize the query. For more information, see [How to: Specify the Execution Mode in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
+ However, after measuring a specific query's performance, you may determine that it actually runs faster in parallel mode. In such cases you can use the <xref:System.Linq.ParallelExecutionMode.ForceParallelism?displayProperty=fullName> flag via the <xref:System.Linq.ParallelEnumerable.WithExecutionMode%2A> method to instruct PLINQ to parallelize the query. For more information, see [How to: Specify the Execution Mode in PLINQ](../../../docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
   
  The following list describes the query shapes that PLINQ by default will execute in sequential mode:  
   

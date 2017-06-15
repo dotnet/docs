@@ -2,7 +2,7 @@
 title: "Key-Frame Animations Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -275,7 +275,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
   
     3.  Otherwise, the total interpolation time is 1 second.  
   
-3.  Use the total interpolation time value to resolve <xref:System.Windows.Media.Animation.KeyTimeType> <xref:System.Windows.Media.Animation.KeyTime> values.  
+3.  Use the total interpolation time value to resolve <xref:System.Windows.Media.Animation.KeyTimeType.Percent> <xref:System.Windows.Media.Animation.KeyTime> values.  
   
 4.  Resolve last key frame, if it wasn't already resolved in the previous steps. If the <xref:System.Windows.Media.Animation.KeyTime> of the last key frame is <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A> or <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>, its resolved time will be equal to the total interpolation time.  
   

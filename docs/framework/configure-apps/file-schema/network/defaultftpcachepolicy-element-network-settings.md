@@ -2,7 +2,7 @@
 title: "&lt;defaultFtpCachePolicy&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Describes whether FTP caching is active and describes the default caching policy
   
 ## Syntax  
   
-```  
+```xml  
 < defaultFtpCachePolicy  
   policyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
 />  
@@ -78,7 +78,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ## Example  
  The following code example shows how to specify an FTP caching policy of `NoCacheNoStore`.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <requestCaching>  

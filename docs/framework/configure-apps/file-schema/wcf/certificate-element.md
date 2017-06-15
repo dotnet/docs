@@ -2,7 +2,7 @@
 title: "&lt;certificate&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
   
 ## Syntax  
   
-```  
-  
+```xml  
 <certificate findValue="String"   
   
 storeLocation="LocalMachine/CurrentUser"  
@@ -67,7 +66,7 @@ storeLocation="LocalMachine/CurrentUser"
 ## Example  
  The following code specifies how to find the certificate used in a peer-to-peer scenario.  
   
-```  
+```xml  
 <behaviors>  
  <endpointBehaviors>  
   <behavior name="MyEndpointBehavior">  

@@ -1,6 +1,6 @@
 ﻿//<SnippetAddInViewCode>
-using System.AddIn.Pipeline; // AddInBaseAttribute
-using System.Windows; // FrameworkElement
+using System.AddIn.Pipeline;
+using System.Windows;
 
 namespace AddInViews
 {

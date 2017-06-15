@@ -2,7 +2,7 @@
 title: "How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +44,6 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
            ToolBarButton1.Pushed = False  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -64,7 +63,6 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
           toolBarButton1.Pushed = false;  
        }  
     }  
-  
     ```  
   
     ```cpp  

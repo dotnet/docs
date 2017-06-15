@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.Type
 author: "stevehoag"
 ms.author: "shoag"

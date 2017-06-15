@@ -2,7 +2,7 @@
 title: "ICorDebugMutableDataTarget::SetThreadContext Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,11 +23,9 @@ Sets the context (register values) for a thread.
 ## Syntax  
   
 ```  
-  
 HRESULT SetThreadContext(  
    [in] DWORD dwThreadID,  
    [in] ULONG32 contextSize,   [in, size_is(contextSize)] const BYTE * pContext);  
-  
 ```  
   
 #### Parameters  

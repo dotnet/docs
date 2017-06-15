@@ -2,7 +2,7 @@
 title: "Extract WF Data using Tracking | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -68,13 +68,13 @@ This sample demonstrates how to use workflow tracking to extract workflow variab
   
      Custom tracking records can carry payload data defined within this activity. Subscribing for custom tracking records in a tracking profile allows the extraction of the payload within the tracking record. The custom tracking records can be extracted with custom a <xref:System.Activities.Tracking.TrackingQuery>. The following code example is a tracking profile that extracts a custom tracking record along with its payload.  
   
-    ```  
+    ```xml  
     <customTrackingQuery name="QuoteLookupEvent" activityName="GetStockPrice"/>  
     ```  
   
  The sample demonstrates the extraction of a variables, arguments, custom records and adding annotations using a profile specified in a Web.config. Tracking is enabled on the sample workflow service by adding an `<etwTracking>` behavior element. The following code example enables tracking for the `ExtractWorkflowVariables` tracking profile.  
   
-```  
+```xml  
 <serviceBehaviors>  
      <behavior>  
                <etwTracking profileName="ExtractWorkflowVariables"/>  

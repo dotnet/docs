@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;defaultPorts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ A default communications endpoint that the client application listens to.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <useRequestHeadersForMetadataAddress>   <defaultPorts>      <add port="Integer" scheme="String" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
 ```  
   

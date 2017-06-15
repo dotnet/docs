@@ -2,7 +2,7 @@
 title: "Weakly-typed JSON Serialization Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ When serializing a user-defined type to a given wire format, or deserializing a 
   
  For example, a public Web service API returns the following JSON object, which describes some information about a user of the service.  
   
-```  
+```json  
 {"personal": {"name": "Paul", "age": 23, "height": 1.7, "isSingle": true, "luckyNumbers": [5,17,21]}, "favoriteBands": ["Band ABC", "Band XYZ"]}  
 ```  
   
@@ -60,7 +60,6 @@ When serializing a user-defined type to a given wire format, or deserializing a 
      [DataMember]  
      public int[] luckyNumbers;  
  }  
-  
 ```  
   
  This can be cumbersome, especially if the client has to handle more than one type of JSON object.  
@@ -103,7 +102,6 @@ string[] favoriteBands = {
         [WebGet(ResponseFormat = WebMessageFormat.Json)]  
         Message GetMemberProfile();  
     }  
-  
 ```  
   
  The `JsonObject` is then instantiated as shown in the following code.  
@@ -116,7 +114,6 @@ XmlDictionaryReader reader = channel.GetMemberProfile().GetReaderAtBodyContents(
   
 // Go through the Json as though it is a dictionary. There is no need to map it to a .NET CLR type.  
 JsonObject json = new JsonObject(reader);  
-  
 ```  
   
  The `JsonObject` constructor takes a <xref:System.Xml.XmlDictionaryReader>, which is obtained through the <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> method. The reader contains an XML representation of the JSON message received by the client. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the topic [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  

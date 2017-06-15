@@ -340,7 +340,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.IsInactiveSelectionHighlightEnabledProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -392,7 +392,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentPageViewer.IsSelectionActiveProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -1071,7 +1071,6 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentPageViewer>, sets the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity%2A> property to 0.7.  
   
- <!-- TODO: review snippet reference [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/samples/snippets/xaml/VS_Snippets_Wpf/flowdocpgvwselbrushsnippet/xaml/window1.xaml#selectionbrush)]  -->
  [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocpgvwselbrushsnippet/CS/window1.xaml#selectionbrush)]  
   
  ]]></format>
@@ -1121,7 +1120,6 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentPageViewer>, sets the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentPageViewer.SelectionOpacity%2A> property to 0.7.  
   
- <!-- TODO: review snippet reference [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/samples/snippets/xaml/VS_Snippets_Wpf/flowdocpgvwselbrushsnippet/xaml/window1.xaml#selectionbrush)]  -->
  [!code-xml[FlowDocPgVwSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocpgvwselbrushsnippet/CS/window1.xaml#selectionbrush)]  
   
  ]]></format>

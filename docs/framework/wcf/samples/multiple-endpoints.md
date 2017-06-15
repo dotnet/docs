@@ -2,7 +2,7 @@
 title: "Multiple Endpoints | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ The Multiple Endpoints sample demonstrates how to configure multiple endpoints o
   
  The service Web.config file has been modified to define two endpoints, each supporting the same `ICalculator` contract, but at different addresses using different bindings. The first endpoint is defined at the base address using a `basicHttpBinding` binding, which does not have security enabled. The second endpoint is defined at {baseaddress}/secure using a `wsHttpBinding` binding, which is secure by default, using WS-Security with Windows authentication.  
   
-```  
+```xml  
 <service   
     name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">  
@@ -44,12 +44,11 @@ The Multiple Endpoints sample demonstrates how to configure multiple endpoints o
             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
   ...  
 </service>  
-  
 ```  
   
  Both endpoints are also configured on the client. These endpoints are given names so that the caller can pass the desired endpoint name into the constructor of the client.  
   
-```  
+```xml  
 <client>  
   <!-- Passing "basic" into the constructor of the CalculatorClient  
        class selects this endpoint.-->  
@@ -93,7 +92,6 @@ static void Main()
     Console.WriteLine("Press <ENTER> to terminate client.");  
     Console.ReadLine();  
 }  
-  
 ```  
   
  When you run the client, interactions with both endpoints are displayed.  

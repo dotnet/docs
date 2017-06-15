@@ -2,7 +2,7 @@
 title: "&lt;msmqTransport&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
   
 ## Syntax  
   
-```  
-  
+```xml  
 <msmqTransport>  
     customDeadLetterQueue="Uri"  
     deadLetterQueue="Custom/None/System"  

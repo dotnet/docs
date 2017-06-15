@@ -1852,6 +1852,29 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InitOutputCache">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the output cache for the current page request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be used directly from your code. To enable and manipulate output caching for a page, use one of these approaches:  
+  
+-   Set options declaratively using the  directive in the .aspx file.  
+  
+-   Use the methods and properties of the <xref:System.Web.HttpCachePolicy> class, which is exposed by the `Response.Cache` object in the page's code.  
+  
+ For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InitOutputCache">
       <MemberSignature Language="C#" Value="protected virtual void InitOutputCache (System.Web.UI.OutputCacheParameters cacheSettings);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitOutputCache(class System.Web.UI.OutputCacheParameters cacheSettings) cil managed" />
@@ -3730,7 +3753,7 @@
 ## Remarks  
  If you are developing a custom control that deals with potentially sensitive information, call the <xref:System.Web.UI.Page.RegisterRequiresViewStateEncryption%2A> method to register the control with the page and ensure view state for the control is encrypted.  
   
- The entire page state will be encrypted if the <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> is set to <xref:System.Web.UI.ViewStateEncryptionMode> or <xref:System.Web.UI.ViewStateEncryptionMode>.  
+ The entire page state will be encrypted if the <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> is set to <xref:System.Web.UI.ViewStateEncryptionMode.Auto> or <xref:System.Web.UI.ViewStateEncryptionMode.Always>.  
   
    
   
@@ -3742,7 +3765,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" /> method must be called before or during the page <see langword="PreRender" />phase in the page life cycle.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" /> method must be called before or during the page <see langword="PreRender" /> phase in the page life cycle.</exception>
       </Docs>
     </Member>
     <Member MemberName="RegisterStartupScript">
@@ -4043,15 +4066,11 @@
 ## Remarks  
  If a page is running in response to a request made through ASP.NET routing, this property provides access to the URL parameter values that were passed as route data. If the page runs in response to a physical URL instead of a route URL, this property is `null`. The following example shows how to extract the value of a URL parameter that is named `year`.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim year As Integer = Convert.ToInt32(Page.RouteData.Values("year"))  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 int year = Convert.ToInt32(Page.RouteData.Values["year"])  
 ```  
   
@@ -4684,6 +4703,23 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryUpdateModel&lt;TModel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the specified model instance using values from a value provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryUpdateModel&lt;TModel&gt;">
       <MemberSignature Language="C#" Value="public virtual bool TryUpdateModel&lt;TModel&gt; (TModel model) where TModel : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryUpdateModel&lt;class TModel&gt;(!!TModel model) cil managed" />
@@ -4887,6 +4923,23 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Web.UI.Control" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateModel&lt;TModel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the specified model instance using values from a value provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UpdateModel&lt;TModel&gt;">
       <MemberSignature Language="C#" Value="public virtual void UpdateModel&lt;TModel&gt; (TModel model) where TModel : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateModel&lt;class TModel&gt;(!!TModel model) cil managed" />
@@ -5125,7 +5178,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value <xref:System.Web.UI.ValidateRequestMode> is not used in the <xref:System.Web.UI.Page> class because there is nothing to inherit from.  
+ The value <xref:System.Web.UI.ValidateRequestMode.Inherit> is not used in the <xref:System.Web.UI.Page> class because there is nothing to inherit from.  
   
  ]]></format>
         </remarks>
@@ -5254,7 +5307,6 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
 ```vb  
 <%@ Page Language="VB" ViewStateEncryptionMode="Always" %>  
-  
 ```  
   
 ```csharp  
@@ -5267,7 +5319,6 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 <system.web>  
   <pages viewStateEncryptionMode="Always" />  
 </system.web>  
-  
 ```  
   
 ```csharp  
@@ -5281,7 +5332,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value set is not a member of the <see cref="T:System.Web.UI.ViewStateEncryptionMode" /> enumeration.</exception>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.ViewStateEncryptionMode" /> property can be set only in or before the page <see langword="PreRender" />phase in the page life cycle.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.Page.ViewStateEncryptionMode" /> property can be set only in or before the page <see langword="PreRender" /> phase in the page life cycle.</exception>
       </Docs>
     </Member>
     <Member MemberName="ViewStateUserKey">
@@ -5354,62 +5405,5 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="UpdateModel&lt;TModel&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates the specified model instance using values from a value provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InitOutputCache">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the output cache for the current page request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not intended to be used directly from your code. To enable and manipulate output caching for a page, use one of these approaches:  
-  
--   Set options declaratively using the  directive in the .aspx file.  
-  
--   Use the methods and properties of the <xref:System.Web.HttpCachePolicy> class, which is exposed by the `Response.Cache` object in the page's code.  
-  
- For more information, see [Caching ASP.NET Pages](http://msdn.microsoft.com/library/e9666a1b-88df-4931-af0b-a754fc65660b).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryUpdateModel&lt;TModel&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates the specified model instance using values from a value provider.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For a tutorial series on using model binding with Web Forms, see [Model Binding and Web Forms](http://go.microsoft.com/fwlink/?LinkId=286117).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

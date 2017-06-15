@@ -156,7 +156,7 @@ Function DoWork(ByVal data As String, ByRef inout As String, _out outonly As out
  When using the task-based model, simply call the operation using the await keyword as shown in the following code snippet.  
   
 ```  
-await simpleServiceClient.SampleMethodTaskAsync(“hello, world”);  
+await simpleServiceClient.SampleMethodTaskAsync("hello, world");  
 ```  
   
  Using the event-based asynchronous pattern only requires adding an event handler to receive a notification of the response -- and the resulting event is raised on the user interface thread automatically. To use this approach, specify both the **/async** and **/tcv:Version35** command options with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), as in the following example.  

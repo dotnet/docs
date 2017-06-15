@@ -2,7 +2,7 @@
 title: "&lt;legacyCorruptedStateExceptionsPolicy&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether the common language runtime allows managed code to catch acces
   
 ## Syntax  
   
-```  
+```xml  
 <legacyCorruptedStateExceptionsPolicy enabled="true|false"/>  
 ```  
   
@@ -78,7 +78,7 @@ Specifies whether the common language runtime allows managed code to catch acces
 ## Example  
  The following example shows how to specify that the application should revert to the behavior before the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], and catch all corrupting state exception failures.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <legacyCorruptedStateExceptionsPolicy enabled="true" />  

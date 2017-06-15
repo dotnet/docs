@@ -2,7 +2,7 @@
 title: "&lt;startup&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ Specifies common language runtime startup information.
   
 ## Syntax  
   
-```  
+```xml  
 <startup useLegacyV2RuntimeActivationPolicy="true|false" >   
 </startup>  
 ```  
@@ -83,7 +83,7 @@ Specifies common language runtime startup information.
 ## Example  
  The following example shows how to specify the runtime version in a configuration file.  
   
-```  
+```xml  
 <!-- When used with version 1.0 of the .NET Framework runtime -->  
 <configuration>  
    <startup>  

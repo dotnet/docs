@@ -2,7 +2,7 @@
 title: "&lt;forcePerformanceCounterUniqueSharedMemoryReads&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether PerfCounter.dll uses the CategoryOptions registry setting in a
   
 ## Syntax  
   
-```  
+```xml  
 <forcePerformanceCounterUniqueSharedMemoryReads   
 enabled="true|false"/>  
 ```  
@@ -80,7 +80,7 @@ enabled="true|false"/>
 ## Example  
  The following example shows how to specify that PerfCounter.dll should reference the CategoryOptions registry entry to determine whether it should use category-specific shared memory.  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <forcePerformanceCounterUniqueSharedMemoryReads enabled="true"/>  

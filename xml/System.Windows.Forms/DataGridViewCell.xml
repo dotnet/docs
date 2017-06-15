@@ -186,9 +186,9 @@
 ## Remarks  
  The default width of the cell border is one pixel. Use the following <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle> values to modify the width of the border:  
   
--   The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle> value denotes a width of 0 pixels.  
+-   The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.None> value denotes a width of 0 pixels.  
   
--   The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle> or <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle> values increase the default width by 1 pixel.  
+-   The <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble> or <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble> values increase the default width by 1 pixel.  
   
  In addition, if the <xref:System.Windows.Forms.DataGridViewRow.DividerHeight%2A> property is set for the cell's owning row, the rectangle's height is increased by the value of <xref:System.Windows.Forms.DataGridViewRow.DividerHeight%2A>. If the <xref:System.Windows.Forms.DataGridViewColumn.DividerWidth%2A> property is set for the cell's owning column, the rectangle's width will be increased by the value of <xref:System.Windows.Forms.DataGridViewColumn.DividerWidth%2A>.  
   
@@ -636,7 +636,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -1205,7 +1205,7 @@
   
  If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
   
- Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
+ Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value.  
   
  ]]></format>
         </remarks>
@@ -1314,7 +1314,7 @@
   
  If formatting is unsuccessful, the <xref:System.Windows.Forms.DataGridView.DataError> event occurs. If there is no handler for this event or the handler sets the <xref:System.Windows.Forms.DataGridViewDataErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, an exception is thrown.  
   
- Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
+ Derived classes that override this method will typically return a string representation of the cell value if the `context` argument includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value.  
   
  ]]></format>
         </remarks>
@@ -3556,7 +3556,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property is displayed as the cell ToolTip when the mouse pointer is over the cell and the property value is not <xref:System.String>. If the value of this property is <xref:System.String>, the cell will display a ToolTip containing the value of the cell if the value is truncated in the cell display; otherwise, the cell will not display a ToolTip. You can also prevent the display of a ToolTip by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=fullName> property to `false`.  
+ The value of this property is displayed as the cell ToolTip when the mouse pointer is over the cell and the property value is not <xref:System.String.Empty>. If the value of this property is <xref:System.String.Empty>, the cell will display a ToolTip containing the value of the cell if the value is truncated in the cell display; otherwise, the cell will not display a ToolTip. You can also prevent the display of a ToolTip by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=fullName> property to `false`.  
   
  When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property returns the previously specified value or its default value of <xref:System.String.Empty>.  
   

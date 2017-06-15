@@ -2,7 +2,7 @@
 title: "Writing DataSet Contents as XML Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,19 +48,16 @@ string xmlDS = custDS.GetXml();
   
 ```vb  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema)  
-  
 ```  
   
 ```csharp  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema);  
-  
 ```  
   
 ```vb  
 Dim xmlSW As System.IO.StreamWriter = New System.IO.StreamWriter("Customers.xml")  
 custDS.WriteXml(xmlSW, XmlWriteMode.WriteSchema)  
 xmlSW.Close()  
-  
 ```  
   
 ```csharp  

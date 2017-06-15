@@ -79,10 +79,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When set to <xref:System.ServiceModel.Web.WebMessageBodyStyle>, the result of the service operation is written directly to the body of the response message.  
+ When set to <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare>, the result of the service operation is written directly to the body of the response message.  
   
 > [!NOTE]
->  Operations that take a <xref:System.ServiceModel.Channels.Message> and return void are handled specially by the formatters. The formatters do not emit the wrapper name in the response even if <xref:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle%2A> is set to <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
+>  Operations that take a <xref:System.ServiceModel.Channels.Message> and return void are handled specially by the formatters. The formatters do not emit the wrapper name in the response even if <xref:System.ServiceModel.Web.WebInvokeAttribute.BodyStyle%2A> is set to <xref:System.ServiceModel.Web.WebMessageBodyStyle.Wrapped>.  
   
    
   

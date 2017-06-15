@@ -104,7 +104,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContextMenu>|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.ClosedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.ContextMenu.Placement%2A> property must be set to <xref:System.Windows.Controls.Primitives.PlacementMode> for the callback delegate to be used.  
+ The <xref:System.Windows.Controls.ContextMenu.Placement%2A> property must be set to <xref:System.Windows.Controls.Primitives.PlacementMode.Custom> for the callback delegate to be used.  
   
  The <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback> delegate returns an array of possible points that are defined with respect to the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>. When the context menu is displayed, a point is chosen that maximizes the amount of the <xref:System.Windows.Controls.ToolTip> window that is visible.  
   
@@ -424,7 +424,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContextMenu>|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.IsOpenProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
    
@@ -687,7 +687,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property when the <xref:System.Windows.Controls.ContextMenu> opens. If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the mouse, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode>.  If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the keyboard, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode>.  If you want to change the position of the <xref:System.Windows.Controls.ContextMenu>, set the <xref:System.Windows.Controls.ContextMenuService.Placement%2A?displayProperty=fullName> property on the <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  
+ When the <xref:System.Windows.Controls.ContextMenu> is assigned to the <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.ContextMenu%2A?displayProperty=fullName> property, the <xref:System.Windows.Controls.ContextMenuService> changes this value of this property when the <xref:System.Windows.Controls.ContextMenu> opens. If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the mouse, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode.MousePoint>.  If the user opens the <xref:System.Windows.Controls.ContextMenu> by using the keyboard, <xref:System.Windows.Controls.ContextMenu.Placement%2A> is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Center>.  If you want to change the position of the <xref:System.Windows.Controls.ContextMenu>, set the <xref:System.Windows.Controls.ContextMenuService.Placement%2A?displayProperty=fullName> property on the <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  
   
  You can position a <xref:System.Windows.Controls.ContextMenu> by setting the <xref:System.Windows.Controls.ContextMenu.PlacementTarget%2A>, <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenu.Placement%2A>, <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffsetProperty> properties.  These properties behave the same as they do for a <xref:System.Windows.Controls.Primitives.Popup>. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
@@ -928,7 +928,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContextMenu>|  
+|Identifier field|<xref:System.Windows.Controls.ContextMenu.StaysOpenProperty>|  
 |Metadata properties set to `true`|None|  
   
    

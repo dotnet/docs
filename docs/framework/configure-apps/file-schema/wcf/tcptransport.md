@@ -2,7 +2,7 @@
 title: "&lt;tcpTransport&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <tcpTransport   
       channelInitializationTimeout="TimeSpan"   
       connectionBufferSize="Integer"   
@@ -47,10 +46,10 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
       teredoEnabled="Boolean"  
       transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse" >  
       <connectionPoolSettings  
-            groupName=”String”  
+            groupName="String"  
             idleTimeout"TimeSpan"  
             leaseTimeout="TimeSpan"  
-            maxOutboundConnectionsPerEndpopint=”Integer” />  
+            maxOutboundConnectionsPerEndpopint="Integer" />  
 </tcpTransport>  
 ```  
   

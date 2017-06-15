@@ -2,7 +2,7 @@
 title: "Circular Tracing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,7 +31,7 @@ This sample demonstrates the implementation of a circular buffer trace listener.
 ## Configuration  
  A service can be configured to use the Circular Buffer Trace Listener by adding the following code for a listener and source elements. The max file size is specified by setting the `maxFileSizeKB` attribute in the circular trace listener's configuration. This is demonstrated in the following code.  
   
-```  
+```xml  
 <system.diagnostics>  
   <sources>  
     <source name="System.ServiceModel" switchValue="Information,ActivityTracing" propagateActivity="true">  
@@ -46,7 +46,6 @@ This sample demonstrates the implementation of a circular buffer trace listener.
   </sharedListeners>  
   <trace autoflush="true" />  
 </system.diagnostics>  
-  
 ```  
   
 #### To set up, build, and run the sample  

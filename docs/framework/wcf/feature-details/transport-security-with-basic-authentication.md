@@ -2,7 +2,7 @@
 title: "Transport Security with Basic Authentication | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +46,7 @@ The following illustration shows a [!INCLUDE[indigo1](../../../../includes/indig
 ## Configuration  
  The following configures a service to use basic authentication with transport-level security:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <system.serviceModel>  
@@ -89,7 +89,7 @@ The following illustration shows a [!INCLUDE[indigo1](../../../../includes/indig
 > [!NOTE]
 >  You cannot use configuration to set the user name and password. The configuration shown here must be augmented using code to set the user name and password.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

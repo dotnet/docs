@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetThreadContext method [.NET Framework profiling]"
   - "GetThreadContext method, ICorProfilerInfo interface [.NET Framework profiling]"
 ms.assetid: 79446216-4b8b-484c-8fe3-e87dbf9df2fd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

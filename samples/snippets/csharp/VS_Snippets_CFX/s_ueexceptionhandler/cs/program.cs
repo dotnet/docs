@@ -3,7 +3,7 @@
 
 // <snippet0>
 using System;
-using System.ServiceModel.Dispatcher; // ExceptionHandler
+using System.ServiceModel.Dispatcher;
 
 namespace CS
 {

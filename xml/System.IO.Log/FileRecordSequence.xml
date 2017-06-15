@@ -158,6 +158,26 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a record sequence, appends record to it, and finally reads the records.  
+  
+ [!code-csharp[IRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#0)]
+ [!code-vb[IRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Append">
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
@@ -189,7 +209,7 @@
 ## Remarks  
  Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
    
   
@@ -240,15 +260,15 @@
 ## Remarks  
  Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
    
   
 ## Examples  
  The following example shows how you can create a record sequence with this method.  
   
- <!-- TODO: review snippet reference [!code-csharp[IRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[IRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#3)]  -->  
+ [!code-csharp[IRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#3)] 
+ [!code-vb[IRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#3)]   
   
  ]]></format>
         </remarks>
@@ -296,7 +316,7 @@
   
  The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -347,7 +367,7 @@
   
  The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -436,7 +456,7 @@
   
  Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -486,7 +506,7 @@
   
  Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -540,7 +560,7 @@
   
  The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -597,7 +617,7 @@
   
  The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
   
- Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -701,7 +721,7 @@
   
  The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
   
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called.  
   
@@ -762,7 +782,7 @@
   
  The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
   
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called.  
   
@@ -1346,7 +1366,7 @@
   
  The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
   
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1404,7 +1424,7 @@
   
  The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
   
- Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions.ForceFlush> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1515,6 +1535,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteRestartArea">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteRestartArea">
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (ArraySegment&lt;byte&gt; data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data) cil managed" />
@@ -1819,44 +1858,5 @@
         <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteRestartArea">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Append">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a record sequence, appends record to it, and finally reads the records.  
-  
- [!code-csharp[IRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#0)]
- [!code-vb[IRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#0)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

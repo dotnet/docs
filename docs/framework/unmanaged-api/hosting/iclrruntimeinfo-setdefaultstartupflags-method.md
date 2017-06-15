@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeInfo::SetDefaultStartupFlags method [.NET Framework hosting]"
   - "SetDefaultStartupFlags method [.NET Framework hosting]"
 ms.assetid: 98ae174f-bff0-48f1-9e05-6cb63b451824
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

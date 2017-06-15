@@ -2,7 +2,7 @@
 title: "Configuring Message Flow Tracing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,13 +23,12 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
 ## Enabling Tracing  
  You can enable message flow tracing by setting the .NET Framework 4 `messageFlowTracing` configuration element to `true`, as shown in the following example.  
   
-```  
+```xml  
 <system.servicemodel>  
   <diagnostics>  
     <endToEndTracing propagateActivity="true" messageFlowTracing="true" />  
   </diagnostics>  
 </system.servicemodel>  
-  
 ```  
   
 > [!NOTE]
@@ -41,23 +40,19 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
  Message flow tracing allows you to trace a request end to end.  With SOAP-based services an Activity ID is sent in a SOAP message header. REST requests do not contain this header so a special HTTP event header is used instead. The following code snippet shows how you can programmatically retrieve the Activity ID value:  
   
 ```vb  
-  
-Object output = null;                    
+Object output = null;                    
 if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMessageProperty.Name, out output))  
 {  
    HttpRequestMessageProperty httpHeaders = output as HttpRequestMessageProperty;       
    // Retrieve the Activity Id from the HTTP header    string e2eId = httpHeaders.Headers["E2EActivity"];  
    // ...  
 }  
-  
 ```  
   
  You can programmatically add the header using the following code:  
   
 ```csharp  
-  
 HttpContent content = new StreamContent(contentStream);  
 Guid correlation = Guid.NewGuid();  
 content.Headers.Add("E2EActivity", Convert.ToBase64String(correlation.ToByteArray()));  
-  
 ```

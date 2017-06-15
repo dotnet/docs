@@ -2,7 +2,7 @@
 title: "&lt;loadFromRemoteSources&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ Specifies whether assemblies from remote sources should be granted full trust.
   
 ## Syntax  
   
-```  
+```xml  
 <loadFromRemoteSources    
    enabled="true|false"/>  
 ```  
@@ -99,7 +99,7 @@ Specifies whether assemblies from remote sources should be granted full trust.
 ## Example  
  The following example shows how to grant full trust to applications from remote sources.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <loadFromRemoteSources enabled="true"/>  

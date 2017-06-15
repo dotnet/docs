@@ -2,7 +2,7 @@
 title: "&lt;serviceHostingEnvironment&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,9 +26,20 @@ This element defines the type the service hosting environment instantiates for a
   
 ## Syntax  
   
-```  
-  
-<serviceHostingEnvironment     aspNetCompatibilityEnabled="Boolean"     minFreeMemoryPercentageToActivateService="Integer"     multipleSiteBindingsEnabled="Boolean">     <baseAddressPrefixFilters>        <add prefix="string"/>     </baseAddressPrefixFilters>      <serviceActivations>        <add factory="String" service="String"/>      </serviceActivations>     <transportConfigurationTypes>        <add name="String"              transportConfigurationType="String" />     </transportConfigurationTypes></serviceHostingEnvironment>  
+```xml  
+<serviceHostingEnvironment aspNetCompatibilityEnabled="Boolean" 
+                           minFreeMemoryPercentageToActivateService="Integer" 
+                           multipleSiteBindingsEnabled="Boolean">
+  <baseAddressPrefixFilters>
+    <add prefix="string" />
+  </baseAddressPrefixFilters>
+  <serviceActivations>
+    <add factory="String" service="String" />
+  </serviceActivations>
+  <transportConfigurationTypes>
+    <add name="String" transportConfigurationType="String" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>  
 ```  
   
 ## Attributes and Elements  
@@ -84,7 +95,7 @@ This element defines the type the service hosting environment instantiates for a
   
 ## Code  
   
-```  
+```xml  
 <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>  
 ```  
   

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetTableInfo method [.NET Framework metadata]"
   - "GetTableInfo method [.NET Framework metadata]"
 ms.assetid: 50cbe557-2322-41aa-8e0d-f967602eaa0f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

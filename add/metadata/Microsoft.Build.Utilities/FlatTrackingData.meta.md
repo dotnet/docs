@@ -173,12 +173,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Utilities.FlatTrackingData.SaveTlog
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],System.Boolean)
 ms.author: "susanno"
 manager: "douge"

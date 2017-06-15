@@ -413,8 +413,8 @@
   
 |Edge mode value|Description|  
 |---------------------|-----------------|  
-|<xref:System.Windows.Media.EdgeMode>|Render edges of non-text primitives as aliased edges.|  
-|<xref:System.Windows.Media.EdgeMode>|No edge mode is specified. Do not change the current edge mode that is applied to non-text primitives.|  
+|<xref:System.Windows.Media.EdgeMode.Aliased>|Render edges of non-text primitives as aliased edges.|  
+|<xref:System.Windows.Media.EdgeMode.Unspecified>|No edge mode is specified. Do not change the current edge mode that is applied to non-text primitives.|  
   
  ]]></format>
         </remarks>
@@ -676,6 +676,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the topmost <see cref="T:System.Windows.Media.Visual" /> object of a hit test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloaded methods that take <xref:System.Windows.Media.HitTestResultCallback> and <xref:System.Windows.Media.HitTestFilterCallback> as parameters provide additional functionality during hit testing:  
+  
+-   Allow you to participate in controlling the visual tree traversal during hit testing.  
+  
+-   Allow you to retrieve all of the visuals under the point or geometry, not just the topmost one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTest">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.HitTestResult HitTest (System.Windows.Media.Visual reference, System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.HitTestResult HitTest(class System.Windows.Media.Visual reference, valuetype System.Windows.Point point) cil managed" />
@@ -825,26 +846,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HitTest">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the topmost <see cref="T:System.Windows.Media.Visual" /> object of a hit test.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The overloaded methods that take <xref:System.Windows.Media.HitTestResultCallback> and <xref:System.Windows.Media.HitTestFilterCallback> as parameters provide additional functionality during hit testing:  
-  
--   Allow you to participate in controlling the visual tree traversal during hit testing.  
-  
--   Allow you to retrieve all of the visuals under the point or geometry, not just the topmost one.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

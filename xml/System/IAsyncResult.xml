@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +71,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -129,6 +131,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -177,12 +180,10 @@
         <block subset="none" type="usage">
           <para>Clients that wait for the operation to complete (as opposed to polling) use this property to obtain a synchronization object to wait on.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  When you use the <see langword="BeginInvoke" /> method of a delegate to call a method asynchronously and obtain a wait handle from the resulting <see cref="T:System.IAsyncResult" />, we recommend that you close the wait handle as soon as you are finished using it, by calling the <see cref="M:System.Threading.WaitHandle.Close" /> method. If you simply release all references to the wait handle, system resources are freed when garbage collection reclaims the wait handle, but garbage collection works more efficiently when disposable objects are explicitly closed or disposed. For more information, see the <see cref="P:System.Runtime.Remoting.Messaging.AsyncResult.AsyncWaitHandle" /> property.  
   
-</para>  
-</block></para>
+</para></block></para>
         </block>
       </Docs>
     </Member>
@@ -197,6 +198,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -241,6 +243,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

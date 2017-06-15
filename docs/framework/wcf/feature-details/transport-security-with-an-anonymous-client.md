@@ -2,7 +2,7 @@
 title: "Transport Security with an Anonymous Client | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +50,7 @@ This [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] scenario uses trans
 ### Configuration  
  The following code sets up the same endpoint using configuration. The client is not authenticated by any mechanism, and is therefore anonymous.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -94,7 +94,7 @@ This [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] scenario uses trans
 ### Configuration  
  The following configuration can be used instead of the code to set up the service.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <bindings>  

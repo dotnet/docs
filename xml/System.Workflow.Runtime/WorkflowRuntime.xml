@@ -223,6 +223,23 @@
  <paramref name="service" /> is a core service and the workflow run-time engine is already running (<see cref="P:System.Workflow.Runtime.WorkflowRuntime.IsStarted" /> is <see langword="true" />).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateWorkflow">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a workflow instance by using the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the workflow run-time engine has not been started, the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> methods call <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A>. See <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A> for a list of possible exceptions. After you create the workflow instance, call <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A?displayProperty=fullName> on the <xref:System.Workflow.Runtime.WorkflowInstance> object returned by the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method to begin its execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateWorkflow">
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (Type workflowType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Type workflowType) cil managed" />
@@ -1288,7 +1305,7 @@ static void Main(string[] args)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The workflow instance can be persisted for many reasons. For example, the host can call <xref:System.Workflow.Runtime.WorkflowInstance.UnLoad%2A?displayProperty=fullName> on a workflow instance, or the workflow run-time engine can persist a workflow instance because the instance is idle or because an atomic scope has completed. If a persistence service is present in the <xref:System.Workflow.Runtime.WorkflowRuntime>, <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> is raised by the runtime after the state of the workflow instance is saved to memory. If a persistence service is not present, the event is still raised but the instance state is not saved. If the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event occurs because the workflow instance is being unloaded, it is followed by a <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event.  
+ The workflow instance can be persisted for many reasons. For example, the host can call <xref:System.Workflow.Runtime.WorkflowInstance.Unload%2A?displayProperty=fullName> on a workflow instance, or the workflow run-time engine can persist a workflow instance because the instance is idle or because an atomic scope has completed. If a persistence service is present in the <xref:System.Workflow.Runtime.WorkflowRuntime>, <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> is raised by the runtime after the state of the workflow instance is saved to memory. If a persistence service is not present, the event is still raised but the instance state is not saved. If the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event occurs because the workflow instance is being unloaded, it is followed by a <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event.  
   
  For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
@@ -1481,7 +1498,7 @@ static void Main(string[] args)
   
  <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event after the state of the workflow instance has been successfully persisted but before the instance is invalidated in memory. Therefore, a <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted> event precedes the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event.  
   
- For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnLoaded> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
+ For the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event, the sender contains the <xref:System.Workflow.Runtime.WorkflowRuntime> and <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the event.  
   
  [!INCLUDE[crabout](~/includes/crabout-md.md)] handling events, see [Consuming Events](http://go.microsoft.com/fwlink/?LinkID=157352).  
   
@@ -1499,22 +1516,5 @@ static void Main(string[] args)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateWorkflow">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a workflow instance by using the specified parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the workflow run-time engine has not been started, the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> methods call <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A>. See <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A> for a list of possible exceptions. After you create the workflow instance, call <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A?displayProperty=fullName> on the <xref:System.Workflow.Runtime.WorkflowInstance> object returned by the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method to begin its execution.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

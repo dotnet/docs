@@ -2,7 +2,7 @@
 title: "How to: Add Buttons to a ToolBar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -72,7 +72,6 @@ manager: "wpickett"
     ' Set the ToolTipText property of one of the buttons.  
        ToolBar1.Buttons(1).ToolTipText = "Button 2"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -111,7 +110,6 @@ manager: "wpickett"
        // Set the ToolTipText property of 1 of the buttons.  
        toolBar1.Buttons[1].ToolTipText = "Button 2";  
     }  
-  
     ```  
   
     ```cpp  

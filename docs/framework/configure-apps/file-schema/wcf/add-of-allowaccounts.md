@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;allowAccounts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
   
 ## Syntax  
   
-```  
-  
+```xml  
 <allowAccounts>  
    <add securityIdentifier="String"/>  
 </allowAccounts>  
@@ -50,7 +49,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
 ## Example  
  The following configuration example adds the five default identifiers for user accounts to this collection.  
   
-```  
+```xml  
 <allowAccounts>  
    // LocalSystem account  
    <add securityIdentifier="S-1-5-18"/>  

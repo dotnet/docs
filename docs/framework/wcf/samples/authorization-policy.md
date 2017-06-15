@@ -2,7 +2,7 @@
 title: "Authorization Policy | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ This sample demonstrates how to implement a custom claim authorization policy an
   
  The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. One binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client username authentication. The other binding is configured with a standard `wsHttpBinding` binding that uses WS-Security and client certificate authentication. The [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the `SubjectName` property as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -120,12 +120,11 @@ This sample demonstrates how to implement a custom claim authorization policy an
   </behaviors>  
   
 </system.serviceModel>  
-  
 ```  
   
  Each client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode as specified in this case in the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) and `clientCredentialType` as specified in the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md).  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <client>  
@@ -189,7 +188,6 @@ This sample demonstrates how to implement a custom claim authorization policy an
     </behaviors>  
   
   </system.serviceModel>  
-  
 ```  
   
  For the user name-based endpoint, the client implementation sets the user name and password to use.  
@@ -216,7 +214,6 @@ catch (Exception e)
 }  
   
 client1.Close();  
-  
 ```  
   
  For the certificate-based endpoint, the client implementation sets the client certificate to use.  
@@ -242,7 +239,6 @@ catch (Exception e)
 }  
   
 client2.Close();  
-  
 ```  
   
  This sample uses a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> to validate user names and passwords. The sample implements `MyCustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation about <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. For the purposes of demonstrating the integration with the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>, this custom validator sample implements the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method to accept user name/password pairs where the user name matches the password as shown in the following code.  
@@ -268,7 +264,6 @@ public class MyCustomUserNamePasswordValidator : UserNamePasswordValidator
     }  
   }  
 }  
-  
 ```  
   
  Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.  
@@ -280,7 +275,7 @@ serviceHost.Credentials.UserNameAuthentication.CustomUserNamePasswordValidator =
   
  Or you can do the same thing in configuration.  
   
-```  
+```xml  
 <behavior ...>  
     <serviceCredentials>  
       <!--   
@@ -318,19 +313,17 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
     return false;                   
   }  
 }  
-  
 ```  
   
  Once the custom <xref:System.ServiceModel.ServiceAuthorizationManager> is implemented, the service host must be informed about the <xref:System.ServiceModel.ServiceAuthorizationManager> to use. This is done as shown in the following code.  
   
-```  
+```xml  
 <behavior ...>  
     ...  
     <serviceAuthorization serviceAuthorizationManagerType="Microsoft.ServiceModel.Samples.MyServiceAuthorizationManager, service">  
         ...  
     </serviceAuthorization>  
 </behavior>  
-  
 ```  
   
  The primary <xref:System.IdentityModel.Policy.IAuthorizationPolicy> method to implement is the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> method.  
@@ -393,13 +386,12 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
   
  Once the custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> is implemented, the service host must be informed about the authorization policies to use.  
   
-```  
+```xml  
 <serviceAuthorization ...>  
        <authorizationPolicies>   
             <add policyType='Microsoft.ServiceModel.Samples.CustomAuthorizationPolicy.MyAuthorizationPolicy, PolicyLibrary' />  
        </authorizationPolicies>   
 </serviceAuthorization>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The client successfully calls the Add, Subtract and Multiple methods and gets an "Access is denied" message when trying to call the Divide method. Press ENTER in the client window to shut down the client.  
@@ -421,7 +413,6 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into client's trusted certificate store.  
@@ -443,7 +434,6 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
     echo making client cert  
     echo ************  
     makecert.exe -sr CurrentUser -ss MY -a sha1 -n CN=%CLIENT_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the client certificate into server's trusted certificate store.  

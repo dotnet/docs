@@ -88,7 +88,7 @@ manager: "erikre"
   
     -   **Service**: Lists all the services.  
   
-    -   **Status**: Lists the status of the service. Valid values are "Started”, “Stopped,” and “Error”.  
+    -   **Status**: Lists the status of the service. Valid values are "Started", "Stopped," and "Error".  
   
     -   **Metadata Address**: Displays the metadata address of the services.  
   

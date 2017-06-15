@@ -2,7 +2,7 @@
 title: "&lt;netHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,12 +26,10 @@ Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-m
 
 <!-- todo: missing sample  
 ```vb  
-  
 ```  
 -->
   
 ```csharp  
-  
 <netHttpBinding>  
    <binding   
        allowCookies="Boolean"  

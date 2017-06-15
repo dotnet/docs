@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataEmit interface [.NET Framework metadata]"
 ms.assetid: 3b48fd47-7397-4e2c-8bec-8157aa08978c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

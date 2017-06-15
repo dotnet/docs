@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Federation Sign-Out Cleanup message. The message is created when the received message has the action parameter (wa) set to “wsignoutcleanup1.0”.</summary>
+    <summary>Represents a WS-Federation Sign-Out Cleanup message. The message is created when the received message has the action parameter (wa) set to "wsignoutcleanup1.0".</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to "wsignoutcleanup1.0".  
   
  ]]></format>
         </remarks>
@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignoutcleanup1.0”.  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to "wsignoutcleanup1.0".  
   
  ]]></format>
         </remarks>
@@ -122,7 +122,7 @@
       <Docs>
         <summary>Validates the current instance.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The wa parameter (the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property) is not set to “wsignoutcleanup1.0”.</exception>
+        <exception cref="T:System.InvalidOperationException">The wa parameter (the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property) is not set to "wsignoutcleanup1.0".</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">

@@ -273,9 +273,3 @@ uid: Microsoft.Build.Utilities.ToolTask.StandardOutputEncoding
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Utilities.ToolTask.#ctor
-ms.author: "susanno"
-manager: "douge"
----

@@ -2,7 +2,7 @@
 title: "&lt;providerOption&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Specifies the compiler version attributes for a language provider.
   
 ## Syntax  
   
-```  
+```xml  
 <providerOption  
   name="option-name"  
   value="option-value"  
@@ -78,7 +78,7 @@ Specifies the compiler version attributes for a language provider.
 ## Example  
  The following example demonstrates how to specify that version 3.5 of the C# code provider should be used.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

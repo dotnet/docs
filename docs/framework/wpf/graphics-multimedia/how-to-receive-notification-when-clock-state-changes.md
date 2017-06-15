@@ -2,7 +2,7 @@
 title: "How to: Receive Notification When a Clock&#39;s State Changes | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,4 +47,4 @@ A clock's <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> ev
 |Time (Seconds)|1|9|11|19|21|29|31|39|  
 |State|Active|Filling|Active|Stopped|Active|Filling|Active|Stopped|  
   
- Notice that *Animation1*'s  <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event fires at 10 seconds, even though its state remains <xref:System.Windows.Media.Animation.ClockState>. That's because its state changed at 10 seconds, but it changed from <xref:System.Windows.Media.Animation.ClockState> to <xref:System.Windows.Media.Animation.ClockState> and then back to <xref:System.Windows.Media.Animation.ClockState> in the same tick.
+ Notice that *Animation1*'s  <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event fires at 10 seconds, even though its state remains <xref:System.Windows.Media.Animation.ClockState.Active>. That's because its state changed at 10 seconds, but it changed from <xref:System.Windows.Media.Animation.ClockState.Active> to <xref:System.Windows.Media.Animation.ClockState.Filling> and then back to <xref:System.Windows.Media.Animation.ClockState.Active> in the same tick.

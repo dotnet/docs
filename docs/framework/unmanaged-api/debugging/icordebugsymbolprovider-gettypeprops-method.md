@@ -2,7 +2,7 @@
 title: "ICorDebugSymbolProvider::GetTypeProps Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,14 +23,12 @@ Returns information about a type's properties, such as the number of signature o
 ## Syntax  
   
 ```  
-  
 HRESULT GetTypeProps(  
    [in]  ULONG32 vtableRva,  
    [in]  ULONG32 cbSignature,  
    [out] ULONG32 *pcbSignature,  
    [out, size_is(cbSignature), length_is(*pcbSignature)] BYTE signature[]  
 );  
-  
 ```  
   
 #### Parameters  

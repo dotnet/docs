@@ -20,7 +20,7 @@
   
  In-place metadata updates fail if an attempt is made to write metadata that a given bitmap format does not support.  
   
- To perform in-place metadata edits, the bitmap must be decoded using either the <xref:System.Windows.Media.Imaging.BitmapCacheOption> or <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache options. <xref:System.Windows.Media.Imaging.BitmapCacheOption> does not guarantee access to the metadata stream needed for in-place metadata edits.  
+ To perform in-place metadata edits, the bitmap must be decoded using either the <xref:System.Windows.Media.Imaging.BitmapCacheOption.Default> or <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache options. <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad> does not guarantee access to the metadata stream needed for in-place metadata edits.  
   
    
   

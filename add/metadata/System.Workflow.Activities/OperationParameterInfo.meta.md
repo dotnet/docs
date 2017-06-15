@@ -118,13 +118,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.OperationParameterInfo.Equals(System.Object)
 author: "Erikre"
 ms.author: "erikre"

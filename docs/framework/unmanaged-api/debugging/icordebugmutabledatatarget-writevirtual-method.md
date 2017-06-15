@@ -2,7 +2,7 @@
 title: "ICorDebugMutableDataTarget::WriteVirtual Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,12 +23,10 @@ Writes memory into the target process address space.
 ## Syntax  
   
 ```  
-  
 HRESULT WriteVirtual(  
    [in] CORDB_ADDRESS address,  
    [in, size_is(bytesRequested)] const BYTE * pBuffer,  
    [in] ULONG32 bytesRequested);  
-  
 ```  
   
 #### Parameters  

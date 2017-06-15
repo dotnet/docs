@@ -2,7 +2,7 @@
 title: "&lt;endpoint&gt; of &lt;client&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,13 +27,12 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
   
 ## Syntax  
   
-```  
-  
+```xml  
 <endpoint address="String"  
    behaviorConfiguration="String"  
    binding="String"  
    bindingConfiguration="String"  
-   contract="String"   endpointConfiguration=”String”   kind=”String”  
+   contract="String"   endpointConfiguration="String"   kind="String"  
    name="String"  
 </endpoint>  
 ```  
@@ -70,7 +69,7 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 ## Example  
  This is an example of a channel endpoint configuration.  
   
-```  
+```xml  
 <endpoint address="/HelloWorld/"  
     bindingConfiguration="usingDefaults"  
     name="MyBinding"  

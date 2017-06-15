@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -37,7 +38,7 @@
   
  Developers can provide custom implementations for all interfaces (except for `IUnknown`) if they define and implement a valid corresponding interface.  
   
- A valid user-defined interface has a v-table layout that matches the unmanaged COM interface exactly, and its <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> is <xref:System.Runtime.InteropServices.ComInterfaceType>.  
+ A valid user-defined interface has a v-table layout that matches the unmanaged COM interface exactly, and its <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> is <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown>.  
   
  ]]></format>
     </remarks>
@@ -55,6 +56,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

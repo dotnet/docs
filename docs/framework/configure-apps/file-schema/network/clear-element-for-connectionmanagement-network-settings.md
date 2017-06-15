@@ -2,7 +2,7 @@
 title: "&lt;clear&gt; Element for connectionManagement (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,10 +38,8 @@ Clears the connection management list.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  
@@ -68,7 +66,7 @@ Clears the connection management list.
 ## Example  
  The following code example clears the connection management list and then adds new connection management entries for the server www.contoso.com and all other network hosts.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <connectionManagement>  

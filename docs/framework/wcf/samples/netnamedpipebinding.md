@@ -2,7 +2,7 @@
 title: "NetNamedPipeBinding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,7 +30,7 @@ This sample demonstrates the `netNamedPipeBinding` binding, which provides cross
   
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the[\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element as shown in the following sample configuration:  
   
-```  
+```xml  
 <endpoint address="net.pipe://localhost/ServiceModelSamples/service"  
           binding="netNamedPipeBinding"  
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
@@ -38,7 +38,7 @@ This sample demonstrates the `netNamedPipeBinding` binding, which provides cross
   
  The previous sample shows how to configure an endpoint to use the `netNamedPipeBinding` binding with the default settings. If you want to configure the `netNamedPipeBinding` binding and change some of its settings, you must define a binding configuration. The endpoint must reference the binding configuration by name with a `bindingConfiguration` attribute.  
   
-```  
+```xml  
 <endpoint address="net.pipe://localhost/ServiceModelSamples/service"  
           binding="netNamedPipeBinding"  
           bindingConfiguration="Binding1"   
@@ -47,7 +47,7 @@ This sample demonstrates the `netNamedPipeBinding` binding, which provides cross
   
  In this sample, the binding configuration is named `Binding1` and has the following definition:  
   
-```  
+```xml  
 <bindings>  
   <!--   
         Following is the expanded configuration section for a NetNamedPipeBinding.  
@@ -73,13 +73,11 @@ This sample demonstrates the `netNamedPipeBinding` binding, which provides cross
     </binding>  
   </netNamedPipeBinding>  
 </bindings>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

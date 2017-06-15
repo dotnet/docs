@@ -2,7 +2,7 @@
 title: "Migrating WSE 3.0 Web Services to WCF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
   
  **WSE 3.0**  
   
-```  
+```xml  
 <policies>  
   <policy name="MyPolicy">  
     <usernameForCertificate messageProtectionOrder="SignBeforeEncrypt"  
@@ -46,7 +46,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
   
  **WCF**  
   
-```  
+```xml  
 <customBinding>  
   <binding name="MyBinding">  
     <security authenticationMode="UserNameForCertificate"   
@@ -97,7 +97,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
   
  **WSE 3.0**  
   
-```  
+```xml  
 <messaging>  
     <mtom clientMode="On"/>  
 </messaging>  
@@ -105,7 +105,7 @@ The benefits of migrating WSE 3.0 Web services to [!INCLUDE[indigo1](../../../..
   
  **WCF**  
   
-```  
+```xml  
 <customBinding>  
   <binding name="MyBinding">  
     <mtomMessageEncoding/>  

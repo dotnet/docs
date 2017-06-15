@@ -2,7 +2,7 @@
 title: "&lt;nameEntry&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
   
 ## Syntax  
   
-```  
+```xml  
 <nameEntry name="friendly name" Class="class name" />  
 ```  
   
@@ -67,7 +67,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 ## Example  
  The following example shows how to use the **\<nameEntry>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=fullName> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

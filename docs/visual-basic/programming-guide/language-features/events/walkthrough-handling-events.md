@@ -41,7 +41,7 @@ translation.priority.ht:
 # Walkthrough: Handling Events (Visual Basic)
 This is the second of two topics that demonstrate how to work with events. The first topic, [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md), shows how to declare and raise events. This section uses the form and class from that walkthrough to show how to handle events when they take place.  
   
- The `Widget` class example uses traditional event-handling statements. [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides other techniques for working with events. As an exercise, you can modify this example to use the `AddHandler` and `Handles` statements.  
+ The `Widget` class example uses traditional event-handling statements. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides other techniques for working with events. As an exercise, you can modify this example to use the `AddHandler` and `Handles` statements.  
   
 ### To handle the PercentDone event of the Widget class  
   
@@ -94,7 +94,7 @@ This is the second of two topics that demonstrate how to work with events. The f
   
      [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_4.vb)]  
   
- When this code executes, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] creates a `Widget` object and connects its events to the event procedures associated with `mWidget`. From that point on, whenever the `Widget` raises its `PercentDone` event, the `mWidget_PercentDone` event procedure is executed.  
+ When this code executes, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] creates a `Widget` object and connects its events to the event procedures associated with `mWidget`. From that point on, whenever the `Widget` raises its `PercentDone` event, the `mWidget_PercentDone` event procedure is executed.  
   
 #### To call the LongTask method  
   

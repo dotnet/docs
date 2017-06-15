@@ -68,10 +68,9 @@ manager: "erikre"
     //Execute the activity with a parameter dictionary  
                 WorkflowInvoker.Invoke(dynamicWorkflow, new Dictionary<string, object> { { "Text", "Hello World!" } });  
                 Console.ReadLine();  
-  
     ```  
   
-6.  Execute the application. A console window with the text “Hello World!” displays.  
+6.  Execute the application. A console window with the text "Hello World!" displays.  
   
 #### To create an activity at runtime using XAML  
   
@@ -97,7 +96,7 @@ manager: "erikre"
     Console.ReadLine();  
     ```  
   
-7.  Execute the application. A console window with the text “Hello World!” appears.  
+7.  Execute the application. A console window with the text "Hello World!" appears.  
   
 8.  Right-click the Workflow1.xaml file in the **Solution Explorer** and select **View Code**. Note that the activity class is created with `x:Class` and the property is created with `x:Property`.  
   

@@ -92,7 +92,7 @@ string Hello(string greeting);
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<OperationContractAttribute()>  
+<OperationContractAttribute()>  
 Function Hello (ByVal greeting As String) As String  
 ```  
   
@@ -108,7 +108,7 @@ void Hello(string greeting);
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<OperationContractAttribute()>  
+<OperationContractAttribute()>  
 Sub Hello (ByVal greeting As String)  
 ```  
   
@@ -131,7 +131,7 @@ void Hello(string greeting);
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<OperationContractAttribute(IsOneWay := True)>  
+<OperationContractAttribute(IsOneWay := True)>  
 Sub Hello (ByVal greeting As String)  
 ```  
   
@@ -165,12 +165,10 @@ public interface IMyContract
   
  The following is the equivalent Visual Basic code.  
   
- [Visual Basic]  
-  
 ```vb  
-\<ServiceContractAttribute()> _  
+<ServiceContractAttribute()> _  
 Public Interface IMyContract  
-  \<OperationContractAttribute()> _  
+  <OperationContractAttribute()> _  
   Public Sub PopulateData(ByRef data As CustomDataType)  
 End Interface  
 ```  
@@ -180,12 +178,12 @@ End Interface
  In addition, using `out` or `ref` parameters requires that the operation have an underlying response message to carry back the modified object. If your operation is a one-way operation, an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
 ### Specify Message Protection Level on the Contract  
- When designing your contract, you must also decide the message protection level of services that implement your contract. This is necessary only if message security is applied to the binding in the contract's endpoint. If the binding has security turned off (that is, if the system-provided binding sets the <xref:System.ServiceModel.SecurityMode?displayProperty=fullName> to the value <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>) then you do not have to decide on the message protection level for the contract. In most cases, system-provided bindings with message-level security applied provide a sufficient protection level and you do not have to consider the protection level for each operation or for each message.  
+ When designing your contract, you must also decide the message protection level of services that implement your contract. This is necessary only if message security is applied to the binding in the contract's endpoint. If the binding has security turned off (that is, if the system-provided binding sets the <xref:System.ServiceModel.SecurityMode?displayProperty=fullName> to the value <xref:System.ServiceModel.SecurityMode.None?displayProperty=fullName>) then you do not have to decide on the message protection level for the contract. In most cases, system-provided bindings with message-level security applied provide a sufficient protection level and you do not have to consider the protection level for each operation or for each message.  
   
  The protection level is a value that specifies whether the messages (or message parts) that support a service are signed, signed and encrypted, or sent without signatures or encryption. The protection level can be set at various scopes: At the service level, for a particular operation, for a message within that operation, or a message part. Values set at one scope become the default value for smaller scopes unless explicitly overridden. If a binding configuration cannot provide the required minimum protection level for the contract, an exception is thrown. And when no protection level values are explicitly set on the contract, the binding configuration controls the protection level for all messages if the binding has message security. This is the default behavior.  
   
 > [!IMPORTANT]
->  Deciding whether to explicitly set various scopes of a contract to less than the full protection level of <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> is generally a decision that trades some degree of security for increased performance. In these cases, your decisions must revolve around your operations and the value of the data they exchange. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Securing Services](../../../docs/framework/wcf/securing-services.md).  
+>  Deciding whether to explicitly set various scopes of a contract to less than the full protection level of <xref:System.Net.Security.ProtectionLevel.EncryptAndSign?displayProperty=fullName> is generally a decision that trades some degree of security for increased performance. In these cases, your decisions must revolve around your operations and the value of the data they exchange. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Securing Services](../../../docs/framework/wcf/securing-services.md).  
   
  For example, the following code example does not set either the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> or the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property on the contract.  
   
@@ -203,23 +201,20 @@ public interface ISampleService
   
  The following is the equivalent Visual Basic code.  
   
- [Visual Basic]  
-  
 ```vb  
-\<ServiceContractAttribute()> _  
+<ServiceContractAttribute()> _  
 Public Interface ISampleService  
   
-  \<OperationContractAttribute()> _  
+  <OperationContractAttribute()> _  
   Public Function GetString()As String  
   
-  \<OperationContractAttribute()> _  
+  <OperationContractAttribute()> _  
   Public Function GetData() As Integer  
   
 End Interface  
-  
 ```  
   
- When interacting with an `ISampleService` implementation in an endpoint with a default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>, which is <xref:System.ServiceModel.SecurityMode>), all messages are encrypted and signed because this is the default protection level. However, when an `ISampleService` service is used with a default <xref:System.ServiceModel.BasicHttpBinding> (the default <xref:System.ServiceModel.SecurityMode>, which is <xref:System.ServiceModel.SecurityMode>), all messages are sent as text because there is no security for this binding and so the protection level is ignored (that is, the messages are neither encrypted nor signed). If the <xref:System.ServiceModel.SecurityMode> was changed to <xref:System.ServiceModel.SecurityMode>, then these messages would be encrypted and signed (because that would now be the binding's default protection level).  
+ When interacting with an `ISampleService` implementation in an endpoint with a default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>, which is <xref:System.ServiceModel.SecurityMode.Message>), all messages are encrypted and signed because this is the default protection level. However, when an `ISampleService` service is used with a default <xref:System.ServiceModel.BasicHttpBinding> (the default <xref:System.ServiceModel.SecurityMode>, which is <xref:System.ServiceModel.SecurityMode.None>), all messages are sent as text because there is no security for this binding and so the protection level is ignored (that is, the messages are neither encrypted nor signed). If the <xref:System.ServiceModel.SecurityMode> was changed to <xref:System.ServiceModel.SecurityMode.Message>, then these messages would be encrypted and signed (because that would now be the binding's default protection level).  
   
  If you want to explicitly specify or adjust the protection requirements for your contract, set the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> property (or any of the `ProtectionLevel` properties at a smaller scope) to the level your service contract requires. In this case, using an explicit setting requires the binding to support that setting at a minimum for the scope used. For example, the following code example specifies one <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> value explicitly, for the `GetGuid` operation.  
   
@@ -240,25 +235,24 @@ public interface IExplicitProtectionLevelSampleService
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<ServiceContract()> _   
+<ServiceContract()> _   
 Public Interface IExplicitProtectionLevelSampleService   
-    \<OperationContract()> _   
+    <OperationContract()> _   
     Public Function GetString() As String   
     End Function   
   
-    \<OperationContract(ProtectionLevel := ProtectionLevel.None)> _   
+    <OperationContract(ProtectionLevel := ProtectionLevel.None)> _   
     Public Function GetInt() As Integer   
     End Function   
   
-    \<OperationContractAttribute(ProtectionLevel := ProtectionLevel.EncryptAndSign)> _   
+    <OperationContractAttribute(ProtectionLevel := ProtectionLevel.EncryptAndSign)> _   
     Public Function GetGuid() As Integer   
     End Function   
   
 End Interface  
-  
 ```  
   
- A service that implements this `IExplicitProtectionLevelSampleService` contract and has an endpoint that uses the default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>, which is <xref:System.ServiceModel.SecurityMode>) has the following behavior:  
+ A service that implements this `IExplicitProtectionLevelSampleService` contract and has an endpoint that uses the default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>, which is <xref:System.ServiceModel.SecurityMode.Message>) has the following behavior:  
   
 -   The `GetString` operation messages are encrypted and signed.  
   

@@ -34,9 +34,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Creating and Using Components in Visual Basic
-A *component* is a class that implements the <xref:System.ComponentModel.IComponent?displayProperty=fullName> interface or that derives directly or indirectly from a class that implements <xref:System.ComponentModel.IComponent>. A [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] component is an object that is reusable, can interact with other objects, and provides control over external resources and design-time support.  
+A *component* is a class that implements the <xref:System.ComponentModel.IComponent?displayProperty=fullName> interface or that derives directly or indirectly from a class that implements <xref:System.ComponentModel.IComponent>. A [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] component is an object that is reusable, can interact with other objects, and provides control over external resources and design-time support.  
   
- An important feature of components is that they are designable, which means that a class that is a component can be used in the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] Integrated Development Environment. A component can be added to the Toolbox, dragged and dropped onto a form, and manipulated on a design surface. Notice that base design-time support for components is built into the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)]; a component developer does not have to do any additional work to take advantage of the base design-time functionality.  
+ An important feature of components is that they are designable, which means that a class that is a component can be used in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integrated Development Environment. A component can be added to the Toolbox, dragged and dropped onto a form, and manipulated on a design surface. Notice that base design-time support for components is built into the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]; a component developer does not have to do any additional work to take advantage of the base design-time functionality.  
   
  A *control* is similar to a component, as both are designable. However, a control provides a user interface, while a component does not. A control must derive from one of the base control classes: <xref:System.Windows.Forms.Control> or <xref:System.Web.UI.Control>.  
   
@@ -95,7 +95,7 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
  [Component Classes](http://msdn.microsoft.com/library/ce2e5647-e673-4c2b-8125-ffebbd9d71bc)  
  Describes what makes a class a component, ways to expose component functionality, controlling access to components, and controlling how component instances are created.  
   
- [Troubleshooting Control and Component Authoring](http://msdn.microsoft.com/library/e9c8c099-2271-4737-882f-50f336c7a55e)  
+ [Troubleshooting Control and Component Authoring](../../framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
  Explains how to fix common problems.  
   
 ## See Also  

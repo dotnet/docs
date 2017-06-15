@@ -6,13 +6,18 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>  
+  
+ LINQ extension method overrides that offer greater efficiency for <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> than the standard LINQ methods  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,6 +30,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -37,12 +43,21 @@
         <Parameter Name="func" Type="System.Func&lt;T,T,T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="func">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The collection to apply the function to.</param>
+        <param name="func">A function to be invoked on each element, in a cumulative way.</param>
+        <summary>  
+  
+ Applies a function to a sequence of elements in a cumulative way.</summary>
+        <returns>The final value after the cumulative function has been applied to all elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> method makes it simple to perform a calculation over a sequence of values. This method works by calling `func` one time for each element in source. Each time `func` is called, <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> passes both the element from the sequence and an aggregated value (as the first argument to func). The value of the `seed` parameter is used as the initial aggregate value. The result of `func` replaces the previous aggregated value. <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> returns the final result of `func`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Aggregate&lt;TAccumulate,T&gt;">
@@ -54,6 +69,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TAccumulate</ReturnType>
@@ -68,14 +84,23 @@
         <Parameter Name="func" Type="System.Func&lt;TAccumulate,T,TAccumulate&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAccumulate">To be added.</typeparam>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="seed">To be added.</param>
-        <param name="func">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TAccumulate">The type of the accumulated value.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The collection to apply the function to.</param>
+        <param name="seed">The initial accumulator value.</param>
+        <param name="func">A function to be invoked on each element, in a cumulative way.</param>
+        <summary>  
+  
+ Applies a function to a sequence of elements in a cumulative way.</summary>
+        <returns>The final accumulator value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> method makes it simple to perform a calculation over a sequence of values. This method works by calling `func` one time for each element in source. Each time `func` is called, <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> passes both the element from the sequence and an aggregated value (as the first argument to func). The value of the `seed` parameter is used as the initial aggregate value. The result of `func` replaces the previous aggregated value. <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> returns the final result of `func`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Aggregate&lt;TAccumulate,TResult,T&gt;">
@@ -87,6 +112,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -103,16 +129,25 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TAccumulate,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAccumulate">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="seed">To be added.</param>
-        <param name="func">To be added.</param>
+        <typeparam name="TAccumulate">The type of the accumulated value.</typeparam>
+        <typeparam name="TResult">The type of result returned by the result selector.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The collection to apply the function to.</param>
+        <param name="seed">The initial accumulator value.</param>
+        <param name="func">A function to be invoked on each element, in a cumulative way.</param>
         <param name="resultSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>  
+  
+ Applies a function to a sequence of elements in a cumulative way.</summary>
+        <returns>The final accumulator value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> method makes it simple to perform a calculation over a sequence of values. This method works by calling `func` one time for each element in source. Each time `func` is called, <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> passes both the element from the sequence and an aggregated value (as the first argument to func). The value of the `seed` parameter is used as the initial aggregate value. The result of `func` replaces the previous aggregated value. <xref:System.Linq.ImmutableArrayExtensions.Aggregate%2A> returns the final result of `func`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="All&lt;T&gt;">
@@ -124,6 +159,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -136,11 +172,14 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to check for matches.</param>
+        <param name="predicate">The predicate.</param>
+        <summary>  
+  
+ Gets a value indicating whether all elements in this array match a given condition.</summary>
+        <returns>
+          <see langword="true" /> if every element of the source sequence passes the test in the specified predicate; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,6 +192,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -164,10 +204,13 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to check for elements.</param>
+        <summary>  
+  
+ Gets a value indicating whether the array contains any elements.</summary>
+        <returns>
+          <see langword="true" /> if the array contains an elements; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,6 +223,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -191,10 +235,13 @@
         <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of elements in the array.</typeparam>
+        <param name="builder">The builder to check for matches.</param>
+        <summary>  
+  
+ Returns a value indicating whether this collection contains any elements.</summary>
+        <returns>
+          <see langword="true" /> if the array builder contains any elements; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,6 +254,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -219,11 +267,14 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to check for elements.</param>
+        <param name="predicate">The delegate that defines the condition to match to an element.</param>
+        <summary>  
+  
+ Gets a value indicating whether the array contains any elements that match a specified condition.</summary>
+        <returns>
+          <see langword="true" /> if an element matches the specified condition; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,6 +287,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -248,11 +300,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to find an element in.</param>
+        <param name="index">The index for the element to retrieve.</param>
+        <summary>  
+  
+ Returns the element at a specified index in the array.</summary>
+        <returns>The item at the specified index.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,6 +319,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -277,11 +332,13 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to find an element in.</param>
+        <param name="index">The index for the element to retrieve.</param>
+        <summary>  
+  
+ Returns the element at a specified index in a sequence or a default value if the index is out of range.</summary>
+        <returns>The item at the specified index, or the default value if the index is not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,6 +351,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -305,11 +363,14 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to get an item from.</param>
+        <summary>  
+  
+ Returns the first element in an array.</summary>
+        <returns>The first item in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">If the array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="First&lt;T&gt;">
@@ -321,6 +382,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -332,11 +394,14 @@
         <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the array.</typeparam>
+        <param name="builder">The builder to retrieve an item from.</param>
+        <summary>  
+  
+ Returns the first element in the collection.</summary>
+        <returns>The first item in the list.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">If the array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="First&lt;T&gt;">
@@ -348,6 +413,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -360,12 +426,15 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to get an item from.</param>
+        <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
+        <summary>  
+  
+ Returns the first element in a sequence that satisfies a specified condition.</summary>
+        <returns>The first item in the list if it meets the condition specified by <paramref name="predicate" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">If the array is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="FirstOrDefault&lt;T&gt;">
@@ -377,6 +446,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -388,10 +458,12 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to retrieve items from.</param>
+        <summary>  
+  
+ Returns the first element of a sequence, or a default value if the sequence contains no elements.</summary>
+        <returns>The first item in the list, if found; otherwise the default value for the item type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,6 +476,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -415,10 +488,12 @@
         <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of item in the builder.</typeparam>
+        <param name="builder">The builder to retrieve an element from.</param>
+        <summary>  
+  
+ Returns the first element in the collection, or the default value if the collection is empty.</summary>
+        <returns>The first item in the list, if found; otherwise the default value for the item type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,6 +506,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -443,11 +519,15 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">  
+  
+ The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to retrieve elments from.</param>
+        <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
+        <summary>  
+  
+ Returns the first element of the sequence that satisfies a condition or a default value if no such element is found.</summary>
+        <returns>The first item in the list, if found; otherwise the default value for the item type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,6 +540,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -471,11 +552,14 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the array.</typeparam>
+        <param name="immutableArray">The array to retrieve items from.</param>
+        <summary>  
+  
+ Returns the last element of the array.</summary>
+        <returns>The last element in the array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if the collection is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Last&lt;T&gt;">
@@ -487,6 +571,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -498,11 +583,12 @@
         <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of item in the builder.</typeparam>
+        <param name="builder">The builder to retrieve elements from.</param>
+        <summary>Returns the last element in the collection.</summary>
+        <returns>The last element in the builder.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if the collection is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Last&lt;T&gt;">
@@ -514,6 +600,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -526,12 +613,13 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to retrieve elements from.</param>
+        <param name="predicate">The delegate that defines the conditions of the element to retrieve.</param>
+        <summary>Returns the last element of a sequence that satisfies a specified condition.</summary>
+        <returns>The last element of the array that satisfies the <paramref name="predicate" /> condition.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if the collection is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="LastOrDefault&lt;T&gt;">
@@ -543,6 +631,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -554,10 +643,12 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to retrieve items from.</param>
+        <summary>  
+  
+ Returns the last element of a sequence, or a default value if the sequence contains no elements.</summary>
+        <returns>The last element of a sequence, or a default value if the sequence contains no elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -570,6 +661,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -581,10 +673,12 @@
         <Parameter Name="builder" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;+Builder" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="builder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of item in the builder.</typeparam>
+        <param name="builder">The builder to retrieve an element from.</param>
+        <summary>  
+  
+ Returns the last element in the collection, or the default value if the collection is empty.</summary>
+        <returns>The last element of a sequence, or a default value if the sequence contains no elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,6 +691,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -609,11 +704,13 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to retrieve an element from.</param>
+        <param name="predicate">The delegate that defines the conditions of the element to search for.</param>
+        <summary>  
+  
+ Returns the last element of a sequence that satisfies a condition or a default value if no such element is found.</summary>
+        <returns>The last element of a sequence, or a default value if the sequence contains no elements.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -626,6 +723,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
@@ -639,12 +737,14 @@
         <Parameter Name="selector" Type="System.Func&lt;T,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="selector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <typeparam name="TResult">The type of the result element.</typeparam>
+        <param name="immutableArray">The immutable array to select items from.</param>
+        <param name="selector">A transform function to apply to each element.</param>
+        <summary>  
+  
+ Projects each element of a sequence into a new form.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements are the result of invoking the transform function on each element of source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -657,6 +757,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
@@ -672,14 +773,14 @@
         <Parameter Name="resultSelector" Type="System.Func&lt;TSource,TCollection,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <typeparam name="TCollection">To be added.</typeparam>
-        <typeparam name="TResult">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="collectionSelector">To be added.</param>
-        <param name="resultSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements of <c>immutableArray</c>.</typeparam>
+        <typeparam name="TCollection">The type of the intermediate elements collected by <c>collectionSelector</c>.</typeparam>
+        <typeparam name="TResult">The type of the elements of the resulting sequence.</typeparam>
+        <param name="immutableArray">The immutable array.</param>
+        <param name="collectionSelector">A transform function to apply to each element of the input sequence.</param>
+        <param name="resultSelector">A transform function to apply to each element of the intermediate sequence.</param>
+        <summary>Projects each element of a sequence to an <see cref="T:System.Collections.Generic.IEnumerable`1" />,             flattens the resulting sequences into one sequence, and invokes a result             selector function on each element therein.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> whose elements are the result             of invoking the one-to-many transform function <paramref name="collectionSelector" /> on each             element of <paramref name="immutableArray" /> and then mapping each of those sequence elements and their             corresponding source element to a result element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,6 +793,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -710,13 +812,16 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TBase&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TDerived">To be added.</typeparam>
-        <typeparam name="TBase">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="items">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TDerived">The type of element in the compared array.</typeparam>
+        <typeparam name="TBase">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to use for comparison.</param>
+        <param name="items">The items to use for comparison.</param>
+        <param name="comparer">The comparer to use to check for equality.</param>
+        <summary>  
+  
+ Determines whether two sequences are equal according to an equality comparer.</summary>
+        <returns>
+          <see langword="true" /> to indicate the sequences are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,6 +834,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -747,13 +853,16 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TBase&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TDerived">To be added.</typeparam>
-        <typeparam name="TBase">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="items">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TDerived">The type of element in the compared array.</typeparam>
+        <typeparam name="TBase">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to use for comparison.</param>
+        <param name="items">The items to use for comparison.</param>
+        <param name="comparer">The comparer to use to check for equality.</param>
+        <summary>  
+  
+ Determines whether two sequences are equal according to an equality comparer.</summary>
+        <returns>
+          <see langword="true" /> to indicate the sequences are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -766,6 +875,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -784,13 +894,16 @@
         <Parameter Name="predicate" Type="System.Func&lt;TBase,TBase,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TDerived">To be added.</typeparam>
-        <typeparam name="TBase">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="items">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TDerived">The type of element in the compared array.</typeparam>
+        <typeparam name="TBase">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to use for comparison.</param>
+        <param name="items">The items to use for comparison.</param>
+        <param name="predicate">The comparer to use to check for equality.</param>
+        <summary>  
+  
+ Determines whether two sequences are equal according to an equality comparer.</summary>
+        <returns>
+          <see langword="true" /> to indicate the sequences are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -803,6 +916,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -814,10 +928,12 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to retrieve the element from.</param>
+        <summary>  
+  
+ Returns the only element of a sequence, and throws an exception if there is not exactly one element in the sequence.</summary>
+        <returns>The element in the sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,6 +946,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -842,11 +959,13 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">To be added.</param>
         <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>  
+  
+ Returns the only element of a sequence that satisfies a specified condition, and throws an exception if more than one such element exists.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -859,6 +978,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -870,10 +990,12 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>  
+  
+ Returns the only element of the array, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.</summary>
+        <returns>The element in the array, or the default value if the array is empty.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -886,6 +1008,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -898,11 +1021,13 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to get the element from.</param>
+        <param name="predicate">The condition the element must satisfy.</param>
+        <summary>  
+  
+ Returns the only element of a sequence that satisfies a specified condition or a default value if no such element exists; this method throws an exception if more than one element satisfies the condition.</summary>
+        <returns>The element if it satisfies the specified condition; otherwise the default element.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -915,6 +1040,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -926,10 +1052,12 @@
         <Parameter Name="immutableArray" Type="System.Collections.Immutable.ImmutableArray&lt;T&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
         <param name="immutableArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>  
+  
+ Copies the contents of this array to a mutable array.</summary>
+        <returns>The newly instantiated array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,6 +1070,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,T&gt;</ReturnType>
@@ -955,12 +1084,14 @@
         <Parameter Name="keySelector" Type="System.Func&lt;T,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the key.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to create a dictionary from.</param>
+        <param name="keySelector">The key selector.</param>
+        <summary>  
+  
+ Creates a dictionary based on the contents of this array.</summary>
+        <returns>The newly initialized dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -973,6 +1104,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,T&gt;</ReturnType>
@@ -987,13 +1119,15 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the key.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to create a dictionary from.</param>
+        <param name="keySelector">The key selector.</param>
+        <param name="comparer">The comparer to initialize the dictionary with.</param>
+        <summary>  
+  
+ Creates a dictionary based on the contents of this array.</summary>
+        <returns>The newly initialized dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1006,6 +1140,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,TElement&gt;</ReturnType>
@@ -1021,14 +1156,16 @@
         <Parameter Name="elementSelector" Type="System.Func&lt;T,TElement&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TElement">To be added.</typeparam>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="elementSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the key.</typeparam>
+        <typeparam name="TElement">The type of the element.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to create a dictionary from.</param>
+        <param name="keySelector">The key selector.</param>
+        <param name="elementSelector">The element selector.</param>
+        <summary>  
+  
+ Creates a dictionary based on the contents of this array.</summary>
+        <returns>The newly initialized dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1041,6 +1178,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;TKey,TElement&gt;</ReturnType>
@@ -1057,15 +1195,17 @@
         <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TElement">To be added.</typeparam>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="elementSelector">To be added.</param>
-        <param name="comparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the key.</typeparam>
+        <typeparam name="TElement">The type of the element.</typeparam>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to create a dictionary from.</param>
+        <param name="keySelector">The key selector.</param>
+        <param name="elementSelector">The element selector.</param>
+        <param name="comparer">The comparer to initialize the dictionary with.</param>
+        <summary>  
+  
+ Creates a dictionary based on the contents of this array.</summary>
+        <returns>The newly initialized dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1078,6 +1218,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -1090,11 +1231,13 @@
         <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="immutableArray">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of element contained by the collection.</typeparam>
+        <param name="immutableArray">The array to filter.</param>
+        <param name="predicate">The condition to use for filtering the array content.</param>
+        <summary>  
+  
+ Filters a sequence of values based on a predicate.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains elements that meet the condition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

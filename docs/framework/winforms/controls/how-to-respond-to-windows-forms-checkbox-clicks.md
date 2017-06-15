@@ -2,7 +2,7 @@
 title: "How to: Respond to Windows Forms CheckBox Clicks | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
           CheckBox1.Text = "Unchecked"  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -57,7 +56,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
           checkBox1.Text = "Unchecked";  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -99,7 +97,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
              ' Code for indeterminate state.  
        End Select   
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -118,7 +115,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
              break;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -141,7 +137,7 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
     ```  
   
     > [!NOTE]
-    >  When the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property returns `true` for both <xref:System.Windows.Forms.CheckState> and <xref:System.Windows.Forms.CheckState>.  
+    >  When the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property returns `true` for both <xref:System.Windows.Forms.CheckState.Checked> and <xref:System.Windows.Forms.CheckState.Indeterminate>.  
   
 ## See Also  
  <xref:System.Windows.Forms.CheckBox>   

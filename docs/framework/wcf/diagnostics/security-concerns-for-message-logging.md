@@ -35,7 +35,7 @@ This topic describes how you can protect sensitive data from being exposed in me
   
  By default, keys and personally identifiable information (PII) such as username and password are not logged in traces and logged messages. A machine administrator, however, can use the `enableLoggingKnownPII` attribute in the `machineSettings` element of the Machine.config file to permit applications running on the machine to log known personally identifiable information (PII). The following configuration demonstrates how to do this:  
   
-```  
+```xml  
 <configuration>  
    <system.serviceModel>  
       <machineSettings enableLoggingKnownPii="true"/>  
@@ -45,7 +45,7 @@ This topic describes how you can protect sensitive data from being exposed in me
   
  An application deployer can then use the `logKnownPii` attribute in either the App.config or Web.config file to enable PII logging as follows:  
   
-```  
+```xml  
 <system.diagnostics>  
   <sources>  
       <source name="System.ServiceModel.MessageLogging"  
@@ -67,7 +67,7 @@ This topic describes how you can protect sensitive data from being exposed in me
   
  You should be aware that if you specify two or more custom sources in a configuration file, only the attributes of the first source are read. The others are ignored. This means that, for the following App.config, file, PII is not logged for both sources even though PII logging is explicitly enabled for the second source.  
   
-```  
+```xml  
 <system.diagnostics>  
    <sources>  
       <source name="System.ServiceModel.MessageLogging"  

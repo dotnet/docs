@@ -2,7 +2,7 @@
 title: "&lt;httpListener&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,8 +30,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
 ## Syntax  
   
-```  
-  
+```xml  
       <httpListener  
   unescapeRequestUrl ="true|false"  
 />  
@@ -128,7 +127,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Example  
  The following code example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  

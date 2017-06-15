@@ -53,7 +53,7 @@ The `loadFromContext` managed debugging assistant (MDA) is activated if an assem
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <loadFromContext />  

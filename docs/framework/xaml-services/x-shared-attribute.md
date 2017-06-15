@@ -24,9 +24,9 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <ResourceDictionary>  
-  <object x:Shared="false".../>  
+  <object x:Shared="false".../>  
 </ResourceDictionary>  
 ```  
   

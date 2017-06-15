@@ -2,7 +2,7 @@
 title: "How to: Set the Background of a Windows Forms Panel | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,12 +31,10 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
   
     ```vb  
     Panel1.BackColor = Color.AliceBlue  
-  
     ```  
   
     ```csharp  
     panel1.BackColor = Color.AliceBlue;  
-  
     ```  
   
     ```cpp  
@@ -52,7 +50,6 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
         (System.Environment.GetFolderPath _  
         (System.Environment.SpecialFolder.Personal) _  
         & "\Image.gif")  
-  
     ```  
   
     ```csharp  
@@ -63,7 +60,6 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
        (System.Environment.GetFolderPath  
        (System.Environment.SpecialFolder.Personal)  
        + @"\Image.gif");  
-  
     ```  
   
     ```cpp  

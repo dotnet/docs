@@ -2,7 +2,7 @@
 title: "Authorizing Access to Service Operations | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,11 +29,10 @@ This sample demonstrates how to use the [\<serviceAuthorization>](../../../../do
   
  The service configuration file uses the [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to set the `principalPermissionMode` attribute:  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
-    <behavior>  
-      ...  
+    <behavior>   
       <!-- The serviceAuthorization behavior sets the  
            principalPermissionMode to UseWindowsGroups.  
            This puts a WindowsPrincipal on the current thread when a   

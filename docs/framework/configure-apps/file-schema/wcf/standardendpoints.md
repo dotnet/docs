@@ -2,7 +2,7 @@
 title: "&lt;standardEndpoints&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,7 @@ This configuration section allows you to define a collection of standard endpoin
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
     <standardEndpoints>  
     </standardEndpoints>  

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostCrst::TryEnter method [.NET Framework hosting]"
   - "TryEnter method [.NET Framework hosting]"
 ms.assetid: a922fa98-beab-4f09-a342-cc94fc65687f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "&lt;add&gt; Element for schemeSettings (Uri Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,9 +30,8 @@ Adds a scheme setting for a scheme name.
   
 ## Syntax  
   
-```  
-  
-      <add   
+```xml  
+      <add   
    name = "http|https" genericUriParserOptions="DontUnescapePathDotsAndSlashes"  
 />  
 ```  
@@ -82,7 +81,7 @@ Adds a scheme setting for a scheme name.
 ## Example  
  The following code example shows a configuration used by the <xref:System.Uri> class to support not escaping percent-encoded path delimiters for the http scheme.  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <schemeSettings>  

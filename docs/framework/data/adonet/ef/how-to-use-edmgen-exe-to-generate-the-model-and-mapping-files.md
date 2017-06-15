@@ -2,7 +2,7 @@
 title: "How to: Use EdmGen.exe to Generate the Model and Mapping Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +51,6 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
     /c:"Data Source=%datasourceserver%; Initial Catalog=School; Integrated Security=SSPI"   
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:VB  
-  
     ```  
   
 ### To generate the School model for a C# project using EdmGen.exe  

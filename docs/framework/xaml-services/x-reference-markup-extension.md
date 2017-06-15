@@ -24,16 +24,16 @@ References an instance that is declared elsewhere in XAML markup. The reference 
   
 ## XAML Attribute Usage  
   
-```  
-<object property="{x:Reference instancexName}" .../>  
+```xaml  
+<object property="{x:Reference instancexName}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <object>  
   <object.property>  
-    <x:Reference Name="instancexName"/>  
+    <x:Reference Name="instancexName"/>  
   </object.property>  
 </object>  
 ```  

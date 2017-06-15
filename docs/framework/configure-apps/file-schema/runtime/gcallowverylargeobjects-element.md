@@ -2,7 +2,7 @@
 title: "&lt;gcAllowVeryLargeObjects&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
   
 ## Syntax  
   
-```  
+```xml  
 <gcAllowVeryLargeObjects    
    enabled="true|false" />  
 ```  
@@ -78,7 +78,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 ## Example  
  The following example shows how to enable this feature for an application.  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <gcAllowVeryLargeObjects enabled="true" />  

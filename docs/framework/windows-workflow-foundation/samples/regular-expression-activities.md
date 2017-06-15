@@ -2,7 +2,7 @@
 title: "Regular Expression Activities | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -44,7 +44,6 @@ new IsMatch
     Pattern = new InArgument<string>( @"^-?\d+(\.\d{2})?$"),  
     Input = "20.00",  
 };  
-  
 ```  
   
 ## Matches  
@@ -67,7 +66,6 @@ new Matches
     Pattern = @"\b(?<word>\w+)\s+(\k<word>)\b",  
     Input = "The quick brown fox  fox jumped over over the lazy dog dog.",  
 };  
-  
 ```  
   
 ## Replace  
@@ -102,7 +100,6 @@ new Replace
     Input = new InArgument<string>(input),  
     MatchEvaluator = new MatchEvaluator(CapText)                  
 };  
-  
 ```  
   
 #### To use this sample  

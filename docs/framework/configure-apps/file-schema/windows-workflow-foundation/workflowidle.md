@@ -2,7 +2,7 @@
 title: "&lt;workflowIdle&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;workflowIdle&gt;
 A service behavior that controls when idle workflow instances are unloaded and persisted.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,15 @@ A service behavior that controls when idle workflow instances are unloaded and p
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowIdle timeToPersist=”TimeSpan”          timeToUnload=”TimeSpan” />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <workflowIdle timeToPersist="TimeSpan" 
+                    timeToUnload="TimeSpan" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

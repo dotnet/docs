@@ -2,7 +2,7 @@
 title: "Throttling | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ The Throttling sample demonstrates the use of throttling controls. Throttling co
   
  The service configuration file specifies throttling controls in a [\<serviceThrottling>](../../../../docs/framework/configure-apps/file-schema/wcf/servicethrottling.md), as shown in the following sample configuration.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="CalculatorServiceBehavior">  
@@ -52,13 +52,11 @@ public double Add(double n1, double n2)
     System.Threading.Thread.Sleep(2000);  
     return n1 + n2;  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The Add and Subtract methods are executed concurrently and the Multiply and Divide methods are executed concurrently proving that not more than 2 methods can be executed concurrently thus demonstrating throttling.  
   
 ```  
-  
 Press <ENTER> to terminate client.  
 Add(100,15.99)  
 Subtract(145,76.54)  

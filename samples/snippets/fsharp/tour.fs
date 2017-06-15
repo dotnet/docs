@@ -7,10 +7,10 @@
 //
 // For more about F#, see:
 //     http://fsharp.org
-//     https://docs.microsoft.com/dotnet/articles/fsharp/
+//     https://docs.microsoft.com/dotnet/fsharp/
 //
 // To see this tutorial in documentation form, see:
-//     https://docs.microsoft.com/dotnet/articles/fsharp/tour
+//     https://docs.microsoft.com/dotnet/fsharp/tour
 //
 // To learn more about applied F# programming, use
 //     http://fsharp.org/guides/enterprise/
@@ -33,19 +33,19 @@
 ///
 ///    They also support .NET-style XML comments, which allow you to generate reference documentation,
 ///    and they also allow editors (such as Visual Studio) to extract information from them.
-///    To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/xml-documentation
+///    To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/xml-documentation
 
 
 // Open namespaces using the 'open' keyword.
 //
-// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/import-declarations-the-open-keyword
+// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/import-declarations-the-open-keyword
 open System
 
 
 /// Modules are the primary way to organize functions and values in F#. This module contains some
 /// basic values involving basic numeric values computed in a few different ways.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/modules
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/modules
 module IntegersAndNumbers = 
 
     /// This is a sample integer.
@@ -71,7 +71,7 @@ module IntegersAndNumbers =
 /// Values in F# are immutable by default.  They cannot be changed
 /// in the course of a program's execution unless explicitly marked as mutable.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/values/index#why-immutable
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#why-immutable
 module Immutability =
 
     /// Binding a value to a name via 'let' makes it immutable.
@@ -97,7 +97,7 @@ module Immutability =
 /// Much of F# programming consists of defining functions that transform input data to produce
 /// useful results.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/functions/
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/
 module BasicFunctions = 
 
     /// You use 'let' to define a function. This one accepts an integer argument and returns an integer. 
@@ -136,9 +136,9 @@ module BasicFunctions =
 /// Booleans are fundamental data types in F#.  Here are some examples of Booleans and conditional logic.
 ///
 /// To learn more, see: 
-///     https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/primitive-types
+///     https://docs.microsoft.com/dotnet/fsharp/language-reference/primitive-types
 ///     and
-///     https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/symbol-and-operator-reference/boolean-operators
+///     https://docs.microsoft.com/dotnet/fsharp/language-reference/symbol-and-operator-reference/boolean-operators
 module Booleans =
 
     /// Booleans values are 'true' and 'false'.
@@ -154,7 +154,7 @@ module Booleans =
 
 /// Strings are fundamental data types in F#.  Here are some examples of Strings and basic String manipulation.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/strings
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/strings
 module StringManipulation = 
 
     /// Strings use double quotes.
@@ -182,7 +182,7 @@ module StringManipulation =
 
 /// Tuples are simple combinations of data values into a combined value.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/tuples
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/tuples
 module Tuples =
 
     /// A simple tuple of integers.
@@ -222,8 +222,8 @@ module Tuples =
 /// are used extensively when processing data.  These operators are themselves functions
 /// which make use of Partial Application.
 ///
-/// To learn more about these operators, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/functions/#function-composition-and-pipelining
-/// To learn more about Partial Application, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/functions/#partial-application-of-arguments
+/// To learn more about these operators, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/#function-composition-and-pipelining
+/// To learn more about Partial Application, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/#partial-application-of-arguments
 module PipelinesAndComposition =
 
     /// Squares a value.
@@ -305,7 +305,7 @@ module PipelinesAndComposition =
 /// This module shows various ways to generate lists and process lists with some functions
 /// in the 'List' module in the F# Core Library.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/lists
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/lists
 module Lists =
 
     /// Lists are defined using [ ... ].  This is an empty list.
@@ -364,7 +364,7 @@ module Lists =
 /// Although they are similar to Lists (they support enumeration and have similar combinators for data processing),
 /// they are generally faster and support fast random access.  This comes at the cost of being less safe by being mutable.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/arrays
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/arrays
 module Arrays =
 
     /// This is The empty array.  Note that the syntax is similar to that of Lists, but uses `[| ... |]` instead.
@@ -394,7 +394,7 @@ module Arrays =
 
     // You can modify the contents of an an array element by using the left arrow assignment operator.
     //
-    // To learn more about this operator, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/values/index#mutable-variables
+    // To learn more about this operator, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/values/index#mutable-variables
     array2.[1] <- "WORLD!"
 
     /// You can transform arrays using 'Array.map' and other functional programming operations.
@@ -414,7 +414,7 @@ module Arrays =
 ///
 /// Sequence processing functions can be applied to Lists and Arrays as well.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/sequences
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/sequences
 module Sequences = 
 
     /// This is the empty sequence.
@@ -457,7 +457,7 @@ module Sequences =
 ///
 /// Recursion is the preferred way to process sequences or collections in F#.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/functions/index#recursive-functions
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/functions/index#recursive-functions
 module RecursiveFunctions = 
               
     /// This example shows a recursive function that computes the factorial of an 
@@ -503,7 +503,7 @@ module RecursiveFunctions =
 /// Records are an aggregate of named values, with optional members (such as methods).
 /// They are immutable and have structural equality semantics.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/records
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/records
 module RecordTypes = 
 
     /// This example shows how to define a new record type.  
@@ -525,7 +525,7 @@ module RecordTypes =
     /// a new record value that is a copy of contact1, but has different values for 
     /// the 'Phone' and 'Verified' fields.
     ///
-    /// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/copy-and-update-record-expressions
+    /// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/copy-and-update-record-expressions
     let contact2 = 
         { contact1 with 
             Phone = "(206) 555-0112"
@@ -571,7 +571,7 @@ module RecordTypes =
 /// Discriminated Unions (DU for short) are values which could be a number of named forms or cases.
 /// Data stored in DUs can be one of several distinct values.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/discriminated-unions
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/discriminated-unions
 module DiscriminatedUnions = 
 
     /// The following represents the suit of a playing card.
@@ -701,7 +701,7 @@ module DiscriminatedUnions =
 /// decompose data into constituent parts, or extract information from data in various ways.
 /// You can then dispatch on the "shape" of a pattern via Pattern Matching.
 /// 
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/pattern-matching
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/pattern-matching
 module PatternMatching =
 
     /// A record for a person's first and last name
@@ -761,7 +761,7 @@ module PatternMatching =
     // Active Patterns are another powerful construct to use with pattern matching.
     // They allow you to partition input data into custom forms, decomposing them at the pattern match call site. 
     //
-    // To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/active-patterns
+    // To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/active-patterns
     let (|Int|_|) = parseInt
     let (|Double|_|) = parseDouble
     let (|Date|_|) = parseDateTimeOffset
@@ -787,7 +787,7 @@ module PatternMatching =
 /// They are used extensively in F# code to represent the cases where many other
 /// languages would use null references.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/options
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/options
 module OptionValues = 
 
     /// First, define a zip code defined via Single-case Discriminated Union.
@@ -814,7 +814,7 @@ module OptionValues =
 /// Units of measure are a way to annotate primitive numeric types in a type-safe way.
 /// You can then perform type-safe arithmetic on these values.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/units-of-measure
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/units-of-measure
 module UnitsOfMeasure = 
 
     /// First, open a collection of common unit names
@@ -842,9 +842,9 @@ module UnitsOfMeasure =
 /// Classes are a way of defining new object types in F#, and support standard Object-oriented constructs.
 /// They can have a variety of members (methods, properties, events, etc.)
 ///
-/// To learn more about Classes, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/classes
+/// To learn more about Classes, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/classes
 ///
-/// To learn more about Members, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/members
+/// To learn more about Members, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/members
 module DefiningClasses = 
 
     /// A simple two-dimensional Vector class.
@@ -880,7 +880,7 @@ module DefiningClasses =
 /// Generic classes allow types to be defined with respect to a set of type parameters.
 /// In the following, 'T is the type parameter for the class.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/generics/
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/generics/
 module DefiningGenericClasses = 
 
     type StateTracker<'T>(initialElement: 'T) = 
@@ -908,7 +908,7 @@ module DefiningGenericClasses =
 /// Interfaces are object types with only 'abstract' members.
 /// Object types and object expressions can implement interfaces.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/interfaces
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/interfaces
 module ImplementingInterfaces =
 
     /// This is a type that implements IDisposable.
@@ -957,7 +957,7 @@ module ParallelArrayProgramming =
 
 /// Events are a common idiom for .NET programming, especially with WinForms or WPF applications.
 ///
-/// To learn more, see: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/members/events
+/// To learn more, see: https://docs.microsoft.com/dotnet/fsharp/language-reference/members/events
 module Events =
 
     /// First, create instance of Event object that consists of subscription point (event.Publish) and event trigger (event.Trigger).

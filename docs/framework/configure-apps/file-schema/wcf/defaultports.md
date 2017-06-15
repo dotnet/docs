@@ -2,7 +2,7 @@
 title: "&lt;defaultPorts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;defaultPorts&gt;
 A collection of default ports listing the default communications endpoints that the client application listens to.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -27,9 +27,12 @@ A collection of default ports listing the default communications endpoints that 
   
 ## Syntax  
   
-```  
-  
-<useRequestHeadersForMetadataAddress>   <defaultPorts>      <add scheme="http" port="integer" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
+```xml  
+<useRequestHeadersForMetadataAddress>
+  <defaultPorts>
+    <add scheme="http" port="integer" />
+  </defaultPorts>
+</useRequestHeadersForMetadataAddress>  
 ```  
   
 ## Attributes and Elements  

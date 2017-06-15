@@ -27,7 +27,7 @@ manager: "wpickett"
   
  The <xref:System.Xml.Xsl.XslTransform> object in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] only supports the XSLT 1.0 specification, defined with the following namespace:  
   
-```  
+```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">    
 ```  
   
@@ -43,37 +43,30 @@ manager: "wpickett"
   
 ```vb  
 Overloads Public Sub Load(String)  
-  
 ```  
   
 ```csharp  
 public void Load(string);  
-  
 ```  
   
 ```vb  
 Overloads Public Sub Load(String, XmlResolver)  
-  
 ```  
   
 ```csharp  
 public void Load(string, XmlResolver);  
-  
 ```  
   
 ```vb  
 Overloads Public Sub Load(XmlReader, XmlResolver, Evidence)  
-  
 ```  
   
 ```csharp  
 public void Load(XmlReader, XmlResolver, Evidence);  
-  
 ```  
   
 ```vb  
 Overloads Public Sub Load(XPathNavigator, XmlResolver, Evidence)  
-  
 ```  
   
 ```csharp  
@@ -142,7 +135,6 @@ public void Load(XPathNavigator, XmlResolver, Evidence);
 Dim xsltransform As XslTransform = New XslTransform()  
 xsltransform.Load("favorite.xsl")  
 xsltransform.Transform("MyDocument.Xml", "TransformResult.xml", Nothing)  
-  
 ```  
   
 ```csharp  
@@ -167,7 +159,6 @@ tmpDoc.LoadXml(testNode.OuterXml)
 ' to the Transform method.  
 Console.WriteLine(("Passing " + tmpDoc.OuterXml + " to print_root.xsl"))  
 xslt.Transform(tmpDoc, Nothing, Console.Out, Nothing)  
-  
 ```  
   
 ```csharp  
@@ -194,12 +185,12 @@ Root node is book.
   
  library.xml  
   
-```  
+```xml  
 <library>  
-  \<book genre='novel' ISBN='1-861001-57-5'>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
   </book>  
-  \<book genre='novel' ISBN='1-81920-21-2'>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
      <title>Hook</title>  
   </book>  
 </library>  
@@ -207,11 +198,11 @@ Root node is book.
   
  print_root.xsl  
   
-```  
+```xml  
 <stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
-     Root node is  \<value-of select="local-name(//*[position() = 1])" />   
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
 </stylesheet>  
 ```  

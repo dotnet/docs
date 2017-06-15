@@ -2,7 +2,7 @@
 title: "ICorDebugSymbolProvider::GetAssemblyImageBytes Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,13 +23,11 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
 ## Syntax  
   
 ```  
-  
 HRESULT GetAssemblyImageBytes(  
    [in] CORDB_ADDRESS rva,   
    [in] ULONG32 length,   
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
-  
 ```  
   
 #### Parameters  

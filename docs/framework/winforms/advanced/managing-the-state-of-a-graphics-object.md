@@ -29,7 +29,6 @@ The <xref:System.Drawing.Graphics> class is at the heart of [!INCLUDE[ndptecgdip
 Dim graphics As Graphics = e.Graphics  
 Dim pen As New Pen(Color.Blue) ' Opaque blue  
 graphics.DrawRectangle(pen, 10, 10, 200, 100)  
-  
 ```  
   
 ```csharp  
@@ -50,7 +49,7 @@ graphics.DrawRectangle(pen, 10, 10, 200, 100);
 ### Quality Settings  
  A <xref:System.Drawing.Graphics> object has several properties that influence the quality of the items that are drawn. For example, you can set the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property to specify the type of antialiasing (if any) applied to text. Other properties that influence quality are <xref:System.Drawing.Graphics.SmoothingMode%2A>, <xref:System.Drawing.Graphics.CompositingMode%2A>, <xref:System.Drawing.Graphics.CompositingQuality%2A>, and <xref:System.Drawing.Graphics.InterpolationMode%2A>.  
   
- The following example draws two ellipses, one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode> and one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode>:  
+ The following example draws two ellipses, one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode.AntiAlias> and one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode.HighSpeed>:  
   
 ```vb  
 Dim graphics As Graphics = e.Graphics  
@@ -60,7 +59,6 @@ graphics.SmoothingMode = SmoothingMode.AntiAlias
 graphics.DrawEllipse(pen, 0, 0, 200, 100)  
 graphics.SmoothingMode = SmoothingMode.HighSpeed  
 graphics.DrawEllipse(pen, 0, 150, 200, 100)  
-  
 ```  
   
 ```csharp  
@@ -87,7 +85,6 @@ graphics.RotateTransform(30) ' world transformation
 graphics.DrawEllipse(pen, 0, 0, 100, 50)  
 graphics.PageUnit = GraphicsUnit.Millimeter ' page transformation  
 graphics.DrawEllipse(pen, 0, 0, 100, 50)  
-  
 ```  
   
 ```csharp  
@@ -130,7 +127,6 @@ graphics.SetClip([region], CombineMode.Replace)
 ' Draw two clipped lines.  
 graphics.DrawLine(pen, 0, 30, 150, 160)  
 graphics.DrawLine(pen, 40, 20, 190, 150)  
-  
 ```  
   
 ```csharp  

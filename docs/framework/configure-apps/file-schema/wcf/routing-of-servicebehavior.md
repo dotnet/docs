@@ -2,7 +2,7 @@
 title: "&lt;routing&gt; of &lt;serviceBehavior&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,16 @@ Provides run-time access to the routing service to allow dynamic modification of
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <routing filterTable=”String”         routeOnHeadersOnly="Boolean"         SoapProcessingEnabled=”Boolean” />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <routing filterTable="String" 
+               routeOnHeadersOnly="Boolean" 
+               SoapProcessingEnabled="Boolean" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

@@ -28,8 +28,8 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
   
 ## XAML Attribute Usage  
   
-```  
-<object x:Name="XAMLNameValue".../>  
+```xaml  
+<object x:Name="XAMLNameValue".../>  
 ```  
   
 ## XAML Values  

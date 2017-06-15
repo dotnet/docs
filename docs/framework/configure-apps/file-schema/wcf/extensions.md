@@ -2,7 +2,7 @@
 title: "&lt;extensions&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,7 @@ manager: "erikre"
 # &lt;extensions&gt;
 This configuration element contains a collection of XML elements that contain custom metadata to be published along with the standard discoverable metadata (EPR, ContractTypeName, BindingName, Scope and ListenURI). The following is an example of using this configuration element.  
   
-```  
-  
+```xml  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -50,7 +49,6 @@ This configuration element contains a collection of XML elements that contain cu
     </behavior>  
   </endpointBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

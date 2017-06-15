@@ -1,5 +1,5 @@
 ---
-title: C# Interactive | C# Guide
+title: C# Interactive - C# Guide | Microsoft Docs
 description: Explore the C# Interactive Shell and use it to explore APIs and frameworks
 keywords: .NET, .NET Core, C#
 ms.date: 06/25/2016
@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: abed9e00-2ddc-468e-9cca-d033bd6a7e36
+redirect_url: /dotnet/articles/csharp/index
 ---
 
 # 🔧 C# Interactive 

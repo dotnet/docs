@@ -2,7 +2,7 @@
 title: "&lt;userDefinedType&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,8 +25,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
   
 ## Syntax  
   
-```  
-  
+```xml  
 <comContracts>  
   <comContract>  
       <userDefinedTypes>  
@@ -68,7 +67,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
   
  The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
   
-```  
+```xml  
 <comContracts>  
   <comContract  
       contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  

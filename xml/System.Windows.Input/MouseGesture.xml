@@ -54,7 +54,7 @@
    
   
 ## Examples  
- The following example shows to create a <xref:System.Windows.Input.MouseGesture> and associate it with a <xref:System.Windows.Input.RoutedCommand> through a <xref:System.Windows.Input.MouseBinding>.  When the mouse wheel is clicked while the <xref:System.Windows.Input.ModifierKeys> key is pressed, the <xref:System.Windows.Input.ApplicationCommands.Open%2A> is invoked.  
+ The following example shows to create a <xref:System.Windows.Input.MouseGesture> and associate it with a <xref:System.Windows.Input.RoutedCommand> through a <xref:System.Windows.Input.MouseBinding>.  When the mouse wheel is clicked while the <xref:System.Windows.Input.ModifierKeys.Control> key is pressed, the <xref:System.Windows.Input.ApplicationCommands.Open%2A> is invoked.  
   
  [!code-xml[commandlibrarysnippets#MouseBindingMouseGestureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmousegesturexaml)]  
   

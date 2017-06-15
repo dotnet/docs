@@ -2,7 +2,7 @@
 title: "&lt;httpWebRequest&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,8 +36,7 @@ Customizes Web request parameters.
   
 ## Syntax  
   
-```  
-  
+```xml  
       <httpWebRequest  
   maximumResponseHeadersLength="size"  
   maximumErrorResponseLength="size"  
@@ -76,7 +75,7 @@ Customizes Web request parameters.
 ## Example  
  The following code example shows how to specify a larger than normal maximum header length.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  

@@ -61,12 +61,11 @@ using static System.Console;
 using static System.Math;  
 class Program   
 {   
-    static void Main()   
-    {   
-        WriteLine(Sqrt(3*3 + 4*4));   
-    }   
+    static void Main()   
+    {   
+        WriteLine(Sqrt(3*3 + 4*4));   
+    }   
 }  
-  
 ```  
   
 ## Remarks  
@@ -95,7 +94,7 @@ class Program
  [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_2.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

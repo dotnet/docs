@@ -2,7 +2,7 @@
 title: "Shapes and Basic Drawing in WPF Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -91,10 +91,8 @@ This topic gives an overview of how to draw with              <xref:System.Windo
  In                          [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], you may also use a special abbreviated syntax to describe a                          <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
   
 ```xaml  
-  
       <Path Stroke="DarkGoldenRod" StrokeThickness="3"   
 Data="M 100,200 C 100,25 400,350 400,175 H 280" />  
-  
 ```  
   
  The following image shows a rendered                          <xref:System.Windows.Shapes.Path>.  
@@ -112,9 +110,8 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's                  <xref:System.Windows.Shapes.Shape.Stroke%2A> and                  <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an                  <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color                  keywords                 , see properties of the                  <xref:System.Windows.Media.Colors> class in the                  <xref:System.Windows.Media> namespace                 .  
   
 ```  
-  
 <Canvas Background="LightGray">   
-   \<Ellipse  
+   <Ellipse  
       Canvas.Top="50"  
       Canvas.Left="50"  
       Fill="#FFFFFF00"  
@@ -123,7 +120,6 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
       StrokeThickness="5"  
       Stroke="#FF0000FF"/>  
 </Canvas>  
-  
 ```  
   
  The following image shows the rendered                  <xref:System.Windows.Shapes.Ellipse>.  
@@ -133,8 +129,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
  Alternatively, you can use                  property element syntax                  to explicitly create a                  <xref:System.Windows.Media.SolidColorBrush> object to paint the shape with a solid color.  
   
 ```  
-  
-\<!-- This polygon shape uses pre-defined color values for its Stroke and  
+<!-- This polygon shape uses pre-defined color values for its Stroke and  
      Fill properties.   
      The SolidColorBrush's Opacity property affects the fill color in   
      this case by making it slightly transparent (opacity of 0.4) so   
@@ -144,9 +139,9 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
     Points="300,200 400,125 400,275 300,200"  
     Stroke="Purple"   
     StrokeThickness="2">  
-    \<Polygon.Fill>  
+    <Polygon.Fill>  
        <SolidColorBrush Color="Blue" Opacity="0.4"/>  
-    \</Polygon.Fill>  
+    </Polygon.Fill>  
 </Polygon>  
 ```  
   
@@ -162,13 +157,13 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The Stretch property takes one of the following values:  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are not stretched.  
+-   <xref:System.Windows.Media.Stretch.None>: The                          <xref:System.Windows.Shapes.Shape> object's contents are not stretched.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to fill its layout space.  Aspect ratio is not preserved.  
+-   <xref:System.Windows.Media.Stretch.Fill>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to fill its layout space.  Aspect ratio is not preserved.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched as much as possible to fill its layout space while preserving its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.Uniform>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched as much as possible to fill its layout space while preserving its original aspect ratio.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to completely fill its layout space while preserving its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to completely fill its layout space while preserving its original aspect ratio.  
   
  Note that, when a                  <xref:System.Windows.Shapes.Shape> object's contents are stretched, the                  <xref:System.Windows.Shapes.Shape> object's outline is painted after the stretching.  
   
@@ -229,5 +224,5 @@ myPolygon.StrokeThickness = 2;
  [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
  [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
- [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

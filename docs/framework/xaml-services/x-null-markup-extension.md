@@ -30,8 +30,8 @@ Specifies `null` as a value for a XAML member.
   
 ## XAML Attribute Usage  
   
-```  
-<object property="{x:Null}" .../>  
+```xaml  
+<object property="{x:Null}" .../>  
 ```  
   
 ## Remarks  

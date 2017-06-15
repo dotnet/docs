@@ -2,7 +2,7 @@
 title: "&lt;namespaceTable&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,12 +25,11 @@ Represents a configuration section for defining a set of elements that contain n
 ## Syntax  
   
 ```vb  
-   <routing>   <namespaceTable>  
-     <add namespace="String" prefix="String" />    </namespaceTable></routing>  
+   <routing>   <namespaceTable>  
+     <add namespace="String" prefix="String" />    </namespaceTable></routing>  
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

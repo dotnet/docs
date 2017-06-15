@@ -2,6 +2,7 @@
 title: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -151,7 +152,6 @@ manager: "mbaldwin"
 2.  In the **Solution Explorer** expand **Views** and then **Home** folders and open *Index.cshtml* file in the editor. Delete its contents and add the following markup:  
   
     ```html  
-  
     @{  
         ViewBag.Title = "Home Page";  
     }  
@@ -215,7 +215,6 @@ manager: "mbaldwin"
         </tr>  
     }  
     </table>  
-  
     ```  
   
 3.  Run the solution by pressing the **F5** key.  

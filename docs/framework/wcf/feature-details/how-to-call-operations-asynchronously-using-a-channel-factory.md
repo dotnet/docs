@@ -2,7 +2,7 @@
 title: "How to: Call Operations Asynchronously Using a Channel Factory | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,6 @@ This topic covers how a client can access a service operation asynchronously whe
   
     ```  
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a  
-  
     ```  
   
      This generates an asynchronous client version of the service contract for the operation.  

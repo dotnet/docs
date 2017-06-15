@@ -2,7 +2,7 @@
 title: "&lt;PreferComInsteadOfManagedRemoting&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
   
 ## Syntax  
   
-```  
+```xml  
 <PreferComInsteadOfManagedRemoting enabled="true|false"/>  
 ```  
   
@@ -74,7 +74,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 ## Example  
  The following example shows how to specify that the runtime should use COM interop across isolation boundaries:  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <PreferComInsteadOfManagedRemoting enabled="true"/>  

@@ -2,7 +2,7 @@
 title: "Transacted Batching | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,7 +54,7 @@ This sample demonstrates how to batch transacted reads by using Message Queuing 
   
 2.  If your computer is not part of a domain or does not have active directory integration installed, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <behaviors>  
         <serviceBehaviors>  
@@ -100,7 +100,6 @@ This sample demonstrates how to batch transacted reads by using Message Queuing 
       </bindings>  
   
     </system.serviceModel>  
-  
     ```  
   
 3.  Ensure that you change the configuration on both the server and the client before you run the sample.  
@@ -156,7 +155,6 @@ public class OrderProcessorService : IOrderProcessor
     }  
     …  
 }  
-  
 ```  
   
  The `Orders` class encapsulates the processing of the order. In the sample, it updates the database with purchase order information.  
@@ -235,7 +233,7 @@ public class Orders
   
  The batching behavior and its configuration are specified in the service application configuration.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <appSettings>  

@@ -22,7 +22,7 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
   
 1.  Add a <`workflowUnhandledException`> element in a <`behavior`> element within a <`serviceBehaviors`> element, using the `action` attribute to specify the action to take when an unhandled exception occurs as shown in the following example.  
   
-    ```  
+    ```xml  
     <behaviors>  
       <serviceBehaviors>  
         <behavior name="">  
@@ -30,7 +30,6 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
     > [!NOTE]
@@ -40,7 +39,6 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
   
     ```csharp  
     host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action = WorkflowUnhandledExceptionAction.AbandonAndSuspend });  
-  
     ```  
   
      The `action` attribute of the <`workflowUnhandledException`> element can be set to one of the following values:  

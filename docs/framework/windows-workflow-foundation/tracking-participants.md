@@ -26,7 +26,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The standard ETW tracking participant is configured in the Web.config file as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
   <system.web>  
     <compilation debug="true" targetFramework="4.0" />  
@@ -57,7 +57,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  In ETW, events are written to the ETW session through a provider ID. The provider ID that the ETW tracking participant uses for writing the tracking records to ETW is defined in the diagnostics section of the Web.config file (under `<system.serviceModel><diagnostics>`). By default, the ETW tracking participant uses a default provider ID when one has not been specified, as shown in the following example.  
   
-```  
+```xml  
 <system.serviceModel>  
         <diagnostics etwProviderId="52A3165D-4AD9-405C-B1E8-7D9A257EAC9F" />  
 ```  
@@ -142,7 +142,6 @@ instance.Extensions.Add(new ConsoleTrackingParticipant());
             };  
             instance.Run();  
             Console.ReadLine();  
-  
 ```  
   
 ## See Also  

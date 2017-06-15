@@ -2,7 +2,7 @@
 title: "ICorDebugThread::GetHandle Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetHandle method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetHandle method [.NET Framework debugging]"
 ms.assetid: 172ef8c4-2ead-4cfc-bd2e-dee4fb7191cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

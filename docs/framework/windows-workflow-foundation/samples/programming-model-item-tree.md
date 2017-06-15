@@ -2,7 +2,7 @@
 title: "Programming Model Item Tree | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -29,7 +29,6 @@ ModelProperty mp = mi.Properties["Activities"];
 mp.Collection.Add(new Persist());  
 ModelItem justAdded = mp.Collection.Last();  
 justAdded.Properties["DisplayName"].SetValue("new name");  
-  
 ```  
   
 #### To use this sample  

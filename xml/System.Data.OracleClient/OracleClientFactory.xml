@@ -49,16 +49,12 @@
 ## Examples  
  The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommand> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim command As DbCommand = newFactory.CreateCommand()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbCommand command = newFactory.CreateCommand();  
 ```  
@@ -89,16 +85,12 @@ DbCommand command = newFactory.CreateCommand();
 ## Examples  
  The following code fragment returns a strongly typed <xref:System.Data.Common.DbCommandBuilder> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim commandBuilder As DbCommandBuilder = newFactory.CreateCommandBuilder()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbCommandBuilder commandBuilder = newFactory.CreateCommandBuilder();  
 ```  
@@ -129,16 +121,12 @@ DbCommandBuilder commandBuilder = newFactory.CreateCommandBuilder();
 ## Examples  
  The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnection> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim connection As DbConnection = newFactory.CreateConnection()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbConnection connection = newFactory.CreateConnection();  
 ```  
@@ -169,16 +157,12 @@ DbConnection connection = newFactory.CreateConnection();
 ## Examples  
  The following code fragment returns a strongly typed <xref:System.Data.Common.DbConnectionStringBuilder> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim connectionBuilder As DbConnectionStringBuilder = newFactory.CreateConnectionStringBuilder()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbConnectionStringBuilder connectionBuilder = newFactory.CreateConnectionStringBuilder();  
 ```  
@@ -209,16 +193,12 @@ DbConnectionStringBuilder connectionBuilder = newFactory.CreateConnectionStringB
 ## Examples  
  The following code fragment returns a strongly typed <xref:System.Data.Common.DbDataAdapter> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim dataAdpater As DbDataAdapter = newFactory.CreateDataAdapter()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbDataAdapter dataAdpater = newFactory.CreateDataAdapter();  
 ```  
@@ -249,16 +229,12 @@ DbDataAdapter dataAdpater = newFactory.CreateDataAdapter();
 ## Examples  
  The following code fragment returns a strongly typed <xref:System.Data.Common.DbParameter> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim parameter As DbParameter = newFactory.CreateParameter()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbParameter parameter = newFactory.CreateParameter();  
 ```  
@@ -309,16 +285,12 @@ DbParameter parameter = newFactory.CreateParameter();
 ## Examples  
  The following code fragment uses the <xref:System.Data.OracleClient.OracleClientFactory.Instance> field to retrieve an <xref:System.Data.OracleClient.OracleClientFactory> instance and then return a strongly typed <xref:System.Data.Common.DbCommand> instance.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim newFactory As OracleClientFactory = OracleClientFactory.Instance  
 Dim command As DbCommand = newFactory.CreateCommand()  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 OracleClientFactory newFactory = OracleClientFactory.Instance;  
 DbCommand command = newFactory.CreateCommand();  
 ```  

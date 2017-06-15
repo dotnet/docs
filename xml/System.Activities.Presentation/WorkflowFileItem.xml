@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a<see cref="T:System.Activities.Presentation.ContextItem" /> that is published in the editing context and that provides information about the file that the current editing session is based on. Note that it is possible that the <see cref="T:System.Activities.Presentation.WorkflowFileItem" /> value is <see langword="null" />, for instance if a <see cref="T:System.Activities.Presentation.WorkflowDesigner" /> operates directly on an object instance and does not serialize into a file-based format.</summary>
+    <summary>Represents a <see cref="T:System.Activities.Presentation.ContextItem" /> that is published in the editing context and that provides information about the file that the current editing session is based on. Note that it is possible that the <see cref="T:System.Activities.Presentation.WorkflowFileItem" /> value is <see langword="null" />, for instance if a <see cref="T:System.Activities.Presentation.WorkflowDesigner" /> operates directly on an object instance and does not serialize into a file-based format.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

@@ -2,7 +2,7 @@
 title: "ICorDebugProcess6::DecodeEvent Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,7 +23,6 @@ Decodes managed debug events that have been encapsulated in the payload of speci
 ## Syntax  
   
 ```  
-  
 HRESULT DecodeEvent(  
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
@@ -32,7 +31,6 @@ HRESULT DecodeEvent(
         [in] DWORD dwThreadId,   
         [out] ICorDebugDebugEvent **ppEvent  
 );  
-  
 ```  
   
 #### Parameters  

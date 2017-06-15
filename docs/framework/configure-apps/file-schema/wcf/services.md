@@ -2,7 +2,7 @@
 title: "&lt;services&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,7 @@ Services are defined in the `services` section of the configuration file. Each s
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
         <services>  
         <service>  

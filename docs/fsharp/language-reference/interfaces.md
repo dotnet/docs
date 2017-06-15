@@ -1,5 +1,5 @@
 ---
-title: Interfaces (F#)
+title: Interfaces (F#) | Microsoft Docs
 description: Interfaces (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

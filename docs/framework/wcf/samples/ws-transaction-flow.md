@@ -2,7 +2,7 @@
 title: "WS Transaction Flow | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +44,6 @@ public interface ICalculator
     [OperationContract]  
     double Divide(double n1, double n2);   
 }  
-  
 ```  
   
  This defines the operations in the order they are to be processed:  
@@ -59,7 +58,7 @@ public interface ICalculator
   
  To enable transaction flow, bindings with the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled must be used in addition to the appropriate operation attributes. In this sample, the service's configuration exposes a TCP endpoint and an HTTP endpoint in addition to a Metadata Exchange endpoint. The TCP endpoint and the HTTP endpoint use the following bindings, both of which have the [\<transactionFlow>](../../../../docs/framework/configure-apps/file-schema/wcf/transactionflow.md) property enabled.  
   
-```  
+```xml  
 <bindings>  
   <netTcpBinding>  
     <binding name="transactionalOleTransactionsTcpBinding"  
@@ -124,7 +123,6 @@ public class CalculatorService : ICalculator
 // Create a client using either wsat or oletx endpoint configurations  
 CalculatorClient client = new CalculatorClient("WSAtomicTransaction_endpoint");  
 // CalculatorClient client = new CalculatorClient("OleTransactions_endpoint");  
-  
 ```  
   
 > [!NOTE]
@@ -189,7 +187,6 @@ using (TransactionScope tx =
 }  
   
 Console.WriteLine("Transaction committed");  
-  
 ```  
   
  The calls to the operations are as follows:  

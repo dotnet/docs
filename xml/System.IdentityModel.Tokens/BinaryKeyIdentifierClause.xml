@@ -162,7 +162,7 @@
         <param name="data">An array of <see cref="T:System.Byte" /> to compare to.</param>
         <summary>Returns a value that indicates whether the binary data for the current instance matches the specified binary data.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="data " />is equivalent to the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="data" /> is equivalent to the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,7 +185,7 @@
         <param name="clause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> and the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method is identical for the <paramref name="keyIdentifierClause" /> parameter and the current instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="clause" /> is of type <see cref="T:System.IdentityModel.Tokens.BinaryKeyIdentifierClause" /> and the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method is identical for the <paramref name="clause" /> parameter and the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,7 +210,7 @@
         <param name="offset">The index in the array at which the comparison starts.</param>
         <summary>Returns a value that indicates whether the binary data for the current instance is equivalent to the specified binary data at the specified offset.</summary>
         <returns>
-          <see langword="true" /> if the binary data in the <paramref name="data " />parameter starting at the index specified in the <paramref name="offset" /> parameter is equivalent to the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method (starting at index zero); otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the binary data in the <paramref name="data" /> parameter starting at the index specified in the <paramref name="offset" /> parameter is equivalent to the binary data returned by the <see cref="M:System.IdentityModel.Tokens.BinaryKeyIdentifierClause.GetBuffer" /> method (starting at index zero); otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

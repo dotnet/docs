@@ -33,7 +33,7 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
  For example, to redirect assembly binding for a .NET Framework version 1.0 assembly, you would include the following XML code in your application configuration file.  
   
-```  
+```xml  
 <runtime>  
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
             <dependentAssembly>   
@@ -47,7 +47,7 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
  For example, to redirect one reference to a .NET Framework version 1.0 assembly and another reference to a .NET Framework version 1.1 assembly, you would use the pattern shown in the following pseudocode.  
   
-```  
+```xml  
 <assemblyBinding xmlns="..." appliesTo="v1.0.3705">   
 <! — .NET Framework version 1.0 redirects here. -->   
 </assemblyBinding>   

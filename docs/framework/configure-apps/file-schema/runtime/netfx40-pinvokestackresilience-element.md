@@ -2,7 +2,7 @@
 title: "&lt;NetFx40_PInvokeStackResilience&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
   
 ## Syntax  
   
-```  
+```xml  
 <NetFx40_PInvokeStackResilience  enabled="1|0"/>  
 ```  
   
@@ -77,7 +77,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
 ## Example  
  The following example shows how to opt into increased resilience against incorrect platform invoke declarations for an application, at the cost of slower transitions between managed and unmanaged code.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <NetFx40_PInvokeStackResilience enabled="1"/>  

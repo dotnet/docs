@@ -2,6 +2,7 @@
 title: "How To: Enable WIF Tracing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,7 +74,7 @@ manager: "mbaldwin"
   
 7.  Add the following **\<system.diagnostics>** element to the *Web.config* configuration file immediately following the closing **\</configSections>** element, like shown:  
   
-    ```  
+    ```xml  
     <configuration>  
         <configSections>  
         …  

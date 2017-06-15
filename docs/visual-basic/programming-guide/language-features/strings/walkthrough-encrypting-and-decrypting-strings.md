@@ -41,7 +41,7 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.DES
   
  You can use encryption to protect user secrets (for example, passwords) and to make credentials unreadable by unauthorized users. This can protect an authorized user's identity from being stolen, which protects the user's assets and provides non-repudiation. Encryption can also protect a user's data from being accessed by unauthorized users.  
   
- For more information, see [Cryptographic Services](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8).  
+ For more information, see [Cryptographic Services](../../../../standard/security/cryptographic-services.md).  
   
 > [!IMPORTANT]
 >  The Rijndael (now referred to as Advanced Encryption Standard [AES]) and Triple Data Encryption Standard (3DES) algorithms provide greater security than DES because they are more computationally intensive. For more information, see <xref:System.Security.Cryptography.DES> and <xref:System.Security.Cryptography.Rijndael>.  
@@ -102,4 +102,4 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.DES
  <xref:System.Security.Cryptography.DES>   
  <xref:System.Security.Cryptography.TripleDES>   
  <xref:System.Security.Cryptography.Rijndael>   
- [Cryptographic Services](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)
+ [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

@@ -79,7 +79,7 @@ To successfully deploy your .NET Framework application, you must understand how 
   
 -   Machine configuration file.  
   
- These files follow the same syntax and provide information such as binding redirects, the location of code, and binding modes for particular assemblies. Each configuration file can contain an [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) that redirects the binding process. The child elements of the [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) include the [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md). The children of [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) include the [\<assemblyIdentity> element](http://msdn.microsoft.com/library/f4a3bb83-c800-47d0-9905-9a5ae2486838), the [\<bindingRedirect> element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md), and the [\<codeBase> element](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md).  
+ These files follow the same syntax and provide information such as binding redirects, the location of code, and binding modes for particular assemblies. Each configuration file can contain an [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) that redirects the binding process. The child elements of the [\<assemblyBinding> element](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) include the [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md). The children of [\<dependentAssembly> element](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) include the [\<assemblyIdentity> element](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment), the [\<bindingRedirect> element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md), and the [\<codeBase> element](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md).  
   
 > [!NOTE]
 >  Configuration information can be found in the three configuration files; not all elements are valid in all configuration files. For example, binding mode and private path information can only be in the application configuration file. For a complete list of the information that is contained in each file, see [Configuring Apps by Using Configuration Files](../../../docs/framework/configure-apps/index.md).  
@@ -91,7 +91,7 @@ To successfully deploy your .NET Framework application, you must understand how 
   
  The following code provides a simple example of an application configuration file. This example adds a <xref:System.Diagnostics.TextWriterTraceListener> to the <xref:System.Diagnostics.Debug.Listeners%2A> collection to enable recording debug information to a file.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <trace useGlobalLock="false" autoflush="true" indentsize="0">  
@@ -108,7 +108,7 @@ To successfully deploy your .NET Framework application, you must understand how 
   
  The following is an example of a Publisher Policy configuration file:  
   
-```  
+```xml  
 <configuration>  
     <runtime>  
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -243,7 +243,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 ##### Multiple Assemblies with the Same Name  
  The following example shows how to configure multiple assemblies with the same name.  
   
-```  
+```xml  
 <dependentAssembly>  
    <assemblyIdentity name="Server" publicKeyToken="c0305c36380ba429" />   
       <codeBase version="1.0.0.0" href="v1/Server.dll"/>  

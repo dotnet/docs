@@ -2,7 +2,7 @@
 title: "Internet Information Service Hosting Instructions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -176,7 +176,7 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 ## Sample Code  
   
-```  
+```xml  
 <html>  
    <body>  
        <form >  

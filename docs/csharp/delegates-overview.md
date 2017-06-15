@@ -1,5 +1,5 @@
 ---
-title: Introduction to Delegates
+title: Introduction to Delegates | Microsoft Docs
 description: Introduction to Delegates
 keywords: .NET, .NET Core
 author: BillWagner

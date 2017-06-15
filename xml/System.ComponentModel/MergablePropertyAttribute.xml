@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -72,6 +73,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +161,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.MergablePropertyAttribute>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.MergablePropertyAttribute?displayProperty=fullName>.  
+ When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.MergablePropertyAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.MergablePropertyAttribute?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -191,6 +195,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -223,6 +228,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +263,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -276,6 +286,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -309,6 +320,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

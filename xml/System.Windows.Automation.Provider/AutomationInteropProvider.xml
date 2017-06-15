@@ -129,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value determines whether notification is given of individual events such as <xref:System.Windows.Automation.StructureChangeType> or of bulk events such as <xref:System.Windows.Automation.StructureChangeType>.  
+ This value determines whether notification is given of individual events such as <xref:System.Windows.Automation.StructureChangeType.ChildAdded> or of bulk events such as <xref:System.Windows.Automation.StructureChangeType.ChildrenBulkAdded>.  
   
  ]]></format>
         </remarks>
@@ -250,7 +250,7 @@
   
  When a child element is removed, the runtime identifier of either the element, or of its container, is passed to the <xref:System.Windows.Automation.StructureChangedEventArgs> constructor. In the current version of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)], however, there is no easy way for an instance of a provider to discover its runtime identifier. The <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> method normally returns an array that contains <xref:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId>, a magic number that instructs the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] system to create a unique identifer for every instance of the control. The raw value provided by <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A> should not be used in events, because it is meaningless to clients and cannot be used to identify a specific instance.  
   
- Because of this limitation, events of type <xref:System.Windows.Automation.StructureChangeType> and <xref:System.Windows.Automation.StructureChangeType> are not very useful. As an alternative, always use <xref:System.Windows.Automation.StructureChangeType> and <xref:System.Windows.Automation.StructureChangeType>, passing 0 as the runtime identifer. You cannot use `null`, as this will raise an exception. Clients will be notified that a change has been made in the container (identified by the `sender` parameter passed to the <xref:System.Windows.Automation.StructureChangedEventHandler>), without specific notice of what children have been added or removed.  
+ Because of this limitation, events of type <xref:System.Windows.Automation.StructureChangeType.ChildAdded> and <xref:System.Windows.Automation.StructureChangeType.ChildRemoved> are not very useful. As an alternative, always use <xref:System.Windows.Automation.StructureChangeType.ChildrenBulkAdded> and <xref:System.Windows.Automation.StructureChangeType.ChildrenBulkRemoved>, passing 0 as the runtime identifer. You cannot use `null`, as this will raise an exception. Clients will be notified that a change has been made in the container (identified by the `sender` parameter passed to the <xref:System.Windows.Automation.StructureChangedEventHandler>), without specific notice of what children have been added or removed.  
   
    
   
@@ -284,7 +284,7 @@
       </Parameters>
       <Docs>
         <param name="hwnd">Handle of the element's window.</param>
-        <param name="wParam">The <see langword="wParam" /> member of the <see langword="WM_GETOBJECT " />message.</param>
+        <param name="wParam">The <see langword="wParam" /> member of the <see langword="WM_GETOBJECT" /> message.</param>
         <param name="lParam">The <see langword="lParam" /> member of the <see langword="WM_GETOBJECT" /> message.</param>
         <param name="el">The UI Automation provider for the element.</param>
         <summary>Returns the UI automation provider for an element in response to a <see langword="WM_GETOBJECT" /> message.</summary>

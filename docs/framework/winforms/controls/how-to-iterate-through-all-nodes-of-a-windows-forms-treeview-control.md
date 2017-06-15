@@ -2,7 +2,7 @@
 title: "How to: Iterate Through All Nodes of a Windows Forms TreeView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +51,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
           PrintRecursive(n)  
        Next  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -77,7 +76,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
           PrintRecursive(n);  
        }  
     }  
-  
     ```  
   
     ```cpp  

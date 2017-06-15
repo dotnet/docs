@@ -2,6 +2,7 @@
 title: "&lt;audienceUris&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,19 +26,19 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <securityTokenHandlerConfiguration>  
-        <audienceUris mode=xs:string>  
-          <add value=xs:string />  
-          <clear />  
-          <remove value=xs:string />  
-        </audienceUris>  
-      </securityTokenHandlerConfiguration>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <securityTokenHandlerConfiguration>  
+        <audienceUris mode=xs:string>  
+          <add value=xs:string />  
+          <clear />  
+          <remove value=xs:string />  
+        </audienceUris>  
+      </securityTokenHandlerConfiguration>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -48,7 +49,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mode|An <xref:System.IdentityModel.Selectors.AudienceUriMode> value that specifies whether the audience restriction should be applied to an incoming token. The possible values are “Always”, “Never”, and “BearerKeyOnly”. The default is “Always”. Optional.|  
+|mode|An <xref:System.IdentityModel.Selectors.AudienceUriMode> value that specifies whether the audience restriction should be applied to an incoming token. The possible values are "Always", "Never", and "BearerKeyOnly". The default is "Always". Optional.|  
   
 ### Child Elements  
   
@@ -75,7 +76,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
 ## Example  
  The following XML shows how to configure the acceptable audience URIs for an application. This example configures a single URI. Tokens scoped for this URI will be accepted, all others will be rejected.  
   
-```  
+```xml  
 <audienceUris>  
   <add value="http://localhost:19851/"/>  
 </audienceUris>  

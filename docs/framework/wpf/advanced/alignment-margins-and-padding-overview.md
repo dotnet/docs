@@ -46,10 +46,10 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
 <a name="wcpsdk_layout_amp_alignment_properties"></a>   
 ## Understanding Alignment Properties  
- The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties describe how a child element should be positioned within a parent element's allocated layout space. By using these properties together, you can position child elements precisely. For example, child elements of a <xref:System.Windows.Controls.DockPanel> can specify four different horizontal alignments: <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, or <xref:System.Windows.HorizontalAlignment>, or to <xref:System.Windows.HorizontalAlignment> to fill available space. Similar values are available for vertical positioning.  
+ The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties describe how a child element should be positioned within a parent element's allocated layout space. By using these properties together, you can position child elements precisely. For example, child elements of a <xref:System.Windows.Controls.DockPanel> can specify four different horizontal alignments: <xref:System.Windows.HorizontalAlignment.Left>, <xref:System.Windows.HorizontalAlignment.Right>, or <xref:System.Windows.HorizontalAlignment.Center>, or to <xref:System.Windows.HorizontalAlignment.Stretch> to fill available space. Similar values are available for vertical positioning.  
   
 > [!NOTE]
->  Explicitly-set <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties on an element take precedence over the <xref:System.Windows.HorizontalAlignment> property value. Attempting to set <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of `Stretch` results in the `Stretch` request being ignored.  
+>  Explicitly-set <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties on an element take precedence over the <xref:System.Windows.HorizontalAlignment.Stretch> property value. Attempting to set <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of `Stretch` results in the `Stretch` request being ignored.  
   
 <a name="wcpsdk_layout_amp_horizontalalignment_properties"></a>   
 ### HorizontalAlignment Property  
@@ -57,10 +57,10 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
 |Member|Description|  
 |------------|-----------------|  
-|<xref:System.Windows.HorizontalAlignment>|Child elements are aligned to the left of the parent element's allocated layout space.|  
-|<xref:System.Windows.HorizontalAlignment>|Child elements are aligned to the center of the parent element's allocated layout space.|  
-|<xref:System.Windows.HorizontalAlignment>|Child elements are aligned to the right of the parent element's allocated layout space.|  
-|<xref:System.Windows.HorizontalAlignment> (Default)|Child elements are stretched to fill the parent element's allocated layout space. Explicit <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> values take precedence.|  
+|<xref:System.Windows.HorizontalAlignment.Left>|Child elements are aligned to the left of the parent element's allocated layout space.|  
+|<xref:System.Windows.HorizontalAlignment.Center>|Child elements are aligned to the center of the parent element's allocated layout space.|  
+|<xref:System.Windows.HorizontalAlignment.Right>|Child elements are aligned to the right of the parent element's allocated layout space.|  
+|<xref:System.Windows.HorizontalAlignment.Stretch> (Default)|Child elements are stretched to fill the parent element's allocated layout space. Explicit <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> values take precedence.|  
   
  The following example shows how to apply the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property to <xref:System.Windows.Controls.Button> elements. Each attribute value is shown, to better illustrate the various rendering behaviors.  
   
@@ -77,10 +77,10 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
 |Member|Description|  
 |------------|-----------------|  
-|<xref:System.Windows.VerticalAlignment>|Child elements are aligned to the top of the parent element's allocated layout space.|  
-|<xref:System.Windows.VerticalAlignment>|Child elements are aligned to the center of the parent element's allocated layout space.|  
-|<xref:System.Windows.VerticalAlignment>|Child elements are aligned to the bottom of the parent element's allocated layout space.|  
-|<xref:System.Windows.VerticalAlignment> (Default)|Child elements are stretched to fill the parent element's allocated layout space. Explicit <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> values take precedence.|  
+|<xref:System.Windows.VerticalAlignment.Top>|Child elements are aligned to the top of the parent element's allocated layout space.|  
+|<xref:System.Windows.VerticalAlignment.Center>|Child elements are aligned to the center of the parent element's allocated layout space.|  
+|<xref:System.Windows.VerticalAlignment.Bottom>|Child elements are aligned to the bottom of the parent element's allocated layout space.|  
+|<xref:System.Windows.VerticalAlignment.Stretch> (Default)|Child elements are stretched to fill the parent element's allocated layout space. Explicit <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> values take precedence.|  
   
  The following example shows how to apply the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property to <xref:System.Windows.Controls.Button> elements. Each attribute value is shown, to better illustrate the various rendering behaviors. For purposes of this sample, a <xref:System.Windows.Controls.Grid> element with visible gridlines is used as the parent, to better illustrate the layout behavior of each property value.  
   
@@ -143,7 +143,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
 ## What's Next  
  Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. You now have several techniques you can use to better position elements using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
+ Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
 ## See Also  
  <xref:System.Windows.FrameworkElement>   

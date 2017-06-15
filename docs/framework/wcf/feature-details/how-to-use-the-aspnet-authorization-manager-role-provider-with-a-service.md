@@ -2,7 +2,7 @@
 title: "How to: Use the ASP.NET Authorization Manager Role Provider with a Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,7 +22,7 @@ When [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] hosts a Web servi
   
  The following code example is a portion of a configuration file for a Web service that is integrating Authorization Manager into the application.  
   
-```  
+```xml  
 <system.web>  
     <roleManager enabled="true" defaultProvider="AzManRoleProvider">  
       <providers>  

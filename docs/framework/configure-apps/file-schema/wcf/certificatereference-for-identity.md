@@ -2,7 +2,7 @@
 title: "&lt;certificateReference&gt; for &lt;identity&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,7 @@ Specifies settings for X.509 certificate validation. A secure [!INCLUDE[indigo1]
   
 ## Syntax  
   
-```  
-  
+```xml  
 <certificateReference   
         findValue="String"   
     isChainIncluded="Boolean"  

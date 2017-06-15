@@ -2,7 +2,7 @@
 title: "How to: Play a System Sound from a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +34,6 @@ The following code example plays the `Exclamation` system sound at run time. For
 Public Sub PlayExclamation()  
     SystemSounds.Exclamation.Play()  
 End Sub  
-  
 ```  
   
 ```csharp  

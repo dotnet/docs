@@ -21,7 +21,7 @@ manager: "wpickett"
 # How to: Determine Which .NET Framework Updates Are Installed
 The installed updates for each version of the .NET Framework installed on a computer are listed in the Windows registry. You can use the Registry Editor (regedit.exe) to view this information.  
   
- In the Registry Editor, the .NET Framework versions and installed updates for each version are stored in different subkeys. For information about detecting the installed version numbers, see [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md). For information about installing the .NET Framework, see the [installation guide](../../../docs/framework/install/guide-for-developers.md).  
+ In the Registry Editor, the .NET Framework versions and installed updates for each version are stored in different subkeys. For information about detecting the installed version numbers, see [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md). For information about installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
   
 ### To find installed updates  
   
@@ -44,34 +44,33 @@ The installed updates for each version of the .NET Framework installed on a comp
  The example produces output that's similar to the following:  
   
 ```  
-  
 Microsoft .NET Framework 3.5 SP1  
-  KB953595  Hotfix for Microsoft .NET Framework 3.5 SP1 (KB953595)  
-  SP1  
-    KB2657424  Security Update for Microsoft .NET Framework 3.5 SP1 (KB2657424)  
-    KB958484  Hotfix for Microsoft .NET Framework 3.5 SP1 (KB958484)  
-    KB963707  Update for Microsoft .NET Framework 3.5 SP1 (KB963707)  
+  KB953595  Hotfix for Microsoft .NET Framework 3.5 SP1 (KB953595)  
+  SP1  
+    KB2657424  Security Update for Microsoft .NET Framework 3.5 SP1 (KB2657424)  
+    KB958484  Hotfix for Microsoft .NET Framework 3.5 SP1 (KB958484)  
+    KB963707  Update for Microsoft .NET Framework 3.5 SP1 (KB963707)  
 Microsoft .NET Framework 4 Client Profile  
-  KB2160841  Security Update for Microsoft .NET Framework 4 Client Profile (KB2160841)  
-  KB2446708  Security Update for Microsoft .NET Framework 4 Client Profile (KB2446708)  
-  KB2468871  Update for Microsoft .NET Framework 4 Client Profile (KB2468871)  
-  KB2478663  Security Update for Microsoft .NET Framework 4 Client Profile (KB2478663)  
-  KB2518870  Security Update for Microsoft .NET Framework 4 Client Profile (KB2518870)  
-  KB2533523  Update for Microsoft .NET Framework 4 Client Profile (KB2533523)  
-  KB2539636  Security Update for Microsoft .NET Framework 4 Client Profile (KB2539636)  
-  KB2572078  Security Update for Microsoft .NET Framework 4 Client Profile (KB2572078)  
-  KB2633870  Security Update for Microsoft .NET Framework 4 Client Profile (KB2633870)  
-  KB2656351  Security Update for Microsoft .NET Framework 4 Client Profile (KB2656351)  
+  KB2160841  Security Update for Microsoft .NET Framework 4 Client Profile (KB2160841)  
+  KB2446708  Security Update for Microsoft .NET Framework 4 Client Profile (KB2446708)  
+  KB2468871  Update for Microsoft .NET Framework 4 Client Profile (KB2468871)  
+  KB2478663  Security Update for Microsoft .NET Framework 4 Client Profile (KB2478663)  
+  KB2518870  Security Update for Microsoft .NET Framework 4 Client Profile (KB2518870)  
+  KB2533523  Update for Microsoft .NET Framework 4 Client Profile (KB2533523)  
+  KB2539636  Security Update for Microsoft .NET Framework 4 Client Profile (KB2539636)  
+  KB2572078  Security Update for Microsoft .NET Framework 4 Client Profile (KB2572078)  
+  KB2633870  Security Update for Microsoft .NET Framework 4 Client Profile (KB2633870)  
+  KB2656351  Security Update for Microsoft .NET Framework 4 Client Profile (KB2656351)  
 Microsoft .NET Framework 4 Extended  
-  KB2416472  Security Update for Microsoft .NET Framework 4 Extended (KB2416472)  
-  KB2468871  Update for Microsoft .NET Framework 4 Extended (KB2468871)  
-  KB2487367  Security Update for Microsoft .NET Framework 4 Extended (KB2487367)  
-  KB2533523  Update for Microsoft .NET Framework 4 Extended (KB2533523)  
-  KB2656351  Security Update for Microsoft .NET Framework 4 Extended (KB2656351)  
-  
+  KB2416472  Security Update for Microsoft .NET Framework 4 Extended (KB2416472)  
+  KB2468871  Update for Microsoft .NET Framework 4 Extended (KB2468871)  
+  KB2487367  Security Update for Microsoft .NET Framework 4 Extended (KB2487367)  
+  KB2533523  Update for Microsoft .NET Framework 4 Extended (KB2533523)  
+  KB2656351  Security Update for Microsoft .NET Framework 4 Extended (KB2656351)  
 ```  
   
-## See Also  
- [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)   
- [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
- [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+## See also
+
+[How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)   
+[Installing the .NET Framework](../../../docs/framework/install/guide-for-developers.md)   
+[Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)

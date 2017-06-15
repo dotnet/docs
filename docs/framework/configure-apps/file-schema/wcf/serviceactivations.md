@@ -2,7 +2,7 @@
 title: "&lt;serviceActivations&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ A configuration element that allows you to add settings that define virtual serv
   
 ## Syntax  
   
-```  
-  
+```xml  
 <serviceHostingEnvironment>   
    <serviceActivations>  
       <add factory="String"  
@@ -55,15 +54,15 @@ A configuration element that allows you to add settings that define virtual serv
 ## Remarks  
  The following example shows how to configure activation settings within your web.config file.  
   
-```  
+```xml  
 <configuration>  
-  <system.serviceModel>  
-    <serviceHostingEnvironment>  
-      <serviceActivations>  
-        <add service="GreetingService"/>  
-      </serviceActivations>  
-    </serviceHostingEnvironment>  
-  </system.serviceModel>  
+  <system.serviceModel>  
+    <serviceHostingEnvironment>  
+      <serviceActivations>  
+        <add service="GreetingService"/>  
+      </serviceActivations>  
+    </serviceHostingEnvironment>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   

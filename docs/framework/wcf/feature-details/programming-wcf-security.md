@@ -2,7 +2,7 @@
 title: "Programming WCF Security | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,7 +75,7 @@ This topic describes the fundamental programming tasks used to create a secure [
   
  Depending on how you set the mode, you must set the credential type. For example, if you have selected the `wsHttpBinding`, and have set the mode to "Message," then you can also set the `clientCredentialType` attribute of the Message element to one of the following values: `None`, `Windows`, `UserName`, `Certificate`, and `IssuedToken`, as shown in the following configuration example.  
   
-```  
+```xml  
 <system.serviceModel>  
 <bindings>  
   <wsHttpBinding>  

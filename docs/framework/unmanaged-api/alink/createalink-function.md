@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateALink function"
   - "Alink API, CreateALink function"
 ms.assetid: fc73bcb9-6af6-44d8-bc39-2f4400325dae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
@@ -34,12 +36,10 @@ Creates an instance of the Assembly Linker and sets a pointer to the specified i
 ## Syntax  
   
 ```  
-  
 HRESULT CreateALink (  
    REFIID riid,  
    IUnknown **ppInterface  
 );  
-  
 ```  
   
 #### Parameters  

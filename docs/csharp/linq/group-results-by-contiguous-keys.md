@@ -1,5 +1,5 @@
 ---
-title: "Group results by contiguous keys"
+title: Group results by contiguous keys | Microsoft Docs
 description: How to group results by contiguous keys.
 keywords: .NET, .NET Core, C#
 author: BillWagner

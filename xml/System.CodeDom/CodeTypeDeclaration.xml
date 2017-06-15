@@ -6,6 +6,10 @@
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.CodeDom</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.CodeDom.CodeTypeMember</BaseTypeName>
   </Base>
@@ -29,9 +33,9 @@
  The <xref:System.CodeDom.CodeTypeDeclaration.BaseTypes%2A> property specifies the base type or base types of the type being declared. The <xref:System.CodeDom.CodeTypeDeclaration.Members%2A> property contains the type members, which can include methods, fields, properties, comments and other types. The <xref:System.CodeDom.CodeTypeDeclaration.TypeAttributes%2A> property indicates the <xref:System.Reflection.TypeAttributes> values for the type declaration, which indicate the type category of the type. The <xref:System.CodeDom.CodeTypeDeclaration.IsClass%2A>, <xref:System.CodeDom.CodeTypeDeclaration.IsStruct%2A>, <xref:System.CodeDom.CodeTypeDeclaration.IsEnum%2A>, and <xref:System.CodeDom.CodeTypeDeclaration.IsInterface%2A> methods indicate whether the type is a class, structure, enumeration, or interface type, respectively.  
   
 > [!NOTE]
->  Some programming languages only support the declaration of reference types, or classes. To check a language-specific CodeDOM code generator for support for declaring interfaces, enumerations, or value types, call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method to test for the appropriate <xref:System.CodeDom.Compiler.GeneratorSupport> flags. <xref:System.CodeDom.Compiler.GeneratorSupport> indicates support for interfaces, <xref:System.CodeDom.Compiler.GeneratorSupport> indicates support for enumerations, and <xref:System.CodeDom.Compiler.GeneratorSupport> indicates support for value types such as structures.  
+>  Some programming languages only support the declaration of reference types, or classes. To check a language-specific CodeDOM code generator for support for declaring interfaces, enumerations, or value types, call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method to test for the appropriate <xref:System.CodeDom.Compiler.GeneratorSupport> flags. <xref:System.CodeDom.Compiler.GeneratorSupport.DeclareInterfaces> indicates support for interfaces, <xref:System.CodeDom.Compiler.GeneratorSupport.DeclareEnums> indicates support for enumerations, and <xref:System.CodeDom.Compiler.GeneratorSupport.DeclareValueTypes> indicates support for value types such as structures.  
   
- You can build a class or a structure implementation in one complete declaration, or spread the implementation across multiple declarations. The <xref:System.CodeDom.CodeTypeDeclaration.IsPartial%2A> property indicates whether the type declaration is complete or partial. Not all code generators support partial type declarations, so you should test for this support by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport>.  
+ You can build a class or a structure implementation in one complete declaration, or spread the implementation across multiple declarations. The <xref:System.CodeDom.CodeTypeDeclaration.IsPartial%2A> property indicates whether the type declaration is complete or partial. Not all code generators support partial type declarations, so you should test for this support by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport.PartialTypes>.  
   
    
   
@@ -55,6 +59,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclaration" /> class.</summary>
@@ -68,6 +76,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -88,6 +100,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeTypeReferenceCollection</ReturnType>
       </ReturnValue>
@@ -105,18 +121,14 @@
   
  The following code illustrates the addition of a <xref:System.CodeDom.CodeTypeReference> to the collection that refers to <xref:System.Object>.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim ctd As New CodeTypeDeclaration("Class1")  
 ctd.IsClass = True  
 ctd.BaseTypes.Add(New CodeTypeReference(GetType(Object)))  
 ctd.BaseTypes.Add(New CodeTypeReference("Interface1"))  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 CodeTypeDeclaration ctd = new CodeTypeDeclaration("Class1");  
 ctd.IsClass = true;  
 ctd.BaseTypes.Add(new CodeTypeReference(typeof(Object)));  
@@ -125,14 +137,14 @@ ctd.BaseTypes.Add(new CodeTypeReference("Interface1"));
   
  The preceding code generates the equivalent of the following Visual Basic code.  
   
-```  
+```vb  
 Public Class Class1  
 Implements Interface1  
 ```  
   
  However, the Visual Basic code actually generated is the following.  
   
-```  
+```vb  
 Public Class Class1  
 Inherits Object  
 Implements Interface1  
@@ -149,6 +161,10 @@ Implements Interface1
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,6 +186,10 @@ Implements Interface1
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -187,6 +207,10 @@ Implements Interface1
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,6 +232,10 @@ Implements Interface1
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -223,7 +251,7 @@ Implements Interface1
   
  A partial type declaration makes it easier to build different portions of a class or structure implementation in different modules of your application. The partial type declarations can be stored in one source file, or spread across multiple source files that are eventually compiled together to form the combined type implementation.  
   
- The C# language supports partial type declarations of classes and structures through the `partial` keyword. Visual Basic supports partial type declarations of classes and structures with the `Partial` keyword. Not all code generators support partial type declarations, so you should test for this support by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport>.  
+ The C# language supports partial type declarations of classes and structures through the `partial` keyword. Visual Basic supports partial type declarations of classes and structures with the `Partial` keyword. Not all code generators support partial type declarations, so you should test for this support by calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the flag <xref:System.CodeDom.Compiler.GeneratorSupport.PartialTypes>.  
   
 > [!NOTE]
 >  Partial type declarations are supported for classes and structures. If you specify a partial type declaration for an enumeration or interface, the generated code produces compiler errors.  
@@ -260,6 +288,10 @@ Implements Interface1
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -277,6 +309,10 @@ Implements Interface1
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,6 +333,10 @@ Implements Interface1
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -312,6 +352,10 @@ Implements Interface1
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -331,6 +375,10 @@ Implements Interface1
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
@@ -341,13 +389,13 @@ Implements Interface1
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.TypeAttributes> property contains the same type of values used by <xref:System.Reflection> when investigating a type at run time. Many of these flags do not correspond to the type declaration syntax for some languages. As a result, only the following flags are significant to <xref:System.CodeDom.CodeTypeDeclaration> : <xref:System.Reflection.TypeAttributes>, <xref:System.Reflection.TypeAttributes>, <xref:System.Reflection.TypeAttributes>, <xref:System.Reflection.TypeAttributes>, <xref:System.Reflection.TypeAttributes>, <xref:System.Reflection.TypeAttributes>, <xref:System.Reflection.TypeAttributes>, and <xref:System.Reflection.TypeAttributes>.  
+ The <xref:System.Reflection.TypeAttributes> property contains the same type of values used by <xref:System.Reflection> when investigating a type at run time. Many of these flags do not correspond to the type declaration syntax for some languages. As a result, only the following flags are significant to <xref:System.CodeDom.CodeTypeDeclaration> : <xref:System.Reflection.TypeAttributes.Class>, <xref:System.Reflection.TypeAttributes.Interface>, <xref:System.Reflection.TypeAttributes.Abstract>, <xref:System.Reflection.TypeAttributes.Sealed>, <xref:System.Reflection.TypeAttributes.Public>, <xref:System.Reflection.TypeAttributes.NotPublic>, <xref:System.Reflection.TypeAttributes.NestedPublic>, and <xref:System.Reflection.TypeAttributes.NestedPrivate>.  
   
 > [!NOTE]
->  Some of the flags such as <xref:System.Reflection.TypeAttributes> overlap with the meaning of flags in the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property of <xref:System.CodeDom.CodeTypeDeclaration> that is inherited from <xref:System.CodeDom.CodeTypeMember>. The <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property is a side effect of the <xref:System.CodeDom.CodeTypeDeclaration> class inheriting from <xref:System.CodeDom.CodeTypeMember> so that classes can be nested. The flags in the <xref:System.CodeDom.CodeTypeDeclaration.TypeAttributes%2A> property should be used instead of the flags in the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property.  
+>  Some of the flags such as <xref:System.Reflection.TypeAttributes.Abstract> overlap with the meaning of flags in the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property of <xref:System.CodeDom.CodeTypeDeclaration> that is inherited from <xref:System.CodeDom.CodeTypeMember>. The <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property is a side effect of the <xref:System.CodeDom.CodeTypeDeclaration> class inheriting from <xref:System.CodeDom.CodeTypeMember> so that classes can be nested. The flags in the <xref:System.CodeDom.CodeTypeDeclaration.TypeAttributes%2A> property should be used instead of the flags in the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property.  
   
 > [!NOTE]
->  The pattern for setting the visibility flags (flags containing the words `Public` or `Nested`) is to mask out all visibility flags using the <xref:System.Reflection.TypeAttributes> and then set the desired visibility flag. For example, the C# code statement to identify the <xref:System.CodeDom.CodeTypeDeclaration> (named `cd`) as an internal class is `cd.TypeAttributes = (cd.TypeAttributes & ~TypeAttributes.VisibilityMask) | TypeAttributes.NotPublic;`.  The code to set the same value in Visual Basic is `cd.TypeAttributes = (cd.TypeAttributes And (TypeAttributes.VisibilityMask Xor -1)) Or TypeAttributes.NotPublic`. Setting the <xref:System.CodeDom.CodeTypeDeclaration.TypeAttributes%2A> property directly to a visibility flag (`cd.TypeAttributes = TypeAttributes.NotPublic;`) erases all other flags that might be set.  
+>  The pattern for setting the visibility flags (flags containing the words `Public` or `Nested`) is to mask out all visibility flags using the <xref:System.Reflection.TypeAttributes.VisibilityMask> and then set the desired visibility flag. For example, the C# code statement to identify the <xref:System.CodeDom.CodeTypeDeclaration> (named `cd`) as an internal class is `cd.TypeAttributes = (cd.TypeAttributes & ~TypeAttributes.VisibilityMask) | TypeAttributes.NotPublic;`.  The code to set the same value in Visual Basic is `cd.TypeAttributes = (cd.TypeAttributes And (TypeAttributes.VisibilityMask Xor -1)) Or TypeAttributes.NotPublic`. Setting the <xref:System.CodeDom.CodeTypeDeclaration.TypeAttributes%2A> property directly to a visibility flag (`cd.TypeAttributes = TypeAttributes.NotPublic;`) erases all other flags that might be set.  
   
  ]]></format>
         </remarks>
@@ -360,6 +408,10 @@ Implements Interface1
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

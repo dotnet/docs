@@ -46,7 +46,7 @@ The `invalidMemberDeclaration` managed debugging assistant (MDA) is activated to
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidMemberDeclaration/>  

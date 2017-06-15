@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;transportConfigurationType&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ This element is a key/value pair, which identifies the type of a particular tran
   
 ## Syntax  
   
-```  
-  
+```xml  
 <serviceHostingEnvironment>   
    <transportConfigurationTypes>  
       <add name="String"  
@@ -59,7 +58,7 @@ This element is a key/value pair, which identifies the type of a particular tran
   
 ## Example  
   
-```  
+```xml  
 <serviceHostingEnvironment>   
    <transportConfigurationTypes>  
       <add name="net.udp"  

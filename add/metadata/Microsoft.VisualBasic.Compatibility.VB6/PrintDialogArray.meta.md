@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.PrintDialogArray.#ctor(System.ComponentModel.IContainer)
 author: "stevehoag"
 ms.author: "shoag"

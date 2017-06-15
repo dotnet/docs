@@ -6,14 +6,18 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of initialization methods for instances of the <see cref="T:System.Collections.Immutable.ImmutableStack`1" /> class.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Create&lt;T&gt;">
@@ -25,6 +29,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -34,9 +39,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items to be stored in the immutable stack.</typeparam>
+        <summary>Creates an empty immutable stack.</summary>
+        <returns>An empty immutable stack.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,6 +54,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -60,10 +66,10 @@
         <Parameter Name="item" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable stack.</typeparam>
+        <param name="item">The item to prepopulate the stack with.</param>
+        <summary>Creates a new immutable stack that contains the specified item.</summary>
+        <returns>A new immutable collection that contains the specified item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +82,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -93,10 +100,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the immutable stack.</typeparam>
+        <param name="items">An array that contains the items to prepopulate the stack with.</param>
+        <summary>Creates a new immutable stack that contains the specified array of items.</summary>
+        <returns>A new immutable stack that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,6 +116,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -120,10 +128,10 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items in the stack.</typeparam>
+        <param name="items">The items to add to the stack before it’s immutable.</param>
+        <summary>Creates a new immutable stack that contains the specified items.</summary>
+        <returns>An immutable stack that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,6 +144,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableStack&lt;T&gt;</ReturnType>
@@ -148,11 +157,11 @@
         <Parameter Name="value" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="stack">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of items contained in the stack.</typeparam>
+        <param name="stack">The stack to modify.</param>
+        <param name="value">The item to remove from the stack.</param>
+        <summary>Removes the specified item from an immutable stack.</summary>
+        <returns>A stack; never <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

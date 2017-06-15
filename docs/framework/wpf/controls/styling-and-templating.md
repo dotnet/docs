@@ -2,7 +2,7 @@
 title: "Styling and Templating | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,7 +75,7 @@ manager: "wpickett"
   
  [!code-xml[StylingIntroSnippet#UIText](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#uitext)]  
   
- This <xref:System.Windows.Controls.TextBlock> style now has a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of <xref:System.Windows.HorizontalAlignment>, a <xref:System.Windows.Controls.TextBlock.FontFamily%2A> value of `Comic Sans MS`, a <xref:System.Windows.Controls.TextBlock.FontSize%2A> value of 26, and a <xref:System.Windows.Controls.TextBlock.Foreground%2A> value set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there is more than one <xref:System.Windows.Setter> setting the same property in a <xref:System.Windows.Style>, the <xref:System.Windows.Setter> that is declared last takes precedence.  
+ This <xref:System.Windows.Controls.TextBlock> style now has a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of <xref:System.Windows.HorizontalAlignment.Center>, a <xref:System.Windows.Controls.TextBlock.FontFamily%2A> value of `Comic Sans MS`, a <xref:System.Windows.Controls.TextBlock.FontSize%2A> value of 26, and a <xref:System.Windows.Controls.TextBlock.Foreground%2A> value set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there is more than one <xref:System.Windows.Setter> setting the same property in a <xref:System.Windows.Style>, the <xref:System.Windows.Setter> that is declared last takes precedence.  
   
  The following shows what the <xref:System.Windows.Controls.TextBlock> elements now look like:  
   

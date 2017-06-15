@@ -2,7 +2,7 @@
 title: "&lt;message&gt; of &lt;wsDualHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
   
 ## Syntax  
   
-```  
-  
+```xml  
 <message   
       clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
      negotiateServiceCredential="Boolean"  

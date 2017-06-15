@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,8 +36,7 @@ Removes a listener from the **Listeners** collection.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <remove name="listener name" />  
 ```  
   
@@ -70,7 +69,7 @@ Removes a listener from the **Listeners** collection.
 ## Example  
  The following example shows how to remove the default trace listener from the trace **Listeners** collection.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <trace autoflush="true" indentsize="0">  

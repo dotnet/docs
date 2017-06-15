@@ -2,7 +2,7 @@
 title: "MTOM Encoding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,9 +29,9 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
   
  By default, the WSHttpBinding sends and received messages as normal text XML. To enable sending and receiving MTOM messages, set the `messageEncoding` attribute on the binding's configuration (as in the following example code), or directly on the binding using the `MessageEncoding` property. The service or client can now send and receive MTOM messages.  
   
-```  
+```xml  
 <wsHttpBinding>  
-    <binding name="WSHttpBinding_IUpload" messageEncoding="Mtom"/>  
+  <binding name="WSHttpBinding_IUpload" messageEncoding="Mtom" />  
 </wsHttpBinding>  
 ```  
   
@@ -78,7 +78,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

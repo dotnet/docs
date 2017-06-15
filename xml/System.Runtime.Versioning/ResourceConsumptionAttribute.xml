@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -31,13 +35,13 @@
 ## Remarks  
  If the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> attribute is applied to a member, the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute must also be applied.  
   
- If the resource scope of the consumed resource is different than the resource scope of how it is consumed, the constructor that takes a `consumptionScope` parameter should be used to specify how the resource is consumed. For example, a resource may be exposed as a <xref:System.Runtime.Versioning.ResourceScope> resource, but only used at the <xref:System.Runtime.Versioning.ResourceScope> and <xref:System.Runtime.Versioning.ResourceScope> scope. For this example the `consumptionScope` parameter is set to <xref:System.Runtime.Versioning.ResourceScope> &#124; <xref:System.Runtime.Versioning.ResourceScope>.  
+ If the resource scope of the consumed resource is different than the resource scope of how it is consumed, the constructor that takes a `consumptionScope` parameter should be used to specify how the resource is consumed. For example, a resource may be exposed as a <xref:System.Runtime.Versioning.ResourceScope.Machine> resource, but only used at the <xref:System.Runtime.Versioning.ResourceScope.Process> and <xref:System.Runtime.Versioning.ResourceScope.Assembly> scope. For this example the `consumptionScope` parameter is set to <xref:System.Runtime.Versioning.ResourceScope.Process> &#124; <xref:System.Runtime.Versioning.ResourceScope.Assembly>.  
   
- The `resourceScope` parameter in the constructor must specify a <xref:System.Runtime.Versioning.ResourceScope> greater than or equal to the resource exposure of all called members.  For example, a method consuming two <xref:System.Runtime.Versioning.ResourceScope> resources and one <xref:System.Runtime.Versioning.ResourceScope> resource would be identified as consuming a <xref:System.Runtime.Versioning.ResourceScope> and a <xref:System.Runtime.Versioning.ResourceScope> resource by setting `resourceScope` to <xref:System.Runtime.Versioning.ResourceScope> &#124; <xref:System.Runtime.Versioning.ResourceScope>.  
+ The `resourceScope` parameter in the constructor must specify a <xref:System.Runtime.Versioning.ResourceScope> greater than or equal to the resource exposure of all called members.  For example, a method consuming two <xref:System.Runtime.Versioning.ResourceScope.Process> resources and one <xref:System.Runtime.Versioning.ResourceScope.Machine> resource would be identified as consuming a <xref:System.Runtime.Versioning.ResourceScope.Machine> and a <xref:System.Runtime.Versioning.ResourceScope.Process> resource by setting `resourceScope` to <xref:System.Runtime.Versioning.ResourceScope.Machine> &#124; <xref:System.Runtime.Versioning.ResourceScope.Process>.  
   
- `Public` members cannot expose <xref:System.Runtime.Versioning.ResourceScope> or <xref:System.Runtime.Versioning.ResourceScope> resources.  <xref:System.Runtime.Versioning.ResourceScope> members cannot expose <xref:System.Runtime.Versioning.ResourceScope> resources.  
+ `Public` members cannot expose <xref:System.Runtime.Versioning.ResourceScope.Assembly> or <xref:System.Runtime.Versioning.ResourceScope.Private> resources.  <xref:System.Runtime.Versioning.ResourceScope.Assembly> members cannot expose <xref:System.Runtime.Versioning.ResourceScope.Private> resources.  
   
- The graph of methods terminates when a <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute with a resource scope of <xref:System.Runtime.Versioning.ResourceScope> is applied to a method.  
+ The graph of methods terminates when a <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute with a resource scope of <xref:System.Runtime.Versioning.ResourceScope.None> is applied to a method.  
   
  ]]></format>
     </remarks>
@@ -57,6 +61,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceScope" Type="System.Runtime.Versioning.ResourceScope" />
@@ -82,6 +90,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceScope" Type="System.Runtime.Versioning.ResourceScope" />
         <Parameter Name="consumptionScope" Type="System.Runtime.Versioning.ResourceScope" />
@@ -94,9 +106,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute specifies a scope of <xref:System.Runtime.Versioning.ResourceScope>, then the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> attribute must specify a resource it consumes and how it consumes it, by specifying a value for the `consumptionScope` parameter.  
+ If the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute specifies a scope of <xref:System.Runtime.Versioning.ResourceScope.None>, then the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> attribute must specify a resource it consumes and how it consumes it, by specifying a value for the `consumptionScope` parameter.  
   
- The scope specified by `consumptionScope` should be less than or equal to the scope specified by `resourceScope`. For example, a <xref:System.Runtime.Versioning.ResourceScope> scope can be consumed as a <xref:System.Runtime.Versioning.ResourceScope> or <xref:System.Runtime.Versioning.ResourceScope> scope, but not as a <xref:System.Runtime.Versioning.ResourceScope> scope.  
+ The scope specified by `consumptionScope` should be less than or equal to the scope specified by `resourceScope`. For example, a <xref:System.Runtime.Versioning.ResourceScope.Process> scope can be consumed as a <xref:System.Runtime.Versioning.ResourceScope.Process> or <xref:System.Runtime.Versioning.ResourceScope.AppDomain> scope, but not as a <xref:System.Runtime.Versioning.ResourceScope.Machine> scope.  
   
  ]]></format>
         </remarks>
@@ -116,6 +128,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
@@ -140,6 +156,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>

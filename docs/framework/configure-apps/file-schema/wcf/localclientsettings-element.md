@@ -2,7 +2,7 @@
 title: "&lt;localClientSettings&gt; element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies the security settings of a local client for this binding.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <security>  
    <localClientSettings cacheCookies="Boolean"  
       cookieRenewalThresholdPercentage="Integer"  

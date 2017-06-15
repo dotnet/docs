@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;scopedCertificates&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
-  
+```xml  
 <add findValue="String"  
           storeLocation="CurrentUser/LocalMachine"  
           storeName=" CurrentUser/LocalMachine"  
@@ -95,7 +94,7 @@ endpointBehaviors section
 ## Example  
  The following example adds an X.509 certificate the collection.  
   
-```  
+```xml  
 <behaviors>  
  <endpointBehaviors>  
   <behavior name="MyEndpointBehavior">  

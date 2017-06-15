@@ -2,7 +2,7 @@
 title: "How to: Bind the Windows Forms DataGrid Control to a Data Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,12 +41,10 @@ manager: "wpickett"
   
     ```vb  
     sqlDataAdapter1.Fill(DsCategories1)  
-  
     ```  
   
     ```csharp  
     sqlDataAdapter1.Fill(DsCategories1);  
-  
     ```  
   
     ```cpp  
@@ -59,14 +57,12 @@ manager: "wpickett"
     Dim ws As New MyProject.localhost.CategoriesService()  
     ws.Credentials = System.Net.CredentialCache.DefaultCredentials  
     DsCategories1.Merge(ws.GetCategories())  
-  
     ```  
   
     ```csharp  
     MyProject.localhost.CategoriesService ws = new MyProject.localhost.CategoriesService();  
     ws.Credentials = System.Net.CredentialCache.DefaultCredentials;  
     DsCategories1.Merge(ws.GetCategories());  
-  
     ```  
   
     ```cpp  
@@ -85,12 +81,10 @@ manager: "wpickett"
   
     ```vb  
     DataGrid1.SetDataBinding(DsCustomers1, "Customers")  
-  
     ```  
   
     ```csharp  
     DataGrid1.SetDataBinding(DsCustomers1, "Customers");  
-  
     ```  
   
     ```cpp  
@@ -101,12 +95,10 @@ manager: "wpickett"
   
     ```vb  
     DataGrid1.SetDataBinding(DsCustomers1, "")  
-  
     ```  
   
     ```csharp  
     DataGrid1.SetDataBinding(DsCustomers1, "");  
-  
     ```  
   
     ```cpp  

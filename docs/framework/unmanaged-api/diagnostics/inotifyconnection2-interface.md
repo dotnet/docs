@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "INotifyConnection2 interface [.NET Framework debugging]"
 ms.assetid: 9868cfb3-dd51-4812-bca9-171d7829afe9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

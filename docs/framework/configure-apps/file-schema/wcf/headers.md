@@ -2,7 +2,7 @@
 title: "&lt;headers&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,7 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
   
 ## Syntax  
   
-```  
-  
+```xml  
 <headers>  
     <Region xmlns="Uri">"String"</Region>  
         <Member xmlns="Uri">"String"</Member>  

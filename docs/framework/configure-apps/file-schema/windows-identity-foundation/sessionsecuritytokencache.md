@@ -2,6 +2,7 @@
 title: "&lt;sessionSecurityTokenCache&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,14 +25,14 @@ Registers a cache for session tokens with a service or a security token handler 
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-      <sessionSecurityTokenCache type=xs:string>  
-      </sessionSecurityTokenCache>  
-    </caches>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <caches>  
+      <sessionSecurityTokenCache type=xs:string>  
+      </sessionSecurityTokenCache>  
+    </caches>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -56,7 +57,7 @@ Registers a cache for session tokens with a service or a security token handler 
 ## Example  
  The following XML shows the configuration of a custom cache for holding session security tokens (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). The configuration is taken from the `ClaimsAwareWebFarm` sample. For more information about this sample, see [WIF Code Sample Index](../../../../../docs/framework/security/wif-code-sample-index.md).  
   
-```  
+```xml  
 <caches>  
   <sessionSecurityTokenCache type="CacheLibrary.SharedSessionSecurityTokenCache, CacheLibrary">  
     <!--cacheServiceAddress points to the centralized session security token cache service running in the web farm.-->  

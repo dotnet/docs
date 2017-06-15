@@ -2,7 +2,7 @@
 title: "&lt;defaultProxy&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,8 +35,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 ## Syntax  
   
-```  
-  
+```xml  
       <defaultProxy  
   enabled="true|false"  
   useDefaultCredentials="true|false"  
@@ -81,7 +80,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ## Example  
  The following code example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access and contoso.com.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

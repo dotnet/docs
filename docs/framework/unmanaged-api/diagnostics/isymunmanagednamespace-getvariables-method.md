@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedNamespace::GetVariables method [.NET Framework debugging]"
   - "GetVariables method, ISymUnmanagedNamespace interface [.NET Framework debugging]"
 ms.assetid: ea7c1617-f3ce-4220-8288-f2b50eaf0f0f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

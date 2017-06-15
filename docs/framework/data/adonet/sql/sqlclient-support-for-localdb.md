@@ -2,7 +2,7 @@
 title: "SqlClient Support for LocalDB | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,7 +44,7 @@ Beginning in [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] 
   
 -   Specify the LocalDB instances to create in the app.config file, as follows.  The version number of the instance should be the same as the version number of your LocalDB installation.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <configuration>  
       <configSections>  

@@ -29,7 +29,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 ## XAML Attribute Usage  
   
 ```  
-\<object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
+<object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
    ...  
 </object>  
 ```  
@@ -38,23 +38,23 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
   
 |||  
 |-|-|  
-|*NotPublic*|The exact string to pass to specify <xref:System.Reflection.TypeAttributes?displayProperty=fullName> versus <xref:System.Reflection.TypeAttributes?displayProperty=fullName> varies, depending on the code-behind programming language that you use. See Remarks.|  
+|*NotPublic*|The exact string to pass to specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=fullName> versus <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=fullName> varies, depending on the code-behind programming language that you use. See Remarks.|  
   
 ## Dependencies  
  [x:Class](../../../docs/framework/xaml-services/x-class-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](http://go.microsoft.com/fwlink/?LinkId=114525).  
   
 ## Remarks  
- The value of `x:ClassModifier` in .NET Framework XAML Services usage varies by programming language. The string to use depends on how each language implements its <xref:System.CodeDom.Compiler.CodeDomProvider> and the type converters it returns to define the meanings for <xref:System.Reflection.TypeAttributes?displayProperty=fullName> and <xref:System.Reflection.TypeAttributes?displayProperty=fullName>, and whether that language is case sensitive.  
+ The value of `x:ClassModifier` in .NET Framework XAML Services usage varies by programming language. The string to use depends on how each language implements its <xref:System.CodeDom.Compiler.CodeDomProvider> and the type converters it returns to define the meanings for <xref:System.Reflection.TypeAttributes.Public?displayProperty=fullName> and <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=fullName>, and whether that language is case sensitive.  
   
--   For [!INCLUDE[TLA2#tla_cshrp](../../../includes/tla2sharptla-cshrp-md.md)], the string to pass to designate <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is `internal`.  
+-   For [!INCLUDE[TLA2#tla_cshrp](../../../includes/tla2sharptla-cshrp-md.md)], the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=fullName> is `internal`.  
   
--   For [!INCLUDE[TLA2#tla_visualbnet](../../../includes/tla2sharptla-visualbnet-md.md)], the string to pass to designate <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is `Friend`.  
+-   For [!INCLUDE[TLA2#tla_visualbnet](../../../includes/tla2sharptla-visualbnet-md.md)], the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=fullName> is `Friend`.  
   
 -   For [!INCLUDE[TLA2#tla_cppcli](../../../includes/tla2sharptla-cppcli-md.md)], no targets exist that support compiling XAML; therefore, the value to pass is unspecified.  
   
- You can also specify <xref:System.Reflection.TypeAttributes?displayProperty=fullName> (`public` in [!INCLUDE[TLA2#tla_cshrp](../../../includes/tla2sharptla-cshrp-md.md)], `Public` in [!INCLUDE[TLA2#tla_visualb](../../../includes/tla2sharptla-visualb-md.md)]); however, specifying <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is infrequently done because <xref:System.Reflection.TypeAttributes?displayProperty=fullName> is already the default behavior.  
+ You can also specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=fullName> (`public` in [!INCLUDE[TLA2#tla_cshrp](../../../includes/tla2sharptla-cshrp-md.md)], `Public` in [!INCLUDE[TLA2#tla_visualb](../../../includes/tla2sharptla-visualb-md.md)]); however, specifying <xref:System.Reflection.TypeAttributes.Public?displayProperty=fullName> is infrequently done because <xref:System.Reflection.TypeAttributes.Public?displayProperty=fullName> is already the default behavior.  
   
- Other values with equivalent user code access-level restrictions, such as `private` in [!INCLUDE[TLA2#tla_cshrp](../../../includes/tla2sharptla-cshrp-md.md)], are not relevant for `x:ClassModifier` because nested class references are not supported in XAML, and therefore, the <xref:System.Reflection.TypeAttributes?displayProperty=fullName> modifier has the same effect.  
+ Other values with equivalent user code access-level restrictions, such as `private` in [!INCLUDE[TLA2#tla_cshrp](../../../includes/tla2sharptla-cshrp-md.md)], are not relevant for `x:ClassModifier` because nested class references are not supported in XAML, and therefore, the <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=fullName> modifier has the same effect.  
   
 ## Security Notes  
  The access level as declared in `x:ClassModifier` is still subject to interpretation by particular frameworks and their capabilities. WPF includes capabilities to load and instantiate types where `x:ClassModifier` is `internal`, if that class is referenced from a WPF resource through a pack URI reference. As a consequence of this case and potentially others like it implemented by other frameworks, do not rely exclusively on `x:ClassModifier` to block all possible instantiation attempts.  

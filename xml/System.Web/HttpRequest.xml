@@ -135,7 +135,7 @@ End Class
       <Docs>
         <param name="filename">The name of the file associated with the request.</param>
         <param name="url">The information regarding the URL of the current request.</param>
-        <param name="queryString">The entire query string sent with the request (everything after the<c>'?'</c>).</param>
+        <param name="queryString">The entire query string sent with the request (everything after the <c>'?'</c>).</param>
         <summary>Initializes an <see cref="T:System.Web.HttpRequest" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -221,7 +221,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpRequest.AnonymousID%2A> property assigns a long-lived unique identifier to a non-authenticated user, which can be used to track the user or assign profile properties to that user without storing data in a `Session` object. By default, the <xref:System.Web.HttpRequest.AnonymousID%2A> property is tracked using a cookie, but it can be set to use the URI when the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> attribute in the anonymous identification configuration section is set to either the <xref:System.Web.HttpCookieMode>, <xref:System.Web.HttpCookieMode>, or <xref:System.Web.HttpCookieMode> value. You must explicitly clear the cookie if you no longer want it available, for example when an anonymous user is authenticated.  
+ The <xref:System.Web.HttpRequest.AnonymousID%2A> property assigns a long-lived unique identifier to a non-authenticated user, which can be used to track the user or assign profile properties to that user without storing data in a `Session` object. By default, the <xref:System.Web.HttpRequest.AnonymousID%2A> property is tracked using a cookie, but it can be set to use the URI when the <xref:System.Web.Configuration.SessionStateSection.Cookieless%2A> attribute in the anonymous identification configuration section is set to either the <xref:System.Web.HttpCookieMode.UseUri>, <xref:System.Web.HttpCookieMode.UseDeviceProfile>, or <xref:System.Web.HttpCookieMode.AutoDetect> value. You must explicitly clear the cookie if you no longer want it available, for example when an anonymous user is authenticated.  
   
  Anonymous identification is used when there is a need to identify entities that are not authenticated and when authorization is required. For more information, see [anonymousIdentification Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/2bd927ef-9057-4703-9c55-4cfb6d7d0929)  
   
@@ -970,6 +970,26 @@ End Class
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InsertEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a managed wrapper for the IIS method that inserts an HTTP request entity body into memory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads provide managed access to the IIS 7 `IHttpRequest::InsertEntityBody` method. The IIS method inserts an HTTP request entity body (the data that is posted by a client) into memory. This is useful because IIS does not maintain a copy of the request entity after it has been read. The <xref:System.Web.HttpRequest.InsertEntityBody%2A> methods create a copy of the HTTP request entity data and make it available to IIS for additional custom handling.  
+  
+> [!NOTE]
+>  The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads work only on IIS 7.0 or later, because the `IHttpRequest::InsertEntityBody` method was added in IIS 7.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InsertEntityBody">
       <MemberSignature Language="C#" Value="public void InsertEntityBody ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertEntityBody() cil managed" />
@@ -1499,9 +1519,9 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows two ways to get the value of a query string variable named “fullname”. In each case, if the URL is `http://www.contoso.com/default.aspx?fullname=Fadi%20Fakhouri`, then the value returned is "Fadi Fakhouri" because the `%20` is URL-decoded into a space character. If the URL doesn’t have a `fullname` query string ID, the returned value would be `null`.  
+ The following code example shows two ways to get the value of a query string variable named "fullname". In each case, if the URL is `http://www.contoso.com/default.aspx?fullname=Fadi%20Fakhouri`, then the value returned is "Fadi Fakhouri" because the `%20` is URL-decoded into a space character. If the URL doesn’t have a `fullname` query string ID, the returned value would be `null`.  
   
- The first line of code looks for the key “fullname” only in the query string; the second line looks for the key “fullname” in all of the HTTP request collections. For more information about the second line, see <xref:System.Web.HttpRequest.Item%2A>.  
+ The first line of code looks for the key "fullname" only in the query string; the second line looks for the key "fullname" in all of the HTTP request collections. For more information about the second line, see <xref:System.Web.HttpRequest.Item%2A>.  
   
 ```csharp  
 string fullname1 = Request.QueryString["fullname"];  
@@ -2022,25 +2042,5 @@ Dim fullname2 As String = Request("fullname")
         <exception cref="T:System.Web.HttpRequestValidationException">Potentially dangerous data was received from the client.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InsertEntityBody">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides a managed wrapper for the IIS method that inserts an HTTP request entity body into memory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads provide managed access to the IIS 7 `IHttpRequest::InsertEntityBody` method. The IIS method inserts an HTTP request entity body (the data that is posted by a client) into memory. This is useful because IIS does not maintain a copy of the request entity after it has been read. The <xref:System.Web.HttpRequest.InsertEntityBody%2A> methods create a copy of the HTTP request entity data and make it available to IIS for additional custom handling.  
-  
-> [!NOTE]
->  The <xref:System.Web.HttpRequest.InsertEntityBody%2A> method overloads work only on IIS 7.0 or later, because the `IHttpRequest::InsertEntityBody` method was added in IIS 7.0.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

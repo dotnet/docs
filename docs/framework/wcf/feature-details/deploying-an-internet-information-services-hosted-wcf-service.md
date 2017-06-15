@@ -2,7 +2,7 @@
 title: "Deploying an Internet Information Services-Hosted WCF Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -86,7 +86,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
 ### Endpoint Addresses for IIS-Hosted Services  
  When hosted in IIS, endpoint addresses are always considered to be relative to the address of the .svc file that represents the service. For example, if the base address of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service is http://localhost/Application1/MyService.svc with the following endpoint configuration.  
   
-```  
+```xml  
 <endpoint address="anotherEndpoint" .../>  
 ```  
   
@@ -94,7 +94,7 @@ new ServiceHost( typeof( MyNamespace.MyServiceImplementationTypeName ) );
   
  Similarly, the endpoint configuration element that uses an empty string as the relative address provides an endpoint reachable at http://localhost/Application1/MyService.svc, which is the base address.  
   
-```  
+```xml  
 <endpoint address="" ... />  
 ```  
   

@@ -25,7 +25,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 1.  In the service's configuration file, add a service behavior that contains the `serviceMetadata` tag:  
   
-    ```  
+    ```xml  
     <behaviors>  
        <serviceBehaviors>  
          <behavior name="CalculatorServiceBehavior">  
@@ -37,14 +37,14 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 2.  Add a `behaviorConfiguration` attribute to the service tag that references this new behavior:  
   
-    ```  
+    ```xml  
     <service        name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">   
     ```  
   
 3.  Add a metadata endpoint specifying mex as the address, `wsHttpBinding` as the binding, and <xref:System.ServiceModel.Description.IMetadataExchange> as the contract:  
   
-    ```  
+    ```xml  
     <endpoint address="mex"  
               binding="wsHttpBinding"  
               contract="IMetadataExchange" />  
@@ -52,7 +52,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 4.  To verify the metadata exchange endpoint is working correctly add an endpoint tag in the client configuration file:  
   
-    ```  
+    ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  
               binding="wsHttpBinding"  
               contract="IMetadataExchange"/>  
@@ -101,7 +101,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
   
 5.  To verify that the metadata exchange endpoint is working correctly, add an endpoint tag in the client configuration file:  
   
-    ```  
+    ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  
               binding="wsHttpBinding"  
               contract="IMetadataExchange"/>  
@@ -117,7 +117,6 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     MetadataSet mdSet = mexClient.GetMetadata(new EndpointAddress(mexAddress));  
     foreach (MetadataSection section in mdSet.MetadataSections)  
     Console.WriteLine("Metadata section: " + section.Dialect.ToString());  
-  
     ```  
   
 ## See Also  

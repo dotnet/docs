@@ -2,7 +2,7 @@
 title: "&lt;mailSettings&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,8 +35,7 @@ Configures mail sending options.
   
 ## Syntax  
   
-```  
-  
+```xml  
       <mailSettings  
   <smtp> … </smtp>  
 /mailsettings>  
@@ -63,7 +62,7 @@ Configures mail sending options.
 ## Example  
  The following code example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <mailSettings>  

@@ -2,7 +2,7 @@
 title: "How to: Make Your Control Invisible at Run Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,6 @@ There are times when you might want to create a user control that is invisible a
     Me.Visible = False  
     ' To set the Visible property from another object.  
     myControl1.Visible = False  
-  
     ```  
   
     ```csharp  
@@ -43,7 +42,6 @@ There are times when you might want to create a user control that is invisible a
     this.Visible = false;  
     // To set the Visible property from another object.  
     myControl1.Visible = false;  
-  
     ```  
   
 ## See Also  

@@ -38,6 +38,31 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package) cil managed" />
@@ -391,7 +416,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Other objects can call <see langword="Dispose" /> multiple times. When you override <see langword="Dispose(Boolean)" />, be careful not to reference objects that were previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+          <para>Other objects can call <see langword="Dispose" /> multiple times. When you override <see langword="Dispose(Boolean)" />, be careful not to reference objects that were previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -559,6 +584,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignDigitally">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signs a collection of package parts by using a specified X.509 certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SignDigitally">
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions) cil managed" />
@@ -730,50 +775,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SignDigitally">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Signs a collection of package parts by using a specified X.509 certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
-  
- [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
- [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
- [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
- [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
-  
- The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
-  
- [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,7 +2,7 @@
 title: "Using Annotation in Queries | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,21 +14,20 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Using Annotation in Queries
-Annotations allow you to arbitrarily tag tracking records with a value that can be configured after build time. For example, you might want several tracking records across several workflows to be tagged with “Mail Server” == “Mail Server1”. This makes it easy to find all records with this tag when querying tracking records later.  
+Annotations allow you to arbitrarily tag tracking records with a value that can be configured after build time. For example, you might want several tracking records across several workflows to be tagged with "Mail Server" == "Mail Server1". This makes it easy to find all records with this tag when querying tracking records later.  
   
 ## Adding Annotations  
  An annotation can be added to a tracking query as shown in the following example.  
   
-```  
+```xml  
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <annotations>  
-    <annotation name="MailServer" value="Mail Server1"/>  
-  </annotations>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <annotations>  
+    <annotation name="MailServer" value="Mail Server1"/>  
+  </annotations>  
 </activityStateQuery>  
-  
 ```  
   
 > [!NOTE]

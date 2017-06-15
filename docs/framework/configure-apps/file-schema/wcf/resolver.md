@@ -2,7 +2,7 @@
 title: "&lt;resolver&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies a peer resolver that is used to resolve a peer mesh ID to a set of pee
   
 ## Syntax  
   
-```  
-  
+```xml  
 <resolver mode="Auto/Custom/Pnrp"  
    referralPolicy="DoNotShare/Service/Share">  
 </resolver>  

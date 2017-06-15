@@ -2,7 +2,7 @@
 title: "&lt;netNamedPipeBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
   
 ## Syntax  
   
-```  
-  
+```xml  
 <netNamedPipeBinding>  
    <binding   
       closeTimeout="TimeSpan"  
@@ -95,7 +94,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
   
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netNamedPipeBinding binding and change some of its settings, you must define a binding configuration. The endpoint must reference the binding configuration by name with a `bindingConfiguration` attribute. In this example, the binding configuration is named Binding1.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <services>  

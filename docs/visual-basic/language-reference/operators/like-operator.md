@@ -57,7 +57,6 @@ Compares a string against a pattern.
 ## Syntax  
   
 ```  
-  
 result = string Like pattern  
 ```  
   

@@ -2,7 +2,7 @@
 title: "&lt;requestCaching&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,8 +35,7 @@ Controls the caching mechanism for network requests.
   
 ## Syntax  
   
-```  
-  
+```xml  
       <requestCaching  
   isPrivateCache ="true|false"  
   disableAllCaching="true|false"  
@@ -88,7 +87,7 @@ Controls the caching mechanism for network requests.
 ## Example  
  The following code example shows how to disable all caching.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <requestCaching  

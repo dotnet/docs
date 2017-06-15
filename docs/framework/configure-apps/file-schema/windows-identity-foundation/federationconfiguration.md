@@ -2,6 +2,7 @@
 title: "&lt;federationConfiguration&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +23,10 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
-  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
-  </federationConfiguration>  
+  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   
@@ -80,7 +81,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
 > [!WARNING]
 >  In this example, neither the cookie handler nor WSFAM are required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element and the `requireSsl` attribute on the `<cookieHandlerElement>` are `false`. These settings are not recommended for most production environments as they may present a security risk.  
   
-```  
+```xml  
 <system.identityModel.services>  
   <federationConfiguration>  
     <wsFederation passiveRedirectEnabled="true"   

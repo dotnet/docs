@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostSemaphore interface [.NET Framework hosting]"
 ms.assetid: c0765321-656c-441e-bab5-58176292be1e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

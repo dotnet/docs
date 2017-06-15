@@ -29,12 +29,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.HttpResponseMessage.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.HttpResponseMessage.ReasonPhrase
 ms.author: "bobdel"
 manager: "markl"
@@ -78,12 +72,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Http.HttpResponseMessage.StatusCode
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Http.HttpResponseMessage.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

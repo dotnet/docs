@@ -2,7 +2,7 @@
 title: "&lt;system.Net&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,9 +34,8 @@ Contains settings that specify how the .NET Framework connects to the network.
   
 ## Syntax  
   
-```  
-  
-      <system.net>   
+```xml  
+      <system.net>   
 </system.net>  
 ```  
   
@@ -70,7 +69,7 @@ Contains settings that specify how the .NET Framework connects to the network.
 ## Example  
  The following code example shows a typical configuration used by <xref:System.Net> classes.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <authenticationModules>  

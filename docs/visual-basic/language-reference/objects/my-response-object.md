@@ -42,7 +42,7 @@ Gets the <xref:System.Web.HttpResponse> object associated with the <xref:System.
 ## Remarks  
  The `My.Response` object contains the current <xref:System.Web.HttpResponse> object associated with the page.  
   
- The `My.Response` object is only available for [!INCLUDE[vstecasp](../../../csharp/language-reference/preprocessor-directives/includes/vstecasp_md.md)] applications.  
+ The `My.Response` object is only available for [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications.  
   
 ## Example  
  The following example gets the header collection from the `My.Request` object and uses the `My.Response` object to write it to the ASP.NET page.  

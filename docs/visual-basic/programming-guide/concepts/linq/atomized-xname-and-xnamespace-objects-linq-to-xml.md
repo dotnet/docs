@@ -47,7 +47,6 @@ If DirectCast(n, Object) = DirectCast(r1.Name, Object) Then
 Else  
 	Console.WriteLine("Different")  
 End If  
-  
 ```  
   
  This example produces the following output:  
@@ -73,7 +72,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```xml  
 <C1>1</C1>  
 <C1>1</C1>  
 ```  

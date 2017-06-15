@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # cref Attribute (C# Programming Guide)
-The `cref` attribute in an XML documentation tag means "code reference." It specifies that the inner text of the tag is a code element, such as a type, method, or property. Documentation tools like [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) use the `cref` attributes to automatically generate hyperlinks to the page where the type or member is documented.  
+The `cref` attribute in an XML documentation tag means "code reference." It specifies that the inner text of the tag is a code element, such as a type, method, or property. Documentation tools like [Sandcastle](https://github.com/EWSoftware/SHFB) use the `cref` attributes to automatically generate hyperlinks to the page where the type or member is documented.  
   
 ## Example  
  The following example shows `cref` attributes used in [\<see>](../../../csharp/programming-guide/xmldoc/see.md) tags.  
@@ -43,7 +43,7 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
   
  When compiled, the program produces the following XML file. Notice that the `cref` attribute for the `GetZero` method, for example, has been transformed by the compiler to `"M:TestNamespace.TestClass.GetZero"`. The "M:" prefix means "method" and is a convention that is recognized by documentation tools such as Sandcastle. For a complete list of prefixes, see [Processing the XML File](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md).  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  
@@ -57,12 +57,12 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
         </member>  
         <member name="M:TestNamespace.TestClass.#ctor">  
             <summary>  
-            This sample shows how to specify the <see cref="T:TestNamespace.TestClass"/> constructor as a cref attribute.   
+            This sample shows how to specify the <see cref="T:TestNamespace.TestClass"/> constructor as a cref attribute.   
             </summary>  
         </member>  
         <member name="M:TestNamespace.TestClass.#ctor(System.Int32)">  
             <summary>  
-            This sample shows how to specify the <see cref="M:TestNamespace.TestClass.#ctor(System.Int32)"/> constructor as a cref attribute.   
+            This sample shows how to specify the <see cref="M:TestNamespace.TestClass.#ctor(System.Int32)"/> constructor as a cref attribute.   
             </summary>  
         </member>  
         <member name="M:TestNamespace.TestClass.GetZero">  

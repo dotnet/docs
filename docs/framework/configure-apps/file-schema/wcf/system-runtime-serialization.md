@@ -2,7 +2,7 @@
 title: "&lt;system.runtime.serialization&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,7 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
   
 ## Syntax  
   
-```  
-  
+```xml  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer ignoreExtensionDataObject="Boolean"  

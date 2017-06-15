@@ -2,7 +2,7 @@
 title: "SqlCommand Execution with a SqlNotificationRequest | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -71,7 +71,6 @@ command.ExecuteReader();
 // Process the DataReader.  
 // You can use Transact-SQL syntax to periodically poll the   
 // SQL Server queue to see if you have a new message.  
-  
 ```  
   
 ## See Also  

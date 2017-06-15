@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleEvaluationIncompatibleTypesException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.Rules.RuleEvaluationIncompatibleTypesException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

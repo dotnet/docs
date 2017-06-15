@@ -133,7 +133,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="entity " />is <see langword="null" />.</exception>
+          <paramref name="entity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -162,7 +162,7 @@
   
  If the collection is already filled or partially filled, the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Attach%2A> method merges existing entities with the given entities. The given entities are not assumed to be the complete set of related entities.  
   
- All entities passed in must be in the <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state. Objects in the <xref:System.Data.EntityState> state are only allowed when the state manager is already tracking the relationship instance.  
+ All entities passed in must be in the <xref:System.Data.EntityState.Unchanged> or <xref:System.Data.EntityState.Modified> state. Objects in the <xref:System.Data.EntityState.Deleted> state are only allowed when the state manager is already tracking the relationship instance.  
   
  ]]></format>
         </remarks>
@@ -203,9 +203,9 @@
   
  The attached object is not assumed to be the complete set of related entity objects.  
   
- The object associated with this <xref:System.Data.Objects.DataClasses.EntityCollection%601> and all objects being attached to it must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state.  
+ The object associated with this <xref:System.Data.Objects.DataClasses.EntityCollection%601> and all objects being attached to it must be in an <xref:System.Data.EntityState.Unchanged> or <xref:System.Data.EntityState.Modified> state.  
   
- Objects in the <xref:System.Data.EntityState> state can only be attached when the <xref:System.Data.Objects.ObjectStateManager> is already tracking the relationship instance.  
+ Objects in the <xref:System.Data.EntityState.Deleted> state can only be attached when the <xref:System.Data.Objects.ObjectStateManager> is already tracking the relationship instance.  
   
    
   
@@ -382,7 +382,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used to obtain a new instance of <xref:System.Data.Objects.ObjectQuery%601> that returns the same set of objects. This is useful as the starting point for a more complex join, union, or filtered query, or to return the same objects in a detached state by using the <xref:System.Data.Objects.MergeOption> option.  
+ This property is used to obtain a new instance of <xref:System.Data.Objects.ObjectQuery%601> that returns the same set of objects. This is useful as the starting point for a more complex join, union, or filtered query, or to return the same objects in a detached state by using the <xref:System.Data.Objects.MergeOption.NoTracking> option.  
   
  <xref:System.Data.Objects.DataClasses.EntityCollection%601.CreateSourceQuery%2A> is used to filter objects in an <xref:System.Data.Objects.DataClasses.EntityCollection%601> to enable you to bind only objects of a specific type. For more information, see [Binding Objects to Controls](http://msdn.microsoft.com/en-us/2fd34855-929b-4303-a91e-4bb69d958f2b).  
   
@@ -596,11 +596,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entity" /> object is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The<paramref name=" entity " />object is not attached to the same object context.  
+        <exception cref="T:System.InvalidOperationException">The <paramref name="entity" /> object is not attached to the same object context.  
   
  -or-  
   
- The <paramref name="entity " />object does not have a valid relationship manager.</exception>
+ The <paramref name="entity" /> object does not have a valid relationship manager.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

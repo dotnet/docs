@@ -21,13 +21,11 @@ Applies runtime reflection policy to a constructed generic method.
 ## Syntax  
   
 ```xml  
-  
 <MethodInstantiation Name="method_name"  
                      Signature="method_signature"  
                      Arguments="method_arguments"  
                      Browse="policy_type"  
                      Dynamic="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

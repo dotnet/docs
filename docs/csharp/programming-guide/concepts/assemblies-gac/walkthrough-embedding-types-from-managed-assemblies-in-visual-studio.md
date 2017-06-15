@@ -59,7 +59,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 -   Run the client program to see that the new version of the runtime assembly is being used without having to recompile the client program.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## Creating an Interface  
   
@@ -248,5 +248,5 @@ If you embed type information from a strong-named managed assembly, you can loos
 ## See Also  
  [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Programming with Assemblies](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)   
  [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

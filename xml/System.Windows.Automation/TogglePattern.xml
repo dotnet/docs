@@ -62,7 +62,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TogglePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+ This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode.Full> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode.None>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TogglePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
   
  For information on the properties available and their use, see <xref:System.Windows.Automation.TogglePattern.TogglePatternInformation>.  
   
@@ -123,7 +123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A control will cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+ A control will cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState.On>, <xref:System.Windows.Automation.ToggleState.Off> and, if supported, <xref:System.Windows.Automation.ToggleState.Indeterminate>.  
   
    
   
@@ -152,14 +152,14 @@
         <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" />property.</summary>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" /> property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TogglePatternIdentifiers>.  
   
- An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState>, <xref:System.Windows.Automation.ToggleState> and, if supported, <xref:System.Windows.Automation.ToggleState>.  
+ An <xref:System.Windows.Automation.AutomationElement> must cycle through its <xref:System.Windows.Automation.ToggleState> in this order: <xref:System.Windows.Automation.ToggleState.On>, <xref:System.Windows.Automation.ToggleState.Off> and, if supported, <xref:System.Windows.Automation.ToggleState.Indeterminate>.  
   
    
   

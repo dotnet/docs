@@ -31,7 +31,7 @@
 ## IsLargeArc and SweepDirection  
  For most arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the  <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> properties indicate which arc to use.  
   
- Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection> or <xref:System.Windows.Media.SweepDirection>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection.Counterclockwise> or <xref:System.Windows.Media.SweepDirection.Clockwise>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
   
  The following illustrations show different <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> settings.  
   
@@ -48,6 +48,29 @@ ArcSegment objects with different SweepDirection settings
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
+  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Clockwise>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Counterclockwise>, the arc is drawn in a negative-angle direction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ArcSegment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -70,7 +93,7 @@ ArcSegment objects with different SweepDirection settings
   
  Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
   
- If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a negative-angle direction.  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Clockwise>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Counterclockwise>, the arc is drawn in a negative-angle direction.  
   
  ]]></format>
         </remarks>
@@ -111,7 +134,7 @@ ArcSegment objects with different SweepDirection settings
   
  Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
   
- If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a negative-angle direction.  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Clockwise>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Counterclockwise>, the arc is drawn in a negative-angle direction.  
   
  ]]></format>
         </remarks>
@@ -213,7 +236,7 @@ ArcSegment objects with different SweepDirection settings
 ## Remarks  
  For most arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the  <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> properties indicate which arc to use.  
   
- Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection> or <xref:System.Windows.Media.SweepDirection>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection.Counterclockwise> or <xref:System.Windows.Media.SweepDirection.Clockwise>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
   
  The following illustration shows two elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> settings.  
   
@@ -274,7 +297,7 @@ ArcSegment objects with different IsLargeArc settings
   
  For most arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the  <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> and <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> properties indicate which arc to use.  
   
- Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection> or <xref:System.Windows.Media.SweepDirection>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> is **true**, then one of the two larger arc sweeps is chosen; otherwise, if  is **false**, one of the smaller arc sweeps is chosen. The remaining two arc candidates are each drawn in a different direction: <xref:System.Windows.Media.SweepDirection.Counterclockwise> or <xref:System.Windows.Media.SweepDirection.Clockwise>. The <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> property specifies which one to use.  
   
  The following illustration shows several elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.Point%2A> settings.  
   
@@ -437,7 +460,7 @@ Several ArcSegment objects with different Size settings
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an <xref:System.Windows.Media.ArcSegment> with a given <xref:System.Windows.Media.ArcSegment.Size%2A>, <xref:System.Windows.Media.ArcSegment.RotationAngle%2A>, start point, and end <xref:System.Windows.Media.ArcSegment.Point%2A>, four different arcs are possible. Specifying the <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> property reduces the number of possible arcs to two: an arc drawn from the start point to the end <xref:System.Windows.Media.ArcSegment.Point%2A> in a <xref:System.Windows.Media.SweepDirection> direction and an arc drawn from the start point to the end point in a <xref:System.Windows.Media.SweepDirection> direction.  
+ For an <xref:System.Windows.Media.ArcSegment> with a given <xref:System.Windows.Media.ArcSegment.Size%2A>, <xref:System.Windows.Media.ArcSegment.RotationAngle%2A>, start point, and end <xref:System.Windows.Media.ArcSegment.Point%2A>, four different arcs are possible. Specifying the <xref:System.Windows.Media.ArcSegment.IsLargeArc%2A> property reduces the number of possible arcs to two: an arc drawn from the start point to the end <xref:System.Windows.Media.ArcSegment.Point%2A> in a <xref:System.Windows.Media.SweepDirection.Clockwise> direction and an arc drawn from the start point to the end point in a <xref:System.Windows.Media.SweepDirection.Counterclockwise> direction.  
   
  The following illustration shows two elliptical arcs that are identical except for their <xref:System.Windows.Media.ArcSegment.SweepDirection%2A> settings.  
   
@@ -473,28 +496,5 @@ ArcSegment objects with different SweepDirection settings
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
-  
- For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
-  
- Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
-  
- If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection>, the arc is drawn in a negative-angle direction.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -24,6 +24,6 @@ The most basic way to create an activity using [!INCLUDE[wf](../../../includes/w
   
 3.  Open the new activity.  Drag a <xref:System.Activities.Statements.Sequence> activity from the toolbox onto the designer surface.  
   
-4.  Drag a <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity. Enter `“Hello World”` (with quotes) into the **Text** field.  
+4.  Drag a <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity. Enter `"Hello World"` (with quotes) into the **Text** field.  
   
-5.  Drag a second <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity, below the first one. Enter `“Goodbye”` (with quotes) into the **Text** field.
+5.  Drag a second <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence> activity, below the first one. Enter `"Goodbye"` (with quotes) into the **Text** field.

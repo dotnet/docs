@@ -6,14 +6,22 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides a set of static (Shared in Visual Basic) methods for working with dataflow blocks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AsObservable&lt;TOutput&gt;">
@@ -25,6 +33,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IObservable&lt;TOutput&gt;</ReturnType>
@@ -36,11 +45,12 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source to wrap.</param>
+        <summary>Creates a new <see cref="T:System.IObservable`1" /> abstraction over the <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
+        <returns>An <see cref="T:System.IObservable`1" /> that enables observers to be subscribed to the source.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsObserver&lt;TInput&gt;">
@@ -52,6 +62,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IObserver&lt;TInput&gt;</ReturnType>
@@ -63,10 +74,10 @@
         <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TInput">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TInput">Specifies the type of input accepted by the target block.</typeparam>
+        <param name="target">The target to wrap.</param>
+        <summary>Creates a new <see cref="T:System.IObserver`1" /> abstraction over the  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
+        <returns>An observer that wraps the target block.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,6 +90,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -94,15 +106,30 @@
         <Parameter Name="action2" Type="System.Action&lt;T2&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="source1">To be added.</param>
-        <param name="action1">To be added.</param>
-        <param name="source2">To be added.</param>
-        <param name="action2">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">Specifies type of data contained in the first source.</typeparam>
+        <typeparam name="T2">Specifies type of data contained in the second source.</typeparam>
+        <param name="source1">The first source.</param>
+        <param name="action1">The handler to execute on data from the first source.</param>
+        <param name="source2">The second source.</param>
+        <param name="action2">The handler to execute on data from the second source.</param>
+        <summary>Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.</summary>
+        <returns>A  <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous choice. If both sources are completed prior to the choice completing, the resulting task will be canceled. When one of the sources has data available and successfully propagates it to the choice, the resulting task will complete when the handler completes; if the handler throws an exception, the task will end in the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state and will contain the unhandled exception. Otherwise, the task will end with its <see cref="P:System.Threading.Tasks.Task`1.Result" /> set to either 0 or 1 to represent the first or second source, respectively.  
+  
+ This method will only consume an element from one of the two data sources, never both.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The  <paramref name="action1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="source2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action2" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Choose&lt;T1,T2&gt;">
@@ -114,6 +141,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -130,16 +158,33 @@
         <Parameter Name="dataflowBlockOptions" Type="System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <param name="source1">To be added.</param>
-        <param name="action1">To be added.</param>
-        <param name="source2">To be added.</param>
-        <param name="action2">To be added.</param>
-        <param name="dataflowBlockOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">Specifies type of data contained in the first source.</typeparam>
+        <typeparam name="T2">Specifies type of data contained in the second source.</typeparam>
+        <param name="source1">The first source.</param>
+        <param name="action1">The handler to execute on data from the first source.</param>
+        <param name="source2">The second source.</param>
+        <param name="action2">The handler to execute on data from the second source.</param>
+        <param name="dataflowBlockOptions">The options with which to configure this choice.</param>
+        <summary>Monitors two dataflow sources, invoking the provided handler for whichever source makes data available first.</summary>
+        <returns>A  <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous choice. If both sources are completed prior to the choice completing, or if the <see cref="T:System.Threading.CancellationToken" /> provided as part of <paramref name="dataflowBlockOptions" /> is canceled prior to the choice completing, the resulting task will be canceled. When one of the sources has data available and successfully propagates it to the choice, the resulting task will complete when the handler completes; if the handler throws an exception, the task will end in the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state and will contain the unhandled exception. Otherwise, the task will end with its <see cref="P:System.Threading.Tasks.Task`1.Result" /> set to either 0 or 1 to represent the first or second source, respectively.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="source2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="dataflowBlockOptions" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Choose&lt;T1,T2,T3&gt;">
@@ -151,6 +196,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -169,18 +215,41 @@
         <Parameter Name="action3" Type="System.Action&lt;T3&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="source1">To be added.</param>
-        <param name="action1">To be added.</param>
-        <param name="source2">To be added.</param>
-        <param name="action2">To be added.</param>
-        <param name="source3">To be added.</param>
-        <param name="action3">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">Specifies type of data contained in the first source.</typeparam>
+        <typeparam name="T2">Specifies type of data contained in the second source.</typeparam>
+        <typeparam name="T3">Specifies type of data contained in the third source.</typeparam>
+        <param name="source1">The first source.</param>
+        <param name="action1">The handler to execute on data from the first source.</param>
+        <param name="source2">The second source.</param>
+        <param name="action2">The handler to execute on data from the second source.</param>
+        <param name="source3">The third source.</param>
+        <param name="action3">The handler to execute on data from the third source.</param>
+        <summary>Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.</summary>
+        <returns>A  <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous choice. If all sources are completed prior to the choice completing, the resulting task will be canceled. When one of the sources has data available and successfully propagates it to the choice, the resulting task will complete when the handler completes; if the handler throws an exception, the task will end in the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state and will contain the unhandled exception. Otherwise, the task will end with its <see cref="P:System.Threading.Tasks.Task`1.Result" /> set to the 0-based index of the source.  
+  
+ This method will only consume an element from one of the data sources, never more than one.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="source2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="source3" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action3" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Choose&lt;T1,T2,T3&gt;">
@@ -192,6 +261,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -211,19 +281,46 @@
         <Parameter Name="dataflowBlockOptions" Type="System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="T1">To be added.</typeparam>
-        <typeparam name="T2">To be added.</typeparam>
-        <typeparam name="T3">To be added.</typeparam>
-        <param name="source1">To be added.</param>
-        <param name="action1">To be added.</param>
-        <param name="source2">To be added.</param>
-        <param name="action2">To be added.</param>
-        <param name="source3">To be added.</param>
-        <param name="action3">To be added.</param>
-        <param name="dataflowBlockOptions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T1">Specifies type of data contained in the first source.</typeparam>
+        <typeparam name="T2">Specifies type of data contained in the second source.</typeparam>
+        <typeparam name="T3">Specifies type of data contained in the third source.</typeparam>
+        <param name="source1">The first source.</param>
+        <param name="action1">The handler to execute on data from the first source.</param>
+        <param name="source2">The second source.</param>
+        <param name="action2">The handler to execute on data from the second source.</param>
+        <param name="source3">The third source.</param>
+        <param name="action3">The handler to execute on data from the third source.</param>
+        <param name="dataflowBlockOptions">The options with which to configure this choice.</param>
+        <summary>Monitors three dataflow sources, invoking the provided handler for whichever source makes data available first.</summary>
+        <returns>A  <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous choice. If all sources are completed prior to the choice completing, or if the <see cref="T:System.Threading.CancellationToken" /> provided as part of <paramref name="dataflowBlockOptions" /> is canceled prior to the choice completing, the resulting task will be canceled. When one of the sources has data available and successfully propagates it to the choice, the resulting task will complete when the handler completes; if the handler throws an exception, the task will end in the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state and will contain the unhandled exception. Otherwise, the task will end with its <see cref="P:System.Threading.Tasks.Task`1.Result" /> set to the 0-based index of the source.  
+  
+ This method will only consume an element from one of the data sources, never more than one. If cancellation is requested after an element has been received, the cancellation request will be ignored, and the relevant handler will be allowed to execute.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="source2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action2" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="source3" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="action3" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="dataflowBlockOptions" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encapsulate&lt;TInput,TOutput&gt;">
@@ -235,6 +332,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput,TOutput&gt;</ReturnType>
@@ -248,13 +346,36 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TInput">To be added.</typeparam>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TInput">Specifies the type of input expected by the target.</typeparam>
+        <typeparam name="TOutput">Specifies the type of output produced by the source.</typeparam>
+        <param name="target">The target to encapsulate.</param>
+        <param name="source">The source to encapsulate.</param>
+        <summary>Encapsulates a target and a source into a single propagator.</summary>
+        <returns>The encapsulated target and source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate%2A> method requires two existing blocks: a target block (an instance of a class that implements <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>) and a source block (an instance of a class that implements <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601>). <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate%2A> creates a new instance of an internal class that connects the <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> interface members to the `target` parameter and the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> interface members to the `source` parameter.  Both <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> and <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> derive from <xref:System.Threading.Tasks.Dataflow.IDataflowBlock>. Block completion is explicitly passed from sources to targets. Therefore, the <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete%2A> and <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Fault%2A> methods are connected to the target while the <xref:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion%2A> property is connected to the source.  You must ensure that when the target half  completes, the source half gets completed in the most appropriate manner; for example:  
+  
+ `target.Completion.ContinueWith(completion => source.Complete());`  
+  
+ Or, if you want to propagate the completion type, you can use this more sophisticated code:  
+  
+```  
+target.Completion.ContinueWith(completion => { if (completion.IsFaulted) 3   
+  
+((IDataflowBlock)batchBlock).Fault(completion.Exception);   
+else   
+batchBlock.Complete();   
+});  
+  
+```  
+  
+ You must also explicitly provide the message propagation from target to source. The benefit of this explicit connection is that it gives you the freedom to perform any unconstrained processing between the two encapsulated blocks. You may do that either by encoding the necessary processing into the blocks' delegates (if the blocks take delegates), or by embedding a sub-network of blocks between them. The easier way is to use a block that takes delegates; for example, use <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602>, <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602> (if applicable), or a custom block.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkTo&lt;TOutput&gt;">
@@ -266,6 +387,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -278,12 +400,17 @@
         <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TOutput&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="target">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source from which to link.</param>
+        <param name="target">The <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to which to connect the source.</param>
+        <summary>Links the <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the specified  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> that, upon calling <see langword="Dispose" />, will unlink the source from the target.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="target" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LinkTo&lt;TOutput&gt;">
@@ -295,6 +422,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -308,13 +436,22 @@
         <Parameter Name="predicate" Type="System.Predicate&lt;TOutput&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source from which to link.</param>
+        <param name="target">The  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to which to connect the source.</param>
+        <param name="predicate">The filter a message must pass in order for it to propagate from the source to the target.</param>
+        <summary>Links the <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the specified  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> using the specified filter.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> that, upon calling <see langword="Dispose" />, will unlink the source from the target.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="target" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="predicate" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LinkTo&lt;TOutput&gt;">
@@ -326,6 +463,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -340,14 +478,27 @@
         <Parameter Name="predicate" Type="System.Predicate&lt;TOutput&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="target">To be added.</param>
-        <param name="linkOptions">To be added.</param>
-        <param name="predicate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source from which to link.</param>
+        <param name="target">The  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> to which to connect the source.</param>
+        <param name="linkOptions">One of the enumeration values that specifies how to configure a link between dataflow blocks.</param>
+        <param name="predicate">The filter a message must pass in order for it to propagate from the source to the target.</param>
+        <summary>Links the  <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> to the specified  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> using the specified filter.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> that, upon calling <see langword="Dispose" />, will unlink the source from the target.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The  <paramref name="source" /> is null (Nothing in Visual Basic).  
+  
+ -or-  
+  
+ The  <paramref name="target" /> is null (Nothing in Visual Basic).  
+  
+ -or-  
+  
+ The  <paramref name="linkOptions" /> is null (Nothing in Visual Basic).  
+  
+ -or-  
+  
+ The  <paramref name="predicate" /> is null (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="NullTarget&lt;TInput&gt;">
@@ -359,6 +510,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</ReturnType>
@@ -368,9 +520,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TInput">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TInput">The type of the messages this block can accept.</typeparam>
+        <summary>Gets a target block that synchronously accepts all messages offered to it and drops them.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> that accepts and subsequently drops all offered messages.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -383,6 +535,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -394,10 +547,12 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source to monitor.</param>
+        <summary>Provides a <see cref="T:System.Threading.Tasks.Task`1" /> that asynchronously monitors the source for available output.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that informs of whether and when more output is available. If, when the task completes, its <see cref="P:System.Threading.Tasks.Task`1.Result" /> is <see langword="true" />, more output is available in the source (though another consumer of the source may retrieve the data).  
+  
+ If it returns <see langword="false" />, more output is not and will never be available, due to the source completing prior to output being available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,6 +565,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -422,11 +578,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source to monitor.</param>
+        <param name="cancellationToken">The cancellation token with which to cancel the asynchronous operation.</param>
+        <summary>Provides a  <see cref="T:System.Threading.Tasks.Task`1" /> that asynchronously monitors the source for available output.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that informs of whether and when more output is available. If, when the task completes, its <see cref="P:System.Threading.Tasks.Task`1.Result" /> is <see langword="true" />, more output is available in the source (though another consumer of the source may retrieve the data). If it returns <see langword="false" />, more output is not and will never be available, due to the source completing prior to output being available. If it returns false, more output is not and will never be available, due to the source completing prior to output being available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -439,6 +595,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -451,12 +608,20 @@
         <Parameter Name="item" Type="TInput" />
       </Parameters>
       <Docs>
-        <typeparam name="TInput">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TInput">Specifies the type of data accepted by the target block.</typeparam>
+        <param name="target">The target block.</param>
+        <param name="item">The item being offered to the target.</param>
+        <summary>Posts an item to the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />.</summary>
+        <returns>
+          <see langword="true" /> if the item was accepted by the target block; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will return once the target block has decided to accept or decline the item, but unless otherwise dictated by special semantics of the target block, it does not wait for the item to actually be processed. For example, <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> will return from <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> as soon as it has stored the posted item into its input queue). From the perspective of the block's processing, `Post` is asynchronous. For target blocks that support postponing offered messages, or for blocks that may do more processing in their `Post` implementation, consider using <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A>, which will return immediately and will enable the target to postpone the posted message and later consume it after `SendAsync` returns.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Receive&lt;TOutput&gt;">
@@ -468,6 +633,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TOutput</ReturnType>
@@ -479,11 +645,14 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <summary>Synchronously receives a value from a specified source.</summary>
+        <returns>The received value.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No item could be received from the source.</exception>
       </Docs>
     </Member>
     <Member MemberName="Receive&lt;TOutput&gt;">
@@ -495,6 +664,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TOutput</ReturnType>
@@ -507,12 +677,23 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <param name="cancellationToken">The token to use to cancel the receive operation.</param>
+        <summary>Synchronously receives a value from a specified source and provides a token to cancel the operation.</summary>
+        <returns>The received value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the source successfully offered an item that was received by this operation, that item is returned even if a concurrent cancellation request occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No item could be received from the source.</exception>
+        <exception cref="T:System.OperationCanceledException">The operation was canceled before an item was received from the source.</exception>
       </Docs>
     </Member>
     <Member MemberName="Receive&lt;TOutput&gt;">
@@ -524,6 +705,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TOutput</ReturnType>
@@ -536,12 +718,29 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <param name="timeout">The maximum time interval, in milliseconds, to wait for the synchronous operation to complete, or an interval that represents -1 milliseconds to wait indefinitely.</param>
+        <summary>Synchronously receives a value from a specified source, observing an optional time-out period.</summary>
+        <returns>The received value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the source successfully offered an item that was received by this operation, that item is returned even if a concurrent time-out occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out period.  
+  
+ -or-  
+  
+ <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No item could be received from the source.</exception>
+        <exception cref="T:System.TimeoutException">The specified time-out expired before an item was received from the source.</exception>
       </Docs>
     </Member>
     <Member MemberName="Receive&lt;TOutput&gt;">
@@ -553,6 +752,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TOutput</ReturnType>
@@ -566,13 +766,30 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <param name="timeout">The maximum time interval, in milliseconds, to wait for the synchronous operation to complete, or an interval that represents -1 milliseconds to wait indefinitely.</param>
+        <param name="cancellationToken">The token to use to cancel the receive operation.</param>
+        <summary>Synchronously receives a value from a specified source, providing a token to cancel the operation and observing an optional time-out interval.</summary>
+        <returns>The received value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the source successfully offered an item value that was received by this operation, that value is returned even if a concurrent time-out or cancellation request occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out period.  
+  
+ -or-  
+  
+ <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No item could be received from the source.</exception>
+        <exception cref="T:System.TimeoutException">The specified time-out expired before an item was received from the source.</exception>
+        <exception cref="T:System.OperationCanceledException">The operation was canceled before an item was received from the source.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
@@ -584,6 +801,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
@@ -595,11 +813,13 @@
         <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <summary>Asynchronously receives a value from a specified source.</summary>
+        <returns>A task that represents the asynchronous receive operation. When an item value is successfully received from the source, the returned task is completed and its <see cref="P:System.Threading.Tasks.Task`1.Result" /> returns the received value. If an item value cannot be retrieved because the source is empty and completed , an <see cref="T:System.InvalidOperationException" /> exception is thrown in the returned task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
@@ -611,6 +831,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
@@ -623,12 +844,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <param name="cancellationToken">The token to use to cancel the receive operation.</param>
+        <summary>Asynchronously receives a value from a specified source and provides a token to cancel the operation.</summary>
+        <returns>A task that represents the asynchronous receive operation. When a value is successfully received from the source, the returned task is completed and its <see cref="P:System.Threading.Tasks.Task`1.Result" /> returns the value. If a value cannot be retrieved because cancellation was requested, the returned task is canceled. If the value cannot be retrieved because the source is empty and completed , an <see cref="T:System.InvalidOperationException" /> exception is thrown in the returned task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
@@ -640,6 +863,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
@@ -652,12 +876,20 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <param name="timeout">The maximum time interval, in milliseconds, to wait for the synchronous operation to complete, or an interval that represents -1 milliseconds to wait indefinitely.</param>
+        <summary>Asynchronously receives a value from a specified source, observing an optional time-out period.</summary>
+        <returns>A task that represents the asynchronous receive operation. When a value is successfully received from the source, the returned task is completed and its <see cref="P:System.Threading.Tasks.Task`1.Result" /> returns the value. If a value cannot be retrieved because the time-out expired, the returned task is canceled. If the value cannot be retrieved because the source is empty and completed , an <see cref="T:System.InvalidOperationException" /> exception is thrown in the returned task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out period.  
+  
+ -or-  
+  
+ <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveAsync&lt;TOutput&gt;">
@@ -669,6 +901,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TOutput&gt;</ReturnType>
@@ -682,13 +915,21 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="timeout">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TOutput">The type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive the value.</param>
+        <param name="timeout">The maximum time interval, in milliseconds, to wait for the synchronous operation to complete, or an interval that represents -1 milliseconds to wait indefinitely.</param>
+        <param name="cancellationToken">The token which may be used to cancel the receive operation.</param>
+        <summary>Asynchronously receives a value from a specified source, providing a token to cancel the operation and observing an optional time-out interval.</summary>
+        <returns>A task that represents the asynchronous receive operation. When a value is successfully received from the source, the returned task is completed and its <see cref="P:System.Threading.Tasks.Task`1.Result" /> returns the value. If a value cannot be retrieved because the time-out expired or cancellation was requested, the returned task is canceled. If the value cannot be retrieved because the source is empty and completed, an <see cref="T:System.InvalidOperationException" /> exception is thrown in the returned task.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out period.  
+  
+ -or-  
+  
+ <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;TInput&gt;">
@@ -700,6 +941,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -712,12 +954,13 @@
         <Parameter Name="item" Type="TInput" />
       </Parameters>
       <Docs>
-        <typeparam name="TInput">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TInput">Specifies the type of the data to post to the target.</typeparam>
+        <param name="target">The target to which to post the data.</param>
+        <param name="item">The item being offered to the target.</param>
+        <summary>Asynchronously offers a message to the target message block, allowing for postponement.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous send. If the target accepts and consumes the offered element during the call to <see cref="M:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync``1(System.Threading.Tasks.Dataflow.ITargetBlock{``0},``0)" />, upon return from the call the resulting <see cref="T:System.Threading.Tasks.Task`1" /> will be completed and its <see cref="P:System.Threading.Tasks.Task`1.Result" /> property will return <see langword="true" />. If the target declines the offered element during the call, upon return from the call the resulting <see cref="T:System.Threading.Tasks.Task`1" /> will be completed and its <see cref="P:System.Threading.Tasks.Task`1.Result" /> property will return <see langword="false" />. If the target postpones the offered element, the element will be buffered until such time that the target consumes or releases it, at which point the task will complete, with its <see cref="P:System.Threading.Tasks.Task`1.Result" /> indicating whether the message was consumed. If the target never attempts to consume or release the message, the returned task will never complete.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="target" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendAsync&lt;TInput&gt;">
@@ -729,6 +972,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -742,13 +986,16 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TInput">To be added.</typeparam>
-        <param name="target">To be added.</param>
-        <param name="item">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TInput">Specifies the type of the data to post to the target.</typeparam>
+        <param name="target">The target to which to post the data.</param>
+        <param name="item">The item being offered to the target.</param>
+        <param name="cancellationToken">The cancellation token with which to request cancellation of the send operation.</param>
+        <summary>Asynchronously offers a message to the target message block, allowing for postponement.</summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous send.  If the target accepts and consumes the offered element during the call to SendAsync, upon return from the call the resulting <see cref="T:System.Threading.Tasks.Task`1" /> will be completed and its <c>Result</c> property will return true.  If the target declines the offered element during the call, upon return from the call the resulting <see cref="T:System.Threading.Tasks.Task`1" /> will be completed and its <c>Result</c> property will return false. If the target postpones the offered element, the element will be buffered until such time that the target consumes or releases it, at which point the Task will complete, with its <c>Result</c> indicating whether the message was consumed. If the target never attempts to consume or release the message, the returned task will never complete.  
+  
+ If cancellation is requested before the target has successfully consumed the sent data, the returned task will complete in the Canceled state and the data will no longer be available to the target.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The  <paramref name="target" /> is null (Nothing in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="TryReceive&lt;TOutput&gt;">
@@ -760,6 +1007,7 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -772,12 +1020,22 @@
         <Parameter Name="item" Type="TOutput&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TOutput">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TOutput">Specifies the type of data contained in the source.</typeparam>
+        <param name="source">The source from which to receive.</param>
+        <param name="item">The item received from the source.</param>
+        <summary>Attempts to synchronously receive an item from the <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />.</summary>
+        <returns>
+          <see langword="true" /> if an item could be received; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not wait until the source has an item to provide.  
+  
+ It will return whether or not an element was available.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

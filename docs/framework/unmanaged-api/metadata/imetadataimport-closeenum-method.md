@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::CloseEnum method [.NET Framework metadata]"
   - "CloseEnum method, IMetaDataImport interface [.NET Framework metadata]"
 ms.assetid: 727819d5-1dab-4ebb-ac25-950b4111dc72
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

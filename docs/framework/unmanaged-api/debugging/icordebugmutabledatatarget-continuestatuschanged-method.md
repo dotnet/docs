@@ -2,7 +2,7 @@
 title: "ICorDebugMutableDataTarget::ContinueStatusChanged Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,11 +23,9 @@ Changes the continuation status for the outstanding debug event on the specified
 ## Syntax  
   
 ```  
-  
 HRESULT ContinueStatusChanged(  
    [in] DWORD dwThreadId,  
    [in] CORDB_CONTINUE_STATUS continueStatus);  
-  
 ```  
   
 #### Parameters  

@@ -2,7 +2,7 @@
 title: "&lt;transactedBatching&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies whether transaction batching is supported for receive operations.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <transactedBatching maxBatchSize="Integer" />  
 ```  
   
@@ -55,7 +54,7 @@ Specifies whether transaction batching is supported for receive operations.
 ## Example  
  The following example shows how to add the transacted batching behavior to a service in a configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"  

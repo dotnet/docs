@@ -47,7 +47,7 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
   
 2.  If the type is in the same project, recompile the assembly containing the type.  
   
-3.  If the error recurs, reinstall the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler.  
+3.  If the error recurs, reinstall the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler.  
   
 4.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   

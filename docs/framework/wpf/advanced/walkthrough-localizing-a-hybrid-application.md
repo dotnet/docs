@@ -2,7 +2,7 @@
 title: "Walkthrough: Localizing a Hybrid Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -105,7 +105,7 @@ This walkthrough shows you how to localize              [!INCLUDE[TLA2#tla_wincl
   
 10. Copy the following line into the first                                  `PropertyGroup` in the project file.  
   
-    ```  
+    ```xml  
     <UICulture>en-US</UICulture>   
     ```  
   

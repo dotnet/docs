@@ -2,7 +2,7 @@
 title: "Synchronizing a DataSet with an XmlDataDocument | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,7 +20,7 @@ This section demonstrates one step in the processing of a purchase order, using 
   
  The following XML document contains all the information pertaining to a purchase order: customer information, items ordered, shipping information, and so on.  
   
-```  
+```xml  
 <?xml version="1.0" standalone="yes"?>  
 <PurchaseOrder>  
   <Customers>  
@@ -116,7 +116,7 @@ This section demonstrates one step in the processing of a purchase order, using 
   
  The following code shows the schema from which the strongly typed **DataSet** is generated for this sample.  
   
-```  
+```xml  
 <?xml version="1.0" standalone="yes"?>  
 <xs:schema id="OrderDetail" xmlns=""   
                             xmlns:xs="http://www.w3.org/2001/XMLSchema"   

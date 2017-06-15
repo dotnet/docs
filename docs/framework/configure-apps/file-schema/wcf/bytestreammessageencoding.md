@@ -2,7 +2,7 @@
 title: "&lt;byteStreamMessageEncoding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <byteStreamMessageEncoding/>  
 ```  
   

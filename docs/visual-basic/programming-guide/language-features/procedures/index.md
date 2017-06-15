@@ -1,7 +1,7 @@
 ---
 title: "Procedures in Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: "2017-04-28"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Procedures in Visual Basic
-A *procedure* is a block of [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] statements enclosed by a declaration statement (`Function`, `Sub`, `Operator`, `Get`, `Set`) and a matching `End` declaration. All executable statements in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] must be within some procedure.  
+A *procedure* is a block of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements enclosed by a declaration statement (`Function`, `Sub`, `Operator`, `Get`, `Set`) and a matching `End` declaration. All executable statements in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] must be within some procedure.  
   
 ## Calling a Procedure  
  You invoke a procedure from some other place in the code. This is known as a *procedure call*. When the procedure is finished running, it returns control to the code that invoked it, which is known as the *calling code*. The calling code is a statement, or an expression within a statement, that specifies the procedure by name and transfers control to it.  
@@ -56,13 +56,15 @@ A *procedure* is a block of [!INCLUDE[vbprvb](../../../../csharp/programming-gui
  In most cases, a procedure needs to operate on different data each time you call it. You can pass this information to the procedure as part of the procedure call. The procedure defines zero or more *parameters*, each of which represents a value it expects you to pass to it. Corresponding to each parameter in the procedure definition is an *argument* in the procedure call. An argument represents the value you pass to the corresponding parameter in a given procedure call.  
   
 ## Types of Procedures  
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] uses several types of procedures:  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses several types of procedures:  
   
 -   [Sub Procedures](./sub-procedures.md) perform actions but do not return a value to the calling code.  
   
 -   Event-handling procedures are `Sub` procedures that execute in response to an event raised by user action or by an occurrence in a program.  
   
--   [Function Procedures](./function-procedures.md) return a value to the calling code. They can perform other actions before returning.  
+-   [Function Procedures](./function-procedures.md) return a value to the calling code. They can perform other actions before returning.
+
+    Some functions written in C# return a *reference return value*. Function callers can modify the return value, and this modification is reflected in the state of the called object. Starting with Visual Basic 2017, Visual Basic code can consume reference return values, although it cannot return a value by reference. For more information, see [Reference return values](ref-return-values.md).
   
 -   [Property Procedures](./property-procedures.md) return and assign values of properties on objects or modules.  
   

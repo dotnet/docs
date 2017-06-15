@@ -26,7 +26,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Security and Serialization
-Because serialization can allow other code to see or modify object instance data that would otherwise be inaccessible, a special permission is required of code performing serialization: <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag> flag specified. Under default policy, this permission is not given to Internet-downloaded or intranet code; only code on the local computer is granted this permission.  
+Because serialization can allow other code to see or modify object instance data that would otherwise be inaccessible, a special permission is required of code performing serialization: <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> flag specified. Under default policy, this permission is not given to Internet-downloaded or intranet code; only code on the local computer is granted this permission.  
   
  Normally, all fields of an object instance are serialized, meaning that data is represented in the serialized data for the instance. It is possible for code that can interpret the format to determine what the data values are, independent of the accessibility of the member. Similarly, deserialization extracts data from the serialized representation and sets object state directly, again irrespective of accessibility rules.  
   
@@ -40,7 +40,6 @@ Because serialization can allow other code to see or modify object instance data
     Public Overrides<SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)>  _  
     Sub GetObjectData(info As SerializationInfo, context As StreamingContext)  
     End Sub  
-  
     ```  
   
     ```csharp  

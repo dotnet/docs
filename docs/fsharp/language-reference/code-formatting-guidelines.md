@@ -1,5 +1,5 @@
 ---
-title: Code Formatting Guidelines (F#)
+title: Code Formatting Guidelines (F#) | Microsoft Docs
 description: Code Formatting Guidelines (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -18,7 +18,7 @@ This topic summarizes code indentation guidelines for F#. Because the F# languag
 
 
 ## General Rules for Indentation
-When indentation is required, you must use spaces, not tabs. At least one space is required. Your organization can create coding standards to specify the number of spaces to use for indentation; three or four spaces of indentation at each level where indentation occurs is typical. You can configure Visual Studio to match your organization's indentation standards by changing the options in the `Options` dialog box, which is available from the `Tools` menu. In the `Text Editor` node, expand `F#` and then click `Tabs`. For a description of the available options, see [Options, Text Editor, All Languages, Tabs](https://msdn.microsoft.com/library/7sffa753.aspx).
+When indentation is required, you must use spaces, not tabs. At least one space is required. Your organization can create coding standards to specify the number of spaces to use for indentation; three or four spaces of indentation at each level where indentation occurs is typical. You can configure Visual Studio to match your organization's indentation standards by changing the options in the `Options` dialog box, which is available from the `Tools` menu. In the `Text Editor` node, expand `F#` and then click `Tabs`. For a description of the available options, see [Options, Text Editor, All Languages, Tabs](https://msdn.microsoft.com/library/7sffa753.aspx).
 
 In general, when the compiler parses your code, it maintains an internal stack that indicates the current level of nesting. When code is indented, a new level of nesting is created, or pushed onto this internal stack. When a construct ends, the level is popped. Indentation is one way to signal the end of a level and pop the internal stack, but certain tokens also cause the level to be popped, such as the `end` keyword, or a closing brace or parenthesis.
 
@@ -92,7 +92,7 @@ For code in an `else` block, an additional special rule applies. The warning in 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/code-formatting/snippet8.fs)]
 
-Another exception to the rule that contexts end when a line is not indented as far as a previous line is for infix operators, such as `+` and `|&gt;`. Lines that start with infix operators are permitted to begin `(1 + oplength)` columns before the normal position without triggering an end to the context, where `oplength` is the number of characters that make up the operator. This causes the first token after the operator to align with the previous line.
+Another exception to the rule that contexts end when a line is not indented as far as a previous line is for infix operators, such as `+` and `|>`. Lines that start with infix operators are permitted to begin `(1 + oplength)` columns before the normal position without triggering an end to the context, where `oplength` is the number of characters that make up the operator. This causes the first token after the operator to align with the previous line.
 
 For example, in the following code, the `+` symbol is permitted to be indented two columns less than the previous line.
 

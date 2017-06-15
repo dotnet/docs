@@ -2,7 +2,7 @@
 title: "&lt;messageSenderAuthentication&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies authentication settings for peer certificate used by a message sender.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <messageSenderAuthentication  
    customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
    certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

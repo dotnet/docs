@@ -2,7 +2,7 @@
 title: "&lt;net.pipe&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,7 @@ Specifies configuration settings for the Named Pipe Activation Service, which ma
   
 ## Syntax  
   
-```  
-  
+```xml  
 <configuration>  
    <system.serviceModel.activation>  
        <net.pipe maxPendingAccepts="Integer"  

@@ -41,10 +41,8 @@ This topic describes how to enable persistence for workflows and workflow servic
  The **DurableInstancingOptions** member of the <xref:System.ServiceModel.WorkflowServiceHost> class has a property named **InstanceStore** that you can use to associate an instance store with the **WorkflowServiceHost**.  
   
 ```  
-  
 // wsh is an instance of WorkflowServiceHost class  
 wsh.DurableInstancingOptions.InstanceStore = new SqlWorkflowInstanceStore();  
-  
 ```  
   
  When the **WorkflowServiceHost** is opened, persistence is automatically enabled if the **DurableInstancingOptions.InstanceStore** is not null.  
@@ -59,12 +57,11 @@ wsh.DurableInstancingOptions.InstanceStore = new SqlWorkflowInstanceStore();
   <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
-        <behavior name=”myBehavior”>  
-          <SqlWorkflowInstanceStore connectionString=”Data Source=myDatatbaseServer;Initial Catalog=myPersistenceDatabase”>  
+        <behavior name="myBehavior">  
+          <SqlWorkflowInstanceStore connectionString="Data Source=myDatatbaseServer;Initial Catalog=myPersistenceDatabase">  
         </behavior>  
       </serviceBehaviors>  
     <behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```

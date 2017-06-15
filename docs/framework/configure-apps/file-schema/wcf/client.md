@@ -2,7 +2,7 @@
 title: "&lt;client&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ The `client` element defines a list of endpoints that a client can connect to.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <system.serviceModel>  
     <client>  
         <endpoint>  
@@ -67,7 +66,7 @@ The `client` element defines a list of endpoints that a client can connect to.
   
 ## Example  
   
-```  
+```xml  
 <client>  
     <endpoint address="/HelloWorld/"  
               bindingConfiguration="usingDefaults"  

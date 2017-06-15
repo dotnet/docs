@@ -2,7 +2,7 @@
 title: "Cancellation Handler on Compensable Activity | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -41,7 +41,6 @@ Try
 Catches {  
 // Can do more stuff...  
 }  
-  
 ```  
   
  The second scenario demonstrates executing a <xref:System.Activities.Statements.TryCatch> in parallel with a <xref:System.Activities.Statements.Delay>, which finishes before the <xref:System.Activities.Statements.TryCatch> branch. The completion condition is set to `true` once the first branch finishes, causing the other branch to be canceled.  
@@ -73,7 +72,6 @@ Parallel
         }  
     }  
 }  
-  
 ```  
   
 ### To set up, build, and run the sample  

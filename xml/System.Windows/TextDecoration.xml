@@ -53,7 +53,7 @@ Example of an underline styled with a linear gradient brush and dashed pen
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of the <xref:System.Windows.TextDecoration.Location%2A> property is <xref:System.Windows.TextDecorationLocation>.  
+ The default value of the <xref:System.Windows.TextDecoration.Location%2A> property is <xref:System.Windows.TextDecorationLocation.Underline>.  
   
    
   
@@ -221,7 +221,7 @@ Example of text decoration types
    
   
 ## Examples  
- In the following code example, a strikethrough text decoration is created with a solid color brush for the pen. The <xref:System.Windows.TextDecoration.Location%2A> property is set to <xref:System.Windows.TextDecorationLocation>.  
+ In the following code example, a strikethrough text decoration is created with a solid color brush for the pen. The <xref:System.Windows.TextDecoration.Location%2A> property is set to <xref:System.Windows.TextDecorationLocation.Strikethrough>.  
   
  [!code-csharp[textdecorationsnippets#TextDecorationSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets1)]
  [!code-vb[textdecorationsnippets#TextDecorationSnippets1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets1)]

@@ -2,7 +2,7 @@
 title: "&lt;issuer&gt; of &lt;issuedTokenParameters&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,7 @@ Specifies the Security Token Service (STS) that issues security tokens.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <issuer address="Uri" />  
 ```  
   

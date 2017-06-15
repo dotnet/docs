@@ -2,7 +2,7 @@
 title: "Tracking Using a Text File | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -28,7 +28,7 @@ This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../inc
 ## Behavior Extension Elements Configuration  
  One more step is required to make use of the behavior extension element previously described using .NET Framework configuration files. The following configuration must be placed in configuration files where the extension is to be used.  
   
-```  
+```xml  
 <system.serviceModel>  
     <extensions>  
       <behaviorExtensions>  
@@ -37,7 +37,6 @@ This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../inc
     </extensions>  
 …  
   </system.serviceModel>  
-  
 ```  
   
 > [!NOTE]

@@ -142,29 +142,29 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method determines whether the current scope should be <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, given a reference to a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control and the personalization state information that has already been loaded from earlier in the personalization life cycle. This information is used by a <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance for subsequent personalization-related tasks.  
+ This method determines whether the current scope should be <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> or <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, given a reference to a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control and the personalization state information that has already been loaded from earlier in the personalization life cycle. This information is used by a <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> instance for subsequent personalization-related tasks.  
   
  The following rules are used to determine personalization scope:  
   
--   Scope is assumed initially to be <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+-   Scope is assumed initially to be <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>.  
   
--   If the currently executing user account is not authenticated, the scope is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+-   If the currently executing user account is not authenticated, the scope is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared>.  
   
 -   If the currently executing user account is authenticated, additional processing occurs in order of precedence:  
   
-    -   If the page is in postback mode, the page request contains scope information from a previous rendering of the page. If that scope information indicates that <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope was used, then the scope evaluates to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+    -   If the page is in postback mode, the page request contains scope information from a previous rendering of the page. If that scope information indicates that <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope was used, then the scope evaluates to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared>.  
   
     -   If the currently executing page had control transferred to it from another page (for example, if the transfer of control occurred due to calling the <xref:System.Web.HttpServerUtility.Transfer%2A> method; note that this specific check does not occur for cross-page posting), and if the previously executing page had a <xref:System.Web.UI.WebControls.WebParts.WebPartManager> instance, the scope is set to the value of the `Personalization.Scope` property from the previous <xref:System.Web.UI.WebControls.WebParts.WebPartManager> instance.  
   
     -   If the previous criteria are not met, then the scope evaluates to the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope%2A> property for the current <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
   
- After the previous evaluations have been made, and if the scope evaluates to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope, the following processing occurs:  
+ After the previous evaluations have been made, and if the scope evaluates to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope, the following processing occurs:  
   
--   If the currently executing user account has the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnterSharedScopeUserCapability> capability, the scope remains set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+-   If the currently executing user account has the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnterSharedScopeUserCapability> capability, the scope remains set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared>.  
   
--   If the currently executing user account does not have the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnterSharedScopeUserCapability> capability, then the scope is reset to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+-   If the currently executing user account does not have the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnterSharedScopeUserCapability> capability, then the scope is reset to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>.  
   
--   If the result of all previous scope evaluations is <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, this result is stored as a hidden field on the currently executing page. This is the mechanism whereby a page can replay the scope evaluation during subsequent postbacks.  
+-   If the result of all previous scope evaluations is <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared>, this result is stored as a hidden field on the currently executing page. This is the mechanism whereby a page can replay the scope evaluation during subsequent postbacks.  
   
  ]]></format>
         </remarks>
@@ -244,7 +244,7 @@
 ## Remarks  
  This method is the abstract definition of an administrative method for querying personalization data. Derived implementations should follow the logic described below.  
   
- The set of returned items is constrained by the `pageIndex` and `pageSize` parameters, where `pageSize` sets the number of records to return and `pageIndex` sets which records to return. For example, a `pageIndex` of 0 and a `pageSize` of 25 would return the first 25 occurrences, while a `pageIndex` of 1 and a `pageSize` of 25 would return occurrences 26-50. If you want to retrieve all available records, set `pageIndex` to 0 and `pageSize` to <xref:System.Int32>.  
+ The set of returned items is constrained by the `pageIndex` and `pageSize` parameters, where `pageSize` sets the number of records to return and `pageIndex` sets which records to return. For example, a `pageIndex` of 0 and a `pageSize` of 25 would return the first 25 occurrences, while a `pageIndex` of 1 and a `pageSize` of 25 would return occurrences 26-50. If you want to retrieve all available records, set `pageIndex` to 0 and `pageSize` to <xref:System.Int32.MaxValue>.  
   
  The <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order and sorted by a combination of their <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> and <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.Username%2A> property values, both in ascending order.  
   
@@ -268,9 +268,9 @@
   
  Parameter combinations that have the potential to return a non-empty collection include:  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope in combination with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property.  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -323,9 +323,9 @@
   
  Parameter combinations that have the potential to return a non-zero count include:  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope in combination with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> property.  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -363,11 +363,11 @@
 ## Remarks  
  Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> and implement this method should use the `webPartManager`, `path`, and `username` parameters as retrieval keys. Regardless of how the data is stored in the data store (some data stores might perform some type of intelligent storage), the personalization data must be returned as a packed set of bytes in two arrays. The returned data must conform to the following rules:  
   
--   The data for the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope must always be returned in the `sharedDataBlob` parameter.  
+-   The data for the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope must always be returned in the `sharedDataBlob` parameter.  
   
--   Depending on the key values, <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> data is returned in the `userDataBlob` parameter. A non-`null` value for the `userName` parameter indicates that <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> data should also be retrieved.  
+-   Depending on the key values, <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> data is returned in the `userDataBlob` parameter. A non-`null` value for the `userName` parameter indicates that <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> data should also be retrieved.  
   
- A personalization provider that derives from <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> and implements this method can optimize interactions with its data store by retrieving all personalization data in one round trip, as opposed to retrieving <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> data in two separate round trips.  
+ A personalization provider that derives from <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> and implements this method can optimize interactions with its data store by retrieving all personalization data in one round trip, as opposed to retrieving <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> data in two separate round trips.  
   
  ]]></format>
         </remarks>
@@ -400,7 +400,7 @@
 ## Remarks  
  This method is the main entry point used by the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> class to load personalization data. The default implementation loads the raw data from the underlying data store (functionality is implemented in derived providers) and then converts the raw data into a <xref:System.Web.UI.WebControls.WebParts.PersonalizationState> instance.  
   
- If the `ignoreCurrentUser` parameter is `true`, no user name is passed to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.LoadPersonalizationBlobs%2A> method. A personalization provider can choose to interpret this as meaning that only personalization state with a <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope should be retrieved from the underlying data store.  
+ If the `ignoreCurrentUser` parameter is `true`, no user name is passed to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.LoadPersonalizationBlobs%2A> method. A personalization provider can choose to interpret this as meaning that only personalization state with a <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope should be retrieved from the underlying data store.  
   
  When the <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load%2A> method is executing, it calls the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.LoadPersonalizationState%2A> method, and there are three types of deserialization errors that can occur as the state is being loaded. When these specific errors occur, no exception is thrown, and the error events are logged instead by the Health Monitoring feature (for information on health monitoring and accessing the logs created by it, see [ASP.NET Health Monitoring Overview](http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c)). The following three scenarios cause deserialization error events to be written to the log:  
   
@@ -448,7 +448,7 @@
 ## Remarks  
  Classes that derive from <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> and implement this method should use the `webPartManager`, `path`, and `userName` parameters as storage keys. Derived implementations must modify the data store so that personalization data for supplied storage keys is effectively deleted. It is up to the derived implementations as to how they physically accomplish this.  
   
- The derived personalization provider must be able to distinguish personalization data on a per-page basis. Furthermore, for a given page's state, the personalization provider must be able to distinguish between <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope data. If a non-`null` user name is provided, then the reset operation applies to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope; otherwise, the reset operation applies to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ The derived personalization provider must be able to distinguish personalization data on a per-page basis. Furthermore, for a given page's state, the personalization provider must be able to distinguish between <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope data. If a non-`null` user name is provided, then the reset operation applies to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope; otherwise, the reset operation applies to the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope.  
   
  ]]></format>
         </remarks>
@@ -527,13 +527,13 @@
   
 -   The `scope` parameter is set, and the `paths` parameter contains at least one value. This combination deletes all Web Parts personalization data for the specified path or paths in the personalization scope indicated by `scope`.  
   
--   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, the `paths` parameter is set and contains only one value, and the `usernames` parameter contains at least one value. This combination deletes all user personalization Web Parts data for the given path that is associated with the user or users contained in `usernames`.  
+-   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, the `paths` parameter is set and contains only one value, and the `usernames` parameter contains at least one value. This combination deletes all user personalization Web Parts data for the given path that is associated with the user or users contained in `usernames`.  
   
--   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, the `paths` parameter is set to `null`, and the `usernames` parameter contains at least one value. This combination deletes all per-user personalization Web Parts data, across all paths, associated with the user or users contained in `usernames`.  
+-   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, the `paths` parameter is set to `null`, and the `usernames` parameter contains at least one value. This combination deletes all per-user personalization Web Parts data, across all paths, associated with the user or users contained in `usernames`.  
   
  Any other combination of parameter values is invalid and will throw an <xref:System.ArgumentException> exception. Specifically, the following two combinations are not allowed:  
   
--   The `usernames` parameter cannot be provided when `scope` is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+-   The `usernames` parameter cannot be provided when `scope` is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared>.  
   
 -   The `paths` parameter cannot contain more than one entry when the `usernames` parameter is not `null`.  
   
@@ -632,7 +632,7 @@
 ## Remarks  
  This method is the abstract definition of the method used for saving raw personalization data to the underlying data store.  
   
- Derived implementations should use the `webPartManager`, `path`, and `userName` parameters as storage keys. The derived personalization provider must be able to distinguish personalization data on a per-page basis. Furthermore, for a given page's state, the provider must be able to distinguish between <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope. If a non-`null` user name is provided, then the `dataBlob` parameter is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope; otherwise, the `dataBlob` parameter is assumed to be in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ Derived implementations should use the `webPartManager`, `path`, and `userName` parameters as storage keys. The derived personalization provider must be able to distinguish personalization data on a per-page basis. Furthermore, for a given page's state, the provider must be able to distinguish between <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope. If a non-`null` user name is provided, then the `dataBlob` parameter is in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope; otherwise, the `dataBlob` parameter is assumed to be in <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope.  
   
  ]]></format>
         </remarks>

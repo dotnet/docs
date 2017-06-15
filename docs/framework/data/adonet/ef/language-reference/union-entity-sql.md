@@ -2,7 +2,7 @@
 title: "UNION (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,6 @@ Combines the results of two or more queries into a single collection.
 ## Syntax  
   
 ```  
-  
 expression  
 UNION [ ALL ]  
 expression  

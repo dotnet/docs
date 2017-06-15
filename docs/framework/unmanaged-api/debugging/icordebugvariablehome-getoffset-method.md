@@ -2,7 +2,7 @@
 title: "ICorDebugVariableHome::GetOffset Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: f025c2e5-3f6c-4be8-9ffe-c8b214617dfe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,11 +36,9 @@ Gets the offset from the base register for a variable.
 ## Syntax  
   
 ```  
-  
 HRESULT GetOffset(  
     [out] LONG *pOffset  
 );  
-  
 ```  
   
 #### Parameters  

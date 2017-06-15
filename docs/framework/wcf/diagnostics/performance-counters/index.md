@@ -2,7 +2,7 @@
 title: "WCF Performance Counters | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,7 +23,7 @@ manager: "erikre"
 ## Enabling Performance Counters  
  You can enable performance counters for a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service through the app.config configuration file of the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service as follows:  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
         <diagnostics performanceCounters="All" />  

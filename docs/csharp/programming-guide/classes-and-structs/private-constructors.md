@@ -53,12 +53,12 @@ A private constructor is a special instance constructor. It is generally used in
  [!code-cs[csProgGuideObjects#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/private-constructors_3.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
  [public](../../../csharp/language-reference/keywords/public.md)

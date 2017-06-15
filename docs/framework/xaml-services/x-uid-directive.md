@@ -25,8 +25,8 @@ Provides a unique identifier for markup elements. In many scenarios, this unique
   
 ## XAML Attribute Usage  
   
-```  
-<object x:Uid="identifier"... />  
+```xaml  
+<object x:Uid="identifier"... />  
 ```  
   
 ## XAML Values  

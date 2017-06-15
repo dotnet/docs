@@ -43,7 +43,6 @@ End Class
 ' When an instance of the Book class is serialized, it might   
 ' produce this XML:  
 ' <ISBN>1234567890</ISBN>.  
-  
 ```  
   
 ```csharp  
@@ -63,7 +62,6 @@ Public Class TaxRates
    < XmlElement(ElementName = "TaxRate")> _  
     Public ReturnTaxRate As Decimal  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -87,7 +85,6 @@ End Class
 Public Class Employee  
     Public Name As String  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -101,7 +98,7 @@ public class Employee{
   
  A serialized instance might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <Employee>  
@@ -118,7 +115,6 @@ Public Class Group
     <XmlArray("TeamMembers")> _  
     Public Employees() As Employee  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -130,7 +126,7 @@ public class Group{
   
  The resulting XML might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <TeamMembers>  
     <Employee>  
@@ -146,7 +142,6 @@ Public Class Group
     <XmlArrayItem("MemberName")> _  
     Public Employee() As Employees  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -158,7 +153,7 @@ public class Group{
   
  The resulting XML might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <MemberName>Haley</MemberName>  
@@ -182,7 +177,6 @@ Public Class Manager
 Inherits Employee  
     Public Level As Integer  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -201,7 +195,7 @@ public class Manager:Employee{
   
  A serialized instance might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <Employee>  
@@ -223,7 +217,6 @@ Public Class Group
     <XmlElement> _  
     Public Employees() As Employee  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -235,7 +228,7 @@ public class Group{
   
  A serialized instance might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <Name>Haley</Name>  
@@ -251,13 +244,13 @@ public class Group{
   
  Another way to differentiate the two XML streams is to use the XML Schema Definition tool to generate the XML Schema (XSD) document files from the compiled code. (For more details on using the tool, see [The XML Schema Definition Tool and XML Serialization](../../../docs/framework/serialization/the-xml-schema-definition-tool-and-xml-serialization.md).) When no attribute is applied to the field, the schema describes the element in the following manner.  
   
-```  
+```xml  
 <xs:element minOccurs="0" maxOccurs ="1" name="Employees" type="ArrayOfEmployee" />  
 ```  
   
  When the <xref:System.Xml.Serialization.XmlElementAttribute> is applied to the field, the resulting schema describes the element as follows.  
   
-```  
+```xml  
 <xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" type="Employee" />   
 ```  
   
@@ -270,7 +263,6 @@ Public Class Group
     XmlElement(Type:=GetType(Manager))> _  
     Public Info As ArrayList  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -294,7 +286,6 @@ XmlType("NewTypeName")> _
 Public Class Group  
     Public Employees() As Employee  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -307,13 +298,13 @@ public class Group{
   
  If this class is compiled, and the XML Schema Definition tool is used to generate its schema, you would find the following XML describing `Group`.  
   
-```  
+```xml  
 <xs:element name="NewGroupName" type="NewTypeName">  
 ```  
   
  In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.  
   
-```  
+```xml  
 <NewGroupName>  
     . . .  
 </NewGroupName>  

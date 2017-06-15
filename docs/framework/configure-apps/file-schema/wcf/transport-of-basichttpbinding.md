@@ -2,7 +2,7 @@
 title: "&lt;transport&gt; of &lt;basicHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,7 +27,7 @@ Defines properties that control authentication parameters for the HTTP transport
   
 ## Syntax  
   
-```  
+```xml  
 <basicHttpBinding>  
     <binding>  
         <security  
@@ -91,7 +91,7 @@ Defines properties that control authentication parameters for the HTTP transport
 ## Example  
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
   
-```  
+```xml  
 <system.serviceModel>  
    <services>  
       <service   

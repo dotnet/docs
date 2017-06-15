@@ -2,7 +2,7 @@
 title: "Constituent Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,7 +30,6 @@ Public Sub MyPaint(ByVal sender as Object, e as PaintEventArgs) Handles _
    MyButton.Paint  
    'Additional rendering code goes here  
 End Sub  
-  
 ```  
   
 ```csharp  

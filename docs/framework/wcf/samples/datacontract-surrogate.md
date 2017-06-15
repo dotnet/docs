@@ -2,7 +2,7 @@
 title: "DataContract Surrogate | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -53,7 +53,6 @@ class Employee
     [DataMember]  
     public Person person;  
 }  
-  
 ```  
   
  In the `Employee` type, the `Person` class (shown in the following sample code) cannot be serialized by the <xref:System.Runtime.Serialization.DataContractSerializer> because it is not a valid data contract class.  
@@ -90,7 +89,6 @@ public class PersonSurrogated
     [DataMember]  
     public int Age;  
 }  
-  
 ```  
   
  The data contract surrogate is used to achieve this replacement. A data contract surrogate is a class that implements <xref:System.Runtime.Serialization.IDataContractSurrogate>. In this sample, the `AllowNonSerializableTypesSurrogate` class implements this interface.  
@@ -106,7 +104,6 @@ public Type GetDataContractType(Type type)
     }  
     return type;  
 }  
-  
 ```  
   
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%28System.Object%2CSystem.Type%29> method maps a `Person` instance to a `PersonSurrogated` instance during serialization, as shown in the following sample code.  
@@ -125,7 +122,6 @@ public object GetObjectToSerialize(object obj, Type targetType)
     }  
     return obj;  
 }  
-  
 ```  
   
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%28System.Object%2CSystem.Type%29> method provides the reverse mapping for deserialization, as shown in the following sample code.  
@@ -145,7 +141,6 @@ Type targetType)
     }  
     return obj;  
 }  
-  
 ```  
   
  To map the `PersonSurrogated` data contract to the existing `Person` class during schema import, the sample implements the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetReferencedTypeOnImport%28System.String%2CSystem.String%2CSystem.Object%29> method, as shown in the following sample code.  
@@ -165,7 +160,6 @@ typeNamespace.Equals("http://schemas.datacontract.org/2004/07/DCSurrogateSample"
      }  
      return null;  
 }  
-  
 ```  
   
  The following sample code completes the implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface.  
@@ -194,7 +188,6 @@ public void GetKnownCustomDataTypes(
     // It does not matter what we do here.  
     throw new NotImplementedException();  
 }  
-  
 ```  
   
  In this sample, the surrogate is enabled in ServiceModel by an attribute called `AllowNonSerializableTypesAttribute`. Developers would need to apply this attribute on their service contract as shown on the `IPersonnelDataService` service contract above. This attribute implements `IContractBehavior` and sets up the surrogate on operations in its `ApplyClientBehavior` and `ApplyDispatchBehavior` methods.  
@@ -260,7 +253,7 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
 }  
 ```  
   
- When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print “found”.  
+ When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print "found".  
   
 > [!NOTE]
 >  This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  

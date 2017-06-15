@@ -2,7 +2,7 @@
 title: "Data Member Order | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +39,7 @@ In some applications, it is useful to know the order in which data from the vari
   
  The XML produced is similar to the following.  
   
-```  
+```xml  
 <DerivedType>  
     <!-- Zebra is a base data member, and appears first. -->  
     <zebra/>   

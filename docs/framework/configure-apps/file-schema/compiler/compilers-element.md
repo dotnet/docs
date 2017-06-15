@@ -2,7 +2,7 @@
 title: "&lt;compilers&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Container for compiler configuration elements; contains zero or more [\<compiler
   
 ## Syntax  
   
-```  
+```xml  
 <compilers>  
   <compiler ... />  
 </compilers>  
@@ -72,7 +72,7 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 ## Example  
  The following example illustrates a typical compiler configuration element.  
   
-```  
+```xml  
 <configuration>  
    <system.codedom>  
      <compilers>  

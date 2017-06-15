@@ -2,7 +2,7 @@
 title: "How To: Service Data Partitioning | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,7 +16,7 @@ ms.author: "wpickett"
 manager: "wpickett"
 ---
 # How To: Service Data Partitioning
-This topic outlines the basic steps required to partition messages across multiple instances of the same destination service. Service data partitioning is typically used when you need to scale a service in order to provide better quality of service, or when you need to handle requests from different customers in a specific way. For example, messages from high value or “Gold” customers may need to be processed at a higher priority than messages from a standard customer.  
+This topic outlines the basic steps required to partition messages across multiple instances of the same destination service. Service data partitioning is typically used when you need to scale a service in order to provide better quality of service, or when you need to handle requests from different customers in a specific way. For example, messages from high value or "Gold" customers may need to be processed at a higher priority than messages from a standard customer.  
   
  In this example, messages are routed to one of two instances of the regularCalc service. Both instances of the service are identical; however the service represented by the calculator1 endpoint processes messages received from high value customers, the calculator 2 endpoint processes messages from other customers  
   
@@ -62,7 +62,6 @@ This topic outlines the basic steps required to partition messages across multip
                   binding="netTcpBinding"  
                   contract="*" />  
      </client>  
-  
     ```  
   
 2.  Define the filters used to route messages to the destination endpoints.  For this example, the EndpointName filter is used to determine which service endpoint received the message. The following example defines the necessary routing section and filters.  
@@ -90,10 +89,9 @@ This topic outlines the basic steps required to partition messages across multip
          <add filterName="NormalPriority" endpointName="CalcEndpoint2"/>  
        </filterTable>  
     </filterTables>  
-  
     ```  
   
-4.  To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating “filterTable1” with the service endpoints:  
+4.  To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoints:  
   
     ```xml  
     <behaviors>  
@@ -104,7 +102,6 @@ This topic outlines the basic steps required to partition messages across multip
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
 ## Example  

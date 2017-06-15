@@ -80,7 +80,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
  If an assembly in the list is in the global assembly cache, it will not be updated to contain the profile information.  Remove it from the global assembly cache to collect profile information.  
   
- The use of Ngen.exe and Mpgo.exe is recommended only for large managed applications, because the benefit of precompiled native images is typically seen only when it eliminates significant JIT compilation at run time. Running Mpgo.exe on “Hello World” style applications that aren’t working-set intensive will not provide any benefits, and Mpgo.exe may even fail to gather profile data.  
+ The use of Ngen.exe and Mpgo.exe is recommended only for large managed applications, because the benefit of precompiled native images is typically seen only when it eliminates significant JIT compilation at run time. Running Mpgo.exe on "Hello World" style applications that aren’t working-set intensive will not provide any benefits, and Mpgo.exe may even fail to gather profile data.  
   
 > [!NOTE]
 >  Ngen.exe and Mpgo.exe are not recommended for ASP.NET applications and Windows Communication Foundation (WCF) services.  
@@ -120,21 +120,18 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
 ```  
 mpgo –scenario "C:\MyApp\MyTax.exe /params par" –AssemblyList Mytax.dll MyTaxUtil2011.dll –OutDir C:\Optimized –TimeOut 15  
-  
 ```  
   
  The following Mpgo.exe command optimizes a sound application:  
   
 ```  
 mpgo –scenario "C:\MyApp\wav2wma.exe –input song1.wav –output song1.wma" –AssemblyList transcode.dll –OutDir C:\Optimized –TimeOut 15  
-  
 ```  
   
  The following Mpgo.exe command uses data from previously optimized assemblies to optimize newer versions of the assemblies:  
   
 ```  
 mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyTaxUtil2011.dll" -outdir C:\ReOptimized  
-  
 ```  
   
 ## See Also  

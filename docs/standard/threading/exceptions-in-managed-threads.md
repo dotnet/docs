@@ -73,7 +73,7 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
 ### Application Compatibility Flag  
  As a temporary compatibility measure, administrators can place a compatibility flag in the `<runtime>` section of the application configuration file. This causes the common language runtime to revert to the behavior of versions 1.0 and 1.1.  
   
-```  
+```xml  
 <legacyUnhandledExceptionPolicy enabled="1"/>  
 ```  
   

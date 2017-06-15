@@ -52,7 +52,7 @@ The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when 
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <dangerousThreadingAPI />  

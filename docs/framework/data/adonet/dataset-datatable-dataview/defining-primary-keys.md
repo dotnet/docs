@@ -2,7 +2,7 @@
 title: "Defining Primary Keys | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,7 +30,6 @@ workTable.PrimaryKey = New DataColumn() {workTable.Columns("CustID")}
 Dim columns(1) As DataColumn  
 columns(0) = workTable.Columns("CustID")  
 workTable.PrimaryKey = columns  
-  
 ```  
   
 ```csharp  
@@ -55,7 +54,6 @@ Dim keyColumn(2) As DataColumn
 keyColumn(0) = workTable.Columns("CustLName")  
 keyColumn(1) = workTable.Columns("CustFName")  
 workTable.PrimaryKey = keyColumn  
-  
 ```  
   
 ```csharp  

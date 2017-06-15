@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AttachProfiler method [.NET Framework profiling]"
   - "IClrProfiling::AttachProfiler method [.NET Framework profiling]"
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

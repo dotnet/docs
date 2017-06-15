@@ -2,7 +2,7 @@
 title: "How to: Create Access Keys for Windows Forms Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,13 +41,11 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
     ```vb  
     ' Set the letter "P" as an access key.  
     Button1.Text = "&Print"  
-  
     ```  
   
     ```csharp  
     // Set the letter "P" as an access key.  
     button1.Text = "&Print";  
-  
     ```  
   
     ```cpp  

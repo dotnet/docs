@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for &lt;namedCaches&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,7 @@ Removes a named cache entry from the `namedCaches` collection for a memory cache
   
 ## Syntax  
   
-```  
+```xml  
 <namedCaches>  
     <remove name="default" />  
     <!-- child elements -->  

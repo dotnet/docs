@@ -6,13 +6,23 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the status of a <see cref="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" /> when passed between dataflow blocks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Accepted">
@@ -24,12 +34,13 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the  <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> accepted the message. Once a target has accepted a message, it is wholly owned by the target.</summary>
       </Docs>
     </Member>
     <Member MemberName="Declined">
@@ -41,12 +52,13 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> declined the message. The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> still owns the message.</summary>
       </Docs>
     </Member>
     <Member MemberName="DecliningPermanently">
@@ -58,12 +70,15 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> declined the message. The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> still owns the message.  
+  
+ Additionally, the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> will decline all future messages sent by the source.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotAvailable">
@@ -75,12 +90,13 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> tried to accept the message from the <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" />, but the message was no longer available.</summary>
       </Docs>
     </Member>
     <Member MemberName="Postponed">
@@ -92,12 +108,15 @@
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
+        <AssemblyVersion>4.6.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the <see cref="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" /> postponed the message for potential consumption at a later time.  
+  
+ The <see cref="T:System.Threading.Tasks.Dataflow.ISourceBlock`1" /> still owns the message.</summary>
       </Docs>
     </Member>
   </Members>

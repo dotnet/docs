@@ -46,7 +46,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
   
  The following example sets the default proxy server address to http://proxyserver, indicates that the proxy should not be used for local addresses, and specifies that all requests to servers located in the contoso.com domain should bypass the proxy.  
   
-```  
+```xml  
 <configuration>  
     <system.net>  
         <defaultProxy>  
@@ -65,7 +65,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
   
  Use the [\<connectionManagement> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) element to configure the number of persistent connections that can be made to a specific server or to all other servers. The following example configures the application to use two persistent connections to the server www.contoso.com, four persistent connections to the server with the IP address 192.168.1.2, and one persistent connection to all other servers.  
   
-```  
+```xml  
 <configuration>  
     <system.net>  
         <connectionManagement>  
@@ -81,7 +81,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
   
  The following example configures a custom authentication module.  
   
-```  
+```xml  
 <configuration>  
     <system.net>  
         <authenticationModules>  
@@ -93,7 +93,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
   
  You can use the [\<webRequestModules> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) element to configure your application to use custom protocol-specific modules to request information from Internet resources. The specified modules must implement the <xref:System.Net.IWebRequestCreate> interface. You can override the default HTTP, HTTPS, and file request modules by specifying your custom module in the configuration file, as in the following example.  
   
-```  
+```xml  
 <configuration>  
     <system.net>  
         <webRequestModules>  

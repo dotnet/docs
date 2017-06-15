@@ -2,7 +2,7 @@
 title: "How to: Enable Drag-and-Drop Operations with the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +41,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
           e.Effect = DragDropEffects.None  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -53,7 +52,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
        else  
           e.Effect = DragDropEffects.None;  
     }  
-  
     ```  
   
     ```cpp  
@@ -103,7 +101,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
           e.Data.GetData(DataFormats.Text).ToString()  
        RichTextBox1.Text = RichTextBox1.Text + s  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -123,7 +120,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
           e.Data.GetData(DataFormats.Text).ToString();  
        richTextBox1.Text = richTextBox1.Text + s;  
     }  
-  
     ```  
   
     ```cpp  
@@ -152,7 +148,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
     this.richTextBox1.DragDrop += new  
         System.Windows.Forms.DragEventHandler  
         (this.richTextBox1_DragDrop);  
-  
     ```  
   
     ```cpp  

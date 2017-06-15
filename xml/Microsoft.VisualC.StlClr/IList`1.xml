@@ -33,6 +33,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="assign">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all elements of the container with the specified elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="assign">
       <MemberSignature Language="C#" Value="public void assign (System.Collections.IEnumerable _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class System.Collections.IEnumerable _Right) cil managed" />
@@ -80,7 +97,7 @@
       <Docs>
         <param name="_First">The beginning position of the range of elements to insert into the container.</param>
         <param name="_Last">The first position beyond the range of elements to insert into the container.</param>
-        <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c> <paramref name="_Last" /><c>)</c>.</summary>
+        <summary>Replaces the controlled sequence with the sequence <c>[</c><paramref name="_First" /><c>,</c><paramref name="_Last" /><c>)</c>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -282,6 +299,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="erase">
       <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
@@ -383,6 +417,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="insert">
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where_iter, System.Collections.IEnumerable _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
@@ -704,6 +755,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="resize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the number of elements in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="resize">
       <MemberSignature Language="C#" Value="public void resize (int _Newsize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize) cil managed" />
@@ -841,6 +909,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="splice">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reorders links between nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="splice">
       <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
@@ -972,90 +1057,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="insert">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds elements to the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::insert (STL/CLR)](http://msdn.microsoft.com/library/399ed30f-6b76-41a8-b180-6070e3ca1c68).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="assign">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Replaces all elements of the container with the specified elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::assign (STL/CLR)](http://msdn.microsoft.com/library/c5f2b131-d0e1-4188-9d4b-d617280e4032).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="erase">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes elements from the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::erase (STL/CLR)](http://msdn.microsoft.com/library/78705058-1e83-441d-b267-d4fb56451c0b).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="resize">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Changes the number of elements in the container.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::resize (STL/CLR)](http://msdn.microsoft.com/library/c4b8d41f-a62b-4dbc-8568-0e0a9da24016).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="splice">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reorders links between nodes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see [list::splice (STL/CLR)](http://msdn.microsoft.com/library/ebc424b9-8341-4a88-b101-86d56324f5ac).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,7 +2,7 @@
 title: "&lt;system.codedom&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ Specifies compiler configuration settings for available language providers.
   
 ## Syntax  
   
-```  
+```xml  
 <system.codedom>  
   <compilers> ... </compilers>  
 </system.codedom>  
@@ -80,7 +80,7 @@ Specifies compiler configuration settings for available language providers.
 ## Example  
  The following example illustrates a typical compiler configuration.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

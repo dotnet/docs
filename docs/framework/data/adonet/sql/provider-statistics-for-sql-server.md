@@ -2,7 +2,7 @@
 title: "Provider Statistics for SQL Server | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -124,9 +124,7 @@ Module Module1
 End Module  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 using System;  
 using System.Collections;  
 using System.Collections.Generic;  

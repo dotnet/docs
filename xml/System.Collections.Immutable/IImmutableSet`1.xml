@@ -6,6 +6,7 @@
     <AssemblyName>System.Collections.Immutable</AssemblyName>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -19,9 +20,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of element stored in the set.</typeparam>
+    <summary>Represents a set of elements that can only be modified by creating a new instance of the set.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Mutations on this set generate new sets. Incremental changes to a set share as much memory as possible with the prior versions of a set, while allowing garbage collection to clean up any unique set data that is no longer being referenced.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -33,6 +43,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -41,9 +52,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The element to add.</param>
+        <summary>Adds the specified element to this immutable set.</summary>
+        <returns>A new set with the element added, or this set if the element is already in the set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,14 +67,15 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves an empty immutable set that has the same sorting and ordering semantics as this instance.</summary>
+        <returns>An empty set that has the same sorting and ordering semantics as this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +88,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -84,9 +97,10 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The element to locate in the set.</param>
+        <summary>Determines whether this immutable set contains a specified element.</summary>
+        <returns>
+          <see langword="true" /> if the set contains the specified value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,6 +113,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -107,9 +122,9 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection of items to remove from this set.</param>
+        <summary>Removes the elements in the specified collection from the current immutable set.</summary>
+        <returns>A new set with the items removed; or the original set if none of the items were in the set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,6 +137,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -130,9 +146,9 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection to compare to the current <see cref="T:System.Collections.Immutable.IImmutableSet`1" />.</param>
+        <summary>Creates an immutable set that contains only elements that exist in this set and the specified set.</summary>
+        <returns>A new immutable set that contains elements that exist in both sets.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,6 +161,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -153,10 +170,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable set is a proper (strict) subset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a proper subset of the specified collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current set is a proper subset of `other`, `other` must have at least one element that the current set does not have.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsProperSupersetOf">
@@ -168,6 +193,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -176,10 +202,18 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable set is a proper (strict) superset of the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a proper superset of the specified collection; otherwise, false.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current set is a proper superset of `other`, the current set must have at least one element that `other` does not have.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSubsetOf">
@@ -191,6 +225,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -199,9 +234,10 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable set is a subset of a specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a subset of the specified collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,6 +250,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -222,9 +259,10 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable set is a superset of a specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set is a superset of the specified collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,6 +275,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -245,9 +284,10 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable set overlaps with the specified collection.</summary>
+        <returns>
+          <see langword="true" /> if the current set and the specified collection share at least one common element; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,6 +300,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -268,9 +309,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The element to remove.</param>
+        <summary>Removes the specified element from this immutable set.</summary>
+        <returns>A new set with the specified element removed, or the current set if the element cannot be found in the set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,6 +324,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -291,9 +333,10 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Determines whether the current immutable set and the specified collection contain the same elements.</summary>
+        <returns>
+          <see langword="true" /> if the sets are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,6 +349,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -314,9 +358,9 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The collection to compare to the current set.</param>
+        <summary>Creates an immutable set that contains only elements that are present either in the current set or in the specified collection, but not both.</summary>
+        <returns>A new set that contains the elements that are present only in the current set or in the specified collection, but not both.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,6 +373,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -338,11 +383,23 @@
         <Parameter Name="actualValue" Type="T&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="equalValue">To be added.</param>
-        <param name="actualValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="equalValue">The value to search for.</param>
+        <param name="actualValue">The matching value from the set, if found, or <c>equalvalue</c> if there are no matches.</param>
+        <summary>Determines whether the set contains a specified value.</summary>
+        <returns>
+          <see langword="true" /> if a matching value was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Following are some scenarios where <xref:System.Collections.Immutable.IImmutableSet%601.TryGetValue%2A> may be useful:  
+  
+-   You want to reuse a previously stored object reference instead of creating a new reference.  
+  
+-   You want to retrieve more complete data about an object  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Union">
@@ -354,6 +411,7 @@
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -362,10 +420,17 @@
         <Parameter Name="other" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The collection to add elements from.</param>
+        <summary>Creates a new immutable set that contains all elements that are present in either the current set or in the specified collection.</summary>
+        <returns>A new immutable set with the items added; or the original set if all the items were already in the set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any duplicate elements contained in `other` are ignored.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

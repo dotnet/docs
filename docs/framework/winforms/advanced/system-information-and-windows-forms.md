@@ -33,7 +33,6 @@ Dim Domain As String = Windows.Forms.SystemInformation.UserDomainName
   
 MessageBox.Show("Good morning " & User & ". You are connected to " _  
 & Domain)  
-  
 ```  
   
 ```csharp  

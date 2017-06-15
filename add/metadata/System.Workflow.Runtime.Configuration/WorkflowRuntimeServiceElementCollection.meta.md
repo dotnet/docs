@@ -20,10 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.CreateNewElement
----
-
----
 uid: System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.Add(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)
 author: "Erikre"
 ms.author: "erikre"

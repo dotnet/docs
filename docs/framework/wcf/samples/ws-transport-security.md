@@ -2,7 +2,7 @@
 title: "WS Transport Security | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ This sample demonstrates the use of SSL transport security with the <xref:System
   
  The program code in the sample is identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable `Transport` security mode, as shown in the following sample configuration for the client.  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <client>  
@@ -53,7 +53,6 @@ This sample demonstrates the use of SSL transport security with the <xref:System
     </bindings>  
   
   </system.serviceModel>  
-  
 ```  
   
  The address specified uses the https:// scheme. The binding configuration sets the security mode to `Transport`. The same security mode must be specified in the service's Web.config file.  
@@ -63,7 +62,6 @@ This sample demonstrates the use of SSL transport security with the <xref:System
 ```  
 // This code is required only for test certificates like those created by Makecert.exe.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -83,7 +81,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

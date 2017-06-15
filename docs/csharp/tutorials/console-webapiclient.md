@@ -1,5 +1,5 @@
 ---
-title: Creates a REST client using .NET Core
+title: Creates a REST client using .NET Core | Microsoft Docs
 description: This tutorial teaches you a number of features in .NET Core and the C# language. 
 keywords: .NET, .NET Core
 author: BillWagner
@@ -45,7 +45,7 @@ comfortable with.
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command `dotnet new console` at the command prompt. This
-creates the starter files for a basic “Hello World” application.
+creates the starter files for a basic "Hello World" application.
 
 Before you start making modifications, let’s go through the steps to run
 the simple Hello World application. After creating the application, type

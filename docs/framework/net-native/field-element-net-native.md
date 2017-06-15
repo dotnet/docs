@@ -21,12 +21,10 @@ Applies runtime reflection policy to a field.
 ## Syntax  
   
 ```xml  
-  
 <Field Name="field_name"  
        Browse="policy_type"  
        Dynamic="policy_type"  
        Serialize="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

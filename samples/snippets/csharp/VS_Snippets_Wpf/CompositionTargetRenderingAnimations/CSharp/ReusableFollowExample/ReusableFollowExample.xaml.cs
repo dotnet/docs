@@ -6,7 +6,7 @@ using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Media.Animation; //Clocks and Timelines
+using System.Windows.Media.Animation;
 
 namespace Microsoft.Samples.PerFrameAnimations
 {

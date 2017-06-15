@@ -58,19 +58,18 @@ manager: "wpickett"
   
  To prepare your XBAP for deployment, copy the .exe and the associated manifests to the Web server. Create an HTML page that contains a hyperlink to open the deployment manifest, which is the file that has the .xbap extension. When the user clicks the link to the .xbap file, [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] automatically handles the mechanics of downloading and starting the application. The following example code shows an HTML page that contains a hyperlink that points to an XBAP.  
   
-```  
+```xml  
 <html>   
   <head></head>  
   <body>   
     <a href="XbapEx.xbap">Click this link to launch the application</a>  
   </body>   
 </html>  
-  
 ```  
   
  You can also host an XBAP in the frame of a Web page. Create a Web page with one or more frames. Set the source property of a frame to the deployment manifest file. If you want to use the built-in mechanism to communicate between the hosting Web page and the XBAP, you must host the application in a frame. The following example code shows an HTML page with two frames, the source for the second frame is set to an XBAP.  
   
-```  
+```xml  
 <html>   
   <head>A page with frames.</head>  
     <frameset cols="50%,50%">   
@@ -176,7 +175,7 @@ manager: "wpickett"
 > [!NOTE]
 >  The behavior described in the previous table is for full-trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
- It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d) and [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=166327).  
+ It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=166327).  
   
 <a name="xbap_start_time_performance_considerations"></a>   
 ## XBAP Start Time Performance Considerations  

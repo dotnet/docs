@@ -48,7 +48,6 @@ static Activity ScenarioOne()
         }  
     };  
 }  
-  
 ```  
   
  [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] the basic [Transactions](../../../docs/framework/windows-workflow-foundation/samples/transactions.md) samples, and the scenario based [Transactions](../../../docs/framework/windows-workflow-foundation/samples/transactions.md) samples. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] about using <xref:System.ServiceModel.Activities.TransactedReceiveScope>, see [Flowing Transactions into and out of Workflow Services](../../../docs/framework/wcf/feature-details/flowing-transactions-into-and-out-of-workflow-services.md).  

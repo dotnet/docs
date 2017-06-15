@@ -42,11 +42,11 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ## Major Sections of the Configuration File  
  The main sections in the configuration file include the following elements.  
   
-```  
-\<system.ServiceModel>  
+```xml  
+<system.ServiceModel>  
   
    <services>  
-   \<!—- Define the service endpoints. This section is optional in the new  
+   <!—- Define the service endpoints. This section is optional in the new  
     default configuration model in .NET Framework 4. -->  
       <service>  
          <endpoint/>  
@@ -63,13 +63,13 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
    </bindings>  
   
    <behaviors>  
-   \<!-- One or more of the system-provided or custom behavior elements. -->  
+   <!-- One or more of the system-provided or custom behavior elements. -->  
       <behavior>  
       <!-- For example, a <throttling> element. -->  
       </behavior>  
    </behaviors>  
   
-\</system.ServiceModel>  
+</system.ServiceModel>  
 ```  
   
 > [!NOTE]
@@ -127,15 +127,15 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
 ## How to Use Binding and Behavior Configurations  
  [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] makes it easy to share configurations between endpoints using a reference system in configuration. Rather than directly assigning configuration values to an endpoint, binding-related configuration values are grouped in `bindingConfiguration` elements in the `<binding>` section. A binding configuration is a named group of settings on a binding. Endpoints can then reference the `bindingConfiguration` by name.  
   
-```  
-\<?xml version="1.0" encoding="utf-8"?>  
+```xml  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
- \<system.serviceModel>  
+ <system.serviceModel>  
   <bindings>  
     <basicHttpBinding>  
      <binding name="myBindingConfiguration1" closeTimeout="00:01:00" />  
      <binding name="myBindingConfiguration2" closeTimeout="00:02:00" />  
-     <binding closeTimeout="00:03:00" />  \<!—- Default binding for basicHttpBinding -->  
+     <binding closeTimeout="00:03:00" />  <!—- Default binding for basicHttpBinding -->  
     </basicHttpBinding>  
      </bindings>  
      <services>  
@@ -153,7 +153,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
           contract="MyContract" />  
        </service>  
       </services>  
-    \</system.serviceModel>  
+    </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -161,10 +161,10 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
  A `behaviorConfiguration` is implemented the same way, as illustrated in the following sample.  
   
-```  
-\<?xml version="1.0" encoding="utf-8"?>  
+```xml  
+<?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="myBehavior">  
@@ -180,13 +180,13 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
     </behaviors>  
     <services>  
      <service name="NewServiceType">  
-       \<endpoint   
+       <endpoint   
           address="myAddress3" behaviorConfiguration="myBehavior"  
           binding="basicHttpBinding"  
-          contract=”MyContract” />  
+          contract="MyContract" />  
       </service>  
     </services>  
-   \</system.serviceModel>  
+   </system.serviceModel>  
 </configuration>  
 ```  
   
@@ -201,7 +201,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
 ```xml  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
         <behavior>  
@@ -209,16 +209,15 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  And you have a child Web.config located at ~\Child\Web.config with the following contents:  
   
 ```xml  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
         <behavior>  
@@ -226,9 +225,8 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The service located at ~\Child\Service.svc will behave as though it has both the serviceDebug and serviceMetadata behaviors. The service located at ~\Service.svc will only have the serviceDebug behavior. What happens is that the two behavior collections with the same name (in this case the empty string) are merged.  
@@ -237,7 +235,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
 ```xml  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
         <behavior>  
@@ -246,14 +244,13 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ```xml  
 <configuration>  
-  \<system.serviceModel>  
+  <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
         <behavior>  
@@ -262,9 +259,8 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  \</system.serviceModel>  
+  </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  Behavior merge is done for nameless behavior collections as shown above and named behavior collections as well.  
@@ -273,7 +269,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
  Behavior merge applies to both endpoint behaviors and service behaviors in configuration.  
   
- If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be “true”.  
+ If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be "true".  
   
 ## See Also  
  [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)   

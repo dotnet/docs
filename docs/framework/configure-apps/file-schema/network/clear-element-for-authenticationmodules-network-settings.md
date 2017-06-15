@@ -2,7 +2,7 @@
 title: "&lt;clear&gt; Element for authenticationModules (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,10 +38,8 @@ Clears all authentication modules from the application.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  
@@ -68,7 +66,7 @@ Clears all authentication modules from the application.
 ## Example  
  The following code example removes all configured authentication modules.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <authenticationModules>  

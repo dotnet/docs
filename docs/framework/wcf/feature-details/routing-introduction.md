@@ -2,7 +2,7 @@
 title: "Routing Introduction | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -103,7 +103,7 @@ serviceHost.Description.Behaviors.Add(
      new RoutingBehavior(rc));  
 ```  
   
- This example configures the Routing Service to expose a single endpoint with an address of “http://localhost:8000/routingservice/router”, which is used to receive messages to be routed. Because the messages are routed to request-reply endpoints, the service endpoint uses the <xref:System.ServiceModel.Routing.IRequestReplyRouter> contract. This configuration also defines a single client endpoint of “http://localhost:8000/servicemodelsample/service” that messages are routed to. The filter table (not shown) named “routingTable1” contains the routing logic used to route messages, and is associated with the service endpoint by using the **RoutingBehavior** (for a configuration file) or **RoutingConfiguration** (for programmatic configuration).  
+ This example configures the Routing Service to expose a single endpoint with an address of "http://localhost:8000/routingservice/router", which is used to receive messages to be routed. Because the messages are routed to request-reply endpoints, the service endpoint uses the <xref:System.ServiceModel.Routing.IRequestReplyRouter> contract. This configuration also defines a single client endpoint of "http://localhost:8000/servicemodelsample/service" that messages are routed to. The filter table (not shown) named "routingTable1" contains the routing logic used to route messages, and is associated with the service endpoint by using the **RoutingBehavior** (for a configuration file) or **RoutingConfiguration** (for programmatic configuration).  
   
 ### Routing Logic  
  To define the routing logic used to route messages, you must determine what data contained within the incoming messages can be uniquely acted upon. For example, if all the destination endpoints you are routing to share the same SOAP Actions, the value of the Action contained within the message is not a good indicator of which specific endpoint the message should be routed to. If you must uniquely route messages to one specific endpoint, you should filter upon data that uniquely identifies the destination endpoint that the message is routed to.  
@@ -114,7 +114,7 @@ serviceHost.Description.Behaviors.Add(
   
  By default all message filters within a filter table are evaluated simultaneously; however, you can specify a <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority%2A> that causes the message filters to be evaluated in a specific order. All entries with the highest priority are evaluated first, and message filters of lower priorities are not evaluated if a match is found at a higher priority level. For more information about filter tables, see [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
   
- The following examples use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter>, which evaluates to `true` for all messages. This **MessageFilter** is added to the “routingTable1” filter table, which associates the **MessageFilter** with the client endpoint named “CalculatorService”. The **RoutingBehavior** then specifies that this table should be used to route messages processed by the service endpoint.  
+ The following examples use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter>, which evaluates to `true` for all messages. This **MessageFilter** is added to the "routingTable1" filter table, which associates the **MessageFilter** with the client endpoint named "CalculatorService". The **RoutingBehavior** then specifies that this table should be used to route messages processed by the service endpoint.  
   
 ```xml  
 <behaviors>  
@@ -384,7 +384,6 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), backupList);
 ```csharp  
 using (ServiceHost serviceHost =  
                 new ServiceHost(typeof(RoutingService)))  
-  
 ```  
   
  To host the Routing Service within IIS or WAS, you must either create a service file (.svc) or use configuration-based activation of the service. When using a service file, you must specify the <xref:System.ServiceModel.Routing.RoutingService> using the Service parameter. The following example contains a sample service file that can be used to host the Routing Service with IIS or WAS.  
@@ -393,7 +392,6 @@ using (ServiceHost serviceHost =
 <%@ ServiceHost Language="C#" Debug="true" Service="System.ServiceModel.Routing.RoutingService,   
      System.ServiceModel.Routing, version=4.0.0.0, Culture=neutral,   
      PublicKeyToken=31bf3856ad364e35" %>  
-  
 ```  
   
 ## Routing Service and Impersonation  

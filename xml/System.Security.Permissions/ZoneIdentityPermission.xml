@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
   </Base>
@@ -53,6 +57,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
@@ -66,7 +74,7 @@
  Creates either a fully restricted (`None`) or `Unrestricted` permission.  
   
 > [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, identity permissions cannot have an <xref:System.Security.Permissions.PermissionState> permission state value. Starting with the .NET Framework version 2.0, identity permissions can have any permission state value. This means that in 2.0 and later versions, identity permissions have the same behavior as permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. That is, a demand for an identity always succeeds, regardless of the identity of the assembly, if the assembly has been granted full trust.  
+>  In the .NET Framework versions 1.0 and 1.1, identity permissions cannot have an <xref:System.Security.Permissions.PermissionState.Unrestricted> permission state value. Starting with the .NET Framework version 2.0, identity permissions can have any permission state value. This means that in 2.0 and later versions, identity permissions have the same behavior as permissions that implement the <xref:System.Security.Permissions.IUnrestrictedPermission> interface. That is, a demand for an identity always succeeds, regardless of the identity of the assembly, if the assembly has been granted full trust.  
   
  In the .NET Framework versions 1.0 and 1.1, demands on the identity permissions are effective, even when the calling assembly is fully trusted. That is, although the calling assembly has full trust, a demand for an identity permission fails if the assembly does not meet the demanded criteria. Starting with the .NET Framework version 2.0, demands for identity permissions are ineffective if the calling assembly has full trust. This assures consistency for all permissions, eliminating the treatment of identity permissions as a special case.  
   
@@ -91,6 +99,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -122,6 +134,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -147,6 +163,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,6 +195,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,6 +234,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -225,7 +253,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current permission is a subset of the specified permission if the two permissions are equal or if the current permission represents the <xref:System.Security.SecurityZone> security zone.  
+ The current permission is a subset of the specified permission if the two permissions are equal or if the current permission represents the <xref:System.Security.SecurityZone.NoZone> security zone.  
   
  ]]></format>
         </remarks>
@@ -240,6 +268,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,6 +294,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
       </ReturnValue>
@@ -282,6 +318,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -298,7 +338,7 @@
 ## Remarks  
  The result of a call to <xref:System.Security.Permissions.ZoneIdentityPermission.Union%2A> is a permission that represents the security zone represented by both the current permission and the specified permission. Any demand that passes either permission passes their union. The union of two identical <xref:System.Security.Permissions.ZoneIdentityPermission> objects is the same permission. The union of a null permission and a <xref:System.Security.Permissions.ZoneIdentityPermission> permission is the permission that is not null.  
   
- Note that a<xref:System.Security.Permissions.ZoneIdentityPermission> object representing a <xref:System.Security.SecurityZone> security zone is treated as a null permission and handled as a special case. The union of a <xref:System.Security.Permissions.ZoneIdentityPermission> object representing the <xref:System.Security.SecurityZone> security zone and a null permission is null. The union of two different zone identity permissions results in an <xref:System.ArgumentException> exception being thrown when neither of the two permissions represents the <xref:System.Security.SecurityZone> security zone.  
+ Note that a<xref:System.Security.Permissions.ZoneIdentityPermission> object representing a <xref:System.Security.SecurityZone.NoZone> security zone is treated as a null permission and handled as a special case. The union of a <xref:System.Security.Permissions.ZoneIdentityPermission> object representing the <xref:System.Security.SecurityZone.NoZone> security zone and a null permission is null. The union of two different zone identity permissions results in an <xref:System.ArgumentException> exception being thrown when neither of the two permissions represents the <xref:System.Security.SecurityZone.NoZone> security zone.  
   
  ]]></format>
         </remarks>

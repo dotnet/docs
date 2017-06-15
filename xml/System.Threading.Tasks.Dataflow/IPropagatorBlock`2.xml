@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
+    <AssemblyVersion>4.6.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TInput">
@@ -28,10 +29,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TInput">To be added.</typeparam>
-    <typeparam name="TOutput">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TInput">Specifies the type of data accepted by the  <see cref="T:System.Threading.Tasks.Dataflow.IPropagatorBlock`2" />.</typeparam>
+    <typeparam name="TOutput">Specifies the type of data supplied by the  <see cref="T:System.Threading.Tasks.Dataflow.IPropagatorBlock`2" />.</typeparam>
+    <summary>Represents a dataflow block that is both a target for data and a source of data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

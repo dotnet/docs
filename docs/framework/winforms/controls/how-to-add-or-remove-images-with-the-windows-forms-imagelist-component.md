@@ -2,7 +2,7 @@
 title: "How to: Add or Remove Images with the Windows Forms ImageList Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +45,6 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
        & "\Image.gif")  
        ImageList1.Images.Add(myImage)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -60,7 +59,6 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
        + @"\Image.gif");  
        imageList1.Images.Add(myImage);  
     }  
-  
     ```  
   
     ```cpp  
@@ -95,7 +93,6 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
        & "\Image.gif")  
        ImageList1.Images.Add("myPhoto", myImage)  
     End Sub  
-  
     ```  
   
 ```csharp  
@@ -110,7 +107,6 @@ public void addImage()
    + @"\Image.gif");  
    imageList1.Images.Add("myPhoto", myImage);  
 }  
-  
 ```  
   
 1.  
@@ -128,7 +124,6 @@ public void addImage()
     ImageList1.Images.Remove(myImage)  
     ' Clears all images in the image list  
     ImageList1.Images.Clear()  
-  
     ```  
   
 ```csharp  
@@ -136,7 +131,6 @@ public void addImage()
 imageList1.Images.Remove(myImage);  
 // Clears all images in the image list.  
 imageList1.Images.Clear();  
-  
 ```  
   
 ### To remove images by key  
@@ -146,13 +140,11 @@ imageList1.Images.Clear();
     ```vb  
     ' Removes the image named "myPhoto" from the list.  
     ImageList1.Images.RemoveByKey("myPhoto")  
-  
     ```  
   
 ```csharp  
 // Removes the image named "myPhoto" from the list.  
 imageList1.Images.RemoveByKey("myPhoto");  
-  
 ```  
   
 ## See Also  

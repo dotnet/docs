@@ -44,7 +44,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
   
 ## Cause  
   
--   The thread was previously initialized to a different COM apartment state. Note that the apartment state of a thread can be set either explicitly or implicitly. The explicit operations include the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=fullName> property and the <xref:System.Threading.Thread.SetApartmentState%2A> and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods. A thread created using the <xref:System.Threading.Thread.Start%2A> method is implicitly set to <xref:System.Threading.ApartmentState> unless <xref:System.Threading.Thread.SetApartmentState%2A> is called before the thread is started. The main thread of the application is also implicitly initialized to <xref:System.Threading.ApartmentState> unless the <xref:System.STAThreadAttribute> attribute is specified on the main method.  
+-   The thread was previously initialized to a different COM apartment state. Note that the apartment state of a thread can be set either explicitly or implicitly. The explicit operations include the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=fullName> property and the <xref:System.Threading.Thread.SetApartmentState%2A> and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods. A thread created using the <xref:System.Threading.Thread.Start%2A> method is implicitly set to <xref:System.Threading.ApartmentState.MTA> unless <xref:System.Threading.Thread.SetApartmentState%2A> is called before the thread is started. The main thread of the application is also implicitly initialized to <xref:System.Threading.ApartmentState.MTA> unless the <xref:System.STAThreadAttribute> attribute is specified on the main method.  
   
 -   The `CoUninitialize` method (or the `CoInitializeEx` method) with a different concurrency model is called on the thread.  
   
@@ -61,7 +61,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidApartmentStateChange />  

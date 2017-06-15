@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the printer does not support device font substitution, the collection is empty. If it does support font substitution, the driver should include both the <xref:System.Printing.DeviceFontSubstitution> and <xref:System.Printing.DeviceFontSubstitution> values in the collection.  
+ If the printer does not support device font substitution, the collection is empty. If it does support font substitution, the driver should include both the <xref:System.Printing.DeviceFontSubstitution.On> and <xref:System.Printing.DeviceFontSubstitution.Off> values in the collection.  
   
  This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageDeviceFontSubstitution` keyword.  
   
@@ -328,7 +328,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For example, the <xref:System.Printing.OutputQuality> enumeration has values for <xref:System.Printing.OutputQuality>, <xref:System.Printing.OutputQuality>, and <xref:System.Printing.OutputQuality> quality, among others.  
+ For example, the <xref:System.Printing.OutputQuality> enumeration has values for <xref:System.Printing.OutputQuality.Draft>, <xref:System.Printing.OutputQuality.Normal>, and <xref:System.Printing.OutputQuality.High> quality, among others.  
   
  If the printer does not support output quality selection, the collection is empty.  
   

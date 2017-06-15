@@ -2,7 +2,7 @@
 title: "How to: Set Font Attributes for the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,13 +41,11 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     ```vb  
     RichTextBox1.SelectionFont = New Font("Tahoma", 12, FontStyle.Bold)  
     RichTextBox1.SelectionColor = System.Drawing.Color.Red  
-  
     ```  
   
     ```csharp  
     richTextBox1.SelectionFont = new Font("Tahoma", 12, FontStyle.Bold);  
     richTextBox1.SelectionColor = System.Drawing.Color.Red;  
-  
     ```  
   
     ```cpp  

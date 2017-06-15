@@ -2,7 +2,7 @@
 title: "How to: Show a Font List with the FontDialog Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,7 +46,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
           TextBox1.Font = FontDialog1.Font  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -57,7 +56,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
           textBox1.Font = fontDialog1.Font;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -76,7 +74,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

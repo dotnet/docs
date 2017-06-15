@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions.Local</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -22,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Transactions.TransactionScopeAsyncFlowOption> is configured in the <xref:System.Transactions.TransactionScope.%23ctor%2A> overloads that take a <xref:System.Transactions.TransactionScopeAsyncFlowOption> parameter. Suppress is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption> is specified.  
+ <xref:System.Transactions.TransactionScopeAsyncFlowOption> is configured in the <xref:System.Transactions.TransactionScope.%23ctor%2A> overloads that take a <xref:System.Transactions.TransactionScopeAsyncFlowOption> parameter. Suppress is the default setting if no <xref:System.Transactions.TransactionScopeAsyncFlowOption.Suppress> is specified.  
   
  ]]></format>
     </remarks>
@@ -41,6 +45,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.TransactionScopeAsyncFlowOption</ReturnType>
@@ -62,6 +70,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Transactions.TransactionScopeAsyncFlowOption</ReturnType>

@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The object is put into the tracking set of the <xref:System.Data.Services.Client.DataServiceContext> in the <xref:System.Data.Services.Client.EntityStates> state. The <xref:System.Data.Services.Client.DataServiceContext> will try to insert the object by HTTP POST on the next call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>. This method does not add objects related to the specified entity to the <xref:System.Data.Services.Client.DataServiceContext>. Each object must be added through a separate call to <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A>.  
+ The object is put into the tracking set of the <xref:System.Data.Services.Client.DataServiceContext> in the <xref:System.Data.Services.Client.EntityStates.Added> state. The <xref:System.Data.Services.Client.DataServiceContext> will try to insert the object by HTTP POST on the next call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>. This method does not add objects related to the specified entity to the <xref:System.Data.Services.Client.DataServiceContext>. Each object must be added through a separate call to <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A>.  
   
  The method does not validate that the entity set specified is in the data service associated with the <xref:System.Data.Services.Client.DataServiceContext> or that the added object has the required properties needed to be added to the specified `entity set`.  
   
@@ -646,9 +646,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `entity` is in an <xref:System.Data.Services.Client.EntityStates> or <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates> state, and the links between the entities are also created in an <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in an <xref:System.Data.Services.Client.EntityStates.Unchanged> or <xref:System.Data.Services.Client.EntityStates.Modified> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state, and the links between the entities are also created in an <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
   
- When `entity` is in a <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates> state, and the links between the entities are created in the <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in a <xref:System.Data.Services.Client.EntityStates.Deleted> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state, and the links between the entities are created in the <xref:System.Data.Services.Client.EntityStates.Deleted> state.  
   
  ]]></format>
         </remarks>
@@ -720,9 +720,9 @@
 ## Remarks  
  Changes are added to the <xref:System.Data.Services.Client.DataServiceContext> by calling the <xref:System.Data.Services.Client.DataServiceContext.AddObject%2A>, <xref:System.Data.Services.Client.DataServiceContext.AddLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.AttachTo%2A>, <xref:System.Data.Services.Client.DataServiceContext.AttachLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.DeleteObject%2A>, <xref:System.Data.Services.Client.DataServiceContext.DeleteLink%2A>, <xref:System.Data.Services.Client.DataServiceContext.Detach%2A>, or <xref:System.Data.Services.Client.DataServiceContext.DetachLink%2A>.  
   
- If <xref:System.Data.Services.Client.SaveChangesOptions> is set, all pending changes are included in a single change set in a batch and submitted to the data service in a single HTTP request. This requires that the target service supports batching.  
+ If <xref:System.Data.Services.Client.SaveChangesOptions.Batch> is set, all pending changes are included in a single change set in a batch and submitted to the data service in a single HTTP request. This requires that the target service supports batching.  
   
- If <xref:System.Data.Services.Client.SaveChangesOptions> is not set:  
+ If <xref:System.Data.Services.Client.SaveChangesOptions.Batch> is not set:  
   
 -   Changes are sent to the data service such as in the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges> method: one operation to one HTTP request.  
   
@@ -730,13 +730,13 @@
   
 -   The <xref:System.Data.Services.Client.OperationResponse.Headers%2A> property returns an empty collection.  
   
- If <xref:System.Data.Services.Client.SaveChangesOptions> is set:  
+ If <xref:System.Data.Services.Client.SaveChangesOptions.ContinueOnError> is set:  
   
 -   If an error occurs processing an operation in a change set, the subsequent operations in the change set will not be tried; however, the data service will continue to process the next change set in the batch.  
   
--   This option cannot be set when <xref:System.Data.Services.Client.SaveChangesOptions> is set because when batching is enabled, all operations are positioned in a single change set.  
+-   This option cannot be set when <xref:System.Data.Services.Client.SaveChangesOptions.Batch> is set because when batching is enabled, all operations are positioned in a single change set.  
   
- If <xref:System.Data.Services.Client.SaveChangesOptions> is not set:  
+ If <xref:System.Data.Services.Client.SaveChangesOptions.ContinueOnError> is not set:  
   
 -   If an error occurs while processing an operation, no additional operations are processed by the data service.  
   
@@ -1033,8 +1033,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">When<paramref name=" asyncResult" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">When<paramref name=" asyncResult" /> did not originate from this <see cref="T:System.Data.Services.Client.DataServiceContext" /> instance.  
+        <exception cref="T:System.ArgumentNullException">When <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">When <paramref name="asyncResult" /> did not originate from this <see cref="T:System.Data.Services.Client.DataServiceContext" /> instance.  
   
  -or-  
   
@@ -1061,7 +1061,7 @@
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that represents the status of the asynchronous operation.</param>
         <summary>Called to complete the <see cref="M:System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])" />.</summary>
-        <returns>The<see langword=" DataServiceResult" /> object that indicates the result of the batch operation.</returns>
+        <returns>The <see langword="DataServiceResult" /> object that indicates the result of the batch operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1429,7 +1429,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" entity" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="entity" /> is not tracked by this <see cref="T:System.Data.Services.Client.DataServiceContext" />.  
   
  -or-  
@@ -1724,9 +1724,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `entity` is in an <xref:System.Data.Services.Client.EntityStates> or <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates> state, with links also in <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in an <xref:System.Data.Services.Client.EntityStates.Unchanged> or <xref:System.Data.Services.Client.EntityStates.Modified> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates.Unchanged> state, with links also in <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
   
- When `entity` is in a <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates> state, with links that are in the <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in a <xref:System.Data.Services.Client.EntityStates.Deleted> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates.Unchanged> state, with links that are in the <xref:System.Data.Services.Client.EntityStates.Deleted> state.  
   
  ]]></format>
         </remarks>
@@ -1761,9 +1761,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `entity` is in an <xref:System.Data.Services.Client.EntityStates> or <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates> state, and the links between the entities are also created in an <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in an <xref:System.Data.Services.Client.EntityStates.Unchanged> or <xref:System.Data.Services.Client.EntityStates.Modified> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state, and the links between the entities are also created in an <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
   
- When `entity` is in a <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates> state, and the links between the entities are created in the <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in a <xref:System.Data.Services.Client.EntityStates.Deleted> state, the related entities are loaded in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state, and the links between the entities are created in the <xref:System.Data.Services.Client.EntityStates.Deleted> state.  
   
    
   
@@ -1810,9 +1810,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `entity` is in an <xref:System.Data.Services.Client.EntityStates> or <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates> state, with links also in <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in an <xref:System.Data.Services.Client.EntityStates.Unchanged> or <xref:System.Data.Services.Client.EntityStates.Modified> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates.Unchanged> state, with links also in <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
   
- When `entity` is in a <xref:System.Data.Services.Client.EntityStates> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates> state, with links that are in the <xref:System.Data.Services.Client.EntityStates> state.  
+ When `entity` is in a <xref:System.Data.Services.Client.EntityStates.Deleted> state, the related entities are loaded as objects in an <xref:System.Data.Services.Client.EntityStates.Unchanged> state, with links that are in the <xref:System.Data.Services.Client.EntityStates.Deleted> state.  
   
  ]]></format>
         </remarks>
@@ -1839,7 +1839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is read by the deserialization component of the client before materializing objects. Set this property to the appropriate materialization option before executing any queries or updates to the data service. The default value is <xref:System.Data.Services.Client.MergeOption>.  
+ This value is read by the deserialization component of the client before materializing objects. Set this property to the appropriate materialization option before executing any queries or updates to the data service. The default value is <xref:System.Data.Services.Client.MergeOption.AppendOnly>.  
   
  ]]></format>
         </remarks>
@@ -1864,7 +1864,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Services.Client.DataServiceContext.ReadingEntity> event occurs after the entity data has been completely read into the target object together with all nested entities. If tracking is anything other than <xref:System.Data.Services.Client.MergeOption>, the object is attached before the event occurs.  
+ The <xref:System.Data.Services.Client.DataServiceContext.ReadingEntity> event occurs after the entity data has been completely read into the target object together with all nested entities. If tracking is anything other than <xref:System.Data.Services.Client.MergeOption.NoTracking>, the object is attached before the event occurs.  
   
  ]]></format>
         </remarks>
@@ -1927,6 +1927,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the changes the <see cref="T:System.Data.Services.Client.DataServiceContext" /> is tracking to storage.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.Services.Client.DataServiceResponse> that contains status, headers, and errors that result from the call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveChanges">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse SaveChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse SaveChanges() cil managed" />
@@ -2065,9 +2083,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A new link is created in the <xref:System.Data.Services.Client.EntityStates> state. The <xref:System.Data.Services.Client.DataServiceContext> adds this new link to the set of newly created links to be sent to the data service on the next call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
+ A new link is created in the <xref:System.Data.Services.Client.EntityStates.Added> state. The <xref:System.Data.Services.Client.DataServiceContext> adds this new link to the set of newly created links to be sent to the data service on the next call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
   
- If the target argument is null, the link represented by sourceProperty should be removed or deleted (The link is moved to the <xref:System.Data.Services.Client.EntityStates> state).  
+ If the target argument is null, the link represented by sourceProperty should be removed or deleted (The link is moved to the <xref:System.Data.Services.Client.EntityStates.Deleted> state).  
   
  Links are one-way relationships. If a back pointer exists indicating a two way association, this method should be called again to notify the <xref:System.Data.Services.Client.DataServiceContext> of the second link  
   
@@ -2126,7 +2144,7 @@
 ## Remarks  
  The <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method sets the binary stream that is the Media Resource that is associated with the `entity`, which is called a Media Link Entry.  
   
- Calling the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method marks the entity as a Media Link Entry. The entity state is also set to <xref:System.Data.Services.Client.EntityStates> so that the stream will be sent to the data service the next time that the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method is called.  
+ Calling the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method marks the entity as a Media Link Entry. The entity state is also set to <xref:System.Data.Services.Client.EntityStates.Modified> so that the stream will be sent to the data service the next time that the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method is called.  
   
  The <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method reads the <xref:System.IO.Stream> through to the end. A <xref:System.IO.Stream.Seek%2A> operation is not tried on the <xref:System.IO.Stream>.  
   
@@ -2179,7 +2197,7 @@
 ## Remarks  
  The <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method sets the binary stream that is the Media Resource that is associated with the `entity`, which is called a Media Link Entry.  
   
- Calling the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method marks the entity as Media Link Entry. The entity state is also set to <xref:System.Data.Services.Client.EntityStates> so that the stream will be sent to the data service the next time that the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method is called.  
+ Calling the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method marks the entity as Media Link Entry. The entity state is also set to <xref:System.Data.Services.Client.EntityStates.Modified> so that the stream will be sent to the data service the next time that the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method is called.  
   
  The <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method reads the <xref:System.IO.Stream> through to the end. A <xref:System.IO.Stream.Seek%2A> operation is not tried on the <xref:System.IO.Stream>.  
   
@@ -2259,7 +2277,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If an entity is in the <xref:System.Data.Services.Client.EntityStates> or <xref:System.Data.Services.Client.EntityStates> state, it does not have a URI and cannot be retrieved by using this method.  
+ If an entity is in the <xref:System.Data.Services.Client.EntityStates.Detached> or <xref:System.Data.Services.Client.EntityStates.Added> state, it does not have a URI and cannot be retrieved by using this method.  
   
  ]]></format>
         </remarks>
@@ -2292,7 +2310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Objects in the <xref:System.Data.Services.Client.EntityStates> state do not yet have a URI.  
+ Objects in the <xref:System.Data.Services.Client.EntityStates.Added> state do not yet have a URI.  
   
  ]]></format>
         </remarks>
@@ -2408,29 +2426,11 @@
 ## Remarks  
  Handling the <xref:System.Data.Services.Client.DataServiceContext.WritingEntity> event enables you to change the XML in a request before it is sent.  
   
- The <xref:System.Data.Services.Client.DataServiceContext.WritingEntity> event may occur on a different thread when you call <xref:System.Data.Services.Client.DataServiceContext.BeginSaveChanges%28System.Data.Services.Client.SaveChangesOptions%2CSystem.AsyncCallback%2CSystem.Object%29> without including <xref:System.Data.Services.Client.SaveChangesOptions> in the supplied <xref:System.Data.Services.Client.SaveChangesOptions> value.  
+ The <xref:System.Data.Services.Client.DataServiceContext.WritingEntity> event may occur on a different thread when you call <xref:System.Data.Services.Client.DataServiceContext.BeginSaveChanges%28System.Data.Services.Client.SaveChangesOptions%2CSystem.AsyncCallback%2CSystem.Object%29> without including <xref:System.Data.Services.Client.SaveChangesOptions.Batch> in the supplied <xref:System.Data.Services.Client.SaveChangesOptions> value.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SaveChanges">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the changes the <see cref="T:System.Data.Services.Client.DataServiceContext" /> is tracking to storage.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Data.Services.Client.DataServiceResponse> that contains status, headers, and errors that result from the call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

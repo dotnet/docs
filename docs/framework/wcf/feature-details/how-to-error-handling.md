@@ -2,7 +2,7 @@
 title: "How To: Error Handling | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,14 +70,13 @@ This topic outlines the basic steps required to create a routing configuration t
       <!-- Create a MatchAll filter which will catch all messages -->  
       <filter name="MatchAllFilter1" filterType="MatchAll" />  
     </filters>  
-  
     ```  
   
 3.  Define the backup endpoint list, which contains the endpoints that a message is sent to in the event of a network or communications failure when sending to the primary destination endpoint. The following example defines a backup list that contains one endpoint; however, multiple endpoints can be specified in a backup list.  
   
      If the backup list contains multiple endpoints, when a network or communications failure occurs the Routing Service attempts to send the message to the first endpoint in the list. If a network or communications failure occurs when sending to this endpoint, the Routing Service attempts to send the message to the next endpoint contained in the list. The service continues sending the message to each endpoint in the backup endpoint list until the message is successfully sent, all backup endpoints return a network or communications-related error, or the message is sent and the endpoint returns a non-network, non-communications-related error.  
   
-    ```  
+    ```xml  
     <backupLists>          
       <backupList name="backupEndpointList">  
           <add endpointName="realDestination" />  
@@ -97,10 +96,9 @@ This topic outlines the basic steps required to create a routing configuration t
                 <add filterName="MatchAllFilter1" endpointName="deadDestination" backupList="backupEndpointList"/>  
             </filterTable>  
           </filterTables>  
-  
     ```  
   
-5.  To evaluate incoming messages against the filter contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating “filterTable1” with the service endpoints.  
+5.  To evaluate incoming messages against the filter contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints.  
   
     ```xml  
     <behaviors>  
@@ -181,5 +179,4 @@ This topic outlines the basic steps required to create a routing configuration t
       </routing>  
   </system.serviceModel>  
 </configuration>  
-  
 ```

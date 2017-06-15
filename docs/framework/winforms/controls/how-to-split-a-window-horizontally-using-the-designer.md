@@ -2,7 +2,7 @@
 title: "How to: Split a Window Horizontally Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,7 @@ This example makes the splitter that divides the <xref:System.Windows.Forms.Spli
   
 ### To split a window horizontally  
   
-1.  In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation>.  
+1.  In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
 ## See Also  
  <xref:System.Windows.Forms.SplitContainer>   

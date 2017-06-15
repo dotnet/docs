@@ -2,7 +2,7 @@
 title: "&lt;clientCertificate&gt; of &lt;serviceCredentials&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,8 +31,7 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
   
 ## Syntax  
   
-```  
-  
+```xml  
 <clientCertificate>  
  <certificate/>  
  <authentication/>  

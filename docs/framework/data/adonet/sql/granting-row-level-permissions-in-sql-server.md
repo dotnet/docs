@@ -2,7 +2,7 @@
 title: "Granting Row-Level Permissions in SQL Server | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,7 +55,6 @@ In some scenarios, there is a requirement to control access to data at a more gr
         	RETURN SELECT * FROM MyTable  
         	WHERE UserName = SUSER_SNAME()  
         GO  
-  
         ```  
   
 -   Create stored procedures to select, insert, update, and delete data. If the filtering is enacted by a security policy, the stored procedures should perform these operations on the base table directly; otherwise, if the filtering is enacted by a view, the stored procedures should instead operate against the view. The security policy or view will automatically filter the rows returned or modified by user queries, and the stored procedure will provide a harder security boundary to prevent users with direct query access from successfully running queries that can infer the existence of filtered data.  

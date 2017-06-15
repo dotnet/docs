@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -97,7 +98,7 @@
   
  **Unsigned assemblies**  
   
- The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to make an `internal` member of an unsigned assembly visible to another unsigned assembly. The attribute ensures that the `internal``StringLib.IsFirstLetterUpperCase` method in an assembly named `UtilityLib` is visible to the code in an assembly named `Friend2`.  The following is the source code for UtilityLib.dll:  
+ The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to make an `internal` member of an unsigned assembly visible to another unsigned assembly. The attribute ensures that the `internal` `StringLib.IsFirstLetterUpperCase` method in an assembly named `UtilityLib` is visible to the code in an assembly named `Friend2`.  The following is the source code for UtilityLib.dll:  
   
  [!code-csharp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/cs/utilitylib.cs#5)]
  [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/vb/utilitylib.vb#5)]  
@@ -123,6 +124,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,7 +186,7 @@
  [!code-csharp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/cs/friend1.cs#2)]
  [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/vb/friend1.vb#2)]  
   
- The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to make an `internal` member of an unsigned assembly visible to another unsigned assembly. The attribute ensures that the `internal``StringLib.IsFirstLetterUpperCase` method in an assembly named `UtilityLib` is visible to the code in an assembly named `Friend2`.  The following is the source code for UtilityLib.dll:  
+ The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to make an `internal` member of an unsigned assembly visible to another unsigned assembly. The attribute ensures that the `internal` `StringLib.IsFirstLetterUpperCase` method in an assembly named `UtilityLib` is visible to the code in an assembly named `Friend2`.  The following is the source code for UtilityLib.dll:  
   
  [!code-csharp[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/cs/utilitylib.cs#5)]
  [!code-vb[System.Runtime.CompilerServices.InternalsVisibleToAttribute#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.internalsvisibletoattribute/vb/utilitylib.vb#5)]  
@@ -215,6 +217,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -235,6 +241,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

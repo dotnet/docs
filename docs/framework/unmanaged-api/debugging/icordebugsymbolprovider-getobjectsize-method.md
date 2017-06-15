@@ -2,7 +2,7 @@
 title: "ICorDebugSymbolProvider::GetObjectSize Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,13 +23,11 @@ Returns the object size for an object based on its typespec signature.
 ## Syntax  
   
 ```  
-  
 HRESULT GetObjectSize(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
    [out] ULONG32 *pObjectSize  
 );  
-  
 ```  
   
 #### Parameters  

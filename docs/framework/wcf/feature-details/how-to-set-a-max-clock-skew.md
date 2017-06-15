@@ -2,7 +2,7 @@
 title: "How to: Set a Max Clock Skew | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
 1.  > [!WARNING]
     >  Note   Add references to the following namespaces in your code: <xref:System.ServiceModel.Channels>, <xref:System.ServiceModel.Description>, <xref:System.Security.Permissions>, and <xref:System.ServiceModel.Security.Tokens>.  
   
-     Create an instance of a <xref:System.ServiceModel.WSHttpBinding> class and set its security mode to <xref:System.ServiceModel.SecurityMode>.  
+     Create an instance of a <xref:System.ServiceModel.WSHttpBinding> class and set its security mode to <xref:System.ServiceModel.SecurityMode.Message>.  
   
 2.  Create a new instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class by calling the <xref:System.ServiceModel.WSHttpBinding.CreateBindingElements%2A> method.  
   
@@ -68,8 +68,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
   
 7.  For a secure conversation, the security settings must occur at the bootstrap in the [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) element.  
   
-    ```  
-  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="MaxClockSkewBinding">  
@@ -86,7 +85,6 @@ Time-critical functions can be derailed if the clock settings on two computers a
         </binding>  
       </customBinding>  
     </bindings>  
-  
     ```  
   
 ## See Also  

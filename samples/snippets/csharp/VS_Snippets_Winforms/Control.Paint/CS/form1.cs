@@ -32,6 +32,10 @@ namespace ControlPaintEx
         {
             if( disposing )
             {
+                if (fnt != null)
+                {
+                    fnt.Dispose();
+                }
                 if (components != null)
                 {
                     components.Dispose();
@@ -73,6 +77,8 @@ namespace ControlPaintEx
         // connected to the Load event of the form.
 
         private PictureBox pictureBox1 = new PictureBox();
+        // Cache font instead of recreating font objects each time we paint.
+        private Font fnt = new Font("Arial",10);
         private void Form1_Load(object sender, System.EventArgs e)
         {
             // Dock the PictureBox to the form and set its background to white.
@@ -92,7 +98,7 @@ namespace ControlPaintEx
 
             // Draw a string on the PictureBox.
             g.DrawString("This is a diagonal line drawn on the control",
-                new Font("Arial",10), System.Drawing.Brushes.Blue, new Point(30,30));
+                fnt, System.Drawing.Brushes.Blue, new Point(30,30));
             // Draw a line in the PictureBox.
             g.DrawLine(System.Drawing.Pens.Red, pictureBox1.Left, pictureBox1.Top,
                 pictureBox1.Right, pictureBox1.Bottom);

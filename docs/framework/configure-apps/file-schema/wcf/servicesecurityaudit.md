@@ -2,7 +2,7 @@
 title: "&lt;serviceSecurityAudit&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Specifies settings that enable auditing of security events during service operat
   
 ## Syntax  
   
-```  
-  
+```xml  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
    messageAuthenticationAuditLevel= None/Success/Failure/SuccessAndFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessAndFailure"  
@@ -71,7 +70,7 @@ Specifies settings that enable auditing of security events during service operat
   
 ## Example  
   
-```  
+```xml  
 <system.serviceModel>  
    <serviceBehaviors>  
       <behavior name="NewBehavior">  

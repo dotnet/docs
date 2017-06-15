@@ -122,7 +122,7 @@ Public Class Sample
   
     ' Handle the NodeChanged event.  
     Public Sub MyNodeChangedEvent(ByVal src As Object, ByVal args As XmlNodeChangedEventArgs)  
-        Console.Write("Node Changed Event: \<0> changed", args.Node.Name)  
+        Console.Write("Node Changed Event: <0> changed", args.Node.Name)  
         If Not (args.Node.Value Is Nothing) Then  
             Console.WriteLine(" with value  0", args.Node.Value)  
         Else  
@@ -132,7 +132,7 @@ Public Class Sample
   
     ' Handle the NodeInserted event.  
     Public Sub MyNodeInsertedEvent(ByVal src As Object, ByVal args As XmlNodeChangedEventArgs)  
-        Console.Write("Node Inserted Event: \<0> inserted", args.Node.Name)  
+        Console.Write("Node Inserted Event: <0> inserted", args.Node.Name)  
         If Not (args.Node.Value Is Nothing) Then  
             Console.WriteLine(" with value 0", args.Node.Value)  
         Else  
@@ -186,7 +186,7 @@ public class Sample
   // Handle the NodeChanged event.  
   public void MyNodeChangedEvent(Object src, XmlNodeChangedEventArgs args)  
   {  
-     Console.Write("Node Changed Event: \<{0}> changed", args.Node.Name);  
+     Console.Write("Node Changed Event: <{0}> changed", args.Node.Name);  
      if (args.Node.Value != null)  
      {  
         Console.WriteLine(" with value  {0}", args.Node.Value);  
@@ -198,7 +198,7 @@ public class Sample
   // Handle the NodeInserted event.  
   public void MyNodeInsertedEvent(Object src, XmlNodeChangedEventArgs args)  
   {  
-     Console.Write("Node Inserted Event: \<{0}> inserted", args.Node.Name);  
+     Console.Write("Node Inserted Event: <{0}> inserted", args.Node.Name);  
      if (args.Node.Value != null)  
      {  
         Console.WriteLine(" with value {0}", args.Node.Value);  

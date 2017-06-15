@@ -2,7 +2,7 @@
 title: "&lt;privacyNoticeAt&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
   
 ## Syntax  
   
-```  
-  
+```xml  
 <privacyNotice url="String"  
         version="Integer" />  
 ```  

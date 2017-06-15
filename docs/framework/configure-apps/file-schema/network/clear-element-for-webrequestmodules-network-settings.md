@@ -2,7 +2,7 @@
 title: "&lt;clear&gt; Element for webRequestModules (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,10 +38,8 @@ Removes all registered Web request modules from the application.
   
 ## Syntax  
   
-```  
-  
+```xml  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  
@@ -68,7 +66,7 @@ Removes all registered Web request modules from the application.
 ## Example  
  The following code example clears all Web request modules and then registers a Web request module for HTTP.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <webRequestModules>  

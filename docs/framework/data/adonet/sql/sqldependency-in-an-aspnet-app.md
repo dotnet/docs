@@ -2,7 +2,7 @@
 title: "SqlDependency in an ASP.NET Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -34,7 +34,6 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
 3.  Open the page's class module and add the following directives:  
   
     ```vb  
-  
     Option Strict On  
     Option Explicit On  
   

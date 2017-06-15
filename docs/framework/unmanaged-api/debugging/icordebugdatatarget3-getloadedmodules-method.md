@@ -23,13 +23,11 @@ Gets a list of the modules that have been loaded so far.
 ## Syntax  
   
 ```  
-  
 HRESULT GetLoadedModules(  
    [in] ULONG32 cRequestedModules,  
    [out] ULONG32 *pcFetchedModules,  
    [out, size_is(cRequestedModules), length_is(*pcFetchedModules)] ICorDebugLoadedModule *pLoadedModules[]  
 );  
-  
 ```  
   
 #### Parameters  

@@ -2,7 +2,7 @@
 title: "How to: Choose Folders with the Windows Forms FolderBrowserDialog Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -42,7 +42,6 @@ Often, within Windows applications you create, you will have to prompt users to 
             TextBox1.Text = FolderBrowserDialog1.SelectedPath  
         End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -53,7 +52,6 @@ Often, within Windows applications you create, you will have to prompt users to 
             textBox1.Text = folderBrowserDialog1.SelectedPath;  
         }  
     }  
-  
     ```  
   
     ```cpp  

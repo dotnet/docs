@@ -2,7 +2,7 @@
 title: "Durable Duplex Correlation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -202,7 +202,6 @@ WF1 - Request Submitted
 WF2 - Sending items  
 WF2 - Items sent  
 WF1 - Items Received  
-  
 ```  
   
  In this example, both workflows explicitly manage correlation using a <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>. Because there was only a single correlation in these sample workflows, the default <xref:System.ServiceModel.Activities.CorrelationHandle> management would have been sufficient.  

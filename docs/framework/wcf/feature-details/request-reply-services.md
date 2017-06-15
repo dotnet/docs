@@ -2,7 +2,7 @@
 title: "Request-Reply Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,6 @@ public interface IRequestReplyCalculator
     [OperationContract]  
     double Add(double n1, double n2);  
 }  
-  
 ```  
   
  You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `false` because this is the default behavior.  

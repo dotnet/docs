@@ -2,7 +2,7 @@
 title: "&lt;security&gt; of &lt;peerTransport&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,7 @@ Contains the security settings associated with a peer channel, including the typ
   
 ## Syntax  
   
-```  
-  
+```xml  
 <security mode="None/Transport/Message/TransportWithMessageCredential">  
     <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
 </security  

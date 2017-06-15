@@ -2,7 +2,7 @@
 title: "How to: Custom Draw a ToolStrip Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,7 +50,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 -   Set the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property to the <xref:System.Windows.Forms.ToolStripRenderMode> value you want.  
   
-     With <xref:System.Windows.Forms.ToolStripRenderMode>, the static <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> determines the renderer for your application. The other values of <xref:System.Windows.Forms.ToolStripRenderMode> are <xref:System.Windows.Forms.ToolStripRenderMode>, <xref:System.Windows.Forms.ToolStripRenderMode>, and <xref:System.Windows.Forms.ToolStripRenderMode>.  
+     With <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>, the static <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> determines the renderer for your application. The other values of <xref:System.Windows.Forms.ToolStripRenderMode> are <xref:System.Windows.Forms.ToolStripRenderMode.Custom>, <xref:System.Windows.Forms.ToolStripRenderMode.Professional>, and <xref:System.Windows.Forms.ToolStripRenderMode.System>.  
   
 ### To change the Microsoft Office–style borders to straight  
   
@@ -63,9 +63,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 -   Override <xref:System.Windows.Forms.ProfessionalColorTable> and change the colors you want.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As _  
     System.EventArgs) Handles Me.Load  
         Dim t As MyColorTable = New MyColorTable  
@@ -115,7 +113,6 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
         End Get  
     End Property  
     End Class  
-  
     ```  
   
 ### To change the rendering for all ToolStrip controls in your application  
@@ -124,7 +121,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 2.  Use <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> to assign a custom renderer.  
   
-3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode>.  
+3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
   
 ### To turn off the Microsoft Office colors for the entire application  
   
@@ -134,22 +131,16 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 -   Use code similar to the following code example.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Dim colorTable As ProfessionalColorTable()  
     colorTable.UseSystemColors = True  
     Dim toolStrip.Renderer As ToolStripProfessionalRenderer(colorTable)  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     ProfessionalColorTable colorTable = new ProfessionalColorTable();  
     colorTable.UseSystemColors = true;  
     toolStrip.Renderer = new ToolStripProfessionalRenderer(colorTable);  
-  
     ```  
   
 ## See Also  

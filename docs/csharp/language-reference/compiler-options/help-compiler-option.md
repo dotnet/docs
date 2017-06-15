@@ -41,7 +41,7 @@ This option sends a listing of compiler options, and a brief description of each
   
 ## Syntax  
   
-```  
+```console  
 /help  
 /?  
 ```  

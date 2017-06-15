@@ -30,23 +30,23 @@
       </Parameters>
       <Docs>
         <param name="structureChangeType">A single value that specifies the type of change.</param>
-        <param name="runtimeId">The runtime [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element whose structure changed. See Remarks.</param>
+        <param name="runtimeId">The runtime [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element whose structure changed.</param>
         <summary>Initializes a new instance of the <see cref="P:System.Windows.Automation.StructureChangedEventArgs.StructureChangeType" /> class, specifying the type of change and the [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the element whose structure changed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values that can be returned in `structureChangeType` depend on the implementation of the UI Automation provider. For example, when items are added to or removed from a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] list box, if the provider is not able to determine the number of items added or removed, it might specify <xref:System.Windows.Automation.StructureChangeType> and not <xref:System.Windows.Automation.StructureChangeType> or <xref:System.Windows.Automation.StructureChangeType>.  
+ The values that can be returned in `structureChangeType` depend on the implementation of the UI Automation provider. For example, when items are added to or removed from a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] list box, if the provider is not able to determine the number of items added or removed, it might specify <xref:System.Windows.Automation.StructureChangeType.ChildrenInvalidated> and not <xref:System.Windows.Automation.StructureChangeType.ChildAdded> or <xref:System.Windows.Automation.StructureChangeType.ChildRemoved>.  
   
  The following table describes the information in the event received by the <xref:System.Windows.Automation.StructureChangedEventHandler> for different structure changes.  
   
 |`structureChangeType`|Event source|`runtimeId`|  
 |---------------------------|------------------|-----------------|  
-|<xref:System.Windows.Automation.StructureChangeType>|The child that was added.|The child that was added.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the child that was removed.|The child that was removed.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were added.|The parent of the children that were added.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were removed.|The parent of the children that were removed.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildAdded>|The child that was added.|The child that was added.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildRemoved>|The parent of the child that was removed.|The child that was removed.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildrenBulkAdded>|The parent of the children that were added.|The parent of the children that were added.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildrenBulkRemoved>|The parent of the children that were removed.|The parent of the children that were removed.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildrenInvalidated>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
   
  Custom controls might not be able to provide a meaningful value in `runtimeId`. For more information, see <xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseStructureChangedEvent%2A>.  
   

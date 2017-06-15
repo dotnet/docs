@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Associates a source table with a table in a <see cref="T:System.Data.DataSet" />, and is implemented by the <see cref="T:System.Data.Common.DataTableMapping" /> class, which is used in common by .NET Framework data providers.</summary>
@@ -37,40 +41,23 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Data.ITableMapping" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> DataTableMapping()  
+ </description></listheader><item><term> DataTableMapping()  
   
- </term>  
-<description> Initializes a new instance of the TableMapping class.  
+ </term><description> Initializes a new instance of the TableMapping class.  
   
- </description>  
-</item>  
-<item>  
-<term> TableMapping(string sourceTable, string dataSetTable)  
+ </description></item><item><term> TableMapping(string sourceTable, string dataSetTable)  
   
- </term>  
-<description> Initializes a new instance of the TableMapping class with a source when given a source table name and a <see cref="T:System.Data.DataTable" /> name.  
+ </term><description> Initializes a new instance of the TableMapping class with a source when given a source table name and a <see cref="T:System.Data.DataTable" /> name.  
   
- </description>  
-</item>  
-<item>  
-<term> TableMapping(string sourceTable, string dataSetTable, DataColumnMapping[] columnMappings)  
+ </description></item><item><term> TableMapping(string sourceTable, string dataSetTable, DataColumnMapping[] columnMappings)  
   
- </term>  
-<description> Initializes a new instance of the TableMapping class when given a source table name, a <see cref="T:System.Data.DataTable" /> name, and an array of ColumnMapping objects.  
+ </term><description> Initializes a new instance of the TableMapping class when given a source table name, a <see cref="T:System.Data.DataTable" /> name, and an array of ColumnMapping objects.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>
@@ -87,6 +74,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IColumnMappingCollection</ReturnType>
@@ -121,6 +112,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -143,6 +138,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

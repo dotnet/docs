@@ -2,7 +2,7 @@
 title: "&lt;UseSmallInternalThreadStacks&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
   
 ## Syntax  
   
-```  
+```xml  
 <UseSmallInternalThreadStacks enabled="true|false" />  
 ```  
   
@@ -73,7 +73,7 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
 ## Example  
  The following example shows how to request that the CLR use explicit stack sizes for certain threads that it uses internally.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <UseSmallInternalThreadStacks enabled="true" />  

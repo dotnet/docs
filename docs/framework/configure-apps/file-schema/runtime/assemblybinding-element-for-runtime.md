@@ -2,7 +2,7 @@
 title: "&lt;assemblyBinding&gt; Element for &lt;runtime&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,9 +35,8 @@ Contains information about assembly version redirection and the locations of ass
   
 ## Syntax  
   
-```  
-  
-      <assemblyBinding    
+```xml  
+      <assemblyBinding    
    xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
 </assemblyBinding>  
 ```  
@@ -71,7 +70,7 @@ Contains information about assembly version redirection and the locations of ass
 ## Example  
  The following example shows how to redirect one assembly version to another and provide a codebase.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -91,7 +90,7 @@ Contains information about assembly version redirection and the locations of ass
   
  The following example shows how to use the **appliesTo** attribute to redirect binding of a .NET Framework assembly.  
   
-```  
+```xml  
 <runtime>  
    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
       <dependentAssembly>   

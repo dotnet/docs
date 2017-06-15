@@ -39,7 +39,7 @@ Refers to another file that describes the types and members in your source code.
   
 ## Syntax  
   
-```  
+```xml  
 <include file="filename" path="tagpath[@name='id']" />  
 ```  
   
@@ -68,7 +68,7 @@ Refers to another file that describes the types and members in your source code.
   
  The format of the `commentFile.xml` is as follows.  
   
-```  
+```xml  
 <Docs>  
 <Members name="Open">  
 <summary>Opens a file.</summary>  

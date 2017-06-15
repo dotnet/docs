@@ -2,7 +2,7 @@
 title: "Retrieve Metadata | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,7 +54,6 @@ foreach (ServiceEndpoint ep in endpoints)
         client.Close();  
     }  
 }  
-  
 ```  
   
  The client console window displays the operations sent to each of the endpoints, displaying the address path and binding name.  

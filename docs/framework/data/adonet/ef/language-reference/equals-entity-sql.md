@@ -2,7 +2,7 @@
 title: "= (Equals) (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,6 @@ Compares the equality of two expressions.
 ## Syntax  
   
 ```  
-  
 expression = expression  
 or   
 expression == expression  

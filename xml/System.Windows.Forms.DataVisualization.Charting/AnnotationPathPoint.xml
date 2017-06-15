@@ -15,10 +15,11 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- At run time, use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath> or <xref:System.Windows.Forms.DataVisualization.Charting.PolygonAnnotation.GraphicsPath> class to set the path of a polyline or polygon.  
+## Remarks 
+ 
+At run time, use the <xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath?displayProperty=fullName> or [PolygonAnnotation.GraphicsPath](<xref:System.Windows.Forms.DataVisualization.Charting.PolylineAnnotation.GraphicsPath?displayProperty=fullName>) property to set the path of a polyline or polygon.  
   
- ]]></format>
+]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -136,7 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type for the path point of an annotation.</summary>
-        <value>A <see langword="byte " />value.</value>
+        <value>A <see langword="byte" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

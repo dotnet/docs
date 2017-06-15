@@ -2,7 +2,7 @@
 title: "Nesting DataRelations | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,7 +66,7 @@ DataRelation customerOrders = dataSet.Relations.Add(
   
  The following code example shows the result from calling **WriteXml** on the **DataSet**.  
   
-```  
+```xml  
 <CustomerOrders>  
   <Customers>  
     <CustomerID>ALFKI</CustomerID>  
@@ -106,7 +106,7 @@ customerOrders.Nested = true;
   
  The following code shows what the resulting output would look like, with the **Orders** elements nested within their respective parent elements.  
   
-```  
+```xml  
 <CustomerOrders>  
   <Customers>  
     <CustomerID>ALFKI</CustomerID>  

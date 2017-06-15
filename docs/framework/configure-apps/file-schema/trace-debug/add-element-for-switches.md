@@ -2,7 +2,7 @@
 title: "&lt;add&gt; Element for &lt;switches&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,7 +35,7 @@ Specifies the level where a trace switch is set.
   
 ## Syntax  
   
-```  
+```xml  
 <add name="switch name"  
      value="value"/>  
 ```  
@@ -67,14 +67,14 @@ Specifies the level where a trace switch is set.
 ## Example  
  The following example shows how to use the **\<add>** element to set the `General` trace switch to the <xref:System.Diagnostics.TraceLevel> level, and enable the `Data` Boolean trace switch.  
   
-```  
+```xml  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <switches>  
          <add name="General" value="4" />  
          <add name="Data" value="1" />  
       </switches>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

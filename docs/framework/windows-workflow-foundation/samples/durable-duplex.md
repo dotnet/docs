@@ -2,7 +2,7 @@
 title: "Durable Duplex | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -40,7 +40,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           …  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 > [!NOTE]
@@ -63,12 +62,11 @@ This sample demonstrates how to set up and configure durable duplex message exch
           …  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The following code example exposes endpoints using this custom binding by changing the default protocol mapping for net.msmq base addresses to use this custom binding.  
   
-```  
+```xml  
 <configuration>  
      <system.serviceModel>  
           <protocolMapping>  
@@ -77,7 +75,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           …  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The following code example enables persistence for both services by adding the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior to both services and specifying the connection string for the persistence database.  
@@ -98,7 +95,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           </behaviors>  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## System Requirements  

@@ -2,7 +2,7 @@
 title: "&lt;enableWebScript&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,7 @@ This element enables the endpoint behavior that makes it possible to consume the
   
 ## Syntax  
   
-```  
-  
+```xml  
 <enableWebScript />  
 ```  
   

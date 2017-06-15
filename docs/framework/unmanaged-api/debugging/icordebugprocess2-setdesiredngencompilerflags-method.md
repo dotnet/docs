@@ -2,7 +2,7 @@
 title: "ICorDebugProcess2::SetDesiredNGENCompilerFlags Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess2::SetDesiredNGENCompilerFlags method [.NET Framework debugging]"
   - "SetDesiredNGENCompilerFlags method [.NET Framework debugging]"
 ms.assetid: 98320175-7c5e-4dbb-8683-86fa82e2641f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

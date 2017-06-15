@@ -2,6 +2,7 @@
 title: "&lt;serviceCertificate&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,12 +24,12 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <serviceCertificate>  
-    </serviceCertificate>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <serviceCertificate>  
+    </serviceCertificate>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   
@@ -53,7 +54,7 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
 ## Example  
  The following XML shows the use of the \<serviceCertificate> element. The XML is taken from the `CustomToken` sample.  
   
-```  
+```xml  
 <serviceCertificate>  
   <certificateReference x509FindType="FindBySubjectName" findValue="localhost" storeLocation="LocalMachine" storeName="My"/>  
 </serviceCertificate>  

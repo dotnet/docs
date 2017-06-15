@@ -2,7 +2,7 @@
 title: "How to: Display LINQ to SQL Commands | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,14 +28,14 @@ Use <xref:System.Data.Linq.DataContext.GetCommand%2A> to display SQL commands an
   
 ```  
 Customers from London:  
-    Thomas Hardy  
-    Victoria Ashworth  
-    Elizabeth Brown  
-    Ann Devon  
-    Simon Crowther  
-    Marie Bertrand  
-    Hari Kumar  
-    Dominique Perrier  
+    Thomas Hardy  
+    Victoria Ashworth  
+    Elizabeth Brown  
+    Ann Devon  
+    Simon Crowther  
+    Marie Bertrand  
+    Hari Kumar  
+    Dominique Perrier  
 ```  
   
 ```  

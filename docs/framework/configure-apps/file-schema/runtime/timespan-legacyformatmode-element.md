@@ -2,7 +2,7 @@
 title: "&lt;TimeSpan_LegacyFormatMode&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Determines whether the runtime preserves legacy behavior in formatting operation
   
 ## Syntax  
   
-```  
+```xml  
 <TimeSpan_LegacyFormatMode    
    enabled="true|false"/>  
 ```  
@@ -90,7 +90,7 @@ Invalid Format
   
  However, if you add the following configuration file to the example's directory and then run the example on the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] or later version, the output is identical to that produced by the example when it is run on [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
   
-```  
+```xml  
 <?xml version ="1.0"?>  
 <configuration>  
    <runtime>  

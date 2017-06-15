@@ -2,7 +2,7 @@
 title: "How to: Define an Icon for a ToolBar Button | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -65,7 +65,6 @@ manager: "wpickett"
     ' Assign the ImageIndex property of the ToolBarButton.  
        ToolBarButton1.ImageIndex = 0  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -92,7 +91,6 @@ manager: "wpickett"
        // Assign ImageIndex property of the ToolBarButton.  
        toolBarButton1.ImageIndex = 0;  
     }  
-  
     ```  
   
     ```cpp  

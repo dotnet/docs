@@ -2,7 +2,7 @@
 title: "How to: Host a non-service workflow in IIS | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,13 +26,13 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
   
 3.  Delete the ReceiveRequest and SendResponse activities. These activities are what makes a workflow a workflow service. Since we are not working with a workflow service, we no longer need them.  
   
-4.  Set the DisplayName for the sequence activity to “Sequential Workflow”.  
+4.  Set the DisplayName for the sequence activity to "Sequential Workflow".  
   
 5.  Rename Service1.xamlx to Workflow1.xamlx.  
   
-6.  Click the designer outside of the sequence activity, and set the Name and ConfigurationName properties to “Workflow1”  
+6.  Click the designer outside of the sequence activity, and set the Name and ConfigurationName properties to "Workflow1"  
   
-7.  Drag a <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence>. The <xref:System.Activities.Statements.WriteLine> activity can be found in the **Primitives** section of the toolbox. Set the <xref:System.Activities.Statements.WriteLine.Text%2A> property of the <xref:System.Activities.Statements.WriteLine> activity to “Hello, world”.  
+7.  Drag a <xref:System.Activities.Statements.WriteLine> activity into the <xref:System.Activities.Statements.Sequence>. The <xref:System.Activities.Statements.WriteLine> activity can be found in the **Primitives** section of the toolbox. Set the <xref:System.Activities.Statements.WriteLine.Text%2A> property of the <xref:System.Activities.Statements.WriteLine> activity to "Hello, world".  
   
      The workflow should now look like the following diagram.  
   
@@ -147,7 +147,7 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
     }  
     ```  
   
-7.  Override the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A> method to return the workflow instance ID. If the `Action` header ends with “Create” return an empty GUID, if the `Action` header ends with “CreateWithInstanceId” return the GUID passed into the method. Otherwise, throw an <xref:System.InvalidOperationException>. These `Action` headers correspond to the two operations defined in the `IWorkflowCreation` service contract.  
+7.  Override the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A> method to return the workflow instance ID. If the `Action` header ends with "Create" return an empty GUID, if the `Action` header ends with "CreateWithInstanceId" return the GUID passed into the method. Otherwise, throw an <xref:System.InvalidOperationException>. These `Action` headers correspond to the two operations defined in the `IWorkflowCreation` service contract.  
   
     ```  
     protected override Guid OnGetInstanceId(object[] inputs, OperationContext operationContext)  
@@ -235,7 +235,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
     {  
        return new CreationEndpoint();  
     }  
-  
     ```  
   
 5.  Overload the <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnApplyConfiguration%2A>, <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnApplyConfiguration%2A>, <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnInitializeAndValidate%2A>, and <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnInitializeAndValidate%2A> methods. These methods just need to be defined, you do not need to add any code to them.  
@@ -289,7 +288,7 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
   
 5.  After the `<system.web>` element, register `CreationEndpoint` by adding the following configuration code.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
         <!--register CreationEndpoint-->  
         <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />  
@@ -299,21 +298,19 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
           </endpointExtensions>  
         </extensions>  
     </system.serviceModel>  
-  
     ```  
   
      This registers the `CreationEndpointCollection` class so you can configure a `CreationEndpoint` in a web.config file.  
   
 6.  Add a `<service>` element (after the \</extensions> tag) with a `CreationEndpoint` which will listen for incoming messages.  
   
-    ```  
+    ```xml  
     <services>  
           <!-- add endpoint to service-->  
           <service name="Workflow1" behaviorConfiguration="basicConfig" >  
             <endpoint kind="creationEndpoint" binding="basicHttpBinding" address=""/>  
           </service>  
         </services>  
-  
     ```  
   
 7.  Add a \<behaviors> element (after the \</services> tag) to enable service metadata.  
@@ -326,7 +323,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
             </behavior>  
           </serviceBehaviors>  
         </behaviors>  
-  
     ```  
   
 8.  Copy the web.config to your IIS application directory.  
@@ -427,7 +423,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
     <p:WriteLine sap:VirtualizedContainerService.HintSize="211,61" Text="Hello, world" />  
   </p:Sequence>  
 </WorkflowService>  
-  
 ```  
   
 ```csharp  
@@ -485,7 +480,6 @@ namespace CreationEndpointTest
     {  
     }  
 }  
-  
 ```  
   
 ```xml  
@@ -518,7 +512,6 @@ namespace CreationEndpointTest
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ```csharp  
@@ -542,7 +535,6 @@ namespace Shared
         void CreateWithInstanceId(IDictionary<string, object> inputs, Guid instanceId);  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -646,7 +638,6 @@ namespace Shared
         }  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -683,7 +674,6 @@ namespace CreationClient
     }  
   
 }  
-  
 ```  
   
  This example may seem confusing because you never implement a service that implements `IWorkflowCreation`. This is because the `CreationEndpoint` does this for you.  

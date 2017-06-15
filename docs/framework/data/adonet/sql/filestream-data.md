@@ -2,7 +2,7 @@
 title: "FILESTREAM Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -41,7 +41,6 @@ GO
 Insert into employees  
 Values(1, 0x00, default)  
 GO  
-  
 ```  
   
 ### Example: Reading, Overwriting, and Inserting FILESTREAM Data  

@@ -1,5 +1,5 @@
 ---
-title: Verbose Syntax (F#)
+title: Verbose Syntax (F#) | Microsoft Docs
 description: Verbose Syntax (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -34,7 +34,7 @@ compound expressions
 </td>
 <td>
 
-```
+```xml
 <expression1>
 <expression2>
 ```

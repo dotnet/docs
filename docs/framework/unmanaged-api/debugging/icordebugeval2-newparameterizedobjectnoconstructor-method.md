@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "NewParameterizedObjectNoConstructor method [.NET Framework debugging]"
   - "ICorDebugEval2::NewParameterizedObjectNoConstructor method [.NET Framework debugging]"
 ms.assetid: f15b5b78-94f4-4eb9-b3b3-a621272f357c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

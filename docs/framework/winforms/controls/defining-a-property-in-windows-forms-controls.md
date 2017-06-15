@@ -2,7 +2,7 @@
 title: "Defining a Property in Windows Forms Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -65,7 +65,6 @@ Public Class FlashTrackBar
    End Property  
    ...  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -112,7 +111,6 @@ Description("The current value of the track bar.  You can enter an actual value 
 Public ReadOnly Property Value() As Integer  
 ...  
 End Property  
-  
 ```  
   
 ```csharp  

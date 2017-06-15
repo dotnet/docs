@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating a Type Provider (F#)"
+title: "Tutorial: Creating a Type Provider (F#) | Microsoft Docs"
 description: "Tutorial: Creating a Type Provider (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -109,24 +109,24 @@ open Microsoft.FSharp.Quotations
 [<TypeProvider>]
 type SampleTypeProvider(config: TypeProviderConfig) as this = 
 
-// Inheriting from this type provides implementations of ITypeProvider 
-// in terms of the provided types below.
-inherit TypeProviderForNamespaces()
+  // Inheriting from this type provides implementations of ITypeProvider 
+  // in terms of the provided types below.
+  inherit TypeProviderForNamespaces()
 
-let namespaceName = "Samples.HelloWorldTypeProvider"
-let thisAssembly = Assembly.GetExecutingAssembly()
+  let namespaceName = "Samples.HelloWorldTypeProvider"
+  let thisAssembly = Assembly.GetExecutingAssembly()
 
-// Make one provided type, called TypeN.
-let makeOneProvidedType (n:int) = 
-…
-// Now generate 100 types
-let types = [ for i in 1 .. 100 -> makeOneProvidedType i ] 
+  // Make one provided type, called TypeN.
+  let makeOneProvidedType (n:int) = 
+  …
+  // Now generate 100 types
+  let types = [ for i in 1 .. 100 -> makeOneProvidedType i ] 
 
-// And add them to the namespace
-do this.AddNamespace(namespaceName, types)
+  // And add them to the namespace
+  do this.AddNamespace(namespaceName, types)
 
-[<assembly:TypeProviderAssembly>] 
-do()
+  [<assembly:TypeProviderAssembly>] 
+  do()
 ```
 
 To use this provider, open a separate instance of Visual Studio 2012, create an F# script, and then add a reference to the provider from your script by using #r as the following code shows:
@@ -771,7 +771,7 @@ As a simple example, consider a type provider for accessing scientific data in C
 This section shows how to provide a type that you can use to get rows with a `Distance` property of type `float<meter>` and a `Time` property of type `float<second>`. For simplicity, the following assumptions are made:
 
 
-- Header names are either unit-less or have the form “Name (unit)” and don't contain commas.
+- Header names are either unit-less or have the form "Name (unit)" and don't contain commas.
 <br />
 
 - Units are all Systeme International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
@@ -937,20 +937,20 @@ extends [mscorlib]System.Object
 .custom instance void [FSharp.Core]Microsoft.FSharp.Core.CompilationMappingAtt
 ribute::.ctor(valuetype [FSharp.Core]Microsoft.FSharp.Core.SourceConstructFlags)
 = ( 01 00 07 00 00 00 00 00 )
-.method public static int32  function1() cil managed
+.method public static int32  function1() cil managed
 {
-// Code size       24 (0x18)
-.maxstack  3
+// Code size       24 (0x18)
+.maxstack  3
 .locals init ([0] object obj1)
-IL_0000:  nop
-IL_0001:  ldstr      "some data"
-IL_0006:  unbox.any  [mscorlib]System.Object
-IL_000b:  stloc.0
-IL_000c:  ldloc.0
-IL_000d:  call       !!0 [FSharp.Core_2]Microsoft.FSharp.Core.LanguagePrimit
+IL_0000:  nop
+IL_0001:  ldstr      "some data"
+IL_0006:  unbox.any  [mscorlib]System.Object
+IL_000b:  stloc.0
+IL_000c:  ldloc.0
+IL_000d:  call       !!0 [FSharp.Core_2]Microsoft.FSharp.Core.LanguagePrimit
 ives/IntrinsicFunctions::UnboxGeneric<string>(object)
-IL_0012:  callvirt   instance int32 [mscorlib_3]System.String::get_Length()
-IL_0017:  ret
+IL_0012:  callvirt   instance int32 [mscorlib_3]System.String::get_Length()
+IL_0017:  ret
 } // end of method Module1::function1
 
 } // end of class Module1

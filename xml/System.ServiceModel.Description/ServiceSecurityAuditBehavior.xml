@@ -15,7 +15,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Specifies the audit behavior of security events. In general, the security events consist of authentication events such as transport, message or negotiate authentication and authorization event. For more information, see<see cref="T:System.ServiceModel.ServiceAuthorizationManager" />.</summary>
+    <summary>Specifies the audit behavior of security events. In general, the security events consist of authentication events such as transport, message or negotiate authentication and authorization event. For more information, see <see cref="T:System.ServiceModel.ServiceAuthorizationManager" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,13 +58,13 @@
 ## Remarks  
  The instance is created with the following default settings:  
   
--   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> = <xref:System.ServiceModel.AuditLogLocation>;  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> = <xref:System.ServiceModel.AuditLogLocation.Default>;  
   
 -   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> = `true`;  
   
--   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> = <xref:System.ServiceModel.AuditLevel>;  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> = <xref:System.ServiceModel.AuditLevel.None>;  
   
--   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> = <xref:System.ServiceModel.AuditLevel>.  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> = <xref:System.ServiceModel.AuditLevel.None>.  
   
    
   

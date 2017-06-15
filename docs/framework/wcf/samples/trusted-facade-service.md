@@ -2,7 +2,7 @@
 title: "Trusted Facade Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +39,7 @@ This scenario sample demonstrates how to flow caller's identity information from
 ### Communication Path between Client and Façade Service  
  The client to the façade service communication path uses `wsHttpBinding` with a `UserName` client credential type. This means that the client uses username and password to authenticate to the façade service and the façade service uses X.509 certificate to authenticate to the client. The binding configuration looks like the following example.  
   
-```  
+```xml  
 <bindings>  
   <wsHttpBinding>  
     <binding name="Binding1">  
@@ -71,7 +71,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The custom validator is configured to be used inside the `serviceCredentials` behavior in the façade service configuration file. This behavior is also used to configure the service's X.509 certificate.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="FacadeServiceBehavior">  
@@ -103,7 +103,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The following is the binding configuration for this communication path.  
   
-```  
+```xml  
 <bindings>  
   <customBinding>  
     <binding name="ClientBinding">  
@@ -157,7 +157,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The custom validator is configured to be used inside the `serviceCredentials` behavior in the façade service configuration file.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="BackendServiceBehavior">  
@@ -234,7 +234,6 @@ Multiply(9,81.25) = 731.25
 Divide(22,7) = 3.14285714285714  
   
 Press <ENTER> to terminate client.  
-  
 ```  
   
  The Setup.bat batch file included with the Trusted Facade scenario sample enables you to configure the server with a relevant certificate to run the façade service that requires certificate-based security to authenticate itself to the client. See the setup procedure at the end of this topic for details.  

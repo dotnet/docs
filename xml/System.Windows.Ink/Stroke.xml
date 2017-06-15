@@ -114,7 +114,7 @@
       </Parameters>
       <Docs>
         <param name="propertyDataId">The unique identifier for the property.</param>
-        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />,<see cref="T:System.Int16" />,,<see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
+        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
         <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.Stroke" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -778,6 +778,37 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns whether the <see cref="T:System.Windows.Ink.Stroke" /> intersects or is within a certain area.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Ink.Stroke.HitTest%2A> methods to determine whether a <xref:System.Windows.Ink.Stroke> intersects a certain point or is within specified bounds.  
+  
+ The following methods check whether the <xref:System.Windows.Ink.Stroke> is intersected.  
+  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Windows.Ink.StylusShape%29?displayProperty=fullName>  
+  
+ The following methods check whether the <xref:System.Windows.Ink.Stroke> is surrounded.  
+  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Int32%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Rect%2CSystem.Int32%29?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTest">
       <MemberSignature Language="C#" Value="public bool HitTest (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HitTest(valuetype System.Windows.Point point) cil managed" />
@@ -1362,36 +1393,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HitTest">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns whether the <see cref="T:System.Windows.Ink.Stroke" /> intersects or is within a certain area.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the <xref:System.Windows.Ink.Stroke.HitTest%2A> methods to determine whether a <xref:System.Windows.Ink.Stroke> intersects a certain point or is within specified bounds.  
-  
- The following methods check whether the <xref:System.Windows.Ink.Stroke> is intersected.  
-  
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%29?displayProperty=fullName>  
-  
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Point%2CSystem.Double%29?displayProperty=fullName>  
-  
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Windows.Ink.StylusShape%29?displayProperty=fullName>  
-  
- The following methods check whether the <xref:System.Windows.Ink.Stroke> is surrounded.  
-  
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Collections.Generic.IEnumerable%7BSystem.Windows.Point%7D%2CSystem.Int32%29?displayProperty=fullName>  
-  
--   <xref:System.Windows.Ink.Stroke.HitTest%28System.Windows.Rect%2CSystem.Int32%29?displayProperty=fullName>  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -2,7 +2,7 @@
 title: "ICorDebugThread::GetDebugState Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetDebugState method [.NET Framework debugging]"
   - "ICorDebugThread::GetDebugState method [.NET Framework debugging]"
 ms.assetid: 9be27b0c-1d99-4722-b0d4-40cf6753ce5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

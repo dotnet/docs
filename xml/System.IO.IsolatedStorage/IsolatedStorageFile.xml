@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.IO.IsolatedStorage.IsolatedStorage</BaseTypeName>
   </Base>
@@ -34,7 +38,7 @@
   
  For more information, see [Isolated Storage](~/docs/standard/io/isolated-storage.md).  
   
- This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+ This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
 > [!IMPORTANT]
 >  Isolated storage is not available for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](~/includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](http://go.microsoft.com/fwlink/?LinkId=229175) in the Windows Dev Center.  
@@ -64,6 +68,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -100,6 +108,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -135,6 +147,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -160,15 +176,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
   
  -or-  
@@ -198,6 +214,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -226,15 +246,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
   
  -or-  
@@ -259,6 +279,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -305,6 +329,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -355,6 +383,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -409,6 +441,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -454,6 +490,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -503,6 +543,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -544,6 +588,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -588,6 +636,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -622,6 +674,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -644,6 +700,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -669,9 +729,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -694,6 +754,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -735,6 +799,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -793,6 +861,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -828,6 +900,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -867,6 +943,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -921,6 +1001,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -945,9 +1029,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -970,6 +1054,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -995,9 +1083,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -1020,6 +1108,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
@@ -1070,6 +1162,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1113,6 +1209,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
@@ -1204,6 +1304,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1260,6 +1364,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1278,7 +1386,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+>  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Application> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
   
  ]]></format>
         </remarks>
@@ -1316,6 +1424,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1337,7 +1449,7 @@
  This form of `GetStore` is most useful for administrative code that needs to open a store as if it were another assembly. The store is opened for the evidence provided and not for the currently executing assembly.  
   
 > [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+>  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Domain> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
   
  ]]></format>
         </remarks>
@@ -1379,6 +1491,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1402,7 +1518,7 @@
  This overload of <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> opens an isolated store for the evidence types that are passed in.  
   
 > [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+>  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Domain> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
   
    
   
@@ -1472,7 +1588,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
+>  If the `scope` parameter is <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Domain> and the application domain in which the assembly is installed does not have <xref:System.Security.Permissions.IsolatedStorageFilePermission>, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A> method will return an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object without a quota. Later attempts to create an <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> object that does not have a quota will fail with an <xref:System.IO.IsolatedStorage.IsolatedStorageException>.  
   
    
   
@@ -1517,6 +1633,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
@@ -1569,6 +1689,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
       </ReturnValue>
@@ -1616,6 +1740,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.IsolatedStorage.IsolatedStorageFile</ReturnType>
@@ -1684,6 +1812,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1719,6 +1851,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1780,6 +1916,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1815,6 +1955,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1867,6 +2011,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1892,9 +2040,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
@@ -1928,6 +2076,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1953,9 +2105,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
@@ -1980,6 +2132,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2033,6 +2189,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2088,6 +2248,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2146,6 +2310,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -2179,6 +2347,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2225,6 +2397,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2264,6 +2440,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.IsolatedStorage</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

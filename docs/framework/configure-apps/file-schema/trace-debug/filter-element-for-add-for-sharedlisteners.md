@@ -2,7 +2,7 @@
 title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;sharedListeners&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +39,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
   
 ## Syntax  
   
-```  
+```xml  
 <filter type="System.Diagnostics.EventTypeFilter"   
   initializeData="Warning" />  
 ```  
@@ -74,7 +74,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
 ## Example  
  The following example shows how to use the `<filter>` element to add a filter to the trace listener `console` in the `sharedListeners` collection.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

@@ -2,7 +2,7 @@
 title: "&lt;EnableAmPmParseAdjustment&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +25,8 @@ Determines whether date and time parsing methods use an adjusted set of rules to
   
 ## Syntax  
   
-```  
-  
+```xml  
 <EnableAmPmParseAdjustment enabled="0"|"1" />  
-  
 ```  
   
 ## Attributes and Elements  

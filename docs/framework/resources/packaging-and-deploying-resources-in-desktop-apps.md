@@ -92,7 +92,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
 9. The runtime next searches parent assemblies, as in the previous three steps, through many potential levels. Each culture has only one parent, which is defined by the <xref:System.Globalization.CultureInfo.Parent%2A?displayProperty=fullName> property, but a parent might have its own parent. The search for parent cultures stops when a culture's <xref:System.Globalization.CultureInfo.Parent%2A> property returns <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>; for resource fallback, the invariant culture is not considered a parent culture or a culture that can have resources.  
   
-10. If the culture that was originally specified and all parents have been searched and the resource is still not found, the resource for the default (fallback) culture is used. Typically, the resources for the default culture are included in the main application assembly. However, you can specify a value of <xref:System.Resources.UltimateResourceFallbackLocation> for the <xref:System.Resources.NeutralResourcesLanguageAttribute.Location%2A> property of the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that the ultimate fallback location for resources is a satellite assembly, rather than the main assembly.  
+10. If the culture that was originally specified and all parents have been searched and the resource is still not found, the resource for the default (fallback) culture is used. Typically, the resources for the default culture are included in the main application assembly. However, you can specify a value of <xref:System.Resources.UltimateResourceFallbackLocation.Satellite> for the <xref:System.Resources.NeutralResourcesLanguageAttribute.Location%2A> property of the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that the ultimate fallback location for resources is a satellite assembly, rather than the main assembly.  
   
     > [!NOTE]
     >  The default resource is the only resource that can be compiled with the main assembly. Unless you specify a satellite assembly by using the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute, it is the ultimate fallback (final parent). Therefore, we recommend that you always include a default set of resources in your main assembly. This helps prevent exceptions from being thrown. By including a default resource file you provide a fallback for all resources, and ensure that at least one resource is always present for the user, even if it is not culturally specific.  
@@ -113,14 +113,12 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
  You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.  
   
-```  
-  
+```xml  
 <configuration>  
    <runtime>  
       <relativeBindForResources enabled="true" />  
    </runtime>  
 </configuration>  
-  
 ```  
   
  The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in the [The Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:  

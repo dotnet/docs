@@ -2,7 +2,7 @@
 title: "How to: Enable AutoComplete in ToolStrip Controls in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,10 +44,9 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     toolStrip1 = new System.Windows.Forms.ToolStrip();  
     toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]   
         {toolStripLabel1, toolStripComboBox1});  
-  
     ```  
   
-2.  Set the <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property of the label and the combo box to <xref:System.Windows.Forms.ToolStripItemOverflow> so that the list is always available regardless of the form's size.  
+2.  Set the <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property of the label and the combo box to <xref:System.Windows.Forms.ToolStripItemOverflow.Never> so that the list is always available regardless of the form's size.  
   
     ```vb  
     ToolStripLabel1.Overflow = _  
@@ -60,7 +59,6 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     toolStripLabel1.Overflow = _  
         System.Windows.Forms.ToolStripItemOverflow.Never  
     toolStripComboBox1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never  
-  
     ```  
   
 3.  Add words to the Items collection of the <xref:System.Windows.Forms.ToolStripComboBox> control.  
@@ -68,15 +66,13 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     ```vb  
     ToolStripComboBox1.Items.AddRange(New Object() {"First Item", _  
         "Second Item", "Third Item"})  
-  
     ```  
   
     ```csharp  
     toolStripComboBox1.Items.AddRange(new object[] {"First item", "Second item", "Third item"});  
-  
     ```  
   
-4.  Set the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> property of the combo box to <xref:System.Windows.Forms.AutoCompleteMode>.  
+4.  Set the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> property of the combo box to <xref:System.Windows.Forms.AutoCompleteMode.Append>.  
   
     ```vb  
     ToolStripComboBox1.AutoCompleteMode = _  
@@ -85,10 +81,9 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
   
     ```csharp  
     toolStripComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;  
-  
     ```  
   
-5.  Set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property of the combo box to <xref:System.Windows.Forms.AutoCompleteSource>.  
+5.  Set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property of the combo box to <xref:System.Windows.Forms.AutoCompleteSource.ListItems>.  
   
     ```vb  
     ToolStripComboBox1.AutoCompleteSource = _  
@@ -97,7 +92,6 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
   
     ```csharp  
     toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;  
-  
     ```  
   
 ## See Also  

@@ -2,7 +2,7 @@
 title: "ICorDebugProcess6::GetCode Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,11 +23,9 @@ Gets information about the managed code at a particular code address.
 ## Syntax  
   
 ```  
-  
 HRESULT GetCode(  
     [in] CORDB_ADDRESS codeAddress,   
     [out] ICorDebugCode **ppCode);  
-  
 ```  
   
 #### Parameters  

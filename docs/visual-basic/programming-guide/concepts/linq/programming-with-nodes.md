@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Programming with Nodes (Visual Basic)
-[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] developers who need to write programs such as an XML editor, a transform system, or a report writer often need to write programs that work at a finer level of granularity than elements and attributes. They often need to work at the node level, manipulating text nodes, processing instructions, and comments. This topic provides some details about programming at the node level.  
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] developers who need to write programs such as an XML editor, a transform system, or a report writer often need to write programs that work at a finer level of granularity than elements and attributes. They often need to work at the node level, manipulating text nodes, processing instructions, and comments. This topic provides some details about programming at the node level.  
   
 ## Node Details  
  There are a number of details of programming that a programmer working at the node level should know.  
@@ -37,7 +37,6 @@ translation.priority.mt:
 Dim doc As XDocument = XDocument.Parse("<!-- a comment --><Root/>")  
 Console.WriteLine(doc.Nodes().OfType(Of XComment).First().Parent Is Nothing)  
 Console.WriteLine(doc.Root.Parent Is Nothing)  
-  
 ```  
   
  This example produces the following output:  
@@ -48,7 +47,7 @@ True
 ```  
   
 ### Adjacent Text Nodes are Possible  
- In a number of XML programming models, adjacent text nodes are always merged. This is sometimes called normalization of text nodes. [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] does not normalize text nodes. If you add two text nodes to the same element, it will result in adjacent text nodes. However, if you add content specified as a string rather than as an <xref:System.Xml.Linq.XText> node, [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] might merge the string with an adjacent text node.  
+ In a number of XML programming models, adjacent text nodes are always merged. This is sometimes called normalization of text nodes. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] does not normalize text nodes. If you add two text nodes to the same element, it will result in adjacent text nodes. However, if you add content specified as a string rather than as an <xref:System.Xml.Linq.XText> node, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] might merge the string with an adjacent text node.  
   
  The following example demonstrates this:  
   
@@ -63,7 +62,6 @@ Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())
 '// This does add a new, adjacent text node.  
 xmlTree.Add(New XText("more text"))  
 Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())  
-  
 ```  
   
  This example produces the following output:  
@@ -86,7 +84,6 @@ textNode.Value = ""
   
 Dim textNode2 As XText = xmlTree.Nodes().OfType(Of XText)().First()  
 Console.WriteLine(">>{0}<<", textNode2)  
-  
 ```  
   
  This example produces the following output:  
@@ -105,18 +102,17 @@ Dim child1 As XElement = New XElement("Child1", _
 Dim child2 As XElement = New XElement("Child2")  
 Console.WriteLine(child1)  
 Console.WriteLine(child2)  
-  
 ```  
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child1></Child1>  
 <Child2 />  
 ```  
   
 ### Namespaces are Attributes in the LINQ to XML Tree  
- Even though namespace declarations have identical syntax to attributes, in some programming interfaces, such as XSLT and XPath, namespace declarations are not considered to be attributes. However, in [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], namespaces are stored as <xref:System.Xml.Linq.XAttribute> objects in the XML tree. If you iterate through the attributes for an element that contains a namespace declaration, you will see the namespace declaration as one of the items in the returned collection.  
+ Even though namespace declarations have identical syntax to attributes, in some programming interfaces, such as XSLT and XPath, namespace declarations are not considered to be attributes. However, in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], namespaces are stored as <xref:System.Xml.Linq.XAttribute> objects in the XML tree. If you iterate through the attributes for an element that contains a namespace declaration, you will see the namespace declaration as one of the items in the returned collection.  
   
  The <xref:System.Xml.Linq.XAttribute.IsNamespaceDeclaration%2A> property indicates whether an attribute is a namespace declaration.  
   
@@ -130,7 +126,6 @@ For Each att As XAttribute In root.Attributes()
     Console.WriteLine("{0}  IsNamespaceDeclaration:{1}", att, _  
                       att.IsNamespaceDeclaration)  
 Next  
-  
 ```  
   
  This example produces the following output:  
@@ -142,7 +137,7 @@ AnAttribute="abc"  IsNamespaceDeclaration:False
 ```  
   
 ### XPath Axis Methods Do Not Return Child White Space of XDocument  
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] allows for child text nodes of an <xref:System.Xml.Linq.XDocument>, as long as the text nodes contain only white space. However, the XPath object model does not include white space as child nodes of a document, so when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.Linq.XContainer.Nodes%2A> axis, white space text nodes will be returned. However, when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the XPath axis methods, white space text nodes will not be returned.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] allows for child text nodes of an <xref:System.Xml.Linq.XDocument>, as long as the text nodes contain only white space. However, the XPath object model does not include white space as child nodes of a document, so when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the <xref:System.Xml.Linq.XContainer.Nodes%2A> axis, white space text nodes will be returned. However, when you iterate through the children of an <xref:System.Xml.Linq.XDocument> using the XPath axis methods, white space text nodes will not be returned.  
   
 ```vb  
 ' Create a document with some white space child nodes of the document.  
@@ -157,7 +152,6 @@ Console.WriteLine(root.Nodes().OfType(Of XText)().Count())
 ' Count the white space child nodes using XPathEvaluate.  
 Dim nodes As IEnumerable = CType(root.XPathEvaluate("text()"), IEnumerable)  
 Console.WriteLine(nodes.OfType(Of XText)().Count())  
-  
 ```  
   
  This example produces the following output:  
@@ -180,12 +174,11 @@ Console.WriteLine(File.ReadAllText("Temp.xml"))
   
 ' This shows that there is only one child node of the document.  
 Console.WriteLine(doc.Nodes().Count())  
-  
 ```  
   
  This example produces the following output:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <Root />  
 1  

@@ -28,7 +28,6 @@
 ## Examples  
  The following example shows a simple implementation of an <xref:System.Activities.Activity> derived class.  
   
-<!-- TODO: review snippet reference  [!CODE [SimpleInterop#0](SimpleInterop#0)]  -->  
   
  ]]></format>
     </remarks>
@@ -89,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The workflow runtime uses the default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage runtime relationships and lifetime rules. The default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> examines the public properties of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>>, <xref:System.Activities.Activity>, <xref:T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>>, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic.  
+ The workflow runtime uses the default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage runtime relationships and lifetime rules. The default implementation of <xref:System.Activities.Activity.CacheMetadata%2A> examines the public properties of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, `IEnumerable<System.Activities.Variable>`, <xref:System.Activities.Activity>, `IEnumerable<System.Activities.Activity>`, or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic.  
   
  ]]></format>
         </remarks>

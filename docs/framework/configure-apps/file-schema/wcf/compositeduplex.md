@@ -2,7 +2,7 @@
 title: "&lt;compositeDuplex&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,8 +29,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 ## Syntax  
   
-```  
-  
+```xml  
 <compositeDuplex clientBaseAddress="URI" />  
 ```  
   
@@ -41,7 +40,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|clientBaseAddress|A URI that sets the address of the back channel in duplex mode. The service uses this address to make contact and establish a connection with the client.<br /><br /> If this attribute is not set, a default address “`full qualified name+default port\TemporaryIndigoAddress\guid`” is generated. The default is `null`.|  
+|clientBaseAddress|A URI that sets the address of the back channel in duplex mode. The service uses this address to make contact and establish a connection with the client.<br /><br /> If this attribute is not set, a default address "`full qualified name+default port\TemporaryIndigoAddress\guid`" is generated. The default is `null`.|  
   
 ### Child Elements  
  None  
@@ -59,7 +58,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 ## Example  
   
-```  
+```xml  
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />  
 ```  
   

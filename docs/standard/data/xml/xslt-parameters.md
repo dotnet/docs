@@ -64,7 +64,7 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
   
 ### Output  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <order>  
   <total>36.9</total>  

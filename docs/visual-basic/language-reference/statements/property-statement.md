@@ -46,21 +46,20 @@ Declares the name of a property, and the property procedures used to store and r
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ Default ] [ accessmodifier ]   
-[ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ] [ Iterator ]  
-Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
-    [ <attributelist> ] [ accessmodifier ] Get  
-        [ statements ]  
+[ <attributelist> ] [ Default ] [ accessmodifier ]   
+[ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ] [ Iterator ]  
+Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
+    [ <attributelist> ] [ accessmodifier ] Get  
+        [ statements ]  
     End Get  
-    [ <attributelist> ] [ accessmodifier ] Set ( ByVal value As returntype [, parameterlist ] )  
-        [ statements ]  
+    [ <attributelist> ] [ accessmodifier ] Set ( ByVal value As returntype [, parameterlist ] )  
+        [ statements ]  
     End Set  
 End Property  
 - or -  
-[ <attributelist> ] [ Default ] [ accessmodifier ]   
-[ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ]   
-Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
-  
+[ <attributelist> ] [ Default ] [ accessmodifier ]   
+[ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ]   
+Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
 ```  
   
 ## Parts  
@@ -87,7 +86,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements impl
   
     -   `Protected Friend`  
   
-     See [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+     See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 -   `propertymodifiers`  
   

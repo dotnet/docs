@@ -51,5 +51,4 @@ class SendMailAsyncResult : IAsyncResult
                 throw sendMailResult.Error;   
         }  
     }  
-  
 ```

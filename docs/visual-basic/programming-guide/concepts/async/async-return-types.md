@@ -192,7 +192,6 @@ End Sub
   
         </Grid>  
     </Window>  
-  
     ```  
   
      A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  

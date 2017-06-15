@@ -44,7 +44,6 @@ Provides access to the value of the first element of a collection of <xref:Syste
 ## Syntax  
   
 ```  
-  
 object.Value  
 ```  
   

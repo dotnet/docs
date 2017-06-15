@@ -2,7 +2,7 @@
 title: "Transport: WSE 3.0 TCP Interoperability | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -145,12 +145,12 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
 Calling soap://stockservice.contoso.com/wse/samples/2003/06/TcpSyncStockService  
   
 Symbol: FABRIKAM  
-        Name: Fabrikam, Inc.  
-        Last Price: 120  
+        Name: Fabrikam, Inc.  
+        Last Price: 120  
   
 Symbol: CONTOSO  
-        Name: Contoso Corp.  
-        Last Price: 50.07  
+        Name: Contoso Corp.  
+        Last Price: 50.07  
 Press enter.  
   
 Received Action: http://SayHello  
@@ -172,8 +172,8 @@ Press any key to exit when done...
   
 Request received.  
 Symbols:  
-        FABRIKAM  
-        CONTOSO  
+        FABRIKAM  
+        CONTOSO  
 ```  
   
 #### To set up, build, and run the sample  

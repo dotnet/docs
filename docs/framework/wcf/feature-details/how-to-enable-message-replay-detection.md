@@ -2,7 +2,7 @@
 title: "How to: Enable Message Replay Detection | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -57,7 +57,7 @@ A replay attack occurs when an attacker copies a stream of messages between two 
   
 4.  Set the following attribute values, as appropriate: `detectReplays`, `maxClockSkew`, `replayWindow`, and `replayCacheSize`. The following example sets the attributes of both a `<localServiceSettings>` and a `<localClientSettings>` element:  
   
-    ```  
+    ```xml  
     <customBinding>  
       <binding name="NewBinding0">  
        <textMessageEncoding />  

@@ -2,7 +2,7 @@
 title: "User Name Password Validator | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ This sample demonstrates how to implement a custom UserNamePassword Validator. T
   
  The service exposes a single endpoint for communicating with the service, defined using the configuration file, App.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding` that defaults to using WS-Securityand username authentication. The service behavior specifies the `Custom` mode for validating client username/password pairs along with the type of the validator class. The behavior also specifies the server certificate using the `serviceCertificate` element. The server certificate has to contain the same value for the `SubjectName` as the `findValue` in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md).  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -92,12 +92,11 @@ This sample demonstrates how to implement a custom UserNamePassword Validator. T
   </behaviors>  
   
 </system.serviceModel>  
-  
 ```  
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate mode and message `clientCredentialType`.  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <client>  
@@ -142,7 +141,6 @@ address="http://localhost:8001/servicemodelsamples/service/username"
     </behaviors>  
   
   </system.serviceModel>  
-  
 ```  
   
  The client implementation prompts the user to enter a username and password.  
@@ -203,7 +201,6 @@ try
       proxy.Abort();  
   }  
 }  
-  
 ```  
   
  This sample uses a custom UserNamePasswordValidator to validate username/password pairs. The sample implements `CustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation for <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. This particular custom validator sample implements the `Validate` method to accept two particular username/password pairs as shown in the following code.  
@@ -240,7 +237,7 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
   
  Or you can do the same thing in configuration as follows.  
   
-```  
+```xml  
 <behaviors>  
  <serviceBehaviors>  
   <behavior name="CalculatorServiceBehavior">  
@@ -254,7 +251,6 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
   </behavior>  
  </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The client should successfully call all the methods. Press ENTER in the client window to shut down the client.  
@@ -276,7 +272,6 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into client's trusted certificate store:  

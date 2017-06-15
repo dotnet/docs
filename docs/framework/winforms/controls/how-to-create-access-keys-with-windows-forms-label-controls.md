@@ -2,7 +2,7 @@
 title: "How to: Create Access Keys with Windows Forms Label Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +51,6 @@ Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define a
     Label1.Text = "&Print"  
     Label2.UseMnemonic = True  
     Label2.Text = "&Copy && Paste"  
-  
     ```  
   
     ```csharp  
@@ -59,7 +58,6 @@ Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define a
     label1.Text = "&Print";  
     label2.UseMnemonic = true;  
     label2.Text = "&Copy && Paste";  
-  
     ```  
   
     ```cpp  

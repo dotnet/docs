@@ -1,5 +1,5 @@
 ---
-title: Async Programming in F#
+title: Async Programming in F# | Microsoft Docs
 description: Async Programming in F#
 keywords: .NET, .NET Core
 author: cartermp
@@ -38,7 +38,6 @@ let fetchHtmlAsync url = async {
 
 let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 printfn "%s" html
-
 ```
 
 And that’s it! Aside from the use of `async`, `let!`, and `return`, this is just normal F# code.
@@ -72,7 +71,6 @@ As mentioned earlier, async code is a specification of work to be done in anothe
 
  // you actually have the result from fetchHtmlAsync now!
  printfn "%s" html
-
  ```
 
 2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
@@ -87,17 +85,16 @@ As mentioned earlier, async code is a specification of work to be done in anothe
  let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
 
  // Execution will continue after calling this!
- Async.Run(workflow)
+ Async.Start(workflow)
 
  printfn "%s" "uploadDataAsync is running in the background..."
-
  ```
 
 There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/library/ee370232.aspx).
 
 ### A Note on Threads
 
-The phrase “on another thread” is mentioned above, but it is important to know that **this does not mean that async workflows are a facade for multithreading**. The workflow actually “jumps” between threads, borrowing them for a small amount of time to do useful work. When an async workflow is effectively “waiting” (for example, waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else. This allows async workflows to utilize the system they run on as effectively as possible, and makes them especially strong for high-volume I/O scenarios.
+The phrase "on another thread" is mentioned above, but it is important to know that **this does not mean that async workflows are a facade for multithreading**. The workflow actually "jumps" between threads, borrowing them for a small amount of time to do useful work. When an async workflow is effectively "waiting" (for example, waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else. This allows async workflows to utilize the system they run on as effectively as possible, and makes them especially strong for high-volume I/O scenarios.
 
 ## How to Add Parallelism to Async Code
 
@@ -129,18 +126,17 @@ let htmlList = urlList |> getHtmlList
 // We now have the downloaded HTML for each site!
 for html in htmlList do
     printfn "%s" html
-
 ```
 
 ## Important Info and Advice
 
-*   Append “Async” to the end of any functions you’ll consume
+*   Append "Async" to the end of any functions you’ll consume
 
  Although this is just a naming convention, it does make things like API discoverability easier. Particularly if there are synchronous and asynchronous versions of the same routine, it’s a good idea to explicitly state which is asynchronous via the name.
 
 *   Listen to the compiler!
 
- F#’s compiler is very strict, making it nearly impossible to do something troubling like run “async” code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will most likely execute as expected.
+ F#’s compiler is very strict, making it nearly impossible to do something troubling like run "async" code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will most likely execute as expected.
 
 ## For the C#/VB Programmer Looking Into F# #
 

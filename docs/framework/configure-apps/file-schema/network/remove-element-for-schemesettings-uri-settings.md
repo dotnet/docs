@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for schemeSettings (Uri Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,9 +30,8 @@ Removes a scheme setting for a scheme name.
   
 ## Syntax  
   
-```  
-  
-      <remove   
+```xml  
+      <remove   
    <name = "http|https"/>  
 />  
 ```  
@@ -76,7 +75,7 @@ Removes a scheme setting for a scheme name.
 ## Example  
  The following code example shows a configuration used by the <xref:System.Uri> class that removes any scheme settings for the http scheme.  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <schemeSettings>  

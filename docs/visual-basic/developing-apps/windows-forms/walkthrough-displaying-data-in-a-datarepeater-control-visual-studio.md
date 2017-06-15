@@ -53,7 +53,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
   
 -   Adding data-bound controls.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## Creating a DataRepeater Solution  
  In the first step, you create a project and solution.  

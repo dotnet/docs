@@ -2,7 +2,7 @@
 title: "Creating a Long-running Workflow Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -121,7 +121,7 @@ This topic describes how to create a long-running workflow service. Long running
   
     5.  Drag and drop an **If** activity immediately after the **ReceiveAddItem** activity. This activity acts just like an if statement.  
   
-        1.  Set the **Condition** property to `itemId==”Zune HD” (itemId=”Zune HD” for Visual Basic)`  
+        1.  Set the **Condition** property to `itemId=="Zune HD" (itemId="Zune HD" for Visual Basic)`  
   
         2.  Drag and drop an **Assign** activity in to the **Then** section and another into the **Else** section set the properties of the **Assign** activities as shown in the following illustration.  
   
@@ -142,7 +142,6 @@ This topic describes how to create a long-running workflow service. Long running
     ```xml  
     <sqlWorkflowInstanceStore connectionString="Data Source=your-machine\SQLExpress;Initial Catalog=SQLPersistenceStore;Integrated Security=True;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />  
               <workflowIdle timeToUnload="0"/>  
-  
     ```  
   
     > [!WARNING]
@@ -187,7 +186,6 @@ This topic describes how to create a long-running workflow service. Long running
        string orderResult = addProxy.AddItem(item);  
        Console.WriteLine("Service returned: " + orderResult);  
     }  
-  
     ```  
   
 5.  Build the solution and run the `OrderClient` application. The client will display the following text:  

@@ -2,7 +2,7 @@
 title: "Copying DataSet Contents | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,6 @@ You can create a copy of a <xref:System.Data.DataSet> so that you can work with 
   
 ```vb  
 Dim copyDataSet As DataSet = customerDataSet.Copy()  
-  
 ```  
   
 ```csharp  
@@ -43,7 +42,6 @@ Dim changeDataSet As DataSet = customerDataSet.GetChanges()
 ' Copy only new rows.  
 Dim addedDataSetAs DataSet = _  
     customerDataSet.GetChanges(DataRowState.Added)  
-  
 ```  
   
 ```csharp  
@@ -58,14 +56,13 @@ DataSet addedDataSet= customerDataSet.GetChanges(DataRowState.Added);
  The following code example creates a clone of a **DataSet** and then adds the rows from the original **DataSet** to the **Customers** table in the **DataSet** clone for customers where the **CountryRegion** column has the value "Germany".  
   
 ```vb  
-  
 Dim customerDataSet As New DataSet  
-        customerDataSet.Tables.Add(New DataTable("Customers"))  
-        customerDataSet.Tables("Customers").Columns.Add("Name", GetType(String))  
-        customerDataSet.Tables("Customers").Columns.Add("CountryRegion", GetType(String))  
-        customerDataSet.Tables("Customers").Rows.Add("Juan", "Spain")  
-        customerDataSet.Tables("Customers").Rows.Add("Johann", "Germany")  
-        customerDataSet.Tables("Customers").Rows.Add("John", "UK")  
+        customerDataSet.Tables.Add(New DataTable("Customers"))  
+        customerDataSet.Tables("Customers").Columns.Add("Name", GetType(String))  
+        customerDataSet.Tables("Customers").Columns.Add("CountryRegion", GetType(String))  
+        customerDataSet.Tables("Customers").Rows.Add("Juan", "Spain")  
+        customerDataSet.Tables("Customers").Rows.Add("Johann", "Germany")  
+        customerDataSet.Tables("Customers").Rows.Add("John", "UK")  
   
 Dim germanyCustomers As DataSet = customerDataSet.Clone()  
   
@@ -78,7 +75,6 @@ Dim copyRow As DataRow
 For Each copyRow In copyRows  
   customerTable.ImportRow(copyRow)  
 Next  
-  
 ```  
   
 ```csharp  

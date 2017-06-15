@@ -2,7 +2,7 @@
 title: "How to: Load Files into the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +45,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
               RichTextBoxStreamType.RichText)  
           End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -56,7 +55,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
          richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -76,7 +74,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
   
     ```csharp  
     this.btnOpenFile.Click += new System.EventHandler(this. btnOpenFile_Click);  
-  
     ```  
   
     ```cpp  

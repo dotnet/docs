@@ -27,8 +27,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
   
 ## Syntax  
   
-```  
-  
+```xml  
 <schemaImporterExtensions>  
     <!-- Add types -->  
 </SchemaImporterExtension>  
@@ -49,7 +48,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 ## Example  
  The following code example illustrates how to add types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET Framework types.  
   
-```  
+```xml  
 <system.xml.serialization>  
     <schemaImporterExtensions>  
         <add name = "MobileCapabilities" type =   

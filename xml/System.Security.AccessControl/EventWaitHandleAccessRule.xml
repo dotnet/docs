@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -48,7 +49,7 @@
    
   
 ## Examples  
- The following code example demonstrates the creation and use of <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType>rule.  
+ The following code example demonstrates the creation and use of <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow>rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.EventWaitHandle> object. Examples that attach security objects can be found in <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  
@@ -68,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To wait on an <xref:System.Threading.EventWaitHandle> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an event by calling the <xref:System.Threading.EventWaitHandle.Set%2A> method, or to reset it to the unsignaled state by calling the <xref:System.Threading.EventWaitHandle.Reset%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an <xref:System.Threading.EventWaitHandle> object and then wait on it by calling the <xref:System.Threading.WaitHandle.SignalAndWait%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights> and <xref:System.Security.AccessControl.EventWaitHandleRights> access.  
+ To wait on an <xref:System.Threading.EventWaitHandle> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an event by calling the <xref:System.Threading.EventWaitHandle.Set%2A> method, or to reset it to the unsignaled state by calling the <xref:System.Threading.EventWaitHandle.Reset%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an <xref:System.Threading.EventWaitHandle> object and then wait on it by calling the <xref:System.Threading.WaitHandle.SignalAndWait%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize> and <xref:System.Security.AccessControl.EventWaitHandleRights.Modify> access.  
   
  ]]></format>
         </remarks>
@@ -116,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,14 +139,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To wait on an <xref:System.Threading.EventWaitHandle> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an event by calling the <xref:System.Threading.EventWaitHandle.Set%2A> method, or to reset it to the unsignaled state by calling the <xref:System.Threading.EventWaitHandle.Reset%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an <xref:System.Threading.EventWaitHandle> object and then wait on it by calling the <xref:System.Threading.WaitHandle.SignalAndWait%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights> and <xref:System.Security.AccessControl.EventWaitHandleRights> access.  
+ To wait on an <xref:System.Threading.EventWaitHandle> (by calling the <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A> or <xref:System.Threading.WaitHandle.WaitAll%2A> method), a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an event by calling the <xref:System.Threading.EventWaitHandle.Set%2A> method, or to reset it to the unsignaled state by calling the <xref:System.Threading.EventWaitHandle.Reset%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights?displayProperty=fullName> access. To signal an <xref:System.Threading.EventWaitHandle> object and then wait on it by calling the <xref:System.Threading.WaitHandle.SignalAndWait%2A> method, a user must have <xref:System.Security.AccessControl.EventWaitHandleRights.Synchronize> and <xref:System.Security.AccessControl.EventWaitHandleRights.Modify> access.  
   
  This constructor is equivalent to creating an <xref:System.Security.Principal.NTAccount> object, by passing `identity` to the <xref:System.Security.Principal.NTAccount.%23ctor%28System.String%29?displayProperty=fullName> constructor, and passing the newly created <xref:System.Security.Principal.NTAccount> object to the <xref:System.Security.AccessControl.EventWaitHandleAccessRule.%23ctor%28System.Security.Principal.IdentityReference%2CSystem.Security.AccessControl.EventWaitHandleRights%2CSystem.Security.AccessControl.AccessControlType%29> constructor.  
   
    
   
 ## Examples  
- The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType>rule.  
+ The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.EventWaitHandleAccessRule> objects. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow>rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.EventWaitHandle> object. Examples that attach security objects can be found in <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  
@@ -181,6 +184,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -202,7 +206,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights%2A> property to display the rights in the set of rules contained in an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType>rule.  
+ The following code example demonstrates the use of the <xref:System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights%2A> property to display the rights in the set of rules contained in an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object. The example creates an <xref:System.Security.AccessControl.EventWaitHandleSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow>rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.EventWaitHandle> object. Examples that attach security objects can be found in <xref:System.Threading.EventWaitHandle.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.EventWaitHandle.SetAccessControl%2A?displayProperty=fullName>.  

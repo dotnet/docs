@@ -27,7 +27,7 @@ One way to increase the capacity of [!INCLUDE[indigo1](../../../includes/indigo1
   
  By default, the <xref:System.ServiceModel.BasicHttpBinding> sends a connection HTTP header in messages with a `Keep-Alive` value, which enables clients to establish persistent connections to the services that support them. This configuration offers enhanced throughput because previously established connections can be reused to send subsequent messages to the same server. However, connection reuse may cause clients to become strongly associated to a specific server within the load-balanced farm, which reduces the effectiveness of round-robin load balancing. If this behavior is undesirable, HTTP `Keep-Alive` can be disabled on the server using the <xref:System.ServiceModel.Channels.HttpTransportBindingElement.KeepAliveEnabled%2A> property with a <xref:System.ServiceModel.Channels.CustomBinding> or user-defined <xref:System.ServiceModel.Channels.Binding>. The following example shows how to do this using configuration.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   
@@ -69,7 +69,7 @@ One way to increase the capacity of [!INCLUDE[indigo1](../../../includes/indigo1
 <configuration>  
  <system.serviceModel>  
     <protocolMapping>  
-      <add scheme=”http” binding=”customBinding” />  
+      <add scheme="http" binding="customBinding" />  
     </protocolMapping>  
     <bindings>  
       <customBinding>  
@@ -95,7 +95,7 @@ One way to increase the capacity of [!INCLUDE[indigo1](../../../includes/indigo1
 ## Load Balancing the Net.TCP Binding  
  The <xref:System.ServiceModel.NetTcpBinding> can be load balanced using IP-layer load balancing techniques. However, the <xref:System.ServiceModel.NetTcpBinding> pools TCP connections by default to reduce connection latency. This is an optimization that interferes with the basic mechanism of load balancing. The primary configuration value for optimizing the <xref:System.ServiceModel.NetTcpBinding> is the lease timeout, which is part of the Connection Pool Settings. Connection pooling causes client connections to become associated to specific servers within the farm. As the lifetime of those connections increase (a factor controlled by the lease timeout setting), the load distribution across various servers in the farm becomes unbalanced. As a result the average call time increases. So when using the <xref:System.ServiceModel.NetTcpBinding> in load-balanced scenarios, consider reducing the default lease timeout used by the binding. A 30-second lease timeout is a reasonable starting point for load-balanced scenarios, although the optimal value is application-dependent. For more information about the channel lease timeout and other transport quotas, see [Transport Quotas](../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   
- For best performance in load-balanced scenarios, consider using <xref:System.ServiceModel.NetTcpSecurity> (either <xref:System.ServiceModel.SecurityMode> or <xref:System.ServiceModel.SecurityMode>).  
+ For best performance in load-balanced scenarios, consider using <xref:System.ServiceModel.NetTcpSecurity> (either <xref:System.ServiceModel.SecurityMode.Transport> or <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>).  
   
 ## See Also  
  [Internet Information Services Hosting Best Practices](../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)

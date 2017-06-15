@@ -262,7 +262,7 @@
       <Docs>
         <summary>When overridden in a derived class, gets a value that indicates whether the browser supports page content that follows WML <see langword="select" /> or <see langword="input" /> elements.</summary>
         <value>
-          <see langword="true" /> if the browser supports page content that follows HTML <see langword="select " />or <see langword="input " />elements; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the browser supports page content that follows HTML <see langword="select" /> or <see langword="input" /> elements; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
@@ -507,12 +507,10 @@
         <value>
           <see langword="true" /> if the browser can support cookies; otherwise, <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether cookies are currently enabled in the browser, only whether the browser can support cookies.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
@@ -939,12 +937,10 @@
         <value>
           <see langword="true" /> if the browser supports Java; otherwise, <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether Java is currently enabled in the browser, only whether the browser can support Java.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>
@@ -1946,7 +1942,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="div " />elements.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="div" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="nowrap" /> HTML <see langword="div" /> elements; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -2026,7 +2022,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports the <see langword="size" /> attribute of HTML <see langword="font " />elements.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports the <see langword="size" /> attribute of HTML <see langword="font" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="size" /> attribute of HTML <see langword="font" /> elements; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -2106,7 +2102,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports the <see langword="mode" /> attribute of HTML <see langword="input " />elements.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the browser supports the <see langword="mode" /> attribute of HTML <see langword="input" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="mode" /> attribute of HTML <see langword="input" /> elements; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -2368,12 +2364,10 @@
         <value>
           <see langword="true" /> if the browser supports VBScript; otherwise, <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether VBScript is currently enabled in the browser, only whether the browser can support VBScript.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotImplementedException">Always.</exception>
       </Docs>

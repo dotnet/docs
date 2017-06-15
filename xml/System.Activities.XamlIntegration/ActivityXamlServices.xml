@@ -15,6 +15,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateBuilderReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Maps an <see langword="x:Class" /> activity tree to an <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload is used for design-time scenarios.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateBuilderReader">
       <MemberSignature Language="C#" Value="public static System.Xaml.XamlReader CreateBuilderReader (System.Xaml.XamlReader innerReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xaml.XamlReader CreateBuilderReader(class System.Xaml.XamlReader innerReader) cil managed" />
@@ -137,6 +154,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Maps an <see langword="x:Class" /> activity tree to an <see cref="T:System.Activities.DynamicActivity" /> or <see cref="T:System.Activities.DynamicActivity`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload is used for run-time scenarios.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateReader">
       <MemberSignature Language="C#" Value="public static System.Xaml.XamlReader CreateReader (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xaml.XamlReader CreateReader(class System.IO.Stream stream) cil managed" />
@@ -463,39 +497,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateBuilderReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Maps an <see langword="x:Class" /> activity tree to an <see cref="T:System.Activities.ActivityBuilder" /> or <see cref="T:System.Activities.ActivityBuilder`1" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload is used for design-time scenarios.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Maps an <see langword="x:Class" /> activity tree to an <see cref="T:System.Activities.DynamicActivity" /> or <see cref="T:System.Activities.DynamicActivity`1" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overload is used for run-time scenarios.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

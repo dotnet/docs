@@ -20,5 +20,5 @@ The many individual components of your application should also incorporate healt
 
 
 >[!div class="step-by-step"]
-[Previous] (../tackling-business-complexity-in-a-microservice-with-ddd-and-cqrs-patterns/implementing-the-microservice-application-layer-using-the-web-api.md)
+[Previous] (../microservice-ddd-and-cqrs-patterns/microservice-application-layer-implementation-with-web-api.md)
 [Next] (handling-partial-failure.md)

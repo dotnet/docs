@@ -248,4 +248,4 @@ The JWT bearer authentication middleware can also support more advanced scenario
 
 >[!div class="step-by-step"]
 [Previous] (../implementing-resilient-applications/health-monitoring.md)
-[Next] (about-authorization-in-net-microservices-and-web-applications.md)
+[Next] (authorization-net-microservices-and-web-applications.md)

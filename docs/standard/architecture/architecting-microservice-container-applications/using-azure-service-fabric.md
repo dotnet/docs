@@ -86,4 +86,4 @@ Note that Docker containers are themselves stateless. If you want to implement a
 
 >[!div class="step-by-step"]
 [Previous] (scalable-available-multi-container-microservice-applications.md)
-[Next] (../development-process-for-docker-based-applications/index.md)
+[Next] (../docker-application-development-process/index.md)

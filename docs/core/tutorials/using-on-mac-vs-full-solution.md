@@ -24,17 +24,11 @@ This tutorial shows you how to create an application that accepts a search word 
 
 ## Prerequisites
 
-[.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
+- OpenSSL (if running .NET Core 1.1): See the [Prerequisites for .NET Core on Mac](../macos-prerequisites.md) topic.
+- [.NET Core (SDK 1.1 or later)](https://www.microsoft.com/net/core#macos)
+- [Visual Studio 2017 for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md).
-
-## Getting started
-
-If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Building a library](#building-a-library). Follow these steps to install the prerequisites and Visual Studio for Mac:
-
-1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
-
-1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md). For the full system requirements of Visual Studio 2017 for Mac, see [Visual Studio 2017 for Mac Product Family System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-mac).
 
 ## Building a library
 
@@ -50,7 +44,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    [!code-csharp[Main](../../../samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter/TextUtils/WordCount.cs)]
 
-1. Save the file by using using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File** > **Save** from the menu, or right-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
+1. Save the file by using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File** > **Save** from the menu, or right-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
 
    ![IDE window showing the TextUtils class library, the WordCount class file, the static class WordCount, and the GetWordCount method](./media/using-on-mac-vs-full-solution/vsmacfull03.png)
 
@@ -66,7 +60,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 ## Creating a test project
 
-Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is [xUnit](https://xunit.github.io/).
+Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is [xUnit (version 2.2.0 or later)](https://xunit.github.io/), which is installed automatically when the xUnit test project is added to the solution in the following steps.
 
 1. In the **Solution** sidebar, right-click the `WordCounter` solution and select **Add** > **Add New Project**.
 
@@ -108,7 +102,7 @@ Unit tests provide automated software testing during your development and publis
    }
    ```
 
-   The following image shows the IDE with the unit test code in place. Pay attention to the `Assert.NotEquals` statement.
+   The following image shows the IDE with the unit test code in place. Pay attention to the `Assert.NotEqual` statement.
 
    ![Initial unit test to check GetWordCount in the IDE main window](./media/using-on-mac-vs-full-solution/vsmacfull08.png)
 
@@ -122,7 +116,7 @@ Unit tests provide automated software testing during your development and publis
 
 ![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
 
-1. Click the **Run All** buttton.
+1. Click the **Run All** button.
    
    The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good.
 
@@ -145,7 +139,7 @@ Unit tests provide automated software testing during your development and publis
                                        string searchWord, 
                                        string inputString)
    {
-       Assert.Equal(count, WordCount.GetWordCount(searchWord,
+       Assert.NotEqual(count, WordCount.GetWordCount(searchWord,
                                                   inputString));
    }
    ```
@@ -196,7 +190,6 @@ Unit tests provide automated software testing during your development and publis
 
    ![The search word count is changed to a value of 999 in the app's output](./media/using-on-mac-vs-full-solution/vsmacfull19.png)
 
-## Next steps
+## See also
 
-* Explore additional features of Visual Studio for Mac in an [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/) at the Xamarin Developer's website.
-* For a more in depth review of Visual Studio for Mac's features, refer to the [Xamarin Studio Tour](https://developer.xamarin.com/guides/cross-platform/xamarin-studio/ide-tour/) guide.
+[Visual Studio 2017 for Mac Release Notes](https://www.visualstudio.com/news/releasenotes/vs2017-mac-relnotes) at the Xamarin Developer's website.

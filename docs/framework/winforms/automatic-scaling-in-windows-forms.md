@@ -92,7 +92,7 @@ Windows Forms now uses the following logic to automatically scale forms and thei
 
 4. <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A> is also automatically invoked in the following situations:
 
-    - In response to the <xref:System.Windows.Forms.Control.OnFontChanged%2A> event if the scaling mode is <xref:System.Windows.Forms.AutoScaleMode>.
+    - In response to the <xref:System.Windows.Forms.Control.OnFontChanged%2A> event if the scaling mode is <xref:System.Windows.Forms.AutoScaleMode.Font>.
   
     - When the layout of the container control resumes and a change is detected in the <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> or <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> properties.
   

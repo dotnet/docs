@@ -28,5 +28,5 @@ You might find a scenario where you want multiple processes running in a single 
 
 
 >[!div class="step-by-step"]
-[Previous] (../choosing-between-net-core-and-net-framework-for-docker-containers/official-net-docker-images.md)
+[Previous] (../net-core-and-net-framework-containers/official-net-docker-images.md)
 [Next] (containerizing-monolithic-applications.md)

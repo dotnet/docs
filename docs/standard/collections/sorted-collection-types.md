@@ -40,7 +40,7 @@ The <xref:System.Collections.SortedList?displayProperty=fullName> class, the <xr
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |The properties that return keys and values are indexed, allowing efficient indexed retrieval.|No indexed retrieval.|  
 |Retrieval is O(log `n`).|Retrieval is O(log `n`).|  
-|Insertion and removal are generally O(`n`); however, insertion is O(1) for data that are already in sort order, so that each element is added to the end of the list. (This assumes that a resize is not required.)|Insertion and removal are O(log `n`).|  
+|Insertion and removal are generally O(`n`); however, insertion is O(log `n`) for data that are already in sort order, so that each element is added to the end of the list. (This assumes that a resize is not required.)|Insertion and removal are O(log `n`).|  
 |Uses less memory than a <xref:System.Collections.Generic.SortedDictionary%602>.|Uses more memory than the <xref:System.Collections.SortedList> nongeneric class and the <xref:System.Collections.Generic.SortedList%602> generic class.|  
   
  For sorted lists or dictionaries that must be accessible concurrently from multiple threads, you can add sorting logic to a class that derives from <xref:System.Collections.Concurrent.ConcurrentDictionary%602>.  

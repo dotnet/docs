@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains methods used when configuring a <see cref="PartConventionBuilder{T}"/>.</summary>
+    <summary>Represents a helper type that is used when configuring a <see cref="T:System.Composition.Convention.PartConventionBuilder`1"/>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -41,8 +41,8 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">The type of the parameter.</typeparam>
-        <summary>Specifies an import with a contract of type <typeparamref name="T"/>.</summary>
+        <typeparam name="T">The type to import.</typeparam>
+        <summary>Imports the specified type.</summary>
         <returns>The imported instance.</returns>
         <remarks></remarks>
       </Docs>
@@ -67,9 +67,9 @@
         <Parameter Name="configure" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the parameter.</typeparam>
-        <param name="configure">Configuration for the import.</param>
-        <summary>Specifies an import with a contract of type <typeparamref name="T"/>.</summary>
+        <typeparam name="T">The type to import.</typeparam>
+        <param name="configure">The configuration for the import.</param>
+        <summary>Imports the specified generic type by using the specified configuration.</summary>
         <returns>The imported instance.</returns>
         <remarks></remarks>
       </Docs>

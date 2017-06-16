@@ -15,8 +15,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the part, or a type to which the part is assignable.</typeparam>
-    <summary>Configures a type as a Managed Extensibility Framework (MEF) part.</summary>
+    <typeparam name="T">The type of the part.</typeparam>
+    <summary>Configures a type as a Managed Extensibility Framework (MEF) part, with strongly typed return values.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -37,9 +37,9 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <summary>Selects a property on the part to export.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <summary>Exports a specified property.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -61,10 +61,10 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <param name="exportConfiguration">The action to configure the selected property.</param>
-        <summary>Selects a property on the part to export.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <param name="exportConfiguration">An action that configures the exported property.</param>
+        <summary>Exports a specified property with the specified configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
         <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression"/> for accessing a property.</exception>
       </Docs>
@@ -89,10 +89,10 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">The contract type to export.</typeparam>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <summary>Selects a property to export from the part.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <summary>Exports a specified property as a specified contract type.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
         <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression"/> for accessing a property.</exception>
       </Docs>
@@ -118,11 +118,11 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">The contract type to export.</typeparam>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the matching property.</param>
-        <param name="exportConfiguration">The action to configure the selected properties.</param>
-        <summary>Selects a property to export from the part.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <param name="exportConfiguration">An action that configures the exported property.</param>
+        <summary>Exports a specified property as a specified contract type by using the specified configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -143,9 +143,9 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <summary>Selects a property on the part to import.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <summary>Imports a specified property.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -167,10 +167,10 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <param name="importConfiguration">The action configuring the imported property.</param>
-        <summary>Selects a property on the part to import.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <param name="importConfiguration">An action that configures the imported property.</param>
+        <summary>Imports a specified property by using the specified configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
         <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression"/> for accessing a property.</exception>
       </Docs>
@@ -195,10 +195,10 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">The contract type to import.</typeparam>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <summary>Selects a property on the part to import.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <summary>Imports a specified property with the specified contract type.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -223,11 +223,11 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">The contract type to import.</typeparam>
-        <param name="propertySelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the property.</param>
-        <param name="importConfiguration">The action configuring the imported property.</param>
-        <summary>Selects a property on the part to import.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <param name="importConfiguration">An action that configures the imported property.</param>
+        <summary>Imports a specified property with the specified contract type and configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
         <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression"/> for accessing a property.</exception>
       </Docs>
@@ -249,9 +249,9 @@
         <Parameter Name="methodSelector" Type="System.Linq.Expressions.Expression&lt;System.Action&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="methodSelector">The <see cref="T:System.Linq.Expressions.Expression"/> that selects the method.</param>
-        <summary>Marks the part as being shared within the entire composition.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <param name="methodSelector">An action that selects the method to call.</param>
+        <summary>Selects a method to be called when composition is complete.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
         <remarks></remarks>
         <exception cref="T:System.Argument">The <paramref name="methodSelector" /> expression must be a <see langword="void" /> method with no arguments.</exception>
       </Docs>
@@ -273,9 +273,9 @@
         <Parameter Name="constructorSelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Composition.Convention.ParameterImportConventionBuilder,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorSelector">An <see cref="T:System.Linq.Expressions.Expression"/> that selects a single constructor.</param>
-        <summary>Selects which constructor is used to instantiate the part.</summary>
-        <returns>A part builder allowing further configuration of the part.</returns>
+        <param name="constructorSelector">A function that selects a constructor.</param>
+        <summary>Selects a constructor to be used in composition.</summary>
+        <returns>An object that can be used to further configure the part. </returns>
         <remarks></remarks>
         <exception cref="T:System.Argument">The <paramref name="constructorSelector" /> expression must use the <see langword="new" /> operator.</exception>
       </Docs>

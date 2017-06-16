@@ -31,10 +31,7 @@
 ## Remarks  
  This class supports access to unmanaged memory using the existing stream-based model and does not require that the contents in the unmanaged memory be copied to the heap.  
   
-> [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
-  
-   
+[!INCLUDE[note_unnecessary_dispose](~/includes/note-unnecessary-dispose.md)]
   
 ## Examples  
  The following code example demonstrates how to read from and write to unmanaged memory using the <xref:System.IO.UnmanagedMemoryStream> class.  A block of unmanaged memory is allocated and de-allocated using the <xref:System.Runtime.InteropServices.Marshal> class.  

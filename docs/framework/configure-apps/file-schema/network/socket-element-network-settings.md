@@ -98,7 +98,7 @@ Specifies whether socket operations use completion ports.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example shows how to specify that completion ports should be used and that the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName> should be unrestricted.  
+ The following example shows how to specify that completion ports should be used and that the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName> should be unrestricted.  
   
 ```xml  
 <configuration>  

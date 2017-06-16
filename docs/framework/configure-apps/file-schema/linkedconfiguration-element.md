@@ -44,17 +44,21 @@ Specifies a configuration file to include.
 <linkedConfiguration href="URL of linked configuration file" />
 ```
 
-## Attributes
+## Attribute
 
-| Attribute | Description |
+|           | Description |
 | --------- | ----------- |
 | **href**  | Required attribute.<br><br>The URL of the configuration file to include. The only format supported for the **href** attribute is `file://`. Local files and UNC files are supported. |
 
-## Parent elements
+## Parent element
 
-| Element | Description |
-| ------- | ------------|
+|     | Description |
+| --- | ----------- |
 | [**\<assemblyBinding>** Element](~/docs/framework/configure-apps/file-schema/assemblybinding-element-for-configuration.md) | Specifies assembly binding policy at the configuration level. |
+
+## Child elements
+
+None
 
 ## Remarks
 
@@ -79,7 +83,7 @@ The following rules govern the use of linked configuration files:
 
 ## Example
 
-The following code example shows how to include configuration file from the local hard disk:
+The following example shows how to include configuration file from the local hard disk:
 
 ```xml
 <configuration>

@@ -85,7 +85,7 @@ Controls the caching mechanism for network requests.
 |[system.net](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Example  
- The following code example shows how to disable all caching.  
+ The following example shows how to disable all caching.  
   
 ```xml  
 <configuration>  

@@ -71,7 +71,7 @@ Removes an authentication module from the application.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example removes an authentication module.  
+ The following example removes an authentication module.  
   
 ```xml  
 <configuration>  

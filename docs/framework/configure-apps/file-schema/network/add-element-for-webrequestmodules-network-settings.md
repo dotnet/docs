@@ -77,7 +77,7 @@ Adds a custom Web request module to the application.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example registers a custom Web request module for HTTP. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
+ The following example registers a custom Web request module for HTTP. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
   
 ```xml  
 <configuration>  

@@ -39,6 +39,7 @@ author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
 ---
+
 # Configuration file schema for the .NET Framework
 
 Configuration files are standard XML files that you can use to change settings and set policies for your apps. The .NET Framework configuration schema consists of elements that you can use in configuration files to control the behavior of your apps. The table of contents for this section reflects the schema hierarchy for startup, runtime, network, and other types of configuration settings.
@@ -84,7 +85,7 @@ Describes the elements that specify compiler configuration for available languag
 Describes the elements that enable a Windows Forms or ASP.NET application to store and retrieve application-scoped and user-scoped settings.
 
 [App Settings Schema](~/docs/framework/configure-apps/file-schema/appsettings/index.md)
-Contains custom application settings, such as file paths, XML Web service URLs, or any information that is stored in the *.ini* file for an application.
+Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application.
 
 [Web Settings Schema](~/docs/framework/configure-apps/file-schema/web/index.md)
 All elements in the Web settings schema, which includes elements for configuring how ASP.NET works with a host application such as IIS. Used in *Aspnet.config* files.

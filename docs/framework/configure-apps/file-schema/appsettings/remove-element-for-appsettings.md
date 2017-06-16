@@ -37,21 +37,25 @@ Removes custom application settings.
 </appSettings>
 ```
 
-### Attributes
+### Attribute
 
-| Attribute | Description |
-| --------- | ----------- |
-| **key**   | Required attribute.<br><br>Specifies the name of the key to remove. |
-
-### Parent elements
-
-| Element | Description |
+|         | Description |
 | ------- | ----------- |
-| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any information that is stored in the *.ini* file for an application. |
+| **key** | Required attribute.<br><br>Specifies the name of the key to remove. |
+
+### Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
+
+## Child elements
+
+None
 
 ## Example
 
-The following code example shows how to remove a custom configuration setting for `ApplicationName`:
+The following example shows how to remove a custom configuration setting for `ApplicationName`:
 
 ```xml
 <appSettings>

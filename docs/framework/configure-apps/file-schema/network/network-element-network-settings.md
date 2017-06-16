@@ -100,7 +100,7 @@ userName="string"
  The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=fullName> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.  
   
 ## Example  
- The following code example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
   
 ```xml  
 <configuration>  

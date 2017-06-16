@@ -35,11 +35,21 @@ Removes a previously defined setting.
 <add remove="key" />
 ```
 
-## Attributes
+## Attribute
 
-| Attribute | Description |
+|           | Description |
 | --------- | ----------- |
 | **key**   | Required attribute.<br><br>Specifies the name of the setting to remove. |
+
+## Parent element
+
+| Element | Description |
+| ------- | ------------|
+| [**\<sectionName>** Element](~/docs/framework/configure-apps/file-schema/custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+
+## Child elements
+
+None
 
 ## Remarks
 

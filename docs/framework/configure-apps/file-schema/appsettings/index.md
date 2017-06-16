@@ -23,7 +23,7 @@ manager: "wpickett"
 
 # App Settings schema
 
-Contains custom application settings, such as file paths, XML Web service URLs, or any information that is stored in the *.ini* file for an application.
+Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;[**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md)   

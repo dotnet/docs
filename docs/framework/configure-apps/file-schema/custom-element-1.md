@@ -22,28 +22,38 @@ manager: "wpickett"
 
 # Custom element for SingleTagSectionHandler
 
-Defines settings for custom configuration sections that use the <xref:System.Configuration.SingleTagSectionHandler> class.
+Defines settings in a custom configuration section that is defined by a <section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;**\<sectionName>**
+&nbsp;&nbsp;*\<sectionName>*
 
 ## Syntax
 
 ```xml
-<sectionName key="value" key2="value2" />
+<sectionName key="value" key2="value2" ... />
 ```
 
 ## Attributes
 
-Attributes are user defined.
+Attributes and attribute values are user defined.
+
+## Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+
+## Child elements
+
+None
 
 ## Remarks
 
-The **\<sectionName>** element is a custom element defined by a [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) tag in the [**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.ConfigurationSettings.GetConfig%2A>.
+The **\<sectionName>** element is a custom element defined by a [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) tag in the [**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.ConfigurationManager.GetSection?displayProperty=fullName>.
 
 ## Example
 
-The following example declares a custom element called **\<sampleSection>**, which contains settings read by the <xref:System.Configuration.SingleTagSectionHandler> class:
+The following example declares a custom element called **\<sampleSection>** that contains settings read by the <xref:System.Configuration.SingleTagSectionHandler> class:
 
 ```xml
 <configuration>

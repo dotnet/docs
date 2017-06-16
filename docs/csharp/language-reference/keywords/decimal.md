@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # decimal (C# Reference)
-The `decimal` keyword indicates a 128-bit data type. Compared to floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
+The `decimal` keyword indicates a 128-bit data type. Compared to other floating-point types, the `decimal` type has more precision and a smaller range, which makes it appropriate for financial and monetary calculations. The approximate range and precision for the `decimal` type are shown in the following table.  
   
 |Type|Approximate Range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
@@ -54,7 +54,7 @@ decimal myMoney = 300.5m;
 decimal myMoney = 300;  
 ```  
   
- There is no implicit conversion between floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
+ There is no implicit conversion between other floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
   
 ```csharp
 decimal myMoney = 99.9m;  
@@ -62,7 +62,7 @@ double x = (double)myMoney;
 myMoney = (decimal)x;  
 ```  
   
- You can also mix `decimal` and numeric integral types in the same expression. However, mixing `decimal` and floating-point types without a cast causes a compilation error.  
+ You can also mix `decimal` and numeric integral types in the same expression. However, mixing `decimal` and other floating-point types without a cast causes a compilation error.  
   
  For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).  
   

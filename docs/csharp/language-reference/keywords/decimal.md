@@ -36,12 +36,12 @@ The `decimal` keyword indicates a 128-bit data type. Compared to floating-point 
   
 |Type|Approximate Range|Precision|.NET Framework type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0 to 28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
+|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=fullName>|  
   
 ## Literals  
  If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:  
   
-```  
+```csharp
 decimal myMoney = 300.5m;  
 ```  
   
@@ -50,14 +50,14 @@ decimal myMoney = 300.5m;
 ## Conversions  
  The integral types are implicitly converted to `decimal` and the result evaluates to `decimal`. Therefore you can initialize a decimal variable using an integer literal, without the suffix, as follows:  
   
-```  
+```csharp
 decimal myMoney = 300;  
 ```  
   
  There is no implicit conversion between floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
   
-```  
-      decimal myMoney = 99.9m;  
+```csharp
+decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
 ```  

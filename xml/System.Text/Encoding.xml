@@ -3861,7 +3861,13 @@ The goal is to save this file, then open and decode it as a binary stream.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.Encoding.RegisterProvider%2A> method allows you to register a class derived from <xref:System.Text.EncodingProvider> that makes character encodings available on a platform that does not otherwise support them. Once the encoding provider is registered, the encodings that it supports can be retrieved by calling any <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> overload.  
+ The <xref:System.Text.Encoding.RegisterProvider%2A> method allows you to register a class derived from <xref:System.Text.EncodingProvider> that makes character encodings available on a platform that does not otherwise support them. Once the encoding provider is registered, the encodings that it supports can be retrieved by calling any <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> overload. If there are multiple encoding providers, the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=fullName> method attempts to retrieve a specified encoding from each provider starting with the one most recently registered.
+
+Registering an encoding provider by using the <xref:System.Text.Encoding.RegisterProvider%2A> method also modifies the behavior of the [Encoding.GetEncoding(Int32)](<xref:System.Text.Encoding.GetEncoding(System.Int32)>) and [EncodingProvider.GetEncoding(Int32, EncoderFallback, DecoderFallback)](xref:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)) methods when passed an argument of `0`:
+
+- If the registered provider is the <xref:System.Text.CodePagesEncodingProvider>, the method returns the encoding that matches the system ANSI code page when running on the Windows operating system.
+
+- A custom encoding provider can choose which encoding to return when either of these <xref:Encoding.GetEncoding%2A> method overloads is passed an argument of `0`. The provider can also choose to not return an encoding by having the <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=fullName> method return `null`. 
   
  [!INCLUDE[net_v46](~/includes/net-v46-md.md)] includes one encoding provider, <xref:System.Text.CodePagesEncodingProvider>, that makes the encodings available that are present in the full .NET Framework but are not available in [!INCLUDE[net_v46](~/includes/net-v46-md.md)]. By default, [!INCLUDE[net_v46](~/includes/net-v46-md.md)] only supports the Unicode encodings, ASCII, and code page 28591.  
   

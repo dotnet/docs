@@ -40,4 +40,4 @@
 ## [-> Operator](dereference-operator.md)
 ## [?? Operator](null-conditional-operator.md)
 ## [=> Operator](lambda-operator.md)
-## [Null-conditional Operators (C# and Visual Basic)](null-conditional-operators.md)
+## [Null-conditional Operators](null-conditional-operators.md)

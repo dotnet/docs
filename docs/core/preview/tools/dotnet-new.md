@@ -75,9 +75,9 @@ Forces content generation even if changes existing files.
 
 Shows help information. Invoke for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`, which shows template-specific options.
 
-`-i|--install`
+`-i|--install <PATH|NUGET_ID>`
 
-Installs a source or template pack.
+Installs a source or template pack from the `PATH` provided. For information on creating custom templates, see [Create custom templates for dotnet new](custom-templates.md).
 
 `-l|--list`
 
@@ -99,9 +99,9 @@ Location to place the generated output. The default is the current directory.
 
 Filters templates based on available types. Predifined values are `project`, `item`, or `other`.
 
-`-u|--uninstall`
+`-u|--uninstall <PATH|NUGET_ID>`
 
-Uninstalls a source or template pack.
+Uninstalls a source or template pack at the `PATH|NUGET_ID` provided.
 
 ## Template options
 
@@ -150,3 +150,7 @@ Create a new xUnit app targeting .NET Core 1.1:
 List all templates available for MVC:
 
 `dotnet new mvc -l`
+
+## See also
+
+[Create custom templates for dotnet new](custom-templates.md)

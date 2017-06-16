@@ -73,7 +73,7 @@ Customizes Web request parameters.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example shows how to specify a larger than normal maximum header length.  
+ The following example shows how to specify a larger than normal maximum header length.  
   
 ```xml  
 <configuration>  

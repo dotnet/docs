@@ -35,13 +35,27 @@ Clears all previously defined settings in a section.
 <clear />
 ```
 
+## Attributes
+
+None
+
+## Parent element
+
+|     | Description |
+| --- | ------------|
+| [**\<sectionName>** Element](~/docs/framework/configure-apps/file-schema/custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+
+## Child elements
+
+None
+
 ## Remarks
 
 You can use the **\<clear>** element to remove all settings from your application that were defined at a higher level in the configuration file hierarchy.
 
 ## Example
 
-The following example shows how to use the **\<clear>** element in an application configuration file to clear sections previously defined in the machine configuration file.
+This example defines a machine configuration file and an application configuration file and shows how to use the **\<clear>** element in an application configuration file to clear sections previously defined in the machine configuration file.
 
 The following machine configuration file code declares the section **\<mySection>**:
 

@@ -67,7 +67,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example shows how to enable IPv6 support for the <xref:System.Net.Dns> class.  
+ The following example shows how to enable IPv6 support for the <xref:System.Net.Dns> class.  
   
 ```xml  
 <configuration>  

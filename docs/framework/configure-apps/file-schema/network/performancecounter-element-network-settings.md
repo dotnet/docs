@@ -70,7 +70,7 @@ Enables or disables networking performance counters.
  The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=fullName> property can be used to get the current value of the **enabled** attribute from applicable configuration files.  
   
 ## Example  
- The following code example shows how to configure the <xref:System.Net> and related namespaces to enable networking performance counters.  
+ The following example shows how to configure the <xref:System.Net> and related namespaces to enable networking performance counters.  
   
 ```xml  
 <configuration>  

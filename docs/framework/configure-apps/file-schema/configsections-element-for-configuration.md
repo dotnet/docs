@@ -28,10 +28,20 @@ Contains configuration section and namespace declarations.
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;**\<configSections>**
 
+## Attributes
+
+None
+
+## Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+
 ## Child elements
 
-| Element | Description |
-| ------- | ----------- |
+|     | Description |
+| --- | ----------- |
 | [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) | Contains a configuration section declaration. |
 | [**\<sectionGroup>**](~/docs/framework/configure-apps/file-schema/sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
 | [**\<remove>**](~/docs/framework/configure-apps/file-schema/remove-element-for-configsections.md) | Removes a predefined section or section group. |

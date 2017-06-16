@@ -23,7 +23,7 @@ manager: "wpickett"
 
 # \<add> element for \<appSettings>
 
-Adds custom application settings.
+Adds a custom application setting.
 
 [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
 &nbsp;&nbsp;[**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md)   
@@ -39,20 +39,24 @@ Adds custom application settings.
 
 ## Attributes
 
-| Attribute | Description |
+|           | Description |
 | --------- | ----------- |
 | **key**   | Required attribute.<br><br>Specifies the name of the key to add. |
 | **value** | Required attribute.<br><br>Specifies the value of the key to add. |
 
-## Parent elements
+## Parent element
 
-| Element | Description |
-| ------- | ----------- |
-| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any information that is stored in the *.ini* file for an application. |
+|     | Description |
+| --- | ----------- |
+| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
+
+## Child elements
+
+None
 
 ## Example
 
-The following code example shows how to add a custom configuration setting for the application's name:
+The following example shows how to add a custom configuration setting for the application's name:
 
 ```xml
 <appSettings>

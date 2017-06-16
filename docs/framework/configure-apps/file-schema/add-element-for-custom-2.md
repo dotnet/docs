@@ -42,6 +42,16 @@ Adds custom application settings. Each **\<add>** tag contains a key/value pair.
 | **key**   | Required attribute.<br><br>Specifies the name of the setting. |
 | **value** | Required attribute.<br><br>Specifies the value of the setting. |
 
+## Parent element
+
+| Element | Description |
+| ------- | ------------|
+| [**\<sectionName>** Element](~/docs/framework/configure-apps/file-schema/custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+
+## Child elements
+
+None
+
 ## Example
 
 The following example shows how to define a custom configuration section and use the **\<add>** element to put settings into the section:

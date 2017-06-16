@@ -37,15 +37,23 @@ Clears custom application settings.
 </appSettings>
 ```
 
-## Parent elements
+## Attributes
 
-| Element | Description |
-| ------- | ----------- |
-| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any information that is stored in the *.ini* file for an application. |
+None
+
+## Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom application configuration information. |
+
+## Child elements
+
+None
 
 ## Example
 
-The following code example shows how to clear custom configuration settings:
+The following example shows how to clear custom configuration settings:
 
 ```xml
 <appSettings>

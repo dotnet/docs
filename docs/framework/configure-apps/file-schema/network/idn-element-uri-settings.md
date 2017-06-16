@@ -91,7 +91,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ## Example  
   
 ### Description  
- The following code example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names.  
+ The following example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names.  
   
 ### Code  
   

@@ -69,7 +69,7 @@ Adds a new proxy module to the application.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example registers a custom proxy class.  
+ The following example registers a custom proxy class.  
   
 ```xml  
 <configuration>  

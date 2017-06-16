@@ -35,13 +35,29 @@ Clears all previously defined sections and section groups.
 <clear/>
 ```
 
+## Attribute
+
+|           | Description |
+| --------- | ----------- |
+| **name**  | Required attribute.<br><br>Specifies the name of the section or section group to remove. |
+
+## Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+
+# Child elements
+
+None
+
 ## Remarks
 
 The **\<clear>** element removes all sections and section groups from your application that were defined earlier in the current configuration file or at a higher level in the configuration file hierarchy.
 
 ## Example
 
-The following example shows how to use the **\<clear>** element in an application configuration file to clear sections previously defined in the machine configuration file.
+This example defines a machine configuration file and an application configuration file and shows how to use the **\<clear>** element in an application configuration file to clear sections previously defined in the machine configuration file.
 
 The following machine configuration file code declares two sections, **\<sampleSection>** and **\<anotherSampleSection>**, which are read before the application configuration file:
 
@@ -70,6 +86,9 @@ The following application configuration file code clears all previously declared
     <section name="anotherSection"
              type="System.Configuration.NameValueSectionHandler" />
   </configSections>
+  <anotherSection setting1="Value1" 
+                 setting2="value two" 
+                 setting3="third value" />
 </configuration>
 ```
 

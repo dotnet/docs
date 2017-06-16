@@ -76,7 +76,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ## Remarks  
   
 ## Example  
- The following code example shows how to specify an FTP caching policy of `NoCacheNoStore`.  
+ The following example shows how to specify an FTP caching policy of `NoCacheNoStore`.  
   
 ```xml  
 <configuration>  

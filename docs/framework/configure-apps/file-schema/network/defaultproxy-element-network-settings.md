@@ -78,7 +78,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access and contoso.com.  
+ The following example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access and contoso.com.  
   
 ```xml  
 <configuration>  

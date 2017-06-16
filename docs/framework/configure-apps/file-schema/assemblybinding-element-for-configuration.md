@@ -41,34 +41,34 @@ Specifies assembly binding policy at the configuration level.
 </assemblyBinding>
 ```
 
-## Attributes
+## Attribute
 
-| Attribute | Description |
+|           | Description |
 | --------- | ----------- |
 | **xmlns** | Required attribute.<br><br>Specifies the XML namespace required for assembly binding. Use the string "urn:schemas-microsoft-com:asm.v1" as the value. |
 
-## Child elements
+## Parent element
 
-| Element | Description |
-| ------- | ----------- |
-| [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | Specifies a configuration file to include. |
-
-## Parent elements
-
-| Element | Description |
-| ------- | ----------- |
+|     | Description |
+| --- | ----------- |
 | [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+
+## Child element
+
+|     | Description |
+| --- | ----------- |
+| [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | Specifies a configuration file to include. |
 
 ## Remarks
 
-The [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
+The [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
 
 > [!NOTE]
 > The **\<linkedConfiguration>** element is not supported for applications with Windows side-by-side manifests.
 
 ## Example
 
-The following code example shows how to include a configuration file on the local hard disk:
+The following example shows how to include a configuration file on the local hard disk:
 
 ```xml
 <configuration>

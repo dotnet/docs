@@ -35,11 +35,21 @@ Removes a predefined section or section group.
 <remove name="section name or section group name" />
 ```
 
-## Attributes
+## Attribute
 
-| Attribute | Description |
+|           | Description |
 | --------- | ----------- |
 | **name**  | Required attribute.<br><br>Specifies the name of the section or section group to remove. |
+
+## Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+
+# Child elements
+
+None
 
 ## Remarks
 

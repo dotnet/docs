@@ -169,7 +169,7 @@
         <Parameter Name="isMany" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isMany"><langword="true"/> to provide all available matching exports; otherwise, <langword="false"/>.</param>
+        <param name="isMany"><see langword="true" /> to provide all available matching exports; otherwise, <see langword="false" />.</param>
         <summary>Configures the import to receive a collection of exports, possibly representing all available matching exports.</summary>
         <returns>An import builder that can receive a collection of exports and allows for further configuration.</returns>
         <remarks></remarks>

@@ -184,4 +184,4 @@ In the development environment, you must run all the containers in the same OS. 
 
 >[!div class="step-by-step"]
 [Previous] (../net-core-single-containers-on-linux-or-windows-server-hosts/index.md)
-[Next] (../multi-container-microservice-based-net-applications/index.md)
+[Next] (../multi-container-microservice-net-applications/index.md)

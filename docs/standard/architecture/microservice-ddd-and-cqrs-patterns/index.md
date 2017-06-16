@@ -67,5 +67,5 @@ DDD training
 
 
 >[!div class="step-by-step"]
-[Previous] (../multi-container-microservice-based-net-applications/testing-aspnet-core-services-and-web-apps.md)
+[Previous] (../multi-container-microservice-net-applications/testing-aspnet-core-services-and-web-apps.md)
 [Next] (applying-simplified-cqrs-and-ddd-patterns-in-a-microservice.md)

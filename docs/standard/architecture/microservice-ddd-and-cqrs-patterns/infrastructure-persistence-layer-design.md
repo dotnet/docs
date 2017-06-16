@@ -123,5 +123,5 @@ We find repositories useful, but we acknowledge that they are not critical for y
 
 
 >[!div class="step-by-step"]
-[Previous] (implementing-domain-events.md)
+[Previous] (domain-events-design-and-implementation.md)
 [Next] (infrastructure-persistence-layer-implemenation-with-entity-framework-core.md)

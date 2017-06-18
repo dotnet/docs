@@ -37,12 +37,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Cryptographic random number generators create cryptographically strong random values.  
-  
- Application code does not directly use this class. This abstract class is provided as the base class for all cryptographic random number generators.  
-  
- For an implementation of a cryptographic random number generator, use the derived class <xref:System.Security.Cryptography.RNGCryptoServiceProvider>.  
-  
+Cryptographic random number generators create cryptographically strong random values.
+
+To create a random number generator, call the @System.Security.Cryptography.RandomNumberGenerator.Create method. This is prefered over calling the constructor of the derived class @System.Security.Cryptography.RNGCryptoServiceProvider, which is not available on all platforms.
  ]]></format>
     </remarks>
   </Docs>

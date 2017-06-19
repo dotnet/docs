@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an exception for a failed composition.</summary>
+    <summary>The exception that is thrown when composition problems occur.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -46,8 +46,8 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message.</param>
-        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException"/> class using the specified message.</summary>
+        <param name="message">A message that contains information about the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException"/> class with the specified message.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -66,11 +66,11 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">The exception message.</param>
-        <param name="innerException">The inner exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException"/> class using the specified message and inner exception.</summary>
+        <param name="message">A message that contains information about the exception.</param>
+        <param name="innerException">The inner exception to wrap in this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException"/> class with the specified message and inner exception.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
   </Members>
-</Type>
+</Type> 

@@ -17,7 +17,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a configuration for a composition container.</summary>
+    <summary>Configures and constructs a lightweight container.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -52,8 +52,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a composition container.</summary>
-        <returns>The composition container.</returns>
+        <summary>Creates the container.</summary>
+        <returns>The created container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -74,9 +74,9 @@
         <Parameter Name="assemblies" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
       </Parameters>
       <Docs>
-        <param name="assemblies">The assemblies used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container using the specfied assemblies.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="assemblies">The assemblies to add part types from.</param>
+        <summary>Adds part types from the specified collection of assemblies to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -98,10 +98,10 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="assemblies">The assemblies used to configure the composition container.</param>
-        <param name="conventions">The conventions used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container using the specfied assemblies and conventions.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="assemblies">The assemblies to add part types from.</param>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Adds part types from the specified collection of assemblies to the container, using the specified conventions.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -122,9 +122,9 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container using the specfied assembly.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="assembly">The assembly to add part types from.</param>
+        <summary>Adds part types from the specified assembly to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -146,10 +146,10 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly used to configure the composition container.</param>
-        <param name="conventions">The conventions used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container using the specfied assembly and conventions.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="assembly">The assembly to add part types from.</param>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Adds part types from the specified assembly to the container, using the specified conventions.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -170,9 +170,9 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="conventions">The conventions used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container the specified conventions.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Specifies the default conventions to use for added parts.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -193,9 +193,9 @@
         <Parameter Name="partType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="partType">The type of the part used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container using the specified type.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="partType">The part type to add.</param>
+        <summary>Adds a specified part type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -217,10 +217,10 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="partType">The type of the part used to configure the composition container.</param>
-        <param name="conventions">The conventions used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container using the specified type and conventions.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="partType">The part type to add.</param>
+        <param name="conventions">The conventions to use for the part type.</param>
+        <summary>Adds a specified part type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -242,9 +242,9 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TPart">The type of the part used to configure the composition container.</typeparam>
-        <summary>Builds a configuration for a composition container using the type specified by <TypeParameter Name="TPart" />.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <typeparam name="TPart">The type to add.</typeparam>
+        <summary>Adds the specified generic type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -268,10 +268,10 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <typeparam name="TPart">The type of the part used to configure the composition container.</typeparam>
-        <param name="conventions">The conventions used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container of type <TypeParameter Name="TPart" /> using the type specified conventions.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <typeparam name="TPart">The type to add.</typeparam>
+        <param name="conventions">The conventions to use for the part type.</param>
+        <summary>Adds the specified generic type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -292,9 +292,9 @@
         <Parameter Name="partTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="partTypes">The types of the parts used to configure the container.</param>
-        <summary>Builds a configuration for a composition container based on the specified part types.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="partTypes">A collection of part types to add.</param>
+        <summary>Adds the specified part types to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -321,9 +321,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="partTypes">The types of the parts used to configure the container.</param>
-        <summary>Builds a configuration for a composition container based on the specified part types.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="partTypes">An array of part types to add.</param>
+        <summary>Adds the specified array of part types to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -345,10 +345,10 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="partTypes">The types of the parts used to configure the container.</param>
-        <param name="conventions">The conventions used to configure the composition container.</param>
-        <summary>Builds a configuration for a composition container based on the specified part types and conventions.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="partTypes">A collection of part types to add.</param>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Adds the specified part types to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -369,9 +369,9 @@
         <Parameter Name="exportDescriptorProvider" Type="System.Composition.Hosting.Core.ExportDescriptorProvider" />
       </Parameters>
       <Docs>
-        <param name="exportDescriptorProvider">The description of an export for a part.</param>
-        <summary>Builds a configuration for a composition container based on the specified description of an export for a part.</summary>
-        <returns>The configuration for a composition container.</returns>
+        <param name="exportDescriptorProvider">The provider to add.</param>
+        <summary>Adds the specified provider to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

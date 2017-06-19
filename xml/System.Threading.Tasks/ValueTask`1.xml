@@ -397,9 +397,9 @@ As such, the default choice for any asynchronous method should be to return a <x
         <remarks>
           <format type="text/markdown"><![CDATA[  
 ## Remarks  
- Accessing the property's get accessor blocks the calling thread until the asynchronous operation is complete; it is equivalent to calling the <xref:System.Threading.Tasks.Task.Wait%2A> method.  
-  
- Once the result of an operation is available, it is stored and is returned immediately on subsequent calls to the <xref:System.Threading.Tasks.ValueTask%601.Result%2A> property. Note that, if an exception occurred during the operation of the task, or if the task has been cancelled, the <xref:System.Threading.Tasks.ValueTask%601.Result%2A> property does not return a value. If you attempt to access the property value in this situation, the <xref:System.Threading.Tasks.ValueTask%601.Result%2A> property does not throw an <xref:System.AggregateException> exception as the <xref:System.Threading.Tasks.Task%601.Result%2A> property does.  
+ If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property directly returns it.
+
+ If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has completed unsuccessfully, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
   
  ]]></format>
         </remarks>

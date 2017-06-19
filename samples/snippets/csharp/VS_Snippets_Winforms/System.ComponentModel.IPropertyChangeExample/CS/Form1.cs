@@ -76,6 +76,7 @@ namespace TestNotifyPropertyChangedCS
 
     }
 
+    // <snippet9>
     // This is a simple customer class that 
     // implements the IPropertyChange interface.
     public class DemoCustomer : INotifyPropertyChanged
@@ -155,5 +156,6 @@ namespace TestNotifyPropertyChangedCS
             }
         }
     }
+    // </snippet9>
 }
 // </snippet1>

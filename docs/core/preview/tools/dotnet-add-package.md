@@ -1,0 +1,105 @@
+---
+title: dotnet-add package command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The dotnet-add package command provides a convenient option to add a NuGet package reference to a project.
+keywords: dotnet-add package, dotnet add package, CLI, CLI command, .NET Core
+author: guardrex
+ms.author: mairaw
+ms.date: 06/11/2017
+ms.topic: article
+ms.prod: .net-core
+ms.technology: dotnet-cli
+ms.devlang: dotnet
+ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
+---
+
+# dotnet-add package (.NET Core SDK 2.0 Preview 2)
+
+[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+
+## Name
+
+`dotnet-add package` - Adds a package reference to a project file.
+
+## Synopsis
+
+`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-f|--framework] [-h|--help] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version]`
+
+## Description
+
+The `dotnet add package` command adds a package reference to a project file. After running the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a **\<PackageReference>** element is added to the project file and [dotnet restore](dotnet-restore.md) is run.
+
+For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following:
+
+```console
+Writing C:\Users\guard\AppData\Local\Temp\tmp9194.tmp
+info : Adding PackageReference for package 'Newtonsoft.Json' into project 'ToDo.csproj'.
+log  : Restoring packages for ToDo.csproj...
+info :   CACHE https://dotnet.myget.org/F/aspnetcore-dev/api/v2/FindPackagesById()?id='Newtonsoft.Json'
+info :   CACHE https://api.nuget.org/v3-flatcontainer/newtonsoft.json/index.json
+info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks in project 'ToDo.csproj'.
+info : PackageReference for package 'Newtonsoft.Json' version '10.0.2' added to file 'ToDo.csproj'.
+```
+
+The *ToDo.csproj* file now contains a [**\<PackageReference>**](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) element for the referenced package:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+  </ItemGroup>
+</Project>
+```
+
+## Arguments
+
+`PROJECT`
+
+Specifies the project file. If not specified, the command searches the current directory for one.
+
+`PACKAGE_NAME`
+
+The package reference to add. Only one package reference is added per `dotnet add package` command; use multiple commands to add multiple package references to a project.
+
+## Options
+
+`-f|--framework <FRAMEWORK>`
+
+Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
+
+`-h|--help`
+
+Shows help information.
+
+`-n|--no-restore`
+
+Adds a package reference without performing a restore preview and compatibility check.
+
+`--package-directory <PACKAGE_DIRECTORY>`
+
+Restores the package to the specified directory.
+
+`-s|--source <SOURCE>`
+
+Uses a specific NuGet package source during the restore operation.
+
+`-v|--version <VERSION>`
+
+Version of the package.
+
+## Examples
+
+Add the `Newtonsoft.Json` NuGet package to a project:
+
+`dotnet add package Newtonsoft.Json`
+
+Add a specific version of a package to a project:
+
+`dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0`
+
+Add a package using a specific NuGet source:
+
+`dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json`

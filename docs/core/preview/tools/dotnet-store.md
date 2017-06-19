@@ -1,16 +1,18 @@
 ---
-title: dotnet-store command (.NET Core SDK 2.0 Preview 1) | .NET Core SDK
+title: dotnet-store command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
 description: The dotnet-store Stores the specified assemblies in the runtime package store.
-keywords: dotnet-store, dotnet-publish, CLI, CLI command, .NET Core
-author: bleroy
+keywords: dotnet-store, dotnet store, CLI, CLI command, .NET Core
+author: guardrex
 ms.author: beleroy
-ms.date: 4/13/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 ---
-# dotnet-store (.NET Core SDK 2.0 Preview 1)
+
+# dotnet-store (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
@@ -20,46 +22,37 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 ## Synopsis
 
-`dotnet store -m|--manifest -r|--runtime -f|--framework [--framework-version] [--output] [--working-dir] [--skip-optimization] [--skip-symbols] [-v|--verbosity] [-h|--help]`
+`dotnet store -m|--manifest -f|--framework -r|--runtime  [--framework-version] [-h|--help] [--output] [--skip-optimization] [--skip-symbols] [-v|--verbosity] [--working-dir]`
 
 ## Description
 
-`dotnet store` stores the specified assemblies in the [runtime package store](../deploying/runtime-package-store.md).
-
-By default, these assemblies are optimized for the target runtime and framework.
-
-For more information, see the [runtime package store](../deploying/runtime-package-store.md) topic.
+`dotnet store` stores the specified assemblies in the [runtime package store](../deploying/runtime-package-store.md). By default, assemblies are optimized for the target runtime and framework. For more information, see the [runtime package store](../deploying/runtime-package-store.md) topic.
 
 ## Options
 
-`-h|--help`
+`-f|--framework <FRAMEWORK>`
 
-Prints out a short help for the command.
-
-`-m|--manifest <MANIFEST>`
-
-The XML file, or a list of XML files, that contain the list of packages to be stored. The format of the files is compatible with the `csproj` format, so a project file referencing the desired packages can be used. This parameter is mandatory.
-
-`-r|--runtime`
-
-The runtime identifier to target, for example `win7-x64`. This parameter is mandatory.
-
-`-f|--framework`
-
-The framework to target, for example `netcoreapp2.0`. This parameter is mandatory.
+Required. Specifies the [target framework](../../standard/frameworks.md).
 
 `--framework-version <FRAMEWORK_VERSION>`
 
-The .NET Core SDK version to use. This option enables to fine tune to a specific version beyond the one that is part of `-f|--framework`. 
-For example: `2.0.0-preview1-1234`.
+Specifies the .NET Core SDK version. This option enables you to select a specific framework version beyond the framework specified by the `-f|--framework` option.
 
-`-o|--output <OUTPUT_PATH>`
+`-h|--help`
 
-Specify the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET Core installation directory.
+Shows help information.
 
-`--working-dir <WORKING_DIRECTORY>`
+`-m|--manifest <MANIFEST_FILE>`
 
-The working directory used by the command to execute. If not specified, it works under the *obj* subdirectory of the current directory.
+Required. The XML file, or a list of XML files, that contain the list of packages to store. The format of the manifest files is compatible with the *csproj* format, so a *csproj* project file referencing the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store.
+
+`-o|--output <OUTPUT_DIRECTORY>`
+
+Specifies the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET Core installation directory.
+
+`-r|--runtime <RUNTIME_IDENTIFIER>`
+
+Required. The runtime identifier to target.
 
 `--skip-optimization`
 
@@ -67,22 +60,26 @@ Skips the optimization phase.
 
 `--skip-symbols`
 
-Skips symbol generation. Currently, symbols can only be generated on Windows and Linux.
+Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
 
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
+`--working-dir <INTERMEDIATE_WORKING_DIRECTORY>`
+
+The working directory used by the command. If not specified, it uses the *obj* subdirectory of the current directory.
+
 ## Examples
 
-Store the packages specified in the `packages.csproj` for .NET Core 2.0.0:
+Store the packages specified in the *packages.csproj* project file for .NET Core 2.0.0:
 
-`dotnet store --manifest packages.csproj --framework-version 2.0.0`
+`dotnet store --manifest packages.csproj --framework-version 2.0.0-preview1-1234`
 
-Store the packages specified in the `packages.csproj` without optimization:
+Store the packages specified in the *packages.csproj* without optimization:
 
 `dotnet store --manifest packages.csproj --skip-optimization`
 
 ## See also
 
- [Runtime package store](../deploying/runtime-package-store.md)   
+[Runtime package store](../deploying/runtime-package-store.md)   

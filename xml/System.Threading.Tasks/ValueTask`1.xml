@@ -38,7 +38,8 @@ For uses other than consuming the result of an asynchronous operation using awai
 
 As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile, should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
 
-Note: The use of the <see cref="ValueTask{TResult}"/> type is not supported by Visual Basic 2015, which does not support generalized async return types.
+> [!NOTE]
+>  The use of the <see cref="ValueTask{TResult}"/> type is not supported by Visual Basic 2015, which does not support generalized async return types.
  ]]></format>
     </remarks>
   </Docs>
@@ -59,8 +60,9 @@ Note: The use of the <see cref="ValueTask{TResult}"/> type is not supported by V
       </Parameters>
       <Docs>
         <param name="task">The task.</param>
-        <summary>Initialize a new instance of the <see cref="T:ValueTask{TResult}"/> class using the supplied task that represents the operation.</summary>
+        <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}"/> class using the supplied task that represents the operation.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -238,7 +240,7 @@ Note: The use of the <see cref="ValueTask{TResult}"/> type is not supported by V
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as the default hash function.</summary>
+        <summary>Returns the hash code for this instance.</summary>
         <returns>The hash code for the current object.</returns>
         <remarks></remarks>
       </Docs>
@@ -392,7 +394,15 @@ Note: The use of the <see cref="ValueTask{TResult}"/> type is not supported by V
       <Docs>
         <summary>Gets the result.</summary>
         <value>The result.</value>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+ Accessing the property's get accessor blocks the calling thread until the asynchronous operation is complete; it is equivalent to calling the <xref:System.Threading.Tasks.Task.Wait%2A> method.  
+  
+ Once the result of an operation is available, it is stored and is returned immediately on subsequent calls to the <xref:System.Threading.Tasks.ValueTask%601.Result%2A> property. Note that, if an exception occurred during the operation of the task, or if the task has been cancelled, the <xref:System.Threading.Tasks.ValueTask%601.Result%2A> property does not return a value. If you attempt to access the property value in this situation, the <xref:System.Threading.Tasks.ValueTask%601.Result%2A> property does not throw an <xref:System.AggregateException> exception as the <xref:System.Threading.Tasks.Task%601.Result%2A> property does.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">

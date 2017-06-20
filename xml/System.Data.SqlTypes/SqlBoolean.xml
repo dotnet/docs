@@ -1529,7 +1529,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.GreaterThan%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1573,7 +1573,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.GreaterThanOrEquals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1691,7 +1691,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.LessThan%2A?displayProperty=fullName>.]]><format>
         </remarks>
       </Docs>
     </Member>
@@ -1735,7 +1735,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.LessThanOrEquals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

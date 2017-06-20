@@ -565,7 +565,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectQuery%601.Select%2A> applies the projection specified by the `projection` parameter. The <xref:System.Data.Objects.ObjectQuery%601> returned by the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method is always a row type of <xref:System.Data.Common.DbDataRecord>. Use the <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> method to return values that are simple types, entity types, or complex types. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
+ <xref:System.Data.Objects.ObjectQuery%601.Select%2A> applies the projection specified by the `projection` parameter. The <xref:System.Data.Objects.ObjectQuery%601> returned by the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method is always a row type of <xref:System.Data.Common.DbDataRecord>. Use the <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> method to return values that are simple types, entity types, or complex types. For more information, see [LINQ to Entities](~/docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).  
   
  When a navigation property is included in the projection, the query results include a collection of nested <xref:System.Data.Common.DbDataRecord> objects. For more information, see [How to: Navigate Relationships Using Navigation Properties](http://msdn.microsoft.com/en-us/b1d71c7d-16a7-4b46-96ac-690176bd5057).  
   

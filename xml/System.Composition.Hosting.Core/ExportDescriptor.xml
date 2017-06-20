@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Describes the export of a part known to the composition engine.</summary>
+    <summary>Describes an export of a part known to the composition engine.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:ExportDescriptor"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptor"/> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -85,8 +85,8 @@
       <Docs>
         <param name="activator">The activator used to retrieve instances of the export.</param>
         <param name="metadata">The metadata associated with the export.</param>
-        <summary>Constructs an <see cref="T:ExportDescriptor"/>.</summary>
-        <returns>The export descriptor.</returns>
+        <summary>Creates an export descriptor that has the specified activator and metadata.</summary>
+        <returns>The created descriptor.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -104,8 +104,8 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the metadata associated with the export.</summary>
-        <value>The export metadata.</value>
+        <summary>Gets the metadata for the export.</summary>
+        <value>A collection of metadata.</value>
         <remarks></remarks>
       </Docs>
     </Member>

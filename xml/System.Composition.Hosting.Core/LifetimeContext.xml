@@ -16,14 +16,16 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a node in the lifetime tree. The <see cref="LifetimeContext"/> object is the unit of sharing for shared parts. It controls the disposal of bound parts and can be used to retrieve instances, either as part of an existing <see cref="CompositionOperation"/> or as the basis of a new composition operation. An individual lifetime context can be marked to contain parts that are constrained by particular sharing boundaries.</summary>
+    <summary>Represents a node in the lifetime tree.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-The <see cref="T:System.Composition.Hosting.Core.LifetimeContext"/> object contains two pieces of independently protected shared state: shared part instances and bound part instances. 
+The <xref:System.Composition.Hosting.Core.LifetimeContext> object is the unit of sharing for shared parts. It controls the disposal of bound parts and can be used to retrieve instances, either as part of an existing composition operation or as the basis of a new composition operation. An individual lifetime context can be marked to contain parts that are constrained by particular sharing boundaries.
+
+This object contains two pieces of independently protected shared state: shared part instances and bound part instances. 
 A shared part instance is lock-free readable and does not result in issues if it is added to during disposal. It is protected by being locked itself. Activation logic is unavoidably called under this lock. 
-A bound part instance is always protected by locking <see langword="this" />, and should never be written to after disposal. A bound part instance is set to <see langword="null" /> under a lock in the <see cref="M:System.Composition.Hosting.Core.LifetimeContext.Dispose"/> method. If writing were allowed after disposal for a bound part instance, it would result in disposable parts not being released. The dispose method on a bound part is called outside of the lock. 
+A bound part instance is always protected by locking <see langword="this" />, and should never be written to after disposal. A bound part instance is set to <see langword="null" /> under a lock in the <xref:System.Composition.Hosting.Core.LifetimeContext.Dispose> method. If writing were allowed after disposal for a bound part instance, it would result in disposable parts not being released. The dispose method on a bound part is called outside of the lock. 
   
  ]]></format>
     </remarks>
@@ -46,8 +48,8 @@ A bound part instance is always protected by locking <see langword="this" />, an
         <Parameter Name="instance" Type="System.IDisposable" />
       </Parameters>
       <Docs>
-        <param name="instance">The disposable part to bind.</param>
-        <summary>Binds the lifetime of a disposable part to the current lifetime context.</summary>
+        <param name="instance">The part.</param>
+        <summary>Binds the lifetime of a disposable part to this lifetime context.</summary>
         <remarks></remarks>
         <exception cref="T:System.ObjectDisposedException">The operation was performed on a disposed object.</exception>
       </Docs>
@@ -87,7 +89,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the lifetime context and any disposable part instances that are bound to it.</summary>
+        <summary>Releases the lifetime context and any part instances bound to it.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -110,7 +112,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
       <Docs>
         <param name="sharingBoundary">The sharing boundary to find a lifetime context within.</param>
         <summary>Finds the broadest lifetime context within all of the specified sharing boundaries.</summary>
-        <returns>The lifetime context.</returns>
+        <returns>The broadest lifetime context within all of the specified sharing boundaries.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -140,11 +142,11 @@ A bound part instance is always protected by locking <see langword="this" />, an
         <Parameter Name="creator" Type="System.Composition.Hosting.Core.CompositeActivator" />
       </Parameters>
       <Docs>
-        <param name="sharingId">The identifier of the part instance to search for.</param>
-        <param name="operation">The operation in which a new part instance is activated, if necessary.</param>
-        <param name="creator">The activator of a new part instance, if necessary.</param>
-        <summary>Retrieves an existing part instance with the specified <param name="sharingId"/> or, if the part instance can not be found, creates and shares a new part instance using the specified <paramref name="creator"/> within the specified <paramref name="operation"/>.</summary>
-        <returns>The part instance.</returns>
+        <param name="sharingId">The ID of the shared part.</param>
+        <param name="operation">An operation in which to create a part, if necessary.</param>
+        <param name="creator">An activator that can activate a new part instance, if necessary.</param>
+        <summary>Retrieves a shared part instance with the specified ID, or if the part instance can not be found, creates and shares a part instance using the specified creator within the specified operation.</summary>
+        <returns>The new or retrieved part.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -170,8 +172,8 @@ A bound part instance is always protected by locking <see langword="this" />, an
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Describes this lifetime context.</summary>
-        <returns>A string description.</returns>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.LifetimeContext"/> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.LifetimeContext"/> object.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -193,10 +195,10 @@ A bound part instance is always protected by locking <see langword="this" />, an
         <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="contract">The contract to retrieve.</param>
-        <param name="export">The export if available; otherwise, <see langword="null" />.</param>
-        <summary>Retrieves the single <paramref name="contract"/> instance from the <see cref="CompositionContext"/>.</summary>
-        <returns>An instance of the export.</returns>
+        <param name="contract">The contract.</param>
+        <param name="export">After this method returns, contains the contract instance if available; otherwise, <see langword="null" />.</param>
+        <summary>Retrieves a contract instance from the composition context.</summary>
+        <returns><see langword="true" /> if the instance was retrieved; otherwise, <see langword="false" />.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

@@ -41,12 +41,12 @@
         <Parameter Name="getDescriptor" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;,System.Composition.Hosting.Core.ExportDescriptor&gt;" />
       </Parameters>
       <Docs>
-        <param name="contract">The contract fulfilled by this promise.</param>
-        <param name="origin">The description of where the export is being provided from. For example, the part type.</param>
-        <param name="isShared"><see langword="true" /> if the export is shared within some context, otherwise <see langword="false" />.</param>
-        <param name="dependencies">A function providing dependencies required in order to fulfill the promise.</param>
-        <param name="getDescriptor">A function providing the promise.</param>
-        <summary>Creates a promise for an export descriptor.</summary>
+        <param name="contract">The promised contract.</param>
+        <param name="origin">A description of the promise's origin. For example, a part type.</param>
+        <param name="isShared"><see langword="true" /> if the promise is shared, otherwise <see langword="false" />.</param>
+        <param name="dependencies">A function that provides the dependencies required to fulfill the promise.</param>
+        <param name="getDescriptor">A function that provides the promised descriptor.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -83,8 +83,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Composition.Hosting.Core.CompositionDependency&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the dependencies that are required to fulfill the promise.</summary>
-        <value>The dependecies.</value>
+        <summary>Gets the dependencies that are required to fulfill this promise.</summary>
+        <value>A collection of dependencies.</value>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -103,8 +103,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the promised export descriptor.</summary>
-        <returns>The export descriptor.</returns>
+        <summary>Retrieves the promised descriptor.</summary>
+        <returns>The descriptor.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -122,16 +122,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the export is shared within some context.</summary>
-        <value><see langword="true"/> if the export is shared within some context; otherwise, <see langword="false"/>.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The description contained in this property is used in cycle checking.
-  
- ]]></format>
-        </remarks>
+        <summary>Gets a value that indicates whether the promise is shared.</summary>
+        <value><see langword="true"/> if the promise is shared within some context; otherwise, <see langword="false"/>.</value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -148,16 +141,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a description of where the export is being provided from. For example, the part type.</summary>
-        <value>The description.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The description contained in this property is used to provide friendly errors.
-  
- ]]></format>
-        </remarks>
+        <summary>Gets a description of where the promise originates (for example, a part type), used to provide readable errors.</summary>
+        <value>A description of the promise's origin.</value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -175,8 +161,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Describes the promise.</summary>
-        <returns>A description of the promise.</returns>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"> object.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

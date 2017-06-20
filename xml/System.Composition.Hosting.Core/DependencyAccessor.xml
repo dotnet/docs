@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an accessor that allows <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider"/> objects to locate dependencies.</summary>
+    <summary>Allows <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider"/> objects to locate their dependencies.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:DependencyAccessor"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.DependencyAccessor"/> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -56,9 +56,9 @@
         <Parameter Name="exportKey" Type="System.Composition.Hosting.Core.CompositionContract" />
       </Parameters>
       <Docs>
-        <param name="exportKey">The export key that the definitions must supply.</param>
-        <summary>Retrieves all definitions for the specified export key (a <see cref="T:System.Composition.Hosting.Core.CompositionContract"/>).</summary>
-        <returns>The available definitions that match the export key.</returns>
+        <param name="exportKey">The export key that the promises must supply.</param>
+        <summary>Retrieves all promises for the specified contract.</summary>
+        <returns>A collection of promises for the contract.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -81,11 +81,11 @@
         <Parameter Name="isPrerequisite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="site">A tag describing the dependency site.</param>
+        <param name="site">A tag that describes the dependency site.</param>
         <param name="contract">The contract required by the site.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before corresponding exports can be retrieved; otherwise, <see langword="false" />.</param>
+        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
         <summary>Resolves dependencies on all implementations of a contract.</summary>
-        <returns>Dependencies for all implementations of the contact.</returns>
+        <returns>A collection of resolved dependencies.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -108,11 +108,11 @@
         <Parameter Name="isPrerequisite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="site">A tag describing the dependency site.</param>
+        <param name="site">A tag that describes the dependency site.</param>
         <param name="contract">The contract required by the site.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before corresponding exports can be retrieved; otherwise, <see langword="false" />.</param>
-        <summary>Resolves a required dependency on exactly one implementation of a contract.</summary>
-        <returns>The dependency.</returns>
+        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
+        <summary>Resolves a required dependency on one implementation of a contract.</summary>
+        <returns>The resolved dependency.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -136,12 +136,12 @@
         <Parameter Name="dependency" Type="System.Composition.Hosting.Core.CompositionDependency&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="site">A tag describing the dependency site.</param>
+        <param name="site">A tag that describes the dependency site.</param>
         <param name="contract">The contract required by the site.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before corresponding exports can be retrieved; otherwise, <see langword="false" />.</param>
-        <param name="dependency">The dependency, or <see langword="null" />.</param>
-        <summary>Resolves an optional dependency on exactly one implementation of a contract.</summary>
-        <returns><see langword="true" /> if the dependency could be resolved; otherwise, <see langword="false"/>.</returns>
+        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
+        <param name="dependency">After this method returns, contains the resolved dependency or <see langword="null" />.</param>
+        <summary>Resolves an optional dependency on one implementation of a contract.</summary>
+        <returns><see langword="true" /> if the dependency was resolved; otherwise, <see langword="false"/>.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

@@ -86,7 +86,7 @@
         <ReturnType>System.Reflection.Emit.AssemblyBuilderAccess</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The dynamic assembly can be unloaded and its memory reclaimed, subject to the restrictions described in [Collectible Assemblies for Dynamic Type Generation](http://msdn.microsoft.com/en-us/4c3432e6-0dfd-453a-88a7-533979ec5d2b).</summary>
+        <summary>The dynamic assembly will be automatically unloaded and its memory reclaimed, when it's no longer accessible.</summary>
       </Docs>
     </Member>
     <Member MemberName="RunAndSave">

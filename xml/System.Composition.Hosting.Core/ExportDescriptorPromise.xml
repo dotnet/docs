@@ -46,7 +46,7 @@
         <param name="isShared"><see langword="true" /> if the promise is shared, otherwise <see langword="false" />.</param>
         <param name="dependencies">A function that provides the dependencies required to fulfill the promise.</param>
         <param name="getDescriptor">A function that provides the promised descriptor.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"/> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -161,8 +161,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"> object.</summary>
-        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"> object.</returns>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"/> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"/> object.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

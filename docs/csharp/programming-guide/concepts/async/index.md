@@ -1,13 +1,9 @@
 ---
 title: "Asynchronous Programming with async and await (C#) | Microsoft Docs"
-ms.custom: ""
 ms.date: "2017-05-22"
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +11,6 @@ ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
 caps.latest.revision: 5
 author: "BillWagner"
 ms.author: "wiwagn"
-
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -34,8 +29,8 @@ This topic provides an overview of when and how to use async programming and inc
   
  The following table shows typical areas where asynchronous programming improves responsiveness. The listed APIs from .NET and the Windows Runtime contain methods that support async programming.  
   
-|Application area|.NET types with async methods|  Windows Runtime types with async methods |
-|----------------------|------------------------------------------------|  
+| Application area    | .NET types with async methods     | Windows Runtime types with async methods  |
+|---------------------|-----------------------------------|-------------------------------------------|
 |Web access|<xref:System.Net.Http.HttpClient>|[SyndicationClient](http://go.microsoft.com/fwlink/p/?LinkId=259441)|
 |Working with files|<xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|[StorageFile](http://go.microsoft.com/fwlink/p/?LinkId=248220)|  
 |Working with images||[MediaCapture](http://go.microsoft.com/fwlink/p/?LinkId=261839), [BitmapEncoder](http://go.microsoft.com/fwlink/p/?LinkId=261840), [BitmapDecoder](http://go.microsoft.com/fwlink/p/?LinkId=261841)|  

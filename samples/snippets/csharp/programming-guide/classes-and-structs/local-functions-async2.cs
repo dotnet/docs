@@ -20,7 +20,7 @@ class Example
       {
          Console.WriteLine("Executing GetValueAsync...");
          await Task.Delay(secondsDelay * 1000);
-         return secondsDelay * (new Random()).Next(2,10);
+         return secondsDelay * new Random().Next(2,10);
       }   
    } 
 }

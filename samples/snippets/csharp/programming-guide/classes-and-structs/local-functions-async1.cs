@@ -16,7 +16,7 @@ class Example
          throw new ArgumentOutOfRangeException("secondsDelay cannot exceed 5.");
          
       await Task.Delay(secondsDelay * 1000);
-      return secondsDelay * (new Random()).Next(2,10);
+      return secondsDelay * new Random().Next(2,10);
    } 
 }
 // The example displays the following output:

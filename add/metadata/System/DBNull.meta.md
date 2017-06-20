@@ -170,15 +170,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DBNull.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DBNull.System#IConvertible#ToType(System.Type,System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"

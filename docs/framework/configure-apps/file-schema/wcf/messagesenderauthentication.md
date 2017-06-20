@@ -28,7 +28,7 @@ Specifies authentication settings for peer certificate used by a message sender.
   
 ## Syntax  
   
-```  
+```xml  
 <messageSenderAuthentication  
    customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
    certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Effects.BitmapEffectInput.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnitsProperty
 ms.technology: 
   - "dotnet-wpf"

@@ -31,7 +31,7 @@ In a schema, you can specify a key constraint on an element or attribute using t
   
  In the following schema example, the **key** element specifies the key constraint on the **CustomerID** element.  
   
-```  
+```xml  
 <xs:schema id="cod"  
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  

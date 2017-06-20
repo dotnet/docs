@@ -192,7 +192,7 @@ The Web Services Security Protocols provide Web services security mechanisms tha
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='UsernameOverTransport_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -251,7 +251,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -264,7 +264,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -277,7 +277,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='CertificateOverTransport_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -341,7 +341,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wse:Timestamp u:Id="_0">  
   ...  
@@ -357,7 +357,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Response  
   
-```  
+```xml  
 <o:Security>  
   <u:Timestamp u:Id="_0">  
   ...  
@@ -370,7 +370,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='IssuedTokenOverTransport_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -438,7 +438,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1" >  
   <wsu:Timestamp>  
   ...  
@@ -454,7 +454,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -467,7 +467,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='KerberosOverTransport_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -530,7 +530,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1" >  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -546,7 +546,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -559,7 +559,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='SspiNegotiatedOverTransport_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -621,7 +621,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -637,7 +637,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -667,7 +667,7 @@ Namespace='http://www.w3.org/2005/08/addressing' />
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='MutualCertificate_WSS10_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -730,7 +730,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -752,7 +752,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -773,7 +773,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -795,7 +795,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -831,7 +831,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='MutualCertificateDuplex_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -894,7 +894,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request and Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -917,7 +917,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: EncryptBeforeSign  
  Request and Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -959,7 +959,7 @@ Token Protection: False
   
  Symmetric Binding  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='SymmetricCert_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -1026,7 +1026,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1051,7 +1051,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1077,7 +1077,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1102,7 +1102,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1132,7 +1132,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Signed Supporting Token  
   
-```  
+```xml  
 <sp:SignedSupportingTokens>  
   <wsp:Policy>  
     <sp:UsernameToken sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' >  
@@ -1147,7 +1147,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1175,7 +1175,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1198,7 +1198,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1226,7 +1226,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1255,7 +1255,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Endorsing Supporting Token  
   
-```  
+```xml  
 <sp:EndorsingSupportingTokens>  
   <wsp:Policy>  
     <sp:X509Token sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' >  
@@ -1271,7 +1271,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1302,7 +1302,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1334,7 +1334,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1365,7 +1365,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1399,7 +1399,7 @@ sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeTok
   
  Endorsing Supporting Token  
   
-```  
+```xml  
 <sp:EndorsingSupportingTokens>  
   <wsp:Policy>  
     <sp:IssuedToken sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' >  
@@ -1420,7 +1420,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1454,7 +1454,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1483,7 +1483,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1517,7 +1517,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp u:Id="_0">  
   ...  
@@ -1553,7 +1553,7 @@ Token Protection: False
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='Kerberos_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -1608,7 +1608,7 @@ Token Protection: False
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -1633,7 +1633,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -1656,7 +1656,7 @@ Token Protection: False
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
 TBD  
 </wsse:Security>  
@@ -1664,7 +1664,7 @@ TBD
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
 TBD  
 </wsse:Security>  
@@ -1684,7 +1684,7 @@ Token Protection: False
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='CustomBinding_ISimple3_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -1744,7 +1744,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -1769,7 +1769,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -1792,7 +1792,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -1817,7 +1817,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -1854,7 +1854,7 @@ Token Protection: False
 #### 6.5.1 Policy for SslNegotiated service authentication  
  Policy for all authentication modes in this section are similar and differ only by specific signed supporting or endorsing tokens used.  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='SslNegotiated_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -1917,7 +1917,7 @@ Token Protection: False
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -1942,7 +1942,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -1965,7 +1965,7 @@ Token Protection: False
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -1990,7 +1990,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2019,7 +2019,7 @@ Token Protection: False
   
  Signed Supporting Token  
   
-```  
+```xml  
 <sp:SignedSupportingTokens>  
   <wsp:Policy>  
     <sp:UsernameToken sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' >  
@@ -2034,7 +2034,7 @@ Token Protection: False
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2062,7 +2062,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2085,7 +2085,7 @@ Token Protection: False
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2113,7 +2113,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2142,7 +2142,7 @@ Token Protection: False
   
  Endorsing Supporting Token  
   
-```  
+```xml  
 <sp:EndorsingSupportingTokens>  
   <wsp:Policy>  
     <sp:IssuedToken sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' >  
@@ -2163,7 +2163,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2197,7 +2197,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2226,7 +2226,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2260,7 +2260,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2291,7 +2291,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Endorsing Supporting Token  
   
-```  
+```xml  
 <sp:EndorsingSupportingTokens>  
   <wsp:Policy>  
     <sp:X509Token sp:IncludeToken='http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient' >  
@@ -2307,7 +2307,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2332,7 +2332,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2355,7 +2355,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2380,7 +2380,7 @@ http://schemas.xmlsoap.org/ws/2005/02/trust/SymmetricKey
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2414,7 +2414,7 @@ Token Protection: False
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='CustomBinding_ISimple13_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -2468,7 +2468,7 @@ Token Protection: False
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2493,7 +2493,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2516,7 +2516,7 @@ Token Protection: False
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2541,7 +2541,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
 <wsu:Timestamp>  
   ...  
@@ -2566,7 +2566,7 @@ Token Protection: False
   
  Policy  
   
-```  
+```xml  
 <wsp:Policy wsu:Id='SecureConversation_policy' >  
   <wsp:ExactlyOne>  
     <wsp:All>  
@@ -2678,7 +2678,7 @@ Token Protection: False
 ### Security Header Examples: SignBeforeEncrypt, EncryptSignature  
  Request  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2703,7 +2703,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security s:mustUnderstand="1">  
   <wsu:Timestamp>  
   ...  
@@ -2726,7 +2726,7 @@ Token Protection: False
 ### Security Header Examples: EncryptBeforeSign  
  Request  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  
@@ -2751,7 +2751,7 @@ Token Protection: False
   
  Response  
   
-```  
+```xml  
 <wsse:Security>  
   <wsu:Timestamp>  
   ...  

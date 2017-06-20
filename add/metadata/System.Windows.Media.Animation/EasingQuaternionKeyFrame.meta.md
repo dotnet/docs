@@ -69,15 +69,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.EasingFunction
 ms.technology: 
   - "dotnet-wpf"

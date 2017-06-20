@@ -188,15 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.EncryptedPackageEnvelope.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String,System.IO.FileAccess,System.IO.FileShare)
 ms.technology: 
   - "dotnet-standard"

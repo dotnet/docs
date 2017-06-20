@@ -80,25 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignSurfaceManager.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurface
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -126,15 +108,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceDisposed
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.DesignSurfaceManager.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

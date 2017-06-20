@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.InvalidProgramException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.InvalidProgramException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -46,7 +46,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
   
  If `isbnNumber` contains the integer 12345 and `modifiedDate` contains the date 3/5/2006, when this code executes, the value of `book` is:  
   
-```  
+```xml  
 <book category="fiction" isbn="12345">  
   <modifiedDate>3/5/2006</modifiedDate>  
 </book>  

@@ -71,14 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.SubMenuStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.SubMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)
 ms.technology: 
   - "dotnet-webforms"
@@ -88,14 +80,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.SubMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.SubMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -152,14 +136,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.SubMenuStyle.#ctor(System.Web.UI.StateBag)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.SubMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

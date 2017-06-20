@@ -234,7 +234,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> represent the same <see cref="T:System.Windows.Forms.Message" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Message.Equals%28System.Windows.Forms.Message%2CSystem.Windows.Forms.Message%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Message.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> do not represent the same <see cref="T:System.Windows.Forms.Message" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Message.Compare%28System.Windows.Forms.Message%2CSystem.Windows.Forms.Message%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.Message.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>

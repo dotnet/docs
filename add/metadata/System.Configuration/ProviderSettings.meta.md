@@ -39,14 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ProviderSettings.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ProviderSettings.Name
 ms.technology: 
   - "dotnet-webforms"

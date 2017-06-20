@@ -29,7 +29,7 @@ The <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader?displayProper
  [!code-vb[System.IO.BinaryReaderWriter#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/VB/source6.vb#7)]  
   
 ## Robust Programming  
- If `Test.data` already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode?displayProperty=fullName> when you initialize the file stream to always create a new file without throwing an  exception.  
+ If `Test.data` already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=fullName> when you initialize the file stream to always create a new file without throwing an  exception.  
   
 ## See Also  
  <xref:System.IO.BinaryReader>   

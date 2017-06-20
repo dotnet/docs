@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.CryptoKeySecurity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.CryptoKeySecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.CryptoKeyAccessRule)
 ms.technology: 
   - "dotnet-standard"

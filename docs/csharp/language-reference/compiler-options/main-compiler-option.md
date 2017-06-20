@@ -37,7 +37,7 @@ This option specifies the class that contains the entry point to the program, if
   
 ## Syntax  
   
-```  
+```console  
 /main:class  
 ```  
   
@@ -63,7 +63,7 @@ This option specifies the class that contains the entry point to the program, if
 ## Example  
  Compile `t2.cs` and `t3.cs`, specifying that the **Main** method will be found in `Test2`:  
   
-```  
+```console  
 csc t2.cs t3.cs /main:Test2  
 ```  
   

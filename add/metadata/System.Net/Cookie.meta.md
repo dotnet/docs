@@ -77,12 +77,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Cookie.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Cookie.HttpOnly
 ms.author: "bobdel"
 manager: "markl"

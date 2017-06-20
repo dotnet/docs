@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.CreateInstanceCore
 ms.technology: 
   - "dotnet-wpf"

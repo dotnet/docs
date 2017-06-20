@@ -359,15 +359,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Win32.RegistryKey.GetAccessControl
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions,System.Security.AccessControl.RegistrySecurity)
 ms.technology: 
   - "dotnet-standard"

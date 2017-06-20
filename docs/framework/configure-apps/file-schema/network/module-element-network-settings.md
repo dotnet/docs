@@ -36,7 +36,7 @@ Adds a new proxy module to the application.
   
 ## Syntax  
   
-```  
+```xml  
       <module   
    type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
 />  
@@ -71,7 +71,7 @@ Adds a new proxy module to the application.
 ## Example  
  The following code example registers a custom proxy class.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

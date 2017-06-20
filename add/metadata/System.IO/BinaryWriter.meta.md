@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.BinaryWriter.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.BinaryWriter.Write(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -216,15 +207,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.BinaryWriter.Write(System.UInt64)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.BinaryWriter.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

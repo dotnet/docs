@@ -350,15 +350,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.IndentedTextWriter.WriteLine
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter)
 ms.technology: 
   - "dotnet-standard"

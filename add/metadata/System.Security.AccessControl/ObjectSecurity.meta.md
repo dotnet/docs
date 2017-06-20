@@ -341,15 +341,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.ObjectSecurity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

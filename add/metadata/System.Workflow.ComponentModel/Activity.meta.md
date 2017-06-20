@@ -258,13 +258,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Activity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Activity.ExecutionStatus
 author: "Erikre"
 ms.author: "erikre"

@@ -34,11 +34,6 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.CmdLineException.#ctor
-ms.author: "mikejo"
----
-
----
 uid: Microsoft.JScript.CmdLineException.#ctor(System.String,System.Exception)
 ms.author: "mikejo"
 ---

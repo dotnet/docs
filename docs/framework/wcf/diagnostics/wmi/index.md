@@ -25,7 +25,7 @@ manager: "erikre"
   
  The built-in WMI provider can be activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
     …  
     <diagnostics wmiProviderEnabled="true" />  

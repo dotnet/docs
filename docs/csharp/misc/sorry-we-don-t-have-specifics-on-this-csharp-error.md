@@ -178,7 +178,6 @@ f1_keywords:
   - "CS1912"
   - "CS0743"
   - "CS2016"
-  - "CS4009"
   - "CS0315"
   - "CS1609"
   - "CS1102"
@@ -875,6 +874,13 @@ f1_keywords:
   - "CS0057"
   - "CS0589"
   - "CS0656"
+  - "CS8038"
+  - "CS8137"
+  - "CS8139"
+  - "CS8156"
+  - "CS8168"
+  - "CS8172"
+  - "CS8179"
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 
@@ -899,7 +905,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Sorry, we don&#39;t have specifics on this C# error
-We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
+We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:  
   
  [Visual C# Language](http://go.microsoft.com/fwlink/?LinkId=146921)  
  Provides a forum for questions about and general discussions of the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] language syntax and compiler.  

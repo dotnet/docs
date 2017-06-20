@@ -48,13 +48,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.CivicAddress.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----
-
----
 uid: System.Device.Location.CivicAddress.Unknown
 ms.technology: 
   - "dotnet-standard"

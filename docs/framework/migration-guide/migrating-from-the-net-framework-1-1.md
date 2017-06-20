@@ -26,7 +26,7 @@ manager: "wpickett"
   
 -   You can retarget the application to run under [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. Retargeting requires that you add a [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element to the application's configuration file that allows it to run under [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. Such a configuration file takes the following form:  
   
-    ```  
+    ```xml  
     <configuration>   
        <startup>  
           <supportedRuntime version="v4.0"/>  
@@ -47,7 +47,7 @@ manager: "wpickett"
 ## Breaking Changes  
  When a breaking change occurs, depending on the specific change, a workaround may be available both for retargeted and recompiled applications. In some cases, you can add a child element to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element of your application's configuration file to restore the previous behavior. For example, the following configuration file restores the string sorting and comparison behavior used in the [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] and can be used either with a retargeted or a recompiled application.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <CompatSortNLSVersion enabled="4096"/>  

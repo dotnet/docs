@@ -29,11 +29,3 @@ ms.technology:
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----

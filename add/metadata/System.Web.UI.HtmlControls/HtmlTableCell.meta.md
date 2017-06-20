@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlTableCell.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlTableCell.VAlign
 ms.technology: 
   - "dotnet-webforms"

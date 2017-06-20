@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;useRequestHeadersForMetadataAddress&gt;
 Enables the retrieval of metadata address information from the request message headers.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -26,8 +26,12 @@ Enables the retrieval of metadata address information from the request message h
   
 ## Syntax  
   
-```  
-<useRequestHeadersForMetadataAddress>   <defaultPorts>      <add scheme="http" port="integer" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
+```xml  
+<useRequestHeadersForMetadataAddress>
+  <defaultPorts>
+    <add scheme="http" port="integer" />
+  </defaultPorts>
+</useRequestHeadersForMetadataAddress>  
 ```  
   
 ## Attributes and Elements  

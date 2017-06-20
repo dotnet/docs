@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.CspParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -89,15 +89,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlTypes.SqlXml.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#GetSchema
 ms.technology: 
   - "dotnet-ado"

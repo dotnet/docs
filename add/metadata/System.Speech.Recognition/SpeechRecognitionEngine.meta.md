@@ -287,14 +287,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognitionEngine.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate
 ms.technology: 
   - "dotnet-standard"
@@ -304,14 +296,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"
@@ -391,14 +375,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognitionEngine.Recognize
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice
 ms.technology: 
   - "dotnet-standard"
@@ -407,23 +383,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.SpeechRecognitionEngine.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"

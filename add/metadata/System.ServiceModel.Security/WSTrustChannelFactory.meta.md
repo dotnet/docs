@@ -55,14 +55,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

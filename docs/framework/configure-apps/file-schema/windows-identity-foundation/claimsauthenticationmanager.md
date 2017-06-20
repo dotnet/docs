@@ -24,7 +24,7 @@ Registers a claims authentication manager for the incoming claims.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <claimsAuthenticationManager type=xs:string>  
@@ -59,7 +59,7 @@ Registers a claims authentication manager for the incoming claims.
   
 ## Example  
   
-```  
+```xml  
 <system.identityModel>  
     <identityConfiguration name="MyIdentity">  
       <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>          

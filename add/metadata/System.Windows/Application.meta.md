@@ -7,14 +7,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Application.Run
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Application.Navigated
 ms.technology: 
   - "dotnet-wpf"
@@ -190,15 +182,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Application.Startup
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Application.Shutdown
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

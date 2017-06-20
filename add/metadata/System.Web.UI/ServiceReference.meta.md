@@ -39,14 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.ServiceReference.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.ServiceReference.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"

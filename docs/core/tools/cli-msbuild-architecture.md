@@ -31,7 +31,7 @@ Let's start with a quick refresher on Preview 2 layering as shown in the followi
 
 ![Preview 2 tools high-level architecture](media/cli-msbuild-architecture/p2-arch.png)
 
-The layering of the tools is quite simple. At the bottom we have the .NET Core Command Line tools as a foundation. All other, higher-level tools such as Visual Studio or VS Code, depend and rely on the CLI to build projects, restore dependencies and so on. This meant that, for example, if Visual Studio wanted to perform a restore operation, it would call into `dotnet restore` command in the CLI. 
+The layering of the tools is quite simple. At the bottom we have the .NET Core Command Line tools as a foundation. All other, higher-level tools such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies and so on. This meant that, for example, if Visual Studio wanted to perform a restore operation, it would call into `dotnet restore` command in the CLI. 
 
 With the move to the new project system, the previous diagram changes: 
 

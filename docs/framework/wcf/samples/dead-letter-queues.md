@@ -121,7 +121,7 @@ class Client
   
  The application must define which queue to use as its dead-letter queue. If no queue is specified, the default system-wide transactional dead-letter queue is used to queue dead messages. In this example, the client application specifies its own application dead-letter queue.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <appSettings>  
@@ -236,7 +236,7 @@ public class PurchaseOrderDLQService : IOrderProcessor
   
  The following sample shows the configuration for a dead-letter message:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
@@ -338,7 +338,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
   
 1.  If your computer is not part of a domain, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
   
-    ```  
+    ```xml  
     <bindings>  
         <netMsmqBinding>  
             <binding name="TransactedBinding">  

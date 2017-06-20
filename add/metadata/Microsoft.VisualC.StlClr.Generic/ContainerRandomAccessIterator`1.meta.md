@@ -47,12 +47,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer{`0},System.Int32)
 ms.author: "mblome"
 manager: "ghogen"

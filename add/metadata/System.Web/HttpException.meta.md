@@ -95,14 +95,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpException.#ctor(System.Int32,System.String,System.Int32)
 ms.technology: 
   - "dotnet-webforms"

@@ -134,15 +134,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.SignedXml.CheckSignature
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.SignedXml.SafeCanonicalizationMethods
 ms.technology: 
   - "dotnet-standard"
@@ -395,15 +386,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.SignedXml.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.SignedXml.EncryptedXml
 ms.technology: 
   - "dotnet-standard"
@@ -477,15 +459,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.SignedXml.CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm@)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.SignedXml.ComputeSignature
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

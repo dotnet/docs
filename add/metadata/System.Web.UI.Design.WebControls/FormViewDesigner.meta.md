@@ -95,12 +95,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.FormViewDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.FormViewDesigner.PreFilterProperties(System.Collections.IDictionary)
 ms.technology: 
   - "dotnet-webforms"

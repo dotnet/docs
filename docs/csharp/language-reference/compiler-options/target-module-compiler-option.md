@@ -37,7 +37,7 @@ This option causes the compiler to not generate an assembly manifest.
   
 ## Syntax  
   
-```  
+```console  
 /target:module  
 ```  
   
@@ -55,7 +55,7 @@ This option causes the compiler to not generate an assembly manifest.
 ## Example  
  Compile `in.cs`, creating `in.netmodule`:  
   
-```  
+```console  
 csc /target:module in.cs  
 ```  
   

@@ -23,12 +23,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.ProtocolViolationException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.ProtocolViolationException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"

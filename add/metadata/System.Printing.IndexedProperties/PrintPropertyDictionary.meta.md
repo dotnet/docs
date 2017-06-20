@@ -44,14 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Add(System.Printing.IndexedProperties.PrintProperty)
 ms.technology: 
   - "dotnet-standard"
@@ -75,15 +67,6 @@ ms.technology:
   - "dotnet-standard"
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---

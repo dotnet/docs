@@ -50,7 +50,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[/platform](../../../csharp/language-reference/compiler-options/platform-compiler-option.md)|Specify the output platform.|  
 |[/preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specify a language for compiler output.|  
 |[/target](../../../csharp/language-reference/compiler-options/target-compiler-option.md)|Specifies the format of the output file using one of five options: [/target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md), [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md), [/target:library](../../../csharp/language-reference/compiler-options/target-library-compiler-option.md), [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md), or [/target:winmdobj](../../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md).|  
-|`/modulename:<string>`|Specify the name of the source module|  
+|/modulename:\<string>|Specify the name of the source module|  
   
 ### .NET Framework Assemblies  
   
@@ -63,8 +63,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[/lib](../../../csharp/language-reference/compiler-options/lib-compiler-option.md)|Specifies the location of assemblies referenced by means of [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md).|  
 |[/nostdlib](../../../csharp/language-reference/compiler-options/nostdlib-compiler-option.md)|Instructs the compiler not to import the standard library (mscorlib.dll).|  
 |[/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)|Imports metadata from a file that contains an assembly.|  
-|`/analyzer`|Run the analyzers from this assembly (Short form: /a)|  
-|`/additionalfile`|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|  
+|/analyzer|Run the analyzers from this assembly (Short form: /a)|  
+|/additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|  
   
 ### Debugging/Error Checking  
   
@@ -78,7 +78,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[/nowarn](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md)|Suppresses the compiler's generation of specified warnings.|  
 |[/warn](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)|Sets the warning level.|  
 |[/warnaserror](../../../csharp/language-reference/compiler-options/warnaserror-compiler-option.md)|Promotes warnings to errors.|  
-|`/ruleset:<file>`|Specify a ruleset file that disables specific diagnostics.|  
+|/ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|  
   
 ### Preprocessor  
   
@@ -114,14 +114,14 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[/subsystemversion](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|  
 |[/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)|Enables compilation of code that uses the [unsafe](../../../csharp/language-reference/keywords/unsafe.md) keyword.|  
 |[/utf8output](../../../csharp/language-reference/compiler-options/utf8output-compiler-option.md)|Displays compiler output using UTF-8 encoding.|  
-|`/parallel[+&#124;-]`|Specifies whether to use concurrent build (+).|  
-|`/checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
+|/parallel[+&#124;-]|Specifies whether to use concurrent build (+).|  
+|/checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
   
 ## Obsolete Options  
   
-|||  
+|Option|Purpose|  
 |---|---|  
-|**/incremental**|Enables incremental compilation.|  
+|/incremental|Enables incremental compilation.|  
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   

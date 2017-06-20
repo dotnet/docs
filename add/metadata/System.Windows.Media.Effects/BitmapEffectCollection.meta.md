@@ -217,14 +217,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Effects.BitmapEffectCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Effects.BitmapEffectCollection.Add(System.Windows.Media.Effects.BitmapEffect)
 ms.technology: 
   - "dotnet-wpf"

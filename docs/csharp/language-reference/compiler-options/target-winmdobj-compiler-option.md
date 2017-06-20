@@ -32,7 +32,7 @@ If you use the **/target:winmdobj** compiler option, the compiler creates an int
   
 ## Syntax  
   
-```  
+```console  
 /target:winmdobj  
 ```  
   
@@ -60,7 +60,7 @@ If you use the **/target:winmdobj** compiler option, the compiler creates an int
 ## Example  
  The following command compiles `filename.cs` into an intermediate .winmdobj file.  
   
-```  
+```console  
 csc /target:winmdobj filename.cs  
 ```  
   

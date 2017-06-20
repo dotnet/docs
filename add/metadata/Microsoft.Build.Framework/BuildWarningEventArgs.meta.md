@@ -65,12 +65,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.BuildWarningEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.BuildWarningEventArgs.EndLineNumber
 ms.author: "susanno"
 manager: "douge"

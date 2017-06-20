@@ -31,14 +31,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.FederationException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.FederationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

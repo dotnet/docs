@@ -95,12 +95,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebSockets.WebSocketException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.WebSockets.WebSocketException.#ctor(System.Net.WebSockets.WebSocketError,System.Int32)
 ms.author: "bobdel"
 manager: "markl"

@@ -80,13 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.CustomLineCap.Dispose
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Drawing.Drawing2D.CustomLineCap.Finalize
 ms.technology: 
   - "dotnet-standard"

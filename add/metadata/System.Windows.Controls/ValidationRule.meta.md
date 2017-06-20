@@ -76,12 +76,3 @@ ms.technology:
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Controls.ValidationRule.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

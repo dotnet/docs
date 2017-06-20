@@ -32,10 +32,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Transactions.TransactionPromotionException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

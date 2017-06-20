@@ -39,7 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Semaphores are of two types: local semaphores and named system semaphores. The former is local to an app. The latter is visible throughout the operating system and is suitable for inter-process synchronization. The <xref:System.Threading.SemaphoreSlim> is a lightweight alternative to the <xref:System.Threading.Semaphore> class that doesn't use Windows kernel semaphores. Unlike the <xref:System.Threading.Semaphore> class, the <xref:System.Threading.SemaphoreSlim> class doesn’t support named system semaphores. You can use it as a local semaphore only. The <xref:System.Threading.SemaphoreSlim> class is the recommended semaphore for synchronization within a single app.  
+ Semaphores are of two types: local semaphores and named system semaphores. The former is local to an app. The latter is visible throughout the operating system and is suitable for inter-process synchronization. The <xref:System.Threading.SemaphoreSlim> is a lightweight alternative to the <xref:System.Threading.Semaphore> class that doesn't use Windows kernel semaphores. Unlike the <xref:System.Threading.Semaphore> class, the <xref:System.Threading.SemaphoreSlim> class doesn't support named system semaphores. You can use it as a local semaphore only. The <xref:System.Threading.SemaphoreSlim> class is the recommended semaphore for synchronization within a single app.  
   
  A lightweight semaphore controls access to a pool of resources that is local to your application. When you instantiate a semaphore, you can specify the maximum number of threads that can enter the semaphore concurrently. You also specify the initial number of threads that can enter the semaphore concurrently. This defines the semaphore's count.  
   
@@ -61,7 +61,7 @@ SemaphoreSlim.Release()
  When all threads have released the semaphore, the count is at the maximum value specified when the semaphore was created. The semaphore's count is available from the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property.  
   
 > [!IMPORTANT]
->  The <xref:System.Threading.SemaphoreSlim> class doesn’t enforce thread or task identity on calls to the <xref:System.Threading.SemaphoreSlim.Wait%2A>, <xref:System.Threading.SemaphoreSlim.WaitAsync%2A>, and <xref:System.Threading.SemaphoreSlim.Release%2A> methods. In addition, if the <xref:System.Threading.SemaphoreSlim.%23ctor%28System.Int32%29> constructor is used to instantiate the <xref:System.Threading.SemaphoreSlim> object, the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property can increase beyond the value set by the constructor. It is the programmer's responsibility to ensure that calls to <xref:System.Threading.SemaphoreSlim.Wait%2A> or <xref:System.Threading.SemaphoreSlim.WaitAsync%2A> methods are appropriately paired with calls to <xref:System.Threading.SemaphoreSlim.Release%2A> methods.  
+>  The <xref:System.Threading.SemaphoreSlim> class doesn't enforce thread or task identity on calls to the <xref:System.Threading.SemaphoreSlim.Wait%2A>, <xref:System.Threading.SemaphoreSlim.WaitAsync%2A>, and <xref:System.Threading.SemaphoreSlim.Release%2A> methods. In addition, if the <xref:System.Threading.SemaphoreSlim.%23ctor%28System.Int32%29> constructor is used to instantiate the <xref:System.Threading.SemaphoreSlim> object, the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property can increase beyond the value set by the constructor. It is the programmer's responsibility to ensure that calls to <xref:System.Threading.SemaphoreSlim.Wait%2A> or <xref:System.Threading.SemaphoreSlim.WaitAsync%2A> methods are appropriately paired with calls to <xref:System.Threading.SemaphoreSlim.Release%2A> methods.  
   
    
   
@@ -106,7 +106,7 @@ SemaphoreSlim.Release()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `initialCount` parameter defines the number of concurrent requests to enter the semaphore that can be granted. However, it doesn’t define the maximum number of requests that can be granted concurrently. A   <xref:System.Threading.SemaphoreSlim> object instantiated by calling this constructor doesn’t throw a <xref:System.Threading.SemaphoreFullException> exception if a call to the <xref:System.Threading.SemaphoreSlim.Release%2A> method increases the value of the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property beyond `initialCount`. This occurs if there are more calls to <xref:System.Threading.SemaphoreSlim.Release%2A> methods than there are to <xref:System.Threading.SemaphoreSlim.Wait%2A> or <xref:System.Threading.SemaphoreSlim.WaitAsync%2A> methods. To set the maximum number of concurrent requests to enter the semaphore that can be granted, call the <xref:System.Threading.SemaphoreSlim.%23ctor%28System.Int32%2CSystem.Int32%29> constructor.  
+ The `initialCount` parameter defines the number of concurrent requests to enter the semaphore that can be granted. However, it doesn't define the maximum number of requests that can be granted concurrently. A   <xref:System.Threading.SemaphoreSlim> object instantiated by calling this constructor doesn't throw a <xref:System.Threading.SemaphoreFullException> exception if a call to the <xref:System.Threading.SemaphoreSlim.Release%2A> method increases the value of the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property beyond `initialCount`. This occurs if there are more calls to <xref:System.Threading.SemaphoreSlim.Release%2A> methods than there are to <xref:System.Threading.SemaphoreSlim.Wait%2A> or <xref:System.Threading.SemaphoreSlim.WaitAsync%2A> methods. To set the maximum number of concurrent requests to enter the semaphore that can be granted, call the <xref:System.Threading.SemaphoreSlim.%23ctor%28System.Int32%2CSystem.Int32%29> constructor.  
   
  ]]></format>
         </remarks>
@@ -448,22 +448,29 @@ SemaphoreSlim.Release()
         <Parameter Name="millisecondsTimeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" />(-1) to wait indefinitely.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, <see cref="F:System.Threading.Timeout.Infinite" />(-1) to wait indefinitely, or zero to test the state of the wait handle and return immediately.</param>
         <summary>Blocks the current thread until it can enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a 32-bit signed integer that specifies the timeout.</summary>
         <returns>
           <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
+## Remarks 
+If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately.
+
+If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
   
- If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.Int32%29>, and the time-out interval specified by `millisecondsTimeout` expires, the thread or task doesn’t enter the semaphore, and the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn’t decremented.  
+If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.Int32%29> and the timeout interval specified by `millisecondsTimeout` expires:
+
+- The thread or task doesn't enter the semaphore.
+- The <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn't decremented.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Wait">
@@ -501,7 +508,7 @@ SemaphoreSlim.Release()
 ## Remarks  
  If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
   
- If `cancellationToken` is cancelled, the thread or task doesn’t enter the semaphore, and the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn’t decremented. Instead, the method throws an <xref:System.OperationCanceledException> exception.  
+ If `cancellationToken` is cancelled, the thread or task doesn't enter the semaphore, and the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn't decremented. Instead, the method throws an <xref:System.OperationCanceledException> exception.  
   
  ]]></format>
         </remarks>
@@ -541,7 +548,7 @@ SemaphoreSlim.Release()
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely, or a <see cref="T:System.TimeSpan" /> that represents 0 milliseconds to test the wait handle and return immediately.</param>
         <summary>Blocks the current thread until it can enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a <see cref="T:System.TimeSpan" /> to specify the timeout.</summary>
         <returns>
           <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />; otherwise, <see langword="false" />.</returns>
@@ -549,14 +556,21 @@ SemaphoreSlim.Release()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
+If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
+ 
+If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
   
- If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.TimeSpan%29> and the time-out interval specified by `timeout` expires, the thread or task doesn’t enter the semaphore, and the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn’t decremented.  
+If a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.TimeSpan%29> and the timeout interval specified by `millisecondsTimeout` expires:
+
+- The thread or task doesn't enter the semaphore.
+- The <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn't decremented.   
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+          <paramref name="timeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The semaphoreSlim instance has been disposed <paramref name="." /></exception>
       </Docs>
     </Member>
@@ -588,7 +602,7 @@ SemaphoreSlim.Release()
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" />(-1) to wait indefinitely.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, <see cref="F:System.Threading.Timeout.Infinite" />(-1) to wait indefinitely, or zero to test the state of the wait handle and return immediately.</param>
         <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to observe.</param>
         <summary>Blocks the current thread until it can enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a 32-bit signed integer that specifies the timeout, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <returns>
@@ -597,16 +611,25 @@ SemaphoreSlim.Release()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
+If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately.
+
+If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
   
- If `cancellationToken` is cancelled, or if a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.Int32%2CSystem.Threading.CancellationToken%29> and the time-out interval specified by `millisecondsTimeout` expires, the thread or task doesn’t enter the semaphore, and the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn’t decremented. If `cancellationToken` is cancelled, the method throws an   <xref:System.OperationCanceledException> exception.  
+If `cancellationToken` is cancelled, or if a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.Int32%2CSystem.Threading.CancellationToken%29> and the timeout interval specified by `millisecondsTimeout` expires:
+
+- The thread or task doesn't enter the semaphore.
+- The <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn't decremented.  
+ 
+If `cancellationToken` is cancelled, the method throws an   <xref:System.OperationCanceledException> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.SemaphoreSlim" /> instance has been disposed, or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
       </Docs>
     </Member>
@@ -638,7 +661,7 @@ SemaphoreSlim.Release()
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely, or a <see cref="T:System.TimeSpan" /> that represents 0 milliseconds to test the wait handle and return immediately.</param>
         <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to observe.</param>
         <summary>Blocks the current thread until it can enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a <see cref="T:System.TimeSpan" /> that specifies the timeout, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <returns>
@@ -647,16 +670,25 @@ SemaphoreSlim.Release()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
+If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
+
+If a thread or task is able to enter the semaphore, it decrements the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property by one.  
   
- If `cancellationToken` is cancelled, or if a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.TimeSpan%2CSystem.Threading.CancellationToken%29> and the timeout interval specified by `timeout` expires, the thread or task doesn’t enter the semaphore, and the <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn’t decremented. If `cancellationToken` is cancelled, the method throws an <xref:System.OperationCanceledException> exception.  
+If `cancellationToken` is cancelled, or if a thread or task is blocked when calling <xref:System.Threading.SemaphoreSlim.Wait%28System.TimeSpan%2CSystem.Threading.CancellationToken%29> and the timeout interval specified by `millisecondsTimeout` expires:
+
+- The thread or task doesn't enter the semaphore.
+- The <xref:System.Threading.SemaphoreSlim.CurrentCount%2A> property isn't decremented.  
+
+If `cancellationToken` is cancelled, the method throws an <xref:System.OperationCanceledException> exception.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+          <paramref name="timeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The semaphoreSlim instance has been disposed <paramref name="." /><paramref name="-or-" />  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
@@ -719,13 +751,22 @@ SemaphoreSlim.Release()
         <Parameter Name="millisecondsTimeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely, or zero to test the state of the wait handle and return immediately.</param>
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a 32-bit signed integer to measure the time interval.</summary>
         <returns>A task that will complete with a result of <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />, otherwise with a result of <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+ If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
+  
+ ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAsync">
@@ -791,17 +832,22 @@ SemaphoreSlim.Release()
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely, or a <see cref="T:System.TimeSpan" /> that represents 0 milliseconds to test the wait handle and return immediately.</param>
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a <see cref="T:System.TimeSpan" /> to measure the time interval.</summary>
         <returns>A task that will complete with a result of <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />, otherwise with a result of <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+                    <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+ If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
+  
+ ]]></format>
+        </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out  
-  
- -or-  
-  
- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAsync">
@@ -832,13 +878,22 @@ SemaphoreSlim.Release()
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely, or zero to test the state of the wait handle and return immediately.</param>
         <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to observe.</param>
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a 32-bit signed integer to measure the time interval, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <returns>A task that will complete with a result of <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />, otherwise with a result of <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the timeout is set to -1 milliseconds, the method waits indefinitely.
+ 
+ If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
+  
+ ]]></format>
+        </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+          <paramref name="millisecondsTimeout" /> is a number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
@@ -872,17 +927,22 @@ SemaphoreSlim.Release()
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely, or a <see cref="T:System.TimeSpan" /> that represents 0 milliseconds to test the wait handle and return immediately.</param>
         <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> token to observe.</param>
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a <see cref="T:System.TimeSpan" /> to measure the time interval, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <returns>A task that will complete with a result of <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />, otherwise with a result of <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the timeout is set to -1 milliseconds, the method waits indefinitely.
+
+ If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
+  
+ ]]></format>
+ </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out  
-  
- -or-  
-  
- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.OperationCanceledException">
           <paramref name="cancellationToken" /> was canceled.</exception>
       </Docs>

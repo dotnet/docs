@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.Rules.RuleExpressionCondition.GetDependencies(System.Workflow.Activities.Rules.RuleValidation)
 author: "Erikre"
 ms.author: "erikre"

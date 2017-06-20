@@ -39,7 +39,7 @@ Specifies an example for the member.
   
 ## Syntax  
   
-```  
+```xml  
 <example>description</example>  
 ```  
   

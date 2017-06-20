@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymMethod.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymMethod.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"

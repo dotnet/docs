@@ -35,7 +35,7 @@ Configures basic network options for the <xref:System.Net?displayProperty=fullNa
   
 ## Syntax  
   
-```  
+```xml  
       <settings>  
 ..<httpListener> … </httpListener>  
 ..<httpWebRequest> … </httpWebRequest>  

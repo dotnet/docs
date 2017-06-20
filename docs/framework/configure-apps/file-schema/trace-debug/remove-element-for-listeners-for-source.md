@@ -37,7 +37,7 @@ Removes a listener from the `Listeners` collection for a trace source.
   
 ## Syntax  
   
-```  
+```xml  
 <remove name="listenerName" />  
 ```  
   
@@ -73,7 +73,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 ## Example  
  The following example shows how to use the `<remove>` element before using the `<add>` element to add the listener `console` to the `Listeners` collection for the trace source `TraceSourceApp`.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

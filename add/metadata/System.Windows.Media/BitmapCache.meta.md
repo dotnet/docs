@@ -60,14 +60,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.BitmapCache.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.BitmapCache.RenderAtScale
 ms.technology: 
   - "dotnet-wpf"

@@ -30,7 +30,7 @@ If you're new to .NET Core, check out [Get Started with .NET Core](../core/get-s
 
 ## New to .NET Standard
 
-If you're new to .NET Standard, check out [.NET Standard Library](library.md).
+If you're new to .NET Standard, check out [.NET Standard](net-standard.md).
 
 ## Porting .NET Framework Code to .NET Core
 
@@ -45,7 +45,7 @@ If you're looking to port a NuGet package to .NET Standard, check out [Porting t
 If you're interested in some of the major concepts of .NET, check out:
 
 * [.NET Architectural Components](components.md)
-* [.NET Standard Library](library.md)
+* [.NET Standard](net-standard.md)
 * [Native Interoperability](native-interop.md)
 * [Garbage Collection](garbagecollection/index.md)
 * [Base Types in .NET](base-types/index.md)

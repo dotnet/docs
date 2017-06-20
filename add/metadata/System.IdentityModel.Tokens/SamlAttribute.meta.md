@@ -31,14 +31,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAttribute.OriginalIssuer
 ms.technology: 
   - "dotnet-standard"

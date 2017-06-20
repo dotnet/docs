@@ -39,7 +39,7 @@
   
 -   Be sized and positioned anywhere within the chart image.  
   
- Legend items are represented by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem%2A> object, and are either default or custom items. Custom items are not associated with data, and can be added, deleted and modified using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property.  
+ Legend items are represented by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object, and are either default or custom items. Custom items are not associated with data, and can be added, deleted and modified using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property.  
   
  Default items are by default automatically added to the legend, and are the names of the plotted data points for doughnut and pie charts.  
   
@@ -53,7 +53,7 @@
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> property defines a limit on the number of characters that can be shown on one line before text is wrapped to another line. If you do not wish to wrap text in the legend, set the value of the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> property to zero. By default, when the entire legend text does not fit in the legend, the text will be truncated. You can set the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.TextWrapThreshold%2A> on the legend to get the text to wrap instead of being truncated.  
   
- If the contents of the legend cannot fit into the given space, legend entries are truncated. An ellipsis will be shown to indicate that there are more entries than the legend has space for. To prevent the legend items from being truncated,, set the position and size of the legend using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Size%2A> properties, respectively. When setting the legend position or size, the chart can no longer automatically position the elements in the chart. In some cases, you many need to manually position other chart elements to achieve the desired appearance.  
+ If the contents of the legend cannot fit into the given space, legend entries are truncated. An ellipsis is shown to indicate that there are more entries than the legend has space for. To prevent the legend items from being truncated, set the position and size of the legend using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.Position%2A> property. When setting the legend position or size, the chart can no longer automatically position the elements in the chart. In some cases, you many need to manually position other chart elements to achieve the desired appearance.  
   
  Another option would be to define your own cell columns instead of using the default legend settings.  
   

@@ -48,7 +48,7 @@ AppViewModel.Current.LayoutVM.PageMap
   
  In this instance, the `LayoutVM` property on `AppViewModel.Current` was **null**.  Some absence of metadata caused a subtle behavior difference and resulted in a property being uninitialized instead of set, as the app expected.  Setting a breakpoint in the code where `LayoutVM` should have been initialized might throw light on the situation.  However, note that `LayoutVM`’s type is `App.Core.ViewModels.Layout.LayoutApplicationVM`.  The only metadata directive present so far in the rd.xml file is:  
   
-```  
+```xml  
 <Namespace Name="App.ViewModels" Browse="Required Public" Dynamic="Required Public" />  
 ```  
   

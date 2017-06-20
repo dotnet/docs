@@ -285,12 +285,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.AppDomainSetup.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

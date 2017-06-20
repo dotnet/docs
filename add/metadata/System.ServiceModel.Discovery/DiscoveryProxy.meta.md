@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryProxy.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryProxy.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator)
 ms.technology: 
   - "dotnet-standard"

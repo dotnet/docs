@@ -23,7 +23,7 @@ manager: "erikre"
 ## Enabling Performance Counters  
  You can enable performance counters for a [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service through the app.config configuration file of the [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] service as follows:  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
         <diagnostics performanceCounters="All" />  

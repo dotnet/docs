@@ -37,7 +37,7 @@ The <xref:System.Diagnostics.Debug?displayProperty=fullName> and <xref:System.Di
   
 1.  Declare your trace listener in your application configuration file. If the listener you are creating requires any other objects, declare them as well. The following example shows how to create a listener called `myListener` that writes to the text file `TextWriterOutput.log`.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.diagnostics>  
         <trace autoflush="false" indentsize="4">  

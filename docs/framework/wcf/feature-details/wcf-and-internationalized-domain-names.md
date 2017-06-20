@@ -23,7 +23,7 @@ Support has been added to allow for WCF services with Internationalized Domain N
   
  IDN is enabled in an application’s configuration file using the following XML  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <idn enabled="All/AllExceptIntranet/None" />  

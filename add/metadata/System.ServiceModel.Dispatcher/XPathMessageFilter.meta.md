@@ -179,15 +179,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Dispatcher.XPathMessageFilter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Dispatcher.XPathMessageFilter.OnGetSchema
 ms.technology: 
   - "dotnet-standard"

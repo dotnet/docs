@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.Behavior.GlyphCollection.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Design.Behavior.GlyphCollection.IndexOf(System.Windows.Forms.Design.Behavior.Glyph)
 ms.technology: 
   - "dotnet-winforms"

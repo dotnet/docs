@@ -29,7 +29,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
 ## Syntax  
   
-```  
+```xml  
 <tcpTransport   
       channelInitializationTimeout="TimeSpan"   
       connectionBufferSize="Integer"   

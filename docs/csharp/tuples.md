@@ -25,10 +25,20 @@ In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
-> you must add the NuGet package [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/), available on the NuGet Gallery.
-> Without this package you may get a compilation error similar to `error CS8179: Predefined type 'System.ValueTuple``2' is not defined or imported`
-> or `error CS8137: Cannot define a class or member that utilizes tuples because the compiler required type 'System.Runtime.CompilerServices.TupleElementNamesAttribute' cannot be found.`
+> The new tuples features require the @System.ValueTuple types.
+> You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
+> on platforms that do not include the types.
+>
+> This is similar to other language features that rely on types
+> delivered in the framework. Examples include `async` and `await`
+> relying on the `INotifyCompletion` interface, and LINQ relying
+> on `IEnumerable<T>`. However, the delivery mechanism is changing
+> as .NET is becoming more platform independent. The .NET Framework
+> may not always ship on the same cadence as the language compiler. When new language
+> features rely on new types, those types will be available as NuGet packages when
+> the language features ship. As these new types get added to the .NET Standard
+> API and delivered as part of the framework, the NuGet package requirement will
+> be removed.
 
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
@@ -68,7 +78,7 @@ Tuples are both simpler and more flexible data containers than `class` and
 ## Named and unnamed tuples
 
 The `ValueTuple` struct has fields named `Item1`, `Item2`, `Item3` and so on,
-similer to the properties defined in the existing `Tuple` types.
+similar to the properties defined in the existing `Tuple` types.
 These names are the only names you can use for *unnamed tuples*. When you
 do not provide any alternative field names to a tuple, you've created an
 unnamed tuple:
@@ -174,7 +184,7 @@ and the sum of the each value squared:
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
-Ths version enumerates the sequence exactly once. But, it's not very
+This version enumerates the sequence exactly once. But, it's not very
 reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
 the sum of the sequence, and the sum 
@@ -265,7 +275,7 @@ work with the results.
 
 ## Deconstruction
 
-You can unpackage all the items in a tuple by *deconstructng* the tuple
+You can unpackage all the items in a tuple by *deconstructing* the tuple
 returned by a method. There are two different approaches to deconstructing
 tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the fields in the tuple:
@@ -319,7 +329,7 @@ the `FirstName`, the `LastName` and the `GPA`:
 A `Student` object now has two accessible `Deconstruct` methods: the extension method
 declared for `Student` types, and the member of the `Person` type. Both are in scope,
 and that enables a `Student` to be deconstructed into either two variables or three.
-If you assign a student to three variabless, the first name, last name, and GPA are
+If you assign a student to three variables, the first name, last name, and GPA are
 all returned. If you assign a student to two variables, only the first name and 
 the last name are returned.
 
@@ -330,7 +340,7 @@ class or a class hierarchy. Multiple `Deconstruct` methods that have the
 same number of `out` parameters can quickly cause ambiguities. Callers may
 not be able to easily call the desired `Deconstruct` method.
 
-In this example, there is minimal chance for an ambiguious call because the 
+In this example, there is minimal chance for an ambiguous call because the 
 `Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
 

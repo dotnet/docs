@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Principal.WindowsIdentity.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Principal.WindowsIdentity.Name
 ms.technology: 
   - "dotnet-standard"
@@ -180,15 +171,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Principal.WindowsIdentity.DefaultIssuer
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Principal.WindowsIdentity.Impersonate
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -313,15 +295,6 @@ manager: "ghogen"
 
 ---
 uid: System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Principal.WindowsIdentity.GetCurrent
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

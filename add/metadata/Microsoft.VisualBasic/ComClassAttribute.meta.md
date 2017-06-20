@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.ComClassAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.ComClassAttribute.InterfaceShadows
 author: "stevehoag"
 ms.author: "shoag"

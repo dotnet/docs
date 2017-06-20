@@ -60,10 +60,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

@@ -171,24 +171,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Geometry.GetArea
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Geometry.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Geometry.StandardFlatteningTolerance
 ms.technology: 
   - "dotnet-wpf"
@@ -296,15 +278,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Geometry.GetOutlinedPathGeometry
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Geometry.System#IFormattable#ToString(System.String,System.IFormatProvider)
 ms.technology: 
   - "dotnet-wpf"
@@ -385,15 +358,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.Geometry.ToString(System.IFormatProvider)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Geometry.GetFlattenedPathGeometry
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

@@ -48,13 +48,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.#ctor(System.DateTime)
 ms.technology: 
   - "dotnet-standard"

@@ -53,7 +53,7 @@ A DiffGram is an XML format that identifies current and original versions of dat
 ## DiffGram Format  
  The DiffGram format is divided into three sections: the current data, the original (or "before") data, and an errors section, as shown in the following example.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <diffgr:diffgram   
          xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"  
@@ -105,7 +105,7 @@ A DiffGram is an XML format that identifies current and original versions of dat
 ## Sample DiffGram  
  An example of the DiffGram format is shown below. This example shows the result of an update to a row in a table before the changes have been committed. The row with a CustomerID of "ALFKI" has been modified, but not updated. As a result, there is a **Current** row with a **diffgr:id** of "Customers1" in the **\<** ***DataInstance*** **>** block, and an **Original** row with a **diffgr:id** of "Customers1" in the **\<diffgr:before>** block. The row with a CustomerID of "ANATR" includes a **RowError**, so it is annotated with `diffgr:hasErrors="true"` and there is a related element in the **\<diffgr:errors>** block.  
   
-```  
+```xml  
 <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
   <CustomerDataSet>  
     <Customers diffgr:id="Customers1" msdata:rowOrder="0" diffgr:hasChanges="modified">  

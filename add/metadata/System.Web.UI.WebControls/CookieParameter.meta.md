@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.CookieParameter.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.CookieParameter.Clone
 ms.technology: 
   - "dotnet-webforms"

@@ -8,12 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.Initialize(System.ComponentModel.IComponent)
 ms.technology: 
   - "dotnet-webforms"

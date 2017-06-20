@@ -71,7 +71,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
      What to do: In the [application configuration file](../../../docs/framework/configure-apps/index.md) in the application directory, use the [\<startup> element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md) and the [\<supportedRuntime> element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) set as follows:  
   
-    ```  
+    ```xml  
     <configuration>  
       <startup >  
         <supportedRuntime version="v2.0.50727" />  
@@ -86,7 +86,7 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
      What to do: In the application configuration file in the application directory, use the `<startup>` element with the `useLegacyV2RuntimeActivationPolicy` attribute set to `true` and the `<supportedRuntime>` element set as follows:  
   
-    ```  
+    ```xml  
     <configuration>  
       <startup useLegacyV2RuntimeActivationPolicy="true">  
         <supportedRuntime version="v4.0" />  

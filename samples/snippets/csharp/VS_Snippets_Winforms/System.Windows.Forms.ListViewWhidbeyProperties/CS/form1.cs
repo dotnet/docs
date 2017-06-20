@@ -67,10 +67,8 @@ namespace ListViewProperties
         
     //</snippet6>
 
-    #region snippet3
-       
         //<snippet3>
-		// Declare the ListView and Button for the example.
+        // Declare the ListView and Button for the example.
         ListView findListView = new ListView();
         Button findButton = new Button();
 
@@ -103,7 +101,6 @@ namespace ListViewProperties
 		 }
 		//</snippet3>
      
-#endregion
 		//This method is for testing purposes only.
 		//void findButton_Click(object sender, EventArgs e)
 		//{
@@ -133,7 +130,6 @@ namespace ListViewProperties
 		//}
  
 
-        #region snippet2
         // The following code example demonstrates a ListView with hot tracking enabled.
         // To run this example paste the following code into a Windows Form and and call
         // the InitializeHotTrackingListView method from the form's constructor or load-event
@@ -155,9 +151,7 @@ namespace ListViewProperties
             this.Controls.Add(hotTrackinglistView);
         }
 //</snippet2>
-        #endregion
 
-        #region snippet1
         // The following code example demonstrates initializing a ListView in detail view and
         // automatically resizing the columns using the AutoResizeColumn method. 
         // To run this example, paste this code into a  Windows Form and call
@@ -205,7 +199,6 @@ namespace ListViewProperties
         }
 
         //</snippet1>
-        #endregion
 
     
         // The following code example demonstrates the use of the BackGroundImageLayout
@@ -232,7 +225,6 @@ namespace ListViewProperties
 
         //</snippet4>
        
-        #region snippet5
         // The following code example demonstrates the FindNearestItem method. 
         // To run this example, paste the code into a Windows Form and call the
         // InitializeFindNearestItemListView from the form's constructor or load-
@@ -273,7 +265,6 @@ namespace ListViewProperties
         }
 
         //</snippet5>
-        #endregion snippet5
 
         [STAThread]
         public static void Main()

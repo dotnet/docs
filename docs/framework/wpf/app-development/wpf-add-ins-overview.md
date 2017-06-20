@@ -200,7 +200,7 @@ manager: "wpickett"
 2.  In the **Application Files** dialog, set the **Publish Status** of each pipeline and add-in DLL to **Include (Auto)**, and set the **Download Group** for each pipeline and add-in DLL to **(Required)**.  
   
 ### Using the Pipeline and Add-In from the Application Base  
- When the pipeline and add-in are configured for [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] deployment, they are downloaded to the same [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] cache folder as the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]. To use the pipeline and add-in from the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)], the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] code must get them from the application base. The various types and members of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model for using pipelines and add-ins provide special support for this scenario. Firstly, the path is identified by the <xref:System.AddIn.Hosting.PipelineStoreLocation> enumeration value. You use this value with overloads of the pertinent add-in members for using pipelines that include the following:  
+ When the pipeline and add-in are configured for [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] deployment, they are downloaded to the same [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] cache folder as the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)]. To use the pipeline and add-in from the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)], the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] code must get them from the application base. The various types and members of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] add-in model for using pipelines and add-ins provide special support for this scenario. Firstly, the path is identified by the <xref:System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase> enumeration value. You use this value with overloads of the pertinent add-in members for using pipelines that include the following:  
   
 -   <xref:System.AddIn.Hosting.AddInStore.FindAddIns%28System.Type%2CSystem.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=fullName>  
   
@@ -211,7 +211,7 @@ manager: "wpickett"
 -   <xref:System.AddIn.Hosting.AddInStore.Update%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=fullName>  
   
 ### Accessing the Host's Site of Origin  
- To ensure that an add-in can reference files from the site of origin, the add-in must be loaded with security isolation that is equivalent to the host application. This security level is identified by the <xref:System.AddIn.Hosting.AddInSecurityLevel?displayProperty=fullName> enumeration value, and passed to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method when an add-in is activated.  
+ To ensure that an add-in can reference files from the site of origin, the add-in must be loaded with security isolation that is equivalent to the host application. This security level is identified by the <xref:System.AddIn.Hosting.AddInSecurityLevel.Host?displayProperty=fullName> enumeration value, and passed to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method when an add-in is activated.  
   
 <a name="WPFAddInModelArchitecture"></a>   
 ## WPF Add-In Architecture  

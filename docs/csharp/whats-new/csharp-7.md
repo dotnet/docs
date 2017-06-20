@@ -86,6 +86,17 @@ return result;
 > The new tuples features require the @System.ValueTuple types.
 > You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
 > on platforms that do not include the types.
+>
+> This is similar to other language features that rely on types
+> delivered in the framework. Example include `async` and `await`
+> relying on the `INotifyCompletion` interface, and LINQ relying
+> on `IEnumerable<T>`. However, the delivery mechanism is changing
+> as .NET is becoming more platform independent. The .NET Framework
+> may not always ship on the same cadence as the language compiler. When new language
+> features rely on new types, those types will be available as NuGet packages when
+> the language features ship. As these new types get added to the .NET Standard
+> API and delivered as part of the framework, the NuGet package requirement will
+> be removed.
 
 C# provides a rich syntax for classes and structs that is used to explain
 your design intent. But sometimes that rich syntax requires extra
@@ -503,7 +514,7 @@ throw statements in the body of the constructor:
 > For that reason, designs that throw exceptions during construction are
 > discouraged.
 
-## Generalized async return types 
+## Generalized async return types
 
 Returning a `Task` object from async methods can introduce
 performance bottlenecks in certain paths. `Task` is a reference
@@ -524,7 +535,7 @@ feature:
 
 > [!NOTE]
 > You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
-> in order to use `ValueTask`.
+> in order to use the <xref:System.Threading.Tasks.Task.ValueTask%601> type.
 
 A simple optimization would be to use `ValueTask` in places where
 `Task` would be used before. However, if you want to perform extra

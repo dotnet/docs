@@ -276,15 +276,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.NetDataContractSerializer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.NetDataContractSerializer.SurrogateSelector
 ms.technology: 
   - "dotnet-standard"

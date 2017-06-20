@@ -55,12 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeView.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.TreeView.ShowExpandCollapse
 ms.technology: 
   - "dotnet-webforms"

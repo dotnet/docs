@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationUnloadedException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplicationUnloadedException.#ctor(System.String,System.Guid,System.Exception)
 ms.technology: 
   - "dotnet-standard"

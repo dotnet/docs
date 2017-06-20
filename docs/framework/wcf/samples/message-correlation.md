@@ -133,7 +133,7 @@ public static void Main()
   
  The MSMQ queue to which the order requests are sent is specified in the appSettings section of the configuration file. The client and service endpoints are defined in the system.serviceModel section of the configuration file. Both specify the `msmqIntegrationbinding` binding.  
   
-```  
+```xml  
 <appSettings>  
   <add key="orderQueueName" value=".\private$\Orders" />  
 </appSettings>  
@@ -221,7 +221,7 @@ static void PlaceOrder()
 > [!NOTE]
 >  The queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.  
   
-```  
+```xml  
 <appSettings>  
     <add key=" orderResponseQueueName" value=".\private$\Orders" />  
 </appSettings>  

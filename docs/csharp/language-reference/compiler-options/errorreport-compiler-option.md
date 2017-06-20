@@ -40,7 +40,7 @@ This option provides a convenient way to report a C# internal compiler error to 
   
 ## Syntax  
   
-```  
+```console  
 /errorreport:{ none | prompt | queue | send }  
 ```  
   

@@ -32,7 +32,7 @@ The **keyref** element allows you to establish links between elements within a d
   
  In the example, the **OrderNumber** child element of the **OrderDetail** element refers to the **OrderNo** key child element of the **Order** element.  
   
-```  
+```xml  
 <xs:schema id="MyDataSet" xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  

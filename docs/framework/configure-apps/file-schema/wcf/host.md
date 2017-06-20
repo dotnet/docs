@@ -25,7 +25,7 @@ Specifies settings for a service host.
   
 ## Syntax  
   
-```  
+```xml  
 <host>  
       <baseAddresses>  
          <baseAddress baseAddress="string" />  

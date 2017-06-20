@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymDocument.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymDocument.Language
 ms.technology: 
   - "dotnet-standard"

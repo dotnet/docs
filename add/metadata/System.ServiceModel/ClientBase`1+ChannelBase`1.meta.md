@@ -181,13 +181,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Close
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#IClientChannel#AllowInitializationUI
 author: "Erikre"
 ms.author: "erikre"
@@ -301,13 +294,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#Channels#IOutputChannel#BeginSend
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Open
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

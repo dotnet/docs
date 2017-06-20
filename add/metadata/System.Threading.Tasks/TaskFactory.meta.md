@@ -350,15 +350,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskFactory.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.TaskFactory.CancellationToken
 ms.technology: 
   - "dotnet-standard"

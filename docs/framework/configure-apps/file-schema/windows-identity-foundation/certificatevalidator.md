@@ -25,7 +25,7 @@ Specifies a custom type for certificate validation. This type is used only if th
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <certificateValidation>  
@@ -56,7 +56,7 @@ Specifies a custom type for certificate validation. This type is used only if th
   
 ## Example  
   
-```  
+```xml  
 <certificateValidation certificateValidationMode="Custom"  
                        revocationMode="Online"  
                        trustedStoreLocation="LocalMachine">  

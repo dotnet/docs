@@ -41,13 +41,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String,System.Byte[])
 author: "BrucePerlerMS"
 ms.author: "bruceper"

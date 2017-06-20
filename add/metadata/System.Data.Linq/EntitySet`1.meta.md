@@ -275,15 +275,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.EntitySet`1.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.EntitySet`1.AddRange(System.Collections.Generic.IEnumerable{`0})
 ms.technology: 
   - "dotnet-ado"

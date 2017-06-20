@@ -327,14 +327,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)
 ms.technology: 
   - "dotnet-webforms"
@@ -344,14 +336,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.CreateViewControl
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -400,14 +384,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.DesignTimeElementView
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetViewRendering
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -488,14 +464,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.ID
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.Invalidate
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

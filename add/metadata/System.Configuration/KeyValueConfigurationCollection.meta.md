@@ -17,12 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.KeyValueConfigurationCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Configuration.KeyValueConfigurationCollection.#ctor
 ms.technology: 
   - "dotnet-webforms"

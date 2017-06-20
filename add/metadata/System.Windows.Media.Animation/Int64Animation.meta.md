@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Int64Animation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.Int64Animation.Clone
 ms.technology: 
   - "dotnet-wpf"

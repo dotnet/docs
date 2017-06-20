@@ -215,15 +215,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryClient.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#Open
 ms.technology: 
   - "dotnet-standard"
@@ -294,15 +285,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#Close
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryClient.Open
 ms.technology: 
   - "dotnet-standard"
@@ -313,15 +295,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryClient.ProxyAvailable
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#Open
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

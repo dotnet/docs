@@ -152,15 +152,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleLob.Erase
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleLob.Null
 ms.technology: 
   - "dotnet-ado"
@@ -243,15 +234,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OracleClient.OracleLob.IsNull
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleLob.BeginBatch
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

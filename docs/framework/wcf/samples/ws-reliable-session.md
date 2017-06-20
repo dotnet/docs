@@ -41,7 +41,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
   
  The sample uses the `wsHttpBinding`. The binding is specified in the configuration files for both the client and service. The binding type is specified in the endpoint element’s `binding` attribute as shown in the following sample configuration.  
   
-```  
+```xml  
 <endpoint address=""  
           binding="wsHttpBinding"  
           bindingConfiguration="Binding1"   
@@ -50,7 +50,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
   
  The endpoint contains a `bindingConfiguration` attribute that references a binding configuration named "Binding1." The binding configuration enables reliable sessions by setting the `enabled` attribute of the [\<reliableSession>](../../../../docs/framework/configure-apps/file-schema/wcf/reliablesession.md) to `true`. Delivery assurances for ordered sessions are controlled by setting the ordered attribute to `true` or `false`. The default is `true`.  
   
-```  
+```xml  
 <bindings>  
     <wsHttpBinding>  
         <binding name="Binding1">  
@@ -60,7 +60,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
 </bindings>  
 ```  
   
- The service implementation class implements <xref:System.ServiceModel.InstanceContextMode> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
+ The service implementation class implements <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
   
 ```  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)] public class CalculatorService : ICalculator  

@@ -51,12 +51,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.IO.IOException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

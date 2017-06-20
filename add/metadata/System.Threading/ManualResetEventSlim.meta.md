@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.ManualResetEventSlim.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.ManualResetEventSlim.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -107,25 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.ManualResetEventSlim.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.ManualResetEventSlim.Wait(System.Int32,System.Threading.CancellationToken)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.ManualResetEventSlim.Wait
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

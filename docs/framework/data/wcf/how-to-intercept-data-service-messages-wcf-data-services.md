@@ -53,7 +53,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can interc
  [!code-vb[Astoria Northwind Service#QueryInterceptor](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#queryinterceptor)]  
   
 ## Example  
- This example defines a change interceptor method for the `Products` entity set. This method validates input to the service for an <xref:System.Data.Services.UpdateOperations> or <xref:System.Data.Services.UpdateOperations> operation and raises an exception if a change is being made to a discontinued product. It also blocks the deletion of products as an unsupported operation.  
+ This example defines a change interceptor method for the `Products` entity set. This method validates input to the service for an <xref:System.Data.Services.UpdateOperations.Add> or <xref:System.Data.Services.UpdateOperations.Change> operation and raises an exception if a change is being made to a discontinued product. It also blocks the deletion of products as an unsupported operation.  
   
  [!code-csharp[Astoria Northwind Service#ChangeInterceptor](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#changeinterceptor)]
  [!code-vb[Astoria Northwind Service#ChangeInterceptor](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#changeinterceptor)]  

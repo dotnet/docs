@@ -61,9 +61,9 @@ public interface ICalculator
   
 ```  
 <asp:ScriptManager ID="ScriptManager" runat="server">  
-     <Services>  
-          <asp:ServiceReference Path="service.svc" />  
-     </Services>  
+    <Services>  
+        <asp:ServiceReference Path="service.svc" />  
+    </Services>  
 </asp:ScriptManager>  
 ```  
   

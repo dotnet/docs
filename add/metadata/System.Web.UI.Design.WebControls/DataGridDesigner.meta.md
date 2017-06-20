@@ -66,12 +66,6 @@ manager: "wpickett"
 uid: System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml
 ms.technology: 
   - "dotnet-webforms"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataGridDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
 ms.author: "riande"
 manager: "wpickett"
 ---

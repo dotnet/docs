@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAttributeDeclaration.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAttributeDeclaration.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

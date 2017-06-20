@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.CopyTo(System.Type[],System.Int32)
 ms.technology: 
   - "dotnet-webforms"

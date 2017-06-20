@@ -404,15 +404,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Ports.SerialPort.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Ports.SerialPort.ReadBufferSize
 ms.technology: 
   - "dotnet-standard"

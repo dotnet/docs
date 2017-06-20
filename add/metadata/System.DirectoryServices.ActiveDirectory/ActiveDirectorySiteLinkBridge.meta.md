@@ -76,13 +76,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLinkBridge.Dispose(System.Boolean)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

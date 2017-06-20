@@ -95,14 +95,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Clipboard.ContainsText
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Clipboard.SetData(System.String,System.Object)
 ms.technology: 
   - "dotnet-winforms"
@@ -235,15 +227,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Forms.Clipboard.SetDataObject(System.Object)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Clipboard.GetText
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

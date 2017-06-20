@@ -88,14 +88,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewImageColumn.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons
 ms.technology: 
   - "dotnet-winforms"

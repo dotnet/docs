@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceKeyCollisionException.InstanceKey
 ms.technology: 
   - "dotnet-standard"

@@ -63,14 +63,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAction.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAction.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)
 ms.technology: 
   - "dotnet-standard"

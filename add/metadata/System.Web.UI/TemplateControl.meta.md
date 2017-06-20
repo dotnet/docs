@@ -175,14 +175,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.TemplateControl.ReadStringResource
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)
 ms.technology: 
   - "dotnet-webforms"

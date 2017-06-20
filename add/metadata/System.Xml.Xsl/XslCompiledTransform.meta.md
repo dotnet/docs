@@ -269,15 +269,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XslCompiledTransform.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XslCompiledTransform.Load(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"

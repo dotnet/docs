@@ -18,7 +18,7 @@ ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # How to: Secure a Service with Windows Credentials
-This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service that resides in a Windows domain and is called by clients in the same domain. [!INCLUDE[crabout](../../../includes/crabout-md.md)] this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
+This topic shows how to enable transport security on a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service that resides in a Windows domain and is called by clients in the same domain. [!INCLUDE[crabout](../../../includes/crabout-md.md)] this scenario, see [Transport Security with Windows Authentication](../../../docs/framework/wcf/feature-details/transport-security-with-windows-authentication.md). For a sample application, see the [WSHttpBinding](../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
   
  This topic assumes you have an existing contract interface and implementation already defined, and adds on to that. You can also modify an existing service and client.  
   
@@ -37,9 +37,9 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 2.  Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class.  
   
-3.  Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode>.  
+3.  Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property of the <xref:System.ServiceModel.WSHttpSecurity> class to <xref:System.ServiceModel.SecurityMode.Message>.  
   
-4.  Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType>.  
+4.  Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property of the <xref:System.ServiceModel.MessageSecurityOverHttp> class to <xref:System.ServiceModel.MessageCredentialType.Windows>.  
   
 5.  The code for this procedure is as follows:  
   
@@ -113,7 +113,7 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 5.  In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
   
-    ```  
+    ```xml  
     <bindings>  
       <wsHttpBinding>  
        <binding name = "wsHttpBinding_Calculator">  

@@ -71,12 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpWriter.WriteLine
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.HttpWriter.Write(System.Char)
 ms.technology: 
   - "dotnet-webforms"

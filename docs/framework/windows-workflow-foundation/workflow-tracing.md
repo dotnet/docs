@@ -31,7 +31,7 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
   
     2.  Change the \<bufferSize> value in the Windows.ApplicationServer.Applications.man file to 32.  
   
-        ```  
+        ```xml  
         <channel name="Microsoft-Windows-Application Server-Applications/Analytic" chid="ANALYTIC_CHANNEL" symbol="ANALYTIC_CHANNEL" type="Analytic" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.ANALYTIC_CHANNEL.message)" >  
                     <publishing>  
                       <bufferSize>32</bufferSize>  
@@ -47,7 +47,7 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 ## Enabling Debug Tracing using System.Diagnostics  
  These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a [TextWriterTraceListener](http://go.microsoft.com/fwlink/?LinkId=165424) is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

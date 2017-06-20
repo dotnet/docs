@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetEmptyDesignTimeHtml
 ms.technology: 
   - "dotnet-webforms"

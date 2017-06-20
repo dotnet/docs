@@ -29,7 +29,7 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
   
 ## Syntax  
   
-```  
+```xml  
 <wsDualHttpBinding>  
         <binding name="string"  
         closeTimeout="TimeSpan"  
@@ -104,7 +104,7 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
 <bindings>  

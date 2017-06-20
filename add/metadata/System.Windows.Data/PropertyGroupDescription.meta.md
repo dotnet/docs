@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Data.PropertyGroupDescription.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Data.PropertyGroupDescription.StringComparison
 ms.technology: 
   - "dotnet-wpf"

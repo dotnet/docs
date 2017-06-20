@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.QuaternionKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.QuaternionKeyFrame.InterpolateValue(System.Windows.Media.Media3D.Quaternion,System.Double)
 ms.technology: 
   - "dotnet-wpf"

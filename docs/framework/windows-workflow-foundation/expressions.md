@@ -24,7 +24,7 @@ A [!INCLUDE[wf](../../../includes/wf-md.md)] expression is any activity that ret
   
  Workflows produced by designer are saved in XAML, where expressions appear enclosed in square brackets, as in the following example.  
   
-```  
+```xml  
 <Sequence xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">  
   <Sequence.Variables>  
     <Variable x:TypeArguments="x:Int32" Default="1" Name="a" />  

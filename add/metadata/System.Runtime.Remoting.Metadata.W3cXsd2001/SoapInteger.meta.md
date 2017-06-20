@@ -48,13 +48,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.ToString
 ms.technology: 
   - "dotnet-standard"

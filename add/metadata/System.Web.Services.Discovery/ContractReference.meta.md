@@ -17,15 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.ContractReference.Contract
 ms.technology: 
   - "dotnet-webforms"

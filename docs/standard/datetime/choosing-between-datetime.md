@@ -47,7 +47,7 @@ manager: "wpickett"
 
 ## The DateTime structure
 
-A <xref:System.DateTime> value defines a particular date and time. It includes a <xref:System.DateTime.Kind%2A> property that provides limited information about the time zone to which that date and time belongs. The <xref:System.DateTimeKind> value returned by the <xref:System.DateTime.Kind%2A> property indicates whether the <xref:System.DateTime> value represents the local time (<xref:System.DateTimeKind?displayProperty=fullName>), Coordinated Universal Time (UTC) (<xref:System.DateTimeKind?displayProperty=fullName>), or an unspecified time (<xref:System.DateTimeKind?displayProperty=fullName>).
+A <xref:System.DateTime> value defines a particular date and time. It includes a <xref:System.DateTime.Kind%2A> property that provides limited information about the time zone to which that date and time belongs. The <xref:System.DateTimeKind> value returned by the <xref:System.DateTime.Kind%2A> property indicates whether the <xref:System.DateTime> value represents the local time (<xref:System.DateTimeKind.Local?displayProperty=fullName>), Coordinated Universal Time (UTC) (<xref:System.DateTimeKind.Utc?displayProperty=fullName>), or an unspecified time (<xref:System.DateTimeKind.Unspecified?displayProperty=fullName>).
 
 The <xref:System.DateTime> structure is suitable for applications that do the following:
 
@@ -65,10 +65,10 @@ The <xref:System.DateTime> structure is suitable for applications that do the fo
 
 * Perform date and time arithmetic, but are concerned with general results. For example, in an addition operation that adds six months to a particular date and time, it is often not important whether the result is adjusted for daylight saving time.
 
-Unless a particular <xref:System.DateTime> value represents UTC, that date and time value is often ambiguous or limited in its portability. For example, if a <xref:System.DateTime> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time). Outside the local time zone, that <xref:System.DateTime> value can have multiple interpretations. If the value's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized. Only if a <xref:System.DateTime> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.
+Unless a particular <xref:System.DateTime> value represents UTC, that date and time value is often ambiguous or limited in its portability. For example, if a <xref:System.DateTime> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time). Outside the local time zone, that <xref:System.DateTime> value can have multiple interpretations. If the value's <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized. Only if a <xref:System.DateTime> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.
 
 > [!IMPORTANT]
-> When saving or sharing <xref:System.DateTime> data, UTC should be used and the <xref:System.DateTime> value's <xref:System.DateTime.Kind%2A> property should be set to <xref:System.DateTimeKind?displayProperty=fullName>.
+> When saving or sharing <xref:System.DateTime> data, UTC should be used and the <xref:System.DateTime> value's <xref:System.DateTime.Kind%2A> property should be set to <xref:System.DateTimeKind.Utc?displayProperty=fullName>.
 
 ## The DateTimeOffset structure
 

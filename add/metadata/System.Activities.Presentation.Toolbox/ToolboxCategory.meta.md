@@ -167,15 +167,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Toolbox.ToolboxCategory.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#RemoveAt(System.Int32)
 ms.technology: 
   - "dotnet-standard"

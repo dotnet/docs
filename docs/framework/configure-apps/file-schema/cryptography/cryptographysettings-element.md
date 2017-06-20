@@ -35,7 +35,7 @@ Contains cryptography settings.
   
 ## Syntax  
   
-```  
+```xml  
       <cryptographySettings>   
 </crytopgraphySettings>  
 ```  
@@ -63,7 +63,7 @@ Contains cryptography settings.
 ## Example  
  The following example shows how use the **\<cryptographySettings>** element to contain cryptography name mappings and OID mappings. This example configures the runtime so that <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=fullName> returns a `MyHashClass` object and the `MyCryptoClass` class maps to the object identifier 1.3.36.2.1.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

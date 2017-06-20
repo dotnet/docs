@@ -27,7 +27,7 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
   
 -   The <xref:System.Windows.Forms.DataGridView> control is enabled.  
   
--   The <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is not <xref:System.Windows.Forms.DataGridViewEditMode>.  
+-   The <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is not <xref:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically>.  
   
 -   The `ReadOnly` properties of the cell, row, column, and control are all set to `false`.  
   

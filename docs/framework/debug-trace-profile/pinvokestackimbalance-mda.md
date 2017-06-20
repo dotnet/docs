@@ -61,7 +61,7 @@ parameters of the PInvoke signature match the target unmanaged signature.
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <pInvokeStackImbalance />  

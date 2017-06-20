@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.InvokeWorkflowActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.InvokeWorkflowActivity.ParameterBindings
 author: "Erikre"
 ms.author: "erikre"

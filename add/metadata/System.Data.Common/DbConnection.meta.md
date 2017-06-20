@@ -107,25 +107,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnection.System#Data#IDbConnection#BeginTransaction
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnection.ChangeDatabase(System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnection.OpenAsync
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -179,15 +161,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnection.BeginTransaction
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnection.CreateCommand
 ms.technology: 
   - "dotnet-ado"
@@ -207,15 +180,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbConnection.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnection.GetSchema
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

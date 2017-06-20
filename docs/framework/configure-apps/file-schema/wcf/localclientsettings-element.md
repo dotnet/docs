@@ -26,7 +26,7 @@ Specifies the security settings of a local client for this binding.
   
 ## Syntax  
   
-```  
+```xml  
 <security>  
    <localClientSettings cacheCookies="Boolean"  
       cookieRenewalThresholdPercentage="Integer"  

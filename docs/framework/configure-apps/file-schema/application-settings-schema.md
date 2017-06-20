@@ -59,7 +59,7 @@ Application settings allow a Windows Forms or ASP.NET application to store and r
 ## Example  
  The following code example shows an application settings file that defines two application-scoped settings and two user-scoped settings.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  

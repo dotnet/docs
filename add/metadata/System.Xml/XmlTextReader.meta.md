@@ -611,15 +611,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlTextReader.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlTextReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"

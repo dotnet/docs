@@ -88,7 +88,7 @@ A data service can expose large object binary data. This binary data might repre
   
   
 > [!NOTE]
->  You must use a <xref:System.ServiceModel.TransferMode?displayProperty=fullName> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
+>  You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=fullName> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  
   
  For more information, see [Streaming Message Transfer](../../../../docs/framework/wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
   

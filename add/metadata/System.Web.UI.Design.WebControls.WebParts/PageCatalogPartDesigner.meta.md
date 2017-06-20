@@ -33,9 +33,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.WebControls.WebParts.PageCatalogPartDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----

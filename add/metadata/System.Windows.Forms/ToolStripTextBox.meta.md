@@ -68,14 +68,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripTextBox.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolStripTextBox.DefaultSize
 ms.technology: 
   - "dotnet-winforms"

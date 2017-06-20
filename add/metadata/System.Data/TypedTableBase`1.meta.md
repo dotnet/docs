@@ -26,15 +26,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.TypedTableBase`1.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.TypedTableBase`1.GetEnumerator
 ms.technology: 
   - "dotnet-ado"

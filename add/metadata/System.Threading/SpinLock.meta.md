@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SpinLock.Exit
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.SpinLock.IsHeld
 ms.technology: 
   - "dotnet-standard"

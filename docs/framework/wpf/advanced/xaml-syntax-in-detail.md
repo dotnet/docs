@@ -213,7 +213,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  This is illegal essentially because if this syntax were made explicit by using property element syntax for the content property, then the content property would be set twice:  
   
-```  
+```xml  
 <Button>  
   <Button.Content>I am a </Button.Content>  
   <Button.Background>Blue</Button.Background>  
@@ -223,7 +223,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  A similarly illegal example is if the content property is a collection, and child elements are interspersed with property elements:  
   
-```  
+```xml  
 <StackPanel>  
   <Button>This example</Button>  
   <StackPanel.Resources>  

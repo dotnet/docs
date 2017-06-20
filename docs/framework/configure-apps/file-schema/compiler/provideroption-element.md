@@ -37,7 +37,7 @@ Specifies the compiler version attributes for a language provider.
   
 ## Syntax  
   
-```  
+```xml  
 <providerOption  
   name="option-name"  
   value="option-value"  
@@ -78,7 +78,7 @@ Specifies the compiler version attributes for a language provider.
 ## Example  
  The following example demonstrates how to specify that version 3.5 of the C# code provider should be used.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

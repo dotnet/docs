@@ -27,13 +27,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueueTransaction.Dispose
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueueTransaction.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"

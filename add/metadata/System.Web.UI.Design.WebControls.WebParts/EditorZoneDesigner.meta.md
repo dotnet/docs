@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.EditorZoneDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.EditorZoneDesigner.TemplateGroups
 ms.technology: 
   - "dotnet-webforms"

@@ -38,7 +38,7 @@ This sample demonstrates how to implement a custom token authenticator. A token 
   
  The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, with the security mode set to message - the default mode of the `wsHttpBinding`. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using `serviceCredentials` behavior. The `securityCredentials` behavior allows you to specify a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.  
   
-```  
+```xml  
 <system.serviceModel>  
     <services>  
       <service   
@@ -89,7 +89,7 @@ This sample demonstrates how to implement a custom token authenticator. A token 
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and `clientCredentialType`.  
   
-```  
+```xml  
 <system.serviceModel>  
     <client>  
       <endpoint name=""  

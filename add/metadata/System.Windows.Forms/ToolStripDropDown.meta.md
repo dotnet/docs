@@ -157,15 +157,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripDropDown.Show
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripDropDown.GripMargin
 ms.technology: 
   - "dotnet-winforms"
@@ -242,14 +233,6 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripDropDown.Close
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---

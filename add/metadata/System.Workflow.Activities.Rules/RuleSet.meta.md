@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleSet.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.Rules.RuleSet.Validate(System.Workflow.Activities.Rules.RuleValidation)
 author: "Erikre"
 ms.author: "erikre"

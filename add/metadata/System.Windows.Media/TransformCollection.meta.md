@@ -192,15 +192,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.TransformCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TransformCollection.System#Collections#IList#Remove(System.Object)
 ms.technology: 
   - "dotnet-wpf"

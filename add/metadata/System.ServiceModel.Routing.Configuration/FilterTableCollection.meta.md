@@ -76,10 +76,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterTableCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

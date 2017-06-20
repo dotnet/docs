@@ -53,10 +53,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.Runtime.TimerEventSubscription.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

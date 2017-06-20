@@ -157,13 +157,13 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The Stretch property takes one of the following values:  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are not stretched.  
+-   <xref:System.Windows.Media.Stretch.None>: The                          <xref:System.Windows.Shapes.Shape> object's contents are not stretched.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to fill its layout space.  Aspect ratio is not preserved.  
+-   <xref:System.Windows.Media.Stretch.Fill>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to fill its layout space.  Aspect ratio is not preserved.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched as much as possible to fill its layout space while preserving its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.Uniform>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched as much as possible to fill its layout space while preserving its original aspect ratio.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to completely fill its layout space while preserving its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to completely fill its layout space while preserving its original aspect ratio.  
   
  Note that, when a                  <xref:System.Windows.Shapes.Shape> object's contents are stretched, the                  <xref:System.Windows.Shapes.Shape> object's outline is painted after the stretching.  
   

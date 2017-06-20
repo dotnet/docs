@@ -122,7 +122,7 @@ This topic shows how to implement custom client and service credentials and how 
   
 3.  Set the `type` attribute to the fully-qualified type name. Also include the assembly name and other assembly attributes.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <extensions>  
         <behaviorExtensions>  
@@ -134,7 +134,7 @@ This topic shows how to implement custom client and service credentials and how 
   
 4.  After registering your configuration handler, the custom credentials element can be used inside the same configuration file instead of the system-provided <`clientCredentials`> element. You can use both the system-provided properties and any new properties that you have added to your configuration handler implementation. The following example sets the value of a custom property using the `creditCardNumber` attribute.  
   
-    ```  
+    ```xml  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="myClientCredentialsBehavior">  

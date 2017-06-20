@@ -31,7 +31,7 @@ Windows Forms provides several options for programmatically simulating mouse and
   
 #### To programmatically click the right mouse button  
   
-1.  Create a <xref:System.Windows.Forms.MouseEventArgs> whose <xref:System.Windows.Forms.MouseEventArgs.Button%2A> property is set to the <xref:System.Windows.Forms.MouseButtons?displayProperty=fullName> value.  
+1.  Create a <xref:System.Windows.Forms.MouseEventArgs> whose <xref:System.Windows.Forms.MouseEventArgs.Button%2A> property is set to the <xref:System.Windows.Forms.MouseButtons.Right?displayProperty=fullName> value.  
   
 2.  Call the <xref:System.Windows.Forms.Control.OnMouseClick%2A> method with this <xref:System.Windows.Forms.MouseEventArgs> as the argument.  
   

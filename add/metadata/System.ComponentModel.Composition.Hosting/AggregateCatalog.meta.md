@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.AggregateCatalog.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.AggregateCatalog.Dispose
 ms.technology: 
   - "dotnet-standard"

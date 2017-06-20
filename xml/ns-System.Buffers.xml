@@ -1,6 +1,13 @@
 <Namespace Name="System.Buffers">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="N:System.Buffers" /> namespace contains the <see cref="ArrayPool{T}"/> class, which represents a shared resource pool of resusable instances of type <see cref="T:T[]"/>.</summary>
+    <remarks>
+       <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+The <see cref="ArrayPool{T}"/> class, by allocating a shared buffer for array values, can offer significant improvements in performance for apps that make extensive use of arrays.
+ ]]></format>
+    </remarks>
   </Docs>
-</Namespace>
+</Namespace> 

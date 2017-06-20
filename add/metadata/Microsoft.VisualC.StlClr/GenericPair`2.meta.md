@@ -41,12 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.GenericPair`2.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.GenericPair`2.second
 ms.author: "mblome"
 manager: "ghogen"

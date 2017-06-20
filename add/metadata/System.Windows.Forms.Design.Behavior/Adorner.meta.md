@@ -68,11 +68,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----

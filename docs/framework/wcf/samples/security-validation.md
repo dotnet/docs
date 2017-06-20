@@ -55,7 +55,7 @@ public void Validate(ServiceDescription serviceDescription,
   
  Adding the following code to Web.config file adds the `serviceValidate` behavior extension for the service to recognize.  
   
-```  
+```xml  
 <system.serviceModel>  
     <extensions>  
         <behaviorExtensions>  
@@ -67,7 +67,7 @@ public void Validate(ServiceDescription serviceDescription,
   
  Once the behavior extension is added to the service, it is now possible to add the `endpointValidate` behavior to the list of behaviors in the Web.config file and thus, to the service.  
   
-```  
+```xml  
 <behaviors>  
     <serviceBehaviors>  
         <behavior name="CalcServiceSEB1">  

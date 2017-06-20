@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.HostProtectionAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.HostProtectionAttribute.SharedState
 ms.technology: 
   - "dotnet-standard"

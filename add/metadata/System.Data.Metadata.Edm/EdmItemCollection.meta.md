@@ -35,15 +35,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Metadata.Edm.EdmItemCollection.#ctor
 ms.technology: 
   - "dotnet-ado"

@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference.AssemblyIdentity
 author: "stevehoag"
 ms.author: "shoag"

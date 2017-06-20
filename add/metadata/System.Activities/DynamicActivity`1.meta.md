@@ -125,15 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetClassName
 ms.technology: 
   - "dotnet-standard"
@@ -153,15 +144,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.DynamicActivity`1.Attributes
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.DynamicActivity`1.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

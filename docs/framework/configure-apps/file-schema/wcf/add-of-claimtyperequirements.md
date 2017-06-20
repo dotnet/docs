@@ -28,7 +28,7 @@ Specifies the types of required and optional claims expected to appear in the fe
   
 ## Syntax  
   
-```  
+```xml  
 <claimTypeRequirements>  
       <add claimType="URI"  
            isOptional="Boolean" />  
@@ -60,7 +60,7 @@ Specifies the types of required and optional claims expected to appear in the fe
 ## Example  
  The following configuration adds two claim type requirements to a security binding.  
   
-```  
+```xml  
 <bindings>  
     <wsFederationHttpBinding>  
       <binding name="myFederatedBinding">  

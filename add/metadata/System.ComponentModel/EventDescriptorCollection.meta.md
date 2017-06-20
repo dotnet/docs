@@ -275,15 +275,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.EventDescriptorCollection.Sort
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.EventDescriptorCollection.System#Collections#IList#Item(System.Int32)
 ms.author: "jimwalk"
 manager: "martinek"

@@ -368,15 +368,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle
 ms.technology: 
   - "dotnet-webforms"

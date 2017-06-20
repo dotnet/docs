@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption
 ms.technology: 
   - "dotnet-standard"

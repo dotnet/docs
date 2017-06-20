@@ -27,13 +27,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.EventWatcherOptions.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.EventWatcherOptions.Clone
 ms.technology: 
   - "dotnet-standard"

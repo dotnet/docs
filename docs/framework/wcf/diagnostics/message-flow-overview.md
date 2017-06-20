@@ -38,7 +38,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
 5.  Add the following code to the App.Config file created in the previous step.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <diagnostics>  
         <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
@@ -50,7 +50,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
 7.  To trace the events from the client to the server, add the following to the application configuration file in the Client project.  
   
-    ```  
+    ```xml  
     <diagnostics>  
       <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
     </diagnostics>  
@@ -71,7 +71,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
 10. Refresh and examine the **Analytic**  log.  Look for an event with Event ID 220.  Select the event, and click the **Details** tab in the preview pane. This event will contain the correlation ID for the calling activity.  
   
-    ```  
+    ```xml  
     <Correlation ActivityID="{A066CCF1-8AB3-459B-B62F-F79F957A5036}" />  
     ```  
   
@@ -80,7 +80,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
 11. In some cases, the ActivityID can change from the original GUID to a new ActivityID. In that case, a transfer event is emitted. This event ID is 499, and the event will contain the following data in the header.  
   
-    ```  
+    ```xml  
     <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">  
         <System>  
             <Provider Name="Microsoft-Windows-Application Server-Applications" Guid="{c651f5f6-1c0d-492e-8ae1-b4efd7c9d503}" />   

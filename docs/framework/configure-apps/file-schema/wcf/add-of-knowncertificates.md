@@ -29,7 +29,7 @@ Adds an X.509 certificate to the collection of known certificates.
   
 ## Syntax  
   
-```  
+```xml  
 <knownCertificates>   
    <add findValue="String"  
       storeLocation="CurrentUser/LocalMachine"  
@@ -88,7 +88,7 @@ Adds an X.509 certificate to the collection of known certificates.
   
  The [\<issuedTokenAuthentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add> element \<knownCertificates> Element](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
-```  
+```xml  
 <issuedTokenAuthentication>  
    <knownCertificates>  
       <add findValue="www.contoso.com"   
@@ -105,7 +105,7 @@ Adds an X.509 certificate to the collection of known certificates.
 ## Example  
  The following example adds certificate to the repository for any STS certificates.  
   
-```  
+```xml  
 <serviceBehaviors>  
  <behavior name="myServiceBehavior">  
   <serviceCredentials>  

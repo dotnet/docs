@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ClientServices.ClientFormsIdentity.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Web.ClientServices.ClientFormsIdentity.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-webforms"

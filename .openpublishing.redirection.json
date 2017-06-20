@@ -1,13 +1,13 @@
 {
     "redirections": [
         {
-            "source_path": "docs/about/index.md", 
+            "source_path": "docs/about/index.md",
             "redirect_url": "/dotnet/standard/index"
         },
         {
-            "source_path": "docs/about/products.md", 
+            "source_path": "docs/about/products.md",
             "redirect_url": "/dotnet/standard/components"
-        },         
+        },
         {
             "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete"
@@ -17,11 +17,11 @@
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals"
         },
         {
-            "source_path": "docs/core/app-types.md", 
+            "source_path": "docs/core/app-types.md",
             "redirect_url": "/dotnet/core/deploying/index"
         },
         {
-            "source_path": "docs/core/deploying/applications.md", 
+            "source_path": "docs/core/deploying/applications.md",
             "redirect_url": "/dotnet/core/deploying/index"
         },
         {
@@ -203,10 +203,10 @@
             "redirect_url": "/dotnet/core/windows-prerequisites"
         },
         {
-            "source_path": "docs/core/testing/using-mstest-on-windows.md", 
+            "source_path": "docs/core/testing/using-mstest-on-windows.md",
             "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
-            "redirect_document_id": true           
-        },        
+            "redirect_document_id": true
+        },
         {
             "source_path": "docs/core/tools/project-json.md",
             "redirect_url": "/dotnet/core/tools/project-json-to-csproj"
@@ -216,17 +216,17 @@
             "redirect_url": "/dotnet/core/tools/dotnet-test"
         },
         {
-            "source_path": "docs/core/tutorials/libraries-with-vs.md", 
+            "source_path": "docs/core/tutorials/libraries-with-vs.md",
             "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
-        },               
+        },
         {
             "source_path": "docs/core/tutorials/target-dotnetcore-with-msbuild.md",
             "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
         },
         {
-            "source_path": "docs/core/tutorials/using-on-windows.md", 
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"                         
-        },        
+            "source_path": "docs/core/tutorials/using-on-windows.md",
+            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+        },
         {
             "source_path": "docs/csharp/csharp-6.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-6",
@@ -242,31 +242,31 @@
             "redirect_url": "/dotnet/csharp/concepts"
         },
         {
-            "source_path": "docs/csharp/generics.md", 
+            "source_path": "docs/csharp/generics.md",
             "redirect_url": "/dotnet/csharp/programming-guide/generics/index"
-        },        
+        },
         {
             "source_path": "docs/csharp/getting-started/breaking-changes-in-visual-studio-2013.md",
             "redirect_url": "https://msdn.microsoft.com/library/hh678682(v=vs.120)"
         },
         {
-            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md", 
+            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/getting-started/consuming-library-with-visual-studio",
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md", 
+            "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/csharp/getting-started/debugging-with-visual-studio"
         },
         {
-            "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md", 
+            "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/getting-started/library-with-visual-studio",
             "redirect_document_id": true
-        },     
+        },
         {
-            "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md", 
+            "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/csharp/getting-started/publishing-with-visual-studio"
-        },        
+        },
         {
             "source_path": "docs/csharp/getting-started/whats-new.md",
             "redirect_url": "/dotnet/csharp/whats-new/index"
@@ -277,39 +277,39 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/csharp/interactive.md", 
-            "redirect_url": "/dotnet/csharp/index"
-        },        
-        {
-            "source_path": "docs/csharp/interactive-with-bash.md", 
+            "source_path": "docs/csharp/interactive.md",
             "redirect_url": "/dotnet/csharp/index"
         },
         {
-            "source_path": "docs/csharp/interactive-with-powershell.md", 
+            "source_path": "docs/csharp/interactive-with-bash.md",
             "redirect_url": "/dotnet/csharp/index"
         },
         {
-            "source_path": "docs/csharp/interactive-with-visualstudio.md", 
+            "source_path": "docs/csharp/interactive-with-powershell.md",
             "redirect_url": "/dotnet/csharp/index"
         },
         {
-            "source_path": "docs/csharp/interfaces.md", 
+            "source_path": "docs/csharp/interactive-with-visualstudio.md",
+            "redirect_url": "/dotnet/csharp/index"
+        },
+        {
+            "source_path": "docs/csharp/interfaces.md",
             "redirect_url": "/dotnet/csharp/programming-guide/interfaces/index"
         },
         {
-            "source_path": "docs/csharp/interop.md", 
+            "source_path": "docs/csharp/interop.md",
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
-            "source_path": "docs/csharp/namespaces-and-assemblies.md", 
+            "source_path": "docs/csharp/namespaces-and-assemblies.md",
             "redirect_url": "/dotnet/csharp/programming-guide/namespaces/index"
         },
         {
-            "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md", 
+            "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
             "redirect_url": "/dotnet/csharp/async/"
         },
         {
-            "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md", 
+            "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
         },
         {
@@ -317,89 +317,89 @@
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md",
             "redirect_url": "/dotnet/csharp/linq/create-a-nested-group"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md",
             "redirect_url": "/dotnet/csharp/linq/dynamically-specify-predicate-filters-at-runtime"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md",
             "redirect_url": "/dotnet/csharp/linq/group-query-results"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-group-results-by-contiguous-keys.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-group-results-by-contiguous-keys.md",
             "redirect_url": "/dotnet/csharp/linq/group-results-by-contiguous-keys"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md",
             "redirect_url": "/dotnet/csharp/linq/handle-exceptions-in-query-expressions"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-handle-null-values-in-query-expressions.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-handle-null-values-in-query-expressions.md",
             "redirect_url": "/dotnet/csharp/linq/handle-null-values-in-query-expressions"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md",
             "redirect_url": "/dotnet/csharp/linq/join-by-using-composite-keys"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-order-the-results-of-a-join-clause.md",
             "redirect_url": "/dotnet/csharp/linq/order-the-results-of-a-join-clause"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md",
             "redirect_url": "/dotnet/csharp/linq/perform-a-subquery-on-a-grouping-operation"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md",
             "redirect_url": "/dotnet/csharp/linq/perform-custom-join-operations"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md",
             "redirect_url": "/dotnet/csharp/linq/perform-grouped-joins"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md",
             "redirect_url": "/dotnet/csharp/linq/perform-inner-joins"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md",
             "redirect_url": "/dotnet/csharp/linq/perform-left-outer-joins"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-query-a-collection-of-objects.md",
             "redirect_url": "/dotnet/csharp/linq/query-a-collection-of-objects"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-return-a-query-from-a-method.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-return-a-query-from-a-method.md",
             "redirect_url": "/dotnet/csharp/linq/return-a-query-from-a-method"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-store-the-results-of-a-query-in-memory.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-store-the-results-of-a-query-in-memory.md",
             "redirect_url": "/dotnet/csharp/linq/store-the-results-of-a-query-in-memory"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-write-linq-queries.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/how-to-write-linq-queries.md",
             "redirect_url": "/dotnet/csharp/linq/write-linq-queries"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/index.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/index.md",
             "redirect_url": "/dotnet/csharp/linq/index"
         },
         {
-            "source_path": "docs/csharp/programming-guide/linq-query-expressions/query-expression-basics.md", 
+            "source_path": "docs/csharp/programming-guide/linq-query-expressions/query-expression-basics.md",
             "redirect_url": "/dotnet/csharp/linq/query-expression-basics"
         },
         {
-            "source_path": "docs/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md", 
-            "redirect_url": "/dotnet/csharp/programming-guide/main-and-command-args/index" 
+            "source_path": "docs/csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/main-and-command-args/index"
         },
         {
-            "source_path": "docs/csharp/type-system.md", 
+            "source_path": "docs/csharp/type-system.md",
             "redirect_url": "/dotnet/csharp/programming-guide/types/index"
-        },        
+        },
         {
             "source_path": "docs/csharp/whats-new.md",
             "redirect_url": "/dotnet/csharp/whats-new/index",
@@ -434,10 +434,10 @@
             "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
         },
         {
-            "source_path": "docs/framework/docker/aspnetmvc.md", 
+            "source_path": "docs/framework/docker/aspnetmvc.md",
             "redirect_url": "/aspnet/mvc/overview/deployment/docker-aspnetmvc",
             "redirect_document_id": true
-        },        
+        },
         {
             "source_path": "docs/framework/whats-new/whats-new.md",
             "redirect_url": "/dotnet/framework/whats-new/index",
@@ -483,7 +483,7 @@
             "redirect_url": "/dotnet/core/tutorials/target-dotnetcore-with-msbuild"
         },
         {
-            "source_path": "docs/standard/about.md", 
+            "source_path": "docs/standard/about.md",
             "redirect_url": "/dotnet/standard/index"
         },
         {
@@ -671,9 +671,9 @@
             "redirect_url": "/dotnet/standard/"
         },
         {
-            "source_path": "docs/standard/data/index.md", 
+            "source_path": "docs/standard/data/index.md",
             "redirect_url": "/dotnet/standard/data/xml/index"
-        },         
+        },
         {
             "source_path": "docs/standard/exceptions.md",
             "redirect_url": "/dotnet/standard/exceptions/",
@@ -727,7 +727,12 @@
             "source_path": "docs/standard/getting-started.md",
             "redirect_url": "/dotnet/standard/get-started",
             "redirect_document_id": true
-        },        
+        },
+        {
+            "source_path": "docs/standard/library.md",
+            "redirect_url": "/dotnet/standard/net-standard",
+            "redirect_document_id": true
+        },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
             "redirect_url": "/dotnet/csharp/tutorials/microservices"
@@ -769,8 +774,88 @@
             "redirect_url": "/visualstudio/ide/visual-studio-ide"
         },
         {
-            "source_path": "docs/visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md", 
+            "source_path": "docs/visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md",
             "redirect_url": "/dotnet/visual-basic/getting-started/breaking-changes-in-visual-studio"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-2.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-2.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-7.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-2.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/retargeting/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-2.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-1.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
+            "redirect_url": "/dotnet/articles/framework/migration-guide/runtime/index"
         }
     ]
 }

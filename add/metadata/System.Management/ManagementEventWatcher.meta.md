@@ -69,13 +69,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementEventWatcher.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementEventWatcher.#ctor(System.Management.ManagementScope,System.Management.EventQuery)
 ms.technology: 
   - "dotnet-standard"

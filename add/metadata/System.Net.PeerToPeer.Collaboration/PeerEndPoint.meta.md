@@ -65,12 +65,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.PeerEndPoint.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.Collaboration.PeerEndPoint.Dispose
 ms.author: "bobdel"
 manager: "markl"
@@ -96,12 +90,6 @@ manager: "markl"
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerEndPoint.Equals(System.Object,System.Object)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerEndPoint.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

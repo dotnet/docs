@@ -153,15 +153,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Data.CompositeCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Data.CompositeCollection.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-wpf"

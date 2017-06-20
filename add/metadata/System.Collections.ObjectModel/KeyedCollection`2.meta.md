@@ -146,15 +146,6 @@ ms.technology:
 ---
 
 ---
-uid: System.Collections.ObjectModel.KeyedCollection`2.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ObjectModel.KeyedCollection`2.Contains
 ms.technology: 
   - "dotnet-standard"

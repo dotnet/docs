@@ -978,15 +978,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.TypeBuilder.GetEvents
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.TypeBuilder.GetConstructor
 ms.technology: 
   - "dotnet-standard"
@@ -1063,15 +1054,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor(System.Reflection.MethodAttributes)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Emit.TypeBuilder.MakeArrayType
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -35,7 +35,7 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
 ## Generics and XAML 2009 Features  
  If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [XAML 2009 built-in types](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md) as information items in `x:TypeArguments`. For example, you could declare the following (prefix mappings not shown, but `x` is the XAML language XAML namespace for XAML 2009):  
   
-```  
+```xaml  
 <my:BusinessObject x:TypeArguments="x:String,x:Int32"/>  
 ```  
   

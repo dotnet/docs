@@ -39,7 +39,7 @@ Specifies which exceptions can be thrown.
   
 ## Syntax  
   
-```  
+```xml  
 <exception cref="member">description</exception>  
 ```  
   

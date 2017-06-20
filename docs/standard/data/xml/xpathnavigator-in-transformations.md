@@ -30,7 +30,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random acces
   
 ## test.xsl  
   
-```  
+```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl ="urn:schemas-microsoft-com:xslt"  
                 xmlns:user="http://www.adventure-works.com"  
@@ -63,7 +63,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random acces
   
 ## test.xml  
   
-```  
+```xml  
 <root>Some text</root>  
 ```  
   
@@ -116,7 +116,7 @@ public class sample
 ## Output  
  The result of the transformation is found in the file **out.xml**:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>Joe  
 ```  
   

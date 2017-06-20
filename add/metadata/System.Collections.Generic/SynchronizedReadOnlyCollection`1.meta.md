@@ -255,15 +255,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Collections.Generic.SynchronizedReadOnlyCollection`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Collections.Generic.SynchronizedReadOnlyCollection`1.Count
 ms.technology: 
   - "dotnet-standard"

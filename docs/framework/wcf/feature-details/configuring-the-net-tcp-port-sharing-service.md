@@ -20,7 +20,7 @@ Self-hosted services that use the Net.TCP transport can control several advanced
   
  When a net.tcp binding enables port sharing (by setting `portSharingEnabled =true` on the transport binding element), it implicitly allows an external process (namely the SMSvcHost.exe, which hosts the Net.TCP Port Sharing Service) to manage the TCP socket on its behalf. For example, when using TCP, specify:  
   
-```  
+```xml  
     <tcpTransport   
         portSharingEnabled="true"  
 />  
@@ -32,7 +32,7 @@ Self-hosted services that use the Net.TCP transport can control several advanced
   
  The following example illustrates a sample SMSvcHost.exe.config, with the default settings for all configurable values stated explicitly.  
   
-```  
+```xml  
 <configuration>  
    <system.serviceModel.activation>  
        <net.tcp listenBacklog="16" <!—16 * # of processors -->  

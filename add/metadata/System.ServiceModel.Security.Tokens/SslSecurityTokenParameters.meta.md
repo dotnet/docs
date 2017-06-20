@@ -17,15 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.InitializeSecurityTokenRequirement(System.IdentityModel.Selectors.SecurityTokenRequirement)
 ms.technology: 
   - "dotnet-standard"

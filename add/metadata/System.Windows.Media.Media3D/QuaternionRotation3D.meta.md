@@ -51,15 +51,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor(System.Windows.Media.Media3D.Quaternion)
 ms.technology: 
   - "dotnet-wpf"

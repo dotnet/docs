@@ -49,7 +49,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ### Configuration  
  The following configuration can be used instead of the code.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -106,7 +106,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ### Configuration  
  The following configuration specifies the client certificate using an endpoint behavior. For more information about certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). The code also uses an <`identity`> element to specify a Domain Name System (DNS) of the expected server identity. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] identity, see [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

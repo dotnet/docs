@@ -67,7 +67,7 @@ Information about generic types is obtained in the same way as information about
      [!code-csharp[HowToGeneric#8](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToGeneric/CS/ur.cs#8)]
      [!code-vb[HowToGeneric#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#8)]  
   
-8.  The special constraint attributes are flags, and the same flag (<xref:System.Reflection.GenericParameterAttributes?displayProperty=fullName>) that represents no special constraints also represents no covariance or contravariance. Thus, to test for either of these conditions you must use the appropriate mask. In this case, use <xref:System.Reflection.GenericParameterAttributes?displayProperty=fullName> to isolate the special constraint flags.  
+8.  The special constraint attributes are flags, and the same flag (<xref:System.Reflection.GenericParameterAttributes.None?displayProperty=fullName>) that represents no special constraints also represents no covariance or contravariance. Thus, to test for either of these conditions you must use the appropriate mask. In this case, use <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=fullName> to isolate the special constraint flags.  
   
      [!code-cpp[HowToGeneric#9](../../../samples/snippets/cpp/VS_Snippets_CLR/HowToGeneric/cpp/ur.cpp#9)]
      [!code-csharp[HowToGeneric#9](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToGeneric/CS/ur.cs#9)]

@@ -17,15 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.SoapAttributes.#ctor
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.SoapAttributes.#ctor(System.Reflection.ICustomAttributeProvider)
 ms.technology: 
   - "dotnet-wcf"

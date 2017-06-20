@@ -59,12 +59,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.Start
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Sockets.TcpListener.BeginAcceptTcpClient(System.AsyncCallback,System.Object)
 ms.author: "bobdel"
 manager: "markl"

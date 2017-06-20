@@ -206,15 +206,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationLink.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationLink.CreateSelfLink(System.Uri)
 ms.technology: 
   - "dotnet-standard"

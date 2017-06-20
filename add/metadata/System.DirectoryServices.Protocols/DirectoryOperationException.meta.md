@@ -41,13 +41,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.DirectoryOperationException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.DirectoryOperationException.#ctor(System.DirectoryServices.Protocols.DirectoryResponse,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

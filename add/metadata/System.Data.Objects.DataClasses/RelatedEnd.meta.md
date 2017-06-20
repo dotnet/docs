@@ -161,15 +161,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Objects.DataClasses.RelatedEnd.Load
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Objects.DataClasses.RelatedEnd.RelationshipName
 ms.technology: 
   - "dotnet-ado"

@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeObjectCreateExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeObjectCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])
 ms.technology: 
   - "dotnet-standard"

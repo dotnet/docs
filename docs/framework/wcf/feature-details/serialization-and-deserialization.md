@@ -64,7 +64,7 @@ manager: "erikre"
   
  Serializing an instance of the `Person` class produces XML similar to the following.  
   
-```  
+```xml  
 <PersonContract xmlns="http://schemas.contoso.com">  
   <AddressMember>  
     <StreetMember>123 Main Street</StreetMember>  
@@ -103,7 +103,7 @@ manager: "erikre"
   
  Notice that `billTo` and `shipTo` fields are set to the same object instance. However, the generated XML duplicates the information duplicated, and looks similar to the following XML.  
   
-```  
+```xml  
 <PurchaseOrder>  
   <billTo><street>123 Main St.</street></billTo>  
   <shipTo><street>123 Main St.</street></shipTo>  
@@ -120,7 +120,7 @@ manager: "erikre"
   
  For these reasons, some `DataContractSerializer` constructor overloads have a `preserveObjectReferences` parameter (the default is `false`). When this parameter is set to `true`, a special method of encoding object references, which only [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] understands, is used. When set to `true`, the XML code example now resembles the following.  
   
-```  
+```xml  
 <PurchaseOrder ser:id="1">  
   <billTo ser:id="2"><street ser:id="3">123 Main St.</street></billTo>  
   <shipTo ser:ref="2"/>  
@@ -161,7 +161,7 @@ manager: "erikre"
   
  This produces XML similar to the following.  
   
-```  
+```xml  
 <Person>  
   <Name>Jay Hamlin</Name>  
   <Address>123 Main St.</Address>  
@@ -181,7 +181,7 @@ manager: "erikre"
   
  This produces XML similar to the following.  
   
-```  
+```xml  
 <Person serializedBy="myCode">  
   <Name>Jay Hamlin</Name>  
   <Address>123 Main St.</Address>  
@@ -195,7 +195,7 @@ manager: "erikre"
   
  This produces XML similar to the following.  
   
-```  
+```xml  
 <MyCustomWrapper>  
   <Name>Jay Hamlin</Name>  
   <Address>123 Main St.</Address>  
@@ -235,7 +235,7 @@ manager: "erikre"
   
 -   Security. Any type found in the XML being deserialized is loaded. This can be exploited to force the loading of malicious types. Using the `NetDataContractSerializer` with untrusted data should be done only if a *Serialization Binder* is used (using the <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder%2A> property or constructor parameter). The binder permits only safe types to be loaded. The Binder mechanism is identical to the one that types in the <xref:System.Runtime.Serialization> namespace use.  
   
--   Versioning. Using full type and assembly names in the XML severely restricts how types can be versioned. The following cannot be changed: type names, namespaces, assembly names, and assembly versions. Setting the <xref:System.Runtime.Serialization.NetDataContractSerializer.AssemblyFormat%2A> property or constructor parameter to <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle> instead of the default value of <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle> allows for assembly version changes, but not for generic parameter types.  
+-   Versioning. Using full type and assembly names in the XML severely restricts how types can be versioned. The following cannot be changed: type names, namespaces, assembly names, and assembly versions. Setting the <xref:System.Runtime.Serialization.NetDataContractSerializer.AssemblyFormat%2A> property or constructor parameter to <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple> instead of the default value of <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Full> allows for assembly version changes, but not for generic parameter types.  
   
 -   Interoperability. Because [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type and assembly names are included in the XML, platforms other than the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] cannot access the resulting data.  
   

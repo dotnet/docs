@@ -32,7 +32,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
+```xml  
 <add issuerAddress="string"  
      behaviorConfiguraton="string" />  
 ```  

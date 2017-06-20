@@ -232,15 +232,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridTextBoxColumn.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)
 ms.technology: 
   - "dotnet-winforms"

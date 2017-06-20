@@ -59,14 +59,6 @@ ms.technology:
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.XmlSiteMapProvider.RootNode
 ms.technology: 
   - "dotnet-webforms"

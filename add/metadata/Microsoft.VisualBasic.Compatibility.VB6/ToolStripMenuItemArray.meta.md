@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ToolStripMenuItemArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.ToolStripMenuItemArray.DoubleClick
 author: "stevehoag"
 ms.author: "shoag"

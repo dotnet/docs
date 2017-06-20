@@ -101,14 +101,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Transform3DCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.Transform3DCollection.Insert(System.Int32,System.Windows.Media.Media3D.Transform3D)
 ms.technology: 
   - "dotnet-wpf"

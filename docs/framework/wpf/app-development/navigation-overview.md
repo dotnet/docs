@@ -602,7 +602,7 @@ manager: "wpickett"
   
  ![Frame and Page diagram](../../../../docs/framework/wpf/app-development/media/navigationoverviewfigure7.png "NavigationOverviewFigure7")  
   
- In this case, you can configure the                  <xref:System.Windows.Controls.Frame> to use its own journal by setting the                  <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property of the                  <xref:System.Windows.Controls.Frame> to                  <xref:System.Windows.Navigation.JournalOwnership>. This is shown in the following markup.  
+ In this case, you can configure the                  <xref:System.Windows.Controls.Frame> to use its own journal by setting the                  <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property of the                  <xref:System.Windows.Controls.Frame> to                  <xref:System.Windows.Navigation.JournalOwnership.OwnsJournal>. This is shown in the following markup.  
   
  [!code-xml[NavigationOverviewSnippets#FrameHostPageOwnJournalXAML1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHostPageOwnJournal.xaml#framehostpageownjournalxaml1)]  
 [!code-xml[NavigationOverviewSnippets#FrameHostPageOwnJournalXAML2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHostPageOwnJournal.xaml#framehostpageownjournalxaml2)]  
@@ -617,7 +617,7 @@ manager: "wpickett"
 > [!NOTE]
 >  If a                      <xref:System.Windows.Controls.Frame> is part of content that is hosted in a                      <xref:System.Windows.Window>,                      <xref:System.Windows.Controls.Frame> uses its own journal and, consequently, displays its own navigation                      [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)].  
   
- If your user experience requires a                  <xref:System.Windows.Controls.Frame> to provide its own journal without showing the navigation                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], you can hide the navigation                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] by setting the                  <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> to                  <xref:System.Windows.Visibility>. This is shown in the following markup.  
+ If your user experience requires a                  <xref:System.Windows.Controls.Frame> to provide its own journal without showing the navigation                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], you can hide the navigation                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] by setting the                  <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> to                  <xref:System.Windows.Visibility.Hidden>. This is shown in the following markup.  
   
  [!code-xml[NavigationOverviewSnippets#FrameHostPageHidesUIXAML1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHostPageOwnHiddenJournal.xaml#framehostpagehidesuixaml1)]  
 [!code-xml[NavigationOverviewSnippets#FrameHostPageHidesUIXAML2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHostPageOwnHiddenJournal.xaml#framehostpagehidesuixaml2)]  

@@ -137,7 +137,7 @@ manager: "erikre"
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   
--   <xref:System.Diagnostics.TraceOptions.CallStack?displayProperty=fullName>  
+-   <xref:System.Diagnostics.TraceOptions.Callstack?displayProperty=fullName>  
   
 -   <xref:System.Diagnostics.TraceOptions.ProcessId?displayProperty=fullName>  
   

@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.CmsSigner.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm
 ms.technology: 
   - "dotnet-standard"

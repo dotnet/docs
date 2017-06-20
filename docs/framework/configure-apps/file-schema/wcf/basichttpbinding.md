@@ -29,7 +29,7 @@ Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-m
   
 ## Syntax  
   
-```  
+```xml  
 <basicHttpBinding>  
    <binding   
        allowCookies="Boolean"  

@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Design.EntityClassGenerator.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Design.EntityClassGenerator.Version
 ms.technology: 
   - "dotnet-ado"

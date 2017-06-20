@@ -159,14 +159,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.InputBindingCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.InputBindingCollection.Count
 ms.technology: 
   - "dotnet-wpf"

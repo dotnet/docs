@@ -224,15 +224,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Environment.GetEnvironmentVariables
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Environment.CommandLine
 ms.technology: 
   - "dotnet-standard"

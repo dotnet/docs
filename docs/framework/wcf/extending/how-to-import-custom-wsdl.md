@@ -60,7 +60,7 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
   
 2.  Configure the client application to use the custom WSDL importer. Note that if you are using Svcutil.exe, you should add this configuration to the configuration file for Svcutil.exe (Svcutil.exe.config):  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
           <client>  
             <endpoint   

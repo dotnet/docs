@@ -95,12 +95,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Utilities.CommandLineBuilder.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Utilities.CommandLineBuilder.AppendSwitchIfNotNull(System.String,Microsoft.Build.Framework.ITaskItem)
 ms.author: "susanno"
 manager: "douge"

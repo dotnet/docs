@@ -74,10 +74,3 @@ author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
 ---
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----

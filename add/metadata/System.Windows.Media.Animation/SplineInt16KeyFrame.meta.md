@@ -43,15 +43,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineInt16KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineInt16KeyFrame.#ctor(System.Int16)
 ms.technology: 
   - "dotnet-wpf"

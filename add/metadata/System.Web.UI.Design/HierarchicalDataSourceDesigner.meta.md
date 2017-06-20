@@ -31,12 +31,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.HierarchicalDataSourceDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.HierarchicalDataSourceDesigner.OnDataSourceChanged(System.EventArgs)
 ms.technology: 
   - "dotnet-webforms"

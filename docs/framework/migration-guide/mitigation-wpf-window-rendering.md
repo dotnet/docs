@@ -28,7 +28,7 @@ In the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] running on Windows 8
   
 -   By adding the `<EnableMultiMonitorDisplayClipping>` element to the `<appSettings>` section of your application configuration file, you can disable or enable this behavior on apps running on Windows 8 or later. For example, the following configuration section disables rendering without clipping:  
   
-    ```  
+    ```xml  
     <appSettings>  
         <add key="EnableMultiMonitorDisplayClipping" value="true"/>  
       </appSettings>  

@@ -44,15 +44,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityViewGenerator.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.EntityViewGenerator.GenerateViews
 ms.technology: 
   - "dotnet-ado"

@@ -39,7 +39,7 @@ The <xref:System.Windows.Forms.Control.AutoSize%2A> property enables a control t
 |A control's <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties are always honored, regardless of the value of its <xref:System.Windows.Forms.Control.AutoSize%2A> property.|The <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties are not affected by the <xref:System.Windows.Forms.Control.AutoSize%2A> property.|  
 |There is no minimum size set by default.|This means that if a control is set to shrink under <xref:System.Windows.Forms.Control.AutoSize%2A> and it has no contents, the value of its <xref:System.Windows.Forms.Control.Size%2A> property is 0,0. In this case, your control will shrink to a point, and it will not be readily visible.|  
 |If a control does not implement the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method, the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method returns last value assigned to the <xref:System.Windows.Forms.Control.Size%2A> property.|This means that setting <xref:System.Windows.Forms.Control.AutoSize%2A> to `true` will have no effect.|  
-|A control in a <xref:System.Windows.Forms.TableLayoutPanel> cell always shrinks to fit in the cell until its <xref:System.Windows.Forms.Control.MinimumSize%2A> is reached.|This size is enforced as a maximum size. This is not the case when the cell is part of an <xref:System.Windows.Forms.SizeType> row or column.|  
+|A control in a <xref:System.Windows.Forms.TableLayoutPanel> cell always shrinks to fit in the cell until its <xref:System.Windows.Forms.Control.MinimumSize%2A> is reached.|This size is enforced as a maximum size. This is not the case when the cell is part of an <xref:System.Windows.Forms.SizeType.AutoSize> row or column.|  
   
 ## AutoSizeMode Property  
  The `AutoSizeMode` property provides more fine-grained control over the default <xref:System.Windows.Forms.Control.AutoSize%2A> behavior. The `AutoSizeMode` property specifies how a control sizes itself to its content. The content, for example, could be the text for a <xref:System.Windows.Forms.Button> control or the child controls for a container.  
@@ -63,13 +63,13 @@ The <xref:System.Windows.Forms.Control.AutoSize%2A> property enables a control t
 ## AutoSize in the Design Environment  
  The following table describes the sizing behavior of a control at design time, based on the value of its <xref:System.Windows.Forms.Control.AutoSize%2A> and `AutoSizeMode` properties.  
   
- Override the <xref:System.Windows.Forms.Design.ControlDesigner.SelectionRules%2A> property to determine whether a given control is in a user-resizable state. In the following table, "cannot" means<xref:System.Windows.Forms.Design.SelectionRules> only, "can" means <xref:System.Windows.Forms.Design.SelectionRules> and <xref:System.Windows.Forms.Design.SelectionRules>.  
+ Override the <xref:System.Windows.Forms.Design.ControlDesigner.SelectionRules%2A> property to determine whether a given control is in a user-resizable state. In the following table, "cannot" means<xref:System.Windows.Forms.Design.SelectionRules.Moveable> only, "can" means <xref:System.Windows.Forms.Design.SelectionRules.AllSizeable> and <xref:System.Windows.Forms.Design.SelectionRules.Moveable>.  
   
 |AutoSize settings|Design-time sizing gesture|  
 |-----------------------|---------------------------------|  
 |-   <xref:System.Windows.Forms.Control.AutoSize%2A> = `true`<br />-   No `AutoSizeMode` property.|The user cannot resize the control at design time, except for the following controls:<br /><br /> -   <xref:System.Windows.Forms.TextBox><br />-   <xref:System.Windows.Forms.MaskedTextBox><br />-   <xref:System.Windows.Forms.RichTextBox><br />-   <xref:System.Windows.Forms.TrackBar>|  
-|-   <xref:System.Windows.Forms.Control.AutoSize%2A> = `true`<br />-   `AutoSizeMode` = <xref:System.Windows.Forms.AutoSizeMode>|The user cannot resize the control at design time.|  
-|-   <xref:System.Windows.Forms.Control.AutoSize%2A> = `true`<br />-   `AutoSizeMode` = <xref:System.Windows.Forms.AutoSizeMode>|The user can resize the control at design time. When the <xref:System.Windows.Forms.Control.Size%2A> property is set, the user can only increase the size of the control.|  
+|-   <xref:System.Windows.Forms.Control.AutoSize%2A> = `true`<br />-   `AutoSizeMode` = <xref:System.Windows.Forms.AutoSizeMode.GrowAndShrink>|The user cannot resize the control at design time.|  
+|-   <xref:System.Windows.Forms.Control.AutoSize%2A> = `true`<br />-   `AutoSizeMode` = <xref:System.Windows.Forms.AutoSizeMode.GrowOnly>|The user can resize the control at design time. When the <xref:System.Windows.Forms.Control.Size%2A> property is set, the user can only increase the size of the control.|  
 |-   <xref:System.Windows.Forms.Control.AutoSize%2A> = `false`, or <xref:System.Windows.Forms.Control.AutoSize%2A> property is hidden.|User can resize the control at design time.|  
   
 > [!NOTE]

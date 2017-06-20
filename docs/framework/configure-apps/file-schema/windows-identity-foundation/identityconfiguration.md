@@ -23,7 +23,7 @@ Specifies service-level identity settings.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration  
       name=xs:string  
@@ -92,7 +92,7 @@ Specifies service-level identity settings.
 ## Example  
  The following example creates an identity configuration named "alternateConfiguration". The identity configuration specifies default settings.  
   
-```  
+```xml  
 <system.identityModel>  
     <identityConfiguration name="alternateConfiguration"/>  
 </system.identityModel>  

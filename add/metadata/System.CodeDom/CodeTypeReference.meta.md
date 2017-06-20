@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeReference.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeReference.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

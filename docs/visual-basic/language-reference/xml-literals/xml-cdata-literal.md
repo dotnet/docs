@@ -42,7 +42,7 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
   
 ## Syntax  
   
-```  
+```xml  
 <![CDATA[content]]>  
 ```  
   

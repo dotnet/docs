@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;include&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <include file='filename' path='tagpath[@name="id"]' />  
 ```  
   
@@ -69,7 +69,7 @@ translation.priority.ht:
   
  The second file, xml_include_tag.doc, contains the following documentation comments:  
   
-```  
+```xml  
 <MyDocs>  
   
 <MyMembers name="test">  
@@ -88,9 +88,9 @@ The summary for this other type.
 ```  
   
 ## Program Output  
- The following output is generated when you compile the Test and Test2 classes with the following command line: `/doc:DocFileName.xml.` In Visual Studio, you specify the XML doc comments option in the Build pane of the Project Designer. When the C# compiler sees the \<inclue> tag, it will search for documentation comments in xml_include_tag.doc instead of the current source file. The compiler then generates DocFileName.xml, and this is the file that is consumed by documentation tools such as [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061) to produce the final documentation.  
+ The following output is generated when you compile the Test and Test2 classes with the following command line: `/doc:DocFileName.xml.` In Visual Studio, you specify the XML doc comments option in the Build pane of the Project Designer. When the C# compiler sees the \<inclue> tag, it will search for documentation comments in xml_include_tag.doc instead of the current source file. The compiler then generates DocFileName.xml, and this is the file that is consumed by documentation tools such as [Sandcastle](https://github.com/EWSoftware/SHFB) to produce the final documentation.  
   
-```  
+```xml  
 <?xml version="1.0"?>   
 <doc>   
     <assembly>   

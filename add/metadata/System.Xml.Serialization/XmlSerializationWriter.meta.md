@@ -656,15 +656,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlSerializationWriter.WriteEndElement
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])
 ms.technology: 
   - "dotnet-wcf"

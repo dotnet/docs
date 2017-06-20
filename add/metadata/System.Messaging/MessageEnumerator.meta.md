@@ -95,20 +95,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageEnumerator.RemoveCurrent
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageEnumerator.Dispose
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageEnumerator.MoveNext(System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
@@ -117,13 +103,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageEnumerator.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageEnumerator.MoveNext
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"

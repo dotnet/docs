@@ -220,10 +220,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.ActivityCollection.System#Collections#Generic#IEnumerable{System#Workflow#ComponentModel#Activity}#GetEnumerator
----
-
----
 uid: System.Workflow.ComponentModel.ActivityCollection.System#Collections#Generic#ICollection{System#Workflow#ComponentModel#Activity}#Count
 author: "Erikre"
 ms.author: "erikre"
@@ -263,10 +259,6 @@ uid: System.Workflow.ComponentModel.ActivityCollection.System#Collections#IList#
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.ActivityCollection.System#Collections#Generic#ICollection{System#Workflow#ComponentModel#Activity}#IsReadOnly
 ---
 
 ---

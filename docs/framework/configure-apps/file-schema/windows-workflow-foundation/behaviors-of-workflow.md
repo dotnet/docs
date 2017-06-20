@@ -20,10 +20,10 @@ This element contains the **serviceBehaviors** collection.  Each element in the 
   
 ## Syntax  
   
-```  
+```xml  
 <behaviors>  
-   <serviceBehaviors>  
-   </serviceBehaviors>  
+  <serviceBehaviors>  
+  </serviceBehaviors>  
 </behaviors>  
 ```  
   

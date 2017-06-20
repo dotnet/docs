@@ -2,6 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: .NET Documentation
+description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -325,7 +326,7 @@ title: .NET Documentation
                                             </div>
                                             <div class="cardText">
                                                 <a href="/aspnet/core/tutorials/your-first-mac-aspnet">
-                                                    <h3>ASP.NET on macOS and VS Code</h3>
+                                                    <h3>ASP.NET on macOS and Visual Studio Code</h3>
                                                     <p>Learn how to set up, build, and deploy ASP.NET Core apps on macOS with
                                                         Visual Studio Code.</p>
                                                 </a>

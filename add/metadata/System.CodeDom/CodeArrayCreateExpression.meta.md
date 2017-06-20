@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeArrayCreateExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeArrayCreateExpression.CreateType
 ms.technology: 
   - "dotnet-standard"

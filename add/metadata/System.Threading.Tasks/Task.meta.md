@@ -337,15 +337,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.Task.RunSynchronously
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.Task.WaitAll
 ms.technology: 
   - "dotnet-standard"
@@ -679,15 +670,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.Task.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.Task.WhenAll
 ms.technology: 
   - "dotnet-standard"
@@ -752,15 +734,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Tasks.Task.Delay(System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.Task.Start
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -905,15 +878,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Tasks.Task.Wait(System.Int32,System.Threading.CancellationToken)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.Task.Wait
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

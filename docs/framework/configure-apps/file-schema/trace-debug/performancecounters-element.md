@@ -35,7 +35,7 @@ Specifies the size of the global memory shared by performance counters.
   
 ## Syntax  
   
-```  
+```xml  
 <performanceCounters filemappingsize="524288" />  
 ```  
   

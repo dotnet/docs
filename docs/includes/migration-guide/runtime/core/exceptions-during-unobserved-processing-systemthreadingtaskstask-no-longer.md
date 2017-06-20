@@ -1,0 +1,12 @@
+### Exceptions during unobserved processing in System.Threading.Tasks.Task no longer propagate on finalizer thread
+
+|   |   |
+|---|---|
+|Details|Because the <xref:System.Threading.Tasks.Task?displayProperty=name> class represents an asynchronous operation, it catches all non-severe exceptions that occur during asynchronous processing. In the .NET Framework 4.5, if an exception is not observed and your code never waits on the task, the exception will no longer propagate on the finalizer thread and crash the process during garbage collection. This change enhances the reliability of applications that use the Task class to perform unobserved asynchronous processing.|
+|Suggestion|If an app depends on unobserved asynchronous exceptions propagating to the finalizer thread, the previous behavior can be restored by providing an appropriate handler for the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> event, or by setting a <a href="../../../../framework/configure-apps/file-schema/runtime/throwunobservedtaskexceptions-element.md">runtime configuration element</a>.|
+|Scope|Edge|
+|Version|4.5|
+|Type|Runtime|
+|Affected APIs|<ul><li><xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run(System.Action%2CSystem.Threading.CancellationToken)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run(System.Func%7BSystem.Threading.Tasks.Task%7D)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run(System.Func%7BSystem.Threading.Tasks.Task%7D%2CSystem.Threading.CancellationToken)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run%60%601(System.Func%7B%60%600%7D)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run%60%601(System.Func%7B%60%600%7D%2CSystem.Threading.CancellationToken)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run%60%601(System.Func%7BSystem.Threading.Tasks.Task%7B%60%600%7D%7D)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Run%60%601(System.Func%7BSystem.Threading.Tasks.Task%7B%60%600%7D%7D%2CSystem.Threading.CancellationToken)?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Start?displayProperty=fullName></li><li><xref:System.Threading.Tasks.Task.Start(System.Threading.Tasks.TaskScheduler)?displayProperty=fullName></li></ul>|
+|Analyzers|<ul><li>CD0055</li></ul>|
+

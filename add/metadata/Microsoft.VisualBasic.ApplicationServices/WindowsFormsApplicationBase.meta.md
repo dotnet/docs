@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm
 author: "stevehoag"
 ms.author: "shoag"

@@ -111,14 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Caching.CacheDependency.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Caching.CacheDependency.DependencyDispose
 ms.technology: 
   - "dotnet-webforms"

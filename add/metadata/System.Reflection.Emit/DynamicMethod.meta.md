@@ -213,15 +213,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.DynamicMethod.GetILGenerator
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.DynamicMethod.GetCustomAttributes
 ms.technology: 
   - "dotnet-standard"

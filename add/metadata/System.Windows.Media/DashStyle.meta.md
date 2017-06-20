@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DashStyle.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DashStyle.#ctor(System.Collections.Generic.IEnumerable{System.Double},System.Double)
 ms.technology: 
   - "dotnet-wpf"

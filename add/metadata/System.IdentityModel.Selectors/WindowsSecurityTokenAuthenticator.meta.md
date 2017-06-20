@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-standard"

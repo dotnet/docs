@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.LoadXml(System.Xml.XmlElement)
 ms.technology: 
   - "dotnet-standard"

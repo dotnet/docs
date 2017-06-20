@@ -41,12 +41,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mail.SmtpFailedRecipientException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mail.SmtpFailedRecipientException.#ctor(System.Net.Mail.SmtpStatusCode,System.String,System.String)
 ms.author: "bobdel"
 manager: "markl"

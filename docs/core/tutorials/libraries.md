@@ -36,7 +36,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/library.md) to learn more.
+If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/net-standard.md) to learn more.
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
@@ -231,7 +231,7 @@ Each of these contain the `.dll` files for each target.
 
 ## How to test libraries on .NET Core
 
-It's important to be able to test across platforms.  You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box.  Both either are perfectly suitable for unit testing your library on .NET Core.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that test and source directories live in the same top-level directory.
+It's important to be able to test across platforms.  You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box.  Both are perfectly suitable for unit testing your library on .NET Core.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!INFO] This uses some [.NET CLI commands](../tools/index.md).  See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
 
@@ -319,6 +319,7 @@ Consumption scenarios like this mean that the APIs being accessed have to have a
 You can run the following commands in your terminal to produce the same structure as this guide:
 
 ```console
+mkdir AwesomeLibrary && cd AwesomeLibrary
 dotnet new sln
 mkdir AwesomeLibrary.Core && cd AwesomeLibrary.Core && dotnet new classlib
 cd ..
@@ -326,9 +327,9 @@ mkdir AwesomeLibrary.CSharp && cd AwesomeLibrary.CSharp && dotnet new classlib
 cd ..
 mkdir AwesomeLibrary.FSharp && cd AwesomeLibrary.FSharp && dotnet new classlib -lang F#
 cd ..
-dotnet sln add AwesomeLibrary.Core/AwesomeLibrary.Core/csproj
-dotnet sln add AwesomeLibrary.CSharp/AwesomeLibrary.CSharp/csproj
-dotnet sln add AwesomeLibrary.FSharp/AwesomeLibrary.FSharp/csproj
+dotnet sln add AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
+dotnet sln add AwesomeLibrary.CSharp/AwesomeLibrary.CSharp.csproj
+dotnet sln add AwesomeLibrary.FSharp/AwesomeLibrary.FSharp.fsproj
 ```
 
 This will add the three projects above and a solution file which links them together.  Creating the solution file and linking projects will allow you to restore and build projects from a top-level.
@@ -338,7 +339,7 @@ This will add the three projects above and a solution file which links them toge
 The best way to reference a project is to use the .NET CLI to add a project reference.  From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```console
-$ dotnet add reference ../AwesomeLibrary.Core.csproj
+$ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 
 The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** will now reference **AwesomeLibrary.Core** as a `ProjectReference` target.  You can verify this by inspecting the project files and seeing the following in them:

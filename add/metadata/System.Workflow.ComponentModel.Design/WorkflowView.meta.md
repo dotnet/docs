@@ -420,13 +420,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.WorkflowView.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Design.WorkflowView.System#IServiceProvider#GetService(System.Type)
 author: "Erikre"
 ms.author: "erikre"

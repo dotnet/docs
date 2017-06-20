@@ -62,13 +62,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteLink.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

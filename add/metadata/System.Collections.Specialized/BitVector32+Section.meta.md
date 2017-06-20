@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.BitVector32.Section.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.BitVector32.Section.op_Equality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)
 ms.technology: 
   - "dotnet-standard"

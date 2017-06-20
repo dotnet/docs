@@ -41,13 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapEntity.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

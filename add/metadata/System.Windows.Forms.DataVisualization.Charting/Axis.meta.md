@@ -375,14 +375,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Axis.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Axis.StripLines
 ms.technology: 
   - "dotnet-winforms"

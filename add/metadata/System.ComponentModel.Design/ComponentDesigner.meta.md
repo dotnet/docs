@@ -266,15 +266,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.ComponentDesigner.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.ComponentDesigner.System#ComponentModel#Design#ITreeDesigner#Children
 ms.author: "jimwalk"
 manager: "martinek"

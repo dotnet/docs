@@ -39,14 +39,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Bottom
 ms.technology: 
   - "dotnet-winforms"

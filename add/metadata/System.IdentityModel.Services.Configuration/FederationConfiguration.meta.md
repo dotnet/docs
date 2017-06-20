@@ -63,14 +63,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.Configuration.FederationConfiguration.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.Configuration.FederationConfiguration.WsFederationConfiguration
 ms.technology: 
   - "dotnet-standard"

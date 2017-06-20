@@ -29,7 +29,7 @@ The `client` element defines a list of endpoints that a client can connect to.
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
     <client>  
         <endpoint>  
@@ -66,7 +66,7 @@ The `client` element defines a list of endpoints that a client can connect to.
   
 ## Example  
   
-```  
+```xml  
 <client>  
     <endpoint address="/HelloWorld/"  
               bindingConfiguration="usingDefaults"  

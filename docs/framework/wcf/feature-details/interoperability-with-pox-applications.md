@@ -24,7 +24,7 @@ manager: "erikre"
 ## POX Programming with WCF  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that communicate over HTTP using POX messages use a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
-```  
+```xml  
 <customBinding>  
    <binding name="poxServerBinding">  
        <textMessageEncoding messageVersion="None" />  

@@ -51,7 +51,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ### Configuration  
  The following configuration can be used instead of the code to create the same service.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -112,7 +112,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ### Configuration  
  The following configures the client. A client certificate must be specified using the [\<clientCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md). Also, the service certificate is specified using the [\<defaultCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md).  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

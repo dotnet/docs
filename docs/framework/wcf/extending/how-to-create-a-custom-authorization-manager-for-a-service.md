@@ -74,7 +74,7 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
   
      The following code example registers the custom authorization manager `Samples.MyServiceAuthorizationManager`.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
         <services>  

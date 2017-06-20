@@ -87,12 +87,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.HostProtectionException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

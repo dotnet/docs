@@ -98,24 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetClassName
 ms.technology: 
   - "dotnet-standard"

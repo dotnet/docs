@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.LoginStatusDesigner.UsePreviewControl
 ms.technology: 
   - "dotnet-webforms"

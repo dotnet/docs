@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.EndOfStreamException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.EndOfStreamException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"

@@ -18,14 +18,66 @@ Represents a configuration section for creating a subscription to workflow track
   
  For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
   
- \<system.serviceModel>  
+\<system.serviceModel>  
 \<tracking>  
 \<trackingProfile>  
   
 ## Syntax  
   
-```vb  
-   <system.serviceModel>  <tracking>      <trackingProfile name="String">      <workflow activityDefinitionId="String">          <activityScheduledQueries>             <activityScheduledQuery activityName="String"                 childActivityName="String"/>          </activityScheduledQueries>             <activityStateQuery activityName="String" />                <arguments>                   <argument name="String"/>                </arguments>                <states>                   <state name="String"/>                </states>                <variables>                   <variable name="String"/>                </variables>          </activityStateQueries>          <bookmarkResumptionQueries>             <bookmarkResumptionQuery name="String" />          </bookmarkResumptionQueries>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>          <customTrackingQueries>             <customTrackingQuery activityName="String"                 name="String"/>          </customTrackingQueries>          <faultPropagationQueries>             <faultPropagationQuery activityName="String"                 faultHandlerActivityName="String"/>          </faultPropagationQueries>         <workflowInstanceQueries>            <workflowInstanceQuery>              <states>                 <state name="String"/>              </states>          </workflowInstanceQuery>        </workflowInstanceQueries>      </workflow>    </trackingProfile>           </profiles>  </tracking></system.serviceModel>    
+```xml  
+<system.serviceModel>
+  <tracking>
+    <profiles>
+      <participants>
+        <add name="String" 
+             profileName="String" 
+             type="String" />
+      </participants>
+      <trackingProfile name="String">
+        <workflow activityDefinitionId="String">
+          <activityScheduledQueries>
+            <activityScheduledQuery activityName="String" 
+                                    childActivityName="String"/>
+          </activityScheduledQueries>
+          <activityStateQueries>
+            <activityStateQuery activityName="String" />
+            <arguments>
+              <argument name="String" />
+            </arguments>
+            <states>
+              <state name="String"  />
+            </states>
+            <variables>
+              <variable name="String" />
+            </variables>
+          </activityStateQueries>
+          <bookmarkResumptionQueries>
+            <bookmarkResumptionQuery name="String" />
+          </bookmarkResumptionQueries>
+          <cancelRequestQueries>
+            <cancelRequestQuery activityName="String" 
+                                childActivityName="String"/>
+          </cancelRequestQueries>
+          <customTrackingQueries>
+            <customTrackingQuery activityName="String" 
+                                 name="String"/>
+          </customTrackingQueries>
+          <faultPropagationQueries>
+            <faultPropagationQuery activityName="String" 
+                                   faultHandlerActivityName="String" />
+          </faultPropagationQueries>
+          <workflowInstanceQueries>
+            <workflowInstanceQuery>
+              <states>
+                <state name="String" />
+              </states>
+            </workflowInstanceQuery>
+          </workflowInstanceQueries>
+        </workflow>
+      </trackingProfile>
+    </profiles>
+  </tracking>
+</system.serviceModel>  
 ```  
   
 ## Attributes and Elements  
@@ -56,7 +108,7 @@ Represents a configuration section for creating a subscription to workflow track
   
  The following example shows a tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started`and `Completed` workflow events.  
   
-```  
+```xml  
 <system.serviceModel>  
   <tracking>    
     <trackingProfile name="Sample Tracking Profile">  

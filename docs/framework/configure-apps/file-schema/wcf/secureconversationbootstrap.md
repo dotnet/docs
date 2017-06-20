@@ -27,7 +27,7 @@ Specifies the default values used for initiating a secure conversation service.
   
 ## Syntax  
   
-```  
+```xml  
 <secureConversationBootstrap  
    allowSerializedSigningTokenOnReply="Boolean"  
    authenticationMode="AuthenticationMode"  

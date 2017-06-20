@@ -85,14 +85,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolTip.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolTip.StopTimer
 ms.technology: 
   - "dotnet-winforms"

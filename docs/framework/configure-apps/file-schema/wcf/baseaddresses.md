@@ -26,7 +26,7 @@ Represents a collection of `baseAddress` elements, which are base addresses for 
   
 ## Syntax  
   
-```  
+```xml  
 <baseAddresses>  
    <add baseAddress="string" />  
 </baseAddresses>  

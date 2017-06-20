@@ -47,14 +47,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogSession.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -144,14 +136,6 @@ manager: "ghogen"
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogSession.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"

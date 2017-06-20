@@ -52,14 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ImageList.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ImageList.Draw(System.Drawing.Graphics,System.Drawing.Point,System.Int32)
 ms.technology: 
   - "dotnet-winforms"

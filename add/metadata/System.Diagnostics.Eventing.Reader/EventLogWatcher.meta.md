@@ -47,14 +47,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

@@ -119,14 +119,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.GridViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)
 ms.technology: 
   - "dotnet-webforms"

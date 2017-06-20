@@ -46,7 +46,7 @@ The `invalidVariant` managed debugging assistant (MDA) is activated when an inva
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidVariant />  

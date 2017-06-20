@@ -107,14 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Condition.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Condition.System#ComponentModel#ISupportInitialize#EndInit
 ms.technology: 
   - "dotnet-wpf"

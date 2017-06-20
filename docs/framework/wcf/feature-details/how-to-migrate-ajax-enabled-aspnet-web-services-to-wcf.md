@@ -48,7 +48,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
   
 8.  Click the **Invoke** button on the `HelloWorld` test page. You should receive the following XML response.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <string xmlns="http://tempuri.org/">Hello World</string>  
     ```  
@@ -93,7 +93,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
     { … }  
     ```  
   
-7.  Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat>.  
+7.  Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat.Xml>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat.Json>.  
   
     ```  
     [OperationContract]  
@@ -110,7 +110,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
   
 10. The service now exposes an endpoint at `WCFHello.svc/HelloWorld`, which responds to HTTP POST requests. HTTP POST requests cannot be tested from the browser, but the endpoint returns XML following XML.  
   
-    ```  
+    ```xml  
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello World</string>  
     ```  
   

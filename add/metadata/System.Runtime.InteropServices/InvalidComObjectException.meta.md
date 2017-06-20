@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.InvalidComObjectException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.InvalidComObjectException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -442,7 +442,7 @@ public class RemotingServer : MarshalByRefObject
   
 4.  To run the WCF service, we need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. This is typically done by adding the following sections to the server project’s web.config file.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
         <services>  
@@ -467,7 +467,7 @@ public class RemotingServer : MarshalByRefObject
   
 6.  The client project’s app.config must declare matching binding information for the service’s endpoint. The easiest way to do this in Visual Studio is to use **Add Service Reference**, which will automatically update the app.config file. Alternatively, these same changes can be added manually.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
         <client>  
@@ -575,7 +575,7 @@ public class RemotingServer : MarshalByRefObject
   
     2.  Declare endpoints for the factory and sessionful object. This is necessary to allow the client to communicate with the service endpoints to acquire the EndpointAddress10 and to create the sessionful channel.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
          <client>  
@@ -618,7 +618,7 @@ public class RemotingServer : MarshalByRefObject
   
 5.  We configure the client by declaring these same endpoints in its project’s app.config file.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
         <client>  

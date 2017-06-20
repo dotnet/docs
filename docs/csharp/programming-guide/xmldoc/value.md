@@ -39,7 +39,7 @@ translation.priority.ht:
 # &lt;value&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <value>property-description</value>  
 ```  
   

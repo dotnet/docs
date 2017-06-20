@@ -130,14 +130,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.WebBrowser.Refresh
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Controls.WebBrowser.Navigate(System.String)
 ms.technology: 
   - "dotnet-wpf"

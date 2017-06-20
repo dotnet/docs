@@ -61,15 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Paragraph.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.Paragraph.ShouldSerializeInlines(System.Windows.Markup.XamlDesignerSerializationManager)
 ms.technology: 
   - "dotnet-wpf"

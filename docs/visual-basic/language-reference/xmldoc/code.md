@@ -39,7 +39,7 @@ Indicates that the text is multiple lines of code.
   
 ## Syntax  
   
-```  
+```xml  
 <code>content</code>  
 ```  
   

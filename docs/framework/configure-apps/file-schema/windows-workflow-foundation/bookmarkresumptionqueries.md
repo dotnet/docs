@@ -18,7 +18,7 @@ Represents a collection of queries that are used to track resumption of a bookma
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
   
- \<system.serviceModel>  
+\<system.serviceModel>  
 \<tracking>  
 \<trackingProfile>  
 \<workflow>  
@@ -27,8 +27,16 @@ Represents a collection of queries that are used to track resumption of a bookma
   
 ## Syntax  
   
-```vb  
-<tracking>   <trackingProfile name="Name">       <workflow>          <bookmarkResumptionQueries>             <bookmarkResumptionQuery name="String" />          </bookmarkResumptionQueries>       </workflow>   </trackingProfile></tracking>  
+```xml  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <bookmarkResumptionQueries>
+        <bookmarkResumptionQuery name="String" />
+      </bookmarkResumptionQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```  
   
 ## Attributes and Elements  

@@ -25,7 +25,7 @@ Adds the specified security token handler to the token handler collection.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -84,7 +84,7 @@ public class CustomTokenHandler : Microsoft.IdentityModel.Tokens.SecurityTokenHa
 ## Example  
  The following XML shows the use of the `<add>` and `<remove>` elements to replace the default session token handler with a custom session token handler. The XML is taken from the `ClaimsAwareWebFarm` sample.  
   
-```  
+```xml  
 <securityTokenHandlers>  
   <remove type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
   <add type="System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  

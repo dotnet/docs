@@ -39,14 +39,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlSubjectStatement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlSubjectStatement.CreatePolicy(System.IdentityModel.Claims.ClaimSet,System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator)
 ms.technology: 
   - "dotnet-standard"

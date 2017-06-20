@@ -37,7 +37,7 @@ The **/checked** option specifies whether an integer arithmetic statement that r
   
 ## Syntax  
   
-```  
+```console  
 /checked[+ | -]  
 ```  
   
@@ -63,7 +63,7 @@ The **/checked** option specifies whether an integer arithmetic statement that r
 ## Example  
  The following command compiles `t2.cs`. The use of `/checked` in the command specifies that any integer arithmetic statement in the file that is not in the scope of a `checked` or `unchecked` keyword, and that results in a value that is outside the range of the data type, causes an exception at run time.  
   
-```  
+```console  
 csc t2.cs /checked  
 ```  
   

@@ -24,7 +24,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
   
 ## Syntax  
   
-```  
+```xml  
 <mexTcpBinding>  
    <binding   
        closeTimeout="TimeSpan"   

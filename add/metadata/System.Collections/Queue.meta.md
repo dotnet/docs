@@ -143,15 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Queue.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Queue.Clear
 ms.technology: 
   - "dotnet-standard"

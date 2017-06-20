@@ -36,7 +36,7 @@ Specifies whether socket operations use completion ports.
   
 ## Syntax  
   
-```  
+```xml  
       <socket  
   alwaysUseCompletionPortsForConnect="true|false"  
   alwaysUseCompletionPortsForAccept="true|false"  
@@ -100,7 +100,7 @@ Specifies whether socket operations use completion ports.
 ## Example  
  The following code example shows how to specify that completion ports should be used and that the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName> should be unrestricted.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  
@@ -119,5 +119,5 @@ Specifies whether socket operations use completion ports.
  <xref:System.Net.Configuration.SocketElement?displayProperty=fullName>   
  <xref:System.Net.Sockets?displayProperty=fullName>   
  <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName>   
- <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>   
+ <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=fullName>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

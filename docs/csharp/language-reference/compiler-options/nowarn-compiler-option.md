@@ -37,7 +37,7 @@ The **/nowarn** option lets you suppress the compiler from displaying one or mor
   
 ## Syntax  
   
-```  
+```console  
 /nowarn:number1[,number2,...]  
 ```  
   

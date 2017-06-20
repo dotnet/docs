@@ -138,7 +138,7 @@ sale item
   
 ### Input  
   
-```  
+```xml  
 <!-- XML fragment -->  
 <book genre="novel">  
   <title>Pride And Prejudice</title>  

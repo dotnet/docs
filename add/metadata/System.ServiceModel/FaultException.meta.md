@@ -143,15 +143,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.FaultException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason)
 ms.technology: 
   - "dotnet-standard"

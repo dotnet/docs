@@ -77,7 +77,7 @@ There are two primary metapackages for .NET Core.
 
 - v1.6 as of .NET Core 1.0 (these versions won't typically or intentionally match).
 - Maps to the `netstandard` framework. 
-- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a [.NET Standard](../../standard/library.md) platform.
+- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a [.NET Standard](../../standard/net-standard.md) platform.
 
 **Microsoft.NETCore.App**
 
@@ -109,7 +109,7 @@ After shipping a .NET Core v1.0.0 stable version, patch-level changes (no new AP
 
 You can see patch updates demonstrated in the project.json examples below.
 
-```
+```json
 {
   "dependencies": {
     "Microsoft.NETCore.App": "1.0.1"

@@ -549,14 +549,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.Saml2SecurityTokenHandler.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAction(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"

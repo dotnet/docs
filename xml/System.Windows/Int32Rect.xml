@@ -339,7 +339,7 @@
         <summary>Compares two rectangles for inequality.</summary>
         <returns>**false** if *int32Rect1* and *int32Rect2* have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" />; otherwise, if all of these values are the same, then **true**.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Int32Rect.Compare%28System.Windows.Int32Rect%2CSystem.Windows.Int32Rect%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Int32Rect.Equals%2A>.]]></format>
         </remarks>
       </Docs>
     </Member>

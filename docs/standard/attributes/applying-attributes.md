@@ -24,11 +24,11 @@ Use the following process to apply an attribute to an element of your code.
   
 2.  Apply the attribute to the code element by placing it immediately before the element.  
   
-     Each language has its own attribute syntax. In C++ and C#, the attribute is surrounded by square brackets and separated from the element by white space, which can include a line break. In Visual Basic, the attribute is surrounded by angle brackets and must be on the same logical line; the line continuation character can be used if a line break is desired. In J#, the attribute is attached using special comment syntax.  
+     Each language has its own attribute syntax. In C++ and C#, the attribute is surrounded by square brackets and separated from the element by white space, which can include a line break. In Visual Basic, the attribute is surrounded by angle brackets and must be on the same logical line; the line continuation character can be used if a line break is desired.
   
 3.  Specify positional parameters and named parameters for the attribute.  
   
-     Positional parameters are required and must come before any named parameters; they correspond to the parameters of one of the attribute's constructors. Named parameters are optional and correspond to read/write properties of the attribute. In C++, C#, and J#, specify `name`=`value` for each optional parameter, where `name` is the name of the property. In Visual Basic, specify `name`:=`value`.  
+     Positional parameters are required and must come before any named parameters; they correspond to the parameters of one of the attribute's constructors. Named parameters are optional and correspond to read/write properties of the attribute. In C++, and C#, specify `name`=`value` for each optional parameter, where `name` is the name of the property. In Visual Basic, specify `name`:=`value`.  
   
  The attribute is emitted into metadata when you compile your code and is available to the common language runtime and any custom tool or application through the runtime reflection services.  
   

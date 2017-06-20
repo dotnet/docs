@@ -107,7 +107,7 @@
 #### [Persistence Best Practices](persistence-best-practices.md)
 #### [Non-Persisted Workflow Instances](non-persisted-workflow-instances.md)
 #### [Pausing and Resuming a Workflow](pausing-and-resuming-a-workflow.md)
-### [Migration Guidance](migration-guidance.md)
+### [Migration Guidance](wf-migration-guidance.md)
 #### [Migration Guidance](migration-guidance.md)
 #### [Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity](net-framework-3-0-wf-in-net-framework-4-interop.md)
 #### [Using the Interop Activity in a .NET Framework 4 Workflow](using-the-interop-activity-in-a-net-framework-4-workflow.md)

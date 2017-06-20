@@ -117,5 +117,5 @@ The Subscribe method is used by the microservices that want to receive events. T
 
 
 >[!div class="step-by-step"]
-[Previous] (database-server-in-container.md)
-[Next] (rabbitmq-event-bus-development-or-test-environment.md)
+[Previous] (database-server-container.md)
+[Next] (rabbitmq-event-bus-development-test-environment.md)

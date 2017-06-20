@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method does not directly initialize the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class.  Calling this method is equivalent to calling the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.%23ctor%2A> constructor and passing `null`.  
+ This method does not directly initialize the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class.  Calling this method is equivalent to calling the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.%23ctor%28System.Security.Cryptography.CspParameters%29?title=RNGCryptoServiceProvider(CspParameters)> constructor and passing `null`.  
   
  ]]></format>
         </remarks>
@@ -172,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method does not directly initialize the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class.  Calling this method is equivalent to calling the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.%23ctor%2A> constructor and passing `null`.  
+ This method does not directly initialize the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class.  Calling this method is equivalent to calling the <xref:System.Security.Cryptography.RNGCryptoServiceProvider.%23ctor%28System.Security.Cryptography.CspParameters%29?title=RNGCryptoServiceProvider(CspParameters)> constructor and passing `null`.  
   
  ]]></format>
         </remarks>

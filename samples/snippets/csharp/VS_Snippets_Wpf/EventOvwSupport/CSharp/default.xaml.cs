@@ -20,11 +20,8 @@ namespace SDKSample
       void b1SetColor(object sender, RoutedEventArgs args)
       {
         //logic to handle the Click event
-//</SnippetSimpleHandlerA>
-
-//<SnippetSimpleHandlerB>
       }
-//</SnippetSimpleHandlerB>
+//</SnippetSimpleHandlerA>
 //<SnippetGroupButtonCodeBehind>
       private void CommonClickHandler(object sender, RoutedEventArgs e)
       {

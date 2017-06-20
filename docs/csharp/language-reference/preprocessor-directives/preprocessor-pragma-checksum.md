@@ -35,7 +35,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
   
 ## Syntax  
   
-```  
+```csharp
 #pragma checksum "filename" "{guid}" "checksum bytes"  
 ```  
   
@@ -60,7 +60,7 @@ Generates checksums for source files to aid with debugging [!INCLUDE[vstecasp](~
   
 ## Example  
   
-```  
+```csharp
 class TestClass  
 {  
     static int Main()  

@@ -54,4 +54,4 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], errors (also called *exceptions*
   
 ## See Also  
  [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)   
- [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)

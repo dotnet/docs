@@ -78,7 +78,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
  The csc response (.rsp) file, which references commonly used .NET Framework assemblies, is used by default. Use [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) if you do not want the compiler to use csc.rsp.  
   
 > [!NOTE]
-> In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `/reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  
+> In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `/reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  
   
 ## Example  
  This example shows how to use the [extern alias](../../../csharp/language-reference/keywords/extern-alias.md) feature.  

@@ -69,7 +69,7 @@ This section provides reference material about C# keywords, operators, special c
  [C#](../../csharp/csharp.md)  
  Provides a portal to Visual C# documentation.  
   
- [Using the Visual Studio Development Environment for C#](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+ [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  
   
  [C# Programming Guide](../../csharp/programming-guide/index.md)  

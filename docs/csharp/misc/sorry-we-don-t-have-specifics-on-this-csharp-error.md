@@ -925,5 +925,5 @@ We’re sorry, but we don’t have any specific information about this error. Yo
 ## See Also  
  [C# Programming Guide](../../csharp/programming-guide/index.md)   
  [C# Reference](../../csharp/language-reference/index.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)

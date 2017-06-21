@@ -58,7 +58,7 @@ The **/filealign** option lets you specify the size of sections in your output f
   
  By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices.  
   
- Use [DUMPBIN](https://docs.microsoft.com/cpp/build/reference/dumpbin-options) to see information about sections in your output file.  
+ Use [DUMPBIN](/cpp/build/reference/dumpbin-options) to see information about sections in your output file.  
   
 ### To set this compiler option in the Visual Studio development environment  
   

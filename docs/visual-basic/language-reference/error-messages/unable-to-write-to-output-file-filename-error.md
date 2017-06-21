@@ -80,4 +80,4 @@ There was a problem creating the file.
 3.  Press **OK**.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

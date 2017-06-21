@@ -151,7 +151,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
  <xref:System.Diagnostics.Trace>   
  <xref:System.Diagnostics.TraceSource>   
  [Code Contracts](../../../docs/framework/debug-trace-profile/code-contracts.md)   
- [C#, F#, and Visual Basic Project Types](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)   
+ [C#, F#, and Visual Basic Project Types](/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)   
  [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)   
  [How to: Compile Conditionally with Trace and Debug](../../../docs/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)   
  [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)   

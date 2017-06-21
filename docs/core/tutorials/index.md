@@ -24,7 +24,7 @@ The following tutorials are available for learning about .NET Core.
 - [Testing a C# class library](../../csharp/getting-started/testing-library-with-visual-studio.md)
 - [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
 - [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
-- [NoSQL tutorial: Build a DocumentDB C# console application on .NET Core](https://docs.microsoft.com/azure/documentdb/documentdb-dotnetcore-get-started)
+- [NoSQL tutorial: Build a DocumentDB C# console application on .NET Core](/azure/documentdb/documentdb-dotnetcore-get-started)
 
 ## Building applications with Visual Studio Code
 
@@ -49,4 +49,4 @@ The following tutorials are available for learning about .NET Core.
 - [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
 
-For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

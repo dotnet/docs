@@ -104,5 +104,5 @@ This section introduces the typical [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 
  [Typographic and Code Conventions](../../../visual-basic/language-reference/typographic-and-code-conventions.md)  
  Provides standard coding conventions for [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
- [Writing Code](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)  
+ [Writing Code](/visualstudio/ide/writing-code-in-the-code-and-text-editor)  
  Describes features that make it easier for you to write and manage your code.

@@ -90,4 +90,4 @@ Clears all files in local temporary cache directory:
 
 ## Troubleshooting
 
-For information on common problems and errors while using the `dotnet nuget locals` command, see [Managing the NuGet cache](https://docs.microsoft.com/nuget/consume-packages/managing-the-nuget-cache).
+For information on common problems and errors while using the `dotnet nuget locals` command, see [Managing the NuGet cache](/nuget/consume-packages/managing-the-nuget-cache).

@@ -101,7 +101,7 @@ You can write asynchronous programs more easily and intuitively by using async/a
   
 6.  Position the text box and the button so that both appear in the **MainWindow** window.  
   
-     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
+     For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).  
   
 ##  <a name="BKMK_AddReference"></a>   
 ###  <a name="AddRef"></a> To add a reference  

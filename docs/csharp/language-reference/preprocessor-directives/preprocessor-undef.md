@@ -37,7 +37,7 @@ translation.priority.ht:
   
 ## Example  
   
-```  
+```csharp
 // preprocessor_undef.cs  
 // compile with: /d:DEBUG  
 #undef DEBUG  

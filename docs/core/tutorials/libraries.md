@@ -36,7 +36,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/library.md) to learn more.
+If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/net-standard.md) to learn more.
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 

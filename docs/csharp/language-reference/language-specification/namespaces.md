@@ -1,0 +1,19 @@
+---
+title: C# Language Specification -- Namespaces | Microsoft Docs 
+description: The C# Language Specification defines the grammar and structure for the C# language. This section defines namespaces and their role in organizing code.
+keywords: csharp, specification, namespaces
+author: BillWagner
+ms.author: wiwagn
+ms.date: 07/01/2017
+ms.devlang: "devlang-csharp"
+ms.prod: .net
+---
+
+<!-- The lexical structure is pulled in from the CSharp lang repo. If you want
+to edit or make pull requests, see this link: https://github.com/dotnet/csharplang/blob/master/spec/namespaces.md -->
+
+[!INCLUDE[Namespaces from csharplang repo](../../../../_csharplang/spec/namespaces.md)]
+
+>[!div class="step-by-step"]
+[Pre](statements.md)
+[Next](classes.md)

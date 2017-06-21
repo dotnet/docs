@@ -1,6 +1,6 @@
 ---
-title: C# Language Specification -- Basic Concepts| Microsoft Docs 
-description: The C# Language Specification defines the grammar and structure for the C# language.
+title: C# Language Specification -- Basic Concepts | Microsoft Docs 
+description: The C# Language Specification defines the grammar and structure for the C# language. This section defines core basic concepts used in almost all programs.
 keywords: csharp, specification, concepts
 author: BillWagner
 ms.author: wiwagn
@@ -13,3 +13,7 @@ ms.prod: .net
 to edit or make pull requests, see this link: https://github.com/dotnet/csharplang/blob/master/spec/basic-concepts.md -->
 
 [!INCLUDE[Basic Concepts from csharplang repo](../../../../_csharplang/spec/basic-concepts.md)]
+
+>[!div class="step-by-step"]
+[Pre](lexical-structure.md)
+[Next](types.md)

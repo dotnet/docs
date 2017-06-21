@@ -1,6 +1,6 @@
 ---
 title: C# Language Specification -- Lexical structure | Microsoft Docs 
-description: The C# Language Specification defines the grammar and structure for the C# language.
+description: The C# Language Specification defines the grammar and structure for the C# language. This section defines the lexical structure for the language.
 keywords: csharp, specification, lexical structure
 author: BillWagner
 ms.author: wiwagn
@@ -13,3 +13,7 @@ ms.prod: .net
 to edit or make pull requests, see this link: https://github.com/dotnet/csharplang/blob/master/spec/lexical-structure.md -->
 
 [!INCLUDE[Lexcial Structure from csharplang repo](../../../../_csharplang/spec/lexical-structure.md)]
+
+>[!div class="step-by-step"]
+[Pre](index.md)
+[Next](basic-concepts.md)

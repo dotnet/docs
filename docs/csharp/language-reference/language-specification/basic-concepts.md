@@ -12,4 +12,4 @@ ms.prod: .net
 <!-- The lexical structure is pulled in from the CSharp lang repo. If you want
 to edit or make pull requests, see this link: https://github.com/dotnet/csharplang/blob/master/spec/basic-concepts.md -->
 
-[!INCLUDE[Basic Concepts from csharplang repo](../../../../spec/basic-concepts.md)]
+[!INCLUDE[Basic Concepts from csharplang repo](../../../../_csharplang/spec/basic-concepts.md)]

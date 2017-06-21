@@ -37,7 +37,7 @@ Local functions make the intent of your code clear. Anyone reading you code can 
 A local function is defined as a nested method inside a containing member. Its definition has the following syntax:
 
 ```txt
-<modifiers: async | unsafe> <return-value> <method-name> <parameter-list>
+<modifiers: async | unsafe> <return-type> <method-name> <parameter-list>
 ```
 
 Local functions can use the [async](../../language-reference/keywords/async.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers. 

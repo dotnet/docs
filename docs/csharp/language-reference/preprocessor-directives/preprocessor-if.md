@@ -33,7 +33,7 @@ translation.priority.ht:
 # #if (C# Reference)
 When the C# compiler encounters an `#if` directive, followed eventually by an [#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md) directive, it will compile the code between the directives only if the specified symbol is defined.  Unlike C and C++, you cannot assign a numeric value to a symbol; the #if statement in C# is Boolean and only tests whether the symbol has been defined or not. For example,  
   
-```  
+```csharp
 #define DEBUG  
 // ...  
 #if DEBUG  
@@ -58,7 +58,7 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
   
 ## Example  
   
-```  
+```csharp
 // preprocessor_if.cs  
 #define DEBUG#define MYTEST  
 using System;  

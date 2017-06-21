@@ -39,5 +39,8 @@ You can download version 5.0 of this specification from the [Microsoft Download 
 Version 6.0 of the specification is not currently available, but this site contains the unofficial [C# 6.0 specification](lexical-structure.md). It is built from the markdown files contained in [the dotnet/csharplang GitHub repository](https://github.com/dotnet/csharplang/blob/master/spec/README.md)
 
 ## See Also  
- [C# Reference](../../csharp/language-reference/index.md)   
+ [C# Reference](../../csharp/language-reference/index.md)
  [C# Programming Guide](../../csharp/programming-guide/index.md)
+
+>[!div class="step-by-step"]
+[Next](lexical-structure.md)

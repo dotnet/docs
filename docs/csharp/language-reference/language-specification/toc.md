@@ -1,3 +1,4 @@
+# [Introduction](index.md)
 # [Lexical structure](lexical-structure.md)
 ## [Programs](lexical-structure.md#programs)
 ## [Grammars](lexical-structure.md#grammars)

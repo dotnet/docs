@@ -37,7 +37,29 @@ Local functions make the intent of your code clear. Anyone reading you code can 
 A local function is defined as a nested method inside a containing member. Its definition has the following syntax:
 
 ```antlr
-<return-value> <method-name> <parameter-list>
+declaration-statement
+   : local-variable declaration ';'
+   | local-constant-declaration ';'
+   | local-function-declaration
+   ;
+
+local-function-declaration
+   : local-function-header local-function-body
+   ;
+
+local-function-header
+   : local-function-modifiers? return-type identifier type-parameter-list?
+        ( formal-parameter-list? ) type-parameter-constraints-clauses
+   ;
+
+local-function-modifiers
+   : (async | unsafe)
+   ;
+
+local-function-body
+   : block
+   | arrow-expression-body
+   ;
 ```
 
 Local functions can use the [async](../../language-reference/keywords/async.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers. 

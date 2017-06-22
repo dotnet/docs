@@ -18,7 +18,7 @@ The following is a more detailed explanation of why to choose .NET Core.
 
 ## Developing and deploying cross platform
 
-Clearly, if your goal is to have an application (web app or service) that can run on multiple platforms supported by Docker (Linux and Windows), the right choice is .NET Core, because .NET Framework only supports Windows.
+Clearly, if your goal is to have an application (web application or service) that can run on multiple platforms supported by Docker (Linux and Windows), the right choice is .NET Core, because .NET Framework only supports Windows.
 
 .NET Core also supports macOS as a development platform. However, when you deploy containers to a Docker host, that host must (currently) be based on Linux or Windows. For example, in a development environment, you could use a Linux VM running on a Mac.
 

@@ -65,14 +65,14 @@ manager: "erikre"
   
 ```vb  
 ' Serializes a class named Group as a SOAP message.  
-Dim myTypeMapping As XmlTypeMapping = (New SoapReflectionImporter(). _  
+Dim myTypeMapping As XmlTypeMapping = New SoapReflectionImporter(). _  
 ImportTypeMapping(GetType(Group))  
 Dim mySerializer As XmlSerializer = New XmlSerializer(myTypeMapping)  
 ```  
   
 ```csharp  
 // Serializes a class named Group as a SOAP message.  
-XmlTypeMapping myTypeMapping = (new SoapReflectionImporter().ImportTypeMapping(typeof(Group));  
+XmlTypeMapping myTypeMapping = new SoapReflectionImporter().ImportTypeMapping(typeof(Group));  
 XmlSerializer mySerializer = new XmlSerializer(myTypeMapping);  
 ```  
   

@@ -24,7 +24,7 @@ manager: "erikre"
 ---
 # How to: Serialize an Object as a SOAP-Encoded XML Stream
   
- Because a SOAP message is built using XML, the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx) can be used to serialize classes and generate encoded SOAP messages. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document "Simple Object Access Protocol (SOAP) 1.1". When you are creating an XML Web service that communicates through SOAP messages, you can customize the XML stream by applying a set of special SOAP attributes to classes and members of classes. For a list of attributes, see [Attributes That Control Encoded SOAP Serialization](../../../docs/framework/serialization/attributes-that-control-encoded-soap-serialization.md).  
+ Because a SOAP message is built using XML, the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx) can be used to serialize classes and generate encoded SOAP messages. The resulting XML conforms to [section 5 of the World Wide Web Consortium document "Simple Object Access Protocol (SOAP) 1.1"](https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383512). When you are creating an XML Web service that communicates through SOAP messages, you can customize the XML stream by applying a set of special SOAP attributes to classes and members of classes. For a list of attributes, see [Attributes That Control Encoded SOAP Serialization](../../../docs/framework/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
 ### To serialize an object as a SOAP-encoded XML stream  
   

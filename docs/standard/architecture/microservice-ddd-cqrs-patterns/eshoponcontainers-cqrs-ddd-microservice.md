@@ -61,5 +61,5 @@ There is only one application architecture: the architecture of the system or en
 
 
 >[!div class="step-by-step"]
-[Previous] (applying-simplified-cqrs-and-ddd-patterns-in-a-microservice.md)
+[Previous] (apply-simplified-microservice-cqrs-ddd-patterns.md)
 [Next] (cqrs-microservice-reads.md)

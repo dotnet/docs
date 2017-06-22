@@ -46,8 +46,8 @@ DDD benefits from microservices by getting real boundaries in the form of distri
 
 ### Additional resources
 
--   **Chris Richardson. Pattern: Database per service** **
-    **[*http://microservices.io/patterns/data/database-per-service.html*](http://microservices.io/patterns/data/database-per-service.html)
+-   **Chris Richardson. Pattern: Database per service**
+    [*http://microservices.io/patterns/data/database-per-service.html*](http://microservices.io/patterns/data/database-per-service.html)
 
 -   **Martin Fowler. BoundedContext**
     [*http://martinfowler.com/bliki/BoundedContext.html*](http://martinfowler.com/bliki/BoundedContext.html)
@@ -55,8 +55,8 @@ DDD benefits from microservices by getting real boundaries in the form of distri
 -   **Martin Fowler. PolyglotPersistence**
     [*http://martinfowler.com/bliki/PolyglotPersistence.html*](http://martinfowler.com/bliki/PolyglotPersistence.html)
 
--   **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping** **
-    **[*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
+-   **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping**
+    [*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
 
 
 >[!div class="step-by-step"]

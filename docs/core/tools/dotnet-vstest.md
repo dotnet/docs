@@ -1,7 +1,7 @@
 ---
-title: dotnet-vstest command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-vstest command builds a project and all of its dependencies. 
-keywords: dotnet-vstest, dotnet vstest, CLI, CLI command, .NET Core
+title: dotnet vstest command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet vstest' command builds a project and all of its dependencies. 
+keywords: dotnet vstest, dotnet vstest, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
 ---
 
-# dotnet-vstest (.NET Core SDK 2.0 Preview 2)
+# dotnet vstest (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-vstest` - Runs tests from the specified files.
+`dotnet vstest` - Runs tests from the specified files.
 
 ## Synopsis
 
@@ -26,7 +26,7 @@ ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
 
 ## Description
 
-The `dotnet-vstest` command runs the `VSTest.Console` command-line app to run automated unit and coded UI app tests.
+The `dotnet vstest` command runs the `VSTest.Console` command-line app to run automated unit and coded UI app tests.
 
 ## Arguments
 

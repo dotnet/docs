@@ -1,7 +1,7 @@
 ---
-title: dotnet-restore command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet restore command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-keywords: dotnet-restore, dotnet restore, CLI, CLI command, .NET Core
+keywords: dotnet restore, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 ---
 
-# dotnet-restore (.NET Core SDK 2.0 Preview 2)
+# dotnet restore (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-restore` - Restores the dependencies and tools of a project.
+`dotnet restore` - Restores the dependencies and tools of a project.
 
 ## Synopsis
 
@@ -43,7 +43,7 @@ You can specify additional feeds by creating your own *NuGet.config* file in the
 </configuration>
 ```
 
-You can also specify additional feeds when running the `dotnet-restore` command at a command prompt using the `--configfile <FILE>` or `-s|--source <SOURCE>` options. `--configfile <FILE>` specifies a config file, while `-s|--source <SOURCE>` specifies a NuGet package source.
+You can also specify additional feeds when running the `dotnet restore` command at a command prompt using the `--configfile <FILE>` or `-s|--source <SOURCE>` options. `--configfile <FILE>` specifies a config file, while `-s|--source <SOURCE>` specifies a NuGet package source.
 
 For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages <PACKAGES_DIRECTORY>` option. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems (for example, */home/user1* on Linux or *C:\Users\user1* on Windows).
 

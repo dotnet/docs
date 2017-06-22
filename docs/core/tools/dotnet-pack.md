@@ -1,7 +1,7 @@
 ---
-title: dotnet-pack command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-pack command creates NuGet packages for your .NET Core project.
-keywords: dotnet-pack, dotnet pack, CLI, CLI command, .NET Core
+title: dotnet pack command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet pack' command creates NuGet packages for your .NET Core project.
+keywords: dotnet pack, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
 
-# dotnet-pack (.NET Core SDK 2.0 Preview 2)
+# dotnet pack (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-pack` - Packs the code into a NuGet package.
+`dotnet pack` - Packs the code into a NuGet package.
 
 ## Synopsis
 

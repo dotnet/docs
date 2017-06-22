@@ -84,7 +84,7 @@ When you supply a command to the driver, `dotnet.exe` starts the CLI command exe
 
 ### Command ("verb")
 
-The command (or "verb") is simply a command that performs an action. For example, `dotnet build` builds your code. `dotnet publish` publishes your code. The commands are implemented as console apps using a `dotnet-{verb}` convention. 
+The command (or "verb") is simply a command that performs an action. For example, `dotnet build` builds your code. `dotnet publish` publishes your code. The commands are implemented as console apps using a `dotnet {verb}` convention. 
 
 ### Arguments
 

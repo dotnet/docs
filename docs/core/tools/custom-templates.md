@@ -1,7 +1,7 @@
 ---
 title: Create custom templates for dotnet new (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
 description: 
-keywords: dotnet-new, dotnet new, CLI, CLI command, .NET Core, template, templating
+keywords: dotnet new, CLI, CLI command, .NET Core, template, templating
 author: guardrex
 ms.author: mairaw
 ms.date: 06/22/2017
@@ -76,7 +76,7 @@ dotnet new -l
 
 ## Packing a template into a NuGet package
 
-Currently, a custom template is packed with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet-pack](dotnet-pack.md)).
+Currently, a custom template is packed with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet pack](dotnet-pack.md)).
 
 The contents of the project folder, together with its *.template.config\template.json* file, is placed into a folder named *content*. Next to the *content* folder, add a [*nuspec* file](https://docs.microsoft.com/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
 

@@ -84,41 +84,41 @@ Shows the version of the CLI tooling.
 
 | Command                             | Function                                                            |
 | ----------------------------------- | ------------------------------------------------------------------- |
-| [dotnet-build](dotnet-build.md)     | Builds a .NET Core app.                                             |
-| [dotnet-clean](dotnet-clean.md)     | Cleans build outputs.                                               |
-| [dotnet-migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
-| [dotnet-msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.                        |
-| [dotnet-new](dotnet-new.md)         | Initializes a C# or F# project for a given template.                |
-| [dotnet-pack](dotnet-pack.md)       | Creates a NuGet package of your code.                               |
-| [dotnet-publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained deployment.  |
-| [dotnet-restore](dotnet-restore.md) | Restores the dependencies of an app.                                |
-| [dotnet-run](dotnet-run.md)         | Runs an app from source code.                                       |
-| [dotnet-sln](dotnet-sln.md)         | Options to add, remove, and list projects in a solution file.       |
-| [dotnet-test](dotnet-test.md)       | Runs tests using a test runner.                                     |
-| [dotnet-vstest](dotnet-vstest.md)   | Runs tests from the specified files.                                |
+| [dotnet build](dotnet-build.md)     | Builds a .NET Core app.                                             |
+| [dotnet clean](dotnet-clean.md)     | Cleans build outputs.                                               |
+| [dotnet migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
+| [dotnet msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.                        |
+| [dotnet new](dotnet-new.md)         | Initializes a C# or F# project for a given template.                |
+| [dotnet pack](dotnet-pack.md)       | Creates a NuGet package of your code.                               |
+| [dotnet publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained deployment.  |
+| [dotnet restore](dotnet-restore.md) | Restores the dependencies of an app.                                |
+| [dotnet run](dotnet-run.md)         | Runs an app from source code.                                       |
+| [dotnet sln](dotnet-sln.md)         | Options to add, remove, and list projects in a solution file.       |
+| [dotnet test](dotnet-test.md)       | Runs tests using a test runner.                                     |
+| [dotnet vstest](dotnet-vstest.md)   | Runs tests from the specified files.                                |
 
 ### Project references
 
 | Command                                               | Function                     |
 | ----------------------------------------------------- | ---------------------------- |
-| [dotnet-add reference](dotnet-add-reference.md)       | Adds a project reference.    |
-| [dotnet-list reference](dotnet-list-reference.md)     | Lists project references.    |
-| [dotnet-remove reference](dotnet-remove-reference.md) | Removes a project reference. |
+| [dotnet add reference](dotnet-add-reference.md)       | Adds a project reference.    |
+| [dotnet list reference](dotnet-list-reference.md)     | Lists project references.    |
+| [dotnet remove reference](dotnet-remove-reference.md) | Removes a project reference. |
 
 ### NuGet packages
 
 | Command                                           | Function                 |
 | ------------------------------------------------- | ------------------------ |
-| [dotnet-add package](dotnet-add-package.md)       | Adds a NuGet package.    |
-| [dotnet-remove package](dotnet-remove-package.md) | Removes a NuGet package. |
+| [dotnet add package](dotnet-add-package.md)       | Adds a NuGet package.    |
+| [dotnet remove package](dotnet-remove-package.md) | Removes a NuGet package. |
 
 ### NuGet commands
 
-| Command                                       | Function                                                                                                                   |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [dotnet-nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.                                                                              |
-| [dotnet-nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. |
-| [dotnet-nuget push](dotnet-nuget-push.md)     | Pushes a package to the server and publishes it.                                                                           |
+| Command                                       | Function |
+| --------------------------------------------- | -------- |
+| [dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server. |
+| [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. |
+| [dotnet nuget push](dotnet-nuget-push.md)     | Pushes a package to the server and publishes it. |
 
 ## Examples
 

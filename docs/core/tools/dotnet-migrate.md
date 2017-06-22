@@ -1,7 +1,7 @@
 ---
-title: dotnet-migrate command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-migrate command migrates a project and all of its dependencies. 
-keywords: dotnet-migrate, dotnet migrate, CLI, CLI command, .NET Core
+title: dotnet migrate command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet migrate' command migrates a project and all of its dependencies. 
+keywords: dotnet migrate, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 ---
 
-# dotnet-migrate (.NET Core SDK 2.0 Preview 2)
+# dotnet migrate (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-migrate` - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 (MSBuild/*csproj*) project.
+`dotnet migrate` - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 (MSBuild/*csproj*) project.
 
 ## Synopsis
 
@@ -46,7 +46,7 @@ By default, the migration operation outputs the state of the migration process t
 >
 > You can't use the `dotnet migrate` command to migrate DNX or Preview 1 *project.json*-based projects directly to MSBuild/*csproj* projects. For a project built before Preview 2 *project-json*, you first need to manually migrate the project to a Preview 2 *project.json*-based project and then use the `dotnet migrate` command to migrate the project.
 > 
-> The `dotnet-migrate` command only migrates a project to .NET Core SDK 1.0. To migrate from a Preview 2 *project.json*-based project to .NET Core SDK 2.0, use the `dotnet-migrate` command to migrate the project to 1.0 and then manually migrate the project to 2.0.
+> The `dotnet migrate` command only migrates a project to .NET Core SDK 1.0. To migrate from a Preview 2 *project.json*-based project to .NET Core SDK 2.0, use the `dotnet migrate` command to migrate the project to 1.0 and then manually migrate the project to 2.0.
 
 ## Arguments
 
@@ -59,7 +59,7 @@ The path to one of the following:
 - A *\<solution_name>.sln* file. It migrates the projects referenced in the solution.
 - A directory to migrate. It recursively searches for *project.json* files to migrate.
 
-If omitted, `dotnet-migrate` defaults the path to the current directory.
+If omitted, `dotnet migrate` defaults the path to the current directory.
 
 ## Options
 

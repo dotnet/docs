@@ -1,7 +1,7 @@
 ---
-title: dotnet-add package command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-add package command provides a convenient option to add a NuGet package reference to a project.
-keywords: dotnet-add package, dotnet add package, CLI, CLI command, .NET Core
+title: dotnet add package command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
+keywords: dotnet add, dotnet add package, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 ---
 
-# dotnet-add package (.NET Core SDK 2.0 Preview 2)
+# dotnet add package (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-add package` - Adds a package reference to a project file.
+`dotnet add package` - Adds a package reference to a project file.
 
 ## Synopsis
 

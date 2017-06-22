@@ -1,7 +1,7 @@
 ---
-title: dotnet-store command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-store Stores the specified assemblies in the runtime package store.
-keywords: dotnet-store, dotnet store, CLI, CLI command, .NET Core
+title: dotnet store command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
+keywords: dotnet store, dotnet store, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: beleroy
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 ---
 
-# dotnet-store (.NET Core SDK 2.0 Preview 2)
+# dotnet store (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-store` - Stores the specified assemblies in the [runtime package store](../deploying/runtime-package-store.md).
+`dotnet store` - Stores the specified assemblies in the [runtime package store](../deploying/runtime-package-store.md).
 
 ## Synopsis
 
@@ -28,11 +28,21 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 `dotnet store` stores the specified assemblies in the [runtime package store](../deploying/runtime-package-store.md). By default, assemblies are optimized for the target runtime and framework. For more information, see the [runtime package store](../deploying/runtime-package-store.md) topic.
 
-## Options
+## Required options
 
 `-f|--framework <FRAMEWORK>`
 
-Required. Specifies the [target framework](../../standard/frameworks.md).
+Specifies the [target framework](../../standard/frameworks.md).
+
+`-m|--manifest <MANIFEST_FILE>`
+
+The XML file, or a list of XML files, that contain the list of packages to store. The format of the manifest files is compatible with the *csproj* format, so a *csproj* project file referencing the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store.
+
+`-r|--runtime <RUNTIME_IDENTIFIER>`
+
+The runtime identifier to target.
+
+## Optional options
 
 `--framework-version <FRAMEWORK_VERSION>`
 
@@ -42,17 +52,9 @@ Specifies the .NET Core SDK version. This option enables you to select a specifi
 
 Shows help information.
 
-`-m|--manifest <MANIFEST_FILE>`
-
-Required. The XML file, or a list of XML files, that contain the list of packages to store. The format of the manifest files is compatible with the *csproj* format, so a *csproj* project file referencing the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store.
-
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Specifies the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET Core installation directory.
-
-`-r|--runtime <RUNTIME_IDENTIFIER>`
-
-Required. The runtime identifier to target.
 
 `--skip-optimization`
 

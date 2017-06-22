@@ -1,7 +1,7 @@
 ---
-title: dotnet-add reference command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-add reference command provides a convenient option to add project to project references.
-keywords: dotnet-add reference, dotnet add reference, CLI, CLI command, .NET Core
+title: dotnet add reference command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet add reference' command provides a convenient option to add project to project references.
+keywords: dotnet add, dotnet add reference, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ---
 
-# dotnet-add reference (.NET Core SDK 2.0 Preview 2)
+# dotnet add reference (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-add reference` - Adds project-to-project (P2P) references.
+`dotnet add reference` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 

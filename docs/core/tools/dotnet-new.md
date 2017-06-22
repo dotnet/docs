@@ -1,7 +1,7 @@
 ---
-title: dotnet-new command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: The dotnet-new command creates new .NET Core projects in the current directory.
-keywords: dotnet-new, dotnet new, CLI, CLI command, .NET Core
+title: dotnet new command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+description: The 'dotnet new' command creates new .NET Core projects in the current directory.
+keywords: dotnet new, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
 ms.date: 06/11/2017
@@ -12,13 +12,13 @@ ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
 
-# dotnet-new (.NET Core SDK 2.0 Preview 2)
+# dotnet new (.NET Core SDK 2.0 Preview 2)
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
-`dotnet-new` - Creates a new project, configuration file, or solution based on the specified template.
+`dotnet new` - Creates a new project, configuration file, or solution based on the specified template.
 
 ## Synopsis
 

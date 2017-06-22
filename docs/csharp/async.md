@@ -26,7 +26,7 @@ For I/O-bound code, you `await` an operation which returns a `Task` or `Task<T>`
 
 For CPU-bound code, you `await` an operation which is started on a background thread with the `Task.Run` method.
 
-The `await` keyword is where the magic happens, because it yields control to the caller of the method which performed the `await`.  It is what ultimately allows a UI to be responsive, or a service to be elastic.
+The `await` keyword is where the magic happens. It yields control to the caller of the method that performed `await`, and it ultimately allows a UI to be responsive or a service to be elastic.
 
 There are other ways to approach async code than `async` and `await` outlined in the TAP article linked above, but this document will focus on the language-level constructs from this point forward.
 
@@ -68,7 +68,7 @@ private DamageResult CalculateDamageDone()
 
 calculateButton.Clicked += async (o, e) =>
 {
-    // This line will yield control to the UI CalculateDamageDone()
+    // This line will yield control to the UI while CalculateDamageDone()
     // performs its work.  The UI thread is free to perform other work.
     var damageResult = await Task.Run(() => CalculateDamageDone());
     DisplayDamage(damageResult);

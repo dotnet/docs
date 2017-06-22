@@ -41,7 +41,7 @@
 ### [Subscribing to events](multi-container-microservice-net-applications/subscribe-events.md)
 ### [Testing ASP.NET Core services and web apps](multi-container-microservice-net-applications/test-aspnet-core-services-web-apps.md)
 ## [Tackling Business Complexity in a Microservice with DDD and CQRS Patterns](microservice-ddd-cqrs-patterns/index.md)
-### [Applying simplified CQRS and DDD patterns in a microservice](microservice-ddd-cqrs-patterns/apply-simplified-cqrs-and-ddd-patterns-in-a-microservice.md)
+### [Applying simplified CQRS and DDD patterns in a microservice](microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns.md)
 ### [Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers](microservice-ddd-cqrs-patterns/eshoponcontainers-cqrs-ddd-microservice.md)
 ### [Implementing reads/queries in a CQRS microservice](microservice-ddd-cqrs-patterns/cqrs-microservice-reads.md)
 ### [Designing a DDD-oriented microservice](microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md)

@@ -1,10 +1,10 @@
 ---
-title: dotnet-sln command - .NET Core CLI | Microsoft Docs
+title: dotnet-sln command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-keywords: dotnet-sln, CLI, CLI command, .NET Core
-author: spboyer
+keywords: dotnet-sln, dotnet sln, CLI, CLI command, .NET Core
+author: guardrex
 ms.author: mairaw
-ms.date: 04/11/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,7 +12,9 @@ ms.devlang: dotnet
 ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ---
 
-# dotnet-sln
+# dotnet-sln (.NET Core SDK 2.0 Preview 2)
+
+[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
@@ -20,7 +22,7 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 
 ## Synopsis
 
-```
+```console
 dotnet sln [<SOLUTION_NAME>] add <PROJECT> <PROJECT> ...
 dotnet sln [<SOLUTION_NAME>] add <GLOBBING_PATTERN>
 dotnet sln [<SOLUTION_NAME>] remove <PROJECT> <PROJECT> ...
@@ -31,7 +33,7 @@ dotnet sln [-h|--help]
 
 ## Description
 
-The `dotnet sln` command provides a convenient way to add, remove, and list projects in a solution file.
+The `dotnet sln` command adds, removes, and lists projects in a solution file.
 
 ## Commands
 
@@ -61,7 +63,7 @@ Solution file to use. If not specified, the command searches the current directo
 
 `-h|--help`
 
-Prints out a short help for the command.
+Shows help information.
 
 ## Examples
 

@@ -97,7 +97,7 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The element respects the rules of the [NuGet versioning](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 

@@ -1,10 +1,10 @@
 ---
-title: dotnet-list reference command - .NET Core CLI | Microsoft Docs
+title: dotnet-list reference command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
 description: The dotnet-list reference command provides a convenient option to list project to project references.
-keywords: dotnet-list, CLI, CLI command, .NET Core
-author: spboyer
+keywords: dotnet-list, dotnet list reference, CLI, CLI command, .NET Core
+author: guardrex
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,7 +12,9 @@ ms.devlang: dotnet
 ms.assetid: 8f954a0c-03f8-4fbc-a529-b313ab12c623
 ---
 
-# dotnet-list reference
+# dotnet-list reference (.NET Core SDK 2.0 Preview 2)
+
+[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
@@ -24,19 +26,19 @@ ms.assetid: 8f954a0c-03f8-4fbc-a529-b313ab12c623
 
 ## Description
 
-The `dotnet list reference` command provides a convenient option to list project references for a given project.
+The `dotnet-list reference` command lists project references for a given project.
 
 ## Arguments
 
 `PROJECT`
 
-Specifies the project file to use for listing references. If not specified, the command will search the current directory for a project file.
+Specifies the project file to use for listing references. If not specified, the command searches the current directory for a project file.
 
 ## Options
 
 `-h|--help`
 
-Prints out a short help for the command.
+Shows help information.
 
 ## Examples
 

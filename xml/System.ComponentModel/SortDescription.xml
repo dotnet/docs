@@ -140,7 +140,7 @@
         <returns>
           <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Equals%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -167,7 +167,7 @@
         <returns>
           <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Compare%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

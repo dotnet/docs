@@ -37,7 +37,7 @@
   
  The <xref:System.Data.OracleClient.OracleConnectionStringBuilder> handles attempts to insert malicious entries. For example, the following code, using the default <xref:System.Data.OracleClient.OracleConnectionStringBuilder.Item%2A> property (the indexer, in C#) correctly escapes the nested key/value pair.  
   
-```vb  
+```vb
 Dim builder As New System.Data. _  
     OracleClient.OracleConnectionStringBuilder  
 builder("Data Source") = "OracleDemo"  
@@ -46,7 +46,7 @@ builder("User ID") = "Mary;NewValue=Bad"
 System.Diagnostics.Debug.WriteLine(builder.ConnectionString)  
 ```  
   
-```csharp  
+```csharp
 System.Data.OracleClient.OracleConnectionStringBuilder builder =  
    new System.Data.OracleClient.OracleConnectionStringBuilder();  
 builder["Data Source"] = "OracleDemo";  
@@ -64,7 +64,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
    
   
 ## Examples  
- The following console application builds connection strings for an Oracle database. The code uses an <xref:System.Data.OracleClient.OracleConnectionStringBuilder> class to create the connection string, and then passes the <xref:System.Data.OracleClient.OracleConnectionStringBuilder.ConnectionString%2A> property of the <xref:System.Data.OracleClient.OracleConnectionStringBuilder> instance to the constructor of the connection class. The example also parses an existing connection string, and demonstrates various ways of manipulating the connection string's contents.  
+ The following console application builds connection strings for an Oracle database. The code uses an <xref:System.Data.OracleClient.OracleConnectionStringBuilder> class to create the connection string, and then passes the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property of the <xref:System.Data.OracleClient.OracleConnectionStringBuilder> instance to the constructor of the connection class. The example also parses an existing connection string, and demonstrates various ways of manipulating the connection string's contents.  
   
 > [!NOTE]
 >  This example includes a password to demonstrate how <xref:System.Data.OracleClient.OracleConnectionStringBuilder> works with connection strings. In your applications, we recommend that you use Windows Authentication. If you must use a password, do not include a hard-coded password in your application.  

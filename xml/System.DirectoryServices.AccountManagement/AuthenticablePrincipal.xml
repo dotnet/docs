@@ -121,7 +121,7 @@
 ## Remarks  
  As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
   
- When you set the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate%2A>, the time will default to UTC.  If you want to write in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:DateTimeKind.Local>.  
+ When you set the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate%2A>, the time will default to UTC.  If you want to write in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind.Local>.  
   
  ]]></format>
         </remarks>
@@ -385,7 +385,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind.Local>.  
   
  ]]></format>
         </remarks>

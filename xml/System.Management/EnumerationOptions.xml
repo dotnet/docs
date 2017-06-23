@@ -50,8 +50,8 @@
 ## Examples  
  The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
   
- [!code-csharp[wminet_EnumerationOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions()/cs/EnumerationOptions().cs#1)]
- [!code-vb[wminet_EnumerationOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions()/vb/EnumerationOptions().vb#1)]  
+ [!code-csharp[wminet_EnumerationOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions/cs/EnumerationOptions.cs#1)]
+ [!code-vb[wminet_EnumerationOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions/vb/EnumerationOptions.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -110,8 +110,8 @@
 ## Examples  
  The following example initializes an <xref:System.Management.EnumerationOptions> variable with an <xref:System.Management.EnumerationOptions> constructor and then gets all the instances of a WMI class and its subclasses.  
   
- [!code-csharp[wminet_EnumerationOptions(10)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions(10)/cs/EnumerationOptions(10).cs#1)]
- [!code-vb[wminet_EnumerationOptions(10)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions(10)/vb/EnumerationOptions(10).vb#1)]  
+ [!code-csharp[wminet_EnumerationOptions-10#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EnumerationOptions-10/cs/EnumerationOptions-10.cs#1)]
+ [!code-vb[wminet_EnumerationOptions-10#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EnumerationOptions-10/vb/EnumerationOptions-10.vb#1)]  
   
  ]]></format>
         </remarks>

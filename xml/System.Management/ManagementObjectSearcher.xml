@@ -72,8 +72,8 @@
 ## Examples  
  The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
   
- [!code-csharp[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/cs/ManagementObjectSearcher(O).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(O)/vb/ManagementObjectSearcher(O).vb#1)]  
+ [!code-csharp[wminet_ManagementObjectSearcher-O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-O/cs/ManagementObjectSearcher-O.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher-O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-O/vb/ManagementObjectSearcher-O.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -107,8 +107,8 @@
 ## Examples  
  The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query.  
   
- [!code-csharp[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/cs/ManagementObjectSearcher(S).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S)/vb/ManagementObjectSearcher(S).vb#1)]  
+ [!code-csharp[wminet_ManagementObjectSearcher-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-S/cs/ManagementObjectSearcher-S.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-S/vb/ManagementObjectSearcher-S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -145,8 +145,8 @@
 ## Examples  
  The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
   
- [!code-csharp[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/cs/ManagementObjectSearcher(M_O).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O)/vb/ManagementObjectSearcher(M_O).vb#1)]  
+ [!code-csharp[wminet_ManagementObjectSearcher-M_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-M_O/cs/ManagementObjectSearcher-M_O.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher-M_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-M_O/vb/ManagementObjectSearcher-M_O.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -183,8 +183,8 @@
 ## Examples  
  The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query and scope.  
   
- [!code-csharp[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/cs/ManagementObjectSearcher(S_S).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S)/vb/ManagementObjectSearcher(S_S).vb#1)]  
+ [!code-csharp[wminet_ManagementObjectSearcher-S_S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-S_S/cs/ManagementObjectSearcher-S_S.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher-S_S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-S_S/vb/ManagementObjectSearcher-S_S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -222,8 +222,8 @@
 ## Examples  
  The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
   
- [!code-csharp[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/cs/ManagementObjectSearcher(M_O_E).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(M_O_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(M_O_E)/vb/ManagementObjectSearcher(M_O_E).vb#1)]  
+ [!code-csharp[wminet_ManagementObjectSearcher-M_O_E#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-M_O_E/cs/ManagementObjectSearcher-M_O_E.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher-M_O_E#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-M_O_E/vb/ManagementObjectSearcher-M_O_E.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -261,8 +261,8 @@
 ## Examples  
  The following example initializes a new instance of the <xref:System.Management.ManagementObjectSearcher> class with a specific query, scope, and enumeration options.  
   
- [!code-csharp[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/cs/ManagementObjectSearcher(S_S_E).cs#1)]
- [!code-vb[wminet_ManagementObjectSearcher(S_S_E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher(S_S_E)/vb/ManagementObjectSearcher(S_S_E).vb#1)]  
+ [!code-csharp[wminet_ManagementObjectSearcher-S_S_E#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-S_S_E/cs/ManagementObjectSearcher-S_S_E.cs#1)]
+ [!code-vb[wminet_ManagementObjectSearcher-S_S_E#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementObjectSearcher-S_S_E/vb/ManagementObjectSearcher-S_S_E.vb#1)]  
   
  ]]></format>
         </remarks>

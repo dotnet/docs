@@ -15,5 +15,5 @@ to edit or make pull requests, see this link: https://github.com/dotnet/csharpla
 [!INCLUDE[Interfaces from csharplang repo](../../../../_csharplang/spec/interfaces.md)]
 
 >[!div class="step-by-step"]
-[Pre](arrays.md)
+[Pre](arrays-docs.md)
 [Next](enums.md)

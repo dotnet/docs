@@ -16,4 +16,4 @@ to edit or make pull requests, see this link: https://github.com/dotnet/csharpla
 
 >[!div class="step-by-step"]
 [Pre](classes.md)
-[Next](arrays.md)
+[Next](arrays-docs.md)

@@ -67,8 +67,8 @@
 ## Examples  
  The following example initializes a <xref:System.Management.WqlEventQuery> by specifying a query and then initializes a <xref:System.Management.WqlEventQuery> by specifying an event.  
   
- [!code-csharp[wminet_WqlEventQuery(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S)/cs/WqlEventQuery(S).cs#1)]
- [!code-vb[wminet_WqlEventQuery(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S)/vb/WqlEventQuery(S).vb#1)]  
+ [!code-csharp[wminet_WqlEventQuery-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S/cs/WqlEventQuery-S.cs#1)]
+ [!code-vb[wminet_WqlEventQuery-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S/vb/WqlEventQuery-S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -133,8 +133,8 @@
 ## Examples  
  The following example initializes a <xref:System.Management.WqlEventQuery> by specifying an event and a time span value specifying the latency acceptable for receiving this event.  
   
- [!code-csharp[wminet_WqlEventQuery(S_T)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T)/cs/WqlEventQuery(S_T).cs#1)]
- [!code-vb[wminet_WqlEventQuery(S_T)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T)/vb/WqlEventQuery(S_T).vb#1)]  
+ [!code-csharp[wminet_WqlEventQuery-S_T#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S_T/cs/WqlEventQuery-S_T.cs#1)]
+ [!code-vb[wminet_WqlEventQuery-S_T#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S_T/vb/WqlEventQuery-S_T.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -203,8 +203,8 @@
 ## Examples  
  The following example creates the event query: "SELECT * FROM __InstanceCreationEvent *WITHIN* 10 WHERE TargetInstance ISA Win32_Service ", which sends notification of the creation of **Win32_Service** instances, with a 10-second polling interval.  
   
- [!code-csharp[wminet_WqlEventQuery(S_T_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S)/cs/WqlEventQuery(S_T_S).cs#1)]
- [!code-vb[wminet_WqlEventQuery(S_T_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S)/vb/WqlEventQuery(S_T_S).vb#1)]  
+ [!code-csharp[wminet_WqlEventQuery-S_T_S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S_T_S/cs/WqlEventQuery-S_T_S.cs#1)]
+ [!code-vb[wminet_WqlEventQuery-S_T_S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S_T_S/vb/WqlEventQuery-S_T_S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -281,8 +281,8 @@
 ## Examples  
  The following example creates the event query: "SELECT * FROM __InstanceCreationEvent WHERE TargetInstance ISA Win32_NTLogEvent GROUP WITHIN 600 BY TargetInstance.SourceName HAVING NumberOfEvents > 15" which delivers aggregate events only if the number of **Win32_NTLogEvent** events received from the same source exceeds 15.  
   
- [!code-csharp[wminet_WqlEventQuery(S_T_S_T_S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S_T_S_S)/cs/WqlEventQuery(S_T_S_T_S_S).cs#1)]
- [!code-vb[wminet_WqlEventQuery(S_T_S_T_S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S_T_S_S)/vb/WqlEventQuery(S_T_S_T_S_S).vb#1)]  
+ [!code-csharp[wminet_WqlEventQuery-S_T_S_T_S_S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S_T_S_T_S_S/cs/WqlEventQuery-S_T_S_T_S_S.cs#1)]
+ [!code-vb[wminet_WqlEventQuery-S_T_S_T_S_S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery-S_T_S_T_S_S/vb/WqlEventQuery-S_T_S_T_S_S.vb#1)]  
   
  ]]></format>
         </remarks>

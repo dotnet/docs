@@ -114,8 +114,8 @@
 ## Examples  
  The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
   
- [!code-csharp[wminet_ManagementScope(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/cs/ManagementScope(S).cs#1)]
- [!code-vb[wminet_ManagementScope(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/vb/ManagementScope(S).vb#1)]  
+ [!code-csharp[wminet_ManagementScope-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope-S/cs/ManagementScope-S.cs#1)]
+ [!code-vb[wminet_ManagementScope-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope-S/vb/ManagementScope-S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -180,8 +180,8 @@
 ## Examples  
  The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
   
- [!code-csharp[wminet_ManagementScope(S_C)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/cs/ManagementScope(S_C).cs#1)]
- [!code-vb[wminet_ManagementScope(S_C)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/vb/ManagementScope(S_C).vb#1)]  
+ [!code-csharp[wminet_ManagementScope-S_C#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope-S_C/cs/ManagementScope-S_C.cs#1)]
+ [!code-vb[wminet_ManagementScope-S_C#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope-S_C/vb/ManagementScope-S_C.vb#1)]  
   
  ]]></format>
         </remarks>

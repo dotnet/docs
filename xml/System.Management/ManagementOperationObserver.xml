@@ -50,8 +50,8 @@
 ## Examples  
  The following example demonstrates how to perform an asynchronous instance enumeration. The example uses the <xref:System.Management.ManagementOperationObserver> class to handle management information and events asynchronously.  
   
- [!code-csharp[wminet_ManagementOperationObserver()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver()/cs/ManagementOperationObserver().cs#1)]
- [!code-vb[wminet_ManagementOperationObserver()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver()/vb/ManagementOperationObserver().vb#1)]  
+ [!code-csharp[wminet_ManagementOperationObserver#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver/cs/ManagementOperationObserver.cs#1)]
+ [!code-vb[wminet_ManagementOperationObserver#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver/vb/ManagementOperationObserver.vb#1)]  
   
  ]]></format>
         </remarks>

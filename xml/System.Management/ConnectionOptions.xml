@@ -50,8 +50,8 @@
 ## Examples  
  The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
   
- [!code-csharp[wminet_ConnectionOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/cs/ConnectionOptions().cs#1)]
- [!code-vb[wminet_ConnectionOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/vb/ConnectionOptions().vb#1)]  
+ [!code-csharp[wminet_ConnectionOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions/cs/ConnectionOptions.cs#1)]
+ [!code-vb[wminet_ConnectionOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions/vb/ConnectionOptions.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -136,8 +136,8 @@
 ## Examples  
  The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
   
- [!code-csharp[wminet_ConnectionOptions(9)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/cs/ConnectionOptions(9).cs#1)]
- [!code-vb[wminet_ConnectionOptions(9)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/vb/ConnectionOptions(9).vb#1)]  
+ [!code-csharp[wminet_ConnectionOptions-9#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions-9/cs/ConnectionOptions-9.cs#1)]
+ [!code-vb[wminet_ConnectionOptions-9#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions-9/vb/ConnectionOptions-9.vb#1)]  
   
  ]]></format>
         </remarks>

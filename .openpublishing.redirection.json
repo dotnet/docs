@@ -443,6 +443,7 @@
             "redirect_document_id": true
         },
         {
+<<<<<<< HEAD
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5-1.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
@@ -521,6 +522,10 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/wcf/windows-communication-foundation.md",
+            "redirect_url": "/dotnet/framework/wcf/index"
         },
         {
             "source_path": "docs/framework/whats-new/whats-new.md",

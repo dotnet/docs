@@ -1,5 +1,4 @@
 # [Service-Oriented Applications with WCF](index.md)
-## [Windows Communication Foundation](windows-communication-foundation.md)
 ## [What's New in Windows Communication Foundation 4.5](whats-new.md)
 ## [WCF Simplification Features](wcf-simplification-features.md)
 ## [Guide to the Documentation](guide-to-the-documentation.md)

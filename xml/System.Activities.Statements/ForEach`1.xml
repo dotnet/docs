@@ -25,9 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Activities.Statements.ForEach> is similar to the keyword `foreach`, but is implemented as an activity rather than a language statement. Note that unlike `foreach` in C#, the <xref:System.Activities.Statements.ForEach%601> activity uses <xref:System.Collections.IEnumerable%601.GetEnumerator%2A>, rather than <xref:System.Collections.IEnumerator%23System%23Collections%23IEnumerable%23GetEnumerator%2A>.  
-  
-   
+ <xref:System.Activities.Statements.ForEach`1> is similar to the keyword `foreach` but is implemented as an activity rather than a language statement. Note that unlike `foreach` in C#, the <xref:System.Activities.Statements.ForEach%601> activity uses <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A>, rather than <xref:System.Collections.Generic.IEnumerator%601>.  
   
 ## Examples  
  The following code sample demonstrates creating a <xref:System.Activities.Statements.ForEach%601> activity. This example is from the [DynamicActivity Creation](~/docs/framework/windows-workflow-foundation/samples/dynamicactivity-creation.md) sample.  

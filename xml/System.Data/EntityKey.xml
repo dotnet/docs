@@ -544,7 +544,7 @@
   
  In addition, temporary keys have no <xref:System.Data.Metadata.Edm.EntitySet> or key values, but permanent keys do.  
   
- The equivalent method for this operator is <xref:System.Data.EntityKey.Equals%28System.Data.EntityKey%2CSystem.Data.EntityKey%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.EntityKey.Equals%28System.Data.EntityKey%29?displayProperty=fullName></format>
         </remarks>
       </Docs>
     </Member>
@@ -582,7 +582,7 @@
   
  In addition, temporary keys have no <xref:System.Data.Metadata.Edm.EntitySet> or key values, but regular keys do.  
   
- The equivalent method for this operator is <xref:System.Data.EntityKey.Compare%28System.Data.EntityKey%2CSystem.Data.EntityKey%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.EntityKey.Equals%28System.Data.EntityKey%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

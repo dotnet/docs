@@ -243,7 +243,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters represent the same <see cref="T:System.Collections.Specialized.BitVector32.Section" /> object, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Collections.Specialized.BitVector32.Section.Equals%28System.Collections.Specialized.BitVector32.Section%2CSystem.Collections.Specialized.BitVector32.Section%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Collections.Specialized.BitVector32.Section.Equals(System.Collections.Specialized.BitVector32.Section)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -280,7 +280,7 @@
         <returns>
           <see langword="true" /> if the <paramref name="a" /> and <paramref name="b" /> parameters represent different <see cref="T:System.Collections.Specialized.BitVector32.Section" /> objects; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Collections.Specialized.BitVector32.Section.Compare%28System.Collections.Specialized.BitVector32.Section%2CSystem.Collections.Specialized.BitVector32.Section%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Collections.Specialized.BitVector32.Section.op_Equality*></format>
         </remarks>
       </Docs>
     </Member>

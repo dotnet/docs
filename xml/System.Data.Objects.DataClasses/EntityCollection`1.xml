@@ -284,7 +284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Uses the <xref:System.Object.Equals> method to compare the specified object with the objects already in the collection.  
+ Uses the <xref:System.Object.Equals%2A?displayProperty=fullName> method to compare the specified object with the objects already in the collection.  
   
    
   
@@ -463,7 +463,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.Data.Objects.DataClasses.RelatedEnd.ValidateLoad%2A> method before loading the collection. See this method for a list of possible exceptions.  
+This method calls the internal `RelatedEnd.ValidateLoad` method before loading the collection, which validates that a call to <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> has the correct conditions. The `RelatedEnd.ValidateLoad` method checks that:
+
+* A valid <xref:System.Data.Objects.ObjectContext> exists.
+* The entity isn't in a <xref:System.Data.EntityState.Deleted> state.
+* <xref:System.Data.Objects.MergeOption> for <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> must be <xref:System.Data.Objects.MergeOption.NoTracking> if and only if the source entity was <xref:System.Data.Objects.MergeOption.NoTracking>. If the source entity was retrieved with any other <xref:System.Data.Objects.MergeOption>, the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> <xref:System.Data.Objects.MergeOption> can be anything but <xref:System.Data.Objects.MergeOption.NoTracking> (for example, the entity could have been loaded with <xref:System.Data.Objects.MergeOption.OverwriteChanges> and the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> option can be <xref:System.Data.Objects.MergeOption.AppendOnly>).
+* If `mergeOption` is <xref:System.Data.Objects.MergeOption.NoTracking>, <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> isn't called on an already loaded entity and <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> isn't called on a non-empty, not-tracked <xref:System.Data.Objects.DataClasses.RelatedEnd>.
   
  When objects in the collection are already loaded into the <xref:System.Data.Objects.ObjectContext>, the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A> method enforces the <xref:System.Data.Objects.MergeOption> specified by the `mergeOption` parameter. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
   

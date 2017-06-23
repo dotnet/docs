@@ -24,11 +24,11 @@
 ## Remarks  
  The <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method returns a <xref:System.Data.Services.Client.DataServiceResponse> object that contains a series of <xref:System.Data.Services.Client.OperationResponse> objects each of which contains a sequence of <xref:System.Data.Services.Client.EntityDescriptor> or <xref:System.Data.Services.Client.LinkDescriptor> instances that represent changes that were persisted.  
   
- For successful operations, the <xref:System.Data.Services.Client.EntityDescriptor.State%2A> property of the descriptor will be set to unchanged and the new values for insert and update operations will be merged according to the merge settings.  
+ For successful operations, the <xref:System.Data.Services.Client.Descriptor.State*> property of the descriptor will be set to unchanged and the new values for insert and update operations will be merged according to the merge settings.  
   
- For operations with errors, the <xref:System.Data.Services.Client.EntityDescriptor.State%2A> of the descriptor will remain the same as it was before <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> was called.  
+ For operations with errors, the <xref:System.Data.Services.Client.Descriptor.State*> of the descriptor will remain the same as it was before <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> was called.  
   
- If an error occurred and processing stopped during an operation, the <xref:System.Data.Services.Client.EntityDescriptor.State%2A> will remain unchanged.  
+ If an error occurred and processing stopped during an operation, the <xref:System.Data.Services.Client.Descriptor.State*> will remain unchanged.  
   
  ]]></format>
     </remarks>

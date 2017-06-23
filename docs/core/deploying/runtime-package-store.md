@@ -15,7 +15,7 @@ ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 
 Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist on the target environment. The benefits in doing so are smaller deployments, lower disk space usage, and improved startup performance in some cases.
 
-This feature is implemented by a runtime package store, which is a location on disk where packages are stored. The runtime can find, access, and use the packages in this store. That location is a *store* directory, next to [the `dotnet` host](../../tools/dotnet.md). Under this directory, there are subdirectories for [target frameworks](../../../standard/frameworks.md), under which the package store follows a NuGet layout.
+This feature is implemented by a runtime package store, which is a location on disk where packages are stored. The runtime can find, access, and use the packages in this store. That location is a *store* directory, next to [the `dotnet` host](../tools/dotnet.md). Under this directory, there are subdirectories for [target frameworks](../../standard/frameworks.md), under which the package store follows a NuGet layout.
 
 The second part of the implementation is a *target manifest*, which is a list of packages that compose a runtime package store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
 

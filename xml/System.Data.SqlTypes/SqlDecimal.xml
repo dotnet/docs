@@ -324,7 +324,6 @@
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operators.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Add%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -652,7 +651,6 @@
         <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Divide%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1223,7 +1221,6 @@
         <summary>The multiplication operator computes the product of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecim%2A> al.Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1336,7 +1333,7 @@
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operators.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Syste%2A> m.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1375,7 +1372,7 @@
         <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Sy%2A> stem.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1414,7 +1411,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operands to determine whether they are equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Equals%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Equals%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1663,7 +1660,7 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structures to determine whether the first is greater than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThan%2A> .SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThan(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1702,7 +1699,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether the first is greater than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.GreaterThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1986,7 +1983,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.NotEquals(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2025,7 +2022,7 @@
         <summary>Performs a logical comparison of two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structures to determine whether the first is less than the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThan%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThan%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2064,7 +2061,7 @@
         <summary>Performs a logical comparison of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlDecimal" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.LessThanOrEqual%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2103,7 +2100,7 @@
         <summary>The multiplication operator computes the product of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Multiply%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Multiply%28System.Data.SqlTypes.SqlDecimal%2CSystem.Data.SqlTypes.SqlDecimal%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2142,7 +2139,7 @@
         <summary>Calculates the results of subtracting the second <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand from the first.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose Value property contains the results of the subtraction.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Subtract%2A> )?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Subtract(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

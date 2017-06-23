@@ -1217,7 +1217,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Contracts.Contract.Result%2A> method to specify an expected return value. This code example is part of a larger example provided for the <xref:System.Diagnostics.Contracts.ContractClassAttribute> class.  
+ The following example shows how to use the <xref:System.Diagnostics.Contracts.Contract.Result``1*> method to specify an expected return value. This code example is part of a larger example provided for the <xref:System.Diagnostics.Contracts.ContractClassAttribute> class.  
   
  [!code-csharp[ContractExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/contractexample/cs/program.cs#3)]
  [!code-vb[ContractExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/contractexample/vb/program.vb#3)]  

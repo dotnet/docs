@@ -271,7 +271,7 @@ DbParameter cmd = newFactory.CreateParameter();
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code fragment uses the <xref:System.Data.OleDb.OleDbFactory.Instance%2A> property to retrieve an <xref:System.Data.OleDb.OleDbFactory> instance, and then return a strongly-typed <xref:System.Data.Common.DbCommand> instance:  
+ The following code fragment uses the <xref:System.Data.OleDb.OleDbFactory.Instance> field to retrieve an <xref:System.Data.OleDb.OleDbFactory> instance, and then return a strongly-typed <xref:System.Data.Common.DbCommand> instance:  
   
 ```vb  
 Dim newFactory As OleDbFactory = OleDbFactory.Instance  

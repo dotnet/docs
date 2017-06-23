@@ -445,7 +445,7 @@
 ## Remarks  
  Two <xref:System.Diagnostics.CounterSample> structures are equal if they have identical property values.  
   
- The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -481,7 +481,7 @@
 ## Remarks  
  Two <xref:System.Diagnostics.CounterSample> structures are not equal if any of their property values are different.  
   
- The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Compare%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

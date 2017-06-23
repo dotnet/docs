@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.Objects.CurrentValueRecord> object contains a <xref:System.Data.Common.DBDataRecord> view of the object or relationship tracked by an <xref:System.Data.Objects.ObjectStateEntry>.  
+ A <xref:System.Data.Objects.CurrentValueRecord> object contains a <xref:System.Data.Common.DbDataRecord> view of the object or relationship tracked by an <xref:System.Data.Objects.ObjectStateEntry>.  
   
  <xref:System.Data.Objects.CurrentValueRecord> implements <xref:System.Data.IExtendedDataRecord>, which provides read-only access to the current values of entities, relationships, and metadata.  
   

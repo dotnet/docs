@@ -1687,7 +1687,7 @@ finally
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23Generic%23IDictionary%7BTKey%40TValue%7D%23Keys%2A> property of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the keys in the dictionary. The example also shows how to enumerate the key/value pairs in the dictionary; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
+ The following code example shows how to use the <xref:System.Collections.IDictionary.Keys%2A> property of the <xref:System.Collections.IDictionary?displayProperty=fullName> interface with a <xref:System.Collections.Generic.SortedDictionary%602>, to list the keys in the dictionary. The example also shows how to enumerate the key/value pairs in the dictionary; note that the enumerator for the <xref:System.Collections.IDictionary?displayProperty=fullName> interface returns <xref:System.Collections.DictionaryEntry> objects rather than <xref:System.Collections.Generic.KeyValuePair%602> objects.  
   
  The code example is part of a larger example, including output, provided for the <xref:System.Collections.Generic.SortedDictionary%602.System%23Collections%23IDictionary%23Add%2A> method.  
   

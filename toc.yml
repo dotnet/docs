@@ -150,6 +150,7 @@
         - name: Client Applications
           tocHref: /dotnet/framework/
           topicHref: /dotnet/framework/develop-client-apps
+          items:
           - name: Common Client Technologies in the .NET Framework
             tocHref: /dotnet/framework/common-client-technologies/
             topicHref: /dotnet/framework/common-client-technologies/index
@@ -185,7 +186,6 @@
             - name: Windows Forms Controls
               tocHref: /dotnet/framework/winforms/controls/
               topicHref: /dotnet/framework/winforms/controls/index
-
         - name: Windows Communication Foundation
           tocHref: /dotnet/framework/wcf/
           topicHref: /dotnet/framework/wcf/index

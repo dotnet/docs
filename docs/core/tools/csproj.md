@@ -135,7 +135,7 @@ a replacement for the `tools` node in *project.json*.
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 ### RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project. 

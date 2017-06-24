@@ -21,7 +21,7 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ## Synopsis
 
 ```
-dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
+dotnet new <TEMPLATE> [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
@@ -60,6 +60,10 @@ The command contains a default list of templates. Use `dotnet new -all` to obtai
 
 Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
 
+`-i|--install <PATH|NUGET_ID>`
+
+Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Create custom templates for dotnet new](custom-templates.md).
+
 `-l|--list`
 
 Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
@@ -75,6 +79,10 @@ The name for the created output. If no name is specified, the name of the curren
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Location to place the generated output. The default is the current directory.
+
+`-u|--uninstall <PATH|NUGET_ID>`
+
+Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
 
 `-all|--show-all`
 
@@ -117,3 +125,7 @@ Create a new xUnit application targeting .NET Core 1.1:
 List all templates available for MVC:
 
 `dotnet new mvc -l`
+
+## See also
+
+[Create custom templates for dotnet new](custom-templates.md)   

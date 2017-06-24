@@ -15,9 +15,32 @@ ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 
 Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist on the target environment. The benefits in doing so are smaller deployments, lower disk space usage, and improved startup performance in some cases.
 
-This feature is implemented by a runtime package store, which is a location on disk where packages are stored. The runtime can find, access, and use the packages in this store. That location is a *store* directory, next to [the `dotnet` host](../tools/dotnet.md). Under this directory, there are subdirectories for [target frameworks](../../standard/frameworks.md), under which the package store follows a NuGet layout.
+This feature is implemented as a *runtime package store*, which is a directory on disk next to the the [`dotnet` host](../tools/dotnet.md) where packages are stored (typically at *.dotnet/store* in the user's profile). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](https://docs.microsoft.com/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
-The second part of the implementation is a *target manifest*, which is a list of packages that compose a runtime package store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
+```
+\dotnet
+  \store
+    \x64
+      \net47
+        \microsoft.applicationinsights
+        \microsoft.aspnetcore
+        ...
+      \netcoreapp2.0
+        \microsoft.applicationinsights
+        \microsoft.aspnetcore
+        ...
+    \x86
+      \net47
+        \microsoft.applicationinsights
+        \microsoft.aspnetcore
+        ...
+      \netcoreapp2.0
+        \microsoft.applicationinsights
+        \microsoft.aspnetcore
+        ...
+```
+
+The second part of the implementation is a *target manifest*, which is a list of packages that describe the runtime package store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
 
 The feature is also used implicitly by ASP.NET apps: The set of packages composing the ASP.NET web framework is installed as part of the setup packages authored by Microsoft. When publishing an ASP.NET app, the published app is trimmed to the app's included packages and not the framework's packages.
 

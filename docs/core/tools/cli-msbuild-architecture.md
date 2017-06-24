@@ -13,7 +13,7 @@ ms.assetid: 7fff0f61-ac23-42f0-9661-72a7240a4456
 
 # High-level overview of changes in the .NET Core tools
 
-This document describes the changes associated with moving from *project.json* to MSBuild and the *.csproj* project system that occurred with the release of .NET Core Tools 1.0, .NET Core 1.0.4/1.1.1, and Visual Studio 2017 on March 7, 2017 (see the [Announcement](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)). It outlines the new way the tooling is layered all-up and which new pieces are available and what is their place in the overall picture. After reading this article, you should have a better understanding of all of the pieces that make up .NET Core tooling after moving to MSBuild and *.csproj*. 
+This document will describe in high-level the changes that moving from *project.json* to MSBuild and *.csproj* project system bring. It will outline the new way the tooling is layered all-up and which new pieces are available and what is their place in the overall picture. After reading this article, you should have a better understanding of all of the pieces that make up .NET Core tooling after moving to MSBuild and *.csproj*. 
 
 ## Moving away from project.json
 

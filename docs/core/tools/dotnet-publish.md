@@ -61,6 +61,13 @@ Specifies the path for the output directory. If not specified, it defaults to *.
 
 Configuration to use when building the project. The default value is `Debug`.
 
+`--manifest <PATH_TO_MANIFEST_FILE>`
+
+Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest.
+
+> [!NOTE]
+> The `--manifest` option is available as a .NET Core SDK 2.0 Preview 2 feature.
+
 `--version-suffix <VERSION_SUFFIX>`
 
 Defines the version suffix to replace the asterisk (`*`) in the version field of the project file.

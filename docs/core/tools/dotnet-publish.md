@@ -55,10 +55,6 @@ Specifies the build configuration. The default is `Debug`.
 
 Specifies the [target framework](../../standard/frameworks.md). You must specify the target framework in the project file in either the **\<TargetFramework>** or **\<TargetFrameworks>** property. For more information, see [Additions to the csproj format for .NET Core](csproj.md).
 
-`--manifest <PATH_TO_MANIFEST_FILE>`
-
-Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest.
-
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment (FDD) or *./bin/[configuration]/[framework]/[runtime]/* for a self-contained deployment (SCD). For more information on the two types of deployement, see [.NET Core application deployment](../deploying/index.md).

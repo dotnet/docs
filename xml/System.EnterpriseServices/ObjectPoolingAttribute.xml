@@ -1,0 +1,240 @@
+<Type Name="ObjectPoolingAttribute" FullName="System.EnterpriseServices.ObjectPoolingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ObjectPoolingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectPoolingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ObjectPoolingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute (bool enable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="enable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute (int minPoolSize, int maxPoolSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minPoolSize, int32 maxPoolSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minPoolSize" Type="System.Int32" />
+        <Parameter Name="maxPoolSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="minPoolSize">To be added.</param>
+        <param name="maxPoolSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectPoolingAttribute (bool enable, int minPoolSize, int maxPoolSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enable, int32 minPoolSize, int32 maxPoolSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.#ctor(System.Boolean,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enable" Type="System.Boolean" />
+        <Parameter Name="minPoolSize" Type="System.Int32" />
+        <Parameter Name="maxPoolSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="enable">To be added.</param>
+        <param name="minPoolSize">To be added.</param>
+        <param name="maxPoolSize">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterSaveChanges">
+      <MemberSignature Language="C#" Value="public bool AfterSaveChanges (System.Collections.Hashtable info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AfterSaveChanges(class System.Collections.Hashtable info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.AfterSaveChanges(System.Collections.Hashtable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="info">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public bool Apply (System.Collections.Hashtable info);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Apply(class System.Collections.Hashtable info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.Apply(System.Collections.Hashtable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Collections.Hashtable" />
+      </Parameters>
+      <Docs>
+        <param name="info">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationTimeout">
+      <MemberSignature Language="C#" Value="public int CreationTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CreationTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.CreationTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidTarget">
+      <MemberSignature Language="C#" Value="public bool IsValidTarget (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidTarget(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ObjectPoolingAttribute.IsValidTarget(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPoolSize">
+      <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.MaxPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinPoolSize">
+      <MemberSignature Language="C#" Value="public int MinPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ObjectPoolingAttribute.MinPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

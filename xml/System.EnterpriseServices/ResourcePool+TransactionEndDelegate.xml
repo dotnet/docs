@@ -1,0 +1,23 @@
+<Type Name="ResourcePool+TransactionEndDelegate" FullName="System.EnterpriseServices.ResourcePool+TransactionEndDelegate">
+  <TypeSignature Language="C#" Value="public delegate void ResourcePool.TransactionEndDelegate(object resource);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ResourcePool/TransactionEndDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ResourcePool.TransactionEndDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="resource" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="resource">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

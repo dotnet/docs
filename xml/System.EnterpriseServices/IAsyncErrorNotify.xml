@@ -1,0 +1,45 @@
+<Type Name="IAsyncErrorNotify" FullName="System.EnterpriseServices.IAsyncErrorNotify">
+  <TypeSignature Language="C#" Value="public interface IAsyncErrorNotify" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncErrorNotify" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IAsyncErrorNotify" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("FE6777FB-A674-4177-8F32-6D707E113484")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="public void OnError (int hresult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnError(int32 hresult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IAsyncErrorNotify.OnError(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hresult" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hresult">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

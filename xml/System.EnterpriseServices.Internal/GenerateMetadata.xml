@@ -1,0 +1,155 @@
+<Type Name="GenerateMetadata" FullName="System.EnterpriseServices.Internal.GenerateMetadata">
+  <TypeSignature Language="C#" Value="public class GenerateMetadata : System.EnterpriseServices.Internal.IComSoapMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenerateMetadata extends System.Object implements class System.EnterpriseServices.Internal.IComSoapMetadata" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.GenerateMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.Internal.IComSoapMetadata</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("d8013ff1-730b-45e2-ba24-874b7242c425")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenerateMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Generate">
+      <MemberSignature Language="C#" Value="public string Generate (string strSrcTypeLib, string outPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Generate(string strSrcTypeLib, string outPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.Generate(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strSrcTypeLib" Type="System.String" />
+        <Parameter Name="outPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strSrcTypeLib">To be added.</param>
+        <param name="outPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateMetaData">
+      <MemberSignature Language="C#" Value="public string GenerateMetaData (string strSrcTypeLib, string outPath, byte[] PublicKey, System.Reflection.StrongNameKeyPair KeyPair);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateMetaData(string strSrcTypeLib, string outPath, unsigned int8[] PublicKey, class System.Reflection.StrongNameKeyPair KeyPair) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.GenerateMetaData(System.String,System.String,System.Byte[],System.Reflection.StrongNameKeyPair)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strSrcTypeLib" Type="System.String" />
+        <Parameter Name="outPath" Type="System.String" />
+        <Parameter Name="PublicKey" Type="System.Byte[]" />
+        <Parameter Name="KeyPair" Type="System.Reflection.StrongNameKeyPair" />
+      </Parameters>
+      <Docs>
+        <param name="strSrcTypeLib">To be added.</param>
+        <param name="outPath">To be added.</param>
+        <param name="PublicKey">To be added.</param>
+        <param name="KeyPair">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSigned">
+      <MemberSignature Language="C#" Value="public string GenerateSigned (string strSrcTypeLib, string outPath, bool InstallGac, out string Error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateSigned(string strSrcTypeLib, string outPath, bool InstallGac, string Error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strSrcTypeLib" Type="System.String" />
+        <Parameter Name="outPath" Type="System.String" />
+        <Parameter Name="InstallGac" Type="System.Boolean" />
+        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="strSrcTypeLib">To be added.</param>
+        <param name="outPath">To be added.</param>
+        <param name="InstallGac">To be added.</param>
+        <param name="Error">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchPath">
+      <MemberSignature Language="C#" Value="public static int SearchPath (string path, string fileName, string extension, int numBufferChars, string buffer, int[] filePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;kernel32.dll&quot; as &quot;SearchPath&quot; unicode winapi lasterr)int32 SearchPath(string path, string fileName, string extension, int32 numBufferChars, string buffer, int32[] filePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.GenerateMetadata.SearchPath(System.String,System.String,System.String,System.Int32,System.String,System.Int32[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="extension" Type="System.String" />
+        <Parameter Name="numBufferChars" Type="System.Int32" />
+        <Parameter Name="buffer" Type="System.String" />
+        <Parameter Name="filePart" Type="System.Int32[]" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="fileName">To be added.</param>
+        <param name="extension">To be added.</param>
+        <param name="numBufferChars">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="filePart">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,139 @@
+<Type Name="IClrObjectFactory" FullName="System.EnterpriseServices.Internal.IClrObjectFactory">
+  <TypeSignature Language="C#" Value="public interface IClrObjectFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClrObjectFactory" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IClrObjectFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("ecabafd2-7f19-11d2-978e-0000f8757e2a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromAssembly">
+      <MemberSignature Language="C#" Value="public object CreateFromAssembly (string assembly, string type, string mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromAssembly(string assembly, string type, string mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromAssembly(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="mode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromMailbox">
+      <MemberSignature Language="C#" Value="public object CreateFromMailbox (string Mailbox, string Mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromMailbox(string Mailbox, string Mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromMailbox(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Mailbox" Type="System.String" />
+        <Parameter Name="Mode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Mailbox">To be added.</param>
+        <param name="Mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromVroot">
+      <MemberSignature Language="C#" Value="public object CreateFromVroot (string VrootUrl, string Mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromVroot(string VrootUrl, string Mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromVroot(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="VrootUrl" Type="System.String" />
+        <Parameter Name="Mode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="VrootUrl">To be added.</param>
+        <param name="Mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromWsdl">
+      <MemberSignature Language="C#" Value="public object CreateFromWsdl (string WsdlUrl, string Mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateFromWsdl(string WsdlUrl, string Mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IClrObjectFactory.CreateFromWsdl(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="WsdlUrl" Type="System.String" />
+        <Parameter Name="Mode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="WsdlUrl">To be added.</param>
+        <param name="Mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

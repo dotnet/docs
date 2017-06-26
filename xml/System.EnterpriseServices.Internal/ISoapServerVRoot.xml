@@ -1,0 +1,145 @@
+<Type Name="ISoapServerVRoot" FullName="System.EnterpriseServices.Internal.ISoapServerVRoot">
+  <TypeSignature Language="C#" Value="public interface ISoapServerVRoot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapServerVRoot" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapServerVRoot" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("A31B6577-71D2-4344-AEDF-ADC1B0DC5347")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateVirtualRootEx">
+      <MemberSignature Language="C#" Value="public void CreateVirtualRootEx (string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, out string baseUrl, out string virtualRoot, out string physicalPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateVirtualRootEx(string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, string baseUrl, string virtualRoot, string physicalPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="inBaseUrl" Type="System.String" />
+        <Parameter Name="inVirtualRoot" Type="System.String" />
+        <Parameter Name="homePage" Type="System.String" />
+        <Parameter Name="discoFile" Type="System.String" />
+        <Parameter Name="secureSockets" Type="System.String" />
+        <Parameter Name="authentication" Type="System.String" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="rootWebServer">To be added.</param>
+        <param name="inBaseUrl">To be added.</param>
+        <param name="inVirtualRoot">To be added.</param>
+        <param name="homePage">To be added.</param>
+        <param name="discoFile">To be added.</param>
+        <param name="secureSockets">To be added.</param>
+        <param name="authentication">To be added.</param>
+        <param name="operation">To be added.</param>
+        <param name="baseUrl">To be added.</param>
+        <param name="virtualRoot">To be added.</param>
+        <param name="physicalPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteVirtualRootEx">
+      <MemberSignature Language="C#" Value="public void DeleteVirtualRootEx (string rootWebServer, string baseUrl, string virtualRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteVirtualRootEx(string rootWebServer, string baseUrl, string virtualRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.DeleteVirtualRootEx(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootWebServer">To be added.</param>
+        <param name="baseUrl">To be added.</param>
+        <param name="virtualRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualRootStatus">
+      <MemberSignature Language="C#" Value="public void GetVirtualRootStatus (string rootWebServer, string inBaseUrl, string inVirtualRoot, out string exists, out string secureSockets, out string windowsAuth, out string anonymous, out string homePage, out string discoFile, out string physicalPath, out string baseUrl, out string virtualRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVirtualRootStatus(string rootWebServer, string inBaseUrl, string inVirtualRoot, string exists, string secureSockets, string windowsAuth, string anonymous, string homePage, string discoFile, string physicalPath, string baseUrl, string virtualRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="inBaseUrl" Type="System.String" />
+        <Parameter Name="inVirtualRoot" Type="System.String" />
+        <Parameter Name="exists" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="secureSockets" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="windowsAuth" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="anonymous" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="homePage" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="discoFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="rootWebServer">To be added.</param>
+        <param name="inBaseUrl">To be added.</param>
+        <param name="inVirtualRoot">To be added.</param>
+        <param name="exists">To be added.</param>
+        <param name="secureSockets">To be added.</param>
+        <param name="windowsAuth">To be added.</param>
+        <param name="anonymous">To be added.</param>
+        <param name="homePage">To be added.</param>
+        <param name="discoFile">To be added.</param>
+        <param name="physicalPath">To be added.</param>
+        <param name="baseUrl">To be added.</param>
+        <param name="virtualRoot">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

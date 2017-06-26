@@ -1,0 +1,192 @@
+<Type Name="Clerk" FullName="System.EnterpriseServices.CompensatingResourceManager.Clerk">
+  <TypeSignature Language="C#" Value="public sealed class Clerk" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Clerk extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Clerk (string compensator, string description, System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string compensator, string description, valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.#ctor(System.String,System.String,System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="compensator" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="flags" Type="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="compensator">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Clerk (Type compensator, string description, System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type compensator, string description, valuetype System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.#ctor(System.Type,System.String,System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="compensator" Type="System.Type" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="flags" Type="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="compensator">To be added.</param>
+        <param name="description">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~Clerk ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceLog">
+      <MemberSignature Language="C#" Value="public void ForceLog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceLog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForceLog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceTransactionToAbort">
+      <MemberSignature Language="C#" Value="public void ForceTransactionToAbort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceTransactionToAbort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForceTransactionToAbort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForgetLogRecord">
+      <MemberSignature Language="C#" Value="public void ForgetLogRecord ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForgetLogRecord() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForgetLogRecord" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogRecordCount">
+      <MemberSignature Language="C#" Value="public int LogRecordCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LogRecordCount" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.Clerk.LogRecordCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionUOW">
+      <MemberSignature Language="C#" Value="public string TransactionUOW { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransactionUOW" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.Clerk.TransactionUOW" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLogRecord">
+      <MemberSignature Language="C#" Value="public void WriteLogRecord (object record);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteLogRecord(object record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.Clerk.WriteLogRecord(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="record">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

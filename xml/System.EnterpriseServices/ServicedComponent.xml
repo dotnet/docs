@@ -1,0 +1,257 @@
+<Type Name="ServicedComponent" FullName="System.EnterpriseServices.ServicedComponent">
+  <TypeSignature Language="C#" Value="public abstract class ServicedComponent : ContextBoundObject, IDisposable, System.EnterpriseServices.IRemoteDispatch, System.EnterpriseServices.IServicedComponentInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable ServicedComponent extends System.ContextBoundObject implements class System.EnterpriseServices.IRemoteDispatch, class System.EnterpriseServices.IServicedComponentInfo, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServicedComponent" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ContextBoundObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.IRemoteDispatch</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.IServicedComponentInfo</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServicedComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="protected virtual void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Activate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanBePooled">
+      <MemberSignature Language="C#" Value="protected virtual bool CanBePooled ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool CanBePooled() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.CanBePooled" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Construct">
+      <MemberSignature Language="C#" Value="protected virtual void Construct (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Construct(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Construct(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivate">
+      <MemberSignature Language="C#" Value="protected virtual void Deactivate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Deactivate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Deactivate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeObject">
+      <MemberSignature Language="C#" Value="public static void DisposeObject (System.EnterpriseServices.ServicedComponent sc);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DisposeObject(class System.EnterpriseServices.ServicedComponent sc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.DisposeObject(System.EnterpriseServices.ServicedComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sc" Type="System.EnterpriseServices.ServicedComponent" />
+      </Parameters>
+      <Docs>
+        <param name="sc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.EnterpriseServices.IRemoteDispatch.RemoteDispatchAutoDone">
+      <MemberSignature Language="C#" Value="string IRemoteDispatch.RemoteDispatchAutoDone (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.EnterpriseServices.IRemoteDispatch.RemoteDispatchAutoDone(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.System#EnterpriseServices#IRemoteDispatch#RemoteDispatchAutoDone(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.EnterpriseServices.AutoComplete(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.EnterpriseServices.IRemoteDispatch.RemoteDispatchNotAutoDone">
+      <MemberSignature Language="C#" Value="string IRemoteDispatch.RemoteDispatchNotAutoDone (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.EnterpriseServices.IRemoteDispatch.RemoteDispatchNotAutoDone(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.System#EnterpriseServices#IRemoteDispatch#RemoteDispatchNotAutoDone(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.EnterpriseServices.AutoComplete(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo">
+      <MemberSignature Language="C#" Value="void IServicedComponentInfo.GetComponentInfo (ref int infoMask, out string[] infoArray);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(int32 infoMask, string[] infoArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServicedComponent.System#EnterpriseServices#IServicedComponentInfo#GetComponentInfo(System.Int32@,System.String[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="infoMask" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="infoArray" Type="System.String[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="infoMask">To be added.</param>
+        <param name="infoArray">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

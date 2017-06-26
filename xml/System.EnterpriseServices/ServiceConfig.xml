@@ -1,0 +1,417 @@
+<Type Name="ServiceConfig" FullName="System.EnterpriseServices.ServiceConfig">
+  <TypeSignature Language="C#" Value="public sealed class ServiceConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServiceConfig" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceConfig ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceConfig.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binding">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.BindingOption Binding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.BindingOption Binding" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Binding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BringYourOwnSystemTransaction">
+      <MemberSignature Language="C#" Value="public System.Transactions.Transaction BringYourOwnSystemTransaction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Transactions.Transaction BringYourOwnSystemTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.BringYourOwnSystemTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.Transaction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BringYourOwnTransaction">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.ITransaction BringYourOwnTransaction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.ITransaction BringYourOwnTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ITransaction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="COMTIIntrinsicsEnabled">
+      <MemberSignature Language="C#" Value="public bool COMTIIntrinsicsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool COMTIIntrinsicsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.COMTIIntrinsicsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IISIntrinsicsEnabled">
+      <MemberSignature Language="C#" Value="public bool IISIntrinsicsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IISIntrinsicsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.IISIntrinsicsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inheritance">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.InheritanceOption Inheritance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.InheritanceOption Inheritance" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Inheritance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InheritanceOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsolationLevel">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.TransactionIsolationLevel IsolationLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.TransactionIsolationLevel IsolationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.IsolationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartitionId">
+      <MemberSignature Language="C#" Value="public Guid PartitionId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid PartitionId" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.PartitionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartitionOption">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.PartitionOption PartitionOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.PartitionOption PartitionOption" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.PartitionOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.PartitionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SxsDirectory">
+      <MemberSignature Language="C#" Value="public string SxsDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SxsDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.SxsDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SxsName">
+      <MemberSignature Language="C#" Value="public string SxsName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SxsName" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.SxsName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SxsOption">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SxsOption SxsOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.SxsOption SxsOption" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.SxsOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SxsOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronization">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SynchronizationOption Synchronization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.SynchronizationOption Synchronization" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Synchronization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadPool">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.ThreadPoolOption ThreadPool { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.ThreadPoolOption ThreadPool" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.ThreadPool" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ThreadPoolOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TipUrl">
+      <MemberSignature Language="C#" Value="public string TipUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TipUrl" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TipUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingAppName">
+      <MemberSignature Language="C#" Value="public string TrackingAppName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrackingAppName" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TrackingAppName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingComponentName">
+      <MemberSignature Language="C#" Value="public string TrackingComponentName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrackingComponentName" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TrackingComponentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingEnabled">
+      <MemberSignature Language="C#" Value="public bool TrackingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrackingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TrackingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transaction">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.TransactionOption Transaction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.TransactionOption Transaction" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Transaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionDescription">
+      <MemberSignature Language="C#" Value="public string TransactionDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransactionDescription" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TransactionDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionTimeout">
+      <MemberSignature Language="C#" Value="public int TransactionTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TransactionTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TransactionTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,67 @@
+<Type Name="BYOT" FullName="System.EnterpriseServices.BYOT">
+  <TypeSignature Language="C#" Value="public sealed class BYOT" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BYOT extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BYOT" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateWithTipTransaction">
+      <MemberSignature Language="C#" Value="public static object CreateWithTipTransaction (string url, Type t);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWithTipTransaction(string url, class System.Type t) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.BYOT.CreateWithTipTransaction(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="t" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWithTransaction">
+      <MemberSignature Language="C#" Value="public static object CreateWithTransaction (object transaction, Type t);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWithTransaction(object transaction, class System.Type t) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.BYOT.CreateWithTransaction(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transaction" Type="System.Object" />
+        <Parameter Name="t" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="transaction">To be added.</param>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

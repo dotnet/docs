@@ -1,0 +1,189 @@
+<Type Name="RegistrationHelper" FullName="System.EnterpriseServices.RegistrationHelper">
+  <TypeSignature Language="C#" Value="public sealed class RegistrationHelper : MarshalByRefObject, System.EnterpriseServices.IRegistrationHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegistrationHelper extends System.MarshalByRefObject implements class System.EnterpriseServices.IRegistrationHelper" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.IRegistrationHelper</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("89a86e7b-c229-4008-9baa-2f5c8411d7e0")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegistrationHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallAssembly(string assembly, string application, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="application">To be added.</param>
+        <param name="tlb">To be added.</param>
+        <param name="installFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, string partition, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string partition, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String,System.String@,System.EnterpriseServices.InstallationFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="partition" Type="System.String" />
+        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="application">To be added.</param>
+        <param name="partition">To be added.</param>
+        <param name="tlb">To be added.</param>
+        <param name="installFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssemblyFromConfig">
+      <MemberSignature Language="C#" Value="public void InstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="regConfig">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssembly">
+      <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UninstallAssembly(string assembly, string application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssembly(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="application">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssembly">
+      <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application, string partition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssembly(string assembly, string application, string partition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssembly(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String" />
+        <Parameter Name="partition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="application">To be added.</param>
+        <param name="partition">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssemblyFromConfig">
+      <MemberSignature Language="C#" Value="public void UninstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="regConfig">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

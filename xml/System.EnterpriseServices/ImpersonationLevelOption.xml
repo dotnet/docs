@@ -1,0 +1,98 @@
+<Type Name="ImpersonationLevelOption" FullName="System.EnterpriseServices.ImpersonationLevelOption">
+  <TypeSignature Language="C#" Value="public enum ImpersonationLevelOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ImpersonationLevelOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ImpersonationLevelOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anonymous">
+      <MemberSignature Language="C#" Value="Anonymous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ImpersonationLevelOption Anonymous = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Anonymous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ImpersonationLevelOption Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delegate">
+      <MemberSignature Language="C#" Value="Delegate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ImpersonationLevelOption Delegate = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Delegate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Identify">
+      <MemberSignature Language="C#" Value="Identify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ImpersonationLevelOption Identify = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Identify" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Impersonate">
+      <MemberSignature Language="C#" Value="Impersonate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ImpersonationLevelOption Impersonate = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ImpersonationLevelOption.Impersonate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

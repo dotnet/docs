@@ -16,9 +16,9 @@ ms.assetid: c28eb59d-4d18-4aba-bcd1-88bd887abc08
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
-The [`dotnet new` command](dotnet-new.md) is built on top of a template engine. When you invoke the command and specify a template with `dotnet new <TEMPLATE>`, the template engine creates project files and folders on disk from the template you specify to the command.
+When you run [`dotnet new <TEMPLATE>`](dotnet-new.md#arguments), the `dotnet new` template engine creates project files and folders on disk from the template you specify to the command. The [.NET Core SDK](https://www.microsoft.com/net/download/core) provides several useful templates, but you can create your own custom templates for any type of .NET project, such as a service, tool, class library, or even just one or more files, such as a configuration file.
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) provides several useful templates, but you can create your own custom templates for any type of .NET project, such as a service, tool, class library, or even just one or more files, such as a configuration file. Templates work with any Microsoft framework, including .NET Core, .NET Framework, and Xamarin. After you've created a custom template, users install it from a NuGet package on any NuGet feed (or by referencing the *nupkg* file directly) or by specifying a file system directory that contains the template. The template engine has templating features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations.
+Templates work with any Microsoft framework, including .NET Core, .NET Framework, and Xamarin. Users install your custom template from a NuGet package on any NuGet feed (or by referencing the *nupkg* file directly) or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
 
 The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. You can open an issue if you run into a problem or start a discussion for a new feature, possibly a feature that you contribute. Visit the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) repo for samples of templates. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) at GitHub. A detailed pre-release blog post that describes how to create and install custom templates written by [Sayed Ibrahim Hashimi](https://github.com/sayedihashimi) is at [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/).
 
@@ -34,7 +34,7 @@ A template is composed of the following components:
 The source files and folders are composed of whatever files and folders you want the templating engine to use when the `dotnet new <TEMPLATE>` command is executed. The templating engine is designed to use *runnable projects* as source code to produce projects. This has several benefits:
 
 - The templating engine doesn't require you to inject special tokens into your project's source code.
-- The code files aren't special files or modified in any way to work with the templating system, so the tools you normally use when working with projects also work with template content.
+- The code files aren't special files or modified in any way to work with the template engine, so the tools you normally use when working with projects also work with template content.
 - You build, run, and debug your template projects just like you do for any of your projects.
 - You can create a template from an existing project quickly by merely adding a *template.json* configuration file to the project.
 
@@ -59,7 +59,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
   "author": "Catalina Garcia",
   "classifications": [ "Common", "Console" ],
   "identity": "GarciaSoftware.ConsoleTemplate.CSharp",
-  "name": "My first .NET Core template",
+  "name": "Garcia Software .NET Core console app",
   "shortName": "garciaconsole"
 }
 ```
@@ -101,7 +101,7 @@ See the [.nuspec reference](https://docs.microsoft.com/nuget/schema/nuspec) for 
     <id>GarciaSoftware.ConsoleTemplate.CSharp</id>
     <version>1.0.0</version>
     <description>
-      GarciaSoftware.ConsoleTemplate.CSharp is my first .NET Core template.
+      The GarciaSoftware.ConsoleTemplate.CSharp project template creates a special .NET Core console app. Install the template with 'dotnet new -i GarciaSoftware.ConsoleTemplate.CSharp'. Create a project with the template by running 'dotnet new garciaconsole'.
     </description>
     <authors>Catalina Garcia</authors>
     <packageTypes>
@@ -136,7 +136,7 @@ dotnet new -i GarciaSoftware.ConsoleTemplate.CSharp
 ```
 
 > [!NOTE]
-> The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org. If you run the command, no template is installed. However, you can install a template that hasn't been published to nuget.org by referencing the *nupkg* file directly on your local file system.
+> The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org. If you run the command, no template is installed. However, you can install a template that hasn't been published to nuget.org by referencing the *nupkg* file directly on your local file system as shown in the next section.
 
 ### To install a template from a local *nupkg* file:
 
@@ -181,9 +181,7 @@ dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp
 > [!NOTE]
 > The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org or installed with the .NET Core SDK. If you run the command, no package/template is uninstalled and you receive the following exception:
 > 
-> ```console
-> Could not find something to uninstall called 'GarciaSoftware.ConsoleTemplate.CSharp'.
-> ```
+> > Could not find something to uninstall called 'GarciaSoftware.ConsoleTemplate.CSharp'.
 
 ### To uninstall a template from a local *nupkg* file:
 
@@ -213,7 +211,7 @@ dotnet new -u C:/Users/Garcia/Documents/Templates/content
 
 ## Creating a project from a template
 
-After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed. Supply the template's short name directly to the command:
+After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `dotnet new` option `-o|--output` to specify a specific directory; see [`dotnet new` Options](dotnet-new.md#options) for more information). Supply the template's short name directly to the command:
 
 ```console
 dotnet new <TEMPLATE>

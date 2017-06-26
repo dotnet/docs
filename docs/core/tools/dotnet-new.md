@@ -62,7 +62,7 @@ Prints out help for the command. It can be invoked for the `dotnet new` command 
 
 `-i|--install <PATH|NUGET_ID>`
 
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Create custom templates for dotnet new](custom-templates.md).
+Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Create custom templates for dotnet new](custom-templates.md). This option is available starting with .NET Core SDK 2.0 Preview 2.
 
 `-l|--list`
 
@@ -82,7 +82,7 @@ Location to place the generated output. The default is the current directory.
 
 `-u|--uninstall <PATH|NUGET_ID>`
 
-Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
+Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. This option is available starting with .NET Core SDK 2.0 Preview 2.
 
 `-all|--show-all`
 

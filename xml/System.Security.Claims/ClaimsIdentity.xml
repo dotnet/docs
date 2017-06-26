@@ -210,7 +210,8 @@
       <Docs>
         <param name="info">The serialized data.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -436,7 +437,8 @@
         <param name="info">The serialized data.</param>
         <param name="context">The context for serialization.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.ClaimsIdentity" /> class from a serialized stream created by using <see cref="T:System.Runtime.Serialization.ISerializable" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is **null**.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -928,7 +930,8 @@
       <Docs>
         <summary>Returns a new <see cref="T:System.Security.Claims.ClaimsIdentity" /> copied from this claims identity.</summary>
         <returns>A copy of the current instance.</returns>
-        <remarks></remarks>        
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateClaim">
@@ -959,8 +962,9 @@
       <Docs>
         <param name="reader">The <see cref="T:System.IO.BinaryReader" /> that points to the claim.</param>
         <summary>Provides an extensibility point for derived types to create a custom <see cref="T:System.Security.Claims.Claim" />.</summary>
-        <remarks></remarks>
         <returns>A new <see cref="T:System.Security.Claims.Claim" />.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
@@ -989,8 +993,9 @@
       </ReturnValue>
       <Docs>
         <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
-        <remarks></remarks>
         <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultIssuer">
@@ -1017,7 +1022,8 @@
       </ReturnValue>
       <Docs>
         <summary>The default issuer; "LOCAL AUTHORITY".</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultNameClaimType">
@@ -1044,7 +1050,8 @@
       </ReturnValue>
       <Docs>
         <summary>The default name claim type; <see cref="F:System.Security.Claims.ClaimTypes.Name" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultRoleClaimType">
@@ -1071,7 +1078,8 @@
       </ReturnValue>
       <Docs>
         <summary>The default role claim type; <see cref="F:System.Security.Claims.ClaimTypes.Role" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindAll">
@@ -1102,8 +1110,9 @@
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves all of the claims that are matched by the specified predicate.</summary>
-        <remarks></remarks>
         <returns>The matching claims. The list is read-only.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1177,8 +1186,9 @@
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Retrieves the first claim that is matched by the specified predicate.</summary>
-        <remarks></remarks>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1211,8 +1221,9 @@
       <Docs>
         <param name="type">The claim type to match.</param>
         <summary>Retrieves the first claim with the specified claim type.</summary>
-        <remarks></remarks>
         <returns>The first matching claim or <see langword="null" /> if no match is found.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> is **null**.</exception>
       </Docs>
@@ -1251,7 +1262,8 @@
         <param name="info">The object to populate with data.</param>
         <param name="context">The destination for this serialization. Can be <see langword="null" />.</param>
         <summary>Populates the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with data needed to serialize the current <see cref="T:System.Security.Claims.ClaimsIdentity" /> object.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="info" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1285,9 +1297,10 @@
       <Docs>
         <param name="match">The function that performs the matching logic.</param>
         <summary>Determines whether this claims identity has a claim that is matched by the specified predicate.</summary>
-        <remarks></remarks>
         <returns>
           <see langword="true" /> if a matching claim exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="match" /> is **null**.</exception>
       </Docs>
@@ -1400,8 +1413,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the label for this claims identity.</summary>
-        <remarks></remarks>
         <value>The label.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1638,7 +1652,8 @@
       <Docs>
         <param name="writer">The writer to use for data storage.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1673,7 +1688,8 @@
         <param name="writer">The writer to use for data storage.</param>
         <param name="userData">Additional data provided by the derived type.</param>
         <summary>Serializes using a <see cref="T:System.IO.BinaryWriter" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>

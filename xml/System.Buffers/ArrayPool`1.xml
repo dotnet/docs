@@ -17,8 +17,9 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">The type of the objects that are in the resource pool.</typeparam>
-    <summary>Provides a resource pool that enables reusing instances of type <see cref="T:T[]"/>.</summary>
-    <remarks><format type="text/markdown"><![CDATA[  
+    <summary>Provides a resource pool that enables reusing instances of type <see cref="T:T[]" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -42,9 +43,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="ArrayPool{T}"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="ArrayPool{T}" /> class.</summary>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -69,9 +70,10 @@ Note that this constructor is protected; it can only be called by classes derive
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="ArrayPool{T}"/> class.</summary>
-        <returns>A new instance of the <see cref="ArrayPool{T}"/> class.</returns>
-        <remarks></remarks>
+        <summary>Creates a new instance of the <see cref="ArrayPool{T}" /> class.</summary>
+        <returns>A new instance of the <see cref="ArrayPool{T}" /> class.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -95,10 +97,10 @@ Note that this constructor is protected; it can only be called by classes derive
       <Docs>
         <param name="maxArrayLength">The maximum length of an array instance that may be stored in the pool.</param>
         <param name="maxArraysPerBucket">The maximum number of array instances that may be stored in each bucket in the pool. The pool groups arrays of similar lengths into buckets for faster access.</param>
-        <summary>Creates a new instance of the <see cref="ArrayPool{T}"/> class using the specifed configuration.</summary>
-        <returns>A new instance of the <see cref="ArrayPool{T}"/> class with the specified configuration.</returns>
+        <summary>Creates a new instance of the <see cref="ArrayPool{T}" /> class using the specifed configuration.</summary>
+        <returns>A new instance of the <see cref="ArrayPool{T}" /> class with the specified configuration.</returns>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -127,9 +129,9 @@ The instance of the <see cref="ArrayPool{T}"/> class created by this method will
       <Docs>
         <param name="minimumLength">The minimum length of the array.</param>
         <summary>Retrieves a buffer that is at least the requested length.</summary>
-        <returns>An array of type <see cref="T:T[]"/> that is at least <paramref name="minimumLength"/> in length.</returns>
+        <returns>An array of type <see cref="T:T[]" /> that is at least <paramref name="minimumLength" /> in length.</returns>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
@@ -157,11 +159,11 @@ This buffer is loaned to the caller and should be returned to the same pool usin
         <Parameter Name="clearArray" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="array">A buffer to return to the pool that was previously obtained using the <see cref="Rent"/> method.</param>
-        <param name="clearArray">Indicates whether the contents of the buffer should be cleared before reuse. If <paramref name="bufferLength"/> is set to <see langword="true" />, and if the pool will store the buffer to enable subsequent reuse, the <see cref="Return"/> method will clear the <paramref name="array"/> of its contents so that a subsequent caller using the <see cref="Rent"/> method will not see the content of the previous caller. If <paramref name="bufferLength"/> is set to <see langword="false" /> or if the pool will release the buffer, the array's contents are left unchanged.</param>
-        <summary>Returns an array to the pool that was previously obtained using the <see cref="Rent"/> method on the same <see cref="ArrayPool{T}"/> instance.</summary>
+        <param name="array">A buffer to return to the pool that was previously obtained using the <see cref="Rent" /> method.</param>
+        <param name="clearArray">Indicates whether the contents of the buffer should be cleared before reuse. If <paramref name="bufferLength" /> is set to <see langword="true" />, and if the pool will store the buffer to enable subsequent reuse, the <see cref="Return" /> method will clear the <paramref name="array" /> of its contents so that a subsequent caller using the <see cref="Rent" /> method will not see the content of the previous caller. If <paramref name="bufferLength" /> is set to <see langword="false" /> or if the pool will release the buffer, the array's contents are left unchanged.</param>
+        <summary>Returns an array to the pool that was previously obtained using the <see cref="Rent" /> method on the same <see cref="ArrayPool{T}" /> instance.</summary>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 
@@ -185,10 +187,10 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
         <ReturnType>System.Buffers.ArrayPool&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a shared <see cref="ArrayPool{T}"/> instance.</summary>
-        <value>A shared <see cref="ArrayPool{T}"/> instance.</value>
+        <summary>Gets a shared <see cref="ArrayPool{T}" /> instance.</summary>
+        <value>A shared <see cref="ArrayPool{T}" /> instance.</value>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
 

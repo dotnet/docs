@@ -76,7 +76,8 @@ microsoft/dotnet    1.0.0-core              b8da4a1fd280        253.2 MB
 To build and run, you'll need a few things installed:
 
 - [.NET Core](http://dot.net)
-- [Docker](https://www.docker.com/products/docker) to run your Docker containers locally 
+- [Docker](https://www.docker.com/products/docker) to run your Docker containers locally
+- [Node.js](https://nodejs.org/)
 - [Yeoman generator for ASP.NET](https://github.com/omnisharp/generator-aspnet) for creating the Web API application
 - [Yeoman generator for Docker](http://aka.ms/yodocker) from Microsoft
 

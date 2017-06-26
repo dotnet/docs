@@ -29,9 +29,16 @@
         ]
       },
       {
-          "files": [
-           "core/**/*.md"
-         ]
+        "files": [
+          "**/*.md"
+        ],
+        "src": "_csharplang",
+        "dest": "."
+      },
+      {
+        "files": [
+          "core/**/*.md"
+        ]
       },
       {
         "files": [

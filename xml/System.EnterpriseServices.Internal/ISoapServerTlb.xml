@@ -1,0 +1,115 @@
+<Type Name="ISoapServerTlb" FullName="System.EnterpriseServices.Internal.ISoapServerTlb">
+  <TypeSignature Language="C#" Value="public interface ISoapServerTlb" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapServerTlb" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapServerTlb" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("1E7BA9F7-21DB-4482-929E-21BDE2DFE51C")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddServerTlb">
+      <MemberSignature Language="C#" Value="public void AddServerTlb (string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string clientActivated, string wellKnown, string discoFile, string operation, out string assemblyName, out string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddServerTlb(string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string clientActivated, string wellKnown, string discoFile, string operation, string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progId" Type="System.String" />
+        <Parameter Name="classId" Type="System.String" />
+        <Parameter Name="interfaceId" Type="System.String" />
+        <Parameter Name="srcTlbPath" Type="System.String" />
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+        <Parameter Name="clientActivated" Type="System.String" />
+        <Parameter Name="wellKnown" Type="System.String" />
+        <Parameter Name="discoFile" Type="System.String" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="typeName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="progId">To be added.</param>
+        <param name="classId">To be added.</param>
+        <param name="interfaceId">To be added.</param>
+        <param name="srcTlbPath">To be added.</param>
+        <param name="rootWebServer">To be added.</param>
+        <param name="baseUrl">To be added.</param>
+        <param name="virtualRoot">To be added.</param>
+        <param name="clientActivated">To be added.</param>
+        <param name="wellKnown">To be added.</param>
+        <param name="discoFile">To be added.</param>
+        <param name="operation">To be added.</param>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteServerTlb">
+      <MemberSignature Language="C#" Value="public void DeleteServerTlb (string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string operation, string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteServerTlb(string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string operation, string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.DeleteServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progId" Type="System.String" />
+        <Parameter Name="classId" Type="System.String" />
+        <Parameter Name="interfaceId" Type="System.String" />
+        <Parameter Name="srcTlbPath" Type="System.String" />
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="progId">To be added.</param>
+        <param name="classId">To be added.</param>
+        <param name="interfaceId">To be added.</param>
+        <param name="srcTlbPath">To be added.</param>
+        <param name="rootWebServer">To be added.</param>
+        <param name="baseUrl">To be added.</param>
+        <param name="virtualRoot">To be added.</param>
+        <param name="operation">To be added.</param>
+        <param name="assemblyName">To be added.</param>
+        <param name="typeName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

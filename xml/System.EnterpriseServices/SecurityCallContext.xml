@@ -1,0 +1,191 @@
+<Type Name="SecurityCallContext" FullName="System.EnterpriseServices.SecurityCallContext">
+  <TypeSignature Language="C#" Value="public sealed class SecurityCallContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityCallContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SecurityCallContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Callers">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SecurityCallers Callers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.SecurityCallers Callers" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.Callers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityCallers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentCall">
+      <MemberSignature Language="C#" Value="public static System.EnterpriseServices.SecurityCallContext CurrentCall { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.EnterpriseServices.SecurityCallContext CurrentCall" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.CurrentCall" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityCallContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectCaller">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SecurityIdentity DirectCaller { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.SecurityIdentity DirectCaller" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.DirectCaller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCallerInRole">
+      <MemberSignature Language="C#" Value="public bool IsCallerInRole (string role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsCallerInRole(string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityCallContext.IsCallerInRole(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="role">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecurityEnabled">
+      <MemberSignature Language="C#" Value="public bool IsSecurityEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSecurityEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.IsSecurityEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUserInRole">
+      <MemberSignature Language="C#" Value="public bool IsUserInRole (string user, string role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsUserInRole(string user, string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityCallContext.IsUserInRole(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.String" />
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="user">To be added.</param>
+        <param name="role">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinAuthenticationLevel">
+      <MemberSignature Language="C#" Value="public int MinAuthenticationLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinAuthenticationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.MinAuthenticationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumCallers">
+      <MemberSignature Language="C#" Value="public int NumCallers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumCallers" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.NumCallers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalCaller">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SecurityIdentity OriginalCaller { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.SecurityIdentity OriginalCaller" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.OriginalCaller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,93 @@
+<Type Name="ComManagedImportUtil" FullName="System.EnterpriseServices.Internal.ComManagedImportUtil">
+  <TypeSignature Language="C#" Value="public class ComManagedImportUtil : System.EnterpriseServices.Internal.IComManagedImportUtil" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComManagedImportUtil extends System.Object implements class System.EnterpriseServices.Internal.IComManagedImportUtil" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ComManagedImportUtil" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.Internal.IComManagedImportUtil</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3b0398c9-7812-4007-85cb-18c771f2206f")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComManagedImportUtil ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentInfo">
+      <MemberSignature Language="C#" Value="public void GetComponentInfo (string assemblyPath, out string numComponents, out string componentInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetComponentInfo(string assemblyPath, string numComponents, string componentInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyPath" Type="System.String" />
+        <Parameter Name="numComponents" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="componentInfo" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyPath">To be added.</param>
+        <param name="numComponents">To be added.</param>
+        <param name="componentInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string asmpath, string parname, string appname);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallAssembly(string asmpath, string parname, string appname) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asmpath" Type="System.String" />
+        <Parameter Name="parname" Type="System.String" />
+        <Parameter Name="appname" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="asmpath">To be added.</param>
+        <param name="parname">To be added.</param>
+        <param name="appname">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

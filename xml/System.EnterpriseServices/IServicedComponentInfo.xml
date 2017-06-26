@@ -1,0 +1,47 @@
+<Type Name="IServicedComponentInfo" FullName="System.EnterpriseServices.IServicedComponentInfo">
+  <TypeSignature Language="C#" Value="public interface IServicedComponentInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServicedComponentInfo" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IServicedComponentInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("8165B19E-8D3A-4d0b-80C8-97DE310DB583")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetComponentInfo">
+      <MemberSignature Language="C#" Value="public void GetComponentInfo (ref int infoMask, out string[] infoArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetComponentInfo(int32 infoMask, string[] infoArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(System.Int32@,System.String[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="infoMask" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="infoArray" Type="System.String[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="infoMask">To be added.</param>
+        <param name="infoArray">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

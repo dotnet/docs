@@ -579,7 +579,7 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
-     </Docs>
+      </Docs>
     </Member>
     <Member MemberName="TryGetGuid">
       <MemberSignature Language="C#" Value="public bool TryGetGuid (byte[] buffer, int offset);" />

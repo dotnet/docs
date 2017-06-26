@@ -26,9 +26,9 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 
 `dotnet publish` compiles the application, reads through its dependencies specified in the project file, and publishes the resulting set of files to a directory. The output will contain the following:
 
-* Intermediate Language (IL) code in an assembly with a `*.dll` extension.
-* *\*.deps.json* file that contains all of the dependencies of the project.
-* *\*.runtime.config.json* file that specifies the shared runtime that the application expects, as well as other configuration options for the runtime (for example, garbage collection type).
+* Intermediate Language (IL) code in an assembly with a *dll* extension.
+* *.deps.json* file that contains all of the dependencies of the project.
+* *.runtime.config.json* file that specifies the shared runtime that the application expects, as well as other configuration options for the runtime (for example, garbage collection type).
 * The application's dependencies. These are copied from the NuGet cache into the output folder.
 
 The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution and is the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [.NET Core Application Deployment](../deploying/index.md). For the directory structure of a published application, see [Directory structure](https://docs.microsoft.com/en-us/aspnet/core/hosting/directory-structure).
@@ -63,10 +63,7 @@ Configuration to use when building the project. The default value is `Debug`.
 
 `--manifest <PATH_TO_MANIFEST_FILE>`
 
-Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest.
-
-> [!NOTE]
-> The `--manifest` option is available as a .NET Core SDK 2.0 Preview 2 feature.
+Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest. This option is available starting with .NET Core SDK 2.0 Preview 2.
 
 `--version-suffix <VERSION_SUFFIX>`
 

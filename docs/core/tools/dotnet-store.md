@@ -4,7 +4,7 @@ description: The 'dotnet store' command stores the specified assemblies in the r
 keywords: dotnet store, dotnet store, CLI, CLI command, .NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 06/11/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli

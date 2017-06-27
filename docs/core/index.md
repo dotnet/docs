@@ -59,7 +59,7 @@ By itself, .NET Core includes a single application model -- console apps -- whic
 
 - [ASP.NET Core](https://docs.microsoft.com/aspnet/core/)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
-- [Xamarin.Forms](https://www.xamarin.com/forms)
+- [Xamarin.Forms when targeting UWP](https://www.xamarin.com/forms)
 
 ### Open Source
 

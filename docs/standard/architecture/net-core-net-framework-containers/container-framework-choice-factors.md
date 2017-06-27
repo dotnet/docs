@@ -34,7 +34,7 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
     - *.NET Core* on Linux containers.
     - *.NET Core (recommended)*, or *.NET Framework* on Windows containers.
 * **ASP.NET 4 (MVC 5, Web API 2, and Web Forms)**
-    - *Do not choose* Linux cvontainers because of .NET Framework dependency.
+    - *Do not choose* Linux containers because of .NET Framework dependency.
     - *.NET Framework* on Windows containers.
 * **SignalR services**
     - *.NET Core (future release)* on Linux containers.

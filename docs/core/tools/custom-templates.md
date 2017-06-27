@@ -16,7 +16,7 @@ ms.assetid: c28eb59d-4d18-4aba-bcd1-88bd887abc08
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
-When you run [`dotnet new <TEMPLATE>`](dotnet-new.md#arguments), the template engine that creates the project files and folders on disk uses the template that you specify to the command. The [.NET Core SDK](https://www.microsoft.com/net/download/core) provides many useful templates, but you can create your own custom templates for any type of .NET project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://www.microsoft.com/net/download/core) provides many useful templates, but you can create your own custom templates for any type of .NET project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 Templates work with any Microsoft framework, including .NET Core, .NET Framework, and Xamarin. Users install your custom template from a NuGet package on any NuGet feed, by referencing a NuGet *nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
 
@@ -185,7 +185,7 @@ dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp
 
 ### To uninstall a template from a local *nupkg* file:
 
-Although you can install a template from a *nupkg* file on your local file system by referecing the *nupkg* file directly with the `dotnet new -i <PATH_TO_NUPKG_FILE>` command; when you wish to uninstall the template, only reference it by it's `id` (for example, `dotnet new -u <NUGET_PACKAGE_ID>`). *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.*
+Although you can install a template from a *nupkg* file on your local file system by referencing the *nupkg* file directly with the `dotnet new -i <PATH_TO_NUPKG_FILE>` command; when you wish to uninstall the template, only reference it by it's `id` (for example, `dotnet new -u <NUGET_PACKAGE_ID>`). *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.*
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>

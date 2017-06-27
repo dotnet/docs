@@ -34,9 +34,9 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 Specifies the [target framework](../../standard/frameworks.md).
 
-`-m|--manifest <MANIFEST_FILE>`
+`-m|--manifest <PATH_TO_MANIFEST_FILE>`
 
-The XML file, or a list of XML files, that contain the list of packages to store. The format of the manifest files is compatible with the *csproj* format, so a *csproj* project file referencing the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store.
+The *package store manifest file* is an XML file that contains the list of packages to store. The format of the manifest file is compatible with the *csproj* format, so a *csproj* project file referencing the desired packages can be used with the `-m|--manifest` option to store assemblies in the runtime package store. To specify multiple manifest files, repeat the option and path for each file: `--manifest packages1.csproj --manifest packages2.csproj`.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
@@ -68,7 +68,7 @@ Skips symbol generation. Currently, you can only generate symbols on Windows and
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
-`--working-dir <INTERMEDIATE_WORKING_DIRECTORY>`
+`-w|--working-dir <INTERMEDIATE_WORKING_DIRECTORY>`
 
 The working directory used by the command. If not specified, it uses the *obj* subdirectory of the current directory.
 

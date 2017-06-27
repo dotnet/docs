@@ -15,38 +15,94 @@ ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
-Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist in the target environment. The benefits are faster deployments, lower disk space usage, and improved startup performance in some cases.
+Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist in the target environment. The benefits are faster deployments, lower disk space use, and improved startup performance in some cases.
 
-This feature is implemented as a *runtime package store*, which is a directory on disk next to the the [`dotnet` host](../tools/dotnet.md) where packages are stored (typically at *.dotnet/store* in the user's profile). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](https://docs.microsoft.com/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
+This feature is implemented as a *runtime package store*, which is a directory on disk next to the the [`dotnet` host](../tools/dotnet.md) where packages are stored (typically at *.dotnet/store* in the user's profile). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
-\dotnet
-&nbsp;&nbsp;\store
-&nbsp;&nbsp;&nbsp;&nbsp;\x64
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\net47
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\netcoreapp2.0
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
-&nbsp;&nbsp;&nbsp;&nbsp;\x86
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\net47
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\netcoreapp2.0
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+\dotnet   
+&nbsp;&nbsp;\store   
+&nbsp;&nbsp;&nbsp;&nbsp;\x64   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\net47   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\netcoreapp2.0   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
+&nbsp;&nbsp;&nbsp;&nbsp;\x86   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\net47   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\netcoreapp2.0   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.applicationinsights   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
 
-The second part of the implementation is a *target manifest*, which is a list of packages that describe the runtime package store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
+A *target manifest* file describes the runtime package store by indicating the packages in the store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
 
-The feature is also used implicitly by ASP.NET apps: The set of packages composing the ASP.NET web framework is installed as part of the setup packages authored by Microsoft. When publishing an ASP.NET app, the published app is trimmed to the app's included packages and not the framework's packages.
+This feature is used implicitly by ASP.NET apps. The set of packages composing the ASP.NET web framework is installed as part of the setup packages authored by Microsoft. When publishing an ASP.NET app, the published app is trimmed to the app's included packages and not the framework's packages. For more information, see [ASP.NET implicit store](#aspnet-implicit-store) below.
+
+## Preparing a runtime environment
+
+The administrator of a runtime environment can optimize apps for faster deployments and lower disk space use by building a runtime package store and the corresponding target manifest.
+
+The first step is to create a *package store manifest* that lists the packages that compose the runtime package store. This file format is compatible with the project file format (*csproj*).
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="<NUGET_PACKAGE>" Version="<VERSION>" />
+    <!-- Include additional packages here -->
+  </ItemGroup>
+</Project>
+```
+
+**Example**
+
+The following example package store manifest (*packages.csproj*) is used to add [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) and [`Moq`](https://www.nuget.org/packages/moq/) to a runtime package store:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Moq" Version="4.7.63" />
+  </ItemGroup>
+</Project>
+```
+
+Provision the runtime package store by executing `dotnet store` with the package store manifest, runtime, and framework:
+
+```console
+dotnet store --manifest <PATH_TO_MANIFEST_FILE> --runtime <RUNTIME_IDENTIFIER> --framework <FRAMEWORK>
+```
+
+**Example**
+
+```console
+dotnet store --manifest packages.csproj --runtime win10-x64 --framework netstandard2.0 --framework-version 2.0.0-preview1-002111-00
+```
+
+You can pass multiple target package store manifest paths to a single [`dotnet store`](../tools/dotnet-store.md) command by repeating the option and path in the command.
+
+By default, the output of the command is a package store under the *.dotnet/store* subdirectory of the user's profile. You can specify a different location using the `--output <OUTPUT_DIRECTORY>` option. The root directory of the store contains a target manifest *artifact.xml* file. This file can be made available for download and be used by app authors who want to target this store when publishing.
+
+**Example**
+
+The following *artifact.xml* file is produced after running the example command shown above. Note that [`Castle.Core`](https://www.nuget.org/packages/Castle.Core/) is a depdenency of `Moq`, so it's included automatically and appears in the *artifacts.xml* manifest file.
+
+```xml
+<StoreArtifacts>
+  <Package Id="newtonsoft.json" Version="10.0.3" />
+  <Package Id="castle.core" Version="4.1.0" />
+  <Package Id="moq" Version="4.7.63" />
+</StoreArtifacts>
+```
 
 ## Publishing an app against a target manifest
 
-If you have a target manifest file on disk, you specify the path and file name when publishing your app with the [`dotnet publish`](../tools/dotnet-publish.md) command:
+If you have a target manifest file on disk, you specify the path to the file when publishing your app with the [`dotnet publish`](../tools/dotnet-publish.md) command:
 
 ```console
 dotnet publish --manifest <PATH_TO_MANIFEST_FILE>
@@ -60,7 +116,7 @@ dotnet publish --manifest manifest.xml
 
 You're required to deploy the resulting published app to an environment that has the packages described in the target manifest. Failing to do so results in the app failing to start.
 
-Specify multiple target manifests when publishing an app by repeating the option and value. When you do so, the app is trimmed for the union of packages specified in the target manifest files provided to the command.
+Specify multiple target manifests when publishing an app by repeating the option and path (for example, `--manifest manifest1.xml --manifest manifest2.xml`). When you do so, the app is trimmed for the union of packages specified in the target manifest files provided to the command.
 
 ## Specifying target manifests in the project file
 
@@ -68,7 +124,7 @@ Instead of specifying target manifests with the [`dotnet publish`](../tools/dotn
 
 ```xml
 <PropertyGroup>
-  <TargetManifestFiles>target-manifest.xml</TargetManifestFiles>
+  <TargetManifestFiles>manifest1.xml;manifest2.xml</TargetManifestFiles>
 </PropertyGroup>
 ```
 
@@ -85,31 +141,6 @@ When an ASP.NET published app is deployed, make sure that the target environment
   <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
 </PropertyGroup>
 ```
-
-## Preparing a runtime environment
-
-The administrator of a runtime environment can optimize for certain types of apps by building a runtime package store and the corresponding target manifest.
-
-The first step is to create an XML file that describes the packages that must compose the runtime package store. This file format is compatible with the project file format (*csproj* for example). The following example shows how to add `Newtonsoft.Json` and `System.Runtime.Serialization.Primitives` to the package store in the XML file:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-  </ItemGroup>
-</Project>
-```
-
-Provision the runtime package store by executing `dotnet store` with the manifest file, runtime, and framework:
-
-```console
-dotnet store --manifest <PATH_TO_MANIFEST_FILE> --runtime <RUNTIME_IDENTIFIER> --framework <FRAMEWORK>
-```
-
-You can pass multiple target manifest paths to a single [`dotnet store`](../tools/dotnet-store.md) command by repeating the option and path in the command.
-
-By default, the output of the command is a package store under the *.dotnet/store* subdirectory of the user's profile. You can specify a different location using the `--output <OUTPUT_DIRECTORY>` option. The root directory of the store contains a target manifest *artifact.xml* file. This file can be made available for download and be used by app authors who want to target this store when publishing.
 
 ## See also
 

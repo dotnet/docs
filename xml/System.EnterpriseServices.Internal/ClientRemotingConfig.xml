@@ -1,0 +1,70 @@
+<Type Name="ClientRemotingConfig" FullName="System.EnterpriseServices.Internal.ClientRemotingConfig">
+  <TypeSignature Language="C#" Value="public class ClientRemotingConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientRemotingConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ClientRemotingConfig" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientRemotingConfig ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClientRemotingConfig.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public static bool Write (string DestinationDirectory, string VRoot, string BaseUrl, string AssemblyName, string TypeName, string ProgId, string Mode, string Transport);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Write(string DestinationDirectory, string VRoot, string BaseUrl, string AssemblyName, string TypeName, string ProgId, string Mode, string Transport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ClientRemotingConfig.Write(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DestinationDirectory" Type="System.String" />
+        <Parameter Name="VRoot" Type="System.String" />
+        <Parameter Name="BaseUrl" Type="System.String" />
+        <Parameter Name="AssemblyName" Type="System.String" />
+        <Parameter Name="TypeName" Type="System.String" />
+        <Parameter Name="ProgId" Type="System.String" />
+        <Parameter Name="Mode" Type="System.String" />
+        <Parameter Name="Transport" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="DestinationDirectory">To be added.</param>
+        <param name="VRoot">To be added.</param>
+        <param name="BaseUrl">To be added.</param>
+        <param name="AssemblyName">To be added.</param>
+        <param name="TypeName">To be added.</param>
+        <param name="ProgId">To be added.</param>
+        <param name="Mode">To be added.</param>
+        <param name="Transport">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

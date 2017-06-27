@@ -256,7 +256,8 @@
       </ReturnValue>
       <Docs>
         <summary>When implemented in a derived class, gets a value that indicates whether multiple objects contain this property and have different values.</summary>
-        <value><see langword="true" /> if multiple objects contain this property; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if multiple objects contain this property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1,0 +1,60 @@
+<Type Name="IPlaybackControl" FullName="System.EnterpriseServices.IPlaybackControl">
+  <TypeSignature Language="C#" Value="public interface IPlaybackControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPlaybackControl" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IPlaybackControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("51372AFD-CAE7-11CF-BE81-00AA00A2FA25")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FinalClientRetry">
+      <MemberSignature Language="C#" Value="public void FinalClientRetry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FinalClientRetry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalClientRetry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalServerRetry">
+      <MemberSignature Language="C#" Value="public void FinalServerRetry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FinalServerRetry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IPlaybackControl.FinalServerRetry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

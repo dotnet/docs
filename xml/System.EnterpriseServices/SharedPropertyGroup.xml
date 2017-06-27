@@ -1,0 +1,116 @@
+<Type Name="SharedPropertyGroup" FullName="System.EnterpriseServices.SharedPropertyGroup">
+  <TypeSignature Language="C#" Value="public sealed class SharedPropertyGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SharedPropertyGroup extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SharedPropertyGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateProperty">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty CreateProperty (string name, out bool fExists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty CreateProperty(string name, bool fExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.CreateProperty(System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="fExists">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePropertyByPosition">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty CreatePropertyByPosition (int position, out bool fExists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty CreatePropertyByPosition(int32 position, bool fExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.CreatePropertyByPosition(System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+        <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="position">To be added.</param>
+        <param name="fExists">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty Property (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty Property(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.Property(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyByPosition">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty PropertyByPosition (int position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty PropertyByPosition(int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.PropertyByPosition(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="position">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

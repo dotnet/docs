@@ -1,0 +1,64 @@
+<Type Name="ServiceDomain" FullName="System.EnterpriseServices.ServiceDomain">
+  <TypeSignature Language="C#" Value="public sealed class ServiceDomain" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceDomain extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServiceDomain" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="public static void Enter (System.EnterpriseServices.ServiceConfig cfg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(class System.EnterpriseServices.ServiceConfig cfg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cfg" Type="System.EnterpriseServices.ServiceConfig" />
+      </Parameters>
+      <Docs>
+        <param name="cfg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Leave">
+      <MemberSignature Language="C#" Value="public static System.EnterpriseServices.TransactionStatus Leave ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.EnterpriseServices.TransactionStatus Leave() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceDomain.Leave" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

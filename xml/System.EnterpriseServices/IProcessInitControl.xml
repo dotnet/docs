@@ -1,0 +1,45 @@
+<Type Name="IProcessInitControl" FullName="System.EnterpriseServices.IProcessInitControl">
+  <TypeSignature Language="C#" Value="public interface IProcessInitControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessInitControl" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IProcessInitControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("72380d55-8d2b-43a3-8513-2b6ef31434e9")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResetInitializerTimeout">
+      <MemberSignature Language="C#" Value="public void ResetInitializerTimeout (int dwSecondsRemaining);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetInitializerTimeout(int32 dwSecondsRemaining) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IProcessInitControl.ResetInitializerTimeout(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwSecondsRemaining" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dwSecondsRemaining">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

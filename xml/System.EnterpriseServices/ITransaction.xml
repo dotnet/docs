@@ -1,0 +1,95 @@
+<Type Name="ITransaction" FullName="System.EnterpriseServices.ITransaction">
+  <TypeSignature Language="C#" Value="public interface ITransaction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransaction" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ITransaction" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0FB15084-AF41-11CE-BD2B-204C4F4F5020")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort (ref System.EnterpriseServices.BOID pboidReason, int fRetaining, int fAsync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort(valuetype System.EnterpriseServices.BOID pboidReason, int32 fRetaining, int32 fAsync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.Abort(System.EnterpriseServices.BOID@,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pboidReason" Type="System.EnterpriseServices.BOID&amp;" RefType="ref" />
+        <Parameter Name="fRetaining" Type="System.Int32" />
+        <Parameter Name="fAsync" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pboidReason">To be added.</param>
+        <param name="fRetaining">To be added.</param>
+        <param name="fAsync">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public void Commit (int fRetaining, int grfTC, int grfRM);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(int32 fRetaining, int32 grfTC, int32 grfRM) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.Commit(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fRetaining" Type="System.Int32" />
+        <Parameter Name="grfTC" Type="System.Int32" />
+        <Parameter Name="grfRM" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fRetaining">To be added.</param>
+        <param name="grfTC">To be added.</param>
+        <param name="grfRM">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransactionInfo">
+      <MemberSignature Language="C#" Value="public void GetTransactionInfo (out System.EnterpriseServices.XACTTRANSINFO pinfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTransactionInfo(valuetype System.EnterpriseServices.XACTTRANSINFO pinfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ITransaction.GetTransactionInfo(System.EnterpriseServices.XACTTRANSINFO@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pinfo" Type="System.EnterpriseServices.XACTTRANSINFO&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pinfo">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

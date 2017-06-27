@@ -1961,7 +1961,7 @@
 ## Remarks  
  This method performs the actual work of deleting the current session and raising the appropriate sign-out events. The method does the following:  
   
-1.  Invokes the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSigningOut%2A> method to raise the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SigningOut> event. An event handler can provide any necessary processing before the session is deleted. The <xref:System.IdentityModel.Services.SigningOutEventArgs.IsIpInitiated%2A?displayProperty=fullName> property is set according to the `isIPRequest` parameter.  
+1.  Invokes the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSigningOut%2A> method to raise the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SigningOut> event. An event handler can provide any necessary processing before the session is deleted. The <xref:System.IdentityModel.Services.SigningOutEventArgs.IsIPInitiated%2A?displayProperty=fullName> property is set according to the `isIPRequest` parameter.  
   
 2.  Calls the <xref:System.IdentityModel.Services.SessionAuthenticationModule.DeleteSessionTokenCookie%2A?displayProperty=fullName> method on the current session authentication manager to delete the session cookie.  
   

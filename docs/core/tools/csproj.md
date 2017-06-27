@@ -33,7 +33,7 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 ### Recommendations
 Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
 
-* Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
+* Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via a `<PackageReference>` item in your project file.
 * If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
     * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
 * If you need a specific version of the `NetStandard.Library` metapackage, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need. 

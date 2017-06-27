@@ -36,7 +36,7 @@ Local functions do not incur this overhead. In the example above, the local
 functions version has 2 fewer allocations than the lambda expression version.
 
 This recursive method is simple enough that the local function is implemented
-as a private method with a compiler generated name. It's only difference from
+as a private method with a compiler generated name. Its only difference from
 other private methods is that it is semantically scoped inside the outer function.
 
 Second, local functions can be called before they are defined. Lambda
@@ -58,9 +58,10 @@ closure. Consider this async example:
 The closure for this lambda expression contains the `address`,
 `index` and `name` variables. In the case of local functions, the object
 that implements the closure may be a `struct` type. That would save on
-an allocation. (The local function equivalent of this method also
-uses a class for the closure. It is an implementation detial which will
-be used for local functions):
+an allocation.
+
+> [!NOTE]
+> The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
 
 [!code-csharp[TaskLocalFunctionExample](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#29_TaskExample "Task returning method with local function")]
 

@@ -52,15 +52,28 @@ Note: Options are different between script implementations.
 
 `-Channel <CHANNEL>`
 
-Specifies the source channel for the installation. The values are: `future`, `preview`, and `production`. The default value is `production`.
+Specifies the source channel for the installation. The possible values are:
+
+- `Current`
+- `LTS` - Long-Term Support channel
+- Two-part version in X.Y format representing a specific release (for example, `2.0`)
+- Branch name (for example, `release/2.0.0` or `Master` for the latest from the `Master` branch)
+
+The default value is `LTS`.
 
 `-Version <VERSION>`
 
-Specifies the version of CLI to install. You must specify the version as a 3-part version (for example, 1.0.0-13232). If omitted, it defaults to the first [global.json](global-json.md) that contains the `version` property. If that isn't present, it will use the latest version.
+Represents a build version on the source channel (see the `-Channel` option). The possible values are:
+
+- `latest` - Latest build on the channel
+- `coherent` - Latest coherent build on the channel; `coherent` only applies to SDK downloads
+- Three-part version in X.Y.Z format representing a specific build version (for example, `2.0.0-preview2-006120`)
+
+If omitted, `-Version` defaults to the first [global.json](global-json.md) that contains the `version` member. If that isn't present, `-Version` defaults to `latest`.
 
 `-InstallDir <DIRECTORY>`
 
-Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*.
+Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Note that binaries are placed directly in the directory.
 
 `-Architecture <ARCHITECTURE>`
 
@@ -99,11 +112,24 @@ If set, the installer uses the proxy when making web requests.
 
 `--channel <CHANNEL>`
 
-Specifies the source channel for the installation. The values are: `future`, `dev`, and `production`. The default value is `production`.
+Specifies the source channel for the installation. The possible values are:
+
+- `Current`
+- `LTS` - Long-Term Support channel
+- Two-part version in X.Y format representing a specific release (for example, `2.0`)
+- Branch name (for example, `release/2.0.0` or `Master` for the latest from the `Master` branch)
+
+The default value is `LTS`.
 
 `--version <VERSION>`
 
-Specifies the version of CLI to install. You must specify the version as a 3-part version (for example, 1.0.0-13232). If omitted, it defaults to the first [global.json](global-json.md) that contains the `version` property. If that isn't present, it will use the latest version.
+Represents a build version on the source channel (see the `-Channel` option). The possible values are:
+
+- `latest` - Latest build on the channel
+- `coherent` - Latest coherent build on the channel; `coherent` only applies to SDK downloads
+- Three-part version in X.Y.Z format representing a specific build version (for example, `2.0.0-preview2-006120`)
+
+If omitted, `-Version` defaults to the first [global.json](global-json.md) that contains the `version` member. If that isn't present, `-Version` defaults to `latest`.
 
 `--install-dir <DIRECTORY>`
 

@@ -77,7 +77,7 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
-## [Building .NET Core](core/building/index.md)
+## [Build .NET Core from source](core/building/index.md)
 ### [.NET Core distribution packaging](core/building/distribution-packaging.md)
 ## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->

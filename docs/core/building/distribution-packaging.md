@@ -1,10 +1,10 @@
 ---
 title: .NET Core distribution packaging
-description: Learn how to package, name, and version .NET Core distribution packages
+description: Learn how to package, name, and version .NET Core distribution packages.
 keywords: .NET, .NET Core, source, build
 author: bleroy
 ms.author: mairaw
-ms.date: 03/29/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -20,18 +20,18 @@ As .NET Core becomes available on more and more platforms, it's useful to learn 
 .NET Core is made of three major parts that need to be packaged:
 
 1. **The host** (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`) and its supporting policy libraries (installed in `host/fxr`). It's built from the code in the [`dotnet/core-setup`](https://github.com/dotnet/core-setup/) repository. There is typically only one host on a given machine, although that isn't a strict requirement.
-2. **The framework** is made of a runtime and supporting managed libraries. The framework may be installed as part of an application, or as a shared framework in a central location that can be reused by multiple applications. There may be any number of shared frameworks installed on a given machine. Shared frameworks live under `shared/Microsoft.NETCore.App/<version>`. The host rolls forward across patch versions. If an application targets `Microsoft.NETCore.App` 1.0.0, and only 1.0.4 is present, it's launched against 1.0.4.
-3. **The SDK** (also known as "the tooling") is a set of managed tools that can be used to write and build .NET Core libraries and applications. This includes the CLI, MSBuild and associated build tasks and targets, NuGet, new project templates, etc. It's possible to have multiple SDKs on a machine (for example, to build projects that explicitly require an older version), but the recommendation is to use the latest released tools.
+2. **The framework** is made of a runtime and supporting managed libraries. The framework may be installed as part of an application, or as a shared framework in a central location that can be reused by multiple applications. There may be any number of shared frameworks installed on a given machine. Shared frameworks live under `shared/Microsoft.NETCore.App/<version>`. The host rolls forward across patch versions. If an application targets `Microsoft.NETCore.App` 1.0.0, and only 1.0.4 is present, the app is launched against 1.0.4.
+3. **The SDK** (also known as "the tooling") is a set of managed tools that can be used to write and build .NET Core libraries and applications. The SDK includes the CLI, MSBuild, and associated build tasks and targets, NuGet, new project templates, etc. It's possible to have multiple SDKs on a machine (for example, to build projects that explicitly require an older version), but the recommendation is to use the latest released tools.
 
 ## Recommended package names
 
-The following is our recommendation for package names. A package maintainer may choose to diverge from it based on various reasons, such as, a different tradition of the specific distribution they're targeting.
+The following guidance is our recommendation for package names. A package maintainer may choose to diverge from it based on various reasons, such as, a different tradition of the specific distribution they're targeting.
 
 ### Minimum package set
 
 * `dotnet-runtime-[major].[minor]`: a shared framework with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager). **dependencies**: `dotnet-host`
 * `dotnet-sdk`: the latest SDK. **dependencies**: the latest `dotnet-sdk-[major].[minor]`.
-* `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. **dependencies**: `dotnet-host`, one or more `dotnet-runtime-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
+* `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. **dependencies**: `dotnet-host`, one or more `dotnet-runtime-[major].[minor]` (one of the runtimes is used by the SDK code itself, the others are here for users to build and run against).
 * `dotnet-host`: the latest host.
 
 #### Preview versions
@@ -42,7 +42,7 @@ Package maintainers may decide to include preview versions of the shared framewo
 
 Some maintainers may choose to provide additional packages such as:
 
-* `dotnet-lts`: the latest "Long-Term Support" version of the shared framework. [LTS and Current release trains](~/docs/core/versions/lts-current.md) correspond to different cadences at which .NET Core gets released. Users have a choice of adopting one or the other train, based on how often they are willing to update. This is a concept that is also tied to support levels, so it may or may not make sense depending on the distro being considered.
+* `dotnet-lts`: the latest Long-Term Support (LTS) version of the shared framework. [LTS and Current release trains](~/docs/core/versions/lts-current.md) correspond to different cadences at which .NET Core gets released. Users have a choice of adopting one or the other train, based on how often they are willing to update. This is a concept that is also tied to support levels, so it may or may not make sense depending on the distro being considered.
 
 ## Disk layout
 
@@ -60,4 +60,4 @@ When an `update` is performed, the behavior of each package is as follows:
 * `dotnet-sdk-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-lts`: `update` rolls forward major, minor, and patch versions.
 
-Those are recommendations, and each distro is free to choose what versions to offer, and when. For example, a distro that values stability more than being up to date may choose to release only versions that snap with the LTS release train.
+This topic has presented our recommendations for packaging .NET Core, however each distro is free to choose what versions to offer and when. For example, a distro that values stability more than being up-to-date may choose to release only versions that snap with the LTS release train.

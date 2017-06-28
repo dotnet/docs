@@ -1,10 +1,10 @@
 ---
 title: Build .NET Core from source
-description: Learn how to build .NET Core and the .NET Core CLI from the source code
+description: Learn how to build .NET Core and the .NET Core CLI from the source code.
 keywords: .NET, .NET Core, source, build
 author: bleroy
 ms.author: mairaw
-ms.date: 03/29/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -20,8 +20,13 @@ This article gives guidance to developers who want to build and distribute their
 
 The source code for the .NET Core CLR can be found in [the `dotnet/coreclr` repository on GitHub](https://github.com/dotnet/coreclr/).
 
-The build currently depends on [Git](https://git-scm.com/), [CMake](https://cmake.org/), [Python](https://www.python.org/) and a C++ compiler.
-Once these prerequisites are installed, the CLR is built by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of [the Core CLR repository](https://github.com/dotnet/coreclr/).
+The build currently depends on the following prerequisites:
+* [Git](https://git-scm.com/)
+* [CMake](https://cmake.org/)
+* [Python](https://www.python.org/)
+* a C++ compiler.
+
+After you've installed these prerequisites are installed, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of [the Core CLR repository](https://github.com/dotnet/coreclr/).
 
 Installing the components differ depending on the operating system (OS). See the build instructions for your specific OS:
 
@@ -61,24 +66,24 @@ The build places all of its generated files under the `bin` directory at the bas
 There is a *bin\Log* directory that contains log files generated during the build (Most useful when the build fails).
 The actual output is placed in a *bin\Product\[platform].[CPU architecture].[build type]* directory, such as *bin\Product\Windows_NT.x64.Release*.
 
-While the 'raw' output of the build is sometimes useful, normally you are only interested in the NuGet packages, which are placed in the `.nuget\pkg` subdirectory of the above output directory.
+While the 'raw' output of the build is sometimes useful, normally you're only interested in the NuGet packages, which are placed in the `.nuget\pkg` subdirectory of the previous output directory.
 
 There are two basic techniques for using your new runtime:
 
  1. **Use dotnet.exe and NuGet to compose an application**.
-    See [Using Your Build](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingYourBuild.md) for instructions on creating a program that uses your new runtime by using the NuGet packages you just created and the 'dotnet' command-line interface (CLI).  This is the expected way non-runtime developers are likely to consume your new runtime.    
+    See [Using Your Build](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingYourBuild.md) for instructions on creating a program that uses your new runtime by using the NuGet packages you just created and the 'dotnet' command-line interface (CLI). This technique is the expected way non-runtime developers are likely to consume your new runtime.    
 
- 2. **Use corerun.exe to run an application using unpackaged Dlls**.
+ 2. **Use corerun.exe to run an application using unpackaged DLLs**.
     This repository also defines a simple host called corerun.exe that does NOT take any dependency on NuGet.
-    This host has to be told where to get the necessary DLLs you actually use, and you have to manually gather them together.
-    This is the technique that all the tests in the repo use, and is useful for quick local 'edit-compile-debug' loop (for example preliminary unit testing).
+    You need to tell the host where to get the required DLLs you actually use, and you have to manually gather them together.
+    This technique is used by all the tests in [the Core CLR repo](https://github.com/dotnet/coreclr), and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
     See [Executing .NET Core Apps with CoreRun.exe](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingCoreRun.md) for details on using this technique.
 
 ## Build the CLI from source
 
 The source code for the .NET Core CLI can be found in [the `dotnet/cli` repository on GitHub](https://github.com/dotnet/cli/).
 
-In order to build .NET CLI, you need the following installed on your machine.
+In order to build the .NET CLI, you need the following installed on your machine.
 
 * Windows & Linux:
     - git on the PATH

@@ -96,7 +96,7 @@ In order to build, run `build.cmd` on Windows, or `build.sh` on Linux and macOS 
 
 ### Using your build
 
-Use the `dotnet` executable from *artifacts/{os}-{arch}/stage2* to try out the newly built CLI. You can also add *artifacts/{os}-{arch}/stage2* to the PATH if you want to use the build output when invoking `dotnet` from the current console.
+Use the `dotnet` executable from *artifacts/{os}-{arch}/stage2* to try out the newly built CLI. If you want to use the build output when invoking `dotnet` from the current console, you can also add *artifacts/{os}-{arch}/stage2* to the PATH.
 
 ## See also
 

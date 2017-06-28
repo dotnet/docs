@@ -4,7 +4,7 @@ description: Learn what dependencies you need on your Windows machine to develop
 keywords: .NET Core, Windows, prerequisites, dependencies, Visual Studio
 author: mairaw
 ms.author: mairaw
-ms.date: 03/07/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -24,7 +24,7 @@ This article shows you what dependencies you need to deploy and run .NET Core ap
 * Windows 10
 * Windows Server 2008 R2 SP1 (Full Server or Server Core)
 * Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 SP1 (Full Server or Server Core)
+* Windows Server 2012 R2 (Full Server or Server Core)
 * Windows Server 2016 (Full Server, Server Core or Nano Server)
 
 See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the full set of supported operating systems.

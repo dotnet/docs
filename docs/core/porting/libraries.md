@@ -52,7 +52,7 @@ AppDomains isolate apps from one another. AppDomains require runtime support and
 
 For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class. Information (such as the name and base directory) is provided by APIs on other types, for instance `AppContext.BaseDirectory`. Some scenarios, such as getting the list of loaded assemblies are unsupported as they are inherently fragile.
 
-To make code migration from .NET Framework easier, we've exposed some of the <xref:System.​App​Domain> API surface in .NET Core. Some of the APIs function normally (for example, <xref:System.​App​Domain.UnhandledException?displayProperty=fullName>), some of them do nothing (for example, <xref:System.​App​Domain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
+To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=fullName>), some of them do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
 
 ### Remoting
 
@@ -155,8 +155,8 @@ This approach might be best for larger and more complex projects, where restruct
    a. Understand the nature of those types. Are they small in number but used frequently? Are they large in number but used infrequently? Is their use concentrated, or is it spread throughout your code?
    a. Is it easy to isolate code that isn't portable so that you can deal with it more effectively?
    a. Do you need to refactor your code?
-   a. For those types which aren't portable, are there alternative APIs that accomplish the same task? For example if you're using the <xref:System.​Net.​Web​Client> class, you might be able to use the <xref:System.​Net.​Http.​Http​Client> class instead.
-   a. Are there different portable APIs available to accomplish a task, even if it's not a drop-in replacement? For example if you're using <xref:System.​Xml.​Schema.​Xml​Schema> to help parse XML but you don't require XML schema discovery, you could use <xref:System.​Xml.​Linq> APIs and hand-parse the data.
+   a. For those types which aren't portable, are there alternative APIs that accomplish the same task? For example if you're using the <xref:System.Net.WebClient> class, you might be able to use the <xref:System.Net.Http.HttpClient> class instead.
+   a. Are there different portable APIs available to accomplish a task, even if it's not a drop-in replacement? For example if you're using <xref:System.Xml.Schema.XmlSchema> to help parse XML but you don't require XML schema discovery, you could use <xref:System.Xml.Linq> APIs and hand-parse the data.
 1. If you have assemblies that are difficult to port, is it worth leaving them on .NET Framework for now? Here are some things to consider:
    a. You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework or Windows-specific functionality. Is it worth leaving that functionality behind for now and releasing a .NET Core version of your library with less features on a temporary basis until resources are available to port the features?
    a. Would a refactor help?

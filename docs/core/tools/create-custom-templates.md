@@ -1,6 +1,6 @@
 ---
-title: Create custom templates for dotnet new (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
-description: 
+title: Create custom templates for dotnet new | Microsoft Docs
+description: This topic shows you how to create custom templates for any type of .NET project or files.
 keywords: dotnet new, CLI, CLI command, .NET Core, template, templating
 author: guardrex
 ms.author: mairaw
@@ -16,11 +16,11 @@ ms.assetid: c28eb59d-4d18-4aba-bcd1-88bd887abc08
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) provides many useful templates, but you can create your own custom templates for any type of .NET project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed for you to use with the [`dotnet new` command](dotnet-new.md), but you can create your own custom templates for any type of .NET project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
-Templates work with any Microsoft framework, including .NET Core, .NET Framework, and Xamarin. Users install your custom template from a NuGet package on any NuGet feed, by referencing a NuGet *nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
+Users install your custom template from a NuGet package on any NuGet feed, by referencing a NuGet *nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
 
-The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. You can open an issue if you run into a problem or start a discussion for a new feature, possibly a feature that you contribute. Visit the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) repo for samples of templates. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) at GitHub. A detailed pre-release blog post that describes how to create and install custom templates written by [Sayed Ibrahim Hashimi](https://github.com/sayedihashimi) is at [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/).
+The template engine is open source, and the online code repository is at [dotnet/templating](https://github.com/dotnet/templating/) on GitHub. Visit the [dotnet/dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples) repo for samples of templates. More templates, including templates from third parties, are found at [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new) on GitHub. A detailed pre-release blog post that describes how to create and install custom templates is at [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/).
 
 ## Configuration
 
@@ -31,18 +31,18 @@ A template is composed of the following components:
 
 ### Source files and folders
 
-The source files and folders are composed of whatever files and folders you want the template engine to use when the `dotnet new <TEMPLATE>` command is executed. The template engine is designed to use *runnable projects* as source code to produce projects. This has several benefits:
+The source files and folders include whatever files and folders you want the template engine to use when the `dotnet new <TEMPLATE>` command is executed. The template engine is designed to use *runnable projects* as source code to produce projects. This has several benefits:
 
 - The template engine doesn't require you to inject special tokens into your project's source code.
 - The code files aren't special files or modified in any way to work with the template engine, so the tools you normally use when working with projects also work with template content.
 - You build, run, and debug your template projects just like you do for any of your other projects.
 - You can create a template from an existing project quickly by merely adding a *template.json* configuration file to the project.
 
-Files and folders stored in the template aren't limited to formal .NET project types, such as a .NET Core or .NET Framework solutions. Source files and folders may consist of any content that you wish to create when the template is used, even if the template engine produces just one file for its output. For example, you can create a template that contains a single *web.config* source file that creates a modified *web.config* file. The modifications to source files are based on logic and settings you've provided in the *template.json* configuration file along with values provided by the user passed as options to the `dotnet new <TEMPLATE>` command.
+Files and folders stored in the template aren't limited to formal .NET project types, such as a .NET Core or .NET Framework solutions. Source files and folders may consist of any content that you wish to create when the template is used, even if the template engine produces just one file for its output, such as a configuration file or a solution file. For example, you can create a template that contains a single *web.config* source file that creates a modified *web.config* file. The modifications to source files are based on logic and settings you've provided in the *template.json* configuration file along with values provided by the user passed as options to the `dotnet new <TEMPLATE>` command.
 
 ### template.json
 
-The *template.json* file is placed in a *.template.config* folder in the root directory of the template. The file provides configuration to the template engine when creating output from the source files and folders. The minimum configuration requires the members shown in the following table, which is sufficient to add to a .NET Core app to produce a functional template.
+The *template.json* file is placed in a *.template.config* folder in the root directory of the template. The file provides configuration information to the template engine. The minimum configuration requires the members shown in the following table, which is sufficient to add to a .NET Core app to produce a functional template.
 
 | Member            | Type          | Description |
 | ----------------- | ------------- | ----------- |

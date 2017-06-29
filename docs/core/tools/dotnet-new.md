@@ -62,7 +62,7 @@ Prints out help for the command. It can be invoked for the `dotnet new` command 
 
 `-i|--install <PATH|NUGET_ID>`
 
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Create custom templates for dotnet new](custom-templates.md). This option is available starting with .NET Core SDK 2.0 Preview 2.
+Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Create custom templates for dotnet new](create-custom-templates.md). This option is available starting with .NET Core SDK 2.0 Preview 2.
 
 `-l|--list`
 
@@ -128,4 +128,4 @@ List all templates available for MVC:
 
 ## See also
 
-[Create custom templates for dotnet new](custom-templates.md)   
+[Create custom templates for dotnet new](create-custom-templates.md)   

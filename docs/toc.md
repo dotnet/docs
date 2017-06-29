@@ -93,6 +93,7 @@
 ### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)
+### [Create custom templates](core/tools/create-custom-templates.md)
 ### [dotnet](core/tools/dotnet.md)
 ### [dotnet-build](core/tools/dotnet-build.md)
 ### [dotnet-clean](core/tools/dotnet-clean.md)

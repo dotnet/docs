@@ -1,5 +1,5 @@
 ---
-title: dotnet store command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet store command | Microsoft Docs
 description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
 keywords: dotnet store, dotnet store, CLI, CLI command, .NET Core
 author: bleroy
@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 ---
 
-# dotnet store (.NET Core SDK 2.0 Preview 2)
+# dotnet store
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 

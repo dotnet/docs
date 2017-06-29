@@ -1,5 +1,5 @@
 ---
-title: Runtime package store (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: Runtime package store | Microsoft Docs
 description: This topic explains the runtime package store and target manifests used by .NET Core.
 keywords: .NET, .NET Core, dotnet store, runtime package store
 author: bleroy
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 ---
 
-# Runtime package store (.NET Core SDK 2.0 Preview 2)
+# Runtime package store
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 

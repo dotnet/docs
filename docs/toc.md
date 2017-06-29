@@ -78,6 +78,7 @@
 ### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
 ### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
+### [Runtime package store](core/deploying/runtime-package-store.md)
 ## [Docker](core/docker/index.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
@@ -108,6 +109,7 @@
 ### [dotnet-restore](core/tools/dotnet-restore.md)
 ### [dotnet-run](core/tools/dotnet-run.md)
 ### [dotnet-sln](core/tools/dotnet-sln.md)
+### [dotnet-store](core/tools/dotnet-store.md)
 ### [dotnet-test](core/tools/dotnet-test.md)
 ### [dotnet-vstest](core/tools/dotnet-vstest.md)
 ### Project modification commands

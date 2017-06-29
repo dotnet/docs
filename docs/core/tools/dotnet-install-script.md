@@ -57,7 +57,7 @@ Specifies the source channel for the installation. The possible values are:
 - `Current`
 - `LTS` - Long-Term Support channel
 - Two-part version in X.Y format representing a specific release (for example, `2.0`)
-- Branch name (for example, `release/2.0.0` or `Master` for the latest from the `Master` branch)
+- Branch name (for example, `release/2.0.0` or `master` for the latest from the `master` branch)
 
 The default value is `LTS`.
 
@@ -117,7 +117,7 @@ Specifies the source channel for the installation. The possible values are:
 - `Current`
 - `LTS` - Long-Term Support channel
 - Two-part version in X.Y format representing a specific release (for example, `2.0`)
-- Branch name (for example, `release/2.0.0` or `Master` for the latest from the `Master` branch)
+- Branch name (for example, `release/2.0.0` or `master` for the latest from the `master` branch)
 
 The default value is `LTS`.
 

@@ -674,7 +674,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default behavior is to only check bearer tokens (tokens that do not have keys). The token replay cache is the <xref:System.IdentityModel.Tokens.TokenReplayCache> object configured for this handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TokenReplayCache%2A> property of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object referenced through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property.  
+ The default behavior is to only check bearer tokens (tokens that do not have keys). The token replay cache is the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches%2A> object configured for this handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TokenReplayCacheExpirationPeriod*> property of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object referenced through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property.  
   
  ]]></format>
         </remarks>
@@ -684,7 +684,7 @@
   
  -or-  
   
- The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TokenReplayCache" /> property of the handler configuration (accessed through the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property) is <see langword="null" />.</exception>
+ The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches" /> property of the handler configuration (accessed through the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property) is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="token" /> cannot be cast as an instance of <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />.</exception>
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">The ID of the assertion associated with the token is <see langword="null" /> or empty. (The <see cref="P:System.IdentityModel.Tokens.SamlSecurityToken.Assertion" /> property of the token references a <see cref="T:System.IdentityModel.Tokens.SamlAssertion" /> that has an <see cref="P:System.IdentityModel.Tokens.SamlAssertion.Id" /> property that references a <see cref="T:System.IdentityModel.Tokens.SamlId" /> with a <see cref="P:System.IdentityModel.Tokens.SamlId.Value" /> property that is <see langword="null" /> or empty.)</exception>

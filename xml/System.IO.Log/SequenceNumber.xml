@@ -211,7 +211,7 @@
         <returns>
           <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Equals%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -238,7 +238,7 @@
         <returns>
           <see langword="true" /> if the first instance is greater than the second instance, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -265,7 +265,7 @@
         <returns>
           <see langword="true" /> if the first instance is greater than or equal to the second instance, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -292,7 +292,7 @@
         <returns>
           <see langword="true" /> if both <see cref="T:System.IO.Log.SequenceNumber" /> instances are not equal, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -319,7 +319,7 @@
         <returns>
           <see langword="true" /> if the first instance is less than the second instance, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -346,7 +346,7 @@
         <returns>
           <see langword="true" /> if the first instance is less than or equal to the second instance, otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.Compare%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.IO.Log.SequenceNumber.CompareTo*>.]]></format>
         </remarks>
       </Docs>
     </Member>

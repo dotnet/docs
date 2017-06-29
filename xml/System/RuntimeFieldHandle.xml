@@ -239,7 +239,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%2CSystem.RuntimeFieldHandle%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -279,7 +279,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Compare%2A> dHandle,System.RuntimeFieldHandle)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

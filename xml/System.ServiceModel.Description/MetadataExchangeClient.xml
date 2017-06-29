@@ -68,8 +68,8 @@
   
 |Scheme|Binding|  
 |------------|-------------|  
-|http|<xref:System.ServiceModel.WsHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
-|https|<xref:System.ServiceModel.WsHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
+|http|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
+|https|<xref:System.ServiceModel.WSHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
 |net.tcp|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.TcpTransportBindingElement>|  
 |net.pipe|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>|  
   

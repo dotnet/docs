@@ -298,7 +298,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeTypedArgument" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%28System.Reflection.CustomAttributeTypedArgument%2CSystem.Reflection.CustomAttributeTypedArgument%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -338,7 +338,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeTypedArgument" /> structures are different; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Compare%28System.Reflection.CustomAttributeTypedArgument%2CSystem.Reflection.CustomAttributeTypedArgument%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeTypedArgument.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

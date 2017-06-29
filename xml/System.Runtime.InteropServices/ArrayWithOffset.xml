@@ -291,7 +291,7 @@
         <returns>
           <see langword="true" /> if the value of <paramref name="a" /> is the same as the value of <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.ArrayWithOffset.Equals%28System.Runtime.InteropServices.ArrayWithOffset%2CSystem.Runtime.InteropServices.ArrayWithOffset%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.ArrayWithOffset.Equals%28System.Runtime.InteropServices.ArrayWithOffset%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -332,7 +332,7 @@
         <returns>
           <see langword="true" /> if the value of <paramref name="a" /> is not the same as the value of <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.ArrayWithOffset.Compare%28System.Runtime.InteropServices.ArrayWithOffset%2CSystem.Runtime.InteropServices.ArrayWithOffset%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Runtime.InteropServices.ArrayWithOffset.Equals%28System.Runtime.InteropServices.ArrayWithOffset%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

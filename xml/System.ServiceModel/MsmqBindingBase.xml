@@ -429,12 +429,12 @@
       <Docs>
         <summary>Gets a value that indicates whether incoming requests can be handled more efficiently synchronously or asynchronously.</summary>
         <value>
-          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise <see langword="false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
+          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise <see langword=" false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.MsmqBindingBase.System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property is set to `true` when the <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> is `true`.  
+ The <xref:System.ServiceModel.MsmqBindingBase.System%23ServiceModel%23Channels%23IBindingRuntimePreferences%23ReceiveSynchronously%2A> property is set to `true` when the <xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> is `true`.  
   
  ]]></format>
         </remarks>

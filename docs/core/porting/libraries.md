@@ -50,7 +50,7 @@ Just because an API or technology isn't currently implemented doesn't imply it's
 
 AppDomains isolate apps from one another. AppDomains require runtime support and are generally quite expensive. They're not implemented in .NET Core. We don't plan on adding this capability in future.
 
-For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class. Information (such as the name and base directory) is provided by APIs on other types, for instance `AppContext.BaseDirectory`. Some scenarios, such as getting the list of loaded assemblies are unsupported as they are inherently fragile.
+For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class. Information (such as the name and base directory) is provided by APIs on other types, for instance `AppContext.BaseDirectory`. Some scenarios, such as getting the list of loaded assemblies, are unsupported, as they're inherently fragile.
 
 To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=fullName>), some of them do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
 
@@ -113,13 +113,13 @@ For each of your projects in Visual Studio you wish to port, do the following:
 1. In the **Target Framework** dropdown, select **.NET Framework 4.6.2**.
 1. Recompile your projects.
 
-And that's it! Because your projects now target .NET Framework 4.6.2, use that version of the .NET Framework as your base for porting code.
+Because your projects now target .NET Framework 4.6.2, use that version of the .NET Framework as your base for porting code.
 
 ## Determining the portability of your code
 
 The next step is to run the API Portability Analyzer (ApiPort) to generate a portability report for analysis.
 
-Make sure you understand the [API Portability tool (ApiPort)](~/docs/standard/portability-analyzer.md) and how to generate portability reports for targeting .NET Core. How you do this likely varies based on your needs and personal tastes. What follows are a few different approaches. You may find yourself mixing each approach depending on how your code is structured.
+Make sure you understand the [API Portability Analyzer (ApiPort)](~/docs/standard/portability-analyzer.md) and how to generate portability reports for targeting .NET Core. How you do this likely varies based on your needs and personal tastes. What follows are a few different approaches. You may find yourself mixing steps of these approaches depending on how your code is structured.
 
 ### Dealing primarily with the compiler
 
@@ -152,16 +152,16 @@ This approach might be best for larger and more complex projects, where restruct
 
 1. Run ApiPort on a project.
 1. Understand where each non-portable type is used and how that affects overall portability.
-   a. Understand the nature of those types. Are they small in number but used frequently? Are they large in number but used infrequently? Is their use concentrated, or is it spread throughout your code?
-   a. Is it easy to isolate code that isn't portable so that you can deal with it more effectively?
-   a. Do you need to refactor your code?
-   a. For those types which aren't portable, are there alternative APIs that accomplish the same task? For example if you're using the <xref:System.Net.WebClient> class, you might be able to use the <xref:System.Net.Http.HttpClient> class instead.
-   a. Are there different portable APIs available to accomplish a task, even if it's not a drop-in replacement? For example if you're using <xref:System.Xml.Schema.XmlSchema> to help parse XML but you don't require XML schema discovery, you could use <xref:System.Xml.Linq> APIs and hand-parse the data.
+   - Understand the nature of those types. Are they small in number but used frequently? Are they large in number but used infrequently? Is their use concentrated, or is it spread throughout your code?
+   - Is it easy to isolate code that isn't portable so that you can deal with it more effectively?
+   - Do you need to refactor your code?
+   - For those types which aren't portable, are there alternative APIs that accomplish the same task? For example if you're using the <xref:System.Net.WebClient> class, you might be able to use the <xref:System.Net.Http.HttpClient> class instead.
+   - Are there different portable APIs available to accomplish a task, even if it's not a drop-in replacement? For example if you're using <xref:System.Xml.Schema.XmlSchema> to help parse XML but you don't require XML schema discovery, you could use <xref:System.Xml.Linq> APIs and hand-parse the data.
 1. If you have assemblies that are difficult to port, is it worth leaving them on .NET Framework for now? Here are some things to consider:
-   a. You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework or Windows-specific functionality. Is it worth leaving that functionality behind for now and releasing a .NET Core version of your library with less features on a temporary basis until resources are available to port the features?
-   a. Would a refactor help?
+   - You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework or Windows-specific functionality. Is it worth leaving that functionality behind for now and releasing a .NET Core version of your library with less features on a temporary basis until resources are available to port the features?
+   - Would a refactor help?
 1. Is it reasonable to write your own implementation of an unavailable .NET Framework API?
-   You could consider copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource). It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt), so you have significant freedom in doing this. Just be sure to properly attribute Microsoft in your code!
+   You could consider copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource). It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt), so you have significant freedom in doing this. Just be sure to properly attribute Microsoft in your code.
 1. Repeat this process as needed for different projects.
 1. Once you have a plan, execute that plan.
  
@@ -187,7 +187,7 @@ The best way to make sure everything works when you've ported your code is to te
 
 ## Recommended approach to porting
 
-Finally, porting the code itself! Ultimately, the actual porting effort depends heavily on how your .NET Framework code is structured. That being said, here is a recommended approach that may work well with your codebase.
+Finally, porting the code itself! Ultimately, the actual porting effort depends heavily on how your .NET Framework code is structured. That being said, here is a recommended approach that may work with your codebase.
 
 A good way to port your code is to begin with the *base* of your library, which are the foundational components of your code. This might be data models or some other foundational classes and methods that everything else uses directly or indirectly.
 

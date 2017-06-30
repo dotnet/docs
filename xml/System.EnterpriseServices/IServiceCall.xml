@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements the batch work that is submitted through the activity created by <see cref="T:System.EnterpriseServices.Activity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.EnterpriseServices.IServiceCall> to perform batch work that uses COM+ services without creating a component specifically for using those services. Script environments such as Internet Information Services (IIS) and ASP.NET can use this interface to utilize COM+ services without the need to create a COM+ component.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="OnCall">
@@ -34,8 +41,22 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Starts the execution of the batch work implemented in this method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The batch work that is run in this method runs in the context and thread apartment of the activity created by the call to <xref:System.EnterpriseServices.Activity>. The batch work in this method is run by a call to either <xref:System.EnterpriseServices.Activity.SynchronousCall%2A?displayProperty=fullName> or <xref:System.EnterpriseServices.Activity.AsynchronousCall%2A?displayProperty=fullName>.  
+  
+> [!CAUTION]
+>  You must ensure that this method is thread safe in situations where the activity object created by <xref:System.EnterpriseServices.Activity> is not created with a synchronized context, because in such situations many calls to <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> can run at the same time.  
+  
+ To achieve the best performance from the system, the context configuration of the activity created by <xref:System.EnterpriseServices.Activity> should be matched to the batch work performed by the <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> method. For example, if the batch work in the <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> method uses poolable objects, the activity created by <xref:System.EnterpriseServices.Activity> should be configured to use the multithreaded apartment (MTA).  
+  
+ For information about poolable objects, see the topic "Requirements for Poolable Objects" in the Platform SDK in MSDN.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

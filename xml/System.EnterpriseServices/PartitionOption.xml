@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the context in which to run the COM+ partition.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information on partitions, see "COM+ Partitions" in the COM+ (Component Services) section in the Platform SDK documentation in the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ignore">
@@ -32,7 +39,7 @@
         <ReturnType>System.EnterpriseServices.PartitionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enclosed context runs in the Global Partition. <see cref="F:System.EnterpriseServices.PartitionOption.Ignore" /> is the default setting for <see cref="P:System.EnterpriseServices.ServiceConfig.PartitionOption" /> when <see cref="P:System.EnterpriseServices.ServiceConfig.Inheritance" /> is set to <see cref="F:System.EnterpriseServices.InheritanceOption.Ignore" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -48,7 +55,7 @@
         <ReturnType>System.EnterpriseServices.PartitionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enclosed context runs in the current containing COM+ partition. This is the default setting for <see cref="P:System.EnterpriseServices.ServiceConfig.PartitionOption" /> when <see cref="P:System.EnterpriseServices.ServiceConfig.Inheritance" /> is set to <see cref="F:System.EnterpriseServices.InheritanceOption.Inherit" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -64,7 +71,7 @@
         <ReturnType>System.EnterpriseServices.PartitionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The enclosed context runs in a COM+ partition that is different from the current containing partition.</summary>
       </Docs>
     </Member>
   </Members>

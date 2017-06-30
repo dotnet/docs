@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the remote procedure call (RPC) authentication mechanism. Applicable only when the <see cref="T:System.EnterpriseServices.ActivationOption" /> is set to <see langword="Server" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration in conjunction with the <xref:System.EnterpriseServices.ApplicationAccessControlAttribute> attribute.  
+  
+ [!code-cpp[EnterpriseServices_Security#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#2)]
+ [!code-csharp[EnterpriseServices_Security#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#2)]
+ [!code-vb[EnterpriseServices_Security#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Call">
@@ -27,7 +38,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authenticates credentials at the beginning of every call.</summary>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -43,7 +54,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authenticates credentials only when the connection is made.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -59,7 +70,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uses the default authentication level for the specified authentication service. In COM+, this setting is provided by the <see langword="DefaultAuthenticationLevel" /> property in the <see langword="LocalComputer" /> collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Integrity">
@@ -75,7 +86,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authenticates credentials and verifies that no call data has been modified in transit.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -91,7 +102,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authentication does not occur.</summary>
       </Docs>
     </Member>
     <Member MemberName="Packet">
@@ -107,7 +118,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authenticates credentials and verifies that all call data is received.</summary>
       </Docs>
     </Member>
     <Member MemberName="Privacy">
@@ -123,7 +134,7 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Authenticates credentials and encrypts the packet, including the data and the sender's identity and signature.</summary>
       </Docs>
     </Member>
   </Members>

@@ -13,8 +13,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Publishes authenticated, encrypted SOAP virtual roots on servers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.EnterpriseServices.Internal.SoapServerVRoot> for the default implementation.  
+  
+ <xref:System.EnterpriseServices.Internal.ISoapServerVRoot> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateVirtualRootEx">
@@ -48,19 +57,24 @@
         <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="rootWebServer">To be added.</param>
-        <param name="inBaseUrl">To be added.</param>
-        <param name="inVirtualRoot">To be added.</param>
-        <param name="homePage">To be added.</param>
-        <param name="discoFile">To be added.</param>
-        <param name="secureSockets">To be added.</param>
-        <param name="authentication">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="baseUrl">To be added.</param>
-        <param name="virtualRoot">To be added.</param>
-        <param name="physicalPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="inBaseUrl">The base URL that contains the virtual root.</param>
+        <param name="inVirtualRoot">The name of the virtual root.</param>
+        <param name="homePage">
+          <see langword="true" /> if the <see langword="EnableDefaultDoc" /> property is to be set; otherwise, <see langword="false" />.</param>
+        <param name="discoFile">
+          <see langword="true" /> if a default discovery file is to be created; <see langword="false" /> if there is to be no discovery file. If <see langword="false" /> and a Default.disco file exists, the file is deleted.</param>
+        <param name="secureSockets">
+          <see langword="true" /> if SSL encryption is required; otherwise, <see langword="false" />.</param>
+        <param name="authentication">Specify "anonymous" if no authentication is to be used (anonymous user). Otherwise, specify an empty string.</param>
+        <param name="operation">Not used. Specify <see langword="null" /> for this parameter.</param>
+        <param name="baseUrl">When this method returns, this parameter contains the base URL.</param>
+        <param name="virtualRoot">When this method returns, this parameter contains the name of the virtual root.</param>
+        <param name="physicalPath">When this method returns, this parameter contains the disk address of the Virtual Root directory.</param>
+        <summary>Creates a SOAP virtual root with security options.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="DeleteVirtualRootEx">
@@ -86,11 +100,21 @@
         <Parameter Name="virtualRoot" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="rootWebServer">To be added.</param>
-        <param name="baseUrl">To be added.</param>
-        <param name="virtualRoot">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="baseUrl">The base URL that contains the virtual root.</param>
+        <param name="virtualRoot">The name of the virtual root.</param>
+        <summary>Deletes a virtual root. Not fully implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The functionality to delete a virtual root is not currently available in the implementation of this interface. The implementation returns without deleting the root.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+        <exception cref="T:System.EnterpriseServices.ServicedComponentException">The call to identify the system directory failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualRootStatus">
@@ -125,19 +149,19 @@
         <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="rootWebServer">To be added.</param>
-        <param name="inBaseUrl">To be added.</param>
-        <param name="inVirtualRoot">To be added.</param>
-        <param name="exists">To be added.</param>
-        <param name="secureSockets">To be added.</param>
-        <param name="windowsAuth">To be added.</param>
-        <param name="anonymous">To be added.</param>
-        <param name="homePage">To be added.</param>
-        <param name="discoFile">To be added.</param>
-        <param name="physicalPath">To be added.</param>
-        <param name="baseUrl">To be added.</param>
-        <param name="virtualRoot">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="inBaseUrl">The base URL that contains the virtual root.</param>
+        <param name="inVirtualRoot">The name of the virtual root.</param>
+        <param name="exists">When this method returns, this parameter contains a <see langword="true" /> if the virtual directory exists; otherwise, <see langword="false" />.</param>
+        <param name="secureSockets">When this method returns, this parameter contains a <see langword="true" /> if SSL encryption is required; otherwise, <see langword="false" />.</param>
+        <param name="windowsAuth">When this method returns, this parameter contains <see langword="true" /> if Windows authentication is set, otherwise, <see langword="false" />.</param>
+        <param name="anonymous">When this method returns, this parameter contains <see langword="true" /> if no authentication is set (anonymous user); otherwise, <see langword="false" />.</param>
+        <param name="homePage">When this method returns, this parameter contains a <see langword="true" /> if the Virtual Root directory's <see langword="EnableDefaultDoc" /> property is set; otherwise, <see langword="false" />.</param>
+        <param name="discoFile">When this method returns, this parameter contains a <see langword="true" /> if a Default.disco file exists; otherwise, <see langword="false" />.</param>
+        <param name="physicalPath">When this method returns, this parameter contains the disk address of the Virtual Root directory.</param>
+        <param name="baseUrl">When this method returns, this parameter contains the base URL.</param>
+        <param name="virtualRoot">When this method returns, this parameter contains the name of the virtual root.</param>
+        <summary>Returns the security status of an existing SOAP virtual root.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -13,8 +13,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a Web.config file for a SOAP-enabled COM+ application and adds component entries to the file for COM interfaces being published in the application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IServerWebConfig> interface is implemented only by the <xref:System.EnterpriseServices.Internal.ServerWebConfig> class and is only used within the .NET Framework infrastructure. Rather than implementing this interface or instantiating an <xref:System.EnterpriseServices.Internal.IServerWebConfig> interface object, use the <xref:System.EnterpriseServices.Internal.Publish> class, which implements the <xref:System.EnterpriseServices.Internal.IComSoapPublisher> interface.  
+  
+ <xref:System.EnterpriseServices.Internal.IServerWebConfig> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddElement">
@@ -43,14 +53,22 @@
         <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="FilePath">To be added.</param>
-        <param name="AssemblyName">To be added.</param>
-        <param name="TypeName">To be added.</param>
-        <param name="ProgId">To be added.</param>
-        <param name="Mode">To be added.</param>
-        <param name="Error">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="FilePath">The path for the existing Web.config file.</param>
+        <param name="AssemblyName">The name of the assembly that contains the type being added.</param>
+        <param name="TypeName">The name of the type being added.</param>
+        <param name="ProgId">The programmatic identifier for the type being added.</param>
+        <param name="Mode">A string constant that corresponds to the name of a member from the <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> enumeration, which indicates how a well-known object is activated.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Adds XML elements to a Web.config file for a COM interface being published in a SOAP-enabled COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.EnterpriseServices.Internal.ServerWebConfig.AddElement%2A> method for implementation details. However, you do not need to call `AddElement` method directly.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -76,11 +94,19 @@
         <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="FilePath">To be added.</param>
-        <param name="FileRootName">To be added.</param>
-        <param name="Error">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="FilePath">The folder in which to create the configuration file.</param>
+        <param name="FileRootName">The string value to which a config extension can be added (for example, Web for Web.config).</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Creates a Web.config file for a SOAP-enabled COM+ application so that the file is ready to have XML elements added for COM interfaces being published.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.EnterpriseServices.Internal.ServerWebConfig.Create%2A> method for implementation details. However, you do not need to call `Create` directly.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

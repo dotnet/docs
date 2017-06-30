@@ -27,7 +27,7 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
   
 <a name="BKMK_Checkingforequality"></a>   
 ## Checking for equality  
- Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and `Remove` use an equality comparer for the collection elements. If the collection is generic, than items are compared for equality according to the following guidelines:  
+ Methods such as `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>, and `Remove` use an equality comparer for the collection elements. If the collection is generic, then items are compared for equality according to the following guidelines:  
   
 -   If type T implements the <xref:System.IEquatable%601> generic interface, then the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface.  
   

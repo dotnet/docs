@@ -1,13 +1,13 @@
 ---
 uid: System.EnterpriseServices.IServiceCall
 ms.technology: 
-  - "dotnet-standard"
-internalonly: False
+  - "dotnet-bcl"
+manager: "tyoung"
 ---
 
 ---
 uid: System.EnterpriseServices.IServiceCall.OnCall
 ms.technology: 
-  - "dotnet-standard"
-internalonly: False
+  - "dotnet-bcl"
+manager: "tyoung"
 ---

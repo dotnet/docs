@@ -1,13 +1,13 @@
 ---
 uid: System.EnterpriseServices.Internal.AssemblyLocator
 ms.technology: 
-  - "dotnet-standard"
-internalonly: False
+  - "dotnet-bcl"
+manager: "tyoung"
 ---
 
 ---
 uid: System.EnterpriseServices.Internal.AssemblyLocator.#ctor
 ms.technology: 
-  - "dotnet-standard"
-internalonly: False
+  - "dotnet-bcl"
+manager: "tyoung"
 ---

@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of automatic synchronization requested by the component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.SynchronizationOption> type.  
+  
+ [!code-cpp[EnterpriseServicesSynchronizationOption#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesSynchronizationOption/cpp/class1.cpp#0)]
+ [!code-csharp[EnterpriseServicesSynchronizationOption#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesSynchronizationOption/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesSynchronizationOption#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesSynchronizationOption/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -27,7 +38,7 @@
         <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>COM+ ignores the synchronization requirements of the component when determining context for the object.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSupported">
@@ -43,7 +54,7 @@
         <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with this value never participates in synchronization, regardless of the status of its caller. This setting is only available for components that are non-transactional and do not use just-in-time (JIT) activation.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -59,7 +70,7 @@
         <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ensures that all objects created from the component are synchronized.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequiresNew">
@@ -75,7 +86,7 @@
         <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with this value must participate in a new synchronization where COM+ manages contexts and apartments on behalf of all components involved in the call.</summary>
       </Docs>
     </Member>
     <Member MemberName="Supported">
@@ -91,7 +102,7 @@
         <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An object with this value participates in synchronization, if it exists.</summary>
       </Docs>
     </Member>
   </Members>

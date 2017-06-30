@@ -1,13 +1,13 @@
 ---
 uid: System.EnterpriseServices.Internal.ISoapClientImport
 ms.technology: 
-  - "dotnet-standard"
-internalonly: False
+  - "dotnet-bcl"
+manager: "tyoung"
 ---
 
 ---
 uid: System.EnterpriseServices.Internal.ISoapClientImport.ProcessClientTlbEx(System.String,System.String,System.String,System.String,System.String,System.String)
 ms.technology: 
-  - "dotnet-standard"
-internalonly: False
+  - "dotnet-bcl"
+manager: "tyoung"
 ---

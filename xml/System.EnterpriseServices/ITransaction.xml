@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Corresponds to the Distributed Transaction Coordinator (DTC) <see langword="ITransaction" /> interface and is supported by objects obtained through <see cref="P:System.EnterpriseServices.ContextUtil.Transaction" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,10 +38,10 @@
         <Parameter Name="fAsync" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="pboidReason">To be added.</param>
-        <param name="fRetaining">To be added.</param>
-        <param name="fAsync">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pboidReason">An optional <see cref="T:System.EnterpriseServices.BOID" /> that indicates why the transaction is being aborted. This parameter can be <see langword="null" />, indicating that no reason for the abort is provided.</param>
+        <param name="fRetaining">Must be <see langword="false" />.</param>
+        <param name="fAsync">When <c>fAsync</c> is <see langword="true" />, an asynchronous abort is performed and the caller must use <see langword="ITransactionOutcomeEvents" /> to learn the outcome of the transaction.</param>
+        <summary>Aborts the transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,11 +63,18 @@
         <Parameter Name="grfRM" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="fRetaining">To be added.</param>
-        <param name="grfTC">To be added.</param>
-        <param name="grfRM">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fRetaining">Must be <see langword="false" />.</param>
+        <param name="grfTC">A value taken from the OLE DB enumeration <see langword="XACTTC" />.</param>
+        <param name="grfRM">Must be zero.</param>
+        <summary>Commits the transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For values of `grfTC`, see `ITransaction::Commit` in the OLE DB Programmers Reference.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTransactionInfo">
@@ -86,8 +93,8 @@
         <Parameter Name="pinfo" Type="System.EnterpriseServices.XACTTRANSINFO&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="pinfo">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pinfo">Pointer to the caller-allocated <see cref="T:System.EnterpriseServices.XACTTRANSINFO" /> structure that will receive information about the transaction. Must not be <see langword="null" />.</param>
+        <summary>Returns information about a transaction object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Flags used with the <see cref="T:System.EnterpriseServices.RegistrationHelper" /> class.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Should not be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="ConfigureComponentsOnly">
@@ -48,7 +48,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Configures components only, do not configure methods or interfaces.</summary>
       </Docs>
     </Member>
     <Member MemberName="CreateTargetApplication">
@@ -64,7 +64,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the target application. An error occurs if the target already exists.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -80,7 +80,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do the default installation, which configures, installs, and registers, and assumes that the application already exists.</summary>
       </Docs>
     </Member>
     <Member MemberName="ExpectExistingTypeLib">
@@ -96,7 +96,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Do not export the type library; one can be found either by the generated or supplied type library name.</summary>
       </Docs>
     </Member>
     <Member MemberName="FindOrCreateTargetApplication">
@@ -112,7 +112,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the application if it does not exist; otherwise use the existing application.</summary>
       </Docs>
     </Member>
     <Member MemberName="Install">
@@ -128,7 +128,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Should not be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReconfigureExistingApplication">
@@ -144,7 +144,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>If using an existing application, ensures that the properties on this application match those in the assembly.</summary>
       </Docs>
     </Member>
     <Member MemberName="Register">
@@ -160,7 +160,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Should not be used.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReportWarningsToConsole">
@@ -176,7 +176,7 @@
         <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When alert text is encountered, writes it to the Console.</summary>
       </Docs>
     </Member>
   </Members>

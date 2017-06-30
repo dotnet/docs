@@ -4,7 +4,7 @@ ms.date: "2017-07-01"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: 
   - "CSharp"
 helpviewer_keywords: 

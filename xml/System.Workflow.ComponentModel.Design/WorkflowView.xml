@@ -302,7 +302,7 @@
 ## Remarks  
  When the disposing parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Workflow.ComponentModel.Design.WorkflowView> references. This method invokes the `Dispose()` method of each referenced object.  
   
- For more information about `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information about `Dispose` and `Finalize`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3(v=vs.110)).  
   
  ]]></format>
         </remarks>

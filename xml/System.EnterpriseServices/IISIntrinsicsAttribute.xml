@@ -26,7 +26,7 @@
 ## Remarks  
  The ASP intrinsic objects can be obtained within a COM+ object using the named properties available from the COM+ object context when the object was created from ASP. With ASP.NET, a new set of intrinsic objects is used, which are not accessed from a context but rather methods in a namespace, much like the <xref:System.EnterpriseServices.ContextUtil> class. The case of COM+ objects created from ASP.NET is viable; therefore the intrinsic objects available to COM objects from the COM+ object context might be required so that the COM+ object can interact with ASP.NET.  
   
- For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

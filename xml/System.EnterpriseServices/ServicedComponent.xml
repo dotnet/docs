@@ -206,7 +206,7 @@ regsvcs Calculator.dll
   
  It is recommended to explicitly release COM+ objects and external resources before the garbage collector frees the object. If the external resource is scarce or expensive, better performance can be achieved by explicitly releasing COM+ resources when they are no longer needed. Explicit control is provided by the <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A> method.  
   
- Calling <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A> allows the resources used by the <xref:System.EnterpriseServices.ServicedComponent> to be reallocated for other purposes. For more information about <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A>, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).  
+ Calling <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A> allows the resources used by the <xref:System.EnterpriseServices.ServicedComponent> to be reallocated for other purposes. For more information about <xref:System.EnterpriseServices.ServicedComponent.Dispose%2A>, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
   
  ]]></format>
         </remarks>
@@ -246,9 +246,9 @@ regsvcs Calculator.dll
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>

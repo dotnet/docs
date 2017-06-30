@@ -26,7 +26,7 @@
 ## Remarks  
  Both transaction and just-in-time (JIT) activation enable synchronization automatically.  
   
- For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  Applying <xref:System.EnterpriseServices.SynchronizationAttribute> to a context-bound object results in the creation of a wait handle and auto reset event, which are not deterministically garbage collected. Therefore, you should not create a large number of context-bound objects marked with the `SynchronizationAttribute` within a short time period.  
   

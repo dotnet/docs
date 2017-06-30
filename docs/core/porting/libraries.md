@@ -17,13 +17,13 @@ This article discusses porting library code to .NET Core so that it runs cross-p
 
 ## Prerequisites
 
-This article also assumes that you:
+This article assumes that you:
 
 - Are using Visual Studio 2017 or later. .NET Core isn't supported on earlier versions of Visual Studio.
 - Understand the [recommended porting process](index.md).
 - Have resolved any issues with [third-party dependencies](third-party-deps.md).
 
-You should also read and become familiar with the content of the following topics:
+You should also become familiar with the content of the following topics:
 
 [.NET Standard](~/docs/standard/net-standard.md)   
 This topic describes the formal specification of .NET APIs that are intended to be available on all .NET runtimes.
@@ -42,7 +42,7 @@ This topic discusses the portability of third-party dependencies and what to do 
 
 ## .NET Framework technologies unavailable on .NET Core
 
-Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), and Security Transparency. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility the CoreFX team maintains [List of behavioral changes/compat breaks and deprecated/legacy APIs](https://github.com/dotnet/corefx/wiki/ApiCompat) at GitHub.
+Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), and Security Transparency. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, the CoreFX team maintains a [List of behavioral changes/compat breaks and deprecated/legacy APIs](https://github.com/dotnet/corefx/wiki/ApiCompat) at GitHub.
 
 Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Feel free to file an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are usually marked with the `port-to-core` label.
 
@@ -64,19 +64,19 @@ Across machines, use a network-based solution as an alternative. Preferably, use
 
 ### Code Access Security (CAS)
 
-Sandboxing, which is relying on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](~/docs/framework/misc/code-access-security.md) and therefore is also not supported on .NET Core. We believe that there are simply too many pieces in the .NET Framework and runtime that result in elevation of privileges. Thus, we don't treat CAS as a security boundary anymore. In addition, it makes the implementation more complicated and often has correctness performance implications for applications that don't intend to use it.
+Sandboxing, which is relying on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](~/docs/framework/misc/code-access-security.md) and therefore is also not supported on .NET Core. We believe that there are too many cases in the .NET Framework and runtime where an elevation of privileges occurs to continue treating CAS as a security boundary. In addition, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
 ### Security Transparency
 
-Similar to CAS, this feature allows separating sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](~/docs/framework/misc/security-transparent-code.md). This feature was heavily used by Silverlight. 
+Similar to CAS, Security Transparency allows separating sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](~/docs/framework/misc/security-transparent-code.md). This feature is heavily used by Silverlight. 
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
 ### global.json
 
-The *global.json* file is an optional file that allows you to set the .NET Core tools version for a project. For example if you're using nightly builds of .NET Core and wish to specify a specific version of the SDK, specify the version with a *global.json* file. It typically resides in the current working directory, which isn't necessarily the same as the project directory, or one of its parent directories. 
+The *global.json* file is an optional file that allows you to set the .NET Core tools version of a project. If you're using nightly builds of .NET Core and wish to specify a specific version of the SDK, specify the version with a *global.json* file. It typically resides in the current working directory or one of its parent directories. 
 
 ```json
 {
@@ -125,11 +125,9 @@ Make sure you understand the [API Portability Analyzer (ApiPort)](~/docs/standar
 
 This approach may be the best for small projects or projects which don't use many .NET Framework APIs. The approach is simple:
 
-1. Optionally, run ApiPort on your project.
-1. If you run ApiPort, take a quick look at the report.
+1. Optionally, run ApiPort on your project. If you run ApiPort, gain knowledge from the report on issues you'll need to address.
 1. Copy all of your code over into a new .NET Core project.
-1. Solve compiler errors until the library compiles, referring to the portability report as needed.
-1. Repeat until the project fully compiles.
+1. While referring to the portability report (if generated), solve compiler errors until the project fully compiles.
 
 Although this approach is unstructured, the code-focused approach often leads to resolving issues quickly and might be the best approach for smaller projects or libraries. A project that contains only data models might be an ideal candidate for this approach.
 
@@ -139,16 +137,16 @@ This approach might be the best if you prefer to have code that compiles during 
 
 1. Run ApiPort on a project.
 1. Address issues by using different APIs that are portable.
-1. Keep note of any areas where you're prevented from using a direct alternative.
+1. Take note of any areas where you're prevented from using a direct alternative.
 1. Repeat the prior steps for all projects you're porting until you're confident each is ready to be copied over into a new .NET Core project.
 1. Copy the code into a new .NET Core project.
-1. Work out any issues that you've kept a note that a direct alternative doesn't exist.
+1. Work out any issues where you noted that a direct alternative doesn't exist.
 
 This careful approach is more structured than simply working out compiler errors, but it's still relatively code-focused and has the benefit of always having code that compiles. The way you resolve certain issues that couldn't be addressed by just using another API varies greatly. You may find that you need to develop a more comprehensive plan for certain projects, which is covered as the next approach.
 
 ### Developing a comprehensive plan of attack
 
-This approach might be best for larger and more complex projects, where restructuring of code or rewriting certain areas might be necessary to support .NET Core. The approach is as follows:
+This approach might be best for larger and more complex projects, where restructuring code or completely rewriting certain areas of code might be necessary to support .NET Core. The approach is as follows:
 
 1. Run ApiPort on a project.
 1. Understand where each non-portable type is used and how that affects overall portability.
@@ -156,14 +154,13 @@ This approach might be best for larger and more complex projects, where restruct
    - Is it easy to isolate code that isn't portable so that you can deal with it more effectively?
    - Do you need to refactor your code?
    - For those types which aren't portable, are there alternative APIs that accomplish the same task? For example if you're using the <xref:System.Net.WebClient> class, you might be able to use the <xref:System.Net.Http.HttpClient> class instead.
-   - Are there different portable APIs available to accomplish a task, even if it's not a drop-in replacement? For example if you're using <xref:System.Xml.Schema.XmlSchema> to help parse XML but you don't require XML schema discovery, you could use <xref:System.Xml.Linq> APIs and hand-parse the data.
+   - Are there different portable APIs available to accomplish a task, even if it's not a drop-in replacement? For example if you're using <xref:System.Xml.Schema.XmlSchema> to parse XML but don't require XML schema discovery, you could use <xref:System.Xml.Linq> APIs and implement parsing yourself as opposed to relying on an API.
 1. If you have assemblies that are difficult to port, is it worth leaving them on .NET Framework for now? Here are some things to consider:
    - You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework or Windows-specific functionality. Is it worth leaving that functionality behind for now and releasing a .NET Core version of your library with less features on a temporary basis until resources are available to port the features?
    - Would a refactor help?
 1. Is it reasonable to write your own implementation of an unavailable .NET Framework API?
-   You could consider copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource). It's licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt), so you have significant freedom in doing this. Just be sure to properly attribute Microsoft in your code.
+   You could consider copying, modifying, and using code from the [.NET Framework Reference Source](https://github.com/Microsoft/referencesource). The reference source code is licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt), so you have significant freedom to use the source as a basis for your own code. Just be sure to properly attribute Microsoft in your code.
 1. Repeat this process as needed for different projects.
-1. Once you have a plan, execute that plan.
  
 The analysis phase could take some time depending on the size of your codebase. Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan usually saves you time in the long run, particularly if you have a complex codebase.
 
@@ -187,9 +184,7 @@ The best way to make sure everything works when you've ported your code is to te
 
 ## Recommended approach to porting
 
-Finally, porting the code itself! Ultimately, the actual porting effort depends heavily on how your .NET Framework code is structured. That being said, here is a recommended approach that may work with your codebase.
-
-A good way to port your code is to begin with the *base* of your library, which are the foundational components of your code. This might be data models or some other foundational classes and methods that everything else uses directly or indirectly.
+Ultimately, the porting effort depends heavily on how your .NET Framework code is structured. A good way to port your code is to begin with the *base* of your library, which are the foundational components of your code. This might be data models or some other foundational classes and methods that everything else uses directly or indirectly.
 
 1. Port the test project that tests the layer of your library that you're currently porting.
 1. Copy over the base of your library into a new .NET Core project and select the version of the .NET Standard you wish to support.

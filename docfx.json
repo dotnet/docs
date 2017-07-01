@@ -108,7 +108,7 @@
     "fileMetadata": {
       "ms.prod": {
         "api/**.yml": ".net",
-        "docs/csharp/language-reference/language-specification/*.md": ".net"
+        "_csharplang/spec/*.md": ".net"
       },
       "ms.topic": {
         "api/**.yml": "managed-reference"
@@ -120,13 +120,13 @@
         "api/**.yml": "NOINDEX, NOFOLLOW"
       },
       "ms.author": {
-        "docs/csharp/language-reference/language-specification/*.md": "wiwagn"
+        "_csharplang/spec/*.md": "wiwagn"
       },
       "topic": {
-        "docs/csharp/language-reference/language-specification/*.md": "reference"
+        "_csharplang/spec/*.md": "reference"
       },
       "ms.date": {
-        "docs/csharp/language-reference/language-specification/*.md": "07/01/2017"
+        "_csharplang/spec/*.md": "07/01/2017"
       }
     },
     "dest": "_site",

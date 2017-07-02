@@ -47,7 +47,7 @@ public Task<string> GetHtmlAsync()
 }
 ```
 
-The second example adds the use of he `async` and `await` keywords to operate on the task.
+The second example adds the use of the `async` and `await` keywords to operate on the task.
 
 ```csharp
 public async Task<string> GetFirstCharactersCountAsync(string url, int count)

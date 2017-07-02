@@ -1,5 +1,5 @@
 # [C# 6.0 draft specification](index.md)
-## [Lexical structure](../../../../_csharplang/spec/lexical-structure.md)
+## [Lexical structure](../../../../_csharplang/spec/lexical-structure.md#lexical-structure)
 ### [Programs](../../../../_csharplang/spec/lexical-structure.md#programs)
 ### [Grammars](../../../../_csharplang/spec/lexical-structure.md#grammars)
 ### [Lexical analysis](../../../../_csharplang/spec/lexical-structure.md#lexical-analysis)

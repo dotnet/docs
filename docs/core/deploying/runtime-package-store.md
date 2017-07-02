@@ -17,7 +17,7 @@ ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 
 Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist in the target environment. The benefits are faster deployments, lower disk space use, and improved startup performance in some cases.
 
-This feature is implemented as a *runtime package store*, which is a directory on disk next to the the [`dotnet` host](../tools/dotnet.md) where packages are stored (typically at *.dotnet/store* in the user's profile). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
+This feature is implemented as a *runtime package store*, which is a directory on disk where packages are stored (typically at *.dotnet/store* in the user's profile). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
 \dotnet   
 &nbsp;&nbsp;\store   
@@ -41,8 +41,6 @@ This feature is implemented as a *runtime package store*, which is a directory o
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
 
 A *target manifest* file describes the runtime package store by indicating the packages in the store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
-
-This feature is used implicitly by ASP.NET apps. The set of packages composing the ASP.NET web framework is installed as part of the setup packages authored by Microsoft. When publishing an ASP.NET app, the published app is trimmed to the app's included packages and not the framework's packages. For more information, see [ASP.NET implicit store](#aspnet-implicit-store) below.
 
 ## Preparing a runtime environment
 
@@ -128,19 +126,22 @@ Instead of specifying target manifests with the [`dotnet publish`](../tools/dotn
 </PropertyGroup>
 ```
 
-Specify the target manifests in the project file only when the target environment for the app is well-known, such as for ASP.NET projects. This isn't the case for open-source projects. The users of an open-source project likely deploy to different production environments, which probably have different sets of packages pre-installed. Maintainers of the project can't make assumptions about the target manifest in such open-source environments, so developers should instead rely on the `--manifest` option of [`dotnet publish`](../tools/dotnet-publish.md).
+Specify the target manifests in the project file only when the target environment for the app is well-known, such as for .NET Core projects. This isn't the case for open-source projects. The users of an open-source project likely deploy to different production environments, which probably have different sets of packages pre-installed. Maintainers of the project can't make assumptions about the target manifest in such open-source environments, so developers should instead rely on the `--manifest` option of [`dotnet publish`](../tools/dotnet-publish.md).
 
-## ASP.NET implicit store
+## ASP.NET Core implicit store
 
-The default ASP.NET targets in the `Microsoft.NET.Sdk.Web` SDK include target manifests. As a consequence, running `dotnet publish` for an ASP.NET app results in a published app that contains only the app and its assets and not ASP.NET itself.
+The runtime package store feature is used implicitly by ASP.NET Core apps. The targets in [`Microsoft.NET.Sdk.Web`](https://github.com/aspnet/websdk) include manifests referencing the implicit package store that's available when the .NET Core SDK is installed on the target system. Running `dotnet publish` for an app results in a published app that contains only the app and its assets and not the packages required ASP.NET Core targets, which are present on the target system.
 
-When an ASP.NET published app is deployed, make sure that the target environment has ASP.NET installed, as the presence of .NET Core alone isn't sufficient. If the app is deployed to an environment that doesn't include ASP.NET, you can opt out of the implicit store by specifying  **\<PublishWithAspNetCoreTargetManifest>** set to `false` in the project file as shown below:
+When deploying a [framework-dependent deployment (FDD)](index.md#framework-dependent-deployments-fdd) app, make sure that the target environment has the .NET Core SDK installed. If the app is deployed to an environment that doesn't include ASP.NET Core, you can opt out of the implicit store by specifying  **\<PublishWithAspNetCoreTargetManifest>** set to `false` in the project file as shown below:
 
 ```xml
 <PropertyGroup>
   <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
 </PropertyGroup>
 ```
+
+> [!NOTE] 
+> For [self-contained deployment (SCD)](index.md#self-contained-deployments-scd) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, **\<PublishWithAspNetCoreTargetManifest>** cannot be set to `true` for an SCD app.
 
 ## See also
 

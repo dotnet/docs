@@ -137,7 +137,7 @@ Unit tests provide automated software testing during your development and publis
                                        string searchWord, 
                                        string inputString)
    {
-       Assert.Equal(count, WordCount.GetWordCount(searchWord,
+       Assert.NotEqual(count, WordCount.GetWordCount(searchWord,
                                                   inputString));
    }
    ```

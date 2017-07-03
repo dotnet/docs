@@ -31,6 +31,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
  [Viewing the registry (version 4.5 and later)](#net_b)  
  [Using code to query the registry (versions 1-4)](#net_c)  
  [Using code to query the registry (version 4.5 and later)](#net_d)  
+ [Using PowerShell to query the registry (version 4.5 and later)](#ps_a)  
   
  To find the CLR version, you can use a tool or code:  
   
@@ -149,6 +150,25 @@ Users can install and run multiple versions of the .NET Framework on their compu
     - It checks whether the value of the `Release` entry is *greater than or equal to* the value of the known release keys.
 
     - It checks in order from most recent version to earliest version.
+
+<a name="ps_a"></a> 
+#### To check for a minimum-required .NET Framework version by querying the registry in PowerShell (.NET Framework 4.5 and later)
+
+- The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed (returning `True` if it is and `False` otherwise). You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
+
+    |Version|Minimum value of the Release DWORD|
+    |-------------|--------------------------------|
+    |.NET Framework 4.5|378389|
+    |.NET Framework 4.5.1|378675|
+    |.NET Framework 4.5.2|379893|
+    |[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|393295|
+    |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|394254|
+    |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
+    |.NET Framework 4.7|460798|
+
+```PowerShell
+Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -gt 394802 } 
+```
 
 <a name="clr_a"></a> 
 #### To find the current runtime version by using the Clrver tool

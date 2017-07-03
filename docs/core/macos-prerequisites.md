@@ -49,6 +49,6 @@ Download and install the .NET Core SDK from [.NET Downloads](https://www.microso
 .NET Core development on macOS with Visual Studio for Mac requires:
 
 * A supported version of the macOS operating system
-* OpenSSL (.NET Core 1.x only)
+* OpenSSL (.NET Core 1.x only; .NET Core 2.x uses security services available natively in macOS)
 * .NET Core SDK for Mac
 * [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

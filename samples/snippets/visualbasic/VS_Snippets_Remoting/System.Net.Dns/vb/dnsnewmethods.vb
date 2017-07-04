@@ -15,6 +15,7 @@ Namespace DnsNew
 '        Dim hostName As [String] = "www.contoso.com"
 
         myDns.DoGetHostEntry("www.contoso.com")
+        myDns.DoGetHostEntry(IPAddress.Parse("127.0.0.1"))
         myDns.DoGetHostAddresses("www.contoso.com")
         myDns.DoGetHostAddresses("www.contoso.com")
 
@@ -24,7 +25,7 @@ Namespace DnsNew
 ' <Snippet1>
     Public Sub DoGetHostEntry(hostName As [String])
 
-        DIM host as IPHostEntry = Dns.GetHostEntry(hostname)
+        Dim host as IPHostEntry = Dns.GetHostEntry(hostname)
 
         Console.WriteLine("GetHostEntry(" + hostname + ") returns: ")
 
@@ -53,6 +54,15 @@ Namespace DnsNew
     End Sub    
 ' </Snippet3>
 
+' <Snippet4>
+    Public Sub DoGetHostEntry(address As [IPAddress])
+
+        Dim host as IPHostEntry = Dns.GetHostEntry(address)
+
+        Console.WriteLine("GetHostEntry(" + address.ToString() + ") returns HostName: " + host.HostName)
+
+    End Sub    
+' </Snippet4>
 
 ' <Snippet2>
     ' Signals when the resolve has finished.

@@ -22,6 +22,17 @@ namespace DNSChanges
         }
 //</Snippet1>
 
+//<Snippet4>
+        public static void DoGetHostEntry(IPAddress address)
+        {
+            IPHostEntry host;
+
+            host = Dns.GetHostEntry(address);
+
+            Console.WriteLine("GetHostEntry({0}) returns HostName: {1}", address, host.HostName);
+        }
+//</Snippet4>
+
 //<Snippet3>
         public static void DoGetHostAddresses(string hostname)
         {
@@ -102,9 +113,9 @@ namespace DNSChanges
 	{
 
         DoGetHostEntry("www.contoso.com");
+        DoGetHostEntry(IPAddress.Parse("127.0.0.1"));
         DoGetHostAddresses("www.contoso.com");
         DoGetHostEntryAsync("www.contoso.com");
-
         }
 	}
 }

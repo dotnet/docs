@@ -24,6 +24,15 @@ public:
         }
 //</Snippet1>
 
+//<Snippet4>
+public:
+        static void DoGetHostEntry(IPAddress^ address)
+        {
+            IPHostEntry^ host = Dns::GetHostEntry(address);
+
+            Console::WriteLine("GetHostEntry({0}) returns HostName: {1}", address->ToString(), host->HostName);
+        }
+//</Snippet4>
 
 //<Snippet3>
    // Determine the Internet Protocol(IP) addresses for a host.
@@ -130,6 +139,7 @@ public:
 int main()
 {
    DNSChanges::DoGetHostEntry("www.contoso.com");
+   DNSChanges::DoGetHostEntry(IPAddress.Parse("127.0.0.1"));
    DNSChanges::DoGetHostAddress("www.contoso.com");
    DNSChanges::DoGetHostEntryAsync("");
 }

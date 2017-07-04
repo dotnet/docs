@@ -373,7 +373,7 @@
 ## Remarks  
  The size of the messages that can be received on the wire by services using the <xref:System.ServiceModel.WSDualHttpBinding> is bounded by the amount of memory allocated for each message. This bound on message size is intended to limit exposure to DOS-style attacks.  
   
- Note that the settings for <xref:System.ServiceModel.WSDualHttpBinding.MaxBufferPoolSize%2A> and <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize%2A> are local behavioral settings. This means that they are not transmitted to other endpoints in metadata. If you generate a proxy to a service with a maximum message size of 2GB from metadata, the proxy still has a default value 64K. This leaves control of the appropriate bounds for message and message buffer size in the scope of local administrators.  
+ Note that the settings for <xref:System.ServiceModel.WSDualHttpBinding.MaxBufferPoolSize%2A> and <xref:System.ServiceModel.WSDualHttpBinding.MaxReceivedMessageSize%2A> are local behavioral settings. This means that they are not transmitted to other endpoints in metadata. If you generate a proxy to a service with a maximum message size of 2GB from metadata, the proxy still has a default value 64K. This leaves control of the appropriate bounds for message and message buffer size in the scope of local administrators.  
   
    
   
@@ -711,7 +711,7 @@
    
   
 ## Examples  
- The following examples show how to get the <xref:System.ServiceModel.WSDualHttpBinding.System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> value.  
+ The following examples show how to get the <xref:System.ServiceModel.WSDualHttpBinding.System%23ServiceModel%23Channels%23IBindingRuntimePreferences%23ReceiveSynchronously%2A> value.  
   
  [!code-csharp[S_dualhttp#23](~/samples/snippets/csharp/VS_Snippets_CFX/s_dualhttp/cs/program.cs#23)]
  [!code-vb[S_dualhttp#23](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_dualhttp/vb/module1.vb#23)]  

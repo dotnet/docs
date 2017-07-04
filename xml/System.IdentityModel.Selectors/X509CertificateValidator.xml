@@ -290,7 +290,7 @@
 ## Remarks  
  Override the <xref:System.IdentityModel.Selectors.X509CertificateValidator.Validate%2A> method to specify how the X.509 certificate is validated.  
   
- When the X.509 certificate that is passed into the `certificate` parameter does not pass validation, throw the <xref:System.IdentityModel.Tokens.SecurityTokenvalidationException>.  
+ When the X.509 certificate that is passed into the `certificate` parameter does not pass validation, throw the <xref:System.IdentityModel.Tokens.SecurityTokenValidationException>.  
   
    
   

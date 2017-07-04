@@ -1482,7 +1482,7 @@
 ## Remarks  
  This property is a convenience feature that indicates whether a <xref:System.Numerics.BigInteger> value is evenly divisible by two. It is equivalent to the following expression:  
   
-```csharp  
+```csharp   
 value % 2 == 0;  
 ```  
   
@@ -1661,8 +1661,8 @@ value Mod 2 = 0
   
  You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=fullName> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=fullName> if the result is greater than <xref:System.Double.MaxValue?displayProperty=fullName>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
   
- [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)] 
- [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]   
+ [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)]
+ [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]
   
  This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for the primitive numeric types.  
   
@@ -2328,7 +2328,7 @@ value Mod 2 = 0
   
  Because <xref:System.Numerics.BigInteger> objects are immutable, the <xref:System.Numerics.BigInteger.op_Decrement%2A> operator creates a new <xref:System.Numerics.BigInteger> object whose value is one less than the <xref:System.Numerics.BigInteger> object represented by `value`. This means that repeated calls to <xref:System.Numerics.BigInteger.op_Decrement%2A> may be expensive.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2438,7 +2438,7 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2487,7 +2487,7 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2539,7 +2539,7 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> instance method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3232,7 +3232,7 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3283,7 +3283,7 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3337,7 +3337,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#21)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.%2A> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3496,7 +3496,7 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3547,7 +3547,7 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3601,7 +3601,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#23)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.%2A> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3655,7 +3655,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#22)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3709,7 +3709,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#24)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4032,7 +4032,7 @@ value Mod 2 = 0
   
  Because <xref:System.Numerics.BigInteger> objects are immutable, the <xref:System.Numerics.BigInteger.op_Increment%2A> operator creates a new <xref:System.Numerics.BigInteger> object whose value is one more than the <xref:System.Numerics.BigInteger> object represented by `value`. Therefore, repeated calls to <xref:System.Numerics.BigInteger.op_Increment%2A> may be expensive.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4138,7 +4138,7 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4194,7 +4194,7 @@ value Mod 2 = 0
   
 -   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method and reversing its value.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4409,7 +4409,7 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4460,7 +4460,7 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4514,7 +4514,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#28)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4568,7 +4568,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#36)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4622,7 +4622,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#38](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#38)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4673,7 +4673,7 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4724,7 +4724,7 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4778,7 +4778,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#30)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4832,7 +4832,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#44](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#44)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4886,7 +4886,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#46](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#46)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4939,7 +4939,7 @@ value Mod 2 = 0
   
  The sign of the value returned by the modulus operation depends on the sign of `dividend`: If `dividend` is positive, the modulus operation returns a positive result; if it is negative, the modulus operation returns a negative result. The behavior of the modulus operation with <xref:System.Numerics.BigInteger> values is identical to the modulus operation with other integral types.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Remainder%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Remainder%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
@@ -4990,7 +4990,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#11)]
  [!code-vb[System.Numeric.BigInteger.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#11)]  
   
- The equivalent method for this operator is <xref:System.Numeric%2A> s .BigInteger.Multiply(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -5138,7 +5138,7 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Subtract%2A?displayProperty=fullName> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

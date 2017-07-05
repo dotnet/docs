@@ -41,7 +41,7 @@ The **/optimize** option enables or disables optimizations performed by the comp
   
 ## Syntax  
   
-```  
+```console  
 /optimize[+ | -]  
 ```  
   
@@ -69,7 +69,7 @@ The **/optimize** option enables or disables optimizations performed by the comp
 ## Example  
  Compile `t2.cs` and enable compiler optimizations:  
   
-```  
+```console  
 csc t2.cs /optimize  
 ```  
   

@@ -427,7 +427,7 @@
   
 -   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=fullName> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   
@@ -477,7 +477,7 @@
   
 -   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is enabled.  
   
--   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.windows%2A> = `true`.  
+-   If [\<reliableSession> element](http://msdn.microsoft.com/en-us/9c93818a-7dfa-43d5-b3a1-1aafccf3a00b) is not enabled, on <xref:System.ServiceModel.WSHttpBinding> with <xref:System.ServiceModel.Description.ClientCredentials.UserName%2A> = `true` or  <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=fullName> = `true`.  
   
  Session settings such as this one are not applicable under any of the following conditions:  
   

@@ -27,7 +27,7 @@ Defines a queued binding suitable for cross-machine communication.
   
 ## Syntax  
   
-```  
+```xml  
 <netMsmqBinding>  
     <binding   
        closeTimeout="TimeSpan"   
@@ -110,7 +110,7 @@ Defines a queued binding suitable for cross-machine communication.
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
     <bindings>  

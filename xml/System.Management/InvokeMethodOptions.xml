@@ -50,8 +50,8 @@
 ## Examples  
  The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The default constructor of the <xref:System.Management.InvokeMethodOptions> class is used.  
   
- [!code-csharp[wminet_InvokeMethodOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions()/cs/InvokeMethodOptions().cs#1)]
- [!code-vb[wminet_InvokeMethodOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions()/vb/InvokeMethodOptions().vb#1)]  
+ [!code-csharp[wminet_InvokeMethodOptions-1#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions-1/cs/InvokeMethodOptions-1.cs#1)]
+ [!code-vb[wminet_InvokeMethodOptions-1#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions-1/vb/InvokeMethodOptions-1.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -87,8 +87,8 @@
 ## Examples  
  The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The <xref:System.Management.InvokeMethodOptions> class is used to invoke the method.  
   
- [!code-csharp[wminet_InvokeMethodOptions(2)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions(2)/cs/InvokeMethodOptions(2).cs#1)]
- [!code-vb[wminet_InvokeMethodOptions(2)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions(2)/vb/InvokeMethodOptions(2).vb#1)]  
+ [!code-csharp[wminet_InvokeMethodOptions-2#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions-2/cs/InvokeMethodOptions-2.cs#1)]
+ [!code-vb[wminet_InvokeMethodOptions-2#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions-2/vb/InvokeMethodOptions-2.vb#1)]  
   
  ]]></format>
         </remarks>

@@ -84,7 +84,7 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  To implement Kerberos with credential negotiation, do the following steps:  
   
-1.  Implement delegation by setting <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> to <xref:System.Security.Principal.TokenImpersonationLevel>.  
+1.  Implement delegation by setting <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> to <xref:System.Security.Principal.TokenImpersonationLevel.Delegation>.  
   
 2.  Require SSPI negotiation:  
   
@@ -112,7 +112,7 @@ When using Windows authentication as a security mechanism, the Security Support 
  The client credentials are not valid on the service. Check that the user name and password are correctly set and correspond to an account that is known to the computer where the service is running. NTLM uses the specified credentials to log on to the service's computer. While the credentials may be valid on the computer where the client is running, this logon will fail if the credentials are not valid on the service's computer.  
   
 #### Anonymous NTLM Logon Occurs, but Anonymous Logons Are Disabled by Default  
- When creating a client, the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property is set to <xref:System.Security.Principal.TokenImpersonationLevel>, as shown in the following example, but by default the server disallows anonymous logons. This occurs because the default value of the <xref:System.ServiceModel.Security.WindowsServiceCredential.AllowAnonymousLogons%2A> property of the <xref:System.ServiceModel.Security.WindowsServiceCredential> class is `false`.  
+ When creating a client, the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property is set to <xref:System.Security.Principal.TokenImpersonationLevel.Anonymous>, as shown in the following example, but by default the server disallows anonymous logons. This occurs because the default value of the <xref:System.ServiceModel.Security.WindowsServiceCredential.AllowAnonymousLogons%2A> property of the <xref:System.ServiceModel.Security.WindowsServiceCredential> class is `false`.  
   
  The following client code attempts to enable anonymous logons (note that the default property is `Identification`).  
   

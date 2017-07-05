@@ -22,7 +22,7 @@ When [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] hosts a Web servi
   
  The following code example is a portion of a configuration file for a Web service that is integrating Authorization Manager into the application.  
   
-```  
+```xml  
 <system.web>  
     <roleManager enabled="true" defaultProvider="AzManRoleProvider">  
       <providers>  

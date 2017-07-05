@@ -25,7 +25,7 @@ Protecting access to your data source is one of the most important goals when se
   
  For situations where it is not possible to use Windows authentication, you must use extra care because user credentials are exposed in the connection string. In an ASP.NET application, you can configure a Windows account as a fixed identity that is used to connect to databases and other network resources. You enable impersonation in the identity element in the **web.config** file and specify a user name and password.  
   
-```  
+```xml  
 <identity impersonate="true"   
         userName="MyDomain\UserAccount"   
         password="*****" />  

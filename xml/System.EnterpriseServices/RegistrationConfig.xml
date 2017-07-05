@@ -1,0 +1,147 @@
+<Type Name="RegistrationConfig" FullName="System.EnterpriseServices.RegistrationConfig">
+  <TypeSignature Language="C#" Value="public class RegistrationConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RegistrationConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationConfig" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("36dcda30-dc3b-4d93-be42-90b2d74c64e7")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides configuration information for installing assemblies into the COM+ catalog.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegistrationConfig ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationConfig.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.RegistrationConfig" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public string Application { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Application" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.Application" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the COM+ application in which the assembly is to be installed.</summary>
+        <value>The name of the COM+ application in which the assembly is to be installed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationRootDirectory">
+      <MemberSignature Language="C#" Value="public string ApplicationRootDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationRootDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.ApplicationRootDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the root directory of the application.</summary>
+        <value>The name of the root directory of the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyFile">
+      <MemberSignature Language="C#" Value="public string AssemblyFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssemblyFile" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.AssemblyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file name of the assembly to install.</summary>
+        <value>The file name of the assembly to install.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallationFlags">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.InstallationFlags InstallationFlags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.InstallationFlags InstallationFlags" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.InstallationFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates how to install the assembly.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.InstallationFlags" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition">
+      <MemberSignature Language="C#" Value="public string Partition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Partition" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.Partition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the COM+ partition.</summary>
+        <value>The name of the COM+ partition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeLibrary">
+      <MemberSignature Language="C#" Value="public string TypeLibrary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TypeLibrary" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.RegistrationConfig.TypeLibrary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the output Type Library Exporter (Tlbexp.exe) file.</summary>
+        <value>The name of the output Type Library Exporter (Tlbexp.exe) file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

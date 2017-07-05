@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.TimerArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.TimerArray.CanExtend(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

@@ -39,9 +39,3 @@ uid: System.Net.PeerToPeer.PeerToPeerException.System#Runtime#Serialization#ISer
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.PeerToPeer.PeerToPeerException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

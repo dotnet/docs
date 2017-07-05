@@ -47,7 +47,7 @@ Defines a list or table.
   
 ## Syntax  
   
-```  
+```xml  
 <list type="type">  
    <listheader>  
       <term>term</term>  

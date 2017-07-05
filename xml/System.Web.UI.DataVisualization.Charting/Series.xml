@@ -349,9 +349,9 @@ public void CreateSecondLegend()
 ## Remarks  
  The <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property determines the drawing style of points marked as empty, for example, in the border color, in the marker images, background color or images, and so forth.  
   
- Certain properties are only applicable for specific chart types. For example, the <xref:System.Web.UI.DataVisualization.Charting.Series.BackImage%2A> property does not apply to line charts, but does apply to an area chart.  
+ Certain properties are only applicable for specific chart types. For example, the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A> property does not apply to line charts, but does apply to an area chart.  
   
- To display an image that indicates an empty point, use the <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerImage%2A> and <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerStyle%2A> properties, and not the <xref:System.Web.UI.DataVisualization.Charting.Series.BackImage%2A> property.  
+ To display an image that indicates an empty point, use the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerImage%2A> and <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle%2A> properties, and not the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImage%2A> property.  
   
  The <xref:System.Web.UI.DataVisualization.Charting.Series.AxisLabel%2A> property determines the axis label for empty points. Note that for stacked chart types, the axis label is determined by the <xref:System.Web.UI.DataVisualization.Charting.Series.AxisLabel%2A> property of the first plotted series that has this property set.  
   

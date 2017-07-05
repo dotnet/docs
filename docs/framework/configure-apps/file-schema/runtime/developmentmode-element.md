@@ -36,7 +36,7 @@ Specifies whether the runtime searches for assemblies in directories specified b
   
 ## Syntax  
   
-```  
+```xml  
 <developmentMode developerInstallation="true | false"/>  
 ```  
   
@@ -72,7 +72,7 @@ Specifies whether the runtime searches for assemblies in directories specified b
 ## Example  
  The following example shows how to cause the runtime to search for assemblies in directories specified by the DEVPATH environment variable.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <developmentMode developerInstallation="true"/>  

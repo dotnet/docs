@@ -65,12 +65,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mail.AttachmentBase.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mail.AttachmentBase.Dispose(System.Boolean)
 ms.author: "bobdel"
 manager: "markl"

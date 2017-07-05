@@ -23,22 +23,20 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
   
  The service configuration file specifies a base address and four endpoints. The base address is specified using the add element, under service/host/baseAddresses as demonstrated in the following sample configuration.  
   
-```  
-<service   
-    name="Microsoft.ServiceModel.Samples.CalculatorService"  
-    behaviorConfiguration="CalculatorServiceBehavior">  
+```xml  
+<service name="Microsoft.ServiceModel.Samples.CalculatorService"  
+         behaviorConfiguration="CalculatorServiceBehavior">  
   <host>  
     <baseAddresses>  
-      <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  
+      <add baseAddress="http://localhost:8000/ServiceModelSamples/service" />  
     </baseAddresses>  
   </host>  
-  ...  
 </service>  
 ```  
   
  The first endpoint definition shown in the following sample configuration specifies a relative address, which means the endpoint address is a combination of the base address and the relative address following the rules of URI composition.  
   
-```  
+```xml
 <!-- Empty relative address specified:   
      use the base address provided by the host. -->  
 <!-- The endpoint address is  
@@ -52,7 +50,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
   
  The second endpoint definition also specifies a relative address, as shown in the following sample configuration.  
   
-```  
+```xml  
 <!-- The relative address specified: use the base address -->  
 <!-- provided by the host + path. The endpoint address is -->  
 <!-- http://localhost:8000/servicemodelsamples/service/test. -->  
@@ -65,7 +63,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
   
  The third endpoint definition specifies an absolute address, as shown in the following sample configuration.  
   
-```  
+```xml  
 <endpoint address="http://localhost:8001/hello/servicemodelsamples"  
           binding="wsHttpBinding"  
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
@@ -75,7 +73,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
   
  The fourth endpoint address specifies an absolute address and a different transport—TCP. The base address plays no role in the address. The actual endpoint address is net.tcp://localhost:9000/servicemodelsamples/service.  
   
-```  
+```xml  
 <!-- The absolute address specified, different transport: -->  
 <!-- use the specified address, and ignore the base address. -->  
 <!-- The endpoint address is -->  

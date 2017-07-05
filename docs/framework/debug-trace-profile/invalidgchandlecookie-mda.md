@@ -46,7 +46,7 @@ The `invalidGCHandleCookie` managed debugging assistant (MDA) is activated when 
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidGCHandleCookie />  

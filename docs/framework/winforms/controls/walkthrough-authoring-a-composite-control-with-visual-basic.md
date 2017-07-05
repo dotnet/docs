@@ -366,7 +366,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
     |`label1`|**Text**|`(blank space)`|  
     ||**Name**|`lblTest`|  
     |`dateTimePicker1`|**Name**|`dtpTest`|  
-    ||**Format**|<xref:System.Windows.Forms.DateTimePickerFormat>|  
+    ||**Format**|<xref:System.Windows.Forms.DateTimePickerFormat.Time>|  
   
 12. In the designer, double-click **dtpTest**.  
   

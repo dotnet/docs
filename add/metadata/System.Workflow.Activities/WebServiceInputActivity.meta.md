@@ -90,13 +90,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceInputActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.WebServiceInputActivity.System#Workflow#ComponentModel#IActivityEventListener{System#Workflow#ComponentModel#QueueEventArgs}#OnEvent(System.Object,System.Workflow.ComponentModel.QueueEventArgs)
 author: "Erikre"
 ms.author: "erikre"

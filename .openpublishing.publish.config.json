@@ -8,7 +8,8 @@
   "branch_target_mapping": {
     "live": [
       "Publish",
-      "Pdf"
+      "Pdf",
+      "Intellisense"
     ],
     "master": [
       "Publish",
@@ -69,15 +70,7 @@
           "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
       },
-      "pdf_build_exclude_tocs": [
-        "api/_splitted/System.Windows.Forms/toc.json",
-        "api/_splitted/System.Web.UI.WebControls/toc.json",
-        "api/_splitted/System.Windows.Controls/toc.json",
-        "api/_splitted/System.Windows/toc.json",
-        "api/_splitted/Microsoft.VisualBasic.Compatibility.VB6/toc.json",
-        "api/_splitted/System.Windows.Media.Animation/toc.json",
-        "api/_splitted/System/toc.json"
-      ]
+      "pdf_build_exclude_tocs": []
     }
   ],
   "notification_subscribers": [],

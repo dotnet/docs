@@ -23,9 +23,13 @@ This configuration element defines a standard endpoint with a fixed IMetadataExc
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <mexEndpoint>           <standardEndpoint                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
+  <standardEndpoints>
+    <mexEndpoint>
+      <standardEndpoint name="String" />
+    </mexEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

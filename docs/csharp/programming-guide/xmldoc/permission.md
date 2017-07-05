@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;permission&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <permission cref="member">description</permission>  
 ```  
   

@@ -26,7 +26,7 @@ Defines a binding for peer channel specific TCP messaging.
   
 ## Syntax  
   
-```  
+```xml  
 <netPeerBinding>  
     <binding name="string"  
          closeTimeout="TimeSpan"  
@@ -81,7 +81,7 @@ Defines a binding for peer channel specific TCP messaging.
 ## Example  
  The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](http://msdn.microsoft.com/en-us/31f4db66-edb2-40a6-b92a-14098e92acae).  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
 <bindings>  

@@ -1,0 +1,63 @@
+<Type Name="IServiceCall" FullName="System.EnterpriseServices.IServiceCall">
+  <TypeSignature Language="C#" Value="public interface IServiceCall" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceCall" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IServiceCall" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("BD3E2E12-42DD-40f4-A09A-95A50C58304B")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements the batch work that is submitted through the activity created by <see cref="T:System.EnterpriseServices.Activity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.EnterpriseServices.IServiceCall> to perform batch work that uses COM+ services without creating a component specifically for using those services. Script environments such as Internet Information Services (IIS) and ASP.NET can use this interface to utilize COM+ services without the need to create a COM+ component.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnCall">
+      <MemberSignature Language="C#" Value="public void OnCall ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCall() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IServiceCall.OnCall" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts the execution of the batch work implemented in this method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The batch work that is run in this method runs in the context and thread apartment of the activity created by the call to <xref:System.EnterpriseServices.Activity>. The batch work in this method is run by a call to either <xref:System.EnterpriseServices.Activity.SynchronousCall%2A?displayProperty=fullName> or <xref:System.EnterpriseServices.Activity.AsynchronousCall%2A?displayProperty=fullName>.  
+  
+> [!CAUTION]
+>  You must ensure that this method is thread safe in situations where the activity object created by <xref:System.EnterpriseServices.Activity> is not created with a synchronized context, because in such situations many calls to <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> can run at the same time.  
+  
+ To achieve the best performance from the system, the context configuration of the activity created by <xref:System.EnterpriseServices.Activity> should be matched to the batch work performed by the <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> method. For example, if the batch work in the <xref:System.EnterpriseServices.IServiceCall.OnCall%2A> method uses poolable objects, the activity created by <xref:System.EnterpriseServices.Activity> should be configured to use the multithreaded apartment (MTA).  
+  
+ For information about poolable objects, see the topic "Requirements for Poolable Objects" in the Platform SDK in MSDN.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

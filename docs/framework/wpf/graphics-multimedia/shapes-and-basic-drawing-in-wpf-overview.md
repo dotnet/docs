@@ -157,13 +157,13 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The Stretch property takes one of the following values:  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are not stretched.  
+-   <xref:System.Windows.Media.Stretch.None>: The                          <xref:System.Windows.Shapes.Shape> object's contents are not stretched.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to fill its layout space.  Aspect ratio is not preserved.  
+-   <xref:System.Windows.Media.Stretch.Fill>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to fill its layout space.  Aspect ratio is not preserved.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched as much as possible to fill its layout space while preserving its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.Uniform>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched as much as possible to fill its layout space while preserving its original aspect ratio.  
   
--   <xref:System.Windows.Media.Stretch>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to completely fill its layout space while preserving its original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: The                          <xref:System.Windows.Shapes.Shape> object's contents are stretched to completely fill its layout space while preserving its original aspect ratio.  
   
  Note that, when a                  <xref:System.Windows.Shapes.Shape> object's contents are stretched, the                  <xref:System.Windows.Shapes.Shape> object's outline is painted after the stretching.  
   
@@ -224,5 +224,5 @@ myPolygon.StrokeThickness = 2;
  [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)   
  [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)   
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)   
- [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

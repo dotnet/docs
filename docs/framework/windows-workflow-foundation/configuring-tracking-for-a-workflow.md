@@ -55,7 +55,7 @@ instance.Extensions.Add(trackingParticipant);
   
  For a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <`behavior`> element in a configuration file, as shown in the following example.  
   
-```  
+```xml  
 <behaviors>  
    <serviceBehaviors>  
         <behavior>  
@@ -191,7 +191,7 @@ invoker.Invoke();
   
 1.  Declare the provider ID in the application configuration file.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
         <diagnostics etwProviderId="2720e974-9fe9-477a-bb60-81fe3bf91eec"/>  
     </system.serviceModel>  
@@ -201,19 +201,19 @@ invoker.Invoke();
   
 3.  Change the GUID in the manifest file to the new GUID.  
   
-    ```  
+    ```xml  
     <provider name="Microsoft-Windows-Application Server-Applications" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}"  
     ```  
   
 4.  Change the provider name if you do not want to uninstall the default provider.  
   
-    ```  
+    ```xml  
     <provider name="Microsoft-Windows-Application Server-Applications" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}"  
     ```  
   
 5.  If you changed the provider name in the previous step, change the channel names in the manifest file to the new provider name.  
   
-    ```  
+    ```xml  
     <channel name="Microsoft-Windows-Application Server-Applications_Provider1/Admin" chid="ADMIN_CHANNEL" symbol="ADMIN_CHANNEL" type="Admin" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.ADMIN_CHANNEL.message)" />  
     <channel name="Microsoft-Windows-Application Server-Applications_Provider1/Operational" chid="OPERATIONAL_CHANNEL" symbol="OPERATIONAL_CHANNEL" type="Operational" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.OPERATIONAL_CHANNEL.message)" />  
     <channel name="Microsoft-Windows-Application Server-Applications_Provider1/Analytic" chid="ANALYTIC_CHANNEL" symbol="ANALYTIC_CHANNEL" type="Analytic" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.ANALYTIC_CHANNEL.message)" />  
@@ -247,7 +247,7 @@ invoker.Invoke();
   
     6.  Change the resource and message dl namel in the manifest file from `Microsoft.Windows.ApplicationServer.Applications.Provider1.man` to the new dll name.  
   
-        ```  
+        ```xml  
         <provider name="Microsoft-Windows-Application Server-Applications_Provider1" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}" symbol="Microsoft_Windows_ApplicationServer_ApplicationEvents" resourceFileName="<dll directory>\Microsoft.Windows.ApplicationServer.Applications_Provider1.dll" messageFileName="<dll directory>\Microsoft.Windows.ApplicationServer.Applications_Provider1.dll">  
         ```  
   

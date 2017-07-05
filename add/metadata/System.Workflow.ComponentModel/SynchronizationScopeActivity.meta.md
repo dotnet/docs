@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.SynchronizationScopeActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.SynchronizationScopeActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

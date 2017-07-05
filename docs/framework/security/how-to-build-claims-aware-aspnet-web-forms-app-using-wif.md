@@ -99,7 +99,7 @@ manager: "mbaldwin"
   
 4.  Add a **\<system.webServer>** element that defines the modules for federated authentication. Note that the *PublicKeyToken* attribute must be the same as the *PublicKeyToken* attribute for the **\<configSections>** entries added earlier:  
   
-    ```  
+    ```xml  
     <system.webServer>  
       <modules>  
         <add name="WSFederationAuthenticationModule" type="System.IdentityModel.Services.WSFederationAuthenticationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" preCondition="managedHandler" />  
@@ -134,7 +134,7 @@ manager: "mbaldwin"
   
 6.  Add reference to the <xref:System.IdentityModel> assembly.  
   
-7.  Compile the solution to make sure there are errors.  
+7.  Compile the solution to make sure there are no errors.  
   
 ## Step 3 – Test Your Solution  
  In this step you will test your ASP.NET Web Forms application configured for claims-based authentication. To perform a basic test, you will add code that displays claims in the token issued by the Security Token Service (STS).  

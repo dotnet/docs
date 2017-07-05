@@ -33,9 +33,3 @@ uid: System.Net.HttpListenerException.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.HttpListenerException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

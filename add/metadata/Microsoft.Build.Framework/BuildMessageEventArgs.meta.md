@@ -17,12 +17,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.BuildMessageEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.BuildMessageEventArgs.Subcategory
 ms.author: "susanno"
 manager: "douge"

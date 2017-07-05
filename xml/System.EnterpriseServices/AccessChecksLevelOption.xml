@@ -1,0 +1,61 @@
+<Type Name="AccessChecksLevelOption" FullName="System.EnterpriseServices.AccessChecksLevelOption">
+  <TypeSignature Language="C#" Value="public enum AccessChecksLevelOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AccessChecksLevelOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.AccessChecksLevelOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the level of access checking for an application, either at the process level only or at all levels, including component, interface, and method levels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration in conjunction with the <xref:System.EnterpriseServices.ApplicationAccessControlAttribute> attribute.  
+  
+ [!code-cpp[EnterpriseServices_Security#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#2)]
+ [!code-csharp[EnterpriseServices_Security#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#2)]
+ [!code-vb[EnterpriseServices_Security#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="Application" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.AccessChecksLevelOption Application = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AccessChecksLevelOption.Application" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.AccessChecksLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables access checks only at the process level. No access checks are made at the component, interface, or method level.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationComponent">
+      <MemberSignature Language="C#" Value="ApplicationComponent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.AccessChecksLevelOption ApplicationComponent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AccessChecksLevelOption.ApplicationComponent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.AccessChecksLevelOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables access checks at every level on calls into the application.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

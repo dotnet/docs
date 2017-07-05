@@ -21,7 +21,7 @@ manager: "wpickett"
 # How to: Set the Tile Size for a TileBrush
 This example shows how to set the tile size for a              <xref:System.Windows.Media.TileBrush>. By default, a              <xref:System.Windows.Media.TileBrush> produces a single tile that completely fills the area that you are painting. You can override this behavior by setting the              <xref:System.Windows.Media.TileBrush.Viewport%2A> and              <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> properties.  
   
- The              <xref:System.Windows.Media.TileBrush.Viewport%2A> property specifies the tile size for a              <xref:System.Windows.Media.TileBrush>. By default, the value of the              <xref:System.Windows.Media.TileBrush.Viewport%2A> property is relative to the size of the area being painted. To make the              <xref:System.Windows.Media.TileBrush.Viewport%2A> property specify an absolute tile size, set the              <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to              <xref:System.Windows.Media.BrushMappingMode>.  
+ The              <xref:System.Windows.Media.TileBrush.Viewport%2A> property specifies the tile size for a              <xref:System.Windows.Media.TileBrush>. By default, the value of the              <xref:System.Windows.Media.TileBrush.Viewport%2A> property is relative to the size of the area being painted. To make the              <xref:System.Windows.Media.TileBrush.Viewport%2A> property specify an absolute tile size, set the              <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to              <xref:System.Windows.Media.BrushMappingMode.Absolute>.  
   
 ## Example  
  The following example uses an <xref:System.Windows.Media.ImageBrush>, a type of <xref:System.Windows.Media.TileBrush>, to paint a rectangle with tiles. The example sets each tile to  50 percent by 50 percent of the output area (the rectangle). As a result, the rectangle is painted with four projections of the image.  
@@ -32,7 +32,7 @@ This example shows how to set the tile size for a              <xref:System.Wind
   
  [!code-csharp[UsingImageBrush_snip#RelativeTileSizeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/TileSizeExample.cs#relativetilesizeexample)]  
   
- The next example creates an <xref:System.Windows.Media.ImageBrush>, sets its <xref:System.Windows.Media.TileBrush.Viewport%2A> to `0,0,25,25` and its <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> to <xref:System.Windows.Media.BrushMappingMode>, and uses it to paint another rectangle. As a result, the brush produces tiles that have a width of 25  pixels and a height of 25 pixels .  
+ The next example creates an <xref:System.Windows.Media.ImageBrush>, sets its <xref:System.Windows.Media.TileBrush.Viewport%2A> to `0,0,25,25` and its <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> to <xref:System.Windows.Media.BrushMappingMode.Absolute>, and uses it to paint another rectangle. As a result, the brush produces tiles that have a width of 25  pixels and a height of 25 pixels .  
   
  The following illustration shows the output that the example produces.  
   

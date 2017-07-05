@@ -32,13 +32,13 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
   
     |Value|Description|  
     |-----------|-----------------|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars> (default)|Displays horizontal or vertical scroll bars, or both, only when text exceeds the width or length of the control.|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars>|Never displays any type of scroll bar.|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars>|Displays a horizontal scroll bar only when the text exceeds the width of the control. (For this to occur, the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property must be set to `false`.)|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars>|Displays a vertical scroll bar only when the text exceeds the height of the control.|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars>|Displays a horizontal scroll bar when the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `false`. The scroll bar appears dimmed when text does not exceed the width of the control.|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars>|Always displays a vertical scroll bar. The scroll bar appears dimmed when text does not exceed the length of the control.|  
-    |<xref:System.Windows.Forms.RichTextBoxScrollBars>|Always displays a vertical scrollbar. Displays a horizontal scroll bar when the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `false`. The scroll bars appear grayed when text does not exceed the width or length of the control.|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.Both> (default)|Displays horizontal or vertical scroll bars, or both, only when text exceeds the width or length of the control.|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.None>|Never displays any type of scroll bar.|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.Horizontal>|Displays a horizontal scroll bar only when the text exceeds the width of the control. (For this to occur, the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property must be set to `false`.)|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.Vertical>|Displays a vertical scroll bar only when the text exceeds the height of the control.|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.ForcedHorizontal>|Displays a horizontal scroll bar when the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `false`. The scroll bar appears dimmed when text does not exceed the width of the control.|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical>|Always displays a vertical scroll bar. The scroll bar appears dimmed when text does not exceed the length of the control.|  
+    |<xref:System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth>|Always displays a vertical scrollbar. Displays a horizontal scroll bar when the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `false`. The scroll bars appear grayed when text does not exceed the width or length of the control.|  
   
 3.  Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
   

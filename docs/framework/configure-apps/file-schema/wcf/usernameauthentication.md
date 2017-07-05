@@ -27,7 +27,7 @@ Specifies a service's credentials based on user name and password.
   
 ## Syntax  
   
-```  
+```xml  
 <userNameAuthentication  
    cacheLogonTokenLifetime="TimeSpan"  
    cacheLogonTokens="Boolean"   

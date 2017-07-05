@@ -34,7 +34,7 @@ In Windows Forms, user input is sent to applications in the form of Windows mess
 |<xref:System.Windows.Forms.Control.PreProcessMessage%2A>|This method intercepts Windows messages at the form and control level before they have been processed.|  
 |<xref:System.Windows.Forms.Control.WndProc%2A>|This method processes Windows messages at the form and control level.|  
 |<xref:System.Windows.Forms.Control.DefWndProc%2A>|This method performs the default processing of Windows messages at the form and control level. This provides the minimal functionality of a window.|  
-|<xref:System.Windows.Forms.Control.OnNotifyMessage%2A>|This method intercepts messages at the form and control level, after they have been processed. The <xref:System.Windows.Forms.ControlStyles> style bit must be set for this method to be called.|  
+|<xref:System.Windows.Forms.Control.OnNotifyMessage%2A>|This method intercepts messages at the form and control level, after they have been processed. The <xref:System.Windows.Forms.ControlStyles.EnableNotifyMessage> style bit must be set for this method to be called.|  
   
  Keyboard and mouse messages are also processed by an additional set of overridable methods that are specific to those types of messages. For more information, see [How Keyboard Input Works](../../../docs/framework/winforms/how-keyboard-input-works.md) and [How Mouse Input Works in Windows Forms](../../../docs/framework/winforms/how-mouse-input-works-in-windows-forms.md).  
   

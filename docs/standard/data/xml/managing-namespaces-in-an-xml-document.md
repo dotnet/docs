@@ -32,7 +32,7 @@ XML namespaces associate element and attribute names in an XML document with cus
   
  This example defines two `BOOK` elements. The first element element is qualified by the prefix, `mybook`, and the second element is qualified by the prefix, `bb`. Each prefix is associated with a different namespace URI:  
   
-```  
+```xml  
 <mybook:BOOK xmlns:mybook="http://www.contoso.com/books.dtd">  
 <bb:BOOK xmlns:bb="urn:blueyonderairlines">  
 ```  
@@ -43,7 +43,7 @@ XML namespaces associate element and attribute names in an XML document with cus
 ## Declaration scope  
  A namespace is effective from its point of declaration until the end of the element it was declared in. In this example, the namespace defined in the `BOOK` element doesn't apply to elements outside the `BOOK` element, such as the `Publisher` element:  
   
-```  
+```xml  
 <Author>Joe Smith</Author>  
 <BOOK xmlns:book="http://www.contoso.com">  
     <title>My Wonderful Day</title>  
@@ -60,7 +60,7 @@ XML namespaces associate element and attribute names in an XML document with cus
   
  To use the default namespace, omit the prefix and the colon from the declaration on the element:  
   
-```  
+```xml  
 <BOOK xmlns="http://www.contoso.com/books.dtd">  
 ```  
   

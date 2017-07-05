@@ -26,7 +26,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -76,7 +76,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
 ## Example  
  The following XML shows how to configure the acceptable audience URIs for an application. This example configures a single URI. Tokens scoped for this URI will be accepted, all others will be rejected.  
   
-```  
+```xml  
 <audienceUris>  
   <add value="http://localhost:19851/"/>  
 </audienceUris>  

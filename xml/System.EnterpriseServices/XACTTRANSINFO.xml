@@ -1,0 +1,150 @@
+<Type Name="XACTTRANSINFO" FullName="System.EnterpriseServices.XACTTRANSINFO">
+  <TypeSignature Language="C#" Value="public struct XACTTRANSINFO" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit XACTTRANSINFO extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.XACTTRANSINFO" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a structure used in the <see cref="T:System.EnterpriseServices.ITransaction" /> interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="grfRMSupported">
+      <MemberSignature Language="C#" Value="public int grfRMSupported;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 grfRMSupported" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfRMSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies zero. This field is reserved.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="grfRMSupportedRetaining">
+      <MemberSignature Language="C#" Value="public int grfRMSupportedRetaining;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 grfRMSupportedRetaining" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfRMSupportedRetaining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies zero. This field is reserved.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="grfTCSupported">
+      <MemberSignature Language="C#" Value="public int grfTCSupported;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 grfTCSupported" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfTCSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a bitmask that indicates which <see langword="grfTC" /> flags this transaction implementation supports.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `grfTC` flag specifies if the commit is synchronous (default) or asynchronous.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="grfTCSupportedRetaining">
+      <MemberSignature Language="C#" Value="public int grfTCSupportedRetaining;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 grfTCSupportedRetaining" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfTCSupportedRetaining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies zero. This field is reserved.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isoFlags">
+      <MemberSignature Language="C#" Value="public int isoFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 isoFlags" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.isoFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies zero. This field is reserved.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isoLevel">
+      <MemberSignature Language="C#" Value="public int isoLevel;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 isoLevel" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.isoLevel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the isolation level associated with this transaction object. ISOLATIONLEVEL_UNSPECIFIED indicates that no isolation level was specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="uow">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.BOID uow;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.EnterpriseServices.BOID uow" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.uow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.BOID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the unit of work associated with this transaction.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

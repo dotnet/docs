@@ -28,7 +28,7 @@ This sample demonstrates a service that hosts multiple endpoints at a single `Li
 ## Service  
  The service in this sample has two contracts, `ICalculator` and `IEcho`. In addition to the customary `IMetadataExchange` endpoint, there are three application endpoints, as shown in the following code.  
   
-```  
+```xml  
 <endpoint address="urn:Stuff"  
         binding="wsHttpBinding"  
         contract="Microsoft.ServiceModel.Samples.ICalculator"   

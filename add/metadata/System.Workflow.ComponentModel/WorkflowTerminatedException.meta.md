@@ -25,10 +25,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.ComponentModel.WorkflowTerminatedException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

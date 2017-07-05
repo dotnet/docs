@@ -49,7 +49,7 @@ manager: "erikre"
   
 6.  Add an appropriate transport element. The following example adds an [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md):  
   
-    ```  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="SignatureConfirmationBinding">  

@@ -91,7 +91,7 @@ manager: "erikre"
   
 -   Web-hosted  
   
-     The Web service is hosted within a Web server worker process. This mode does not require COM+ to be active when the initial request is received. If the application is not active when this request is received, it is automatically activated prior to processing the request. This mode also provides both Web service and DCOM access to the server application, but causes a process hop for Web service requests. This typically requires the client to enable impersonation. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], this can be done with the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class, which is accessed as a property of the generic <xref:System.ServiceModel.ChannelFactory%601> class, as well as the <xref:System.Security.Principal.TokenImpersonationLevel> enumeration value.  
+     The Web service is hosted within a Web server worker process. This mode does not require COM+ to be active when the initial request is received. If the application is not active when this request is received, it is automatically activated prior to processing the request. This mode also provides both Web service and DCOM access to the server application, but causes a process hop for Web service requests. This typically requires the client to enable impersonation. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], this can be done with the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class, which is accessed as a property of the generic <xref:System.ServiceModel.ChannelFactory%601> class, as well as the <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation> enumeration value.  
   
 -   Web-hosted in-process  
   
@@ -102,7 +102,7 @@ manager: "erikre"
   
  The use of a non-secured binding can leave communication open to tampering or information disclosure. To prevent this, it is recommended that you use a secured binding.  
   
- For the COM+-hosted and Web-hosted modes, client applications must permit the server process to impersonate the client user. This can be done in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients by setting the impersonation level to <xref:System.Security.Principal.TokenImpersonationLevel>.  
+ For the COM+-hosted and Web-hosted modes, client applications must permit the server process to impersonate the client user. This can be done in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients by setting the impersonation level to <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation>.  
   
  With Internet Information Services (IIS) or Windows Process Activation Service (WAS) using the HTTP transport, the Httpcfg.exe tool can be used to reserve a transport endpoint address. In other configurations, it is important to protect against rogue services that act as the intended service. To prevent a rogue service from starting at the desired endpoint, the legitimate service can be configured to run as an NT service. This enables the legitimate service to claim the endpoint address prior to any rogue services.  
   

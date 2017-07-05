@@ -56,7 +56,7 @@ A class that takes *type parameters* is called a *generic class*. If you are usi
   
  In addition to classes, you can also define and use generic structures, interfaces, procedures, and delegates.  
   
- The following procedure takes a generic class defined in the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] and creates an instance from it.  
+ The following procedure takes a generic class defined in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] and creates an instance from it.  
   
 ### To use a class that takes a type parameter  
   

@@ -65,12 +65,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.PeerContact.Invite
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.Collaboration.PeerContact.EmailAddress
 ms.author: "bobdel"
 manager: "markl"
@@ -280,12 +274,6 @@ manager: "markl"
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerContact.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerEndPoint,System.Object)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerContact.GetApplications
 ms.author: "bobdel"
 manager: "markl"
 ---

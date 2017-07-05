@@ -26,7 +26,7 @@ Represents a custom binding element that supports channel security using an SSL 
   
 ## Syntax  
   
-```  
+```xml  
 <sslStreamSecurity requireClientCertificate="Boolean"      sslProtocols="Ssl3|Tls|Tls11|Tls12" />  
 ```  
   

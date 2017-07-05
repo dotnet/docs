@@ -49,7 +49,7 @@ The .NET Framework changes over time. Each new version adds new types and type m
   
 2.  Add the following to the configuration file.  
   
-    ```  
+    ```xml  
     <configuration>  
        <startup>   
           <supportedRuntime version="v4.0" />  

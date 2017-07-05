@@ -28,7 +28,7 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Static prefix:typeName.staticMemberName}" .../>  
 ```  
   

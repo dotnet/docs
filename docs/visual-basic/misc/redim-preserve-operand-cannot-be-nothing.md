@@ -38,8 +38,8 @@ A `ReDim` statement attempts to use the `Preserve` keyword to change a dimension
 -   Change the `Preserve` operand to a valid value.  
   
 ## See Also  
- [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
- [NOTINBUILD Multidimensional Arrays in Visual Basic](http://msdn.microsoft.com/en-us/d92cad25-07e2-4d79-8ea4-ab269700f5de)   
+ [Arrays in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)   
+ [Array dimensions in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)   
  [ReDim Statement](../../visual-basic/language-reference/statements/redim-statement.md)   
  [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)   
  [Preserve - delete](http://msdn.microsoft.com/en-us/91badeab-b4e0-48b6-92c9-9f0c8f995d81)

@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual Basic Runtime Library Members
-The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, and enumerations that constitute the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] runtime library. These library members provide procedures, properties, and constant values you can use in your code. Each module and class represents a particular category of functionality.  
+The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, and enumerations that constitute the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] runtime library. These library members provide procedures, properties, and constant values you can use in your code. Each module and class represents a particular category of functionality.  
   
 ## Microsoft.VisualBasic.Collection Class  
   
@@ -213,7 +213,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 |<xref:Microsoft.VisualBasic.VBMath.Randomize%2A>|<xref:Microsoft.VisualBasic.VBMath.Rnd%2A>|||  
   
 ## Microsoft.VisualBasic Constants and Enumerations  
- The `Microsoft.VisualBasic` namespace provides constants and enumerations as part of the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] run-time library. You can use these constant values in your code. Each enumeration represents a particular category of functionality. For more information, see [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md).  
+ The `Microsoft.VisualBasic` namespace provides constants and enumerations as part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] run-time library. You can use these constant values in your code. Each enumeration represents a particular category of functionality. For more information, see [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md).  
   
 ## See Also  
  [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md)   

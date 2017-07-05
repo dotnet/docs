@@ -51,7 +51,7 @@ Enhancements were made that provide support for Network Address Translation (NAT
   
  For TCP applications, the <xref:System.Net.Sockets.TcpListener?displayProperty=fullName> class has an <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A> method to enable NAT traversal. For UDP applications, the <xref:System.Net.Sockets.UdpClient?displayProperty=fullName> class has an <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A> method to enable NAT traversal.  
   
- For applications that use the <xref:System.Net.Sockets.Socket?displayProperty=fullName> and related classes, the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> and <xref:System.Net.Sockets.Socket.SetSocketOption%2A> methods can be used with the <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName> socket option to query, enable, or disable NAT traversal.  
+ For applications that use the <xref:System.Net.Sockets.Socket?displayProperty=fullName> and related classes, the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> and <xref:System.Net.Sockets.Socket.SetSocketOption%2A> methods can be used with the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=fullName> socket option to query, enable, or disable NAT traversal.  
   
 ## See Also  
  <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=fullName>   

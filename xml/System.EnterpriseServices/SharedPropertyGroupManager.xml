@@ -1,0 +1,155 @@
+<Type Name="SharedPropertyGroupManager" FullName="System.EnterpriseServices.SharedPropertyGroupManager">
+  <TypeSignature Language="C#" Value="public sealed class SharedPropertyGroupManager : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SharedPropertyGroupManager extends System.Object implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SharedPropertyGroupManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Controls access to shared property groups. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following sample shows how to use `SharedPropertyGroupManager` to create and mange shared properties.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#0)]
+ [!code-csharp[EnterpriseServices_SharedProperties#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#0)]
+ [!code-vb[EnterpriseServices_SharedProperties#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SharedPropertyGroupManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.SharedPropertyGroupManager" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the `SharedPropertyGroupManager` constructor to create an instance of the `SharedPropertyGroupManager` class.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#1)]
+ [!code-csharp[EnterpriseServices_SharedProperties#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#1)]
+ [!code-vb[EnterpriseServices_SharedProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePropertyGroup">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup (string name, ref System.EnterpriseServices.PropertyLockMode dwIsoMode, ref System.EnterpriseServices.PropertyReleaseMode dwRelMode, out bool fExist);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup(string name, valuetype System.EnterpriseServices.PropertyLockMode dwIsoMode, valuetype System.EnterpriseServices.PropertyReleaseMode dwRelMode, bool fExist) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.CreatePropertyGroup(System.String,System.EnterpriseServices.PropertyLockMode@,System.EnterpriseServices.PropertyReleaseMode@,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedPropertyGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dwIsoMode" Type="System.EnterpriseServices.PropertyLockMode&amp;" RefType="ref" />
+        <Parameter Name="dwRelMode" Type="System.EnterpriseServices.PropertyReleaseMode&amp;" RefType="ref" />
+        <Parameter Name="fExist" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of requested property.</param>
+        <param name="dwIsoMode">One of the <see cref="T:System.EnterpriseServices.PropertyLockMode" /> values. See the Remarks section for more information.</param>
+        <param name="dwRelMode">One of the <see cref="T:System.EnterpriseServices.PropertyReleaseMode" /> values. See the Remarks section for more information.</param>
+        <param name="fExist">When this method returns, contains <see langword="true" /> if the property already existed; <see langword="false" /> if the call created the property.</param>
+        <summary>Finds or creates a property group with the given information.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedPropertyGroup" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using `dwIsoMode`, during get and set operations, you can either choose to make locking properties atomic by specifying <xref:System.EnterpriseServices.PropertyLockMode.SetGet>, or to lock properties over the duration of the method call by specifying <xref:System.EnterpriseServices.PropertyLockMode.Method>.  
+  
+> [!CAUTION]
+>  Do not use <xref:System.EnterpriseServices.PropertyLockMode.Method> when creating a property group in a constructor, doing so can result in a deadlock.  
+  
+ If the release mode specified for `dwRelMode` is <xref:System.EnterpriseServices.PropertyReleaseMode.Process>, the property specified by `name` is held alive for the lifetime of the process.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the `CreatePropertyGroup` method to create a shared property group manager.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#2)]
+ [!code-csharp[EnterpriseServices_SharedProperties#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#2)]
+ [!code-vb[EnterpriseServices_SharedProperties#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the enumeration interface for the collection.</summary>
+        <returns>The enumerator interface for the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedPropertyGroup Group (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedPropertyGroup Group(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.Group(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedPropertyGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of requested property.</param>
+        <summary>Finds the property group with the given name.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedPropertyGroup" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -139,13 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.MouseCaptureChanged
 author: "stevehoag"
 ms.author: "shoag"

@@ -123,12 +123,12 @@ Expressions can be joined with conditional operators:
 
 | Operator | Function |
 | :------: | :------: |
-| `|`      | OR       |
+| <code>&#124;</code>      | OR       |
 | `&`      | AND      |
 
 You can enclose expressions in paranthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
-For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 ## See also
 

@@ -23,8 +23,8 @@ This topic discusses how to simulate the behavior of a transactional COM+ servic
   
 |COM+ attribute|[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] attributes|  
 |---------------------|------------------------------------------------------------------------|  
-|RequiresNew|<xref:System.ServiceModel.TransactionFlowAttribute> is set to <xref:System.ServiceModel.TransactionFlowOption>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `true`.<br /><br /> The `TransactionFlow` attribute in the binding element is `false`.|  
-|Required|<xref:System.ServiceModel.TransactionFlowAttribute> is set to <xref:System.ServiceModel.TransactionFlowOption>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `true`.<br /><br /> The `TransactionFlow` attribute in the binding element is `true`.|  
+|RequiresNew|<xref:System.ServiceModel.TransactionFlowAttribute> is set to <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `true`.<br /><br /> The `TransactionFlow` attribute in the binding element is `false`.|  
+|Required|<xref:System.ServiceModel.TransactionFlowAttribute> is set to <xref:System.ServiceModel.TransactionFlowOption.Allowed>.<br /><br /> <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `true`.<br /><br /> The `TransactionFlow` attribute in the binding element is `true`.|  
 |Supported|There is no direct equivalent. In general, you should adopt the behavior specified for `Required` instead.|  
 |NotSupported|<xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> is `false`.<br /><br /> The `TransactionFlow` attribute in the binding element is `false`.|  
 |Disabled|There is no direct equivalent. In general, you should adopt the behavior specified for `NotSupported` instead.|

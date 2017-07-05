@@ -29,12 +29,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.SocketException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Sockets.SocketException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"

@@ -38,7 +38,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 3.  **Add basic default buttons:** All the files you need for this walkthrough are provided by the template. Open the Window1.xaml file by double clicking it in Solution Explorer. By default, there is a <xref:System.Windows.Controls.Grid> element in Window1.xaml. Remove the <xref:System.Windows.Controls.Grid> element and add a few buttons to the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] page by typing or copy and pasting the following highlighted code to Window1.xaml:  
   
-    ```  
+    ```xaml  
     <Window x:Class="AnimatedButton.Window1"  
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -61,13 +61,15 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 1.  **Define an Application.Resources block:** Open app.xaml and add the following highlighted markup if it is not already there:  
   
-    ```  
+    ```xaml  
     <Application x:Class="AnimatedButton.App"  
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
       StartupUri="Window1.xaml"  
       >  
-      <Application.Resources>     <!-- Resources for the entire application can be           defined here. -->   </Application.Resources>  
+      <Application.Resources>
+        <!-- Resources for the entire application can be defined here. -->
+      </Application.Resources>  
     </Application>  
     ```  
   
@@ -75,11 +77,12 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 2.  **Create a style and define basic property values with it:** Add the following markup to the `Application.Resources` block. This markup creates a <xref:System.Windows.Style> that applies to all buttons in the application, setting the <xref:System.Windows.FrameworkElement.Width%2A> of the buttons to 90 and the <xref:System.Windows.FrameworkElement.Margin%2A> to 10:  
   
-    ```  
+    ```xaml  
     <Application.Resources>  
-  
-      <Style TargetType="Button">     <Setter Property="Width" Value="90" />     <Setter Property="Margin" Value="10" />   </Style>  
-  
+      <Style TargetType="Button">
+        <Setter Property="Width" Value="90" />
+        <Setter Property="Margin" Value="10" />
+      </Style>  
     </Application.Resources>  
     ```  
   
@@ -91,17 +94,18 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 3.  **Set a style property value to a resource:** Resources enable a simple way to reuse commonly defined objects and values. It is especially useful to define complex values using resources to make your code more modular. Add the following highlighted markup to app.xaml.  
   
-    ```  
+    ```xaml  
     <Application.Resources>  
-  
-      <LinearGradientBrush x:Key="GrayBlueGradientBrush"      StartPoint="0,0" EndPoint="1,1">     <GradientStop Color="DarkGray" Offset="0" />     <GradientStop Color="#CCCCFF" Offset="0.5" />     <GradientStop Color="DarkGray" Offset="1" />   </LinearGradientBrush>  
-  
+      <LinearGradientBrush x:Key="GrayBlueGradientBrush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="DarkGray" Offset="0" />
+        <GradientStop Color="#CCCCFF" Offset="0.5" />
+        <GradientStop Color="DarkGray" Offset="1" />
+      </LinearGradientBrush>  
       <Style TargetType="{x:Type Button}">  
-        <Setter Property="Background"        Value="{StaticResource GrayBlueGradientBrush}" />  
+        <Setter Property="Background" Value="{StaticResource GrayBlueGradientBrush}" />  
         <Setter Property="Width" Value="80" />  
         <Setter Property="Margin" Value="10" />  
       </Style>  
-  
     </Application.Resources>  
     ```  
   
@@ -120,31 +124,43 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 1.  **Set up the template:** Because controls like <xref:System.Windows.Controls.Button> have a <xref:System.Windows.Controls.Control.Template%2A> property, you can define the template property value just like the other property values we have set in a <xref:System.Windows.Style> using a <xref:System.Windows.Setter>. Add the following highlighted markup to your button style.  
   
-    ```  
+    ```xaml
     <Application.Resources>  
-  
       <LinearGradientBrush x:Key="GrayBlueGradientBrush"   
         StartPoint="0,0" EndPoint="1,1">  
         <GradientStop Color="DarkGray" Offset="0" />  
         <GradientStop Color="#CCCCFF" Offset="0.5" />  
         <GradientStop Color="DarkGray" Offset="1" />  
       </LinearGradientBrush>  
-  
       <Style TargetType="{x:Type Button}">  
-      <Setter Property="Background" Value="{StaticResource GrayBlueGradientBrush}" />  
+        <Setter Property="Background" Value="{StaticResource GrayBlueGradientBrush}" />  
         <Setter Property="Width" Value="80" />  
         <Setter Property="Margin" Value="10" />  
-        <Setter Property="Template">       <Setter.Value>         <!-- The button template is defined here. -->       </Setter.Value>     </Setter>  
+        <Setter Property="Template">
+          <Setter.Value>
+            <!-- The button template is defined here. -->
+          </Setter.Value>
+        </Setter>  
       </Style>  
-  
     </Application.Resources>  
     ```  
   
 2.  **Alter button presentation:** At this point, you need to define the template. Add the following highlighted markup. This markup specifies two <xref:System.Windows.Shapes.Rectangle> elements with rounded edges, followed by a <xref:System.Windows.Controls.DockPanel>. The <xref:System.Windows.Controls.DockPanel> is used to host the <xref:System.Windows.Controls.ContentPresenter> of the button. A <xref:System.Windows.Controls.ContentPresenter> displays the content of the button. In this walkthrough, the content is text ("Button 1", "Button 2", "Button 3"). All of the template components (the rectangles and the <xref:System.Windows.Controls.DockPanel>) are laid out inside of a <xref:System.Windows.Controls.Grid>.  
   
-    ```  
+    ```xaml  
     <Setter.Value>  
-      <ControlTemplate TargetType="Button">     <Grid Width="{TemplateBinding Width}"       Height="{TemplateBinding Height}" ClipToBounds="True">       <!-- Outer Rectangle with rounded corners. -->       <Rectangle x:Name="outerRectangle"          HorizontalAlignment="Stretch"          VerticalAlignment="Stretch"          Stroke="{TemplateBinding Background}"          RadiusX="20" RadiusY="20" StrokeThickness="5"          Fill="Transparent" />       <!-- Inner Rectangle with rounded corners. -->       <Rectangle x:Name="innerRectangle"          HorizontalAlignment="Stretch"          VerticalAlignment="Stretch" Stroke="Transparent"          StrokeThickness="20"          Fill="{TemplateBinding Background}"          RadiusX="20" RadiusY="20"   />       <!-- Present Content (text) of the button. -->       <DockPanel Name="myContentPresenterDockPanel">         <ContentPresenter x:Name="myContentPresenter" Margin="20"            Content="{TemplateBinding  Content}"            TextBlock.Foreground="Black" />       </DockPanel>     </Grid>   </ControlTemplate>  
+      <ControlTemplate TargetType="Button">
+        <Grid Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" ClipToBounds="True">
+          <!-- Outer Rectangle with rounded corners. -->
+          <Rectangle x:Name="outerRectangle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="{TemplateBinding Background}" RadiusX="20" RadiusY="20" StrokeThickness="5" Fill="Transparent" />
+          <!-- Inner Rectangle with rounded corners. -->
+          <Rectangle x:Name="innerRectangle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="Transparent" StrokeThickness="20" Fill="{TemplateBinding Background}" RadiusX="20" RadiusY="20" />
+          <!-- Present Content (text) of the button. -->
+          <DockPanel Name="myContentPresenterDockPanel">
+            <ContentPresenter x:Name="myContentPresenter" Margin="20" Content="{TemplateBinding  Content}" TextBlock.Foreground="Black" />
+          </DockPanel>
+        </Grid>
+      </ControlTemplate>  
     </Setter.Value>  
     ```  
   
@@ -154,7 +170,7 @@ The objective of this walkthrough is to learn how to create an animated button f
   
 3.  **Add a glasseffect to the template:** Next you will add the glass. First you create some resources that create a glass gradient effect. Add these gradient resources anywhere within the `Application.Resources` block:  
   
-    ```  
+    ```xaml  
     <Application.Resources>  
       <GradientStopCollection x:Key="MyGlassGradientStopsResource">     <GradientStop Color="WhiteSmoke" Offset="0.2" />     <GradientStop Color="Transparent" Offset="0.4" />     <GradientStop Color="WhiteSmoke" Offset="0.5" />     <GradientStop Color="Transparent" Offset="0.75" />     <GradientStop Color="WhiteSmoke" Offset="0.9" />     <GradientStop Color="Transparent" Offset="1" />   </GradientStopCollection>   <LinearGradientBrush x:Key="MyGlassBrushResource"     StartPoint="0,0" EndPoint="1,1" Opacity="0.75"     GradientStops="{StaticResource MyGlassGradientStopsResource}" />  
     <!-- Styles and other resources below here. -->  

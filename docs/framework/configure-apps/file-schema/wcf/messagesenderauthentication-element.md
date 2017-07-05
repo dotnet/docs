@@ -30,7 +30,7 @@ Specifies authentication options for peer-to-peer message senders.
   
 ## Syntax  
   
-```  
+```xml  
 <messageSenderAuthentication  
 customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
@@ -90,7 +90,7 @@ trustedStoreLocation="CurrentUser/LocalMachine"
 ## Example  
  The following code sets the message sender validation mode to `PeerOrChainTrust`.  
   
-```  
+```xml  
 <behaviors>  
  <endpointBehaviors>  
   <behavior name="MyEndpointBehavior">  

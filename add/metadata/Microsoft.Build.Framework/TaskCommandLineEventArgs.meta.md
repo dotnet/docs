@@ -29,12 +29,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.TaskCommandLineEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.TaskCommandLineEventArgs.#ctor(System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime)
 ms.author: "susanno"
 manager: "douge"

@@ -11,12 +11,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Dispose
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.HashEnumerator`2.Reset
 ms.author: "mblome"
 manager: "ghogen"

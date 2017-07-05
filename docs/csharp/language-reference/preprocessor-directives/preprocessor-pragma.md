@@ -39,7 +39,7 @@ translation.priority.ht:
   
 ## Syntax  
   
-```  
+```csharp
 #pragma pragma-name pragma-arguments  
 ```  
   

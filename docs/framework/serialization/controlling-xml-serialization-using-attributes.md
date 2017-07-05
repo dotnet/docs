@@ -98,7 +98,7 @@ public class Employee{
   
  A serialized instance might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <Employee>  
@@ -126,7 +126,7 @@ public class Group{
   
  The resulting XML might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <TeamMembers>  
     <Employee>  
@@ -153,7 +153,7 @@ public class Group{
   
  The resulting XML might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <MemberName>Haley</MemberName>  
@@ -195,7 +195,7 @@ public class Manager:Employee{
   
  A serialized instance might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <Employee>  
@@ -228,7 +228,7 @@ public class Group{
   
  A serialized instance might resemble the following.  
   
-```  
+```xml  
 <Group>  
 <Employees>  
     <Name>Haley</Name>  
@@ -244,13 +244,13 @@ public class Group{
   
  Another way to differentiate the two XML streams is to use the XML Schema Definition tool to generate the XML Schema (XSD) document files from the compiled code. (For more details on using the tool, see [The XML Schema Definition Tool and XML Serialization](../../../docs/framework/serialization/the-xml-schema-definition-tool-and-xml-serialization.md).) When no attribute is applied to the field, the schema describes the element in the following manner.  
   
-```  
+```xml  
 <xs:element minOccurs="0" maxOccurs ="1" name="Employees" type="ArrayOfEmployee" />  
 ```  
   
  When the <xref:System.Xml.Serialization.XmlElementAttribute> is applied to the field, the resulting schema describes the element as follows.  
   
-```  
+```xml  
 <xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" type="Employee" />   
 ```  
   
@@ -298,13 +298,13 @@ public class Group{
   
  If this class is compiled, and the XML Schema Definition tool is used to generate its schema, you would find the following XML describing `Group`.  
   
-```  
+```xml  
 <xs:element name="NewGroupName" type="NewTypeName">  
 ```  
   
  In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.  
   
-```  
+```xml  
 <NewGroupName>  
     . . .  
 </NewGroupName>  

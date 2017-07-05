@@ -61,7 +61,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ### Configuration  
  The following configuration can be used instead of the code.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -119,7 +119,7 @@ The following scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-m
 ### Configuration  
  The following code configures the client. Note that the [\<servicePrincipalName>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceprincipalname.md) element must be set to match the service's SPN as registered for the service's account in the Active Directory domain.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

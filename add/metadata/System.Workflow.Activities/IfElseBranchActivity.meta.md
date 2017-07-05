@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.IfElseBranchActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.IfElseBranchActivity.ConditionProperty
 author: "Erikre"
 ms.author: "erikre"

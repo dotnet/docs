@@ -38,7 +38,7 @@ This sample demonstrates how to use the discovery client binding element to disc
   
  The following App.config file is used to add a `<serviceDiscovery>` behavior in the service behaviors as well as the discovery endpoint.  
   
-```  
+```xml  
 <system.serviceModel>  
     <services>  
       <service behaviorConfiguration="CalculatorBehavior" name="Microsoft.Samples.Discovery.CalculatorService">  

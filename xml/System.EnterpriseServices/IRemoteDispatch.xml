@@ -1,0 +1,105 @@
+<Type Name="IRemoteDispatch" FullName="System.EnterpriseServices.IRemoteDispatch">
+  <TypeSignature Language="C#" Value="public interface IRemoteDispatch" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteDispatch" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IRemoteDispatch" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6619a740-8154-43be-a186-0319578e02db")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implemented by the <see cref="T:System.EnterpriseServices.ServicedComponent" /> class to determine if the <see cref="T:System.EnterpriseServices.AutoCompleteAttribute" /> class attribute is set to <see langword="true" /> or <see langword="false" /> for a remote method invocation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.IRemoteDispatch> interface does not need to be implemented directly in your code. It is used internally by the .NET Framework infrastructure.  
+  
+ The <xref:System.EnterpriseServices.AutoCompleteAttribute> class attribute ensures that, in the COM+ context, the object's done bit is automatically set to `true` once the method returns. The object can then be deactivated.  
+  
+ The <xref:System.EnterpriseServices.IRemoteDispatch> interface methods do not appear in the <xref:System.EnterpriseServices.ServicedComponent> class interface. Instead, <xref:System.EnterpriseServices.ServicedComponent> explicitly implements <xref:System.EnterpriseServices.IRemoteDispatch>.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+    <altmember cref="T:System.EnterpriseServices.ServicedComponent" />
+    <altmember cref="T:System.EnterpriseServices.AutoCompleteAttribute" />
+  </Docs>
+  <Members>
+    <Member MemberName="RemoteDispatchAutoDone">
+      <MemberSignature Language="C#" Value="public string RemoteDispatchAutoDone (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RemoteDispatchAutoDone(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchAutoDone(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.EnterpriseServices.AutoComplete(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string to be converted into a request object that implements the <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> interface.</param>
+        <summary>Ensures that, in the COM+ context, the <see cref="T:System.EnterpriseServices.ServicedComponent" /> class object's done bit is set to <see langword="true" /> after a remote method invocation.</summary>
+        <returns>A string converted from a response object that implements the <see cref="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" /> interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchAutoDone%2A> method does not belong to the published interface of the <xref:System.EnterpriseServices.ServicedComponent> class and does not need to be implemented elsewhere.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteDispatchNotAutoDone">
+      <MemberSignature Language="C#" Value="public string RemoteDispatchNotAutoDone (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RemoteDispatchNotAutoDone(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchNotAutoDone(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.EnterpriseServices.AutoComplete(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">A string to be converted into a request object implementing the <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> interface.</param>
+        <summary>Does not ensure that, in the COM+ context, the <see cref="T:System.EnterpriseServices.ServicedComponent" /> class object's done bit is set to <see langword="true" /> after a remote method invocation.</summary>
+        <returns>A string converted from a response object implementing the <see cref="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" /> interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.IRemoteDispatch.RemoteDispatchNotAutoDone%2A> method does not belong to the published interface of the <xref:System.EnterpriseServices.ServicedComponent> class and does not need to be implemented elsewhere.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

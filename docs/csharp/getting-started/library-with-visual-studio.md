@@ -17,7 +17,7 @@ ms.assetid: c849ca26-6a25-4d35-9544-f343af88e0e7
 A *class library* defines types and methods that are called by an application. A class library developed using .NET Core supports the .NET Standard Library, which allows your library to be called by any .NET platform that supports that version of the .NET Standard Library. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.
 
 > [!NOTE]
-> For a list of the .NET Standard versions and the platforms they support, see [.NET Standard Library](../../standard/library.md).
+> For a list of the .NET Standard versions and the platforms they support, see [.NET Standard](../../standard/net-standard.md).
 
 In this topic, you'll create a simple utility library that contains a single string-handling method. You'll implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the @System.String class.
 

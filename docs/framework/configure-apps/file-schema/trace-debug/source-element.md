@@ -36,7 +36,7 @@ Specifies a trace source that initiates tracing messages.
   
 ## Syntax  
   
-```  
+```xml  
 <source>   
   <listeners>...</listeners>  
 </source>  
@@ -74,7 +74,7 @@ Specifies a trace source that initiates tracing messages.
 ## Example  
  The following example shows how to use the `<source>` element to add the trace source `mySource` and to set the level for the source switch named `sourceSwitch`. A console trace listener is added that writes trace information to the console.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

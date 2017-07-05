@@ -42,7 +42,7 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
   
  The first example defines a style called `SimpleSysResources`, which shows how to use the current system settings in your style. The example assigns <xref:System.Windows.SystemColors.MenuHighlightBrushKey%2A> as the <xref:System.Windows.Controls.Control.Background%2A> color and <xref:System.Windows.SystemColors.MenuTextBrushKey%2A> as the <xref:System.Windows.Controls.Control.Foreground%2A> color of the <xref:System.Windows.Controls.ContextMenu>.  
   
-```  
+```xaml  
 <Style x:Key="SimpleSysResources" TargetType="{x:Type MenuItem}">  
   <Setter Property = "Background" Value=   
     "{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}"/>  
@@ -53,7 +53,7 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
   
  The following example uses the <xref:System.Windows.Trigger> element to change the appearance of a <xref:System.Windows.Controls.Menu> in response to events that are raised on the <xref:System.Windows.Controls.ContextMenu>. When a user moves the mouse over the menu, the appearance of the <xref:System.Windows.Controls.ContextMenu> items changes.  
   
-```  
+```xaml  
 <Style x:Key="Triggers" TargetType="{x:Type MenuItem}">  
   <Style.Triggers>  
     <Trigger Property="MenuItem.IsMouseOver" Value="true">  

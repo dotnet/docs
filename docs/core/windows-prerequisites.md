@@ -4,7 +4,7 @@ description: Learn what dependencies you need on your Windows machine to develop
 keywords: .NET Core, Windows, prerequisites, dependencies, Visual Studio
 author: mairaw
 ms.author: mairaw
-ms.date: 03/07/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -24,14 +24,14 @@ This article shows you what dependencies you need to deploy and run .NET Core ap
 * Windows 10
 * Windows Server 2008 R2 SP1 (Full Server or Server Core)
 * Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 SP1 (Full Server or Server Core)
+* Windows Server 2012 R2 (Full Server or Server Core)
 * Windows Server 2016 (Full Server, Server Core or Nano Server)
 
 See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the full set of supported operating systems.
 
 ## .NET Core dependencies
 
-.NET Core requires the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed for you if you use the .NET Core installer. However, you need to manually install the [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53840) if you are installing .NET Core via the [installer script](./tools/dotnet-install-script.md) or deploying a self-contained .NET Core application.
+.NET Core requires the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed for you if you use the .NET Core installer. However, you need to manually install the [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/details.aspx?id=52685) if you are installing .NET Core via the [installer script](./tools/dotnet-install-script.md) or deploying a self-contained .NET Core application.
 
 > [!NOTE]
 > <em>For Windows 7 and Windows Server 2008 machines only:</em><br>

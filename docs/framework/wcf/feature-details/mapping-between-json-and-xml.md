@@ -28,13 +28,13 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
   
  To clarify the concept of a mapping, the following example is of a JSON document.  
   
-```  
+```json  
 {"product":"pencil","price":12}  
 ```  
   
  To read this JSON document using one of the readers previously mentioned, use the same sequence of <xref:System.Xml.XmlDictionaryReader> calls as you would to read the following XML document.  
   
-```  
+```xml  
 <root type="object">  
     <product type="string">pencil</product>  
     <price type="number">12</price>  

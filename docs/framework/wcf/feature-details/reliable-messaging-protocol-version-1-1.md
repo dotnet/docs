@@ -80,7 +80,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  An example of a `CreateSequence` message.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <wsa:Action s:mustUnderstand="1">http://docs.oasis-open.org/ws-rx/wsrm/200702/CreateSequence</wsa:Action>  
@@ -109,7 +109,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  An example of a `CreateSequenceResponse` message.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <wsa:Action s:mustUnderstand="1">http://docs.oasis-open.org/ws-rx/wsrm/200702/CreateSequenceResponse</wsa:Action>  
@@ -145,7 +145,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  An example of a `CloseSequence` message.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <wsa:Action s:mustUnderstand="1">http://docs.oasis-open.org/ws-rx/wsrm/200702/CloseSequence</wsa:Action>  
@@ -196,7 +196,7 @@ Example CloseSequenceResponse message:
   
  An example of a `TerminateSequence` message.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <wsa:Action s:mustUnderstand="1">http://docs.oasis-open.org/ws-rx/wsrm/200702/TerminateSequence</wsa:Action>  
@@ -241,7 +241,7 @@ Example TerminateSequenceResponse message:
   
  An example of a `Sequence` header.  
   
-```  
+```xml  
 <wsrm:Sequence s:mustUnderstand="1">  
   <wsrm:Identifier>urn:uuid:656652b8-9af2-4e94-9d07-2dc21c05ed27</wsrm:Identifier>  
   <wsrm:MessageNumber>1</wsrm:MessageNumber>  
@@ -253,7 +253,7 @@ Example TerminateSequenceResponse message:
   
  An example of an `AckRequested` header.  
   
-```  
+```xml  
 <wsrm:AckRequested>  
   <wsrm:Identifier>urn:uuid:656652b8-9af2-4e94-9d07-2dc21c05ed27</wsrm:Identifier>  
 </wsrm:AckRequested>  
@@ -268,7 +268,7 @@ Example TerminateSequenceResponse message:
   
  An example of a `SequenceAcknowledgement` header.  
   
-```  
+```xml  
 <wsrm:SequenceAcknowledgement>  
   <wsrm:Identifier>urn:uuid:656652b8-9af2-4e94-9d07-2dc21c05ed27</wsrm:Identifier>  
   <wsrm:AcknowledgementRange Lower="1" Upper="1"></wsrm:AcknowledgementRange>  
@@ -282,7 +282,7 @@ Example TerminateSequenceResponse message:
   
 -   B1702: Over SOAP 1.2, when the service endpoint reaches its connection limit and cannot process new connections, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates a nested `CreateSequenceRefused` fault subcode, `netrm:ConnectionLimitReached`, as shown in the following example.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <wsa:Action>http://docs.oasis-open.org/ws-rx/wsrm/200702/fault</wsa:Action>  
@@ -348,7 +348,7 @@ Example TerminateSequenceResponse message:
   
  An example of a `UsesSequenceSTR` header.  
   
-```  
+```xml  
 <wsrm:UsesSequenceSTR></wsrm:UsesSequenceSTR>  
 ```  
   
@@ -385,7 +385,7 @@ Example TerminateSequenceResponse message:
   
      An example of a `RMAssertion`.  
   
-    ```  
+    ```xml  
     <wsrmp:RMAssertion>  
       <wsp:Policy>  
         <wsrmp:SequenceSTR/>  
@@ -408,7 +408,7 @@ Example TerminateSequenceResponse message:
   
 -   B4001: When Reliable Messaging Flow Control is enabled, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates a `netrm:BufferRemaining` element in the element extensibility of the `SequenceAcknowledgement` header, as shown in the following example.  
   
-    ```  
+    ```xml  
     <wsrm:SequenceAcknowledgement>  
       <wsrm:Identifier>urn:uuid:656652b8-9af2-4e94-9d07-2dc21c05ed27</wsrm:Identifier>  
       <wsrm:AcknowledgementRange Upper="1" Lower="1"/>             

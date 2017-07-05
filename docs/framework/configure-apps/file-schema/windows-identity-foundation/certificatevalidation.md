@@ -24,7 +24,7 @@ Controls the settings that token handlers use to validate certificates. These se
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <certificateValidation  
@@ -65,7 +65,7 @@ Controls the settings that token handlers use to validate certificates. These se
   
 ## Example  
   
-```  
+```xml  
 <certificateValidation certificateValidationMode="PeerOrChainTrust"  
                        revocationMode="Online"  
                        trustedStoreLocation="LocalMachine" />  

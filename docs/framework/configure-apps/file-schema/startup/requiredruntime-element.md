@@ -28,7 +28,7 @@ ms.author: "markl"
 manager: "markl"
 ---
 # &lt;requiredRuntime&gt; Element
-Specifies that the application supports only version 1.0 of the common language runtime.  
+Specifies that the application supports only version 1.0 of the common language runtime. This element is deprecated and should no longer be used. The [`supportedRuntime`](supportedruntime-element.md) element should be used instead.
   
  \<configuration>  
 \<startup>  
@@ -36,7 +36,7 @@ Specifies that the application supports only version 1.0 of the common language 
   
 ## Syntax  
   
-```  
+```xml  
    <requiredRuntime    
 version="runtime version"  
 safemode="true|false"/>  
@@ -83,7 +83,7 @@ safemode="true|false"/>
 ## Example  
  The following example shows how to specify the runtime version in a configuration file.  
   
-```  
+```xml  
 <configuration>  
    <startup>  
       <requiredRuntime version="v1.0.3705" safemode="true"/>  

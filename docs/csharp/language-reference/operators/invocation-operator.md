@@ -55,7 +55,7 @@ In addition to being used to specify the order of operations in an expression, p
  For more information about method invocation, see [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

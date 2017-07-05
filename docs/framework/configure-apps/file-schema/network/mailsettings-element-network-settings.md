@@ -35,7 +35,7 @@ Configures mail sending options.
   
 ## Syntax  
   
-```  
+```xml  
       <mailSettings  
   <smtp> … </smtp>  
 /mailsettings>  
@@ -62,7 +62,7 @@ Configures mail sending options.
 ## Example  
  The following code example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <mailSettings>  

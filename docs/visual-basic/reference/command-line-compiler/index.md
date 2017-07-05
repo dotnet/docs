@@ -38,11 +38,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual Basic Command-Line Compiler
-The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] command-line compiler provides an alternative to compiling programs from within the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] integrated development environment (IDE). This section contains descriptions for the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler options.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler provides an alternative to compiling programs from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). This section contains descriptions for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler options.  
   
 ## In This Section  
  [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)  
- Describes the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] command-line compiler, which is provided as an alternative to compiling programs from within the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] IDE.  
+ Describes the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler, which is provided as an alternative to compiling programs from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] IDE.  
   
  [Visual Basic Compiler Options Listed Alphabetically](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md)  
  Lists compiler options in an alphabetical table.  
@@ -55,4 +55,4 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
  Discusses how to use the Project Designer to specify global settings for your project.  
   
  [Visual Basic](../../../visual-basic/index.md)  
- The starting point for the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Help.
+ The starting point for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Help.

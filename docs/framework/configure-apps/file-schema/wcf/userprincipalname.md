@@ -20,13 +20,13 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
   
  For more information about setting the UPN, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
- \<identity>  
+\<identity>  
 \<userPrincipalName>  
   
 ## Syntax  
   
-```  
-<userPrincipalName value = "String" />  
+```xml  
+<userPrincipalName value="String" />  
 ```  
   
 ## Attributes and Elements  
@@ -53,7 +53,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 ## Example  
  The following configuration code specifies the UPN of the service to be authenticated by the client.  
   
-```  
+```xml  
 <identity>  
   <userPrincipalName value="someone@cohowinery.com" />  
 </identity>  

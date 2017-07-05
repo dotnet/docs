@@ -38,7 +38,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
   
 ## Syntax  
   
-```  
+```xml  
 <filter   
   type="traceFilterClassName"   
   initializeData="data" />  
@@ -75,7 +75,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
 ## Example  
  The following example shows how to use the `<filter>` element to add a filter to the listener `console` in the `Listeners` collection for trace, specifying the filter event level as `Error`.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

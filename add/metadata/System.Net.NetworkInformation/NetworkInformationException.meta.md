@@ -11,12 +11,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.NetworkInformation.NetworkInformationException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.NetworkInformation.NetworkInformationException.ErrorCode
 ms.author: "bobdel"
 manager: "markl"

@@ -27,7 +27,7 @@ Specifies additional connection pool settings for a Named Pipe binding.
   
 ## Syntax  
   
-```  
+```xml  
 <connectionPoolSettings  
         groupName="String"  
     idleTimeout"TimeSpan"  

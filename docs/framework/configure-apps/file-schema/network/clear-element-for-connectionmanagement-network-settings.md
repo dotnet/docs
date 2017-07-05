@@ -38,7 +38,7 @@ Clears the connection management list.
   
 ## Syntax  
   
-```  
+```xml  
 <clear/>  
 ```  
   
@@ -66,7 +66,7 @@ Clears the connection management list.
 ## Example  
  The following code example clears the connection management list and then adds new connection management entries for the server www.contoso.com and all other network hosts.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <connectionManagement>  

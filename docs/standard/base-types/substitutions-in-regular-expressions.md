@@ -185,7 +185,7 @@ manager: "wpickett"
 ## Substituting the Last Captured Group  
  The `$+` substitution replaces the matched string with the last captured group. If there are no captured groups or if the value of the last captured group is <xref:System.String.Empty?displayProperty=fullName>, the `$+` substitution has no effect.  
   
- The following example identifies duplicate words in a string and uses the `$+` substitution to replace them with a single occurrence of the word. The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option is used to ensure that words that differ in case but that are otherwise identical are considered duplicates.  
+ The following example identifies duplicate words in a string and uses the `$+` substitution to replace them with a single occurrence of the word. The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option is used to ensure that words that differ in case but that are otherwise identical are considered duplicates.  
   
  [!code-csharp[Conceptual.Regex.Language.Substitutions#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.substitutions/cs/lastmatch1.cs#6)]
  [!code-vb[Conceptual.Regex.Language.Substitutions#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.substitutions/vb/lastmatch1.vb#6)]  

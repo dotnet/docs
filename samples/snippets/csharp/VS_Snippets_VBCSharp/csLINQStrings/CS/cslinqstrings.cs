@@ -589,18 +589,16 @@ namespace RegEx
         public static void Main()
         {
             // Modify this path as necessary so that it accesses your version of Visual Studio.
-            string startFolder = @"c:\program files\Microsoft Visual Studio 9.0\";
+            string startFolder = @"C:\Program Files (x86)\Microsoft Visual Studio 14.0\";
             // One of the following paths may be more appropriate on your computer.
-            //string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 9.0\";
-            //string startFolder = @"c:\program files\Microsoft Visual Studio 10.0\";
-            //string startFolder = @"c:\program files (x86)\Microsoft Visual Studio 10.0\";
+            //string startFolder = @"C:\Program Files (x86)\Microsoft Visual Studio\2017\";
 
             // Take a snapshot of the file system.
             IEnumerable<System.IO.FileInfo> fileList = GetFiles(startFolder);
 
             // Create the regular expression to find all things "Visual".
             System.Text.RegularExpressions.Regex searchTerm =
-                new System.Text.RegularExpressions.Regex(@"Visual (Basic|C#|C\+\+|J#|SourceSafe|Studio)");
+                new System.Text.RegularExpressions.Regex(@"Visual (Basic|C#|C\+\+|Studio)");
 
             // Search the contents of each .htm file.
             // Remove the where clause to find even more matchedValues!

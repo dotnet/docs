@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.SaveFileDialogArray.GetIndex(System.Windows.Forms.SaveFileDialog)
 author: "stevehoag"
 ms.author: "shoag"

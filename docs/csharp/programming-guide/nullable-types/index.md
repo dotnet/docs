@@ -1,7 +1,7 @@
 ---
 title: "Nullable Types (C# Programming Guide) | Microsoft Docs"
 
-ms.date: "2015-07-20"
+ms.date: "2017-05-15"
 ms.prod: .net
 
 
@@ -36,17 +36,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Nullable Types (C# Programming Guide)
-Nullable types are instances of the <xref:System.Nullable%601?displayProperty=fullName> struct. A nullable type can represent the correct range of values for its underlying value type, plus an additional `null` value. For example, a `Nullable<Int32>`, pronounced "Nullable of Int32," can be assigned any value from -2147483648 to 2147483647, or it can be assigned the `null` value. A `Nullable<bool>` can be assigned the values [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md), or [null](../../../csharp/language-reference/keywords/null.md). The ability to assign `null` to numeric and Boolean types is especially useful when you are dealing with databases and other data types that contain elements that may not be assigned a value. For example, a Boolean field in a database can store the values `true` or `false`, or it may be undefined.  
+Nullable types are instances of the <xref:System.Nullable%601?displayProperty=fullName> struct. A nullable type can represent the correct range of values for its underlying value type, plus an additional `null` value. For example, a `Nullable<Int32>`, pronounced "Nullable of Int32," can be assigned any value from -2147483648 to 2147483647, or it can be assigned the `null` value. A `Nullable<bool>` can be assigned the values [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md), or [null](../../../csharp/language-reference/keywords/null.md). The ability to assign `null` to numeric and Boolean types is especially useful when you are dealing with databases and other data types that contain elements that may not be assigned a value. For example, a Boolean field in a database can store the values `true` or `false`, or it may be undefined. 
   
- [!code-cs[csProgGuideTypes#3](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
+[!code-cs[nullable-types](../../../../samples/snippets/csharp/programming-guide/nullable-types/nullable-ex1.cs)]  
   
- The example will display the output:  
-  
- `num = Null`  
-  
- `Nullable object must have a value.`  
-  
- For more examples, see [Using Nullable Types](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
+For more examples, see [Using Nullable Types](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
   
 ## Nullable Types Overview  
  Nullable types have the following characteristics:  
@@ -83,7 +77,7 @@ Nullable types are instances of the <xref:System.Nullable%601?displayProperty=fu
 -   [?? Operator](../../../csharp/language-reference/operators/null-conditional-operator.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Nullable>   

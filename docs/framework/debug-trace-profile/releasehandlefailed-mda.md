@@ -74,7 +74,7 @@ and closing it directly or building another SafeHandle around it."
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <releaseHandleFailed/>  

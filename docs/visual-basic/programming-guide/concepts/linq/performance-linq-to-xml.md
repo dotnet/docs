@@ -18,11 +18,11 @@ ms.author: dotnetcontent
 
 ---
 # Performance (LINQ to XML) (Visual Basic)
-This section provides information about performance in [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], specifically the performance of functional construction and queries.  
+This section provides information about performance in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], specifically the performance of functional construction and queries.  
   
 ## In This Section  
  [Performance of Chained Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-of-chained-queries-linq-to-xml.md)  
- Provides performance information about chained [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] queries.  
+ Provides performance information about chained [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  
   
  [Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md)  
  Provides performance information about the atomization of <xref:System.Xml.Linq.XName> and <xref:System.Xml.Linq.XNamespace> objects.  

@@ -25,7 +25,7 @@ This topic describes how you can configure message logging for different scenari
   
  The following example shows how to enable logging and specify additional options.  
   
-```  
+```xml  
 <system.diagnostics>  
   <sources>  
       <source name="System.ServiceModel.MessageLogging">  
@@ -62,7 +62,7 @@ This topic describes how you can configure message logging for different scenari
   
  The `switchValue` attribute of a `source` is only valid for tracing. If you specify a `switchValue` attribute for the `System.ServiceModel.MessageLogging` trace source as follows, it has no effect.  
   
-```  
+```xml  
 <source name="System.ServiceModel.MessageLogging" switchValue="Verbose">  
 ```  
   
@@ -129,7 +129,7 @@ This topic describes how you can configure message logging for different scenari
   
  The following example shows how to configure a filter that records only messages that have a SOAP header section.  
   
-```  
+```xml  
 <messageLogging logEntireMessage="true"  
     logMalformedMessages="true"   
     logMessagesAtServiceLevel="true"  
@@ -145,14 +145,14 @@ This topic describes how you can configure message logging for different scenari
   
  Filters cannot be applied to the body of a message. Filters that attempt to manipulate the body of a message are removed from the list of filters. An event is also emitted that indicates this. For example, the following filter would be removed from the filter table.  
   
-```  
+```xml  
 <add xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">/s:Envelope/s:Body[contains(text(), "Hello")]</add>  
 ```  
   
 ## Configuring a Custom Listener  
  You can also configure a custom listener with additional options. A custom listener can be useful in filtering application-specific PII elements from messages before logging. The following example demonstrates a custom listener configuration.  
   
-```  
+```xml  
 <system.diagnostics>  
    <sources>  
      <source name="System.ServiceModel.MessageLogging">  

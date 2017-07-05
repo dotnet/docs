@@ -105,18 +105,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.PeerNearMe.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerNearMe.Invite
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.Collaboration.PeerNearMe.AddToContactManager
 ms.author: "bobdel"
 manager: "markl"
@@ -142,12 +130,6 @@ manager: "markl"
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerNearMe.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerNearMe.AddToContactManager
 ms.author: "bobdel"
 manager: "markl"
 ---

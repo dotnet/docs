@@ -25,15 +25,15 @@ This example shows how to specify whether the binding updates only the binding t
 ## Example  
  You use the <xref:System.Windows.Data.Binding.Mode%2A> property to specify the direction of the binding. The following enumeration list shows the available options for binding updates:  
   
--   <xref:System.Windows.Data.BindingMode> updates the target property or the property whenever either the target property or the source property changes.  
+-   <xref:System.Windows.Data.BindingMode.TwoWay> updates the target property or the property whenever either the target property or the source property changes.  
   
--   <xref:System.Windows.Data.BindingMode> updates the target property only when the source property changes.  
+-   <xref:System.Windows.Data.BindingMode.OneWay> updates the target property only when the source property changes.  
   
--   <xref:System.Windows.Data.BindingMode> updates the target property only when the application starts or when the <xref:System.Windows.FrameworkElement.DataContext%2A> undergoes a change.  
+-   <xref:System.Windows.Data.BindingMode.OneTime> updates the target property only when the application starts or when the <xref:System.Windows.FrameworkElement.DataContext%2A> undergoes a change.  
   
--   <xref:System.Windows.Data.BindingMode> updates the source property when the target property changes.  
+-   <xref:System.Windows.Data.BindingMode.OneWayToSource> updates the source property when the target property changes.  
   
--   <xref:System.Windows.Data.BindingMode> causes the default <xref:System.Windows.Data.Binding.Mode%2A> value of target property to be used.  
+-   <xref:System.Windows.Data.BindingMode.Default> causes the default <xref:System.Windows.Data.Binding.Mode%2A> value of target property to be used.  
   
  For more information, see the <xref:System.Windows.Data.BindingMode> enumeration.  
   
@@ -41,9 +41,9 @@ This example shows how to specify whether the binding updates only the binding t
   
  [!code-xml[DirectionalBinding#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml#4)]  
   
- To detect source changes (applicable to <xref:System.Windows.Data.BindingMode> and <xref:System.Windows.Data.BindingMode> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. See [Implement Property Change Notification](../../../../docs/framework/wpf/data/how-to-implement-property-change-notification.md) for an example of an <xref:System.ComponentModel.INotifyPropertyChanged> implementation.  
+ To detect source changes (applicable to <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. See [Implement Property Change Notification](../../../../docs/framework/wpf/data/how-to-implement-property-change-notification.md) for an example of an <xref:System.ComponentModel.INotifyPropertyChanged> implementation.  
   
- For <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode> bindings, you can control the timing of the source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. See <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> for more information.  
+ For <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings, you can control the timing of the source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. See <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> for more information.  
   
 ## See Also  
  <xref:System.Windows.Data.Binding>   

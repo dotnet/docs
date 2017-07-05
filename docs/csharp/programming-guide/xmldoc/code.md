@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;code&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <code>content</code>  
 ```  
   

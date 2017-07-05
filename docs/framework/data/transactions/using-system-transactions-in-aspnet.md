@@ -25,7 +25,7 @@ This topic describes how you can successfully use <xref:System.Transactions> ins
   
  To modify the policy files, add a **SecurityClass** element for **DistributedTransactionPermission** to the **SecurityClasses** element under the **PolicyLevel** element and add a corresponding **IPermission** element under the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]**NamedPermissionSet** for System.Transactions. The following configuration file demonstrates this.  
   
-```  
+```xml  
 <SecurityClasses>  
    <SecurityClass Name="DistributedTransactionPermission" Description="System.Transactions.DistributedTransactionPermission, System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
 ...  
@@ -49,7 +49,7 @@ This topic describes how you can successfully use <xref:System.Transactions> ins
 ## Dynamic Compilation  
  If you want to import and use <xref:System.Transactions> in an [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] application that is dynamically compiled on access, you should place a reference to the <xref:System.Transactions> assembly in the configuration file. Specifically, the reference should be added under the **compilation**/**assemblies** section of the default root **Web.config** configuration file, or a specific Web application's configuration file. The following example demonstrates this.  
   
-```  
+```xml  
 <configuration>  
    <system.web>  
       <compilation>  

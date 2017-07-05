@@ -23,7 +23,7 @@ Specifies settings for X.509 certificate validation. A secure [!INCLUDE[indigo1]
   
 ## Syntax  
   
-```  
+```xml  
 <certificateReference   
         findValue="String"   
     isChainIncluded="Boolean"  

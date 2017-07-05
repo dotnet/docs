@@ -67,7 +67,7 @@ Serialize(myDateTime.ToString("o"));
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <dateTimeInvalidLocalFormat />  
@@ -87,7 +87,7 @@ String serialized = XMLConvert.ToString(myDateTime);
   
  For this specific example, pass in `XmlDateTimeSerializationMode.RoundtripKind` to the `ToString` call on `XmlConvert`. This serializes the data as a UTC time.  
   
- If using a <xref:System.Data.DataSet>, set the <xref:System.Data.DataColumn.DateTimeMode%2A> property on the <xref:System.Data.DataColumn> object to <xref:System.Data.DataSetDateTime>.  
+ If using a <xref:System.Data.DataSet>, set the <xref:System.Data.DataColumn.DateTimeMode%2A> property on the <xref:System.Data.DataColumn> object to <xref:System.Data.DataSetDateTime.Utc>.  
   
 ```  
 DateTime myDateTime = DateTime.UtcNow;  

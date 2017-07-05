@@ -1,0 +1,169 @@
+<Type Name="ISoapServerVRoot" FullName="System.EnterpriseServices.Internal.ISoapServerVRoot">
+  <TypeSignature Language="C#" Value="public interface ISoapServerVRoot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapServerVRoot" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapServerVRoot" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("A31B6577-71D2-4344-AEDF-ADC1B0DC5347")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Publishes authenticated, encrypted SOAP virtual roots on servers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.EnterpriseServices.Internal.SoapServerVRoot> for the default implementation.  
+  
+ <xref:System.EnterpriseServices.Internal.ISoapServerVRoot> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateVirtualRootEx">
+      <MemberSignature Language="C#" Value="public void CreateVirtualRootEx (string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, out string baseUrl, out string virtualRoot, out string physicalPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateVirtualRootEx(string rootWebServer, string inBaseUrl, string inVirtualRoot, string homePage, string discoFile, string secureSockets, string authentication, string operation, string baseUrl, string virtualRoot, string physicalPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.CreateVirtualRootEx(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="inBaseUrl" Type="System.String" />
+        <Parameter Name="inVirtualRoot" Type="System.String" />
+        <Parameter Name="homePage" Type="System.String" />
+        <Parameter Name="discoFile" Type="System.String" />
+        <Parameter Name="secureSockets" Type="System.String" />
+        <Parameter Name="authentication" Type="System.String" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="inBaseUrl">The base URL that contains the virtual root.</param>
+        <param name="inVirtualRoot">The name of the virtual root.</param>
+        <param name="homePage">
+          <see langword="true" /> if the <see langword="EnableDefaultDoc" /> property is to be set; otherwise, <see langword="false" />.</param>
+        <param name="discoFile">
+          <see langword="true" /> if a default discovery file is to be created; <see langword="false" /> if there is to be no discovery file. If <see langword="false" /> and a Default.disco file exists, the file is deleted.</param>
+        <param name="secureSockets">
+          <see langword="true" /> if SSL encryption is required; otherwise, <see langword="false" />.</param>
+        <param name="authentication">Specify "anonymous" if no authentication is to be used (anonymous user). Otherwise, specify an empty string.</param>
+        <param name="operation">Not used. Specify <see langword="null" /> for this parameter.</param>
+        <param name="baseUrl">When this method returns, this parameter contains the base URL.</param>
+        <param name="virtualRoot">When this method returns, this parameter contains the name of the virtual root.</param>
+        <param name="physicalPath">When this method returns, this parameter contains the disk address of the Virtual Root directory.</param>
+        <summary>Creates a SOAP virtual root with security options.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteVirtualRootEx">
+      <MemberSignature Language="C#" Value="public void DeleteVirtualRootEx (string rootWebServer, string baseUrl, string virtualRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteVirtualRootEx(string rootWebServer, string baseUrl, string virtualRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.DeleteVirtualRootEx(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="baseUrl">The base URL that contains the virtual root.</param>
+        <param name="virtualRoot">The name of the virtual root.</param>
+        <summary>Deletes a virtual root. Not fully implemented.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The functionality to delete a virtual root is not currently available in the implementation of this interface. The implementation returns without deleting the root.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+        <exception cref="T:System.EnterpriseServices.ServicedComponentException">The call to identify the system directory failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualRootStatus">
+      <MemberSignature Language="C#" Value="public void GetVirtualRootStatus (string rootWebServer, string inBaseUrl, string inVirtualRoot, out string exists, out string secureSockets, out string windowsAuth, out string anonymous, out string homePage, out string discoFile, out string physicalPath, out string baseUrl, out string virtualRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVirtualRootStatus(string rootWebServer, string inBaseUrl, string inVirtualRoot, string exists, string secureSockets, string windowsAuth, string anonymous, string homePage, string discoFile, string physicalPath, string baseUrl, string virtualRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerVRoot.GetVirtualRootStatus(System.String,System.String,System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="inBaseUrl" Type="System.String" />
+        <Parameter Name="inVirtualRoot" Type="System.String" />
+        <Parameter Name="exists" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="secureSockets" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="windowsAuth" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="anonymous" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="homePage" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="discoFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="baseUrl" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="virtualRoot" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="inBaseUrl">The base URL that contains the virtual root.</param>
+        <param name="inVirtualRoot">The name of the virtual root.</param>
+        <param name="exists">When this method returns, this parameter contains a <see langword="true" /> if the virtual directory exists; otherwise, <see langword="false" />.</param>
+        <param name="secureSockets">When this method returns, this parameter contains a <see langword="true" /> if SSL encryption is required; otherwise, <see langword="false" />.</param>
+        <param name="windowsAuth">When this method returns, this parameter contains <see langword="true" /> if Windows authentication is set, otherwise, <see langword="false" />.</param>
+        <param name="anonymous">When this method returns, this parameter contains <see langword="true" /> if no authentication is set (anonymous user); otherwise, <see langword="false" />.</param>
+        <param name="homePage">When this method returns, this parameter contains a <see langword="true" /> if the Virtual Root directory's <see langword="EnableDefaultDoc" /> property is set; otherwise, <see langword="false" />.</param>
+        <param name="discoFile">When this method returns, this parameter contains a <see langword="true" /> if a Default.disco file exists; otherwise, <see langword="false" />.</param>
+        <param name="physicalPath">When this method returns, this parameter contains the disk address of the Virtual Root directory.</param>
+        <param name="baseUrl">When this method returns, this parameter contains the base URL.</param>
+        <param name="virtualRoot">When this method returns, this parameter contains the name of the virtual root.</param>
+        <summary>Returns the security status of an existing SOAP virtual root.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

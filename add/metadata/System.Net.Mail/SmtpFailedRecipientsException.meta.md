@@ -51,9 +51,3 @@ uid: System.Net.Mail.SmtpFailedRecipientsException.#ctor(System.String,System.Ne
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Mail.SmtpFailedRecipientsException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

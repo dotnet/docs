@@ -37,7 +37,7 @@ translation.priority.ht:
 # How to: Pass Procedures to Another Procedure in Visual Basic
 This example shows how to use delegates to pass a procedure to another procedure.  
   
- A delegate is a type that you can use like any other type in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. The `AddressOf` operator returns a delegate object when applied to a procedure name.  
+ A delegate is a type that you can use like any other type in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The `AddressOf` operator returns a delegate object when applied to a procedure name.  
   
  This example has a procedure with a delegate parameter that can take a reference to another procedure, obtained with the `AddressOf` operator.  
   

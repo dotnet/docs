@@ -42,7 +42,7 @@ translation.priority.ht:
 # &lt;see&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <see cref="member"/>  
 ```  
   

@@ -1,0 +1,183 @@
+<Type Name="InstallationFlags" FullName="System.EnterpriseServices.InstallationFlags">
+  <TypeSignature Language="C#" Value="public enum InstallationFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed InstallationFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.InstallationFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Flags used with the <see cref="T:System.EnterpriseServices.RegistrationHelper" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Configure">
+      <MemberSignature Language="C#" Value="Configure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags Configure = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Configure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Should not be used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureComponentsOnly">
+      <MemberSignature Language="C#" Value="ConfigureComponentsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags ConfigureComponentsOnly = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ConfigureComponentsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Configures components only, do not configure methods or interfaces.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTargetApplication">
+      <MemberSignature Language="C#" Value="CreateTargetApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags CreateTargetApplication = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.CreateTargetApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates the target application. An error occurs if the target already exists.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do the default installation, which configures, installs, and registers, and assumes that the application already exists.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpectExistingTypeLib">
+      <MemberSignature Language="C#" Value="ExpectExistingTypeLib" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags ExpectExistingTypeLib = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ExpectExistingTypeLib" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not export the type library; one can be found either by the generated or supplied type library name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FindOrCreateTargetApplication">
+      <MemberSignature Language="C#" Value="FindOrCreateTargetApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags FindOrCreateTargetApplication = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.FindOrCreateTargetApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates the application if it does not exist; otherwise use the existing application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Install">
+      <MemberSignature Language="C#" Value="Install" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags Install = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Install" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Should not be used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReconfigureExistingApplication">
+      <MemberSignature Language="C#" Value="ReconfigureExistingApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags ReconfigureExistingApplication = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ReconfigureExistingApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If using an existing application, ensures that the properties on this application match those in the assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="Register" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags Register = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.Register" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Should not be used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportWarningsToConsole">
+      <MemberSignature Language="C#" Value="ReportWarningsToConsole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.InstallationFlags ReportWarningsToConsole = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.InstallationFlags.ReportWarningsToConsole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.InstallationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When alert text is encountered, writes it to the Console.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

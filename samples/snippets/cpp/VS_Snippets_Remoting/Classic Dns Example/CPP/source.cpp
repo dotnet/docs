@@ -14,7 +14,7 @@ protected:
    void Method()
    {
       // <Snippet1>
-      IPHostEntry^ hostInfo = Dns::GetHostByName( "www.contoso.com" );
+      IPHostEntry^ hostInfo = Dns::GetHostEntry( "www.contoso.com" );
       // </Snippet1>
    }
 };

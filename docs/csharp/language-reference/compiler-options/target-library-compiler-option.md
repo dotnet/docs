@@ -37,7 +37,7 @@ The **/target:library** option causes the compiler to create a dynamic-link libr
   
 ## Syntax  
   
-```  
+```console  
 /target:library  
 ```  
   
@@ -63,7 +63,7 @@ The **/target:library** option causes the compiler to create a dynamic-link libr
 ## Example  
  Compile `in.cs`, creating `in.dll`:  
   
-```  
+```console  
 csc /target:library in.cs  
 ```  
   

@@ -41,7 +41,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 <a name="singlecurrent"></a>   
 ### Single Property on the Immediate Object as Data Context  
   
-```  
+```xml  
 <Binding Path="propertyName" .../>  
 ```  
   
@@ -50,7 +50,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 <a name="singleindex"></a>   
 ### Single Indexer on the Immediate Object as Data Context  
   
-```  
+```xml  
 <Binding Path="[key]" .../>  
 ```  
   
@@ -61,7 +61,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 <a name="multipleindirect"></a>   
 ### Multiple Property (Indirect Property Targeting)  
   
-```  
+```xml  
 <Binding Path="propertyName.propertyName2" .../>  
 ```  
   
@@ -70,7 +70,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 <a name="singleattached"></a>   
 ### Single Property, Attached or Otherwise Type-Qualified  
   
-```  
+```xml  
 <object property="(ownerType.propertyName)" .../>  
 ```  
   
@@ -87,7 +87,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 <a name="sourcetraversal"></a>   
 ### Source Traversal (Binding to Hierarchies of Collections)  
   
-```  
+```xml  
 <object Path="propertyName/propertyNameX" .../>  
 ```  
   
@@ -118,7 +118,7 @@ or
 ### Mixing Syntaxes  
  Each of the syntaxes shown above can be interspersed. For instance, the following is an example that creates a property path to the color at a particular x,y of a `ColorGrid` property that contains a pixel grid array of <xref:System.Windows.Media.SolidColorBrush> objects:  
   
-```  
+```xml  
 <Rectangle Fill="{Binding ColorGrid[20,30].SolidColorBrushResult}" .../>  
 ```  
   
@@ -157,7 +157,7 @@ or
 <a name="singlestepanim"></a>   
 ### Single Property on the Target Object  
   
-```  
+```xml  
 <animation Storyboard.TargetProperty="propertyName" .../>  
 ```  
   
@@ -166,7 +166,7 @@ or
 <a name="indirectanim"></a>   
 ### Indirect Property Targeting  
   
-```  
+```xml  
 <animation Storyboard.TargetProperty="propertyName.propertyName2" .../>  
 ```  
   
@@ -181,7 +181,7 @@ or
 <a name="attachedanim"></a>   
 ### Attached Properties  
   
-```  
+```xml  
 <animation Storyboard.TargetProperty="(ownerType.propertyName)" .../>  
 ```  
   
@@ -190,7 +190,7 @@ or
 <a name="indexanim"></a>   
 ### Indexers  
   
-```  
+```xml  
 <animation Storyboard.TargetProperty="propertyName.propertyName2[index].propertyName3" .../>  
 ```  
   

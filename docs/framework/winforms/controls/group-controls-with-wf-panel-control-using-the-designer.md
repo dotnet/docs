@@ -35,7 +35,7 @@ Windows Forms <xref:System.Windows.Forms.Panel> controls are used to group other
   
      If you have existing controls that you want to enclose in a panel, you can select all the controls, cut them to the Clipboard, select the <xref:System.Windows.Forms.Panel> control, and then paste them into the panel. You can also drag them into the panel.  
   
-3.  (Optional) If you want to add a border to a panel, set its <xref:System.Windows.Forms.BorderStyle> property. There are three choices: <xref:System.Windows.Forms.BorderStyle>, <xref:System.Windows.Forms.BorderStyle>, and <xref:System.Windows.Forms.BorderStyle>.  
+3.  (Optional) If you want to add a border to a panel, set its <xref:System.Windows.Forms.BorderStyle> property. There are three choices: <xref:System.Windows.Forms.BorderStyle.Fixed3D>, <xref:System.Windows.Forms.BorderStyle.FixedSingle>, and <xref:System.Windows.Forms.BorderStyle.None>.  
   
 ## See Also  
  [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)   

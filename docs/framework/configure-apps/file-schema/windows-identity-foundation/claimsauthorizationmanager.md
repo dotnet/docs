@@ -24,7 +24,7 @@ Registers a claims authorization manager for the incoming claims.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <claimsAuthorizationManager type = xs:string>  
@@ -63,7 +63,7 @@ Registers a claims authorization manager for the incoming claims.
 ## Example  
  The following XML shows the configuration for a claims authorization manager that implements policy composed of resource-action pairs each of which specifies boolean combinations of the claims that a requestor must possess to perform the action on the resource. The code that implements the claims authorization manager capable of using this policy can be found in the `ClaimsBasedAuthorization` sample.  
   
-```  
+```xml  
 <system.identityModel>  
     <identityConfiguration>  
       <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  

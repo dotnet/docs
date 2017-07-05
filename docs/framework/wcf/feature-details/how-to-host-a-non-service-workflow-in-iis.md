@@ -288,7 +288,7 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
   
 5.  After the `<system.web>` element, register `CreationEndpoint` by adding the following configuration code.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
         <!--register CreationEndpoint-->  
         <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />  
@@ -304,7 +304,7 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
   
 6.  Add a `<service>` element (after the \</extensions> tag) with a `CreationEndpoint` which will listen for incoming messages.  
   
-    ```  
+    ```xml  
     <services>  
           <!-- add endpoint to service-->  
           <service name="Workflow1" behaviorConfiguration="basicConfig" >  

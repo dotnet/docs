@@ -24,7 +24,7 @@ Specifies a collection of security token handlers that are registered with the e
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  

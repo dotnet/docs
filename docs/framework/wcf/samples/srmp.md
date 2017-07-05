@@ -53,7 +53,7 @@ This sample demonstrates how to perform transacted queued communication by using
   
  There are limitations to SRMP in relation to transport security. The default MSMQ transport security requires Active Directory that requires that the sending queue manager and the receiving queue manager reside in the same Windows domain. This is not possible when sending messages over HTTP boundary. As such, the default transport security does not work. The transport security must be set to Certificate if transport security is desired. Message security can also be used to secure the message. In this sample, both transport and message security is turned off to illustrate SRMP messaging.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   

@@ -111,9 +111,3 @@ uid: Microsoft.Build.Utilities.TaskItem.Microsoft#Build#Framework#ITaskItem2#Eva
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Utilities.TaskItem.#ctor
-ms.author: "susanno"
-manager: "douge"
----

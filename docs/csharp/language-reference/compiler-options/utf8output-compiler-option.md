@@ -37,7 +37,7 @@ The **/utf8output** option displays compiler output using UTF-8 encoding.
   
 ## Syntax  
   
-```  
+```console  
 /utf8output  
 ```  
   

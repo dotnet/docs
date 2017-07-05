@@ -1,0 +1,69 @@
+<Type Name="PrivateComponentAttribute" FullName="System.EnterpriseServices.PrivateComponentAttribute">
+  <TypeSignature Language="C#" Value="public sealed class PrivateComponentAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrivateComponentAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PrivateComponentAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies a component as a private component that is only seen and activated by components in the same application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.EnterpriseServices.PrivateComponentAttribute> type.  
+  
+ [!code-cpp[EnterpriseServicesPrivateComponentAttribute#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/cpp/class1.cpp#0)]
+ [!code-csharp[EnterpriseServicesPrivateComponentAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesPrivateComponentAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrivateComponentAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.PrivateComponentAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.PrivateComponentAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.PrivateComponentAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesPrivateComponentAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/cpp/class1.cpp#1)]
+ [!code-csharp[EnterpriseServicesPrivateComponentAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesPrivateComponentAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

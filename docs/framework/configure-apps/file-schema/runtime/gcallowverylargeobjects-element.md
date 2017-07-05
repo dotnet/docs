@@ -32,7 +32,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
   
 ## Syntax  
   
-```  
+```xml  
 <gcAllowVeryLargeObjects    
    enabled="true|false" />  
 ```  
@@ -78,7 +78,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 ## Example  
  The following example shows how to enable this feature for an application.  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <gcAllowVeryLargeObjects enabled="true" />  

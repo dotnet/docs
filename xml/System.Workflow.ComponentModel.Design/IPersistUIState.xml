@@ -63,7 +63,7 @@
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> to use to store the state.</param>
+        <param name="writer">The writer to use to store the state.</param>
         <summary>Stores the UI state of a designer to a binary stream.</summary>
         <remarks>To be added.</remarks>
       </Docs>

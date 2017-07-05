@@ -67,6 +67,6 @@ When using the <xref:System.Windows.Controls.DataGrid> control, you can customiz
   
 1.  If needed, set the <xref:System.Windows.Controls.DataGrid.RowDetailsVisibilityMode%2A> property to a <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode> value.  
   
-     By default, the value is set to <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode>. You can set it to <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode> to show the details for all of the rows or <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode> to hide the details for all rows.  
+     By default, the value is set to <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected>. You can set it to <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode.Visible> to show the details for all of the rows or <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode.Collapsed> to hide the details for all rows.  
   
 2.  If needed, set the <xref:System.Windows.Controls.DataGrid.AreRowDetailsFrozen%2A> property to `true` to prevent the row details section from scrolling horizontally.

@@ -25,7 +25,7 @@ When serializing a user-defined type to a given wire format, or deserializing a 
   
  For example, a public Web service API returns the following JSON object, which describes some information about a user of the service.  
   
-```  
+```json  
 {"personal": {"name": "Paul", "age": 23, "height": 1.7, "isSingle": true, "luckyNumbers": [5,17,21]}, "favoriteBands": ["Band ABC", "Band XYZ"]}  
 ```  
   

@@ -23,7 +23,7 @@ This sample demonstrates how to use the <xref:System.ServiceModel.Description.Se
   
  The service configuration file uses the `serviceSecurityAudit` element to configure auditing.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="CalculatorServiceBehavior">  

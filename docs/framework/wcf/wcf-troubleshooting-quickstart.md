@@ -69,30 +69,34 @@ This topic lists a number of known issues customers have run into while developi
   
  The following code example shows how to override the <xref:System.ServiceModel.ServiceHostBase.ApplyConfiguration%2A> method and directly configure an endpoint.  
   
-```  
+```csharp
 public class MyServiceHost : ServiceHost  
 {  
-  public MyServiceHost(Type serviceType, params Uri[] baseAddresses)    
-    : base(serviceType, baseAddresses)  
-  { Console.WriteLine("MyServiceHost Constructor"); }  
+    public MyServiceHost(Type serviceType, params Uri[] baseAddresses)    
+      : base(serviceType, baseAddresses)  
+    {
+        Console.WriteLine("MyServiceHost Constructor");
+    }  
   
-  protected override void ApplyConfiguration()  
-  {  
-    string straddress = GetAddress();  
-    Uri address = new Uri(straddress);  
-    Binding binding = GetBinding();  
-    base.AddServiceEndpoint(typeof(IData), binding, address);  
-  }  
+    protected override void ApplyConfiguration()  
+    {  
+        string straddress = GetAddress();  
+        Uri address = new Uri(straddress);  
+        Binding binding = GetBinding();  
+        base.AddServiceEndpoint(typeof(IData), binding, address);  
+    }  
   
-  string GetAddress()  
-  { return "http://MyMachine:7777/MyEndpointAddress/"; }  
+    string GetAddress()  
+    {
+        return "http://MyMachine:7777/MyEndpointAddress/";
+    }  
   
-  Binding GetBinding()  
-  {  
-    WSHttpBinding binding = new WSHttpBinding();  
-    binding.Security.Mode = SecurityMode.None;  
-    return binding;  
-  }  
+    Binding GetBinding()  
+    {  
+        WSHttpBinding binding = new WSHttpBinding();  
+        binding.Security.Mode = SecurityMode.None;  
+        return binding;  
+    }  
 }  
 ```  
   
@@ -110,7 +114,7 @@ public class MyServiceHost : ServiceHost
   
     1.  Add the identity credentials to the endpoint element in the client’s App.config file:  
   
-        ```  
+        ```xml
         <endpoint   
           address="http://MyServer:8000/MyService/"   
           binding="wsHttpBinding"   
@@ -126,8 +130,8 @@ public class MyServiceHost : ServiceHost
   
     2.  Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
   
-        ```  
-        at 12:36  /interactive "cmd.exe"  
+        ```console
+        at 12:36 /interactive "cmd.exe"  
         ```  
   
     3.  Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
@@ -176,7 +180,7 @@ public class MyServiceHost : ServiceHost
   
  The following code example shows an example client configuration file.  
   
-```  
+```xml
 <endpoint   
   address=http://localhost:8000/MyServer/  
   binding="wsHttpBinding"  
@@ -203,52 +207,52 @@ public class MyServiceHost : ServiceHost
   
 ```xml  
 <services>  
-      <service name="Microsoft.Samples.NetTcp.CalculatorService">  
-        <endpoint address="calcsvc" binding ="netTcpBinding" contract="Microsoft.Samples.NetTcp.ICalculator"/>  
-        <endpoint address="mex" binding="mexTcpBinding" contract="IMetadataExchange" />  
-      </service>  
-    </services>  
+  <service name="Microsoft.Samples.NetTcp.CalculatorService">  
+    <endpoint address="calcsvc" binding ="netTcpBinding" contract="Microsoft.Samples.NetTcp.ICalculator"/>  
+    <endpoint address="mex" binding="mexTcpBinding" contract="IMetadataExchange" />  
+  </service>  
+</services>  
 ```  
   
  And if you modify one of the NetTcpBinding settings as shown in the following configuration snippet:  
   
 ```xml  
 <bindings>  
-      <netTcpBinding>  
-        <binding closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" transactionFlow="false" transferMode="Buffered" transactionProtocol="OleTransactions" hostNameComparisonMode="StrongWildcard" listenBacklog="10" maxBufferPoolSize="524288" maxBufferSize="65536" maxConnections="11" maxReceivedMessageSize="65536">  
-          <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384"/>  
-          <reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false"/>  
-          <security mode="Transport">  
-            <transport clientCredentialType="Windows" protectionLevel="EncryptAndSign"/>  
-          </security>  
-        </binding>  
-      </netTcpBinding>  
-    </bindings>  
+  <netTcpBinding>  
+    <binding closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" transactionFlow="false" transferMode="Buffered" transactionProtocol="OleTransactions" hostNameComparisonMode="StrongWildcard" listenBacklog="10" maxBufferPoolSize="524288" maxBufferSize="65536" maxConnections="11" maxReceivedMessageSize="65536">  
+      <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384"/>  
+      <reliableSession ordered="true" inactivityTimeout="00:10:00" enabled="false"/>  
+      <security mode="Transport">  
+        <transport clientCredentialType="Windows" protectionLevel="EncryptAndSign"/>  
+      </security>  
+    </binding>  
+  </netTcpBinding>  
+</bindings>  
 ```  
   
  You will see an error like the following: Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is already a listener on IP endpoint 0.0.0.0:9000 You can work around this error by specifying a fully qualified URL with a different port for the MEX endpoint as shown in the following configuration snippet:  
   
-```  
+```xml
 <services>  
-      <service name="Microsoft.Samples.NetTcp.CalculatorService">  
-        <endpoint address="calcsvc" binding ="netTcpBinding" contract="Microsoft.Samples.NetTcp.ICalculator"/>  
-        <endpoint address="net.tcp://localhost:9001/servicemodelsamples/mex" binding="mexTcpBinding" contract="IMetadataExchange" />  
-      </service>  
-    </services>  
+  <service name="Microsoft.Samples.NetTcp.CalculatorService">  
+    <endpoint address="calcsvc" binding ="netTcpBinding" contract="Microsoft.Samples.NetTcp.ICalculator"/>  
+    <endpoint address="net.tcp://localhost:9001/servicemodelsamples/mex" binding="mexTcpBinding" contract="IMetadataExchange" />  
+  </service>  
+</services>  
 ```  
   
 <a name="BK_MK99"></a>   
 ## When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed  
  Calling a WCF Web HTTP application (a service that uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior>) from a WCF service may generate the following exception: `Unhandled Exception: System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The remote server returned an unexpected response: (405) Method Not Allowed.` This exception occurs because WCF overwrites the outgoing <xref:System.ServiceModel.OperationContext> with the incoming <xref:System.ServiceModel.OperationContext>. To solve this problem create an <xref:System.ServiceModel.OperationContextScope> within the WCF Web HTTP service operation. For example:  
   
-```ecmascript  
+```csharp
 public string Echo(string input)  
-        {  
-            using (new OperationContextScope(this.InnerChannel))  
-            {  
-                return base.Channel.Echo(input);  
-            }  
-        }  
+{  
+    using (new OperationContextScope(this.InnerChannel))  
+    {  
+        return base.Channel.Echo(input);  
+    }  
+}  
 ```  
   
 ## See Also  

@@ -70,9 +70,9 @@ Public Class Form1
     End Sub
 End Class
 
+' <snippet9>
 ' This class implements a simple customer type 
 ' that implements the IPropertyChange interface.
-
 Public Class DemoCustomer
     Implements INotifyPropertyChanged
 
@@ -110,7 +110,6 @@ Public Class DemoCustomer
         End Get
     End Property
 
-
     Public Property CustomerName() As String
         Get
             Return Me.customerNameValue
@@ -123,7 +122,6 @@ Public Class DemoCustomer
             End If
         End Set
     End Property
-
 
     Public Property PhoneNumber() As String
         Get
@@ -138,4 +136,5 @@ Public Class DemoCustomer
         End Set
     End Property
 End Class
+' </snippet9>
 ' </snippet1>

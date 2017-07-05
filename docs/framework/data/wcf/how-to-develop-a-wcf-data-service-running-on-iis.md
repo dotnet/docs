@@ -51,13 +51,13 @@ This topic shows how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-
   
     -   32-bit systems:  
   
-        ```ms-dos  
+        ```console
         "%windir%\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\ServiceModelReg.exe" -i  
         ```  
   
     -   64-bit systems:  
   
-        ```ms-dos  
+        ```console
         "%windir%\Microsoft.NET\Framework64\v3.0\Windows Communication Foundation\ServiceModelReg.exe" -i  
         ```  
   
@@ -67,13 +67,13 @@ This topic shows how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-
   
     -   32-bit systems:  
   
-        ```ms-dos  
+        ```console
         "%windir%\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis.exe" -i -enable  
         ```  
   
     -   64-bit systems:  
   
-        ```ms-dos  
+        ```console
         "%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe" -i -enable  
         ```  
   

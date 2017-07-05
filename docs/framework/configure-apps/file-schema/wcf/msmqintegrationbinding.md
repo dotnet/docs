@@ -29,7 +29,7 @@ msmqIntegrationBinding
   
 ## Syntax  
   
-```  
+```xml  
 <msmqIntegrationBinding>  
    <binding   
        closeTimeout="TimeSpan"   
@@ -108,7 +108,7 @@ msmqIntegrationBinding
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
     <bindings>  

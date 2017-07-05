@@ -1,0 +1,79 @@
+<Type Name="ResourcePool" FullName="System.EnterpriseServices.ResourcePool">
+  <TypeSignature Language="C#" Value="public sealed class ResourcePool" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourcePool extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ResourcePool" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects in the current transaction. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourcePool (System.EnterpriseServices.ResourcePool.TransactionEndDelegate cb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.EnterpriseServices.ResourcePool/TransactionEndDelegate cb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ResourcePool.#ctor(System.EnterpriseServices.ResourcePool.TransactionEndDelegate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cb" Type="System.EnterpriseServices.ResourcePool+TransactionEndDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="cb">A <see cref="T:System.EnterpriseServices.ResourcePool.TransactionEndDelegate" />, that is called when a transaction is finished. All items currently stored in the transaction are handed back to the user through the delegate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ResourcePool" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResource">
+      <MemberSignature Language="C#" Value="public object GetResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetResource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ResourcePool.GetResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a resource from the current transaction.</summary>
+        <returns>The resource object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PutResource">
+      <MemberSignature Language="C#" Value="public bool PutResource (object resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool PutResource(object resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ResourcePool.PutResource(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resource" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="resource">The resource to add.</param>
+        <summary>Adds a resource to the current transaction.</summary>
+        <returns>
+          <see langword="true" /> if the resource object was added to the pool; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

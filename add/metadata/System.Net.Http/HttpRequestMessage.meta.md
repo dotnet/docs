@@ -11,12 +11,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.HttpRequestMessage.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.HttpRequestMessage.Headers
 ms.author: "bobdel"
 manager: "markl"
@@ -42,12 +36,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Http.HttpRequestMessage.Properties
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Http.HttpRequestMessage.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

@@ -41,7 +41,7 @@
   
  The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Item%2A> property handles attempts to insert malicious code. For example, the following code, using the default <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Item%2A> property (the indexer, in C#) correctly escapes the nested key/value pair.  
   
-```vb  
+```vb
 Dim builder As _  
  New System.Data.Odbc.OdbcConnectionStringBuilder  
 ' Take advantage of the Driver property.   
@@ -50,7 +50,7 @@ builder("Server") = "MyServer;NewValue=Bad"
 Console.WriteLine(builder.ConnectionString)  
 ```  
   
-```csharp  
+```csharp
 System.Data.Odbc.OdbcConnectionStringBuilder builder =   
   new System.Data.Odbc.OdbcConnectionStringBuilder();  
 // Take advantage of the Driver property.   
@@ -163,7 +163,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Clear%2A> method removes all key/value pairs from the <xref:System.Data.Odbc.OdbcConnectionStringBuilder> and resets the <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Driver%2A> and <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Dsn%2A> properties to their default values. The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Clear%2A> method also sets the <xref:System.Data.Common.DbConnectionStringBuilder.Count%2A> property to 0 and the <xref:System.Data.Odbc.OdbcConnectionStringBuilder.ConnectionString> property to an empty string.  
+ The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Clear%2A> method removes all key/value pairs from the <xref:System.Data.Odbc.OdbcConnectionStringBuilder> and resets the <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Driver%2A> and <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Dsn%2A> properties to their default values. The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Clear%2A> method also sets the <xref:System.Data.Common.DbConnectionStringBuilder.Count%2A> property to 0 and the <xref:System.Data.Odbc.OdbcConnection.ConnectionString*> property to an empty string.  
   
    
   

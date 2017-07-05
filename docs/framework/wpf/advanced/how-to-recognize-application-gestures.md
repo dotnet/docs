@@ -19,7 +19,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Recognize Application Gestures
-The following example demonstrates how to erase ink when a user makes a <xref:System.Windows.Ink.ApplicationGesture> gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes an <xref:System.Windows.Controls.InkCanvas>, called `inkCanvas1`, is declared in the XAML file.  
+The following example demonstrates how to erase ink when a user makes a <xref:System.Windows.Ink.ApplicationGesture.ScratchOut> gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes an <xref:System.Windows.Controls.InkCanvas>, called `inkCanvas1`, is declared in the XAML file.  
   
 ## Example  
  [!code-csharp[HowToRecognizeGestures#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToRecognizeGestures/CSharp/Window1.xaml.cs#1)]

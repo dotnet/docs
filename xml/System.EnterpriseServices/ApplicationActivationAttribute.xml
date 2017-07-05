@@ -1,0 +1,116 @@
+<Type Name="ApplicationActivationAttribute" FullName="System.EnterpriseServices.ApplicationActivationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationActivationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationActivationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ApplicationActivationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether components in the assembly run in the creator's process or in a system process.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of `ApplicationActivationAttribute` to mark a <xref:System.EnterpriseServices.ServicedComponent>.  
+  
+ [!code-cpp[EnterpriseServices_Basic#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Basic/CPP/calculator.cpp#1)]
+ [!code-csharp[EnterpriseServices_Basic#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Basic/CS/calculator.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationActivationAttribute (System.EnterpriseServices.ActivationOption opt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.EnterpriseServices.ActivationOption opt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ApplicationActivationAttribute.#ctor(System.EnterpriseServices.ActivationOption)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="opt" Type="System.EnterpriseServices.ActivationOption" />
+      </Parameters>
+      <Docs>
+        <param name="opt">One of the <see cref="T:System.EnterpriseServices.ActivationOption" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ApplicationActivationAttribute" /> class, setting the specified <see cref="T:System.EnterpriseServices.ActivationOption" /> value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapMailbox">
+      <MemberSignature Language="C#" Value="public string SoapMailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SoapMailbox" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationActivationAttribute.SoapMailbox" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not supported in the current version.</summary>
+        <value>This property is not supported in the current version.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapVRoot">
+      <MemberSignature Language="C#" Value="public string SoapVRoot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SoapVRoot" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationActivationAttribute.SoapVRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value representing a virtual root on the Web for the COM+ application.</summary>
+        <value>The virtual root on the Web for the COM+ application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When used, all the work required to set up or tear down SOAP for the application occurs. If this property is set for an application that is running on a computer on which the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)] is not installed, an error occurs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.ActivationOption Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.ActivationOption Value" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ApplicationActivationAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ActivationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.EnterpriseServices.ActivationOption" /> value.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.ActivationOption" /> values, either <see langword="Library" /> or <see langword="Server" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

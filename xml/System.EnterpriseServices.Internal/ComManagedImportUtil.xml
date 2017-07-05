@@ -1,0 +1,143 @@
+<Type Name="ComManagedImportUtil" FullName="System.EnterpriseServices.Internal.ComManagedImportUtil">
+  <TypeSignature Language="C#" Value="public class ComManagedImportUtil : System.EnterpriseServices.Internal.IComManagedImportUtil" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComManagedImportUtil extends System.Object implements class System.EnterpriseServices.Internal.IComManagedImportUtil" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ComManagedImportUtil" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.Internal.IComManagedImportUtil</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3b0398c9-7812-4007-85cb-18c771f2206f")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies and installs components in the COM+ catalog.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Internal.ComManagedImportUtil> is used internally by the .NET Framework. You do not need to use the class directly in your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComManagedImportUtil ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.ComManagedImportUtil" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetComponentInfo">
+      <MemberSignature Language="C#" Value="public void GetComponentInfo (string assemblyPath, out string numComponents, out string componentInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetComponentInfo(string assemblyPath, string numComponents, string componentInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyPath" Type="System.String" />
+        <Parameter Name="numComponents" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="componentInfo" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyPath">The path to the assembly.</param>
+        <param name="numComponents">When this method returns, this parameter contains the number of components in the assembly.</param>
+        <param name="componentInfo">When this method returns, this parameter contains the information about the components.</param>
+        <summary>Gets the component information from the assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the COM+ catalog to identify the class identifiers (CLSIDs) and ProgIDs of the components in a DLL before it is registered.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assemblyPath" /> is an empty string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.  
+  
+ -or-  
+  
+ The system could not retrieve the absolute path.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permissions.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyPath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="assemblyPath" /> contains a colon (":").</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string asmpath, string parname, string appname);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallAssembly(string asmpath, string parname, string appname) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asmpath" Type="System.String" />
+        <Parameter Name="parname" Type="System.String" />
+        <Parameter Name="appname" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="asmpath">The path for the assembly.</param>
+        <param name="parname">The COM+ partition name.</param>
+        <param name="appname">The COM+ application name.</param>
+        <summary>Installs an assembly into a COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Internal.ComManagedImportUtil.InstallAssembly%2A> calls <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A?displayProperty=fullName>, which performs the following steps:  
+  
+1.  Registration of the assembly.  
+  
+2.  Generation of a type library.  
+  
+3.  Registration of the type library.  
+  
+4.  Installation of the type library under the specified application.  
+  
+5.  Configuration of the components contained in the type library.  
+  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.EnterpriseServices.RegistrationException">The input assembly does not have a strong name.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to access the registry. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

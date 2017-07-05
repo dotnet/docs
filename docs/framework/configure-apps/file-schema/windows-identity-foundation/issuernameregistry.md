@@ -26,7 +26,7 @@ Configures the issuer name registry that is used by handlers in the token handle
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -74,7 +74,7 @@ Configures the issuer name registry that is used by handlers in the token handle
 ## Example  
  The following XML shows how to specify the configuration based issuer name registry.  
   
-```  
+```xml  
 <issuerNameRegistry type="System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">  
   <trustedIssuers>  
     <add thumbprint="9B74CB … 1EF40D0" name="LocalSTS" />  

@@ -25,7 +25,7 @@ In some cases, the use of reflection in code isn't obvious, and so the [!INCLUDE
   
  For this code to succeed at run time, several items of metadata are required. The first is `Browse` metadata for the uninstantiated generic type, `AppClass<T>`:  
   
-```  
+```xml  
 <Type Name="App1.AppClass`1" Browse="Required PublicAndInternal" />  
 ```  
   
@@ -41,7 +41,7 @@ App1.AppClass`1<System.Int32>.
   
  You can add the following run-time directive to the runtime directives file to add `Activate` metadata for the specific instantiation over `AppClass<T>` of <xref:System.Int32?displayProperty=fullName>:  
   
-```  
+```xml  
 <TypeInstantiation Name="App1.AppClass" Arguments="System.Int32"   
                    Activate="Required Public" />  
 ```  
@@ -67,7 +67,7 @@ App1.AppClass`1<System.Int32>.
   
  The following runtime directives ensure that all required metadata is available:  
   
-```  
+```xml  
 <Type Name="App1.Class1" Browse="Required PublicAndInternal">  
    <MethodInstantiation Name="GenMethod" Arguments="System.Int32" Dynamic="Required"/>  
 </Type>  
@@ -92,7 +92,7 @@ Unfortunately, no further information is available.
   
  `Browse` metadata for the array type is required to dynamically instantiate it.  The following runtime directive allows dynamic instantiation of `Class1[]`.  
   
-```  
+```xml  
 <Type Name="App1.Class1[]" Browse="Required Public" />  
 ```  
   

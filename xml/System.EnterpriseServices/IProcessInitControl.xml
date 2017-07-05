@@ -1,0 +1,52 @@
+<Type Name="IProcessInitControl" FullName="System.EnterpriseServices.IProcessInitControl">
+  <TypeSignature Language="C#" Value="public interface IProcessInitControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessInitControl" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IProcessInitControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("72380d55-8d2b-43a3-8513-2b6ef31434e9")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports setting the time-out for the <see cref="M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)" /> method.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResetInitializerTimeout">
+      <MemberSignature Language="C#" Value="public void ResetInitializerTimeout (int dwSecondsRemaining);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetInitializerTimeout(int32 dwSecondsRemaining) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IProcessInitControl.ResetInitializerTimeout(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwSecondsRemaining" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dwSecondsRemaining">The number of seconds that remain before the time taken to execute the start up method times out.</param>
+        <summary>Sets the number of seconds remaining before the <see cref="M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)" /> method times out.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each call to <xref:System.EnterpriseServices.IProcessInitializer.Startup%2A> is initially given a default 30 seconds to execute unless the time-out value is reset using this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -19,8 +19,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables COM+ object construction support. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of initial property values for an instance of <xref:System.EnterpriseServices.ConstructionEnabledAttribute>, see the <xref:System.EnterpriseServices.ConstructionEnabledAttribute.%23ctor%2A> constructor.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this attribute to associate an object constructor string with a <xref:System.EnterpriseServices.ServicedComponent> class.  
+  
+ [!code-cpp[EnterpriseServices_Security#4](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#4)]
+ [!code-csharp[EnterpriseServices_Security#4](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#4)]
+ [!code-vb[EnterpriseServices_Security#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#4)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +52,20 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ConstructionEnabledAttribute" /> class and initializes the default settings for <see cref="P:System.EnterpriseServices.ConstructionEnabledAttribute.Enabled" /> and <see cref="P:System.EnterpriseServices.ConstructionEnabledAttribute.Default" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.EnterpriseServices.ConstructionEnabledAttribute>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|`Default`|An empty string ("")|  
+|`Enabled`|`true`|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,8 +81,9 @@
         <Parameter Name="val" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="val">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="val">
+          <see langword="true" /> to enable COM+ object construction support; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ConstructionEnabledAttribute" /> class, setting <see cref="P:System.EnterpriseServices.ConstructionEnabledAttribute.Enabled" /> to the specified value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +100,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a default value for the constructor string.</summary>
+        <value>The value to be used for the default constructor string. The default is an empty string ("").</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +118,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether COM+ object construction support is enabled.</summary>
+        <value>
+          <see langword="true" /> if COM+ object construction support is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ConstructionEnabledAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

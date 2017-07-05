@@ -19,8 +19,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Identifies a component as a private component that is only seen and activated by components in the same application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.EnterpriseServices.PrivateComponentAttribute> type.  
+  
+ [!code-cpp[EnterpriseServicesPrivateComponentAttribute#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/cpp/class1.cpp#0)]
+ [!code-csharp[EnterpriseServicesPrivateComponentAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesPrivateComponentAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +50,19 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.PrivateComponentAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.PrivateComponentAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesPrivateComponentAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/cpp/class1.cpp#1)]
+ [!code-csharp[EnterpriseServicesPrivateComponentAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesPrivateComponentAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesPrivateComponentAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

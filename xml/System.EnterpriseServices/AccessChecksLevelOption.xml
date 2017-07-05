@@ -10,8 +10,19 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the level of access checking for an application, either at the process level only or at all levels, including component, interface, and method levels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration in conjunction with the <xref:System.EnterpriseServices.ApplicationAccessControlAttribute> attribute.  
+  
+ [!code-cpp[EnterpriseServices_Security#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#2)]
+ [!code-csharp[EnterpriseServices_Security#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#2)]
+ [!code-vb[EnterpriseServices_Security#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -27,7 +38,7 @@
         <ReturnType>System.EnterpriseServices.AccessChecksLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables access checks only at the process level. No access checks are made at the component, interface, or method level.</summary>
       </Docs>
     </Member>
     <Member MemberName="ApplicationComponent">
@@ -43,7 +54,7 @@
         <ReturnType>System.EnterpriseServices.AccessChecksLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Enables access checks at every level on calls into the application.</summary>
       </Docs>
     </Member>
   </Members>

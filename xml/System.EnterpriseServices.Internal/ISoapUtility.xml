@@ -13,8 +13,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides utilities to support the exporting of COM+ SOAP-enabled application proxies by the server and the importing of the proxies by the client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The utility functions that <xref:System.EnterpriseServices.Internal.ISoapUtility> provides are called from numerous locations within COM+; however, their primary purpose is to support the export and import of client proxies.  
+  
+ See <xref:System.EnterpriseServices.Internal.SoapUtility> for the default implementation.  
+  
+ <xref:System.EnterpriseServices.Internal.ISoapUtility> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetServerBinPath">
@@ -41,12 +52,15 @@
         <Parameter Name="binPath" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="rootWebServer">To be added.</param>
-        <param name="inBaseUrl">To be added.</param>
-        <param name="inVirtualRoot">To be added.</param>
-        <param name="binPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="inBaseUrl">The base URL address.</param>
+        <param name="inVirtualRoot">The name of the virtual root.</param>
+        <param name="binPath">When this method returns, this parameter contains the file path for the SOAP virtual root bin directory.</param>
+        <summary>Returns the path for the SOAP virtual root bin directory.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+        <exception cref="T:System.EnterpriseServices.ServicedComponentException">The call to get the system directory failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetServerPhysicalPath">
@@ -73,12 +87,15 @@
         <Parameter Name="physicalPath" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="rootWebServer">To be added.</param>
-        <param name="inBaseUrl">To be added.</param>
-        <param name="inVirtualRoot">To be added.</param>
-        <param name="physicalPath">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="inBaseUrl">The base URL address.</param>
+        <param name="inVirtualRoot">The name of the virtual root.</param>
+        <param name="physicalPath">When this method returns, this parameter contains the file path for the SOAP virtual root.</param>
+        <summary>Returns the path for the SOAP virtual root.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+        <exception cref="T:System.EnterpriseServices.ServicedComponentException">The call to get the system directory failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Present">
@@ -100,8 +117,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Determines whether authenticated, encrypted SOAP interfaces are present.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
       </Docs>
     </Member>
   </Members>

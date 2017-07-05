@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the mode for accessing shared properties in the shared property group manager.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,17 @@
         <ReturnType>System.EnterpriseServices.PropertyLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Locks all the properties in the shared property group for exclusive use by the caller, as long as the caller's current method is executing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Do not use <xref:System.EnterpriseServices.PropertyLockMode.Method> when creating a property group in a constructor because this can cause a deadlock.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetGet">
@@ -48,7 +58,7 @@
         <ReturnType>System.EnterpriseServices.PropertyLockMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Locks a property during a get or set, assuring that every get or set operation on a shared property is atomic.</summary>
       </Docs>
     </Member>
   </Members>

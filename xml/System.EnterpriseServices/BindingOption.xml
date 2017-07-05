@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Indicates whether all work submitted by <see cref="T:System.EnterpriseServices.Activity" /> should be bound to only one single-threaded apartment (STA). This enumeration has no impact on the multithreaded apartment (MTA).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The work submitted by the activity is bound to a single STA.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoBinding">
@@ -48,7 +48,7 @@
         <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The work submitted by the activity is not bound to a single STA.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
-ms.date: 03/16/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -26,7 +26,9 @@ See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/rel
 
 ## .NET Core dependencies
 
-.NET Core requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a Terminal (command) prompt:
+**.NET Core 1.x**
+
+.NET Core 1.x requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a Terminal (command) prompt:
 
 ```console
 brew update
@@ -36,13 +38,17 @@ ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
 ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 ```
 
-After installing OpenSSL, download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md) topic.
+Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md) topic.
+
+**.NET Core 2.x**
+
+Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md) topic.
 
 ## Visual Studio for Mac
 
 .NET Core development on macOS with Visual Studio for Mac requires:
 
 * A supported version of the macOS operating system
-* OpenSSL
+* OpenSSL (.NET Core 1.x only; .NET Core 2.x uses security services available natively in macOS)
 * .NET Core SDK for Mac
 * [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

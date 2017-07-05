@@ -41,7 +41,7 @@ There are also a few disadvantages:
 
 ## Self-contained deployments (SCD)
 
-For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms (for example, OpenSSL on macOS), so these must be present before the app runs.
+For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs.
 
 ### Why deploy a self-contained deployment?
 

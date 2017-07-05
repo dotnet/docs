@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains information describing an active Compensating Resource Manager (CRM) Clerk object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,8 +28,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the activity ID of the current Compensating Resource Manager (CRM) Worker.</summary>
+        <value>Gets the activity ID of the current Compensating Resource Manager (CRM) Worker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +46,9 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.Clerk</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets <see cref="F:System.Runtime.InteropServices.UnmanagedType.IUnknown" /> for the current Clerk.</summary>
+        <value>
+          <see cref="F:System.Runtime.InteropServices.UnmanagedType.IUnknown" /> for the current Clerk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +65,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the ProgId of the Compensating Resource Manager (CRM) Compensator for the current CRM Clerk.</summary>
+        <value>The ProgId of the CRM Compensator for the current CRM Clerk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +83,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the description of the Compensating Resource Manager (CRM) Compensator for the current CRM Clerk. The description string is the string that was provided by the <see langword="ICrmLogControl::RegisterCompensator" /> method.</summary>
+        <value>The description of the CRM Compensator for the current CRM Clerk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Frees the resources of the current <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> before it is reclaimed by the garbage collector.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +119,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the instance class ID (CLSID) of the current Compensating Resource Manager (CRM) Clerk.</summary>
+        <value>The instance CLSID of the current CRM Clerk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,8 +137,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the unit of work (UOW) of the transaction for the current Compensating Resource Manager (CRM) Clerk.</summary>
+        <value>The UOW of the transaction for the current CRM Clerk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -20,8 +20,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Imports authenticated, encrypted SOAP client proxies. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Internal.SoapClientImport> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,7 +42,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.SoapClientImport" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,14 +67,23 @@
         <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="progId">To be added.</param>
-        <param name="virtualRoot">To be added.</param>
-        <param name="baseUrl">To be added.</param>
-        <param name="authentication">To be added.</param>
-        <param name="assemblyName">To be added.</param>
-        <param name="typeName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="progId">The programmatic identifier of the class. If an empty string (""), this method returns without doing anything.</param>
+        <param name="virtualRoot">The name of the virtual root.</param>
+        <param name="baseUrl">The base URL that contains the virtual root.</param>
+        <param name="authentication">The type of ASP.NET authentication to use.</param>
+        <param name="assemblyName">The name of the assembly.</param>
+        <param name="typeName">The name of the type.</param>
+        <summary>Creates a .NET remoting client configuration file that includes security and authentication options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Uri.Scheme%2A> for the full URL is HTTPS and authentication is not provided, authentication is set to `Windows`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
   </Members>

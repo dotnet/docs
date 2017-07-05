@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether to create a new context based on the current context or on the information in <see cref="T:System.EnterpriseServices.ServiceConfig" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.InheritanceOption> is used for the value of <xref:System.EnterpriseServices.ServiceConfig.Inheritance%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ignore">
@@ -32,7 +39,7 @@
         <ReturnType>System.EnterpriseServices.InheritanceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The new context is created from the default context.</summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -48,7 +55,7 @@
         <ReturnType>System.EnterpriseServices.InheritanceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The new context is created from the existing context. <see cref="F:System.EnterpriseServices.InheritanceOption.Inherit" /> is the default value for <see cref="P:System.EnterpriseServices.ServiceConfig.Inheritance" />.</summary>
       </Docs>
     </Member>
   </Members>

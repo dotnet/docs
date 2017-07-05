@@ -235,7 +235,7 @@
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Eliminates unescaped white space from the pattern and enables comments marked with #. However, this value does not affect or eliminate white space in , numeric , or tokens that mark the beginning of individual . For more information, see the "Ignore White Space" section of the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
+        <summary>Eliminates unescaped white space from the pattern and enables comments marked with #. However, this value does not affect or eliminate white space in [character classes](~/docs/standard/base-types/character-classes-in-regular-expressions.md), numeric [quantifiers](~/docs/standard/base-types/quantifiers-in-regular-expressions.md), or tokens that mark the beginning of individual [regular expression language elements](~/docs/standard/base-types/regular-expression-language-quick-reference.md). For more information, see the "Ignore White Space" section of the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
     </Member>
     <Member MemberName="Multiline">

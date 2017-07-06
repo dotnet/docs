@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the thread pool in which the work, submitted by <see cref="T:System.EnterpriseServices.Activity" />, runs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ThreadPoolOption> is used for the value of <xref:System.EnterpriseServices.ServiceConfig.ThreadPool%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Inherit">
@@ -32,7 +39,7 @@
         <ReturnType>System.EnterpriseServices.ThreadPoolOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The same type of thread pool apartment as the caller's thread apartment is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="MTA">
@@ -48,7 +55,7 @@
         <ReturnType>System.EnterpriseServices.ThreadPoolOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A multithreaded apartment (MTA) is used.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -64,7 +71,7 @@
         <ReturnType>System.EnterpriseServices.ThreadPoolOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No thread pool is used. If this value is used to configure a <see cref="T:System.EnterpriseServices.ServiceConfig" /> that is passed to an <see cref="T:System.EnterpriseServices.Activity" />, an exception is thrown.</summary>
       </Docs>
     </Member>
     <Member MemberName="STA">
@@ -80,7 +87,7 @@
         <ReturnType>System.EnterpriseServices.ThreadPoolOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A single-threaded apartment (STA) is used.</summary>
       </Docs>
     </Member>
   </Members>

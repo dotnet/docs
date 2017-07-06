@@ -16,8 +16,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of shared properties. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The shared property group is synchronized by the containing manager.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.EnterpriseServices.SharedPropertyGroupManager> class to create a SharedPropertyGroup.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#0)]
+ [!code-csharp[EnterpriseServices_SharedProperties#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#0)]
+ [!code-vb[EnterpriseServices_SharedProperties#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateProperty">
@@ -37,11 +53,22 @@
         <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="fExists">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the new property.</param>
+        <param name="fExists">Determines whether the property exists. Set to <see langword="true" /> on return if the property exists.</param>
+        <summary>Creates a property with the given name.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the `CreateProperty` method to create a shared property.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#21](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#21)]
+ [!code-csharp[EnterpriseServices_SharedProperties#21](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#21)]
+ [!code-vb[EnterpriseServices_SharedProperties#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#21)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePropertyByPosition">
@@ -61,10 +88,10 @@
         <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <param name="fExists">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">The index of the new property</param>
+        <param name="fExists">Determines whether the property exists. Set to <see langword="true" /> on return if the property exists.</param>
+        <summary>Creates a property at the given position.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +111,17 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of requested property.</param>
+        <summary>Returns the property with the given name.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike <xref:System.EnterpriseServices.SharedPropertyGroup.CreateProperty%2A>, this property must already exist.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyByPosition">
@@ -106,10 +140,17 @@
         <Parameter Name="position" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="position">The index of the property.</param>
+        <summary>Returns the property at the given position.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike <xref:System.EnterpriseServices.SharedPropertyGroup.CreatePropertyByPosition%2A>, this property must already exist.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

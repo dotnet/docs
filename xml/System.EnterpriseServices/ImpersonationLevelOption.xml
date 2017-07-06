@@ -10,8 +10,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the level of impersonation allowed when calling targets of a server application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If impersonation succeeds, the client lets the server impersonate the client to some degree. The varying degrees of impersonation are called impersonation levels, and they indicate how much authority is given to the server when it is impersonating the client.  
+  
+ For library (inproc) applications, the only valid settings are `Default` or none specified.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration in conjunction with the <xref:System.EnterpriseServices.ApplicationAccessControlAttribute> attribute.  
+  
+ [!code-cpp[EnterpriseServices_Security#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#2)]
+ [!code-csharp[EnterpriseServices_Security#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#2)]
+ [!code-vb[EnterpriseServices_Security#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#2)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Anonymous">
@@ -27,7 +45,7 @@
         <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client is anonymous to the server. The server process can impersonate the client, but the impersonation token does not contain any information about the client.</summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -43,7 +61,7 @@
         <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Uses the default impersonation level for the specified authentication service. In COM+, this setting is provided by the <see langword="DefaultImpersonationLevel" /> property in the <see langword="LocalComputer" /> collection.</summary>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -59,7 +77,7 @@
         <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The most powerful impersonation level. When this level is selected, the server (whether local or remote) can impersonate the client's security context while acting on behalf of the client</summary>
       </Docs>
     </Member>
     <Member MemberName="Identify">
@@ -75,7 +93,7 @@
         <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The system default level. The server can obtain the client's identity, and the server can impersonate the client to do ACL checks.</summary>
       </Docs>
     </Member>
     <Member MemberName="Impersonate">
@@ -91,7 +109,7 @@
         <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The server can impersonate the client's security context while acting on behalf of the client. The server can access local resources as the client.</summary>
       </Docs>
     </Member>
   </Members>

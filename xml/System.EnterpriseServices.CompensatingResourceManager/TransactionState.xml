@@ -10,7 +10,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the state of the current Compensating Resource Manager (CRM) transaction.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +27,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction is aborted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -43,7 +43,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction is active.</summary>
       </Docs>
     </Member>
     <Member MemberName="Committed">
@@ -59,7 +59,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction is commited.</summary>
       </Docs>
     </Member>
     <Member MemberName="Indoubt">
@@ -75,7 +75,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.TransactionState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction is in-doubt.</summary>
       </Docs>
     </Member>
   </Members>

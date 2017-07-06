@@ -11,8 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains information that regards an identity in a COM+ call chain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not create new instances programmatically. Instead, you obtain new instances from <xref:System.EnterpriseServices.SecurityCallContext> and <xref:System.EnterpriseServices.SecurityCallers>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AccountName">
@@ -28,8 +35,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the user described by this identity.</summary>
+        <value>The name of the user described by this identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,8 @@
         <ReturnType>System.EnterpriseServices.AuthenticationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the authentication level of the user described by this identity.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.AuthenticationOption" /> values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,8 +71,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the authentication service described by this identity.</summary>
+        <value>The authentication service described by this identity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +89,8 @@
         <ReturnType>System.EnterpriseServices.ImpersonationLevelOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the impersonation level of the user described by this identity.</summary>
+        <value>A <see cref="T:System.EnterpriseServices.ImpersonationLevelOption" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

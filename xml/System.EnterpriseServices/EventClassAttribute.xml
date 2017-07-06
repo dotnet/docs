@@ -19,8 +19,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Marks the attributed class as an event class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `EventClass` is specified, it must not be disabled in the COM+ catalog; if enabled in the COM+ catalog, it must be specified on the component.  
+  
+ Method calls on an event class are never delivered to the implementation; they are instead delivered to event subscribers.  
+  
+ For a list of initial property values for an instance of <xref:System.EnterpriseServices.EventClassAttribute>, see the <xref:System.EnterpriseServices.EventClassAttribute.%23ctor%2A> constructor.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +47,21 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.EventClassAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no unconfigured default value for this attribute. The following table shows initial property values for a configured instance of <xref:System.EnterpriseServices.EventClassAttribute>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|`FireInParallel`|`false`|  
+|`AllowInProcSubscribers`|`true`|  
+|`PublisherFilter`|`null`|  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInprocSubscribers">
@@ -51,8 +77,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether subscribers can be activated in the publisher's process.</summary>
+        <value>
+          <see langword="true" /> if subscribers can be activated in the publisher's process; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,8 +96,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether events are to be delivered to subscribers in parallel.</summary>
+        <value>
+          <see langword="true" /> if events are to be delivered to subscribers in parallel; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,8 +115,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a publisher filter for an event method.</summary>
+        <value>The publisher filter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

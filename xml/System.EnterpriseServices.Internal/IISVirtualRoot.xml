@@ -20,8 +20,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates and deletes Internet Information Services (IIS) 6.0 virtual roots.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> interface defines methods for creating and deleting virtual roots in IIS 6.0.  
+  
+ This interface is implemented only by the <xref:System.EnterpriseServices.Internal.IISVirtualRoot> class and is used only within the .NET Framework infrastructure while creating a SOAP-enabled COM+ application virtual root.  
+  
+ <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> does not need to be implemented directly in your code. Instead, use the <xref:System.EnterpriseServices.Internal.Publish> class, which implements the <xref:System.EnterpriseServices.Internal.IComSoapPublisher> interface that contains the <xref:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot%2A> and <xref:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot%2A> methods. However, <xref:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot%2A> is not fully implemented by <xref:System.EnterpriseServices.Internal.Publish>.  
+  
+ <xref:System.EnterpriseServices.Internal.IISVirtualRoot> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,8 +49,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.IISVirtualRoot" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -58,12 +73,20 @@
         <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="RootWeb">To be added.</param>
-        <param name="inPhysicalDirectory">To be added.</param>
-        <param name="VirtualDirectory">To be added.</param>
-        <param name="Error">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="RootWeb">A string with the value <c>"IIS://localhost/W3SVC/1/ROOT"</c> representing the root Web server.</param>
+        <param name="inPhysicalDirectory">The physical path of the virtual root, which corresponds to <c>PhysicalPath</c> from the <see cref="M:System.EnterpriseServices.Internal.Publish.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
+        <param name="VirtualDirectory">The name of the virtual root, which corresponds to <c>VirtualRoot</c> from <see cref="M:System.EnterpriseServices.Internal.Publish.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" />.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Creates an Internet Information Services (IIS) virtual root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not need to call the <xref:System.EnterpriseServices.Internal.IISVirtualRoot.Create%2A> method from your code. Instead, use the <xref:System.EnterpriseServices.Internal.Publish.CreateVirtualRoot%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -85,12 +108,22 @@
         <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="RootWeb">To be added.</param>
-        <param name="PhysicalDirectory">To be added.</param>
-        <param name="VirtualDirectory">To be added.</param>
-        <param name="Error">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="RootWeb">The root Web server, as specified by <c>RootWebServer</c> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot(System.String,System.String,System.String@)" /> method.</param>
+        <param name="PhysicalDirectory">The physical path of the virtual root.</param>
+        <param name="VirtualDirectory">The name of the virtual root.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Deletes an Internet Information Services (IIS) virtual root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even though it is public, the <xref:System.EnterpriseServices.Internal.IISVirtualRoot.Delete%2A> method is not intended to be called directly.  
+  
+ Alternatively, there is the <xref:System.EnterpriseServices.Internal.Publish.DeleteVirtualRoot%2A> method. However, this method is not fully implemented.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

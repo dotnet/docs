@@ -15,8 +15,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a snapshot of all Clerks active in the process.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Compensating Resource Manager (CRM) Monitor can be used to examine the list of active Clerks performing transaction recovery in the current process.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,7 +37,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,8 +54,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the count of the Clerk monitors in the Compensating Resource Manager (CRM) monitor collection.</summary>
+        <value>The number of Clerk monitors in the CRM monitor collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +73,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Frees the resources of the current <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" /> before it is reclaimed by the garbage collector.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the enumeration of the clerks in the Compensating Resource Manager (CRM) monitor collection.</summary>
+        <returns>An enumerator describing the clerks in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,9 +112,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The integer index that identifies the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</param>
+        <summary>Gets the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</summary>
+        <value>The <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +134,9 @@
         <Parameter Name="index" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The numeric index that identifies the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</param>
+        <summary>Gets the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</summary>
+        <value>The <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,9 +154,18 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the Clerks collection object, which is a snapshot of the current state of the Clerks.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

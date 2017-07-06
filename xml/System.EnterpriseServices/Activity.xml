@@ -16,8 +16,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates an activity to do synchronous or asynchronous batch work that can use COM+ services without needing to create a COM+ component. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context associated with the activity is completely determined by a <xref:System.EnterpriseServices.ServiceConfig> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.EnterpriseServices.Activity> class and use the synchronization service.  
+  
+ [!code-csharp[EnterpriseServices_Activity#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Activity/CS/EnterpriseServices_Activity.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,9 +47,25 @@
         <Parameter Name="cfg" Type="System.EnterpriseServices.ServiceConfig" />
       </Parameters>
       <Docs>
-        <param name="cfg">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="cfg">A <see cref="T:System.EnterpriseServices.ServiceConfig" /> that contains the configuration information for the services to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Activity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates an <xref:System.EnterpriseServices.Activity> that is used to submit batch work to COM+ services. The context associated with the activity is completely determined by the <xref:System.EnterpriseServices.ServiceConfig> object that is passed through the `cfg` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a new instance of the <xref:System.EnterpriseServices.Activity> class.  
+  
+ [!code-csharp[EnterpriseServices_Activity#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Activity/CS/EnterpriseServices_Activity.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.EnterpriseServices.Activity" /> is not supported on the current platform.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsynchronousCall">
@@ -54,9 +84,18 @@
         <Parameter Name="serviceCall" Type="System.EnterpriseServices.IServiceCall" />
       </Parameters>
       <Docs>
-        <param name="serviceCall">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="serviceCall">A <see cref="T:System.EnterpriseServices.IServiceCall" /> object that is used to implement the batch work.</param>
+        <summary>Runs the specified user-defined batch work asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use this method.  
+  
+ [!code-csharp[EnterpriseServices_Activity#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Activity/CS/EnterpriseServices_Activity.cs#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BindToCurrentThread">
@@ -73,8 +112,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Binds the user-defined work to the current thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Activity.BindToCurrentThread%2A> binds the batch work that is submitted by the <xref:System.EnterpriseServices.Activity.SynchronousCall%2A> or <xref:System.EnterpriseServices.Activity.AsynchronousCall%2A> methods to the current single-threaded apartment (STA). <xref:System.EnterpriseServices.Activity.BindToCurrentThread%2A> has no effect if the current thread is being run in the multithreaded apartment (MTA). The current thread model is determined by the configuration of the <xref:System.EnterpriseServices.ServiceConfig.ThreadPool%2A> property of the <xref:System.EnterpriseServices.ServiceConfig> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SynchronousCall">
@@ -93,8 +139,8 @@
         <Parameter Name="serviceCall" Type="System.EnterpriseServices.IServiceCall" />
       </Parameters>
       <Docs>
-        <param name="serviceCall">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="serviceCall">A <see cref="T:System.EnterpriseServices.IServiceCall" /> object that is used to implement the batch work.</param>
+        <summary>Runs the specified user-defined batch work synchronously.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +158,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Unbinds the batch work that is submitted by the <see cref="M:System.EnterpriseServices.Activity.SynchronousCall(System.EnterpriseServices.IServiceCall)" /> or <see cref="M:System.EnterpriseServices.Activity.AsynchronousCall(System.EnterpriseServices.IServiceCall)" /> methods from the thread on which the batch work is running.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.Activity.UnbindFromThread%2A> has no effect if the batch work was not previously bound to a thread.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

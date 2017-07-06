@@ -11,8 +11,30 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Writes records of transactional actions to a log.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each clerk is associated with a compensator, which is called back to perform actions during the two-phase commit of the transaction.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this class.  
+  
+ [!code-cpp[EnterpriseServices_Crm#10](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#10)]
+ [!code-csharp[EnterpriseServices_Crm#10](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#10)]
+ [!code-vb[EnterpriseServices_Crm#10](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#10)]  
+  
+ The following code example demonstrates the corresponding <xref:System.EnterpriseServices.CompensatingResourceManager.Compensator> class.  
+  
+ [!code-cpp[EnterpriseServices_Crm#30](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmclient.cpp#30)]
+ [!code-csharp[EnterpriseServices_Crm#30](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmclient.cs#30)]
+ [!code-vb[EnterpriseServices_Crm#30](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmclient.vb#30)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,10 +52,10 @@
         <Parameter Name="flags" Type="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
       </Parameters>
       <Docs>
-        <param name="compensator">To be added.</param>
-        <param name="description">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="compensator">The name of the compensator.</param>
+        <param name="description">The description of the compensator.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,11 +74,22 @@
         <Parameter Name="flags" Type="System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" />
       </Parameters>
       <Docs>
-        <param name="compensator">To be added.</param>
-        <param name="description">To be added.</param>
-        <param name="flags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="compensator">A type that represents the compensator.</param>
+        <param name="description">The description of the compensator.</param>
+        <param name="flags">A bitwise combination of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this constructor.  
+  
+ [!code-cpp[EnterpriseServices_Crm#11](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#11)]
+ [!code-csharp[EnterpriseServices_Crm#11](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#11)]
+ [!code-vb[EnterpriseServices_Crm#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -73,7 +106,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Frees the resources of the current Clerk before it is reclaimed by the garbage collector.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,8 +124,24 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Forces all log records to disk.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Compensating Resource Manager (CRM) Worker and CRM Compensator use this method to write records lazily to the log, which means they are not made durable until they have been forced to the log. Calling <xref:System.EnterpriseServices.CompensatingResourceManager.Clerk.ForceLog%2A> makes all log records that have been written durable on disk.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this method.  
+  
+ [!code-cpp[EnterpriseServices_Crm#12](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#12)]
+ [!code-csharp[EnterpriseServices_Crm#12](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#12)]
+ [!code-vb[EnterpriseServices_Crm#12](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#12)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForceTransactionToAbort">
@@ -109,7 +158,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs an immediate abort call on the transaction.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,8 +176,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Does not deliver the last log record that was written by this instance of this interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can only be used to forget the last record, there is no concept of nesting; that is, "Write, Forget, Write, Forget" is valid, but "Write, Write, Forget, Forget" is not. A log record that has been forgotten is not delivered to the Compensating Resource Manager (CRM) Compensator during transaction outcome notifications.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogRecordCount">
@@ -144,8 +200,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of log records.</summary>
+        <value>The number of log records.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,8 +218,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value representing the transaction unit of work (UOW).</summary>
+        <value>A GUID representing the UOW.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,10 +239,30 @@
         <Parameter Name="record" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="record">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="record">The log record to write to the log.</param>
+        <summary>Writes unstructured log records to the log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this constructor.  
+  
+ [!code-cpp[EnterpriseServices_Crm#11](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#11)]
+ [!code-csharp[EnterpriseServices_Crm#11](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#11)]
+ [!code-vb[EnterpriseServices_Crm#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#11)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.Clerk" /> class.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

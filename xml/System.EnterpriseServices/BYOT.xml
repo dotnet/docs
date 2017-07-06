@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wraps the COM+ <see langword="ByotServerEx" /> class and the COM+ DTC interfaces <see langword="ICreateWithTransactionEx" /> and <see langword="ICreateWithTipTransactionEx" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.BYOT> (Bring Your Own Transaction) allows a component to be created with or to inherit an external transaction. That is, a component that does not already have an associated transaction can acquire a transaction. COM+ allows setting an arbitrary pre-existing Distributed Transaction Coordinator (DTC) or Transaction Internet Protocol (TIP) transaction as the transaction property of a new component's context. This allows COM+ components to be associated with transactions whose lifetimes are controlled by a transaction processing (TP) monitor, Object/Task Selector (OTS), or database management system (DBMS).  
+  
+ <xref:System.EnterpriseServices.BYOT> transactions must be used with caution. In certain situations, they can result in a transaction spanning multiple synchronization domains—that is, they allow parallelism with another transaction, causing a deadlock condition.  
+  
+ Automatic transactions, rather than <xref:System.EnterpriseServices.BYOT> transactions, are the preferred programming model for writers of business components.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateWithTipTransaction">
@@ -32,11 +43,18 @@
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="url">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="url">A TIP URL that specifies a transaction.</param>
+        <param name="t">The type.</param>
+        <summary>Creates an object that is enlisted within a manual transaction using the Transaction Internet Protocol (TIP).</summary>
+        <returns>The requested transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.BYOT.CreateWithTipTransaction%2A> performs the managed equivalent of the COM+ DTC method `ICreateWithTIPTransaction::CreateInstance`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateWithTransaction">
@@ -56,11 +74,18 @@
         <Parameter Name="t" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="transaction">To be added.</param>
-        <param name="t">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="transaction">The <see cref="T:System.EnterpriseServices.ITransaction" /> or <see cref="T:System.Transactions.Transaction" /> object that specifies a transaction.</param>
+        <param name="t">The specified type.</param>
+        <summary>Creates an object that is enlisted within a manual transaction.</summary>
+        <returns>The requested transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.BYOT.CreateWithTransaction%2A> performs the managed equivalent of the COM+ Distributed Transaction Coordinator (DTC) method `ICreateWithTransaction::CreateInstance`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

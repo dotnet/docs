@@ -19,8 +19,39 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enables queuing support for the marked interface. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calls on this interface will be queued using Message Queuing.  
+  
+ To mark an interface as queued, apply this attribute to the interface using the following syntax: `[InterfaceQueuing]`.  
+  
+ The member methods of a queued interface must fulfill the requirements for queued method calls, such as having no `out` or `ref` parameters.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the `InterfaceQueuingAttribute` attribute.  
+  
+ [!code-cpp[System.EnterpriseServices.QueuedComponents#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.EnterpriseServices.QueuedComponents/CPP/queuedcomponent.cpp#2)]
+ [!code-csharp[System.EnterpriseServices.QueuedComponents#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.EnterpriseServices.QueuedComponents/CS/queuedcomponent.cs#2)]  
+  
+ The following code example shows how to mark a COM+ application as queued at compile time by using the `ApplicationQueuing` attribute, and enable the COM+ listener by setting the `QueueListenerEnabled` to true  
+  
+ [!code-cpp[System.EnterpriseServices.QueuedComponents#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.EnterpriseServices.QueuedComponents/CPP/queuedcomponent.cpp#1)]
+ [!code-csharp[System.EnterpriseServices.QueuedComponents#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.EnterpriseServices.QueuedComponents/CS/queuedcomponent.cs#1)]  
+  
+ The following code example shows how to use `BindToMoniker` to run the queued moniker, to get an instance of the recorder, call the method that will be recorded, and force the release of the recorder object, to send the message to the queue.  
+  
+ [!code-cpp[System.EnterpriseServices.QueuedComponents#0](~/samples/snippets/cpp/VS_Snippets_Remoting/System.EnterpriseServices.QueuedComponents/CPP/queuedcomponentclientclass.cpp#0)]
+ [!code-csharp[System.EnterpriseServices.QueuedComponents#0](~/samples/snippets/csharp/VS_Snippets_Remoting/System.EnterpriseServices.QueuedComponents/CS/queuedcomponentclientclass.cs#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,8 +65,29 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.InterfaceQueuingAttribute" /> class setting the <see cref="P:System.EnterpriseServices.InterfaceQueuingAttribute.Enabled" /> and <see cref="P:System.EnterpriseServices.InterfaceQueuingAttribute.Interface" /> properties to their default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.EnterpriseServices.InterfaceQueuingAttribute>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|Enabled|`true`|  
+|Interface|`null`|  
+  
+   
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.InterfaceQueuingAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesInterfaceQueuingAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesInterfaceQueuingAttribute/CPP/class1.cpp#1)]
+ [!code-csharp[EnterpriseServicesInterfaceQueuingAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesInterfaceQueuingAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesInterfaceQueuingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesInterfaceQueuingAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +103,21 @@
         <Parameter Name="enabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="enabled">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="enabled">
+          <see langword="true" /> to enable queuing support; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.InterfaceQueuingAttribute" /> class, optionally disabling queuing support.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.InterfaceQueuingAttribute>.  
+  
+ [!code-cpp[EnterpriseServicesInterfaceQueuingAttribute#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesInterfaceQueuingAttribute/CPP/class1.cpp#2)]
+ [!code-csharp[EnterpriseServicesInterfaceQueuingAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesInterfaceQueuingAttribute/CS/class1.cs#2)]
+ [!code-vb[EnterpriseServicesInterfaceQueuingAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesInterfaceQueuingAttribute/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -69,9 +133,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value indicating whether queuing support is enabled.</summary>
+        <value>
+          <see langword="true" /> if queuing support is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the `Queuing-Enabled` property in COM+.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interface">
@@ -87,10 +159,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the interface on which queuing is enabled.</summary>
+        <value>The name of the interface on which queuing is enabled.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.InterfaceQueuingAttribute" /> class, enabling queuing support.</summary>
+      </Docs>
+    </MemberGroup>
   </Members>
 </Type>

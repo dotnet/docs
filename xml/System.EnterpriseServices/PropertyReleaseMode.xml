@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the release mode for the properties in the new shared property group.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,7 +32,7 @@
         <ReturnType>System.EnterpriseServices.PropertyReleaseMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The property group is not destroyed until the process in which it was created has terminated.</summary>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -48,7 +48,7 @@
         <ReturnType>System.EnterpriseServices.PropertyReleaseMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>When all clients have released their references on the property group, the property group is automatically destroyed. This is the default COM mode.</summary>
       </Docs>
     </Member>
   </Members>

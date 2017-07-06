@@ -1,13 +1,9 @@
 ---
 title: "Walkthrough: Creating a Windows Service Application in the Component Designer | Microsoft Docs"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, walkthroughs"
@@ -248,7 +244,7 @@ This article demonstrates how to create a simple Windows Service application in 
   
 5.  Add code to set the status to Running at the end of the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method.  
   
-    ```  
+    ```csharp
     // Update the service state to Running.  
     serviceStatus.dwCurrentState = ServiceState.SERVICE_RUNNING;  
     SetServiceStatus(this.ServiceHandle, ref serviceStatus);  
@@ -319,7 +315,8 @@ static void Main(string[] args)
   
 ```vb
 Shared Sub Main(ByVal cmdArgs() As String)
-    Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}         System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+    Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}
+    System.ServiceProcess.ServiceBase.Run(ServicesToRun)
 End Sub
 ```  
   

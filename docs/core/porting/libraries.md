@@ -4,7 +4,7 @@ description: Porting to .NET Core - Libraries
 keywords: .NET, .NET Core, porting, class library
 author: cartermp
 ms.author: mairaw
-ms.date: 06/21/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -44,23 +44,23 @@ This topic discusses the portability of third-party dependencies and what to do 
 
 Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), and Security Transparency. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, the CoreFX team maintains a [List of behavioral changes/compat breaks and deprecated/legacy APIs](https://github.com/dotnet/corefx/wiki/ApiCompat) at GitHub.
 
-Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Feel free to file an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are usually marked with the `port-to-core` label.
+Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Feel free to file an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are marked with the `port-to-core` label.
 
 ### AppDomains
 
 AppDomains isolate apps from one another. AppDomains require runtime support and are generally quite expensive. They're not implemented in .NET Core. We don't plan on adding this capability in future.
 
-For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class. Information (such as the name and base directory) is provided by APIs on other types, for instance `AppContext.BaseDirectory`. Some scenarios, such as getting the list of loaded assemblies, are unsupported, as they're inherently fragile.
+For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class. Information (such as the name and base directory) is provided by APIs on other types, for instance <xref:AppContext.BaseDirectory%2A>. Some scenarios, such as getting the list of loaded assemblies, are unsupported, as they're inherently fragile.
 
 To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=fullName>), some of them do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
 
 ### Remoting
 
-.NET Remoting, which is transparent remote procedure calls, was identified as a problematic architecture. It's used for cross-AppDomain communication, which is no longer supported. Also, Remoting requires runtime support, which is expensive to maintain. For these reasons, .NET Remoting isn't supported on .NET Core.
+.NET Remoting was identified as a problematic architecture. It's used for cross-AppDomain communication, which is no longer supported. Also, Remoting requires runtime support, which is expensive to maintain. For these reasons, .NET Remoting isn't supported on .NET Core.
 
 For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to Remoting, such as the <xref:System.IO.Pipes> or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
 
-Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), the web server used by ASP.NET Core, is an option here. Consider <xref:System.Net.Sockets>. For more options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
+Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead plain text protocol, such as HTTP. The [Kestrel web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), the web server used by ASP.NET Core, is an option here. Also consider using <xref:System.Net.Sockets> for network-based, cross-machine scenarios. For more options, see [.NET Open Source Developer Projects: Messaging](https://github.com/Microsoft/dotnet/blob/master/dotnet-developer-projects.md#messaging).
 
 ### Code Access Security (CAS)
 
@@ -105,7 +105,7 @@ If your packages don't support NuGet 3.0, you receive a dialog from Visual Studi
 
 ## Retargeting your .NET Framework code to .NET Framework 4.6.2
 
-If your code isn't targeting .NET Framework 4.6.2, we recommended that you retarget. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.
+If your code isn't targeting .NET Framework 4.6.2, we recommended that you retarget to .NET Framework 4.6.2. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.
 
 For each of your projects in Visual Studio you wish to port, do the following:
 

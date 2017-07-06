@@ -18,10 +18,10 @@ manager: "erikre"
 
 # &lt;filters&gt; of &lt;routing&gt;
 
-Represents a configuration section for defining a set of routing filters, which determine the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)]<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
+Represents a configuration section for defining a set of routing filters, which determine the type of [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] <xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
 
-**\<system.serviceModel>**   
-&nbsp;&nbsp;**\<routing>**   
+[**\<system.serviceModel>**](system-servicemodel.md)   
+&nbsp;&nbsp;[**\<routing>**](routing.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<filters>**
 
 ## Syntax

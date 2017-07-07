@@ -34,15 +34,15 @@
 
             foreach (var v in query)
             {
-                Console.WriteLine($"{v.FirstName:-15}{v.PetName}");
+                Console.WriteLine($"{v.FirstName+":",-15}{v.PetName}");
             }
         }
 
         // This code produces the following output:
         //
-        // Magnus:         Daisy
-        // Terry:          Barley
-        // Terry:          Boots
-        // Terry:          Blue Moon
-        // Charlotte:      Whiskers
+        // Magnus:        Daisy
+        // Terry:         Barley
+        // Terry:         Boots
+        // Terry:         Blue Moon
+        // Charlotte:     Whiskers
         // Arlene:

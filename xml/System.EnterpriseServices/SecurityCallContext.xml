@@ -1,0 +1,265 @@
+<Type Name="SecurityCallContext" FullName="System.EnterpriseServices.SecurityCallContext">
+  <TypeSignature Language="C#" Value="public sealed class SecurityCallContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityCallContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SecurityCallContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes the chain of callers leading up to the current method call.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.SecurityCallContext> class to interrogate the security context of calls to the methods of a <xref:System.EnterpriseServices.ServicedComponent> class.  
+  
+ [!code-cpp[EnterpriseServices_Security#4](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#4)]
+ [!code-csharp[EnterpriseServices_Security#4](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#4)]
+ [!code-vb[EnterpriseServices_Security#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Callers">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SecurityCallers Callers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.SecurityCallers Callers" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.Callers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityCallers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.EnterpriseServices.SecurityCallers" /> object that describes the caller.</summary>
+        <value>The <see cref="T:System.EnterpriseServices.SecurityCallers" /> object that describes the caller.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.SecurityCallContext.Callers%2A> accesses the `Callers` item in the `ISecurityCallContext` collection in COM+.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">There is no security context.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentCall">
+      <MemberSignature Language="C#" Value="public static System.EnterpriseServices.SecurityCallContext CurrentCall { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.EnterpriseServices.SecurityCallContext CurrentCall" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.CurrentCall" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityCallContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.EnterpriseServices.SecurityCallContext" /> object that describes the security call context.</summary>
+        <value>The <see cref="T:System.EnterpriseServices.SecurityCallContext" /> object that describes the security call context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The static <xref:System.EnterpriseServices.SecurityCallContext.CurrentCall%2A> property is the recommended way to access the security call context.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this method to obtain a <xref:System.EnterpriseServices.SecurityCallContext> object describing the security context of a method call.  
+  
+ [!code-cpp[EnterpriseServices_Security#6](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#6)]
+ [!code-csharp[EnterpriseServices_Security#6](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#6)]
+ [!code-vb[EnterpriseServices_Security#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectCaller">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SecurityIdentity DirectCaller { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.SecurityIdentity DirectCaller" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.DirectCaller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.EnterpriseServices.SecurityIdentity" /> object that describes the direct caller of this method.</summary>
+        <value>A <see cref="T:System.EnterpriseServices.SecurityIdentity" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this method to check the identity of the direct caller of a <xref:System.EnterpriseServices.ServicedComponent> method.  
+  
+ [!code-cpp[EnterpriseServices_Security#7](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#7)]
+ [!code-csharp[EnterpriseServices_Security#7](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#7)]
+ [!code-vb[EnterpriseServices_Security#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCallerInRole">
+      <MemberSignature Language="C#" Value="public bool IsCallerInRole (string role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsCallerInRole(string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityCallContext.IsCallerInRole(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="role">The specified role.</param>
+        <summary>Verifies that the direct caller is a member of the specified role.</summary>
+        <returns>
+          <see langword="true" /> if the direct caller is a member of the specified role; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this method to determine if the caller of a <xref:System.EnterpriseServices.ServicedComponent> method is in a specified role.  
+  
+ [!code-cpp[EnterpriseServices_Security#6](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Security/CPP/employeeinformation.cpp#6)]
+ [!code-csharp[EnterpriseServices_Security#6](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Security/CS/employeeinformation.cs#6)]
+ [!code-vb[EnterpriseServices_Security#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Security/VB/employeeinformation.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecurityEnabled">
+      <MemberSignature Language="C#" Value="public bool IsSecurityEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSecurityEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.IsSecurityEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether security checks are enabled in the current context.</summary>
+        <value>
+          <see langword="true" /> if security checks are enabled in the current context; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUserInRole">
+      <MemberSignature Language="C#" Value="public bool IsUserInRole (string user, string role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsUserInRole(string user, string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SecurityCallContext.IsUserInRole(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.String" />
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="user">The specified user.</param>
+        <param name="role">The specified role.</param>
+        <summary>Verifies that the specified user is in the specified role.</summary>
+        <returns>
+          <see langword="true" /> if the specified user is a member of the specified role; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinAuthenticationLevel">
+      <MemberSignature Language="C#" Value="public int MinAuthenticationLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinAuthenticationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.MinAuthenticationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="MinAuthenticationLevel" /> value from the <see langword="ISecurityCallContext" /> collection in COM+.</summary>
+        <value>The <see langword="MinAuthenticationLevel" /> value from the <see langword="ISecurityCallContext" /> collection in COM+.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.SecurityCallContext.MinAuthenticationLevel%2A> is the least secure authentication level of all callers in the chain.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumCallers">
+      <MemberSignature Language="C#" Value="public int NumCallers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumCallers" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.NumCallers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="NumCallers" /> value from the <see langword="ISecurityCallContext" /> collection in COM+.</summary>
+        <value>The <see langword="NumCallers" /> value from the <see langword="ISecurityCallContext" /> collection in COM+.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.SecurityCallContext.NumCallers%2A> is the number of callers in the chain of calls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalCaller">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SecurityIdentity OriginalCaller { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.SecurityIdentity OriginalCaller" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.SecurityCallContext.OriginalCaller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SecurityIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.EnterpriseServices.SecurityIdentity" /> that describes the original caller.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.SecurityIdentity" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

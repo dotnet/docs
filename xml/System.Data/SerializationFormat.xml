@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Microsoft ADO.NET 2.0 introduces the ability to serialize a <xref:System.Data.Dataset> as binary content. Earlier versions of the Microsoft .NET Framework do not support binary serialization.  
+ Microsoft ADO.NET 2.0 introduces the ability to serialize a <xref:System.Data.DataSet> as binary content. Earlier versions of the Microsoft .NET Framework do not support binary serialization.  
   
  The default format is Xml. This is backward compatible and will work with all versions of the .NET Framework.  
   

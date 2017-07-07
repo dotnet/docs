@@ -193,7 +193,7 @@ The presence of Classes, Records, Discriminated Unions, and Tuples leads to an i
 
 Tuples are great for returning multiple values from a function, and using an ad-hoc aggregate of values as a value itself.
 
-Records are a "step up" from Tuples, having named labels and support for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they can be used in Pattern Matching.
+Records are a "step up" from Tuples, having named labels and support for optional members.  They are great for a low-ceremony representation of data in-transit through your program.  Because they have structural equality, they are easy to use with comparison.
 
 Discriminated Unions have many reasons, but the core benefit is to be able to utilize them in conjunction with Pattern Matching to account for all possible "shapes" that a data can have.  
 

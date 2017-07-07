@@ -33,7 +33,7 @@ translation.priority.ht:
 # #warning (C# Reference)
 `#warning` lets you generate a level one warning from a specific location in your code. For example:  
   
-```  
+```csharp
 #warning Deprecated code in this method.  
 ```  
   
@@ -42,7 +42,7 @@ translation.priority.ht:
   
 ## Example  
   
-```  
+```csharp
 // preprocessor_warning.cs  
 // CS1030 expected  
 #define DEBUG  

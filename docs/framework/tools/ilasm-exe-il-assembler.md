@@ -51,43 +51,43 @@ ilasm [options] filename [[options]filename...]
 |Option|Description|  
 |------------|-----------------|  
 |**/32bitpreferred**|Creates a 32-bit-preferred image (PE32).|  
-|**/alignment**=*integer*|Sets FileAlignment to the value specified by *integer* in the NT Optional header. If the .alignment IL directive is specified in the file, this option overrides it.|  
+|**/alignment**:*integer*|Sets FileAlignment to the value specified by *integer* in the NT Optional header. If the .alignment IL directive is specified in the file, this option overrides it.|  
 |**/appcontainer**|Produces a .dll or .exe file that runs in the Windows app container, as output.|  
 |**/arm**|Specifies the Advanced RISC Machine (ARM) as the target processor.<br /><br /> If no image bitness is specified, the default is **/32bitpreferred**.|  
-|**/base**=*integer*|Sets ImageBase to the value specified by *integer* in the NT Optional header. If the .imagebase IL directive is specified in the file, this option overrides it.|  
+|**/base**:*integer*|Sets ImageBase to the value specified by *integer* in the NT Optional header. If the .imagebase IL directive is specified in the file, this option overrides it.|  
 |**/clock**|Measures and reports the following compilation times in milliseconds for the specified .il source file:<br /><br /> **Total Run**: The total time spent performing all the specific operations that follow.<br /><br /> **Startup**: Loading and opening the file.<br /><br /> **Emitting MD**: Emitting metadata.<br /><br /> **Ref to Def Resolution**: Resolving references to definitions in the file.<br /><br /> **CEE File Generation**: Generating the file image in memory.<br /><br /> **PE File Writing**: Writing the image to a PE file.|  
-|**/debug**[=`IMPL`&#124;`OPT`]|Includes debug information (local variable and argument names, and line numbers). Creates a PDB file.<br /><br /> **/debug** with no additional value disables JIT optimization and uses sequence points from the PDB file.<br /><br /> **IMPL** disables JIT optimization and uses implicit sequence points.<br /><br /> **OPT** enables JIT optimization and uses implicit sequence points.|  
+|**/debug**[:**IMPL**&#124;**OPT**]|Includes debug information (local variable and argument names, and line numbers). Creates a PDB file.<br /><br /> **/debug** with no additional value disables JIT optimization and uses sequence points from the PDB file.<br /><br /> **IMPL** disables JIT optimization and uses implicit sequence points.<br /><br /> **OPT** enables JIT optimization and uses implicit sequence points.|  
 |**/dll**|Produces a .dll file as output.|  
-|**/enc**=`file`|Creates Edit-and-Continue deltas from the specified source file.<br /><br /> This argument is for academic use only and is not supported for commercial use.|  
+|**/enc**:*file*|Creates Edit-and-Continue deltas from the specified source file.<br /><br /> This argument is for academic use only and is not supported for commercial use.|  
 |**/exe**|Produces an executable file as output. This is the default.|  
-|**/flags**=*integer*|Sets ImageFlags to the value specified by *integer* in the common language runtime header. If the .corflags IL directive is specified in the file, this option overrides it. See CorHdr.h, COMIMAGE_FLAGS for a list of valid values for *integer*.|  
+|**/flags**:*integer*|Sets ImageFlags to the value specified by *integer* in the common language runtime header. If the .corflags IL directive is specified in the file, this option overrides it. See CorHdr.h, COMIMAGE_FLAGS for a list of valid values for *integer*.|  
 |**/fold**|Folds identical method bodies into one.|  
 |/**highentropyva**|Produces an output executable that supports high-entropy address space layout randomization (ASLR). (Default for **/appcontainer**.)|  
-|**/include**=`includePath`|Sets a path to search for files included with `#include`.|  
+|**/include**:*includePath*|Sets a path to search for files included with `#include`.|  
 |**/itanium**|Specifies Intel Itanium as the target processor.<br /><br /> If no image bitness is specified, the default is **/pe64**.|  
-|**/key:** *keyFile*|Compiles *filename* with a strong signature using the private key contained in *keyFile*.|  
-|**/key:@** *keySource*|Compiles *filename* with a strong signature using the private key produced at *keySource*.|  
+|**/key**:*keyFile*|Compiles *filename* with a strong signature using the private key contained in *keyFile*.|  
+|**/key**:@*keySource*|Compiles *filename* with a strong signature using the private key produced at *keySource*.|  
 |**/listing**|Produces a listing file on the standard output. If you omit this option, no listing file is produced.<br /><br /> This parameter is not supported in the .NET Framework 2.0 or later.|  
-|**/mdv**=`versionString`|Sets the metadata version string.|  
-|**/msv**=`major``.``minor`|Sets the metadata stream version, where `major` and `minor` are integers.|  
+|**/mdv**:*versionString*|Sets the metadata version string.|  
+|**/msv**:*major*.*minor*|Sets the metadata stream version, where *major* and *minor* are integers.|  
 |**/noautoinherit**|Disables default inheritance from <xref:System.Object> when no base class is specified.|  
 |**/nocorstub**|Suppresses generation of the CORExeMain stub.|  
 |**/nologo**|Suppresses the Microsoft startup banner display.|  
-|**/output:** *22*|Specifies the output file name and extension. By default, the output file name is the same as the name of the first source file. The default extension is .exe. If you specify the **/dll** option, the default extension is .dll. **Note:**  Specifying **/output:**myfile.dll does not set the **/dll** option. If you do not specify **/dll**, the result will be an executable file named myfile.dll.|  
+|**/output**:*file*.*ext*|Specifies the output file name and extension. By default, the output file name is the same as the name of the first source file. The default extension is .exe. If you specify the **/dll** option, the default extension is .dll. **Note:**  Specifying **/output**:myfile.dll does not set the **/dll** option. If you do not specify **/dll**, the result will be an executable file named myfile.dll.|  
 |**/optimize**|Optimizes long instructions to short. For example, `br` to `br.s`.|  
 |**/pe64**|Creates a 64-bit image (PE32+).<br /><br /> If no target processor is specified, the default is `/itanium`.|  
 |**/pdb**|Creates a PDB file without enabling debug information tracking.|  
 |**/quiet**|Specifies quiet mode; does not report assembly progress.|  
-|**/resource:** *file.res*|Includes the specified resource file in \*.res format in the resulting .exe or .dll file. Only one .res file can be specified with the **/resource** option.|  
-|**/ssver**=`int`.`int`|Sets the subsystem version number in the NT optional header. For **/appcontainer** and **/arm** the minimum version number is 6.02.|  
-|**/stack**=`stackSize`|Sets the SizeOfStackReserve value in the NT Optional header to `stackSize`.|  
+|**/resource**:*file.res*|Includes the specified resource file in \*.res format in the resulting .exe or .dll file. Only one .res file can be specified with the **/resource** option.|  
+|**/ssver**:*int*.*int*|Sets the subsystem version number in the NT optional header. For **/appcontainer** and **/arm** the minimum version number is 6.02.|  
+|**/stack**:*stackSize*|Sets the SizeOfStackReserve value in the NT Optional header to `stackSize`.|  
 |**/stripreloc**|Specifies that no base relocations are needed.|  
-|**/subsystem**=*integer*|Sets subsystem to the value specified by *integer* in the NT Optional header. If the .subsystem IL directive is specified in the file, this command overrides it. See winnt.h, IMAGE_SUBSYSTEM for a list of valid values for *integer*.|  
+|**/subsystem**:*integer*|Sets subsystem to the value specified by *integer* in the NT Optional header. If the .subsystem IL directive is specified in the file, this command overrides it. See winnt.h, IMAGE_SUBSYSTEM for a list of valid values for *integer*.|  
 |**/x64**|Specifies a 64-bit AMD processor as the target processor.<br /><br /> If no image bitness is specified, the default is **/pe64**.|  
 |**/?**|Displays command syntax and options for the tool.|  
   
 > [!NOTE]
->  All options for Ilasm.exe are case-insensitive and recognized by the first three letters. For example, **/lis** is equivalent to **/listing** and **/res:**myresfile.res is equivalent to **/resource:**myresfile.res. Options that specify arguments accept either a colon (:) or an equal sign (=) as the separator between the option and the argument. For example, **/output:** *file.ext* is equivalent to **/output=** *file.ext*.  
+>  All options for Ilasm.exe are case-insensitive and recognized by the first three letters. For example, **/lis** is equivalent to **/listing** and **/res**:myresfile.res is equivalent to **/resource**:myresfile.res. Options that specify arguments accept either a colon (:) or an equal sign (=) as the separator between the option and the argument. For example, **/output**:*file.ext* is equivalent to **/output**=*file.ext*.  
   
 ## Remarks  
  The IL Assembler helps tool vendors design and implement IL generators. Using Ilasm.exe, tool and compiler developers can concentrate on IL and metadata generation without being concerned with emitting IL in the PE file format.  

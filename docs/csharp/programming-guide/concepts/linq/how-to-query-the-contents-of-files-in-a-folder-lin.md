@@ -1,5 +1,5 @@
 ---
-title: "How to: Query the Contents of Files in a Folder (LINQ) (C#) | Microsoft Docs"
+title: "How to: Query the Contents of Text Files in a Folder (LINQ) (C#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -22,7 +22,7 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# How to: Query the Contents of Files in a Folder (LINQ) (C#)
+# How to: Query the Contents of Text Files in a Folder (LINQ) (C#)
 This example shows how to query over all the files in a specified directory tree, open each file, and inspect its contents. This type of technique could be used to create indexes or reverse indexes of the contents of a directory tree. A simple string search is performed in this example. However, more complex types of pattern matching can be performed with a regular expression. For more information, see [How to: Combine LINQ Queries with Regular Expressions (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md).  
   
 ## Example  

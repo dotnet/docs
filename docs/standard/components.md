@@ -30,7 +30,7 @@ More formally, it is a specification of .NET APIs which make up a uniform set of
 
 The .NET Standard Library is also a build target, where it is known as the .NET Standard.  You can currently target .NET Standard 1.0-1.6.  If your code targets a version of the .NET Standard, it is guaranteed to run on any .NET runtime which implements that version.
 
-To learn more about the .NET Standard library and targeting the .NET Standard, see [.NET Standard Library](library.md).
+To learn more about the .NET Standard library and targeting the .NET Standard, see [.NET Standard](net-standard.md).
 
 ## .NET runtimes
 
@@ -72,7 +72,7 @@ The main takeaway here should be that there is a vast amount of tooling and infr
 
 To learn more, visit the following:
 
-* [.NET Standard Library](library.md)
+* [.NET Standard](net-standard.md)
 * [.NET Core Guide](../core/index.md)
 * [.NET Framework Guide](../framework/index.md)
 * [C# Guide](../csharp/index.md)

@@ -25,7 +25,7 @@ This article also assumes that you understand the [recommended porting process](
 
 ## Targeting the .NET Standard Library
 
-The best way to build a cross-platform library for .NET Core is to target the [.NET Standard Library](../../standard/library.md). The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes. It is supported by the .NET Core runtime.
+The best way to build a cross-platform library for .NET Core is to target the [.NET Standard](../../standard/net-standard.md). The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes. It is supported by the .NET Core runtime.
 
 What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.
 
@@ -48,7 +48,7 @@ A key thing to understand is that **a project targeting a lower version cannot r
 
 It's recommended that you pick the lowest possible .NET Standard version and use that throughout your project.
 
-Read more in [.NET Platform Standard Library](../../standard/library.md).
+Read more in [.NET Platform Standard Library](../../standard/net-standard.md).
 
 ## Key Technologies Not Yet Available on the .NET Standard or .NET Core
 

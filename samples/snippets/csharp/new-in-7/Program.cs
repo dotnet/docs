@@ -37,6 +37,10 @@ namespace new_in_7
     {
         static void Main(string[] args)
         {
+            var util = new FactorialExample();
+            util.LocalFunctionFactorial(100);
+            return;
+            
             OutVariableDeclarations();
             TupleDeclarations();
             TupleMethod();

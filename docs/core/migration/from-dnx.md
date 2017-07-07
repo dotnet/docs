@@ -152,7 +152,7 @@ produce one application for each OS you wish to support. These portability types
 
 Once you make a call on what type of portability you want, you need to change your targeted framework(s). If you were 
 writing applications for .NET Core, you were most likely using `dnxcore50` as  your targeted framework. With the CLI 
-and the changes that the new [.NET Standard Library](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 
+and the changes that the new [.NET Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 
 brought, the framework needs to be one of the following:
 
 1. `netcoreapp1.0` - if you are writing applications on .NET Core (including ASP.NET Core applications)

@@ -1,0 +1,114 @@
+<Type Name="TransactionOption" FullName="System.EnterpriseServices.TransactionOption">
+  <TypeSignature Language="C#" Value="public enum TransactionOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the automatic transaction type requested by the component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using the .NET Installation Tool (Regsvcs.exe), the transaction option for a <xref:System.EnterpriseServices.ServicedComponent> defaults to <xref:System.EnterpriseServices.TransactionOption.Disabled>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.TransactionOption> type.  
+  
+ [!code-cpp[EnterpriseServicesTransactionOption#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesTransactionOption/cpp/class1.cpp#0)]
+ [!code-csharp[EnterpriseServicesTransactionOption#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesTransactionOption/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesTransactionOption#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesTransactionOption/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionOption Disabled = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignores any transaction in the current context.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSupported">
+      <MemberSignature Language="C#" Value="NotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionOption NotSupported = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.NotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates the component in a context with no governing transaction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="Required" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionOption Required = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.Required" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Shares a transaction, if one exists, and creates a new transaction if necessary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresNew">
+      <MemberSignature Language="C#" Value="RequiresNew" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionOption RequiresNew = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.RequiresNew" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates the component with a new transaction, regardless of the state of the current context.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Supported">
+      <MemberSignature Language="C#" Value="Supported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionOption Supported = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionOption.Supported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Shares a transaction, if one exists.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

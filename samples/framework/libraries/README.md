@@ -60,7 +60,7 @@ The project under `/net45-compat-library` targets any of the following:
 * Xamarin
 * Mono
 
-It uses the `netstandard1.2` Target Framework Moniker introduced with the [.NET Standard Library](https://docs.microsoft.com/en-us/dotnet/standard/library).
+It uses the `netstandard1.2` Target Framework Moniker introduced with the [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/library).
 
 ## net40-library
 

@@ -10,7 +10,7 @@
             // Change the value of i.
             i = 456;  
 
-            // The change in i does not effect the value stored in o.
+            // The change in i doesn't affect the value stored in o.
             System.Console.WriteLine("The value-type value = {0}", i);
             System.Console.WriteLine("The object-type value = {0}", o);
         }

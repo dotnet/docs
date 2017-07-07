@@ -4,7 +4,7 @@ description: This topic walks you through building a .NET Core solution that inc
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
-ms.date: 03/16/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet

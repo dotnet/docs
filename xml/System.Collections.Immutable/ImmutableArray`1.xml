@@ -223,8 +223,7 @@
       <Parameters />
       <Docs>
         <typeparam name="TOther">To be added.</typeparam>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct by casting the underlying             array to an array of type <typeparameter name="TOther">  
-<paramref name="TOther" /></typeparameter>  
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> struct by casting the underlying             array to an array of type <typeparameter name="TOther"><paramref name="TOther" /></typeparameter>  
 .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

@@ -75,7 +75,7 @@ Describes whether HTTP caching is active and describes the default caching polic
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example shows how to specify a minimum fresh time of six hours, a maximum age time of two days, and a maximum stale time of four hours.  
+ The following example shows how to specify a minimum fresh time of six hours, a maximum age time of two days, and a maximum stale time of four hours.  
   
 ```xml  
 <configuration>  

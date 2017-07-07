@@ -1,66 +1,68 @@
 // This is the code for the topic: HowTo Use Reliable Session
 //<snippet1211>
-
 using System;
 using System.ServiceModel;
 
-
 namespace Microsoft.ServiceModel.Samples
 {
-
-//<snippet1221>
-//Generated interface defining the ICalculator contract	
+    //<snippet1221>
+    //Generated interface defining the ICalculator contract	
     [System.ServiceModel.ServiceContractAttribute(
-    Namespace="http://Microsoft.ServiceModel.Samples", 	            ConfigurationName="Microsoft.ServiceModel.Samples.ICalculator")]
+    Namespace="http://Microsoft.ServiceModel.Samples", 
+    ConfigurationName="Microsoft.ServiceModel.Samples.ICalculator")]
     public interface ICalculator
     {
-        
         [System.ServiceModel.OperationContractAttribute(
-	Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add", 		ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
+        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add", 
+        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
         double Add(double n1, double n2);
-        
-        	[System.ServiceModel.OperationContractAttribute(
-	Action="http://Microsoft.ServiceModel.Samples/ICalculator/Subtract", 	ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]
+            
+        [System.ServiceModel.OperationContractAttribute(
+        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Subtract", 
+        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]
         double Subtract(double n1, double n2);
-        
-        	[System.ServiceModel.OperationContractAttribute(
-	Action="http://Microsoft.ServiceModel.Samples/ICalculator/Multiply", 	ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]
+            
+        [System.ServiceModel.OperationContractAttribute(
+        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Multiply", 
+        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]
         double Multiply(double n1, double n2);
-        
-        	[System.ServiceModel.OperationContractAttribute(
-	Action="http://Microsoft.ServiceModel.Samples/ICalculator/Divide", 	ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]
+            
+        [System.ServiceModel.OperationContractAttribute(
+        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Divide", 
+        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]
         double Divide(double n1, double n2);
     }
-
-//</snippet1221>
+    //</snippet1221>
 
     //<snippet1222>
     // Implementation of the CalculatorClient
-    public partial class CalculatorClient :         System.ServiceModel.ClientBase<Microsoft.ServiceModel.Samples.ICalculator>,         Microsoft.ServiceModel.Samples.ICalculator
+    public partial class CalculatorClient : 
+        System.ServiceModel.ClientBase<Microsoft.ServiceModel.Samples.ICalculator>, 
+        Microsoft.ServiceModel.Samples.ICalculator
     {
-        
         public CalculatorClient()
         {
         }
         
         public CalculatorClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName)
+            base(endpointConfigurationName)
         {
         }
         
         public CalculatorClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress)
+            base(endpointConfigurationName, remoteAddress)
         {
         }
         
         public CalculatorClient(string endpointConfigurationName, 
-				System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress)
+            System.ServiceModel.EndpointAddress remoteAddress) : 
+            base(endpointConfigurationName, remoteAddress)
         {
         }
         
-        public CalculatorClient(System.ServiceModel.Channels.Binding binding, 				System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress)
+        public CalculatorClient(System.ServiceModel.Channels.Binding binding, 
+            System.ServiceModel.EndpointAddress remoteAddress) : 
+            base(binding, remoteAddress)
         {
         }
         
@@ -84,12 +86,9 @@ namespace Microsoft.ServiceModel.Samples
             return base.Channel.Divide(n1, n2);
         }
     }
+    //</snippet1222>
 
-
-
-//</snippet1222>
-
-//<snippet1223>
+    //<snippet1223>
     //Client implementation code.
     class Client
     {
@@ -130,8 +129,6 @@ namespace Microsoft.ServiceModel.Samples
             Console.ReadLine();
         }
     }
-//</snippet1223>
+    //</snippet1223>
 }
-
-
 //</snippet1211>

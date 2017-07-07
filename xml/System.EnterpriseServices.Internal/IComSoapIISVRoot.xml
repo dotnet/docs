@@ -1,0 +1,115 @@
+<Type Name="IComSoapIISVRoot" FullName="System.EnterpriseServices.Internal.IComSoapIISVRoot">
+  <TypeSignature Language="C#" Value="public interface IComSoapIISVRoot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComSoapIISVRoot" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComSoapIISVRoot" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("d8013ef0-730b-45e2-ba24-874b7242c425")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Interface definition for creating and deleting Internet Information Services (IIS) 6.0 virtual roots.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> interface defines methods for creating and deleting virtual roots in IIS 6.0.  
+  
+ This interface is implemented only by the <xref:System.EnterpriseServices.Internal.IISVirtualRoot> class and is used only within the .NET Framework infrastructure while creating a SOAP-enabled COM+ application virtual root.  
+  
+ <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> does not need to be implemented directly in your code. Instead, use the <xref:System.EnterpriseServices.Internal.Publish> class, which implements the <xref:System.EnterpriseServices.Internal.IComSoapPublisher> interface that contains the <xref:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot%2A> and <xref:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot%2A> methods. However, <xref:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot%2A> is not fully implemented by <xref:System.EnterpriseServices.Internal.Publish>.  
+  
+ <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create (string RootWeb, string PhysicalDirectory, string VirtualDirectory, out string Error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string RootWeb, string PhysicalDirectory, string VirtualDirectory, string Error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(System.String,System.String,System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="RootWeb" Type="System.String" />
+        <Parameter Name="PhysicalDirectory" Type="System.String" />
+        <Parameter Name="VirtualDirectory" Type="System.String" />
+        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="RootWeb">The root Web server.</param>
+        <param name="PhysicalDirectory">The physical path of the virtual root, which corresponds to <c>PhysicalPath</c> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
+        <param name="VirtualDirectory">The name of the virtual root, which corresponds to <c>VirtualRoot</c> from the <see cref="M:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot(System.String,System.String,System.String@,System.String@,System.String@,System.String@)" /> method.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Creates an Internet Information Services (IIS) virtual root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> interface does not need to be implemented directly in your code. Instead, use the <xref:System.EnterpriseServices.Internal.IComSoapPublisher> interface (implemented by the <xref:System.EnterpriseServices.Internal.Publish> class), which exposes a <xref:System.EnterpriseServices.Internal.IComSoapPublisher.CreateVirtualRoot%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (string RootWeb, string PhysicalDirectory, string VirtualDirectory, out string Error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(string RootWeb, string PhysicalDirectory, string VirtualDirectory, string Error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(System.String,System.String,System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="RootWeb" Type="System.String" />
+        <Parameter Name="PhysicalDirectory" Type="System.String" />
+        <Parameter Name="VirtualDirectory" Type="System.String" />
+        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="RootWeb">The root Web server.</param>
+        <param name="PhysicalDirectory">The physical path of the virtual root.</param>
+        <param name="VirtualDirectory">The name of the virtual root.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Deletes an Internet Information Services (IIS) virtual root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IComSoapIISVRoot> interface does not need to be implemented directly in your code. Alternatively, the <xref:System.EnterpriseServices.Internal.IComSoapPublisher> interface (implemented by the <xref:System.EnterpriseServices.Internal.Publish> class), exposes a <xref:System.EnterpriseServices.Internal.IComSoapPublisher.DeleteVirtualRoot%2A> method. However, that method is not fully implemented by <xref:System.EnterpriseServices.Internal.Publish>.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

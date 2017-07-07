@@ -89,7 +89,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorX%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.X%2A> property must be set to <xref:System.Double.NaN>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorX%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.X%2A> property must be set to <xref:System.Double.NaN?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.AnchorY%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation.Y%2A> property must be set to <xref:System.Double.NaN>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> must be anchored using either the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorDataPoint%2A> or the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AnchorY%2A> property, and its <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.Y%2A> property must be set to <xref:System.Double.NaN?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>

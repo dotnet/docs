@@ -1,6 +1,6 @@
 ---
 title: "Runtime Changes in the .NET Framework | Microsoft Docs"
-ms.date: "05/19/2017"
+ms.date: "06/14/2017"
 ms.prod: ".net-framework"
 ms.technology:
   - "dotnet-clr"
@@ -15,7 +15,8 @@ manager: "wpickett"
 
 # "Runtime Changes in the .NET Framework | Microsoft Docs"
 
-[!include[introduction](../../../includes/migration-guide/retargeting/introduction.md)]
+[!include[introduction](../../../includes/migration-guide/runtime/introduction.md)]
+
 ## Usage
 Select the .NET Framework you are currently targeting and then the .NET Framework you wish to migrate to:
 

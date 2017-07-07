@@ -23,7 +23,7 @@
   
  This class is exposed as the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.ChartAreas%2A> property of the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object.  
   
- The <xref:System.Windows.Forms.DataVisualization.Charting.ChartAreaCollection.Count> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
+ The <xref:System.Collections.ObjectModel.Collection%601.Count> property indicates the total number of items in the collection and is commonly used to find the upper bound of the collection.  
   
  ]]></format>
     </remarks>

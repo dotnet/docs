@@ -33,7 +33,7 @@ translation.priority.ht:
 # #elif (C# Reference)
 `#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:  
   
-```  
+```csharp
 #define VC7  
 //...  
 #if debug  
@@ -48,7 +48,7 @@ translation.priority.ht:
 ## Remarks  
  `#elif` is equivalent to using:  
   
-```  
+```csharp
 #else  
 #if  
 ```  

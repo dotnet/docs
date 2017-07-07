@@ -134,7 +134,7 @@ manager: "mbaldwin"
   
 6.  Add reference to the <xref:System.IdentityModel> assembly.  
   
-7.  Compile the solution to make sure there are errors.  
+7.  Compile the solution to make sure there are no errors.  
   
 ## Step 3 – Test Your Solution  
  In this step you will test your ASP.NET Web Forms application configured for claims-based authentication. To perform a basic test, you will add code that displays claims in the token issued by the Security Token Service (STS).  

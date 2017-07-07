@@ -1786,9 +1786,9 @@
         <Parameter Name="deviceDpiNew" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deviceDpiOld">To be added.</param>
-        <param name="deviceDpiNew">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="deviceDpiOld">The DPI value prior to the change.</param>
+        <param name="deviceDpiNew">The DPI value after the change.</param>
+        <summary>Provides constants for rescaling the control when a DPI change occurs.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

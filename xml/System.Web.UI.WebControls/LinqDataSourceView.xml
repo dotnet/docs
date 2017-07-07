@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.LinqDataSourceView> class is intended primarily to be used by data-bound controls, and not as a programmable object in page code. Page developers typically use the <xref:System.Web.UI.WebControls.LinqDataSource> control to interact with data.  
   
- ASP.NET data source controls contain one or more lists of data, represented by data source view objects. The <xref:System.Web.UI.WebControls.LinqDataSourceView> class extends the <xref:System.Web.UI.DataSourceView> class. It defines the capabilities of the <xref:System.Web.UI.WebControls.LinqDataSource> control with which it is associated, and it implements the basic data functionality for the data source control. The <xref:System.Web.UI.WebControls.LinqDataSourceView> class implements the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A>, <xref:System.Web.UI.WebControls.LinqDataSourceView.Update%2A>, <xref:System.Web.UI.WebControls.LinqDataSourceView.Insert%2A>, and <xref:System.Web.UI.WebControls.LinqDataSourceView.Delete%2A> operations. It also implements sorting, filtering, and managing settings that are kept in view state.  
+ ASP.NET data source controls contain one or more lists of data, represented by data source view objects. The <xref:System.Web.UI.WebControls.LinqDataSourceView> class extends the <xref:System.Web.UI.DataSourceView> class. It defines the capabilities of the <xref:System.Web.UI.WebControls.LinqDataSource> control with which it is associated, and it implements the basic data functionality for the data source control. The <xref:System.Web.UI.WebControls.LinqDataSourceView> class implements the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A>, [Update](<xref:System.Web.UI.WebControls.LinqDataSourceView.UpdateDataObject%2A>), [Insert](<xref:System.Web.UI.WebControls.LinqDataSourceView.InsertDataObject%2A>), and [Delete](<xref:System.Web.UI.WebControls.LinqDataSourceView.DeleteDataObject%2A>) operations. It also implements sorting, filtering, and managing settings that are kept in view state.  
   
  Although the <xref:System.Web.UI.WebControls.LinqDataSourceView> object is not directly exposed to page developers, many of its properties and methods can be accessed through the <xref:System.Web.UI.WebControls.LinqDataSource> control. The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the following data retrieval methods and events and exposes them to page developers and to other callers through the associated <xref:System.Web.UI.WebControls.LinqDataSource> control:  
   
@@ -48,7 +48,7 @@
   
  You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.LinqDataSource> control by adding an `OrderBy` clause. You can provide a sort expression for the <xref:System.Web.UI.WebControls.LinqDataSourceView> instance by setting the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property of the <xref:System.Web.UI.DataSourceSelectArguments> object that is passed to the <xref:System.Web.UI.WebControls.LinqDataSourceView.Select%2A> method. The syntax for the <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property is the same as the syntax for a <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property.  
   
- The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.LinqDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.LinqDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.LinqDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceView> control implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.QueryableDataSourceView.IsTrackingViewState%2A> property and the <xref:System.Web.UI.WebControls.QueryableDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.QueryableDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.QueryableDataSourceView.TrackViewState%2A> methods are provided to enable view-state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
   
  ]]></format>
     </remarks>
@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.LinqDataSourceView.%23ctor%2A> constructor is called by the <xref:System.Web.UI.WebControls.LinqDataSource.GetView%2A> method to return a new instance of a data source view with the specified `name` parameter. Only one <xref:System.Web.UI.WebControls.LinqDataSourceView> object is associated with a <xref:System.Web.UI.WebControls.LinqDataSource> control at a time. The name of the <xref:System.Web.UI.WebControls.LinqDataSourceView> object is always `DefaultView`, although this naming restriction is imposed by the <xref:System.Web.UI.WebControls.LinqDataSource> control, not by the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. You can override the <xref:System.Web.UI.WebControls.LinqDataSource.GetView%2A?displayProperty=fullName> method to support views that use a different naming convention.  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceView.%23ctor%2A> constructor is called by the [LinqDataSource.GetView](<xref:System.Web.UI.WebControls.QueryableDataSource.GetView%2A>) method to return a new instance of a data source view with the specified `name` parameter. Only one <xref:System.Web.UI.WebControls.LinqDataSourceView> object is associated with a <xref:System.Web.UI.WebControls.LinqDataSource> control at a time. The name of the <xref:System.Web.UI.WebControls.LinqDataSourceView> object is always `DefaultView`, although this naming restriction is imposed by the <xref:System.Web.UI.WebControls.LinqDataSource> control, not by the <xref:System.Web.UI.WebControls.LinqDataSourceView> control. You can override the [LinqDataSource.GetView](<xref:System.Web.UI.WebControls.QueryableDataSource.GetView%2A>) method to support views that use a different naming convention.  
   
  The <xref:System.Web.HttpContext> instance that is passed by the `context` parameter is used by the data source view to access parameter collections.  
   
@@ -157,7 +157,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.LinqDataSourceView> object always supports paging even if data presentation control does not use paging. When the <xref:System.Web.UI.WebControls.LinqDataSourceView.AutoPage%2A> property is set to `false`, you can manually page the data in the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event.  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceView> object always supports paging even if the data presentation control does not use paging. When the [LinqDataSourceView.AutoPage](<xref:System.Web.UI.WebControls.QueryableDataSourceView.AutoPage%2A>) property is set to `false`, you can manually page the data in the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event.  
   
  ]]></format>
         </remarks>
@@ -183,7 +183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Data-bound controls use the total number of rows that can be paged to determine how to render paging controls. For example, this value is used to determine how many numeric pager buttons to render in a <xref:System.Web.UI.WebControls.GridView> control pager. If the <xref:System.Web.UI.WebControls.LinqDataSourceView.AutoPage%2A> property is set to `false`, you must manually set the total row count in the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event.  
+ Data-bound controls use the total number of rows that can be paged to determine how to render paging controls. For example, this value is used to determine how many numeric pager buttons to render in a <xref:System.Web.UI.WebControls.GridView> control pager. If the [LinqDataSourceView.AutoPage](<xref:System.Web.UI.WebControls.QueryableDataSourceView.AutoPage%2A>) property is set to `false`, you must manually set the total row count in the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event.  
   
  ]]></format>
         </remarks>
@@ -209,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.LinqDataSourceView> object always supports sorting even if data presentation control does not use sorting. When the <xref:System.Web.UI.WebControls.LinqDataSourceView.AutoSort%2A> property is set to `false`, you can manually sort the data in the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event.  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceView> object always supports sorting even if data presentation control does not use sorting. When the [LinqDataSourceView.AutoSort](<xref:System.Web.UI.WebControls.QueryableDataSourceView.AutoSort%2A>) property is set to `false`, you can manually sort the data in the <xref:System.Web.UI.WebControls.LinqDataSourceView.Selecting> event.  
   
  ]]></format>
         </remarks>
@@ -1587,11 +1587,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot delete data when the <xref:System.Web.UI.WebControls.LinqDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.LinqDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableDelete%2A?displayProperty=fullName> property.  
+ You cannot delete data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableDelete%2A?displayProperty=fullName> property.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.GroupBy" /> or <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.SelectNew" /> property contains a value.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy" /> or <see cref="P:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew" /> property contains a value.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.CanDelete" /> is <see langword="false" />.</exception>
       </Docs>
@@ -1637,11 +1637,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot insert data when the <xref:System.Web.UI.WebControls.LinqDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.LinqDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableInsert%2A?displayProperty=fullName> property.  
+ You cannot insert data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableInsert%2A?displayProperty=fullName> property.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.GroupBy" /> or <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.SelectNew" /> property contains a value or the <paramref name="values" /> parameter does not contain any items.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy" /> or <see cref="P:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew" /> property contains a value or the <paramref name="values" /> parameter does not contain any items.</exception>
         <exception cref="T:System.NotSupportedException">
           <see cref="P:System.Web.UI.WebControls.LinqDataSourceView.CanInsert" /> is <see langword="false" />.</exception>
       </Docs>
@@ -1696,7 +1696,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You cannot update data when the <xref:System.Web.UI.WebControls.LinqDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.LinqDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableUpdate%2A?displayProperty=fullName> property.  
+ You cannot update data when the <xref:System.Web.UI.WebControls.QueryableDataSourceView.GroupBy%2A> property or the <xref:System.Web.UI.WebControls.QueryableDataSourceView.SelectNew%2A> property contains a value other than `null`. For more information, see the <xref:System.Web.UI.WebControls.LinqDataSource.EnableUpdate%2A?displayProperty=fullName> property.  
   
  ]]></format>
         </remarks>

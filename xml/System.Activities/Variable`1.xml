@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In this example, a <xref:System.Activities.Variable%601> is used to hold a message string. This message is written to the console window by a <xref:System.Activities.WriteLine> activity.  
+ In this example, a <xref:System.Activities.Variable%601> is used to hold a message string. This message is written to the console window by a <xref:System.Activities.Statements.WriteLine> activity.  
   
 ```csharp  
 Variable<string> msg =   

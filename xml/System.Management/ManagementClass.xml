@@ -59,8 +59,8 @@
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with the <xref:System.Management.ManagementClass> default constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
- [!code-csharp[wminet_ManagementClass()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass()/cs/ManagementClass().cs#1)]
- [!code-vb[wminet_ManagementClass()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass()/vb/ManagementClass().vb#1)]  
+ [!code-csharp[wminet_ManagementClass#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass/cs/ManagementClass.cs#1)]
+ [!code-vb[wminet_ManagementClass#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass/vb/ManagementClass.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -95,8 +95,8 @@
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
- [!code-csharp[wminet_ManagementClass(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M)/cs/ManagementClass(M).cs#1)]
- [!code-vb[wminet_ManagementClass(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M)/vb/ManagementClass(M).vb#1)]  
+ [!code-csharp[wminet_ManagementClass-M#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M/cs/ManagementClass-M.cs#1)]
+ [!code-vb[wminet_ManagementClass-M#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M/vb/ManagementClass-M.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -130,8 +130,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers for the created class.  
   
- [!code-csharp[wminet_ManagementClass(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S)/cs/ManagementClass(S).cs#1)]
- [!code-vb[wminet_ManagementClass(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S)/vb/ManagementClass(S).vb#1)]  
+ [!code-csharp[wminet_ManagementClass-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S/cs/ManagementClass-S.cs#1)]
+ [!code-vb[wminet_ManagementClass-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S/vb/ManagementClass-S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -167,8 +167,8 @@
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
   
- [!code-csharp[wminet_ManagementClass(M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M_O)/cs/ManagementClass(M_O).cs#1)]
- [!code-vb[wminet_ManagementClass(M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M_O)/vb/ManagementClass(M_O).vb#1)]  
+ [!code-csharp[wminet_ManagementClass-M_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M_O/cs/ManagementClass-M_O.cs#1)]
+ [!code-vb[wminet_ManagementClass-M_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M_O/vb/ManagementClass-M_O.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -233,8 +233,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class.  
   
- [!code-csharp[wminet_ManagementClass(S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S_O)/cs/ManagementClass(S_O).cs#1)]
- [!code-vb[wminet_ManagementClass(S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S_O)/vb/ManagementClass(S_O).vb#1)]  
+ [!code-csharp[wminet_ManagementClass-S_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S_O/cs/ManagementClass-S_O.cs#1)]
+ [!code-vb[wminet_ManagementClass-S_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S_O/vb/ManagementClass-S_O.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -273,8 +273,8 @@
 ## Examples  
  The following example is an example of how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
   
- [!code-csharp[wminet_ManagementClass(M_M_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(M_M_O)/cs/ManagementClass(M_M_O).cs#1)]
- [!code-vb[wminet_ManagementClass(M_M_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(M_M_O)/vb/ManagementClass(M_M_O).vb#1)]  
+ [!code-csharp[wminet_ManagementClass-M_M_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-M_M_O/cs/ManagementClass-M_M_O.cs#1)]
+ [!code-vb[wminet_ManagementClass-M_M_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-M_M_O/vb/ManagementClass-M_M_O.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -313,8 +313,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor. The example lists the methods, properties, and qualifiers (including the amended qualifiers) for the created class. You must change the scope (namespace) in the code for the example to run correctly on your computer.  
   
- [!code-csharp[wminet_ManagementClass(S_S_O)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass(S_S_O)/cs/ManagementClass(S_S_O).cs#1)]
- [!code-vb[wminet_ManagementClass(S_S_O)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass(S_S_O)/vb/ManagementClass(S_S_O).vb#1)]  
+ [!code-csharp[wminet_ManagementClass-S_S_O#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass-S_S_O/cs/ManagementClass-S_S_O.cs#1)]
+ [!code-vb[wminet_ManagementClass-S_S_O#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass-S_S_O/vb/ManagementClass-S_S_O.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -510,8 +510,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
   
- [!code-csharp[wminet_ManagementClass_GetInstances()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances()/cs/ManagementClass_GetInstances().cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances()/vb/ManagementClass_GetInstances().vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetInstances#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances/cs/ManagementClass_GetInstances.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetInstances#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances/vb/ManagementClass_GetInstances.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -549,8 +549,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class and its subclasses.  
   
- [!code-csharp[wminet_ManagementClass_GetInstances(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(E)/cs/ManagementClass_GetInstances(E).cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(E)/vb/ManagementClass_GetInstances(E).vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetInstances-E#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-E/cs/ManagementClass_GetInstances-E.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetInstances-E#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-E/vb/ManagementClass_GetInstances-E.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -587,8 +587,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class asynchronously.  
   
- [!code-csharp[wminet_ManagementClass_GetInstances(M)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(M)/cs/ManagementClass_GetInstances(M).cs#1)]
- [!code-vb[wminet_ManagementClass_GetInstances(M)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances(M)/vb/ManagementClass_GetInstances(M).vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetInstances-M#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-M/cs/ManagementClass_GetInstances-M.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetInstances-M#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetInstances-M/vb/ManagementClass_GetInstances-M.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -707,8 +707,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then list all the classes related to the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_GetRelatedClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses()/cs/ManagementClass_GetRelatedClasses().cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelatedClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses()/vb/ManagementClass_GetRelatedClasses().vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetRelatedClasses#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses/cs/ManagementClass_GetRelatedClasses.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetRelatedClasses#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses/vb/ManagementClass_GetRelatedClasses.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -851,8 +851,8 @@
 ## Examples  
  The following example uses the <xref:System.Management.ManagementClass.GetRelatedClasses%2A> method to list the related classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
   
- [!code-csharp[wminet_ManagementClass_GetRelatedClasses(7)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses(7)/cs/ManagementClass_GetRelatedClasses(7).cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelatedClasses(7)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses(7)/vb/ManagementClass_GetRelatedClasses(7).vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetRelatedClasses-7#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses-7/cs/ManagementClass_GetRelatedClasses-7.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetRelatedClasses-7#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelatedClasses-7/vb/ManagementClass_GetRelatedClasses-7.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -950,8 +950,8 @@
 ## Examples  
  The following example uses the <xref:System.Management.ManagementClass.GetRelationshipClasses%2A> method to list the relationship classes to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
   
- [!code-csharp[wminet_ManagementClass_GetRelationshipClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses()/cs/ManagementClass_GetRelationshipClasses().cs#1)]
- [!code-vb[wminet_ManagementClass_GetRelationshipClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses()/vb/ManagementClass_GetRelationshipClasses().vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetRelationshipClasses#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses/cs/ManagementClass_GetRelationshipClasses.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetRelationshipClasses#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetRelationshipClasses/vb/ManagementClass_GetRelationshipClasses.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1181,8 +1181,8 @@
 ## Examples  
  The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is produced in C# or Visual Basic .NET.  
   
- [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode(2)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(2)/cs/ManagementClass_GetStronglyTypedClassCode(2).cs#1)]
- [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode(2)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(2)/vb/ManagementClass_GetStronglyTypedClassCode(2).vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode-2#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-2/cs/ManagementClass_GetStronglyTypedClassCode-2.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode-2#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-2/vb/ManagementClass_GetStronglyTypedClassCode-2.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1225,8 +1225,8 @@
 ## Examples  
  The following example generates a strongly-typed class for the **Win32_LogicalDisk** class. The generated code is in C# for the C# example and Visual Basic .NET for the Visual Basic .NET example.  
   
- [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode(3)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(3)/cs/ManagementClass_GetStronglyTypedClassCode(3).cs#1)]
- [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode(3)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode(3)/vb/ManagementClass_GetStronglyTypedClassCode(3).vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetStronglyTypedClassCode-3#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-3/cs/ManagementClass_GetStronglyTypedClassCode-3.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetStronglyTypedClassCode-3#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetStronglyTypedClassCode-3/vb/ManagementClass_GetStronglyTypedClassCode-3.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1280,8 +1280,8 @@
 ## Examples  
  The following example uses the <xref:System.Management.ManagementClass.GetSubclasses%2A> method to list the subclasses to the **CIM_LogicalDisk** class. For more information, see "CIM_LogicalDisk" in the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
   
- [!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/cs/ManagementClass_GetSubclasses().cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/vb/ManagementClass_GetSubclasses().vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/cs/ManagementClass_GetSubclasses.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetSubClasses()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses()/vb/ManagementClass_GetSubclasses.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -1319,8 +1319,8 @@
 ## Examples  
  The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then receive the subclasses of the WMI class passed into the constructor.  
   
- [!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/cs/ManagementClass_GetSubclasses(E).cs#1)]
- [!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/vb/ManagementClass_GetSubclasses(E).vb#1)]  
+ [!code-csharp[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/cs/ManagementClass_GetSubclasses-E.cs#1)]
+ [!code-vb[wminet_ManagementClass_GetSubClasses(E)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementClass_GetSubClasses(E)/vb/ManagementClass_GetSubclasses-E.vb#1)]  
   
  ]]></format>
         </remarks>

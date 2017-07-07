@@ -1,6 +1,6 @@
 ---
-title: "nameof (C# and Visual Basic Reference) | Microsoft Docs"
-ms.date: "2017-03-03"
+title: "nameof  (C# Reference) | Microsoft Docs"
+ms.date: "2017-06-16"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -29,7 +29,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# nameof (C# and Visual Basic Reference)
+# nameof (C# Reference)
 
 Used to obtain the simple (unqualified) string name of a variable, type, or member.  
 
@@ -116,19 +116,6 @@ nameof(f<>) -> syntax error
 nameof(Method2()) -> error "This expression does not have a name"  
 ```  
   
- Many of the above samples apply to Visual Basic.  Here are some specific Visual Basic examples:  
-  
-```vb  
-NameOf(a!Foo) -> ' error  "This expression does not have a name"  
-NameOf(dict("Foo")) -> ' error  "This expression does not have a name": default property access  
-NameOf(dict.Item("Foo")) -> ' error  "This expression does not have a name"  
-NameOf(arr(2)) -> ' error  "This expression does not have a name": array element index  
-Dim x = Nothing   
-NameOf(x.ToString(2)) -> ' error  "This expression does not have a name"  
-Dim o = Nothing  
-NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of instance; instance will not be evaluated"  
-```  
-  
 ## Remarks  
  The argument to `nameof` must be a simple name, qualified name, member access, base access with a specified member, or this access with a specified member.  The argument expression identifies a code definition, but it is never evaluated.  
   
@@ -159,11 +146,8 @@ class C {
 ## Language Specifications  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
- For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
-  
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [typeof](../../../csharp/language-reference/keywords/typeof.md)   
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)   
- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+ 

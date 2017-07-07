@@ -1138,7 +1138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode.UseHttpHandler%2A>.  
+ This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -1271,7 +1271,16 @@
   
  Other data point properties besides X and Y-values can be bound. The format is: PointProperty=Field[{Format}] [,PointProperty= Field[{Format}]]. For example:"Tooltip=Price{C1},Href=WebSiteName".  
   
- A list of these data point properties is as follows: <xref:System.Web.UI.DataVisualization.Charting.DataPoint.AxisLabel%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.ToolTip%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.Url%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.PostBackValue%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.Label%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.LegendText%2A>, <xref:System.Web.UI.DataVisualization.Charting.DataPoint.LegendToolTip%2A> and <xref:System.Web.UI.DataVisualization.Charting.DataPoint.CustomProperties%2A>, which are the names of the custom properties.  
+These data point properties include: 
+
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Url%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.PostBackValue%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.Label%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A?displayProperty=fullName>
+- <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A?displayProperty=fullName>, which are the names of the custom properties.  
   
  ]]></format>
         </remarks>
@@ -1470,7 +1479,7 @@
 ## Remarks  
  The data points in a series can be bound to a data source at any time using the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataSource%2A> property.  
   
- To force the chart to bind to the data source, call the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataBind%2A> method.  
+ To force the chart to bind to the data source, call the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataBindTable%2A> method.  
   
  The following is a list of objects that you can use as the data source:  
   
@@ -1991,7 +2000,7 @@
         <param name="x">The X-coordinate for the specified data point.</param>
         <param name="y">The Y-coordinate for the specified data point.</param>
         <param name="ignoreTransparent">A flag that indicates that transparent elements should be ignored.</param>
-        <param name="requestedElement">An array of <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElementType" /> objects that specify the types to test for, in order to filter the result. If omitted, checking for element types will be ignored and all element types will be valid.</param>
+        <param name="requestedElement">An array of <see cref="T:System.Web.UI.DataVisualization.Charting.ChartElementType" /> objects that specify the types to test for, in order to filter the result. If omitted, checking for element types will be ignored and all element types will be valid.</param>
         <summary>Determines whether a chart element that is one of the specified types is located at a point defined by the given X and Y coordinates.</summary>
         <returns>An array of <see cref="T:System.Web.UI.DataVisualization.Charting.HitTestResult" /> objects that provides information about the chart element, if any, found at the specified location. The array contains at least one element, which can be <see cref="F:System.Web.UI.DataVisualization.Charting.ChartElementType.Nothing" />. The objects in the result are sorted from the top to the bottom of different layers of control.</returns>
         <remarks>
@@ -2039,7 +2048,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode.UseHttpHandler%2A>.  
+ This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
   
  When you render a chart image using the image tag method, a chart image is generated and then saved to disk at the server, in a format that is determined by the <xref:System.Web.UI.DataVisualization.Charting.ChartImageType> property.  
   
@@ -2894,7 +2903,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the control should draw right-to-left for Right-to-Left (RTL) languages.</summary>
-        <value>A <see cref="T:System.Windows.Forms.RightToLeft" /> enumeration value that indicates whether the control should draw right-to-left for Right-to-Left (RTL) languages. The default value is <see cref="T:System.Windows.Forms.RightToLeft.No" />.</value>
+        <value>A <see cref="T:System.Web.UI.DataVisualization.Charting.RightToLeft" /> enumeration value that indicates whether the control should draw right-to-left for Right-to-Left (RTL) languages. The default value is <see cref="T:System.Web.UI.DataVisualization.Charting.RightToLeft.No" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

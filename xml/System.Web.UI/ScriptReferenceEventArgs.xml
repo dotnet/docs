@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following example shows an ASP.NET Web page that references a script file that is named CustomScript.js. When the Web application is hosted on the www.contoso.com domain, the <xref:System.Web.UI.ScriptReference.Path%2A> property is set to a value specific for that domain. An event handler for the <xref:System.Web.UI.ScriptManager.ResolveScriptReference> event checks the host URL and changes the value for the <xref:System.Web.UI.ScriptReference.Path%2A> property if it is necessary.  
+ The following example shows an ASP.NET Web page that references a script file that is named CustomScript.js. When the Web application is hosted on the www.contoso.com domain, the [ScriptReference.Path]<xref:System.Web.UI.ScriptReferenceBase.Path%2A> property is set to a value specific for that domain. An event handler for the <xref:System.Web.UI.ScriptManager.ResolveScriptReference> event checks the host URL and changes the value for the [ScriptReference.Path]<xref:System.Web.UI.ScriptReferenceBase.Path%2A> property if it is necessary.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReferenceEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReferenceEventArgs/CS/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReferenceEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReferenceEventArgs/VB/Default.aspx#1)]  -->  
@@ -74,7 +74,7 @@
    
   
 ## Examples  
- The following code example shows an ASP.NET Web page that references a script file that is named CustomScript.js. When the Web application is hosted on the www.contoso.com domain, the <xref:System.Web.UI.ScriptReference.Path%2A> property is set to a value specific for that domain. An event handler for the <xref:System.Web.UI.ScriptManager.ResolveScriptReference> event checks the host URL and changes the value for the <xref:System.Web.UI.ScriptReference.Path%2A> property if it is necessary. The <xref:System.Web.UI.ScriptReference> object is retrieved through the <xref:System.Web.UI.ScriptReferenceEventArgs.Script%2A> property.  
+ The following code example shows an ASP.NET Web page that references a script file that is named CustomScript.js. When the Web application is hosted on the www.contoso.com domain, the [ScriptReference.Path]<xref:System.Web.UI.ScriptReferenceBase.Path%2A> property is set to a value specific for that domain. An event handler for the <xref:System.Web.UI.ScriptManager.ResolveScriptReference> event checks the host URL and changes the value for the [ScriptReference.Path]<xref:System.Web.UI.ScriptReferenceBase.Path%2A> property if it is necessary. The <xref:System.Web.UI.ScriptReference> object is retrieved through the <xref:System.Web.UI.ScriptReferenceEventArgs.Script%2A> property.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReferenceEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReferenceEventArgs/CS/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReferenceEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReferenceEventArgs/VB/Default.aspx#1)]  -->  

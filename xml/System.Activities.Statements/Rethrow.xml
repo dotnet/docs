@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The error is re-thrown retaining the original source of the exception. <xref:System.Activities.Statements.Rethrow> can only be used within a <xref:System.Activities.Statements.Catch> block of a <xref:System.Activities.Statements.TryCatchFinally> activity.  
+ The error is re-thrown retaining the original source of the exception. <xref:System.Activities.Statements.Rethrow> can only be used within a <xref:System.Activities.Statements.Catch> block of a <xref:System.Activities.Statements.TryCatch> activity.  
   
  ]]></format>
     </remarks>

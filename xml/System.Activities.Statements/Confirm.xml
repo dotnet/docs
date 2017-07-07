@@ -106,13 +106,13 @@
         <ReturnType>System.Activities.InArgument&lt;System.Activities.Statements.CompensationToken&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.WorkflowModel.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationHandle" /> for this <see cref="T:System.Activities.Statements.Confirm" /> activity.</summary>
-        <value>The <see cref="T:System.WorkflowModel.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationHandle" /> for this <see cref="T:System.Activities.Statements.Confirm" /> activity.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationToken" /> for this <see cref="T:System.Activities.Statements.Confirm" /> activity.</summary>
+        <value>The <see cref="T:System.Activities.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationToken" /> for this <see cref="T:System.Activities.Statements.Confirm" /> activity.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Activities.Statements.Confirm.Target%2A> of the <xref:System.Activities.Statements.CompensationHandle> is specified, the <xref:System.Activities.Statements.Confirm> activity explicitly invokes the confirmation handler of the <xref:System.Activities.Statements.CompensableActivity>, which returns the <xref:System.Activities.Statements.CompensationHandle>. When the <xref:System.Activities.Statements.Confirm.Target%2A> of the <xref:System.Activities.Statements.CompensationHandle> is not specified, the <xref:System.Activities.Statements.Confirm> activity executes the default confirmation for any child <xref:System.Activities.Statements.CompensableActivity> activities in the reverse order of successful completion. An <xref:System.InvalidOperationException> is thrown if the <xref:System.Activities.Statements.Confirm.Target%2A> refers to a <xref:System.Activities.Statements.CompensableActivity> that was previously confirmed or compensated.  
+ When the <xref:System.Activities.Statements.Confirm.Target%2A> of the <xref:System.Activities.Statements.CompensationToken> is specified, the <xref:System.Activities.Statements.Confirm> activity explicitly invokes the confirmation handler of the <xref:System.Activities.Statements.CompensableActivity>, which returns the <xref:System.Activities.Statements.CompensationToken>. When the <xref:System.Activities.Statements.Confirm.Target%2A> of the <xref:System.Activities.Statements.CompensationToken> is not specified, the <xref:System.Activities.Statements.Confirm> activity executes the default confirmation for any child <xref:System.Activities.Statements.CompensableActivity> activities in the reverse order of successful completion. An <xref:System.InvalidOperationException> is thrown if the <xref:System.Activities.Statements.Confirm.Target%2A> refers to a <xref:System.Activities.Statements.CompensableActivity> that was previously confirmed or compensated.  
   
  This property is read-only at runtime. If the value is set at runtime, an <xref:System.InvalidOperationException> is raised.  
   

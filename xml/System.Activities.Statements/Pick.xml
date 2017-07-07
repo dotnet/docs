@@ -21,9 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This activity behaves similarly to <xref:System.Activities.Statements.Switch> in that it executes only one of several activities in response to events. The action chosen to be executed is defined by an event, chosen from a set of events.  
-  
-   
+ This activity behaves similarly to <xref:System.Activities.Statements.Switch%601> in that it executes only one of several activities in response to events. The action chosen to be executed is defined by an event, chosen from a set of events.   
   
 ## Examples  
  The following code sample demonstrates creating a <xref:System.Activities.Statements.Pick> activity. This example is from the [Using the Pick Activity](~/docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md) sample.  

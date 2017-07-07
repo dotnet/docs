@@ -189,7 +189,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
   
  ]]></format>
         </remarks>
@@ -219,7 +219,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
   
  ]]></format>
         </remarks>
@@ -252,7 +252,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand%2A>.  
   
  The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
@@ -281,7 +281,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
   
  ]]></format>
         </remarks>
@@ -311,7 +311,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
   
  ]]></format>
         </remarks>
@@ -344,7 +344,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand%2A>.  
   
  The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
@@ -439,7 +439,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
   
  ]]></format>
         </remarks>
@@ -469,7 +469,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
   
  ]]></format>
         </remarks>
@@ -502,7 +502,7 @@
   
  You can also use <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OleDb.OleDbCommand.CommandTimeout%2A> value, and then explicitly set that on the <xref:System.Data.OleDb.OleDbDataAdapter>.  
   
- After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.Update%2A> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
+ After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A> will be still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.OleDb.OleDbDataAdapter.UpdateCommand*> or <xref:System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand%2A>.  
   
  The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter lets you force the <xref:System.Data.OleDb.OleDbCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   

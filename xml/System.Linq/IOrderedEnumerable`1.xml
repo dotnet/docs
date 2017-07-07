@@ -96,7 +96,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use <xref:System.Linq.IOrderedEnumerable%601.CreateOrderedEnumerable%2A> to perform a secondary ordering on an <xref:System.Linq.IOrderedEnumerable%601>.  
+ The following code example demonstrates how to use <xref:System.Linq.IOrderedEnumerable`1.CreateOrderedEnumerable*> to perform a secondary ordering on an <xref:System.Linq.IOrderedEnumerable%601>.  
   
  [!code-csharp[System.Linq.IOrderedEnumerable#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Linq.IOrderedEnumerable/CS/IOrderedEnumerable.cs#2)]
  [!code-vb[System.Linq.IOrderedEnumerable#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Linq.IOrderedEnumerable/VB/IOrderedEnumerable.vb#2)]  

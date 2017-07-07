@@ -145,7 +145,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 <a name="standalone_language_packs"></a>   
 ## To install language packs
 
- Language packs are executable files that contain the localized resources (such as translated error messages and UI text) for supported languages. If you don't install a language pack, .NET Framework error messages and other text are displayed in English.  Note that the web installer automatically installs the language pack that matches your operating system, but you can download additional language packs to your computer. The offline installers don’t include any language packs. In addition, language packs are not available for the .NET Framework 4.7.
+ Language packs are executable files that contain the localized resources (such as translated error messages and UI text) for supported languages. If you don't install a language pack, .NET Framework error messages and other text are displayed in English.  Note that the web installer automatically installs the language pack that matches your operating system, but you can download additional language packs to your computer. The offline installers don’t include any language packs. 
   
 > [!IMPORTANT]
 > The language packs don't contain the .NET Framework components that are required to run an app, so you must run the web or offline installer before you install a language pack. If you have already installed a language pack, uninstall it, install the .NET Framework, and then reinstall the language pack.  

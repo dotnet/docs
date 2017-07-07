@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:Sytem.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
+ The `documents` collection should contain only <xref:System.Web.Services.Description.ServiceDescription> and <xref:System.Xml.Schema.XmlSchema> objects; the <xref:System.Web.Services.Description.ServiceDescriptionImporter.GenerateWebReferences%2A> method is unable to interpret <xref:System.Web.Services.Discovery.DiscoveryDocument> objects.  
   
  ]]></format>
         </remarks>

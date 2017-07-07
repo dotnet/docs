@@ -29,7 +29,7 @@
   
  Data points can be located, and manipulated, based on maximum, minimum or specified X or Y-values using the overloaded `FindMaxValue`, `FindMinValue` or `FindValue` methods, respectively.  
   
- The <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCollection.Count%2A> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
+ The <xref:System.Collections.ObjectModel.Collection%601.Count%2A> property indicates the total number of items in the collection and is commonly used to find the upper bound of the collection.  
   
  ]]></format>
     </remarks>

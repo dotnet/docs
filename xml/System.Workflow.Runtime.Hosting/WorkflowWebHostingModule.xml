@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Dispose%2A> when you are finished using the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule>. The <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Dispose%2A> method leaves the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> in an unusable state. After calling <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Dispose%2A>, you must release all references to the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> so the garbage collector can reclaim the memory that the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> occupied.  
+ Call <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System%23Web%23IHttpModule%23Dispose?displayProperty=fullName> when you are finished using the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule>. The <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System%23Web%23IHttpModule%23Dispose> method leaves the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> in an unusable state. After calling <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System%23Web%23IHttpModule%23Dispose>, you must release all references to the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> object so the garbage collector can reclaim the memory that the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> object occupied.  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule> object's `Finalize` method.  
@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System.Web.IHttpModule.Init%2A> to register event handling methods with specific events.  
+ Use <xref:System.Workflow.Runtime.Hosting.WorkflowWebHostingModule.System%23Web%23IHttpModule%23Init(System.Web.HttpApplication)?displayProperty=fullName> to register event handling methods with specific events.  
   
  ]]></format>
         </remarks>

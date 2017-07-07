@@ -433,7 +433,7 @@
    
   
 ## Examples  
- The following code example demonstrates initializing a <xref:System.Windows.Forms.ListView> in detail view and automatically resizing the columns using the <xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method. To run this example, paste this code into a Windows Form and call the `InitializeResizingListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+ The following example initializes a <xref:System.Windows.Forms.ListView> in detail view and automatically resizes the columns using the <xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method. To run this example, paste this code into a Windows Form and call the `InitializeResizingListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
   
  [!code-csharp[System.Windows.Forms.ListViewWhidbeyProperties#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/CS/form1.cs#1)]
  [!code-vb[System.Windows.Forms.ListViewWhidbeyProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/VB/form1.vb#1)]  

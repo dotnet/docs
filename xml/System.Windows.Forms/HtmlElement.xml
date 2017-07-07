@@ -1662,7 +1662,7 @@
 ## Remarks  
  The equality operator tests the `IUnknown` pointers of the underlying COM objects wrapped by the supplied <xref:System.Windows.Forms.HtmlElement> classes.  
   
- The equivalent method for this operator is <xref:System.Windows.Forms.HtmlElement.Equals%28System.Windows.Forms.HtmlElement%2CSystem.Windows.Forms.HtmlElement%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Windows.Forms.HtmlElement.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1689,7 +1689,7 @@
         <returns>
           <see langword="true" /> is only one element is <see langword="null" />, or the two objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.HtmlElement.Compare%28System.Windows.Forms.HtmlElement%2CSystem.Windows.Forms.HtmlElement%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.HtmlElement.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>

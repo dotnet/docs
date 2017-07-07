@@ -115,13 +115,13 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Activities.Argument&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The arguments to be passed to the <see cref="P:System.Activities.Statements.InvokeDelegate.ActivityDelegate" />.</summary>
+        <summary>The arguments to be passed to the <see cref="T:System.Activities.ActivityDelegate" /> object.</summary>
         <value>The arguments to be passed to the delegate.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The keys are the names of the <xref:System.Activities.ActivityDelegateParameter> objects on the <xref:Activities.ActivityDelegate> and the values are the arguments whose expressions are evaluated and assigned to the corresponding <xref:System.Activities.ActivityDelegateParameter> objects.  
+ The keys are the names of the <xref:System.Activities.Argument> objects on the <xref:System.Activities.ActivityDelegate>, and the values are the arguments whose expressions are evaluated and assigned to the corresponding <xref:System.Activities.Argument> objects.  
   
  ]]></format>
         </remarks>

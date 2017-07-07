@@ -46,6 +46,8 @@ Used to perform miscellaneous actions such as creating objects, checking the run
   
     -   [new Constraint](../../../csharp/language-reference/keywords/new-constraint.md) Qualifies a type parameter.  
   
+-   [nameof](nameof.md) Obtains the simple (unqualified) string name of a variable, type, or member.
+ 
 -   [sizeof](../../../csharp/language-reference/keywords/sizeof.md) Obtains the size of a type.  
   
 -   [typeof](../../../csharp/language-reference/keywords/typeof.md) Obtains the **System.Type** object for a type.  

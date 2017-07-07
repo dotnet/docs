@@ -1,0 +1,65 @@
+<Type Name="ActivationOption" FullName="System.EnterpriseServices.ActivationOption">
+  <TypeSignature Language="C#" Value="public enum ActivationOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ActivationOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ActivationOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the manner in which serviced components are activated in the application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The activation setting for the application defaults to `Library`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration.  
+  
+ [!code-cpp[EnterpriseServices_Basic#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Basic/CPP/calculator.cpp#1)]
+ [!code-csharp[EnterpriseServices_Basic#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Basic/CS/calculator.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Library">
+      <MemberSignature Language="C#" Value="Library" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ActivationOption Library = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ActivationOption.Library" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ActivationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that serviced components in the marked application are activated in the creator's process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="Server" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.ActivationOption Server = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.ActivationOption.Server" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.ActivationOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that serviced components in the marked application are activated in a system-provided process.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -36,7 +36,7 @@ translation.priority.mt:
   
 ## Syntax  
   
-```  
+```csharp
 #pragma warning disable warning-list  
 #pragma warning restore warning-list  
 ```  
@@ -52,7 +52,7 @@ translation.priority.mt:
   
 ## Example  
   
-```  
+```csharp
 // pragma_warning.cs  
 using System;  
   

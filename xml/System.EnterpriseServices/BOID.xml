@@ -1,0 +1,41 @@
+<Type Name="BOID" FullName="System.EnterpriseServices.BOID">
+  <TypeSignature Language="C#" Value="public struct BOID" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BOID extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BOID" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the unit of work associated with a transaction. This structure is used in <see cref="T:System.EnterpriseServices.XACTTRANSINFO" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="rgb">
+      <MemberSignature Language="C#" Value="public byte[] rgb;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] rgb" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.BOID.rgb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an array that contains the data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

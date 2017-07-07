@@ -137,9 +137,9 @@
       <Docs>
         <param name="content">The serializable content.</param>
         <param name="serializable">
-          <see langword="True" /> to get a serializable string; <see langword="false" /> to get a non serializaable string.</param>
-        <summary>Returns a serializable or non serializable class and/or property names, depending on the specific flag value.</summary>
-        <returns>A <see langword="string" /> value that represents the serializable or non serializable class and/or property names.</returns>
+          <see langword="True" /> to get a serializable string; <see langword="false" /> to get a non-serializable string.</param>
+        <summary>Returns a serializable or non-serializable class and/or property names, depending on the specific flag value.</summary>
+        <returns>A <see langword="string" /> value that represents the serializable or non-serializable class and/or property names.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,8 +278,6 @@
  By default, all serialized chart properties will be loaded. By setting the <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.Content%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.SerializableContent%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.NonSerializableContent%2A> properties, a specific set of properties can be loaded.  
   
  If you use this definition, note that the format, which is set by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.Format%2A> property, must be XML.  
-  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.ViewStateData%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control is used to persist state, this method can be used to load the serialized data that is posted by the client back to the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control.  
   
  ]]></format>
         </remarks>
@@ -483,8 +481,6 @@
  By default, all chart properties with non-default values, which includes data points, will be serialized when this method is called. To control which chart characteristics are serialized, use the <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.Content%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.SerializableContent%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.NonSerializableContent%2A> properties.  
   
  When you use this definition, the format must be XML; the format can be set with the <xref:System.Windows.Forms.DataVisualization.Charting.ChartSerializer.Format%2A> property.  
-  
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.ViewStateData%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control is used to persist state, this method can be used to save the serialized data to an object derived from <xref:System.IO.TextWriter>, which is then used to write the data to the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.ViewStateData%2A>property.  
   
  ]]></format>
         </remarks>

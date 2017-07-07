@@ -16,6 +16,7 @@ manager: "wpickett"
 # "Retargeting Changes in the .NET Framework | Microsoft Docs"
 
 [!include[introduction](../../../includes/migration-guide/retargeting/introduction.md)]
+
 ## Usage
 Select the .NET Framework you are currently targeting and then the .NET Framework you wish to migrate to:
 

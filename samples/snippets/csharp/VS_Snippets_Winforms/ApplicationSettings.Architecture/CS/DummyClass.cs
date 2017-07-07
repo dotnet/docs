@@ -6,6 +6,7 @@ using System.Configuration;
 
 namespace ApplicationSettingsArchitectureCS
 {
+    [SettingsProvider("SqlSettingsProvider")]
     class CustomSettings : ApplicationSettingsBase
     {
         // Implementation goes here.

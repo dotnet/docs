@@ -19,7 +19,7 @@
 ## Remarks  
  A SOAP 1.2 fault contains a `Code` element and among other things an optional `Subcode` element. The `Code` element specifies the type of error that occurred using a limited number of pre-defined error codes specified by the SOAP protocol, whereas the `Subcode` element allows the sender of the SOAP fault to provide an application specific error code. This class represents the contents of the `Subcode` element.  
   
- XML Web services return a SOAP fault by throwing a <xref:System.Web.Services.Protocols.SoapException> and.NET clients receive a SOAP fault by catching a <xref:System.Web.Services.Protocols.SoapException>. A <xref:System.Web.Services.Protocols.SoapException> has the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property representing the `Code` element and the <xref:System.Web.Services.Protocols.SoapException.Subcode%2A> property representing the `Subcode` element.  
+ XML Web services return a SOAP fault by throwing a <xref:System.Web.Services.Protocols.SoapException>, and .NET clients receive a SOAP fault by catching a <xref:System.Web.Services.Protocols.SoapException>. A <xref:System.Web.Services.Protocols.SoapException> has a <xref:System.Web.Services.Protocols.SoapException.Code%2A> property that represents the `Code` element and a <xref:System.Web.Services.Protocols.SoapException.SubCode%2A> property that represents the `Subcode` element.  
   
  ]]></format>
     </remarks>
@@ -39,8 +39,8 @@
         <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
       </Parameters>
       <Docs>
-        <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> specifying the application specific error code. Sets the <see cref="P:System.Web.Services.Protocols.SoapFaultSubcode.Code" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapFaultSubcode" /> class sets the application specific error code.</summary>
+        <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> specifying the application specific error code. Sets the <see cref="P:System.Web.Services.Protocols.SoapFaultSubCode.Code" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> class and sets the application specific error code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,9 +85,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubcode.Code%2A> property.  
+ Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A> property.  
   
- The value of the <xref:System.Web.Services.Protocols.SoapFaultSubcode.Code%2A> property can be any user defined XML qualified name, including the codes represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingMissingIDFaultCode>, and <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode> fields.  
+ The value of the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A> property can be any user defined XML qualified name, including the codes represented by the <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode?displayProperty=fullName>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode?displayProperty=fullName>, <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingMissingIdFaultCode?displayProperty=fullName>, and <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode?displayProperty=fullName> fields.  
   
  ]]></format>
         </remarks>
@@ -108,12 +108,12 @@
       </ReturnValue>
       <Docs>
         <summary>Gets additional error information contained within a child <see langword="Subcode" /> element.</summary>
-        <value>A <see cref="T:System.Web.Services.Protocols.SoapFaultSubcode" /> containing additional error information.</value>
+        <value>A <see cref="T:System.Web.Services.Protocols.SoapFaultSubCode" /> containing additional error information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubcode.Subcode%2A> property. The <xref:System.Web.Services.Protocols.SoapFaultSubcode.Subcode%2A> property allows an XML Web service to provide nested error information. This is useful for providing an error code specific to the XML Web service while passing along error information returned from components the XML Web service called.  
+ Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubCode.SubCode%2A> property. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.SubCode%2A> property allows an XML Web service to provide nested error information. This is useful for providing an error code specific to the XML Web service while passing along error information returned from components the XML Web service called.  
   
  ]]></format>
         </remarks>

@@ -37,7 +37,7 @@ This section contains the contextual keywords used in query expressions.
 |Clause|Description|  
 |------------|-----------------|  
 |[from](../../../csharp/language-reference/keywords/from-clause.md)|Specifies a data source and a range variable (similar to an iteration variable).|  
-|[where](../../../csharp/language-reference/keywords/where-clause.md)|Filters source elements based on one or more Boolean expressions separated by logical AND and OR operators ( `&&` or `&#124;&#124;` ).|  
+|[where](../../../csharp/language-reference/keywords/where-clause.md)|Filters source elements based on one or more Boolean expressions separated by logical AND and OR operators ( `&&` or <code>&#124;&#124;</code> ).|  
 |[select](../../../csharp/language-reference/keywords/select-clause.md)|Specifies the type and shape that the elements in the returned sequence will have when the query is executed.|  
 |[group](../../../csharp/language-reference/keywords/group-clause.md)|Groups query results according to a specified key value.|  
 |[into](../../../csharp/language-reference/keywords/into.md)|Provides an identifier that can serve as a reference to the results of a join, group or select clause.|  

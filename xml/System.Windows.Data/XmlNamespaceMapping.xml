@@ -126,7 +126,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects are the same; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Data.XmlNamespaceMapping.Equals%28System.Windows.Data.XmlNamespaceMapping%2CSystem.Windows.Data.XmlNamespaceMapping%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Data.XmlNamespaceMapping.Equals*?displayProperty=fullName>. ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -153,7 +153,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Data.XmlNamespaceMapping" /> objects are not the same; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Data.XmlNamespaceMapping.Compare%28System.Windows.Data.XmlNamespaceMapping%2CSystem.Windows.Data.XmlNamespaceMapping%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Data.XmlNamespaceMapping.Equals%2A?displayProperty=fullName>. ]]></format>
         </remarks>
       </Docs>
     </Member>

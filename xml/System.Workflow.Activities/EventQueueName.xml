@@ -260,7 +260,7 @@
 ## Remarks  
  If `queueKey1` and `queueKey2` contain a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.Activities.EventQueueName.op_Equality%2A> returns `true`.  
   
- The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Equals%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
         <returns>
           <see langword="true" /> if <paramref name="queueKey1" /> is greater than <paramref name="queueKey2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Compare%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.CompareTo%2A?displayProperty=fullName>]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueKey1" /> or <paramref name="queueKey2" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
@@ -316,7 +316,7 @@
         <returns>
           <see langword="true" /> if <paramref name="queueKey1" /> and <paramref name="queueKey2" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Compare%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.CompareTo%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
         <returns>
           <see langword="true" /> if <paramref name="queueKey1" /> is greater than <paramref name="queueKey2" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.Compare%28System.Workflow.Activities.EventQueueName%2CSystem.Workflow.Activities.EventQueueName%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Workflow.Activities.EventQueueName.CompareTo%2A?displayProperty=fullName>]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="queueKey1" /> or <paramref name="queueKey2" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>

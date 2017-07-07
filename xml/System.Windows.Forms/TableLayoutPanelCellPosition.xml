@@ -143,7 +143,7 @@
         <returns>
           <see langword="true" /> if <paramref name="p1" /> and <paramref name="p2" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.TableLayoutPanelCellPosition.Equals%28System.Windows.Forms.TableLayoutPanelCellPosition%2CSystem.Windows.Forms.TableLayoutPanelCellPosition%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.TableLayoutPanelCellPosition.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -170,7 +170,7 @@
         <returns>
           <see langword="true" /> if <paramref name="p1" /> and <paramref name="p2" /> differ; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.TableLayoutPanelCellPosition.Compare%28System.Windows.Forms.TableLayoutPanelCellPosition%2CSystem.Windows.Forms.TableLayoutPanelCellPosition%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Forms.TableLayoutPanelCellPosition.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

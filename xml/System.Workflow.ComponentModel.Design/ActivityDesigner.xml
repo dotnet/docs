@@ -2869,7 +2869,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.System.ComponentModel.Design.IDesigner.Component%2A> represents the activity that the activity designer designs on the workflow design surface.  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.System%23ComponentModel%23Design%23IDesigner%23Component> represents the activity that the activity designer designs on the workflow design surface.  
   
  ]]></format>
         </remarks>
@@ -3115,7 +3115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Unless overridden in a deriving class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.System.ComponentModel.Design.IRootDesigner.SupportedTechnologies%2A> returns a single-member array that contains <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName>.  
+ Unless overridden in a deriving class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.System%23ComponentModel%23Design%23IRootDesigner%23SupportedTechnologies> returns a single-member array that contains <xref:System.ComponentModel.Design.ViewTechnology?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>

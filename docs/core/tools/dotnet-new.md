@@ -23,7 +23,6 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ```
 dotnet new <TEMPLATE> [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
-dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
 
@@ -83,10 +82,6 @@ Location to place the generated output. The default is the current directory.
 `-u|--uninstall <PATH|NUGET_ID>`
 
 Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. This option is available starting with .NET Core SDK 2.0 Preview 2.
-
-`-all|--show-all`
-
-Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. When running in the context of a specific template, such as `dotnet new web -all`, `-all` is interpreted as a force creation flag. This is required when the output directory already contains a project.
 
 ## Template options
 

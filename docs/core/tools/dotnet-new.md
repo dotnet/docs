@@ -25,7 +25,6 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ```
 dotnet new <TEMPLATE> [--force] [-h|--help] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [--type] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
-dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
 
@@ -62,10 +61,6 @@ The command contains a default list of templates. Use `dotnet new -all` to obtai
 | MVC ViewStart                                | viewstart   |              | Web/ASP.NET         |
 
 ## Options
-
-`-all|--show-all`
-
-Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. When running in the context of a specific template, such as `dotnet new web -all`, `-all` is interpreted as a force creation flag. This is required when the output directory already contains a project.
 
 `--force`
 

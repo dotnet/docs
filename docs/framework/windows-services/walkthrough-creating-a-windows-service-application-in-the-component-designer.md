@@ -1,13 +1,9 @@
 ---
 title: "Walkthrough: Creating a Windows Service Application in the Component Designer | Microsoft Docs"
-ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, walkthroughs"
@@ -248,7 +244,7 @@ This article demonstrates how to create a simple Windows Service application in 
   
 5.  Add code to set the status to Running at the end of the <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method.  
   
-    ```  
+    ```csharp
     // Update the service state to Running.  
     serviceStatus.dwCurrentState = ServiceState.SERVICE_RUNNING;  
     SetServiceStatus(this.ServiceHandle, ref serviceStatus);  
@@ -309,37 +305,89 @@ This article demonstrates how to create a simple Windows Service application in 
   
 1.  In the `Main` method in Program.cs or in MyNewService.Designer.vb, add an argument for the command line:  
   
-    ```csharp  
-    static void Main(string[] args)        {            ServiceBase[] ServicesToRun;            ServicesToRun = new ServiceBase[]             {                 new MyNewService(args)             };            ServiceBase.Run(ServicesToRun);        }  
-    ```  
+```csharp  
+static void Main(string[] args)
+{
+    ServiceBase[] ServicesToRun = new ServiceBase[] { new MyNewService(args) };
+    ServiceBase.Run(ServicesToRun);
+}
+```  
   
-    ```vb  
-    Shared Sub Main(ByVal cmdArgs() As String)        Dim ServicesToRun() As System.ServiceProcess.ServiceBase        ServicesToRun = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}        System.ServiceProcess.ServiceBase.Run(ServicesToRun)    End Sub  
-    ```  
+```vb
+Shared Sub Main(ByVal cmdArgs() As String)
+    Dim ServicesToRun() As System.ServiceProcess.ServiceBase = New System.ServiceProcess.ServiceBase() {New MyNewServiceVB(cmdArgs)}
+    System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+End Sub
+```  
   
 2.  Change the `MyNewService` constructor as follows:  
   
-    ```csharp  
-    public MyNewService(string[] args)        {            InitializeComponent();            string eventSourceName = "MySource";            string logName = "MyNewLog";            if (args.Count() > 0)            {                eventSourceName = args[0];            }            if (args.Count() > 1)            {                logName = args[1];            }            eventLog1 = new System.Diagnostics.EventLog();            if (!System.Diagnostics.EventLog.SourceExists(eventSourceName))            {                System.Diagnostics.EventLog.CreateEventSource(                    eventSourceName, logName);            }            eventLog1.Source = eventSourceName;            eventLog1.Log = logName;        }  
-    ```  
+```csharp  
+public MyNewService(string[] args)
+{
+    InitializeComponent();
+    string eventSourceName = "MySource";
+    string logName = "MyNewLog";
+    if (args.Count() > 0) 
+    {
+        eventSourceName = args[0];
+    }
+    if (args.Count() > 1)
+    {
+        logName = args[1];
+    }
+    eventLog1 = new System.Diagnostics.EventLog();
+    if (!System.Diagnostics.EventLog.SourceExists(eventSourceName))
+    {
+        System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName);
+    }
+    eventLog1.Source = eventSourceName;
+    eventLog1.Log = logName;        
+}
+```  
   
-    ```vb  
-    Public Sub New(ByVal cmdArgs() As String)        InitializeComponent()        Dim eventSourceName As String = "MySource"        Dim logName As String = "MyNewLog"        If (cmdArgs.Count() > 0) Then            eventSourceName = cmdArgs(0)        End If        If (cmdArgs.Count() > 1) Then            logName = cmdArgs(1)        End If        eventLog1 = New System.Diagnostics.EventLog()        If (Not System.Diagnostics.EventLog.SourceExists(eventSourceName)) Then            System.Diagnostics.EventLog.CreateEventSource(                eventSourceName, logName)        End If        eventLog1.Source = eventSourceName        eventLog1.Log = logName    End Sub  
-    ```  
+```vb  
+Public Sub New(ByVal cmdArgs() As String)
+    InitializeComponent()
+    Dim eventSourceName As String = "MySource"
+    Dim logName As String = "MyNewLog"
+    If (cmdArgs.Count() > 0) Then
+        eventSourceName = cmdArgs(0)
+    End If
+    If (cmdArgs.Count() > 1) Then
+        logName = cmdArgs(1)
+    End If
+    eventLog1 = New System.Diagnostics.EventLog()
+    If (Not System.Diagnostics.EventLog.SourceExists(eventSourceName)) Then
+        System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName)
+    End If
+    eventLog1.Source = eventSourceName
+    eventLog1.Log = logName
+End Sub  
+```  
   
-     This code sets the event source and log name according to the supplied startup parameters, or uses default values if no arguments are supplied.  
+This code sets the event source and log name according to the supplied startup parameters, or uses default values if no arguments are supplied.  
   
-3.  To specify the command-line arguments, add the following code to the `ProjectInstaller` class in ProjectInstaller.cs or ProjectInstaller.vb:  
+3. To specify the command-line arguments, add the following code to the `ProjectInstaller` class in ProjectInstaller.cs or ProjectInstaller.vb:  
   
-    ```csharp  
-    protected override void OnBeforeInstall(IDictionary savedState)        {            string parameter = "MySource1\" \"MyLogFile1";            Context.Parameters["assemblypath"] = "\"" + Context.Parameters["assemblypath"] + "\" \"" + parameter + "\"";            base.OnBeforeInstall(savedState);        }  
-    ```  
+```csharp  
+protected override void OnBeforeInstall(IDictionary savedState)
+{
+    string parameter = "MySource1\" \"MyLogFile1";
+    Context.Parameters["assemblypath"] = "\"" + Context.Parameters["assemblypath"] + "\" \"" + parameter + "\"";
+    base.OnBeforeInstall(savedState);
+}
+```
+
+```vb  
+Protected Overrides Sub OnBeforeInstall(ByVal savedState As IDictionary)
+    Dim parameter As String = "MySource1"" ""MyLogFile1"
+    Context.Parameters("assemblypath") = """" + Context.Parameters("assemblypath") + """ """ + parameter + """"
+    MyBase.OnBeforeInstall(savedState)
+End Sub  
+```  
   
-    ```vb  
-    Protected Overrides Sub OnBeforeInstall(ByVal savedState As IDictionary)        Dim parameter As String = "MySource1"" ""MyLogFile1"        Context.Parameters("assemblypath") = """" + Context.Parameters("assemblypath") + """ """ + parameter + """"        MyBase.OnBeforeInstall(savedState)    End Sub  
-    ```  
-  
-     This code modifies the **ImagePath** registry key, which typically contains the full path to the executable for the Windows Service, by adding the default parameter values. The quotation marks around the path (and around each individual parameter) are required for the service to start up correctly. To change the startup parameters for this Windows Service, users can change the parameters given in the **ImagePath** registry key, although the better way is to change it programmatically and expose the functionality to users in a friendly way (for example, in a management or configuration utility).  
+This code modifies the **ImagePath** registry key, which typically contains the full path to the executable for the Windows Service, by adding the default parameter values. The quotation marks around the path (and around each individual parameter) are required for the service to start up correctly. To change the startup parameters for this Windows Service, users can change the parameters given in the **ImagePath** registry key, although the better way is to change it programmatically and expose the functionality to users in a friendly way (for example, in a management or configuration utility).  
   
 <a name="BK_Build"></a>   
 ## Building the Service  

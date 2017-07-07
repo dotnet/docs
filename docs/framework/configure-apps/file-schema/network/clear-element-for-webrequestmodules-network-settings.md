@@ -64,7 +64,7 @@ Removes all registered Web request modules from the application.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example clears all Web request modules and then registers a Web request module for HTTP.  
+ The following example clears all Web request modules and then registers a Web request module for HTTP.  
   
 ```xml  
 <configuration>  

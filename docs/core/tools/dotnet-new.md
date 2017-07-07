@@ -129,3 +129,5 @@ List all templates available for MVC:
 ## See also
 
 [Create custom templates for dotnet new](create-custom-templates.md)   
+[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)   
+[Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)

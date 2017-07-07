@@ -56,7 +56,8 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |6|The compiler accepts only syntax that is included in C# 6.0 or lower <sup id="TCS6">[CS6](#FCS6)</sup>|
 |7|The compiler accepts only syntax that is included in C# 7.0 or lower <sup id="TCS7">[CS7](#FCS7)</sup>|
 |latest|The compiler accepts all valid language syntax that it can support. <sup id="TLatest">[Latest](#FLatest)</sup>|
-<!--- Uncomment and move these above |latest| once they're officially released
+<!--- Uncomment and move these above
+|latest| once they're officially released
 |7.1|The compiler accepts only syntax that is included in C# 7.1 or lower <sup id="TCS71">[CS71](#FCS71)</sup>|
 |7.2|The compiler accepts only syntax that is included in C# 7.2 or lower <sup id="TCS71">[CS72](#FCS72)</sup>|
 |8|The compiler accepts only syntax that is included in C# 8 or lower <sup id="TCS71">[CS8](#FCS8)</sup>|

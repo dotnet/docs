@@ -73,4 +73,4 @@ Specifies that debug information should be placed in a file for later analysis.
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
  [/errorreport (C# Compiler Options)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

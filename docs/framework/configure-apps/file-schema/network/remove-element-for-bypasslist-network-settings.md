@@ -74,7 +74,7 @@ Removes an IP address or DNS name from the proxy bypass list.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example removes any previous definition for the adventure-works.com domain, and then adds the contoso.com domain to the bypass list.  
+ The following example removes any previous definition for the adventure-works.com domain, and then adds the contoso.com domain to the bypass list.  
   
 ```xml  
 <configuration>  

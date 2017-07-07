@@ -65,7 +65,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
  The `specifiedPickupDirectory` attribute sets the directory where applications save mail messages to be processed by the SMTP server.  
   
 ## Example  
- The following code example specifies c:\maildrop as the mail pickup directory.  
+ The following example specifies c:\maildrop as the mail pickup directory.  
   
 ```xml  
 <configuration>  

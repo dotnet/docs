@@ -2,8 +2,8 @@
 title: About authorization in .NET microservices and web applications | Microsoft Docs 
 description: .NET Microservices Architecture for Containerized .NET Applications | About authorization in .NET microservices and web applications
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE, mjrousos
-ms.author: wiwagn, cesardl, mikerou
+author: mjrousos
+ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker

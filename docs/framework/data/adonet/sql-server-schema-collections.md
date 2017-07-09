@@ -50,6 +50,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |table_catalog|String|Table name the index is associated with.|  
 |table_schema|String|Schema that contains the table the index is associated with.|  
 |table_name|String|Table Name.|  
+|index_name|String|Index Name.|  
   
 ### Indexes (SQL Server 2008)  
  Beginning with the .NET Framework version 3.5 SP1 and SQL Server 2008, the following columns have been added to the Indexes schema collection to support new spatial types, filestream and sparse columns. These columns are not supported in earlier versions of the .NET Framework and SQL Server.  
@@ -70,7 +71,8 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |table_name|String|Table Name.|  
 |column_name|String|Column name the index is associated with.|  
 |ordinal_position|Int32|Column ordinal position.|  
-|KeyType|UInt16|The type of object.|  
+|KeyType|Byte|The type of object.|  
+|index_name|String|Index Name.|  
   
 ## Procedures  
   
@@ -93,7 +95,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |specific_catalog|String|Catalog name of the procedure for which this is a parameter.|  
 |specific_schema|String|Schema that contains the procedure for which this parameter is part of.|  
 |specific_name|String|Name of the procedure for which this parameter is a part of.|  
-|ordinal_position|Int16|Ordinal position of the parameter starting at 1. For the return value of a procedure, this is a 0.|  
+|ordinal_position|Int32|Ordinal position of the parameter starting at 1. For the return value of a procedure, this is a 0.|  
 |parameter_mode|String|Returns IN if an input parameter, OUT if an output parameter, and INOUT if an input/output parameter.|  
 |is_result|String|Returns YES if indicates result of the procedure that is a function. Otherwise, returns NO.|  
 |as_locator|String|Returns YES if declared as locator. Otherwise, returns NO.|  
@@ -131,7 +133,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |table_schema|String|Schema that contains the table.|  
 |table_name|String|Table name.|  
 |column_name|String|Column name.|  
-|ordinal_position|Int16|Column identification number.|  
+|ordinal_position|Int32|Column identification number.|  
 |column_default|String|Default value of the column|  
 |is_nullable|String|Nullability of the column. If this column allows NULL, this column returns YES. Otherwise, No is returned.|  
 |data_type|String|System-supplied data type.|  
@@ -166,7 +168,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |table_schema|String|Schema that contains the table.|  
 |table_name|String|Table name.|  
 |column_name|String|Column name.|  
-|ordinal_position|Int16|Column identification number.|  
+|ordinal_position|Int32|Column identification number.|  
 |column_default|String|Default value of the column|  
 |is_nullable|String|Nullability of the column. If this column allows NULL, this column returns YES. Otherwise, NO is returned.|  
 |data_type|String|System-supplied data type.|  
@@ -193,7 +195,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |table_schema|String|Schema that contains the table.|  
 |table_name|String|Table name.|  
 |column_name|String|Column name.|  
-|ordinal_position|Int16|Column identification number.|  
+|ordinal_position|Int32|Column identification number.|  
 |column_default|String|Default value of the column|  
 |is_nullable|String|Nullability of the column. If this column allows NULL, this column returns YES. Otherwise, NO is returned.|  
 |data_type|String|System-supplied data type.|  
@@ -216,7 +218,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |ColumnName|DataType|Description|  
 |----------------|--------------|-----------------|  
 |uid|Int16|User ID, unique in this database. 1 is the database owner.|  
-|name|String|Username or group name, unique in this database.|  
+|user_name|String|Username or group name, unique in this database.|  
 |createdate|DateTime|Date the account was added.|  
 |updatedate|DateTime|Date the account was last changed.|  
   

@@ -37,11 +37,11 @@
   
  The following example creates the user interface for the previous example.  
   
- [!code-xml[IEditableCollectionViewAddItemExample#MainWindowXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/ieditablecollectionviewadditemexample/csharp/window1.xaml#mainwindowxaml)]  
+ [!code-xaml[IEditableCollectionViewAddItemExample#MainWindowXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/ieditablecollectionviewadditemexample/csharp/window1.xaml#mainwindowxaml)]  
   
  The following example creates the `AddItemWindow` in which the user adds data for a new item.  
   
- [!code-xml[IEditableCollectionViewAddItemExample#AddItemXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/ieditablecollectionviewadditemexample/csharp/additem.xaml#additemxaml)]  
+ [!code-xaml[IEditableCollectionViewAddItemExample#AddItemXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/ieditablecollectionviewadditemexample/csharp/additem.xaml#additemxaml)]  
   
  The following example shows the logic for the `AddItemWindow`.  
   

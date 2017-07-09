@@ -39,7 +39,7 @@
 ## Examples  
  The following example shows how the use the <xref:System.Windows.Controls.ToolTipService> class to specify the behavior of a tooltip. You set the properties of the <xref:System.Windows.Controls.ToolTipService> class by attaching them directly to the element that exposes the tooltip.  
   
- [!code-xml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+ [!code-xaml[ToolTipService#NoToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
   
  ]]></format>
     </remarks>

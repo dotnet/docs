@@ -66,7 +66,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Menu> to manipulate text in a <xref:System.Windows.Controls.TextBox>. The <xref:System.Windows.Controls.Menu> contains <xref:System.Windows.Controls.MenuItem> objects that use the <xref:System.Windows.Controls.MenuItem.Command%2A>, <xref:System.Windows.Controls.MenuItem.IsCheckable%2A>, and <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> properties and the <xref:System.Windows.Controls.MenuItem.Checked>, <xref:System.Windows.Controls.MenuItem.Unchecked>, and <xref:System.Windows.Controls.MenuItem.Click> events.  
   
- [!code-xml[MenuItemCommandsAndEvents#1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#1)]  
+ [!code-xaml[MenuItemCommandsAndEvents#1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#1)]  
   
  [!code-csharp[MenuItemCommandsAndEvents#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#2)]
  [!code-vb[MenuItemCommandsAndEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#2)]  
@@ -128,7 +128,7 @@
 ## Examples  
  The following example demonstrates handling the <xref:System.Windows.Controls.MenuItem.Checked> event.  
   
- [!code-xml[MenuItemCommandsAndEvents#3](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#3)]  
+ [!code-xaml[MenuItemCommandsAndEvents#3](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#3)]  
   
  [!code-csharp[MenuItemCommandsAndEvents#4](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#4)]
  [!code-vb[MenuItemCommandsAndEvents#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#4)]  
@@ -193,7 +193,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Menu> to manipulate text in a <xref:System.Windows.Controls.TextBox>. The <xref:System.Windows.Controls.Menu> contains <xref:System.Windows.Controls.MenuItem> objects that use the <xref:System.Windows.Controls.MenuItem.Command%2A>, <xref:System.Windows.Controls.MenuItem.IsCheckable%2A>, and <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> properties and the <xref:System.Windows.Controls.MenuItem.Checked>, <xref:System.Windows.Controls.MenuItem.Unchecked>, and <xref:System.Windows.Controls.MenuItem.Click> events.  
   
- [!code-xml[MenuItemCommandsAndEvents#1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#1)]  
+ [!code-xaml[MenuItemCommandsAndEvents#1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#1)]  
   
  [!code-csharp[MenuItemCommandsAndEvents#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#2)]
  [!code-vb[MenuItemCommandsAndEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#2)]  
@@ -258,7 +258,7 @@
 ## Remarks  
  This property is used to associate a command with a particular <xref:System.Windows.Controls.MenuItem> instance. The following example associates the **Copy** command with a <xref:System.Windows.Controls.MenuItem> and automatically supplies the input gesture text **Ctrl+C**. The example does not set the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> property, but the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> for the <xref:System.Windows.Controls.MenuItem> is "Copy" at run time.  You can specify another header for the <xref:System.Windows.Controls.MenuItem> if you want it to be different. For information on how to bind to the desired command, see [Add a Command to a MenuItem](http://msdn.microsoft.com/en-us/013d68a0-5373-4a68-bd91-5de574307370).  
   
- [!code-xml[MenuItems_snip#MenuItemCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#menuitemcommand)]  
+ [!code-xaml[MenuItems_snip#MenuItemCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#menuitemcommand)]  
   
  A command is raised when a <xref:System.Windows.Controls.MenuItem> is clicked—just after the <xref:System.Windows.Controls.MenuItem.Click> event. The command is raised on the element according to the following priorities:  
   
@@ -283,7 +283,7 @@
 ## Examples  
  The following examples show how to use the command property to associate commands with menu items.  
   
- [!code-xml[MenuEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#8)]  
+ [!code-xaml[MenuEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#8)]  
   
  [!code-csharp[MenuEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml.cs#9)]  
   
@@ -510,7 +510,7 @@
 ## Examples  
  The following example creates a menu item with an icon.  
   
- [!code-xml[MenuItems_snip#MenuItemIcon](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#menuitemicon)]  
+ [!code-xaml[MenuItems_snip#MenuItemIcon](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#menuitemicon)]  
   
  ]]></format>
         </remarks>
@@ -572,7 +572,7 @@
 ## Examples  
  The following examples show how to use the <xref:System.Windows.Controls.MenuItem.InputGestureText%2A> property to assign keyboard shortcuts text to menu items.  
   
- [!code-xml[MenuEvent#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#6)]  
+ [!code-xaml[MenuEvent#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#6)]  
   
  [!code-csharp[MenuEvent#7](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml.cs#7)]  
   
@@ -639,7 +639,7 @@
 ## Examples  
  The following example shows how to make <xref:System.Windows.Controls.MenuItem> controls that are checked when a user clicks them.  
   
- [!code-xml[MenuEvent#11](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#11)]  
+ [!code-xaml[MenuEvent#11](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuEvent/CSharp/Pane1.xaml#11)]  
   
  ]]></format>
         </remarks>
@@ -704,7 +704,7 @@
 ## Examples  
  The following example shows how the <xref:System.Windows.Controls.MenuItem.IsChecked%2A> property can be used to place a check mark in front of a menu item.  
   
- [!code-xml[MenuStylesSnippet#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/pane1.xaml#6)]   
+ [!code-xaml[MenuStylesSnippet#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/pane1.xaml#6)]   
   
  ]]></format>
         </remarks>
@@ -879,7 +879,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.MenuItem.IsPressed%2A> property in a menu item style. When the menu item is pressed, the style of its foreground, text size, and text style change.  
   
- [!code-xml[MenuItemsStyle_snip#MenuItemsIsPressed](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemsStyle_snip/CSharp/MyApp.xaml#menuitemsispressed)]  
+ [!code-xaml[MenuItemsStyle_snip#MenuItemsIsPressed](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemsStyle_snip/CSharp/MyApp.xaml#menuitemsispressed)]  
   
  ]]></format>
         </remarks>
@@ -951,7 +951,7 @@
 ## Examples  
  The following example shows how to open a submenu of a <xref:System.Windows.Controls.MenuItem>.  In this example, the <xref:System.Windows.Controls.MenuItem> called `fileMenu` contains a <xref:System.Windows.Controls.MenuItem> called `recentFiles` that has a submenu. When `fileMenu` is opened, the <xref:System.Windows.Controls.MenuItem.SubmenuOpened> event is raised and the `FileMenu_Opened` event handler opens the submenu of `recentFiles`.  
   
- [!code-xml[MenuItems_snip#IsSubMenuOpenMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#issubmenuopenmenu)]  
+ [!code-xaml[MenuItems_snip#IsSubMenuOpenMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#issubmenuopenmenu)]  
   
  [!code-csharp[MenuItems_snip#IsSubMenuOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml.cs#issubmenuopen)]
  [!code-vb[MenuItems_snip#IsSubMenuOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItems_snip/visualbasic/pane1.xaml.vb#issubmenuopen)]  
@@ -1735,7 +1735,7 @@
 ## Examples  
  The following example shows how to use this property to style a <xref:System.Windows.Controls.Separator> in a <xref:System.Windows.Controls.Menu>.  
   
- [!code-xml[MenuStylesSnippet#4](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/app.xaml#4)]  
+ [!code-xaml[MenuStylesSnippet#4](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/app.xaml#4)]  
   
  ]]></format>
         </remarks>
@@ -1808,7 +1808,7 @@
 ## Examples  
  The following example uses the <xref:System.Windows.Controls.MenuItem.StaysOpenOnClick%2A> property to create an item in a submenu that does not close when the item is clicked.  
   
- [!code-xml[MenuItems_snip#SubmenuStaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#submenustaysopen)]  
+ [!code-xaml[MenuItems_snip#SubmenuStaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#submenustaysopen)]  
   
  ]]></format>
         </remarks>
@@ -1869,7 +1869,7 @@
 ## Examples  
  The following examples demonstrate calling and handling the <xref:System.Windows.Controls.MenuItem.SubmenuClosed> event.  
   
- [!code-xml[MenuItems_snip#SubmenuEvents1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#submenuevents1)]  
+ [!code-xaml[MenuItems_snip#SubmenuEvents1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#submenuevents1)]  
   
  [!code-csharp[MenuItems_snip#SubmenuEventClosed2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml.cs#submenueventclosed2)]
  [!code-vb[MenuItems_snip#SubmenuEventClosed2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItems_snip/visualbasic/pane1.xaml.vb#submenueventclosed2)]  
@@ -1991,7 +1991,7 @@
 ## Examples  
  The following examples demonstrate calling and handling the <xref:System.Windows.Controls.MenuItem.SubmenuOpened> event.  
   
- [!code-xml[MenuItems_snip#SubmenuEvents1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#submenuevents1)]  
+ [!code-xaml[MenuItems_snip#SubmenuEvents1](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml#submenuevents1)]  
   
  [!code-csharp[MenuItems_snip#SubmenuEventOpened2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItems_snip/CSharp/Pane1.xaml.cs#submenueventopened2)]
  [!code-vb[MenuItems_snip#SubmenuEventOpened2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItems_snip/visualbasic/pane1.xaml.vb#submenueventopened2)]  
@@ -2113,7 +2113,7 @@
 ## Examples  
  The following example demonstrates handling the <xref:System.Windows.Controls.MenuItem.Unchecked> event.  
   
- [!code-xml[MenuItemCommandsAndEvents#3](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#3)]  
+ [!code-xaml[MenuItemCommandsAndEvents#3](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml#3)]  
   
  [!code-csharp[MenuItemCommandsAndEvents#4](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#4)]
  [!code-vb[MenuItemCommandsAndEvents#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#4)]  

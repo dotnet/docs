@@ -109,14 +109,14 @@
 ## Examples  
  The following example shows how to bind a <xref:System.Windows.Controls.DataGrid> to a <xref:System.Data.DataTable> and use column auto-generation. The <xref:System.Data.DataTable> is populated by using the <xref:System.Data.Common.DataAdapter.Fill%2A> method of a <xref:System.Data.Common.DataAdapter> from a <xref:System.Data.DataSet>. For more information, see [Creating a DataSet](~/docs/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset.md) and [Populating a DataSet from a DataAdapter](~/docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md). To use the [!INCLUDE[wpfdesigner_current_long](~/includes/wpfdesigner-current-long-md.md)], see [Bind WPF controls to data in Visual Studio](http://msdn.microsoft.com/library/00dd5147-db0b-4b59-8d6c-8229b09ca9dd).  
   
- [!code-xml[DataGrid1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid1/csharp/window1.xaml#1)]  
+ [!code-xaml[DataGrid1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid1/csharp/window1.xaml#1)]  
   
  [!code-csharp[DataGrid1#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid1/csharp/window1.xaml.cs#2)]
  [!code-vb[DataGrid1#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid1/vb/window1.xaml.vb#2)]  
   
  The following example shows how to create a <xref:System.Windows.Controls.DataGrid> with a customized <xref:System.Windows.Controls.DataGrid.Columns%2A> collection.  
   
- [!code-xml[DataGrid_CustomColumns#All1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#all1)]  
+ [!code-xaml[DataGrid_CustomColumns#All1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#all1)]  
   
  [!code-csharp[DataGrid_CustomColumns#Using](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml.cs#using)]
  [!code-vb[DataGrid_CustomColumns#Using](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_customcolumns/vb/window1.xaml.vb#using)]  
@@ -197,7 +197,7 @@
 ## Examples  
  The following example shows how to set alternating row background colors on the <xref:System.Windows.Controls.DataGrid>.  
   
- [!code-xml[DataGrid1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid1/csharp/window1.xaml#1)]  
+ [!code-xaml[DataGrid1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid1/csharp/window1.xaml#1)]  
   
  The following illustration shows how this code looks when it runs.  
   
@@ -299,7 +299,7 @@
 ## Examples  
  The following example shows how to auto-generate columns and change the columns at creation time in the <xref:System.Windows.Controls.DataGrid.AutoGeneratingColumn> event handler.  
   
- [!code-xml[DataGrid_AutoGenColumns#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_autogencolumns/cs/datagrid_autogencolumns/window1.xaml#1)]  
+ [!code-xaml[DataGrid_AutoGenColumns#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_autogencolumns/cs/datagrid_autogencolumns/window1.xaml#1)]  
   
  [!code-csharp[DataGrid_AutoGenColumns#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_autogencolumns/cs/datagrid_autogencolumns/window1.xaml.cs#2)]
  [!code-vb[DataGrid_AutoGenColumns#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_autogencolumns/vb/datagrid_autogencolumns_vb/window1.xaml.vb#2)]  
@@ -379,7 +379,7 @@
 ## Examples  
  The following example shows how to auto-generate columns and change the columns at creation time in the <xref:System.Windows.Controls.DataGrid.AutoGeneratingColumn> event handler.  
   
- [!code-xml[DataGrid_AutoGenColumns#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_autogencolumns/cs/datagrid_autogencolumns/window1.xaml#1)]  
+ [!code-xaml[DataGrid_AutoGenColumns#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_autogencolumns/cs/datagrid_autogencolumns/window1.xaml#1)]  
   
  [!code-csharp[DataGrid_AutoGenColumns#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_autogencolumns/cs/datagrid_autogencolumns/window1.xaml.cs#2)]
  [!code-vb[DataGrid_AutoGenColumns#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_autogencolumns/vb/datagrid_autogencolumns_vb/window1.xaml.vb#2)]  
@@ -920,7 +920,7 @@
 ## Examples  
  The following example uses a trigger to change the <xref:System.Windows.Controls.Control.Background%2A> color of a <xref:System.Windows.Controls.DataGridCell> when the cell is selected.  
   
- [!code-xml[DataGrid_CellStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellstyle/CS/window1.xaml#1)]   
+ [!code-xaml[DataGrid_CellStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellstyle/CS/window1.xaml#1)]   
   
  The following illustration shows the output.  
   
@@ -1232,7 +1232,7 @@
 ## Examples  
  The following example uses a style resource to change the style of column headers in the <xref:System.Windows.Controls.DataGrid>. The style of the first column header is then set with an inline style that overrides the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName>.  
   
- [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]   
+ [!code-xaml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]   
   
  The following illustration shows the output.  
   
@@ -1351,7 +1351,7 @@
 ## Examples  
  The following example shows how to add a column to the collection.  
   
- [!code-xml[DataGrid_ColumnsManipulation#DataGrid2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid2)]  
+ [!code-xaml[DataGrid_ColumnsManipulation#DataGrid2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid2)]  
   
  [!code-csharp[DataGrid_ColumnsManipulation#Add1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml.cs#add1)]
  [!code-vb[DataGrid_ColumnsManipulation#Add1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_columnsmanipulation/vb/datagrid_columnsmanipulation_vb/window1.xaml.vb#add1)]  
@@ -1360,16 +1360,16 @@
   
  The following example shows how to remove a column from the collection.  
   
- [!code-xml[DataGrid_ColumnsManipulation#Delete](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#delete)]  
-[!code-xml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
+ [!code-xaml[DataGrid_ColumnsManipulation#Delete](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#delete)]  
+[!code-xaml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
   
  [!code-csharp[DataGrid_ColumnsManipulation#Delete2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml.cs#delete2)]
  [!code-vb[DataGrid_ColumnsManipulation#Delete2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_columnsmanipulation/vb/datagrid_columnsmanipulation_vb/window1.xaml.vb#delete2)]  
   
  The following example shows how to set properties on columns in the collection when they are auto-generated and when an event occurs.  
   
- [!code-xml[DataGrid_ColumnsManipulation#Visible](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#visible)]  
-[!code-xml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
+ [!code-xaml[DataGrid_ColumnsManipulation#Visible](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#visible)]  
+[!code-xaml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
   
  [!code-csharp[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml.cs#visible2)]
  [!code-vb[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_columnsmanipulation/vb/datagrid_columnsmanipulation_vb/window1.xaml.vb#visible2)]  
@@ -1919,7 +1919,7 @@
 ## Examples  
  The following example shows how to make a column frozen when "Freeze Column" is selected from the <xref:System.Windows.Controls.ContextMenu>. Columns are moved to the left in order to be included in the frozen columns.  
   
- [!code-xml[DataGrid_FrozenColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml#1)]  
+ [!code-xaml[DataGrid_FrozenColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml#1)]  
   
  [!code-csharp[DataGrid_FrozenColumn#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml.cs#2)]
  [!code-vb[DataGrid_FrozenColumn#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_frozencolumn/vb/window1.xaml.vb#2)]  
@@ -4032,7 +4032,7 @@
 ## Examples  
  The following example shows a <xref:System.Windows.Controls.DataGrid> with a <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> defined inline. The <xref:System.Windows.Controls.DataGrid> displays three values in each row and three more values in the details section when the row is selected. This example is part of a larger example available in the [How to: Add Row Details to a DataGrid Control](~/docs/framework/wpf/controls/how-to-add-row-details-to-a-datagrid-control.md) topic.  
   
- [!code-xml[DataGrid_RowDetails#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowdetails/cs/mainwindow.xaml#1)]  
+ [!code-xaml[DataGrid_RowDetails#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowdetails/cs/mainwindow.xaml#1)]  
   
  ]]></format>
         </remarks>
@@ -4256,7 +4256,7 @@
 ## Examples  
  The following example shows how to display numbered rows in the row header by applying a binding with a value converter to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of the <xref:System.Windows.Controls.Primitives.DataGridRowHeader>. The converter is created as a resource by mapping the namespace and creating an instance of the class. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
- [!code-xml[DataGrid_RowHeader#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowheader/csharp/datagrid_rowheader/window1.xaml#1)]  
+ [!code-xaml[DataGrid_RowHeader#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowheader/csharp/datagrid_rowheader/window1.xaml#1)]  
   
  [!code-csharp[DataGrid_RowHeader#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowheader/csharp/datagrid_rowheader/window1.xaml.cs#2)]
  [!code-vb[DataGrid_RowHeader#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_rowheader/vb/datagrid_rowheader_vb/window1.xaml.vb#2)]  
@@ -4481,7 +4481,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.Control.Background%2A> color of all the rows and uses a trigger to change the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> colors when the mouse pointer is over the row.  
   
- [!code-xml[DataGrid_RowStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowstyle/CS/mainwindow.xaml#1)]   
+ [!code-xaml[DataGrid_RowStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowstyle/CS/mainwindow.xaml#1)]   
   
  The following illustration shows the output.  
   
@@ -4576,7 +4576,7 @@
 ## Examples  
  The following example replaces the default row validation feedback with a more visible indicator. When a user enters an invalid value, a red circle with a white exclamation mark appears in the row header. The associated error message is displayed in a ToolTip. This code example is part of a larger example provided for the [How to: Implement Validation with the DataGrid Control](~/docs/framework/wpf/controls/how-to-implement-validation-with-the-datagrid-control.md) topic.  
   
- [!code-xml[DataGrid_Validation#RowValidationFeedbackXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#rowvalidationfeedbackxaml)]  
+ [!code-xaml[DataGrid_Validation#RowValidationFeedbackXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#rowvalidationfeedbackxaml)]  
   
  ]]></format>
         </remarks>
@@ -4632,7 +4632,7 @@
   
  The following example sets the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property in XAML. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> property is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> so that the validation occurs only after the bound data object is updated. When a user specifies an end date that is earlier than the start date, a red exclamation mark (!) appears in the row header.  
   
- [!code-xml[DataGrid_Validation#RowValidationRulesXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#rowvalidationrulesxaml)]  
+ [!code-xaml[DataGrid_Validation#RowValidationRulesXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#rowvalidationrulesxaml)]  
   
  ]]></format>
         </remarks>
@@ -4798,7 +4798,7 @@
 ## Examples  
  The following example shows how to handle the <xref:System.Windows.Controls.DataGrid.SelectedCellsChanged> event and clear the values in the newly selected cells.  
   
- [!code-xml[DataGrid_CellSelection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellselection/cs/datagrid_cellselection/window1.xaml#1)]  
+ [!code-xaml[DataGrid_CellSelection#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellselection/cs/datagrid_cellselection/window1.xaml#1)]  
   
  [!code-csharp[DataGrid_CellSelection#3](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellselection/cs/datagrid_cellselection/window1.xaml.cs#3)]
  [!code-vb[DataGrid_CellSelection#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_cellselection/vb/datagrid_cellselection_vb/window1.xaml.vb#3)]  

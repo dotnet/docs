@@ -43,10 +43,10 @@
 ## Examples  
  The following example shows a <xref:System.Windows.Controls.DataGridHyperlinkColumn> that sets the <xref:System.Uri> with the <xref:System.Windows.Controls.DataGridBoundColumn.Binding%2A> property and the hyperlink text with the <xref:System.Windows.Controls.DataGridHyperlinkColumn.ContentBinding%2A> property. The <xref:System.Windows.Documents.Hyperlink.Click?displayProperty=fullName> event is handled automatically because <xref:System.Windows.Navigation.NavigationWindow> is the parent of the <xref:System.Windows.Controls.DataGrid>.  
   
- [!code-xml[DataGrid_CustomColumns#HyperlinkA](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinka)]  
-[!code-xml[DataGrid_CustomColumns#HyperlinkB](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinkb)]  
-[!code-xml[DataGrid_CustomColumns#Hyperlink1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlink1)]  
-[!code-xml[DataGrid_CustomColumns#HyperlinkC](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinkc)]  
+ [!code-xaml[DataGrid_CustomColumns#HyperlinkA](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinka)]  
+[!code-xaml[DataGrid_CustomColumns#HyperlinkB](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinkb)]  
+[!code-xaml[DataGrid_CustomColumns#Hyperlink1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlink1)]  
+[!code-xaml[DataGrid_CustomColumns#HyperlinkC](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#hyperlinkc)]  
   
  [!code-csharp[DataGrid_CustomColumns#Top](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml.cs#top)]
  [!code-vb[DataGrid_CustomColumns#Top](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_customcolumns/vb/window1.xaml.vb#top)]  

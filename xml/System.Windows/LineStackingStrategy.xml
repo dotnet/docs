@@ -17,7 +17,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> property to determine how the line boxes are created for text lines of a <xref:System.Windows.Controls.TextBlock>. The first <xref:System.Windows.Controls.TextBlock> has a <xref:System.Windows.Controls.TextBlock.LineStackingStrategy%2A> value of MaxHeight and the second <xref:System.Windows.Controls.TextBlock> has a value of BlockLineHeight.  
   
- [!code-xml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
+ [!code-xaml[FlowMiscSnippets_snip#LineStackingStrategyExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/linestackingstrategyexample.xaml#linestackingstrategyexamplewholepage)]  
   
  The following illustration shows the result of the code above.  
   

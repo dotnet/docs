@@ -25,7 +25,7 @@
 ## Examples  
  The following example shows the use of <xref:System.Windows.Documents.DocumentStructures.ParagraphStructure> and <xref:System.Windows.Documents.DocumentStructures.FigureStructure> elements in an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document, each with a <xref:System.Windows.Documents.DocumentStructures.NamedElement> child.  
   
- [!code-xml[DocumentStructure#DocStructParaStruct2](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage2_structure.xaml#docstructparastruct2)]  
+ [!code-xaml[DocumentStructure#DocStructParaStruct2](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage2_structure.xaml#docstructparastruct2)]  
   
  ]]></format>
     </remarks>
@@ -72,7 +72,7 @@
 ## Examples  
  The following example shows several <xref:System.Windows.Documents.DocumentStructures.NamedElement> elements, each with a <xref:System.Windows.Documents.DocumentStructures.NamedElement.NameReference%2A> attribute.  
   
- [!code-xml[DocumentStructure#DocStructParaStruct2](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage2_structure.xaml#docstructparastruct2)]  
+ [!code-xaml[DocumentStructure#DocStructParaStruct2](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage2_structure.xaml#docstructparastruct2)]  
   
  ]]></format>
         </remarks>

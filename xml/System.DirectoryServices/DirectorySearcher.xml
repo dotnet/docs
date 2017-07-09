@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a <xref:System.DirectoryServices.DirectorySearcher> object to search and perform queries against an Active Directory Domain Services hierarchy using Lightweight Directory Access Protocol (LDAP). LDAP is the only system-supplied Active Directory Service Interfaces (ADSI) provider that supports directory searching. An administrator can make, alter, and delete objects that are found in the hierarchy. For more information, see [Using System.DirectoryServices](http://msdn.microsoft.com/en-us/ffa2f003-3a9a-4e2a-815e-825c8ddd7949).  
+ Use a <xref:System.DirectoryServices.DirectorySearcher> object to search and perform queries against an Active Directory Domain Services hierarchy using Lightweight Directory Access Protocol (LDAP). LDAP is the only system-supplied Active Directory Service Interfaces (ADSI) provider that supports directory searching. An administrator can make, alter, and delete objects that are found in the hierarchy. For more information, see [Using System.DirectoryServices](http://msdn.microsoft.com/ffa2f003-3a9a-4e2a-815e-825c8ddd7949).  
   
  When you create an instance of <xref:System.DirectoryServices.DirectorySearcher>, you specify the root you want to retrieve, and an optional list of properties to retrieve. The <xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A> property enables you to set additional properties to do the following tasks:  
   
@@ -421,7 +421,7 @@ SearchResultCollection res = src.FindAll();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The attribute that this property is set to must be a distinguished name attribute, such as member or managedBy. The attribute can be either single or multi-valued. For more information, see the adschema topics "[Member](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/adschema/adschema/a_member.asp)" and "[Managed-By](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/adschema/adschema/a_managedby.asp)" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ The attribute that this property is set to must be a distinguished name attribute, such as member or managedBy. The attribute can be either single or multi-valued. For more information, see the adschema topics "[Member](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_member.asp)" and "[Managed-By](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_managedby.asp)" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
   
  The search is performed against the objects that are identified by the distinguished name that is specified in the attribute of the base object. For example, if the base object is an adschema group class and the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> is set to "member," then the search will be performed against all objects that are members of the group. For more information, see the adschema "Group" class topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
   
@@ -610,7 +610,7 @@ SearchResultCollection res = src.FindAll();
 ## Remarks  
  The directory synchronization control, commonly referred to as the DirSync control, is an LDAP control that is used to search for objects that have changed since a previous state.  
   
- For more information, see the topic "[Polling for Changes Using the DirSync Control](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ad/ad/polling_for_changes_using_the_dirsync_control.asp)" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+ For more information, see the topic "[Polling for Changes Using the DirSync Control](http://msdn.microsoft.com/library/default.asp?url=/library/ad/ad/polling_for_changes_using_the_dirsync_control.asp)" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
   
  ]]></format>
         </remarks>

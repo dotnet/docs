@@ -30,18 +30,18 @@ If you've already installed Visual Studio and don't have F#, you can [Install th
 
 If you prefer not to install Visual Studio, use the following instructions:
 
-1. Install [.NET Framework 4.5 or higher](https://www.microsoft.com/en-US/download/details.aspx?id=30653) if you're running Windows 7.  If you're using Windows 8 or higher, you do not need to do this.
+1. Install [.NET Framework 4.5 or higher](https://www.microsoft.com/download/details.aspx?id=30653) if you're running Windows 7.  If you're using Windows 8 or higher, you do not need to do this.
 
 2. Install the Windows SDK for your OS:
 
-    * [Windows 10 SDK](https://dev.windows.com/en-US/downloads/windows-10-sdk)
+    * [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)
     * [Windows 8.1 SDK](http://msdn.microsoft.com/windows/desktop/bg162891)
     * [Windows 8 SDK](http://msdn.microsoft.com/windows/hardware/hh852363.aspx)
     * [Windows 7 SDK](http://www.microsoft.com/download/details.aspx?id=8279)
 
-3. Install the [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159).  You may also need to install [Microsoft Build Tools 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40760).
+3. Install the [Microsoft Build Tools 2015](https://www.microsoft.com/download/details.aspx?id=48159).  You may also need to install [Microsoft Build Tools 2013](https://www.microsoft.com/download/details.aspx?id=40760).
 
-4. Install the [Visual F# Tools](https://www.microsoft.com/en-us/download/details.aspx?id=48179).
+4. Install the [Visual F# Tools](https://www.microsoft.com/download/details.aspx?id=48179).
 
 On 64-bit Windows, the compiler and tools are located here:
 

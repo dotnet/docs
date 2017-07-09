@@ -32,4 +32,4 @@ The topics in this section cover the client architecture, how to access a [!INCL
  Describes some security considerations for [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients.  
   
 ## See Also  
- [Client Samples](http://msdn.microsoft.com/en-us/849fc452-8718-4d4e-ba57-905eed943f63)
+ [Client Samples](http://msdn.microsoft.com/849fc452-8718-4d4e-ba57-905eed943f63)

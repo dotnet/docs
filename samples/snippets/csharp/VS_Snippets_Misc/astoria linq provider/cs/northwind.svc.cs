@@ -27,7 +27,7 @@ namespace NorthwindService
 
     #region ProofOfConcept
     // Proof of concept code that I added to support the forum post:
-    // http://social.msdn.microsoft.com/Forums/en-US/adodotnetdataservices/thread/5c3134e5-3edf-4eb1-b36c-90e280e775f0/#b387da56-13f5-4261-ac34-d4283b0871e8
+    // http://social.msdn.microsoft.com/Forums/adodotnetdataservices/thread/5c3134e5-3edf-4eb1-b36c-90e280e775f0/#b387da56-13f5-4261-ac34-d4283b0871e8
     public partial class NorthwindDataContext
     {
         public IQueryable<SomeType> MyTypes

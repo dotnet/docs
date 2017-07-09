@@ -78,14 +78,14 @@ namespace WebsiteDownloadWin
         {
             List<string> urls = new List<string> 
             { 
-                "http://msdn.microsoft.com/en-us/library/hh191443.aspx",
-                "http://msdn.microsoft.com/en-us/library/aa578028.aspx",
-                "http://msdn.microsoft.com/en-us/library/jj155761.aspx",
-                "http://msdn.microsoft.com/en-us/library/hh290140.aspx",
-                "http://msdn.microsoft.com/en-us/library/hh524395.aspx",
-                "http://msdn.microsoft.com/en-us/library/ms404677.aspx",
+                "http://msdn.microsoft.com/library/hh191443.aspx",
+                "http://msdn.microsoft.com/library/aa578028.aspx",
+                "http://msdn.microsoft.com/library/jj155761.aspx",
+                "http://msdn.microsoft.com/library/hh290140.aspx",
+                "http://msdn.microsoft.com/library/hh524395.aspx",
+                "http://msdn.microsoft.com/library/ms404677.aspx",
                 "http://msdn.microsoft.com",
-                "http://msdn.microsoft.com/en-us/library/ff730837.aspx"
+                "http://msdn.microsoft.com/library/ff730837.aspx"
             };
             return urls;
         }
@@ -108,49 +108,49 @@ namespace WebsiteDownloadWin
 
 // Output if you choose the Start button just once:
 
-//1. msdn.microsoft.com/en-us/library/hh191443.aspx                83732
-//2. msdn.microsoft.com/en-us/library/aa578028.aspx               205273
-//3. msdn.microsoft.com/en-us/library/jj155761.aspx                29019
-//4. msdn.microsoft.com/en-us/library/hh290140.aspx               117152
-//5. msdn.microsoft.com/en-us/library/hh524395.aspx                72094
-//6. msdn.microsoft.com/en-us/library/ms404677.aspx               197325
+//1. msdn.microsoft.com/library/hh191443.aspx                83732
+//2. msdn.microsoft.com/library/aa578028.aspx               205273
+//3. msdn.microsoft.com/library/jj155761.aspx                29019
+//4. msdn.microsoft.com/library/hh290140.aspx               117152
+//5. msdn.microsoft.com/library/hh524395.aspx                72094
+//6. msdn.microsoft.com/library/ms404677.aspx               197325
 //7. msdn.microsoft.com                                            43133
-//8. msdn.microsoft.com/en-us/library/ff730837.aspx               149091
+//8. msdn.microsoft.com/library/ff730837.aspx               149091
 
 //TOTAL bytes returned:  896819
 
 
 // Sample output for multiple starts:
 
-//1. msdn.microsoft.com/en-us/library/hh191443.aspx                83732
-//2. msdn.microsoft.com/en-us/library/aa578028.aspx               205273
-//3. msdn.microsoft.com/en-us/library/jj155761.aspx                29019
-//4. msdn.microsoft.com/en-us/library/hh290140.aspx               117152
-//5. msdn.microsoft.com/en-us/library/hh524395.aspx                68959
-//1. msdn.microsoft.com/en-us/library/hh191443.aspx                83732
-//6. msdn.microsoft.com/en-us/library/ms404677.aspx               197325
-//1. msdn.microsoft.com/en-us/library/hh191443.aspx                83732
-//2. msdn.microsoft.com/en-us/library/aa578028.aspx               205273
+//1. msdn.microsoft.com/library/hh191443.aspx                83732
+//2. msdn.microsoft.com/library/aa578028.aspx               205273
+//3. msdn.microsoft.com/library/jj155761.aspx                29019
+//4. msdn.microsoft.com/library/hh290140.aspx               117152
+//5. msdn.microsoft.com/library/hh524395.aspx                68959
+//1. msdn.microsoft.com/library/hh191443.aspx                83732
+//6. msdn.microsoft.com/library/ms404677.aspx               197325
+//1. msdn.microsoft.com/library/hh191443.aspx                83732
+//2. msdn.microsoft.com/library/aa578028.aspx               205273
 //7. msdn.microsoft.com                                            43133
-//3. msdn.microsoft.com/en-us/library/jj155761.aspx                29019
-//8. msdn.microsoft.com/en-us/library/ff730837.aspx               149091
+//3. msdn.microsoft.com/library/jj155761.aspx                29019
+//8. msdn.microsoft.com/library/ff730837.aspx               149091
 
 //TOTAL bytes returned:  893684
 
-//4. msdn.microsoft.com/en-us/library/hh290140.aspx               122505
-//5. msdn.microsoft.com/en-us/library/hh524395.aspx                68959
-//6. msdn.microsoft.com/en-us/library/ms404677.aspx               197325
-//2. msdn.microsoft.com/en-us/library/aa578028.aspx               205273
+//4. msdn.microsoft.com/library/hh290140.aspx               122505
+//5. msdn.microsoft.com/library/hh524395.aspx                68959
+//6. msdn.microsoft.com/library/ms404677.aspx               197325
+//2. msdn.microsoft.com/library/aa578028.aspx               205273
 //7. msdn.microsoft.com                                            43133
-//8. msdn.microsoft.com/en-us/library/ff730837.aspx               146159
+//8. msdn.microsoft.com/library/ff730837.aspx               146159
 
 //TOTAL bytes returned:  896105
 
-//3. msdn.microsoft.com/en-us/library/jj155761.aspx                29793
-//4. msdn.microsoft.com/en-us/library/hh290140.aspx               117152
-//5. msdn.microsoft.com/en-us/library/hh524395.aspx                72094
-//6. msdn.microsoft.com/en-us/library/ms404677.aspx               197325
+//3. msdn.microsoft.com/library/jj155761.aspx                29793
+//4. msdn.microsoft.com/library/hh290140.aspx               117152
+//5. msdn.microsoft.com/library/hh524395.aspx                72094
+//6. msdn.microsoft.com/library/ms404677.aspx               197325
 //7. msdn.microsoft.com                                            43133
-//8. msdn.microsoft.com/en-us/library/ff730837.aspx               146159
+//8. msdn.microsoft.com/library/ff730837.aspx               146159
 
 //TOTAL bytes returned:  894661

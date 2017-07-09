@@ -95,7 +95,7 @@ namespace CancelATask
 
             // GetAsync returns a Task<HttpResponseMessage>. 
             // ***The ct argument carries the message if the Cancel button is chosen.
-            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/en-us/library/dd470362.aspx", ct);
+            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);
 
             // Retrieve the website contents from the HttpResponseMessage.
             byte[] urlContents = await response.Content.ReadAsByteArrayAsync();

@@ -92,7 +92,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 1.  In **Solution Explorer**, choose the project, open the **Project** menu, and then click **Properties**.  
   
-     For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e).  
+     For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/983f3c18-832f-4666-afec-74b716ff3e0e).  
   
 2.  On the **Compile** tab, select or clear the **Prefer 32-bit** check box, or, in the **Target CPU** list, choose a value.  
   

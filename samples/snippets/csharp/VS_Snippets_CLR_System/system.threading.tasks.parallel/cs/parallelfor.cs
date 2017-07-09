@@ -17,7 +17,7 @@ class ParallelOptionsDemo
     //		The order of execution of the iterations is undefined.
     //		Verify that no more than two threads have been used for the iterations.
     // Documentation:
-    //		http://msdn.microsoft.com/en-us/library/system.threading.tasks.parallel.for(VS.100).aspx
+    //		http://msdn.microsoft.com/library/system.threading.tasks.parallel.for(VS.100).aspx
     static void Main()
     {
         ParallelOptions options = new ParallelOptions();

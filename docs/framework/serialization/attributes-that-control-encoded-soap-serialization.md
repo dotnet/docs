@@ -25,7 +25,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Attributes That Control Encoded SOAP Serialization
-The World Wide Web Consortium (www.w3.org) document named "Simple Object Access Protocol (SOAP) 1.1" contains an optional section (section 5) that describes how SOAP parameters can be encoded. To conform to section 5 of the specification, you must use a special set of attributes found in the <xref:System.Xml.Serialization> namespace. Apply those attributes as appropriate to classes and members of classes, and then use the [XmlSerializer](https://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx) to serialize instances of the class or classes.  
+The World Wide Web Consortium (www.w3.org) document named "Simple Object Access Protocol (SOAP) 1.1" contains an optional section (section 5) that describes how SOAP parameters can be encoded. To conform to section 5 of the specification, you must use a special set of attributes found in the <xref:System.Xml.Serialization> namespace. Apply those attributes as appropriate to classes and members of classes, and then use the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx) to serialize instances of the class or classes.  
   
  The following table shows the attributes, where they can be applied, and what they do. For more information about using these attributes to control XML serialization, see [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/framework/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md) and [How to: Override Encoded SOAP XML Serialization](../../../docs/framework/serialization/how-to-override-encoded-soap-xml-serialization.md).  
   
@@ -45,6 +45,6 @@ The World Wide Web Consortium (www.w3.org) document named "Simple Object Access 
  [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/framework/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)   
  [How to: Override Encoded SOAP XML Serialization](../../../docs/framework/serialization/how-to-override-encoded-soap-xml-serialization.md)   
  [Attributes](../../../docs/standard/attributes/index.md)   
- [XmlSerializer](https://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx)   
+ [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)   
  [How to: Serialize an Object](../../../docs/framework/serialization/how-to-serialize-an-object.md)   
  [How to: Deserialize an Object](../../../docs/framework/serialization/how-to-deserialize-an-object.md)

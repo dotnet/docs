@@ -30,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For additional information about `DISPPARAMS`, see [DISPPARMS structure](https://msdn.microsoft.com/en-us/library/windows/desktop/ms221416\(v=vs.85\).aspx) in the Windows API documentation.  
+ For additional information about `DISPPARAMS`, see [DISPPARMS structure](https://msdn.microsoft.com/library/windows/desktop/ms221416\(v=vs.85\).aspx) in the Windows API documentation.  
   
  The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
   

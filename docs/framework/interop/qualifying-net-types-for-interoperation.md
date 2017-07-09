@@ -32,7 +32,7 @@ If you intend to expose types in an assembly to COM applications, consider the r
   
 -   Classes should implement interfaces explicitly.  
   
-     Although COM interop provides a mechanism to automatically generate an interface containing all members of the class and the members of its base class, it is far better to provide explicit interfaces. The automatically generated interface is called the class interface. For guidelines, see [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
+     Although COM interop provides a mechanism to automatically generate an interface containing all members of the class and the members of its base class, it is far better to provide explicit interfaces. The automatically generated interface is called the class interface. For guidelines, see [Introducing the Class Interface](http://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024).  
   
      You can use [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++ to incorporate interface definitions in your code, instead of having to use Interface Definition Language (IDL) or its equivalent. For syntax details, see your language documentation.  
   
@@ -59,6 +59,6 @@ If you intend to expose types in an assembly to COM applications, consider the r
 ## See Also  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)   
- [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
+ [Introducing the Class Interface](http://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
  [Applying Interop Attributes](../../../docs/framework/interop/applying-interop-attributes.md)   
  [Packaging an Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)

@@ -43,7 +43,7 @@ Of these, only the first three are covered or introduced in this guide. The last
 ## Additional resources
 
 -   **Mark Russinovich. Microservices: An application revolution powered by the cloud**
-    [*https://azure.microsoft.com/en-us/blog/microservices-an-application-revolution-powered-by-the-cloud/*](https://azure.microsoft.com/en-us/blog/microservices-an-application-revolution-powered-by-the-cloud/)
+    [*https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/*](https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/)
 
 -   **Martin Fowler. Microservices**
     [*http://www.martinfowler.com/articles/microservices.html*](http://www.martinfowler.com/articles/microservices.html)

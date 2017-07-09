@@ -15,7 +15,7 @@ class UnWrapDemo
         //      The results of the RemoteIncrement(0) chain and the RemoteIncrement(4) chain may be intermixed with each other.
         //		The results of the sequence that starts with RemoteIncrement(4) are in strict order.
         // Documentation:
-        //		http://msdn.microsoft.com/en-us/library/dd781129(VS.100).aspx
+        //		http://msdn.microsoft.com/library/dd781129(VS.100).aspx
         // More information:
         //		http://blogs.msdn.com/pfxteam/archive/2009/11/04/9917581.aspx
         // Other notes:

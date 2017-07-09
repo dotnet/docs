@@ -68,7 +68,7 @@ An important part of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is the ability 
   
 |To|See|  
 |--------|---------|  
-|Create a new Windows Forms application with [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]|[Walkthrough: Creating a Simple Windows Form](http://msdn.microsoft.com/en-us/2d9daec0-0543-41d0-acb1-964f685bddbb)|  
+|Create a new Windows Forms application with [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)]|[Walkthrough: Creating a Simple Windows Form](http://msdn.microsoft.com/2d9daec0-0543-41d0-acb1-964f685bddbb)|  
 |Use controls on forms|[How to: Add Controls to Windows Forms](https://msdn.microsoft.com/library/0h5y8567.aspx)|   
 |Create graphics with <xref:System.Drawing>|[Getting Started with Graphics Programming](https://msdn.microsoft.com/library/da0f23z7.aspx)|  
 |Create custom controls|[How to: Inherit from the UserControl Class](https://msdn.microsoft.com/library/00ctb4z0.aspx)|  

@@ -132,7 +132,7 @@ In this snippet, most of the validations or logic related to the creation of an 
 
 In addition, the new OrderItem(params) operation will also be controlled and performed by the AddOrderItem method from the Order aggregate root. Therefore, most of the logic or validations related to that operation (especially anything that impacts the consistency between other child entities) will be in a single place within the aggregate root. That is the ultimate purpose of the aggregate root pattern.
 
-When you use Entity Framework 1.1, a DDD entity can be better expressed because one of the new features of Entity Framework Core 1.1 is that it allows [mapping to fields](https://docs.microsoft.com/en-us/ef/core/modeling/backing-field) in addition to properties. This is useful when protecting collections of child entities or value objects. With this enhancement, you can use simple private fields instead of properties and you can implement any update to the field collection in public methods and provide read-only access through the AsReadOnly method.
+When you use Entity Framework 1.1, a DDD entity can be better expressed because one of the new features of Entity Framework Core 1.1 is that it allows [mapping to fields](https://docs.microsoft.com/ef/core/modeling/backing-field) in addition to properties. This is useful when protecting collections of child entities or value objects. With this enhancement, you can use simple private fields instead of properties and you can implement any update to the field collection in public methods and provide read-only access through the AsReadOnly method.
 
 In DDD you want to update the entity only through methods in the entity (or the constructor) in order to control any invariant and the consistency of the data, so properties are defined only with a get accessor. The properties are backed by private fields. Private members can only be accessed from within the class. However, there one exception: EF Core needs to set these fields as well.
 
@@ -165,7 +165,7 @@ public class Order : Entity, IAggregateRoot
     // protected against external updates. It's much cheaper than .ToList(),
     // because it will not have to copy all items in a new collection.
     // (Just one heap alloc for the wrapper instance)
-    // https://msdn.microsoft.com/en-us/library/e78dcd75(v=vs.110).aspx
+    // https://msdn.microsoft.com/library/e78dcd75(v=vs.110).aspx
     public PaymentMethod PaymentMethod { get; private set; }
     private int _paymentMethodId;
 
@@ -221,7 +221,7 @@ For example, in the preceding code example, the \_someOrderInternalState field h
     [*https://vaughnvernon.co/?p=879*](https://vaughnvernon.co/?p=879)
 
 -   **Julie Lerman. Coding for Domain-Driven Design: Tips for Data-Focused Devs**
-    [*https://msdn.microsoft.com/en-us/magazine/dn342868.aspx*](https://msdn.microsoft.com/en-us/magazine/dn342868.aspx)
+    [*https://msdn.microsoft.com/magazine/dn342868.aspx*](https://msdn.microsoft.com/magazine/dn342868.aspx)
 
 -   **Udi Dahan. How to create fully encapsulated Domain Models**
     [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)

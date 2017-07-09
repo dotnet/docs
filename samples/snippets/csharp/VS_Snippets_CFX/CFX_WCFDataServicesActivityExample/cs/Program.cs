@@ -29,7 +29,7 @@ using System.Data.Services.Client;
 
 // then just the code
 // Reference this page:
-// http://msdn.microsoft.com/en-us/library/dd728283.aspx
+// http://msdn.microsoft.com/library/dd728283.aspx
 
 // Steps for using Northwind
 // Add Service Reference: http://services.odata.org/Northwind/Northwind.svc/

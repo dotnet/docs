@@ -28,11 +28,11 @@ The .NET Framework is an integral part of many applications running on Windows a
   
 -   [Enable the .NET Framework 3.5 in Control Panel](#ControlPanel)  
   
--   [Download the .NET Framework 3.5 installer](http://www.microsoft.com/en-us/download/details.aspx?id=21) (Note: this does not download the .NET Framework directly; it is an installer that invokes Windows Update.)  
+-   [Download the .NET Framework 3.5 installer](http://www.microsoft.com/download/details.aspx?id=21) (Note: this does not download the .NET Framework directly; it is an installer that invokes Windows Update.)  
   
- During installation you may encounter error 0x800f0906, 0x800f0907, or 0x800f081f, in which case refer to [.NET Framework 3.5 installation error: 0x800f0906, 0x800f0907, or 0x800f081f](https://support.microsoft.com/en-us/kb/2734782). Note that these are possibly resolved by installing [security update 3005628](https://support.microsoft.com/kb/3005628).  
+ During installation you may encounter error 0x800f0906, 0x800f0907, or 0x800f081f, in which case refer to [.NET Framework 3.5 installation error: 0x800f0906, 0x800f0907, or 0x800f081f](https://support.microsoft.com/kb/2734782). Note that these are possibly resolved by installing [security update 3005628](https://support.microsoft.com/kb/3005628).  
   
- If any of the above methods fail, or if you do not have an Internet connection, it is necessary to use your Windows installation media. For details, see Method 3 for error 0x800f0906 in the [.NET Framework 3.5 installation error article](https://support.microsoft.com/en-us/kb/2734782). If you do not have installation media, see [Create Installation media for Windows 8.1](http://windows.microsoft.com/en-US/windows-8/create-reset-refresh-media?woldogcb=0).  
+ If any of the above methods fail, or if you do not have an Internet connection, it is necessary to use your Windows installation media. For details, see Method 3 for error 0x800f0906 in the [.NET Framework 3.5 installation error article](https://support.microsoft.com/kb/2734782). If you do not have installation media, see [Create Installation media for Windows 8.1](http://windows.microsoft.com/windows-8/create-reset-refresh-media?woldogcb=0).  
   
  Important notes:  
   

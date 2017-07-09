@@ -14,7 +14,7 @@ class ContinuationSimpleDemo
     //		A sequence of three related tasks is created - each task negates its argument and passes is to the next task: 5, -5, 5 is printed.
     //		A sequence of three unrelated tasks is created where tasks have different types.
     // Documentation:
-    //		http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskfactory_members(VS.100).aspx
+    //		http://msdn.microsoft.com/library/system.threading.tasks.taskfactory_members(VS.100).aspx
     static void Main()
     {
         Action<string> action =

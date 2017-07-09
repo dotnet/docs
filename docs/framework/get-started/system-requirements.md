@@ -26,7 +26,7 @@ The tables in this topic provide the hardware, operating system, and software re
 
  For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).
 
- For information on the support lifecycle of .NET Framework versions, see [Microsoft Support Lifecycle](https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=Microsoft%20.NET%20Framework&Filter=FilterNO).
+ For information on the support lifecycle of .NET Framework versions, see [Microsoft Support Lifecycle](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Microsoft%20.NET%20Framework&Filter=FilterNO).
 
 ## Hardware requirements
 

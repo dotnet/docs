@@ -187,7 +187,7 @@ public class Form1:
         {
             System.Net.WebRequest request = 
                 System.Net.WebRequest.Create(
-                "http://www.microsoft.com//h/en-us/r/ms_masthead_ltr.gif");
+                "http://www.microsoft.com//h/r/ms_masthead_ltr.gif");
             System.Net.WebResponse response = request.GetResponse();
             System.IO.Stream responseStream = 
                 response.GetResponseStream();
@@ -227,7 +227,7 @@ public class Form1:
 
             // Declare an array to hold the bytes of the bitmap.
             int bytes  = Math.Abs(bmpData.Stride) * bmp.Height;
-            byte[] rgbValues = new byte[bytes];
+ï¿½ï¿½ï¿½         byte[] rgbValues = new byte[bytes];
 
             // Copy the RGB values into the array.
             System.Runtime.InteropServices.Marshal.Copy(ptr, rgbValues, 0, bytes);

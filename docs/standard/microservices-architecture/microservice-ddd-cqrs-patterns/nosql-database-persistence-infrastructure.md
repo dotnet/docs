@@ -121,7 +121,7 @@ However, when you persist your model into the NoSQL database, the code and API c
 #### Additional resources
 
 -   **Modeling data in DocumentDB**
-    [*https://docs.microsoft.com/en-us/azure/documentdb/documentdb-modeling-data*](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-modeling-data)
+    [*https://docs.microsoft.com/azure/documentdb/documentdb-modeling-data*](https://docs.microsoft.com/azure/documentdb/documentdb-modeling-data)
 
 -   **Vaughn Vernon. The Ideal Domain-Driven Design Aggregate Store?**
     [*https://vaughnvernon.co/?p=942*](https://vaughnvernon.co/?p=942)

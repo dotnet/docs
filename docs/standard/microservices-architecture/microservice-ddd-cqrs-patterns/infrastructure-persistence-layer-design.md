@@ -103,7 +103,7 @@ We find repositories useful, but we acknowledge that they are not critical for y
     [*http://martinfowler.com/eaaCatalog/repository.html*](http://martinfowler.com/eaaCatalog/repository.html)
 
 -   **The Repository pattern**
-    [*https://msdn.microsoft.com/en-us/library/ff649690.aspx*](https://msdn.microsoft.com/en-us/library/ff649690.aspx)
+    [*https://msdn.microsoft.com/library/ff649690.aspx*](https://msdn.microsoft.com/library/ff649690.aspx)
 
 -   **Repository Pattern: A data persistence abstraction**
     [*http://deviq.com/repository-pattern/*](http://deviq.com/repository-pattern/)

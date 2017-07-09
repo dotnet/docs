@@ -16,7 +16,7 @@ class ContinuationOptionsDemo
     //		The first sequence is successful - tran1 and commitTran1 are executed. rollbackTran1 is canceled.
     //		The second sequence is unsuccessful - tran2 and rollbackTran2 are executed. tran2 is faulted, and commitTran2 is canceled.
     // Documentation:
-    //		http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskcontinuationoptions(VS.100).aspx
+    //		http://msdn.microsoft.com/library/system.threading.tasks.taskcontinuationoptions(VS.100).aspx
     static void Main()
     {
         Action success = () => Console.WriteLine("Task={0}, Thread={1}: Begin successful transaction",

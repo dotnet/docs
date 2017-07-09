@@ -91,7 +91,7 @@ The .NET Framework is a technology that supports building and running the next g
   
 -   Service-oriented applications using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../../../docs/framework/wcf/index.md).  
   
--   Workflow-enabled applications using Windows Workflow Foundation (WF). See [Building Workflows in the .NET Framework](http://msdn.microsoft.com/en-us/cbf3880f-dc7b-466d-b808-1109b1223f4a).  
+-   Workflow-enabled applications using Windows Workflow Foundation (WF). See [Building Workflows in the .NET Framework](http://msdn.microsoft.com/cbf3880f-dc7b-466d-b808-1109b1223f4a).  
   
  For example, the Windows Forms classes are a comprehensive set of reusable types that vastly simplify Windows GUI development. If you write an ASP.NET Web Form application, you can use the Web Forms classes.  
   
@@ -100,5 +100,5 @@ The .NET Framework is a technology that supports building and running the next g
  [Installation guide](../../../docs/framework/install/index.md)   
  [Development Guide](../../../docs/framework/development-guide.md)   
  [Tools](../../../docs/framework/tools/index.md)   
- [.NET Framework Samples](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)   
+ [.NET Framework Samples](http://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)

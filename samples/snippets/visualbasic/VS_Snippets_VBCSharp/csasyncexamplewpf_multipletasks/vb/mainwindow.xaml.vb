@@ -28,9 +28,9 @@ Class MainWindow
         Dim download1 As Task(Of Integer) =
             ProcessURLAsync("http://msdn.microsoft.com", client)
         Dim download2 As Task(Of Integer) =
-            ProcessURLAsync("http://msdn.microsoft.com/en-us/library/hh156528(VS.110).aspx", client)
+            ProcessURLAsync("http://msdn.microsoft.com/library/hh156528(VS.110).aspx", client)
         Dim download3 As Task(Of Integer) =
-            ProcessURLAsync("http://msdn.microsoft.com/en-us/library/67w7t67f.aspx", client)
+            ProcessURLAsync("http://msdn.microsoft.com/library/67w7t67f.aspx", client)
 
         ' Await each task.
         Dim length1 As Integer = Await download1

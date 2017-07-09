@@ -32,7 +32,7 @@ Why would you want to use serialization? The two most important reasons are to p
  [Binary Serialization](../../../docs/framework/serialization/binary-serialization.md)  
  Describes the binary serialization mechanism that is included with the common language runtime.  
   
- [Remote Objects](http://msdn.microsoft.com/en-us/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [Remote Objects](http://msdn.microsoft.com/515686e6-0a8d-42f7-8188-73abede57c58)  
  Describes the various communications methods available in the .NET Framework for remote communications.  
   
  [XML and SOAP Serialization](../../../docs/framework/serialization/xml-and-soap-serialization.md)  

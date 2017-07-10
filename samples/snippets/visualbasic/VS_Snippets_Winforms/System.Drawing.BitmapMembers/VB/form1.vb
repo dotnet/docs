@@ -175,7 +175,7 @@ Public Class Form1
         Try
             Dim request As System.Net.WebRequest = _
                 System.Net.WebRequest.Create( _
-                "http://www.microsoft.com//h/en-us/r/ms_masthead_ltr.gif")
+                "http://www.microsoft.com//h/r/ms_masthead_ltr.gif")
             Dim response As System.Net.WebResponse = request.GetResponse()
             Dim responseStream As System.IO.Stream = response.GetResponseStream()
             Dim bitmap2 As New Bitmap(responseStream)

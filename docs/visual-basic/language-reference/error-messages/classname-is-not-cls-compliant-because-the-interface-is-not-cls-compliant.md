@@ -56,4 +56,4 @@ A class or interface is marked as `<CLSCompliant(True)>` when it derives from or
 -   If you require that this type remain within its current inheritance hierarchy or implementation scheme, remove the <xref:System.CLSCompliantAttribute> from its definition or mark it as `<CLSCompliant(False)>`.  
   
 ## See Also  
- [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

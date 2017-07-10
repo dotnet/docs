@@ -178,7 +178,7 @@ public class ElementItemInfo
     {
         get
         {
-            return "http://msdn.microsoft.com/en-us/library/" + 
+            return "http://msdn.microsoft.com/library/" + 
                 TypeName + ".aspx";
         }
     }

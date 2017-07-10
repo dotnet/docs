@@ -13,7 +13,7 @@ Module ForEachDemo
     '   When a thread is done, it safely adds its local sum to the global sum.
     '   After the loop is complete, the global sum is printed out.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/dd990270(VS.100).aspx
+    '   http://msdn.microsoft.com/library/dd990270(VS.100).aspx
     Private Sub ForEachDemo()
         ' The sum of these elements is 40.
         Dim input As Integer() = {4, 1, 6, 2, 9, 5, _

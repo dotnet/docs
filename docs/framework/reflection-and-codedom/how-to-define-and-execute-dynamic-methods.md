@@ -19,7 +19,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # How to: Define and Execute Dynamic Methods
-The following procedures show how to define and execute a simple dynamic method and a dynamic method bound to an instance of a class. For more information on dynamic methods, see the <xref:System.Reflection.Emit.DynamicMethod> class and [Reflection Emit Dynamic Method Scenarios](http://msdn.microsoft.com/en-us/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e).  
+The following procedures show how to define and execute a simple dynamic method and a dynamic method bound to an instance of a class. For more information on dynamic methods, see the <xref:System.Reflection.Emit.DynamicMethod> class and [Reflection Emit Dynamic Method Scenarios](http://msdn.microsoft.com/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e).  
   
 ### To define and execute a dynamic method  
   
@@ -124,5 +124,5 @@ The following procedures show how to define and execute a simple dynamic method 
   
 ## See Also  
  <xref:System.Reflection.Emit.DynamicMethod>   
- [Using Reflection Emit](http://msdn.microsoft.com/en-us/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)   
- [Reflection Emit Dynamic Method Scenarios](http://msdn.microsoft.com/en-us/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e)
+ [Using Reflection Emit](http://msdn.microsoft.com/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)   
+ [Reflection Emit Dynamic Method Scenarios](http://msdn.microsoft.com/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e)

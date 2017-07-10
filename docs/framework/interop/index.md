@@ -34,7 +34,7 @@ The .NET Framework promotes interaction with COM components, COM+ services, exte
  Code that executes under the control of the runtime is called managed code. Conversely, code that runs outside the runtime is called unmanaged code. COM components, ActiveX interfaces, and Win32 API functions are examples of unmanaged code.  
   
 ## In This Section  
- [Interoperating with Unmanaged Code How-to Topics](http://msdn.microsoft.com/en-us/ec21c6e1-e233-4cd9-95ae-b9b9cf807f9d)  
+ [Interoperating with Unmanaged Code How-to Topics](http://msdn.microsoft.com/ec21c6e1-e233-4cd9-95ae-b9b9cf807f9d)  
  Provides links to all How-to topics found in the conceptual documentation for interoperating with unmanaged code.  
   
  [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)  
@@ -46,7 +46,7 @@ The .NET Framework promotes interaction with COM components, COM+ services, exte
  [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
  Describes how to call unmanaged DLL functions using platform invoke.  
   
- [Design Considerations for Interoperation](http://msdn.microsoft.com/en-us/b59637f6-fe35-40d6-ae72-901e7a707689)  
+ [Design Considerations for Interoperation](http://msdn.microsoft.com/b59637f6-fe35-40d6-ae72-901e7a707689)  
  Provides tips for writing integrated COM components.  
   
  [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)  
@@ -55,9 +55,9 @@ The .NET Framework promotes interaction with COM components, COM+ services, exte
  [How to: Map HRESULTs and Exceptions](../../../docs/framework/interop/how-to-map-hresults-and-exceptions.md)  
  Describes the mapping between exceptions and HRESULTs.  
   
- [Interoperating Using Generic Types](http://msdn.microsoft.com/en-us/26b88e03-085b-4b53-94ba-a5a9c709ce58)  
+ [Interoperating Using Generic Types](http://msdn.microsoft.com/26b88e03-085b-4b53-94ba-a5a9c709ce58)  
  Describes the behavior of generic types when used in COM interop.  
   
 ## Related Sections  
- [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
+ [Advanced COM Interoperability](http://msdn.microsoft.com/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
  Provides links to more information about incorporating COM components into your .NET Framework application.

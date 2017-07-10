@@ -43,7 +43,7 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
   
 ## To correct this error  
   
-1.  Examine the quoted error message and consult the topic [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b) for further explanation and advice.  
+1.  Examine the quoted error message and consult the topic [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/7f125d49-0a03-47a6-9ba9-d61a679a7d4b) for further explanation and advice.  
   
 2.  Try signing the assembly manually, using either the [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex) or the [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23).  
   
@@ -79,7 +79,7 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Link
   
 ## See Also  
  [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   
- [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/en-us/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
+ [Al.exe Tool Errors and Warnings](http://msdn.microsoft.com/7f125d49-0a03-47a6-9ba9-d61a679a7d4b)   
  [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/k5b5tt23)   
  [How to: Create a Public-Private Key Pair](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

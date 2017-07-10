@@ -51,8 +51,8 @@ Moving your console application is a matter of a few steps.
 1. [Process to build and run the Docker container](#creating-the-image)
 
 ## Prerequisites
-Windows containers are supported on [Windows 10 Anniversary Update](https://www.microsoft.com/en-us/software-download/windows10/) or 
-[Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server).
+Windows containers are supported on [Windows 10 Anniversary Update](https://www.microsoft.com/software-download/windows10/) or 
+[Windows Server 2016](https://www.microsoft.com/cloud-platform/windows-server).
 
 > [!NOTE]
 >If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instructions from the [Container Host Deployment](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment) article to install the containers and Docker features.

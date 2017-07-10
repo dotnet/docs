@@ -40,4 +40,4 @@ The `Rename` statement cannot specify a drive letter in the file path.
 -   Remove the drive letter from the file path.  
   
 ## See Also  
- [NOT IN BUILD: Rename Function](http://msdn.microsoft.com/en-us/464062d8-2320-4305-8a8c-1f43e96c94df)
+ [NOT IN BUILD: Rename Function](http://msdn.microsoft.com/464062d8-2320-4305-8a8c-1f43e96c94df)

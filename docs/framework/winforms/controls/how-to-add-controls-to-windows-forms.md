@@ -24,11 +24,11 @@ manager: "wpickett"
 Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input. For more information about controls, see [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### To draw a control on a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/en-us/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
   
 2.  In the **Toolbox**, click the control you want to add to your form.  
   
@@ -41,7 +41,7 @@ Most forms are designed by adding controls to the surface of the form to define 
   
 ### To drag a control to a form  
   
-1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/en-us/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1.  Open the form. For more information, see [How to: Display Windows Forms in the Designer](http://msdn.microsoft.com/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
   
 2.  In the **Toolbox**, click the control you want and drag it to your form.  
   

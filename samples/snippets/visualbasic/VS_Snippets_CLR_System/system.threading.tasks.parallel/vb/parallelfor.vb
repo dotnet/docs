@@ -13,7 +13,7 @@ Module ParallelForDemo
     '   The order of execution of the iterations is undefined.
     '   Verify that no more than two threads have been used for the iterations.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/system.threading.tasks.parallel.for(VS.100).aspx
+    '   http://msdn.microsoft.com/library/system.threading.tasks.parallel.for(VS.100).aspx
     Sub Main()
         Dim options As New ParallelOptions()
         options.MaxDegreeOfParallelism = 2 ' -1 is for unlimited. 1 is for sequential.

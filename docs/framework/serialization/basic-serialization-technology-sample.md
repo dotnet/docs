@@ -92,8 +92,8 @@ manager: "erikre"
  <xref:System.IO.Stream>   
  <xref:System.Runtime.Serialization>   
  <xref:System.Xml.Serialization>   
- [Random class](https://msdn.microsoft.com/en-us/library/system.random.aspx)   
- [System.IO namespace](https://msdn.microsoft.com/en-us/library/system.io.aspx)   
+ [Random class](https://msdn.microsoft.com/library/system.random.aspx)   
+ [System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)   
  [Basic Serialization](../../../docs/framework/serialization/basic-serialization.md)   
  [Binary Serialization](../../../docs/framework/serialization/binary-serialization.md)   
  [Controlling XML Serialization Using Attributes](../../../docs/framework/serialization/controlling-xml-serialization-using-attributes.md)   

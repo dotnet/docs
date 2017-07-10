@@ -66,4 +66,4 @@ The data type specified for this enumeration is not part of the [Language Indepe
 ## See Also  
  [Reflection](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)   
  [Reflection](../../../framework/reflection-and-codedom/reflection.md)   
- [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

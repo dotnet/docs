@@ -46,7 +46,7 @@ The value supplied for the file's open mode was not valid. The following table s
 -   Verify the value being supplied for the file's open mode.  
   
 ## See Also  
- [NOTINBUILD OpenMode Enumeration](http://msdn.microsoft.com/en-us/e995bd42-d11f-455c-88c4-308345172633)   
+ [NOTINBUILD OpenMode Enumeration](http://msdn.microsoft.com/e995bd42-d11f-455c-88c4-308345172633)   
  [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)   
  [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)   
  [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

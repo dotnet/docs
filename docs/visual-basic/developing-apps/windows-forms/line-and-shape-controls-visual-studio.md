@@ -40,7 +40,7 @@ translation.priority.mt:
 # Line and Shape Controls (Visual Studio)
 The Visual Basic Power Packs Line and Shape controls are graphical controls that enable you to draw horizontal, vertical, and diagonal lines, rectangles, squares, ovals, circles, and rectangles and squares with rounded corners on a form or container.  
   
- The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/en-us/download/details.aspx?id=25169).  
+ The PowerPack controls are no longer included in Visual Studio, but you can download them from the [Download Center](http://www.microsoft.com/download/details.aspx?id=25169).  
   
 ## In This Section  
  [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)  

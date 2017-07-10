@@ -119,7 +119,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 -   **Building Docker Images for .NET Core Applications**
-    [*https://docs.microsoft.com/en-us/dotnet/articles/core/docker/building-net-docker-images*](https://docs.microsoft.com/en-us/dotnet/articles/core/docker/building-net-docker-images)
+    [*https://docs.microsoft.com/dotnet/articles/core/docker/building-net-docker-images*](https://docs.microsoft.com/dotnet/articles/core/docker/building-net-docker-images)
 
 -   **Build your own image**. In the official Docker documentation.
     [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
@@ -321,7 +321,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 ### Additional resources
 
 -   **Deploy an ASP.NET container to a remote Docker host**
-    [*https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/*](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/)
+    [*https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/*](https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/)
 
 ### A note about testing and deploying with orchestrators
 
@@ -360,7 +360,7 @@ If you are developing using the editor/CLI approach, debugging containers is mor
 ### Additional resources
 
 -   **Debugging apps in a local Docker container**
-    [*https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-edit-and-refresh/*](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-edit-and-refresh/)
+    [*https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-edit-and-refresh/*](https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-edit-and-refresh/)
 
 -   **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video.
     [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)
@@ -385,7 +385,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 ## Using PowerShell commands in a Dockerfile to set up Windows Containers 
 
-[Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
+[Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
 ```
 FROM microsoft/windowsservercore

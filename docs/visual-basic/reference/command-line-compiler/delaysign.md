@@ -59,7 +59,7 @@ Specifies whether the assembly will be fully or partially signed.
   
 ### To set /delaysign in the Visual Studio integrated development environment  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 2.  Click the **Signing** tab.  
   

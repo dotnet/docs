@@ -56,4 +56,4 @@ manager: "mbaldwin"
  [!code-csharp[C_CustomBinding#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#7)]  
   
 ## See Also  
- [Security Architecture](http://msdn.microsoft.com/en-us/16593476-d36a-408d-808c-ae6fd483e28f)
+ [Security Architecture](http://msdn.microsoft.com/16593476-d36a-408d-808c-ae6fd483e28f)

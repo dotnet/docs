@@ -57,7 +57,7 @@ The .NET Framework gives you power to develop and implement new controls. In add
   
 -   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](http://msdn.microsoft.com/library/ms171731\(v=vs.110\))  
   
--   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](http://msdn.microsoft.com/en-us/library/5h0k2e6x\(v=vs.110\))  
+-   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](http://msdn.microsoft.com/library/5h0k2e6x\(v=vs.110\))  
   
 -   [How to: Provide a Toolbox Bitmap for a Control](http://msdn.microsoft.com/library/4wk1wc0a\(v=vs.110\))  
   
@@ -79,7 +79,7 @@ The .NET Framework gives you power to develop and implement new controls. In add
   
 -   [Walkthrough: Authoring a Composite Control with Visual Basic](http://msdn.microsoft.com/library/c316f119\(v=vs.110\))  
   
--   [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/en-us/library/a6h7e207\(v=vs.110\))  
+-   [Walkthrough: Authoring a Composite Control with Visual C#](http://msdn.microsoft.com/library/a6h7e207\(v=vs.110\))  
   
 -   [Walkthrough: Inheriting from a Windows Forms Control with Visual Basic](http://msdn.microsoft.com/library/w2a8y03d\(v=vs.110\))  
   

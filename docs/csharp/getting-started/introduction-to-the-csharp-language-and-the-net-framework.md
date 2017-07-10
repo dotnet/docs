@@ -79,7 +79,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  In addition to the run time services, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library extensively to handle common "plumbing" chores.  
   
- For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
+ For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/d05daf50-00fe-45c7-8383-06fe41697355).  
   
 ## See Also  
  [C#](../../csharp/csharp.md)   

@@ -271,7 +271,7 @@ static void DisplayIdentityInformation()
   
 5.  At the password prompt, use the same string that was typed for the username prompt.  
   
-6.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+6.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 #### To run the sample across computers  
   
@@ -293,7 +293,7 @@ static void DisplayIdentityInformation()
   
 9. On the client computer, launch `Client.exe` from a command prompt window.  
   
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 #### To clean up after the sample  
   

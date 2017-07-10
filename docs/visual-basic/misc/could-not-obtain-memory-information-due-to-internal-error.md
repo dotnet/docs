@@ -41,5 +41,5 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
   
 ## See Also  
  [My.Computer.Info Object](../../visual-basic/language-reference/objects/my-computer-info-object.md)   
- [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)   
+ [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/3e351e73-cf23-40ab-8b60-05794160529e)   
  [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

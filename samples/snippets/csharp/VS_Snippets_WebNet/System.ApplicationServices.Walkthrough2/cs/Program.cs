@@ -242,7 +242,7 @@ Installing: HTTP Handlers (WAS)
 http://blogs.msdn.com/kaevans/archive/2008/01/09/what-s-in-a-wcf-binding-and-what-can-my-service-do-right-now.aspx 
  * What's In a WCF Binding, And What Can My Service Do Right Now?
  * 
- * http://msdn.microsoft.com/en-us/library/ms733027.aspx  Windows Communcation Foundation Bindings
+ * http://msdn.microsoft.com/library/ms733027.aspx  Windows Communcation Foundation Bindings
  * 
 WCF Binding Comparison http://www.pluralsight.com/community/blogs/aaron/archive/2007/03/22/46560.aspx
  * 

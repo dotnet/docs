@@ -23,7 +23,7 @@
         <asp:TextBox ID="HeadingTextBox" runat="server">
         </asp:TextBox>
         <asp:HyperLink ID="HyperLink1" runat="server"
-            NavigateUrl="http://msdn.microsoft.com/en-us/library/ms178685.aspx">
+            NavigateUrl="http://msdn.microsoft.com/library/ms178685.aspx">
             Configuration File Hierarchy Documentation
             </asp:HyperLink>
         <asp:RequiredFieldValidator ID="ConfigFileRequiredFieldValidator" 

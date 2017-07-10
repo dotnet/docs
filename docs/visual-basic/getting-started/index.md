@@ -68,7 +68,7 @@ Lists new features in each of the versions of Visual Basic .NET.
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  
   
- [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/)  
+ [Visual Studio](https://docs.microsoft.com/visualstudio/)  
  Provides links into the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] documentation.  
   
  [C#](../../csharp/csharp.md)  

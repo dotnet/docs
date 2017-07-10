@@ -14,7 +14,7 @@ Module ContinuationWhenMulti
     '   A ContinueWhenAny() task indicates the first of the three tasks to complete.
     '   A ContinueWhenAll() task sums up the results of the three tasks and prints out the total.
     ' Documentation:
-    '   http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskfactory_members(VS.100).aspx
+    '   http://msdn.microsoft.com/library/system.threading.tasks.taskfactory_members(VS.100).aspx
     Sub Main()
         ' Schedule a list of tasks that return integer
         Dim tasks As Task(Of Integer)() = New Task(Of Integer)() {

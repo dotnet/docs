@@ -31,7 +31,7 @@ manager: "wpickett"
 Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers with a unified programming model for building modern line-of-business desktop applications on Windows.  
   
 > [!NOTE]
->  The Mozilla Firefox browser disables the Microsoft Framework Assistant extension. See [How to remove the .NET Framework Assistant for Firefox](https://support.microsoft.com/en-us/kb/963707) for information on how to remove the extension from Firefox.  
+>  The Mozilla Firefox browser disables the Microsoft Framework Assistant extension. See [How to remove the .NET Framework Assistant for Firefox](https://support.microsoft.com/kb/963707) for information on how to remove the extension from Firefox.  
   
  [Create Modern Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
   

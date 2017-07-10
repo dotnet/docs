@@ -66,6 +66,6 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
  [The XML Schema Definition Tool and XML Serialization](../../../docs/framework/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)   
  [Introducing XML Serialization](../../../docs/framework/serialization/introducing-xml-serialization.md)   
  [XML Schema Definition Tool (Xsd.exe)](../../../docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md)   
- [XmlSerializer](https://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx)   
+ [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)   
  [How to: Serialize an Object](../../../docs/framework/serialization/how-to-serialize-an-object.md)   
  [How to: Deserialize an Object](../../../docs/framework/serialization/how-to-deserialize-an-object.md)

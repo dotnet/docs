@@ -101,7 +101,7 @@ Webhooks can be implemented in F# and hosted on Azure via an [Azure Function in 
 
 ## Using Webjobs with F# #
 
-[Webjobs](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-create-web-jobs) are programs you can run in your App Service web app in three ways: on demand, continuously, or on a schedule.
+[Webjobs](https://docs.microsoft.com/azure/app-service-web/web-sites-create-web-jobs) are programs you can run in your App Service web app in three ways: on demand, continuously, or on a schedule.
 
 [Example F# Webjob](https://github.com/andredublin/fsharp-azure-webjob)
 

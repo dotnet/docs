@@ -205,7 +205,7 @@ Public Class AccountController
     End Function
 
     Private Shared Function ErrorCodeToString(ByVal createStatus As MembershipCreateStatus) As String
-        ' See http://msdn.microsoft.com/en-us/library/system.web.security.membershipcreatestatus.aspx for
+        ' See http://msdn.microsoft.com/library/system.web.security.membershipcreatestatus.aspx for
         ' a full list of status codes.
         Select Case createStatus
             Case MembershipCreateStatus.DuplicateUserName

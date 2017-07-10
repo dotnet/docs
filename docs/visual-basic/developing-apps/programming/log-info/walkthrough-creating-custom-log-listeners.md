@@ -59,7 +59,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 #### To strongly name the log-listener assembly  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 2.  Click the **Signing** tab.  
   

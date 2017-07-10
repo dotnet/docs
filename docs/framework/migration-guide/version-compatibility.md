@@ -53,7 +53,7 @@ Backward compatibility means that an app that was developed for a particular ver
   
 -   Check these topics  for any changes that might affect your app and apply the workaround described:  
   
-    -   [.NET Framework 4 Migration Issues](http://go.microsoft.com/fwlink/p/?LinkId=248212)  
+    -   [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)  
   
     -   [Application Compatibility in 4.5](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-5.md)  
   
@@ -89,4 +89,4 @@ Backward compatibility means that an app that was developed for a particular ver
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
  [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)   
  [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/p/?LinkId=248212)   
- [.NET Framework 4 Migration Issues](http://go.microsoft.com/fwlink/p/?LinkId=248212)
+ [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)

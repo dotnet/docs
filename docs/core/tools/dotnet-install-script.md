@@ -59,7 +59,7 @@ Specifies the source channel for the installation. The possible values are:
 - Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`)
 - Branch name [for example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` for the latest from the `master` branch ("bleeding edge" nightly releases)]
 
-The default value is `LTS`.
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Core Support Lifecycle](https://www.microsoft.com/net/core/support) topic.
 
 `-Version <VERSION>`
 
@@ -119,7 +119,7 @@ Specifies the source channel for the installation. The possible values are:
 - Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`)
 - Branch name [for example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` for the latest from the `master` branch ("bleeding edge" nightly releases)]
 
-The default value is `LTS`.
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Core Support Lifecycle](https://www.microsoft.com/net/core/support) topic.
 
 `-Version <VERSION>`
 

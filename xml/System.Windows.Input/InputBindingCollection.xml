@@ -29,7 +29,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Input.KeyGesture> and associates it with a <xref:System.Windows.Input.KeyBinding>.  The <xref:System.Windows.Input.KeyBinding> is added to the <xref:System.Windows.Input.InputBindingCollection> on a <xref:System.Windows.Window>.  
   
- [!code-xml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
+ [!code-xaml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
  [!code-csharp[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewkeybinding)]
  [!code-vb[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewkeybinding)]  
@@ -121,7 +121,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Input.KeyGesture> and associates it with a <xref:System.Windows.Input.KeyBinding>. The <xref:System.Windows.Input.KeyBinding> is added to the <xref:System.Windows.Input.InputBindingCollection> on a <xref:System.Windows.Window>.  
   
- [!code-xml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
+ [!code-xaml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
  [!code-csharp[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewkeybinding)]
  [!code-vb[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewkeybinding)]  

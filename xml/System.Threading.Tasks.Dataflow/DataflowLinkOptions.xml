@@ -12,11 +12,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("PropagateCompletion = {PropagateCompletion}, MaxMessages = {MaxMessages}, Append = {Append}")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Provides options used to configure a link between dataflow blocks.</summary>
     <remarks>

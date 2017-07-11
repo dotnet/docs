@@ -41,7 +41,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.CheckBox> and handles the <xref:System.Windows.Controls.Primitives.ToggleButton.Checked>, <xref:System.Windows.Controls.Primitives.ToggleButton.Unchecked>, and <xref:System.Windows.Controls.Primitives.ToggleButton.Indeterminate> events.  
   
- [!code-xml[CheckBox_Snippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml#4)]  
+ [!code-xaml[CheckBox_Snippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml#4)]  
   
  [!code-csharp[CheckBox_Snippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/CheckBox_Snippets/CSharp/Window1.xaml.cs#5)]
  [!code-vb[CheckBox_Snippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CheckBox_Snippets/VisualBasic/Window1.xaml.vb#5)]  

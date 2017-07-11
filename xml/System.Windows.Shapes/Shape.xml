@@ -115,7 +115,7 @@
 ## Examples  
  This example shows how to use the <xref:System.Windows.Shapes.Shape.Fill%2A> property to set the background color of an <xref:System.Windows.Shapes.Ellipse> element.  
   
- [!code-xml[BrushesMiscSnippets_snip#SetBackgroundColorOfShapeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_snip/CS/SetBackgroundColorOfShapeExample.xaml#setbackgroundcolorofshapeexamplewholepage)]  
+ [!code-xaml[BrushesMiscSnippets_snip#SetBackgroundColorOfShapeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_snip/CS/SetBackgroundColorOfShapeExample.xaml#setbackgroundcolorofshapeexamplewholepage)]  
   
  [!code-csharp[BrushesMiscSnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/SetBackgroundColorOfShapeExample.cs#setbackgroundcolorofshapecodeexamplewholepage)]
  [!code-vb[BrushesMiscSnippets_procedural_snip#SetBackgroundColorOfShapeCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/setbackgroundcolorofshapeexample.vb#setbackgroundcolorofshapecodeexamplewholepage)]  
@@ -478,7 +478,7 @@
 ## Examples  
  The following example shows several different joints used at the vertices of a shape.  
   
- [!code-xml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
+ [!code-xaml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
   
  The following illustration shows the different line joins.  
   

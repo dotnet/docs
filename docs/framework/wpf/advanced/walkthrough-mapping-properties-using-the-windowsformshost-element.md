@@ -63,7 +63,7 @@ This walkthrough shows you how to use the              <xref:System.Windows.Form
   
 2.  Replace the existing code with the following code.  
   
-     [!code-xml[PropertyMappingWithWfhSample#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml#1)]  
+     [!code-xaml[PropertyMappingWithWfhSample#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertyMappingWithWfhSample/CSharp/PropertyMappingWithWfh/Window1.xaml#1)]  
   
 3.  Open Window1.xaml.cs in the Code Editor.  
   

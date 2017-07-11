@@ -45,7 +45,7 @@
   
  [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
  [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ [!code-xaml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
   
  The preceding example produces output that is similar to the following illustration.  
   
@@ -100,7 +100,7 @@ Calendar with dates that cannot be selected
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Calendar> that includes a <xref:System.Windows.FrameworkElement.Loaded> event handler.  
   
- [!code-xml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
+ [!code-xaml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
   
  The following example shows the <xref:System.Windows.FrameworkElement.Loaded> event handler. The event handler calls the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method to make only future dates selectable.  
   

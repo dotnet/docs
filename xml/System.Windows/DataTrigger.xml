@@ -43,11 +43,11 @@
   
  The <xref:System.Windows.DataTrigger> is specified such that if the *State* of the *Place* data item is "WA" then the foreground of the corresponding <xref:System.Windows.Controls.ListBoxItem> is set to Red.  
   
- [!code-xml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
+ [!code-xaml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
   
  The following example shows how to use a <xref:System.Windows.DataTrigger>, a <xref:System.Windows.Media.Animation.BeginStoryboard> action, and a <xref:System.Windows.Media.Animation.Storyboard> to animate a property when bound data meets a specified condition. The example displays inventory information in a <xref:System.Windows.Controls.ListBox> control. It uses a <xref:System.Windows.DataTrigger> to animate the <xref:System.Windows.UIElement.Opacity%2A> of every <xref:System.Windows.Controls.ListBoxItem> that contains an out-of-stock book.  
   
- [!code-xml[AnimatePropertyStoryboards#GraphicsMMDataTriggerStoryboardWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/DataTriggerStoryboardExample.xaml#graphicsmmdatatriggerstoryboardwholepage)]  
+ [!code-xaml[AnimatePropertyStoryboards#GraphicsMMDataTriggerStoryboardWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/DataTriggerStoryboardExample.xaml#graphicsmmdatatriggerstoryboardwholepage)]  
   
  ]]></format>
     </remarks>
@@ -126,9 +126,9 @@
 ## Examples  
  In the following example, the <xref:System.Windows.DataTrigger> sets the <xref:System.Windows.Controls.Border.BorderBrush%2A> of the element named `border` to `Yellow` if the `TaskType` property is `TaskType.Home`.  
   
- [!code-xml[DataTemplatingIntro#DT](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#dt)]  
-[!code-xml[DataTemplatingIntro#DataTrigger](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#datatrigger)]  
-[!code-xml[DataTemplatingIntro#AddingMore2](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
+ [!code-xaml[DataTemplatingIntro#DT](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#dt)]  
+[!code-xaml[DataTemplatingIntro#DataTrigger](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#datatrigger)]  
+[!code-xaml[DataTemplatingIntro#AddingMore2](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
   
  For a detailed discussion of this example, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
   
@@ -222,7 +222,7 @@
   
  For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
   
- [!code-xml[DataBindingLab#AuctionItemsDataTriggers](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#auctionitemsdatatriggers)]  
+ [!code-xaml[DataBindingLab#AuctionItemsDataTriggers](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#auctionitemsdatatriggers)]  
   
  ]]></format>
         </remarks>
@@ -336,13 +336,13 @@
   
  The <xref:System.Windows.DataTrigger> is specified such that if the *State* of the *Place* data item is "WA" then the foreground of the corresponding <xref:System.Windows.Controls.ListBoxItem> is set to Red.  
   
- [!code-xml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
+ [!code-xaml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
   
  The following example shows two <xref:System.Windows.DataTrigger>s that are defined in a <xref:System.Windows.DataTemplate>. The <xref:System.Windows.DataTemplate> is applied to *AuctionItem* data objects (not shown in this example), which have the property *SpecialFeatures*. See [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) for the complete example.  
   
  The first <xref:System.Windows.DataTrigger> is specified such that if the data object has a *SpecialFeatures* value of *Color*, then the item is displayed with a DodgerBlue background with Navy titles. If the data object has a *SpecialFeatures* value of *Highlight*, then the second <xref:System.Windows.DataTrigger> will be active, causing the item to be displayed with an Orange border with a star.  
   
- [!code-xml[DataBindingLab#AuctionItemsDataTriggers](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#auctionitemsdatatriggers)]  
+ [!code-xaml[DataBindingLab#AuctionItemsDataTriggers](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#auctionitemsdatatriggers)]  
   
  ]]></format>
         </remarks>

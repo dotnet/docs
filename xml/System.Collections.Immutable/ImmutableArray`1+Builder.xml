@@ -31,14 +31,6 @@
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableArrayBuilderDebuggerProxy`1))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>  
   
@@ -470,11 +462,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Immutable.ImmutableArray`1/Builder/&lt;GetEnumerator&gt;d__48))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>

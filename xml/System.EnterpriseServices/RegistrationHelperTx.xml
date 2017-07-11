@@ -90,6 +90,16 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InstallAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <forInternalUseOnly />
+        <summary>Installs the named assembly in the COM+ catalog using transactional semantics</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InstallAssembly">
       <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags, object sync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
@@ -231,6 +241,16 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UninstallAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <forInternalUseOnly />
+        <summary>Uninstalls an assembly from a COM+ application using transactional semantics.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UninstallAssembly">
       <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application, object sync);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssembly(string assembly, string application, object sync) cil managed" />
@@ -330,25 +350,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="InstallAssembly">
-      <AssemblyInfo>
-        <AssemblyName>System.EnterpriseServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <forInternalUseOnly />
-        <summary>Installs the named assembly in the COM+ catalog using transactional semantics</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UninstallAssembly">
-      <AssemblyInfo>
-        <AssemblyName>System.EnterpriseServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <forInternalUseOnly />
-        <summary>Uninstalls an assembly from a COM+ application using transactional semantics.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

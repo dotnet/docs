@@ -36,11 +36,11 @@
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. Using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property, the value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style). For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
- [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
+ [!code-xaml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
  The following example shows the <xref:System.Windows.Style> definition of a custom control called `NumericUpDown`. The <xref:System.Windows.Controls.TextBlock.Text%2A> property of the <xref:System.Windows.Controls.TextBlock> is bound to the `Value` of the object that is the `TemplatedParent`, which is the `NumericUpDown` control that this <xref:System.Windows.Style> is applied to in this case.  
   
- [!code-xml[CustomControlNumericUpDown#RelativeSource](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/themes/generic.xaml#relativesource)]  
+ [!code-xaml[CustomControlNumericUpDown#RelativeSource](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/themes/generic.xaml#relativesource)]  
   
  For the complete sample, see [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://go.microsoft.com/fwlink/?LinkID=160025).  
   
@@ -321,7 +321,7 @@
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. See [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md) for more information on this example.  
   
- [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
+ [!code-xaml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
  ]]></format>
         </remarks>
@@ -459,7 +459,7 @@
 ## Examples  
  The following example shows the <xref:System.Windows.Style> definition of a custom control called `NumericUpDown`. The <xref:System.Windows.Controls.TextBlock.Text%2A> property of the <xref:System.Windows.Controls.TextBlock> is bound to the `Value` of the object that is the `TemplatedParent`, which is the `NumericUpDown` control that this <xref:System.Windows.Style> is applied to in this case.  
   
- [!code-xml[CustomControlNumericUpDown#RelativeSource](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/themes/generic.xaml#relativesource)]  
+ [!code-xaml[CustomControlNumericUpDown#RelativeSource](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/themes/generic.xaml#relativesource)]  
   
  For the complete sample, see [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://go.microsoft.com/fwlink/?LinkID=160025).  
   

@@ -31,9 +31,9 @@
 ## Examples  
  The following examples create <xref:System.Windows.Controls.ComboBox> controls that contain images as items instead of text.  Functionally, the examples are the same. The first example sets the <xref:System.Windows.Controls.TextSearch.TextPath%2A> property on the <xref:System.Windows.Controls.ComboBox> and the second example sets the <xref:System.Windows.Controls.AccessText.Text%2A> property on each item in the collection.  
   
- [!code-xml[ComboBoxProps_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#1)]  
+ [!code-xaml[ComboBoxProps_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#1)]  
   
- [!code-xml[ComboBoxProps_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#2)]  
+ [!code-xaml[ComboBoxProps_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ComboBoxProps_snip/CS/pane1.xaml#2)]  
   
  ]]></format>
     </remarks>

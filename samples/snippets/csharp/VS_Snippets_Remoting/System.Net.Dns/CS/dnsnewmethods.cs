@@ -9,31 +9,36 @@ namespace DNSChanges
 //<Snippet1>
         public static void DoGetHostEntry(string hostname)
         {
-            IPHostEntry host;
+            IPHostEntry host = Dns.GetHostEntry(hostname);
 
-            host = Dns.GetHostEntry(hostname);
+            Console.WriteLine($"GetHostEntry({hostname}) returns:");
 
-            Console.WriteLine("GetHostEntry({0}) returns:", hostname);
-
-            foreach (IPAddress ip in host.AddressList)
+            foreach (IPAddress address in host.AddressList)
             {
-                Console.WriteLine("    {0}", ip);
+                Console.WriteLine($"    {address}");
             }
         }
 //</Snippet1>
 
+//<Snippet4>
+        public static void DoGetHostEntry(IPAddress address)
+        {
+            IPHostEntry host = Dns.GetHostEntry(address);
+
+            Console.WriteLine($"GetHostEntry({address}) returns HostName: {host.HostName}");
+        }
+//</Snippet4>
+
 //<Snippet3>
         public static void DoGetHostAddresses(string hostname)
         {
-            IPAddress[] ips;
+            IPAddress[] addresses = Dns.GetHostAddresses(hostname);
 
-            ips = Dns.GetHostAddresses(hostname);
+            Console.WriteLine($"GetHostAddresses({hostname}) returns:");
 
-            Console.WriteLine("GetHostAddresses({0}) returns:", hostname);
-
-            foreach (IPAddress ip in ips)
+            foreach (IPAddress address in addresses)
             {
-                Console.WriteLine("    {0}", ip);
+                Console.WriteLine($"    {address}");
             }
         }
 //</Snippet3>
@@ -57,20 +62,24 @@ namespace DNSChanges
 
             public IPHostEntry IPs
             {
-                get { return resolvedIPs; } 
-                set {resolvedIPs = value;}}
-            public string host {get {return hostName;} 
-                set {hostName = value;}}
+                get { return resolvedIPs; }
+                set { resolvedIPs = value; }
+            }
+
+            public string host
+            {
+                get { return hostName; }
+                set { hostName = value; }
+            }
         }
 
         // Record the IPs in the state object for later use.
         public static void GetHostEntryCallback(IAsyncResult ar)
         {
             ResolveState ioContext = (ResolveState)ar.AsyncState;
-
             ioContext.IPs = Dns.EndGetHostEntry(ar);
             GetHostEntryFinished.Set();
-        }       
+        }
         
         // Determine the Internet Protocol (IP) addresses for 
         // this host asynchronously.
@@ -88,23 +97,20 @@ namespace DNSChanges
 
             Console.WriteLine("EndGetHostEntry({0}) returns:", ioContext.host);
 
-            foreach (IPAddress ip in ioContext.IPs.AddressList)
+            foreach (IPAddress address in ioContext.IPs.AddressList)
             {
-                Console.WriteLine("    {0}", ip);
+                Console.WriteLine($"    {address}");
             }
- 
         }
-  
 //</Snippet2>
 
-    [STAThread]
-	static void Main(string[] args)
-	{
-
-        DoGetHostEntry("www.contoso.com");
-        DoGetHostAddresses("www.contoso.com");
-        DoGetHostEntryAsync("www.contoso.com");
-
+        [STAThread]
+        static void Main(string[] args)
+        {
+            DoGetHostEntry("www.contoso.com");
+            DoGetHostEntry(IPAddress.Parse("127.0.0.1"));
+            DoGetHostAddresses("www.contoso.com");
+            DoGetHostEntryAsync("www.contoso.com");
         }
-	}
+    }
 }

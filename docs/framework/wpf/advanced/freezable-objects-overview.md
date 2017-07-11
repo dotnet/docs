@@ -94,7 +94,7 @@ This topic describes how to effectively use and create <xref:System.Windows.Free
 ### Freezing from Markup  
  To freeze a <xref:System.Windows.Freezable> object declared in markup, you use the `PresentationOptions:Freeze` attribute. In the following example, a <xref:System.Windows.Media.SolidColorBrush> is declared as a page resource and frozen. It is then used to set the background of a button.  
   
- [!code-xml[FreezableSample#FreezeFromMarkupWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FreezableSample/CS/FreezeFromMarkupExample.xaml#freezefrommarkupwholepage)]  
+ [!code-xaml[FreezableSample#FreezeFromMarkupWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FreezableSample/CS/FreezeFromMarkupExample.xaml#freezefrommarkupwholepage)]  
   
  To use the `Freeze` attribute, you must map to the presentation options namespace: `http://schemas.microsoft.com/winfx/2006/xaml/presentation/options`. `PresentationOptions` is the recommended prefix for mapping this namespace:  
   

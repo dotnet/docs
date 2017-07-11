@@ -74,7 +74,7 @@
 ## Examples  
  The following example shows how a standard page is defined using only markup:  
   
- [!code-xml[PageSnippets#MarkupPageMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupPage.xaml#markuppagemarkup)]  
+ [!code-xaml[PageSnippets#MarkupPageMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupPage.xaml#markuppagemarkup)]  
   
  The following example shows how a standard page is defined using only code:  
   
@@ -83,7 +83,7 @@
   
  The following example shows how a standard page is defined using a combination of markup and code-behind.  
   
- [!code-xml[PageSnippets#MarkupAndCodeBehindPageMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupAndCodeBehindPage.xaml#markupandcodebehindpagemarkup)]  
+ [!code-xaml[PageSnippets#MarkupAndCodeBehindPageMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupAndCodeBehindPage.xaml#markupandcodebehindpagemarkup)]  
   
  [!code-csharp[PageSnippets#MarkupAndCodeBehindPageCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageSnippets/CSharp/MarkupAndCodeBehindPage.xaml.cs#markupandcodebehindpagecodebehind)]
  [!code-vb[PageSnippets#MarkupAndCodeBehindPageCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageSnippets/visualbasic/markupandcodebehindpage.xaml.vb#markupandcodebehindpagecodebehind)]  
@@ -509,11 +509,11 @@
 ## Examples  
  The following example shows how to use [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] to retain an instance of the <xref:System.Windows.Controls.Page> class across multiple navigations.  
   
- [!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAML1](~/samples/snippets/xaml/VS_Snippets_Wpf/PageKeepAliveSnippets/XAML/HomePage.xaml#setpagekeepalivexaml1)]  
-[!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAML2](~/samples/snippets/xaml/VS_Snippets_Wpf/PageKeepAliveSnippets/XAML/HomePage.xaml#setpagekeepalivexaml2)]  
+ [!code-xaml[PageKeepAliveSnippets#SetPageKeepAliveXAML1](~/samples/snippets/xaml/VS_Snippets_Wpf/PageKeepAliveSnippets/XAML/HomePage.xaml#setpagekeepalivexaml1)]  
+[!code-xaml[PageKeepAliveSnippets#SetPageKeepAliveXAML2](~/samples/snippets/xaml/VS_Snippets_Wpf/PageKeepAliveSnippets/XAML/HomePage.xaml#setpagekeepalivexaml2)]  
   
- [!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAMLForLang1](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml#setpagekeepalivexamlforlang1)]  
-[!code-xml[PageKeepAliveSnippets#SetPageKeepAliveXAMLForLang2](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml#setpagekeepalivexamlforlang2)]  
+ [!code-xaml[PageKeepAliveSnippets#SetPageKeepAliveXAMLForLang1](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml#setpagekeepalivexamlforlang1)]  
+[!code-xaml[PageKeepAliveSnippets#SetPageKeepAliveXAMLForLang2](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml#setpagekeepalivexamlforlang2)]  
   
  [!code-csharp[PageKeepAliveSnippets#SetPageKeepAliveCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageKeepAliveSnippets/CSharp/HomePage.xaml.cs#setpagekeepalivecodebehind)]
  [!code-vb[PageKeepAliveSnippets#SetPageKeepAliveCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageKeepAliveSnippets/visualbasic/homepage.xaml.vb#setpagekeepalivecodebehind)]  
@@ -847,11 +847,11 @@
 ## Examples  
  The following example shows how to use [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] to hide the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of a <xref:System.Windows.Navigation.NavigationWindow>.  
   
- [!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAML1](~/samples/snippets/xaml/VS_Snippets_Wpf/PageShowsNavigationUISnippets/XAML/HomePage.xaml#setpageshowsnavigationuixaml1)]  
-[!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAML2](~/samples/snippets/xaml/VS_Snippets_Wpf/PageShowsNavigationUISnippets/XAML/HomePage.xaml#setpageshowsnavigationuixaml2)]  
+ [!code-xaml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAML1](~/samples/snippets/xaml/VS_Snippets_Wpf/PageShowsNavigationUISnippets/XAML/HomePage.xaml#setpageshowsnavigationuixaml1)]  
+[!code-xaml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAML2](~/samples/snippets/xaml/VS_Snippets_Wpf/PageShowsNavigationUISnippets/XAML/HomePage.xaml#setpageshowsnavigationuixaml2)]  
   
- [!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAMLLang1](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml#setpageshowsnavigationuixamllang1)]  
-[!code-xml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAMLLang2](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml#setpageshowsnavigationuixamllang2)]  
+ [!code-xaml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAMLLang1](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml#setpageshowsnavigationuixamllang1)]  
+[!code-xaml[PageShowsNavigationUISnippets#SetPageShowsNavigationUIXAMLLang2](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml#setpageshowsnavigationuixamllang2)]  
   
  [!code-csharp[PageShowsNavigationUISnippets#SetPageShowsNavigationUICODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/PageShowsNavigationUISnippets/CSharp/HomePage.xaml.cs#setpageshowsnavigationuicodebehind)]
  [!code-vb[PageShowsNavigationUISnippets#SetPageShowsNavigationUICODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PageShowsNavigationUISnippets/visualbasic/homepage.xaml.vb#setpageshowsnavigationuicodebehind)]  
@@ -1096,7 +1096,7 @@
 ## Examples  
  The following example shows how to set the height of a window from a page.  
   
- [!code-xml[HOWTONavigationSnippets#SetPageWindowHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowHeightPage.xaml#setpagewindowheightxaml)]  
+ [!code-xaml[HOWTONavigationSnippets#SetPageWindowHeightXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowHeightPage.xaml#setpagewindowheightxaml)]  
   
  ]]></format>
         </remarks>
@@ -1152,7 +1152,7 @@
 ## Examples  
  The following example shows how to set the title of a window from a page.  
   
- [!code-xml[HOWTONavigationSnippets#SetPageWindowTitleXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  
+ [!code-xaml[HOWTONavigationSnippets#SetPageWindowTitleXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  
   
  ]]></format>
         </remarks>
@@ -1196,7 +1196,7 @@
 ## Examples  
  The following example shows how to set the width of a window from a page.  
   
- [!code-xml[HOWTONavigationSnippets#SetPageWindowWidthXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowWidthPage.xaml#setpagewindowwidthxaml)]  
+ [!code-xaml[HOWTONavigationSnippets#SetPageWindowWidthXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowWidthPage.xaml#setpagewindowwidthxaml)]  
   
  ]]></format>
         </remarks>

@@ -56,7 +56,7 @@
 ## Examples  
  The following code example shows how to associate a <xref:System.Windows.Media.BitmapCache> with a <xref:System.Windows.Media.BitmapCacheBrush>. You can use the <xref:System.Windows.Media.BitmapCacheBrush> resource on multiple elements and achieve good performance. For the complete code listing, see [How to: Use a Cached Element as a Brush](~/docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md).  
   
- [!code-xml[System.Windows.Media.BitmapCacheBrush#_BitmapCacheBrushCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcachebrush/cs/window1.xaml#_bitmapcachebrushcreation)]  
+ [!code-xaml[System.Windows.Media.BitmapCacheBrush#_BitmapCacheBrushCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcachebrush/cs/window1.xaml#_bitmapcachebrushcreation)]  
   
  ]]></format>
     </remarks>

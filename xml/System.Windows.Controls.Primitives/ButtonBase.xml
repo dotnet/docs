@@ -102,7 +102,7 @@
   
 -   Release - the third does not reset the background color of the buttons until the mouse is pressed and released in the button.  
   
- [!code-xml[ClickModes_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[ClickModes_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml#1)]  
   
  [!code-csharp[ClickModes_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml.cs#2)]
  [!code-vb[ClickModes_snip#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClickModes_snip/VisualBasic/Window1.xaml.vb#2)]  
@@ -484,7 +484,7 @@
 ## Examples  
  This example shows how to use the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property in a trigger style.  
   
- [!code-xml[BtnColor#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnColor/CSharp/Pane1.xaml#9)]  
+ [!code-xaml[BtnColor#9](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnColor/CSharp/Pane1.xaml#9)]  
   
  ]]></format>
         </remarks>

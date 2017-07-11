@@ -18,7 +18,7 @@
 ## Examples  
  In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
   
- [!code-xml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]   
+ [!code-xaml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]   
   
  The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
   
@@ -110,7 +110,7 @@
   
  Because the <xref:System.Windows.HierarchicalDataTemplate> for the first level, `Level1Data`, has the <xref:System.Windows.HierarchicalDataTemplate.AlternationCount%2A> property set to 2, the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> for the <xref:System.Windows.Controls.TreeViewItem> objects in the second level alternates between 0 and 1. In the <xref:System.Windows.HierarchicalDataTemplate> for the second level, `Level2Data`, the <xref:System.Windows.Controls.TextBlock.FontStyle%2A> of the <xref:System.Windows.Controls.TextBlock> is bound to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and an <xref:System.Windows.Controls.AlternationConverter> is provided to convert the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> to an alternating <xref:System.Windows.Controls.TextBlock.FontStyle%2A>.  A similar relationship exists between `Level2Data` and `Level3Data`:  The <xref:System.Windows.HierarchicalDataTemplate.AlternationCount%2A> is set to 3 on `Level2Data`, and the <xref:System.Windows.Controls.TextBlock> in `Level3Ddata` has its <xref:System.Windows.Controls.TextBlock.Background%2A> property bound to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
   
- [!code-xml[AlternationIndexSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#5)]  
+ [!code-xaml[AlternationIndexSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#5)]  
   
  ]]></format>
         </remarks>
@@ -167,7 +167,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TreeView> that uses one style for items in its first level and another style for items in its second level.  The style for the first level is set in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property of the <xref:System.Windows.Controls.TreeView>.  The style for the second level is set in the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> property of the <xref:System.Windows.HierarchicalDataTemplate>.  
   
- [!code-xml[RecycleItemContainerShippets#VirtualizingTreeView](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizingtreeview)]  
+ [!code-xaml[RecycleItemContainerShippets#VirtualizingTreeView](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizingtreeview)]  
   
  The following example creates the data that is used in the previous example.  
   
@@ -204,7 +204,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TreeView> that uses the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> of a <xref:System.Windows.HierarchicalDataTemplate> to choose between two styles for items in the second level of the <xref:System.Windows.Controls.TreeView>.  
   
- [!code-xml[RecycleItemContainerShippets#ItemContainerStyleSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#itemcontainerstyleselector)]  
+ [!code-xaml[RecycleItemContainerShippets#ItemContainerStyleSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#itemcontainerstyleselector)]  
   
  The following example shows the <xref:System.Windows.Controls.StyleSelector> that is used in the previous example.  
   
@@ -250,7 +250,7 @@
 ## Examples  
  In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
   
- [!code-xml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]   
+ [!code-xaml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]   
   
  The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
   

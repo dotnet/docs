@@ -22,7 +22,7 @@ manager: "wpickett"
 ## Example  
  The following example shows how to display multiple collections and items as one list using the <xref:System.Windows.Data.CompositeCollection> class. In this example, `GreekGods` is an <xref:System.Collections.ObjectModel.ObservableCollection%601> of `GreekGod` custom objects. Data templates are defined so that `GreekGod` objects and `GreekHero` objects appear with a gold and a cyan foreground color respectively.  
   
- [!code-xml[CompositeCollections#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositeCollections/CS/Window1.xaml#1)]  
+ [!code-xaml[CompositeCollections#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositeCollections/CS/Window1.xaml#1)]  
   
 ## See Also  
  <xref:System.Windows.Data.CollectionContainer>   

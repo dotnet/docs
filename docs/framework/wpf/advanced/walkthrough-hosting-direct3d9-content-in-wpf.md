@@ -67,7 +67,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 1.  In MainWindow.xaml, replace the automatically generated XAML with the following XAML.  
   
-     [!code-xml[System.Windows.Interop.D3DImage#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml#10)]  
+     [!code-xaml[System.Windows.Interop.D3DImage#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml#10)]  
   
 2.  Build the project.  
   

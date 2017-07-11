@@ -57,7 +57,7 @@
  [!code-cpp[ScrollViewer#1](~/samples/snippets/cpp/VS_Snippets_Wpf/ScrollViewer/CPP/ScrollViewer_wcp.cpp#1)]
  [!code-csharp[ScrollViewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewer/CSharp/ScrollViewer_wcp.cs#1)]
  [!code-vb[ScrollViewer#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewer/VisualBasic/ScrollViewer.vb#1)]
- [!code-xml[ScrollViewer#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ScrollViewer/XAML/Pane1.xaml#1)]  
+ [!code-xaml[ScrollViewer#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ScrollViewer/XAML/Pane1.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -843,7 +843,7 @@
 ## Examples  
  The following example shows a <xref:System.Windows.Controls.ScrollViewer> with the <xref:System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabled%2A> property set to `true`.  
   
- [!code-xml[DeferredScrolling#DeferredScrolling](~/samples/snippets/xaml/VS_Snippets_Wpf/DeferredScrolling/xaml/window1.xaml#deferredscrolling)]  
+ [!code-xaml[DeferredScrolling#DeferredScrolling](~/samples/snippets/xaml/VS_Snippets_Wpf/DeferredScrolling/xaml/window1.xaml#deferredscrolling)]  
   
  ]]></format>
         </remarks>
@@ -1463,11 +1463,11 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ScrollViewer> and adds several elements to it.  In this example, when the size of the window changes, the size of `textblock1` also changes.  When the <xref:System.Windows.Controls.TextBlock> is too small to display all of the content, the <xref:System.Windows.Controls.ScrollViewer> becomes scrollable. The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode.Both> so that the user can scroll the <xref:System.Windows.Controls.ScrollViewer> horizontally and vertically by using a finger.  
   
- [!code-xml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodedirect)]   
+ [!code-xaml[ScrollViewerPanning#PanningModeDirect](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodedirect)]   
   
  The following example creates a <xref:System.Windows.Controls.TextBox> and uses <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=fullName> as an attached property. By default the <xref:System.Windows.Controls.ScrollViewer> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.TextBox> has its <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode.VerticalFirst>.  This is so that when the user moves a finger horizontally before moving it vertically, the user highlights text.  The example sets <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> to <xref:System.Windows.Controls.PanningMode.VerticalOnly> so that the user cannot select text by using a finger.  Note that setting <xref:System.Windows.Controls.PanningMode> to <xref:System.Windows.Controls.PanningMode.Both> also prevents the user from selecting text.  The example sets the <xref:System.Windows.TextWrapping> property to <xref:System.Windows.TextWrapping.Wrap>, so horizontal scrolling is not necessary.  
   
- [!code-xml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodeattached)]   
+ [!code-xaml[ScrollViewerPanning#PanningModeAttached](~/samples/snippets/csharp/VS_Snippets_Wpf/scrollviewerpanning/CS/mainwindow.xaml#panningmodeattached)]   
   
  ]]></format>
         </remarks>

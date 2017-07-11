@@ -61,15 +61,15 @@
 ## Examples  
  The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>.  
   
- [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]   
+ [!code-xaml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]   
   
  To apply the above style, do the following:  
   
- [!code-xml[StyleOvw01#StyleSimpleApplied](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimpleapplied)]
+ [!code-xaml[StyleOvw01#StyleSimpleApplied](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimpleapplied)]
   
  You can also apply styles to all elements of a given type by using the <xref:System.Windows.Style.TargetType%2A> property. Adding the target type to the style means that you no longer have to fully qualify the property you are setting with the `ClassName.PropertyName` syntax. The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
+ [!code-xaml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
 > [!NOTE]
 >  Many [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] controls consist of a combination of other [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] controls, so creating a style that applies to all controls of a type can have broad impact. For instance, if you create a style that targets the <xref:System.Windows.Controls.TextBlock> controls in a <xref:System.Windows.Controls.Canvas>, the style is applied to all <xref:System.Windows.Controls.TextBlock> controls in the canvas, even if the <xref:System.Windows.Controls.TextBlock> is part of another control, such as a <xref:System.Windows.Controls.ListBox>.  
@@ -186,18 +186,18 @@
 ## Examples  
  There are several ways that styles in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] can be extended or inherited. Styles can be based on other styles through this property. When you use this property, the new style will inherit the values of the original style that are not explicitly redefined in the new style. In the following example, `Style2` inherits the <xref:System.Windows.Controls.Control.Background%2A?displayProperty=fullName>value of `Yellow`, and adds a <xref:System.Windows.Controls.Control.Foreground%2A?displayProperty=fullName>value of `Blue`.  
   
- [!code-xml[StyleOvw01#ExtendingStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyle)]   
+ [!code-xaml[StyleOvw01#ExtendingStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyle)]   
   
  Similarly, styles can be based on the style of an existing [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] element, as in the following example where the new style is based on the style of a <xref:System.Windows.Controls.TextBlock> element.  
   
- [!code-xml[PhotoStoreDemoStyled#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#2)]   
+ [!code-xaml[PhotoStoreDemoStyled#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#2)]   
   
 > [!NOTE]
 >  If you create a style with a <xref:System.Windows.Style.TargetType%2A> property and base it on another style that also defines a <xref:System.Windows.Style.TargetType%2A> property, the target type of the derived style must be the same as or be derived from the type of the base style.  
   
  Styles defined for specific types can also be based on other styles, as in the following example.  
   
- [!code-xml[StyleOvw01#ExtendingStyleTargetType](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyletargettype)]   
+ [!code-xaml[StyleOvw01#ExtendingStyleTargetType](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#extendingstyletargettype)]   
   
  ]]></format>
         </remarks>
@@ -403,7 +403,7 @@
   
  Adding a <xref:System.Windows.SetterBase> child to a <xref:System.Windows.Style> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Style> object. The following <xref:System.Windows.EventSetter> is implicitly added to the <xref:System.Windows.SetterBaseCollection> of the style:  
   
- [!code-xml[eventovwsupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+ [!code-xaml[eventovwsupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
   
  ]]></format>
         </remarks>
@@ -570,7 +570,7 @@
 ## Examples  
  The following example defines a style that will be applied to all instances of the <xref:System.Windows.Controls.TextBlock> element.  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
+ [!code-xaml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  Setting the <xref:System.Windows.Style.TargetType%2A> property to the <xref:System.Windows.Controls.TextBlock> type without setting an `x:Key` implicitly sets the `x:Key` to `{x:Type TextBlock}`. This also means that if you give the above <xref:System.Windows.Style> an `x:Key` value of anything other than `{x:Type TextBlock}`, the <xref:System.Windows.Style> would not be applied to all <xref:System.Windows.Controls.TextBlock> elements automatically. Instead, you need to apply the style to the <xref:System.Windows.Controls.TextBlock> elements explicitly.  
   
@@ -627,7 +627,7 @@
 ## Examples  
  The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
   
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
  ]]></format>
         </remarks>

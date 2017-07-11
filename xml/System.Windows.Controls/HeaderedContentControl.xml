@@ -37,13 +37,13 @@ TabControl with different types in the Header property
 ## Examples  
  The following example shows how to create the <xref:System.Windows.Controls.TabControl> shown in the Remarks section.  
   
- [!code-xml[ControlContentOverviewSnippets#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#16)]  
+ [!code-xaml[ControlContentOverviewSnippets#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#16)]  
   
  The following examples show how to create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.HeaderedContentControl>.  
   
- [!code-xml[HeaderedContentControl#HeaderedContentControlStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headeredcontentcontrolstyle)]  
+ [!code-xaml[HeaderedContentControl#HeaderedContentControlStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headeredcontentcontrolstyle)]  
   
- [!code-xml[HeaderedContentControl#HeaderedContentControl](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headeredcontentcontrol)]  
+ [!code-xaml[HeaderedContentControl#HeaderedContentControl](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headeredcontentcontrol)]  
   
  ]]></format>
     </remarks>
@@ -175,7 +175,7 @@ TabControl with different types in the Header property
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TabControl> that contains two <xref:System.Windows.Controls.TabItem> objects, which inherit from <xref:System.Windows.Controls.HeaderedContentControl>.  The first <xref:System.Windows.Controls.TabItem> has <xref:System.Windows.UIElement> objects as the content in both the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and the <xref:System.Windows.Controls.ContentControl.Content%2A>: the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains an <xref:System.Windows.Shapes.Ellipse> and a <xref:System.Windows.Controls.TextBlock>; the <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.TextBlock> and a <xref:System.Windows.Controls.Label>.  The <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of the second <xref:System.Windows.Controls.TabItem> is set to a string and the <xref:System.Windows.Controls.ContentControl.Content%2A> is set to a single <xref:System.Windows.Controls.TextBlock>.  
   
- [!code-xml[ControlContentOverviewSnippets#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#16)]  
+ [!code-xaml[ControlContentOverviewSnippets#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#16)]  
   
  The following illustration shows the <xref:System.Windows.Controls.TabControl> created by the previous example.  
   
@@ -184,8 +184,8 @@ TabControl with different types in the Header property
   
  The following example creates two <xref:System.Windows.DataTemplate> objects to specify the appearance of the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.HeaderedContentControl>.  
   
- [!code-xml[HeaderedContentControl#HeaderTemplate1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate1)]  
-[!code-xml[HeaderedContentControl#HeaderTemplate2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate2)]  
+ [!code-xaml[HeaderedContentControl#HeaderTemplate1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate1)]  
+[!code-xaml[HeaderedContentControl#HeaderTemplate2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate2)]  
   
  ]]></format>
         </remarks>
@@ -247,7 +247,7 @@ TabControl with different types in the Header property
 ## Examples  
  The following example binds a <xref:System.Windows.Controls.TabControl> to a collection of `Student` objects.  The `Student` class has a `Name` property, a collection of `Course` objects, and implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  The example uses <xref:System.Windows.Controls.HeaderedContentControl.HeaderStringFormat%2A> to put a student's name in the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of each <xref:System.Windows.Controls.TabItem> (which inherits from <xref:System.Windows.Controls.HeaderedContentControl>), and the <xref:System.Windows.Controls.TabControl.ContentStringFormat%2A?displayProperty=fullName> to display the course list for each student in the Content of the <xref:System.Windows.Controls.TabItem>.  
   
- [!code-xml[ContentStringSnippets#TabControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#tabcontrol)]  
+ [!code-xaml[ContentStringSnippets#TabControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#tabcontrol)]  
   
  The following example implements the <xref:System.IFormattable.ToString%2A?displayProperty=fullName> method to return either the `Name` of the student or a string that lists the student's courses.  
   
@@ -337,8 +337,8 @@ TabControl with different types in the Header property
 ## Examples  
  The following example creates two <xref:System.Windows.DataTemplate> objects to specify the appearance of the <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.HeaderedContentControl>.  
   
- [!code-xml[HeaderedContentControl#HeaderTemplate1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate1)]  
-[!code-xml[HeaderedContentControl#HeaderTemplate2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate2)]  
+ [!code-xaml[HeaderedContentControl#HeaderTemplate1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate1)]  
+[!code-xaml[HeaderedContentControl#HeaderTemplate2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headertemplate2)]  
   
  ]]></format>
         </remarks>

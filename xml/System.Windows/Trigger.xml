@@ -46,7 +46,7 @@
 ## Examples  
  The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
   
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
  ]]></format>
     </remarks>
@@ -105,7 +105,7 @@
 ## Examples  
  The following example contains two triggers. The first changes the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Button> when the <xref:System.Windows.UIElement.IsMouseOver%2A> property is **true**. The second changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is **true**. The <xref:System.Windows.Style.TargetType%2A> of the <xref:System.Windows.Style> is set to <xref:System.Windows.Controls.Button> and therefore there is no need to qualify the `Property` properties with the class name.  
   
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -195,7 +195,7 @@
 ## Examples  
  As mentioned above, adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.Trigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Trigger> object. In the following example, `<Trigger.Setters>` is implicit.  
   
- [!code-xml[PhotoStoreDemoStyled#TriggerSettersRef](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#triggersettersref)]   
+ [!code-xaml[PhotoStoreDemoStyled#TriggerSettersRef](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#triggersettersref)]   
   
  ]]></format>
         </remarks>
@@ -237,7 +237,7 @@
 ## Examples  
  One scenario when you would use the <xref:System.Windows.Trigger.SourceName%2A> property is when the property of interest is not a property of the templated parent, as in the following example:  
   
- [!code-xml[ControlTemplateExamples#TriggerSourceName](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/menu.xaml#triggersourcename)]  
+ [!code-xaml[ControlTemplateExamples#TriggerSourceName](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/menu.xaml#triggersourcename)]  
   
  ]]></format>
         </remarks>
@@ -403,7 +403,7 @@
 ## Examples  
  The following example changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is **true**.  
   
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
  ]]></format>
         </remarks>

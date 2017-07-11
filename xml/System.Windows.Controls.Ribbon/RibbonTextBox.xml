@@ -35,7 +35,7 @@ Ribbon text box controls
 ## Examples  
  The following example shows the markup to create a <xref:System.Windows.Controls.Ribbon.RibbonTextBox>control with a large image, a small image, and a label.  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
   
  ]]></format>
     </remarks>
@@ -592,7 +592,7 @@ Ribbon text box controls
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.Ribbon.RibbonTextBox.Label%2A> property on a <xref:System.Windows.Controls.Ribbon.RibbonTextBox>.  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
   
  ]]></format>
         </remarks>
@@ -649,7 +649,7 @@ Ribbon text box controls
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.Ribbon.RibbonTextBox.LargeImageSource%2A> property for a <xref:System.Windows.Controls.Ribbon.RibbonTextBox>.  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
   
  ]]></format>
         </remarks>
@@ -1179,7 +1179,7 @@ Ribbon text box controls
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.Ribbon.RibbonTextBox.SmallImageSource%2A> property on a <xref:System.Windows.Controls.Ribbon.RibbonTextBox>.  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextbox)]  
   
  ]]></format>
         </remarks>
@@ -1276,7 +1276,7 @@ Ribbon text box controls
  ![Enhanced ToolTip](~/add/media/wpfribbon-tooltipenhanced.png "Enhanced ToolTip")  
 Enhanced ToolTip  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
   
  ]]></format>
         </remarks>
@@ -1338,7 +1338,7 @@ Enhanced ToolTip
  ![Enhanced ToolTip](~/add/media/wpfribbon-tooltipenhanced.png "Enhanced ToolTip")  
 Enhanced ToolTip  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
   
  ]]></format>
         </remarks>
@@ -1400,7 +1400,7 @@ Enhanced ToolTip
  ![Enhanced ToolTip](~/add/media/wpfribbon-tooltipenhanced.png "Enhanced ToolTip")  
 Enhanced ToolTip  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
   
  ]]></format>
         </remarks>
@@ -1462,7 +1462,7 @@ Enhanced ToolTip
  ![Enhanced ToolTip](~/add/media/wpfribbon-tooltipenhanced.png "Enhanced ToolTip")  
 Enhanced ToolTip  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
   
  ]]></format>
         </remarks>
@@ -1524,7 +1524,7 @@ Enhanced ToolTip
  ![Enhanced ToolTip](~/add/media/wpfribbon-tooltipenhanced.png "Enhanced ToolTip")  
 Enhanced ToolTip  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
   
  ]]></format>
         </remarks>
@@ -1586,7 +1586,7 @@ Enhanced ToolTip
  ![Enhanced ToolTip](~/add/media/wpfribbon-tooltipenhanced.png "Enhanced ToolTip")  
 Enhanced ToolTip  
   
- [!code-xml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
+ [!code-xaml[Ribbon_ControlsSample#RibbonTextBoxTT](~/samples/snippets/csharp/VS_Snippets_Wpf/ribbon_controlssample/cs/mainwindow.xaml#ribbontextboxtt)]  
   
  ]]></format>
         </remarks>

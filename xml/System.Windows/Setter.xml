@@ -37,11 +37,11 @@
 ## Examples  
  The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. This <xref:System.Windows.Style> applies values to several <xref:System.Windows.Controls.TextBlock> properties with the use of <xref:System.Windows.Setter>s.  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
+ [!code-xaml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  The following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
   
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
  ]]></format>
     </remarks>
@@ -143,11 +143,11 @@
 ## Examples  
  The following example defines a style that will be applied to every <xref:System.Windows.Controls.TextBlock> element.  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
+ [!code-xaml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  The following example shows a style declaration that will affect the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Control>. Note that property name in this example is qualified with the name of the class (<xref:System.Windows.Controls.Control>) because the <xref:System.Windows.Style> does not specify a <xref:System.Windows.Style.TargetType%2A>.  
   
- [!code-xml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]   
+ [!code-xaml[StyleOvw01#StyleSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#stylesimple)]   
   
  ]]></format>
         </remarks>
@@ -300,7 +300,7 @@
 ## Examples  
  In the following example, the <xref:System.Windows.Setter.TargetName%2A> is used for the trigger <xref:System.Windows.Setter> to specify that the <xref:System.Windows.Setter> is intended for the <xref:System.Windows.Shapes.Ellipse> named `ThumbCover` within the <xref:System.Windows.Controls.ControlTemplate>.  
   
- [!code-xml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
+ [!code-xaml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
   
  ]]></format>
         </remarks>
@@ -372,19 +372,19 @@
 ## Examples  
  The following example defines a <xref:System.Windows.Style> that will be applied to every <xref:System.Windows.Controls.TextBlock> element. For the complete example, see [Introduction to Styling and Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160010).  
   
- [!code-xml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
+ [!code-xaml[PhotoStoreDemoStyled#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#1)]   
   
  The following example defines a <xref:System.Windows.Style> with <xref:System.Windows.Setter>s that reference system resources.  
   
- [!code-xml[BtnStyles#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#1)]  
+ [!code-xaml[BtnStyles#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#1)]  
   
  The following example defines a <xref:System.Windows.Style> for the <xref:System.Windows.Controls.Primitives.RepeatButton>.  
   
- [!code-xml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
+ [!code-xaml[ColorPicker_snip#StyleTargetNameRef](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerApp/MyApp.xaml#styletargetnameref)]  
   
  The following example shows a <xref:System.Windows.Setter.Value%2A> property that uses the <xref:System.Windows.Data.Binding> declaration. For the complete example, see [Binding Validation Sample](http://go.microsoft.com/fwlink/?LinkID=159972).  
   
- [!code-xml[bindvalidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
+ [!code-xaml[bindvalidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
  ]]></format>
         </remarks>

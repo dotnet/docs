@@ -13,7 +13,8 @@
   <Interfaces />
   <Docs>
     <summary>Configures an export that is associated with a part.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddMetadata">
@@ -38,7 +39,8 @@
         <param name="getValueFromPartType">A function that provides the value of the metadata to add.</param>
         <summary>Adds metadata that has the specified name and value to the export.</summary>
         <returns>An export builder containing the metadata that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMetadata">
@@ -63,7 +65,8 @@
         <param name="value">The value of the metadata to add.</param>
         <summary>Adds metadata that has the specified name and value to the export.</summary>
         <returns>An export builder containing the metadata that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -86,7 +89,8 @@
         <param name="getContractNameFromPartType">The function that provides the contract name.</param>
         <summary>Specifies the contract name for the export based on the result of the specified function on the export type.</summary>
         <returns>An export builder containing the contract name that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -109,7 +113,8 @@
         <param name="contractName">The contract name.</param>
         <summary>Specifies the contract name for the export.</summary>
         <returns>An export builder containing the contract name that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractType">
@@ -132,7 +137,8 @@
         <param name="type">The type.</param>
         <summary>Specifies the contract type for the export.</summary>
         <returns>An export builder containing the contract type that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractType&lt;T&gt;">
@@ -156,7 +162,8 @@
         <typeparam name="T">The generic type.</typeparam>
         <summary>Specifies the contract type for the export as a generic type.</summary>
         <returns>An export builder containing the contract type that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

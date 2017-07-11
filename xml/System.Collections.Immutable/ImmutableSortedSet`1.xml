@@ -40,14 +40,6 @@
       <InterfaceName>System.Collections.Immutable.IImmutableSet&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableEnumerableDebuggerProxy`1))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the set.</typeparam>
     <summary>Represents an immutable sorted set implementation.  
@@ -236,7 +228,7 @@
     </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;.Enumerator GetEnumerator ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Collections.Immutable.ImmutableSortedSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableSortedSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -918,11 +910,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1239,11 +1226,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1264,11 +1246,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1289,11 +1266,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -1620,11 +1592,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1658,11 +1625,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1693,11 +1655,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1731,11 +1688,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1769,11 +1721,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1807,11 +1754,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1845,11 +1787,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
       </ReturnValue>

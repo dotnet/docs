@@ -35,14 +35,6 @@
       <InterfaceName>System.Collections.IDictionary</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableDictionaryBuilderDebuggerProxy`2))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents a hash map that mutates with little or no memory allocations and that can produce or build on immutable hash map instances very efficiently.  
   
@@ -377,11 +369,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Immutable.ImmutableDictionary`2/Builder/&lt;get_Keys&gt;d__18))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TKey&gt;</ReturnType>
       </ReturnValue>
@@ -617,11 +604,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -642,11 +624,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1039,11 +1016,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Immutable.ImmutableDictionary`2/Builder/&lt;get_Values&gt;d__22))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;TValue&gt;</ReturnType>
       </ReturnValue>

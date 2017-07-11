@@ -23,14 +23,6 @@
       <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;System.Tuple&lt;T1,T2&gt;&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayContent,nq}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.Tasks.Dataflow.JoinBlock`2/DebugView))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <typeparam name="T1">Specifies the type of data accepted by the block's first target.</typeparam>
     <typeparam name="T2">Specifies the type of data accepted by the block's second target.</typeparam>

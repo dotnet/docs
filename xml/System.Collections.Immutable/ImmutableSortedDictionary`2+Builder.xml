@@ -35,14 +35,6 @@
       <InterfaceName>System.Collections.IDictionary</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedDictionaryBuilderDebuggerProxy`2))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents a sorted dictionary that mutates with little or no memory allocations and that can produce or build on immutable sorted dictionary instances very efficiently.  
   
@@ -602,11 +594,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -627,11 +614,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

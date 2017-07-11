@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "HOST_TYPE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "HOST_TYPE enumeration [.NET Framework hosting]"
 ms.assetid: 51f848be-84c5-4036-9839-c762c576bbf5

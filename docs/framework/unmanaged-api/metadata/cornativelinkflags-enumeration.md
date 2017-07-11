@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorNativeLinkFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorNativeLinkFlags enumeration [.NET Framework metadata]"
 ms.assetid: 8027df7c-cfad-4724-bda0-7538d9519070

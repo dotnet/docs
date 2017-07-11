@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyReferenceList"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAssemblyReferenceList interface [.NET Framework hosting]"
 ms.assetid: 5f890fdf-d22a-429e-a35f-135273d1a636

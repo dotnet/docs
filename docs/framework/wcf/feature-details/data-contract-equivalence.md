@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "data contracts [WCF], equivalence"
 ms.assetid: f06f3c7e-c235-4ec1-b200-68142edf1ed1

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddSzArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AddSzArray method [.NET Framework hosting]"
   - "ITypeNameBuilder::AddSzArray method [.NET Framework hosting]"

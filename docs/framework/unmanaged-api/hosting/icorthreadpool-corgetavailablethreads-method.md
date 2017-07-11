@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorGetAvailableThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorGetAvailableThreads method [.NET Framework hosting]"
   - "ICorThreadpool::CorGetAvailableThreads method [.NET Framework hosting]"

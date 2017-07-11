@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager::GetMonitorOwner"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager::GetMonitorOwner method [.NET Framework hosting]"
   - "GetMonitorOwner method [.NET Framework hosting]"

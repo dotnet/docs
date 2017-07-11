@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "structs [C#], using"
 ms.assetid: cea4a459-9eb9-442b-8d08-490e0797ba38

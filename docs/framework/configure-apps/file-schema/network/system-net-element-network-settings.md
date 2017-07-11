@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.Net"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.Net"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "system.Net element"
   - "<system.Net> element"

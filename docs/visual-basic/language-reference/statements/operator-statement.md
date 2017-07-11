@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.operator"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "operators [Visual Basic]"
   - "procedures, operator"

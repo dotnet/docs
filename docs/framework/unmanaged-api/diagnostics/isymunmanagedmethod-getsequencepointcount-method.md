@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetSequencePointCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedMethod::GetSequencePointCount method [.NET Framework debugging]"
   - "GetSequencePointCount method [.NET Framework debugging]"

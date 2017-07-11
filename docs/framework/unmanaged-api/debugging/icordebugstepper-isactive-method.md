@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::IsActive"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsActive method, ICorDebugStepper interface [.NET Framework debugging]"
   - "ICorDebugStepper::IsActive method [.NET Framework debugging]"

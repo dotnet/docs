@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::NeedsPriorityScheduling"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::NeedsPriorityScheduling method [.NET Framework hosting]"
   - "NeedsPriorityScheduling method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "LinkResource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LinkResource method"
 ms.assetid: c404acb3-4c59-4100-9a4c-483cbdb1d736

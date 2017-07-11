@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.operators"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "boolean operators [C#]"
   - "expressions [C#], operators"

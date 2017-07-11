@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EmitAssemblyCustomAttribute"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmitAssemblyCustomAttribute method"
 ms.assetid: b72f5409-79af-4fa7-90a7-7630eec170f1

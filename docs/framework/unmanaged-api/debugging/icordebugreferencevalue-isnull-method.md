@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::IsNull"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsNull method, ICorDebugReferenceValue interface [.NET Framework debugging]"
   - "ICorDebugReferenceValue::IsNull method [.NET Framework debugging]"

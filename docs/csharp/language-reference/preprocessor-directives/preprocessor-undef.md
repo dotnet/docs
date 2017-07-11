@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#undef"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#undef directive [C#]"
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513

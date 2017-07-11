@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionCatcherLeave"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionCatcherLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionCatcherLeave method [.NET Framework profiling]"

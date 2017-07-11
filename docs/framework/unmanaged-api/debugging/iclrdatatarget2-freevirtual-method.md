@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget2::FreeVirtual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataTarget::FreeVirtual method [.NET Framework debugging]"
   - "FreeVirtual method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::RequestRevert"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RequestRevert method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::RequestRevert method [.NET Framework profiling]"

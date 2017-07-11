@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "<see>"
   - "see"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "cref [C#], <see> tag"
   - "<see> C# XML tag"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "nullable types [C#], identifying"
 ms.assetid: d4b67ee2-66e8-40c1-ae9d-545d32c71387

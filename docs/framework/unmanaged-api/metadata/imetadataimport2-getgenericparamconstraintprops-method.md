@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2::GetGenericParamConstraintProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport2::GetGenericParamConstraintProps method [.NET Framework metadata]"
   - "GetGenericParamConstraintProps method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::SetUnmanagerHandler"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetUnmanagedHandler method [.NET Framework debugging]"
   - "ICorDebug::SetUnmanagedHandler method [.NET Framework debugging]"

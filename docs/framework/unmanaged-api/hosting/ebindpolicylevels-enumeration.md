@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EBindPolicyLevels"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EBindPolicyLevels enumeration [.NET Framework hosting]"
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa

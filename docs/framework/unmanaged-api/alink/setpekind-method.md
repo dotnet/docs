@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetPEKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetPEKind method"
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d

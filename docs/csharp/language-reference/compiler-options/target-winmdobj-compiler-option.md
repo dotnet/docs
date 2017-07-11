@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 1819a045-659d-498a-9457-c466e902986f
 caps.latest.revision: 15
 author: "BillWagner"

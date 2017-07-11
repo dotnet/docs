@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorQueueUserWorkItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorThreadpool::CorQueueUserWorkItem method [.NET Framework hosting]"
   - "CorQueueUserWorkItem method [.NET Framework hosting]"

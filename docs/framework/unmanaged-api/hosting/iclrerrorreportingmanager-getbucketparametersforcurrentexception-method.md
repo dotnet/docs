@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRErrorReportingManager::GetBucketParametersForCurrentException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRErrorReportingManager::GetBucketParametersForCurrentException method [.NET Framework hosting]"
   - "GetBucketParametersForCurrentException method [.NET Framework hosting]"

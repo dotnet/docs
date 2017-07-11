@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetThreadContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetThreadContext method [.NET Framework profiling]"
   - "GetThreadContext method, ICorProfilerInfo interface [.NET Framework profiling]"

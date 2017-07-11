@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.build.options"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "compiler options [C#]"
   - "csc.exe"

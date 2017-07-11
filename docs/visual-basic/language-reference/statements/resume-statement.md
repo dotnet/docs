@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Resume"
   - "vb.ResumeNext"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Next statement, Resume"
   - "Resume Next statement"

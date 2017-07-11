@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::FindManifestResourceByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindManifestResourceByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindManifestResourceByName method [.NET Framework metadata]"

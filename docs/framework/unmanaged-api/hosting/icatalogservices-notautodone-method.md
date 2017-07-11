@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "NotAutodone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICatalogServices::NotAutodone method [.NET Framework hosting]"
   - "NotAutodone method [.NET Framework hosting]"

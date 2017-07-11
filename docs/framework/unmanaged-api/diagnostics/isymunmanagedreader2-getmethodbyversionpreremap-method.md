@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetMethodByVersionPreRemap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethodByVersionPreRemap method [.NET Framework debugging]"
   - "ISymUnmanagedReader2::GetMethodByVersionPreRemap method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder::GetReaderFromStream"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedBinder::GetReaderFromStream method [.NET Framework debugging]"
   - "GetReaderFromStream method [.NET Framework debugging]"

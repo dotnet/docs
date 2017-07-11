@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vbrID91"
-dev_langs: 
-  - "VB"
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
 caps.latest.revision: 9
 author: dotnet-bot

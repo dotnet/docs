@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetSymbolStoreFileName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSymbolStoreFileName method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymbolStoreFileName method [.NET Framework debugging]"

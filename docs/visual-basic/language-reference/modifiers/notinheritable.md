@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "NotInheritable"
   - "vb.NotInheritable"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "classes [Visual Basic], final"
   - "NotInheritable keyword"

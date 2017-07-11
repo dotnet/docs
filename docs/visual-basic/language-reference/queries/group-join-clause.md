@@ -14,8 +14,6 @@ f1_keywords:
   - "vb.QueryGroupJoinOn"
   - "vb.QueryGroupJoin"
   - "vb.QueryGroupJoinInto"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Group Join clause"
   - "Group Join statement"

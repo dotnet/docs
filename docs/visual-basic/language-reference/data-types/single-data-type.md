@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Single"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Single data type"
   - "F literal type character"

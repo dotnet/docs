@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COINITIEE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COINITIEE enumeration [.NET Framework metadata]"
 ms.assetid: 64264238-3b68-4bac-a887-36b552426a6c

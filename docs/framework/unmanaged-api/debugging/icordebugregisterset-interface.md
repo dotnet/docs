@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugRegisterSet interface [.NET Framework debugging]"
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88

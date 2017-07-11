@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/rootnamespace"
   - "rootnamespace"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/rootnamespace compiler option [Visual Basic]"
   - "-rootnamespace compiler option [Visual Basic]"

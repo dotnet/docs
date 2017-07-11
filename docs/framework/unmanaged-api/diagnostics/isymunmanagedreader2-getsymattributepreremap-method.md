@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader2::GetSymAttributePreRemap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSymAttributePreRemap method [.NET Framework debugging]"
   - "ISymUnmanagedReader2::GetSymAttributePreRemap method [.NET Framework debugging]"

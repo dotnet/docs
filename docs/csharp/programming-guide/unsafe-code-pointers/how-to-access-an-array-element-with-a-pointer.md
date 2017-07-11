@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "pointers [C#], array access"
 ms.assetid: 6c46f2af-a730-4855-8638-f136d9abaa12

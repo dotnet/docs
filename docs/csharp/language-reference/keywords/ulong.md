@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "ulong_CSharpKeyword"
   - "ulong"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "ulong keyword [C#]"
 ms.assetid: f2ece624-837a-40cf-92c5-343e7f33397c

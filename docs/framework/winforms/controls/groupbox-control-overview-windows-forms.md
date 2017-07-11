@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "GroupBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "GroupBox control [Windows Forms], about GroupBox control"
   - "grouping controls, Windows Forms"

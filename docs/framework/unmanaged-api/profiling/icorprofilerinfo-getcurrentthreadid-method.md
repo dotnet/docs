@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetCurrentThreadID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentThreadID method, ICorProfilerInfo interface [.NET Framework profiling]"
   - "ICorProfilerInfo::GetCurrentThreadID method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRErrorReportingManager::BeginCustomDump"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRErrorReportingManager::BeginCustomDump method [.NET Framework hosting]"
   - "BeginCustomDump method"

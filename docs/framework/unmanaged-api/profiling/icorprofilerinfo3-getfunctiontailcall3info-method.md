@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionTailcall3Info"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo3::GetFunctionTailcall3Info method [.NET Framework profiling]"
   - "GetFunctionTailcall3Info method [.NET Framework profiling]"

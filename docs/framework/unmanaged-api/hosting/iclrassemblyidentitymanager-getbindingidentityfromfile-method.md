@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetBindingIdentityFromFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBindingIdentityFromFile method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetBindingIdentifyFromFile method [.NET Framework hosting]"

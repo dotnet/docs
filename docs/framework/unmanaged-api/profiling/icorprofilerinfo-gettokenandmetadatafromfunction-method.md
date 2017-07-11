@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetTokenAndMetadataFromFunction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetTokenAndMetadataFromFunction method [.NET Framework profiling]"
   - "GetTokenAndMetadataFromFunction method [.NET Framework profiling]"

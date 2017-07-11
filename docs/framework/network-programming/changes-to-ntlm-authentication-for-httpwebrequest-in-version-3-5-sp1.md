@@ -7,11 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
 caps.latest.revision: 8
 author: "mcleblanc"

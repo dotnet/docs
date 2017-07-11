@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "command-line arguments [C#]"
 ms.assetid: 0e597e0d-ea7a-41ba-a38a-0198122f3c26

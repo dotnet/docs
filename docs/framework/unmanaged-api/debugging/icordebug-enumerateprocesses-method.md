@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EnumerateProcesses"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateProcesses method [.NET Framework debugging]"
   - "ICorDebug::EnumerateProcesses method [.NET Framework debugging]"

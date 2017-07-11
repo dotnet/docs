@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetStartupNotificationEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStartupNotificationEvent function"
   - "debugging API [Silverlight]"

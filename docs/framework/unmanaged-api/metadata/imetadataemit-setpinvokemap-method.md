@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetPinvokeMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SetPinvokeMap method [.NET Framework metadata]"
   - "SetPinvokeMap method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::StepComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StepComplete method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::StepComplete method [.NET Framework debugging]"

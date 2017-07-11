@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetSourceStartEnd"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSourceStartEnd method [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetSourceStartEnd method [.NET Framework debugging]"

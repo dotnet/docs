@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::SetHostControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetHostControl method [.NET Framework hosting]"
   - "ICLRRuntimeHost::SetHostControl method [.NET Framework hosting]"

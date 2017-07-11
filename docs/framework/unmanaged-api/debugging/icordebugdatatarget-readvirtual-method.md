@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugDataTarget::ReadVirtual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugDataTarget::ReadVirtual method [.NET Framework debugging]"
   - "ReadVirtual method, ICorDebugDataTarget interface [.NET Framework debugging]"

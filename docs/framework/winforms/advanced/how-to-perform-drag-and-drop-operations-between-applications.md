@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "drag and drop, between applications"
 ms.assetid: fa347436-2b12-4dd6-8507-59d7241f6a06

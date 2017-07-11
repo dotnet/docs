@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySkip"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [Visual Basic], Skip"
   - "Skip statement"

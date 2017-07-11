@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IInstallReferenceItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IInstallReferenceItem interface [.NET Framework fusion]"
 ms.assetid: 66df494d-1a2f-4441-8ee6-cfed0217b4e6

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Button"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Button control [Windows Forms], about Button control"
   - "buttons, about buttons"

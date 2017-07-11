@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetCurrentException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::GetCurrentException method [.NET Framework debugging]"
   - "GetCurrentException method [.NET Framework debugging]"

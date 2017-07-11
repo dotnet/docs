@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetWin32ResBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetWin32ResBlob method"
 ms.assetid: 36997e04-f9f6-4254-a041-6767ac6c51d9

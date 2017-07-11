@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Overridable"
   - "vb.Overridable"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "elements, concrete"
   - "properties [Visual Basic], redefining"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30722"
   - "bc30722"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30722"
 ms.assetid: 6f452da8-6ef8-41fd-9ab8-6f681cf7d433

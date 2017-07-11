@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDENTITY_ATTRIBUTE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDENTITY_ATTRIBUTE structure [.NET Framework fusion]"
 ms.assetid: 1ee7c434-9681-4fa8-badd-652cb1a9742b

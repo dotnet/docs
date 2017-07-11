@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::RudeAbort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval2::RudeAbort method [.NET Framework debugging]"
   - "RudeAbort method, ICorDebugEval2 interface [.NET Framework debugging]"

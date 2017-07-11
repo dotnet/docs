@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedBinder interface [.NET Framework debugging]"
 ms.assetid: b22fbe19-b30f-4696-8175-e6b91da9edab

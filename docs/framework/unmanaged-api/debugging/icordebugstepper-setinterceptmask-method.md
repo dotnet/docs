@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::SetInterceptMask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetInterceptMask method [.NET Framework debugging]"
   - "ICorDebugStepper::SetInterceptMask method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostManualEvent::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Reset method, IHostManualEvent interface [.NET Framework hosting]"
   - "IHostManualEvent::Reset method [.NET Framework hosting]"

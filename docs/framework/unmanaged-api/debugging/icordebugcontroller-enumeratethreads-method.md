@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::EnumerateThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugController::EnumerateThreads method [.NET Framework debugging]"
   - "EnumerateThreads method [.NET Framework debugging]"

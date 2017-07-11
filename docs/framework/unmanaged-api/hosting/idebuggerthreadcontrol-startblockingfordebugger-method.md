@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StartBlockingForDebugger"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebuggerThreadControl::StartBlockingForDebugger method [.NET Framework hosting]"
   - "StartBlockingForDebugger method [.NET Framework hosting]"

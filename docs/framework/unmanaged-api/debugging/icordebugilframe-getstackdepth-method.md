@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetStackDepth"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStackDepth method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetStackDepth method [.NET Framework debugging]"

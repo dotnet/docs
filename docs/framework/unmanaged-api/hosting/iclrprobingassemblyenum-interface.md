@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRProbingAssemblyEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRProbingAssemblyEnum interface [.NET Framework hosting]"
 ms.assetid: e7d3ccab-b0f0-4872-8935-0ed72920171b

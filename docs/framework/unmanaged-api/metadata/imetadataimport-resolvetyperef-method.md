@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::ResolveTypeRef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ResolveTypeRef method [.NET Framework metadata]"
   - "IMetaDataImport::ResolveTypeRef method [.NET Framework metadata]"

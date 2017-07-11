@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Collect"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Collect method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::Collect method [.NET Framework hosting]"

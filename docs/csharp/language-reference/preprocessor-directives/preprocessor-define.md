@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#define"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#define directive [C#]"
 ms.assetid: 23638b8f-779c-450e-b600-d55682de7d01

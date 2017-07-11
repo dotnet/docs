@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "RichTextBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "RichTextBox control [Windows Forms], about RichTextBox control"
   - "text boxes, about text boxes"

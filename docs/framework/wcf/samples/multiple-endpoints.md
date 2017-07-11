@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "Multiple EndPoints"
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Timer"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Timer component [Windows Forms], about Timer components"
   - "timers, about timers"

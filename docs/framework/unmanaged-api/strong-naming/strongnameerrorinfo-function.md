@@ -21,8 +21,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameErrorInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameErrorInfo function [.NET Framework strong naming]"
 ms.assetid: e91bf8c3-7c26-4732-938e-2e5b04abfc99

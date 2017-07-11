@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ESymbolReadingPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ESymbolReadingPolicy enumeration [.NET Framework hosting]"
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17

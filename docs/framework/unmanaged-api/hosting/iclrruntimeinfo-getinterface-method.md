@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetInterface"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetInterface method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetInterface method [.NET Framework hosting]"

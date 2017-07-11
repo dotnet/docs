@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineConstant"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineConstant method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::DefineConstant method [.NET Framework debugging]"

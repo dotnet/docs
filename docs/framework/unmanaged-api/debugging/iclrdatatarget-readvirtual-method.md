@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget::ReadVirtual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReadVirtual method, ICLRDataTarget interface [.NET Framework debugging]"
   - "ICLRDataTarget::ReadVirtual method [.NET Framework debugging]"

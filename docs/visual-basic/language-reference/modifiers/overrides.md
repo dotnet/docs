@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Overrides"
   - "vb.Overrides"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "properties [Visual Basic], redefining"
   - "procedures, overriding"

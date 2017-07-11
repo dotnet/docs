@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Implements"
   - "Implements"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Implements statement, syntax"
   - "Implements statement"

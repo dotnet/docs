@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "attributes [Visual Basic]"
 ms.assetid: 5deb2b8a-1afd-4dbd-8ee8-f093d74ad0eb

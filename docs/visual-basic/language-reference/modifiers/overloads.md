@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Overloads"
   - "Overloads"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Overloads keyword"
   - "hiding by signature"

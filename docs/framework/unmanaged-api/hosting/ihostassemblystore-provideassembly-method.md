@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAssemblyStore::ProvideAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ProvideAssembly method [.NET Framework hosting]"
   - "IHostAssemblyStore::ProvideAssembly method [.NET Framework hosting]"

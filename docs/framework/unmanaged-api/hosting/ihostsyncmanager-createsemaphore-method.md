@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateSemaphore"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateSemaphore method [.NET Framework hosting]"
   - "IHostSyncManager::CreateSemaphore method [.NET Framework hosting]"

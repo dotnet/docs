@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerObjectEnum::Skip"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerObjectEnum::Skip method [.NET Framework profiling]"
   - "Skip method, ICorProfilerObjectEnum interface [.NET Framework profiling]"

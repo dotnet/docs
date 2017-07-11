@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "FileProperties.BuildAction"
   - "/doc"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "comments, C# code"
   - "XML documentation [C#], comments in source files"

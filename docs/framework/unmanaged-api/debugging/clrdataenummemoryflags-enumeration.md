@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLRDataEnumMemoryFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLRDataEnumMemoryFlags enumeration [.NET Framework debugging]"
 ms.assetid: e249f9fc-e24a-4506-903c-92781f6eab7c

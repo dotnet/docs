@@ -14,8 +14,6 @@ f1_keywords:
   - "vb.ForEachNext"
   - "vb.Each"
   - "ForEachNext"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "infinite loops"
   - "Next statement, For Each...Next"

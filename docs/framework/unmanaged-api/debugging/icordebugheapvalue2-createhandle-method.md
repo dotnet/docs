@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue2::CreateHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateHandle method [.NET Framework debugging]"
   - "ICorDebugHeapValue2::CreateHandle method [.NET Framework debugging]"

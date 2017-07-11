@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame2::GetStackParameterSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugNativeFrame2::GetStackParameterSize method [.NET Framework debugging]"
   - "GetStackParameterSize method [.NET Framework debugging]"

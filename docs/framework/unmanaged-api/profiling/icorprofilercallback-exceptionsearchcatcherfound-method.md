@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionSearchCatcherFound"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionSearchCatcherFound method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchCatcherFound method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::InitializeForEnc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedENCUpdate::InitializeForEnc method [.NET Framework debugging]"
   - "InitializeForEnc method [.NET Framework debugging]"

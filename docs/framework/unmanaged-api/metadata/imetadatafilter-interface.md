@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter interface [.NET Framework metadata]"
 ms.assetid: ec0856ef-8c56-40ba-bf60-86e0ce8b337f

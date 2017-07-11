@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMemoryManager interface [.NET Framework hosting]"
 ms.assetid: a945d439-3b34-4aa4-b575-8413dd7806ce

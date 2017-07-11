@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHandle method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetHandle method [.NET Framework debugging]"

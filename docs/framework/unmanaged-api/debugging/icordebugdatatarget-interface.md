@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugDataTarget"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugDataTarget interface [.NET Framework debugging]"
 ms.assetid: df5f05be-bed7-4f3c-bc89-dbb435d79a0b

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ImageList"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "collection controls, images"
   - "icon list control"

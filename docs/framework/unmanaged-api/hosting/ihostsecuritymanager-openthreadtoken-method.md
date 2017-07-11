@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityManager::OpenThreadToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostSecurityManager::OpenThreadToken method [.NET Framework hosting]"
   - "OpenThreadToken method [.NET Framework hosting]"

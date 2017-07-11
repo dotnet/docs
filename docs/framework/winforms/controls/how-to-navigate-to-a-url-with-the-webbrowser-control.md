@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "WebBrowser.Navigate"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms], examples"
   - "URLs, navigating to"

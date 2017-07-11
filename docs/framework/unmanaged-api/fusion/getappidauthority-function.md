@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAppIdAuthority"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAppIdAuthority function [.NET Framework fusion]"
 ms.assetid: 9f968dad-0d09-47fb-bebc-94c39a0d16ad

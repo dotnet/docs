@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetAssemblyRefProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport::GetAssemblyRefProps method [.NET Framework metadata]"
   - "GetAssemblyRefProps method [.NET Framework metadata]"

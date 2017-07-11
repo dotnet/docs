@@ -16,8 +16,6 @@ f1_keywords:
   - "User-Defined"
   - "vb.UserDefined"
   - "vb.User-Defined"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "user-defined data types, Visual Basic"
   - "user-defined types"

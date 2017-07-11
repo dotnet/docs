@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc32008"
   - "vbc32008"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32008"
 ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc

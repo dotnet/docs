@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::GetHashFromFileW"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHashFromFileW method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::GetHashFromFileW method [.NET Framework hosting]"

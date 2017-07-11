@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineField"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::DefineField method [.NET Framework debugging]"
   - "DefineField method, ISymUnmanagedWriter interface [.NET Framework debugging]"

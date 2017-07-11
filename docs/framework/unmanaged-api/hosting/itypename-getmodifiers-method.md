@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetModifiers"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetModifiers method [.NET Framework hosting]"
   - "GetModifiers method [.NET Framework hosting]"

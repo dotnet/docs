@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishAppDomain::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetName method, ICorPublishAppDomain interface [.NET Framework debugging]"
   - "ICorPublishAppDomain::GetName method [.NET Framework debugging]"

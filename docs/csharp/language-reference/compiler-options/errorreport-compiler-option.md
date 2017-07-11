@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/errorreport"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-errorreport compiler option [C#]"
   - "errorreport compiler option [C#]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::IsGlobal"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsGlobal method [.NET Framework metadata]"
   - "IMetaDataImport::IsGlobal method [.NET Framework metadata]"

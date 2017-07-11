@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRAppDomainResourceMonitor interface [.NET Framework hosting]"
 ms.assetid: 72fa83a1-8997-41d7-b355-ab177a24a303

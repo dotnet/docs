@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::GarbageCollectionFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback2::GarbageCollectionFinished method [.NET Framework profiling]"
   - "GarbageCollectionFinished method [.NET Framework profiling]"

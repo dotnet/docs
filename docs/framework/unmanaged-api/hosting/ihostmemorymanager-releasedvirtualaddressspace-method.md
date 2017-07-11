@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::ReleasedVirtualAddressSpace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReleasedVirtualAddressSpace method [.NET Framework hosting]"
   - "IHostMemoryManager::ReleasedVirtualAddressSpace method [.NET Framework hosting]"

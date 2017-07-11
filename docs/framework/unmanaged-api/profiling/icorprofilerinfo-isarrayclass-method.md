@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::IsArrayClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsArrayClass method [.NET Framework profiling]"
   - "ICorProfilerInfo::IsArrayClass method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebugManager interface [.NET Framework hosting]"
 ms.assetid: e835062c-c7d6-4945-8a44-2de7ebf3928e

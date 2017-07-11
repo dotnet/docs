@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly::GetCodeBase"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCodeBase method [.NET Framework debugging]"
   - "ICorDebugAssembly::GetCodeBase method [.NET Framework debugging]"

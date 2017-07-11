@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugInterfaceVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugInterfaceVersion enumeration [.NET Framework debugging]"
 ms.assetid: 7d1e6cd9-2a15-41c6-9b68-008705a4ed90

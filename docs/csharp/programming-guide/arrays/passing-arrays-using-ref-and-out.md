@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "arrays [C#], passing using ref and out"
 ms.assetid: 6a2b261e-a1cc-49a6-b4f0-6cacae385a1e

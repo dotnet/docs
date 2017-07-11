@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback3::ProfilerDetachSucceeded"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ProfilerDetachSucceeded method [.NET Framework profiling]"
   - "ICorProfilerCallback3::ProfilerDetachSucceeded method [.NET Framework profiling]"

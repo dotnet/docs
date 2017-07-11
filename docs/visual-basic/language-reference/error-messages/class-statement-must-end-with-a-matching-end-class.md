@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30481"
   - "bc30481"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30481"
 ms.assetid: 583f3029-bc3a-4e06-866f-92dbecc46f19

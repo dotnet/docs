@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerThreadEnum::Reset method [.NET Framework profiling]"
   - "Reset method, ICorProfilerThreadEnum interface [.NET Framework profiling]"

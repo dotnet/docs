@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "clauses [Visual Basic]"
 ms.assetid: 5e89f5f3-d129-4ed1-8857-30cd71cff95e

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ClassUnloadFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ClassUnloadFinished method [.NET Framework profiling]"
   - "ClassUnloadFinished method [.NET Framework profiling]"

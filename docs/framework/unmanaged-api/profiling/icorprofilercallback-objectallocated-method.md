@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ObjectAllocated"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ObjectAllocated method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectAllocated method [.NET Framework profiling]"

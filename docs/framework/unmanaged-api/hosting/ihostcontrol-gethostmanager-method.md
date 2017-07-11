@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostControl::GetHostManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHostManager method [.NET Framework hosting]"
   - "IHostControl::GetHostManager method [.NET Framework hosting]"

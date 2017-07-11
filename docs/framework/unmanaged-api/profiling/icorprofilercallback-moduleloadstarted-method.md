@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ModuleLoadStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ModuleLoadStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::ModuleLoadStarted method [.NET Framework profiling]"

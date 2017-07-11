@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedMethod::GetToken method [.NET Framework debugging]"
   - "GetToken method, ISymUnmanagedMethod interface [.NET Framework debugging]"

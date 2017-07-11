@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.GetXmlNamespace"
   - "GetXmlNamespace"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "GetXmlNamespace operator"
   - "GetXmlNamespace keyword"

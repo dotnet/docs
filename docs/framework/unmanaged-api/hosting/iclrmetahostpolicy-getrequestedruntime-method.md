@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHostPolicy::GetRequestedRuntime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRequestedRuntime method [.NET Framework hosting]"
   - "ICLRMetaHostPolicy::GetRequestedRuntime method [.NET Framework hosting]"

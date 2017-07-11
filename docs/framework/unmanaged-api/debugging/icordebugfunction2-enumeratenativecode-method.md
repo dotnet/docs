@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction2::EnumerateNativeCode"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunction2::EnumerateNativeCode method [.NET Framework debugging]"
   - "EnumerateNativeCode method [.NET Framework debugging]"

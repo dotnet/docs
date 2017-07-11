@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CondiitonalWeakTableElementReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ConditionalWeakTableElementReferences method, ICorProfilerCallback5 interface [.NET Framework profiling]"
   - "ICorProfilerCallback5::ConditionalWeakTableElementReferences method [.NET Framework profiling]"

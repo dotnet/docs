@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue2::GetVirtualMethodAndType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetVirtualMethodAndType method [.NET Framework debugging]"
   - "ICorDebugObjectValue2::GetVirtualMethodAndType method"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetNextBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataTables::GetNextBlob method [.NET Framework metadata]"
   - "GetNextBlob method [.NET Framework metadata]"

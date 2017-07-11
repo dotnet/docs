@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionIThisThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionIThisThread method [.NET Framework profiling]"
   - "GetInprocInspectionIThisThread method [.NET Framework profiling]"

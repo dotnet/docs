@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30766"
   - "vbc30766"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30766"
 ms.assetid: 13918600-6087-40d7-8134-32aa9d3bfda4

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::GetToken method [.NET Framework debugging]"
   - "GetToken method, ICorDebugModule interface [.NET Framework debugging]"

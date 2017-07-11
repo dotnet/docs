@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "byte"
   - "byte_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "byte keyword [C#]"
 ms.assetid: 111f1db9-ca32-4f0e-b497-4783517eda47

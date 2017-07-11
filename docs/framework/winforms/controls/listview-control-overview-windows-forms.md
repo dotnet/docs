@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ListView"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "lists"
   - "ListView control [Windows Forms], about ListView control"

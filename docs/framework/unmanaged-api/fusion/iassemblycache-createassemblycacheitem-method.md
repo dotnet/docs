@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCache::CreateAssemblyCacheItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyCache::CreateAssemblyCacheItem method [.NET Framework fusion]"
   - "CreateAssemblyCacheItem method [.NET Framework fusion]"

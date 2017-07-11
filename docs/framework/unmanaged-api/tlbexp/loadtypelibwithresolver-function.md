@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "LoadTypeLibWithResolver"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LoadTypeLibWithResolver function [.NET Framework]"
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a

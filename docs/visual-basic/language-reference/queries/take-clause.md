@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.QueryTake"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Take statement"
   - "queries [Visual Basic], Take"

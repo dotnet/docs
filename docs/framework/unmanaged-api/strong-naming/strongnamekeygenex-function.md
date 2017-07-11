@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameKeyGenEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameKeyGenEx function [.NET Framework strong naming]"
 ms.assetid: 36bd10b9-9857-45f3-8d3b-0da091d6169e

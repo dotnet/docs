@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::CopyMetaData"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueSnapshot::CopyMetaData method [.NET Framework debugging]"
   - "CopyMetaData method [.NET Framework debugging]"

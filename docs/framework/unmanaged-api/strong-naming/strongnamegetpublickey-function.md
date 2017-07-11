@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameGetPublicKey"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameGetPublicKey function [.NET Framework strong naming]"
 ms.assetid: 5b58c87f-3f72-40df-9b9a-291076931cc3

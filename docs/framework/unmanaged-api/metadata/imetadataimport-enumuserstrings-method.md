@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumUserStrings"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::EnumUserStrings method [.NET Framework metadata]"
   - "EnumUserStrings method [.NET Framework metadata]"

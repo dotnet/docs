@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySink2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifySink2 interface [.NET Framework debugging]"
 ms.assetid: c1018789-4206-455d-aacc-2d876fc0d0bb

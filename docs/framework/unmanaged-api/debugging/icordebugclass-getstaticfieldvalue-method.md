@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetStaticFieldValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStaticFieldValue method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetStaticFieldValue method [.NET Framework debugging]"

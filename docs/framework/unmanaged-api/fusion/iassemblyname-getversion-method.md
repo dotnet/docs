@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::GetVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyName::GetVersion method [.NET Framework fusion]"
   - "GetVersion method, IAssemblyName interface [.NET Framework fusion]"

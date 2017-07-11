@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetLanguageVendor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLanguageVendor method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetLanguageVendor method [.NET Framework debugging]"

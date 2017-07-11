@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::ThreadNameChanged"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadNameChanged method [.NET Framework profiling]"
   - "ICorProfilerCallback2::ThreadNameChanged method [.NET Framework profiling]"

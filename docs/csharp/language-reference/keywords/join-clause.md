@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "join"
   - "join_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "join clause [C#]"
   - "join keyword [C#]"

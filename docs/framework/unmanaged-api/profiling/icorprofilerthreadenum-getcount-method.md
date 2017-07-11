@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerThreadEnum::GetCount method [.NET Framework profiling]"
   - "GetCount method, ICorProfilerThreadEnum interface [.NET Framework profiling]"

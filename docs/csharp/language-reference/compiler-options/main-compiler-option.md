@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/main"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-main compiler option [C#]"
   - "main compiler option [C#]"

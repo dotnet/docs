@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::GetClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugObjectValue::GetClass method [.NET Framework debugging]"
   - "GetClass method, ICorDebugObjectValue interface [.NET Framework debugging]"

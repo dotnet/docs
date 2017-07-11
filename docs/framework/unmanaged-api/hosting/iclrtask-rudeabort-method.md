@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::RudeAbort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RudeAbort method, ICLRTask interface [.NET Framework hosting]"
   - "ICLRTask::RudeAbort method [.NET Framework hosting]"

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySelect"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Select statement"
   - "Select clause"

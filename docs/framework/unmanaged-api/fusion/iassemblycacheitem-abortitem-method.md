@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem::AbortItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AbortItem method [.NET Framework fusion]"
   - "IAssemblyCacheItem::AbortItem method [.NET Framework fusion]"

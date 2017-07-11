@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRGCManager::GetStats"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStats method, ICLRGCManager interface [.NET Framework hosting]"
   - "ICLRGCManager::GetStats method [.NET Framework hosting]"

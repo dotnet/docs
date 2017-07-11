@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::LocksHeld"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LocksHeld method [.NET Framework hosting]"
   - "ICLRTask::LocksHeld method [.NET Framework hosting]"

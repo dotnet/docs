@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "message contracts [WCF]"
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249

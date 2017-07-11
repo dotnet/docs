@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback5"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback5 interface [.NET Framework profiling]"
 ms.assetid: 61d2e9ef-5f1f-4771-8847-239616e35d84

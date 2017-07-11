@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::DefineGenericParam"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit2::DefineGenericParam method [.NET Framework metadata]"
   - "DefineGenericParam method [.NET Framework metadata]"

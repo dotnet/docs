@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "@_CSharpKeyword"
   - "@"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "@ special character [C#]"
   - "@ language element [C#]"

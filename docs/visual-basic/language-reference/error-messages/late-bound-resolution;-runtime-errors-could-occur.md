@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc42017"
   - "BC42017"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42017"
 ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a

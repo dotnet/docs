@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "generics [C#], vs. C++ templates"
 ms.assetid: 1da6beeb-d4a4-4da0-87b7-0cfbe04920b7

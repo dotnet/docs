@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::ThreadForFiberCookie"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::ThreadForFiberCookie method [.NET Framework debugging]"
   - "ThreadForFiberCookie method [.NET Framework debugging]"

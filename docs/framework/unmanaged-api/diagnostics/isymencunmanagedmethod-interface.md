@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymENCUnmanagedMethod interface [.NET Framework debugging]"
 ms.assetid: faebf594-67d5-4abf-b9c1-547fd3a1ff87

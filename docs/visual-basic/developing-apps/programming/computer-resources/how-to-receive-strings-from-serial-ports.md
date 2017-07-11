@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "serial ports, retrieving strings"
   - "strings [Visual Basic], retrieving from serial ports"

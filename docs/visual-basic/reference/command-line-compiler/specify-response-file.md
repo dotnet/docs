@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "@ (Specify Response File) compiler option [Visual Basic]"
 ms.assetid: a6847eaa-e5f9-4303-9421-45b55484b9ca

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugMDAFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugMDAFlags enumeration [.NET Framework debugging]"
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetCheckSum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocument::GetCheckSum method [.NET Framework debugging]"
   - "GetCheckSum method [.NET Framework debugging]"

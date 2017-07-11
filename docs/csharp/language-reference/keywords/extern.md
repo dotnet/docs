@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "extern_CSharpKeyword"
   - "extern"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "DllImport attribute"
   - "extern keyword [C#]"

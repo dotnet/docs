@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::SetCLRIoCompletionManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager::SetCLRIoCompletionManager method [.NET Framework hosting]"
   - "SetCLRIoCompletionManager method [.NET Framework hosting]"

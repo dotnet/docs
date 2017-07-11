@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILToNativeMapping"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetILToNativeMapping method, ICorProfilerInfo interface [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILToNativeMapping method [.NET Framework profiling]"

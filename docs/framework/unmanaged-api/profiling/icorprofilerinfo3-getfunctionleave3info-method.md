@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionLeave3Info"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionLeave3Info method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetFunctionLeave3Info method [.NET Framework profiling]"

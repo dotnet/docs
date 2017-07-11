@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugExceptionObjectValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugExceptionObjectValue interface [.NET Framework debugging]"
 ms.assetid: 43416dd5-8892-4106-9f59-f9143b19ddb4

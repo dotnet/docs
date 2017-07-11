@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "RegistryKey.CreateSubKey"
   - "RegistryKey.SetValue"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "registry keys, creating"
   - "registry, adding values"

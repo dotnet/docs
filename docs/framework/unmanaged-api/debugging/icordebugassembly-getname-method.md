@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssembly::GetName method [.NET Framework debugging]"
   - "GetName method, ICorDebugAssembly interface [.NET Framework debugging]"

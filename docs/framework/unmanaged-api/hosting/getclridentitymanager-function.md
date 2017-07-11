@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetCLRIdentityManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCLRIdentityManager function [.NET Framework hosting]"
 ms.assetid: 66eeca30-adb4-45f4-aff5-347564c95724

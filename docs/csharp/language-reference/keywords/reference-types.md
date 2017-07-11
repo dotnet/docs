@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.referencetypes"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "reference types [C#]"
   - "C# language, reference types"

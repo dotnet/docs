@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IInstallReferenceEnum::GetNextInstallReferenceItem"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IInstallReferenceEnum::GetNextInstallReferenceItem method [.NET Framework fusion]"
   - "GetNextInstallReferenceItem method [.NET Framework fusion]"

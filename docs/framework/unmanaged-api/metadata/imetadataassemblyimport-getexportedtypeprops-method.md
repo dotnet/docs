@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::GetExportedTypeProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetExportedTypeProps method [.NET Framework metadata]"

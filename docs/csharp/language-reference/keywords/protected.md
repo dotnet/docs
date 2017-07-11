@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "protected"
   - "protected_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "protected keyword [C#]"
 ms.assetid: 05ce3794-6675-4025-bddb-eaaa0ec22892

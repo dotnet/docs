@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_ARRAY_LAYOUT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_DEBUG_IL_TO_NATIVE_MAP structure [.NET Framework debugging]"
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8

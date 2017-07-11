@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.RaiseEventMethod"
   - "vb.RaiseEvent"
   - "RaiseEvent"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "raising events, RaiseEvent statement"
   - "RaiseEvent statement"

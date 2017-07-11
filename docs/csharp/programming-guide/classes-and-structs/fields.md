@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "fields [C#]"
 ms.assetid: 3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7

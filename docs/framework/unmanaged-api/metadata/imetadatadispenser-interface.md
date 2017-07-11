@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenser"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataDispenser interface [.NET Framework metadata]"
 ms.assetid: 989840b3-9822-4ce5-a6c5-b375d3340a7a

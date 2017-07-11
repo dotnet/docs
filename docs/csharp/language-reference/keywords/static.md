@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "static"
   - "static_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "static keyword [C#]"
 ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf

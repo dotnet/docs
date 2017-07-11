@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::HandleDestroyed"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback2::HandleDestroyed method [.NET Framework profiling]"
   - "HandleDestroyed method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetClassLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SetClassLayout method [.NET Framework metadata]"
   - "SetClassLayout method [.NET Framework metadata]"

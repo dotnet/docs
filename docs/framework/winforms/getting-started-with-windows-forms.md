@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Designer_System.Windows.Forms.Design.FormDocumentDesigner"
   - "vb.wfc.formdesigner"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Windows Forms, getting started"
   - "getting started, Windows Forms"

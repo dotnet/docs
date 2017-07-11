@@ -12,8 +12,6 @@ ms.topic: "get-started-article"
 f1_keywords: 
   - "cs.program"
   - "vs.csharp.startpage.firstapplication"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "examples [C#], Hello World"
   - "Hello World example [C#]"

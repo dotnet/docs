@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAddressField3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedVariable::GetAddressField3 method [.NET Framework debugging]"
   - "GetAddressField3 method [.NET Framework debugging]"

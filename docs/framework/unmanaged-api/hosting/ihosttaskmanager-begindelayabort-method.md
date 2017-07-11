@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::BeginDelayAbort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "BeginDelayAbort method [.NET Framework hosting]"
   - "IHostTaskManager::BeginDelayAbort method [.NET Framework hosting]"

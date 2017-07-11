@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::GetMemStats"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::GetMemStats method [.NET Framework hosting]"
   - "GetMemStats method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::SaveDeltaToMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SaveDeltaToMemory method [.NET Framework metadata]"
   - "IMetaDataEmit2::SaveDeltaToMemory method [.NET Framework metadata]"

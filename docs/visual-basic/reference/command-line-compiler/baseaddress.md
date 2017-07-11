@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/baseaddress"
   - "baseaddress"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-baseaddress compiler option [Visual Basic]"
   - "/baseaddress compiler option [Visual Basic]"

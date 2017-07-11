@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/highentropyva"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/highentropyva compiler option [C#]"
   - "-highentropyva compiler option [C#]"

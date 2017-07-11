@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetHistoryFileDirectory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHistoryFileDirectory function [.NET Framework fusion]"
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672

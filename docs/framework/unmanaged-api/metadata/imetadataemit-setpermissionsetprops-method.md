@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetPermissionSetProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetPermissionSetProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetPermissionSetProps method [.NET Framework metadata]"

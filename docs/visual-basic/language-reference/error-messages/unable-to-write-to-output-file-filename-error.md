@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc31019"
   - "bc31019"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31019"
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef

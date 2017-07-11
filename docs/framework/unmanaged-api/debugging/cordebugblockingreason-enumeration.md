@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugBlockingReason"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugBlockingReason enumeration [.NET Framework debugging]"
 ms.assetid: a6ac2531-ddfe-46fd-88fe-8b1eabe0b255

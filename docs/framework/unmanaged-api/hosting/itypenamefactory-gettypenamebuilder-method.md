@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetTypeNameBuilder"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameFactory::GetTypeNameBuilder method [.NET Framework hosting]"
   - "GetTypeNameBuilder method [.NET Framework hosting]"

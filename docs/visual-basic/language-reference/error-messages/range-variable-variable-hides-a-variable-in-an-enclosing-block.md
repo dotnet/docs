@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc36633"
   - "vbc36633"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC36633"
 ms.assetid: 5d5470e4-3de5-49c2-8831-1087625f4a77

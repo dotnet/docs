@@ -14,8 +14,6 @@ f1_keywords:
   - "vb.Rem"
   - "Rem"
   - "'"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "REM statement"
   - "comments, Visual Basic code"

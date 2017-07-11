@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetHashFromBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetHashFromBlob function [.NET Framework strong naming]"
 ms.assetid: b712d862-f2d0-4b55-87d4-65bbeadef982

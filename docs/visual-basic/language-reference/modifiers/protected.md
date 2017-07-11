@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Protected"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Protected Friend keyword combination"
   - "Protected keyword, and Friend"

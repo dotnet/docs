@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SuspensionEnding"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCThreadControl::SuspensionEnding method [.NET Framework hosting]"
   - "SuspensionEnding method, IGCThreadControl interface [.NET Framework hosting]"

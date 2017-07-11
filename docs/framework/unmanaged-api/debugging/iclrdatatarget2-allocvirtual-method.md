@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataTarget2::AllocVirtual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataTarget2::AllocVirtual method [.NET Framework debugging]"
   - "AllocVirtual method [.NET Framework debugging]"

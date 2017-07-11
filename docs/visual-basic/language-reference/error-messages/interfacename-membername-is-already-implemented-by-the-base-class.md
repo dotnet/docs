@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc42015"
   - "bc42015"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42015"
 ms.assetid: 658c070a-113e-4bd8-b294-12c243191160

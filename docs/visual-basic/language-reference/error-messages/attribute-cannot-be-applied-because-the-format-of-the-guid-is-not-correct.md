@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc32500"
   - "bc32500"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32500"
 ms.assetid: 6fa34c55-368e-4d7d-b488-07a3fffe045f

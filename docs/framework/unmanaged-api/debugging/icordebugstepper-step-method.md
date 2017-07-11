@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper::Step"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Step method, ICorDebugStepper interface [.NET Framework debugging]"
   - "ICorDebugStepper::Step method [.NET Framework debugging]"

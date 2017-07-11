@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.properties"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "properties [C#]"
   - "C# language, properties"

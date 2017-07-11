@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::MDANotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "MDANotification method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::MDANotification method [.NET Framework debugging]"

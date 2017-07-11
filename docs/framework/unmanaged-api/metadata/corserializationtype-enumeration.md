@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSerializationType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorSerializationType enumeration [.NET Framework metadata]"
 ms.assetid: 6b1fcd11-c7fb-4be2-8910-abc862d4caf4

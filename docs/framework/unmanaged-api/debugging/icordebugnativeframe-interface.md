@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugNativeFrame interface [.NET Framework debugging]"
 ms.assetid: 04819c58-7246-4b32-befb-680cf1dbc436

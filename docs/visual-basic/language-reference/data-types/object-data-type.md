@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Object"
   - "vb.Variant"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "object variables, Object type"
   - "data types [Visual Basic], assigning"

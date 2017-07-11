@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyDescendantsAxis"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, accessing XML"
   - "XML descendant axis property [Visual Basic]"

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TreeView"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "TreeView control [Windows Forms], about TreeView control"
 ms.assetid: 0ece823a-9508-478a-bbdb-7d7c3bae51d5

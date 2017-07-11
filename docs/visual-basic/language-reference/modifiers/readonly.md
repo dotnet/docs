@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.ReadOnly"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "ReadOnly keyword"
   - "variables [Visual Basic], read-only"

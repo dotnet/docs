@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "internal_CSharpKeyword"
   - "internal"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "internal keyword [C#]"
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461

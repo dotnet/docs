@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorCallingConvention"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorCallingConvention enumeration [.NET Framework metadata]"
 ms.assetid: 69156fbf-7219-43bf-b4b8-b13f1a2fcb86

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction2::SetJMCStatus"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunction2::SetJMCStatus method [.NET Framework debugging]"
   - "SetJMCStatus method, ICorDebugFunction2 interface [.NET Framework debugging]"

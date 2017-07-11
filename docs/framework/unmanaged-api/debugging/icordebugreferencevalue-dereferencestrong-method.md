@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugReferenceValue::DereferenceStrong"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugReferenceValue::DereferenceStrong method [.NET Framework debugging]"
   - "DereferenceStrong method [.NET Framework debugging]"

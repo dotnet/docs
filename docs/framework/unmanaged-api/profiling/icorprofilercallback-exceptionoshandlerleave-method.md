@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionOSHandlerLeave"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionOSHandlerLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionOSHandlerLeave method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetTypeID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess5::GetTypeID method [.NET Framework debugging]"
   - "GetTypeID method, ICorDebugProcess5 interface [.NET Framework debugging]"

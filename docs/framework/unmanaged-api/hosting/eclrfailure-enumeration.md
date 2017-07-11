@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EClrFailure"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EClrFailure enumeration [.NET Framework hosting]"
 ms.assetid: 37b95cce-9bfb-4ecf-a00b-33dcba782c67

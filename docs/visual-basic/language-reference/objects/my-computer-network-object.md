@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.Computer.Network object"
 ms.assetid: 94ddbade-aff1-42f8-a6c8-88b78c28c0db

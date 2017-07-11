@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetArrayLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess5::GetArrayLayout method [.NET Framework debugging]"
   - "GetArrayLayout method, ICorDebugProcess5 interface [.NET Framework debugging]"

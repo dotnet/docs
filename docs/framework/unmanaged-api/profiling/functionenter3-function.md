@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionEnter3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionEnter3 function [.NET Framework profiling]"
 ms.assetid: ef782c53-dae7-4990-b4ad-fddb1e690d4e

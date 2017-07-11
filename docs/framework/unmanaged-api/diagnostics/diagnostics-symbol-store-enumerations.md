@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "unmanaged enumerations [.NET Framework], diagnostics symbol store"
   - "unmanaged enumerations [.NET Framework], debugging"

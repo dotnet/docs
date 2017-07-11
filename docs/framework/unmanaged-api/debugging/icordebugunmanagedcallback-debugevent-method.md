@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugUnmanagedCallback::DebugEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DebugEvent method [.NET Framework debugging]"
   - "ICorDebugUnmanagedCallback::DebugEvent method [.NET Framework debugging]"

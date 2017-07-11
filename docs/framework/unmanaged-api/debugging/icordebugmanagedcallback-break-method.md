@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::Break"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Break method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::Break method [.NET Framework debugging]"

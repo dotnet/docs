@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCache::UninstallAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UninstallAssembly method [.NET Framework fusion]"
   - "IAssemblyCache::UninstallAssembly method [.NET Framework fusion]"

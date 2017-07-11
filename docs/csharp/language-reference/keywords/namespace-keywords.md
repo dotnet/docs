@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "namespaces [C#], keywords"
 ms.assetid: 091a66eb-b10d-4f54-9102-5ac0d4bdb84b

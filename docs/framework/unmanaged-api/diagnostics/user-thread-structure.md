@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "USER_THREAD"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "USER_THREAD structure [.NET Framework debugging]"
 ms.assetid: a57c7d71-c4b0-41f9-a964-0c5ee84a3124

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDataEnumMemoryRegions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDataEnumMemoryRegions interface [.NET Framework debugging]"
 ms.assetid: a453f75a-c37b-4013-8f0e-35771fa5d792

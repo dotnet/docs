@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Ansi"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Declare statement, marshaling strings"
   - "ANSI, Visual Basic"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRGCManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRGCManager interface [.NET Framework hosting]"
 ms.assetid: fb511c9b-3fe4-41b0-822a-6ba4a079d1f5

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetNativeCode"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNativeCode method [.NET Framework debugging]"
   - "ICorDebugFunction::GetNativeCode method [.NET Framework debugging]"

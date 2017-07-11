@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetArrayObjectInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetArrayObjectInfo method [.NET Framework profiling]"
   - "GetArrayObjectInfo method [.NET Framework profiling]"

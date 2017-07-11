@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "constants"
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9

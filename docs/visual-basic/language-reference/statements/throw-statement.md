@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Throw"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "structured exception handling, throw statements"
   - "try-catch exception handling, throw statements"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetGCHeapInformation"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess5::GetGCHeapInformation method [.NET Framework debugging]"
   - "GetGCHeapInformation method, ICorDebugProcess5 interface [.NET Framework debugging]"

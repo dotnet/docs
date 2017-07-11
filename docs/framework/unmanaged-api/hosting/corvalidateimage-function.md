@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "_CorValidateImage"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_CorValidateImage function [.NET Framework hosting]"
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c

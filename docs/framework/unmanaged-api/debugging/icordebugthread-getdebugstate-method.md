@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetDebugState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDebugState method [.NET Framework debugging]"
   - "ICorDebugThread::GetDebugState method [.NET Framework debugging]"

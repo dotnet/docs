@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewObjectNoConstructor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewObjectNoConstructor method [.NET Framework debugging]"
   - "ICorDebugEval::NewObjectNoConstructor method [.NET Framework debugging]"

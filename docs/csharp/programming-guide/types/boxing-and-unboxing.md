@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.boxing"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, boxing"
   - "C# language, unboxing"

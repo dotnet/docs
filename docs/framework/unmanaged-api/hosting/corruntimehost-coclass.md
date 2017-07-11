@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorRuntimeHost"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CoRuntimeHost coclass [.NET Framework hosting]"
 ms.assetid: 5833740b-7d67-44b4-865c-b5bf45e291e3

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainShutdownStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AppDomainShutdownStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainShutdownStarted method [.NET Framework profiling]"

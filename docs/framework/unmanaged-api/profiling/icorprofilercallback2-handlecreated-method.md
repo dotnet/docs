@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback2::HandleCreated"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "HandleCreated method [.NET Framework profiling]"
   - "ICorProfilerCallback2::HandleCreated method [.NET Framework profiling]"

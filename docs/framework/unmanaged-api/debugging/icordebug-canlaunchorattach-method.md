@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::CanLaunchOrAttach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug::CanLaunchOrAttach method [.NET Framework debugging]"
   - "CanLaunchOrAttach method [.NET Framework debugging]"

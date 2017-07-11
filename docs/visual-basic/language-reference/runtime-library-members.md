@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "VisualBasic"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "run-time libraries, Visual Basic"
   - "libraries, Visual Basic run-time"

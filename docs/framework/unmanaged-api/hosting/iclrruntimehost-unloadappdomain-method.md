@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::UnloadAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::UnloadAppDomain method [.NET Framework hosting]"
   - "UnloadAppDomain method [.NET Framework hosting]"

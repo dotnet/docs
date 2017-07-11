@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "continue_CSharpKeyword"
   - "continue"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "continue keyword [C#]"
 ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0

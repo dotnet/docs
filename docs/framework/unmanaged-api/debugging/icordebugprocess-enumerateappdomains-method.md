@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess::EnumerateAppDomains"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess::EnumerateAppDomains method [.NET Framework debugging]"
   - "EnumerateAppDomains method [.NET Framework debugging]"

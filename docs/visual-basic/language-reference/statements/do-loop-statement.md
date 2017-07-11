@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.Do"
   - "vb.Loop"
   - "vb.Until"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "conditional statements, Do…Loop"
   - "while statement, Do...Loop"

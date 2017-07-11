@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
   - "ICorDebugILFrame::GetIP method [.NET Framework debugging]"

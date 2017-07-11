@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain3::GetCachedWinRTTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain3::GetCachedWinRTTypes method [.NET Framework debugging]"
   - "GetCachedWinRTTypes method, ICorDebugAppDomain3 interface [.NET Framework debugging]"

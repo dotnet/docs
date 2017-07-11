@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/preferreduilang"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "preferreduilang compiler option [C#]"
   - "/preferreduilang compiler option [C#]"

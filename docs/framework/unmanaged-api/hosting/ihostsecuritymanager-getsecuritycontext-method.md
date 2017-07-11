@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityManager::GetSecurityContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSecurityContext method [.NET Framework hosting]"
   - "IHostSecurityManager::GetSecurityContext method [.NET Framework hosting]"

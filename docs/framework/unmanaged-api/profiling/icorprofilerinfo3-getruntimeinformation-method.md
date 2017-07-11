@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetRuntimeInformation"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRuntimeInformation method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetRuntimeInformation method [.NET Framework profiling]"

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/langversion"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/langversion compiler option [C#]"
   - "-langversion compiler option [C#]"

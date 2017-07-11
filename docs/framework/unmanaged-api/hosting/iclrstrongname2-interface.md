@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName2 interface [.NET Framework hosting]"
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a

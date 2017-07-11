@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Class"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "class modules"
   - "Class statement"

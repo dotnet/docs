@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetBoxClassLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBoxClassLayout method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetBoxClassLayout method [.NET Framework profiling]"

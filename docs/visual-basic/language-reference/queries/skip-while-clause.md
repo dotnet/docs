@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.QuerySkipWhile"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Skip While statement"
   - "Skip While clause"

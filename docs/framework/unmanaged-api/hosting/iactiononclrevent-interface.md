@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IActionOnCLREvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IActionOnCLREvent interface [.NET Framework hosting]"
 ms.assetid: b5f9b41e-7301-429c-911f-21d5422292b3

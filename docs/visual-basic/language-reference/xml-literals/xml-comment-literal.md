@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralComment"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "comment literal [Visual Basic]"
   - "XML comments, adding [Visual Basic]"

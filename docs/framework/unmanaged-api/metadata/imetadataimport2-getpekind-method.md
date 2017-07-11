@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2::GetPEKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetPEKind method [.NET Framework metadata]"
   - "IMetaDataImport2::GetPEKind method [.NET Framework metadata]"

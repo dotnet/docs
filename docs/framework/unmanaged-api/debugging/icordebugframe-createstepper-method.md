@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFrame::CreateStepper"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFrame::CreateStepper method [.NET Framework debugging]"
   - "CreateStepper method, ICorDebugFrame interface [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RootReferences"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RootReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::RootReferences method [.NET Framework profiling]"

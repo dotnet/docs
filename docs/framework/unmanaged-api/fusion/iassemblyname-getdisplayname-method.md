@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::GetDisplayName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDisplayName method, IAssemblyName interface [.NET Framework fusion]"
   - "IAssemblyName::GetDisplayName method [.NET Framework fusion]"

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/exe"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "target compiler options [C#], /target:exe"
   - "/target compiler options [C#], /target:exe"

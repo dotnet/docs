@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetFieldRVA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SetFieldRVA method [.NET Framework metadata]"
   - "SetFieldRVA method [.NET Framework metadata]"

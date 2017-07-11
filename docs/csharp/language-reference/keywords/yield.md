@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "yield"
   - "yield_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "yield keyword [C#]"
 ms.assetid: 1089194f-9e53-46a2-8642-53ccbe9d414d

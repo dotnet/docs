@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetFileDef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFileDef method"
 ms.assetid: 4e3fbe6c-b82a-4181-ab17-7faa1263f5b3

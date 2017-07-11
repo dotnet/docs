@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ToolStripStatusLabel"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ToolStripStatusLabel control [Windows Forms], aboutToolStripStatusLabel control"
   - "status bars"

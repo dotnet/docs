@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Init"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Init method"
 ms.assetid: e48b5c64-049f-4f93-ad87-d07ae9cd5845

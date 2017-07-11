@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DateTimePicker"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "DateTimePicker control [Windows Forms], about"
   - "date and time picker controls"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::SetFunctionIDMapper2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetFunctionIDMapper2 method [.NET Framework profiling]"
   - "ICorProfilerInfo3::SetFunctionIDMapper2 method [.NET Framework profiling]"

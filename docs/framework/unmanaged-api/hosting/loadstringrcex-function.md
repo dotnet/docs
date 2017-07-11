@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "LoadStringRCEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LoadStringRCEx function [.NET Framework hosting]"
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495

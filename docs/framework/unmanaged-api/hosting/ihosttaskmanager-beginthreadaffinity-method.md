@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::BeginThreadAffinity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::BeginThreadAffinity method [.NET Framework hosting]"
   - "BeginThreadAffinity method [.NET Framework hosting]"

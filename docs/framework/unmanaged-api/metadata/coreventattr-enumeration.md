@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorEventAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorEventAttr enumeration [.NET Framework metadata]"
 ms.assetid: dc2b3281-3820-487e-930d-350b66dc6417

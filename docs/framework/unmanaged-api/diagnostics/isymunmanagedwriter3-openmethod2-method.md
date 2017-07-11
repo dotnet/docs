@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter3::OpenMethod2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter3::OpenMethod2 method [.NET Framework debugging]"
   - "OpenMethod2 method [.NET Framework debugging]"

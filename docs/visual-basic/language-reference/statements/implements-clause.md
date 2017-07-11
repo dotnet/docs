@@ -9,8 +9,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.ImplementsClause"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "interface implementation, reimplementation"
   - "interface members, reimplementation"

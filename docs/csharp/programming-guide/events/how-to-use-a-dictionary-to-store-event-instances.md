@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "events [C#], storing instances in a Dictionary"
 ms.assetid: 9512c64d-5aaf-40cd-b941-ca2a592f0064

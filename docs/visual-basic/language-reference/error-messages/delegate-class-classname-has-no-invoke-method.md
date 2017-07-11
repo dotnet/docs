@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30220"
   - "bc30220"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30220"
 ms.assetid: 6be0d61c-f2f9-4f9b-ab90-8871a0d7206d

@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#endregion"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#endregion directive [C#]"
 ms.assetid: 16099660-91b2-49e5-9646-77f9ef069526

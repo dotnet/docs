@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineMethodImpl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineMethodImpl method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"

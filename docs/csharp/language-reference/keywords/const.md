@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "const_CSharpKeyword"
   - "const"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "const keyword [C#]"
 ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetDocuments"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDocuments method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetDocuments method [.NET Framework debugging]"

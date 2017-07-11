@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::IsEqual"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsEqual method [.NET Framework fusion]"
   - "IAssemblyName::IsEqual method [.NET Framework fusion]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStringValue::GetString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStringValue::GetString method [.NET Framework debugging]"
   - "GetString method, ICorDebugStringValue interface [.NET Framework debugging]"

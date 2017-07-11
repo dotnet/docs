@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "unsafe_CSharpKeyword"
   - "unsafe"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "unsafe keyword [C#]"
 ms.assetid: 7e818009-1c6e-4b9e-b769-3728a01586a0

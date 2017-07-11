@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetProcAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetProcAddress method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetProcAddress method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::FindAssembliesByName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindAssembliesByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindAssembliesByName method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublishProcess::EnumAppDomains"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumAppDomains method [.NET Framework debugging]"
   - "ICorPublishProcess::EnumAppDomains method [.NET Framework debugging]"

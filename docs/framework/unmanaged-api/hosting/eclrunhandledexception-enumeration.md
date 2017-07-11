@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EClrUnhandledException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EClrUnhandledException enumeration [.NET Framework hosting]"
 ms.assetid: d231044e-2b53-4836-93f9-8117ff0e5c3a

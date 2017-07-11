@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyOptions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Alink API, AssemblyOptions enumeration"
   - "AssemblyOptions enumeration"

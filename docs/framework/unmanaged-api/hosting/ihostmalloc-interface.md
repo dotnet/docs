@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMAlloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMAlloc interface [.NET Framework hosting]"
 ms.assetid: e3c6643b-6fc7-4a99-959d-4b7b4e63fdee

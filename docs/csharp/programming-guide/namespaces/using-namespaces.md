@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.names"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "fully qualified names [C#]"
   - "namespaces [C#], how to use"

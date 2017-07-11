@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "Main method [C#], return values"
 ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc

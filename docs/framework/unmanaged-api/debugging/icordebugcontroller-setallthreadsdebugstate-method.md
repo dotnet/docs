@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::SetAllThreadsDebugState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetAllThreadsDebugState method [.NET Framework debugging]"
   - "ICorDebugController::SetAllThreadsDebugState method [.NET Framework debugging]"

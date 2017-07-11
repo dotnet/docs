@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Static"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "static modifier"
   - "Static keyword"

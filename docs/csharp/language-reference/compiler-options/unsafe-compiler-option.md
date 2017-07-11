@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/unsafe"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-unsafe compiler option [C#]"
   - "unsafe compiler option [C#]"

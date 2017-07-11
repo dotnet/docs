@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IEnumReferenceIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IEnumReferenceIdentity interface [.NET Framework fusion]"
 ms.assetid: a17b3155-7216-4e16-8c9f-abce21f549e7

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain2::GetArrayOrPointerType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetArrayOrPointerType method [.NET Framework debugging]"
   - "ICorDebugAppDomain2::GetArrayOrPointerType method [.NET Framework debugging]"

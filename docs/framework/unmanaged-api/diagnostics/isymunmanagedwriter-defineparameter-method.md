@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineParameter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineParameter method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::DefineParameter method [.NET Framework debugging]"

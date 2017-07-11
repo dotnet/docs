@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "progress dialog [C#]"
 ms.assetid: 01b71fe7-8178-4dc8-aeb1-12053be7b51c

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Decimal"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "literal type characters, D"
   - "trailing zeros"

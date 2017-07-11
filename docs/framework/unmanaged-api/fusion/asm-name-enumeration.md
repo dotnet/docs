@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ASM_NAME"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ASM_NAME enumeration [.NET Framework fusion]"
 ms.assetid: c8b65b19-d777-428f-bc0c-0d84c78a37bc

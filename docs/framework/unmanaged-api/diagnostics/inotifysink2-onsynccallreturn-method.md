@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallReturn"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OnSyncCallReturn method [.NET Framework debugging]"
   - "INotifySink2::OnSyncCallReturn method [.NET Framework debugging]"

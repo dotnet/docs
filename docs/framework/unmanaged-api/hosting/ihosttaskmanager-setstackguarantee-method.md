@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::SetStackGuarantee"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::SetStackGuarantee method [.NET Framework hosting]"
   - "SetStackGuarantee method [.NET Framework hosting]"

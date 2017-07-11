@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostPolicyManager::OnFailure"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OnFailure method [.NET Framework hosting]"
   - "IHostPolicyManager::OnFailure method [.NET Framework hosting]"

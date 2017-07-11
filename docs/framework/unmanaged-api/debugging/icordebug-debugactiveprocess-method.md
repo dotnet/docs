@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::DebugActiveProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DebugActiveProcess method [.NET Framework debugging]"
   - "ICorDebug::DebugActiveProcess method [.NET Framework debugging]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Designer_GenerateMember"
   - "Designer_Modifiers"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "GenerateMember property"
   - "Modifiers property"

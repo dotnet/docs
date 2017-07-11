@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "inferring type information [LINQ in C#]"
   - "data sources [LINQ in C#], type relationships"

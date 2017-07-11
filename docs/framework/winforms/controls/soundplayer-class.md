@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "SoundPlayer"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "sounds, playing"
   - "SoundPlayer class"

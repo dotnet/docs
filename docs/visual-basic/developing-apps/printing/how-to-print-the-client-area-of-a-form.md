@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "client area, printing"
 ms.assetid: c06c9c0e-bc07-48cd-9596-e29a2ff96236

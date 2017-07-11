@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::GetDesiredNGENCompilerFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess2::GetDesiredNGENCompilerFlags method [.NET Framework debugging]"
   - "GetDesiredNGENCompilerFlags method [.NET Framework debugging]"

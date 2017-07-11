@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback2 interface [.NET Framework debugging]"
 ms.assetid: cf7b7cfa-1c4b-4d8c-be70-4f9ed15a788b

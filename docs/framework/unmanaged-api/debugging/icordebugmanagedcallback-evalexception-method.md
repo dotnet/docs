@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::EvalException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EvalException method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::EvalException method [.NET Framework debugging]"

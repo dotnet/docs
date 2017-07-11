@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorPropertyAttr"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorPropertyAttr enumeration [.NET Framework metadata]"
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12

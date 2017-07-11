@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::YieldTask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::YieldTask method [.NET Framework hosting]"
   - "YieldTask method [.NET Framework hosting]"

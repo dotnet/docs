@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "collection initializers [Visual Basic]"
 ms.assetid: f64b52c7-8b11-4410-93a6-cb3aeebcc772

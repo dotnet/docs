@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetSlotIndex"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetSlotIndex method [.NET Framework debugging]"
   - "GetSlotIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"

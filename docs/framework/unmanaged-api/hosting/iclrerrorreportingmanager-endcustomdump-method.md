@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRErrorReportingManager::EndCustomDump"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRErrorReportingManager::EndCustomDump method [.NET Framework hosting]"
   - "EndCustomDump method [.NET Framework hosting]"

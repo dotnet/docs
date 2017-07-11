@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetUserEntryPoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetUserEntryPoint method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetUserEntryPoint method [.NET Framework debugging]"

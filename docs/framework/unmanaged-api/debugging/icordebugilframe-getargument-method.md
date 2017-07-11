@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::GetArgument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetArgument method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetArgument method [.NET Framework debugging]"

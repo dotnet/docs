@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::GetCheckSumAlgorithmId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocument::GetCheckSumAlgorithmId method [.NET Framework debugging]"
   - "GetCheckSumAlgorithmId method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::GetReferenceValueFromGCHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetReferenceValueFromGCHandle method [.NET Framework debugging]"
   - "ICorDebugProcess2::GetReferenceValueFromGCHandle method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublish::EnumProcesses"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublish::EnumProcesses method [.NET Framework debugging]"
   - "EnumProcesses method [.NET Framework debugging]"

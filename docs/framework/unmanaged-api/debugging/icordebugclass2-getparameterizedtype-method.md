@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugClass2::GetParameterizedType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetParameterizedType method [.NET Framework debugging]"
   - "ICorDebugClass2::GetParameterizedType method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_CODEGEN_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_CODEGEN_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 3e184022-0247-4824-a23d-6b29593d8d01

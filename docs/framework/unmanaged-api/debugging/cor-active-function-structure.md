@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_ACTIVE_FUNCTION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_ACTIVE_FUNCTION structure [.NET Framework debugging]"
 ms.assetid: ed86185f-2152-459c-961f-10c06d62e83f

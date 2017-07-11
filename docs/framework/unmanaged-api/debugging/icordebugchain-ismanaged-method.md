@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugChain::IsManaged"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugChain::IsManaged method [.NET Framework debugging]"
   - "IsManaged method, ICorDebugChain interface [.NET Framework debugging]"

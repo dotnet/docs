@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::LoadErrorString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo::LoadErrorString method [.NET Framework hosting]"
   - "LoadErrorString method [.NET Framework hosting]"

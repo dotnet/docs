@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "generics [C#], at run time"
 ms.assetid: 119df7e6-9ceb-49df-af36-24f8f8c0747f

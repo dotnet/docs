@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetContextStaticAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetContextStaticAddress method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetContextStaticAddress method [.NET Framework profiling]"

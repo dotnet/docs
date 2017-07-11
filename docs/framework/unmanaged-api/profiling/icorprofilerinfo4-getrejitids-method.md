@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetReJITIDs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetReJITIDs method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetReJITIDs method [.NET Framework profiling]"

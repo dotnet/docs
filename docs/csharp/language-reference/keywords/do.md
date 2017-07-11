@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "do_CSharpKeyword"
   - "do"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "do keyword [C#]"
 ms.assetid: 50725f79-9ba6-4898-aa78-6e331568a1bb

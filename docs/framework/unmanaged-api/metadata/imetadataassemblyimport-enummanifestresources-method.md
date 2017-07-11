@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::EnumManifestResources"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyImport::EnumManifestResources method [.NET Framework metadata]"
   - "EnumManifestResources method [.NET Framework metadata]"

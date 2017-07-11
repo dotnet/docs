@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TrayIcon"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "status area icons"
   - "icons, adding to taskbar"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::CreateValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval::CreateValue method [.NET Framework debugging]"
   - "CreateValue method [.NET Framework debugging]"

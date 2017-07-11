@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "IALink2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IALink2 interface"
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891

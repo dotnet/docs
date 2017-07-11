@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "exception handling [C#], try/catch blocks"
   - "exceptions [C#], try/catch blocks"

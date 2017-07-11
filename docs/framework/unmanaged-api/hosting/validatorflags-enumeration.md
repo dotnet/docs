@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ValidatorFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ValidatorFlags enumeration [.NET Framework hosting]"
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad

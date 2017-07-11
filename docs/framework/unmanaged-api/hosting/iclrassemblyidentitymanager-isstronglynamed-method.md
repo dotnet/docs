@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::IsStronglyNamed"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsStronglyNamed method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::IsStronglyNamed method [.NET Framework hosting]"

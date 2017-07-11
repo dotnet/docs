@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetFileNameFromOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFileNameFromOffset method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetFileNameFromOffset method [.NET Framework debugging]"

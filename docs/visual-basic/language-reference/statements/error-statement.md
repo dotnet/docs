@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.error"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Error statement, syntax"
   - "Error statement"

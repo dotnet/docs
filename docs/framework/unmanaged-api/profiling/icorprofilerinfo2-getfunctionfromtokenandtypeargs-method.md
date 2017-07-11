@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs method [.NET Framework profiling]"
   - "GetFunctionFromTokenAndTypeArgs method [.NET Framework profiling]"

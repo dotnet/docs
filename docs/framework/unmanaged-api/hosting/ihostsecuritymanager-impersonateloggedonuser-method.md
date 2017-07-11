@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityManager::ImpersonateLoggedOnUser"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ImpersonateLoggedOnUser method [.NET Framework hosting]"
   - "IHostSecurityManager::ImpersonateLoggedOnUser method [.NET Framework hosting]"

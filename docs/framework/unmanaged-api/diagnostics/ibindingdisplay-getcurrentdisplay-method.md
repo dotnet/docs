@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IBindingDisplay::GetCurrentDisplay"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IBindingDisplay::GetCurrentDisplay method [.NET Framework debugging]"
   - "GetCurrentDisplay method [.NET Framework debugging]"

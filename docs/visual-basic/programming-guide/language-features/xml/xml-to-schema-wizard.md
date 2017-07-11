@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlToSchemaWizard"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML IntelliSense [Visual Basic]"
   - "XML [Visual Basic], IntelliSense"

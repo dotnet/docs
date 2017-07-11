@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "implicitly-typed local variables [C#], how to use"
 ms.assetid: 6b7354d2-af79-427a-b6a8-f74eb8fd0b91

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "checked"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "CheckBox control [Windows Forms], checked state"
   - "check boxes, using to set options"

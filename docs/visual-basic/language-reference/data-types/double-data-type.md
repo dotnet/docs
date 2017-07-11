@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Double"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "identifier type characters, #"
   - "trailing zeros"

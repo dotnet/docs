@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueSnapshot::GetRwDataRVA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRwDataRVA method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::GetRwDataRVA method [.NET Framework debugging]"

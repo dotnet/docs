@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"
 ms.assetid: 3cac4d25-d11f-4abd-9e7c-0f02e97ae06d

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetActiveChain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::GetActiveChain method [.NET Framework debugging]"
   - "GetActiveChain method [.NET Framework debugging]"

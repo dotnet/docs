@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "noconfig compiler option [Visual Basic]"
   - "-noconfig compiler option [Visual Basic]"

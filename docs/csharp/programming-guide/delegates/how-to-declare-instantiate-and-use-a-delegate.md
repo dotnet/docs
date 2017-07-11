@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae

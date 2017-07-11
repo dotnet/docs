@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "TypeOf"
   - "vb.TypeOf"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "types [Visual Basic], compatible"
   - "comparison operators"

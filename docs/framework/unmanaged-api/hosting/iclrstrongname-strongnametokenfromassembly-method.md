@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameTokenFromAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameTokenFromAssembly method [.NET Framework hosting]"
   - "StrongNameTokenFromAssembly method, ICLRStrongName interface [.NET Framework hosting]"

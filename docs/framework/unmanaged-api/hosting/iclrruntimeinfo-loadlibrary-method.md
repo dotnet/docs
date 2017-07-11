@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::LoadLibrary"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeInfo::LoadLibrary method [.NET Framework hosting]"
   - "LoadLibrary method [.NET Framework hosting]"

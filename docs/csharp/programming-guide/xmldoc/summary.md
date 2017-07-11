@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "<summary>"
   - "summary"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<summary> C# XML tag"
   - "summary C# XML tag"

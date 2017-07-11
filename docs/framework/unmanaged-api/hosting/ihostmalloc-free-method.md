@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMAlloc::Free"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostMAlloc::Free method [.NET Framework hosting]"
   - "Free method, IHostMAlloc interface [.NET Framework hosting]"

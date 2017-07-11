@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.LambdaFunction"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "functions [Visual Basic], lambda expressions"
   - "lambda expressions [Visual Basic]"

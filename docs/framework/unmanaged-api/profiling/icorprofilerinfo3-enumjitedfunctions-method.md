@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::EnumJITedFunctions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo3::EnumJITedFunctions method [.NET Framework profiling]"
   - "EnumJITedFunctions method [.NET Framework profiling]"

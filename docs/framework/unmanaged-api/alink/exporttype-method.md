@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ExportType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExportType method"
 ms.assetid: 91a7ce63-f5b8-4f16-b2c4-e1d0baa88944

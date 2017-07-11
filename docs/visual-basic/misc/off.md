@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Off"
   - "vb.Off"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Off keyword"
 ms.assetid: e0b5aa68-bde1-4cdd-b9e4-152798ae1b8b

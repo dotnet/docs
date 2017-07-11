@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "include"
   - "<include>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<include> C# XML tag"
   - "include C# XML tag"

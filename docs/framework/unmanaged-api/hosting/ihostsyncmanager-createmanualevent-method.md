@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateManualEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateManualEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateManualEvent method [.NET Framework hosting]"

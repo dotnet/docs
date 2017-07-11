@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My.Application.Log object"
 ms.assetid: 296147f9-1109-4a55-9b5e-047f1ab9466c

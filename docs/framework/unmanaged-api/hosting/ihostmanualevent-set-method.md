@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostManualEvent::Set"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Set method, IHostManualEvent interface [.NET Framework hosting]"
   - "IHostManualEvent::Set method [.NET Framework hosting]"

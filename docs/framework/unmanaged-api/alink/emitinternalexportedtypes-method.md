@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EmitInternalExportedTypes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmitInternalExportedTypes method"
 ms.assetid: 28c8b00d-2c14-40b4-aed5-a1db0e2428eb

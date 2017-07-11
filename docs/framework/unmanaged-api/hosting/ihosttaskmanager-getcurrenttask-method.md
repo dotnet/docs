@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::GetCurrentTask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentTask method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::GetCurrentTask method [.NET Framework hosting]"

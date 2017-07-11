@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.GoTo"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "GoTo statement"
   - "control flow, branching"

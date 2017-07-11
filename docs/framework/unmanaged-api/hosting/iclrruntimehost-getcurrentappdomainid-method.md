@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::GetCurrentAppDomainId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::GetCurrentAppDomainId method [.NET Framework hosting]"
   - "GetCurrentAppDomainId method [.NET Framework hosting]"

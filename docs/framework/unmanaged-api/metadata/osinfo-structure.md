@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "OSINFO"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OSINFO structure [.NET Framework metadata]"
 ms.assetid: fac7b480-7adb-4450-a5e9-690fed81ffae

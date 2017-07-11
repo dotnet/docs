@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::CanSetIP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CanSetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
   - "ICorDebugILFrame::CanSetIP method [.NET Framework debugging]"

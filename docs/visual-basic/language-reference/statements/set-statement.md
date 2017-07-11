@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Set"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "property procedures, Set statements"
   - "Set statement"

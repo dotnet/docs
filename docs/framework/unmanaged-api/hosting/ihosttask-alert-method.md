@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTask::Alert"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTask::Alert method [.NET Framework hosting]"
   - "Alert method, IHostTask interface [.NET Framework hosting]"

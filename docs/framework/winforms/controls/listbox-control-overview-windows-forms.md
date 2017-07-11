@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ListBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "list boxes, about list boxes"
   - "ListBox control [Windows Forms], about ListBox control"

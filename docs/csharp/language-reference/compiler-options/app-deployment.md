@@ -5,9 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-  - "CSharp"
 helpviewer_keywords: 
   - "deploying applications [C#]"
   - "Visual C#, deployment"

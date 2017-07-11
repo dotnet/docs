@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethodByVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedReader::GetMethodByVersion method [.NET Framework debugging]"
   - "GetMethodByVersion method [.NET Framework debugging]"

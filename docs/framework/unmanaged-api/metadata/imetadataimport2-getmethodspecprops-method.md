@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2::GetMethodSpecProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethodSpecProps method [.NET Framework metadata]"
   - "IMetaDataImport2::GetMethodSpecProps method [.NET Framework metadata]"

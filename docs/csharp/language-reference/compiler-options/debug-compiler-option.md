@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/debug"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "debug compiler option [C#]"
   - "-debug compiler option [C#]"

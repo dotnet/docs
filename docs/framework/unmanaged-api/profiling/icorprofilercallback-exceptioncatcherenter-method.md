@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionCatcherEnter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ExceptionCatcherEnter method [.NET Framework profiling]"
   - "ExceptionCatcherEnter method [.NET Framework profiling]"

@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.istrue"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "IsTrue operator"
   - "OrElse operator [Visual Basic]"

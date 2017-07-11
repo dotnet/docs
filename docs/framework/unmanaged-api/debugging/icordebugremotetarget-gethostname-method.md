@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRemoteTarget::GetHostName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugRemoteTarget::GetHostName method [.NET Framework debugging]"
   - "GetHostName method, ICorDebugRemoteTarget interface [.NET Framework debugging]"

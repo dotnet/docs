@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.special characters"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "special characters [C#]"
   - "C# language, special characters"

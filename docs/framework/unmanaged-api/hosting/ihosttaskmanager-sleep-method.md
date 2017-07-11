@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::Sleep"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::Sleep method [.NET Framework hosting]"
   - "Sleep method, IHostTaskManager interface [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetStats"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStats method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::GetStats method [.NET Framework hosting]"

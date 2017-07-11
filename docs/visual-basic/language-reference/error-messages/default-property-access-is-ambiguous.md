@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30686"
   - "bc30686"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30686"
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439

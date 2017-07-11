@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PrintDocument"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "PrintDocument component [Windows Forms], about PrintDocument component"
   - "printing [Windows Forms], PrintDocument component"

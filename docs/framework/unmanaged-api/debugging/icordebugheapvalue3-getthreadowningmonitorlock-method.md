@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue3::GetThreadOwningMonitorLock"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetThreadOwningMonitorLock method [.NET Framework debugging]"
   - "ICorDebugHeapValue3::GetThreadOwningMonitorLock method [.NET Framework debugging]"

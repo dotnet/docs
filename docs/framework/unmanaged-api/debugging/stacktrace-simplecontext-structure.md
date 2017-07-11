@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SimpleContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SimpleContext structure [.NET Framework debugging]"
   - "StackTrace_SimpleContext structure [.NET Framework debugging]"

@@ -5,8 +5,6 @@ ms.prod: VB
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "VB6 support"
   - "Visual Basic 6.0 support"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread4::HadUnhandledException"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread4::HadUnhandledException method [.NET Framework debugging]"
   - "HadUnhandledException method [.NET Framework debugging]"

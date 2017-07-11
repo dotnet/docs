@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetGCHostControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorConfiguration::SetGCHostControl method [.NET Framework hosting]"
   - "SetGCHostControl method [.NET Framework hosting]"

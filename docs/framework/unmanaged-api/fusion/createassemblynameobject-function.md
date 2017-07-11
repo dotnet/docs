@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateAssemblyNameObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateAssemblyNameObject function [.NET Framework fusion]"
 ms.assetid: 55c8b41e-fbe4-4ae0-aa29-68fbb2311691

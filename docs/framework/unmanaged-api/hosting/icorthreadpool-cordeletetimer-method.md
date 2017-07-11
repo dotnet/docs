@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDeleteTimer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorThreadpool::CorDeleteTimer method [.NET Framework hosting]"
   - "CorDeleteTimer method [.NET Framework hosting]"

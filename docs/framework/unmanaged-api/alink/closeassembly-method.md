@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CloseAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CloseAssembly method"
 ms.assetid: f66a43bc-a5c5-4190-acbe-63fd27640634

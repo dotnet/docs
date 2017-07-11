@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "registry, Visual Basic"
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56

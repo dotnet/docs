@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "<value>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<value> C# XML tag"
   - "value C# XML tag"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::ExecuteInDefaultAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::ExecuteInDefaultAppDomain method [.NET Framework hosting]"
   - "ExecuteInDefaultAppDomain method [.NET Framework hosting]"

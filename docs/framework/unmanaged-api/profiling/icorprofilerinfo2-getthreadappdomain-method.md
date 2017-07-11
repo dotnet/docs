@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetThreadAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetThreadAppDomain method [.NET Framework profiling]"
   - "GetThreadAppDomain method [.NET Framework profiling]"

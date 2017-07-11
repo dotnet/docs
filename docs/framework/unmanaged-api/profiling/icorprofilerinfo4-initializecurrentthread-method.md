@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::InitializeCurrentThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo4::InitializeCurrentThread method [.NET Framework profiling]"
   - "InitializeCurrentThread method, ICorProfilerInfo4 interface [.NET Framework profiling]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc40035"
   - "bc40035"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC40035"
 ms.assetid: 50a66dbe-2c1e-41bf-96bc-369301c891ac

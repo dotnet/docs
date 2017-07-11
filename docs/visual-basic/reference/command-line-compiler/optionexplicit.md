@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/optionexplicit"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/optionexplicit compiler option [Visual Basic]"
   - "optionexplicit compiler option [Visual Basic]"

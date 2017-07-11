@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RuntimeThreadResumed"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::RuntimeThreadResumed method [.NET Framework profiling]"
   - "RuntimeThreadResumed method [.NET Framework profiling]"

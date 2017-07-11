@@ -5,9 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "error-reference"
-dev_langs: 
-  - "CSharp"
-  - "CSharp"
 helpviewer_keywords: 
   - "C# language, compiler errors"
   - "Visual C# compiler, errors"

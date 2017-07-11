@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetFunctionEnter3Info"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionEnter3Info method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetFunctionEnter3Info method [.NET Framework profiling]"

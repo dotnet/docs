@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerObjectEnum::GetCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerObjectEnum::GetCount method [.NET Framework profiling]"
   - "GetCount method, ICorProfilerObjectEnum interface [.NET Framework profiling]"

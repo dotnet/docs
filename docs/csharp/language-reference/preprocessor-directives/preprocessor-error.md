@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#error"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#error directive [C#]"
 ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b

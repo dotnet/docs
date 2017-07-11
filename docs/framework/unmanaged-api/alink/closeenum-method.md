@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CloseEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CloseEnum method"
 ms.assetid: aa4a091e-13fe-4264-91de-e12f1c767c87

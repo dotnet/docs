@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::EnumThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo4::EnumThreads method [.NET Framework profiling]"
   - "EnumThreads method, ICorProfilerInfo4 interface [.NET Framework profiling]"

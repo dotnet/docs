@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ContextMenuStrip"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "context menus, ContextMenuStrip control [Windows Forms]"
   - "shortcut menus, ContextMenuStrip control [Windows Forms]"

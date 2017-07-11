@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "decimal_CSharpKeyword"
   - "decimal"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "decimal keyword [C#]"
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1

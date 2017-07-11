@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITCompilationStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "JITCompilationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCompilationStarted method [.NET Framework profiling]"

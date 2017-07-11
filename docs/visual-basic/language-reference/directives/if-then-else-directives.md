@@ -17,8 +17,6 @@ f1_keywords:
   - "vb.#ElseIf"
   - "vb.#Else"
   - "vb.#If"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, compiling"
   - "#If directive [Visual Basic]"

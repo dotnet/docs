@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::GetCORSystemDirectory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataDispenserEx::GetCORSystemDirectory method [.NET Framework metadata]"
   - "GetCORSystemDirectory method [.NET Framework metadata]"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "orderby"
   - "orderby_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "orderby clause [C#]"
   - "orderby keyword [C#]"

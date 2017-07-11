@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddFile2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AddFile2 method"
 ms.assetid: 03bc49bf-a89b-4fb6-a88d-97482e061195

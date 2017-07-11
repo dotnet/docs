@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostGCManager::SuspensionStarting"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SuspensionStarting method, IHostGCManager interface [.NET Framework hosting]"
   - "IHostGCManager::SuspensionStarting method [.NET Framework hosting]"

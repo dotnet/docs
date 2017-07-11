@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::SetMethodSourceRange"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetMethodSourceRange method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::SetMethodSourceRange method [.NET Framework debugging]"

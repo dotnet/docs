@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc36548"
   - "vbc36548"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC36548"
 ms.assetid: 27de068f-080e-4160-86bf-1ec23fd1925a

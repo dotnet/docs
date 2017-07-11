@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedSourceServerModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedSourceServerModule interface [.NET Framework debugging]"
 ms.assetid: a19b23bd-2061-476e-b67d-252f57404f8b

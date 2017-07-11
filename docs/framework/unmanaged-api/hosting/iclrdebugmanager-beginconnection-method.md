@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::BeginConnection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebugManager::BeginConnection method [.NET Framework hosting]"
   - "BeginConnection method [.NET Framework hosting]"

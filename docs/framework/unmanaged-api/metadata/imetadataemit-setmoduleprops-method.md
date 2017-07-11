@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetModuleProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetModuleProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetModuleProps method [.NET Framework metadata]"

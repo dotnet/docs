@@ -14,8 +14,6 @@ f1_keywords:
   - "vb.Then"
   - "vb.If"
   - "vb.EndIf"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "ElseIf statement, If...Then...Else"
   - "Then statement, If...Then...Else"

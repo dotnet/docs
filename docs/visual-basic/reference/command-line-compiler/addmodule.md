@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/addmodule compiler option [Visual Basic]"
   - "addmodule compiler option [Visual Basic]"

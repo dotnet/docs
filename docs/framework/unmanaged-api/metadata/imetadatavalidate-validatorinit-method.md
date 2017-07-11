@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataValidate::ValidatorInit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataValidate::ValidatorInit method [.NET Framework metadata]"
   - "ValidatorInit method [.NET Framework metadata]"

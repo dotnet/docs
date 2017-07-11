@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugNGenPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugNgenPolicy enumeration [.NET Framework debugging]"
 ms.assetid: edb4e4d2-3166-44d4-8b17-bf302f7ea093

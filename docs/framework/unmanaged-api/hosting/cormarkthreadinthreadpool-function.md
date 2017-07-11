@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CorMarkThreadInThreadPool"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorMarkThreadInThreadPool function [.NET Framework hosting]"
 ms.assetid: 3f958d41-e82e-4ec3-ae6f-16c7b3b31e3e

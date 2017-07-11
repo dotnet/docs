@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetThreadStaticAddress2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo3::GetThreadStaticAddress2 method [.NET Framework profiling]"
   - "GetThreadStaticAddress2 method [.NET Framework profiling]"

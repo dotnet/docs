@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetStaticFieldInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetStaticFieldInfo method [.NET Framework profiling]"
   - "GetStaticFieldInfo method [.NET Framework profiling]"

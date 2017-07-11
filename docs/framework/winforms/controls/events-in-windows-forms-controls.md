@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "events [Windows Forms], custom controls (using code)"
   - "custom controls [Windows Forms], events overview (using code)"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.SyncLock"
   - "SyncLock"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "threading [Visual Basic], locks"
   - "SyncLock statement"

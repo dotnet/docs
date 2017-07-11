@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "MustInherit"
   - "vb.MustInherit"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "classes [Visual Basic], abstract"
   - "MustInherit classes, MustInherit keyword"

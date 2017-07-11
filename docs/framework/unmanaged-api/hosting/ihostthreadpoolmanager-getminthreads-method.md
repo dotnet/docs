@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::GetMinThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostThreadPoolManager::GetMinThreads method [.NET Framework hosting]"
   - "GetMinThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"

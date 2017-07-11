@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "I/O [C#]"
 ms.assetid: 62e52cd7-9597-4e4a-acf9-1315f5cdbf05

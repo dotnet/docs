@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "StringFormat.FormatFlags"
   - "Graphics.DrawString"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "text [Windows Forms], drawing vertical"
   - "strings [Windows Forms], drawing vertical"

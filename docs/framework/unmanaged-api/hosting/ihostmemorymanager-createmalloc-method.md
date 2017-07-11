@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMemoryManager::CreateMAlloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::CreateMAlloc method [.NET Framework hosting]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "string functions"
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8

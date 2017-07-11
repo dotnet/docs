@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "WriteOnly"
   - "vb.WriteOnly"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "write-only properties"
   - "WriteOnly keyword"

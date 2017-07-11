@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostMAlloc::DebugAlloc"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DebugAlloc method [.NET Framework hosting]"
   - "IHostMAlloc::DebugAlloc method [.NET Framework hosting]"

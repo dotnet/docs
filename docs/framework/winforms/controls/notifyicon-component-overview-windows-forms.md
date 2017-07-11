@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "NotifyIcon"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "NotifyIcon component, about NotifyIcon component"
   - "system tray icons, about system tray icons"

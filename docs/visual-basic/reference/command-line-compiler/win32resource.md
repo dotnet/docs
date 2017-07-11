@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/win32resource"
   - "win32resource"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/win32resource compiler option [Visual Basic]"
   - "-win32resource compiler option [Visual Basic]"

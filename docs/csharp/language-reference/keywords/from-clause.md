@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "from_CSharpKeyword"
   - "from"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "from clause [C#]"
   - "from keyword [C#]"

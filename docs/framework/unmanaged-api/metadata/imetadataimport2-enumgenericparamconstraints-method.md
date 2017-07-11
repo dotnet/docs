@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2::EnumGenericParamConstraints"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumGenericParamConstraints method [.NET Framework metadata]"
   - "IMetaDataImport2::EnumGenericParamConstraints method [.NET Framework metadata]"

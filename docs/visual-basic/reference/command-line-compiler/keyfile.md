@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "/keyfile compiler option [Visual Basic]"
   - "keyfile compiler option [Visual Basic]"

@@ -13,8 +13,6 @@ author: "rpetrusha"
 ms.author: "ronpet"
 f1_keywords: 
   - "vb.Short"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "numbers, whole"
   - "whole numbers"

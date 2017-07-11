@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ThreadCreated"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ThreadCreated method [.NET Framework profiling]"
   - "ThreadCreated method [.NET Framework profiling]"

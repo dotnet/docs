@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame::GetFrameType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFrameType method [.NET Framework debugging]"
   - "ICorDebugInternalFrame::GetFrameType method [.NET Framework debugging]"

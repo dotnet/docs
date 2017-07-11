@@ -8,8 +8,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.indexers"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "indexers [C#]"
   - "C# language, indexers"

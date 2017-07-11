@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::SetOption"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataDispenserEx::SetOption method [.NET Framework metadata]"
   - "SetOption method [.NET Framework metadata]"

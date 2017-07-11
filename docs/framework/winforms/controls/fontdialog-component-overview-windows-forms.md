@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "FontDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Font dialog box, Windows Forms"
   - "Font dialog box"

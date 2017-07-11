@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.RemoveHandlerMethod"
   - "vb.RemoveHandler"
   - "RemoveHandler"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "RemoveHandler keyword"
   - "RemoveHandler statement"

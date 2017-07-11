@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "partialmethod_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "partial methods [C#]"
 ms.assetid: 43f40242-17e0-4452-8573-090503ad3137

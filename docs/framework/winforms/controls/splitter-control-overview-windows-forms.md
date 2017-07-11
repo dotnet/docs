@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Splitter"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Splitter control [Windows Forms], about Splitter control"
 ms.assetid: e2b6ab83-dfdd-40ec-9762-850702c82dcb

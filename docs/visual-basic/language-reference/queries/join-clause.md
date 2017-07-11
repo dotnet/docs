@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.QueryJoinIn"
   - "vb.QueryJoin"
   - "vb.QueryJoinOn"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [Visual Basic], Join"
   - "Join statement"

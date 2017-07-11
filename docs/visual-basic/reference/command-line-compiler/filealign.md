@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "sections compiler option [Visual Basic]"
   - "alignment compiler option [Visual Basic]"

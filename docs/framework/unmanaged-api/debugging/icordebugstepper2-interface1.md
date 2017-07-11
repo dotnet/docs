@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepper2 interface [.NET Framework debugging]"
 ms.assetid: 7a191c2a-95ea-4d47-83b0-44de2b632d63

@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "LoadLibraryShim"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LoadLibraryShim function [.NET Framework hosting]"
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1

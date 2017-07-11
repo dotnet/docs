@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::GetGlobalVariableValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::GetGlobalVariableValue method [.NET Framework debugging]"
   - "GetGlobalVariableValue method [.NET Framework debugging]"

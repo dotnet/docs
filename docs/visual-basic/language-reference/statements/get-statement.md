@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Get"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Get statement, syntax"
   - "Get statement"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::GetDacl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDacl method [.NET Framework hosting]"
   - "ICLRDebugManager::GetDacl method [.NET Framework hosting]"

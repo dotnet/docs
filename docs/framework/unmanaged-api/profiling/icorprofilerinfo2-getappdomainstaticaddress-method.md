@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetAppDomainStaticAddress"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetAppDomainStaticAddress method [.NET Framework profiling]"
   - "GetAppDomainStaticAddress method [.NET Framework profiling]"

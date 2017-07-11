@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::Reset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::Reset method [.NET Framework hosting]"
   - "Reset method, ICLRTask interface [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateCrstWithSpinCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateCrstWithSpinCount method [.NET Framework hosting]"
   - "IHostSyncManager::CreateCrstWithSpinCount method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetModuleFromScope"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModuleFromScope method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleFromScope method [.NET Framework metadata]"

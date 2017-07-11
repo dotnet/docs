@@ -13,8 +13,6 @@ f1_keywords:
   - "Of"
   - "vb.Of"
   - "vb.of"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Of keyword"
   - "arguments [Visual Basic], data types"

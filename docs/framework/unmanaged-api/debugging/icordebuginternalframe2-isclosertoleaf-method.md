@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugInternalFrame2::IsCloserToLeaf"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugInternalFrame2::IsCloserToLeaf method [.NET Framework debugging]"
   - "IsCloserToLeaf method [.NET Framework debugging]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30020"
   - "vbc30020"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30020"
 ms.assetid: 228afebd-1203-4bd3-8d7a-c5c56f3cedc4

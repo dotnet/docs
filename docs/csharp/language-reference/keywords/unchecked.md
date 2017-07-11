@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "unchecked_CSharpKeyword"
   - "unchecked"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "unchecked keyword [C#]"
 ms.assetid: 0c021f7c-923f-4b3d-a58f-55336f5ac27e

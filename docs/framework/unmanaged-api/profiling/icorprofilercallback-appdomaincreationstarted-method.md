@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::AppDomainCreationStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AppDomainCreationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainCreationStarted method [.NET Framework profiling]"

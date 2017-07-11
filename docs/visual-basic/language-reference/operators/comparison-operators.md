@@ -15,8 +15,6 @@ f1_keywords:
   - "vb.<="
   - "vb.>"
   - "vb.<"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "greater than or equal to operator [Visual Basic]"
   - ">= operator [Visual Basic]"

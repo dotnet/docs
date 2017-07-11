@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetRuntimeDirectory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRuntimeDirectory method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetRuntimeDirectory method [.NET Framework hosting]"

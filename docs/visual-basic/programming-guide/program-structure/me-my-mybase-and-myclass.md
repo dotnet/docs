@@ -18,8 +18,6 @@ f1_keywords:
   - "vb.MyClass"
   - "vb.This"
   - "vb.My"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My object"
   - "self-reference, Me keyword"

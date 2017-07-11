@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::CloseNamespace"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::CloseNamespace method [.NET Framework debugging]"
   - "CloseNamespace method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRIoCompletionManager::OnComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OnComplete method [.NET Framework hosting]"
   - "ICLRIoCompletionManager::OnComplete method [.NET Framework hosting]"

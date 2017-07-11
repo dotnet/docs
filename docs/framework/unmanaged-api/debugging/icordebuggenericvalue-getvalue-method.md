@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugGenericValue::GetValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugGenericValue::GetValue method [.NET Framework debugging]"
   - "GetValue method, ICorDebugGenericValue interface [.NET Framework debugging]"

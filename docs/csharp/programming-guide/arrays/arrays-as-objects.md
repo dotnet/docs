@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "arrays [C#], as objects"
 ms.assetid: f76d4403-bd0a-42a0-9bc8-694c55b2c926

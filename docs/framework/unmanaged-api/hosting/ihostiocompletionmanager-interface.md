@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: c28d1983-83f7-46e2-990f-dbb9dc07c818

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStackWalk::SetContext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetContext method [.NET Framework debugging]"
   - "ICorDebugStackWalk::SetContext method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::GetLocalDoubleRegisterValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugNativeFrame::GetLocalDoubleRegisterValue method [.NET Framework debugging]"
   - "GetLocalDoubleRegisterValue method [.NET Framework debugging]"

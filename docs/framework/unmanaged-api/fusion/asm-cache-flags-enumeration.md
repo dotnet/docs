@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ASM_CACHE_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ASM_CACHE_FLAGS enumeration [.NET Framework fusion]"
 ms.assetid: 82e9a7da-321b-48b8-b239-52eaffda6be8

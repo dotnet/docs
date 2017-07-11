@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager::DeleteRWLockOwnerIterator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager::DeleteRWLockOwnerIterator method [.NET Framework hosting]"
   - "DeleteRWLockOwnerIterator method [.NET Framework hosting]"

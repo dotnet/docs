@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetIlSection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIlSection method [.NET Framework metadata]"
   - "ICeeGen::GetIlSection method [.NET Framework metadata]"

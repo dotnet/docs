@@ -12,11 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/assemblyBinding/linkedConfiguration"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#linkedConfiguration"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "configuration files [.NET Framework],linked configuration files"
   - "<linkedConfiguration> element"

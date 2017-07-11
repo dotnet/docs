@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetSectionBlock"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSectionBlock method [.NET Framework metadata]"
   - "ICeeGen::GetSectionBlock method [.NET Framework metadata]"

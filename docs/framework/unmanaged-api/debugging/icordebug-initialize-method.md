@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::Initialize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Initialize method, ICorDebug interface [.NET Framework debugging]"
   - "ICorDebug::Initialize method [.NET Framework debugging]"

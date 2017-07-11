@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyEnum interface [.NET Framework fusion]"
 ms.assetid: 634ef9f9-e94b-4776-a9e1-866df9a76c8f

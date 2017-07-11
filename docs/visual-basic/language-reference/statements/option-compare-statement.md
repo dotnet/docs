@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Compare"
   - "vb.OptionCompare"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "case sensitivity, Option Compare statement"
   - "Compare keyword"

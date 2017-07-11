@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetClassLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetClassLayout method [.NET Framework metadata]"
   - "GetClassLayout method, IMetaDataImport interface [.NET Framework metadata]"

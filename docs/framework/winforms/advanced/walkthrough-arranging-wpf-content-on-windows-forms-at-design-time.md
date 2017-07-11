@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WPF user control [Windows Forms], hosting in a layout panel"
   - "WPF content [Windows Forms],arranging at design time"

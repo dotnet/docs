@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Friend"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Friend keyword"
   - "Friend access modifier"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetTableInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataTables::GetTableInfo method [.NET Framework metadata]"
   - "GetTableInfo method [.NET Framework metadata]"

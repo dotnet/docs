@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SaveToMemory"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::SaveToMemory method [.NET Framework metadata]"
   - "SaveToMemory method [.NET Framework metadata]"

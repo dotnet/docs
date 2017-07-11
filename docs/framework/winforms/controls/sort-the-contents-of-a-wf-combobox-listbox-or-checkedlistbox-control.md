@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], sorting"
   - "ComboBox control [Windows Forms], sorting contents"

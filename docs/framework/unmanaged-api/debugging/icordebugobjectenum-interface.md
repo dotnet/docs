@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugObjectEnum interface [.NET Framework debugging]"
 ms.assetid: 9ffb4498-7719-49d3-8890-df2c22248a0c

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineSequencePoints"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineSequencePoints method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::DefineSequencePoints method [.NET Framework debugging]"

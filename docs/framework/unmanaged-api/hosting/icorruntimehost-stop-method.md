@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::Stop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Stop method, ICorRuntimeHost interface [.NET Framework hosting]"
   - "ICorRuntimeHost::Stop method [.NET Framework hosting]"

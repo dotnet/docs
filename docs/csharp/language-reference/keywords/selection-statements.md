@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "statements [C#], selection"
 ms.assetid: cf21cfa2-34fb-48b0-9cbc-8bb4537a9a05

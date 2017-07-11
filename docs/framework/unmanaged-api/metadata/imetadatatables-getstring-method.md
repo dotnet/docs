@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataTables::GetString method [.NET Framework metadata]"
   - "GetString method, IMetaDataTables interface [.NET Framework metadata]"

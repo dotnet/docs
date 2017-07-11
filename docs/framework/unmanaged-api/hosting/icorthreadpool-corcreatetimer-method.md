@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorCreateTimer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorCreateTimer method [.NET Framework hosting]"
   - "ICorThreadpool::CorCreateTimer method [.NET Framework hosting]"

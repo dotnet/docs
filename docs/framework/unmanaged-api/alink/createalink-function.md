@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateALink"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateALink function"
   - "Alink API, CreateALink function"

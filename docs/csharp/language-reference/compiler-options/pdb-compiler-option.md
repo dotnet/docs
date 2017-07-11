@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/pdb"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-pdb compiler option [C#]"
   - "pdb compiler option [C#]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugController::CanCommitChanges"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugController::CanCommitChanges method [.NET Framework debugging]"
   - "CanCommitChanges method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetVirtualMemLimit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHost::SetVirtualMemLimit method [.NET Framework hosting]"
   - "SetVirtualMemLimit method [.NET Framework hosting]"

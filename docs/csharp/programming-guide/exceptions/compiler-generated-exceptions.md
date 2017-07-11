@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "exceptions [C#], compiler-generated"
 ms.assetid: 53b52f97-b366-4ed7-b05b-9eb78096b7f9

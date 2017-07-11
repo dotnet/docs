@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "ContextMenu"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ContextMenu component [Windows Forms], about ContextMenu component"
   - "context menus, ContextMenu component"

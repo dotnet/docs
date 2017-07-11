@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_FIELD"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_FIELD structure [.NET Framework debugging]"
 ms.assetid: c0822423-a9df-4961-950d-50dcc152f863

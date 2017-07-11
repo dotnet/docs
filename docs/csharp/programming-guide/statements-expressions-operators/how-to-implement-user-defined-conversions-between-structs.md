@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "user-defined conversions [C#]"
 ms.assetid: 97839aef-8fbc-40d5-9769-6b569bc2710b

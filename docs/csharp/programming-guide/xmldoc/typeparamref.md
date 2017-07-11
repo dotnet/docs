@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "typeparamref"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "typeparamref C# XML tag"
   - "<typeparamref> C# XML tag"

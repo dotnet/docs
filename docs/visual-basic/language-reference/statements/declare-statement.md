@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.Declare"
   - "vb.Lib"
   - "vb.Any"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Lib keyword"
   - "declaring procedures, Declare statement"

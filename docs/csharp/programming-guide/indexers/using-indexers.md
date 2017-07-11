@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "indexers [C#], about indexers"
 ms.assetid: df70e1a2-3ce3-4aba-ad80-4b2f3538699f

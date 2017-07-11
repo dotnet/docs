@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineGlobalVariable"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::DefineGlobalVariable method [.NET Framework debugging]"
   - "DefineGlobalVariable method [.NET Framework debugging]"

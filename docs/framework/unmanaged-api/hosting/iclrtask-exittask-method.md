@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::ExitTask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExitTask method [.NET Framework hosting]"
   - "ICLRTask::ExitTask method [.NET Framework hosting]"

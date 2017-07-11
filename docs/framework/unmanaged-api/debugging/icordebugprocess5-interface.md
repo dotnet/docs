@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: 30a39d79-1f10-4328-9c5d-094ed824e2ba

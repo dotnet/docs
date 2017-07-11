@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc31102"
   - "bc31102"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31102"
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a

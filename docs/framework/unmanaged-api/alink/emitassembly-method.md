@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EmitAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmitAssembly method"
 ms.assetid: 605ff39e-e5cc-4bff-8196-e8d68a9715b9

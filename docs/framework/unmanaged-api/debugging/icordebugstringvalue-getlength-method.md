@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStringValue::GetLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStringValue::GetLength method [.NET Framework debugging]"
   - "GetLength method [.NET Framework debugging]"

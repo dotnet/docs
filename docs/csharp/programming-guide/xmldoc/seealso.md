@@ -13,8 +13,6 @@ f1_keywords:
   - "cref"
   - "<seealso>"
   - "seealso"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "cref [C#], see also"
   - "seealso C# XML tag"

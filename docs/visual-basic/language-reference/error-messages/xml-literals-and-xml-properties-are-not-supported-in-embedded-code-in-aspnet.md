@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc31200"
   - "bc31200"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC31200"
 ms.assetid: 053e8cba-8584-45cc-9fa0-43d122779772

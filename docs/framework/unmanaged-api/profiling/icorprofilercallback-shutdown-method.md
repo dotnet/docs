@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::Shutdown"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::Shutdown method [.NET Framework profiling]"
   - "Shutdown method [.NET Framework profiling]"

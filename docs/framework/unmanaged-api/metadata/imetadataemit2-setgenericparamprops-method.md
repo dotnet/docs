@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::SetGenericParamProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit2::SetGenericParamProps method [.NET Framework metadata]"
   - "SetGenericParamProps method [.NET Framework metadata]"

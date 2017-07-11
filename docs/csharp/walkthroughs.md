@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "walkthroughs [C#]"
   - "walkthroughs [Visual Studio], Visual C#"

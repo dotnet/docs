@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GenerateCeeFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GenerateCeeFile method [.NET Framework metadata]"
   - "ICeeGen::GenerateCeeFile method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetObjectIdentity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObjectIdentity method [.NET Framework hosting]"
   - "IManagedObject::GetObjectIdentity method [.NET Framework hosting]"

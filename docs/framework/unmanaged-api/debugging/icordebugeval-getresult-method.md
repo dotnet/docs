@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::GetResult"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval::GetResult method [.NET Framework debugging]"
   - "GetResult method [.NET Framework debugging]"

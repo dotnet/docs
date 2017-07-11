@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::IsValueClass"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugObjectValue::IsValueClass method [.NET Framework debugging]"
   - "IsValueClass method [.NET Framework debugging]"

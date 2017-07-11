@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb._"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "colons (:)"
   - "line continuation"

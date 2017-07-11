@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostPolicyManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostPolicyManager interface [.NET Framework hosting]"
 ms.assetid: 8c4aa124-5e00-46d9-b1e8-57ba6574bb0d

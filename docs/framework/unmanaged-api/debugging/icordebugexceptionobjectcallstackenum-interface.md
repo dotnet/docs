@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugExceptionObjectCallStackEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugExceptionObjectCallStackEnum interface [.NET Framework debugging]"
 ms.assetid: 39dffa18-c71b-48c4-b11d-e814631ab1e9

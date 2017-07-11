@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDebuggerInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IDebuggerInfo interface [.NET Framework hosting]"
 ms.assetid: 9395a8a0-ffb9-475f-8da6-890999ae4bb6

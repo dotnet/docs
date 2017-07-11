@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetNameFromToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNameFromToken method [.NET Framework metadata]"
   - "IMetaDataImport::GetNameFromToken method [.NET Framework metadata]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "object equality [C#]"
 ms.assetid: 10b865ea-4e7b-4127-9242-c9b8f57d9f04

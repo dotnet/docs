@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.OnError"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, control flow"
   - "Resume Next statement"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerFunctionControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerFunctionControl interface [.NET Framework profiling]"
 ms.assetid: 4e3d3141-4662-4166-8f05-bc857c1b4216

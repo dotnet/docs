@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "CheckedListBox"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], about CheckedListBox control"
   - "check marks"

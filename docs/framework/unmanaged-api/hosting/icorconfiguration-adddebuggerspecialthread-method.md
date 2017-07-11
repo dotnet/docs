@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddDebuggerSpecialThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AddDebuggerSpecialThread method [.NET Framework hosting]"
   - "ICorConfiguration::AddDebuggerSpecialThread method [.NET Framework hosting]"

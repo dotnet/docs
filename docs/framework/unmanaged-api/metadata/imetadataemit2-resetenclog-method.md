@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::ResetENCLog"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ResetENCLog method [.NET Framework metadata]"
   - "IMetaDataEmit2::ResetENCLog method [.NET Framework metadata]"

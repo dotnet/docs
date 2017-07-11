@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MenuStrip"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms], about MenuStrip control"
   - "menus, creating"

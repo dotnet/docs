@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "operator_CSharpKeyword"
   - "operator"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "operator keyword [C#]"
 ms.assetid: 59218cce-e90e-42f6-a6bb-30300981b86a

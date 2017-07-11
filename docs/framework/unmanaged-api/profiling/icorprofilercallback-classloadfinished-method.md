@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ClassLoadFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ClassLoadFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::ClassLoadFinished method [.NET Framework profiling]"

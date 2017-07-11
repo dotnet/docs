@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "SaveFileDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Save File dialog box, displaying"
   - "SaveFileDialog component, about SaveFileDialog"

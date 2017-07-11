@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Structure"
   - "Structure"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "user-defined types, Structure statement"
   - "compound data types"

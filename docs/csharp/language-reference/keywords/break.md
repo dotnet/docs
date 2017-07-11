@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "break"
   - "break_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "break keyword [C#]"
 ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.MidB"
   - "vb.Mid"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "substrings, Mid statement"
   - "strings [Visual Basic], substrings"

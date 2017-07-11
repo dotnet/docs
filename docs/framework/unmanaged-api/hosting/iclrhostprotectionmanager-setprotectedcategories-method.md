@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostProtectionManager::SetProtectedCategories"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetProtectedCategories method [.NET Framework hosting]"
   - "ICLRHostProtectionManager::SetProtectedCategories method [.NET Framework hosting]"

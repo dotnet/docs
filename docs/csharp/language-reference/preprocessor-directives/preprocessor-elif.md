@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#elif"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#elif directive [C#]"
 ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f

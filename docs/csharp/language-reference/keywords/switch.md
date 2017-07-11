@@ -10,8 +10,6 @@ f1_keywords:
   - "switch"
   - "case"
   - "case_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "switch statement [C#]"
   - "switch keyword [C#]"

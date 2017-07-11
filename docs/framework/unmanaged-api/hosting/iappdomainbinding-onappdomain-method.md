@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "OnAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAppDomainBinding::OnAppDomain method [.NET Framework hosting]"
   - "OnAppDomain method [.NET Framework hosting]"

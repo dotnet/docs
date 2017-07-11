@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "equals_CSharpKeyword"
   - "equals"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "equals keyword [C#]"
 ms.assetid: e981309a-e4bf-444c-8a2b-5c695e6114b1

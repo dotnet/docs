@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugExceptionObjectCallStackEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugExceptionObjectCallStackEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugExceptionObjectCallStackEnum interface [.NET Framework debugging]"

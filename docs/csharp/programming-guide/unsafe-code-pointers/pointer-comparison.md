@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "pointers [C#], comparison"
 ms.assetid: fcafd514-7405-4deb-8490-cc58efda5495

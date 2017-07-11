@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbc30910"
   - "bc30910"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30910"
 ms.assetid: 68fc05c5-5d55-4742-9a3b-ea04312594f4

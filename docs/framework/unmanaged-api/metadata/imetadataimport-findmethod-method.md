@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindMethod method [.NET Framework metadata]"
   - "IMetaDataImport::FindMethod method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameHashSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameHashSize method [.NET Framework hosting]"
   - "StrongNameHashSize method, ICLRStrongName interface [.NET Framework hosting]"

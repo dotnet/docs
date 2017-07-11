@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread::GetID method [.NET Framework debugging]"
   - "GetID method, ICorDebugThread interface [.NET Framework debugging]"

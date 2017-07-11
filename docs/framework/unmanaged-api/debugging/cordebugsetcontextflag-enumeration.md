@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugSetContextFlag"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugSetContextFlag enumeration [.NET Framework debugging]"
 ms.assetid: b30280bb-fe75-44ed-8589-bcff081fae44

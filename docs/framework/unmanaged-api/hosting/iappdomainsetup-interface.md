@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAppDomainSetup"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAppDomainSetup interface [.NET Framework hosting]"
 ms.assetid: 1844da85-c031-40bf-bea4-1a3d12a36c8c

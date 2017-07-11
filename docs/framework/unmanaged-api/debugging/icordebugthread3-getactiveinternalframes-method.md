@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread3::GetActiveInternalFrames"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugThread3::GetActiveInternalFrames method [.NET Framework debugging]"
   - "GetActiveInternalFrames method [.NET Framework debugging]"

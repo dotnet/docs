@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.ExtensionMethods"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "extending data types"
   - "extension methods [Visual Basic]"

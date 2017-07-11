@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetCodedTokenInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCodedTokenInfo method [.NET Framework metadata]"
   - "IMetaDataTables::GetCodedTokenInfo method [.NET Framework metadata]"

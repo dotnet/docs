@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMDA::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugMDA::GetName method [.NET Framework debugging]"
   - "GetName method, ICorDebugMDA interface [.NET Framework debugging]"

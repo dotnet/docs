@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.IfOperator"
   - "IfOperator"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "ternary operators"
   - "conditional execution"

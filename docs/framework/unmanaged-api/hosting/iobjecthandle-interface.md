@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IObjectHandle"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IObjectHandle interface [.NET Framework hosting]"
 ms.assetid: 436683ef-9849-4b24-89a9-28c06d148dce

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "MonthCalendar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "calendars, Windows Forms controls"
   - "calendar controls, Windows Forms"

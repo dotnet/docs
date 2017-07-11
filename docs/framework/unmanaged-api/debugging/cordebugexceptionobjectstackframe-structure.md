@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugExceptionObjectStackFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugExceptionObjectStackFrame structure [.NET Framework debugging]"
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258

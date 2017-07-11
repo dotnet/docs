@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PrintPreviewControl"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "print preview"
   - "PrintPreviewControl control"

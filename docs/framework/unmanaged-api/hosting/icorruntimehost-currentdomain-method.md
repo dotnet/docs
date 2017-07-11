@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CurrentDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"
   - "CurrentDomain method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CreateCordbObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "remote debugging API [Silverlight]"
   - "CreateCordbObject function"

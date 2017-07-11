@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetadataLocator::GetMetadata"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMetadata method, ICLRMetadataLocator interface [.NET Framework debugging]"
   - "ICLRMetadataLocator::GetMetadata method [.NET Framework debugging]"

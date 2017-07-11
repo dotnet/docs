@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Explicit"
   - "vb.OptionExplicit"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "declaring variables, explicit"
   - "forced variable declaration in Option Explicit statement"

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ToolStripMenuItems, hiding menu items in designer"
   - "MenuStrip control [Windows Forms], hiding menu items in designer"

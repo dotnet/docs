@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugHandleValue::Dispose"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugHandleValue::Dispose method [.NET Framework debugging]"
   - "Dispose method [.NET Framework debugging]"

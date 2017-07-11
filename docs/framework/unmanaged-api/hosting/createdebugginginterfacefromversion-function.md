@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CreateDebuggingInterfaceFromVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDebuggingInterfaceFromVersion function [.NET Framework hosting]"
 ms.assetid: a746a849-463c-44f5-a2f0-9e812ed8bcc3

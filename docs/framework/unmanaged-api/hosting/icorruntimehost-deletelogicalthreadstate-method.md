@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::DeleteLogicalThreadState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::DeleteLogicalThreadState method [.NET Framework hosting]"
   - "DeleteLogicalThreadState method [.NET Framework hosting]"

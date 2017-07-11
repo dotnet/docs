@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetActionOnTimeout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetActionOnTimeout method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetActionOnTimeout method [.NET Framework hosting]"

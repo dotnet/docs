@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost::EnumerateInstalledRuntimes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMetaHost::EnumerateInstalledRuntimes method [.NET Framework hosting]"
   - "EnumerateInstalledRuntimes method [.NET Framework hosting]"

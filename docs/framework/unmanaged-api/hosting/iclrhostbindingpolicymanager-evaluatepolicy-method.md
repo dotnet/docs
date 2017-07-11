@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostBindingPolicyManager::EvaluatePolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRHostBindingPolicyManager::EvaluatePolicy method [.NET Framework hosting]"
   - "EvaluatePolicy method [.NET Framework hosting]"

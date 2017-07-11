@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAddressKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAddressKind method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAddressKind method [.NET Framework debugging]"

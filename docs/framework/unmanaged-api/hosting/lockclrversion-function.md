@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "LockClrVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LockClrVersion function [.NET Framework hosting]"
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74

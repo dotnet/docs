@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
 ms.assetid: 696afe71-5852-478d-a33f-b2d2dbc4b91f
 caps.latest.revision: 4
 author: "rpetrusha"

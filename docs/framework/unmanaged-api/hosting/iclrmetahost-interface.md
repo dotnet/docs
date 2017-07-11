@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMetaHost interface [.NET Framework hosting]"
 ms.assetid: c627fcdd-fc4f-4b1c-8e91-df8536f627d8

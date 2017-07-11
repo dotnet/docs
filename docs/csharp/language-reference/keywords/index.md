@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.keywords"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "keywords [C#]"
   - "C# language, keywords"

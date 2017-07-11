@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLRCreateInstance"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLRCreateInstance function [.NET Framework hosting]"
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855

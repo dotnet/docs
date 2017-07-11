@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-errorreport compiler option [Visual Basic]"
   - "/errorreport compiler option [Visual Basic]"

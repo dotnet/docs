@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "namespace_CSharpKeyword"
   - "namespace"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "namespace keyword [C#]"
   - "scope [C#]"

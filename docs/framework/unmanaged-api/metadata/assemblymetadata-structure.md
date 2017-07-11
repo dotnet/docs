@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ASSEMBLYMETADATA"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ASSEMBLYMETADATA structure [.NET Framework metadata]"
 ms.assetid: 1af98e57-9145-4d35-bb78-77d1da7c91a5

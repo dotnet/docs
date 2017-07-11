@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ImportFile2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ImportFile2 method"
 ms.assetid: 9a6be861-c260-4a35-acea-3372ea515a0f

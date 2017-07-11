@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_NATIVE_LINK"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_NATIVE_LINK structure [.NET Framework metadata]"
 ms.assetid: 6ef78d3c-1c69-4141-b687-dcb065b7a74d

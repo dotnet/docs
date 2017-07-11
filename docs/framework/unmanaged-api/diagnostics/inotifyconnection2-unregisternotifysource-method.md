@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifyConnection2::UnregisterNotifySource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifyConnection2::UnregisterNotifySource method [.NET Framework debugging]"
   - "UnregisterNotifySource method [.NET Framework debugging]"

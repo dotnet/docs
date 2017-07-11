@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::IsDynamic"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsDynamic method [.NET Framework debugging]"
   - "ICorDebugModule::IsDynamic method [.NET Framework debugging]"

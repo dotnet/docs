@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::RequestProfilerDetach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RequestProfilerDetach method [.NET Framework profiling]"
   - "ICorProfilerInfo3::RequestProfilerDetach method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugMetaDataLocator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugMetaDataLocator interface [.NET Framework debugging]"
 ms.assetid: 287f5ecd-863f-4090-a615-077859f0257b

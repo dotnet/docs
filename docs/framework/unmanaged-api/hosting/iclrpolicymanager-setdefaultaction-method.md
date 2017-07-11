@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetDefaultAction"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetDefaultAction method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetDefaultAction method [.NET Framework hosting]"

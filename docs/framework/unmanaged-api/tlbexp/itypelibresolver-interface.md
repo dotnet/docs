@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ITypeLibResolver"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeLibResolver interface [.NET Framework]"
 ms.assetid: edaaed1d-0d26-40f0-83f1-48efc0ded1c6

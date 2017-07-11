@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::EnumerateHandles"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateHandles method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::EnumerateHandles method [.NET Framework debugging]"

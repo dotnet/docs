@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "structs [C#], passing as method parameter"
   - "passing parameters [C#], structs vs. classes"

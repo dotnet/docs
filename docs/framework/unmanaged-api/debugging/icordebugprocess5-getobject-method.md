@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess5::GetObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObject method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::GetObject method [.NET Framework debugging]"

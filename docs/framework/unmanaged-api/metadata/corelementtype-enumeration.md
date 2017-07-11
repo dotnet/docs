@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorElementType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorElementType enumeration [.NET Framework metadata]"
 ms.assetid: c3809c8f-1737-4f0f-9442-0c01ee689871

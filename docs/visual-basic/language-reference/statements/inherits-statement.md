@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Inherits"
   - "Inherits"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Inherits statement"
   - "Inherits statement, syntax"

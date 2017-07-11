@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.is"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "comparison operators"
   - "equivalent objects"

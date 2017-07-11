@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "char"
   - "char_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "char data type [C#]"
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228

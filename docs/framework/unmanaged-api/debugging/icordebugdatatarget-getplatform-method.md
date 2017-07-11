@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugDataTarget::GetPlatform"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetPlatform method [.NET Framework debugging]"
   - "ICorDebugDataTarget::GetPlatform method [.NET Framework debugging]"

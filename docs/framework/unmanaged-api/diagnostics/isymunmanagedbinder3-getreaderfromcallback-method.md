@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder3::GetReaderFromCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetReaderFromCallback method [.NET Framework debugging]"
   - "ISymUnmanagedBinder3::GetReaderFromCallback method [.NET Framework debugging]"

@@ -16,8 +16,6 @@ f1_keywords:
   - "Externalsource"
   - "vb.#ExternalSource"
   - "ExternalSource"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "ExternalSource directive (#ExternalSource)"
   - "#ExternalSource directive"

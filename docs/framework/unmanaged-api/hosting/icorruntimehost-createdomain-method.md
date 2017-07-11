@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateDomain method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"

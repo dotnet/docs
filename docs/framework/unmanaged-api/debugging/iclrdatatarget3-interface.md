@@ -15,8 +15,6 @@ api_location:
   - "mscordbi.dll"
 api_type: 
   - "COM"
-dev_langs: 
-  - "C++"
 ms.assetid: d2711bdf-64b3-404c-a0c3-01ba4907f703
 topic_type: 
   - "apiref"

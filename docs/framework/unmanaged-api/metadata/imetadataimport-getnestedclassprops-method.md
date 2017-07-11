@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetNestedClassProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetNestedClassProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetNestedClassProps method [.NET Framework metadata]"

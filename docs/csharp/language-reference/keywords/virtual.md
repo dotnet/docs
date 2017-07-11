@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "virtual_CSharpKeyword"
   - "virtual"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "virtual keyword [C#]"
 ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2

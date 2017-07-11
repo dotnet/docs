@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_GC_GENERATION"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_GC_GENERATION_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: d6ece160-26ad-4d39-abd7-05acd6f78c48

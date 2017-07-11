@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICatalogServices"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICatalogServices interface [.NET Framework hosting]"
 ms.assetid: f0d7e49b-2394-4ae0-8820-1b64cae0cfe8

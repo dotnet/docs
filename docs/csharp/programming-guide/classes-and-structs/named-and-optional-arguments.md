@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "namedParameter_CSharpKeyword"
   - "cs_namedParameter"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "parameters [C#], named"
   - "named arguments [C#]"

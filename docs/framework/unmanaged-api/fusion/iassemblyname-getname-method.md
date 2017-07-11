@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyName::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetName method, IAssemblyName interface [.NET Framework debugging]"
   - "IAssemblyName::GetName method [.NET Framework fusion]"

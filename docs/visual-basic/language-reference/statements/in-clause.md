@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.In"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "In keyword [Visual Basic]"
 ms.assetid: 2f003a85-8fb6-4280-822b-6ac12839b915

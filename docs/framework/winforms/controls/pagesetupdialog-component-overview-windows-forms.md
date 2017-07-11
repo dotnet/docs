@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "PageSetupDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "Page Setup dialog box, displaying"
   - "PageSetupDialog component"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::Abort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::Abort method [.NET Framework debugging]"
   - "Abort method, ISymUnmanagedWriter interface [.NET Framework debugging]"

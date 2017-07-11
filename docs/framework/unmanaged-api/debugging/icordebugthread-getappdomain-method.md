@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread::GetAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAppDomain method, ICorDebugThread interface [.NET Framework debugging]"
   - "ICorDebugThread::GetAppDomain method [.NET Framework debugging]"

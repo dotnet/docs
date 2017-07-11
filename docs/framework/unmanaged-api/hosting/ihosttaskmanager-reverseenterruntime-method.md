@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::ReverseEnterRuntime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::ReverseEnterRuntime method [.NET Framework hosting]"
   - "ReverseEnterRuntime method [.NET Framework hosting]"

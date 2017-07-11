@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager::GetRWLockOwnerNext"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager::GetRWLockOwnerNext method [.NET Framework hosting]"
   - "GetRWLockOwnerNext method [.NET Framework hosting]"

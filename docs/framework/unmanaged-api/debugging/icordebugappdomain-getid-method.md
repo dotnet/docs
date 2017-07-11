@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetId"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetId method, ICorDebugAppDomain interface [.NET Framework debugging]"
   - "ICorDebugAppDomain::GetId method [.NET Framework debugging]"

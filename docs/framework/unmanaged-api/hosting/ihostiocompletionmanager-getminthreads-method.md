@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetMinThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMinThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
   - "IHostIoCompletionManager::GetMinThreads method [.NET Framework hosting]"

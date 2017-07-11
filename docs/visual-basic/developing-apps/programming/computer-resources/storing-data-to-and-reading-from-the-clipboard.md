@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Clipboard, storing data to (My.Computer.Clipboard)"
   - "Clipboard, reading from (My.Computer.Clipboard)"

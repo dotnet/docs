@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityContext::Capture"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Capture method [.NET Framework hosting]"
   - "IHostSecurityContext::Capture method [.NET Framework hosting]"

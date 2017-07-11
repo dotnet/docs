@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "StrongNameKeyDelete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameKeyDelete function [.NET Framework strong naming]"
 ms.assetid: 313e71e4-1790-4d2f-b68b-5040ebd1c149

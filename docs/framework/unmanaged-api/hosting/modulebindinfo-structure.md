@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ModuleBindInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ModuleBindInfo structure [.NET Framework hosting]"
 ms.assetid: 632d4adc-dbc9-4ce8-9397-abc3285c1c69

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetSymbolReadingPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebugManager, SetSymbolREadingPolicy method"
   - "SetSymbolReadingPolicy method [.NET Framework hosting]"

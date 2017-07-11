@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetThreadStats"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHost::GetThreadStats method [.NET Framework hosting]"
   - "GetThreadStats method [.NET Framework hosting]"

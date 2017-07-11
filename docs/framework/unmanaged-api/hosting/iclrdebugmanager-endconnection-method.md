@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::EndConnection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDebugManager::EndConnection method [.NET Framework hosting]"
   - "EndConnection method [.NET Framework hosting]"

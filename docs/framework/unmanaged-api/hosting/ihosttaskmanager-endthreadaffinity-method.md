@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::EndThreadAffinity"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EndThreadAffinity method [.NET Framework hosting]"
   - "IHostTaskManager::EndThreadAffinity method [.NET Framework hosting]"

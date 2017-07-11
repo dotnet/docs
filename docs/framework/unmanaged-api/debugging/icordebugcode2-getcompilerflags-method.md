@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode2::GetCompilerFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCompilerFlags method [.NET Framework debugging]"
   - "ICorDebugCode2::GetCompilerFlags method [.NET Framework debugging]"

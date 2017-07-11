@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.AnonymousType"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "anonymous types [Visual Basic], about anonymous types"
   - "anonymous types [Visual Basic]"

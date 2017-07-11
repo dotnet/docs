@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "let_CSharpKeyword"
   - "let"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "let keyword [C#]"
   - "let clause [C#]"

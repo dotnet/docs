@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Power Packs, deploying"
 ms.assetid: f2230f53-a745-4731-89e6-033943faa209

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::COMClassicVTableCreated"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COMClassicVTableCreated method [.NET Framework profiling]"
   - "ICorProfilerCallback::COMClassicVTableCreated method [.NET Framework profiling]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyEnum::Clone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clone method, IAssemblyEnum interface [.NET Framework fusion]"
   - "IAssemblyEnum::Clone method [.NET Framework fusion]"

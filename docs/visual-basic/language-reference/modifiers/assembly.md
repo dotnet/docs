@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.Assembly"
   - "vb.AssemblyAttribute"
   - "Assembly"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Assembly modifier"
   - "Assembly keyword"

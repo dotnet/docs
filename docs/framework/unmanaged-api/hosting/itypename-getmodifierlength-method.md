@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetModifierLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetModifierLength method [.NET Framework hosting]"
   - "GetModifierLength method [.NET Framework hosting]"

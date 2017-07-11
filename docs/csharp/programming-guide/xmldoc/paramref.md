@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "paramref"
   - "<paramref>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<paramref> C# XML tag"
   - "paramref C# XML tag"

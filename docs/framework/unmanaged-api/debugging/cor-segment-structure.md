@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_SEGMENT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_SEGMENT structure [.NET Framework debugging]"
 ms.assetid: 93aeecb9-7fef-4545-8daf-f566dfc47084

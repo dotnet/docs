@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "pointers [C#], arithmetic operations"
 ms.assetid: d4f0b623-827e-45ce-8649-cfcebc8692aa

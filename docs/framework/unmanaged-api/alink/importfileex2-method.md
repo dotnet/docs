@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ImportFileEx2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ImportFileEx2 method"
 ms.assetid: 02c789fd-16fc-48c6-9619-56e87e2a37ca

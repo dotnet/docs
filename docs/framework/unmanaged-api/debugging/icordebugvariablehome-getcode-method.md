@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetCode"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetCode method [.NET Framework debugging]"
   - "GetCode method, ICorDebugVariableHome interface [.NET Framework debugging]"

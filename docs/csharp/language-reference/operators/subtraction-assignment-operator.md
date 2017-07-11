@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "-=_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "subtraction assignment operator (-=) [C#]"
   - "-= operator (subtraction assignment ) [C#]"

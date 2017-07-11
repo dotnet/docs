@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_PRF_MONITOR"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_PRF_MONITOR enumeration [.NET Framework profiling]"
 ms.assetid: 9294d702-b4e5-441c-a930-e63d27b86bfd

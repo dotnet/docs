@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::GetTokenFromSig"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::GetTokenFromSig method [.NET Framework metadata]"
   - "GetTokenFromSig method [.NET Framework metadata]"

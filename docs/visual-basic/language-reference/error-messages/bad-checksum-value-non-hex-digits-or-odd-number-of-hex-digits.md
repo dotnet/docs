@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc42033"
   - "vbc42033"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC42033"
 ms.assetid: 4575554d-3615-46e4-9c6a-18e9c338e4ed

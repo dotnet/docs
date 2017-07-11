@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetNames"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetNames method [.NET Framework hosting]"
   - "GetNames method [.NET Framework hosting]"

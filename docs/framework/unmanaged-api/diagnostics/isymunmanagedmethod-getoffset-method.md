@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetOffset method, ISymUnmanagedMethod interface [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetOffset method [.NET Framework debugging]"

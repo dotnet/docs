@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetLocalVarSigToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugFunction::GetLocalVarSigToken method [.NET Framework debugging]"
   - "GetLocalVarSigToken method [.NET Framework debugging]"

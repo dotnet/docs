@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostCrst"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostCrst interface [.NET Framework hosting]"
 ms.assetid: ac298ebd-0815-47e4-a823-30b31baab903

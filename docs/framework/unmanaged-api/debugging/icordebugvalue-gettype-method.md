@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValue::GetType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValue::GetType method [.NET Framework debugging]"
   - "GetType method, ICorDebugValue interface [.NET Framework debugging]"

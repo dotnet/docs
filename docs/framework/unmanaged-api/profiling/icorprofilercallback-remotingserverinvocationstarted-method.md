@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingServerInvocationStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RemotingServerInvocationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingServerInvocationStarted method [.NET Framework profiling]"

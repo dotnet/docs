@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorArgType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorArgType enumeration [.NET Framework metadata]"
 ms.assetid: 3c1cb268-57a0-4664-91c7-f6908ff29e32

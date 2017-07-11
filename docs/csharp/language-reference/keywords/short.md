@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "short"
   - "short_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "short keyword [C#]"
 ms.assetid: 04c10688-e51a-4a87-bfec-83f7fb42ff11

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorNativeType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorNativeType enumeration [.NET Framework metadata]"
 ms.assetid: e47a72f1-9609-48ed-bb34-97170d7f6890

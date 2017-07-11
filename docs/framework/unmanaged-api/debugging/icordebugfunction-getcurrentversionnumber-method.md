@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFunction::GetCurrentVersionNumber"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentVersionNumber method [.NET Framework debugging]"
   - "ICorDebugFunction::GetCurrentVersionNumber method [.NET Framework debugging]"

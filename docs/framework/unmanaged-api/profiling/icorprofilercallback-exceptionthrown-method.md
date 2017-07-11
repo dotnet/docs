@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionThrown"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExceptionThrown method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionThrown method [.NET Framework profiling]"

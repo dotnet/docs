@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetBlobHeapSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetBlobHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"

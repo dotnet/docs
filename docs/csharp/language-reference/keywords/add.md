@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "add_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "add event accessor [C#]"
 ms.assetid: faf30b99-10e8-45cd-ab9a-57585d4d1d8d

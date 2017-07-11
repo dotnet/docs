@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.QueryAggregateIn"
   - "vb.QueryAggregate"
   - "vb.QueryAggregateInto"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Aggregate clause"
   - "Aggregate statement"

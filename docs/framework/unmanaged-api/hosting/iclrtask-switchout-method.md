@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask::SwitchOut"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask::SwitchOut method [.NET Framework hosting]"
   - "SwitchOut method [.NET Framework hosting]"

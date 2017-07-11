@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetObjectGeneration"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetObjectGeneration method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetObjectGeneration method [.NET Framework profiling]"

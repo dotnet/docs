@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Private"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Private keyword"
   - "Private keyword, syntax"

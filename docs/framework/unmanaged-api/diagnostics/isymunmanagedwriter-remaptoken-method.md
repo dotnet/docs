@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::RemapToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::RemapToken method [.NET Framework debugging]"
   - "RemapToken method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::CreateProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebug::CreateProcess method [.NET Framework debugging]"
   - "CreateProcess method, ICorDebugProcess interface [.NET Framework debugging]"

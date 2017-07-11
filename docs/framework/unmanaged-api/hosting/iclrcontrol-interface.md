@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRControl interface [.NET Framework hosting]"
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.Partial"
   - "partial"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "structures, partial"
   - "classes [Visual Basic]"

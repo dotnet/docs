@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.PartialMethod"
   - "PartialMethod"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "custom logic into code [Visual Basic]"
   - "partial methods [Visual Basic]"

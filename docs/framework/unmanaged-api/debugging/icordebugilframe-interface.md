@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugILFrame interface [.NET Framework debugging]"
 ms.assetid: d5cf5056-da4d-4629-914d-afe42a5393df

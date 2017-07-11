@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetHostOverlappedSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager::GetHostOverlappedSize method [.NET Framework hosting]"
   - "GetHostOverlappedSize method [.NET Framework hosting]"

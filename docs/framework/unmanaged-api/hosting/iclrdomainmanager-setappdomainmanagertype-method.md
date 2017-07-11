@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDomainManager::SetAppDomainManagerType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]"
   - "ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostCrst::Enter"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Enter method [.NET Framework hosting]"
   - "IHostCrst::Enter method [.NET Framework hosting]"

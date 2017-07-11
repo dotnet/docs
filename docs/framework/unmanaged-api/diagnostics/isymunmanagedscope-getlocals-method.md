@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedScope::GetLocals"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetLocals method [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetLocals method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityManager::RevertToSelf"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "RevertToSelf method [.NET Framework hosting]"
   - "IHostSecurityManager::RevertToSelf method [.NET Framework hosting]"

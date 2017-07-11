@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30036"
   - "vbc30036"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30036"
 ms.assetid: b2c83de9-a132-449a-870b-e7c409d4d7ee

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "AddressOf"
   - "vb.AddressOf"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "AddressOf operator"
   - "addresses, passing to API procedures"

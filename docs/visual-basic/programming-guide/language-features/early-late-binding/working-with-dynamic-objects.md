@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "dynamic objects [Visual Basic]"
 ms.assetid: bdee2a00-07ff-46f9-86dd-fdac9b99cc97

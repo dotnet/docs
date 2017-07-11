@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::GetIMapTokenIface"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetIMapTokenIface method [.NET Framework metadata]"
   - "ICeeGen::GetIMapTokenIface method [.NET Framework metadata]"

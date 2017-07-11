@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetMethod"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetMethod method, ISymUnmanagedReader interface [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethod method [.NET Framework debugging]"

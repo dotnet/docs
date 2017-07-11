@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "FileDialog class"
 ms.assetid: 85a8fb62-c7d9-4a30-9b74-1cd10efe6ccb

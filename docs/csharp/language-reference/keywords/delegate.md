@@ -9,8 +9,6 @@ f1_keywords:
   - "delegate_CSharpKeyword"
   - "delegate"
   - "CS0123"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "delegate keyword [C#]"
   - "function pointers [C#]"

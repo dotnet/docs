@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "Like"
   - "vb.Like"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "similar to"
   - "pattern matching"

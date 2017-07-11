@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/nostdlib"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "nostdlib compiler option [C#]"
   - "-nostdlib compiler option [C#]"

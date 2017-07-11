@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Return"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Return statement, syntax"
   - "control flow, returning control to expressions"

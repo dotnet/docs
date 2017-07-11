@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.CType"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "expression conversion results"
   - "explicit data type conversions"

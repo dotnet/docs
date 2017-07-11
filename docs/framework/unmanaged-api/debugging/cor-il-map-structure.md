@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_IL_MAP"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_IL_MAP structure [.NET Framework debugging]"
 ms.assetid: 534ebc17-963d-4b26-8375-8cd940281db3

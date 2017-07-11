@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMemoryNotificationCallback"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMemoryNotificationCallback interface [.NET Framework hosting]"
 ms.assetid: 873639e2-4837-4568-83b3-4493e67e4174

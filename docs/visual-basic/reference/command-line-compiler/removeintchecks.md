@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "removeintchecks"
   - "/removeintchecks"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "removeintchecks compiler option [Visual Basic]"
   - "/removeintchecks compiler option [Visual Basic]"

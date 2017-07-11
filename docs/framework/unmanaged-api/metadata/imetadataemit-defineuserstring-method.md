@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineUserString"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineUserString method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineUserString method [.NET Framework metadata]"

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "LinkLabel"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "links, LinkLabel control"
   - "Label control [Windows Forms], about Label control"

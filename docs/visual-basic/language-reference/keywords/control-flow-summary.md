@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "decision structures"
 ms.assetid: 6885d426-fa87-4e1c-881f-f0e9ec8d98af

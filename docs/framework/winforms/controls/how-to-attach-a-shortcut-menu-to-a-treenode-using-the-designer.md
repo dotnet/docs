@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "shortcut menus, attaching to TreeNodes"
   - "TreeNode, attaching a shortcut menu using Designer"

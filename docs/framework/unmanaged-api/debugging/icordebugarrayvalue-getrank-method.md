@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetRank"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugArrayValue::GetRank method [.NET Framework debugging]"
   - "GetRank method, ICorDebugArrayValue interface [.NET Framework debugging]"

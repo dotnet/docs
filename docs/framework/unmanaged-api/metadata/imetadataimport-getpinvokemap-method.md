@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetPinvokeMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport::GetPinvokeMap method [.NET Framework metadata]"
   - "GetPinvokeMap method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::Abort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Abort method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::Abort method [.NET Framework debugging]"

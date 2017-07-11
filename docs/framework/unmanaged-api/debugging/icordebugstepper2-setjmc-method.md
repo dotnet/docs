@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugStepper2::SetJMC"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugStepper2::SetJMC method [.NET Framework debugging]"
   - "SetJMC method [.NET Framework debugging]"

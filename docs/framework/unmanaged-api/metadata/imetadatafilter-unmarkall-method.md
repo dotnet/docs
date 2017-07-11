@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataFilter::UnmarkAll"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataFilter::UnmarkAll method [.NET Framework metadata]"
   - "UnmarkAll method [.NET Framework metadata]"

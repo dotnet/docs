@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IDebugAutoAttach::AutoAttach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AutoAttach method [.NET Framework debugging]"
   - "IDebugAutoAttach::AutoAttach method [.NET Framework debugging]"

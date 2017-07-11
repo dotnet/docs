@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::FunctionRemapComplete"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionRemapComplete method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::FunctionRemapComplete method [.NET Framework debugging]"

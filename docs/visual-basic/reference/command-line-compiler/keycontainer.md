@@ -7,8 +7,6 @@ ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-keycontainer compiler option [Visual Basic]"
   - "keycontainer compiler option [Visual Basic]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.on"
   - "vb.QueryOn"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "On keyword"
 ms.assetid: 8619c328-1637-4f41-b466-cbe693f4fe73

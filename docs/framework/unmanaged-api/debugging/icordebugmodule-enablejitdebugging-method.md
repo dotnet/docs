@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::EnableJITDebugging"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::EnableJITDebugging method [.NET Framework debugging]"
   - "EnableJITDebugging method [.NET Framework debugging]"

@@ -12,11 +12,6 @@ api_name:
   - "System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
 api_location: 
   - "System.Runtime.WindowsRuntime.dll"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 ms.assetid: dcc72283-caed-49ee-b45d-ccaf94e97129
 caps.latest.revision: 12
 author: "mairaw"

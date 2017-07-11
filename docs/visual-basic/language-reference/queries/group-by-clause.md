@@ -15,8 +15,6 @@ f1_keywords:
   - "vb.QueryGroupRef"
   - "vb.QueryGroupInto"
   - "vb.QueryGroup"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "queries [Visual Basic], Group By"
   - "Group By statement"

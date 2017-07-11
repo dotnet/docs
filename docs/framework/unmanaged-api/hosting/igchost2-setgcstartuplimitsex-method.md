@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IGCHost2::SetGCStartupLimitsEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IGCHost2::SetGCStartupLimitsEx method [.NET Framework hosting]"
   - "SetGCStartupLimitsEx method, IGCHost2 interface [.NET Framework hosting]"

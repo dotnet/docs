@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame2::IsChild"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsChild method [.NET Framework debugging]"
   - "ICorDebugNativeFrame2::IsChild method [.NET Framework debugging]"

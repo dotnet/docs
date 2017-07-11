@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "WPF content [Windows Forms], changing properties at design time"
   - "Windows Forms, changing properties of WPF content at design time"

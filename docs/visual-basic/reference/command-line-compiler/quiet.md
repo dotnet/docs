@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "/quiet"
   - "quiet"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-quiet compiler option [Visual Basic]"
   - "/quiet compiler option [Visual Basic]"

@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CoUninitializeEE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CoUninitializeEE function [.NET Framework hosting]"
 ms.assetid: 5f5a311a-839a-465f-89d9-ff1c74da9736

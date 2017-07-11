@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.End"
   - "End"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "execution, ending"
   - "files, closing"

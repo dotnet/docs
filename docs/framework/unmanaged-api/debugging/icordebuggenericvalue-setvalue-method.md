@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugGenericValue::SetValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugGenericValue::SetValue method [.NET Framework debugging]"
   - "SetValue method, ICorDebugGenericValue interface [.NET Framework debugging]"

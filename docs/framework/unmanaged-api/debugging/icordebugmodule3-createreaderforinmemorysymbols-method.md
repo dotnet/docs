@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule3::CreateReaderForInMemorySymbols"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateReaderForInMemorySymbols method, ICorDebugModule3 interface [.NET Framework debugging]"
   - "ICorDebugModule3::CreateReaderForInMemorySymbols method [.NET Framework debugging]"

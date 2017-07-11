@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/dllbase"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "baseaddress compiler option [C#]"
   - "/baseaddress compiler option [C#]"

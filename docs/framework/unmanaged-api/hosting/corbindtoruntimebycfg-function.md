@@ -17,8 +17,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "CorBindToRuntimeByCfg"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorBindToRuntimeByCfg function [.NET Framework hosting]"
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782

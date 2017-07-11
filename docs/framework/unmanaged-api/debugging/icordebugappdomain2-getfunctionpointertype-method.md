@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain2::GetFunctionPointerType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain2::GetFunctionPointerType method [.NET Framework debugging]"
   - "GetFunctionPointerType method [.NET Framework debugging]"

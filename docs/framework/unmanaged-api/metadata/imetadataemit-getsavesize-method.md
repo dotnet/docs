@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::GetSaveSize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::GetSaveSize method [.NET Framework metadata]"
   - "GetSaveSize method [.NET Framework metadata]"

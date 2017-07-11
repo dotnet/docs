@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::EnumerateSteppers"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::EnumerateSteppers method [.NET Framework debugging]"
   - "EnumerateSteppers method [.NET Framework debugging]"

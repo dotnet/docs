@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/moduleassemblyname"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "moduleassemblyname compiler option [C#]"
   - "/moduleassemblyname compiler option [C#]"

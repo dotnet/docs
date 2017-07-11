@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetStringLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetStringLayout method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetStringLayout method [.NET Framework profiling]"

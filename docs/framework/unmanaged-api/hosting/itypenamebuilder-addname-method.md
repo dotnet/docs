@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::AddName method [.NET Framework hosting]"
   - "AddName method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::Exception"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugManagedCallback2::Exception method [.NET Framework debugging]"
   - "Exception method, ICorDebugManagedCallback2 interface [.NET Framework debugging]"

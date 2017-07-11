@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule2::ApplyChanges"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ApplyChanges method [.NET Framework debugging]"
   - "ICorDebugModule2::ApplyChanges method [.NET Framework debugging]"

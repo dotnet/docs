@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ECustomDumpItemKind"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ECustomDumpItemKind enumeration [.NET Framework hosting]"
 ms.assetid: 7105a6c8-6e4e-48de-ac3d-74ac75e5de2e

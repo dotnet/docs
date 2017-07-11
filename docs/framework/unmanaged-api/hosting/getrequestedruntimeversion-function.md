@@ -18,8 +18,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetRequestedRuntimeVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetRequestedRuntimeVersion function [.NET Framework hosting]"
 ms.assetid: 82f596a4-483d-4509-b0c5-a84c53c3da1b

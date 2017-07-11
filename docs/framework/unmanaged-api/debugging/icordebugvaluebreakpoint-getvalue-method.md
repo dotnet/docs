@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValueBreakpoint::GetValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetValue method, ICorDebugValueBreakpoint interface [.NET Framework debugging]"
   - "ICorDebugValueBreakpoint::GetValue method [.NET Framework debugging]"

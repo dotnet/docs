@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "data contracts [WCF], forward compatibility"
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9

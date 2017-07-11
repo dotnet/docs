@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralDocument"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML document literal [Visual Basic]"
   - "XML literals [Visual Basic], document"

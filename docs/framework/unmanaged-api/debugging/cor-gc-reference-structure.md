@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_GC_REFERENCE"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_GC_REFERENCE structure [.NET Framework debugging]"
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62

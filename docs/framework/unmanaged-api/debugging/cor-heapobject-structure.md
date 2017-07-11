@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_HEAPOBJECT"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_HEAPOBJECT structure [.NET Framework debugging]"
 ms.assetid: a92fdf95-492b-49ae-a741-2186e5c1d7c5

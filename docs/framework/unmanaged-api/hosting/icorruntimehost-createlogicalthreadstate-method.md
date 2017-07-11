@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::CreateLogicalThreadState"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateLogicalThreadState method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateLogicalThreadState method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::GetFieldValue"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugObjectValue::GetFieldValue method [.NET Framework debugging]"
   - "GetFieldValue method [.NET Framework debugging]"

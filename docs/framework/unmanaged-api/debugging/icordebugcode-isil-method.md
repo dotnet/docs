@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::IsIL"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugCode::IsIL method [.NET Framework debugging]"
   - "IsIL method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_HEAPINFO"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_HEAPINFO structure [.NET Framework debugging]"
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456

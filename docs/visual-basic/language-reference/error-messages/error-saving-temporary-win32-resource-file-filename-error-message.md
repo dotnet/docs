@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30137"
   - "vbc30137"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30137"
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd

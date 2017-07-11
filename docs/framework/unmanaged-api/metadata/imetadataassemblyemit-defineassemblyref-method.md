@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineAssemblyRef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefineAssemblyRef method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::DefineAssemblyRef method [.NET Framework metadata]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetSymAttribute"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymAttribute method [.NET Framework debugging]"

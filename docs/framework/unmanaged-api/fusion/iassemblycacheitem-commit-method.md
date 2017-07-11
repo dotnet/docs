@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IAssemblyCacheItem::Commit"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IAssemblyCacheItem::Commit method [.NET Framework fusion]"
   - "Commit method, IAssemblyCacheItem interface [.NET Framework fusion]"

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "NumericUpDown"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "numeric spin button control, Windows Forms"
   - "NumericUpDown control [Windows Forms], about NumericUpDown control"

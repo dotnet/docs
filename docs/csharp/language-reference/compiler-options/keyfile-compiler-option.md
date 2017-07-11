@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/keyfile"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/keyfile compiler option [C#]"
   - "-keyfile compiler option [C#]"

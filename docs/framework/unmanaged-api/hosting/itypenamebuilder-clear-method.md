@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "Clear"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clear method [.NET Framework hosting]"
   - "ITypeNameBuilder::Clear method [.NET Framework hosting]"

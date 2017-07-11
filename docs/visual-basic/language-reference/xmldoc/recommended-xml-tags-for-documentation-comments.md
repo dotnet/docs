@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlDocComment"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "tags, XML"
   - "XML comments, recommended tags [Visual Basic]"

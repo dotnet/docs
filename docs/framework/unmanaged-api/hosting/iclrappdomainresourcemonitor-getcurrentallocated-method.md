@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentAllocated"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCurrentAllocated method [.NET Framework hosting]"
   - "ICLRAppDomainResourceMonitor::GetCurrentAllocated method [.NET Framework hosting]"

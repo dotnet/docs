@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateCrst"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CreateCrst method [.NET Framework hosting]"
   - "IHostSyncManager::CreateCrst method [.NET Framework hosting]"

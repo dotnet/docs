@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "COR_TYPEID"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "COR_TYPEID structure [.NET Framework debugging]"
 ms.assetid: 1e172b14-ee22-4943-b3b8-3740e7bdcd2e

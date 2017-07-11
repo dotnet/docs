@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAssemblyManager::GetAssemblyStore"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostAssemblyManager::GetAssemblyStore method [.NET Framework hosting]"
   - "GetAssemblyStore method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorCheckDuplicatesFor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorCheckDuplicatesFor enumeration [.NET Framework metadata]"
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c

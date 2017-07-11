@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "StatusBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "StatusBar control [Windows Forms], about StatusBar control"
   - "status bars"

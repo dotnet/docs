@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::GetTypeDefProps"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetTypeDefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetTypeDefProps method [.NET Framework metadata]"

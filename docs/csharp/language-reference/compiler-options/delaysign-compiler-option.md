@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/delaysign"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "-delaysign compiler option [C#]"
   - "delaysign compiler option [C#]"

@@ -5,9 +5,6 @@ ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-winforms"
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "scalability, automatic in Windows Forms"
   - "Windows Forms, automatic scaling"

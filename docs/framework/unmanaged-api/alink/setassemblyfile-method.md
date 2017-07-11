@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "SetAssemblyFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetAssemblyFile method"
 ms.assetid: 3a912787-f139-43ca-a841-8bbda3107ecf

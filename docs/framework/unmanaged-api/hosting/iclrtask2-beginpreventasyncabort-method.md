@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask2::BeginPreventAsyncAbort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask2::BeginPreventAsyncAbort method [.NET Framework hosting]"
   - "BeginPreventAsyncAbort method [.NET Framework hosting]"

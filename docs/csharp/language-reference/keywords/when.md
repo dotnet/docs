@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "when_CSharpKeyword"
   - "when"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "when keyword [C#]"
 ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea

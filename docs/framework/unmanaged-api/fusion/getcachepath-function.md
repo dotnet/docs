@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "GetCachePath"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCachePath function [.NET Framework fusion]"
 ms.assetid: d977ad29-6619-42e1-b0be-bc25ea950e80

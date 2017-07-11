@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::UpdateSymbolStore"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "UpdateSymbolStore method [.NET Framework debugging]"
   - "ISymUnmanagedReader::UpdateSymbolStore method [.NET Framework debugging]"

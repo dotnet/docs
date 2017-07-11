@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.^"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "raising numbers to powers"
   - "^ operator [Visual Basic], exponention"

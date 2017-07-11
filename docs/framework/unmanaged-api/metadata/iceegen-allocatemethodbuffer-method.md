@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICeeGen::AllocateMethodBuffer"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AllocateMethodBuffer method [.NET Framework metadata]"
   - "ICeeGen::AllocateMethodBuffer method [.NET Framework metadata]"

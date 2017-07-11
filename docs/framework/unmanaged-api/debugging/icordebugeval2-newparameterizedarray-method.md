@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewParameterizedArray"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugEval2::NewParameterizedArray method [.NET Framework debugging]"
   - "NewParameterizedArray method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback4::ReJITCompilationFinished"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback4::ReJITCompilationFinished method [.NET Framework profiling]"
   - "ReJITCompilationFinished method, ICorProfilerCallback4 interface [.NET Framework profiling]"

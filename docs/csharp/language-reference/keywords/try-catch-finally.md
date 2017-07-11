@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "catch-finally_CSharpKeyword"
   - "catch-finally"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "finally blocks [C#]"
   - "try-catch statement [C#]"

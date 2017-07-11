@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyBindInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AssemblyBindInfo structure [.NET Framework hosting]"
 ms.assetid: 6fc01e98-c2e7-49de-ab9f-95937cc89017

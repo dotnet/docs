@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "TextWriter.WriteLine"
   - "StreamWriter.Close"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "files [C#], text files"
   - "text, writing to files [C#]"

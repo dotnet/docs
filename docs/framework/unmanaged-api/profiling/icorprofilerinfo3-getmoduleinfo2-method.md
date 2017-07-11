@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetModuleInfo2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo3::GetModuleInfo2 method [.NET Framework profiling]"
   - "GetModuleInfo2 method [.NET Framework profiling]"

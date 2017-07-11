@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebug::Terminate"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Terminate method, ICorDebug interface [.NET Framework debugging]"
   - "ICorDebug::Terminate method [.NET Framework debugging]"

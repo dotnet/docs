@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorLaunchApplication"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorLaunchApplication function [.NET Framework hosting]"
 ms.assetid: 71f362a9-8fe2-47ce-9302-05a645cf3d7d

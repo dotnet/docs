@@ -19,8 +19,6 @@ api_type:
   - "DLLExport"
 f1_keywords: 
   - "NukeDownloadedCache"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NukeDownloadedCache function [.NET Framework fusion]"
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86

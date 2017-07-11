@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugArrayValue::GetElement"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetElement method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElement method [.NET Framework debugging]"

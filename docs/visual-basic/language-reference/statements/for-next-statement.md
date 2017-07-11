@@ -14,8 +14,6 @@ f1_keywords:
   - "vb.Next"
   - "vb.To"
   - "vb.for"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "infinite loops"
   - "Next keyword, For...Next statements"

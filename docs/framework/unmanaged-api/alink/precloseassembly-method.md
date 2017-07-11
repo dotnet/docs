@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "PreCloseAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "PreCloseAssembly method"
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56

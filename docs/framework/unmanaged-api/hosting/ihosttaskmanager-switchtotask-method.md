@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::SwitchToTask"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::SwitchToTask method [.NET Framework hosting]"
   - "SwitchToTask method [.NET Framework hosting]"

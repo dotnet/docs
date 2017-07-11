@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAssemblyStore::ProvideModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostAssemblyStore::ProvideModule method [.NET Framework hosting]"
   - "ProvideModule method [.NET Framework hosting]"

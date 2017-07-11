@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "LINQ to XML [Visual Basic], XML namespace prefixes"
   - "XML namespace prefixes [Visual Basic]"

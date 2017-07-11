@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ExceptionCLRCatcherFound"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerCallback::ExceptionCLRCatcherFound method [.NET Framework profiling]"
   - "ExceptionCLRCatcherFound method [.NET Framework profiling]"

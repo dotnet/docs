@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugThread2::GetActiveFunctions"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetActiveFunctions method [.NET Framework debugging]"
   - "ICorDebugThread2::GetActiveFunctions method [.NET Framework debugging]"

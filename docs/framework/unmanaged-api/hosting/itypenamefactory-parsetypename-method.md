@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ParseTypeName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameFactory::ParseTypeName method [.NET Framework hosting]"
   - "ParseTypeName method [.NET Framework hosting]"

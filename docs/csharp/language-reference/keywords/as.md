@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "as_CSharpKeyword"
   - "as"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "type conversion [C#], as keyword"
   - "as keyword [C#]"

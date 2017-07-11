@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugProcess3::SetEnableCustomNotification"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugProcess3::SetEnableCustomNotification method [.NET Framework debugging]"
   - "SetEnableCustomNotification method [.NET Framework debugging]"

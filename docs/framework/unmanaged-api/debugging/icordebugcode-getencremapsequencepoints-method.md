@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::GetEnCRemapSequencePoints"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetEnCRemapSequencePoints method [.NET Framework debugging]"
   - "ICorDebugCode::GetEnCRemapSequencePoints method [.NET Framework debugging]"

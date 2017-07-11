@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "enum"
   - "enum_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "enum keyword [C#]"
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c

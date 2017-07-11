@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorValidatorModuleType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorValidatorModuleType enumeration [.NET Framework metadata]"
 ms.assetid: 748f1ab2-fbcb-4f55-89ec-8d23d81ebc80

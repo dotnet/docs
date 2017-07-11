@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetModule"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetModule method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetModule method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetClassLayout"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetClassLayout method [.NET Framework profiling]"
   - "GetClassLayout method, ICorProfilerInfo2 interface [.NET Framework profiling]"

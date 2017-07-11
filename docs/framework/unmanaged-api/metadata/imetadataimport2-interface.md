@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataImport2 interface [.NET Framework metadata]"
 ms.assetid: d39b2b87-ba53-4771-ae53-952a68452511

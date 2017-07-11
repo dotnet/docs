@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::FindClosestLine"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FindClosestLine method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::FindClosestLine method [.NET Framework debugging]"

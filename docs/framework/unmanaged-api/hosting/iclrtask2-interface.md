@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRTask2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRTask2 interface [.NET Framework hosting]"
 ms.assetid: b5a22ebc-0582-49de-91f9-97a3d9789290

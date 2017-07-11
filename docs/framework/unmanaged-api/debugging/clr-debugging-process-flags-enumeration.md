@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAG"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAGS enumeration [.NET Framework debugging]"
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3

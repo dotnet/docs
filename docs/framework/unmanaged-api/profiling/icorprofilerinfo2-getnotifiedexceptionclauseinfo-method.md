@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetNotifiedExceptionClauseInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo2::GetNotifiedExceptionCaluseInfo method [.NET Framework profiling]"
   - "GetNotifiedExceptionCaluseInfo method [.NET Framework profiling]"

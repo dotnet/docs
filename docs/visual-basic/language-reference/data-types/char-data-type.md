@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Char"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "literal type characters, C"
   - "Char data type"

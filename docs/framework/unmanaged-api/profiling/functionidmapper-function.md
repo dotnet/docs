@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "FunctionIDMapper"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "FunctionIDMapper function [.NET Framework profiling]"
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa

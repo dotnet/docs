@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ASM_DISPLAY_FLAGS"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ASM_DISPLAY_FLAGS enumeration [.NET Framework fusion]"
 ms.assetid: dbade6c9-9d26-4a79-9fd2-46108edd12d7

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDispose::Destroy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDispose::Destroy method [.NET Framework debugging]"
   - "Destroy method [.NET Framework debugging]"

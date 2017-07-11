@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugUnwindableFrame"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugUnwindableFrame interface [.NET Framework debugging]"
 ms.assetid: cd6a3982-6ed3-4909-808d-a66055e813e0

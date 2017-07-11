@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRProbingAssemblyEnum::Get"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Get method, ICLRProbingAssemblyEnum interface [.NET Framework hosting]"
   - "ICLRProbingAssemblyEnum::Get method [.NET Framework hosting]"

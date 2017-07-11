@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "_EFN_GetManagedObjectFieldInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "_EFN_GetManagedObjectFieldInfo function [.NET Framework debugging]"
 ms.assetid: 3b93bcff-62a4-47b2-babc-6bcf4216119a

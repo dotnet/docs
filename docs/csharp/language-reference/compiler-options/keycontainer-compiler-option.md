@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/keycontainer"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/keycontainer compiler option [C#]"
   - "keycontainer compiler option [C#]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineField"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::DefineField method [.NET Framework metadata]"
   - "DefineField method, IMetaDataEmit interface [.NET Framework metadata"

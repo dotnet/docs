@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule2::ResolveAssembly"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule2::ResolveAssembly method [.NET Framework debugging]"
   - "ResolveAssembly method [.NET Framework debugging]"

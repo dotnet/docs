@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AssemblyFlags"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "AssemblyFlags enumeration [.NET Framework metadata]"
 ms.assetid: 40f9bd9e-16ec-447e-81b0-168c875e9866

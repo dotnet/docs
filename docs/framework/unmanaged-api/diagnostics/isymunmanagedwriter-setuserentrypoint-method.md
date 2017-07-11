@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::SetUserEntryPoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::SetUserEntryPoint method [.NET Framework debugging]"
   - "SetUserEntryPoint method [.NET Framework debugging]"

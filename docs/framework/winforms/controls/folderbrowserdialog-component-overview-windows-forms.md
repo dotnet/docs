@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "FolderBrowserDialog"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "FolderBrowserDialog component [Windows Forms], about FolderBrowserDialog"
   - "directories [Windows Forms], enabling browsing in applications"

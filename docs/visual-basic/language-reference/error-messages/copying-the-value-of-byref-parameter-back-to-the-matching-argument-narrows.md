@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc32053"
   - "vbc32053"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC32053"
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25

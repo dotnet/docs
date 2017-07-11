@@ -11,8 +11,6 @@ ms.topic: "article"
 f1_keywords: 
   - "this"
   - "this_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "this keyword [C#]"
 ms.assetid: d4f827fe-4710-410b-89b8-867dad44b8a3

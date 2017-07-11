@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRHostBindingPolicyManager::ModifyApplicationPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRHostBindingPolicyManager::ModifyApplicationPolicy method [.NET Framework hosting]"
   - "ModifyApplicationPolicy method [.NET Framework hosting]"

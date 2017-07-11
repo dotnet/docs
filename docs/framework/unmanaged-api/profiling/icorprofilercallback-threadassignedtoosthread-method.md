@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ThreadAssignedToOSThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ThreadAssignedToOSThread method [.NET Framework profiling]"
   - "ICorProfilerCallback::ThreadAssignedToOSThread method [.NET Framework profiling]"

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DataGrid"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "datasets [Windows Forms], binding to DataGrid control"
   - "data binding, DataGrid control"

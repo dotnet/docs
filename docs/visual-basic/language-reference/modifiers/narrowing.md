@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.narrowing"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "conversions, type"
   - "type conversion"

@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "EmbedResource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EmbedResource method"
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993

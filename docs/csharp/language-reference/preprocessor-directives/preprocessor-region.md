@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#region"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#region directive [C#]"
 ms.assetid: 672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4

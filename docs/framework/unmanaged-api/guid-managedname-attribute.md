@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GUID_ManagedName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GUID_ManagedName attribute"
 ms.assetid: 11e18095-e444-47bc-aff6-b887ac5dc01e

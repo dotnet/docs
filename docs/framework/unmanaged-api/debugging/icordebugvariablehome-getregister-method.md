@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetRegister"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugVariableHome::GetRegister method [.NET Framework debugging]"
   - "GetRegister method, ICorDebugVariableHome interface [.NET Framework debugging]"

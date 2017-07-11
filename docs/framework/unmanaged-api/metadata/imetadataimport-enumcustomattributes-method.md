@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumCustomAttributes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumCustomAttributes method [.NET Framework metadata]"
   - "IMetaDataImport::EnumCustomAttributes method [.NET Framework metadata]"

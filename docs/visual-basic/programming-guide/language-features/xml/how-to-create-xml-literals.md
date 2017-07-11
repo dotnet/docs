@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML literals [Visual Basic], creating"
 ms.assetid: 573a6db5-b14d-4e42-b356-8cc7e2d77745

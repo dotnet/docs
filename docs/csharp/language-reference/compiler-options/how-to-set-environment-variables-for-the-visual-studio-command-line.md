@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "cs.build.commandline"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "csc.exe, command-line builds"
   - "Visual C#, command-line builds"

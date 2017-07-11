@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "set"
   - "set_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "set keyword [C#]"
 ms.assetid: 30d7e4e5-cc2e-4635-a597-14a724879619

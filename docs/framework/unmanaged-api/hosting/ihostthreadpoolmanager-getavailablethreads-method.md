@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::GetAvailableThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetAvailableThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
   - "IHostThreadPoolManager::GetAvailableThreads method [.NET Framework hosting]"

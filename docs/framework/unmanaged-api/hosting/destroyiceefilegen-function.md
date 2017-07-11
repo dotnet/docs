@@ -19,8 +19,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "DestroyICeeFileGen"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DestroyICeeFileGen function [.NET Framework hosting]"
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab

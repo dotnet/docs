@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager interface [.NET Framework hosting]"
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0

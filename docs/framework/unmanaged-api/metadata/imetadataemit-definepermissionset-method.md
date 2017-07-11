@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefinePermissionSet"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DefinePermissionSet method [.NET Framework metadata]"
   - "IMetaDataEmit::DefinePermissionSet method [.NET Framework metadata]"

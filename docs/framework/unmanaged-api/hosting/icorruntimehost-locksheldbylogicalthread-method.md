@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::LocksHeldByLogicalThread"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::LocksHeldByLogicalThread method [.NET Framework hosting]"
   - "LocksHeldByLogicalThread method [.NET Framework hosting]"

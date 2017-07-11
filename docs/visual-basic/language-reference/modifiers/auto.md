@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Auto"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Auto keyword, external references"
   - "Declare statement, marshaling strings"

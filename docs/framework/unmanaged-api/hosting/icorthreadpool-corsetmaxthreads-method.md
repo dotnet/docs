@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorSetMaxThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorThreadpool::CorSetMaxThreads method [.NET Framework hosting]"
   - "CorSetMaxThreads method [.NET Framework hosting]"

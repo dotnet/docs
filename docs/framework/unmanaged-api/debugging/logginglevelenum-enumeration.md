@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "LoggingLevelEnum"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "LoggingLevelEnum enumeration [.NET Framework debugging]"
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5

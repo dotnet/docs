@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "DomainUpDown"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "spin button control, about spin button"
   - "DomainUpDown control [Windows Forms], about DomainUpDown control"

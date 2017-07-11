@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetUnhandledExceptionPolicy"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRPolicyManager::SetUnhandledExceptionPolicy method [.NET Framework hosting]"
   - "SetUnhandledExceptionPolicy method [.NET Framework hosting]"

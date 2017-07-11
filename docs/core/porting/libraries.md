@@ -44,7 +44,7 @@ This topic discusses the portability of third-party dependencies and what to do 
 
 Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), and Security Transparency. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, the CoreFX team maintains a [List of behavioral changes/compat breaks and deprecated/legacy APIs](https://github.com/dotnet/corefx/wiki/ApiCompat) at GitHub.
 
-Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Feel free to file an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are marked with the `port-to-core` label.
+Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. File an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are marked with the `port-to-core` label.
 
 ### AppDomains
 
@@ -52,11 +52,11 @@ AppDomains isolate apps from one another. AppDomains require runtime support and
 
 For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class. Information (such as the name and base directory) is provided by APIs on other types, for instance <xref:AppContext.BaseDirectory%2A>. Some scenarios, such as getting the list of loaded assemblies, are unsupported, as they're inherently fragile.
 
-To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=fullName>), some of them do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
+To make code migration from .NET Framework easier, we've exposed some of the <xref:System.AppDomain> API surface in .NET Core. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=fullName>), some of them do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>). Check the types you use against the [`System.AppDomain` reference source](https://github.com/dotnet/corefx/blob/master/src/System.Runtime.Extensions/src/System/AppDomain.cs) in the [dotnet/corefx GitHub repository](https://github.com/dotnet/corefx) making sure to select the branch that matches your implemented version.
 
 ### Remoting
 
-.NET Remoting was identified as a problematic architecture. It's used for cross-AppDomain communication, which is no longer supported. Also, Remoting requires runtime support, which is expensive to maintain. For these reasons, .NET Remoting isn't supported on .NET Core.
+.NET Remoting was identified as a problematic architecture. It's used for cross-AppDomain communication, which is no longer supported. Also, Remoting requires runtime support, which is expensive to maintain. For these reasons, .NET Remoting isn't supported on .NET Core, and we don't plan on adding support for it in the future.
 
 For communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to Remoting, such as the <xref:System.IO.Pipes> or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class.
 

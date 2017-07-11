@@ -5,6 +5,7 @@
 | .NET Framework (with tooling 2.0 preview) | 4.5   | 4.5    | 4.5.1 | 4.6   | 4.6.1 | 4.6.1  | 4.6.1  | 4.6.1 |
 | Mono                                      | 4.6   | 4.6    | 4.6   | 4.6   | 4.6   | 4.6    | 4.6    | vNext |
 | Xamarin.iOS                               | 10.0  | 10.0   | 10.0  | 10.0  | 10.0  | 10.0   | 10.0   | vNext |
+| Xamarin.Mac                               | 3.0   | 3.0    | 3.0   | 3.0   | 3.0   | 3.0    | 3.0    | vNext |
 | Xamarin.Android                           | 7.0   | 7.0    | 7.0   | 7.0   | 7.0   | 7.0    | 7.0    | vNext |
 | Universal Windows Platform                | 10.0  | 10.0   | 10.0  | 10.0  | 10.0  | vNext  | vNext  | vNext |
 | Windows                                   | 8.0   | 8.0    | 8.1   |       |       |        |        |       |

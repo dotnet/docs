@@ -42,7 +42,7 @@ Let's get started by writing some code first.  Make sure that the `Program.fs` f
 
 [!code-fsharp[HelloSquare](../../../samples/snippets/fsharp/getting-started/hello-square.fs)]
 
-In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
+In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
 ```
 val square: x:int -> int
@@ -116,7 +116,7 @@ val it : bool = true
 
 The pipe-forward operator, and more, are covered in later tutorials.
 
-This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](../fsharp-interactive/index.md).
+This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](tutorials/fsharp-interactive/index.md).
 
 ## Next steps
 

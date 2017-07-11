@@ -355,6 +355,10 @@ Parameter = new SqlParameter("@pname", (object)0);
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="parameterName" Type="System.String" />
         <Parameter Name="dbType" Type="System.Data.SqlDbType" />

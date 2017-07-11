@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a helper type that is used when configuring a <see cref="T:System.Composition.Convention.PartConventionBuilder`1"/>.</summary>
+    <summary>Represents a helper type that is used when configuring a <see cref="T:System.Composition.Convention.PartConventionBuilder`1" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,7 +44,8 @@
         <typeparam name="T">The type to import.</typeparam>
         <summary>Imports the specified type.</summary>
         <returns>The imported instance.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Import&lt;T&gt;">
@@ -71,7 +72,8 @@
         <param name="configure">The configuration for the import.</param>
         <summary>Imports the specified generic type by using the specified configuration.</summary>
         <returns>The imported instance.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

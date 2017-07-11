@@ -26,7 +26,7 @@ This example shows how to playback media indefinitely, that is, to set media so 
 ## Example  
  The following example uses                      <xref:System.Windows.Controls.MediaElement> and                      <xref:System.Windows.Media.MediaTimeline> in a                      <xref:System.Windows.Media.Animation.Storyboard> to play a media clip in an infinite loop.  
   
- [!code-xml[MediaGallery_snippet#SoundRepeatExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/SoundRepeatExample.xaml#soundrepeatexamplewholepage)]  
+ [!code-xaml[MediaGallery_snippet#SoundRepeatExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/SoundRepeatExample.xaml#soundrepeatexamplewholepage)]  
   
 ## See Also  
  <xref:System.Windows.Controls.MediaElement>   

@@ -281,7 +281,7 @@ Here are a few ways you can troubleshoot certain problems that you might run int
 5. If none of the Ionide commands are working, check your [Visual Studio Code keybindings](https://code.visualstudio.com/docs/customization/keybindings#_customizing-shortcuts) to see if you're overriding them by accident.
 6. If Ionide is broken on your machine and none of the above has fixed your problem, try removing the `ionide-fsharp` directory on your machine and reinstall the plugin suite.
 
-Ionide is an open source project built and maintained by members of the F# community.  Please report issues and feel free to contribute at the [Ionide-Vscode-Fsharp GitHub repository](https://github.com/ionide/ionide-vscode-fsharp).
+Ionide is an open source project built and maintained by members of the F# community.  Please report issues and feel free to contribute at the [Ionide-VSCode: FSharp GitHub repository](https://github.com/ionide/ionide-vscode-fsharp).
 
 If you have an issue to report, please follow [the instructions for getting logs to use when reporting an issue](https://github.com/ionide/ionide-vscode-fsharp#how-to-get-logs-for-debugging--issue-reporting).
 
@@ -303,4 +303,4 @@ To learn more about F# and the features of the language, check out [Tour of F#](
 
 [Namespaces](../../language-reference/namespaces.md)
 
-[Ionide-Vscode-Fsharp](https://github.com/ionide/ionide-vscode-fsharp)
+[Ionide-VSCode: FSharp](https://github.com/ionide/ionide-vscode-fsharp)

@@ -315,7 +315,8 @@
       <Parameters />
       <Docs>
         <summary>Gets the status of the HTTP No-Transform Directive.</summary>
-        <returns><see langword="true" /> if the HTTP No-Transform Directive is set; otherwise <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the HTTP No-Transform Directive is set; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

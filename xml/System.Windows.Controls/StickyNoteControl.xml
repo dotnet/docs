@@ -81,7 +81,7 @@
 ## Examples  
  The following example shows how menu commands in a <xref:System.Windows.Controls.DocumentViewer> can be configured to execute the <xref:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand> and <xref:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand> of the <xref:System.Windows.Annotations.AnnotationService> class. The example shows how to read an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document into a <xref:System.Windows.Controls.DocumentViewer> control and then enable support for adding user-created sticky notes.  
   
- [!code-xml[DocViewerAnnotationsXps#CreateDeleteAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml#createdeleteannotations)]  
+ [!code-xaml[DocViewerAnnotationsXps#CreateDeleteAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml#createdeleteannotations)]  
   
  ]]></format>
     </remarks>

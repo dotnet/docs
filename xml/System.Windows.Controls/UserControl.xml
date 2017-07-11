@@ -29,7 +29,7 @@
 ## Examples  
  The following example shows how to create a simple `NumericUpDown`<xref:System.Windows.Controls.UserControl>.  
   
- [!code-xml[UserControlNumericUpDown#Markup](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#markup)]  
+ [!code-xaml[UserControlNumericUpDown#Markup](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#markup)]  
   
  The following shows the logic of this <xref:System.Windows.Controls.UserControl>:  
   

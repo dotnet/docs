@@ -46,7 +46,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is a read-only wrapper around an <xref:System.Collections.ObjectModel.ObservableCollection%601>. If changes are made to the underlying collection, the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> reflects those changes. To be notified of the changes to this class, subscribe to the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601.System%23Collections%23Specialized%23INotifyCollectionChanged%23CollectionChanged> or <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601.System%23ComponentModel%23INotifyPropertyChanged%23PropertyChanged> event.  
+ This class is a read-only wrapper around an <xref:System.Collections.ObjectModel.ObservableCollection%601>. If changes are made to the underlying collection, the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> reflects those changes. To be notified of the changes to this class, subscribe to the <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.CollectionChanged> or <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.PropertyChanged> event.  
   
  ]]></format>
     </remarks>

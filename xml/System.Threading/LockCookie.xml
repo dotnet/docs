@@ -173,7 +173,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Equals%28System.Threading.LockCookie%2CSystem.Threading.LockCookie%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Equals%28System.Threading.LockCookie%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -209,7 +209,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Compare%28System.Threading.LockCookie%2CSystem.Threading.LockCookie%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Equals%28System.Threading.LockCookie%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

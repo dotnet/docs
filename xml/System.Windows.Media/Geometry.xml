@@ -1117,7 +1117,7 @@
   
  The example uses a <xref:System.Windows.Media.GeometryGroup> to create a composite shape from three <xref:System.Windows.Media.Geometry> objects and then rotates the geometry 45 degrees by using the <xref:System.Windows.Media.Geometry.Transform%2A> property.  
   
- [!code-xml[Transforms_snip#GeometryTransformExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/GeometryTransformExample.xaml#geometrytransformexamplewholepage)]  
+ [!code-xaml[Transforms_snip#GeometryTransformExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/GeometryTransformExample.xaml#geometrytransformexamplewholepage)]  
   
  ]]></format>
         </remarks>

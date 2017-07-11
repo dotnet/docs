@@ -349,7 +349,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -382,7 +382,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Security.AccessControl.GenericAce" /> objects are unequal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Compare%28System.Security.AccessControl.GenericAce%2CSystem.Security.AccessControl.GenericAce%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.AccessControl.GenericAce.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

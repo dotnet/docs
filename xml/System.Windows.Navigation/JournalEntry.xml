@@ -231,7 +231,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Navigation.JournalEntry.Name%2A> property for a <xref:System.Windows.Controls.Page> from markup, with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attached property usage.  
   
- [!code-xml[JournalEntrySnippets#JENameMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntrySnippets/CSharp/JENamePage.xaml#jenamemarkup)]  
+ [!code-xaml[JournalEntrySnippets#JENameMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntrySnippets/CSharp/JENamePage.xaml#jenamemarkup)]  
   
  ]]></format>
         </remarks>

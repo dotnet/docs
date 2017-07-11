@@ -1,0 +1,113 @@
+<Type Name="IServerWebConfig" FullName="System.EnterpriseServices.Internal.IServerWebConfig">
+  <TypeSignature Language="C#" Value="public interface IServerWebConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServerWebConfig" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IServerWebConfig" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6261e4b5-572a-4142-a2f9-1fe1a0c97097")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Creates a Web.config file for a SOAP-enabled COM+ application and adds component entries to the file for COM interfaces being published in the application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IServerWebConfig> interface is implemented only by the <xref:System.EnterpriseServices.Internal.ServerWebConfig> class and is only used within the .NET Framework infrastructure. Rather than implementing this interface or instantiating an <xref:System.EnterpriseServices.Internal.IServerWebConfig> interface object, use the <xref:System.EnterpriseServices.Internal.Publish> class, which implements the <xref:System.EnterpriseServices.Internal.IComSoapPublisher> interface.  
+  
+ <xref:System.EnterpriseServices.Internal.IServerWebConfig> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+  </Docs>
+  <Members>
+    <Member MemberName="AddElement">
+      <MemberSignature Language="C#" Value="public void AddElement (string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, out string Error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddElement(string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, string Error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FilePath" Type="System.String" />
+        <Parameter Name="AssemblyName" Type="System.String" />
+        <Parameter Name="TypeName" Type="System.String" />
+        <Parameter Name="ProgId" Type="System.String" />
+        <Parameter Name="Mode" Type="System.String" />
+        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="FilePath">The path for the existing Web.config file.</param>
+        <param name="AssemblyName">The name of the assembly that contains the type being added.</param>
+        <param name="TypeName">The name of the type being added.</param>
+        <param name="ProgId">The programmatic identifier for the type being added.</param>
+        <param name="Mode">A string constant that corresponds to the name of a member from the <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> enumeration, which indicates how a well-known object is activated.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Adds XML elements to a Web.config file for a COM interface being published in a SOAP-enabled COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.EnterpriseServices.Internal.ServerWebConfig.AddElement%2A> method for implementation details. However, you do not need to call `AddElement` method directly.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create (string FilePath, string FileRootName, out string Error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string FilePath, string FileRootName, string Error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FilePath" Type="System.String" />
+        <Parameter Name="FileRootName" Type="System.String" />
+        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="FilePath">The folder in which to create the configuration file.</param>
+        <param name="FileRootName">The string value to which a config extension can be added (for example, Web for Web.config).</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Creates a Web.config file for a SOAP-enabled COM+ application so that the file is ready to have XML elements added for COM interfaces being published.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.EnterpriseServices.Internal.ServerWebConfig.Create%2A> method for implementation details. However, you do not need to call `Create` directly.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

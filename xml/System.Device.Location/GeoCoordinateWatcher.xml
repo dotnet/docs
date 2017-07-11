@@ -35,7 +35,7 @@
   
  To begin accessing location data, create a <xref:System.Device.Location.GeoCoordinateWatcher> and call <xref:System.Device.Location.GeoCoordinateWatcher.Start%2A> or <xref:System.Device.Location.GeoCoordinateWatcher.TryStart%2A> to initiate the acquisition of data from the current location provider.  
   
- The <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property can be checked to determine if data is available. If data is available, you can get the location one time from the <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> property, or receive continuous location updates by handling the <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> event.  
+ The <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property can be checked to determine if data is available. If data is available, you can get the location one time from the <xref:System.Device.Location.GeoCoordinateWatcher.Position*> property, or receive continuous location updates by handling the <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> event.  
   
  The <xref:System.Device.Location.GeoCoordinateWatcher.Permission%2A>, <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A>, and <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> properties support <xref:System.ComponentModel.INotifyPropertyChanged>, so that an application can data-bind to these properties.  
   
@@ -333,7 +333,7 @@
   
 -   No location events will be raised.  
   
- The following diagram represents location coordinates that the location provider (for example, a GPS device) supplies to the computer. P1, in the diagram, represents the location data included in a <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> event, and P2, P3, and P4 represent points within the movement threshold. So when the location provider supplies data indicating a location at those points (P1, P2, P3, and P4), no <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> events are raised, and <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> returns P1. The point P5 is outside of the <xref:System.Device.Location.GeoCoordinateWatcher.MovementThreshold%2A> distance, so at that point, <xref:System.Device.Location.GeoLocationProvider.Location%2A> is updated and a <xref:System.Device.Location.GeoLocationProvider.LocationChanged> event is raised.  
+ The following diagram represents location coordinates that the location provider (for example, a GPS device) supplies to the computer. P1, in the diagram, represents the location data included in a <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> event, and P2, P3, and P4 represent points within the movement threshold. So when the location provider supplies data indicating a location at those points (P1, P2, P3, and P4), no <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> events are raised, and <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> returns P1. The point P5 is outside of the <xref:System.Device.Location.GeoCoordinateWatcher.MovementThreshold%2A> distance, so at that point, <xref:System.Device.Location.GeoCoordinateWatcher.Position*> is updated and a <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> event is raised.  
   
  ![Diagram illustrating MovementThreshold](~/add/media/ndp-movementthreshold.png "Diagram illustrating MovementThreshold")  
   
@@ -415,7 +415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle the <xref:System.Device.Location.GeoCoordinateWatcher.System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event to implement data binding in Windows Forms applications.  
+ Handle the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event to implement data binding in Windows Forms applications.  
   
  This method indicates that the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property, the <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> property, or the <xref:System.Device.Location.GeoCoordinateWatcher.Permission%2A> property has changed.  
   
@@ -672,7 +672,7 @@
 ## Remarks  
  After <xref:System.Device.Location.GeoCoordinateWatcher.Stop%2A> is called, no further <xref:System.Device.Location.GeoCoordinateWatcher.PositionChanged> events occur, and the <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> property will return <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
- When <xref:System.Device.Location.GeoCoordinateWatcher.Stop%2A> is called, the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property is set to <xref:System.Device.Location.GeoLocationStatus.Disabled>.  
+ When <xref:System.Device.Location.GeoCoordinateWatcher.Stop%2A> is called, the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property is set to <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
   
  ]]></format>
         </remarks>

@@ -207,7 +207,7 @@
 ## Examples  
  The following example sets <xref:System.Windows.ContentElement.AllowDrop%2A> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
   
- [!code-xml[ContentElementsSmorgasbord#AllowDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#allowdrop)]  
+ [!code-xaml[ContentElementsSmorgasbord#AllowDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#allowdrop)]  
   
  ]]></format>
         </remarks>
@@ -1001,7 +1001,7 @@
 ## Examples  
  The following example creates a style that makes a <xref:System.Windows.Documents.Paragraph> focusable by default and gives it a visual behavior when it receives focus.  
   
- [!code-xml[ContentElementsSmorgasbord#Focusable](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#focusable)]  
+ [!code-xaml[ContentElementsSmorgasbord#Focusable](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#focusable)]  
   
  ]]></format>
         </remarks>
@@ -1606,7 +1606,7 @@
 ## Examples  
  The following example creates a style that includes a property setter that gives an alternate visual behavior when a <xref:System.Windows.Documents.Hyperlink> is set to <xref:System.Windows.ContentElement.IsEnabled%2A> `false`.  
   
- [!code-xml[ContentElementsSmorgasbord#IsEnabledIsMouseOver](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#isenabledismouseover)]  
+ [!code-xaml[ContentElementsSmorgasbord#IsEnabledIsMouseOver](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#isenabledismouseover)]  
   
  ]]></format>
         </remarks>
@@ -1710,7 +1710,7 @@
 ## Examples  
  The following example creates a style that makes a <xref:System.Windows.Documents.Paragraph> focusable by default and gives it a visual behavior when it receives focus.  
   
- [!code-xml[ContentElementsSmorgasbord#Focusable](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#focusable)]  
+ [!code-xaml[ContentElementsSmorgasbord#Focusable](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#focusable)]  
   
  ]]></format>
         </remarks>
@@ -2181,7 +2181,7 @@
 ## Examples  
  The following example creates a style that includes a property setter that gives an alternate visual behavior when a <xref:System.Windows.Documents.Hyperlink> reports <xref:System.Windows.ContentElement.IsMouseOver%2A> `true`.  
   
- [!code-xml[ContentElementsSmorgasbord#IsEnabledIsMouseOver](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#isenabledismouseover)]  
+ [!code-xaml[ContentElementsSmorgasbord#IsEnabledIsMouseOver](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#isenabledismouseover)]  
   
  ]]></format>
         </remarks>

@@ -67,8 +67,8 @@
 ## Examples  
  The following example initializes a <xref:System.Management.SelectQuery> by specifying a query.  
   
- [!code-csharp[wminet_SelectQuery(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(S)/cs/SelectQuery(S).cs#1)]
- [!code-vb[wminet_SelectQuery(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(S)/vb/SelectQuery(S).vb#1)]  
+ [!code-csharp[wminet_SelectQuery-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery-S/cs/SelectQuery-S.cs#1)]
+ [!code-vb[wminet_SelectQuery-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery-S/vb/SelectQuery-S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -105,8 +105,8 @@
 ## Examples  
  The following example initializes a <xref:System.Management.SelectQuery> by specifying a condition.  
   
- [!code-csharp[wminet_SelectQuery(B_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(B_S)/cs/SelectQuery(B_S).cs#1)]
- [!code-vb[wminet_SelectQuery(B_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(B_S)/vb/SelectQuery(B_S).vb#1)]  
+ [!code-csharp[wminet_SelectQuery-B_S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery-B_S/cs/SelectQuery-B_S.cs#1)]
+ [!code-vb[wminet_SelectQuery-B_S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery-B_S/vb/SelectQuery-B_S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -142,8 +142,8 @@
 ## Examples  
  The following example initializes a <xref:System.Management.SelectQuery> by specifying a WMI class name and a condition.  
   
- [!code-csharp[wminet_SelectQuery(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S)/cs/SelectQuery(S_S).cs#1)]
- [!code-vb[wminet_SelectQuery(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S)/vb/SelectQuery(S_S).vb#1)]  
+ [!code-csharp[wminet_SelectQuery-S_S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery-S_S/cs/SelectQuery-S_S.cs#1)]
+ [!code-vb[wminet_SelectQuery-S_S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery-S_S/vb/SelectQuery-S_S.vb#1)]  
   
  ]]></format>
         </remarks>
@@ -181,8 +181,8 @@
 ## Examples  
  The following example initializes a <xref:System.Management.SelectQuery> by specifying a WMI class name, condition, and array of properties.  
   
- [!code-csharp[wminet_SelectQuery(S_S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S_S)/cs/SelectQuery(S_S_S).cs#1)]
- [!code-vb[wminet_SelectQuery(S_S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S_S)/vb/SelectQuery(S_S_S).vb#1)]  
+ [!code-csharp[wminet_SelectQuery-S_S_S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery-S_S_S/cs/SelectQuery-S_S_S.cs#1)]
+ [!code-vb[wminet_SelectQuery-S_S_S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery-S_S_S/vb/SelectQuery-S_S_S.vb#1)]  
   
  ]]></format>
         </remarks>

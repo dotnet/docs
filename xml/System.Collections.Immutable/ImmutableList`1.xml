@@ -2214,6 +2214,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a range of elements from this immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
       <MemberSignature Language="C#" Value="System.Collections.Immutable.IImmutableList&lt;T&gt; IImmutableList&lt;T&gt;.RemoveRange (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
@@ -2412,23 +2430,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Immutable</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a range of elements from this immutable list.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

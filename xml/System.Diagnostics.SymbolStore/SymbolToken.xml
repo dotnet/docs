@@ -208,7 +208,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%2CSystem.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -244,7 +244,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> and <paramref name="b" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Compare%28System.Diagnostics.SymbolStore.SymbolToken%2CSystem.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

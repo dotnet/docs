@@ -41,7 +41,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.Panel.Children%2A> property to add two <xref:System.Windows.Controls.Button> objects to a <xref:System.Windows.Controls.StackPanel>.  
   
- [!code-xml[StackPanel_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_snip/CS/StackPanelExample.xaml#stackpanelexamplewholepage)] 
+ [!code-xaml[StackPanel_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StackPanel_snip/CS/StackPanelExample.xaml#stackpanelexamplewholepage)] 
  [!code-csharp[Stackpanel_Procedural_snip#StackPanelExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Stackpanel_Procedural_snip/CSharp/StackpanelExample.cs#stackpanelexamplewholepage)] 
  [!code-vb[Stackpanel_Procedural_snip#StackPanelExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Stackpanel_Procedural_snip/visualbasic/stackpanelexample.vb#stackpanelexamplewholepage)]  
   
@@ -98,7 +98,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.Panel.Background%2A> of a <xref:System.Windows.Controls.Grid> to a <xref:System.Windows.Media.RadialGradientBrush>.  
   
- [!code-xml[PanelBackground#1](~/samples/snippets/csharp/VS_Snippets_Wpf/panelbackground/CS/mainwindow.xaml#1)]  
+ [!code-xaml[PanelBackground#1](~/samples/snippets/csharp/VS_Snippets_Wpf/panelbackground/CS/mainwindow.xaml#1)]  
   
  ]]></format>
         </remarks>
@@ -359,11 +359,11 @@
 ## Examples  
  The following example uses a <xref:System.Windows.Controls.ControlTemplate> to create a horizontal <xref:System.Windows.Controls.ListBox>. The horizontal <xref:System.Windows.Controls.StackPanel> is specified within the <xref:System.Windows.Controls.ControlTemplate>. The <xref:System.Windows.Controls.Panel.IsItemsHost%2A> property is set to `true` on the <xref:System.Windows.Controls.StackPanel>, which indicates that the generated items should be placed in the panel. When you specify it this way, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> cannot be replaced by the user of the control without using a <xref:System.Windows.Controls.ControlTemplate>. Therefore, do this only if you know that you do not want the panel to be replaced without the use of a template.  
   
- [!code-xml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]   
+ [!code-xaml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]   
   
  Alternatively, you can set the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A?displayProperty=fullName> property. The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> in a <xref:System.Windows.Style> of a <xref:System.Windows.Controls.ListBox>.  
   
- [!code-xml[listboxhorizontal#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxHorizontal/CS/window1.xaml#1)]   
+ [!code-xaml[listboxhorizontal#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxHorizontal/CS/window1.xaml#1)]   
   
  ]]></format>
         </remarks>

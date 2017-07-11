@@ -154,7 +154,7 @@
 ## Examples  
  The following example shows two similar gradients that have different modes of color interpolation, which causes the interpolation to happen in different color spaces.  
   
- [!code-xml[GradientBrushExamples_snip#ColorInterpolationModeExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GradientBrushExamples_snip/XAML/ColorInterpolationModeExample.xaml#colorinterpolationmodeexamplewholepage)]  
+ [!code-xaml[GradientBrushExamples_snip#ColorInterpolationModeExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GradientBrushExamples_snip/XAML/ColorInterpolationModeExample.xaml#colorinterpolationmodeexamplewholepage)]  
   
  The following illustration shows what the preceding example produces.  
   
@@ -264,7 +264,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property to specify what coordinate system to use for the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> of the gradient.  
   
- [!code-xml[GradientBrushExamples_snip#GradientBrushMappingModeExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GradientBrushExamples_snip/XAML/GradientBrushMappingModeExample.xaml#gradientbrushmappingmodeexamplewholepage)]  
+ [!code-xaml[GradientBrushExamples_snip#GradientBrushMappingModeExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GradientBrushExamples_snip/XAML/GradientBrushMappingModeExample.xaml#gradientbrushmappingmodeexamplewholepage)]  
   
  ]]></format>
         </remarks>
@@ -324,7 +324,7 @@ Gradient spread methods
 ## Examples  
  The following example applies different <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> settings to several <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush> objects.  
   
- [!code-xml[BrushesIntroduction_snip#GraphicsmmGradientSpreadExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushesIntroduction_snip/XAML/GradientSpreadExample.xaml#graphicsmmgradientspreadexamplewholepage)]  
+ [!code-xaml[BrushesIntroduction_snip#GraphicsmmGradientSpreadExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushesIntroduction_snip/XAML/GradientSpreadExample.xaml#graphicsmmgradientspreadexamplewholepage)]  
   
  ]]></format>
         </remarks>

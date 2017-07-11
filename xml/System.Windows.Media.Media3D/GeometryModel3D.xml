@@ -27,11 +27,11 @@
 ## Examples  
  The following code excerpt creates a <xref:System.Windows.Media.Media3D.GeometryModel3D> in the shape of a cube.  
   
- [!code-xml[Basic3D#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ [!code-xaml[Basic3D#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
   
  The following code excerpt uses a <xref:System.Windows.Media.Media3D.GeometryModel3D> whose <xref:System.Windows.Media.Media3D.GeometryModel3D.Geometry%2A> is defined as a static resource.  
   
- [!code-xml[Animate3Drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
+ [!code-xaml[Animate3Drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
   
  ]]></format>
     </remarks>
@@ -73,9 +73,9 @@
 ## Examples  
  The following excerpt shows syntax for instances of GeometryModel3D.  
   
- [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+ [!code-xaml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
   
- [!code-xml[basic3d#Basic3DXAML3DN4](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn4)]  
+ [!code-xaml[basic3d#Basic3DXAML3DN4](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn4)]  
   
  ]]></format>
         </remarks>
@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [!code-xml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
+ [!code-xaml[animate3drotation#Animate3DRotation3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn3)]  
   
  ]]></format>
         </remarks>
@@ -267,11 +267,11 @@
 ## Examples  
  The following code excerpt creates a <xref:System.Windows.Media.Media3D.GeometryModel3D> in the shape of a cube.  
   
- [!code-xml[Basic3D#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
+ [!code-xaml[Basic3D#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
   
  The following code excerpt uses a <xref:System.Windows.Media.Media3D.GeometryModel3D> whose <xref:System.Windows.Media.Media3D.GeometryModel3D.Geometry%2A> is defined as a static resource.  
   
- [!code-xml[Animate3Drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
+ [!code-xaml[Animate3Drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
   
  ]]></format>
         </remarks>
@@ -328,7 +328,7 @@
 ## Examples  
  The following code excerpt defines a <xref:System.Windows.Media.SolidColorBrush> as a <xref:System.Windows.Media.Media3D.DiffuseMaterial> on a GeometryModel3D.  
   
- [!code-xml[Animate3Drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
+ [!code-xaml[Animate3Drotation#Animate3DRotation3DN1](~/samples/snippets/csharp/VS_Snippets_Wpf/Animate3DRotation/CS/Window1.xaml#animate3drotation3dn1)]  
   
  ]]></format>
         </remarks>

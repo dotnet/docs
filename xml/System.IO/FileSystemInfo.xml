@@ -189,7 +189,9 @@
   
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
   
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ The value may be cached when either the value itself or other <xref:System.IO.FileSystemInfo> properties are accessed. To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.
+
+ If the path doesn't exist as of the last cached state, the return value is `(FileAttributes)(-1)`. <xref:System.IO.FileNotFoundException> or <xref:System.IO.DirectoryNotFoundException> can only be thrown when setting the value.
   
  The value of this property is a combination of the archive, compressed, directory, hidden, offline, read-only, system, and temporary file attribute flags.  
   
@@ -208,14 +210,14 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.IO.FileNotFoundException">The specified file does not exist.</exception>
-        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid; for example, it is on an unmapped drive.</exception>
-        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The specified file doesn't exist. Only thrown when setting the property value.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid. For example, it's on an unmapped drive. Only thrown when setting the property value.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller doesn't have the required permission.</exception>
         <exception cref="T:System.ArgumentException">The caller attempts to set an invalid file attribute.  
   
  -or-  
   
- The user attempts to set an attribute value but does not have write permission.</exception>
+ The user attempts to set an attribute value but doesn't have write permission.</exception>
         <exception cref="T:System.IO.IOException">
           <see cref="M:System.IO.FileSystemInfo.Refresh" /> cannot initialize the data.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing files and directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>

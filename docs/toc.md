@@ -4,6 +4,7 @@
 # [.NET Platform Guide](standard/index.md)
 ## [Get Started with .NET](standard/get-started.md)
 ## [Tour of .NET](standard/tour.md)
+## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
 ## [Frameworks and Targets](standard/frameworks.md)

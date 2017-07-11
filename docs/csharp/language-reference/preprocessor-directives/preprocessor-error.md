@@ -33,7 +33,7 @@ translation.priority.ht:
 # #error (C# Reference)
 `#error` lets you generate an error from a specific location in your code. For example:  
   
-```  
+```csharp
 #error Deprecated code in this method.  
 ```  
   
@@ -44,7 +44,7 @@ translation.priority.ht:
   
 ## Example  
   
-```  
+```csharp
 // preprocessor_error.cs  
 // CS1029 expected  
 #define DEBUG  

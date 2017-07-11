@@ -547,7 +547,7 @@
 ## Examples  
  The following examples are part of an application that checks whether the user has set the properties of two objects to equal values. The first example creates two <xref:System.Windows.Controls.TextBox> controls, each of which is bound to a different data source. The <xref:System.Windows.Controls.StackPanel> has a <xref:System.Windows.Data.BindingGroup> that contains a <xref:System.Windows.Controls.ValidationRule> that checks that the two strings are equal.  
   
- [!code-xml[BindingGroupSnippets#BindingGroupComplete](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupcomplete)]  
+ [!code-xaml[BindingGroupSnippets#BindingGroupComplete](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupcomplete)]  
   
  The following example shows the <xref:System.Windows.Controls.ValidationRule> that the previous example uses.  In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method override, the example gets each source object from the <xref:System.Windows.Data.BindingGroup> and checks whether the properties of the objects are equal.  
   
@@ -650,7 +650,7 @@
 ## Examples  
  The following example has a large graphic in a constrained scrolling region. A button on the page has a handler that scrolls the view to a particular region of the large graphic.  
   
- [!code-xml[BaseElementsSmorgasbord#BringIntoViewRectMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/BaseElementsSmorgasbord/CSharp/Page1.xaml#bringintoviewrectmarkup)]  
+ [!code-xaml[BaseElementsSmorgasbord#BringIntoViewRectMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/BaseElementsSmorgasbord/CSharp/Page1.xaml#bringintoviewrectmarkup)]  
   
  [!code-csharp[BaseElementsSmorgasbord#BringIntoViewRectCode](~/samples/snippets/csharp/VS_Snippets_Wpf/BaseElementsSmorgasbord/CSharp/Page1.xaml.cs#bringintoviewrectcode)]
  [!code-vb[BaseElementsSmorgasbord#BringIntoViewRectCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BaseElementsSmorgasbord/visualbasic/page1.xaml.vb#bringintoviewrectcode)]  
@@ -714,7 +714,7 @@
   
  To use this event as an <xref:System.Windows.EventTrigger> in a style, you must reference the underlying service's definition of the event:  
   
- [!code-xml[CorePseudocode#FEContextMenuClosing](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuclosing)]  
+ [!code-xaml[CorePseudocode#FEContextMenuClosing](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuclosing)]  
   
  (This usage is required because the event implementation on <xref:System.Windows.FrameworkElement> that exposes the underlying service event does not map the <xref:System.Windows.FrameworkElement.ContextMenuClosing> identifier such that you can use it as a trigger).  
   
@@ -785,7 +785,7 @@
   
  To use this event as an <xref:System.Windows.EventTrigger> in a style, you must reference the underlying attached event:  
   
- [!code-xml[CorePseudocode#FEContextMenuOpening](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuopening)]  
+ [!code-xaml[CorePseudocode#FEContextMenuOpening](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuopening)]  
   
  (This usage is required because the event implementation on <xref:System.Windows.FrameworkElement> that exposes the underlying service event does not map the <xref:System.Windows.FrameworkElement.ContextMenuOpening> identifier such that you can use it in triggers).  
   
@@ -1009,9 +1009,9 @@
 ## Examples  
  The following example illustrates how a data context acts on a binding and provides the information that defines the specific values of bound properties.  
   
- [!code-xml[MasterDetail#DataContextProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#datacontextproperty)]  
-[!code-xml[MasterDetail#DataContextProperty2](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#datacontextproperty2)]  
-[!code-xml[MasterDetail#DataContextProperty3](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#datacontextproperty3)]  
+ [!code-xaml[MasterDetail#DataContextProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#datacontextproperty)]  
+[!code-xaml[MasterDetail#DataContextProperty2](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#datacontextproperty2)]  
+[!code-xaml[MasterDetail#DataContextProperty3](~/samples/snippets/csharp/VS_Snippets_Wpf/MasterDetail/CSharp/Page1.xaml#datacontextproperty3)]  
   
  ]]></format>
         </remarks>
@@ -1420,7 +1420,7 @@
 ## Examples  
  The following example forces the cursor value.  
   
- [!code-xml[ForceCursor#ForceCursor](~/samples/snippets/csharp/VS_Snippets_Wpf/ForceCursor/CS/default.xaml#forcecursor)]  
+ [!code-xaml[ForceCursor#ForceCursor](~/samples/snippets/csharp/VS_Snippets_Wpf/ForceCursor/CS/default.xaml#forcecursor)]  
   
  ]]></format>
         </remarks>
@@ -2071,7 +2071,7 @@
  [!code-cpp[LayoutTransform#1](~/samples/snippets/cpp/VS_Snippets_Wpf/LayoutTransform/CPP/LayoutTransform.cpp#1)]
  [!code-csharp[LayoutTransform#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutTransform/CSharp/LayoutTransform.cs#1)]
  [!code-vb[LayoutTransform#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutTransform/VisualBasic/LayoutTransform.vb#1)]
- [!code-xml[LayoutTransform#1](~/samples/snippets/xaml/VS_Snippets_Wpf/LayoutTransform/XAML/default.xaml#1)]  
+ [!code-xaml[LayoutTransform#1](~/samples/snippets/xaml/VS_Snippets_Wpf/LayoutTransform/XAML/default.xaml#1)]  
   
  ]]></format>
         </remarks>
@@ -3927,10 +3927,10 @@
 ## Examples  
  The following example defines a style in a resource dictionary.  
   
- [!code-xml[FEResource#StyleProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty)]  
-[!code-xml[FEResource#StyleProperty2](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty2)]  
-[!code-xml[FEResource#StyleProperty3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty3)]  
-[!code-xml[FEResource#StyleProperty4](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty4)]  
+ [!code-xaml[FEResource#StyleProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty)]  
+[!code-xaml[FEResource#StyleProperty2](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty2)]  
+[!code-xaml[FEResource#StyleProperty3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty3)]  
+[!code-xaml[FEResource#StyleProperty4](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResource/CS/default.xaml#styleproperty4)]  
   
  ]]></format>
         </remarks>

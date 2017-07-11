@@ -26,7 +26,7 @@ You must also have [git installed](https://git-scm.com/download) and available o
 
 If you're on Windows, you have two options for installing F#.
 
-If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
+If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](get-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
 
 If you prefer not to install Visual Studio, use the following instructions:
 
@@ -164,7 +164,7 @@ This did three things:
 2. It sent the code you highlighted over the FSI process.
 3. The FSI process evaluated the code you sent over.
 
-Because what you sent over was a [function](../../language-reference/functions/index.md), you can now call that function with FSI!  In the interactive window, type the following:
+Because what you sent over was a [function](../language-reference/functions/index.md), you can now call that function with FSI!  In the interactive window, type the following:
 
 ```fsharp
 toPigLatin "banana";;
@@ -233,7 +233,7 @@ The next step in REPL-driven development is to move working code into an F# impl
 
 To begin, open `ClassLibraryDemo.fs`.  You'll notice that some code is already in there.  Go ahead and delete the class definition, but make sure to leave the [`namespace`](../../language-reference/namespaces.md) declaration at the top.
 
-Next, create a new [`module`](../../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function into it as such:
+Next, create a new [`module`](../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function into it as such:
 
 [!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
 
@@ -289,18 +289,18 @@ You can also ask for further help from the Ionide developers and F# community in
 
 ## Next steps
 
-To learn more about F# and the features of the language, check out [Tour of F#](../../tour.md).
+To learn more about F# and the features of the language, check out [Tour of F#](../tour.md).
 
 ## See also
 
-[Tour of F#](../../tour.md)
+[Tour of F#](../tour.md)
 
-[F# Language Reference](../../language-reference/index.md)
+[F# Language Reference](../language-reference/index.md)
 
-[Functions](../../language-reference/functions/index.md)
+[Functions](../language-reference/functions/index.md)
 
-[Modules](../../language-reference/modules.md)
+[Modules](../language-reference/modules.md)
 
-[Namespaces](../../language-reference/namespaces.md)
+[Namespaces](../language-reference/namespaces.md)
 
 [Ionide-VSCode: FSharp](https://github.com/ionide/ionide-vscode-fsharp)

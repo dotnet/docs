@@ -38,7 +38,7 @@
 ## Examples  
  The following XAML shows how to cache a <xref:System.Windows.Controls.Canvas> element. For the complete code example, see [How to: Improve Rendering Performance by Caching an Element](~/docs/framework/wpf/graphics-multimedia/how-to-improve-rendering-performance-by-caching-an-element.md).  
   
- [!code-xml[System.Windows.Media.BitmapCache#_BitmapCacheCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachecreation)]  
+ [!code-xaml[System.Windows.Media.BitmapCache#_BitmapCacheCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachecreation)]  
   
  ]]></format>
     </remarks>
@@ -80,7 +80,7 @@
 ## Examples  
  The following XAML shows how to create and assign a <xref:System.Windows.Media.BitmapCache> to a <xref:System.Windows.Controls.Canvas> element. For the complete code example, see [How to: Improve Rendering Performance by Caching an Element](~/docs/framework/wpf/graphics-multimedia/how-to-improve-rendering-performance-by-caching-an-element.md).  
   
- [!code-xml[System.Windows.Media.BitmapCache#_BitmapCacheCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachecreation)]  
+ [!code-xaml[System.Windows.Media.BitmapCache#_BitmapCacheCreation](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachecreation)]  
   
  ]]></format>
         </remarks>

@@ -52,7 +52,7 @@
 ## Examples  
  The following example defines the <xref:System.Windows.Controls.FlowDocumentScrollViewer> pictured in the figure above.  
   
- [!code-xml[FloaterFigureSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FloaterFigureSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  ]]></format>
     </remarks>
@@ -327,7 +327,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibility%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibility%2A> property programmatically.  
   
@@ -520,7 +520,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionEnabled%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionEnabled%2A> property programmatically.  
   
@@ -587,7 +587,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property programmatically.  
   
@@ -666,7 +666,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom%2A> property programmatically.  
   
@@ -727,7 +727,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom%2A> property programmatically.  
   
@@ -1102,7 +1102,7 @@
 ## Examples  
  The following example shows how to get the text that a user has selected in the <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
- [!code-xml[FlowDocSelection#3](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window2.xaml#3)]  
+ [!code-xaml[FlowDocSelection#3](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window2.xaml#3)]  
 [!code-csharp[FlowDocSelection#4](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window2.xaml.cs#4)]
 [!code-vb[FlowDocSelection#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocSelection/VisualBasic/Window2.xaml.vb#4)]  
   
@@ -1136,7 +1136,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentScrollViewer>, sets the <xref:System.Windows.Controls.FlowDocumentScrollViewer.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentScrollViewer.SelectionOpacity%2A> property to 0.7.  
   
- [!code-xml[FlowDocScrollVwSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocscrollvwselbrushsnippet/CS/window1.xaml#selectionbrush)]
+ [!code-xaml[FlowDocScrollVwSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocscrollvwselbrushsnippet/CS/window1.xaml#selectionbrush)]
   
  ]]></format>
         </remarks>
@@ -1185,7 +1185,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentScrollViewer>, sets the <xref:System.Windows.Controls.FlowDocumentScrollViewer.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentScrollViewer.SelectionOpacity%2A> property to 0.7.  
   
- [!code-xml[FlowDocScrollVwSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocscrollvwselbrushsnippet/CS/window1.xaml#selectionbrush)]
+ [!code-xaml[FlowDocScrollVwSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocscrollvwselbrushsnippet/CS/window1.xaml#selectionbrush)]
   
  ]]></format>
         </remarks>
@@ -1305,7 +1305,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibility%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibility%2A> property programmatically.  
   
@@ -1367,7 +1367,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.Zoom%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.Zoom%2A> property programmatically.  
   
@@ -1412,7 +1412,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrement%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentScrollViewerXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentscrollviewerxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrement%2A> property programmatically.  
   

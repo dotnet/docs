@@ -54,7 +54,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView> as its <xref:System.Windows.Controls.ListView.View%2A>. The illustration in the Remarks section is taken from this example.  
   
- [!code-xml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
+ [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
   
  ]]></format>
     </remarks>
@@ -256,7 +256,7 @@
   
  [!code-csharp[ListViewCode#ListViewView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#listviewview)]
  [!code-vb[ListViewCode#ListViewView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#listviewview)]
- [!code-xml[ListViewCode#ListViewView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewview)]  
+ [!code-xaml[ListViewCode#ListViewView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewview)]  
   
  ]]></format>
         </remarks>

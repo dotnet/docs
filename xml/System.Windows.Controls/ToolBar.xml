@@ -41,7 +41,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.ToolBar> inside a <xref:System.Windows.Controls.ToolBarTray>.  
   
- [!code-xml[ToolBarExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#1)]  
+ [!code-xaml[ToolBarExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -101,7 +101,7 @@
 ## Examples  
  The following example shows how use this property to place <xref:System.Windows.Controls.ToolBar> controls inside a <xref:System.Windows.Controls.ToolBarTray>.  
   
- [!code-xml[ToolBarExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#2)]  
+ [!code-xaml[ToolBarExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -148,7 +148,7 @@
 ## Examples  
  The following example shows how use this property to place <xref:System.Windows.Controls.ToolBar> controls inside a <xref:System.Windows.Controls.ToolBarTray>.  
   
- [!code-xml[ToolBarExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#2)]  
+ [!code-xaml[ToolBarExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -218,7 +218,7 @@
 ## Examples  
  The following example shows how to use this property to apply a <xref:System.Windows.Style> to <xref:System.Windows.Controls.Button> controls on a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarButtonStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarbuttonstylekey)]  
+ [!code-xaml[ToolBar_snip#ToolBarButtonStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarbuttonstylekey)]  
   
  ]]></format>
         </remarks>
@@ -254,7 +254,7 @@
 ## Examples  
  The following example uses this property to apply a <xref:System.Windows.Style> to <xref:System.Windows.Controls.CheckBox> controls on a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarCheckBoxStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarcheckboxstylekey)]  
+ [!code-xaml[ToolBar_snip#ToolBarCheckBoxStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarcheckboxstylekey)]  
   
  ]]></format>
         </remarks>
@@ -529,7 +529,7 @@
 ## Examples  
  The following example uses this property to apply a <xref:System.Windows.Style> to <xref:System.Windows.Controls.Menu> controls on a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarMenuStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarmenustylekey)]  
+ [!code-xaml[ToolBar_snip#ToolBarMenuStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarmenustylekey)]  
   
  ]]></format>
         </remarks>
@@ -765,7 +765,7 @@
 ## Examples  
  The following example uses this property to apply a <xref:System.Windows.Style> to <xref:System.Windows.Controls.RadioButton> controls on a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarRadioButtonStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarradiobuttonstylekey)]  
+ [!code-xaml[ToolBar_snip#ToolBarRadioButtonStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarradiobuttonstylekey)]  
   
  ]]></format>
         </remarks>
@@ -801,7 +801,7 @@
 ## Examples  
  The following example uses this property to apply a <xref:System.Windows.Style> to <xref:System.Windows.Controls.Separator> controls on a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarSeparatorStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarseparatorstylekey)]  
+ [!code-xaml[ToolBar_snip#ToolBarSeparatorStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarseparatorstylekey)]  
   
  ]]></format>
         </remarks>
@@ -867,7 +867,7 @@
 ## Examples  
  The following example uses this property to create a <xref:System.Windows.Style> for <xref:System.Windows.Controls.TextBox> controls on a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarTextBoxStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbartextboxstylekey)]  
+ [!code-xaml[ToolBar_snip#ToolBarTextBoxStyleKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbartextboxstylekey)]  
   
  ]]></format>
         </remarks>

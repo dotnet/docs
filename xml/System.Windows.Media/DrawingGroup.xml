@@ -132,7 +132,7 @@
  ![DrawingGroup with a BlurBitmapEffect](~/add/media/graphicsmm-bitmap.png "DrawingGroup with a BlurBitmapEffect")  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingGroupBitmapEffectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/BitmapEffectExample.cs#drawinggroupbitmapeffectexamplewholepage)]
- [!code-xml[DrawingMiscSnippets_snip#DrawingGroupBitmapEffectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/BitmapEffectExample.xaml#drawinggroupbitmapeffectexamplewholepage)]  
+ [!code-xaml[DrawingMiscSnippets_snip#DrawingGroupBitmapEffectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/BitmapEffectExample.xaml#drawinggroupbitmapeffectexamplewholepage)]  
   
  ]]></format>
         </remarks>
@@ -313,7 +313,7 @@
  The following example uses a <xref:System.Windows.Media.DrawingGroup> to apply a <xref:System.Windows.Media.DrawingGroup.ClipGeometry%2A> to several <xref:System.Windows.Media.GeometryDrawing> objects.  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingGroupClipGeometryExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/ClipExample.cs#drawinggroupclipgeometryexamplewholepage)]
- [!code-xml[DrawingMiscSnippets_snip#DrawingGroupClipGeometryExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/ClipExample.xaml#drawinggroupclipgeometryexamplewholepage)]  
+ [!code-xaml[DrawingMiscSnippets_snip#DrawingGroupClipGeometryExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/ClipExample.xaml#drawinggroupclipgeometryexamplewholepage)]  
   
  ]]></format>
         </remarks>
@@ -528,7 +528,7 @@
  ![DrawingGroups with different opacity settings](~/add/media/graphicsmm-opacity.png "DrawingGroups with different opacity settings")  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingGroupOpacityExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/OpacityExample.cs#drawinggroupopacityexamplewholepage)]
- [!code-xml[DrawingMiscSnippets_snip#DrawingGroupOpacityExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/OpacityExample.xaml#drawinggroupopacityexamplewholepage)]  
+ [!code-xaml[DrawingMiscSnippets_snip#DrawingGroupOpacityExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/OpacityExample.xaml#drawinggroupopacityexamplewholepage)]  
   
  ]]></format>
         </remarks>
@@ -596,7 +596,7 @@
 >  Although this example uses a <xref:System.Windows.Media.RadialGradientBrush> as an opacity mask, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.DrawingBrush>, <xref:System.Windows.Media.ImageBrush>, and <xref:System.Windows.Media.VisualBrush> objects can also make good opacity masks. For more information about opacity masks and how they work, see the [Opacity Masks Overview](~/docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md).  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingGroupOpacityMaskExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/OpacityMaskExample.cs#drawinggroupopacitymaskexamplewholepage)]
- [!code-xml[DrawingMiscSnippets_snip#DrawingGroupOpacityMaskExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/OpacityMaskExample.xaml#drawinggroupopacitymaskexamplewholepage)]  
+ [!code-xaml[DrawingMiscSnippets_snip#DrawingGroupOpacityMaskExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/OpacityMaskExample.xaml#drawinggroupopacitymaskexamplewholepage)]  
   
  ]]></format>
         </remarks>
@@ -719,7 +719,7 @@
  ![A rotated DrawingGroup](~/add/media/graphicsmm-rotate.png "A rotated DrawingGroup")  
   
  [!code-csharp[DrawingMiscSnippets_snip#DrawingGroupTransformExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/TransformExample.cs#drawinggrouptransformexamplewholepage)]
- [!code-xml[DrawingMiscSnippets_snip#DrawingGroupTransformExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/TransformExample.xaml#drawinggrouptransformexamplewholepage)]  
+ [!code-xaml[DrawingMiscSnippets_snip#DrawingGroupTransformExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/DrawingMiscSnippets_snip/XAML/TransformExample.xaml#drawinggrouptransformexamplewholepage)]  
   
  ]]></format>
         </remarks>

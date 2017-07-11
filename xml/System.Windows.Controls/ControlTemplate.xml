@@ -58,7 +58,7 @@
 ## Examples  
  The following shows a <xref:System.Windows.Controls.Button> <xref:System.Windows.Style> that sets the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button>:  
   
- [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]     
+ [!code-xaml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]     
   
  When this gets applied, the <xref:System.Windows.Controls.Button> appears as an <xref:System.Windows.Shapes.Ellipse>:  
   
@@ -66,7 +66,7 @@
   
  When you set the <xref:System.Windows.Controls.Control.Template%2A> property of a <xref:System.Windows.Controls.Control> to a new <xref:System.Windows.Controls.ControlTemplate> as in the above example, you are replacing the entire template. What the <xref:System.Windows.Controls.Button> looks like when it is in focus or pressed is all part of the default appearance of the button that you are replacing. Therefore, depending on your needs, you may want to put in your definition what your button should look like when it is pressed, and so on, as in the following example:  
   
- [!code-xml[ControlTemplateExamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#1)]  
+ [!code-xaml[ControlTemplateExamples#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#1)]  
   
  Note that this example references resources that are not shown here. For the complete sample, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041). That sample provides examples of control templates for many controls and is the best way for you to get started with creating control templates.  
   
@@ -155,7 +155,7 @@
 ## Examples  
  The following example demonstrates the use of this property:  
   
- [!code-xml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  
+ [!code-xaml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  
   
  The above example uses the following resource:  
   
@@ -221,7 +221,7 @@
 ## Examples  
  The following example demonstrates the use of this property:  
   
- [!code-xml[ControlTemplateExamples#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tooltip.xaml#tooltip)]  
+ [!code-xaml[ControlTemplateExamples#ToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tooltip.xaml#tooltip)]  
   
  The above example uses the following resources:  
   

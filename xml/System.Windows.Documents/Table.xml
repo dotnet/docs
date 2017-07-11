@@ -148,7 +148,7 @@
 ## Examples  
  The following example defines a simple 2 x 3 table with a <xref:System.Windows.Documents.Table.CellSpacing%2A> of 0.35 centimeters.  
   
- [!code-xml[TableSnippets2#_Table_ColumnSpacing](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml#_table_columnspacing)]  
+ [!code-xaml[TableSnippets2#_Table_ColumnSpacing](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml#_table_columnspacing)]  
   
  The following figure shows how this example renders.  
   

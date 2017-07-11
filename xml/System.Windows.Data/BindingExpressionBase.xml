@@ -301,7 +301,7 @@
 ## Examples  
  The following example demonstrates the scenario that is discussed in the Remarks section. The example enables a user to enter data for a library item and submit the data. The binding for the <xref:System.Windows.Controls.TextBox> named `callNum` has a <xref:System.Windows.Controls.ValidationRule> associated with it. When the <xref:System.Windows.Controls.TextBox> loses focus, the example calls <xref:System.Windows.Data.BindingExpressionBase.ValidateWithoutUpdate%2A>. When the user clicks the submit button, the example calls <xref:System.Windows.Data.BindingExpressionBase.UpdateSource%2A> to commit the changes. The following XAML creates the user interface for the application.  
   
- [!code-xml[BindingExpressionBaseValidateWithoutUpdating#WindowXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/window1.xaml#windowxaml)]  
+ [!code-xaml[BindingExpressionBaseValidateWithoutUpdating#WindowXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingexpressionbasevalidatewithoutupdating/csharp/window1.xaml#windowxaml)]  
   
  The following example shows the logic for the user interface.  
   

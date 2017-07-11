@@ -48,12 +48,12 @@
   
  [!code-csharp[GridSplitterSnips#GridSplitterSimpleExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml.cs#gridsplittersimpleexample)]
  [!code-vb[GridSplitterSnips#GridSplitterSimpleExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridSplitterSnips/visualbasic/window1.xaml.vb#gridsplittersimpleexample)]
- [!code-xml[GridSplitterSnips#GridSplitterSimpleExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#gridsplittersimpleexample)]  
+ [!code-xaml[GridSplitterSnips#GridSplitterSimpleExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#gridsplittersimpleexample)]  
   
  The following example shows how to define a <xref:System.Windows.Controls.GridSplitter> that resizes columns in a <xref:System.Windows.Controls.Grid> and that occupies a column in the <xref:System.Windows.Controls.Grid>.  
   
- [!code-xml[GridSplitterRowColumn#GridSplitterEntireColumnPart1](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart1)]  
-[!code-xml[GridSplitterRowColumn#GridSplitterEntireColumnPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart2)]  
+ [!code-xaml[GridSplitterRowColumn#GridSplitterEntireColumnPart1](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart1)]  
+[!code-xaml[GridSplitterRowColumn#GridSplitterEntireColumnPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart2)]  
   
  ]]></format>
     </remarks>
@@ -110,7 +110,7 @@
   
  [!code-csharp[GridSplitterSnips#DragIncrement](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml.cs#dragincrement)]
  [!code-vb[GridSplitterSnips#DragIncrement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridSplitterSnips/visualbasic/window1.xaml.vb#dragincrement)]
- [!code-xml[GridSplitterSnips#DragIncrement](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#dragincrement)]  
+ [!code-xaml[GridSplitterSnips#DragIncrement](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#dragincrement)]  
   
  ]]></format>
         </remarks>
@@ -168,7 +168,7 @@
   
  [!code-csharp[GridSplitterSnips#KeyboardIncrement](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml.cs#keyboardincrement)]
  [!code-vb[GridSplitterSnips#KeyboardIncrement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridSplitterSnips/visualbasic/window1.xaml.vb#keyboardincrement)]
- [!code-xml[GridSplitterSnips#KeyboardIncrement](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#keyboardincrement)]  
+ [!code-xaml[GridSplitterSnips#KeyboardIncrement](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#keyboardincrement)]  
   
  ]]></format>
         </remarks>
@@ -393,7 +393,7 @@
   
  [!code-csharp[GridSplitterSnips#ResizeBehavior](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml.cs#resizebehavior)]
  [!code-vb[GridSplitterSnips#ResizeBehavior](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridSplitterSnips/visualbasic/window1.xaml.vb#resizebehavior)]
- [!code-xml[GridSplitterSnips#ResizeBehavior](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#resizebehavior)]  
+ [!code-xaml[GridSplitterSnips#ResizeBehavior](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#resizebehavior)]  
   
  ]]></format>
         </remarks>
@@ -459,7 +459,7 @@
   
  [!code-csharp[GridSplitterSnips#ResizeDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml.cs#resizedirection)]
  [!code-vb[GridSplitterSnips#ResizeDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridSplitterSnips/visualbasic/window1.xaml.vb#resizedirection)]
- [!code-xml[GridSplitterSnips#ResizeDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#resizedirection)]  
+ [!code-xaml[GridSplitterSnips#ResizeDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#resizedirection)]  
   
  ]]></format>
         </remarks>
@@ -523,7 +523,7 @@
   
  [!code-csharp[GridSplitterSnips#ShowsPreview](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml.cs#showspreview)]
  [!code-vb[GridSplitterSnips#ShowsPreview](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridSplitterSnips/visualbasic/window1.xaml.vb#showspreview)]
- [!code-xml[GridSplitterSnips#ShowsPreview](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#showspreview)]  
+ [!code-xaml[GridSplitterSnips#ShowsPreview](~/samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterSnips/CSharp/Window1.xaml#showspreview)]  
   
  ]]></format>
         </remarks>

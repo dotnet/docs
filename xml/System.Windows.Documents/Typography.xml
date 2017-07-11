@@ -25,7 +25,7 @@ Text using OpenType capitals
   
  The following markup example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
   
- [!code-xml[OpenTypeFontSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#9)]   
+ [!code-xaml[OpenTypeFontSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#9)]   
   
  The following code example accomplishes the same task as the previous markup example.  
   
@@ -88,11 +88,11 @@ Text using OpenType capitals
 ## Examples  
  The following code sample shows the use typographic <xref:System.Windows.Documents.Typography.Capitals%2A> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that the variant feature is applied to all text contained with the <xref:System.Windows.Documents.Paragraph> element.  
   
- [!code-xml[TypographySnippets#TypographySnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageTwo.xaml#typographysnippet2)]  
+ [!code-xaml[TypographySnippets#TypographySnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageTwo.xaml#typographysnippet2)]  
   
  The following code sample shows the use typographic <xref:System.Windows.Documents.Typography.Capitals%2A> and <xref:System.Windows.Documents.Typography.NumeralStyle%2A> features in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Notice that both typographic properties are applied to the entire paragraph.  
   
- [!code-xml[TypographySnippets#TypographySnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageThree.xaml#typographysnippet3)]  
+ [!code-xaml[TypographySnippets#TypographySnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/TypographySnippets/CS/PageThree.xaml#typographysnippet3)]  
   
  ]]></format>
     </remarks>
@@ -186,7 +186,7 @@ Example of capitals
   
  The following code example shows how to define capitals for the Pescadero font, using the <xref:System.Windows.Documents.Typography.Capitals%2A> property. When the "SmallCaps" format is used, any leading capital letter is ignored.  
   
- [!code-xml[OpenTypeFontSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#9)]   
+ [!code-xaml[OpenTypeFontSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#9)]   
   
  The following code example accomplishes the same task as the previous markup example.  
   
@@ -238,7 +238,7 @@ Example of normal and capital spacing
   
  The following code example shows how to define capital spacing for the Pescadero font, using the <xref:System.Windows.Documents.Typography.CapitalSpacing%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#OpenTypeFontSnippet18](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet18)]   
+ [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet18](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet18)]   
   
 <a name="xamlAttributeUsage_CapitalSpacing"></a>   
 ## XAML Attribute Usage  
@@ -374,7 +374,7 @@ Example of random contextual alternates
   
  The following code example shows how to define random contextual alternates for the Lindsey font, using the <xref:System.Windows.Documents.Typography.ContextualAlternates%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#OpenTypeFontSnippet20](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet20)]   
+ [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet20](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet20)]   
   
 <a name="xamlAttributeUsage_ContextualAlternates"></a>   
 ## XAML Attribute Usage  
@@ -496,7 +496,7 @@ Example of a contextual swash
   
  The following code example shows how to define a contextual swash for the Pescadero font, using the <xref:System.Windows.Documents.Typography.ContextualSwashes%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#OpenTypeFontSnippet16](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet16)]   
+ [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet16](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet16)]   
   
 <a name="xamlAttributeUsage_ContextualSwashes"></a>   
 ## XAML Attribute Usage  
@@ -560,7 +560,7 @@ Example of discretionary set of ligatures
   
  The following code example shows how to define discretionary ligature glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.DiscretionaryLigatures%2A> property.  
   
-[!code-xml[OpenTypeFontSamples#5](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#5)]   
+[!code-xaml[OpenTypeFontSamples#5](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#5)]   
   
 <a name="xamlAttributeUsage_DiscretionaryLigatures"></a>   
 ## XAML Attribute Usage  
@@ -788,7 +788,7 @@ Example of slashed and stacked fraction styles
   
  The following code example shows how to define fraction styles for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Fraction%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#10](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#10)]   
+ [!code-xaml[OpenTypeFontSamples#10](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#10)]   
   
 <a name="xamlAttributeUsage_Fraction"></a>   
 ## XAML Attribute Usage  
@@ -2014,7 +2014,7 @@ Example of historical forms
   
  The following code example shows how to define historical forms for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.HistoricalForms%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#8](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#8)]   
+ [!code-xaml[OpenTypeFontSamples#8](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#8)]   
   
 <a name="xamlAttributeUsage_HistoricalForms"></a>   
 ## XAML Attribute Usage  
@@ -2250,7 +2250,7 @@ Example of proportional and tabbed figures
   
  The following code example shows how to define proportional and tabular figures for the Miramonte font, using the <xref:System.Windows.Documents.Typography.NumeralAlignment%2A> property.  
   
-[!code-xml[OpenTypeFontSamples#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet19)]   
+[!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet19)]   
   
 <a name="xamlAttributeUsage_NumeralAlignment"></a>   
 ## XAML Attribute Usage  
@@ -2318,7 +2318,7 @@ Example of standard and old style numeral sets
   
  The following code example shows how to define old style numerals for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.NumeralStyle%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#11)]   
+ [!code-xaml[OpenTypeFontSamples#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#11)]   
   
 <a name="xamlAttributeUsage_NumeralStyle"></a>   
 ## XAML Attribute Usage  
@@ -3416,7 +3416,7 @@ Example of slashed zero numerals
   
  The following code example shows how to define slashed zero numerals for the Miramonte font, using the <xref:System.Windows.Documents.Typography.SlashedZero%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#OpenTypeFontSnippet15](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet15)]   
+ [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet15](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet15)]   
   
  If the value of <xref:System.Windows.Documents.Typography.SlashedZero%2A> is `true` and the selected font does not support slashed zero forms, the default form of the numeral is displayed.  
   
@@ -3482,7 +3482,7 @@ Example of standard set of ligatures
   
  The following code example shows how to define standard ligature glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.StandardLigatures%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#4](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#4)]   
+ [!code-xaml[OpenTypeFontSamples#4](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#4)]   
   
  By default, OpenTypes fonts in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the pair of characters for each standard ligature touch each other.  
   
@@ -3496,7 +3496,7 @@ Example of disabled standard ligatures
   
  The following code example shows how to disable standard ligature glyphs for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.StandardLigatures%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#6)]   
+ [!code-xaml[OpenTypeFontSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#6)]   
   
  If the value of <xref:System.Windows.Documents.Typography.StandardLigatures%2A> is `true` and the selected font does not support standard ligatures, the default form of the letter is displayed.  
   
@@ -3566,7 +3566,7 @@ Example of swashes used for capital letters
   
  The following code example shows how to define swashes for a font, using the <xref:System.Windows.Documents.Typography.StandardSwashes%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#7](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#7)]   
+ [!code-xaml[OpenTypeFontSamples#7](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#7)]   
   
  If the value of <xref:System.Windows.Documents.Typography.StandardSwashes%2A> is greater than zero and the selected font does not support standard swashes forms at the given index value, the default form of the letter is displayed.  
   
@@ -3636,7 +3636,7 @@ Example of stylistic alternate glyphs
   
  The following code example shows how to define stylistic alternate glyphs for the Pericles font, using the <xref:System.Windows.Documents.Typography.StylisticAlternates%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#2](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#2)]   
+ [!code-xaml[OpenTypeFontSamples#2](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#2)]   
   
  The following text displays several other stylistic alternate glyphs for the Pericles font.  
   
@@ -3645,7 +3645,7 @@ Example of other stylistic alternate glyphs
   
  The following code example shows how to define these other stylistic alternate glyphs.  
   
- [!code-xml[OpenTypeFontSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#3)]   
+ [!code-xaml[OpenTypeFontSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#3)]   
   
 <a name="xamlAttributeUsage_StylisticAlternates"></a>   
 ## XAML Attribute Usage  
@@ -4848,7 +4848,7 @@ Example of superscripts
   
  The following code example shows how to define superscripts for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Variants%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#12)]   
+ [!code-xaml[OpenTypeFontSamples#12](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#12)]   
   
  The following text displays subscripts for the Palatino Linotype font.  
   
@@ -4857,7 +4857,7 @@ Example of subscripts
   
  The following code example shows how to define subscripts for the Palatino Linotype font, using the <xref:System.Windows.Documents.Typography.Variants%2A> property.  
   
- [!code-xml[OpenTypeFontSamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#13)]   
+ [!code-xaml[OpenTypeFontSamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#13)]   
   
  Fonts that do not support variants may have an algorithmic approximation of the font form.  
   

@@ -56,7 +56,7 @@
 ## Examples  
  The following example shows how to create a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls in a <xref:System.Windows.Controls.TreeView> control.  
   
- [!code-xml[TreeViewSnips#EmbeddedTVIs](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#embeddedtvis)]  
+ [!code-xaml[TreeViewSnips#EmbeddedTVIs](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#embeddedtvis)]  
   
  ]]></format>
     </remarks>
@@ -138,7 +138,7 @@
 ## Examples  
  The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Collapsed> event to a <xref:System.Windows.Controls.TreeViewItem>,and how to define the event handler.  
   
- [!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
+ [!code-xaml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
   
  [!code-csharp[TreeViewSnips#OnCollapsed](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#oncollapsed)]
  [!code-vb[TreeViewSnips#OnCollapsed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#oncollapsed)]  
@@ -210,7 +210,7 @@
 ## Examples  
  The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Expanded> event to a <xref:System.Windows.Controls.TreeViewItem> and how to define the event handler in the code-behind.  
   
- [!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
+ [!code-xaml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
   
  [!code-csharp[TreeViewSnips#OnExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#onexpanded)]
  [!code-vb[TreeViewSnips#OnExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#onexpanded)]  
@@ -264,7 +264,7 @@
 ## Examples  
  The following examples show how to find the selected <xref:System.Windows.Controls.TreeViewItem> and expand it and all of it child items.  The following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] creates a <xref:System.Windows.Controls.TreeView> and populates it with some data.  
   
- [!code-xml[TreeViewExpand#1](~/samples/snippets/csharp/VS_Snippets_Wpf/treeviewexpand/csharp/mainwindow.xaml#1)]  
+ [!code-xaml[TreeViewExpand#1](~/samples/snippets/csharp/VS_Snippets_Wpf/treeviewexpand/csharp/mainwindow.xaml#1)]  
   
  The following code traverses the <xref:System.Windows.Controls.TreeView> to find the selected <xref:System.Windows.Controls.TreeViewItem> and then calls <xref:System.Windows.Controls.TreeViewItem.ExpandSubtree%2A> to display all child items of the selected <xref:System.Windows.Controls.TreeViewItem>.  
   
@@ -332,7 +332,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.TreeViewItem.IsExpanded%2A> property.  
   
- [!code-xml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
+ [!code-xaml[TreeViewSnips#OnCollapsedExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#oncollapsedexpanded)]  
   
  [!code-csharp[TreeViewSnips#IsExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isexpanded)]
  [!code-vb[TreeViewSnips#IsExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isexpanded)]  
@@ -425,7 +425,7 @@
   
  [!code-csharp[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#isselected)]
  [!code-vb[TreeViewSnips#IsSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#isselected)]
- [!code-xml[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#isselected)]  
+ [!code-xaml[TreeViewSnips#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#isselected)]  
   
  ]]></format>
         </remarks>
@@ -853,7 +853,7 @@
 ## Examples  
  The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Selected> event to a <xref:System.Windows.Controls.TreeViewItem>, and how to define the event handler.  
   
- [!code-xml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
+ [!code-xaml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
   
  [!code-csharp[TreeViewSnips#ChooseWine](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#choosewine)]
  [!code-vb[TreeViewSnips#ChooseWine](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#choosewine)]  
@@ -1077,7 +1077,7 @@
 ## Examples  
  The following example shows how to assign an event handler for the <xref:System.Windows.Controls.TreeViewItem.Selected> event to a <xref:System.Windows.Controls.TreeViewItem>, and how to define the event handler.  
   
- [!code-xml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
+ [!code-xaml[TreeViewSnips#Selected](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml#selected)]  
   
  [!code-csharp[TreeViewSnips#ChangeWineChoice](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSnips/CSharp/Window1.xaml.cs#changewinechoice)]
  [!code-vb[TreeViewSnips#ChangeWineChoice](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewSnips/visualbasic/window1.xaml.vb#changewinechoice)]  

@@ -385,7 +385,7 @@
   
  The following example shows several different timelines with different <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> settings.  
   
- [!code-xml[timingbehaviors_snip#_graphicsmm_BeginTimeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/BeginTimeExample.xaml#_graphicsmm_begintimeexamplewholepage)]  
+ [!code-xaml[timingbehaviors_snip#_graphicsmm_BeginTimeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/BeginTimeExample.xaml#_graphicsmm_begintimeexamplewholepage)]  
   
  ]]></format>
         </remarks>
@@ -499,7 +499,7 @@
 ## Examples  
  In the following example, two <xref:System.Windows.Media.Animation.Storyboard> objects are used to create an animation transition between two images, stored using <xref:System.Windows.Media.ImageSource> objects and displayed using an <xref:System.Windows.Controls.Image> control. One storyboard shrinks the image control until it disappears. After it completes, the old <xref:System.Windows.Media.ImageSource> is swapped with the other <xref:System.Windows.Media.ImageSource>, and a second storyboard that expands the image control until it is full-sized again.  
   
- [!code-xml[timingbehaviors_snip#TimelineCompletedExampleMarkupUsingWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/TimelineCompletedExample.xaml#timelinecompletedexamplemarkupusingwholepage)]  
+ [!code-xaml[timingbehaviors_snip#TimelineCompletedExampleMarkupUsingWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/TimelineCompletedExample.xaml#timelinecompletedexamplemarkupusingwholepage)]  
   
   
   
@@ -1304,7 +1304,7 @@
 ## Examples  
  A timeline's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> property controls its rate of progress, relative to its parent. If the timeline is a root, its <xref:System.Windows.Media.MediaPlayer.SpeedRatio%2A> is relative to the default timeline speed. The following example shows several timelines with different <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> settings.  
   
- [!code-xml[timingbehaviors_snip#_graphicsmm_SpeedExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/SpeedExample.xaml#_graphicsmm_speedexamplewholepage)]  
+ [!code-xaml[timingbehaviors_snip#_graphicsmm_SpeedExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/SpeedExample.xaml#_graphicsmm_speedexamplewholepage)]  
   
  ]]></format>
         </remarks>

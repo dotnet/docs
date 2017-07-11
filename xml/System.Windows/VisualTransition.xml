@@ -34,7 +34,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.VisualTransition> that specifies that when the user moves the mouse away from the control, the control's border changes to blue, then to yellow, and then to black in 1.5 seconds. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
- [!code-xml[VSMButtonTemplate#8](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#8)]  
+ [!code-xaml[VSMButtonTemplate#8](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#8)]  
   
  ]]></format>
     </remarks>
@@ -92,7 +92,7 @@
 ## Examples  
  The following example creates two <xref:System.Windows.VisualTransition> objects. When the control transitions from the `Pressed` state to the `MouseOver` state, the <xref:System.Windows.VisualTransition> that has both <xref:System.Windows.VisualTransition.From%2A> and <xref:System.Windows.VisualTransition.To%2A> set is used. When the control transitions from a state that is not `Pressed` to the `MouseOver` state, the other state is used.  
   
- [!code-xml[VSMButtonTemplate#7](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#7)]  
+ [!code-xaml[VSMButtonTemplate#7](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#7)]  
   
  ]]></format>
         </remarks>
@@ -129,7 +129,7 @@
 ## Examples  
  The following example specifies that the control takes one half second to go into the `MouseOver` state. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
- [!code-xml[VSMButtonTemplate#MouseOverTransition](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#mouseovertransition)]  
+ [!code-xaml[VSMButtonTemplate#MouseOverTransition](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#mouseovertransition)]  
   
  ]]></format>
         </remarks>
@@ -161,7 +161,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.VisualTransition> that causes a <xref:System.Windows.Shapes.Rectangle> to move vertically when the user presses the mouse button over the <xref:System.Windows.Controls.Canvas>. The example sets the <xref:System.Windows.VisualTransition.GeneratedEasingFunction%2A> property to a <xref:System.Windows.Media.Animation.BounceEase> object to cause the <xref:System.Windows.Shapes.Rectangle> to appear to bounce when it reaches its destination. The <xref:System.Windows.VisualTransition> that is used when the user releases the button has another <xref:System.Windows.Media.Animation.BounceEase> object to cause the <xref:System.Windows.Shapes.Rectangle> to bounce before it returns to its original position.  
   
- [!code-xml[VSMCustomControl#VSMEasingFunction](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#vsmeasingfunction)]  
+ [!code-xaml[VSMCustomControl#VSMEasingFunction](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#vsmeasingfunction)]  
   
  The following example shows the event handler for the <xref:System.Windows.UIElement3D.MouseDown> and <xref:System.Windows.UIElement.MouseUp> events. The example calls the <xref:System.Windows.VisualStateManager.GoToElementState%2A> method to change the <xref:System.Windows.VisualState> of the canvas.  
   
@@ -198,7 +198,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.VisualTransition> that specifies that when the user moves the mouse away from the control, the control's border changes to blue, then to yellow, and then to black in 1.5 seconds. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
- [!code-xml[VSMButtonTemplate#8](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#8)]  
+ [!code-xaml[VSMButtonTemplate#8](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#8)]  
   
  ]]></format>
         </remarks>
@@ -241,7 +241,7 @@
 ## Examples  
  The following example creates two <xref:System.Windows.VisualTransition> objects. When the control transitions from the `Pressed` state to the `MouseOver` state, the <xref:System.Windows.VisualTransition> that has both <xref:System.Windows.VisualTransition.From%2A> and <xref:System.Windows.VisualTransition.To%2A> set is used. When the control transitions from a state that is not `Pressed` to the `MouseOver` state, the other state is used.  
   
- [!code-xml[VSMButtonTemplate#7](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#7)]  
+ [!code-xaml[VSMButtonTemplate#7](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#7)]  
   
  ]]></format>
         </remarks>

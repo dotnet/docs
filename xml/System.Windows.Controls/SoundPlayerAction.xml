@@ -22,8 +22,8 @@
 ## Examples  
  The following example shows how use the <xref:System.Windows.Controls.SoundPlayerAction> to trigger audio playback of a .wav file using an <xref:System.Windows.EventTrigger> on the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> and <xref:System.Windows.UIElement.MouseEnter> events.  
   
- [!code-xml[MediaGallery_snip#SoundPlayerActionFullPage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snip/CSharp/SoundPlayerActionTriggers.xaml#soundplayeractionfullpage)]
- [!code-xml[MediaGallery_snip#SoundPlayerActionFullPage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/SoundPlayerActionTriggers.xaml#soundplayeractionfullpage)]  
+ [!code-xaml[MediaGallery_snip#SoundPlayerActionFullPage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snip/CSharp/SoundPlayerActionTriggers.xaml#soundplayeractionfullpage)]
+ [!code-xaml[MediaGallery_snip#SoundPlayerActionFullPage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/SoundPlayerActionTriggers.xaml#soundplayeractionfullpage)]  
   
  ]]></format>
     </remarks>

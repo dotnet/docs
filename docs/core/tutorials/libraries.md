@@ -147,6 +147,7 @@ The build system is aware of the following preprocessor symbols used in `#if` di
 .NET Framework 4.6   --> NET46
 .NET Framework 4.6.1 --> NET461
 .NET Framework 4.6.2 --> NET462
+.NET Framework 4.7   --> NET47
 .NET Standard 1.0    --> NETSTANDARD1_0
 .NET Standard 1.1    --> NETSTANDARD1_1
 .NET Standard 1.2    --> NETSTANDARD1_2

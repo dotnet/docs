@@ -124,6 +124,12 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
+## .NET Core SDK 2.0 Preview 1
+### Application deployment
+#### [Runtime Package Store](core/preview/deploying/runtime-package-store.md)
+### [.NET Core CLI Tools](core/preview/tools/index.md)
+#### [dotnet-store](core/preview/tools/dotnet-store.md)
+#### [dotnet-publish](core/preview/dotnet-publish.md)
 ## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->
 

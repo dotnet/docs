@@ -241,7 +241,7 @@
         <summary>Tests whether two specified <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are equivalent.</summary>
         <returns>This operator returns <see langword="true" /> if the two <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Equals%28System.ComponentModel.Design.Serialization.MemberRelationship%2CSystem.ComponentModel.Design.Serialization.MemberRelationship%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
         <summary>Tests whether two specified <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are different.</summary>
         <returns>This operator returns <see langword="true" /> if the two <see cref="T:System.ComponentModel.Design.Serialization.MemberRelationship" /> structures are different; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Compare%28System.ComponentModel.Design.Serialization.MemberRelationship%2CSystem.ComponentModel.Design.Serialization.MemberRelationship%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.Design.Serialization.MemberRelationship.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -12,11 +12,6 @@
     <BaseTypeName>System.Threading.Tasks.Dataflow.DataflowBlockOptions</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("TaskScheduler = {TaskScheduler}, MaxMessagesPerTask = {MaxMessagesPerTask}, BoundedCapacity = {BoundedCapacity}, Greedy = {Greedy}, MaxNumberOfGroups = {MaxNumberOfGroups}")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Provides options used to configure the processing performed by dataflow blocks that group together multiple messages. These are dataflow blocks such as <see cref="T:System.Threading.Tasks.Dataflow.JoinBlock`2" /> and  <see cref="T:System.Threading.Tasks.Dataflow.BatchBlock`1" />.</summary>
     <remarks>

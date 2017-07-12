@@ -35,7 +35,7 @@ This example shows how to include images in an application by using the <xref:Sy
   
  The <xref:System.Windows.Controls.Image.Stretch%2A> property determines how the image source is stretched to fill the image element. For more information, see the <xref:System.Windows.Media.Stretch> enumeration.  
   
- [!code-xml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
+ [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   
 ## Example  
  The following example shows how to render an image 200 pixels wide using code.  

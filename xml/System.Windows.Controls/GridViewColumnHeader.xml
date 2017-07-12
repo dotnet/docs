@@ -37,7 +37,7 @@
 ## Examples  
  Each <xref:System.Windows.Controls.GridViewColumnHeader> can contain a context (right-click) menu. The following example shows how to create a context menu for a <xref:System.Windows.Controls.GridViewColumnHeader> in XAML.  
   
- [!code-xml[ListViewCode#HeaderContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#headercontextmenu)]  
+ [!code-xaml[ListViewCode#HeaderContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#headercontextmenu)]  
   
  ]]></format>
     </remarks>

@@ -64,7 +64,7 @@ Clears all authentication modules from the application.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example removes all configured authentication modules.  
+ The following example removes all configured authentication modules.  
   
 ```xml  
 <configuration>  

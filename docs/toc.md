@@ -4,6 +4,7 @@
 # [.NET Platform Guide](standard/index.md)
 ## [Get Started with .NET](standard/get-started.md)
 ## [Tour of .NET](standard/tour.md)
+## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
 ## [Frameworks and Targets](standard/frameworks.md)
@@ -123,6 +124,8 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
+## [Build .NET Core from source](core/build/index.md)
+### [.NET Core distribution packaging](core/build/distribution-packaging.md)
 ## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->
 
@@ -230,14 +233,13 @@
 # [F# Guide](fsharp/index.md)
 
 ## [Tour of F#](fsharp/tour.md)
-
+### [Get Started](fsharp/get-started/index.md)
+#### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
+#### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+#### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
+#### [Get Started with Command-line Tools](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
-### [Get Started](fsharp/tutorials/getting-started/index.md)
-#### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
-#### [Get Started with Visual Studio for Mac](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
-#### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
-#### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)

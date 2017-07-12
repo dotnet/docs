@@ -37,14 +37,6 @@
       <InterfaceName>System.Collections.Immutable.IImmutableList&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableListDebuggerProxy`1))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the list.</typeparam>
     <summary>Represents an immutable list, which is a strongly typed list of objects that can be accessed by index.  
@@ -111,7 +103,7 @@
     </Member>
     <Member MemberName="BinarySearch">
       <MemberSignature Language="C#" Value="public int BinarySearch (T item);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 BinarySearch(!T item) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 BinarySearch(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.BinarySearch(`0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -136,7 +128,7 @@
     </Member>
     <Member MemberName="BinarySearch">
       <MemberSignature Language="C#" Value="public int BinarySearch (T item, System.Collections.Generic.IComparer&lt;T&gt; comparer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 BinarySearch(!T item, class System.Collections.Generic.IComparer`1&lt;!T&gt; comparer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 BinarySearch(!T item, class System.Collections.Generic.IComparer`1&lt;!T&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.BinarySearch(`0,System.Collections.Generic.IComparer{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -163,7 +155,7 @@
     </Member>
     <Member MemberName="BinarySearch">
       <MemberSignature Language="C#" Value="public int BinarySearch (int index, int count, T item, System.Collections.Generic.IComparer&lt;T&gt; comparer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 BinarySearch(int32 index, int32 count, !T item, class System.Collections.Generic.IComparer`1&lt;!T&gt; comparer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 BinarySearch(int32 index, int32 count, !T item, class System.Collections.Generic.IComparer`1&lt;!T&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.BinarySearch(System.Int32,System.Int32,`0,System.Collections.Generic.IComparer{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -243,7 +235,7 @@
     </Member>
     <Member MemberName="ConvertAll&lt;TOutput&gt;">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableList&lt;TOutput&gt; ConvertAll&lt;TOutput&gt; (Func&lt;T,TOutput&gt; converter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.ImmutableList`1&lt;!!TOutput&gt; ConvertAll&lt;TOutput&gt;(class System.Func`2&lt;!T, !!TOutput&gt; converter) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableList`1&lt;!!TOutput&gt; ConvertAll&lt;TOutput&gt;(class System.Func`2&lt;!T, !!TOutput&gt; converter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ConvertAll``1(System.Func{`0,``0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -271,7 +263,7 @@
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.CopyTo(`0[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -319,7 +311,7 @@
     </Member>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (int index, T[] array, int arrayIndex, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(int32 index, !T[] array, int32 arrayIndex, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(int32 index, !T[] array, int32 arrayIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -387,7 +379,7 @@
     </Member>
     <Member MemberName="Exists">
       <MemberSignature Language="C#" Value="public bool Exists (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Exists(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Exists(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Exists(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -412,7 +404,7 @@
     </Member>
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public T Find (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T Find(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Find(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.Find(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -436,7 +428,7 @@
     </Member>
     <Member MemberName="FindAll">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableList&lt;T&gt; FindAll (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.ImmutableList`1&lt;!T&gt; FindAll(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableList`1&lt;!T&gt; FindAll(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindAll(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -460,7 +452,7 @@
     </Member>
     <Member MemberName="FindIndex">
       <MemberSignature Language="C#" Value="public int FindIndex (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindIndex(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindIndex(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindIndex(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -484,7 +476,7 @@
     </Member>
     <Member MemberName="FindIndex">
       <MemberSignature Language="C#" Value="public int FindIndex (int startIndex, Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindIndex(int32 startIndex, class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindIndex(int32 startIndex, class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindIndex(System.Int32,System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -510,7 +502,7 @@
     </Member>
     <Member MemberName="FindIndex">
       <MemberSignature Language="C#" Value="public int FindIndex (int startIndex, int count, Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindIndex(int32 startIndex, int32 count, class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindIndex(int32 startIndex, int32 count, class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindIndex(System.Int32,System.Int32,System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -538,7 +530,7 @@
     </Member>
     <Member MemberName="FindLast">
       <MemberSignature Language="C#" Value="public T FindLast (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T FindLast(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T FindLast(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLast(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -562,7 +554,7 @@
     </Member>
     <Member MemberName="FindLastIndex">
       <MemberSignature Language="C#" Value="public int FindLastIndex (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindLastIndex(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindLastIndex(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLastIndex(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -586,7 +578,7 @@
     </Member>
     <Member MemberName="FindLastIndex">
       <MemberSignature Language="C#" Value="public int FindLastIndex (int startIndex, Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindLastIndex(int32 startIndex, class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindLastIndex(int32 startIndex, class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLastIndex(System.Int32,System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -612,7 +604,7 @@
     </Member>
     <Member MemberName="FindLastIndex">
       <MemberSignature Language="C#" Value="public int FindLastIndex (int startIndex, int count, Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 FindLastIndex(int32 startIndex, int32 count, class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindLastIndex(int32 startIndex, int32 count, class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.FindLastIndex(System.Int32,System.Int32,System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -640,7 +632,7 @@
     </Member>
     <Member MemberName="ForEach">
       <MemberSignature Language="C#" Value="public void ForEach (Action&lt;T&gt; action);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForEach(class System.Action`1&lt;!T&gt; action) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForEach(class System.Action`1&lt;!T&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ForEach(System.Action{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -663,7 +655,7 @@
     </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableList&lt;T&gt;.Enumerator GetEnumerator ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Collections.Immutable.ImmutableList`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableList`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.GetEnumerator" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -693,7 +685,7 @@
     </Member>
     <Member MemberName="GetRange">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableList&lt;T&gt; GetRange (int index, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Immutable.ImmutableList`1&lt;!T&gt; GetRange(int32 index, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Immutable.ImmutableList`1&lt;!T&gt; GetRange(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.GetRange(System.Int32,System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -834,11 +826,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1575,11 +1562,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1600,11 +1582,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1939,11 +1916,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -1975,11 +1947,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2039,11 +2006,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2077,11 +2039,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2115,11 +2072,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2153,11 +2105,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2189,11 +2136,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2214,6 +2156,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.0.0</AssemblyVersion>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a range of elements from this immutable list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
       <MemberSignature Language="C#" Value="System.Collections.Immutable.IImmutableList&lt;T&gt; IImmutableList&lt;T&gt;.RemoveRange (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Collections.Generic.IEqualityComparer&lt;T&gt; equalityComparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Immutable.IImmutableList`1&lt;!T&gt; System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, class System.Collections.Generic.IEqualityComparer`1&lt;!T&gt; equalityComparer) cil managed" />
@@ -2225,11 +2185,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2265,11 +2220,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2332,11 +2282,6 @@
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -2389,7 +2334,7 @@
     </Member>
     <Member MemberName="TrueForAll">
       <MemberSignature Language="C#" Value="public bool TrueForAll (Predicate&lt;T&gt; match);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TrueForAll(class System.Predicate`1&lt;!T&gt; match) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrueForAll(class System.Predicate`1&lt;!T&gt; match) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.TrueForAll(System.Predicate{`0})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2412,23 +2357,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.RemoveRange">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Immutable</AssemblyName>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a range of elements from this immutable list.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableList%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableList%601> interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

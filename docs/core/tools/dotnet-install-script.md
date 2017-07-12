@@ -4,7 +4,7 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -52,15 +52,28 @@ Note: Options are different between script implementations.
 
 `-Channel <CHANNEL>`
 
-Specifies the source channel for the installation. The values are: `future`, `preview`, and `production`. The default value is `production`.
+Specifies the source channel for the installation. The possible values are:
+
+- `Current` - Current release
+- `LTS` - Long-Term Support channel (current supported release)
+- Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`)
+- Branch name [for example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` for the latest from the `master` branch ("bleeding edge" nightly releases)]
+
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Core Support Lifecycle](https://www.microsoft.com/net/core/support) topic.
 
 `-Version <VERSION>`
 
-Specifies the version of CLI to install. You must specify the version as a 3-part version (for example, 1.0.0-13232). If omitted, it defaults to the first [global.json](global-json.md) that contains the `version` property. If that isn't present, it will use the latest version.
+Represents a build version on the source channel (see the `-Channel` option). The possible values are:
+
+- `latest` - Latest build on the channel
+- `coherent` - Latest coherent build on the channel; uses the latest stable package combination
+- Three-part version in X.Y.Z format representing a specific build version (for example, `1.0.x` with `x` representing the patch version; or a specific build, such as `2.0.0-preview2-006120`)
+
+If omitted, `-Version` defaults to the first [global.json](global-json.md) that contains the `version` member. If that isn't present, `-Version` defaults to `latest`.
 
 `-InstallDir <DIRECTORY>`
 
-Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*.
+Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Note that binaries are placed directly in the directory.
 
 `-Architecture <ARCHITECTURE>`
 
@@ -97,13 +110,26 @@ If set, the installer uses the proxy when making web requests.
 
 `dotnet-install.sh [--channel] [--version] [--install-dir] [--architecture] [--shared-runtime] [--debug-symbols] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--help]`
 
-`--channel <CHANNEL>`
+`-Channel <CHANNEL>`
 
-Specifies the source channel for the installation. The values are: `future`, `dev`, and `production`. The default value is `production`.
+Specifies the source channel for the installation. The possible values are:
 
-`--version <VERSION>`
+- `Current` - Current release
+- `LTS` - Long-Term Support channel (current supported release)
+- Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`)
+- Branch name [for example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` for the latest from the `master` branch ("bleeding edge" nightly releases)]
 
-Specifies the version of CLI to install. You must specify the version as a 3-part version (for example, 1.0.0-13232). If omitted, it defaults to the first [global.json](global-json.md) that contains the `version` property. If that isn't present, it will use the latest version.
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Core Support Lifecycle](https://www.microsoft.com/net/core/support) topic.
+
+`-Version <VERSION>`
+
+Represents a build version on the source channel (see the `-Channel` option). The possible values are:
+
+- `latest` - Latest build on the channel
+- `coherent` - Latest coherent build on the channel; uses the latest stable package combination
+- Three-part version in X.Y.Z format representing a specific build version (for example, `1.0.x` with `x` representing the patch version; or a specific build, such as `2.0.0-preview2-006120`)
+
+If omitted, `-Version` defaults to the first [global.json](global-json.md) that contains the `version` member. If that isn't present, `-Version` defaults to `latest`.
 
 `--install-dir <DIRECTORY>`
 
@@ -165,3 +191,8 @@ Windows:
 macOS/Linux:
 
 `./dotnet-install.sh --channel preview --install-dir ~/cli`
+
+## See also
+
+[.NET Core releases](https://github.com/dotnet/core/releases)   
+[.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)

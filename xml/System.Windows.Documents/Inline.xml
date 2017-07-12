@@ -124,7 +124,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Documents.Inline.FlowDirection%2A> attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
   
- [!code-xml[InlineSnippets#_Inline_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_flowdirectionxaml)]  
+ [!code-xaml[InlineSnippets#_Inline_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_flowdirectionxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Documents.Inline.FlowDirection%2A> property programmatically.  
   
@@ -292,7 +292,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Documents.Inline.TextDecorations%2A> attribute of a <xref:System.Windows.Documents.Inline> element (<xref:System.Windows.Documents.Run>).  
   
- [!code-xml[InlineSnippets#_Inline_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_textdecxaml)]  
+ [!code-xaml[InlineSnippets#_Inline_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_textdecxaml)]  
   
  The following figure shows how this example renders.  
   

@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException.ErrorCode%2A> property set to the value of `errorCode`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalServerDownException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.DirectoryServices.AccountManagement.PrincipalOperationException.ErrorCode*> property set to the value of `errorCode`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
   
  ]]></format>
         </remarks>

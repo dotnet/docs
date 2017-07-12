@@ -54,12 +54,12 @@
 > [!NOTE]
 >  The example explicitly creates <xref:System.Windows.Controls.TreeViewItem> objects for the last two items because <xref:System.Windows.Shapes.Rectangle> and <xref:System.Windows.Controls.StackPanel> inherit from the <xref:System.Windows.Media.Visual> class. The default style for the <xref:System.Windows.Controls.TreeViewItem> sets the <xref:System.Windows.Controls.Control.Foreground%2A> property. The child objects inherit the property value from the explicitly created <xref:System.Windows.Controls.TreeViewItem>, which is typically the desired behavior.  
   
- [!code-xml[ControlContentOverviewSnippets#17](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#17)]  
+ [!code-xaml[ControlContentOverviewSnippets#17](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#17)]  
   
  The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.HeaderedItemsControl>.  
   
- [!code-xml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
-[!code-xml[HeaderedItemsControl#HeaderedItemsControl](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol)]  
+ [!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
+[!code-xaml[HeaderedItemsControl#HeaderedItemsControl](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol)]  
   
  ]]></format>
     </remarks>
@@ -210,9 +210,9 @@
 ## Examples  
  The following example shows how to create and use a header template to specify the appearance of the header.  
   
- [!code-xml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
-[!code-xml[HeaderedItemsControl#HeaderedItemsControl_Template1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template1)]  
-[!code-xml[HeaderedItemsControl#HeaderedItemsControl_Template2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template2)]  
+ [!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
+[!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Template1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template1)]  
+[!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Template2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template2)]  
   
  ]]></format>
         </remarks>
@@ -335,9 +335,9 @@
 ## Examples  
  The following example shows how to create and use a header template to specify the appearance of the header.  
   
- [!code-xml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
-[!code-xml[HeaderedItemsControl#HeaderedItemsControl_Template1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template1)]  
-[!code-xml[HeaderedItemsControl#HeaderedItemsControl_Template2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template2)]  
+ [!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Style](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_style)]  
+[!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Template1](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template1)]  
+[!code-xaml[HeaderedItemsControl#HeaderedItemsControl_Template2](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedItemsControl/CSharp/Page1.xaml#headereditemscontrol_template2)]  
   
  ]]></format>
         </remarks>

@@ -28,11 +28,11 @@
   
  The following example shows how to define a <xref:System.Windows.ResourceKey> for the <xref:System.Windows.Controls.StyleSelector>. The `namespc` prefix maps to a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace and the corresponding assembly where the <xref:System.Windows.Controls.StyleSelector> is defined. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
- [!code-xml[ListViewSnips#myStyleSelectorKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#mystyleselectorkey)]  
+ [!code-xaml[ListViewSnips#myStyleSelectorKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#mystyleselectorkey)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property of a <xref:System.Windows.Controls.ListView> to this <xref:System.Windows.Controls.StyleSelector> resource.  
   
- [!code-xml[ListViewSnips#StyleSelectorXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#styleselectorxaml)]  
+ [!code-xaml[ListViewSnips#StyleSelectorXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#styleselectorxaml)]  
   
  For an example of how to create a selector to choose a defined style resource, see the implementation of <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A?displayProperty=fullName>, which allows you to use custom logic to select a <xref:System.Windows.DataTemplate>, based on a similar concept.  
   
@@ -92,11 +92,11 @@
   
  The following example shows how to define a <xref:System.Windows.ResourceKey> for the <xref:System.Windows.Controls.StyleSelector>. The `namespc` prefix maps to a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] namespace and the corresponding assembly where the <xref:System.Windows.Controls.StyleSelector> is defined. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
- [!code-xml[ListViewSnips#myStyleSelectorKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#mystyleselectorkey)]  
+ [!code-xaml[ListViewSnips#myStyleSelectorKey](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#mystyleselectorkey)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyleSelector%2A> property of a <xref:System.Windows.Controls.ListView> to this <xref:System.Windows.Controls.StyleSelector> resource.  
   
- [!code-xml[ListViewSnips#StyleSelectorXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#styleselectorxaml)]  
+ [!code-xaml[ListViewSnips#StyleSelectorXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#styleselectorxaml)]  
   
  For an example of how to create a selector to choose a defined style resource, see the implementation of <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A?displayProperty=fullName>, which allows you to use custom logic to select a <xref:System.Windows.DataTemplate>, based on a similar concept.  
   

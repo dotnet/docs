@@ -86,8 +86,8 @@
 ## Examples  
  The following example demonstrates how the <xref:System.Management.ManagementPath> class parses a path to a WMI object.  The path that is parsed in the example is a path to an instance of a class.  
   
- [!code-csharp[wminet_ManagementPath(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath(S)/cs/ManagementPath(S).cs#1)]
- [!code-vb[wminet_ManagementPath(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath(S)/vb/ManagementPath(S).vb#1)]  
+ [!code-csharp[wminet_ManagementPath-S#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementPath-S/cs/ManagementPath-S.cs#1)]
+ [!code-vb[wminet_ManagementPath-S#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementPath-S/vb/ManagementPath-S.vb#1)]  
   
  ]]></format>
         </remarks>

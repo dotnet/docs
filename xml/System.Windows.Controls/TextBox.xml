@@ -165,7 +165,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.TextBox.CharacterCasing%2A> property to convert all manually entered characters to uppercase in a text box.  
   
- [!code-xml[TextBoxMiscSnippets_snip#CharacterCasingExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/charactercasingexample.xaml#charactercasingexamplewholepage)]  
+ [!code-xaml[TextBoxMiscSnippets_snip#CharacterCasingExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/charactercasingexample.xaml#charactercasingexamplewholepage)]  
   
  [!code-csharp[TextBoxMiscSnippets_procedural_snip#CharacterCasingCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/CharacterCasingExample.cs#charactercasingcodeexamplewholepage)]
  [!code-vb[TextBoxMiscSnippets_procedural_snip#CharacterCasingCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/charactercasingexample.vb#charactercasingcodeexamplewholepage)]  
@@ -616,7 +616,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.MaxLength%2A> of 500 characters.  
   
- [!code-xml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
+ [!code-xaml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
   
  [!code-csharp[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/TextBoxExample.cs#textboxcodeexampleinline1)]
  [!code-vb[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/textboxexample.vb#textboxcodeexampleinline1)]  
@@ -685,7 +685,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.MaxLines%2A> value of 5.  
   
- [!code-xml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
+ [!code-xaml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
   
  [!code-csharp[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/TextBoxExample.cs#textboxcodeexampleinline1)]
  [!code-vb[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/textboxexample.vb#textboxcodeexampleinline1)]  
@@ -783,7 +783,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.MinLines%2A> value of 1.  
   
- [!code-xml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
+ [!code-xaml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
   
  [!code-csharp[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/TextBoxExample.cs#textboxcodeexampleinline1)]
  [!code-vb[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/textboxexample.vb#textboxcodeexampleinline1)]  
@@ -1199,7 +1199,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.TextBox> with a <xref:System.Windows.Controls.TextBox.TextAlignment%2A> of <xref:System.Windows.TextAlignment?displayProperty=fullName>.  
   
- [!code-xml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
+ [!code-xaml[TextBoxMiscSnippets_snip#TextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textboxexample.xaml#textboxexamplewholepage)]  
   
  [!code-csharp[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/TextBoxExample.cs#textboxcodeexampleinline1)]
  [!code-vb[TextBoxMiscSnippets_procedural_snip#TextBoxCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/textboxexample.vb#textboxcodeexampleinline1)]  
@@ -1259,7 +1259,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Documents.Inline.TextDecorations%2A> attribute, using <xref:System.Windows.Documents.Run> as the example element.  
   
- [!code-xml[InlineSnippets#_Inline_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_textdecxaml)]  
+ [!code-xaml[InlineSnippets#_Inline_TextDecXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/InlineSnippets/CSharp/Window1.xaml#_inline_textdecxaml)]  
   
  The following figure shows how this example renders.  
   
@@ -1414,7 +1414,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
   
- [!code-xml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]  
+ [!code-xaml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]  
   
  The following figure shows how this example renders.  
   

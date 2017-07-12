@@ -1020,7 +1020,7 @@
         <summary>Computes the bitwise OR of its operands.</summary>
         <returns>The results of the logical OR operation.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Or%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Or%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1059,7 +1059,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> for equality.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1098,7 +1098,7 @@
         <summary>Performs a bitwise exclusive-OR (XOR) operation on the supplied parameters.</summary>
         <returns>The result of the logical XOR operation.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Xor%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Xor%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1485,7 +1485,7 @@
         <summary>The false operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is false.</summary>
         <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is false, <see langword="false" /> otherwise.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1529,7 +1529,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.GreaterThan%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1573,7 +1573,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.GreaterThanOrEquals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1647,7 +1647,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether they are not equal.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1691,7 +1691,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.LessThan%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1735,7 +1735,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.LessThanOrEquals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1807,7 +1807,7 @@
         <summary>Performs a one's complement operation on the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures.</summary>
         <returns>The one's complement of the supplied <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.OnesComplement%28System.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.OnesComplement%28System.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -1844,7 +1844,7 @@
         <summary>The true operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is true.</summary>
         <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is true, <see langword="false" /> otherwise.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

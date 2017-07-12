@@ -339,7 +339,7 @@
  The row is not permanently deleted until <xref:System.Data.DataTable.AcceptChanges%2A> is invoked on the <xref:System.Data.DataTable> that the row belongs to.  
   
 > [!NOTE]
->  A <xref:System.Data.DataRowView> may be invalid when a `DataRow` is deleted from the underlying table. When the <xref:System.Data.DataRowView> becomes invalid, operations that access values associated with <xref:System.Data.DataRowView%2C> such as <xref:System.Data.DataRowView.Delete%2A>, throw an exception.  
+>  A <xref:System.Data.DataRowView> may be invalid when a `DataRow` is deleted from the underlying table. When the <xref:System.Data.DataRowView> becomes invalid, operations that access values associated with <xref:System.Data.DataRowView>, such as <xref:System.Data.DataRowView.Delete%2A>, throw an exception.  
   
    
   

@@ -2385,7 +2385,7 @@
   
  Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Add%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Add%28System.DateTimeOffset%2CSystem.TimeSpan%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Add%28System.TimeSpan%29?displayProperty=fullName>.]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTimeOffset" /> value is less than <see cref="F:System.DateTimeOffset.MinValue" />.  
   
@@ -2816,7 +2816,7 @@
   
  Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Subtract%28System.DateTimeOffset%29?displayProperty=fullName> method instead.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.DateTimeOffset%2CSystem.DateTimeOffset%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -2865,7 +2865,7 @@
   
  Languages that do not support custom operators and operator overloading can call the <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=fullName> method instead.  
   
- The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.DateTimeOffset%2CSystem.TimeSpan%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.DateTimeOffset.Subtract%28System.TimeSpan%29?displayProperty=fullName>.]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTimeOffset" /> value is less than <see cref="F:System.DateTimeOffset.MinValue" /> or greater than <see cref="F:System.DateTimeOffset.MaxValue" />.</exception>
       </Docs>
@@ -3874,7 +3874,7 @@
   
  The <xref:System.DateTimeOffset.ToFileTime%2A> method converts the current <xref:System.DateTimeOffset> object's date and time to UTC before it performs the conversion. In other words, calling the <xref:System.DateTimeOffset.ToFileTime%2A> method is equivalent to the following method call:  
   
-```csharp  
+```csharp
 this.ToUtcDateTime().ToFileTime();  
 ```  
   

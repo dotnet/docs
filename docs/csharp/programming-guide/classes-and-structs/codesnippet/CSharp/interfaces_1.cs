@@ -1,4 +1,4 @@
-interface IEquatable<T>
+    interface IEquatable<T>
     {
         bool Equals(T obj);
     }

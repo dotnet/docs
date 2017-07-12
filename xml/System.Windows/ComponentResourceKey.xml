@@ -199,7 +199,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.ComponentResourceKey.ResourceId%2A> to differentiate this key from others associated with this type.  
   
- [!code-xml[ColorPicker_snip#SliderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerLib/Themes/generic.xaml#sliderstyle)]  
+ [!code-xaml[ColorPicker_snip#SliderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerLib/Themes/generic.xaml#sliderstyle)]  
   
  ]]></format>
         </remarks>
@@ -256,7 +256,7 @@
 ## Examples  
  The following example shows how to define a <xref:System.Windows.ComponentResourceKey> including <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> using the [ComponentResourceKey Markup Extension](~/docs/framework/wpf/advanced/componentresourcekey-markup-extension.md). This resource can then be placed in an external assembly and accessed by a key usage that requests the resource using an analogous <xref:System.Windows.ComponentResourceKey> in the request.  
   
- [!code-xml[ColorPicker_snip#SliderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerLib/Themes/generic.xaml#sliderstyle)]  
+ [!code-xaml[ColorPicker_snip#SliderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_snip/CSharp/ColorPickerLib/Themes/generic.xaml#sliderstyle)]  
   
  ]]></format>
         </remarks>

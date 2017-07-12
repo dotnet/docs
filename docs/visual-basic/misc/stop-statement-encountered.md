@@ -42,4 +42,4 @@ A `Stop` statement, which suspends execution, was encountered.
 ## See Also  
  [Stop Statement](../../visual-basic/language-reference/statements/stop-statement.md)   
  [Control Flow Summary](../../visual-basic/language-reference/keywords/control-flow-summary.md)   
- [Stop Statements in Visual Basic](https://docs.microsoft.com/visualstudio/debugger/stop-statements-in-visual-basic)
+ [Stop Statements in Visual Basic](/visualstudio/debugger/stop-statements-in-visual-basic)

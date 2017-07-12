@@ -42,7 +42,7 @@
 ## Examples  
  The following example shows how a standard application is defined using only markup:  
   
- [!code-xml[ApplicationSnippets#ApplicationMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSnippets/CSharp/AppMarkup.xaml#applicationmarkup)]  
+ [!code-xaml[ApplicationSnippets#ApplicationMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSnippets/CSharp/AppMarkup.xaml#applicationmarkup)]  
   
  The following example shows how a standard application is defined using only code:  
   
@@ -51,7 +51,7 @@
   
  The following example shows how a standard application is defined using a combination of markup and code-behind.  
   
- [!code-xml[ApplicationSnippets#ApplicationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSnippets/CSharp/App.xaml#applicationxaml)]  
+ [!code-xaml[ApplicationSnippets#ApplicationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSnippets/CSharp/App.xaml#applicationxaml)]  
   
  [!code-csharp[ApplicationSnippets#ApplicationCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSnippets/CSharp/App.xaml.cs#applicationcodebehind)]
  [!code-vb[ApplicationSnippets#ApplicationCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationSnippets/visualbasic/application.xaml.vb#applicationcodebehind)]  
@@ -130,7 +130,7 @@
 ## Examples  
  The following example shows how to detect when a standalone application activates and deactivates.  
   
- [!code-xml[ApplicationActivationSnippets#DetectActivationStateXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationActivationSnippets/CSharp/App.xaml#detectactivationstatexaml)]  
+ [!code-xaml[ApplicationActivationSnippets#DetectActivationStateXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationActivationSnippets/CSharp/App.xaml#detectactivationstatexaml)]  
   
  [!code-csharp[ApplicationActivationSnippets#DetectActivationStateCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationActivationSnippets/CSharp/App.xaml.cs#detectactivationstatecodebehind)]
  [!code-vb[ApplicationActivationSnippets#DetectActivationStateCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationActivationSnippets/visualbasic/application.xaml.vb#detectactivationstatecodebehind)]  
@@ -201,7 +201,7 @@
 ## Examples  
  The following example shows how to detect when a standalone application deactivates and activates.  
   
- [!code-xml[ApplicationActivationSnippets#DetectActivationStateXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationActivationSnippets/CSharp/App.xaml#detectactivationstatexaml)]  
+ [!code-xaml[ApplicationActivationSnippets#DetectActivationStateXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationActivationSnippets/CSharp/App.xaml#detectactivationstatexaml)]  
   
  [!code-csharp[ApplicationActivationSnippets#DetectActivationStateCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationActivationSnippets/CSharp/App.xaml.cs#detectactivationstatecodebehind)]
  [!code-vb[ApplicationActivationSnippets#DetectActivationStateCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationActivationSnippets/visualbasic/application.xaml.vb#detectactivationstatecodebehind)]  
@@ -325,7 +325,7 @@
   
 -   Persist the application state to isolated storage.  
   
- [!code-xml[ApplicationExitSnippets#HandleExitXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationExitSnippets/CSharp/App.xaml#handleexitxaml)]  
+ [!code-xaml[ApplicationExitSnippets#HandleExitXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationExitSnippets/CSharp/App.xaml#handleexitxaml)]  
   
  [!code-csharp[ApplicationExitSnippets#HandleExitCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationExitSnippets/CSharp/App.xaml.cs#handleexitcodebehind)]
  [!code-vb[ApplicationExitSnippets#HandleExitCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationExitSnippets/visualbasic/application.xaml.vb#handleexitcodebehind)]  
@@ -726,7 +726,7 @@
   
  The following example shows how to set <xref:System.Windows.Application.MainWindow%2A> using [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)].  
   
- [!code-xml[ApplicationMainWindowSnippets#SetApplicationMainWindowXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ApplicationMainWindowSnippets/XAML/App.xaml#setapplicationmainwindowxaml)]  
+ [!code-xaml[ApplicationMainWindowSnippets#SetApplicationMainWindowXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ApplicationMainWindowSnippets/XAML/App.xaml#setapplicationmainwindowxaml)]  
   
  The following example shows how to instantiate the <xref:System.Windows.Application.MainWindow%2A> in code during application startup.  
   
@@ -1274,13 +1274,13 @@
 ## Examples  
  The following example shows how create and use an application-scope property using <xref:System.Windows.Application.Properties%2A>.  
   
- [!code-xml[ApplicationPropertiesSnippets#HandleStartupXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/App.xaml#handlestartupxaml)]  
+ [!code-xaml[ApplicationPropertiesSnippets#HandleStartupXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/App.xaml#handlestartupxaml)]  
   
  [!code-csharp[ApplicationPropertiesSnippets#HandleStartupCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/App.xaml.cs#handlestartupcodebehind)]
  [!code-vb[ApplicationPropertiesSnippets#HandleStartupCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationPropertiesSnippets/visualbasic/application.xaml.vb#handlestartupcodebehind)]  
   
- [!code-xml[ApplicationPropertiesSnippets#MainWindowGetPropertyXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/MainWindow.xaml#mainwindowgetpropertyxaml1)]  
-[!code-xml[ApplicationPropertiesSnippets#MainWindowGetPropertyXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/MainWindow.xaml#mainwindowgetpropertyxaml2)]  
+ [!code-xaml[ApplicationPropertiesSnippets#MainWindowGetPropertyXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/MainWindow.xaml#mainwindowgetpropertyxaml1)]  
+[!code-xaml[ApplicationPropertiesSnippets#MainWindowGetPropertyXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/MainWindow.xaml#mainwindowgetpropertyxaml2)]  
   
  [!code-csharp[ApplicationPropertiesSnippets#MainWindowGetPropertyCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationPropertiesSnippets/CSharp/MainWindow.xaml.cs#mainwindowgetpropertycodebehind)]
  [!code-vb[ApplicationPropertiesSnippets#MainWindowGetPropertyCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationPropertiesSnippets/visualbasic/mainwindow.xaml.vb#mainwindowgetpropertycodebehind)]  
@@ -1385,17 +1385,17 @@
 ## Examples  
  This example illustrates how to use [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] together with application-scope resources to create a consistent visual appearance.  
   
- [!code-xml[ApplicationResourcesSnippets#ResourcesPropertyXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/App.xaml#resourcespropertyxaml)]  
+ [!code-xaml[ApplicationResourcesSnippets#ResourcesPropertyXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/App.xaml#resourcespropertyxaml)]  
   
- [!code-xml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml#windowbackgroundpropertyxaml1)]  
-[!code-xml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml#windowbackgroundpropertyxaml2)]  
+ [!code-xaml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml#windowbackgroundpropertyxaml1)]  
+[!code-xaml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml#windowbackgroundpropertyxaml2)]  
   
  The following example shows how to set an application resource in code and XAML.  
   
  [!code-csharp[HOWTOApplicationModelSnippets#SetApplicationScopeResourceCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/ApplicationPropertiesSnippet.xaml.cs#setapplicationscoperesourcecode)]
  [!code-vb[HOWTOApplicationModelSnippets#SetApplicationScopeResourceCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/visualbasic/applicationpropertiessnippet.xaml.vb#setapplicationscoperesourcecode)]  
   
- [!code-xml[HOWTOApplicationModelSnippets#SetApplicationScopeResourceXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/App.xaml#setapplicationscoperesourcexaml)]  
+ [!code-xaml[HOWTOApplicationModelSnippets#SetApplicationScopeResourceXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/App.xaml#setapplicationscoperesourcexaml)]  
   
  The following example shows how to get an application resource in code.  
   
@@ -1537,7 +1537,7 @@
 ## Examples  
  The following example demonstrates how to handle the <xref:System.Windows.Application.SessionEnding> event and allow the user to cancel it.  
   
- [!code-xml[ApplicationSessionEndingSnippets#HandlingSessionEndingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/CSharp/App.xaml#handlingsessionendingxaml)]  
+ [!code-xaml[ApplicationSessionEndingSnippets#HandlingSessionEndingXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/CSharp/App.xaml#handlingsessionendingxaml)]  
   
  [!code-csharp[ApplicationSessionEndingSnippets#HandlingSessionEndingCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/CSharp/App.xaml.cs#handlingsessionendingcodebehind)]
  [!code-vb[ApplicationSessionEndingSnippets#HandlingSessionEndingCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationSessionEndingSnippets/visualbasic/application.xaml.vb#handlingsessionendingcodebehind)]  
@@ -1706,7 +1706,7 @@
 ## Examples  
  The following example shows how to configure <xref:System.Windows.Application.ShutdownMode%2A> to specify that an application must be closed explicitly.  
   
- [!code-xml[ApplicationShutdownModeSnippets#SetShutdownModeXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationShutdownModeSnippets/CS/App.xaml#setshutdownmodexaml)]  
+ [!code-xaml[ApplicationShutdownModeSnippets#SetShutdownModeXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationShutdownModeSnippets/CS/App.xaml#setshutdownmodexaml)]  
   
  ]]></format>
         </remarks>
@@ -1765,7 +1765,7 @@
 ## Examples  
  The following example shows how to acquire and process command-line options from a standalone application. If the **/StartMinimized** command-line parameter was provided, the application opens the main window in a minimized state.  
   
- [!code-xml[ApplicationStartupSnippets#HandleStartupXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml#handlestartupxaml)]  
+ [!code-xaml[ApplicationStartupSnippets#HandleStartupXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml#handlestartupxaml)]  
   
  [!code-csharp[ApplicationStartupSnippets#HandleStartupCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml.cs#handlestartupcodebehind)]
  [!code-vb[ApplicationStartupSnippets#HandleStartupCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationStartupSnippets/visualbasic/application.xaml.vb#handlestartupcodebehind)]  
@@ -1882,7 +1882,7 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Application.TryFindResource%2A> to acquire a resource.  
   
- [!code-xml[ApplicationTryFindResourceSnippets#ApplicationCallTryFindResourceXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationTryFindResourceSnippets/CSharp/App.xaml#applicationcalltryfindresourcexaml)]  
+ [!code-xaml[ApplicationTryFindResourceSnippets#ApplicationCallTryFindResourceXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationTryFindResourceSnippets/CSharp/App.xaml#applicationcalltryfindresourcexaml)]  
   
  [!code-csharp[ApplicationTryFindResourceSnippets#ApplicationCallTryFindResourceCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationTryFindResourceSnippets/CSharp/MainWindow.xaml.cs#applicationcalltryfindresourcecodebehind1)]
  [!code-vb[ApplicationTryFindResourceSnippets#ApplicationCallTryFindResourceCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationTryFindResourceSnippets/visualbasic/mainwindow.xaml.vb#applicationcalltryfindresourcecodebehind1)]  
@@ -1926,7 +1926,7 @@
  [!code-csharp[ApplicationWindowsSnippets#WindowMenuItemCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationWindowsSnippets/CSharp/WindowMenuItem.cs#windowmenuitemcode)]
  [!code-vb[ApplicationWindowsSnippets#WindowMenuItemCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationWindowsSnippets/visualbasic/windowmenuitem.vb#windowmenuitemcode)]  
   
- [!code-xml[ApplicationWindowsSnippets#MainWindowSetWindowsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationWindowsSnippets/CSharp/MainWindow.xaml#mainwindowsetwindowsxaml)]  
+ [!code-xaml[ApplicationWindowsSnippets#MainWindowSetWindowsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationWindowsSnippets/CSharp/MainWindow.xaml#mainwindowsetwindowsxaml)]  
   
  [!code-csharp[ApplicationWindowsSnippets#MainWindowSetWindowsCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationWindowsSnippets/CSharp/MainWindow.xaml.cs#mainwindowsetwindowscodebehind1)]
  [!code-vb[ApplicationWindowsSnippets#MainWindowSetWindowsCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationWindowsSnippets/visualbasic/mainwindow.xaml.vb#mainwindowsetwindowscodebehind1)]  

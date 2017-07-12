@@ -140,7 +140,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Equals%28System.Security.Principal.IdentityReference%2CSystem.Security.Principal.IdentityReference%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -173,7 +173,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Compare%28System.Security.Principal.IdentityReference%2CSystem.Security.Principal.IdentityReference%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Security.Principal.IdentityReference.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

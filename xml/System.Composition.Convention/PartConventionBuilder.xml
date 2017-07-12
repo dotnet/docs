@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures a type as a Managed Extensibility Framework (MEF) part.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddPartMetadata">
@@ -34,11 +35,12 @@
         <Parameter Name="getValueFromPartType" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="getValueFromPartType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the metadata to add.</param>
+        <param name="getValueFromPartType">A function that returns the metadata value on the part type.</param>
+        <summary>Adds metadata that has the specified name and value to the part. The value is returned by a function that maps the part type to the metadata value.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPartMetadata">
@@ -59,11 +61,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The metadata name.</param>
+        <param name="value">The metadata value.</param>
+        <summary>Adds metadata that has the specified name and value to the part.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -81,9 +84,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Exports the part with its concrete type as the contract type.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -103,10 +107,11 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportConfiguration">An action that configures the part.</param>
+        <summary>Exports the part that has the specified configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Export&lt;T&gt;">
@@ -127,10 +132,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The contract type.</typeparam>
+        <summary>Exports the part that has the specified contract type.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Export&lt;T&gt;">
@@ -153,11 +159,12 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="exportConfiguration">An action that configures the part.</param>
+        <summary>Exports the part that has the specified contract type by using the specified configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -175,9 +182,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Selects all interfaces on the part type to be exported.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -197,10 +205,11 @@
         <Parameter Name="interfaceFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="interfaceFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="interfaceFilter">A predicate that specifies the interfaces to be selected.</param>
+        <summary>Selects interfaces on the part type to be exported according to the specified filter.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportInterfaces">
@@ -221,11 +230,12 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Type,System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="interfaceFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="interfaceFilter">A predicate that specifies the interfaces to be selected.</param>
+        <param name="exportConfiguration">An action that configures the exports.</param>
+        <summary>Selects interfaces on the part type to be exported according to the specified filter, using the specified export configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties">
@@ -245,10 +255,11 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyFilter">A predicate that specifies the properites to export.</param>
+        <summary>Selects the properties on the part to export according to the specified predicate.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties">
@@ -269,11 +280,12 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyFilter">A predicate that specifies the properites to export.</param>
+        <param name="exportConfiguration">An action that configures the exports.</param>
+        <summary>Selects the properties on the part to export according to the specified predicate, using the specified export configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties&lt;T&gt;">
@@ -296,11 +308,12 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="propertyFilter">A predicate that specifies the properites to export.</param>
+        <summary>Selects the properties on the part to export according to the specified predicate, using the specified contract type.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperties&lt;T&gt;">
@@ -324,12 +337,13 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="propertyFilter">A predicate that specifies the properites to export.</param>
+        <param name="exportConfiguration">An action that configures the exports.</param>
+        <summary>Selects the properties on the part to export according to the specified predicate, using the specified contract type and export configuration. </summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties">
@@ -349,10 +363,11 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyFilter">A predicate that specifies the properites to import.</param>
+        <summary>Selects the properties on the part to import according to the specified predicate.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties">
@@ -373,11 +388,12 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertyFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertyFilter">A predicate that specifies the properites to import.</param>
+        <param name="importConfiguration">An action that configures the imports.</param>
+        <summary>Selects the properties on the part to import according to the specified predicate, using the specified import configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties&lt;T&gt;">
@@ -400,11 +416,12 @@
         <Parameter Name="propertyFilter" Type="System.Predicate&lt;System.Reflection.PropertyInfo&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="propertyFilter">A predicate that specifies the properties to import.</param>
+        <summary>Selects the properties on the part to import according to the specified predicate, using the specified contract type.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperties&lt;T&gt;">
@@ -428,12 +445,13 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Reflection.PropertyInfo,System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="propertyFilter">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The contract type.</typeparam>
+        <param name="propertyFilter">A predicate that specifies the properties to import.</param>
+        <param name="importConfiguration">An action that configures the imports.</param>
+        <summary>Selects the properties on the part to import according to the specified predicate, using the specified contract type and import configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NotifyImportsSatisfied">
@@ -453,10 +471,11 @@
         <Parameter Name="methodFilter" Type="System.Predicate&lt;System.Reflection.MethodInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="methodFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="methodFilter">A predicate that selects the methods.</param>
+        <summary>Select methods to be used as a notification when composition is complete.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -476,10 +495,11 @@
         <Parameter Name="constructorSelector" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.ConstructorInfo&gt;,System.Reflection.ConstructorInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constructorSelector">A function that returns a single constructor.</param>
+        <summary>Selects the constructor used to initialize the part by using the specified function.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -500,11 +520,12 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Reflection.ParameterInfo,System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorSelector">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constructorSelector">A function that returns a single constructor.</param>
+        <param name="importConfiguration">A method that configures the constructor's imports.</param>
+        <summary>Selects the constructor used to initialize the part by using the specified function and import configuration.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -522,9 +543,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Marks the part as being shared throughout the entire composition.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -544,10 +566,11 @@
         <Parameter Name="sharingBoundary" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sharingBoundary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sharingBoundary">The boundary.</param>
+        <summary>Marks the part as being shared within the specified boundary.</summary>
+        <returns>A part builder that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

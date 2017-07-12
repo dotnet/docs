@@ -163,9 +163,9 @@ manager: "wpickett"
   
 |Alternation construct|Description|Pattern|Matches|  
 |---------------------------|-----------------|-------------|-------------|  
-|`&#124;`|Matches any one element separated by the vertical bar (&#124;) character.|`th(e&#124;is&#124;at)`|"the", "this" in "this is the day. "|  
-|`(?(` *expression* `)` *yes* `&#124;` *no* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.|`(?(A)A\d{2}\b&#124;\b\d{3}\b)`|"A10", "910" in "A10 C103 910"|  
-|`(?(` *name* `)` *yes* `&#124;` *no* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|`(?<quoted>")?(?(quoted).+?"&#124;\S+\s)`|Dogs.jpg, "Yiska playing.jpg" in "Dogs.jpg "Yiska playing.jpg""|  
+|<code>&#124;</code>|Matches any one element separated by the vertical bar (&#124;) character.|<code>th(e&#124;is&#124;at)</code>|"the", "this" in "this is the day. "|  
+|`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|"A10", "910" in "A10 C103 910"|  
+|`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|Dogs.jpg, "Yiska playing.jpg" in "Dogs.jpg "Yiska playing.jpg""|  
   
  [Back to top](#top)  
   

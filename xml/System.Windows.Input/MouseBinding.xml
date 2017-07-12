@@ -27,7 +27,7 @@
 ## Examples  
  The following example shows how to use a <xref:System.Windows.Input.MouseBinding> to bind a <xref:System.Windows.Input.MouseGesture> to a <xref:System.Windows.Input.RoutedCommand>.  
   
- [!code-xml[commandlibrarysnippets#MouseBindingMouseGestureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmousegesturexaml)]  
+ [!code-xaml[commandlibrarysnippets#MouseBindingMouseGestureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmousegesturexaml)]  
   
  [!code-csharp[commandlibrarysnippets#MouseBindingAddedToInputBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingaddedtoinputbinding)]
  [!code-vb[commandlibrarysnippets#MouseBindingAddedToInputBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingaddedtoinputbinding)]  
@@ -176,7 +176,7 @@
 ## Examples  
  The following example show how to create a binding between a <xref:System.Windows.Input.MouseGesture> to a <xref:System.Windows.Input.RoutedCommand>.  
   
- [!code-xml[commandlibrarysnippets#MouseBindingGestureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindinggesturexaml)]  
+ [!code-xaml[commandlibrarysnippets#MouseBindingGestureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindinggesturexaml)]  
   
  [!code-csharp[commandlibrarysnippets#MouseBindingGesture](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindinggesture)]
  [!code-vb[commandlibrarysnippets#MouseBindingGesture](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindinggesture)]  
@@ -255,7 +255,7 @@
 ## Examples  
  The following example shows how to create a binding between a <xref:System.Windows.Input.MouseAction> and a <xref:System.Windows.Input.RoutedCommand>.  
   
- [!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
+ [!code-xaml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
   
  ]]></format>
         </remarks>

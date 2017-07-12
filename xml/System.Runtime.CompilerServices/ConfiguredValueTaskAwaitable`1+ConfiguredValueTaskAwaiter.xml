@@ -1,6 +1,6 @@
 <Type Name="ConfiguredValueTaskAwaitable&lt;TResult&gt;+ConfiguredValueTaskAwaiter" FullName="System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;TResult&gt;+ConfiguredValueTaskAwaiter">
   <TypeSignature Language="C#" Value="public struct ConfiguredValueTaskAwaitable&lt;TResult&gt;.ConfiguredValueTaskAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit ConfiguredValueTaskAwaitable`1/ConfiguredValueTaskAwaiter&lt;TResult&gt; extends System.ValueType implements class System.Runtime.CompilerServices.ICriticalNotifyCompletion, class System.Runtime.CompilerServices.INotifyCompletion" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ConfiguredValueTaskAwaitable`1/ConfiguredValueTaskAwaiter&lt;TResult&gt; extends System.ValueType implements class System.Runtime.CompilerServices.ICriticalNotifyCompletion, class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`1.ConfiguredValueTaskAwaiter" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>

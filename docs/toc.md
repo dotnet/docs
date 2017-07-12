@@ -233,14 +233,13 @@
 # [F# Guide](fsharp/index.md)
 
 ## [Tour of F#](fsharp/tour.md)
-
+### [Get Started](fsharp/get-started/index.md)
+#### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
+#### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+#### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
+#### [Get Started with Command-line Tools](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
-### [Get Started](fsharp/tutorials/getting-started/index.md)
-#### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
-#### [Get Started with Visual Studio for Mac](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
-#### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
-#### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)

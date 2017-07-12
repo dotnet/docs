@@ -16,71 +16,71 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 Application Programming Interfaces (APIs) are contracts between software systems describing how their objects and methods can interact. Frameworks are made up of collections of APIs. When you target one or more frameworks in an app or library, you're specifying the sets and versions of APIs you'd like the app or library to use.
 
-An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions aren't frameworks but represent standardized sets of APIs across all .NET frameworks. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across several .NET implementations all at once.
+An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET frameworks. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across several .NET implementations all at once.
 
 An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
 
 For some target frameworks (for example, the .NET Framework), the APIs are defined by the assemblies that the framework installs on a system and may include app model APIs (for example, ASP.NET).
 
-For NuGet package-based target frameworks that aren't preinstalled on a system (for example, .NET Standard and .NET Core), the APIs are defined by the packages listed in the app or library. A *metapackage* is a NuGet package that has no content of its own but is a list of dependencies (other packages). A NuGet package-based target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
+For NuGet package-based target frameworks (for example, .NET Standard and .NET Core), the APIs are defined by the packages listed in the app or library. A *metapackage* is a NuGet package that has no content of its own but is a list of dependencies (other packages). A NuGet package-based target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
 
 ## Latest target framework versions
 
-The following table defines the set of target frameworks that you can use, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. Target frameworks are referenced by a TFM (long name, such as .NETFramework,Version=4.7) or Compact TFM (short name, such as net47). 
+The following table defines the set of target frameworks that you can use, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
 
-| Target Framework      | Latest Version | Target Framework Moniker (TFM) | Compact Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
-| :-------------------: | :------------: | :----------------------------: | :------------------------------------: | :-------------------: | :---------: |
-| .NET Standard         | 1.6.1          | .NETStandard,Version=1.6       | netstandard1.6                         | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
-| .NET Core Application | 1.1.2          | .NETCoreApp,Version=1.1        | netcoreapp1.1                          | 1.6                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
-| .NET Framework        | 4.7            | .NETFramework,Version=4.7      | net47                                  | 1.5                   | N/A |
+| Target Framework      | Latest Version | Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
+| :-------------------: | :------------: | :----------------------------: | :-------------------: | :---------: |
+| .NET Standard         | 1.6.1          | netstandard1.6                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
+| .NET Core Application | 1.1.2          | netcoreapp1.1                  | 1.6                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
+| .NET Framework        | 4.7            | net47                          | 1.5                   | N/A |
 
-## Supported target frameworks
+## Supported target framework versions
 
-A target framework is typically referenced by a compact TFM. A TFM value can represent one or multiple target frameworks. The following table shows the target frameworks supported by the .NET Core SDK and the NuGet client. Equivalents are shown within brackets (`[]`).
+A target framework is typically referenced by a TFM. The following table shows the target frameworks supported by the .NET Core SDK and the NuGet client. Equivalents are shown within brackets (`[]`).
 
-| Name                       | Abbreviation | Compact TFM                                  |
-| -------------------------- | ------------ | -------------------------------------------- |
-| .NET Standard              | netstandard  | netstandard1.0                               |
-|                            |              | netstandard1.1                               |
-|                            |              | netstandard1.2                               |
-|                            |              | netstandard1.3                               |
-|                            |              | netstandard1.4                               |
-|                            |              | netstandard1.5                               |
-|                            |              | netstandard1.6                               |
-|                            |              | netstandard2.0                               |
-| .NET Core                  | netcoreapp   | netcoreapp1.0                                |
-|                            |              | netcoreapp1.1                                |
-|                            |              | netcoreapp2.0                                |
-| .NET Framework             | net          | net11                                        |
-|                            |              | net20                                        |
-|                            |              | net35                                        |
-|                            |              | net40                                        |
-|                            |              | net403                                       |
-|                            |              | net45                                        |
-|                            |              | net451                                       |
-|                            |              | net452                                       |
-|                            |              | net46                                        |
-|                            |              | net461                                       |
-|                            |              | net462                                       |
-|                            |              | net47                                        |
-| Windows Store              | netcore      | netcore [netcore45]                          |
-|                            |              | netcore45 [win, win8]                        |
-|                            |              | netcore451 [win81]                           |
-| .NET Micro Framework       | netmf        | netmf                                        |
-| Silverlight                | sl           | sl4                                          |
-|                            |              | sl5                                          |
-| Windows Phone              | wp           | wp [wp7]                                     |
-|                            |              | wp7                                          |
-|                            |              | wp75                                         |
-|                            |              | wp8                                          |
-|                            |              | wp81                                         |
-|                            |              | wpa81                                        |
-| Universal Windows Platform | uap          | uap [uap10.0]                                |
-|                            |              | uap10.0 [win10] [netcore50]                  |
+| Target Framework           | TFM                                          |
+| -------------------------- | -------------------------------------------- |
+| .NET Standard              | netstandard1.0                               |
+|                            | netstandard1.1                               |
+|                            | netstandard1.2                               |
+|                            | netstandard1.3                               |
+|                            | netstandard1.4                               |
+|                            | netstandard1.5                               |
+|                            | netstandard1.6                               |
+|                            | netstandard2.0                               |
+| .NET Core                  | netcoreapp1.0                                |
+|                            | netcoreapp1.1                                |
+|                            | netcoreapp2.0                                |
+| .NET Framework             | net11                                        |
+|                            | net20                                        |
+|                            | net35                                        |
+|                            | net40                                        |
+|                            | net403                                       |
+|                            | net45                                        |
+|                            | net451                                       |
+|                            | net452                                       |
+|                            | net46                                        |
+|                            | net461                                       |
+|                            | net462                                       |
+|                            | net47                                        |
+| Windows Store              | netcore [netcore45]                          |
+|                            | netcore45 [win, win8]                        |
+|                            | netcore451 [win81]                           |
+| .NET Micro Framework       | netmf                                        |
+| Silverlight                | sl4                                          |
+|                            | sl5                                          |
+| Windows Phone              | wp [wp7]                                     |
+|                            | wp7                                          |
+|                            | wp75                                         |
+|                            | wp8                                          |
+|                            | wp81                                         |
+|                            | wpa81                                        |
+| Universal Windows Platform | uap [uap10.0]                                |
+|                            | uap10.0 [win10] [netcore50]                  |
 
 ## How to specify target frameworks
 
-Target frameworks are specified in your *csproj* project file. When a single target framework is specified, use the **\<TargetFramework>** element. The following console app project file demonstrates how to target the `netcoreapp1.0` TFM:
+Target frameworks are specified in your *csproj* project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 1.0:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -93,7 +93,7 @@ Target frameworks are specified in your *csproj* project file. When a single tar
 </Project>
 ```
 
-The following library project file targets newer APIs of .NET Standard (`netstandard1.4`) and older APIs of the .NET Framework (`net40` and `net45`). When targeting more than one target framework, use the plural **\<TargetFrameworks>** element. Note how the use of `Condition` attributes includes implementation-specific package references when the library is compiled for the two .NET Framework TFMs:
+The following library project file targets newer APIs of .NET Standard (`netstandard1.4`) and older APIs of the .NET Framework (`net40` and `net45`). When targeting more than one target framework, use the plural **TargetFrameworks** element. Note how the use of `Condition` attributes includes implementation-specific package references when the library is compiled for the two .NET Framework TFMs:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -116,45 +116,50 @@ The following library project file targets newer APIs of .NET Standard (`netstan
 </Project>
 ```
 
+Within your library or app, you write conditional code to compile for each target framework:
+
+```csharp
+public class MyClass
+{
+    static void Main()
+    {
+#if NET40
+        Console.WriteLine("Target framework: .NET Framework 4.0");
+#elif NET45  
+        Console.WriteLine("Target framework: .NET Framework 4.5");
+#else
+        Console.WriteLine("Target framework: .NET Standard 1.4");
+#endif
+    }
+}
+```
+
+The build system is aware of preprocessor symbols representing the frameworks shown in [Supported target framework versions](#supported-target-framework-versions). When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot in the version with an underscore (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+
 ## Deprecated target frameworks
 
 The following target frameworks are deprecated. Packages targeting these frameworks should migrate to the indicated replacements.
 
-| Deprecated TFM       | Replacement |
-| -------------------- | ----------- |
-| aspnet50             | netcoreapp  |
-| aspnetcore50         |             |
-| dnxcore50            |             |
-| dnx                  |             |
-| dnx45                |             |
-| dnx451               |             |
-| dnx452               |             |
-| dotnet               | netstandard |
-| dotnet50             |             |
-| dotnet51             |             |
-| dotnet52             |             |
-| dotnet53             |             |
-| dotnet54             |             |
-| dotnet55             |             |
-| dotnet56             |             |
-| netcore50            | uap10.0     |
-| win                  | netcore45   |
-| win8                 | netcore45   |
-| win81                | netcore451  |
-| win10                | uap10.0     |
-| winrt                | netcore45   |
+| Deprecated TFM                                                                             | Replacement |
+| ------------------------------------------------------------------------------------------ | ----------- |
+| aspnet50<br>aspnetcore50<br>dnxcore50<br>dnx<br>dnx45<br>dnx451<br>dnx452                  | netcoreapp  |
+| dotnet<br>dotnet50<br>dotnet51<br>dotnet52<br>dotnet53<br>dotnet54<br>dotnet55<br>dotnet56 | netstandard |
+| netcore50                                                                                  | uap10.0     |
+| win                                                                                        | netcore45   |
+| win8                                                                                       | netcore45   |
+| win81                                                                                      | netcore451  |
+| win10                                                                                      | uap10.0     |
+| winrt                                                                                      | netcore45   |
 
 ## Precedence
 
 A number of frameworks are related to and compatible with one another but not necessarily equivalent:
 
-| Framework                        | Can use   |
-| -------------------------------- | --------- |
-| uap (Universal Windows Platform) | win81     |
-|                                  | wpa81     |
-|                                  | netcore50 |
-| win (Windows Store)              | winrt     |
-|                                  | winrt45   |
+| Framework                        | Can use                     |
+| -------------------------------- | --------------------------- |
+| uap (Universal Windows Platform) | win81<br>wpa81<br>netcore50 |
+| win (Windows Store)              | winrt                       |
+|                                  | winrt45                     |
 
 ## See also
 

@@ -31,7 +31,7 @@ This is the final task of the [!INCLUDE[ssAstoria](../../../../includes/ssastori
   
 4.  Open the file MainWindow.xaml and replace the XAML code with the following code:  
   
-     [!code-xml[Astoria Quickstart Client#Window1Xaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria quickstart client/vb/window1.xaml#window1xaml)]  
+     [!code-xaml[Astoria Quickstart Client#Window1Xaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria quickstart client/vb/window1.xaml#window1xaml)]  
   
 ### To add a data service reference to the project  
   

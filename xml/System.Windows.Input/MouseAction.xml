@@ -32,7 +32,7 @@
 ## Examples  
  The following example shows how to construct a <xref:System.Windows.Input.MouseGesture> using a <xref:System.Windows.Input.MouseAction> and how to bind the gesture to a <xref:System.Windows.Input.RoutedCommand> using a <xref:System.Windows.Input.MouseBinding>.  
   
- [!code-xml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
+ [!code-xaml[commandlibrarysnippets#MouseBindingMouseActionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#mousebindingmouseactionxaml)]  
   
  [!code-csharp[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingmouseaction)]
  [!code-vb[commandlibrarysnippets#MouseBindingMouseAction](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingmouseaction)]  

@@ -27,7 +27,7 @@
 ## Examples  
  The <xref:System.Windows.Data.Binding.ValidationRules%2A> property takes a collection of <xref:System.Windows.Controls.ValidationRule> objects. The following example uses <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=fullName> as the binding target property and `StartPrice` (an integer) as the binding source property. When the user enters a value that cannot be converted to an integer, an exception is thrown, which causes the <xref:System.Windows.Controls.ExceptionValidationRule> to invalidate the target value.  
   
- [!code-xml[DataBindingLab#DefaultValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#defaultvalidation)]  
+ [!code-xaml[DataBindingLab#DefaultValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#defaultvalidation)]  
   
  By default, when there is a validation error, the <xref:System.Windows.Controls.TextBox> appears with a red border. Optionally, you can write a custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> to specify how you want to notify the user when there is a validation error.  
   

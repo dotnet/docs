@@ -35,7 +35,7 @@
 ## Examples  
  The following example establishes a single <xref:System.Windows.EventSetter> within a page-level style.  
   
- [!code-xml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+ [!code-xaml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
   
  The following shows the example event handlers:  
   
@@ -114,7 +114,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.EventSetter.Event%2A> property as part of an <xref:System.Windows.EventSetter> in a markup style.  
   
- [!code-xml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+ [!code-xaml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
   
  ]]></format>
         </remarks>
@@ -184,7 +184,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.EventSetter.Handler%2A> property as part of a <xref:System.Windows.EventSetter> in a markup style.  
   
- [!code-xml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+ [!code-xaml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
   
  ]]></format>
         </remarks>

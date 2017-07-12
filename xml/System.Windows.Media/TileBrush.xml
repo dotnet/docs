@@ -477,7 +477,7 @@ Similar TileBrush but with tiling and a different Viewport setting
   
  The following example shows how to create a tiled <xref:System.Windows.Media.TileBrush> that has a <xref:System.Windows.Media.TileBrush.Viewbox%2A> of 0.5,0.25, 0.25,0.5.  
   
- [!code-xml[BrushOverviewExamples_snip#GraphicsMMTileBrushViewboxWithStretchTiling](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/ViewboxExample.xaml#graphicsmmtilebrushviewboxwithstretchtiling)]  
+ [!code-xaml[BrushOverviewExamples_snip#GraphicsMMTileBrushViewboxWithStretchTiling](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/ViewboxExample.xaml#graphicsmmtilebrushviewboxwithstretchtiling)]  
   
  [!code-csharp[BrushOverviewExamples_procedural_snip#GraphicsMMTileBrushViewboxWithStretchTiling](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/CSharp/ViewboxExample.cs#graphicsmmtilebrushviewboxwithstretchtiling)]
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMTileBrushViewboxWithStretchTiling](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/viewboxexample.vb#graphicsmmtilebrushviewboxwithstretchtiling)]  

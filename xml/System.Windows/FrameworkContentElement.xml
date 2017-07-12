@@ -357,7 +357,7 @@
 ## Examples  
  The following example places a <xref:System.Windows.Controls.ContextMenu> on a <xref:System.Windows.Documents.Paragraph>.  
   
- [!code-xml[ContentElementsSmorgasbord#ContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#contextmenu)]  
+ [!code-xaml[ContentElementsSmorgasbord#ContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page1.xaml#contextmenu)]  
   
  ]]></format>
         </remarks>
@@ -385,7 +385,7 @@
   
  To use this event as an <xref:System.Windows.EventTrigger> in a style, you must reference the underlying service event identifier:  
   
- [!code-xml[CorePseudocode#FEContextMenuClosing](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuclosing)]  
+ [!code-xaml[CorePseudocode#FEContextMenuClosing](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuclosing)]  
   
  (This usage is required because the event implementation on <xref:System.Windows.FrameworkContentElement> that exposes the underlying service event does not correctly map the <xref:System.Windows.FrameworkContentElement.ContextMenuClosing> identifier for use in triggers).  
   
@@ -456,7 +456,7 @@
   
  To use this event as an <xref:System.Windows.EventTrigger> in a style, you must reference the underlying service event identifier:  
   
- [!code-xml[CorePseudocode#FEContextMenuOpening](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuopening)]  
+ [!code-xaml[CorePseudocode#FEContextMenuOpening](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/pseudocode.xaml#fecontextmenuopening)]  
   
  (This usage is required because the event implementation on <xref:System.Windows.FrameworkContentElement> that exposes the underlying service event does not correctly map the <xref:System.Windows.FrameworkContentElement.ContextMenuOpening> identifier for use in triggers).  
   
@@ -995,7 +995,7 @@
 ## Examples  
  The following example forces the cursor while over the element.  
   
- [!code-xml[ForceCursor#ForceCursor](~/samples/snippets/csharp/VS_Snippets_Wpf/ForceCursor/CS/default.xaml#forcecursor)]  
+ [!code-xaml[ForceCursor#ForceCursor](~/samples/snippets/csharp/VS_Snippets_Wpf/ForceCursor/CS/default.xaml#forcecursor)]  
   
  ]]></format>
         </remarks>
@@ -1935,7 +1935,7 @@
 ## Examples  
  The following example establishes a <xref:System.Windows.FrameworkContentElement.Resources%2A> collection on a <xref:System.Windows.Documents.FlowDocument> root element. <xref:System.Windows.Documents.FlowDocument> is a typical choice because it is one of the few <xref:System.Windows.FrameworkContentElement> classes that make sense as a root element, and resources are generally stored at the page root or at even higher levels such as in the application.  
   
- [!code-xml[ContentElementsSmorgasbord#FCEResources](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page2.xaml#fceresources)]  
+ [!code-xaml[ContentElementsSmorgasbord#FCEResources](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page2.xaml#fceresources)]  
   
  ]]></format>
         </remarks>
@@ -2200,7 +2200,7 @@
 ## Examples  
  The following example establishes a <xref:System.Windows.FrameworkContentElement.Resources%2A> collection on a <xref:System.Windows.Documents.FlowDocument> root element and then references it as a resource as a specific style for a <xref:System.Windows.Documents.Paragraph>.  
   
- [!code-xml[ContentElementsSmorgasbord#FCEResources](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page2.xaml#fceresources)]  
+ [!code-xaml[ContentElementsSmorgasbord#FCEResources](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentElementsSmorgasbord/CSharp/page2.xaml#fceresources)]  
   
  ]]></format>
         </remarks>

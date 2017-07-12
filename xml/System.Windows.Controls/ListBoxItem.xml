@@ -42,7 +42,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.ListBox> that contains <xref:System.Windows.Controls.ListBoxItem> elements.  
   
- [!code-xml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -106,7 +106,7 @@
 ## Examples  
  The following example shows how to set a list box item to be selected when the list box is created.  
   
- [!code-xml[ListBox_snip#ListBoxItemsIsSelected1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsisselected1)]  
+ [!code-xaml[ListBox_snip#ListBoxItemsIsSelected1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsisselected1)]  
   
  ]]></format>
         </remarks>
@@ -343,7 +343,7 @@
 ## Examples  
  The following example shows how to subscribe to and handle this event.  
   
- [!code-xml[ListBox_snip#ListBoxItemsEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsevents)]  
+ [!code-xaml[ListBox_snip#ListBoxItemsEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsevents)]  
   
  [!code-csharp[ListBox_snip#ListBoxItemsEventSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml.cs#listboxitemseventselected)]
  [!code-vb[ListBox_snip#ListBoxItemsEventSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBox_snip/visualbasic/window1.xaml.vb#listboxitemseventselected)]  
@@ -403,7 +403,7 @@
 ## Examples  
  The following examples show how to subscribe to and handle this event.  
   
- [!code-xml[ListBox_snip#ListBoxItemsEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsevents)]  
+ [!code-xaml[ListBox_snip#ListBoxItemsEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml#listboxitemsevents)]  
   
  [!code-csharp[ListBox_snip#ListBoxItemsEventUnselected](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBox_snip/CSharp/Window1.xaml.cs#listboxitemseventunselected)]
  [!code-vb[ListBox_snip#ListBoxItemsEventUnselected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBox_snip/visualbasic/window1.xaml.vb#listboxitemseventunselected)]  

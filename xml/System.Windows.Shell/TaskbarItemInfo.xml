@@ -38,11 +38,11 @@ Windows Taskbar Enhanced Features
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Shell.TaskbarItemInfo> in markup. The <xref:System.Windows.Shell.TaskbarItemInfo> contains a collection of <xref:System.Windows.Shell.ThumbButtonInfo> objects that provide access to the Play and Stop commands from the taskbar item.  
   
- [!code-xml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
+ [!code-xaml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
   
  The following markup and code shows the previous example in its full context. The application uses a <xref:System.ComponentModel.BackgroundWorker> to count from 0 to 100 and displays its progress in the user interface. The task can be started and stopped from the taskbar preview. The progress is displayed in the taskbar button.  
   
- [!code-xml[Shell_TaskbarItemSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#001)]  
+ [!code-xaml[Shell_TaskbarItemSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#001)]  
   
  [!code-csharp[Shell_TaskbarItemSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml.cs#100)]
  [!code-vb[Shell_TaskbarItemSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/shell_taskbaritemsample/vb/mainwindow.xaml.vb#100)]  
@@ -116,7 +116,7 @@ Windows Taskbar Description
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Shell.TaskbarItemInfo> in markup and set the <xref:System.Windows.Shell.TaskbarItemInfo.Description%2A> property. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
- [!code-xml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
+ [!code-xaml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
   
  ]]></format>
         </remarks>
@@ -174,7 +174,7 @@ Windows Taskbar Overlay
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Shell.TaskbarItemInfo> in markup and set the <xref:System.Windows.Shell.TaskbarItemInfo.Overlay%2A> property. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
- [!code-xml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
+ [!code-xaml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
   
  The following example shows how to set the <xref:System.Windows.Shell.TaskbarItemInfo.Overlay%2A> property in code.  
   
@@ -347,7 +347,7 @@ Windows Taskbar Thumb Buttons
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Shell.TaskbarItemInfo> in markup. The <xref:System.Windows.Shell.TaskbarItemInfo> contains a collection of <xref:System.Windows.Shell.ThumbButtonInfo> objects that provide access to the Play and Stop commands from the taskbar item. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
- [!code-xml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
+ [!code-xaml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
   
  ]]></format>
         </remarks>
@@ -408,7 +408,7 @@ Windows Taskbar Thumbnail Preview
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Shell.TaskbarItemInfo> in markup and set the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbnailClipMargin%2A> property. This example is part of a larger example provided for the <xref:System.Windows.Shell.TaskbarItemInfo> class.  
   
- [!code-xml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
+ [!code-xaml[Shell_TaskbarItemSample#010](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_taskbaritemsample/cs/mainwindow.xaml#010)]  
   
  ]]></format>
         </remarks>

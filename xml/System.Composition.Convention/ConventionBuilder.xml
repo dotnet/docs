@@ -13,7 +13,8 @@
   <Interfaces />
   <Docs>
     <summary>Provides methods for creating and configuring rules to define CLR objects as Managed Extensibility Framework (MEF) parts.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +29,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.Convention.ConventionBuilder"/> class.</summary>
-        <remarks></remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Convention.ConventionBuilder" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForType">
@@ -52,7 +54,8 @@
         <param name="type">The type.</param>
         <summary>Creates a rule that applies to the specified type.</summary>
         <returns>An object that can be used to further configure the rule.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForType&lt;T&gt;">
@@ -76,7 +79,8 @@
         <typeparam name="T">The generic type.</typeparam>
         <summary>Creates a rule that applies to the specified generic type.</summary>
         <returns>An object that can be used to further configure the rule.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesDerivedFrom">
@@ -99,7 +103,8 @@
         <param name="type">The type.</param>
         <summary>Creates a rule that applies to all types that implement, or are derived from, the specified type.</summary>
         <returns>An object that can be used to further configure the rule.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesDerivedFrom&lt;T&gt;">
@@ -123,7 +128,8 @@
         <typeparam name="T">The generic type.</typeparam>
         <summary>Creates a rule that applies to all types that implement, or are derived from, the specified generic type.</summary>
         <returns>An object that can be used to further configure the rule.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesMatching">
@@ -146,7 +152,8 @@
         <param name="typeFilter">The predicate to match.</param>
         <summary>Creates a rule that applies to types that match the specified predicate.</summary>
         <returns>An object that can be used to further configure the rule.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesMatching&lt;T&gt;">
@@ -173,7 +180,8 @@
         <param name="typeFilter">The predicate to match.</param>
         <summary>Creates a rule that applies to types that match the specified predicate and generic type.</summary>
         <returns>An object that can be used to further configure the rule.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -198,7 +206,8 @@
         <param name="member">The member to inspect.</param>
         <summary>Retrieves the list of custom attributes applied to the specified member of the specified type.</summary>
         <returns>A collection of custom attributes.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -223,7 +232,8 @@
         <param name="parameter">The parameter to inspect.</param>
         <summary>Retrieves the list of custom attributes applied to the specified parameter of the specified type.</summary>
         <returns>A collection of custom attributes.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -13,7 +13,8 @@
   <Interfaces />
   <Docs>
     <summary>Provides augmented reflection data to support convention-based models.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,14 +29,14 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Composition.Convention.AttributedModelProvider"/> class.</summary>
+        <summary>Creates a new instance of the <see cref="T:System.Composition.Convention.AttributedModelProvider" /> class.</summary>
         <remarks>
-         <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is a protected constructor that can only be called from derived classes.
   
- ]]></format>        
+ ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -61,7 +62,8 @@
         <param name="member">The member to inspect.</param>
         <summary>Provides the list of attributes applied to the specified member of the specified type.</summary>
         <returns>A collection of the attributes applied to the specified member.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -86,7 +88,8 @@
         <param name="parameter">The parameter to inspect.</param>
         <summary>Provides the list of attributes applied to the specified parameter of the specified type.</summary>
         <returns>A collection of the attributes applied to the specified parameter.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

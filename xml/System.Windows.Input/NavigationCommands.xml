@@ -71,10 +71,10 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.BrowseBack%2A> in conjunction with a <xref:System.Windows.Controls.Frame>. The <xref:System.Windows.Controls.Frame> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.BrowseBack%2A> command by navigating the <xref:System.Windows.Controls.Frame> back, if there are journal entries on the back stack.  
   
- [!code-xml[NavigationCommandsSnippets#BrowseBackMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#BrowseBackMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#BrowseBackMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#BrowseBackMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#BrowseBackMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseBackMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseBackMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseBackMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseBack.xaml#browsebackmarkup4)]  
   
  ]]></format>
         </remarks>
@@ -127,10 +127,10 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.BrowseForward%2A> in conjunction with a <xref:System.Windows.Controls.Frame>. The <xref:System.Windows.Controls.Frame> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.BrowseForward%2A> command by navigating the <xref:System.Windows.Controls.Frame> forward, if there are journal entries on the forward stack.  
   
- [!code-xml[NavigationCommandsSnippets#BrowseForwardMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#BrowseForwardMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#BrowseForwardMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#BrowseForwardMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#BrowseForwardMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseForwardMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseForwardMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseForwardMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseForward.xaml#browseforwardmarkup4)]  
   
  ]]></format>
         </remarks>
@@ -183,10 +183,10 @@
 ## Examples  
  The following example shows how to implement code that responds to the <xref:System.Windows.Input.NavigationCommands.BrowseHome%2A> command in conjunction with a <xref:System.Windows.Controls.Frame>.  
   
- [!code-xml[NavigationCommandsSnippets#BrowseHomeMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup1)]  
-[!code-xml[NavigationCommandsSnippets#BrowseHomeMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup2)]  
-[!code-xml[NavigationCommandsSnippets#BrowseHomeMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup3)]  
-[!code-xml[NavigationCommandsSnippets#BrowseHomeMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#BrowseHomeMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseHomeMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseHomeMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseHomeMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml#browsehomemarkup4)]  
   
  [!code-csharp[NavigationCommandsSnippets#BrowseHomeCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseHome.xaml.cs#browsehomecodebehind)]
  [!code-vb[NavigationCommandsSnippets#BrowseHomeCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/NavigationCommandsSnippets/visualbasic/browsehome.xaml.vb#browsehomecodebehind)]  
@@ -242,10 +242,10 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.BrowseStop%2A> in conjunction with a <xref:System.Windows.Controls.Frame>. The <xref:System.Windows.Controls.Frame> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.BrowseStop%2A> command by stopping the current <xref:System.Windows.Controls.Frame> navigation.  
   
- [!code-xml[NavigationCommandsSnippets#BrowseStopMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#BrowseStopMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#BrowseStopMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#BrowseStopMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#BrowseStopMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseStopMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseStopMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#BrowseStopMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/BrowseStop.xaml#browsestopmarkup4)]  
   
  ]]></format>
         </remarks>
@@ -298,11 +298,11 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.DecreaseZoom%2A> in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.DecreaseZoom%2A> command by decreasing the zoom percentage.  
   
- [!code-xml[NavigationCommandsSnippets#DecreaseZoomMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup1)]  
-[!code-xml[NavigationCommandsSnippets#DecreaseZoomMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup2)]  
-[!code-xml[NavigationCommandsSnippets#DecreaseZoomMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup3)]  
-[!code-xml[NavigationCommandsSnippets#DecreaseZoomMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup4)]  
-[!code-xml[NavigationCommandsSnippets#DecreaseZoomMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#DecreaseZoomMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#DecreaseZoomMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#DecreaseZoomMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#DecreaseZoomMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#DecreaseZoomMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/DecreaseZoom.xaml#decreasezoommarkup5)]  
   
  ]]></format>
         </remarks>
@@ -355,10 +355,10 @@
 ## Examples  
  The following example shows how to implement code that responds to the <xref:System.Windows.Input.NavigationCommands.Favorites%2A> command in conjunction with a <xref:System.Windows.Controls.Frame>.  
   
- [!code-xml[NavigationCommandsSnippets#FavoritesMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#FavoritesMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#FavoritesMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#FavoritesMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#FavoritesMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#FavoritesMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#FavoritesMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#FavoritesMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Favorites.xaml#favoritesmarkup4)]  
   
   
   
@@ -413,11 +413,11 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.FirstPage%2A> in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.FirstPage%2A> command by going to the first page.  
   
- [!code-xml[NavigationCommandsSnippets#FirstPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup1)]  
-[!code-xml[NavigationCommandsSnippets#FirstPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup2)]  
-[!code-xml[NavigationCommandsSnippets#FirstPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup3)]  
-[!code-xml[NavigationCommandsSnippets#FirstPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup4)]  
-[!code-xml[NavigationCommandsSnippets#FirstPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#FirstPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#FirstPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#FirstPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#FirstPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#FirstPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/FirstPage.xaml#firstpagemarkup5)]  
   
  ]]></format>
         </remarks>
@@ -470,11 +470,11 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Input.NavigationCommands.GoToPage%2A> command in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.GoToPage%2A> command by going to the page specified by the text value of a <xref:System.Windows.Controls.TextBox> control.  
   
- [!code-xml[NavigationCommandsSnippets#GoToPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup1)]  
-[!code-xml[NavigationCommandsSnippets#GoToPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup2)]  
-[!code-xml[NavigationCommandsSnippets#GoToPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup3)]  
-[!code-xml[NavigationCommandsSnippets#GoToPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup4)]  
-[!code-xml[NavigationCommandsSnippets#GoToPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#GoToPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#GoToPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#GoToPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#GoToPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#GoToPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/GoToPage.xaml#gotopagemarkup5)]  
   
  ]]></format>
         </remarks>
@@ -527,11 +527,11 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.IncreaseZoom%2A> in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.IncreaseZoom%2A> command by decreasing the zoom percentage.  
   
- [!code-xml[NavigationCommandsSnippets#IncreaseZoomMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup1)]  
-[!code-xml[NavigationCommandsSnippets#IncreaseZoomMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup2)]  
-[!code-xml[NavigationCommandsSnippets#IncreaseZoomMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup3)]  
-[!code-xml[NavigationCommandsSnippets#IncreaseZoomMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup4)]  
-[!code-xml[NavigationCommandsSnippets#IncreaseZoomMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#IncreaseZoomMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#IncreaseZoomMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#IncreaseZoomMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#IncreaseZoomMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#IncreaseZoomMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/IncreaseZoom.xaml#increasezoommarkup5)]  
   
  ]]></format>
         </remarks>
@@ -584,11 +584,11 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.LastPage%2A> in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.LastPage%2A> command by going to the last page.  
   
- [!code-xml[NavigationCommandsSnippets#LastPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup1)]  
-[!code-xml[NavigationCommandsSnippets#LastPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup2)]  
-[!code-xml[NavigationCommandsSnippets#LastPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup3)]  
-[!code-xml[NavigationCommandsSnippets#LastPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup4)]  
-[!code-xml[NavigationCommandsSnippets#LastPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#LastPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#LastPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#LastPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#LastPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#LastPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/LastPage.xaml#lastpagemarkup5)]  
   
  ]]></format>
         </remarks>
@@ -641,10 +641,10 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.NavigateJournal%2A> in conjunction with a <xref:System.Windows.Controls.Frame>. The <xref:System.Windows.Controls.Frame> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.NavigateJournal%2A> command by navigating to the specified journal entry on either the forward or back stacks of the <xref:System.Windows.Controls.Frame>. The journal entries are provided by the <xref:System.Windows.Navigation.JournalEntryUnifiedViewConverter> to the top-level `Navigate Journal` <xref:System.Windows.Controls.MenuItem>. Each journal entry is bound to a child <xref:System.Windows.Controls.MenuItem> that uses the <xref:System.Windows.Input.NavigationCommands.NavigateJournal%2A> command.  
   
- [!code-xml[NavigationCommandsSnippets#NavigateJournalMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#NavigateJournalMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#NavigateJournalMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#NavigateJournalMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#NavigateJournalMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#NavigateJournalMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#NavigateJournalMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#NavigateJournalMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NavigateJournal.xaml#navigatejournalmarkup4)]  
   
  ]]></format>
         </remarks>
@@ -697,11 +697,11 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.NextPage%2A> in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.NextPage%2A> command by going to the next page.  
   
- [!code-xml[NavigationCommandsSnippets#NextPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup1)]  
-[!code-xml[NavigationCommandsSnippets#NextPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup2)]  
-[!code-xml[NavigationCommandsSnippets#NextPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup3)]  
-[!code-xml[NavigationCommandsSnippets#NextPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup4)]  
-[!code-xml[NavigationCommandsSnippets#NextPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#NextPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#NextPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#NextPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#NextPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#NextPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/NextPage.xaml#nextpagemarkup5)]  
   
  ]]></format>
         </remarks>
@@ -754,11 +754,11 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.PreviousPage%2A> in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>. The <xref:System.Windows.Controls.FlowDocumentPageViewer> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.PreviousPage%2A> command by going to the previous page.  
   
- [!code-xml[NavigationCommandsSnippets#PreviousPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup1)]  
-[!code-xml[NavigationCommandsSnippets#PreviousPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup2)]  
-[!code-xml[NavigationCommandsSnippets#PreviousPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup3)]  
-[!code-xml[NavigationCommandsSnippets#PreviousPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup4)]  
-[!code-xml[NavigationCommandsSnippets#PreviousPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#PreviousPageMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#PreviousPageMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#PreviousPageMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#PreviousPageMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#PreviousPageMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/PreviousPage.xaml#previouspagemarkup5)]  
   
  ]]></format>
         </remarks>
@@ -811,10 +811,10 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Input.NavigationCommands.Refresh%2A> in conjunction with a <xref:System.Windows.Controls.Frame>. The <xref:System.Windows.Controls.Frame> provides an implementation that responds to the <xref:System.Windows.Input.NavigationCommands.Refresh%2A> command by reloading the current <xref:System.Windows.Controls.Frame> content.  
   
- [!code-xml[NavigationCommandsSnippets#RefreshMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#RefreshMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#RefreshMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#RefreshMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#RefreshMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#RefreshMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#RefreshMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#RefreshMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Refresh.xaml#refreshmarkup4)]  
   
  ]]></format>
         </remarks>
@@ -867,11 +867,11 @@
 ## Examples  
  The following example shows how to implement code that responds to the <xref:System.Windows.Input.NavigationCommands.Search%2A> command in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>.  
   
- [!code-xml[NavigationCommandsSnippets#SearchMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup1)]  
-[!code-xml[NavigationCommandsSnippets#SearchMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup2)]  
-[!code-xml[NavigationCommandsSnippets#SearchMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup3)]  
-[!code-xml[NavigationCommandsSnippets#SearchMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup4)]  
-[!code-xml[NavigationCommandsSnippets#SearchMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup5)]  
+ [!code-xaml[NavigationCommandsSnippets#SearchMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#SearchMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#SearchMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#SearchMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup4)]  
+[!code-xaml[NavigationCommandsSnippets#SearchMARKUP5](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml#searchmarkup5)]  
   
  [!code-csharp[NavigationCommandsSnippets#SearchCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Search.xaml.cs#searchcodebehind)]
  [!code-vb[NavigationCommandsSnippets#SearchCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/NavigationCommandsSnippets/visualbasic/search.xaml.vb#searchcodebehind)]  
@@ -927,10 +927,10 @@
 ## Examples  
  The following example shows how to implement code that responds to the <xref:System.Windows.Input.NavigationCommands.Zoom%2A> command in conjunction with a <xref:System.Windows.Controls.FlowDocumentPageViewer>.  
   
- [!code-xml[NavigationCommandsSnippets#ZoomMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup1)]  
-[!code-xml[NavigationCommandsSnippets#ZoomMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup2)]  
-[!code-xml[NavigationCommandsSnippets#ZoomMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup3)]  
-[!code-xml[NavigationCommandsSnippets#ZoomMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup4)]  
+ [!code-xaml[NavigationCommandsSnippets#ZoomMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup1)]  
+[!code-xaml[NavigationCommandsSnippets#ZoomMARKUP2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup2)]  
+[!code-xaml[NavigationCommandsSnippets#ZoomMARKUP3](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup3)]  
+[!code-xaml[NavigationCommandsSnippets#ZoomMARKUP4](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationCommandsSnippets/CSharp/Zoom.xaml#zoommarkup4)]  
   
   
   

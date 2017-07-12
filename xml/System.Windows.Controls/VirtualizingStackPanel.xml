@@ -33,11 +33,11 @@
 ## Examples  
  The following example shows how to bind to an XML data source and virtualize the items displayed in a <xref:System.Windows.Controls.ListBox> element using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. Notice that the `VirtualizingStackPanel.IsVirtualizing` attached property is explicitly set to `true`.  
   
- [!code-xml[VirtualizingStackPanel_Intro#2](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#2)]  
+ [!code-xaml[VirtualizingStackPanel_Intro#2](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#2)]  
   
  The following example creates a <xref:System.Windows.Controls.ListBox> and sets the `VirtualizingStackPanel.VirtualizationMode` attached property to <xref:System.Windows.Controls.VirtualizationMode.Recycling>.  
   
- [!code-xml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
+ [!code-xaml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
   
  The following example shows the data used in the previous example.  
   

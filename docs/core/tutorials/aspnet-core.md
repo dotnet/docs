@@ -1,6 +1,6 @@
 ---
 title: Getting started with ASP.NET Core | Microsoft Docs
-description: Getting started with ASP.NET Core    
+description: Redirection topic to get you started with ASP.NET Core.
 keywords: .NET, .NET Core
 author: tdykstra
 ms.author: tdykstra

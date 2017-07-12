@@ -1,6 +1,6 @@
 ---
 title: .NET Core Tutorials | Microsoft Docs
-description: .NET Core Tutorials
+description: List of tutorials for learning .NET Core.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw

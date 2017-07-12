@@ -1,6 +1,6 @@
 ---
 title: Docker and .NET Core | Microsoft Docs
-description: Docker and .NET Core
+description: List of tutorials for learning about using Docker with .NET Core.
 keywords: Docker, .NET, .NET Core
 author: spboyer
 ms.author: shboyer

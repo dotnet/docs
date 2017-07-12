@@ -1,6 +1,6 @@
 ---
 title: global.json reference | Microsoft Docs
-description: global.json reference
+description: Schema reference topic for the global.json file.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw

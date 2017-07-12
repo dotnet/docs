@@ -1,6 +1,6 @@
 ---
 title: Migrating from DNX to .NET Core CLI | Microsoft Docs
-description: Migrating from DNX to .NET Core CLI
+description: How to migrate from using DNX tooling to .NET Core CLI tooling.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw

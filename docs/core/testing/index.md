@@ -1,6 +1,6 @@
 ---
 title: Unit Testing in .NET Core | Microsoft Docs
-description: Unit Testing in .NET Core
+description: How to get started with unit testing in .NET Core projects.
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn

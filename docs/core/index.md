@@ -1,6 +1,6 @@
 ---
 title: .NET Core | Microsoft Docs
-description: .NET Core
+description: .NET Core is a general-purpose development platform maintained by Microsoft and the .NET community.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw

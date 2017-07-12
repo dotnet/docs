@@ -60,7 +60,7 @@ AppDomains can be used for different purposes on the .NET Framework. For code is
 
 ### Remoting
 
-For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](https://docs.microsoft.com/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile).
+For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile).
 
 Across machines, you can use a network based solution as an alternative, preferably a low-overhead plain text protocol such as HTTP. [KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer), the web server used by ASP.NET Core, is an option here. Remote proxy generation via [Castle.Core](https://github.com/castleproject/Core) is also an option to consider.
 

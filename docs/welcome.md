@@ -45,7 +45,7 @@ This documentation covers the breadth of .NET across platforms and languages.  Y
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
 
-Additionally, you can browse the [.NET API reference](https://docs.microsoft.com/dotnet/api).
+Additionally, you can browse the [.NET API reference](/dotnet/api).
 
 ## Open source
 

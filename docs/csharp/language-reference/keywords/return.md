@@ -50,5 +50,5 @@ The `return` statement terminates execution of the method in which it appears an
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [return Statement](https://docs.microsoft.com/cpp/cpp/return-statement-cpp)   
+ [return Statement](/cpp/cpp/return-statement-cpp)   
  [Jump Statements](../../../csharp/language-reference/keywords/jump-statements.md)

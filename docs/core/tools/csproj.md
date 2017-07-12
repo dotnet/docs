@@ -13,7 +13,7 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 # Additions to the csproj format for .NET Core
 
-This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
+This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
 
 ## Implicit package references
 Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.
@@ -71,7 +71,7 @@ With csproj, we recommend that you remove the default globs from your project an
 
 ## How to see the whole project as MSBuild sees it
 
-While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
+While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
 
 `dotnet msbuild /pp:fullproject.xml`
 
@@ -82,7 +82,7 @@ If the project has multiple target frameworks, the results of the command should
 ## Additions
 
 ### Sdk attribute 
-The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks) and [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
@@ -155,7 +155,7 @@ The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identi
 
 
 ### PackageTargetFallback 
-The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](https://docs.microsoft.com/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet. 
+The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet. 
 
 The following example provides the fallbacks for all targets in your project: 
 

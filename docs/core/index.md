@@ -57,7 +57,7 @@ The [.NET Standard](../standard/net-standard.md) is an API spec that describes t
 
 By itself, .NET Core includes a single application model -- console apps -- which is useful for tools, local services and text-based games. Additional application models have been built on top of .NET Core to extend its functionality, such as:
 
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/)
+- [ASP.NET Core](/aspnet/core/)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
 - [Xamarin.Forms when targeting UWP](https://www.xamarin.com/forms)
 

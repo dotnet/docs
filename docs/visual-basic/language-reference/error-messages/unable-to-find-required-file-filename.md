@@ -46,4 +46,4 @@ A file that is required by Visual Studio is missing or damaged.
 -   Reinstall Visual Studio.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

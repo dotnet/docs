@@ -26,7 +26,7 @@ You must also have [git installed](https://git-scm.com/download) and available o
 
 If you're on Windows, you have two options for installing F#.
 
-If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
+If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](get-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
 
 If you prefer not to install Visual Studio, use the following instructions:
 
@@ -150,7 +150,7 @@ Open the *ClassLibraryDemo* folder.  You should see the following files:
 
 Open `Script.fsx`, and add the following code at the end of it:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
+[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx)]
 
 This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin).  The next step is to evaluate it using F# Interactive (FSI).
 
@@ -164,7 +164,7 @@ This did three things:
 2. It sent the code you highlighted over the FSI process.
 3. The FSI process evaluated the code you sent over.
 
-Because what you sent over was a [function](../../language-reference/functions/index.md), you can now call that function with FSI!  In the interactive window, type the following:
+Because what you sent over was a [function](../language-reference/functions/index.md), you can now call that function with FSI!  In the interactive window, type the following:
 
 ```fsharp
 toPigLatin "banana";;
@@ -211,13 +211,13 @@ This states that `toPigLatin` is a function which takes in a `string` as input (
 
 In the body of the function, you'll notice two distinct parts:
 
-1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../../language-reference/pattern-matching.md):
+1. An inner function, called `isVowel`, which determines if a given character (`c`) is a vowel by checking if it matches one of the provided patterns via [Pattern Matching](../language-reference/pattern-matching.md):
 
-   [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
+   [!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L2-L6)]
 
-2. An [`if..then..else`](../../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
+2. An [`if..then..else`](../language-reference/conditional-expressions-if-then-else.md) expression which checks if the first character is a vowel, and constructs a return value out of the input characters based on if the first character was a vowel or not:
 
-   [!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L11)]
+   [!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/to-pig-latin.fsx#L8-L11)]
 
 The flow of `toPigLatin` is thus:
 
@@ -231,11 +231,11 @@ The previous sections in this article demonstrated a common first step in writin
 
 The next step in REPL-driven development is to move working code into an F# implementation file.  It can then be compiled by the F# compiler into an assembly which can be executed.
 
-To begin, open `ClassLibraryDemo.fs`.  You'll notice that some code is already in there.  Go ahead and delete the class definition, but make sure to leave the [`namespace`](../../language-reference/namespaces.md) declaration at the top.
+To begin, open `ClassLibraryDemo.fs`.  You'll notice that some code is already in there.  Go ahead and delete the class definition, but make sure to leave the [`namespace`](../language-reference/namespaces.md) declaration at the top.
 
-Next, create a new [`module`](../../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function into it as such:
+Next, create a new [`module`](../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function into it as such:
 
-[!code-fsharp[ToPigLatin](../../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
+[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
 
 This is one of the many ways you can organize functions in F# code, and a common approach if you also want to call your code from C# or Visual Basic projects.
 
@@ -289,18 +289,18 @@ You can also ask for further help from the Ionide developers and F# community in
 
 ## Next steps
 
-To learn more about F# and the features of the language, check out [Tour of F#](../../tour.md).
+To learn more about F# and the features of the language, check out [Tour of F#](../tour.md).
 
 ## See also
 
-[Tour of F#](../../tour.md)
+[Tour of F#](../tour.md)
 
-[F# Language Reference](../../language-reference/index.md)
+[F# Language Reference](../language-reference/index.md)
 
-[Functions](../../language-reference/functions/index.md)
+[Functions](../language-reference/functions/index.md)
 
-[Modules](../../language-reference/modules.md)
+[Modules](../language-reference/modules.md)
 
-[Namespaces](../../language-reference/namespaces.md)
+[Namespaces](../language-reference/namespaces.md)
 
 [Ionide-VSCode: FSharp](https://github.com/ionide/ionide-vscode-fsharp)

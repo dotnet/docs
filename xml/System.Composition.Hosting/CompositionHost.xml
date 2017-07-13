@@ -37,7 +37,7 @@
         <Parameter Name="providers" Type="System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorProvider&gt;" />
       </Parameters>
       <Docs>
-        <param name="providers">The providers, containing export descriptions for the parts being composed.</param>
+        <param name="providers">The providers, which contain export descriptions for the parts being composed.</param>
         <summary>Creates the composition host with the specified collection of providers.</summary>
         <returns>The created composition host.</returns>
         <remarks></remarks>
@@ -66,8 +66,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="providers">The providers, containing export descriptions for the parts being composed.</param>
-        <summary>Creates the composition host with the specified collection of providers.</summary>
+        <param name="providers">The providers, which contain export descriptions for the parts being composed.</param>
+        <summary>Creates the composition host with the specified array of providers.</summary>
         <returns>The created composition host.</returns>
         <remarks></remarks>
       </Docs>

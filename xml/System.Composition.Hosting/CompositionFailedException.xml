@@ -47,7 +47,7 @@
       </Parameters>
       <Docs>
         <param name="message">A message that contains information about the exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException"/> class with the specified message.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.CompositionFailedException"/> class with the specified message.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -68,7 +68,7 @@
       <Docs>
         <param name="message">A message that contains information about the exception.</param>
         <param name="innerException">The inner exception to wrap in this exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException"/> class with the specified message and inner exception.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.CompositionFailedException"/> class with the specified message and inner exception.</summary>
         <remarks></remarks>
       </Docs>
     </Member>

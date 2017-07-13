@@ -33,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:ContainerConfiguration"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.ContainerConfiguration"/> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
       <Parameters />
       <Docs>
         <typeparam name="TPart">The type to add.</typeparam>
-        <summary>Adds the specified generic type to the container.</summary>
+        <summary>Adds the specified type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
@@ -270,7 +270,7 @@
       <Docs>
         <typeparam name="TPart">The type to add.</typeparam>
         <param name="conventions">The conventions to use for the part type.</param>
-        <summary>Adds the specified generic type to the container.</summary>
+        <summary>Adds the specified type to the container using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>
@@ -347,7 +347,7 @@
       <Docs>
         <param name="partTypes">A collection of part types to add.</param>
         <param name="conventions">The conventions to use for part types.</param>
-        <summary>Adds the specified part types to the container.</summary>
+        <summary>Adds the specified part types to the container using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
         <remarks></remarks>
       </Docs>

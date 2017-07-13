@@ -24,7 +24,7 @@
 The <xref:System.Composition.Hosting.Core.LifetimeContext> object is the unit of sharing for shared parts. It controls the disposal of bound parts and can be used to retrieve instances, either as part of an existing composition operation or as the basis of a new composition operation. An individual lifetime context can be marked to contain parts that are constrained by particular sharing boundaries.
 
 This object contains two pieces of independently protected shared state: shared part instances and bound part instances. 
-A shared part instance is lock-free readable and does not result in issues if it is added to during disposal. It is protected by being locked itself. Activation logic is unavoidably called under this lock. 
+A shared part instance is lock-free, readable, and does not result in issues if it is added to during disposal. It is protected by being locked itself. Activation logic is unavoidably called under this lock. 
 A bound part instance is always protected by locking <see langword="this" />, and should never be written to after disposal. A bound part instance is set to <see langword="null" /> under a lock in the <xref:System.Composition.Hosting.Core.LifetimeContext.Dispose> method. If writing were allowed after disposal for a bound part instance, it would result in disposable parts not being released. The dispose method on a bound part is called outside of the lock. 
   
  ]]></format>

@@ -76,6 +76,15 @@ When you install the [.NET Core SDK](https://www.microsoft.com/net/download/core
 dotnet new -l
 ```
 
+## Create a basic template from a project
+
+1. Make sure your project compiles and runs.
+1. Add a folder to the root of the project named *.template.config*.
+1. Create a *template.json* file configuring your template. See the [*template.json*](#template-json) section for more information.
+1. Add your *template.json* configuration file to the *.template.config* folder.
+
+Your template is finished. At this point, [package the template for NuGet distribution](#packing-a-template-into-a-nuget-package) or [install it from the file system](#to-install-a-template-from-a-file-system-directory) for use.
+
 ## Packing a template into a NuGet package
 
 Currently, a custom template is packed on Windows with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet pack](dotnet-pack.md)). For cross-platform packaging, consider [NuGetizer 3000](https://github.com/NuGet/Home/wiki/NuGetizer-3000).
@@ -125,7 +134,7 @@ nuget pack C:/Users/<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CS
 
 Install a custom template from a NuGet package on any NuGet feed, by referencing a *nupkg* file directly, or by specifying a file system directory that contains a templating configuration. Use the `-i|--install` option with the `dotnet new` command.
 
-### To install a template from a NuGet package stored at [nuget.org](https://www.nuget.org/):
+### To install a template from a NuGet package stored at nuget.org
 
 ```console
 dotnet new -i <NUGET_PACKAGE_ID>
@@ -140,7 +149,7 @@ dotnet new -i GarciaSoftware.ConsoleTemplate.CSharp
 > [!NOTE]
 > The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org. If you run the command, no template is installed. However, you can install a template that hasn't been published to nuget.org by referencing the *nupkg* file directly on your local file system as shown in the next section.
 
-### To install a template from a local *nupkg* file:
+### To install a template from a local nupkg file
 
 ```console
 dotnet new -i <PATH_TO_NUPKG_FILE>
@@ -152,7 +161,9 @@ dotnet new -i <PATH_TO_NUPKG_FILE>
 dotnet new -i C:/Users/Garcia/GarciaSoftware.ConsoleTemplate.CSharp.1.0.0.nupkg
 ```
 
-### To install a template from a file system directory (the project folder containing the project and the *.template.config* folder):
+### To install a template from a file system directory
+
+The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the *.template.config* folder:
 
 ```console
 dotnet new -i <FILE_SYSTEM_DIRECTORY>
@@ -168,7 +179,7 @@ dotnet new -i C:/Users/Garcia/Documents/Templates/GarciaSoftware.ConsoleTemplate
 
 You uninstall a custom template by referencing a NuGet package by its `id` or by specifying a file system directory that contains a templating configuration. Use the `-u|--uninstall` install option with the `dotnet new` command.
 
-### To uninstall a template from a NuGet package stored at [nuget.org](https://www.nuget.org/):
+### To uninstall a template from a NuGet package stored at nuget.org
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
@@ -185,7 +196,7 @@ dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp
 > 
 > > Could not find something to uninstall called 'GarciaSoftware.ConsoleTemplate.CSharp'.
 
-### To uninstall a template from a local *nupkg* file:
+### To uninstall a template from a local nupkg file
 
 Although you can install a template from a *nupkg* file on your local file system by referencing the *nupkg* file directly with the `dotnet new -i <PATH_TO_NUPKG_FILE>` command; when you wish to uninstall the template, only reference it by it's `id` (for example, `dotnet new -u <NUGET_PACKAGE_ID>`). *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.*
 
@@ -199,7 +210,9 @@ dotnet new -u <NUGET_PACKAGE_ID>
 dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp.1.0.0
 ```
 
-### To uninstall a template from a file system directory (the project folder containing the project and the *.template.config* folder):
+### To uninstall a template from a file system directory
+
+The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the *.template.config* folder:
 
 ```console
 dotnet new -u <FILE_SYSTEM_DIRECTORY>

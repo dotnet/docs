@@ -13,7 +13,7 @@ ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 
 # Porting to .NET Core - Libraries
 
-With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform. This article discusses the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
+With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform. This article discusses the .NET Standard, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
 
 Porting is a task that may take time, especially if you have a large codebase. You should also be prepared to adapt the guidance here as needed to best fit your code. Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.
 
@@ -23,9 +23,9 @@ This article assumes you are using Visual Studio 2017 or later on Windows. The b
 
 This article also assumes that you understand the [recommended porting process](index.md) and that you have resolved any issues with [third-party dependencies](third-party-deps.md).
 
-## Targeting the .NET Standard Library
+## Targeting .NET Standard
 
-The best way to build a cross-platform library for .NET Core is to target the [.NET Standard](../../standard/net-standard.md). The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes. It is supported by the .NET Core runtime.
+The best way to build a cross-platform library for .NET Core is to target the [.NET Standard](../../standard/net-standard.md). The .NET Standard is the formal specification of .NET APIs that are intended to be available on all .NET runtimes. It is supported by the .NET Core runtime.
 
 What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.
 

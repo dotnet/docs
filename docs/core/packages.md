@@ -66,9 +66,9 @@ There are advantages to using metapackages:
 - Provides a convenient user experience to reference a large set of fine-grained packages. 
 - Defines a set of packages (including specific versions) that are tested and work well together.
 
-The .NET Standard Library metapackage is:
+The .NET Standard metapackage is:
 
-- [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - Describes the libraries that are part of the ".NET Standard Library". Applies to all .NET implementations (for example, .NET Framework, .NET Core and Mono) that support the .NET Standard Library. Establishes the 'netstandard' framework.
+- [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - Describes the libraries that are part of the ".NET Standard". Applies to all .NET implementations (for example, .NET Framework, .NET Core and Mono) that support .NET Standard. Establishes the 'netstandard' framework.
 
 The key .NET Core metapackages are:
 
@@ -108,9 +108,9 @@ The two primary package-based frameworks used with .NET Core are:
 
 ### .NET Standard
 
-The .NET Standard (target framework moniker: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard](../standard/net-standard.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement. 
+The .NET Standard (target framework moniker: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard](../standard/net-standard.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement.
 
-The `netstandard` framework implicitly references the `NETStandard.Library` metapackage. For example, the following MSBuild project file indicates that the project targets `netstandard1.6`, which references the .NET Standard Library version 1.6 metapackage. 
+The `netstandard` framework implicitly references the [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library) metapackage. For example, the following MSBuild project file indicates that the project targets `netstandard1.6`, which references the [`NETStandard.Library` version 1.6](https://www.nuget.org/packages/NETStandard.Library/1.6.0) metapackage.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

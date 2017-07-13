@@ -1,6 +1,6 @@
 ---
 title: .NET Core Tutorials | Microsoft Docs
-description: List of tutorials for learning .NET Core.
+description: Follow tutorials for learning .NET Core to build apps and libraries on Mac, Linux, and Windows.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw

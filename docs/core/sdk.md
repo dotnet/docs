@@ -1,6 +1,6 @@
 ---
 title: .NET Core SDK Overview | Microsoft Docs
-description: Overview of the .NET Core SDK, which is a set of libraries and tools used to create .NET Core projects.
+description: Find out about the .NET Core SDK, which is a set of libraries and tools used to create .NET Core projects.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw

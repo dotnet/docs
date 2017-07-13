@@ -1,6 +1,6 @@
 ---
 title: How to Manage Package Dependency Versions for .NET Core 1.0 | Microsoft Docs
-description: This article explains package dependency version management for your .NET Core libraries and apps.
+description: Learn about package dependency version management for your .NET Core libraries and apps.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw

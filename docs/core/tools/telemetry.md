@@ -1,6 +1,6 @@
 ---
 title: .NET Core Tools Telemetry | Microsoft Docs
-description: Explanation of the .NET Core tools telemetry features that collect usage information for analysis.
+description: Discover the .NET Core tools telemetry features that collect usage information for analysis.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw

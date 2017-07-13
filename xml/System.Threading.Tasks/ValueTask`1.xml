@@ -36,10 +36,10 @@ There are tradeoffs to using a <xref:System.Threading.Tasks.ValueTask%601> inste
 
 For uses other than consuming the result of an asynchronous operation using await, <xref:System.Threading.Tasks.ValueTask%601> can lead to a more convoluted programming model that requires more allocations. For example, consider a method that could return either a <xref:System.Threading.Tasks.Task%601> with a cached task as a common result or a <xref:System.Threading.Tasks.ValueTask%601>. If the consumer of the result wants to use it as a <xref:System.Threading.Tasks.Task%601> in a method like <xref:System.Threading.Tasks.Task.WhenAll%2A> or <xref:System.Threading.Tasks.Task.WhenAny%2A>, the <xref:System.Threading.Tasks.ValueTask%601> must first be converted to a <xref:System.Threading.Tasks.Task%601> using <xref:System.Threading.Tasks.ValueTask{TResult}.AsTask%2A>, leading to an allocation that would have been avoided if a cached <xref:System.Threading.Tasks.Task%601> had been used in the first place.   
 
-As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile, should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
+As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
 
 > [!NOTE]
->  The use of the <see cref="ValueTask{TResult}"/> type is not supported by Visual Basic 2015, which does not support generalized async return types.
+>  The use of the <see cref="ValueTask{TResult}"/> type is supported starting with C# 7, and is not supported by any version of Visual Basic.
  ]]></format>
     </remarks>
   </Docs>
@@ -344,9 +344,9 @@ As such, the default choice for any asynchronous method should be to return a <x
         <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">The value to be equated with <paramref name="right"/>.</param>
-        <param name="right">The value to be equated with <paramref name="left"/>.</param>
-        <summary>Equates two <see cref="T:ValueTask{TResult}"/> values.</summary>
+        <param name="left">The first value to compare.</param>
+        <param name="right">The second value to compare.</param>
+        <summary>Compares two values for equality.</summary>
         <returns><see langword="true" /> if the two <see cref="T:ValueTask{TResult}"/> values are equal; otherwise, <see langword="false" />.</returns>
         <remarks></remarks>
       </Docs>
@@ -370,9 +370,9 @@ As such, the default choice for any asynchronous method should be to return a <x
         <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">The value to be equated with <paramref name="right"/>.</param>
-        <param name="right">The value to be equated with <paramref name="left"/>.</param>
-        <summary>Determines the innequality of two <see cref="T:ValueTask{TResult}"/> values.</summary>
+        <param name="left">The first value to compare.</param>
+        <param name="right">The seconed value to compare.</param>
+        <summary>Determines whether two <see cref="T:ValueTask{TResult}"/> values are unequal.</summary>
         <returns><see langword="true" /> if the two <see cref="T:ValueTask{TResult}"/> values are not equal; otherwise, <see langword="false" />.</returns>
         <remarks></remarks>
       </Docs>
@@ -397,9 +397,9 @@ As such, the default choice for any asynchronous method should be to return a <x
         <remarks>
           <format type="text/markdown"><![CDATA[  
 ## Remarks  
- If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property directly returns it.
+ If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property returns it directly.
 
- If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has completed unsuccessfully, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
+ If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has faulted or was cancellecd, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
   
  ]]></format>
         </remarks>

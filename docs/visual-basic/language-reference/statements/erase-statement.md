@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Erase"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Erase keyword"
   - "Erase statement"

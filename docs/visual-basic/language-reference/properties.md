@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "properties [Visual Basic]"
 ms.assetid: c995caf9-8d0e-4fb8-ae02-e9e6087d7651

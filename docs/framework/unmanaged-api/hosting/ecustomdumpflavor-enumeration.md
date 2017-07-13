@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ECustomDumpFlavor"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ECustomDumpFlavor enumeration [.NET Framework hosting]"
 ms.assetid: b39b3320-fac7-41f1-9a03-ab6fb0cd89c7

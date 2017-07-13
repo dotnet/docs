@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRMetaHost::ExitProcess"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRMetaHost::ExitProcess method [.NET Framework hosting]"
   - "ExitProcess method, ICLRMetaHost interface [.NET Framework hosting]"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "readonly_CSharpKeyword"
   - "readonly"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "readonly keyword [C#]"
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4

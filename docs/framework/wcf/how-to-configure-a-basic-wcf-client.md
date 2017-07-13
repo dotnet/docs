@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "WCF clients [WCF], configuring"
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78

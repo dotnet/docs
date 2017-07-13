@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "strings [C#], modifying"
 ms.assetid: b6c20bba-ce22-43d7-ad1b-5ce65f714055

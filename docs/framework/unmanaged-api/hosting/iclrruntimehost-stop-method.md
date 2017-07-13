@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::Stop"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::Stop method [.NET Framework hosting]"
   - "Stop method, ICLRRuntimeHost interface [.NET Framework hosting]"

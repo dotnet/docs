@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "AddByRef"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeNameBuilder::AddByRef method [.NET Framework hosting]"
   - "AddByRef method [.NET Framework hosting]"

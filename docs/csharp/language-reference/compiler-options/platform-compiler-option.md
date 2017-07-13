@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/platform"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "platform compiler option [C#]"
   - "-platform compiler option [C#]"

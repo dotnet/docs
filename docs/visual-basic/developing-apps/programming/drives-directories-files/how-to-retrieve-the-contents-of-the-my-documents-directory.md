@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "My Documents directory"
 ms.assetid: 26560d01-7dda-4457-8e95-21db23d71aea

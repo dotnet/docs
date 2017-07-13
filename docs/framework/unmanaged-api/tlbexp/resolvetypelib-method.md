@@ -15,8 +15,6 @@ api_location:
   - "tlbref.dll"
 f1_keywords: 
   - "ResolveTypeLib"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeLibResolver::ResolveTypeLib method [.NET Framework]"
   - "ResolveTypeLib method [.NET Framework]"

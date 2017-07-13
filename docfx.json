@@ -131,7 +131,13 @@
         "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
-        "api/**.yml": ["csharp", "vb", "cpp"]
+        "api/**.yml": ["csharp", "vb", "cpp"],
+        "docs/core/**/**.md": ["csharp"],
+        "docs/csharp/**/**.md": ["csharp"],
+        "docs/framework/**/**.md": ["csharp", "vb"],
+        "docs/fsharp/**/**.md": ["fsharp"],
+        "docs/standard/**/**.md": ["csharp", "vb"],
+        "docs/visual-basic/**/**.md": ["vb"]
       },
       "ROBOTS": {
         "api/**.yml": "NOINDEX, NOFOLLOW"

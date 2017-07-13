@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30205"
   - "vbc30205"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30205"
 ms.assetid: 53c7f825-a737-4b76-a1fa-f67745b8bd40

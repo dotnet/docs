@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.uinteger"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "numbers, whole"
   - "UInteger data type"

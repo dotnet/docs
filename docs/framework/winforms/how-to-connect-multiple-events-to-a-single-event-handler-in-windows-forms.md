@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "events [Windows Forms], connecting multiple to single event handler"
   - "event handlers [Windows Forms], connecting events to"

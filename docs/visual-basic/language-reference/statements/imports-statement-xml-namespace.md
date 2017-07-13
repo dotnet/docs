@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.ImportsXmlns"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML namespace [Visual Basic], importing"
   - "imports [Visual Basic]"

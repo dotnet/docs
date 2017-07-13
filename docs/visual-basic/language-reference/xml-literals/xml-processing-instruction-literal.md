@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralProcessingInstruction"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "XML literals [Visual Basic], processing instruction"
   - "XML processing instruction literal [Visual Basic]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetAppDomainInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorProfilerInfo::GetAppDomainInfo method [.NET Framework profiling]"
   - "GetAppDomainInfo method [.NET Framework profiling]"

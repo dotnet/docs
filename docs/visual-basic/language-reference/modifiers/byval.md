@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.ByVal"
   - "ByVal"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "ByVal keyword, contexts"
   - "ByVal keyword"

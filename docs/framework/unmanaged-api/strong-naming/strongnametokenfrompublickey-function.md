@@ -21,8 +21,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "StrongNameTokenFromPublicKey"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "StrongNameTokenFromPublicKey function [.NET Framework strong naming]"
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add

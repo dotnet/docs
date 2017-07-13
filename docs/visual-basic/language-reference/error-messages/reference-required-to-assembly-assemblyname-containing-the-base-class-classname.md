@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30007"
   - "vbc30007"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30007"
 ms.assetid: 5f34cf47-6c6e-4954-bd8e-d6b020b75fb7

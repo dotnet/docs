@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugRemoteTarget::DebugActiveProcessEx"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugRemote::DebugActiveProcessEx method [.NET Framework debugging]"
   - "DebugActiveProcessEx method, ICorDebugRemote interface [.NET Framework debugging]"

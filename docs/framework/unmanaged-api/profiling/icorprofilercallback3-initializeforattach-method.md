@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback3::InitializeForAttach"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "InitializeForAttach method [.NET Framework profiling]"
   - "ICorProfilerCallback3::InitializeForAttach method [.NET Framework profiling]"

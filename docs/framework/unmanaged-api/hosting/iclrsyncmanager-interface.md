@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRSyncManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRSyncManager interface [.NET Framework hosting]"
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596

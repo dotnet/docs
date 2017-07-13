@@ -18,8 +18,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameGetBlob"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameGetBlob method [.NET Framework hosting]"
   - "StrongNameGetBlob method, ICLRStrongName interface [.NET Framework hosting]"

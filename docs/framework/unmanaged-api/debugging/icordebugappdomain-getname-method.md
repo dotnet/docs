@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain::GetName method [.NET Framework debugging]"
   - "GetName method, ICorDebugAppDomain interface [.NET Framework debugging]"

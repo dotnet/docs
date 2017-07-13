@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlEmbeddedExpression"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "embedded expressions [Visual Basic]"
   - "LINQ to XML [Visual Basic], embedded expressions"

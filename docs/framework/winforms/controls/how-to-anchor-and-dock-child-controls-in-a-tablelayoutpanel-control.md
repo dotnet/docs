@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "net.ComponentModel.StyleCollectionEditor.TLP.AnchorDock"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "layout [Windows Forms], child controls"
   - "controls [Windows Forms], child"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetConnectionTasks"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetConnectionTasks method [.NET Framework hosting]"
   - "ICLRDebugManager::SetConnectionTasks method [.NET Framework hosting]"

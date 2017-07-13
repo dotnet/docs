@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "GetAssemblyName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ITypeName::GetAssemblyName method [.NET Framework hosting]"
   - "GetAssemblyName method [.NET Framework hosting]"

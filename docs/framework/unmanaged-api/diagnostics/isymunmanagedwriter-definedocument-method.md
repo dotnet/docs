@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedWriter::DefineDocument"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedWriter::DefineDocument method [.NET Framework debugging]"
   - "DefineDocument method [.NET Framework debugging]"

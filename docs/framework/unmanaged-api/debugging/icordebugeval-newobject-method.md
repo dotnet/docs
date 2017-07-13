@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval::NewObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewObject method [.NET Framework debugging]"
   - "ICorDebugEval::NewObject method [.NET Framework debugging]"

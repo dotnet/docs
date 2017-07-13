@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetDocumentVersion"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetDocumentVersion method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetDocumentVersion method [.NET Framework debugging]"

@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "group"
   - "group_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "group keyword [C#]"
   - "group clause [C#]"

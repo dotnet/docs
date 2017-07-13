@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyAttributeAxis"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "attribute axis property [Visual Basic]"
   - "Visual Basic code, accessing XML"

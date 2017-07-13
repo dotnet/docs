@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "text boxes, stretching in ToolStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms], stretching a text box"

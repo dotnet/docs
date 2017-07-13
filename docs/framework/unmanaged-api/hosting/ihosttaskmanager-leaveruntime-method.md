@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::LeaveRuntime"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::LeaveRuntime method [.NET Framework hosting]"
   - "LeaveRuntime method [.NET Framework hosting]"

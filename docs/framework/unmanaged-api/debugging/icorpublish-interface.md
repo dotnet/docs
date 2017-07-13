@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorPublish"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorPublish interface [.NET Framework debugging]"
 ms.assetid: 87c4fcb2-7703-4a2e-afb6-42973381b960

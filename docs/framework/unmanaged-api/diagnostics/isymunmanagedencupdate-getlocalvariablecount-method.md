@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedENCUpdate::GetLocalVariableCount"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedENCUpdate::GetLocalVariableCount method [.NET Framework debugging]"
   - "GetLocalVariableCount method [.NET Framework debugging]"

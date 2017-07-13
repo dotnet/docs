@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::IsStarted"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IsStarted method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::IsStarted method [.NET Framework hosting]"

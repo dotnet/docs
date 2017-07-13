@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::DebuggerError"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DebuggerError method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::DebuggerError method [.NET Framework debugging]"

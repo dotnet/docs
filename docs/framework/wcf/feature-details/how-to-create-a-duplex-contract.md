@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "duplex contracts [WCF]"
 ms.assetid: 500a75b6-998a-47d5-8e3b-24e3aba2a434

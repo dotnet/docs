@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumSignatures"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumSignatures method [.NET Framework metadata]"
   - "IMetaDataImport::EnumSignatures method [.NET Framework metadata]"

@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 ms.assetid: a734cc4e-d95d-4631-91a2-81618c8ad894
 caps.latest.revision: 3
 author: dotnet-bot

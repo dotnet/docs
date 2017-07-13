@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "EHInvalidOperation.WinForms.IllegalCrossThreadCall"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "thread safety, calling controls [Windows Forms]"
   - "calling controls, thread safety [Windows Forms]"

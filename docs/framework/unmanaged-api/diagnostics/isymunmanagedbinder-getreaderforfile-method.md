@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedBinder::GetReaderForFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedBinder::GetReaderForFile method [.NET Framework debugging]"
   - "GetReaderForFile method [.NET Framework debugging]"

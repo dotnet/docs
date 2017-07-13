@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::NextDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorRuntimeHost::NextDomain method [.NET Framework hosting]"
   - "NextDomain method [.NET Framework hosting]"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.AndAlso"
   - "AndAlso"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "short-circuiting"
   - "AndAlso operator"

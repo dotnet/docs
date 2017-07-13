@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.ParamArray"
   - "ParamArray"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "ParamArray keyword"
   - "ParamArray keyword, syntax"

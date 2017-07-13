@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAppDomain3"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAppDomain3 interface [.NET Framework debugging]"
 ms.assetid: 875ef5be-c1e7-4d95-97e9-d3a667aeaba0

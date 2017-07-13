@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback2::DestroyConnection"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DestroyConnection method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::DestroyConnection method [.NET Framework debugging]"

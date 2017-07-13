@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "Graphics.FillEllipse"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "ellipses, drawing"
   - "circles, drawing"

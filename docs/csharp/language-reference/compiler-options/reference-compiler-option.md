@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/reference"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/r compiler option [C#]"
   - "reference compiler option [C#]"

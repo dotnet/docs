@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::CloseIoCompletionPort"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostIoCompletionManager::CloseIoCompletionPort method [.NET Framework hosting]"
   - "CloseIoCompletionPort method [.NET Framework hosting]"

@@ -9,8 +9,6 @@ ms.technology:
   - "dotnet-winforms"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "datasets [Windows Forms], moving through"
   - "BindingNavigator control [Windows Forms], moving through datasets"

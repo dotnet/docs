@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "generics [C#], about generics"
 ms.assetid: a1ad761e-42f7-41dd-a62f-452a2de26b9d

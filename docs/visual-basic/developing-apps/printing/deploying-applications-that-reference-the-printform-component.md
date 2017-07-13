@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "PrintForm component [Visual Basic], deploying"
 ms.assetid: b595ea44-a712-4625-a761-190c64f59bbe

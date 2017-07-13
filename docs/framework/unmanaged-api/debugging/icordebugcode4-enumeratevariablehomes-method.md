@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode4::EnumerateVariableHomes"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "EnumerateVariableHomes method [.NET Framework debugging]"
   - "ICorDebugCode4::EnumerateVariableHomes method [.NET Framework debugging]"

@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "NonVisualSelection"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "invisible controls"
   - "Windows Forms controls, adding to form"

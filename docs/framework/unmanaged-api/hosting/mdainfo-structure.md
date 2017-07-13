@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "MDAInfo"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "MDAInfo structure [.NET Framework hosting]"
 ms.assetid: fb8c14f7-d461-43d1-8b47-adb6723b9b93

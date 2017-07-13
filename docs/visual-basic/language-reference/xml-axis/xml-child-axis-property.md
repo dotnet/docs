@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlPropertyChildAxis"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Visual Basic code, accessing XML"
   - "XML axis [Visual Basic], child"

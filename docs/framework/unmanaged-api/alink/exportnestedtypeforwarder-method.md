@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ExportNestedTypeForwarder"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ExportNestedTypeForwarder method"
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950

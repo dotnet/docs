@@ -10,8 +10,6 @@ f1_keywords:
   - "try_CSharpKeyword"
   - "catch"
   - "catch_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "catch keyword [C#]"
   - "try-catch statement [C#]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugGuidToTypeMapping"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugGuidToTypeMapping structure [.NET Framework debugging]"
 ms.assetid: 57dbccd9-b16d-4da3-ae25-7a2cf9adf679

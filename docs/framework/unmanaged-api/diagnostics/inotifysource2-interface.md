@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "INotifySource2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "INotifySource2 interface [.NET Framework debugging]"
 ms.assetid: f432fb85-5c78-43d1-8302-53b8fc605c97

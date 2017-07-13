@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "delegates [C#], how to use"
 ms.assetid: 99a2fc27-a32e-4a34-921c-e65497520eec

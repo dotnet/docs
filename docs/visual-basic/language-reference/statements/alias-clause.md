@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Alias"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Alias keyword"
 ms.assetid: 58c06b11-465d-4d87-906a-73200a3d7f19

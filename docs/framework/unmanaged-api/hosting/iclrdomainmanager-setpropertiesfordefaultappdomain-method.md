@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
   - "SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"

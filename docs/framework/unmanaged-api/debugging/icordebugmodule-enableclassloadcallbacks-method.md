@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugModule::EnableClassLoadCallbacks"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugModule::EnableClassLoadCallbacks method [.NET Framework debugging]"
   - "EnableClassLoadCallbacks method [.NET Framework debugging]"

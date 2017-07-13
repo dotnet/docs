@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode3::GetReturnValueLiveOffset"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugCode3::GetReturnValueLiveOffset method [.NET Framework debugging]"
   - "GetReturnValueLiveOffset method [.NET Framework debugging]"

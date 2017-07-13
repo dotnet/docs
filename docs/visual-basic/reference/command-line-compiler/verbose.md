@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-visual-basic"
 
 ms.topic: "article"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "verbose compiler option [Visual Basic]"
   - "-verbose compiler option [Visual Basic]"

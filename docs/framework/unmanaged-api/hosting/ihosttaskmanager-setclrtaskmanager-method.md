@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostTaskManager::SetCLRTaskManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostTaskManager::SetCLRTaskManager method [.NET Framework hosting]"
   - "SetCLRTaskManager method [.NET Framework hosting]"

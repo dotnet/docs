@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode::CreateBreakpoint"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugCode::CreateBreakpoint method [.NET Framework debugging]"
   - "CreateBreakpoint method, ICorDebugCode interface [.NET Framework debugging]"

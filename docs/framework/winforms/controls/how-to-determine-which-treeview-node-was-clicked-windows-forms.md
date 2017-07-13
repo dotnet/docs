@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TreeNode"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "examples [Windows Forms], TreeView control"
   - "tree nodes in TreeView control, determining node clicked"

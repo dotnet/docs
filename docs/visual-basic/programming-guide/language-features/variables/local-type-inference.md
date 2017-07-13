@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "local type inference"
   - "vb.TypeInfer"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Option Infer statement"
   - "local type inference [Visual Basic]"

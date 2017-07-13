@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameCompareAssemblies"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRStrongName::StrongNameCompareAssemblies method [.NET Framework hosting]"
   - "StrongNameCompareAssemblies method, ICLRStrongName interface [.NET Framework hosting]"

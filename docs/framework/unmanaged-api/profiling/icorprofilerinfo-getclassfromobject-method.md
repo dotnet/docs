@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetClassFromObject"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetClassFromObject method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetClassFromObject method [.NET Framework profiling]"

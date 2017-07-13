@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostAssemblyManager"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IHostAssemblyManager interface [.NET Framework hosting]"
 ms.assetid: dfec05bb-3cd7-4bd5-b396-a4f097c3a636

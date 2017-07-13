@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugCode2::GetCodeChunks"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCodeChunks method [.NET Framework debugging]"
   - "ICorDebugCode2::GetCodeChunks method [.NET Framework debugging]"

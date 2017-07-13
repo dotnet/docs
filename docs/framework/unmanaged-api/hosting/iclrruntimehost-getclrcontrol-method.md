@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::GetCLRControl"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICLRRuntimeHost::GetCLRControl method [.NET Framework hosting]"
   - "GetCLRControl method [.NET Framework hosting]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ReleaseAllRuntimeThreads"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ReleaseAllRuntimeThreads method [.NET Framework hosting]"
   - "IDebuggerThreadControl::ReleaseAllRuntimeThreads method [.NET Framework hosting]"

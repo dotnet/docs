@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugAssembly::GetAppDomain"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugAssembly::GetAppDomain method [.NET Framework debugging]"
   - "GetAppDomain method, ICorDebugAssembly interface [.NET Framework debugging]"

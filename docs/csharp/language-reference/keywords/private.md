@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "private_CSharpKeyword"
   - "private"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "private keyword [C#]"
 ms.assetid: 654c0bb8-e6ac-4086-bf96-7474fa6aa1c8

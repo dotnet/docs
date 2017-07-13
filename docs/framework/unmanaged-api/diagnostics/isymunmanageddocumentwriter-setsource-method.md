@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocumentWriter::SetSource"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedDocumentWriter::SetSource method [.NET Framework debugging]"
   - "SetSource method [.NET Framework debugging]"

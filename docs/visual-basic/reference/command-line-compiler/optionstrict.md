@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/optionstrict"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "-optionstrict compiler option [Visual Basic]"
   - "optionstrict compiler option [Visual Basic]"

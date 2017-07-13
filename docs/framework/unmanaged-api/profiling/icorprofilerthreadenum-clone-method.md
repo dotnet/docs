@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::Clone"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Clone method, ICorProfilerThreadEnum interface [.NET Framework profiling]"
   - "ICorProfilerThreadEnum::Clone method [.NET Framework profiling]"

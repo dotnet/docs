@@ -11,8 +11,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.continue"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Continue statement [Visual Basic]"
   - "loops, transferring to next iteration"

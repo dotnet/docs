@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DeletePinvokeMap"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataEmit::DeletePinvokeMap method [.NET Framework metadata]"
   - "DeletePinvokeMap method [.NET Framework metadata]"

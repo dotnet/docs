@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "WebBrowser.Print"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "printing [Windows Forms], Web pages"
   - "WebBrowser control [Windows Forms], examples"

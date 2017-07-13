@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineFile"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "IMetaDataAssemblyEmit::DefineFile method [.NET Framework metadata]"
   - "DefineFile method [.NET Framework metadata]"

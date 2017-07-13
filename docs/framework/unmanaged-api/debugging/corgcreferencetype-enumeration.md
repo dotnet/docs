@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorGCReferenceType"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorGCReferenceType"
 ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686

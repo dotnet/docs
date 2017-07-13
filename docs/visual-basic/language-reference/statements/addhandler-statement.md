@@ -13,8 +13,6 @@ f1_keywords:
   - "vb.AddHandlerMethod"
   - "addhandler"
   - "vb.addhandler"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "AddHandler statement"
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01

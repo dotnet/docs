@@ -9,8 +9,6 @@ f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
   - ":_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"

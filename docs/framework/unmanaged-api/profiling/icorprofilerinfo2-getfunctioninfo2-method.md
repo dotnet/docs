@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetFunctionInfo2"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetFunctionInfo2 method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetFunctionInfo2 method [.NET Framework profiling]"

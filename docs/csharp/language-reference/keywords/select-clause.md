@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "select_CSharpKeyword"
   - "select"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "select keyword [C#]"
   - "select clause [C#]"

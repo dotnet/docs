@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "#endif"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "#endif directive [C#]"
 ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05

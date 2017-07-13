@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugValueEnum::Next"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugValueEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugValueEnum interface [.NET Framework debugging]"

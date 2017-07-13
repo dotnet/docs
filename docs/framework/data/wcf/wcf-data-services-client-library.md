@@ -9,11 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "HTML"
-  - "VB"
-  - "CSharp"
-  - "C++"
 helpviewer_keywords: 
   - "WCF Data Services, client library"
   - "DataServiceQuery class, about DataServiceQuery class"

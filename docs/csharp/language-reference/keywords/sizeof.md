@@ -8,8 +8,6 @@ ms.topic: "article"
 f1_keywords: 
   - "sizeof_CSharpKeyword"
   - "sizeof"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "sizeof keyword [C#]"
 ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141

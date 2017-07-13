@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugFrame::GetCaller"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetCaller method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetCaller method [.NET Framework debugging]"

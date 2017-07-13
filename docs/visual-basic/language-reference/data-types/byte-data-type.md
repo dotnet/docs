@@ -9,8 +9,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "vb.Byte"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "Byte data type"
   - "data types [Visual Basic], assigning"

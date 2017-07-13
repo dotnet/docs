@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "CorDebugMappingResult"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "CorDebugMappingResult enumeration [.NET Framework debugging]"
 ms.assetid: 701281dd-2936-45c8-a1f0-3bf7332b093b

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant::GetName"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ISymUnmanagedConstant::GetName method [.NET Framework debugging]"
   - "GetName method, ISymUnmanagedConstant interface [.NET Framework debugging]"

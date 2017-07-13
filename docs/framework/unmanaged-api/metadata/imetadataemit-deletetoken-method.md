@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DeleteToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "DeleteToken method [.NET Framework metadata]"
   - "IMetaDataEmit::DeleteToken method [.NET Framework metadata]"

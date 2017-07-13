@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "exception"
   - "<exception>"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "<exception> C# XML tag"
   - "exception C# XML tag"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::Initialize"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "Initialize method, ICorProfilerCallback interface [.NET Framework profiling]"
   - "ICorProfilerCallback::Initialize method [.NET Framework profiling]"

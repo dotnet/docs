@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "TrackBar"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "sliders, about sliders"
   - "TrackBar control [Windows Forms], about TrackBar control"

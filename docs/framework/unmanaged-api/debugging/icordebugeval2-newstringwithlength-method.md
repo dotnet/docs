@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugEval2::NewStringWithLength"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "NewStringWithLength method [.NET Framework debugging]"
   - "ICorDebugEval2::NewStringWithLength method [.NET Framework debugging]"

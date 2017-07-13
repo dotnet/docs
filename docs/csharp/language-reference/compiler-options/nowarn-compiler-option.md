@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/nowarn"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "nowarn compiler option [C#]"
   - "/nowarn compiler option [C#]"

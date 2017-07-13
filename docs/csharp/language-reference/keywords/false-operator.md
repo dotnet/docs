@@ -5,8 +5,6 @@ ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "false operator keyword [C#]"
 ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e

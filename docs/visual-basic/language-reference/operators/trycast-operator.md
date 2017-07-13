@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vb.trycast"
   - "trycast"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "TryCast keyword"
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c

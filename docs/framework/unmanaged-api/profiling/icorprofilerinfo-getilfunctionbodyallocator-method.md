@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILFunctionBodyAllocator"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "GetILFunctionBodyAllocator method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILFunctionBodyAllocator method [.NET Framework profiling]"

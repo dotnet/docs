@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IHostSecurityManager::SetThreadToken"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "SetThreadToken method [.NET Framework hosting]"
   - "IHostSecurityManager::SetThreadToken method [.NET Framework hosting]"

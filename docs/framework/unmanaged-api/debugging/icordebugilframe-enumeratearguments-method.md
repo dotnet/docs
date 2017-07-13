@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::EnumerateArguments"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "ICorDebugILFrame::EnumerateArguments method [.NET Framework debugging]"
   - "EnumerateArguments method [.NET Framework debugging]"

@@ -17,8 +17,6 @@ api_type:
   - "COM"
 f1_keywords: 
   - "IActionOnCLREvent::OnEvent"
-dev_langs: 
-  - "C++"
 helpviewer_keywords: 
   - "OnEvent method [.NET Framework hosting]"
   - "IActionOnCLREvent::OnEvent method [.NET Framework hosting]"

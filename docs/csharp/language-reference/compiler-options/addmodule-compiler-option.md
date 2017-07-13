@@ -7,8 +7,6 @@ ms.technology:
 ms.topic: "article"
 f1_keywords: 
   - "/addmodule"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "/addmodule compiler option [C#]"
   - "-addmodule compiler option [C#]"

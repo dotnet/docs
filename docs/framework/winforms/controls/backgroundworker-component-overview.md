@@ -11,8 +11,6 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "BackgroundWorker"
-dev_langs: 
-  - "jsharp"
 helpviewer_keywords: 
   - "BackgroundWorker component"
   - "background tasks"

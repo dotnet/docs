@@ -9,9 +9,6 @@ ms.technology:
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
 helpviewer_keywords: 
   - "queues [WCF], MSMQ integration"
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1

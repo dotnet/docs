@@ -9,8 +9,6 @@ ms.technology:
   - "devlang-csharp"
 
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "files [C#], getting information about"
 ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e

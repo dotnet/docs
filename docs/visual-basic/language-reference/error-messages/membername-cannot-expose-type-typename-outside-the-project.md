@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "bc30909"
   - "vbc30909"
-dev_langs: 
-  - "VB"
 helpviewer_keywords: 
   - "BC30909"
 ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54

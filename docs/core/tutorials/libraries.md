@@ -36,7 +36,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/net-standard.md) to learn more.
+If you're not quite familiar with the .NET Standard, refer to the [.NET Standard](../../standard/net-standard.md) to learn more.
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
@@ -132,7 +132,7 @@ Your project file could look like this:
 You'll notice three major changes here:
 
 1. The `TargetFramework` node has been replaced by `TargetFrameworks`, and three TFMs are expressed inside.
-1. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework references.
+1. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework reference.
 1. There is an `<ItemGroup>` node for the `net45` target pulling in two .NET Framework references.
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:

@@ -1,5 +1,5 @@
 ---
-title: "DatePicker Syles and Templates | Microsoft Docs"
+title: "DatePicker Styles and Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

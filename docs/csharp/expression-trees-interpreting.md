@@ -587,7 +587,7 @@ capabilities.
 
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
-A full implementation is included in the .NET Standard Library
+A full implementation is included in the .NET Standard 
 under the name [ExpressionVisitor](/dotnet/core/api/System.Linq.Expressions.ExpressionVisitor)
 and can handle all the possible node types.
 

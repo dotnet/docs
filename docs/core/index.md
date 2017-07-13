@@ -47,11 +47,11 @@ The C# and F# compilers and the .NET Core tools are or can be integrated into se
 
 Look at the [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md) to learn more about the .NET Core API roadmap.
 
-### Relationship to the .NET Standard Library
+### Relationship to .NET Standard
 
-The [.NET Standard](../standard/net-standard.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard Library compliant and to support libraries that target the .NET Standard Library. 
+The [.NET Standard](../standard/net-standard.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard-compliant and to support libraries that target .NET Standard. 
 
-.NET Core implements the .NET Standard Library, and therefore supports .NET Standard Libraries.
+.NET Core implements .NET Standard, and therefore supports .NET Standard libraries.
 
 ### Workloads
 

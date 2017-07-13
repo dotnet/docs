@@ -4,7 +4,7 @@ description: This topic shows you how to create custom templates for any type of
 keywords: dotnet new, CLI, CLI command, .NET Core, template, templating
 author: guardrex
 ms.author: mairaw
-ms.date: 06/26/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -16,7 +16,7 @@ ms.assetid: c28eb59d-4d18-4aba-bcd1-88bd887abc08
 
 [!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed for you to use with the [`dotnet new` command](dotnet-new.md), but you can create your own custom templates for any type of .NET project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed for you to use with the [`dotnet new` command](dotnet-new.md), but you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 Users install your custom template from a NuGet package on any NuGet feed, by referencing a NuGet *nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
 
@@ -46,6 +46,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 
 | Member            | Type          | Description |
 | ----------------- | ------------- | ----------- |
+| `$schema`         | URI           | The JSON schema for the *template.json* file. Editors that support JSON schemas enable JSON-editing features when the schema is specified. For example, Visual Studio Code requires this member to enable IntelliSense. Use a value of `http://json.schemastore.org/template`. |
 | `author`          | string        | The author of the template. |
 | `classifications` | array(string) | Zero or more characteristics of the template that a user might search for it by. |
 | `identity`        | string        | A unique name for this template. |
@@ -56,6 +57,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 
 ```json
 {
+  "$schema": "http://json.schemastore.org/template",
   "author": "Catalina Garcia",
   "classifications": [ "Common", "Console" ],
   "identity": "GarciaSoftware.ConsoleTemplate.CSharp",
@@ -76,7 +78,7 @@ dotnet new -l
 
 ## Packing a template into a NuGet package
 
-Currently, a custom template is packed with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet pack](dotnet-pack.md)).
+Currently, a custom template is packed on Windows with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet pack](dotnet-pack.md)). For cross-platform packaging, consider [NuGetizer 3000](https://github.com/NuGet/Home/wiki/NuGetizer-3000).
 
 The contents of the project folder, together with its *.template.config/template.json* file, are placed into a folder named *content*. Next to the *content* folder, add a [*nuspec* file](https://docs.microsoft.com/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
 
@@ -228,5 +230,6 @@ dotnet new garciaconsole
 ## See also
 
 [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)   
+[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)   
 [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)   
 [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)   

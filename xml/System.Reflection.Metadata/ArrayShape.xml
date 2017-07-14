@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the shape of an array type.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,11 +32,11 @@
         <Parameter Name="lowerBounds" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="rank">To be added.</param>
-        <param name="sizes">To be added.</param>
-        <param name="lowerBounds">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="rank">The number of dimensions in the array.</param>
+        <param name="sizes">The sizes of each dimension.</param>
+        <param name="lowerBounds">The lower-bounds of each dimension.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.ArrayShape"/> structure.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="LowerBounds">
@@ -53,9 +53,9 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the lower-bounds of each dimension. Length may be smaller than rank, in which case the trailing dimensions have unspecified lower bounds.</summary>
+        <value>A collection of lower-bounds values.</value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rank">
@@ -72,9 +72,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of dimensions in the array.</summary>
+        <value>The number of dimensions.</value>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sizes">
@@ -91,9 +91,9 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the sizes of each dimension. Length may be smaller than rank, in which case the trailing dimensions have unspecified sizes.</summary>
+        <value>A collection of size values.</value>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

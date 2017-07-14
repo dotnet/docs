@@ -223,7 +223,7 @@
 ### [Documenting your code](csharp/codedoc.md)
 ### [Versioning](csharp/versioning.md)
 <!-- End of C# Concepts section -->
-<!--## [🔧 Using the .NET Compiler](csharp/roslyn/index.md)-->
+<!--## [🔧 Using the .NET Compiler Platform](csharp/roslyn/index.md)-->
 ## [C# Programming Guide](csharp/programming-guide/)
 ## [Language Reference](csharp/language-reference/)
 ## [Walkthroughs](csharp/walkthroughs.md)

@@ -4,7 +4,7 @@ description: Porting to .NET Core - Libraries
 keywords: .NET, .NET Core, porting, class library
 author: cartermp
 ms.author: mairaw
-ms.date: 07/06/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet

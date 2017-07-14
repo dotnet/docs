@@ -20,7 +20,7 @@ In most cases, you will not need to migrate your existing applications to .NET C
 
 ## Using third-party .NET libraries or NuGet packages not available for .NET Core
 
-Third-party libraries are quickly embracing the [.NET Standard](https://docs.microsoft.com/en-us/dotnet/articles/standard/library), which enables code sharing across all .NET flavors, including .NET Core. With the .NET Standard Library 2.0, this will be even easier, because the .NET Core API surface will become significantly bigger. Your .NET Core applications will be able to directly use existing .NET Framework libraries.
+Third-party libraries are quickly embracing the [.NET Standard](https://docs.microsoft.com/en-us/dotnet/articles/standard/library), which enables code sharing across all .NET flavors, including .NET Core. With the .NET Standard version 2.0, this will be even easier, because the .NET Core API surface will become significantly bigger. Your .NET Core applications will be able to directly use existing .NET Framework libraries.
 
 Be aware that whenever you run a library or process based on the full .NET Framework, because of its dependencies on Windows, the container image used for that application or service will need to be based on a Windows Container image.
 

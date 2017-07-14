@@ -56,7 +56,7 @@ By default, the project filename also specifies the value of the `<AssemblyName>
 </PropertyGroup>
 ```
 
-The `<AssemblyName>` will have a different value then `<PackageId>` if `buildOptions\outputName` property was defined in project.json. 
+The `<AssemblyName>` will have a different value than `<PackageId>` if `buildOptions\outputName` property was defined in project.json. 
 For more information, see [Other common build options](#other-common-build-options).
 
 ### version

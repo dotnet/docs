@@ -111,8 +111,9 @@
         "_csharplang/spec/*.md": ".net"
       },
       "ms.topic": {
-        "api/**.yml": "managed-reference"
-      },
+        "api/**.yml": "managed-reference",
+        "_csharplang/spec/*.md": "language-reference"
+     },
       "langs": {
         "api/**.yml": ["csharp", "vb", "cpp"]
       },
@@ -122,8 +123,8 @@
       "ms.author": {
         "_csharplang/spec/*.md": "wiwagn"
       },
-      "topic": {
-        "_csharplang/spec/*.md": "reference"
+      "ms.technology": {
+        "_csharplong/spec/*.md": "devlang-csharp"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017"

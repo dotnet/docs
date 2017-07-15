@@ -108,7 +108,7 @@ Granularity in the API Gateway tier can be especially useful for more advanced c
 
 Therefore, for many medium- and large-size applications, using a custom-built API Gateway is usually a good approach, but not as a single monolithic aggregator or unique central ASPI Gateway.
 
-Another approach is to use a product like [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/) as shown in Figure 4-14. This approach not only solves your API Gateway needs, but provides features like gathering insights from your APIs. If you are using an API management solution, an API Gateway is only a component within that full API management solution.
+Another approach is to use a product like [Azure API Management](https://azure.microsoft.com/services/api-management/) as shown in Figure 4-14. This approach not only solves your API Gateway needs, but provides features like gathering insights from your APIs. If you are using an API management solution, an API Gateway is only a component within that full API management solution.
 
 ![](./media/image14.png)
 
@@ -140,7 +140,7 @@ In this guide and the reference sample application (eShopOnContainers) we are li
     [*http://microservices.io/patterns/apigateway.html*](http://microservices.io/patterns/apigateway.html)
 
 -   **Azure API Management**
-    [*https://azure.microsoft.com/en-us/services/api-management/*](https://azure.microsoft.com/en-us/services/api-management/)
+    [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)
 
 -   **Udi Dahan. Service Oriented Composition**\
     [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)

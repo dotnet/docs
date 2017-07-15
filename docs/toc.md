@@ -1,7 +1,7 @@
 # [Welcome](welcome.md)
 
-<!-- Start of .NET Platform Guide -->
-# [.NET Platform Guide](standard/index.md)
+<!-- Start of .NET Guide -->
+# [.NET Guide](standard/index.md)
 ## [Get Started with .NET](standard/get-started.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
@@ -48,7 +48,7 @@
 ## [Parallel Programming](standard/parallel-programming/)
 ## [Security](standard/security/)
 ## [Developing for Multiple Platforms](standard/cross-platform/)
-<!-- End of .NET Platform Guide -->
+<!-- End of .NET Guide -->
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)

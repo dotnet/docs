@@ -10,7 +10,7 @@ ms.technology: dotnet-docker
 ---
 # Implementing resilient Entity Framework Core SQL connections
 
-For Azure SQL DB, Entity Framework Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each DbContext connection if you want to have [resilient EF Core connections](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency).
+For Azure SQL DB, Entity Framework Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each DbContext connection if you want to have [resilient EF Core connections](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency).
 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
@@ -59,7 +59,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem
     // Use of an EF Core resiliency strategy when using multiple DbContexts
     // within an explicit transaction
     // See:
-    // https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency
+    // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
     var strategy = _catalogContext.Database.CreateExecutionStrategy();
     await strategy.ExecuteAsync(async () =>
     {
@@ -83,7 +83,7 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 ## Additional resources
 
 -   **Connection Resiliency and Command Interception with the Entity Framework**
-    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency)
+    [*https://docs.microsoft.com/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)
 
 -   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
     <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>

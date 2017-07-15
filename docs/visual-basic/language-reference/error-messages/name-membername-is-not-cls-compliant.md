@@ -58,4 +58,4 @@ An assembly is marked as `<CLSCompliant(True)>` but exposes a member with a name
 ## See Also  
  [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
  [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)   
- [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](https://msdn.microsoft.com/library/bhc3fa7f.aspx)

@@ -92,7 +92,7 @@
  You can sort the data that you retrieve with the <xref:System.Web.UI.WebControls.ObjectDataSource> by ordering the data in memory after it is retrieved. Sorting is supported only by the <xref:System.Web.UI.WebControls.ObjectDataSource> control if the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method returns a <xref:System.Data.DataTable> or <xref:System.Data.DataSet>. The <xref:System.Web.UI.WebControls.ObjectDataSourceView.CanSort%2A> property always returns `true`, because the <xref:System.Web.UI.WebControls.ObjectDataSourceView> cannot determine what type is returned by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> method without calling the method. The <xref:System.Web.UI.DataSourceSelectArguments.SortExpression%2A> property syntax is the same as for a <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property.  
   
 ## Tracking View State  
- The <xref:System.Web.UI.WebControls.ObjectDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementation of the <xref:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementation of the <xref:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  ]]></format>
     </remarks>
@@ -421,7 +421,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Deleted> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after a <xref:System.Web.UI.WebControls.ObjectDataSourceView.Delete%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -529,7 +529,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Deleting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Delete%2A> operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -840,7 +840,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSource.Filtering> event to perform validation operations on filter parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs a filter operation. You can cancel the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Select%2A> operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceFilteringEventArgs> object to `true`. The event is raised, only if the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property is set.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
 > [!IMPORTANT]
 >  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
@@ -956,7 +956,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Inserted> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -982,7 +982,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Inserting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Insert%2A> operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -1158,7 +1158,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.ObjectDataSourceView> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState%2A> method.  
   
@@ -1239,7 +1239,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSource> control automatically calls the default constructor of a business object to create and instance of it using reflection. Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreating> event to explicitly call another constructor and to set the instance of the object that results to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  If the method that is identified to perform the data operation is `static` (`Shared` in Visual Basic), the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreating> and <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreated> events are never raised.  
   
@@ -1335,7 +1335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1380,7 +1380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1425,7 +1425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnFiltering%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1458,7 +1458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnInserted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1493,7 +1493,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating%2A> method is called, only if the method that is identified to perform the data operation is not `static` (`Shared` in Visual Basic).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnInserting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1561,7 +1561,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1596,7 +1596,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing%2A> is called when the instance of an object that was created to perform a data operation is discarded. The `Dispose` method is called, only if the type that is identified by the <xref:System.Web.UI.WebControls.ObjectDataSourceView.TypeName%2A> property implements the <xref:System.IDisposable> interface.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1629,7 +1629,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1662,7 +1662,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnSelecting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1695,7 +1695,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1728,7 +1728,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1789,7 +1789,7 @@
   
  View state is the accumulation of the values of a server control's properties. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. The <xref:System.Web.UI.Control.ViewState%2A> value is then persisted to a string object after the save-state stage of the server control life cycle.  
   
- When view state is saved, view state contents are returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ When view state is saved, view state contents are returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.ObjectDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  ]]></format>
         </remarks>
@@ -1872,7 +1872,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Selected> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after a data retrieval operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -1898,7 +1898,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Selecting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the data retrieval operation. The parameters are available as an <xref:System.Collections.IDictionary> collection that is accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -2257,7 +2257,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Updated> event to examine the values of a return value and output parameters or to determine whether an exception was thrown after an <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation has completed. The return value, output parameters, and exception handling properties are available from the <xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -2357,7 +2357,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Updating> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.ObjectDataSource> control performs the <xref:System.Web.UI.WebControls.ObjectDataSourceView.Update%2A> operation. The parameters are available as an <xref:System.Collections.IDictionary> collection, accessed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs.InputParameters%2A> property, which is exposed by the <xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   

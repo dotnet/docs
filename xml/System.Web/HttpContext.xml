@@ -788,7 +788,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](http://msdn.microsoft.com/library/f540bdeb-d22e-4e1d-ba8a-fe6c9926283b).  
+ The <xref:System.Web.HttpContext.Handler%2A> property contains a reference to the handler that processes the HTTP request. The handler can be specified by using the  element, or by using a custom handler defined in user code. For more information about handlers, see [HTTP Handlers and HTTP Modules Overview](https://msdn.microsoft.com/library/bb398986.aspx).  
   
  The reference to the <xref:System.Web.HttpContext.Handler%2A> property will remain the same even after the current page has been changed by a server-side method, such as the <xref:System.Web.HttpServerUtility.Execute%2A> method or the <xref:System.Web.HttpServerUtility.Transfer%2A> method.  
   
@@ -1116,7 +1116,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/cc668201.aspx).  
   
    
   
@@ -1164,7 +1164,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/cc668201.aspx).  
   
    
   
@@ -1209,7 +1209,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/cc668201.aspx).  
   
    
   
@@ -1257,7 +1257,7 @@ End Sub
   
  URL rewriting is useful when you want to restructure the pages in your Web application, and you want to make sure that people who have bookmarked old URLs can still use them after you have moved pages. URL rewriting enables you to transparently forward requests to the new page location.  
   
- If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ If you want to enable a site to use URLs that are more user-friendly and are optimized for search engines, a more robust alternative is to use ASP.NET routing. For more information, see [ASP.NET Routing](https://msdn.microsoft.com/library/cc668201.aspx).  
   
    
   
@@ -1316,9 +1316,9 @@ End Sub
 ## Remarks  
  The <xref:System.Web.HttpContext.Session%2A> property provides programmatic access to the properties and methods of the <xref:System.Web.SessionState.HttpSessionState> class.  
   
- In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ In order to use session state you have to enable it. For information about how to enable session state, see **Configuring Session State** in [ASP.NET Session State Overview](https://msdn.microsoft.com/library/ms178581.aspx).  
   
- For information about how to save values in session state, see [How to: Save Values in Session State](http://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](http://msdn.microsoft.com/library/2ef449bc-5c17-4785-b7cf-378c601af8f5).  
+ For information about how to save values in session state, see [How to: Save Values in Session State](http://msdn.microsoft.com/library/a6cb2e3a-df49-4b12-9d9a-eed45541c165). For information about how to read values from session state, see [How to: Read Values from Session State](https://msdn.microsoft.com/library/03sekbw5.aspx).  
   
    
   

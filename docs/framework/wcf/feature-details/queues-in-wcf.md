@@ -71,4 +71,4 @@ The topics in this section discuss [!INCLUDE[indigo1](../../../../includes/indig
  Explains best practices for using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] queued communication.  
   
 ## See Also  
- [Message Queuing](http://msdn.microsoft.com/en-us/ff917e87-05d5-478f-9430-0f560675ece1)
+ [Message Queuing](https://msdn.microsoft.com/library/ms711472(v=vs.85).aspx)

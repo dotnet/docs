@@ -42,7 +42,7 @@
   
  You can use the members of this class, and any members it inherits from the <xref:System.Web.UI.MobileControls.Adapters.MobileTextWriter> class, to create custom text writers to use in a custom XHTML page or in class adapters. You can also create new derived classes that override the standard behavior of the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter> class.  
   
- Device filtering is required in order to use a specific adapter or text writer for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
+ Device filtering is required in order to use a specific adapter or text writer for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](https://msdn.microsoft.com/library/ms178620.aspx).  
   
  ]]></format>
     </remarks>

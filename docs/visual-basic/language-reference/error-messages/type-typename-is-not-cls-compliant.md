@@ -60,4 +60,4 @@ A variable, property, or function return is declared with a data type that is no
 -   If your application does not need to be CLS-compliant, you do not need to change anything. You should be aware of its noncompliance, however.  
   
 ## See Also  
- [\<PAVE OVER> Writing CLS-Compliant Code](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+ [\<PAVE OVER> Writing CLS-Compliant Code](https://msdn.microsoft.com/library/bhc3fa7f.aspx)

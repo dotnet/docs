@@ -433,7 +433,7 @@
 > [!NOTE]
 >  The C# compiler does not allow you to override the <xref:System.Object.Finalize%2A> method. Instead, you provide a finalizer by implementing a [destructor](~/docs/csharp/programming-guide/classes-and-structs/destructors.md) for your class. A C# destructor automatically calls the destructor of its base class.  
 >   
->  Visual C++ also provides its own syntax for implementing the <xref:System.Object.Finalize%2A> method. For more information, see the "Destructors and finalizers" section of [How to: Define and Consume Classes and Structs (C++/CLI)](http://msdn.microsoft.com/library/1c03cb0d-1459-4b5e-af65-97d6b3094fd7).  
+>  Visual C++ also provides its own syntax for implementing the <xref:System.Object.Finalize%2A> method. For more information, see the "Destructors and finalizers" section of [How to: Define and Consume Classes and Structs (C++/CLI)](https://msdn.microsoft.com/library/ke3a209d.aspx).  
   
  Because garbage collection is non-deterministic, you do not know precisely when the garbage collector performs finalization. To release resources immediately, you can also choose to implement the [dispose pattern](~/docs/standard/design-guidelines/dispose-pattern.md) and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation can be called by consumers of your class to free unmanaged resources, and you can use the <xref:System.Object.Finalize%2A> method to free unmanaged resources in the event that the <xref:System.IDisposable.Dispose%2A> method is not called.  
   

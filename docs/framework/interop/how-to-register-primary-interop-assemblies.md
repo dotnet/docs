@@ -59,5 +59,5 @@ regasm CompanyA.UtilLib.dll
   
 ## See Also  
  [Programming with Primary Interop Assemblies](http://msdn.microsoft.com/en-us/306fa1d6-0703-4004-9e93-d0a57f1be81e)   
- [Locating Primary Interop Assemblies](http://msdn.microsoft.com/en-us/d6768e4b-cd80-414d-a4f8-05d979eb393b)   
- [Redistributing Primary Interop Assemblies](http://msdn.microsoft.com/en-us/e76384f0-d631-474c-bdbd-13884cba0265)
+ [Locating Primary Interop Assemblies](https://msdn.microsoft.com/library/y06sxw56.aspx)   
+ [Redistributing Primary Interop Assemblies](https://msdn.microsoft.com/library/w0dt2w20.aspx)

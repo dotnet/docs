@@ -56,7 +56,7 @@ manager: "wpickett"
 -   Your application data file needs to be localizable (see                          [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)).  
   
 > [!NOTE]
->  The                      resource files described in this section are different than the resource files described in                      [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md) and different than the embedded or linked resources described in                      [Managing Application Resources (.NET)](http://msdn.microsoft.com/library/f2582734-8ada-4baa-8a7c-e2ef943ddf7e).  
+>  The                      resource files described in this section are different than the resource files described in                      [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md) and different than the embedded or linked resources described in                      [Managing Application Resources (.NET)](https://msdn.microsoft.com/library/9za7fxc7.aspx).  
   
 ### Configuring Resource Files  
  In                          [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], a resource file is a file that is included in an                          [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)] project as a                          `Resource` item.  

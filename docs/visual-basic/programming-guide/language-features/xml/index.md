@@ -51,4 +51,4 @@ translation.priority.ht:
  <xref:System.Xml.Linq>   
  [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)   
  [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)   
- [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)
+ [LINQ to XML](https://msdn.microsoft.com/library/bb387098.aspx)

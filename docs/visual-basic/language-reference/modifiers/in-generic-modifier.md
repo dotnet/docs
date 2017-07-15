@@ -42,7 +42,7 @@ For generic type parameters, the `In` keyword specifies that the type parameter 
 ## Remarks  
  Contravariance enables you to use a less derived type than that specified by the generic parameter. This allows for implicit conversion of classes that implement variant interfaces and implicit conversion of delegate types.  
   
- For more information, see [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).  
+ For more information, see [Covariance and Contravariance](https://msdn.microsoft.com/library/ee207183.aspx).  
   
 ## Rules  
  You can use the `In` keyword in generic interfaces and delegates.  
@@ -69,5 +69,5 @@ For generic type parameters, the `In` keyword specifies that the type parameter 
  [!code-vb[vbVarianceKeywords#2](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_2.vb)]  
   
 ## See Also  
- [Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)   
+ [Variance in Generic Interfaces](https://msdn.microsoft.com/library/dd233059.aspx)   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

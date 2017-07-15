@@ -50,10 +50,10 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Describes features and behaviors that are specific to the .NET Framework Data Provider for Oracle.  
   
 ## Related Sections  
- [PAVE Security in Native and .NET Framework Code](http://msdn.microsoft.com/en-us/bd61be84-c143-409a-a75a-44253724f784)  
+ [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/1787tk12.aspx)  
  Provides links to security topics for Visual Studio, the .NET Framework, and cryptography.  
   
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/bb397926.aspx)  
  Provides links to LINQ topics and samples.  
   
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  

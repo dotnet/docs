@@ -58,5 +58,5 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
  <xref:System.Security.AccessControl.MutexAccessRule>   
  [Threading](../../../docs/standard/threading/index.md)   
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)   
- [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)   
+ [Monitors](https://msdn.microsoft.com/library/system.threading.monitor(v=vs.110).aspx)   
  [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)

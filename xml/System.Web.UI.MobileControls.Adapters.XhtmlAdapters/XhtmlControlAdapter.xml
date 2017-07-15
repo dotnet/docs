@@ -43,7 +43,7 @@
   
  A number of conditional rendering methods allow for such conditions as secondary UI and for display devices that require line breaks after every block or after every inline control. Examples of these conditional methods are <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalSetPendingBreak(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" /> and <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.ConditionalEnterLayout(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.Web.UI.MobileControls.Style)" />. These methods work for a given device regardless of the control being rendered. It is unlikely you would need to override these methods when creating a new control adapter based on this class. At a minimum, you would need to override the <see cref="Overload:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.Render" /> methods.  
   
- Device filtering is required to use a specific adapter for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).</para>
+ Device filtering is required to use a specific adapter for a server control. For more information about device filtering, see [Architectural Overview of Adaptive Control Behavior](http://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff) and [Device Filtering Overview](https://msdn.microsoft.com/library/ms178620.aspx).</para>
     </block>
   </Docs>
   <Members>
@@ -911,7 +911,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>The base implementation of <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.LoadAdapterState(System.Object)" /> loads the current secondary UI mode from view state. You can override it to load other specific data from view state, but be sure to also invoke the base method in order to preserve the secondary UI mode across requests. For more information on managing view state, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).</para>
+          <para>The base implementation of <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.LoadAdapterState(System.Object)" /> loads the current secondary UI mode from view state. You can override it to load other specific data from view state, but be sure to also invoke the base method in order to preserve the secondary UI mode across requests. For more information on managing view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).</para>
         </block>
       </Docs>
     </Member>
@@ -1457,7 +1457,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>The base implementation of <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SaveAdapterState" /> saves the current secondary UI mode in view state. You can override it to save other specific data from view state, but be sure to obtain the current state from the base class, and then combine it with your control-specific state in order to preserve the secondary UI mode across requests. For more information on managing view state, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).</para>
+          <para>The base implementation of <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter.SaveAdapterState" /> saves the current secondary UI mode in view state. You can override it to save other specific data from view state, but be sure to obtain the current state from the base class, and then combine it with your control-specific state in order to preserve the secondary UI mode across requests. For more information on managing view state, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).</para>
         </block>
       </Docs>
     </Member>

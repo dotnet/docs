@@ -41,4 +41,4 @@ A registry key cannot be found.
   
 ## See Also  
  [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)   
- [Registry Access Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/b58f7687-f4db-448a-a865-07f62fd16fb2)
+ [Registry Access Changes in Visual Basic .NET](https://msdn.microsoft.com/library/hw23w1x7(v=vs.90).aspx)

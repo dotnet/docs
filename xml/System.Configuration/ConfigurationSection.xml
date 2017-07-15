@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You use the <xref:System.Configuration.ConfigurationSection> class to implement a custom section type. Extend the <xref:System.Configuration.ConfigurationSection> class to provide custom handling and programmatic access to custom configuration sections. For information about how use custom configuration sections, see [How to: Create Custom Configuration Sections Using ConfigurationSection](http://msdn.microsoft.com/library/febaca98-c727-4017-95ed-82e2fb6cf234).  
+ You use the <xref:System.Configuration.ConfigurationSection> class to implement a custom section type. Extend the <xref:System.Configuration.ConfigurationSection> class to provide custom handling and programmatic access to custom configuration sections. For information about how use custom configuration sections, see [How to: Create Custom Configuration Sections Using ConfigurationSection](https://msdn.microsoft.com/library/2tw134k3.aspx).  
   
  A section registers its handling type with an entry in the `configSections` element. For an example, see the configuration file excerpt shown in the Example section.  
   

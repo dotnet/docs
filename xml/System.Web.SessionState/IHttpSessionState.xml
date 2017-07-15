@@ -189,7 +189,7 @@
    
   
 ## Examples  
- The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/bda6fb8c-0076-43e3-9ce2-8cf1f8bdaa7d) element to `true` in the Web.config file to change the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property. For this sample application configuration, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property would return <xref:System.Web.HttpCookieMode.UseUri>.  
+ The following code example sets the `cookieless` attribute of the [sessionState Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/h6bb9cz9(v=vs.110).aspx) element to `true` in the Web.config file to change the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property. For this sample application configuration, the <xref:System.Web.SessionState.IHttpSessionState.CookieMode%2A> property would return <xref:System.Web.HttpCookieMode.UseUri>.  
   
 ```  
 <configuration>  
@@ -316,7 +316,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information on cookieless sessions, see [Session Identifiers](http://msdn.microsoft.com/library/146ca206-d151-4f2e-a548-bcca05ccf0cb).  
+ For information on cookieless sessions, see [Session Identifiers](https://msdn.microsoft.com/library/ms178582.aspx).  
   
    
   
@@ -568,7 +568,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information on different session-state modes, see [Session-State Modes](http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4).  
+ For information on different session-state modes, see [Session-State Modes](https://msdn.microsoft.com/library/ms178586.aspx).  
   
    
   

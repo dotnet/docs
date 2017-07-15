@@ -29,7 +29,7 @@
   
  Session data is passed to and retrieved from the current <xref:System.Web.HttpContext> as an <xref:System.Web.SessionState.HttpSessionStateContainer> object or any valid implementation of the <xref:System.Web.SessionState.IHttpSessionState> interface.  
   
- For information about implementing a session-state store provider, see [Implementing a Session-State Store Provider](http://msdn.microsoft.com/library/baadfec5-c881-468a-9681-7d8796b05a66).  
+ For information about implementing a session-state store provider, see [Implementing a Session-State Store Provider](https://msdn.microsoft.com/library/ms178587.aspx).  
   
    
   

@@ -65,7 +65,7 @@ Defines a binding for peer channel specific TCP messaging.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://msdn.microsoft.com/library/ms731325(v=vs.110).aspx)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
 |[\<resolver>](../../../../../docs/framework/configure-apps/file-schema/wcf/resolver.md)|Specifies a peer resolver used by this binding to resolve a peer mesh ID to the endpoint IP addresses of nodes within the peer mesh.|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netpeerbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.PeerSecurityElement>.|  
   
@@ -79,7 +79,7 @@ Defines a binding for peer channel specific TCP messaging.
  This binding provides support for the creation of peer-to-peer or multiparty applications using peer transport over TCP. Each peer node can host multiple peer channels defined with this binding type.  
   
 ## Example  
- The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](http://msdn.microsoft.com/en-us/31f4db66-edb2-40a6-b92a-14098e92acae).  
+ The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](https://msdn.microsoft.com/library/ms751426(v=vs.90).aspx).  
   
 ```xml  
 <configuration>  
@@ -112,7 +112,7 @@ Defines a binding for peer channel specific TCP messaging.
  <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/ms733824(v=vs.110).aspx)   
  [\<binding>](../../../../../docs/framework/misc/binding.md)   
- [Net Peer TCP](http://msdn.microsoft.com/en-us/31f4db66-edb2-40a6-b92a-14098e92acae)   
+ [Net Peer TCP](https://msdn.microsoft.com/library/ms751426(v=vs.90).aspx)   
  [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)

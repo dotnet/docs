@@ -64,5 +64,5 @@ This section provides links to reference information about various aspects of [!
  [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
- [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
+ [Automation and Extensibility Reference](https://msdn.microsoft.com/library/dn919654.aspx)  
  Provides links to topics covering automation and extensibility in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], for both shared and language-specific components.

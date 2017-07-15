@@ -36,7 +36,7 @@
   
  Apply the <xref:System.Xml.Serialization.SoapIgnoreAttribute> to any class member that you want the <xref:System.Xml.Serialization.XmlSerializer> to ignore when an instance of the class is serialized. For example, you may do this when the member is used to contain metadata about the object being serialized.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](https://docs.microsoft.com/dotnet/standard/attributes/).  
   
 > [!NOTE]
 >  You can use the word `SoapIgnore` in your code instead of the longer <xref:System.Xml.Serialization.SoapIgnoreAttribute>.  

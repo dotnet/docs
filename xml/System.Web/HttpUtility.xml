@@ -535,7 +535,7 @@
  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses <xref:System.Text.Encoding.UTF8%2A> format to parse the query string In the returned <xref:System.Collections.Specialized.NameValueCollection>, URL-encoded characters are decoded and multiple occurrences of the same query string parameter are listed as a single entry with a comma separating each value.  
   
 > [!IMPORTANT]
->  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses query strings that might contain user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses query strings that might contain user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -592,7 +592,7 @@
  In the returned <xref:System.Collections.Specialized.NameValueCollection>, URL-encoded characters are decoded and multiple occurrences of the same query string parameter are listed as a single entry with a comma separating each value.  
   
 > [!IMPORTANT]
->  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses query strings that might contain user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The <xref:System.Web.HttpUtility.ParseQueryString%2A> method uses query strings that might contain user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  ]]></format>
         </remarks>

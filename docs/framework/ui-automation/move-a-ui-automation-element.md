@@ -34,4 +34,4 @@ manager: "markl"
 [!code-vb[WindowMove#1300](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic/windowmove.vb#1300)]  
   
 ## See Also  
- [WindowPattern Sample](http://msdn.microsoft.com/en-us/598b695c-8baf-406e-bbfb-2a1c7842a1de)
+ [WindowPattern Sample](https://msdn.microsoft.com/library/ms771451(v=vs.100).aspx)

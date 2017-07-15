@@ -60,5 +60,5 @@ The following features are new in [!INCLUDE[vstecado](../../../../includes/vstec
  [ADO.NET](../../../../docs/framework/data/adonet/index.md)   
  [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)   
  [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)   
- [What's New in WCF Data Services](http://msdn.microsoft.com/en-us/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)   
+ [What's New in WCF Data Services](https://msdn.microsoft.com/library/ee373845(v=vs.103).aspx)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

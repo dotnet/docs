@@ -40,4 +40,4 @@ The text you specified was not found.
 1.  Check that the specified text is spelled correctly.  
   
 ## See Also  
- [How to: Search Interactively](http://msdn.microsoft.com/en-us/e9fdbfab-bd59-401a-92d3-7ce1652b243c)
+ [How to: Search Interactively](https://msdn.microsoft.com/library/2e272x5z(v=vs.110).aspx)

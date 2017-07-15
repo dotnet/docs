@@ -22,7 +22,7 @@ The <xref:System.Threading.AutoResetEvent> class represents a local wait handle 
   
  An <xref:System.Threading.AutoResetEvent> object is automatically reset to non-signaled by the system after a single waiting thread has been released. If no threads are waiting, the event object's state remains signaled. <xref:System.Threading.AutoResetEvent> corresponds to a Win32 `CreateEvent` call, specifying `false` for the `bManualReset` argument.  
   
- For an example that uses <xref:System.Threading.AutoResetEvent>, see [Monitor](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db).  
+ For an example that uses <xref:System.Threading.AutoResetEvent>, see [Monitor](https://msdn.microsoft.com/library/system.threading.monitor(v=vs.110).aspx).  
   
 ## See Also  
  <xref:System.Threading.ManualResetEvent>   
@@ -30,4 +30,4 @@ The <xref:System.Threading.AutoResetEvent> class represents a local wait handle 
  [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)   
  [Threading](../../../docs/standard/threading/index.md)   
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)   
- [Wait Handles](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)
+ [Wait Handles](https://msdn.microsoft.com/library/system.threading.waithandle(v=vs.110).aspx)

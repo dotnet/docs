@@ -24,7 +24,7 @@ let identifier = lazy ( expression )
 
 ## Remarks
 
-In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type [`Lazy<'T>`](https://msdn.microsoft.com/library/b29d0af5-6efb-4a55-a278-2662a4ecc489), where the actual type that is used for `'T` is determined from the result of the expression.
+In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type [`Lazy<'T>`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.lazy%5b't%5d-type-abbreviation-%5bfsharp%5d), where the actual type that is used for `'T` is determined from the result of the expression.
 
 Lazy computations enable you to improve performance by restricting the execution of a computation to only those situations in which a result is needed.
 
@@ -40,4 +40,4 @@ Lazy evaluation, but not the `Lazy` type, is also used for sequences. For more i
 
 [F# Language Reference](index.md)
 
-[LazyExtensions module](https://msdn.microsoft.com/library/86671f40-84a0-402a-867d-ae596218d948)
+[LazyExtensions module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/control.lazyextensions-module-%5bfsharp%5d)

@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements the <c>GenerateBootstrapper</c> task. Use the <c>GenerateBootstrapper</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateBootstrapper Task](http://msdn.microsoft.com/library/ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460).</summary>
+    <summary>Implements the <c>GenerateBootstrapper</c> task. Use the <c>GenerateBootstrapper</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateBootstrapper Task](https://msdn.microsoft.com/library/ms164294.aspx).</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
   </Docs>
@@ -96,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can be set in the project file, but it is not exposed in the MSBuild schema. In the project file's `MsiBootstrapper` section, set the [RequiresElevation Property](http://msdn.microsoft.com/en-us/6f449071-9caf-46e7-b7d4-7bbc21cf9aa7) to `True`.  
+ This property can be set in the project file, but it is not exposed in the MSBuild schema. In the project file's `MsiBootstrapper` section, set the [RequiresElevation Property](https://msdn.microsoft.com/library/bb384030(v=vs.120).aspx) to `True`.  
   
  A component runs with elevated permissions when it writes a registry key or is being installed to the GAC. For example, if you are installing assemblies to the GAC, you need to set this property to `True`.  
   

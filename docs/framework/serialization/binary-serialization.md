@@ -64,8 +64,8 @@ Serialization can be defined as the process of storing the state of an object to
  [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)  
  Describes the secure coding guidelines to follow when writing code that performs serialization.  
   
- [Remote Objects](http://msdn.microsoft.com/en-us/515686e6-0a8d-42f7-8188-73abede57c58)  
+ [Remote Objects](https://msdn.microsoft.com/library/72x4h507(v=vs.100).aspx)  
  Describes the various communications methods available in the .NET Framework for remote communications.  
   
- [XML Web Services Created Using ASP.NET and XML Web Service Clients](http://msdn.microsoft.com/en-us/1e64af78-d705-4384-b08d-591a45f4379c)  
+ [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://msdn.microsoft.com/library/7bkzywba(v=vs.100).aspx)  
  Provides topics that describe and explain how to program XML Web services created using ASP.NET.

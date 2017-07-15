@@ -141,7 +141,7 @@
       <Docs>
         <param name="projectFile">The name of the project file to import. Corresponds to the <see langword="Project" /> attribute of the <see langword="Import" /> element.</param>
         <param name="condition">The condition to evaluate before importing the project. Corresponds to the <see langword="Condition" /> attribute of the <see langword="Import" /> element.</param>
-        <summary>Adds an [Import](http://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9) element to the end of the project.</summary>
+        <summary>Adds an [Import](https://msdn.microsoft.com/library/92x05xfs.aspx) element to the end of the project.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,7 +164,7 @@
       <Docs>
         <param name="itemName">The name of the item collection to add the item to. Corresponds to the user-defined name of the <see langword="Item" /> element.</param>
         <param name="itemInclude">The value of the <see langword="Include" /> attribute of the item.</param>
-        <summary>Adds the specified [Item](http://msdn.microsoft.com/library/dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9) element to the project.</summary>
+        <summary>Adds the specified [Item](https://msdn.microsoft.com/library/ms164283.aspx) element to the project.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> containing the created item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -198,7 +198,7 @@
         <param name="itemInclude">The value of the <see langword="Include" /> attribute of the item.</param>
         <param name="treatItemIncludeAsLiteral">
           <see langword="true" /> to treat the <c>itemInclude</c> parameter as a literal value; otherwise, <see langword="false" />.</param>
-        <summary>Adds the specified [Item](http://msdn.microsoft.com/library/dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9) element to the project.</summary>
+        <summary>Adds the specified [Item](https://msdn.microsoft.com/library/ms164283.aspx) element to the project.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItem" /> containing the created item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -224,7 +224,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds a new [ItemGroup](http://msdn.microsoft.com/library/aac894e3-a9f1-4bbc-a796-6ef07001f35b) element to the project.</summary>
+        <summary>Adds a new [ItemGroup](https://msdn.microsoft.com/library/646dk05y.aspx) element to the project.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing the created item group.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,7 +247,7 @@
       <Docs>
         <param name="insertAtEndOfProject">
           <see langword="true" /> to insert the <see langword="PropertyGroup" /> at the end of the project; otherwise, <see langword="false" />.</param>
-        <summary>Adds a new [PropertyGroup](http://msdn.microsoft.com/library/ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4) element to the project.</summary>
+        <summary>Adds a new [PropertyGroup](https://msdn.microsoft.com/library/t4w159bs.aspx) element to the project.</summary>
         <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> containing the created property group.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +271,7 @@
       <Docs>
         <param name="taskName">The name of the task to reference from the assembly. Corresponds to the <see langword="TaskName" /> attribute of the <see langword="UsingTask" /> element.</param>
         <param name="assemblyFile">The file path to the assembly. Corresponds to the <see langword="AssemblyFile" /> attribute of the <see langword="UsingTask" /> element.</param>
-        <summary>Adds a new [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element with the specified assembly file.</summary>
+        <summary>Adds a new [UsingTask](https://msdn.microsoft.com/library/t41tzex2.aspx) element with the specified assembly file.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,7 +294,7 @@
       <Docs>
         <param name="taskName">The name of the task to reference from the assembly. Corresponds to the <see langword="TaskName" /> attribute of the <see langword="UsingTask" /> element.</param>
         <param name="assemblyName">The name of the assembly to load. Corresponds to the <see langword="AssemblyName" /> attribute of the <see langword="UsingTask" /> element.</param>
-        <summary>Adds a new [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) element with the specified assembly name.</summary>
+        <summary>Adds a new [UsingTask](https://msdn.microsoft.com/library/t41tzex2.aspx) element with the specified assembly name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,7 +455,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>DefaultTargets</c> attribute of the [Project](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
+        <summary>Gets or sets the <c>DefaultTargets</c> attribute of the [Project](https://msdn.microsoft.com/library/bcxfsh87.aspx) element in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
         <value>A semi-colon (;) delimited list of the targets specified in the <c>DefaultTargets</c> attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -473,13 +473,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets the ToolsVersion XML attribute found on the <see cref="Project" />[Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element in the project file.</summary>
+        <summary>Sets or gets the ToolsVersion XML attribute found on the <see cref="Project" />[Project Element (MSBuild)](https://msdn.microsoft.com/library/bcxfsh87.aspx) element in the project file.</summary>
         <value>A string representing the Tools version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
+ If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](https://msdn.microsoft.com/library/bcxfsh87.aspx) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
   
  The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
   
@@ -545,7 +545,7 @@
         <ReturnType>Microsoft.Build.BuildEngine.BuildItemGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all items in a project, even those not used in the build process because a [Condition](http://msdn.microsoft.com/library/9d7aa308-b667-48ed-b4c9-a61e49eb0a85) attribute evaluated to <see langword="false" />.</summary>
+        <summary>Gets a collection of all items in a project, even those not used in the build process because a [Condition](https://msdn.microsoft.com/library/7szfhaft.aspx) attribute evaluated to <see langword="false" />.</summary>
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing all items in a project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -679,7 +679,7 @@
       <Docs>
         <param name="itemName">The name of the specified item collection.</param>
         <summary>Returns all items belonging to the specified item collection.</summary>
-        <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing all items belonging to the specified item collection, even those not used in the build process because a [Condition](http://msdn.microsoft.com/library/9d7aa308-b667-48ed-b4c9-a61e49eb0a85) attribute evaluated to <see langword="false" />.</returns>
+        <returns>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroup" /> containing all items belonging to the specified item collection, even those not used in the build process because a [Condition](https://msdn.microsoft.com/library/7szfhaft.aspx) attribute evaluated to <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,7 +729,7 @@
       </Parameters>
       <Docs>
         <param name="id">The name of the element in the <see langword="ProjectExtensions" /> element to return.</param>
-        <summary>Returns a string value of the XML from the specified element in the [ProjectExtensions](http://msdn.microsoft.com/library/f95f312f-ff92-41eb-9469-ad99e236a307) element.</summary>
+        <summary>Returns a string value of the XML from the specified element in the [ProjectExtensions](https://msdn.microsoft.com/library/ycwcwzs7.aspx) element.</summary>
         <returns>The string value of the specified element in the <c>ProjectExtensions</c> element of the project.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -753,7 +753,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Global properties are properties set with the **/property** switch on the command line, or properties set by the integrated development environment before invoking [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)]. For more information, see [MSBuild Command-Line Reference](http://msdn.microsoft.com/library/edaa65ec-ab8a-42a1-84cb-d76d5b2f4584).  
+ Global properties are properties set with the **/property** switch on the command line, or properties set by the integrated development environment before invoking [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)]. For more information, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/library/ms164311.aspx).  
   
  ]]></format>
         </remarks>
@@ -779,7 +779,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An example ToolsVersion attribute is `Project ToolsVersion="3.5"`. This attribute enables projects to target .NET Framework versions, currently 2.0, 3.0, and 3.5. For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](http://msdn.microsoft.com/en-us/24a6530c-e837-4774-9da0-6893614524d8).  
+ An example ToolsVersion attribute is `Project ToolsVersion="3.5"`. This attribute enables projects to target .NET Framework versions, currently 2.0, 3.0, and 3.5. For more information about ToolsVersion, see [Building for Specific Versions of the .NET Framework](https://msdn.microsoft.com/library/bb397456(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -823,7 +823,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>InitialTargets</c> attribute of the [Project](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
+        <summary>Gets or sets the <c>InitialTargets</c> attribute of the [Project](https://msdn.microsoft.com/library/bcxfsh87.aspx) element in the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] project.</summary>
         <value>A semi-colon (;) delimited list of the targets specified in the <c>InitialTargets</c> attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -879,7 +879,7 @@
         <ReturnType>Microsoft.Build.BuildEngine.BuildItemGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the item groups specified with the [ItemGroup](http://msdn.microsoft.com/library/aac894e3-a9f1-4bbc-a796-6ef07001f35b) element in the project.</summary>
+        <summary>Gets a collection of the item groups specified with the [ItemGroup](https://msdn.microsoft.com/library/646dk05y.aspx) element in the project.</summary>
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildItemGroupCollection" /> containing the item groups specifiied in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1123,7 +1123,7 @@
         <ReturnType>Microsoft.Build.BuildEngine.BuildPropertyGroupCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the property groups specified with the [PropertyGroup](http://msdn.microsoft.com/library/ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4) element in the project.</summary>
+        <summary>Gets a collection of the property groups specified with the [PropertyGroup](https://msdn.microsoft.com/library/t4w159bs.aspx) element in the project.</summary>
         <value>A <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> containing the property groups specifiied in the project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1259,7 +1259,7 @@
       </Parameters>
       <Docs>
         <param name="matchCondition">The condition to match when removing item groups.</param>
-        <summary>Removes all item groups with the specified [condition](http://msdn.microsoft.com/library/9d7aa308-b667-48ed-b4c9-a61e49eb0a85) from the project, but does not modify imported projects.</summary>
+        <summary>Removes all item groups with the specified [condition](https://msdn.microsoft.com/library/7szfhaft.aspx) from the project, but does not modify imported projects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1339,7 +1339,7 @@
       </Parameters>
       <Docs>
         <param name="matchCondition">The condition to match when removing property groups.</param>
-        <summary>Removes all property groups with the specified [condition](http://msdn.microsoft.com/library/9d7aa308-b667-48ed-b4c9-a61e49eb0a85) from the project, but does not modify imported projects.</summary>
+        <summary>Removes all property groups with the specified [condition](https://msdn.microsoft.com/library/7szfhaft.aspx) from the project, but does not modify imported projects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1588,7 +1588,7 @@
       <Docs>
         <param name="id">The name of the XML element to create as a child of the <see langword="ProjectExtensions" /> element.</param>
         <param name="content">The text value of the created XML element.</param>
-        <summary>Sets the [ProjectExtensions](http://msdn.microsoft.com/library/f95f312f-ff92-41eb-9469-ad99e236a307) element of the project with the specified element name and content.</summary>
+        <summary>Sets the [ProjectExtensions](https://msdn.microsoft.com/library/ycwcwzs7.aspx) element of the project with the specified element name and content.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1768,7 +1768,7 @@
 ## Remarks  
  If the Toolset version is overridden, that value becomes the effective Toolset version. If there is a ToolsVersion attribute on the Project element, then that is the effective Toolset version. Otherwise, the Toolset version is the same as the default Toolset version of the parent engine. When set, <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> overrides the current Toolset version of the project with the provided value.  
   
- For more information about Toolsets, see [Standard and Custom Toolset Configurations](http://msdn.microsoft.com/library/15a048c8-5ad3-448e-b6e9-e3c5d7147ed2).  
+ For more information about Toolsets, see [Standard and Custom Toolset Configurations](https://msdn.microsoft.com/library/bb397428.aspx).  
   
 > [!NOTE]
 >  To get or set the ToolsVersion attribute on the <xref:Microsoft.Build.BuildEngine.Project> element, use the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> property.  
@@ -1790,7 +1790,7 @@
         <ReturnType>Microsoft.Build.BuildEngine.UsingTaskCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of the [UsingTask](http://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43) elements in the project.</summary>
+        <summary>Gets a collection of the [UsingTask](https://msdn.microsoft.com/library/t41tzex2.aspx) elements in the project.</summary>
         <value>A <see cref="T:Microsoft.Build.BuildEngine.UsingTaskCollection" /> of the <c>UsingTask</c> elements in the project.</value>
         <remarks>To be added.</remarks>
       </Docs>

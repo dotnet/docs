@@ -62,7 +62,7 @@ The **/out** option specifies the name of the output file.
   
  Any modules produced as part of a compilation become files associated with any assembly also produced in the compilation. Use [ildasm.exe](https://msdn.microsoft.com/library/f7dy01k1) to view the assembly manifest to see the associated files.  
   
- The /out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ The /out compiler option is required in order for an exe to be the target of a friend assembly. For more information see [Friend Assemblies](https://msdn.microsoft.com/library/0tke9fxk.aspx).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -83,5 +83,5 @@ csc t.cs /out:mymodule.netmodule /target:module t2.cs
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055)   
+ [Friend Assemblies](https://msdn.microsoft.com/library/0tke9fxk.aspx)   
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

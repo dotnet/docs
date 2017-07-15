@@ -62,7 +62,7 @@ Yield expression
   
  "Yield" is not a reserved word and has special meaning only when it is used in an `Iterator` function or `Get` accessor.  
   
- For more information about iterator functions and `Get` accessors, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For more information about iterator functions and `Get` accessors, see [Iterators](https://msdn.microsoft.com/library/dscyy5s0.aspx).  
   
 ## Iterator Functions and Get Accessors  
  The declaration of an iterator function or `Get` accessor must meet the following requirements:  
@@ -75,7 +75,7 @@ Yield expression
   
  An iterator function cannot occur in an event, instance constructor, static constructor, or static destructor.  
   
- An iterator function can be an anonymous function. For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ An iterator function can be an anonymous function. For more information, see [Iterators](https://msdn.microsoft.com/library/dscyy5s0.aspx).  
   
 ## Exception Handling  
  A `Yield` statement can be inside a `Try` block of a [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.  
@@ -112,8 +112,8 @@ Next
   
  [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
   
- For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For additional examples, see [Iterators](https://msdn.microsoft.com/library/dscyy5s0.aspx).  
   
 ## See Also  
- [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
+ [Iterators](https://msdn.microsoft.com/library/dscyy5s0.aspx)   
  [Statements](../../../visual-basic/language-reference/statements/index.md)

@@ -275,7 +275,7 @@
 ## Remarks  
  This method is called by the <xref:System.Web.Security.Roles> class to retrieve from the Windows operating system a list of the Windows groups that the specified user is in. The <xref:System.Web.Security.WindowsTokenRoleProvider.GetRolesForUser%2A> method can be called only for the currently logged-on user, as identified by the LOGON_USER server variable. If the value supplied in the `username` parameter is not the name of the currently logged-on user, a <xref:System.Configuration.Provider.ProviderException?displayProperty=fullName> is thrown.  
   
- For more information an ASP.NET and Windows authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+ For more information an ASP.NET and Windows authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx).  
   
    
   
@@ -391,7 +391,7 @@
   
  You can call the <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method only for the currently logged-on user, as identified by the LOGON_USER server variable. If the value supplied in the `username` parameter is not the name of the currently logged-on user, an <xref:System.Web.HttpException> is thrown.  
   
- <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method can only be called for the currently logged-on user identified by the LOGON_USER server variable. The current logged on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+ <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method can only be called for the currently logged-on user identified by the LOGON_USER server variable. The current logged on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx).  
   
    
   
@@ -438,7 +438,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method is called by the <xref:System.Web.Security.Roles> class and the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Web.UI.Page.User%2A> property to determine whether a user is in a Windows group. You can call the <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method only for the currently logged-on user, as identified by the LOGON_USER server variable. The current logged-on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+ The <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method is called by the <xref:System.Web.Security.Roles> class and the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Web.UI.Page.User%2A> property to determine whether a user is in a Windows group. You can call the <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method only for the currently logged-on user, as identified by the LOGON_USER server variable. The current logged-on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx).  
   
    
   

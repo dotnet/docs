@@ -41,7 +41,7 @@
 ## Examples  
  The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> object to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
   
- For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](http://msdn.microsoft.com/library/3c1aa4d4-da87-4a03-b812-3d167b8c57cf). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
+ For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](https://msdn.microsoft.com/library/9hk12d4y(v=vs.110).aspx). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#3)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#3)]  

@@ -103,7 +103,7 @@
  The following example creates an `AddItemToCache` method. When this method is called, it sets an `itemRemoved` property to `false` and registers an `onRemove` method with a new instance of the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate. The delegate's signature is used in the `RemovedCallback` method. The `AddItemToCache` method then checks the value associated with the `Key1` key in the cache. If the value is `null`, the `Add` method places an item in the cache with a key of `Key1`, a value of `Value 1`, an absolute expiration of 60 seconds, and a high cache priority. It also uses the `onRemove` method as an argument. This allows the `RemovedCallback` method to be called when this item is removed from the cache.  
   
 > [!NOTE]
->  For examples of how to use the <xref:System.Web.Caching.CacheDependency> class and the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [Caching Application Data](http://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d).  
+>  For examples of how to use the <xref:System.Web.Caching.CacheDependency> class and the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [Caching Application Data](https://msdn.microsoft.com/library/6hbbsfk6.aspx).  
   
  [!code-csharp[System.Web.Caching Examples#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#3)]
  [!code-vb[System.Web.Caching Examples#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#3)]  
@@ -169,7 +169,7 @@
 ## Remarks  
  The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property returns the percentage of physical memory that is available to the application. When the available percentage becomes low, the cache algorithm begins removing items from the cache.  
   
- The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property can be set with the `percentagePhysicalMemoryUsedLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. If the `percentagePhysicalMemoryUsedLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property is calculated.  
+ The <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property can be set with the `percentagePhysicalMemoryUsedLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/ms228248(v=vs.110).aspx) element in the application's configuration file. If the `percentagePhysicalMemoryUsedLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> property is calculated.  
   
  <xref:System.Web.Caching.Cache.EffectivePercentagePhysicalMemoryLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -198,7 +198,7 @@
 ## Remarks  
  The <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property returns the number of bytes that can be used by the application process. Once this limit is reached, the cache algorithm begins aggressively scavenging the cache.  
   
- The <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property can be set with the `privateBytesLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/68fa0040-5abf-4c73-93fc-17e3c6af3299) element in the application's configuration file. When the `privateBytesLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property contains the size chosen by the algorithm.  
+ The <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property can be set with the `privateBytesLimit` attribute of the [cache Element for caching (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/ms228248(v=vs.110).aspx) element in the application's configuration file. When the `privateBytesLimit` attribute is not set, the cache algorithm determines the maximum size of the cache, and the <xref:System.Web.Caching.Cache.EffectivePrivateBytesLimit%2A> property contains the size chosen by the algorithm.  
   
    
   
@@ -509,7 +509,7 @@
  The following example demonstrates how to assign an item high priority when you insert it into your application's `Cache` object.  
   
 > [!NOTE]
->  For more information about how to use this method with the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [How to: Notify an Application When an Item Is Removed from the Cache](http://msdn.microsoft.com/library/38c33aa0-afe9-40ba-a1a4-1ebab95286ef).  
+>  For more information about how to use this method with the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, see [How to: Notify an Application When an Item Is Removed from the Cache](https://msdn.microsoft.com/library/7kxdx246.aspx).  
   
  [!code-csharp[Classic Cache.Insert3 Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Cache.Insert3 Example/CS/source.cs#1)]
  [!code-vb[Classic Cache.Insert3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Cache.Insert3 Example/VB/source.vb#1)]  

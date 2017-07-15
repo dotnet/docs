@@ -182,5 +182,5 @@ manager: "markl"
  [Raise Events from a UI Automation Provider](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)   
  [Enable Navigation in a UI Automation Fragment Provider](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)   
  [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)   
- [Simple Provider Sample](http://msdn.microsoft.com/en-us/c10a6255-e8dc-494b-a051-15111b47984a)   
- [Fragment Provider Sample](http://msdn.microsoft.com/en-us/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+ [Simple Provider Sample](https://msdn.microsoft.com/library/ms771658(v=vs.100).aspx)   
+ [Fragment Provider Sample](https://msdn.microsoft.com/library/ms771502(v=vs.100).aspx)

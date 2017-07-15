@@ -42,4 +42,4 @@ A null value has been supplied for an argument that must have a value.
 -   Check that the value is calculated correctly.  
   
 ## See Also  
- [Troubleshooting Exceptions: System.NullReferenceException](http://msdn.microsoft.com/library/4822b0b4-8105-43fb-887a-3cc51ff02899)
+ [Troubleshooting Exceptions: System.NullReferenceException](https://msdn.microsoft.com/library/sxw2ez55.aspx)

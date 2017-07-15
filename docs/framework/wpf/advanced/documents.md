@@ -35,4 +35,4 @@ manager: "wpickett"
  <xref:System.Windows.Controls.DocumentViewer>   
  <xref:System.Windows.Documents.FlowDocument>   
  <xref:System.Windows.Xps>   
- [isXPS.exe (isXPS Conformance Tool)](http://msdn.microsoft.com/library/bfbb433f-7ab6-417a-90f0-71443d76bcb3)
+ [isXPS.exe (isXPS Conformance Tool)](https://msdn.microsoft.com/library/aa348104(v=vs.110).aspx)

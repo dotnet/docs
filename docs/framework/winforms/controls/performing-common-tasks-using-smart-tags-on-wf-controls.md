@@ -45,14 +45,14 @@ As you construct forms and controls for your Windows Forms application, there ar
  When you are finished, you will have an understanding of the role played by these important layout features.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](https://msdn.microsoft.com/library/zbhkx167.aspx).  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
   
 #### To create the project  
   
-1.  Create a Windows-based application project called "SmartTagsExample". For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called "SmartTagsExample". For details, see [How to: Create a Windows Application Project](https://msdn.microsoft.com/library/42wc9kk5(v=vs.110).aspx).  
   
 2.  Select the form in the **Windows Forms Designer**.  
   
@@ -78,4 +78,4 @@ As you construct forms and controls for your Windows Forms application, there ar
  <xref:System.Windows.Forms.TabControl>   
  <xref:System.Windows.Forms.SplitContainer>   
  <xref:System.ComponentModel.Design.DesignerActionList>   
- [Walkthrough: Adding Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/a6814169-fa7d-4527-808c-637ca5c95f63)
+ [Walkthrough: Adding Smart Tags to a Windows Forms Component](https://msdn.microsoft.com/library/ms171829.aspx)

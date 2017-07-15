@@ -76,8 +76,8 @@ In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], adding references to COM objects
   
 ## See Also  
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)   
- [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)   
+ [Tlbimp.exe (Type Library Importer)](https://docs.microsoft.com/dotnet/framework/tools/tlbimp-exe-type-library-importer)   
+ [Tlbexp.exe (Type Library Exporter)](https://docs.microsoft.com/dotnet/framework/tools/tlbexp-exe-type-library-exporter)   
  [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
  [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)   
  [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)

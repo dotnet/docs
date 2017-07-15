@@ -39,7 +39,7 @@
   
  If the underlying <xref:System.Xml.XmlReader> does not have base URI or line information, setting the SetBaseUri and the SetLineInfo flags will have no effect.  
   
- This type allows you to control how LINQ to XML handles white space when loading or parsing. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ This type allows you to control how LINQ to XML handles white space when loading or parsing. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   

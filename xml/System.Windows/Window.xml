@@ -736,7 +736,7 @@
 -   One assembly icon, which is specified by using the `<ApplicationIcon>` property in the application's project build file. This icon is used as the desktop icon for an assembly.  
   
     > [!NOTE]
-    >  When debugging in Visual Studio, your icon may not appear due to the hosting process. If you run the executable, the icon will appear. For more information, see [Hosting Process (vshost.exe)](http://msdn.microsoft.com/library/c6b9e2be-f18d-4d75-ac52-56d55784734b).  
+    >  When debugging in Visual Studio, your icon may not appear due to the hosting process. If you run the executable, the icon will appear. For more information, see [Hosting Process (vshost.exe)](https://msdn.microsoft.com/library/ms185331.aspx).  
   
 -   One icon per window that is specified by setting <xref:System.Windows.Window.Icon%2A>. For each window, this icon is used in its title bar, its task bar button, and in its ALT-TAB application selection list entry.  
   

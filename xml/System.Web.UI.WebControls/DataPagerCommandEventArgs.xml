@@ -20,7 +20,7 @@
   
  During the event, you can perform tasks such as changing the number of rows that will be displayed or changing the index of the first item on the page.  
   
- For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs> class, see the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs.%23ctor%2A> constructor.  
   
@@ -30,7 +30,7 @@
  The following example shows how to use the <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs> object to enable the user to specify which page of data will be displayed in the <xref:System.Web.UI.WebControls.ListView> control. The <xref:System.Web.UI.WebControls.DataPagerCommandEventArgs> object is passed to the handler for the <xref:System.Web.UI.WebControls.TemplatePagerField.PagerCommand> event of the <xref:System.Web.UI.WebControls.TemplatePagerField> class.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.DataPagerCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerCommandEventArgs/CS/DataPagerCommandEventArgsCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.DataPagerCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.DataPagerCommandEventArgs/VB/DataPagerCommandEventArgsVB.aspx#1)]  -->  

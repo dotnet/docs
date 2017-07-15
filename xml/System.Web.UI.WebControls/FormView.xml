@@ -96,9 +96,9 @@
 |<xref:System.Web.UI.WebControls.FormView.InsertItemTemplate%2A>|Defines the content for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in insert mode. This template usually contains input controls and command buttons with which the user can add a new record.|  
 |<xref:System.Web.UI.WebControls.FormView.PagerTemplate%2A>|Defines the content for the pager row displayed when the paging feature is enabled (when the <xref:System.Web.UI.WebControls.FormView.AllowPaging%2A> property is set to `true`). This template usually contains controls with which the user can navigate to another record. **Note:**  The <xref:System.Web.UI.WebControls.FormView> control has a built-in pager row user interface (UI). You need to create a pager template only if you want to create your own custom pager row.|  
   
- To display the value of a field in an item template, use a data binding expression. For more information on data binding expressions, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
+ To display the value of a field in an item template, use a data binding expression. For more information on data binding expressions, see [Data-Binding Expression Syntax](https://msdn.microsoft.com/library/bda9bbfx(v=vs.110).aspx).  
   
- Input controls in the edit item template and insert item template can be bound to the fields of a data source by using a two-way binding expression. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also allow input controls in an edit item template to automatically display the original field values. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ Input controls in the edit item template and insert item template can be bound to the fields of a data source by using a two-way binding expression. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically extract the values of the input control for an update or insert operation. Two-way binding expressions also allow input controls in an edit item template to automatically display the original field values. For more information on two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ms178361(v=vs.100).aspx).  
   
 <a name="binding_to_data"></a>   
 ## Binding to Data  
@@ -108,10 +108,10 @@
   
 -   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.FormView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method. When using this method, the <xref:System.Web.UI.WebControls.FormView> control does not provide built-in inserting, updating, deleting, and paging functionality. You need to provide this functionality by using the appropriate event.  
   
- For more information on data binding, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+ For more information on data binding, see [ASP.NET Data Access Content Map](https://msdn.microsoft.com/library/6759sth4(v=vs.110).aspx).  
   
 > [!NOTE]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. Whenever possible, it is strongly recommended that values are HTML-encoded before they are displayed in this control. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Introduction to the Validation Controls](https://msdn.microsoft.com/library/2e4hd649(v=vs.100).aspx).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -173,7 +173,7 @@
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="applying_styles"></a>   
 ## Applying CSS Styles  
@@ -321,7 +321,7 @@
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to edit existing records.  
   
 > [!IMPORTANT]
->  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  -->  
@@ -329,7 +329,7 @@
  The following example demonstrates how to use a <xref:System.Web.UI.WebControls.FormView> control to insert new records.  
   
 > [!IMPORTANT]
->  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormViewInsertItemTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewInsertItemTemplate/CS/formviewinsertitemtemplatecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormViewInsertItemTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewInsertItemTemplate/VB/formviewinsertitemtemplatevb.aspx#1)]  -->  
@@ -557,7 +557,7 @@
   
  Additional accessibility support for the <xref:System.Web.UI.WebControls.FormView> control is provided by the <xref:System.Web.UI.WebControls.FormView.CaptionAlign%2A> property. Use the <xref:System.Web.UI.WebControls.FormView.CaptionAlign%2A> property to specify the alignment of the HTML caption element in a <xref:System.Web.UI.WebControls.FormView> control.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1355,7 +1355,7 @@
   
  Use the <xref:System.Web.UI.WebControls.FormView.EditItemTemplate%2A> property to define your own user interface (UI) for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in edit mode. The edit item template usually contains the input controls for the user to update the values of an existing record, as well as command buttons to update the record and to cancel the update operation.  
   
- To specify the custom template, first place `<EditItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<EditItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically display the original field value in the associated input control in edit mode. When a record is updated, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the updated field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742). To create command buttons that perform the built-in cancel and update operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
+ To specify the custom template, first place `<EditItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<EditItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. This allows the <xref:System.Web.UI.WebControls.FormView> control to automatically display the original field value in the associated input control in edit mode. When a record is updated, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the updated field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ms178361(v=vs.100).aspx). To create command buttons that perform the built-in cancel and update operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
   
 |Command button type|CommandName value|  
 |-------------------------|-----------------------|  
@@ -1564,7 +1564,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.FormView.EmptyDataText%2A> and <xref:System.Web.UI.WebControls.FormView.EmptyDataTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.FormView.EmptyDataTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1852,7 +1852,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.FormView.FooterText%2A> and <xref:System.Web.UI.WebControls.FormView.FooterTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.FormView.FooterTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -2092,7 +2092,7 @@
 > [!NOTE]
 >  If both the <xref:System.Web.UI.WebControls.FormView.HeaderText%2A> and <xref:System.Web.UI.WebControls.FormView.HeaderTemplate%2A> properties are set, the <xref:System.Web.UI.WebControls.FormView.HeaderTemplate%2A> property takes precedence.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -2319,7 +2319,7 @@
   
  Use the <xref:System.Web.UI.WebControls.FormView.InsertItemTemplate%2A> property to define your own user interface (UI) for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in insert mode. The insert item template usually contains the input controls for the user to enter the values for the new record, as well as command buttons to insert the record and to cancel the insert operation.  
   
- To specify the custom template, first place `<InsertItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<InsertItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. When a record is inserted, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742). To create command buttons that perform the built-in cancel and insert operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
+ To specify the custom template, first place `<InsertItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<InsertItemTemplate>` tags. By using a two-way binding expression, you can associate a field with an input control. When a record is inserted, the <xref:System.Web.UI.WebControls.FormView> control automatically extracts the field value from the associated input control. For more information on two-way binding expressions, see [Binding to Databases](https://msdn.microsoft.com/library/ms178361(v=vs.100).aspx). To create command buttons that perform the built-in cancel and insert operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
   
 |Command button type|CommandName value|  
 |-------------------------|-----------------------|  
@@ -2507,7 +2507,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewCommandEventArgs> object is passed to the event-handling method, which allows you to determine the command name and command argument of the button clicked. To determine the command name and command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> and <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> properties, respectively. You can also access the control that raised the event by using the <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2546,7 +2546,7 @@
   
  You can access the header, footer, and pager rows in the <xref:System.Web.UI.WebControls.FormView> control by using the <xref:System.Web.UI.WebControls.FormView.HeaderRow%2A>, <xref:System.Web.UI.WebControls.FormView.FooterRow%2A>, <xref:System.Web.UI.WebControls.FormView.TopPagerRow%2A>, or <xref:System.Web.UI.WebControls.FormView.BottomPagerRow%2A> properties, respectively. To access the data row, use the <xref:System.Web.UI.WebControls.FormView.Row%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2582,7 +2582,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs> object is passed to the event-handling method, which allows you to determine the number of records affected and any exceptions that might have occurred. To determine the number of records affected by the delete operation, use the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.AffectedRows%2A> property. Use the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.Exception%2A> property to determine whether any exceptions occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.ExceptionHandled%2A> property. If you want to access the name/value pairs of the key fields and non-key fields of the deleted record, use the <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeletedEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2618,7 +2618,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> object is passed to the event-handling method, which allows you to determine the index of the record being deleted and to indicate that the delete operation should be canceled. To determine the index of a record, use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex%2A> property. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also access the key fields and non-key fields by using the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties, respectively.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2656,7 +2656,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property after an insert operation. To keep the <xref:System.Web.UI.WebControls.FormView> control in insert mode, set the <xref:System.Web.UI.WebControls.FormViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2692,7 +2692,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewInsertEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate that the insert operation should be canceled. The command argument value corresponds to the `CommandArgument` property of the Insert button. When the `CommandArgument` property of the Insert button is set, use the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.CommandArgument%2A> property to determine the value of the command argument. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the field values for the new record by using the <xref:System.Web.UI.WebControls.FormViewInsertEventArgs.Values%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2749,7 +2749,7 @@
   
  Use the <xref:System.Web.UI.WebControls.FormView.ItemTemplate%2A> property to define your own user interface (UI) for the data row when the <xref:System.Web.UI.WebControls.FormView> control is in read-only mode. The item template usually contains controls to display the field values of a record, as well as command buttons to edit, insert, and delete a record.  
   
- To specify the custom template, first place `<ItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<ItemTemplate>` tags. To display the field values of the data source bound to the control, use a data-binding expression. For more information on data-binding expressions, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca). To create command buttons that perform the built-in delete, edit, and new record operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
+ To specify the custom template, first place `<ItemTemplate>` tags between the opening and closing tags of the <xref:System.Web.UI.WebControls.FormView> control. You can then list the contents of the template between the opening and closing `<ItemTemplate>` tags. To display the field values of the data source bound to the control, use a data-binding expression. For more information on data-binding expressions, see [Data-Binding Expression Syntax](https://msdn.microsoft.com/library/bda9bbfx(v=vs.110).aspx). To create command buttons that perform the built-in delete, edit, and new record operations, add a command button control to the template with its `CommandName` property set to one of the values listed in the following table.  
   
 |Command button type|CommandName value|  
 |-------------------------|-----------------------|  
@@ -2795,7 +2795,7 @@
   
  By default, the <xref:System.Web.UI.WebControls.FormView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property after an update operation. To keep the <xref:System.Web.UI.WebControls.FormView> control in edit mode, set the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2831,7 +2831,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs> object is passed to the event-handling method, which allows you to determine the value of an optional command argument sent to the <xref:System.Web.UI.WebControls.FormView> control and to indicate that the update operation should be canceled. The command argument value corresponds to the `CommandArgument` property of the Update button. When the `CommandArgument` property of the Update button is set, use the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.CommandArgument%2A> property to determine the value of the command argument. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also read or modify the new values entered by the user by using the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> properties. The <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.Keys%2A> property contains the key fields, while the <xref:System.Web.UI.WebControls.FormViewUpdateEventArgs.NewValues%2A> property contains the non-key fields. If you need to access the original non-key field values, use the <xref:System.Web.UI.WebControls.FormViewUpdatedEventArgs.OldValues%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2927,7 +2927,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.ModeChanged> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but after the mode actually changes. This allows you to provide an event-handling method that performs a custom routine, such as synchronizing the <xref:System.Web.UI.WebControls.FormView> control with another control, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2963,7 +2963,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewModeEventArgs> object is passed to the event-handling method, which allows you to determine the mode to which the <xref:System.Web.UI.WebControls.FormView> control is switching, to determine whether the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event was raised as a result of the user canceling an edit operation, or to indicate that an insert operation should be canceled. To determine the new mode, use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property. You can also use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.NewMode%2A> property to switch to an alternate mode by setting it to one of the <xref:System.Web.UI.WebControls.FormViewMode> enumeration values. Use the <xref:System.Web.UI.WebControls.FormViewModeEventArgs.CancelingEdit%2A> property to determine whether the user canceled an edit operation. To cancel an insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3043,7 +3043,7 @@
 |Page|"Page"|Used in paging operations to represent a button in the pager row that performs paging. To specify the paging operation, set the `CommandArgument` property of the button to "Next", "Prev", "First", "Last", or the index of the page to which to navigate. Raises the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> and <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> events. **Note:**  This type of button is typically used only in the pager template.|  
 |Update|"Update"|Used in updating operations to attempt to update the displayed record in the data source with the values provided by the user. Raises the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> and <xref:System.Web.UI.WebControls.FormView.ItemUpdated> events.|  
   
- This version of the method returns `true` when one of these buttons is handled. For more information about event bubbling, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ This version of the method returns `true` when one of these buttons is handled. For more information about event bubbling, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -3076,7 +3076,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnInit%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.Control.Init> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3111,7 +3111,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemCommand%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3146,7 +3146,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemCreated%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemCreated> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3181,7 +3181,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleted%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemDeleted> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3216,7 +3216,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleting%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemDeleting> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3252,7 +3252,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserted%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemInserted> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3287,7 +3287,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserting%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemInserting> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemInserting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3323,7 +3323,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdated%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3358,7 +3358,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdating%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ItemUpdating> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnItemUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3394,7 +3394,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanged%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ModeChanged> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3429,7 +3429,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanging%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnModeChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3465,7 +3465,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanged%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3500,7 +3500,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanging%2A> method is called by the <xref:System.Web.UI.WebControls.FormView> control to raise the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.FormView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.FormView.OnPageIndexChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -3630,7 +3630,7 @@
   
  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.FormView> control. This event is often used to synchronize a <xref:System.Web.UI.WebControls.FormView> control with a <xref:System.Web.UI.WebControls.GridView> control or to set the behavior of the <xref:System.Web.UI.WebControls.FormView> control after a paging operation.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3671,7 +3671,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object is passed to the event-handling method, which allows you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3679,7 +3679,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event to cancel a paging operation.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  

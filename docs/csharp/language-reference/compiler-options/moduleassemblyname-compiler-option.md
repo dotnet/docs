@@ -56,7 +56,7 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
  For more information on building a .netmodule, see [/target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
   
- For more information on friend assemblies, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
+ For more information on friend assemblies, see [Friend Assemblies](https://msdn.microsoft.com/library/0tke9fxk.aspx).  
   
  This option is not available from within the development environment; it is only available when compiling from the command line.  
   

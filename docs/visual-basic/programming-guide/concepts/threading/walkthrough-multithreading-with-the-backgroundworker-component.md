@@ -282,5 +282,5 @@ This walkthrough demonstrates how to create a multithreaded Windows Forms applic
   
 ## See Also  
  [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)   
- [Walkthrough: Authoring a Simple Multithreaded Component with Visual Basic](http://msdn.microsoft.com/library/05693b70-3566-4d91-9f2c-c9bc4ccb3001)   
+ [Walkthrough: Authoring a Simple Multithreaded Component with Visual Basic](https://msdn.microsoft.com/library/xeh66hxs.aspx)   
  [How to: Subscribe to and Unsubscribe from Events](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)

@@ -345,7 +345,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://msdn.microsoft.com/library/ddae83kx.aspx).</para>
         </block>
       </Docs>
     </Member>
@@ -466,7 +466,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -524,7 +524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -666,7 +666,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -827,7 +827,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -972,7 +972,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.PictureBox.LoadCompleted> occurs only when the image is loaded asynchronously by using one of the <xref:System.Windows.Forms.PictureBox.LoadAsync%2A> methods, and <xref:System.Windows.Forms.PictureBox.WaitOnLoad%2A> is `false`. If the image-load is canceled by calling the <xref:System.Windows.Forms.PictureBox.CancelAsync%2A> method the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> will be set to `true`. If an exception or error occurs during the load process, it will be caught and the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> will contain the exception information.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1010,7 +1010,7 @@
   
  Handle the <xref:System.Windows.Forms.PictureBox.LoadProgressChanged> if you want to reflect the progress of an asynchronous image-loading operation in a <xref:System.Windows.Forms.ProgressBar> or similar control. Use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property of the <xref:System.ComponentModel.ProgressChangedEventArgs> to update the progress value.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1074,7 +1074,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PictureBox.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1112,7 +1112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PictureBox.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1145,7 +1145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PictureBox.OnLoadCompleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1178,7 +1178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PictureBox.OnLoadProgressChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1255,7 +1255,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.PictureBox.OnResize%2A> method redraws the image if the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property is set to <xref:System.Windows.Forms.PictureBoxSizeMode.Zoom>, <xref:System.Windows.Forms.PictureBoxSizeMode.CenterImage>, or <xref:System.Windows.Forms.PictureBoxSizeMode.StretchImage>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PictureBox.OnResize%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1288,7 +1288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.PictureBox.OnSizeModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1452,7 +1452,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1706,7 +1706,7 @@
 ## Remarks  
  This event is not relevant for this class.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>

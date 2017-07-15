@@ -65,7 +65,7 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebZone> class.  
   
- The first part of the code example shows two custom controls that derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The first part of the code example shows two custom controls that derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  [!code-csharp[WebParts_Zone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_Overview/CS/zonewebparts.cs#2)]
  [!code-vb[WebParts_Zone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_Overview/VB/zonewebparts.vb#2)]  
@@ -75,7 +75,7 @@
  <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_Overview/CS/zoneoverviewcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_Overview/VB/zoneoverviewvb.aspx#1)]  -->  
   
- You can load the page in a browser and switch among the various page display modes to see how the different zones behave. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ You can load the page in a browser and switch among the various page display modes to see how the different zones behave. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  ]]></format>
     </remarks>
@@ -126,7 +126,7 @@
  <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_BackImageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/CS/zonebackimageurlcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_BackImageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_BackImageUrl/VB/zonebackimageurlvb.aspx#1)]  -->  
   
- In a browser, you can switch to design mode to see the image in the empty zone. Note that an actual URL for the <xref:System.Web.UI.WebControls.WebParts.WebZone.BackImageUrl%2A> property is not provided in this example. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ In a browser, you can switch to design mode to see the image in the empty zone. Note that an actual URL for the <xref:System.Web.UI.WebControls.WebParts.WebZone.BackImageUrl%2A> property is not provided in this example. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  ]]></format>
         </remarks>
@@ -169,7 +169,7 @@
  <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/CS/zoneemptyzonetextcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_EmptyZoneText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_EmptyZoneText/VB/zoneemptyzonetextvb.aspx#1)]  -->  
   
- In a browser, you can switch to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property displayed in the empty zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ In a browser, you can switch to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.EmptyZoneText%2A> property displayed in the empty zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  ]]></format>
         </remarks>
@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
  ]]></format>
         </remarks>
@@ -360,7 +360,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebZone.HasHeader%2A> property is primarily used by control developers who are creating custom zones. It exists as a flag so that the Web Parts control set renders a header only when appropriate for a zone. For example, the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader%2A> property overrides this property and returns `false` unless the page is in one of the modes that allow personalization. In this case, a header is not rendered for a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control in browse mode, while in most other modes a header is rendered. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The <xref:System.Web.UI.WebControls.WebParts.WebZone.HasHeader%2A> property is primarily used by control developers who are creating custom zones. It exists as a flag so that the Web Parts control set renders a header only when appropriate for a zone. For example, the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader%2A> property overrides this property and returns `false` unless the page is in one of the modes that allow personalization. In this case, a header is not rendered for a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control in browse mode, while in most other modes a header is rendered. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  Tool zones (zones that derive indirectly from the <xref:System.Web.UI.WebControls.WebParts.WebZone> class by means of the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class, such as <xref:System.Web.UI.WebControls.WebParts.EditorZone> and <xref:System.Web.UI.WebControls.WebParts.CatalogZone>) must have headers that appear only when the page is in the appropriate display mode. Because the <xref:System.Web.UI.WebControls.WebParts.WebZone.HasHeader%2A> property is `true` by default, they do not need to override the property.  
   
@@ -429,7 +429,7 @@
 ## Remarks  
  The contents of a zone's <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property are displayed when a Web page enters certain display modes. For example, on a page that has a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, the text assigned to the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property becomes visible when the page enters edit, catalog, or design mode.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -439,7 +439,7 @@
  <!-- TODO: review snippet reference [!code-csharp[WebParts_Zone_HeaderText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_Zone_HeaderText/CS/zoneheadertextcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_Zone_HeaderText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_Zone_HeaderText/VB/zoneheadertextvb.aspx#1)]  -->  
   
- In a browser, you can switch the page to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property displayed in the header area of the zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ In a browser, you can switch the page to design mode to see the text supplied for the <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property displayed in the header area of the zone. For details on how to change page display modes, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  ]]></format>
         </remarks>
@@ -467,7 +467,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebZone.LoadViewState%2A> method loads previously saved state information for a zone. It overrides the base <xref:System.Web.UI.Control.LoadViewState%2A> method to also load state information for the various style properties of a zone, such as <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderStyle%2A>, <xref:System.Web.UI.WebControls.WebParts.WebZone.FooterStyle%2A>, and <xref:System.Web.UI.WebControls.WebParts.WebZone.PartStyle%2A>.  
   

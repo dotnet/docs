@@ -28,7 +28,7 @@
  The following code example stores the result of the <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method in a cookie using the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> and redirects the user to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
@@ -148,7 +148,7 @@
  The following code example stores the result of the <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method in a cookie using the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property and redirects the user to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  

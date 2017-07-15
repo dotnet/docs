@@ -28,7 +28,7 @@ Nearly every production-quality app has to use resources. A resource is any none
   
  The .NET Framework provides comprehensive support for the creation and localization of resources in desktop apps. In addition, the .NET Framework supports a simple model for packaging and deploying these localized resources in desktop apps.  
   
- For information about resources in ASP.NET, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd) in the Internet Explorer Developer Center.  
+ For information about resources in ASP.NET, see [ASP.NET Web Page Resources Overview](https://msdn.microsoft.com/library/ms227427.aspx) in the Internet Explorer Developer Center.  
   
  [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps use a different resource model from desktop apps and store their resources in a single package resource index (PRI) file. For information about resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](http://go.microsoft.com/fwlink/p/?LinkId=241674) in the Windows Dev Center.  
   

@@ -24,7 +24,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Troubleshooting Control and Component Authoring
-This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3).  
+This topic lists the following common problems that arise when developing components and controls. For more information, see [Programming with Components](https://msdn.microsoft.com/library/0ffkdtkf.aspx).  
   
 -   Cannot Add Control to Toolbox  
   
@@ -117,6 +117,6 @@ This topic lists the following common problems that arise when developing compon
  [Walkthrough: Automatically Populating the Toolbox with Custom Components](../../../../docs/framework/winforms/controls/walkthrough-automatically-populating-the-toolbox-with-custom-components.md)   
  [How to: Test the Run-Time Behavior of a UserControl](../../../../docs/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol.md)   
  [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)   
- [Component Authoring](http://msdn.microsoft.com/library/4a5a5e49-0378-4a31-83bc-24da0f1a727d)   
- [Troubleshooting Design-Time Development](http://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)   
- [Programming with Components](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)
+ [Component Authoring](https://msdn.microsoft.com/library/5dya64wy.aspx)   
+ [Troubleshooting Design-Time Development](https://msdn.microsoft.com/library/ms171843.aspx)   
+ [Programming with Components](https://msdn.microsoft.com/library/0ffkdtkf.aspx)

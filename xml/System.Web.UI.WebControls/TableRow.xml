@@ -48,7 +48,7 @@
  You can programmatically manage the cells in the row by using the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection. The <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection is a collection of <xref:System.Web.UI.WebControls.TableCell> objects that represent the cells in the row.  
   
 > [!CAUTION]
->  The <xref:System.Web.UI.WebControls.TableCell> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [ASP.NET Validation Controls](http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef).  
+>  The <xref:System.Web.UI.WebControls.TableCell> control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [ASP.NET Validation Controls](https://msdn.microsoft.com/library/debza5t0.aspx).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  

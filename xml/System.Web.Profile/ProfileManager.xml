@@ -30,7 +30,7 @@
 </configuration>  
 ```  
   
- For more information about the user profile, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+ For more information about the user profile, see [ASP.NET Profile Properties Overview](https://msdn.microsoft.com/library/2y3fs9xs.aspx).  
   
  A profile provider is used to store and retrieve properties in the user profile. The .NET Framework includes a <xref:System.Web.Profile.SqlProfileProvider> class that stores user profile properties in a SQL Server database. A <xref:System.Web.Profile.SqlProfileProvider> instance named `AspNetSqlProvider` is specified in the machine configuration as the default profile provider. The `AspNetSqlProvider` instance connects to the SQL Server database on the local Web server. You can specify a <xref:System.Web.Profile.SqlProfileProvider> that connects to another SQL Server as the default profile provider by using the  configuration element and the `defaultProvider` attribute of the  configuration element, as shown in the following example.  
   
@@ -60,7 +60,7 @@
  The following code example shows an ASP.NET page that uses the <xref:System.Web.Profile.ProfileManager> class to manage inactive profiles.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
@@ -227,7 +227,7 @@
  The following code example shows an ASP.NET page that manages inactive profiles. A button is provided to delete all profiles that have been unused for the specified number of days and are therefore considered inactive.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
@@ -270,7 +270,7 @@
  The following code example shows an ASP.NET page that manages inactive profiles. The <xref:System.Web.Profile.ProfileManager.DeleteProfile%2A> method is called when a single profile is selected to be deleted. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter value passed to the <xref:System.Web.Profile.ProfileManager.GetAllInactiveProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteProfilecs.aspx#10)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteProfilevb.aspx#10)]  -->  
@@ -318,7 +318,7 @@
  The following code example shows an ASP.NET page that manages inactive profiles. A <xref:System.Web.UI.WebControls.GridView> control displays the inactive profiles returned. Each row of the <xref:System.Web.UI.WebControls.GridView> control includes a button that deletes the profile for that row from the data source with a call to the <xref:System.Web.Profile.ProfileManager.DeleteProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
@@ -377,7 +377,7 @@
  The following code example allows a user to search for profiles using the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> and <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> methods. The user can then delete the returned profiles with a call to the <xref:System.Web.Profile.ProfileManager.DeleteProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
@@ -482,7 +482,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> enumeration value and retrieves profile information for any matching profiles. The sample allows the user to specify whether to return only inactive profiles. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserName2cs.aspx#8)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserName2vb.aspx#8)]  -->  
@@ -542,7 +542,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> value and retrieves profile information for any matching profiles. The example allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
@@ -606,7 +606,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> enumeration value and retrieves profile information for any matching profiles. The example allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserName2cs.aspx#8)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserName2vb.aspx#8)]  -->  
@@ -664,7 +664,7 @@
  The following code example allows a user to supply a `usernameToMatch` value and a <xref:System.Web.Profile.ProfileAuthenticationOption> and retrieves profile information for any matching profiles. The example allows the user to specify whether to return inactive profiles exclusively. If the user specifies only inactive profiles, the <xref:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName%2A> method is called; otherwise, the <xref:System.Web.Profile.ProfileManager.FindProfilesByUserName%2A> method is called.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  -->  
@@ -726,7 +726,7 @@
  The following code example shows an ASP.NET page that manages inactive profiles. A button is provided to delete all inactive profiles. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfiles2cs.aspx#7)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfiles2vb.aspx#7)]  -->  
@@ -778,7 +778,7 @@
  The following code example shows an ASP.NET Web page that manages inactive profiles. A button is provided to delete all inactive profiles. Whether a profile is considered inactive is based on the date specified for the `userInactiveSinceDate` parameter.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/DeleteInactiveProfilescs.aspx#4)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
@@ -908,7 +908,7 @@
  The following code example allows a user to view and delete information for active and inactive profiles based on search criteria. A count of inactive profiles is displayed using the results of the <xref:System.Web.Profile.ProfileManager.GetNumberOfInactiveProfiles%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/FindProfilesByUserNamecs.aspx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/FindProfilesByUserNamevb.aspx#5)]  -->  

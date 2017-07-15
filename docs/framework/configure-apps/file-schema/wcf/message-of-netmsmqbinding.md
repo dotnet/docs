@@ -66,5 +66,5 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/ms733824(v=vs.110).aspx)   
  [\<binding>](../../../../../docs/framework/misc/binding.md)

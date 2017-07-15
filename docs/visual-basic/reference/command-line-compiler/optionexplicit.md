@@ -55,7 +55,7 @@ Causes the compiler to report errors if variables are not declared before they a
   
 ### To set /optionexplicit in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. For more information, see [Introduction to the Project Designer](https://msdn.microsoft.com/library/bb1aa8f1.aspx).  
   
 2.  Click the **Compile** tab.  
   

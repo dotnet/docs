@@ -28,7 +28,7 @@
 ## Examples  
  The following code example shows how to obtain the <xref:System.Web.Configuration.FormsAuthenticationConfiguration> object from the configuration file of an existing Web application. You can use this object to access its members. The configuration file will contain a setup similar to the following.  
   
- **Note** If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security, it is recommended that you use an external database to store the users' credentials. For more information about building secure ASP.NET applications search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
+ **Note** If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx). For scalability and better security, it is recommended that you use an external database to store the users' credentials. For more information about building secure ASP.NET applications search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
   
 ```  
 <authentication mode="Forms">  
@@ -288,7 +288,7 @@
  The <xref:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects%2A> property is checked by the <xref:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects%2A> method when the redirection is to a URL that is not in the current application. If <xref:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects%2A> is true, then the redirect is performed; otherwise the browser is redirected to the page defined in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
   
 > [!NOTE]
->  When performing redirects across applications, you must ensure that several of the attributes in the `form` configuration section are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
+>  When performing redirects across applications, you must ensure that several of the attributes in the `form` configuration section are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](https://msdn.microsoft.com/library/eb0zx8fc.aspx).  
   
    
   
@@ -584,7 +584,7 @@
 ## Examples  
  <xref:System.Web.Configuration.TicketCompatibilityMode>  
   
- [forms Element for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/8163b8b5-ea6c-46c8-b5a9-c4c3de31c0b3)  
+ [forms Element for authentication (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/1d3t3c61(v=vs.110).aspx)  
   
  ]]></format>
         </remarks>

@@ -58,4 +58,4 @@ For Each listElement(1) As Integer In arrayList
 ## See Also  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)   
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)
+ [Collections](https://msdn.microsoft.com/library/ybcx56wz.aspx)

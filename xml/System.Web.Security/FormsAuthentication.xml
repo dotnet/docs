@@ -65,7 +65,7 @@
  The following code example shows the login page for an ASP.NET application that uses forms authentication and ASP.NET membership.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  -->  
@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Authenticate method verifies user credentials that are stored in the  section of the application configuration file. Alternatively, you can use ASP.NET membership to store user credentials and call the <xref:System.Web.Security.MembershipProvider.ValidateUser%2A> to verify the credentials. For more information, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+ The Authenticate method verifies user credentials that are stored in the  section of the application configuration file. Alternatively, you can use ASP.NET membership to store user credentials and call the <xref:System.Web.Security.MembershipProvider.ValidateUser%2A> to verify the credentials. For more information, see [Managing Users by Using Membership](https://msdn.microsoft.com/library/tw292whz.aspx).  
   
  For improved security, you can encrypt passwords stored in the configuration file for an application by using the <xref:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile%2A> method.  
   
@@ -158,7 +158,7 @@
  The following code example shows a login page that uses the <xref:System.Web.Security.FormsAuthentication.Authenticate%2A> method to validate user credentials.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/logincs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/loginvb.aspx#1)]  -->  
@@ -389,7 +389,7 @@
  The <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property is checked within the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method when the redirect URL does not point to a page in the current application. If <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `true`, then the redirect is performed; if <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `false`, the browser is redirected to the page defined in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
   
 > [!NOTE]
->  When you redirect pages across applications, you must make sure that specific attributes in the  configuration element are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
+>  When you redirect pages across applications, you must make sure that specific attributes in the  configuration element are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](https://msdn.microsoft.com/library/eb0zx8fc.aspx).  
   
 > [!IMPORTANT]
 >  When cross-application redirects are allowed, your site is vulnerable to an exploit that directs users to a malicious Web site but uses the login page for your site. Always verify that the redirect URL that is returned by the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method is a URL that you expect so that you can make sure that you allow redirects only to approved Web sites. You must also verify that the redirect URL uses the appropriate protocol (HTTP or HTTPS). To perform these verifications, you can add a postback event handler to your login page, or you can add a handler for the <xref:System.Web.UI.WebControls.Login.LoggedIn> event of the <xref:System.Web.UI.WebControls.Login> control.  
@@ -467,7 +467,7 @@
  The following code example stores the result of the <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method in a cookie by using the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property and redirects the user to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
@@ -655,7 +655,7 @@
  The following code example redirects authenticated users to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
@@ -696,7 +696,7 @@
 ## Remarks  
  The <xref:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile%2A> method creates a hashed password value that can be used when storing forms-authentication credentials in the configuration file for an application.  
   
- Authentication credentials stored in the configuration file for an application are used by the <xref:System.Web.Security.FormsAuthentication.Authenticate%2A> method to verify passwords for users of an application. Alternatively, you can use ASP.NET membership to store user credentials. For more information, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+ Authentication credentials stored in the configuration file for an application are used by the <xref:System.Web.Security.FormsAuthentication.Authenticate%2A> method to verify passwords for users of an application. Alternatively, you can use ASP.NET membership to store user credentials. For more information, see [Managing Users by Using Membership](https://msdn.microsoft.com/library/tw292whz.aspx).  
   
    
   
@@ -704,7 +704,7 @@
  The following code example takes a user name, password, and hash type and displays the  section of the configuration that includes the user definition and hashed password.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationHashPassword#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationHashPassword/CS/formsauthenticationhashpasswordcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationHashPassword#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationHashPassword/VB/formsauthenticationhashpasswordvb.aspx#1)]  -->  
@@ -843,10 +843,10 @@
    
   
 ## Examples  
- The following code example redirects validated users to either the originally requested URL or the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A>. The code example uses ASP.NET membership to validate users. For more information about ASP.NET membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+ The following code example redirects validated users to either the originally requested URL or the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A>. The code example uses ASP.NET membership to validate users. For more information about ASP.NET membership, see [Managing Users by Using Membership](https://msdn.microsoft.com/library/tw292whz.aspx).  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  -->  

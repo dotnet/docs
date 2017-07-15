@@ -1192,7 +1192,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
  Improvements when debugging your .NET Framework apps in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] include:
 
-- Return values in the Visual Studio debugger. When you debug a managed app in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], the Autos window displays return types and values for methods. This information is available for desktop, Windows Store, and Windows Phone apps. For more information, see [Examine return values of method calls](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f\(v=vs.120\).aspx) in the MSDN Library.
+- Return values in the Visual Studio debugger. When you debug a managed app in [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], the Autos window displays return types and values for methods. This information is available for desktop, Windows Store, and Windows Phone apps. For more information, see [Examine return values of method calls](https://msdn.microsoft.com/library/dn323257.aspx\(v=vs.120\).aspx) in the MSDN Library.
 
 - Edit and Continue for 64-bit apps. [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)] supports the Edit and Continue feature for 64-bit managed apps for desktop, Windows Store, and Windows Phone. The existing limitations remain in effect for both 32-bit and 64-bit apps (see the last section of the [Supported Code Changes (C#)](/visualstudio/debugger/supported-code-changes-csharp) article).
 
@@ -1271,7 +1271,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 ### Web
  ASP.NET 4.5 and 4.5.1 add model binding for Web Forms, WebSocket support, asynchronous handlers, performance enhancements, and many other features. For more information, see the following resources:
 
-- [ASP.NET 4.5 and Visual Studio 2012](http://msdn.microsoft.com/library/ac9bb7f6-f094-4af7-bad0-acf49a5dbc55) in the MSDN Library.
+- [ASP.NET 4.5 and Visual Studio 2012](https://msdn.microsoft.com/library/hh420390.aspx) in the MSDN Library.
 
 - [ASP.NET 4.5.1 and Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkID=309094) on the ASP.NET site.
 

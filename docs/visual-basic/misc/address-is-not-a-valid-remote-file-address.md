@@ -40,8 +40,8 @@ translation.priority.mt:
 -   Check the address you have specified to determine where it fails, and supply the necessary information.  
   
 ## See Also  
- [My.Computer.Network.UploadFile Method](http://msdn.microsoft.com/en-us/5505ea3e-3dbd-460b-9f8f-62c84c0a4de6)   
- [My.Computer.Network.DownloadFile Method](http://msdn.microsoft.com/en-us/aeb7ed8f-1ac9-4242-ae57-9f35914eb329)   
+ [My.Computer.Network.UploadFile Method](https://msdn.microsoft.com/library/dfkdh7eb(v=vs.90).aspx)   
+ [My.Computer.Network.DownloadFile Method](https://msdn.microsoft.com/library/ack30t8y(v=vs.90).aspx)   
  [How to: Upload a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)   
  [How to: Download a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)   
- [Network Operations in the .NET Framework with Visual Basic](http://msdn.microsoft.com/en-us/c5379021-44ef-4d6a-acf5-e951fdcab6b2)
+ [Network Operations in the .NET Framework with Visual Basic](https://msdn.microsoft.com/library/ms172756(v=vs.100).aspx)

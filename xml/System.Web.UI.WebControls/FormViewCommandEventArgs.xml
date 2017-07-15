@@ -34,7 +34,7 @@
   
  A <xref:System.Web.UI.WebControls.FormViewCommandEventArgs> object is passed to the event-handling method, which allows you to determine the command name and command argument of the button clicked. To determine the command name and command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> and <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> properties, respectively. You can also access the button control that raised the event by using the <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs.CommandSource%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewCommandEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewCommandEventArgs.%23ctor%2A> constructor.  
   
@@ -44,7 +44,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewCommandEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event to determine which button within a <xref:System.Web.UI.WebControls.FormView> control was clicked by the user.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormViewItemCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCommandEventArgs/CS/formviewcommandeventargscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormViewItemCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCommandEventArgs/VB/formviewcommandeventargsvb.aspx#1)]  -->  
@@ -118,7 +118,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewCommandEventArgs.CommandSource%2A> property to access the properties of the button control that raised the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[FormViewItemCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewItemCommandEventArgs/CS/formviewcommandeventargscs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[FormViewItemCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewItemCommandEventArgs/VB/formviewcommandeventargsvb.aspx#1)]  -->  

@@ -16,7 +16,7 @@ ms.author: "jhubbard"
 manager: "jhubbard"
 ---
 # Method-Based Query Syntax Examples: Join (LINQ to DataSet)
-Joining is an important operation in queries that target data sources that have no navigable relationships to each other, such as relational database tables. A join of two data sources is the association of objects in one data source with objects that share a common attribute in the other data source. For more information, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
+Joining is an important operation in queries that target data sources that have no navigable relationships to each other, such as relational database tables. A join of two data sources is the association of objects in one data source with objects that share a common attribute in the other data source. For more information, see [Standard Query Operators Overview](https://msdn.microsoft.com/library/bb397896.aspx).  
   
  The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.Join%2A> method to query a <xref:System.Data.DataSet> using the method query syntax.  
   
@@ -48,6 +48,6 @@ Joining is an important operation in queries that target data sources that have 
 ## See Also  
  [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)   
  [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)   
- [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)   
+ [Standard Query Operators Overview](https://msdn.microsoft.com/library/bb397896.aspx)   
  [Join Samples](http://go.microsoft.com/fwlink/?LinkId=187357)   
  [Dataset Samples](http://go.microsoft.com/fwlink/?LinkId=187358)

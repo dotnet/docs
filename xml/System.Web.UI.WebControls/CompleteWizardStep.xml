@@ -80,7 +80,7 @@
 > [!CAUTION]
 >  The <xref:System.Web.UI.WebControls.CompleteWizardStep.StepType%2A> property overrides the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=fullName> property to ensure that <xref:System.Web.UI.WebControls.CompleteWizardStep> is always set to the <xref:System.Web.UI.WebControls.WizardStepType.Complete> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration. Attempting to set the <xref:System.Web.UI.WebControls.CompleteWizardStep.StepType%2A> property to a different value will result in an <xref:System.InvalidOperationException>.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
  ]]></format>
         </remarks>

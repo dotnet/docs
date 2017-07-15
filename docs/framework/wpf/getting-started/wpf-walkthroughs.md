@@ -27,11 +27,11 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Walkthrough: Building a Simple WPF Application with the WPF Designer](http://msdn.microsoft.com/en-us/2d412231-dbdf-4e69-b060-4f2b246c2027)|Demonstrates how to build a simple WPF application with the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].|  
-|[Walkthrough: Constructing a Dynamic Layout](http://msdn.microsoft.com/en-us/483aafbb-b29d-435a-b956-8e4f67cd4a0f)|Demonstrates creating a dynamic layout by using a <xref:System.Windows.Controls.Grid> panel control.|  
-|[Walkthrough: Creating a Resizable Application by Using the WPF Designer](http://msdn.microsoft.com/en-us/18f5271e-4dc6-4eef-bc20-bb8862045d2e)|Demonstrates how to create window layouts that are resizable by the user at run time.|  
-|[Walkthrough: Creating a Data Binding by Using the WPF Designer](http://msdn.microsoft.com/en-us/8a79ed20-d59f-46b8-944f-6fd5dbb4e278)|Demonstrates how to use the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] to create data bindings that connect data to a control.|  
-|[Walkthrough: Using a DesignInstance to Bind to Data in the Designer](http://msdn.microsoft.com/en-us/a4d3747a-bd43-42bc-b66d-477856a6769c)|Demonstrates how to use the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] to create data bindings at design time for a data context that is assigned at run time.|  
+|[Walkthrough: Building a Simple WPF Application with the WPF Designer](https://msdn.microsoft.com/library/bb546972(v=vs.110).aspx)|Demonstrates how to build a simple WPF application with the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].|  
+|[Walkthrough: Constructing a Dynamic Layout](https://msdn.microsoft.com/library/bb514519(v=vs.110).aspx)|Demonstrates creating a dynamic layout by using a <xref:System.Windows.Controls.Grid> panel control.|  
+|[Walkthrough: Creating a Resizable Application by Using the WPF Designer](https://msdn.microsoft.com/library/bb546954(v=vs.110).aspx)|Demonstrates how to create window layouts that are resizable by the user at run time.|  
+|[Walkthrough: Creating a Data Binding by Using the WPF Designer](https://msdn.microsoft.com/library/dd434207(v=vs.110).aspx)|Demonstrates how to use the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] to create data bindings that connect data to a control.|  
+|[Walkthrough: Using a DesignInstance to Bind to Data in the Designer](https://msdn.microsoft.com/library/dd490796(v=vs.110).aspx)|Demonstrates how to use the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] to create data bindings at design time for a data context that is assigned at run time.|  
   
 ## WPF Walkthroughs  
   
@@ -56,4 +56,4 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual Studio Walkthroughs](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)|Gives a related list of walkthroughs for all areas of programming in Visual Studio.|
+|[Visual Studio Walkthroughs](https://msdn.microsoft.com/library/szatc41e(v=vs.110).aspx)|Gives a related list of walkthroughs for all areas of programming in Visual Studio.|

@@ -47,7 +47,7 @@
 > [!CAUTION]
 >  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input.  
   
- For more information about security, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+ For more information about security, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/7kh55542.aspx).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -77,7 +77,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Literal> control to display static text.  
   
 > [!NOTE]
->  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  -->  
@@ -246,7 +246,7 @@
  The following code example demonstrates how to set a <xref:System.Web.UI.WebControls.Literal> control's <xref:System.Web.UI.WebControls.Literal.Mode%2A> property. The <xref:System.Web.UI.WebControls.Literal.Mode%2A> property is initially set to `Encode` in the declarative syntax for the control. After the page loads, the user can click a button to set the <xref:System.Web.UI.WebControls.Literal.Mode%2A> property to `PassThrough`. This causes the contents of the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to render differently.  
   
 > [!NOTE]
->  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-vb[Literal.Mode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal.Mode/VB/literal.modevb.aspx#1)]  -->  
   
@@ -323,9 +323,9 @@
  The caption is HTML-decoded depending on how you assign a value to this property. If you assign a value through an attribute of the <xref:System.Web.UI.WebControls.Literal> control, the value is HTML decoded before it is displayed. For example, `<asp:Literal id="DisplayLiteral" Text="A&nbsp;B"/>` is rendered as "A B" on the browser. However, if you set this property programmatically or by placing the text between the opening and closing tags of the control, the caption is not HTML decoded. For example, `<asp:Literal id="DisplayLiteral"> A&nbsp;B </asp:Literal>` is rendered as "A&nbsp;B".  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/e5a8xz39(v=vs.110).aspx).  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -333,7 +333,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to programmatically change the caption displayed in the <xref:System.Web.UI.WebControls.Literal> control.  
   
 > [!NOTE]
->  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  -->  

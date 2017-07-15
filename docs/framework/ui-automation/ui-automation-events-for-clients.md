@@ -67,4 +67,4 @@ manager: "markl"
  [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)   
  [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)   
  [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)   
- [TrackFocus Sample](http://msdn.microsoft.com/en-us/4a91c0af-6bb5-4d38-a743-cf136f268fc9)
+ [TrackFocus Sample](https://msdn.microsoft.com/library/ms771428(v=vs.100).aspx)

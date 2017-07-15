@@ -248,7 +248,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
  For executables that are deployed and run from a website (HREF .exe files), the <xref:System.Resources.ResourceManager> object may probe for satellite assemblies over the web, which can hurt your app's performance. To eliminate the performance problem, you can limit this probing to the satellite assemblies that you have deployed with your app. To do this, you create a `<satelliteassemblies>` node in your app's configuration file to specify that you have deployed a specific set of cultures for your app, and that the <xref:System.Resources.ResourceManager> object should not try to probe for any culture that is not listed in that node.  
   
 > [!NOTE]
->  The preferred alternative to creating a `<satelliteassemblies>` node is to use the [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) feature.  
+>  The preferred alternative to creating a `<satelliteassemblies>` node is to use the [ClickOnce Deployment Manifest](https://msdn.microsoft.com/library/k26e96zf.aspx) feature.  
   
  In your app's configuration file, create a section similar to the following:  
   

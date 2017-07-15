@@ -202,4 +202,4 @@ Next [ counter ]
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   
  [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)   
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)   
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)
+ [Collections](https://msdn.microsoft.com/library/ybcx56wz.aspx)

@@ -58,7 +58,7 @@
   
 -   A description of how the example works in a browser.  
   
- The first part of this code example is the user control that enables you to change display modes on the page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables you to change display modes on the page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/displaymodemenucs.ascx#8)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/displaymodemenuvb.ascx#8)]  -->  
@@ -68,7 +68,7 @@
  <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#1)]  -->  
   
- The third part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. It is declared within the zone, and an end user can add it from the catalog to the page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a demonstration of both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The third part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. It is declared within the zone, and an end user can add it from the catalog to the page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a demonstration of both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  [!code-csharp[WebParts_CatalogZoneBase_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/textdisplaywebpart.cs#9)]
  [!code-vb[WebParts_CatalogZoneBase_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/textdisplaywebpart.vb#9)]  
@@ -645,7 +645,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadViewState%2A> method first calls the base method to load any previously existing state information. Next, it adds the view-state data object containing the state information for the add verb, the close verb, the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> object, and the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> object.  
   
@@ -1027,7 +1027,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property allows you to set an identifier of your choice for the currently selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control. This does not change the control's <xref:System.Web.UI.Control.ID%2A> property value, so you can use this property for your own programmatic purposes. For example, if you wanted to always carry out some programmatic action on the currently selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control, this property enables you to access that control through a known value that you set in advance.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
    
   
@@ -1134,7 +1134,7 @@
 ## Remarks  
  When the catalog UI first appears, users can select one of the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, such as <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart>, that contains <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server controls that can be added to the Web page. The user selects one or more controls, and can then use the <xref:System.Web.UI.WebControls.DropDownList> control in the footer area of the catalog and choose the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control on the page in which to place the selected server controls. The text value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property is displayed alongside the <xref:System.Web.UI.WebControls.DropDownList> control as a simple instruction.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   

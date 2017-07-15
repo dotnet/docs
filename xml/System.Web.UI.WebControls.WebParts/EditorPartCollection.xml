@@ -35,12 +35,12 @@
   
 -   An explanation of how the code example works when you load it in a browser.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/CS/displaymodecs.ascx#4)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_EditorPartCollection_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_EditorPartCollection_Overview/VB/displaymodevb.ascx#4)]  -->  
   
- The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  Note that the control has a property named `ContentText`; this property holds the value that the user enters in the text box. This custom property can be edited when the control is in edit mode, along with the standard <xref:System.Web.UI.WebControls.WebParts.WebPart> control properties.  
   

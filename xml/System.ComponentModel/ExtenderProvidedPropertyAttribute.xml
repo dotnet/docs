@@ -34,7 +34,7 @@
  The <xref:System.ComponentModel.ExtenderProvidedPropertyAttribute> is injected automatically by the <xref:System.ComponentModel.TypeDescriptor> class on properties that are exposed as extended properties.  
   
 > [!NOTE]
->  Do not use this attribute on your properties. Instead, use the <xref:System.ComponentModel.ProvidePropertyAttribute> on a type that implements the <xref:System.ComponentModel.IExtenderProvider> interface. For more information, see [Extender Providers](http://msdn.microsoft.com/library/4ce043d8-cd48-49dd-abef-185a2079e96a).  
+>  Do not use this attribute on your properties. Instead, use the <xref:System.ComponentModel.ProvidePropertyAttribute> on a type that implements the <xref:System.ComponentModel.IExtenderProvider> interface. For more information, see [Extender Providers](https://msdn.microsoft.com/library/ms171835.aspx).  
   
  ]]></format>
     </remarks>

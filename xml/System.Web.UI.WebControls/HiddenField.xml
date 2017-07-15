@@ -88,7 +88,7 @@
  The following examples show how to use the <xref:System.Web.UI.WebControls.HiddenField> control to store the value of a <xref:System.Web.UI.WebControls.TextBox> control between posts to the server.  
   
 > [!IMPORTANT]
->  The examples have a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  The examples have a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
@@ -293,7 +293,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.HiddenField.OnValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -489,7 +489,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HiddenField.Value%2A> property to specify the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  
@@ -518,7 +518,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event is raised when the value of the <xref:System.Web.UI.WebControls.HiddenField> control changes between posts to the server. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -526,7 +526,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HiddenField.ValueChanged> event to display the value of the <xref:System.Web.UI.WebControls.HiddenField> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[HiddenField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HiddenField/CS/hiddenfieldcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[HiddenField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HiddenField/VB/hiddenfieldvb.aspx#1)]  -->  

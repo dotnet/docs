@@ -107,7 +107,7 @@ using System.Linq;
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Parallel Programming Samples (these include many example extension methods)](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)   
  [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
- [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)   
+ [Standard Query Operators Overview](https://msdn.microsoft.com/library/bb397896.aspx)   
  [Conversion rules for Instance parameters and their impact](http://go.microsoft.com/fwlink/?LinkId=112385)   
  [Extension methods Interoperability between languages](http://go.microsoft.com/fwlink/?LinkId=112386)   
  [Extension methods and Curried Delegates](http://go.microsoft.com/fwlink/?LinkId=112387)   

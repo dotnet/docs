@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.VirtualPathUtility> class provides utility methods for common operations involving virtual paths. For ASP.NET server controls and server code, virtual paths using the Web application root operator, the tilde (~), commonly are used instead of relative and absolute paths. For more information, see [ASP.NET Web Project Paths](http://msdn.microsoft.com/library/2447f50c-b849-483c-8093-85ed53e7a5bd).  
+ The <xref:System.Web.VirtualPathUtility> class provides utility methods for common operations involving virtual paths. For ASP.NET server controls and server code, virtual paths using the Web application root operator, the tilde (~), commonly are used instead of relative and absolute paths. For more information, see [ASP.NET Web Project Paths](https://msdn.microsoft.com/library/ms178116.aspx).  
   
  Use the <xref:System.Web.VirtualPathUtility> class when you need to convert application-relative paths to absolute virtual paths, as might be the case in developing a custom Web service handler.  
   
@@ -25,7 +25,7 @@
  The virtual directory for the application can be obtained from the <xref:System.Web.HttpRuntime.AppDomainAppVirtualPath%2A> and <xref:System.Web.HttpRequest.ApplicationPath%2A> properties.  
   
 > [!NOTE]
->  The <xref:System.Web.VirtualPathUtility> class is not intended for security or canonicalization purposes. For more information about Web application security, see [Overview of Web Application Security Threats](http://msdn.microsoft.com/library/88d61678-f84e-4622-ae80-53128821855a). For generic URL processing functionality, see <xref:System.Uri>.  
+>  The <xref:System.Web.VirtualPathUtility> class is not intended for security or canonicalization purposes. For more information about Web application security, see [Overview of Web Application Security Threats](https://msdn.microsoft.com/library/f13d73y6.aspx). For generic URL processing functionality, see <xref:System.Uri>.  
   
    
   

@@ -48,7 +48,7 @@ This topic describes security considerations that are specific to developing, de
   
 -   Encrypt configuration file sections using protected configuration.  
   
-     ASP.NET provides a feature called protected configuration that enables you to encrypt sensitive information in a configuration file. Although primarily designed for ASP.NET, you can also use protected configuration to encrypt sections of configuration files in Windows applications. For a detailed description of the new protected configuration capabilities, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+     ASP.NET provides a feature called protected configuration that enables you to encrypt sensitive information in a configuration file. Although primarily designed for ASP.NET, you can also use protected configuration to encrypt sections of configuration files in Windows applications. For a detailed description of the new protected configuration capabilities, see [Encrypting Configuration Information Using Protected Configuration](https://msdn.microsoft.com/library/53tyfkaw.aspx).  
   
 -   Store connection strings in secured configuration files.  
   
@@ -108,7 +108,7 @@ This topic describes security considerations that are specific to developing, de
   
      SQL injection attacks can be performed in [!INCLUDE[esql](../../../../../includes/esql-md.md)] by supplying malicious input to values that are used in a query predicate and in parameter names. To avoid the risk of SQL injection, you should never combine user input with [!INCLUDE[esql](../../../../../includes/esql-md.md)] command text.  
   
-     [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries accept parameters everywhere that literals are accepted. You should use parameterized queries instead of injecting literals from an external agent directly into the query. You should also consider using query builder methods to safely construct [Entity SQL](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+     [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries accept parameters everywhere that literals are accepted. You should use parameterized queries instead of injecting literals from an external agent directly into the query. You should also consider using query builder methods to safely construct [Entity SQL](https://msdn.microsoft.com/library/bb896238(v=vs.110).aspx).  
   
 -   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] injection attacks:  
   
@@ -142,7 +142,7 @@ This topic describes security considerations that are specific to developing, de
  The following security considerations apply when generating and working with entity types.  
   
 #### Do not share an ObjectContext across application domains.  
- Sharing an <xref:System.Data.Objects.ObjectContext> with more than one application domain may expose information in the connection string. Instead, you should transfer serialized objects or object graphs to the other application domain and then attach those objects to an <xref:System.Data.Objects.ObjectContext> in that application domain. For more information, see [Serializing Objects](http://msdn.microsoft.com/en-us/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
+ Sharing an <xref:System.Data.Objects.ObjectContext> with more than one application domain may expose information in the connection string. Instead, you should transfer serialized objects or object graphs to the other application domain and then attach those objects to an <xref:System.Data.Objects.ObjectContext> in that application domain. For more information, see [Serializing Objects](https://msdn.microsoft.com/library/bb738446(v=vs.110).aspx).  
   
 #### Prevent type safety violations.  
  If type safety is violated, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] cannot guarantee the integrity of data in objects. Type safety violations could occur if you allow untrusted applications to run with full-trust code access security.  

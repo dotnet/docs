@@ -3606,7 +3606,7 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  <xref:System.Threading.Tasks.Task.Wait%2A> is a synchronization method that causes the calling thread to wait until the current task has completed. If the current task has not started execution, the Wait method attempts to remove the task from the scheduler and execute it inline on the current thread. If it is unable to do that, or if the current task has already started execution, it blocks the calling thread until the task completes. For more information, see [Task.Wait and "Inlining"](http://blogs.msdn.com/b/pfxteam/archive/2009/10/15/9907713.aspx) in the Parallel Programming with .NET blog.  
   
- For more information and an example, see [How to: Wait on One or More Tasks to Complete](http://msdn.microsoft.com/library/79cb522b-9c93-46ed-b23a-c06908f3a374).  
+ For more information and an example, see [How to: Wait on One or More Tasks to Complete](https://msdn.microsoft.com/library/dd537610(v=vs.110).aspx).  
   
    
   

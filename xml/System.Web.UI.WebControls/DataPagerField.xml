@@ -316,7 +316,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataPagerField.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.DataPagerField> object that was saved by the <xref:System.Web.UI.WebControls.DataPagerField.SaveViewState%2A> method during a previous page request.  
   
- This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  ]]></format>
         </remarks>
@@ -587,11 +587,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A data pager field's view state is the accumulation of all its property values. To preserve values across HTTP requests for the same page, ASP.NET server controls use this property to store the property values. The values are stored in an HTML hidden input element on the page. For more information, see [ASP.NET View State Overview](http://msdn.microsoft.com/library/19d2a6ed-9a77-4c7c-a7f5-74dd4b6c3818).  
+ A data pager field's view state is the accumulation of all its property values. To preserve values across HTTP requests for the same page, ASP.NET server controls use this property to store the property values. The values are stored in an HTML hidden input element on the page. For more information, see [ASP.NET View State Overview](https://msdn.microsoft.com/library/bb386448.aspx).  
   
- By default, view state is enabled for all server controls, but there are circumstances when you might want to disable it. For more information, see [ASP.NET Performance Overview](http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
+ By default, view state is enabled for all server controls, but there are circumstances when you might want to disable it. For more information, see [ASP.NET Performance Overview](https://msdn.microsoft.com/library/cc668225.aspx).  
   
- For more information about dictionaries and how to use them, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ For more information about dictionaries and how to use them, see [Collections and Data Structures](https://docs.microsoft.com/dotnet/standard/collections/).  
   
  ]]></format>
         </remarks>

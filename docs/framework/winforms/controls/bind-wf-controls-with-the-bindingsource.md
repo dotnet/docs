@@ -31,7 +31,7 @@ After you have added controls to your form and determined the user interface for
  To complete the procedure, it is assumed that you will bind to a data source derived from a database. For more information on creating data sources from other stores of data, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](https://msdn.microsoft.com/library/zbhkx167.aspx).  
   
 ### To bind a control at design time  
   
@@ -71,4 +71,4 @@ After you have added controls to your form and determined the user interface for
  <xref:System.Windows.Forms.BindingSource>   
  <xref:System.Windows.Forms.BindingNavigator>   
  [Add new data sources](/visualstudio/data-tools/add-new-data-sources)   
- [Data Sources Window](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)
+ [Data Sources Window](https://msdn.microsoft.com/library/6ckyxa83.aspx)

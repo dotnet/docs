@@ -73,7 +73,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://msdn.microsoft.com/library/ms731325(v=vs.110).aspx)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
@@ -114,5 +114,5 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
  <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)   
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/ms733824(v=vs.110).aspx)   
  [\<binding>](../../../../../docs/framework/misc/binding.md)

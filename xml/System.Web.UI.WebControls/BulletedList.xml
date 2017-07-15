@@ -69,11 +69,11 @@
   
  When the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property is set to <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>, the <xref:System.Web.UI.WebControls.BulletedList> control displays list items as links that post back to the server when clicked. To programmatically control the actions that are performed when a link button is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event. Note that the <xref:System.Web.UI.WebControls.BulletedList.SelectedIndex%2A> and <xref:System.Web.UI.WebControls.BulletedList.SelectedItem%2A> properties are inherited from the <xref:System.Web.UI.WebControls.ListControl> class and are not applicable to the <xref:System.Web.UI.WebControls.BulletedList> control. Use the event data of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class to determine the index of the link button in a <xref:System.Web.UI.WebControls.BulletedList> that was clicked.  
   
- The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](https://msdn.microsoft.com/library/ms178361(v=vs.100).aspx).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards such as the Web Content Accessibility Guidelines 1.0 (WCAG) priority 1 guidelines. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -417,7 +417,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property first must be set to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
- Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -541,7 +541,7 @@
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control and set the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to specify the value that starts the numbering of list items in the <xref:System.Web.UI.WebControls.BulletedList> control. The value that starts the numbering of the list items changes based on the value that the user enters in the text box.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[BulletedListFirstBulletNumber#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListFirstBulletNumber/CS/firstbulletnumbercs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[BulletedListFirstBulletNumber#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListFirstBulletNumber/VB/firstbulletnumbervb.aspx#1)]  -->  
@@ -574,7 +574,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in the <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, you must first set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.BulletedList.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -955,9 +955,9 @@
  If the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property is not set, the browser or window with focus refreshes when the hyperlink is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.BulletedList> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.BulletedList> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/exc57y7e.aspx).  
 >   
->  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to target another window. For more information, see [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/ms228004.aspx).  
   
  The value of this property is stored in view state.  
   

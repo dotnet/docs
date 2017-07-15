@@ -34,7 +34,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an XML element.  See [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec) and the Remarks section on this page for usage information and examples.</summary>
+    <summary>Represents an XML element.  See [XElement Class Overview](https://msdn.microsoft.com/library/bb387085.aspx) and the Remarks section on this page for usage information and examples.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +43,7 @@
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml.Linq/XLinq.cs#3367036406d1344a). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](http://msdn.microsoft.com/library/d35180fe-7016-4895-9bfc-ba1e3f7875ec) for other usage information.  
+ This class represents an XML element, the fundamental XML construct.  See [XElement Class Overview](https://msdn.microsoft.com/library/bb387085.aspx) for other usage information.  
   
  An element has an <xref:System.Xml.Linq.XName>, optionally one or more attributes, and can optionally contain content (for more information, see <xref:System.Xml.Linq.XContainer.Nodes%2A>).  
   
@@ -57,11 +57,11 @@
   
 -   <xref:System.Xml.Linq.XText>  
   
- For details about the valid content of an <xref:System.Xml.Linq.XElement>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XElement>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  <xref:System.Xml.Linq.XElement> derives from <xref:System.Xml.Linq.XContainer>, which derives from <xref:System.Xml.Linq.XNode>.  
   
- Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
+ Some <xref:System.Xml.Linq.XElement> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](https://msdn.microsoft.com/library/bb669107.aspx).  
   
    
   
@@ -121,7 +121,7 @@ Console.WriteLine(xmlTree2)
 </Root>  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
 ```csharp  
   
@@ -198,11 +198,11 @@ End Module
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
   
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
    
   
@@ -386,7 +386,7 @@ xmlTree = treeClone: False
 ## Remarks  
  This constructor creates an element with no content and no attributes.  
   
- There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>. When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>. When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
    
   
@@ -412,7 +412,7 @@ Console.WriteLine(el)
 <Root />  
 ```  
   
- The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following example creates an element in a namespace with no content. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
 ```  
   
@@ -574,9 +574,9 @@ Console.WriteLine(xse)
   
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
   
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -898,9 +898,9 @@ Console.WriteLine(root)
   
  There is an implicit conversion from string to <xref:System.Xml.Linq.XName>. Typical use of this constructor is to specify a string as the parameter instead of creating a new <xref:System.Xml.Linq.XName>.  
   
- When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ When creating an element in a namespace, typical use is to use the addition operator overload with an <xref:System.Xml.Linq.XNamespace> and a string to create an <xref:System.Xml.Linq.XName>. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
- For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this constructor, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -1440,7 +1440,7 @@ Console.WriteLine(att)
 Att="attribute content"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
 ```csharp  
   
@@ -1571,7 +1571,7 @@ Next
 Att2="content2"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
 ```csharp  
   
@@ -1693,7 +1693,7 @@ Next
 Att1="content1"  
 ```  
   
- The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ The following is the same example, but in this case the XML is in a namespace. For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
 ```csharp  
   
@@ -3045,7 +3045,7 @@ End Using
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
   
@@ -3234,7 +3234,7 @@ Root                1    2
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  Use <xref:System.Xml.Linq.XElement.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
   
@@ -3310,7 +3310,7 @@ Count of white space nodes (preserving whitespace): 3
   
  The following example loads the base URI and line information as it loads the file. It then prints the base URI and the line information.  
   
- This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348).  
+ This example uses the following resource file: [Sample XML File: Typical Purchase Order (LINQ to XML)](https://msdn.microsoft.com/library/bb387012.aspx).  
   
 ```csharp  
   
@@ -4747,7 +4747,7 @@ Element
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of the <xref:System.Xml.Linq.XElement.Parse%2A> method that takes <xref:System.Xml.Linq.LoadOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
@@ -4823,7 +4823,7 @@ Console.WriteLine(xmlTree)
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  Setting <xref:System.Xml.Linq.LoadOptions.SetBaseUri> will have no effect when parsing from a <xref:System.String>.  
   
@@ -5130,7 +5130,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -5245,7 +5245,7 @@ Console.WriteLine(xmlTree)
   
  This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -5439,7 +5439,7 @@ Console.WriteLine(root)
   
  This method uses snapshot semantics—that is, it creates a separate copy of the new content before replacing the contents of the current element with the new content. This means that you can query the contents of the current element and use the results of the query as the specified new content.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -5526,7 +5526,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -5599,7 +5599,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method first removes existing attributes. It then adds the specified `content`.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -5680,7 +5680,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method first removes existing attributes. It then adds the specified `content`.  
   
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
  This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
   
@@ -5803,7 +5803,7 @@ Console.WriteLine(root)
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that white space will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -5875,7 +5875,7 @@ End Using
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space nodes in the XML tree will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XElement.Save%2A> that allows you to specify <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -6075,7 +6075,7 @@ Console.WriteLine(sb.ToString())
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -6172,7 +6172,7 @@ End Using
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XElement.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -6345,7 +6345,7 @@ Console.WriteLine(str)
   
  The value is assigned to the attribute with the specified name. If no attribute with the specified name exists, a new attribute is added. If the value is `null`, the attribute with the specified name, if any, is deleted.  
   
- For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
+ For more information, see [Maintaining Name/Value Pairs](https://msdn.microsoft.com/library/bb675200.aspx).  
   
    
   
@@ -6448,7 +6448,7 @@ Console.WriteLine(root)
   
  This method does not add child nodes or attributes to the specified child element. This method throws an exception if any object that derives from <xref:System.Xml.Linq.XObject> is passed as `value`.  
   
- For more information, see [Maintaining Name/Value Pairs](http://msdn.microsoft.com/library/fe9798bf-b5e2-4a3c-a86c-7f8638912691).  
+ For more information, see [Maintaining Name/Value Pairs](https://msdn.microsoft.com/library/bb675200.aspx).  
   
    
   
@@ -6626,7 +6626,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
   
- This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](https://msdn.microsoft.com/library/bb675172.aspx).  
   
  ]]></format>
         </remarks>
@@ -6666,7 +6666,7 @@ Console.WriteLine(root)
 ## Remarks  
  This method is part of implementation of the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
   
- This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ This method is used internally for serializing object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](https://msdn.microsoft.com/library/bb675172.aspx).  
   
  ]]></format>
         </remarks>
@@ -6704,7 +6704,7 @@ Console.WriteLine(root)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used internally for marshaling object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](http://msdn.microsoft.com/library/443d7904-a6f0-450a-b1a4-5d7ed869d1d5).  
+ This method is used internally for marshaling object graphs that contain LINQ to XML objects. For an example of serializing an object graph that contains LINQ to XML objects, see [Serializing Object Graphs that Contain XElement Objects](https://msdn.microsoft.com/library/bb675172.aspx).  
   
  ]]></format>
         </remarks>

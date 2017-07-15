@@ -52,5 +52,5 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
  <xref:System.Windows.Forms.ListViewInsertionMark>   
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)   
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)   
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)   
+ [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/library/06da8ztk.aspx)   
  [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](../../../../docs/framework/winforms/advanced/walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md)

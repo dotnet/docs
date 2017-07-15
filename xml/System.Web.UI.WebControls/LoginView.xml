@@ -54,7 +54,7 @@
  The <xref:System.Web.UI.WebControls.LoginView> control displays different Web site content templates (or "views") for different users, based on whether the user is authenticated and, if so, which Web site roles he or she belongs to.  
   
 > [!NOTE]
->  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+>  If you are not familiar with the set of login controls available in ASP.NET, see [ASP.NET Login Controls Overview](http://msdn.microsoft.com/library/ac032230-6469-4b03-b68d-03ef2643a24d) before continuing. For a list of other topics related to login controls and membership, see [Managing Users by Using Membership](https://msdn.microsoft.com/library/tw292whz.aspx).  
   
  The template stored in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property is displayed to any visitor to the Web site who has not logged in. Once a user is logged in, the site displays either a template associated with one of the user's roles in the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property or the default template specified in the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property.  
   
@@ -81,7 +81,7 @@
 |Set|Not set|Set|If the user is logged in, displays the first template in the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> collection that matches one of the user's roles. If no match is found, displays the template specified in the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property. If the user is not logged in, nothing is displayed.|  
 |Not set|Set|Set|If the user is logged in, displays the first template in the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> collection that matches one of the user's roles. If no match is found, nothing is displayed. If the user is not logged in, displays the template specified in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property.|  
   
- The <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> and <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> can be used with any authentication scheme that sets the <xref:System.Security.Principal.IIdentity.Name%2A> property of the <xref:System.Web.UI.Page> object's <xref:System.Web.UI.Page.User%2A> property. You must configure role management to use the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property to define templates base on the user's role on the Web site. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ The <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> and <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> can be used with any authentication scheme that sets the <xref:System.Security.Principal.IIdentity.Name%2A> property of the <xref:System.Web.UI.Page> object's <xref:System.Web.UI.Page.User%2A> property. You must configure role management to use the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property to define templates base on the user's role on the Web site. For more information, see [Understanding Role Management](https://msdn.microsoft.com/library/5k850zwb.aspx).  
   
  The <xref:System.Web.UI.Control.Focus%2A> method does not set the initial focus of the Web page to the <xref:System.Web.UI.WebControls.LoginView> control, or any of its child controls. Controls contained in the <xref:System.Web.UI.WebControls.LoginView> control are created after the <xref:System.Web.UI.Control.PreRender> event. To set the focus to a child control contained by the <xref:System.Web.UI.WebControls.LoginView>, handle the `On_PreRender` and call its <xref:System.Web.UI.Control.Focus%2A> method.  You can also use the <xref:System.Web.UI.WebControls.LoginView.ViewChanging> and <xref:System.Web.UI.WebControls.LoginView.ViewChanged> events to programmatically access the controls in the <xref:System.Web.UI.WebControls.LoginView> control templates.  
   
@@ -391,7 +391,7 @@
   
 -   The user does not belong to a role group defined in the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property.  
   
- The <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property specifies a default template for authenticated Web site users. If you have not configured role management, the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> is the only template available for authenticated users. For more information about configuring role management, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ The <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property specifies a default template for authenticated Web site users. If you have not configured role management, the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> is the only template available for authenticated users. For more information about configuring role management, see [Understanding Role Management](https://msdn.microsoft.com/library/5k850zwb.aspx).  
   
    
   
@@ -429,7 +429,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.LoginView.OnInit%2A> method performs initialization for the <xref:System.Web.UI.WebControls.LoginView> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.LoginView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -462,9 +462,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.LoginView.OnPreRender%2A> method is called during the <xref:System.Web.UI.Control.PreRender> event to determine which content template to display to the user. If the <xref:System.Security.Principal.IIdentity.Name%2A> property of the <xref:System.Web.UI.Page><xref:System.Web.UI.Page.User%2A> property is `null`, the template specified in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property is displayed; otherwise, the template associated with the user's role is displayed. If the user does not belong to a defined role group, or if you have not configured role management, the <xref:System.Web.UI.WebControls.LoginView> control displays the template specified in the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property. For more information about configuring role management, see [Role Management Providers](http://msdn.microsoft.com/library/71ddd651-5f91-471b-ad9f-61249b0bf0d5).  
+ The <xref:System.Web.UI.WebControls.LoginView.OnPreRender%2A> method is called during the <xref:System.Web.UI.Control.PreRender> event to determine which content template to display to the user. If the <xref:System.Security.Principal.IIdentity.Name%2A> property of the <xref:System.Web.UI.Page><xref:System.Web.UI.Page.User%2A> property is `null`, the template specified in the <xref:System.Web.UI.WebControls.LoginView.AnonymousTemplate%2A> property is displayed; otherwise, the template associated with the user's role is displayed. If the user does not belong to a defined role group, or if you have not configured role management, the <xref:System.Web.UI.WebControls.LoginView> control displays the template specified in the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property. For more information about configuring role management, see [Role Management Providers](https://msdn.microsoft.com/library/6b241xwt.aspx).  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.LoginView.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -501,7 +501,7 @@
   
  Use the <xref:System.Web.UI.WebControls.LoginView.OnViewChanged%2A> method to perform any processing, such as data binding, necessary to initialize the controls on the new view.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.LoginView.OnViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -538,7 +538,7 @@
   
  Use the <xref:System.Web.UI.WebControls.LoginView.OnViewChanging%2A> method to perform any necessary processing, such as saving control information, before the controls are removed.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.LoginView.OnViewChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -616,9 +616,9 @@
   
  If a logged-in user does not belong to any role contained in the role-group collection, the site displays the content template specified in the <xref:System.Web.UI.WebControls.LoginView.LoggedInTemplate%2A> property. Anonymous users are never shown any template contained in the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> collection.  
   
- You must configure role management to use the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property to define templates based on the user's role on the Web site. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+ You must configure role management to use the <xref:System.Web.UI.WebControls.LoginView.RoleGroups%2A> property to define templates based on the user's role on the Web site. For more information, see [Understanding Role Management](https://msdn.microsoft.com/library/5k850zwb.aspx).  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
    
   
@@ -732,7 +732,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event is only raised if the login status for a user changes during a postback to the page. The <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event will not be raised if a user logs in using the <xref:System.Web.UI.WebControls.Login> control, or if the user logs out using the <xref:System.Web.UI.WebControls.LoginStatus> control. The <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event will also not occur if a user is logged in or out followed by a redirect. An example of when the <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event will occur is when a user is logged out by calling the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method without being redirected to another page. During the next postback to the page, the <xref:System.Web.UI.WebControls.LoginView> control will detect the change in the login status for the user, and then raise the <xref:System.Web.UI.WebControls.LoginView.ViewChanged> event.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -763,7 +763,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event is only raised if the login status for a user changes during a postback to the page. The <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event will not be raised if a user logs in using the <xref:System.Web.UI.WebControls.Login> control, or if the user logs out using the <xref:System.Web.UI.WebControls.LoginStatus> control. The <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event will also not occur if a user is logged in or out followed by a redirect. An example of when the <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event will occur is when a user is logged out by calling the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method without being redirected to another page. During the next postback to the page, the <xref:System.Web.UI.WebControls.LoginView> control will detect the change in the login status for the user, and then raise the <xref:System.Web.UI.WebControls.LoginView.ViewChanging> event.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>

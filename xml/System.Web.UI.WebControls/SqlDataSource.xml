@@ -60,26 +60,26 @@
   
 <a name="data_connections"></a>   
 ## Data Connections  
- To connect to a database, you must set the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property to a valid connection string. The <xref:System.Web.UI.WebControls.SqlDataSource> can support any SQL relational database that can be connected to using an ADO.NET provider, such as the `SqlClient`, `OleDb`, `Odbc`, or `OracleClient` provider. For information about how to secure connection strings, see [How To: Secure Connection Strings when Using Data Source Controls](http://msdn.microsoft.com/library/942f6dcb-d278-4bec-8403-60eede9bcd62).  
+ To connect to a database, you must set the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property to a valid connection string. The <xref:System.Web.UI.WebControls.SqlDataSource> can support any SQL relational database that can be connected to using an ADO.NET provider, such as the `SqlClient`, `OleDb`, `Odbc`, or `OracleClient` provider. For information about how to secure connection strings, see [How To: Secure Connection Strings when Using Data Source Controls](https://msdn.microsoft.com/library/ms178372.aspx).  
   
- To retrieve data from an underlying database, set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property with an SQL query. If the database that the <xref:System.Web.UI.WebControls.SqlDataSource> is associated with supports stored procedures, you can set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property to the name of a stored procedure. The SQL query that you specify can also be a parameterized query. You can add <xref:System.Web.UI.WebControls.Parameter> objects that are associated with a parameterized query to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. For more information about parameterized SQL queries and their syntax, see [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f).  
+ To retrieve data from an underlying database, set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property with an SQL query. If the database that the <xref:System.Web.UI.WebControls.SqlDataSource> is associated with supports stored procedures, you can set the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property to the name of a stored procedure. The SQL query that you specify can also be a parameterized query. You can add <xref:System.Web.UI.WebControls.Parameter> objects that are associated with a parameterized query to the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection. For more information about parameterized SQL queries and their syntax, see [Using Parameters with Data Source Controls for Filtering](https://msdn.microsoft.com/library/xt50s8kz.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource> control retrieves data whenever the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is called. This method provides programmatic access to the method that is specified by <xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A> property. The <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is automatically called by controls that are bound to the <xref:System.Web.UI.WebControls.SqlDataSource> when their <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method is called. If you set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID%2A> property of a data-bound control, the control automatically binds to data from the data source, as required. Setting the `DataSourceID` property is the recommended method for binding an <xref:System.Web.UI.WebControls.ObjectDataSource> control to a data-bound control. Alternatively, you can use the `DataSource` property, but then you must explicitly call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method of the data-bound control. Some examples of data-bound controls that can use <xref:System.Web.UI.WebControls.SqlDataSource> are <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.DataList>, and <xref:System.Web.UI.WebControls.DropDownList>. You can call the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method programmatically at any time to retrieve data from the underlying database.  
   
- In declarative and programmatic ASP.NET scenarios, you can set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the data-bound control to the ID of the <xref:System.Web.UI.WebControls.SqlDataSource> control. You can also assign an instance of the <xref:System.Web.UI.WebControls.SqlDataSource> class to the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the data-bound control. For more information about binding data-bound control to data source controls, see [ASP.NET Data Access Options](http://msdn.microsoft.com/en-us/a5ff235e-397f-4bbe-9bfe-2720b6e7ab9d).  
+ In declarative and programmatic ASP.NET scenarios, you can set the <xref:System.Web.UI.WebControls.DataBoundControl.DataSourceID%2A> property of the data-bound control to the ID of the <xref:System.Web.UI.WebControls.SqlDataSource> control. You can also assign an instance of the <xref:System.Web.UI.WebControls.SqlDataSource> class to the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the data-bound control. For more information about binding data-bound control to data source controls, see [ASP.NET Data Access Options](https://msdn.microsoft.com/library/ms178359(v=vs.110).aspx).  
   
 <a name="performing_data_operations"></a>   
 ## Performing Data Operations  
  Depending on the capabilities of the underlying database product and the configuration of the instance of the <xref:System.Web.UI.WebControls.SqlDataSource> class, you can perform data operations, such as updates, inserts, and deletes. To perform these data operations, set the appropriate command text and any associated parameters for the operation that you want to perform. For example, for an update operation, set the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property to an SQL string or the name of a stored procedure and add any required parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection. The update is performed when the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method is called, either explicitly by your code or automatically by a data-bound control. The same general pattern is followed for <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> operations.  
   
- The SQL queries and commands that you use in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A>, and <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> properties can be parameterized. This means that the query or command can use placeholders instead of literal values and bind the placeholders to application or user-defined variables. You can bind parameters in SQL queries to Session variables, values that are passed on the query string for a Web Forms page, the property values of other server controls, and more. For more information about how to use parameters in SQL queries with the <xref:System.Web.UI.WebControls.SqlDataSource>, see [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f) and [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ The SQL queries and commands that you use in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A>, and <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> properties can be parameterized. This means that the query or command can use placeholders instead of literal values and bind the placeholders to application or user-defined variables. You can bind parameters in SQL queries to Session variables, values that are passed on the query string for a Web Forms page, the property values of other server controls, and more. For more information about how to use parameters in SQL queries with the <xref:System.Web.UI.WebControls.SqlDataSource>, see [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f) and [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
 > [!NOTE]
 >  By default, if one of the parameters is `null` when you execute a `Select` command, no data will be returned and no exception will be thrown. You can change this behavior by setting the <xref:System.Web.UI.WebControls.SqlDataSource.CancelSelectOnNullParameter%2A> property to `false`.  
   
 <a name="data_provider"></a>   
 ## Data Provider  
- By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control works with the .NET Framework Data Provider for SQL Server, but <xref:System.Web.UI.WebControls.SqlDataSource> is not Microsoft SQL Server–specific. You can connect the <xref:System.Web.UI.WebControls.SqlDataSource> control with any database product for which there is a managed ADO.NET provider. When used with the <xref:System.Data.OleDb?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with any OLE DB-compliant database. When used with the <xref:System.Data.Odbc?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can be used with any ODBC driver and database, including IBM DB2, MySQL, and PostgreSQL. When used with the <xref:System.Data.OracleClient?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with Oracle 8.1.7 databases and later. The list of allowable providers is registered in the `DbProviderFactories` section of the configuration file, either in the Machine.config or Web.config file. For more information, see [Selecting Data Using the SqlDataSource Control](http://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
+ By default, the <xref:System.Web.UI.WebControls.SqlDataSource> control works with the .NET Framework Data Provider for SQL Server, but <xref:System.Web.UI.WebControls.SqlDataSource> is not Microsoft SQL Server–specific. You can connect the <xref:System.Web.UI.WebControls.SqlDataSource> control with any database product for which there is a managed ADO.NET provider. When used with the <xref:System.Data.OleDb?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with any OLE DB-compliant database. When used with the <xref:System.Data.Odbc?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can be used with any ODBC driver and database, including IBM DB2, MySQL, and PostgreSQL. When used with the <xref:System.Data.OracleClient?displayProperty=fullName> provider, the <xref:System.Web.UI.WebControls.SqlDataSource> can work with Oracle 8.1.7 databases and later. The list of allowable providers is registered in the `DbProviderFactories` section of the configuration file, either in the Machine.config or Web.config file. For more information, see [Selecting Data Using the SqlDataSource Control](https://msdn.microsoft.com/library/w1kdt8w2.aspx).  
   
 <a name="caching"></a>   
 ## Caching  
@@ -570,7 +570,7 @@
 -   The fourth code example demonstrates how to display and update data in a <xref:System.Web.UI.WebControls.DropDownList> control.  
   
     > [!NOTE]
-    >  These examples show how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
+    >  These examples show how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](https://msdn.microsoft.com/library/wzabh8c4.aspx).  
   
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control declaratively to retrieve data from SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control.  
   
@@ -590,7 +590,7 @@
  The following code example demonstrates a common display and update scenario with the <xref:System.Web.UI.WebControls.DropDownList> and <xref:System.Web.UI.WebControls.TextBox> controls. The <xref:System.Web.UI.WebControls.DropDownList> control does not automatically add update parameters to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection nor call the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method, so you must do so. The update parameters are specified declaratively and you can add an event handler to perform the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> operation when an event is raised.  
   
 > [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example includes a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
@@ -635,7 +635,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax for `selectCommand` depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or the <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax for `selectCommand` depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or the <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> value can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -676,7 +676,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax of `selectCommand` depends on the current ADO.NET provider being used, which is identified by the `providerName` parameter. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or the <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of `selectCommand` depends on the current ADO.NET provider being used, which is identified by the `providerName` parameter. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or the <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -920,7 +920,7 @@
  If you change the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property, the <xref:System.Web.UI.IDataSource.DataSourceChanged> event is raised, causing any controls that are bound to the <xref:System.Web.UI.WebControls.SqlDataSource> control to rebind.  
   
 > [!IMPORTANT]
->  For information about storing a connection string, see [How To: Secure Connection Strings when Using Data Source Controls](http://msdn.microsoft.com/library/942f6dcb-d278-4bec-8403-60eede9bcd62).  
+>  For information about storing a connection string, see [How To: Secure Connection Strings when Using Data Source Controls](https://msdn.microsoft.com/library/ms178372.aspx).  
   
    
   
@@ -1092,7 +1092,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> represents an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> method.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the syntax of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the syntax of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the syntax of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the syntax of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteCommand%2A> property can be an SQL string or the name of a stored procedure, if the database supports stored procedures.  
   
@@ -1163,7 +1163,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Deleted> event to examine the values of output parameters after a delete operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -1209,12 +1209,12 @@
   
  If the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions.CompareAllValues> value, the parameters are created for both the old and new values of the data. The parameters for the old values are named according to the <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString%2A> property.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.DeleteParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Deleting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Deleting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -1250,7 +1250,7 @@
   
  The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -1378,7 +1378,7 @@
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.Filtering?displayProperty=fullName> event delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Filtering?displayProperty=fullName> event of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -1422,7 +1422,7 @@
  The <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.FilterParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -1548,7 +1548,7 @@
  The <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Insert%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -1556,10 +1556,10 @@
  The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple Web Forms page. The current data in the Data table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values in the <xref:System.Web.UI.WebControls.TextBox> controls, and then clicking the **Insert** button. When the **Insert** button is clicked, the specified values are inserted into the database, and then the <xref:System.Web.UI.WebControls.DropDownList> is refreshed.  
   
 > [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example includes a text box that accepts user input, which is a potential security threat and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
 > [!NOTE]
->  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
+>  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](https://msdn.microsoft.com/library/wzabh8c4.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
@@ -1595,7 +1595,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> represents either an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A> method.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -1605,7 +1605,7 @@
 >  For security purposes, the <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> property is not stored is view state. Because it is possible to decode the contents of view state on the client, storing sensitive information about the database structure in view state could result in an information disclosure vulnerability.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -1613,12 +1613,12 @@
  This section contains two code examples. The first code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple Web Forms page. The second code example demonstrates how to retrieve data from Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control and how to use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row into the <xref:System.Web.UI.WebControls.GridView> control and as a form to insert new records.  
   
 > [!NOTE]
->  These examples show how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
+>  These examples show how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](https://msdn.microsoft.com/library/wzabh8c4.aspx).  
   
  The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple Web Forms page. The current data in the Data table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values into the <xref:System.Web.UI.WebControls.TextBox> controls, and then clicking the **Insert** button. When the **Insert** button is clicked, the specified values are inserted into the database, and the <xref:System.Web.UI.WebControls.DropDownList> control is refreshed.  
   
 > [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
@@ -1700,7 +1700,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserted> event to examine the values of output parameters after an insert operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -1708,7 +1708,7 @@
  The following code example demonstrates how to retrieve data from Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control and how to use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
   
 > [!NOTE]
->  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
+>  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](https://msdn.microsoft.com/library/wzabh8c4.aspx).  
   
  Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control, and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensures that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
   
@@ -1743,7 +1743,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the insert operation. The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> property. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -1751,7 +1751,7 @@
  The following code example demonstrates how to retrieve data from Microsoft SQL Server and display it in a <xref:System.Web.UI.WebControls.GridView> control and how to use a <xref:System.Web.UI.WebControls.DetailsView> control to see details of a selected row in the <xref:System.Web.UI.WebControls.GridView> and as a form to insert new records.  
   
 > [!NOTE]
->  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
+>  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](https://msdn.microsoft.com/library/wzabh8c4.aspx).  
   
  Initially, the data is displayed in the <xref:System.Web.UI.WebControls.GridView> control, and the selected row of the <xref:System.Web.UI.WebControls.GridView> is also displayed in the <xref:System.Web.UI.WebControls.DetailsView> control. The <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls use different data source controls; the one that is associated with the <xref:System.Web.UI.WebControls.DetailsView> has the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> and <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> properties, which ensures that the selected row of the <xref:System.Web.UI.WebControls.GridView> is displayed.  
   
@@ -1803,10 +1803,10 @@
   
  If the <xref:System.Web.UI.WebControls.SqlDataSource.InsertCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -1814,10 +1814,10 @@
  The following code example demonstrates how to insert data into a database using the <xref:System.Web.UI.WebControls.SqlDataSource> control and a simple Web Forms page. The current data in the Data table is displayed in the <xref:System.Web.UI.WebControls.DropDownList> control. You can add new records by entering values in the <xref:System.Web.UI.WebControls.TextBox> controls, and then clicking the **Insert** button. When the **Insert** button is clicked, the specified values are inserted into the database, and the <xref:System.Web.UI.WebControls.DropDownList> control is refreshed.  
   
 > [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
 > [!NOTE]
->  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc).  
+>  This example shows how to use declarative syntax for data access. For information about how to access data by using code instead of markup, see [Accessing data in Visual Studio](https://msdn.microsoft.com/library/wzabh8c4.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/CS/sql24cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_24sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_24sql/VB/sql24vb.aspx#1)]  -->  
@@ -1955,7 +1955,7 @@
   
 -   The <xref:System.Data.OracleClient?displayProperty=fullName> provider is the .NET Framework Data Provider for Oracle.  
   
- The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is never set to the name of an unmanaged ADO.NET provider, such as `MSDAORA`. For more information, see [Selecting Data Using the SqlDataSource Control](http://msdn.microsoft.com/library/44623286-ff5a-4148-8a3c-85c56ed545eb).  
+ The <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property is never set to the name of an unmanaged ADO.NET provider, such as `MSDAORA`. For more information, see [Selecting Data Using the SqlDataSource Control](https://msdn.microsoft.com/library/w1kdt8w2.aspx).  
   
  If you change the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property, the <xref:System.Web.UI.IDataSource.DataSourceChanged> event is raised, causing any controls that are bound to the <xref:System.Web.UI.WebControls.SqlDataSource> to rebind.  
   
@@ -2040,7 +2040,7 @@
  The <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Select%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control. To perform a data retrieval operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> builds a <xref:System.Data.Common.DbCommand> object by using the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> values, and then executes the <xref:System.Data.Common.DbCommand> against the underlying database.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -2086,7 +2086,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property represents an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method to retrieve data from a SQL Server database. If you use an asterisk (*) in the Select command to select all columns, and if you use automatic code generation to perform update or delete operations, make sure that no columns have spaces in their names.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -2096,7 +2096,7 @@
 >  For security purposes, the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property is not stored is view state. Because it is possible to decode the contents of view state on the client, storing sensitive information about the database structure in view state could result in an information disclosure vulnerability.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -2177,7 +2177,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Selected> event to examine the values of output parameters after a data retrieval operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -2203,7 +2203,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Selecting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the select operation. The select arguments are available from the <xref:System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -2244,12 +2244,12 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.SqlDataSource.SelectCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.SelectParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Selecting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Selecting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -2397,7 +2397,7 @@
  The <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method delegates to the <xref:System.Web.UI.WebControls.SqlDataSourceView.Update%2A> method of the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control. To perform an update operation, the <xref:System.Web.UI.WebControls.SqlDataSourceView> builds a <xref:System.Data.Common.DbCommand> object using the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> text and any associated <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> properties, and then executes the <xref:System.Data.Common.DbCommand> object against the underlying database.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -2445,7 +2445,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> represents an SQL query or the name of a stored procedure, and is used by the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method.  
   
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -2455,7 +2455,7 @@
 >  For security purposes, the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> property is not stored is view state. Because it is possible to decode the contents of view state on the client, storing sensitive information about the database structure in view state could result in an information disclosure vulnerability.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -2526,7 +2526,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Updated> event to examine the values of output parameters after an update operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2577,12 +2577,12 @@
   
  Parameter names might be affected by the <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString%2A> property, specifically if the name identifies a primary key, such as a key specified using the `DataKeyNames` property of the data-bound control, or in delete and update scenarios where the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions.CompareAllValues> value and a set of `oldValues` are passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection.  
   
- The order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection might be important, depending on the ADO.NET provider. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ The order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection might be important, depending on the ADO.NET provider. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information about parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> property retrieves the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> property that is contained by the <xref:System.Web.UI.WebControls.SqlDataSourceView> object that is associated with the <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Filtering> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   
@@ -2590,7 +2590,7 @@
  The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.SqlDataSource> control to display data in a <xref:System.Web.UI.WebControls.DropDownList> control and update data when the **Submit** button is clicked. The <xref:System.Web.UI.WebControls.SqlDataSource.UpdateCommand%2A> is set with a parameterized SQL statement and two <xref:System.Web.UI.WebControls.ControlParameter> parameters are added to the <xref:System.Web.UI.WebControls.SqlDataSource.UpdateParameters%2A> collection. When the **Submit** button is clicked, the <xref:System.Web.UI.WebControls.Button.OnClick%2A> event is handled to call the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> method explicitly.  
   
 > [!IMPORTANT]
->  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example includes a text box that accepts user input, which is a potential security threat, and values are inserted into parameters without validation, which is also a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Inserting> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/CS/sql8cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_8sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_8sql/VB/sql8vb.aspx#1)]  -->  
@@ -2619,10 +2619,10 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the update operation. The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot directly cancel the <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A> database operation by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
 > [!IMPORTANT]
->  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  Values are inserted into parameters without validation, which is a potential security threat. Use the <xref:System.Web.UI.WebControls.SqlDataSource.Updating> event to validate parameter values before executing the query. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
    
   

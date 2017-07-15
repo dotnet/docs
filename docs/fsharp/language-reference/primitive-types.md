@@ -41,7 +41,7 @@ The following table summarizes the properties of the primitive F# types.
 |`float, double`|`System.Double`|A 64-bit floating point type.|
 
 >[!NOTE]
-You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) type. `bigint` is not considered a primitive type; it is an abbreviation for `System.Numerics.BigInteger`.
+You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.bigint-type-abbreviation-%5bfsharp%5d) type. `bigint` is not considered a primitive type; it is an abbreviation for `System.Numerics.BigInteger`.
 
 ## See Also
 [F# Language Reference](index.md)

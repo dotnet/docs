@@ -256,7 +256,7 @@
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -315,7 +315,7 @@
 > [!IMPORTANT]
 >  If more than one event handler is registered for this event, the event handlersarecalled in order until an event handler returns a value that isn't `null`. Subsequent event handlers are ignored.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -3067,7 +3067,7 @@
   
  Do not make assumptions about the thread the event is raised on. The event can be raised on a different thread than the one that called the <xref:System.AppDomain.Unload%2A> method.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -5218,7 +5218,7 @@
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -5260,7 +5260,7 @@
   
  For this event, the <xref:System.ResolveEventArgs.Name%2A?displayProperty=fullName> property returns the assembly name before policy is applied.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -5386,7 +5386,7 @@
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -6114,7 +6114,7 @@
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -6184,7 +6184,7 @@
   
  To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
 ## Other Events for Unhandled Exceptions  
  For certain application models, the <xref:System.AppDomain.UnhandledException> event can be preempted by other events if the unhandled exception occurs in the main application thread.  

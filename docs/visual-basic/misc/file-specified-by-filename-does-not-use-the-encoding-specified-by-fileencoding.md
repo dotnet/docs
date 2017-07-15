@@ -38,7 +38,7 @@ An attempt has been made to read from a file, but the specified encoding is not 
 -   Check to make sure you are supplying the correct file encoding.  
   
 ## See Also  
- [My.Computer.FileSystem.ReadAllText Method](http://msdn.microsoft.com/en-us/3a7ac8be-fb1d-4087-bc65-167d6754d57f)   
+ [My.Computer.FileSystem.ReadAllText Method](https://msdn.microsoft.com/library/ks09bsaw(v=vs.90).aspx)   
  [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)   
  [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)   
  [How to: Read from Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)

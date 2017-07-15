@@ -40,7 +40,7 @@
   
   
   
- The following example shows a page that is named ProductLinks.aspx, which contains hyperlinks that link to the Product.aspx page by using route URLs. These hyperlinks use `RouteUrl` expressions to create route URLs. The first link does not include a `culture` route parameter. Therefore, the default value of "en" that is defined in the <xref:System.Web.UI.WebControls.RouteParameter> object for `@culture` query parameter will be used in the query. The second link provides a `culture` value of "fr", which causes the description to be displayed in French. For more information about how to use `RouteUrl` expressions, see [How to: Construct URLs from Routes](http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
+ The following example shows a page that is named ProductLinks.aspx, which contains hyperlinks that link to the Product.aspx page by using route URLs. These hyperlinks use `RouteUrl` expressions to create route URLs. The first link does not include a `culture` route parameter. Therefore, the default value of "en" that is defined in the <xref:System.Web.UI.WebControls.RouteParameter> object for `@culture` query parameter will be used in the query. The second link provides a `culture` value of "fr", which causes the description to be displayed in French. For more information about how to use `RouteUrl` expressions, see [How to: Construct URLs from Routes](https://msdn.microsoft.com/library/cc668176.aspx).  
   
   
   
@@ -56,9 +56,9 @@
 |---------------|----------|-----------------|  
 |`994`|`LL Bottom Bracket`|`Acier chromé.`|  
   
- To run this example, add the two .aspx pages and the code in the Global.asax file to an ASP.NET Web site or Web application that defines a connection string named `AdventureWorksLTConnectionString` for the AdventureWorksLT database. For information about how to set up a connection to the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](http://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
+ To run this example, add the two .aspx pages and the code in the Global.asax file to an ASP.NET Web site or Web application that defines a connection string named `AdventureWorksLTConnectionString` for the AdventureWorksLT database. For information about how to set up a connection to the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](https://msdn.microsoft.com/library/dd410121.aspx).  
   
- For more information about ASP.NET routing, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ For more information about ASP.NET routing, see [ASP.NET Routing](https://msdn.microsoft.com/library/cc668201.aspx).  
   
  ]]></format>
     </remarks>

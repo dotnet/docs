@@ -98,7 +98,7 @@
 > [!NOTE]
 >  When the <xref:System.Web.UI.WebControls.WizardStepBase.AllowReturn%2A> property is set to `false`, but the <xref:System.Web.UI.WebControls.Wizard.DisplaySideBar%2A> property of the parent control of <xref:System.Web.UI.WebControls.WizardStepBase> is set to `true`, clicking on a button in the sidebar area has no effect. The sidebar area is generally displayed to provide nonlinear navigation, so if you are not using the functionality of nonlinear navigation, you may want to set the <xref:System.Web.UI.WebControls.Wizard.DisplaySideBar%2A> property to `false`.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
    
   
@@ -364,7 +364,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property to display a user-friendly title for a step in a <xref:System.Web.UI.WebControls.Wizard> control when the sidebar feature is enabled. If the <xref:System.Web.UI.WebControls.WizardStepBase.Title%2A> property is not set and the sidebar feature is enabled, the value of the <xref:System.Web.UI.WebControls.WizardStepBase.ID%2A> property is displayed for the sidebar button.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   

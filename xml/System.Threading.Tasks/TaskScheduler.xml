@@ -178,7 +178,7 @@
 ## Remarks  
  When not called from within a task, <xref:System.Threading.Tasks.TaskScheduler.Current%2A> will return the <xref:System.Threading.Tasks.TaskScheduler.Default%2A> scheduler.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -217,7 +217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -259,7 +259,7 @@
 ## Remarks  
  All <xref:System.Threading.Tasks.Task> instances queued to the returned scheduler will be executed through a call to the <xref:System.Threading.SynchronizationContext.Post%2A> method on that context.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -372,7 +372,7 @@ protected override IEnumerable<Task> GetScheduledTasks()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -411,7 +411,7 @@ protected override IEnumerable<Task> GetScheduledTasks()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -511,7 +511,7 @@ protected override IEnumerable<Task> GetScheduledTasks()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  This method may execute in a finally block; therefore it should return as quickly as possible so that any resources such as <xref:System.Threading.CancellationTokenRegistration> objects can be disposed of in a timely manner.  
   
@@ -621,7 +621,7 @@ protected override IEnumerable<Task> GetScheduledTasks()
   
  The derived scheduler is responsible for making sure that the calling thread is suitable for executing the given task as far as its own scheduling and execution policies are concerned.  
   
- For more information, see [Task Schedulers](http://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).  
+ For more information, see [Task Schedulers](https://msdn.microsoft.com/library/system.threading.tasks.taskscheduler(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>

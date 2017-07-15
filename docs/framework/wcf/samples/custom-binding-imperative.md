@@ -87,4 +87,4 @@ Press <ENTER> to terminate client.
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Binding\Custom\Imperative`  
   
 ## See Also  
- [Custom Binding](http://msdn.microsoft.com/en-us/657e8143-beb0-472d-9cfe-ed1a19c2ab08)
+ [Custom Binding](https://msdn.microsoft.com/library/ms751479(v=vs.90).aspx)

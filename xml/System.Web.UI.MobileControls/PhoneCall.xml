@@ -53,7 +53,7 @@
  The following code example demonstrates how to add several phone numbers to a <xref:System.Web.UI.MobileControls.Panel> on your page. One <xref:System.Web.UI.MobileControls.PhoneCall> control has an <xref:System.Web.UI.MobileControls.PhoneCall.AlternateUrl%2A> and the phone number appears as a link on devices that cannot make a phone call.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/k33801s3.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobilePhoneCallSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobilePhoneCallSample/cs/Default.aspx#1)]  -->  
   
@@ -133,7 +133,7 @@
  The following code example demonstrates how to add several phone numbers to a <xref:System.Web.UI.MobileControls.Panel> on your page, and shows two forms of <xref:System.Web.UI.MobileControls.PhoneCall.AlternateFormat%2A>.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/k33801s3.aspx).  
   
 <!-- TODO: review snippet reference  [!CODE [MobilePhoneCall#1](MobilePhoneCall#1)]  -->  
   
@@ -182,7 +182,7 @@
  This example shows how to add several phone numbers to a <xref:System.Web.UI.MobileControls.Panel> on your page. One <xref:System.Web.UI.MobileControls.PhoneCall> control has an <xref:System.Web.UI.MobileControls.PhoneCall.AlternateUrl%2A> for devices that cannot make a phone call.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information see [ASP.NET Web Forms Page Syntax Overview](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information see [ASP.NET Web Forms Page Syntax Overview](https://msdn.microsoft.com/library/k33801s3.aspx).  
   
 <!-- TODO: review snippet reference  [!CODE [MobilePhoneCall#1](MobilePhoneCall#1)]  -->  
   

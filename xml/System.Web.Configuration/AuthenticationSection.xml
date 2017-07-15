@@ -29,7 +29,7 @@
  The following configuration file example shows how to specify values declaratively for the `authentication` section.  
   
 > [!NOTE]
->  If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security, it is recommended the use of an external database to store the users' credentials. For more information about building secure ASP.NET applications search the Microsoft MSDN Web site (http://msdn.microsoft.com) for "Securing Your ASP.NET Application", and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication".  
+>  If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx). For scalability and better security, it is recommended the use of an external database to store the users' credentials. For more information about building secure ASP.NET applications search the Microsoft MSDN Web site (http://msdn.microsoft.com) for "Securing Your ASP.NET Application", and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication".  
   
 ```  
 <authentication mode="Forms">  

@@ -80,7 +80,7 @@
   
 -   You can store role information in a SQL Server database by using the <xref:System.Web.Security.SqlRoleProvider> class.  
   
--   If you have existing role information, or want to store role information in and retrieve role information from a data source other than Windows, an Authorization Store, or SQL Server, you can implement a custom role provider by creating a class that inherits the <xref:System.Web.Security.RoleProvider> abstract class. For more information, see [Implementing a Role Provider](http://msdn.microsoft.com/library/851671ce-bf9b-43f2-aba4-bc9d28b11c7d).  
+-   If you have existing role information, or want to store role information in and retrieve role information from a data source other than Windows, an Authorization Store, or SQL Server, you can implement a custom role provider by creating a class that inherits the <xref:System.Web.Security.RoleProvider> abstract class. For more information, see [Implementing a Role Provider](https://msdn.microsoft.com/library/8fw7xh74.aspx).  
   
  If a user's browser accepts cookies, you can store role information for that user in a cookie on the user's computer. On each page request, ASP.NET reads the role information for that user from the cookie. This can improve application performance by reducing the amount of communication required with the data source to retrieve role information. If the role information for a user is too long to store in a cookie, ASP.NET stores just the most recently used role information in the cookie and then looks up additional role information in the data source as required. If the user's browser does not support cookies or cookies are disabled, role information is not cached in a cookie.  
   
@@ -858,7 +858,7 @@
  The following code example creates a new role in the data source. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
@@ -903,7 +903,7 @@
  The following code example calls the <xref:System.Web.Security.Roles.DeleteCookie%2A> method to clear any cached role names when a user logs in. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/logincs.aspx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/loginvb.aspx#5)]  -->  
@@ -1123,7 +1123,7 @@
  The following code example uses the <xref:System.Web.Security.Roles.FindUsersInRole%2A> method to display role membership based on user input. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/FindUsersInRolecs.aspx#11)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/FindUsersInRolevb.aspx#11)]  -->  
@@ -1173,7 +1173,7 @@
  The following code example uses the <xref:System.Web.Security.Roles.GetAllRoles%2A> method to get the list of roles for an application and bind the results to a <xref:System.Web.UI.WebControls.GridView?displayProperty=fullName> control. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  
@@ -1815,7 +1815,7 @@
  The following code example uses the <xref:System.Web.Security.Roles.RoleExists%2A> method to determine whether a role name already exists before creating the role. For an example of a Web.config file that enables role management, see <xref:System.Web.Security.Roles>.  
   
 > [!IMPORTANT]
->  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/CS/createrolecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlRoleProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlRoleProvider/VB/createrolevb.aspx#1)]  -->  

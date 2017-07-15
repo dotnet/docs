@@ -42,5 +42,5 @@ An attempt has been made to open a file that is already open.
 -   Remove the redundant `FileOpen` statement from your code.  
   
 ## See Also  
- [NOT IN BUILD: FileOpen Function](http://msdn.microsoft.com/en-us/0f07e1df-d4ea-44a9-a21c-76aa2e242f81)   
+ [NOT IN BUILD: FileOpen Function](https://msdn.microsoft.com/library/afh37kh8(v=vs.90).aspx)   
  [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)

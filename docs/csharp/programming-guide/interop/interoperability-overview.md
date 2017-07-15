@@ -58,13 +58,13 @@ The topic describes methods to enable interoperability between C# managed code a
   
 2.  Add to the project a reference to the COM component or type library.  
   
-     When you add the reference, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds to the project a reference to the generated assembly.  
+     When you add the reference, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Tlbimp.exe (Type Library Importer)](https://docs.microsoft.com/dotnet/framework/tools/tlbimp-exe-type-library-importer), which takes a type library as input, to output a .NET Framework interop assembly. The assembly, also named a runtime callable wrapper (RCW), contains managed classes and interfaces that wrap the COM classes and interfaces that are in the type library. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds to the project a reference to the generated assembly.  
   
 3.  Create an instance of a class that is defined in the RCW. This, in turn, creates an instance of the COM object.  
   
 4.  Use the object just as you use other managed objects. When the object is reclaimed by garbage collection, the instance of the COM object is also released from memory.  
   
- For more information, see [Exposing COM Components to the .NET Framework](http://msdn.microsoft.com/library/e78b14f1-e487-43cd-9c6d-1a07483f1730).  
+ For more information, see [Exposing COM Components to the .NET Framework](https://docs.microsoft.com/dotnet/framework/interop/exposing-com-components).  
   
 ## Exposing C# to COM  
  COM clients can consume C# types that have been correctly exposed. The basic steps to expose C# types are as follows:  
@@ -75,14 +75,14 @@ The topic describes methods to enable interoperability between C# managed code a
   
 2.  Generate a COM type library and register it for COM usage.  
   
-     You can modify [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Regasm.exe (Assembly Registration Tool)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
+     You can modify [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties to automatically register the C# assembly for COM interop. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the [Regasm.exe (Assembly Registration Tool)](https://docs.microsoft.com/dotnet/framework/tools/regasm-exe-assembly-registration-tool), using the `/tlb` command-line switch, which takes a managed assembly as input, to generate a type library. This type library describes the `public` types in the assembly and adds registry entries so that COM clients can create managed classes.  
   
- For more information, see [Exposing .NET Framework Components to COM](http://msdn.microsoft.com/library/e42a65f7-1e61-411f-b09a-aca1bbce24c6) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
+ For more information, see [Exposing .NET Framework Components to COM](https://docs.microsoft.com/dotnet/framework/interop/exposing-dotnet-components-to-com) and [Example COM Class](../../../csharp/programming-guide/interop/example-com-class.md).  
   
 ## See Also  
  [Improving Interop Performance](http://go.microsoft.com/fwlink/?LinkId=99564)   
  [Introduction to COM Interop](http://go.microsoft.com/fwlink/?LinkId=112406)   
  [Marshaling between Managed and Unmanaged Code](http://go.microsoft.com/fwlink/?LinkId=112398)   
  [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)   
- [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)   
+ [Advanced COM Interoperability](https://msdn.microsoft.com/library/bd9cdfyx.aspx)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)

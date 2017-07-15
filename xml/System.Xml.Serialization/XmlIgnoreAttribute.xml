@@ -40,7 +40,7 @@
   
  The [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) occasionally generates the <xref:System.Xml.Serialization.XmlIgnoreAttribute> when creating classes from a schema file (.xsd). This behavior occurs because value types cannot be set to `null`, but all XML data types can be. Therefore, the tool creates two fields when it encounters an XML type that maps to a value type: one to hold the value and another special field that takes the form of `fieldnameSpecified`, where the `fieldname` is replaced by the name of the field or property. Notice, however, that this special field is generated only when the schema specifies that the element has no minimum occurrence (minOccurs = "0") and that the element has no default value. The <xref:System.Xml.Serialization.XmlSerializer> sets and checks this special field to determine whether a value has been set for the field or property. Because the special field must not be serialized, the tool applies the <xref:System.Xml.Serialization.XmlIgnoreAttribute> to it.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](https://docs.microsoft.com/dotnet/standard/attributes/).  
   
 > [!NOTE]
 >  You can use the word `XmlIgnore` in your code instead of the longer <xref:System.Xml.Serialization.XmlIgnoreAttribute>.  

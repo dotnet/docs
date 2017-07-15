@@ -26,7 +26,7 @@
 > [!CAUTION]
 >  By default, the <xref:System.Web.UI.HtmlControls.HtmlForm.Method%2A> property is set to `POST`. You can modify the value of this property to `GET`, but this might break the built-in state and postback services provided by the ASP.NET page framework.  
   
- You can configure controls that implement the <xref:System.Web.UI.WebControls.IButtonControl> interface to post to a different target page. This is referred to as cross-page posting. For more information, see [Cross-Page Posting in ASP.NET Web Forms](http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
+ You can configure controls that implement the <xref:System.Web.UI.WebControls.IButtonControl> interface to post to a different target page. This is referred to as cross-page posting. For more information, see [Cross-Page Posting in ASP.NET Web Forms](https://msdn.microsoft.com/library/ms178139.aspx).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlForm>, see the <xref:System.Web.UI.HtmlControls.HtmlForm.%23ctor%2A> constructor.  
   
@@ -181,7 +181,7 @@
 ## Remarks  
  The <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property lets you specify that users can cause a postback by pressing ENTER in an input control in the form (such as a text box). You can specify as a default button any control that derives from the <xref:System.Web.UI.WebControls.IButtonControl> interface except the <xref:System.Web.UI.WebControls.LinkButton> control. If the control that is referenced by the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property does not derive from <xref:System.Web.UI.WebControls.IButtonControl>, an <xref:System.InvalidOperationException> exception is thrown.  
   
- If you are using master pages and you set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property from a content page, use the <xref:System.Web.UI.Control.UniqueID%2A> property of the <xref:System.Web.UI.WebControls.IButtonControl> button. For more information about master pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+ If you are using master pages and you set the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property from a content page, use the <xref:System.Web.UI.Control.UniqueID%2A> property of the <xref:System.Web.UI.WebControls.IButtonControl> button. For more information about master pages, see [ASP.NET Master Pages](https://msdn.microsoft.com/library/wtxbf3hh.aspx).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property might not cause a postback in the following scenarios:  
   
@@ -191,7 +191,7 @@
   
 -   Specifying a <xref:System.Web.UI.WebControls.LinkButton> control as a default button. Only <xref:System.Web.UI.WebControls.Button> and <xref:System.Web.UI.WebControls.ImageButton> controls are supported.  
   
--   Changing the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property programmatically during an asynchronous postback. Asynchronous postbacks can be enabled on a page by adding one or more <xref:System.Web.UI.UpdatePanel> controls to the page. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+-   Changing the <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> property programmatically during an asynchronous postback. Asynchronous postbacks can be enabled on a page by adding one or more <xref:System.Web.UI.UpdatePanel> controls to the page. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/bb386573.aspx).  
   
    
   
@@ -401,7 +401,7 @@
 ## Remarks  
  When notified by the <xref:System.Web.UI.HtmlControls.HtmlForm.OnInit%2A> method, Web server controls must perform any initialization steps that are required to create and set up an instance. In this stage of the server control's life cycle, the control's view state has yet to be populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not guaranteed to be created and ready for access.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.GridView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -643,7 +643,7 @@
  Use the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property to specify the target window or frame that displays the results of the information that is posted to the server. Redirecting the results of the information posted to the server is an advanced task. Using this property simply to post back is not recommended.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property renders as a `target` attribute. The `target` attribute on `form` elements is not allowed in XHTML 1.1. Therefore, if the rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+>  The <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property renders as a `target` attribute. The `target` attribute on `form` elements is not allowed in XHTML 1.1. Therefore, if the rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/ms228004.aspx).  
   
  The <xref:System.Web.UI.HtmlControls.HtmlForm.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
   

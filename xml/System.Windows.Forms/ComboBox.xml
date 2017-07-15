@@ -606,7 +606,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://msdn.microsoft.com/library/ddae83kx.aspx).</para>
         </block>
       </Docs>
     </Member>
@@ -662,7 +662,7 @@
 ## Remarks  
  This event is used by an owner-drawn <xref:System.Windows.Forms.ComboBox>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.ComboBox>. If you have a variable sized item (when the <xref:System.Windows.Forms.ComboBox.DrawMode%2A?displayProperty=fullName> property is set to the `OwnerDrawVariable` value of <xref:System.Windows.Forms.DrawMode?displayProperty=fullName>), before drawing an item, the <xref:System.Windows.Forms.ComboBox.MeasureItem> event is raised. You can create an event handler for the <xref:System.Windows.Forms.ComboBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.ComboBox.DrawItem> event.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -733,7 +733,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -768,7 +768,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.ComboBox.DropDownClosed> event to restore the state of the <xref:System.Windows.Forms.ComboBox> from changes you made in response to the <xref:System.Windows.Forms.ComboBox.DropDown> event.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -882,7 +882,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1525,7 +1525,7 @@
 ## Remarks  
  You can create an event handler for this event to specify the size an item is made before it is drawn in the <xref:System.Windows.Forms.ComboBox.DrawItem> event.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1645,7 +1645,7 @@
 ## Remarks  
  This method is called each time an owner-drawn <xref:System.Windows.Forms.ComboBox> item needs to be drawn and after <xref:System.Windows.Forms.ComboBox.OnMeasureItem%2A> is called. For more information, see <xref:System.Windows.Forms.ComboBox.DrawItem>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnDrawItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1680,7 +1680,7 @@
 ## Remarks  
  This event is raised each time the drop-down is displayed.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnDropDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1713,7 +1713,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnDropDownClosed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1748,7 +1748,7 @@
 ## Remarks  
  This event is raised when you set <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> to a new value.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnDropDownStyleChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1828,7 +1828,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1861,7 +1861,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1894,7 +1894,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1932,7 +1932,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnKeyDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1998,7 +1998,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnLostFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2033,7 +2033,7 @@
 ## Remarks  
  This method is called each time an owner-drawn <xref:System.Windows.Forms.ComboBox> item needs to be drawn and before <xref:System.Windows.Forms.ComboBox.OnDrawItem%2A> is called. For more information, see <xref:System.Windows.Forms.ComboBox.MeasureItem>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnMeasureItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2066,7 +2066,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnMouseEnter%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2099,7 +2099,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2132,7 +2132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnParentBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2165,7 +2165,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnResize%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2200,7 +2200,7 @@
 ## Remarks  
  This event is raised when you select a new item from the list or when you set the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2235,7 +2235,7 @@
 ## Remarks  
  This event is raised when you select a new item from the list or when you set the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A> property.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnSelectedItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2268,7 +2268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnSelectedValueChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2303,7 +2303,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> is raised only when the user changes the combo box selection, or when you set the <xref:System.Windows.Forms.ComboBox.SelectedIndex%2A>. However, depending on how the <xref:System.Windows.Forms.ComboBox> is configured, and how the user changes the selected item, the <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> event may not be raised. Alternatively, you can handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged>, but note that this event occurs whether the index is changed programmatically or by the user.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnSelectionChangeCommitted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2350,7 +2350,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2383,7 +2383,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnTextUpdate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2421,7 +2421,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.ComboBox.OnValidating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2800,7 +2800,7 @@
 ## Remarks  
  You can create an event handler for this event to determine when the selected index in the <xref:System.Windows.Forms.ComboBox> has been changed. This can be useful when you need to display information in other controls based on the current selection in the <xref:System.Windows.Forms.ComboBox>. You can use the event handler for this event to load the information in the other controls.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -2922,7 +2922,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> event is raised only when the user changes the combo box selection, and you can create a handler for this event to provide special handling for the <xref:System.Windows.Forms.ComboBox> when the user changes the selected item in the list. However, depending on how the <xref:System.Windows.Forms.ComboBox> is configured, and how the user changes the selected item, the <xref:System.Windows.Forms.ComboBox.SelectionChangeCommitted> event may not be raised. Alternatively, you can handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged>, but note that this event occurs whether the index is changed programmatically or by the user.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -3177,7 +3177,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.ComboBox.TextUpdate> event to validate the text before it is actually shown. <xref:System.Windows.Forms.ComboBox.TextUpdate> is not fired if the <xref:System.Windows.Forms.ComboBox.Text%2A> property is programmatically changed.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   

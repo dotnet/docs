@@ -44,6 +44,6 @@ Could not obtain full operation system name due to internal error. This might be
 2.  For more information about WMI and how to install it, go to  and search for "Windows Management Instrumentation Core".  
   
 ## See Also  
- [My.Computer.Info.OSFullName Property](http://msdn.microsoft.com/en-us/b3b0fbd1-4dc5-428a-ad04-0d9fc9c2a9be)   
- [Exception and Error Handling in Visual Basic](http://msdn.microsoft.com/en-us/3e351e73-cf23-40ab-8b60-05794160529e)   
+ [My.Computer.Info.OSFullName Property](https://msdn.microsoft.com/library/bfx6bse3(v=vs.90).aspx)   
+ [Exception and Error Handling in Visual Basic](https://msdn.microsoft.com/library/s6da8809(v=vs.100).aspx)   
  [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

@@ -43,7 +43,7 @@ This walkthrough demonstrates how to create a custom user control that can parti
   
 ### To create the project  
   
-1.  Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+1.  Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/bb546958(v=vs.110).aspx).  
   
 2.  Open MainWindow.xaml.  
   

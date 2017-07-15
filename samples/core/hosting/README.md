@@ -1,7 +1,7 @@
 .NET Core Hosting Sample
 ==================================
 
-This sample demonstrates a very simple .NET Core host. It is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/en-us/dotnet/core/tutorials/netcore-hosting). Please see that topic for a more detailed explanation of this sample.
+This sample demonstrates a very simple .NET Core host. It is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/dotnet/core/tutorials/netcore-hosting). Please see that topic for a more detailed explanation of this sample.
 
 About .NET Core Hosts
 ---------------------
@@ -21,7 +21,7 @@ To build this sample, just use msbuild: `msbuild.exe SampleHost.vcxproj`. Be sur
 
 To run the host, you will need a .NET Core-targeted app to run with it.
 
-1. Build a simple .NET Core app (like 'hello world') as a [self-contained](https://docs.microsoft.com/en-us/dotnet/core/deploying/#self-contained-deployments-scd) app (since this host looks for coreclr.dll next to the target app) and publish it.
+1. Build a simple .NET Core app (like 'hello world') as a [self-contained](https://docs.microsoft.com/dotnet/core/deploying/#self-contained-deployments-scd) app (since this host looks for coreclr.dll next to the target app) and publish it.
 2. Run the SampleHost.exe built previously and pass the path to your app's published dll as a command line argument.
 
 The sample host should start the .NET Core runtime and execute your app.

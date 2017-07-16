@@ -62,7 +62,7 @@ C# (pronounced "C sharp") is a programming language that is designed for buildin
  Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.  
   
 ## Related Sections  
- [C# Language Specification](../csharp/language-reference/language-specification.md)  
+ [C# Language Specification](../csharp/language-reference/language-specification/index.md.md)  
  Links to the latest version of the C# Specifications in Microsoft Word format.  
   
 ## See Also  

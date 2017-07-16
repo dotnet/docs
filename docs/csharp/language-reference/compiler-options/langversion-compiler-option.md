@@ -90,7 +90,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
  
 ### C# Language Specification
- [C# Language Specification Reference](../../../csharp/language-reference/language-specification.md) : .NET Foundation   
+ [C# Language Specification Reference](../../../csharp/language-reference/language-specification/index.md.md) : .NET Foundation   
  C# 1.0/1.1 [ISO/IEC 23270:2003](https://www.iso.org/standard/36768.html) Information technology -- C# Language Specification : ISO Catalogue   
  C# 2.0 [ISO/IEC 23270:2006](https://www.iso.org/standard/42926.html) Information technology -- C# Language Specification : ISO Catalogue   
  C# 2.0 [c042926_ISO_IEC_23270_2006(E).zip](http://go.microsoft.com/fwlink/?LinkId=144406) ISO/IEC 23270:2006 in PDF format : ISO Freely Available Standards   

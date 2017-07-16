@@ -87,13 +87,13 @@ You also need a DbContext that represents a session with the database. For the c
 ```csharp
 public class CatalogContext : DbContext
 {
-    public CatalogContext(DbContextOptions<;CatalogContext> options) : base(options)
+    public CatalogContext(DbContextOptions<CatalogContext> options) : base(options)
     {
     }
 
-    public DbSet<;CatalogItem> CatalogItems { get; set; }
-    public DbSet<;CatalogBrand> CatalogBrands { get; set; }
-    public DbSet<;CatalogType> CatalogTypes { get; set; }
+    public DbSet<CatalogItem> CatalogItems { get; set; }
+    public DbSet<CatalogBrand> CatalogBrands { get; set; }
+    public DbSet<CatalogType> CatalogTypes { get; set; }
 
     // Additional code ...
 
@@ -117,7 +117,7 @@ public class CatalogController : ControllerBase
     private readonly ICatalogIntegrationEventService _catalogIntegrationEventService;
 
     public CatalogController(CatalogContext context,
-        IOptionsSnapshot<;CatalogSettings> settings,
+        IOptionsSnapshot<CatalogSettings> settings,
         ICatalogIntegrationEventService catalogIntegrationEventService)
     {
         _catalogContext = context ?? throw new ArgumentNullException(nameof(context));
@@ -130,7 +130,7 @@ public class CatalogController : ControllerBase
     // GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
     [HttpGet]
     [Route("[action]")]
-    public async Task<;IActionResult> Items([FromQuery]int pageSize = 10,
+    public async Task<IActionResult> Items([FromQuery]int pageSize = 10,
     [FromQuery]int pageIndex = 0)
     {
         var totalItems = await _catalogContext.CatalogItems
@@ -141,7 +141,7 @@ public class CatalogController : ControllerBase
             .Take(pageSize)
             .ToListAsync();
         itemsOnPage = ChangeUriPlaceholder(itemsOnPage);
-        var model = new PaginatedItemsViewModel<;CatalogItem>(
+        var model = new PaginatedItemsViewModel<CatalogItem>(
             pageIndex, pageSize, totalItems, itemsOnPage);
         return Ok(model);
     } 
@@ -170,7 +170,7 @@ An important configuration to set up in the Web API project is the DbContext cla
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddDbContext<;CatalogContext>(options =>
+    services.AddDbContext<CatalogContext>(options =>
     {
         options.UseSqlServer(Configuration["ConnectionString"],
         sqlServerOptionsAction: sqlOptions =>
@@ -382,9 +382,9 @@ public class Startup
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 
 ```json
-  http://<;your-root-url>/swagger/v1/swagger.json
+  http://<your-root-url>/swagger/v1/swagger.json
   
-  http://<;your-root-url>/swagger/ui
+  http://<your-root-url>/swagger/ui
 ```
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.

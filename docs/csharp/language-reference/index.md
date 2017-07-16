@@ -55,7 +55,7 @@ This section provides reference material about C# keywords, operators, special c
  [C# Compiler Errors](../../csharp/language-reference/compiler-messages/index.md)  
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
- [C# Language Specification](../../csharp/language-reference/language-specification.md)  
+ [C# Language Specification](../../csharp/language-reference/language-specification/index.md.md)  
  Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.  
   
 ## Related Sections  

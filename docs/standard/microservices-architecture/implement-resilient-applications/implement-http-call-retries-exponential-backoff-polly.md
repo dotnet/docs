@@ -12,7 +12,7 @@ ms.technology: dotnet-docker
 
 The recommended approach for retries with exponential backoff is to take advantage of more advanced .NET libraries like the open source [Polly](https://github.com/App-vNext/Polly) library.
 
-Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities easily by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET 4.x and the .NET Standard Library 1.0 (which supports .NET Core).
+Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities easily by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET 4.x and the .NET Standard version 1.0 (which supports .NET Core).
 
 The Retry policy in Polly is the approach used in eShopOnContainers when implementing HTTP retries. You can implement an interface so you can inject either standard HttpClient functionality or a resilient version of HttpClient using Polly, depending on what retry policy configuration you want to use.
 

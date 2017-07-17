@@ -26,7 +26,7 @@ An example of this kind of simple data-drive service is the catalog microservice
 
 **Figure 8-5**. Simple data-driven/CRUD microservice design
 
-When you are developing this kind of service, you only need [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) and a data-access API or ORM like [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/index). You could also generate [Swagger](http://swagger.io/) metadata automatically through [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) to provide a description of what your service offers, as explained in the next section.
+When you are developing this kind of service, you only need [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) and a data-access API or ORM like [Entity Framework Core](https://docs.microsoft.com/ef/core/index). You could also generate [Swagger](http://swagger.io/) metadata automatically through [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) to provide a description of what your service offers, as explained in the next section.
 
 Note that running a database server like SQL Server within a Docker container is great for development environments, because you can have all your dependencies up and running without needing to provision a database in the cloud or on-premises. This is very convenient when running integration tests. However, for production environments, running a database server in a container is not recommended, because you usually do not get high availability with that approach. For a production environment in Azure, it is recommended that you use Azure SQL DB or any other database technology that can provide high availability and high scalability. For example, for a NoSQL approach, you might choose DocumentDB.
 
@@ -87,13 +87,13 @@ You also need a DbContext that represents a session with the database. For the c
 ```csharp
 public class CatalogContext : DbContext
 {
-    public CatalogContext(DbContextOptions<;CatalogContext> options) : base(options)
+    public CatalogContext(DbContextOptions<CatalogContext> options) : base(options)
     {
     }
 
-    public DbSet<;CatalogItem> CatalogItems { get; set; }
-    public DbSet<;CatalogBrand> CatalogBrands { get; set; }
-    public DbSet<;CatalogType> CatalogTypes { get; set; }
+    public DbSet<CatalogItem> CatalogItems { get; set; }
+    public DbSet<CatalogBrand> CatalogBrands { get; set; }
+    public DbSet<CatalogType> CatalogTypes { get; set; }
 
     // Additional code ...
 
@@ -117,7 +117,7 @@ public class CatalogController : ControllerBase
     private readonly ICatalogIntegrationEventService _catalogIntegrationEventService;
 
     public CatalogController(CatalogContext context,
-        IOptionsSnapshot<;CatalogSettings> settings,
+        IOptionsSnapshot<CatalogSettings> settings,
         ICatalogIntegrationEventService catalogIntegrationEventService)
     {
         _catalogContext = context ?? throw new ArgumentNullException(nameof(context));
@@ -130,7 +130,7 @@ public class CatalogController : ControllerBase
     // GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
     [HttpGet]
     [Route("[action]")]
-    public async Task<;IActionResult> Items([FromQuery]int pageSize = 10,
+    public async Task<IActionResult> Items([FromQuery]int pageSize = 10,
     [FromQuery]int pageIndex = 0)
     {
         var totalItems = await _catalogContext.CatalogItems
@@ -141,7 +141,7 @@ public class CatalogController : ControllerBase
             .Take(pageSize)
             .ToListAsync();
         itemsOnPage = ChangeUriPlaceholder(itemsOnPage);
-        var model = new PaginatedItemsViewModel<;CatalogItem>(
+        var model = new PaginatedItemsViewModel<CatalogItem>(
             pageIndex, pageSize, totalItems, itemsOnPage);
         return Ok(model);
     } 
@@ -170,7 +170,7 @@ An important configuration to set up in the Web API project is the DbContext cla
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddDbContext<;CatalogContext>(options =>
+    services.AddDbContext<CatalogContext>(options =>
     {
         options.UseSqlServer(Configuration["ConnectionString"],
         sqlServerOptionsAction: sqlOptions =>
@@ -204,10 +204,10 @@ public void ConfigureServices(IServiceCollection services)
 ### Additional resources
 
 -   **Querying Data**
-    [*https://docs.microsoft.com/en-us/ef/core/querying/index*](https://docs.microsoft.com/en-us/ef/core/querying/index)
+    [*https://docs.microsoft.com/ef/core/querying/index*](https://docs.microsoft.com/ef/core/querying/index)
 
 -   **Saving Data**
-    [*https://docs.microsoft.com/en-us/ef/core/saving/index*](https://docs.microsoft.com/en-us/ef/core/saving/index)
+    [*https://docs.microsoft.com/ef/core/saving/index*](https://docs.microsoft.com/ef/core/saving/index)
 
 ## The DB connection string and environment variables used by Docker containers
 
@@ -277,7 +277,7 @@ public class CatalogController : ControllerBase
     // Implementation ...
 ```
 
-This versioning mechanism is simple and depends on the server routing the request to the appropriate endpoint. However, for a more sophisticated versioning and the best method when using REST, you should use hypermedia and implement [HATEOAS (Hypertext as the Engine of Application State)](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#using-the-hateoas-approach-to-enable-navigation-to-related-resources).
+This versioning mechanism is simple and depends on the server routing the request to the appropriate endpoint. However, for a more sophisticated versioning and the best method when using REST, you should use hypermedia and implement [HATEOAS (Hypertext as the Engine of Application State)](https://docs.microsoft.com/azure/architecture/best-practices/api-design#using-the-hateoas-approach-to-enable-navigation-to-related-resources).
 
 ### Additional resources
 
@@ -286,7 +286,7 @@ This versioning mechanism is simple and depends on the server routing the reques
 
 -   **Versioning a RESTful web API**
 
-    [*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
+    [*https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 -   **Roy Fielding. Versioning, Hypermedia, and REST**
     [*https://www.infoq.com/articles/roy-fielding-on-versioning*](https://www.infoq.com/articles/roy-fielding-on-versioning)
@@ -315,7 +315,7 @@ The main reasons to generate Swagger metadata for your APIs are the following.
 
 -   [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/). You can automatically consume your API from [PowerApps mobile apps](https://powerapps.microsoft.com/en-us/blog/register-and-use-custom-apis-in-powerapps/) built with [PowerApps Studio](https://powerapps.microsoft.com/en-us/guided-learning/learning-powerapps-parts/), with no programming skills required.
 
--   [Azure App Service Logic Apps](https://docs.microsoft.com/en-us/azure/app-service-logic/app-service-logic-what-are-logic-apps). You can automatically [use and integrate your API into an Azure App Service Logic App](https://docs.microsoft.com/en-us/azure/app-service-logic/app-service-logic-custom-hosted-api), with no programming skills required.
+-   [Azure App Service Logic Apps](https://docs.microsoft.com/azure/app-service-logic/app-service-logic-what-are-logic-apps). You can automatically [use and integrate your API into an Azure App Service Logic App](https://docs.microsoft.com/azure/app-service-logic/app-service-logic-custom-hosted-api), with no programming skills required.
 
 **Ability to automatically generate API documentation**. When you create large-scale RESTful APIs, such as complex microservice-based applications, you need to handle many endpoints with different data models used in the request and response payloads. Having proper documentation and having a solid API explorer, as you get with Swagger, is key for the success of your API and adoption by developers.
 
@@ -382,9 +382,9 @@ public class Startup
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 
 ```json
-  http://<;your-root-url>/swagger/v1/swagger.json
+  http://<your-root-url>/swagger/v1/swagger.json
   
-  http://<;your-root-url>/swagger/ui
+  http://<your-root-url>/swagger/ui
 ```
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.
@@ -404,7 +404,7 @@ It is that simple. And because it is automatically generated, the Swagger metada
 ### Additional resources
 
 -   **ASP.NET Web API Help Pages using Swagger**
-    [*https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger)
+    [*https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger*](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 
 >[!div class="step-by-step"]

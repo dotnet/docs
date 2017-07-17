@@ -191,7 +191,7 @@
 ## Examples  
  The following example checks whether the <xref:System.Windows.Controls.TextBox> is empty. The <xref:System.Windows.Controls.ValidationRule>, `ValueIsNotNull`, has <xref:System.Windows.Controls.ValidationRule.ValidatesOnTargetUpdated%2A> set to `true`, so that when the application starts, the <xref:System.Windows.Controls.ValidationRule> runs and displays a message if the <xref:System.Windows.Controls.TextBox> is empty.  
   
- [!code-xml[BindingGroupSnippets#ValidatesOnTargetUpdated](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validatesontargetupdated)]  
+ [!code-xaml[BindingGroupSnippets#ValidatesOnTargetUpdated](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validatesontargetupdated)]  
   
  The following example shows the <xref:System.Windows.Controls.ValidationRule> that is used in the previous example and the event handler for the <xref:System.Windows.Controls.Validation.Error> event.  
   
@@ -223,7 +223,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> to <xref:System.Windows.Controls.ValidationStep.ConvertedProposedValue> on the <xref:System.Windows.Controls.ValidationRule> called `ValidateDateAndPrice` so that when it runs, the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method has access to values that are of the source property's type. When the rules `PriceIsAPositiveNumber` and `FutureDateRule` run, the values in each <xref:System.Windows.Controls.ValidationRule.Validate%2A> method are strings because the rules run before the values are converted to their respective types.  
   
- [!code-xml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
+ [!code-xaml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
   
  The following example shows the <xref:System.Windows.Controls.ValidationRule>`ValidateDateAndPrice`. In the `Validate` method override, the `Price` property is of type <xref:System.Double> and the `OfferExpires` property is of type <xref:System.DateTime> because the strings have been converted to their respective types by the time the <xref:System.Windows.Controls.ValidationRule> runs.  
   

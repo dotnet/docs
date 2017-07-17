@@ -35,11 +35,11 @@
 ## Examples  
  The following example shows a <xref:System.Windows.Controls.ControlTemplate> that defines a <xref:System.Windows.Controls.ListBox> that is horizontal and has rounded corners. The `TemplateBinding` indicates that the <xref:System.Windows.Controls.Border.Background%2A> of the <xref:System.Windows.Controls.Border> should be synchronized with the <xref:System.Windows.Controls.Border.Background%2A> value that is set on the <xref:System.Windows.Controls.ListBox>. You use `TemplateBinding` in your <xref:System.Windows.Controls.ControlTemplate> when you want to give the user of your control the control over the values of certain properties. For a discussion of this example, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
- [!code-xml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]    
+ [!code-xaml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]    
   
  The following example shows the <xref:System.Windows.Controls.ControlTemplate> of the <xref:System.Windows.Controls.Label> control. The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties are bound to the values of the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties of the <xref:System.Windows.Controls.Label> control that this <xref:System.Windows.Controls.ControlTemplate> is applied to.  
   
- [!code-xml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  
+ [!code-xaml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  
   
  ]]></format>
     </remarks>

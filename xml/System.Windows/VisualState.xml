@@ -33,7 +33,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.VisualStateGroup> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button> called `CommonStates` and adds <xref:System.Windows.VisualState> objects for the states, `Normal`, `Pressed`, and `MouseOver`. The <xref:System.Windows.Controls.Button> also defines a state called `Disabled` that is in the `CommonStates`<xref:System.Windows.VisualStateGroup>, but the example omits it for brevity. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
- [!code-xml[VSMButtonTemplate#10](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#10)]  
+ [!code-xaml[VSMButtonTemplate#10](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#10)]  
   
  ]]></format>
     </remarks>
@@ -84,7 +84,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.VisualStateGroup> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button> called `CommonStates` and adds <xref:System.Windows.VisualState> objects for the states, `Normal`, `Pressed`, and `MouseOver`. The <xref:System.Windows.Controls.Button> also defines a state called `Disabled` that is in the `CommonStates`<xref:System.Windows.VisualStateGroup>, but the example omits it for brevity. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
- [!code-xml[VSMButtonTemplate#10](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#10)]  
+ [!code-xaml[VSMButtonTemplate#10](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/buttonstages.xaml#10)]  
   
  ]]></format>
         </remarks>
@@ -116,7 +116,7 @@
 ## Examples  
  The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>.  The <xref:System.Windows.VisualState> called `MouseOver` has a Storyboard that changes the color of the <xref:System.Windows.Controls.Grid> from green to red when the user puts the mouse over the <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.VisualState> called `Normal` is included so that when the user moves the mouse off the button, the <xref:System.Windows.Controls.Grid> returns to green.  
   
- [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+ [!code-xaml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
   
  ]]></format>
         </remarks>

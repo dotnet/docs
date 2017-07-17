@@ -69,15 +69,15 @@ private static IContainer CreateContainer()
 
   if (fake)
   {
-    builder.RegisterType<;CatalogMockService>()
-    .As<;ICatalogService>();
+    builder.RegisterType<CatalogMockService>()
+    .As<ICatalogService>();
   }
   else
   {
-    builder.RegisterType<;CatalogService>()
-    .As<;ICatalogService>();
-    builder.RegisterType<;RequestProvider>()
-    .As<;IRequestProvider>();
+    builder.RegisterType<CatalogService>()
+    .As<ICatalogService>();
+    builder.RegisterType<RequestProvider>()
+    .As<IRequestProvider>();
   }
 
   var container = builder.Build();

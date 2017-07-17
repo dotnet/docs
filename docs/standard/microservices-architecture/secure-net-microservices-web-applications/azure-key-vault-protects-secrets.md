@@ -2,7 +2,7 @@
 title: Using Azure Key Vault to protect secrets at production time | Microsoft Docs 
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Key Vault to protect secrets at production time
 keywords: Docker, Microservices, ASP.NET, Container
-author: CESARDELATORRE
+author: mjrousos
 ms.author: wiwagn
 ms.date: 05/26/2017
 ms.prod: .net-core
@@ -16,7 +16,7 @@ The Microsoft.Extensions.Configuration.AzureKeyVault package allows an ASP.NET C
 
 First, register your application as an Azure AD application. (Access to key vaults is managed by Azure AD.) This can be done through the Azure management portal.
 
-Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](https://docs.microsoft.com/en-us/powershell/resourcemanager/azurerm.resources/v3.3.0/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
+Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](https://docs.microsoft.com/powershell/resourcemanager/azurerm.resources/v3.3.0/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
 
 Second, give the registered application access to the key vault by creating a new service principal. You can do this using the following PowerShell commands:
 
@@ -27,7 +27,7 @@ Set-AzureRmKeyVaultAccessPolicy -VaultName "<VaultName>" -ServicePrincipalName $
 
 Third, include the key vault as a configuration source in your application by calling the IConfigurationBuilder.AddAzureKeyVault extension method when you create an IConfigurationRoot instance. Note that calling AddAzureKeyVault will require the application ID that was registered and given access to the key vault in the previous steps.
 
-  Currently, the .NET Standard Library and .NET Core support getting configuration information from an Azure Key Vault using a client ID and client secret. .NET Framework applications can use an overload of IConfigurationBuilder.AddAzureKeyVault that takes a certificate in place of the client secret. As of this writing, work is [in progress](https://github.com/aspnet/Configuration/issues/605) to make that overload available in .NET Standard and .NET Core. Until the AddAzureKeyVault overload that accepts a certificate is available, ASP.NET Core applications can access an Azure Key Vault with certificate-based authentication by explicitly creating a KeyVaultClient object, as shown in the following example:
+  Currently, .NET Standard and .NET Core support getting configuration information from an Azure Key Vault using a client ID and client secret. .NET Framework applications can use an overload of IConfigurationBuilder.AddAzureKeyVault that takes a certificate in place of the client secret. As of this writing, work is [in progress](https://github.com/aspnet/Configuration/issues/605) to make that overload available in .NET Standard and .NET Core. Until the AddAzureKeyVault overload that accepts a certificate is available, ASP.NET Core applications can access an Azure Key Vault with certificate-based authentication by explicitly creating a KeyVaultClient object, as shown in the following example:
 
 ```csharp
 // Configure Key Vault client
@@ -57,16 +57,16 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
 ## Additional resources
 
 -   **Using Azure Key Vault to protect application secrets***
-    <https://docs.microsoft.com/en-us/azure/guidance/guidance-multitenant-identity-keyvault>*
+    <https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault>*
 
 -   **Safe storage of app secrets during development**
-    [*https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets*](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets)
+    [*https://docs.microsoft.com/aspnet/core/security/app-secrets*](https://docs.microsoft.com/aspnet/core/security/app-secrets)
 
 -   **Configuring data protection**
-    [*https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/overview*](https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/overview)
+    [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview)
 
 -   **Key management and lifetime**
-    [*https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
+    [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
 
 -   **Microsoft.Extensions.Configuration.DockerSecrets.** GitHub repo.
     *<https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets> *

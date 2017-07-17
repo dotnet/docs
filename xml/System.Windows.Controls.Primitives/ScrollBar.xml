@@ -57,7 +57,7 @@
 ## Examples  
  The following example shows how to create a horizontal <xref:System.Windows.Controls.Primitives.ScrollBar> that has a range of values between 0 and 100.  
   
- [!code-xml[ScrollBarSnips#ScrollBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#scrollbar)]  
+ [!code-xaml[ScrollBarSnips#ScrollBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#scrollbar)]  
   
  ]]></format>
     </remarks>
@@ -189,7 +189,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#LineDownCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#linedowncommand)]  
+ [!code-xaml[ScrollBarTemplateExample#LineDownCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#linedowncommand)]  
   
  ]]></format>
         </remarks>
@@ -228,7 +228,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#LineLeftCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#lineleftcommand)]  
+ [!code-xaml[ScrollBarTemplateExample#LineLeftCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#lineleftcommand)]  
   
  ]]></format>
         </remarks>
@@ -267,7 +267,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#LineRightCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#linerightcommand)]  
+ [!code-xaml[ScrollBarTemplateExample#LineRightCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#linerightcommand)]  
   
  ]]></format>
         </remarks>
@@ -306,7 +306,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#LineUpCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#lineupcommand)]  
+ [!code-xaml[ScrollBarTemplateExample#LineUpCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#lineupcommand)]  
   
  ]]></format>
         </remarks>
@@ -508,7 +508,7 @@
   
  [!code-csharp[ScrollBarSnips#Orientation](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml.cs#orientation)]
  [!code-vb[ScrollBarSnips#Orientation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollBarSnips/visualbasic/window1.xaml.vb#orientation)]
- [!code-xml[ScrollBarSnips#Orientation](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#orientation)]  
+ [!code-xaml[ScrollBarSnips#Orientation](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#orientation)]  
   
  ]]></format>
         </remarks>
@@ -564,7 +564,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#PageDownCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pagedowncommand)]  
+ [!code-xaml[ScrollBarTemplateExample#PageDownCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pagedowncommand)]  
   
  ]]></format>
         </remarks>
@@ -605,7 +605,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#PageLeftCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pageleftcommand)]  
+ [!code-xaml[ScrollBarTemplateExample#PageLeftCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pageleftcommand)]  
   
  ]]></format>
         </remarks>
@@ -646,7 +646,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#PageRightCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pagerightcommand)]  
+ [!code-xaml[ScrollBarTemplateExample#PageRightCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pagerightcommand)]  
   
  ]]></format>
         </remarks>
@@ -685,7 +685,7 @@
 ## Examples  
  The following example shows how to specify the <xref:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand> in a custom <xref:System.Windows.Controls.Primitives.ScrollBar> style template.  
   
- [!code-xml[ScrollBarTemplateExample#PageUpCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pageupcommand)]  
+ [!code-xaml[ScrollBarTemplateExample#PageUpCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarTemplateExample/CS/Window1.xaml#pageupcommand)]  
   
  ]]></format>
         </remarks>
@@ -732,7 +732,7 @@
 ## Examples  
  The following example shows how assign an event handler for the <xref:System.Windows.Controls.Primitives.ScrollBar.Scroll> event to a <xref:System.Windows.Controls.Primitives.ScrollBar> control, and how to define the event handler in code.  
   
- [!code-xml[ScrollBarSnips#Scroll](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#scroll)]  
+ [!code-xaml[ScrollBarSnips#Scroll](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#scroll)]  
   
  [!code-csharp[ScrollBarSnips#ScrollHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml.cs#scrollhandler)]
  [!code-vb[ScrollBarSnips#ScrollHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollBarSnips/visualbasic/window1.xaml.vb#scrollhandler)]  
@@ -1102,7 +1102,7 @@
   
  [!code-csharp[ScrollBarSnips#Viewport](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml.cs#viewport)]
  [!code-vb[ScrollBarSnips#Viewport](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollBarSnips/visualbasic/window1.xaml.vb#viewport)]
- [!code-xml[ScrollBarSnips#Viewport](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#viewport)]  
+ [!code-xaml[ScrollBarSnips#Viewport](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollBarSnips/CSharp/Window1.xaml#viewport)]  
   
  ]]></format>
         </remarks>

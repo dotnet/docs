@@ -46,7 +46,7 @@ When you want to use COM objects and .NET Framework objects in the same applicat
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
  Provides links to topics covering COM interoperability in Visual Basic, including COM objects, ActiveX controls, Win32 DLLs, managed objects, and inheritance of COM objects.  
   
- [COM Interop Wrapper Error](https://docs.microsoft.com/cpp/misc/com-interop-wrapper-error)  
+ [COM Interop Wrapper Error](/cpp/misc/com-interop-wrapper-error)  
  Describes the consequences and options if the project system cannot create a COM interoperability wrapper for a particular component.  
   
  [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)  

@@ -96,6 +96,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.CompensatingResourceManager.ClerkInfo this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.CompensatingResourceManager.ClerkInfo Item(int32)" />
@@ -158,14 +167,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.EnterpriseServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" /> object for this <see cref="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

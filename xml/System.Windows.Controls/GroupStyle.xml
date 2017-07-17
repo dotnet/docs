@@ -29,7 +29,7 @@
   
  Each group is of type <xref:System.Windows.Data.CollectionViewGroup>. The <xref:System.Windows.Controls.GroupStyle> <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> is specified so that it appears as a <xref:System.Windows.Controls.TextBlock> that displays the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> of each the group. In this case, the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> is either `Work` or `Home`.  
   
- [!code-xml[GroupingSample#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml#xaml)]  
+ [!code-xaml[GroupingSample#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml#xaml)]  
   
  [!code-csharp[GroupingSample#Code](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#code)]
  [!code-vb[GroupingSample#Code](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#code)]  
@@ -106,7 +106,7 @@
   
  The <xref:System.Windows.Data.CollectionViewSource> that groups the items is not shown.  For information on how to group item, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
   
- [!code-xml[AlternationIndexSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#3)]  
+ [!code-xaml[AlternationIndexSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#3)]  
   
  ]]></format>
         </remarks>
@@ -270,7 +270,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ListBox> that groups a collection of items by price range.  The converter, `GroupByPrice`, returns an integer value that is above each item's price. For example, if an item's price is between 0 and 100, the converter returns 100. The example uses the <xref:System.Windows.Controls.GroupStyle.HeaderStringFormat%2A> to create a string that includes the upper limit for each price range. For example, in the United States, items that are under 100 dollars are grouped under a heading that says "Items under $100".  
   
- [!code-xml[ContentStringSnippets#GroupStyleHeaderStringFormat](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#groupstyleheaderstringformat)]  
+ [!code-xaml[ContentStringSnippets#GroupStyleHeaderStringFormat](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#groupstyleheaderstringformat)]  
   
  The following example shows the `GroupByPrice` class, the `PurchaseItem` class, and the collection that the <xref:System.Windows.Controls.ListBox> is bound to.  
   
@@ -309,18 +309,18 @@
   
  Each group is of type <xref:System.Windows.Data.CollectionViewGroup>. The <xref:System.Windows.Controls.GroupStyle> <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> is specified so that it appears as a <xref:System.Windows.Controls.TextBlock> that displays the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> of each the group. In this case, the <xref:System.Windows.Data.CollectionViewGroup.Name%2A> is either `Work` or `Home`.  
   
- [!code-xml[GroupingSample#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml#xaml)]  
+ [!code-xaml[GroupingSample#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml#xaml)]  
   
  [!code-csharp[GroupingSample#Code](~/samples/snippets/csharp/VS_Snippets_Wpf/GroupingSample/CSharp/Window1.xaml.cs#code)]
  [!code-vb[GroupingSample#Code](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GroupingSample/visualbasic/window1.xaml.vb#code)]  
   
  The following example shows how to use the <xref:System.Windows.Controls.GroupStyle.HeaderTemplate%2A> property:  
   
- [!code-xml[DataBindingLab#GroupStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#groupstyle)]  
+ [!code-xaml[DataBindingLab#GroupStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#groupstyle)]  
   
  The following is the definition of the `groupingHeaderTemplate`<xref:System.Windows.DataTemplate>:  
   
- [!code-xml[DataBindingLab#HeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#headertemplate)]  
+ [!code-xaml[DataBindingLab#HeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#headertemplate)]  
   
  For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
   

@@ -66,7 +66,7 @@
   
  The following example shows how to use <xref:System.Windows.Input.KeyGesture> in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. Note that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage does not directly declare a `<KeyGesture>` element. That object element usage is not possible because <xref:System.Windows.Input.KeyGesture> does not expose a public default constructor. Instead, the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage uses the typeconverter behavior to declare an entire <xref:System.Windows.Input.KeyGesture> inline as the `Gesture` attribute value.  
   
- [!code-xml[commandWithHandler#CommandHandlerKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlerkeybinding)]  
+ [!code-xaml[commandWithHandler#CommandHandlerKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlerkeybinding)]  
   
  ]]></format>
     </remarks>

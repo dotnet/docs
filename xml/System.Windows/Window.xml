@@ -80,7 +80,7 @@
 ## Examples  
  The following example shows how a standard window is defined using only markup:  
   
- [!code-xml[WindowSnippets#WindowMARKUPONLY](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowSnippets/CSharp/MarkupOnlyWindow.xaml#windowmarkuponly)]  
+ [!code-xaml[WindowSnippets#WindowMARKUPONLY](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowSnippets/CSharp/MarkupOnlyWindow.xaml#windowmarkuponly)]  
   
  The following example shows how a standard window is defined using only code:  
   
@@ -89,7 +89,7 @@
   
  The following example shows how a standard window is defined using a combination of markup and code-behind.  
   
- [!code-xml[WindowSnippets#WindowXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowSnippets/CSharp/MainWindow.xaml#windowxaml)]  
+ [!code-xaml[WindowSnippets#WindowXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowSnippets/CSharp/MainWindow.xaml#windowxaml)]  
   
  [!code-csharp[WindowSnippets#WindowCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowSnippets/CSharp/MainWindow.xaml.cs#windowcodebehind)]
  [!code-vb[WindowSnippets#WindowCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowSnippets/visualbasic/mainwindow.xaml.vb#windowcodebehind)]  
@@ -356,7 +356,7 @@
 ## Examples  
  The following example shows a **File** &#124; **Exit** menu being handled to explicitly call <xref:System.Windows.Window.Close%2A>.  
   
- [!code-xml[WindowCloseSnippets#WindowCloseXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowCloseSnippets/CSharp/MainWindow.xaml#windowclosexaml)]  
+ [!code-xaml[WindowCloseSnippets#WindowCloseXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowCloseSnippets/CSharp/MainWindow.xaml#windowclosexaml)]  
   
  [!code-csharp[WindowCloseSnippets#WindowCloseCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowCloseSnippets/CSharp/MainWindow.xaml.cs#windowclosecodebehind)]
  [!code-vb[WindowCloseSnippets#WindowCloseCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowCloseSnippets/visualbasic/mainwindow.xaml.vb#windowclosecodebehind)]  
@@ -427,8 +427,8 @@
 ## Examples  
  The following example demonstrates a <xref:System.Windows.Window> that determines whether it needs user intervention to close.  
   
- [!code-xml[WindowClosingSnippets#WindowClosingXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml#windowclosingxaml1)]  
-[!code-xml[WindowClosingSnippets#WindowClosingXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml#windowclosingxaml2)]  
+ [!code-xaml[WindowClosingSnippets#WindowClosingXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml#windowclosingxaml1)]  
+[!code-xaml[WindowClosingSnippets#WindowClosingXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml#windowclosingxaml2)]  
   
  [!code-csharp[WindowClosingSnippets#WindowClosingCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml.cs#windowclosingcodebehind1)]
  [!code-vb[WindowClosingSnippets#WindowClosingCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic/datawindow.xaml.vb#windowclosingcodebehind1)]  
@@ -558,7 +558,7 @@
 ## Examples  
  The following example shows how to configure an OK button and a Cancel button to return the appropriate <xref:System.Windows.Window.DialogResult%2A>.  
   
- [!code-xml[WindowDialogResultSnippets#WindowDialogResultXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowDialogResultSnippets/CSharp/DialogBox.xaml#windowdialogresultxaml)]  
+ [!code-xaml[WindowDialogResultSnippets#WindowDialogResultXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowDialogResultSnippets/CSharp/DialogBox.xaml#windowdialogresultxaml)]  
   
  [!code-csharp[WindowDialogResultSnippets#WindowDialogResultCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowDialogResultSnippets/CSharp/DialogBox.xaml.cs#windowdialogresultcodebehind)]
  [!code-vb[WindowDialogResultSnippets#WindowDialogResultCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowDialogResultSnippets/visualbasic/dialogbox.xaml.vb#windowdialogresultcodebehind)]  
@@ -772,7 +772,7 @@
 ## Examples  
  The following example shows how to set a window icon.  
   
- [!code-xml[WindowIconSnippets#WindowIconSetXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/WindowIconSnippets/XAML/MainWindow.xaml#windowiconsetxaml)]  
+ [!code-xaml[WindowIconSnippets#WindowIconSetXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/WindowIconSnippets/XAML/MainWindow.xaml#windowiconsetxaml)]  
   
  [!code-csharp[WindowIconSnippets#SetWindowIconInCode](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowIconSnippets/CSharp/MainWindow.xaml.cs#setwindowiconincode)]
  [!code-vb[WindowIconSnippets#SetWindowIconInCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowIconSnippets/visualbasic/mainwindow.xaml.vb#setwindowiconincode)]  
@@ -1577,8 +1577,8 @@
 ## Examples  
  The following example uses <xref:System.Windows.Window.RestoreBounds%2A> and isolated storage to ensure the size and location of a window are the same as they were the previous time the window was shown.  
   
- [!code-xml[WindowRestoreBoundsSnippets#WindowRestoreBoundsXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowRestoreBoundsSnippets/CSharp/MainWindow.xaml#windowrestoreboundsxaml1)]  
-[!code-xml[WindowRestoreBoundsSnippets#WindowRestoreBoundsXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowRestoreBoundsSnippets/CSharp/MainWindow.xaml#windowrestoreboundsxaml2)]  
+ [!code-xaml[WindowRestoreBoundsSnippets#WindowRestoreBoundsXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowRestoreBoundsSnippets/CSharp/MainWindow.xaml#windowrestoreboundsxaml1)]  
+[!code-xaml[WindowRestoreBoundsSnippets#WindowRestoreBoundsXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowRestoreBoundsSnippets/CSharp/MainWindow.xaml#windowrestoreboundsxaml2)]  
   
  [!code-csharp[WindowRestoreBoundsSnippets#WindowRestoreBoundsCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowRestoreBoundsSnippets/CSharp/MainWindow.xaml.cs#windowrestoreboundscodebehind1)]
  [!code-vb[WindowRestoreBoundsSnippets#WindowRestoreBoundsCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowRestoreBoundsSnippets/visualbasic/mainwindow.xaml.vb#windowrestoreboundscodebehind1)]  
@@ -1680,7 +1680,7 @@
 ## Examples  
  The following example shows how to use markup to configure a window to be opened without being activated.  
   
- [!code-xml[WindowShowActivatedSnippets#ShowUnactivatedMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowShowActivatedSnippets/CSharp/AWindow.xaml#showunactivatedmarkup1)]  
+ [!code-xaml[WindowShowActivatedSnippets#ShowUnactivatedMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowShowActivatedSnippets/CSharp/AWindow.xaml#showunactivatedmarkup1)]  
   
   
  [!code-csharp[WindowShowActivatedSnippets#ShowUnactivatedCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowShowActivatedSnippets/CSharp/AWindow.xaml.cs#showunactivatedcodebehind)]

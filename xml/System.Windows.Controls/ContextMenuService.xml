@@ -37,11 +37,11 @@
 ## Examples  
  The following example assigns the same <xref:System.Windows.Controls.ContextMenu> to two buttons and sets the <xref:System.Windows.Controls.ContextMenuService.HasDropShadow%2A>, <xref:System.Windows.Controls.ContextMenuService.Placement%2A>, <xref:System.Windows.Controls.ContextMenuService.PlacementRectangle%2A>, <xref:System.Windows.Controls.ContextMenuService.HorizontalOffset%2A>, and <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> properties to set the <xref:System.Windows.Controls.ContextMenu> to different positions for each button.  
   
- [!code-xml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
+ [!code-xaml[ContextMenuService_snip#SharedContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuService_snip/CSharp/Pane1.xaml#sharedcontextmenu)]  
   
  The following example shows how to use the service to display a <xref:System.Windows.Controls.ContextMenu> on a disabled button. Notice that you set the <xref:System.Windows.Controls.ContextMenuService.ShowOnDisabled%2A> property on the button that is the parent of the context menu.  
   
- [!code-xml[ContextMenu#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#3)]  
+ [!code-xaml[ContextMenu#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#3)]  
   
  ]]></format>
     </remarks>

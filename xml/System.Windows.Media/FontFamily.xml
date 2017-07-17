@@ -36,7 +36,7 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  [!code-csharp[FontSnippets#FontFallbackSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontfallbacksnippet3)]
  [!code-vb[FontSnippets#FontFallbackSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontfallbacksnippet3)]
- [!code-xml[FontSnippets#FontFallbackSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml#fontfallbacksnippet3)]  
+ [!code-xaml[FontSnippets#FontFallbackSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml#fontfallbacksnippet3)]  
   
  In the preceding example, the font that is referenced, "Comic Sans MS", is referred to by its *friendly name*. Also, in this example the font is assumed to be in the system font collection.  
   
@@ -45,7 +45,7 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  [!code-csharp[FontSnippets#FontPackageSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet6)]
  [!code-vb[FontSnippets#FontPackageSnippet6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet6)]
- [!code-xml[FontSnippets#FontPackageSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet6)]  
+ [!code-xaml[FontSnippets#FontPackageSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet6)]  
   
  The friendly name of the font can also specify a relative [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value, which requires a base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] to resolve the font reference. The <xref:System.Windows.Media.FontFamily.BaseUri%2A> property of the <xref:System.Windows.Media.FontFamily> object corresponds to the base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value. The following code example shows how to create a font reference that is composed of a base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value and a relative [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value.  
   
@@ -59,7 +59,7 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  When a <xref:System.Windows.Media.FontFamily> is specified as an attribute in markup, the base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value is always implied—its value is the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] page. The implied base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value is used with the relative [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value in the friendly name string to obtain the location of the font. In the following [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] example, notice that the relative [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value uses the "./" notation, which means "in the current folder" of the base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] value.  
   
- [!code-xml[FontSnippets#FontPackageSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
+ [!code-xaml[FontSnippets#FontPackageSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
   
  A [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application can package fonts as either a content item, a resource item, or a library resource item. For more information, see [Packaging Fonts with Applications](~/docs/framework/wpf/advanced/packaging-fonts-with-applications.md).  
   
@@ -81,13 +81,13 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  [!code-csharp[FontSnippets#FontFallbackSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontfallbacksnippet1)]
  [!code-vb[FontSnippets#FontFallbackSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontfallbacksnippet1)]
- [!code-xml[FontSnippets#FontFallbackSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml#fontfallbacksnippet1)]  
+ [!code-xaml[FontSnippets#FontFallbackSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml#fontfallbacksnippet1)]  
   
  Any one of the fonts in the fallback sequence can specify font locations. In the following examples, "Pericles Light" is referenced as an application resource, and "Verdana" is referenced as a system font collection member.  
   
  [!code-csharp[FontSnippets#FontFallbackSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontfallbacksnippet2)]
  [!code-vb[FontSnippets#FontFallbackSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontfallbacksnippet2)]
- [!code-xml[FontSnippets#FontFallbackSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml#fontfallbacksnippet2)]  
+ [!code-xaml[FontSnippets#FontFallbackSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml#fontfallbacksnippet2)]  
   
 ## Composite Fonts  
  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] platform provides a composite font feature to allow the construction of full range multilingual fonts, and to avoid displaying missing glyphs. Composite fonts replace the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] font linking, font fallback, font binding, font association, and end-user-defined characters (EUDC) mechanisms.  
@@ -98,7 +98,7 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  The following example shows the font family markup in a ".CompositeFont" file.  
   
- [!code-xml[CompositeFontMarkup#CF](~/samples/snippets/csharp/VS_Snippets_Wpf/CompositeFontMarkup/CS/comp.xaml#cf)]  
+ [!code-xaml[CompositeFontMarkup#CF](~/samples/snippets/csharp/VS_Snippets_Wpf/CompositeFontMarkup/CS/comp.xaml#cf)]  
   
  The following four composite fonts appear in the default [!INCLUDE[TLA2#tla_win](~/includes/tla2sharptla-win-md.md)] font directory as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] installation.  
   

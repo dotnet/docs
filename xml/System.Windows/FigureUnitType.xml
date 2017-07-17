@@ -17,7 +17,7 @@
 ## Examples  
  In the following example, when the user clicks on the <xref:System.Windows.Documents.Figure>, the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> decreases. Below is the XAML for the sample.  
   
- [!code-xml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
+ [!code-xaml[FlowMiscSnippets_snip#FigureLengthExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/figurelengthexample.xaml#figurelengthexamplewholepage)]  
   
  Below is the code used to decrease the <xref:System.Windows.Documents.Figure.Width%2A> of the <xref:System.Windows.Documents.Figure> using the Pixel to specify the unit type.  
   

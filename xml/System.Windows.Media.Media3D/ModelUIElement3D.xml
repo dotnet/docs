@@ -28,7 +28,7 @@
 ## Examples  
  The following example shows how to create two cubes using the <xref:System.Windows.Media.Media3D.ModelUIElement3D> class:  
   
- [!code-xml[ContainerModelSample#Viewport3D](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerModelSample/CSharp/Window1.xaml#viewport3d)]  
+ [!code-xaml[ContainerModelSample#Viewport3D](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerModelSample/CSharp/Window1.xaml#viewport3d)]  
   
  The cubes respond to the mouse down event through the following event handlers:  
   
@@ -97,7 +97,7 @@
 ## Examples  
  The following example shows how to create two cubes using the <xref:System.Windows.Media.Media3D.ModelUIElement3D> class:  
   
- [!code-xml[ContainerModelSample#Viewport3D](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerModelSample/CSharp/Window1.xaml#viewport3d)]  
+ [!code-xaml[ContainerModelSample#Viewport3D](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerModelSample/CSharp/Window1.xaml#viewport3d)]  
   
  The cubes respond to the mouse down event through the following event handlers:  
   

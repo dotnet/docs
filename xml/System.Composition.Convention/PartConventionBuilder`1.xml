@@ -15,9 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the part.</typeparam>
+    <summary>Configures a type as a Managed Extensibility Framework (MEF) part, with strongly typed return values.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExportProperty">
@@ -37,10 +38,11 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <summary>Exports a specified property.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty">
@@ -61,11 +63,13 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <param name="exportConfiguration">An action that configures the exported property.</param>
+        <summary>Exports a specified property with the specified configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -88,11 +92,13 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertySelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <summary>Exports a specified property as a specified contract type.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -116,12 +122,13 @@
         <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertySelector">To be added.</param>
-        <param name="exportConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to export.</param>
+        <param name="exportConfiguration">An action that configures the exported property.</param>
+        <summary>Exports a specified property as a specified contract type by using the specified configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty">
@@ -141,10 +148,11 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <summary>Imports a specified property.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty">
@@ -165,11 +173,13 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <param name="propertySelector">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <param name="importConfiguration">An action that configures the imported property.</param>
+        <summary>Imports a specified property by using the specified configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -192,11 +202,12 @@
         <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertySelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <summary>Imports a specified property with the specified contract type.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -220,12 +231,14 @@
         <Parameter Name="importConfiguration" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TContract">To be added.</typeparam>
-        <param name="propertySelector">To be added.</param>
-        <param name="importConfiguration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TContract">The contract type.</typeparam>
+        <param name="propertySelector">A function that selects the property to import.</param>
+        <param name="importConfiguration">An action that configures the imported property.</param>
+        <summary>Imports a specified property with the specified contract type and configuration.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="NotifyImportsSatisfied">
@@ -245,10 +258,12 @@
         <Parameter Name="methodSelector" Type="System.Linq.Expressions.Expression&lt;System.Action&lt;T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="methodSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="methodSelector">An action that selects the method to call.</param>
+        <summary>Selects a method to be called when composition is complete.</summary>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Argument">The <paramref name="methodSelector" /> expression must be a <see langword="void" /> method with no arguments.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -268,10 +283,12 @@
         <Parameter Name="constructorSelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Composition.Convention.ParameterImportConventionBuilder,T&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="constructorSelector">A function that selects a constructor.</param>
+        <summary>Selects a constructor to be used in composition.</summary>
+        <returns>An object that can be used to further configure the part. </returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Argument">The <paramref name="constructorSelector" /> expression must use the <see langword="new" /> operator.</exception>
       </Docs>
     </Member>
   </Members>

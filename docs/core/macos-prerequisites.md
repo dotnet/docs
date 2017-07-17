@@ -4,7 +4,7 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
-ms.date: 06/12/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -17,12 +17,12 @@ This article shows you the supported macOS versions and .NET Core dependencies t
 
 ## Supported macOS versions
 
-.NET Core is supported by the following versions of macOS:
+.NET Core is supported on the following versions of macOS:
 
 * macOS 10.12 "Sierra"
-* macOS 10.11 "El Capitan"
+* macOS 10.11 "El Capitan" (.NET Core 1.x only)
 
-See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the complete list of supported operating systems.
+See [Supported OS Versions](https://github.com/dotnet/core/blob/master/roadmap.md#supported-os-versions) for the complete list of supported operating systems.
 
 ## .NET Core dependencies
 
@@ -38,13 +38,15 @@ ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
 ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 ```
 
-Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md) topic.
+Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [1.0.0 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0-known-issues.md) and [1.0.1 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.1-known-issues.md) topics.
 
 **.NET Core 2.x**
 
-Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md) topic.
+Download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for the version you have installed.
 
 ## Visual Studio for Mac
+
+You can use any editor to develop .NET Core applications using the .NET Core SDK. However, if you want to develop .NET Core applications on a Mac in an integrated development environment, you can use [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/). 
 
 .NET Core development on macOS with Visual Studio for Mac requires:
 

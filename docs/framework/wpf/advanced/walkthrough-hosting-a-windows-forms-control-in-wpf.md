@@ -45,7 +45,7 @@ manager: "wpickett"
   
 4.  Name the                                  <xref:System.Windows.Controls.Grid> element                                  `grid1`.  
   
-     [!code-xml[HostingWfInWPF#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml#1)]  
+     [!code-xaml[HostingWfInWPF#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWPF/CSharp/HostingWfInWPF/Window1.xaml#1)]  
   
 5.  In Design view or XAML view, select the                                  <xref:System.Windows.Window> element.  
   

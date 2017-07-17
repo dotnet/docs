@@ -225,16 +225,16 @@ Policy.Handle<HttpResponseException>() // etc
 ## Additional resources
 
 -   **Retry pattern**
-    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/retry*](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry)
+    [*https://docs.microsoft.com/azure/architecture/patterns/retry*](https://docs.microsoft.com/azure/architecture/patterns/retry)
 
 -   **Connection Resiliency** (Entity Framework Core)
-    [*https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency*](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency)
+    [*https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency*](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency)
 
 -   **Polly** (.NET resilience and transient-fault-handling library)
     [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
 
 -   **Circuit Breaker pattern**
-    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
+    [*https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 
 -   **Marc Brooker. Jitter: Making Things Better With Randomness**
     https://brooker.co.za/blog/2015/03/21/backoff.html

@@ -43,7 +43,7 @@ info : Package 'Newtonsoft.Json' is compatible with all the specified frameworks
 info : PackageReference for package 'Newtonsoft.Json' version '9.0.1' added to file 'ToDo.csproj'.
 ```
 
-The *ToDo.csproj* file now contains a [`<PackageReference>`](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) element for the referenced package.
+The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) element for the referenced package.
 
 ```xml
 <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />

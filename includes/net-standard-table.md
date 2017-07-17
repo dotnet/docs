@@ -5,6 +5,7 @@
 | .NET Framework (with tooling 2.0 preview) | 4.5   | 4.5    | 4.5.1 | 4.6   | 4.6.1 | 4.6.1  | 4.6.1  | 4.6.1 |
 | Mono                                      | 4.6   | 4.6    | 4.6   | 4.6   | 4.6   | 4.6    | 4.6    | vNext |
 | Xamarin.iOS                               | 10.0  | 10.0   | 10.0  | 10.0  | 10.0  | 10.0   | 10.0   | vNext |
+| Xamarin.Mac                               | 3.0   | 3.0    | 3.0   | 3.0   | 3.0   | 3.0    | 3.0    | vNext |
 | Xamarin.Android                           | 7.0   | 7.0    | 7.0   | 7.0   | 7.0   | 7.0    | 7.0    | vNext |
 | Universal Windows Platform                | 10.0  | 10.0   | 10.0  | 10.0  | 10.0  | vNext  | vNext  | vNext |
 | Windows                                   | 8.0   | 8.0    | 8.1   |       |       |        |        |       |
@@ -13,7 +14,7 @@
 
 - The columns represent .NET Standard versions. Each header cell is a link to a document that shows which APIs got added in that version of .NET Standard.
 - The rows represent the different .NET platforms.
-- The version number in each cell indicates the *minimum* version of the platform you'll need to implement that .NET Standard version.
+- The version number in each cell indicates the *minimum* version of the platform you'll need in order to target that .NET Standard version.
 
 [1.0]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.0.md
 [1.1]: https://github.com/dotnet/standard/blob/master/docs/versions/netstandard1.1.md

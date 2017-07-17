@@ -63,11 +63,7 @@ You can enable the .NET Framework 3.5 through Control Panel. This option require
   
 2. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, select **OK**, and reboot your computer if prompted.  
   
-You don't need to select the child items for **Windows Communication Foundation (WCF) HTTP activation** unless you're a developer who requires WCF script and handler mapping functionality.  
-  
-The following video shows how to do this:  
-  
-![Installing the .NET Framework on Windows 8 or 8.1](../../../docs/framework/get-started/media/clr-net35-win8.png "CLR_NET35_Win8")  
+You don't need to select the child items for **Windows Communication Foundation (WCF) HTTP activation** unless you're a developer who requires WCF script and handler mapping functionality.
   
 ## See also
 

@@ -61,8 +61,6 @@ The common language runtime manages memory, thread execution, code execution, co
 
 Regarding security, managed components are awarded varying degrees of trust, depending on a number of factors that include their origin (such as the Internet, enterprise network, or local computer). This means that a managed component might or might not be able to perform file-access operations, registry-access operations, or other sensitive functions, even if it's used in the same active app.
 
-The runtime enforces code access security. For example, users can trust that an executable embedded in a webpage shows an animation on screen or plays a song but cannot access their personal data, file system, or network. The security features of the runtime thus enable legitimate exceptionally feature rich Internet-deployed software.
-
 The runtime also enforces code robustness by implementing a strict type-and-code-verification infrastructure called the common type system (CTS). The CTS ensures that all managed code is self-describing. The various Microsoft and third-party language compilers generate managed code that conforms to the CTS. This means that managed code can consume other managed types and instances, while strictly enforcing type fidelity and type safety.
 
 In addition, the managed environment of the runtime eliminates many common software issues. For example, the runtime automatically handles object layout and manages references to objects, releasing them when they are no longer being used. This automatic memory management resolves the two most common app errors, memory leaks and invalid memory references.

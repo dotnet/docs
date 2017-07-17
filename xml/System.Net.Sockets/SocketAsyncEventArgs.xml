@@ -25,8 +25,42 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an asynchronous socket operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.SocketAsyncEventArgs> class is part of a set of enhancements to the <xref:System.Net.Sockets.Socket?displayProperty=fullName> class that provide an alternative asynchronous pattern that can be used by specialized high-performance socket applications. This class was specifically designed for network server applications that require high performance. An application can use the enhanced asynchronous pattern exclusively or only in targeted hot areas (for example, when receiving large amounts of data).  
+  
+ The main feature of these enhancements is the avoidance of the repeated allocation and synchronization of objects during high-volume asynchronous socket I/O. The Begin/End design pattern currently implemented by the <xref:System.Net.Sockets.Socket?displayProperty=fullName> class requires a <xref:System.IAsyncResult?displayProperty=fullName> object be allocated for each asynchronous socket operation.  
+  
+ In the new <xref:System.Net.Sockets.Socket?displayProperty=fullName> class enhancements, asynchronous socket operations are described by reusable <xref:System.Net.Sockets.SocketAsyncEventArgs> objects allocated and maintained by the application. High-performance socket applications know best the amount of overlapped socket operations that must be sustained. The application can create as many of the <xref:System.Net.Sockets.SocketAsyncEventArgs> objects that it needs. For example, if a server application needs to have 15 socket accept operations outstanding at all times to support incoming client connection rates, it can allocate 15 reusable <xref:System.Net.Sockets.SocketAsyncEventArgs> objects for that purpose.  
+  
+ The pattern for performing an asynchronous socket operation with this class consists of the following steps:  
+  
+1.  Allocate a new <xref:System.Net.Sockets.SocketAsyncEventArgs> context object, or get a free one from an application pool.  
+  
+2.  Set properties on the context object to the operation about to be performed (the completion callback method, the data buffer, the offset into the buffer, and the maximum amount of data to transfer, for example).  
+  
+3.  Call the appropriate socket method (xxxAsync) to initiate the asynchronous operation.  
+  
+4.  If the asynchronous socket method (xxxAsync) returns true, in the callback, query the context properties for completion status.  
+  
+5.  If the asynchronous socket method (xxxAsync) returns false, the operation completed synchronously. The context properties may be queried for the operation result.  
+  
+6.  Reuse the context for another operation, put it back in the pool, or discard it.  
+  
+ The lifetime of the new asynchronous socket operation context object is determined by references by the application code and asynchronous I/O references. It is not necessary for the application to retain a reference to an asynchronous socket operation context object after it is submitted as a parameter to one of the asynchronous socket operation methods. It will remain referenced until the completion callback returns. However it is advantageous for the application to retain the reference to the context so that it can be reused for a future asynchronous socket operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the connection logic for the socket server that uses the <xref:System.Net.Sockets.SocketAsyncEventArgs> class. After accepting a connection, all data read from the client is sent back to the client. The read and echo back to the client pattern is continued until the client disconnects. The BufferManager class that is used by this example is displayed in the code example for the <xref:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer%28System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method. The SocketAsyncEventArgsPool class that is used in this example is displayed in the code example for the <xref:System.Net.Sockets.SocketAsyncEventArgs.%23ctor%2A> constructor.  
+  
+ [!code-csharp[NCLAsyncSocketServer#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLAsyncSocketServer/CS/AsyncSocketServer.cs#3)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -50,8 +84,35 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates an empty <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After calling this constructor all properties will have their default values:  
+  
+-   Object references will be null  
+  
+-   Properties that return an integer will return zero.  
+  
+-   The <xref:System.Net.Sockets.SocketAsyncEventArgs.LastOperation%2A> property will be equal to <xref:System.Net.Sockets.SocketAsyncOperation.None>.  
+  
+-   The <xref:System.Net.Sockets.SocketAsyncEventArgs.SendPacketsFlags%2A> property will be equal to <xref:System.Net.Sockets.TransmitFileOptions.UseDefaultWorkerThread?displayProperty=fullName>, which specifies no flags will be used.  
+  
+-   The <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketFlags%2A> property will be equal to <xref:System.Net.Sockets.SocketAsyncOperation.None>.  
+  
+ The caller must set the appropriate properties prior to passing the object to the appropriate asynchronous socket (xxxAsync) method.  
+  
+   
+  
+## Examples  
+ The following code example represents a collection of reusable <xref:System.Net.Sockets.SocketAsyncEventArgs> objects.  
+  
+ [!code-csharp[NCLAsyncSocketServer#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLAsyncSocketServer/CS/AsyncSocketServer.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The platform is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="AcceptSocket">
@@ -77,9 +138,17 @@
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the socket to use or the socket created for accepting a connection with an asynchronous socket method.</summary>
+        <value>The <see cref="T:System.Net.Sockets.Socket" /> to use or the socket created for accepting a connection with an asynchronous socket method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to provide an already created <xref:System.Net.Sockets.Socket> that will be used for an asynchronous socket accept operation. Upon completion of the accept operation, it is the socket representing the accepted connection. If not supplied (set to null) before calling the <xref:System.Net.Sockets.Socket.AcceptAsync%2A?displayProperty=fullName> method, a new socket will be created automatically and be accessible in the completion callback with this property.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="Buffer">
@@ -105,9 +174,18 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the data buffer to use with an asynchronous socket method.</summary>
+        <value>A <see cref="T:System.Byte" /> array that represents the data buffer to use with an asynchronous socket method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property gets the data buffer currently associated with the <xref:System.Net.Sockets.SocketAsyncEventArgs> instance. To set the buffer, the <xref:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer%2A> method must be used.  
+  
+ This property is used with the <xref:System.Net.Sockets.Socket.AcceptAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName>, and <xref:System.Net.Sockets.Socket.SendToAsync%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BufferList">
@@ -133,9 +211,27 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an array of data buffers to use with an asynchronous socket method.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> that represents an array of data buffers to use with an asynchronous socket method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used with the <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName> methods.  
+  
+ This property is used to provide multiple buffers of data to be sent or to provide multiple buffers in which to store received data for an asynchronous socket operation that can send or receive data. Multiple buffers using the <xref:System.Net.Sockets.SocketAsyncEventArgs.BufferList%2A> property are supported by the <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName> methods.  
+  
+ If the <xref:System.Net.Sockets.SocketAsyncEventArgs.BufferList%2A> property is set to a non-null value, the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property must be null and is ignored by the <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName> methods.  
+  
+ If the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> was set to a non-null value and an attempt is made to set the <xref:System.Net.Sockets.SocketAsyncEventArgs.BufferList%2A> property to a non-null value, an exception is thrown.  
+  
+ If the <xref:System.Net.Sockets.SocketAsyncEventArgs.BufferList%2A> property is set to a non-null value, the <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.AcceptAsync%2A?displayProperty=fullName> methods will throw an <xref:System.ArgumentException>.  
+  
+ The <xref:System.Net.Sockets.SocketAsyncEventArgs.BufferList%2A> parameter is ignored by the <xref:System.Net.Sockets.Socket.DisconnectAsync%2A?displayProperty=fullName> and <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There are ambiguous buffers specified on a set operation. This exception occurs if the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property has been set to a non-null value and an attempt was made to set the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" /> property to a non-null value.</exception>
       </Docs>
     </Member>
     <Member MemberName="BytesTransferred">
@@ -161,9 +257,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the number of bytes transferred in the socket operation.</summary>
+        <value>An <see cref="T:System.Int32" /> that contains the number of bytes transferred in the socket operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the number of bytes transferred in an asynchronous socket operation that can receive or send data. If zero is returned from a read operation, the remote end has closed the connection.  
+  
+ This property is set by all asynchronous socket operations except the <xref:System.Net.Sockets.Socket.DisconnectAsync%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Completed">
@@ -189,8 +294,19 @@
         <ReturnType>System.EventHandler&lt;System.Net.Sockets.SocketAsyncEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The event used to complete an asynchronous operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.SocketAsyncEventArgs.Completed> event provides a way for client applications to complete an asynchronous socket operation. An event handler should be attached to the event within a <xref:System.Net.Sockets.SocketAsyncEventArgs> instance when an asynchronous socket operation is initiated, otherwise the application will not be able to determine when the operation completes.  
+  
+ The completion callback delegates referenced by the <xref:System.Net.Sockets.SocketAsyncEventArgs.Completed> event contains program logic to finish processing the asynchronous socket operation for the client.  
+  
+ When the event is signaled, the application uses the <xref:System.Net.Sockets.SocketAsyncEventArgs> object parameter to obtain the status of the completed asynchronous socket operation.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectByNameError">
@@ -216,9 +332,20 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the exception in the case of a connection failure when a <see cref="T:System.Net.DnsEndPoint" /> was used.</summary>
+        <value>An <see cref="T:System.Exception" /> that indicates the cause of the connection error when a <see cref="T:System.Net.DnsEndPoint" /> was specified for the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the case of a connection failure when a <xref:System.Net.DnsEndPoint> was specified for the <xref:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint%2A> property, the <xref:System.Net.Sockets.SocketAsyncEventArgs.ConnectByNameError%2A> property will contain the exception that indicates the detailed cause of the socket error.  
+  
+ When an <xref:System.Net.IPEndPoint> was specified for the <xref:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint%2A> property and a connection failure occurs, the <xref:System.Net.Sockets.SocketAsyncEventArgs.ConnectByNameError%2A> property will be a `null` reference.  
+  
+ The <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketError%2A> property is always set in the case of a connection failure. The <xref:System.Net.Sockets.SocketAsyncEventArgs.ConnectByNameError%2A> property contains more information about the failure if it was a failure connecting to a <xref:System.Net.DnsEndPoint>. If an application is only interested in whether the connect operation succeeded or failed, then the application only needs to check the <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketError%2A> property.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectSocket">
@@ -244,9 +371,16 @@
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The created and connected <see cref="T:System.Net.Sockets.Socket" /> object after successful completion of the <see cref="Overload:System.Net.Sockets.Socket.ConnectAsync" /> method.</summary>
+        <value>The connected <see cref="T:System.Net.Sockets.Socket" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After successful completion of the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method, this property contains the newly created and connected <xref:System.Net.Sockets.Socket> object.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -272,9 +406,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the maximum amount of data, in bytes, to send or receive in an asynchronous operation.</summary>
+        <value>An <see cref="T:System.Int32" /> that contains the maximum amount of data, in bytes, to send or receive.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set by calling the <xref:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer%2A> method.  
+  
+ This property is used with the <xref:System.Net.Sockets.Socket.AcceptAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName>, and <xref:System.Net.Sockets.Socket.SendToAsync%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectReuseSocket">
@@ -299,9 +442,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that specifies if socket can be reused after a disconnect operation.</summary>
+        <value>A <see cref="T:System.Boolean" /> that specifies if socket can be reused after a disconnect operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to alter the behavior of <xref:System.Net.Sockets.Socket.DisconnectAsync%2A?displayProperty=fullName> method. If true, a socket disconnected by the <xref:System.Net.Sockets.Socket.DisconnectAsync%2A?displayProperty=fullName> method can be reused after disconnect completion in subsequent socket accept or connect operations.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -328,8 +478,26 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> instance and optionally disposes of the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Net.Sockets.SocketAsyncEventArgs> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+> [!NOTE]
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -356,8 +524,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Frees resources used by the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.SocketAsyncEventArgs> class finalizer closes the <xref:System.Net.Sockets.SocketAsyncEventArgs> and free resources associated with the <xref:System.Net.Sockets.SocketAsyncEventArgs>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LastOperation">
@@ -383,9 +558,22 @@
         <ReturnType>System.Net.Sockets.SocketAsyncOperation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the type of socket operation most recently performed with this context object.</summary>
+        <value>A <see cref="T:System.Net.Sockets.SocketAsyncOperation" /> instance that indicates the type of socket operation most recently performed with this context object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property describes the asynchronous socket operation that was most recently completed using this <xref:System.Net.Sockets.SocketAsyncEventArgs> object. The value of this property will be <xref:System.Net.Sockets.SocketAsyncOperation.None?displayProperty=fullName> until the <xref:System.Net.Sockets.SocketAsyncEventArgs> instance is used to begin an asynchronous socket operation. The property will then be set to the type of operation being performed in the methods that take the <xref:System.Net.Sockets.SocketAsyncEventArgs> as a parameter. This property more easily facilitates using a single completion callback delegate for multiple kinds of asynchronous socket operations.  
+  
+ This property remains valid in a <xref:System.Net.Sockets.SocketAsyncEventArgs> instance until the <xref:System.Net.Sockets.SocketAsyncEventArgs> instance is used for another asynchronous socket (xxxAsync) operation.  
+  
+ This property is set by all asynchronous socket (xxxAsync) methods.  
+  
+ Calling an asynchronous socket method (xxxAsync) on the <xref:System.Net.Sockets.Socket?displayProperty=fullName> class sets this property value. This property is intended for use with the SocketAsyncCallback completion routine implemented by the application.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -411,9 +599,20 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the offset, in bytes, into the data buffer referenced by the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property.</summary>
+        <value>An <see cref="T:System.Int32" /> that contains the offset, in bytes, into the data buffer referenced by the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property describes the starting byte offset of data in the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property. This value is set by calling the <xref:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer%2A> method.  
+  
+ This property does not apply to the <xref:System.Net.Sockets.SocketAsyncEventArgs.BufferList%2A> property.  
+  
+ This property is used with the <xref:System.Net.Sockets.Socket.AcceptAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName>, and <xref:System.Net.Sockets.Socket.SendToAsync%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCompleted">
@@ -442,9 +641,33 @@
         <Parameter Name="e" Type="System.Net.Sockets.SocketAsyncEventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="e">The event that is signaled.</param>
+        <summary>Represents a method that is called when an asynchronous operation completes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not callable by user code. This method gets called by the internals of the <xref:System.Net.Sockets.SocketAsyncEventArgs> object when the current operation is complete. This method is used with all asynchronous socket (xxxAsync) methods.  
+  
+ An application that creates a class inheriting from <xref:System.Net.Sockets.SocketAsyncEventArgs> can override this method to hook into this completion notification and clean up any resources that it allocated for the operation. The default implementation just raises the <xref:System.Net.Sockets.SocketAsyncEventArgs.Completed> event.  
+  
+ This method is used to hook up an event handler to be used as the completion callback for a subsequent asynchronous socket operation. The caller must implement at least one callback delegate inherited from this method prior to starting an asynchronous socket operation using one of the asynchronous (xxxAsync) methods on the <xref:System.Net.Sockets.Socket?displayProperty=fullName> class.  
+  
+ The caller's <xref:System.Net.Sockets.SocketAsyncEventArgs.OnCompleted%2A> method provides a way for client applications to complete an asynchronous socket operation. A callback delegate must be implemented when an asynchronous socket operation is initiated. The completion callback delegate(s) inherited from the <xref:System.Net.Sockets.SocketAsyncEventArgs.OnCompleted%2A> method must contain program logic to finish processing the asynchronous socket operation for the client.  
+  
+ When an asynchronous operation is signaled, the application uses the <xref:System.Net.Sockets.SocketAsyncEventArgs> object parameter to obtain status of the completed asynchronous socket operation.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ConnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.DisconnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveMessageFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendToAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
       </Docs>
     </Member>
     <Member MemberName="ReceiveMessageFromPacketInfo">
@@ -470,9 +693,18 @@
         <ReturnType>System.Net.Sockets.IPPacketInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the IP address and interface of a received packet.</summary>
+        <value>An <see cref="T:System.Net.Sockets.IPPacketInformation" /> instance that contains the destination IP address and interface of a received packet.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides information about a packet received using the <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName> method.  
+  
+ This property is used with the <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoteEndPoint">
@@ -498,9 +730,20 @@
         <ReturnType>System.Net.EndPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the remote IP endpoint for an asynchronous operation.</summary>
+        <value>An <see cref="T:System.Net.EndPoint" /> that represents the remote IP endpoint for an asynchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the remote endpoint. This property can specify the remote endpoint to which to connect using the <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=fullName> method. This property can specify the remote endpoint to which to send data using <xref:System.Net.Sockets.Socket.SendToAsync%2A?displayProperty=fullName> method. This property can specify the remote endpoint from which data was received using the <xref:System.Net.Sockets.Socket.ReceiveFromAsync%2A?displayProperty=fullName> or <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName> methods.  
+  
+ This remote endpoint specified by this property can include an IPv4 or IPv6 address.  
+  
+ This property is used with the <xref:System.Net.Sockets.Socket.ConnectAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A?displayProperty=fullName>, or <xref:System.Net.Sockets.Socket.SendToAsync%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendPacketsElements">
@@ -526,9 +769,16 @@
         <ReturnType>System.Net.Sockets.SendPacketsElement[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets an array of buffers to be sent for an asynchronous operation used by the <see cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.</summary>
+        <value>An array of <see cref="T:System.Net.Sockets.SendPacketsElement" /> objects that represent an array of buffers to be sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array of buffers can represent a file or files in memory or a set of memory data buffers. This property is used with the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendPacketsFlags">
@@ -553,9 +803,16 @@
         <ReturnType>System.Net.Sockets.TransmitFileOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a bitwise combination of <see cref="T:System.Net.Sockets.TransmitFileOptions" /> values for an asynchronous operation used by the <see cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.</summary>
+        <value>A <see cref="T:System.Net.Sockets.TransmitFileOptions" /> that contains a bitwise combination of values that are used with an asynchronous operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the <xref:System.Net.Sockets.TransmitFileOptions> that are used by the <xref:System.Net.Sockets.Socket.SendPacketsAsync%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendPacketsSendSize">
@@ -586,9 +843,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the size, in bytes, of the data block used in the send operation.</summary>
+        <value>An <see cref="T:System.Int32" /> that contains the size, in bytes, of the data block used in the send operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to zero to let the sockets layer select a default send size. Setting this property to 0xFFFFFFFF enables the caller to control the size and content of each send request, achieved by using the <xref:System.Net.Sockets.SendPacketsElement.EndOfPacket%2A?displayProperty=fullName> property. This capability is useful for message protocols that place limitations on the size of individual send requests.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetBuffer">
@@ -596,7 +860,17 @@
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Docs />
+      <Docs>
+        <summary>Initializes the data buffer to use with an asynchronous socket method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property to null and the <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A> and <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A> properties to zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
     </MemberGroup>
     <Member MemberName="SetBuffer">
       <MemberSignature Language="C#" Value="public void SetBuffer (int offset, int count);" />
@@ -625,10 +899,22 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="offset">The offset, in bytes, in the data buffer where the operation starts.</param>
+        <param name="count">The maximum amount of data, in bytes, to send or receive in the buffer.</param>
+        <summary>Sets the data buffer to use with an asynchronous socket method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `offset` and `count` parameters can't be negative numbers. The combination of the `offset` and `count` parameters must be in bounds of the buffer array in the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property.  
+  
+ This method sets the <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A> property to the `count` parameter and the <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A> property to the `offset` parameter. If the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property is null, this method ignores the `offset` and `count` parameters and sets the <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A> and <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A> properties to 0.  
+  
+ This method does not change the <xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">An argument was out of range. This exception occurs if the <paramref name="offset" /> parameter is less than zero or greater than the length of the array in the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property. This exception also occurs if the <paramref name="count" /> parameter is less than zero or greater than the length of the array in the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property minus the <paramref name="offset" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetBuffer">
@@ -659,11 +945,29 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The data buffer to use with an asynchronous socket method.</param>
+        <param name="offset">The offset, in bytes, in the data buffer where the operation starts.</param>
+        <param name="count">The maximum amount of data, in bytes, to send or receive in the buffer.</param>
+        <summary>Sets the data buffer to use with an asynchronous socket method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `offset` and `count` parameters can't be negative numbers. The combination of the `offset` and `count` parameters must be in bounds of the data array in the `buffer` parameter.  
+  
+ This method sets the [SetBuffer Method (Byte\<xref:System.Net.Sockets.SocketAsyncEventArgs.Buffer%2A> property to the `buffer` parameter, the [SetBuffer Method (Byte\<xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A> property to the `count` parameter, and the [SetBuffer Method (Byte\<xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A> property to the `offset` parameter.  
+  
+   
+  
+## Examples  
+ The following code example creates a single large buffer which can be divided up and assigned to [SetBuffer Method (Byte\<xref:System.Net.Sockets.SocketAsyncEventArgs> objects for use with each socket I/O operation. This enables buffers to be easily reused and guards against fragmenting heap memory.  
+  
+ [!code-csharp[NCLAsyncSocketServer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLAsyncSocketServer/CS/AsyncSocketServer.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There are ambiguous buffers specified. This exception occurs if the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property is also not null and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" /> property is also not null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">An argument was out of range. This exception occurs if the <paramref name="offset" /> parameter is less than zero or greater than the length of the array in the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property. This exception also occurs if the <paramref name="count" /> parameter is less than zero or greater than the length of the array in the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" /> property minus the <paramref name="offset" /> parameter.</exception>
       </Docs>
     </Member>
     <Member MemberName="SocketClientAccessPolicyProtocol">
@@ -687,9 +991,18 @@
         <ReturnType>System.Net.Sockets.SocketClientAccessPolicyProtocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the protocol to use to download the socket client access policy file.</summary>
+        <value>Returns <see cref="T:System.Net.Sockets.SocketClientAccessPolicyProtocol" />.  
+  
+ The protocol to use to download the socket client access policy file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Sockets.SocketClientAccessPolicyProtocol> specifies the method to download a client access policy file.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SocketError">
@@ -715,9 +1028,28 @@
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the result of the asynchronous socket operation.</summary>
+        <value>A <see cref="T:System.Net.Sockets.SocketError" /> that represents the result of the asynchronous socket operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the completion status of an asynchronous socket operation. A value of <xref:System.Net.Sockets.SocketError.Success?displayProperty=fullName> indicates successful completion of an operation. This property is primarily used in an application’s event handler routine.  
+  
+ This property is used with all of the asynchronous socket (xxxAsync) methods.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ConnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.DisconnectAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.ReceiveMessageFromAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="M:System.Net.Sockets.Socket.SendToAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
+        <altmember cref="T:System.Net.Sockets.SocketError" />
       </Docs>
     </Member>
     <Member MemberName="SocketFlags">
@@ -743,9 +1075,18 @@
         <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the results of an asynchronous socket operation or sets the behavior of an asynchronous operation.</summary>
+        <value>A <see cref="T:System.Net.Sockets.SocketFlags" /> that represents the results of an asynchronous socket operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property specifies the bitwise combination of the <xref:System.Net.Sockets.SocketFlags?displayProperty=fullName> to be used for an asynchronous socket operation.  
+  
+ This property is used with the <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.ReceiveFromAsync%2A?displayProperty=fullName>, <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=fullName>, and <xref:System.Net.Sockets.Socket.SendToAsync%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserToken">
@@ -771,9 +1112,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a user or application object associated with this asynchronous socket operation.</summary>
+        <value>An object that represents the user or application object associated with this asynchronous socket operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used by an application to associate an application state object with the <xref:System.Net.Sockets.SocketAsyncEventArgs> object. Primarily, this property is a way for an application to pass state to the application’s event handler (for example, the asynchronous operation completion method).  
+  
+ This property is used with all of the asynchronous socket (xxxAsync) methods.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

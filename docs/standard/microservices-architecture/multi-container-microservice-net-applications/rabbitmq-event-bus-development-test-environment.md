@@ -86,7 +86,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
             channel.QueueBind(queue: _queueName,
                 exchange: _brokerName,
                 routingKey: eventName);
-            _handlers.Add(eventName, new List<;IIntegrationEventHandler>());
+            _handlers.Add(eventName, new List<IIntegrationEventHandler>());
             _handlers[eventName].Add(handler);
             _eventTypes.Add(typeof(T));
         }

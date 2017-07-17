@@ -162,7 +162,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Diagnostics.Tracing.EventListener>. The `Dispose` method leaves the <xref:System.Diagnostics.Tracing.EventListener> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Diagnostics.Tracing.EventListener> so the garbage collector can reclaim the memory that the <xref:System.Diagnostics.Tracing.EventListener> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  ]]></format>
         </remarks>

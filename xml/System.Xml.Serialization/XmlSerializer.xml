@@ -1268,7 +1268,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [XML Serializer Generator Tool (Sgen.exe)](../Topic/XML%20Serializer%20Generator%20Tool%20\(Sgen.exe\).md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
+ The [XML Serializer Generator Tool (Sgen.exe)](~/docs/framework/serialization/xml-serializer-generator-tool-sgen-exe.md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
   
  If you are distributing such an assembly as part of a client application that calls a Web service, you can apply the <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute> to the client type to specify the location and name of the assembly.  
   
@@ -1338,7 +1338,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [XML Serializer Generator Tool (Sgen.exe)](../Topic/XML%20Serializer%20Generator%20Tool%20\(Sgen.exe\).md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
+ The [XML Serializer Generator Tool (Sgen.exe)](~/docs/framework/serialization/xml-serializer-generator-tool-sgen-exe.md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
   
  If you are distributing such an assembly as part of a client application that calls a Web service, you can apply the <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute> to the client type to specify the location and name of the assembly.  
   
@@ -1378,7 +1378,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [XML Serializer Generator Tool (Sgen.exe)](../Topic/XML%20Serializer%20Generator%20Tool%20\(Sgen.exe\).md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
+ The [XML Serializer Generator Tool (Sgen.exe)](~/docs/framework/serialization/xml-serializer-generator-tool-sgen-exe.md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
   
  If you are distributing such an assembly as part of a client application that calls a Web service, you can apply the <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute> to the client type to specify the location and name of the assembly.  
   
@@ -1420,7 +1420,7 @@ xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [XML Serializer Generator Tool (Sgen.exe)](../Topic/XML%20Serializer%20Generator%20Tool%20\(Sgen.exe\).md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
+ The [XML Serializer Generator Tool (Sgen.exe)](~/docs/framework/serialization/xml-serializer-generator-tool-sgen-exe.md) creates an XML serialization assembly for types in a specified assembly to improve the run-time performance of an <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types. Use the <xref:System.Xml.Serialization.XmlSerializer.GetXmlSerializerAssemblyName%2A> to return the name of such an assembly.  
   
  If you are distributing such an assembly as part of a client application that calls a Web service, you can apply the <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute> to the client type to specify the location and name of the assembly.  
   

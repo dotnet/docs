@@ -98,7 +98,7 @@ public class CatalogContextSeed
         }
     }
 
-    static IEnumerable<;CatalogBrand> GetPreconfiguredCatalogBrands()
+    static IEnumerable<CatalogBrand> GetPreconfiguredCatalogBrands()
     {
         return new List<CatalogBrand>()
        {
@@ -109,7 +109,7 @@ public class CatalogContextSeed
        };
     }
 
-    static IEnumerable<;CatalogType> GetPreconfiguredCatalogTypes()
+    static IEnumerable<CatalogType> GetPreconfiguredCatalogTypes()
     {
         return new List<CatalogType>()
         {
@@ -136,9 +136,9 @@ public class Startup
     {
         services.AddSingleton<IConfiguration>(Configuration);
         // DbContext using an InMemory database provider
-        services.AddDbContext<;CatalogContext>(opt => opt.UseInMemoryDatabase());
+        services.AddDbContext<CatalogContext>(opt => opt.UseInMemoryDatabase());
         //(Alternative: DbContext using a SQL Server provider
-        //services.AddDbContext<;CatalogContext>(c =>
+        //services.AddDbContext<CatalogContext>(c =>
         //{
             // c.UseSqlServer(Configuration["ConnectionString"]);
             //

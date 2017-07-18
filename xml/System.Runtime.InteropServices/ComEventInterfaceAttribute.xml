@@ -46,7 +46,7 @@
   
 -   Link the events to the original COM source interface.  
   
- You rarely apply this attribute. However, if you plan to write source code that produces metadata that closely simulates metadata produced by Tlbimp.exe, you should create a event interface for each original source interface. For a detailed description about how Tlbimp.exe imports events, see [Imported Member Conversion](http://msdn.microsoft.com/en-us/7a272adf-41d7-4409-b0e2-5c0c5ef5266d). For instruction about how to expose a COM event to a.NET client, see [How to: Handle Events Raised by a COM Source](http://msdn.microsoft.com/en-us/12bb67bd-91a2-4554-82fb-bdba3d2c8b04).  
+ You rarely apply this attribute. However, if you plan to write source code that produces metadata that closely simulates metadata produced by Tlbimp.exe, you should create a event interface for each original source interface. For a detailed description about how Tlbimp.exe imports events, see [Imported Member Conversion](http://msdn.microsoft.com/en-us/7a272adf-41d7-4409-b0e2-5c0c5ef5266d). For instruction about how to expose a COM event to a .NET client, see [How to: Handle Events Raised by a COM Source](http://msdn.microsoft.com/en-us/12bb67bd-91a2-4554-82fb-bdba3d2c8b04).  
   
  ]]></format>
     </remarks>

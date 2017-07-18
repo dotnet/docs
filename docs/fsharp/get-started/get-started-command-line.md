@@ -1,6 +1,6 @@
 ---
 title: Get started with F# with command-line tools | Microsoft Docs
-description: Learn how to use F# with the cross-platform .NET CLI.
+description: Learn how to use F# with the cross-platform .NET Core CLI.
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
 ms.author: phcart
@@ -12,7 +12,7 @@ ms.devlang: fsharp
 ms.assetid: 615db1ec-6ef3-4de2-bae6-4586affa9771
 ---
 
-# Get started with F# with the .NET CLI
+# Get started with F# with the .NET Core CLI
 
 This article covers how you can get started with using F# on .NET Core. It will go through building a multi-project solution with a Class Library that is called by a Console Application.
 

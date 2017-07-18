@@ -1,5 +1,5 @@
 ---
-redirect_url: /dotnet/articles/fsharp/introduction-to-functional-programming/functions-as-first-class-values
+redirect_url: /dotnet/fsharp/introduction-to-functional-programming/functions-as-first-class-values
 ---
 
 # Introduction to Functional Programming in F# #

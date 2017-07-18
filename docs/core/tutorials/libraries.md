@@ -217,7 +217,7 @@ Each of these contain the `.dll` files for each target.
 It's important to be able to test across platforms. You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!NOTE]
-> This uses some [.NET CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
+> This uses some [.NET Core CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
 
 1. Set up your solution. You can do so with the following commands:
 
@@ -317,7 +317,7 @@ This will add the three projects above and a solution file which links them toge
 
 ### Project-to-project referencing
 
-The best way to reference a project is to use the .NET CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
+The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```console
 $ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
@@ -331,7 +331,7 @@ The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp
 </ItemGroup>
 ```
 
-You can add this section to each project file manually if you prefer not to use the .NET CLI.
+You can add this section to each project file manually if you prefer not to use the .NET Core CLI.
 
 ### Structuring a solution
 

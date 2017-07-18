@@ -26,8 +26,8 @@ When writing unit tests, be careful you don’t accidentally introduce dependenc
 
 Learn more about unit testing in .NET Core projects:
 
-* Try this [walkthrough creating unit tests with xUnit and the .NET CLI](unit-testing-with-dotnet-test.md). 
+* Try this [walkthrough creating unit tests with xUnit and the .NET Core CLI](unit-testing-with-dotnet-test.md). 
 * The XUnit team has written a tutorial that shows
 [how to use xUnit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
-* If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET CLI](unit-testing-with-mstest.md).
+* If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET Core CLI](unit-testing-with-mstest.md).
 * For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).

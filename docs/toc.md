@@ -237,7 +237,7 @@
 ### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
 ### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 ### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
-### [Get Started with with the .NET CLI](fsharp/get-started/get-started-command-line.md)
+### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)

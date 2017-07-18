@@ -321,7 +321,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 ### Additional resources
 
 -   **Deploy an ASP.NET container to a remote Docker host**
-    [*https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/*](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-hosting-web-apps-in-docker/)
+    [*https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker*](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 ### A note about testing and deploying with orchestrators
 
@@ -360,7 +360,7 @@ If you are developing using the editor/CLI approach, debugging containers is mor
 ### Additional resources
 
 -   **Debugging apps in a local Docker container**
-    [*https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-edit-and-refresh/*](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-docker-edit-and-refresh/)
+    [*https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh*](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
 -   **Steve Lasker. Build, Debug, Deploy ASP.NET Core Apps with Docker.** Video.
     [*https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115*](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T115)

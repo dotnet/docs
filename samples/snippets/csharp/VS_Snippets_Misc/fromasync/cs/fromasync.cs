@@ -271,6 +271,7 @@ namespace APM_Task
     }
 
     #region snippet09
+    //<snippet09>
     class Calculator
     {
         public IAsyncResult BeginCalculate(int decimalPlaces, AsyncCallback ac, object state)
@@ -325,6 +326,7 @@ namespace APM_Task
                         Thread.CurrentThread.ManagedThreadId, piString);
         }
     }
+    //</snippet09>
     #endregion
 } //end APM_Task namespace
 

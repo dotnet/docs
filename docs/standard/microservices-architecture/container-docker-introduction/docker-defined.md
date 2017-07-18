@@ -16,17 +16,17 @@ ms.technology: dotnet-docker
 
 **Figure 2-2**. Docker deploys containers at all layers of the hybrid cloud
 
-Docker image containers can run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run only on Linux hosts, meaning host a server or a VM.
+Docker image containers run natively on Linux and Windows. Windows images run only on Windows hosts and Linux images run only on Linux hosts. The host is a server or a VM.
 
-Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac use a Docker host that is Linux based, and they can create images only for Linux containers. (Developers working on the Mac can edit code or run the Docker CLI from macOS, but as of the time of this writing, containers do not run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
+Developers can use development environments on Windows, Linux, or macOS. On the development computer, you run a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or macOS use a Docker host that is Linux based, and they can create images only for Linux containers. (Developers working on the Mac can edit code or run the Docker CLI from macOS, but as of the time of this writing, containers do not run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
 
-To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker also makes available [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition), which is designed for enterprise development and is used by IT teams who build, ship, and run large business-critical applications in production.
+To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications in production.
 
 To run [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview), there are two types of runtimes:
 
 -   Windows Server Containers provide application isolation through process and namespace isolation technology. A Windows Server Container shares a kernel with the container host and with all containers running on the host.
 
--   Hyper-V Containers expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation.
+-   Hyper-V Containers expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation. Hyper-V Containers allow  isolation required to allow untrusted and “hostile multi-tenant” applications to run on the same host at the cost of a bit less efficiency in startup times and density than Windows Server Container
 
 The images for these containers are created the same way and function the same. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview).
 
@@ -39,14 +39,14 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
                                                                                                                                                                                         
   ![](./media/image3.png)                                                                                                                                ![](./media/image4.png)
                                                                                                                                                                                         
-  Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization.   Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)
+  Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization. Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
 
 Because containers require far fewer resources (for example, they do not need a full OS), they are easy to deploy and they start fast. This allows you to have higher density, meaning that it allows you to run more services on the same hardware unit, thereby reducing costs.
 
-As a side effect of running on the same kernel, you get less isolation than VMs.
+As a side effect of running on the same kernel, you get less isolation than VMs provide.
 
 The main goal of an image is that it makes the environment (dependencies) the same across different deployments. This means that you can debug it on your machine and then deploy it to another machine with the same environment guaranteed.
 

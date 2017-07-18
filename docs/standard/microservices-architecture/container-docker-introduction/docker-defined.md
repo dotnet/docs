@@ -1,5 +1,5 @@
 ---
-title: What is Docker? | Microsoft Docs 
+title: What is Docker?
 description: .NET Microservices Architecture for Containerized .NET Applications | What is Docker?
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -10,7 +10,7 @@ ms.technology: dotnet-docker
 ---
 # What is Docker?
 
-[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
+[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. Docker works in collaboration with cloud, Linux, and Windows vendors (including Microsoft).
 
 ![](./media/image2.png)
 
@@ -18,17 +18,17 @@ ms.technology: dotnet-docker
 
 Docker image containers run natively on Linux and Windows. Windows images run only on Windows hosts and Linux images run only on Linux hosts. The host is a server or a VM.
 
-Developers can use development environments on Windows, Linux, or macOS. On the development computer, you run a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or macOS use a Docker host that is Linux based, and they can create images only for Linux containers. (Developers working on the Mac can edit code or run the Docker CLI from macOS, but as of the time of this writing, containers do not run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
+You can develope on Windows, Linux, or macOS. The development computer runs a Docker host where Docker images are deployed (including the app and its dependencies). On Linux or macOS, you use a Docker host that is Linux based, and can create images only for Linux containers.( On macOS you can edit code or run the Docker CLI, but as of the time of this writing, containers do not run directly on macOS.) On Windows you can create images for either Linux or Windows Containers.
 
-To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications in production.
+[Docker Community Edition (CE)](https://www.docker.com/community-edition) (for Windows or macOS), hosts containers in a development environment and provides additional developer tools. [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications. ~Both products install the necessary VM (the Docker host) to host the containers.~ 
 
-To run [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview), there are two types of runtimes:
+[Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) work with two types of runtimes:
 
 -   Windows Server Containers provide application isolation through process and namespace isolation technology. A Windows Server Container shares a kernel with the container host and with all containers running on the host.
 
--   Hyper-V Containers expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation. Hyper-V Containers allow untrusted and “hostile multi-tenant” applications to run on the same host. Hyper-V Containers have a bit less efficiency in startup times and density than Windows Server Container.
+-   Hyper-V Containers expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation. Hyper-V Containers allow untrusted and *hostile multi-tenant* applications to run on the same host. Hyper-V Containers have a bit less efficiency in startup times and density than Windows Server Containers.
 
-The images for these containers are created the same way and function the same. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview).
+The images for these containers are created and function the same way. They differ in how the container is created. For details, see [Hyper-V Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview).
 
 ## Comparing Docker containers with virtual machines
 
@@ -44,16 +44,15 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
 
-Because containers require far fewer resources (for example, they do not need a full OS), they are easy to deploy and they start fast. This allows you to have higher density, meaning that it allows you to run more services on the same hardware unit, thereby reducing costs.
+Because containers require far fewer resources (for example, they do not need a full OS), they start fast and are easy to deploy. Low resource usage allows higher density. You can run more services on the same hardware unit and reduce costs.
 
-As a side effect of running on the same kernel, you get less isolation than VMs provide.
+Running on the same kernel resultes in less isolation than VMs provide.
 
 The main goal of an image is that it makes the environment (dependencies) the same across different deployments. This means that you can debug it on your machine and then deploy it to another machine with the same environment guaranteed.
 
 A container image is a way to package an app or service and deploy it in a reliable and reproducible way. You could say that Docker is not only a technology, but also a philosophy and a process.
 
-When using Docker, you will not hear developers say, “It works on my machine, why not in production?” They can simply say, “It runs on Docker,” because the packaged Docker application can be executed on any supported Docker environment, and it will run the way it was intended to on all deployment targets (Dev, QA, staging, production, etc.).
-
+Docker developers don't say, "It works on my machine, why not in production?" They say, "It runs on Docker". Docker packaged apps can be executed on any supported Docker environment. Docker packaged apps run consistently on all deployment targets (Dev, QA, staging, production).
 
 >[!div class="step-by-step"]
 [Previous] (index.md)

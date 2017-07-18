@@ -92,7 +92,7 @@ If set, the installer includes debugging symbols in the installation.
 
 `-DryRun`
 
-If set, the script won't perform the installation; but instead, it displays what command line to use to consistently install the currently requested version of the .NET CLI. For example if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
+If set, the script won't perform the installation; but instead, it displays what command line to use to consistently install the currently requested version of the .NET Core CLI. For example if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
 
 `-NoPath`
 
@@ -152,7 +152,7 @@ If set, the installer includes debugging symbols in the installation.
 
 `--dry-run`
 
-If set, the script won't perform the installation; but instead, it displays what command line to use to consistently install the currently requested version of the .NET CLI. For example if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
+If set, the script won't perform the installation; but instead, it displays what command line to use to consistently install the currently requested version of the .NET Core CLI. For example if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
 
 `--no-path`
 

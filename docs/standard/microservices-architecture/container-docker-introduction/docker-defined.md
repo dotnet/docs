@@ -26,7 +26,7 @@ To run [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/wind
 
 -   Windows Server Containers provide application isolation through process and namespace isolation technology. A Windows Server Container shares a kernel with the container host and with all containers running on the host.
 
--   Hyper-V Containers expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation. Hyper-V Containers allow  isolation required to allow untrusted and “hostile multi-tenant” applications to run on the same host at the cost of a bit less efficiency in startup times and density than Windows Server Container
+-   Hyper-V Containers expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host is not shared with the Hyper-V Containers, providing better isolation. Hyper-V Containers allow untrusted and “hostile multi-tenant” applications to run on the same host. Hyper-V Containers have a bit less efficiency in startup times and density than Windows Server Container.
 
 The images for these containers are created the same way and function the same. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview).
 

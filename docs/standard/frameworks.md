@@ -14,7 +14,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Target frameworks
 
-When you target one or more frameworks in an app or library, you're specifying the sets and versions of APIs that you'd like to make available to the app or library. You specify target frameworks in the project file using Target Framework Monikers (TFMs). When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework and then write code to conditionally use those assemblies using preprocessor symbols with `if`-`then`-`else` logic during compilation of your project.
+When you target one or more frameworks in an app or library, you're specifying the sets and versions of APIs that you'd like to make available to the app or library. You specify target frameworks in the project file using Target Framework Monikers (TFMs). When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework and then write code to conditionally use those assemblies during compilation with preprocessor symbols and *if-then-else* logic.
 
 An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET frameworks. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across several .NET implementations all at once.
 

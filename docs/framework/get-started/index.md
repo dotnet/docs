@@ -40,9 +40,9 @@ The .NET Framework is a managed execution environment that provides a variety of
 
 - Version compatibility. With rare exceptions, apps that are developed by using a particular version of the .NET Framework run without modification on a later version.
 
-- Side-by-side execution. The .NET Framework helps resolve version conflicts by allowing multiple versions of the common language runtime to exist on the same computer. This means that multiple versions of apps can coexist and that an app can run on the version of the .NET Framework with which it was built.
+- Side-by-side execution. The .NET Framework helps resolve version conflicts by allowing multiple versions of the common language runtime to exist on the same computer. This means that multiple versions of apps can coexist and that an app can run on the version of the .NET Framework with which it was built. Side-by-side execution applies to the .NET Framework version groups 1.0/1.1, 2.0/3.0/3.5, and 4/4.5.x/4.6.x/4.7.
 
-- Multitargeting. By targeting the .NET Framework Portable Class Library, developers create assemblies that work on multiple .NET Framework platforms, such as Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Phone, and Xbox 360. For more information, see [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
+- Multitargeting. By targeting [.NET Standard](~/docs/standard/net-standard.md), developers create assemblies that work on multiple .NET Framework platforms, such as Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Phone, and Xbox 360.
 
 <a name="ForUsers"></a>
 ## The .NET Framework for users

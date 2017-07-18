@@ -410,7 +410,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://azure.microsoft.com/documentation/services/storage/">
+                                                <a href="https://docs.microsoft.com/azure/storage/">
                                                     <h3>Azure Storage</h3>
                                                     <p>Learn about Azure Storage, and how to create applications using Azure
                                                         blobs, tables, queues, and files.</p>

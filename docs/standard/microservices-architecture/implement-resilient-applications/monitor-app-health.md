@@ -188,7 +188,7 @@ Finally, if you were storing all the event streams, you can use Microsoft Power 
     [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
 
 -   **Azure Application Insights**
-    [*https://azure.microsoft.com/en-us/services/application-insights/*](https://azure.microsoft.com/en-us/services/application-insights/)
+    [*https://azure.microsoft.com/services/application-insights/*](https://azure.microsoft.com/services/application-insights/)
 
 -   **Microsoft Operations Management Suite**
     [*https://www.microsoft.com/en-us/cloud-platform/operations-management-suite*](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite)

@@ -64,17 +64,17 @@ Azure Service Fabric
 
 ![https://azure.microsoft.com/svghandler/service-fabric?width=600&height=315](./media/image26.png)
 
-> [Service Fabric](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-overview/) is a Microsoft microservices platform for building applications. It is an [orchestrator](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-resource-manager-introduction/) of services and creates clusters of machines. By default, Service Fabric deploys and activates services as processes, but Service Fabric can deploy services in Docker container images. More importantly, you can mix services in processes with services in containers in the same application.
+> [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It is an [orchestrator](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. By default, Service Fabric deploys and activates services as processes, but Service Fabric can deploy services in Docker container images. More importantly, you can mix services in processes with services in containers in the same application.
 >
 > As of May 2017, the feature of Service Fabric that supports deploying services as Docker containers is in preview state.
 >
-> Service Fabric services can be developed in many ways, from using the [Service Fabric programming models ](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-choose-framework/)to deploying [guest executables](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-deploy-existing-app/) as well as containers. Service Fabric supports prescriptive application models like [stateful services](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-reliable-services-introduction/) and [Reliable Actors](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-reliable-actors-introduction/).
+> Service Fabric services can be developed in many ways, from using the [Service Fabric programming models ](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework)to deploying [guest executables](https://docs.microsoft.com/azure/service-fabric/service-fabric-deploy-existing-app) as well as containers. Service Fabric supports prescriptive application models like [stateful services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 
 ## Using container-based orchestrators in Microsoft Azure
 
 Several cloud vendors offer Docker containers support plus Docker clusters and orchestration support, including Microsoft Azure, Amazon EC2 Container Service, and Google Container Engine. Microsoft Azure provides Docker cluster and orchestrator support through Azure Container Service (ACS), as explained in the next section.
 
-Another choice is to use Microsoft Azure Service Fabric (a microservices platform), which also supports Docker based on Linux and Windows Containers. Service Fabric runs on Azure or any other cloud, and also runs [on-premises](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-deploy-anywhere/).
+Another choice is to use Microsoft Azure Service Fabric (a microservices platform), which also supports Docker based on Linux and Windows Containers. Service Fabric runs on Azure or any other cloud, and also runs [on-premises](https://docs.microsoft.com/azure/service-fabric/service-fabric-deploy-anywhere).
 
 ## Using Azure Container Service
 
@@ -102,7 +102,7 @@ From a usage perspective, the goal of Azure Container Service is to provide a co
 
 ### Getting started with Azure Container Service 
 
-To begin using Azure Container Service, you deploy an Azure Container Service cluster from the Azure portal by using an Azure Resource Manager template or the [CLI](https://azure.microsoft.com/documentation/articles/xplat-cli-install/). Available templates include [Docker Swarm](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-swarm), [Kubernetes](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-kubernetes), and [DC/OS](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-dcos). The quickstart templates can be modified to include additional or advanced Azure configuration. For more information on deploying an Azure Container Service cluster, see [Deploy an Azure Container Service cluster](https://azure.microsoft.com/en-us/documentation/articles/container-service-deployment/) on the Azure website.
+To begin using Azure Container Service, you deploy an Azure Container Service cluster from the Azure portal by using an Azure Resource Manager template or the [CLI](https://docs.microsoft.com/cli/azure/install-azure-cli). Available templates include [Docker Swarm](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-swarm), [Kubernetes](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-kubernetes), and [DC/OS](https://github.com/Azure/azure-quickstart-templates/tree/master/101-acs-dcos). The quickstart templates can be modified to include additional or advanced Azure configuration. For more information on deploying an Azure Container Service cluster, see [Deploy an Azure Container Service cluster](https://docs.microsoft.com/azure/container-service/container-service-deployment) on the Azure website.
 
 There are no fees for any of the software installed by default as part of ACS. All default options are implemented with open-source software.
 
@@ -111,7 +111,7 @@ ACS is currently available for Standard A, D, DS, G, and GS series Linux virtual
 ## Additional resources
 
 -   **Introduction to Docker container hosting solutions with Azure Container Service**
-    [*https://azure.microsoft.com/en-us/documentation/articles/container-service-intro/*](https://azure.microsoft.com/en-us/documentation/articles/container-service-intro/)
+    [*https://docs.microsoft.com/azure/container-service/container-service-intro*](https://docs.microsoft.com/azure/container-service/container-service-intro)
 
 -   **Docker Swarm overview**
     [*https://docs.docker.com/swarm/overview/*](https://docs.docker.com/swarm/overview/)

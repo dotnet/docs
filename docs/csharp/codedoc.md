@@ -2,7 +2,7 @@
 title: Documenting your code with XML comments | Microsoft Docs
 description: Documenting your code
 keywords: .NET, .NET Core
-author: tsolarin
+author: BillWagner
 ms.author: wiwagn
 ms.date: 02/14/2017
 ms.topic: article

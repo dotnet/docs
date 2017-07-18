@@ -433,7 +433,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The name of the object query identifies the current object query in the sequence by name when constructing query builder methods. By default, the query name is `it`. This can be useful when referring to the current sequence in joins inside the <xref:System.Data.Objects.Query%601.Where%2A> method or in the <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> method. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+ The name of the object query identifies the current object query in the sequence by name when constructing query builder methods. By default, the query name is `it`. This can be useful when referring to the current sequence in joins inside the <xref:System.Data.Objects.ObjectQuery`1.Where*> method or in the <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> method. For more information, see [Query Builder Methods](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
   
  When you set the <xref:System.Data.Objects.ObjectQuery%601.Name%2A> property of an <xref:System.Data.Objects.ObjectQuery%601>, that value becomes the alias in successive methods.  
   
@@ -476,9 +476,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectQuery%601.OfType%2A> is used to filter query results by a specific entity or complex type. This supports a conceptual model with object inheritance. For more information, see [Entity Data Model Inheritance (Application Scenarios)](http://msdn.microsoft.com/en-us/5de40bf8-527f-4f2e-96e3-61164f429caa). The  
+ <xref:System.Data.Objects.ObjectQuery`1.OfType``1*> is used to filter query results by a specific entity or complex type. This supports a conceptual model with object inheritance. For more information, see [Entity Data Model Inheritance (Application Scenarios)](http://msdn.microsoft.com/en-us/5de40bf8-527f-4f2e-96e3-61164f429caa). The  
   
- <xref:System.Data.Objects.ObjectQuery%601.OfType%2A> method can only be applied to an <xref:System.Data.Objects.ObjectQuery%601> of an entity type or complex type that is defined in the EDM.  
+ <xref:System.Data.Objects.ObjectQuery`1.OfType``1*> method can only be applied to an <xref:System.Data.Objects.ObjectQuery%601> of an entity type or complex type that is defined in the EDM.  
   
  ]]></format>
         </remarks>
@@ -565,7 +565,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectQuery%601.Select%2A> applies the projection specified by the `projection` parameter. The <xref:System.Data.Objects.ObjectQuery%601> returned by the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method is always a row type of <xref:System.Data.Common.DbDataRecord>. Use the <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> method to return values that are simple types, entity types, or complex types. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
+ <xref:System.Data.Objects.ObjectQuery%601.Select%2A> applies the projection specified by the `projection` parameter. The <xref:System.Data.Objects.ObjectQuery%601> returned by the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method is always a row type of <xref:System.Data.Common.DbDataRecord>. Use the <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> method to return values that are simple types, entity types, or complex types. For more information, see [LINQ to Entities](~/docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).  
   
  When a navigation property is included in the projection, the query results include a collection of nested <xref:System.Data.Common.DbDataRecord> objects. For more information, see [How to: Navigate Relationships Using Navigation Properties](http://msdn.microsoft.com/en-us/b1d71c7d-16a7-4b46-96ac-690176bd5057).  
   
@@ -623,9 +623,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> is used to return values that are simple types, entity types, or complex types. Use the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method for projections that require a row type instead of a value type. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
+ <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> is used to return values that are simple types, entity types, or complex types. Use the <xref:System.Data.Objects.ObjectQuery%601.Select%2A> method for projections that require a row type instead of a value type. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
   
- The <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> method applies the projection specified by the `projection` parameter. The <xref:System.Data.Objects.ObjectQuery%601> returned by the <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A> method must be of a value type that is compatible with the projection and must be the same type as the type of <xref:System.Data.Objects.ObjectQuery%601.SelectValue%2A>.  
+ The <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> method applies the projection specified by the `projection` parameter. The <xref:System.Data.Objects.ObjectQuery%601> returned by the <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*> method must be of a value type that is compatible with the projection and must be the same type as the type of <xref:System.Data.Objects.ObjectQuery`1.SelectValue``1*>.  
   
    
   

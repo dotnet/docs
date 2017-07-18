@@ -67,7 +67,7 @@ Specifies modules used to authenticate network requests.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example enables an authentication module. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
+ The following example enables an authentication module. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
   
 ```xml  
 <configuration>  

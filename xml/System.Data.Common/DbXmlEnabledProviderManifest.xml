@@ -160,7 +160,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary> object, which accepts a storage type name as a key and returns its associated EDM type value.  
+ This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary`2> object, which accepts a storage type name as a key and returns its associated EDM type value.  
   
  ]]></format>
         </remarks>
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary> object, which accepts a storage type name as a key and returns its associated storage primitive type value.  
+ This property (not nullable) returns the <xref:System.Collections.Generic.Dictionary`2> object, which accepts a storage type name as a key and returns its associated storage primitive type value.  
   
  ]]></format>
         </remarks>

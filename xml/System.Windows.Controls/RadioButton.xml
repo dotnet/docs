@@ -40,14 +40,14 @@
 ## Examples  
  The following example shows how to create <xref:System.Windows.Controls.RadioButton> controls, group them inside a container, and handle the <xref:System.Windows.Controls.Primitives.ToggleButton.Checked> event.  
   
- [!code-xml[RadioButton#3](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#3)]  
+ [!code-xaml[RadioButton#3](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#3)]  
   
  [!code-csharp[RadioButton#5](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml.cs#5)]
  [!code-vb[RadioButton#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RadioButton/VisualBasic/Window1.xaml.vb#5)]  
   
  The following code sample creates two separate <xref:System.Windows.Controls.RadioButton> groups: `colorgrp` and `numgrp`. The user can choose one <xref:System.Windows.Controls.RadioButton> in each group.  
   
- [!code-xml[RadioButton#4](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#4)]  
+ [!code-xaml[RadioButton#4](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#4)]  
   
  ]]></format>
     </remarks>
@@ -110,7 +110,7 @@
 ## Examples  
  The following code sample creates two separate <xref:System.Windows.Controls.RadioButton> groups: `colorgrp` and `numgrp`. The user can choose one <xref:System.Windows.Controls.RadioButton> in each group.  
   
- [!code-xml[RadioButton#4](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#4)]  
+ [!code-xaml[RadioButton#4](~/samples/snippets/csharp/VS_Snippets_Wpf/RadioButton/CSharp/Pane1.xaml#4)]  
   
  ]]></format>
         </remarks>

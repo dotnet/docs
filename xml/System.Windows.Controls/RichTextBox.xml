@@ -61,7 +61,7 @@
 ## Examples  
  The following example declares a <xref:System.Windows.Controls.RichTextBox> that contains a simple <xref:System.Windows.Documents.FlowDocument>.  
   
- [!code-xml[RichTextBoxSnippets#_RTB_XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml#_rtb_xaml)]  
+ [!code-xaml[RichTextBoxSnippets#_RTB_XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml#_rtb_xaml)]  
   
  [!code-csharp[RichTextBoxMiscSnippets_procedural_snip#RichTextBoxCodeOnlyExample](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxMiscSnippets_procedural_snip/CSharp/RichTextBoxExample.cs#richtextboxcodeonlyexample)]
  [!code-vb[RichTextBoxMiscSnippets_procedural_snip#RichTextBoxCodeOnlyExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxMiscSnippets_procedural_snip/visualbasic/richtextboxexample.vb#richtextboxcodeonlyexample)]  
@@ -338,7 +338,7 @@
 ## Examples  
  The following example creates <xref:System.Windows.Controls.CheckBox> and a <xref:System.Windows.Controls.RichTextBox> that contains a <xref:System.Windows.Documents.Hyperlink> and a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> property of the <xref:System.Windows.Controls.RichTextBox> is bound to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of the <xref:System.Windows.Controls.CheckBox>.  When the user selects the <xref:System.Windows.Controls.CheckBox>, the user can interact with the <xref:System.Windows.Controls.Button> and <xref:System.Windows.Documents.Hyperlink>. When the user clears the <xref:System.Windows.Controls.CheckBox>, the <xref:System.Windows.Controls.Button> and <xref:System.Windows.Documents.Hyperlink> are disabled.  
   
- [!code-xml[RTBIsDocumentEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RTBIsDocumentEnabled/VB/Window1.xaml#1)]  
+ [!code-xaml[RTBIsDocumentEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RTBIsDocumentEnabled/VB/Window1.xaml#1)]  
   
  ]]></format>
         </remarks>

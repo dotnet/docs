@@ -26,7 +26,7 @@ ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 
 ## Description
 
-The `dotnet msbuild` command allows access to [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild). The command has the same capabilities and options as the MSBuild command-line client. For information on the available options, see the [MSBuild Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference).
+The `dotnet msbuild` command allows access to [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild). The command has the same capabilities and options as the MSBuild command-line client. For information on the available options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
 
 ## Options
 

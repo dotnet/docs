@@ -324,7 +324,7 @@
 ## Examples  
  In some applications, embedding the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] inline within the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] page can be inconvenient because the exact content of the data must be known at compile time. Therefore, you can obtain the data from an external [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, as in the following example.  
   
- [!code-xml[XMLDataSource2#XmlFileExample](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
+ [!code-xaml[XMLDataSource2#XmlFileExample](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
   
  If the [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] data resides in a remote [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] file, you define access to the data by assigning an appropriate [!INCLUDE[TLA2#tla_url](~/includes/tla2sharptla-url-md.md)] to the <xref:System.Windows.Data.XmlDataProvider.Source%2A> attribute as follows:  
   
@@ -397,7 +397,7 @@
 ## Examples  
  The following example demonstrates how to use this property.  
   
- [!code-xml[XmlnsBindSnippet#XmlNamespaceMapping](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlnsBindSnippet/CS/Window1.xaml#xmlnamespacemapping)]   
+ [!code-xaml[XmlnsBindSnippet#XmlNamespaceMapping](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlnsBindSnippet/CS/Window1.xaml#xmlnamespacemapping)]   
   
  ]]></format>
         </remarks>

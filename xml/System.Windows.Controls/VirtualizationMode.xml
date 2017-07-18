@@ -28,7 +28,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ListBox> and sets the <xref:System.Windows.Controls.VirtualizingPanel.VirtualizationMode%2A> attached property to Recycling.  
   
- [!code-xml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
+ [!code-xaml[RecycleItemContainerShippets#VirtualizationMode](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
   
  The following example shows the data used in the previous example.  
   

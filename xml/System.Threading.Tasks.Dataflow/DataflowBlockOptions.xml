@@ -12,11 +12,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("TaskScheduler = {TaskScheduler}, MaxMessagesPerTask = {MaxMessagesPerTask}, BoundedCapacity = {BoundedCapacity}")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Provides options used to configure the processing performed by dataflow blocks.</summary>
     <remarks>

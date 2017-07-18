@@ -72,7 +72,7 @@ ListBox
   
  The second custom dictionary (customwords2.lex) is added in the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler. The file is included as a resource file and compiled into the application assembly that is named WPFCustomDictionary.  
   
- [!code-xml[WpfCustomDictionary#1](~/samples/snippets/csharp/VS_Snippets_Wpf/wpfcustomdictionary/cs/window1.xaml#1)]  
+ [!code-xaml[WpfCustomDictionary#1](~/samples/snippets/csharp/VS_Snippets_Wpf/wpfcustomdictionary/cs/window1.xaml#1)]  
   
  [!code-csharp[WpfCustomDictionary#2](~/samples/snippets/csharp/VS_Snippets_Wpf/wpfcustomdictionary/cs/window1.xaml.cs#2)]
  [!code-vb[WpfCustomDictionary#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/wpfcustomdictionary/vb/mainwindow.xaml.vb#2)]  

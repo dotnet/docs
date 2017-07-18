@@ -1,0 +1,65 @@
+<Type Name="PropertyLockMode" FullName="System.EnterpriseServices.PropertyLockMode">
+  <TypeSignature Language="C#" Value="public enum PropertyLockMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PropertyLockMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PropertyLockMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the mode for accessing shared properties in the shared property group manager.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="Method" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.PropertyLockMode Method = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyLockMode.Method" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.PropertyLockMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locks all the properties in the shared property group for exclusive use by the caller, as long as the caller's current method is executing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Do not use <xref:System.EnterpriseServices.PropertyLockMode.Method> when creating a property group in a constructor because this can cause a deadlock.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGet">
+      <MemberSignature Language="C#" Value="SetGet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.PropertyLockMode SetGet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.PropertyLockMode.SetGet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.PropertyLockMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locks a property during a get or set, assuring that every get or set operation on a shared property is atomic.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

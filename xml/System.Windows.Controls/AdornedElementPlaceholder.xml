@@ -43,13 +43,13 @@
 ## Examples  
  The following example shows how to use a <xref:System.Windows.Controls.ControlTemplate> with <xref:System.Windows.Controls.AdornedElementPlaceholder> to create the adorned <xref:System.Windows.Controls.TextBox> in the preceding illustration.  
   
- [!code-xml[DataBindingLab#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#1)]  
+ [!code-xaml[DataBindingLab#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#1)]  
   
  The <xref:System.Windows.Controls.AdornedElementPlaceholder> element specifies where the control being adorned (the <xref:System.Windows.Controls.TextBox> in this case) should be placed.  
   
  You can then specify your template as the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> for your <xref:System.Windows.Controls.TextBox>, as in the following example.  
   
- [!code-xml[DataBindingLab#CustomValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#customvalidation)]  
+ [!code-xaml[DataBindingLab#CustomValidation](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#customvalidation)]  
   
  For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) or the Data Validation section in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   

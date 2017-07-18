@@ -300,7 +300,7 @@
 ## Remarks  
  <xref:System.Security.Cryptography.CngProperty> objects are considered equal if their names, values, and options are equivalent. Name comparison is performed in a case-sensitive manner.  
   
- The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Equals%28System.Security.Cryptography.CngProperty%2CSystem.Security.Cryptography.CngProperty%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Equals%28System.Security.Cryptography.CngProperty%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -342,7 +342,7 @@
 ## Remarks  
  <xref:System.Security.Cryptography.CngProperty> objects are considered equal if their names, values, and options are equivalent. Name comparison is performed in a case-sensitive manner.  
   
- The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Compare%28System.Security.Cryptography.CngProperty%2CSystem.Security.Cryptography.CngProperty%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Security.Cryptography.CngProperty.Equals%28System.Security.Cryptography.CngProperty%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -58,7 +58,7 @@
 ## Examples  
  The following example defines the <xref:System.Windows.Controls.FlowDocumentReader> pictured in the preceding figure.  
   
- [!code-xml[FloaterFigureSnippets#_FloaterFigureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterfigurexaml)]  
+ [!code-xaml[FloaterFigureSnippets#_FloaterFigureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterfigurexaml)]  
   
  ]]></format>
     </remarks>
@@ -516,7 +516,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsFindEnabled%2A> property programmatically.  
   
@@ -682,7 +682,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.IsPrintEnabled%2A> property programmatically.  
   
@@ -918,7 +918,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MaxZoom%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MaxZoom%2A> property programmatically.  
   
@@ -980,7 +980,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MinZoom%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.MinZoom%2A> property programmatically.  
   
@@ -1516,7 +1516,7 @@
 ## Examples  
  The following example shows how to get the text that a user has selected in the <xref:System.Windows.Controls.FlowDocumentReader>.  
   
- [!code-xml[FlowDocSelection#5](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window3.xaml#5)]  
+ [!code-xaml[FlowDocSelection#5](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window3.xaml#5)]  
 [!code-csharp[FlowDocSelection#6](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocSelection/CSharp/Window3.xaml.cs#6)]
 [!code-vb[FlowDocSelection#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocSelection/VisualBasic/Window3.xaml.vb#6)]  
   
@@ -1550,7 +1550,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentReader>, sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> property to 0.7.  
   
- [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
+ [!code-xaml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
   
  ]]></format>
         </remarks>
@@ -1599,7 +1599,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentReader>, sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> property to 0.7.  
   
- [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
+ [!code-xaml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
   
  ]]></format>
         </remarks>
@@ -1851,7 +1851,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> property programmatically.  
   
@@ -1900,7 +1900,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> attribute.  
   
- [!code-xml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
+ [!code-xaml[FlowDocumentSnippets#_FlowDocumentReaderXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml#_flowdocumentreaderxaml)]  
   
  The following example shows how to set the <xref:System.Windows.Controls.FlowDocumentReader.ZoomIncrement%2A> property programmatically.  
   

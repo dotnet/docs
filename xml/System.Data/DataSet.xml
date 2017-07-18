@@ -4719,7 +4719,7 @@ class Program {
    
   
 ## Examples  
- The following example creates a <xref:System.IO.FileStream?displayProperty=fullName> object that is used to create a new <xref:System.Xml.XmlTextWriter?displayProperty=fullName>. The <xref:System.Xml.XmlTextWriter> object is used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
+ The following example creates a <xref:System.IO.FileStream?displayProperty=fullName> object that is used to create a new <xref:System.Xml.XmlTextWriter>. The <xref:System.Xml.XmlTextWriter> object is used with the <xref:System.Data.DataSet.WriteXml%2A> method to write an XML document.  
   
  [!code-csharp[Classic WebData DataSet.WriteXml6 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml6 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXml6 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXml6 Example/VB/source.vb#1)]  
@@ -4917,12 +4917,12 @@ class Program {
   
  To write the data to an XML document, use the <xref:System.Data.DataSet.WriteXml%2A> method.  
   
- One class that inherits from the <xref:System.Xml.XmlWriter?displayProperty=fullName> class is the <xref:System.Xml.XmlTextWriter?displayProperty=fullName> class.  
+ One class that inherits from the <xref:System.Xml.XmlWriter?displayProperty=fullName> class is the <xref:System.Xml.XmlTextWriter> class.  
   
    
   
 ## Examples  
- The following example creates a new <xref:System.IO.FileStream?displayProperty=fullName> object with the specified path. The <xref:System.IO.FileStream> object is used to create an <xref:System.Xml.XMLTextWriter?displayProperty=fullName> object. The <xref:System.Data.DataSet.WriteXmlSchema%2A> method is then invoked with the <xref:System.Xml.XmlTextWriter> object to write the schema to the disk.  
+ The following example creates a new <xref:System.IO.FileStream?displayProperty=fullName> object with the specified path. The <xref:System.IO.FileStream> object is used to create an <xref:System.Xml.XmlTextWriter> object. The <xref:System.Data.DataSet.WriteXmlSchema%2A> method is then invoked with the <xref:System.Xml.XmlTextWriter> object to write the schema to the disk.  
   
  [!code-csharp[Classic WebData DataSet.WriteXmlSchema2 Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema2 Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataSet.WriteXmlSchema2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataSet.WriteXmlSchema2 Example/VB/source.vb#1)]  

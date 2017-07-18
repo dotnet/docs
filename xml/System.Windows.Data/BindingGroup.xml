@@ -45,7 +45,7 @@
   
  The following example creates the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] of the application. The root <xref:System.Windows.Controls.StackPanel> has a <xref:System.Windows.Data.BindingGroup> that contains a <xref:System.Windows.Controls.ValidationRule> that validates the item, as described previously. The binding objects on the `Price` property and the `OfferExpires` property become part of the <xref:System.Windows.Data.BindingGroup> and each binding has a <xref:System.Windows.Controls.ValidationRule> to make sure that price and date, respectively, are valid values. The validation rules for the individual properties run before the <xref:System.Windows.Controls.ValidationRule> on the <xref:System.Windows.Data.BindingGroup>.  
   
- [!code-xml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
+ [!code-xaml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
   
  The following example shows the event handlers for the application. When the user clicks the Submit button, the application calls <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> to run each <xref:System.Windows.Controls.ValidationRule> that is associated with the <xref:System.Windows.Data.BindingGroup>. If each <xref:System.Windows.Controls.ValidationRule> succeeds, <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> saves the values to the object and ends the edit transaction. If <xref:System.Windows.Data.BindingGroup.CommitEdit%2A> is successful, the application begins another edit transaction. When a <xref:System.Windows.Controls.ValidationRule> fails, the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event occurs because the application set <xref:System.Windows.Data.BindingGroup.NotifyOnValidationError%2A> to `true` on the <xref:System.Windows.Data.BindingGroup> (in the previous example). `ItemError` handles the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event and displays information about the validation error to the user. The example also handles the <xref:System.Windows.FrameworkElement.Loaded> event for the <xref:System.Windows.Controls.StackPanel> and the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the **Cancel** button.  
   
@@ -347,8 +347,8 @@
 ## Examples  
  The following examples are part of an application that checks whether the user has set the properties of two objects to equal values. The first example creates two <xref:System.Windows.Controls.TextBox> controls, each of which are data bound to a different source. The binding of the first <xref:System.Windows.Controls.TextBox> gets its source, `object1`, from the <xref:System.Windows.FrameworkElement.DataContext%2A> of the <xref:System.Windows.Controls.TextBox> control's parent element (the <xref:System.Windows.Controls.StackPanel>). On the second <xref:System.Windows.Controls.TextBox>, the source of the binding is set to `object2`. The example also creates a <xref:System.Windows.Controls.Label> that displays validation errors.  
   
- [!code-xml[BindingGroupSnippets#BindingGroupName](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupname)]  
-[!code-xml[BindingGroupSnippets#ValidationAdornerSite](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validationadornersite)]  
+ [!code-xaml[BindingGroupSnippets#BindingGroupName](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupname)]  
+[!code-xaml[BindingGroupSnippets#ValidationAdornerSite](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validationadornersite)]  
   
  The following example shows the <xref:System.Windows.Controls.ValidationRule> that the previous example uses. In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, the example gets each source object from the <xref:System.Windows.Data.BindingGroup> and checks whether the properties of the objects are equal.  
   
@@ -389,8 +389,8 @@
   
  The binding on the second <xref:System.Windows.Controls.TextBox> is part of the <xref:System.Windows.Data.BindingGroup> because the <xref:System.Windows.Data.BindingGroup.Name%2A> of the <xref:System.Windows.Data.BindingGroup> and the <xref:System.Windows.Data.BindingBase.BindingGroupName%2A> of the <xref:System.Windows.Data.Binding> are both set to `bindingGroup`.  
   
- [!code-xml[BindingGroupSnippets#BindingGroupName](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupname)]  
-[!code-xml[BindingGroupSnippets#ValidationAdornerSite](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validationadornersite)]  
+ [!code-xaml[BindingGroupSnippets#BindingGroupName](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#bindinggroupname)]  
+[!code-xaml[BindingGroupSnippets#ValidationAdornerSite](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window3.xaml#validationadornersite)]  
   
  The following example shows the <xref:System.Windows.Controls.ValidationRule> that the previous example uses. In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, the example gets each source object from the <xref:System.Windows.Data.BindingGroup> and checks whether the properties of the objects are equal.  
   
@@ -428,7 +428,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Data.BindingGroup> and sets <xref:System.Windows.Data.BindingGroup.NotifyOnValidationError%2A> to `true` so that the application can handle the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event when a <xref:System.Windows.Controls.ValidationRule> fails.  
   
- [!code-xml[BindingGroupSnippets#BindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#bindinggroup)]  
+ [!code-xaml[BindingGroupSnippets#BindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#bindinggroup)]  
   
  The following example handles the <xref:System.Windows.Controls.Validation.Error?displayProperty=fullName> event.  
   
@@ -661,7 +661,7 @@
 ## Examples  
  The following example adds the custom <xref:System.Windows.Controls.ValidationRule>, `ValidateDateAndPrice`, to the <xref:System.Windows.Data.BindingGroup>.  
   
- [!code-xml[BindingGroupSnippets#BindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#bindinggroup)]  
+ [!code-xaml[BindingGroupSnippets#BindingGroup](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#bindinggroup)]  
   
  The following example shows the `ValidateDateAndPrice` class. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method uses the <xref:System.Windows.Data.BindingGroup> to get the values the user entered into the form, and checks that if an item is over 100 dollars, it will be available for at least seven days.  
   

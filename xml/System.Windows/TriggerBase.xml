@@ -30,13 +30,13 @@
   
  The <xref:System.Windows.Trigger> class is the simplest type of triggers. A <xref:System.Windows.Trigger> object allows you to apply changes based on the value of a property. For example, the following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
   
- [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+ [!code-xaml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
   
  If you need to apply changes based on the state of multiple properties, you can use the <xref:System.Windows.MultiTrigger>. For an example, see the <xref:System.Windows.MultiTrigger> page.  
   
  The <xref:System.Windows.EventTrigger> class allows you to apply changes when an event occurs. The following example contains two <xref:System.Windows.EventTrigger> objects, one of which occurs when the mouse enters the element and the other occurs when the mouse leaves the element.  
   
- [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
+ [!code-xaml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
   
  These are also the <xref:System.Windows.DataTrigger> and the <xref:System.Windows.MultiDataTrigger> classes. These are similar to <xref:System.Windows.Trigger> and <xref:System.Windows.MultiTrigger> except that they are for data-bound properties.  
   

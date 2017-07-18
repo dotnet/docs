@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `OperationResponse` class is used to hold information that is shared between the two response types, but this class is not intended to be used directly by a developer. Instead, this response object should be cast to the specific <xref:System.Data.Services.Client.QueryResponse> or <xref:System.Data.Services.Client.ChangesetResponse> type that includes additional operation specific data.  
+ The `OperationResponse` class is used to hold information that is shared between the two response types, but this class is not intended to be used directly by a developer. Instead, this response object should be cast to the specific <xref:System.Data.Services.Client.QueryOperationResponse> or <xref:System.Data.Services.Client.ChangeOperationResponse> type that includes additional operation specific data.  
   
  ]]></format>
     </remarks>

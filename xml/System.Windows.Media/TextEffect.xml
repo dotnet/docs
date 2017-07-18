@@ -32,7 +32,7 @@
   
                   Example of a rotating text effect animation  
   
- [!code-xml[TextEffectSample#TextEffectEntireSample](~/samples/snippets/csharp/VS_Snippets_Wpf/TextEffectSample/CS/Window1.xaml#texteffectentiresample)]  
+ [!code-xaml[TextEffectSample#TextEffectEntireSample](~/samples/snippets/csharp/VS_Snippets_Wpf/TextEffectSample/CS/Window1.xaml#texteffectentiresample)]  
   
  ]]></format>
     </remarks>
@@ -420,7 +420,7 @@
 ## Examples  
  In the following markup example, a <xref:System.Windows.Media.TextEffect> is created for a <xref:System.Windows.Controls.TextBlock> object. In this case, the effect is a rotation animation.  
   
- [!code-xml[TextEffectSample#TextEffectSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextEffectSample/CS/Window1.xaml#texteffectsample1)]  
+ [!code-xaml[TextEffectSample#TextEffectSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextEffectSample/CS/Window1.xaml#texteffectsample1)]  
   
  To view the complete sample, see .  
   

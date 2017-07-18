@@ -13,7 +13,7 @@ ms.assetid: 7fff0f61-ac23-42f0-9661-72a7240a4456
 
 # High-level overview of changes in the .NET Core tools
 
-This document will describe in high-level the changes that moving from *project.json* to MSBuild and *.csproj* project system bring. It will outline the new way the tooling is layered all-up and which new pieces are available and what is their place in the overall picture. After reading this article, you should have a better understanding of all of the pieces that make up .NET Core tooling after moving to MSBuild and *.csproj*. 
+This document describes the changes associated with moving from *project.json* to MSBuild and the *csproj* project system with information on the changes to the layering of the .NET Core tooling and the implementation of the CLI commands. These changes occurred with the release of .NET Core SDK 1.0 and Visual Studio 2017 on March 7, 2017 (see the [announcement](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)) but were initially implemented with the release of the .NET Core SDK Preview 3.
 
 ## Moving away from project.json
 
@@ -22,7 +22,7 @@ The biggest change in the tooling for .NET Core is certainly the [move away from
 As part of this move, the custom build engine that was developed to build *project.json* projects was replaced with a mature and fully capable build engine called [MSBuild](https://github.com/Microsoft/msbuild). MSBuild is a well-known engine in the .NET community, since it has been a key technology since the platform's first release. Of course because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform where .NET Core runs. .NET Core holds the promise of a cross-platform development stack, and we've made sure that this move doesn't break that promise.
 
 > [!NOTE]
-> If you're new to MSBuild and would like to learn more about it, you can start by reading the [MSBuild Concepts](https://docs.microsoft.com/visualstudio/msbuild/msbuild-concepts) topic. 
+> If you're new to MSBuild and would like to learn more about it, you can start by reading the [MSBuild Concepts](/visualstudio/msbuild/msbuild-concepts) topic. 
 
 ## The tooling layers
 
@@ -39,7 +39,7 @@ The layering of the tools is quite simple. At the bottom, we have the .NET Core 
 The main difference is that the CLI is not the foundational layer anymore; this role is now filled by the *shared SDK component*. This shared SDK component is a set of targets and associated tasks that are responsible for compiling your code, publishing it, packing NuGet packages, and other processing. The SDK itself is open-source and is available on GitHub on the [SDK repo](https://github.com/dotnet/sdk). 
 
 > [!NOTE]
-> A *target* is a MSBuild term that indicates a named operation that MSBuild can invoke. It's usually coupled with one or more tasks that execute some logic that the target is supposed to perform. MSBuild supports many ready-made targets, such as `Copy` or `Execute`. It also allows users to write their own tasks using managed code and define targets to execute those tasks. For more information, see [MSBuild tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks). 
+> A *target* is a MSBuild term that indicates a named operation that MSBuild can invoke. It's usually coupled with one or more tasks that execute some logic that the target is supposed to perform. MSBuild supports many ready-made targets, such as `Copy` or `Execute`. It also allows users to write their own tasks using managed code and define targets to execute those tasks. For more information, see [MSBuild tasks](/visualstudio/msbuild/msbuild-tasks). 
 
 All the toolsets now consume the shared SDK component and its targets, the CLI included. For example, Visual Studio doesn't call into the `dotnet restore` command to restore dependencies for .NET Core projects, it uses the `Restore` target directly. Since these are MSBuild targets, you can also use raw MSBuild to execute them using the [dotnet msbuild](dotnet-msbuild.md) command. 
 

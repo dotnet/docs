@@ -79,7 +79,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 -   If one or more versions of the assembly that you are attempting to load is in the probing path, but the specific version you are requesting is not among them, subsequent attempts to load that version will fail even if the correct version is moved into the probing path.  
   
 ## Example  
- The following code example shows how to disable the caching of assembly binding failures that occur because the assembly was not found by probing.  
+ The following example shows how to disable the caching of assembly binding failures that occur because the assembly was not found by probing.  
   
 ```xml  
 <configuration>  

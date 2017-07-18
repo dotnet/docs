@@ -1,6 +1,6 @@
 ---
 title: Porting to .NET Core - Libraries | Microsoft Docs
-description: Porting to .NET Core - Libraries
+description: Learn how to port library projects from the .NET Framework to .NET Core.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -13,7 +13,7 @@ ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 
 # Porting to .NET Core - Libraries
 
-With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform. This article discusses the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
+With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform. This article discusses the .NET Standard, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.
 
 Porting is a task that may take time, especially if you have a large codebase. You should also be prepared to adapt the guidance here as needed to best fit your code. Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.
 
@@ -23,9 +23,9 @@ This article assumes you are using Visual Studio 2017 or later on Windows. The b
 
 This article also assumes that you understand the [recommended porting process](index.md) and that you have resolved any issues with [third-party dependencies](third-party-deps.md).
 
-## Targeting the .NET Standard Library
+## Targeting .NET Standard
 
-The best way to build a cross-platform library for .NET Core is to target the [.NET Standard](../../standard/net-standard.md). The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes. It is supported by the .NET Core runtime.
+The best way to build a cross-platform library for .NET Core is to target the [.NET Standard](../../standard/net-standard.md). The .NET Standard is the formal specification of .NET APIs that are intended to be available on all .NET runtimes. It is supported by the .NET Core runtime.
 
 What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.
 
@@ -60,7 +60,7 @@ AppDomains can be used for different purposes on the .NET Framework. For code is
 
 ### Remoting
 
-For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](https://docs.microsoft.com/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile).
+For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as [Pipes](/dotnet/core/api/system.io.pipes) or [Memory Mapped Files](/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile).
 
 Across machines, you can use a network based solution as an alternative, preferably a low-overhead plain text protocol such as HTTP. [KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer), the web server used by ASP.NET Core, is an option here. Remote proxy generation via [Castle.Core](https://github.com/castleproject/Core) is also an option to consider.
 
@@ -183,24 +183,7 @@ using System.Threading.Tasks;
 
 Note that all of the .NET Framework and .NET Standard targets have names recognized by the compiler:
 
-```
-.NET Framework 2.0   --> NET20
-.NET Framework 3.5   --> NET35
-.NET Framework 4.0   --> NET40
-.NET Framework 4.5   --> NET45
-.NET Framework 4.5.1 --> NET451
-.NET Framework 4.5.2 --> NET452
-.NET Framework 4.6   --> NET46
-.NET Framework 4.6.1 --> NET461
-.NET Framework 4.6.2 --> NET462
-.NET Standard 1.0    --> NETSTANDARD1_0
-.NET Standard 1.1    --> NETSTANDARD1_1
-.NET Standard 1.2    --> NETSTANDARD1_2
-.NET Standard 1.3    --> NETSTANDARD1_3
-.NET Standard 1.4    --> NETSTANDARD1_4
-.NET Standard 1.5    --> NETSTANDARD1_5
-.NET Standard 1.6    --> NETSTANDARD1_6
-```
+[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
 
 As mentioned above, if you are targeting a PCL, then you will have to specify a build definition for the compiler to understand. There is no default definition that the compiler can use.
 

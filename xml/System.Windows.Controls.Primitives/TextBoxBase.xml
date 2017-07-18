@@ -26,7 +26,7 @@
 ## Examples  
  The following example demonstrates how to use the derived <xref:System.Windows.Controls.TextBox> object in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
   
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
+ [!code-xaml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
   
  The following example demonstrates how to use the derived <xref:System.Windows.Controls.RichTextBox> object in code.  
   
@@ -352,7 +352,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.CaretBrush%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties of a <xref:System.Windows.Controls.TextBox> to blue.  
   
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
+ [!code-xaml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
   
  The preceding example produces output that is like the following illustration.  
   
@@ -658,7 +658,7 @@ TextBox with CaretBrush set to blue
 ## Examples  
  The following example demonstrates how to set the value of the <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
   
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
+ [!code-xaml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
   
  ]]></format>
         </remarks>
@@ -914,7 +914,7 @@ TextBox with CaretBrush set to blue
 ## Examples  
  The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.TextBoxBase.IsUndoEnabled%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
   
- [!code-xml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
+ [!code-xaml[TextBoxBase_Samp#TextBoxBase1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxBase_Samp/CSharp/Window1.xaml#textboxbase1)]  
   
  ]]></format>
         </remarks>
@@ -1936,7 +1936,7 @@ TextBox with CaretBrush set to blue
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
   
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
+ [!code-xaml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
   
  The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
   
@@ -2047,7 +2047,7 @@ Selected text in a TextBox with SelectionBrush set to red
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
   
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
+ [!code-xaml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
   
  The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
   

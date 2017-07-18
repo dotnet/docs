@@ -1,0 +1,6 @@
+<Namespace Name="System.EnterpriseServices.CompensatingResourceManager">
+  <Docs>
+    <summary>The <see cref="N:System.EnterpriseServices.CompensatingResourceManager" /> namespace provides classes that allow you to use a Compensating Resource Manager (CRM) in managed code. A CRM is a service provided by COM+ that enables you to include non transactional objects in Microsoft Distributed Transaction Coordinator (DTC) transactions. Although CRMs do not provide the capabilities of a full resource manager, they do provide transactional atomicity (all or nothing behavior) and durability through the recovery log.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

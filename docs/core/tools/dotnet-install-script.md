@@ -4,7 +4,7 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet install script, dotnet-install scripts, .NET Core
 author: guardrex
 ms.author: mairaw
-ms.date: 06/11/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -64,9 +64,16 @@ Specifies the architecture of the .NET Core binaries to install. Possible values
 
 Indicates the URL for the Azure feed to the installer. We don't recommended that you change this value. The default is `https://dotnetcli.azureedge.net/dotnet`.
 
-`-c|--channel <CHANNEL>`
+`-Channel <CHANNEL>`
 
-Specifies the source channel for the installation. The values are: `future`, `dev`, and `production`. The default value is `production`.
+Specifies the source channel for the installation. The possible values are:
+
+- `Current` - Current release
+- `LTS` - Long-Term Support channel (current supported release)
+- Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`)
+- Branch name [for example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` for the latest from the `master` branch ("bleeding edge" nightly releases)]
+
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Core Support Lifecycle](https://www.microsoft.com/net/core/support) topic.
 
 `--debug-symbols`
 
@@ -82,7 +89,7 @@ Shows help information.
 
 `-i|--install-dir <DIRECTORY>`
 
-Specifies the installation path. The directory is created if it doesn't exist. The default value is `$HOME/.dotnet`.
+Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Note that binaries are placed directly in the directory.
 
 `--no-path`
 
@@ -101,15 +108,17 @@ If set, this option limits installation to the shared runtime. The entire SDK is
 
 `--uncached-feed <FEED>`
 
-Allows you to change the URL for the uncached feed used by the installer. This parameter typically isn't changed by the user. It defaults to `https://dotnetcli.blob.core.windows.net/dotnet`.
+Allows you to change URL for the uncached feed used by the installer. It defaults to `https://dotnetcli.blob.core.windows.net/dotnet`. This parameter typically isn't changed by the user.
 
-`--verbose`
+`-Version <VERSION>`
 
-Display diagnostics information.
+Represents a build version on the source channel (see the `-Channel` option). The possible values are:
 
-`-v|--version <VERSION>`
+- `latest` - Latest build on the channel
+- `coherent` - Latest coherent build on the channel; uses the latest stable package combination
+- Three-part version in X.Y.Z format representing a specific build version (for example, `1.0.x` with `x` representing the patch version; or a specific build, such as `2.0.0-preview2-006120`)
 
-Specifies the version of CLI to install. You must specify the version as a three-part version (for example, 1.0.0-13232). If omitted, it defaults to the first [global.json](global-json.md) that contains the `version` property. If a *global.json* file isn't found with a `version` property, it uses the latest version.
+If omitted, `-Version` defaults to the first [global.json](global-json.md) that contains the `version` member. If that isn't present, `-Version` defaults to `latest`.
 
 ### PowerShell (Windows)
 
@@ -125,7 +134,14 @@ Indicates the URL for the Azure feed to the installer. It isn't recommended that
 
 `-Channel <CHANNEL>`
 
-Specifies the source channel for the installation. The values are: `future`, `preview`, and `production`. The default value is `production`.
+Specifies the source channel for the installation. The possible values are:
+
+- `Current` - Current release
+- `LTS` - Long-Term Support channel (current supported release)
+- Two-part version in X.Y format representing a specific release (for example, `2.0` or `1.0`)
+- Branch name [for example, `release/2.0.0`, `release/2.0.0-preview2`, or `master` for the latest from the `master` branch ("bleeding edge" nightly releases)]
+
+The default value is `LTS`. For more information on .NET support channels, see the [.NET Core Support Lifecycle](https://www.microsoft.com/net/core/support) topic.
 
 `-DryRun`
 
@@ -133,7 +149,7 @@ If set, the script won't perform the installation; but instead, it displays what
 
 `-InstallDir <DIRECTORY>`
 
-Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*.
+Specifies the installation path. The directory is created if it doesn't exist. The default value is *%LocalAppData%\.dotnet*. Note that binaries are placed directly in the directory.
 
 `-NoPath`
 
@@ -157,7 +173,13 @@ Allows you to change URL for the uncached feed used by the installer. It default
 
 `-Version <VERSION>`
 
-Specifies the version of CLI to install. You must specify the version as a three-part version (for example, 1.0.0-13232). If omitted, it defaults to the first [global.json](global-json.md) that contains the `version` property. If a *global.json* file isn't found with a `version` property, it uses the latest version.
+Represents a build version on the source channel (see the `-Channel` option). The possible values are:
+
+- `latest` - Latest build on the channel
+- `coherent` - Latest coherent build on the channel; uses the latest stable package combination
+- Three-part version in X.Y.Z format representing a specific build version (for example, `1.0.x` with `x` representing the patch version; or a specific build, such as `2.0.0-preview2-006120`)
+
+If omitted, `-Version` defaults to the first [global.json](global-json.md) that contains the `version` member. If that isn't present, `-Version` defaults to `latest`.
 
 ## Examples
 
@@ -180,3 +202,8 @@ Windows:
 macOS/Linux:
 
 `./dotnet-install.sh --channel preview --install-dir ~/cli`
+
+## See also
+
+[.NET Core releases](https://github.com/dotnet/core/releases)   
+[.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)

@@ -31,7 +31,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:SystemException.Message> property of the new instance to a system-supplied message that describes the error. This message takes into account the current system culture.  
+ This constructor initializes the <xref:System.Exception.Message*> property of the new instance to a system-supplied message that describes the error. This message takes into account the current system culture.  
   
  The following table shows the initial property values for the new instance.  
   

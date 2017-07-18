@@ -26,7 +26,7 @@ ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 
 ## Description
 
-The `dotnet add reference` command adds project references to a project. After running the command, a [**\<ProjectReference>**](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items) element is added to the project file.
+The `dotnet add reference` command adds project references to a project. After running the command, a [**\<ProjectReference>**](/visualstudio/msbuild/common-msbuild-project-items) element is added to the project file.
 
 For example, adding *lib1\lib1.csproj* to *ToDo.csproj* with `dotnet add reference lib1/lib1.csproj` produces:
 

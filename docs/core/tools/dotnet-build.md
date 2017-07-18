@@ -32,9 +32,9 @@ If the project has third-party dependencies, such as libraries from NuGet, they'
 
 Building requires the *project.assets.json* file in the intermediate output folder (*obj*), which lists the dependencies of your app. The file is created when you execute [`dotnet restore`](dotnet-restore.md) before building the project. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors.
 
-`dotnet build` uses [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) to build the project, so it supports both parallel and incremental builds. Refer to [Incremental Builds](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds) for more information. 
+`dotnet build` uses [MSBuild](/visualstudio/msbuild/msbuild) to build the project, so it supports both parallel and incremental builds. Refer to [Incremental Builds](/visualstudio/msbuild/incremental-builds) for more information. 
 
-In addition to its own options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. Learn more about these options in the [MSBuild Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference). 
+In addition to its own options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. Learn more about these options in the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). 
 
 The `<OutputType>` property in the project file determines if the build output is an executable app or a non-executable library. The following example shows a project file that produces executable code (a .NET Core console app):
 

@@ -1,6 +1,6 @@
 open System
 
-let convertByte () = (
+let convertByte () =
 //<snippet9>
     let bases = [2; 8; 10; 16]
     let numbers = [ Byte.MinValue; 12uy; 103uy; Byte.MaxValue ]
@@ -31,9 +31,8 @@ let convertByte () = (
     //         103   -->  0x67
     //         255   -->  0xff
 //</snippet9>
-    )
 
-let convertShort () = (
+let convertShort () =
 //<snippet10>
     let bases = [2; 8; 10; 16]
     let numbers = [ Int16.MinValue; -13621s; -18s; 12s; 19142s; Int16.MaxValue ]
@@ -72,9 +71,8 @@ let convertShort () = (
     //         19142    -->  0x4ac6
     //         32767    -->  0x7fff
 //</snippet10>
-    )
 
-let convertInt () = (
+let convertInt () =
 //<snippet11>
     let bases = [2; 8; 10; 16]
     let numbers = [ Int32.MinValue; -19327543; -13621; -18; 12; 19142; Int32.MaxValue ]
@@ -117,9 +115,8 @@ let convertInt () = (
     //         19142           -->  0x4ac6
     //         2147483647      -->  0x7fffffff
 //</snippet11>
-    )
 
-let convertLong () = (
+let convertLong () =
 //<snippet12>
     let bases = [2; 8; 10; 16]
     let numbers = [ Int64.MinValue; -193275430L; -13621L; -18L; 12L; 1914206117L; Int64.MaxValue ]
@@ -162,7 +159,7 @@ let convertLong () = (
     //         1914206117              -->  0x721877a5
     //         9223372036854775807     -->  0x7fffffffffffffff
 //</snippet12>
-    )
+
 
 [<EntryPoint>]
 let main argv = 

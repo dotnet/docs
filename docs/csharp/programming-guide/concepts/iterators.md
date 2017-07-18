@@ -367,7 +367,7 @@ public class Stack<T> : IEnumerable<T>
   
  Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
   
- For additional information, see the [C# Language Specification](../../../csharp/language-reference/language-specification.md).  
+ For additional information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md.md).  
   
 ##  <a name="BKMK_UseOfIterators"></a> Use of Iterators  
  Iterators enable you to maintain the simplicity of a `foreach` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:  

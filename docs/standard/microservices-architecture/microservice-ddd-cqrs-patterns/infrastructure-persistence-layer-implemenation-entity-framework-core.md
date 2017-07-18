@@ -23,16 +23,16 @@ Since an introduction to EF Core is already available in Microsoft documentation
 #### Additional resources
 
 -   **Entity Framework Core**
-    [*https://docs.microsoft.com/en-us/ef/core/*](https://docs.microsoft.com/en-us/ef/core/)
+    [*https://docs.microsoft.com/ef/core/*](https://docs.microsoft.com/ef/core/)
 
 -   **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio**
-    [*https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/*](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/)
+    [*https://docs.microsoft.com/aspnet/core/data/ef-mvc/*](https://docs.microsoft.com/aspnet/core/data/ef-mvc/)
 
 -   **DbContext Class**
-    [*https://docs.microsoft.com/en-us/ef/core/api/microsoft.entityframeworkcore.dbcontext*](https://docs.microsoft.com/en-us/ef/core/api/microsoft.entityframeworkcore.dbcontext)
+    [*https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext*](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.dbcontext)
 
 -   **Compare EF Core & EF6.x**
-    [*https://docs.microsoft.com/en-us/ef/efcore-and-ef6/index*](https://docs.microsoft.com/en-us/ef/efcore-and-ef6/index)
+    [*https://docs.microsoft.com/ef/efcore-and-ef6/index*](https://docs.microsoft.com/ef/efcore-and-ef6/index)
 
 ## Infrastructure in Entity Framework Core from a DDD perspective
 
@@ -319,7 +319,7 @@ EF 1.1 supports a way to map a field without a related property to a column in t
 
 ### Using shadow properties in value objects for hidden IDs at the infrastructure level
 
-Shadow properties in EF Core are properties that do not exist in your entity class model. The values and states of these properties are maintained purely in the [ChangeTracker](https://docs.microsoft.com/en-us/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) class at the infrastructure level.
+Shadow properties in EF Core are properties that do not exist in your entity class model. The values and states of these properties are maintained purely in the [ChangeTracker](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) class at the infrastructure level.
 
 From a DDD point of view, shadow properties are a convenient way to implement value objects by hiding the ID as a shadow property primary key. This is important, because a value object should not have identity (at least, you should not have the ID in the domain model layer when shaping value objects). The point here is that as of the current version of EF Core, EF Core does not have a way to implement value objects as [complex types](https://msdn.microsoft.com/en-us/library/jj680147(v=vs.113).aspx), as is possible in EF 6.x. That is why you currently need to implement a value object as an entity with a hidden ID (primary key) set as a shadow property.
 
@@ -348,7 +348,7 @@ void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
     // address is a value object and an identity is not required for a
     // value object
     // EF Core just needs the ID so it can store it in a database table
-    // See: https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties
+    // See: https://docs.microsoft.com/ef/core/modeling/shadow-properties
     addressConfiguration.Property<int>("Id").IsRequired();
     addressConfiguration.HasKey("Id");
 }
@@ -357,19 +357,19 @@ void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
 #### Additional resources
 
 -   **Table Mapping**
-    [*https://docs.microsoft.com/en-us/ef/core/modeling/relational/tables*](https://docs.microsoft.com/en-us/ef/core/modeling/relational/tables)
+    [*https://docs.microsoft.com/ef/core/modeling/relational/tables*](https://docs.microsoft.com/ef/core/modeling/relational/tables)
 
 -   **Use HiLo to generate keys with Entity Framework Core**
     [*http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/*](http://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/)
 
 -   **Backing Fields**
-    [*https://docs.microsoft.com/en-us/ef/core/modeling/backing-field*](https://docs.microsoft.com/en-us/ef/core/modeling/backing-field)
+    [*https://docs.microsoft.com/ef/core/modeling/backing-field*](https://docs.microsoft.com/ef/core/modeling/backing-field)
 
 -   **Steve Smith. Encapsulated Collections in Entity Framework Core**
     [*http://ardalis.com/encapsulated-collections-in-entity-framework-core*](http://ardalis.com/encapsulated-collections-in-entity-framework-core)
 
 -   **Shadow Properties**
-    [*https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties)
+    [*https://docs.microsoft.com/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 
 
 >[!div class="step-by-step"]

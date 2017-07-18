@@ -21,8 +21,26 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows applications to receive notification when the Internet Protocol (IP) address of a network interface, also called a network card or adapter, changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.NetworkInformation.NetworkChange> class provides address change notification by raising <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> events. An interface address can change for many reasons, such as a disconnected network cable, moving out of range of a wireless Local Area Network, or hardware failure.  
+  
+ To receive notification, you must identify your application's event handlers, which are one or more methods that perform your application-specific tasks each time the event is raised. To have a <xref:System.Net.NetworkInformation.NetworkChange> object call your event-handling methods when a <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event occurs, you must associate the methods with a <xref:System.Net.NetworkInformation.NetworkAddressChangedEventHandler> delegate, and add this delegate to the event.  
+  
+   
+  
+## Examples  
+ The following code example listens for address changes and displays the status of network interfaces when a <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event occurs.  
+  
+ [!code-cpp[NclNetAddressChanged1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetAddressChanged1/CPP/changed.cpp#1)]
+ [!code-csharp[NclNetAddressChanged1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetAddressChanged1/CS/changed.cs#1)]
+ [!code-vb[NclNetAddressChanged1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetAddressChanged1/VB/changed.vb#1)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,7 +59,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.NetworkInformation.NetworkChange" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,8 +86,28 @@
         <ReturnType>System.Net.NetworkInformation.NetworkAddressChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the IP address of a network interface changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.NetworkInformation.NetworkChange> class raises <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> events when the address of a network interface, also called a network card or adapter, changes.  
+  
+ To have a <xref:System.Net.NetworkInformation.NetworkChange> object call an event-handling method when a <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event occurs, you must associate the method with a <xref:System.Net.NetworkInformation.NetworkAddressChangedEventHandler> delegate, and add this delegate to this event.  
+  
+ The <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event is supported on Windows 2000 and later.  
+  
+   
+  
+## Examples  
+ The following code example listens for address changes and displays the status of network interfaces when a <xref:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged> event occurs.  
+  
+ [!code-cpp[NclNetAddressChanged1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclNetAddressChanged1/CPP/changed.cpp#1)]
+ [!code-csharp[NclNetAddressChanged1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclNetAddressChanged1/CS/changed.cs#1)]
+ [!code-vb[NclNetAddressChanged1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclNetAddressChanged1/VB/changed.vb#1)]  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NetworkAvailabilityChanged">
@@ -94,8 +132,19 @@
         <ReturnType>System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the availability of the network changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.NetworkInformation.NetworkChange> class raises <xref:System.Net.NetworkInformation.NetworkChange.NetworkAvailabilityChanged> events when the availability of the network changes. The network is available when at least one network interface is marked "up" and is not a tunnel or loopback interface.  
+  
+ To have a <xref:System.Net.NetworkInformation.NetworkChange> object call an event-handling method when a <xref:System.Net.NetworkInformation.NetworkChange.NetworkAvailabilityChanged> event occurs, you must associate the method with a <xref:System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler> delegate, and add this delegate to this event.  
+  
+ The <xref:System.Net.NetworkInformation.NetworkChange.NetworkAvailabilityChanged> event is supported on Windows 2000 and later.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RegisterNetworkChange">
@@ -126,8 +175,8 @@
         <Parameter Name="nc" Type="System.Net.NetworkInformation.NetworkChange" />
       </Parameters>
       <Docs>
-        <param name="nc">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="nc">The instance to register.</param>
+        <summary>Registers a network change instance to receive network change events.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

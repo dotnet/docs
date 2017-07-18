@@ -15,8 +15,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TType">The value type.</typeparam>
-    <summary>Represents a custom metadata atttribute value of the specified generic type.</summary>
+    <typeparam name="TType">The attribute type.</typeparam>
+    <summary>Represents a custom atttribute of the type specified by <paramref name="TType"/>.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the fixed arguments for the custom attribute value.</summary>
+        <summary>Gets the fixed arguments for the custom attribute.</summary>
         <value>An immutable array of arguments.</value>
         <remarks></remarks>
       </Docs>

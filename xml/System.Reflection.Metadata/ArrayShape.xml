@@ -91,9 +91,16 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sizes of each dimension. Length may be smaller than rank, in which case the trailing dimensions have unspecified sizes.</summary>
+        <summary>Gets the sizes of each dimension.</summary>
         <value>A collection of size values.</value>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The number of elements in the returned array may be fewer than the number of dimensions of the array type (its rank). In that case, the trailing dimensions have unspecified sizes.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -42,7 +42,7 @@
         <param name="returnType">The return type of the method.</param>
         <param name="requiredParameterCount">The number of required parameters.</param>
         <param name="genericParameterCount">The number of generic type parameters.</param>
-        <param name="parameterTypes">The paramter types.</param>
+        <param name="parameterTypes">The parameter types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MethodSignature`1" /> structure using the specified header, return type, and parameter information.</summary>
         <remarks></remarks>
       </Docs>
@@ -118,9 +118,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of parameters that are required for the method. This value will be equal to the length of the <see cref="ParameterTypes"/> property, unless this method signature represents the standalone call site of a vararg method, in which case, the extra entries in <see cref="ParameterTypes"/> are the types used for the optional parameters.</summary>
+        <summary>Gets the number of parameters that are required for the method.</summary>
         <value>The number of required parameters.</value>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value will be equal to the length of the <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> property, unless this method signature represents the standalone call site of a vararg method, in which case, the extra entries in <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> are the types used for the optional parameters.
+  
+ ]]></format>
+      </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnType">

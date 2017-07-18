@@ -83,7 +83,7 @@ Generics were added to version 2.0 of the C# language and the common language ru
 -   [Generics in the .NET Framework Class Library](../../../csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md)  
   
 ## C# Language Specification  
- For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md.md).  
+ For more information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
 ## See Also  
  <xref:System.Collections.Generic>   

@@ -14,7 +14,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Target frameworks
 
-When you target one or more frameworks in an app or library, you're specifying the sets and versions of APIs that you'd like to make available to the app or library. You specify target frameworks in the project file using Target Framework Monikers (TFMs). When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework and then write code to conditionally use those assemblies during compilation with preprocessor symbols and *if-then-else* logic.
+When you target one or more frameworks in an app or library, you're specifying the sets and versions of APIs that you'd like to make available to the app or library. You specify target frameworks in the project file using Target Framework Monikers (TFMs). When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using preprocessor symbols with *if-then-else* logic.
 
 An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET frameworks. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across several .NET implementations all at once.
 
@@ -36,11 +36,11 @@ The following table defines the set of target frameworks that you can use, how t
 
 ## Supported target framework versions
 
-A target framework is typically referenced by a TFM. The following table shows the target frameworks supported by the .NET Core SDK and the NuGet client. Equivalents are shown within brackets (`[]`).
+A target framework is typically referenced by a TFM. The following table shows the target frameworks supported by the .NET Core SDK and the NuGet client. Equivalents are shown within brackets. For example, `win81` is an equilivant TFM to `netcore451`.
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0 |
+| .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6 |
 | .NET Core                  | netcoreapp1.0<br>netcoreapp1.1 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win, win8]<br>netcore451 [win81] |
@@ -105,13 +105,13 @@ public class MyClass
 }
 ```
 
-The build system is aware of preprocessor symbols representing the target frameworks shown in [Supported target framework versions](#supported-target-framework-versions). When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot in the version with an underscore (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-framework-versions) table. When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot in the version with an underscore (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
 
 The complete list of preprocessor symbols for .NET Core target frameworks is:
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
 
-Although it's less likely that developers cross-target .NET Core app target frameworks compared to library target frameworks, cross-targetting app target frameworks does work:
+It's less likely that developers cross-target .NET Core app target frameworks compared to cross-targeting for libraries, but you can cross-target app target frameworks when needed:
 
 ```xml
 <TargetFrameworks>netcoreapp1.0;netcoreapp1.1</TargetFrameworks>
@@ -130,7 +130,7 @@ public static void Main(string[] args)
 
 ## Deprecated target frameworks
 
-The following target frameworks are deprecated. Packages targeting these frameworks should migrate to the indicated replacements.
+The following target frameworks are deprecated. Packages targeting these target frameworks should migrate to the indicated replacements.
 
 | Deprecated TFM                                                                             | Replacement |
 | ------------------------------------------------------------------------------------------ | ----------- |
@@ -145,7 +145,7 @@ The following target frameworks are deprecated. Packages targeting these framewo
 
 ## Precedence
 
-A number of frameworks are related to and compatible with one another but not necessarily equivalent:
+A number of target frameworks are related to and compatible with one another but not necessarily equivalent:
 
 | Framework                        | Can use                     |
 | -------------------------------- | --------------------------- |
@@ -157,7 +157,7 @@ A number of frameworks are related to and compatible with one another but not ne
 
 [Packages, Metapackages and Frameworks](~/docs/core/packages.md)   
 [Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)   
-[.NET Standard](~/docs/standard/net-standard.md) topic   
+[.NET Standard](~/docs/standard/net-standard.md)   
 [dotnet/standard GitHub repository](https://github.com/dotnet/standard)   
 [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)   
 [Framework Profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)

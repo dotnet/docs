@@ -58,7 +58,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  The following are additional C# resources:  
   
--   For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md.md).  
+-   For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
   
 -   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   

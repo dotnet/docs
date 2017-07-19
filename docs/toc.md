@@ -7,7 +7,7 @@
 ## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
-## [Frameworks and Targets](standard/frameworks.md)
+## [Target Frameworks](standard/frameworks.md)
 ## [.NET Glossary](standard/glossary.md)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)

@@ -13,8 +13,7 @@ ms.devlang: dotnet
 
 # .NET Glossary
 
-The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the documentation without definitions. Some of these terms cause confusion because the documentation uses them inconsistently, so a secondary goal is to provide word use guidance for contributors to follow that will help ensure consistent usage in the future.
-
+The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the .NET documentation without definitions. Some of these terms are used inconsistently, so a secondary goal is to help reduce the confusion that inconsistent usage causes.
 
 ## AOT
 
@@ -22,11 +21,15 @@ Ahead-of-time compiler. Similar to JIT, this compiler also translates IL to mach
 
 ## ASP.NET 
 
-Usually: the original ASP.NET implementation that ships with the .NET Framework. Sometimes ASP.NET is an umbrella term that refers to ASP.NET Core as well as the ASP.NET that ships with the .NET Framework. The meaning that the term carries in any given instance is determined by context. See [ASP.NET](https://docs.microsoft.com/en-us/aspnet/#pivot=aspnet).
+The original ASP.NET implementation that ships with the .NET Framework.
+See [ASP.NET](https://docs.microsoft.com/en-us/aspnet/#pivot=aspnet).
+
+Sometimes ASP.NET is an umbrella term that refers to ASP.NET Core as well as the ASP.NET that ships with the .NET Framework. The meaning that the term carries in any given instance is determined by context. 
 
 ## ASP.NET Core
 
-A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.  See [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/#pivot=core).
+A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.
+See [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/#pivot=core).
 
 ## CLR
 
@@ -46,16 +49,17 @@ Common language runtime. The exact meaning depends on context, but this usually 
 
 ## ecosystem
 
- All of the runtime software, development tools, and community resources that can be used to build and run applications for a given technology. The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Example: "The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem."
+ All of the runtime software, development tools, and community resources that can be used to build and run applications for a given technology. The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries.
+Example: "The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem."
 
 ## framework
 
 In general: a comprehensive library that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks.
 
 See also the following terms, in which "framework" has a more specific technical meaning:
-* [.NET Framework*](#net-framework)
+* [.NET Framework](#net-framework)
 * [target framework](#target-framework)
-* [target framework moniker](#tfm)
+* [TFM (target framework moniker)](#tfm)
 
 Existing documentation sometimes use "framework" to refer to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET Core a framework.  We plan to eliminate this usage from the documentation, as it can be confusing.
 
@@ -85,6 +89,7 @@ Examples of .NET implementations:
 * .NET Core includes:
   * A JIT-based runtime (CoreCLR)
   * A class library that implements .NET Standard 2.0
+  * An SDK that includes cross-platform CLI (command-line interface) tools
 * Universal Windows Platform (UWP) includes:
   * A JIT-based runtime for debugging (CoreCLR)
   * An AOT-based runtime for retail (.NET Native)
@@ -98,7 +103,8 @@ Because a library includes API implementations as well as specifications (interf
 
 ## metapackage
 
-A NuGet package that has no library of its own but is only a list of dependencies. The included packages can optionally establish the API for a target framework. See [Packages, Metapackages and Frameworks](../core/packages.md)
+A NuGet package that has no library of its own but is only a list of dependencies. The included packages can optionally establish the API for a target framework.
+See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
 
@@ -106,27 +112,32 @@ An open source alternative to the .NET Framework. Mono started around the same t
 
 When .NET Core was released under the MIT license, Microsoft also released [large chunks of the .NET Framework under the MIT license](https://github.com/microsoft/referencesource) as well. This enabled the Mono community to use the same code the .NET Framework uses in order to close gaps and avoid behavioral differences.
 
-Mono is primarily used to run .NET applications on Linux and Mac OS X (though to get into the Mac App Store you need [Xamarin](#xamarin). There are ports of Mono to other platforms; see [Mono's Supported Platforms](http://www.mono-project.com/docs/about-mono/supported-platforms/). Mono has implementations (though not necessarily complete) of WinForms, ASP.NET, and System.Drawing.
+Mono is primarily used to run .NET applications on Linux and Mac OS X (though to get into the Mac App Store you need [Xamarin](https://www.xamarin.com/). There are ports of Mono to other platforms; see [Mono's Supported Platforms](http://www.mono-project.com/docs/about-mono/supported-platforms/). Mono has implementations (though not necessarily complete) of WinForms, ASP.NET, and System.Drawing.
 
 ## .NET
 
-The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.  Always capitalized (not ".Net). See the [.NET Guide](index.md)
+The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.  Always capitalized (never ".Net").
+See the [.NET Guide](index.md)
 
 ## .NET Core 
 
-A cross-platform, high-performance, open source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in preview), and the Core Base Class Library. .NET Core provides a lightweight development model and the flexibility to work with your favorite development tools on your favorite development platform. See [.NET Core](../core/index.md).
+A cross-platform, high-performance, open source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in preview), and the Core Base Class Library. .NET Core provides a lightweight development model and the flexibility to work with your favorite development tools on your favorite development platform.
+See [.NET Core](../core/index.md).
 
 ## .NET Core CLI
 
-A cross-platform toolchain for developing .NET Core applications. See [.NET Core command-line interface (CLI) tools](../core/tools/index.md).
+A cross-platform toolchain for developing .NET Core applications.
+See [.NET Core command-line interface (CLI) tools](../core/tools/index.md).
 
 ## .NET Core SDK
 
-A set of libraries and tools that allow developers to create .NET Core applications and libraries.  Includes the .NET Core CLI for building apps, .NET Core libraries and runtime for building and running apps, and the dotnet executable that runs CLI commands and runs applications. See [.NET Core SDK Overview](../core/sdk/index.md).
+A set of libraries and tools that allow developers to create .NET Core applications and libraries.  Includes the .NET Core CLI for building apps, .NET Core libraries and runtime for building and running apps, and the dotnet executable that runs CLI commands and runs applications.
+See [.NET Core SDK Overview](../core/sdk.md).
 
 ## .NET Framework
 
-The original implementation of .NET, which runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF. See [.NET Framework Guide](../framework/index.md).
+The original implementation of .NET, which runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF.
+See [.NET Framework Guide](../framework/index.md).
 
 ## NET Native
 
@@ -142,7 +153,8 @@ UWP was the first application framework that was supported by .NET Native. We no
 
 ## .NET Standard
 
-A formal specification of .NET APIs that are intended to be available on all .NET runtimes. See [.NET Standard](net-standard.md).
+A formal specification of .NET APIs that are intended to be available on all .NET runtimes.
+See [.NET Standard](net-standard.md).
 
 ## NGEN
 
@@ -185,23 +197,21 @@ A set of programming technologies that are used together to build and run applic
 The collection of APIs that a .NET app or library relies on. An app or library can target a version of .NET Standard (for example, .NET Standard 2.0), which is specification for a standardized set of APIs across all .NET implementations. An app or library can also target a specific .NET implementation, in which case it gets access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
 
 For some target frameworks (for example, the .NET Framework) the available APIs are defined by the assemblies that the framework installs on a system and may include app model APIs (for example, ASP.NET, Windows Forms).  For package-based target frameworks (such as .NET Standard and .NET Core), the framework APIs are defined by the packages installed in the app or library.  In that case the target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
+See [Target Frameworks](frameworks.md).
 
 ## TFM
 
-Target framework moniker. A standardized token format for specifying the target framework of a .NET app or library. Target frameworks are typically referenced by a Compact TFM (short name, such as net462). Long form TFMs (such as .NETFramework,Version=4.6.2) exist but are not generally used to specify an app or library's target framework.
+Target framework moniker. A standardized token format for specifying the target framework of a .NET app or library. Target frameworks are typically referenced by a Compact TFM (short name, such as net462). Long form TFMs (such as .NETFramework,Version=4.6.2) exist but are not generally used to specify a target framework.
+See [Target Frameworks](frameworks.md).
 
-## Universal Windows Platform (UWP)
+## UWP
 
-An implementation of .NET that is used for building modern, touch-enabled Windows applications as well as headless devices for Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, VB.NET, and JavaScript. When using C# and VB.NET the .NET APIs are provided by .NET Core.
-
-## Xamarin
-
-A commercial offering based on Mono, for building mobile applications targeting Android, iOS, and macOS. Mono runs on macOS without Xamarin, but their linker is required make the app package for the Mac App Store. Xamarin ships a full static compiler on iOS, as the platform does not support dynamic code generation. See [Xamarin](https://www.xamarin.com/).
+Universal Windows Platform. An implementation of .NET that is used for building modern, touch-enabled Windows applications as well as headless devices for Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, VB.NET, and JavaScript. When using C# and VB.NET the .NET APIs are provided by .NET Core.
 
 ## See also
 
-[.NET Guide](index.md)
-[.NET Framework Guide](../framework/index.md)
-[.NET Core Guide](../core/index.md)
-[ASP.NET Overview](https://docs.microsoft.com/en-us/aspnet/index#pivot=aspnet)
-[ASP.NET Core Overview](https://docs.microsoft.com/en-us/aspnet/index#pivot=core)
+* [.NET Guide](index.md)
+* [.NET Framework Guide](../framework/index.md)
+* [.NET Core](../core/index.md)
+* [ASP.NET Overview](https://docs.microsoft.com/en-us/aspnet/index#pivot=aspnet)
+* [ASP.NET Core Overview](https://docs.microsoft.com/en-us/aspnet/index#pivot=core)

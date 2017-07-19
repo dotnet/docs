@@ -6,7 +6,7 @@ public class Example
    // <Snippet1>
    public static void Main()
    {
-       (string city, int population, double area) = QueryCityData("New York City");
+       (string city, var population, var area) = QueryCityData("New York City");
 
        // Do something with the data.
    }

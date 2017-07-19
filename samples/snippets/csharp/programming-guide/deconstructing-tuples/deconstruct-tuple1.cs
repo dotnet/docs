@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
 
 public class Example
 {
    public static void Main()
    {
-       var population = new Dictionary<string, int>();
-       var area = new Dictionary<string, double>();
        var result = QueryCityData("New York City");
        
        var city = result.Item1;

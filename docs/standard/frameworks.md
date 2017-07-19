@@ -4,7 +4,7 @@ description: Information surrounding target frameworks for .NET Core application
 keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw
-ms.date: 07/17/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -14,19 +14,19 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Target frameworks
 
-When you target one or more frameworks in an app or library, you're specifying the sets and versions of APIs that you'd like to make available to the app or library. You specify target frameworks in the project file using Target Framework Monikers (TFMs). When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using preprocessor symbols with *if-then-else* logic.
+When you target a framework in an app or library, you're specifying the set of APIs that you'd like to make available to the app or library. You specify the target framework in your *csproj* project file using Target Framework Monikers (TFMs).
 
-An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET frameworks. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across several .NET implementations all at once.
+An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
 
-An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
+An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers, or an app that targets 
 
-For some target frameworks (for example, the .NET Framework), the APIs are defined by the assemblies that the framework installs on a system and may include app model APIs (for example, ASP.NET).
+For some target frameworks (for example, the .NET Framework), the APIs are defined by the assemblies that the framework installs on a system and may include application framework APIs (for example, ASP.NET).
 
-For NuGet package-based target frameworks (for example, .NET Standard and .NET Core), the APIs are defined by the packages listed in the app or library. A *metapackage* is a NuGet package that has no content of its own but is a list of dependencies (other packages). A NuGet package-based target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
+For package-based target frameworks (for example, .NET Standard and .NET Core), the APIs are defined by the packages included in the app or library. A *metapackage* is a NuGet package that has no content of its own but is a list of dependencies (other packages). A NuGet package-based target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
 
 ## Latest target framework versions
 
-The following table defines the set of target frameworks that you can use, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
+The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
 
 | Target Framework      | Latest Version | Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
 | :-------------------: | :------------: | :----------------------------: | :-------------------: | :---------: |
@@ -64,7 +64,9 @@ Target frameworks are specified in your *csproj* project file. When a single tar
 </Project>
 ```
 
-The following library project file targets newer APIs of .NET Standard (`netstandard1.4`) and APIs of the .NET Framework (`net40` and `net45`). When targeting more than one target framework, use the plural **TargetFrameworks** element. Note how the use of `Condition` attributes includes implementation-specific package references when the library is compiled for the two .NET Framework TFMs:
+When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using preprocessor symbols with *if-then-else* logic.
+
+The following library *csproj* project file targets APIs of .NET Standard (`netstandard1.4`) and APIs of the .NET Framework (`net40` and `net45`). Use the plural **TargetFrameworks** element with multiple target frameworks. Note how the `Condition` attributes include implementation-specific packages when the library is compiled for the two .NET Framework TFMs:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -105,28 +107,11 @@ public class MyClass
 }
 ```
 
-The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-framework-versions) table. When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot in the version with an underscore (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-framework-versions) table. When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot with an underscore and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
 
 The complete list of preprocessor symbols for .NET Core target frameworks is:
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
-
-It's less likely that developers cross-target .NET Core app target frameworks compared to cross-targeting for libraries, but you can cross-target app target frameworks when needed:
-
-```xml
-<TargetFrameworks>netcoreapp1.0;netcoreapp1.1</TargetFrameworks>
-```
-
-```csharp
-public static void Main(string[] args)
-{
-#if NETCOREAPP1_1
-    Console.WriteLine("Hello World from netcoreapp1.1!");
-#else
-    Console.WriteLine("Hello World from netcoreapp1.0!");
-#endif
-}
-```
 
 ## Deprecated target frameworks
 
@@ -142,16 +127,6 @@ The following target frameworks are deprecated. Packages targeting these target 
 | win81                                                                                      | netcore451  |
 | win10                                                                                      | uap10.0     |
 | winrt                                                                                      | netcore45   |
-
-## Precedence
-
-A number of target frameworks are related to and compatible with one another but not necessarily equivalent:
-
-| Framework                        | Can use                     |
-| -------------------------------- | --------------------------- |
-| uap (Universal Windows Platform) | win81<br>wpa81<br>netcore50 |
-| win (Windows Store)              | winrt                       |
-|                                  | winrt45                     |
 
 ## See also
 

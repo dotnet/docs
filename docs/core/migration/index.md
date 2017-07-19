@@ -4,7 +4,7 @@ description: .NET Core project.json to csproj migration
 keywords: .NET, .NET Core, .NET Core migration
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/13/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -34,7 +34,7 @@ If you open a solution file, all the projects specified in the solution file wil
 
 ![One-way upgrade dialog showing the list of projects to be migrated](media/one-way-upgrade.jpg)
 
-Visual Studio will migrate the projects chosen automatically. When migrating a solution, if you don't choose all projects, the same dialog will appear asking you to upgrade the remaining projects from that solution.
+Visual Studio will migrate the projects chosen automatically. When migrating a solution, if you don't choose all projects, the same dialog will appear asking you to upgrade the remaining projects from that solution. After the project is migrated, you can see and modify its contents by right-clicking the project in the **Solution Explorer** window and selecting **Edit \<project name>.csproj**.
 
 Files that were migrated (*project.json*, *global.json*, *.xproj* and solution file) will be moved to a *Backup* folder. The solution file that is migrated will be upgraded to Visual Studio 2017 and you won't be able to open that solution file in previous versions of Visual Studio. 
 A file named *UpgradeLog.htm* is also saved and automatically opened that contains a migration report.

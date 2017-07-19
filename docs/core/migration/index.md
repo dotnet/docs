@@ -4,7 +4,7 @@ description: .NET Core project.json to csproj migration
 keywords: .NET, .NET Core, .NET Core migration
 author: blackdwarf
 ms.author: mairaw
-ms.date: 07/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -85,3 +85,6 @@ The .NET Core csproj format has been changing and evolving with each new pre-rel
 After these steps your project should be fully compatible with the RTM .NET Core csproj format. 
 
 For examples of before and after the migration from old csproj format to the new one, see the [Updating Visual Studio 2017 RC – .NET Core Tooling improvements](https://blogs.msdn.microsoft.com/dotnet/2016/12/12/updating-visual-studio-2017-rc-net-core-tooling-improvements/) article on the .NET blog.
+
+## See also
+[Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)

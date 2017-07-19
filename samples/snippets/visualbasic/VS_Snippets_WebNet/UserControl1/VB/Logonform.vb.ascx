@@ -1,4 +1,4 @@
-<%--<snippet9>--%>
+<!--<snippet9>-->
 <%@ control inherits = "LogOnControl" src = "LogOnControl.vb" %>
 
 <table style="font: 10pt verdana;border-width:1;border-style:solid;border-color:black;" cellspacing="15">
@@ -16,4 +16,4 @@
 <tr>
 </tr>
 </table>
-<%--</snippet9>--%>
+<!--</snippet9>-->

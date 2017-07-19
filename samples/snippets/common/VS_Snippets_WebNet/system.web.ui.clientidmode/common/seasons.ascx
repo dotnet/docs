@@ -19,7 +19,7 @@
 <!-- <Snippet5> --> 
 <asp:DropDownList ID="DropDownList1" runat="server" 
                   onchange="DisplaySport(this.selectedIndex);">
-  <%-- </Snippet5> --%>
+  <!-- </Snippet5> -->
   <asp:ListItem Value="Select a season"></asp:ListItem>
   <asp:ListItem Value="Spring"></asp:ListItem>
   <asp:ListItem Value="Summer"></asp:ListItem>

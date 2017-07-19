@@ -115,6 +115,7 @@
         "_csharplang/spec/*.md": "language-reference"
      },
       "langs": {
+        "api/System.Convert.yml": ["csharp", "vb", "cpp", "fsharp"],
         "api/**.yml": ["csharp", "vb", "cpp"]
       },
       "ROBOTS": {

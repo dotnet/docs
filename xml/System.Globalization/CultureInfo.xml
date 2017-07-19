@@ -158,7 +158,7 @@
   
 -   By retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property.  
   
--   By retrieving the value of the [Thread.CurrentThread.CurrentCulture](../Topic/CurrentCulture%20Property.md) property.  
+-   By retrieving the value of the [Thread.CurrentThread.CurrentCulture](<xref:System.Threading.Thread.CurrentCulture>) property.  
   
  The following example retrieves both property values, compares them to show that they are equal, and displays the name of the current culture.  
   
@@ -169,7 +169,7 @@
   
 -   By retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property.  
   
--   By retrieving the value of the [Thread.CurrentThread.CurrentUICulture](../Topic/CurrentUICulture%20Property.md) property.  
+-   By retrieving the value of the [Thread.CurrentThread.CurrentUICulture](<xref:System.Threading.Thread.CurrentUICulture>) property.  
   
  The following example retrieves both property values, compares them to show that they are equal, and displays the name of the current UI culture.  
   
@@ -313,9 +313,9 @@
   
 <a name="Windows"></a>   
 ## The current culture and UWP apps  
- In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are read-write; you can use to both get and set the current culture and the current UI culture, respectively. 
+ In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are read-write, just as they are in .NET Framework and .NET Core apps. However, in UWP apps, the two properties map to a single value, which is the first culture in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection that can be used as a framework culture.  
 
-In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties reflect the culture of the current thread only. In UWP apps, however, the current culture is a per-app setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property changes the current culture or the current UI culture for the entire app; these properties cannot be set on a per-thread basis.
+In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties reflect the culture and UI culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.
   
 ## Examples  
  The following example shows how to create a <xref:System.Globalization.CultureInfo> object for Spanish (Spain) with the international sort and another <xref:System.Globalization.CultureInfo> object with the traditional sort.  
@@ -1031,9 +1031,9 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
   
 <a name="WindowsAndCurr"></a>   
 ## The current culture and UWP apps  
- In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property is read-write; you can use it to both get and set the current culture. 
+ In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property is read-write, just as it is in .NET Framework and .NET Core apps; you can use it both to get and to set the current culture. However, UWP apps do not distinguish between the current culture and the current UI culture. The two properties map to a single value, which is the first culture in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection that can be used as a framework culture.  
 
-In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property reflects the culture of the current thread only. In UWP apps, however, the current culture is a per-app setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property changes the current culture for the entire app; it cannot be set on a per-thread basis.
+In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property reflects the culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) property, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.
   
 ## Examples  
  The following example demonstrates how to change the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.  
@@ -1150,9 +1150,9 @@ In .NET Framework and .NET Core apps, the current culture is a per-thread settin
 <a name="WindowsAndCurrUI"></a>   
 ## The current UI culture and UWP apps  
  
-In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property is read-write; you can use it to both get and set the current UI culture. 
+In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property is read-write, just as it is in .NET Framework and .NET Core apps; you can use it both to get and to set the current culture. However, UWP apps do not distinguish between the current culture and the current UI culture. The two properties map to a single value, which is the first culture in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection that can be used as a framework culture.
 
-In .NET Framework and .NET Core apps, the current UI culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property reflects the UI culture of the current thread only. In UWP apps, however, the current UI culture is a per-app setting. Setting the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property changes the current UI culture for the entire app; it cannot be set on a per-thread basis.    
+In .NET Framework and .NET Core apps, the current UI culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property reflects the UI culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) property, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.    
   
 ## Examples  
  The following code example demonstrates how to change the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.  

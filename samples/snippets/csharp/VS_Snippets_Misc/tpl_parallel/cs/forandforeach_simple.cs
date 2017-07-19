@@ -38,7 +38,7 @@ namespace ThreadLocalFor
 namespace NotInUse
 {
     using System;
-    using System.Drawing; // requires system.Drawing.dll
+    using System.Drawing;
     using System.IO;
     using System.Linq;
     using System.Threading;

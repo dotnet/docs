@@ -1,5 +1,5 @@
 ---
-redirect_url: /dotnet/articles/fsharp/using-fsharp-on-azure/index
+redirect_url: /dotnet/fsharp/using-fsharp-on-azure/index
 ---
 
 # Using F# on Azure Service Fabric

@@ -10,7 +10,7 @@ ms.technology: dotnet-docker
 ---
 # Using Azure Key Vault to protect secrets at production time
 
-Secrets stored as environment variables or stored by the Secret Manager tool are still stored locally and unencrypted on the machine. A more secure option for storing secrets is [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/), which provides a secure, central location for storing keys and secrets.
+Secrets stored as environment variables or stored by the Secret Manager tool are still stored locally and unencrypted on the machine. A more secure option for storing secrets is [Azure Key Vault](https://azure.microsoft.com/services/key-vault/), which provides a secure, central location for storing keys and secrets.
 
 The Microsoft.Extensions.Configuration.AzureKeyVault package allows an ASP.NET Core application to read configuration information from Azure Key Vault. To start using secrets from an Azure Key Vault, you follow these steps:
 
@@ -56,8 +56,8 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
 
 ## Additional resources
 
--   **Using Azure Key Vault to protect application secrets***
-    <https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault>*
+-   **Using Azure Key Vault to protect application secrets**
+    [*https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault*](https://docs.microsoft.com/azure/guidance/guidance-multitenant-identity-keyvault)
 
 -   **Safe storage of app secrets during development**
     [*https://docs.microsoft.com/aspnet/core/security/app-secrets*](https://docs.microsoft.com/aspnet/core/security/app-secrets)
@@ -69,7 +69,7 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
     [*https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
 
 -   **Microsoft.Extensions.Configuration.DockerSecrets.** GitHub repo.
-    *<https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets> *
+    [*https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets*](https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets)
 
 >[!div class="step-by-step"]
 [Previous] (developer-app-secrets-storage.md)

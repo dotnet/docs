@@ -22,14 +22,16 @@ Ahead-of-time compiler. Similar to JIT, this compiler also translates IL to mach
 ## ASP.NET 
 
 The original ASP.NET implementation that ships with the .NET Framework.
-See [ASP.NET](https://docs.microsoft.com/en-us/aspnet/#pivot=aspnet).
+
+See [ASP.NET](https://docs.microsoft.com/aspnet/#pivot=aspnet).
 
 Sometimes ASP.NET is an umbrella term that refers to ASP.NET Core as well as the ASP.NET that ships with the .NET Framework. The meaning that the term carries in any given instance is determined by context. 
 
 ## ASP.NET Core
 
 A cross-platform, high-performance, open source implementation of ASP.NET built on .NET Core.
-See [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/#pivot=core).
+
+See [ASP.NET Core](https://docs.microsoft.com/aspnet/#pivot=core).
 
 ## CLR
 
@@ -61,7 +63,7 @@ See also the following terms, in which "framework" has a more specific technical
 * [target framework](#target-framework)
 * [TFM (target framework moniker)](#tfm)
 
-Existing documentation sometimes use "framework" to refer to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET Core a framework.  We plan to eliminate this usage from the documentation, as it can be confusing.
+Existing documentation sometimes use "framework" to refer to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET Core a framework. We plan to eliminate this usage from the documentation, as it can be confusing.
 
 ## GC
 
@@ -104,6 +106,7 @@ Because a library includes API implementations as well as specifications (interf
 ## metapackage
 
 A NuGet package that has no library of its own but is only a list of dependencies. The included packages can optionally establish the API for a target framework.
+
 See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
@@ -116,27 +119,32 @@ Mono is primarily used to run .NET applications on Linux and Mac OS X (though to
 
 ## .NET
 
-The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.  Always capitalized (never ".Net").
+The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads. Always capitalized (never ".Net").
+
 See the [.NET Guide](index.md)
 
 ## .NET Core 
 
 A cross-platform, high-performance, open source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in preview), and the Core Base Class Library. .NET Core provides a lightweight development model and the flexibility to work with your favorite development tools on your favorite development platform.
+
 See [.NET Core](../core/index.md).
 
 ## .NET Core CLI
 
 A cross-platform toolchain for developing .NET Core applications.
+
 See [.NET Core command-line interface (CLI) tools](../core/tools/index.md).
 
 ## .NET Core SDK
 
-A set of libraries and tools that allow developers to create .NET Core applications and libraries.  Includes the .NET Core CLI for building apps, .NET Core libraries and runtime for building and running apps, and the dotnet executable that runs CLI commands and runs applications.
+A set of libraries and tools that allow developers to create .NET Core applications and libraries. Includes the .NET Core CLI for building apps, .NET Core libraries and runtime for building and running apps, and the dotnet executable that runs CLI commands and runs applications.
+
 See [.NET Core SDK Overview](../core/sdk.md).
 
 ## .NET Framework
 
 The original implementation of .NET, which runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF.
+
 See [.NET Framework Guide](../framework/index.md).
 
 ## NET Native
@@ -154,6 +162,7 @@ UWP was the first application framework that was supported by .NET Native. We no
 ## .NET Standard
 
 A formal specification of .NET APIs that are intended to be available on all .NET runtimes.
+
 See [.NET Standard](net-standard.md).
 
 ## NGEN
@@ -162,7 +171,7 @@ Native (image) generation. You can think of this technology as a persistent JIT 
 
 ## package
 
-For a package-based target framework: a NuGet package that contains an assembly of the same name. The package is a *.zip* file wih  a *.nupkg* extension that may contains assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions.  When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+For a package-based target framework: a NuGet package that contains an assembly of the same name. The package is a *.zip* file wih  a *.nupkg* extension that may contain assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 
@@ -196,12 +205,14 @@ A set of programming technologies that are used together to build and run applic
 
 The collection of APIs that a .NET app or library relies on. An app or library can target a version of .NET Standard (for example, .NET Standard 2.0), which is specification for a standardized set of APIs across all .NET implementations. An app or library can also target a specific .NET implementation, in which case it gets access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
 
-For some target frameworks (for example, the .NET Framework) the available APIs are defined by the assemblies that the framework installs on a system and may include app model APIs (for example, ASP.NET, Windows Forms).  For package-based target frameworks (such as .NET Standard and .NET Core), the framework APIs are defined by the packages installed in the app or library.  In that case the target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
+For some target frameworks (for example, the .NET Framework) the available APIs are defined by the assemblies that the framework installs on a system and may include app model APIs (for example, ASP.NET, Windows Forms). For package-based target frameworks (such as .NET Standard and .NET Core), the framework APIs are defined by the packages installed in the app or library. In that case the target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
+
 See [Target Frameworks](frameworks.md).
 
 ## TFM
 
 Target framework moniker. A standardized token format for specifying the target framework of a .NET app or library. Target frameworks are typically referenced by a Compact TFM (short name, such as net462). Long form TFMs (such as .NETFramework,Version=4.6.2) exist but are not generally used to specify a target framework.
+
 See [Target Frameworks](frameworks.md).
 
 ## UWP
@@ -210,8 +221,8 @@ Universal Windows Platform. An implementation of .NET that is used for building 
 
 ## See also
 
-* [.NET Guide](index.md)
-* [.NET Framework Guide](../framework/index.md)
-* [.NET Core](../core/index.md)
-* [ASP.NET Overview](https://docs.microsoft.com/en-us/aspnet/index#pivot=aspnet)
-* [ASP.NET Core Overview](https://docs.microsoft.com/en-us/aspnet/index#pivot=core)
+[.NET Guide](index.md)  
+[.NET Framework Guide](../framework/index.md)  
+[.NET Core](../core/index.md)  
+[ASP.NET Overview](https://docs.microsoft.com/aspnet/index#pivot=aspnet)  
+[ASP.NET Core Overview](https://docs.microsoft.com/aspnet/index#pivot=core)  

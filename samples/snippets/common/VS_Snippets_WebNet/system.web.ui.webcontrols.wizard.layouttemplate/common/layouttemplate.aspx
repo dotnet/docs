@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-<%-- <Snippet1> --%>
+<!-- <Snippet1> -->
     <form id="form1" runat="server">
    <asp:Wizard ID="Wizard1" runat="server">
   <LayoutTemplate>

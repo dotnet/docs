@@ -1,4 +1,4 @@
----
+﻿---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
@@ -157,7 +157,7 @@ See [.NET Core command-line interface (CLI) tools](../core/tools/index.md).
 
 ## .NET Core SDK
 
-A set of libraries and tools that allow developers to create .NET Core applications and libraries. Includes the [.NET Core CLI(#net-core-cli)] for building apps, .NET Core libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
+A set of libraries and tools that allow developers to create .NET Core applications and libraries. Includes the [.NET Core CLI](#net-core-cli) for building apps, .NET Core libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
 
 See [.NET Core SDK Overview](../core/sdk.md).
 

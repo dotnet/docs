@@ -279,8 +279,8 @@
 ## Examples  
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to display records from a database by using an HTML table. The values are retrieved by using a <xref:System.Web.UI.WebControls.LinqDataSource> control.  
   
-[!code-csharp[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/CS/ListViewSimpleCS.aspx#1)]
-[!code-vb[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/VB/ListViewSimpleVB.aspx#1)]
+[!code-csharp[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/CS/ListViewSimpleCS.aspx#Snippet1)]
+[!code-vb[System.Web.UI.WebControls.ListView_Simple#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView_Simple/VB/ListViewSimpleVB.aspx#Snippet1)]
   
  The following example shows how to use the <xref:System.Web.UI.WebControls.ListView> control to display values in a flow layout by using the `div` element. The values are retrieved by using a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
   

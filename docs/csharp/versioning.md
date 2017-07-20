@@ -2,7 +2,7 @@
 title: C# Versioning - C# Guide | Microsoft Docs
 description: Understand how versioning works in C# and .NET
 keywords: .NET, .NET Core, C#
-author: tsolarin
+author: BillWagner
 manager: wpickett
 ms.date: 01/08/2017
 ms.topic: article

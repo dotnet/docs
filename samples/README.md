@@ -12,7 +12,7 @@ you can read more about the concepts covered in each sample.
 
 ## Building a sample
 
-You build the samples using the .NET CLI. You can download the CLI from
+You build the samples using the .NET Core CLI. You can download the CLI from
 [the .NET Core home page](http://microsoft.com/net/core). Then, execute
 these commands from the CLI in the directory of any sample:
 

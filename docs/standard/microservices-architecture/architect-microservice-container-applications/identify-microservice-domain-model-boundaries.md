@@ -66,7 +66,7 @@ In this approach. each microservice has a public endpoint, sometimes with a diff
 
 <http://eshoponcontainers.westus.cloudapp.azure.com:88/>
 
-In a production environment based on a cluster, that URL would map to the load balancer used in the cluster, which in turn distributes the requests across the microservices. In production environments, you could have an Application Delivery Controller (ADC) like [Azure Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-introduction) between your microservices and the Internet. This acts as a transparent tier that not only performs load balancing, but secures your services by offering SSL termination. This improves the load of your hosts by offloading CPU-intensive SSL termination and other routing duties to the Azure Application Gateway. In any case, a load balancer and ADC are transparent from a logical application architecture point of view.
+In a production environment based on a cluster, that URL would map to the load balancer used in the cluster, which in turn distributes the requests across the microservices. In production environments, you could have an Application Delivery Controller (ADC) like [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction) between your microservices and the Internet. This acts as a transparent tier that not only performs load balancing, but secures your services by offering SSL termination. This improves the load of your hosts by offloading CPU-intensive SSL termination and other routing duties to the Azure Application Gateway. In any case, a load balancer and ADC are transparent from a logical application architecture point of view.
 
 A direct client-to-microservice communication architecture is good enough for a small microservice-based application. However, when you build large and complex microservice-based applications (for example, when handling dozens of microservice types), that approach faces possible issues. You need to consider the following questions when developing a large application based on microservices:
 
@@ -108,7 +108,7 @@ Granularity in the API Gateway tier can be especially useful for more advanced c
 
 Therefore, for many medium- and large-size applications, using a custom-built API Gateway is usually a good approach, but not as a single monolithic aggregator or unique central ASPI Gateway.
 
-Another approach is to use a product like [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/) as shown in Figure 4-14. This approach not only solves your API Gateway needs, but provides features like gathering insights from your APIs. If you are using an API management solution, an API Gateway is only a component within that full API management solution.
+Another approach is to use a product like [Azure API Management](https://azure.microsoft.com/services/api-management/) as shown in Figure 4-14. This approach not only solves your API Gateway needs, but provides features like gathering insights from your APIs. If you are using an API management solution, an API Gateway is only a component within that full API management solution.
 
 ![](./media/image14.png)
 
@@ -140,7 +140,7 @@ In this guide and the reference sample application (eShopOnContainers) we are li
     [*http://microservices.io/patterns/apigateway.html*](http://microservices.io/patterns/apigateway.html)
 
 -   **Azure API Management**
-    [*https://azure.microsoft.com/en-us/services/api-management/*](https://azure.microsoft.com/en-us/services/api-management/)
+    [*https://azure.microsoft.com/services/api-management/*](https://azure.microsoft.com/services/api-management/)
 
 -   **Udi Dahan. Service Oriented Composition**\
     [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)

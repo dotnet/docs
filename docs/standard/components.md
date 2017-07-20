@@ -63,7 +63,7 @@ Tooling for .NET is also common across each implementation of .NET.  These inclu
 * .NET project system (sometimes known as "csproj", "vbproj", or "fsproj")
 * MSBuild, the build engine used to build projects
 * NuGet, Microsoft's package manager for .NET
-* The .NET CLI, a cross-platform command-line interface for building .NET projects
+* The .NET Core CLI, a cross-platform command-line interface for building .NET projects
 * Open Source build orchestration tools, such as CAKE and FAKE
 
 The main takeaway here should be that there is a vast amount of tooling and infrastructure which is common for any "flavor" of .NET you choose to build your apps with.

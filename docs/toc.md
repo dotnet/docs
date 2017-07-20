@@ -1,7 +1,7 @@
 # [Welcome](welcome.md)
 
-<!-- Start of .NET Platform Guide -->
-# [.NET Platform Guide](standard/index.md)
+<!-- Start of .NET Guide -->
+# [.NET Guide](standard/index.md)
 ## [Get Started with .NET](standard/get-started.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
@@ -48,7 +48,7 @@
 ## [Parallel Programming](standard/parallel-programming/)
 ## [Security](standard/security/)
 ## [Developing for Multiple Platforms](standard/cross-platform/)
-<!-- End of .NET Platform Guide -->
+<!-- End of .NET Guide -->
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
@@ -233,11 +233,11 @@
 # [F# Guide](fsharp/index.md)
 
 ## [Tour of F#](fsharp/tour.md)
-### [Get Started](fsharp/get-started/index.md)
-#### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
-#### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
-#### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
-#### [Get Started with Command-line Tools](fsharp/get-started/get-started-command-line.md)
+## [Get Started](fsharp/get-started/index.md)
+### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
+### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
+### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)

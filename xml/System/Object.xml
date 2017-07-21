@@ -421,7 +421,7 @@
   
 <a name="Notes"></a>   
 ## Overriding the Finalize method 
- You should override <xref:System.Object.Finalize%2A> for a class that uses unmanaged resources, such as file handles or database connections that must be released when the managed object that uses them is discarded during garbage collection. You shouldn'o't implement a <xref:System.Object.Finalize%2A> method for managed objects because the garbage collector releases managed resources automatically.  
+ You should override <xref:System.Object.Finalize%2A> for a class that uses unmanaged resources, such as file handles or database connections that must be released when the managed object that uses them is discarded during garbage collection. You shouldn't implement a <xref:System.Object.Finalize%2A> method for managed objects because the garbage collector releases managed resources automatically.  
   
 > [!IMPORTANT]
 >  If a <xref:System.Runtime.InteropServices.SafeHandle> object is available that wraps your unmanaged resource, the recommended alternative is to implement the dispose pattern with a safe handle and not override <xref:System.Object.Finalize%2A>. For more information, see [The SafeHandle alternative](#SafeHandle) section.  

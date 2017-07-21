@@ -75,6 +75,9 @@ The following example overloads the `Deconstruct` method to return various combi
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
+Because you can overload the `Deconstruct` method to reflect groups of data that are commonly extracted from an object, you should be careful to define `Deconstruct` methods with signatures that are distinctive and unambiguous. Multiple `Deconstruct` methods that have the
+same number of `out` parameters or the same number and type of `out` parameters in a different order can cause confusion. 
+
 ## Deconstructing a user-defined type with discards
 
 Just as you do with [tuples](#deconstructing-tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "_", and a single deconstruction operation can include multiple discards.
@@ -87,40 +90,10 @@ The following example deconstructs a `Person` object into four strings (the firs
 
 If you didn't author a class, struct, or interface, you can still deconstruct objects of that type by implementing one or more `Deconstruct` [extension methods](programming-guide/classes-and-structs/extension-methods.md) to return the values in which you're interested. 
 
-The following example defines a `Deconstruct` extension method for the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> class. It returns a set of values that describe the C# syntax of a  [property](programming-guide/classes-and-structs/properties.md) statement.
+The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=fullName> class. The first returns a set of values that indicate the characteristics of the property, including its type, whether it's static or instance, whether it's read-only, and whether it's indexed. The second indicates the property's accessibility. Because the accessibility of get and set accessors can differ, Boolean values indicate whether the property has separate get and set accessors and, if it does, whether they have the same accessibility. If there is only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the accessaccessibility is indicated by the `getAccess` and `setAccess` variables.
 
-[!code-csharp[ExtensionDeconstructMethod](../../samples/snippets/csharp/tuples/tuples/person.cs#13_ExtensionDeconstructMethod "Type with a deconstruct extension method")]
-
-A `Student` object now has two accessible `Deconstruct` methods: the extension method
-declared for `Student` types, and the member of the `Person` type. Both are in scope,
-and that enables a `Student` to be deconstructed into either two variables or three.
-If you assign a student to three variables, the first name, last name, and GPA are
-all returned. If you assign a student to two variables, only the first name and 
-the last name are returned.
-
-[!code-csharp[Deconstruct extension method](../../samples/snippets/csharp/tuples/tuples/program.cs#13A_DeconstructExtension "Deconstruct a class type using an extension method")]
-
-You should be very careful defining multiple `Deconstruct` methods in a 
-class or a class hierarchy. Multiple `Deconstruct` methods that have the
-same number of `out` parameters can quickly cause ambiguities. Callers may
-not be able to easily call the desired `Deconstruct` method.
-
-In this example, there is minimal chance for an ambiguous call because the 
-`Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
-method for `Student` has three.
-
-## Conclusion 
-
-The new language and library support for named tuples makes it much easier
-to work with designs that use data structures that store multiple fields
-but do not define behavior, as classes and structs do. It's
-easy and concise to use tuples for those types. You get all the benefits of
-static type checking, without needing to author types using the more
-verbose `class` or `struct` syntax. Even so, they are most useful for utility methods
-that are `private`, or `internal`. Create user defined types, either
-`class` or `struct` types when your public methods return a value
-that has multiple fields.
-
+[!code-csharp[Extension-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-extension1.cs)]
+ 
 ## See also
 [Discards](discards.md)   
 [Tuples](tuples.md)  

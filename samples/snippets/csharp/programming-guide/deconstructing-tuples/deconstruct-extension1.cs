@@ -4,49 +4,82 @@ using System.Reflection;
 
 public static class ReflectionExtensions
 {
-   public static void Deconstruct(this PropertyInfo p, out string access, 
-                                  out string instOrStatic, out Type propType,
-                                  out string index)
+   public static void Deconstruct(this PropertyInfo p, out bool isStatic, 
+                                  out bool isReadOnly, out bool isIndexed,
+                                  out Type propertyType)
    {
-      bool readOnly = ! p.CanWrite;
-      // Determine the property's accessibility.
-      MethodInfo getter = p.GetGetMethod();
-      MethodInfo setter = null;
-      if (! readOnly)
-         setter = p.GetSetMethod();
-
-      if (getter.IsPublic && (readOnly || setter.IsPublic))
-         access = "public ";
-      else if (getter.IsPrivate && (readOnly || setter.IsPrivate))
-         access = "private ";
-      else if (getter.IsFamily && (readOnly || setter.IsFamily))
-         access = "protected ";
-      else if (getter.IsAssembly && (readOnly || setter.IsAssembly))
-         access = "internal ";
-      else if (getter.IsFamilyOrAssembly && (readOnly || setter.IsFamilyOrAssembly))   
-         access = "protected internal ";
-      else
-         access = "";
+      var getter = p.GetMethod;
       
+      // Is the property read-only?
+      isReadOnly = ! p.CanWrite;
+
       // Is the property instance or static?
-      instOrStatic = getter.IsStatic ? "static " : "";
+      isStatic = getter.IsStatic;
+      
+      // Is the property indexed?
+      isIndexed = p.GetIndexParameters().Length > 0;
       
       // Get the property type.
-      propType = p.PropertyType;
-      
-      // Are the property indexed?
-      var parameters = p.GetIndexParameters();
-      index = "";
-      if (parameters.Length > 0) {
-         index += "[";
-         for (int ctr = 0; ctr < parameters.Length; ctr++) {
-            index += parameters[ctr].ParameterType.Name;
-            if (ctr != parameters.Length - 1)
-               index += ", ";   
-         }
-         index += "]";   
+      propertyType = p.PropertyType;
+   }
+
+   public static void Deconstruct(this PropertyInfo p, out bool hasGetAndSet, 
+                                  out bool sameAccess, out string access,
+                                  out string getAccess, out string setAccess) 
+   {                                  
+      hasGetAndSet = sameAccess = false;
+      string getAccessTemp = null;
+      string setAccessTemp = null;
+
+      MethodInfo getter = null; 
+      if (p.CanRead) 
+         getter = p.GetMethod;
+
+      MethodInfo setter = null;
+      if (p.CanWrite) 
+          setter = p.SetMethod;
+   
+      if (setter != null && getter != null) 
+         hasGetAndSet = true;
+
+      if (getter != null) {
+         if (getter.IsPublic)
+            getAccessTemp = "public";
+         else if (getter.IsPrivate)
+            getAccessTemp = "private"; 
+         else if (getter.IsAssembly)
+            getAccessTemp = "internal";
+         else if (getter.IsFamily)
+            getAccessTemp = "protected";      
+         else if (getter.IsFamilyOrAssembly) 
+            getAccessTemp = "protected internal";
       }
-   }   
+
+      if (setter != null) {
+         if (setter.IsPublic)
+            setAccessTemp = "public";
+         else if (setter.IsPrivate)
+            setAccessTemp = "private"; 
+         else if (setter.IsAssembly)
+            setAccessTemp = "internal";
+         else if (setter.IsFamily)
+            setAccessTemp = "protected";      
+         else if (setter.IsFamilyOrAssembly) 
+            setAccessTemp = "protected internal";
+      }
+
+      // Are the accessibility of the getter and setter the same?
+      if (setAccessTemp == getAccessTemp) {
+         sameAccess = true;
+         access = getAccessTemp;
+         getAccess = setAccess = String.Empty;
+      }   
+      else {
+         access = null;
+         getAccess = getAccessTemp;
+         setAccess = setAccessTemp;   
+      }
+   }
 }
 
 public class Example
@@ -55,17 +88,34 @@ public class Example
    {
       Type dateType = typeof(DateTime);
       PropertyInfo prop = dateType.GetProperty("Now");
-      var (access, scope, retval, indexes) = prop;
-      Console.WriteLine($"{access}{scope}{retval} {dateType.Name}.{prop.Name}{indexes}");
-      
-      Type listType = typeof(List<>);
-      prop = listType.GetProperty("Item");
-      (access, scope, retval, indexes) = prop;
-      Console.WriteLine($"{access}{scope}{retval} {dateType.Name}.{prop.Name}{indexes}");
-   }
-}
-// The example displays the following output:
-//       public static System.DateTime DateTime.Now
-//       public T DateTime.Item[Int32]
+      var (isStatic, isRO, isIndexed, propType) = prop;
+      Console.WriteLine($"\nThe {dateType.FullName}.{prop.Name} property:");
+      Console.WriteLine($"   PropertyType: {propType.Name}");
+      Console.WriteLine($"   Static:       {isStatic}");
+      Console.WriteLine($"   Read-only:    {isRO}");
+      Console.WriteLine($"   Indexed:      {isIndexed}");
 
+      Type listType = typeof(List<>);
+      prop = listType.GetProperty("Item", 
+                                  BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
+      var (hasGetAndSet, sameAccess, accessibility, getAccessibility, setAccessibility) = prop;
+      Console.Write($"\nAccessibility of the {listType.FullName}.{prop.Name} property: ");
+
+      if (!hasGetAndSet | sameAccess) {
+          Console.WriteLine(accessibility);
+      }
+      else {
+         Console.WriteLine($"\n   The get accessor: {getAccessibility}");
+         Console.WriteLine($"   The set accessor: {setAccessibility}");
+      }
+   }
+}      
+// The example displays the following output:
+//       The System.DateTime.Now property:
+//          PropertyType: DateTime
+//          Static:       True
+//          Read-only:    True
+//          Indexed:      False
+//       
+//       Accessibility of the System.Collections.Generic.List`1.Item property: public
 

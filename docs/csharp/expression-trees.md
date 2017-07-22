@@ -1,6 +1,6 @@
 ---
 title: Expression Trees | Microsoft Docs
-description: Expression Trees
+description: Learn about expression trees in .NET Core and how to use them to represent code as structures that you can examine, modify, and execute.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

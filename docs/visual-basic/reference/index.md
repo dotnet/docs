@@ -47,7 +47,7 @@ This section provides links to reference information about various aspects of [!
  [.NET Framework Reference Information](../../visual-basic/reference/net-framework-reference-information.md)  
  Provides links to information on working with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
   
- [Visual Basic Language Specification](../../visual-basic/reference/language-specification.md)  
+ [Visual Basic Language Specification](../../visual-basic/reference/language-specification/index.md)  
  Provides links to the complete [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language specification, which contains detailed information on all aspects of the language.  
   
 ## Reference  

@@ -1059,7 +1059,7 @@
 ##### [/win32resource](visual-basic/reference/command-line-compiler/win32resource.md)
 #### [Compiler Options Listed by Category](visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
 ### [.NET Framework Reference Information](visual-basic/reference/net-framework-reference-information.md)
-### [Language Specification](visual-basic/reference/language-specification.md)
+### [Language Specification](visual-basic/reference/language-specification/)
 ## [Sample Applications](visual-basic/sample-applications.md)
 ## [Walkthroughs](visual-basic/walkthroughs.md)
 

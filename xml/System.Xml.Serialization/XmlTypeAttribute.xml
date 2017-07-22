@@ -40,7 +40,7 @@
 > [!NOTE]
 >  If you set the <xref:System.Xml.Serialization.XmlTypeAttribute.IncludeInSchema%2A> property to `false`, the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) does not include the type in the schema. By default, for each public class, the XSD tool generates a `complexType` and an element of that type.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](https://docs.microsoft.com/dotnet/standard/attributes/).  
   
 > [!NOTE]
 >  You can use the word `XmlType` in your code instead of the longer <xref:System.Xml.Serialization.XmlTypeAttribute>.  

@@ -46,7 +46,7 @@
   
  <xref:System.Web.UI.WebControls.Parameter> objects are very simple: they have a <xref:System.Web.UI.WebControls.Parameter.Name%2A> and a <xref:System.Web.UI.WebControls.Parameter.Type%2A> property, can be represented declaratively, and can track state across multiple HTTP requests. All parameters support a <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> property, for cases when a parameter is bound to a value, but the value evaluates to `null` at run time.  
   
- When using a collection of <xref:System.Web.UI.WebControls.Parameter> objects with a data source control, their order in the collection might matter. For more information on how parameters are used, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295) and [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+ When using a collection of <xref:System.Web.UI.WebControls.Parameter> objects with a data source control, their order in the collection might matter. For more information on how parameters are used, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295) and [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/57hkzhy5.aspx).  
   
    
   
@@ -642,7 +642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  This method restores view-state information for the <xref:System.Web.UI.WebControls.Parameter> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.Parameter.SaveViewState%2A> method.  
   
@@ -674,7 +674,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.UI.WebControls.Parameter> objects are not required to have a name; however, data source controls might use the parameter name to match a <xref:System.Web.UI.WebControls.Parameter> object in a collection with a parameter in a SQL query or business method signature. For example, the <xref:System.Web.UI.WebControls.SqlDataSource> control can use the name of the <xref:System.Web.UI.WebControls.Parameter> object to match a placeholder in a parameterized SQL query. Similarly, the <xref:System.Web.UI.WebControls.SqlDataSource> control can use the name of a <xref:System.Web.UI.WebControls.Parameter> object in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection to match a placeholder in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property. In some cases, the name is not used and the order in which the <xref:System.Web.UI.WebControls.Parameter> object is added to a <xref:System.Web.UI.WebControls.ParameterCollection> collection is more important. For more information, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295) and [Using Parameters with the ObjectDataSource Control](http://msdn.microsoft.com/library/45fb67ee-9be7-49b7-9421-e242203dafa4).  
+ <xref:System.Web.UI.WebControls.Parameter> objects are not required to have a name; however, data source controls might use the parameter name to match a <xref:System.Web.UI.WebControls.Parameter> object in a collection with a parameter in a SQL query or business method signature. For example, the <xref:System.Web.UI.WebControls.SqlDataSource> control can use the name of the <xref:System.Web.UI.WebControls.Parameter> object to match a placeholder in a parameterized SQL query. Similarly, the <xref:System.Web.UI.WebControls.SqlDataSource> control can use the name of a <xref:System.Web.UI.WebControls.Parameter> object in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterParameters%2A> collection to match a placeholder in the <xref:System.Web.UI.WebControls.SqlDataSource.FilterExpression%2A> property. In some cases, the name is not used and the order in which the <xref:System.Web.UI.WebControls.Parameter> object is added to a <xref:System.Web.UI.WebControls.ParameterCollection> collection is more important. For more information, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295) and [Using Parameters with the ObjectDataSource Control](https://msdn.microsoft.com/library/57hkzhy5.aspx).  
   
  If the name of the parameter is changed, the <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method is called.  
   
@@ -717,7 +717,7 @@
   
  If the <xref:System.Web.UI.WebControls.ParameterCollection> collection is contained by a data source control, the <xref:System.Web.UI.WebControls.ParameterCollection.ParametersChanged?displayProperty=fullName> event raises the data source control's <xref:System.Web.UI.IDataSource.DataSourceChanged> event, causing any data-bound controls to rebind.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.Parameter.OnParameterChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1068,7 +1068,7 @@
 ## Remarks  
  A parameter's view state is the accumulation of all its property values. To preserve these values across HTTP requests, ASP.NET server controls use this property, which is an instance of the <xref:System.Web.UI.StateBag> class, to store the property values. The values are then passed as a variable to an HTML `hidden` input element when subsequent requests are processed. View state is enabled for all server controls by default.  
   
- For more information about dictionaries and how to use them, see [Collections and Data Structures](http://msdn.microsoft.com/library/60cc581f-1db5-445b-ba04-a173396bf872).  
+ For more information about dictionaries and how to use them, see [Collections and Data Structures](https://docs.microsoft.com/dotnet/standard/collections/).  
   
    
   

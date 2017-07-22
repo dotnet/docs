@@ -41,7 +41,7 @@
   
  In C#, to enable dynamic behavior for instances of classes derived from the `DynamicObject` class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](~/docs/csharp/programming-guide/types/using-type-dynamic.md).  
   
- In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+ In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/early-late-binding/).  
   
  The following code example demonstrates how to create an instance of a class that is derived from the `DynamicObject` class.  
   
@@ -116,7 +116,7 @@ Dim sampleObject As Object = New SampleDynamicObject()
   
  In C#, to enable dynamic behavior for instances of the classes derived from the <xref:System.Dynamic.DynamicObject> class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](~/docs/csharp/programming-guide/types/using-type-dynamic.md).  
   
- In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+ In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/early-late-binding/).  
   
    
   

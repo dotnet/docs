@@ -51,7 +51,7 @@ This topic provides links to information about how to work with the [!INCLUDE[dn
  [Tools](https://msdn.microsoft.com/library/d9kh6s92)  
  Describes the tools that you can use to develop, configure, and deploy applications by using .NET Framework technologies.  
   
- [.NET Framework Samples](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)  
+ [.NET Framework Samples](https://msdn.microsoft.com/library/bb400848(v=vs.110).aspx)  
  Provides links to sample applications that demonstrate .NET Framework technologies.  
   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  

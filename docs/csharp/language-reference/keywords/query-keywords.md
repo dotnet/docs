@@ -53,6 +53,6 @@ This section contains the contextual keywords used in query expressions.
   
 ## See Also  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/bb397926.aspx)   
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)

@@ -22,7 +22,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an XML document. For the components and usage of an <see cref="T:System.Xml.Linq.XDocument" /> object, see [XDocument Class Overview](http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467).</summary>
+    <summary>Represents an XML document. For the components and usage of an <see cref="T:System.Xml.Linq.XDocument" /> object, see [XDocument Class Overview](https://msdn.microsoft.com/library/bb387063.aspx).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -31,7 +31,7 @@
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System.Xml.Linq/XLinq.cs#3354dac0913e417b). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -124,7 +124,7 @@ Console.WriteLine(doc)
   
  There are not many scenarios that require you to create an <xref:System.Xml.Linq.XDocument>. Instead, you can usually create your XML trees with an <xref:System.Xml.Linq.XElement> root node. Unless you have a specific requirement to create a document (for example, because you have to create processing instructions and comments at the top level, or you have to support document types), it is often more convenient to use <xref:System.Xml.Linq.XElement> as your root node.  
   
- For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -230,7 +230,7 @@ Console.WriteLine(doc)
 ## Remarks  
  There are not many scenarios that require you to create an <xref:System.Xml.Linq.XDocument>. Instead, you can usually create your XML trees with an <xref:System.Xml.Linq.XElement> root node. Unless you have a specific requirement to create a document (for example, because you have to create processing instructions and comments at the top level, or you have to support document types), it is often more convenient to use <xref:System.Xml.Linq.XElement> as your root node.  
   
- For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -304,7 +304,7 @@ Console.WriteLine(doc)
 ## Remarks  
  There are not many scenarios that require you to create an <xref:System.Xml.Linq.XDocument>. Instead, you can usually create your XML trees with an <xref:System.Xml.Linq.XElement> root node. Unless you have a specific requirement to create a document (for example, because you have to create processing instructions and comments at the top level, or you have to support document types), it is often more convenient to use <xref:System.Xml.Linq.XElement> as your root node.  
   
- For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -459,7 +459,7 @@ Console.WriteLine(doc)
 ## Remarks  
  There are not many scenarios that require you to create an <xref:System.Xml.Linq.XDocument>. Instead, you can usually create your XML trees with an <xref:System.Xml.Linq.XElement> root node. Unless you have a specific requirement to create a document (for example, because you have to create processing instructions and comments at the top level, or you have to support document types), it is often more convenient to use <xref:System.Xml.Linq.XElement> as your root node.  
   
- For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+ For details about the valid content of an <xref:System.Xml.Linq.XDocument>, see [Valid Content of XElement and XDocument Objects](https://msdn.microsoft.com/library/bb943882.aspx).  
   
    
   
@@ -923,7 +923,7 @@ Console.WriteLine(doc)
   
  This example uses the following XML document:  
   
- [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348)  
+ [Sample XML File: Typical Purchase Order (LINQ to XML)](https://msdn.microsoft.com/library/bb387012.aspx)  
   
 ```csharp  
   
@@ -1168,7 +1168,7 @@ End Using
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  Use <xref:System.Xml.Linq.XDocument.Parse%2A> to create an <xref:System.Xml.Linq.XElement> from a string that contains XML.  
   
@@ -1295,7 +1295,7 @@ Count of white space nodes (preserving whitespace): 3
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  Use <xref:System.Xml.Linq.XDocument.Parse%2A> to create an <xref:System.Xml.Linq.XDocument> from a string that contains XML.  
   
@@ -1312,7 +1312,7 @@ Count of white space nodes (preserving whitespace): 3
   
  This example uses the following XML document:  
   
- [Sample XML File: Typical Purchase Order (LINQ to XML)](http://msdn.microsoft.com/library/0606c09f-6e43-4f8d-95c8-e8e2e08d2348)  
+ [Sample XML File: Typical Purchase Order (LINQ to XML)](https://msdn.microsoft.com/library/bb387012.aspx)  
   
 ```csharp  
   
@@ -1724,7 +1724,7 @@ Console.WriteLine(doc)
 ## Remarks  
  This method does not preserve white space. If you want to preserve white space in the XML tree, use the overload of <xref:System.Xml.Linq.XDocument.Parse%2A> that takes <xref:System.Xml.Linq.LoadOptions> as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  LINQ to XML's loading functionality is built upon <xref:System.Xml.XmlReader>. Therefore, you might catch any exceptions that are thrown by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> overload methods and the <xref:System.Xml.XmlReader> methods that read and parse the document.  
   
@@ -1815,7 +1815,7 @@ Console.WriteLine(doc)
   
  If the source XML is not indented, setting the <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> flag in `options` has no effect. Significant white space is still preserved, and there are no spans of insignificant white space that could cause the creation of more white space text nodes.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
  Setting <xref:System.Xml.Linq.LoadOptions.SetBaseUri> is not valid when parsing from a <xref:System.String>.  
   
@@ -1902,7 +1902,7 @@ nodes when not preserving whitespace: 4
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is useful when you want to compose [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries in the same context as when composing them for a tree rooted in <xref:System.Xml.Linq.XElement>. See [Querying an XDocument vs. Querying an XElement](http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a) for more details.  
+ This property is useful when you want to compose [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries in the same context as when composing them for a tree rooted in <xref:System.Xml.Linq.XElement>. See [Querying an XDocument vs. Querying an XElement](https://msdn.microsoft.com/library/bb675196.aspx) for more details.  
   
    
   
@@ -2038,7 +2038,7 @@ Pubs
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XDocument.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XDocument.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -2120,7 +2120,7 @@ Console.WriteLine(sb.ToString())
 ## Remarks  
  The serialized XML will be indented. All insignificant white space will be removed, and additional white space will be added so that the XML will be properly indented. The behavior of this method is that insignificant white space will not be preserved.  
   
- If you want to control white space, use the overload of <xref:System.Xml.Linq.XDocument.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ If you want to control white space, use the overload of <xref:System.Xml.Linq.XDocument.Save%2A> that takes <xref:System.Xml.Linq.SaveOptions> as a parameter. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -2331,7 +2331,7 @@ Console.WriteLine(sb.ToString())
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XDocument.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   
@@ -2432,7 +2432,7 @@ End Using
   
  If you want to save indented XML, do not specify the <xref:System.Xml.Linq.SaveOptions.DisableFormatting> flag for `options`. This will remove all extraneous insignificant white space, and add appropriate insignificant white space so that the XML is properly indented. This is the default behavior, and the behavior of the overloads of the <xref:System.Xml.Linq.XDocument.Save%2A> methods that do not take `options` as a parameter.  
   
- For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+ For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](https://msdn.microsoft.com/library/bb387103.aspx).  
   
    
   

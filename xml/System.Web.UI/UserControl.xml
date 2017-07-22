@@ -57,7 +57,7 @@
   
  Derive from this class if you want to create a user control using the code-behind technique. This is recommended if you are developing Web Forms pages using this technique.  
   
- For information about creating user controls declaratively, see [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
+ For information about creating user controls declaratively, see [ASP.NET User Controls](https://msdn.microsoft.com/library/y6wb1a0e.aspx).  
   
    
   
@@ -65,7 +65,7 @@
  The class defined in the following example, `SimpleControl`, inherits the <xref:System.Web.UI.UserControl> class and can be used as an ASP.NET code-behind class. It uses the <xref:System.Web.UI.WebControls.TextBox>, <xref:System.Web.UI.WebControls.Label>, and <xref:System.Web.UI.WebControls.Button> Web server controls and defines a `myButton_Click` method that assigns the <xref:System.Web.UI.WebControls.TextBox.Text%2A?displayProperty=fullName> property value, along with two strings, to the <xref:System.Web.UI.WebControls.Label.Text%2A?displayProperty=fullName> property.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  [!code-csharp[Sys.Web.UI.TemplateControl_UserControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simplecontrol.cs#2)]
  [!code-vb[Sys.Web.UI.TemplateControl_UserControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simplecontrol.vb#2)]  
@@ -202,7 +202,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.UserControl.Cache%2A> allows you to store data for later retrieval, and is shared across the application. The data that you store is independent of the current page or user session. Access data through this property to boost page or application performance if creating the data is slow. For more information about using the Cache, see [Caching Application Data](http://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d).  
+ The <xref:System.Web.UI.UserControl.Cache%2A> allows you to store data for later retrieval, and is shared across the application. The data that you store is independent of the current page or user session. Access data through this property to boost page or application performance if creating the data is slow. For more information about using the Cache, see [Caching Application Data](https://msdn.microsoft.com/library/6hbbsfk6.aspx).  
   
    
   
@@ -210,7 +210,7 @@
  The following example uses the <xref:System.Web.UI.UserControl.Cache%2A> property to store the <xref:System.Web.UI.WebControls.Label.Text%2A> property value of a <xref:System.Web.UI.WebControls.Label> Web server control, `txtValue`, in the <xref:System.Web.Caching.Cache> object associated with the user control's application. It uses the <xref:System.Web.UI.UserControl.Cache%2A> property to do so, assigning the item a key parameter value of `txtName.Text`.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  [!code-csharp[Classic Cache.this Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Cache.this Example/CS/source.cs#2)]
  [!code-vb[Classic Cache.this Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Cache.this Example/VB/source.vb#2)]  
@@ -390,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  You can load a view-state value into a field so that you do not have to retrieve it from the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property later. You can also insert the value into the <xref:System.Web.UI.Control.ViewState%2A> property just before calling <xref:System.Web.UI.UserControl.SaveViewState%2A> , which is an effective way to make a field persist across round trips to the server.  
   
@@ -780,7 +780,7 @@
 ## Remarks  
  Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing for that page.  
   
- By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
+ By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](https://msdn.microsoft.com/library/ydy4x04a(v=vs.110).aspx) directive as follows: \<%@ Page trace="true" %>  
   
  ]]></format>
         </remarks>

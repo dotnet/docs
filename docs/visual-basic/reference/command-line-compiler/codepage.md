@@ -51,7 +51,7 @@ Specifies the code page to use for all source-code files in the compilation.
 |`id`|Required. The compiler uses the code page specified by `id` to interpret the encoding of the source files.|  
   
 ## Remarks  
- To compile source code saved with a specific encoding, you can use `/codepage` to specify which code page should be used. The `/codepage` option applies to all source-code files in your compilation. For more information, see [Character Encoding in the .NET Framework](http://msdn.microsoft.com/library/bf6d9823-4c2d-48af-b280-919c5af66ae9).  
+ To compile source code saved with a specific encoding, you can use `/codepage` to specify which code page should be used. The `/codepage` option applies to all source-code files in your compilation. For more information, see [Character Encoding in the .NET Framework](https://docs.microsoft.com/dotnet/standard/base-types/character-encoding).  
   
  The `/codepage` option is not needed if the source-code files were saved using the current ANSI code page, Unicode, or UTF-8 with a signature. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] saves all source-code files with the current ANSI code page by default, unless the user specifies another encoding in the **Encoding** dialog box. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses the **Encoding** dialog box to open source-code files saved with a different code page.  
   

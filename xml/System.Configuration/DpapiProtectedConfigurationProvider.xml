@@ -24,7 +24,7 @@
   
  You use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> by declaring the provider and appropriate settings in the configuration file rather than creating an instance of this class. Refer to the next example.  
   
- For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+ For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](https://msdn.microsoft.com/library/53tyfkaw.aspx).  
   
  The <xref:System.Configuration.DpapiProtectedConfigurationProvider> uses the Windows built-in cryptographic services and can be configured for either machine-specific or user-account-specific protection. Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
   
@@ -71,7 +71,7 @@
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />[FullTrust](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)</permission>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />[FullTrust](https://msdn.microsoft.com/library/4652tyx7(v=vs.100).aspx)</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

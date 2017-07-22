@@ -106,4 +106,4 @@ translation.priority.ht:
 |Title|Description|  
 |-----------|-----------------|  
 |[Walkthrough: Creating and Implementing Interfaces](../../../../visual-basic/programming-guide/language-features/interfaces/walkthrough-creating-and-implementing-interfaces.md)|Provides a detailed procedure that takes you through the process of defining and implementing your own interface.|  
-|[Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)|Discusses covariance and contravariance in generic interfaces and provides a list of variant generic interfaces in the .NET Framework.|
+|[Variance in Generic Interfaces](https://msdn.microsoft.com/library/dd233059.aspx)|Discusses covariance and contravariance in generic interfaces and provides a list of variant generic interfaces in the .NET Framework.|

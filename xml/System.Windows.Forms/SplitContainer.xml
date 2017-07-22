@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  This event is not relevant to this class.  
   
@@ -410,7 +410,7 @@
 ## Remarks  
  This event is raised if the <xref:System.Windows.Forms.SplitContainer.BackgroundImage%2A> property is changed by either a programmatic modification or user interaction.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -865,7 +865,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -900,7 +900,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnKeyDown%2A> event handler allows the user to move the splitter down when the DOWN arrow key is pressed. The <xref:System.Windows.Forms.SplitContainer.OnKeyDown%2A> event handler also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnKeyDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -935,7 +935,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnKeyUp%2A> event handler allows the user to move the splitter up when the UP arrow key is pressed. The <xref:System.Windows.Forms.SplitContainer.OnKeyUp%2A> event handler also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnKeyUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -968,7 +968,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnLayout%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1001,7 +1001,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnLostFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1057,7 +1057,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnMouseDown%2A> event handler allows the user to track the splitter position while it is moved down with the mouse. <xref:System.Windows.Forms.SplitContainer.OnMouseDown%2A> also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving. The <xref:System.Windows.Forms.SplitContainer> keeps track of the initial <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> in case the user cancels the move.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1090,7 +1090,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1130,7 +1130,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnMouseMove%2A> event handler allows the user to track the splitter position while it is moved with the mouse. <xref:System.Windows.Forms.SplitContainer.OnMouseMove%2A> also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving. The <xref:System.Windows.Forms.SplitContainer> keeps track of the initial <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> in case the user cancels the move.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1165,7 +1165,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.SplitContainer.OnMouseUp%2A> event handler allows the user to track the splitter position while it is moved up with the mouse. <xref:System.Windows.Forms.SplitContainer.OnMouseUp%2A> also draws the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> to show the current position of the splitter while it is moving. The <xref:System.Windows.Forms.SplitContainer> keeps track of the initial <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> in case the user cancels the move.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1198,7 +1198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnMove%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1231,7 +1231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.SplitContainer.OnPaint%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1292,7 +1292,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event is raised after the splitter has been moved. When the <xref:System.Windows.Forms.SplitContainer> is in the process of moving, use the <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event and the <xref:System.Windows.Forms.SplitContainer.OnSplitterMoving%2A> event handler.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1331,7 +1331,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SplitContainer.SplitterMoving> event is raised while the splitter is in the process of moving. After the <xref:System.Windows.Forms.SplitContainer> has moved, use the <xref:System.Windows.Forms.SplitContainer.SplitterMoved> event and the <xref:System.Windows.Forms.SplitContainer.OnSplitterMoved%2A> event handler.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1944,7 +1944,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1979,7 +1979,7 @@
 ## Remarks  
  This event occurs only when the user moves the splitter control. It does not occur when you change the <xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> property value programmatically.  
   
- For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   

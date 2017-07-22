@@ -133,7 +133,7 @@
 ## Remarks  
  Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=fullName> property from within a <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event handler causes the event to be raised multiple times and can result in unexpected behavior. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction?displayProperty=fullName>.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -166,7 +166,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -199,7 +199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -233,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -268,7 +268,7 @@
 ## Remarks  
  This event does not occur when the node is unselected. To detect whether the selection was cleared, you can test the <xref:System.Windows.Forms.TreeNode.IsSelected%2A?displayProperty=fullName> property.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -439,7 +439,7 @@
 > [!NOTE]
 >  Setting the <xref:System.Windows.Forms.TreeNode.Checked%2A?displayProperty=fullName> property from within the <xref:System.Windows.Forms.TreeView.BeforeCheck> or <xref:System.Windows.Forms.TreeView.AfterCheck> event causes the event to be raised multiple times and can result in unexpected behavior. For example, you might set the <xref:System.Windows.Forms.TreeNode.Checked%2A> property in the event handler when you are recursively updating the child nodes, so that the user does not have to expand and check each one individually. To prevent the event from being raised multiple times, add logic to your event handler that only executes your recursive code if the <xref:System.Windows.Forms.TreeViewEventArgs.Action%2A> property of the <xref:System.Windows.Forms.TreeViewEventArgs> is not set to <xref:System.Windows.Forms.TreeViewAction?displayProperty=fullName>.  
   
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -472,7 +472,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -509,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -546,7 +546,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -582,7 +582,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -853,7 +853,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://msdn.microsoft.com/library/ddae83kx.aspx).</para>
         </block>
       </Docs>
     </Member>
@@ -963,7 +963,7 @@
   
  The hit test region corresponds to the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A?displayProperty=fullName> property when using <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText>. When using <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll>, however, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A?displayProperty=fullName> property encompasses the entire width of the <xref:System.Windows.Forms.TreeView>. In this case, you can access the hit test region by getting the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Node%2A?displayProperty=fullName> value and accessing its <xref:System.Windows.Forms.TreeNode.Bounds%2A?displayProperty=fullName> property. You can then draw the hit test region of the node within these bounds, or you can provide your own hit test code. Note that setting the <xref:System.Windows.Forms.TreeNode.NodeFont%2A?displayProperty=fullName> property does not change the size of the hit test region, which is calculated using the font specified for the entire <xref:System.Windows.Forms.TreeView>.  
   
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1654,7 +1654,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1802,7 +1802,7 @@
 ## Remarks  
  This event occurs when the user clicks any part of a tree node with the mouse, including the plus sign (**+**) or minus sign (**-**) that indicates whether the node is collapsed or expanded.  
   
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1837,7 +1837,7 @@
 ## Remarks  
  This event occurs when the user double-clicks any part of a tree node with the mouse, including the plus sign (+) or minus sign (-) that indicates whether the node is collapsed or expanded.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1872,7 +1872,7 @@
 ## Remarks  
  If the mouse is located over a <xref:System.Windows.Forms.TreeNode>, the <xref:System.Windows.Forms.TreeView.NodeMouseHover> event will occur before the <xref:System.Windows.Forms.Control.MouseHover> event.  
   
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -1955,7 +1955,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnAfterCheck%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1988,7 +1988,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnAfterCollapse%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2021,7 +2021,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnAfterExpand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2054,7 +2054,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnAfterLabelEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2087,7 +2087,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnAfterSelect%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2120,7 +2120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnBeforeCheck%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2153,7 +2153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnBeforeCollapse%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2186,7 +2186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnBeforeExpand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2219,7 +2219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnBeforeLabelEdit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2252,7 +2252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnBeforeSelect%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2285,7 +2285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnDrawNode%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2318,7 +2318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2351,7 +2351,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2384,7 +2384,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnItemDrag%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2419,7 +2419,7 @@
 ## Remarks  
  If the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A> property is set to `true` and the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property is set to `false`, the <xref:System.Windows.Forms.TreeView.OnKeyDown%2A> method switches between selecting and clearing the check box when the user presses the SPACEBAR.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnKeyDown%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2454,7 +2454,7 @@
 ## Remarks  
  If the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property is set to `false`, the <xref:System.Windows.Forms.TreeView> control will select the first item that begins with the value of the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property of `e`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnKeyPress%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2487,7 +2487,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnKeyUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2522,7 +2522,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.TreeView.OnMouseHover%2A> method performs a hit test to see whether the mouse is located over a <xref:System.Windows.Forms.TreeNode>, and if it is, raises the <xref:System.Windows.Forms.TreeView.NodeMouseHover> event.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnMouseHover%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2555,7 +2555,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnMouseLeave%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2588,7 +2588,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnNodeMouseClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2621,7 +2621,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnNodeMouseDoubleClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2654,7 +2654,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnNodeMouseHover%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2692,7 +2692,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.TreeView.OnRightToLeftLayoutChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2880,7 +2880,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about how to handle events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   

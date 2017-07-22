@@ -41,8 +41,8 @@ The specified line cannot be parsed because its fields have widths other than th
   
 ## See Also  
  [How to: Read From Text Files with Multiple Formats](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)   
- [My.Computer.FileSystem.OpenTextFieldParser Method](http://msdn.microsoft.com/en-us/e5869f85-c078-485f-8323-8dc716494546)   
+ [My.Computer.FileSystem.OpenTextFieldParser Method](https://msdn.microsoft.com/library/4cwxw7dx(v=vs.90).aspx)   
  [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)   
  [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)   
- [TextFieldParser.FieldWidths Property](http://msdn.microsoft.com/en-us/c6985360-60c6-494e-89e7-43b6b73f2597)   
- [TextFieldParser.SetFieldWidths Method](http://msdn.microsoft.com/en-us/958fed9f-e0f3-4fc5-83b4-386156bdf036)
+ [TextFieldParser.FieldWidths Property](https://msdn.microsoft.com/library/2d84y4ty(v=vs.90).aspx)   
+ [TextFieldParser.SetFieldWidths Method](https://msdn.microsoft.com/library/ms173003(v=vs.90).aspx)

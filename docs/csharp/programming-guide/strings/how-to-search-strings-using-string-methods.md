@@ -46,4 +46,4 @@ The [string](../../../csharp/language-reference/keywords/string.md) type, which 
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Strings](../../../csharp/programming-guide/strings/index.md)   
  [How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)   
- [LINQ and Strings](http://msdn.microsoft.com/library/6c34169f-7a39-436a-98d8-9a7283043942)
+ [LINQ and Strings](https://msdn.microsoft.com/library/bb397915.aspx)

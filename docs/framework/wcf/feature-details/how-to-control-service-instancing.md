@@ -40,4 +40,4 @@ Setting the instance mode of a service enables you to specify when a <xref:Syste
  <xref:System.ServiceModel.ServiceBehaviorAttribute>   
  <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>   
  <xref:System.ServiceModel.InstanceContextMode>   
- [Service: Behaviors Samples](http://msdn.microsoft.com/en-us/4e3c6513-a7ff-4b35-8dcf-b5506c6f39a7)
+ [Service: Behaviors Samples](https://msdn.microsoft.com/library/ms751453(v=vs.90).aspx)

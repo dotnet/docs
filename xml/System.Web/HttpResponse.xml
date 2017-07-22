@@ -42,7 +42,7 @@
   
 -   <xref:System.Web.HttpResponse.WriteSubstitution%2A>  
   
- Partial-page updates are enabled when you use <xref:System.Web.UI.UpdatePanel> controls to update selected regions of a page instead of updating the whole page with a post back. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+ Partial-page updates are enabled when you use <xref:System.Web.UI.UpdatePanel> controls to update selected regions of a page instead of updating the whole page with a post back. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/bb386573.aspx).  
   
    
   
@@ -318,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you use the <xref:System.Web.HttpResponse.AddFileDependency%2A> method to add a file dependency, you must also specify output caching programmatically or declaratively. For example, to specify output caching declaratively, use the  directive. For more information, see [How to: Cache Page Output with File Dependencies](http://msdn.microsoft.com/library/95ad1c54-329e-45af-9343-a03a1d2ce9db).  
+ When you use the <xref:System.Web.HttpResponse.AddFileDependency%2A> method to add a file dependency, you must also specify output caching programmatically or declaratively. For example, to specify output caching declaratively, use the  directive. For more information, see [How to: Cache Page Output with File Dependencies](https://msdn.microsoft.com/library/67z4z916.aspx).  
   
    
   
@@ -957,7 +957,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default `ContentEncoding` can be specified in an ASP.NET configuration file in the [globalization Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e2dffc8e-ebd2-439b-a2fd-e3ac5e620da7) section. If <xref:System.Web.HttpResponse.ContentEncoding%2A> is specified by the client, the default configuration settings are overridden.  
+ Default `ContentEncoding` can be specified in an ASP.NET configuration file in the [globalization Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/hy4kkhe0(v=vs.110).aspx) section. If <xref:System.Web.HttpResponse.ContentEncoding%2A> is specified by the client, the default configuration settings are overridden.  
   
    
   
@@ -1624,7 +1624,7 @@
 > [!NOTE]
 >  For mobile pages only, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can result in creating a new session and potentially losing session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
   
- ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](http://msdn.microsoft.com/library/daef3f43-e018-43aa-b43c-46b27bac599e).  
+ ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](https://msdn.microsoft.com/library/540y83hx.aspx).  
   
    
   
@@ -1670,7 +1670,7 @@
 > [!NOTE]
 >  For mobile pages, if your application relies on cookieless sessions, or might receive requests from mobile devices that require cookieless sessions, using a tilde (~) in a path can create a new session and potentially lose session data. To set a property on a mobile control with a path such as "~/path", resolve the path using <xref:System.Web.UI.MobileControls.MobileControl.ResolveUrl%2A> "~/path" before assigning it to the property.  
   
- ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](http://msdn.microsoft.com/library/daef3f43-e018-43aa-b43c-46b27bac599e).  
+ ASP.NET performs the redirection by returning a 302 HTTP status code. An alternative way to transfer control to another page is the <xref:System.Web.HttpServerUtility.Transfer%2A> method. The <xref:System.Web.HttpServerUtility.Transfer%2A> method is typically more efficient because it does not cause a round trip to the client. For more information, see [How to: Redirect Users to Another Page](https://msdn.microsoft.com/library/540y83hx.aspx).  
   
    
   
@@ -2495,7 +2495,7 @@ Response.RedirectToRoutePermanent("Product",
    
   
 ## Examples  
- The following example sets the <xref:System.Web.HttpResponse.SubStatusCode%2A> property in an event handler for the <xref:System.Web.HttpApplication> instance of the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event. Put the code file in the App_Code folder of your Web application and configure the Web.config file to register the module. For more information, see [Walkthrough: Creating and Registering a Custom HTTP Module](http://msdn.microsoft.com/library/7787d5be-40a4-4072-9075-c2b767428453).  
+ The following example sets the <xref:System.Web.HttpResponse.SubStatusCode%2A> property in an event handler for the <xref:System.Web.HttpApplication> instance of the <xref:System.Web.HttpApplication.PostAuthenticateRequest> event. Put the code file in the App_Code folder of your Web application and configure the Web.config file to register the module. For more information, see [Walkthrough: Creating and Registering a Custom HTTP Module](https://msdn.microsoft.com/library/ms227673.aspx).  
   
  [!code-csharp[System.Web.HttpResponse.SubStatusCode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.SubStatusCode/CS/App_Code/TestModule.cs#1)]
  [!code-vb[System.Web.HttpResponse.SubStatusCode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.SubStatusCode/VB/App_Code/TestModule.vb#1)]  
@@ -2583,7 +2583,7 @@ Response.RedirectToRoutePermanent("Product",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/47cd2b47-316f-4dfd-bbf8-539be3066fee).  
+ By default, ASP.NET sends a `Cache-Control: private` response header unless an explicit cache policy has been specified for this response. This property allows suppressing this default response header on a per-request basis. The header can still be suppressed for the entire application by setting <xref:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader%2A> in [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/e9b81350-8aaf-47cc-9843-5f7d0c59f369) or [outputCache Element for caching (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/ms228124(v=vs.110).aspx).  
   
  Use caution when suppressing the default `Cache-Control: private` header, as proxies and other intermediaries may treat responses without this header as cacheable by default. This treatment can lead to the inadvertent caching of sensitive information. See [RFC 2616, Sec. 13.4](http://tools.ietf.org/html/rfc2616) for more information.  
   
@@ -3047,7 +3047,7 @@ Response.RedirectToRoutePermanent("Product",
  On the first request to the page, the <xref:System.Web.HttpResponse.WriteSubstitution%2A> calls the <xref:System.Web.HttpResponseSubstitutionCallback> delegate to produce the output. Then, it adds a substitution buffer to the response, which retains the delegate to call on future requests. Finally, it degrades client-side cacheability from public to server-only, ensuring future requests to the page re-invoke the delegate by not caching on the client.  
   
 > [!NOTE]
->  Post-cache substitution is not supported for a cached user control where output caching is applied at the user control level. This is also known as fragment caching. For more information, see [Caching Portions of an ASP.NET Page](http://msdn.microsoft.com/library/cdd8e523-7305-4685-a456-c5be1de1367e).  
+>  Post-cache substitution is not supported for a cached user control where output caching is applied at the user control level. This is also known as fragment caching. For more information, see [Caching Portions of an ASP.NET Page](https://msdn.microsoft.com/library/h30h475z.aspx).  
   
  ]]></format>
         </remarks>

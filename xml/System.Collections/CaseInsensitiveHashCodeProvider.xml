@@ -79,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/).  
   
    
   
@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=fullName> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=fullName> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/).  
   
    
   
@@ -167,7 +167,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/).  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/).  
   
    
   

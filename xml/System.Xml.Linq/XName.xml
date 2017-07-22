@@ -224,9 +224,9 @@ Console.WriteLine(root)
   
  A much more common and easier way to create an <xref:System.Xml.Linq.XName> is to use the implicit conversion from string. To create a name that is in a namespace, the common approach is to use the addition operator overload that allows you to combine an <xref:System.Xml.Linq.XNamespace> object and a string.  
   
- For more information and examples, see [How to: Create a Document with Namespaces (C#) (LINQ to XML)](http://msdn.microsoft.com/library/af4a595e-ffb2-4187-a61b-d5ed71642c4c).  
+ For more information and examples, see [How to: Create a Document with Namespaces (C#) (LINQ to XML)](https://msdn.microsoft.com/library/bb387075.aspx).  
   
- For more information on using namespaces in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], see [Namespaces in Visual Basic (LINQ to XML)](http://msdn.microsoft.com/library/10b7ba7b-518c-4f14-899f-892575d14dcc).  
+ For more information on using namespaces in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], see [Namespaces in Visual Basic (LINQ to XML)](https://msdn.microsoft.com/library/bb387016.aspx).  
   
  Because <xref:System.Xml.Linq.XName> objects are atomized, if there is an existing <xref:System.Xml.Linq.XName> with exactly the same name, the assigned variable will refer to the existing <xref:System.Xml.Linq.XName>. If there is no existing <xref:System.Xml.Linq.XName>, a new one will be created and initialized.  
   

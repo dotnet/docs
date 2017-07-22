@@ -20,10 +20,10 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
   
 ## In This Section  
  [!INCLUDE[vbprvb](../../../../../../includes/vbprvb-md.md)] version of the SampleQueries solution  
- [Sample Queries (Visual Basic)](http://msdn.microsoft.com/en-us/c9de4619-45fb-4655-be8f-763ee4ed8abe)  
+ [Sample Queries (Visual Basic)](https://msdn.microsoft.com/library/bb397989(v=vs.90).aspx)  
   
  C# version of the SampleQueries solution  
- [LINQ C# Samples Solution](http://msdn.microsoft.com/en-us/23852e6b-b9a9-4a06-aedb-b27a5930ed74)  
+ [LINQ C# Samples Solution](https://msdn.microsoft.com/library/bb397972(v=vs.90).aspx)  
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
@@ -35,4 +35,4 @@ This topic provides links to the [!INCLUDE[vbprvb](../../../../../../includes/vb
   
 ## See Also  
  [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)   
- [LINQ to SQL Walkthroughs](http://msdn.microsoft.com/en-us/308e66ac-f704-4e00-9b4e-7af0045a2374)
+ [LINQ to SQL Walkthroughs](https://msdn.microsoft.com/library/bb386295(v=vs.100).aspx)

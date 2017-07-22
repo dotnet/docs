@@ -41,5 +41,5 @@ The hosting API enables unmanaged hosts to integrate the common language runtime
  Describes the unmanaged structures that the hosting API uses.  
   
 ## Related Sections  
- [Runtime Hosts](http://msdn.microsoft.com/en-us/99d9246a-b994-4fe5-985c-8588d1d59998)  
+ [Runtime Hosts](https://msdn.microsoft.com/library/a51xd4ze(v=vs.110).aspx)  
  Describes the runtime hosts included with the .NET Framework.

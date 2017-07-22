@@ -29,7 +29,7 @@
 ## Remarks  
  The <xref:System.Web.ApplicationServices.AuthenticationService> object enables you to authenticate users through a [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] service. You use the WCF authentication service when you must authenticate users through ASP.NET membership from an application that is outside the Web application that stores the user credentials. The application must be able to send and consume message in the SOAP format. Through the <xref:System.Web.ApplicationServices.AuthenticationService> class, you can log users in, log users out, validate credentials, check authentication status, customize authentication, and set the authentication cookie.  
   
- The <xref:System.Web.ApplicationServices.AuthenticationService> class contains four methods that you should access only through a WCF service: the <xref:System.Web.ApplicationServices.AuthenticationService.IsLoggedIn%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A>, and <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> methods. To call these methods, you enable the authentication service on a Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the authentication service, see [How to: Enable the WCF Authentication Service](http://msdn.microsoft.com/library/f7913259-762e-4a73-a771-ac9e42903f44).  
+ The <xref:System.Web.ApplicationServices.AuthenticationService> class contains four methods that you should access only through a WCF service: the <xref:System.Web.ApplicationServices.AuthenticationService.IsLoggedIn%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A>, <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A>, and <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> methods. To call these methods, you enable the authentication service on a Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the authentication service, see [How to: Enable the WCF Authentication Service](https://msdn.microsoft.com/library/bb398990.aspx).  
   
  To log users on, you pass the user credentials to the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method. If the credentials are valid, the <xref:System.Web.ApplicationServices.AuthenticationService> class creates an authentication cookie. If the authentication cookie has not expired, you know that the user's credentials have been authenticated and you do not have to validate the credentials again. (Cookie-less authentication is not available through the <xref:System.Web.ApplicationServices.AuthenticationService> class.)  
   
@@ -37,7 +37,7 @@
   
  The <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method checks user credentials for authentication, but it does not return an authentication ticket. Use <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> when a user has previously logged in and you must check that the credentials are still valid at the start of a new application session.  
   
- For an example of using the WCF authentication service from a console application, see [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb).  
+ For an example of using the WCF authentication service from a console application, see [Walkthrough: Using ASP.NET Application Services](https://msdn.microsoft.com/library/bb515342.aspx).  
   
  ]]></format>
     </remarks>
@@ -210,7 +210,7 @@
  The <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method raises the <xref:System.Web.ApplicationServices.AuthenticationService.Authenticating> event and the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event. Create an event handler for <xref:System.Web.ApplicationServices.AuthenticationService.Authenticating> to customize authentication, such as checking the values in `customCredential` or validating credentials through a non-default membership provider. The values in `customCredential` are not validated by the default membership provider. To customize the authentication cookie, create an event handler for <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie>.  
   
 > [!NOTE]
->  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+>  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Login%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx).  
   
  ]]></format>
         </remarks>
@@ -247,7 +247,7 @@
  The <xref:System.Web.ApplicationServices.AuthenticationService> class does not store information on the server about which authentication tickets have been cleared.  
   
 > [!NOTE]
->  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+>  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.Logout%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx).  
   
  ]]></format>
         </remarks>
@@ -293,7 +293,7 @@
  The<xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method raises the <xref:System.Web.ApplicationServices.AuthenticationService.Authenticating> event, but does not raise the <xref:System.Web.ApplicationServices.AuthenticationService.CreatingCookie> event.  
   
 > [!NOTE]
->  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+>  Do not call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method from code that is executing on the Web server. You call the <xref:System.Web.ApplicationServices.AuthenticationService.ValidateUser%2A> method only as part of a WCF service. For more information, see [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx).  
   
  ]]></format>
         </remarks>

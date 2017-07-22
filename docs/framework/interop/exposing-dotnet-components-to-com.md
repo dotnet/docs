@@ -51,11 +51,11 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
   
      COM developers can reference types in an assembly using the same tools and techniques they use today.  
   
-3.  [Call a .NET object](http://msdn.microsoft.com/en-us/40c9626c-aea6-4bad-b8f0-c1de462efd33).  
+3.  [Call a .NET object](https://msdn.microsoft.com/library/8hw8h46b.aspx).  
   
      COM developers can call methods on the .NET object the same way they call methods on any unmanaged type. For example, the COM **CoCreateInstance** API activates .NET objects.  
   
-4.  [Deploy an application for COM access](http://msdn.microsoft.com/en-us/fb63564c-c1b9-4655-a094-a235625882ce).  
+4.  [Deploy an application for COM access](https://msdn.microsoft.com/library/c2850st8.aspx).  
   
      A strong-named assembly can be installed in the global assembly cache and requires a signature from its publisher. Assemblies that are not strong named must be installed in the application directory of the client.  
   

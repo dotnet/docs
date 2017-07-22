@@ -70,7 +70,7 @@
   
  When more than one user can change the database concurrently, there is the potential for concurrency conflict. The <xref:System.Web.UI.WebControls.SqlDataSource> control has controls concurrency through the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection?displayProperty=fullName> property. The functionality is implemented in the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection?displayProperty=fullName> property.  
   
- Like many other Web server controls, the <xref:System.Web.UI.WebControls.SqlDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState%2A> and property and the <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ Like many other Web server controls, the <xref:System.Web.UI.WebControls.SqlDataSourceView> implements the <xref:System.Web.UI.IStateManager> interface and uses view state to track its state across page requests. Implementations of the <xref:System.Web.UI.WebControls.SqlDataSourceView.IsTrackingViewState%2A> and property and the <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A>, <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A>, and <xref:System.Web.UI.WebControls.SqlDataSourceView.TrackViewState%2A> methods are provided to enable view state tracking for the control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  ]]></format>
     </remarks>
@@ -377,7 +377,7 @@
 ## Remarks  
  Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property.  
   
- If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the  <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the  <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteCommand%2A> can be an SQL string or the name of a stored procedure, if the underlying database supports stored procedures.  
   
@@ -441,7 +441,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Deleted> event to examine the values of output parameters after a delete operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -481,7 +481,7 @@
   
  Parameter names might be affected by the <xref:System.Web.UI.WebControls.SqlDataSourceView.OldValuesParameterFormatString%2A> property; specifically, if the name identifies a primary key, such as a key that is specified using the `DataKeyNames` property of a data-bound control, or in delete and update scenarios in which the <xref:System.Web.UI.WebControls.SqlDataSourceView.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions.CompareAllValues> value and a set of `oldValues` is passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.DeleteParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order that the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with the placeholder in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
    
   
@@ -517,7 +517,7 @@
   
  The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the <xref:System.Web.UI.WebControls.SqlDataSourceView.Delete%2A> operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -787,7 +787,7 @@
 > [!IMPORTANT]
 >  You should validate any filter parameter value that you receive from the client. The runtime simply substitutes the parameter value into the filter expression and applies it to the <xref:System.Data.DataView> object that is returned by the <xref:System.Web.UI.WebControls.ObjectDataSource.Select%2A> method. If you are using the <xref:System.Web.UI.WebControls.ObjectDataSource.FilterExpression%2A> property as a security measure to limit the number of items that are returned, you must validate the parameter values before the filtering occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -890,7 +890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -979,7 +979,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Inserted> event to examine the values of output parameters after an insert operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -1021,7 +1021,7 @@
   
  The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the database operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -1073,7 +1073,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.InsertParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
    
   
@@ -1128,7 +1128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is primarily used by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.LoadViewState%2A> method restores view-state information for the <xref:System.Web.UI.WebControls.SqlDataSourceView> object from a previous page request that was saved by the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method.  
   
@@ -1190,7 +1190,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1223,7 +1223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnDeleting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1264,7 +1264,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnFiltering%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1297,7 +1297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserted%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1344,7 +1344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnInserting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1391,7 +1391,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelected%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1424,7 +1424,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnSelecting%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1457,7 +1457,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnUpdated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1498,7 +1498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.OnUpdating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1599,7 +1599,7 @@
   
  View state is the accumulation of the values of the properties for a server control. These values are automatically placed in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. The <xref:System.Web.UI.Control.ViewState%2A> value for the server control is then persisted to a string object after the save state stage of the server control life cycle.  
   
- When view state is saved, the string object that was persisted after the save state stage of the server control life cycle is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ When view state is saved, the string object that was persisted after the save state stage of the server control life cycle is returned to the client as a variable that is stored in an HTML `Hidden` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.SqlDataSourceView.SaveViewState%2A> method and modifying the `ViewState` property for your server control. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  ]]></format>
         </remarks>
@@ -1657,7 +1657,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -1739,7 +1739,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Selected> event to examine the values of output parameters after a data retrieval operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -1765,7 +1765,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Selecting> event to perform additional initialization operations that are specific to your application, to validate the values of parameters, or to change the parameter values before the <xref:System.Web.UI.WebControls.SqlDataSource> control performs the data retrieval operation.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>
@@ -1792,7 +1792,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectCommand%2A> property contains a parameterized SQL query, the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> collection contains any <xref:System.Web.UI.WebControls.Parameter> objects that correspond to the parameter placeholders in the SQL string.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.SelectParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
    
   
@@ -2023,7 +2023,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Because different database products use different varieties of SQL, the syntax of the SQL string depends on the current ADO.NET provider being used, which is identified by the <xref:System.Web.UI.WebControls.SqlDataSource.ProviderName%2A> property. If the SQL string is a parameterized query or command, the placeholder of the parameter also depends on the ADO.NET provider being used. For example, if the provider is the <xref:System.Data.SqlClient?displayProperty=fullName>, which is the default provider for the <xref:System.Web.UI.WebControls.SqlDataSource> class, the placeholder of the parameter is `'@parameterName'`. However, if the provider is set to the <xref:System.Data.Odbc?displayProperty=fullName> or <xref:System.Data.OleDb?displayProperty=fullName>, the placeholder of the parameter is `'?'`. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
  The <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateCommand%2A> property can be an SQL string or the name of a stored procedure, if the data source supports stored procedures.  
   
@@ -2094,7 +2094,7 @@
 ## Remarks  
  Handle the <xref:System.Web.UI.WebControls.SqlDataSourceView.Updated> event to examine the values of output parameters after an update operation has completed. The output parameters are available from the <xref:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs> object that is associated with the event.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -2142,7 +2142,7 @@
   
  Parameter names might be affected by the <xref:System.Web.UI.WebControls.SqlDataSource.OldValuesParameterFormatString%2A> property; specifically, if the name identifies a primary key, such as a key that is specified using the `DataKeyNames` property, or in delete and update scenarios where the <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property is set to the <xref:System.Web.UI.ConflictOptions.CompareAllValues> value, and a set of `oldValues` are passed to the corresponding data method. In this case, the format string is applied to each parameter name in the `oldValues` collection.  
   
- Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](http://msdn.microsoft.com/library/403ff44a-dd0b-484d-968e-dcd1dcd4c295).  
+ Depending on the ADO.NET provider, the order of the parameters in the <xref:System.Web.UI.WebControls.SqlDataSourceView.UpdateParameters%2A> collection might be important. The <xref:System.Data.OleDb?displayProperty=fullName> and <xref:System.Data.Odbc?displayProperty=fullName> providers associate the parameters in the collection according to the order in which the parameters appear in the parameterized SQL query. The <xref:System.Data.SqlClient?displayProperty=fullName> provider, which is the default ADO.NET provider for the <xref:System.Web.UI.WebControls.SqlDataSource> control, associates the parameters in the collection by matching the name of the parameter with a placeholder alias in the SQL query. For more information on parameterized SQL queries and commands, see [Using Parameters with the SqlDataSource Control](https://msdn.microsoft.com/library/z72eefad.aspx).  
   
    
   
@@ -2178,7 +2178,7 @@
   
  The connection to the underlying data source is not yet open when the event handler delegate is called. Therefore, you cannot cancel the operation directly by calling the <xref:System.Data.Common.DbCommand.Cancel%2A> method on the <xref:System.Data.Common.DbCommand> object that is exposed by the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> object. You can, however, cancel the database operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.SqlDataSourceCommandEventArgs> to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   

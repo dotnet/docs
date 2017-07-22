@@ -29,7 +29,7 @@
  The following code example demonstrates how to use the <xref:System.Web.Configuration.AuthorizationRule>.  
   
 > [!NOTE]
->  If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security capability, it is recommended that you use an external database to store users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
+>  If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](https://msdn.microsoft.com/library/eeyk640h.aspx). For scalability and better security capability, it is recommended that you use an external database to store users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
   
  [!code-csharp[System.Web.Configuration.Authorization#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.Authorization/CS/authorization.cs#4)]
  [!code-vb[System.Web.Configuration.Authorization#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.Authorization/VB/authorization.vb#4)]  

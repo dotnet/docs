@@ -107,7 +107,7 @@ In a call to a class constructor, you can set the values of properties of the cl
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet3506.fs)]
 
-For more information, see [Constructors (F#)](https://msdn.microsoft.com/library/2cd0ed07-d214-4125-8317-4f288af99f05).
+For more information, see [Constructors (F#)](https://docs.microsoft.com/dotnet/fsharp/language-reference/members/constructors).
 
 ## Optional Parameters
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. Optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.

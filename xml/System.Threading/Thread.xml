@@ -754,7 +754,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
 > [!IMPORTANT]
 >  In the .NET Framework version 2.0, new threads are initialized as <xref:System.Threading.ApartmentState?displayProperty=fullName> if their apartment state has not been set before they are started. The main application thread is initialized to <xref:System.Threading.ApartmentState?displayProperty=fullName> by default. You can no longer set the main application thread to <xref:System.Threading.ApartmentState?displayProperty=fullName> by setting the <xref:System.Threading.ApartmentState?displayProperty=fullName> property on the first line of code. Use the <xref:System.STAThreadAttribute> instead.  
   
- In the .NET Framework version 2.0, you can specify the COM threading model for a C++ application using the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](http://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8) linker option.  
+ In the .NET Framework version 2.0, you can specify the COM threading model for a C++ application using the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](https://msdn.microsoft.com/library/s6bz81ya.aspx) linker option.  
   
    
   

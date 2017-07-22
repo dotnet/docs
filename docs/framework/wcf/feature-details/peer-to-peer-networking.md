@@ -30,7 +30,7 @@ Peer Channel is a multiparty, peer-to-peer (P2P) communication technology in [!I
  [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md):  Provides guidance on developing Peer Channel applications.  
   
 ## Peer Channel Code Examples  
- [Peer Channel Custom Peer Resolver](http://msdn.microsoft.com/en-us/5b75a2bb-7ff1-4a14-abe7-3debf0537d23)  
+ [Peer Channel Custom Peer Resolver](https://msdn.microsoft.com/library/ms751466(v=vs.90).aspx)  
   
 ## Peer Channel Team blog  
  [Peer Channel Team Blog](http://go.microsoft.com/fwlink/?LinkID=114530) (http://go.microsoft.com/fwlink/?LinkID=114530)

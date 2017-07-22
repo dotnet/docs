@@ -40,4 +40,4 @@ An access value is not valid in `Input` mode.
 -   Change the value to either `OpenAccess.Read` or `OpenAccess.Default`.  
   
 ## See Also  
- [NOTINBUILD OpenAccess Enumeration](http://msdn.microsoft.com/en-us/90e29e92-1535-4754-9951-4579ccc8eda1)
+ [NOTINBUILD OpenAccess Enumeration](https://msdn.microsoft.com/library/t1z1kzy2(v=vs.90).aspx)

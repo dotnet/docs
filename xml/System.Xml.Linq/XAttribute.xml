@@ -42,7 +42,7 @@
   
  The <xref:System.Xml.Linq.XAttribute> class derives from <xref:System.Xml.Linq.XObject>. You can add annotations to attributes, and observe events for them.  
   
- Some <xref:System.Xml.Linq.XAttribute> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](http://msdn.microsoft.com/library/0455f47c-4a68-4f2e-a3f8-dd1d85b99012).  
+ Some <xref:System.Xml.Linq.XAttribute> methods can be used from XAML. For more information, see [LINQ to XML Dynamic Properties](https://msdn.microsoft.com/library/bb669107.aspx).  
   
  ]]></format>
     </remarks>
@@ -171,7 +171,7 @@ XElement root = new XElement(aw + "Root",
 );  
 ```  
   
- For more information, see [Working with XML Namespaces](http://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430).  
+ For more information, see [Working with XML Namespaces](https://msdn.microsoft.com/library/bb387093.aspx).  
   
  These same approaches will work for Visual Basic, however XML literals provide a better approach for creating XML trees.  
   
@@ -1663,7 +1663,7 @@ Att1="1"
 ## Remarks  
  You can use this method to modify an XML tree. This method will cause events to occur.  
   
- There are many scenarios in which you might want to remove a set of attributes. In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of attributes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then you can iterate over the list, removing the attributes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+ There are many scenarios in which you might want to remove a set of attributes. In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of attributes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then you can iterate over the list, removing the attributes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](https://msdn.microsoft.com/library/bb387088.aspx).  
   
  Alternatively, if you want to remove a set of attributes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=fullName> method. This method copies the attributes to a list, then iterates over the list, removing the attributes.  
   

@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.StaticSiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes represent the default implementations of the abstract <xref:System.Web.SiteMapProvider> class. The <xref:System.Web.XmlSiteMapProvider> uses an XML file named Web.sitemap to store site map data. For more information on about the Web.sitemap file, see [ASP.NET Site Maps](http://msdn.microsoft.com/library/6b85a558-1df8-44cf-bea6-62e61bcc8d20).  
+ The <xref:System.Web.StaticSiteMapProvider> and <xref:System.Web.XmlSiteMapProvider> classes represent the default implementations of the abstract <xref:System.Web.SiteMapProvider> class. The <xref:System.Web.XmlSiteMapProvider> uses an XML file named Web.sitemap to store site map data. For more information on about the Web.sitemap file, see [ASP.NET Site Maps](https://msdn.microsoft.com/library/yy2ykkab.aspx).  
   
  The <xref:System.Web.SiteMapProvider> class supports the concept of a site map provider hierarchy, by declaring the <xref:System.Web.SiteMapProvider.RootProvider%2A> and <xref:System.Web.SiteMapProvider.ParentProvider%2A> properties. A <xref:System.Web.SiteMapProvider> can be a child or parent of another provider. This enables scenarios where different content areas of a site are owned or implemented by different development groups that maintain their own site maps and site map providers.  
   
@@ -1027,7 +1027,7 @@ catalog.aspx,Online Catalog,Browse Our Many Great Items!,default.aspx
 ## Remarks  
  You can create a <xref:System.Web.SiteMapNode> representation of the currently requested page without implementing a custom site map provider by subscribing to the <xref:System.Web.SiteMapProvider.SiteMapResolve> event. Subscribers attach a <xref:System.Web.SiteMapResolveEventHandler> object to receive notification when the <xref:System.Web.SiteMapProvider.CurrentNode%2A> property is called and can return a custom <xref:System.Web.SiteMapNode> object instead of the default one that is returned by the <xref:System.Web.SiteMapProvider.CurrentNode%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  ]]></format>
         </remarks>

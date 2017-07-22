@@ -53,4 +53,4 @@ You do not use lambda expressions directly in query syntax, but you do use them 
   
 ## See Also  
  [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
- [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)
+ [Expression Trees](https://msdn.microsoft.com/library/bb397951.aspx)

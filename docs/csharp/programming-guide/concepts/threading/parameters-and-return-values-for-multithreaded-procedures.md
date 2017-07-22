@@ -137,4 +137,4 @@ private void BackgroundWorker1_RunWorkerCompleted(
  [Events](../../../../csharp/programming-guide/events/index.md)   
  [Multithreaded Applications (C#)](../../../../csharp/programming-guide/concepts/threading/multithreaded-applications.md)   
  [Delegates](../../../../csharp/programming-guide/delegates/index.md)   
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)
+ [Multithreading in Components](https://msdn.microsoft.com/library/3es4b6yy.aspx)

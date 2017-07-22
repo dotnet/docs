@@ -61,5 +61,5 @@ Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)
   
 ## See Also  
  <xref:System.Type.IsEquivalentTo%2A>   
- [Using COM Types in Managed Code](http://msdn.microsoft.com/en-us/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66)   
+ [Using COM Types in Managed Code](https://msdn.microsoft.com/library/3y76b69k.aspx)   
  [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)

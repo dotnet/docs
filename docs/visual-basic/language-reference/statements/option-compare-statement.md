@@ -87,7 +87,7 @@ Option Compare { Binary | Text }
   
 #### To set Option Compare in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**. For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e).  
+1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**. For more information, see [NIB: Managing Project Properties with the Project Designer](https://msdn.microsoft.com/library/z2f953x9(v=vs.100).aspx).  
   
 2.  Click the **Compile** tab.  
   

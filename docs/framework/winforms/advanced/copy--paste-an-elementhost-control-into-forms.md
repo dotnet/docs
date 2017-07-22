@@ -32,7 +32,7 @@ This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) c
 -   Copy a WPF Control.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](https://msdn.microsoft.com/library/zbhkx167.aspx).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -77,4 +77,4 @@ This walkthrough shows you how to copy a Windows Presentation Foundation (WPF) c
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>   
  [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)   
  [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)   
- [WPF Designer](http://msdn.microsoft.com/en-us/c6c65214-8411-4e16-b254-163ed4099c26)
+ [WPF Designer](https://msdn.microsoft.com/library/bb514656(v=vs.110).aspx)

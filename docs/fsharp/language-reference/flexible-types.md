@@ -40,7 +40,7 @@ Consider the following two functions, one of which returns a sequence, the other
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4101.fs)]
 
-As another example, consider the [Seq.concat](https://msdn.microsoft.com/library/2eeb69a9-fc2f-4b7d-8dee-101fa2b00712) library function:
+As another example, consider the [Seq.concat](https://msdn.microsoft.com/visualfsharpdocs/conceptual/seq.concat%5b'collection%2c't%5d-function-%5bfsharp%5d) library function:
 
 ```fsharp
 val concat: sequences:seq<#seq<'T>> -> seq<'T>

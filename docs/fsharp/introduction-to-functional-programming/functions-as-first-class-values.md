@@ -96,7 +96,7 @@ The following function call, declared inline, returns a Boolean value. The value
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet31.fs)]
 
-The ability to return a function as the value of a function call is the second characteristic of higher-order functions. In the following example, `checkFor` is defined to be a function that takes one argument, `item`, and returns a new function as its value. The returned function takes a list as its argument, `lst`, and searches for `item` in `lst`. If `item` is present, the function returns `true`. If `item` is not present, the function returns `false`. As in the previous section, the following code uses a provided list function, [List.exists](https://msdn.microsoft.com/library/15a3ebd5-98f0-44c0-8220-7dedec3e68a8), to search the list.
+The ability to return a function as the value of a function call is the second characteristic of higher-order functions. In the following example, `checkFor` is defined to be a function that takes one argument, `item`, and returns a new function as its value. The returned function takes a list as its argument, `lst`, and searches for `item` in `lst`. If `item` is present, the function returns `true`. If `item` is not present, the function returns `false`. As in the previous section, the following code uses a provided list function, [List.exists](https://msdn.microsoft.com/visualfsharpdocs/conceptual/list.exists%5b't%5d-function-%5bfsharp%5d), to search the list.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/contour/snippet32.fs)]
 

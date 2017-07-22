@@ -60,11 +60,11 @@
  To determine the selected items in the <xref:System.Web.UI.WebControls.CheckBoxList> control, iterate through the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection and test the <xref:System.Web.UI.WebControls.ListItem.Selected%2A> property of each item in the collection.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/7kh55542.aspx).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -144,7 +144,7 @@
  The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.CheckBoxList> control on a Web page.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[CheckBoxList#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxList/CS/checkboxlistcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[CheckBoxList#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxList/VB/checkboxlistvb.aspx#1)]  -->  
@@ -177,7 +177,7 @@
  The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[CheckBoxListCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListCtor/CS/checkboxlistctorcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[CheckBoxListCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListCtor/VB/checkboxlistctorvb.aspx#1)]  -->  
@@ -220,7 +220,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.CellPadding%2A> property to specify that the cell padding for the <xref:System.Web.UI.WebControls.CheckBoxList> control is 5 pixels.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
@@ -264,7 +264,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.CellSpacing%2A> property to specify that the cell spacing for the <xref:System.Web.UI.WebControls.CheckBoxList> control is 5 pixels.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
@@ -723,7 +723,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatColumns%2A> property to specify that two columns are displayed in the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
@@ -787,7 +787,7 @@
  The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatDirection%2A> property to specify that the display direction is vertical.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
@@ -864,7 +864,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.RepeatLayout%2A> property to change the HTML that the <xref:System.Web.UI.WebControls.CheckBoxList> control renders.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[CheckBoxListRepeatLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CheckBoxListRepeatLayout/CS/checkboxlistrepeatlayoutcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[CheckBoxListRepeatLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CheckBoxListRepeatLayout/VB/checkboxlistrepeatlayoutvb.aspx#1)]  -->  
@@ -1191,7 +1191,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.CheckBoxList.TextAlign%2A> property to specify that the text associated with the check boxes appears on the right side of the <xref:System.Web.UI.WebControls.CheckBoxList> control.  
   
 > [!NOTE]
->  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code samples use the single-file code model and may not work correctly if copied directly into a code-behind file. Each code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic CheckBoxList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic CheckBoxList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  

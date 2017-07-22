@@ -68,7 +68,7 @@ The use of other bitwise operators isn't allowed.
 
 
 ## Named Literals
-Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/library/465f36ce-d146-41c0-b425-679c509cd285) attribute. This attribute has the effect of causing a value to be compiled as a constant.
+Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 

@@ -81,7 +81,7 @@
 -   Customizable appearance through themes, user-defined images, and styles.  
   
     > [!NOTE]
-    >  The <xref:System.Web.UI.WebControls.TreeView> control is designed to be used inside an <xref:System.Web.UI.UpdatePanel> control only when <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> is set to `true`. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](http://msdn.microsoft.com/library/5c12736d-d9e9-464a-9388-3fe0f9f49e49).  
+    >  The <xref:System.Web.UI.WebControls.TreeView> control is designed to be used inside an <xref:System.Web.UI.UpdatePanel> control only when <xref:System.Web.UI.WebControls.TreeView.EnableClientScript%2A> is set to `true`. <xref:System.Web.UI.UpdatePanel> controls are used to update selected regions of a page instead of updating the whole page with a postback. For more information, see [UpdatePanel Control Overview](http://msdn.microsoft.com/library/29a2265d-9674-4c19-b70e-e5560ee9689a) and [Partial-Page Rendering Overview](https://msdn.microsoft.com/library/bb386573.aspx).  
   
 <a name="nodes"></a>   
 ## Nodes  
@@ -133,7 +133,7 @@
 ## Customizing the User Interface  
  There are many ways to customize the appearance of the <xref:System.Web.UI.WebControls.TreeView> control. First, you can specify a different style (such as font size and color) for each of the node types.  
   
- If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42).  
+ If you use cascading style sheets (CSS) to customize the appearance of the control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results. For more information on using style sheets with controls, see [Web Server Controls and CSS Styles](https://msdn.microsoft.com/library/h4kete56.aspx).  
   
  The following table lists the available node styles.  
   
@@ -185,11 +185,11 @@
   
 <a name="scrolling"></a>   
 ## Scrolling  
- The <xref:System.Web.UI.WebControls.TreeView> control does not have built-in scrolling. To add scrolling, place the <xref:System.Web.UI.WebControls.TreeView> control in a <xref:System.Web.UI.WebControls.Panel> control and add scrollbars to the <xref:System.Web.UI.WebControls.Panel> control. For more information, see [Panel Web Server Control Overview](http://msdn.microsoft.com/library/127b61ed-87f2-46f4-92a3-785166e7245b).  
+ The <xref:System.Web.UI.WebControls.TreeView> control does not have built-in scrolling. To add scrolling, place the <xref:System.Web.UI.WebControls.TreeView> control in a <xref:System.Web.UI.WebControls.Panel> control and add scrollbars to the <xref:System.Web.UI.WebControls.Panel> control. For more information, see [Panel Web Server Control Overview](https://msdn.microsoft.com/library/cd2zztdd.aspx).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -787,7 +787,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1056,7 +1056,7 @@
   
  The value of this property is stored in view state.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
    
   
@@ -1183,7 +1183,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1283,7 +1283,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeView.FindNode%2A> method to retrieve a node from the <xref:System.Web.UI.WebControls.TreeView> control.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[TreeViewFindNode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewFindNode/CS/treeviewfindnodecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[TreeViewFindNode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewFindNode/VB/treeviewfindnodevb.aspx#1)]  -->  
@@ -2025,7 +2025,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.OnInit%2A> method is called by the <xref:System.Web.UI.WebControls.TreeView> control to raise the <xref:System.Web.UI.Control.Init> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.TreeView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2060,7 +2060,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.OnPreRender%2A> method is overridden to register for postback. If client script is enabled, it also renders the necessary script and hidden fields.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2100,7 +2100,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.TreeView.HoverNodeStyle%2A> is not rendered for a node with its <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property set to `TreeNodeSelectAction.None`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnSelectedNodeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2135,7 +2135,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is raised when a check box in the <xref:System.Web.UI.WebControls.TreeView> control changes state between posts to the server. This allows you to provide an event-handling method that performs a custom routine, such as updating a database or the displayed content, whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeCheckChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2170,7 +2170,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeCollapsed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2205,7 +2205,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeDataBound%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2243,7 +2243,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to <xref:System.Web.UI.WebControls.TreeNodeSelectAction.Expand> or <xref:System.Web.UI.WebControls.TreeNodeSelectAction.SelectExpand>, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodeExpanded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2285,7 +2285,7 @@
   
  Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node on the client dynamically when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.TreeView.OnTreeNodePopulate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -2812,7 +2812,7 @@
   
  The <xref:System.Web.UI.WebControls.TreeView.SelectedNodeChanged> event is fired only on post back when a user clicks a node. The event is not fired if the <xref:System.Web.UI.WebControls.TreeView.SelectedNode%2A> property is changed programmatically.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3188,7 +3188,7 @@
   
  The value of this property is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
  ]]></format>
         </remarks>
@@ -3409,9 +3409,9 @@
  Use the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to specify the window or frame in which to display the Web content that is linked to a node when that node is clicked.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.TreeView.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property, if the rendered output for the <xref:System.Web.UI.WebControls.TreeView> must be XHTML 1.1 compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>  The <xref:System.Web.UI.WebControls.TreeView.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property, if the rendered output for the <xref:System.Web.UI.WebControls.TreeView> must be XHTML 1.1 compliant. For more information, see [XHTML Standards in Visual Studio and ASP.NET](https://msdn.microsoft.com/library/exc57y7e.aspx).  
 >   
->  When creating accessible Web pages, you should avoid using the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to target another window. For more information, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+>  When creating accessible Web pages, you should avoid using the <xref:System.Web.UI.WebControls.TreeView.Target%2A> property to target another window. For more information, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
  The value of this property is stored in view state.  
   
@@ -3474,7 +3474,7 @@
   
  Even though the <xref:System.Web.UI.WebControls.TreeView.TreeNodeCheckChanged> event is fired on post back, changing a check box does not cause a post back.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3508,7 +3508,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeCollapsed> event is raised when a node is collapsed in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3542,7 +3542,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TreeView.TreeNodeDataBound> event is raised when a data item is bound to a node in the <xref:System.Web.UI.WebControls.TreeView> control. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3598,7 +3598,7 @@
 > [!NOTE]
 >  If the <xref:System.Web.UI.WebControls.TreeNode.SelectAction%2A> property for a node is set to `TreeNodeSelectAction.Expand` or `TreeNodeSelectAction.SelectExpand`, the <xref:System.Web.UI.WebControls.TreeView.TreeNodeExpanded> event is also raised when that node is clicked in the <xref:System.Web.UI.WebControls.TreeView> control.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3639,7 +3639,7 @@
   
  Supported browsers (Microsoft Internet Explorer 4.0-compatible browsers and later) can also take advantage of client-side node population. When enabled, this allows the <xref:System.Web.UI.WebControls.TreeView> control to populate a node dynamically on the client when that node is expanded, which prevents the need to post back to the server. For more information on client-side node population, see <xref:System.Web.UI.WebControls.TreeView.PopulateNodesFromClient%2A>.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   

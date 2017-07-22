@@ -29,10 +29,10 @@ The .NET Framework provides a number of objects that help you create and manage 
  [Timers](../../../docs/standard/threading/timers.md)  
  Explains how to use a **Timer** to specify a delegate to be called at a specified time.  
   
- [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db)  
+ [Monitors](https://msdn.microsoft.com/library/system.threading.monitor(v=vs.110).aspx)  
  Explains how to use the **Monitor** class to synchronize access to a member or to build your own thread management types.  
   
- [Wait Handles](http://msdn.microsoft.com/library/48d10b6f-5fd7-407c-86ab-0179aef72489)  
+ [Wait Handles](https://msdn.microsoft.com/library/system.threading.waithandle(v=vs.110).aspx)  
  Describes the <xref:System.Threading.WaitHandle> class, the abstract base class for event wait handles, mutexes, and semaphores, which enables waiting for multiple synchronization events.  
   
  [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  

@@ -210,7 +210,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> and <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> style bits are set to `false` for the <xref:System.Windows.Forms.Button> control, and the <xref:System.Windows.Forms.Button.DoubleClick> event is not raised.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -254,7 +254,7 @@
 ## Remarks  
  By default, the <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> and <xref:System.Windows.Forms.ControlStyles?displayProperty=fullName> style bits are set to `false` for the <xref:System.Windows.Forms.Button> control, and the <xref:System.Windows.Forms.Button.MouseDoubleClick> event is not raised.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -347,7 +347,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.Button.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -422,7 +422,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.Button.OnMouseUp%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -455,7 +455,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.Button.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

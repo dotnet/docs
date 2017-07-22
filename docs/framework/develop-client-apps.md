@@ -59,5 +59,5 @@ There are multiple ways to develop Windows-based applications with the .NET fram
  [Portable Class Library](../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)   
  [Overview](../../docs/framework/get-started/overview.md)   
  [Development Guide](../../docs/framework/development-guide.md)   
- [How to: Create a Windows Desktop Application](http://msdn.microsoft.com/library/47021403-eaca-4c34-946a-a26c42a64148)   
+ [How to: Create a Windows Desktop Application](https://msdn.microsoft.com/library/2eezscy8.aspx)   
  [Windows Service Applications](../../docs/framework/windows-services/index.md)

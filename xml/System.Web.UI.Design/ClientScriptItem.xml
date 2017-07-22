@@ -24,7 +24,7 @@
   
  Use the <xref:System.Web.UI.Design.ClientScriptItem> class to manage scripts that are to be executed at design-time.  
   
- To manage client script elements at run time, use the <xref:System.Web.UI.ClientScriptManager> class. For more information about using client scripts at run time, see [Client Script in ASP.NET Web Pages](http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+ To manage client script elements at run time, use the <xref:System.Web.UI.ClientScriptManager> class. For more information about using client scripts at run time, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/3hc29e2a.aspx).  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.Design.ClientScriptItem> class represents `script` elements at design time that are ultimately parsed and run in the client browser. Because the `script` elements that are generated for the <xref:System.Web.UI.Design.ClientScriptItem> objects are not run on the server, the elements do not contain the `runat="server"` attribute.  

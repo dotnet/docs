@@ -51,4 +51,4 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
   
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
   
- [Runtime Hosts](http://msdn.microsoft.com/en-us/99d9246a-b994-4fe5-985c-8588d1d59998)
+ [Runtime Hosts](https://msdn.microsoft.com/library/a51xd4ze(v=vs.110).aspx)

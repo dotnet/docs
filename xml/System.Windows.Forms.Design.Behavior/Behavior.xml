@@ -18,7 +18,7 @@
 ## Remarks  
  This class can be extended to develop any type of user interface behavior, including selection, drag, and resize behaviors.  
   
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ For more information, see [Behavior Service Overview](https://msdn.microsoft.com/library/ms171826.aspx).  
   
 > [!NOTE]
 >  Your <xref:System.Windows.Forms.Design.Behavior.Behavior> type must be associated with a <xref:System.Windows.Forms.Design.Behavior.Glyph> type. Glyph-independent behaviors are not supported.  
@@ -378,7 +378,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to handle a double-click message. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ The following code example demonstrates how to handle a double-click message. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](https://msdn.microsoft.com/library/ms171820.aspx).  
   
  [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#10)]
  [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#10)]  

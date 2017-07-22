@@ -126,11 +126,11 @@
   
 -   To bind to a data source that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, programmatically set the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataSource%2A> property of the <xref:System.Web.UI.WebControls.DetailsView> control to the data source and then call the <xref:System.Web.UI.WebControls.BaseDataBoundControl.DataBind%2A> method.  
   
- For more information on data binding, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+ For more information on data binding, see [Binding to Databases](https://msdn.microsoft.com/library/ms178361(v=vs.100).aspx).  
   
 <a name="security"></a>   
 ## Security  
- This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07). Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+ This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07). Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](https://msdn.microsoft.com/library/e5a8xz39(v=vs.110).aspx).  
   
 <a name="data_operations"></a>   
 ## Data Operations  
@@ -184,7 +184,7 @@
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -1037,7 +1037,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.Caption%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -2140,7 +2140,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.EmptyDataText%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -2581,7 +2581,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.FooterText%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -2867,7 +2867,7 @@
   
  The value of <xref:System.Web.UI.WebControls.DetailsView.HeaderText%2A> is stored in view state.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -3180,7 +3180,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewCommandEventArgs> object is passed to the event handler, which allows you to determine the command name and command argument of the button clicked. To determine the index of the current record, use the <xref:System.Web.UI.WebControls.DetailsView.PageIndex%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3216,7 +3216,7 @@
   
  You can access the header, footer, and pager rows in the <xref:System.Web.UI.WebControls.DetailsView> control by using the <xref:System.Web.UI.WebControls.DetailsView.HeaderRow%2A>, <xref:System.Web.UI.WebControls.DetailsView.FooterRow%2A>, <xref:System.Web.UI.WebControls.DetailsView.TopPagerRow%2A>, or <xref:System.Web.UI.WebControls.DetailsView.BottomPagerRow%2A> properties, respectively. To access one of the data rows, use the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> collection.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3252,7 +3252,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs> object is passed to the event handler, which allows you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewDeletedEventArgs.ExceptionHandled%2A> property.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3288,7 +3288,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs> object is passed to the event handler, which allows you to determine the index of the record being deleted and to indicate that the delete operation should be canceled. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.DetailsViewDeleteEventArgs.Values%2A> collections, if necessary, before the values are passed to the data source.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3324,7 +3324,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs> object is passed to the event handler, which allows you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.ExceptionHandled%2A> property. To keep the control in insert mode after an insert operation, set the <xref:System.Web.UI.WebControls.DetailsViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3360,7 +3360,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs> object is passed to the event handler, which allows you to indicate that the insert operation should be canceled. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.DetailsViewInsertEventArgs.Values%2A> collection, if necessary, before the values are passed to the data source.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3396,7 +3396,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs> object is passed to the event handler, which allows you to determine the number of rows affected and any exceptions that might have occurred. You can also indicate whether the exception was handled in the event handler by setting the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.ExceptionHandled%2A> property. To keep the control in edit mode after an update operation, set the <xref:System.Web.UI.WebControls.DetailsViewUpdatedEventArgs.KeepInEditMode%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3432,7 +3432,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs> object is passed to the event handler, which allows you to determine the index of the record being updated and to indicate that the update operation should be canceled. To cancel the update operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also manipulate the <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys%2A>, <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues%2A>, and <xref:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues%2A> collections, if necessary, before the values are passed to the data source. A common way to use these collections is to HTML-encode the values supplied by the user before they are stored in the data source. This helps to prevent script injection attacks.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3499,7 +3499,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  The <xref:System.Web.UI.WebControls.DetailsView.LoadViewState%2A> method is used to load the previously saved view state of the <xref:System.Web.UI.WebControls.DetailsView> control.  
   
@@ -3527,7 +3527,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView.ModeChanged> event is raised when a <xref:System.Web.UI.WebControls.DetailsView> control attempts to change between edit, insert, and read-only mode, but after the <xref:System.Web.UI.WebControls.DetailsView.CurrentMode%2A> property is updated. This allows you to provide an event handler that performs a custom routine, such as synchronizing the <xref:System.Web.UI.WebControls.DetailsView> control with another control, whenever this event occurs.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -3563,7 +3563,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs> object is passed to the event handler, which allows you to determine the new mode, to determine whether the mode change was a result of the user canceling an edit operation, or to cancel the mode change. To determine the new mode, use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.NewMode%2A> property. To determine whether the mode change was a result of the user canceling an edit operation, use the <xref:System.Web.UI.WebControls.DetailsViewModeEventArgs.CancelingEdit%2A> property. You can cancel the mode change by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -4038,7 +4038,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged%2A> method is called by the <xref:System.Web.UI.WebControls.DetailsView> control to raise the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanged> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.DetailsView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4073,7 +4073,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging%2A> method is called by the <xref:System.Web.UI.WebControls.DetailsView> control to raise the <xref:System.Web.UI.WebControls.DetailsView.PageIndexChanging> event. It is generally used by control developers when extending the <xref:System.Web.UI.WebControls.DetailsView> class.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.DetailsView.OnPageIndexChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -4247,7 +4247,7 @@
   
  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.DetailsView> control. This event is often used to synchronize a <xref:System.Web.UI.WebControls.DetailsView> control with a <xref:System.Web.UI.WebControls.GridView> control or to set the behavior of the <xref:System.Web.UI.WebControls.DetailsView> control after a paging operation.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -4288,7 +4288,7 @@
   
  A <xref:System.Web.UI.WebControls.DetailsViewPageEventArgs> object is passed to the event handler, which allows you to determine the index of the page selected by the user and to indicate that the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.DetailsViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.DetailsViewPageEventArgs> object to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about handling events, see [NIB: Consuming Events](https://msdn.microsoft.com/library/2ccyd347(v=vs.110).aspx).  
   
    
   
@@ -4778,7 +4778,7 @@
 ## Remarks  
  Use the <xref:System.Web.UI.WebControls.DetailsView.SelectedValue%2A> property to determine the data key value for the current record. To retrieve the actual <xref:System.Web.UI.WebControls.DataKey?displayProperty=fullName> object that represents the data key for the record, use the <xref:System.Web.UI.WebControls.DetailsView.DataKey%2A> property.  
   
- This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](http://msdn.microsoft.com/library/88622d04-2989-484e-93fe-594cd98dcf5f).  
+ This property is the default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time. For more information, see <xref:System.Web.UI.ControlValuePropertyAttribute>, <xref:System.Web.UI.WebControls.ControlParameter>, and [Using Parameters with Data Source Controls for Filtering](https://msdn.microsoft.com/library/xt50s8kz.aspx).  
   
    
   

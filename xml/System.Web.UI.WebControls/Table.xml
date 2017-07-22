@@ -54,11 +54,11 @@
  It is important to remember that any programmatic addition or modification of table rows or cells will not persist across posts to the server. This is because table rows and cells are controls of their own, and not properties of the <xref:System.Web.UI.WebControls.Table> control. To persist any changes to the table, rows and cells must be reconstructed after each postback. In fact, if substantial modifications are expected, it is recommended that a <xref:System.Web.UI.WebControls.DataList>, <xref:System.Web.UI.WebControls.DataGrid>, or <xref:System.Web.UI.WebControls.GridView> control be used instead of the <xref:System.Web.UI.WebControls.Table> control. As a result, the <xref:System.Web.UI.WebControls.Table> class is primarily used by control developers.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](https://msdn.microsoft.com/library/7kh55542.aspx).  
   
 <a name="accessibility"></a>   
 ## Accessibility  
- For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="declarative_syntax"></a>   
 ## Declarative Syntax  
@@ -521,7 +521,7 @@
  The following code example demonstrates how to create a table at design time. The table contains two rows of two cells each.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Table Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/sourcevb.aspx#1)]  -->  
@@ -665,7 +665,7 @@
   
  Additional accessibility support for the <xref:System.Web.UI.WebControls.Table> control is provided by the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property. Use the <xref:System.Web.UI.WebControls.Table.CaptionAlign%2A> property to specify the alignment of the HTML caption element in a <xref:System.Web.UI.WebControls.Table> control.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
  ]]></format>
         </remarks>
@@ -894,7 +894,7 @@
  The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Table.GridLines%2A> property to specify the grid line style.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Table.GridLines Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table.GridLines Example/CS/sourcecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Table.GridLines Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table.GridLines Example/VB/sourcevb.aspx#1)]  -->  
@@ -1085,7 +1085,7 @@
  The following example demonstrates how use the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection to construct a table programmatically. Creating a table dynamically consists of three steps. First, create <xref:System.Web.UI.WebControls.TableCell> objects to represent the cells in a row. Content for the cells is added by either setting the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property or by adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.TableCell>. Next, create a <xref:System.Web.UI.WebControls.TableRow> to represent a row in the table. Add the <xref:System.Web.UI.WebControls.TableCell> objects created earlier to the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> collection of the <xref:System.Web.UI.WebControls.TableRow>. Finally, add the <xref:System.Web.UI.WebControls.TableRow> to the <xref:System.Web.UI.WebControls.Table.Rows%2A> collection of the <xref:System.Web.UI.WebControls.Table> control. Repeat this process for each row in the table.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an. aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an. aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[Classic Table Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Table Example/CS/source2cs.aspx#2)]  -->
  <!-- TODO: review snippet reference [!code-vb[Classic Table Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Table Example/VB/source2vb.aspx#2)]  -->  

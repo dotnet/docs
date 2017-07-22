@@ -41,5 +41,5 @@ The application is attempting to use the `VbStrConv` enumeration members `Wide` 
   
 ## See Also  
  <xref:System.Globalization>   
- [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
+ [NOTINBUILD VbStrConv Enumeration](https://msdn.microsoft.com/library/3a1cfsz3(v=vs.90).aspx)   
  [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

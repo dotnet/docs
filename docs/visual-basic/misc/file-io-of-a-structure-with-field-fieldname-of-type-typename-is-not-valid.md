@@ -40,5 +40,5 @@ The structure you are attempting to write to a file contains an unsupported type
 -   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
 ## See Also  
- [My.Computer.FileSystem.WriteAllBytes Method](http://msdn.microsoft.com/en-us/b1a24dc1-eac8-4e22-8ffa-cc3bacbaf826)   
+ [My.Computer.FileSystem.WriteAllBytes Method](https://msdn.microsoft.com/library/w207ws6z(v=vs.90).aspx)   
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

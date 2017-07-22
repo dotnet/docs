@@ -58,7 +58,7 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The first part of this code example is the user control that enables you to change display modes on the page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables you to change display modes on the page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_DeclarativeCatalogPart_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Overview/CS/DisplayModeMenuCS.ascx#7)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_DeclarativeCatalogPart_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Overview/VB/DisplayModeMenuVB.ascx#7)]  -->  
@@ -70,7 +70,7 @@
   
  The third part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Notice that some properties on these controls are marked with the `WebBrowsable` attribute. This enables the <xref:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart> control to dynamically generate the user interface (UI) for a user to edit those properties when the controls are in edit mode. The properties are also marked with a `WebDisplayName` attribute, to specify the text of the label that appears next to each control in the editing UI.  
   
- For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  [!code-csharp[WebParts_DeclarativeCatalogPart_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Overview/CS/userinfowebpart.cs#6)]
  [!code-vb[WebParts_DeclarativeCatalogPart_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Overview/VB/userinfowebpart.vb#6)]  
@@ -141,7 +141,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.AccessKey%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -183,7 +183,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -225,7 +225,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.BackImageUrl%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -267,7 +267,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -309,7 +309,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -351,7 +351,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -396,7 +396,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -438,7 +438,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -480,7 +480,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.Direction%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -522,7 +522,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -567,7 +567,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -610,7 +610,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.Font%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -652,7 +652,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -695,12 +695,12 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_DeclarativeCatalogPart_Get#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/CS/DisplayModeMenuCS.ascx#7)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_DeclarativeCatalogPart_Get#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/VB/DisplayModeMenuVB.ascx#7)]  -->  
   
- The second part of the code example is the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  [!code-csharp[WebParts_DeclarativeCatalogPart_Get#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/CS/userinfowebpart.cs#6)]
  [!code-vb[WebParts_DeclarativeCatalogPart_Get#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/VB/userinfowebpart.vb#6)]  
@@ -754,12 +754,12 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_DeclarativeCatalogPart_Get#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/CS/DisplayModeMenuCS.ascx#7)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_DeclarativeCatalogPart_Get#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/VB/DisplayModeMenuVB.ascx#7)]  -->  
   
- The second part of the code example is the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  [!code-csharp[WebParts_DeclarativeCatalogPart_Get#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/CS/userinfowebpart.cs#6)]
  [!code-vb[WebParts_DeclarativeCatalogPart_Get#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_Get/VB/userinfowebpart.vb#6)]  
@@ -815,7 +815,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.GroupingText%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -857,7 +857,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.Height%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -899,7 +899,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.HorizontalAlign%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -962,7 +962,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -1007,7 +1007,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.SkinID%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -1050,7 +1050,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -1127,7 +1127,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.ToolTip%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -1169,7 +1169,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.Control.Visible%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -1212,7 +1212,7 @@
   
  The <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart.WebPartsListUserControlPath%2A> property can be useful because it provides a way to package and reuse a set of available controls across many different pages or sites. Rather than manually declaring each control in a catalog for every page that wants to provide a catalog, developers can use this property to point to a user control that references an entire set of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Also, the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart.WebPartsListUserControlPath%2A> property can be used along with <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that are explicitly declared within an `<asp:declarativecatalogpart>` element on a Web page.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
    
   
@@ -1229,12 +1229,12 @@
   
 -   An explanation of how the example works when you load the page in a browser.  
   
- The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_DeclarativeCatalogPart_WebPartsList#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_WebPartsList/CS/DisplayModeMenuCS.ascx#7)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_DeclarativeCatalogPart_WebPartsList#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_WebPartsList/VB/DisplayModeMenuVB.ascx#7)]  -->  
   
- The second part of the code example is the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The second part of the code example is the source code for the two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  [!code-csharp[WebParts_DeclarativeCatalogPart_WebPartsList#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_WebPartsList/CS/userinfowebpart.cs#6)]
  [!code-vb[WebParts_DeclarativeCatalogPart_WebPartsList#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_DeclarativeCatalogPart_WebPartsList/VB/userinfowebpart.vb#6)]  
@@ -1340,7 +1340,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.WebControl.Width%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>
@@ -1382,7 +1382,7 @@
   
  If you want to use this property, you need to create a custom class that inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class. The custom class can either use the inherited <xref:System.Web.UI.WebControls.Panel.Wrap%2A> property as it is, or override it and change its behavior.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>

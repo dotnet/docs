@@ -106,4 +106,4 @@ In this task, you will create a sample data service that uses [!INCLUDE[ssAstori
  [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)  
   
 ## See Also  
- [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/en-us/91076853-0881-421b-837a-f582f36be527)
+ [ADO.NET Entity Data Model  Tools](https://msdn.microsoft.com/library/bb399249(v=vs.110).aspx)

@@ -80,11 +80,11 @@
  Although binding to a data source is not supported for the <xref:System.Web.UI.WebControls.Calendar> control, you can modify the content and formatting of the individual date cells. Before the <xref:System.Web.UI.WebControls.Calendar> control is displayed on the Web page, it creates and assembles the components that make up the control. The <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised when each date cell in the <xref:System.Web.UI.WebControls.Calendar> control is created. You can control the contents and formatting of a date cell as it is created by providing code in the event handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event. For more information on customizing the contents of a date cell, see <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A>.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.WebControls.Calendar> control renders ECMAScript (JScript, JavaScript) to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](http://msdn.microsoft.com/library/13edb6b9-2dea-43c6-b8c1-a47207de19aa).  
+>  The <xref:System.Web.UI.WebControls.Calendar> control renders ECMAScript (JScript, JavaScript) to the client browser. The client browser must have ECMAScript enabled for this control to function properly. For more information on client script, see [Client Script in ASP.NET Web Pages](https://msdn.microsoft.com/library/3hc29e2a.aspx).  
   
 <a name="Accessibility"></a>   
 ## Accessibility  
- The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+ The markup rendered by default for this control might not conform to accessibility standards. For details about accessibility support for this control, see [ASP.NET Controls and Accessibility](https://msdn.microsoft.com/library/ms227996.aspx).  
   
 <a name="DeclarativeSyntax"></a>   
 ## Declarative Syntax  
@@ -238,7 +238,7 @@
 ## Remarks  
  A table caption is used to describe the nature of the table in one to three sentences. Use the <xref:System.Web.UI.WebControls.Calendar.CaptionAlign%2A> property to align the caption with the calendar.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -549,7 +549,7 @@
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=fullName>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
    
   
@@ -761,7 +761,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property is set to `true`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -903,7 +903,7 @@
 > [!NOTE]
 >  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can only add static controls, such as <xref:System.Web.UI.LiteralControl?displayProperty=fullName>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnDayRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -947,7 +947,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](https://msdn.microsoft.com/library/wkzf914z(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnPreRender%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -990,7 +990,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Calendar.SelectionChanged> event is raised when the user selects a day, a week, or an entire month by clicking the date selector controls.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnSelectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1038,7 +1038,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised when the user clicks the next or previous month navigation elements on the title section.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
  The <xref:System.Web.UI.WebControls.Calendar.OnVisibleMonthChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -1145,7 +1145,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.ShowNextPrevMonth%2A> property is set to `true`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1414,7 +1414,7 @@
 ## Remarks  
  This event is raised when the user selects a day, a week, or an entire month by clicking the date selector controls.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
    
   
@@ -1513,7 +1513,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeekMonth`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1609,7 +1609,7 @@
   
  This property applies only if the <xref:System.Web.UI.WebControls.Calendar.SelectionMode%2A> property is set to `CalendarSelectionMode.DayWeek` or `CalendarSelectionMode.DayWeekMonth`.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -2152,7 +2152,7 @@
 ## Remarks  
  This event is raised when the user clicks the next or previous month navigation elements on the title heading.  
   
- For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+ For more information about handling events, see [NIB: Events and Delegates](https://msdn.microsoft.com/library/17sde2xt(v=vs.110).aspx).  
   
    
   

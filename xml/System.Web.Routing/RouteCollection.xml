@@ -36,7 +36,7 @@
   
  You use the <xref:System.Web.Routing.RouteCollection.GetReadLock%2A> method and the <xref:System.Web.Routing.RouteCollection.GetWriteLock%2A> method to make sure that you interact with the collection without conflicts from other processes.  
   
- For more information about how to add a route to a route collection, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+ For more information about how to add a route to a route collection, see [ASP.NET Routing](https://msdn.microsoft.com/library/cc668201.aspx).  
   
  ]]></format>
     </remarks>
@@ -99,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Routing.RouteCollection.Add%2A> method enables you to define a name for a route when you add it to the route collection. By defining a name for the route, you can specify a particular route to use when you use routing to construct a URL. Specifying a particular route is important when more than one route matches the values that you pass to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. If you do not specify a named route, ASP.NET routing will use the first route in the collection that matches the values. For more information, see [How to: Construct URLs from Routes](http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
+ The <xref:System.Web.Routing.RouteCollection.Add%2A> method enables you to define a name for a route when you add it to the route collection. By defining a name for the route, you can specify a particular route to use when you use routing to construct a URL. Specifying a particular route is important when more than one route matches the values that you pass to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method. If you do not specify a named route, ASP.NET routing will use the first route in the collection that matches the values. For more information, see [How to: Construct URLs from Routes](https://msdn.microsoft.com/library/cc668176.aspx).  
   
  A name can be used only one time in the <xref:System.Web.Routing.RouteCollection> object.  
   
@@ -533,7 +533,7 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
    
   
 ## Examples  
- The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678).  
+ The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](https://msdn.microsoft.com/library/cc668177.aspx).  
   
  [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#122)]
  [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#122)]  

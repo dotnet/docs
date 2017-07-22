@@ -138,7 +138,7 @@ The .NET Framework tools make it easier for you to create, deploy, and manage ap
  Helps you localize user interface (UI) resources (.resx or .resources files) that are used by Windows Forms. You can translate strings, and then size, move, and hide controls to accommodate the localized strings.  
   
 ## Related Sections  
- [Tools](http://msdn.microsoft.com/library/f533241c-317c-445e-88ca-c80c8d078fca)  
+ [Tools](https://msdn.microsoft.com/library/ms742404(v=vs.110).aspx)  
  Includes tools such as the isXPS Conformance tool (isXPS.exe) and performance profiling tools.  
   
  [Windows Communication Foundation Tools](../../../docs/framework/wcf/tools.md)  

@@ -43,5 +43,5 @@ An attempt was made to write an entry to an event log where the specified source
   
 ## See Also  
  [My.Application.Log Object](../../visual-basic/language-reference/objects/my-application-log-object.md)   
- [How to: Remove an Event Source](http://msdn.microsoft.com/en-us/bc66c900-4b8a-426a-b8e2-17031a20167e)   
- [How to: Add Your Application as a Source of Event Log Entries](http://msdn.microsoft.com/en-us/948ff920-a739-4e66-a191-ee951512d42c)
+ [How to: Remove an Event Source](https://msdn.microsoft.com/library/k57466fc(v=vs.100).aspx)   
+ [How to: Add Your Application as a Source of Event Log Entries](https://msdn.microsoft.com/library/xz73e171(v=vs.100).aspx)

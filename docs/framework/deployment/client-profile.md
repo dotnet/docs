@@ -38,6 +38,6 @@ The .NET Client Profile is a subset of the .NET Framework, which was provided wi
   
 ## See Also  
  [.NET Framework Client Profile (.NET Framework 4)](http://msdn.microsoft.com/library/cc656912\(v=vs.100\).aspx)   
- [Visual Studio Multi-Targeting Overview](http://msdn.microsoft.com/library/b1702c33-0672-4ebc-b779-2b324d6ea880)   
- [Troubleshooting .NET Framework Targeting Errors](http://msdn.microsoft.com/library/830e3e45-9a93-4279-a249-75b84599aefb)   
+ [Visual Studio Multi-Targeting Overview](https://msdn.microsoft.com/library/bb398197.aspx)   
+ [Troubleshooting .NET Framework Targeting Errors](https://msdn.microsoft.com/library/cc668079.aspx)   
  [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework)

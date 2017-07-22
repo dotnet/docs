@@ -35,27 +35,27 @@ COM interop provides support for both using COM objects from managed code and ex
  This section describes the processes for customizing interop wrappers when you can (or must) supply the marshaler with additional type information.  
   
 ## In This Section  
- [COM Data Types](http://msdn.microsoft.com/en-us/f93ae35d-a416-4218-8700-c8218cc90061)  
+ [COM Data Types](https://msdn.microsoft.com/library/sak564ww.aspx)  
  Provides corresponding managed and unmanaged data types.  
   
- [Customizing COM Callable Wrappers](http://msdn.microsoft.com/en-us/825177d3-4b2c-4723-82be-ce6ca2c34ace)  
+ [Customizing COM Callable Wrappers](https://msdn.microsoft.com/library/3bwc828w.aspx)  
  Describes how to explicitly marshal data types using the **MarshalAsAttribute** attribute at design time.  
   
- [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/en-us/4652beaf-77d0-4f37-9687-ca193288c0be)  
+ [Customizing Runtime Callable Wrappers](https://msdn.microsoft.com/library/e753eftz.aspx)  
  Describes how to adjust the marshaling behavior of types in an interop assembly and how to define COM types manually.  
   
  [How to: Migrate Managed-Code DCOM to WCF](../../../docs/framework/interop/how-to-migrate-managed-code-dcom-to-wcf.md)  
  Described how to migrate managed DCOM code to WCF for the most secure solution.  
   
 ## Related Sections  
- [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)  
+ [Advanced COM Interoperability](https://msdn.microsoft.com/library/bd9cdfyx.aspx)  
  Provides links to more information about incorporating COM components into your .NET Framework application.  
   
- [Assembly to Type Library Conversion Summary](http://msdn.microsoft.com/en-us/3a37eefb-a76c-4000-9080-7dbbf66a4896)  
+ [Assembly to Type Library Conversion Summary](https://msdn.microsoft.com/library/xk1120c3.aspx)  
  Describes the assembly to type library export conversion process.  
   
- [Type Library to Assembly Conversion Summary](http://msdn.microsoft.com/en-us/bf3f90c5-4770-4ab8-895c-3ba1055cc958)  
+ [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/k83zzh38.aspx)  
  Describes the type library to assembly import conversion process.  
   
- [Interoperating Using Generic Types](http://msdn.microsoft.com/en-us/26b88e03-085b-4b53-94ba-a5a9c709ce58)  
+ [Interoperating Using Generic Types](https://msdn.microsoft.com/library/ms229590.aspx)  
  Describes which actions are supported when using generic types for COM interoperability.

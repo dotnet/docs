@@ -532,7 +532,7 @@
 ## Remarks  
  The same session ID might be returned for objects in the same application, but this method will never return the same session ID for two objects in different remote applications.  
   
- For more information about identifying sessions and session IDs, see ASP.Net [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ For more information about identifying sessions and session IDs, see ASP.Net [ASP.NET Session State Overview](https://msdn.microsoft.com/library/ms178581.aspx).  
   
    
   
@@ -600,7 +600,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about application domains, see [Application Domains](http://msdn.microsoft.com/en-us/39e57d07-a740-4cd4-ae82-e119ea3856c1).  
+ For information about application domains, see [Application Domains](https://msdn.microsoft.com/library/cxk374d9(v=vs.90).aspx).  
   
    
   

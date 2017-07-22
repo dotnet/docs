@@ -39,6 +39,6 @@ The parameter `TargetFilePath` specifies an existing directory but must specify 
   
 ## See Also  
  [How to: Move a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)   
- [How to: Move a Directory in Visual Basic](http://msdn.microsoft.com/en-us/0f26d1ef-c0a0-4445-8eb0-9b7d0490411c)   
+ [How to: Move a Directory in Visual Basic](https://msdn.microsoft.com/library/ct88d1f1(v=vs.100).aspx)   
  [How to: Rename a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)   
- [How to: Rename a Directory in Visual Basic](http://msdn.microsoft.com/en-us/780c7afc-a03c-4b01-865a-510fe331b1cc)
+ [How to: Rename a Directory in Visual Basic](https://msdn.microsoft.com/library/45we914z(v=vs.100).aspx)

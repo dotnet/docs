@@ -216,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f). This event is not relevant for this class. This event is not relevant for this class.  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/). This event is not relevant for this class. This event is not relevant for this class.  
   
  ]]></format>
         </remarks>
@@ -281,7 +281,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f). This event is not relevant for this class.  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/). This event is not relevant for this class.  
   
  ]]></format>
         </remarks>
@@ -399,7 +399,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://msdn.microsoft.com/library/ddae83kx.aspx).</para>
         </block>
       </Docs>
     </Member>
@@ -480,7 +480,7 @@
 ## Remarks  
  You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw>.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   
@@ -642,7 +642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.StatusBar.OnDrawItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -684,7 +684,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
 > [!NOTE]
 >  When overriding <xref:System.Windows.Forms.StatusBar.OnHandleCreated%2A> in a derived class, be sure to call the base class's <xref:System.Windows.Forms.Control.OnHandleCreated%2A> method.  
@@ -715,7 +715,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -746,7 +746,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -777,7 +777,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -808,7 +808,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.StatusBar.OnPanelClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -841,7 +841,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For an overview, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Raising an event invokes the event handler through a delegate. For an overview, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
  ]]></format>
         </remarks>
@@ -895,7 +895,7 @@
 ## Remarks  
  You can use this event to perform tasks when a panel within a <xref:System.Windows.Forms.StatusBar> control is clicked. The data provided to the event through the <xref:System.Windows.Forms.StatusBarPanelClickEventArgs> passed as a parameter to the event handler enables you to determine the <xref:System.Windows.Forms.StatusBarPanel> that was clicked by the user in order to perform tasks on the selected panel.  
   
- For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ For more information about handling events, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/).  
   
    
   

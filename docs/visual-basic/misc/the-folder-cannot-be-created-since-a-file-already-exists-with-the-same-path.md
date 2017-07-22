@@ -41,8 +41,8 @@ An attempt has been made to create a directory, but a file already exists with t
   
 ## See Also  
  [How to: Create a Directory](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-directory.md)   
- [How to: Rename a Directory in Visual Basic](http://msdn.microsoft.com/en-us/780c7afc-a03c-4b01-865a-510fe331b1cc)   
+ [How to: Rename a Directory in Visual Basic](https://msdn.microsoft.com/library/45we914z(v=vs.100).aspx)   
  [My.Computer.FileSystem Object](../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)   
- [My.Computer.FileSystem.CreateDirectory Method](http://msdn.microsoft.com/en-us/2c1688d2-a60c-4e68-9a1a-4006917b28e1)   
- [My.Computer.FileSystem.RenameDirectory Method](http://msdn.microsoft.com/en-us/14700cb3-9d29-46e2-af8d-61970d7e251b)   
+ [My.Computer.FileSystem.CreateDirectory Method](https://msdn.microsoft.com/library/2wwkaadb(v=vs.90).aspx)   
+ [My.Computer.FileSystem.RenameDirectory Method](https://msdn.microsoft.com/library/w56f9y8d(v=vs.90).aspx)   
  [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

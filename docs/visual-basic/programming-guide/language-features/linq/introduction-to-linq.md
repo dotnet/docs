@@ -84,7 +84,7 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
   
 |Provider|Description|  
 |---|---|  
-|LINQ to Objects|The LINQ to Objects provider enables you to query in-memory collections and arrays. If an object supports either the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, the LINQ to Objects provider enables you to query it.<br /><br /> You can enable the LINQ to Objects provider by importing the <xref:System.Linq> namespace, which is imported by default for all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] projects.<br /><br /> For more information about the LINQ to Objects provider, see [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9).|  
+|LINQ to Objects|The LINQ to Objects provider enables you to query in-memory collections and arrays. If an object supports either the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, the LINQ to Objects provider enables you to query it.<br /><br /> You can enable the LINQ to Objects provider by importing the <xref:System.Linq> namespace, which is imported by default for all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] projects.<br /><br /> For more information about the LINQ to Objects provider, see [LINQ to Objects](https://msdn.microsoft.com/library/bb397919.aspx).|  
 |LINQ to SQL|The LINQ to SQL provider enables you to query and modify data in a SQL Server database. This makes it easy to map the object model for an application to the tables and objects in a database.<br /><br /> [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] makes it easier to work with LINQ to SQL by including the Object Relational Designer (O/R Designer). This designer is used to create an object model in an application that maps to objects in a database. The O/R Designer also provides functionality to map stored procedures and functions to the <xref:System.Data.Linq.DataContext> object, which manages communication with the database and stores state for optimistic concurrency checks.<br /><br /> For more information about the LINQ to SQL provider, see [LINQ to SQL](https://msdn.microsoft.com/library/bb386976). For more information about the Object Relational Designer, see [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).|  
 |LINQ to XML|The LINQ to XML provider enables you to query and modify XML. You can modify in-memory XML, or you can load XML from and save XML to a file.<br /><br /> Additionally, the LINQ to XML provider enables XML literals and XML axis properties that enable you to write XML directly in your [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code. For more information, see [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md).|  
 |LINQ to DataSet|The LINQ to DataSet provider enables you to query and update data in an [!INCLUDE[vstecado](~/includes/vstecado-md.md)] dataset. You can add the power of LINQ to applications that use datasets in order to simplify and extend your capabilities for querying, aggregating, and updating the data in your dataset.<br /><br /> For more information, see [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md).|  
@@ -140,7 +140,7 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
   
  [!code-vb[VbVbalrIntroToLINQ#22](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/introduction-to-linq_23.vb)]  
   
- For details about additional LINQ capabilities, see [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
+ For details about additional LINQ capabilities, see [Standard Query Operators Overview](https://msdn.microsoft.com/library/bb397896.aspx).  
   
 ##  <a name="ConnectingToADatabase"></a> Connecting to a Database by Using LINQ to SQL  
  In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you identify the SQL Server database objects, such as tables, views, and stored procedures, that you want to access by using a LINQ to SQL file. A LINQ to SQL file has an extension of .dbml.  
@@ -186,11 +186,11 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
 |---|---|  
 |[XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)|Describes the XML features in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] that can be queried and that enable you to include XML as first-class data objects in your [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.|  
 |[Queries](../../../../visual-basic/language-reference/queries/queries.md)|Provides reference information about the query clauses that are available in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].|  
-|[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)|Includes general information, programming guidance, and samples for LINQ.|  
+|[LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/bb397926.aspx)|Includes general information, programming guidance, and samples for LINQ.|  
 |[LINQ to SQL](https://msdn.microsoft.com/library/bb386976)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
-|[LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)|Includes general information, programming guidance, and samples for LINQ to Objects.|  
-|[LINQ to ADO.NET (Portal Page)](http://msdn.microsoft.com/library/dd7d3c6a-ff98-47e9-a1a7-2d4cfc42d150)|Includes links to general information, programming guidance, and samples for LINQ to [!INCLUDE[vstecado](~/includes/vstecado-md.md)].|  
-|[LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)|Includes general information, programming guidance, and samples for LINQ to XML.|  
+|[LINQ to Objects](https://msdn.microsoft.com/library/bb397919.aspx)|Includes general information, programming guidance, and samples for LINQ to Objects.|  
+|[LINQ to ADO.NET (Portal Page)](https://msdn.microsoft.com/library/bb397942.aspx)|Includes links to general information, programming guidance, and samples for LINQ to [!INCLUDE[vstecado](~/includes/vstecado-md.md)].|  
+|[LINQ to XML](https://msdn.microsoft.com/library/bb387098.aspx)|Includes general information, programming guidance, and samples for LINQ to XML.|  
   
 ##  <a name="HowToAndWalkthroughTopics"></a> How To and Walkthrough Topics  
  [How to: Query a Database](how-to-query-a-database-by-using-linq.md)  
@@ -209,13 +209,13 @@ Language-Integrated Query (LINQ) adds query capabilities to [!INCLUDE[vbprvb](~/
   
  [How to: Find the Minimum or Maximum Value in a Query Result](how-to-find-the-minimum-or-maximum-value-in-a-query-result.md)  
   
- [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](http://msdn.microsoft.com/library/e88224ab-ff61-4a3a-b6b8-6f3694546cac)  
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](https://msdn.microsoft.com/library/bb384575.aspx)  
   
 ## Featured Book Chapters  
  [Chapter 17: LINQ](http://go.microsoft.com/fwlink/?LinkId=195277) in [Programming Visual Basic 2008](http://go.microsoft.com/fwlink/?LinkId=195383)  
   
 ## See Also  
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/bb397926.aspx)   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)   
  [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  

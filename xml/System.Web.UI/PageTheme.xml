@@ -23,7 +23,7 @@
 ## Remarks  
  Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used by the ASP.NET parser and runtime to apply style sheet elements that are defined in ASP.NET themes and control skins files to pages and specific types of controls.  
   
- Page developers enable (or disable) page themes using the <xref:System.Web.UI.Page.Theme%2A> and <xref:System.Web.UI.Control.EnableTheming%2A> properties. For more information about page themes, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ Page developers enable (or disable) page themes using the <xref:System.Web.UI.Page.Theme%2A> and <xref:System.Web.UI.Control.EnableTheming%2A> properties. For more information about page themes, see [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
     </remarks>

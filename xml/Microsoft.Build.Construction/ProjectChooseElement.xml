@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the [Choose Element (MSBuild)](http://msdn.microsoft.com/library/7b8b025a-d944-4f5c-9018-c89fc2ef146d) in an MSBuild project.</summary>
+    <summary>Represents the [Choose Element (MSBuild)](https://msdn.microsoft.com/library/ms164282.aspx) in an MSBuild project.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -76,7 +76,7 @@
         <ReturnType>Microsoft.Build.Construction.ProjectOtherwiseElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets any [Otherwise Element (MSBuild)](http://msdn.microsoft.com/library/de3997e9-1595-4263-a886-95530b56a319) child.</summary>
+        <summary>Gets any [Otherwise Element (MSBuild)](https://msdn.microsoft.com/library/ms164286.aspx) child.</summary>
         <value>Returns any Otherwise child. Returns null if no Otherwise child exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectWhenElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets all the [When Element (MSBuild)](http://msdn.microsoft.com/library/eb27de6f-4e71-4e87-87e2-d93f7bf5899c) children.</summary>
+        <summary>Gets all the [When Element (MSBuild)](https://msdn.microsoft.com/library/ms164289.aspx) children.</summary>
         <value>Returns all the When children. There is always at least one When child.</value>
         <remarks>To be added.</remarks>
       </Docs>

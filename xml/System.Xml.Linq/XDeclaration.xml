@@ -29,7 +29,7 @@
 ## Remarks  
  An XML declaration is used to declare the XML version, the encoding, and whether or not the XML document is standalone. This class represents the XML concept of an XML declaration.  
   
- Just as in the XML standard, declarations are associated with a document. When you create a document, you have the option to specify the declaration for the document. The <xref:System.Xml.Linq.XDocument> class contains the <xref:System.Xml.Linq.XDocument.Declaration%2A> property, which allows you to set or get the declaration. For information about how to serialize an XML tree with an XML declaration, see [Serializing with an XML Declaration](http://msdn.microsoft.com/library/30f1b564-62b5-4e5d-9c36-884e51113feb).  
+ Just as in the XML standard, declarations are associated with a document. When you create a document, you have the option to specify the declaration for the document. The <xref:System.Xml.Linq.XDocument> class contains the <xref:System.Xml.Linq.XDocument.Declaration%2A> property, which allows you to set or get the declaration. For information about how to serialize an XML tree with an XML declaration, see [Serializing with an XML Declaration](https://msdn.microsoft.com/library/bb387027.aspx).  
   
  ]]></format>
     </remarks>

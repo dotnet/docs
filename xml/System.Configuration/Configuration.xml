@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Configuration settings are stored in a hierarchy of configuration files. The <xref:System.Configuration.Configuration> class instance represents the merged view of the configuration settings from all of the configuration files that apply to a specific physical entity, such as a computer, or to a logical entity, such as an application or a Web site. The logical entity can exist on the local computer or on a remote server. For information about configuration files, see [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f) and [ASP.NET Configuration Files](http://msdn.microsoft.com/library/01505090-9114-41a7-93ca-068e2283ed3d).  
+ Configuration settings are stored in a hierarchy of configuration files. The <xref:System.Configuration.Configuration> class instance represents the merged view of the configuration settings from all of the configuration files that apply to a specific physical entity, such as a computer, or to a logical entity, such as an application or a Web site. The logical entity can exist on the local computer or on a remote server. For information about configuration files, see [Configuring Apps](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f) and [ASP.NET Configuration Files](https://msdn.microsoft.com/library/ms178684.aspx).  
   
  When no configuration file exists for a specified entity, the <xref:System.Configuration.Configuration> object represents the default configuration settings as defined by the Machine.config file.  
   
@@ -41,7 +41,7 @@
  The names of the methods that create configuration files begin with "Save".  
   
 > [!NOTE]
->  To enable access to configuration settings on a remote computer, use the Aspnet_regiis command-line tool. For more information about this tool, see [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](http://msdn.microsoft.com/library/6491c41e-e2b0-481f-9863-db3614d5f96b). For information about creating and accessing custom configuration settings other than the intrinsic sections included in the .NET Framework, refer to <xref:System.Configuration.ConfigurationSection>.  
+>  To enable access to configuration settings on a remote computer, use the Aspnet_regiis command-line tool. For more information about this tool, see [ASP.NET IIS Registration Tool (Aspnet_regiis.exe)](https://msdn.microsoft.com/library/k6h9cz8h.aspx). For information about creating and accessing custom configuration settings other than the intrinsic sections included in the .NET Framework, refer to <xref:System.Configuration.ConfigurationSection>.  
   
    
   

@@ -32,7 +32,7 @@ manager: "wpickett"
  The get accessor of `SlowestDP` waits for 5 seconds before returning the value of the `_slowestDP` data member.  
   
 > [!NOTE]
->  This example is for demonstration purposes only. The [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. For more information, see [NIB: Choosing Between Properties and Methods](http://msdn.microsoft.com/en-us/55825e8f-7e2e-448a-9505-7217cc91b1af).  
+>  This example is for demonstration purposes only. The [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. For more information, see [NIB: Choosing Between Properties and Methods](https://msdn.microsoft.com/library/ms229054(v=vs.110).aspx).  
   
  [!code-csharp[PriorityBinding#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PriorityBinding/CSharp/Window1.xaml.cs#1)]
  [!code-vb[PriorityBinding#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PriorityBinding/VisualBasic/AsyncDataSource.vb#1)]  

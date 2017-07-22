@@ -24,7 +24,7 @@ manager: "jhubbard"
   
 -   Aggregate queries typically return a number instead of a collection.  
   
-     For more information, see [Aggregation Operations](http://msdn.microsoft.com/library/36d97c83-5de5-457d-971d-10a69365e7c4).  
+     For more information, see [Aggregation Operations](https://msdn.microsoft.com/library/bb546138.aspx).  
   
 -   You cannot call aggregates against anonymous types.  
   

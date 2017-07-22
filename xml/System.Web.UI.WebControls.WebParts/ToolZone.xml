@@ -238,7 +238,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. Specifically, it demonstrates how to change the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property for UI elements in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/displaymodemenucs.ascx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/displaymodemenuvb.ascx#5)]  -->  
@@ -292,7 +292,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to enable and disable the close verb in the header of an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/displaymodemenucs.ascx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/displaymodemenuvb.ascx#5)]  -->  
@@ -348,7 +348,7 @@
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to change the width of the border around an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control by using this property.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/displaymodemenucs.ascx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/displaymodemenuvb.ascx#5)]  -->  
@@ -390,14 +390,14 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property is used to hold a set of instructions that are provided for end users when a particular <xref:System.Web.UI.WebControls.WebParts.ToolZone> control is displayed.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
 ## Examples  
  The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to change the value of the instruction text that appears in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control by using this property.  
   
- The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/displaymodemenucs.ascx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/displaymodemenuvb.ascx#5)]  -->  
@@ -405,7 +405,7 @@
  The second part of the code example shows a partial class that contains the code to update the property programmatically in the `Button1_Click` method.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  [!code-csharp[WebParts_ToolZone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview.cs#2)]
  [!code-vb[WebParts_ToolZone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview.vb#2)]  
@@ -413,7 +413,7 @@
  The third part of the code example shows a Web page that contains two inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> controls: a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control and an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. Each <xref:System.Web.UI.WebControls.WebParts.ToolZone> control sets some properties in the declarative markup of the page.  
   
 > [!IMPORTANT]
->  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/w1sw53ds.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview_cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview_vb.aspx#1)]  -->  

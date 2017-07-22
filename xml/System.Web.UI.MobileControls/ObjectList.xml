@@ -55,7 +55,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Much of the behavior of the <xref:System.Web.UI.MobileControls.ObjectList>, including support for templated rendering through device template sets and internal pagination, is similar to the behavior of the <xref:System.Web.UI.MobileControls.List>. For more information, see the [Introduction to the ObjectList Control](http://msdn.microsoft.com/en-us/527ca783-0ff9-4247-b407-8e58d093faa9) or the [Pagination](http://msdn.microsoft.com/en-us/b4f4c4bc-226b-46ec-ae46-00497a32f4f2) documentation.  
+ Much of the behavior of the <xref:System.Web.UI.MobileControls.ObjectList>, including support for templated rendering through device template sets and internal pagination, is similar to the behavior of the <xref:System.Web.UI.MobileControls.List>. For more information, see the [Introduction to the ObjectList Control](http://msdn.microsoft.com/en-us/527ca783-0ff9-4247-b407-8e58d093faa9) or the [Pagination](https://msdn.microsoft.com/library/8ss4ds3k(v=vs.100).aspx) documentation.  
   
    
   
@@ -63,7 +63,7 @@
  The following code example demonstrates how to create an array of a user-defined class and then bind it to an <xref:System.Web.UI.MobileControls.ObjectList> object when the page loads. It also shows how the list and details views display the commands. For this example, there is also a button that displays a form with a list of all the fields using the <xref:System.Web.UI.MobileControls.ObjectList.AllFields%2A> property.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileObjectListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileObjectListSample/cs/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileObjectListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileObjectListSample/vb/Default.aspx#1)]  -->  
@@ -196,7 +196,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.ObjectList.AutoGenerateFields%2A> property to statically associate the fields with their collection in the Details view of an <xref:System.Web.UI.MobileControls.ObjectList> control.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileObjectListSample#5](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileObjectListSample/cs/Default2.aspx#5)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileObjectListSample#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileObjectListSample/vb/Default2.aspx#5)]  -->  
@@ -313,7 +313,7 @@
  The following code example demonstrates how to the use the <xref:System.Web.UI.MobileControls.ObjectList.CommandStyle%2A> property to set the style of an <xref:System.Web.UI.MobileControls.ObjectList> using a declarative <xref:System.Web.UI.MobileControls.DeviceSpecific> section to specify different <xref:System.Web.UI.MobileControls.ObjectList.CommandStyle%2A> settings for different devices.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileObjectListSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileObjectListSample/cs/Default.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileObjectListSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileObjectListSample/vb/Default.aspx#1)]  -->  
@@ -838,7 +838,7 @@
  The following code example demonstrates how to trap the <xref:System.Web.UI.MobileControls.ObjectList.ItemCommand> event. The <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property specifies what action to perform.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileObjectListSample#10](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileObjectListSample/cs/Default3.aspx#10)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileObjectListSample#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileObjectListSample/vb/Default3.aspx#10)]  -->  
@@ -1605,7 +1605,7 @@
  The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.ObjectList.ShowItemCommands> event to remove an item from the <xref:System.Web.UI.MobileControls.ObjectListCommandCollection> of the detail view of an <xref:System.Web.UI.MobileControls.ObjectList>. The item to remove is selected in the list view.  
   
 > [!NOTE]
->  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](https://msdn.microsoft.com/library/015103yb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[MobileObjectListSample#10](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileObjectListSample/cs/Default3.aspx#10)]  -->
  <!-- TODO: review snippet reference [!code-vb[MobileObjectListSample#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileObjectListSample/vb/Default3.aspx#10)]  -->  

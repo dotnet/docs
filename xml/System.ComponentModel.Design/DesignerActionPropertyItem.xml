@@ -29,12 +29,12 @@
 |Boolean value|The item is displayed using a binary UI, such as a check mark.|  
 |None of the above.|The item is displayed as a non-editable text string using the data type's <xref:System.Object.ToString%2A> method.|  
   
- All fundamental types, such as <xref:System.Boolean?displayProperty=fullName>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=fullName>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
+ All fundamental types, such as <xref:System.Boolean?displayProperty=fullName>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=fullName>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](https://msdn.microsoft.com/library/53c49eck.aspx).  
   
    
   
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](https://msdn.microsoft.com/library/ms171830.aspx).  
   
  [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
  [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
@@ -137,7 +137,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](https://msdn.microsoft.com/library/ms171830.aspx).  
   
  [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
  [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  

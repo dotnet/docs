@@ -88,7 +88,7 @@
  [!code-csharp[System.Boolean.Structure#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/format3.cs#5)]
  [!code-vb[System.Boolean.Structure#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/format3.vb#5)]  
   
- Optionally, you can use [resource files](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890) to define culture-specific Boolean strings.  
+ Optionally, you can use [resource files](https://docs.microsoft.com/dotnet/framework/resources/) to define culture-specific Boolean strings.  
   
 <a name="Converting"></a>   
 ## Converting to and from Boolean values  

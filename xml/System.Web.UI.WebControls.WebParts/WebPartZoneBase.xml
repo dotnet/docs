@@ -51,7 +51,7 @@
 ## Examples  
  The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class. The code shows how a derived class, <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, is used declaratively in a Web Parts page to contain <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The code example has four sections: the first three sections describe the code files, and the fourth explains how to run the code.  
   
- The first part of the code example is a user control that enables users to switch the page into different display modes. For more information on Web Parts display modes and a description of the code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ The first part of the code example is a user control that enables users to switch the page into different display modes. For more information on Web Parts display modes and a description of the code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/displaymodemenucs.ascx#10)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/displaymodemenuvb.ascx#10)]  -->  
@@ -129,7 +129,7 @@
   
  Although the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> property affects end users' ability to change the layout of a zone through the UI, it does not affect the ability to change the layout programmatically. For example, if <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange%2A> is set to `false`, users cannot close controls in the zone, but a developer could still call the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart%2A> method to close controls programmatically.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
    
   
@@ -531,7 +531,7 @@
 ## Examples  
  The following code example demonstrates a way to create a handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs> event by overriding the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add a custom verb to a derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
   
- The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  The first part of the code example is the source code for a simple control derived from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class.  
   
@@ -891,7 +891,7 @@
 ## Examples  
  The following code example demonstrates the declarative use of the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control. For the full code example, including the code-behind source file and the .aspx page that contains the zone in this code, see the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class overview.  
   
- Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property has a value assigned to it in the declarative markup. This value will appear in `WebPartZone2`, after you load the page into a browser, switch the page into design display mode, and drag the control that displays the date from `WebPartZone2` into `WebPartZone1`. For more information on changing display modes in a Web Parts page, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ Notice that the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText%2A> property has a value assigned to it in the declarative markup. This value will appear in `WebPartZone2`, after you load the page into a browser, switch the page into design display mode, and drag the control that displays the date from `WebPartZone2` into `WebPartZone1`. For more information on changing display modes in a Web Parts page, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/CS/webpartzonebase_overview_cs.aspx#3)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Overview/VB/webpartzonebase_overview_vb.aspx#3)]  -->  
@@ -1112,7 +1112,7 @@
   
  For the code example to work, in addition to the following code, you need a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. You can either use your own control, or use the code for the custom `TextDisplayWebPart` control found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
   
- This code example includes a user control to enable you to change display modes on a Web page. For more information about display modes and the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+ This code example includes a user control to enable you to change display modes on a Web page. For more information about display modes and the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](https://msdn.microsoft.com/library/bw5tctbb.aspx).  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/CS/displaymodemenucs.ascx#10)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartZoneBase_Verbs#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartZoneBase_Verbs/VB/displaymodemenuvb.ascx#10)]  -->  
@@ -1237,7 +1237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/75x4ha6s.aspx).  
   
  The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LoadViewState%2A> method overrides the base <xref:System.Web.UI.WebControls.WebParts.WebZone.LoadViewState%2A?displayProperty=fullName> method to load state for the verbs and the verbs menu in a zone derived from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class.  
   
@@ -1447,7 +1447,7 @@
 ## Remarks  
  If the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText%2A> property is assigned a value, the label appears alongside an image that represents the verbs drop-down menu in the title bar of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in a zone. If no value is assigned to the property, only the image appears on the menu.  
   
- The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](https://msdn.microsoft.com/library/c6zyy3s9.aspx).  
   
    
   
@@ -1782,7 +1782,7 @@
 ## Examples  
  The following code example demonstrates a way to create a handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs> event by overriding the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method to add a custom verb to a derived <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
   
- The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+ The code example contains two source files. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](https://msdn.microsoft.com/library/yhzc935f.aspx).  
   
  The first part of the code example is the source code for a simple control derived from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class.  
   
@@ -2325,7 +2325,7 @@
   
  You must assign a value to the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.ImageUrl%2A> property for each specific verb to cause an image to appear for that verb in its zone. If you do not provide the URL to an image, the verb's <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property defaults to <xref:System.Web.UI.WebControls.ButtonType.Link>.  
   
- This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](https://msdn.microsoft.com/library/ykzx33wh.aspx).  
   
  ]]></format>
         </remarks>

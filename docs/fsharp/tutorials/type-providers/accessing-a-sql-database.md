@@ -64,7 +64,7 @@ Next, you create an F# application project.
 
 1. Create a new F# Application project.
 
-2. Add references to [FSharp.Data.TypeProviders](https://msdn.microsoft.com/library/a858f859-047a-44ab-945b-8731d7a0e6e3), as well as `System.Data`, and `System.Data.Linq`.
+2. Add references to [FSharp.Data.TypeProviders](https://msdn.microsoft.com/visualfsharpdocs/conceptual/microsoft.fsharp.data.typeproviders-namespace-%5bfsharp%5d), as well as `System.Data`, and `System.Data.Linq`.
 
 3. Open the appropriate namespaces by adding the following lines of code to the top of your F# code file Program.fs.
 

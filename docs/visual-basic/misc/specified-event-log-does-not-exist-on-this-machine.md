@@ -38,5 +38,5 @@ An attempt has been made to access an event log that does not exist on this mach
 -   Check that you are supplying the correct file name and path.  
   
 ## See Also  
- [Administering Event Logs](http://msdn.microsoft.com/en-us/35f53238-bdd2-417b-acd8-2fd9f7397f18)   
+ [Administering Event Logs](https://msdn.microsoft.com/library/4f69axw4(v=vs.100).aspx)   
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

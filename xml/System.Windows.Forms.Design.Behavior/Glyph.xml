@@ -18,7 +18,7 @@
 ## Remarks  
  The sole purpose of a <xref:System.Windows.Forms.Design.Behavior.Glyph> is to paint and hit test. A <xref:System.Windows.Forms.Design.Behavior.Glyph> does not have a window handle (HWND), as it is rendered on the adorner window control of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. Each <xref:System.Windows.Forms.Design.Behavior.Glyph> can have a <xref:System.Windows.Forms.Design.Behavior.Behavior> associated with it. A successfully hit-tested <xref:System.Windows.Forms.Design.Behavior.Glyph> has the opportunity to push a new or different <xref:System.Windows.Forms.Design.Behavior.Behavior> onto the behavior stack of the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
   
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ For more information, see [Behavior Service Overview](https://msdn.microsoft.com/library/ms171826.aspx).  
   
    
   

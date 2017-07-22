@@ -21,7 +21,7 @@ This topic includes information about how to use the **Project Designer** when y
 
 
 ## Project Designer
-The **Project Designer** and its general use are described fully in the topic [Introduction to the Project Designer](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7) in the Visual Studio documentation. The **Project Designer** consists of several pages grouped by related functionality. The pages available for F# projects are mostly a subset of those available for other languages. The pages supported in F# are described in the following table. The pages that are not available relate to features that are not available in F#, or that are available only by changing a command-line option. The pages that are available in F# resemble the C# pages most closely, so a link is provided to the relevant C# **Project Designer** page.
+The **Project Designer** and its general use are described fully in the topic [Introduction to the Project Designer](https://msdn.microsoft.com/library/bb1aa8f1.aspx) in the Visual Studio documentation. The **Project Designer** consists of several pages grouped by related functionality. The pages available for F# projects are mostly a subset of those available for other languages. The pages supported in F# are described in the following table. The pages that are not available relate to features that are not available in F#, or that are available only by changing a command-line option. The pages that are available in F# resemble the C# pages most closely, so a link is provided to the relevant C# **Project Designer** page.
 
 
 
@@ -48,4 +48,4 @@ The following table summarizes settings that are specific to F#.
 
 [Compiler Options](../language-reference/compiler-options.md)
 
-[Introduction to the Project Designer](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+[Introduction to the Project Designer](https://msdn.microsoft.com/library/bb1aa8f1.aspx)

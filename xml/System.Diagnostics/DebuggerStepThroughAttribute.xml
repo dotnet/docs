@@ -37,7 +37,7 @@
 ## Remarks  
  This attribute is provided for use by source code debuggers; the common language runtime is not affected by it. For example, the Visual Studio debugger does not stop in a method that is marked with this attribute even if a breakpoint is set in the method.  
   
- The <xref:System.Diagnostics.DebuggerStepThroughAttribute> attribute affects the [Just My Code](http://msdn.microsoft.com/library/0f0df097-bbaf-46ad-9ad1-ef5f40435079) (JMC) feature of Visual Studio in the following ways:  
+ The <xref:System.Diagnostics.DebuggerStepThroughAttribute> attribute affects the [Just My Code](https://msdn.microsoft.com/library/dn457346.aspx) (JMC) feature of Visual Studio in the following ways:  
   
 -   If JMC is enabled, the Visual Studio debugger will not stop at a breakpoint in a method marked with the <xref:System.Diagnostics.DebuggerStepThroughAttribute> attribute.  
   
@@ -56,7 +56,7 @@
   
  This attribute avoids having to step into compiler-provided code and only steps into developer-provided code. For example, if you are stepping through code by using the **F11** (Step Into) key, the attribute will cause the step to behave like an **F10** (Step Over) key for compiler-provided code. The method won’t be stepped into, but it will be executed.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](https://docs.microsoft.com/dotnet/standard/attributes/).  
   
  ]]></format>
     </remarks>

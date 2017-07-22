@@ -18,7 +18,7 @@
 ## Remarks  
  Each <xref:System.Windows.Forms.Design.Behavior.Adorner> can be enabled and disabled. Only enabled <xref:System.Windows.Forms.Design.Behavior.Adorner> objects will receive hit test and paint messages from the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>. An <xref:System.Windows.Forms.Design.Behavior.Adorner> can be viewed as a proxy between user-interface related elements, which consist of all <xref:System.Windows.Forms.Design.Behavior.Glyph> objects, and the <xref:System.Windows.Forms.Design.Behavior.BehaviorService>.  
   
- For more information, see [Behavior Service Overview](http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f).  
+ For more information, see [Behavior Service Overview](https://msdn.microsoft.com/library/ms171826.aspx).  
   
    
   
@@ -114,7 +114,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to enable and disable an <xref:System.Windows.Forms.Design.Behavior.Adorner>. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ The following code example demonstrates how to enable and disable an <xref:System.Windows.Forms.Design.Behavior.Adorner>. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](https://msdn.microsoft.com/library/ms171820.aspx).  
   
  [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#12)]
  [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#12)]  
@@ -163,7 +163,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ The following example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](https://msdn.microsoft.com/library/ms171820.aspx).  
   
  [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#13)]
  [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#13)]  
@@ -191,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b).  
+ The following code example demonstrates how to force an <xref:System.Windows.Forms.Design.Behavior.Adorner> window to repaint. For a full code listing, see [How to: Extend the Appearance and Behavior of Controls in Design Mode](https://msdn.microsoft.com/library/ms171820.aspx).  
   
  [!code-csharp[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/CS/DesignerDemoControl.cs#13)]
  [!code-vb[System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs#13](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Design.Behavior.Glyph.MarginBorderAnchorGlyphs/VB/DesignerDemoControl.vb#13)]  

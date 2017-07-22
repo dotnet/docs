@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element in a project.</summary>
+    <summary>Represents a [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) element in a project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +34,7 @@
       <Docs>
         <param name="taskParameter">The value of the <see langword="TaskParameter" /> attribute of the <see langword="Output" /> element.</param>
         <param name="itemName">The value of the <see langword="ItemName" /> attribute of the <see langword="Output" /> element.</param>
-        <summary>Adds an [Output](http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9) element with the specified <c>TaskParameter</c> and <c>ItemName</c> attributes to the [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element.</summary>
+        <summary>Adds an [Output](http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9) element with the specified <c>TaskParameter</c> and <c>ItemName</c> attributes to the [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +57,7 @@
       <Docs>
         <param name="taskParameter">The value of the <see langword="TaskParameter" /> attribute of the <see langword="Output" /> element.</param>
         <param name="propertyName">The value of the <see langword="PropertyName" /> attribute of the <see langword="Output" /> element.</param>
-        <summary>Adds an [Output](http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9) element with the specified <c>TaskParameter</c> and <c>PropertyName</c> attributes to the [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element.</summary>
+        <summary>Adds an [Output](http://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9) element with the specified <c>TaskParameter</c> and <c>PropertyName</c> attributes to the [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>Condition</c> attribute value of the [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element.</summary>
+        <summary>Gets or sets the <c>Condition</c> attribute value of the [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) element.</summary>
         <value>The <c>Condition</c> attribute value of the <c>Task</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +92,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <c>ContinueOnError</c> attribute value of the [Task](http://msdn.microsoft.com/library/d82e2485-e5f0-4936-a357-745bacccc299) element.</summary>
+        <summary>Gets or sets the <c>ContinueOnError</c> attribute value of the [Task](https://msdn.microsoft.com/library/77f2hx1s.aspx) element.</summary>
         <value>The <c>ContinueOnError</c> attribute value of the <c>Task</c> element.</value>
         <remarks>To be added.</remarks>
       </Docs>

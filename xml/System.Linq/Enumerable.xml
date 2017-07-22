@@ -3406,7 +3406,7 @@ From i As Integer In objects
   
  `GroupJoin` preserves the order of the elements of `outer`, and for each element of `outer`, the order of the matching elements from `inner`.  
   
- <xref:System.Linq.Enumerable.GroupJoin%2A> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. See [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
+ <xref:System.Linq.Enumerable.GroupJoin%2A> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. See [Join Operations](https://msdn.microsoft.com/library/bb397908.aspx).  
   
  In query expression syntax, a `join … into` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Group Join` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.GroupJoin%2A>.  
   
@@ -3491,7 +3491,7 @@ From i As Integer In objects
   
  `GroupJoin` preserves the order of the elements of `outer`, and for each element of `outer`, the order of the matching elements from `inner`.  
   
- <xref:System.Linq.Enumerable.GroupJoin%2A> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. See [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
+ <xref:System.Linq.Enumerable.GroupJoin%2A> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. See [Join Operations](https://msdn.microsoft.com/library/bb397908.aspx).  
   
  ]]></format>
         </remarks>
@@ -3704,7 +3704,7 @@ From i As Integer In objects
   
  In query expression syntax, a `join` ([!INCLUDE[csprcs](~/includes/csprcs-md.md)]) or `Join` ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) clause translates to an invocation of <xref:System.Linq.Enumerable.Join%2A>.  
   
- In relational database terms, the <xref:System.Linq.Enumerable.Join%2A> method implements an inner equijoin. 'Inner' means that only elements that have a match in the other sequence are included in the results. An 'equijoin' is a join in which the keys are compared for equality. A left outer join operation has no dedicated standard query operator, but can be performed by using the <xref:System.Linq.Enumerable.GroupJoin%2A> method. See [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
+ In relational database terms, the <xref:System.Linq.Enumerable.Join%2A> method implements an inner equijoin. 'Inner' means that only elements that have a match in the other sequence are included in the results. An 'equijoin' is a join in which the keys are compared for equality. A left outer join operation has no dedicated standard query operator, but can be performed by using the <xref:System.Linq.Enumerable.GroupJoin%2A> method. See [Join Operations](https://msdn.microsoft.com/library/bb397908.aspx).  
   
    
   
@@ -3782,7 +3782,7 @@ From i As Integer In objects
   
  <xref:System.Linq.Enumerable.Join%2A> preserves the order of the elements of `outer`, and for each of these elements, the order of the matching elements of `inner`.  
   
- In relational database terms, the <xref:System.Linq.Enumerable.Join%2A> method implements an inner equijoin. 'Inner' means that only elements that have a match in the other sequence are included in the results. An 'equijoin' is a join in which the keys are compared for equality. A left outer join operation has no dedicated standard query operator, but can be performed by using the <xref:System.Linq.Enumerable.GroupJoin%2A> method. See [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
+ In relational database terms, the <xref:System.Linq.Enumerable.Join%2A> method implements an inner equijoin. 'Inner' means that only elements that have a match in the other sequence are included in the results. An 'equijoin' is a join in which the keys are compared for equality. A left outer join operation has no dedicated standard query operator, but can be performed by using the <xref:System.Linq.Enumerable.GroupJoin%2A> method. See [Join Operations](https://msdn.microsoft.com/library/bb397908.aspx).  
   
  ]]></format>
         </remarks>

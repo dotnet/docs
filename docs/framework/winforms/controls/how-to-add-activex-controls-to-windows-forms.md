@@ -27,10 +27,10 @@ While the Windows Forms Designer is optimized to host Windows Forms controls, yo
 > [!CAUTION]
 >  There are performance limitations for Windows Forms when ActiveX controls are added to them.  
   
- Before you add ActiveX controls to your form, you must add them to the Toolbox. For more information, see [COM Components, Customize Toolbox Dialog Box](http://msdn.microsoft.com/en-us/171333f3-f207-4e02-bbdc-17862556212c).  
+ Before you add ActiveX controls to your form, you must add them to the Toolbox. For more information, see [COM Components, Customize Toolbox Dialog Box](https://msdn.microsoft.com/library/cby6tzh5(v=vs.110).aspx).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](https://msdn.microsoft.com/library/zbhkx167.aspx).  
   
 ### To add an ActiveX control to your Windows Form  
   
@@ -43,7 +43,7 @@ While the Windows Forms Designer is optimized to host Windows Forms controls, yo
   
 ## See Also  
  [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)   
- [Controls and Programmable Objects Compared in Various Languages and Libraries](http://msdn.microsoft.com/en-us/021f2a1b-8247-4348-a5ad-e1d9ab23004b)   
+ [Controls and Programmable Objects Compared in Various Languages and Libraries](https://msdn.microsoft.com/library/0061wezk.aspx)   
  [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)   
  [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)   
  [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)   

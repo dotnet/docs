@@ -108,7 +108,7 @@ This walkthrough provides a basic start-to-finish scenario for displaying bound 
   
          -or-  
   
-    -   Click **New Connection** to configure a new data connection. For more information, see [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/360c340d-e5a6-4a7e-a569-e95d500be43d).  
+    -   Click **New Connection** to configure a new data connection. For more information, see [How to: Create Connections to SQL Server Databases](https://msdn.microsoft.com/library/s4yys16a(v=vs.90).aspx).  
   
 5.  If the database requires a password, select the option to include sensitive data, and then click **Next**.  
   

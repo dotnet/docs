@@ -315,4 +315,4 @@ Provides full control over the messaging stack for the user.
  [customBinding Element](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)   
  [Bindings](../../../../../docs/framework/wcf/bindings.md)   
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)   
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/ms733824(v=vs.110).aspx)

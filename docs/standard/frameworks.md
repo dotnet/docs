@@ -4,7 +4,7 @@ description: Information surrounding target frameworks for .NET Core application
 keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw
-ms.date: 07/19/2017
+ms.date: 07/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -14,7 +14,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 # Target frameworks
 
-When you target a framework in an app or library, you're specifying the set of APIs that you'd like to make available to the app or library. You specify the target framework in your *csproj* project file using Target Framework Monikers (TFMs).
+When you target a framework in an app or library, you're specifying the set of APIs that you'd like to make available to the app or library. You specify the target framework in your project file using Target Framework Monikers (TFMs).
 
 An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
 
@@ -51,7 +51,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 ## How to specify target frameworks
 
-Target frameworks are specified in your *csproj* project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 1.1:
+Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 1.1:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -66,7 +66,7 @@ Target frameworks are specified in your *csproj* project file. When a single tar
 
 When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using preprocessor symbols with *if-then-else* logic.
 
-The following library *csproj* project file targets APIs of .NET Standard (`netstandard1.4`) and APIs of the .NET Framework (`net40` and `net45`). Use the plural **TargetFrameworks** element with multiple target frameworks. Note how the `Condition` attributes include implementation-specific packages when the library is compiled for the two .NET Framework TFMs:
+The following library project file targets APIs of .NET Standard (`netstandard1.4`) and APIs of the .NET Framework (`net40` and `net45`). Use the plural **TargetFrameworks** element with multiple target frameworks. Note how the `Condition` attributes include implementation-specific packages when the library is compiled for the two .NET Framework TFMs:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -130,9 +130,10 @@ The following target frameworks are deprecated. Packages targeting these target 
 
 ## See also
 
-[Packages, Metapackages and Frameworks](~/docs/core/packages.md)   
-[Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)   
-[.NET Standard](~/docs/standard/net-standard.md)   
-[dotnet/standard GitHub repository](https://github.com/dotnet/standard)   
-[NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)   
+[Packages, Metapackages and Frameworks](~/docs/core/packages.md)  
+[Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)  
+[.NET Standard](~/docs/standard/net-standard.md)  
+[.NET Core Versioning](~/docs/core/versions/index.md)  
+[dotnet/standard GitHub repository](https://github.com/dotnet/standard)  
+[NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)  
 [Framework Profiles in .NET](http://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)

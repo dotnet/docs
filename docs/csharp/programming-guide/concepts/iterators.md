@@ -52,7 +52,7 @@ public static System.Collections.IEnumerable SomeNumbers()
   
  The return type of an iterator method or `get` accessor can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- You can use a`yield break` statement to end the iteration.  
+ You can use a `yield break` statement to end the iteration.  
   
  Iterators were introduced in C# in Visual Studio 2005.  
   

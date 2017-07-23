@@ -219,7 +219,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 2.  If the solution fails to build, verify the following:  
   
-    -   The reference to `ContosoHR` is not missing from the `InternalClient` or `CareersWebSite`projects.  
+    -   The reference to `ContosoHR` is not missing from the `InternalClient` or `CareersWebSite` projects.  
   
 3.  If the solution fails to execute, verify the following:  
   

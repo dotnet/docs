@@ -78,7 +78,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
        }  
     ```  
   
-     ([!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) You must initialize process`p`, which you can do by including the following statement in the constructor of your form:  
+     ([!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) You must initialize process `p`, which you can do by including the following statement in the constructor of your form:  
   
     ```cpp  
     p = gcnew System::Diagnostics::Process();  

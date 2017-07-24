@@ -41,7 +41,7 @@ ol {
 
     This article covers an overview of events in .NET.
 
-6. [The .NET Event Pattern](event-pattern.md)
+6. [Standard .NET event patterns](event-pattern.md)
 
     This article covers the standard event pattern in .NET.
 

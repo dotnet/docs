@@ -1,6 +1,6 @@
 ---
 title: Active Patterns (F#) | Microsoft Docs
-description: Active Patterns (F#)
+description: Learn how to use active patterns to define named partitions that subdivide input data in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

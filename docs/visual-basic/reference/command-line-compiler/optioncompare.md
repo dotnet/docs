@@ -70,7 +70,7 @@ Specifies how string comparisons are made.
 -   See [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
   
 ## Example  
- The following code compiles P`rojFile.vb` and uses binary string comparisons.  
+ The following code compiles `ProjFile.vb` and uses binary string comparisons.  
   
 ```  
 vbc /optioncompare:binary projFile.vb  

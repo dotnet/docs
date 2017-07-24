@@ -54,7 +54,7 @@ manager: "erikre"
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|address|Required `string`attribute.<br /><br /> Specifies the address of the endpoint. The address must be an absolute URI. The default value is an empty string.|  
+|address|Required `string` attribute.<br /><br /> Specifies the address of the endpoint. The address must be an absolute URI. The default value is an empty string.|  
   
 ### Child Elements  
   

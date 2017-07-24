@@ -45,7 +45,7 @@ You can assign an initial value to a mutable variable by using the `let` keyword
 
 |Title|Description|
 |-----|-----------|
-|[let Bindings](../functions/let-bindings.md)|Provides information about using the `let`keyword to bind names to values and functions.|
+|[let Bindings](../functions/let-bindings.md)|Provides information about using the `let` keyword to bind names to values and functions.|
 |[Functions](../functions/index.md)|Provides an overview of functions in F#.|
 
 ## See Also

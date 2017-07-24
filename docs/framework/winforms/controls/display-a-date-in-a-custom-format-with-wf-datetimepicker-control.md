@@ -26,7 +26,7 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
 ### To display a custom format  
   
-1.  Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to`DateTimePickerFormat.Custom`.  
+1.  Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to `DateTimePickerFormat.Custom`.  
   
 2.  Set the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to a format string.  
   

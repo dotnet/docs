@@ -63,7 +63,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
         |Part|Description|  
         |---|---|  
         |`ePrefix`|Optional. XML namespace prefix for the element. Must be a global XML namespace that is defined with an `Imports` statement in the file or at the project level, or a local XML namespace that is defined in this element or a parent element.|  
-        |`eName`|Required. Name of the element. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%=` e`NameExp` `%>`. The type of `eNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
+        |`eName`|Required. Name of the element. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%=` `eNameExp` `%>`. The type of `eNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
   
     -   Embedded expression of the form `<%=` `nameExp` `%>`. The type of `nameExp` must be `String` or a type implicitly convertible to <xref:System.Xml.Linq.XName>. An embedded expression is not allowed in a closing tag of an element.  
   

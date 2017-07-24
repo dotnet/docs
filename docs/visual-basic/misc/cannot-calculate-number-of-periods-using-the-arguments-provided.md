@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Cannot calculate number of periods using the arguments provided
-A call to the `NPer`function does not contain all of the required arguments.  
+A call to the `NPer` function does not contain all of the required arguments.  
   
 ## To correct this error  
   

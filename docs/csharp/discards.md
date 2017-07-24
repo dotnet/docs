@@ -1,7 +1,7 @@
 ---
 title: Discards - C# Guide| Microsoft Docs
-description: Learn about C#'s support for discards, or discardable variables
-keywords: .NET, .NET Core
+description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
+keywords: .NET,.NET Core
 author: rpetrusha
 ms.author: ronpet
 ms.date: 07/21/2017
@@ -23,10 +23,10 @@ You indicate that a variable is a discard by assigning it the underscore (`_`) a
 In C# 7, discards are supported in assignments in the following contexts:
 
 - Tuple and object [deconstruction](deconstruct.md).
-- Pattern matching.
+- Pattern matching with [is](language-reference/keywords/is.md) and [switch](language-reference/keywords/switch.md).
 - Calls to methods with `out` parameters.
 - A standalone `_` when no `_` is in scope.
-``
+
 When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '_' does not exist in the current context". 
 
 ## Tuple and object deconstruction
@@ -39,11 +39,17 @@ For more information on deconstructing tuples with discards, see [Deconstructing
 
 The `Deconstruct` method of a class, structure, or interface also allows you to retrieve and deconstruct a specific set of data from an object. You can use discards when you are interested in working with only a subset of the deconstructed values. Ihe following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state), but discards the last name and the state.
 
-[!code-csharp[Class-discard](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/class-discard1.cs#1)]
+[!code-csharp[Class-discard](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/class-discard1.cs)]
 
 For more information on deconstructing user-defined types with discards, see [Deconstructing tuples and other types](deconstruct.md#deconstructing-a-user-defined type-with-discards).
 
-## Pattern matching
+## Pattern matching with `switch` and `is`
+
+The *discard pattern* can be used in pattern matching with the [is](language-reference/keywords/is.md) and [switch](language-reference/keywords/switch.md) keywords. Every expression always matches the discard pattern.
+
+The following example defines a `ProvidesFormatInfo` method that uses [is](language-reference/keywords/is.md) statements to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
+
+[!code-csharp[discard-pattern](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-pattern2.cs)]
 
 ## Calls to methods with out parameters
 
@@ -55,10 +61,25 @@ The following example calls the [DateTime.TryParse(String, out DateTime)](<xref:
 
 ## A standalone discard
 
+You can use a standalone discard to indicate any variable that you choose to ignore. The following example uses a standalone discard to ignore the <xref:System.Threading.Tasks.Task> object returned by an asynchronous operation. This has the effect of suppressing the exception that the operation throws as it is about to complete.
 
-Note that `_` is also a valid identifier. When used outside of a supported context, `_` is treated not as a discard but as a valid variable. If an identifier named `_` is in scope, the use of `_` as a standalone discard can result in any of the following:
+[!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard1.cs)]
 
-- The assignment to the intended discard modifies the value of the in-scope `_` variable. 
-- A compiler error for violating type safety. 
-- Compiler error CS0136, "A local or parameter named '_' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter."
+Note that `_` is also a valid identifier. When used outside of a supported context, `_` is treated not as a discard but as a valid variable. If an identifier named `_` is already in scope, the use of `_` as a standalone discard can result in:
 
+- Accidental modification of the value of the in-scope `_` variable by assigning it the value of the intended discard. For example:
+
+   [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#1)]
+ 
+- A compiler error for violating type safety. For example:
+
+   [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#2)]
+ 
+- Compiler error CS0136, "A local or parameter named '_' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter." For example:
+
+   [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#3)]
+
+## See also
+[Deconstructing tuples and other types](deconstruct.md)   
+[`is` keyword](language-reference/keywords/is.md)   
+[`switch` keyword](language-reference/keywords/switch.md)   

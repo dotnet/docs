@@ -420,15 +420,17 @@
  If <xref:System.Object.Finalize%2A> or an override of <xref:System.Object.Finalize%2A> throws an exception, and the runtime is not hosted by an application that overrides the default policy, the runtime terminates the process and no active `try`/`finally` blocks or finalizers are executed. This behavior ensures process integrity if the finalizer cannot free or destroy resources.  
   
 <a name="Notes"></a>   
-## Notes for implementers  
- You should override <xref:System.Object.Finalize%2A> for a class that uses unmanaged resources such as file handles or database connections that must be released when the managed object that uses them is discarded during garbage collection.  
+## Overriding the Finalize method 
+ You should override <xref:System.Object.Finalize%2A> for a class that uses unmanaged resources, such as file handles or database connections that must be released when the managed object that uses them is discarded during garbage collection. You shouldn't implement a <xref:System.Object.Finalize%2A> method for managed objects because the garbage collector releases managed resources automatically.  
   
 > [!IMPORTANT]
 >  If a <xref:System.Runtime.InteropServices.SafeHandle> object is available that wraps your unmanaged resource, the recommended alternative is to implement the dispose pattern with a safe handle and not override <xref:System.Object.Finalize%2A>. For more information, see [The SafeHandle alternative](#SafeHandle) section.  
   
  The <xref:System.Object.Finalize%2A?displayProperty=fullName> method does nothing by default, but you should override <xref:System.Object.Finalize%2A> only if necessary, and only to release unmanaged resources. Reclaiming memory tends to take much longer if a finalization operation runs, because it requires at least two garbage collections. In addition, you should override the <xref:System.Object.Finalize%2A> method for reference types only. The common language runtime only finalizes reference types. It ignores finalizers on value types.  
+
+The scope of the <xref:System.Object.Finalize%2A?displayProperty=fullName> method is `protected`. You should maintain this limited scope when you override the method in your class. By keeping a <xref:System.Object.Finalize%2A> method protected, you prevent users of your application from calling an object's <xref:System.Object.Finalize%2A> method directly.
   
- Every implementation of <xref:System.Object.Finalize%2A> in a derived type must call its base type's implementation of <xref:System.Object.Finalize%2A>. This is the only case in which application code is allowed to call <xref:System.Object.Finalize%2A>.  
+ Every implementation of <xref:System.Object.Finalize%2A> in a derived type must call its base type's implementation of <xref:System.Object.Finalize%2A>. This is the only case in which application code is allowed to call <xref:System.Object.Finalize%2A>. An object's <xref:System.Object.Finalize%2A> method shouldn't call a method on any objects other than that of its base class. This is because the other objects being called could be collected at the same time as the calling object, such as in the case of a common language runtime shutdown. 
   
 > [!NOTE]
 >  The C# compiler does not allow you to override the <xref:System.Object.Finalize%2A> method. Instead, you provide a finalizer by implementing a [destructor](~/docs/csharp/programming-guide/classes-and-structs/destructors.md) for your class. A C# destructor automatically calls the destructor of its base class.  
@@ -437,7 +439,7 @@
   
  Because garbage collection is non-deterministic, you do not know precisely when the garbage collector performs finalization. To release resources immediately, you can also choose to implement the [dispose pattern](~/docs/standard/design-guidelines/dispose-pattern.md) and the <xref:System.IDisposable> interface. The <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation can be called by consumers of your class to free unmanaged resources, and you can use the <xref:System.Object.Finalize%2A> method to free unmanaged resources in the event that the <xref:System.IDisposable.Dispose%2A> method is not called.  
   
- <xref:System.Object.Finalize%2A> can take almost any action, including resurrecting an object (that is, making the object accessible again) after it has been cleaned up during garbage collection. However, the object can only be resurrected once; <xref:System.Object.Finalize%2A> cannot be called on resurrected objects during garbage collection. There is one action that your implementation of <xref:System.Object.Finalize%2A> should never take: it should never throw an exception.  
+ <xref:System.Object.Finalize%2A> can take almost any action, including resurrecting an object (that is, making the object accessible again) after it has been cleaned up during garbage collection. However, the object can only be resurrected once; <xref:System.Object.Finalize%2A> cannot be called on resurrected objects during garbage collection. There is one action that your implementation of <xref:System.Object.Finalize%2A> should never take: it should never throw an exception. If any exceptions thrown by methods called from the <xref:System.Object.Finalize%2A> method are unhandled by the <xref:System.Object.Finalize%2A> method, the runtime assumes that the <xref:System.Object.Finalize%2A> method returned and continues to call the <xref:System.Object.Finalize%2A> methods of other objects. 
   
 <a name="SafeHandle"></a>   
 ## The SafeHandle alternative  

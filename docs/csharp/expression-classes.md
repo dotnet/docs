@@ -1,6 +1,6 @@
 ---
 title: Framework Types Supporting Expression Trees | Microsoft Docs
-description: Framework Types Supporting Expression Trees
+description: Learn about framework types supporting expression trees, creating expression trees, and techniques for working with expression tree APIs.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

@@ -16,11 +16,6 @@ ms.assetid: 4e80e053-8022-4987-a8a0-209caec0315d
 
 This topic will be covered under the following articles:
 
-<style type="text/css">
-ol {
-    list-style-type: upper-roman;
-}
-</style>
 1. [Overview of Delegates](delegates-overview.md)
 
     This article covers an overview of delegates.

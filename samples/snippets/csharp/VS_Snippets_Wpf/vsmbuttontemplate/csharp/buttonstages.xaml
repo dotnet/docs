@@ -104,15 +104,15 @@
                     <!--Define the states and transitions for the common states.
                         The states in the VisualStateGroup are mutually exclusive to
                         each other.-->
-                    <VisualStateGroup Name="CommonStates">
+                    <VisualStateGroup x:Name="CommonStates">
 
                       <!--The Normal state is the state the button is in
                           when it is not in another state from this VisualStateGroup.-->
-                      <VisualState Name="Normal" />
+                      <VisualState x:Name="Normal" />
 
                       <!--Change the SolidColorBrush, BorderBrush, to red when the
                           mouse is over the button.-->
-                      <VisualState Name="MouseOver">
+                      <VisualState x:Name="MouseOver">
                         <Storyboard>
                           <ColorAnimation Storyboard.TargetName="BorderBrush" 
                                           Storyboard.TargetProperty="Color" 
@@ -122,7 +122,7 @@
 
                       <!--Change the SolidColorBrush, BorderBrush, to Transparent when the
                           button is pressed.-->
-                      <VisualState Name="Pressed">
+                      <VisualState x:Name="Pressed">
                         <Storyboard>
                           <ColorAnimation Storyboard.TargetName="BorderBrush" 
                                           Storyboard.TargetProperty="Color"
@@ -185,7 +185,7 @@
                 <Border x:Name="RootElement">
                   <VisualStateManager.VisualStateGroups>
                     <!--<SnippetVisualTransitions>-->
-                    <VisualStateGroup Name="CommonStates">
+                    <VisualStateGroup x:Name="CommonStates">
 
                       <!--Define the VisualTransitions that
                           can be used when the control transitions 
@@ -237,9 +237,9 @@
                       <!--The remainder of the VisualStateGroup is the
                           same as the previous example.-->
 
-                      <VisualState Name="Normal" />
+                      <VisualState x:Name="Normal" />
 
-                      <VisualState Name="MouseOver">
+                      <VisualState x:Name="MouseOver">
                         <Storyboard>
                           <ColorAnimation 
                             Storyboard.TargetName="BorderBrush" 
@@ -249,7 +249,7 @@
                         </Storyboard>
                       </VisualState>
 
-                      <VisualState Name="Pressed">
+                      <VisualState x:Name="Pressed">
                         <Storyboard>
                           <ColorAnimation 
                             Storyboard.TargetName="BorderBrush" 

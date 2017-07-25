@@ -30,7 +30,7 @@ manager: "wpickett"
 The Assembly Linker generates a file that has an assembly manifest from one or more files that are either modules or resource files. A module is an intermediate language (IL) file that does not have an assembly manifest.
 
 > [!NOTE]
-> To avoid being subject to virtualization on a Windows Vista computer, your assembly must include a Win32 manifest that specifies the requested execution level. When you use *Al.exe* directly from the command line, you can either embed the manifest in a Win32 resource file or use *mt.exe* to append the manifest at a later stage in the build process. Starting with [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)], both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [/win32manifest (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
+> Starting with [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)], both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [/win32manifest (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
 
 This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 

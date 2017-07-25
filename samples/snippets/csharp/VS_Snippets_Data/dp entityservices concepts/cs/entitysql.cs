@@ -647,95 +647,93 @@ namespace Microsoft.Samples.Entity
             pc.Clear();
 
             /*
-            //<snippetEDM_AVG>
             SELECT VALUE AVG(p.ListPrice) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_AVG>
             */
+            //<snippetEDM_AVG>
             queryString = @"SELECT VALUE AVG(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
+            //</snippetEDM_AVG>
             /*
-            //<snippetEDM_BIGCOUNT>
             SELECT VALUE BigCount(p.ProductID) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_BIGCOUNT>
             */
+            //<snippetEDM_BIGCOUNT>
             queryString = @"SELECT VALUE BigCount(p.ProductID) FROM AdventureWorksEntities.Products as p ";
+            //</snippetEDM_BIGCOUNT>
             /*
-            //<snippetEDM_COUNT>
             SELECT VALUE Count(p.ProductID) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_COUNT>
             */
+            //<snippetEDM_COUNT>
             queryString = @"SELECT VALUE Count(p.ProductID) FROM AdventureWorksEntities.Products as p ";
+            //</snippetEDM_COUNT>
             /*
-            //<snippetEDM_MAX>
             SELECT VALUE MAX(p.ListPrice) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_MAX>
             */
+            //<snippetEDM_MAX>
             queryString = @"SELECT VALUE MAX(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
+            //</snippetEDM_MAX>
             /*
-            //<snippetEDM_MIN>
             SELECT VALUE MIN(p.ListPrice) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_MIN>
             */
+            //<snippetEDM_MIN>
             queryString = @"SELECT VALUE MIN(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
+            //</snippetEDM_MIN>
             /*
-            //<snippetEDM_STDEV>
             SELECT VALUE StDev(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             where product.ListPrice > @price
-            //</snippetEDM_STDEV>
             */
+            //<snippetEDM_STDEV>
             queryString = @"SELECT VALUE StDev(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             where product.ListPrice > @price";
+            //</snippetEDM_STDEV>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
             /*
-            //<snippetEDM_STDEVP>
             SELECT VALUE StDevP(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             where product.ListPrice > @price
-            //</snippetEDM_STDEVP>
             */
+            //<snippetEDM_STDEVP>
             queryString = @"SELECT VALUE StDevP(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             where product.ListPrice > @price";
+            //</snippetEDM_STDEVP>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
             /*
-            //<snippetEDM_SUM>
             SELECT VALUE Sum(p.ListPrice) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_SUM>
             */
+            //<snippetEDM_SUM>
             queryString = @"SELECT VALUE Sum(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
+            //</snippetEDM_SUM>
             /*
-            //<snippetEDM_VAR>
             SELECT VALUE Var(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             WHERE product.ListPrice > @price
-            //</snippetEDM_VAR>
             */
+            //<snippetEDM_VAR>
             queryString = @"SELECT VALUE Var(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             WHERE product.ListPrice > @price";
+            //</snippetEDM_VAR>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
-
             /*
-            //<snippetEDM_VARP>
             SELECT VALUE VarP(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             WHERE product.ListPrice > @price
-            //</snippetEDM_VARP>
             */
+            //<snippetEDM_VARP>
             queryString = @"SELECT VALUE VarP(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             WHERE product.ListPrice > @price";
+            //</snippetEDM_VARP>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
-
             /*
             //<snippetEDM_CEILING>
             SELECT VALUE product FROM AdventureWorksEntities.Products AS product 

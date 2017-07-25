@@ -44,7 +44,7 @@ Equivalent functionality is available in the Microsoft SQL Client Managed Provid
 
 Collection-based aggregates (collection functions) operate on collections and return a value. For example if ORDERS is a collection of all orders, you can calculate the earliest ship date with the following expression:
 
-```
+```sql
 min(select value o.ShipDate from LOB.Orders as o)
 ```
 
@@ -56,20 +56,20 @@ Group-based aggregates are calculated over a group as defined by the GROUP BY cl
 
 The following example calculates the average quantity ordered for each product:
 
-```
+```sql
 select p, avg(ol.Quantity) from LOB.OrderLines as ol 
   group by ol.Product as p
 ```
 
 It's possible to have a group-based aggregate without an explicit group-by clause in the SELECT expression. In this case, all elements are treated as a single group. This is equivalent of specifying a grouping based on a constant. Take, for example, the following expression:
 
-```
+```sql
 select avg(ol.Quantity) from LOB.OrderLines as ol
 ```
 
 This is equivalent to the following:
 
-```
+```sql
 select avg(ol.Quantity) from LOB.OrderLines as ol group by 1
 ```
 

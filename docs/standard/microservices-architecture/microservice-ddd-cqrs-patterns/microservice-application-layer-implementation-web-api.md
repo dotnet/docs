@@ -20,7 +20,7 @@ For instance, the application layer code of the ordering microservice is directl
 
 **Figure 9-19**. The application layer in the Ordering.API ASP.NET Core Web API project
 
-ASP.NET Core includes a simple [built-in IoC container](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) (represented by the IServiceProvider interface) that supports constructor injection by default, and ASP.NET makes certain services available through DI. ASP.NET Core uses the term *service* for any of the types you register that will be injected through DI. You configure the built-in container's services in the ConfigureServices method in your application's Startup class. Your dependencies are implemented in the services that a type needs.
+ASP.NET Core includes a simple [built-in IoC container](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection) (represented by the IServiceProvider interface) that supports constructor injection by default, and ASP.NET makes certain services available through DI. ASP.NET Core uses the term *service* for any of the types you register that will be injected through DI. You configure the built-in container's services in the ConfigureServices method in your application's Startup class. Your dependencies are implemented in the services that a type needs.
 
 Typically, you want to inject dependencies that implement infrastructure objects. A very typical dependency to inject is a repository. But you could inject any other infrastructure dependency that you may have. For simpler implementations, you could directly inject your Unit of Work pattern object (the EF DbContext object), because the DBContext is also the implementation of your infrastructure persistence objects.
 
@@ -166,7 +166,7 @@ The instance scope type determines how an instance is shared between requests fo
 #### Additional resources
 
 -   **Introduction to Dependency Injection in ASP.NET Core**
-    [*https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)
+    [*https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection*](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
 -   **Autofac.** Official documentation.
     [*http://docs.autofac.org/en/latest/*](http://docs.autofac.org/en/latest/)

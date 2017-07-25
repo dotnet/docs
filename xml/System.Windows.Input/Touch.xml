@@ -29,7 +29,7 @@
   
  The following markup creates the user interface, which consists of a <xref:System.Windows.Controls.Canvas> that is centered in a <xref:System.Windows.Controls.Grid>.  
   
- [!code-xml[TouchFrameSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/touchframesample/cs/mainwindow.xaml#000)]  
+ [!code-xaml[TouchFrameSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/touchframesample/cs/mainwindow.xaml#000)]  
   
  The following code handles the <xref:System.Windows.Input.Touch.FrameReported> event. When a touch presses on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>. When the touch is lifted, the <xref:System.Windows.Input.TouchDevice> is released. When a touch moves across the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
   

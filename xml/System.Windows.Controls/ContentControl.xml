@@ -58,15 +58,15 @@ Four buttons with different types of content
 > [!NOTE]
 >  Although the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Button.Content>` tags around the content of each button, it is not necessary. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
   
- [!code-xml[ControlContentOverviewSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#1)]  
+ [!code-xaml[ControlContentOverviewSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#1)]  
   
  [!code-csharp[ControlContentOverviewSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#2)]
  [!code-vb[ControlContentOverviewSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#2)]  
   
  The following example shows how to make a style for a <xref:System.Windows.Controls.ContentControl> so that the control has an enhanced visual appearance.  
   
- [!code-xml[ContentControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#1)]  
-[!code-xml[ContentControl#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#5)]  
+ [!code-xaml[ContentControl#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#1)]  
+[!code-xaml[ContentControl#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#5)]  
   
  ]]></format>
     </remarks>
@@ -198,7 +198,7 @@ Four buttons with different types of content
 > [!NOTE]
 >  Although the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Button.Content>` tags around the content of each button, it is not necessary. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
   
- [!code-xml[ControlContentOverviewSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#1)]  
+ [!code-xaml[ControlContentOverviewSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml#1)]  
   
  [!code-csharp[ControlContentOverviewSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlContentOverviewSnippets/CSharp/Window1.xaml.cs#2)]
  [!code-vb[ControlContentOverviewSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlContentOverviewSnippets/VisualBasic/Window1.xaml.vb#2)]  
@@ -259,7 +259,7 @@ Four buttons with different types of content
 ## Examples  
  The following example specifies the format of <xref:System.DateTime> objects by setting the <xref:System.Windows.Controls.ContentControl.ContentStringFormat%2A> property in a <xref:System.Windows.Style> and applying the <xref:System.Windows.Style> to two <xref:System.Windows.Controls.Label> objects, which inherit from <xref:System.Windows.Controls.ContentControl>.  
   
- [!code-xml[ContentStringSnippets#ContentControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#contentcontrol)]  
+ [!code-xaml[ContentStringSnippets#ContentControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentStringSnippets/CSharp/Window1.xaml#contentcontrol)]  
   
  ]]></format>
         </remarks>
@@ -339,9 +339,9 @@ Four buttons with different types of content
 ## Examples  
  The following examples show how to create a content template and apply the template to a content control.  
   
- [!code-xml[ContentControl#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#2)]  
+ [!code-xaml[ContentControl#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#2)]  
   
- [!code-xml[ContentControl#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#3)]  
+ [!code-xaml[ContentControl#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControl/CSharp/Page1.xaml#3)]  
   
  ]]></format>
         </remarks>
@@ -425,7 +425,7 @@ Four buttons with different types of content
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property. This example binds the selected item in a <xref:System.Windows.Controls.ComboBox> to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.Label>, which inherits from <xref:System.Windows.Controls.ContentControl>.  When the user selects a value below 5, the value of the selected item appears in a black square in the <xref:System.Windows.Controls.Label>.  When the user selects a value that is 5 or above, the value appears in a green ellipse. The example accomplishes this by creating two <xref:System.Windows.DataTemplate> objects and a <xref:System.Windows.Controls.DataTemplateSelector>, which is set to the <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> property and chooses the appropriate <xref:System.Windows.DataTemplate> based on the value of the selected item.  
   
- [!code-xml[ContentControlTemplateSelector#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControlTemplateSelector/CSharp/Window1.xaml#1)]  
+ [!code-xaml[ContentControlTemplateSelector#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControlTemplateSelector/CSharp/Window1.xaml#1)]  
 [!code-csharp[ContentControlTemplateSelector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ContentControlTemplateSelector/CSharp/Window1.xaml.cs#2)]
 [!code-vb[ContentControlTemplateSelector#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContentControlTemplateSelector/VisualBasic/Window1.xaml.vb#2)]  
   

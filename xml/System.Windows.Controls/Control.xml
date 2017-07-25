@@ -140,14 +140,14 @@
 ## Examples  
  The following example shows how to set the background property of a control.  
   
- [!code-xml[ControlProps#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#11)]  
+ [!code-xaml[ControlProps#11](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#11)]  
   
  [!code-csharp[ControlProps#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#1)]
  [!code-vb[ControlProps#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#1)]  
   
  The following example shows a template that enables a trigger to change the background of a button when it is pressed.  
   
- [!code-xml[BackgroundProp_snip#ButtonTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/BackgroundProp_snip/CS/page1.xaml#buttontemplate)]  
+ [!code-xaml[BackgroundProp_snip#ButtonTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/BackgroundProp_snip/CS/page1.xaml#buttontemplate)]  
   
  ]]></format>
         </remarks>
@@ -212,7 +212,7 @@
 ## Examples  
  The following example shows how to set the border brush property of a control.  
   
- [!code-xml[ControlProps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#17)]  
+ [!code-xaml[ControlProps#17](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#17)]  
   
  [!code-csharp[ControlProps#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#7)]
  [!code-vb[ControlProps#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#7)]  
@@ -280,7 +280,7 @@
 ## Examples  
  The following example shows how to set the border thickness property of a control.  
   
- [!code-xml[ControlProps_snip#AdditionalControlProps11](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops11)]  
+ [!code-xaml[ControlProps_snip#AdditionalControlProps11](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops11)]  
   
  [!code-csharp[ControlProps_snip#AdditionalControlProps1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml.cs#additionalcontrolprops1)]
  [!code-vb[ControlProps_snip#AdditionalControlProps1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps_snip/VisualBasic/Window1.xaml.vb#additionalcontrolprops1)]  
@@ -351,7 +351,7 @@
 ## Examples  
  The following example shows how to set the font family property of a control.  
   
- [!code-xml[ControlProps#13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#13)]  
+ [!code-xaml[ControlProps#13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#13)]  
   
  [!code-csharp[ControlProps#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#3)]
  [!code-vb[ControlProps#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#3)]  
@@ -456,7 +456,7 @@
 ## Examples  
  The following example shows how to set the font size property of a control.  
   
- [!code-xml[ControlProps#14](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#14)]  
+ [!code-xaml[ControlProps#14](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#14)]  
   
  [!code-csharp[ControlProps#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#4)]
  [!code-vb[ControlProps#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#4)]  
@@ -524,7 +524,7 @@
 ## Examples  
  The following example shows how to set the font stretch property of a control. For possible stretch values, see <xref:System.Windows.FontStretches>.  
   
- [!code-xml[ControlProps_snip#AdditionalControlProps12](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops12)]  
+ [!code-xaml[ControlProps_snip#AdditionalControlProps12](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops12)]  
   
  [!code-csharp[ControlProps_snip#AdditionalControlProps2](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml.cs#additionalcontrolprops2)]
  [!code-vb[ControlProps_snip#AdditionalControlProps2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps_snip/VisualBasic/Window1.xaml.vb#additionalcontrolprops2)]  
@@ -592,7 +592,7 @@
 ## Examples  
  The following example shows how to set the font style property of a control.  
   
- [!code-xml[ControlProps#15](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#15)]  
+ [!code-xaml[ControlProps#15](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#15)]  
   
  [!code-csharp[ControlProps#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#5)]
  [!code-vb[ControlProps#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#5)]  
@@ -660,7 +660,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.Control.FontWeight%2A> property of a control.  
   
- [!code-xml[ControlProps#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#16)]  
+ [!code-xaml[ControlProps#16](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#16)]  
   
  [!code-csharp[ControlProps#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#6)]
  [!code-vb[ControlProps#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#6)]  
@@ -728,7 +728,7 @@
 ## Examples  
  The following example shows how to set the font style property of a control.  
   
- [!code-xml[ControlProps#12](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#12)]  
+ [!code-xaml[ControlProps#12](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#12)]  
   
  [!code-csharp[ControlProps#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#2)]
  [!code-vb[ControlProps#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#2)]  
@@ -817,7 +817,7 @@
 ## Examples  
  The following example shows how to set the horizontal content alignment property of a control.  
   
- [!code-xml[ControlProps#18](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#18)]  
+ [!code-xaml[ControlProps#18](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#18)]  
   
  [!code-csharp[ControlProps#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#8)]
  [!code-vb[ControlProps#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#8)]  
@@ -886,7 +886,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.Control.IsTabStop%2A> property and how to test whether a control is included in tab navigation.  
   
- [!code-xml[ControlProps_snip#AdditionalControlProps15](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops15)]  
+ [!code-xaml[ControlProps_snip#AdditionalControlProps15](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops15)]  
   
  [!code-csharp[ControlProps_snip#AdditionalControlProps4](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml.cs#additionalcontrolprops4)]
  [!code-vb[ControlProps_snip#AdditionalControlProps4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps_snip/VisualBasic/Window1.xaml.vb#additionalcontrolprops4)]  
@@ -979,7 +979,7 @@
 ## Examples  
  The following example shows how to attach an event handler to the <xref:System.Windows.Controls.Control.MouseDoubleClick> event.  
   
- [!code-xml[ControlProps_snip#ControlEvents11](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#controlevents11)]  
+ [!code-xaml[ControlProps_snip#ControlEvents11](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#controlevents11)]  
   
  The following example shows the event handler of the <xref:System.Windows.Controls.Control.MouseDoubleClick> event.  
   
@@ -1153,7 +1153,7 @@
 ## Examples  
  The following example shows how to set the padding property of a control.  
   
- [!code-xml[ControlProps_snip#AdditionalControlProps13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops13)]  
+ [!code-xaml[ControlProps_snip#AdditionalControlProps13](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops13)]  
   
  [!code-csharp[ControlProps_snip#AdditionalControlProps3](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml.cs#additionalcontrolprops3)]
  [!code-vb[ControlProps_snip#AdditionalControlProps3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps_snip/VisualBasic/Window1.xaml.vb#additionalcontrolprops3)]  
@@ -1217,7 +1217,7 @@
 ## Examples  
  The following example shows how to attach an event handler the <xref:System.Windows.Controls.Control.PreviewMouseDoubleClick> event.  
   
- [!code-xml[ControlProps_snip#ControlEvents12](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#controlevents12)]  
+ [!code-xaml[ControlProps_snip#ControlEvents12](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#controlevents12)]  
   
  The following example shows the event handler of the <xref:System.Windows.Controls.Control.PreviewMouseDoubleClick> event.  
   
@@ -1287,7 +1287,7 @@
 ## Examples  
  The following example sets the tab index of three buttons.  
   
- [!code-xml[ControlProps_snip#AdditionalControlProps17](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops17)]  
+ [!code-xaml[ControlProps_snip#AdditionalControlProps17](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps_snip/CSharp/Pane1.xaml#additionalcontrolprops17)]  
   
  ]]></format>
         </remarks>
@@ -1346,7 +1346,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  If you add this to your application as a resource, all the buttons in the application will appear as ellipses but will still function as buttons.  
   
- [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
+ [!code-xaml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
   
  ]]></format>
         </remarks>
@@ -1439,7 +1439,7 @@
 ## Examples  
  The following example shows how to set the vertical content alignment property on a control.  
   
- [!code-xml[ControlProps#19](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#19)]  
+ [!code-xaml[ControlProps#19](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml#19)]  
   
  [!code-csharp[ControlProps#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlProps/CSharp/Pane1.xaml.cs#9)]
  [!code-vb[ControlProps#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ControlProps/VisualBasic/Pane1.xaml.vb#9)]  

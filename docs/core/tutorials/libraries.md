@@ -1,6 +1,6 @@
 ---
 title: Developing Libraries with Cross Platform Tools | Microsoft Docs
-description: Developing Libraries with Cross Platform Tools
+description: Learn how to create libraries for .NET using .NET Core CLI tools.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -36,7 +36,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, refer to [the .NET Standard Library](../../standard/net-standard.md) to learn more.
+If you're not quite familiar with the .NET Standard, refer to the [.NET Standard](../../standard/net-standard.md) to learn more.
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
@@ -132,29 +132,12 @@ Your project file could look like this:
 You'll notice three major changes here:
 
 1. The `TargetFramework` node has been replaced by `TargetFrameworks`, and three TFMs are expressed inside.
-1. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework references.
+1. There is an `<ItemGroup>` node for the `net40 ` target pulling in one .NET Framework reference.
 1. There is an `<ItemGroup>` node for the `net45` target pulling in two .NET Framework references.
 
 The build system is aware of the following preprocessor symbols used in `#if` directives:
 
-```
-.NET Framework 2.0   --> NET20
-.NET Framework 3.5   --> NET35
-.NET Framework 4.0   --> NET40
-.NET Framework 4.5   --> NET45
-.NET Framework 4.5.1 --> NET451
-.NET Framework 4.5.2 --> NET452
-.NET Framework 4.6   --> NET46
-.NET Framework 4.6.1 --> NET461
-.NET Framework 4.6.2 --> NET462
-.NET Standard 1.0    --> NETSTANDARD1_0
-.NET Standard 1.1    --> NETSTANDARD1_1
-.NET Standard 1.2    --> NETSTANDARD1_2
-.NET Standard 1.3    --> NETSTANDARD1_3
-.NET Standard 1.4    --> NETSTANDARD1_4
-.NET Standard 1.5    --> NETSTANDARD1_5
-.NET Standard 1.6    --> NETSTANDARD1_6
-```
+[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
 
 Here is an example making use of conditional compilation per-target:
 
@@ -234,7 +217,7 @@ Each of these contain the `.dll` files for each target.
 It's important to be able to test across platforms. You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!NOTE]
-> This uses some [.NET CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
+> This uses some [.NET Core CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
 
 1. Set up your solution. You can do so with the following commands:
 
@@ -334,7 +317,7 @@ This will add the three projects above and a solution file which links them toge
 
 ### Project-to-project referencing
 
-The best way to reference a project is to use the .NET CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
+The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```console
 $ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
@@ -348,7 +331,7 @@ The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp
 </ItemGroup>
 ```
 
-You can add this section to each project file manually if you prefer not to use the .NET CLI.
+You can add this section to each project file manually if you prefer not to use the .NET Core CLI.
 
 ### Structuring a solution
 

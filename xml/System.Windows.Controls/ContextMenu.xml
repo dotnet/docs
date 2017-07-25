@@ -56,7 +56,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ContextMenu> that manipulates the text of a <xref:System.Windows.Controls.TextBox>.  The example demonstrates how to subscribe to and handle the events of <xref:System.Windows.Controls.MenuItem> objects in a <xref:System.Windows.Controls.ContextMenu>.  
   
- [!code-xml[ContextMenu#Events](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#events)]  
+ [!code-xaml[ContextMenu#Events](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#events)]  
   
  [!code-csharp[MenuItemCommandsAndEvents#2](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuItemCommandsAndEvents/CSharp/Window1.xaml.cs#2)]
  [!code-vb[MenuItemCommandsAndEvents#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandsAndEvents/VisualBasic/Window1.xaml.vb#2)]  
@@ -113,7 +113,7 @@
 ## Examples  
  The following example shows how use the <xref:System.Windows.Controls.ContextMenu> events: <xref:System.Windows.Controls.ContextMenu.Opened> and <xref:System.Windows.Controls.ContextMenu.Closed>.  
   
- [!code-xml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
+ [!code-xaml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
   
  [!code-csharp[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml.cs#contextmenueventhandlers)]
  [!code-vb[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContextMenu/VisualBasic/Pane1.xaml.vb#contextmenueventhandlers)]  
@@ -261,7 +261,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.HasDropShadow%2A> property.  
   
- [!code-xml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
+ [!code-xaml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
   
  ]]></format>
         </remarks>
@@ -360,7 +360,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.HorizontalOffset%2A> property to cause a <xref:System.Windows.Controls.ContextMenu> to open at a specified location in relation to its button parent.  
   
- [!code-xml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
+ [!code-xaml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
   
  ]]></format>
         </remarks>
@@ -634,7 +634,7 @@
 ## Examples  
  The following example shows how use the <xref:System.Windows.Controls.ContextMenu> events: <xref:System.Windows.Controls.ContextMenu.Opened> and <xref:System.Windows.Controls.ContextMenu.Closed>.  
   
- [!code-xml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
+ [!code-xaml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
   
  [!code-csharp[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml.cs#contextmenueventhandlers)]
  [!code-vb[ContextMenu#ContextMenuEventHandlers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContextMenu/VisualBasic/Pane1.xaml.vb#contextmenueventhandlers)]  
@@ -704,7 +704,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.Placement%2A> property and a placement mode to specify where the <xref:System.Windows.Controls.ContextMenu> is placed.  
   
- [!code-xml[ContextMenu#ContextMenuPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuplacement)]  
+ [!code-xaml[ContextMenu#ContextMenuPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuplacement)]  
   
  ]]></format>
         </remarks>
@@ -769,7 +769,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.PlacementRectangle%2A> property and specify where the <xref:System.Windows.Controls.ContextMenu> is placed.  
   
- [!code-xml[ContextMenu#ContextMenuPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuplacement)]  
+ [!code-xaml[ContextMenu#ContextMenuPlacement](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuplacement)]  
   
  ]]></format>
         </remarks>
@@ -936,7 +936,7 @@
 ## Examples  
  The following example uses the <xref:System.Windows.Controls.ContextMenu.StaysOpen%2A> property to make a context menu that will stay open until an event occurs that changes the <xref:System.Windows.Controls.ContextMenu.IsOpen%2A> property to `false`.  
   
- [!code-xml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
+ [!code-xaml[ContextMenu#ContextMenuEvents](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuevents)]  
   
  ]]></format>
         </remarks>
@@ -1034,7 +1034,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.ContextMenu.VerticalOffset%2A> property to cause a <xref:System.Windows.Controls.ContextMenu> to open at a specified location in relation to its button parent.  
   
- [!code-xml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
+ [!code-xaml[ContextMenu#ContextMenuProps](~/samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#contextmenuprops)]  
   
  ]]></format>
         </remarks>

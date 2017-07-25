@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods for creating and configuring rules to define CLR objects as Managed Extensibility Framework (MEF) parts.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +29,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Convention.ConventionBuilder" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForType">
@@ -49,10 +51,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type.</param>
+        <summary>Creates a rule that applies to the specified type.</summary>
+        <returns>An object that can be used to further configure the rule.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForType&lt;T&gt;">
@@ -73,10 +76,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The generic type.</typeparam>
+        <summary>Creates a rule that applies to the specified generic type.</summary>
+        <returns>An object that can be used to further configure the rule.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesDerivedFrom">
@@ -96,10 +100,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type.</param>
+        <summary>Creates a rule that applies to all types that implement, or are derived from, the specified type.</summary>
+        <returns>An object that can be used to further configure the rule.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesDerivedFrom&lt;T&gt;">
@@ -120,10 +125,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The generic type.</typeparam>
+        <summary>Creates a rule that applies to all types that implement, or are derived from, the specified generic type.</summary>
+        <returns>An object that can be used to further configure the rule.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesMatching">
@@ -143,10 +149,11 @@
         <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="typeFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeFilter">The predicate to match.</param>
+        <summary>Creates a rule that applies to types that match the specified predicate.</summary>
+        <returns>An object that can be used to further configure the rule.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesMatching&lt;T&gt;">
@@ -169,11 +176,12 @@
         <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="typeFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type to match.</typeparam>
+        <param name="typeFilter">The predicate to match.</param>
+        <summary>Creates a rule that applies to types that match the specified predicate and generic type.</summary>
+        <returns>An object that can be used to further configure the rule.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -194,11 +202,12 @@
         <Parameter Name="member" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="member">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type.</param>
+        <param name="member">The member to inspect.</param>
+        <summary>Retrieves the list of custom attributes applied to the specified member of the specified type.</summary>
+        <returns>A collection of custom attributes.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -219,11 +228,12 @@
         <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type.</param>
+        <param name="parameter">The parameter to inspect.</param>
+        <summary>Retrieves the list of custom attributes applied to the specified parameter of the specified type.</summary>
+        <returns>A collection of custom attributes.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

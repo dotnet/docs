@@ -24,7 +24,7 @@ The following solutions are used to manage persistent data in Docker application
 
 -   Remote data sources like SQL or NoSQL databases, or cache services like [Redis](https://redis.io/).
 
--   [Azure Storage](https://azure.microsoft.com/en-us/documentation/services/storage/), which provides geo-distributable storage, providing a good long-term persistence solution for containers.
+-   [Azure Storage](https://docs.microsoft.com/azure/storage/), which provides geo-distributable storage, providing a good long-term persistence solution for containers.
 
 The following provides more detail about these options.
 

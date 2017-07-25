@@ -45,10 +45,10 @@ Having SQL Server running as a container is not just useful for a demo where you
 #### Additional resources
 
 -   **Run the SQL Server Docker image on Linux, Mac, or Windows**
-    [*https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-docker*](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-docker)
+    [*https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker*](https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker)
 
 -   **Connect and query SQL Server on Linux with sqlcmd**
-    [*https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-connect-and-query-sqlcmd*](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
+    [*https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd*](https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
 
 ### Seeding with test data on Web application startup
 
@@ -98,7 +98,7 @@ public class CatalogContextSeed
         }
     }
 
-    static IEnumerable<;CatalogBrand> GetPreconfiguredCatalogBrands()
+    static IEnumerable<CatalogBrand> GetPreconfiguredCatalogBrands()
     {
         return new List<CatalogBrand>()
        {
@@ -109,7 +109,7 @@ public class CatalogContextSeed
        };
     }
 
-    static IEnumerable<;CatalogType> GetPreconfiguredCatalogTypes()
+    static IEnumerable<CatalogType> GetPreconfiguredCatalogTypes()
     {
         return new List<CatalogType>()
         {
@@ -136,9 +136,9 @@ public class Startup
     {
         services.AddSingleton<IConfiguration>(Configuration);
         // DbContext using an InMemory database provider
-        services.AddDbContext<;CatalogContext>(opt => opt.UseInMemoryDatabase());
+        services.AddDbContext<CatalogContext>(opt => opt.UseInMemoryDatabase());
         //(Alternative: DbContext using a SQL Server provider
-        //services.AddDbContext<;CatalogContext>(c =>
+        //services.AddDbContext<CatalogContext>(c =>
         //{
             // c.UseSqlServer(Configuration["ConnectionString"]);
             //

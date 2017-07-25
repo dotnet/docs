@@ -65,7 +65,7 @@ The C# language's exception handling features help you deal with any unexpected 
   
 -   Code in a `finally` block is executed even if an exception is thrown. Use a `finally` block to release resources, for example to close any streams or files that were opened in the `try` block.  
   
--   Managed exceptions in the .NET Framework are implemented on top of the Win32 structured exception handling mechanism. For more information, see [Structured Exception Handling (C/C++)](https://docs.microsoft.com/cpp/cpp/structured-exception-handling-c-cpp) and [A Crash Course on the Depths of Win32 Structured Exception Handling](http://go.microsoft.com/fwlink/?LinkId=119654).  
+-   Managed exceptions in the .NET Framework are implemented on top of the Win32 structured exception handling mechanism. For more information, see [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) and [A Crash Course on the Depths of Win32 Structured Exception Handling](http://go.microsoft.com/fwlink/?LinkId=119654).  
   
 ## Related Sections  
  See the following topics for more information about exceptions and exception handling:  

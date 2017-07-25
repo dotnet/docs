@@ -57,7 +57,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.Primitives.Popup> control.  
   
- [!code-xml[PopupSimple#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml#2)]  
+ [!code-xaml[PopupSimple#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml#2)]  
   
  [!code-csharp[PopupSimple#CreatePopup](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml.cs#createpopup)]
  [!code-vb[PopupSimple#CreatePopup](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSimple/VisualBasic/Window1.xaml.vb#createpopup)]  
@@ -122,7 +122,7 @@
   
  [!code-csharp[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#allowstransparency)]
  [!code-vb[PopupSnips#AllowsTransparency](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#allowstransparency)]
- [!code-xml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
+ [!code-xaml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
   
  ]]></format>
         </remarks>
@@ -201,7 +201,7 @@
   
  [!code-csharp[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#child)]
  [!code-vb[PopupSnips#Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#child)]
- [!code-xml[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#child)]  
+ [!code-xaml[PopupSnips#Child](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#child)]  
   
  ]]></format>
         </remarks>
@@ -251,7 +251,7 @@
   
  [!code-csharp[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#closed)]
  [!code-vb[PopupSnips#Closed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#closed)]
- [!code-xml[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#closed)]  
+ [!code-xaml[PopupSnips#Closed](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#closed)]  
   
  ]]></format>
         </remarks>
@@ -541,7 +541,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom> (which is the default), so the target origin is the bottom left corner of the target area and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- [!code-xml[PopupPositionSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]   
+ [!code-xaml[PopupPositionSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]   
   
  ]]></format>
         </remarks>
@@ -609,7 +609,7 @@
   
  [!code-csharp[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#isopen)]
  [!code-vb[PopupSnips#IsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#isopen)]
- [!code-xml[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#isopen)]  
+ [!code-xaml[PopupSnips#IsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#isopen)]  
   
  ]]></format>
         </remarks>
@@ -867,7 +867,7 @@
   
  [!code-csharp[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#opened)]
  [!code-vb[PopupSnips#Opened](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#opened)]
- [!code-xml[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#opened)]  
+ [!code-xaml[PopupSnips#Opened](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#opened)]  
   
  ]]></format>
         </remarks>
@@ -917,7 +917,7 @@
 ## Examples  
  The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to an image. Each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
   
- [!code-xml[PopupPositionSnippet#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#3)]   
+ [!code-xaml[PopupPositionSnippet#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#3)]   
   
  ]]></format>
         </remarks>
@@ -982,7 +982,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property of a <xref:System.Windows.Controls.Primitives.Popup>. The <xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>, <xref:System.Windows.Rect.Width%2A>, and <xref:System.Windows.Rect.Height%2A> properties of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> are 50, 50, 50, and 100, respectively. The <xref:System.Windows.Controls.Primitives.Popup> is relative to the bounds of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property. Note that the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property does not create a visible element in the application; the example creates a <xref:System.Windows.Shapes.Rectangle> with the same bounds to represent the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>.  
   
- [!code-xml[PopupPositionSnippet#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#6)]   
+ [!code-xaml[PopupPositionSnippet#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#6)]   
   
  ]]></format>
         </remarks>
@@ -1050,7 +1050,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>, and sets <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> to `ellipse1`, so the popup is relative to the <xref:System.Windows.Shapes.Ellipse>.  
   
- [!code-xml[PopupPositionSnippet#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#2)]    
+ [!code-xaml[PopupPositionSnippet#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#2)]    
   
  ]]></format>
         </remarks>
@@ -1119,7 +1119,7 @@
   
  [!code-csharp[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#allowstransparency)]
  [!code-vb[PopupSnips#AllowsTransparency](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#allowstransparency)]
- [!code-xml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
+ [!code-xaml[PopupSnips#AllowsTransparency](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#allowstransparency)]  
   
  [!code-csharp[PopupSnips#Animation](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#animation)]
  [!code-vb[PopupSnips#Animation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#animation)]  
@@ -1190,7 +1190,7 @@
   
  [!code-csharp[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml.cs#staysopen)]
  [!code-vb[PopupSnips#StaysOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PopupSnips/visualbasic/window1.xaml.vb#staysopen)]
- [!code-xml[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#staysopen)]  
+ [!code-xaml[PopupSnips#StaysOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSnips/Csharp/Window1.xaml#staysopen)]  
   
  ]]></format>
         </remarks>
@@ -1329,7 +1329,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom> (which is the default), so the target origin is the bottom left corner of the target area, and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- [!code-xml[PopupPositionSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]     
+ [!code-xaml[PopupPositionSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]     
   
  ]]></format>
         </remarks>

@@ -27,7 +27,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Window>.  The example adds a <xref:System.Windows.Controls.ContentPresenter> as the child element of an <xref:System.Windows.Documents.AdornerDecorator>. The logical child elements of the window can be adorned because the <xref:System.Windows.Documents.AdornerDecorator> is in their visual tree.  
   
- [!code-xml[ControlTemplateExamples#Window](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/window.xaml#window)]  
+ [!code-xaml[ControlTemplateExamples#Window](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/window.xaml#window)]  
   
  ]]></format>
     </remarks>

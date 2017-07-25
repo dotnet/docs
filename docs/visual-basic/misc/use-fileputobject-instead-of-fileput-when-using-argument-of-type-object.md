@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Use &#39;FilePutObject&#39; instead of &#39;FilePut&#39; when using argument of type &#39;Object&#39;
-The `FilePut` method includes an argument of type`Object`. `FilePutObject` should be used in place of `FilePut` to avoid ambiguities.  
+The `FilePut` method includes an argument of type `Object`. `FilePutObject` should be used in place of `FilePut` to avoid ambiguities.  
   
 ## To correct this error  
   

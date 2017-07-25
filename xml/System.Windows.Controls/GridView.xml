@@ -44,7 +44,7 @@
   
  [!code-csharp[ListViewCode#GridViewColumn](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumn)]
  [!code-vb[ListViewCode#GridViewColumn](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumn)]
- [!code-xml[ListViewCode#GridViewColumn](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumn)]  
+ [!code-xaml[ListViewCode#GridViewColumn](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumn)]  
   
  To style the rows in a <xref:System.Windows.Controls.GridView>, define a style for the <xref:System.Windows.Controls.ListViewItem> controls in the <xref:System.Windows.Controls.ListView>.  
   
@@ -55,7 +55,7 @@
 ## Examples  
  The following example shows how to define a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView> as its <xref:System.Windows.Controls.ListView.View%2A>.  
   
- [!code-xml[ListViewSnips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#1)]  
+ [!code-xaml[ListViewSnips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -159,8 +159,8 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.GridView.AllowsColumnReorder%2A> property.  
   
- [!code-xml[ListViewCode#GridViewAllowsColumnReorderPart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart1)]  
-[!code-xml[ListViewCode#GridViewAllowsColumnReorderPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart2)]  
+ [!code-xaml[ListViewCode#GridViewAllowsColumnReorderPart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart1)]  
+[!code-xaml[ListViewCode#GridViewAllowsColumnReorderPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart2)]  
   
  [!code-csharp[ListViewCode#GridViewAllowsColumnReorder](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewallowscolumnreorder)]
  [!code-vb[ListViewCode#GridViewAllowsColumnReorder](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewallowscolumnreorder)]  
@@ -304,9 +304,9 @@
 ## Examples  
  The following example shows how to define the <xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A> property.  
   
- [!code-xml[ListViewTemplate#GridViewHeaderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheaderstyle)]  
+ [!code-xaml[ListViewTemplate#GridViewHeaderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheaderstyle)]  
   
- [!code-xml[ListViewTemplate#GridViewColumnHeaderContainerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnheadercontainertemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewColumnHeaderContainerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnheadercontainertemplate)]  
   
  ]]></format>
         </remarks>
@@ -505,9 +505,9 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property.  
   
- [!code-xml[ListViewTemplate#GridViewHeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheadertemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewHeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheadertemplate)]  
   
- [!code-xml[ListViewTemplate#GridViewColumnHeaderContainerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnheadercontainertemplate)]  
+ [!code-xaml[ListViewTemplate#GridViewColumnHeaderContainerTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnheadercontainertemplate)]  
   
  ]]></format>
         </remarks>
@@ -701,8 +701,8 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Controls.GridView.ColumnHeaderToolTip%2A> property.  
   
- [!code-xml[ListViewCode#GridViewAllowsColumnReorderPart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart1)]  
-[!code-xml[ListViewCode#GridViewAllowsColumnReorderPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart2)]  
+ [!code-xaml[ListViewCode#GridViewAllowsColumnReorderPart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart1)]  
+[!code-xaml[ListViewCode#GridViewAllowsColumnReorderPart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewallowscolumnreorderpart2)]  
   
  [!code-csharp[ListViewCode#GridViewAllowsColumnReorder](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewallowscolumnreorder)]
  [!code-vb[ListViewCode#GridViewAllowsColumnReorder](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewallowscolumnreorder)]  

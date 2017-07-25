@@ -56,7 +56,8 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |6|The compiler accepts only syntax that is included in C# 6.0 or lower <sup id="TCS6">[CS6](#FCS6)</sup>|
 |7|The compiler accepts only syntax that is included in C# 7.0 or lower <sup id="TCS7">[CS7](#FCS7)</sup>|
 |latest|The compiler accepts all valid language syntax that it can support. <sup id="TLatest">[Latest](#FLatest)</sup>|
-<!--- Uncomment and move these above |latest| once they're officially released
+<!--- Uncomment and move these above
+|latest| once they're officially released
 |7.1|The compiler accepts only syntax that is included in C# 7.1 or lower <sup id="TCS71">[CS71](#FCS71)</sup>|
 |7.2|The compiler accepts only syntax that is included in C# 7.2 or lower <sup id="TCS71">[CS72](#FCS72)</sup>|
 |8|The compiler accepts only syntax that is included in C# 8 or lower <sup id="TCS71">[CS8](#FCS8)</sup>|
@@ -68,7 +69,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
  Because each version of the C# compiler contains extensions to the language specification, **/langversion** does not give you the equivalent functionality of an earlier version of the compiler.  
  
- Additionally, while C# version updates generally coincide with major .Net Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features will definitely require a new compiler update that is also released alongside the C# revision, each specific feature has it's own minimum .Net API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+ Additionally, while C# version updates generally coincide with major .Net Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features will definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .Net API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
   
  Regardless of which **/langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [/moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **/langversion:ISO-1**.  
   
@@ -86,16 +87,16 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
     
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
  
 ### C# Language Specification
- [C# Language Specification Reference](../../../csharp/language-reference/language-specification.md) : .NET Foundation   
+ [C# Language Specification Reference](../../../csharp/language-reference/language-specification/index.md) : .NET Foundation   
  C# 1.0/1.1 [ISO/IEC 23270:2003](https://www.iso.org/standard/36768.html) Information technology -- C# Language Specification : ISO Catalogue   
  C# 2.0 [ISO/IEC 23270:2006](https://www.iso.org/standard/42926.html) Information technology -- C# Language Specification : ISO Catalogue   
  C# 2.0 [c042926_ISO_IEC_23270_2006(E).zip](http://go.microsoft.com/fwlink/?LinkId=144406) ISO/IEC 23270:2006 in PDF format : ISO Freely Available Standards   
  C# 3.0 [CSharp Language Specification.doc](http://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc) C# Language Specification Version 3.0 : Microsoft Corporation   
  C# 4.0 [Ecma-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-334.pdf) Standard ECMA-334 4th Edition    
- C# 5.0 [CSharp Language Specification.docx](www.microsoft.com/en-us/download/details.aspx?id=7029) C# Language Specification Version 5.0 : Microsoft Corporation   
+ C# 5.0 [CSharp Language Specification.docx](https://www.microsoft.com/en-us/download/details.aspx?id=7029) C# Language Specification Version 5.0 : Microsoft Corporation   
  C# 6.0 [README.md](https://github.com/dotnet/csharplang/blob/master/spec/README.md) C# Language Specification Version 6 - Unofficial Draft : .NET Foundation   
  C# 7.0 (not currently available)   
 

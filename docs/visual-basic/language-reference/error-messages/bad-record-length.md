@@ -40,7 +40,7 @@ Among the possible causes of this error are:
   
 -   The variable in a `FilePut` or `FilePutObject` statement is or includes a variable-length string.  
   
--   The variable in a `FilePut` or `FilePutObject` is or includes a `Variant`type**.**  
+-   The variable in a `FilePut` or `FilePutObject` is or includes a `Variant` type.  
   
 ## To correct this error  
   

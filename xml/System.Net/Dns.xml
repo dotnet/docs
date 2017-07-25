@@ -887,15 +887,13 @@
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
-  
-   
-  
+
 ## Examples  
  The following code example uses the <xref:System.Net.Dns.GetHostEntry%2A> method to resolve an IP address to an <xref:System.Net.IPHostEntry> instance.  
   
- [!code-cpp[System.Net.Dns#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Dns/CPP/dnsnewmethods.cpp#1)]
- [!code-csharp[System.Net.Dns#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Dns/CS/dnsnewmethods.cs#1)]
- [!code-vb[System.Net.Dns#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Dns/vb/dnsnewmethods.vb#1)]  
+ [!code-cpp[System.Net.Dns#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Dns/CPP/dnsnewmethods.cpp#4)]
+ [!code-csharp[System.Net.Dns#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Dns/CS/dnsnewmethods.cs#4)]
+ [!code-vb[System.Net.Dns#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Dns/vb/dnsnewmethods.vb#4)]  
   
  ]]></format>
         </remarks>

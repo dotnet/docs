@@ -53,7 +53,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event.  
   
- [!code-xml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[ListBoxEvent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#1)]  
   
  [!code-csharp[ListBoxEvent#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#2)]
  [!code-vb[ListBoxEvent#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#2)]  
@@ -456,7 +456,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.ListBox.SelectionMode%2A> property to <xref:System.Windows.Controls.SelectionMode.Multiple>.  
   
- [!code-xml[ListBoxEvent#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#4)]  
+ [!code-xaml[ListBoxEvent#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#4)]  
   
  ]]></format>
         </remarks>

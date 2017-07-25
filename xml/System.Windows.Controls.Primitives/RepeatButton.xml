@@ -33,7 +33,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Controls.Primitives.RepeatButton>.  
   
- [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
 [!code-csharp[RepeatButton#2](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml.cs#2)]
 [!code-vb[RepeatButton#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RepeatButton/VisualBasic/Pane1.xaml.vb#2)]  
   
@@ -97,7 +97,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property to set the time that a <xref:System.Windows.Controls.Primitives.RepeatButton> waits before it starts repeating.  
   
- [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
   
  ]]></format>
         </remarks>
@@ -161,7 +161,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property to set the time between repeats after the <xref:System.Windows.Controls.Primitives.RepeatButton> starts repeating.  
   
- [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
   
  ]]></format>
         </remarks>

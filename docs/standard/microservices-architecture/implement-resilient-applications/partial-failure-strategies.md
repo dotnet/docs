@@ -22,12 +22,12 @@ Strategies for dealing with partial failures include the following.
 
 **Provide fallbacks**. In this approach, the client process performs fallback logic when a request fails, such as returning cached data or a default value. This is an approach suitable for queries, and is more complex for updates or commands.
 
-**Limit the number of queued requests**. Clients should also impose an upper bound on the number of outstanding requests that a client microservice can send to a particular service. If the limit has been reached, it is probably pointless to make additional requests, and those attempts should fail immediately. In terms of implementation, the Polly [Bulkhead Isolation](https://github.com/App-vNext/Polly/wiki/Bulkhead) policy can be used to fulfil this requirement. This approach is essentially a parallelization throttle with [SemaphoreSlim](https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim?view=netcore-1.1) as the implementation. It also permits a "queue" outside the bulkhead. You can proactively shed excess load even before execution (for example, because capacity is deemed full). This makes its response to certain failure scenarios faster than a circuit breaker would be, since the circuit breaker waits for the failures. The BulkheadPolicy object in Polly exposes how full the bulkhead and queue are, and offers events on overflow so can also be used to drive automated horizontal scaling.
+**Limit the number of queued requests**. Clients should also impose an upper bound on the number of outstanding requests that a client microservice can send to a particular service. If the limit has been reached, it is probably pointless to make additional requests, and those attempts should fail immediately. In terms of implementation, the Polly [Bulkhead Isolation](https://github.com/App-vNext/Polly/wiki/Bulkhead) policy can be used to fulfil this requirement. This approach is essentially a parallelization throttle with [SemaphoreSlim](https://docs.microsoft.com/dotnet/api/system.threading.semaphoreslim?view=netcore-1.1) as the implementation. It also permits a "queue" outside the bulkhead. You can proactively shed excess load even before execution (for example, because capacity is deemed full). This makes its response to certain failure scenarios faster than a circuit breaker would be, since the circuit breaker waits for the failures. The BulkheadPolicy object in Polly exposes how full the bulkhead and queue are, and offers events on overflow so can also be used to drive automated horizontal scaling.
 
 ## Additional resources
 
 -   **Resiliency patterns**
-    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency)
+    [*https://docs.microsoft.com/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency)
 
 -   **Adding Resilience and Optimizing Performance**
     [*https://msdn.microsoft.com/en-us/library/jj591574.aspx*](https://msdn.microsoft.com/en-us/library/jj591574.aspx)
@@ -36,10 +36,10 @@ Strategies for dealing with partial failures include the following.
     [*https://github.com/App-vNext/Polly/wiki/Bulkhead*](https://github.com/App-vNext/Polly/wiki/Bulkhead)
 
 -   **Designing resilient applications for Azure**
-    [*https://docs.microsoft.com/en-us/azure/architecture/resiliency/*](https://docs.microsoft.com/en-us/azure/architecture/resiliency/)
+    [*https://docs.microsoft.com/azure/architecture/resiliency/*](https://docs.microsoft.com/azure/architecture/resiliency/)
 
 -   **Transient fault handling**
-    <https://docs.microsoft.com/en-us/azure/architecture/best-practices/transient-faults>
+    <https://docs.microsoft.com/azure/architecture/best-practices/transient-faults>
 
 
 >[!div class="step-by-step"]

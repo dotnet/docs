@@ -18,9 +18,9 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 > [!NOTE]
-> Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
-> * In Visual Studio for Mac, select **Help > Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report.
-> * To make a suggestion, select **Help > Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
+> Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
+> * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/41/index.html) portal.
+> * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/v
 
    ![Bottom margin of the IDE showing the Errors button](./media/using-on-mac-vs-full-solution/vsmacfull03b.png)
 
-1. Select **Build > Build All** from the menu.
+1. Select **Build** > **Build All** from the menu.
 
    The solution builds. The build output panel shows that the build is successful.
 
@@ -64,7 +64,7 @@ Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/v
 
 Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is [xUnit](https://xunit.github.io/).
 
-1. In the **Solution** sidebar, right-click the `WordCounter` solution and select **Add > Add New Project**.
+1. In the **Solution** sidebar, right-click the `WordCounter` solution and select **Add** > **Add New Project**.
 
 1. In the **New Project** dialog, select **Tests** from the **.NET Core** node. Select the **xUnit Test Project** followed by **Next**.
 
@@ -110,13 +110,13 @@ Unit tests provide automated software testing during your development and publis
 
    Using TDD, it's important to make a new test fail once to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
 
-1. Currently, Visual Studio for Mac doesn't integrate xUnit tests into its built-in test runner, so run xUnit tests in the console. Right-click the `TestLibrary` project, and choose **Tools > Open in Terminal** from the context menu. At the command prompt, execute `dotnet test`.
+1. Currently, Visual Studio for Mac doesn't integrate xUnit tests into its built-in test runner, so run xUnit tests in the console. Right-click the `TestLibrary` project, and choose **Tools** > **Open in Terminal** from the context menu. At the command prompt, execute `dotnet test`.
    
    The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good. Leave the console window open, as you prepare to modify the test for its final version in the next step.
 
    ![Test failure in the console window. Total tests: 1 Passed: 0 Failed: 1. Test run failed.](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
 
-1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file by using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, **File > Save** from the menu, or right-clicking on the file's tab and selecting **Save** from the context menu.
+1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file by using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, **File** > **Save** from the menu, or right-clicking on the file's tab and selecting **Save** from the context menu.
 
    You expect that the `searchWord` "Jack" returns two instances with `inputString` "Jack jack" passed into `GetWordCount`. In the console window, execute `dotnet test` again. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
 
@@ -150,7 +150,7 @@ Unit tests provide automated software testing during your development and publis
 
 ## Adding a console app
 
-1. In the **Solution** sidebar, right-click the `WordCounter` solution. Add a new **Console Application** project by selecting the template from the **.NET Core > App** templates. Select **Next**. Name the project **WordCounterApp**. Select **Create** to create the project in the solution.
+1. In the **Solution** sidebar, right-click the `WordCounter` solution. Add a new **Console Application** project by selecting the template from the **.NET Core** > **App** templates. Select **Next**. Name the project **WordCounterApp**. Select **Create** to create the project in the solution.
 
 1. In the **Solutions** sidebar, right-click the **Dependencies** node of the new **WordCounterApp** project. In the **Edit References** dialog, check **TextUtils** and select **OK**.
 
@@ -162,11 +162,11 @@ Unit tests provide automated software testing during your development and publis
 
    ![Project Options window](./media/using-on-mac-vs-full-solution/vsmacfull13.png)
 
-1. Because the preview of Visual Studio for Mac cannot currently run the tests when the solution is run, you run the console app directly. Right-click on the `WordCounterApp` project and select **Run item** from the context menu. If you attempt to run the app with the Play button, the test runner and app fail to run. For more information on the status of the work on this issue, see [xunit/xamarinstudio.xunit (#60)](https://github.com/xunit/xamarinstudio.xunit/issues/60). When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
+1. Because the current version of Visual Studio for Mac cannot run the tests when the solution is run, you run the console app directly. Right-click on the `WordCounterApp` project and select **Run item** from the context menu. If you attempt to run the app with the Play button, the test runner and app fail to run. For more information on the status of the work on this issue, see [xunit/xamarinstudio.xunit (#60)](https://github.com/xunit/xamarinstudio.xunit/issues/60). When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
 
    ![Console window showing the word olives searched in the string, 'Iro ate olives by the lake, and the olives were wonderful.' The app responds, 'The search word olives appears 2 times.'](./media/using-on-mac-vs-full-solution/vsmacfull14.png)
 
-1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run > Toggle Breakpoint** from the menu.
+1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run** > **Toggle Breakpoint** from the menu.
 
    ![Breakpoint is set on line 23, the Console.WriteLine statement](./media/using-on-mac-vs-full-solution/vsmacfull15.png)
 

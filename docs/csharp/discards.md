@@ -12,12 +12,12 @@ ms.devlang: csharp
 ---
 # Discards - C# Guide
 
-Starting with C# 7, C# supports discards, which are temporary, dummy variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they do not have a value. Discards can reduce memory allocations and and enhance the readability and maintainability of your code.
+Starting with C# 7, C# supports discards, which are temporary, dummy variables that are intentionally unused in application code. Discards are equivalent to unassigned variables; they do not have a value. Because there is only a single discard variable, and that variable may not even be allocated storage, discards can reduce memory allocations. Because they make the intent of your code clear, they enhance its readability and maintainability.
 
 You indicate that a variable is a discard by assigning it the underscore (`_`) as its name. For example, the following method call returns a 3-tuple in which the first and second values are discards:
 
 ```csharp
-(var -, -, area) = city.GetCityInformation(cityName);
+(var _, _, area) = city.GetCityInformation(cityName);
 ```
 
 In C# 7, discards are supported in assignments in the following contexts:
@@ -27,7 +27,7 @@ In C# 7, discards are supported in assignments in the following contexts:
 - Calls to methods with `out` parameters.
 - A standalone `_` when no `_` is in scope.
 
-When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '_' does not exist in the current context". 
+When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '_' does not exist in the current context". This is because `_` is not assigned a value, and may not even be assigned a storage location. If it were an actual variable, you could not discard more than one value, as the previous example did.
 
 ## Tuple and object deconstruction
 
@@ -55,7 +55,7 @@ The following example defines a `ProvidesFormatInfo` method that uses [is](langu
 
 When calling the `Deconstruct` method to deconstruct a user-defined type (an instance of a class, structure, or interface), you can discard the values of individual `out` arguments. But you can also discard the value of `out` arguments when calling any method with an out parameter. 
 
-The following example calls the [DateTime.TryParse(String, out DateTime)](<xref:System.DateTime.TryParse(System.String,System.DateTime@)>) method to determine whether the string representation of a date is valid in the current culture. Since the example is concerned only with validating the date string, and not with parsing it to extract the date, `out` argument to the method is a discard.
+The following example calls the [DateTime.TryParse(String, out DateTime)](<xref:System.DateTime.TryParse(System.String,System.DateTime@)>) method to determine whether the string representation of a date is valid in the current culture. Because the example is concerned only with validating the date string and not with parsing it to extract the date, the `out` argument to the method is a discard.
 
 [!code-csharp[discard-with-out](../../samples/snippets/csharp/programming-guide/discards/discard-out1.cs)]
 

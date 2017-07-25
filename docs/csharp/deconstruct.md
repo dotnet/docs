@@ -18,7 +18,7 @@ A tuple provides a light-weight way to retrieve multiple values from a method ca
 
 [!code-csharp[WithoutDeconstruction](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple1.cs)]
 
-Retrieving multiple field and property values from an object can be equally cumbersome: you have to make assign a field or property value to a variable on a member-by-member basis. 
+Retrieving multiple field and property values from an object can be equally cumbersome: you have to assign a field or property value to a variable on a member-by-member basis. 
 
 Starting with C# 7, you can retrieve multiple elements from a tuple or retrieve multiple field, property, and computed values from an object in a single *deconstruct* operation. When you deconstruct a tuple, you assign its elements to individual variables. When you deconstruct an object, you assign selected values to individual variables. 
 
@@ -44,6 +44,8 @@ There are two ways to deconstruct a tuple:
 
       [!code-csharp[Deconstruction-Infer-Some](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-tuple4.cs#1)]
 
+    This is cumbersome and is not recommended.
+
 Note that you cannot specify a specific type outside the parentheses even if every field in the tuple has the
 same type. This generates compiler error CS8136, "`var (...)` form disallows a specific type for `var`.
 
@@ -51,7 +53,7 @@ Note that you must also assign each element of the tuple to a variable. If you o
 
 ## Deconstructing tuple elements with discards
 
-Often when deconstructing a tuple, you're interested in the values of only some elements. Starting with C# 7, you can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is designated by an underscore character ("_") in an assignment. You can discard as many 
+Often when deconstructing a tuple, you're interested in the values of only some elements. Starting with C# 7, you can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is designated by an underscore character ("_") in an assignment. You can discard as many values as you like; all are represented by the single discard, `_`.
 
 The following example illustrates the use of tuples with discards. The `QueryCityDataForYears` method returns a 6-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.  
 
@@ -75,8 +77,11 @@ The following example overloads the `Deconstruct` method to return various combi
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-Because you can overload the `Deconstruct` method to reflect groups of data that are commonly extracted from an object, you should be careful to define `Deconstruct` methods with signatures that are distinctive and unambiguous. Multiple `Deconstruct` methods that have the
-same number of `out` parameters or the same number and type of `out` parameters in a different order can cause confusion. 
+Because you can overload the `Deconstruct` method to reflect groups of data that are commonly extracted from an object, you should be careful to define `Deconstruct` methods with signatures that are distinctive and unambiguous. Multiple `Deconstruct` methods that have the same number of `out` parameters or the same number and type of `out` parameters in a different order can cause confusion. 
+
+The overloaded `Deconstruct` method in the following example illustrates one possible source of confusion. The first overload returns the first name, middle name, last name, and age of a `Person` object, in that order. The second overload returns name information only along with annual income, but the first, middle, and last name are in a different order. This makes it easy to confuse the order of arguments when deconstructing a `Person` instance.
+
+[!code-csharp[Deconstruct-ambiguity](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-ambiguous.cs)]
 
 ## Deconstructing a user-defined type with discards
 

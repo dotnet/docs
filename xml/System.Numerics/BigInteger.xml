@@ -2852,8 +2852,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Byte> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Byte> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#1)]
- [!code-vb[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#1)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#1)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#1)]  
 
  ]]></format>
         </remarks>
@@ -2904,8 +2904,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Decimal> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Decimal> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#2)]
- [!code-vb[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#2)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#2)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#2)]  
 
  ]]></format>
         </remarks>
@@ -2962,8 +2962,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Double> values.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#3)]
- [!code-vb[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#3)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#3)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#3)]  
 
  ]]></format>
         </remarks>
@@ -3014,8 +3014,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int16> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int16> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#4)]
- [!code-vb[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#4)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#4)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#4)]  
 
  ]]></format>
         </remarks>
@@ -3071,8 +3071,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int32> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int32> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#5)]
- [!code-vb[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#5)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#5)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#5)]  
 
  ]]></format>
         </remarks>
@@ -3128,8 +3128,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int64> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int64> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#6)]
- [!code-vb[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#6)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#6)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#6)]  
 
  ]]></format>
         </remarks>
@@ -3185,8 +3185,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.SByte> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.SByte> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#7)]
- [!code-vb[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#7)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#7)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#7)]  
 
  ]]></format>
         </remarks>
@@ -3238,8 +3238,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Single> values. 
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#8)]
- [!code-vb[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#8)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#8)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#8)]  
 
  ]]></format>
         </remarks>
@@ -3295,8 +3295,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt16> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt16> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#9)]
- [!code-vb[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#9)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#9)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#9)]  
 
  ]]></format>
         </remarks>
@@ -3352,8 +3352,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt32> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt32> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#10)]
- [!code-vb[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#10)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#10)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#10)]  
 
  ]]></format>
         </remarks>
@@ -3409,8 +3409,8 @@ value Mod 2 = 0
 ## Examples
  The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt64> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt64> data type.
 
- [!code-csharp[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Explicit.cs#11)]
- [!code-vb[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Explicit.vb#11)]  
+ [!code-csharp[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#11)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#11)]  
 
  ]]></format>
         </remarks>
@@ -4038,8 +4038,8 @@ value Mod 2 = 0
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Byte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#1)]
- [!code-vb[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#1)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#1)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#1)]  
 
  ]]></format>
         </remarks>
@@ -4080,8 +4080,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#2)]
- [!code-vb[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#2)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#2)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigIntegerImplicit/vb/Implicit1.vb#2)]  
 
  ]]></format>
         </remarks>
@@ -4122,8 +4122,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#3)]
- [!code-vb[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#3)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#3)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#3)]  
 
  ]]></format>
         </remarks>
@@ -4164,8 +4164,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#4)]
- [!code-vb[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#4)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#4)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#4)]  
 
  ]]></format>
         </remarks>
@@ -4211,8 +4211,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.SByte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#5)]
- [!code-vb[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#5)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#5)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#5)]  
 
  ]]></format>
         </remarks>
@@ -4258,8 +4258,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#6)]
- [!code-vb[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#6)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#6)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#6)]  
 
  ]]></format>
         </remarks>
@@ -4305,8 +4305,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#7)]
- [!code-vb[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#7)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#7)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#7)]  
 
  ]]></format>
         </remarks>
@@ -4352,8 +4352,8 @@ value Mod 2 = 0
 ## Remarks  
  The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows. 
  
- [!code-csharp[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/Implicit1.cs#8)]
- [!code-vb[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/Implicit1.vb#8)]  
+ [!code-csharp[System.Numeric.BigInteger.Implicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#8)]
+ [!code-vb[System.Numeric.BigInteger.Implicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#8)]  
 
  ]]></format>
         </remarks>

@@ -71,9 +71,7 @@ You have access to an extensive set of tools and infrastructure components that 
 - [NuGet](/nuget/), Microsoft's package manager for .NET
 - Open Source build orchestration tools, such as [CAKE](http://cakebuild.net/) and [FAKE](https://fake.build/)
 
-## Next Steps
-
-To learn more, visit the following:
+## See also
 
 [.NET Standard](net-standard.md)  
 [.NET Core Guide](../core/index.md)  

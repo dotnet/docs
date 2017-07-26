@@ -49,7 +49,7 @@ The *discard pattern* can be used in pattern matching with the [is](language-ref
 
 The following example defines a `ProvidesFormatInfo` method that uses [is](language-reference/keywords/is.md) statements to determine whether an object provides an <xref:System.IFormatProvider> implementation and tests whether the object is `null`. It also uses the discard pattern to handle non-null objects of any other type.
 
-[!code-csharp[discard-pattern](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-pattern2.cs)]
+[!code-csharp[discard-pattern](../../samples/snippets/csharp/programming-guide/discards/discard-pattern2.cs)]
 
 ## Calls to methods with out parameters
 

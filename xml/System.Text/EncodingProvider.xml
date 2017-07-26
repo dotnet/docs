@@ -130,13 +130,23 @@
         <param name="codepage">The code page identifier of the requested encoding.</param>
         <summary>Returns the encoding associated with the specified code page identifier.</summary>
         <returns>The encoding that is associated with the specified code page, or <see langword="null" /> if this <see cref="T:System.Text.EncodingProvider" /> cannot return a valid encoding that corresponds to <paramref name="codepage" />.</returns>
-        <remarks>To be added.</remarks>
-        <block subset="none" type="overrides">
-          <para>You override the <see cref="M:System.Text.EncodingProvider.GetEncoding(System.Int32)" /> method to return the encoding or encodings supported by your <see cref="T:System.Text.EncodingProvider" /> subclass. When user code attempts to retrieve an encoding by calling the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method, the method passes the <paramref name="codepage" /> identifier to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method attempts to retrieve a cached encoding whose code page identifier is <paramref name="codepage" />. Because of this, if <paramref name="codepage" /> is not the code page identifier of an encoding that you support, the method should return <see langword="null" />; it should never throw an exception.</para>
-        </block>
-        <block subset="none" type="usage">
-          <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.Int32)" /> method. You should not call it directly from user code.</para>
-        </block>
+        <remarks>
+        <format type="text/markdown"><![CDATA[ 
+
+        ## Remarks
+
+        ### Notes to inheritors
+
+        You override the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method to return the encoding or encodings supported by your <xref=System.Text.EncodingProvider> subclass. When user code attempts to retrieve an encoding by calling the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method, the method passes the `codepage` identifier to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method attempts to retrieve a cached encoding whose code page identifier is `codepage`. Because of this, if `codepage` is not the code page identifier of an encoding that you support, the method should return `null`; it should never throw an exception.
+        
+        Note that you can also choose to return a default code page if the value of the `codepage` argument is 0.
+
+        ## Notes to callers
+        
+        This method is called by the [Encoding.GetEncoding(Int32)](<xref=System.Text.Encoding.GetEncoding(System.Int32)>) method. You should not call it directly from user code.
+
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">
@@ -171,13 +181,20 @@
         <param name="name">The name of the requested encoding.</param>
         <summary>Returns the encoding with the specified name.</summary>
         <returns>The encoding that is associated with the specified name, or <see langword="null" /> if this <see cref="T:System.Text.EncodingProvider" /> cannot return a valid encoding that corresponds to <paramref name="name" />.</returns>
-        <remarks>To be added.</remarks>
-        <block subset="none" type="overrides">
-          <para>You override the <see cref="M:System.Text.EncodingProvider.GetEncoding(System.String)" /> method to return the encoding or encodings supported by your <see cref="T:System.Text.EncodingProvider" /> subclass. When user code attempts to retrieve an encoding by calling the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method, the method passes the <paramref name="name" /> argument to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method attempts to retrieve a cached encoding whose name is <paramref name="name" />. Because of this, if <paramref name="name" /> is not the name of an encoding that you support, the method should return <see langword="null" />. The only case in which the method should throw an exception is if <paramref name="name" /> is <see langword="null" />.</para>
-        </block>
-        <block subset="none" type="usage">
-          <para>This method is called by the <see cref="M:System.Text.Encoding.GetEncoding(System.String)" /> method. You should not call it directly from user code.</para>
-        </block>
+        <remarks>
+           <format type="text/markdown"><![CDATA[ 
+        
+        ## Remarks
+        
+        ### Notes to inheritors 
+        
+        You override the [GetEncoding(String)](<xref=System.Text.EncodingProvider.GetEncoding(System.String)>) method to return the encoding or encodings supported by your <xref=System.Text.EncodingProvider> subclass. When user code attempts to retrieve an encoding by calling the [GetEncoding(String)](<xref=System.Text.EncodingProvider.GetEncoding(System.String)>) method, the method passes the `name` argument to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the [GetEncoding(String)](<xref=System.Text.EncodingProvider.GetEncoding(System.String)>) method attempts to retrieve a cached encoding whose name is `name`. Because of this, if `name` is not the name of an encoding that you support, the method should return `null`. The only case in which the method should throw an exception is if `name` is `null`.
+
+      ### Notes to callers
+
+      This method is called by the [Encoding.GetEncoding(String)](<xref=System.Text.Encoding.GetEncoding(System.String)>) method. You should not call it directly from user code.
+        ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEncoding">

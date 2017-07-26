@@ -1,6 +1,6 @@
 ---
 title: Pattern Matching (F#) | Microsoft Docs
-description: Learn how patterns are used in the F# to compare data with logical structures, decompose data into constituent parts, or extract information from data.
+description: Learn how patterns are used in F# to compare data with logical structures, decompose data into constituent parts, or extract information from data.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

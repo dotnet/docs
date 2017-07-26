@@ -2659,7 +2659,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 
 - If one or more encoding providers have been registered, it returns the encoding of the last registered provider that has chosen to return a encoding when the <xref:System.Text.Encoding.GetEncoding%2A> method is passed a `codepage` argument of 0.     
 
-- On the .NET Framework, if no encoding provider has been registered, if the <xref:System.Text.Encoding.CodePagesEncodingProvider> is the registered encoding provider, or if no registered encoding provider handles a `codepage` value of 0, it returns the operating system's active code page. To determine the active code page on Windows systems, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.
+- On the .NET Framework, if no encoding provider has been registered, if the <xref:System.Text.CodePagesEncodingProvider> is the registered encoding provider, or if no registered encoding provider handles a `codepage` value of 0, it returns the operating system's active code page. To determine the active code page on Windows systems, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.
 
 - On .NET Core, if no no encoding provider has been registered or if no registered encoding provider handles a `codepage` value of 0, it returns the <xref:System.Text.UTF8Encoding>.
   

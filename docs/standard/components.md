@@ -14,14 +14,14 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 
 # .NET Architectural Components
 
-The .NET Standard is an API specification common to all implementations of .NET.  Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. Each implementation of .NET includes the following components:
+The .NET Standard is an API specification common to all implementations of .NET. Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. Each implementation of .NET includes the following components:
 
 - One or more runtimes. Examples: CLR for .NET Framework, CoreCLR and CoreRT for .NET Core.
 - A class library that implements the .NET Standard and may implement additional APIs. Examples: .NET Framework Base Class Library, .NET Core Base Class Library.
 - Optionally, one or more application frameworks. Examples: ASP.NET, Windows Forms, and WPF are included in the .NET Framework.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
-What follows is a brief explanation of the key components mentioned in this overview.  
+What follows is a brief explanation of the key components mentioned in this overview.
 
 ## .NET Standard
 
@@ -43,13 +43,13 @@ To learn more about .NET Core, see the [.NET Core Guide](../core/index.md).
 
 ### .NET Framework
 
-The.NET Framework is the original .NET implementation that has existed since 2002.  It's the same .NET Framework that existing .NET developers have always used.  Versions 4.5 and later implement the .NET Standard, so code that targets the .NET Standard can run on those versions of the .NET Framework.  It contains additional Windows-specific APIs, such as APIs for Windows desktop development with Windows Forms and WPF. The .NET Framework is optimized for building Windows desktop applications.
+The.NET Framework is the original .NET implementation that has existed since 2002. It's the same .NET Framework that existing .NET developers have always used. Versions 4.5 and later implement the .NET Standard, so code that targets the .NET Standard can run on those versions of the .NET Framework. It contains additional Windows-specific APIs, such as APIs for Windows desktop development with Windows Forms and WPF. The .NET Framework is optimized for building Windows desktop applications.
 
 To learn more about the .NET Framework, see the [.NET Framework Guide](../framework/index.md).
 
 ### Mono for Xamarin
 
-Mono is the .NET implementation used by Xamarin apps. It implements the .NET Standard, so code that targets the .NET Standard can run on Xamarin apps.  It contains additional APIs for iOS, Android, Xamarin.Forms, and Xamarin.Mac.  It's optimized for building mobile applications on iOS and Android.
+Mono is the .NET implementation used by Xamarin apps. It implements the .NET Standard, so code that targets the .NET Standard can run on Xamarin apps. It contains additional APIs for iOS, Android, Xamarin.Forms, and Xamarin.Mac. It's optimized for building mobile applications on iOS and Android.
 
 To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
 

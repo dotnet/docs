@@ -1,5 +1,5 @@
 ---
-title: .NET Core distribution packaging
+title: .NET Core distribution packaging | Microsoft Docs
 description: Learn how to package, name, and version .NET Core for distribution.
 keywords: .NET, .NET Core, source, build
 author: bleroy

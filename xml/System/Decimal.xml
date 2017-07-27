@@ -1875,7 +1875,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Byte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToByte(System.Decimal)%2A> or the <xref:System.Convert.ToByte(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Byte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToByte%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToByte%28System.Decimal%29?displayProperty=fullName> method.
  
 
 ## Examples 
@@ -1974,9 +1974,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operation can result in a loss of precision, because a double-precision floating-point number has fewer significant digits than a <see cref="T:System.Decimal" />.
+ This operation can result in a loss of precision, because a double-precision floating-point number has fewer significant digits than a <xref:System.Decimal>.
  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Double>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Double> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToDouble(System.Decimal)%2A> or the <xref:System.Convert.ToDouble(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Double>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Double> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToDouble%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToDouble%28System.Decimal%29?displayProperty=fullName> method.
  
 
 ## Examples
@@ -2027,7 +2027,7 @@
   
 ## Remarks  
 
- This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int16> value by using C#, Visual Basic, and C++. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt16(System.Decimal)%2A> or the <xref:System.Convert.Int16(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int16> value by using C#, Visual Basic, and C++. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt16%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt16%28System.Decimal%29?displayProperty=fullName> method.
  
 
 ## Examples
@@ -2077,7 +2077,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int32> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt32(System.Decimal)%2A> or the <xref:System.Convert.Int32(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int32> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt32%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt32%28System.Decimal%29?displayProperty=fullName> method.
  
 
 ## Examples
@@ -2127,7 +2127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt64(System.Decimal)%2A> or the <xref:System.Convert.Int64(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt64%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt64%28System.Decimal%29?displayProperty=fullName> method.
  
 ## Examples
  The following example converts <xref:System.Decimal> numbers to <xref:System.Int64> values by using the explicit <xref:System.Decimal> to <xref:System.Int64> conversion.
@@ -2181,11 +2181,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.SByte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> and an <xref:System.SByte> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSByte(System.Decimal)%2A> method or the <xref:System.Convert.ToSByte(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.SByte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> and an <xref:System.SByte> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSByte%28System.Decimal%29?displayProperty=fullName> method or the <xref:System.Convert.ToSByte%28System.Decimal%29?displayProperty=fullName> method.   
 
 
 ## Examples 
- The following example converts <xref:System.Decimal> numbers to <xref:System.Sbyte> values by using the explicit <xref:System.Decimal> to <xref:System.SByte> conversion.
+ The following example converts <xref:System.Decimal> numbers to <xref:System.SByte> values by using the explicit <xref:System.Decimal> to <xref:System.SByte> conversion.
 
  [!code-cpp[System.Decimal.Operators.Explicit#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cpp/tosbyte.cpp#1)] 
  [!code-csharp[System.Decimal.Operators.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cs/tosbyte.cs#1)]
@@ -2232,7 +2232,7 @@
 ## Remarks  
  This operation can result in a loss of precision, because a single-precision floating-point number has fewer significant digits than a <xref:System.Decimal>.
 
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Single>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Single> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSingle(System.Decimal)%2A> or the <xref:System.Convert.ToSingle(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Single>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Single> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSingle%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToSingle%28System.Decimal%29?displayProperty=fullName> method.
  
 
 ## Examples
@@ -2287,7 +2287,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt16> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt16(System.Decimal)%2A> or the <xref:System.Convert.ToUInt16(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt16> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt16%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt16%28System.Decimal%29?displayProperty=fullName> method.
  
 
 ## Examples
@@ -2342,7 +2342,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt32> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt32(System.Decimal)%2A> or the <xref:System.Convert.ToUInt32(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt32> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt32%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt32%28System.Decimal%29?displayProperty=fullName> method.
 
 
 ## Examples
@@ -2397,7 +2397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt64(System.Decimal)%2A> or the <xref:System.Convert.ToUInt64(System.Decimal)%2A> method.
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt64%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt64%28System.Decimal%29?displayProperty=fullName> method.
 
 
 ## Examples 
@@ -2500,7 +2500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example converts <xref:System.Single> values <xref:System.Decimal> numbers by using the <xref:SystemSingle> to <xref:System.Decimal> conversion. This conversion requires the op_Explicit operator in Visual Basic.
+ The following example converts <xref:System.Single> values <xref:System.Decimal> numbers by using the <xref:System.Single> to <xref:System.Decimal> conversion. This conversion requires the op_Explicit operator in Visual Basic.
 
  [!code-cpp[System.Decimal.ConvFrom.Others#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CPP/cfromsingle.cpp#3)]
  [!code-csharp[System.Decimal.ConvFrom.Others#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CS/cfromsingle.cs#3)]

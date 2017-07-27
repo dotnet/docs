@@ -1,6 +1,6 @@
 ---
 title: Values (F#) | Microsoft Docs
-description: Values (F#)
+description: Learn how values in F# are quantities that have a specific type.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

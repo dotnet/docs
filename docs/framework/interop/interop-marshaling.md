@@ -1,5 +1,5 @@
 ---
-title: "Interop Marshaling | Microsoft Docs"
+title: "Interop Marshaling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

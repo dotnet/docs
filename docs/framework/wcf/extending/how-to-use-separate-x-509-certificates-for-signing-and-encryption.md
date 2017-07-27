@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Separate X.509 Certificates for Signing and Encryption | Microsoft Docs"
+title: "How to: Use Separate X.509 Certificates for Signing and Encryption"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

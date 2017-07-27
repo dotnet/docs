@@ -1,5 +1,5 @@
 ---
-title: "Instances | Microsoft Docs"
+title: "Instances"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

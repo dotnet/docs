@@ -1,5 +1,5 @@
 ---
-title: "1015 - StartCompletionWorkItem | Microsoft Docs"
+title: "1015 - StartCompletionWorkItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

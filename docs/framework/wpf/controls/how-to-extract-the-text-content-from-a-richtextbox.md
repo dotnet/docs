@@ -1,5 +1,5 @@
 ---
-title: "How to: Extract the Text Content from a RichTextBox | Microsoft Docs"
+title: "How to: Extract the Text Content from a RichTextBox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

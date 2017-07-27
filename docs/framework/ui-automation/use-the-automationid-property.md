@@ -1,5 +1,5 @@
 ---
-title: "Use the AutomationID Property | Microsoft Docs"
+title: "Use the AutomationID Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

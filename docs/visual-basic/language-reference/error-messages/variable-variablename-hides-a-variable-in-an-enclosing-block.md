@@ -1,5 +1,5 @@
 ---
-title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block | Microsoft Docs"
+title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block"
 
 ms.date: "2015-07-20"
 ms.prod: .net

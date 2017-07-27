@@ -1,5 +1,5 @@
 ---
-title: "How to: Get the Default View of a Data Collection | Microsoft Docs"
+title: "How to: Get the Default View of a Data Collection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

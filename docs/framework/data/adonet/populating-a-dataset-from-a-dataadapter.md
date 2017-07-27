@@ -1,5 +1,5 @@
 ---
-title: "Populating a DataSet from a DataAdapter | Microsoft Docs"
+title: "Populating a DataSet from a DataAdapter"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

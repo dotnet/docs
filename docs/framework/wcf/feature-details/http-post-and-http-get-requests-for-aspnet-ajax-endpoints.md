@@ -1,5 +1,5 @@
 ---
-title: "How to: Choose between HTTP POST and HTTP GET requests for ASP.NET AJAX Endpoints | Microsoft Docs"
+title: "How to: Choose between HTTP POST and HTTP GET requests for ASP.NET AJAX Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

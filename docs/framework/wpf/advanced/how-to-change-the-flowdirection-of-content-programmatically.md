@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the FlowDirection of Content Programmatically | Microsoft Docs"
+title: "How to: Change the FlowDirection of Content Programmatically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

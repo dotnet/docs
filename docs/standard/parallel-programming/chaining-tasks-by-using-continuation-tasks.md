@@ -1,5 +1,5 @@
 ---
-title: "Chaining Tasks by Using Continuation Tasks | Microsoft Docs"
+title: "Chaining Tasks by Using Continuation Tasks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "XML namespace URI &#39;&lt;uri&gt;&#39; can be bound only to &#39;xmlns&#39; | Microsoft Docs"
+title: "XML namespace URI &#39;&lt;uri&gt;&#39; can be bound only to &#39;xmlns&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

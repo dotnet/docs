@@ -1,5 +1,5 @@
 ---
-title: "&lt;windowsStreamSecurity&gt; | Microsoft Docs"
+title: "&lt;windowsStreamSecurity&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

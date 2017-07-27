@@ -1,5 +1,5 @@
 ---
-title: "WPF and WF Integration in XAML | Microsoft Docs"
+title: "WPF and WF Integration in XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

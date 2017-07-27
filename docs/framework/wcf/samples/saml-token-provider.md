@@ -1,5 +1,5 @@
 ---
-title: "SAML Token Provider | Microsoft Docs"
+title: "SAML Token Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

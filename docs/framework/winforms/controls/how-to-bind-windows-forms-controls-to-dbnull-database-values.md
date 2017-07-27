@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind Windows Forms Controls to DBNull Database Values | Microsoft Docs"
+title: "How to: Bind Windows Forms Controls to DBNull Database Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

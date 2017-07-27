@@ -1,5 +1,5 @@
 ---
-title: "Input past end of file | Microsoft Docs"
+title: "Input past end of file"
 
 ms.date: "2015-07-20"
 ms.prod: .net

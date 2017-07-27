@@ -1,5 +1,5 @@
 ---
-title: "CLRCreateInstance Function | Microsoft Docs"
+title: "CLRCreateInstance Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

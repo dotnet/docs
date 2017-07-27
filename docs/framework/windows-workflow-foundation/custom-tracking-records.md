@@ -1,5 +1,5 @@
 ---
-title: "Custom Tracking Records | Microsoft Docs"
+title: "Custom Tracking Records"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Hosting Global Static Functions | Microsoft Docs"
+title: "Hosting Global Static Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "SQL Tracking | Microsoft Docs"
+title: "SQL Tracking"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Performance Counters and In-Process Side-By-Side Applications | Microsoft Docs"
+title: "Performance Counters and In-Process Side-By-Side Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

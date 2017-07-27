@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for &lt;namedCaches&gt; | Microsoft Docs"
+title: "&lt;clear&gt; Element for &lt;namedCaches&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

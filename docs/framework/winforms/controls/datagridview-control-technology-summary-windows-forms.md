@@ -1,5 +1,5 @@
 ---
-title: "DataGridView Control Technology Summary (Windows Forms) | Microsoft Docs"
+title: "DataGridView Control Technology Summary (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

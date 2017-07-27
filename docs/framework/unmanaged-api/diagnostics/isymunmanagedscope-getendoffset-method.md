@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedScope::GetEndOffset Method | Microsoft Docs"
+title: "ISymUnmanagedScope::GetEndOffset Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

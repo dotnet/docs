@@ -1,5 +1,5 @@
 ---
-title: "Accessing Application Forms (Visual Basic) | Microsoft Docs"
+title: "Accessing Application Forms (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

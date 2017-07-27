@@ -1,5 +1,5 @@
 ---
-title: "System.IdentityModel.Selectors.StoreCommitTransaction | Microsoft Docs"
+title: "System.IdentityModel.Selectors.StoreCommitTransaction"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

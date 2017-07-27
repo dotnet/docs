@@ -1,5 +1,5 @@
 ---
-title: "Using UI Automation for Automated Testing | Microsoft Docs"
+title: "Using UI Automation for Automated Testing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

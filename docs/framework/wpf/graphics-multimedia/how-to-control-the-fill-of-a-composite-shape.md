@@ -1,5 +1,5 @@
 ---
-title: "How to: Control the Fill of a Composite Shape | Microsoft Docs"
+title: "How to: Control the Fill of a Composite Shape"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Execute a Parameterized Stored Procedure Using EntityCommand | Microsoft Docs"
+title: "How to: Execute a Parameterized Stored Procedure Using EntityCommand"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

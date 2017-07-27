@@ -1,5 +1,5 @@
 ---
-title: Service-oriented architecture  | Microsoft Docs 
+title: Service-oriented architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | Service-oriented architecture 
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

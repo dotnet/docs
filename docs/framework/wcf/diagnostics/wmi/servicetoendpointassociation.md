@@ -1,5 +1,5 @@
 ---
-title: "ServiceToEndpointAssociation | Microsoft Docs"
+title: "ServiceToEndpointAssociation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Unable to write output to memory | Microsoft Docs"
+title: "Unable to write output to memory"
 
 ms.date: "2015-07-20"
 ms.prod: .net

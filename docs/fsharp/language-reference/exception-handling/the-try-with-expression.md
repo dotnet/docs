@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: The try...with Expression (F#) | Microsoft Docs"
+title: "Exceptions: The try...with Expression (F#)"
 description: Learn how to use the F# 'try...with' expression for exception handling.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Automatically Populating the Toolbox with Custom Components | Microsoft Docs"
+title: "Walkthrough: Automatically Populating the Toolbox with Custom Components"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

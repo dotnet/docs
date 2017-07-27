@@ -1,5 +1,5 @@
 ---
-title: Identifying domain-model boundaries for each microservice | Microsoft Docs 
+title: Identifying domain-model boundaries for each microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Identifying domain-model boundaries for each microservice
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

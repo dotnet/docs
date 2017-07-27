@@ -1,5 +1,5 @@
 ---
-title: "4202 - StartSqlCommandExecute | Microsoft Docs"
+title: "4202 - StartSqlCommandExecute"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Handling Reentrancy in Async Apps (C#) | Microsoft Docs"
+title: "Handling Reentrancy in Async Apps (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

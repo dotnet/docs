@@ -1,5 +1,5 @@
 ---
-title: "-highentropyva (C# Compiler Options) | Microsoft Docs"
+title: "-highentropyva (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

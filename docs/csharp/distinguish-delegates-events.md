@@ -1,5 +1,5 @@
 ---
-title: Distinguishing Delegates and Events | Microsoft Docs
+title: Distinguishing Delegates and Events
 description: Learn the difference between delegates and events and when to use each of these features of .NET Core.
 keywords: .NET, .NET Core
 author: BillWagner

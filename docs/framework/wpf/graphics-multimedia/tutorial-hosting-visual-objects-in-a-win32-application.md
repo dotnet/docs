@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Hosting Visual Objects in a Win32 Application | Microsoft Docs"
+title: "Tutorial: Hosting Visual Objects in a Win32 Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

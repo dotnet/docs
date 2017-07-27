@@ -1,5 +1,5 @@
 ---
-title: "Transport: UDP | Microsoft Docs"
+title: "Transport: UDP"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

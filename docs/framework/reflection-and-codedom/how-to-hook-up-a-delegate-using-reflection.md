@@ -1,5 +1,5 @@
 ---
-title: "How to: Hook Up a Delegate Using Reflection | Microsoft Docs"
+title: "How to: Hook Up a Delegate Using Reflection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "1148 - FlowchartSwitchCaseNotFound | Microsoft Docs"
+title: "1148 - FlowchartSwitchCaseNotFound"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

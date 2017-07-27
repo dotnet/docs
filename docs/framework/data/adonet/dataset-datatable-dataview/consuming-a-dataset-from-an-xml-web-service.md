@@ -1,5 +1,5 @@
 ---
-title: "Consuming a DataSet from an XML Web Service | Microsoft Docs"
+title: "Consuming a DataSet from an XML Web Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

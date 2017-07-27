@@ -1,5 +1,5 @@
 ---
-title: "Calling a REST-style service from a WCF service | Microsoft Docs"
+title: "Calling a REST-style service from a WCF service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

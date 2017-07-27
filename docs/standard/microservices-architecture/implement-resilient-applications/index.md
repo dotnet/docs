@@ -1,5 +1,5 @@
 ---
-title: Implementing Resilient Applications | Microsoft Docs 
+title: Implementing Resilient Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing Resilient Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

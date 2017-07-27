@@ -1,5 +1,5 @@
 ---
-title: "EmitAssembly Method | Microsoft Docs"
+title: "EmitAssembly Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

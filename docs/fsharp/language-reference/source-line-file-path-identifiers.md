@@ -1,5 +1,5 @@
 ---
-title: Source Line, File, and Path Identifiers (F#) | Microsoft Docs
+title: Source Line, File, and Path Identifiers (F#)
 description: Learn how to use built-in F# identifier values that enable you to access the source line number, directory, and file name in your code.
 keywords: visual f#, f#, functional programming
 author: cartermp

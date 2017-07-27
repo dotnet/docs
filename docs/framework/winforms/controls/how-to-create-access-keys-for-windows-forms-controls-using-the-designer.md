@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Access Keys for Windows Forms Controls Using the Designer | Microsoft Docs"
+title: "How to: Create Access Keys for Windows Forms Controls Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XML axis properties do not support late binding | Microsoft Docs"
+title: "XML axis properties do not support late binding"
 
 ms.date: "2015-07-20"
 ms.prod: .net

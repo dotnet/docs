@@ -1,5 +1,5 @@
 ---
-title: "How to: Extract the Icon Associated with a File in Windows Forms | Microsoft Docs"
+title: "How to: Extract the Icon Associated with a File in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

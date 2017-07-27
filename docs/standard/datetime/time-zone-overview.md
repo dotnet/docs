@@ -1,5 +1,5 @@
 ---
-title: "Time zone overview | Microsoft Docs"
+title: "Time zone overview"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

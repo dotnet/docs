@@ -1,5 +1,5 @@
 ---
-title: "How to: Encrypt XML Elements with X.509 Certificates | Microsoft Docs"
+title: "How to: Encrypt XML Elements with X.509 Certificates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

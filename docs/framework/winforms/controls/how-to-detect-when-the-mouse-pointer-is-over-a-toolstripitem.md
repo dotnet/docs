@@ -1,5 +1,5 @@
 ---
-title: "How to: Detect When the Mouse Pointer Is Over a ToolStripItem | Microsoft Docs"
+title: "How to: Detect When the Mouse Pointer Is Over a ToolStripItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

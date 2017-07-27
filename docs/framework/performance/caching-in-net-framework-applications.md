@@ -1,5 +1,5 @@
 ---
-title: "Caching in .NET Framework Applications | Microsoft Docs"
+title: "Caching in .NET Framework Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting Direct3D9 Content in WPF | Microsoft Docs"
+title: "Walkthrough: Hosting Direct3D9 Content in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

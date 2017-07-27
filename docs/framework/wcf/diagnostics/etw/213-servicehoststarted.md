@@ -1,5 +1,5 @@
 ---
-title: "213 - ServiceHostStarted | Microsoft Docs"
+title: "213 - ServiceHostStarted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

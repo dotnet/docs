@@ -1,5 +1,5 @@
 ---
-title: "57399 - TraceCodeEventLogCritical | Microsoft Docs"
+title: "57399 - TraceCodeEventLogCritical"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

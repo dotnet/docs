@@ -1,5 +1,5 @@
 ---
-title: "DataView Performance | Microsoft Docs"
+title: "DataView Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

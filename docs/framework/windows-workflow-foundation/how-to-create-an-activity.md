@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an Activity | Microsoft Docs"
+title: "How to: Create an Activity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

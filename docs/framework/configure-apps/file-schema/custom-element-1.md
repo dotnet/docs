@@ -1,5 +1,5 @@
 ---
-title: "Custom element for SingleTagSectionHandler | Microsoft Docs"
+title: "Custom element for SingleTagSectionHandler"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 

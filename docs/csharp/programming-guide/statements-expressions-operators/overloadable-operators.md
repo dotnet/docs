@@ -1,5 +1,5 @@
 ---
-title: "Overloadable Operators (C# Programming Guide) | Microsoft Docs"
+title: "Overloadable Operators (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

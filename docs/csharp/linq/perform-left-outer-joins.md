@@ -1,5 +1,5 @@
 ---
-title: Perform left outer joins | Microsoft Docs
+title: Perform left outer joins
 description: How to perform left outer joins.
 keywords: .NET, .NET Core, C#
 author: BillWagner

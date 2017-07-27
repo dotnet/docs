@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#) | Microsoft Docs"
+title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Service: Calls Faulted Per Second | Microsoft Docs"
+title: "Service: Calls Faulted Per Second"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

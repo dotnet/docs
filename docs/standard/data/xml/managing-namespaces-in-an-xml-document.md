@@ -1,5 +1,5 @@
 ---
-title: "Managing Namespaces in an XML Document | Microsoft Docs"
+title: "Managing Namespaces in an XML Document"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

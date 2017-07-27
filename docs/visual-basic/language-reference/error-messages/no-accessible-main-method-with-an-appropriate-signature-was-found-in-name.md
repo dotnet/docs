@@ -1,5 +1,5 @@
 ---
-title: "No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39; | Microsoft Docs"
+title: "No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

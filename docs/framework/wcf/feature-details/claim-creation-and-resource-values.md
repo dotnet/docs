@@ -1,5 +1,5 @@
 ---
-title: "Claim Creation and Resource Values | Microsoft Docs"
+title: "Claim Creation and Resource Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

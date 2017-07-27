@@ -1,5 +1,5 @@
 ---
-title: "How to: Extract a Protocol and Port Number from a URL | Microsoft Docs"
+title: "How to: Extract a Protocol and Port Number from a URL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

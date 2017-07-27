@@ -1,5 +1,5 @@
 ---
-title: Query Expressions (F#) | Microsoft Docs
+title: Query Expressions (F#)
 description: Learn about query expression support for LINQ in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

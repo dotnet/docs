@@ -1,5 +1,5 @@
 ---
-title: "How to: Read Image Metadata | Microsoft Docs"
+title: "How to: Read Image Metadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

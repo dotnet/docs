@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Windows Forms application from the command line | Microsoft Docs"
+title: "How to: Create a Windows Forms application from the command line"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "XML Serialization with XML Web Services | Microsoft Docs"
+title: "XML Serialization with XML Web Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

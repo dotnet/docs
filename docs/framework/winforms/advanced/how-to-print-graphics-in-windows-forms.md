@@ -1,5 +1,5 @@
 ---
-title: "How to: Print Graphics in Windows Forms | Microsoft Docs"
+title: "How to: Print Graphics in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

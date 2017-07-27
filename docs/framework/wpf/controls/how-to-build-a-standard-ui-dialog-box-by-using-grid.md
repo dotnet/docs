@@ -1,5 +1,5 @@
 ---
-title: "How to: Build a Standard UI Dialog Box by Using Grid | Microsoft Docs"
+title: "How to: Build a Standard UI Dialog Box by Using Grid"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

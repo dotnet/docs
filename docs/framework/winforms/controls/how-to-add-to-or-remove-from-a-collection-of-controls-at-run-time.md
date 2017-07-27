@@ -1,5 +1,5 @@
 ---
-title: "How to: Add to or Remove from a Collection of Controls at Run Time | Microsoft Docs"
+title: "How to: Add to or Remove from a Collection of Controls at Run Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

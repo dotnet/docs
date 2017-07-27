@@ -1,5 +1,5 @@
 ---
-title: "Publishing Metadata Endpoints | Microsoft Docs"
+title: "Publishing Metadata Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

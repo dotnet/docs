@@ -1,5 +1,5 @@
 ---
-title: Implementing the infrastructure persistence layer with Entity Framework Core | Microsoft Docs 
+title: Implementing the infrastructure persistence layer with Entity Framework Core
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing the infrastructure persistence layer with Entity Framework Core
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

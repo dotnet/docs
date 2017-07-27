@@ -1,5 +1,5 @@
 ---
-title: "Using Metadata | Microsoft Docs"
+title: "Using Metadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

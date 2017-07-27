@@ -1,5 +1,5 @@
 ---
-title: "Preserving White Space while Loading or Parsing XML2 | Microsoft Docs"
+title: "Preserving White Space while Loading or Parsing XML2"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

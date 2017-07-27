@@ -1,5 +1,5 @@
 ---
-title: "&lt;workflowInstanceQueries&gt; | Microsoft Docs"
+title: "&lt;workflowInstanceQueries&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

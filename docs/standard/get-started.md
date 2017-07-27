@@ -1,5 +1,5 @@
 ---
-title: Get Started with .NET | Microsoft Docs
+title: Get Started with .NET
 description: Lists various articles for getting started with .NET, both from a language and platform perspective.
 keywords: .NET, Getting Started, C#, F#, Visual Basic
 author: cartermp

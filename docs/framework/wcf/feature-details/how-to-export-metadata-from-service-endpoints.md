@@ -1,5 +1,5 @@
 ---
-title: "How to: Export Metadata from Service Endpoints | Microsoft Docs"
+title: "How to: Export Metadata from Service Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Arrays (F#) | Microsoft Docs
+title: Arrays (F#)
 description: Learn how to create and use arrays in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

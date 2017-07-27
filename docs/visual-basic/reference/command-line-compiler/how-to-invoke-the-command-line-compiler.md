@@ -1,5 +1,5 @@
 ---
-title: "How to: Invoke the Command-Line Compiler (Visual Basic) | Microsoft Docs"
+title: "How to: Invoke the Command-Line Compiler (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

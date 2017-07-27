@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedDocument::GetLanguage Method | Microsoft Docs"
+title: "ISymUnmanagedDocument::GetLanguage Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

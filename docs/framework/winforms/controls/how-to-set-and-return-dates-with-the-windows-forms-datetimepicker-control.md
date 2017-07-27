@@ -1,5 +1,5 @@
 ---
-title: "How to: Set and Return Dates with the Windows Forms DateTimePicker Control | Microsoft Docs"
+title: "How to: Set and Return Dates with the Windows Forms DateTimePicker Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

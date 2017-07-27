@@ -1,5 +1,5 @@
 ---
-title: "ICLRGCManager2::SetGCStartupLimitsEx Method | Microsoft Docs"
+title: "ICLRGCManager2::SetGCStartupLimitsEx Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

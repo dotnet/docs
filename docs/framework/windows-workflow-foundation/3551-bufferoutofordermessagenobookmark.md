@@ -1,5 +1,5 @@
 ---
-title: "3551 - BufferOutOfOrderMessageNoBookmark | Microsoft Docs"
+title: "3551 - BufferOutOfOrderMessageNoBookmark"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

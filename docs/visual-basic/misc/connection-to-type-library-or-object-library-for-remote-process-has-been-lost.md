@@ -1,5 +1,5 @@
 ---
-title: "Connection to type library or object library for remote process has been lost | Microsoft Docs"
+title: "Connection to type library or object library for remote process has been lost"
 
 ms.date: "2015-07-20"
 ms.prod: .net

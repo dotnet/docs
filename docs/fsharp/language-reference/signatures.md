@@ -1,5 +1,5 @@
 ---
-title: Signatures (F#) | Microsoft Docs
+title: Signatures (F#)
 description: Learn how to use an F# signature file to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "Can&#39;t open &#39;&lt;filename&gt;&#39; for writing | Microsoft Docs"
+title: "Can&#39;t open &#39;&lt;filename&gt;&#39; for writing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

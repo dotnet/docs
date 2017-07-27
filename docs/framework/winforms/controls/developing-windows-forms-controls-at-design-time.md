@@ -1,5 +1,5 @@
 ---
-title: "Developing Windows Forms Controls at Design Time | Microsoft Docs"
+title: "Developing Windows Forms Controls at Design Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

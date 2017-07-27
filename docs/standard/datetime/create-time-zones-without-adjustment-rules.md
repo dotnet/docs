@@ -1,5 +1,5 @@
 ---
-title: "How to: Create time zones without adjustment rules | Microsoft Docs"
+title: "How to: Create time zones without adjustment rules"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

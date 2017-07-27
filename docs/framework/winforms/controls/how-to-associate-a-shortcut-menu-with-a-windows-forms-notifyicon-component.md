@@ -1,5 +1,5 @@
 ---
-title: "How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component | Microsoft Docs"
+title: "How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

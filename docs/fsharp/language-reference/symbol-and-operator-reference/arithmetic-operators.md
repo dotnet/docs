@@ -1,5 +1,5 @@
 ---
-title: Arithmetic Operators (F#) | Microsoft Docs
+title: Arithmetic Operators (F#)
 description: Learn about the arithmetic operators that are available in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

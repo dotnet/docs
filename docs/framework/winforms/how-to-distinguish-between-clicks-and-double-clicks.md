@@ -1,5 +1,5 @@
 ---
-title: "How to: Distinguish Between Clicks and Double-Clicks | Microsoft Docs"
+title: "How to: Distinguish Between Clicks and Double-Clicks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

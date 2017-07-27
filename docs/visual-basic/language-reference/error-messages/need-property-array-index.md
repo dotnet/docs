@@ -1,5 +1,5 @@
 ---
-title: "Need property array index | Microsoft Docs"
+title: "Need property array index"
 
 ms.date: "2015-07-20"
 ms.prod: .net

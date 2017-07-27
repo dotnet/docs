@@ -1,5 +1,5 @@
 ---
-title: Unit Type (F#) | Microsoft Docs
+title: Unit Type (F#)
 description: Learn how the F# 'unit' type is often used to hold the place where a value is required by the language syntax when no value is needed or desired.
 keywords: visual f#, f#, functional programming
 author: cartermp

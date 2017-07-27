@@ -1,5 +1,5 @@
 ---
-title: "2023 - SendMessageChannelCacheMiss | Microsoft Docs"
+title: "2023 - SendMessageChannelCacheMiss"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

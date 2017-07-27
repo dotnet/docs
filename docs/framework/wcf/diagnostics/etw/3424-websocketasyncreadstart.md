@@ -1,5 +1,5 @@
 ---
-title: "3424 - WebSocketAsyncReadStart | Microsoft Docs"
+title: "3424 - WebSocketAsyncReadStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

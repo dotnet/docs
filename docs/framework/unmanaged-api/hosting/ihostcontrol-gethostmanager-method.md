@@ -1,5 +1,5 @@
 ---
-title: "IHostControl::GetHostManager Method | Microsoft Docs"
+title: "IHostControl::GetHostManager Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

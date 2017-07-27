@@ -1,5 +1,5 @@
 ---
-title: "Host Lock Renewal Period | Microsoft Docs"
+title: "Host Lock Renewal Period"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

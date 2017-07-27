@@ -1,5 +1,5 @@
 ---
-title: "StrongNameSignatureSize Function | Microsoft Docs"
+title: "StrongNameSignatureSize Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: When to choose .NET Core for Docker containers | Microsoft Docs 
+title: When to choose .NET Core for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET Core for Docker containers
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

@@ -1,5 +1,5 @@
 ---
-title: "Because this call is not awaited, the current method continues to run before the call is completed | Microsoft Docs"
+title: "Because this call is not awaited, the current method continues to run before the call is completed"
 
 ms.date: "2015-07-20"
 ms.prod: .net

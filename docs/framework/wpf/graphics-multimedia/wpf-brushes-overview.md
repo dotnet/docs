@@ -1,5 +1,5 @@
 ---
-title: "WPF Brushes Overview | Microsoft Docs"
+title: "WPF Brushes Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

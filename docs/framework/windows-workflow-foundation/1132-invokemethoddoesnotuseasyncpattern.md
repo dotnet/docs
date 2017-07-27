@@ -1,5 +1,5 @@
 ---
-title: "1132 - InvokeMethodDoesNotUseAsyncPattern | Microsoft Docs"
+title: "1132 - InvokeMethodDoesNotUseAsyncPattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

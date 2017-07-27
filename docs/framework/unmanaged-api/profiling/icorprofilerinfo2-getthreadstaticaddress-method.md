@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo2::GetThreadStaticAddress Method | Microsoft Docs"
+title: "ICorProfilerInfo2::GetThreadStaticAddress Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

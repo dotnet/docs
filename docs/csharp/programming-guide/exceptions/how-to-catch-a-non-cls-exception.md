@@ -1,5 +1,5 @@
 ---
-title: "How to: Catch a non-CLS Exception | Microsoft Docs"
+title: "How to: Catch a non-CLS Exception"
 
 ms.date: "2015-07-20"
 ms.prod: .net

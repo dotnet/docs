@@ -1,5 +1,5 @@
 ---
-title: Exception Types (F#) | Microsoft Docs
+title: Exception Types (F#)
 description: Learn how to define and use F# exception types.
 keywords: visual f#, f#, functional programming
 author: cartermp

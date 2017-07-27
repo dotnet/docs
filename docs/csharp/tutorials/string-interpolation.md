@@ -1,5 +1,5 @@
 ---
-title: String Interpolation - C# | Microsoft Docs
+title: String Interpolation - C#
 description: Learn how string interpolation works in C# 6
 keywords: .NET, .NET Core, C#, string
 author: mgroves

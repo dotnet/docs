@@ -1,5 +1,5 @@
 ---
-title: "Hosting Workflow Services Overview | Microsoft Docs"
+title: "Hosting Workflow Services Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

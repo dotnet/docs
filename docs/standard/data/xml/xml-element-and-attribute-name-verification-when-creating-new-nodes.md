@@ -1,5 +1,5 @@
 ---
-title: "XML Element and Attribute Name Verification when Creating New Nodes | Microsoft Docs"
+title: "XML Element and Attribute Name Verification when Creating New Nodes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

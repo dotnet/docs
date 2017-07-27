@@ -1,5 +1,5 @@
 ---
-title: "How to: Receive First-Chance Exception Notifications | Microsoft Docs"
+title: "How to: Receive First-Chance Exception Notifications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

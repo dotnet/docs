@@ -1,5 +1,5 @@
 ---
-title: "How to: Create and Run a Long Running Workflow | Microsoft Docs"
+title: "How to: Create and Run a Long Running Workflow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

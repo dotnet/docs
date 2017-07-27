@@ -1,5 +1,5 @@
 ---
-title: "Refactoring Using a Pure Function (C#) | Microsoft Docs"
+title: "Refactoring Using a Pure Function (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

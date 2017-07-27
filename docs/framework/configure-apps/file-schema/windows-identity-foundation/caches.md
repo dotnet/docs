@@ -1,5 +1,5 @@
 ---
-title: "&lt;caches&gt; | Microsoft Docs"
+title: "&lt;caches&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

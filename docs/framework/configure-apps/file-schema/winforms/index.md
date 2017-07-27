@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Configuration Section | Microsoft Docs"
+title: "Windows Forms Configuration Section"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

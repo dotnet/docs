@@ -1,5 +1,5 @@
 ---
-title: Copy and Update Record Expressions (F#) | Microsoft Docs
+title: Copy and Update Record Expressions (F#)
 description: Learn how to write a 'copy and update record expression' that copies an existing record, updates specified fields, and returns the updated record.
 keywords: visual f#, f#, functional programming
 author: ChrSteinert

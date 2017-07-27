@@ -1,5 +1,5 @@
 ---
-title: "3321 - ConnectionPoolMiss | Microsoft Docs"
+title: "3321 - ConnectionPoolMiss"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

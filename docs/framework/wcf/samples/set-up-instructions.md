@@ -1,5 +1,5 @@
 ---
-title: "Set-Up Instructions | Microsoft Docs"
+title: "Set-Up Instructions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

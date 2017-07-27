@@ -1,5 +1,5 @@
 ---
-title: "Planning for Application Performance | Microsoft Docs"
+title: "Planning for Application Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

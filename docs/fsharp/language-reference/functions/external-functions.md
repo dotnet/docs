@@ -1,5 +1,5 @@
 ---
-title: External Functions (F#) | Microsoft Docs
+title: External Functions (F#)
 description: Learn about the F# language support for calling functions in native code.
 keywords: visual f#, f#, functional programming
 author: cartermp

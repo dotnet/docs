@@ -1,5 +1,5 @@
 ---
-title: Units of Measure (F#) | Microsoft Docs
+title: Units of Measure (F#)
 description: Learn how floating point and signed integer values in F# can have associated units of measure, which are typically used to indicate length, volume, and mass.
 keywords: visual f#, f#, functional programming
 author: cartermp

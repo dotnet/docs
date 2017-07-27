@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule::GetAssembly Method | Microsoft Docs"
+title: "ICorDebugModule::GetAssembly Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

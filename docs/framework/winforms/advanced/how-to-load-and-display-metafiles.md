@@ -1,5 +1,5 @@
 ---
-title: "How to: Load and Display Metafiles | Microsoft Docs"
+title: "How to: Load and Display Metafiles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

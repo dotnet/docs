@@ -1,5 +1,5 @@
 ---
-title: "Syndication Extensibility Samples | Microsoft Docs"
+title: "Syndication Extensibility Samples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

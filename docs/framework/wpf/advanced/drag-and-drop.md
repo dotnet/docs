@@ -1,5 +1,5 @@
 ---
-title: "Drag and Drop | Microsoft Docs"
+title: "Drag and Drop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

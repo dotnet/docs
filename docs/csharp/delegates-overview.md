@@ -1,5 +1,5 @@
 ---
-title: Introduction to Delegates | Microsoft Docs
+title: Introduction to Delegates
 description: Learn about delegates in this overview topic that introduces basic concepts and discusses language design goals for delegates.
 keywords: .NET, .NET Core
 author: BillWagner

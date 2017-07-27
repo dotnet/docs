@@ -1,5 +1,5 @@
 ---
-title: "How to: Fill a Shape with an Image Texture | Microsoft Docs"
+title: "How to: Fill a Shape with an Image Texture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Material to the Front and Back of a 3-D Object | Microsoft Docs"
+title: "How to: Apply Material to the Front and Back of a 3-D Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate a Boolean by Using Key Frames | Microsoft Docs"
+title: "How to: Animate a Boolean by Using Key Frames"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

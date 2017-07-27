@@ -1,5 +1,5 @@
 ---
-title: Using NoSQL databases as a persistence infrastructure | Microsoft Docs 
+title: Using NoSQL databases as a persistence infrastructure
 description: .NET Microservices Architecture for Containerized .NET Applications | Using NoSQL databases as a persistence infrastructure
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

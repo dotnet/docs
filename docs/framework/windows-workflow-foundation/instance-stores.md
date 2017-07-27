@@ -1,5 +1,5 @@
 ---
-title: "Instance Stores | Microsoft Docs"
+title: "Instance Stores"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

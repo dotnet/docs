@@ -1,5 +1,5 @@
 ---
-title: "How to: Disable the Strong-Name Bypass Feature | Microsoft Docs"
+title: "How to: Disable the Strong-Name Bypass Feature"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

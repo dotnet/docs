@@ -1,5 +1,5 @@
 ---
-title: "Advanced Filters | Microsoft Docs"
+title: "Advanced Filters"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

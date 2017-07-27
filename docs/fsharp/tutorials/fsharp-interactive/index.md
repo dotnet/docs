@@ -1,5 +1,5 @@
 ---
-title: F# Interactive (fsi.exe) Reference | Microsoft Docs
+title: F# Interactive (fsi.exe) Reference
 description: F# Interactive (fsi.exe) Reference
 keywords: visual f#, f#, functional programming
 author: cartermp

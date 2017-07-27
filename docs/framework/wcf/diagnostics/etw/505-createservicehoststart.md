@@ -1,5 +1,5 @@
 ---
-title: "505 - CreateServiceHostStart | Microsoft Docs"
+title: "505 - CreateServiceHostStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

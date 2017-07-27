@@ -1,5 +1,5 @@
 ---
-title: "IValidator::FormatEventInfo Method | Microsoft Docs"
+title: "IValidator::FormatEventInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Share Sizing Properties Between Grids | Microsoft Docs"
+title: "How to: Share Sizing Properties Between Grids"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

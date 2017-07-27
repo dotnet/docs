@@ -1,5 +1,5 @@
 ---
-title: "Configuring Timeout Values on a Binding | Microsoft Docs"
+title: "Configuring Timeout Values on a Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

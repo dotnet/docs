@@ -1,5 +1,5 @@
 ---
-title: "WSDL and Policy | Microsoft Docs"
+title: "WSDL and Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

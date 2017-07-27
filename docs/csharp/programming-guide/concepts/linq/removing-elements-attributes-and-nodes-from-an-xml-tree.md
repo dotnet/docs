@@ -1,5 +1,5 @@
 ---
-title: "Removing Elements, Attributes, and Nodes from an XML Tree (C#) | Microsoft Docs"
+title: "Removing Elements, Attributes, and Nodes from an XML Tree (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Cryptographic Application | Microsoft Docs"
+title: "Walkthrough: Creating a Cryptographic Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

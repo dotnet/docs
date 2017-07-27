@@ -1,5 +1,5 @@
 ---
-title: "Return Values for the CStr Function (Visual Basic) | Microsoft Docs"
+title: "Return Values for the CStr Function (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: Sequences (F#) | Microsoft Docs
+title: Sequences (F#)
 description: Learn how to use F# sequences, when you have a large, ordered collection of data but don't necessarily expect to use all of the elements.
 keywords: visual f#, f#, functional programming
 author: cartermp

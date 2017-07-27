@@ -1,5 +1,5 @@
 ---
-title: Namespaces (F#) | Microsoft Docs
+title: Namespaces (F#)
 description: Learn how an F# namespace allows you to organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.
 keywords: visual f#, f#, functional programming
 author: cartermp

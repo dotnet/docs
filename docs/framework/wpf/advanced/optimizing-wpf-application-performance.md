@@ -1,5 +1,5 @@
 ---
-title: "Optimizing WPF Application Performance | Microsoft Docs"
+title: "Optimizing WPF Application Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

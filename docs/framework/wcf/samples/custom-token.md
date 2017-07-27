@@ -1,5 +1,5 @@
 ---
-title: "Custom Token | Microsoft Docs"
+title: "Custom Token"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

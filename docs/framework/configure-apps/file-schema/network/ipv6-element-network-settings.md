@@ -1,5 +1,5 @@
 ---
-title: "&lt;ipv6&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;ipv6&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

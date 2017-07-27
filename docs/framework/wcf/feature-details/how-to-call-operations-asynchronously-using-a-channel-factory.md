@@ -1,5 +1,5 @@
 ---
-title: "How to: Call Operations Asynchronously Using a Channel Factory | Microsoft Docs"
+title: "How to: Call Operations Asynchronously Using a Channel Factory"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

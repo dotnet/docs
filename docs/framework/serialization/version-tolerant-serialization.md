@@ -1,5 +1,5 @@
 ---
-title: "Version Tolerant Serialization | Microsoft Docs"
+title: "Version Tolerant Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

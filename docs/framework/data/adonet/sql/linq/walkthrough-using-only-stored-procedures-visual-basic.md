@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Using Only Stored Procedures (Visual Basic) | Microsoft Docs"
+title: "Walkthrough: Using Only Stored Procedures (Visual Basic)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

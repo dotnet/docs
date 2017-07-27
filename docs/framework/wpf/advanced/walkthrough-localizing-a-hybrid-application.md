@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Localizing a Hybrid Application | Microsoft Docs"
+title: "Walkthrough: Localizing a Hybrid Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

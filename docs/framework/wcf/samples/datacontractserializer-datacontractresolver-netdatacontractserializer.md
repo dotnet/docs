@@ -1,5 +1,5 @@
 ---
-title: "Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer | Microsoft Docs"
+title: "Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

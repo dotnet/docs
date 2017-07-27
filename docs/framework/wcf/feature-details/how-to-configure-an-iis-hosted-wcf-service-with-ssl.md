@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure an IIS-hosted WCF service with SSL | Microsoft Docs"
+title: "How to: Configure an IIS-hosted WCF service with SSL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

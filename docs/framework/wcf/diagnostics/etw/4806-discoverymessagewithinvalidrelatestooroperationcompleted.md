@@ -1,5 +1,5 @@
 ---
-title: "4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted | Microsoft Docs"
+title: "4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

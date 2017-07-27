@@ -1,5 +1,5 @@
 ---
-title: "How to: Raise Change Notifications Using the BindingSource ResetItem Method | Microsoft Docs"
+title: "How to: Raise Change Notifications Using the BindingSource ResetItem Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Differences Between C++ Templates and C# Generics (C# Programming Guide) | Microsoft Docs"
+title: "Differences Between C++ Templates and C# Generics (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

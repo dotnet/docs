@@ -1,5 +1,5 @@
 ---
-title: "Unable to load information for class &#39;&lt;classname&gt;&#39; | Microsoft Docs"
+title: "Unable to load information for class &#39;&lt;classname&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

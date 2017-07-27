@@ -1,5 +1,5 @@
 ---
-title: Verbose Syntax (F#) | Microsoft Docs
+title: Verbose Syntax (F#)
 description: Learn the difference between verbose and lightweight syntax in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

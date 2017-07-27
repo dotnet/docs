@@ -1,5 +1,5 @@
 ---
-title: "Membership and Role Provider | Microsoft Docs"
+title: "Membership and Role Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

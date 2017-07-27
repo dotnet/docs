@@ -1,5 +1,5 @@
 ---
-title: "3379 - SocketWriteStart | Microsoft Docs"
+title: "3379 - SocketWriteStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

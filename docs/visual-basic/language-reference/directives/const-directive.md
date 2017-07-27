@@ -1,5 +1,5 @@
 ---
-title: "#Const Directive | Microsoft Docs"
+title: "#Const Directive"
 
 ms.date: "2015-07-20"
 ms.prod: .net

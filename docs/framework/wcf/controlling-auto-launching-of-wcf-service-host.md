@@ -1,5 +1,5 @@
 ---
-title: "Controlling Auto-launching of WCF Service Host | Microsoft Docs"
+title: "Controlling Auto-launching of WCF Service Host"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

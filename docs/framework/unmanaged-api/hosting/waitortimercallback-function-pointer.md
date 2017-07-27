@@ -1,5 +1,5 @@
 ---
-title: "WAITORTIMERCALLBACK Function Pointer | Microsoft Docs"
+title: "WAITORTIMERCALLBACK Function Pointer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

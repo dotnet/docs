@@ -1,5 +1,5 @@
 ---
-title: do Bindings (F#) | Microsoft Docs
+title: do Bindings (F#)
 description: Learn how an F# 'do' binding is used to execute code without defining a function or value.
 keywords: visual f#, f#, functional programming
 author: cartermp

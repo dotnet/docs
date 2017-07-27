@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Page Properties Using the PageSetupDialog Component | Microsoft Docs"
+title: "How to: Determine Page Properties Using the PageSetupDialog Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

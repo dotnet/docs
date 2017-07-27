@@ -1,5 +1,5 @@
 ---
-title: Designing validations in the domain model layer | Microsoft Docs 
+title: Designing validations in the domain model layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing validations in the domain model layer
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

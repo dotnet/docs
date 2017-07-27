@@ -1,5 +1,5 @@
 ---
-title: "Extending Encoders and Serializers | Microsoft Docs"
+title: "Extending Encoders and Serializers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

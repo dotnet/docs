@@ -1,5 +1,5 @@
 ---
-title: "Dangerous Permissions and Policy Administration | Microsoft Docs"
+title: "Dangerous Permissions and Policy Administration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

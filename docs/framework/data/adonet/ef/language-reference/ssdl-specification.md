@@ -1,5 +1,5 @@
 ---
-title: "SSDL Specification | Microsoft Docs"
+title: "SSDL Specification"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

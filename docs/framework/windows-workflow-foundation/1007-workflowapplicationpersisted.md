@@ -1,5 +1,5 @@
 ---
-title: "1007 - WorkflowApplicationPersisted | Microsoft Docs"
+title: "1007 - WorkflowApplicationPersisted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

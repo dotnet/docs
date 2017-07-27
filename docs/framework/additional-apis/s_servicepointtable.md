@@ -1,5 +1,5 @@
 ---
-title: "ServicePointManager.s_ServicePointTable Field | Microsoft Docs"
+title: "ServicePointManager.s_ServicePointTable Field"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""

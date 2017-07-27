@@ -1,5 +1,5 @@
 ---
-title: "Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo | Microsoft Docs"
+title: "Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

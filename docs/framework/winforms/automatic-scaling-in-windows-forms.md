@@ -1,5 +1,5 @@
 ---
-title: "Automatic Scaling in Windows Forms | Microsoft Docs"
+title: "Automatic Scaling in Windows Forms"
 ms.date: "06/15/2017"
 ms.prod: ".net-framework"
 ms.technology: 

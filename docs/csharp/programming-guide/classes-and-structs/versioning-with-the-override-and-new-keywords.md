@@ -1,5 +1,5 @@
 ---
-title: "Versioning with the Override and New Keywords (C# Programming Guide) | Microsoft Docs"
+title: "Versioning with the Override and New Keywords (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

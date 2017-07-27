@@ -1,5 +1,5 @@
 ---
-title: "IHostAutoEvent::Set Method | Microsoft Docs"
+title: "IHostAutoEvent::Set Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

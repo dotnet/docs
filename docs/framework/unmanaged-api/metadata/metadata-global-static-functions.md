@@ -1,5 +1,5 @@
 ---
-title: "Metadata Global Static Functions | Microsoft Docs"
+title: "Metadata Global Static Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

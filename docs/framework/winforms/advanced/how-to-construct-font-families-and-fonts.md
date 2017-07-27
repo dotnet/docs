@@ -1,5 +1,5 @@
 ---
-title: "How to: Construct Font Families and Fonts | Microsoft Docs"
+title: "How to: Construct Font Families and Fonts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

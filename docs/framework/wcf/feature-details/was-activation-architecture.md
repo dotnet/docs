@@ -1,5 +1,5 @@
 ---
-title: "WAS Activation Architecture | Microsoft Docs"
+title: "WAS Activation Architecture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "NotInheritable (Visual Basic) | Microsoft Docs"
+title: "NotInheritable (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

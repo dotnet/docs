@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Combined Geometry | Microsoft Docs"
+title: "How to: Create a Combined Geometry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

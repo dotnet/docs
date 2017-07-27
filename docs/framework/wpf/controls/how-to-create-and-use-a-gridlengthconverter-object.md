@@ -1,5 +1,5 @@
 ---
-title: "How to: Create and Use a GridLengthConverter Object | Microsoft Docs"
+title: "How to: Create and Use a GridLengthConverter Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

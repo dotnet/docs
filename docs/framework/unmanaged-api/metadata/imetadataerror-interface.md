@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataError Interface | Microsoft Docs"
+title: "IMetaDataError Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

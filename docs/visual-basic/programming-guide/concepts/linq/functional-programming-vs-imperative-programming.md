@@ -1,5 +1,5 @@
 ---
-title: "Functional Programming vs. Imperative Programming (Visual Basic) | Microsoft Docs"
+title: "Functional Programming vs. Imperative Programming (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

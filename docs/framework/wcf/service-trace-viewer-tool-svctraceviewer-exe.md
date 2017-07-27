@@ -1,5 +1,5 @@
 ---
-title: "Service Trace Viewer Tool (SvcTraceViewer.exe) | Microsoft Docs"
+title: "Service Trace Viewer Tool (SvcTraceViewer.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

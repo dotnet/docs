@@ -1,5 +1,5 @@
 ---
-title: Walkthrough - Accessing a Web Service by Using Type Providers (F#) | Microsoft Docs
+title: Walkthrough - Accessing a Web Service by Using Type Providers (F#)
 description: Walkthrough - Accessing a Web Service by Using Type Providers (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

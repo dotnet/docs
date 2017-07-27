@@ -1,5 +1,5 @@
 ---
-title: "How to: Remotely Survey the Status of Printers | Microsoft Docs"
+title: "How to: Remotely Survey the Status of Printers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

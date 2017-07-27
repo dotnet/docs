@@ -1,5 +1,5 @@
 ---
-title: "Performance of Chained Queries (LINQ to XML) (Visual Basic) | Microsoft Docs"
+title: "Performance of Chained Queries (LINQ to XML) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

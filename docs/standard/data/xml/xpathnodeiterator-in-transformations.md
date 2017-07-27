@@ -1,5 +1,5 @@
 ---
-title: "XPathNodeIterator in Transformations | Microsoft Docs"
+title: "XPathNodeIterator in Transformations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

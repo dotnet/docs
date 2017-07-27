@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Activation.ServiceStart | Microsoft Docs"
+title: "System.ServiceModel.Activation.ServiceStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

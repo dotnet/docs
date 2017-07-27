@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataTables::GetNumTables Method | Microsoft Docs"
+title: "IMetaDataTables::GetNumTables Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

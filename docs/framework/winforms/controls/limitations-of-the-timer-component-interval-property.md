@@ -1,5 +1,5 @@
 ---
-title: "Limitations of the Windows Forms Timer Component&#39;s Interval Property | Microsoft Docs"
+title: "Limitations of the Windows Forms Timer Component&#39;s Interval Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

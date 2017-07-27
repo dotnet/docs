@@ -1,5 +1,5 @@
 ---
-title: "How to: Ensure the Selected Row in a Child Table Remains at the Correct Position | Microsoft Docs"
+title: "How to: Ensure the Selected Row in a Child Table Remains at the Correct Position"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

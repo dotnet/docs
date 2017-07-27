@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Workflow Service That Calls Another Workflow Service | Microsoft Docs"
+title: "How to: Create a Workflow Service That Calls Another Workflow Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

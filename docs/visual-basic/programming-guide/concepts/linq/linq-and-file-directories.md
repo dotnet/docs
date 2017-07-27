@@ -1,5 +1,5 @@
 ---
-title: "LINQ and File Directories (Visual Basic) | Microsoft Docs"
+title: "LINQ and File Directories (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Accessing WCF Services with a Windows Store Client App | Microsoft Docs"
+title: "Accessing WCF Services with a Windows Store Client App"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

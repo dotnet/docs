@@ -1,5 +1,5 @@
 ---
-title: "&lt;schemeSettings&gt; Element (Uri Settings) | Microsoft Docs"
+title: "&lt;schemeSettings&gt; Element (Uri Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

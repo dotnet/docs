@@ -1,5 +1,5 @@
 ---
-title: "1441 - MaxSessionSizeReached | Microsoft Docs"
+title: "1441 - MaxSessionSizeReached"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

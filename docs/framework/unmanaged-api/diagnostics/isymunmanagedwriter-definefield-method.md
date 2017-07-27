@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::DefineField Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::DefineField Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

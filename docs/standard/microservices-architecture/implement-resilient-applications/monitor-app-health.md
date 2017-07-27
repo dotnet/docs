@@ -1,5 +1,5 @@
 ---
-title: Health monitoring | Microsoft Docs 
+title: Health monitoring
 description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

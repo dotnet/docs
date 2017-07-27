@@ -1,5 +1,5 @@
 ---
-title: "How to: Turn Off Deferred Loading | Microsoft Docs"
+title: "How to: Turn Off Deferred Loading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

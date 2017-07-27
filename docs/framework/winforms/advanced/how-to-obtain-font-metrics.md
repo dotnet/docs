@@ -1,5 +1,5 @@
 ---
-title: "How to: Obtain Font Metrics | Microsoft Docs"
+title: "How to: Obtain Font Metrics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "CorDebugUnmappedStop Enumeration | Microsoft Docs"
+title: "CorDebugUnmappedStop Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

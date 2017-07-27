@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property | Microsoft Docs"
+title: "Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

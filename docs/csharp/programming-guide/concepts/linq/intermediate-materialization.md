@@ -1,5 +1,5 @@
 ---
-title: "Intermediate Materialization (C#) | Microsoft Docs"
+title: "Intermediate Materialization (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Parameter Design | Microsoft Docs"
+title: "Parameter Design"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

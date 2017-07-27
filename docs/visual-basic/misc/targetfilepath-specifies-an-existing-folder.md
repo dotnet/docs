@@ -1,5 +1,5 @@
 ---
-title: "TargetFilePath specifies an existing folder | Microsoft Docs"
+title: "TargetFilePath specifies an existing folder"
 
 ms.date: "2015-07-20"
 ms.prod: .net

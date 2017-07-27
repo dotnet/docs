@@ -1,5 +1,5 @@
 ---
-title: "Support Statement for Visual Basic 6.0 | Microsoft Docs"
+title: "Support Statement for Visual Basic 6.0"
 ms.date: "2017-03-23"
 ms.prod: VB
 ms.technology: 

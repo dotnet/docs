@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; must be within the range 0 to 99 | Microsoft Docs"
+title: "Argument &#39;&lt;argumentname&gt;&#39; must be within the range 0 to 99"
 
 ms.date: "2015-07-20"
 ms.prod: .net

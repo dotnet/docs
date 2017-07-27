@@ -1,5 +1,5 @@
 ---
-title: "How to: Join Two Collections (LINQ to XML) (C#) | Microsoft Docs"
+title: "How to: Join Two Collections (LINQ to XML) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

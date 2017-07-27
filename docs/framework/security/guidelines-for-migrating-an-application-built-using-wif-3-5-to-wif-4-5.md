@@ -1,5 +1,5 @@
 ---
-title: "Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5 | Microsoft Docs"
+title: "Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

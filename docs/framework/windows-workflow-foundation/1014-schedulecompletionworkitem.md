@@ -1,5 +1,5 @@
 ---
-title: "1014 - ScheduleCompletionWorkItem | Microsoft Docs"
+title: "1014 - ScheduleCompletionWorkItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

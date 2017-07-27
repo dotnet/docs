@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedVariable::GetSignature Method | Microsoft Docs"
+title: "ISymUnmanagedVariable::GetSignature Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

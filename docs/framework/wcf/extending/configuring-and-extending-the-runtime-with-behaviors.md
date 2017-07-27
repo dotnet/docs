@@ -1,5 +1,5 @@
 ---
-title: "Configuring and Extending the Runtime with Behaviors | Microsoft Docs"
+title: "Configuring and Extending the Runtime with Behaviors"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

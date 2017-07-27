@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugArrayValue::GetRank Method | Microsoft Docs"
+title: "ICorDebugArrayValue::GetRank Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Date and Time Canonical Functions | Microsoft Docs"
+title: "Date and Time Canonical Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

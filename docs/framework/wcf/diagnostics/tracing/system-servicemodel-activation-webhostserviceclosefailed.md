@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Activation.WebHostServiceCloseFailed | Microsoft Docs"
+title: "System.ServiceModel.Activation.WebHostServiceCloseFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Tuples (F#) | Microsoft Docs
+title: Tuples (F#)
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "Inferring Schemas from XML Documents | Microsoft Docs"
+title: "Inferring Schemas from XML Documents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

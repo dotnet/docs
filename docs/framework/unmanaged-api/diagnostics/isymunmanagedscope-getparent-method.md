@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedScope::GetParent Method | Microsoft Docs"
+title: "ISymUnmanagedScope::GetParent Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

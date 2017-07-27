@@ -1,5 +1,5 @@
 ---
-title: "CorSetENC Enumeration | Microsoft Docs"
+title: "CorSetENC Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

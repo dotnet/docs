@@ -1,5 +1,5 @@
 ---
-title: "XML comment exception must have a &#39;cref&#39; attribute | Microsoft Docs"
+title: "XML comment exception must have a &#39;cref&#39; attribute"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Cancel an Async Task or a List of Tasks (C#) | Microsoft Docs"
+title: "Cancel an Async Task or a List of Tasks (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

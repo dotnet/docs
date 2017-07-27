@@ -1,5 +1,5 @@
 ---
-title: "Authorization Policy | Microsoft Docs"
+title: "Authorization Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

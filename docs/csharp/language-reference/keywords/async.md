@@ -1,5 +1,5 @@
 ---
-title: "async (C# Reference) | Microsoft Docs"
+title: "async (C# Reference)"
 ms.date: "2017-05-22"
 ms.prod: .net
 ms.technology: 

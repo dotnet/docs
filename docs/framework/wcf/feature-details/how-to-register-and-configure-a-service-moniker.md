@@ -1,5 +1,5 @@
 ---
-title: "How to: Register and Configure a Service Moniker | Microsoft Docs"
+title: "How to: Register and Configure a Service Moniker"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

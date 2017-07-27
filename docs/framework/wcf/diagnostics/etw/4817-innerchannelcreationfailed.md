@@ -1,5 +1,5 @@
 ---
-title: "4817 - InnerChannelCreationFailed | Microsoft Docs"
+title: "4817 - InnerChannelCreationFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

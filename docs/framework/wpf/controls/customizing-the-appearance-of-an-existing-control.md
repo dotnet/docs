@@ -1,5 +1,5 @@
 ---
-title: "Customizing the Appearance of an Existing Control by Creating a ControlTemplate | Microsoft Docs"
+title: "Customizing the Appearance of an Existing Control by Creating a ControlTemplate"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

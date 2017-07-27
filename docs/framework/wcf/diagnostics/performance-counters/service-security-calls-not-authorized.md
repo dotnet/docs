@@ -1,5 +1,5 @@
 ---
-title: "Service: Security Calls Not Authorized | Microsoft Docs"
+title: "Service: Security Calls Not Authorized"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

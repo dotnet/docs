@@ -1,5 +1,5 @@
 ---
-title: "File name or class name not found during Automation operation (Visual Basic) | Microsoft Docs"
+title: "File name or class name not found during Automation operation (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

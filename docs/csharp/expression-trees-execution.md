@@ -1,5 +1,5 @@
 ---
-title: Executing Expression Trees | Microsoft Docs
+title: Executing Expression Trees
 description: Learn about executing expression trees by converting them into executable Intermediate Language (IL) instructions.
 keywords: .NET, .NET Core
 author: BillWagner

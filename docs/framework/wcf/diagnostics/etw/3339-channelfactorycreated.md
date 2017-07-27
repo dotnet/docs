@@ -1,5 +1,5 @@
 ---
-title: "3339 - ChannelFactoryCreated | Microsoft Docs"
+title: "3339 - ChannelFactoryCreated"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

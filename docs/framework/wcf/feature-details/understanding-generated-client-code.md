@@ -1,5 +1,5 @@
 ---
-title: "Understanding Generated Client Code | Microsoft Docs"
+title: "Understanding Generated Client Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

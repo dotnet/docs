@@ -1,5 +1,5 @@
 ---
-title: "Too many DLL application clients | Microsoft Docs"
+title: "Too many DLL application clients"
 
 ms.date: "2015-07-20"
 ms.prod: .net

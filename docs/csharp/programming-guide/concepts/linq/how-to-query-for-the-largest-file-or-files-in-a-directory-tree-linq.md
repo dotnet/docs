@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#) | Microsoft Docs"
+title: "How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

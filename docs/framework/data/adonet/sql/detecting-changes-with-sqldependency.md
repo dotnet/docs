@@ -1,5 +1,5 @@
 ---
-title: "Detecting Changes with SqlDependency | Microsoft Docs"
+title: "Detecting Changes with SqlDependency"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

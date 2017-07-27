@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply a FocusVisualStyle to a Control | Microsoft Docs"
+title: "How to: Apply a FocusVisualStyle to a Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

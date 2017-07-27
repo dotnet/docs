@@ -1,5 +1,5 @@
 ---
-title: "Grouping Queued Messages in a Session | Microsoft Docs"
+title: "Grouping Queued Messages in a Session"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "39459 - TrackingDataExtracted | Microsoft Docs"
+title: "39459 - TrackingDataExtracted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

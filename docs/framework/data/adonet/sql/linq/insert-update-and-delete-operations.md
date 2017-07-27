@@ -1,5 +1,5 @@
 ---
-title: "Insert, Update, and Delete Operations | Microsoft Docs"
+title: "Insert, Update, and Delete Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply a Transform to an Element When an Event Occurs | Microsoft Docs"
+title: "How to: Apply a Transform to an Element When an Event Occurs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

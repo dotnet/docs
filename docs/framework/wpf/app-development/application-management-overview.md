@@ -1,5 +1,5 @@
 ---
-title: "Application Management Overview | Microsoft Docs"
+title: "Application Management Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

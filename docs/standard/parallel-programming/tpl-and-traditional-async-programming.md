@@ -1,5 +1,5 @@
 ---
-title: "TPL and Traditional .NET Framework Asynchronous Programming | Microsoft Docs"
+title: "TPL and Traditional .NET Framework Asynchronous Programming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

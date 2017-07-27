@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate an Object Along a Path (Point Animation) | Microsoft Docs"
+title: "How to: Animate an Object Along a Path (Point Animation)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

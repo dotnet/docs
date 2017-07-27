@@ -1,5 +1,5 @@
 ---
-title: "Custom Partitioners for PLINQ and TPL | Microsoft Docs"
+title: "Custom Partitioners for PLINQ and TPL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

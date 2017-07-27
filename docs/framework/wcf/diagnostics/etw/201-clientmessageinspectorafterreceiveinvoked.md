@@ -1,5 +1,5 @@
 ---
-title: "201 - ClientMessageInspectorAfterReceiveInvoked | Microsoft Docs"
+title: "201 - ClientMessageInspectorAfterReceiveInvoked"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

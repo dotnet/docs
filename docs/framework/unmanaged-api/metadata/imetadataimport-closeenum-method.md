@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::CloseEnum Method | Microsoft Docs"
+title: "IMetaDataImport::CloseEnum Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

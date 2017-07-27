@@ -1,5 +1,5 @@
 ---
-title: "Using Streams on the Network | Microsoft Docs"
+title: "Using Streams on the Network"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

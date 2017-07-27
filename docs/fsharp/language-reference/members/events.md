@@ -1,5 +1,5 @@
 ---
-title: Events (F#) | Microsoft Docs
+title: Events (F#)
 description: Learn how F# events enable you to associate function calls with user actions, which are important in GUI programming.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "ManualResetEvent and ManualResetEventSlim | Microsoft Docs"
+title: "ManualResetEvent and ManualResetEventSlim"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

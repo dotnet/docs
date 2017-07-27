@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Security.SecuritySessionRenewFaultSendFailure | Microsoft Docs"
+title: "System.ServiceModel.Security.SecuritySessionRenewFaultSendFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

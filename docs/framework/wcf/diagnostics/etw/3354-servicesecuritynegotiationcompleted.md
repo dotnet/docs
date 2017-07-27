@@ -1,5 +1,5 @@
 ---
-title: "3354 - ServiceSecurityNegotiationCompleted | Microsoft Docs"
+title: "3354 - ServiceSecurityNegotiationCompleted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

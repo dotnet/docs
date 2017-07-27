@@ -1,5 +1,5 @@
 ---
-title: Methods (F#) | Microsoft Docs
+title: Methods (F#)
 description: Learn how an F# method is a function associated with a type that are used to expose and implement the functionality and behavior of objects and types.
 keywords: visual f#, f#, functional programming
 author: cartermp

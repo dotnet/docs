@@ -1,5 +1,5 @@
 ---
-title: "How to: Remove an Adorner from an Element | Microsoft Docs"
+title: "How to: Remove an Adorner from an Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

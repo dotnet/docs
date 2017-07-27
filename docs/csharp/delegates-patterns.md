@@ -1,5 +1,5 @@
 ---
-title: Common Patterns for Delegates | Microsoft Docs
+title: Common Patterns for Delegates
 description: Learn about common patterns for using delegates in your code to avoid strong coupling between your components.
 keywords: .NET, .NET Core
 author: BillWagner

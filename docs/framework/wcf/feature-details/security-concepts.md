@@ -1,5 +1,5 @@
 ---
-title: "Security Concepts | Microsoft Docs"
+title: "Security Concepts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

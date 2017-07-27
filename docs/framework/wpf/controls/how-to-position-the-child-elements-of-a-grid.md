@@ -1,5 +1,5 @@
 ---
-title: "How to: Position the Child Elements of a Grid | Microsoft Docs"
+title: "How to: Position the Child Elements of a Grid"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

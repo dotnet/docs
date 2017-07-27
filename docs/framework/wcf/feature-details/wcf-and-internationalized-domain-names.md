@@ -1,5 +1,5 @@
 ---
-title: "WCF and Internationalized Domain Names | Microsoft Docs"
+title: "WCF and Internationalized Domain Names"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

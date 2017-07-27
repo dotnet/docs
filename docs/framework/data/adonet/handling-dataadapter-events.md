@@ -1,5 +1,5 @@
 ---
-title: "Handling DataAdapter Events | Microsoft Docs"
+title: "Handling DataAdapter Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

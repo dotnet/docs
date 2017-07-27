@@ -1,5 +1,5 @@
 ---
-title: Type Provider Security | Microsoft Docs
+title: Type Provider Security
 description: Type Provider Security
 keywords: visual f#, f#, functional programming
 author: cartermp

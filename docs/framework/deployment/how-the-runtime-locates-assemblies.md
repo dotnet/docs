@@ -1,5 +1,5 @@
 ---
-title: "How the Runtime Locates Assemblies | Microsoft Docs"
+title: "How the Runtime Locates Assemblies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

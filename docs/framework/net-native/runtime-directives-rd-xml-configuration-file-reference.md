@@ -1,5 +1,5 @@
 ---
-title: "Runtime Directives (rd.xml) Configuration File Reference | Microsoft Docs"
+title: "Runtime Directives (rd.xml) Configuration File Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

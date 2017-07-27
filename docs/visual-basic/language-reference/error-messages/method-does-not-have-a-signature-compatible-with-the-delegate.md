@@ -1,5 +1,5 @@
 ---
-title: "Method does not have a signature compatible with the delegate | Microsoft Docs"
+title: "Method does not have a signature compatible with the delegate"
 
 ms.date: "2015-07-20"
 ms.prod: .net

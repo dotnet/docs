@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.EndpointListenerOpen | Microsoft Docs"
+title: "System.ServiceModel.Channels.EndpointListenerOpen"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

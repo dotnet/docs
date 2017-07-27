@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedScope::GetLocals Method | Microsoft Docs"
+title: "ISymUnmanagedScope::GetLocals Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

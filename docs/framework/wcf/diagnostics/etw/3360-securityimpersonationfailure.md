@@ -1,5 +1,5 @@
 ---
-title: "3360 - SecurityImpersonationFailure | Microsoft Docs"
+title: "3360 - SecurityImpersonationFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

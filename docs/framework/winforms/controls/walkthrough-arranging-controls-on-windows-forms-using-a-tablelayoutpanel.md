@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel | Microsoft Docs"
+title: "Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

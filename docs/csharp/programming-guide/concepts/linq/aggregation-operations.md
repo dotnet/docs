@@ -1,5 +1,5 @@
 ---
-title: "Aggregation Operations (C#) | Microsoft Docs"
+title: "Aggregation Operations (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

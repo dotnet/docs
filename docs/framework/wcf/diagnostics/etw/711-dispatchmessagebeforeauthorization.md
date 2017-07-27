@@ -1,5 +1,5 @@
 ---
-title: "711 - DispatchMessageBeforeAuthorization | Microsoft Docs"
+title: "711 - DispatchMessageBeforeAuthorization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

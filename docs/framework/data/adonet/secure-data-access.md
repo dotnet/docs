@@ -1,5 +1,5 @@
 ---
-title: "Secure Data Access | Microsoft Docs"
+title: "Secure Data Access"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

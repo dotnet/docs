@@ -1,5 +1,5 @@
 ---
-title: "&lt;transport&gt; of &lt;wsHttpBinding&gt; | Microsoft Docs"
+title: "&lt;transport&gt; of &lt;wsHttpBinding&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

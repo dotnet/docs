@@ -1,5 +1,5 @@
 ---
-title: "Reflection in the .NET Framework for Windows Store Apps | Microsoft Docs"
+title: "Reflection in the .NET Framework for Windows Store Apps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

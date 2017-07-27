@@ -1,5 +1,5 @@
 ---
-title: "Printer error | Microsoft Docs"
+title: "Printer error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Tracking Profiles | Microsoft Docs"
+title: "Tracking Profiles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

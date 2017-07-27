@@ -1,5 +1,5 @@
 ---
-title: "AutoResetEvent | Microsoft Docs"
+title: "AutoResetEvent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

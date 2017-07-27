@@ -1,5 +1,5 @@
 ---
-title: "How to: Obtain the Value of a Pointer Variable (C# Programming Guide) | Microsoft Docs"
+title: "How to: Obtain the Value of a Pointer Variable (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

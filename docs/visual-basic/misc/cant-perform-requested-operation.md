@@ -1,5 +1,5 @@
 ---
-title: "Can&#39;t perform requested operation (Visual Basic) | Microsoft Docs"
+title: "Can&#39;t perform requested operation (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

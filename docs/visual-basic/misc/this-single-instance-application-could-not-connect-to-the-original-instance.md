@@ -1,5 +1,5 @@
 ---
-title: "This single-instance application could not connect to the original instance | Microsoft Docs"
+title: "This single-instance application could not connect to the original instance"
 
 ms.date: "2015-07-20"
 ms.prod: .net

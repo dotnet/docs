@@ -1,5 +1,5 @@
 ---
-title: "Peer Resolvers | Microsoft Docs"
+title: "Peer Resolvers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

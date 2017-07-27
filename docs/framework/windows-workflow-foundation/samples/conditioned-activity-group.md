@@ -1,5 +1,5 @@
 ---
-title: "Conditioned Activity Group | Microsoft Docs"
+title: "Conditioned Activity Group"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

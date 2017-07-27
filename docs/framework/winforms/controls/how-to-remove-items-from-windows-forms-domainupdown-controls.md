@@ -1,5 +1,5 @@
 ---
-title: "How to: Remove Items from Windows Forms DomainUpDown Controls | Microsoft Docs"
+title: "How to: Remove Items from Windows Forms DomainUpDown Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

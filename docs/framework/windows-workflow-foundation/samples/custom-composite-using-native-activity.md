@@ -1,5 +1,5 @@
 ---
-title: "Custom Composite using Native Activity | Microsoft Docs"
+title: "Custom Composite using Native Activity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

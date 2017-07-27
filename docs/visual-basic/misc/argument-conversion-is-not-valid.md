@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;Conversion&#39; is not valid | Microsoft Docs"
+title: "Argument &#39;Conversion&#39; is not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

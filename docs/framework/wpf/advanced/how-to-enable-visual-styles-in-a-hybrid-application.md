@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Visual Styles in a Hybrid Application | Microsoft Docs"
+title: "How to: Enable Visual Styles in a Hybrid Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

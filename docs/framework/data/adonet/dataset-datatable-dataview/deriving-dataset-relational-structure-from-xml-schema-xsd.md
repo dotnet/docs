@@ -1,5 +1,5 @@
 ---
-title: "Deriving DataSet Relational Structure from XML Schema (XSD) | Microsoft Docs"
+title: "Deriving DataSet Relational Structure from XML Schema (XSD)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

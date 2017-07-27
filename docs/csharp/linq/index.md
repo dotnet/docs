@@ -1,5 +1,5 @@
 ---
-title: Language Integrated Query (LINQ) | Microsoft Docs
+title: Language Integrated Query (LINQ)
 description: Introduces Language Integrated Query (LINQ) in C#
 keywords: .NET, .NET Core, LINQ, C#
 author: BillWagner

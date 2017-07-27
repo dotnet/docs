@@ -1,5 +1,5 @@
 ---
-title: "Cannot rename with different drive | Microsoft Docs"
+title: "Cannot rename with different drive"
 
 ms.date: "2015-07-20"
 ms.prod: .net

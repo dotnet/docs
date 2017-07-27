@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate the Position or Color of a Gradient Stop | Microsoft Docs"
+title: "How to: Animate the Position or Color of a Gradient Stop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

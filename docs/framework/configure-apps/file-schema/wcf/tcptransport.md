@@ -1,5 +1,5 @@
 ---
-title: "&lt;tcpTransport&gt; | Microsoft Docs"
+title: "&lt;tcpTransport&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: The .NET Portability Analyzer - .NET | Microsoft Docs
+title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET Platforms.
 keywords: .NET, .NET Core
 author: blackdwarf

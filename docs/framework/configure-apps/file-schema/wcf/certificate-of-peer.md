@@ -1,5 +1,5 @@
 ---
-title: "&lt;certificate&gt; of &lt;peer&gt; | Microsoft Docs"
+title: "&lt;certificate&gt; of &lt;peer&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

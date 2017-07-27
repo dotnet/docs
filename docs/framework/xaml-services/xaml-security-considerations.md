@@ -1,5 +1,5 @@
 ---
-title: "XAML Security Considerations | Microsoft Docs"
+title: "XAML Security Considerations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

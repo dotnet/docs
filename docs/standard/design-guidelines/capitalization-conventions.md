@@ -1,5 +1,5 @@
 ---
-title: "Capitalization Conventions | Microsoft Docs"
+title: "Capitalization Conventions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: Orchestrating microservices and multi-container applications for high scalability and availability | Microsoft Docs 
+title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: .NET Microservices Architecture for Containerized .NET Applications | Orchestrating microservices and multi-container applications for high scalability and availability
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

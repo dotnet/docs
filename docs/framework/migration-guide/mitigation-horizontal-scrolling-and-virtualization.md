@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Horizontal Scrolling and Virtualization | Microsoft Docs"
+title: "Mitigation: Horizontal Scrolling and Virtualization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

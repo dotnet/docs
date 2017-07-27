@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Tree from an XmlReader (C#) | Microsoft Docs"
+title: "How to: Create a Tree from an XmlReader (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "IHostSecurityManager::SetThreadToken Method | Microsoft Docs"
+title: "IHostSecurityManager::SetThreadToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

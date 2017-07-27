@@ -1,5 +1,5 @@
 ---
-title: Members (F#) | Microsoft Docs
+title: Members (F#)
 description: Learn about object members in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

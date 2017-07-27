@@ -1,5 +1,5 @@
 ---
-title: "Modeling and Mapping | Microsoft Docs"
+title: "Modeling and Mapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

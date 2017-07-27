@@ -1,5 +1,5 @@
 ---
-title: "OpenType Font Features | Microsoft Docs"
+title: "OpenType Font Features"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

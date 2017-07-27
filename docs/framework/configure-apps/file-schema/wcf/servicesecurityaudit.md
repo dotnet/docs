@@ -1,5 +1,5 @@
 ---
-title: "&lt;serviceSecurityAudit&gt; | Microsoft Docs"
+title: "&lt;serviceSecurityAudit&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

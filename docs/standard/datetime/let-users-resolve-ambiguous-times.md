@@ -1,5 +1,5 @@
 ---
-title: "How to: Let users resolve ambiguous times | Microsoft Docs"
+title: "How to: Let users resolve ambiguous times"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

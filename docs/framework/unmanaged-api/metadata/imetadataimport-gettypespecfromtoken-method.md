@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetTypeSpecFromToken Method | Microsoft Docs"
+title: "IMetaDataImport::GetTypeSpecFromToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

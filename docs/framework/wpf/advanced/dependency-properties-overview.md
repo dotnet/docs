@@ -1,5 +1,5 @@
 ---
-title: "Dependency Properties Overview | Microsoft Docs"
+title: "Dependency Properties Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

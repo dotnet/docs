@@ -1,5 +1,5 @@
 ---
-title: "Converting .NET Framework Types to Strings | Microsoft Docs"
+title: "Converting .NET Framework Types to Strings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

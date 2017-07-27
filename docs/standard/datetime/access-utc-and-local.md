@@ -1,5 +1,5 @@
 ---
-title: "How to: Access the predefined UTC and local time zone objects | Microsoft Docs"
+title: "How to: Access the predefined UTC and local time zone objects"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

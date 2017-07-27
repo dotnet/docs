@@ -1,5 +1,5 @@
 ---
-title: "Packaging and Deploying Resources in Desktop Apps | Microsoft Docs"
+title: "Packaging and Deploying Resources in Desktop Apps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "System.IdentityModel.Selectors.StoreFailedToOpenStore | Microsoft Docs"
+title: "System.IdentityModel.Selectors.StoreFailedToOpenStore"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

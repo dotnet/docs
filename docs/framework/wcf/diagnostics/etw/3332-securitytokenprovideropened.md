@@ -1,5 +1,5 @@
 ---
-title: "3332 - SecurityTokenProviderOpened | Microsoft Docs"
+title: "3332 - SecurityTokenProviderOpened"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

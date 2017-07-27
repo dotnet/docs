@@ -1,5 +1,5 @@
 ---
-title: "Querying Across Relationships | Microsoft Docs"
+title: "Querying Across Relationships"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

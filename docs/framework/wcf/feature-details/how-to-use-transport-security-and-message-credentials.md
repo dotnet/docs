@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Transport Security and Message Credentials | Microsoft Docs"
+title: "How to: Use Transport Security and Message Credentials"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

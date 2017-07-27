@@ -1,5 +1,5 @@
 ---
-title: "How to: Improve the Scrolling Performance of a ListBox | Microsoft Docs"
+title: "How to: Improve the Scrolling Performance of a ListBox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

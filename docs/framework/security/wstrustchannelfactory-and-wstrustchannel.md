@@ -1,5 +1,5 @@
 ---
-title: "WSTrustChannelFactory and WSTrustChannel | Microsoft Docs"
+title: "WSTrustChannelFactory and WSTrustChannel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Multiple Purchase Orders (LINQ to XML) | Microsoft Docs"
+title: "Sample XML File: Multiple Purchase Orders (LINQ to XML)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

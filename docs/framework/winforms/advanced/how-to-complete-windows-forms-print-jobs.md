@@ -1,5 +1,5 @@
 ---
-title: "How to: Complete Windows Forms Print Jobs | Microsoft Docs"
+title: "How to: Complete Windows Forms Print Jobs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Metadata Formats | Microsoft Docs"
+title: "Metadata Formats"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

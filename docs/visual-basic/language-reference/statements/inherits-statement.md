@@ -1,5 +1,5 @@
 ---
-title: "Inherits Statement | Microsoft Docs"
+title: "Inherits Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

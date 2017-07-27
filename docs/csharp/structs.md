@@ -1,5 +1,5 @@
 ---
-title: Structs - C# Guide | Microsoft Docs
+title: Structs - C# Guide
 description: Learn about the struct type and how you create them
 keywords: .NET, .NET Core, C#
 author: BillWagner

@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;functionname&gt;&#39; is not declared (Smart Device-Visual Basic Compiler Error) | Microsoft Docs"
+title: "&#39;&lt;functionname&gt;&#39; is not declared (Smart Device-Visual Basic Compiler Error)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

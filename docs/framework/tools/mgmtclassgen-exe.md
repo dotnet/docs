@@ -1,5 +1,5 @@
 ---
-title: "Mgmtclassgen.exe (Management Strongly Typed Class Generator) | Microsoft Docs"
+title: "Mgmtclassgen.exe (Management Strongly Typed Class Generator)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

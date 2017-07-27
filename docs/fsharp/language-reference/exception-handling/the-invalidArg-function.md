@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: The invalidArg Function (F#) | Microsoft Docs"
+title: "Exceptions: The invalidArg Function (F#)"
 description: Learn how the F# 'invalidArg' function generates an argument exception.
 keywords: visual f#, f#, functional programming
 author: cartermp

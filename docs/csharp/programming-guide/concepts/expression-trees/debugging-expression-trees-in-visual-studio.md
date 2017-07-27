@@ -1,5 +1,5 @@
 ---
-title: "Debugging Expression Trees in Visual Studio (C#) | Microsoft Docs"
+title: "Debugging Expression Trees in Visual Studio (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

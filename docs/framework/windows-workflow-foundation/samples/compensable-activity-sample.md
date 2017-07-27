@@ -1,5 +1,5 @@
 ---
-title: "Compensable Activity Sample | Microsoft Docs"
+title: "Compensable Activity Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

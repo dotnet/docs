@@ -1,5 +1,5 @@
 ---
-title: Asynchronous message-based communication | Microsoft Docs 
+title: Asynchronous message-based communication
 description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communication
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

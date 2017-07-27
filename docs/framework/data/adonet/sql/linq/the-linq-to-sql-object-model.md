@@ -1,5 +1,5 @@
 ---
-title: "The LINQ to SQL Object Model | Microsoft Docs"
+title: "The LINQ to SQL Object Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "IDENTITY_ATTRIBUTE Structure | Microsoft Docs"
+title: "IDENTITY_ATTRIBUTE Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

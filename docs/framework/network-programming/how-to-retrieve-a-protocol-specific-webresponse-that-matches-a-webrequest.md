@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest | Microsoft Docs"
+title: "How to: Retrieve a Protocol-Specific WebResponse that Matches a WebRequest"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Inspect or Modify Messages on the Client | Microsoft Docs"
+title: "How to: Inspect or Modify Messages on the Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

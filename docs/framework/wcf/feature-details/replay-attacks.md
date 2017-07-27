@@ -1,5 +1,5 @@
 ---
-title: "Replay Attacks | Microsoft Docs"
+title: "Replay Attacks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

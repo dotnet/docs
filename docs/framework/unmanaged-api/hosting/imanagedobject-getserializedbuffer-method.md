@@ -1,5 +1,5 @@
 ---
-title: "IManagedObject::GetSerializedBuffer Method | Microsoft Docs"
+title: "IManagedObject::GetSerializedBuffer Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

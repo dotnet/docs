@@ -1,5 +1,5 @@
 ---
-title: "ITypeNameBuilder::AddByRef Method | Microsoft Docs"
+title: "ITypeNameBuilder::AddByRef Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Create a Button by Using XAML | Microsoft Docs"
+title: "Walkthrough: Create a Button by Using XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

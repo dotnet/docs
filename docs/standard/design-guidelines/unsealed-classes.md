@@ -1,5 +1,5 @@
 ---
-title: "Unsealed Classes | Microsoft Docs"
+title: "Unsealed Classes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

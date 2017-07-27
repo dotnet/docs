@@ -1,5 +1,5 @@
 ---
-title: Results (F#) | Microsoft Docs
+title: Results (F#)
 description: Learn how to use the F# 'Result' type to help you write error-tolerant code.
 keywords: visual f#, f#, functional programming
 author: cartermp

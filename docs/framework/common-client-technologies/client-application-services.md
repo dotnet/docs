@@ -1,5 +1,5 @@
 ---
-title: "Client Application Services | Microsoft Docs"
+title: "Client Application Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

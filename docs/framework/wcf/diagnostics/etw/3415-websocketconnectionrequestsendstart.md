@@ -1,5 +1,5 @@
 ---
-title: "3415 - WebSocketConnectionRequestSendStart | Microsoft Docs"
+title: "3415 - WebSocketConnectionRequestSendStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

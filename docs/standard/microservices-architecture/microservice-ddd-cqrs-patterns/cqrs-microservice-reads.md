@@ -1,5 +1,5 @@
 ---
-title: Implementing reads/queries in a CQRS microservice | Microsoft Docs 
+title: Implementing reads/queries in a CQRS microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing reads/queries in a CQRS microservice
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

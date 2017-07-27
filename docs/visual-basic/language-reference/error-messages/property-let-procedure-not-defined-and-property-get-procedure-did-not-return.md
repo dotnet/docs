@@ -1,5 +1,5 @@
 ---
-title: "Property let procedure not defined and property get procedure did not return an object | Microsoft Docs"
+title: "Property let procedure not defined and property get procedure did not return an object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

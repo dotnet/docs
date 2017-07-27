@@ -1,5 +1,5 @@
 ---
-title: "CLR Method to Canonical Function Mapping | Microsoft Docs"
+title: "CLR Method to Canonical Function Mapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

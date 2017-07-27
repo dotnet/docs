@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.MessageProcessingPaused | Microsoft Docs"
+title: "System.ServiceModel.MessageProcessingPaused"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

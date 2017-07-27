@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Simple Binding | Microsoft Docs"
+title: "How to: Create a Simple Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

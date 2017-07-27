@@ -1,5 +1,5 @@
 ---
-title: "COM Interop Sample: COM Client and .NET Server | Microsoft Docs"
+title: "COM Interop Sample: COM Client and .NET Server"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

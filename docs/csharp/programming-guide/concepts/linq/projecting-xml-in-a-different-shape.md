@@ -1,5 +1,5 @@
 ---
-title: "Projecting XML in a Different Shape (C#) | Microsoft Docs"
+title: "Projecting XML in a Different Shape (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

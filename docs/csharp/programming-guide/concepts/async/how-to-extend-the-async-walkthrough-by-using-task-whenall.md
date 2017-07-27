@@ -1,5 +1,5 @@
 ---
-title: "How to: Extend the async Walkthrough by Using Task.WhenAll (C#) | Microsoft Docs"
+title: "How to: Extend the async Walkthrough by Using Task.WhenAll (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

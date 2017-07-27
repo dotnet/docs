@@ -1,5 +1,5 @@
 ---
-title: "Argument cannot be less than zero | Microsoft Docs"
+title: "Argument cannot be less than zero"
 
 ms.date: "2015-07-20"
 ms.prod: .net

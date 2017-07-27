@@ -1,5 +1,5 @@
 ---
-title: "Code resource lock error | Microsoft Docs"
+title: "Code resource lock error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

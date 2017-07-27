@@ -1,5 +1,5 @@
 ---
-title: "How to: Accumulate Animation Values During Repeat Cycles | Microsoft Docs"
+title: "How to: Accumulate Animation Values During Repeat Cycles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

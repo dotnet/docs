@@ -1,5 +1,5 @@
 ---
-title: "Working with Data Definition Language | Microsoft Docs"
+title: "Working with Data Definition Language"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

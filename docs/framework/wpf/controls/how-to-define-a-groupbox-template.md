@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a GroupBox Template | Microsoft Docs"
+title: "How to: Define a GroupBox Template"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

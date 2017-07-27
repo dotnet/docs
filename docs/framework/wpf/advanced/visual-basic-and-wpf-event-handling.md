@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic and WPF Event Handling | Microsoft Docs"
+title: "Visual Basic and WPF Event Handling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Different Tile Patterns with a TileBrush | Microsoft Docs"
+title: "How to: Create Different Tile Patterns with a TileBrush"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

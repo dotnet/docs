@@ -1,5 +1,5 @@
 ---
-title: "Serializing Workflows and Activities to and from XAML | Microsoft Docs"
+title: "Serializing Workflows and Activities to and from XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

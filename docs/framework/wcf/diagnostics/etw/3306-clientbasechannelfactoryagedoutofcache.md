@@ -1,5 +1,5 @@
 ---
-title: "3306 - ClientBaseChannelFactoryAgedOutofCache | Microsoft Docs"
+title: "3306 - ClientBaseChannelFactoryAgedOutofCache"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

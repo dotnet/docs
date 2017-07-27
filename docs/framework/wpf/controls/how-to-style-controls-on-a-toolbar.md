@@ -1,5 +1,5 @@
 ---
-title: "How to: Style Controls on a ToolBar | Microsoft Docs"
+title: "How to: Style Controls on a ToolBar"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

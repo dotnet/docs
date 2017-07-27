@@ -1,5 +1,5 @@
 ---
-title: "Interoperable Object References | Microsoft Docs"
+title: "Interoperable Object References"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

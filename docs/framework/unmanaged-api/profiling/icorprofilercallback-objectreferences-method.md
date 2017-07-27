@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::ObjectReferences Method | Microsoft Docs"
+title: "ICorProfilerCallback::ObjectReferences Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "1430 - PendingConnectionsRatio | Microsoft Docs"
+title: "1430 - PendingConnectionsRatio"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

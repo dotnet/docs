@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Drawing as an Image Source | Microsoft Docs"
+title: "How to: Use a Drawing as an Image Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

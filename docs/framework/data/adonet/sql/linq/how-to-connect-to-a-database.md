@@ -1,5 +1,5 @@
 ---
-title: "How to: Connect to a Database | Microsoft Docs"
+title: "How to: Connect to a Database"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

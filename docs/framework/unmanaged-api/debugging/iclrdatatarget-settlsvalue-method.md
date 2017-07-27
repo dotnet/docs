@@ -1,5 +1,5 @@
 ---
-title: "ICLRDataTarget::SetTLSValue Method | Microsoft Docs"
+title: "ICLRDataTarget::SetTLSValue Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

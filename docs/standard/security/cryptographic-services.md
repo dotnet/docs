@@ -1,5 +1,5 @@
 ---
-title: "Cryptographic Services | Microsoft Docs"
+title: "Cryptographic Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

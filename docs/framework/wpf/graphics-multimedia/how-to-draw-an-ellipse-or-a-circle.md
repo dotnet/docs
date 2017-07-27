@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw an Ellipse or a Circle | Microsoft Docs"
+title: "How to: Draw an Ellipse or a Circle"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

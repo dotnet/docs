@@ -1,5 +1,5 @@
 ---
-title: "How to: Export Custom Policy Assertions | Microsoft Docs"
+title: "How to: Export Custom Policy Assertions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "WPF Graphics Rendering Overview | Microsoft Docs"
+title: "WPF Graphics Rendering Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

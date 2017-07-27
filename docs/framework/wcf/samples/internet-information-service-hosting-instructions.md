@@ -1,5 +1,5 @@
 ---
-title: "Internet Information Service Hosting Instructions | Microsoft Docs"
+title: "Internet Information Service Hosting Instructions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

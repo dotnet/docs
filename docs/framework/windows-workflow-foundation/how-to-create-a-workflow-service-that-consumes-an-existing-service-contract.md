@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a workflow service that consumes an existing service contract | Microsoft Docs"
+title: "How to: Create a workflow service that consumes an existing service contract"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

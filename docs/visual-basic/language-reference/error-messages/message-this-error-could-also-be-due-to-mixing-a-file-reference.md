@@ -1,5 +1,5 @@
 ---
-title: "&lt;message&gt; This error could also be due to mixing a file reference with a project reference to assembly &#39;&lt;assemblyname&gt;&#39; | Microsoft Docs"
+title: "&lt;message&gt; This error could also be due to mixing a file reference with a project reference to assembly &#39;&lt;assemblyname&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

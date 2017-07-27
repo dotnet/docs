@@ -1,5 +1,5 @@
 ---
-title: "System.Runtime.Serialization.XsdExportError | Microsoft Docs"
+title: "System.Runtime.Serialization.XsdExportError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugRemoteTarget::GetHostName Method | Microsoft Docs"
+title: "ICorDebugRemoteTarget::GetHostName Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

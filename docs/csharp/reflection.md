@@ -1,5 +1,5 @@
 ---
-title: Reflection & code generation | Microsoft Docs
+title: Reflection & code generation
 description: Reflection & code generation
 keywords: .NET, .NET Core
 ms.date: 06/20/2016

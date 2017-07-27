@@ -1,5 +1,5 @@
 ---
-title: Async in depth | Microsoft Docs
+title: Async in depth
 description: In-depth explanation of how asynchronous code works in .NET
 keywords: .NET, .NET Core, .NET Standard
 author: cartermp

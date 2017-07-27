@@ -1,5 +1,5 @@
 ---
-title: Docker containers, images, and registries | Microsoft Docs 
+title: Docker containers, images, and registries
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker containers, images, and registries
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

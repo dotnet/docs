@@ -1,5 +1,5 @@
 ---
-title: "Thread Timers (C#) | Microsoft Docs"
+title: "Thread Timers (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

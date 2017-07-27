@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Svcutil.exe to Validate Compiled Service Code | Microsoft Docs"
+title: "How to: Use Svcutil.exe to Validate Compiled Service Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

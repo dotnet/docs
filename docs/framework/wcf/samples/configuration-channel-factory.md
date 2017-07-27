@@ -1,5 +1,5 @@
 ---
-title: "Configuration Channel Factory | Microsoft Docs"
+title: "Configuration Channel Factory"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

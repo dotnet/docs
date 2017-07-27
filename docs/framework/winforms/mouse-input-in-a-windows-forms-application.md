@@ -1,5 +1,5 @@
 ---
-title: "Mouse Input in a Windows Forms Application | Microsoft Docs"
+title: "Mouse Input in a Windows Forms Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

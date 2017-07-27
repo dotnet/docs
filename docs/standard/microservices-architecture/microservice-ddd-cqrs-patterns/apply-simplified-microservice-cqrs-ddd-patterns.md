@@ -1,5 +1,5 @@
 ---
-title: Applying simplified CQRS and DDD patterns in a microservice | Microsoft Docs 
+title: Applying simplified CQRS and DDD patterns in a microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Applying simplified CQRS and DDD patterns in a microservice
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

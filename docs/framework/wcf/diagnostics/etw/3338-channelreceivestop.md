@@ -1,5 +1,5 @@
 ---
-title: "3338 - ChannelReceiveStop | Microsoft Docs"
+title: "3338 - ChannelReceiveStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

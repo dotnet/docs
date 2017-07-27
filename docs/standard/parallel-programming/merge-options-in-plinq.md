@@ -1,5 +1,5 @@
 ---
-title: "Merge Options in PLINQ | Microsoft Docs"
+title: "Merge Options in PLINQ"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

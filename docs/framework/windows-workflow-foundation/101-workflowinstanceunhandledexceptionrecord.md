@@ -1,5 +1,5 @@
 ---
-title: "101 - WorkflowInstanceUnhandledExceptionRecord | Microsoft Docs"
+title: "101 - WorkflowInstanceUnhandledExceptionRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

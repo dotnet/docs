@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEditAndContinueSnapshot::GetMvid Method | Microsoft Docs"
+title: "ICorDebugEditAndContinueSnapshot::GetMvid Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

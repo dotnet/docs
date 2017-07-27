@@ -1,5 +1,5 @@
 ---
-title: "DocumentViewer | Microsoft Docs"
+title: "DocumentViewer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

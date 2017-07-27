@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Interpolation Mode to Control Image Quality During Scaling | Microsoft Docs"
+title: "How to: Use Interpolation Mode to Control Image Quality During Scaling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

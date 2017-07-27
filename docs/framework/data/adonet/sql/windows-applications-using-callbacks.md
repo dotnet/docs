@@ -1,5 +1,5 @@
 ---
-title: "Windows Applications Using Callbacks | Microsoft Docs"
+title: "Windows Applications Using Callbacks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

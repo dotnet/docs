@@ -1,5 +1,5 @@
 ---
-title: "Additional Resources for Visual C# Programmers | Microsoft Docs"
+title: "Additional Resources for Visual C# Programmers"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

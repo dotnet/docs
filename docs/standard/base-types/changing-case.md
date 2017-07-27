@@ -1,5 +1,5 @@
 ---
-title: "Changing Case in the .NET Framework | Microsoft Docs"
+title: "Changing Case in the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

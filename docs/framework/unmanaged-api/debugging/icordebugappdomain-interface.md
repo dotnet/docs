@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain Interface1 | Microsoft Docs"
+title: "ICorDebugAppDomain Interface1"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

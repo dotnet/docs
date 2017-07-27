@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an Add-In That Returns a UI | Microsoft Docs"
+title: "How to: Create an Add-In That Returns a UI"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

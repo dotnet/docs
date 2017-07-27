@@ -1,5 +1,5 @@
 ---
-title: "Thread.Suspend, Garbage Collection, and Safe Points | Microsoft Docs"
+title: "Thread.Suspend, Garbage Collection, and Safe Points"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

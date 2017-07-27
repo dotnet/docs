@@ -1,5 +1,5 @@
 ---
-title: "Rules for Inferring Simple Types | Microsoft Docs"
+title: "Rules for Inferring Simple Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

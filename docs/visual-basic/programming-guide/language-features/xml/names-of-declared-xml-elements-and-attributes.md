@@ -1,5 +1,5 @@
 ---
-title: "Names of Declared XML Elements and Attributes (Visual Basic) | Microsoft Docs"
+title: "Names of Declared XML Elements and Attributes (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

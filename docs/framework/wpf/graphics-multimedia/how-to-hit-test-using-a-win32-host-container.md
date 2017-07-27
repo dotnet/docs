@@ -1,5 +1,5 @@
 ---
-title: "How to: Hit Test Using a Win32 Host Container | Microsoft Docs"
+title: "How to: Hit Test Using a Win32 Host Container"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

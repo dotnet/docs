@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerModuleEnum::Clone Method | Microsoft Docs"
+title: "ICorProfilerModuleEnum::Clone Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

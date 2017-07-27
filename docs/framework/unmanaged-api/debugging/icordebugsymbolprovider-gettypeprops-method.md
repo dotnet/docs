@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugSymbolProvider::GetTypeProps Method | Microsoft Docs"
+title: "ICorDebugSymbolProvider::GetTypeProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

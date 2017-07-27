@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Which TreeView Node Was Clicked (Windows Forms) | Microsoft Docs"
+title: "How to: Determine Which TreeView Node Was Clicked (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

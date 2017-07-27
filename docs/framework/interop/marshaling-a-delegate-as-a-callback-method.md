@@ -1,5 +1,5 @@
 ---
-title: "Marshaling a Delegate as a Callback Method | Microsoft Docs"
+title: "Marshaling a Delegate as a Callback Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

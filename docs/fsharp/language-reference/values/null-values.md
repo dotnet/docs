@@ -1,5 +1,5 @@
 ---
-title: Null Values (F#) | Microsoft Docs
+title: Null Values (F#)
 description: Learn how the null value is used in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

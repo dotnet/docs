@@ -1,5 +1,5 @@
 ---
-title: "AcceptChanges and RejectChanges | Microsoft Docs"
+title: "AcceptChanges and RejectChanges"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

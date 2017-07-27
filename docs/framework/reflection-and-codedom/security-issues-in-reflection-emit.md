@@ -1,5 +1,5 @@
 ---
-title: "Security Issues in Reflection Emit | Microsoft Docs"
+title: "Security Issues in Reflection Emit"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

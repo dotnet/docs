@@ -1,5 +1,5 @@
 ---
-title: "Version-Tolerant Serialization Callbacks | Microsoft Docs"
+title: "Version-Tolerant Serialization Callbacks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

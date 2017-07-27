@@ -1,5 +1,5 @@
 ---
-title: "Self-Host | Microsoft Docs"
+title: "Self-Host"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

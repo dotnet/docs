@@ -1,5 +1,5 @@
 ---
-title: "How to: Continue a Windows Service (Visual Basic) | Microsoft Docs"
+title: "How to: Continue a Windows Service (Visual Basic)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

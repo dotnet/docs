@@ -1,5 +1,5 @@
 ---
-title: "Object variable or With block variable not set | Microsoft Docs"
+title: "Object variable or With block variable not set"
 
 ms.date: "2015-07-20"
 ms.prod: .net

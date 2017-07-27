@@ -1,5 +1,5 @@
 ---
-title: "Preview Events | Microsoft Docs"
+title: "Preview Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

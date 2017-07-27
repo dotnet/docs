@@ -1,5 +1,5 @@
 ---
-title: "3377 - SocketReadStop | Microsoft Docs"
+title: "3377 - SocketReadStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

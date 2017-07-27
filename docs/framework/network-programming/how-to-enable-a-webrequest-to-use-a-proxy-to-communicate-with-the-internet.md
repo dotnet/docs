@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet | Microsoft Docs"
+title: "How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.PortSharing.TransportListenerListenRequest | Microsoft Docs"
+title: "System.ServiceModel.PortSharing.TransportListenerListenRequest"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

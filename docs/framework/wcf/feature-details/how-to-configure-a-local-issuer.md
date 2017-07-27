@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure a Local Issuer | Microsoft Docs"
+title: "How to: Configure a Local Issuer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

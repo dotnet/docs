@@ -1,5 +1,5 @@
 ---
-title: "How to: Call Model-Defined Functions as Object Methods | Microsoft Docs"
+title: "How to: Call Model-Defined Functions as Object Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

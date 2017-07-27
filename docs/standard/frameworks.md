@@ -1,5 +1,5 @@
 ---
-title: Target frameworks | Microsoft Docs
+title: Target frameworks
 description: Information surrounding target frameworks for .NET Core applications and libraries.
 keywords: .NET, .NET Core, framework, TFM
 author: richlander

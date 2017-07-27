@@ -1,5 +1,5 @@
 ---
-title: Bitwise Operators (F#) | Microsoft Docs
+title: Bitwise Operators (F#)
 description: Learn about the bitwise operators that are available in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp

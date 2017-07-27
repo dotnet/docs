@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous Find Sample | Microsoft Docs"
+title: "Asynchronous Find Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Converting times between time zones | Microsoft Docs"
+title: "Converting times between time zones"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

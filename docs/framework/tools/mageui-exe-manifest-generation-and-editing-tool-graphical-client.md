@@ -1,5 +1,5 @@
 ---
-title: "MageUI.exe (Manifest Generation and Editing Tool, Graphical Client) | Microsoft Docs"
+title: "MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

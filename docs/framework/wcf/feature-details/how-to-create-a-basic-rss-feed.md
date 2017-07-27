@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Basic RSS Feed | Microsoft Docs"
+title: "How to: Create a Basic RSS Feed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

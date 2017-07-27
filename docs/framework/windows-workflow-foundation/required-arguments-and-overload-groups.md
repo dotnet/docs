@@ -1,5 +1,5 @@
 ---
-title: "Required Arguments and Overload Groups | Microsoft Docs"
+title: "Required Arguments and Overload Groups"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

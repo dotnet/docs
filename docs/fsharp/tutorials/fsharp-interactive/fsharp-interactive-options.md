@@ -1,5 +1,5 @@
 ---
-title: F# Interactive Options | Microsoft Docs
+title: F# Interactive Options
 description: F# Interactive Options
 keywords: visual f#, f#, functional programming
 author: cartermp

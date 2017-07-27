@@ -1,5 +1,5 @@
 ---
-title: F# Types | Microsoft Docs
+title: F# Types
 description: Learn about the types that are used in F# and how F# types are named and described.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "1013 - CompleteExecuteActivityWorkItem | Microsoft Docs"
+title: "1013 - CompleteExecuteActivityWorkItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

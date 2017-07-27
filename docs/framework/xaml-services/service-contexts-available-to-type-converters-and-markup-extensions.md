@@ -1,5 +1,5 @@
 ---
-title: "Service Contexts Available to Type Converters and Markup Extensions | Microsoft Docs"
+title: "Service Contexts Available to Type Converters and Markup Extensions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

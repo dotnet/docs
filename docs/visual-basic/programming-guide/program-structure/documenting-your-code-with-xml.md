@@ -1,5 +1,5 @@
 ---
-title: "Documenting Your Code with XML (Visual Basic) | Microsoft Docs"
+title: "Documenting Your Code with XML (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

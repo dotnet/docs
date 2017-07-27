@@ -1,5 +1,5 @@
 ---
-title: "205 - OperationInvoked | Microsoft Docs"
+title: "205 - OperationInvoked"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

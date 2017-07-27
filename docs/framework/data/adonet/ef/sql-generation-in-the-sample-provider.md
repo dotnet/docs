@@ -1,5 +1,5 @@
 ---
-title: "SQL Generation in the Sample Provider | Microsoft Docs"
+title: "SQL Generation in the Sample Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

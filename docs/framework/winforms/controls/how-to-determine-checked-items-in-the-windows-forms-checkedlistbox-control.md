@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Checked Items in the Windows Forms CheckedListBox Control | Microsoft Docs"
+title: "How to: Determine Checked Items in the Windows Forms CheckedListBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

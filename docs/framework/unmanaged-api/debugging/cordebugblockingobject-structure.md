@@ -1,5 +1,5 @@
 ---
-title: "CorDebugBlockingObject Structure | Microsoft Docs"
+title: "CorDebugBlockingObject Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

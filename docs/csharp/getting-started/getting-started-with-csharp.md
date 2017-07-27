@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with C# | Microsoft Docs"
+title: "Getting Started with C#"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

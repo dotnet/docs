@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Validating Data in the Windows Forms DataGridView Control | Microsoft Docs"
+title: "Walkthrough: Validating Data in the Windows Forms DataGridView Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

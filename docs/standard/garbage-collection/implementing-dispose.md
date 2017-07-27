@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Dispose method | Microsoft Docs"
+title: "Implementing a Dispose method"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net"

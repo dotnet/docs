@@ -1,5 +1,5 @@
 ---
-title: "How to: Replace the WCF URL Reservation with a Restricted Reservation | Microsoft Docs"
+title: "How to: Replace the WCF URL Reservation with a Restricted Reservation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

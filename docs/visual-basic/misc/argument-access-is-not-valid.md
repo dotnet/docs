@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;Access&#39; is not valid. Valid values for Output mode are &#39;OpenAccess.Write&#39; and &#39;OpenAccess.Default&#39; | Microsoft Docs"
+title: "Argument &#39;Access&#39; is not valid. Valid values for Output mode are &#39;OpenAccess.Write&#39; and &#39;OpenAccess.Default&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

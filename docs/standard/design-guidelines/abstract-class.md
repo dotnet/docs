@@ -1,5 +1,5 @@
 ---
-title: "Abstract Class Design | Microsoft Docs"
+title: "Abstract Class Design"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

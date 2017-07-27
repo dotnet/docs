@@ -1,5 +1,5 @@
 ---
-title: key takeaways | Microsoft Docs 
+title: key takeaways
 description: .NET Microservices Architecture for Containerized .NET Applications | key takeaways
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

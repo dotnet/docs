@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Items in a ListView That Implements a GridView | Microsoft Docs"
+title: "How to: Group Items in a ListView That Implements a GridView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

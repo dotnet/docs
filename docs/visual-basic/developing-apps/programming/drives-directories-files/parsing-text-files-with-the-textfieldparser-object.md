@@ -1,5 +1,5 @@
 ---
-title: "Parsing text files with the TextFieldParser object (Visual Basic) | Microsoft Docs"
+title: "Parsing text files with the TextFieldParser object (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

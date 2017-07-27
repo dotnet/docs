@@ -1,5 +1,5 @@
 ---
-title: "How to: Improve Performance by Avoiding Automatic Scaling | Microsoft Docs"
+title: "How to: Improve Performance by Avoiding Automatic Scaling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

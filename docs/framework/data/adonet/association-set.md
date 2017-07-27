@@ -1,5 +1,5 @@
 ---
-title: "association set | Microsoft Docs"
+title: "association set"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

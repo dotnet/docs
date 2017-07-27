@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate 3-D Translations | Microsoft Docs"
+title: "How to: Animate 3-D Translations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

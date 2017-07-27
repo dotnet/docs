@@ -1,5 +1,5 @@
 ---
-title: Organizing and testing projects with the .NET Core command line | Microsoft Docs
+title: Organizing and testing projects with the .NET Core command line
 description: This tutorial explains how to organize and test .NET Core projects from the command line.
 keywords: .NET, .NET Core, unit testing, .NET Core CLI, xUnit
 author: cartermp

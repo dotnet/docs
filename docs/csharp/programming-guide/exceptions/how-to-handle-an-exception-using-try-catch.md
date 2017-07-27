@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle an Exception Using try-catch (C# Programming Guide) | Microsoft Docs"
+title: "How to: Handle an Exception Using try-catch (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

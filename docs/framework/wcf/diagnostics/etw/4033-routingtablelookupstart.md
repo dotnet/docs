@@ -1,5 +1,5 @@
 ---
-title: "4033 - RoutingTableLookupStart | Microsoft Docs"
+title: "4033 - RoutingTableLookupStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

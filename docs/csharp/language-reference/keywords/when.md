@@ -1,5 +1,5 @@
 ---
-title: "when (C# Reference) | Microsoft Docs"
+title: "when (C# Reference)"
 ms.date: "2017-03-07"
 ms.prod: .net
 ms.technology: 

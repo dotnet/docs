@@ -1,5 +1,5 @@
 ---
-title: "Custom Binding Transport and Encoding | Microsoft Docs"
+title: "Custom Binding Transport and Encoding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

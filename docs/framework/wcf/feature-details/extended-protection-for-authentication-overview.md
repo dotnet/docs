@@ -1,5 +1,5 @@
 ---
-title: "Extended Protection for Authentication Overview | Microsoft Docs"
+title: "Extended Protection for Authentication Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

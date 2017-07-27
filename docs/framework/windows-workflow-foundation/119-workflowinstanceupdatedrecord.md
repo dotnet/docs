@@ -1,5 +1,5 @@
 ---
-title: "119 - WorkflowInstanceUpdatedRecord | Microsoft Docs"
+title: "119 - WorkflowInstanceUpdatedRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

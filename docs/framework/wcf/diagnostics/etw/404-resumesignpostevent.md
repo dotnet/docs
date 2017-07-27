@@ -1,5 +1,5 @@
 ---
-title: "404 - ResumeSignpostEvent | Microsoft Docs"
+title: "404 - ResumeSignpostEvent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Background of a Windows Forms Panel Using the Designer | Microsoft Docs"
+title: "How to: Set the Background of a Windows Forms Panel Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

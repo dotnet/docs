@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Manipulating Content in a WordprocessingML Document (C#) | Microsoft Docs"
+title: "Tutorial: Manipulating Content in a WordprocessingML Document (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant | Microsoft Docs"
+title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for schemeSettings (Uri Settings) | Microsoft Docs"
+title: "&lt;remove&gt; Element for schemeSettings (Uri Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

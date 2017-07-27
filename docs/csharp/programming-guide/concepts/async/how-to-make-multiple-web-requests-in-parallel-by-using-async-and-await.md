@@ -1,5 +1,5 @@
 ---
-title: "How to: Make Multiple Web Requests in Parallel by Using async and await (C#) | Microsoft Docs"
+title: "How to: Make Multiple Web Requests in Parallel by Using async and await (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

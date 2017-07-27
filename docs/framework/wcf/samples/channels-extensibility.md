@@ -1,5 +1,5 @@
 ---
-title: "Channels Extensibility | Microsoft Docs"
+title: "Channels Extensibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "User Defined Functions and Variables | Microsoft Docs"
+title: "User Defined Functions and Variables"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

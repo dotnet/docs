@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread4::GetBlockingObjects Method | Microsoft Docs"
+title: "ICorDebugThread4::GetBlockingObjects Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

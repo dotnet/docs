@@ -1,5 +1,5 @@
 ---
-title: "COR_PRF_CODEGEN_FLAGS Enumeration | Microsoft Docs"
+title: "COR_PRF_CODEGEN_FLAGS Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

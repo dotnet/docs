@@ -1,5 +1,5 @@
 ---
-title: "Range variable name can be inferred only from a simple or qualified name with no arguments | Microsoft Docs"
+title: "Range variable name can be inferred only from a simple or qualified name with no arguments"
 
 ms.date: "2015-07-20"
 ms.prod: .net

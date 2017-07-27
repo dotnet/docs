@@ -1,5 +1,5 @@
 ---
-title: Data sovereignty per microservice | Microsoft Docs 
+title: Data sovereignty per microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Data sovereignty per microservice
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

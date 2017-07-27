@@ -1,5 +1,5 @@
 ---
-title: "Overview of Synchronization Primitives | Microsoft Docs"
+title: "Overview of Synchronization Primitives"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

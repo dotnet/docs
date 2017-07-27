@@ -1,5 +1,5 @@
 ---
-title: "Understanding WebRequest Problems and Exceptions | Microsoft Docs"
+title: "Understanding WebRequest Problems and Exceptions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Code Formatting Guidelines (F#) | Microsoft Docs
+title: Code Formatting Guidelines (F#)
 description: Learn code indentation formatting guidelines for the F# programming language for readability, aesthetics, standardization, and compilation.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "How to: Disable Tab Pages | Microsoft Docs"
+title: "How to: Disable Tab Pages"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

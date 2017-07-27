@@ -1,5 +1,5 @@
 ---
-title: "XML to Schema Wizard (Visual Basic) | Microsoft Docs"
+title: "XML to Schema Wizard (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

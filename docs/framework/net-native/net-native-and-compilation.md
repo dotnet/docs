@@ -1,5 +1,5 @@
 ---
-title: ".NET Native and Compilation | Microsoft Docs"
+title: ".NET Native and Compilation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

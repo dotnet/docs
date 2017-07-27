@@ -1,5 +1,5 @@
 ---
-title: "SqlDependency in an ASP.NET Application | Microsoft Docs"
+title: "SqlDependency in an ASP.NET Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

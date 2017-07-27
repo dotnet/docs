@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate and Merge PrintTickets | Microsoft Docs"
+title: "How to: Validate and Merge PrintTickets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Delegates & events | Microsoft Docs
+title: Delegates & events
 description: See where to find information on delegates and events in the .NET Core documentation.
 keywords: .NET, .NET Core
 author: BillWagner

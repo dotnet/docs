@@ -1,5 +1,5 @@
 ---
-title: "Find Private Key Tool (FindPrivateKey.exe) | Microsoft Docs"
+title: "Find Private Key Tool (FindPrivateKey.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "-moduleassemblyname (C# Compiler Option) | Microsoft Docs"
+title: "-moduleassemblyname (C# Compiler Option)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: Constructors (F#) | Microsoft Docs
+title: Constructors (F#)
 description: Learn how to define and use constructors in F# to create and initialize class and structure objects.
 keywords: visual f#, f#, functional programming
 author: cartermp

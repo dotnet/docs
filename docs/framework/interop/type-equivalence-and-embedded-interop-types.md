@@ -1,5 +1,5 @@
 ---
-title: "Type Equivalence and Embedded Interop Types | Microsoft Docs"
+title: "Type Equivalence and Embedded Interop Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

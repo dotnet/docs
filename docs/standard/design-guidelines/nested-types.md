@@ -1,5 +1,5 @@
 ---
-title: "Nested Types | Microsoft Docs"
+title: "Nested Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

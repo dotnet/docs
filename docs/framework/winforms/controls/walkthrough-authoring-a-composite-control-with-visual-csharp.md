@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Authoring a Composite Control with Visual C# | Microsoft Docs"
+title: "Walkthrough: Authoring a Composite Control with Visual C#"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

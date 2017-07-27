@@ -1,5 +1,5 @@
 ---
-title: "3359 - SecurityImpersonationSuccess | Microsoft Docs"
+title: "3359 - SecurityImpersonationSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

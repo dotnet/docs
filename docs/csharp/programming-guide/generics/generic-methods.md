@@ -1,5 +1,5 @@
 ---
-title: "Generic Methods (C# Programming Guide) | Microsoft Docs"
+title: "Generic Methods (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

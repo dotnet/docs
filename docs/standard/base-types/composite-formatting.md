@@ -1,5 +1,5 @@
 ---
-title: "Composite Formatting | Microsoft Docs"
+title: "Composite Formatting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

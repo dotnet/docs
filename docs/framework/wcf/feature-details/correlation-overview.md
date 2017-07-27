@@ -1,5 +1,5 @@
 ---
-title: "Correlation Overview | Microsoft Docs"
+title: "Correlation Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

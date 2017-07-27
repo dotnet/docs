@@ -1,5 +1,5 @@
 ---
-title: "IHostTask Interface | Microsoft Docs"
+title: "IHostTask Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

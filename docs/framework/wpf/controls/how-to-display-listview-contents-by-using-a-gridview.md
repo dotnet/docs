@@ -1,5 +1,5 @@
 ---
-title: "How to: Display ListView Contents by Using a GridView | Microsoft Docs"
+title: "How to: Display ListView Contents by Using a GridView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

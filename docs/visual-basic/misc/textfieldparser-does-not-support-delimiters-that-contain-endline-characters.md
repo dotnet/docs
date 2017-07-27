@@ -1,5 +1,5 @@
 ---
-title: "TextFieldParser does not support delimiters that contain endline characters | Microsoft Docs"
+title: "TextFieldParser does not support delimiters that contain endline characters"
 
 ms.date: "2015-07-20"
 ms.prod: .net

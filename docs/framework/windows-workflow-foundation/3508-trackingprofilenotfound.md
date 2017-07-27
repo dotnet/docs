@@ -1,5 +1,5 @@
 ---
-title: "3508 - TrackingProfileNotFound | Microsoft Docs"
+title: "3508 - TrackingProfileNotFound"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax for Standard Query Operators (Visual Basic) | Microsoft Docs"
+title: "Query Expression Syntax for Standard Query Operators (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

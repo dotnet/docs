@@ -17,7 +17,7 @@ Intro / overview
 
 ## Prerequisites
 
-You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine. See the reference topic [Custom templates for dotnet new](~/docs/core/tools/custom-template.md)
+You need [the .NET Core SDK](https://www.microsoft.com/net/core) installed on your machine. See the reference topic [Custom templates for dotnet new](~/docs/core/tools/custom-template.md)
 
 ## Create a template from an existing project
 

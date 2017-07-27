@@ -246,7 +246,7 @@ The docker-compose.yml file specifies not only what containers are being used, b
 
 -   Forwards the exposed port 80 on the container to the external port 80 on the host machine.
 
--   Links the web service to the basket and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
+-   Links the web service to the catalog and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 

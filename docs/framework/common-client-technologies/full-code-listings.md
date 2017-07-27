@@ -1,5 +1,5 @@
 ---
-title: "Full Code Listings | Microsoft Docs"
+title: "Full Code Listings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

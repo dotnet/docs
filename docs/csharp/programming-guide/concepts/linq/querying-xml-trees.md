@@ -1,5 +1,5 @@
 ---
-title: "Querying XML Trees (C#) | Microsoft Docs"
+title: "Querying XML Trees (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "ICLRProbingAssemblyEnum::Get Method | Microsoft Docs"
+title: "ICLRProbingAssemblyEnum::Get Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

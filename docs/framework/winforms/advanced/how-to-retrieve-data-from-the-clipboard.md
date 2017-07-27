@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve Data from the Clipboard | Microsoft Docs"
+title: "How to: Retrieve Data from the Clipboard"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

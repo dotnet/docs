@@ -1,5 +1,5 @@
 ---
-title: "2024 - InternalCacheMetadataStart | Microsoft Docs"
+title: "2024 - InternalCacheMetadataStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

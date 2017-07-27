@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure WCF Services to Interoperate with WSE 3.0 Clients | Microsoft Docs"
+title: "How to: Configure WCF Services to Interoperate with WSE 3.0 Clients"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

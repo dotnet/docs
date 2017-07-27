@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Security (C#) | Microsoft Docs"
+title: "LINQ to XML Security (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

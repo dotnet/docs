@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Dates in Non-Gregorian Calendars | Microsoft Docs"
+title: "How to: Display Dates in Non-Gregorian Calendars"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

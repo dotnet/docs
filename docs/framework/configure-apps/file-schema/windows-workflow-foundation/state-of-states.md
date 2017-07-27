@@ -1,5 +1,5 @@
 ---
-title: "&lt;state&gt; of &lt;states&gt; | Microsoft Docs"
+title: "&lt;state&gt; of &lt;states&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

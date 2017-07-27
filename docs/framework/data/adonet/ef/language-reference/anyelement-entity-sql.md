@@ -1,5 +1,5 @@
 ---
-title: "ANYELEMENT (Entity SQL) | Microsoft Docs"
+title: "ANYELEMENT (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -33,7 +33,7 @@ ANYELEMENT ( expression )
  Any valid query expression that returns a collection to extract an element from.  
   
 ## Return Value  
- A single element in the collection or an arbitrary element if the collection has more than one; if the collection is empty, returns `null`. If`collection`is a collection of type `Collection<T>`, then `ANYELEMENT(collection)` is a valid expression that yields an instance of type `T`.  
+ A single element in the collection or an arbitrary element if the collection has more than one; if the collection is empty, returns `null`. If `collection` is a collection of type `Collection<T>`, then `ANYELEMENT(collection)` is a valid expression that yields an instance of type `T`.  
   
 ## Remarks  
  ANYELEMENT extracts an arbitrary element from a multivalued collection. For example, the following example attempts to extract a singleton element from the set `Customers`.  

@@ -1,5 +1,5 @@
 ---
-title: "Creating WCF AJAX Services without ASP.NET | Microsoft Docs"
+title: "Creating WCF AJAX Services without ASP.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

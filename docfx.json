@@ -42,6 +42,18 @@
       },
       {
         "files": [
+          "**/*.md"
+        ],
+        "src": "_vblang/spec",
+        "dest": "visual-basic/reference/language-specification",
+        "exclude": [
+          "README.md",
+          "LICENSE.md",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
           "core/**/*.md"
         ]
       },
@@ -108,11 +120,13 @@
     "fileMetadata": {
       "ms.prod": {
         "api/**.yml": ".net",
-        "_csharplang/spec/*.md": ".net"
+        "_csharplang/spec/*.md": ".net",
+        "_vblang/spec/*.md": ".net"
       },
       "ms.topic": {
         "api/**.yml": "managed-reference",
-        "_csharplang/spec/*.md": "language-reference"
+        "_csharplang/spec/*.md": "language-reference",
+        "_vblang/spec/*.md": "language-reference"
      },
       "langs": {
         "api/**.yml": ["csharp", "vb", "cpp"]
@@ -121,16 +135,20 @@
         "api/**.yml": "NOINDEX, NOFOLLOW"
       },
       "ms.author": {
-        "_csharplang/spec/*.md": "wiwagn"
+        "_csharplang/spec/*.md": "wiwagn",
+        "_vblang/spec/*.md": "wiwagn"
       },
       "ms.technology": {
-        "_csharplong/spec/*.md": "devlang-csharp"
+        "_csharplang/spec/*.md": "devlang-csharp",
+        "_vblang/spec/*.md": "devlang-visual-basic"
       },
       "ms.date": {
-        "_csharplang/spec/*.md": "07/01/2017"
+        "_csharplang/spec/*.md": "07/01/2017",
+        "_vblang/spec/*.md": "07/21/2017"
       },
       "open_to_public_contributors": {
-        "_csharplang/spec/*.md": false
+        "_csharplang/spec/*.md": false,
+        "_vblang/spec/*.md": false
       }
     },
     "dest": "_site",

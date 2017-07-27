@@ -1,5 +1,5 @@
 ---
-title: Type Providers | Microsoft Docs
+title: Type Providers
 description: Type Providers
 keywords: visual f#, f#, functional programming
 author: cartermp

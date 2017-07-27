@@ -1,5 +1,5 @@
 ---
-title: "System event log cannot be deleted | Microsoft Docs"
+title: "System event log cannot be deleted"
 
 ms.date: "2015-07-20"
 ms.prod: .net

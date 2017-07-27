@@ -1,5 +1,5 @@
 ---
-title: "ICLRDebugging::OpenVirtualProcess Method | Microsoft Docs"
+title: "ICLRDebugging::OpenVirtualProcess Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

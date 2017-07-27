@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Shaped Windows Form | Microsoft Docs"
+title: "How to: Create a Shaped Windows Form"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

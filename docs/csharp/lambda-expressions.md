@@ -1,5 +1,5 @@
 ---
-title: Lambda Expressions | Microsoft Docs
+title: Lambda Expressions
 description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments. 
 keywords: .NET, .NET Core, lambda expressions, lambdas, delegates 
 ms-author: ronpet

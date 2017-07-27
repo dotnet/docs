@@ -1,5 +1,5 @@
 ---
-title: "How to: Locate Assemblies by Using DEVPATH | Microsoft Docs"
+title: "How to: Locate Assemblies by Using DEVPATH"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

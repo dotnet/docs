@@ -1,5 +1,5 @@
 ---
-title: "IHostIoCompletionManager::GetMaxThreads Method | Microsoft Docs"
+title: "IHostIoCompletionManager::GetMaxThreads Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

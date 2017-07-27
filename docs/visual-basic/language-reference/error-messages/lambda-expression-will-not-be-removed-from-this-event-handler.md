@@ -1,5 +1,5 @@
 ---
-title: "Lambda expression will not be removed from this event handler | Microsoft Docs"
+title: "Lambda expression will not be removed from this event handler"
 
 ms.date: "2015-07-20"
 ms.prod: .net

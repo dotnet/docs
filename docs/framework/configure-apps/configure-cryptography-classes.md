@@ -1,5 +1,5 @@
 ---
-title: "Configuring Cryptography Classes | Microsoft Docs"
+title: "Configuring Cryptography Classes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

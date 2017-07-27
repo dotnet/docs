@@ -1,5 +1,5 @@
 ---
-title: "Programming with Assemblies | Microsoft Docs"
+title: "Programming with Assemblies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

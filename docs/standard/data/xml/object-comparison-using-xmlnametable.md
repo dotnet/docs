@@ -1,5 +1,5 @@
 ---
-title: "Object Comparison Using XmlNameTable | Microsoft Docs"
+title: "Object Comparison Using XmlNameTable"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

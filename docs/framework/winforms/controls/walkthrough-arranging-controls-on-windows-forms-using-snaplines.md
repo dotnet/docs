@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Controls on Windows Forms Using Snaplines | Microsoft Docs"
+title: "Walkthrough: Arranging Controls on Windows Forms Using Snaplines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

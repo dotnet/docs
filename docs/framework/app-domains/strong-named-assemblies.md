@@ -1,5 +1,5 @@
 ---
-title: "Strong-Named Assemblies | Microsoft Docs"
+title: "Strong-Named Assemblies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

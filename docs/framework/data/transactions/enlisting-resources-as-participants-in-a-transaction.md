@@ -1,5 +1,5 @@
 ---
-title: "Enlisting Resources as Participants in a Transaction | Microsoft Docs"
+title: "Enlisting Resources as Participants in a Transaction"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

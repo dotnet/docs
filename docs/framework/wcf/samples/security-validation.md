@@ -1,5 +1,5 @@
 ---
-title: "Security Validation | Microsoft Docs"
+title: "Security Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

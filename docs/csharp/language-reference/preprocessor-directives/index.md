@@ -1,5 +1,5 @@
 ---
-title: "C# Preprocessor Directives | Microsoft Docs"
+title: "C# Preprocessor Directives"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

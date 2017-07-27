@@ -1,5 +1,5 @@
 ---
-title: "&lt;net.pipe&gt; | Microsoft Docs"
+title: "&lt;net.pipe&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Insert an Element Into Text Programmatically | Microsoft Docs"
+title: "How to: Insert an Element Into Text Programmatically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

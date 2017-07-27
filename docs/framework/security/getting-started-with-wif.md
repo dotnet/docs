@@ -1,5 +1,5 @@
 ---
-title: "Getting Started With WIF | Microsoft Docs"
+title: "Getting Started With WIF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

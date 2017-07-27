@@ -1,5 +1,5 @@
 ---
-title: "301 - UserDefinedErrorOccurred | Microsoft Docs"
+title: "301 - UserDefinedErrorOccurred"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

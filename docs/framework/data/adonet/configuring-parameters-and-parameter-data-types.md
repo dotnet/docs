@@ -1,5 +1,5 @@
 ---
-title: "Configuring Parameters and Parameter Data Types | Microsoft Docs"
+title: "Configuring Parameters and Parameter Data Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

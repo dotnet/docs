@@ -1,5 +1,5 @@
 ---
-title: "Creating the GamePiece Class | Microsoft Docs"
+title: "Creating the GamePiece Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

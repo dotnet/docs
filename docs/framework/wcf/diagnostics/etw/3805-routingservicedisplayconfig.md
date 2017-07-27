@@ -1,5 +1,5 @@
 ---
-title: "3805 - RoutingServiceDisplayConfig | Microsoft Docs"
+title: "3805 - RoutingServiceDisplayConfig"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

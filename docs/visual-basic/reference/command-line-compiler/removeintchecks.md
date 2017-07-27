@@ -1,5 +1,5 @@
 ---
-title: "/removeintchecks | Microsoft Docs"
+title: "/removeintchecks"
 
 ms.date: "2015-07-20"
 ms.prod: .net

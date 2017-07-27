@@ -1,5 +1,5 @@
 ---
-title: "Data Binding in a Windows Presentation Foundation Client | Microsoft Docs"
+title: "Data Binding in a Windows Presentation Foundation Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

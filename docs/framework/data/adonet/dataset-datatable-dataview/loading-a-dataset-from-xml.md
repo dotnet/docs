@@ -1,5 +1,5 @@
 ---
-title: "Loading a DataSet from XML | Microsoft Docs"
+title: "Loading a DataSet from XML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

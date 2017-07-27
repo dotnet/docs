@@ -1,5 +1,5 @@
 ---
-title: "Too many files | Microsoft Docs"
+title: "Too many files"
 
 ms.date: "2015-07-20"
 ms.prod: .net

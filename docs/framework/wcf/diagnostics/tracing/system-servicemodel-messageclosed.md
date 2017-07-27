@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.MessageClosed | Microsoft Docs"
+title: "System.ServiceModel.MessageClosed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

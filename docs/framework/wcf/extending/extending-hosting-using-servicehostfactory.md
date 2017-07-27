@@ -1,5 +1,5 @@
 ---
-title: "Extending Hosting Using ServiceHostFactory | Microsoft Docs"
+title: "Extending Hosting Using ServiceHostFactory"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

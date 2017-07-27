@@ -1,5 +1,5 @@
 ---
-title: "Storyboards Overview | Microsoft Docs"
+title: "Storyboards Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

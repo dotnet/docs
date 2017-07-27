@@ -1,5 +1,5 @@
 ---
-title: "Metadata Publishing Behavior | Microsoft Docs"
+title: "Metadata Publishing Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Calling Synchronous Methods Asynchronously | Microsoft Docs"
+title: "Calling Synchronous Methods Asynchronously"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Trigger Media Playback with a User Event | Microsoft Docs"
+title: "How to: Trigger Media Playback with a User Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

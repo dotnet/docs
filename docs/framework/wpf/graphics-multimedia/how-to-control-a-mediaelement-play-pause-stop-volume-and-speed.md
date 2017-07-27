@@ -1,5 +1,5 @@
 ---
-title: "How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed) | Microsoft Docs"
+title: "How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

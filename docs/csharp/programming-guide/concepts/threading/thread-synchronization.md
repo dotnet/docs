@@ -1,5 +1,5 @@
 ---
-title: "Thread Synchronization (C#) | Microsoft Docs"
+title: "Thread Synchronization (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -96,7 +96,7 @@ finally
 }  
 ```  
   
- Using the `lock`keyword is generally preferred over using the <xref:System.Threading.Monitor> class directly, both because `lock` is more concise, and because `lock` insures that the underlying monitor is released, even if the protected code throws an exception. This is accomplished with the `finally` keyword, which executes its associated code block regardless of whether an exception is thrown.  
+ Using the `lock` keyword is generally preferred over using the <xref:System.Threading.Monitor> class directly, both because `lock` is more concise, and because `lock` insures that the underlying monitor is released, even if the protected code throws an exception. This is accomplished with the `finally` keyword, which executes its associated code block regardless of whether an exception is thrown.  
   
 ## Synchronization Events and Wait Handles  
  Using a lock or monitor is useful for preventing the simultaneous execution of thread-sensitive blocks of code, but these constructs do not allow one thread to communicate an event to another. This requires *synchronization events*, which are objects that have one of two states, signaled and un-signaled, that can be used to activate and suspend threads. Threads can be suspended by being made to wait on a synchronization event that is unsignaled, and can be activated by changing the event state to signaled. If a thread attempts to wait on an event that is already signaled, then the thread continues to execute without delay.  

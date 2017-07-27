@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting WPF Content in Win32 | Microsoft Docs"
+title: "Walkthrough: Hosting WPF Content in Win32"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

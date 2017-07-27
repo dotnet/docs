@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET Caching Integration | Microsoft Docs"
+title: "ASP.NET Caching Integration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

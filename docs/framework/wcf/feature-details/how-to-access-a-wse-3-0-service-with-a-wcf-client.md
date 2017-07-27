@@ -1,5 +1,5 @@
 ---
-title: "How to: Access a WSE 3.0 Service with a WCF Client | Microsoft Docs"
+title: "How to: Access a WSE 3.0 Service with a WCF Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

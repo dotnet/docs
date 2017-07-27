@@ -1,5 +1,5 @@
 ---
-title: "&lt;certificateValidator&gt; | Microsoft Docs"
+title: "&lt;certificateValidator&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

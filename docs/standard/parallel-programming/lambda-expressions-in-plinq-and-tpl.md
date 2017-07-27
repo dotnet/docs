@@ -1,5 +1,5 @@
 ---
-title: "Lambda Expressions in PLINQ and TPL | Microsoft Docs"
+title: "Lambda Expressions in PLINQ and TPL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

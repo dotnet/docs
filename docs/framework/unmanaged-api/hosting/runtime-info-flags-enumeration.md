@@ -1,5 +1,5 @@
 ---
-title: "RUNTIME_INFO_FLAGS Enumeration | Microsoft Docs"
+title: "RUNTIME_INFO_FLAGS Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Handling partial failure | Microsoft Docs 
+title: Handling partial failure
 description: .NET Microservices Architecture for Containerized .NET Applications | Handling partial failure
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

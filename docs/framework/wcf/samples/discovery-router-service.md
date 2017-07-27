@@ -1,5 +1,5 @@
 ---
-title: "Discovery Router Service | Microsoft Docs"
+title: "Discovery Router Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

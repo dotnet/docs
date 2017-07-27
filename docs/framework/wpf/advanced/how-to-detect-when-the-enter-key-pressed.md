@@ -1,5 +1,5 @@
 ---
-title: "How to: Detect When the Enter Key Pressed | Microsoft Docs"
+title: "How to: Detect When the Enter Key Pressed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

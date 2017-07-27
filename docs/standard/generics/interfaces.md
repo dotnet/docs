@@ -1,5 +1,5 @@
 ---
-title: "Generic Interfaces | Microsoft Docs"
+title: "Generic Interfaces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

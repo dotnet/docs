@@ -1,5 +1,5 @@
 ---
-title: "How to: Typecast a WebRequest to Access Protocol Specific Properties | Microsoft Docs"
+title: "How to: Typecast a WebRequest to Access Protocol Specific Properties"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

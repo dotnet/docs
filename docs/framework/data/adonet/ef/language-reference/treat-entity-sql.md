@@ -1,5 +1,5 @@
 ---
-title: "TREAT (Entity SQL) | Microsoft Docs"
+title: "TREAT (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -59,7 +59,7 @@ WHERE p IS OF (NamespaceName.Employee)
  This query upcasts `Person` entities to the `Employee` type. If the value of p is not actually of type `Employee`, the expression yields the value `null`.  
   
 > [!NOTE]
->  The specified expression`Employee`must be a subtype of the specified data type `Person`, or the data type must be a subtype of the expression. Otherwise, the expression will result in a compile-time error.  
+>  The specified expression `Employee` must be a subtype of the specified data type `Person`, or the data type must be a subtype of the expression. Otherwise, the expression will result in a compile-time error.  
   
  The following table shows the behavior of treat over some typical patterns and some less common patterns. All exceptions are thrown from the client side before the provider gets invoked:  
   

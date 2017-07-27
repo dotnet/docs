@@ -1,5 +1,5 @@
 ---
-title: "How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic) | Microsoft Docs"
+title: "How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

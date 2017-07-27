@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.DidNotUnderstandMessageHeader | Microsoft Docs"
+title: "System.ServiceModel.DidNotUnderstandMessageHeader"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

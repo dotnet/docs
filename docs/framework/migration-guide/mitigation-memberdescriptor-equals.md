@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: MemberDescriptor.Equals | Microsoft Docs"
+title: "Mitigation: MemberDescriptor.Equals"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

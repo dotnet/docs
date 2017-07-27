@@ -1,5 +1,5 @@
 ---
-title: "The .NET Framework and Out-of-Band Releases | Microsoft Docs"
+title: "The .NET Framework and Out-of-Band Releases"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "-win32manifest (C# Compiler Options) | Microsoft Docs"
+title: "-win32manifest (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

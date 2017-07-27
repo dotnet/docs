@@ -1,5 +1,5 @@
 ---
-title: "Binary Serialization | Microsoft Docs"
+title: "Binary Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

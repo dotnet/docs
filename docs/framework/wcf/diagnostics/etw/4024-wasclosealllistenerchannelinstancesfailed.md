@@ -1,5 +1,5 @@
 ---
-title: "4024 - WasCloseAllListenerChannelInstancesFailed | Microsoft Docs"
+title: "4024 - WasCloseAllListenerChannelInstancesFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

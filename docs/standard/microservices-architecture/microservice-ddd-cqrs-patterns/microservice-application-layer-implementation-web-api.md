@@ -1,5 +1,5 @@
 ---
-title: Implementing the microservice application layer using the Web API | Microsoft Docs 
+title: Implementing the microservice application layer using the Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing the microservice application layer using the Web API
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

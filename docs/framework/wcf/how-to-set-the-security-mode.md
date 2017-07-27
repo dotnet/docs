@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Security Mode | Microsoft Docs"
+title: "How to: Set the Security Mode"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Simple Object Model and Query (Visual Basic) | Microsoft Docs"
+title: "Walkthrough: Simple Object Model and Query (Visual Basic)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

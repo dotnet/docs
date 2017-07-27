@@ -1,5 +1,5 @@
 ---
-title: "CorDebugCodeInvokePurpose Enumeration | Microsoft Docs"
+title: "CorDebugCodeInvokePurpose Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

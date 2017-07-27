@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify the Degree of Parallelism in a Dataflow Block | Microsoft Docs"
+title: "How to: Specify the Degree of Parallelism in a Dataflow Block"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

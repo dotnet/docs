@@ -1,5 +1,5 @@
 ---
-title: "Configuration Editor Tool (SvcConfigEditor.exe) | Microsoft Docs"
+title: "Configuration Editor Tool (SvcConfigEditor.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

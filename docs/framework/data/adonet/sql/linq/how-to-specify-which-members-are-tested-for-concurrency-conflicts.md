@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify Which Members are Tested for Concurrency Conflicts | Microsoft Docs"
+title: "How to: Specify Which Members are Tested for Concurrency Conflicts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

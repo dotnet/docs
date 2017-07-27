@@ -1,5 +1,5 @@
 ---
-title: "Named arguments cannot match ParamArray parameters | Microsoft Docs"
+title: "Named arguments cannot match ParamArray parameters"
 
 ms.date: "2015-07-20"
 ms.prod: .net

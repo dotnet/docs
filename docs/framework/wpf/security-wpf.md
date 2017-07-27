@@ -1,5 +1,5 @@
 ---
-title: "Security (WPF) | Microsoft Docs"
+title: "Security (WPF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

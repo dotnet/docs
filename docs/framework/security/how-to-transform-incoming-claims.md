@@ -1,5 +1,5 @@
 ---
-title: "How To: Transform Incoming Claims | Microsoft Docs"
+title: "How To: Transform Incoming Claims"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

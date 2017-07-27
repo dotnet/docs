@@ -1,5 +1,5 @@
 ---
-title: "x:FactoryMethod Directive | Microsoft Docs"
+title: "x:FactoryMethod Directive"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -48,7 +48,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 |`oneOrMoreObjectElements`|One or more object elements for objects that specify factory method parameters. Order is significant; it signifies the order in which arguments should be passed to the factory method.|  
   
 ## Remarks  
- If`methodname` is an instance method, it cannot be qualified.  
+ If `methodname` is an instance method, it cannot be qualified.  
   
  Static methods as factory methods are supported. If `methodname` is a static method, `methodname` is provided as a *typeName*.*methodName* combination, where *typeName* names the class that defines the static factory method. *typeName* can be prefix-qualified if referring to a type in a mapped xmlns. *typeName* can be a different type than `typeof(``object``)`.  
   

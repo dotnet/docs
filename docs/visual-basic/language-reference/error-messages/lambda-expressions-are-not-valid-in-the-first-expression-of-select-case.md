@@ -1,5 +1,5 @@
 ---
-title: "Lambda expressions are not valid in the first expression of a &#39;Select Case&#39; statement | Microsoft Docs"
+title: "Lambda expressions are not valid in the first expression of a &#39;Select Case&#39; statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

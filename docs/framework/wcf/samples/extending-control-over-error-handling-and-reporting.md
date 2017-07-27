@@ -1,5 +1,5 @@
 ---
-title: "Extending Control Over Error Handling and Reporting | Microsoft Docs"
+title: "Extending Control Over Error Handling and Reporting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

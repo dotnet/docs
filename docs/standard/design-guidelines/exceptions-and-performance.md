@@ -1,5 +1,5 @@
 ---
-title: "Exceptions and Performance | Microsoft Docs"
+title: "Exceptions and Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

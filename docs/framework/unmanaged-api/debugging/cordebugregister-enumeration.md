@@ -1,5 +1,5 @@
 ---
-title: "CorDebugRegister Enumeration | Microsoft Docs"
+title: "CorDebugRegister Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

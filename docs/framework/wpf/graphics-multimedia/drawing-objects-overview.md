@@ -1,5 +1,5 @@
 ---
-title: "Drawing Objects Overview | Microsoft Docs"
+title: "Drawing Objects Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

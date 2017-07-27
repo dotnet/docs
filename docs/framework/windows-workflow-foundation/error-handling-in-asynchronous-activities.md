@@ -1,5 +1,5 @@
 ---
-title: "Error handling in asynchronous activities | Microsoft Docs"
+title: "Error handling in asynchronous activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

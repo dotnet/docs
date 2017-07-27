@@ -1,5 +1,5 @@
 ---
-title: "Logical-Bitwise Operators (Visual Basic) | Microsoft Docs"
+title: "Logical-Bitwise Operators (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

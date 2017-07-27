@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML vs. DOM (C#) | Microsoft Docs"
+title: "LINQ to XML vs. DOM (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

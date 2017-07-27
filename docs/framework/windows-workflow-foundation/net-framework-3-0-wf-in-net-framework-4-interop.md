@@ -1,5 +1,5 @@
 ---
-title: "Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity | Microsoft Docs"
+title: "Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

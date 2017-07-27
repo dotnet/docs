@@ -1,5 +1,5 @@
 ---
-title: "ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method | Microsoft Docs"
+title: "ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

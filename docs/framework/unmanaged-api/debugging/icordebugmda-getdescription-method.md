@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugMDA::GetDescription Method | Microsoft Docs"
+title: "ICorDebugMDA::GetDescription Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

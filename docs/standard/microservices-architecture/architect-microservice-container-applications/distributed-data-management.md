@@ -1,5 +1,5 @@
 ---
-title: Challenges and solutions for distributed data management | Microsoft Docs 
+title: Challenges and solutions for distributed data management
 description: .NET Microservices Architecture for Containerized .NET Applications | Challenges and solutions for distributed data management
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

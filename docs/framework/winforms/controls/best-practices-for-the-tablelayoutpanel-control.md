@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for the TableLayoutPanel Control | Microsoft Docs"
+title: "Best Practices for the TableLayoutPanel Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

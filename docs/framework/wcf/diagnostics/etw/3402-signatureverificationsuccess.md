@@ -1,5 +1,5 @@
 ---
-title: "3402 - SignatureVerificationSuccess | Microsoft Docs"
+title: "3402 - SignatureVerificationSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

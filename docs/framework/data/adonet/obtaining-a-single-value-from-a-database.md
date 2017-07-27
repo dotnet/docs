@@ -1,5 +1,5 @@
 ---
-title: "Obtaining a Single Value from a Database | Microsoft Docs"
+title: "Obtaining a Single Value from a Database"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

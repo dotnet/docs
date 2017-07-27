@@ -1,5 +1,5 @@
 ---
-title: "How to: Get Interface and Protocol Information | Microsoft Docs"
+title: "How to: Get Interface and Protocol Information"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Text Selection | Microsoft Docs"
+title: "How to: Retrieve a Text Selection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

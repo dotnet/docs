@@ -1,5 +1,5 @@
 ---
-title: "Marshaling Data with COM Interop | Microsoft Docs"
+title: "Marshaling Data with COM Interop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

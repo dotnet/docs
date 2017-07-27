@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic) | Microsoft Docs"
+title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

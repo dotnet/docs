@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugGCReferenceEnum::Next Method | Microsoft Docs"
+title: "ICorDebugGCReferenceEnum::Next Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

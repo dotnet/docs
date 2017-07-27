@@ -1,5 +1,5 @@
 ---
-title: "Creating a Class to Hold DLL Functions | Microsoft Docs"
+title: "Creating a Class to Hold DLL Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

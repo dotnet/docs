@@ -1,5 +1,5 @@
 ---
-title: "Queued Rejected Messages | Microsoft Docs"
+title: "Queued Rejected Messages"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

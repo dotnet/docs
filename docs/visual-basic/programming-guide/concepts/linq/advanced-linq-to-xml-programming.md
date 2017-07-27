@@ -1,5 +1,5 @@
 ---
-title: "Advanced LINQ to XML Programming (Visual Basic) | Microsoft Docs"
+title: "Advanced LINQ to XML Programming (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

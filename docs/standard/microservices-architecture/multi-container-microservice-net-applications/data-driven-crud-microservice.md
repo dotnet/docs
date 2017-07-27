@@ -1,5 +1,5 @@
 ---
-title: Creating a simple data-driven CRUD microservice | Microsoft Docs 
+title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Creating a simple data-driven CRUD microservice
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

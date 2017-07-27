@@ -1,5 +1,5 @@
 ---
-title: "RemoveHandler Statement | Microsoft Docs"
+title: "RemoveHandler Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

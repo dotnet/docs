@@ -1,5 +1,5 @@
 ---
-title: "57395 - ShipAssertExceptionMessage | Microsoft Docs"
+title: "57395 - ShipAssertExceptionMessage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

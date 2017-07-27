@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component | Microsoft Docs"
+title: "How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

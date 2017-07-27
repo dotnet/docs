@@ -1,5 +1,5 @@
 ---
-title: "Cardinal Splines in GDI+ | Microsoft Docs"
+title: "Cardinal Splines in GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

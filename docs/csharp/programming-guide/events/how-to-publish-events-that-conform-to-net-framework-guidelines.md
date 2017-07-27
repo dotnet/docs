@@ -1,5 +1,5 @@
 ---
-title: "How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide) | Microsoft Docs"
+title: "How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

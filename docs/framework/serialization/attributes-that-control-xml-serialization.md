@@ -1,5 +1,5 @@
 ---
-title: "Attributes That Control XML Serialization | Microsoft Docs"
+title: "Attributes That Control XML Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

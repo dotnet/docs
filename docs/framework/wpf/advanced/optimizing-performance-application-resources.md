@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Performance: Application Resources | Microsoft Docs"
+title: "Optimizing Performance: Application Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

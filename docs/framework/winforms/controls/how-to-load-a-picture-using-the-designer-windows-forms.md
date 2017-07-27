@@ -1,5 +1,5 @@
 ---
-title: "How to: Load a Picture Using the Designer (Windows Forms) | Microsoft Docs"
+title: "How to: Load a Picture Using the Designer (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

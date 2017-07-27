@@ -1,5 +1,5 @@
 ---
-title: "3430 - WebSocketUseVersionFromClientWebSocketFactory | Microsoft Docs"
+title: "3430 - WebSocketUseVersionFromClientWebSocketFactory"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XDR Validation with XmlSchemaCollection | Microsoft Docs"
+title: "XDR Validation with XmlSchemaCollection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

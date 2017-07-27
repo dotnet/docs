@@ -1,5 +1,5 @@
 ---
-title: "Common Language Runtime (CLR) | Microsoft Docs"
+title: "Common Language Runtime (CLR)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Activity Definition Scoping and Visibility | Microsoft Docs"
+title: "Activity Definition Scoping and Visibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

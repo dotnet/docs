@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Queued Communication | Microsoft Docs"
+title: "Best Practices for Queued Communication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

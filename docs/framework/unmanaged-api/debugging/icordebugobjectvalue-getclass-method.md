@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue::GetClass Method | Microsoft Docs"
+title: "ICorDebugObjectValue::GetClass Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;secureConversationBootstrap&gt; | Microsoft Docs"
+title: "&lt;secureConversationBootstrap&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

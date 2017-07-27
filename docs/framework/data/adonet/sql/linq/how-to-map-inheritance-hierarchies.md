@@ -1,5 +1,5 @@
 ---
-title: "How to: Map Inheritance Hierarchies | Microsoft Docs"
+title: "How to: Map Inheritance Hierarchies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

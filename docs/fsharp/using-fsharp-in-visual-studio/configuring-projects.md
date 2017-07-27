@@ -1,5 +1,5 @@
 ---
-title: Configuring Projects (F#) | Microsoft Docs
+title: Configuring Projects (F#)
 description: Configuring Projects (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

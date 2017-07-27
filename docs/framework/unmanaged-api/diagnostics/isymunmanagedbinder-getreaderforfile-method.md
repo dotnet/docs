@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedBinder::GetReaderForFile Method | Microsoft Docs"
+title: "ISymUnmanagedBinder::GetReaderForFile Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

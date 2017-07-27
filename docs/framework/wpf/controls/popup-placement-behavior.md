@@ -1,5 +1,5 @@
 ---
-title: "Popup Placement Behavior | Microsoft Docs"
+title: "Popup Placement Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

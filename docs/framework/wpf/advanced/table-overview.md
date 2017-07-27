@@ -1,5 +1,5 @@
 ---
-title: "Table Overview | Microsoft Docs"
+title: "Table Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

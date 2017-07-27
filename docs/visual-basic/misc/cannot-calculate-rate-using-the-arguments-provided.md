@@ -1,5 +1,5 @@
 ---
-title: "Cannot calculate rate using the arguments provided | Microsoft Docs"
+title: "Cannot calculate rate using the arguments provided"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Provide Standard Menu Items to a Form | Microsoft Docs"
+title: "How to: Provide Standard Menu Items to a Form"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

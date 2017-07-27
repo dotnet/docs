@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Descendants with a Specific Element Name (C#) | Microsoft Docs"
+title: "How to: Find Descendants with a Specific Element Name (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

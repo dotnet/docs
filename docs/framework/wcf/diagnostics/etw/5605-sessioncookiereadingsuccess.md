@@ -1,5 +1,5 @@
 ---
-title: "5605 - SessionCookieReadingSuccess | Microsoft Docs"
+title: "5605 - SessionCookieReadingSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

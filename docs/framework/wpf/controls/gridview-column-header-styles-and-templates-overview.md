@@ -1,5 +1,5 @@
 ---
-title: "GridView Column Header Styles and Templates Overview | Microsoft Docs"
+title: "GridView Column Header Styles and Templates Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

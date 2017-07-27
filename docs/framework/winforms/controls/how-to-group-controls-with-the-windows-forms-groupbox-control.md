@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Controls with the Windows Forms GroupBox Control | Microsoft Docs"
+title: "How to: Group Controls with the Windows Forms GroupBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

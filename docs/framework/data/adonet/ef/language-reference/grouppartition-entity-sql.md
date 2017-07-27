@@ -1,5 +1,5 @@
 ---
-title: "GROUPPARTITION (Entity SQL) | Microsoft Docs"
+title: "GROUPPARTITION (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Creating WS-I Basic Profile 1.1 Interoperable Services | Microsoft Docs"
+title: "Creating WS-I Basic Profile 1.1 Interoperable Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

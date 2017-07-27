@@ -1,5 +1,5 @@
 ---
-title: "ICLRRuntimeHost::SetHostControl Method | Microsoft Docs"
+title: "ICLRRuntimeHost::SetHostControl Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

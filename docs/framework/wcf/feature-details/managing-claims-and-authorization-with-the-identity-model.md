@@ -1,5 +1,5 @@
 ---
-title: "Managing Claims and Authorization with the Identity Model | Microsoft Docs"
+title: "Managing Claims and Authorization with the Identity Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

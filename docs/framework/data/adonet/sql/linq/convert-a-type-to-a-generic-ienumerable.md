@@ -1,5 +1,5 @@
 ---
-title: "Convert a Type to a Generic IEnumerable | Microsoft Docs"
+title: "Convert a Type to a Generic IEnumerable"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

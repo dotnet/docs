@@ -1,5 +1,5 @@
 ---
-title: "How To: Change the Value of a Setting Between Application Sessions | Microsoft Docs"
+title: "How To: Change the Value of a Setting Between Application Sessions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

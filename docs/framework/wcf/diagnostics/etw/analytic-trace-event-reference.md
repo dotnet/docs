@@ -1,5 +1,5 @@
 ---
-title: "Analytic Trace Event Reference | Microsoft Docs"
+title: "Analytic Trace Event Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

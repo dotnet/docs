@@ -1,5 +1,5 @@
 ---
-title: "METAHOST_POLICY_FLAGS Enumeration | Microsoft Docs"
+title: "METAHOST_POLICY_FLAGS Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

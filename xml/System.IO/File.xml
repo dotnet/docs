@@ -3138,6 +3138,8 @@
  If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
   
  Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
+
+ If the `destinationBackupFileName` already exists it will be overwritten with the contents of the `destinationFileName` file.
   
    
   
@@ -3228,6 +3230,8 @@
  If the `sourceFileName` and `destinationFileName` are on different volumes, this method will raise an exception. If the `destinationBackupFileName` is on a different volume from the source file, the backup file will be deleted.  
   
  Pass `null` to the `destinationBackupFileName` parameter if you do not want to create a backup of the file being replaced.  
+
+ If the `destinationBackupFileName` already exists it will be overwritten with the contents of the `destinationFileName` file.
   
    
   

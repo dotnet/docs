@@ -1,5 +1,5 @@
 ---
-title: "1003 - WorkflowInstanceCanceled | Microsoft Docs"
+title: "1003 - WorkflowInstanceCanceled"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

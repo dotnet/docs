@@ -1,5 +1,5 @@
 ---
-title: "Configuring Message Logging | Microsoft Docs"
+title: "Configuring Message Logging"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

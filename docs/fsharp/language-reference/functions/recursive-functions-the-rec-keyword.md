@@ -1,6 +1,6 @@
 ---
-title: "Recursive Functions: The rec Keyword (F#) | Microsoft Docs"
-description: "Recursive Functions: The rec Keyword (F#)"
+title: "Recursive Functions: The rec Keyword (F#)"
+description: Learn how the F# 'rec' keyword is used with the 'let' keyword to define a recursive function.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

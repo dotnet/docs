@@ -1,5 +1,5 @@
 ---
-title: "3412 - HttpPipelineProcessResponseStart | Microsoft Docs"
+title: "3412 - HttpPipelineProcessResponseStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

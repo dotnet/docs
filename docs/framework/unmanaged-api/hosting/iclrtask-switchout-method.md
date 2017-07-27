@@ -1,5 +1,5 @@
 ---
-title: "ICLRTask::SwitchOut Method | Microsoft Docs"
+title: "ICLRTask::SwitchOut Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

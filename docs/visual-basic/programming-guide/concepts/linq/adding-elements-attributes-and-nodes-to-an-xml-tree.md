@@ -1,5 +1,5 @@
 ---
-title: "Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic) | Microsoft Docs"
+title: "Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

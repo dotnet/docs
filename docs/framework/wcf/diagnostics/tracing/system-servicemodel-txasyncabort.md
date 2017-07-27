@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.TxAsyncAbort | Microsoft Docs"
+title: "System.ServiceModel.TxAsyncAbort"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

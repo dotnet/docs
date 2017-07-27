@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; element for &lt;appSettings&gt; | Microsoft Docs"
+title: "&lt;add&gt; element for &lt;appSettings&gt;"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 

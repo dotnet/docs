@@ -1,5 +1,5 @@
 ---
-title: "5007 - DCResolverResolve | Microsoft Docs"
+title: "5007 - DCResolverResolve"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

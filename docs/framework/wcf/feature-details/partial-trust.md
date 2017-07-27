@@ -1,5 +1,5 @@
 ---
-title: "Partial Trust | Microsoft Docs"
+title: "Partial Trust"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

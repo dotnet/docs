@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify the FillBehavior for a Timeline that has Reached the End of Its Active Period | Microsoft Docs"
+title: "How to: Specify the FillBehavior for a Timeline that has Reached the End of Its Active Period"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

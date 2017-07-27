@@ -1,5 +1,5 @@
 ---
-title: "Connection Class | Microsoft Docs"
+title: "Connection Class"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""

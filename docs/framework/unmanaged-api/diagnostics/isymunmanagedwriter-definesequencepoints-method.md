@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::DefineSequencePoints Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::DefineSequencePoints Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

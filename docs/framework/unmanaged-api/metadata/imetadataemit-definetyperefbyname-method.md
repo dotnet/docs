@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::DefineTypeRefByName Method | Microsoft Docs"
+title: "IMetaDataEmit::DefineTypeRefByName Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

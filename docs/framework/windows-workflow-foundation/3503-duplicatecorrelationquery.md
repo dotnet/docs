@@ -1,5 +1,5 @@
 ---
-title: "3503 - DuplicateCorrelationQuery | Microsoft Docs"
+title: "3503 - DuplicateCorrelationQuery"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

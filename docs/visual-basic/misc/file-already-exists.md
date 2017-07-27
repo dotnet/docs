@@ -1,5 +1,5 @@
 ---
-title: "File already exists | Microsoft Docs"
+title: "File already exists"
 
 ms.date: "2015-07-20"
 ms.prod: .net

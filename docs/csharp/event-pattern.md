@@ -1,6 +1,6 @@
 ---
-title: The Standard .NET Event Pattern | Microsoft Docs
-description: The Standard .NET Event Pattern
+title: Standard .NET event patterns
+description: Learn about .NET event patterns and how to create standard event sources and subscribe and process standard events in your code.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: 8a3133d6-4ef2-46f9-9c8d-a8ea8898e4c9
 ---
 
-# The Standard .NET Event Pattern
+# Standard .NET event patterns
 
 [Previous](events-overview.md)
 

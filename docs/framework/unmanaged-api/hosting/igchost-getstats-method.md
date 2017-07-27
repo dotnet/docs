@@ -1,5 +1,5 @@
 ---
-title: "IGCHost::GetStats Method | Microsoft Docs"
+title: "IGCHost::GetStats Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

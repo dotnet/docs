@@ -1,5 +1,5 @@
 ---
-title: "XmlSchemaValidator Push-Based Validation | Microsoft Docs"
+title: "XmlSchemaValidator Push-Based Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

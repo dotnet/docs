@@ -1,5 +1,5 @@
 ---
-title: "Anticipating Adopting the Windows Communication Foundation: Easing Future Migration | Microsoft Docs"
+title: "Anticipating Adopting the Windows Communication Foundation: Easing Future Migration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

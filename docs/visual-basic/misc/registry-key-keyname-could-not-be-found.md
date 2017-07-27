@@ -1,5 +1,5 @@
 ---
-title: "Registry key &#39;&lt;keyname&gt;&#39; could not be found | Microsoft Docs"
+title: "Registry key &#39;&lt;keyname&gt;&#39; could not be found"
 
 ms.date: "2015-07-20"
 ms.prod: .net

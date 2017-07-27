@@ -1,5 +1,5 @@
 ---
-title: "How to: Rotate an Image | Microsoft Docs"
+title: "How to: Rotate an Image"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

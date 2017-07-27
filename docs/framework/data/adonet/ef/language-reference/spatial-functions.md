@@ -1,5 +1,5 @@
 ---
-title: "Spatial Functions | Microsoft Docs"
+title: "Spatial Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

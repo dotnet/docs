@@ -1,5 +1,5 @@
 ---
-title: "SqlTypes and the DataSet | Microsoft Docs"
+title: "SqlTypes and the DataSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

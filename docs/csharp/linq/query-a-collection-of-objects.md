@@ -1,5 +1,5 @@
 ---
-title: Query a collection of objects | Microsoft Docs
+title: Query a collection of objects
 description: How query collections.
 keywords: .NET, .NET Core, C#
 author: BillWagner

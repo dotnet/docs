@@ -1,5 +1,5 @@
 ---
-title: "ICorDebug::Terminate Method | Microsoft Docs"
+title: "ICorDebug::Terminate Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

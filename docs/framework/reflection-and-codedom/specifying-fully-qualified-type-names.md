@@ -1,5 +1,5 @@
 ---
-title: "Specifying Fully Qualified Type Names | Microsoft Docs"
+title: "Specifying Fully Qualified Type Names"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Winres.exe (Windows Forms Resource Editor) | Microsoft Docs"
+title: "Winres.exe (Windows Forms Resource Editor)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

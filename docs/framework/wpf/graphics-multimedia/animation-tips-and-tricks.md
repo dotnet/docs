@@ -1,5 +1,5 @@
 ---
-title: "Animation Tips and Tricks | Microsoft Docs"
+title: "Animation Tips and Tricks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Implementing the UI Automation ScrollItem Control Pattern | Microsoft Docs"
+title: "Implementing the UI Automation ScrollItem Control Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

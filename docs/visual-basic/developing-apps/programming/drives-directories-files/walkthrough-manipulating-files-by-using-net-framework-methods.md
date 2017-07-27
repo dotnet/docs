@@ -1,5 +1,5 @@
 ---
-title: "Manipulating Files by Using .NET Framework Methods (Visual Basic) | Microsoft Docs"
+title: "Manipulating Files by Using .NET Framework Methods (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

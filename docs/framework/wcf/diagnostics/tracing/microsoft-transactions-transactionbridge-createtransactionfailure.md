@@ -1,5 +1,5 @@
 ---
-title: "Microsoft.Transactions.TransactionBridge.CreateTransactionFailure | Microsoft Docs"
+title: "Microsoft.Transactions.TransactionBridge.CreateTransactionFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify a Custom Popup Position | Microsoft Docs"
+title: "How to: Specify a Custom Popup Position"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

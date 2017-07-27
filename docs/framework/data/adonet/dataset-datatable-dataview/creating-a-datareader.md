@@ -1,5 +1,5 @@
 ---
-title: "Creating a DataReader | Microsoft Docs"
+title: "Creating a DataReader"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

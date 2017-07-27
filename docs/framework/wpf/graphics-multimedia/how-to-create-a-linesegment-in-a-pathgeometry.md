@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a LineSegment in a PathGeometry | Microsoft Docs"
+title: "How to: Create a LineSegment in a PathGeometry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

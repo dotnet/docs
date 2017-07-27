@@ -1,5 +1,5 @@
 ---
-title: "Wrong number of arguments or property assignment not valid | Microsoft Docs"
+title: "Wrong number of arguments or property assignment not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

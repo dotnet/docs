@@ -1,5 +1,5 @@
 ---
-title: "39460 - TrackingValueNotSerializable | Microsoft Docs"
+title: "39460 - TrackingValueNotSerializable"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

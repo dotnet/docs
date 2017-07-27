@@ -1,5 +1,5 @@
 ---
-title: "How to: Stretch a ToolStripTextBox to Fill the Remaining Width of a ToolStrip (Windows Forms) | Microsoft Docs"
+title: "How to: Stretch a ToolStripTextBox to Fill the Remaining Width of a ToolStrip (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

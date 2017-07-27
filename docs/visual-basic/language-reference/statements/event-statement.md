@@ -1,5 +1,5 @@
 ---
-title: "Event Statement | Microsoft Docs"
+title: "Event Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

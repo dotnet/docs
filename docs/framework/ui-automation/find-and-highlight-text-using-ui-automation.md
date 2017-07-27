@@ -1,5 +1,5 @@
 ---
-title: "Find and Highlight Text Using UI Automation | Microsoft Docs"
+title: "Find and Highlight Text Using UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Exceptions and Exception Handling (C# Programming Guide) | Microsoft Docs"
+title: "Exceptions and Exception Handling (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

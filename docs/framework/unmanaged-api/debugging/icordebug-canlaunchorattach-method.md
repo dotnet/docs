@@ -1,5 +1,5 @@
 ---
-title: "ICorDebug::CanLaunchOrAttach Method | Microsoft Docs"
+title: "ICorDebug::CanLaunchOrAttach Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

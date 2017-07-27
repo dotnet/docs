@@ -1,5 +1,5 @@
 ---
-title: "DynamicResource Markup Extension | Microsoft Docs"
+title: "DynamicResource Markup Extension"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

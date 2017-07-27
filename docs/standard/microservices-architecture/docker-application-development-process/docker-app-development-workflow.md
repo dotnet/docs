@@ -1,5 +1,5 @@
 ---
-title: Development workflow for Docker apps | Microsoft Docs 
+title: Development workflow for Docker apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Development workflow for Docker apps
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -199,7 +199,7 @@ services:
       - "80:80"
     depends_on:
       - catalog.api
-      - catalog.api
+      - ordering.api
 
   catalog.api:
     image: eshop/catalog.api
@@ -236,7 +236,7 @@ services:
 
 Note that this docker-compose.yml file is a simplified and merged version. It contains static configuration data for each container (like the name of the custom image), which always applies, plus configuration information that might depend on the deployment environment, like the connection string. In later sections, you will learn how you can split the docker-compose.yml configuration into multiple docker-compose files and override values depending on the environment and execution type (debug or release).
 
-The docker-compose.yml file example defines five services: the webmvc service (a web application); two microservices (ordering.api and basket.api); and two data source containers, sql.data based on SQL Server for Linux running as a container, and postgres.data with a Redis cache service. Each service will be deployed as a container, so a Docker image is required for each.
+The docker-compose.yml file example defines five services: the webmvc service (a web application), two microservices (catalog.api and ordering.api), and two data source containers (sql.data based on SQL Server for Linux running as a container and postgres.data as a Postgres database). Each service is deployed as a container, so a Docker image is required for each.
 
 The docker-compose.yml file specifies not only what containers are being used, but how they are individually configured. For instance, the webmvc container definition in the .yml file:
 
@@ -246,7 +246,7 @@ The docker-compose.yml file specifies not only what containers are being used, b
 
 -   Forwards the exposed port 80 on the container to the external port 80 on the host machine.
 
--   Links the web service to the basket and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
+-   Links the web service to the catalog and ordering service with the depends\_on setting. This causes the service to wait until those services are started.
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 

@@ -1,5 +1,5 @@
 ---
-title: "&#39;Class&#39; statement must end with a matching &#39;End Class&#39; | Microsoft Docs"
+title: "&#39;Class&#39; statement must end with a matching &#39;End Class&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

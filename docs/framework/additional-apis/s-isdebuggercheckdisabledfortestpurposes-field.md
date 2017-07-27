@@ -1,5 +1,5 @@
 ---
-title: "s_isDebuggerCheckDisabledForTestPurposes Field | Microsoft Docs"
+title: "s_isDebuggerCheckDisabledForTestPurposes Field"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

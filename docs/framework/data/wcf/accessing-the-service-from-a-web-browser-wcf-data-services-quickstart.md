@@ -1,5 +1,5 @@
 ---
-title: "Accessing the Service from a Web Browser (WCF Data Services Quickstart) | Microsoft Docs"
+title: "Accessing the Service from a Web Browser (WCF Data Services Quickstart)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

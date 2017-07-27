@@ -1,5 +1,5 @@
 ---
-title: "1126 - InvokedMethodThrewException | Microsoft Docs"
+title: "1126 - InvokedMethodThrewException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

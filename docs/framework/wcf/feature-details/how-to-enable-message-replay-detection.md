@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Message Replay Detection | Microsoft Docs"
+title: "How to: Enable Message Replay Detection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Filter on Element Names (LINQ to XML) (C#) | Microsoft Docs"
+title: "How to: Filter on Element Names (LINQ to XML) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

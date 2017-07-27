@@ -1,5 +1,5 @@
 ---
-title: "How to: Enumerate a Subset of Print Queues | Microsoft Docs"
+title: "How to: Enumerate a Subset of Print Queues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure an App to Support .NET Framework 4 or 4.5 | Microsoft Docs"
+title: "How to: Configure an App to Support .NET Framework 4 or 4.5"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

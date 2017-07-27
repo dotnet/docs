@@ -1,5 +1,5 @@
 ---
-title: "Task 2: Host the Workflow Designer | Microsoft Docs"
+title: "Task 2: Host the Workflow Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

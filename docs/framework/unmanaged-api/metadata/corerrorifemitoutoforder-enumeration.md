@@ -1,5 +1,5 @@
 ---
-title: "CorErrorIfEmitOutOfOrder Enumeration | Microsoft Docs"
+title: "CorErrorIfEmitOutOfOrder Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

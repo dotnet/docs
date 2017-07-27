@@ -1,5 +1,5 @@
 ---
-title: "C# Compiler Options Listed Alphabetically | Microsoft Docs"
+title: "C# Compiler Options Listed Alphabetically"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

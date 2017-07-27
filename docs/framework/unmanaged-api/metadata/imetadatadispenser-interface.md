@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataDispenser Interface | Microsoft Docs"
+title: "IMetaDataDispenser Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

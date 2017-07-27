@@ -1,5 +1,5 @@
 ---
-title: "Creating the Source Office Open XML Document (C#) | Microsoft Docs"
+title: "Creating the Source Office Open XML Document (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

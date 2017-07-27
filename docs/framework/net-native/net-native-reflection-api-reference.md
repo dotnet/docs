@@ -1,5 +1,5 @@
 ---
-title: ".NET Native Reflection API Reference | Microsoft Docs"
+title: ".NET Native Reflection API Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

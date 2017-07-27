@@ -1,5 +1,5 @@
 ---
-title: "CLRDataEnumMemoryFlags Enumeration | Microsoft Docs"
+title: "CLRDataEnumMemoryFlags Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

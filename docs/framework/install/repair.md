@@ -1,5 +1,5 @@
 ---
-title: Repair the .NET Framework | Microsoft Docs
+title: Repair the .NET Framework
 description: Learn how to repair the .NET Framework
 author: rlander
 keywords: .NET Framework, Install

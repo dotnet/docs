@@ -1,5 +1,5 @@
 ---
-title: "SecAnnotate.exe (.NET Security Annotator Tool) | Microsoft Docs"
+title: "SecAnnotate.exe (.NET Security Annotator Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Perform inner joins | Microsoft Docs
+title: Perform inner joins
 description: How to perform inner joins.
 keywords: .NET, .NET Core, C#
 author: BillWagner

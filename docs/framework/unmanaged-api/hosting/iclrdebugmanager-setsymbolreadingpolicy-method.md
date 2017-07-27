@@ -1,5 +1,5 @@
 ---
-title: "ICLRDebugManager::SetSymbolReadingPolicy Method | Microsoft Docs"
+title: "ICLRDebugManager::SetSymbolReadingPolicy Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

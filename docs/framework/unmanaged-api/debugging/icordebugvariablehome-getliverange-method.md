@@ -1,5 +1,5 @@
 ---
-title: "IcorDebugVariableHome::GetLiveRange Method | Microsoft Docs"
+title: "IcorDebugVariableHome::GetLiveRange Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

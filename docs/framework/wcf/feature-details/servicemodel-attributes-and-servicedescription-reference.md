@@ -1,5 +1,5 @@
 ---
-title: "ServiceModel Attributes and ServiceDescription Reference | Microsoft Docs"
+title: "ServiceModel Attributes and ServiceDescription Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

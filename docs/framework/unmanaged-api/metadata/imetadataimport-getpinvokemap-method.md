@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetPinvokeMap Method | Microsoft Docs"
+title: "IMetaDataImport::GetPinvokeMap Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

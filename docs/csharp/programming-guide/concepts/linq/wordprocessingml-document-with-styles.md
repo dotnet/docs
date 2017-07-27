@@ -1,5 +1,5 @@
 ---
-title: "WordprocessingML Document with Styles3 | Microsoft Docs"
+title: "WordprocessingML Document with Styles3"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

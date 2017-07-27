@@ -1,5 +1,5 @@
 ---
-title: "File specified in FileName is not a valid XML file | Microsoft Docs"
+title: "File specified in FileName is not a valid XML file"
 
 ms.date: "2015-07-20"
 ms.prod: .net

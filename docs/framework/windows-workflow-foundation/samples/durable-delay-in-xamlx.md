@@ -1,5 +1,5 @@
 ---
-title: "Durable Delay in XAMLX | Microsoft Docs"
+title: "Durable Delay in XAMLX"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

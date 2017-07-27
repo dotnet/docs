@@ -1,5 +1,5 @@
 ---
-title: "SQL Workflow Instance Store | Microsoft Docs"
+title: "SQL Workflow Instance Store"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

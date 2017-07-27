@@ -137,13 +137,13 @@
 
 ### Notes to inheritors
 
-You override the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method to return the encoding or encodings supported by your <xref=System.Text.EncodingProvider> subclass. When user code attempts to retrieve an encoding by calling the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method, the method passes the `codepage` identifier to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method attempts to retrieve a cached encoding whose code page identifier is `codepage`. Because of this, if `codepage` is not the code page identifier of an encoding that you support, the method should return `null`; it should never throw an exception.
+You override the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method to return the encoding or encodings supported by your <xref:System.Text.EncodingProvider> subclass. When user code attempts to retrieve an encoding by calling the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method, the method passes the `codepage` identifier to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the [GetEncoding(Int32)](<xref:System.Text.EncodingProvider.GetEncoding(System.Int32)>) method attempts to retrieve a cached encoding whose code page identifier is `codepage`. Because of this, if `codepage` is not the code page identifier of an encoding that you support, the method should return `null`; it should never throw an exception.
         
 Note that you can also choose to return a default code page if the value of the `codepage` argument is 0.
 
 ## Notes to callers
         
-This method is called by the [Encoding.GetEncoding(Int32)](<xref=System.Text.Encoding.GetEncoding(System.Int32)>) method. You should not call it directly from user code.
+This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Encoding.GetEncoding(System.Int32)>) method. You should not call it directly from user code.
 
         ]]></format>
         </remarks>
@@ -185,12 +185,12 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref=System.Text.Enc
            <format type="text/markdown"><![CDATA[ 
       
 ## Notes to inheritors 
-        
-You override the [GetEncoding(String)](<xref=System.Text.EncodingProvider.GetEncoding(System.String)>) method to return the encoding or encodings supported by your <xref=System.Text.EncodingProvider> subclass. When user code attempts to retrieve an encoding by calling the [GetEncoding(String)](<xref=System.Text.EncodingProvider.GetEncoding(System.String)>) method, the method passes the `name` argument to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the [GetEncoding(String)](<xref=System.Text.EncodingProvider.GetEncoding(System.String)>) method attempts to retrieve a cached encoding whose name is `name`. Because of this, if `name` is not the name of an encoding that you support, the method should return `null`. The only case in which the method should throw an exception is if `name` is `null`.
+                  
+You override the [GetEncoding(String)](<xref:System.Text.EncodingProvider.GetEncoding(System.String)>) method to return the encoding or encodings supported by your <xref:System.Text.EncodingProvider> subclass. When user code attempts to retrieve an encoding by calling the [GetEncoding(String)](<xref:System.Text.EncodingProvider.GetEncoding(System.String)>) method, the method passes the `name` argument to every registered encoding provider until one returns a valid encoding. If none returns a valid encoding, the [GetEncoding(String)](<xref:System.Text.EncodingProvider.GetEncoding(System.String)>) method attempts to retrieve a cached encoding whose name is `name`. Because of this, if `name` is not the name of an encoding that you support, the method should return `null`. The only case in which the method should throw an exception is if `name` is `null`.
 
 ## Notes to callers
 
-This method is called by the [Encoding.GetEncoding(String)](<xref=System.Text.Encoding.GetEncoding(System.String)>) method. You should not call it directly from user code.
+This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.Encoding.GetEncoding(System.String)>) method. You should not call it directly from user code.
         ]]></format>
         </remarks>
       </Docs>

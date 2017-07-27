@@ -2737,7 +2737,7 @@ value Mod 2 = 0
 ## Remarks  
  Any fractional part of the `value` parameter is truncated before conversion.
 
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
 
 
 ## Examples
@@ -2794,7 +2794,7 @@ value Mod 2 = 0
 ## Remarks  
  Any fractional part of the `value` parameter is truncated before conversion.
 
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Double> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Double> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
 
 
 ## Examples
@@ -2845,7 +2845,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CByte` in Visual Basic) is used. Otherwise, they display a compiler error.   
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CByte` in Visual Basic) is used. Otherwise, they display a compiler error.   
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Byte> data type. There is no loss of precision in the resulting <xref:System.Byte> value if the conversion is successful.
 
@@ -2897,7 +2897,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDec` in Visual Basic) is used.   
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDec` in Visual Basic) is used.   
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Decimal> data type. 
 
@@ -2949,7 +2949,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDbl` in Visual Basic) is used.   
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDbl` in Visual Basic) is used.   
 
  Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Double> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Double.MinValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Double.MaxValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.PositiveInfinity?displayProperty=fullName>.
  
@@ -3008,7 +3008,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CShort` in Visual Basic) is used. Otherwise, they display a compiler error.   
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CShort` in Visual Basic) is used. Otherwise, they display a compiler error.   
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int16> data type. There is no loss of precision in the resulting <xref:System.Int16> value if the conversion is successful.
 
@@ -3065,7 +3065,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CInt` in Visual Basic) is used. Otherwise, they display a compiler error.   
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CInt` in Visual Basic) is used. Otherwise, they display a compiler error.   
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int32> data type. There is no loss of precision in the resulting <xref:System.Int16> value if the conversion is successful.
 
@@ -3122,7 +3122,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CLng` in Visual Basic) is used. Otherwise, they display a compiler error.  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CLng` in Visual Basic) is used. Otherwise, they display a compiler error.  
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int64> data type. 
 
@@ -3179,7 +3179,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSByte` in Visual Basic) is used. Otherwise, they display a compiler error.  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSByte` in Visual Basic) is used. Otherwise, they display a compiler error.  
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.SByte> data type. There is no loss of precision in the resulting <xref:System.SByte> value if the conversion is successful.
 
@@ -3226,7 +3226,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss or a loss of precision. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSng` in Visual Basic) is used. Otherwise, they display a compiler error.    
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss or a loss of precision. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSng` in Visual Basic) is used. Otherwise, they display a compiler error.    
 
  Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Single> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Single.MinValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Single.MaxValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.PositiveInfinity?displayProperty=fullName>.
 
@@ -3290,7 +3290,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUShort` in Visual Basic) is used. Otherwise, they display a compiler error.    
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUShort` in Visual Basic) is used. Otherwise, they display a compiler error.    
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt16> data type. There is no loss of precision in the resulting <xref:System.UInt16> value if the conversion is successful.
 
@@ -3347,7 +3347,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUInt` in Visual Basic) is used. Otherwise, they display a compiler error.    
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUInt` in Visual Basic) is used. Otherwise, they display a compiler error.    
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt32> data type. There is no loss of precision in the resulting <xref:System.UInt32> value if the conversion is successful.
 
@@ -3404,7 +3404,7 @@ value Mod 2 = 0
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CULng` in Visual Basic) is used. Otherwise, they display a compiler error.    
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CULng` in Visual Basic) is used. Otherwise, they display a compiler error.    
 
  Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt64> data type. There is no loss of precision in the resulting <xref:System.UInt64> value if the conversion is successful.
 
@@ -3462,7 +3462,7 @@ value Mod 2 = 0
 ## Remarks  
  Any fractional part of the `value` parameter is truncated before conversion.
  
- The overloads of the <xref:System.Numbers.BigInteger.op_Explicit%2A> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Single> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Single> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
 
 
 ## Examples

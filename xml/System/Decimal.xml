@@ -2174,7 +2174,9 @@
       </Parameters>
       <Docs>
         <param name="value">The value to convert.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to an 8-bit signed integer.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to an 8-bit signed integer.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>An 8-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
         <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
         <remarks>
@@ -2280,7 +2282,9 @@
       </Parameters>
       <Docs>
         <param name="value">The value to convert.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 16-bit unsigned integer.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 16-bit unsigned integer.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>A 16-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
         <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" /> or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
         <remarks>
@@ -2335,7 +2339,9 @@
       </Parameters>
       <Docs>
         <param name="value">The value to convert.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 32-bit unsigned integer.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 32-bit unsigned integer.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>A 32-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
         <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" /> or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
         <remarks>
@@ -2390,7 +2396,9 @@
       </Parameters>
       <Docs>
         <param name="value">The value to convert.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 64-bit unsigned integer.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 64-bit unsigned integer.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>A 64-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
         <exception cref="T:System.OverflowException"><paramref name="value" /> is negative or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
         <remarks>
@@ -2928,7 +2936,9 @@
       </Parameters>
       <Docs>
         <param name="value">The 8-bit signed integer to convert.</param>
-        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Decimal" />.</summary>
+        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>The converted 8-bit signed integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2983,7 +2993,9 @@
       </Parameters>
       <Docs>
         <param name="value">The 16-bit unsigned integer to convert.</param>
-        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Decimal" />.</summary>
+        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>The converted 16-bit unsigned integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3038,7 +3050,9 @@
       </Parameters>
       <Docs>
         <param name="value">The 32-bit unsigned integer to convert.</param>
-        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Decimal" />.</summary>
+        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>The converted 32-bit unsigned integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3093,7 +3107,9 @@
       </Parameters>
       <Docs>
         <param name="value">The 64-bit unsigned integer to convert.</param>
-        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Decimal" />.</summary>
+        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>The converted 64-bit unsigned integer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

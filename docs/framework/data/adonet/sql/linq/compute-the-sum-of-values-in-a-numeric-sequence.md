@@ -1,5 +1,5 @@
 ---
-title: "Compute the Sum of Values in a Numeric Sequence | Microsoft Docs"
+title: "Compute the Sum of Values in a Numeric Sequence"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

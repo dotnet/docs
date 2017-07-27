@@ -1,5 +1,5 @@
 ---
-title: "COR_FIELD_OFFSET Structure | Microsoft Docs"
+title: "COR_FIELD_OFFSET Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

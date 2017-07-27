@@ -1,5 +1,5 @@
 ---
-title: "Unable to emit assembly: &lt;error message&gt; | Microsoft Docs"
+title: "Unable to emit assembly: &lt;error message&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

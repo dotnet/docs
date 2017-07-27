@@ -1,5 +1,5 @@
 ---
-title: "Design Patterns: List-Based Publish-Subscribe | Microsoft Docs"
+title: "Design Patterns: List-Based Publish-Subscribe"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

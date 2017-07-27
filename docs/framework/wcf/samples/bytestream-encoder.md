@@ -1,5 +1,5 @@
 ---
-title: "ByteStream Encoder | Microsoft Docs"
+title: "ByteStream Encoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

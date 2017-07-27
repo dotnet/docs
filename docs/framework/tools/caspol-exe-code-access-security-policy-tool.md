@@ -1,5 +1,5 @@
 ---
-title: "Caspol.exe (Code Access Security Policy Tool) | Microsoft Docs"
+title: "Caspol.exe (Code Access Security Policy Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

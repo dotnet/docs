@@ -1,5 +1,5 @@
 ---
-title: dotnet-pack command - .NET Core CLI | Microsoft Docs
+title: dotnet-pack command - .NET Core CLI
 description: The dotnet-pack command creates NuGet packages for your .NET Core project.
 keywords: dotnet-pack, CLI, CLI command, .NET Core
 author: blackdwarf

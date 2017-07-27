@@ -1,5 +1,5 @@
 ---
-title: "XmlDocument Input to XslTransform | Microsoft Docs"
+title: "XmlDocument Input to XslTransform"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

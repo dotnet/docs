@@ -1,5 +1,5 @@
 ---
-title: "Behavior Security | Microsoft Docs"
+title: "Behavior Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

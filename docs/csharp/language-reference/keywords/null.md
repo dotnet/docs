@@ -1,5 +1,5 @@
 ---
-title: "null (C# Reference) | Microsoft Docs"
+title: "null (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

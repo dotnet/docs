@@ -1,5 +1,5 @@
 ---
-title: Framework Libraries | Microsoft Docs
+title: Framework Libraries
 description: Framework Libraries
 keywords: .NET, .NET Core
 author: richlander

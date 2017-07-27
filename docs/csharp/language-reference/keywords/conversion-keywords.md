@@ -1,5 +1,5 @@
 ---
-title: "Conversion Keywords (C# Reference) | Microsoft Docs"
+title: "Conversion Keywords (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

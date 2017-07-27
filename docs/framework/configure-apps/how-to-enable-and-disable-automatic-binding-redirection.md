@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable and Disable Automatic Binding Redirection | Microsoft Docs"
+title: "How to: Enable and Disable Automatic Binding Redirection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

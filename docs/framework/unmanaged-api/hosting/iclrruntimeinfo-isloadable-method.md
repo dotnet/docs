@@ -1,5 +1,5 @@
 ---
-title: "ICLRRuntimeInfo::IsLoadable Method | Microsoft Docs"
+title: "ICLRRuntimeInfo::IsLoadable Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

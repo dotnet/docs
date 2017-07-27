@@ -1,5 +1,5 @@
 ---
-title: "Unable to write temporary file because temporary path is not available | Microsoft Docs"
+title: "Unable to write temporary file because temporary path is not available"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Constituent Controls | Microsoft Docs"
+title: "Constituent Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

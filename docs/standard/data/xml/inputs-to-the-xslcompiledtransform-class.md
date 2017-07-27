@@ -1,5 +1,5 @@
 ---
-title: "Inputs to the XslCompiledTransform Class | Microsoft Docs"
+title: "Inputs to the XslCompiledTransform Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

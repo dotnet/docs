@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugMetaDataLocator Interface | Microsoft Docs"
+title: "ICorDebugMetaDataLocator Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

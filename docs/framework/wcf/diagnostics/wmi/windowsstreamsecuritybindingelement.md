@@ -1,5 +1,5 @@
 ---
-title: "WindowsStreamSecurityBindingElement | Microsoft Docs"
+title: "WindowsStreamSecurityBindingElement"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

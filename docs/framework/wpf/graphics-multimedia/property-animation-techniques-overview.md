@@ -1,5 +1,5 @@
 ---
-title: "Property Animation Techniques Overview | Microsoft Docs"
+title: "Property Animation Techniques Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

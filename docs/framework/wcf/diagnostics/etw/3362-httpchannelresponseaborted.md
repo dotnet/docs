@@ -1,5 +1,5 @@
 ---
-title: "3362 - HttpChannelResponseAborted | Microsoft Docs"
+title: "3362 - HttpChannelResponseAborted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

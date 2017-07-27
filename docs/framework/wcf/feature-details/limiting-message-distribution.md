@@ -1,5 +1,5 @@
 ---
-title: "Limiting Message Distribution | Microsoft Docs"
+title: "Limiting Message Distribution"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

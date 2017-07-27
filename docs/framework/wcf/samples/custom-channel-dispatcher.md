@@ -1,5 +1,5 @@
 ---
-title: "Custom Channel Dispatcher | Microsoft Docs"
+title: "Custom Channel Dispatcher"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Performance: Layout and Design | Microsoft Docs"
+title: "Optimizing Performance: Layout and Design"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Expression too complex | Microsoft Docs"
+title: "Expression too complex"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Return from a Page Function | Microsoft Docs"
+title: "How to: Return from a Page Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

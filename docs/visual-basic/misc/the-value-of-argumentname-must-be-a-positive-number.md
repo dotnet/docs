@@ -1,5 +1,5 @@
 ---
-title: "The value of &lt;argumentname&gt; must be a positive number | Microsoft Docs"
+title: "The value of &lt;argumentname&gt; must be a positive number"
 
 ms.date: "2015-07-20"
 ms.prod: .net

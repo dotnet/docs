@@ -1,5 +1,5 @@
 ---
-title: Inline Functions (F#) | Microsoft Docs
+title: Inline Functions (F#)
 description: Learn how to use F# inline functions that are integrated directly into the calling code.
 keywords: visual f#, f#, functional programming
 author: cartermp

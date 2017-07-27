@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate the Object Model in Visual Basic or C# | Microsoft Docs"
+title: "How to: Generate the Object Model in Visual Basic or C#"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

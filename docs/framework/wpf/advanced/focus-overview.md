@@ -1,5 +1,5 @@
 ---
-title: "Focus Overview | Microsoft Docs"
+title: "Focus Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

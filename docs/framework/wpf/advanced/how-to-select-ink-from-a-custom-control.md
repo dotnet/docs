@@ -1,5 +1,5 @@
 ---
-title: "How to: Select Ink from a Custom Control | Microsoft Docs"
+title: "How to: Select Ink from a Custom Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

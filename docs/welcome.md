@@ -1,5 +1,5 @@
 ---
-title: Welcome to .NET | Microsoft Docs
+title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 keywords: .NET, .NET Core, getting started, news
 author: richlander

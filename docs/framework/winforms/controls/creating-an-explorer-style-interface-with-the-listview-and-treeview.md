@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer | Microsoft Docs"
+title: "Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

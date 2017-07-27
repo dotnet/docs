@@ -1,5 +1,5 @@
 ---
-title: "Durable Duplex Correlation | Microsoft Docs"
+title: "Durable Duplex Correlation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

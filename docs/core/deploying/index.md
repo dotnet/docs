@@ -1,5 +1,5 @@
 ---
-title: .NET Core Application Deployment | Microsoft Docs
+title: .NET Core Application Deployment
 description: Deploying a .NET Core application. 
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha

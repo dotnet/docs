@@ -1,5 +1,5 @@
 ---
-title: "Error Messages (Visual Basic) | Microsoft Docs"
+title: "Error Messages (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

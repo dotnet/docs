@@ -1,5 +1,5 @@
 ---
-title: Using the .NET Compiler SDK - C# Guide | Microsoft Docs
+title: Using the .NET Compiler SDK - C# Guide
 description: Explore the the Roslyn APIs to create automatic diagnostics and code fixes
 keywords: .NET, .NET Core, C#, Roslyn, 
 ms.date: 06/25/2016

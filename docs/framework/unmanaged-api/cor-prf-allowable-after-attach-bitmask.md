@@ -1,5 +1,5 @@
 ---
-title: "COR_PRF_ALLOWABLE_AFTER_ATTACH Bitmask | Microsoft Docs"
+title: "COR_PRF_ALLOWABLE_AFTER_ATTACH Bitmask"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

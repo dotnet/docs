@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; element for NameValueSectionHandler and DictionarySectionHandler | Microsoft Docs"
+title: "&lt;add&gt; element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 

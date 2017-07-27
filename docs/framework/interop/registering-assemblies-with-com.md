@@ -1,5 +1,5 @@
 ---
-title: "Registering Assemblies with COM | Microsoft Docs"
+title: "Registering Assemblies with COM"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

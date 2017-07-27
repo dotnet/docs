@@ -1,5 +1,5 @@
 ---
-title: "How to: Flatten a Curved Path into a Line | Microsoft Docs"
+title: "How to: Flatten a Curved Path into a Line"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

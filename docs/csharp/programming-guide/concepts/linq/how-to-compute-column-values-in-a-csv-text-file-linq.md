@@ -1,5 +1,5 @@
 ---
-title: "How to: Compute Column Values in a CSV Text File (LINQ) (C#) | Microsoft Docs"
+title: "How to: Compute Column Values in a CSV Text File (LINQ) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Service Application Programming Architecture | Microsoft Docs"
+title: "Service Application Programming Architecture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - NuGet packages | Microsoft Docs
+title: Porting to .NET Core - NuGet packages
 description: Learn how to port NuGet packages from the .NET Framework to .NET Core.
 keywords: .NET, .NET Core
 ms.date: 06/20/2016

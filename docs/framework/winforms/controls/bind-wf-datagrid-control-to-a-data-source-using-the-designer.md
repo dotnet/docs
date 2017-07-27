@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer | Microsoft Docs"
+title: "How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Tabbing Between Shapes (Visual Studio) | Microsoft Docs"
+title: "How to: Enable Tabbing Between Shapes (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

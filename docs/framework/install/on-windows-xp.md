@@ -1,5 +1,5 @@
 ---
-title: Install the .NET Framework on Windows XP | Microsoft Docs
+title: Install the .NET Framework on Windows XP
 description: Learn how to install .NET Framework on Windows XP
 author: rlander
 keywords: .NET Framework, Install

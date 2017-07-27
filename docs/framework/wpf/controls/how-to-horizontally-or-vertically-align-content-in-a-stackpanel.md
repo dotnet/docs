@@ -1,5 +1,5 @@
 ---
-title: "How to: Horizontally or Vertically Align Content in a StackPanel | Microsoft Docs"
+title: "How to: Horizontally or Vertically Align Content in a StackPanel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

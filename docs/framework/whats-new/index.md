@@ -1,5 +1,5 @@
 ---
-title: "What's new in the .NET Framework | Microsoft Docs"
+title: "What's new in the .NET Framework"
 ms.custom: ""
 ms.date: "05/02/2017"
 ms.prod: ".net-framework"

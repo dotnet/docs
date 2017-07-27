@@ -1,5 +1,5 @@
 ---
-title: "Programming Model Item Tree | Microsoft Docs"
+title: "Programming Model Item Tree"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Code-Bodied | Microsoft Docs"
+title: "Code-Bodied"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

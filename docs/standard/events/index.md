@@ -1,5 +1,5 @@
 ---
-title: "Handling and Raising Events | Microsoft Docs"
+title: "Handling and Raising Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

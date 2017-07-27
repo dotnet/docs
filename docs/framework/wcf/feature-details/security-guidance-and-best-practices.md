@@ -1,5 +1,5 @@
 ---
-title: "Security Guidance and Best Practices | Microsoft Docs"
+title: "Security Guidance and Best Practices"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

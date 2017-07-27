@@ -1,5 +1,5 @@
 ---
-title: "COR_DEBUG_STEP_RANGE Structure | Microsoft Docs"
+title: "COR_DEBUG_STEP_RANGE Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Key In the Registry (Visual C#) | Microsoft Docs"
+title: "How to: Create a Key In the Registry (Visual C#)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

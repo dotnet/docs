@@ -1,5 +1,5 @@
 ---
-title: "How to: Display a ChangeSet | Microsoft Docs"
+title: "How to: Display a ChangeSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

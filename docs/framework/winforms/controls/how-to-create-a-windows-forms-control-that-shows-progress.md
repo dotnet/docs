@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Windows Forms Control That Shows Progress | Microsoft Docs"
+title: "How to: Create a Windows Forms Control That Shows Progress"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

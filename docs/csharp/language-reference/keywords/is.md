@@ -1,5 +1,5 @@
 ---
-title: "is (C# Reference) | Microsoft Docs"
+title: "is (C# Reference)"
 keywords: is keyword (C#), is (C#)
 ms.date: "2017-02-17"
 ms.prod: .net

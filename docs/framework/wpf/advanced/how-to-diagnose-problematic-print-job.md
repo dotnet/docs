@@ -1,5 +1,5 @@
 ---
-title: "How to: Diagnose Problematic Print Job | Microsoft Docs"
+title: "How to: Diagnose Problematic Print Job"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

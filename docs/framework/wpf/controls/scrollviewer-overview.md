@@ -1,5 +1,5 @@
 ---
-title: "ScrollViewer Overview | Microsoft Docs"
+title: "ScrollViewer Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

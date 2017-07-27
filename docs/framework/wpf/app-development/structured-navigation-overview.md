@@ -1,5 +1,5 @@
 ---
-title: "Structured Navigation Overview | Microsoft Docs"
+title: "Structured Navigation Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

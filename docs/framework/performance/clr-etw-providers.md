@@ -1,5 +1,5 @@
 ---
-title: "CLR ETW Providers | Microsoft Docs"
+title: "CLR ETW Providers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

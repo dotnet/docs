@@ -1,5 +1,5 @@
 ---
-title: "Understanding State Changes | Microsoft Docs"
+title: "Understanding State Changes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

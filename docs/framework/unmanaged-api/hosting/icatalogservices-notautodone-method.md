@@ -1,5 +1,5 @@
 ---
-title: "ICatalogServices::NotAutodone Method | Microsoft Docs"
+title: "ICatalogServices::NotAutodone Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

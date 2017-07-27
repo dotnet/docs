@@ -1,5 +1,5 @@
 ---
-title: "Property Value Inheritance | Microsoft Docs"
+title: "Property Value Inheritance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

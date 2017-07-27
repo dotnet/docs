@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Width Properties of an Element | Microsoft Docs"
+title: "How to: Set the Width Properties of an Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

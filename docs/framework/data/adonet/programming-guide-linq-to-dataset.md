@@ -1,5 +1,5 @@
 ---
-title: "Programming Guide (LINQ to DataSet) | Microsoft Docs"
+title: "Programming Guide (LINQ to DataSet)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

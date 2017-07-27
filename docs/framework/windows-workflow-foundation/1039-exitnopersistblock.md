@@ -1,5 +1,5 @@
 ---
-title: "1039 - ExitNoPersistBlock | Microsoft Docs"
+title: "1039 - ExitNoPersistBlock"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

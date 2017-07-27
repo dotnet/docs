@@ -1,5 +1,5 @@
 ---
-title: "3807 - RoutingServiceCompletingTwoWay | Microsoft Docs"
+title: "3807 - RoutingServiceCompletingTwoWay"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

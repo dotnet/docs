@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals of Garbage Collection | Microsoft Docs"
+title: "Fundamentals of Garbage Collection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

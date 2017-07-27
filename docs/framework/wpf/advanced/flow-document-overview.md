@@ -1,5 +1,5 @@
 ---
-title: "Flow Document Overview | Microsoft Docs"
+title: "Flow Document Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

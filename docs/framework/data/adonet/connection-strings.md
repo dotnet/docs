@@ -1,5 +1,5 @@
 ---
-title: "Connection Strings in ADO.NET | Microsoft Docs"
+title: "Connection Strings in ADO.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Types Migrated from WPF to System.Xaml | Microsoft Docs"
+title: "Types Migrated from WPF to System.Xaml"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

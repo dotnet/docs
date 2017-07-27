@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport2::GetGenericParamConstraintProps Method | Microsoft Docs"
+title: "IMetaDataImport2::GetGenericParamConstraintProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XML Documentation Comments (C# Programming Guide) | Microsoft Docs"
+title: "XML Documentation Comments (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

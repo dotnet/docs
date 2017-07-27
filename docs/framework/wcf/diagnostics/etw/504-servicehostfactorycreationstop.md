@@ -1,5 +1,5 @@
 ---
-title: "504 - ServiceHostFactoryCreationStop | Microsoft Docs"
+title: "504 - ServiceHostFactoryCreationStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

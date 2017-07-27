@@ -1,5 +1,5 @@
 ---
-title: "How To: Service Versioning | Microsoft Docs"
+title: "How To: Service Versioning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

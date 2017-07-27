@@ -1,5 +1,5 @@
 ---
-title: "How to: Inspect and Modify Messages on the Service | Microsoft Docs"
+title: "How to: Inspect and Modify Messages on the Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

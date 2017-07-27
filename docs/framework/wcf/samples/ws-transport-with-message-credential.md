@@ -1,5 +1,5 @@
 ---
-title: "WS Transport With Message Credential | Microsoft Docs"
+title: "WS Transport With Message Credential"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

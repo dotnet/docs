@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform an XSLT Transformation by Using an Assembly | Microsoft Docs"
+title: "How to: Perform an XSLT Transformation by Using an Assembly"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

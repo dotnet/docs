@@ -1,5 +1,5 @@
 ---
-title: "Data Transformations with LINQ (C#) | Microsoft Docs"
+title: "Data Transformations with LINQ (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

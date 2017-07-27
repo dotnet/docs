@@ -1,5 +1,5 @@
 ---
-title: "3801 - RoutingServiceChannelFaulted | Microsoft Docs"
+title: "3801 - RoutingServiceChannelFaulted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

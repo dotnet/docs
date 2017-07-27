@@ -1,5 +1,5 @@
 ---
-title: "Obtain Mixed Text Attribute Details Using UI Automation | Microsoft Docs"
+title: "Obtain Mixed Text Attribute Details Using UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

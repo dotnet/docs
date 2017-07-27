@@ -1,5 +1,5 @@
 ---
-title: "Creating a custom header that is signed and-or encrypted | Microsoft Docs"
+title: "Creating a custom header that is signed and-or encrypted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

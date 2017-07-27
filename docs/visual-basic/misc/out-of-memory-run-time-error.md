@@ -1,5 +1,5 @@
 ---
-title: "Out of memory (Visual Basic Run-Time Error) | Microsoft Docs"
+title: "Out of memory (Visual Basic Run-Time Error)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify an Alternate Element Name for an XML Stream | Microsoft Docs"
+title: "How to: Specify an Alternate Element Name for an XML Stream"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

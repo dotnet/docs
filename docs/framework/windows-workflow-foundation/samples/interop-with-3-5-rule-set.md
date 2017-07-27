@@ -1,5 +1,5 @@
 ---
-title: "Interop with 3.5 Rule Set | Microsoft Docs"
+title: "Interop with 3.5 Rule Set"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

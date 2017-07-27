@@ -1,5 +1,5 @@
 ---
-title: "Bitmap Effects Overview | Microsoft Docs"
+title: "Bitmap Effects Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Serialization and Metadata | Microsoft Docs"
+title: "Serialization and Metadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

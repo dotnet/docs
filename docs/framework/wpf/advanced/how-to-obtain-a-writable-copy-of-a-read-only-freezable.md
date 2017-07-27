@@ -1,5 +1,5 @@
 ---
-title: "How to: Obtain a Writable Copy of a Read-Only Freezable | Microsoft Docs"
+title: "How to: Obtain a Writable Copy of a Read-Only Freezable"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

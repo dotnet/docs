@@ -1,5 +1,5 @@
 ---
-title: "The input path refers to a file but ends with a directory separator character | Microsoft Docs"
+title: "The input path refers to a file but ends with a directory separator character"
 
 ms.date: "2015-07-20"
 ms.prod: .net

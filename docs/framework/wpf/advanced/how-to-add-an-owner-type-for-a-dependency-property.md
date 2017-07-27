@@ -1,5 +1,5 @@
 ---
-title: "How to: Add an Owner Type for a Dependency Property | Microsoft Docs"
+title: "How to: Add an Owner Type for a Dependency Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Triggers to Style Selected Items in a ListView | Microsoft Docs"
+title: "How to: Use Triggers to Style Selected Items in a ListView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

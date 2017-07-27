@@ -1,5 +1,5 @@
 ---
-title: "Specifying an Assembly&#39;s Location | Microsoft Docs"
+title: "Specifying an Assembly&#39;s Location"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

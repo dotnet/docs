@@ -1,5 +1,5 @@
 ---
-title: "Managing Concurrency with DependentTransaction | Microsoft Docs"
+title: "Managing Concurrency with DependentTransaction"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

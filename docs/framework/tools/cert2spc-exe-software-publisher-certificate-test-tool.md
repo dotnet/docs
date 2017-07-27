@@ -1,5 +1,5 @@
 ---
-title: "Cert2spc.exe (Software Publisher Certificate Test Tool) | Microsoft Docs"
+title: "Cert2spc.exe (Software Publisher Certificate Test Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

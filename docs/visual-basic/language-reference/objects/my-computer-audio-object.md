@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Audio Object | Microsoft Docs"
+title: "My.Computer.Audio Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Classes and Structs (C# Programming Guide) | Microsoft Docs"
+title: "Classes and Structs (C# Programming Guide)"
 description: Describes the use of classes and structures (structs) in C#.
 keywords: classes (C#), structs (C#), structures (structs) (C#), reference types (C#), value types (C#)
 ms.date: "2016-01-17"

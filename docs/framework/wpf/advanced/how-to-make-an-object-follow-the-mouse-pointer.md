@@ -1,5 +1,5 @@
 ---
-title: "How to: Make an Object Follow the Mouse Pointer | Microsoft Docs"
+title: "How to: Make an Object Follow the Mouse Pointer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

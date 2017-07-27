@@ -1,5 +1,5 @@
 ---
-title: "Labeling Individual Windows Forms Controls and Providing Shortcuts to Them | Microsoft Docs"
+title: "Labeling Individual Windows Forms Controls and Providing Shortcuts to Them"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

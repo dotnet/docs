@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Deserialization of Objects Across App Domains | Microsoft Docs"
+title: "Mitigation: Deserialization of Objects Across App Domains"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

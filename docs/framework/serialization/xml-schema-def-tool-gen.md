@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents | Microsoft Docs"
+title: "How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

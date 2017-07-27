@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Sequence of B&#233;zier Splines | Microsoft Docs"
+title: "How to: Draw a Sequence of B&#233;zier Splines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

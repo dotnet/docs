@@ -1,5 +1,5 @@
 ---
-title: "3810 - RoutingServiceConfigurationApplied | Microsoft Docs"
+title: "3810 - RoutingServiceConfigurationApplied"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

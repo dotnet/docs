@@ -1,5 +1,5 @@
 ---
-title: "Value Types and Reference Types | Microsoft Docs"
+title: "Value Types and Reference Types"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

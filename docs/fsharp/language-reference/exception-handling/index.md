@@ -1,5 +1,5 @@
 ---
-title: Exception Handling (F#) | Microsoft Docs
+title: Exception Handling (F#)
 description: Learn the basics of exception handling in F# and find links to exception handling expressions and functions.
 keywords: visual f#, f#, functional programming
 author: cartermp

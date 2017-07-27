@@ -1,5 +1,5 @@
 ---
-title: "#ExternalSource Directive | Microsoft Docs"
+title: "#ExternalSource Directive"
 
 ms.date: "2015-07-20"
 ms.prod: .net

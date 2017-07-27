@@ -1,5 +1,5 @@
 ---
-title: "Introduction to WPF in Visual Studio 2015 | Microsoft Docs"
+title: "Introduction to WPF in Visual Studio 2015"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

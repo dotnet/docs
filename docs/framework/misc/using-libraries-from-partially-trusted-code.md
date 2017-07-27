@@ -1,5 +1,5 @@
 ---
-title: "Using Libraries from Partially Trusted Code | Microsoft Docs"
+title: "Using Libraries from Partially Trusted Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

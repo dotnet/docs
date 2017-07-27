@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Color of a Pen | Microsoft Docs"
+title: "How to: Set the Color of a Pen"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "CustomBindingElement | Microsoft Docs"
+title: "CustomBindingElement"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

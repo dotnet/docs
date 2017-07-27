@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw Text to a Control&#39;s Background | Microsoft Docs"
+title: "How to: Draw Text to a Control&#39;s Background"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

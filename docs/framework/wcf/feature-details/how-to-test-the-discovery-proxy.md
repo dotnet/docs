@@ -1,5 +1,5 @@
 ---
-title: "How to: Test the Discovery Proxy | Microsoft Docs"
+title: "How to: Test the Discovery Proxy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

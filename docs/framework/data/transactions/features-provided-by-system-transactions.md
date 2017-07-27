@@ -1,5 +1,5 @@
 ---
-title: "Features Provided by System.Transactions | Microsoft Docs"
+title: "Features Provided by System.Transactions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

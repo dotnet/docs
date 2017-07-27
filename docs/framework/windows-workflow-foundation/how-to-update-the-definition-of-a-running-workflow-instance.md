@@ -1,5 +1,5 @@
 ---
-title: "How to: Update the Definition of a Running Workflow Instance | Microsoft Docs"
+title: "How to: Update the Definition of a Running Workflow Instance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

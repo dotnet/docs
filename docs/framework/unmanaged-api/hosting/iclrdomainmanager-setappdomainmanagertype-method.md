@@ -1,5 +1,5 @@
 ---
-title: "ICLRDomainManager::SetAppDomainManagerType Method | Microsoft Docs"
+title: "ICLRDomainManager::SetAppDomainManagerType Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "IHostMemoryManager::GetMemoryLoad Method | Microsoft Docs"
+title: "IHostMemoryManager::GetMemoryLoad Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

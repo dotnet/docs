@@ -1,5 +1,5 @@
 ---
-title: "Getting Started (Entity Framework) | Microsoft Docs"
+title: "Getting Started (Entity Framework)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Number of indices exceeds the number of dimensions of the indexed array | Microsoft Docs"
+title: "Number of indices exceeds the number of dimensions of the indexed array"
 
 ms.date: "2015-07-20"
 ms.prod: .net

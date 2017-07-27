@@ -1,5 +1,5 @@
 ---
-title: "Application Settings schema | Microsoft Docs"
+title: "Application Settings schema"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

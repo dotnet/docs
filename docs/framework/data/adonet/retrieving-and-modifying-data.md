@@ -1,5 +1,5 @@
 ---
-title: "Retrieving and Modifying Data in ADO.NET | Microsoft Docs"
+title: "Retrieving and Modifying Data in ADO.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Content-Scrolling Methods of ScrollViewer | Microsoft Docs"
+title: "How to: Use the Content-Scrolling Methods of ScrollViewer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

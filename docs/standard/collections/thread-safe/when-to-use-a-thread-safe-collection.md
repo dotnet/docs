@@ -1,5 +1,5 @@
 ---
-title: "When to Use a Thread-Safe Collection | Microsoft Docs"
+title: "When to Use a Thread-Safe Collection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

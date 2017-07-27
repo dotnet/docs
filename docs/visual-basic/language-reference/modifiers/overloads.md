@@ -1,5 +1,5 @@
 ---
-title: "Overloads (Visual Basic) | Microsoft Docs"
+title: "Overloads (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting: Service Application Won&#39;t Install | Microsoft Docs"
+title: "Troubleshooting: Service Application Won&#39;t Install"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

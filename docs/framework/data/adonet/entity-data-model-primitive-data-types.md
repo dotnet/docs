@@ -1,5 +1,5 @@
 ---
-title: "Entity Data Model: Primitive Data Types | Microsoft Docs"
+title: "Entity Data Model: Primitive Data Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

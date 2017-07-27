@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine the Active MDI Child | Microsoft Docs"
+title: "How to: Determine the Active MDI Child"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

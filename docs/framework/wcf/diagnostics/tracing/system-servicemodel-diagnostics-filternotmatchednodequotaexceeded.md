@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Diagnostics.FilterNotMatchedNodeQuotaExceeded | Microsoft Docs"
+title: "System.ServiceModel.Diagnostics.FilterNotMatchedNodeQuotaExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

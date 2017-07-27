@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport2::EnumGenericParams Method | Microsoft Docs"
+title: "IMetaDataImport2::EnumGenericParams Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

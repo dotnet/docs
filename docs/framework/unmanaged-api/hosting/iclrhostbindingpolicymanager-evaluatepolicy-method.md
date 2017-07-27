@@ -1,5 +1,5 @@
 ---
-title: "ICLRHostBindingPolicyManager::EvaluatePolicy Method | Microsoft Docs"
+title: "ICLRHostBindingPolicyManager::EvaluatePolicy Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

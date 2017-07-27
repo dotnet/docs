@@ -1,5 +1,5 @@
 ---
-title: Tour of F# | Microsoft Docs
+title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp

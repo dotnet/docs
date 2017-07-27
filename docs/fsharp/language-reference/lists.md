@@ -1,5 +1,5 @@
 ---
-title: Lists (F#) | Microsoft Docs
+title: Lists (F#)
 description: Learn about F# lists, an ordered, immutable series of elements of the same type.
 keywords: visual f#, f#, functional programming
 author: cartermp

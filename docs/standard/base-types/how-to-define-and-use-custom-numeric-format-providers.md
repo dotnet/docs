@@ -1,5 +1,5 @@
 ---
-title: "How to: Define and Use Custom Numeric Format Providers | Microsoft Docs"
+title: "How to: Define and Use Custom Numeric Format Providers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

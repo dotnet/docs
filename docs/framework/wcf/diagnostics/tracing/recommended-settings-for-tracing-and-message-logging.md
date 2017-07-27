@@ -1,5 +1,5 @@
 ---
-title: "Recommended Settings for Tracing and Message Logging | Microsoft Docs"
+title: "Recommended Settings for Tracing and Message Logging"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

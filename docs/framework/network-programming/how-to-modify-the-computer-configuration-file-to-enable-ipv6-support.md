@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify the Computer Configuration File to Enable IPv6 Support | Microsoft Docs"
+title: "How to: Modify the Computer Configuration File to Enable IPv6 Support"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

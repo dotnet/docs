@@ -1,5 +1,5 @@
 ---
-title: "/subsystemversion (Visual Basic) | Microsoft Docs"
+title: "/subsystemversion (Visual Basic)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""

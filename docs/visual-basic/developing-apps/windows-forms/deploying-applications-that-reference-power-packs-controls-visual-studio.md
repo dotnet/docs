@@ -1,5 +1,5 @@
 ---
-title: "Deploying applications that reference Power Packs controls (Visual Studio) | Microsoft Docs"
+title: "Deploying applications that reference Power Packs controls (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

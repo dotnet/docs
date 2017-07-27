@@ -1,5 +1,5 @@
 ---
-title: "IHostSyncManager::CreateSemaphore Method | Microsoft Docs"
+title: "IHostSyncManager::CreateSemaphore Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "IDebuggerInfo::IsDebuggerAttached Method | Microsoft Docs"
+title: "IDebuggerInfo::IsDebuggerAttached Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

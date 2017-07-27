@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Class Library Overview | Microsoft Docs"
+title: ".NET Framework Class Library Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Custom Dashed Line | Microsoft Docs"
+title: "How to: Draw a Custom Dashed Line"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

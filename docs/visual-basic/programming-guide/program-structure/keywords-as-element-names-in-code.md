@@ -1,5 +1,5 @@
 ---
-title: "Keywords as Element Names in Code (Visual Basic) | Microsoft Docs"
+title: "Keywords as Element Names in Code (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

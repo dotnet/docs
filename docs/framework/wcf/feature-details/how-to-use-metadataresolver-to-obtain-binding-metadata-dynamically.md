@@ -1,5 +1,5 @@
 ---
-title: "How to: Use MetadataResolver to Obtain Binding Metadata Dynamically | Microsoft Docs"
+title: "How to: Use MetadataResolver to Obtain Binding Metadata Dynamically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

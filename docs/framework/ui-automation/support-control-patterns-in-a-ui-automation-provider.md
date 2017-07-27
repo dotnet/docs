@@ -1,5 +1,5 @@
 ---
-title: "Support Control Patterns in a UI Automation Provider | Microsoft Docs"
+title: "Support Control Patterns in a UI Automation Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

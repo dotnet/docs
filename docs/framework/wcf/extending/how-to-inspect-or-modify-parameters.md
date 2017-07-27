@@ -1,5 +1,5 @@
 ---
-title: "How to: Inspect or Modify Parameters | Microsoft Docs"
+title: "How to: Inspect or Modify Parameters"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

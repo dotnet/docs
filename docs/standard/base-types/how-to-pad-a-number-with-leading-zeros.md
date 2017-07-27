@@ -1,5 +1,5 @@
 ---
-title: "How to: Pad a Number with Leading Zeros | Microsoft Docs"
+title: "How to: Pad a Number with Leading Zeros"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

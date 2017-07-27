@@ -1,5 +1,5 @@
 ---
-title: "Converting between DateTime and DateTimeOffset | Microsoft Docs"
+title: "Converting between DateTime and DateTimeOffset"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine which .NET Framework versions are installed | Microsoft Docs"
+title: "How to: Determine which .NET Framework versions are installed"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

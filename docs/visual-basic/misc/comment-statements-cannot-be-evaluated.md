@@ -1,5 +1,5 @@
 ---
-title: "Comment statements cannot be evaluated | Microsoft Docs"
+title: "Comment statements cannot be evaluated"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Programmatically Print XPS Files | Microsoft Docs"
+title: "How to: Programmatically Print XPS Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

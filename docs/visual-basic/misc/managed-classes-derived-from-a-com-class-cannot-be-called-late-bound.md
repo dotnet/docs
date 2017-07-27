@@ -1,5 +1,5 @@
 ---
-title: "Managed classes derived from a COM class cannot be called late-bound. | Microsoft Docs"
+title: "Managed classes derived from a COM class cannot be called late-bound."
 
 ms.date: "2015-07-20"
 ms.prod: .net

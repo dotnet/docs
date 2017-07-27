@@ -1,5 +1,5 @@
 ---
-title: "Whitespace Processing in XAML | Microsoft Docs"
+title: "Whitespace Processing in XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

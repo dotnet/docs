@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Property Change Notification | Microsoft Docs"
+title: "How to: Implement Property Change Notification"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Configuring Activity Validation | Microsoft Docs"
+title: "Configuring Activity Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

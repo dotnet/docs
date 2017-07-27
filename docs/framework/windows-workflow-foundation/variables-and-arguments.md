@@ -1,5 +1,5 @@
 ---
-title: "Variables and Arguments | Microsoft Docs"
+title: "Variables and Arguments"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

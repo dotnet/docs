@@ -1,5 +1,5 @@
 ---
-title: "XML Documents and Data | Microsoft Docs"
+title: "XML Documents and Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

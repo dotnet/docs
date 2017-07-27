@@ -1,5 +1,5 @@
 ---
-title: Type Extensions (F#) | Microsoft Docs
+title: Type Extensions (F#)
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
 keywords: visual f#, f#, functional programming
 author: cartermp

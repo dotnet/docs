@@ -1,5 +1,5 @@
 ---
-title: "How to: Designate a Windows Forms Button as the Accept Button | Microsoft Docs"
+title: "How to: Designate a Windows Forms Button as the Accept Button"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

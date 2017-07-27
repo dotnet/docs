@@ -1,5 +1,5 @@
 ---
-title: "Advanced Ink Handling | Microsoft Docs"
+title: "Advanced Ink Handling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

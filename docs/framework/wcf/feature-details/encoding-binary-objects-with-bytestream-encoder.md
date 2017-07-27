@@ -1,5 +1,5 @@
 ---
-title: "Encoding Binary Objects with ByteStream Encoder | Microsoft Docs"
+title: "Encoding Binary Objects with ByteStream Encoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Entity Framework Terminology | Microsoft Docs"
+title: "Entity Framework Terminology"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

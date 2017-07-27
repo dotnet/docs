@@ -1,5 +1,5 @@
 ---
-title: "How to: Call a Web Service Asynchronously (Visual Basic) | Microsoft Docs"
+title: "How to: Call a Web Service Asynchronously (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

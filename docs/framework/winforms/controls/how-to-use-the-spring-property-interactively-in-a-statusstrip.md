@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Spring Property Interactively in a StatusStrip | Microsoft Docs"
+title: "How to: Use the Spring Property Interactively in a StatusStrip"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

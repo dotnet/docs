@@ -1,5 +1,5 @@
 ---
-title: "Potential Pitfalls in Data and Task Parallelism | Microsoft Docs"
+title: "Potential Pitfalls in Data and Task Parallelism"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

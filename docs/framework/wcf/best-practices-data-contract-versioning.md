@@ -1,5 +1,5 @@
 ---
-title: "Best Practices: Data Contract Versioning | Microsoft Docs"
+title: "Best Practices: Data Contract Versioning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

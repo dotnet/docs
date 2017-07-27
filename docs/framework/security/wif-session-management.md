@@ -1,5 +1,5 @@
 ---
-title: "WIF Session Management | Microsoft Docs"
+title: "WIF Session Management"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

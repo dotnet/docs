@@ -1,5 +1,5 @@
 ---
-title: "Object or class does not support the set of events | Microsoft Docs"
+title: "Object or class does not support the set of events"
 
 ms.date: "2015-07-20"
 ms.prod: .net

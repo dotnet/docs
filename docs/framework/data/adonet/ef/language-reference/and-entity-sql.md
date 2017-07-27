@@ -1,5 +1,5 @@
 ---
-title: "&amp;&amp; (AND) (Entity SQL) | Microsoft Docs"
+title: "&amp;&amp; (AND) (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

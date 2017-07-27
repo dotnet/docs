@@ -1,5 +1,5 @@
 ---
-title: "Loop Structures (Visual Basic) | Microsoft Docs"
+title: "Loop Structures (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

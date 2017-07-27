@@ -1,5 +1,5 @@
 ---
-title: "Class does not support Automation or does not support expected interface | Microsoft Docs"
+title: "Class does not support Automation or does not support expected interface"
 
 ms.date: "2015-07-20"
 ms.prod: .net

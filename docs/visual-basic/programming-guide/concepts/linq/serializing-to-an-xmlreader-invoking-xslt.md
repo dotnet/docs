@@ -1,5 +1,5 @@
 ---
-title: "Serializing to an XmlReader (Invoking XSLT) (Visual Basic) | Microsoft Docs"
+title: "Serializing to an XmlReader (Invoking XSLT) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

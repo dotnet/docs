@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an HTML Document Viewer in a Windows Forms Application | Microsoft Docs"
+title: "How to: Create an HTML Document Viewer in a Windows Forms Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

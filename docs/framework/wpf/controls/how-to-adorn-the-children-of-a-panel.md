@@ -1,5 +1,5 @@
 ---
-title: "How to: Adorn the Children of a Panel | Microsoft Docs"
+title: "How to: Adorn the Children of a Panel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

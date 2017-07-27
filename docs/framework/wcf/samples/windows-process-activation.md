@@ -1,5 +1,5 @@
 ---
-title: "Windows Process Activation | Microsoft Docs"
+title: "Windows Process Activation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

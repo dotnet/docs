@@ -1,5 +1,5 @@
 ---
-title: "Dataflow (Task Parallel Library) | Microsoft Docs"
+title: "Dataflow (Task Parallel Library)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

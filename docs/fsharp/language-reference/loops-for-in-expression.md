@@ -1,5 +1,5 @@
 ---
-title: "Loops: for...in Expression (F#) | Microsoft Docs"
+title: "Loops: for...in Expression (F#)"
 description: See how the F# for...in expression looping construct is used to iterate over the matches of a pattern in an enumerable collection.
 keywords: visual f#, f#, functional programming
 author: cartermp

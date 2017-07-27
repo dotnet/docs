@@ -1,5 +1,5 @@
 ---
-title: "/resource (Visual Basic) | Microsoft Docs"
+title: "/resource (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

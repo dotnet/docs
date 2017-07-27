@@ -1,5 +1,5 @@
 ---
-title: "Delay Signing an Assembly | Microsoft Docs"
+title: "Delay Signing an Assembly"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

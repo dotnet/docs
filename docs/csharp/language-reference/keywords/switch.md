@@ -1,5 +1,5 @@
 ---
-title: "switch keyword (C# Reference) | Microsoft Docs"
+title: "switch keyword (C# Reference)"
 ms.date: "2017-03-07"
 ms.prod: .net
 ms.technology: 

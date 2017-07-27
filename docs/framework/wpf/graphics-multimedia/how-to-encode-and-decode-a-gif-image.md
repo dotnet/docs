@@ -1,5 +1,5 @@
 ---
-title: "How to: Encode and Decode a GIF Image | Microsoft Docs"
+title: "How to: Encode and Decode a GIF Image"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

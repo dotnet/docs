@@ -1,5 +1,5 @@
 ---
-title: "Function evaluation is disabled because a previous function evaluation timed out | Microsoft Docs"
+title: "Function evaluation is disabled because a previous function evaluation timed out"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "5005 - ImportKnownTypesStart | Microsoft Docs"
+title: "5005 - ImportKnownTypesStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

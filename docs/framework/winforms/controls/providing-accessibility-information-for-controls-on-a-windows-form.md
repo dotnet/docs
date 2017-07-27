@@ -1,5 +1,5 @@
 ---
-title: "Providing Accessibility Information for Controls on a Windows Form | Microsoft Docs"
+title: "Providing Accessibility Information for Controls on a Windows Form"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

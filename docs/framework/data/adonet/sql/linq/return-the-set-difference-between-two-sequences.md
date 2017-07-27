@@ -1,5 +1,5 @@
 ---
-title: "Return the Set Difference Between Two Sequences | Microsoft Docs"
+title: "Return the Set Difference Between Two Sequences"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

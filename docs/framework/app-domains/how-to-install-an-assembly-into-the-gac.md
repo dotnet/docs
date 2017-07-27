@@ -1,5 +1,5 @@
 ---
-title: "How to: Install an Assembly into the Global Assembly Cache | Microsoft Docs"
+title: "How to: Install an Assembly into the Global Assembly Cache"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

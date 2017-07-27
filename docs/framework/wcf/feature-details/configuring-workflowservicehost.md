@@ -1,5 +1,5 @@
 ---
-title: "Configuring WorkflowServiceHost | Microsoft Docs"
+title: "Configuring WorkflowServiceHost"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

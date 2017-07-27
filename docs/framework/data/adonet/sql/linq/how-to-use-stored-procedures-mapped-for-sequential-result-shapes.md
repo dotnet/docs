@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Stored Procedures Mapped for Sequential Result Shapes | Microsoft Docs"
+title: "How to: Use Stored Procedures Mapped for Sequential Result Shapes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

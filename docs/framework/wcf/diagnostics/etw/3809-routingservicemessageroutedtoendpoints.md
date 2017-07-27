@@ -1,5 +1,5 @@
 ---
-title: "3809 - RoutingServiceMessageRoutedToEndpoints | Microsoft Docs"
+title: "3809 - RoutingServiceMessageRoutedToEndpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

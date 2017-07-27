@@ -1,5 +1,5 @@
 ---
-title: "Group By Clause (Visual Basic) | Microsoft Docs"
+title: "Group By Clause (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

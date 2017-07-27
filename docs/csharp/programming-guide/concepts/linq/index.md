@@ -1,5 +1,5 @@
 ---
-title: "Language-Integrated Query (LINQ) (C#) | Microsoft Docs"
+title: "Language-Integrated Query (LINQ) (C#)"
 ms.custom: ""
 ms.date: 02-02-2017
 ms.prod: .net

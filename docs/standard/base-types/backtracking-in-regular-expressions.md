@@ -1,5 +1,5 @@
 ---
-title: "Backtracking in Regular Expressions | Microsoft Docs"
+title: "Backtracking in Regular Expressions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

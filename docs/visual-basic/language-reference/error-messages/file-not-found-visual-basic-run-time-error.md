@@ -1,5 +1,5 @@
 ---
-title: "File not found (Visual Basic Run-Time Error) | Microsoft Docs"
+title: "File not found (Visual Basic Run-Time Error)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

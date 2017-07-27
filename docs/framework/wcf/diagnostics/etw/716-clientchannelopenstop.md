@@ -1,5 +1,5 @@
 ---
-title: "716 - ClientChannelOpenStop | Microsoft Docs"
+title: "716 - ClientChannelOpenStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

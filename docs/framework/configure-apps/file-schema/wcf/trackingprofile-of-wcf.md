@@ -1,5 +1,5 @@
 ---
-title: "&lt;trackingProfile&gt; of WCF | Microsoft Docs"
+title: "&lt;trackingProfile&gt; of WCF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Indexers | Microsoft Docs
+title: Indexers
 description: Learn about C# indexers and how they implement indexed properties, which are properties referenced using one or more arguments.
 keywords: .NET, .NET Core
 author: BillWagner

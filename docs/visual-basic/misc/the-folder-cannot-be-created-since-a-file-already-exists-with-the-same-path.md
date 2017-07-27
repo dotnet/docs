@@ -1,5 +1,5 @@
 ---
-title: "The folder cannot be created since a file already exists with the same path | Microsoft Docs"
+title: "The folder cannot be created since a file already exists with the same path"
 
 ms.date: "2015-07-20"
 ms.prod: .net

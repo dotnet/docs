@@ -1,5 +1,5 @@
 ---
-title: "/win32icon | Microsoft Docs"
+title: "/win32icon"
 
 ms.date: "2015-07-20"
 ms.prod: .net

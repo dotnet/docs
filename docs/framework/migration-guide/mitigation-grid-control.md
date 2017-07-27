@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Grid Control&#39;s Space Allocation to Star-columns | Microsoft Docs"
+title: "Mitigation: Grid Control&#39;s Space Allocation to Star-columns"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

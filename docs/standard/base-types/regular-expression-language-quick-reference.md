@@ -1,5 +1,5 @@
 ---
-title: "Regular Expression Language - Quick Reference | Microsoft Docs"
+title: "Regular Expression Language - Quick Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

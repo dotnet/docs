@@ -1,5 +1,5 @@
 ---
-title: "Like Operator (Visual Basic) | Microsoft Docs"
+title: "Like Operator (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

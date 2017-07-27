@@ -1,5 +1,5 @@
 ---
-title: "How to: Hide a Variable with the Same Name as Your Variable (Visual Basic) | Microsoft Docs"
+title: "How to: Hide a Variable with the Same Name as Your Variable (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

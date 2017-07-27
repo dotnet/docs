@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform Streaming Transform of Large XML Documents (C#) | Microsoft Docs"
+title: "How to: Perform Streaming Transform of Large XML Documents (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

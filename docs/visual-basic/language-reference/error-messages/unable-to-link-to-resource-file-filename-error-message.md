@@ -1,5 +1,5 @@
 ---
-title: "Unable to link to resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt; | Microsoft Docs"
+title: "Unable to link to resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

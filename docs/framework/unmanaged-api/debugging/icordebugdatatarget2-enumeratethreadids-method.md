@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugDataTarget2::EnumerateThreadIDs Method | Microsoft Docs"
+title: "ICorDebugDataTarget2::EnumerateThreadIDs Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

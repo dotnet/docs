@@ -1,5 +1,5 @@
 ---
-title: "JSON Serialization | Microsoft Docs"
+title: "JSON Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

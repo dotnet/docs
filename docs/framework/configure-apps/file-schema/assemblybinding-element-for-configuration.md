@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyBinding&gt; element for &lt;configuration&gt; | Microsoft Docs"
+title: "&lt;assemblyBinding&gt; element for &lt;configuration&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

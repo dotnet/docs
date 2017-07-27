@@ -1,5 +1,5 @@
 ---
-title: "3405 - EncryptedDataProcessingStart | Microsoft Docs"
+title: "3405 - EncryptedDataProcessingStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Gamma Correction to a Gradient | Microsoft Docs"
+title: "How to: Apply Gamma Correction to a Gradient"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Using the ModelItem Editing Context | Microsoft Docs"
+title: "Using the ModelItem Editing Context"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

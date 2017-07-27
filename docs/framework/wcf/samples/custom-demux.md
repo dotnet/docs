@@ -1,5 +1,5 @@
 ---
-title: "Custom Demux | Microsoft Docs"
+title: "Custom Demux"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

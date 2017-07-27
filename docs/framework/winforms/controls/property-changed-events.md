@@ -1,5 +1,5 @@
 ---
-title: "Property-Changed Events | Microsoft Docs"
+title: "Property-Changed Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

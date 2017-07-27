@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: X509CertificateClaimSet.FindClaims Method | Microsoft Docs"
+title: "Mitigation: X509CertificateClaimSet.FindClaims Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

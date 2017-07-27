@@ -1,5 +1,5 @@
 ---
-title: "3557 - TransactedReceiveScopeEndCommitFailed | Microsoft Docs"
+title: "3557 - TransactedReceiveScopeEndCommitFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

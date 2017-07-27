@@ -1,5 +1,5 @@
 ---
-title: Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers | Microsoft Docs 
+title: Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 description: .NET Microservices Architecture for Containerized .NET Applications | Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

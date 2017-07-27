@@ -1,5 +1,5 @@
 ---
-title: "IManagedObject Interface | Microsoft Docs"
+title: "IManagedObject Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

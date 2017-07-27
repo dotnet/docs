@@ -1,5 +1,5 @@
 ---
-title: .NET Assembly File Format | Microsoft Docs
+title: .NET Assembly File Format
 description: .NET Assembly File Format
 keywords: .NET, .NET Core
 author: richlander

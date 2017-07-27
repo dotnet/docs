@@ -1,5 +1,5 @@
 ---
-title: "Deactivate Function (WPF Unmanaged API Reference) | Microsoft Docs"
+title: "Deactivate Function (WPF Unmanaged API Reference)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

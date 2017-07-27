@@ -1,5 +1,5 @@
 ---
-title: "Async Return Types (C#) | Microsoft Docs"
+title: "Async Return Types (C#)"
 ms.custom: ""
 ms.date: "2075-05-29"
 ms.prod: .net

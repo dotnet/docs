@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate the Opacity of an Element or Brush | Microsoft Docs"
+title: "How to: Animate the Opacity of an Element or Brush"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use time zones in date and time arithmetic | Microsoft Docs"
+title: "How to: Use time zones in date and time arithmetic"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

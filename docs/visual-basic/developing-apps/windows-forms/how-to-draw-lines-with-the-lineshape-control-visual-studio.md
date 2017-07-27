@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw Lines with the LineShape Control (Visual Studio) | Microsoft Docs"
+title: "How to: Draw Lines with the LineShape Control (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

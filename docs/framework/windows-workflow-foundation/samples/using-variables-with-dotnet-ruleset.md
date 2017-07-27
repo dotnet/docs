@@ -1,5 +1,5 @@
 ---
-title: "Using Variables with a .NET Framework 3.5 Ruleset | Microsoft Docs"
+title: "Using Variables with a .NET Framework 3.5 Ruleset"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

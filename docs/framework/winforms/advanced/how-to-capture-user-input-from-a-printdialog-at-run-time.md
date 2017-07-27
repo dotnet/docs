@@ -1,5 +1,5 @@
 ---
-title: "How to: Capture User Input from a PrintDialog at Run Time | Microsoft Docs"
+title: "How to: Capture User Input from a PrintDialog at Run Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

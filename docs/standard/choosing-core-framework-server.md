@@ -101,6 +101,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. For example, 
 
 ## Further resources
 
+* [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
 * [.NET Core Guide](../core/index.md)
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 * [.NET Framework on Docker Guide](../framework/index.md)

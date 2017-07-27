@@ -858,15 +858,15 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an encoding for the system's active code page.</summary>
-        <value>An encoding for the system's active code page.</value>
+        <summary>Gets the default encoding for this .NET implementation.</summary>
+        <value>The default encoding for this .NET implementation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
 > [!WARNING]
->  Different computers can use different encodings as the default, and the default encoding can change on a single computer. If you use the <xref:System.Text.Encoding.Default%2A> encoding to encode and decode data streamed between computers or retrieved at different times on the same computer, it may translate that data incorrectly. In addition, the encoding returned by the <xref:System.Text.Encoding.Default%2A> property uses best-fit fallback to map unsupported characters to characters supported by the code page. For these reasons, using the default encoding is not recommended. To ensure that encoded bytes are decoded properly, you should use a Unicode encoding, such as <xref:System.Text.UTF8Encoding> or <xref:System.Text.UnicodeEncoding> with a preamble. You could alsouse a higher-level protocol to ensure that the same format is used for encoding and decoding.  
+>  Different computers can use different encodings as the default, and the default encoding can change on a single computer. If you use the <xref:System.Text.Encoding.Default%2A> encoding to encode and decode data streamed between computers or retrieved at different times on the same computer, it may translate that data incorrectly. In addition, the encoding returned by the <xref:System.Text.Encoding.Default%2A> property uses best-fit fallback to map unsupported characters to characters supported by the code page. For these reasons, using the default encoding is not recommended. To ensure that encoded bytes are decoded properly, you should use a Unicode encoding, such as <xref:System.Text.UTF8Encoding> or <xref:System.Text.UnicodeEncoding>. You could also use a higher-level protocol to ensure that the same format is used for encoding and decoding.  
 
 ### The Default property in the .NET Framework
 
@@ -2661,7 +2661,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 
 - On the .NET Framework, if no encoding provider has been registered, if the <xref:System.Text.CodePagesEncodingProvider> is the registered encoding provider, or if no registered encoding provider handles a `codepage` value of 0, it returns the operating system's active code page. To determine the active code page on Windows systems, call the Windows [GetACP](http://msdn.microsoft.com/library/windows/desktop/dd318070.aspx) function from the .NET Framework on the Windows desktop.
 
-- On .NET Core, if no no encoding provider has been registered or if no registered encoding provider handles a `codepage` value of 0, it returns the <xref:System.Text.UTF8Encoding>.
+- On .NET Core, if no encoding provider has been registered or if no registered encoding provider handles a `codepage` value of 0, it returns the <xref:System.Text.UTF8Encoding>.
   
 > [!NOTE]
 >  Some unsupported code pages cause an <xref:System.ArgumentException> to be thrown, whereas others cause a <xref:System.NotSupportedException>. Therefore, your code must catch all exceptions indicated in the Exceptions section.  
@@ -2814,7 +2814,7 @@ You can also supply a value of 0 for the `codepage` argument. Its precise behavi
 
 - On the .NET Framework, if no encoding provider has been registered, if the <xref:System.Text.CodePagesEncodingProvider> is the registered encoding provider, or if no registered encoding provider handles a `codepage` value of 0, it returns the active code page.
 
-- On .NET Core, if no no encoding provider has been registered or if no registered encoding provider handles a `codepage` value of 0, it returns the <xref:System.Text.UTF8Encoding> encoding.
+- On .NET Core, if no encoding provider has been registered or if no registered encoding provider handles a `codepage` value of 0, it returns the <xref:System.Text.UTF8Encoding> encoding.
 
 > [!NOTE]
 >  The ANSI code pages can be different on different computers and can change on a single computer, leading to data corruption. For this reason, if the active code page is an ANSI code page, encoding and decoding data using the default code page returned by `Encoding.GetEncoding(0)` is not recommended. For the most consistent results, you should use Unicode, such as UTF-8 (code page 65001) or UTF-16, instead of a specific code page. 

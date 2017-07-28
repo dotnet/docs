@@ -231,7 +231,7 @@ Elements of the "students" array
   
  The following example declares a three-dimensional array.  
   
-```  
+```vb
 Dim prices(3, 4, 5) As Long  
 ```  
   

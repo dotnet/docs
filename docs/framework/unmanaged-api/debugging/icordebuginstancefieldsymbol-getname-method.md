@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInstanceFieldSymbol::GetName Method | Microsoft Docs"
+title: "ICorDebugInstanceFieldSymbol::GetName Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

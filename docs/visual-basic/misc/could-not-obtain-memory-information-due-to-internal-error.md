@@ -1,5 +1,5 @@
 ---
-title: "Could not obtain memory information due to internal error | Microsoft Docs"
+title: "Could not obtain memory information due to internal error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

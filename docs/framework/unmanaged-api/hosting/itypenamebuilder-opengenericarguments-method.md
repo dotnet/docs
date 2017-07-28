@@ -1,5 +1,5 @@
 ---
-title: "ITypeNameBuilder::OpenGenericArguments Method | Microsoft Docs"
+title: "ITypeNameBuilder::OpenGenericArguments Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

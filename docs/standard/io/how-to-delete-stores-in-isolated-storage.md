@@ -1,5 +1,5 @@
 ---
-title: "How to: Delete Stores in Isolated Storage | Microsoft Docs"
+title: "How to: Delete Stores in Isolated Storage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

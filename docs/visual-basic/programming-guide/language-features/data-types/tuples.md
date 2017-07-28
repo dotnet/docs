@@ -1,5 +1,5 @@
 ---
-title: "Tuples in Visual Basic | Microsoft Docs"
+title: "Tuples in Visual Basic"
 ms.custom: ""
 ms.date: "2017-04-23"
 ms.prod: .net

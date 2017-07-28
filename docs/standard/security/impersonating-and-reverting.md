@@ -1,5 +1,5 @@
 ---
-title: "Impersonating and Reverting | Microsoft Docs"
+title: "Impersonating and Reverting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Discovery Binding Element Sample | Microsoft Docs"
+title: "Discovery Binding Element Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

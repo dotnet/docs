@@ -1,5 +1,5 @@
 ---
-title: "How to: Listen for Cancellation Requests by Polling | Microsoft Docs"
+title: "How to: Listen for Cancellation Requests by Polling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

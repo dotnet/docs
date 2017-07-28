@@ -1,5 +1,5 @@
 ---
-title: "ICLRValidator::Validate Method | Microsoft Docs"
+title: "ICLRValidator::Validate Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

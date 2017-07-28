@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Try-Catch Block to Catch Exceptions | Microsoft Docs"
+title: "How to: Use the Try-Catch Block to Catch Exceptions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

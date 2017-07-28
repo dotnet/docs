@@ -1,5 +1,5 @@
 ---
-title: "&lt;dynamicEndpoint&gt; | Microsoft Docs"
+title: "&lt;dynamicEndpoint&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

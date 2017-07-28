@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting Direct3D9 Content in WPF | Microsoft Docs"
+title: "Walkthrough: Hosting Direct3D9 Content in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -50,7 +50,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
      MainWindow.xaml opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
 ## Importing the Direct3D9 Content  
- You import the Direct3D9 content from an unmanaged DLL by using the `DllImport`attribute.  
+ You import the Direct3D9 content from an unmanaged DLL by using the `DllImport` attribute.  
   
 #### To import Direct3D9 content  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Encode a Visual to an Image File | Microsoft Docs"
+title: "How to: Encode a Visual to an Image File"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

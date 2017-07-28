@@ -1,5 +1,5 @@
 ---
-title: "Method-Based Query Syntax Examples: Filtering | Microsoft Docs"
+title: "Method-Based Query Syntax Examples: Filtering"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

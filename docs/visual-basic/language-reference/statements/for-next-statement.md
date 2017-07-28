@@ -1,5 +1,5 @@
 ---
-title: "For...Next Statement (Visual Basic) | Microsoft Docs"
+title: "For...Next Statement (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

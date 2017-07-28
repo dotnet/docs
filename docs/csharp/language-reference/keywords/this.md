@@ -1,5 +1,5 @@
 ---
-title: "this (C# Reference) | Microsoft Docs"
+title: "this (C# Reference)"
 description: this keyword (C# Reference)
 keywords: this (C#), this keyword (C#), this keyword (C# reference), this keyword (C# language reference)
 ms.custom: ""

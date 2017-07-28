@@ -1,5 +1,5 @@
 ---
-title: "How to: Add an Animation Output Value to an Animation Starting Value | Microsoft Docs"
+title: "How to: Add an Animation Output Value to an Animation Starting Value"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

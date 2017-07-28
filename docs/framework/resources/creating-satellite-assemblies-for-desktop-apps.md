@@ -1,5 +1,5 @@
 ---
-title: "Creating Satellite Assemblies for Desktop Apps | Microsoft Docs"
+title: "Creating Satellite Assemblies for Desktop Apps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

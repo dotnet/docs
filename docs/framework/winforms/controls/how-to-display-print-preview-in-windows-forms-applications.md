@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Print Preview in Windows Forms Applications | Microsoft Docs"
+title: "How to: Display Print Preview in Windows Forms Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -37,7 +37,7 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
   
      In the following code example, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens an instance of the <xref:System.Windows.Forms.PrintPreviewDialog> control. The print document is specified in the <xref:System.Windows.Forms.PrintDialog.Document%2A> property. In the example below, no print document is specified.  
   
-     The example requires that your form has a <xref:System.Windows.Forms.Button> control, a <xref:System.Drawing.Printing.PrintDocument> component named`myDocument`, and a <xref:System.Windows.Forms.PrintPreviewDialog> control.  
+     The example requires that your form has a <xref:System.Windows.Forms.Button> control, a <xref:System.Drawing.Printing.PrintDocument> component named `myDocument`, and a <xref:System.Windows.Forms.PrintPreviewDialog> control.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, _  

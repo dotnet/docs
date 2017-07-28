@@ -1,6 +1,6 @@
 ---
-title: Translating Expression Trees | Microsoft Docs
-description: Translating Expression Trees
+title: Translating Expression Trees
+description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
@@ -17,7 +17,7 @@ ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 [Previous -- Building Expressions](expression-trees-building.md)
 
 In this final section, you'll learn how to visit each node
-in an expression tree, while building a modified copy of that
+in an expression tree while building a modified copy of that
 expression tree. These are the techniques that you will use in two
 important scenarios. The first is to understand the algorithms
 expressed by an expression tree so that it can be translated

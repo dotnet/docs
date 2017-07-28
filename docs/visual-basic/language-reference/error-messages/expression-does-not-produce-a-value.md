@@ -1,5 +1,5 @@
 ---
-title: "Expression does not produce a value | Microsoft Docs"
+title: "Expression does not produce a value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

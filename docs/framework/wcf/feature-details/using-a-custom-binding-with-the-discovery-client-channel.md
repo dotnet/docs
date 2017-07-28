@@ -1,5 +1,5 @@
 ---
-title: "Using a Custom Binding with the Discovery Client Channel | Microsoft Docs"
+title: "Using a Custom Binding with the Discovery Client Channel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

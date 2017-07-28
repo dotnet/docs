@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Create a Button by Using Microsoft Expression Blend | Microsoft Docs"
+title: "Walkthrough: Create a Button by Using Microsoft Expression Blend"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

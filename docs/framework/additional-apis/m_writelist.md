@@ -1,5 +1,5 @@
 ---
-title: "Connection.m_WriteList Field | Microsoft Docs"
+title: "Connection.m_WriteList Field"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""

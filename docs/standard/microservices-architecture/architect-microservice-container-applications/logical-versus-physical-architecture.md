@@ -1,5 +1,5 @@
 ---
-title: Logical architecture versus physical architecture | Microsoft Docs 
+title: Logical architecture versus physical architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | Logical architecture versus physical architecture
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

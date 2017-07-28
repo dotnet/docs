@@ -1,5 +1,5 @@
 ---
-title: ".NET Core and Open-Source | Microsoft Docs"
+title: ".NET Core and Open-Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -51,5 +51,5 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
   
 ## See Also  
  [.NET Core homepage](https://www.microsoft.com/net/core)   
- [.NET Core documentation site](../core/index.md)   
+ [.NET Core Guide](../../core/index.md)   
  [ASP.NET Core Documentation](/aspnet/core/)

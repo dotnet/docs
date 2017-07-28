@@ -1,5 +1,5 @@
 ---
-title: "-langversion (C# Compiler Options) | Microsoft Docs"
+title: "-langversion (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -69,7 +69,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
  Because each version of the C# compiler contains extensions to the language specification, **/langversion** does not give you the equivalent functionality of an earlier version of the compiler.  
  
- Additionally, while C# version updates generally coincide with major .Net Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features will definitely require a new compiler update that is also released alongside the C# revision, each specific feature has it's own minimum .Net API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+ Additionally, while C# version updates generally coincide with major .Net Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features will definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .Net API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
   
  Regardless of which **/langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [/moduleassemblyname (C# Compiler Option)](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md), which work under **/langversion:ISO-1**.  
   
@@ -90,7 +90,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
  
 ### C# Language Specification
- [C# Language Specification Reference](../../../csharp/language-reference/language-specification.md) : .NET Foundation   
+ [C# Language Specification Reference](../../../csharp/language-reference/language-specification/index.md) : .NET Foundation   
  C# 1.0/1.1 [ISO/IEC 23270:2003](https://www.iso.org/standard/36768.html) Information technology -- C# Language Specification : ISO Catalogue   
  C# 2.0 [ISO/IEC 23270:2006](https://www.iso.org/standard/42926.html) Information technology -- C# Language Specification : ISO Catalogue   
  C# 2.0 [c042926_ISO_IEC_23270_2006(E).zip](http://go.microsoft.com/fwlink/?LinkId=144406) ISO/IEC 23270:2006 in PDF format : ISO Freely Available Standards   

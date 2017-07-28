@@ -1,5 +1,5 @@
 ---
-title: "Finding Claims in a ClaimSet | Microsoft Docs"
+title: "Finding Claims in a ClaimSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

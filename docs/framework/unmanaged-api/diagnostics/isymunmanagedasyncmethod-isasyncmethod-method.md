@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedAsyncMethod::IsAsyncMethod Method | Microsoft Docs"
+title: "ISymUnmanagedAsyncMethod::IsAsyncMethod Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

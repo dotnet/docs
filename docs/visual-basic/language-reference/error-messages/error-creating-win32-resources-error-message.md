@@ -1,5 +1,5 @@
 ---
-title: "Error creating Win32 resources: &lt;error message&gt; | Microsoft Docs"
+title: "Error creating Win32 resources: &lt;error message&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

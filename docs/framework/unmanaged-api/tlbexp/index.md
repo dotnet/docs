@@ -1,5 +1,5 @@
 ---
-title: "Tlbexp Helper Functions (Unmanaged API Reference) | Microsoft Docs"
+title: "Tlbexp Helper Functions (Unmanaged API Reference)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

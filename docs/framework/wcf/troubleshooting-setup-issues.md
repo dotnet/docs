@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Setup Issues | Microsoft Docs"
+title: "Troubleshooting Setup Issues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

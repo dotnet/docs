@@ -1,5 +1,5 @@
 ---
-title: "Connection String Builders | Microsoft Docs"
+title: "Connection String Builders"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

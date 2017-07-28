@@ -1,5 +1,5 @@
 ---
-title: "3357 - SecurityIdentityVerificationFailure | Microsoft Docs"
+title: "3357 - SecurityIdentityVerificationFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

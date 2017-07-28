@@ -1,5 +1,5 @@
 ---
-title: "Network Programming Samples | Microsoft Docs"
+title: "Network Programming Samples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

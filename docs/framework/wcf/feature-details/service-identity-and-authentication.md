@@ -1,5 +1,5 @@
 ---
-title: "Service Identity and Authentication | Microsoft Docs"
+title: "Service Identity and Authentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

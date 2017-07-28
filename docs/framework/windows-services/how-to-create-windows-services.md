@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Windows Services | Microsoft Docs"
+title: "How to: Create Windows Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

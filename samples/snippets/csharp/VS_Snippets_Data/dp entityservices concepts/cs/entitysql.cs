@@ -640,102 +640,106 @@ namespace Microsoft.Samples.Entity
             */
             queryString = @"(SELECT VALUE P from AdventureWorksEntities.Products 
                 as P WHERE P.Name LIKE 'C%') Union All 
-                ( SELECT VALUE A from AdventureWorksEntities.Products 
+                (SELECT VALUE A from AdventureWorksEntities.Products 
                 as A WHERE A.ListPrice > @price)";
             pc.Add("price", 10);
             TestProduct(queryString, pc);
             pc.Clear();
 
             /*
-            //<snippetEDM_AVG>
             SELECT VALUE AVG(p.ListPrice) FROM AdventureWorksEntities.Products as p 
+            */
+            //<snippetEDM_AVG>
+            queryString = @"SELECT VALUE AVG(p.ListPrice) 
+                FROM AdventureWorksEntities.Products as p";
             //</snippetEDM_AVG>
-            */
-            queryString = @"SELECT VALUE AVG(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
             /*
-            //<snippetEDM_BIGCOUNT>
             SELECT VALUE BigCount(p.ProductID) FROM AdventureWorksEntities.Products as p 
+            */
+            //<snippetEDM_BIGCOUNT>
+            queryString = @"SELECT VALUE BigCount(p.ProductID) 
+                FROM AdventureWorksEntities.Products as p";
             //</snippetEDM_BIGCOUNT>
-            */
-            queryString = @"SELECT VALUE BigCount(p.ProductID) FROM AdventureWorksEntities.Products as p ";
             /*
-            //<snippetEDM_COUNT>
             SELECT VALUE Count(p.ProductID) FROM AdventureWorksEntities.Products as p 
+            */
+            //<snippetEDM_COUNT>
+            queryString = @"SELECT VALUE Count(p.ProductID) 
+                FROM AdventureWorksEntities.Products as p";
             //</snippetEDM_COUNT>
-            */
-            queryString = @"SELECT VALUE Count(p.ProductID) FROM AdventureWorksEntities.Products as p ";
             /*
-            //<snippetEDM_MAX>
             SELECT VALUE MAX(p.ListPrice) FROM AdventureWorksEntities.Products as p 
+            */
+            //<snippetEDM_MAX>
+            queryString = @"SELECT VALUE MAX(p.ListPrice) 
+                FROM AdventureWorksEntities.Products as p";
             //</snippetEDM_MAX>
-            */
-            queryString = @"SELECT VALUE MAX(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
             /*
-            //<snippetEDM_MIN>
             SELECT VALUE MIN(p.ListPrice) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_MIN>
             */
-            queryString = @"SELECT VALUE MIN(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
+            //<snippetEDM_MIN>
+            queryString = @"SELECT VALUE MIN(p.ListPrice) 
+                FROM AdventureWorksEntities.Products as p";
+            //</snippetEDM_MIN>
             /*
-            //<snippetEDM_STDEV>
             SELECT VALUE StDev(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             where product.ListPrice > @price
-            //</snippetEDM_STDEV>
             */
+            //<snippetEDM_STDEV>
             queryString = @"SELECT VALUE StDev(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            where product.ListPrice > @price";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > @price";
+            //</snippetEDM_STDEV>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
             /*
-            //<snippetEDM_STDEVP>
             SELECT VALUE StDevP(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             where product.ListPrice > @price
-            //</snippetEDM_STDEVP>
             */
+            //<snippetEDM_STDEVP>
             queryString = @"SELECT VALUE StDevP(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            where product.ListPrice > @price";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > @price";
+            //</snippetEDM_STDEVP>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
             /*
-            //<snippetEDM_SUM>
             SELECT VALUE Sum(p.ListPrice) FROM AdventureWorksEntities.Products as p 
-            //</snippetEDM_SUM>
             */
-            queryString = @"SELECT VALUE Sum(p.ListPrice) FROM AdventureWorksEntities.Products as p ";
+            //<snippetEDM_SUM>
+            queryString = @"SELECT VALUE Sum(p.ListPrice) 
+                FROM AdventureWorksEntities.Products as p";
+            //</snippetEDM_SUM>
             /*
-            //<snippetEDM_VAR>
             SELECT VALUE Var(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             WHERE product.ListPrice > @price
-            //</snippetEDM_VAR>
             */
+            //<snippetEDM_VAR>
             queryString = @"SELECT VALUE Var(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > @price";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > @price";
+            //</snippetEDM_VAR>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
-
             /*
-            //<snippetEDM_VARP>
             SELECT VALUE VarP(product.ListPrice) 
             FROM AdventureWorksEntities.Products AS product 
             WHERE product.ListPrice > @price
-            //</snippetEDM_VARP>
             */
+            //<snippetEDM_VARP>
             queryString = @"SELECT VALUE VarP(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > @price";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > @price";
+            //</snippetEDM_VARP>
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
-
             /*
             //<snippetEDM_CEILING>
             SELECT VALUE product FROM AdventureWorksEntities.Products AS product 
@@ -743,7 +747,7 @@ namespace Microsoft.Samples.Entity
             //</snippetEDM_CEILING>
             */
             queryString = @"SELECT VALUE product FROM AdventureWorksEntities.Products AS product 
-            WHERE CEILING(product.ListPrice) == FLOOR(product.ListPrice)";
+                WHERE CEILING(product.ListPrice) == FLOOR(product.ListPrice)";
             /*
             //<snippetEDM_FLOOR>
             SELECT VALUE product FROM AdventureWorksEntities.Products AS product 
@@ -751,16 +755,15 @@ namespace Microsoft.Samples.Entity
             //</snippetEDM_FLOOR>
             */
             queryString = @"SELECT VALUE product FROM AdventureWorksEntities.Products AS product 
-            WHERE FLOOR(product.ListPrice) == CEILING(product.ListPrice)";
-
+                WHERE FLOOR(product.ListPrice) == CEILING(product.ListPrice)";
             /*
             //<snippetSQLSERVER_AVG>
             SELECT VALUE SqlServer.AVG(p.ListPrice) FROM 
             AdventureWorksEntities.Products as p 
             //</snippetSQLSERVER_AVG>
             */
-            queryString = @"SELECT VALUE SqlServer.AVG(p.ListPrice) FROM 
-            AdventureWorksEntities.Products as p ";
+            queryString = @"SELECT VALUE SqlServer.AVG(p.ListPrice) 
+                FROM AdventureWorksEntities.Products as p ";
             /*
             //<snippetSQLSERVER_CHECKSUM>
             SELECT VALUE SqlServer.Checksum_Agg(cast(product.ListPrice as Int32)) 
@@ -769,8 +772,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_CHECKSUM>
             */
             queryString = @"SELECT VALUE SqlServer.Checksum_Agg(cast(product.ListPrice as Int32)) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > cast(@price as Decimal) ";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > cast(@price as Decimal) ";
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
@@ -784,9 +787,9 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_COUNT>
             */
             queryString = @"ANYELEMENT(SELECT VALUE SqlServer.COUNT(product.ProductID) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE SqlServer.CEILING(product.ListPrice) == 
-            SqlServer.FLOOR(product.ListPrice)) ";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE SqlServer.CEILING(product.ListPrice) == 
+                    SqlServer.FLOOR(product.ListPrice)) ";
             /*
             //<snippetSQLSERVER_COUNTBIG>
             ANYELEMENT(SELECT VALUE SqlServer.COUNT_BIG(product.ProductID) 
@@ -796,9 +799,9 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_COUNTBIG>
             */
             queryString = @"ANYELEMENT(SELECT VALUE SqlServer.COUNT_BIG(product.ProductID) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE SqlServer.CEILING(product.ListPrice) == 
-            SqlServer.FLOOR(product.ListPrice)) ";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE SqlServer.CEILING(product.ListPrice) == 
+                    SqlServer.FLOOR(product.ListPrice)) ";
             /*
             //<snippetSQLSERVER_MAX>
             SELECT VALUE SqlServer.MAX(p.ListPrice) 
@@ -806,7 +809,7 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_MAX>
             */
             queryString = @"SELECT VALUE SqlServer.MAX(p.ListPrice) 
-            FROM AdventureWorksEntities.Products as p";
+                FROM AdventureWorksEntities.Products as p";
             /*
             //<snippetSQLSERVER_MIN>
             SELECT VALUE SqlServer.MIN(p.ListPrice) 
@@ -814,7 +817,7 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_MIN>
             */
             queryString = @"SELECT VALUE SqlServer.MIN(p.ListPrice) 
-            FROM AdventureWorksEntities.Products as p";
+                FROM AdventureWorksEntities.Products as p";
             /*
             //<snippetSQLSERVER_STDEV>
             SELECT VALUE SqlServer.STDEV(product.ListPrice) 
@@ -823,8 +826,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_STDEV>
             */
             queryString = @"SELECT VALUE SqlServer.STDEV(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > cast(@price as Decimal) ";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > cast(@price as Decimal) ";
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
@@ -836,8 +839,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_STDEVP>
             */
             queryString = @"SELECT VALUE SqlServer.STDEVP(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > cast(@price as Decimal) ";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > cast(@price as Decimal) ";
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
@@ -849,7 +852,7 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_SUM>
             */
             queryString = @"SELECT VALUE SqlServer.SUM(p.ListPrice) 
-            FROM AdventureWorksEntities.Products as p";
+                FROM AdventureWorksEntities.Products as p";
             /*
             //<snippetSQLSERVER_VAR>
             SELECT VALUE SqlServer.VAR(product.ListPrice) 
@@ -858,8 +861,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_VAR>
             */
             queryString = @"SELECT VALUE SqlServer.VAR(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > cast(@price as Decimal)";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > cast(@price as Decimal)";
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
@@ -872,8 +875,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_VARP>
             */
             queryString = @"SELECT VALUE SqlServer.VARP(product.ListPrice) 
-            FROM AdventureWorksEntities.Products AS product 
-            WHERE product.ListPrice > cast(@price as Decimal) ";
+                FROM AdventureWorksEntities.Products AS product 
+                WHERE product.ListPrice > cast(@price as Decimal) ";
             pc.Add("price", 20);
             TestProduct(queryString, pc);
             pc.Clear();
@@ -885,8 +888,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_CEILING>
             */
             queryString = @"SELECT VALUE product FROM AdventureWorksEntities.Products 
-            AS product WHERE product.ListPrice == 
-            SqlServer.CEILING(product.ListPrice) ";
+                AS product WHERE product.ListPrice == 
+                    SqlServer.CEILING(product.ListPrice) ";
             /*
             //<snippetSQLSERVER_FLOOR>
             SELECT VALUE product FROM AdventureWorksEntities.Products 
@@ -895,8 +898,8 @@ namespace Microsoft.Samples.Entity
             //</snippetSQLSERVER_FLOOR>
             */
             queryString = @"SELECT VALUE product FROM AdventureWorksEntities.Products 
-            AS product WHERE product.ListPrice == 
-            SqlServer.FLOOR(product.ListPrice) ";
+                AS product WHERE product.ListPrice == 
+                    SqlServer.FLOOR(product.ListPrice) ";
             /*
             //<snippetCollection_GroupPartition>
             USING Microsoft.Samples.Entity
@@ -912,11 +915,12 @@ namespace Microsoft.Samples.Entity
             queryString = @"USING Microsoft.Samples.Entity;
             Function MyAvg(dues Collection(Decimal)) AS
             (
-                    Avg(SELECT VALUE due FROM dues as due WHERE due > @price)
+                Avg(SELECT VALUE due FROM dues as due WHERE due > @price)
             )
             SELECT TOP(10) contactID, MyAvg(GroupPartition(order.TotalDue)) 
-                            FROM AdventureWorksEntities.SalesOrderHeaders 
-                            AS order GROUP BY order.Contact.ContactID as contactID;
+                FROM AdventureWorksEntities.SalesOrderHeaders 
+                AS order 
+                GROUP BY order.Contact.ContactID as contactID;
             ";
             pc.Add("price", 20);
             TestProduct(queryString, pc);

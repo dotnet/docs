@@ -1,5 +1,5 @@
 ---
-title: "Modifying Elements, Attributes, and Nodes in an XML Tree3 | Microsoft Docs"
+title: "Modifying Elements, Attributes, and Nodes in an XML Tree3"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,6 +1,6 @@
 ---
-title: F# Language Reference | Microsoft Docs
-description: F# Language Reference
+title: F# Language Reference
+description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

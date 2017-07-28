@@ -1,5 +1,5 @@
 ---
-title: "BaseLogName cannot be Nothing or an empty String | Microsoft Docs"
+title: "BaseLogName cannot be Nothing or an empty String"
 
 ms.date: "2015-07-20"
 ms.prod: .net

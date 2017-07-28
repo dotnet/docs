@@ -1,5 +1,5 @@
 ---
-title: "Using the WCF Moniker with COM Clients | Microsoft Docs"
+title: "Using the WCF Moniker with COM Clients"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

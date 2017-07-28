@@ -1,5 +1,5 @@
 ---
-title: "Delegate Statement | Microsoft Docs"
+title: "Delegate Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

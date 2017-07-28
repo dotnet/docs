@@ -1,5 +1,5 @@
 ---
-title: "XAML Syntax In Detail | Microsoft Docs"
+title: "XAML Syntax In Detail"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Of Clause (Visual Basic) | Microsoft Docs"
+title: "Of Clause (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

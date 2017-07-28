@@ -1,5 +1,5 @@
 ---
-title: "5009 - DCGenWriterStop | Microsoft Docs"
+title: "5009 - DCGenWriterStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

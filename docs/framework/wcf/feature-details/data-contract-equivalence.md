@@ -1,5 +1,5 @@
 ---
-title: "Data Contract Equivalence | Microsoft Docs"
+title: "Data Contract Equivalence"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

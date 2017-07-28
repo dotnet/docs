@@ -1,5 +1,5 @@
 ---
-title: "How to: Read Object Data from an XML File (C#) | Microsoft Docs"
+title: "How to: Read Object Data from an XML File (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Serialization Guidelines | Microsoft Docs"
+title: "Serialization Guidelines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Interoperating with Unmanaged Code | Microsoft Docs"
+title: "Interoperating with Unmanaged Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

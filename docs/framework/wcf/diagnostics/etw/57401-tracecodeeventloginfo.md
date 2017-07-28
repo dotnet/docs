@@ -1,5 +1,5 @@
 ---
-title: "57401 - TraceCodeEventLogInfo | Microsoft Docs"
+title: "57401 - TraceCodeEventLogInfo"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

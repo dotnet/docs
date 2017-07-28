@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Path Normalization | Microsoft Docs"
+title: "Mitigation: Path Normalization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

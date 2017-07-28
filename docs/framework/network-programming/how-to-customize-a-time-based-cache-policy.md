@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize a Time-Based Cache Policy | Microsoft Docs"
+title: "How to: Customize a Time-Based Cache Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

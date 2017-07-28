@@ -1,5 +1,5 @@
 ---
-title: "1420 - ReaderQuotaExceeded | Microsoft Docs"
+title: "1420 - ReaderQuotaExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "COR_TYPEID Structure | Microsoft Docs"
+title: "COR_TYPEID Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

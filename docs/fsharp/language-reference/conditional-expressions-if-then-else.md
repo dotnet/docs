@@ -1,6 +1,6 @@
 ---
-title: "Conditional Expressions: if... then...else (F#) | Microsoft Docs"
-description: "Conditional Expressions: if... then...else (F#)"
+title: "Conditional Expressions: if... then...else (F#)"
+description: Learn how to write conditional expressions in F# to execute different branches of code.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "Weak Event Patterns | Microsoft Docs"
+title: "Weak Event Patterns"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

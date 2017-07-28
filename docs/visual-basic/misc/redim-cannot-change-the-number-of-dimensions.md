@@ -1,5 +1,5 @@
 ---
-title: "&#39;ReDim&#39; cannot change the number of dimensions | Microsoft Docs"
+title: "&#39;ReDim&#39; cannot change the number of dimensions"
 
 ms.date: "2015-07-20"
 ms.prod: .net

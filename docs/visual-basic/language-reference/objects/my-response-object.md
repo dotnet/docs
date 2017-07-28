@@ -1,5 +1,5 @@
 ---
-title: "My.Response Object | Microsoft Docs"
+title: "My.Response Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

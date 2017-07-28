@@ -1,5 +1,5 @@
 ---
-title: "5601 - FederationMessageProcessingSuccess | Microsoft Docs"
+title: "5601 - FederationMessageProcessingSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

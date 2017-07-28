@@ -1,5 +1,5 @@
 ---
-title: "Comparison of XPath and LINQ to XML2 | Microsoft Docs"
+title: "Comparison of XPath and LINQ to XML2"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

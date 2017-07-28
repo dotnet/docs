@@ -1,5 +1,5 @@
 ---
-title: "How to: Test for Reference Equality (Identity) (C# Programming Guide) | Microsoft Docs"
+title: "How to: Test for Reference Equality (Identity) (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

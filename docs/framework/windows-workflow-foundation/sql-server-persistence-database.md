@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Persistence Database | Microsoft Docs"
+title: "SQL Server Persistence Database"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

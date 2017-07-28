@@ -1,5 +1,5 @@
 ---
-title: "Storeadm.exe (Isolated Storage Tool) | Microsoft Docs"
+title: "Storeadm.exe (Isolated Storage Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

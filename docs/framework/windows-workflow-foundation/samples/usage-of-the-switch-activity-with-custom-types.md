@@ -1,5 +1,5 @@
 ---
-title: "Usage of the Switch Activity with Custom Types | Microsoft Docs"
+title: "Usage of the Switch Activity with Custom Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "ICLRMetaHost::RequestRuntimeLoadedNotification Method | Microsoft Docs"
+title: "ICLRMetaHost::RequestRuntimeLoadedNotification Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

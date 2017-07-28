@@ -83,7 +83,7 @@ There are two basic techniques for using your new runtime:
 
 The source code for the .NET Core CLI can be found in [the `dotnet/cli` repository on GitHub](https://github.com/dotnet/cli/).
 
-In order to build the .NET CLI, you need the following installed on your machine.
+In order to build the .NET Core CLI, you need the following installed on your machine.
 
 * Windows & Linux:
     - git on the PATH

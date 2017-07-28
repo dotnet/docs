@@ -1,5 +1,5 @@
 ---
-title: "Transacted Operations In Doubt Per Second | Microsoft Docs"
+title: "Transacted Operations In Doubt Per Second"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

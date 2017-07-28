@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework deployment guide for developers | Microsoft Docs"
+title: ".NET Framework deployment guide for developers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Text Trimming | Microsoft Docs"
+title: "How to: Enable Text Trimming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

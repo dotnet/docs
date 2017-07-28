@@ -1,5 +1,5 @@
 ---
-title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide) | Microsoft Docs"
+title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

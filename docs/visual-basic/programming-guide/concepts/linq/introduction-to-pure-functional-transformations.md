@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Pure Functional Transformations (Visual Basic) | Microsoft Docs"
+title: "Introduction to Pure Functional Transformations (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

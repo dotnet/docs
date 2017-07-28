@@ -1,5 +1,5 @@
 ---
-title: "ConnectionGroup Class | Microsoft Docs"
+title: "ConnectionGroup Class"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""

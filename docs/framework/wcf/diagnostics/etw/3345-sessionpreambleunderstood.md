@@ -1,5 +1,5 @@
 ---
-title: "3345 - SessionPreambleUnderstood | Microsoft Docs"
+title: "3345 - SessionPreambleUnderstood"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

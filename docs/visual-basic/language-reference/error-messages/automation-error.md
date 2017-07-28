@@ -1,5 +1,5 @@
 ---
-title: "Automation error | Microsoft Docs"
+title: "Automation error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

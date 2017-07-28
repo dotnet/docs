@@ -1,5 +1,5 @@
 ---
-title: "4028 - PipeTransportListenerListeningStart | Microsoft Docs"
+title: "4028 - PipeTransportListenerListeningStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: dotnet-list reference command - .NET Core CLI | Microsoft Docs
+title: dotnet-list reference command - .NET Core CLI
 description: The dotnet-list reference command provides a convenient option to list project to project references.
 keywords: dotnet-list, CLI, CLI command, .NET Core
 author: spboyer

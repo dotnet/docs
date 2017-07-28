@@ -1,5 +1,5 @@
 ---
-title: "Automatic Memory Management | Microsoft Docs"
+title: "Automatic Memory Management"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

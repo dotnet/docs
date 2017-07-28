@@ -1,5 +1,5 @@
 ---
-title: "Code-Behind and XAML in WPF | Microsoft Docs"
+title: "Code-Behind and XAML in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

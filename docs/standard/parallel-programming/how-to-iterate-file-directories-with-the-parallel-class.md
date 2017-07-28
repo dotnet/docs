@@ -1,5 +1,5 @@
 ---
-title: "How to: Iterate File Directories with the Parallel Class | Microsoft Docs"
+title: "How to: Iterate File Directories with the Parallel Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

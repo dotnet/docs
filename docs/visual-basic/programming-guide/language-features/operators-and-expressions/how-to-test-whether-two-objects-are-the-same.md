@@ -1,5 +1,5 @@
 ---
-title: "How to: Test Whether Two Objects Are the Same (Visual Basic) | Microsoft Docs"
+title: "How to: Test Whether Two Objects Are the Same (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

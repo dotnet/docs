@@ -1,5 +1,5 @@
 ---
-title: "How to: Hit Test Using Geometry as a Parameter | Microsoft Docs"
+title: "How to: Hit Test Using Geometry as a Parameter"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

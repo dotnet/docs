@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Single B&#233;zier Spline | Microsoft Docs"
+title: "How to: Draw a Single B&#233;zier Spline"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

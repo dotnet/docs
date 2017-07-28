@@ -1,5 +1,5 @@
 ---
-title: "Antialiasing with Lines and Curves | Microsoft Docs"
+title: "Antialiasing with Lines and Curves"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

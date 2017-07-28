@@ -1,5 +1,5 @@
 ---
-title: "System.IdentityModel.AuthorizationContextCreated | Microsoft Docs"
+title: "System.IdentityModel.AuthorizationContextCreated"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

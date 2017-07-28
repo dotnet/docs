@@ -1,5 +1,5 @@
 ---
-title: "3371 - MtomMessageEncodingStart | Microsoft Docs"
+title: "3371 - MtomMessageEncodingStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

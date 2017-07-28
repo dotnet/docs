@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.MsmqUnexpectedAcknowledgment | Microsoft Docs"
+title: "System.ServiceModel.Channels.MsmqUnexpectedAcknowledgment"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Evaluation of expression or statement timed out | Microsoft Docs"
+title: "Evaluation of expression or statement timed out"
 
 ms.date: "2015-07-20"
 ms.prod: .net

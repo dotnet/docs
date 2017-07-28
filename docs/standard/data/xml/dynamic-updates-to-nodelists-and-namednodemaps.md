@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Updates to NodeLists and NamedNodeMaps | Microsoft Docs"
+title: "Dynamic Updates to NodeLists and NamedNodeMaps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

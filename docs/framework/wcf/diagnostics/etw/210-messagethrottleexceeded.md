@@ -1,5 +1,5 @@
 ---
-title: "210 - MessageThrottleExceeded | Microsoft Docs"
+title: "210 - MessageThrottleExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

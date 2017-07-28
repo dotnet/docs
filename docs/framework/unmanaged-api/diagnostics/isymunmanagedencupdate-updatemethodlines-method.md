@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedENCUpdate::UpdateMethodLines Method | Microsoft Docs"
+title: "ISymUnmanagedENCUpdate::UpdateMethodLines Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

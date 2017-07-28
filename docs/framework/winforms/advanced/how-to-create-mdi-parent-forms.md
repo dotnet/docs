@@ -1,5 +1,5 @@
 ---
-title: "How to: Create MDI Parent Forms | Microsoft Docs"
+title: "How to: Create MDI Parent Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Oracle Schema Collections | Microsoft Docs"
+title: "Oracle Schema Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Add-ins and Extensibility | Microsoft Docs"
+title: "Add-ins and Extensibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

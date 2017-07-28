@@ -1,5 +1,5 @@
 ---
-title: "How to: Anticipate Out-of-Space Conditions with Isolated Storage | Microsoft Docs"
+title: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

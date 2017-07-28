@@ -1,5 +1,5 @@
 ---
-title: "Type Conversion Tables in .NET | Microsoft Docs"
+title: "Type Conversion Tables in .NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

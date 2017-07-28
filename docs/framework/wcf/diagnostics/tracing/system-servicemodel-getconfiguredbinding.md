@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.GetConfiguredBinding | Microsoft Docs"
+title: "System.ServiceModel.GetConfiguredBinding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

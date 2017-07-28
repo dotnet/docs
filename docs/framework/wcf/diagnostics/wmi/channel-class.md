@@ -1,5 +1,5 @@
 ---
-title: "Channel class | Microsoft Docs"
+title: "Channel class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

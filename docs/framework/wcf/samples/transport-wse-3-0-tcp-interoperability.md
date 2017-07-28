@@ -1,5 +1,5 @@
 ---
-title: "Transport: WSE 3.0 TCP Interoperability | Microsoft Docs"
+title: "Transport: WSE 3.0 TCP Interoperability"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -68,7 +68,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `}`  
   
--   `ClientWseTcpDuplexSessionChannel` adds logic to the base `WseTcpDuplexSessionChannel`to connect to a TCP server at `channel.Open` time. First the hostname is resolved to an IP address, as shown in the following code.  
+-   `ClientWseTcpDuplexSessionChannel` adds logic to the base `WseTcpDuplexSessionChannel` to connect to a TCP server at `channel.Open` time. First the hostname is resolved to an IP address, as shown in the following code.  
   
  `hostEntry = Dns.GetHostEntry(Via.Host);`  
   

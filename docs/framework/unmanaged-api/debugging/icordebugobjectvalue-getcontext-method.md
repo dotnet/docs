@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue::GetContext Method | Microsoft Docs"
+title: "ICorDebugObjectValue::GetContext Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

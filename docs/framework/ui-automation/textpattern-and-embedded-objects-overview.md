@@ -1,5 +1,5 @@
 ---
-title: "TextPattern and Embedded Objects Overview | Microsoft Docs"
+title: "TextPattern and Embedded Objects Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

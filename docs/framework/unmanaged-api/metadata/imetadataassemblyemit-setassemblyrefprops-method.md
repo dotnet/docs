@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataAssemblyEmit::SetAssemblyRefProps Method | Microsoft Docs"
+title: "IMetaDataAssemblyEmit::SetAssemblyRefProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

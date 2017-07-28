@@ -1,5 +1,5 @@
 ---
-title: "Unordered Node Retrieval by Name or Index | Microsoft Docs"
+title: "Unordered Node Retrieval by Name or Index"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

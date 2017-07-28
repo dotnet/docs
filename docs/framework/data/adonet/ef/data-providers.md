@@ -1,5 +1,5 @@
 ---
-title: "Entity Framework Data Providers | Microsoft Docs"
+title: "Entity Framework Data Providers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

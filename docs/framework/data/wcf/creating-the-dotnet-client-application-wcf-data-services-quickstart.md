@@ -1,5 +1,5 @@
 ---
-title: "Creating the .NET Framework Client Application (WCF Data Services Quickstart) | Microsoft Docs"
+title: "Creating the .NET Framework Client Application (WCF Data Services Quickstart)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

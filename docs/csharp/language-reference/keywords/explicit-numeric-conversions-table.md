@@ -1,5 +1,5 @@
 ---
-title: "Explicit Numeric Conversions Table (C# Reference) | Microsoft Docs"
+title: "Explicit Numeric Conversions Table (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -71,7 +71,7 @@ Explicit numeric conversion is used to convert any numeric type to any other num
   
 -   When you convert `decimal` to `float` or `double`, the `decimal` value is rounded to the nearest `double` or `float` value.  
   
- For more information on explicit conversion, see Explicit in the C# Language Specification. For more information on how to access the spec, see [C# Language Specification](../../../csharp/language-reference/language-specification.md).  
+ For more information on explicit conversion, see Explicit in the C# Language Specification. For more information on how to access the spec, see [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

@@ -1,5 +1,5 @@
 ---
-title: "Message Security Windows | Microsoft Docs"
+title: "Message Security Windows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

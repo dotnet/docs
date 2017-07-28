@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Path Colon Checks | Microsoft Docs"
+title: "Mitigation: Path Colon Checks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

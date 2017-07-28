@@ -1,5 +1,5 @@
 ---
-title: "Adding a DataTable to a DataSet | Microsoft Docs"
+title: "Adding a DataTable to a DataSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

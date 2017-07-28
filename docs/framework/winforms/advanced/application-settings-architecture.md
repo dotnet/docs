@@ -1,5 +1,5 @@
 ---
-title: "Application Settings Architecture | Microsoft Docs"
+title: "Application Settings Architecture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Transform Points and Vectors | Microsoft Docs"
+title: "How to: Transform Points and Vectors"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,6 +1,6 @@
 ---
-title: Type Abbreviations (F#) | Microsoft Docs
-description: Type Abbreviations (F#)
+title: Type Abbreviations (F#)
+description: Learn about F# type abbreviations to give a type a more meaningful name in order to make code easier to read.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

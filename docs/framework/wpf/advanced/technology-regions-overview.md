@@ -1,5 +1,5 @@
 ---
-title: "Technology Regions Overview | Microsoft Docs"
+title: "Technology Regions Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Dialog-Box Controls and Components (Windows Forms) | Microsoft Docs"
+title: "Dialog-Box Controls and Components (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

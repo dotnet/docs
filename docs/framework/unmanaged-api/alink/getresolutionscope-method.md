@@ -1,5 +1,5 @@
 ---
-title: "GetResolutionScope Method | Microsoft Docs"
+title: "GetResolutionScope Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

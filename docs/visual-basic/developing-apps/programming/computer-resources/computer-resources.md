@@ -1,5 +1,5 @@
 ---
-title: "Accessing computer resources (Visual Basic) | Microsoft Docs"
+title: "Accessing computer resources (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

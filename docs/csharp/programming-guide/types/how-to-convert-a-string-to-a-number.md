@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert a String to a Number (C# Programming Guide) | Microsoft Docs"
+title: "How to: Convert a String to a Number (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

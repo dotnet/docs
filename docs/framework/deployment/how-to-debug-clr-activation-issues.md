@@ -1,5 +1,5 @@
 ---
-title: "How to: Debug CLR Activation Issues | Microsoft Docs"
+title: "How to: Debug CLR Activation Issues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

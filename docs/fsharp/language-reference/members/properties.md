@@ -1,6 +1,6 @@
 ---
-title: Properties (F#) | Microsoft Docs
-description: Properties (F#)
+title: Properties (F#)
+description: Learn about F# properties, which are members that represent values associated with an object.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

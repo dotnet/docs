@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Service with a Contract Interface | Microsoft Docs"
+title: "How to: Create a Service with a Contract Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

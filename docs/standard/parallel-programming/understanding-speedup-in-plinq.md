@@ -1,5 +1,5 @@
 ---
-title: "Understanding Speedup in PLINQ | Microsoft Docs"
+title: "Understanding Speedup in PLINQ"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

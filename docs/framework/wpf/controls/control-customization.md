@@ -1,5 +1,5 @@
 ---
-title: "Control Customization | Microsoft Docs"
+title: "Control Customization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;comContract&gt; | Microsoft Docs"
+title: "&lt;comContract&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

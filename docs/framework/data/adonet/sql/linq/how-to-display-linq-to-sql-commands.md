@@ -1,5 +1,5 @@
 ---
-title: "How to: Display LINQ to SQL Commands | Microsoft Docs"
+title: "How to: Display LINQ to SQL Commands"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

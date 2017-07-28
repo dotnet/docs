@@ -1,5 +1,5 @@
 ---
-title: "How to: Cancel a Parallel.For or ForEach Loop | Microsoft Docs"
+title: "How to: Cancel a Parallel.For or ForEach Loop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

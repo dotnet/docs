@@ -1,6 +1,6 @@
 ---
-title: Discriminated Unions (F#) | Microsoft Docs
-description: Discriminated Unions (F#)
+title: Discriminated Unions (F#)
+description: Learn how to use F# discriminated unions.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

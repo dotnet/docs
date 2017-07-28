@@ -1,5 +1,5 @@
 ---
-title: "UI Automation Support for the Button Control Type | Microsoft Docs"
+title: "UI Automation Support for the Button Control Type"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

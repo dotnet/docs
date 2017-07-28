@@ -1,5 +1,5 @@
 ---
-title: "Migration and Interoperability | Microsoft Docs"
+title: "Migration and Interoperability"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

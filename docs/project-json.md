@@ -1,5 +1,5 @@
 ---
-title: project.json and Visual Studio 2015 with .NET Core | Microsoft Docs
+title: project.json and Visual Studio 2015 with .NET Core
 description: Where to find documentation for pre-release tooling for .NET Core and ASP.NET Core (project.json and Visual Studio 2015).
 keywords: project.json, Visual Studio 2015, .NET Core, ASP.NET Core
 author: mairaw

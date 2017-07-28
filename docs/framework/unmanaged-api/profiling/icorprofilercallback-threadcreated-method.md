@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::ThreadCreated Method | Microsoft Docs"
+title: "ICorProfilerCallback::ThreadCreated Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

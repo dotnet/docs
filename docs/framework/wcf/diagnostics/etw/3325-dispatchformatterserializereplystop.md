@@ -1,5 +1,5 @@
 ---
-title: "3325 - DispatchFormatterSerializeReplyStop | Microsoft Docs"
+title: "3325 - DispatchFormatterSerializeReplyStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

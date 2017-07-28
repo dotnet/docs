@@ -1,5 +1,5 @@
 ---
-title: "Basic and Digest Authentication | Microsoft Docs"
+title: "Basic and Digest Authentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

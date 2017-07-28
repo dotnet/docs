@@ -1,5 +1,5 @@
 ---
-title: "Draw Text Using Glyphs | Microsoft Docs"
+title: "Draw Text Using Glyphs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

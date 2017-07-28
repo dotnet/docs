@@ -1,5 +1,5 @@
 ---
-title: "RaiseEvent Statement | Microsoft Docs"
+title: "RaiseEvent Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

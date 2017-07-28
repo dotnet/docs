@@ -1,5 +1,5 @@
 ---
-title: "&#39;#ElseIf&#39; must be preceded by a matching &#39;#If&#39; or &#39;#ElseIf&#39; | Microsoft Docs"
+title: "&#39;#ElseIf&#39; must be preceded by a matching &#39;#If&#39; or &#39;#ElseIf&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

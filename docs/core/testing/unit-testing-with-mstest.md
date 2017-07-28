@@ -1,5 +1,5 @@
 ---
-title: Unit testing with MSTest and .NET Core | Microsoft Docs
+title: Unit testing with MSTest and .NET Core
 description: How to use MSTest with .NET Core
 keywords: MSTest, .NET, .NET Core
 author: ncarandini

@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Elements on Multiple Keys (C#) | Microsoft Docs"
+title: "How to: Sort Elements on Multiple Keys (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

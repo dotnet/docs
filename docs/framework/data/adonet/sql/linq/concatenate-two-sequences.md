@@ -1,5 +1,5 @@
 ---
-title: "Concatenate Two Sequences | Microsoft Docs"
+title: "Concatenate Two Sequences"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

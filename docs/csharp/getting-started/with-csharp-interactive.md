@@ -1,5 +1,5 @@
 ---
-title: Getting started with C# Interactive - C# Guide | Microsoft Docs
+title: Getting started with C# Interactive - C# Guide
 description: Getting Started with C# interactive
 keywords: C#, Getting Started, REPL,  Cross Platform
 ms.date: 08/23/2016
@@ -8,7 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a6907ffe-7920-4813-984f-6001d9e44756
-redirect_url: /dotnet/articles/csharp/getting-started/index
+redirect_url: /dotnet/csharp/getting-started/index
 ---
 
 # 🔧 Getting started with C# interactive

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ServiceOperationExceptionOnReply | Microsoft Docs"
+title: "System.ServiceModel.ServiceOperationExceptionOnReply"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

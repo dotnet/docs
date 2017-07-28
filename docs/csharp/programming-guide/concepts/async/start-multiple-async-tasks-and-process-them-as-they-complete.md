@@ -1,5 +1,5 @@
 ---
-title: "Start Multiple Async Tasks and Process Them As They Complete (C#) | Microsoft Docs"
+title: "Start Multiple Async Tasks and Process Them As They Complete (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,6 +1,6 @@
 ---
-title: Introduction to Events | Microsoft Docs
-description: Introduction to Events
+title: Introduction to Events
+description: Learn about events in .NET Core and our language design goals for events in this overview.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

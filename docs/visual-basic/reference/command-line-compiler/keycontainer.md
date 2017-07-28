@@ -1,5 +1,5 @@
 ---
-title: "/keycontainer | Microsoft Docs"
+title: "/keycontainer"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""

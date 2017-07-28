@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: ZipArchiveEntry.FullName Path Separator | Microsoft Docs"
+title: "Mitigation: ZipArchiveEntry.FullName Path Separator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

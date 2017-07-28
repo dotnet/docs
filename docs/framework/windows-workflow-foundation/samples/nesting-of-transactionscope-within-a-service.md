@@ -1,5 +1,5 @@
 ---
-title: "Nesting of TransactionScope within a service | Microsoft Docs"
+title: "Nesting of TransactionScope within a service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

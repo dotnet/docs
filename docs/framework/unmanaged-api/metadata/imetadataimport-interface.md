@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport Interface | Microsoft Docs"
+title: "IMetaDataImport Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

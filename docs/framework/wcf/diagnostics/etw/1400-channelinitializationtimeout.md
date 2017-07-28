@@ -1,5 +1,5 @@
 ---
-title: "1400 - ChannelInitializationTimeout | Microsoft Docs"
+title: "1400 - ChannelInitializationTimeout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

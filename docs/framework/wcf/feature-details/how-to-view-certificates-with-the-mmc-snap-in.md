@@ -1,5 +1,5 @@
 ---
-title: "How to: View Certificates with the MMC Snap-in | Microsoft Docs"
+title: "How to: View Certificates with the MMC Snap-in"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

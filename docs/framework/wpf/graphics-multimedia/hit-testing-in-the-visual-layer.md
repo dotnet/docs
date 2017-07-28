@@ -1,5 +1,5 @@
 ---
-title: "Hit Testing in the Visual Layer | Microsoft Docs"
+title: "Hit Testing in the Visual Layer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

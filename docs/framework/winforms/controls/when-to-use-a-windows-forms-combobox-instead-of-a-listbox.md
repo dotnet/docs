@@ -1,5 +1,5 @@
 ---
-title: "When to Use a Windows Forms ComboBox Instead of a ListBox | Microsoft Docs"
+title: "When to Use a Windows Forms ComboBox Instead of a ListBox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

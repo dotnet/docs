@@ -1,5 +1,5 @@
 ---
-title: "Operator is not valid for &#39;&lt;name1&gt;&#39; and &#39;&lt;name2&gt;&#39; | Microsoft Docs"
+title: "Operator is not valid for &#39;&lt;name1&gt;&#39; and &#39;&lt;name2&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

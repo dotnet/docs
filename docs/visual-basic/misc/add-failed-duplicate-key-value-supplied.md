@@ -1,5 +1,5 @@
 ---
-title: "Add failed. Duplicate key value supplied | Microsoft Docs"
+title: "Add failed. Duplicate key value supplied"
 
 ms.date: "2015-07-20"
 ms.prod: .net

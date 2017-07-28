@@ -1,5 +1,5 @@
 ---
-title: "How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections | Microsoft Docs"
+title: "How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Certmgr.exe (Certificate Manager Tool) | Microsoft Docs"
+title: "Certmgr.exe (Certificate Manager Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

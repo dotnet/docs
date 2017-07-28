@@ -1,6 +1,6 @@
 ---
-title: Active Patterns (F#) | Microsoft Docs
-description: Active Patterns (F#)
+title: Active Patterns (F#)
+description: Learn how to use active patterns to define named partitions that subdivide input data in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -53,20 +53,20 @@ The output of the above program is as follows:
 
 ```
 Red
-R: 255 G: 0 B: 0
-H: 0.000000 S: 1.000000 B: 0.500000
+ Red: 255 Green: 0 Blue: 0
+ Hue: 360.000000 Saturation: 1.000000 Brightness: 0.500000
 Black
-R: 0 G: 0 B: 0
-H: 0.000000 S: 0.000000 B: 0.000000
+ Red: 0 Green: 0 Blue: 0
+ Hue: 0.000000 Saturation: 0.000000 Brightness: 0.000000
 White
-R: 255 G: 255 B: 255
-H: 0.000000 S: 0.000000 B: 1.000000
+ Red: 255 Green: 255 Blue: 255
+ Hue: 0.000000 Saturation: 0.000000 Brightness: 1.000000
 Gray
-R: 128 G: 128 B: 128
-H: 0.000000 S: 0.000000 B: 0.501961
+ Red: 128 Green: 128 Blue: 128
+ Hue: 0.000000 Saturation: 0.000000 Brightness: 0.501961
 BlanchedAlmond
-R: 255 G: 235 B: 205
-H: 36.000000 S: 1.000000 B: 0.901961
+ Red: 255 Green: 235 Blue: 205
+ Hue: 36.000000 Saturation: 1.000000 Brightness: 0.901961
 ```
 
 In combination, these two ways of using active patterns enable you to partition and decompose data into just the appropriate form and perform the appropriate computations on the appropriate data in the form most convenient for the computation.

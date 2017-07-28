@@ -1,5 +1,5 @@
 ---
-title: "HOST_TYPE Enumeration | Microsoft Docs"
+title: "HOST_TYPE Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

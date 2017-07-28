@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Activation.MessageQueueDuplicatedSocketError | Microsoft Docs"
+title: "System.ServiceModel.Activation.MessageQueueDuplicatedSocketError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

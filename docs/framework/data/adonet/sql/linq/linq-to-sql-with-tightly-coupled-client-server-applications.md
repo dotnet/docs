@@ -1,5 +1,5 @@
 ---
-title: "LINQ to SQL with Tightly-Coupled Client-Server Applications | Microsoft Docs"
+title: "LINQ to SQL with Tightly-Coupled Client-Server Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

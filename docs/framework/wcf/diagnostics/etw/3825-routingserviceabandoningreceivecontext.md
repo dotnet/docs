@@ -1,5 +1,5 @@
 ---
-title: "3825 - RoutingServiceAbandoningReceiveContext | Microsoft Docs"
+title: "3825 - RoutingServiceAbandoningReceiveContext"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

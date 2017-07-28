@@ -1,5 +1,5 @@
 ---
-title: "ServiceModel Transaction Configuration | Microsoft Docs"
+title: "ServiceModel Transaction Configuration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

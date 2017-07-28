@@ -1,5 +1,5 @@
 ---
-title: "Example that Outputs Office Open XML Document Parts (C#) | Microsoft Docs"
+title: "Example that Outputs Office Open XML Document Parts (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

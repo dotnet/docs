@@ -1,6 +1,6 @@
 ---
-title: let Bindings (F#) | Microsoft Docs
-description: let Bindings (F#)
+title: let Bindings (F#)
+description: Learn how to use an F# 'let' binding, which associates an identifier with a value or function.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

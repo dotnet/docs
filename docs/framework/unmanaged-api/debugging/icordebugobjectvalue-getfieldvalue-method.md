@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue::GetFieldValue Method | Microsoft Docs"
+title: "ICorDebugObjectValue::GetFieldValue Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

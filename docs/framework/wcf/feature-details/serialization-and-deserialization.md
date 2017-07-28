@@ -1,5 +1,5 @@
 ---
-title: "Serialization and Deserialization | Microsoft Docs"
+title: "Serialization and Deserialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

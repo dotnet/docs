@@ -1,6 +1,6 @@
 ---
-title: Expression Trees Summary | Microsoft Docs
-description: Expression Trees Summary
+title: Expression Trees Summary
+description: Recaps how you can use expression trees to create dynamic programs that interpret code as data and build new functionality based on that code.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

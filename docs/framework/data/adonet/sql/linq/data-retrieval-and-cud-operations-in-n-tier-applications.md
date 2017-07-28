@@ -1,5 +1,5 @@
 ---
-title: "Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL) | Microsoft Docs"
+title: "Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

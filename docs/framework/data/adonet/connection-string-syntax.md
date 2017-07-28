@@ -1,5 +1,5 @@
 ---
-title: "Connection String Syntax | Microsoft Docs"
+title: "Connection String Syntax"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -73,7 +73,7 @@ Each .NET Framework data provider has a `Connection` object that inherits from <
 ```  
   
 > [!IMPORTANT]
->  The default setting for the`Persist``Security Info` keyword is `false`. Setting it to `true` or `yes` allows security-sensitive information, including the user ID and password, to be obtained from the connection after the connection has been opened. Keep `Persist``Security Info` set to `false` to ensure that an untrusted source does not have access to sensitive connection string information.  
+>  The default setting for the `Persist Security Info` keyword is `false`. Setting it to `true` or `yes` allows security-sensitive information, including the user ID and password, to be obtained from the connection after the connection has been opened. Keep `Persist Security Info` set to `false` to ensure that an untrusted source does not have access to sensitive connection string information.  
   
  To connect to a named instance of SQL Server, use the *server name\instance name* syntax.  
   

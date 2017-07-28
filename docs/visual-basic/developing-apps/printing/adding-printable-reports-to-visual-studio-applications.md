@@ -1,5 +1,5 @@
 ---
-title: "Adding Printable Reports to Visual Studio Applications | Microsoft Docs"
+title: "Adding Printable Reports to Visual Studio Applications"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Inside the CustomPeerResolverService: Client Registrations | Microsoft Docs"
+title: "Inside the CustomPeerResolverService: Client Registrations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

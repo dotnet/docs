@@ -1,5 +1,5 @@
 ---
-title: "#endregion (C# Reference) | Microsoft Docs"
+title: "#endregion (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

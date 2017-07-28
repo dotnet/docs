@@ -1,5 +1,5 @@
 ---
-title: "XPath Namespace Navigation | Microsoft Docs"
+title: "XPath Namespace Navigation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

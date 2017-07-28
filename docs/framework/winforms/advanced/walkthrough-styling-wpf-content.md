@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Styling WPF Content | Microsoft Docs"
+title: "Walkthrough: Styling WPF Content"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

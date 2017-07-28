@@ -1,5 +1,5 @@
 ---
-title: "Significant Traces | Microsoft Docs"
+title: "Significant Traces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

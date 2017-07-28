@@ -1,5 +1,5 @@
 ---
-title: "What&#39;s Obsolete in the .NET Framework Class Library | Microsoft Docs"
+title: "What&#39;s Obsolete in the .NET Framework Class Library"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

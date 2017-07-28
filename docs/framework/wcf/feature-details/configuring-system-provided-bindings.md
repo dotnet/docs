@@ -1,5 +1,5 @@
 ---
-title: "Configuring System-Provided Bindings | Microsoft Docs"
+title: "Configuring System-Provided Bindings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

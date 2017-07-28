@@ -1,5 +1,5 @@
 ---
-title: "224 - MessageThrottleAtSeventyPercent | Microsoft Docs"
+title: "224 - MessageThrottleAtSeventyPercent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Stretch Properties to the Contents of a Viewbox | Microsoft Docs"
+title: "How to: Apply Stretch Properties to the Contents of a Viewbox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

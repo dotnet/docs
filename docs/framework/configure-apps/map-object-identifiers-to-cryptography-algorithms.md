@@ -1,5 +1,5 @@
 ---
-title: "Mapping Object Identifiers to Cryptography Algorithms | Microsoft Docs"
+title: "Mapping Object Identifiers to Cryptography Algorithms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

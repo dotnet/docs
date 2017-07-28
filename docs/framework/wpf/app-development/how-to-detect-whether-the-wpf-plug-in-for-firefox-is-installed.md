@@ -1,5 +1,5 @@
 ---
-title: "How to: Detect Whether the WPF Plug-In for Firefox Is Installed | Microsoft Docs"
+title: "How to: Detect Whether the WPF Plug-In for Firefox Is Installed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Names of Assemblies and DLLs | Microsoft Docs"
+title: "Names of Assemblies and DLLs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

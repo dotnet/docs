@@ -1,5 +1,5 @@
 ---
-title: "How to: Use MetadataExchangeClient to Retrieve Metadata | Microsoft Docs"
+title: "How to: Use MetadataExchangeClient to Retrieve Metadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

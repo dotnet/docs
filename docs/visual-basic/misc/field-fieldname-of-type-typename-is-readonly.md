@@ -1,5 +1,5 @@
 ---
-title: "Field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is &#39;ReadOnly&#39; | Microsoft Docs"
+title: "Field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is &#39;ReadOnly&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

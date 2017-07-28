@@ -1,5 +1,5 @@
 ---
-title: "Context Exchange Correlation | Microsoft Docs"
+title: "Context Exchange Correlation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

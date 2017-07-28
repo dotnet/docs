@@ -1,5 +1,5 @@
 ---
-title: "Custom Animations Overview | Microsoft Docs"
+title: "Custom Animations Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

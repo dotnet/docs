@@ -1,5 +1,5 @@
 ---
-title: "Late-bound assignment to a field of value type &#39;&lt;typename&gt;&#39; is not valid when &#39;&lt;name&gt;&#39; is the result of a late-bound expression | Microsoft Docs"
+title: "Late-bound assignment to a field of value type &#39;&lt;typename&gt;&#39; is not valid when &#39;&lt;name&gt;&#39; is the result of a late-bound expression"
 
 ms.date: "2015-07-20"
 ms.prod: .net

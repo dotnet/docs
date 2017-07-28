@@ -1,5 +1,5 @@
 ---
-title: "Designing Service Contracts | Microsoft Docs"
+title: "Designing Service Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

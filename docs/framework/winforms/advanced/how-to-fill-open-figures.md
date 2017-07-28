@@ -1,5 +1,5 @@
 ---
-title: "How to: Fill Open Figures | Microsoft Docs"
+title: "How to: Fill Open Figures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

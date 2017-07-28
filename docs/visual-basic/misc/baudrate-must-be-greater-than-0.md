@@ -1,5 +1,5 @@
 ---
-title: "BaudRate must be greater than 0 | Microsoft Docs"
+title: "BaudRate must be greater than 0"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "A startup form has not been specified | Microsoft Docs"
+title: "A startup form has not been specified"
 
 ms.date: "2015-07-20"
 ms.prod: .net

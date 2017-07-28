@@ -1,5 +1,5 @@
 ---
-title: "Interpreting Network Tracing | Microsoft Docs"
+title: "Interpreting Network Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Securing ADO.NET Applications | Microsoft Docs"
+title: "Securing ADO.NET Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

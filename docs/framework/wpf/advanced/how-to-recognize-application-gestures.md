@@ -1,5 +1,5 @@
 ---
-title: "How To: Recognize Application Gestures | Microsoft Docs"
+title: "How To: Recognize Application Gestures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Basic WCF Programming | Microsoft Docs"
+title: "Basic WCF Programming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

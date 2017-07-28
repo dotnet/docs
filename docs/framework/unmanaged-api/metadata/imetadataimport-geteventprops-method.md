@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetEventProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetEventProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

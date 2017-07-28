@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetTypeDefProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetTypeDefProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

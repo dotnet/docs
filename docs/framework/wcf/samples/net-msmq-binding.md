@@ -1,5 +1,5 @@
 ---
-title: "Net MSMQ Binding | Microsoft Docs"
+title: "Net MSMQ Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

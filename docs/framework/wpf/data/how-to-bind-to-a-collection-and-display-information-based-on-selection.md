@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to a Collection and Display Information Based on Selection | Microsoft Docs"
+title: "How to: Bind to a Collection and Display Information Based on Selection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

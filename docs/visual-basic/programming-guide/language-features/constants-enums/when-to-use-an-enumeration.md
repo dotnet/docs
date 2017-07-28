@@ -1,5 +1,5 @@
 ---
-title: "When to Use an Enumeration (Visual Basic) | Microsoft Docs"
+title: "When to Use an Enumeration (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -55,7 +55,7 @@ Enumerations offer an easy way to work with sets of related constants. An enumer
  When referring to a member of an enumeration, you must qualify the member name with the enumeration name or else use the `Imports` statement. For more information, see [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md).  
   
 ## Predefined Enumerations  
- [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides a number of predefined enumerations, such as `FirstDayOfWeek` and `MsgBoxResul`t, to facilitate your code. For a list of these see [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md).  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides a number of predefined enumerations, such as `FirstDayOfWeek` and `MsgBoxResult`, to facilitate your code. For a list of these see [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md).  
   
 ## See Also  
  [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)   

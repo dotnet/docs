@@ -1,5 +1,5 @@
 ---
-title: "Strongly-Typed Extensions Sample | Microsoft Docs"
+title: "Strongly-Typed Extensions Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

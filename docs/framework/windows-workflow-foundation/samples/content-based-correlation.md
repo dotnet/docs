@@ -1,5 +1,5 @@
 ---
-title: "Content-Based Correlation | Microsoft Docs"
+title: "Content-Based Correlation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

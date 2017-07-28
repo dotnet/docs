@@ -1,5 +1,5 @@
 ---
-title: "Source folder and target folder are the same | Microsoft Docs"
+title: "Source folder and target folder are the same"
 
 ms.date: "2015-07-20"
 ms.prod: .net

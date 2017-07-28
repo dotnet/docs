@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure a Windows Communication Foundation Service to Use Port Sharing | Microsoft Docs"
+title: "How to: Configure a Windows Communication Foundation Service to Use Port Sharing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

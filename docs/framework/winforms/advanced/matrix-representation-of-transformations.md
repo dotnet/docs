@@ -1,5 +1,5 @@
 ---
-title: "Matrix Representation of Transformations | Microsoft Docs"
+title: "Matrix Representation of Transformations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

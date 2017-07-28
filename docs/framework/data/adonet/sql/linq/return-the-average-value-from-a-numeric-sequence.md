@@ -1,5 +1,5 @@
 ---
-title: "Return the Average Value From a Numeric Sequence | Microsoft Docs"
+title: "Return the Average Value From a Numeric Sequence"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

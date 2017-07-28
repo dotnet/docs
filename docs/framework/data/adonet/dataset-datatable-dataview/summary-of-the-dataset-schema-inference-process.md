@@ -1,5 +1,5 @@
 ---
-title: "Summary of the DataSet Schema Inference Process | Microsoft Docs"
+title: "Summary of the DataSet Schema Inference Process"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

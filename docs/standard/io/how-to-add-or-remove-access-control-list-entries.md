@@ -1,5 +1,5 @@
 ---
-title: "How to: Add or Remove Access Control List Entries | Microsoft Docs"
+title: "How to: Add or Remove Access Control List Entries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

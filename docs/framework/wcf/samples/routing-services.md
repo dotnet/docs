@@ -1,5 +1,5 @@
 ---
-title: "Routing Services | Microsoft Docs"
+title: "Routing Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "While...End While Statement (Visual Basic) | Microsoft Docs"
+title: "While...End While Statement (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

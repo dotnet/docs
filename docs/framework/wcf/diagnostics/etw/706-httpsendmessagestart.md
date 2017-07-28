@@ -1,5 +1,5 @@
 ---
-title: "706 - HttpSendMessageStart | Microsoft Docs"
+title: "706 - HttpSendMessageStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

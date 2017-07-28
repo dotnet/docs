@@ -1,5 +1,5 @@
 ---
-title: "_AxlPublicKeyBlobToPublicKeyToken Function | Microsoft Docs"
+title: "_AxlPublicKeyBlobToPublicKeyToken Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

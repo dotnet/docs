@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Features That Support LINQ | Microsoft Docs"
+title: "Visual Basic Features That Support LINQ"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

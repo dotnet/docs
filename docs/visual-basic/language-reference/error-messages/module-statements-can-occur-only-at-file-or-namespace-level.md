@@ -1,5 +1,5 @@
 ---
-title: "&#39;Module&#39; statements can occur only at file or namespace level | Microsoft Docs"
+title: "&#39;Module&#39; statements can occur only at file or namespace level"
 
 ms.date: "2015-07-20"
 ms.prod: .net

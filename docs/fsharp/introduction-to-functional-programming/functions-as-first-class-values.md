@@ -1,6 +1,6 @@
 ---
-title: Functions as First-Class Values (F#) | Microsoft Docs
-description: Functions as First-Class Values (F#)
+title: Functions as First-Class Values (F#)
+description: Learn how functions are elevated to first-class status in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

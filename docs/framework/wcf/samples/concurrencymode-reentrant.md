@@ -1,5 +1,5 @@
 ---
-title: "ConcurrencyMode Reentrant | Microsoft Docs"
+title: "ConcurrencyMode Reentrant"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

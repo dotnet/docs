@@ -1,5 +1,5 @@
 ---
-title: "SqlClient Streaming Support | Microsoft Docs"
+title: "SqlClient Streaming Support"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

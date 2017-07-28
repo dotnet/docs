@@ -1,5 +1,5 @@
 ---
-title: Perform grouped joins | Microsoft Docs
+title: Perform grouped joins
 description: How to perform grouped joins.
 keywords: .NET, .NET Core, C#
 author: BillWagner

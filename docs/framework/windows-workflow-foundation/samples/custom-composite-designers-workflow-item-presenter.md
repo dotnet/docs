@@ -1,5 +1,5 @@
 ---
-title: "Custom Composite Designers - Workflow Item Presenter | Microsoft Docs"
+title: "Custom Composite Designers - Workflow Item Presenter"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

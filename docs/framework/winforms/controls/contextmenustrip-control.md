@@ -1,5 +1,5 @@
 ---
-title: "ContextMenuStrip Control | Microsoft Docs"
+title: "ContextMenuStrip Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

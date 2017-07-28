@@ -1,5 +1,5 @@
 ---
-title: "DataRows and DataRowViews | Microsoft Docs"
+title: "DataRows and DataRowViews"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

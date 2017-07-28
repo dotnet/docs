@@ -1,5 +1,5 @@
 ---
-title: "Common Attributes (C#) | Microsoft Docs"
+title: "Common Attributes (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

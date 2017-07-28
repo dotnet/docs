@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Data in a View | Microsoft Docs"
+title: "How to: Sort Data in a View"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

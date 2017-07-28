@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILCode Interface | Microsoft Docs"
+title: "ICorDebugILCode Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

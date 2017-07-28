@@ -1,5 +1,5 @@
 ---
-title: "Format not valid in resource file | Microsoft Docs"
+title: "Format not valid in resource file"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: Managing dependencies in .NET Core tooling | Microsoft Docs
+title: Managing dependencies in .NET Core tooling
 description: Explains how to manage your dependencies with the .NET Core tools.
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf

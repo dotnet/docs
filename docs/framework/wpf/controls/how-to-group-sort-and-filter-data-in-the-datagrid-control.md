@@ -1,5 +1,5 @@
 ---
-title: "How to: Group, Sort, and Filter Data in the DataGrid Control | Microsoft Docs"
+title: "How to: Group, Sort, and Filter Data in the DataGrid Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

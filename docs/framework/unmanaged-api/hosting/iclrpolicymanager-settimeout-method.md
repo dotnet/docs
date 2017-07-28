@@ -1,5 +1,5 @@
 ---
-title: "ICLRPolicyManager::SetTimeout Method | Microsoft Docs"
+title: "ICLRPolicyManager::SetTimeout Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

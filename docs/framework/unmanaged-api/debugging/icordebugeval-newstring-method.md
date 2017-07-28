@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEval::NewString Method | Microsoft Docs"
+title: "ICorDebugEval::NewString Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

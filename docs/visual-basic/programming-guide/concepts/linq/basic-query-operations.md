@@ -1,5 +1,5 @@
 ---
-title: "Basic Query Operations (Visual Basic) | Microsoft Docs"
+title: "Basic Query Operations (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Cannot create ActiveX Component | Microsoft Docs"
+title: "Cannot create ActiveX Component"
 
 ms.date: "2015-07-20"
 ms.prod: .net

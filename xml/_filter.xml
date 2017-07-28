@@ -104,7 +104,7 @@
       <typeFilter name="*" expose="true" />
     </namespaceFilter>
     <namespaceFilter name="System">
-      <typeFilter name="MonoTODO" expose="false" />
+      <typeFilter name="MonoTODOAttribute" expose="false" />
       <typeFilter name="*" expose="true" />
     </namespaceFilter>    
     <namespaceFilter name="*">

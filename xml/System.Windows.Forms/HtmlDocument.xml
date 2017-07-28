@@ -1320,7 +1320,7 @@ window.alert("Name is " + name + "; address is " + address);
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.HtmlDocument left, System.Windows.Forms.HtmlDocument right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.HtmlDocument left, System.Windows.Forms.HtmlDocument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Forms.HtmlDocument left, class System.Windows.Forms.HtmlDocument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.op_Equality(System.Windows.Forms.HtmlDocument,System.Windows.Forms.HtmlDocument)" />
       <MemberType>Method</MemberType>
@@ -1347,7 +1347,7 @@ window.alert("Name is " + name + "; address is " + address);
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.HtmlDocument left, System.Windows.Forms.HtmlDocument right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.HtmlDocument left, System.Windows.Forms.HtmlDocument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Forms.HtmlDocument left, class System.Windows.Forms.HtmlDocument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlDocument.op_Inequality(System.Windows.Forms.HtmlDocument,System.Windows.Forms.HtmlDocument)" />
       <MemberType>Method</MemberType>

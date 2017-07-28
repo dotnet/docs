@@ -97,7 +97,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Xml.XmlParserContext op_Implicit (System.Windows.Markup.ParserContext parserContext);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Xml.XmlParserContext (System.Windows.Markup.ParserContext parserContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Xml.XmlParserContext op_Implicit(class System.Windows.Markup.ParserContext parserContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ParserContext.op_Implicit(System.Windows.Markup.ParserContext)~System.Xml.XmlParserContext" />
       <MemberType>Method</MemberType>

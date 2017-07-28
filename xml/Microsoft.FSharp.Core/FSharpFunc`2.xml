@@ -249,7 +249,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Converter&lt;T,TResult&gt; op_Implicit (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; func);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Converter&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class System.Converter`2&lt;!T, !TResult&gt; op_Implicit(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, !TResult&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.op_Implicit(Microsoft.FSharp.Core.FSharpFunc{`0,`1})~System.Converter{`0,`1}" />
       <MemberType>Method</MemberType>
@@ -273,7 +273,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; op_Implicit (Converter&lt;T,TResult&gt; converter);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; (Converter&lt;T,TResult&gt; converter);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T, !TResult&gt; op_Implicit(class System.Converter`2&lt;!T, !TResult&gt; converter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpFunc`2.op_Implicit(System.Converter{`0,`1})~Microsoft.FSharp.Core.FSharpFunc{`0,`1}" />
       <MemberType>Method</MemberType>

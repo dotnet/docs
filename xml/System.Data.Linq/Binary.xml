@@ -133,7 +133,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Data.Linq.Binary binary1, System.Data.Linq.Binary binary2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Data.Linq.Binary binary1, System.Data.Linq.Binary binary2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Data.Linq.Binary binary1, class System.Data.Linq.Binary binary2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.op_Equality(System.Data.Linq.Binary,System.Data.Linq.Binary)" />
       <MemberType>Method</MemberType>
@@ -165,7 +165,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Linq.Binary op_Implicit (byte[] value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Linq.Binary (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Linq.Binary op_Implicit(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.op_Implicit(System.Byte[])~System.Data.Linq.Binary" />
       <MemberType>Method</MemberType>
@@ -187,7 +187,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Data.Linq.Binary binary1, System.Data.Linq.Binary binary2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Data.Linq.Binary binary1, System.Data.Linq.Binary binary2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Data.Linq.Binary binary1, class System.Data.Linq.Binary binary2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Binary.op_Inequality(System.Data.Linq.Binary,System.Data.Linq.Binary)" />
       <MemberType>Method</MemberType>

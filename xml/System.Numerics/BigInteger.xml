@@ -2124,7 +2124,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Addition (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator + (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Addition(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Addition(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2175,7 +2175,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_BitwiseAnd (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator &amp; (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_BitwiseAnd(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_BitwiseAnd(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2230,7 +2230,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_BitwiseOr (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator | (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_BitwiseOr(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_BitwiseOr(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2285,7 +2285,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Decrement (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator -- (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Decrement(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Decrement(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2333,7 +2333,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Division (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator / (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Division(valuetype System.Numerics.BigInteger dividend, valuetype System.Numerics.BigInteger divisor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Division(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2394,7 +2394,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2443,7 +2443,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -2492,7 +2492,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2544,7 +2544,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -2596,7 +2596,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2648,7 +2648,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_ExclusiveOr (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator ^ (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_ExclusiveOr(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_ExclusiveOr(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2703,7 +2703,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.BigInteger (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -2735,7 +2735,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Explicit (double value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.BigInteger (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Explicit(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Double)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -2767,7 +2767,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static byte op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator byte (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Byte" />
       <MemberType>Method</MemberType>
@@ -2799,7 +2799,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2831,7 +2831,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static double op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator double (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Double" />
       <MemberType>Method</MemberType>
@@ -2868,7 +2868,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static short op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator short (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int16 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int16" />
       <MemberType>Method</MemberType>
@@ -2900,7 +2900,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -2937,7 +2937,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -2974,7 +2974,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static sbyte op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator sbyte (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int8 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.SByte" />
       <MemberType>Method</MemberType>
@@ -3011,7 +3011,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static float op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator float (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Single" />
       <MemberType>Method</MemberType>
@@ -3043,7 +3043,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ushort op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ushort (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int16 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt16" />
       <MemberType>Method</MemberType>
@@ -3080,7 +3080,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static uint op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator uint (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int32 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt32" />
       <MemberType>Method</MemberType>
@@ -3117,7 +3117,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ulong op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ulong (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int64 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt64" />
       <MemberType>Method</MemberType>
@@ -3154,7 +3154,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Explicit (float value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.BigInteger (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Explicit(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Single)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3186,7 +3186,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3237,7 +3237,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -3288,7 +3288,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3342,7 +3342,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -3396,7 +3396,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3450,7 +3450,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3501,7 +3501,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -3552,7 +3552,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3606,7 +3606,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -3660,7 +3660,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3714,7 +3714,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (byte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3746,7 +3746,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (short value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int16)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3778,7 +3778,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (int value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3810,7 +3810,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (long value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3842,7 +3842,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (sbyte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.SByte)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3879,7 +3879,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (ushort value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt16)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3916,7 +3916,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (uint value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt32)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3953,7 +3953,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (ulong value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt64)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3990,7 +3990,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Increment (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator ++ (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Increment(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Increment(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4037,7 +4037,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4090,7 +4090,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -4143,7 +4143,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4199,7 +4199,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -4255,7 +4255,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4311,7 +4311,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LeftShift">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_LeftShift (System.Numerics.BigInteger value, int shift);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator &lt;&lt; (System.Numerics.BigInteger value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_LeftShift(valuetype System.Numerics.BigInteger value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LeftShift(System.Numerics.BigInteger,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -4363,7 +4363,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4414,7 +4414,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -4465,7 +4465,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4519,7 +4519,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -4573,7 +4573,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4627,7 +4627,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4678,7 +4678,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -4729,7 +4729,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4783,7 +4783,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -4837,7 +4837,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4891,7 +4891,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Modulus (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator % (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Modulus(valuetype System.Numerics.BigInteger dividend, valuetype System.Numerics.BigInteger divisor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Modulus(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4946,7 +4946,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Multiply (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator * (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Multiply(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4995,7 +4995,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_OnesComplement (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator ~ (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_OnesComplement(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_OnesComplement(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -5041,7 +5041,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_RightShift">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_RightShift (System.Numerics.BigInteger value, int shift);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator &gt;&gt; (System.Numerics.BigInteger value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_RightShift(valuetype System.Numerics.BigInteger value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_RightShift(System.Numerics.BigInteger,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -5092,7 +5092,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Subtraction (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator - (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Subtraction(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Subtraction(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -5143,7 +5143,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_UnaryNegation (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator - (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_UnaryNegation(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_UnaryNegation(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -5195,7 +5195,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_UnaryPlus (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator + (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_UnaryPlus(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_UnaryPlus(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>

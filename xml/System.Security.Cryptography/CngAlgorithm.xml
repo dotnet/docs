@@ -459,7 +459,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.Cryptography.CngAlgorithm left, System.Security.Cryptography.CngAlgorithm right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Cryptography.CngAlgorithm left, System.Security.Cryptography.CngAlgorithm right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Cryptography.CngAlgorithm left, class System.Security.Cryptography.CngAlgorithm right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithm.op_Equality(System.Security.Cryptography.CngAlgorithm,System.Security.Cryptography.CngAlgorithm)" />
       <MemberType>Method</MemberType>
@@ -494,7 +494,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.Cryptography.CngAlgorithm left, System.Security.Cryptography.CngAlgorithm right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Cryptography.CngAlgorithm left, System.Security.Cryptography.CngAlgorithm right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Cryptography.CngAlgorithm left, class System.Security.Cryptography.CngAlgorithm right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngAlgorithm.op_Inequality(System.Security.Cryptography.CngAlgorithm,System.Security.Cryptography.CngAlgorithm)" />
       <MemberType>Method</MemberType>

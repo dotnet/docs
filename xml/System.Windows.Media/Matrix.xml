@@ -714,7 +714,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Matrix matrix1, System.Windows.Media.Matrix matrix2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Matrix matrix1, System.Windows.Media.Matrix matrix2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Matrix matrix1, valuetype System.Windows.Media.Matrix matrix2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.op_Equality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberType>Method</MemberType>
@@ -755,7 +755,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Matrix matrix1, System.Windows.Media.Matrix matrix2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Matrix matrix1, System.Windows.Media.Matrix matrix2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Matrix matrix1, valuetype System.Windows.Media.Matrix matrix2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.op_Inequality(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberType>Method</MemberType>
@@ -796,7 +796,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Matrix op_Multiply (System.Windows.Media.Matrix trans1, System.Windows.Media.Matrix trans2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Matrix operator * (System.Windows.Media.Matrix trans1, System.Windows.Media.Matrix trans2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Matrix op_Multiply(valuetype System.Windows.Media.Matrix trans1, valuetype System.Windows.Media.Matrix trans2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Matrix.op_Multiply(System.Windows.Media.Matrix,System.Windows.Media.Matrix)" />
       <MemberType>Method</MemberType>

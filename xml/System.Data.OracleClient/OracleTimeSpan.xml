@@ -551,7 +551,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Equality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
       <MemberType>Method</MemberType>
@@ -578,7 +578,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Explicit (System.Data.OracleClient.OracleTimeSpan x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator TimeSpan (System.Data.OracleClient.OracleTimeSpan x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Explicit(valuetype System.Data.OracleClient.OracleTimeSpan x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Explicit(System.Data.OracleClient.OracleTimeSpan)~System.TimeSpan" />
       <MemberType>Method</MemberType>
@@ -600,7 +600,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleTimeSpan op_Explicit (string x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleTimeSpan (string x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleTimeSpan op_Explicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Explicit(System.String)~System.Data.OracleClient.OracleTimeSpan" />
       <MemberType>Method</MemberType>
@@ -622,7 +622,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
       <MemberType>Method</MemberType>
@@ -648,7 +648,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
       <MemberType>Method</MemberType>
@@ -674,7 +674,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Inequality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
       <MemberType>Method</MemberType>
@@ -700,7 +700,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
       <MemberType>Method</MemberType>
@@ -726,7 +726,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
       <MemberType>Method</MemberType>

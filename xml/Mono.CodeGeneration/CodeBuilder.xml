@@ -911,7 +911,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeBuilder op_Addition (Mono.CodeGeneration.CodeBuilder cb, Mono.CodeGeneration.CodeItem e);" />
+      <MemberSignature Language="C#" Value="public static Mono.CodeGeneration.CodeBuilder operator + (Mono.CodeGeneration.CodeBuilder cb, Mono.CodeGeneration.CodeItem e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Mono.CodeGeneration.CodeBuilder op_Addition(class Mono.CodeGeneration.CodeBuilder cb, class Mono.CodeGeneration.CodeItem e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeBuilder.op_Addition(Mono.CodeGeneration.CodeBuilder,Mono.CodeGeneration.CodeItem)" />
       <MemberType>Method</MemberType>

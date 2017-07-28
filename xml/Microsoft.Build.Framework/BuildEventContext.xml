@@ -313,7 +313,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Microsoft.Build.Framework.BuildEventContext left, Microsoft.Build.Framework.BuildEventContext right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Microsoft.Build.Framework.BuildEventContext left, Microsoft.Build.Framework.BuildEventContext right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class Microsoft.Build.Framework.BuildEventContext left, class Microsoft.Build.Framework.BuildEventContext right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.op_Equality(Microsoft.Build.Framework.BuildEventContext,Microsoft.Build.Framework.BuildEventContext)" />
       <MemberType>Method</MemberType>
@@ -337,7 +337,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Microsoft.Build.Framework.BuildEventContext left, Microsoft.Build.Framework.BuildEventContext right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Microsoft.Build.Framework.BuildEventContext left, Microsoft.Build.Framework.BuildEventContext right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class Microsoft.Build.Framework.BuildEventContext left, class Microsoft.Build.Framework.BuildEventContext right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildEventContext.op_Inequality(Microsoft.Build.Framework.BuildEventContext,Microsoft.Build.Framework.BuildEventContext)" />
       <MemberType>Method</MemberType>

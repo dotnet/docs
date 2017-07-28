@@ -3658,7 +3658,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static DateTime op_Addition (DateTime d, TimeSpan t);" />
+      <MemberSignature Language="C#" Value="public static DateTime operator + (DateTime d, TimeSpan t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Addition(valuetype System.DateTime d, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Addition(System.DateTime,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -3707,7 +3707,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (DateTime d1, DateTime d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (DateTime d1, DateTime d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.DateTime d1, valuetype System.DateTime d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Equality(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -3761,7 +3761,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (DateTime t1, DateTime t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (DateTime t1, DateTime t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.DateTime t1, valuetype System.DateTime t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_GreaterThan(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -3806,7 +3806,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (DateTime t1, DateTime t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (DateTime t1, DateTime t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.DateTime t1, valuetype System.DateTime t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_GreaterThanOrEqual(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -3851,7 +3851,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (DateTime d1, DateTime d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (DateTime d1, DateTime d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.DateTime d1, valuetype System.DateTime d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Inequality(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -3896,7 +3896,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (DateTime t1, DateTime t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (DateTime t1, DateTime t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.DateTime t1, valuetype System.DateTime t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_LessThan(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -3941,7 +3941,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (DateTime t1, DateTime t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (DateTime t1, DateTime t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.DateTime t1, valuetype System.DateTime t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_LessThanOrEqual(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -3986,7 +3986,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Subtraction (DateTime d1, DateTime d2);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator - (DateTime d1, DateTime d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Subtraction(valuetype System.DateTime d1, valuetype System.DateTime d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Subtraction(System.DateTime,System.DateTime)" />
       <MemberType>Method</MemberType>
@@ -4042,7 +4042,7 @@ juillet 2009
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static DateTime op_Subtraction (DateTime d, TimeSpan t);" />
+      <MemberSignature Language="C#" Value="public static DateTime operator - (DateTime d, TimeSpan t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Subtraction(valuetype System.DateTime d, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTime.op_Subtraction(System.DateTime,System.TimeSpan)" />
       <MemberType>Method</MemberType>

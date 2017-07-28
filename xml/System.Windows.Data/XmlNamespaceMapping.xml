@@ -104,7 +104,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Data.XmlNamespaceMapping mappingA, System.Windows.Data.XmlNamespaceMapping mappingB);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Data.XmlNamespaceMapping mappingA, System.Windows.Data.XmlNamespaceMapping mappingB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Data.XmlNamespaceMapping mappingA, class System.Windows.Data.XmlNamespaceMapping mappingB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.op_Equality(System.Windows.Data.XmlNamespaceMapping,System.Windows.Data.XmlNamespaceMapping)" />
       <MemberType>Method</MemberType>
@@ -131,7 +131,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Data.XmlNamespaceMapping mappingA, System.Windows.Data.XmlNamespaceMapping mappingB);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Data.XmlNamespaceMapping mappingA, System.Windows.Data.XmlNamespaceMapping mappingB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Data.XmlNamespaceMapping mappingA, class System.Windows.Data.XmlNamespaceMapping mappingB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.XmlNamespaceMapping.op_Inequality(System.Windows.Data.XmlNamespaceMapping,System.Windows.Data.XmlNamespaceMapping)" />
       <MemberType>Method</MemberType>

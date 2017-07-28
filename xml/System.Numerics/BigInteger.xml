@@ -2737,7 +2737,9 @@ value Mod 2 = 0
 ## Remarks  
  Any fractional part of the `value` parameter is truncated before conversion.
 
- The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ For languages that do not support explicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Decimal%29displayProperty=fullName>.
 
 
 ## Examples
@@ -2795,6 +2797,8 @@ value Mod 2 = 0
  Any fractional part of the `value` parameter is truncated before conversion.
 
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Double> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+  For languages that do not support explicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Double%29displayProperty=fullName>.
 
 
 ## Examples
@@ -3168,7 +3172,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to a signed 8-bit value.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a signed 8-bit value.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a signed 8-bit value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int16" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" />.  
   
@@ -3279,7 +3285,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to an unsigned 16-bit integer.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 16-bit integer value.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 16-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int32" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" />.  
   
@@ -3336,7 +3344,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to an unsigned 32-bit integer.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 32-bit integer value.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 32-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int64" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" />.  
   
@@ -3393,7 +3403,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to an unsigned 64-bit integer.</param>
-        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 64-bit integer value.</summary>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 64-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" />.  
   
@@ -3463,6 +3475,8 @@ value Mod 2 = 0
  Any fractional part of the `value` parameter is truncated before conversion.
  
  The overloads of the <xref:System.Numerics.BigInteger.op_Explicit%28System.Decimal%29?displayProperty=fullName> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Single> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ For languages that do not support explicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Single%29displayProperty=fullName>.
 
 
 ## Examples
@@ -4205,7 +4219,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
-        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.#ctor(System.Int32)" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4252,7 +4268,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
-        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4299,7 +4317,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
-        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4346,7 +4366,9 @@ value Mod 2 = 0
       </Parameters>
       <Docs>
         <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
-        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

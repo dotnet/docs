@@ -558,7 +558,9 @@
       </Parameters>
       <Docs>
         <param name="value">The pointer or handle to convert.</param>
-        <summary>Converts the value of the specified <see cref="T:System.UIntPtr" /> to a pointer to an unspecified type.</summary>
+        <summary>Converts the value of the specified <see cref="T:System.UIntPtr" /> to a pointer to an unspecified type.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
         <remarks></remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -599,7 +601,9 @@
       </Parameters>
       <Docs>
         <param name="value">A pointer to an unspecified type.</param>
-        <summary>Converts the specified pointer to an unspecified type to an <see cref="T:System.UIntPtr" />.</summary>
+        <summary>Converts the specified pointer to an unspecified type to an <see cref="T:System.UIntPtr" />.  
+  
+ This API is not CLS-compliant.</summary>
         <returns>A new instance of <see cref="T:System.UIntPtr" /> initialized to <paramref name="value" />.</returns>
         <remarks></remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>

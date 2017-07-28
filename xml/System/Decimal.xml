@@ -1867,10 +1867,26 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to an 8-bit unsigned integer.</summary>
+        <returns>An 8-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Byte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToByte%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToByte%28System.Decimal%29?displayProperty=fullName> method.
+ 
+
+## Examples 
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Byte> values by using the explicit <xref:System.Decimal> to <xref:System.Byte> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctos_byte.cpp#4)] 
+ [!code-csharp[System.Decimal.ConvTo#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctos_byte.cs#4)] 
+ [!code-vb[System.Decimal.ConvTo#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctos_byte.vb#4)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1902,10 +1918,24 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a Unicode character.</summary>
+        <returns>A Unicode character that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Char.MinValue" /> or greater than <see cref="F:System.Char.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Char>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results, or might not support the conversion at all. For example, the Visual Basic and C++ compilers do not support an explicit <xref:System.Decimal> to a <xref:System.Char> conversion.
+ 
+
+## Examples 
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Char> values (Unicode characters) by using the explicit <xref:System.Decimal> to <xref:System.Char> conversion operator.
+
+ [!code-csharp[System.Decimal.ConvTo#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctochar.cs#6)]
+ [!code-vb[System.Decimal.ConvTo#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctochar.vb#6)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1937,10 +1967,26 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a double-precision floating-point number.</summary>
+        <returns>A double-precision floating-point number that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation can result in a loss of precision, because a double-precision floating-point number has fewer significant digits than a <xref:System.Decimal>.
+ 
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Double>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Double> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToDouble%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToDouble%28System.Decimal%29?displayProperty=fullName> method.
+ 
+
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Double> values by using the explicit <xref:System.Decimal> to <xref:System.Double> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctosgl_dbl.cpp#5)] 
+ [!code-csharp[System.Decimal.ConvTo#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctosgl_dbl.cs#5)]
+ [!code-vb[System.Decimal.ConvTo#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctosgl_dbl.vb#5)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1972,10 +2018,26 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 16-bit signed integer.</summary>
+        <returns>A 16-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int16> value by using C#, Visual Basic, and C++. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt16%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt16%28System.Decimal%29?displayProperty=fullName> method.
+ 
+
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Int16> values by using the explicit <xref:System.Decimal> to <xref:System.Int16> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctou_int16.cpp#3)] 
+ [!code-csharp[System.Decimal.ConvTo#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int16.cs#3)] 
+ [!code-vb[System.Decimal.ConvTo#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int16.vb#3)]   
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2007,10 +2069,25 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 32-bit signed integer.</summary>
+        <returns>A 32-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int32> value by using C#, C++, and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt32%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt32%28System.Decimal%29?displayProperty=fullName> method.
+ 
+
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Int32> values by using the explicit <xref:System.Decimal> to <xref:System.Int32> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctou_int32.cpp#2)] 
+ [!code-csharp[System.Decimal.ConvTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int32.cs#2)] 
+ [!code-vb[System.Decimal.ConvTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int32.vb#2)]   
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2042,10 +2119,24 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 64-bit signed integer.</summary>
+        <returns>A 64-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to an <xref:System.Int64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to an <xref:System.Int64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToInt64%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToInt64%28System.Decimal%29?displayProperty=fullName> method.
+ 
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Int64> values by using the explicit <xref:System.Decimal> to <xref:System.Int64> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctou_int64.cpp#1)] 
+ [!code-csharp[System.Decimal.ConvTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int64.cs#1)] 
+ [!code-vb[System.Decimal.ConvTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int64.vb#1)]   
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2082,10 +2173,27 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to an 8-bit signed integer.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>An 8-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.SByte>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Byte> and an <xref:System.SByte> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSByte%28System.Decimal%29?displayProperty=fullName> method or the <xref:System.Convert.ToSByte%28System.Decimal%29?displayProperty=fullName> method.   
+
+
+## Examples 
+ The following example converts <xref:System.Decimal> numbers to <xref:System.SByte> values by using the explicit <xref:System.Decimal> to <xref:System.SByte> conversion operator.
+
+ [!code-cpp[System.Decimal.Operators.Explicit#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cpp/tosbyte.cpp#1)] 
+ [!code-csharp[System.Decimal.Operators.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cs/tosbyte.cs#1)]
+ [!code-vb[System.Decimal.Operators.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators.explicit/vb/tosbyte.vb#1)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2117,10 +2225,26 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a single-precision floating-point number.</summary>
+        <returns>A single-precision floating-point number that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operation can result in a loss of precision, because a single-precision floating-point number has fewer significant digits than a <xref:System.Decimal>.
+
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.Single>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.Single> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToSingle%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToSingle%28System.Decimal%29?displayProperty=fullName> method.
+ 
+
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.Single> values by using the explicit <xref:System.Decimal> to <xref:System.Single> conversion operator.
+
+ [!code-cpp[System.Decimal.Operators.Explicit#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cpp/tosingle1.cpp#2)] 
+ [!code-csharp[System.Decimal.Operators.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cs/tosingle1.cs#2)]
+ [!code-vb[System.Decimal.Operators.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators.explicit/vb/tosingle1.vb#2)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2157,10 +2281,27 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 16-bit unsigned integer.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>A 16-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" /> or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt16>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt16> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt16%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt16%28System.Decimal%29?displayProperty=fullName> method.
+ 
+
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.UInt16> values by using the explicit <xref:System.Decimal> to <xref:System.UInt16> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctou_int16.cpp#3)] 
+ [!code-csharp[System.Decimal.ConvTo#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int16.cs#3)]
+ [!code-vb[System.Decimal.ConvTo#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int16.vb#3)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2197,10 +2338,27 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 32-bit unsigned integer.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>A 32-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" /> or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt32>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt32> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt32%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt32%28System.Decimal%29?displayProperty=fullName> method.
+
+
+## Examples
+ The following example converts <xref:System.Decimal> numbers to <xref:System.UInt32> values by using the explicit <xref:System.Decimal> to <xref:System.UInt32> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctou_int32.cpp#2)] 
+ [!code-csharp[System.Decimal.ConvTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int32.cs#2)]
+ [!code-vb[System.Decimal.ConvTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int32.vb#2)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2237,10 +2395,27 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 64-bit unsigned integer.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>A 64-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
+        <exception cref="T:System.OverflowException"><paramref name="value" /> is negative or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator supports the explicit conversion of a <xref:System.Decimal> to a <xref:System.UInt64>. The syntax for such explicit conversions is language-dependent, and individual language compilers can provide different implementations and return different results. The example illustrates the different return values when you explicitly convert a <xref:System.Decimal> value to a <xref:System.UInt64> value by using C# and Visual Basic. To perform a conversion that is independent of language, you can call the <xref:System.Decimal.ToUInt64%28System.Decimal%29?displayProperty=fullName> or the <xref:System.Convert.ToUInt64%28System.Decimal%29?displayProperty=fullName> method.
+
+
+## Examples 
+ The following example converts <xref:System.Decimal> numbers to <xref:System.UInt64> values by using the explicit <xref:System.Decimal> to <xref:System.UInt64> conversion operator.
+
+ [!code-cpp[System.Decimal.ConvTo#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CPP/ctou_int64.cpp#1)] 
+ [!code-csharp[System.Decimal.ConvTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int64.cs#1)]
+ [!code-vb[System.Decimal.ConvTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int64.vb#1)]
+
+ ]]></format></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2272,10 +2447,28 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The double-precision floating-point number to convert.</param>
+        <summary>Defines an explicit conversion of a double-precision floating-point number to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted double-precision floating point number.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+
+ The following example converts <xref:System.Double> values to <xref:System.Decimal> numbers by using the <xref:System.Double> to <xref:System.Decimal> conversion operator. This conversion requires the op_Explicit operator in Visual Basic.
+
+ [!code-cpp[System.Decimal.ConvFrom.Others#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CPP/cfromdouble.cpp#2)]
+ [!code-csharp[System.Decimal.ConvFrom.Others#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CS/cfromdouble.cs#2)]
+ [!code-vb[System.Decimal.ConvFrom.Others#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/VB/cfromdouble.vb#2)]
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" /> or less than <see cref="F:System.Decimal.MinValue" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is <see cref="F:System.Double.NaN" />, <see cref="F:System.Double.PositiveInfinity" />, or <see cref="F:System.Double.NegativeInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2307,10 +2500,27 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The single-precision floating-point number to convert.</param>
+        <summary>Defines an explicit conversion of a single-precision floating-point number to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted single-precision floating point number.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example converts <xref:System.Single> values to <xref:System.Decimal> numbers by using the <xref:System.Single> to <xref:System.Decimal> conversion operator. This conversion requires the op_Explicit operator in Visual Basic.
+
+ [!code-cpp[System.Decimal.ConvFrom.Others#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CPP/cfromsingle.cpp#3)]
+ [!code-csharp[System.Decimal.ConvFrom.Others#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CS/cfromsingle.cs#3)]
+ [!code-vb[System.Decimal.ConvFrom.Others#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/VB/cfromsingle.vb#3)]
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" /> or less than <see cref="F:System.Decimal.MinValue" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is <see cref="F:System.Single.NaN" />, <see cref="F:System.Single.PositiveInfinity" />, or <see cref="F:System.Single.NegativeInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -2476,10 +2686,25 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 8-bit unsigned integer to convert.</param>
+        <summary>Defines an implicit conversion of an 8-bit unsigned integer to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted 8-bit unsigned integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.Byte> values to <xref:System.Decimal> numbers.
+
+ [!code-cpp[System.Decimal.ConvFrom.UInts#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CPP/cfrombyte.cpp#4)]
+ [!code-csharp[System.Decimal.ConvFrom.UInts#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CS/cfrombyte.cs#4)]
+ [!code-vb[System.Decimal.ConvFrom.UInts#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/VB/cfrombyte.vb#4)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2511,10 +2736,25 @@
         <Parameter Name="value" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The Unicode character to convert.</param>
+        <summary>Defines an implicit conversion of a Unicode character to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted Unicode character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.Char> values (Unicode characters) to <xref:System.Decimal> numbers. This conversion requires the op_Implicit operator in Visual Basic, but not in C# and C++. 
+
+ [!code-cpp[System.Decimal.ConvFrom.Others#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CPP/cfromchar.cpp#1)]
+ [!code-csharp[System.Decimal.ConvFrom.Others#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/CS/cfromchar.cs#1)]
+ [!code-vb[System.Decimal.ConvFrom.Others#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.Others/VB/cfromchar.vb#1)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2546,10 +2786,25 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 16-bit signed integer to convert.</param>
+        <summary>Defines an implicit conversion of a 16-bit signed integer to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted 16-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.Int16> values to <xref:System.Decimal> numbers. This conversion requires the op_Implicit operator in Visual Basic, but not in C# and C++. 
+
+ [!code-cpp[System.Decimal.ConvFrom.SInts#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CPP/cfromint16.cpp#3)]
+ [!code-csharp[System.Decimal.ConvFrom.SInts#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CS/cfromint16.cs#3)]
+ [!code-vb[System.Decimal.ConvFrom.SInts#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/VB/cfromint16.vb#3)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2581,10 +2836,25 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 32-bit signed integer to convert.</param>
+        <summary>Defines an implicit conversion of a 32-bit signed integer to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.Int32> values to <xref:System.Decimal> numbers. 
+
+ [!code-cpp[System.Decimal.ConvFrom.SInts#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CPP/cfromint32.cpp#2)]
+ [!code-csharp[System.Decimal.ConvFrom.SInts#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CS/cfromint32.cs#2)]
+ [!code-vb[System.Decimal.ConvFrom.SInts#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/VB/cfromint32.vb#2)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2616,10 +2886,25 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 64-bit signed integer to convert.</param>
+        <summary>Defines an implicit conversion of a 64-bit signed integer to a <see cref="T:System.Decimal" />.</summary>
+        <returns>The converted 64-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.Int64> values to <xref:System.Decimal> numbers. 
+
+ [!code-cpp[System.Decimal.ConvFrom.SInts#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CPP/cfromint64.cpp#1)]
+ [!code-csharp[System.Decimal.ConvFrom.SInts#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CS/cfromint64.cs#1)]
+ [!code-vb[System.Decimal.ConvFrom.SInts#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/VB/cfromint64.vb#1)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2656,10 +2941,27 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 8-bit signed integer to convert.</param>
+        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>The converted 8-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.SByte> values to <xref:System.Decimal> numbers. 
+
+ [!code-cpp[System.Decimal.ConvFrom.SInts#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CPP/cfromsbyte.cpp#4)]
+ [!code-csharp[System.Decimal.ConvFrom.SInts#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/CS/cfromsbyte.cs#4)]
+ [!code-vb[System.Decimal.ConvFrom.SInts#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.SInts/VB/cfromsbyte.vb#4)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2696,10 +2998,27 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 16-bit unsigned integer to convert.</param>
+        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>The converted 16-bit unsigned integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.UInt16> values to <xref:System.Decimal> numbers. 
+
+ [!code-cpp[System.Decimal.ConvFrom.UInts#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CPP/cfromuint16.cpp#3)]
+ [!code-csharp[System.Decimal.ConvFrom.UInts#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CS/cfromuint16.cs#3)]
+ [!code-vb[System.Decimal.ConvFrom.UInts#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/VB/cfromuint16.vb#3)]
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2736,10 +3055,27 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 32-bit unsigned integer to convert.</param>
+        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>The converted 32-bit unsigned integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.UInt32> values to <xref:System.Decimal> numbers.
+
+ [!code-cpp[System.Decimal.ConvFrom.UInts#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CPP/cfromuint32.cpp#2)] 
+ [!code-csharp[System.Decimal.ConvFrom.UInts#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CS/cfromuint32.cs#2)] 
+ [!code-vb[System.Decimal.ConvFrom.UInts#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/VB/cfromuint32.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -2776,10 +3112,27 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The 64-bit unsigned integer to convert.</param>
+        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Decimal" />.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>The converted 64-bit unsigned integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Decimal.op_Implicit%2A> method define the types from which the compiler can automatically convert a <xref:System.Decimal> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException> exception.  
+
+
+## Examples
+ The following example converts <xref:System.UInt64> values to <xref:System.Decimal> numbers by using the <xref:System.UInt64> to <xref:System.Decimal> conversion operator. 
+
+ [!code-cpp[System.Decimal.ConvFrom.UInts#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CPP/cfromuint64.cpp#1)] 
+ [!code-csharp[System.Decimal.ConvFrom.UInts#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/CS/cfromuint64.cs#1)] 
+ [!code-vb[System.Decimal.ConvFrom.UInts#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvFrom.UInts/VB/cfromuint64.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Increment">

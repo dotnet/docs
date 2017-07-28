@@ -12,7 +12,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants that define types in a metadata type signature.</summary>
+    <summary>Specifies values that represent types of metadata constants.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -31,7 +31,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="System.Boolean"/> type.</summary>
+        <summary>A Boolean type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Byte">
@@ -67,7 +67,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A <see cref="System.Char"/> type.</summary>
+        <summary>A character type.</summary>
       </Docs>
     </Member>
     <Member MemberName="Double">
@@ -175,7 +175,7 @@
         <ReturnType>System.Reflection.Metadata.ConstantTypeCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A null.</summary>
+        <summary>A null reference.</summary>
       </Docs>
     </Member>
     <Member MemberName="SByte">

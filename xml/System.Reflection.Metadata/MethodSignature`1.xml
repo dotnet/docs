@@ -124,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value will be equal to the length of the <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> property, unless this method signature represents the standalone call site of a vararg method, in which case, the extra entries in <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> are the types used for the optional parameters.
+ This value is equal to the length of the <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> property, unless this method signature represents the standalone call site of a `vararg` method, in which case, the extra entries in <xref:System.Reflection.Metadata.MethodSignature`1.ParameterTypes> are the types used for the optional parameters.
   
  ]]></format>
       </remarks>

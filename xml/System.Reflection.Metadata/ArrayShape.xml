@@ -33,8 +33,8 @@
       </Parameters>
       <Docs>
         <param name="rank">The number of dimensions in the array.</param>
-        <param name="sizes">The sizes of each dimension.</param>
-        <param name="lowerBounds">The lower-bounds of each dimension.</param>
+        <param name="sizes">The size of each dimension.</param>
+        <param name="lowerBounds">The lower-bound of each dimension.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.ArrayShape"/> structure.</summary>
         <remarks></remarks>
       </Docs>
@@ -53,8 +53,8 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the lower-bounds of each dimension. Length may be smaller than rank, in which case the trailing dimensions have unspecified lower bounds.</summary>
-        <value>A collection of lower-bounds values.</value>
+        <summary>Gets the lower-bounds of all dimensions. Length may be smaller than rank, in which case the trailing dimensions have unspecified lower bounds.</summary>
+        <value>An array of lower-bounds.</value>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -91,13 +91,13 @@
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the sizes of each dimension.</summary>
-        <value>A collection of size values.</value>
+        <summary>Gets the sizes of all dimensions.</summary>
+        <value>An array of sizes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The number of elements in the returned array may be fewer than the number of dimensions of the array type (its rank). In that case, the trailing dimensions have unspecified sizes.
+ The number of elements in the returned array may be smaller than the number of dimensions of the array type (its rank). In that case, the trailing dimensions have unspecified sizes.
   
  ]]></format>
         </remarks>

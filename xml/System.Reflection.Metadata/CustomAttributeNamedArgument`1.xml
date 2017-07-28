@@ -15,8 +15,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TType">The type of the argument.</typeparam>
-    <summary>Represents a named argument of the specified generic type for a custom metadata attribute.</summary>
+    <typeparam name="TType">The type used to represent types of values decoded from the custom attribute signature.</typeparam>
+    <summary>Represents a named argument decoded from a custom attribute signature.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -38,8 +38,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the argument.</param>
-        <param name="kind">The kind of argument.</param>
-        <param name="type">The type of argument.</param>
+        <param name="kind">The kind of the argument.</param>
+        <param name="type">The type of the argument.</param>
         <param name="value">The value of the argument.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.CustomAttributeNamedArgument`1" /> structure using the specified name, kind, type, and value.</summary>
         <remarks></remarks>

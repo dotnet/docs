@@ -1,5 +1,5 @@
 ---
-title: "A property or method call cannot include a reference to a private object, either as an argument or as a return value | Microsoft Docs"
+title: "A property or method call cannot include a reference to a private object, either as an argument or as a return value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

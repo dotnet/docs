@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Culture and Dispatcher Operations in WPF Apps | Microsoft Docs"
+title: "Mitigation: Culture and Dispatcher Operations in WPF Apps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

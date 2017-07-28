@@ -1,5 +1,5 @@
 ---
-title: Async Overview | Microsoft Docs
+title: Async Overview
 description: Async Overview
 keywords: .NET, .NET Core
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "WPF and Windows Forms Interoperation | Microsoft Docs"
+title: "WPF and Windows Forms Interoperation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

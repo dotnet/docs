@@ -1,5 +1,5 @@
 ---
-title: "Comparisons and Sorts Within Collections | Microsoft Docs"
+title: "Comparisons and Sorts Within Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

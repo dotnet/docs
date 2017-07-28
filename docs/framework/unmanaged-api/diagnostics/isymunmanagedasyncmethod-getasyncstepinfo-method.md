@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedAsyncMethod::GetAsyncStepInfo Method | Microsoft Docs"
+title: "ISymUnmanagedAsyncMethod::GetAsyncStepInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

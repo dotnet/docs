@@ -1,5 +1,5 @@
 ---
-title: dotnet-install scripts (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime. 
 keywords: dotnet-install, dotnet install script, dotnet-install scripts, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 ---
 
-# dotnet-install scripts (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet-install scripts
 
 ## Name
 

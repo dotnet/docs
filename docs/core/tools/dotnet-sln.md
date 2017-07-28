@@ -1,5 +1,5 @@
 ---
-title: dotnet sln command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet sln command
 description: The 'dotnet sln' command provides a convenient option to add, remove, and list projects in a solution file.
 keywords: dotnet sln, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 ---
 
-# dotnet sln (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet sln
 
 ## Name
 

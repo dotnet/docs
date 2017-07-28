@@ -1,5 +1,5 @@
 ---
-title: "Date and Time Functions | Microsoft Docs"
+title: "Date and Time Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

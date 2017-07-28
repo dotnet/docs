@@ -1,5 +1,5 @@
 ---
-title: "2029 - CompileVbExpressionStop | Microsoft Docs"
+title: "2029 - CompileVbExpressionStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Core Communications: Channel Framework | Microsoft Docs"
+title: "Core Communications: Channel Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "WPF and Direct3D9 Interoperation | Microsoft Docs"
+title: "WPF and Direct3D9 Interoperation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

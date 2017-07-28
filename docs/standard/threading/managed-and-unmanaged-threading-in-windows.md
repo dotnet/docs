@@ -1,5 +1,5 @@
 ---
-title: "Managed and Unmanaged Threading in Windows | Microsoft Docs"
+title: "Managed and Unmanaged Threading in Windows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

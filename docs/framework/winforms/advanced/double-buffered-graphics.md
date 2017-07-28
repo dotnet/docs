@@ -1,5 +1,5 @@
 ---
-title: "Double Buffered Graphics | Microsoft Docs"
+title: "Double Buffered Graphics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

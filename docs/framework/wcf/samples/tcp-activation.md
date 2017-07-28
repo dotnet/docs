@@ -1,5 +1,5 @@
 ---
-title: "TCP Activation | Microsoft Docs"
+title: "TCP Activation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

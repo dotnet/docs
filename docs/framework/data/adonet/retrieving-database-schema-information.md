@@ -1,5 +1,5 @@
 ---
-title: "Retrieving Database Schema Information | Microsoft Docs"
+title: "Retrieving Database Schema Information"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

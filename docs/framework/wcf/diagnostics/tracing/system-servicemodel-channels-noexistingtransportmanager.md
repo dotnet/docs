@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.NoExistingTransportManager | Microsoft Docs"
+title: "System.ServiceModel.Channels.NoExistingTransportManager"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

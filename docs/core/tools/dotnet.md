@@ -1,5 +1,5 @@
 ---
-title: dotnet command - .NET Core CLI(.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.  
 keywords: dotnet, CLI, CLI commands, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 ---
 
-# dotnet command (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet command
 
 ## Name
 

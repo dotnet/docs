@@ -1,5 +1,5 @@
 ---
-title: dotnet build command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet build command
 description: The 'dotnet build' command builds a project and all of its dependencies. 
 keywords: dotnet build, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
 
-# dotnet build (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet build
 
 ## Name
 

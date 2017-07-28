@@ -1,5 +1,5 @@
 ---
-title: "3394 - StreamedMessageWrittenByEncoder | Microsoft Docs"
+title: "3394 - StreamedMessageWrittenByEncoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

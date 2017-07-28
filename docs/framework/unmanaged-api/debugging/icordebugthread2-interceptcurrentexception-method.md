@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread2::InterceptCurrentException Method | Microsoft Docs"
+title: "ICorDebugThread2::InterceptCurrentException Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

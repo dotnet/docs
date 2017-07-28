@@ -1,5 +1,5 @@
 ---
-title: "TextFieldParser does not support delimiters that contain endline characters | Microsoft Docs"
+title: "TextFieldParser does not support delimiters that contain endline characters"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # TextFieldParser does not support delimiters that contain endline characters
-A delimiter that contains an endline character has been supplied, but the `TextFieldParse`r does not support delimiters that contain endline characters.  
+A delimiter that contains an endline character has been supplied, but the `TextFieldParser` does not support delimiters that contain endline characters.  
   
 ## To correct this error  
   

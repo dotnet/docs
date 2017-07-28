@@ -1,5 +1,5 @@
 ---
-title: "4031 - DispatchSessionFailed | Microsoft Docs"
+title: "4031 - DispatchSessionFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Class not registered on local machine | Microsoft Docs"
+title: "Class not registered on local machine"
 
 ms.date: "2015-07-20"
 ms.prod: .net

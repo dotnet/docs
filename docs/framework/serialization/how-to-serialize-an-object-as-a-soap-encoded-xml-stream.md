@@ -1,5 +1,5 @@
 ---
-title: "How to: Serialize an Object as a SOAP-Encoded XML Stream | Microsoft Docs"
+title: "How to: Serialize an Object as a SOAP-Encoded XML Stream"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

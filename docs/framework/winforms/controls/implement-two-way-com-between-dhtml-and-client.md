@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Two-Way Communication Between DHTML Code and Client Application Code | Microsoft Docs"
+title: "How to: Implement Two-Way Communication Between DHTML Code and Client Application Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

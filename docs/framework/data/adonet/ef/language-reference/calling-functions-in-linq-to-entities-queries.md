@@ -1,5 +1,5 @@
 ---
-title: "Calling Functions in LINQ to Entities Queries | Microsoft Docs"
+title: "Calling Functions in LINQ to Entities Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

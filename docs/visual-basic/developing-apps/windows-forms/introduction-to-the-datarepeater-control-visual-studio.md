@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the DataRepeater Control (Visual Studio) | Microsoft Docs"
+title: "Introduction to the DataRepeater Control (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

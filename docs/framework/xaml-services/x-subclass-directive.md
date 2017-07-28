@@ -1,5 +1,5 @@
 ---
-title: "x:Subclass Directive | Microsoft Docs"
+title: "x:Subclass Directive"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -58,7 +58,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
   
  Creating derived classes that work correctly for the `x:Subclass` scenario is fairly complex. You might need to examine the intermediate files (the .g files produced in the obj folder of your project by markup compile, with names that incorporate the .xaml file names). These intermediate files can help you determine the origin of certain programming constructs in the joined partial classes in the compiled application.  
   
- Event handlers in the derived class must be `internal override` (`Friend Overrides`in [!INCLUDE[TLA#tla_visualb](../../../includes/tlasharptla-visualb-md.md)]) in order to override the stubs for the handlers as created in the intermediate class during compilation. Otherwise, the derived class implementations hide (shadow) the intermediate class implementation and the intermediate class handlers are not invoked.  
+ Event handlers in the derived class must be `internal override` (`Friend Overrides` in [!INCLUDE[TLA#tla_visualb](../../../includes/tlasharptla-visualb-md.md)]) in order to override the stubs for the handlers as created in the intermediate class during compilation. Otherwise, the derived class implementations hide (shadow) the intermediate class implementation and the intermediate class handlers are not invoked.  
   
  When you define both `x:Class` and `x:Subclass`, you do not need to provide any implementation for the class that is referenced by `x:Class`. You only need to give it a name via the `x:Class` attribute so that the compiler has some guidance for the class that it creates in the intermediate files (the compiler does not select a default name in this case). You can give the `x:Class` class an implementation; however, this is not the typical scenario for using both `x:Class` and `x:Subclass`.  
   

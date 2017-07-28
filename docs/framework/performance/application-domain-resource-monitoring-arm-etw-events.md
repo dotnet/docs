@@ -1,5 +1,5 @@
 ---
-title: "Application Domain Resource Monitoring (ARM) ETW Events | Microsoft Docs"
+title: "Application Domain Resource Monitoring (ARM) ETW Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

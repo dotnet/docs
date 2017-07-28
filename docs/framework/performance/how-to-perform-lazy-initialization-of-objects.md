@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform Lazy Initialization of Objects | Microsoft Docs"
+title: "How to: Perform Lazy Initialization of Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

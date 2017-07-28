@@ -1,5 +1,5 @@
 ---
-title: "Using Variance in Delegates (C#) | Microsoft Docs"
+title: "Using Variance in Delegates (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

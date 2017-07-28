@@ -1,5 +1,5 @@
 ---
-title: "5403 - TokenValidationSuccess | Microsoft Docs"
+title: "5403 - TokenValidationSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

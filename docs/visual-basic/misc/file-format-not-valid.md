@@ -1,5 +1,5 @@
 ---
-title: "File format not valid | Microsoft Docs"
+title: "File format not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

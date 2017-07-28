@@ -1,5 +1,5 @@
 ---
-title: "How to: Control Service Instancing | Microsoft Docs"
+title: "How to: Control Service Instancing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

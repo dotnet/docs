@@ -1,5 +1,5 @@
 ---
-title: "DataSets, DataTables, and DataViews | Microsoft Docs"
+title: "DataSets, DataTables, and DataViews"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

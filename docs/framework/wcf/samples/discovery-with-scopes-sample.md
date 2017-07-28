@@ -1,5 +1,5 @@
 ---
-title: "Discovery with Scopes Sample | Microsoft Docs"
+title: "Discovery with Scopes Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

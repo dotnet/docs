@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyIdentity&gt; Element for &lt;runtime&gt; | Microsoft Docs"
+title: "&lt;assemblyIdentity&gt; Element for &lt;runtime&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Password Text Box with the Windows Forms TextBox Control | Microsoft Docs"
+title: "How to: Create a Password Text Box with the Windows Forms TextBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -34,7 +34,7 @@ A password box is a Windows Forms text box that displays placeholder characters 
   
 2.  (Optional) Set the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property. The property determines how many characters can be typed in the text box. If the maximum length is exceeded, the system emits a beep and the text box does not accept any more characters. Note that you may not wish to do this as the maximum length of a password may be of use to hackers who are trying to guess the password.  
   
-     The following code example shows how to initialize a text box that will accept a string up to 14 characters long and display asterisks in place of the string. The`InitializeMyControl` procedure will not execute automatically; it must be called.  
+     The following code example shows how to initialize a text box that will accept a string up to 14 characters long and display asterisks in place of the string. The `InitializeMyControl` procedure will not execute automatically; it must be called.  
   
     > [!IMPORTANT]
     >  Using the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property on a text box can help ensure that other people will not be able to determine a user's password if they observe the user entering it. This security measure does not cover any sort of storage or transmission of the password that can occur due to your application logic. Because the text entered is not encrypted in any way, you should treat it as you would any other confidential data. Even though it does not appear as such, the password is still being treated as a plain-text string (unless you have implemented some additional security measure).  

@@ -1,5 +1,5 @@
 ---
-title: "Efficient Use of Data Types (Visual Basic) | Microsoft Docs"
+title: "Efficient Use of Data Types (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

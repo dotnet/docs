@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Temporary Certificates for Use During Development | Microsoft Docs"
+title: "How to: Create Temporary Certificates for Use During Development"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

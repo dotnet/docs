@@ -1,5 +1,5 @@
 ---
-title: "How to: Use SpinLock for Low-Level Synchronization | Microsoft Docs"
+title: "How to: Use SpinLock for Low-Level Synchronization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

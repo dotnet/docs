@@ -1,5 +1,5 @@
 ---
-title: Tour of .NET | Microsoft Docs
+title: Tour of .NET
 description: A guided tour through some of the prominent features of the .NET platform.
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp

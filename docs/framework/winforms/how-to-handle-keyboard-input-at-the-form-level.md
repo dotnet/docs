@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle Keyboard Input at the Form Level | Microsoft Docs"
+title: "How to: Handle Keyboard Input at the Form Level"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

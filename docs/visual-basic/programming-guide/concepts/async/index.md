@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous Programming with Async and Await (Visual Basic) | Microsoft Docs"
+title: "Asynchronous Programming with Async and Await (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -94,7 +94,7 @@ Dim urlContents As String = Await client.GetStringAsync()
   
  The following characteristics summarize what makes the previous example an async method.  
   
--   The method signature includes an `Async`modifier.  
+-   The method signature includes an `Async` modifier.  
   
 -   The name of an async method, by convention, ends with an "Async" suffix.  
   
@@ -173,7 +173,7 @@ Dim urlContents As String = Await client.GetStringAsync()
   
  An async method typically contains one or more occurrences of an `Await` operator, but the absence of `Await` expressions doesn’t cause a compiler error. If an async method doesn’t use an `Await` operator to mark a suspension point, the method executes as a synchronous method does, despite the `Async` modifier. The compiler issues a warning for such methods.  
   
- `Async` and `Await`are contextual keywords. For more information and examples, see the following topics:  
+ `Async` and `Await` are contextual keywords. For more information and examples, see the following topics:  
   
 -   [Async](../../../../visual-basic/language-reference/modifiers/async.md)  
   

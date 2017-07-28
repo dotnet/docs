@@ -1,5 +1,5 @@
 ---
-title: dotnet run command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet run command
 description: The 'dotnet run' command provides a convenient option to run your app from its source code.
 keywords: dotnet run, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
 
-# dotnet run (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet run
 
 ## Name 
 

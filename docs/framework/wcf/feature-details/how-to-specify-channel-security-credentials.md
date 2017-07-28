@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify Channel Security Credentials | Microsoft Docs"
+title: "How to: Specify Channel Security Credentials"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

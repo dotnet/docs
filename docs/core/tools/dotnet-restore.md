@@ -1,5 +1,5 @@
 ---
-title: dotnet restore command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
 keywords: dotnet restore, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 ---
 
-# dotnet restore (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet restore
 
 ## Name
 

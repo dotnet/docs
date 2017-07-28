@@ -1,5 +1,5 @@
 ---
-title: dotnet msbuild command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet msbuild command
 description: The 'dotnet msbuild' command provides access to the MSBuild command line.
 keywords: dotnet msbuild, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 ---
 
-# dotnet msbuild (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet msbuild
 
 ## Name
 

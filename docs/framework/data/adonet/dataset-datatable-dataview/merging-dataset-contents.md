@@ -1,5 +1,5 @@
 ---
-title: "Merging DataSet Contents | Microsoft Docs"
+title: "Merging DataSet Contents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

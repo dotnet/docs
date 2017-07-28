@@ -1,5 +1,5 @@
 ---
-title: dotnet nuget push command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet nuget push command
 description: The 'dotnet nuget push' command pushes a package to the server and publishes it. 
 keywords: dotnet nuget push, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 ---
 
-# dotnet nuget push (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet nuget push
 
 ## Name
 

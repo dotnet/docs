@@ -1,5 +1,5 @@
 ---
-title: "Directives (Visual Basic) | Microsoft Docs"
+title: "Directives (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "3832 - RoutingServiceTransmitSucceeded | Microsoft Docs"
+title: "3832 - RoutingServiceTransmitSucceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

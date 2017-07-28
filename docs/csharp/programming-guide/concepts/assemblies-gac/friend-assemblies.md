@@ -1,5 +1,5 @@
 ---
-title: "Friend Assemblies (C#) | Microsoft Docs"
+title: "Friend Assemblies (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

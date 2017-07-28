@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a Query that Finds Elements Based on Context (C#) | Microsoft Docs"
+title: "How to: Write a Query that Finds Elements Based on Context (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

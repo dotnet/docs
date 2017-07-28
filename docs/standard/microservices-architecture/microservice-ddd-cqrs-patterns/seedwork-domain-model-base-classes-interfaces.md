@@ -1,5 +1,5 @@
 ---
-title: Seedwork (reusable base classes and interfaces for your domain model) | Microsoft Docs 
+title: Seedwork (reusable base classes and interfaces for your domain model)
 description: .NET Microservices Architecture for Containerized .NET Applications | Seedwork (reusable base classes and interfaces for your domain model)
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

@@ -1,5 +1,5 @@
 ---
-title: dotnet nuget delete command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet nuget delete command
 description: The 'dotnet nuget delete' command deletes or unlists a package from the server. 
 keywords: dotnet nuget delete, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 ---
 
-# dotnet nuget delete (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet nuget delete
 
 ## Name
 

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.PeerNodeAuthenticationTimeout | Microsoft Docs"
+title: "System.ServiceModel.Channels.PeerNodeAuthenticationTimeout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Set a Property After Animating It with a Storyboard | Microsoft Docs"
+title: "How to: Set a Property After Animating It with a Storyboard"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

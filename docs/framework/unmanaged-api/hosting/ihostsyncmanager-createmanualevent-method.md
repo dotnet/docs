@@ -1,5 +1,5 @@
 ---
-title: "IHostSyncManager::CreateManualEvent Method | Microsoft Docs"
+title: "IHostSyncManager::CreateManualEvent Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Bad checksum value, non hex digits or odd number of hex digits | Microsoft Docs"
+title: "Bad checksum value, non hex digits or odd number of hex digits"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "4034 - RoutingTableLookupStop | Microsoft Docs"
+title: "4034 - RoutingTableLookupStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

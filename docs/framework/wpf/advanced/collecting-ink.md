@@ -1,5 +1,5 @@
 ---
-title: "Collecting Ink | Microsoft Docs"
+title: "Collecting Ink"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

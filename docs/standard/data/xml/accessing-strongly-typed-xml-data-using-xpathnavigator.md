@@ -1,5 +1,5 @@
 ---
-title: "Accessing Strongly Typed XML Data Using XPathNavigator | Microsoft Docs"
+title: "Accessing Strongly Typed XML Data Using XPathNavigator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

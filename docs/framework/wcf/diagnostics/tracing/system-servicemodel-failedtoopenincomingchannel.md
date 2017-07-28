@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.FailedToOpenIncomingChannel | Microsoft Docs"
+title: "System.ServiceModel.FailedToOpenIncomingChannel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

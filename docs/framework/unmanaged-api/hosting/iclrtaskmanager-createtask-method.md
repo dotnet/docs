@@ -1,5 +1,5 @@
 ---
-title: "ICLRTaskManager::CreateTask Method | Microsoft Docs"
+title: "ICLRTaskManager::CreateTask Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

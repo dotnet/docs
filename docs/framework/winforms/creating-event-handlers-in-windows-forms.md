@@ -1,5 +1,5 @@
 ---
-title: "Creating Event Handlers in Windows Forms | Microsoft Docs"
+title: "Creating Event Handlers in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

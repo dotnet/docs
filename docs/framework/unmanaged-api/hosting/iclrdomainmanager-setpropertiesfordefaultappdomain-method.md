@@ -1,5 +1,5 @@
 ---
-title: "ICLRDomainManager::SetPropertiesForDefaultAppDomain Method | Microsoft Docs"
+title: "ICLRDomainManager::SetPropertiesForDefaultAppDomain Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

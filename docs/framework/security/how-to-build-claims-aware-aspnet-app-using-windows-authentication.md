@@ -1,5 +1,5 @@
 ---
-title: "How To: Build Claims-Aware ASP.NET Application Using Windows Authentication | Microsoft Docs"
+title: "How To: Build Claims-Aware ASP.NET Application Using Windows Authentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

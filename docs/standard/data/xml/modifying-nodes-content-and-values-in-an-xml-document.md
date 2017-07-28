@@ -1,5 +1,5 @@
 ---
-title: "Modifying Nodes, Content, and Values in an XML Document | Microsoft Docs"
+title: "Modifying Nodes, Content, and Values in an XML Document"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

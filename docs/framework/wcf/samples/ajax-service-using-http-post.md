@@ -1,5 +1,5 @@
 ---
-title: "AJAX Service Using HTTP POST | Microsoft Docs"
+title: "AJAX Service Using HTTP POST"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

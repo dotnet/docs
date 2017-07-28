@@ -1,5 +1,5 @@
 ---
-title: "Viewing Type Information | Microsoft Docs"
+title: "Viewing Type Information"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

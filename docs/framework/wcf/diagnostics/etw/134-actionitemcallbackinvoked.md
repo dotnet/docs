@@ -1,5 +1,5 @@
 ---
-title: "134 - ActionItemCallbackInvoked | Microsoft Docs"
+title: "134 - ActionItemCallbackInvoked"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt; | Microsoft Docs"
+title: "&lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

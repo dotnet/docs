@@ -1,5 +1,5 @@
 ---
-title: "2022 - ExecuteWorkItemStop | Microsoft Docs"
+title: "2022 - ExecuteWorkItemStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

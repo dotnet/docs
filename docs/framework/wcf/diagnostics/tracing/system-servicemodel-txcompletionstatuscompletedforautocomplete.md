@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.TxCompletionStatusCompletedForAutocomplete | Microsoft Docs"
+title: "System.ServiceModel.TxCompletionStatusCompletedForAutocomplete"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

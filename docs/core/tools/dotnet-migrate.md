@@ -1,5 +1,5 @@
 ---
-title: dotnet migrate command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet migrate command
 description: The 'dotnet migrate' command migrates a project and all of its dependencies. 
 keywords: dotnet migrate, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 ---
 
-# dotnet migrate (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet migrate
 
 ## Name
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Resizable Windows Form for Data Entry | Microsoft Docs"
+title: "How to: Create a Resizable Windows Form for Data Entry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

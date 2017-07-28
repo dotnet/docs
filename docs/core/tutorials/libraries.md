@@ -1,5 +1,5 @@
 ---
-title: Developing Libraries with Cross Platform Tools | Microsoft Docs
+title: Developing Libraries with Cross Platform Tools
 description: Learn how to create libraries for .NET using .NET Core CLI tools.
 keywords: .NET, .NET Core
 author: cartermp

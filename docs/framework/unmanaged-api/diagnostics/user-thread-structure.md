@@ -1,5 +1,5 @@
 ---
-title: "USER_THREAD Structure | Microsoft Docs"
+title: "USER_THREAD Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Type parameters cannot be used as qualifiers | Microsoft Docs"
+title: "Type parameters cannot be used as qualifiers"
 
 ms.date: "2015-07-20"
 ms.prod: .net

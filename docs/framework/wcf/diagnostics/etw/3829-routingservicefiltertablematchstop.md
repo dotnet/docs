@@ -1,5 +1,5 @@
 ---
-title: "3829 - RoutingServiceFilterTableMatchStop | Microsoft Docs"
+title: "3829 - RoutingServiceFilterTableMatchStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

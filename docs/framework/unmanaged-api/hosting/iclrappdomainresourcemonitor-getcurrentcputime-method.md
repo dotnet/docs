@@ -1,5 +1,5 @@
 ---
-title: "ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method | Microsoft Docs"
+title: "ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

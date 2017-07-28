@@ -1,5 +1,5 @@
 ---
-title: "IEnumRAWINPUTDEVIC:Clone | Microsoft Docs"
+title: "IEnumRAWINPUTDEVIC:Clone"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

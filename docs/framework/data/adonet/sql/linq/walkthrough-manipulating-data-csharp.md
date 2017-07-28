@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Manipulating Data (C#) | Microsoft Docs"
+title: "Walkthrough: Manipulating Data (C#)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

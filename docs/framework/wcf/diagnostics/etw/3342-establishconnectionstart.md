@@ -1,5 +1,5 @@
 ---
-title: "3342 - EstablishConnectionStart | Microsoft Docs"
+title: "3342 - EstablishConnectionStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

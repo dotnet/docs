@@ -1,5 +1,5 @@
 ---
-title: "Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface | Microsoft Docs"
+title: "Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface"
 
 ms.date: "2015-07-20"
 ms.prod: .net

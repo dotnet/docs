@@ -1,5 +1,5 @@
 ---
-title: "Global and Local Transformations | Microsoft Docs"
+title: "Global and Local Transformations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

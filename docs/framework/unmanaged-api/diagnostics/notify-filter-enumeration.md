@@ -1,5 +1,5 @@
 ---
-title: "NOTIFY_FILTER Enumeration | Microsoft Docs"
+title: "NOTIFY_FILTER Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

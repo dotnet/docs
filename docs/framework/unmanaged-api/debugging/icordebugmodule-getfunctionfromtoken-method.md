@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule::GetFunctionFromToken Method | Microsoft Docs"
+title: "ICorDebugModule::GetFunctionFromToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

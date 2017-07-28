@@ -1,5 +1,5 @@
 ---
-title: "Claims-Based Identity Model | Microsoft Docs"
+title: "Claims-Based Identity Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Compiler and Language Provider Settings Schema | Microsoft Docs"
+title: "Compiler and Language Provider Settings Schema"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

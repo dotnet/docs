@@ -1,5 +1,5 @@
 ---
-title: Development Process for Docker Based Applications | Microsoft Docs 
+title: Development Process for Docker Based Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Development Process for Docker Based Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

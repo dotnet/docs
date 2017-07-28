@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugNativeFrame Interface1 | Microsoft Docs"
+title: "ICorDebugNativeFrame Interface1"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

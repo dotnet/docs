@@ -1,5 +1,5 @@
 ---
-title: "Serialization Limitations of XamlWriter.Save | Microsoft Docs"
+title: "Serialization Limitations of XamlWriter.Save"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

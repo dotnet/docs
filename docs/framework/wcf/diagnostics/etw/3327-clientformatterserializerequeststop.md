@@ -1,5 +1,5 @@
 ---
-title: "3327 - ClientFormatterSerializeRequestStop | Microsoft Docs"
+title: "3327 - ClientFormatterSerializeRequestStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Object doesn&#39;t support this action (Visual Basic) | Microsoft Docs"
+title: "Object doesn&#39;t support this action (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

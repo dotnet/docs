@@ -1,5 +1,5 @@
 ---
-title: "Adding Online and Offline Status | Microsoft Docs"
+title: "Adding Online and Offline Status"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

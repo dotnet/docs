@@ -1,5 +1,5 @@
 ---
-title: "Web Hosting a Queued Application | Microsoft Docs"
+title: "Web Hosting a Queued Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

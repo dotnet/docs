@@ -1,5 +1,5 @@
 ---
-title: Microservices addressability and the service registry | Microsoft Docs 
+title: Microservices addressability and the service registry
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices addressability and the service registry
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

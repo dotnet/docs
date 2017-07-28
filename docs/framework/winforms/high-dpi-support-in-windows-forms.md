@@ -1,5 +1,5 @@
 ---
-title: "High DPI support in Windows Forms | Microsoft Docs"
+title: "High DPI support in Windows Forms"
 ms.custom: ""
 ms.date: "05/16/2017"
 ms.prod: ".net-framework"

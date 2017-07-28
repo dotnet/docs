@@ -1,5 +1,5 @@
 ---
-title: "Could not complete operation since target directory is under source directory | Microsoft Docs"
+title: "Could not complete operation since target directory is under source directory"
 
 ms.date: "2015-07-20"
 ms.prod: .net

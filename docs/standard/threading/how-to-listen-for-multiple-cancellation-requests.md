@@ -1,5 +1,5 @@
 ---
-title: "How to: Listen for Multiple Cancellation Requests | Microsoft Docs"
+title: "How to: Listen for Multiple Cancellation Requests"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

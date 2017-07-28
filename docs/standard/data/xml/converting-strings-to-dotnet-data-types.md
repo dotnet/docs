@@ -1,5 +1,5 @@
 ---
-title: "Converting Strings to .NET Framework Data Types | Microsoft Docs"
+title: "Converting Strings to .NET Framework Data Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

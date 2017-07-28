@@ -1,5 +1,5 @@
 ---
-title: "System.Math Methods | Microsoft Docs"
+title: "System.Math Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

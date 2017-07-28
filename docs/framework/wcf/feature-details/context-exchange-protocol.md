@@ -1,5 +1,5 @@
 ---
-title: "Context Exchange Protocol | Microsoft Docs"
+title: "Context Exchange Protocol"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

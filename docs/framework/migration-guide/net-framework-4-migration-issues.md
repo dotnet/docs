@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework 4 migration issues | Microsoft Docs"
+title: ".NET Framework 4 migration issues"
 ms.date: "05/02/2017"
 ms.prod: ".net-framework"
 ms.technology: 

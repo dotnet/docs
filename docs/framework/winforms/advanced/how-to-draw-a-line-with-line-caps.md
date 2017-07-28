@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Line with Line Caps | Microsoft Docs"
+title: "How to: Draw a Line with Line Caps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

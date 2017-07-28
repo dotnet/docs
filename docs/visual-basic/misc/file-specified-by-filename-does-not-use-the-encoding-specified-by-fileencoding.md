@@ -1,5 +1,5 @@
 ---
-title: "File specified by FileName does not use the encoding specified by FileEncoding | Microsoft Docs"
+title: "File specified by FileName does not use the encoding specified by FileEncoding"
 
 ms.date: "2015-07-20"
 ms.prod: .net

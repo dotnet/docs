@@ -1,5 +1,5 @@
 ---
-title: "Procedure Parameters and Arguments (Visual Basic) | Microsoft Docs"
+title: "Procedure Parameters and Arguments (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform Streaming Transformations of Text to XML (C#) | Microsoft Docs"
+title: "How to: Perform Streaming Transformations of Text to XML (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

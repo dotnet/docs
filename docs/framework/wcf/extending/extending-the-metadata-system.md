@@ -1,5 +1,5 @@
 ---
-title: "Extending the Metadata System | Microsoft Docs"
+title: "Extending the Metadata System"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

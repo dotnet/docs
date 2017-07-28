@@ -1,5 +1,5 @@
 ---
-title: "reentrancy MDA | Microsoft Docs"
+title: "reentrancy MDA"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

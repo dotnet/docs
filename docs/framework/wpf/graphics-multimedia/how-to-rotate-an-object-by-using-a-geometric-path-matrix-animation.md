@@ -1,5 +1,5 @@
 ---
-title: "How to: Rotate an Object by Using a Geometric Path (Matrix Animation) | Microsoft Docs"
+title: "How to: Rotate an Object by Using a Geometric Path (Matrix Animation)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

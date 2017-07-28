@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a Windows Forms ComboBox or ListBox Control to Data | Microsoft Docs"
+title: "How to: Bind a Windows Forms ComboBox or ListBox Control to Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -32,9 +32,9 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
   
 ### To bind a ComboBox or ListBox control  
   
-1.  Set the`DataSource` property to a data source object. Possible data sources include a <xref:System.Windows.Forms.BindingSource> bound to data, a data table, a data view, a dataset, a data view manager, an array, or any class that implements the <xref:System.Collections.IList> interface. For more information, see [Data Sources Supported by Windows Forms](../../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md).  
+1.  Set the `DataSource` property to a data source object. Possible data sources include a <xref:System.Windows.Forms.BindingSource> bound to data, a data table, a data view, a dataset, a data view manager, an array, or any class that implements the <xref:System.Collections.IList> interface. For more information, see [Data Sources Supported by Windows Forms](../../../../docs/framework/winforms/data-sources-supported-by-windows-forms.md).  
   
-2.  If you are binding to a table, set the`DisplayMember` property to the name of a column in the data source.  
+2.  If you are binding to a table, set the `DisplayMember` property to the name of a column in the data source.  
   
      \- or -  
   

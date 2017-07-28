@@ -1,5 +1,5 @@
 ---
-title: csproj reference | Microsoft Docs
+title: csproj reference
 description: Learn about the differences between existing and .NET Core csproj files
 keywords: reference, csproj, .NET Core
 author: blackdwarf
@@ -97,7 +97,7 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
@@ -135,7 +135,7 @@ a replacement for the `tools` node in *project.json*.
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 ### RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project. 
@@ -145,14 +145,12 @@ RIDs enable publishing a self-contained deployments.
 <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
 ```
 
-
 ### RuntimeIdentifier
 The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
 
 ```xml
 <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
 ```
-
 
 ### PackageTargetFallback 
 The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet. 

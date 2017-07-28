@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Application Essentials | Microsoft Docs"
+title: ".NET Framework Application Essentials"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

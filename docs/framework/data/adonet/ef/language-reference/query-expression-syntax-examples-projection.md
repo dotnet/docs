@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax Examples: Projection | Microsoft Docs"
+title: "Query Expression Syntax Examples: Projection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

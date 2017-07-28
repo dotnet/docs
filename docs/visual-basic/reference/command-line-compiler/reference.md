@@ -1,5 +1,5 @@
 ---
-title: "/reference (Visual Basic) | Microsoft Docs"
+title: "/reference (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -73,7 +73,7 @@ Causes the compiler to make type information in the specified assemblies availab
  The short form of `/reference` is `/r`.  
   
 ## Example  
- The following code compiles source file I`nput.vb` and reference assemblies from M`etad1.dll` and M`etad2.dll` to produce O`ut.exe`.  
+ The following code compiles source file `Input.vb` and reference assemblies from `Metad1.dll` and `Metad2.dll` to produce `Out.exe`.  
   
 ```  
 vbc /reference:metad1.dll,metad2.dll /out:out.exe input.vb  

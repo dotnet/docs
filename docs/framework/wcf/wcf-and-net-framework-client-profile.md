@@ -1,5 +1,5 @@
 ---
-title: "WCF and .NET Framework Client Profile | Microsoft Docs"
+title: "WCF and .NET Framework Client Profile"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

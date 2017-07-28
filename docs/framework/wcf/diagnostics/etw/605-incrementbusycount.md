@@ -1,5 +1,5 @@
 ---
-title: "605 - IncrementBusyCount | Microsoft Docs"
+title: "605 - IncrementBusyCount"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

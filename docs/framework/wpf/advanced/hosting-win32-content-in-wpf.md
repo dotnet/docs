@@ -1,5 +1,5 @@
 ---
-title: "Hosting Win32 Content in WPF | Microsoft Docs"
+title: "Hosting Win32 Content in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

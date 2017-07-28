@@ -1,5 +1,5 @@
 ---
-title: dotnet add reference command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet add reference command
 description: The 'dotnet add reference' command provides a convenient option to add project to project references.
 keywords: dotnet add, dotnet add reference, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ---
 
-# dotnet add reference (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet add reference
 
 ## Name
 

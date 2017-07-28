@@ -1,5 +1,5 @@
 ---
-title: "How to: Respond to Windows Forms Button Clicks | Microsoft Docs"
+title: "How to: Respond to Windows Forms Button Clicks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -35,7 +35,7 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
   
 ### To respond to a button click  
   
--   In the button's`Click` <xref:System.EventHandler> write the code to run. `Button1_Click` must be bound to the control. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../../../../docs/framework/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
+-   In the button's `Click` <xref:System.EventHandler> write the code to run. `Button1_Click` must be bound to the control. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](../../../../docs/framework/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md).  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  

@@ -1,5 +1,5 @@
 ---
-title: "Retrieving Information Stored in Attributes | Microsoft Docs"
+title: "Retrieving Information Stored in Attributes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

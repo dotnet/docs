@@ -1,5 +1,5 @@
 ---
-title: "How to: Scroll Content by Using the IScrollInfo Interface | Microsoft Docs"
+title: "How to: Scroll Content by Using the IScrollInfo Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

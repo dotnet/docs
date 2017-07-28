@@ -1,5 +1,5 @@
 ---
-title: "How to: Host a Workflow Service with Windows Server App Fabric | Microsoft Docs"
+title: "How to: Host a Workflow Service with Windows Server App Fabric"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

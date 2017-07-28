@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Data Providers | Microsoft Docs"
+title: ".NET Framework Data Providers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -135,7 +135,7 @@ using System.Data.Odbc;
   
  [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle classes are located in the <xref:System.Data.OracleClient> namespace and are contained in the `System.Data.OracleClient.dll` assembly. You must reference both the `System.Data.dll` and the `System.Data.OracleClient.dll` when you compile an application that uses the data provider.  
   
- The following code example shows how to include the `System.Data.OracleClient`namespace in your applications.  
+ The following code example shows how to include the `System.Data.OracleClient` namespace in your applications.  
   
 ```vb  
 Imports System.Data  

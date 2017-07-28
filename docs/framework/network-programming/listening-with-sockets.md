@@ -1,5 +1,5 @@
 ---
-title: "Listening with Sockets | Microsoft Docs"
+title: "Listening with Sockets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Threading Objects and Features | Microsoft Docs"
+title: "Threading Objects and Features"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

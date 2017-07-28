@@ -1,5 +1,5 @@
 ---
-title: "How to: Receive Notification When a Clock&#39;s State Changes | Microsoft Docs"
+title: "How to: Receive Notification When a Clock&#39;s State Changes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

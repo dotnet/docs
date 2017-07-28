@@ -1,5 +1,5 @@
 ---
-title: "WCF Troubleshooting Quickstart | Microsoft Docs"
+title: "WCF Troubleshooting Quickstart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

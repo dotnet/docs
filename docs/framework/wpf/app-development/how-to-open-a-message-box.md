@@ -1,5 +1,5 @@
 ---
-title: "How to: Open a Message Box | Microsoft Docs"
+title: "How to: Open a Message Box"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

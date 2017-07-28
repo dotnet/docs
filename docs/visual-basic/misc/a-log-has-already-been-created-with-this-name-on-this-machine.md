@@ -1,5 +1,5 @@
 ---
-title: "A log has already been created with this name on this machine | Microsoft Docs"
+title: "A log has already been created with this name on this machine"
 
 ms.date: "2015-07-20"
 ms.prod: .net

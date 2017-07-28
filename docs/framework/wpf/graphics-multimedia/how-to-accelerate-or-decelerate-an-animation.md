@@ -1,5 +1,5 @@
 ---
-title: "How to: Accelerate or Decelerate an Animation | Microsoft Docs"
+title: "How to: Accelerate or Decelerate an Animation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

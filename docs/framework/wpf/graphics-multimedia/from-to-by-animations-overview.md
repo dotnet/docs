@@ -1,5 +1,5 @@
 ---
-title: "From-To-By Animations Overview | Microsoft Docs"
+title: "From-To-By Animations Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

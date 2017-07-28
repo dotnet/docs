@@ -1,5 +1,5 @@
 ---
-title: "506 - CreateServiceHostStop | Microsoft Docs"
+title: "506 - CreateServiceHostStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Rendering Controls with Visual Styles | Microsoft Docs"
+title: "Rendering Controls with Visual Styles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

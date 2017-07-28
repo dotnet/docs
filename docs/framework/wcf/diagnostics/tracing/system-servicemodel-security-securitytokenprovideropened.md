@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Security.SecurityTokenProviderOpened | Microsoft Docs"
+title: "System.ServiceModel.Security.SecurityTokenProviderOpened"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

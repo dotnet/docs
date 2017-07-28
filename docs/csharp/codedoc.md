@@ -1,6 +1,6 @@
 ---
-title: Documenting your code with XML comments | Microsoft Docs
-description: Documenting your code
+title: Documenting your code with XML comments
+description: Learn how to document your code with XML documentation comments and generate an XML documentation file at compile time.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

@@ -1,5 +1,5 @@
 ---
-title: "Creating the Object Model | Microsoft Docs"
+title: "Creating the Object Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

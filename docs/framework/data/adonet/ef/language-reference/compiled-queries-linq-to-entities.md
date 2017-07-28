@@ -1,5 +1,5 @@
 ---
-title: "Compiled Queries  (LINQ to Entities) | Microsoft Docs"
+title: "Compiled Queries  (LINQ to Entities)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

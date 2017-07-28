@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
+title: "How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,11 +26,11 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control
-Items can be added to a Windows Forms combo box, list box, or checked list box in a variety of ways, because these controls can be bound to a variety of data sources. However, this topic demonstrates the simplest method and requires no data binding. The items displayed are usually strings; however, any object can be used. The text that is displayed in the control is the value returned by the object's`ToString` method.  
+Items can be added to a Windows Forms combo box, list box, or checked list box in a variety of ways, because these controls can be bound to a variety of data sources. However, this topic demonstrates the simplest method and requires no data binding. The items displayed are usually strings; however, any object can be used. The text that is displayed in the control is the value returned by the object's `ToString` method.  
   
 ### To add items  
   
-1.  Add the string or object to the list by using the `Add` method of the `ObjectCollection` class. The collection is referenced using the`Items` property:  
+1.  Add the string or object to the list by using the `Add` method of the `ObjectCollection` class. The collection is referenced using the `Items` property:  
   
     ```vb  
     ComboBox1.Items.Add("Tokyo")  
@@ -46,7 +46,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
      - or -  
   
-2.  Insert the string or object at the desired point in the list with the`Insert` method:  
+2.  Insert the string or object at the desired point in the list with the `Insert` method:  
   
     ```vb  
     CheckedListBox1.Items.Insert(0, "Copenhagen")  
@@ -62,7 +62,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
      - or -  
   
-3.  Assign an entire array to the`Items` collection:  
+3.  Assign an entire array to the `Items` collection:  
   
     ```vb  
     Dim ItemObject(9) As System.Object  
@@ -93,7 +93,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
 ### To remove an item  
   
-1.  Call the`Remove` or`RemoveAt` method to delete items.  
+1.  Call the `Remove` or `RemoveAt` method to delete items.  
   
      `Remove` has one argument that specifies the item to remove.`RemoveAt` removes the item with the specified index number.  
   

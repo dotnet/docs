@@ -1,5 +1,5 @@
 ---
-title: "How to: Attach a Shortcut Menu to a TreeNode Using the Designer | Microsoft Docs"
+title: "How to: Attach a Shortcut Menu to a TreeNode Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

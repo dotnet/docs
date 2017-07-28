@@ -1,5 +1,5 @@
 ---
-title: "File information cannot be queried if the file does not exist | Microsoft Docs"
+title: "File information cannot be queried if the file does not exist"
 
 ms.date: "2015-07-20"
 ms.prod: .net

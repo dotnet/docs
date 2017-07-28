@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetFieldProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetFieldProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

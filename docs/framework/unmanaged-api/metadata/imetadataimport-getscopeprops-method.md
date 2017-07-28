@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetScopeProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetScopeProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

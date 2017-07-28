@@ -1,5 +1,5 @@
 ---
-title: "How to: Override the Logical Tree | Microsoft Docs"
+title: "How to: Override the Logical Tree"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

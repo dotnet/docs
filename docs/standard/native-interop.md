@@ -1,5 +1,5 @@
 ---
-title: Native interoperability | Microsoft Docs
+title: Native interoperability
 description: Native interoperability
 keywords: .NET, .NET Core
 author: blackdwarf

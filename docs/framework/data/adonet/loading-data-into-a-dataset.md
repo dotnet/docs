@@ -1,5 +1,5 @@
 ---
-title: "Loading Data Into a DataSet | Microsoft Docs"
+title: "Loading Data Into a DataSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

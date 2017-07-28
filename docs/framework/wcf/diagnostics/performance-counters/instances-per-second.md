@@ -1,5 +1,5 @@
 ---
-title: "Instances Per Second | Microsoft Docs"
+title: "Instances Per Second"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

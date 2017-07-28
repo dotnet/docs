@@ -1,5 +1,5 @@
 ---
-title: "How to: Load Assemblies into the Reflection-Only Context | Microsoft Docs"
+title: "How to: Load Assemblies into the Reflection-Only Context"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

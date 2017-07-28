@@ -1,5 +1,5 @@
 ---
-title: "LIMIT (Entity SQL) | Microsoft Docs"
+title: "LIMIT (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

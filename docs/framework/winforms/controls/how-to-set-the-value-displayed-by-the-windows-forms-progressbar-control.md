@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Value Displayed by the Windows Forms ProgressBar Control | Microsoft Docs"
+title: "How to: Set the Value Displayed by the Windows Forms ProgressBar Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -47,7 +47,7 @@ manager: "wpickett"
     > [!NOTE]
     >  If you set the <xref:System.Windows.Forms.ProgressBar.Value%2A> property outside the boundaries established by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties, the control throws an <xref:System.ArgumentException> exception.  
   
-     The following code example illustrates how to set the <xref:System.Windows.Forms.ProgressBar> value directly. The code reads records from a data source and updates the progress bar and label every time a data record is read. This example requires that your form has a <xref:System.Windows.Forms.Label> control, a <xref:System.Windows.Forms.ProgressBar> control, and a data table with a row called`CustomerRow` with`FirstName` and`Last Name` fields.  
+     The following code example illustrates how to set the <xref:System.Windows.Forms.ProgressBar> value directly. The code reads records from a data source and updates the progress bar and label every time a data record is read. This example requires that your form has a <xref:System.Windows.Forms.Label> control, a <xref:System.Windows.Forms.ProgressBar> control, and a data table with a row called `CustomerRow` with `FirstName` and `LastName` fields.  
   
     ```vb  
     Public Sub CreateNewRecords()  

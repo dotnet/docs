@@ -1,5 +1,5 @@
 ---
-title: "Projections and Transformations (LINQ to XML) (C#) | Microsoft Docs"
+title: "Projections and Transformations (LINQ to XML) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

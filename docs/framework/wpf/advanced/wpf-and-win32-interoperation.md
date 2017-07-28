@@ -1,5 +1,5 @@
 ---
-title: "WPF and Win32 Interoperation | Microsoft Docs"
+title: "WPF and Win32 Interoperation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

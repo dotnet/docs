@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::OpenScope Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::OpenScope Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

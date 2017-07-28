@@ -1,5 +1,5 @@
 ---
-title: "IAppDomainBinding::OnAppDomain Method | Microsoft Docs"
+title: "IAppDomainBinding::OnAppDomain Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

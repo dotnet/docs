@@ -1,5 +1,5 @@
 ---
-title: "3350 - ListenerOpenStop | Microsoft Docs"
+title: "3350 - ListenerOpenStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

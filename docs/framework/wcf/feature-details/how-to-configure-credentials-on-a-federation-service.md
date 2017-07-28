@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure Credentials on a Federation Service | Microsoft Docs"
+title: "How to: Configure Credentials on a Federation Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

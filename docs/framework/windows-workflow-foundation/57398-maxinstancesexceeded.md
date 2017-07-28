@@ -1,5 +1,5 @@
 ---
-title: "57398 - MaxInstancesExceeded | Microsoft Docs"
+title: "57398 - MaxInstancesExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

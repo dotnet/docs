@@ -1,5 +1,5 @@
 ---
-title: "Building the Windows Communication Foundation Samples | Microsoft Docs"
+title: "Building the Windows Communication Foundation Samples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Enumerate Drawing Content of a Visual | Microsoft Docs"
+title: "How to: Enumerate Drawing Content of a Visual"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

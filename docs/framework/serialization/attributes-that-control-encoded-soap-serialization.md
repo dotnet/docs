@@ -1,5 +1,5 @@
 ---
-title: "Attributes That Control Encoded SOAP Serialization | Microsoft Docs"
+title: "Attributes That Control Encoded SOAP Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

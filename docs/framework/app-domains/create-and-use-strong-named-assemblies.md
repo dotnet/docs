@@ -1,5 +1,5 @@
 ---
-title: "Creating and Using Strong-Named Assemblies | Microsoft Docs"
+title: "Creating and Using Strong-Named Assemblies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

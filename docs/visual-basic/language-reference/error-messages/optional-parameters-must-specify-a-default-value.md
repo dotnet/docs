@@ -1,5 +1,5 @@
 ---
-title: "Optional parameters must specify a default value | Microsoft Docs"
+title: "Optional parameters must specify a default value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

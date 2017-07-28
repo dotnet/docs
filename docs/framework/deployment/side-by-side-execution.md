@@ -1,5 +1,5 @@
 ---
-title: "Side-by-Side Execution in the .NET Framework | Microsoft Docs"
+title: "Side-by-Side Execution in the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

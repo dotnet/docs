@@ -1,5 +1,5 @@
 ---
-title: "Using TPL with Other Asynchronous Patterns | Microsoft Docs"
+title: "Using TPL with Other Asynchronous Patterns"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

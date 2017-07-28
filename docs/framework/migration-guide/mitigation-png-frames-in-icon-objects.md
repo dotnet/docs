@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: PNG Frames in Icon Objects | Microsoft Docs"
+title: "Mitigation: PNG Frames in Icon Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

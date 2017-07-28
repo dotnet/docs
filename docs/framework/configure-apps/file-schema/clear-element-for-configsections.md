@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; element for &lt;configSections&gt; | Microsoft Docs"
+title: "&lt;clear&gt; element for &lt;configSections&gt;"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "Operation class | Microsoft Docs"
+title: "Operation class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

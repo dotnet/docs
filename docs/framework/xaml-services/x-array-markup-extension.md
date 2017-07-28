@@ -1,5 +1,5 @@
 ---
-title: "x:Array Markup Extension | Microsoft Docs"
+title: "x:Array Markup Extension"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -48,7 +48,7 @@ Provides general support for arrays of objects in XAML through a markup extensio
   
  In the .NET Framework XAML Services implementation, the handling for this markup extension is defined by the <xref:System.Windows.Markup.ArrayExtension> class. <xref:System.Windows.Markup.ArrayExtension> is not sealed, and could be used as the basis for a markup extension implementation for a custom array type.  
   
- `x:Array` is more intended for general language extensibility in XAML. But `x:Array` can also be useful for specifying XAML values of certain properties that take XAML-supported collections as their structured property content. For example, you could specify the contents of an <xref:System.Collections.IEnumerable> property with an `x:Array`usage.  
+ `x:Array` is more intended for general language extensibility in XAML. But `x:Array` can also be useful for specifying XAML values of certain properties that take XAML-supported collections as their structured property content. For example, you could specify the contents of an <xref:System.Collections.IEnumerable> property with an `x:Array` usage.  
   
  `x:Array` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. `x:Array` is partially an exception to that rule because instead of providing alternative attribute value handling, `x:Array` provides alternative handling of its inner text content. This behavior enables types that might not be supported by an existing content model to be grouped into an array and referenced later in code-behind by accessing the named array; you can call <xref:System.Array> methods to get individual array items.  
   

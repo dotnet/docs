@@ -1,5 +1,5 @@
 ---
-title: dotnet clean command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet clean command
 description: The 'dotnet clean' command cleans the current directory.
 keywords: dotnet clean, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ---
 
-# dotnet clean (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet clean
 
 ## Name
 

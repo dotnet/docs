@@ -1,5 +1,5 @@
 ---
-title: "Importing a Type Library as an Assembly | Microsoft Docs"
+title: "Importing a Type Library as an Assembly"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

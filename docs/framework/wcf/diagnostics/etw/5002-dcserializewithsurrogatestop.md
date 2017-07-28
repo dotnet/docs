@@ -1,5 +1,5 @@
 ---
-title: "5002 - DCSerializeWithSurrogateStop | Microsoft Docs"
+title: "5002 - DCSerializeWithSurrogateStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

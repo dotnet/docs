@@ -1,5 +1,5 @@
 ---
-title: "How to: Trigger an Animation When a Property Value Changes | Microsoft Docs"
+title: "How to: Trigger an Animation When a Property Value Changes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

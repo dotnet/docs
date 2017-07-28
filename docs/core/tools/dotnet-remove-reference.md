@@ -1,5 +1,5 @@
 ---
-title: dotnet remove reference command (.NET Core SDK 2.0 Preview 2) | Microsoft Docs
+title: dotnet remove reference command
 description: The 'dotnet remove reference' command provides a convenient option to remove project to project references.
 keywords: dotnet remove reference, CLI, CLI command, .NET Core
 author: guardrex
@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 ---
 
-# dotnet remove reference (.NET Core SDK 2.0 Preview 2)
-
-[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
+# dotnet remove reference
 
 ## Name
 

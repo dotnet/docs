@@ -1,5 +1,5 @@
 ---
-title: "Converting Data Types (C#) | Microsoft Docs"
+title: "Converting Data Types (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

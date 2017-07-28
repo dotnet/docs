@@ -1,5 +1,5 @@
 ---
-title: "Exporting Custom Metadata for a WCF Extension | Microsoft Docs"
+title: "Exporting Custom Metadata for a WCF Extension"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

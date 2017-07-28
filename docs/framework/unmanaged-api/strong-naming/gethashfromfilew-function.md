@@ -1,5 +1,5 @@
 ---
-title: "GetHashFromFileW Function | Microsoft Docs"
+title: "GetHashFromFileW Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

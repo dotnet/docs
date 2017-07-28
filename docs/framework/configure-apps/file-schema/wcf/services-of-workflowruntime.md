@@ -1,5 +1,5 @@
 ---
-title: "&lt;services&gt; of &lt;workflowRuntime&gt; | Microsoft Docs"
+title: "&lt;services&gt; of &lt;workflowRuntime&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

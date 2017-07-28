@@ -1,5 +1,5 @@
 ---
-title: "Retrieving the Text of the Paragraphs (Visual Basic) | Microsoft Docs"
+title: "Retrieving the Text of the Paragraphs (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

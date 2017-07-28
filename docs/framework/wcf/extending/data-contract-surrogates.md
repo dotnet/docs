@@ -1,5 +1,5 @@
 ---
-title: "Data Contract Surrogates | Microsoft Docs"
+title: "Data Contract Surrogates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Extending ServiceHost and the Service Model Layer | Microsoft Docs"
+title: "Extending ServiceHost and the Service Model Layer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

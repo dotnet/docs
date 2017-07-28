@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStaticFieldSymbol::GetAddress Method | Microsoft Docs"
+title: "ICorDebugStaticFieldSymbol::GetAddress Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

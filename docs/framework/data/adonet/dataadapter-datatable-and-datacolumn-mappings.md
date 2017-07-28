@@ -1,5 +1,5 @@
 ---
-title: "DataAdapter DataTable and DataColumn Mappings | Microsoft Docs"
+title: "DataAdapter DataTable and DataColumn Mappings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

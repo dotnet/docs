@@ -1,5 +1,5 @@
 ---
-title: "Custom Stream Upgrades | Microsoft Docs"
+title: "Custom Stream Upgrades"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

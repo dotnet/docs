@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugType::GetFirstTypeParameter Method | Microsoft Docs"
+title: "ICorDebugType::GetFirstTypeParameter Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

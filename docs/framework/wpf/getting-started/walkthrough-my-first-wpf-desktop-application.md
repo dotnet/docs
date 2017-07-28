@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: My first WPF desktop application | Microsoft Docs"
+title: "Walkthrough: My first WPF desktop application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

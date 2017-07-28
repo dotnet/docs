@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedConstant::GetValue Method | Microsoft Docs"
+title: "ISymUnmanagedConstant::GetValue Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

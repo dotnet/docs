@@ -1,5 +1,5 @@
 ---
-title: "Preserving White Space While Serializing2 | Microsoft Docs"
+title: "Preserving White Space While Serializing2"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

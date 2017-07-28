@@ -1,5 +1,5 @@
 ---
-title: "How to: Size a Windows Forms Label Control to Fit Its Contents | Microsoft Docs"
+title: "How to: Size a Windows Forms Label Control to Fit Its Contents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

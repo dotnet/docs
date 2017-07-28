@@ -1,5 +1,5 @@
 ---
-title: "How to: Register an Attached Property | Microsoft Docs"
+title: "How to: Register an Attached Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

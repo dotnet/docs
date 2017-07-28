@@ -1,5 +1,5 @@
 ---
-title: "Aggregate Functions (SqlClient for Entity Framework) | Microsoft Docs"
+title: "Aggregate Functions (SqlClient for Entity Framework)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

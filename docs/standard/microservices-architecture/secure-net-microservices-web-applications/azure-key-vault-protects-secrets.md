@@ -1,5 +1,5 @@
 ---
-title: Using Azure Key Vault to protect secrets at production time | Microsoft Docs 
+title: Using Azure Key Vault to protect secrets at production time
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Key Vault to protect secrets at production time
 keywords: Docker, Microservices, ASP.NET, Container
 author: mjrousos

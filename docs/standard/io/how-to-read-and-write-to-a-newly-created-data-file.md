@@ -1,5 +1,5 @@
 ---
-title: "How to: Read and Write to a Newly Created Data File | Microsoft Docs"
+title: "How to: Read and Write to a Newly Created Data File"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Nested function does not have a signature that is compatible with delegate &#39;&lt;delegatename&gt;&#39; | Microsoft Docs"
+title: "Nested function does not have a signature that is compatible with delegate &#39;&lt;delegatename&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

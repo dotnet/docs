@@ -1,5 +1,5 @@
 ---
-title: "Add Content to a Text Box Using UI Automation | Microsoft Docs"
+title: "Add Content to a Text Box Using UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

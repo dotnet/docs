@@ -1,5 +1,5 @@
 ---
-title: "Serializing in Json with Message Level Programming | Microsoft Docs"
+title: "Serializing in Json with Message Level Programming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

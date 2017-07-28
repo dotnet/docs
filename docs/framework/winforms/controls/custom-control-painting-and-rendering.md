@@ -1,5 +1,5 @@
 ---
-title: "Custom Control Painting and Rendering | Microsoft Docs"
+title: "Custom Control Painting and Rendering"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

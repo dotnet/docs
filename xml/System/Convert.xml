@@ -11034,6 +11034,7 @@
   
  [!code-csharp[System.Convert.ToString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.ToString/cs/ToString_Bool1.cs#1)]
  [!code-vb[System.Convert.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.ToString/vb/ToString_Bool1.vb#1)]  
+ [!code-fsharp[System.Convert.ToString#1](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.Convert.ToString/fs/ToString_Bool1.fs#1)]
   
  ]]></format>
         </remarks>
@@ -11082,7 +11083,8 @@
  The following example converts each value in a <xref:System.Byte> array to a string.  
   
  [!code-csharp[System.Convert.ToString#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Convert.ToString/cs/ToString.Byte1.cs#3)]
- [!code-vb[System.Convert.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.ToString/vb/ToString.Byte1.vb#3)]  
+ [!code-vb[System.Convert.ToString#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Convert.ToString/vb/ToString.Byte1.vb#3)]
+ [!code-fsharp[System.Convert.ToString#3](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.Convert.ToString/fs/ToString_Byte1.fs#3)]
   
  ]]></format>
         </remarks>
@@ -11943,7 +11945,8 @@
  The following example converts each element in a byte array to its equivalent binary, hexadecimal, decimal, and hexadecimal string representations.  
   
  [!code-csharp[System.Convert.ToString2#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring2.cs#9)]
- [!code-vb[System.Convert.ToString2#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#9)]  
+ [!code-vb[System.Convert.ToString2#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#9)]
+ [!code-fsharp[System.Convert.ToString2#9](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.convert.tostring2/fs/tostring2.fs#9)]  
   
  ]]></format>
         </remarks>
@@ -12257,7 +12260,8 @@
  The following example converts each element in an array of 16-bit signed integers to its equivalent binary, octal, decimal, and hexadecimal string representations.  
   
  [!code-csharp[System.Convert.ToString2#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring2.cs#10)]
- [!code-vb[System.Convert.ToString2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#10)]  
+ [!code-vb[System.Convert.ToString2#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#10)]
+ [!code-fsharp[System.Convert.ToString2#10](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.convert.tostring2/fs/tostring2.fs#10)]  
   
  ]]></format>
         </remarks>
@@ -12366,7 +12370,8 @@
  The following example converts each element in an integer array to its equivalent binary, hexadecimal, decimal, and hexadecimal string representations.  
   
  [!code-csharp[System.Convert.ToString2#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring2.cs#11)]
- [!code-vb[System.Convert.ToString2#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#11)]  
+ [!code-vb[System.Convert.ToString2#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#11)]
+ [!code-fsharp[System.Convert.ToString2#11](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.convert.tostring2/fs/tostring2.fs#11)]  
   
  ]]></format>
         </remarks>
@@ -12476,7 +12481,8 @@
   
  [!code-csharp[System.Convert.ToString2#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.convert.tostring2/cs/tostring2.cs#12)]
  [!code-vb[System.Convert.ToString2#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.convert.tostring2/vb/tostring2.vb#12)]  
-  
+ [!code-fsharp[System.Convert.ToString2#12](~/samples/snippets/fsharp/VS_Snippets_CLR_System/system.convert.tostring2/fs/tostring2.fs#12)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">

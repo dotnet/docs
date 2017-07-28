@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Speed of a Clock Without Changing the Speed of Its Timeline | Microsoft Docs"
+title: "How to: Change the Speed of a Clock Without Changing the Speed of Its Timeline"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

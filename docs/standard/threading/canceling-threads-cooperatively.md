@@ -1,5 +1,5 @@
 ---
-title: "Canceling Threads Cooperatively | Microsoft Docs"
+title: "Canceling Threads Cooperatively"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

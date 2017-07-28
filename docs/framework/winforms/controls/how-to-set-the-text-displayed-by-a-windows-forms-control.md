@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Text Displayed by a Windows Forms Control | Microsoft Docs"
+title: "How to: Set the Text Displayed by a Windows Forms Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

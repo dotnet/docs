@@ -1,5 +1,5 @@
 ---
-title: "How to: Use SelectedValue, SelectedValuePath, and SelectedItem | Microsoft Docs"
+title: "How to: Use SelectedValue, SelectedValuePath, and SelectedItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Preserve the Aspect Ratio of an Image Used as a Background | Microsoft Docs"
+title: "How to: Preserve the Aspect Ratio of an Image Used as a Background"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

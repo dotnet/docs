@@ -1,5 +1,5 @@
 ---
-title: "C# Compiler Errors | Microsoft Docs"
+title: "C# Compiler Errors"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

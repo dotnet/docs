@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread3::GetActiveInternalFrames Method | Microsoft Docs"
+title: "ICorDebugThread3::GetActiveInternalFrames Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

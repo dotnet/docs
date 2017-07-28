@@ -1,5 +1,5 @@
 ---
-title: Perform custom join operations | Microsoft Docs
+title: Perform custom join operations
 description: How to perform custom join operations.
 keywords: .NET, .NET Core, C#
 author: BillWagner

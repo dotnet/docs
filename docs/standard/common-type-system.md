@@ -1,6 +1,6 @@
 ---
 title: Common Type System & Common Language Specification
-description: Common Type System & Common Language Specification
+description: Learn how the Common Type System (CTS) and Common Language Specification (CLS) make it possible for .NET to support multiple languages.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw

@@ -19,7 +19,7 @@ The primary goal of this glossary is to clarify meanings of selected terms and a
 
 Ahead-of-time compiler.
 
-Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. AOT tool chains don't trade runtime for compile time and thus can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
+Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at runtime, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
 
 ## ASP.NET 
 
@@ -39,7 +39,7 @@ See [ASP.NET Core](/aspnet/#pivot=core).
 
 Common language runtime.
 
-The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR is a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
+The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
@@ -65,9 +65,9 @@ See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/mast
 
 All of the runtime software, development tools, and community resources that are used to build and run applications for a given technology.
 
-The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Following is an example in a sentence:
+The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Here's an example in a sentence:
 
-- "The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem." ([.NET Standard](net-standard.md))
+- "The motivation behind the [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem." 
 
 ## framework
 
@@ -84,7 +84,7 @@ In the existing documentation, "framework" sometimes refers to an [implementatio
 
 Garbage collector.
 
-The garbage collector is an implementation of automatic memory management. 
+The garbage collector is an implementation of automatic memory management.  The GC frees memory occupied by objects that are no longer in use. 
 
 See [Garbage Collection](garbage-collection.md).
 
@@ -119,7 +119,7 @@ Examples of .NET implementations:
 
  A collection of APIs that can be called by apps or other libraries.
 
-A .NET library includes both interfaces and implementations of the interfaces. Because a library includes API implementations, not only specifications (interfaces), it's misleading to call .NET Standard a "library." We plan to eliminate that usage from the documentation, except in reference to the name of the .NET Standard metapackage (`NETStandard.Library`).
+A .NET library is a collection of types. A library includes interfaces, classes, structures, enumerations, and delegates.
 
 ## metapackage
 
@@ -163,7 +163,7 @@ See [.NET Core SDK Overview](../core/sdk.md).
 
 ## .NET Framework
 
-The original implementation of .NET, which runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF.
+An implementation of .NET that runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF.
 
 See [.NET Framework Guide](../framework/index.md).
 
@@ -171,7 +171,7 @@ See [.NET Framework Guide](../framework/index.md).
 
 A compiler tool chain that produces native code ahead-of-time (AOT), as opposed to just-in-time (JIT).
 
-Compilation happens on the developer's machine similar to the way a C++ compiler and linker works. It removes unused code, spends more time optimizing it, and produces a single, merged module that represents the entire app.
+Compilation happens on the developer's machine similar to the way a C++ compiler and linker works. It removes unused code and spends more time optimizing it. It extracts code from libraries and merges them into the executable. The result is a single module that represents the entire app.
 
 UWP was the first application framework supported by .NET Native. Now, we support building native console apps for Windows, macOS, and Linux.
 
@@ -180,6 +180,8 @@ See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/mast
 ## .NET Standard
 
 A formal specification of .NET APIs that are available in each .NET implementation.
+
+The .NET Standard specification is sometimes called a library in the documentation. Because a library includes API implementations, not only specifications (interfaces), it's misleading to call .NET Standard a "library." We plan to eliminate that usage from the documentation, except in reference to the name of the .NET Standard metapackage (`NETStandard.Library`).
 
 See [.NET Standard](net-standard.md).
 
@@ -199,7 +201,7 @@ The package is a *.zip* file wih  a *.nupkg* extension that may contain assets (
 
 An operating system and the hardware it runs on, such as Windows, macOS, Linux, iOS, and Android.
 
-Following are examples of usage in sentences:
+Here are examples of usage in sentences:
 
 - ".NET Core is a cross-platform implementation of .NET." 
 - "PCL profiles represent Microsoft platforms, while the .NET Standard is agnostic to platform."
@@ -217,7 +219,7 @@ The OS is part of the runtime environment but is not part of the .NET runtime. H
 - .NET Native (for UWP)
 - Mono runtime
 
-The .NET documentation frequently uses "runtime" to mean an implementation of .NET. For example, in the following sentences "runtime" should be replaced with "implementation":
+The .NET documentation sometimes uses "runtime" to mean an implementation of .NET. For example, in the following sentences "runtime" should be replaced with "implementation":
 
 - "The various .NET runtimes implement specific versions of .NET Standard."
 - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
@@ -235,7 +237,7 @@ A set of programming technologies that are used together to build and run applic
 
 The collection of APIs that a .NET app or library relies on.
 
-An app or library can target a version of .NET Standard (for example, .NET Standard 2.0), which is specification for a standardized set of APIs across all .NET implementations. An app or library can also target a specific .NET implementation, in which case it gets access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
+An app or library can target a version of .NET Standard (for example, .NET Standard 2.0), which is specification for a standardized set of APIs across all .NET implementations. An app or library can also target a version of a specific .NET implementation, in which case it gets access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
 
 For some target frameworks (for example, the .NET Framework) the available APIs are defined by the assemblies that a .NET implementation installs on a system, which may include application framework APIs (for example, ASP.NET, WinForms). For package-based target frameworks (such as .NET Standard and .NET Core), the framework APIs are defined by the packages installed in the app or library. In that case, the target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
 

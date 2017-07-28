@@ -125,7 +125,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.ServiceModel.Channels.RedirectionType left, System.ServiceModel.Channels.RedirectionType right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.ServiceModel.Channels.RedirectionType left, System.ServiceModel.Channels.RedirectionType right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.ServiceModel.Channels.RedirectionType left, class System.ServiceModel.Channels.RedirectionType right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionType.op_Equality(System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionType)" />
       <MemberType>Method</MemberType>
@@ -150,7 +150,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ServiceModel.Channels.RedirectionType left, System.ServiceModel.Channels.RedirectionType right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.ServiceModel.Channels.RedirectionType left, System.ServiceModel.Channels.RedirectionType right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.ServiceModel.Channels.RedirectionType left, class System.ServiceModel.Channels.RedirectionType right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionType.op_Inequality(System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionType)" />
       <MemberType>Method</MemberType>

@@ -336,7 +336,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Addition (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D operator + (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Addition(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Addition(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberType>Method</MemberType>
@@ -375,7 +375,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Equality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberType>Method</MemberType>
@@ -417,7 +417,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point4D op_Explicit (System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Point4D (System.Windows.Media.Media3D.Point3D point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point4D op_Explicit(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Explicit(System.Windows.Media.Media3D.Point3D)~System.Windows.Media.Media3D.Point4D" />
       <MemberType>Method</MemberType>
@@ -439,7 +439,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Explicit (System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Vector3D (System.Windows.Media.Media3D.Point3D point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Explicit(valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Explicit(System.Windows.Media.Media3D.Point3D)~System.Windows.Media.Media3D.Vector3D" />
       <MemberType>Method</MemberType>
@@ -461,7 +461,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Inequality(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberType>Method</MemberType>
@@ -503,7 +503,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Multiply (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Matrix3D matrix);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D operator * (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Matrix3D matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Multiply(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Multiply(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Matrix3D)" />
       <MemberType>Method</MemberType>
@@ -537,7 +537,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Subtraction (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D operator - (System.Windows.Media.Media3D.Point3D point1, System.Windows.Media.Media3D.Point3D point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Subtraction(valuetype System.Windows.Media.Media3D.Point3D point1, valuetype System.Windows.Media.Media3D.Point3D point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Subtraction(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D)" />
       <MemberType>Method</MemberType>
@@ -571,7 +571,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Subtraction (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D operator - (System.Windows.Media.Media3D.Point3D point, System.Windows.Media.Media3D.Vector3D vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Subtraction(valuetype System.Windows.Media.Media3D.Point3D point, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Point3D.op_Subtraction(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
       <MemberType>Method</MemberType>

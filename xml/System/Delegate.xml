@@ -1900,7 +1900,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Delegate d1, Delegate d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Delegate d1, Delegate d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Delegate d1, class System.Delegate d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.op_Equality(System.Delegate,System.Delegate)" />
       <MemberType>Method</MemberType>
@@ -1961,7 +1961,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Delegate d1, Delegate d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Delegate d1, Delegate d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Delegate d1, class System.Delegate d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Delegate.op_Inequality(System.Delegate,System.Delegate)" />
       <MemberType>Method</MemberType>

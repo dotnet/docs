@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintPort op_Implicit (System.Printing.IndexedProperties.PrintPortProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintPort (System.Printing.IndexedProperties.PrintPortProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintPort op_Implicit(class System.Printing.IndexedProperties.PrintPortProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPortProperty.op_Implicit(System.Printing.IndexedProperties.PrintPortProperty)~System.Printing.PrintPort" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintPort op_Implicit (System.Printing.IndexedProperties.PrintPortProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintPort (System.Printing.IndexedProperties.PrintPortProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintPort op_Implicit(class System.Printing.IndexedProperties.PrintPortProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintPortProperty.op_Implicit(System.Printing.IndexedProperties.PrintPortProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintPort" />
       <MemberType>Method</MemberType>

@@ -954,7 +954,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Collections.Immutable.ImmutableArray&lt;T&gt; left, System.Collections.Immutable.ImmutableArray&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Collections.Immutable.ImmutableArray&lt;T&gt; left, System.Collections.Immutable.ImmutableArray&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt; left, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})" />
       <MemberType>Method</MemberType>
@@ -981,7 +981,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; left, Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; left, Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Nullable`1&lt;valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt;&gt; left, valuetype System.Nullable`1&lt;valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt;&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.op_Equality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})" />
       <MemberType>Method</MemberType>
@@ -1008,7 +1008,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Collections.Immutable.ImmutableArray&lt;T&gt; left, System.Collections.Immutable.ImmutableArray&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Collections.Immutable.ImmutableArray&lt;T&gt; left, System.Collections.Immutable.ImmutableArray&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt; left, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})" />
       <MemberType>Method</MemberType>
@@ -1035,7 +1035,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; left, Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; left, Nullable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Nullable`1&lt;valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt;&gt; left, valuetype System.Nullable`1&lt;valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt;&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Nullable{System.Collections.Immutable.ImmutableArray{`0}},System.Nullable{System.Collections.Immutable.ImmutableArray{`0}})" />
       <MemberType>Method</MemberType>

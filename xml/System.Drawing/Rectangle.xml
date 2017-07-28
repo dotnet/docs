@@ -963,7 +963,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.Rectangle left, System.Drawing.Rectangle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.Rectangle left, System.Drawing.Rectangle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.Rectangle left, valuetype System.Drawing.Rectangle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Equality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberType>Method</MemberType>
@@ -996,7 +996,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.Rectangle left, System.Drawing.Rectangle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.Rectangle left, System.Drawing.Rectangle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.Rectangle left, valuetype System.Drawing.Rectangle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.op_Inequality(System.Drawing.Rectangle,System.Drawing.Rectangle)" />
       <MemberType>Method</MemberType>

@@ -1056,7 +1056,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Addition (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber operator + (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Addition(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Addition(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1082,7 +1082,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Division (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber operator / (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Division(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Division(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1108,7 +1108,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Equality(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1134,7 +1134,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (System.Data.OracleClient.OracleNumber x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -1156,7 +1156,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static double op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator double (System.Data.OracleClient.OracleNumber x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Double" />
       <MemberType>Method</MemberType>
@@ -1178,7 +1178,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (System.Data.OracleClient.OracleNumber x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -1200,7 +1200,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (System.Data.OracleClient.OracleNumber x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -1222,7 +1222,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (decimal x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleNumber (decimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(valuetype System.Decimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Decimal)~System.Data.OracleClient.OracleNumber" />
       <MemberType>Method</MemberType>
@@ -1244,7 +1244,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (double x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleNumber (double x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(float64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Double)~System.Data.OracleClient.OracleNumber" />
       <MemberType>Method</MemberType>
@@ -1266,7 +1266,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (int x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleNumber (int x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(int32 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Int32)~System.Data.OracleClient.OracleNumber" />
       <MemberType>Method</MemberType>
@@ -1288,7 +1288,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (long x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleNumber (long x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(int64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Int64)~System.Data.OracleClient.OracleNumber" />
       <MemberType>Method</MemberType>
@@ -1310,7 +1310,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (string x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleNumber (string x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.String)~System.Data.OracleClient.OracleNumber" />
       <MemberType>Method</MemberType>
@@ -1332,7 +1332,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_GreaterThan(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1358,7 +1358,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_GreaterThanOrEqual(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1384,7 +1384,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Inequality(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1410,7 +1410,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_LessThan(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1436,7 +1436,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_LessThanOrEqual(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1462,7 +1462,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Modulus (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber operator % (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Modulus(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Modulus(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1488,7 +1488,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Multiply (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber operator * (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Multiply(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Multiply(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1514,7 +1514,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Subtraction (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber operator - (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Subtraction(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Subtraction(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>
@@ -1540,7 +1540,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_UnaryNegation (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber operator - (System.Data.OracleClient.OracleNumber x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_UnaryNegation(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_UnaryNegation(System.Data.OracleClient.OracleNumber)" />
       <MemberType>Method</MemberType>

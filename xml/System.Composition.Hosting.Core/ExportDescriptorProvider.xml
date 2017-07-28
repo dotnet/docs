@@ -13,7 +13,8 @@
   <Interfaces />
   <Docs>
     <summary>Provides the description of an export for a part known to the composition engine.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -86,7 +87,8 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of dependencies.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoExportDescriptors">
@@ -104,7 +106,8 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of export descriptors.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoMetadata">
@@ -122,7 +125,8 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates a lack of metadata.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

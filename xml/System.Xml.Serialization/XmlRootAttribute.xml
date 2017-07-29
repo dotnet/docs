@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlRootAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlRootAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/standard/serialization/attributes-that-control-xml-serialization.md).  
   
  You can apply the <xref:System.Xml.Serialization.XmlRootAttribute> to a class, structure, enumeration, or interface. You can also apply the attribute to the return value of an XML Web service method.  
   

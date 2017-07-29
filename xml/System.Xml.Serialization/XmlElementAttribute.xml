@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlElementAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlElementAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/standard/serialization/attributes-that-control-xml-serialization.md).  
   
  An XML document usually contains XML elements, each of which consists of three parts: an opening tag with possible attributes, a closing tag, and the data between the tags. XML tags can be nested--that is, the data between tags can also be XML elements. This capacity of one element to enclose another allows the document to contain hierarchies of data. An XML element can also include attributes.  
   

@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To improve the performance of XML serialization, you can generate assemblies before serialization using the [XML Serializer Generator Tool (Sgen.exe)](~/docs/framework/serialization/xml-serializer-generator-tool-sgen-exe.md). When such an assembly is loaded, the <xref:System.Xml.Serialization.XmlSerializer> uses the properties of the <xref:System.Xml.Serialization.XmlSerializerImplementation> interface to query the contained serializer or serializers.  
+ To improve the performance of XML serialization, you can generate assemblies before serialization using the [XML Serializer Generator Tool (Sgen.exe)](~/docs/standard/serialization/xml-serializer-generator-tool-sgen-exe.md). When such an assembly is loaded, the <xref:System.Xml.Serialization.XmlSerializer> uses the properties of the <xref:System.Xml.Serialization.XmlSerializerImplementation> interface to query the contained serializer or serializers.  
   
  ]]></format>
     </remarks>

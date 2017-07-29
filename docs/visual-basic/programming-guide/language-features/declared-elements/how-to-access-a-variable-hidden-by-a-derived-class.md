@@ -1,5 +1,5 @@
 ---
-title: "How to: Access a Variable Hidden by a Derived Class (Visual Basic) | Microsoft Docs"
+title: "How to: Access a Variable Hidden by a Derived Class (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

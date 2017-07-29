@@ -1,5 +1,5 @@
 ---
-title: "General Naming Conventions | Microsoft Docs"
+title: "General Naming Conventions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

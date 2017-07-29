@@ -1,5 +1,5 @@
 ---
-title: "C# Coding Conventions (C# Programming Guide) | Microsoft Docs"
+title: "C# Coding Conventions (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

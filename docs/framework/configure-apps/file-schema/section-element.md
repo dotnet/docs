@@ -1,5 +1,5 @@
 ---
-title: "&lt;section&gt; element | Microsoft Docs"
+title: "&lt;section&gt; element"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "Dynamically Enabling Analytic Tracing | Microsoft Docs"
+title: "Dynamically Enabling Analytic Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

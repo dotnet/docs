@@ -1,5 +1,5 @@
 ---
-title: "Markup Extensions for XAML Overview | Microsoft Docs"
+title: "Markup Extensions for XAML Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

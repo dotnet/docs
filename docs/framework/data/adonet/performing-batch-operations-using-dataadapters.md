@@ -1,5 +1,5 @@
 ---
-title: "Performing Batch Operations Using DataAdapters | Microsoft Docs"
+title: "Performing Batch Operations Using DataAdapters"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

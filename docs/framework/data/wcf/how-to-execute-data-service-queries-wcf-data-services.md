@@ -1,5 +1,5 @@
 ---
-title: "How to: Execute Data Service Queries (WCF Data Services) | Microsoft Docs"
+title: "How to: Execute Data Service Queries (WCF Data Services)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

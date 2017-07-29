@@ -1,5 +1,5 @@
 ---
-title: "Reducing System Restarts During .NET Framework 4.5 Installations | Microsoft Docs"
+title: "Reducing System Restarts During .NET Framework 4.5 Installations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: .NET Core | Microsoft Docs
+title: .NET Core
 description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
 keywords: .NET, .NET Core
 author: richlander

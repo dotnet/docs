@@ -1,5 +1,5 @@
 ---
-title: "How to: Unwrap a Nested Task | Microsoft Docs"
+title: "How to: Unwrap a Nested Task"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

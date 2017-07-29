@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Initialization Errors: Managing the User Experience | Microsoft Docs"
+title: ".NET Framework Initialization Errors: Managing the User Experience"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

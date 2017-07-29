@@ -1,5 +1,5 @@
 ---
-title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value | Microsoft Docs"
+title: "Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

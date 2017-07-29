@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.MsmqCannotReadQueues | Microsoft Docs"
+title: "System.ServiceModel.Channels.MsmqCannotReadQueues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

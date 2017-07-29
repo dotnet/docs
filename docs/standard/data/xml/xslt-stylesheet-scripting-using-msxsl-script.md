@@ -1,5 +1,5 @@
 ---
-title: "XSLT Stylesheet Scripting Using &lt;msxsl:script&gt; | Microsoft Docs"
+title: "XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

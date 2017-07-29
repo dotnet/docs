@@ -1,5 +1,5 @@
 ---
-title: "UI Automation Text Pattern | Microsoft Docs"
+title: "UI Automation Text Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

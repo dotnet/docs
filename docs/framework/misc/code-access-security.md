@@ -1,5 +1,5 @@
 ---
-title: "Code Access Security | Microsoft Docs"
+title: "Code Access Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

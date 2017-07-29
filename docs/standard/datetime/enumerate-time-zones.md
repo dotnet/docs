@@ -1,5 +1,5 @@
 ---
-title: "How to: Enumerate time zones present on a computer | Microsoft Docs"
+title: "How to: Enumerate time zones present on a computer"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

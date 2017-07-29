@@ -1,5 +1,5 @@
 ---
-title: "Introducing Pluggable Protocols | Microsoft Docs"
+title: "Introducing Pluggable Protocols"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

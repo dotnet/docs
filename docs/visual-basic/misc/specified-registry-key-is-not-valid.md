@@ -1,5 +1,5 @@
 ---
-title: "Specified registry key is not valid because it contains two or more consecutive backslashes | Microsoft Docs"
+title: "Specified registry key is not valid because it contains two or more consecutive backslashes"
 
 ms.date: "2015-07-20"
 ms.prod: .net

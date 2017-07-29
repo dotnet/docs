@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate Text Files from XML (Visual Basic) | Microsoft Docs"
+title: "How to: Generate Text Files from XML (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

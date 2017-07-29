@@ -1,5 +1,5 @@
 ---
-title: "How to: Load an Image as a Thumbnail | Microsoft Docs"
+title: "How to: Load an Image as a Thumbnail"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

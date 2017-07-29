@@ -1,5 +1,5 @@
 ---
-title: "Reading XML Data using XPathDocument and XmlDocument | Microsoft Docs"
+title: "Reading XML Data using XPathDocument and XmlDocument"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

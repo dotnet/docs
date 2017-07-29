@@ -1,5 +1,5 @@
 ---
-title: "How to: Anchor and Dock Child Controls in a TableLayoutPanel Control | Microsoft Docs"
+title: "How to: Anchor and Dock Child Controls in a TableLayoutPanel Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XML entity references are not supported | Microsoft Docs"
+title: "XML entity references are not supported"
 
 ms.date: "2015-07-20"
 ms.prod: .net

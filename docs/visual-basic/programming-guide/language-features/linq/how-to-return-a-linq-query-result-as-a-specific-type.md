@@ -1,5 +1,5 @@
 ---
-title: "How to: Return a LINQ Query Result as a Specific Type (Visual Basic) | Microsoft Docs"
+title: "How to: Return a LINQ Query Result as a Specific Type (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

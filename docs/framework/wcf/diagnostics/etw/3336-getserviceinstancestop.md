@@ -1,5 +1,5 @@
 ---
-title: "3336 - GetServiceInstanceStop | Microsoft Docs"
+title: "3336 - GetServiceInstanceStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Local Method Calls | Microsoft Docs"
+title: "Local Method Calls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

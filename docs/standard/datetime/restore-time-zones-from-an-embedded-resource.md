@@ -1,5 +1,5 @@
 ---
-title: "How to: Restore time zones from an embedded resource | Microsoft Docs"
+title: "How to: Restore time zones from an embedded resource"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

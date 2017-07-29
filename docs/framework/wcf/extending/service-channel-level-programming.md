@@ -1,5 +1,5 @@
 ---
-title: "Service Channel-Level Programming | Microsoft Docs"
+title: "Service Channel-Level Programming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

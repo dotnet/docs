@@ -1,5 +1,5 @@
 ---
-title: "BindingSource Component Architecture | Microsoft Docs"
+title: "BindingSource Component Architecture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

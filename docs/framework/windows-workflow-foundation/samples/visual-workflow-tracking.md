@@ -1,5 +1,5 @@
 ---
-title: "Visual Workflow Tracking | Microsoft Docs"
+title: "Visual Workflow Tracking"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

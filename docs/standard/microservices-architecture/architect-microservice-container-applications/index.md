@@ -1,5 +1,5 @@
 ---
-title: Architecting Container and Microservice Based Applications | Microsoft Docs 
+title: Architecting Container and Microservice Based Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Architecting Container and Microservice Based Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

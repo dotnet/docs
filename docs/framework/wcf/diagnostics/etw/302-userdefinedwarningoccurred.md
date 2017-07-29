@@ -1,5 +1,5 @@
 ---
-title: "302 - UserDefinedWarningOccurred | Microsoft Docs"
+title: "302 - UserDefinedWarningOccurred"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

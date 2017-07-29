@@ -1,5 +1,5 @@
 ---
-title: "Implementing the Task-based Asynchronous Pattern | Microsoft Docs"
+title: "Implementing the Task-based Asynchronous Pattern"
 ms.date: "06/14/2017"
 ms.prod: ".net"
 ms.technology: 

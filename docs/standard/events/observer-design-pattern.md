@@ -1,5 +1,5 @@
 ---
-title: "Observer Design Pattern | Microsoft Docs"
+title: "Observer Design Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

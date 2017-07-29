@@ -1,5 +1,5 @@
 ---
-title: "ServiceModel Transaction Attributes | Microsoft Docs"
+title: "ServiceModel Transaction Attributes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

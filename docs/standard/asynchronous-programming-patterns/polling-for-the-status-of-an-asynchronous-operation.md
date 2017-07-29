@@ -1,5 +1,5 @@
 ---
-title: "Polling for the Status of an Asynchronous Operation | Microsoft Docs"
+title: "Polling for the Status of an Asynchronous Operation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

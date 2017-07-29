@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugRegisterSet::GetRegistersAvailable Method | Microsoft Docs"
+title: "ICorDebugRegisterSet::GetRegistersAvailable Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

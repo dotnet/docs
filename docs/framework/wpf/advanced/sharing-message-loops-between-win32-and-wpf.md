@@ -1,5 +1,5 @@
 ---
-title: "Sharing Message Loops Between Win32 and WPF | Microsoft Docs"
+title: "Sharing Message Loops Between Win32 and WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

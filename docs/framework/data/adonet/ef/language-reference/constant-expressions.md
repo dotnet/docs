@@ -1,5 +1,5 @@
 ---
-title: "Constant Expressions | Microsoft Docs"
+title: "Constant Expressions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

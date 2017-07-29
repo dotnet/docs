@@ -1,5 +1,5 @@
 ---
-title: "Default Keyboard and Mouse Behavior in the DataGrid Control | Microsoft Docs"
+title: "Default Keyboard and Mouse Behavior in the DataGrid Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

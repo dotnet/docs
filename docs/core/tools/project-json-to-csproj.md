@@ -1,5 +1,5 @@
 ---
-title: project.json and csproj comparison - .NET Core | Microsoft Docs
+title: project.json and csproj comparison - .NET Core
 description: See a mapping between project.json and csproj elements.
 keywords: project.json, csproj, .NET Core, MSBuild
 author: natemcmaster

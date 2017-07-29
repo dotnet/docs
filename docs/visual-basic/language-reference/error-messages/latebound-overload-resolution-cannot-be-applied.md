@@ -1,5 +1,5 @@
 ---
-title: "Latebound overload resolution cannot be applied to &#39;&lt;procedurename&gt;&#39; because the accessing instance is an interface type | Microsoft Docs"
+title: "Latebound overload resolution cannot be applied to &#39;&lt;procedurename&gt;&#39; because the accessing instance is an interface type"
 
 ms.date: "2015-07-20"
 ms.prod: .net

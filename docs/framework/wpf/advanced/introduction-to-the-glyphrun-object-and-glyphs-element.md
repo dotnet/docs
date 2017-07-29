@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the GlyphRun Object and Glyphs Element | Microsoft Docs"
+title: "Introduction to the GlyphRun Object and Glyphs Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

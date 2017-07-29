@@ -1,5 +1,5 @@
 ---
-title: "Function Procedures (Visual Basic) | Microsoft Docs"
+title: "Function Procedures (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

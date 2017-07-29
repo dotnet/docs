@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Performance: 2D Graphics and Imaging | Microsoft Docs"
+title: "Optimizing Performance: 2D Graphics and Imaging"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

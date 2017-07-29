@@ -1,5 +1,5 @@
 ---
-title: "Introducing XML Serialization | Microsoft Docs"
+title: "Introducing XML Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

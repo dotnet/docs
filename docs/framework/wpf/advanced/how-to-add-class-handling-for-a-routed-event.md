@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Class Handling for a Routed Event | Microsoft Docs"
+title: "How to: Add Class Handling for a Routed Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

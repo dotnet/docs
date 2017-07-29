@@ -1,5 +1,5 @@
 ---
-title: "WCF Visual Studio Templates | Microsoft Docs"
+title: "WCF Visual Studio Templates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

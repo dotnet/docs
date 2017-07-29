@@ -1,5 +1,5 @@
 ---
-title: "How to: Save, Load, and Print RichTextBox Content | Microsoft Docs"
+title: "How to: Save, Load, and Print RichTextBox Content"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

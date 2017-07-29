@@ -1,5 +1,5 @@
 ---
-title: "Marshaling Different Types of Arrays | Microsoft Docs"
+title: "Marshaling Different Types of Arrays"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

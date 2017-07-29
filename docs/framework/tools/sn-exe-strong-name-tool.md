@@ -1,5 +1,5 @@
 ---
-title: "Sn.exe (Strong Name Tool) | Microsoft Docs"
+title: "Sn.exe (Strong Name Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

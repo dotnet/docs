@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInstanceFieldSymbol::GetOffset Method | Microsoft Docs"
+title: "ICorDebugInstanceFieldSymbol::GetOffset Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

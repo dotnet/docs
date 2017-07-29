@@ -1,5 +1,5 @@
 ---
-title: "Building XML Schemas | Microsoft Docs"
+title: "Building XML Schemas"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

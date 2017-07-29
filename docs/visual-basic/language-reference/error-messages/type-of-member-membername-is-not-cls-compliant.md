@@ -1,5 +1,5 @@
 ---
-title: "Type of member &#39;&lt;membername&gt;&#39; is not CLS-compliant | Microsoft Docs"
+title: "Type of member &#39;&lt;membername&gt;&#39; is not CLS-compliant"
 
 ms.date: "2015-07-20"
 ms.prod: .net

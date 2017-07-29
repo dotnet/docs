@@ -1,5 +1,5 @@
 ---
-title: "&lt;timeOuts&gt; | Microsoft Docs"
+title: "&lt;timeOuts&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

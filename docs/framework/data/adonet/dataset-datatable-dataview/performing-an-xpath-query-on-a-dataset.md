@@ -1,5 +1,5 @@
 ---
-title: "Performing an XPath Query on a DataSet | Microsoft Docs"
+title: "Performing an XPath Query on a DataSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

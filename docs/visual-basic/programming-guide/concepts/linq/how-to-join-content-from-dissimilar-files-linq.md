@@ -1,5 +1,5 @@
 ---
-title: "How to: Join Content from Dissimilar Files (LINQ) (Visual Basic) | Microsoft Docs"
+title: "How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

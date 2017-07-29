@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread2::GetConnectionID Method | Microsoft Docs"
+title: "ICorDebugThread2::GetConnectionID Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

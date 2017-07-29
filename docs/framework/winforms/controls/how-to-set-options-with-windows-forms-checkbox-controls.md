@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Options with Windows Forms CheckBox Controls | Microsoft Docs"
+title: "How to: Set Options with Windows Forms CheckBox Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

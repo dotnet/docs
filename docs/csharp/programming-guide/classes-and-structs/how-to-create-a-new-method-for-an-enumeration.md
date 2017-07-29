@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a New Method for an Enumeration (C# Programming Guide) | Microsoft Docs"
+title: "How to: Create a New Method for an Enumeration (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

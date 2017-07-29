@@ -1,5 +1,5 @@
 ---
-title: "Workflow Activity Authoring Using the Activity Class | Microsoft Docs"
+title: "Workflow Activity Authoring Using the Activity Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

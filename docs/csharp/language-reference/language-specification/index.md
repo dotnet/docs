@@ -1,5 +1,5 @@
 ---
-title: "C# 6.0 draft Language Specification | Microsoft Docs"
+title: "C# 6.0 draft Language Specification"
 ms.date: "2017-07-01"
 ms.prod: .net
 ms.technology: 

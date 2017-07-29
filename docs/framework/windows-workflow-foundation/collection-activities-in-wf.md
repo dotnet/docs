@@ -1,5 +1,5 @@
 ---
-title: "Collection Activities in WF | Microsoft Docs"
+title: "Collection Activities in WF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Collection Activities in WF
-Collection activities are used to work with collection objects in a workflow. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] has system-provided activities for adding and removing items from a collection, testing for the existence of an item in a collection, and clearing a collection. `ExistsInCollection` and `RemoveFromCollectio`n have an <xref:System.Activities.OutArgument%601> of type <xref:System.Boolean>, which indicates the result.  
+Collection activities are used to work with collection objects in a workflow. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] has system-provided activities for adding and removing items from a collection, testing for the existence of an item in a collection, and clearing a collection. `ExistsInCollection` and `RemoveFromCollection` have an <xref:System.Activities.OutArgument%601> of type <xref:System.Boolean>, which indicates the result.  
   
 > [!IMPORTANT]
 >  If a collection activity is executed before setting the underlying collection object, an <xref:System.InvalidOperationException> is thrown and the activity faults.  

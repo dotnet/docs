@@ -1,5 +1,5 @@
 ---
-title: "DirectCast Operator (Visual Basic) | Microsoft Docs"
+title: "DirectCast Operator (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

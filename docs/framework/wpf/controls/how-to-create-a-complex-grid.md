@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Complex Grid | Microsoft Docs"
+title: "How to: Create a Complex Grid"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

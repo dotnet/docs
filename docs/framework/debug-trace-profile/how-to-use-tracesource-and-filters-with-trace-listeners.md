@@ -1,5 +1,5 @@
 ---
-title: "How to: Use TraceSource and Filters with Trace Listeners | Microsoft Docs"
+title: "How to: Use TraceSource and Filters with Trace Listeners"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

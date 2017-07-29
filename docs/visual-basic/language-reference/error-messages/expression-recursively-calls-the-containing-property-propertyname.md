@@ -1,5 +1,5 @@
 ---
-title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39; | Microsoft Docs"
+title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

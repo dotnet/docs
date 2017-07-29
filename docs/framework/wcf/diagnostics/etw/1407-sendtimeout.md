@@ -1,5 +1,5 @@
 ---
-title: "1407 - SendTimeout | Microsoft Docs"
+title: "1407 - SendTimeout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

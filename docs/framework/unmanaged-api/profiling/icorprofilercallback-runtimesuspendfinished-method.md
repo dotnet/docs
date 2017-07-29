@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::RuntimeSuspendFinished Method | Microsoft Docs"
+title: "ICorProfilerCallback::RuntimeSuspendFinished Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

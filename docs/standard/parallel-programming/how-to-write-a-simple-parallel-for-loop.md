@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a Simple Parallel.For Loop | Microsoft Docs"
+title: "How to: Write a Simple Parallel.For Loop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Reassign Existing Controls to a Different Parent | Microsoft Docs"
+title: "How to: Reassign Existing Controls to a Different Parent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

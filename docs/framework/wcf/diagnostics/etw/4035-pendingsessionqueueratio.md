@@ -1,5 +1,5 @@
 ---
-title: "4035 - PendingSessionQueueRatio | Microsoft Docs"
+title: "4035 - PendingSessionQueueRatio"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

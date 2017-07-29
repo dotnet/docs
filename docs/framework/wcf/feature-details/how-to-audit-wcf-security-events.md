@@ -1,5 +1,5 @@
 ---
-title: "How to: Audit Windows Communication Foundation Security Events | Microsoft Docs"
+title: "How to: Audit Windows Communication Foundation Security Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

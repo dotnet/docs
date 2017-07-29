@@ -1,6 +1,6 @@
 ---
-title: Values (F#) | Microsoft Docs
-description: Values (F#)
+title: Values (F#)
+description: Learn how values in F# are quantities that have a specific type.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -45,7 +45,7 @@ You can assign an initial value to a mutable variable by using the `let` keyword
 
 |Title|Description|
 |-----|-----------|
-|[let Bindings](../functions/let-bindings.md)|Provides information about using the `let`keyword to bind names to values and functions.|
+|[let Bindings](../functions/let-bindings.md)|Provides information about using the `let` keyword to bind names to values and functions.|
 |[Functions](../functions/index.md)|Provides an overview of functions in F#.|
 
 ## See Also

@@ -1,5 +1,5 @@
 ---
-title: "Manipulating Data in a DataTable | Microsoft Docs"
+title: "Manipulating Data in a DataTable"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

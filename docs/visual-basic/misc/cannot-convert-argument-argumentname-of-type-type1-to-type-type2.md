@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert argument &#39;&lt;argumentname&gt;&#39; of type &#39;&lt;type1&gt;&#39; to type &#39;&lt;type2&gt;&#39; | Microsoft Docs"
+title: "Cannot convert argument &#39;&lt;argumentname&gt;&#39; of type &#39;&lt;type1&gt;&#39; to type &#39;&lt;type2&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

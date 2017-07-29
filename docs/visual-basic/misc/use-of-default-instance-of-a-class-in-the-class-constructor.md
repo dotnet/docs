@@ -1,5 +1,5 @@
 ---
-title: "Use of Default Instance of a class in the class constructor could lead to infinite recursive call | Microsoft Docs"
+title: "Use of Default Instance of a class in the class constructor could lead to infinite recursive call"
 
 ms.date: "2015-07-20"
 ms.prod: .net

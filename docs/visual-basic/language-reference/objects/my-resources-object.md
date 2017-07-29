@@ -1,5 +1,5 @@
 ---
-title: "My.Resources Object | Microsoft Docs"
+title: "My.Resources Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

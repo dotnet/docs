@@ -1,5 +1,5 @@
 ---
-title: Microservices architecture | Microsoft Docs 
+title: Microservices architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices architecture
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

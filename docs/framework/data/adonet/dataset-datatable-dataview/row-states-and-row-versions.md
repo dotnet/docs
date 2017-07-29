@@ -1,5 +1,5 @@
 ---
-title: "Row States and Row Versions | Microsoft Docs"
+title: "Row States and Row Versions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

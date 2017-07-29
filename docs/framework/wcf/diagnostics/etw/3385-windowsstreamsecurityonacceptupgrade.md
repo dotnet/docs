@@ -1,5 +1,5 @@
 ---
-title: "3385 - WindowsStreamSecurityOnAcceptUpgrade | Microsoft Docs"
+title: "3385 - WindowsStreamSecurityOnAcceptUpgrade"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

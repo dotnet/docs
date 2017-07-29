@@ -1,5 +1,5 @@
 ---
-title: "Using the XmlSerializer Class | Microsoft Docs"
+title: "Using the XmlSerializer Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

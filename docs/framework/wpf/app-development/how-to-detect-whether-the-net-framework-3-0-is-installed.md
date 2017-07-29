@@ -1,5 +1,5 @@
 ---
-title: "How to: Detect Whether the .NET Framework 3.0 Is Installed | Microsoft Docs"
+title: "How to: Detect Whether the .NET Framework 3.0 Is Installed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

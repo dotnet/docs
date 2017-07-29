@@ -1,5 +1,5 @@
 ---
-title: "Enabling Transaction Flow | Microsoft Docs"
+title: "Enabling Transaction Flow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

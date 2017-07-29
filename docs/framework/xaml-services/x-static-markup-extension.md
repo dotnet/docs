@@ -1,5 +1,5 @@
 ---
-title: "x:Static Markup Extension | Microsoft Docs"
+title: "x:Static Markup Extension"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

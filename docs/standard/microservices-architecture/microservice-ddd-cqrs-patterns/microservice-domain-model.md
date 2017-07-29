@@ -1,5 +1,5 @@
 ---
-title: Designing a microservice domain model | Microsoft Docs 
+title: Designing a microservice domain model
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing a microservice domain model
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

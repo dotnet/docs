@@ -1,5 +1,5 @@
 ---
-title: "How to: Override Encoded SOAP XML Serialization | Microsoft Docs"
+title: "How to: Override Encoded SOAP XML Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

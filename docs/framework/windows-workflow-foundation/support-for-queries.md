@@ -1,5 +1,5 @@
 ---
-title: "Support for Queries | Microsoft Docs"
+title: "Support for Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

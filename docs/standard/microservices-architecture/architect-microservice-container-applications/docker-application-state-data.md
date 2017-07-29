@@ -1,5 +1,5 @@
 ---
-title: State and data in Docker applications | Microsoft Docs 
+title: State and data in Docker applications
 description: .NET Microservices Architecture for Containerized .NET Applications | State and data in Docker applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

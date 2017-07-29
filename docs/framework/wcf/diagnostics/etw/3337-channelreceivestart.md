@@ -1,5 +1,5 @@
 ---
-title: "3337 - ChannelReceiveStart | Microsoft Docs"
+title: "3337 - ChannelReceiveStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

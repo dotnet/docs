@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw an Image Using ImageDrawing | Microsoft Docs"
+title: "How to: Draw an Image Using ImageDrawing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

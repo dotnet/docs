@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ManualFlowThrottleLimitReached | Microsoft Docs"
+title: "System.ServiceModel.ManualFlowThrottleLimitReached"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

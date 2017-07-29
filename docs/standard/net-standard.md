@@ -1,5 +1,5 @@
 ---
-title: .NET Standard | Microsoft Docs
+title: .NET Standard
 description: Learn what is .NET Standard, its versions and the .NET platforms supported.
 keywords: .NET Standard, PCL, .NET
 author: richlander

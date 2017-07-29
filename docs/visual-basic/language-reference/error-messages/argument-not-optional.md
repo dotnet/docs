@@ -1,5 +1,5 @@
 ---
-title: "Argument not optional (Visual Basic) | Microsoft Docs"
+title: "Argument not optional (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

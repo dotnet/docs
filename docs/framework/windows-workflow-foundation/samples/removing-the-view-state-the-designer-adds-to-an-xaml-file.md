@@ -1,5 +1,5 @@
 ---
-title: "Removing the View State the Designer Adds to an XAML File | Microsoft Docs"
+title: "Removing the View State the Designer Adds to an XAML File"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

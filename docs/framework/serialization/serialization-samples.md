@@ -1,5 +1,5 @@
 ---
-title: "Serialization Samples for the .NET Framework | Microsoft Docs"
+title: "Serialization Samples for the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

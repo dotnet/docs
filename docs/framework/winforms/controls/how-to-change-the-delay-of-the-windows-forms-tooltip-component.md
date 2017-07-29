@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Delay of the Windows Forms ToolTip Component | Microsoft Docs"
+title: "How to: Change the Delay of the Windows Forms ToolTip Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

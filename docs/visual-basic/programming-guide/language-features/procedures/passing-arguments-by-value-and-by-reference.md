@@ -1,5 +1,5 @@
 ---
-title: "Passing Arguments by Value and by Reference (Visual Basic) | Microsoft Docs"
+title: "Passing Arguments by Value and by Reference (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

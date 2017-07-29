@@ -1,5 +1,5 @@
 ---
-title: "Path-File access error | Microsoft Docs"
+title: "Path-File access error"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,7 +42,7 @@ During a file-access or disk-access operation, the operating system could not ma
   
 2.  Make sure that you did not attempt to save a file that would replace an existing read-only file. If this is the case, change the read-only attribute of the target file, or save the file with a different file name.  
   
-3.  Make sure you did not attempt to open a read-only file in sequential`Output`or `Append` mode. If this is the case, open the file in `Input` mode or change the read-only attribute of the file.  
+3.  Make sure you did not attempt to open a read-only file in sequential `Output` or `Append` mode. If this is the case, open the file in `Input` mode or change the read-only attribute of the file.  
   
 4.  Make sure you did not attempt to change a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project within a database or document.  
   

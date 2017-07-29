@@ -1,5 +1,5 @@
 ---
-title: "Contextual Keywords (C# Reference) | Microsoft Docs"
+title: "Contextual Keywords (C# Reference)"
 ms.date: "2017-03-07"
 ms.prod: .net
 ms.technology: 

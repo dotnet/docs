@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedDispose Interface | Microsoft Docs"
+title: "ISymUnmanagedDispose Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

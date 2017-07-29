@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.PerformanceCountersFailed | Microsoft Docs"
+title: "System.ServiceModel.PerformanceCountersFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

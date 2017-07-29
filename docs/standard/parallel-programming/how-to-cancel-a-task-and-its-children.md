@@ -1,5 +1,5 @@
 ---
-title: "How to: Cancel a Task and Its Children | Microsoft Docs"
+title: "How to: Cancel a Task and Its Children"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

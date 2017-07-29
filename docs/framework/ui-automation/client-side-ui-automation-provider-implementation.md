@@ -1,5 +1,5 @@
 ---
-title: "Client-Side UI Automation Provider Implementation | Microsoft Docs"
+title: "Client-Side UI Automation Provider Implementation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

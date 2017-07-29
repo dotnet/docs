@@ -1,5 +1,5 @@
 ---
-title: "Configuring Services | Microsoft Docs"
+title: "Configuring Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

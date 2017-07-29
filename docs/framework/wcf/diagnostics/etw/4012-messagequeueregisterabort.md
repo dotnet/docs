@@ -1,5 +1,5 @@
 ---
-title: "4012 - MessageQueueRegisterAbort | Microsoft Docs"
+title: "4012 - MessageQueueRegisterAbort"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

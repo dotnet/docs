@@ -1,5 +1,5 @@
 ---
-title: "How to: Examine and Instantiate Generic Types with Reflection | Microsoft Docs"
+title: "How to: Examine and Instantiate Generic Types with Reflection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

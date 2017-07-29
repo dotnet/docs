@@ -1,5 +1,5 @@
 ---
-title: "Extension Methods (Visual Basic) | Microsoft Docs"
+title: "Extension Methods (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Metadata and Self-Describing Components | Microsoft Docs"
+title: "Metadata and Self-Describing Components"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

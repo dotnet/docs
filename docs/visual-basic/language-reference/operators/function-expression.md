@@ -1,5 +1,5 @@
 ---
-title: "Function Expression (Visual Basic) | Microsoft Docs"
+title: "Function Expression (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

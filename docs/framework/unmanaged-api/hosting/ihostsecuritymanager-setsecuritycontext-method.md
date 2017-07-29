@@ -1,5 +1,5 @@
 ---
-title: "IHostSecurityManager::SetSecurityContext Method | Microsoft Docs"
+title: "IHostSecurityManager::SetSecurityContext Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

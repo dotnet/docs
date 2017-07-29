@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::ExceptionCatcherLeave Method | Microsoft Docs"
+title: "ICorProfilerCallback::ExceptionCatcherLeave Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

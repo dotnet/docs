@@ -203,7 +203,7 @@
 #### [Strongly Typed Delegates](csharp/delegates-strongly-typed.md)
 #### [Common Patterns for Delegates](csharp/delegates-patterns.md)
 #### [Introduction to Events](csharp/events-overview.md)
-#### [The .NET Event Pattern](csharp/event-pattern.md)
+#### [Standard .NET event patterns](csharp/event-pattern.md)
 #### [The Updated .NET Event Pattern](csharp/modern-events.md)
 #### [Distinguishing Delegates and Events](csharp/distinguish-delegates-events.md)
 ### [Language Integrated Query (LINQ)](csharp/linq/)

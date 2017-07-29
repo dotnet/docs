@@ -1,5 +1,5 @@
 ---
-title: "How to: Run Procedures at Set Intervals with the Windows Forms Timer Component | Microsoft Docs"
+title: "How to: Run Procedures at Set Intervals with the Windows Forms Timer Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -48,7 +48,7 @@ You might sometimes want to create a procedure that runs at specific time interv
 5.  At the appropriate time, set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `false` to stop the procedure from running again. Setting the interval to `0` does not cause the timer to stop.  
   
 ## Example  
- This first code example tracks the time of day in one-second increments. It uses a <xref:System.Windows.Forms.Button>, a <xref:System.Windows.Forms.Label>, and a <xref:System.Windows.Forms.Timer> component on a form. The <xref:System.Windows.Forms.Timer.Interval%2A> property is set to 1000 (equal to one second). In the <xref:System.Windows.Forms.Timer.Tick> event, the label's caption is set to the current time. When the button is clicked, the <xref:System.Windows.Forms.Timer.Enabled%2A> property is set to `false`, stopping the timer from updating the label's caption. The following code example requires that you have a form with a <xref:System.Windows.Forms.Button> control named`Button1`, a <xref:System.Windows.Forms.Timer> control named`Timer1`, and a <xref:System.Windows.Forms.Label> control named`Label1`.  
+ This first code example tracks the time of day in one-second increments. It uses a <xref:System.Windows.Forms.Button>, a <xref:System.Windows.Forms.Label>, and a <xref:System.Windows.Forms.Timer> component on a form. The <xref:System.Windows.Forms.Timer.Interval%2A> property is set to 1000 (equal to one second). In the <xref:System.Windows.Forms.Timer.Tick> event, the label's caption is set to the current time. When the button is clicked, the <xref:System.Windows.Forms.Timer.Enabled%2A> property is set to `false`, stopping the timer from updating the label's caption. The following code example requires that you have a form with a <xref:System.Windows.Forms.Button> control named `Button1`, a <xref:System.Windows.Forms.Timer> control named `Timer1`, and a <xref:System.Windows.Forms.Label> control named `Label1`.  
   
 ```vb  
 Private Sub InitializeTimer()  
@@ -153,7 +153,7 @@ private:
 ```  
   
 ## Example  
- This second code example runs a procedure every 600 milliseconds until a loop has finished. The following code example requires that you have a form with a <xref:System.Windows.Forms.Button> control named`Button1`, a <xref:System.Windows.Forms.Timer> control named`Timer1`, and a <xref:System.Windows.Forms.Label> control named`Label1`.  
+ This second code example runs a procedure every 600 milliseconds until a loop has finished. The following code example requires that you have a form with a <xref:System.Windows.Forms.Button> control named `Button1`, a <xref:System.Windows.Forms.Timer> control named `Timer1`, and a <xref:System.Windows.Forms.Label> control named `Label1`.  
   
 ```vb  
 ' This variable will be the loop counter.  

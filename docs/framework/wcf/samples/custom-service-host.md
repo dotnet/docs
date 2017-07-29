@@ -1,5 +1,5 @@
 ---
-title: "Custom Service Host | Microsoft Docs"
+title: "Custom Service Host"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

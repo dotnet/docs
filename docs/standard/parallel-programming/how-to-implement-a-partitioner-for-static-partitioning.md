@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement a Partitioner for Static Partitioning | Microsoft Docs"
+title: "How to: Implement a Partitioner for Static Partitioning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

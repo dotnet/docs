@@ -1,5 +1,5 @@
 ---
-title: "Entity References are Expanded and Not Preserved | Microsoft Docs"
+title: "Entity References are Expanded and Not Preserved"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

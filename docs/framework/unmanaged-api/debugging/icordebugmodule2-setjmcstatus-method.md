@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule2::SetJMCStatus Method | Microsoft Docs"
+title: "ICorDebugModule2::SetJMCStatus Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

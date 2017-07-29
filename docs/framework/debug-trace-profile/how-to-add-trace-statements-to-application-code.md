@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Trace Statements to Application Code | Microsoft Docs"
+title: "How to: Add Trace Statements to Application Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

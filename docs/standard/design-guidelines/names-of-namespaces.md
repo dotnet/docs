@@ -1,5 +1,5 @@
 ---
-title: "Names of Namespaces | Microsoft Docs"
+title: "Names of Namespaces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

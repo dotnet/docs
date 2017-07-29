@@ -1,5 +1,5 @@
 ---
-title: Install the .NET Framework on Windows 8 | Microsoft Docs
+title: Install the .NET Framework on Windows 8
 description: Learn how to install .NET Framework on Windows 8
 author: rlander
 keywords: .NET Framework, Install

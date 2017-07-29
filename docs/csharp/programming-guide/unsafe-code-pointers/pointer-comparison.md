@@ -1,5 +1,5 @@
 ---
-title: "Pointer Comparison (C# Programming Guide) | Microsoft Docs"
+title: "Pointer Comparison (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

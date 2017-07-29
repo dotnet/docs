@@ -1,5 +1,5 @@
 ---
-title: Implementing retries with exponential backoff | Microsoft Docs 
+title: Implementing retries with exponential backoff
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing retries with exponential backoff
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

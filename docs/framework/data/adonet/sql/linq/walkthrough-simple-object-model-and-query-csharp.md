@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Simple Object Model and Query (C#) | Microsoft Docs"
+title: "Walkthrough: Simple Object Model and Query (C#)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

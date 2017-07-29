@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Command-Line Compiler | Microsoft Docs"
+title: "Visual Basic Command-Line Compiler"
 
 ms.date: "2015-07-20"
 ms.prod: .net

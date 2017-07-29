@@ -1,5 +1,5 @@
 ---
-title: "Late bound resolution; runtime errors could occur | Microsoft Docs"
+title: "Late bound resolution; runtime errors could occur"
 
 ms.date: "2015-07-20"
 ms.prod: .net

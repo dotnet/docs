@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Items in a Windows Forms ListView Control | Microsoft Docs"
+title: "How to: Group Items in a Windows Forms ListView Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

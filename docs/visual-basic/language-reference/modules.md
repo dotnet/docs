@@ -1,5 +1,5 @@
 ---
-title: "Modules (Visual Basic) | Microsoft Docs"
+title: "Modules (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

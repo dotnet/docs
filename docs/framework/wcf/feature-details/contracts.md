@@ -1,5 +1,5 @@
 ---
-title: "Contracts | Microsoft Docs"
+title: "Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

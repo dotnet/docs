@@ -1,5 +1,5 @@
 ---
-title: "Feedback and Community | Microsoft Docs"
+title: "Feedback and Community"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

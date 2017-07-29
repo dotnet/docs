@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::AppDomainShutdownFinished Method | Microsoft Docs"
+title: "ICorProfilerCallback::AppDomainShutdownFinished Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

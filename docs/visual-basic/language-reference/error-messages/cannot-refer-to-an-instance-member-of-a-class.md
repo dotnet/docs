@@ -1,5 +1,5 @@
 ---
-title: "Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class | Microsoft Docs"
+title: "Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class"
 
 ms.date: "2015-07-20"
 ms.prod: .net

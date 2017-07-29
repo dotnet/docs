@@ -1,5 +1,5 @@
 ---
-title: "How to: Reuse a Connection Between an ADO.NET Command and a DataContext | Microsoft Docs"
+title: "How to: Reuse a Connection Between an ADO.NET Command and a DataContext"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

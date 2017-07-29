@@ -1,5 +1,5 @@
 ---
-title: "Specifying Data Transfer in Service Contracts | Microsoft Docs"
+title: "Specifying Data Transfer in Service Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Delegation and Impersonation with WCF | Microsoft Docs"
+title: "Delegation and Impersonation with WCF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

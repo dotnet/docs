@@ -1,5 +1,5 @@
 ---
-title: "How to: Control an Animation using From, To, and By | Microsoft Docs"
+title: "How to: Control an Animation using From, To, and By"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

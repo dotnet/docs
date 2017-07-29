@@ -1,6 +1,6 @@
 ---
-title: Asynchronous Workflows (F#) | Microsoft Docs
-description: Asynchronous Workflows (F#)
+title: Asynchronous Workflows (F#)
+description: Learn about support in the F# programming language for performing computations asynchronously, which execute without blocking execution of other work.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "Configuring the Windows Process Activation Service for Use with Windows Communication Foundation | Microsoft Docs"
+title: "Configuring the Windows Process Activation Service for Use with Windows Communication Foundation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Transport Security with an Anonymous Client | Microsoft Docs"
+title: "Transport Security with an Anonymous Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

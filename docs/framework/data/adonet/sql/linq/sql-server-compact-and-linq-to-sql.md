@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Compact and LINQ to SQL | Microsoft Docs"
+title: "SQL Server Compact and LINQ to SQL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

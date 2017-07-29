@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::SetSymAttribute Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::SetSymAttribute Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

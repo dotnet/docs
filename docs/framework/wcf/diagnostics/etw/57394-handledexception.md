@@ -1,5 +1,5 @@
 ---
-title: "57394 - HandledException | Microsoft Docs"
+title: "57394 - HandledException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

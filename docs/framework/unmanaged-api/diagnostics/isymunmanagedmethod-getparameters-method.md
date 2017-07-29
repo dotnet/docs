@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedMethod::GetParameters Method | Microsoft Docs"
+title: "ISymUnmanagedMethod::GetParameters Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

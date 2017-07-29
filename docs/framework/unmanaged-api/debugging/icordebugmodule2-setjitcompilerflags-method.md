@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule2::SetJITCompilerFlags Method | Microsoft Docs"
+title: "ICorDebugModule2::SetJITCompilerFlags Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

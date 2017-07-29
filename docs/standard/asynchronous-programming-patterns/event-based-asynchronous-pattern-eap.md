@@ -1,5 +1,5 @@
 ---
-title: "Event-based Asynchronous Pattern (EAP) | Microsoft Docs"
+title: "Event-based Asynchronous Pattern (EAP)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

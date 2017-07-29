@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind the Windows Forms DataGrid Control to a Data Source | Microsoft Docs"
+title: "How to: Bind the Windows Forms DataGrid Control to a Data Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -37,7 +37,7 @@ manager: "wpickett"
   
      If the data source is a dataset or a data view based on a dataset table, add code to the form to fill the dataset.  
   
-     The exact code you use depends on where the dataset is getting data. If the dataset is being populated directly from a database, you typically call the`Fill` method of a data adapter, as in the following example, which populates a dataset called`DsCategories1`:  
+     The exact code you use depends on where the dataset is getting data. If the dataset is being populated directly from a database, you typically call the `Fill` method of a data adapter, as in the following example, which populates a dataset called `DsCategories1`:  
   
     ```vb  
     sqlDataAdapter1.Fill(DsCategories1)  
@@ -51,7 +51,7 @@ manager: "wpickett"
     sqlDataAdapter1->Fill(dsCategories1);  
     ```  
   
-     If the dataset is being filled from an XML Web service, you typically create an instance of the service in your code and then call one of its methods to return a dataset. You then merge the dataset from the XML Web service into your local dataset. The following example shows how you can create an instance of an XML Web service called`CategoriesService`, call its`GetCategories` method, and merge the resulting dataset into a local dataset called`DsCategories1`:  
+     If the dataset is being filled from an XML Web service, you typically create an instance of the service in your code and then call one of its methods to return a dataset. You then merge the dataset from the XML Web service into your local dataset. The following example shows how you can create an instance of an XML Web service called `CategoriesService`, call its `GetCategories` method, and merge the resulting dataset into a local dataset called `DsCategories1`:  
   
     ```vb  
     Dim ws As New MyProject.localhost.CategoriesService()  
@@ -77,7 +77,7 @@ manager: "wpickett"
     > [!NOTE]
     >  If you are binding the grid for the first time, you can set the control's <xref:System.Windows.Forms.DataGrid.DataSource%2A> and <xref:System.Windows.Forms.DataGrid.DataMember%2A> properties. However, you cannot reset these properties once they have been set. Therefore, it is recommended that you always use the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method.  
   
-     The following example shows how you can programmatically bind to the Customers table in a dataset called`DsCustomers1`:  
+     The following example shows how you can programmatically bind to the Customers table in a dataset called `DsCustomers1`:  
   
     ```vb  
     DataGrid1.SetDataBinding(DsCustomers1, "Customers")  

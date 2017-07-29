@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedScope::GetNamespaces Method | Microsoft Docs"
+title: "ISymUnmanagedScope::GetNamespaces Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

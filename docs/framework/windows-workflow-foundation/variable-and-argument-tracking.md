@@ -1,5 +1,5 @@
 ---
-title: "Variable and Argument Tracking | Microsoft Docs"
+title: "Variable and Argument Tracking"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

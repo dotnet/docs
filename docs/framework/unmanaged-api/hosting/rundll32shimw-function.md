@@ -1,5 +1,5 @@
 ---
-title: "RunDll32ShimW Function | Microsoft Docs"
+title: "RunDll32ShimW Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

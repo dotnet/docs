@@ -1,5 +1,5 @@
 ---
-title: "DataTable Schema Definition | Microsoft Docs"
+title: "DataTable Schema Definition"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

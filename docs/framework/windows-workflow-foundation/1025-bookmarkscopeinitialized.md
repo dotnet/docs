@@ -1,5 +1,5 @@
 ---
-title: "1025 - BookmarkScopeInitialized | Microsoft Docs"
+title: "1025 - BookmarkScopeInitialized"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

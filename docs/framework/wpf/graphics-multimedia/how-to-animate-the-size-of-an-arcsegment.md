@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate the Size of an ArcSegment | Microsoft Docs"
+title: "How to: Animate the Size of an ArcSegment"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

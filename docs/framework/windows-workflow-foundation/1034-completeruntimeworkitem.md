@@ -1,5 +1,5 @@
 ---
-title: "1034 - CompleteRuntimeWorkItem | Microsoft Docs"
+title: "1034 - CompleteRuntimeWorkItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

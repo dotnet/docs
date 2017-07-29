@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Custom Context Menu with a TextBox | Microsoft Docs"
+title: "How to: Use a Custom Context Menu with a TextBox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

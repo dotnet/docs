@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Named and Optional Arguments in Office Programming (C# Programming Guide) | Microsoft Docs"
+title: "How to: Use Named and Optional Arguments in Office Programming (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

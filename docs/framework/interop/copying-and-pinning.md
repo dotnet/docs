@@ -1,5 +1,5 @@
 ---
-title: "Copying and Pinning | Microsoft Docs"
+title: "Copying and Pinning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

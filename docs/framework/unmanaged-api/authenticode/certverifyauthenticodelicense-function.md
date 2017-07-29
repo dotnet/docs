@@ -1,5 +1,5 @@
 ---
-title: "CertVerifyAuthenticodeLicense Function | Microsoft Docs"
+title: "CertVerifyAuthenticodeLicense Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

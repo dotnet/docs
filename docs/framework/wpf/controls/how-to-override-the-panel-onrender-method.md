@@ -1,5 +1,5 @@
 ---
-title: "How to: Override the Panel OnRender Method | Microsoft Docs"
+title: "How to: Override the Panel OnRender Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

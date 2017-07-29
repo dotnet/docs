@@ -1,5 +1,5 @@
 ---
-title: "Removing Attributes from an Element Node in the DOM | Microsoft Docs"
+title: "Removing Attributes from an Element Node in the DOM"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

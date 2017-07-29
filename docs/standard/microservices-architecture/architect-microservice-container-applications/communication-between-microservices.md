@@ -1,5 +1,5 @@
 ---
-title: Communication between microservices | Microsoft Docs 
+title: Communication between microservices
 description: .NET Microservices Architecture for Containerized .NET Applications | Communication between microservices
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

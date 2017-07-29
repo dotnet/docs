@@ -1,5 +1,5 @@
 ---
-title: "How to: Install and Uninstall Services | Microsoft Docs"
+title: "How to: Install and Uninstall Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

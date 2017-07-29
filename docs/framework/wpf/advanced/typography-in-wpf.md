@@ -1,5 +1,5 @@
 ---
-title: "Typography in WPF | Microsoft Docs"
+title: "Typography in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

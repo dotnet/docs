@@ -1,5 +1,5 @@
 ---
-title: "Enum Design | Microsoft Docs"
+title: "Enum Design"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

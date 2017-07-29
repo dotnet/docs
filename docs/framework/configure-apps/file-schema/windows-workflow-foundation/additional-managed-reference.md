@@ -1,5 +1,5 @@
 ---
-title: "Additional Managed Reference | Microsoft Docs"
+title: "Additional Managed Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

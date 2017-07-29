@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Typical Purchase Order in a Namespace1 | Microsoft Docs"
+title: "Sample XML File: Typical Purchase Order in a Namespace1"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

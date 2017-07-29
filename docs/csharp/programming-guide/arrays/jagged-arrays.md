@@ -1,5 +1,5 @@
 ---
-title: "Jagged Arrays (C# Programming Guide) | Microsoft Docs"
+title: "Jagged Arrays (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

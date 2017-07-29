@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataTables::GetColumn Method | Microsoft Docs"
+title: "IMetaDataTables::GetColumn Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

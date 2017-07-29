@@ -1,5 +1,5 @@
 ---
-title: "ICLRSyncManager::GetRWLockOwnerNext Method | Microsoft Docs"
+title: "ICLRSyncManager::GetRWLockOwnerNext Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

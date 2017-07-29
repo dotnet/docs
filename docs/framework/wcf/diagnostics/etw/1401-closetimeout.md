@@ -1,5 +1,5 @@
 ---
-title: "1401 - CloseTimeout | Microsoft Docs"
+title: "1401 - CloseTimeout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

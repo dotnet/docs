@@ -1,5 +1,5 @@
 ---
-title: "&lt;issuerMetadata&gt; | Microsoft Docs"
+title: "&lt;issuerMetadata&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -54,7 +54,7 @@ manager: "erikre"
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|address|Required `string`attribute.<br /><br /> Specifies the address of the endpoint. The address must be an absolute URI. The default value is an empty string.|  
+|address|Required `string` attribute.<br /><br /> Specifies the address of the endpoint. The address must be an absolute URI. The default value is an empty string.|  
   
 ### Child Elements  
   

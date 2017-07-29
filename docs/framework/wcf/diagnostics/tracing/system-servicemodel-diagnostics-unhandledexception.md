@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Diagnostics.UnhandledException | Microsoft Docs"
+title: "System.ServiceModel.Diagnostics.UnhandledException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

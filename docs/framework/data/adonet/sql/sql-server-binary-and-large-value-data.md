@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Binary and Large-Value Data | Microsoft Docs"
+title: "SQL Server Binary and Large-Value Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

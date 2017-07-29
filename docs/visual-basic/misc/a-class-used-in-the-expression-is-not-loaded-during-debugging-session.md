@@ -1,5 +1,5 @@
 ---
-title: "A class used in the expression is not loaded during debugging session | Microsoft Docs"
+title: "A class used in the expression is not loaded during debugging session"
 
 ms.date: "2015-07-20"
 ms.prod: .net

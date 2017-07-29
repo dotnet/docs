@@ -1,5 +1,5 @@
 ---
-title: "3417 - WebSocketConnectionAcceptStart | Microsoft Docs"
+title: "3417 - WebSocketConnectionAcceptStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

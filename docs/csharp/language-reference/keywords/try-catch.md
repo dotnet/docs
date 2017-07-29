@@ -1,5 +1,5 @@
 ---
-title: "try-catch (C# Reference) | Microsoft Docs"
+title: "try-catch (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

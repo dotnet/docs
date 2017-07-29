@@ -1,5 +1,5 @@
 ---
-title: "&lt;enableWebScript&gt; | Microsoft Docs"
+title: "&lt;enableWebScript&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

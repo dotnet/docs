@@ -1,5 +1,5 @@
 ---
-title: "ICorPublishAppDomain::GetName Method | Microsoft Docs"
+title: "ICorPublishAppDomain::GetName Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

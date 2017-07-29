@@ -1,5 +1,5 @@
 ---
-title: "CoordinatorRecoveryLogEntryCreationFailure | Microsoft Docs"
+title: "CoordinatorRecoveryLogEntryCreationFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

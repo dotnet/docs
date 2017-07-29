@@ -1,5 +1,5 @@
 ---
-title: "How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms | Microsoft Docs"
+title: "How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

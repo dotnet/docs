@@ -1,5 +1,5 @@
 ---
-title: "&lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt; | Microsoft Docs"
+title: "&lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

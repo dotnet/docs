@@ -1,5 +1,5 @@
 ---
-title: "How To: Add Multiple Sets of Settings To Your Application in C# | Microsoft Docs"
+title: "How To: Add Multiple Sets of Settings To Your Application in C#"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Casting and Type Conversions (C# Programming Guide) | Microsoft Docs"
+title: "Casting and Type Conversions (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

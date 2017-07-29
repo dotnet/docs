@@ -1,5 +1,5 @@
 ---
-title: "Explicit Numeric Conversions Table (C# Reference) | Microsoft Docs"
+title: "Explicit Numeric Conversions Table (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

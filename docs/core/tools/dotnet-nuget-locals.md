@@ -1,5 +1,5 @@
 ---
-title: dotnet-nuget-locals command - .NET Core CLI | Microsoft Docs
+title: dotnet-nuget-locals command - .NET Core CLI
 description: The dotnet-nuget-locals command clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. 
 keywords: dotnet-nuget-locals, CLI, CLI command, .NET Core
 author: karann-msft

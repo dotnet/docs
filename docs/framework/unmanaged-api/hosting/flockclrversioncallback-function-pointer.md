@@ -1,5 +1,5 @@
 ---
-title: "FLockClrVersionCallback Function Pointer | Microsoft Docs"
+title: "FLockClrVersionCallback Function Pointer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

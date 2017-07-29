@@ -1,5 +1,5 @@
 ---
-title: "How to: Interactively Control a Clock | Microsoft Docs"
+title: "How to: Interactively Control a Clock"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

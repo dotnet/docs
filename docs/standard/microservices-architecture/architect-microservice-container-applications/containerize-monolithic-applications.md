@@ -1,5 +1,5 @@
 ---
-title: Containerizing monolithic applications | Microsoft Docs 
+title: Containerizing monolithic applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Containerizing monolithic applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

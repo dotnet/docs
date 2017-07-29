@@ -1,5 +1,5 @@
 ---
-title: C# Interactive - C# Guide | Microsoft Docs
+title: C# Interactive - C# Guide
 description: Explore the C# Interactive Shell and use it to explore APIs and frameworks
 keywords: .NET, .NET Core, C#
 ms.date: 06/25/2016

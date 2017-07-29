@@ -1,5 +1,5 @@
 ---
-title: "Configuring Services Using Configuration Files | Microsoft Docs"
+title: "Configuring Services Using Configuration Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

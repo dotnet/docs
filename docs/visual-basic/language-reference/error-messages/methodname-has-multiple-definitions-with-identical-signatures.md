@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;methodname&gt;&#39; has multiple definitions with identical signatures | Microsoft Docs"
+title: "&#39;&lt;methodname&gt;&#39; has multiple definitions with identical signatures"
 
 ms.date: "2015-07-20"
 ms.prod: .net

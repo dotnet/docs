@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue::GetManagedCopy Method | Microsoft Docs"
+title: "ICorDebugObjectValue::GetManagedCopy Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

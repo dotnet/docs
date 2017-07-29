@@ -1,5 +1,5 @@
 ---
-title: "ICLRMemoryNotificationCallback::OnMemoryNotification Method | Microsoft Docs"
+title: "ICLRMemoryNotificationCallback::OnMemoryNotification Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

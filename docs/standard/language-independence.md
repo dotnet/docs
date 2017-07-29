@@ -1,6 +1,6 @@
 ---
-title: Language independence and language-independent components | Microsoft Docs
-description: Language independence and language-independent components
+title: Language independence and language-independent components
+description: Learn how you can develop in one of many supported languages in .NET, such as C#, C++/CLI, F#, IronPython, VB, Visual COBOL, and PowerShell.
 keywords: .NET, .NET Core
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -166,7 +166,7 @@ Enumerations | [Enumerations](#enumerations) | Literal static fields of an enum 
 Events | [Events](#events) | The methods that implement an event shall be marked `SpecialName` in the metadata. |29
 Events | [Events](#events) | The accessibility of an event and of its accessors shall be identical. |30
 Events | [Events](#events) | The `add` and `remove` methods for an event shall both either be present or absent. |31
-Events | [Events](#events) | The `add`and `remove` methods for an event shall each take one parameter whose type defines the type of the event and that shall be derived from [System.Delegate](xref:System.Delegate). |32
+Events | [Events](#events) | The `add` and `remove` methods for an event shall each take one parameter whose type defines the type of the event and that shall be derived from [System.Delegate](xref:System.Delegate). |32
 Events | [Events](#events) | Events shall adhere to a specific naming pattern. The SpecialName attribute referred to in CLS rule 29 shall be ignored in appropriate name comparisons and shall adhere to identifier rules.  |33
 Exceptions | [Exceptions](#exceptions) | Objects that are thrown shall be of type [System.Exception](xref:System.Exception) or a type inheriting from it. Nonetheless, CLS-compliant methods are not required to block the propagation of other types of exceptions. | 40
 General | [CLS compliance rules](#cls-compliance-rules) | CLS rules apply only to those parts of a type that are accessible or visible outsideof the defining assembly. | 1
@@ -802,7 +802,7 @@ The Common Language Specification defines two conversion operators:
 
 However, not all languages support operator overloading or the definition of custom operators. If you choose to implement these conversion operators, you should also provide an alternate way to perform the conversion. We recommend that you provide `From`Xxx and `To`Xxx methods. 
 
-The following example defines CLS-compliant implicit and explicit conversions. It creates a `UDouble`class that represents an signed double-precision, floating-point number. It provides for implicit conversions from `UDouble` to `Double` and for explicit conversions from `UDouble` to `Single`, `Double` to `UDouble`, and `Single` to `UDouble`. It also defines a `ToDouble` method as an alternative to the implicit conversion operator and the `ToSingle`, `FromDouble`, and `FromSingle` methods as alternatives to the explicit conversion operators. 
+The following example defines CLS-compliant implicit and explicit conversions. It creates a `UDouble` class that represents an signed double-precision, floating-point number. It provides for implicit conversions from `UDouble` to `Double` and for explicit conversions from `UDouble` to `Single`, `Double` to `UDouble`, and `Single` to `UDouble`. It also defines a `ToDouble` method as an alternative to the implicit conversion operator and the `ToSingle`, `FromDouble`, and `FromSingle` methods as alternatives to the explicit conversion operators. 
 
 ```csharp
 using System;
@@ -1622,7 +1622,7 @@ End Module
 
 Generic type names are encoded in the form *name*'*n*, where *name* is the type name, *`* is a character literal, and *n* is the number of parameters declared on the type, or, for nested generic types, the number of newly introduced type parameters. This encoding of generic type names is primarily of interest to developers who use reflection to access CLS-complaint generic types in a library. 
 
-If constraints are applied to a generic type, any types used as constraints must also be CLS-compliant. The following example defines a class named `BaseClass` that is not CLS-compliant and a generic class named `BaseCollection` whose type parameter must derive from `BaseClass`. But because `BaseClass`is not CLS-compliant, the compiler emits a warning. 
+If constraints are applied to a generic type, any types used as constraints must also be CLS-compliant. The following example defines a class named `BaseClass` that is not CLS-compliant and a generic class named `BaseCollection` whose type parameter must derive from `BaseClass`. But because `BaseClass` is not CLS-compliant, the compiler emits a warning. 
 
 ```csharp
 using System;
@@ -1931,7 +1931,7 @@ Constructors in CLS-compliant classes and structures must follow these rules:
 
 * A constructor of a derived class must call the instance constructor of its base class before it accesses inherited instance data. This requirement is due to the fact that base class constructors are not inherited by their derived classes. This rule does not apply to structures, which do not support direct inheritance. 
 
-  Typically, compilers enforce this rule independently of CLS compliance, as the following example shows. It creates a `Doctor` class that is derived from a `Person` class, but the `Doctor`class fails to call the `Person` class constructor to initialize inherited instance fields. 
+  Typically, compilers enforce this rule independently of CLS compliance, as the following example shows. It creates a `Doctor` class that is derived from a `Person` class, but the `Doctor` class fails to call the `Person` class constructor to initialize inherited instance fields. 
 
     ```csharp
     using System;

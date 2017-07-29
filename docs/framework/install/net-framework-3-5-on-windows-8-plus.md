@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting the installation of the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10 | Microsoft Docs"
+title: "Troubleshooting the installation of the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10"
 ms.custom: ""
 ms.date: "04/20/2017"
 ms.prod: ".net-framework"

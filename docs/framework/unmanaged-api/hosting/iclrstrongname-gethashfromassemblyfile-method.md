@@ -1,5 +1,5 @@
 ---
-title: "ICLRStrongName::GetHashFromAssemblyFile Method | Microsoft Docs"
+title: "ICLRStrongName::GetHashFromAssemblyFile Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

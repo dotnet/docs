@@ -1,5 +1,5 @@
 ---
-title: Implementing a microservice domain model with .NET Core  | Microsoft Docs 
+title: Implementing a microservice domain model with .NET Core
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing a microservice domain model with .NET Core 
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

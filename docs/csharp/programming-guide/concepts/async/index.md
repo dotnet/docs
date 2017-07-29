@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous Programming with async and await (C#) | Microsoft Docs"
+title: "Asynchronous Programming with async and await (C#)"
 ms.date: "2017-05-22"
 ms.prod: .net
 ms.technology: 

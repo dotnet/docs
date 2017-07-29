@@ -1,5 +1,5 @@
 ---
-title: "1439 - PendingAcceptsAtZero | Microsoft Docs"
+title: "1439 - PendingAcceptsAtZero"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

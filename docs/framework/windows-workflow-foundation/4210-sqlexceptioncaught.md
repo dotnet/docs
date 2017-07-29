@@ -1,5 +1,5 @@
 ---
-title: "4210 - SqlExceptionCaught | Microsoft Docs"
+title: "4210 - SqlExceptionCaught"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

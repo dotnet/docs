@@ -1,5 +1,5 @@
 ---
-title: "IHostSyncManager::CreateRWLockWriterEvent Method | Microsoft Docs"
+title: "IHostSyncManager::CreateRWLockWriterEvent Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

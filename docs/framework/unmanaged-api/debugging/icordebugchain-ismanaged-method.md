@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugChain::IsManaged Method | Microsoft Docs"
+title: "ICorDebugChain::IsManaged Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

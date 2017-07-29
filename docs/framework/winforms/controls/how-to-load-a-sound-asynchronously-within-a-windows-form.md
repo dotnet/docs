@@ -1,5 +1,5 @@
 ---
-title: "How to: Load a Sound Asynchronously within a Windows Form | Microsoft Docs"
+title: "How to: Load a Sound Asynchronously within a Windows Form"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

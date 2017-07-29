@@ -1,5 +1,5 @@
 ---
-title: "DatePicker | Microsoft Docs"
+title: "DatePicker"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

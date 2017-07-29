@@ -1,5 +1,5 @@
 ---
-title: "Imports Statement (.NET Namespace and Type) | Microsoft Docs"
+title: "Imports Statement (.NET Namespace and Type)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

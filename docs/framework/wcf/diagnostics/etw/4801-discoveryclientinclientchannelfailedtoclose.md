@@ -1,5 +1,5 @@
 ---
-title: "4801 - DiscoveryClientInClientChannelFailedToClose | Microsoft Docs"
+title: "4801 - DiscoveryClientInClientChannelFailedToClose"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

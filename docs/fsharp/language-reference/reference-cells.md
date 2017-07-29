@@ -1,6 +1,6 @@
 ---
-title: Reference Cells (F#) | Microsoft Docs
-description: Reference Cells (F#)
+title: Reference Cells (F#)
+description: Learn how F# reference cells are storage locations that enable you to create mutable values with reference semantics.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

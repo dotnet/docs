@@ -1,5 +1,5 @@
 ---
-title: "Default NetTcpBinding | Microsoft Docs"
+title: "Default NetTcpBinding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

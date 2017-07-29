@@ -1,5 +1,5 @@
 ---
-title: "Setting the Use and Style Properties | Microsoft Docs"
+title: "Setting the Use and Style Properties"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

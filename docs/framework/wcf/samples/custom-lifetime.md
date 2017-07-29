@@ -1,5 +1,5 @@
 ---
-title: "Custom Lifetime | Microsoft Docs"
+title: "Custom Lifetime"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify Private Storage Fields | Microsoft Docs"
+title: "How to: Specify Private Storage Fields"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

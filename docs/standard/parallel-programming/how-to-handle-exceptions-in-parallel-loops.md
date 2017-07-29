@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle Exceptions in Parallel Loops | Microsoft Docs"
+title: "How to: Handle Exceptions in Parallel Loops"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

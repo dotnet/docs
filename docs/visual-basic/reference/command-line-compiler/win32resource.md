@@ -1,5 +1,5 @@
 ---
-title: "/win32resource | Microsoft Docs"
+title: "/win32resource"
 
 ms.date: "2015-07-20"
 ms.prod: .net

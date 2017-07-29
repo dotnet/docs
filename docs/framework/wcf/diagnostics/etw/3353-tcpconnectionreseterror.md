@@ -1,5 +1,5 @@
 ---
-title: "3353 - TcpConnectionResetError | Microsoft Docs"
+title: "3353 - TcpConnectionResetError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Seek a Clock Synchronously | Microsoft Docs"
+title: "How to: Seek a Clock Synchronously"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

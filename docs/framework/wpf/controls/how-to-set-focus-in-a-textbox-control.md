@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Focus in a TextBox Control | Microsoft Docs"
+title: "How to: Set Focus in a TextBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

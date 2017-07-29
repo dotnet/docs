@@ -1,5 +1,5 @@
 ---
-title: "How to: Test the Run-Time Behavior of a UserControl | Microsoft Docs"
+title: "How to: Test the Run-Time Behavior of a UserControl"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

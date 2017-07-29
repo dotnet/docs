@@ -1,5 +1,5 @@
 ---
-title: "How to: Analyze Ink with Analysis Hints | Microsoft Docs"
+title: "How to: Analyze Ink with Analysis Hints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

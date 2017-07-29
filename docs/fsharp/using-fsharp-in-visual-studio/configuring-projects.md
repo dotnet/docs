@@ -1,6 +1,6 @@
 ---
 title: Configuring Projects (F#)
-description: Configuring Projects (F#)
+description: Learn how to use the Project Designer when you work with F# projects.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

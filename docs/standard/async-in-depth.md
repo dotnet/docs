@@ -1,6 +1,6 @@
 ---
 title: Async in depth
-description: In-depth explanation of how asynchronous code works in .NET
+description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
 keywords: .NET, .NET Core, .NET Standard
 author: cartermp
 ms.author: wiwagn

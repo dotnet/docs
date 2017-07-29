@@ -1,6 +1,6 @@
 ---
 title: Target frameworks
-description: Information surrounding target frameworks for .NET Core applications and libraries.
+description: Learn about target frameworks for .NET Core apps and libraries.
 keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw

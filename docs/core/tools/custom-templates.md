@@ -1,10 +1,10 @@
 ---
-title: Custom templates for dotnet new | Microsoft Docs
+title: Custom templates for dotnet new
 description: This topic shows you how to create custom templates for any type of .NET project or files.
 keywords: dotnet new, CLI, CLI command, .NET Core, template, templating
 author: guardrex
 ms.author: mairaw
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -76,22 +76,11 @@ When you install the [.NET Core SDK](https://www.microsoft.com/net/download/core
 dotnet new -l
 ```
 
-## Create a basic template from a project
-
-1. Make sure your project compiles and runs.
-1. Add a folder to the root of the project named *.template.config*.
-1. Create a *template.json* file configuring your template. See the [*template.json*](#template-json) section for more information.
-1. Add your *template.json* configuration file to the *.template.config* folder.
-
-Your template is finished. At this point, [package the template for NuGet distribution](#packing-a-template-into-a-nuget-package) or [install it from the file system](#to-install-a-template-from-a-file-system-directory) for use.
-
-## Packing a template into a NuGet package
+## Packing a template into a NuGet package (nupkg file)
 
 Currently, a custom template is packed on Windows with [nuget.exe](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) (not [dotnet pack](dotnet-pack.md)). For cross-platform packaging, consider [NuGetizer 3000](https://github.com/NuGet/Home/wiki/NuGetizer-3000).
 
-The contents of the project folder, together with its *.template.config/template.json* file, are placed into a folder named *content*. Next to the *content* folder, add a [*nuspec* file](https://docs.microsoft.com/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
-
-Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<packageType>** element with a `name` attribute value of `Template`. Both the *content* folder and the *nuspec* file should reside in the same directory. The table shows the minimum *nuspec* file elements required to produce a template as a NuGet package.
+The contents of the project folder, together with its *.template.config/template.json* file, are placed into a folder named *content*. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package. Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<packageType>** element with a `name` attribute value of `Template`. Both the *content* folder and the *nuspec* file should reside in the same directory. The table shows the minimum *nuspec* file elements required to produce a template as a NuGet package.
 
 | Element            | Type   | Description |
 | ------------------ | ------ | ----------- |
@@ -99,66 +88,26 @@ Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<pack
 | **\<description>** | string | A long description of the package for UI display. |
 | **\<id>**          | string | The case-insensitive package identifier, which must be unique across nuget.org or whatever gallery the package will reside in. IDs may not contain spaces or characters that are not valid for a URL, and generally follow .NET namespace rules. See Choosing a unique package identifier for guidance. |
 | **\<packageType>** | string | Place this element inside a **\<packageTypes>** element among the **\<metadata>** elements. Set the `name` attribute of the **\<packageType>** element to `Template`. |
-| **\<version>**     | string | The version of the package, following the major.minor.patch pattern. Version numbers may include a pre-release suffix as described in [Prerelease Packages](https://docs.microsoft.com/nuget/create-packages/prerelease-packages#semantic-versioning). |
+| **\<version>**     | string | The version of the package, following the major.minor.patch pattern. Version numbers may include a pre-release suffix as described in [Prerelease Packages](/nuget/create-packages/prerelease-packages#semantic-versioning). |
 
-See the [.nuspec reference](https://docs.microsoft.com/nuget/schema/nuspec) for the complete *nuspec* file schema.
+See the [.nuspec reference](/nuget/schema/nuspec) for the complete *nuspec* file schema.
 
-**Example**
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
-  <metadata>
-    <id>GarciaSoftware.ConsoleTemplate.CSharp</id>
-    <version>1.0.0</version>
-    <description>
-      Creates the Garcia Software console app.
-    </description>
-    <authors>Catalina Garcia</authors>
-    <packageTypes>
-      <packageType name="Template" />
-    </packageTypes>
-  </metadata>
-</package>
-```
-
-[Create the package](https://docs.microsoft.com/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <your_nuspec_file>.nuspec` command.
-
-**Example**
-
-```console
-nuget pack C:/Users/<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp/GarciaSoftware.ConsoleTemplate.CSharp.nuspec
-```
+[Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <your_nuspec_file>.nuspec` command.
 
 ## Installing a template
 
-Install a custom template from a NuGet package on any NuGet feed, by referencing a *nupkg* file directly, or by specifying a file system directory that contains a templating configuration. Use the `-i|--install` option with the `dotnet new` command.
+Install a custom template from a NuGet package on any NuGet feed by referencing a *nupkg* file directly or by specifying a file system directory that contains a templating configuration. Use the `-i|--install` option with the `dotnet new` command.
 
-### To install a template from a NuGet package stored at nuget.org
+### To install a template from a NuGet package stored at NuGet.org
 
 ```console
 dotnet new -i <NUGET_PACKAGE_ID>
 ```
 
-**Example**
-
-```console
-dotnet new -i GarciaSoftware.ConsoleTemplate.CSharp
-```
-
-> [!NOTE]
-> The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org. If you run the command, no template is installed. However, you can install a template that hasn't been published to nuget.org by referencing the *nupkg* file directly on your local file system as shown in the next section.
-
 ### To install a template from a local nupkg file
 
 ```console
 dotnet new -i <PATH_TO_NUPKG_FILE>
-```
-
-**Example**
-
-```console
-dotnet new -i C:/Users/Garcia/GarciaSoftware.ConsoleTemplate.CSharp.1.0.0.nupkg
 ```
 
 ### To install a template from a file system directory
@@ -169,32 +118,15 @@ The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the
 dotnet new -i <FILE_SYSTEM_DIRECTORY>
 ```
 
-**Example**
-
-```console
-dotnet new -i C:/Users/Garcia/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp/content
-```
-
 ## Uninstalling a template
 
 You uninstall a custom template by referencing a NuGet package by its `id` or by specifying a file system directory that contains a templating configuration. Use the `-u|--uninstall` install option with the `dotnet new` command.
 
-### To uninstall a template from a NuGet package stored at nuget.org
+### To uninstall a template from a NuGet package stored at NuGet.org
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
 ```
-
-**Example**
-
-```console
-dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp
-```
-
-> [!NOTE]
-> The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org or installed with the .NET Core SDK. If you run the command, no package/template is uninstalled and you receive the following exception:
-> 
-> > Could not find something to uninstall called 'GarciaSoftware.ConsoleTemplate.CSharp'.
 
 ### To uninstall a template from a local nupkg file
 
@@ -202,12 +134,6 @@ Although you can install a template from a *nupkg* file on your local file syste
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
-```
-
-**Example**
-
-```console
-dotnet new -u GarciaSoftware.ConsoleTemplate.CSharp.1.0.0
 ```
 
 ### To uninstall a template from a file system directory
@@ -218,26 +144,12 @@ The `FILE_SYSTEM_DIRECTORY` is the project folder containing the project and the
 dotnet new -u <FILE_SYSTEM_DIRECTORY>
 ```
 
-**Example**
-
-```console
-dotnet new -u C:/Users/Garcia/Documents/Templates/content
-```
-
-## Creating a project from a template
+## Create a project from a template
 
 After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `-o|--output` option to specify a specific directory; see [`dotnet new` Options](dotnet-new.md#options) for more information). Supply the template's short name directly to the command:
 
 ```console
 dotnet new <TEMPLATE>
-```
-
-**Example**
-
-From a new project folder created at *C:/Users/Garcia/Documents/Projects/MyConsoleApp*, create a project from the `garciaconsole` template:
-
-```console
-dotnet new garciaconsole
 ```
 
 ## See also

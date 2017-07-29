@@ -1,5 +1,5 @@
 ---
-title: "Version Tolerant Serialization Technology Sample | Microsoft Docs"
+title: "Version Tolerant Serialization Technology Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "For loop control variable already in use by an enclosing For loop | Microsoft Docs"
+title: "For loop control variable already in use by an enclosing For loop"
 
 ms.date: "2015-07-20"
 ms.prod: .net

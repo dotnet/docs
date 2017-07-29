@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Service Moniker with WSDL Contracts | Microsoft Docs"
+title: "How to: Use a Service Moniker with WSDL Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

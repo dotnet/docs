@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;name&gt;&#39; is ambiguous in the namespace &#39;&lt;namespacename&gt;&#39; | Microsoft Docs"
+title: "&#39;&lt;name&gt;&#39; is ambiguous in the namespace &#39;&lt;namespacename&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

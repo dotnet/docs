@@ -1,5 +1,5 @@
 ---
-title: "How to: Host a WCF Service in WAS | Microsoft Docs"
+title: "How to: Host a WCF Service in WAS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Exception Class and Properties | Microsoft Docs"
+title: "Exception Class and Properties"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

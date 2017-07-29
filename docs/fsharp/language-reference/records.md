@@ -1,6 +1,6 @@
 ---
-title: Records (F#) | Microsoft Docs
-description: Records (F#)
+title: Records (F#)
+description: Learn how F# records represent simple aggregates of named values, optionally with members.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

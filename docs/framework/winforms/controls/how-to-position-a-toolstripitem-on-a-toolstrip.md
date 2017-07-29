@@ -1,5 +1,5 @@
 ---
-title: "How to: Position a ToolStripItem on a ToolStrip | Microsoft Docs"
+title: "How to: Position a ToolStripItem on a ToolStrip"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

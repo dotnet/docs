@@ -1,5 +1,5 @@
 ---
-title: "Mage.exe (Manifest Generation and Editing Tool) | Microsoft Docs"
+title: "Mage.exe (Manifest Generation and Editing Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

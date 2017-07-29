@@ -1,5 +1,5 @@
 ---
-title: "102 - WorkflowInstanceAbortedRecord | Microsoft Docs"
+title: "102 - WorkflowInstanceAbortedRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

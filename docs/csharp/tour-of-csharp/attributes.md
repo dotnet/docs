@@ -1,5 +1,5 @@
 ---
-title: C# Attributes - A tour of the C# language | Microsoft Docs
+title: C# Attributes - A tour of the C# language
 description: Learn about declarative programming using attributes in C#
 keywords: .NET, csharp
 author: BillWagner

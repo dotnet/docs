@@ -1,5 +1,5 @@
 ---
-title: "How to: Use ToolStripPanels for MDI | Microsoft Docs"
+title: "How to: Use ToolStripPanels for MDI"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

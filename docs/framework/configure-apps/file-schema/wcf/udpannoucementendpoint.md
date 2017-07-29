@@ -1,5 +1,5 @@
 ---
-title: "&lt;udpAnnoucementEndpoint&gt; | Microsoft Docs"
+title: "&lt;udpAnnoucementEndpoint&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

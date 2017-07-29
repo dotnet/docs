@@ -1,5 +1,5 @@
 ---
-title: "&lt;mscorlib&gt; Element for Cryptography Settings | Microsoft Docs"
+title: "&lt;mscorlib&gt; Element for Cryptography Settings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

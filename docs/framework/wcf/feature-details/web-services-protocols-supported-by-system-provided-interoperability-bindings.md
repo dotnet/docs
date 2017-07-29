@@ -1,5 +1,5 @@
 ---
-title: "Web Services Protocols Supported by System-Provided Interoperability Bindings | Microsoft Docs"
+title: "Web Services Protocols Supported by System-Provided Interoperability Bindings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

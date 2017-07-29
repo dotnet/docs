@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot blocked .NET Framework installations and uninstallations | Microsoft Docs"
+title: "Troubleshoot blocked .NET Framework installations and uninstallations"
 ms.custom: ""
 ms.date: "05/26/2017"
 ms.prod: ".net-framework"

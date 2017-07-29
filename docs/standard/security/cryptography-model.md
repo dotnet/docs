@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Cryptography Model | Microsoft Docs"
+title: ".NET Framework Cryptography Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

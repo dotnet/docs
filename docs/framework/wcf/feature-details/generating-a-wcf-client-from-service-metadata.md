@@ -1,5 +1,5 @@
 ---
-title: "Generating a WCF Client from Service Metadata | Microsoft Docs"
+title: "Generating a WCF Client from Service Metadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

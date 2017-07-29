@@ -1,5 +1,5 @@
 ---
-title: "Working with Images, Bitmaps, Icons, and Metafiles | Microsoft Docs"
+title: "Working with Images, Bitmaps, Icons, and Metafiles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

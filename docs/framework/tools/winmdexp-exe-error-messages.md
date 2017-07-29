@@ -1,5 +1,5 @@
 ---
-title: "Winmdexp.exe Error Messages | Microsoft Docs"
+title: "Winmdexp.exe Error Messages"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

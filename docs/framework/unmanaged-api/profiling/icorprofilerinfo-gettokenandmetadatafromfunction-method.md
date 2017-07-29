@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo::GetTokenAndMetadataFromFunction Method | Microsoft Docs"
+title: "ICorProfilerInfo::GetTokenAndMetadataFromFunction Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

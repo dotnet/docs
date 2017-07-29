@@ -1,5 +1,5 @@
 ---
-title: "3333 - OutgoingMessageSecured | Microsoft Docs"
+title: "3333 - OutgoingMessageSecured"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

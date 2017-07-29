@@ -1,6 +1,6 @@
 ---
-title: Assertions (F#) | Microsoft Docs
-description: Assertions (F#)
+title: Assertions (F#)
+description: Learn how to use the 'assert' expression as a debugging feature for testing expressions in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "303 - UserDefinedInformationEventOccured | Microsoft Docs"
+title: "303 - UserDefinedInformationEventOccured"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

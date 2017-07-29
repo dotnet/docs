@@ -1,5 +1,5 @@
 ---
-title: Domain events. design and implementation | Microsoft Docs 
+title: Domain events. design and implementation
 description: .NET Microservices Architecture for Containerized .NET Applications | Domain events, design and implementation
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

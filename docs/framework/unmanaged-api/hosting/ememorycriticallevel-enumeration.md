@@ -1,5 +1,5 @@
 ---
-title: "EMemoryCriticalLevel Enumeration | Microsoft Docs"
+title: "EMemoryCriticalLevel Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

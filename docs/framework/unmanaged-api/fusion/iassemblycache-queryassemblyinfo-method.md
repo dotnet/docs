@@ -1,5 +1,5 @@
 ---
-title: "IAssemblyCache::QueryAssemblyInfo Method | Microsoft Docs"
+title: "IAssemblyCache::QueryAssemblyInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

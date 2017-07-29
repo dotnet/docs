@@ -1,5 +1,5 @@
 ---
-title: "Hosting in a Managed Application | Microsoft Docs"
+title: "Hosting in a Managed Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

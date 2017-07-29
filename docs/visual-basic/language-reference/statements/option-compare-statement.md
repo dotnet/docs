@@ -1,5 +1,5 @@
 ---
-title: "Option Compare Statement | Microsoft Docs"
+title: "Option Compare Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

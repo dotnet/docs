@@ -1,5 +1,5 @@
 ---
-title: "Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP | Microsoft Docs"
+title: "Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

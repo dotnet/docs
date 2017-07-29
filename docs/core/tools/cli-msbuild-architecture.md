@@ -1,5 +1,5 @@
 ---
-title: .NET Core Command-line tools architecture | Microsoft Docs
+title: .NET Core Command-line tools architecture
 description: Learn about the .NET Core tooling layers and what has changed in recent versions.
 keywords: .NET Core, MSBuild, architecture
 author: blackdwarf

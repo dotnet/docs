@@ -1,5 +1,5 @@
 ---
-title: Using a database server running as a container | Microsoft Docs 
+title: Using a database server running as a container
 description: .NET Microservices Architecture for Containerized .NET Applications | Using a database server running as a container
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

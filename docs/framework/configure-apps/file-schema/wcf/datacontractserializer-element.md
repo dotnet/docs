@@ -1,5 +1,5 @@
 ---
-title: "&lt;dataContractSerializer&gt; | Microsoft Docs"
+title: "&lt;dataContractSerializer&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

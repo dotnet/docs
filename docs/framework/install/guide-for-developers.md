@@ -1,5 +1,5 @@
 ---
-title: "Install the .NET Framework for developers | Microsoft Docs"
+title: "Install the .NET Framework for developers"
 ms.custom: ""
 ms.date: "05/26/2017"
 ms.prod: ".net-framework"

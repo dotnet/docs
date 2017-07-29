@@ -1,5 +1,5 @@
 ---
-title: "Handling and Throwing Exceptions | Microsoft Docs"
+title: "Handling and Throwing Exceptions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

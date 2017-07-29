@@ -1,5 +1,5 @@
 ---
-title: "Common Attributes (Visual Basic) | Microsoft Docs"
+title: "Common Attributes (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,7 +42,7 @@ This topic describes the attributes that are most commonly used in Visual Basic 
 <Assembly: AssemblyVersion("1.0.0.0")>  
 ```  
   
- Global attributes appear in the source code after any top-level`Imports` statements and before any type, module, or namespace declarations. Global attributes can appear in multiple source files, but the files must be compiled in a single compilation pass. For Visual Basic projects, global attributes are generally put in the AssemblyInfo.vb file (the file is created automatically when you create a project in Visual Studio).  
+ Global attributes appear in the source code after any top-level `Imports` statements and before any type, module, or namespace declarations. Global attributes can appear in multiple source files, but the files must be compiled in a single compilation pass. For Visual Basic projects, global attributes are generally put in the AssemblyInfo.vb file (the file is created automatically when you create a project in Visual Studio).  
   
  Assembly attributes are values that provide information about an assembly. They fall into the following categories:  
   

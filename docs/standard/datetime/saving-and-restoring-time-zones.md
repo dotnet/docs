@@ -1,5 +1,5 @@
 ---
-title: "Saving and restoring time zones | Microsoft Docs"
+title: "Saving and restoring time zones"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

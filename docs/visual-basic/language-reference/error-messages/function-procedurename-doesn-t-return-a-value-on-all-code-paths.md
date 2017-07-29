@@ -1,5 +1,5 @@
 ---
-title: "Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths | Microsoft Docs"
+title: "Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths"
 
 ms.date: "2015-07-20"
 ms.prod: .net

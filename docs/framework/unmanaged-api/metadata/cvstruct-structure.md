@@ -1,5 +1,5 @@
 ---
-title: "CVStruct Structure | Microsoft Docs"
+title: "CVStruct Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

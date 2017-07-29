@@ -1,5 +1,5 @@
 ---
-title: "214 - OperationCompleted | Microsoft Docs"
+title: "214 - OperationCompleted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

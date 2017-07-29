@@ -1,5 +1,5 @@
 ---
-title: "ADO.NET Technology Options and Guidelines | Microsoft Docs"
+title: "ADO.NET Technology Options and Guidelines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

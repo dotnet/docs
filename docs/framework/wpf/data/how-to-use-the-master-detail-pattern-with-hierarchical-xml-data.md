@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Master-Detail Pattern with Hierarchical XML Data | Microsoft Docs"
+title: "How to: Use the Master-Detail Pattern with Hierarchical XML Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

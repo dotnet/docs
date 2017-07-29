@@ -1,5 +1,5 @@
 ---
-title: "Sub or Function not defined (Visual Basic) | Microsoft Docs"
+title: "Sub or Function not defined (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "StateMachine Scenario Using a Combination of FlowChart and Pick | Microsoft Docs"
+title: "StateMachine Scenario Using a Combination of FlowChart and Pick"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

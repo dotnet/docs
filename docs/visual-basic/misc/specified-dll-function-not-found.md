@@ -1,5 +1,5 @@
 ---
-title: "Specified DLL function not found | Microsoft Docs"
+title: "Specified DLL function not found"
 
 ms.date: "2015-07-20"
 ms.prod: .net

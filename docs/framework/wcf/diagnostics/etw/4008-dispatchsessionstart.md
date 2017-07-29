@@ -1,5 +1,5 @@
 ---
-title: "4008 - DispatchSessionStart | Microsoft Docs"
+title: "4008 - DispatchSessionStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

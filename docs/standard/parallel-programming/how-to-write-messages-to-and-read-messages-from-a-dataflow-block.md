@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Messages to and Read Messages from a Dataflow Block | Microsoft Docs"
+title: "How to: Write Messages to and Read Messages from a Dataflow Block"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

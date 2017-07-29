@@ -1,5 +1,5 @@
 ---
-title: "Property let procedure not defined and property get procedure did not return an object | Microsoft Docs"
+title: "Property let procedure not defined and property get procedure did not return an object"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -41,7 +41,7 @@ Certain properties, methods, and operations can only apply to `Collection` objec
   
 1.  Check the spelling of the object or property name, or verify that the object is a `Collection` object.  
   
-2.  Look at the `Add`method used to add the object to the collection to be sure the syntax is correct and that any identifiers were spelled correctly.  
+2.  Look at the `Add` method used to add the object to the collection to be sure the syntax is correct and that any identifiers were spelled correctly.  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Collection>

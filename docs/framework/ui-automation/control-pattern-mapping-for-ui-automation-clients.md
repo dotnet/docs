@@ -1,5 +1,5 @@
 ---
-title: "Control Pattern Mapping for UI Automation Clients | Microsoft Docs"
+title: "Control Pattern Mapping for UI Automation Clients"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

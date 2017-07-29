@@ -1,6 +1,6 @@
 ---
-title: .NET Assembly File Format | Microsoft Docs
-description: .NET Assembly File Format
+title: .NET Assembly File Format
+description: Learn about the .NET assembly file format, which is used to describe and contain .NET apps and libraries.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw

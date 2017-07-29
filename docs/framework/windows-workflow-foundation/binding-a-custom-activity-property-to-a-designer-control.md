@@ -1,5 +1,5 @@
 ---
-title: "Binding a custom activity property to a designer control | Microsoft Docs"
+title: "Binding a custom activity property to a designer control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

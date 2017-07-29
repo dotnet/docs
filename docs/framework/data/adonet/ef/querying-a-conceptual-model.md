@@ -1,5 +1,5 @@
 ---
-title: "Querying a Conceptual Model | Microsoft Docs"
+title: "Querying a Conceptual Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

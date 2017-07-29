@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Localized Date and Time Information to Web Users | Microsoft Docs"
+title: "How to: Display Localized Date and Time Information to Web Users"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

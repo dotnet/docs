@@ -1,5 +1,5 @@
 ---
-title: "Using Application Settings and User Settings | Microsoft Docs"
+title: "Using Application Settings and User Settings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

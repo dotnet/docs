@@ -1,5 +1,5 @@
 ---
-title: "4803 - DiscoveryClientReceivedMulticastSuppression | Microsoft Docs"
+title: "4803 - DiscoveryClientReceivedMulticastSuppression"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

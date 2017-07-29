@@ -1,5 +1,5 @@
 ---
-title: "4208 - RetryingSqlCommandDueToSqlError | Microsoft Docs"
+title: "4208 - RetryingSqlCommandDueToSqlError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

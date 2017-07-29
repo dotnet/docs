@@ -1,5 +1,5 @@
 ---
-title: "Resolving External XSLT Style Sheets and Documents | Microsoft Docs"
+title: "Resolving External XSLT Style Sheets and Documents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

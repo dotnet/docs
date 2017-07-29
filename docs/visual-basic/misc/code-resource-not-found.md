@@ -1,5 +1,5 @@
 ---
-title: "Code resource not found | Microsoft Docs"
+title: "Code resource not found"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized | Microsoft Docs"
+title: "How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Pointer-based Touch and Stylus Support | Microsoft Docs"
+title: "Mitigation: Pointer-based Touch and Stylus Support"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

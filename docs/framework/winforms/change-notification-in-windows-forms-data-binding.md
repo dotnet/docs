@@ -1,5 +1,5 @@
 ---
-title: "Change Notification in Windows Forms Data Binding | Microsoft Docs"
+title: "Change Notification in Windows Forms Data Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

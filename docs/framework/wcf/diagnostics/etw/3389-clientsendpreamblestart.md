@@ -1,5 +1,5 @@
 ---
-title: "3389 - ClientSendPreambleStart | Microsoft Docs"
+title: "3389 - ClientSendPreambleStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "File is too large to read into a byte array | Microsoft Docs"
+title: "File is too large to read into a byte array"
 
 ms.date: "2015-07-20"
 ms.prod: .net

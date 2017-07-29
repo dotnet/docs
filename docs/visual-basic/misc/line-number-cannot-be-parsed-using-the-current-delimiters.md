@@ -1,5 +1,5 @@
 ---
-title: "Line &lt;number&gt; cannot be parsed using the current Delimiters | Microsoft Docs"
+title: "Line &lt;number&gt; cannot be parsed using the current Delimiters"
 
 ms.date: "2015-07-20"
 ms.prod: .net

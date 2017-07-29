@@ -1,5 +1,5 @@
 ---
-title: "Properties on Windows Forms Controls That Support Accessibility Guidelines | Microsoft Docs"
+title: "Properties on Windows Forms Controls That Support Accessibility Guidelines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

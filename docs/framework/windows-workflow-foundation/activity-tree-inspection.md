@@ -1,5 +1,5 @@
 ---
-title: "Activity Tree Inspection | Microsoft Docs"
+title: "Activity Tree Inspection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

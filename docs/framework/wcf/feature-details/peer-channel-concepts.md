@@ -1,5 +1,5 @@
 ---
-title: "Peer Channel Concepts | Microsoft Docs"
+title: "Peer Channel Concepts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

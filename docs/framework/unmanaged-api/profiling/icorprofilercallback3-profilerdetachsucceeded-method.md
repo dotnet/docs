@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback3::ProfilerDetachSucceeded Method | Microsoft Docs"
+title: "ICorProfilerCallback3::ProfilerDetachSucceeded Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Optimistic Concurrency: Overview | Microsoft Docs"
+title: "Optimistic Concurrency: Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

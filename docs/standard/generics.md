@@ -1,6 +1,6 @@
 ---
-title: Generic Types (Generics) Overview | Microsoft Docs
-description: Generic Types (Generics) Overview
+title: Generic Types (Generics) Overview
+description: Learn how generics act as code templates that allow you to define type-safe data structures without committing to an actual data type.
 keywords: .NET, .NET Core
 author: kuhlenh
 ms.author: wiwagn

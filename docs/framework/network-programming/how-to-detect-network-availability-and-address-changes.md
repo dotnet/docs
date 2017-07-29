@@ -1,5 +1,5 @@
 ---
-title: "How to: Detect Network Availability and Address Changes | Microsoft Docs"
+title: "How to: Detect Network Availability and Address Changes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

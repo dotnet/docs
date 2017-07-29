@@ -1,5 +1,5 @@
 ---
-title: "Encoding cannot be set to Nothing | Microsoft Docs"
+title: "Encoding cannot be set to Nothing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine the Parameters Supported by an Encoder | Microsoft Docs"
+title: "How to: Determine the Parameters Supported by an Encoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

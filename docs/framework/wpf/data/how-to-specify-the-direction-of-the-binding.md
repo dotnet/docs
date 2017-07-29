@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify the Direction of the Binding | Microsoft Docs"
+title: "How to: Specify the Direction of the Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Task-based Asynchronous Pattern (TAP) | Microsoft Docs"
+title: "Task-based Asynchronous Pattern (TAP)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

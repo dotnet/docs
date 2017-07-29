@@ -1,5 +1,5 @@
 ---
-title: "Method-Based Query Syntax Examples: Aggregate Operators | Microsoft Docs"
+title: "Method-Based Query Syntax Examples: Aggregate Operators"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

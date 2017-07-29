@@ -1,5 +1,5 @@
 ---
-title: "DiscoveryClient and DynamicEndpoint | Microsoft Docs"
+title: "DiscoveryClient and DynamicEndpoint"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

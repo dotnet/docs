@@ -1,5 +1,5 @@
 ---
-title: "Open and Closed Curves in GDI+ | Microsoft Docs"
+title: "Open and Closed Curves in GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Represent Columns as Database-Generated | Microsoft Docs"
+title: "How to: Represent Columns as Database-Generated"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

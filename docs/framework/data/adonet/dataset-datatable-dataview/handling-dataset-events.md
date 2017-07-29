@@ -1,5 +1,5 @@
 ---
-title: "Handling DataSet Events | Microsoft Docs"
+title: "Handling DataSet Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

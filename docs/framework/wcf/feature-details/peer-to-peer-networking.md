@@ -1,5 +1,5 @@
 ---
-title: "Peer-to-Peer Networking | Microsoft Docs"
+title: "Peer-to-Peer Networking"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

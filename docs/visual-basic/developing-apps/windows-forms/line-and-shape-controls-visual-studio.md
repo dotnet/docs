@@ -1,5 +1,5 @@
 ---
-title: "Line and Shape Controls (Visual Studio) | Microsoft Docs"
+title: "Line and Shape Controls (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

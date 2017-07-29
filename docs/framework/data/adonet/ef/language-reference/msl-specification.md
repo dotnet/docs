@@ -1,5 +1,5 @@
 ---
-title: "MSL Specification | Microsoft Docs"
+title: "MSL Specification"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a LINQ to XML Axis Method (C#) | Microsoft Docs"
+title: "How to: Write a LINQ to XML Axis Method (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

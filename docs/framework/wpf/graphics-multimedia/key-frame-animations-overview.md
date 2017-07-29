@@ -1,5 +1,5 @@
 ---
-title: "Key-Frame Animations Overview | Microsoft Docs"
+title: "Key-Frame Animations Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

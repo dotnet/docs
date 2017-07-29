@@ -1,5 +1,5 @@
 ---
-title: "WCF Data Services Protocol Implementation Details | Microsoft Docs"
+title: "WCF Data Services Protocol Implementation Details"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

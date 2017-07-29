@@ -1,5 +1,5 @@
 ---
-title: "Node Types Recognized with XPath Queries | Microsoft Docs"
+title: "Node Types Recognized with XPath Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

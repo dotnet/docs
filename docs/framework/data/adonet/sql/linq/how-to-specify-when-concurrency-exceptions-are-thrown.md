@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify When Concurrency Exceptions are Thrown | Microsoft Docs"
+title: "How to: Specify When Concurrency Exceptions are Thrown"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

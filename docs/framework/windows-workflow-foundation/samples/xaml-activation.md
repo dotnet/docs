@@ -1,5 +1,5 @@
 ---
-title: "XAML Activation | Microsoft Docs"
+title: "XAML Activation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

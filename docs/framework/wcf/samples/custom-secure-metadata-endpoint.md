@@ -1,5 +1,5 @@
 ---
-title: "Custom Secure Metadata Endpoint | Microsoft Docs"
+title: "Custom Secure Metadata Endpoint"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

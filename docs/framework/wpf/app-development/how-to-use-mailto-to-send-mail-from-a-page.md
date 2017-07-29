@@ -1,5 +1,5 @@
 ---
-title: "How to: Use mailto: to Send Mail From a Page | Microsoft Docs"
+title: "How to: Use mailto: to Send Mail From a Page"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

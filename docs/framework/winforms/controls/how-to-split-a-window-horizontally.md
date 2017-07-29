@@ -1,5 +1,5 @@
 ---
-title: "How to: Split a Window Horizontally | Microsoft Docs"
+title: "How to: Split a Window Horizontally"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

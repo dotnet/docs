@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Borders of Windows Forms | Microsoft Docs"
+title: "How to: Change the Borders of Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ You have several border styles to choose from when you are determining the appea
   
 ### To set the border style of Windows Forms programmatically  
   
--   Set the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to the style you want. The following code example sets the border style of form`DlgBx1` to <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>.  
+-   Set the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to the style you want. The following code example sets the border style of form `DlgBx1` to <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>.  
   
     ```vb  
     DlgBx1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog  

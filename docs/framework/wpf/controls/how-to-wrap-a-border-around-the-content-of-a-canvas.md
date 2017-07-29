@@ -1,5 +1,5 @@
 ---
-title: "How to: Wrap a Border Around the Content of a Canvas | Microsoft Docs"
+title: "How to: Wrap a Border Around the Content of a Canvas"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

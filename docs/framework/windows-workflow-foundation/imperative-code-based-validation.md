@@ -1,5 +1,5 @@
 ---
-title: "Imperative Code-Based Validation | Microsoft Docs"
+title: "Imperative Code-Based Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

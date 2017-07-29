@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread::GetDebugState Method | Microsoft Docs"
+title: "ICorDebugThread::GetDebugState Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

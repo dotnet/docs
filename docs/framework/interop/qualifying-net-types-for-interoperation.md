@@ -1,5 +1,5 @@
 ---
-title: "Qualifying .NET Types for Interoperation | Microsoft Docs"
+title: "Qualifying .NET Types for Interoperation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

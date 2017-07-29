@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance | Microsoft Docs"
+title: "How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

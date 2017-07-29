@@ -1,6 +1,6 @@
 ---
-title: Constraints (F#) | Microsoft Docs
-description: Constraints (F#)
+title: Constraints (F#)
+description: Learn about F# constraints that apply to generic type parameters to specify the requirements for a type argument in a generic type or function.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

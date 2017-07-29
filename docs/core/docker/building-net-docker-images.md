@@ -1,5 +1,5 @@
 ---
-title: Building .NET Core Docker Images | Microsoft Docs
+title: Building .NET Core Docker Images
 description: Understanding Docker images and .NET Core
 keywords: .NET, .NET Core, Docker
 author: spboyer

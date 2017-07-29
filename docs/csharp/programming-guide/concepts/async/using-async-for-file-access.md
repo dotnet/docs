@@ -1,5 +1,5 @@
 ---
-title: "Using Async for File Access (C#) | Microsoft Docs"
+title: "Using Async for File Access (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

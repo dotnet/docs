@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Svcutil.exe to Download Metadata Documents | Microsoft Docs"
+title: "How to: Use Svcutil.exe to Download Metadata Documents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

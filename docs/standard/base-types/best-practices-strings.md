@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Using Strings in .NET | Microsoft Docs"
+title: "Best Practices for Using Strings in .NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

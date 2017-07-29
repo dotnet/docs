@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame4::EnumerateLocalVariablesEx Method | Microsoft Docs"
+title: "ICorDebugILFrame4::EnumerateLocalVariablesEx Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

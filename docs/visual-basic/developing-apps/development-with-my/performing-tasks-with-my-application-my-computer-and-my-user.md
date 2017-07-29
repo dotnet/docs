@@ -1,5 +1,5 @@
 ---
-title: "Performing Tasks with My.Application, My.Computer, and My.User (Visual Basic) | Microsoft Docs"
+title: "Performing Tasks with My.Application, My.Computer, and My.User (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

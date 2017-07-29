@@ -1,5 +1,5 @@
 ---
-title: "Parallel Programming in the .NET Framework | Microsoft Docs"
+title: "Parallel Programming in the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

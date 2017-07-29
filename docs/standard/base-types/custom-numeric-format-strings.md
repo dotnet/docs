@@ -1,5 +1,5 @@
 ---
-title: "Custom Numeric Format Strings | Microsoft Docs"
+title: "Custom Numeric Format Strings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -42,7 +42,7 @@ You can create a custom numeric format string, which consists of one or more cus
 |"%"|Percentage placeholder|Multiplies a number by 100 and inserts a localized percentage symbol in the result string.<br /><br /> More information: [The "%" Custom Specifier](#SpecifierPct).|0.3697 ("%#0.00", en-US) -> %36.97<br /><br /> 0.3697 ("%#0.00", el-GR) -> %36,97<br /><br /> 0.3697 ("##.0 %", en-US) -> 37.0 %<br /><br /> 0.3697 ("##.0 %", el-GR) -> 37,0 %|  
 |"‰"|Per mille placeholder|Multiplies a number by 1000 and inserts a localized per mille symbol in the result string.<br /><br /> More information: [The "‰" Custom Specifier](#SpecifierPerMille).|0.03697 ("#0.00‰", en-US) -> 36.97‰<br /><br /> 0.03697 ("#0.00‰", ru-RU) -> 36,97‰|  
 |"E0"<br /><br /> "E+0"<br /><br /> "E-0"<br /><br /> "e0"<br /><br /> "e+0"<br /><br /> "e-0"|Exponential notation|If followed by at least one 0 (zero), formats the result using exponential notation. The case of "E" or "e" indicates the case of the exponent symbol in the result string. The number of zeros following the "E" or "e" character determines the minimum number of digits in the exponent. A plus sign (+) indicates that a sign character always precedes the exponent. A minus sign (-) indicates that a sign character precedes only negative exponents.<br /><br /> More information: [The "E" and "e" Custom Specifiers](#SpecifierExponent).|987654 ("#0.0e0") -> 98.8e4<br /><br /> 1503.92311 ("0.0##e+00") -> 1.504e+03<br /><br /> 1.8901385E-16 ("0.0e+00") -> 1.9e-16|  
-|\|Escape character|Causes the next character to be interpreted as a literal rather than as a custom format specifier.<br /><br /> More information: [The "\\" Escape Character](#SpecifierEscape).|987654 ("\\###00\\#") -> #987654#|  
+|"\\"|Escape character|Causes the next character to be interpreted as a literal rather than as a custom format specifier.<br /><br /> More information: [The "\\" Escape Character](#SpecifierEscape).|987654 ("\\###00\\#") -> #987654#|  
 |'*string*'<br /><br /> "*string*"|Literal string delimiter|Indicates that the enclosed characters should be copied to the result string unchanged.|68 ("# ' degrees'") -> 68  degrees<br /><br /> 68 ("#' degrees'") -> 68 degrees|  
 |;|Section separator|Defines sections with separate format strings for positive, negative, and zero numbers.<br /><br /> More information: [The ";" Section Separator](#SectionSeparator).|12.345 ("#0.0#;(#0.0#);-\0-") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#);-\0-") -> -0-<br /><br /> -12.345 ("#0.0#;(#0.0#);-\0-") -> (12.35)<br /><br /> 12.345 ("#0.0#;(#0.0#)") -> 12.35<br /><br /> 0 ("#0.0#;(#0.0#)") -> 0.0<br /><br /> -12.345 ("#0.0#;(#0.0#)") -> (12.35)|  
 |Other|All other characters|The character is copied to the result string unchanged.|68 ("# °") -> 68 °|  

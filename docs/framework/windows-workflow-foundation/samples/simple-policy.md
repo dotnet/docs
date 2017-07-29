@@ -1,5 +1,5 @@
 ---
-title: "Simple Policy | Microsoft Docs"
+title: "Simple Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

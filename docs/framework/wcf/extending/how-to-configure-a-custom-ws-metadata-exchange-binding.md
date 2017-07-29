@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure a Custom WS-Metadata Exchange Binding | Microsoft Docs"
+title: "How to: Configure a Custom WS-Metadata Exchange Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

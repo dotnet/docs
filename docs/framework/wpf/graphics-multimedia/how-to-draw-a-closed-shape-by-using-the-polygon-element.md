@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Closed Shape by Using the Polygon Element | Microsoft Docs"
+title: "How to: Draw a Closed Shape by Using the Polygon Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

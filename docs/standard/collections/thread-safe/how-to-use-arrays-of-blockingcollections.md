@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Arrays of Blocking Collections in a Pipeline | Microsoft Docs"
+title: "How to: Use Arrays of Blocking Collections in a Pipeline"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

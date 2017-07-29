@@ -1,5 +1,5 @@
 ---
-title: "FILESTREAM Data | Microsoft Docs"
+title: "FILESTREAM Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

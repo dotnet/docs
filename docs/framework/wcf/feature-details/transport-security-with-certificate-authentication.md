@@ -1,5 +1,5 @@
 ---
-title: "Transport Security with Certificate Authentication | Microsoft Docs"
+title: "Transport Security with Certificate Authentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

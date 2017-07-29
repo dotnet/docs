@@ -1,5 +1,5 @@
 ---
-title: "How to: Define Resize and Positioning Behavior in a Split Window | Microsoft Docs"
+title: "How to: Define Resize and Positioning Behavior in a Split Window"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

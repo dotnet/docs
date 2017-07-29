@@ -1,5 +1,5 @@
 ---
-title: "The file is currently open for writing | Microsoft Docs"
+title: "The file is currently open for writing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

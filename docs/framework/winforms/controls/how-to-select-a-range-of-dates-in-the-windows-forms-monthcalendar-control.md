@@ -1,5 +1,5 @@
 ---
-title: "How to: Select a Range of Dates in the Windows Forms MonthCalendar Control | Microsoft Docs"
+title: "How to: Select a Range of Dates in the Windows Forms MonthCalendar Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

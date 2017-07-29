@@ -1,5 +1,5 @@
 ---
-title: "SaveFileDialog Component (Windows Forms) | Microsoft Docs"
+title: "SaveFileDialog Component (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

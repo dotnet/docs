@@ -1,5 +1,5 @@
 ---
-title: "How to: Lock Down Endpoints in the Enterprise | Microsoft Docs"
+title: "How to: Lock Down Endpoints in the Enterprise"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

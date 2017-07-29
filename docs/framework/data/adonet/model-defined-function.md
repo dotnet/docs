@@ -1,5 +1,5 @@
 ---
-title: "model-defined function | Microsoft Docs"
+title: "model-defined function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

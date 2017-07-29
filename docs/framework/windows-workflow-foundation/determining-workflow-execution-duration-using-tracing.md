@@ -1,5 +1,5 @@
 ---
-title: "Determining Workflow Execution Duration Using Tracing | Microsoft Docs"
+title: "Determining Workflow Execution Duration Using Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

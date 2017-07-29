@@ -1,5 +1,5 @@
 ---
-title: "Changing the Cache Sharing Levels for Send Activities | Microsoft Docs"
+title: "Changing the Cache Sharing Levels for Send Activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

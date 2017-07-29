@@ -1,5 +1,5 @@
 ---
-title: "Comparing GUID and uniqueidentifier Values | Microsoft Docs"
+title: "Comparing GUID and uniqueidentifier Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

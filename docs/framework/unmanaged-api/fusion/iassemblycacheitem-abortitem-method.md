@@ -1,5 +1,5 @@
 ---
-title: "IAssemblyCacheItem::AbortItem Method | Microsoft Docs"
+title: "IAssemblyCacheItem::AbortItem Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

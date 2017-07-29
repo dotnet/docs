@@ -1,5 +1,5 @@
 ---
-title: "Constructing and Drawing Curves | Microsoft Docs"
+title: "Constructing and Drawing Curves"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

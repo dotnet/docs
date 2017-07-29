@@ -1,5 +1,5 @@
 ---
-title: "User-Defined Data Type | Microsoft Docs"
+title: "User-Defined Data Type"
 
 ms.date: "2015-07-20"
 ms.prod: .net

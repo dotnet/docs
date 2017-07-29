@@ -1,5 +1,5 @@
 ---
-title: "Comparison Expressions | Microsoft Docs"
+title: "Comparison Expressions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Using Transformations to Scale Colors | Microsoft Docs"
+title: "Using Transformations to Scale Colors"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

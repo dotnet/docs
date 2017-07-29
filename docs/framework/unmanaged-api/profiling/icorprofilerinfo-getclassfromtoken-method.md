@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo::GetClassFromToken Method | Microsoft Docs"
+title: "ICorProfilerInfo::GetClassFromToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

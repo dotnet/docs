@@ -1,5 +1,5 @@
 ---
-title: "Range variable &lt;variable&gt; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression | Microsoft Docs"
+title: "Range variable &lt;variable&gt; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression"
 
 ms.date: "2015-07-20"
 ms.prod: .net

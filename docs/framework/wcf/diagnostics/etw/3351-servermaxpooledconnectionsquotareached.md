@@ -1,5 +1,5 @@
 ---
-title: "3351 - ServerMaxPooledConnectionsQuotaReached | Microsoft Docs"
+title: "3351 - ServerMaxPooledConnectionsQuotaReached"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

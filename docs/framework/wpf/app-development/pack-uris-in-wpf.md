@@ -1,5 +1,5 @@
 ---
-title: "Pack URIs in WPF | Microsoft Docs"
+title: "Pack URIs in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

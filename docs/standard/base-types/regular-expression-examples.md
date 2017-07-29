@@ -1,5 +1,5 @@
 ---
-title: "Regular Expression Examples | Microsoft Docs"
+title: "Regular Expression Examples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

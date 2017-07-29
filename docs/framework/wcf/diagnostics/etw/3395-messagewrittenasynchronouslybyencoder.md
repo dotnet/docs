@@ -1,5 +1,5 @@
 ---
-title: "3395 - MessageWrittenAsynchronouslyByEncoder | Microsoft Docs"
+title: "3395 - MessageWrittenAsynchronouslyByEncoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

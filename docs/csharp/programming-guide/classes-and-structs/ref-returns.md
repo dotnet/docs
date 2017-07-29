@@ -1,7 +1,6 @@
 ---
-title: "Ref return values and ref locals (C# Guide) |  | Microsoft Docs"
+title: "Ref return values and ref locals (C# Guide)"
 description: "Learn how to define and use ref return and ref local values"
-keywords: "ref returns, C#", "reference return values, C#", "ref return values, C#", "ref locals, C#", "ref local values, C#" 
 author: "rpetrusha"
 ms.author: "ronpet"
 ms.date: "05/30/2017"

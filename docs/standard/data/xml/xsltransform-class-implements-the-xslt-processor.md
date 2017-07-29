@@ -1,5 +1,5 @@
 ---
-title: "XslTransform Class Implements the XSLT Processor | Microsoft Docs"
+title: "XslTransform Class Implements the XSLT Processor"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

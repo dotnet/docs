@@ -1,5 +1,5 @@
 ---
-title: "717 - HttpSendStreamedMessageStart | Microsoft Docs"
+title: "717 - HttpSendStreamedMessageStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

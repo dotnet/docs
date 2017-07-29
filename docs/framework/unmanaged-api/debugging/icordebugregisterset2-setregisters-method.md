@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugRegisterSet2::SetRegisters Method | Microsoft Docs"
+title: "ICorDebugRegisterSet2::SetRegisters Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Reflection & code generation | Microsoft Docs
+title: Reflection & code generation
 description: Reflection & code generation
 keywords: .NET, .NET Core
 ms.date: 06/20/2016
@@ -8,7 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 53339c51-0fbc-4827-9de2-39c805bfc06b
-redirect_url: /dotnet/articles/framework/reflection-and-codedom/reflection
+redirect_url: /dotnet/framework/reflection-and-codedom/reflection
 ---
 
 # 🔧 Reflection & code generation

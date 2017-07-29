@@ -1,5 +1,5 @@
 ---
-title: "Specify Relations Between Elements with No Nesting | Microsoft Docs"
+title: "Specify Relations Between Elements with No Nesting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

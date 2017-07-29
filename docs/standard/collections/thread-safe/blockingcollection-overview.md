@@ -1,5 +1,5 @@
 ---
-title: "BlockingCollection Overview | Microsoft Docs"
+title: "BlockingCollection Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

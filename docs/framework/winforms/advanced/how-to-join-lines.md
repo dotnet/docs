@@ -1,5 +1,5 @@
 ---
-title: "How to: Join Lines | Microsoft Docs"
+title: "How to: Join Lines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

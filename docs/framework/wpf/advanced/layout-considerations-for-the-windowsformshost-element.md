@@ -1,5 +1,5 @@
 ---
-title: "Layout Considerations for the WindowsFormsHost Element | Microsoft Docs"
+title: "Layout Considerations for the WindowsFormsHost Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

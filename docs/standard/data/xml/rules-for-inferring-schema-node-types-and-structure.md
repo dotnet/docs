@@ -1,5 +1,5 @@
 ---
-title: "Rules for Inferring Schema Node Types and Structure | Microsoft Docs"
+title: "Rules for Inferring Schema Node Types and Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

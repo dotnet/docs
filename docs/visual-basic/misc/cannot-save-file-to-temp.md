@@ -1,5 +1,5 @@
 ---
-title: "Cannot save file to TEMP | Microsoft Docs"
+title: "Cannot save file to TEMP"
 
 ms.date: "2015-07-20"
 ms.prod: .net

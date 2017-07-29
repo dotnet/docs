@@ -1,5 +1,5 @@
 ---
-title: "Working with Assemblies and the Global Assembly Cache | Microsoft Docs"
+title: "Working with Assemblies and the Global Assembly Cache"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

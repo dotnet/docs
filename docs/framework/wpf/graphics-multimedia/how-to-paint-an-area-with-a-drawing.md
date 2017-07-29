@@ -1,5 +1,5 @@
 ---
-title: "How to: Paint an Area with a Drawing | Microsoft Docs"
+title: "How to: Paint an Area with a Drawing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

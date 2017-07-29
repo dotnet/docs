@@ -1,5 +1,5 @@
 ---
-title: "Constrained Execution Regions | Microsoft Docs"
+title: "Constrained Execution Regions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

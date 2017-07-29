@@ -1,5 +1,5 @@
 ---
-title: "Percent of Max Concurrent Calls | Microsoft Docs"
+title: "Percent of Max Concurrent Calls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

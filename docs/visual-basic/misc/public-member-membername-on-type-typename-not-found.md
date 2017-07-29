@@ -1,5 +1,5 @@
 ---
-title: "Public member &#39;&lt;membername&gt;&#39; on type &#39;&lt;typename&gt;&#39; not found | Microsoft Docs"
+title: "Public member &#39;&lt;membername&gt;&#39; on type &#39;&lt;typename&gt;&#39; not found"
 
 ms.date: "2015-07-20"
 ms.prod: .net

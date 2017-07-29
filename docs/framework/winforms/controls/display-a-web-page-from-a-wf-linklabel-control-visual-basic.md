@@ -1,5 +1,5 @@
 ---
-title: "How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic) | Microsoft Docs"
+title: "How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

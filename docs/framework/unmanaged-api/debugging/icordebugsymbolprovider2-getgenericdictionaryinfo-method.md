@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method | Microsoft Docs"
+title: "ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

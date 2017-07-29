@@ -1,6 +1,6 @@
 ---
-title: Properties | Microsoft Docs
-description: Properties
+title: Properties
+description: Learn about C# properties, which include features for validation, computed values, lazy evaluation, and property changed notifications. 
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

@@ -1,5 +1,5 @@
 ---
-title: "Type List (Visual Basic) | Microsoft Docs"
+title: "Type List (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

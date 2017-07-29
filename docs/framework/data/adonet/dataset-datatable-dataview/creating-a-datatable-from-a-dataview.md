@@ -1,5 +1,5 @@
 ---
-title: "Creating a DataTable from a DataView | Microsoft Docs"
+title: "Creating a DataTable from a DataView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

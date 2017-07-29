@@ -1,6 +1,6 @@
 ---
-title: Async Overview | Microsoft Docs
-description: Async Overview
+title: Async Overview
+description: Learn how async programming is a key technique that makes it straightforward to handle blocking I/O and concurrent operations on multiple cores.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn

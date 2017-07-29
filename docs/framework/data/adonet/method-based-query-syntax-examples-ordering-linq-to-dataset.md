@@ -1,5 +1,5 @@
 ---
-title: "Method-Based Query Syntax Examples: Ordering (LINQ to DataSet) | Microsoft Docs"
+title: "Method-Based Query Syntax Examples: Ordering (LINQ to DataSet)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

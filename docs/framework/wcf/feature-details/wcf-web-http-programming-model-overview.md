@@ -1,5 +1,5 @@
 ---
-title: "WCF Web HTTP Programming Model Overview | Microsoft Docs"
+title: "WCF Web HTTP Programming Model Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

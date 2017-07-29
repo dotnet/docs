@@ -1,5 +1,5 @@
 ---
-title: What OS to target with .NET containers | Microsoft Docs 
+title: What OS to target with .NET containers
 description: .NET Microservices Architecture for Containerized .NET Applications | What OS to target with .NET containers
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

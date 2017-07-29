@@ -1,5 +1,5 @@
 ---
-title: "Enabling a Data Source for LINQ Querying1 | Microsoft Docs"
+title: "Enabling a Data Source for LINQ Querying1"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

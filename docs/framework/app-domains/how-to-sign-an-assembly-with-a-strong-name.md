@@ -1,5 +1,5 @@
 ---
-title: "How to: Sign an Assembly with a Strong Name | Microsoft Docs"
+title: "How to: Sign an Assembly with a Strong Name"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

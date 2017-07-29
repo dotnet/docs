@@ -1,5 +1,5 @@
 ---
-title: "How to: Reference a Strong-Named Assembly | Microsoft Docs"
+title: "How to: Reference a Strong-Named Assembly"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

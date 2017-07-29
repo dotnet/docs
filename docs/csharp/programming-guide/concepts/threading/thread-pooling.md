@@ -1,5 +1,5 @@
 ---
-title: "Thread Pooling (C#) | Microsoft Docs"
+title: "Thread Pooling (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

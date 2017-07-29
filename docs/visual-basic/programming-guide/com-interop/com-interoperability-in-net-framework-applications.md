@@ -1,5 +1,5 @@
 ---
-title: "COM Interoperability in .NET Framework Applications (Visual Basic) | Microsoft Docs"
+title: "COM Interoperability in .NET Framework Applications (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

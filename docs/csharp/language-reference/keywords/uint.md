@@ -1,5 +1,5 @@
 ---
-title: "uint (C# Reference) | Microsoft Docs"
+title: "uint (C# Reference)"
 ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 

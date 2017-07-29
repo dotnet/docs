@@ -1,5 +1,5 @@
 ---
-title: "Drawing, Positioning, and Cloning Images in GDI+ | Microsoft Docs"
+title: "Drawing, Positioning, and Cloning Images in GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

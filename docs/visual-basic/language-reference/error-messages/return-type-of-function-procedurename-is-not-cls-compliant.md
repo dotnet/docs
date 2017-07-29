@@ -1,5 +1,5 @@
 ---
-title: "Return type of function &#39;&lt;procedurename&gt;&#39; is not CLS-compliant | Microsoft Docs"
+title: "Return type of function &#39;&lt;procedurename&gt;&#39; is not CLS-compliant"
 
 ms.date: "2015-07-20"
 ms.prod: .net

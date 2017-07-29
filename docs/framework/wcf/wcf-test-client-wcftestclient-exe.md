@@ -1,5 +1,5 @@
 ---
-title: "WCF Test Client (WcfTestClient.exe) | Microsoft Docs"
+title: "WCF Test Client (WcfTestClient.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

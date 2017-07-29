@@ -1,5 +1,5 @@
 ---
-title: "ICorDebug::GetProcess Method | Microsoft Docs"
+title: "ICorDebug::GetProcess Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

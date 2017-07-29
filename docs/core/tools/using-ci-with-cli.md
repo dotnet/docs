@@ -1,5 +1,5 @@
 ---
-title: Using .NET Core SDK and tools in Continuous Integration (CI) | Microsoft Docs
+title: Using .NET Core SDK and tools in Continuous Integration (CI)
 description: Information on the usage of the .NET Core SDK and its tools on the build server.
 keywords: .NET, .NET Core, continuous integration, ci, build, automation, Travis CI, AppVeyor, Visual Studio Team Services, vsts
 author: guardrex

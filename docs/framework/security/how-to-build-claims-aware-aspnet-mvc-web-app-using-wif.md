@@ -1,5 +1,5 @@
 ---
-title: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF | Microsoft Docs"
+title: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Preventing Replay Attacks When a WCF Service is Hosted in a Web Farm | Microsoft Docs"
+title: "Preventing Replay Attacks When a WCF Service is Hosted in a Web Farm"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Execute a Workflow in an Imperative TransactionScope | Microsoft Docs"
+title: "Execute a Workflow in an Imperative TransactionScope"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

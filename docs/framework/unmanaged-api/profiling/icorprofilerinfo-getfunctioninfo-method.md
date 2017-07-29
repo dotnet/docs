@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo::GetFunctionInfo Method | Microsoft Docs"
+title: "ICorProfilerInfo::GetFunctionInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Middle-Tier Client Applications | Microsoft Docs"
+title: "Middle-Tier Client Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

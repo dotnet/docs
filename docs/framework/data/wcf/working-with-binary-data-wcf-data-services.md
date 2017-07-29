@@ -1,5 +1,5 @@
 ---
-title: "Working with Binary Data (WCF Data Services) | Microsoft Docs"
+title: "Working with Binary Data (WCF Data Services)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

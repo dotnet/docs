@@ -1,5 +1,5 @@
 ---
-title: "How to: Load and Unload Assemblies (C#) | Microsoft Docs"
+title: "How to: Load and Unload Assemblies (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

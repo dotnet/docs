@@ -1,5 +1,5 @@
 ---
-title: "Dates, times, and time zones | Microsoft Docs"
+title: "Dates, times, and time zones"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

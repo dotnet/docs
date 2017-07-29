@@ -1,5 +1,5 @@
 ---
-title: "How to: Execute Expression Trees (C#) | Microsoft Docs"
+title: "How to: Execute Expression Trees (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

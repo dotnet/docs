@@ -1,5 +1,5 @@
 ---
-title: "&lt;see&gt; (Visual Basic) | Microsoft Docs"
+title: "&lt;see&gt; (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

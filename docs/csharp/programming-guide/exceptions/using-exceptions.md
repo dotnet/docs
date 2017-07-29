@@ -1,5 +1,5 @@
 ---
-title: "Using Exceptions (C# Programming Guide) | Microsoft Docs"
+title: "Using Exceptions (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

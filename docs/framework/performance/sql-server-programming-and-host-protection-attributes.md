@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Programming and Host Protection Attributes | Microsoft Docs"
+title: "SQL Server Programming and Host Protection Attributes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

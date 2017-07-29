@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Custom Authorization Policy | Microsoft Docs"
+title: "How to: Create a Custom Authorization Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

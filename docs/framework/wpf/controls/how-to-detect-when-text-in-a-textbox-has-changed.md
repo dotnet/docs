@@ -1,5 +1,5 @@
 ---
-title: "How to: Detect When Text in a TextBox Has Changed | Microsoft Docs"
+title: "How to: Detect When Text in a TextBox Has Changed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

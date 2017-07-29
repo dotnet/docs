@@ -1,5 +1,5 @@
 ---
-title: "Exceptions Reference | Microsoft Docs"
+title: "Exceptions Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

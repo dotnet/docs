@@ -1,5 +1,5 @@
 ---
-title: "Math Summary (Visual Basic) | Microsoft Docs"
+title: "Math Summary (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

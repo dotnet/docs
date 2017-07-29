@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.PortSharing.SharedManagerServiceEndpointNotExist | Microsoft Docs"
+title: "System.ServiceModel.PortSharing.SharedManagerServiceEndpointNotExist"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

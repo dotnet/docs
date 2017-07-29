@@ -1,5 +1,5 @@
 ---
-title: "How to: Qualify XML Element and XML Attribute Names | Microsoft Docs"
+title: "How to: Qualify XML Element and XML Attribute Names"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

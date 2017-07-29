@@ -1,5 +1,5 @@
 ---
-title: "Semaphore and SemaphoreSlim | Microsoft Docs"
+title: "Semaphore and SemaphoreSlim"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

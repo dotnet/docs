@@ -1,5 +1,5 @@
 ---
-title: "Dates and Times Summary (Visual Basic) | Microsoft Docs"
+title: "Dates and Times Summary (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

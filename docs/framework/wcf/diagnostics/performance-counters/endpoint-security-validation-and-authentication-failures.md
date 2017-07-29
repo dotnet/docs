@@ -1,5 +1,5 @@
 ---
-title: "Endpoint: Security Validation and Authentication Failures | Microsoft Docs"
+title: "Endpoint: Security Validation and Authentication Failures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

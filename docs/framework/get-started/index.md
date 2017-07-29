@@ -1,5 +1,5 @@
 ---
-title: "Get started with the .NET Framework | Microsoft Docs"
+title: "Get started with the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

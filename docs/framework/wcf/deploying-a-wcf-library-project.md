@@ -1,5 +1,5 @@
 ---
-title: "Deploying a WCF Library Project | Microsoft Docs"
+title: "Deploying a WCF Library Project"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

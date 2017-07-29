@@ -1,5 +1,5 @@
 ---
-title: "Custom Activity to Switch on a Range of Values | Microsoft Docs"
+title: "Custom Activity to Switch on a Range of Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

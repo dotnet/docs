@@ -1,5 +1,5 @@
 ---
-title: "Task 3: Create the Toolbox and PropertyGrid Panes | Microsoft Docs"
+title: "Task 3: Create the Toolbox and PropertyGrid Panes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Iterate Through All Nodes of a Windows Forms TreeView Control | Microsoft Docs"
+title: "How to: Iterate Through All Nodes of a Windows Forms TreeView Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

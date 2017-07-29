@@ -1,5 +1,5 @@
 ---
-title: "COR_PRF_JIT_CACHE Enumeration | Microsoft Docs"
+title: "COR_PRF_JIT_CACHE Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

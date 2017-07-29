@@ -1,5 +1,5 @@
 ---
-title: "FunctionEnter3WithInfo Function | Microsoft Docs"
+title: "FunctionEnter3WithInfo Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

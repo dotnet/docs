@@ -1,5 +1,5 @@
 ---
-title: "Using Activity Delegates | Microsoft Docs"
+title: "Using Activity Delegates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

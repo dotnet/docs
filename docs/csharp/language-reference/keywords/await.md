@@ -1,5 +1,5 @@
 ---
-title: "await (C# Reference) | Microsoft Docs"
+title: "await (C# Reference)"
 ms.date: "2017-05-22"
 ms.prod: .net
 ms.technology: 

@@ -203,7 +203,7 @@
 #### [Strongly Typed Delegates](csharp/delegates-strongly-typed.md)
 #### [Common Patterns for Delegates](csharp/delegates-patterns.md)
 #### [Introduction to Events](csharp/events-overview.md)
-#### [The .NET Event Pattern](csharp/event-pattern.md)
+#### [Standard .NET event patterns](csharp/event-pattern.md)
 #### [The Updated .NET Event Pattern](csharp/modern-events.md)
 #### [Distinguishing Delegates and Events](csharp/distinguish-delegates-events.md)
 ### [Language Integrated Query (LINQ)](csharp/linq/)
@@ -233,11 +233,11 @@
 # [F# Guide](fsharp/index.md)
 
 ## [Tour of F#](fsharp/tour.md)
-### [Get Started](fsharp/get-started/index.md)
-#### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
-#### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
-#### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
-#### [Get Started with Command-line Tools](fsharp/get-started/get-started-command-line.md)
+## [Get Started](fsharp/get-started/index.md)
+### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
+### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
+### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
@@ -1059,7 +1059,7 @@
 ##### [/win32resource](visual-basic/reference/command-line-compiler/win32resource.md)
 #### [Compiler Options Listed by Category](visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
 ### [.NET Framework Reference Information](visual-basic/reference/net-framework-reference-information.md)
-### [Language Specification](visual-basic/reference/language-specification.md)
+### [Language Specification](visual-basic/reference/language-specification/)
 ## [Sample Applications](visual-basic/sample-applications.md)
 ## [Walkthroughs](visual-basic/walkthroughs.md)
 

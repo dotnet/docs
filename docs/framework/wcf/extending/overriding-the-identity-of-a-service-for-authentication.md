@@ -1,5 +1,5 @@
 ---
-title: "Overriding the Identity of a Service for Authentication | Microsoft Docs"
+title: "Overriding the Identity of a Service for Authentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

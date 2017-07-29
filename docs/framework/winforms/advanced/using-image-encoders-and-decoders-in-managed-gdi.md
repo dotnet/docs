@@ -1,5 +1,5 @@
 ---
-title: "Using Image Encoders and Decoders in Managed GDI+ | Microsoft Docs"
+title: "Using Image Encoders and Decoders in Managed GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

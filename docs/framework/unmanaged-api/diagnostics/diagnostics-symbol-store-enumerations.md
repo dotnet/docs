@@ -1,5 +1,5 @@
 ---
-title: "Diagnostics Symbol Store Enumerations | Microsoft Docs"
+title: "Diagnostics Symbol Store Enumerations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

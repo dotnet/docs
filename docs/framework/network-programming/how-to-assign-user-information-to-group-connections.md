@@ -1,5 +1,5 @@
 ---
-title: "How to: Assign User Information to Group Connections | Microsoft Docs"
+title: "How to: Assign User Information to Group Connections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

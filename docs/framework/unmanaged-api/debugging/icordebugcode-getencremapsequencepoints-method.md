@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode::GetEnCRemapSequencePoints Method | Microsoft Docs"
+title: "ICorDebugCode::GetEnCRemapSequencePoints Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Array dimensions do not match those specified in the &#39;VBFixedArray&#39; attribute | Microsoft Docs"
+title: "Array dimensions do not match those specified in the &#39;VBFixedArray&#39; attribute"
 
 ms.date: "2015-07-20"
 ms.prod: .net

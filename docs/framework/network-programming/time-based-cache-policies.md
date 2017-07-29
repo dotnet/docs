@@ -1,5 +1,5 @@
 ---
-title: "Time-Based Cache Policies | Microsoft Docs"
+title: "Time-Based Cache Policies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

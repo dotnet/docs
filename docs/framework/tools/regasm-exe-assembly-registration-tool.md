@@ -1,5 +1,5 @@
 ---
-title: "Regasm.exe (Assembly Registration Tool) | Microsoft Docs"
+title: "Regasm.exe (Assembly Registration Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

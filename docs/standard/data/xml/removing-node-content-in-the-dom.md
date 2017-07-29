@@ -1,5 +1,5 @@
 ---
-title: "Removing Node Content in the DOM | Microsoft Docs"
+title: "Removing Node Content in the DOM"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Control and Component Authoring | Microsoft Docs"
+title: "Troubleshooting Control and Component Authoring"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

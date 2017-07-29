@@ -1,5 +1,5 @@
 ---
-title: "Adjusting the size and scale of Windows Forms | Microsoft Docs"
+title: "Adjusting the size and scale of Windows Forms"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

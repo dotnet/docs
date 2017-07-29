@@ -1,5 +1,5 @@
 ---
-title: "How To: Opt Out of File Dialog Box Automatic Upgrade | Microsoft Docs"
+title: "How To: Opt Out of File Dialog Box Automatic Upgrade"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Accessing the Web by Using async and await (C#) | Microsoft Docs"
+title: "Walkthrough: Accessing the Web by Using async and await (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

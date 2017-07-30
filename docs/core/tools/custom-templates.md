@@ -14,7 +14,7 @@ ms.assetid: c28eb59d-4d18-4aba-bcd1-88bd887abc08
 
 # Custom templates for dotnet new
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed for you to use with the [`dotnet new` command](dotnet-new.md). Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates pre-installed to use with the [`dotnet new` command](dotnet-new.md). Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 Users install your custom template from a NuGet package on any NuGet feed, by referencing a NuGet *nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files and regions of files, and execute custom processing operations when your template is used.
 
@@ -48,7 +48,7 @@ The *template.json* file is placed in a *.template.config* folder in the root di
 | ----------------- | ------------- | ----------- |
 | `$schema`         | URI           | The JSON schema for the *template.json* file. Editors that support JSON schemas enable JSON-editing features when the schema is specified. For example, [Visual Studio Code](https://code.visualstudio.com/) requires this member to enable IntelliSense. Use a value of `http://json.schemastore.org/template`. |
 | `author`          | string        | The author of the template. |
-| `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the `dotnet new -l|--list` command. |
+| `classifications` | array(string) | Zero or more characteristics of the template that a user might use to find the template when searching for it. The classifications also appear in the *Tags* column when it appears in a list of templates produced by using the <code>dotnet new -l&#124;--list</code> command. |
 | `identity`        | string        | A unique name for this template. |
 | `name`            | string        | The name for the template that users should see. |
 | `shortName`       | string        | A default shorthand for selecting the template that applies to environments where the template name is specified by the user, not selected via a GUI. For example, the short name is useful when using templates from a command prompt with CLI commands. |
@@ -88,7 +88,7 @@ The contents of the project folder, together with its *.template.config/template
 | **\<description>** | string | A long description of the package for UI display. |
 | **\<id>**          | string | The case-insensitive package identifier, which must be unique across nuget.org or whatever gallery the package will reside in. IDs may not contain spaces or characters that are not valid for a URL and generally follow .NET namespace rules. See [Choosing a unique package identifier and setting the version number](/nuget/create-packages/creating-a-package#choosing-a-unique-package-identifier-and-setting-the-version-number) for guidance. |
 | **\<packageType>** | string | Place this element inside a **\<packageTypes>** element among the **\<metadata>** elements. Set the `name` attribute of the **\<packageType>** element to `Template`. |
-| **\<version>**     | string | The version of the package, following the major.minor.patch pattern. Version numbers may include a pre-release suffix as described in [Prerelease Packages](/nuget/create-packages/prerelease-packages#semantic-versioning). |
+| **\<version>**     | string | The version of the package, following the major.minor.patch pattern. Version numbers may include a pre-release suffix as described in the [Pre-release versions](/nuget/create-packages/prerelease-packages#semantic-versioning) topic. |
 
 See the [.nuspec reference](/nuget/schema/nuspec) for the complete *nuspec* file schema. An example *nuspec* file for a template appears in the [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md) tutorial.
 
@@ -98,7 +98,7 @@ See the [.nuspec reference](/nuget/schema/nuspec) for the complete *nuspec* file
 
 Install a custom template from a NuGet package on any NuGet feed by referencing a *nupkg* file directly or by specifying a file system directory that contains a templating configuration. Use the `-i|--install` option with the `dotnet new` command.
 
-### To install a template from a NuGet package stored at NuGet.org
+### To install a template from a NuGet package stored at nuget.org
 
 ```console
 dotnet new -i <NUGET_PACKAGE_ID>
@@ -120,9 +120,9 @@ dotnet new -i <FILE_SYSTEM_DIRECTORY>
 
 ## Uninstalling a template
 
-You uninstall a custom template by referencing a NuGet package by its `id` or by specifying a file system directory that contains a templating configuration. Use the `-u|--uninstall` install option with the `dotnet new` command.
+Uninstall a custom template by referencing a NuGet package by its `id` or by specifying a file system directory that contains a templating configuration. Use the `-u|--uninstall` install option with the `dotnet new` command.
 
-### To uninstall a template from a NuGet package stored at NuGet.org
+### To uninstall a template from a NuGet package stored at nuget.org
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>
@@ -130,7 +130,7 @@ dotnet new -u <NUGET_PACKAGE_ID>
 
 ### To uninstall a template from a local nupkg file
 
-Although you install a template from a *nupkg* file with the `dotnet new -i <PATH_TO_NUPKG_FILE>` command; when you wish to uninstall the template, don't attempt to use the path to the *nupkg* file. *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.* Reference the package by its `id`:
+When you wish to uninstall the template, don't attempt to use the path to the *nupkg* file. *Attempting to uninstall a template using `dotnet new -u <PATH_TO_NUPKG_FILE>` fails.* Reference the package by its `id`:
 
 ```console
 dotnet new -u <NUGET_PACKAGE_ID>

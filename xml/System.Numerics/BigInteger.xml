@@ -2728,10 +2728,28 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> object to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Decimal%29?displayProperty=fullName>.
+
+
+## Examples
+ The following example converts the individual elements in an array of <xref:System.Decimal> values to <xref:System.Numerics.BigInteger> objects, and then displays the result of each conversion. Note that any fractional part of a <xref:System.Decimal> value is truncated during the conversion.   
+
+ [!code-csharp[System.Numerics.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#1)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2760,10 +2778,37 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Double" /> value to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Double.PositiveInfinity" />.
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Double> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Double%29?displayProperty=fullName>.
+
+
+## Examples
+ The following example converts the individual elements in an array of <xref:System.Double> values to <xref:System.Numerics.BigInteger> objects, and then displays the result of each conversion. Note that any fractional part of a <xref:System.Double> value is truncated during the conversion.   
+    
+ [!code-csharp[System.Numerics.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#2)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2792,10 +2837,30 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Byte" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned byte value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CByte` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Byte> data type. There is no loss of precision in the resulting <xref:System.Byte> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Byte> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Byte> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#1)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2824,10 +2889,30 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Decimal" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a <see cref="T:System.Decimal" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Decimal.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDec` in Visual Basic) is used.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Decimal> data type. 
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Decimal> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Decimal> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#2)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#2)]  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2861,10 +2946,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Double" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a <see cref="T:System.Double" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDbl` in Visual Basic) is used.   
+
+ Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Double> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Double.MinValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Double.MaxValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.PositiveInfinity?displayProperty=fullName>.
+ 
+ The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Double> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Double> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Double> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Double> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Double.MaxValue?displayProperty=fullName>.   
+    
+ [!code-csharp[System.Numerics.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#4)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#4)]   
+
+
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Double> values.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#3)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2893,10 +3000,30 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a 16-bit signed integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 16-bit signed integer value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CShort` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int16> data type. There is no loss of precision in the resulting <xref:System.Int16> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int16> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int16> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#4)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#4)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2930,10 +3057,30 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a 32-bit signed integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 32-bit signed integer value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CInt` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int32> data type. There is no loss of precision in the resulting <xref:System.Int16> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int32> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int32> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#5)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#5)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2967,10 +3114,30 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a 64-bit signed integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 64-bit signed integer value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CLng` in Visual Basic) is used. Otherwise, they display a compiler error.  
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int64> data type. 
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int64> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int64> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#6)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#6)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3004,10 +3171,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a signed 8-bit value.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a signed 8-bit value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int16" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSByte` in Visual Basic) is used. Otherwise, they display a compiler error.  
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.SByte> data type. There is no loss of precision in the resulting <xref:System.SByte> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.SByte> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.SByte> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#7)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#7)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3036,10 +3225,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a single-precision floating-point value.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a single-precision floating-point value.</summary>
+        <returns>An object that contains the closest possible representation of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss or a loss of precision. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSng` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Single> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Single.MinValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Single.MaxValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.PositiveInfinity?displayProperty=fullName>.
+
+ The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Single> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Single> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Single> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Single> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Single.MaxValue?displayProperty=fullName>.   
+    
+ [!code-csharp[System.Numerics.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#5)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#5)]   
+
+
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Single> values.   
+     
+ [!code-csharp[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#8)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#8)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3073,10 +3284,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to an unsigned 16-bit integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 16-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int32" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUShort` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt16> data type. There is no loss of precision in the resulting <xref:System.UInt16> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt16> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt16> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#9)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#9)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3110,10 +3343,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to an unsigned 32-bit integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 32-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int64" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUInt` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt32> data type. There is no loss of precision in the resulting <xref:System.UInt32> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt32> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt32> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#10)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#10)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3147,10 +3402,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to an unsigned 64-bit integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 64-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CULng` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt64> data type. There is no loss of precision in the resulting <xref:System.UInt64> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt64> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt64> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#11)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#11)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3179,10 +3456,37 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Single" /> value to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Single.NaN" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Single.PositiveInfinity" />.
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Single.NegativeInfinity" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+ 
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Single> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Single%29?displayProperty=fullName>.
+
+
+## Examples
+ The following example converts the individual elements in an array of <xref:System.Single> values to <xref:System.Numerics.BigInteger> objects, and then displays the result of each conversion. Note that any fractional part of a <xref:System.Single> value is truncated during the conversion.
+ 
+ [!code-csharp[System.Numerics.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#3)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
@@ -3739,10 +4043,24 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of an unsigned byte to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Byte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#1)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3771,10 +4089,22 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a signed 16-bit integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#2)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3803,10 +4133,22 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a signed 32-bit integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.  
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#3)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3835,10 +4177,22 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a signed 64-bit integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int64%29?displayProperty=fullName>.   
+ 
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#4)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#4)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3872,10 +4226,24 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.#ctor(System.Int32)" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.SByte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#5)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#5)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3909,10 +4277,24 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#6)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#6)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3946,10 +4328,24 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#7)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#7)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -3983,10 +4379,24 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt64%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#8)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#8)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Increment">

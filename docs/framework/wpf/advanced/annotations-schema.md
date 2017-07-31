@@ -34,15 +34,6 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
   
  The Base Schema described in this topic defines the extensions for the <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, and Content types included with the initial [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] release.  
   
- This topic contains the following sections:  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
--   [Annotations XML Core Schema](#CoreSchema)  
-  
--   [Annotations XML Base Schema](#BaseSchema)  
-  
--   [Sample XML Created by Annotations XmlStreamStore](#SampleXML)  
-  
 <a name="CoreSchema"></a>   
 ## Annotations XML Core Schema  
  The Annotations XML Core Schema defines the XML structure that is used to store <xref:System.Windows.Annotations.Annotation> objects.  

@@ -1,10 +1,10 @@
 ---
-title: Get started with Visual Studio Code - C# Guide
+title: Get started with C# and Visual Studio Code - C# Guide | Microsoft Docs
 description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code. 
 keywords: C#, Get Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: mairaw
-ms.date: 5/02/2017
+ms.date: 8/01/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -12,9 +12,9 @@ ms.devlang: csharp
 ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 ---
 
-# Get Started with Visual Studio Code
+# Get Started with C# and Visual Studio Code
 
-.NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
+.NET Core gives you a fast and modular platform for creating applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
     * Alternatively, you can select **File** > **Open Folder** from the main menu to open your project folder.
 
 2. Initialize a C# project:
-    * Open the Integrated Terminal from Visual Studio Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick).
+    * Open the Integrated Terminal from Visual Studio Code by typing <kbd>CTRL</kbd>+<kbd>\`</kbd> (backtick). Alternatively, you can select **View** > **Integrated Terminal** from the main menu.
     * In the terminal window, type `dotnet new console`.
     * This creates a `Program.cs` file in your folder with a simple "Hello World" program already written, along with a C# project file named `HelloWorld.csproj`.
 
@@ -45,9 +45,11 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
 3. Resolve the build assets:
 
-    * Type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
+    * For **.NET Core 1.1**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
 
-  ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
+   ![The dotnet restore command](media/with-visual-studio-code/dotnetrestore.png)
+
+    * For **.NET Core 2.0**, this step is optional. The `dotnet restore` command executes automatically when a new project is created.
 
 4. Run the "Hello World" program:
 
@@ -83,7 +85,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
   ![Run and Debug](media/with-visual-studio-code/rundebug.png)
 
-7. Select the green arrow at the top to continue debugging, or press the red square to stop.
+7. Select the green arrow at the top to continue debugging, or select the red square at the top to stop.
 
 > [!TIP] 
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).

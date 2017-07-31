@@ -156,6 +156,10 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
 - The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed (returning `True` if it is and `False` otherwise). You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
 
+```PowerShell
+Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 } 
+```
+
     |Version|Minimum value of the Release DWORD|
     |-------------|--------------------------------|
     |.NET Framework 4.5|378389|
@@ -169,10 +173,6 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on all other Windows OS versions|394806|
     |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
     |.NET Framework 4.7 installed on all other Windows OS versions|460805|
-
-```PowerShell
-Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 } 
-```
 
 <a name="clr_a"></a> 
 #### To find the current runtime version by using the Clrver tool

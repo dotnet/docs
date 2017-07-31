@@ -21,7 +21,6 @@ manager: "wpickett"
 # Path Animations Overview
 <a name="introduction"></a> This topic introduces path animations, which enable you to use a geometric path to generate output values. Path animations are useful for moving and rotating objects along complex paths.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the                  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  

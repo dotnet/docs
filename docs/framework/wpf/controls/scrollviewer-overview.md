@@ -21,19 +21,6 @@ manager: "wpickett"
 # ScrollViewer Overview
 Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
   
- This topic contains the following sections:  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
--   [The ScrollViewer Control](#what_is_a_scrollviewer_element)  
-  
--   [Physical vs. Logical Scrolling](#scrollviewer_physical_vs_logical)  
-  
--   [Defining and Using a ScrollViewer Element](#scrollviewer_markup_syntax_and_sample)  
-  
--   [Styling a ScrollViewer](#scrollviewer_styling_scrollviewer)  
-  
--   [Paginating Documents](#scrollviewer_scroll_vs_paginate)  
-  
 <a name="what_is_a_scrollviewer_element"></a>   
 ## The ScrollViewer Control  
  There are two predefined elements that enable scrolling in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications: <xref:System.Windows.Controls.Primitives.ScrollBar> and <xref:System.Windows.Controls.ScrollViewer>. The <xref:System.Windows.Controls.ScrollViewer> control encapsulates horizontal and vertical <xref:System.Windows.Controls.Primitives.ScrollBar> elements and a content container (such as a <xref:System.Windows.Controls.Panel> element) in order to display other visible elements in a scrollable area. You must build a custom object in order to use the <xref:System.Windows.Controls.Primitives.ScrollBar> element for content scrolling. However, you can use the <xref:System.Windows.Controls.ScrollViewer> element by itself because it is a composite control that encapsulates <xref:System.Windows.Controls.Primitives.ScrollBar> functionality.  

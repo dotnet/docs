@@ -1618,7 +1618,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static decimal op_Addition (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static decimal operator + (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Addition(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Addition(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -1673,7 +1673,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public static decimal op_Decrement (decimal d);" />
+      <MemberSignature Language="C#" Value="public static decimal operator -- (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Decrement(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Decrement(System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -1727,7 +1727,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static decimal op_Division (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static decimal operator / (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Division(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Division(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -1784,7 +1784,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Equality(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -1839,7 +1839,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static byte op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator byte (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Byte" />
       <MemberType>Method</MemberType>
@@ -1890,7 +1890,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static char op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator char (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname char op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Char" />
       <MemberType>Method</MemberType>
@@ -1939,7 +1939,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static double op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator double (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Double" />
       <MemberType>Method</MemberType>
@@ -1990,7 +1990,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static short op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator short (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int16 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Int16" />
       <MemberType>Method</MemberType>
@@ -2041,7 +2041,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -2091,7 +2091,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -2140,7 +2140,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static sbyte op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator sbyte (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int8 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.SByte" />
       <MemberType>Method</MemberType>
@@ -2197,7 +2197,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static float op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator float (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.Single" />
       <MemberType>Method</MemberType>
@@ -2248,7 +2248,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ushort op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ushort (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int16 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.UInt16" />
       <MemberType>Method</MemberType>
@@ -2305,7 +2305,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static uint op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator uint (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int32 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.UInt32" />
       <MemberType>Method</MemberType>
@@ -2362,7 +2362,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ulong op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ulong (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int64 op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Decimal)~System.UInt64" />
       <MemberType>Method</MemberType>
@@ -2419,7 +2419,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (double value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Double)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2472,7 +2472,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (float value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Explicit(System.Single)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2524,7 +2524,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_GreaterThan(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -2581,7 +2581,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_GreaterThanOrEqual(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -2658,7 +2658,7 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (byte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Byte)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2708,7 +2708,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (char value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Char)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2758,7 +2758,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (short value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Int16)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2808,7 +2808,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (int value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Int32)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2858,7 +2858,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (long value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.Int64)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2908,7 +2908,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (sbyte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.SByte)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2965,7 +2965,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (ushort value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.UInt16)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -3022,7 +3022,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (uint value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.UInt32)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -3079,7 +3079,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Implicit (ulong value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator decimal (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Implicit(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Implicit(System.UInt64)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -3136,7 +3136,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public static decimal op_Increment (decimal d);" />
+      <MemberSignature Language="C#" Value="public static decimal operator ++ (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Increment(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Increment(System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3190,7 +3190,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Inequality(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3249,7 +3249,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_LessThan(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3306,7 +3306,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_LessThanOrEqual(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3363,7 +3363,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
-      <MemberSignature Language="C#" Value="public static decimal op_Modulus (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static decimal operator % (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Modulus(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Modulus(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3417,7 +3417,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static decimal op_Multiply (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static decimal operator * (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Multiply(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Multiply(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3472,7 +3472,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static decimal op_Subtraction (decimal d1, decimal d2);" />
+      <MemberSignature Language="C#" Value="public static decimal operator - (decimal d1, decimal d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Subtraction(valuetype System.Decimal d1, valuetype System.Decimal d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_Subtraction(System.Decimal,System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3527,7 +3527,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static decimal op_UnaryNegation (decimal d);" />
+      <MemberSignature Language="C#" Value="public static decimal operator - (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_UnaryNegation(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_UnaryNegation(System.Decimal)" />
       <MemberType>Method</MemberType>
@@ -3569,7 +3569,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
-      <MemberSignature Language="C#" Value="public static decimal op_UnaryPlus (decimal d);" />
+      <MemberSignature Language="C#" Value="public static decimal operator + (decimal d);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_UnaryPlus(valuetype System.Decimal d) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Decimal.op_UnaryPlus(System.Decimal)" />
       <MemberType>Method</MemberType>

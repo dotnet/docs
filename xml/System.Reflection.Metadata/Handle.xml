@@ -169,7 +169,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Metadata.Handle left, System.Reflection.Metadata.Handle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Metadata.Handle left, System.Reflection.Metadata.Handle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.Handle left, valuetype System.Reflection.Metadata.Handle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.op_Equality(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
       <MemberType>Method</MemberType>
@@ -195,7 +195,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Metadata.Handle left, System.Reflection.Metadata.Handle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Metadata.Handle left, System.Reflection.Metadata.Handle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.Handle left, valuetype System.Reflection.Metadata.Handle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Handle.op_Inequality(System.Reflection.Metadata.Handle,System.Reflection.Metadata.Handle)" />
       <MemberType>Method</MemberType>

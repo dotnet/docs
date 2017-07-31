@@ -738,7 +738,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.HtmlWindow left, System.Windows.Forms.HtmlWindow right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.HtmlWindow left, System.Windows.Forms.HtmlWindow right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Forms.HtmlWindow left, class System.Windows.Forms.HtmlWindow right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.op_Equality(System.Windows.Forms.HtmlWindow,System.Windows.Forms.HtmlWindow)" />
       <MemberType>Method</MemberType>
@@ -770,7 +770,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.HtmlWindow left, System.Windows.Forms.HtmlWindow right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.HtmlWindow left, System.Windows.Forms.HtmlWindow right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Forms.HtmlWindow left, class System.Windows.Forms.HtmlWindow right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.op_Inequality(System.Windows.Forms.HtmlWindow,System.Windows.Forms.HtmlWindow)" />
       <MemberType>Method</MemberType>

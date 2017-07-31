@@ -633,7 +633,7 @@ ChildInNoNamespace element is in no namespace
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XName op_Addition (System.Xml.Linq.XNamespace ns, string localName);" />
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XName operator + (System.Xml.Linq.XNamespace ns, string localName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Xml.Linq.XName op_Addition(class System.Xml.Linq.XNamespace ns, string localName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Addition(System.Xml.Linq.XNamespace,System.String)" />
       <MemberType>Method</MemberType>
@@ -724,7 +724,7 @@ End Module
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xml.Linq.XNamespace left, System.Xml.Linq.XNamespace right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Xml.Linq.XNamespace left, System.Xml.Linq.XNamespace right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xml.Linq.XNamespace left, class System.Xml.Linq.XNamespace right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Equality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)" />
       <MemberType>Method</MemberType>
@@ -795,7 +795,7 @@ True
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNamespace op_Implicit (string namespaceName);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Xml.Linq.XNamespace (string namespaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Xml.Linq.XNamespace op_Implicit(string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Implicit(System.String)~System.Xml.Linq.XNamespace" />
       <MemberType>Method</MemberType>
@@ -833,7 +833,7 @@ True
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xml.Linq.XNamespace left, System.Xml.Linq.XNamespace right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Xml.Linq.XNamespace left, System.Xml.Linq.XNamespace right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xml.Linq.XNamespace left, class System.Xml.Linq.XNamespace right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNamespace.op_Inequality(System.Xml.Linq.XNamespace,System.Xml.Linq.XNamespace)" />
       <MemberType>Method</MemberType>

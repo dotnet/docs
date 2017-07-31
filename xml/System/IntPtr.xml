@@ -328,7 +328,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Addition (IntPtr pointer, int offset);" />
+      <MemberSignature Language="C#" Value="public static IntPtr operator + (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Addition(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Addition(System.IntPtr,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -384,7 +384,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (IntPtr value1, IntPtr value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (IntPtr value1, IntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(native int value1, native int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
@@ -429,7 +429,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (int value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Int32)~System.IntPtr" />
       <MemberType>Method</MemberType>
@@ -469,7 +469,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (long value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Int64)~System.IntPtr" />
       <MemberType>Method</MemberType>
@@ -510,7 +510,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (IntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -552,7 +552,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (IntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -587,7 +587,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static void* op_Explicit (IntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator void* (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname void* op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Void*" />
       <MemberType>Method</MemberType>
@@ -629,7 +629,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (void* value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (void* value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Void*)~System.IntPtr" />
       <MemberType>Method</MemberType>
@@ -675,7 +675,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (IntPtr value1, IntPtr value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (IntPtr value1, IntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(native int value1, native int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Inequality(System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
@@ -720,7 +720,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Subtraction (IntPtr pointer, int offset);" />
+      <MemberSignature Language="C#" Value="public static IntPtr operator - (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Subtraction(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Subtraction(System.IntPtr,System.Int32)" />
       <MemberType>Method</MemberType>

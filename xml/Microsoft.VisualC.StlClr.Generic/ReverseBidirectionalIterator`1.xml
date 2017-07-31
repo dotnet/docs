@@ -229,7 +229,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
       <MemberType>Method</MemberType>
@@ -251,7 +251,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -275,7 +275,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public bool op_Equality (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -305,7 +305,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public bool op_Equality (Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -332,7 +332,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt; op_Implicit ();" />
+      <MemberSignature Language="C#" Value="public implicit operator Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt; op_Implicit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Implicit~Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator{`0}" />
       <MemberType>Method</MemberType>
@@ -351,7 +351,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
       <MemberType>Method</MemberType>
@@ -373,7 +373,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; , int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -397,7 +397,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public bool op_Inequality (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -422,7 +422,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public bool op_Inequality (Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>

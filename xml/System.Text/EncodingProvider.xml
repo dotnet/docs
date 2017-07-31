@@ -131,7 +131,7 @@
         <summary>Returns the encoding associated with the specified code page identifier.</summary>
         <returns>The encoding that is associated with the specified code page, or <see langword="null" /> if this <see cref="T:System.Text.EncodingProvider" /> cannot return a valid encoding that corresponds to <paramref name="codepage" />.</returns>
         <remarks>
-        <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
 
 ## Remarks
 
@@ -182,7 +182,7 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Enc
         <summary>Returns the encoding with the specified name.</summary>
         <returns>The encoding that is associated with the specified name, or <see langword="null" /> if this <see cref="T:System.Text.EncodingProvider" /> cannot return a valid encoding that corresponds to <paramref name="name" />.</returns>
         <remarks>
-           <format type="text/markdown"><![CDATA[ 
+          <format type="text/markdown"><![CDATA[ 
       
 ## Notes to inheritors 
                   

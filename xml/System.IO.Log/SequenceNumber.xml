@@ -189,7 +189,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_Equality(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberType>Method</MemberType>
@@ -216,7 +216,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_GreaterThan(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberType>Method</MemberType>
@@ -243,7 +243,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_GreaterThanOrEqual(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberType>Method</MemberType>
@@ -270,7 +270,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_Inequality(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberType>Method</MemberType>
@@ -297,7 +297,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_LessThan(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberType>Method</MemberType>
@@ -324,7 +324,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.IO.Log.SequenceNumber c1, System.IO.Log.SequenceNumber c2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.IO.Log.SequenceNumber c1, valuetype System.IO.Log.SequenceNumber c2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.SequenceNumber.op_LessThanOrEqual(System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber)" />
       <MemberType>Method</MemberType>

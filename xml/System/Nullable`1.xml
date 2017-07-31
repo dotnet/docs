@@ -366,7 +366,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static T op_Explicit (Nullable&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator T (Nullable&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !T op_Explicit(valuetype System.Nullable`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.op_Explicit(System.Nullable{`0})~`0" />
       <MemberType>Method</MemberType>
@@ -401,7 +401,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;T&gt; op_Implicit (T value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator Nullable&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;!T&gt; op_Implicit(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Nullable`1.op_Implicit(`0)~System.Nullable{`0}" />
       <MemberType>Method</MemberType>

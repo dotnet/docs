@@ -111,7 +111,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Metadata.DocumentHandle left, System.Reflection.Metadata.DocumentHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Metadata.DocumentHandle left, System.Reflection.Metadata.DocumentHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.DocumentHandle left, valuetype System.Reflection.Metadata.DocumentHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentHandle.op_Equality(System.Reflection.Metadata.DocumentHandle,System.Reflection.Metadata.DocumentHandle)" />
       <MemberType>Method</MemberType>
@@ -137,7 +137,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.DocumentHandle op_Explicit (System.Reflection.Metadata.EntityHandle handle);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Reflection.Metadata.DocumentHandle (System.Reflection.Metadata.EntityHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.DocumentHandle op_Explicit(valuetype System.Reflection.Metadata.EntityHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentHandle.op_Explicit(System.Reflection.Metadata.EntityHandle)~System.Reflection.Metadata.DocumentHandle" />
       <MemberType>Method</MemberType>
@@ -161,7 +161,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.DocumentHandle op_Explicit (System.Reflection.Metadata.Handle handle);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Reflection.Metadata.DocumentHandle (System.Reflection.Metadata.Handle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.DocumentHandle op_Explicit(valuetype System.Reflection.Metadata.Handle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentHandle.op_Explicit(System.Reflection.Metadata.Handle)~System.Reflection.Metadata.DocumentHandle" />
       <MemberType>Method</MemberType>
@@ -185,7 +185,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.EntityHandle op_Implicit (System.Reflection.Metadata.DocumentHandle handle);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Reflection.Metadata.EntityHandle (System.Reflection.Metadata.DocumentHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.EntityHandle op_Implicit(valuetype System.Reflection.Metadata.DocumentHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentHandle.op_Implicit(System.Reflection.Metadata.DocumentHandle)~System.Reflection.Metadata.EntityHandle" />
       <MemberType>Method</MemberType>
@@ -209,7 +209,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.Handle op_Implicit (System.Reflection.Metadata.DocumentHandle handle);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Reflection.Metadata.Handle (System.Reflection.Metadata.DocumentHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.Handle op_Implicit(valuetype System.Reflection.Metadata.DocumentHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentHandle.op_Implicit(System.Reflection.Metadata.DocumentHandle)~System.Reflection.Metadata.Handle" />
       <MemberType>Method</MemberType>
@@ -233,7 +233,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Metadata.DocumentHandle left, System.Reflection.Metadata.DocumentHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Metadata.DocumentHandle left, System.Reflection.Metadata.DocumentHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.DocumentHandle left, valuetype System.Reflection.Metadata.DocumentHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentHandle.op_Inequality(System.Reflection.Metadata.DocumentHandle,System.Reflection.Metadata.DocumentHandle)" />
       <MemberType>Method</MemberType>

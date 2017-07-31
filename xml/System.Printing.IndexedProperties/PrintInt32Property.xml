@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static int op_Implicit (System.Printing.IndexedProperties.PrintInt32Property attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator int (System.Printing.IndexedProperties.PrintInt32Property attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Implicit(class System.Printing.IndexedProperties.PrintInt32Property attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.op_Implicit(System.Printing.IndexedProperties.PrintInt32Property)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static int op_Implicit (System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator int (System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Implicit(class System.Printing.IndexedProperties.PrintInt32Property modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintInt32Property.op_Implicit(System.Printing.IndexedProperties.PrintInt32Property|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Int32" />
       <MemberType>Method</MemberType>

@@ -233,7 +233,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Workflow.Activities.EventQueueName queueKey1, class System.Workflow.Activities.EventQueueName queueKey2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_Equality(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberType>Method</MemberType>
@@ -265,7 +265,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(class System.Workflow.Activities.EventQueueName queueKey1, class System.Workflow.Activities.EventQueueName queueKey2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_GreaterThan(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberType>Method</MemberType>
@@ -294,7 +294,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Workflow.Activities.EventQueueName queueKey1, class System.Workflow.Activities.EventQueueName queueKey2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_Inequality(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberType>Method</MemberType>
@@ -321,7 +321,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Workflow.Activities.EventQueueName queueKey1, System.Workflow.Activities.EventQueueName queueKey2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(class System.Workflow.Activities.EventQueueName queueKey1, class System.Workflow.Activities.EventQueueName queueKey2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventQueueName.op_LessThan(System.Workflow.Activities.EventQueueName,System.Workflow.Activities.EventQueueName)" />
       <MemberType>Method</MemberType>

@@ -406,7 +406,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_BitwiseAnd (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &amp; (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_BitwiseAnd(valuetype System.Data.OracleClient.OracleBoolean x, valuetype System.Data.OracleClient.OracleBoolean y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_BitwiseAnd(System.Data.OracleClient.OracleBoolean,System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -436,7 +436,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_BitwiseOr (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator | (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_BitwiseOr(valuetype System.Data.OracleClient.OracleBoolean x, valuetype System.Data.OracleClient.OracleBoolean y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_BitwiseOr(System.Data.OracleClient.OracleBoolean,System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -466,7 +466,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleBoolean x, valuetype System.Data.OracleClient.OracleBoolean y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_Equality(System.Data.OracleClient.OracleBoolean,System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -492,7 +492,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_ExclusiveOr (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator ^ (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_ExclusiveOr(valuetype System.Data.OracleClient.OracleBoolean x, valuetype System.Data.OracleClient.OracleBoolean y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_ExclusiveOr(System.Data.OracleClient.OracleBoolean,System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -522,7 +522,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static bool op_Explicit (System.Data.OracleClient.OracleBoolean x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator bool (System.Data.OracleClient.OracleBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Explicit(valuetype System.Data.OracleClient.OracleBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_Explicit(System.Data.OracleClient.OracleBoolean)~System.Boolean" />
       <MemberType>Method</MemberType>
@@ -544,7 +544,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleBoolean (System.Data.OracleClient.OracleNumber x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Data.OracleClient.OracleBoolean" />
       <MemberType>Method</MemberType>
@@ -566,7 +566,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Explicit (string x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleBoolean (string x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Explicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_Explicit(System.String)~System.Data.OracleClient.OracleBoolean" />
       <MemberType>Method</MemberType>
@@ -588,7 +588,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_False">
-      <MemberSignature Language="C#" Value="public static bool op_False (System.Data.OracleClient.OracleBoolean x);" />
+      <MemberSignature Language="C#" Value="public static bool operator false (System.Data.OracleClient.OracleBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_False(valuetype System.Data.OracleClient.OracleBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_False(System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -613,7 +613,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Implicit (bool x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.OracleClient.OracleBoolean (bool x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Implicit(bool x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_Implicit(System.Boolean)~System.Data.OracleClient.OracleBoolean" />
       <MemberType>Method</MemberType>
@@ -635,7 +635,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleBoolean x, System.Data.OracleClient.OracleBoolean y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleBoolean x, valuetype System.Data.OracleClient.OracleBoolean y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_Inequality(System.Data.OracleClient.OracleBoolean,System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -661,7 +661,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LogicalNot">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LogicalNot (System.Data.OracleClient.OracleBoolean x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator ! (System.Data.OracleClient.OracleBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LogicalNot(valuetype System.Data.OracleClient.OracleBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_LogicalNot(System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -683,7 +683,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_OnesComplement (System.Data.OracleClient.OracleBoolean x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator ~ (System.Data.OracleClient.OracleBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_OnesComplement(valuetype System.Data.OracleClient.OracleBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_OnesComplement(System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>
@@ -707,7 +707,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_True">
-      <MemberSignature Language="C#" Value="public static bool op_True (System.Data.OracleClient.OracleBoolean x);" />
+      <MemberSignature Language="C#" Value="public static bool operator true (System.Data.OracleClient.OracleBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_True(valuetype System.Data.OracleClient.OracleBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBoolean.op_True(System.Data.OracleClient.OracleBoolean)" />
       <MemberType>Method</MemberType>

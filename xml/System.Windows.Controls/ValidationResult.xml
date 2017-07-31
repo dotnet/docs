@@ -194,7 +194,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.ValidationResult left, System.Windows.Controls.ValidationResult right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.ValidationResult left, System.Windows.Controls.ValidationResult right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Controls.ValidationResult left, class System.Windows.Controls.ValidationResult right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.op_Equality(System.Windows.Controls.ValidationResult,System.Windows.Controls.ValidationResult)" />
       <MemberType>Method</MemberType>
@@ -219,7 +219,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.ValidationResult left, System.Windows.Controls.ValidationResult right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.ValidationResult left, System.Windows.Controls.ValidationResult right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Controls.ValidationResult left, class System.Windows.Controls.ValidationResult right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.op_Inequality(System.Windows.Controls.ValidationResult,System.Windows.Controls.ValidationResult)" />
       <MemberType>Method</MemberType>

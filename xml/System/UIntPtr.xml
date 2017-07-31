@@ -285,7 +285,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static UIntPtr op_Addition (UIntPtr pointer, int offset);" />
+      <MemberSignature Language="C#" Value="public static UIntPtr operator + (UIntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native unsigned int op_Addition(native unsigned int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Addition(System.UIntPtr,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -336,7 +336,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (UIntPtr value1, UIntPtr value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (UIntPtr value1, UIntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(native unsigned int value1, native unsigned int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Equality(System.UIntPtr,System.UIntPtr)" />
       <MemberType>Method</MemberType>
@@ -376,7 +376,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static UIntPtr op_Explicit (uint value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator UIntPtr (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native unsigned int op_Explicit(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UInt32)~System.UIntPtr" />
       <MemberType>Method</MemberType>
@@ -411,7 +411,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static UIntPtr op_Explicit (ulong value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator UIntPtr (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native unsigned int op_Explicit(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UInt64)~System.UIntPtr" />
       <MemberType>Method</MemberType>
@@ -447,7 +447,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static uint op_Explicit (UIntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator uint (UIntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int32 op_Explicit(native unsigned int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UIntPtr)~System.UInt32" />
       <MemberType>Method</MemberType>
@@ -489,7 +489,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ulong op_Explicit (UIntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ulong (UIntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int64 op_Explicit(native unsigned int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UIntPtr)~System.UInt64" />
       <MemberType>Method</MemberType>
@@ -524,7 +524,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static void* op_Explicit (UIntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator void* (UIntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname void* op_Explicit(native unsigned int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.UIntPtr)~System.Void*" />
       <MemberType>Method</MemberType>
@@ -567,7 +567,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static UIntPtr op_Explicit (void* value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator UIntPtr (void* value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native unsigned int op_Explicit(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Explicit(System.Void*)~System.UIntPtr" />
       <MemberType>Method</MemberType>
@@ -610,7 +610,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (UIntPtr value1, UIntPtr value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (UIntPtr value1, UIntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(native unsigned int value1, native unsigned int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Inequality(System.UIntPtr,System.UIntPtr)" />
       <MemberType>Method</MemberType>
@@ -650,7 +650,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static UIntPtr op_Subtraction (UIntPtr pointer, int offset);" />
+      <MemberSignature Language="C#" Value="public static UIntPtr operator - (UIntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native unsigned int op_Subtraction(native unsigned int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.UIntPtr.op_Subtraction(System.UIntPtr,System.Int32)" />
       <MemberType>Method</MemberType>

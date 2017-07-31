@@ -98,7 +98,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.CodeActivityPublicEnvironmentAccessor left, valuetype System.Activities.CodeActivityPublicEnvironmentAccessor right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.op_Equality(System.Activities.CodeActivityPublicEnvironmentAccessor,System.Activities.CodeActivityPublicEnvironmentAccessor)" />
       <MemberType>Method</MemberType>
@@ -123,7 +123,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.CodeActivityPublicEnvironmentAccessor left, valuetype System.Activities.CodeActivityPublicEnvironmentAccessor right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.op_Inequality(System.Activities.CodeActivityPublicEnvironmentAccessor,System.Activities.CodeActivityPublicEnvironmentAccessor)" />
       <MemberType>Method</MemberType>

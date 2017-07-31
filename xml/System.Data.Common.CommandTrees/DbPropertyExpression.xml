@@ -87,7 +87,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; op_Implicit (System.Data.Common.CommandTrees.DbPropertyExpression value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; (System.Data.Common.CommandTrees.DbPropertyExpression value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt; op_Implicit(class System.Data.Common.CommandTrees.DbPropertyExpression value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbPropertyExpression.op_Implicit(System.Data.Common.CommandTrees.DbPropertyExpression)~System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}" />
       <MemberType>Method</MemberType>

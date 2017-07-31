@@ -181,7 +181,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.FontStretch left, valuetype System.Windows.FontStretch right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_Equality(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberType>Method</MemberType>
@@ -206,7 +206,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Windows.FontStretch left, valuetype System.Windows.FontStretch right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_GreaterThan(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberType>Method</MemberType>
@@ -231,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Windows.FontStretch left, valuetype System.Windows.FontStretch right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_GreaterThanOrEqual(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberType>Method</MemberType>
@@ -256,7 +256,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.FontStretch left, valuetype System.Windows.FontStretch right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_Inequality(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberType>Method</MemberType>
@@ -281,7 +281,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Windows.FontStretch left, valuetype System.Windows.FontStretch right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_LessThan(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberType>Method</MemberType>
@@ -306,7 +306,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Windows.FontStretch left, System.Windows.FontStretch right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Windows.FontStretch left, valuetype System.Windows.FontStretch right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStretch.op_LessThanOrEqual(System.Windows.FontStretch,System.Windows.FontStretch)" />
       <MemberType>Method</MemberType>

@@ -231,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Media.Animation.ClockCollection objA, class System.Windows.Media.Animation.ClockCollection objB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.op_Equality(System.Windows.Media.Animation.ClockCollection,System.Windows.Media.Animation.ClockCollection)" />
       <MemberType>Method</MemberType>
@@ -255,7 +255,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Animation.ClockCollection objA, System.Windows.Media.Animation.ClockCollection objB);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Media.Animation.ClockCollection objA, class System.Windows.Media.Animation.ClockCollection objB) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockCollection.op_Inequality(System.Windows.Media.Animation.ClockCollection,System.Windows.Media.Animation.ClockCollection)" />
       <MemberType>Method</MemberType>

@@ -1280,7 +1280,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Addition (System.Numerics.Complex left, System.Numerics.Complex right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator + (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Addition(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Addition(System.Numerics.Complex,System.Numerics.Complex)" />
       <MemberType>Method</MemberType>
@@ -1340,7 +1340,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Division (System.Numerics.Complex left, System.Numerics.Complex right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator / (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Division(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Division(System.Numerics.Complex,System.Numerics.Complex)" />
       <MemberType>Method</MemberType>
@@ -1392,7 +1392,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.Complex left, System.Numerics.Complex right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Equality(System.Numerics.Complex,System.Numerics.Complex)" />
       <MemberType>Method</MemberType>
@@ -1446,7 +1446,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Complex (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Explicit(System.Decimal)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1478,7 +1478,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Complex (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Explicit(System.Numerics.BigInteger)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1510,7 +1510,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (byte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.Byte)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1542,7 +1542,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (double value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.Double)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1574,7 +1574,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (short value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.Int16)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1606,7 +1606,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (int value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.Int32)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1638,7 +1638,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (long value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.Int64)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1670,7 +1670,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (sbyte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.SByte)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1707,7 +1707,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (float value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.Single)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1739,7 +1739,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (ushort value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.UInt16)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1776,7 +1776,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (uint value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.UInt32)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1813,7 +1813,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Implicit (ulong value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.Complex (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Implicit(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Implicit(System.UInt64)~System.Numerics.Complex" />
       <MemberType>Method</MemberType>
@@ -1850,7 +1850,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.Complex left, System.Numerics.Complex right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Inequality(System.Numerics.Complex,System.Numerics.Complex)" />
       <MemberType>Method</MemberType>
@@ -1899,7 +1899,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Multiply (System.Numerics.Complex left, System.Numerics.Complex right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator * (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Multiply(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Multiply(System.Numerics.Complex,System.Numerics.Complex)" />
       <MemberType>Method</MemberType>
@@ -1951,7 +1951,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_Subtraction (System.Numerics.Complex left, System.Numerics.Complex right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator - (System.Numerics.Complex left, System.Numerics.Complex right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_Subtraction(valuetype System.Numerics.Complex left, valuetype System.Numerics.Complex right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_Subtraction(System.Numerics.Complex,System.Numerics.Complex)" />
       <MemberType>Method</MemberType>
@@ -2003,7 +2003,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Complex op_UnaryNegation (System.Numerics.Complex value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Complex operator - (System.Numerics.Complex value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Complex op_UnaryNegation(valuetype System.Numerics.Complex value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Complex.op_UnaryNegation(System.Numerics.Complex)" />
       <MemberType>Method</MemberType>

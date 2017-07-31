@@ -63,7 +63,7 @@ Configuration to use when building the project. The default value is `Debug`.
 
 `--manifest <PATH_TO_MANIFEST_FILE>`
 
-Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest. This option is available starting with .NET Core SDK 2.0 Preview 2.
+Specifies one or several [target manifests](../deploying/runtime-store.md) to use to trim the set of packages published with the app. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest. This option is available starting with .NET Core SDK 2.0 Preview 2.
 
 `--version-suffix <VERSION_SUFFIX>`
 

@@ -7,7 +7,8 @@
 ## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
-## [Frameworks and Targets](standard/frameworks.md)
+## [Target Frameworks](standard/frameworks.md)
+## [.NET Glossary](standard/glossary.md)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ### [Automatic Memory Management](standard/automatic-memory-management.md) 
@@ -89,6 +90,7 @@
 ### [.NET Core Support](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
+## [.NET Core SDK Overview](core/sdk.md)
 ## [.NET Core CLI Tools](core/tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)

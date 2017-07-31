@@ -45,13 +45,13 @@ The exact meaning depends on the context, but this usually refers to the runtime
 
 .NET Core common language runtime.
 
-This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime. CoreCLR is also a virtual machine with JIT and code execution capabilities.
+This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 
 ## CoreFX
 
 .NET Core framework.
 
-Also known as the .NET Core Base Class Library (BCL). A set of  System.* (and to a limited extent  Microsoft.\*) libraries. The BCL is a general purpose, lower-level frarmework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
+Also known as the .NET Core Base Class Library (BCL). A set of libraries that comprise the System.* (and to a limited extent  Microsoft.*) namespaces. The BCL is a general purpose, lower-level frarmework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
 
 ## CoreRT
 
@@ -98,7 +98,7 @@ Higher-level .NET languages, such as C#, compile down to a hardware-agnostic ins
 
 Just-in-time compiler.
 
-This technology compiles [IL](#il) to machine code that the processor understands. It's called JIT because compilation happens on demand and is performed on the same machine that the code needs to run on. Since JIT compilation occurs during execution of the application, compile time is part of the run time. Thus, JIT compilers have to balance time spent optimizing code against the savings that the resulting code can produce. But a JIT knows the actual hardware and can free developers from having to ship different implementations.
+Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that the processor understands. Unlike AOT, JIT compilation happens on demand and is performed on the same machine that the code needs to run on. Since JIT compilation occurs during execution of the application, compile time is part of the run time. Thus, JIT compilers have to balance time spent optimizing code against the savings that the resulting code can produce. But a JIT knows the actual hardware and can free developers from having to ship different implementations.
 
 ## implementation of .NET
 

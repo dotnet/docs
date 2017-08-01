@@ -80,9 +80,9 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. In the console window, press the Enter key when prompted to enter your name.
 
-1. Because the condition we specified, `name` is either `null` or (xref:System.String.Empty?displayProperty=fullName), has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
+1. Because the condition we specified, `name` is either `null` or <xref:System.String.Empty?displayProperty=fullName>, has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
 
-1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or (xref:System.String.Empty?displayProperty=fullName).
+1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=fullName>.
 
 1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
 

@@ -160,7 +160,7 @@ public string MyToken;
   
  Similarly, if you are creating a class that must conform to a specific XML Schema (XSD), you should apply the appropriate attribute and set its **DataType** property to the desired XML data type name.  
   
- For a complete list of type mappings, see the **DataType**property for any of the following attribute classes:  
+ For a complete list of type mappings, see the **DataType** property for any of the following attribute classes:  
   
 -   <xref:System.Xml.Serialization.SoapAttributeAttribute>  
   

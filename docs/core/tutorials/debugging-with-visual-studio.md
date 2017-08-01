@@ -1,10 +1,10 @@
 ---
-title: Debugging your C# Hello World application with Visual Studio 2017
+title: Debug your C# Hello World application with Visual Studio 2017
 description: Learn how to debug a Hello World app written in C# with Visual Studio 2017.
 keywords: .NET Core, .NET Core console application, .NET Core debugging
 author: BillWagner
 ms.author: wiwagn
-ms.date: 04/17/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -12,9 +12,9 @@ ms.devlang: csharp
 ms.assetid: cb213625-cc60-438b-9b9e-49aed0e4a974
 ---
 
-# Debugging your C# Hello World application with Visual Studio 2017
+# Debug your C# Hello World application with Visual Studio 2017
 
-So far, you've followed the steps in [Building a C# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Build a C# Hello World Application with .NET Core in Visual Studio 2017](.\with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
 
 ## Debugging in Debug mode
 
@@ -28,7 +28,7 @@ You should always begin by testing your program in Debug mode. Debug mode turns 
 
 Run your program in Debug mode and try a few debugging features:
 
-1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. Set a breakpoint on the line that reads `Console.WriteLine("\nHello, {0}, on {1:d} at {1:t}", name, date);` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
+1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. Set a breakpoint on the line that reads `Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/setbreakpoint.png)
 
@@ -36,7 +36,7 @@ Run your program in Debug mode and try a few debugging features:
 
 1. Enter a string in the console window when the program prompts for a name and press Enter.
 
-1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window displays the values of variables that are defined in the currently executing method.
+1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
 
    ![Visual Studio application window](./media/debugging-with-visual-studio/break.png)
 
@@ -72,7 +72,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    String.IsNullOrEmpty(name)
    ```
 
-   You're testing for a code condition. You can also specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times, or a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
+   You're testing for a code condition, that the `String.IsNullOrEmpty(name)` method call is `true` either because *name* has not been assigned a value or because its value is an empty string (""). You can also specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times, or a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Select the **Close** button to close the dialog.
 
@@ -80,9 +80,9 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. In the console window, press the Enter key when prompted to enter your name.
 
-1. Because the condition we specified has been satisfied, `name` is either `null` or [`String.Empty`](xref:System.String.Empty), program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
+1. Because the condition we specified, `name` is either `null` or (xref:System.String.Empty?displayProperty=fullName), has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
 
-1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or [`String.Empty`](xref:System.String.Empty).
+1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or (xref:System.String.Empty?displayProperty=fullName).
 
 1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
 
@@ -114,13 +114,13 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
-1. Respond to the prompt by entering a string in the console window and pressing Enter. The console is unresponsive, and the string you enter isn't displayed in the console window, but the [`Console.ReadLine`](xref:System.Console.ReadLine) method will nevertheless capture your input.
+1. Respond to the prompt by entering a string in the console window and pressing Enter. The console is unresponsive, and the string you enter isn't displayed in the console window, but the <xref:System.Console.ReadLine%2A?displayProperty=fullName> method will nevertheless capture your input.
 
-1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the [`DateTime.Now`](xref:System.DateTime.Now) property value and the value returned by the call to the [`Console.ReadLine`](xref:System.Console.ReadLine) method. The console window also displays the string entered when the console prompted for input.
+1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `date` variable assignment. The **Autos** window shows the <xref:System.DateTime.Now?displayProperty=fullName> property value and the value returned by the call to the <xref:System.Console.ReadLine%2A?displayProperty=fullName> method. The console window also displays the string entered when the console prompted for input.
 
-1. Select **Debug** > **Step Into** or press the F11 key. The **Autos** window shows the value of the `date` variable after the assignment from the [`DateTime.Now`](xref:System.DateTime.Now) property. The console window is unchanged.
+1. Select **Debug** > **Step Into** or press the F11 key. The **Autos** window shows the value of the `date` variable after the assignment from the <xref:System.DateTime.Now?displayProperty=fullName> property. The console window is unchanged.
 
-1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio calls the [`Console.WriteLine`](xref:System.Console.WriteLine(System.String,System.Object,System.Object)) method. The values of the `date` and `name` variables appear in the **Autos** window, and the console window displays the formatted string.
+1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio calls the <xref:System.Console.WriteLine(System.String,System.Object,System.Object)?displayProperty=fullName> method. The values of the `date` and `name` variables appear in the **Autos** window, and the console window displays the formatted string.
 
 1. Select **Debug** > **Step Out** or press Shift and the F11 key. This stops step-by-step execution. The console window displays a message and waits for you to press a key.
 
@@ -136,4 +136,4 @@ To build and test the Release version of your console application, change the bu
 
 When you press F5 or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of your console application. You can test it as you did the Debug version of the application.
 
-Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publishing the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio.md).
+Once you've finished debugging your application, the next step is to publish a deployable version of your application. For information on how to do this, see [Publish the C# Hello World application with Visual Studio 2017](./publishing-with-visual-studio.md).

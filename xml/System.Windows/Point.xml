@@ -330,7 +330,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Addition (System.Windows.Point point, System.Windows.Vector vector);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Point operator + (System.Windows.Point point, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Addition(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Addition(System.Windows.Point,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -364,7 +364,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Point point1, System.Windows.Point point2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Equality(System.Windows.Point,System.Windows.Point)" />
       <MemberType>Method</MemberType>
@@ -404,7 +404,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Size op_Explicit (System.Windows.Point point);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Size (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Size op_Explicit(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Explicit(System.Windows.Point)~System.Windows.Size" />
       <MemberType>Method</MemberType>
@@ -426,7 +426,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Explicit (System.Windows.Point point);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Vector (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Explicit(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Explicit(System.Windows.Point)~System.Windows.Vector" />
       <MemberType>Method</MemberType>
@@ -448,7 +448,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Point point1, System.Windows.Point point2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Inequality(System.Windows.Point,System.Windows.Point)" />
       <MemberType>Method</MemberType>
@@ -488,7 +488,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Multiply (System.Windows.Point point, System.Windows.Media.Matrix matrix);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Point operator * (System.Windows.Point point, System.Windows.Media.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Multiply(valuetype System.Windows.Point point, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Multiply(System.Windows.Point,System.Windows.Media.Matrix)" />
       <MemberType>Method</MemberType>
@@ -522,7 +522,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Subtraction (System.Windows.Point point1, System.Windows.Point point2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator - (System.Windows.Point point1, System.Windows.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Subtraction(valuetype System.Windows.Point point1, valuetype System.Windows.Point point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Subtraction(System.Windows.Point,System.Windows.Point)" />
       <MemberType>Method</MemberType>
@@ -556,7 +556,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Subtraction (System.Windows.Point point, System.Windows.Vector vector);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Point operator - (System.Windows.Point point, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Subtraction(valuetype System.Windows.Point point, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Point.op_Subtraction(System.Windows.Point,System.Windows.Vector)" />
       <MemberType>Method</MemberType>

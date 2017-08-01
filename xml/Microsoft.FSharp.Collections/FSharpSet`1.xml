@@ -359,7 +359,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; op_Addition (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; operator + (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Collections.FSharpSet`1&lt;!T&gt; op_Addition(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!T&gt; set2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpSet`1.op_Addition(Microsoft.FSharp.Collections.FSharpSet{`0},Microsoft.FSharp.Collections.FSharpSet{`0})" />
       <MemberType>Method</MemberType>
@@ -385,7 +385,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; op_Subtraction (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; operator - (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Collections.FSharpSet`1&lt;!T&gt; op_Subtraction(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!T&gt; set2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpSet`1.op_Subtraction(Microsoft.FSharp.Collections.FSharpSet{`0},Microsoft.FSharp.Collections.FSharpSet{`0})" />
       <MemberType>Method</MemberType>

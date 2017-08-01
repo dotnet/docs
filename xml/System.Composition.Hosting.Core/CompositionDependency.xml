@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a dependency that a part must have in order to fulfill an <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"/>. This class is used by the composition engine during initialization to determine whether the composition can be made, and if not, what error to provide.</summary>
-    <remarks></remarks>
+    <summary>Represents a dependency that a part must have in order to fulfill an <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" />. This class is used by the composition engine during initialization to determine whether the composition can be made, and if not, what error to provide.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Contract">
@@ -32,7 +33,8 @@
       <Docs>
         <summary>Gets the contract required by the dependency.</summary>
         <value>The contract required by the dependency.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPrerequisite">
@@ -50,8 +52,10 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the dependency is a prerequisite that must be satisfied before any exports can be retrieved from the dependent part.</summary>
-        <value><see langword="true" /> if the dependency is a prerequisite; otherwise, <see langword="false" />.</value>
-        <remarks></remarks>
+        <value>
+          <see langword="true" /> if the dependency is a prerequisite; otherwise, <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Missing">
@@ -72,18 +76,18 @@
         <Parameter Name="site" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="contract">">The contract required by the dependency.</param>
+        <param name="contract">"&gt;The contract required by the dependency.</param>
         <param name="site">A marker used to identify the individual dependency among those on the dependent part.</param>
         <summary>Constructs a placeholder for a missing dependency.</summary>
         <returns>The dependency that acts as a placeholder.</returns>
         <remarks>
-        <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  A missing dependency is an error. A missing dependency is different from an optional dependency.
   
  ]]></format>
-       </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Oversupplied">
@@ -110,7 +114,8 @@
         <param name="site">A marker for the dependency.</param>
         <summary>Constructs a placeholder for a dependency that has too many supplied values.</summary>
         <returns>The placeholder dependency.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Satisfied">
@@ -134,12 +139,14 @@
       </Parameters>
       <Docs>
         <param name="contract">The contract required by the dependency.</param>
-        <param name="target">The dependency target. A <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"/> from another part that this part is dependent on.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency is a prerequisite that must be satisfied before any exports can be retrieved from the dependent part; otherwise, <see langword="false" />.</param>
+        <param name="target">The dependency target. A <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> from another part that this part is dependent on.</param>
+        <param name="isPrerequisite">
+          <see langword="true" /> to indicate that the dependency is a prerequisite that must be satisfied before any exports can be retrieved from the dependent part; otherwise, <see langword="false" />.</param>
         <param name="site">A marker used to identify the individual dependency among those on the dependent part.</param>
         <summary>Constructs a dependency on the specified target.</summary>
         <returns>The constructed dependency.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -158,7 +165,8 @@
       <Docs>
         <summary>Gets a marker used to identify the dependency among those on the dependent part.</summary>
         <value>The marker.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -177,7 +185,8 @@
       <Docs>
         <summary>Gets the export descriptor promise that the dependecy is on.</summary>
         <value>The export descriptor promise.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -195,9 +204,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.CompositionDependency"/> object.</summary>
-        <returns>The string representation of <see cref="T:System.Composition.Hosting.Core.CompositionDependency"/>.</returns>
-        <remarks></remarks>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.CompositionDependency" /> object.</summary>
+        <returns>The string representation of <see cref="T:System.Composition.Hosting.Core.CompositionDependency" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -122,11 +122,11 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
 2.  Perform one of the following steps to open a command-prompt window:  
   
-    -   In Windows 8, on the **Start** screen, search for `Developer Command Prompt`, and then tap or choose **Developer Command Prompt for VS2012**.  
+    -   In Windows 10, on the **Start** menu, search for `Developer Command Prompt`, and then tap or choose **Developer Command Prompt for VS 2017**.  
   
          A Developer Command Prompt window appears.  
   
-    -   In Windows 7, open the **Start** menu, expand the folder for the current version of Visual Studio, open the shortcut menu for **Visual Studio Tools**, and then choose **Developer Command Prompt for VS2012**.  
+    -   In Windows 7, open the **Start** menu, expand the folder for the current version of Visual Studio, open the shortcut menu for **Visual Studio Tools**, and then choose **Developer Command Prompt for VS 2017**.  
   
          A Developer Command Prompt window appears.  
   

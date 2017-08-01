@@ -21,7 +21,6 @@ manager: "wpickett"
 # Timing Behaviors Overview
 This topic describes the timing behaviors of animations and other              <xref:System.Windows.Media.Animation.Timeline> objects.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with basic animation features. For more information, see the                  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  

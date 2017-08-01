@@ -273,7 +273,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Thickness t1, System.Windows.Thickness t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Thickness t1, System.Windows.Thickness t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Thickness t1, valuetype System.Windows.Thickness t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.op_Equality(System.Windows.Thickness,System.Windows.Thickness)" />
       <MemberType>Method</MemberType>
@@ -305,7 +305,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Thickness t1, System.Windows.Thickness t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Thickness t1, System.Windows.Thickness t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Thickness t1, valuetype System.Windows.Thickness t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Thickness.op_Inequality(System.Windows.Thickness,System.Windows.Thickness)" />
       <MemberType>Method</MemberType>

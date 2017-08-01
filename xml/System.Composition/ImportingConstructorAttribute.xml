@@ -24,7 +24,7 @@
 ## Remarks  
   
 By default, only a default parameter-less constructor, if available, is used to construct an attributed part. Use this attribute to indicate that a specific constructor should be used.
- ]]></format>    
+ ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -40,8 +40,9 @@ By default, only a default parameter-less constructor, if available, is used to 
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportingConstructorAttribute"/> class.</summary>
-        <remarks></remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportingConstructorAttribute" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

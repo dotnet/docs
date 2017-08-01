@@ -151,7 +151,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.CharacterRange cr1, System.Drawing.CharacterRange cr2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.CharacterRange cr1, System.Drawing.CharacterRange cr2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.CharacterRange cr1, valuetype System.Drawing.CharacterRange cr2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.op_Equality(System.Drawing.CharacterRange,System.Drawing.CharacterRange)" />
       <MemberType>Method</MemberType>
@@ -191,7 +191,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.CharacterRange cr1, System.Drawing.CharacterRange cr2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.CharacterRange cr1, System.Drawing.CharacterRange cr2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.CharacterRange cr1, valuetype System.Drawing.CharacterRange cr2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.CharacterRange.op_Inequality(System.Drawing.CharacterRange,System.Drawing.CharacterRange)" />
       <MemberType>Method</MemberType>

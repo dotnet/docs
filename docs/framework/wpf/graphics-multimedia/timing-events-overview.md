@@ -23,7 +23,6 @@ manager: "wpickett"
 # Timing Events Overview
 This topic describes how to use the five timing events available on              <xref:System.Windows.Media.Animation.Timeline> and              <xref:System.Windows.Media.Animation.Clock> objects.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 ## Prerequisites  
  To understand this topic, you should understand how to create and use animations. To get started with animation, see the                  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
   

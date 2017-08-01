@@ -86,7 +86,7 @@ Garbage collector.
 
 The garbage collector is an implementation of automatic memory management.  The GC frees memory occupied by objects that are no longer in use. 
 
-See [Garbage Collection](garbage-collection.md).
+See [Garbage Collection](garbage-collection/index.md).
 
 ## IL
 

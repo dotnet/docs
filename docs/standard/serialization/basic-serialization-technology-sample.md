@@ -83,17 +83,17 @@ manager: "erikre"
     -   <xref:System.IO.FileStream> Used to serialize and deserialize linked lists.  
   
 ## See Also  
- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>   
+ <xref:System.IO>   
  <xref:System.IO.File>   
  <xref:System.IO.FileStream>   
+ <xref:System.IO.Stream>   
+ <xref:System.Random>   
+ <xref:System.Runtime.Serialization>   
+ <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>   
+ <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>   
  <xref:System.Runtime.Serialization.IFormatter>   
  <xref:System.SerializableAttribute>   
- <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>   
- <xref:System.IO.Stream>   
- <xref:System.Runtime.Serialization>   
  <xref:System.Xml.Serialization>   
- [Random class](https://msdn.microsoft.com/en-us/library/system.random.aspx)   
- [System.IO namespace](https://msdn.microsoft.com/en-us/library/system.io.aspx)   
  [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)   
  [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)   
  [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)   

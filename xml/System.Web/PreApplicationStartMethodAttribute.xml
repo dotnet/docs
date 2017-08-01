@@ -24,7 +24,7 @@
   
 -   There is no guarantee of the order in which the assembly-defined application start methods are called. As a result, each registered start method should be coded to run in isolation and should not depend on side effects from other registered start methods.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

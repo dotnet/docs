@@ -37,7 +37,7 @@ manager: "erikre"
   
 2.  Add all prefixes and namespace pairs to the `XmlSerializerNamespaces`.  
   
-3.  Apply the appropriate `System.Xml.Serialization` attribute to each member or class that the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx) is to serialize into an XML document.  
+3.  Apply the appropriate `System.Xml.Serialization` attribute to each member or class that the <xref:System.Xml.Serialization.XmlSerializer> is to serialize into an XML document.  
   
      The available attributes are: <xref:System.Xml.Serialization.XmlAnyElementAttribute>, <xref:System.Xml.Serialization.XmlArrayAttribute>, <xref:System.Xml.Serialization.XmlArrayItemAttribute>, <xref:System.Xml.Serialization.XmlAttributeAttribute>, <xref:System.Xml.Serialization.XmlElementAttribute>, <xref:System.Xml.Serialization.XmlRootAttribute>, and <xref:System.Xml.Serialization.XmlTypeAttribute>.  
   
@@ -179,7 +179,7 @@ public class Book
  <xref:System.Xml.Serialization.XmlSerializer>   
  [The XML Schema Definition Tool and XML Serialization](../../../docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md)   
  [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)   
- [XmlSerializer Class](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)   
+ [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)   
  [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)   
  [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)   
  [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)   

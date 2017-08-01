@@ -1,13 +1,9 @@
 ---
 title: "Creating and Using Strong-Named Assemblies"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "07/31/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-bcl"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "strong-name bypass feature"
@@ -28,7 +24,7 @@ manager: "wpickett"
 # Creating and Using Strong-Named Assemblies
 <a name="top"></a> A strong name consists of the assembly's identity—its simple text name, version number, and culture information (if provided)—plus a public key and a digital signature. It is generated from an assembly file using the corresponding private key. (The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.)  
   
- A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the security of the strong-named assembly would be compromised.  
+ A strong-named assembly can only use types from other strong-named assemblies. Otherwise, the integrity of the strong-named assembly would be compromised.  
   
  This overview contains the following sections:  
   
@@ -88,6 +84,6 @@ manager: "wpickett"
 |[How to: Reference a Strong-Named Assembly](../../../docs/framework/app-domains/how-to-reference-a-strong-named-assembly.md)|Describes how to reference types or resources in a strong-named assembly at compile time or run time.|  
 |[How to: Disable the Strong-Name Bypass Feature](../../../docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md)|Describes how to disable the feature that bypasses the validation of strong-name signatures. This feature can be disabled for all or for specific applications.|  
 |[Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)|Provides an overview of single-file and multifile assemblies.|  
-|[NIB: How to: Delay Sign an Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/cab63b7a-591e-4674-b236-d77cd29a79ea)|Explains how to sign an assembly with a strong name after the assembly has been created.|  
+|[How to Delay Sign an Assembly in Visual Studio](/visualstudio/ide/managing-assembly-and-manifest-signing#how-to-sign-an-assembly-in-visual-studio)|Explains how to sign an assembly with a strong name after the assembly has been created.|  
 |[Sn.exe (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)|Describes the tool included in the .NET Framework that helps create assemblies with strong names. This tool provides options for key management, signature generation, and signature verification.|  
 |[Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)|Describes the tool included in the .NET Framework that generates a file that has an assembly manifest from modules or resource files.|

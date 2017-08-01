@@ -15,7 +15,7 @@ ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 
 Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist in the target environment. The benefits are faster deployments, lower disk space use, and improved startup performance in some cases.
 
-This feature is implemented as a *runtime store*, which is a directory on disk where packages are stored (typically at * /usr/local/share/dotnet/store* on macOS/Linux and *C:/Program Files/.dotnet/store* on Windows). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
+This feature is implemented as a *runtime store*, which is a directory on disk where packages are stored (typically at */usr/local/share/dotnet/store* on macOS/Linux and *C:/Program Files/.dotnet/store* on Windows). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
 \dotnet   
 &nbsp;&nbsp;\store   
@@ -143,11 +143,11 @@ When deploying a [framework-dependent deployment (FDD)](index.md#framework-depen
 > [!NOTE] 
 > For [self-contained deployment (SCD)](index.md#self-contained-deployments-scd) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, **\<PublishWithAspNetCoreTargetManifest>** cannot be set to `true` for an SCD app.
 
-If you deploy an application with a manifest dependency that's also present in the deployment (the assembly is present in the *bin* folder), the runtime store *isn't used* on the host for that assembly. The *bin* folder assembly is always used over whatever is present in the manifest and runtime store on the host.
+If you deploy an application with a manifest dependency that's present in the deployment (the assembly is present in the *bin* folder), the runtime store *isn't used* on the host for that assembly. The *bin* folder assembly is used regardless of its presence in the runtime store on the host.
 
-The version of the dependency indicated in the manifest must match the version of the dependency in the runtime store. If you have a version mismatch between the dependency in the target manifest and the version that exists in the runtime store and the app doesn't include that version of the package in its deployment, the app will fail to start. The exception includes the name of the target manifest that called for the runtime store assembly, which will help you troubleshoot the mismatch.
+The version of the dependency indicated in the manifest must match the version of the dependency in the runtime store. If you have a version mismatch between the dependency in the target manifest and the version that exists in the runtime store and the app doesn't include the required version of the package in its deployment, the app will fail to start. The exception includes the name of the target manifest that called for the runtime store assembly, which will help you troubleshoot the mismatch.
 
-When the deployment is *trimmed* on publish, only the versions of the manifest packages are withheld from the published output. The deployment is trimmed for the exact assemblies and versions you've specified in the manifest. Those packages at the versions indicated must be present on the host for the app to start.
+When the deployment is *trimmed* on publish, only the specific versions of the manifest packages you indicate are withheld from the published output. The packages at the versions indicated must be present on the host for the app to start.
 
 ## See also
 

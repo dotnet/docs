@@ -1,6 +1,6 @@
 ---
 title: "Creating and Using Strong-Named Assemblies"
-ms.date: "07/31/2017"
+ms.date: "08/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-bcl"
@@ -51,7 +51,7 @@ manager: "wpickett"
 4.  The common language runtime verifies the strong name signature when the assembly is placed in the global assembly cache. When binding by strong name at run time, the common language runtime compares the key stored in Assembly B's manifest with the key used to generate the strong name for Assembly A. If the .NET Framework security checks pass and the bind succeeds, Assembly B has a guarantee that Assembly A's bits have not been tampered with and that these bits actually come from the developers of Assembly A.  
   
 > [!NOTE]
->  This scenario does not address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It is important to note that strong names do not require code to be signed in this way. In fact, the keys used to generate the strong name signature do not have to be the same keys used to generate an Authenticode signature.  
+>  This scenario doesn't address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It's important to note that strong names don't require code to be signed in this way. Strong names only provide a unique identity.  
   
  [Back to top](#top)  
   

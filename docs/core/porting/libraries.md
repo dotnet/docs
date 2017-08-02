@@ -26,10 +26,10 @@ This article assumes that you:
 You should also become familiar with the content of the following topics:
 
 [.NET Standard](~/docs/standard/net-standard.md)   
-This topic describes the formal specification of .NET APIs that are intended to be available on all .NET runtimes.
+This topic describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
 [Packages, Metapackages and Frameworks](~/docs/core/packages.md)   
-This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET runtimes.
+This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET implementations.
 
 [Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)   
 This topic explains how to write libraries for .NET using cross-platform CLI tools.

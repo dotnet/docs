@@ -17,9 +17,9 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with Visual Studio 2017
 
-- [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio.md)
-- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio.md)
-- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio.md)
+- [Building a C# Hello World application](../../core/tutorials/with-visual-studio.md)
+- [Debugging your C# Hello World application](../../core/tutorials/debugging-with-visual-studio.md)
+- [Publishing your C# Hello World application](../../core/tutorials/publishing-with-visual-studio.md)
 - [Building a C# class library](../../csharp/getting-started/library-with-visual-studio.md)
 - [Testing a C# class library](../../csharp/getting-started/testing-library-with-visual-studio.md)
 - [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
@@ -40,7 +40,7 @@ The following tutorials are available for learning about .NET Core.
 
 - [Getting started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
-- [Getting started with F#](../../fsharp/tutorials/getting-started/getting-started-command-line.md)
+- [Getting started with F#](../../fsharp//get-started/get-started-command-line.md)
 
 ## Other
 - [Unit Testing in .NET Core using dotnet test](../testing/unit-testing-with-dotnet-test.md)

@@ -64,7 +64,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
   
 -   define new non-virtual implementation of those members that hide the base class implementations  
   
- A derived class can override a base class member only if the base class member is declared as [virtual](../../../csharp/language-reference/keywords/virtual.md) or [abstract](../../../csharp/language-reference/keywords/abstract.md). The derived member must use the [override](../../../csharp/language-reference/keywords/override.md) keyword to explicitly indicate that the method is intended to participate in virtual invocation. The following code provides an example:  
+ A derived class can override a base class member only if the base class member is declared as [virtual](../../../csharp/language-reference/keywords/virtual.md) or [abstract](../../../csharp/language-reference/keywords/abstract.md). The derived member must use the [abstract](../../../csharp/language-reference/keywords/abstract.md) keyword to explicitly indicate that the method is intended to participate in virtual invocation. The following code provides an example:  
   
  [!code-cs[csProgGuideInheritance#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/polymorphism_2.cs)]  
   

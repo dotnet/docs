@@ -52,7 +52,7 @@ This example uses [.NET Core](../../../core/index.md) command line tools. If you
 
 Modify the `Main` method in *program.cs* as follows:
 
-[!code-cs[csProgGuideMain#14](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_3.cs)]  
+[!code-cs[csProgGuideMain#14](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_3.cs)]
 
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or from `$LastExitCode` from powershell.
 
@@ -99,7 +99,7 @@ private static async Task<int> AsyncConsoleWork()
 
 Now, this can be replaced by:
 
-[!code-csharp[AsyncMain](../../../../snippets/csharp/main-arguments/program.cs#AsyncMain)]  
+[!code-csharp[AsyncMain](../../../../samples/snippets/csharp/main-arguments/program.cs#AsyncMain)]  
 
 The advantage of the new syntax is that the compiler always generates the correct code.
 

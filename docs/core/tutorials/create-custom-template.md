@@ -20,11 +20,10 @@ This tutorial shows you how to:
 - Install the template from nuget.org, a local *nupkg* file, or the local file system.
 - Uninstall the template.
 
-<!--ADD after https://github.com/dotnet/dotnet-template-samples/pull/20 merges:
 If you prefer to proceed through the tutorial with a complete sample, download the [sample project template](https://github.com/dotnet/dotnet-template-samples/tree/master/16-nuget-package). The sample template is configured for NuGet distribution.
 
-If you wish to use the downloaded sample with file system distribution, move the contents of the *content* folder up one level into the *GarciaSoftware.ConsoleTemplate.CSharp* folder, delete the empty *content* folder, and delete the *nuspec* file.
--->
+If you wish to use the downloaded sample with file system distribution, move the contents of the *content* folder of the sample up one level into the *GarciaSoftware.ConsoleTemplate.CSharp* folder, delete the empty *content* folder, and delete the *nuspec* file.
+
 ## Prerequisites
 
 - Install the [.NET Core SDK](https://www.microsoft.com/net/core) version 2.0 or later.

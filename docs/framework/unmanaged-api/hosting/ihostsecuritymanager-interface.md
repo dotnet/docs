@@ -1,5 +1,5 @@
 ---
-title: "IHostSecurityManager Interface | Microsoft Docs"
+title: "IHostSecurityManager Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

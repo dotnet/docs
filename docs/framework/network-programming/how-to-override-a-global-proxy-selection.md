@@ -1,5 +1,5 @@
 ---
-title: "How to: Override a Global Proxy Selection | Microsoft Docs"
+title: "How to: Override a Global Proxy Selection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

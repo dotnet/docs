@@ -1,5 +1,5 @@
 ---
-title: "How to: Find an Element with a Specific Child Element (C#) | Microsoft Docs"
+title: "How to: Find an Element with a Specific Child Element (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

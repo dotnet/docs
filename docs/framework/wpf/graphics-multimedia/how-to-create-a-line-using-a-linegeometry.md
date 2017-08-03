@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Line Using a LineGeometry | Microsoft Docs"
+title: "How to: Create a Line Using a LineGeometry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

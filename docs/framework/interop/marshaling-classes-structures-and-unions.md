@@ -1,5 +1,5 @@
 ---
-title: "Marshaling Classes, Structures, and Unions | Microsoft Docs"
+title: "Marshaling Classes, Structures, and Unions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

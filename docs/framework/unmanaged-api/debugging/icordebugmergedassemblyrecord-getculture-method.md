@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugMergedAssemblyRecord::GetCulture Method | Microsoft Docs"
+title: "ICorDebugMergedAssemblyRecord::GetCulture Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

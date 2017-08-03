@@ -1,5 +1,5 @@
 ---
-title: "Debugging, Tracing, and Profiling | Microsoft Docs"
+title: "Debugging, Tracing, and Profiling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

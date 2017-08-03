@@ -1,5 +1,5 @@
 ---
-title: "How to: Align a Control to the Edges of Forms | Microsoft Docs"
+title: "How to: Align a Control to the Edges of Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

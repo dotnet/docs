@@ -1,5 +1,5 @@
 ---
-title: "PresentationOptions:Freeze Attribute | Microsoft Docs"
+title: "PresentationOptions:Freeze Attribute"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

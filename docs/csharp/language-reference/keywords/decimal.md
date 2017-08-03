@@ -1,5 +1,5 @@
 ---
-title: "decimal (C# Reference) | Microsoft Docs"
+title: "decimal (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

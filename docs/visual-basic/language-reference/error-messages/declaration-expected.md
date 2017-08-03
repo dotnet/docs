@@ -1,5 +1,5 @@
 ---
-title: "Declaration expected | Microsoft Docs"
+title: "Declaration expected"
 
 ms.date: "2015-07-20"
 ms.prod: .net

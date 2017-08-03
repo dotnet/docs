@@ -255,7 +255,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Runtime.InteropServices.ArrayWithOffset a, System.Runtime.InteropServices.ArrayWithOffset b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Runtime.InteropServices.ArrayWithOffset a, System.Runtime.InteropServices.ArrayWithOffset b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Runtime.InteropServices.ArrayWithOffset a, valuetype System.Runtime.InteropServices.ArrayWithOffset b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.op_Equality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)" />
       <MemberType>Method</MemberType>
@@ -296,7 +296,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Runtime.InteropServices.ArrayWithOffset a, System.Runtime.InteropServices.ArrayWithOffset b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Runtime.InteropServices.ArrayWithOffset a, System.Runtime.InteropServices.ArrayWithOffset b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Runtime.InteropServices.ArrayWithOffset a, valuetype System.Runtime.InteropServices.ArrayWithOffset b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)" />
       <MemberType>Method</MemberType>

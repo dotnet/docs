@@ -1,5 +1,5 @@
 ---
-title: "Namespaces and DTDs in the DOM | Microsoft Docs"
+title: "Namespaces and DTDs in the DOM"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Navigate Relationships with the Navigate Operator | Microsoft Docs"
+title: "How to: Navigate Relationships with the Navigate Operator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

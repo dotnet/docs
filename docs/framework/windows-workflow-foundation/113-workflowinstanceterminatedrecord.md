@@ -1,5 +1,5 @@
 ---
-title: "113 - WorkflowInstanceTerminatedRecord | Microsoft Docs"
+title: "113 - WorkflowInstanceTerminatedRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

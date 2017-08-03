@@ -1,5 +1,5 @@
 ---
-title: Delegates (F#) | Microsoft Docs
+title: Delegates (F#)
 description: Learn how to work with delegates in F#.
 keywords: visual f#, f#, functional programming
 author: cartermp

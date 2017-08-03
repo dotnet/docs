@@ -1,5 +1,5 @@
 ---
-title: General guidance | Microsoft Docs 
+title: General guidance
 description: .NET Microservices Architecture for Containerized .NET Applications | General guidance
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

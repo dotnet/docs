@@ -1,5 +1,5 @@
 ---
-title: "How to: Query the Contents of Text Files in a Folder (LINQ) (C#) | Microsoft Docs"
+title: "How to: Query the Contents of Text Files in a Folder (LINQ) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

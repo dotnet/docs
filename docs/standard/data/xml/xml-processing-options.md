@@ -1,5 +1,5 @@
 ---
-title: "XML Processing Options | Microsoft Docs"
+title: "XML Processing Options"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

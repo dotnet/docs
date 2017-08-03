@@ -1,5 +1,5 @@
 ---
-title: "&lt;providerOption&gt; Element | Microsoft Docs"
+title: "&lt;providerOption&gt; Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

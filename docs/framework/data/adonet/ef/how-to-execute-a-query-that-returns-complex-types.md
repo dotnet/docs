@@ -1,5 +1,5 @@
 ---
-title: "How to: Execute a Query that Returns Complex Types | Microsoft Docs"
+title: "How to: Execute a Query that Returns Complex Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

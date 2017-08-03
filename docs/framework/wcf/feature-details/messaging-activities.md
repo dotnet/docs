@@ -1,5 +1,5 @@
 ---
-title: "Messaging Activities | Microsoft Docs"
+title: "Messaging Activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

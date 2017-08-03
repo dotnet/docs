@@ -1,5 +1,5 @@
 ---
-title: "String constants must end with a double quote | Microsoft Docs"
+title: "String constants must end with a double quote"
 
 ms.date: "2015-07-20"
 ms.prod: .net

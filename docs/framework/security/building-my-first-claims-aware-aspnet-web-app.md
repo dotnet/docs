@@ -1,5 +1,5 @@
 ---
-title: "Building My First Claims-Aware ASP.NET Web Application | Microsoft Docs"
+title: "Building My First Claims-Aware ASP.NET Web Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

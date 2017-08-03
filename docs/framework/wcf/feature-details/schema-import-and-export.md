@@ -1,5 +1,5 @@
 ---
-title: "Schema Import and Export | Microsoft Docs"
+title: "Schema Import and Export"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

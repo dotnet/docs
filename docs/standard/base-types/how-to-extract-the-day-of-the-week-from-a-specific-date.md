@@ -1,5 +1,5 @@
 ---
-title: "How to: Extract the Day of the Week from a Specific Date | Microsoft Docs"
+title: "How to: Extract the Day of the Week from a Specific Date"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

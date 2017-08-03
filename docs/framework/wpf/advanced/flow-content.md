@@ -1,5 +1,5 @@
 ---
-title: "Flow Content | Microsoft Docs"
+title: "Flow Content"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

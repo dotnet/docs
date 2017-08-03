@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugThread::CreateStepper Method | Microsoft Docs"
+title: "ICorDebugThread::CreateStepper Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

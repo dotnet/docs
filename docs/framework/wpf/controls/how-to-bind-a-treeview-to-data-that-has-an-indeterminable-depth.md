@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a TreeView to Data That Has an Indeterminable Depth | Microsoft Docs"
+title: "How to: Bind a TreeView to Data That Has an Indeterminable Depth"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

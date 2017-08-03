@@ -1,5 +1,5 @@
 ---
-title: "Path-File access error | Microsoft Docs"
+title: "Path-File access error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

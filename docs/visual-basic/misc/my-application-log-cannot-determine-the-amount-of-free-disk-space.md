@@ -1,5 +1,5 @@
 ---
-title: "My.Application.Log cannot determine the amount of free disk space | Microsoft Docs"
+title: "My.Application.Log cannot determine the amount of free disk space"
 
 ms.date: "2015-07-20"
 ms.prod: .net

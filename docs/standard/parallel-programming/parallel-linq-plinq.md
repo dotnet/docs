@@ -1,5 +1,5 @@
 ---
-title: "Parallel LINQ (PLINQ) | Microsoft Docs"
+title: "Parallel LINQ (PLINQ)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "WPF XAML Namescopes | Microsoft Docs"
+title: "WPF XAML Namescopes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

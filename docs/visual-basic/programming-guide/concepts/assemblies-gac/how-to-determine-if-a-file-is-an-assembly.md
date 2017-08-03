@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine If a File Is an Assembly (Visual Basic) | Microsoft Docs"
+title: "How to: Determine If a File Is an Assembly (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

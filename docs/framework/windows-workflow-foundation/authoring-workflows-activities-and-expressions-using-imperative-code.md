@@ -1,5 +1,5 @@
 ---
-title: "Authoring Workflows, Activities, and Expressions Using Imperative Code | Microsoft Docs"
+title: "Authoring Workflows, Activities, and Expressions Using Imperative Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

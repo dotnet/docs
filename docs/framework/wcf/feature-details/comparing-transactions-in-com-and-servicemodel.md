@@ -1,5 +1,5 @@
 ---
-title: "Comparing Transactions in COM+ and ServiceModel | Microsoft Docs"
+title: "Comparing Transactions in COM+ and ServiceModel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

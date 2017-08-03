@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to XDocument, XElement, or LINQ for XML Query Results | Microsoft Docs"
+title: "How to: Bind to XDocument, XElement, or LINQ for XML Query Results"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

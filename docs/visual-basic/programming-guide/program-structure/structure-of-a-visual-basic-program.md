@@ -1,5 +1,5 @@
 ---
-title: "Structure of a Visual Basic Program | Microsoft Docs"
+title: "Structure of a Visual Basic Program"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

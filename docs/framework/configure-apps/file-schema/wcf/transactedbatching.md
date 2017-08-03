@@ -1,5 +1,5 @@
 ---
-title: "&lt;transactedBatching&gt; | Microsoft Docs"
+title: "&lt;transactedBatching&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

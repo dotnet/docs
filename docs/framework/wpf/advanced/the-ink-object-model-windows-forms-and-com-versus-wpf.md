@@ -1,5 +1,5 @@
 ---
-title: "The Ink Object Model: Windows Forms and COM versus WPF | Microsoft Docs"
+title: "The Ink Object Model: Windows Forms and COM versus WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

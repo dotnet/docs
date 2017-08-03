@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify Keyboard Input to a Standard Control | Microsoft Docs"
+title: "How to: Modify Keyboard Input to a Standard Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

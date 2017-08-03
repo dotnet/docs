@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess2::GetThreadForTaskID Method | Microsoft Docs"
+title: "ICorDebugProcess2::GetThreadForTaskID Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

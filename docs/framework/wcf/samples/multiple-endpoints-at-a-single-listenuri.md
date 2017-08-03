@@ -1,5 +1,5 @@
 ---
-title: "Multiple Endpoints at a Single ListenUri | Microsoft Docs"
+title: "Multiple Endpoints at a Single ListenUri"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

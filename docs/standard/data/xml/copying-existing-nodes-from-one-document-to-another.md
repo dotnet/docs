@@ -1,5 +1,5 @@
 ---
-title: "Copying Existing Nodes from One Document to Another | Microsoft Docs"
+title: "Copying Existing Nodes from One Document to Another"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

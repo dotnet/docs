@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugArrayValue::GetDimensions Method | Microsoft Docs"
+title: "ICorDebugArrayValue::GetDimensions Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

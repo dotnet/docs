@@ -1,5 +1,5 @@
 ---
-title: "Subscript out of range (Visual Basic) | Microsoft Docs"
+title: "Subscript out of range (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

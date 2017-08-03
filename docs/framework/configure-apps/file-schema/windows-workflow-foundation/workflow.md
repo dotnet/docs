@@ -1,5 +1,5 @@
 ---
-title: "&lt;workflow&gt; | Microsoft Docs"
+title: "&lt;workflow&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

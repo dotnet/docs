@@ -39,7 +39,7 @@
   
  Objects are added to the <xref:System.Runtime.Serialization.SerializationInfo> store at serialization time using the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A> methods and extracted from the <xref:System.Runtime.Serialization.SerializationInfo> store at deserialization using the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> methods.  
   
- For more information about customizing serialization, see [Custom Serialization](~/docs/framework/serialization/custom-serialization.md).  
+ For more information about customizing serialization, see [Custom Serialization](~/docs/standard/serialization/custom-serialization.md).  
   
    
   

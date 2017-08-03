@@ -1,5 +1,5 @@
 ---
-title: "Extending the My Namespace in Visual Basic | Microsoft Docs"
+title: "Extending the My Namespace in Visual Basic"
 
 ms.date: "2015-07-20"
 ms.prod: .net

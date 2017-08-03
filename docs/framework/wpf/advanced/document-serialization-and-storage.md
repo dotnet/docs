@@ -1,5 +1,5 @@
 ---
-title: "Document Serialization and Storage | Microsoft Docs"
+title: "Document Serialization and Storage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Determine if Any or All Elements in a Sequence Satisfy a Condition | Microsoft Docs"
+title: "Determine if Any or All Elements in a Sequence Satisfy a Condition"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

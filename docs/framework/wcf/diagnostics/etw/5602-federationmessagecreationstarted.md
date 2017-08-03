@@ -1,5 +1,5 @@
 ---
-title: "5602 - FederationMessageCreationStarted | Microsoft Docs"
+title: "5602 - FederationMessageCreationStarted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

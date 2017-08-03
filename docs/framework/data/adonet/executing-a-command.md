@@ -1,5 +1,5 @@
 ---
-title: "Executing a Command | Microsoft Docs"
+title: "Executing a Command"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

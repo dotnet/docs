@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Appearance of ToolStrip Text and Images in Windows Forms | Microsoft Docs"
+title: "How to: Change the Appearance of ToolStrip Text and Images in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

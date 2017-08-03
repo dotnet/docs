@@ -1,5 +1,5 @@
 ---
-title: "How to: Use EdmGen.exe to Validate Model and Mapping Files | Microsoft Docs"
+title: "How to: Use EdmGen.exe to Validate Model and Mapping Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

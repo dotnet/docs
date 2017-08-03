@@ -1,5 +1,5 @@
 ---
-title: "3416 - WebSocketConnectionRequestSendStop | Microsoft Docs"
+title: "3416 - WebSocketConnectionRequestSendStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

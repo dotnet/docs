@@ -1,5 +1,5 @@
 ---
-title: "Painting with Solid Colors and Gradients Overview | Microsoft Docs"
+title: "Painting with Solid Colors and Gradients Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

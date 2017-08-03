@@ -110,7 +110,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.AddIn.Hosting.QualificationDataItem item1, System.AddIn.Hosting.QualificationDataItem item2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.AddIn.Hosting.QualificationDataItem item1, System.AddIn.Hosting.QualificationDataItem item2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.AddIn.Hosting.QualificationDataItem item1, valuetype System.AddIn.Hosting.QualificationDataItem item2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.QualificationDataItem.op_Equality(System.AddIn.Hosting.QualificationDataItem,System.AddIn.Hosting.QualificationDataItem)" />
       <MemberType>Method</MemberType>
@@ -135,7 +135,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.AddIn.Hosting.QualificationDataItem item1, System.AddIn.Hosting.QualificationDataItem item2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.AddIn.Hosting.QualificationDataItem item1, System.AddIn.Hosting.QualificationDataItem item2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.AddIn.Hosting.QualificationDataItem item1, valuetype System.AddIn.Hosting.QualificationDataItem item2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.QualificationDataItem.op_Inequality(System.AddIn.Hosting.QualificationDataItem,System.AddIn.Hosting.QualificationDataItem)" />
       <MemberType>Method</MemberType>

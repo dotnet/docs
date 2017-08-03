@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Accessibility | Microsoft Docs"
+title: "Windows Forms Accessibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

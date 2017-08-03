@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Writing Queries in C# (LINQ) | Microsoft Docs"
+title: "Walkthrough: Writing Queries in C# (LINQ)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "XML Schema Constraints and Relationships | Microsoft Docs"
+title: "XML Schema Constraints and Relationships"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

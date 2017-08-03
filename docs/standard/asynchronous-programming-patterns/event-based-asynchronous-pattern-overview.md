@@ -1,5 +1,5 @@
 ---
-title: "Event-based Asynchronous Pattern Overview | Microsoft Docs"
+title: "Event-based Asynchronous Pattern Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

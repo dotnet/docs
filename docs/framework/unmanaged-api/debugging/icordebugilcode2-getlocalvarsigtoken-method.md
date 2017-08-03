@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILCode2::GetLocalVarSigToken Method | Microsoft Docs"
+title: "ICorDebugILCode2::GetLocalVarSigToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

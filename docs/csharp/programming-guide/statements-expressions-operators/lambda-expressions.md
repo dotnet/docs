@@ -1,5 +1,5 @@
 ---
-title: "Lambda Expressions (C# Programming Guide) | Microsoft Docs"
+title: "Lambda Expressions (C# Programming Guide)"
 
 ms.date: "2017-03-03"
 ms.prod: .net

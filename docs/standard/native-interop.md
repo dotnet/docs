@@ -1,6 +1,6 @@
 ---
-title: Native interoperability | Microsoft Docs
-description: Native interoperability
+title: Native interoperability
+description: Learn how to interface with native components in .NET.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: ronpet

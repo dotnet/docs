@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedReader::GetGlobalVariables Method | Microsoft Docs"
+title: "ISymUnmanagedReader::GetGlobalVariables Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

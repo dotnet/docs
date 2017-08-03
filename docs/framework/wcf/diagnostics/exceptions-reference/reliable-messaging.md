@@ -1,5 +1,5 @@
 ---
-title: "Reliable Messaging | Microsoft Docs"
+title: "Reliable Messaging"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

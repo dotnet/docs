@@ -275,7 +275,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Metadata.SignatureHeader left, System.Reflection.Metadata.SignatureHeader right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Metadata.SignatureHeader left, System.Reflection.Metadata.SignatureHeader right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.SignatureHeader left, valuetype System.Reflection.Metadata.SignatureHeader right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.op_Equality(System.Reflection.Metadata.SignatureHeader,System.Reflection.Metadata.SignatureHeader)" />
       <MemberType>Method</MemberType>
@@ -301,7 +301,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Metadata.SignatureHeader left, System.Reflection.Metadata.SignatureHeader right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Metadata.SignatureHeader left, System.Reflection.Metadata.SignatureHeader right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.SignatureHeader left, valuetype System.Reflection.Metadata.SignatureHeader right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.SignatureHeader.op_Inequality(System.Reflection.Metadata.SignatureHeader,System.Reflection.Metadata.SignatureHeader)" />
       <MemberType>Method</MemberType>

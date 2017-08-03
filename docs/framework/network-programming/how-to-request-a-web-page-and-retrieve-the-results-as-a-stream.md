@@ -1,5 +1,5 @@
 ---
-title: "How to: Request a Web Page and Retrieve the Results as a Stream | Microsoft Docs"
+title: "How to: Request a Web Page and Retrieve the Results as a Stream"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Coordinates | Microsoft Docs"
+title: "Windows Forms Coordinates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Console Application | Microsoft Docs
+title: Console Application
 description: This tutorial teaches you a number of features in .NET Core and the C# language.
 keywords: .NET, .NET Core
 author: BillWagner

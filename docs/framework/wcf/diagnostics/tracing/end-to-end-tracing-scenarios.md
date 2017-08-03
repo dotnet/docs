@@ -1,5 +1,5 @@
 ---
-title: "End-To-End Tracing Scenarios | Microsoft Docs"
+title: "End-To-End Tracing Scenarios"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

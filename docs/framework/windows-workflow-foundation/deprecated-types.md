@@ -1,5 +1,5 @@
 ---
-title: "Deprecated types in Windows Workflow Foundation | Microsoft Docs"
+title: "Deprecated types in Windows Workflow Foundation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

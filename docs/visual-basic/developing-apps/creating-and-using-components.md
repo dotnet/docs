@@ -1,5 +1,5 @@
 ---
-title: "Creating and Using Components in Visual Basic | Microsoft Docs"
+title: "Creating and Using Components in Visual Basic"
 
 ms.date: "2015-07-20"
 ms.prod: .net

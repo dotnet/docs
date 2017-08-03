@@ -1,5 +1,5 @@
 ---
-title: "&gt;= (Greater Than or Equal To) (Entity SQL) | Microsoft Docs"
+title: "&gt;= (Greater Than or Equal To) (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio IDE and Tools Support for LINQ (C#) | Microsoft Docs"
+title: "Visual Studio IDE and Tools Support for LINQ (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

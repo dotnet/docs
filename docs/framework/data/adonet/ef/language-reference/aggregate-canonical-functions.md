@@ -1,5 +1,5 @@
 ---
-title: "Aggregate Canonical Functions | Microsoft Docs"
+title: "Aggregate Canonical Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

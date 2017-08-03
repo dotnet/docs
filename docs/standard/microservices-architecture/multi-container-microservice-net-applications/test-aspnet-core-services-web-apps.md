@@ -1,5 +1,5 @@
 ---
-title: Testing ASP.NET Core services and web apps | Microsoft Docs 
+title: Testing ASP.NET Core services and web apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Testing ASP.NET Core services and web apps
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

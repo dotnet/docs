@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Performance: Other Recommendations | Microsoft Docs"
+title: "Optimizing Performance: Other Recommendations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

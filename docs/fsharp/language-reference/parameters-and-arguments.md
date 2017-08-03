@@ -1,5 +1,5 @@
 ---
-title: Parameters and Arguments (F#) | Microsoft Docs
+title: Parameters and Arguments (F#)
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
 keywords: visual f#, f#, functional programming
 author: cartermp

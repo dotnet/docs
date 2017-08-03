@@ -1,5 +1,5 @@
 ---
-title: "39458 - TrackingRecordTruncated | Microsoft Docs"
+title: "39458 - TrackingRecordTruncated"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

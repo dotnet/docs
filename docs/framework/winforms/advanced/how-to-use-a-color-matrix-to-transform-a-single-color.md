@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Color Matrix to Transform a Single Color | Microsoft Docs"
+title: "How to: Use a Color Matrix to Transform a Single Color"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

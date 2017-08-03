@@ -1,5 +1,5 @@
 ---
-title: "using static Directive (C# Reference) | Microsoft Docs"
+title: "using static Directive (C# Reference)"
 ms.date: "2017-03-10"
 ms.prod: .net
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Security.SecurityClientSessionCloseResponseSent | Microsoft Docs"
+title: "System.ServiceModel.Security.SecurityClientSessionCloseResponseSent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

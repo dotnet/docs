@@ -1,5 +1,5 @@
 ---
-title: "File I/O of a structure with field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is not valid | Microsoft Docs"
+title: "File I/O of a structure with field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

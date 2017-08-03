@@ -1,5 +1,5 @@
 ---
-title: "Snapshot Isolation in SQL Server | Microsoft Docs"
+title: "Snapshot Isolation in SQL Server"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Message Security with a Certificate Client | Microsoft Docs"
+title: "Message Security with a Certificate Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

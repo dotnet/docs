@@ -1,5 +1,5 @@
 ---
-title: "SignTool.exe (Sign Tool) | Microsoft Docs"
+title: "SignTool.exe (Sign Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

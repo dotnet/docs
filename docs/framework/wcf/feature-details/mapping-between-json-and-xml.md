@@ -1,5 +1,5 @@
 ---
-title: "Mapping Between JSON and XML | Microsoft Docs"
+title: "Mapping Between JSON and XML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

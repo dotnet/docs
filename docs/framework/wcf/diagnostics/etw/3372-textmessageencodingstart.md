@@ -1,5 +1,5 @@
 ---
-title: "3372 - TextMessageEncodingStart | Microsoft Docs"
+title: "3372 - TextMessageEncodingStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

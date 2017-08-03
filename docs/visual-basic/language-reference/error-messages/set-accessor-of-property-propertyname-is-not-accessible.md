@@ -1,5 +1,5 @@
 ---
-title: "&#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible | Microsoft Docs"
+title: "&#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible"
 
 ms.date: "2015-07-20"
 ms.prod: .net

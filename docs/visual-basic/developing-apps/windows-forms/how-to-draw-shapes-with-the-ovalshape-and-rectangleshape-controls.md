@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw Shapes with the OvalShape and RectangleShape Controls (Visual Studio) | Microsoft Docs"
+title: "How to: Draw Shapes with the OvalShape and RectangleShape Controls (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

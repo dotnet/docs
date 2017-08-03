@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.HttpException.%23ctor%2A> constructor is called during deserialization to reconstitute the exception object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ The <xref:System.Web.HttpException.%23ctor%2A> constructor is called during deserialization to reconstitute the exception object that is transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/standard/serialization/xml-and-soap-serialization.md).  
   
  ]]></format>
         </remarks>

@@ -1,5 +1,5 @@
 ---
-title: "Loops: while...do Expression (F#) | Microsoft Docs"
+title: "Loops: while...do Expression (F#)"
 description: See how the The while...do expression is used to perform iterative execution (looping) while a specified test condition is true.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "5016 - GenXmlSerializableStart | Microsoft Docs"
+title: "5016 - GenXmlSerializableStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

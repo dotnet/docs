@@ -1,5 +1,5 @@
 ---
-title: "3555 - CreateWorkflowServiceHostStart | Microsoft Docs"
+title: "3555 - CreateWorkflowServiceHostStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

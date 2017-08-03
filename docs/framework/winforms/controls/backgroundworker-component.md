@@ -1,5 +1,5 @@
 ---
-title: "BackgroundWorker Component | Microsoft Docs"
+title: "BackgroundWorker Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

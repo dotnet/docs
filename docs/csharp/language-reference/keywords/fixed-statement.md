@@ -1,5 +1,5 @@
 ---
-title: "fixed Statement (C# Reference) | Microsoft Docs"
+title: "fixed Statement (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

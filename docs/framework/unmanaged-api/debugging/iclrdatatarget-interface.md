@@ -1,5 +1,5 @@
 ---
-title: "ICLRDataTarget Interface | Microsoft Docs"
+title: "ICLRDataTarget Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

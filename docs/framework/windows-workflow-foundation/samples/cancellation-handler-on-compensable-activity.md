@@ -1,5 +1,5 @@
 ---
-title: "Cancellation Handler on Compensable Activity | Microsoft Docs"
+title: "Cancellation Handler on Compensable Activity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

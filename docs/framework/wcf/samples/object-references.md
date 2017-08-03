@@ -1,5 +1,5 @@
 ---
-title: "Object References | Microsoft Docs"
+title: "Object References"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

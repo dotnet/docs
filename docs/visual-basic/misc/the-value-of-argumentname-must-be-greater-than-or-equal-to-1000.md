@@ -1,5 +1,5 @@
 ---
-title: "The value of &lt;argumentname&gt; must be greater than or equal to 1000 | Microsoft Docs"
+title: "The value of &lt;argumentname&gt; must be greater than or equal to 1000"
 
 ms.date: "2015-07-20"
 ms.prod: .net

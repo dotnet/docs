@@ -435,7 +435,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_Addition (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator + (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_Addition(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Addition(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -474,7 +474,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_BitwiseAnd (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator &amp; (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_BitwiseAnd(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_BitwiseAnd(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -513,7 +513,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_BitwiseOr (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator | (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_BitwiseOr(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_BitwiseOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -552,7 +552,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_Division (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator / (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_Division(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Division(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -591,7 +591,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Equality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -631,7 +631,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_ExclusiveOr (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator ^ (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_ExclusiveOr(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_ExclusiveOr(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -670,7 +670,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;byte&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;byte&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;unsigned int8&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Byte}" />
       <MemberType>Method</MemberType>
@@ -707,7 +707,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;double&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;double&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;float64&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Double}" />
       <MemberType>Method</MemberType>
@@ -744,7 +744,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;short&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;short&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;int16&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int16}" />
       <MemberType>Method</MemberType>
@@ -781,7 +781,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;int&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;int&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;int32&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int32}" />
       <MemberType>Method</MemberType>
@@ -818,7 +818,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;long&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;long&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;int64&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Int64}" />
       <MemberType>Method</MemberType>
@@ -855,7 +855,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;sbyte&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;sbyte&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;int8&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.SByte}" />
       <MemberType>Method</MemberType>
@@ -897,7 +897,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;float&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;float&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;float32&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.Single}" />
       <MemberType>Method</MemberType>
@@ -934,7 +934,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;ushort&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;ushort&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;unsigned int16&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt16}" />
       <MemberType>Method</MemberType>
@@ -976,7 +976,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;uint&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;uint&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;unsigned int32&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt32}" />
       <MemberType>Method</MemberType>
@@ -1018,7 +1018,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;ulong&gt; op_Explicit (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.Vector&lt;ulong&gt; (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;unsigned int64&gt; op_Explicit(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Explicit(System.Numerics.Vector{`0})~System.Numerics.Vector{System.UInt64}" />
       <MemberType>Method</MemberType>
@@ -1060,7 +1060,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Inequality(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -1093,7 +1093,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_Multiply (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator * (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_Multiply(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -1132,7 +1132,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_Multiply (System.Numerics.Vector&lt;T&gt; value, T factor);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator * (System.Numerics.Vector&lt;T&gt; value, T factor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_Multiply(valuetype System.Numerics.Vector`1&lt;!T&gt; value, !T factor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Multiply(System.Numerics.Vector{`0},`0)" />
       <MemberType>Method</MemberType>
@@ -1171,7 +1171,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_Multiply (T factor, System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator * (T factor, System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_Multiply(!T factor, valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Multiply(`0,System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -1210,7 +1210,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_OnesComplement (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator ~ (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_OnesComplement(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_OnesComplement(System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -1240,7 +1240,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_Subtraction (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator - (System.Numerics.Vector&lt;T&gt; left, System.Numerics.Vector&lt;T&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_Subtraction(valuetype System.Numerics.Vector`1&lt;!T&gt; left, valuetype System.Numerics.Vector`1&lt;!T&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_Subtraction(System.Numerics.Vector{`0},System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>
@@ -1279,7 +1279,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; op_UnaryNegation (System.Numerics.Vector&lt;T&gt; value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector&lt;T&gt; operator - (System.Numerics.Vector&lt;T&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector`1&lt;!T&gt; op_UnaryNegation(valuetype System.Numerics.Vector`1&lt;!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector`1.op_UnaryNegation(System.Numerics.Vector{`0})" />
       <MemberType>Method</MemberType>

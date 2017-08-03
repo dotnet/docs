@@ -1,5 +1,5 @@
 ---
-title: "Array Conversions (Visual Basic) | Microsoft Docs"
+title: "Array Conversions (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

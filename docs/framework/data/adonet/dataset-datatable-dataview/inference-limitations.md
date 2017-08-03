@@ -1,5 +1,5 @@
 ---
-title: "Inference Limitations | Microsoft Docs"
+title: "Inference Limitations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

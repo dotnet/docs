@@ -1,5 +1,5 @@
 ---
-title: "Specifying a Custom Crypto Algorithm | Microsoft Docs"
+title: "Specifying a Custom Crypto Algorithm"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

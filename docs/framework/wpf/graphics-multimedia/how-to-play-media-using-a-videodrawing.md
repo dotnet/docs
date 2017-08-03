@@ -1,5 +1,5 @@
 ---
-title: "How to: Play Media using a VideoDrawing | Microsoft Docs"
+title: "How to: Play Media using a VideoDrawing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

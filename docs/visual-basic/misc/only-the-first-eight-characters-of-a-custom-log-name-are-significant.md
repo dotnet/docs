@@ -1,5 +1,5 @@
 ---
-title: "Only the first eight characters of a custom log name are significant | Microsoft Docs"
+title: "Only the first eight characters of a custom log name are significant"
 
 ms.date: "2015-07-20"
 ms.prod: .net

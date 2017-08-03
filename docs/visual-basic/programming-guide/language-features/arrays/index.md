@@ -1,5 +1,5 @@
 ---
-title: "Arrays in Visual Basic | Microsoft Docs"
+title: "Arrays in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -231,7 +231,7 @@ Elements of the "students" array
   
  The following example declares a three-dimensional array.  
   
-```  
+```vb
 Dim prices(3, 4, 5) As Long  
 ```  
   

@@ -1,6 +1,6 @@
 ---
-title: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#) | Microsoft Docs"
-description: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
+title: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
+description: Learn how to access typed data for a SQL database based on the ADO.NET Entity Data Model in F# 3.0.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

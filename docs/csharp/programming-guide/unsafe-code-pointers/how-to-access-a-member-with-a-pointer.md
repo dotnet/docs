@@ -1,5 +1,5 @@
 ---
-title: "How to: Access a Member with a Pointer (C# Programming Guide) | Microsoft Docs"
+title: "How to: Access a Member with a Pointer (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms | Microsoft Docs"
+title: "Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

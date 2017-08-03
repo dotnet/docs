@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.runtime.caching&gt; Element (Cache Settings) | Microsoft Docs"
+title: "&lt;system.runtime.caching&gt; Element (Cache Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "What's new for Visual Basic | Microsoft Docs"
+title: "What's new for Visual Basic"
 
 ms.date: "2017-04-27"
 ms.prod: .net

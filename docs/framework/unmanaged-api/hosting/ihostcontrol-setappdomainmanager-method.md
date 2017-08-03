@@ -1,5 +1,5 @@
 ---
-title: "IHostControl::SetAppDomainManager Method | Microsoft Docs"
+title: "IHostControl::SetAppDomainManager Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

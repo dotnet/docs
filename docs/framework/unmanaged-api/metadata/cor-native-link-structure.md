@@ -1,5 +1,5 @@
 ---
-title: "COR_NATIVE_LINK Structure | Microsoft Docs"
+title: "COR_NATIVE_LINK Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

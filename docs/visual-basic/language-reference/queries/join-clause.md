@@ -1,5 +1,5 @@
 ---
-title: "Join Clause (Visual Basic) | Microsoft Docs"
+title: "Join Clause (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

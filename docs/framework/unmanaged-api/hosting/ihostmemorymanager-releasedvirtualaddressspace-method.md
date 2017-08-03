@@ -1,5 +1,5 @@
 ---
-title: "IHostMemoryManager::ReleasedVirtualAddressSpace Method | Microsoft Docs"
+title: "IHostMemoryManager::ReleasedVirtualAddressSpace Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

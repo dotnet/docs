@@ -1,5 +1,5 @@
 ---
-title: "Extensibility | Microsoft Docs"
+title: "Extensibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

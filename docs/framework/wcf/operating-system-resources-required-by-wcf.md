@@ -1,5 +1,5 @@
 ---
-title: "Operating System Resources Required by WCF | Microsoft Docs"
+title: "Operating System Resources Required by WCF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

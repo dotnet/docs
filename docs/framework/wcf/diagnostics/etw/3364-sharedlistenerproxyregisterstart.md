@@ -1,5 +1,5 @@
 ---
-title: "3364 - SharedListenerProxyRegisterStart | Microsoft Docs"
+title: "3364 - SharedListenerProxyRegisterStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

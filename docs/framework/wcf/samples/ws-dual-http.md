@@ -1,5 +1,5 @@
 ---
-title: "WS Dual Http | Microsoft Docs"
+title: "WS Dual Http"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

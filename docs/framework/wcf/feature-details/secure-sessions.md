@@ -1,5 +1,5 @@
 ---
-title: "Secure Sessions | Microsoft Docs"
+title: "Secure Sessions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

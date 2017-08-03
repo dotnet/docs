@@ -1,5 +1,5 @@
 ---
-title: "Connection String and Connection String Name | Microsoft Docs"
+title: "Connection String and Connection String Name"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

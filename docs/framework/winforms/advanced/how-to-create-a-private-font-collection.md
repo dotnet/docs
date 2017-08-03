@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Private Font Collection | Microsoft Docs"
+title: "How to: Create a Private Font Collection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

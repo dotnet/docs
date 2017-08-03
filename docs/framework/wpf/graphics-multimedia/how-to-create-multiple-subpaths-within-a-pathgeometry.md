@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Multiple Subpaths Within a PathGeometry | Microsoft Docs"
+title: "How to: Create Multiple Subpaths Within a PathGeometry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

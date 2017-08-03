@@ -1,5 +1,5 @@
 ---
-title: "How to: Add a Splash Screen to a WPF Application | Microsoft Docs"
+title: "How to: Add a Splash Screen to a WPF Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -51,7 +51,7 @@ public event ChangedEventHandler Changed;
   
  If a field is not serialized, but it still requires a default value that must be supplied after deserialization, you can create a method that supplies the field with a value, then apply the <xref:System.Runtime.Serialization.OnDeserializedAttribute> to the method.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

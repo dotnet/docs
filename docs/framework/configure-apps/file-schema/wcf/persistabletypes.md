@@ -1,5 +1,5 @@
 ---
-title: "&lt;persistableTypes&gt; | Microsoft Docs"
+title: "&lt;persistableTypes&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

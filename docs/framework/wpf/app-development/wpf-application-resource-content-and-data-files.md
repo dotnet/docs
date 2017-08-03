@@ -1,5 +1,5 @@
 ---
-title: "WPF Application Resource, Content, and Data Files | Microsoft Docs"
+title: "WPF Application Resource, Content, and Data Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

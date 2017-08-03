@@ -338,7 +338,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Padding op_Addition (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Padding operator + (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Forms.Padding op_Addition(valuetype System.Windows.Forms.Padding p1, valuetype System.Windows.Forms.Padding p2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Addition(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberType>Method</MemberType>
@@ -371,7 +371,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Forms.Padding p1, valuetype System.Windows.Forms.Padding p2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Equality(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberType>Method</MemberType>
@@ -403,7 +403,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Forms.Padding p1, valuetype System.Windows.Forms.Padding p2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Inequality(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberType>Method</MemberType>
@@ -435,7 +435,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Padding op_Subtraction (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Padding operator - (System.Windows.Forms.Padding p1, System.Windows.Forms.Padding p2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Forms.Padding op_Subtraction(valuetype System.Windows.Forms.Padding p1, valuetype System.Windows.Forms.Padding p2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Padding.op_Subtraction(System.Windows.Forms.Padding,System.Windows.Forms.Padding)" />
       <MemberType>Method</MemberType>

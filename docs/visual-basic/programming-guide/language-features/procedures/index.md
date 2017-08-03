@@ -1,5 +1,5 @@
 ---
-title: "Procedures in Visual Basic | Microsoft Docs"
+title: "Procedures in Visual Basic"
 ms.custom: ""
 ms.date: "2017-04-28"
 ms.prod: .net

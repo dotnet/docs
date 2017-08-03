@@ -1,6 +1,6 @@
 ---
-title: .NET Class Libraries | Microsoft Docs
-description: .NET Class Libraries
+title: .NET Class Libraries
+description: Learn how .NET class libraries enable you to group useful functionality into modules that can be used by multiple applications.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw

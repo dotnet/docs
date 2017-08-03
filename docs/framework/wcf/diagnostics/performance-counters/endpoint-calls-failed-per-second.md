@@ -1,5 +1,5 @@
 ---
-title: "Endpoint: Calls Failed Per Second | Microsoft Docs"
+title: "Endpoint: Calls Failed Per Second"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

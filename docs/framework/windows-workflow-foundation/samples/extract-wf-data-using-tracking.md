@@ -1,5 +1,5 @@
 ---
-title: "Extract WF Data using Tracking | Microsoft Docs"
+title: "Extract WF Data using Tracking"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

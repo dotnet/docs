@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Windows Service Application in the Component Designer | Microsoft Docs"
+title: "Walkthrough: Creating a Windows Service Application in the Component Designer"
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
 ms.technology: 

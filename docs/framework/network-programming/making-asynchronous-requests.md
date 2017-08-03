@@ -1,5 +1,5 @@
 ---
-title: "Making Asynchronous Requests | Microsoft Docs"
+title: "Making Asynchronous Requests"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

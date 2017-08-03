@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Security.SecurityServerSessionAbortedFaultSent | Microsoft Docs"
+title: "System.ServiceModel.Security.SecurityServerSessionAbortedFaultSent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

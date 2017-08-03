@@ -1,5 +1,5 @@
 ---
-title: "System.Transactions Integration with SQL Server | Microsoft Docs"
+title: "System.Transactions Integration with SQL Server"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

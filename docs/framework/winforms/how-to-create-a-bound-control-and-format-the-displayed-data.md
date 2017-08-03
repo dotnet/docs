@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Bound Control and Format the Displayed Data | Microsoft Docs"
+title: "How to: Create a Bound Control and Format the Displayed Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo4::EnumJITedFunctions2 Method | Microsoft Docs"
+title: "ICorProfilerInfo4::EnumJITedFunctions2 Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

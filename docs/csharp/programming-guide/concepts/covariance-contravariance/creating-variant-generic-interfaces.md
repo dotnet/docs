@@ -1,5 +1,5 @@
 ---
-title: "Creating Variant Generic Interfaces (C#) | Microsoft Docs"
+title: "Creating Variant Generic Interfaces (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

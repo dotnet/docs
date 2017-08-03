@@ -1,5 +1,5 @@
 ---
-title: "Durable Issued Token Provider | Microsoft Docs"
+title: "Durable Issued Token Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

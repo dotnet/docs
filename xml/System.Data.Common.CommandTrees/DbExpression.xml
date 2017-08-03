@@ -465,7 +465,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (byte[] value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Byte[])~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -487,7 +487,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (System.Data.Spatial.DbGeography value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (System.Data.Spatial.DbGeography value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Spatial.DbGeography value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Data.Spatial.DbGeography)~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -509,7 +509,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (System.Data.Spatial.DbGeometry value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (System.Data.Spatial.DbGeometry value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Spatial.DbGeometry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Data.Spatial.DbGeometry)~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -531,7 +531,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;bool&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;bool&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;bool&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Boolean})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -553,7 +553,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;byte&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;byte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;unsigned int8&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Byte})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -575,7 +575,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;DateTime&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;DateTime&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.DateTime})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -597,7 +597,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;DateTimeOffset&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.DateTimeOffset})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -619,7 +619,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;decimal&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;decimal&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Decimal})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -641,7 +641,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;double&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;double&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;float64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Double})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -663,7 +663,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;Guid&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;Guid&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Guid})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -685,7 +685,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;short&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;short&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;int16&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Int16})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -707,7 +707,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;int&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;int&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;int32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Int32})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -729,7 +729,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;long&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;long&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;int64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Int64})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -751,7 +751,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (Nullable&lt;float&gt; value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;float&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;float32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Single})~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>
@@ -773,7 +773,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (string value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.String)~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>

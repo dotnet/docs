@@ -1,5 +1,5 @@
 ---
-title: "INotifySink2::OnSyncCallReturn Method | Microsoft Docs"
+title: "INotifySink2::OnSyncCallReturn Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

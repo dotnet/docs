@@ -1,5 +1,5 @@
 ---
-title: "How to: Automatically Size a Window to Fit Its Content | Microsoft Docs"
+title: "How to: Automatically Size a Window to Fit Its Content"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How To: Create a New Setting at Design Time | Microsoft Docs"
+title: "How To: Create a New Setting at Design Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

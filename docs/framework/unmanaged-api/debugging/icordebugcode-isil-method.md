@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode::IsIL Method | Microsoft Docs"
+title: "ICorDebugCode::IsIL Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

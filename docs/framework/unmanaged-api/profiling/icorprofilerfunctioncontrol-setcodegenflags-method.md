@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerFunctionControl::SetCodegenFlags Method | Microsoft Docs"
+title: "ICorProfilerFunctionControl::SetCodegenFlags Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

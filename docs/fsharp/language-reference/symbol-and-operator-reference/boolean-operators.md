@@ -1,6 +1,6 @@
 ---
-title: Boolean Operators (F#) | Microsoft Docs
-description: Boolean Operators (F#)
+title: Boolean Operators (F#)
+description: Learn about the boolean operators that are available in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

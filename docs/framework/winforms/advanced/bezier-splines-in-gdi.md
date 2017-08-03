@@ -1,5 +1,5 @@
 ---
-title: "B&#233;zier Splines in GDI+ | Microsoft Docs"
+title: "B&#233;zier Splines in GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

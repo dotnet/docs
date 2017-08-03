@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Express Security | Microsoft Docs"
+title: "SQL Server Express Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

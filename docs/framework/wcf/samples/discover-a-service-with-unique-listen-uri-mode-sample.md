@@ -1,5 +1,5 @@
 ---
-title: "Discover a Service with Unique Listen Uri Mode Sample | Microsoft Docs"
+title: "Discover a Service with Unique Listen Uri Mode Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

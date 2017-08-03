@@ -1,5 +1,5 @@
 ---
-title: "ICLRTaskManager::SetLocale Method | Microsoft Docs"
+title: "ICLRTaskManager::SetLocale Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

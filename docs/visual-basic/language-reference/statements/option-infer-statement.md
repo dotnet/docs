@@ -1,5 +1,5 @@
 ---
-title: "Option Infer Statement | Microsoft Docs"
+title: "Option Infer Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

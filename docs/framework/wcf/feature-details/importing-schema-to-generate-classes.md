@@ -1,5 +1,5 @@
 ---
-title: "Importing Schema to Generate Classes | Microsoft Docs"
+title: "Importing Schema to Generate Classes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

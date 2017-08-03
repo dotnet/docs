@@ -1,5 +1,5 @@
 ---
-title: "Indexers (C# Programming Guide) | Microsoft Docs"
+title: "Indexers (C# Programming Guide)"
 
 ms.date: "2017-03-10"
 ms.prod: .net

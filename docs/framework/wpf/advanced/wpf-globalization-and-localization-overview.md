@@ -1,5 +1,5 @@
 ---
-title: "WPF Globalization and Localization Overview | Microsoft Docs"
+title: "WPF Globalization and Localization Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

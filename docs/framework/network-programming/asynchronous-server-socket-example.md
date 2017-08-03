@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous Server Socket Example | Microsoft Docs"
+title: "Asynchronous Server Socket Example"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

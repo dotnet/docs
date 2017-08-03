@@ -1,5 +1,5 @@
 ---
-title: "System.IdentityModel.IdentityModelAsyncCallbackThrewException | Microsoft Docs"
+title: "System.IdentityModel.IdentityModelAsyncCallbackThrewException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

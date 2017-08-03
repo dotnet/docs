@@ -1,5 +1,5 @@
 ---
-title: "IAssemblyCacheItem::Commit Method | Microsoft Docs"
+title: "IAssemblyCacheItem::Commit Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

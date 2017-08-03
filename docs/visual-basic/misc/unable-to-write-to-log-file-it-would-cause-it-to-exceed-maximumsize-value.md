@@ -1,5 +1,5 @@
 ---
-title: "Unable to write to log file because writing to it would cause it to exceed MaximumSize value | Microsoft Docs"
+title: "Unable to write to log file because writing to it would cause it to exceed MaximumSize value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

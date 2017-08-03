@@ -1,5 +1,5 @@
 ---
-title: "Application Startup Time | Microsoft Docs"
+title: "Application Startup Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

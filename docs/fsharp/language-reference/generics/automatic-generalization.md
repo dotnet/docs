@@ -1,6 +1,6 @@
 ---
-title: Automatic Generalization (F#) | Microsoft Docs
-description: Automatic Generalization (F#)
+title: Automatic Generalization (F#)
+description: Learn how F# automatically generalizes the arguments and types of functions so that they work with multiple types when possible.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

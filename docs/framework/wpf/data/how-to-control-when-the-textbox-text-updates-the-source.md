@@ -1,5 +1,5 @@
 ---
-title: "How to: Control When the TextBox Text Updates the Source | Microsoft Docs"
+title: "How to: Control When the TextBox Text Updates the Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

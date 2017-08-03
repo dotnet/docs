@@ -1,5 +1,5 @@
 ---
-title: Parallel programming | Microsoft Docs
+title: Parallel programming
 description: Parallel programming
 keywords: .NET, .NET Core
 ms.date: 06/20/2016

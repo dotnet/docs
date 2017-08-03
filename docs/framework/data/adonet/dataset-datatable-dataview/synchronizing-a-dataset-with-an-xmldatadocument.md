@@ -1,5 +1,5 @@
 ---
-title: "Synchronizing a DataSet with an XmlDataDocument | Microsoft Docs"
+title: "Synchronizing a DataSet with an XmlDataDocument"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

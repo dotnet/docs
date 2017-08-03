@@ -1,5 +1,5 @@
 ---
-title: "202 - ClientMessageInspectorBeforeSendInvoked | Microsoft Docs"
+title: "202 - ClientMessageInspectorBeforeSendInvoked"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

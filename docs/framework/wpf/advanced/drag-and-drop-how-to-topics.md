@@ -1,5 +1,5 @@
 ---
-title: "Drag and Drop How-to Topics | Microsoft Docs"
+title: "Drag and Drop How-to Topics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

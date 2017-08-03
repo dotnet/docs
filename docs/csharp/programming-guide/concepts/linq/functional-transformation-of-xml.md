@@ -1,5 +1,5 @@
 ---
-title: "Functional Transformation of XML (C#) | Microsoft Docs"
+title: "Functional Transformation of XML (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

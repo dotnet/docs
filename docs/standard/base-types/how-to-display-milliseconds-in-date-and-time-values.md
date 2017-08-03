@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Milliseconds in Date and Time Values | Microsoft Docs"
+title: "How to: Display Milliseconds in Date and Time Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

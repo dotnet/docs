@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Control Development Basics | Microsoft Docs"
+title: "Windows Forms Control Development Basics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

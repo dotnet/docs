@@ -1,5 +1,5 @@
 ---
-title: C# Tutorials | Microsoft Docs
+title: C# Tutorials
 description: Explore these C# tutorials to learn how to build C# programs and learn C# language features.
 keywords: .NET, .NET Core
 author: BillWagner

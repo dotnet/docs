@@ -1,5 +1,5 @@
 ---
-title: "Sorry, we don&#39;t have specifics on this C# error | Microsoft Docs"
+title: "Sorry, we don&#39;t have specifics on this C# error"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -875,6 +875,8 @@ f1_keywords:
   - "CS0589"
   - "CS0656"
   - "CS8038"
+  - "CS8132"
+  - "CS8136"
   - "CS8137"
   - "CS8139"
   - "CS8156"

@@ -294,7 +294,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (ModuleHandle left, ModuleHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (ModuleHandle left, ModuleHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ModuleHandle left, valuetype System.ModuleHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.op_Equality(System.ModuleHandle,System.ModuleHandle)" />
       <MemberType>Method</MemberType>
@@ -330,7 +330,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ModuleHandle left, ModuleHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (ModuleHandle left, ModuleHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ModuleHandle left, valuetype System.ModuleHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ModuleHandle.op_Inequality(System.ModuleHandle,System.ModuleHandle)" />
       <MemberType>Method</MemberType>

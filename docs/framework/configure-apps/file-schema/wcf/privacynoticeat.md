@@ -1,5 +1,5 @@
 ---
-title: "&lt;privacyNoticeAt&gt; | Microsoft Docs"
+title: "&lt;privacyNoticeAt&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

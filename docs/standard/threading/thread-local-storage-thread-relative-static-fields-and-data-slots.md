@@ -1,5 +1,5 @@
 ---
-title: "Thread Local Storage: Thread-Relative Static Fields and Data Slots | Microsoft Docs"
+title: "Thread Local Storage: Thread-Relative Static Fields and Data Slots"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

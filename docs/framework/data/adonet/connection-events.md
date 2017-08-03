@@ -1,5 +1,5 @@
 ---
-title: "Connection Events | Microsoft Docs"
+title: "Connection Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

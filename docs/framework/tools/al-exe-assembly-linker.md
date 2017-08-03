@@ -1,5 +1,5 @@
 ---
-title: "Al.exe (Assembly Linker) | Microsoft Docs"
+title: "Al.exe (Assembly Linker)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

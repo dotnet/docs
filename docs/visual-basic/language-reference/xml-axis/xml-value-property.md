@@ -1,5 +1,5 @@
 ---
-title: "XML Value Property (Visual Basic) | Microsoft Docs"
+title: "XML Value Property (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

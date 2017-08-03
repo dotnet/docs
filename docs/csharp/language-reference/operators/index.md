@@ -1,5 +1,5 @@
 ---
-title: "C# Operators | Microsoft Docs"
+title: "C# Operators"
 ms.date: "2017-03-09"
 ms.prod: .net
 ms.technology: 

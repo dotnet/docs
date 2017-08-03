@@ -1,5 +1,5 @@
 ---
-title: "Using the WCF Development Tools | Microsoft Docs"
+title: "Using the WCF Development Tools"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

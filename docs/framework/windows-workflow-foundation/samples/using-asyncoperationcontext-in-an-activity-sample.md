@@ -1,5 +1,5 @@
 ---
-title: "Using AsyncOperationContext in an Activity Sample | Microsoft Docs"
+title: "Using AsyncOperationContext in an Activity Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XML Schema Object Model (SOM) | Microsoft Docs"
+title: "XML Schema Object Model (SOM)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.GetServiceElement | Microsoft Docs"
+title: "System.ServiceModel.GetServiceElement"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

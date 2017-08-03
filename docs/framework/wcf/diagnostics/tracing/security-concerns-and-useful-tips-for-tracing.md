@@ -1,5 +1,5 @@
 ---
-title: "Security Concerns and Useful Tips for Tracing | Microsoft Docs"
+title: "Security Concerns and Useful Tips for Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

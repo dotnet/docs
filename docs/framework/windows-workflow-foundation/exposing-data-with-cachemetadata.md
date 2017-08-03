@@ -1,5 +1,5 @@
 ---
-title: "Exposing data with CacheMetadata | Microsoft Docs"
+title: "Exposing data with CacheMetadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

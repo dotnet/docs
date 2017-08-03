@@ -1,5 +1,5 @@
 ---
-title: "Implements Clause (Visual Basic) | Microsoft Docs"
+title: "Implements Clause (Visual Basic)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""

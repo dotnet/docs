@@ -1,5 +1,5 @@
 ---
-title: "How to: Translate an Element | Microsoft Docs"
+title: "How to: Translate an Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

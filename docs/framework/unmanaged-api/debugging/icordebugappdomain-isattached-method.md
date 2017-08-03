@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain::IsAttached Method | Microsoft Docs"
+title: "ICorDebugAppDomain::IsAttached Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

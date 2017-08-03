@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - Analyzing your Third-Party Party Dependencies | Microsoft Docs
+title: Porting to .NET Core - Analyzing your Third-Party Party Dependencies
 description: Porting to .NET Core - Analyzing your Third-Party Dependencies
 keywords: .NET, .NET Core
 author: cartermp

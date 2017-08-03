@@ -1,5 +1,5 @@
 ---
-title: "Types of Bitmaps | Microsoft Docs"
+title: "Types of Bitmaps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

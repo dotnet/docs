@@ -1,5 +1,5 @@
 ---
-title: "How to: Respond to Windows Forms Button Clicks | Microsoft Docs"
+title: "How to: Respond to Windows Forms Button Clicks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

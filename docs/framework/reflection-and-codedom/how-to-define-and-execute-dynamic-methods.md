@@ -1,5 +1,5 @@
 ---
-title: "How to: Define and Execute Dynamic Methods | Microsoft Docs"
+title: "How to: Define and Execute Dynamic Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

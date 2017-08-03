@@ -1,5 +1,5 @@
 ---
-title: "Workflow Management Endpoint Sample | Microsoft Docs"
+title: "Workflow Management Endpoint Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

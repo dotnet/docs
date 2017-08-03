@@ -1,5 +1,5 @@
 ---
-title: "3383 - ReliableSessionChannelFaulted | Microsoft Docs"
+title: "3383 - ReliableSessionChannelFaulted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

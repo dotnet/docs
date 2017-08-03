@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Which Modifier Key Was Pressed | Microsoft Docs"
+title: "How to: Determine Which Modifier Key Was Pressed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

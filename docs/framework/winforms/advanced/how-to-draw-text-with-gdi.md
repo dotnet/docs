@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw Text with GDI | Microsoft Docs"
+title: "How to: Draw Text with GDI"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

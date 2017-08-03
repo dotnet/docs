@@ -1,5 +1,5 @@
 ---
-title: "Single Bulk Copy Operations | Microsoft Docs"
+title: "Single Bulk Copy Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

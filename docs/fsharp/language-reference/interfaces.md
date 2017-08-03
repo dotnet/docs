@@ -1,5 +1,5 @@
 ---
-title: Interfaces (F#) | Microsoft Docs
+title: Interfaces (F#)
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "Division by zero (Visual Basic Error) | Microsoft Docs"
+title: "Division by zero (Visual Basic Error)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

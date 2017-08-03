@@ -131,7 +131,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.IO.Log.PolicyUnit left, valuetype System.IO.Log.PolicyUnit right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Equality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
       <MemberType>Method</MemberType>
@@ -163,7 +163,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.IO.Log.PolicyUnit left, valuetype System.IO.Log.PolicyUnit right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Inequality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
       <MemberType>Method</MemberType>

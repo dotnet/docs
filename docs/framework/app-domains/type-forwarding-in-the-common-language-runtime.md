@@ -1,5 +1,5 @@
 ---
-title: "Type Forwarding in the Common Language Runtime | Microsoft Docs"
+title: "Type Forwarding in the Common Language Runtime"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

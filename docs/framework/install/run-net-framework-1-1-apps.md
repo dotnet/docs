@@ -1,5 +1,5 @@
 ---
-title: "Run .NET Framework 1.1 apps on Windows 8, Windows 8.1, or Windows 10 | Microsoft Docs"
+title: "Run .NET Framework 1.1 apps on Windows 8, Windows 8.1, or Windows 10"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

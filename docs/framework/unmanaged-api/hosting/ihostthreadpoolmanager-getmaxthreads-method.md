@@ -1,5 +1,5 @@
 ---
-title: "IHostThreadPoolManager::GetMaxThreads Method | Microsoft Docs"
+title: "IHostThreadPoolManager::GetMaxThreads Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

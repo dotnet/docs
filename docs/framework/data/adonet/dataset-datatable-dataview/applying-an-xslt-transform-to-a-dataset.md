@@ -1,5 +1,5 @@
 ---
-title: "Applying an XSLT Transform to a DataSet | Microsoft Docs"
+title: "Applying an XSLT Transform to a DataSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Compiler Options (F#) | Microsoft Docs
+title: Compiler Options (F#)
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
 keywords: visual f#, f#, functional programming
 author: cartermp

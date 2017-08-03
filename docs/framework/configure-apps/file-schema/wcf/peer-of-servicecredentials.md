@@ -1,5 +1,5 @@
 ---
-title: "&lt;peer&gt; of &lt;serviceCredentials&gt; | Microsoft Docs"
+title: "&lt;peer&gt; of &lt;serviceCredentials&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

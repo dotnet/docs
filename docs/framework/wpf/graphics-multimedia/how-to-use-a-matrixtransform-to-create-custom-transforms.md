@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a MatrixTransform to Create Custom Transforms | Microsoft Docs"
+title: "How to: Use a MatrixTransform to Create Custom Transforms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

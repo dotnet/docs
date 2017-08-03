@@ -1,5 +1,5 @@
 ---
-title: "Formatting messages in Workflow Services | Microsoft Docs"
+title: "Formatting messages in Workflow Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

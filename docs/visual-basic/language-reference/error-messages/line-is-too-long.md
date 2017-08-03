@@ -1,5 +1,5 @@
 ---
-title: "Line is too long | Microsoft Docs"
+title: "Line is too long"
 
 ms.date: "2015-07-20"
 ms.prod: .net

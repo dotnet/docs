@@ -41,8 +41,8 @@ You have to be on the particular platform to build that platform.
 
 The build has two main `buildTypes`:
 
- * Debug (default)- Compiles the runtime with additional runtime checks (asserts). These checks slow runtime execution but are really valuable for debugging. Recommended setting for development and testing environments.
- * Release - Compiles the runtime without any runtime checks. It can be difficult to debug. Pass `release` to the build script to select this.
+ * Debug (default)- Compiles the runtime with minimal optimizations and additional runtime checks (asserts). This reduction in optimization level and the additional checks slow runtime execution but are valuable for debugging. This is the recommended setting for development and testing environments.
+ * Release - Compiles the runtime with full optimizations and without the additional runtime checks. This will yield much faster run time performance but it can take a bit longer to build and can be difficult to debug. Pass `release` to the build script to select this build type.
 
 In addition, by default the build not only creates the runtime executables, but it also builds all the tests.
 There are quite a few tests, taking a significant amount of time that isn't necessary if you just want to experiment with changes.
@@ -52,7 +52,7 @@ You can skip the tests builds by adding the `skiptests` argument to the build sc
     .\build skiptests 
 ```
 
-The previous example showed how to build the `Debug` flavor, which has development time checks (asserts). To build the release (full speed) flavor, do the following:
+The previous example showed how to build the `Debug` flavor, which has development time checks (asserts) enabled and optimizations disabled. To build the release (full speed) flavor, do the following:
 
 ```bat 
     .\build release skiptests

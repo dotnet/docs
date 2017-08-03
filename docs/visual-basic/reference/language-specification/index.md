@@ -1,13 +1,9 @@
 ---
 title: "Visual Basic Language Specification"
-
-ms.date: "2015-07-20"
+ms.date: "2017-08-02"
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -19,7 +15,6 @@ ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -40,9 +35,9 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Language Specification is the au
   
  The specification is available on the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=188623).  
   
-This site contains the [VB 11 specification](../../../../_vblang/spec/introduction.md). It is built from the markdown files contained in [the dotnet/vblang GitHub repository](https://github.com/dotnet/vb/blob/master/spec/README.md).
+This site contains the [VB 11 specification](../../../../_vblang/spec/introduction.md). It's built from the Markdown files contained in [the dotnet/vblang GitHub repository](https://github.com/dotnet/vblang/blob/master/spec/README.md).
 
-Issues on the specification should be created in the [dotnet/vblang](https://github.com/dotnet/vblang/issues) repository. Or, if you are interested
+Issues on the specification should be created in the [dotnet/vblang](https://github.com/dotnet/vblang/issues) repository. Or, if you're interested
 in fixing any errors you find, you may submit a [Pull Request](https://github.com/dotnet/vblang/pulls) to the same repository.
 
 ## See Also  

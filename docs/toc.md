@@ -48,6 +48,7 @@
 ## [Threading](standard/threading/)
 ## [Parallel Programming](standard/parallel-programming/)
 ## [Security](standard/security/)
+## [Serialization](standard/serialization/)
 ## [Developing for Multiple Platforms](standard/cross-platform/)
 <!-- End of .NET Guide -->
 
@@ -153,7 +154,6 @@
 ### [Windows Service Applications](framework/windows-services/)
 ### [64-bit Applications](framework/64-bit-apps.md)
 ### [Web Applications with ASP.NET](framework/develop-web-apps-with-aspnet.md)
-### [Serialization](framework/serialization/)
 ### [Network Programming in the .NET Framework](framework/network-programming/)
 ### [Configuring Apps](framework/configure-apps/)
 ### [Compiling Apps with .NET Native](framework/net-native/)

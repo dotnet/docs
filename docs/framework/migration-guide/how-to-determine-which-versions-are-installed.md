@@ -154,27 +154,23 @@ Users can install and run multiple versions of the .NET Framework on their compu
 <a name="ps_a"></a> 
 #### To check for a minimum-required .NET Framework version by querying the registry in PowerShell (.NET Framework 4.5 and later)
 
-- The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed (returning `True` if it is and `False` otherwise). 
+- The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed, regardless of Windows OS version (returning `True` if it is and `False` otherwise).
 
-```PowerShell
-Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 }
-```
-
-You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
+    ```PowerShell
+    Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 } 
+    ```
 
     |Version|Minimum value of the Release DWORD|
     |-------------|--------------------------------|
     |.NET Framework 4.5|378389|
     |.NET Framework 4.5.1|378675|
     |.NET Framework 4.5.2|379893|
-    |[!INCLUDE[net_v46](../../../includes/net-v46-md.md)] installed with Windows 10|393295|
-    |[!INCLUDE[net_v46](../../../includes/net-v46-md.md)] installed on all other Windows OS versions|393297|
-    |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] installed on Windows 10|394254|
-    |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)] installed on all other Windows OS versions|394271|
-    |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on Windows 10 Anniversary Update|394802|
-    |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)] installed on all other Windows OS versions|394806|
-    |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
-    |.NET Framework 4.7 installed on all other Windows OS versions|460805|
+    |[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|393295|
+    |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|394254|
+    |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
+    |.NET Framework 4.7|460798|
+
+     You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
 
 <a name="clr_a"></a> 
 #### To find the current runtime version by using the Clrver tool

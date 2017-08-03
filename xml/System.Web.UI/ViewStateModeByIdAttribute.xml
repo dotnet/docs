@@ -27,7 +27,7 @@
   
  the <xref:System.Web.UI.Control.LoadViewStateByID%2A> property of the control returns `true`. If the <xref:System.Web.UI.ViewStateModeByIdAttribute> class is not used, the <xref:System.Web.UI.Control.LoadViewStateByID%2A> property of the control returns its default value of `false`, which means that the control does not load its view-state information by <xref:System.Web.UI.Control.ID%2A>.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  The <xref:System.Web.UI.ViewStateModeByIdAttribute> class does not apply to saving the view-state information for a control.  
   

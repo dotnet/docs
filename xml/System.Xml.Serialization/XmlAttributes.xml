@@ -30,7 +30,7 @@
   
  The members of the <xref:System.Xml.Serialization.XmlAttributes> class correspond directly to a family of attribute classes that control serialization. For example, the <xref:System.Xml.Serialization.XmlAttributes.XmlText%2A> property must be set to an <xref:System.Xml.Serialization.XmlTextAttribute>, which allows you to override serialization of a field or property by instructing the <xref:System.Xml.Serialization.XmlSerializer> to serialize the property value as XML text. For a complete list of attributes that control serialization, see the <xref:System.Xml.Serialization.XmlSerializer>.  
   
- For more details on using the <xref:System.Xml.Serialization.XmlAttributeOverrides> with the <xref:System.Xml.Serialization.XmlAttributes> class, see [How to: Specify an Alternate Element Name for an XML Stream](~/docs/framework/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md).  
+ For more details on using the <xref:System.Xml.Serialization.XmlAttributeOverrides> with the <xref:System.Xml.Serialization.XmlAttributes> class, see [How to: Specify an Alternate Element Name for an XML Stream](~/docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md).  
   
    
   

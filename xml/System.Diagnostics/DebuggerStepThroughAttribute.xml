@@ -56,7 +56,7 @@
   
  This attribute avoids having to step into compiler-provided code and only steps into developer-provided code. For example, if you are stepping through code by using the **F11** (Step Into) key, the attribute will cause the step to behave like an **F10** (Step Over) key for compiler-provided code. The method won’t be stepped into, but it will be executed.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

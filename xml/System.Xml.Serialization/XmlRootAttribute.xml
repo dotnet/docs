@@ -34,13 +34,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlRootAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlRootAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/standard/serialization/attributes-that-control-xml-serialization.md).  
   
  You can apply the <xref:System.Xml.Serialization.XmlRootAttribute> to a class, structure, enumeration, or interface. You can also apply the attribute to the return value of an XML Web service method.  
   
  Every XML document must have a single root element that contains all the other elements. The <xref:System.Xml.Serialization.XmlRootAttribute> allows you to control how the <xref:System.Xml.Serialization.XmlSerializer> generates the root element by setting certain properties. For example, specify the name of the generated XML element by setting the <xref:System.Xml.Serialization.XmlRootAttribute.ElementName%2A> property.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
 > [!NOTE]
 >  You can use the word `XmlRoot` in your code instead of the longer <xref:System.Xml.Serialization.XmlRootAttribute>.  

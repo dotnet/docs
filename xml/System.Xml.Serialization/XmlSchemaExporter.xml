@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlSchemaExporter> class provides a programmatic representation of an XML Schema Definition language (XSD) document. Instead of using <xref:System.Xml.Serialization.XmlSchemaExporter> directly, use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class or the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md).  
+ The <xref:System.Xml.Serialization.XmlSchemaExporter> class provides a programmatic representation of an XML Schema Definition language (XSD) document. Instead of using <xref:System.Xml.Serialization.XmlSchemaExporter> directly, use the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class or the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md).  
   
  The <xref:System.Web.Services.Description.ServiceDescriptionReflector> class creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as Web services. It uses the <xref:System.Xml.Serialization.XmlSchemaExporter> class when a Web service class specifies:  
   

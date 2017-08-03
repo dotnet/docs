@@ -20,7 +20,7 @@ To put it very simply, managed code is just that: code whose execution is manage
 
 Contrast this to the way you would run a C/C++ program, also called "unmanaged code". In the unmanaged world, the programmer is in charge of pretty much everything. The actual program is, essentially, a binary that the operating system (OS) loads into memory and starts. Everything else, from memory management to security considerations are a burden of the programmer.
 
-Managed code is written in one of the high-level languages that can be run on top of the .NET platform, such as C#, Visual Basic, F# and others. When you compile code written in those languages with their respective compiler, you don’t get machine code. You get **Intermediate Language** code which the runtime then compiles and executes. C++ is the one exception to this rule, as it can also produce native, unmanaged binaries that run on Windows.
+Managed code is written in one of the high-level languages that can be run on top of .NET, such as C#, Visual Basic, F# and others. When you compile code written in those languages with their respective compiler, you don’t get machine code. You get **Intermediate Language** code which the runtime then compiles and executes. C++ is the one exception to this rule, as it can also produce native, unmanaged binaries that run on Windows.
 
 ## Intermediate Language & execution
 

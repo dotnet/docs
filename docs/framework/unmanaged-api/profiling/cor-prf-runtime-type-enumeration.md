@@ -30,7 +30,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # COR_PRF_RUNTIME_TYPE Enumeration
-Contains values that indicate the version of the common language runtime (CLR): desktop or core CLR, which is used in Silverlight.  
+Contains values that indicate the version of the common language runtime (CLR): desktop or CoreCLR, which is used in Silverlight.  
   
 ## Syntax  
   

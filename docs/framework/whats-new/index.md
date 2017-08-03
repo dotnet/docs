@@ -732,7 +732,7 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
 
 - **ASP.NET 5**
 
-     .NET 2015 includes ASP.NET 5, which is a lean .NET platform for building modern cloud-based apps. The platform is modular so you can include only those features that are needed in your application. It can be hosted on IIS or self-hosted in a custom process, and you can run apps with different versions of the .NET Framework on the same server. It includes a new environment configuration system that is designed for cloud deployment.
+     .NET 2015 includes ASP.NET 5, which is a lean .NET implementation for building modern cloud-based apps. ASP.NET 5 is modular so you can include only those features that are needed in your application. It can be hosted on IIS or self-hosted in a custom process, and you can run apps with different versions of the .NET Framework on the same server. It includes a new environment configuration system that is designed for cloud deployment.
 
      MVC, Web API, and Web Pages are unified into a single framework called MVC 6. You build ASP.NET 5 apps through the new tools in Visual Studio 2015. Your existing applications will work on the new .NET Framework; however to build an app that uses MVC 6 or SignalR 3, you must use the project system in Visual Studio 2015.
 

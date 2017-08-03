@@ -14,7 +14,7 @@ ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 
 # Language independence and language-independent components
 
-The .NET platform is language independent. This means that, as a developer, you can develop in one of the many languages that target the .NET platform, such as C#, F#, and Visual Basic. You can access the types and members of class libraries developed for the .NET platform without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you are a component developer, your component can be accessed by any .NET app regardless of its language.
+.NET is language independent. This means that, as a developer, you can develop in one of the many languages that target .NET implementations, such as C#, F#, and Visual Basic. You can access the types and members of class libraries developed for .NET implementations without having to know the language in which they were originally written and without having to follow any of the original language's conventions. If you are a component developer, your component can be accessed by any .NET app regardless of its language.
 
 > [!NOTE]
 > This first part of this article discusses creating language-independent components - that is, components that can be consumed by apps that are written in any language. You can also create a single component or app from source code written in multiple languages; see [Cross-Language Interoperability](#cross-language-interoperability) in the second part of this article. 

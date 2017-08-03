@@ -14,7 +14,7 @@ ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 
 # Native Interoperability
 
-In this document, we will dive a little bit deeper into all three ways of doing "native interoperability" that are available on the .NET platform.
+In this document, we will dive a little bit deeper into all three ways of doing "native interoperability" that are available using .NET.
 
 There are a few of reasons why you would want to call into native code:
 

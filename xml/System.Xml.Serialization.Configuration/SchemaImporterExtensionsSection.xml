@@ -20,11 +20,11 @@
   
  Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .Net Framework types:  
   
--   [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md)  
+-   [\&lt;system.xml.serialization\&gt; Element](~/docs/standard/serialization/system-xml-serialization-element.md)  
   
--   [\&lt;schemaImporterExtensions\&gt; Element](~/docs/framework/serialization/schemaimporterextensions-element.md)  
+-   [\&lt;schemaImporterExtensions\&gt; Element](~/docs/standard/serialization/schemaimporterextensions-element.md)  
   
--   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](~/docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)  
+-   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](~/docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
   
  ]]></format>
     </remarks>

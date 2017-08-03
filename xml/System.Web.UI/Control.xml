@@ -1771,7 +1771,7 @@ HyperLink1.NavigateUrl = HyperLink1.GetRouteUrl("Product",
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>The <see cref="M:System.Web.UI.Control.HasControls" /> method should be overridden only to change metadata attributes such as <see cref="T:System.ComponentModel.EditorBrowsableAttribute" />. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).</para>
+          <para>The <see cref="M:System.Web.UI.Control.HasControls" /> method should be overridden only to change metadata attributes such as <see cref="T:System.ComponentModel.EditorBrowsableAttribute" />. For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).</para>
         </block>
       </Docs>
     </Member>

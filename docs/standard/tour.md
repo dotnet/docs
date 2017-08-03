@@ -1,6 +1,6 @@
 ---
 title: Tour of .NET | Microsoft Docs
-description: A guided tour through some of the prominent features of the .NET platform.
+description: A guided tour through some of the prominent features of .NET.
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
@@ -16,7 +16,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 .NET is a general purpose development platform. It has several key features, such as support for multiple programming languages, asynchronous and concurrent programming models, and native interoperability, which enable a wide range of scenarios across multiple platforms.
 
-This article offers a guided tour through some of the key features of the .NET platform. See the [.NET Architectural Components](components.md) topic to learn about the architectural pieces of .NET and what they're used for.
+This article offers a guided tour through some of the key features of the .NET. See the [.NET Architectural Components](components.md) topic to learn about the architectural pieces of .NET and what they're used for.
 
 ## How to run the code samples
 
@@ -52,13 +52,13 @@ In the following example, the runtime throws an `InvalidIndexException` exceptio
 
 ## Working with unmanaged resources
 
-Some objects reference *unmanaged resources*. Unmanaged resources are resources that aren't automatically maintained by the .NET implementation. For example, a file handle is an unmanaged resource. A <xref:System.IO.FileStream> object is a managed object, but it references a file handle, which is unmanaged. When you're done using the <xref:System.IO.FileStream>, you need to release the file handle.
+Some objects reference *unmanaged resources*. Unmanaged resources are resources that aren't automatically maintained by the .NET runtime. For example, a file handle is an unmanaged resource. A <xref:System.IO.FileStream> object is a managed object, but it references a file handle, which is unmanaged. When you're done using the <xref:System.IO.FileStream>, you need to release the file handle.
 
 In .NET, objects that reference unmanaged resources implement the <xref:System.IDisposable> interface. When you're done using the object, you call the object's <xref:System.IDisposable.Dispose> method, which is responsible for releasing any unmanaged resources. .NET languages provide a convenient `using` syntax for such objects, as shown in the following example:
 
 [!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
-Once the `using` block completes, the .NET implementation automatically calls the `stream` object's <xref:System.IDisposable.Dispose> method, which releases the file handle. The runtime also does this if an exception causes control to leave the block.
+Once the `using` block completes, the .NET runtime automatically calls the `stream` object's <xref:System.IDisposable.Dispose> method, which releases the file handle. The runtime also does this if an exception causes control to leave the block.
 
 For more details, see the following topics:
 
@@ -70,7 +70,7 @@ For more details, see the following topics:
 
 An object is an instance of a specific type. The only operations allowed for a given object are those of its type. A `Dog` type may have `Jump` and `WagTail` methods but not a `SumTotal` method. A program only calls the methods belonging to a given type. All other calls result in either a compile-time error or a run-time exception (in case of using dynamic features or `object`).
 
-.NET languages are object-oriented with hierarchies of base and derived classes. The .NET implementation only allows object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base <xref:System.Object> type.
+.NET languages are object-oriented with hierarchies of base and derived classes. The .NET runtime only allows object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base <xref:System.Object> type.
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L19-L23)]
 

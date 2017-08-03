@@ -154,11 +154,13 @@ Users can install and run multiple versions of the .NET Framework on their compu
 <a name="ps_a"></a> 
 #### To check for a minimum-required .NET Framework version by querying the registry in PowerShell (.NET Framework 4.5 and later)
 
-- The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed (returning `True` if it is and `False` otherwise). You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
+- The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed (returning `True` if it is and `False` otherwise). 
 
 ```PowerShell
-Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 } 
+Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 }
 ```
+
+You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
 
     |Version|Minimum value of the Release DWORD|
     |-------------|--------------------------------|

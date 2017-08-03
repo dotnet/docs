@@ -54,7 +54,7 @@ Modify the `Main` method in *program.cs* as follows:
 
 [!code-cs[csProgGuideMain#14](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_3.cs)]
 
-When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or from `$LastExitCode` from powershell.
+When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from powershell.
 
 You can build the application using the [dotnet CLI](../../../core/tools/dotnet.md) `dotnet build` command.
 
@@ -105,15 +105,15 @@ The advantage of the new syntax is that the compiler always generates the correc
 
 ## Compiler generated code
 
-When the application entry point does return a `Task` or `Task<int>` The compiler will generate a new entry point that will call the entry point method declared in the application code. If you imagine that this entry point is called `$GeneratedMain`, the new allowed signatures will behave as follows:
+When the application entry point returns a `Task` or `Task<int>`, the compiler generates a new entry point that calls the entry point method declared in the application code. Assuming that this entry point is called `$GeneratedMain`, the compiler generates the following code for these entry points:
 
-- `static Task Main()` will result in the compiler emitting the equivalent of private `static void $GeneratedMain() => Main().GetAwaiter().GetResult();`
-- `static Task Main(string[])` will result in the compiler emitting the equivalent of `private static void $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
-- `static Task<int> Main()` will result in the compiler emitting the equivalent of `private static int $GeneratedMain() => Main().GetAwaiter().GetResult();`
-- `static Task<int> Main(string[])` will result in the compiler emitting the equivalent of `private static int $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
+- `static Task Main()` results in the compiler emitting the equivalent of `private static void $GeneratedMain() => Main().GetAwaiter().GetResult();`
+- `static Task Main(string[])` results in the compiler emitting the equivalent of `private static void $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
+- `static Task<int> Main()` results in the compiler emitting the equivalent of `private static int $GeneratedMain() => Main().GetAwaiter().GetResult();`
+- `static Task<int> Main(string[])` results in the compiler emitting the equivalent of `private static int $GeneratedMain(string[] args) => Main(args).GetAwaiter().GetResult();`
 
 > [!NOTE]
-> The above examples could all have the `async` modifier on the `Main` method and would generate the same resulting code.
+>If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
 ## See also
 [C# Programming Guide](../../programming-guide/index.md)

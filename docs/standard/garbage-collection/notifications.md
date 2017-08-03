@@ -1,5 +1,5 @@
 ---
-title: "Garbage Collection Notifications | Microsoft Docs"
+title: "Garbage Collection Notifications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

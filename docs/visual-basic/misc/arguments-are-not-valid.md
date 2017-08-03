@@ -1,5 +1,5 @@
 ---
-title: "Arguments are not valid | Microsoft Docs"
+title: "Arguments are not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

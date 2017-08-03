@@ -1,6 +1,6 @@
 ---
-title: Sequences (F#) | Microsoft Docs
-description: Sequences (F#)
+title: Sequences (F#)
+description: Learn how to use F# sequences, when you have a large, ordered collection of data but don't necessarily expect to use all of the elements.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -17,7 +17,7 @@ ms.assetid: 23dc7d75-cd26-4df2-9be3-9d1aba5c4443
 > [!NOTE]
 The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
-A *sequence* is a logical series of elements all of one type. Sequences are particularly useful when you have a large, ordered collection of data but do not necessarily expect to use all the elements. Individual sequence elements are computed only as required, so a sequence can provide better performance than a list in situations in which not all the elements are used. Sequences are represented by the `seq<'T>` type, which is an alias for `System.Collections.Generic.IEnumerable`. Therefore, any .NET Framework type that implements `System.IEnumerable` can be used as a sequence. The [Seq module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) provides support for manipulations involving sequences.
+A *sequence* is a logical series of elements all of one type. Sequences are particularly useful when you have a large, ordered collection of data but do not necessarily expect to use all of the elements. Individual sequence elements are computed only as required, so a sequence can provide better performance than a list in situations in which not all the elements are used. Sequences are represented by the `seq<'T>` type, which is an alias for `System.Collections.Generic.IEnumerable`. Therefore, any .NET Framework type that implements `System.IEnumerable` can be used as a sequence. The [Seq module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) provides support for manipulations involving sequences.
 
 ## Sequence Expressions
 A *sequence expression* is an expression that evaluates to a sequence. Sequence expressions can take a number of forms. The simplest form specifies a range. For example, `seq { 1 .. 5 }` creates a sequence that contains five elements, including the endpoints 1 and 5. You can also specify an increment (or decrement) between two double periods. For example, the following code creates the sequence of multiples of 10.

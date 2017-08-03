@@ -1,5 +1,5 @@
 ---
-title: "Conceptual Model Canonical to SQL Server Functions Mapping | Microsoft Docs"
+title: "Conceptual Model Canonical to SQL Server Functions Mapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Bindings and Security | Microsoft Docs"
+title: "Bindings and Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

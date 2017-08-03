@@ -1,5 +1,5 @@
 ---
-title: "WS-AtomicTransaction Configuration MMC Snap-in | Microsoft Docs"
+title: "WS-AtomicTransaction Configuration MMC Snap-in"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

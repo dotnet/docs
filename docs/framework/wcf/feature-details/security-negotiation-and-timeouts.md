@@ -1,5 +1,5 @@
 ---
-title: "Security Negotiation and Timeouts | Microsoft Docs"
+title: "Security Negotiation and Timeouts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

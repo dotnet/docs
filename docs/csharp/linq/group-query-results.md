@@ -1,5 +1,5 @@
 ---
-title: Group query results | Microsoft Docs
+title: Group query results
 description: How to group results.
 keywords: .NET, .NET Core, C#
 author: BillWagner

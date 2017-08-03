@@ -1,5 +1,5 @@
 ---
-title: "Getting Started Sample | Microsoft Docs"
+title: "Getting Started Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

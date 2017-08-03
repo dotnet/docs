@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Line Filled with a Texture | Microsoft Docs"
+title: "How to: Draw a Line Filled with a Texture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,6 +1,6 @@
 ---
-title: Primitive Types (F#) | Microsoft Docs
-description: Primitive Types (F#)
+title: Primitive Types (F#)
+description: Discover the fundamental primitive types that are used in the F# language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "Task 1: Create a New Windows Presentation Foundation Application | Microsoft Docs"
+title: "Task 1: Create a New Windows Presentation Foundation Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: What is Docker? | Microsoft Docs 
+title: What is Docker?
 description: .NET Microservices Architecture for Containerized .NET Applications | What is Docker?
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

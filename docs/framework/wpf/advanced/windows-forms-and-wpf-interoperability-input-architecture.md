@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms and WPF Interoperability Input Architecture | Microsoft Docs"
+title: "Windows Forms and WPF Interoperability Input Architecture"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Development Guide | Microsoft Docs"
+title: ".NET Framework Development Guide"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

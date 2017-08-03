@@ -1,5 +1,5 @@
 ---
-title: "Events of shared WithEvents variables cannot be handled by non-shared methods | Microsoft Docs"
+title: "Events of shared WithEvents variables cannot be handled by non-shared methods"
 
 ms.date: "2015-07-20"
 ms.prod: .net

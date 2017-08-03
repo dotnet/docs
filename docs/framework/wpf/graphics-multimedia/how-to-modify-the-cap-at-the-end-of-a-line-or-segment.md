@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify the Cap at the End of a Line or Segment | Microsoft Docs"
+title: "How to: Modify the Cap at the End of a Line or Segment"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

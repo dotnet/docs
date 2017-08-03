@@ -1,5 +1,5 @@
 ---
-title: "Reliable Secure Profile | Microsoft Docs"
+title: "Reliable Secure Profile"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

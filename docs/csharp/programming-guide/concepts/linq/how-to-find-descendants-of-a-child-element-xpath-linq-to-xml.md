@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (C#) | Microsoft Docs"
+title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

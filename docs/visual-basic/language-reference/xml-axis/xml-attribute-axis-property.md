@@ -1,5 +1,5 @@
 ---
-title: "XML Attribute Axis Property (Visual Basic) | Microsoft Docs"
+title: "XML Attribute Axis Property (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

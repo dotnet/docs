@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Ports Object | Microsoft Docs"
+title: "My.Computer.Ports Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

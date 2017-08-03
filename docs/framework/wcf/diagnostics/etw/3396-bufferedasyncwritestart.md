@@ -1,5 +1,5 @@
 ---
-title: "3396 - BufferedAsyncWriteStart | Microsoft Docs"
+title: "3396 - BufferedAsyncWriteStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

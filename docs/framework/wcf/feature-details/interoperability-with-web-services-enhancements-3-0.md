@@ -1,5 +1,5 @@
 ---
-title: "Interoperability with Web Services Enhancements 3.0 | Microsoft Docs"
+title: "Interoperability with Web Services Enhancements 3.0"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

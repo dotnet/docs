@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit2::GetDeltaSaveSize Method | Microsoft Docs"
+title: "IMetaDataEmit2::GetDeltaSaveSize Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

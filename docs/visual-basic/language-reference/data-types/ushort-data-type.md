@@ -1,5 +1,5 @@
 ---
-title: "UShort Data Type (Visual Basic) | Microsoft Docs"
+title: "UShort Data Type (Visual Basic)"
 
 ms.date: "2017-04-20"
 ms.prod: .net

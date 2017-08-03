@@ -1,5 +1,5 @@
 ---
-title: "How to: Raise and Consume Events | Microsoft Docs"
+title: "How to: Raise and Consume Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

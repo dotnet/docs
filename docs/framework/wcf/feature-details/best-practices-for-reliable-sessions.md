@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Reliable Sessions | Microsoft Docs"
+title: "Best Practices for Reliable Sessions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

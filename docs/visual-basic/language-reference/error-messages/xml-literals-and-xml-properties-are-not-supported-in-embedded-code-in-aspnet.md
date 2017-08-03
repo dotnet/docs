@@ -1,5 +1,5 @@
 ---
-title: "XML literals and XML properties are not supported in embedded code within ASP.NET | Microsoft Docs"
+title: "XML literals and XML properties are not supported in embedded code within ASP.NET"
 
 ms.date: "2015-07-20"
 ms.prod: .net

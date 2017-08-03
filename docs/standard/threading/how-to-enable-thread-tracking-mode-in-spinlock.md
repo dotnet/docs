@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Thread-Tracking Mode in SpinLock | Microsoft Docs"
+title: "How to: Enable Thread-Tracking Mode in SpinLock"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

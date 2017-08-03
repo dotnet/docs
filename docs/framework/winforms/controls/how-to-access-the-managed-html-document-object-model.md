@@ -1,5 +1,5 @@
 ---
-title: "How to: Access the Managed HTML Document Object Model | Microsoft Docs"
+title: "How to: Access the Managed HTML Document Object Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

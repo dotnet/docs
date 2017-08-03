@@ -1,5 +1,5 @@
 ---
-title: Client-side validation (validation in the presentation layers) | Microsoft Docs 
+title: Client-side validation (validation in the presentation layers)
 description: .NET Microservices Architecture for Containerized .NET Applications | Client-side validation (validation in the presentation layers)
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

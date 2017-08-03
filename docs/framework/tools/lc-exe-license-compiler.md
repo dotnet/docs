@@ -1,5 +1,5 @@
 ---
-title: "Lc.exe (License Compiler) | Microsoft Docs"
+title: "Lc.exe (License Compiler)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

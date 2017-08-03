@@ -1,5 +1,5 @@
 ---
-title: "Transforms Overview | Microsoft Docs"
+title: "Transforms Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

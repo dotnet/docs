@@ -1,5 +1,5 @@
 ---
-title: "XsltArgumentList for Style Sheet Parameters and Extension Objects | Microsoft Docs"
+title: "XsltArgumentList for Style Sheet Parameters and Extension Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

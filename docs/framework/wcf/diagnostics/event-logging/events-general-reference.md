@@ -1,5 +1,5 @@
 ---
-title: "Events General Reference | Microsoft Docs"
+title: "Events General Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

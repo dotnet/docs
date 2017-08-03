@@ -1,5 +1,5 @@
 ---
-title: "Using XML in a DataSet | Microsoft Docs"
+title: "Using XML in a DataSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

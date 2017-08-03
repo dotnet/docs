@@ -1,5 +1,5 @@
 ---
-title: "ICLRStrongName::StrongNameGetBlobFromImage Method | Microsoft Docs"
+title: "ICLRStrongName::StrongNameGetBlobFromImage Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

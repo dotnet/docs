@@ -1,5 +1,5 @@
 ---
-title: "How to: Use SystemFonts | Microsoft Docs"
+title: "How to: Use SystemFonts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

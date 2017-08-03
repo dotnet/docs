@@ -1,5 +1,5 @@
 ---
-title: "&lt;diagnostics&gt; for Activation | Microsoft Docs"
+title: "&lt;diagnostics&gt; for Activation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

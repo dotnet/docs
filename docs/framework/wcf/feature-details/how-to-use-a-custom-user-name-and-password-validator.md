@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Custom User Name and Password Validator | Microsoft Docs"
+title: "How to: Use a Custom User Name and Password Validator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

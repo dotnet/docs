@@ -1,5 +1,5 @@
 ---
-title: "Ilasm.exe (IL Assembler) | Microsoft Docs"
+title: "Ilasm.exe (IL Assembler)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

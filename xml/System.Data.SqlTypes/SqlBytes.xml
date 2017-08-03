@@ -442,7 +442,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBytes op_Explicit (System.Data.SqlTypes.SqlBinary value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlBytes (System.Data.SqlTypes.SqlBinary value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.SqlTypes.SqlBytes op_Explicit(valuetype System.Data.SqlTypes.SqlBinary value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.op_Explicit(System.Data.SqlTypes.SqlBinary)~System.Data.SqlTypes.SqlBytes" />
       <MemberType>Method</MemberType>
@@ -477,7 +477,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBinary op_Explicit (System.Data.SqlTypes.SqlBytes value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlBinary (System.Data.SqlTypes.SqlBytes value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBinary op_Explicit(class System.Data.SqlTypes.SqlBytes value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlBytes.op_Explicit(System.Data.SqlTypes.SqlBytes)~System.Data.SqlTypes.SqlBinary" />
       <MemberType>Method</MemberType>

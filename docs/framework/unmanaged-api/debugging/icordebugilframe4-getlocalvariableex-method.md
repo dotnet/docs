@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame4::GetLocalVariableEx Method | Microsoft Docs"
+title: "ICorDebugILFrame4::GetLocalVariableEx Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

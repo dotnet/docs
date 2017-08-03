@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static byte[] op_Implicit (System.Printing.IndexedProperties.PrintByteArrayProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator byte[] (System.Printing.IndexedProperties.PrintByteArrayProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8[] op_Implicit(class System.Printing.IndexedProperties.PrintByteArrayProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintByteArrayProperty.op_Implicit(System.Printing.IndexedProperties.PrintByteArrayProperty)~System.Byte[]" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static byte[] op_Implicit (System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator byte[] (System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8[] op_Implicit(class System.Printing.IndexedProperties.PrintByteArrayProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintByteArrayProperty.op_Implicit(System.Printing.IndexedProperties.PrintByteArrayProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Byte[]" />
       <MemberType>Method</MemberType>

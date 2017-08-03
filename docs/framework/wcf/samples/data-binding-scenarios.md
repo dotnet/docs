@@ -1,5 +1,5 @@
 ---
-title: "Data Binding Scenarios | Microsoft Docs"
+title: "Data Binding Scenarios"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

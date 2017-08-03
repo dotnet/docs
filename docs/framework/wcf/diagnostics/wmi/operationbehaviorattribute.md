@@ -1,5 +1,5 @@
 ---
-title: "OperationBehaviorAttribute | Microsoft Docs"
+title: "OperationBehaviorAttribute"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

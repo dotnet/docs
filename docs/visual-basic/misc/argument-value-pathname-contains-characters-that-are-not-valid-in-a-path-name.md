@@ -1,5 +1,5 @@
 ---
-title: "Argument value &#39;&lt;pathname&gt;&#39; contains characters that are not valid in a path name | Microsoft Docs"
+title: "Argument value &#39;&lt;pathname&gt;&#39; contains characters that are not valid in a path name"
 
 ms.date: "2015-07-20"
 ms.prod: .net

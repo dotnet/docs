@@ -1,5 +1,5 @@
 ---
-title: "callbackOnCollectedDelegate MDA | Microsoft Docs"
+title: "callbackOnCollectedDelegate MDA"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

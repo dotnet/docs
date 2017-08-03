@@ -1,5 +1,5 @@
 ---
-title: "How To: Add a Custom Place to a File Dialog Box | Microsoft Docs"
+title: "How To: Add a Custom Place to a File Dialog Box"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

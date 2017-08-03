@@ -1,5 +1,5 @@
 ---
-title: "Sample Compilation Command Lines (Visual Basic) | Microsoft Docs"
+title: "Sample Compilation Command Lines (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

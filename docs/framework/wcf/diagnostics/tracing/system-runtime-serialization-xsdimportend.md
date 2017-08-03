@@ -1,5 +1,5 @@
 ---
-title: "System.Runtime.Serialization.XsdImportEnd | Microsoft Docs"
+title: "System.Runtime.Serialization.XsdImportEnd"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

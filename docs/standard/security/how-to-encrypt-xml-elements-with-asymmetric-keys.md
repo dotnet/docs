@@ -1,5 +1,5 @@
 ---
-title: "How to: Encrypt XML Elements with Asymmetric Keys | Microsoft Docs"
+title: "How to: Encrypt XML Elements with Asymmetric Keys"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

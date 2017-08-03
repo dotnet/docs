@@ -1,6 +1,6 @@
 ---
-title: Language independence and language-independent components | Microsoft Docs
-description: Language independence and language-independent components
+title: Language independence and language-independent components
+description: Learn how you can develop in one of many supported languages in .NET, such as C#, C++/CLI, F#, IronPython, VB, Visual COBOL, and PowerShell.
 keywords: .NET, .NET Core
 author: dotnet-bot
 ms.author: dotnetcontent

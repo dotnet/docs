@@ -1,5 +1,5 @@
 ---
-title: "Port Operations in the .NET Framework with Visual Basic | Microsoft Docs"
+title: "Port Operations in the .NET Framework with Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

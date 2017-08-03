@@ -1,5 +1,5 @@
 ---
-title: "ICorDebug::DebugActiveProcess Method | Microsoft Docs"
+title: "ICorDebug::DebugActiveProcess Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

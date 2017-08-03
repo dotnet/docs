@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetMethodSemantics Method | Microsoft Docs"
+title: "IMetaDataImport::GetMethodSemantics Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

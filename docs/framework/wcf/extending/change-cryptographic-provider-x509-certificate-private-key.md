@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Cryptographic Provider for an X.509 Certificate&#39;s Private Key | Microsoft Docs"
+title: "How to: Change the Cryptographic Provider for an X.509 Certificate&#39;s Private Key"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "MALLOC_TYPE Enumeration | Microsoft Docs"
+title: "MALLOC_TYPE Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

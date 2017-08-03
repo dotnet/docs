@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Source Code Generation and Compilation | Microsoft Docs"
+title: "Dynamic Source Code Generation and Compilation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

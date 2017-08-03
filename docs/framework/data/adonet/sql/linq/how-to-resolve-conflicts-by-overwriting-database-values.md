@@ -1,5 +1,5 @@
 ---
-title: "How to: Resolve Conflicts by Overwriting Database Values | Microsoft Docs"
+title: "How to: Resolve Conflicts by Overwriting Database Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

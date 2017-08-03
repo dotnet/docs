@@ -1,5 +1,5 @@
 ---
-title: "base (C# Reference) | Microsoft Docs"
+title: "base (C# Reference)"
 description: base keyword (C#)
 keywords: base (C#), base keyword (C#), base keyword (C# reference), base keyword (C# language reference)
 ms.custom: ""

@@ -1,5 +1,5 @@
 ---
-title: "Specified registry key does not exist | Microsoft Docs"
+title: "Specified registry key does not exist"
 
 ms.date: "2015-07-20"
 ms.prod: .net

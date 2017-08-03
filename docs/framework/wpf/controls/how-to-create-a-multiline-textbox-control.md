@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Multiline TextBox Control | Microsoft Docs"
+title: "How to: Create a Multiline TextBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

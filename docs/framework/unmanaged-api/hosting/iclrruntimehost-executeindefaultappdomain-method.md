@@ -1,5 +1,5 @@
 ---
-title: "ICLRRuntimeHost::ExecuteInDefaultAppDomain Method | Microsoft Docs"
+title: "ICLRRuntimeHost::ExecuteInDefaultAppDomain Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

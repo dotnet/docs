@@ -1,5 +1,5 @@
 ---
-title: "ICLRTask::YieldTask Method | Microsoft Docs"
+title: "ICLRTask::YieldTask Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

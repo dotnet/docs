@@ -1,5 +1,5 @@
 ---
-title: Deploying Single Container Based .NET Core Web Applications on Linux or Windows Nano Server Hosts | Microsoft Docs 
+title: Deploying Single Container Based .NET Core Web Applications on Linux or Windows Nano Server Hosts
 description: .NET Microservices Architecture for Containerized .NET Applications | Deploying Single Container Based .NET Core Web Applications on Linux or Windows Nano Server Hosts
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

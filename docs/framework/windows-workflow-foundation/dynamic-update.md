@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Update | Microsoft Docs"
+title: "Dynamic Update"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

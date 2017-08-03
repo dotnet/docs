@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugMutableDataTarget Interface | Microsoft Docs"
+title: "ICorDebugMutableDataTarget Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

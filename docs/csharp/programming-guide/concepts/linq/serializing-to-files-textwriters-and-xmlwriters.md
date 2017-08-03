@@ -1,5 +1,5 @@
 ---
-title: "Serializing to Files, TextWriters, and XmlWriters1 | Microsoft Docs"
+title: "Serializing to Files, TextWriters, and XmlWriters1"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

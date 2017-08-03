@@ -1,5 +1,5 @@
 ---
-title: "WMI Class Reference | Microsoft Docs"
+title: "WMI Class Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

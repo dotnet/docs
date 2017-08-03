@@ -1,5 +1,5 @@
 ---
-title: "How to: Find the Set Difference Between Two Lists (LINQ) (C#) | Microsoft Docs"
+title: "How to: Find the Set Difference Between Two Lists (LINQ) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

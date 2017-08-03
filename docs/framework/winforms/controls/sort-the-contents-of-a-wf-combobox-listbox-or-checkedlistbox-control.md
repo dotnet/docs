@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
+title: "How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

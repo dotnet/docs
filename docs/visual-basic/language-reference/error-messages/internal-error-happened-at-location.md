@@ -1,5 +1,5 @@
 ---
-title: "Internal error happened at &lt;location&gt; | Microsoft Docs"
+title: "Internal error happened at &lt;location&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

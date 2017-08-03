@@ -1,5 +1,5 @@
 ---
-title: "App Resources for Libraries That Target Multiple Platforms | Microsoft Docs"
+title: "App Resources for Libraries That Target Multiple Platforms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

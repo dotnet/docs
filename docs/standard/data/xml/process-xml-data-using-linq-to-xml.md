@@ -1,5 +1,5 @@
 ---
-title: "Process XML Data Using LINQ to XML | Microsoft Docs"
+title: "Process XML Data Using LINQ to XML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

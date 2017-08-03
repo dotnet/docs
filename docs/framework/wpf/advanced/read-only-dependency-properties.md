@@ -1,5 +1,5 @@
 ---
-title: "Read-Only Dependency Properties | Microsoft Docs"
+title: "Read-Only Dependency Properties"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

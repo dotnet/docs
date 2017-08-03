@@ -1,5 +1,5 @@
 ---
-title: "SpinWait | Microsoft Docs"
+title: "SpinWait"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Make Sure That a GridSplitter Is Visible | Microsoft Docs"
+title: "How to: Make Sure That a GridSplitter Is Visible"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

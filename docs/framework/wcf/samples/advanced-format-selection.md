@@ -1,5 +1,5 @@
 ---
-title: "Advanced Format Selection | Microsoft Docs"
+title: "Advanced Format Selection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

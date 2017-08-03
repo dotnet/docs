@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Custom View Mode for a ListView | Microsoft Docs"
+title: "How to: Create a Custom View Mode for a ListView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

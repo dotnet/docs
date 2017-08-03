@@ -1,5 +1,5 @@
 ---
-title: "How to: Download Files with FTP | Microsoft Docs"
+title: "How to: Download Files with FTP"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

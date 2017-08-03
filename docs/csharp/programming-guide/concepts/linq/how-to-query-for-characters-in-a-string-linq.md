@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for Characters in a String (LINQ) (C#) | Microsoft Docs"
+title: "How to: Query for Characters in a String (LINQ) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

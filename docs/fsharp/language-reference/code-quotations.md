@@ -1,5 +1,5 @@
 ---
-title: Code Quotations (F#) | Microsoft Docs
+title: Code Quotations (F#)
 description: Learn about F# code quotations, a language feature that enables you to generate and work with F# code expressions programmatically.
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::ModuleLoadFinished Method | Microsoft Docs"
+title: "ICorProfilerCallback::ModuleLoadFinished Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

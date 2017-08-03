@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous Programming Using Delegates | Microsoft Docs"
+title: "Asynchronous Programming Using Delegates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

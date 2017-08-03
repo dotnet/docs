@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataAssemblyEmit::DefineAssembly Method | Microsoft Docs"
+title: "IMetaDataAssemblyEmit::DefineAssembly Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

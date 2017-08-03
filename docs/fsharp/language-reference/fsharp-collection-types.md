@@ -1,5 +1,5 @@
 ---
-title: F# Collection Types | Microsoft Docs
+title: F# Collection Types
 description: Learn about F# collection types and how they differ from collection types in the .NET Framework.
 keywords: visual f#, f#, functional programming
 author: cartermp

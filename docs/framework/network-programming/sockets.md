@@ -1,5 +1,5 @@
 ---
-title: "Sockets | Microsoft Docs"
+title: "Sockets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

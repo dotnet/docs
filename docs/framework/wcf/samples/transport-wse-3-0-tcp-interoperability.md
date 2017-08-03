@@ -1,5 +1,5 @@
 ---
-title: "Transport: WSE 3.0 TCP Interoperability | Microsoft Docs"
+title: "Transport: WSE 3.0 TCP Interoperability"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

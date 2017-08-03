@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::ApplyEditAndContinue Method | Microsoft Docs"
+title: "IMetaDataEmit::ApplyEditAndContinue Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

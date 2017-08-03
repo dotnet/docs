@@ -1,5 +1,5 @@
 ---
-title: "How to: List Directory Contents with FTP | Microsoft Docs"
+title: "How to: List Directory Contents with FTP"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

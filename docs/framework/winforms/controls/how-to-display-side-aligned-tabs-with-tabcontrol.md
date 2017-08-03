@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Side-Aligned Tabs with TabControl | Microsoft Docs"
+title: "How to: Display Side-Aligned Tabs with TabControl"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

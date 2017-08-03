@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an Expander with a ScrollViewer | Microsoft Docs"
+title: "How to: Create an Expander with a ScrollViewer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

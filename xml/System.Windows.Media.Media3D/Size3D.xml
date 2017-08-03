@@ -283,7 +283,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Size3D size1, valuetype System.Windows.Media.Media3D.Size3D size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Equality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
       <MemberType>Method</MemberType>
@@ -323,7 +323,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Explicit (System.Windows.Media.Media3D.Size3D size);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Point3D (System.Windows.Media.Media3D.Size3D size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Explicit(valuetype System.Windows.Media.Media3D.Size3D size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Explicit(System.Windows.Media.Media3D.Size3D)~System.Windows.Media.Media3D.Point3D" />
       <MemberType>Method</MemberType>
@@ -345,7 +345,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Explicit (System.Windows.Media.Media3D.Size3D size);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Vector3D (System.Windows.Media.Media3D.Size3D size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Explicit(valuetype System.Windows.Media.Media3D.Size3D size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Explicit(System.Windows.Media.Media3D.Size3D)~System.Windows.Media.Media3D.Vector3D" />
       <MemberType>Method</MemberType>
@@ -367,7 +367,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Size3D size1, valuetype System.Windows.Media.Media3D.Size3D size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Inequality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
       <MemberType>Method</MemberType>

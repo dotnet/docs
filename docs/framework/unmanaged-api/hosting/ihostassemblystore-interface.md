@@ -1,5 +1,5 @@
 ---
-title: "IHostAssemblyStore Interface | Microsoft Docs"
+title: "IHostAssemblyStore Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

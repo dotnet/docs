@@ -1,5 +1,5 @@
 ---
-title: "WPF XAML Browser Applications Overview | Microsoft Docs"
+title: "WPF XAML Browser Applications Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

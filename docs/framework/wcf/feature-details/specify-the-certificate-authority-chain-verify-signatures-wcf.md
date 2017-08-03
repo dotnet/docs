@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF) | Microsoft Docs"
+title: "How to: Specify the Certificate Authority Certificate Chain Used to Verify Signatures (WCF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

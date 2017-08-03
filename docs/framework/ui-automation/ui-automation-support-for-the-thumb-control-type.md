@@ -1,5 +1,5 @@
 ---
-title: "UI Automation Support for the Thumb Control Type | Microsoft Docs"
+title: "UI Automation Support for the Thumb Control Type"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

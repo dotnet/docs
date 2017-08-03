@@ -1,5 +1,5 @@
 ---
-title: "4804 - DiscoveryMessageReceivedAfterOperationCompleted | Microsoft Docs"
+title: "4804 - DiscoveryMessageReceivedAfterOperationCompleted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

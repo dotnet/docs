@@ -1,5 +1,5 @@
 ---
-title: "Option Strict Statement | Microsoft Docs"
+title: "Option Strict Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

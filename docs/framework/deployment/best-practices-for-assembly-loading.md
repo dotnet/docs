@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Assembly Loading | Microsoft Docs"
+title: "Best Practices for Assembly Loading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

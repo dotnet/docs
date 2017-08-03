@@ -1,5 +1,5 @@
 ---
-title: "Evaluate XPath Expressions using XPathNavigator | Microsoft Docs"
+title: "Evaluate XPath Expressions using XPathNavigator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

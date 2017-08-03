@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Security.NegotiationTokenProviderAttached | Microsoft Docs"
+title: "System.ServiceModel.Security.NegotiationTokenProviderAttached"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

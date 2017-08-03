@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Pen to Draw Lines | Microsoft Docs"
+title: "How to: Use a Pen to Draw Lines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

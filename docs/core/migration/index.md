@@ -1,5 +1,5 @@
 ---
-title: .NET Core migration to the csproj format | Microsoft Docs
+title: .NET Core migration to the csproj format
 description: .NET Core project.json to csproj migration
 keywords: .NET, .NET Core, .NET Core migration
 author: blackdwarf

@@ -1,5 +1,5 @@
 ---
-title: "Migrating from the .NET Framework 1.1 | Microsoft Docs"
+title: "Migrating from the .NET Framework 1.1"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

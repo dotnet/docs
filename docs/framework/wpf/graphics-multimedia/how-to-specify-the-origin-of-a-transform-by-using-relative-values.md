@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify the Origin of a Transform by Using Relative Values | Microsoft Docs"
+title: "How to: Specify the Origin of a Transform by Using Relative Values"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

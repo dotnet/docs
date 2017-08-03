@@ -1,5 +1,5 @@
 ---
-title: "Induced Collections | Microsoft Docs"
+title: "Induced Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Entity SQL Overview | Microsoft Docs"
+title: "Entity SQL Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

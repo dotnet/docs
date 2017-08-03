@@ -1,5 +1,5 @@
 ---
-title: "4003 - ServiceStartPipeError | Microsoft Docs"
+title: "4003 - ServiceStartPipeError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

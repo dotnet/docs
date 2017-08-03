@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Windows Communication Foundation Client | Microsoft Docs"
+title: "How to: Use a Windows Communication Foundation Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

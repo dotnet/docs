@@ -1,5 +1,5 @@
 ---
-title: "Using objects that implement IDisposable | Microsoft Docs"
+title: "Using objects that implement IDisposable"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net"

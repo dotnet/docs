@@ -1,5 +1,5 @@
 ---
-title: "Object doesn&#39;t support named arguments | Microsoft Docs"
+title: "Object doesn&#39;t support named arguments"
 
 ms.date: "2015-07-20"
 ms.prod: .net

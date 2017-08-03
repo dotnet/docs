@@ -1,5 +1,5 @@
 ---
-title: "GetSchema and Schema Collections | Microsoft Docs"
+title: "GetSchema and Schema Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

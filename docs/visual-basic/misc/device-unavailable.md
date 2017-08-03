@@ -1,5 +1,5 @@
 ---
-title: "Device unavailable | Microsoft Docs"
+title: "Device unavailable"
 
 ms.date: "2015-07-20"
 ms.prod: .net

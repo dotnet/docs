@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Diagnostics.ActivityBoundary | Microsoft Docs"
+title: "System.ServiceModel.Diagnostics.ActivityBoundary"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

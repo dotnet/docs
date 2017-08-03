@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic) | Microsoft Docs"
+title: "Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

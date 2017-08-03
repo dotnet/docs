@@ -1,5 +1,5 @@
 ---
-title: "Reading and Writing XML Schemas | Microsoft Docs"
+title: "Reading and Writing XML Schemas"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

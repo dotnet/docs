@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML for XPath Users (Visual Basic) | Microsoft Docs"
+title: "LINQ to XML for XPath Users (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

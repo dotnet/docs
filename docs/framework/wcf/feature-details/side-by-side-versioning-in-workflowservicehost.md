@@ -1,5 +1,5 @@
 ---
-title: "Side by Side Versioning in WorkflowServiceHost | Microsoft Docs"
+title: "Side by Side Versioning in WorkflowServiceHost"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

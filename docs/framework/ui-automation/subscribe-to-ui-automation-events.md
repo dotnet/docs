@@ -1,5 +1,5 @@
 ---
-title: "Subscribe to UI Automation Events | Microsoft Docs"
+title: "Subscribe to UI Automation Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

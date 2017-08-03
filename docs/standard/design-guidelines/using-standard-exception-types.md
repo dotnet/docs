@@ -1,5 +1,5 @@
 ---
-title: "Using Standard Exception Types | Microsoft Docs"
+title: "Using Standard Exception Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Consuming Unmanaged DLL Functions | Microsoft Docs"
+title: "Consuming Unmanaged DLL Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

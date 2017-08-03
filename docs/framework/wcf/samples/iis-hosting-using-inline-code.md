@@ -1,5 +1,5 @@
 ---
-title: "IIS Hosting Using Inline Code | Microsoft Docs"
+title: "IIS Hosting Using Inline Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

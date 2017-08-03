@@ -1,5 +1,5 @@
 ---
-title: "Iterators (C#) | Microsoft Docs"
+title: "Iterators (C#)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Flowing Transactions into and out of Workflow Services | Microsoft Docs"
+title: "Flowing Transactions into and out of Workflow Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

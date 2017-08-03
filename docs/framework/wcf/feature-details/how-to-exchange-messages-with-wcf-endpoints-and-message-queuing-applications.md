@@ -1,5 +1,5 @@
 ---
-title: "How to: Exchange Messages with WCF Endpoints and Message Queuing Applications | Microsoft Docs"
+title: "How to: Exchange Messages with WCF Endpoints and Message Queuing Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

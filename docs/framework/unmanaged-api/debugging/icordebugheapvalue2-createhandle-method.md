@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugHeapValue2::CreateHandle Method | Microsoft Docs"
+title: "ICorDebugHeapValue2::CreateHandle Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

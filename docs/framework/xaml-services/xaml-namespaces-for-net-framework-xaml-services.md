@@ -1,5 +1,5 @@
 ---
-title: "XAML Namespaces for .NET Framework XAML Services | Microsoft Docs"
+title: "XAML Namespaces for .NET Framework XAML Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

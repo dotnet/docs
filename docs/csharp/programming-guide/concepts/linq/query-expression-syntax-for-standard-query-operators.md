@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax for Standard Query Operators (C#) | Microsoft Docs"
+title: "Query Expression Syntax for Standard Query Operators (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

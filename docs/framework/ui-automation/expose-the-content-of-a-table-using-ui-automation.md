@@ -1,5 +1,5 @@
 ---
-title: "Expose the Content of a Table Using UI Automation | Microsoft Docs"
+title: "Expose the Content of a Table Using UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a TreeViewItem in a TreeView | Microsoft Docs"
+title: "How to: Find a TreeViewItem in a TreeView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "3370 - BinaryMessageEncodingStart | Microsoft Docs"
+title: "3370 - BinaryMessageEncodingStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

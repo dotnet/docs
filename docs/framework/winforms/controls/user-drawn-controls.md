@@ -1,5 +1,5 @@
 ---
-title: "User-Drawn Controls | Microsoft Docs"
+title: "User-Drawn Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

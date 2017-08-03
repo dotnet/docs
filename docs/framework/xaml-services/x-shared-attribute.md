@@ -1,5 +1,5 @@
 ---
-title: "x:Shared Attribute | Microsoft Docs"
+title: "x:Shared Attribute"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

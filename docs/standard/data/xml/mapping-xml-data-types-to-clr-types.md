@@ -1,5 +1,5 @@
 ---
-title: "Mapping XML Data Types to CLR Types | Microsoft Docs"
+title: "Mapping XML Data Types to CLR Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

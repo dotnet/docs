@@ -165,7 +165,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Equality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator ==&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Equality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Equality``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -199,7 +199,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThan&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_GreaterThan``2(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -235,7 +235,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;=&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThanOrEqual&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_GreaterThanOrEqual``2(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -271,7 +271,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator !=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Inequality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Inequality``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -305,7 +305,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThan&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_LessThan``2(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -341,7 +341,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;=&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThanOrEqual&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_LessThanOrEqual``2(``0,``1)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Generating and Compiling Source Code from a CodeDOM Graph | Microsoft Docs"
+title: "Generating and Compiling Source Code from a CodeDOM Graph"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

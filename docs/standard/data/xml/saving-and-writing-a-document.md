@@ -1,5 +1,5 @@
 ---
-title: "Saving and Writing a Document | Microsoft Docs"
+title: "Saving and Writing a Document"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

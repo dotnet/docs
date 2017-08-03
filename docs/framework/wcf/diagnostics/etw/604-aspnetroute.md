@@ -1,5 +1,5 @@
 ---
-title: "604 - AspNetRoute | Microsoft Docs"
+title: "604 - AspNetRoute"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

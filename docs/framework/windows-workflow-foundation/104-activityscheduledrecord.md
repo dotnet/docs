@@ -1,5 +1,5 @@
 ---
-title: "104 - ActivityScheduledRecord | Microsoft Docs"
+title: "104 - ActivityScheduledRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

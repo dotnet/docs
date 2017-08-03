@@ -1,5 +1,5 @@
 ---
-title: "&lt;configSections&gt; element for &lt;configuration&gt; | Microsoft Docs"
+title: "&lt;configSections&gt; element for &lt;configuration&gt;"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 

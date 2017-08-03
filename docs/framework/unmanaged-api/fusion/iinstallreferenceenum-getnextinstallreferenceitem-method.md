@@ -1,5 +1,5 @@
 ---
-title: "IInstallReferenceEnum::GetNextInstallReferenceItem Method | Microsoft Docs"
+title: "IInstallReferenceEnum::GetNextInstallReferenceItem Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "FreeWin32ResBlob Method | Microsoft Docs"
+title: "FreeWin32ResBlob Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

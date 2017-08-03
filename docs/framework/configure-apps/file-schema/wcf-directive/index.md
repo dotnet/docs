@@ -1,5 +1,5 @@
 ---
-title: "WCF Directive Syntax | Microsoft Docs"
+title: "WCF Directive Syntax"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

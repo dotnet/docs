@@ -1,5 +1,5 @@
 ---
-title: "Secure Coding Guidelines for Unmanaged Code | Microsoft Docs"
+title: "Secure Coding Guidelines for Unmanaged Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

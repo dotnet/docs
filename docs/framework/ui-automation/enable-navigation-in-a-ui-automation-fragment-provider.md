@@ -1,5 +1,5 @@
 ---
-title: "Enable Navigation in a UI Automation Fragment Provider | Microsoft Docs"
+title: "Enable Navigation in a UI Automation Fragment Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

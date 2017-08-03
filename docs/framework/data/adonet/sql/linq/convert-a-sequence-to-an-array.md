@@ -1,5 +1,5 @@
 ---
-title: "Convert a Sequence to an Array | Microsoft Docs"
+title: "Convert a Sequence to an Array"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

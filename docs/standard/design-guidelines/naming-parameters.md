@@ -1,5 +1,5 @@
 ---
-title: "Naming Parameters | Microsoft Docs"
+title: "Naming Parameters"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

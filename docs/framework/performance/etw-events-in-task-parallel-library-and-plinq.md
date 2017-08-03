@@ -1,5 +1,5 @@
 ---
-title: "ETW Events in Task Parallel Library and PLINQ | Microsoft Docs"
+title: "ETW Events in Task Parallel Library and PLINQ"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

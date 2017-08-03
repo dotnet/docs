@@ -1,5 +1,5 @@
 ---
-title: Packages, Metapackages and Frameworks | Microsoft Docs
+title: Packages, Metapackages and Frameworks
 description: Learn terminology for packages, metapackages, and frameworks.
 keywords: .NET, .NET Core
 author: richlander

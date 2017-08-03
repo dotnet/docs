@@ -1,5 +1,5 @@
 ---
-title: "using Directive (C# Reference) | Microsoft Docs"
+title: "using Directive (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

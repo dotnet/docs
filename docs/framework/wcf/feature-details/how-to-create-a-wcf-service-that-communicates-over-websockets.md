@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a WCF Service that Communicates over WebSockets | Microsoft Docs"
+title: "How to: Create a WCF Service that Communicates over WebSockets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

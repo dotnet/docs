@@ -1,5 +1,5 @@
 ---
-title: "Declaration Contexts and Default Access Levels (Visual Basic) | Microsoft Docs"
+title: "Declaration Contexts and Default Access Levels (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

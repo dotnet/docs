@@ -350,7 +350,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Web.UI.MobileControls.MobileListItem op_Implicit (string s);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Web.UI.MobileControls.MobileListItem (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Web.UI.MobileControls.MobileListItem op_Implicit(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileListItem.op_Implicit(System.String)~System.Web.UI.MobileControls.MobileListItem" />
       <MemberType>Method</MemberType>

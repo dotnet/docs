@@ -1,5 +1,5 @@
 ---
-title: "Additional Resources for Visual Basic Programmers | Microsoft Docs"
+title: "Additional Resources for Visual Basic Programmers"
 
 ms.date: "2015-07-20"
 ms.prod: .net

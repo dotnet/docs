@@ -1,5 +1,5 @@
 ---
-title: "Property array index is not valid | Microsoft Docs"
+title: "Property array index is not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

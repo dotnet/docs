@@ -328,7 +328,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Addition (IntPtr pointer, int offset);" />
+      <MemberSignature Language="C#" Value="public static IntPtr operator + (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Addition(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Addition(System.IntPtr,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -384,7 +384,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (IntPtr value1, IntPtr value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (IntPtr value1, IntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(native int value1, native int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
@@ -429,7 +429,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (int value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Int32)~System.IntPtr" />
       <MemberType>Method</MemberType>
@@ -462,14 +462,14 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A 32-bit signed integer.</param>
+        <summary>Converts the value of a 32-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
+        <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (long value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Int64)~System.IntPtr" />
       <MemberType>Method</MemberType>
@@ -502,14 +502,15 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A 64-bit signed integer.</param>
+        <summary>Converts the value of a 64-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
+        <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
+        <exception cref="T:System.OverflowException">On a 32-bit platform, <paramref name="value" /> is too large to represent as an <see cref="T:System.IntPtr" />.</exception>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (IntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -537,14 +538,21 @@
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The pointer or handle to convert.</param>
+        <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a 32-bit signed integer.</summary>
+        <returns>The contents of <paramref name="value" />.</returns>
+        <exception cref="T:System.OverflowException">On a 64-bit platform, the value of <paramref name="value" /> is too large to represent as a 32-bit signed integer.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception is only thrown if the value of `value` requires more bits than the current platform supports.
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (IntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -572,14 +580,14 @@
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The pointer or handle to convert.</param>
+        <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a 64-bit signed integer.</summary>
+        <returns>The contents of <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static void* op_Explicit (IntPtr value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator void* (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname void* op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Void*" />
       <MemberType>Method</MemberType>
@@ -612,14 +620,16 @@
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The pointer or handle to convert.</param>
+        <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a pointer to an unspecified type.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>The contents of <paramref name="value" />.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (void* value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (void* value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Void*)~System.IntPtr" />
       <MemberType>Method</MemberType>
@@ -655,14 +665,17 @@
         <Parameter Name="value" Type="System.Void*" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">A pointer to an unspecified type.</param>
+        <summary>Converts the specified pointer to an unspecified type to an <see cref="T:System.IntPtr" />.  
+  
+ This API is not CLS-compliant.</summary>
+        <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
+        <remarks></remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (IntPtr value1, IntPtr value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (IntPtr value1, IntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(native int value1, native int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Inequality(System.IntPtr,System.IntPtr)" />
       <MemberType>Method</MemberType>
@@ -707,7 +720,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Subtraction (IntPtr pointer, int offset);" />
+      <MemberSignature Language="C#" Value="public static IntPtr operator - (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Subtraction(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Subtraction(System.IntPtr,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -912,7 +925,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This  method populates the `info` parameter with the value of the current <xref:System.IntPtr> object.  
+ This method populates the `info` parameter with the value of the current <xref:System.IntPtr> object.  
   
  ]]></format>
         </remarks>

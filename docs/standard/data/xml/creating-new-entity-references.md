@@ -1,5 +1,5 @@
 ---
-title: "Creating New Entity References | Microsoft Docs"
+title: "Creating New Entity References"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Execute a Query that Returns Nested Collections | Microsoft Docs"
+title: "How to: Execute a Query that Returns Nested Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

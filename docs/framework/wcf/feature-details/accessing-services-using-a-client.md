@@ -1,5 +1,5 @@
 ---
-title: "Accessing Services Using a Client | Microsoft Docs"
+title: "Accessing Services Using a Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

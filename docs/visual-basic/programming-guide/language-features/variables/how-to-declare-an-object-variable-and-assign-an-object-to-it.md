@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare an Object Variable and Assign an Object to It in Visual Basic | Microsoft Docs"
+title: "How to: Declare an Object Variable and Assign an Object to It in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

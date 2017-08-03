@@ -1,5 +1,5 @@
 ---
-title: "Type Support in the System.Xml Classes | Microsoft Docs"
+title: "Type Support in the System.Xml Classes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

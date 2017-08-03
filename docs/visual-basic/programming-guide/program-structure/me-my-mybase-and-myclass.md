@@ -1,5 +1,5 @@
 ---
-title: "Me, My, MyBase, and MyClass in Visual Basic | Microsoft Docs"
+title: "Me, My, MyBase, and MyClass in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "&lt;discoveryEndpoint&gt; | Microsoft Docs"
+title: "&lt;discoveryEndpoint&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

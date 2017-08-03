@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize the Thumb Size on a ScrollBar | Microsoft Docs"
+title: "How to: Customize the Thumb Size on a ScrollBar"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

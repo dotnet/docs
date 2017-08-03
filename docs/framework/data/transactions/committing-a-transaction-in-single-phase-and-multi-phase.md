@@ -1,5 +1,5 @@
 ---
-title: "Committing a Transaction in Single-Phase and Multi-Phase | Microsoft Docs"
+title: "Committing a Transaction in Single-Phase and Multi-Phase"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

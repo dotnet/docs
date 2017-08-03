@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInternalFrame2::GetFrameAddress Method | Microsoft Docs"
+title: "ICorDebugInternalFrame2::GetFrameAddress Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

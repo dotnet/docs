@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Appearance of a DataRepeater Control (Visual Studio) | Microsoft Docs"
+title: "How to: Change the Appearance of a DataRepeater Control (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

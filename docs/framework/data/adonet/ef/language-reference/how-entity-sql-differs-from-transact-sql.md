@@ -1,5 +1,5 @@
 ---
-title: "How Entity SQL Differs from Transact-SQL | Microsoft Docs"
+title: "How Entity SQL Differs from Transact-SQL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

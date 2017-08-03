@@ -1,5 +1,5 @@
 ---
-title: "Deploying an Internet Information Services-Hosted WCF Service | Microsoft Docs"
+title: "Deploying an Internet Information Services-Hosted WCF Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

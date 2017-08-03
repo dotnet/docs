@@ -1,5 +1,5 @@
 ---
-title: "4021 - TcpTransportListenerListeningStop | Microsoft Docs"
+title: "4021 - TcpTransportListenerListeningStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

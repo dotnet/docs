@@ -1,5 +1,5 @@
 ---
-title: "3340 - PipeConnectionAcceptStart | Microsoft Docs"
+title: "3340 - PipeConnectionAcceptStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

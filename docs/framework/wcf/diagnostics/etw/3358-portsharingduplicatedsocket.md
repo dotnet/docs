@@ -1,5 +1,5 @@
 ---
-title: "3358 - PortSharingDuplicatedSocket | Microsoft Docs"
+title: "3358 - PortSharingDuplicatedSocket"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

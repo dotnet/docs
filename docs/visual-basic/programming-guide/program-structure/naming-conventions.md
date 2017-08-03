@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Naming Conventions | Microsoft Docs"
+title: "Visual Basic Naming Conventions"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

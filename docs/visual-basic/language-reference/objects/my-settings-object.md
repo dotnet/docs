@@ -1,5 +1,5 @@
 ---
-title: "My.Settings Object | Microsoft Docs"
+title: "My.Settings Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

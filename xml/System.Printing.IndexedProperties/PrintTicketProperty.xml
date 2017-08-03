@@ -107,7 +107,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintTicket op_Implicit (System.Printing.IndexedProperties.PrintTicketProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintTicket (System.Printing.IndexedProperties.PrintTicketProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintTicket op_Implicit(class System.Printing.IndexedProperties.PrintTicketProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintTicketProperty.op_Implicit(System.Printing.IndexedProperties.PrintTicketProperty)~System.Printing.PrintTicket" />
       <MemberType>Method</MemberType>
@@ -134,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintTicket op_Implicit (System.Printing.IndexedProperties.PrintTicketProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintTicket (System.Printing.IndexedProperties.PrintTicketProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintTicket op_Implicit(class System.Printing.IndexedProperties.PrintTicketProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintTicketProperty.op_Implicit(System.Printing.IndexedProperties.PrintTicketProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintTicket" />
       <MemberType>Method</MemberType>

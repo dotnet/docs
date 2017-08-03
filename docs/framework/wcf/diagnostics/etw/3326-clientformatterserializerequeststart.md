@@ -1,5 +1,5 @@
 ---
-title: "3326 - ClientFormatterSerializeRequestStart | Microsoft Docs"
+title: "3326 - ClientFormatterSerializeRequestStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

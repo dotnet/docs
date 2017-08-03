@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw an Outlined Shape | Microsoft Docs"
+title: "How to: Draw an Outlined Shape"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

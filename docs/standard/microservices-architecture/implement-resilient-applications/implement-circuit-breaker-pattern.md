@@ -1,5 +1,5 @@
 ---
-title: Implementing the Circuit Breaker pattern | Microsoft Docs 
+title: Implementing the Circuit Breaker pattern
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing the Circuit Breaker pattern
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

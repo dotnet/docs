@@ -1,5 +1,5 @@
 ---
-title: "Entity Data Model: Namespaces | Microsoft Docs"
+title: "Entity Data Model: Namespaces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

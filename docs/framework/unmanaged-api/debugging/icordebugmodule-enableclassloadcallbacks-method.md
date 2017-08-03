@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule::EnableClassLoadCallbacks Method | Microsoft Docs"
+title: "ICorDebugModule::EnableClassLoadCallbacks Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

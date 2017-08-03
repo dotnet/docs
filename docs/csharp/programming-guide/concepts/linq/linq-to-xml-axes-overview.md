@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Axes Overview (C#) | Microsoft Docs"
+title: "LINQ to XML Axes Overview (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Expressions (C# Programming Guide) | Microsoft Docs"
+title: "Expressions (C# Programming Guide)"
 
 ms.date: "2017-05-11"
 ms.prod: .net

@@ -1,6 +1,6 @@
 ---
-title: "Walkthrough: Generating F# Types from an EDMX Schema File (F#) | Microsoft Docs"
-description: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
+title: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
+description: Learn how to create F# types for data represented by the Entity Data Model (EDM) in F# 3.0, where the schema is specified in an .edmx file.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

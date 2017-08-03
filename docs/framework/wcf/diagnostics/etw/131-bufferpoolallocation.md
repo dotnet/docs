@@ -1,5 +1,5 @@
 ---
-title: "131 - BufferPoolAllocation | Microsoft Docs"
+title: "131 - BufferPoolAllocation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

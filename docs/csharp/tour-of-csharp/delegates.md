@@ -1,5 +1,5 @@
 ---
-title: C# Delegates - A tour of the C# language | Microsoft Docs
+title: C# Delegates - A tour of the C# language
 description: Learn late binding with C# delegates
 keywords: .NET, csharp, delegate, lambda, late binding
 author: BillWagner

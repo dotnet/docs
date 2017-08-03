@@ -1,5 +1,5 @@
 ---
-title: "Large UDTs | Microsoft Docs"
+title: "Large UDTs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

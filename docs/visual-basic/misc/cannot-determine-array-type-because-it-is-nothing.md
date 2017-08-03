@@ -1,5 +1,5 @@
 ---
-title: "Cannot determine array type because it is Nothing | Microsoft Docs"
+title: "Cannot determine array type because it is Nothing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

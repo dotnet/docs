@@ -527,7 +527,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.Principal.SecurityIdentifier left, System.Security.Principal.SecurityIdentifier right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Principal.SecurityIdentifier left, System.Security.Principal.SecurityIdentifier right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Principal.SecurityIdentifier left, class System.Security.Principal.SecurityIdentifier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.SecurityIdentifier.op_Equality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)" />
       <MemberType>Method</MemberType>
@@ -558,7 +558,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.Principal.SecurityIdentifier left, System.Security.Principal.SecurityIdentifier right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Principal.SecurityIdentifier left, System.Security.Principal.SecurityIdentifier right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Principal.SecurityIdentifier left, class System.Security.Principal.SecurityIdentifier right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.SecurityIdentifier.op_Inequality(System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier)" />
       <MemberType>Method</MemberType>

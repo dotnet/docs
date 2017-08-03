@@ -1,5 +1,5 @@
 ---
-title: "Oracle Distributed Transactions | Microsoft Docs"
+title: "Oracle Distributed Transactions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

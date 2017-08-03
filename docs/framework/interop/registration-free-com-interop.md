@@ -1,5 +1,5 @@
 ---
-title: "Registration-Free COM Interop | Microsoft Docs"
+title: "Registration-Free COM Interop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

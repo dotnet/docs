@@ -1,5 +1,5 @@
 ---
-title: "Dependency Property Security | Microsoft Docs"
+title: "Dependency Property Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

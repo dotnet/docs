@@ -1,5 +1,5 @@
 ---
-title: "116 - WorkflowInstanceSuspendedRecordWithId | Microsoft Docs"
+title: "116 - WorkflowInstanceSuspendedRecordWithId"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

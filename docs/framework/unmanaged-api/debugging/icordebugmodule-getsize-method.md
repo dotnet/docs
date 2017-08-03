@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModule::GetSize Method | Microsoft Docs"
+title: "ICorDebugModule::GetSize Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

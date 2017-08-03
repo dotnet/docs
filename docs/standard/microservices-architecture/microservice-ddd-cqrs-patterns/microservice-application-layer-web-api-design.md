@@ -1,5 +1,5 @@
 ---
-title: Designing the microservice application layer and Web API | Microsoft Docs 
+title: Designing the microservice application layer and Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing the microservice application layer and Web API
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

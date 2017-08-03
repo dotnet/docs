@@ -1,5 +1,5 @@
 ---
-title: "Intercepting Input from the Stylus | Microsoft Docs"
+title: "Intercepting Input from the Stylus"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

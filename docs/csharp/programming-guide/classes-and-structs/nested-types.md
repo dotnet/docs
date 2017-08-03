@@ -1,5 +1,5 @@
 ---
-title: "Nested Types (C# Programming Guide) | Microsoft Docs"
+title: "Nested Types (C# Programming Guide)"
 
 ms.date: "2017-07-10"
 ms.prod: .net

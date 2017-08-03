@@ -1,5 +1,5 @@
 ---
-title: "/verbose | Microsoft Docs"
+title: "/verbose"
 
 ms.date: "2015-07-20"
 ms.prod: .net

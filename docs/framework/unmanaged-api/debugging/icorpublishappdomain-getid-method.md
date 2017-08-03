@@ -1,5 +1,5 @@
 ---
-title: "ICorPublishAppDomain::GetID Method | Microsoft Docs"
+title: "ICorPublishAppDomain::GetID Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

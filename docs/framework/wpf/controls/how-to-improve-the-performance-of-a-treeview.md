@@ -1,5 +1,5 @@
 ---
-title: "How to: Improve the Performance of a TreeView | Microsoft Docs"
+title: "How to: Improve the Performance of a TreeView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

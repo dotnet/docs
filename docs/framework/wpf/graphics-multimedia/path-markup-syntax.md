@@ -1,5 +1,5 @@
 ---
-title: "Path Markup Syntax | Microsoft Docs"
+title: "Path Markup Syntax"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,9 +25,6 @@ manager: "wpickett"
 # Path Markup Syntax
 Paths are discussed in              [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md) and the              [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using              [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
- This topic contains the following sections.  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with the basic features of                  <xref:System.Windows.Media.Geometry> objects. For more information, see the                  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md).  

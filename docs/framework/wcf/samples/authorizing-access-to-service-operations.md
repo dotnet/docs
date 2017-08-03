@@ -1,5 +1,5 @@
 ---
-title: "Authorizing Access to Service Operations | Microsoft Docs"
+title: "Authorizing Access to Service Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

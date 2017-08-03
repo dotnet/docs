@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedENCUpdate::UpdateSymbolStore2 Method | Microsoft Docs"
+title: "ISymUnmanagedENCUpdate::UpdateSymbolStore2 Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

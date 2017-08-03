@@ -1,5 +1,5 @@
 ---
-title: "How to: Store Asymmetric Keys in a Key Container | Microsoft Docs"
+title: "How to: Store Asymmetric Keys in a Key Container"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

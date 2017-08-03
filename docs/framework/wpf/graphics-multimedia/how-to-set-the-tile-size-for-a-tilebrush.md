@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Tile Size for a TileBrush | Microsoft Docs"
+title: "How to: Set the Tile Size for a TileBrush"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "3331 - SecurityNegotiationStop | Microsoft Docs"
+title: "3331 - SecurityNegotiationStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

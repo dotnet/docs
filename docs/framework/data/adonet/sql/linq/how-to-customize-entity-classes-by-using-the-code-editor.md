@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize Entity Classes by Using the Code Editor | Microsoft Docs"
+title: "How to: Customize Entity Classes by Using the Code Editor"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

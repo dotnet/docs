@@ -159,7 +159,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Runtime.InteropServices.OSPlatform left, System.Runtime.InteropServices.OSPlatform right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Runtime.InteropServices.OSPlatform left, System.Runtime.InteropServices.OSPlatform right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Runtime.InteropServices.OSPlatform left, valuetype System.Runtime.InteropServices.OSPlatform right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.op_Equality(System.Runtime.InteropServices.OSPlatform,System.Runtime.InteropServices.OSPlatform)" />
       <MemberType>Method</MemberType>
@@ -189,7 +189,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Runtime.InteropServices.OSPlatform left, System.Runtime.InteropServices.OSPlatform right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Runtime.InteropServices.OSPlatform left, System.Runtime.InteropServices.OSPlatform right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Runtime.InteropServices.OSPlatform left, valuetype System.Runtime.InteropServices.OSPlatform right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.OSPlatform.op_Inequality(System.Runtime.InteropServices.OSPlatform,System.Runtime.InteropServices.OSPlatform)" />
       <MemberType>Method</MemberType>

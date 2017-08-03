@@ -1,5 +1,5 @@
 ---
-title: "The file is already open | Microsoft Docs"
+title: "The file is already open"
 
 ms.date: "2015-07-20"
 ms.prod: .net

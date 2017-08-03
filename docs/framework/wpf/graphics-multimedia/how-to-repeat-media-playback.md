@@ -1,5 +1,5 @@
 ---
-title: "How to: Repeat Media Playback | Microsoft Docs"
+title: "How to: Repeat Media Playback"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

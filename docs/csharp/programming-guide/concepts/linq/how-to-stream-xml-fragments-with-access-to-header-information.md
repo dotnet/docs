@@ -1,5 +1,5 @@
 ---
-title: "How to: Stream XML Fragments with Access to Header Information (C#) | Microsoft Docs"
+title: "How to: Stream XML Fragments with Access to Header Information (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

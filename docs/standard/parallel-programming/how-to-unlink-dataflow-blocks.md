@@ -1,5 +1,5 @@
 ---
-title: "How to: Unlink Dataflow Blocks | Microsoft Docs"
+title: "How to: Unlink Dataflow Blocks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

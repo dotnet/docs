@@ -1,5 +1,5 @@
 ---
-title: "Net.TCP Port Sharing Sample | Microsoft Docs"
+title: "Net.TCP Port Sharing Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;NetFx45_CultureAwareComparerGetHashCode_LongStrings&gt; Element | Microsoft Docs"
+title: "&lt;NetFx45_CultureAwareComparerGetHashCode_LongStrings&gt; Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

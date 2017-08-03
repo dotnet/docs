@@ -1,5 +1,5 @@
 ---
-title: "Making and Submitting Data Changes | Microsoft Docs"
+title: "Making and Submitting Data Changes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

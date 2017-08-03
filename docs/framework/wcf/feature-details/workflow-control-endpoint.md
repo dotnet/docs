@@ -1,5 +1,5 @@
 ---
-title: "Workflow Control Endpoint | Microsoft Docs"
+title: "Workflow Control Endpoint"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

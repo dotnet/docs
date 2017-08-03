@@ -1,5 +1,5 @@
 ---
-title: "225 - TraceCorrelationKeys | Microsoft Docs"
+title: "225 - TraceCorrelationKeys"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

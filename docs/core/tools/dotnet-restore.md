@@ -1,5 +1,5 @@
 ---
-title: dotnet-restore command - .NET Core CLI | Microsoft Docs
+title: dotnet-restore command - .NET Core CLI
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: blackdwarf

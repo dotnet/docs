@@ -1,5 +1,5 @@
 ---
-title: "Set not permitted | Microsoft Docs"
+title: "Set not permitted"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "CorDebugStateChange Enumeration | Microsoft Docs"
+title: "CorDebugStateChange Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

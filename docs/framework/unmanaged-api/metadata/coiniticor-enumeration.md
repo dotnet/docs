@@ -1,5 +1,5 @@
 ---
-title: "COINITICOR Enumeration | Microsoft Docs"
+title: "COINITICOR Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

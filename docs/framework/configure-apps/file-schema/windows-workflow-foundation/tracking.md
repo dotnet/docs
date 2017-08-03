@@ -1,5 +1,5 @@
 ---
-title: "&lt;tracking&gt; | Microsoft Docs"
+title: "&lt;tracking&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

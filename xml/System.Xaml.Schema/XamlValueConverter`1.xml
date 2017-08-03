@@ -257,7 +257,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter1, System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter1, System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter1, class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.op_Equality(System.Xaml.Schema.XamlValueConverter{`0},System.Xaml.Schema.XamlValueConverter{`0})" />
       <MemberType>Method</MemberType>
@@ -282,7 +282,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter1, System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter1, System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter1, class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.op_Inequality(System.Xaml.Schema.XamlValueConverter{`0},System.Xaml.Schema.XamlValueConverter{`0})" />
       <MemberType>Method</MemberType>

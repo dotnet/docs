@@ -1,5 +1,5 @@
 ---
-title: "How to: Play a Sound from a Windows Form | Microsoft Docs"
+title: "How to: Play a Sound from a Windows Form"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

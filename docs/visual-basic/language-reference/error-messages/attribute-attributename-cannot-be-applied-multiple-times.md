@@ -1,5 +1,5 @@
 ---
-title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times | Microsoft Docs"
+title: "Attribute &#39;&lt;attributename&gt;&#39; cannot be applied multiple times"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -33,7 +33,7 @@
 ## Remarks  
  A contract reference assembly is named *assembly*.Contracts.dll, where *assembly* is the name of the assembly from which the contracts were extracted. A contract reference assembly contains the publicly visible interface of an assembly and its contracts, but contains no code. Contract reference assemblies are used both by the runtime analyzer to inherit contracts across assemblies, and during static verification to discover contracts on methods and types from assemblies outside the assembly that is under analysis.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

@@ -27,7 +27,7 @@
 ## Remarks  
  The methods of the <xref:System.Xml.Serialization.CodeIdentifier> class are used by the XML serialization infrastructure while producing .NET Framework types from XML element and data type definitions. XML element or attribute names typically provide the methods' input text.  
   
- You do not need to call the methods of the <xref:System.Xml.Serialization.CodeIdentifier> class directly from your code. Instead, use the various tools and APIs provided by the .NET Framework for XML serialization, such as the <xref:System.Xml.Serialization.XmlSerializer>, or the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) tool.  
+ You do not need to call the methods of the <xref:System.Xml.Serialization.CodeIdentifier> class directly from your code. Instead, use the various tools and APIs provided by the .NET Framework for XML serialization, such as the <xref:System.Xml.Serialization.XmlSerializer>, or the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) tool.  
   
  ]]></format>
     </remarks>

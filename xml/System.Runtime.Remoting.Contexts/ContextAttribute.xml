@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class is the root for all context attributes. Simple <xref:System.Runtime.Remoting.Contexts.Context> class properties can be derived from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> with the context attribute and the context property being in the class. For more specialized or more sophisticated needs, the context attribute can derive from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> and the context property can be split into a separated class. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ The <xref:System.Runtime.Remoting.Contexts.ContextAttribute> class is the root for all context attributes. Simple <xref:System.Runtime.Remoting.Contexts.Context> class properties can be derived from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> with the context attribute and the context property being in the class. For more specialized or more sophisticated needs, the context attribute can derive from <xref:System.Runtime.Remoting.Contexts.ContextAttribute> and the context property can be split into a separated class. For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlEnumAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlEnumAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/standard/serialization/attributes-that-control-xml-serialization.md).  
   
  Use the <xref:System.Xml.Serialization.XmlEnumAttribute> to change the enumeration that the <xref:System.Xml.Serialization.XmlSerializer> generates or recognizes (when it serializes or deserializes a class, respectively). For example, if an enumeration contains a member named `One`, but you prefer that the XML output be named `Single`, apply the <xref:System.Xml.Serialization.XmlEnumAttribute> to the enumeration member and set the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> property to "Single".  
   

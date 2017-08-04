@@ -94,7 +94,7 @@ For an example, see [How to: Create User-Defined Exceptions](how-to-create-user-
 
 When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely. 
 
-For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a @System.IO.FileNotFoundException exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
+For example, on .NET implementations that support App Domains, exceptions may occur across App domains. Suppose App Domain A creates App Domain B, which executes code that throws an exception. For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a @System.IO.FileNotFoundException exception. To avoid this situation, you can deploy the assembly that contains the exception information in two ways:
 
 - Put the assembly into a common application base shared by both app domains.
 

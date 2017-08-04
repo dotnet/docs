@@ -1,6 +1,6 @@
 ---
-title: Tour of .NET
-description: A guided tour through some of the prominent features of the .NET platform.
+title: Tour of .NET | Microsoft Docs
+description: A guided tour through some of the prominent features of .NET.   
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
@@ -16,7 +16,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 .NET is a general purpose development platform. It has several key features, such as support for multiple programming languages, asynchronous and concurrent programming models, and native interoperability, which enable a wide range of scenarios across multiple platforms.
 
-This article offers a guided tour through some of the key features of the .NET platform. See the [.NET Architectural Components](components.md) topic to learn about the architectural pieces of .NET and what they're used for.
+This article offers a guided tour through some of the key features of the .NET. See the [.NET Architectural Components](components.md) topic to learn about the architectural pieces of .NET and what they're used for.
 
 ## How to run the code samples
 
@@ -24,7 +24,7 @@ To learn how to set up a development environment to run the code samples, see th
 
 ## Programming languages
 
-.NET supports multiple programming languages. The .NET runtimes implement the [Common Language Infrastructure (CLI)](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
+.NET supports multiple programming languages. The .NET implementations implement the [Common Language Infrastructure (CLI)](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
 
 Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic (VB). 
 

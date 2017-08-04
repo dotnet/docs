@@ -34,27 +34,41 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# default(T) operator in generic code (C# programming guide)
+# default operator for default value expressions (C# programming guide)
 
-In generic classes and methods, one issue that arises is how to assign a default value to a parameterized type `T` when you do not know the following in advance:
+A default value expression produces the default value for a type. Default value expressions are particularly useful in generic classes and methods. One issue that arises using generics is how to assign a default value to a parameterized type `T` when you do not know the following in advance:
 
 - Whether `T` will be a reference type or a value type.
-- If `T` is a value type, whether it will be a numeric value or a struct.
+- If `T` is a value type, whether it will be a numeric value or a user defined struct.
 
- Given a variable `t` of a parameterized type `T`, the statement `t = null` is only valid if `T` is a reference type and `t = 0` will only work for numeric value types but not for structs. The solution is to use the `default(T)` operator, which will return `null` for reference types and zero for numeric value types. For structs, it will return each member of the struct initialized to zero or `null` depending on whether they are value or reference types. For nullable value types, default returns a <xref:System.Nullable%601?displayProperty=fullName>, which is initialized like any struct.
+ Given a variable `t` of a parameterized type `T`, the statement `t = null` is only valid if `T` is a reference type and `t = 0` will only work for numeric value types but not for structs. The solution is to use the `default(T)` operator, which will return `null` for reference types (class types and interface types) and zero for numeric value types. For structs, it will return each member of the struct initialized to zero or `null` depending on whether they are value or reference types. For nullable value types, default returns a <xref:System.Nullable%601?displayProperty=fullName>, which is initialized like any struct.
 
- The following example from the `GenericList<T>` class shows how to use the `default(T)` operator. For more information, see [Generics Overview](introduction-to-generics.md).
+The `default(T)` expression is not limited to generic classes and methods. Default value expressions can be used with any managed type. Any of these expressions are valid:
 
- [!code-cs[csProgGuideGenerics#41](codesnippet/CSharp/default-keyword-in-generic-code_1.cs)]
+ [!code-cs[csProgGuideGenerics#1](codesnippet/CSharp/default-value-expressions.cs)]
 
-# default operator and type inference 
+ The following example from the `GenericList<T>` class shows how to use the `default(T)` operator in a generic class. For more information, see [Generics Overview](../generics/introduction-to-generics.md).
 
-Beginning with C# 7.1, 
+ [!code-cs[csProgGuideGenerics#2](codesnippet/CSharp/default-keyword-in-generic-code_1.cs)]
+
+## default literal and type inference
+
+Beginning with C# 7.1, the `default` literal can be used for default value expressions when the compiler can infer the type of the expression. The `default` literal produces the same value as the equivalent `default(T)` where `T` is the inferred type. This can make code more concise by reducing the redundancy of declaring a type more than once. The `default` literal can be used in any of the following locations:
+
+- variable initializer
+- variable assignment
+- declaring the default value for an optional parameter
+- providing the value for a method call argument
+- return statement (or expression in an expression bodied member)
+
+The following examples show usages of the `default` literal in a default value expression:
+
+[!code-cs[csProgGuideGenerics#3](codesnippet/CSharp/default-literal.cs)]
 
 ## See Also
 
  <xref:System.Collections.Generic>
  [C# Programming Guide](../index.md)
- [Generics](index.md)
- [Generic Methods](generic-methods.md)
+ [Generics](../generics/index.md)
+ [Generic Methods](../generics/generic-methods.md)
  [Generics](~/docs/standard/generics/index.md)

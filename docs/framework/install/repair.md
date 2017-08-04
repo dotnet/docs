@@ -2,13 +2,12 @@
 title: Repair the .NET Framework
 description: Learn how to repair the .NET Framework
 author: rlander
+ms.author: mairaw
 keywords: .NET Framework, Install
-ms.date: 05/26/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: .net-framework
-ms.technology: vs-ide-deployment
 ms.devlang: dotnet
-ms.assetid: 87cdb1d5-c5g8-8af9-93e8-5f478de07ff7
 ---
 
 # Repair the .NET Framework

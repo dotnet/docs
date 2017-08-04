@@ -24,7 +24,7 @@ ms.devlang: dotnet
 
 **`dotnet restore` runs implicitly**
 
-In previous versions of the .NET Core, you had to run the [dotnet restore](../tools/dotnet-restore.md) command to download dependencies immediately after you created a new project with the [dotnet new](../tools/dotnet-new) command, as well as whenever you added a new dependency to your project. In .NET Core 2.0, `dotnet restore` runs implicitly when the `dotnet new` command executes. It also runs implicitly if dependencies need to be updated when other commands, such as the `run`, `build`, and `publish` commands, execute.
+In previous versions of the .NET Core, you had to run the [dotnet restore](../tools/dotnet-restore.md) command to download dependencies immediately after you created a new project with the [dotnet new](../tools/dotnet-new.md) command, as well as whenever you added a new dependency to your project. In .NET Core 2.0, `dotnet restore` runs implicitly when the `dotnet new` command executes. It also runs implicitly if dependencies need to be updated when other commands, such as the `run`, `build`, and `publish` commands, execute.
 
 You can also disable the automatic invocation of `dotnet restore` by passing the `--no-restore` switch to the `new`, `run`, `build`, `publish`, `pack`, and `test` commands. 
 
@@ -67,7 +67,7 @@ For example, to create a Visual Basic "hello world" application, do the followin
 
    The command creates a project file with a `.vbproj` file extension, along with a Visual Basic source code file named *Program.vb*. This file contains the source code to write the string "Hello World!" to the console window.
   
-1.  Enter the command `dotnet run`. The [.NET Core CLI tools](../tools/) automatically compile and execute the application, which displays the message "Hello World!" in the console window.
+1.  Enter the command `dotnet run`. The [.NET Core CLI tools](../tools/index.md) automatically compile and execute the application, which displays the message "Hello World!" in the console window.
 
 **Support for C# 7.1**
 
@@ -132,7 +132,7 @@ For more information, see [Live Unit Testing with Visual Studio 2017](https://do
 
 If you're building a project for multiple target frameworks, you can now select the target platform from the top-level menu. In the following figure, a project named SCD1 targets 64-bit Mac OS X 10.11 (`osx.10.11-x64`) and 64-bit Windows 10/Windows Server 2016 (`win10-x64`). You can select the target framework before selecting the project button, in this case to run a debug build.
 
-![Selecting the target framework when building a project](multitarget.png) 
+![Selecting the target framework when building a project](media/multitarget.png) 
 
 **Side-by-side support for .NET Core SDKs**
 

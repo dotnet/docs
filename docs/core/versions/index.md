@@ -1,5 +1,5 @@
 ---
-title: .NET Core versioning | Microsoft Docs
+title: .NET Core versioning
 description: Understand how .NET Core versioning works.
 keywords: .NET, .NET Core
 author: bleroy
@@ -19,7 +19,7 @@ This article aims at clarifying how the .NET Core SDK and runtime are versioned.
 
 ## Summary
 
-There are lots of moving parts that version independently in .NET Core. However, starting with .NET Core 2.0, there is an easy to understand top-level version number that everybody understands to be *the* version of ".NET Core" as a whole. The rest of this document goes into the details of the versioning of all those parts, but you shouldn't need to know all those in order to use .NET Core, or build libraries that target it.
+There are lots of moving parts that version independently in .NET Core. However, starting with .NET Core 2.0, there is an easy to understand top-level version number that everybody understands to be *the* version of ".NET Core" as a whole. The rest of this document goes into the details of the versioning of all those parts, but you shouldn't need to know all those parts in order to use .NET Core, or build libraries that target it.
 
 ## The past
 
@@ -32,10 +32,10 @@ Starting with .NET Core 2.0, downloads show a single version number in their fil
 The following version numbers are being unified:
 
 * The shared framework and associated runtime.
-* The SDK and CLI.
+* The .NET Core SDK and associated .NET Core CLI.
 * The `Microsoft.NETCore.App` metapackage.
 
-This makes it easier for users to know what version of the SDK to install on their dev machines, and what the corresponding version of the shared framework should be when time comes to provision a production environment. When downloading an SDK or runtime, the version number you see is going to be the same.
+The use of a single version number makes it easier for users to know what version of the SDK to install on their dev machines, and what the corresponding version of the shared framework should be when time comes to provision a production environment. When downloading an SDK or runtime, the version number you see is going to be the same.
 
 ### Installers
 
@@ -87,7 +87,7 @@ It's also possible that .NET Core Tools need to be updated, without runtime chan
 
 ### Package managers
 
-.NET Core can be distributed by other entities than Microsoft. In particular, Linux distribution owners and package maintainers may add .NET Core packages to their package managers. We are issuing [recommendations for how those packages should be named and versioned](../building/distribution-packaging.md).
+.NET Core can be distributed by other entities than Microsoft. In particular, Linux distribution owners and package maintainers may add .NET Core packages to their package managers. We are issuing [recommendations for how those packages should be named and versioned](../build/distribution-packaging.md).
 
 #### Minimum package set
 
@@ -132,7 +132,7 @@ It's also possible that we need to fix the .NET Core Tools but reship an existin
 MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 ```
 
-The optional `PRERELEASE` and `BUILDNUMBER` parts will never be part of supported releases, and will only exist on nightly builds, locally built from source targets, and unsupported preview releases.
+The optional `PRERELEASE` and `BUILDNUMBER` parts will never be part of supported releases, and only exist on nightly builds, locally built from source targets, and unsupported preview releases.
 
 ### How version numbers are incremented?
 
@@ -220,7 +220,7 @@ Note: [`Microsoft.NETCore.Portable.Compatibility`](https://www.nuget.org/package
 
 ### Target Frameworks
 
-Target framework versions are updated when new APIs are added. They have no concept of patch version, since they represent API shape and not implementation concerns. Major and minor versioning follow the SemVer rules specified earlier, and coincide with the `MAJOR` and `MINOR` numbers of the .NET Core distributions that implement them.
+Target framework versions are updated when new APIs are added. They have no concept of patch version, since they represent API shape and not implementation concerns. Major and minor versioning follows the SemVer rules specified earlier, and coincide with the `MAJOR` and `MINOR` numbers of the .NET Core distributions that implement them.
 
 ## Versioning in practice
 

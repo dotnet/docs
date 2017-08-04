@@ -1471,10 +1471,27 @@
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> value to a complex number.</summary>
+        <returns>A complex number that has a real component equal to <paramref name="value" /> and an imaginary component equal to zero.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Explicit conversion operators define types that can be converted to a <xref:System.Numerics.Complex> object. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ The conversion of a <xref:System.Decimal> value to the real part of a complex number can result in a loss of precision because a <xref:System.Double>, which is the type of the complex number's <xref:System.Numerics.Complex.Real%2A> property, has fewer significant digits than a <xref:System.Decimal>.
+
+
+
+## Examples
+ The following example illustrates the explicit conversion of <xref:System.Decimal> values to <xref:System.Numerics.Complex> values.
+
+ [!code-csharp[System.Numerics.Complex.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.explicit/cs/explicit1.cs#1)]   
+ [!code-vb[System.Numerics.Complex.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.explicit/vb/explicit1.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1503,10 +1520,29 @@
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> value to a complex number.</summary>
+        <returns>A complex number that has a real component equal to <paramref name="value" /> and an imaginary component equal to zero.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Explicit conversion operators define types that can be converted to a <xref:System.Numerics.Complex> object. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ The conversion of a <xref:System.Numerics.BigInteger> value to the real part of a complex number can result in a loss of precision because a <xref:System.Double>, which is the type of the complex number's <xref:System.Numerics.Complex.Real%2A> property, has fewer significant digits than a <xref:System.Numerics.BigInteger>.
+
+ If the conversion is unsuccessful because the <xref:System.Numerics.BigInteger> value is out of the range of the <xref:System.Double> type, the operation does not throw an <xref:System.OverflowException>. Instead, if `value` is less than <xref:System.Double.MinValue>, the result is a complex number that has a <xref:System.Numerics.Complex.Real%2A> property value equal to <xref:System.Double.NegativeInfinity>. If `value` is greater than <xref:System.Double.MaxValue>, the result is a complex number that has a <xref:System.Numerics.Complex.Real%2A> property value equal to <xref:System.Double.PositiveInfinity>.
+
+
+
+## Examples
+ The following example illustrates the explicit conversion of <xref:System.Numerics.BigInteger> values to <xref:System.Numerics.Complex> values.
+
+ [!code-csharp[System.Numerics.Complex.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.explicit/cs/explicit1.cs#2)]   
+ [!code-vb[System.Numerics.Complex.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.explicit/vb/explicit1.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1535,10 +1571,22 @@
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of an unsigned byte to a complex number.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a <xref:System.Byte> value to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the <xref:System.Byte> value and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#1)]   
+ [!code-vb[System.Numerics.Complex.Implicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1567,10 +1615,22 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a double-precision floating-point number to a complex number.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a <xref:System.Double> value to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the <xref:System.Double> value and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#2)]   
+ [!code-vb[System.Numerics.Complex.Implicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1599,10 +1659,22 @@
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a 16-bit signed integer to a complex number.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a signed 16-bit integer to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the signed 16-bit integer and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#3)]   
+ [!code-vb[System.Numerics.Complex.Implicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1631,10 +1703,22 @@
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a 32-bit signed integer to a complex number.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a signed 32-bit integer to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the signed 32-bit integer and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#4)]   
+ [!code-vb[System.Numerics.Complex.Implicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#4)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1663,10 +1747,22 @@
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a 64-bit signed integer to a complex number.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a signed 64-bit integer to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the signed 64-bit integer and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#5)]   
+ [!code-vb[System.Numerics.Complex.Implicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#5)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1700,10 +1796,24 @@
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a signed byte to a complex number.   
+           
+This API is not CLS-compliant.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a signed byte to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the signed byte and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#6)]   
+ [!code-vb[System.Numerics.Complex.Implicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#6)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1732,10 +1842,22 @@
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a single-precision floating-point number to a complex number.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from a <xref:System.Single> value to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the <xref:System.Single> value and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#7)]   
+ [!code-vb[System.Numerics.Complex.Implicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#7)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1769,10 +1891,24 @@
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a complex number.   
+           
+This API is not CLS-compliant.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from an unsigned 16-bit integer to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the unsigned 16-bit integer and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#8)]   
+ [!code-vb[System.Numerics.Complex.Implicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#8)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1806,10 +1942,24 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a complex number.   
+           
+This API is not CLS-compliant.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from an unsigned 32-bit integer to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the unsigned 32-bit integer and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#9)]   
+ [!code-vb[System.Numerics.Complex.Implicit#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#9)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -1843,10 +1993,24 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a complex number.</param>
+        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a complex number.   
+           
+This API is not CLS-compliant.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter as its real part and zero as its imaginary part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.Complex.op_Implicit%2A> operator define the types from which a compiler can automatically convert a <xref:System.Numerics.Complex> object without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>.
+
+ This overload lets the compiler handle conversions from an unsigned 64-bit integer to a complex number, as the following example shows. Note that the result of the conversion is a complex number whose real part is equal to the unsigned 64-bit integer and whose imaginary part is equal to zero.
+
+ [!code-csharp[System.Numerics.Complex.Implicit#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.implicit/cs/implicit1.cs#10)]   
+ [!code-vb[System.Numerics.Complex.Implicit#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.implicit/vb/implicit1.vb#10)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">

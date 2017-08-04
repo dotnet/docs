@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle Errors and Exceptions that Occur with Databinding | Microsoft Docs"
+title: "How to: Handle Errors and Exceptions that Occur with Databinding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

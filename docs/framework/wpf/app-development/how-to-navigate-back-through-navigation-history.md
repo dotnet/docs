@@ -1,5 +1,5 @@
 ---
-title: "How to: Navigate Back Through Navigation History | Microsoft Docs"
+title: "How to: Navigate Back Through Navigation History"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

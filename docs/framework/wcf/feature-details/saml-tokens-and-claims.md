@@ -1,5 +1,5 @@
 ---
-title: "SAML Tokens and Claims | Microsoft Docs"
+title: "SAML Tokens and Claims"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

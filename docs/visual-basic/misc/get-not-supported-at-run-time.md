@@ -1,5 +1,5 @@
 ---
-title: "Get not supported at run time | Microsoft Docs"
+title: "Get not supported at run time"
 
 ms.date: "2015-07-20"
 ms.prod: .net

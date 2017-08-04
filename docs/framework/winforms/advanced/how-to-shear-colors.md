@@ -1,5 +1,5 @@
 ---
-title: "How to: Shear Colors | Microsoft Docs"
+title: "How to: Shear Colors"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

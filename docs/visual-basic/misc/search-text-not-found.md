@@ -1,5 +1,5 @@
 ---
-title: "Search text not found | Microsoft Docs"
+title: "Search text not found"
 
 ms.date: "2015-07-20"
 ms.prod: .net

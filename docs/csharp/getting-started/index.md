@@ -1,6 +1,6 @@
 ---
 
-title: Get Started - C# Guide | Microsoft Docs
+title: Get Started - C# Guide
 description: Get Started with C#
 keywords: C#, Get Started, Acquisition, Install
 author: rpetrusha
@@ -28,7 +28,7 @@ The following topics are available:
 
    A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](consuming-library-with-visual-studio.md).
 
-- [Get started with Visual Studio Code](with-visual-studio-code.md)
+- [Get started with C# and Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)
 
    Visual Studio Code is a free code editor optimized for building and debugging modern web and cloud applications. It supports IntelliSense and is available for Linux, macOS, and Windows.
 

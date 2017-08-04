@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Name Scope | Microsoft Docs"
+title: "How to: Define a Name Scope"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

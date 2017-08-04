@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an AJAX-Enabled WCF Service and an ASP.NET Client that Accesses the Service | Microsoft Docs"
+title: "How to: Create an AJAX-Enabled WCF Service and an ASP.NET Client that Accesses the Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Building a complete .NET Core solution on macOS using Visual Studio for Mac | Microsoft Docs
+title: Building a complete .NET Core solution on macOS using Visual Studio for Mac
 description: This topic walks you through building a .NET Core solution that includes a reusable library and unit testing.
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex

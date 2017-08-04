@@ -1,5 +1,5 @@
 ---
-title: "1124 - InvokeMethodIsStatic | Microsoft Docs"
+title: "1124 - InvokeMethodIsStatic"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

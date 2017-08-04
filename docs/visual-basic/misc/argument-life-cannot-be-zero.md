@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;Life&#39; cannot be zero | Microsoft Docs"
+title: "Argument &#39;Life&#39; cannot be zero"
 
 ms.date: "2015-07-20"
 ms.prod: .net

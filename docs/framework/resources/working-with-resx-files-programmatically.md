@@ -1,5 +1,5 @@
 ---
-title: "Working with .resx Files Programmatically | Microsoft Docs"
+title: "Working with .resx Files Programmatically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Configuring HTTP and HTTPS | Microsoft Docs"
+title: "Configuring HTTP and HTTPS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

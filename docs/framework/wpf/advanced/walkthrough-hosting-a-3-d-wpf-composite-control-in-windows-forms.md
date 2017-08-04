@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms | Microsoft Docs"
+title: "Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

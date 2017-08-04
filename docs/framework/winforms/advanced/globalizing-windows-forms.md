@@ -1,5 +1,5 @@
 ---
-title: "Globalizing Windows Forms | Microsoft Docs"
+title: "Globalizing Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

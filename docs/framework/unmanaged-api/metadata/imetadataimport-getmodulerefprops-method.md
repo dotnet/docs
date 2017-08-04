@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetModuleRefProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetModuleRefProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

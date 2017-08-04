@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugVariableHome::GetCode Method | Microsoft Docs"
+title: "ICorDebugVariableHome::GetCode Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

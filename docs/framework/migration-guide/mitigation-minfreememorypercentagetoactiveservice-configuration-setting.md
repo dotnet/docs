@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: minFreeMemoryPercentageToActiveService Configuration Setting | Microsoft Docs"
+title: "Mitigation: minFreeMemoryPercentageToActiveService Configuration Setting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

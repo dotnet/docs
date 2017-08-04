@@ -1,5 +1,5 @@
 ---
-title: Docker on .NET Framework | Microsoft Docs
+title: Docker on .NET Framework
 description: Learn about deploying .NET Framework apps with Docker using Windows Containers.
 keywords: .NET, .NET Server, Docker, Windows Containers
 author: BillWagner

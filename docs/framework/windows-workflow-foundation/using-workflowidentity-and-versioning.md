@@ -1,5 +1,5 @@
 ---
-title: "Using WorkflowIdentity and Versioning | Microsoft Docs"
+title: "Using WorkflowIdentity and Versioning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

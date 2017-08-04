@@ -1,5 +1,5 @@
 ---
-title: "How to: Initialize a Dictionary with a Collection Initializer (C# Programming Guide) | Microsoft Docs"
+title: "How to: Initialize a Dictionary with a Collection Initializer (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

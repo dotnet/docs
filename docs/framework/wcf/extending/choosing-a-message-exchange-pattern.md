@@ -1,5 +1,5 @@
 ---
-title: "Choosing a Message Exchange Pattern | Microsoft Docs"
+title: "Choosing a Message Exchange Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

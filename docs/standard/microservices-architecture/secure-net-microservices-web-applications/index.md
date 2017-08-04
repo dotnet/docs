@@ -1,5 +1,5 @@
 ---
-title: Securing .NET Microservices and Web Applications | Microsoft Docs 
+title: Securing .NET Microservices and Web Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Securing .NET Microservices and Web Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: mjrousos

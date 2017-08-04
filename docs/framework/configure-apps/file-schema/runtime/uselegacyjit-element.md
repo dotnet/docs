@@ -1,5 +1,5 @@
 ---
-title: "&lt;useLegacyJit&gt; Element | Microsoft Docs"
+title: "&lt;useLegacyJit&gt; Element"
 ms.custom: ""
 ms.date: "04/26/2017"
 ms.prod: ".net-framework"

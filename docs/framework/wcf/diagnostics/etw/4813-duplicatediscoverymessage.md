@@ -1,5 +1,5 @@
 ---
-title: "4813 - DuplicateDiscoveryMessage | Microsoft Docs"
+title: "4813 - DuplicateDiscoveryMessage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

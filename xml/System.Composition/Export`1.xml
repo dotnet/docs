@@ -21,7 +21,8 @@
   <Docs>
     <typeparam name="T">The type of the instance.</typeparam>
     <summary>A reference that allows the graph of parts associated with an exported instance to be released.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +42,9 @@
       <Docs>
         <param name="value">The exported instance.</param>
         <param name="disposeAction">An action that will dispose the exported instance.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.Export`1"/> class.</summary>
-        <remarks></remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Export`1" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -61,7 +63,8 @@
       <Parameters />
       <Docs>
         <summary>Disposes the exported instance.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -80,7 +83,8 @@
       <Docs>
         <summary>Gets the exported value.</summary>
         <value>The exported value.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

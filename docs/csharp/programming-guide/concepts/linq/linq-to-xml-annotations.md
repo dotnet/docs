@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Annotations3 | Microsoft Docs"
+title: "LINQ to XML Annotations3"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

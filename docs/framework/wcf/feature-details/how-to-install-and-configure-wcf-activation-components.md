@@ -1,5 +1,5 @@
 ---
-title: "How to: Install and Configure WCF Activation Components | Microsoft Docs"
+title: "How to: Install and Configure WCF Activation Components"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

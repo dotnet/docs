@@ -1,5 +1,5 @@
 ---
-title: "System.Web.Routing Integration | Microsoft Docs"
+title: "System.Web.Routing Integration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

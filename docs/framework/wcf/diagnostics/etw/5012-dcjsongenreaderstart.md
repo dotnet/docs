@@ -1,5 +1,5 @@
 ---
-title: "5012 - DCJsonGenReaderStart | Microsoft Docs"
+title: "5012 - DCJsonGenReaderStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

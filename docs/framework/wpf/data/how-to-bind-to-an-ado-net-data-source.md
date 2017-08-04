@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to an ADO.NET Data Source | Microsoft Docs"
+title: "How to: Bind to an ADO.NET Data Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

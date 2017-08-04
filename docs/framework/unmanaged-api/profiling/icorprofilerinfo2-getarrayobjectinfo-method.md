@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo2::GetArrayObjectInfo Method | Microsoft Docs"
+title: "ICorProfilerInfo2::GetArrayObjectInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

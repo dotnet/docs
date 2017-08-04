@@ -1,5 +1,5 @@
 ---
-title: "&lt;certificateReference&gt; for &lt;identity&gt; | Microsoft Docs"
+title: "&lt;certificateReference&gt; for &lt;identity&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

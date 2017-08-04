@@ -1,5 +1,5 @@
 ---
-title: "Attached Properties Overview | Microsoft Docs"
+title: "Attached Properties Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

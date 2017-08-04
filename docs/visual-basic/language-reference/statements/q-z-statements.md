@@ -1,5 +1,5 @@
 ---
-title: "Q-Z Statements | Microsoft Docs"
+title: "Q-Z Statements"
 
 ms.date: "2015-07-20"
 ms.prod: .net

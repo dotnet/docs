@@ -1,5 +1,5 @@
 ---
-title: "Assembly Location | Microsoft Docs"
+title: "Assembly Location"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Next control variable does not match For loop control variable | Microsoft Docs"
+title: "Next control variable does not match For loop control variable"
 
 ms.date: "2015-07-20"
 ms.prod: .net

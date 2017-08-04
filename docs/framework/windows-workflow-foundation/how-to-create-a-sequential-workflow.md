@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Sequential Workflow | Microsoft Docs"
+title: "How to: Create a Sequential Workflow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Support for JSON and Other Data Transfer Formats | Microsoft Docs"
+title: "Support for JSON and Other Data Transfer Formats"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

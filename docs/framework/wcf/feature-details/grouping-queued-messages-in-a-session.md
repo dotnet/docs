@@ -1,5 +1,5 @@
 ---
-title: "Grouping Queued Messages in a Session | Microsoft Docs"
+title: "Grouping Queued Messages in a Session"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -54,7 +54,7 @@ manager: "erikre"
     [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]   
     ```  
   
-5.  Configure an endpoint that uses the system-provided `NetProfileMsmqBinding` binding.  
+5.  Configure an endpoint that uses the system-provided `NetMsmqBinding` binding.  
   
 6.  Create a transactional queue using <xref:System.Messaging>. You can also create the queue by using Message Queuing (MSMQ) or MMC. If you do, create a transactional queue.  
   

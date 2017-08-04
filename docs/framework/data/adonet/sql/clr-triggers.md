@@ -1,5 +1,5 @@
 ---
-title: "CLR Triggers | Microsoft Docs"
+title: "CLR Triggers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

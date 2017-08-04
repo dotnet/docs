@@ -1,5 +1,5 @@
 ---
-title: "Hiring Process | Microsoft Docs"
+title: "Hiring Process"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

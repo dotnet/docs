@@ -1,5 +1,5 @@
 ---
-title: "What&#39;s New in ADO.NET | Microsoft Docs"
+title: "What&#39;s New in ADO.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

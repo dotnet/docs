@@ -1,5 +1,5 @@
 ---
-title: "How to: Provide Help in a Windows Application | Microsoft Docs"
+title: "How to: Provide Help in a Windows Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

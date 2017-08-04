@@ -1,5 +1,5 @@
 ---
-title: "Use Caching in UI Automation | Microsoft Docs"
+title: "Use Caching in UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

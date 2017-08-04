@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Menu Items with the Windows Forms ContextMenu Component | Microsoft Docs"
+title: "How to: Add and Remove Menu Items with the Windows Forms ContextMenu Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

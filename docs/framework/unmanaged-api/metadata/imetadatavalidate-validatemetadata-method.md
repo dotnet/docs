@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataValidate::ValidateMetaData Method | Microsoft Docs"
+title: "IMetaDataValidate::ValidateMetaData Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

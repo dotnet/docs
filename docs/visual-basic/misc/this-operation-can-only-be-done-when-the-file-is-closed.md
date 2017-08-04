@@ -1,5 +1,5 @@
 ---
-title: "This operation can only be done when the File is closed | Microsoft Docs"
+title: "This operation can only be done when the File is closed"
 
 ms.date: "2015-07-20"
 ms.prod: .net

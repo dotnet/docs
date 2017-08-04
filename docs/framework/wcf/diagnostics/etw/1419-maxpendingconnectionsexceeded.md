@@ -1,5 +1,5 @@
 ---
-title: "1419 - MaxPendingConnectionsExceeded | Microsoft Docs"
+title: "1419 - MaxPendingConnectionsExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

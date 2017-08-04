@@ -1,5 +1,5 @@
 ---
-title: "Assembly Names | Microsoft Docs"
+title: "Assembly Names"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

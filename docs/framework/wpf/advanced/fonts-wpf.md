@@ -1,5 +1,5 @@
 ---
-title: "Fonts (WPF) | Microsoft Docs"
+title: "Fonts (WPF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

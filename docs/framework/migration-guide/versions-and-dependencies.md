@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Versions and Dependencies | Microsoft Docs"
+title: ".NET Framework Versions and Dependencies"
 ms.custom: ""
 ms.date: "05/02/2017"
 ms.prod: ".net-framework"

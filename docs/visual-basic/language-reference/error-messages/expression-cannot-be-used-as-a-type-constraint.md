@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint | Microsoft Docs"
+title: "&#39;&lt;expression&gt;&#39; cannot be used as a type constraint"
 
 ms.date: "2015-07-20"
 ms.prod: .net

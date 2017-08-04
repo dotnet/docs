@@ -1,5 +1,5 @@
 ---
-title: "Generic parameters used as optional parameter types must be class constrained | Microsoft Docs"
+title: "Generic parameters used as optional parameter types must be class constrained"
 
 ms.date: "2015-07-20"
 ms.prod: .net

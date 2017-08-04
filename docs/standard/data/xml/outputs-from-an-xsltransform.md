@@ -1,5 +1,5 @@
 ---
-title: "Outputs from an XslTransform | Microsoft Docs"
+title: "Outputs from an XslTransform"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

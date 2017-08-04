@@ -1,5 +1,5 @@
 ---
-title: "Change Selection in a RichTextBox Programmatically | Microsoft Docs"
+title: "Change Selection in a RichTextBox Programmatically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Configuration and Metadata Support | Microsoft Docs"
+title: "Configuration and Metadata Support"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

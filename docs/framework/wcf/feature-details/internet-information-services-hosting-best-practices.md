@@ -1,5 +1,5 @@
 ---
-title: "Internet Information Services Hosting Best Practices | Microsoft Docs"
+title: "Internet Information Services Hosting Best Practices"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

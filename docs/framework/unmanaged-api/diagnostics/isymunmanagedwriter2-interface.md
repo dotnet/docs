@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter2 Interface | Microsoft Docs"
+title: "ISymUnmanagedWriter2 Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

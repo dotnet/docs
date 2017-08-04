@@ -1,5 +1,5 @@
 ---
-title: "_EFN_GetManagedExcepStack Function | Microsoft Docs"
+title: "_EFN_GetManagedExcepStack Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

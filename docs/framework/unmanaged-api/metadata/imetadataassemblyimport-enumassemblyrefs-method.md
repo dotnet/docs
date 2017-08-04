@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataAssemblyImport::EnumAssemblyRefs Method | Microsoft Docs"
+title: "IMetaDataAssemblyImport::EnumAssemblyRefs Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

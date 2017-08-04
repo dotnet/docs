@@ -1,5 +1,5 @@
 ---
-title: "5607 - PrincipalSettingFromSessionTokenSuccess | Microsoft Docs"
+title: "5607 - PrincipalSettingFromSessionTokenSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

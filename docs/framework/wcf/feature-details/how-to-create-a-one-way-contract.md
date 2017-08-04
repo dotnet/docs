@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a One-Way Contract | Microsoft Docs"
+title: "How to: Create a One-Way Contract"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

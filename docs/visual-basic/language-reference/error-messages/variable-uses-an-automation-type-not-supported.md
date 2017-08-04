@@ -1,5 +1,5 @@
 ---
-title: "Variable uses an Automation type not supported in Visual Basic | Microsoft Docs"
+title: "Variable uses an Automation type not supported in Visual Basic"
 
 ms.date: "2015-07-20"
 ms.prod: .net

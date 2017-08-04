@@ -1,5 +1,5 @@
 ---
-title: "IHostTaskManager::SetUILocale Method | Microsoft Docs"
+title: "IHostTaskManager::SetUILocale Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

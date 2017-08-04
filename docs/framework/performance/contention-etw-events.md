@@ -1,5 +1,5 @@
 ---
-title: "Contention ETW Events | Microsoft Docs"
+title: "Contention ETW Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

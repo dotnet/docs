@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodContextTransaction | Microsoft Docs"
+title: "System.ServiceModel.ComIntegration.ComIntegrationInvokingMethodContextTransaction"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Windows Forms | Microsoft Docs"
+title: "Getting Started with Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Primitives Activities in WF | Microsoft Docs"
+title: "Primitives Activities in WF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

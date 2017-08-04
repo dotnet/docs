@@ -1,5 +1,5 @@
 ---
-title: "3391 - HttpMessageReceiveFailed | Microsoft Docs"
+title: "3391 - HttpMessageReceiveFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

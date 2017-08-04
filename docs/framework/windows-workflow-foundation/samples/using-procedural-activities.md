@@ -1,5 +1,5 @@
 ---
-title: "Using Procedural Activities | Microsoft Docs"
+title: "Using Procedural Activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

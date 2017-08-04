@@ -1,5 +1,5 @@
 ---
-title: "3401 - SignatureVerificationStart | Microsoft Docs"
+title: "3401 - SignatureVerificationStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

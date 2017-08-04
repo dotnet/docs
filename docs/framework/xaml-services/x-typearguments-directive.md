@@ -1,5 +1,5 @@
 ---
-title: "x:TypeArguments Directive | Microsoft Docs"
+title: "x:TypeArguments Directive"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

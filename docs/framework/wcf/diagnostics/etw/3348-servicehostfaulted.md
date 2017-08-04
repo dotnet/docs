@@ -1,5 +1,5 @@
 ---
-title: "3348 - ServiceHostFaulted | Microsoft Docs"
+title: "3348 - ServiceHostFaulted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

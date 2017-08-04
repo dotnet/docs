@@ -1,5 +1,5 @@
 ---
-title: "How to: Wrap EAP Patterns in a Task | Microsoft Docs"
+title: "How to: Wrap EAP Patterns in a Task"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

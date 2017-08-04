@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedBinder::GetReaderFromStream Method | Microsoft Docs"
+title: "ISymUnmanagedBinder::GetReaderFromStream Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

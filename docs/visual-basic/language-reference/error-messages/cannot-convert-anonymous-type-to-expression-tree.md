@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field | Microsoft Docs"
+title: "Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Add a Control to a Tab Page | Microsoft Docs"
+title: "How to: Add a Control to a Tab Page"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

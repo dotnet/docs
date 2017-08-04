@@ -1,5 +1,5 @@
 ---
-title: "LINQ to SQL N-Tier with Web Services | Microsoft Docs"
+title: "LINQ to SQL N-Tier with Web Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Property Animation Techniques Overview | Microsoft Docs"
+title: "Property Animation Techniques Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,6 @@ manager: "wpickett"
 # Property Animation Techniques Overview
 This topic describes the different approaches for animating properties: storyboards, local animations, clocks, and per-frame animations.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with the basic animation features described in the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  

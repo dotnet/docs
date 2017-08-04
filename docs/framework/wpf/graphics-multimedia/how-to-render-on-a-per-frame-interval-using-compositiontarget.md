@@ -1,5 +1,5 @@
 ---
-title: "How to: Render on a Per Frame Interval Using CompositionTarget | Microsoft Docs"
+title: "How to: Render on a Per Frame Interval Using CompositionTarget"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

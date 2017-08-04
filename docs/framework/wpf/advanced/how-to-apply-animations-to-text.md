@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Animations to Text | Microsoft Docs"
+title: "How to: Apply Animations to Text"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

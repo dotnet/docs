@@ -1,5 +1,5 @@
 ---
-title: "Name &#39;&lt;name&gt;&#39; is not declared | Microsoft Docs"
+title: "Name &#39;&lt;name&gt;&#39; is not declared"
 
 ms.date: "2015-07-20"
 ms.prod: .net

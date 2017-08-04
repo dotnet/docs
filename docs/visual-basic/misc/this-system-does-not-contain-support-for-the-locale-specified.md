@@ -1,5 +1,5 @@
 ---
-title: "This system does not contain support for the Locale specified | Microsoft Docs"
+title: "This system does not contain support for the Locale specified"
 
 ms.date: "2015-07-20"
 ms.prod: .net

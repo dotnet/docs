@@ -1,5 +1,5 @@
 ---
-title: "Feed Formatter (JSON) | Microsoft Docs"
+title: "Feed Formatter (JSON)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

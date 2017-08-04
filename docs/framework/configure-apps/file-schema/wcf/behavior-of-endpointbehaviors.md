@@ -1,5 +1,5 @@
 ---
-title: "&lt;behavior&gt; of &lt;endpointBehaviors&gt; | Microsoft Docs"
+title: "&lt;behavior&gt; of &lt;endpointBehaviors&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

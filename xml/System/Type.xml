@@ -11424,7 +11424,7 @@ GetType(Array).IsAssignableFrom(type)
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Type left, Type right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Type left, Type right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Type left, class System.Type right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Type.op_Equality(System.Type,System.Type)" />
       <MemberType>Method</MemberType>
@@ -11458,7 +11458,7 @@ GetType(Array).IsAssignableFrom(type)
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Type left, Type right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Type left, Type right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Type left, class System.Type right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Type.op_Inequality(System.Type,System.Type)" />
       <MemberType>Method</MemberType>

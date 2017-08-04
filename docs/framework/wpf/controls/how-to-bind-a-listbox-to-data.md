@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a ListBox to Data | Microsoft Docs"
+title: "How to: Bind a ListBox to Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

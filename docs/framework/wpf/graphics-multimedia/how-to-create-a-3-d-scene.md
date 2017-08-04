@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a 3-D Scene | Microsoft Docs"
+title: "How to: Create a 3-D Scene"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

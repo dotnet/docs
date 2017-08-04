@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;keyword&gt;&#39; is valid only within an instance method | Microsoft Docs"
+title: "&#39;&lt;keyword&gt;&#39; is valid only within an instance method"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Built-in Activities | Microsoft Docs"
+title: "Built-in Activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

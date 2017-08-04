@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39; | Microsoft Docs"
+title: "Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: Choosing between .NET Core and .NET Framework for server apps | Microsoft Docs
+title: Choosing between .NET Core and .NET Framework for server apps
 description: A guide on which flavor of .NET you should consider when building a server app in .NET.
 keywords: .NET, .NET Core, .NET Framework
 author: cartermp
@@ -101,6 +101,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. For example, 
 
 ## Further resources
 
+* [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
 * [.NET Core Guide](../core/index.md)
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 * [.NET Framework on Docker Guide](../framework/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "Bad file mode | Microsoft Docs"
+title: "Bad file mode"
 
 ms.date: "2015-07-20"
 ms.prod: .net

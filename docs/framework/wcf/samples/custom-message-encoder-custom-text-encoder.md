@@ -1,5 +1,5 @@
 ---
-title: "Custom Message Encoder: Custom Text Encoder | Microsoft Docs"
+title: "Custom Message Encoder: Custom Text Encoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

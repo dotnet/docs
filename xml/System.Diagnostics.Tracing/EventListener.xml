@@ -168,6 +168,19 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnableEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables events for the specified event source.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnableEvents">
       <MemberSignature Language="C#" Value="public void EnableEvents (System.Diagnostics.Tracing.EventSource eventSource, System.Diagnostics.Tracing.EventLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnableEvents(class System.Diagnostics.Tracing.EventSource eventSource, valuetype System.Diagnostics.Tracing.EventLevel level) cil managed" />
@@ -471,18 +484,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EnableEvents">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enables events for the specified event source.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,5 +1,5 @@
 ---
-title: "How to: Make an Element Spin in Place | Microsoft Docs"
+title: "How to: Make an Element Spin in Place"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

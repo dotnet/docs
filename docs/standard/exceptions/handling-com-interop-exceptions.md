@@ -1,5 +1,5 @@
 ---
-title: "Handling COM Interop Exceptions | Microsoft Docs"
+title: "Handling COM Interop Exceptions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

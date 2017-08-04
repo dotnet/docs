@@ -1,5 +1,5 @@
 ---
-title: "XML Schema Object Model Overview | Microsoft Docs"
+title: "XML Schema Object Model Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

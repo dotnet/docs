@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide) | Microsoft Docs"
+title: "How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

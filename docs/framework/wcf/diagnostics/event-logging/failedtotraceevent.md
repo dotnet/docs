@@ -1,5 +1,5 @@
 ---
-title: "FailedToTraceEvent | Microsoft Docs"
+title: "FailedToTraceEvent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

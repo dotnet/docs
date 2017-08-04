@@ -1,5 +1,5 @@
 ---
-title: "4016 - MessageQueueDuplicatedSocketError | Microsoft Docs"
+title: "4016 - MessageQueueDuplicatedSocketError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Finding Text in Word Documents (C#) | Microsoft Docs"
+title: "Finding Text in Word Documents (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

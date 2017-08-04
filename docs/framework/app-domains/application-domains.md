@@ -1,5 +1,5 @@
 ---
-title: "Application Domains | Microsoft Docs"
+title: "Application Domains"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

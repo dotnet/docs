@@ -1,5 +1,5 @@
 ---
-title: "No mouse is present | Microsoft Docs"
+title: "No mouse is present"
 
 ms.date: "2015-07-20"
 ms.prod: .net

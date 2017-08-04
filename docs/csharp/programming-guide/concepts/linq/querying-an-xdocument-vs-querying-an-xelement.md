@@ -1,5 +1,5 @@
 ---
-title: "Querying an XDocument vs. Querying an XElement (C#) | Microsoft Docs"
+title: "Querying an XDocument vs. Querying an XElement (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

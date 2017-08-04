@@ -1,5 +1,5 @@
 ---
-title: "Managed Threading | Microsoft Docs"
+title: "Managed Threading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

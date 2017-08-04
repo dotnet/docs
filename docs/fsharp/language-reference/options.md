@@ -1,5 +1,5 @@
 ---
-title: Options (F#) | Microsoft Docs
+title: Options (F#)
 description: Learn how to use F# option types when an actual value might not exist for a named value or variable.
 keywords: visual f#, f#, functional programming
 author: cartermp

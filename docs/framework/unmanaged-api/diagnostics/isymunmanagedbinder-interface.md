@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedBinder Interface | Microsoft Docs"
+title: "ISymUnmanagedBinder Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

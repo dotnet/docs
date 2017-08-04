@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Shape Using a StreamGeometry | Microsoft Docs"
+title: "How to: Create a Shape Using a StreamGeometry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

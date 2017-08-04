@@ -1,5 +1,5 @@
 ---
-title: "Encryption of Digital Signatures | Microsoft Docs"
+title: "Encryption of Digital Signatures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

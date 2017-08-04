@@ -1,5 +1,5 @@
 ---
-title: C# Types and Variables - A tour of the C# language | Microsoft Docs
+title: C# Types and Variables - A tour of the C# language
 description: Learn about defining types and declaring variables in C#
 keywords: .NET, csharp, type, reference type, value type
 author: BillWagner

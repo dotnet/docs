@@ -1,5 +1,5 @@
 ---
-title: "Metadata Structures | Microsoft Docs"
+title: "Metadata Structures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

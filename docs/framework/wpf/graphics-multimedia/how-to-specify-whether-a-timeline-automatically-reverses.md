@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify Whether a Timeline Automatically Reverses | Microsoft Docs"
+title: "How to: Specify Whether a Timeline Automatically Reverses"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

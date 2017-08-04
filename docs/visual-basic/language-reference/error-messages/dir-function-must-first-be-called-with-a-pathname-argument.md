@@ -1,5 +1,5 @@
 ---
-title: "&#39;Dir&#39; function must first be called with a &#39;PathName&#39; argument | Microsoft Docs"
+title: "&#39;Dir&#39; function must first be called with a &#39;PathName&#39; argument"
 
 ms.date: "2015-07-20"
 ms.prod: .net

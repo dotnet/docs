@@ -1,5 +1,5 @@
 ---
-title: "Changes to the System.Uri namespace in Version 2.0 | Microsoft Docs"
+title: "Changes to the System.Uri namespace in Version 2.0"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

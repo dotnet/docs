@@ -1,5 +1,5 @@
 ---
-title: "Using Tracing to Troubleshoot Your Application | Microsoft Docs"
+title: "Using Tracing to Troubleshoot Your Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

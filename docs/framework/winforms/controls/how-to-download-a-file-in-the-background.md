@@ -1,5 +1,5 @@
 ---
-title: "How to: Download a File in the Background | Microsoft Docs"
+title: "How to: Download a File in the Background"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

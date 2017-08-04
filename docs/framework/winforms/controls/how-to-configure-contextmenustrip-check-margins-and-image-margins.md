@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure ContextMenuStrip Check Margins and Image Margins | Microsoft Docs"
+title: "How to: Configure ContextMenuStrip Check Margins and Image Margins"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

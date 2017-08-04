@@ -1,5 +1,5 @@
 ---
-title: "Initialization for Object Elements Not in an Object Tree | Microsoft Docs"
+title: "Initialization for Object Elements Not in an Object Tree"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

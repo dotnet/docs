@@ -1,5 +1,5 @@
 ---
-title: "1005 - WorkflowApplicationIdled | Microsoft Docs"
+title: "1005 - WorkflowApplicationIdled"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

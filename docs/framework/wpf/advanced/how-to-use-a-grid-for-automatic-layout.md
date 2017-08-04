@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Grid for Automatic Layout | Microsoft Docs"
+title: "How to: Use a Grid for Automatic Layout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

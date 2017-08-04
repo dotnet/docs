@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Control That Has an Access Key and Text Wrapping | Microsoft Docs"
+title: "How to: Create a Control That Has an Access Key and Text Wrapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

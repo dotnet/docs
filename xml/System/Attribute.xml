@@ -53,7 +53,7 @@
   
  All attribute types derive directly or indirectly from the <xref:System.Attribute> class. Attributes can be applied to any target element; multiple attributes can be applied to the same target element; and attributes can be inherited by an element derived from a target element. Use the <xref:System.AttributeTargets> class to specify the target element to which the attribute is applied.  
   
- The <xref:System.Attribute> class provides convenient methods to retrieve and test custom attributes. For more information about using attributes, see [Applying Attributes](~/docs/standard/attributes/applying-attributes.md) and [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ The <xref:System.Attribute> class provides convenient methods to retrieve and test custom attributes. For more information about using attributes, see [Applying Attributes](~/docs/standard/attributes/applying-attributes.md) and [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

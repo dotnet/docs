@@ -1,5 +1,5 @@
 ---
-title: "Sending and Receiving Faults | Microsoft Docs"
+title: "Sending and Receiving Faults"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

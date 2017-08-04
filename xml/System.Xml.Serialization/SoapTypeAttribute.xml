@@ -30,13 +30,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.SoapTypeAttribute> class belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1". For a complete list of similar attributes, see [Attributes That Control Encoded SOAP Serialization](~/docs/framework/serialization/attributes-that-control-encoded-soap-serialization.md).  
+ The <xref:System.Xml.Serialization.SoapTypeAttribute> class belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1". For a complete list of similar attributes, see [Attributes That Control Encoded SOAP Serialization](~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
  To serialize an object as an encoded SOAP message, construct the <xref:System.Xml.Serialization.XmlSerializer> using an <xref:System.Xml.Serialization.XmlTypeMapping> created with the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapReflectionImporter> class.  
   
  The <xref:System.Xml.Serialization.SoapTypeAttribute> can only be applied to class declarations.  
   
- The <xref:System.Xml.Serialization.SoapTypeAttribute.IncludeInSchema%2A> property determines whether the resulting XML element type is included in the XML Schema document (.xsd) for the generated XML stream. To see the schema, compile the class into a DLL file. Pass the resulting file as an argument to the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md). The tool generates the XML Schema for the XML stream generated when the class is serialized by an instance of the <xref:System.Xml.Serialization.XmlSerializer> class.  
+ The <xref:System.Xml.Serialization.SoapTypeAttribute.IncludeInSchema%2A> property determines whether the resulting XML element type is included in the XML Schema document (.xsd) for the generated XML stream. To see the schema, compile the class into a DLL file. Pass the resulting file as an argument to the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md). The tool generates the XML Schema for the XML stream generated when the class is serialized by an instance of the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
  Setting a different namespace causes Xsd.exe to write a different schema (.xsd) file for the XML stream generated when the class is serialized.  
   
@@ -168,7 +168,7 @@
 ## Remarks  
  Create a <xref:System.Xml.Serialization.SoapTypeAttribute> when overriding the serialization of a type. Assign the object to the <xref:System.Xml.Serialization.SoapAttributes.SoapType%2A> property of a <xref:System.Xml.Serialization.SoapAttributes> and add the <xref:System.Xml.Serialization.SoapAttributes> to a <xref:System.Xml.Serialization.SoapAttributeOverrides>. See the <xref:System.Xml.Serialization.SoapAttributeOverrides> class overview for more details on overriding SOAP serialization.  
   
- If you set a <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for more than one type (that is, if you apply the attribute to more than one class with a different <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for each one), the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) generates a separate schema file (.xsd) for each type. This is because setting a different namespace for each type renders each type distinct from the others, which makes it necessary for each type to be written out as an independent entity.  
+ If you set a <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for more than one type (that is, if you apply the attribute to more than one class with a different <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for each one), the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) generates a separate schema file (.xsd) for each type. This is because setting a different namespace for each type renders each type distinct from the others, which makes it necessary for each type to be written out as an independent entity.  
   
    
   
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Xml.Serialization.SoapTypeAttribute> to a class declaration to specify whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.SoapTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition of the XML stream generated when the class is serialized.  
+ Apply the <xref:System.Xml.Serialization.SoapTypeAttribute> to a class declaration to specify whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.SoapTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition of the XML stream generated when the class is serialized.  
   
    
   
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you set a <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for more than one type (that is, if you apply the attribute to more than one class with a different <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for each one), the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) generates a separate schema file (.xsd) for each type. This is because setting a different namespace for each type renders each type distinct from the others, which makes it necessary for each type to be written out as an independent entity.  
+ If you set a <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for more than one type (that is, if you apply the attribute to more than one class with a different <xref:System.Xml.Serialization.SoapTypeAttribute.Namespace%2A> value for each one), the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) generates a separate schema file (.xsd) for each type. This is because setting a different namespace for each type renders each type distinct from the others, which makes it necessary for each type to be written out as an independent entity.  
   
    
   
@@ -298,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Xml.Serialization.SoapTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML Schema document. To see the results of setting the <xref:System.Xml.Serialization.SoapTypeAttribute> object's properties, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition.  
+ Apply the <xref:System.Xml.Serialization.SoapTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML Schema document. To see the results of setting the <xref:System.Xml.Serialization.SoapTypeAttribute> object's properties, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition.  
   
    
   

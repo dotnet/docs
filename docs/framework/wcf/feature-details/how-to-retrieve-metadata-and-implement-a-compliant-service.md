@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve Metadata and Implement a Compliant Service | Microsoft Docs"
+title: "How to: Retrieve Metadata and Implement a Compliant Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

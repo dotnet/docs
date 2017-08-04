@@ -1,5 +1,5 @@
 ---
-title: "Using a Custom Expression Editor | Microsoft Docs"
+title: "Using a Custom Expression Editor"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

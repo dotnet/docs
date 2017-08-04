@@ -1,5 +1,5 @@
 ---
-title: "How to: Build an EntityConnection Connection String | Microsoft Docs"
+title: "How to: Build an EntityConnection Connection String"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

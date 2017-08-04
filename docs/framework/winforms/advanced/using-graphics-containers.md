@@ -1,5 +1,5 @@
 ---
-title: "Using Graphics Containers | Microsoft Docs"
+title: "Using Graphics Containers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

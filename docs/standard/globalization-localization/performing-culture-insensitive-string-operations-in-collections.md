@@ -1,5 +1,5 @@
 ---
-title: "Performing Culture-Insensitive String Operations in Collections | Microsoft Docs"
+title: "Performing Culture-Insensitive String Operations in Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

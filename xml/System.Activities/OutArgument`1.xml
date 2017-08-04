@@ -283,7 +283,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.OutArgument&lt;T&gt; op_Implicit (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.OutArgument&lt;T&gt; (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.OutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.op_Implicit(System.Activities.Activity{System.Activities.Location{`0}})~System.Activities.OutArgument{`0}" />
       <MemberType>Method</MemberType>
@@ -305,7 +305,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.OutArgument&lt;T&gt; op_Implicit (System.Activities.DelegateArgument delegateArgument);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.OutArgument&lt;T&gt; (System.Activities.DelegateArgument delegateArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.OutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.DelegateArgument delegateArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.op_Implicit(System.Activities.DelegateArgument)~System.Activities.OutArgument{`0}" />
       <MemberType>Method</MemberType>
@@ -327,7 +327,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.OutArgument&lt;T&gt; op_Implicit (System.Activities.Variable variable);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.OutArgument&lt;T&gt; (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.OutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.OutArgument`1.op_Implicit(System.Activities.Variable)~System.Activities.OutArgument{`0}" />
       <MemberType>Method</MemberType>

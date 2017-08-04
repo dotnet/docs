@@ -1,5 +1,5 @@
 ---
-title: "3300 - ReceiveContextCompleteFailed | Microsoft Docs"
+title: "3300 - ReceiveContextCompleteFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

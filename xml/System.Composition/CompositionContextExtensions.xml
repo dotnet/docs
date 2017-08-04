@@ -13,7 +13,8 @@
   <Interfaces />
   <Docs>
     <summary>Adds methods to the composition context that are specific to the typed parts model.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SatisfyImports">
@@ -37,10 +38,14 @@
         <param name="compositionContext">The context to draw exports from.</param>
         <param name="objectWithLooseImports">The object to satisfy imports on.</param>
         <summary>Satisfies the imports of the specified object from the specified context.</summary>
-        <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="compositionContext"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="objectWithLooseImports"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.Composition.Hosting.CompositionFailedException"><paramref name="objectWithLooseImports"/> has a missing dependency.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="compositionContext" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="objectWithLooseImports" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Composition.Hosting.CompositionFailedException">
+          <paramref name="objectWithLooseImports" /> has a missing dependency.</exception>
       </Docs>
     </Member>
     <Member MemberName="SatisfyImports">
@@ -66,11 +71,16 @@
         <param name="objectWithLooseImports">The object to satisfy imports on.</param>
         <param name="conventions">Conventions to use when satisfying imports.</param>
         <summary>Satisfies the imports of the specified object from the specified context, using the specified conventions.</summary>
-        <remarks></remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="compositionContext"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="objectWithLooseImports"/> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="conventions"/> is <see langword="null" />.</exception>   
-        <exception cref="T:System.Composition.Hosting.CompositionFailedException"><paramref name="objectWithLooseImports"/> has a missing dependency.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="compositionContext" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="objectWithLooseImports" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="conventions" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Composition.Hosting.CompositionFailedException">
+          <paramref name="objectWithLooseImports" /> has a missing dependency.</exception>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Running an Operation in the Background | Microsoft Docs"
+title: "Walkthrough: Running an Operation in the Background"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

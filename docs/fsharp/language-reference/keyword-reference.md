@@ -1,5 +1,5 @@
 ---
-title: Keyword Reference (F#) | Microsoft Docs
+title: Keyword Reference (F#)
 description: Find links to information about all of the F# language keywords.
 keywords: visual f#, f#, functional programming
 author: cartermp

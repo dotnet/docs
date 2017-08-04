@@ -1,5 +1,5 @@
 ---
-title: "3366 - SharedListenerProxyRegisterFailed | Microsoft Docs"
+title: "3366 - SharedListenerProxyRegisterFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

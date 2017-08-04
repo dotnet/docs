@@ -1,5 +1,5 @@
 ---
-title: "How to: Develop a Simple Windows Forms Control | Microsoft Docs"
+title: "How to: Develop a Simple Windows Forms Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

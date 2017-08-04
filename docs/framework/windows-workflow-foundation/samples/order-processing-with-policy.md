@@ -1,5 +1,5 @@
 ---
-title: "Order Processing with Policy | Microsoft Docs"
+title: "Order Processing with Policy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

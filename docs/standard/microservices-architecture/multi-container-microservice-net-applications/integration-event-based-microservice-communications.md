@@ -1,5 +1,5 @@
 ---
-title: Implementing event-based communication between microservices (integration events) | Microsoft Docs 
+title: Implementing event-based communication between microservices (integration events)
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing event-based communication between microservices (integration events)
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

@@ -1,5 +1,5 @@
 ---
-title: "How to: Run Procedures at Set Intervals with the Windows Forms Timer Component | Microsoft Docs"
+title: "How to: Run Procedures at Set Intervals with the Windows Forms Timer Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

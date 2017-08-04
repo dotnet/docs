@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Search Capabilities to a ListView Control | Microsoft Docs"
+title: "How to: Add Search Capabilities to a ListView Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

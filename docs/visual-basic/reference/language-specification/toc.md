@@ -116,5 +116,6 @@
 ### [Recommended tags](../../../../_vblang/spec/documentation-comments.md#recommended-tags)
 ### [ID Strings](../../../../_vblang/spec/documentation-comments.md#id-strings)
 ### [Documentation comments example](../../../../_vblang/spec/documentation-comments.md#documentation-comments-example)
-## Grammar: [vb.html](http://ljw1004.github.io/vbspec/vb.html). Or download in ANTLR format: [vb.g4](vb.g4?raw=true).
-
+## Grammar
+### [vb.html](http://ljw1004.github.io/vbspec/vb.html)
+### [vb.g4 - ANTLR format](http://ljw1004.github.io/vbspec/vb.g4?raw=true)

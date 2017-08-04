@@ -1,5 +1,5 @@
 ---
-title: Lazy Computations (F#) | Microsoft Docs
+title: Lazy Computations (F#)
 description: Learn how F# lazy computations can improve the performance of your apps and libraries.
 keywords: visual f#, f#, functional programming
 author: cartermp

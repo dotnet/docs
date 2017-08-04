@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw Wrapped Text in a Rectangle | Microsoft Docs"
+title: "How to: Draw Wrapped Text in a Rectangle"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Unable to get serial port names because of an internal system error | Microsoft Docs"
+title: "Unable to get serial port names because of an internal system error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

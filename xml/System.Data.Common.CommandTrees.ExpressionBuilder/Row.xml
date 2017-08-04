@@ -42,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression op_Implicit (System.Data.Common.CommandTrees.ExpressionBuilder.Row row);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (System.Data.Common.CommandTrees.ExpressionBuilder.Row row);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Common.CommandTrees.ExpressionBuilder.Row row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.op_Implicit(System.Data.Common.CommandTrees.ExpressionBuilder.Row)~System.Data.Common.CommandTrees.DbExpression" />
       <MemberType>Method</MemberType>

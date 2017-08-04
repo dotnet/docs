@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the C# Language and the .NET Framework | Microsoft Docs"
+title: "Introduction to the C# Language and the .NET Framework"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

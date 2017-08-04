@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services) | Microsoft Docs"
+title: "How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

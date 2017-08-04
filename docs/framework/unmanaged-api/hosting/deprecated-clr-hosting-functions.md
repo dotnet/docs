@@ -1,5 +1,5 @@
 ---
-title: "Deprecated CLR Hosting Functions | Microsoft Docs"
+title: "Deprecated CLR Hosting Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

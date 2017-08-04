@@ -1,5 +1,5 @@
 ---
-title: "Message Security Anonymous | Microsoft Docs"
+title: "Message Security Anonymous"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

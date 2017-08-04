@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::GetTokenFromSig Method | Microsoft Docs"
+title: "IMetaDataEmit::GetTokenFromSig Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

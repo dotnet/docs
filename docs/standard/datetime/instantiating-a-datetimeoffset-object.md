@@ -1,5 +1,5 @@
 ---
-title: "Instantiating a DateTimeOffset object | Microsoft Docs"
+title: "Instantiating a DateTimeOffset object"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

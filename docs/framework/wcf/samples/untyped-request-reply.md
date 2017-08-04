@@ -1,5 +1,5 @@
 ---
-title: "Untyped Request-Reply | Microsoft Docs"
+title: "Untyped Request-Reply"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

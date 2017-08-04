@@ -1,5 +1,5 @@
 ---
-title: "ICLRStrongName::StrongNameCompareAssemblies Method | Microsoft Docs"
+title: "ICLRStrongName::StrongNameCompareAssemblies Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

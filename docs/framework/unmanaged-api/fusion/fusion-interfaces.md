@@ -1,5 +1,5 @@
 ---
-title: "Fusion Interfaces | Microsoft Docs"
+title: "Fusion Interfaces"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

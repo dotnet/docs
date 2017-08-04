@@ -1,5 +1,5 @@
 ---
-title: "Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer | Microsoft Docs"
+title: "Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Configuration file schema for the .NET Framework | Microsoft Docs"
+title: "Configuration file schema for the .NET Framework"
 ms.custom: ""
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"

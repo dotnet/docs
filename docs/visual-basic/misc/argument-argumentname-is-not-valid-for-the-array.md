@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array | Microsoft Docs"
+title: "Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array"
 
 ms.date: "2015-07-20"
 ms.prod: .net

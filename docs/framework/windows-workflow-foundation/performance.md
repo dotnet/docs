@@ -1,5 +1,5 @@
 ---
-title: "Windows Workflow Foundation 4 Performance | Microsoft Docs"
+title: "Windows Workflow Foundation 4 Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

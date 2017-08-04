@@ -1,5 +1,5 @@
 ---
-title: "Updating Data in a Data Source | Microsoft Docs"
+title: "Updating Data in a Data Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

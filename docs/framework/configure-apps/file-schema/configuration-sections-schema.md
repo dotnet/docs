@@ -1,5 +1,5 @@
 ---
-title: "Configuration sections schema | Microsoft Docs"
+title: "Configuration sections schema"
 ms.date: "05/02/2017"
 ms.prod: ".net-framework"
 ms.technology: 

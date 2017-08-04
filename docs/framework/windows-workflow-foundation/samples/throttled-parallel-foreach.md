@@ -1,5 +1,5 @@
 ---
-title: "Throttled Parallel ForEach | Microsoft Docs"
+title: "Throttled Parallel ForEach"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

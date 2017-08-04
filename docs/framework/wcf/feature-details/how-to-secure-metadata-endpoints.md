@@ -1,5 +1,5 @@
 ---
-title: "How to: Secure Metadata Endpoints | Microsoft Docs"
+title: "How to: Secure Metadata Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

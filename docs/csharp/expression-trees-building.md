@@ -1,5 +1,5 @@
 ---
-title: Building Expression Trees | Microsoft Docs
+title: Building Expression Trees
 description: Learn about techniques for building expression trees.
 keywords: .NET, .NET Core
 author: BillWagner

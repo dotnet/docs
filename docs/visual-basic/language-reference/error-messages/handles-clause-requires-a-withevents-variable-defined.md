@@ -1,5 +1,5 @@
 ---
-title: "Handles clause requires a WithEvents variable defined in the containing type or one of its base types | Microsoft Docs"
+title: "Handles clause requires a WithEvents variable defined in the containing type or one of its base types"
 
 ms.date: "2015-07-20"
 ms.prod: .net

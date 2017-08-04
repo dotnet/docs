@@ -1,5 +1,5 @@
 ---
-title: "How to: Print a Form by Using the PrintForm Component (Visual Basic) | Microsoft Docs"
+title: "How to: Print a Form by Using the PrintForm Component (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "/moduleassemblyname | Microsoft Docs"
+title: "/moduleassemblyname"
 
 ms.date: "2015-07-20"
 ms.prod: .net

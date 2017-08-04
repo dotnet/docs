@@ -1,5 +1,5 @@
 ---
-title: "How to: Secure a Service with Windows Credentials | Microsoft Docs"
+title: "How to: Secure a Service with Windows Credentials"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

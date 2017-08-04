@@ -1,5 +1,5 @@
 ---
-title: "Firewall Instructions | Microsoft Docs"
+title: "Firewall Instructions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

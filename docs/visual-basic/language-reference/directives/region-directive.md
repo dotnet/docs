@@ -1,5 +1,5 @@
 ---
-title: "#Region Directive | Microsoft Docs"
+title: "#Region Directive"
 
 ms.date: "2015-07-20"
 ms.prod: .net

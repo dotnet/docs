@@ -1,5 +1,5 @@
 ---
-title: Choosing Between .NET Core and .NET Framework for Docker Containers | Microsoft Docs 
+title: Choosing Between .NET Core and .NET Framework for Docker Containers
 description: .NET Microservices Architecture for Containerized .NET Applications | Choosing Between .NET Core and .NET Framework for Docker Containers
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

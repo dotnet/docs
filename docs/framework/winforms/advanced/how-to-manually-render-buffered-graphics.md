@@ -1,5 +1,5 @@
 ---
-title: "How to: Manually Render Buffered Graphics | Microsoft Docs"
+title: "How to: Manually Render Buffered Graphics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

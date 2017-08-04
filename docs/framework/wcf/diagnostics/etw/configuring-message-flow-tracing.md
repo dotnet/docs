@@ -1,5 +1,5 @@
 ---
-title: "Configuring Message Flow Tracing | Microsoft Docs"
+title: "Configuring Message Flow Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

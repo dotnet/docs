@@ -1,5 +1,5 @@
 ---
-title: "Count the Number of Elements in a Sequence | Microsoft Docs"
+title: "Count the Number of Elements in a Sequence"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

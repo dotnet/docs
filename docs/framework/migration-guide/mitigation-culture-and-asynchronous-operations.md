@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: Culture and Asynchronous Operations | Microsoft Docs"
+title: "Mitigation: Culture and Asynchronous Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

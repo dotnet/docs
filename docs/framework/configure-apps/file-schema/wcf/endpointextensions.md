@@ -1,5 +1,5 @@
 ---
-title: "&lt;endpointExtensions&gt; | Microsoft Docs"
+title: "&lt;endpointExtensions&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

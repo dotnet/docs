@@ -1,5 +1,5 @@
 ---
-title: Creating, evolving, and versioning microservice APIs and contracts | Microsoft Docs 
+title: Creating, evolving, and versioning microservice APIs and contracts
 description: .NET Microservices Architecture for Containerized .NET Applications | Creating, evolving, and versioning microservice APIs and contracts
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

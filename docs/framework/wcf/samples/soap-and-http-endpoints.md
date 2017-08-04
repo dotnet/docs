@@ -1,5 +1,5 @@
 ---
-title: "SOAP and HTTP Endpoints | Microsoft Docs"
+title: "SOAP and HTTP Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

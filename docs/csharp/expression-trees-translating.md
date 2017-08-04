@@ -1,5 +1,5 @@
 ---
-title: Translating Expression Trees | Microsoft Docs
+title: Translating Expression Trees
 description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
 keywords: .NET, .NET Core
 author: BillWagner

@@ -1,5 +1,5 @@
 ---
-title: "How to: Arrange Controls with Snaplines and the Grid in Windows Forms | Microsoft Docs"
+title: "How to: Arrange Controls with Snaplines and the Grid in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications | Microsoft Docs"
+title: "How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

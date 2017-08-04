@@ -1,5 +1,5 @@
 ---
-title: "Virtual Directory Setup Instructions | Microsoft Docs"
+title: "Virtual Directory Setup Instructions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

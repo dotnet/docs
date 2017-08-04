@@ -1,5 +1,5 @@
 ---
-title: "The address for UploadFile needs to include a filename | Microsoft Docs"
+title: "The address for UploadFile needs to include a filename"
 
 ms.date: "2015-07-20"
 ms.prod: .net

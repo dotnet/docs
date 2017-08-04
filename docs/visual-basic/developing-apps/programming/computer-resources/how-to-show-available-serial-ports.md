@@ -1,5 +1,5 @@
 ---
-title: "How to: Show Available Serial Ports in Visual Basic | Microsoft Docs"
+title: "How to: Show Available Serial Ports in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

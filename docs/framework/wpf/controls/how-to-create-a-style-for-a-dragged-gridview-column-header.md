@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Style for a Dragged GridView Column Header | Microsoft Docs"
+title: "How to: Create a Style for a Dragged GridView Column Header"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

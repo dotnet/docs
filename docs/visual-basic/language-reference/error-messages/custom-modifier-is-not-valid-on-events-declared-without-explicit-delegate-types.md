@@ -1,5 +1,5 @@
 ---
-title: "&#39;Custom&#39; modifier is not valid on events declared without explicit delegate types | Microsoft Docs"
+title: "&#39;Custom&#39; modifier is not valid on events declared without explicit delegate types"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Thread Synchronization (C#) | Microsoft Docs"
+title: "Thread Synchronization (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

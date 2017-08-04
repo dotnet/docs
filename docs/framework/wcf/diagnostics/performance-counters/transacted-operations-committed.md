@@ -1,5 +1,5 @@
 ---
-title: "Transacted Operations Committed | Microsoft Docs"
+title: "Transacted Operations Committed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

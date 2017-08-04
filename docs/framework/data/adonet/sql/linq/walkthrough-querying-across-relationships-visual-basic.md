@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Querying Across Relationships (Visual Basic) | Microsoft Docs"
+title: "Walkthrough: Querying Across Relationships (Visual Basic)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

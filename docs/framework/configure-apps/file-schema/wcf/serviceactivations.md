@@ -1,5 +1,5 @@
 ---
-title: "&lt;serviceActivations&gt; | Microsoft Docs"
+title: "&lt;serviceActivations&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

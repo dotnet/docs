@@ -1,5 +1,5 @@
 ---
-title: "How to: Define Multiple Versions of a Procedure (Visual Basic) | Microsoft Docs"
+title: "How to: Define Multiple Versions of a Procedure (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

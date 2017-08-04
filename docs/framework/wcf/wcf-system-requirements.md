@@ -1,5 +1,5 @@
 ---
-title: "WCF System Requirements | Microsoft Docs"
+title: "WCF System Requirements"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame2::EnumerateTypeParameters Method | Microsoft Docs"
+title: "ICorDebugILFrame2::EnumerateTypeParameters Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

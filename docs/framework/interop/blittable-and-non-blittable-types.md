@@ -1,5 +1,5 @@
 ---
-title: "Blittable and Non-Blittable Types | Microsoft Docs"
+title: "Blittable and Non-Blittable Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

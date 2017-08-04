@@ -1,5 +1,5 @@
 ---
-title: "How to: Get and Set the Main Application Window | Microsoft Docs"
+title: "How to: Get and Set the Main Application Window"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

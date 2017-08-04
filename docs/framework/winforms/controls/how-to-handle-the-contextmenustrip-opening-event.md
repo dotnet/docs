@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle the ContextMenuStrip Opening Event | Microsoft Docs"
+title: "How to: Handle the ContextMenuStrip Opening Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

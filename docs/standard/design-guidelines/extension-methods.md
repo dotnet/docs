@@ -1,5 +1,5 @@
 ---
-title: "Extension Methods | Microsoft Docs"
+title: "Extension Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

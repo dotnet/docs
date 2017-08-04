@@ -1,5 +1,5 @@
 ---
-title: "Introduction to SQL Server CLR Integration | Microsoft Docs"
+title: "Introduction to SQL Server CLR Integration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

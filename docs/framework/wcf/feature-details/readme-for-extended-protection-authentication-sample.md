@@ -1,5 +1,5 @@
 ---
-title: "ReadMe for Extended Protection Authentication Sample | Microsoft Docs"
+title: "ReadMe for Extended Protection Authentication Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

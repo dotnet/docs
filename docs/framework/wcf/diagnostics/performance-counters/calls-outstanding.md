@@ -1,5 +1,5 @@
 ---
-title: "Calls Outstanding | Microsoft Docs"
+title: "Calls Outstanding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

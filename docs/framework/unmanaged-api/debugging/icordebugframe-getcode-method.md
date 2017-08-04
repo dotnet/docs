@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFrame::GetCode Method | Microsoft Docs"
+title: "ICorDebugFrame::GetCode Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

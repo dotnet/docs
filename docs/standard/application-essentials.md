@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Application Essentials | Microsoft Docs"
+title: ".NET Framework Application Essentials"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -47,7 +47,7 @@ This section of the .NET Framework documentation provides information about basi
  [Application Domains and Assemblies](../../docs/framework/app-domains/index.md)  
  Describes how to create and work with assemblies and application domains.  
   
- [Serialization](../../docs/framework/serialization/index.md)  
+ [Serialization](../../docs/standard/serialization/index.md)  
  Discusses the process of converting the state of an object into a form that can be persisted or transported.  
   
  [Resources in Desktop Apps](../../docs/framework/resources/index.md)  

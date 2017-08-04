@@ -1,5 +1,5 @@
 ---
-title: "Microsoft.Transactions.TransactionBridge.PreparedMessageRetry | Microsoft Docs"
+title: "Microsoft.Transactions.TransactionBridge.PreparedMessageRetry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

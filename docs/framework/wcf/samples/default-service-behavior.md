@@ -1,5 +1,5 @@
 ---
-title: "Default Service Behavior | Microsoft Docs"
+title: "Default Service Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

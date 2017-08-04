@@ -1,6 +1,6 @@
 ---
-title: Indexed Properties (F#) | Microsoft Docs
-description: Indexed Properties (F#)
+title: Indexed Properties (F#)
+description: Learn about F# indexed properties, which are properties that provide array-like access to ordered data.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

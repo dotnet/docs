@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlTextAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes and deserializes an object (through its <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> and <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods). For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlTextAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes and deserializes an object (through its <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> and <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods). For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/standard/serialization/attributes-that-control-xml-serialization.md).  
   
  Only one instance of the <xref:System.Xml.Serialization.XmlTextAttribute> class can be applied in a class.  
   
@@ -46,7 +46,7 @@
   
  By default, the <xref:System.Xml.Serialization.XmlSerializer> serializes a class member as an XML element. However, if you apply the <xref:System.Xml.Serialization.XmlTextAttribute> to a member, the <xref:System.Xml.Serialization.XmlSerializer> translates its value into XML text. This means that the value is encoded into the content of an XML element.  
   
- The [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) occasionally generates the <xref:System.Xml.Serialization.XmlTextAttribute> when creating classes from an XML Schema definition (XSD) file. This occurs when the schema contains a `complexType` with mixed content; in that case, the corresponding class contains a member that returns a string array to which the <xref:System.Xml.Serialization.XmlTextAttribute> is applied. For example, when the `Xml Schema Definition` tool processes this schema:  
+ The [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) occasionally generates the <xref:System.Xml.Serialization.XmlTextAttribute> when creating classes from an XML Schema definition (XSD) file. This occurs when the schema contains a `complexType` with mixed content; in that case, the corresponding class contains a member that returns a string array to which the <xref:System.Xml.Serialization.XmlTextAttribute> is applied. For example, when the `Xml Schema Definition` tool processes this schema:  
   
 ```  
 <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace=""   
@@ -67,7 +67,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
  [!code-csharp[XmlTextAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlTextAttribute/cs/source.cs#0)]
  [!code-vb[XmlTextAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlTextAttribute/vb/source.vb#0)]  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
 > [!NOTE]
 >  You can use the word `XmlText` in your code instead of the longer <xref:System.Xml.Serialization.XmlTextAttribute>.  
@@ -206,7 +206,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 ## Remarks  
  Setting the <xref:System.Xml.Serialization.XmlTextAttribute.DataType%2A> property to an XML Schema simple data type affects the format of the generated XML. For example, setting the property to "date" causes the generated text to be formatted in the general date style, for example: 2001-08-31. By contrast, setting the property to "dateTime" results in a specific instant as defined by the International Organization for Standardization document 8601, "Representations of Dates and Times", for example: 2001-08-15T06:59:11.0508456-07:00.  
   
- The effect of setting the <xref:System.Xml.Serialization.XmlTextAttribute.DataType%2A> property can also be seen when using the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) to generate the XML Schema for a compiled file. For more information on using the tool, see [The XML Schema Definition Tool and XML Serialization](~/docs/framework/serialization/the-xml-schema-definition-tool-and-xml-serialization.md).  
+ The effect of setting the <xref:System.Xml.Serialization.XmlTextAttribute.DataType%2A> property can also be seen when using the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md) to generate the XML Schema for a compiled file. For more information on using the tool, see [The XML Schema Definition Tool and XML Serialization](~/docs/standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md).  
   
  The following table lists the XML Schema simple data types with their .NET equivalents.  
   

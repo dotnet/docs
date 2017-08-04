@@ -1,5 +1,5 @@
 ---
-title: "Intranet Unsecured Client and Service | Microsoft Docs"
+title: "Intranet Unsecured Client and Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

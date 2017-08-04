@@ -350,7 +350,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Drawing.Size op_Addition (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size operator + (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Size op_Addition(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Addition(System.Drawing.Size,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
@@ -394,7 +394,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Equality(System.Drawing.Size,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
@@ -441,7 +441,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Drawing.Point op_Explicit (System.Drawing.Size size);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Drawing.Point (System.Drawing.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Point op_Explicit(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Explicit(System.Drawing.Size)~System.Drawing.Point" />
       <MemberType>Method</MemberType>
@@ -472,7 +472,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Drawing.SizeF op_Implicit (System.Drawing.Size p);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Drawing.SizeF (System.Drawing.Size p);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.SizeF op_Implicit(valuetype System.Drawing.Size p) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Implicit(System.Drawing.Size)~System.Drawing.SizeF" />
       <MemberType>Method</MemberType>
@@ -503,7 +503,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Inequality(System.Drawing.Size,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
@@ -537,7 +537,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Drawing.Size op_Subtraction (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size operator - (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Size op_Subtraction(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Subtraction(System.Drawing.Size,System.Drawing.Size)" />
       <MemberType>Method</MemberType>

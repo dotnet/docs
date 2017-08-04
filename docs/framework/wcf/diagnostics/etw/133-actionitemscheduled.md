@@ -1,5 +1,5 @@
 ---
-title: "133 - ActionItemScheduled | Microsoft Docs"
+title: "133 - ActionItemScheduled"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

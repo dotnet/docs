@@ -1,5 +1,5 @@
 ---
-title: "How to: Call User-Defined Functions Inline | Microsoft Docs"
+title: "How to: Call User-Defined Functions Inline"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

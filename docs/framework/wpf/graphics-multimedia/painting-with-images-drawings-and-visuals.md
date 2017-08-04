@@ -1,5 +1,5 @@
 ---
-title: "Painting with Images, Drawings, and Visuals | Microsoft Docs"
+title: "Painting with Images, Drawings, and Visuals"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

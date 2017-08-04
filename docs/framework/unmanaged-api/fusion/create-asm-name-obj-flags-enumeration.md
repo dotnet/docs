@@ -1,5 +1,5 @@
 ---
-title: "CREATE_ASM_NAME_OBJ_FLAGS Enumeration | Microsoft Docs"
+title: "CREATE_ASM_NAME_OBJ_FLAGS Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

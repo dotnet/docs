@@ -48,7 +48,7 @@ The feature collects the following data:
 - `ExitCode` of the command
 - Test runner (for test projects)
 - Operating system and version&#8224;
-- Whether runtime IDs are present in the runtimes node&#8224;
+- Whether runtime IDs are present in the runtimes node
 - .NET Core SDK version&#8224;
 
 &#8224;This metric is published.

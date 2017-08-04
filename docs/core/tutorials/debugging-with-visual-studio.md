@@ -30,26 +30,25 @@ Run your program in Debug mode and try a few debugging features:
 
 1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed. 
 
-`# [C#](#tab/csharp)`  
+# [C#](#tab/csharp)
    Set a breakpoint on the line that reads `Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/setbreakpoint.png)
-
-`# [Visual Basic](#tab/visual-basic)`
+# [Visual Basic](#tab/visual-basic)
    Set a breakpoint on the line that reads `Console.WriteLine(vbCrLf + $"Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line or by choosing the **Debug** > **Toggle Breakpoint** menu item with the line selected. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/vb-setbreakpoint.png)
-
 ---
+
 1. Run the program in Debug mode by selecting the **HelloWorld** button with the green arrow on the toolbar, pressing F5, or choosing **Debug** > **Start Debugging**.
 
 1. Enter a string in the console window when the program prompts for a name and press Enter.
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Autos** window displays the values of variables that are used around the current line. The **Locals** window (which you can view by clicking the **Locals** tab) displays the values of variables that are defined in the currently executing method.
 
-`# [C#](#tab/csharp)`
+# [C#](#tab/csharp)
    ![Visual Studio application window](./media/debugging-with-visual-studio/break.png)
-`# [Visual Basic](#tab/visual-basic)`
+# [Visual Basic](#tab/visual-basic)
    ![Visual Studio application window](./media/debugging-with-visual-studio/vb-break.png)
 ---
 
@@ -57,14 +56,13 @@ Run your program in Debug mode and try a few debugging features:
 
 1. You can interactively change the values of variables. Enter `name = "Gracie"` in the **Immediate Window** and press the Enter key.
 
-`# [C#](#tab/csharp)`
+# [C#](#tab/csharp)
 1. Enter `date = new DateTime(2016,11,01,11,59,00)` in the **Immediate Window** and press the Enter key.
 
    The **Immediate Window** displays the value of the string variable and the properties of the @System.DateTime value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
 
    ![Autos window and Immediate Window](./media/debugging-with-visual-studio/autosimmediate.png)
-
-`# [Visual Basic](#tab/visual-basic)`
+# [Visual Basic](#tab/visual-basic)
 1. Enter `currentDate = new DateTime(2016,11,01,11,59,00)` in the **Immediate Window** and press the Enter key.
 
 <!-- The **Immediate Window** displays the value of the string variable and the properties of the @System.DateTime value. In addition, the value of the variables is updated in the **Autos** and **Locals** windows.
@@ -72,6 +70,7 @@ Run your program in Debug mode and try a few debugging features:
    ![Autos window and Immediate Window](./media/debugging-with-visual-studio/vb-autosimmediate.png)
 -->
 ---
+
 1. Continue program execution by selecting the **Continue** button in the toolbar or by selecting the **Debug** > **Continue** menu item. The values displayed in the console window correspond to the changes you made in the **Immediate Window**.
 
    ![Console window showing the typed value Jack at the What is your name? prompt followed by Hello Gracie on 11/1/2016 at 11:59am](./media/debugging-with-visual-studio/changed.png)
@@ -84,7 +83,7 @@ Your program displays the string that the user enters. What happens if the user 
 
 To set a conditional breakpoint and test what happens when the user fails to enter a string, do the following:
 
-`# [C#](#tab/csharp)`
+# [C#](#tab/csharp)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
    ![Breakpoint settings panel](./media/debugging-with-visual-studio/breakpointsettings.png)
@@ -94,8 +93,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```csharp
    String.IsNullOrEmpty(name)
    ```
-
-`# [Visual Basic](#tab/visual-basic)`
+# [Visual Basic](#tab/visual-basic)
 1. Right-click on the red dot that represents the breakpoint. On the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Check the box for **Conditions**.
 
    ![Breakpoint settings panel](./media/debugging-with-visual-studio/vb-breakpointsettings.png)
@@ -105,8 +103,8 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```vb
    String.IsNullOrEmpty(name)
    ```
-
 ---
+
    You're testing for a code condition, that the `String.IsNullOrEmpty(name)` method call is `true` either because *name* has not been assigned a value or because its value is an empty string (""). You can also specify a *hit count*, which interrupts program execution before a statement is executed a specified number of times, or a *filter condition*, which interrupts program execution based on such attributes as a thread identifier, process name, or thread name.
 
 1. Select the **Close** button to close the dialog.
@@ -119,7 +117,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Select the **Locals** window, which shows the values of variables that are local to the currently executing method, which is the `Main` method in your program. Observe that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=fullName>.
 
-`# [C#](#tab/csharp)`
+# [C#](#tab/csharp)
 1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
 
    ```csharp
@@ -127,16 +125,15 @@ To set a conditional breakpoint and test what happens when the user fails to ent
    ```
 
    ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/emptystring.png)
-
-`# [Visual Basic](#tab/visual-basic)`
+# [Visual Basic](#tab/visual-basic)
 1. Confirm the value is an empty string by entering the following statement in the **Immediate Window**. The result is `true`.
 
    ```vb
    ? String.IsNullOrEmpty(name)
    ```
   ![Immediate Window returning a value of true after the statement is executed](./media/debugging-with-visual-studio/vb-emptystring.png)
-
 ---
+
 1. Select the **Continue** button on the toolbar to continue program execution.
 
 1. Press any key to close the console window and exit Debug mode.
@@ -148,7 +145,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 Visual Studio also allows you to step line by line through a program and monitor its execution. Ordinarily, you'd set a breakpoint and use this feature to follow program flow though a small part of your program code. Since your program is small, you can step through the entire program by doing the following:
 
-`# [C#](#tab/csharp)`
+# [C#](#tab/csharp)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/stepinto1.png)
@@ -158,7 +155,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/stepinto2.png)
-`# [Visual Basic](#tab/visual-basic)`
+# [Visual Basic](#tab/visual-basic)
 1. On the menu bar, choose **Debug** > **Step Into** or press the F11 key. Visual Studio highlights and displays an arrow beside the next line of execution.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto1.png)
@@ -168,8 +165,8 @@ Visual Studio also allows you to step line by line through a program and monitor
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio now highlights the next line of execution. As the figure shows, it has taken less than one millisecond to execute the code between the last statement and this one. `args` remains the only declared variable, and the console window remains blank.
 
    ![Visual Studio window](./media/debugging-with-visual-studio/vb-stepinto2.png)
-
 ---
+
 1. Select **Debug** > **Step Into** or press the F11 key. Visual Studio highlights the statement that includes the `name` variable assignment. The **Autos** window shows that `name` is `null` (in C#) or `Nothing` (in Visual Basic), and the console window displays the string "What is your name?".
 
 1. Respond to the prompt by entering a string in the console window and pressing Enter. The console is unresponsive, and the string you enter isn't displayed in the console window, but the <xref:System.Console.ReadLine%2A?displayProperty=fullName> method will nevertheless capture your input.

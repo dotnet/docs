@@ -1,5 +1,5 @@
 ---
-title: "CorBindToRuntimeEx Function | Microsoft Docs"
+title: "CorBindToRuntimeEx Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -76,7 +76,7 @@ HRESULT CorBindToRuntimeEx (
  `pwszBuildFlavor`  
  [in] A string that specifies whether to load the server or the workstation build of the CLR. Valid values are `svr` and `wks`. The server build is optimized to take advantage of multiple processors for garbage collections, and the workstation build is optimized for client applications running on a single-processor machine.  
   
- If `pwszBuildFlavor`is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor`is set to `svr`. However, if `pwszBuildFlavor`is set to `svr` and concurrent garbage collection is specified (see the description of the `startupFlags` parameter), the server build is loaded.  
+ If `pwszBuildFlavor` is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor` is set to `svr`. However, if `pwszBuildFlavor` is set to `svr` and concurrent garbage collection is specified (see the description of the `startupFlags` parameter), the server build is loaded.  
   
  `startupFlags`  
  [in] A combination of values of the [STARTUP_FLAGS](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) enumeration. These flags control concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. The following values are valid:  

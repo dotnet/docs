@@ -1,5 +1,5 @@
 ---
-title: "Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic) | Microsoft Docs"
+title: "Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

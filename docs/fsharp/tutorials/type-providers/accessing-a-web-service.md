@@ -1,6 +1,6 @@
 ---
-title: Walkthrough - Accessing a Web Service by Using Type Providers (F#) | Microsoft Docs
-description: Walkthrough - Accessing a Web Service by Using Type Providers (F#)
+title: Walkthrough - Accessing a Web Service by Using Type Providers (F#)
+description: Learn how to use the Web Services Description Language (WSDL) type provider available in F# 3.0 to access a WSDL service.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

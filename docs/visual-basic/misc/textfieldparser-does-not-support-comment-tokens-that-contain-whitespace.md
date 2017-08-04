@@ -1,5 +1,5 @@
 ---
-title: "TextFieldParser does not support comment tokens that contain whitespace | Microsoft Docs"
+title: "TextFieldParser does not support comment tokens that contain whitespace"
 
 ms.date: "2015-07-20"
 ms.prod: .net

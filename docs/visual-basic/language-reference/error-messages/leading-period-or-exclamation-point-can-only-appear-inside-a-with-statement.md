@@ -1,5 +1,5 @@
 ---
-title: "Leading &#39;.&#39; or &#39;!&#39; can only appear inside a &#39;With&#39; statement | Microsoft Docs"
+title: "Leading &#39;.&#39; or &#39;!&#39; can only appear inside a &#39;With&#39; statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

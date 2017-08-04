@@ -10,8 +10,24 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the automatic transaction type requested by the component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using the .NET Installation Tool (Regsvcs.exe), the transaction option for a <xref:System.EnterpriseServices.ServicedComponent> defaults to <xref:System.EnterpriseServices.TransactionOption.Disabled>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.TransactionOption> type.  
+  
+ [!code-cpp[EnterpriseServicesTransactionOption#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServicesTransactionOption/cpp/class1.cpp#0)]
+ [!code-csharp[EnterpriseServicesTransactionOption#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesTransactionOption/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesTransactionOption#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesTransactionOption/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -27,7 +43,7 @@
         <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ignores any transaction in the current context.</summary>
       </Docs>
     </Member>
     <Member MemberName="NotSupported">
@@ -43,7 +59,7 @@
         <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the component in a context with no governing transaction.</summary>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -59,7 +75,7 @@
         <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Shares a transaction, if one exists, and creates a new transaction if necessary.</summary>
       </Docs>
     </Member>
     <Member MemberName="RequiresNew">
@@ -75,7 +91,7 @@
         <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Creates the component with a new transaction, regardless of the state of the current context.</summary>
       </Docs>
     </Member>
     <Member MemberName="Supported">
@@ -91,7 +107,7 @@
         <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Shares a transaction, if one exists.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFrame::GetStackRange Method | Microsoft Docs"
+title: "ICorDebugFrame::GetStackRange Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

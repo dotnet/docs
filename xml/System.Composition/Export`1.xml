@@ -19,9 +19,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the instance.</typeparam>
+    <summary>A reference that allows the graph of parts associated with an exported instance to be released.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,10 +40,11 @@
         <Parameter Name="disposeAction" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="disposeAction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The exported instance.</param>
+        <param name="disposeAction">An action that will dispose the exported instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Export`1" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -60,8 +62,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disposes the exported instance.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -78,9 +81,10 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the exported value.</summary>
+        <value>The exported value.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

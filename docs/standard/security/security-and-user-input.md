@@ -1,5 +1,5 @@
 ---
-title: "Security and User Input | Microsoft Docs"
+title: "Security and User Input"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

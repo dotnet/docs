@@ -1,5 +1,5 @@
 ---
-title: "Migration Guide to the .NET Framework 4.7, 4.6, and 4.5  | Microsoft Docs"
+title: "Migration Guide to the .NET Framework 4.7, 4.6, and 4.5 "
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -19,7 +19,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Migration Guide to the .NET Framework 4.7, 4.6, and 4.5 
-If you created your app using an earlier version of the .NET Framework, you can generally upgrade it to the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2), or the .NET Framework 4.7 easily. Open your project in Visual Studio. If your project was created in an earlier version, the **Project Compatibility** dialog box automatically opens. For more information about upgrading a project in Visual Studio, see [Port, Migrate, and Upgrade Visual Studio Projects](https://docs.microsoft.com/en-us/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) and [Visual Studio 2017 Platform Targeting and Compatibility](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs).  
+If you created your app using an earlier version of the .NET Framework, you can generally upgrade it to the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the .NET Framework 4.6 and its point releases (4.6.1 and 4.6.2), or the .NET Framework 4.7 easily. Open your project in Visual Studio. If your project was created in an earlier version, the **Project Compatibility** dialog box automatically opens. For more information about upgrading a project in Visual Studio, see [Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) and [Visual Studio 2017 Platform Targeting and Compatibility](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs).  
   
  However, some changes in the .NET Framework require changes to your code. You may also want to take advantage of functionality that is new in the .NET Framework 4.5 and its point releases, in the .NET Framework 4.6 and its point releases, or in the .NET Framework 4.7. Making these types of changes to your app for a new version of the .NET Framework is typically referred to as *migration*. If your app doesn't have to be migrated, you can run it in the .NET Framework 4.5 or later versions without recompiling it.  
   
@@ -44,3 +44,4 @@ If you created your app using an earlier version of the .NET Framework, you can 
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)   
  [.NET Framework Version and Assembly Information](http://go.microsoft.com/fwlink/?LinkId=201701)   
  [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/?LinkId=196607)
+ [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide) | Microsoft Docs"
+title: "How to: Get Information About Files, Folders, and Drives  (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

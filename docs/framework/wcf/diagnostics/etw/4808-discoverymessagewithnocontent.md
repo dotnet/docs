@@ -1,5 +1,5 @@
 ---
-title: "4808 - DiscoveryMessageWithNoContent | Microsoft Docs"
+title: "4808 - DiscoveryMessageWithNoContent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "if-else (C# Reference) | Microsoft Docs"
+title: "if-else (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -152,5 +152,5 @@ if (!(m >= n || m >= p))
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [?: Operator](../../../csharp/language-reference/operators/conditional-operator.md)   
- [if-else Statement (C++)](https://docs.microsoft.com/cpp/cpp/if-else-statement-cpp)   
+ [if-else Statement (C++)](/cpp/cpp/if-else-statement-cpp)   
  [switch](../../../csharp/language-reference/keywords/switch.md)

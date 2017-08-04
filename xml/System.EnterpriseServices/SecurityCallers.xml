@@ -15,8 +15,17 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides an ordered collection of identities in the current call chain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.SecurityCallers> class provides the items in the COM+ `ISecurityCallersColl` collection as indexed properties.  
+  
+ New instances are not created programmatically. They are obtained from the <xref:System.EnterpriseServices.SecurityCallContext> component.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -32,8 +41,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of callers in the chain.</summary>
+        <value>The number of callers in the chain.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Retrieves the enumeration interface for the object.</summary>
+        <returns>The enumerator interface for the <see langword="ISecurityCallersColl" /> collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,9 +81,9 @@
         <Parameter Name="idx" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="idx">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="idx">The item to access using an index number.</param>
+        <summary>Gets the specified <see cref="T:System.EnterpriseServices.SecurityIdentity" /> item.</summary>
+        <value>A <see cref="T:System.EnterpriseServices.SecurityIdentity" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

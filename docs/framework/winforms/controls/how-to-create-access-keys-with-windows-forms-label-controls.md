@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Access Keys with Windows Forms Label Controls | Microsoft Docs"
+title: "How to: Create Access Keys with Windows Forms Label Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

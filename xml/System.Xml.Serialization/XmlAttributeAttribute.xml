@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlAttributeAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes, or deserializes, an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlAttributeAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes, or deserializes, an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/standard/serialization/attributes-that-control-xml-serialization.md).  
   
  When applied to a public field or property, the <xref:System.Xml.Serialization.XmlAttributeAttribute> informs the <xref:System.Xml.Serialization.XmlSerializer> to serialize the member as an XML attribute. By default, the <xref:System.Xml.Serialization.XmlSerializer> serializes public fields and properties as XML elements.  
   
@@ -60,7 +60,7 @@
  Public Space As String  
 ```  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
 > [!NOTE]
 >  You can use the word `XmlAttribute` in your code instead of the longer <xref:System.Xml.Serialization.XmlAttributeAttribute>.  

@@ -1,5 +1,5 @@
 ---
-title: "Message Security Sample | Microsoft Docs"
+title: "Message Security Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

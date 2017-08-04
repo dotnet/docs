@@ -1,5 +1,5 @@
 ---
-title: "Emulating breaking in a While activity | Microsoft Docs"
+title: "Emulating breaking in a While activity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

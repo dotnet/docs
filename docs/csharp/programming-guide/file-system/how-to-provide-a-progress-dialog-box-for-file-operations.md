@@ -1,5 +1,5 @@
 ---
-title: "How to: Provide a Progress Dialog Box for File Operations (C# Programming Guide) | Microsoft Docs"
+title: "How to: Provide a Progress Dialog Box for File Operations (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

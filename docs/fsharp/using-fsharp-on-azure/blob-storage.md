@@ -1,5 +1,5 @@
 ---
-title: Get started with Azure Blob storage using F# | Microsoft Docs
+title: Get started with Azure Blob storage using F#
 description: Store unstructured data in the cloud with Azure Blob storage.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
@@ -18,11 +18,11 @@ Azure Blob storage is a service that stores unstructured data in the cloud as ob
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 
-For a conceptual overview of blob storage, see [the .NET guide for blob storage](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-blobs).
+For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/storage-dotnet-how-to-use-blobs).
 
 ## Prerequisites
 
-To use this guide, you must first [create an Azure storage account](https://docs.microsoft.com/azure/storage/storage-create-storage-account). You also need your storage access key for this account.
+To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account). You also need your storage access key for this account.
 
 ## Create an F# Script and Start F# Interactive
 
@@ -38,7 +38,7 @@ Add the following `open` statements to the top of the `blobs.fsx` file:
 
 ### Get your connection string
 
-You need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](https://docs.microsoft.com/azure/storage/storage-configure-connection-string).
+You need an Azure Storage connection string for this tutorial. For more information about connection strings, see [Configure Storage Connection Strings](/azure/storage/storage-configure-connection-string).
 
 For the tutorial, you enter your connection string in your script, like this:
 
@@ -220,14 +220,14 @@ By default, Azure Storage keeps your data secure by limiting access to the accou
 
 By default, the blob data in your storage account is accessible only to storage account owner. Authenticating requests against Blob storage requires the account access key by default. However, you might want to make certain blob data available to other users.
 
-For details on how to control access to blob storage, see [the .NET guide for blob storage section on access control](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-blobs#controlling-access-to-blob-data).
+For details on how to control access to blob storage, see [the .NET guide for blob storage section on access control](/azure/storage/storage-dotnet-how-to-use-blobs#controlling-access-to-blob-data).
 
 
 ### Encrypting blob data
 
 Azure Storage supports encrypting blob data both at the client and on the server.
 
-For details on encrypting blob data, see [the .NET guide for blob storage section on encryption](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-blobs#encrypting-blob-data).
+For details on encrypting blob data, see [the .NET guide for blob storage section on encryption](/azure/storage/storage-dotnet-how-to-use-blobs#encrypting-blob-data).
 
 ## Next steps
 
@@ -236,7 +236,7 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 ### Tools
 - [F# AzureStorageTypeProvider](http://fsprojects.github.io/AzureStorageTypeProvider/) An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
 - [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage) An F# API for using Microsoft Azure Table Storage service
-- [Microsoft Azure Storage Explorer (MASE)](https://docs.microsoft.com/azure/vs-azure-tools-storage-manage-with-storage-explorer) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
+- [Microsoft Azure Storage Explorer (MASE)](/azure/vs-azure-tools-storage-manage-with-storage-explorer) is a free, standalone app from Microsoft that enables you to work visually with Azure Storage data on Windows, OS X, and Linux.
 
 ### Blob storage reference
 
@@ -246,6 +246,6 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 ### Related guides
 
 - [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
-- [Transfer data with the AzCopy command-line utility](https://docs.microsoft.com/azure/storage/storage-use-azcopy)
+- [Transfer data with the AzCopy command-line utility](/azure/storage/storage-use-azcopy)
 - [Configuring Connection Strings](http://msdn.microsoft.com/library/azure/ee758697.aspx)
 - [Azure Storage Team Blog](http://blogs.msdn.com/b/windowsazurestorage/)

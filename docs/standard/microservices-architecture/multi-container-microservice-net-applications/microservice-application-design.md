@@ -1,5 +1,5 @@
 ---
-title: Designing a microservice-oriented application | Microsoft Docs 
+title: Designing a microservice-oriented application
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing a microservice-oriented application
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

@@ -1,5 +1,5 @@
 ---
-title: "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT | Microsoft Docs"
+title: "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

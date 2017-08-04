@@ -1,5 +1,5 @@
 ---
-title: "&lt;disableFusionUpdatesFromADManager&gt; Element | Microsoft Docs"
+title: "&lt;disableFusionUpdatesFromADManager&gt; Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -74,7 +74,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
  As an alternative to using the `<disableFusionUpdatesFromADManager>` element, you can disable the default behavior by creating a registry setting or by setting an environment variable. In the registry, create a DWORD value named `COMPLUS_disableFusionUpdatesFromADManager` under `HKCU\Software\Microsoft\.NETFramework` or `HKLM\Software\Microsoft\.NETFramework`, and set the value to 1. At the command line, set the environment variable `COMPLUS_disableFusionUpdatesFromADManager` to 1.  
   
 ## Example  
- The following code example shows how to disable the ability to override Fusion settings by using the `<disableFusionUpdatesFromADManager>` element.  
+ The following example shows how to disable the ability to override Fusion settings by using the `<disableFusionUpdatesFromADManager>` element.  
   
 ```xml  
 <configuration>  

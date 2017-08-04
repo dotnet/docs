@@ -27,7 +27,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.FlowDirection> enumeration to set the <xref:System.Windows.Documents.Block.FlowDirection%2A> attribute of a flow content <xref:System.Windows.Documents.Block> element (<xref:System.Windows.Documents.Paragraph>).  
   
- [!code-xml[BlockSnippets#_Block_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_flowdirectionxaml)]  
+ [!code-xaml[BlockSnippets#_Block_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/BlockSnippets/CSharp/Window1.xaml#_block_flowdirectionxaml)]  
   
  The following example shows how to use the <xref:System.Windows.FlowDirection> enumeration programmatically.  
   

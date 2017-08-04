@@ -1,5 +1,5 @@
 ---
-title: "ICLRErrorReportingManager::BeginCustomDump Method | Microsoft Docs"
+title: "ICLRErrorReportingManager::BeginCustomDump Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

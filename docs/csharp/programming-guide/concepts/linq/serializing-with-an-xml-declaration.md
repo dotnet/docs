@@ -1,5 +1,5 @@
 ---
-title: "Serializing with an XML Declaration (C#) | Microsoft Docs"
+title: "Serializing with an XML Declaration (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

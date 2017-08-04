@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugReferenceValue::Dereference Method | Microsoft Docs"
+title: "ICorDebugReferenceValue::Dereference Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: ".NET Performance Tips | Microsoft Docs"
+title: ".NET Performance Tips"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

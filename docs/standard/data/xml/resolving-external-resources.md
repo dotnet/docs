@@ -1,5 +1,5 @@
 ---
-title: "Resolving External Resources | Microsoft Docs"
+title: "Resolving External Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

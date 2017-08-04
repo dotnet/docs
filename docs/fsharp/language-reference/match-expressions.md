@@ -1,6 +1,6 @@
 ---
-title: Match Expressions (F#) | Microsoft Docs
-description: Match Expressions (F#)
+title: Match Expressions (F#)
+description: Learn how the F# match expression provides branching control that is based on the comparison of an expression with a set of patterns.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

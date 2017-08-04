@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
 > [!NOTE]
 >  The Web page designer in Visual Studio does not support the `ResetPropertyName` method that is optionally exposed by Windows Forms controls for property persistence. Server controls are serialized using methods provided by the <xref:System.Web.UI.Design.ControlPersister> class. The implementation of these methods is driven by metadata attributes such as <xref:System.ComponentModel.DefaultValueAttribute>, <xref:System.Web.UI.PersistenceModeAttribute>, and <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>.  

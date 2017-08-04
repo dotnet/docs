@@ -1,5 +1,5 @@
 ---
-title: "1001 - WorkflowApplicationCompleted | Microsoft Docs"
+title: "1001 - WorkflowApplicationCompleted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

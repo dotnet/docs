@@ -28,7 +28,7 @@
   
  After the `POST`, a `PUT` request with all the properties on the type other than the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, which is binary content, are sent to the URI `/<EntitySet>(<key>)`.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  ]]></format>
     </remarks>

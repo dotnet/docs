@@ -1,5 +1,5 @@
 ---
-title: "Set not supported at run time | Microsoft Docs"
+title: "Set not supported at run time"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,4 +42,4 @@ You tried to set or change a property whose value can only be set at design time
 2.  Change the reference to only return the value of the property at run time.  
   
 ## See Also  
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

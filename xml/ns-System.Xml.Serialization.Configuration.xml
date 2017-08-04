@@ -1,23 +1,23 @@
 <Namespace Name="System.Xml.Serialization.Configuration">
   <Docs>
-    <summary>The <see cref="N:System.Xml.Serialization.Configuration" /> namespace contains classes used to read the values found in application configuration files under the [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md) section.</summary>
+    <summary>The <see cref="N:System.Xml.Serialization.Configuration" /> namespace contains classes used to read the values found in application configuration files under the [\&lt;system.xml.serialization\&gt; Element](~/docs/standard/serialization/system-xml-serialization-element.md) section.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The classes in this namespace are used by the serialization infrastructure to handle the configuration elements and cannot be used directly. For more information about configuration files, see [Configuration File Schema](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
+ The classes in this namespace are used by the serialization infrastructure to handle the configuration elements and cannot be used directly. For more information about configuration files, see [Configuration File Schema](~/docs/framework/configure-apps/file-schema/index.md).  
   
  Instead, to configure the <xref:System.Xml.Serialization.XmlSerializer> or <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements:  
   
--   [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md)  
+-   [\&lt;system.xml.serialization\&gt; Element](~/docs/standard/serialization/system-xml-serialization-element.md)  
   
--   [\&lt;schemaImporterExtensions\&gt; Element](~/docs/framework/serialization/schemaimporterextensions-element.md)  
+-   [\&lt;schemaImporterExtensions\&gt; Element](~/docs/standard/serialization/schemaimporterextensions-element.md)  
   
--   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](~/docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)  
+-   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](~/docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md)  
   
--   [\&lt;dateTimeSerialization\&gt; Element](~/docs/framework/serialization/datetimeserialization-element.md)  
+-   [\&lt;dateTimeSerialization\&gt; Element](~/docs/standard/serialization/datetimeserialization-element.md)  
   
--   [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md)  
+-   [\&lt;xmlSerializer\&gt; Element](~/docs/standard/serialization/xmlserializer-element.md)  
   
  ]]></format>
     </remarks>

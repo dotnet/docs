@@ -1,5 +1,5 @@
 ---
-title: "How to: Put Quotation Marks in a String (Windows Forms) | Microsoft Docs"
+title: "How to: Put Quotation Marks in a String (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

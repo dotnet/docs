@@ -1,5 +1,5 @@
 ---
-title: "Emitting Dynamic Methods and Assemblies | Microsoft Docs"
+title: "Emitting Dynamic Methods and Assemblies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

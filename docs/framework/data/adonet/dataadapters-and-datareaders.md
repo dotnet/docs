@@ -1,5 +1,5 @@
 ---
-title: "DataAdapters and DataReaders | Microsoft Docs"
+title: "DataAdapters and DataReaders"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

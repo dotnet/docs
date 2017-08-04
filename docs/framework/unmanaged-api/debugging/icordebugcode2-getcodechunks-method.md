@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode2::GetCodeChunks Method | Microsoft Docs"
+title: "ICorDebugCode2::GetCodeChunks Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

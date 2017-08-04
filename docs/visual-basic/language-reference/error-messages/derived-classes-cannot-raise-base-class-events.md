@@ -1,5 +1,5 @@
 ---
-title: "Derived classes cannot raise base class events | Microsoft Docs"
+title: "Derived classes cannot raise base class events"
 
 ms.date: "2015-07-20"
 ms.prod: .net

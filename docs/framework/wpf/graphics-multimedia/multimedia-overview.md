@@ -1,5 +1,5 @@
 ---
-title: "Multimedia Overview | Microsoft Docs"
+title: "Multimedia Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -76,7 +76,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 ## MediaElement Class  
  Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] 10 are supported in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
- [!code-xml[MediaElement_snip#SimpleMediaElementUsageWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/SimpleUsage.xaml#simplemediaelementusagewholepage)]  
+ [!code-xaml[MediaElement_snip#SimpleMediaElementUsageWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/SimpleUsage.xaml#simplemediaelementusagewholepage)]  
   
  In this sample, media is played automatically as soon as it is loaded. Once the media has finished playing, the media is closed and all media resources are release (including video memory). This is the default behavior of the <xref:System.Windows.Controls.MediaElement> object and is controlled by the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> and <xref:System.Windows.Controls.MediaElement.UnloadedBehavior%2A> properties.  
   

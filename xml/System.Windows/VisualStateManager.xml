@@ -29,7 +29,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Shapes.Rectangle> and adds a <xref:System.Windows.VisualStateGroup> named `CommonStates` to the `VisualStateManager.VisualStatesGroups` attached property. The example defines the `MouseOver` and `Normal`<xref:System.Windows.VisualState> objects in the `CommonStates`<xref:System.Windows.VisualStateGroup>. When the user moves the mouse pointer over the <xref:System.Windows.Shapes.Rectangle>, it changes from red to green over one half second. When the user moves the mouse away from the rectangle, the <xref:System.Windows.Controls.Grid> immediately changes back to red. Note that the `Normal` state does not define a <xref:System.Windows.Media.Animation.Storyboard>. A <xref:System.Windows.Media.Animation.Storyboard> is not required because when the <xref:System.Windows.Shapes.Rectangle> transitions from the `MouseOver` state to the `Normal` state, the <xref:System.Windows.Media.Animation.Storyboard> for `MouseOver` is stopped and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property for the <xref:System.Windows.Media.SolidColorBrush> returns to red.  
   
- [!code-xml[VSMCustomControl#VSMNoTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#vsmnotemplate)]  
+ [!code-xaml[VSMCustomControl#VSMNoTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#vsmnotemplate)]  
   
  The following example shows the event handler that is defined in the previous example and calls the <xref:System.Windows.VisualStateManager.GoToElementState%2A> method to transition between states. If the rectangle in the previous example was part of a <xref:System.Windows.Controls.ControlTemplate>, the example would have to call the <xref:System.Windows.VisualStateManager.GoToState%2A> method.  
   
@@ -157,7 +157,7 @@
 ## Examples  
  The following example creates an application that prompts the user to guess a number between 1 and 100.  When the user enters a number, the application indicates whether the guess is too high, too low, or correct.  The following [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] creates the user interface for the application and defines 4 states: `TooLow`, `TooHigh`, `Correct`, and `Guessing`. When the application begins, it is in the `Guessing` state. .  
   
- [!code-xml[VSMGoToElementState#GoToElementStateXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmgotoelementstate/csharp/mainwindow.xaml#gotoelementstatexaml)]  
+ [!code-xaml[VSMGoToElementState#GoToElementStateXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmgotoelementstate/csharp/mainwindow.xaml#gotoelementstatexaml)]  
   
  The following code shows the logic of the application.  When the user enters a number and clicks the button, the application calls <xref:System.Windows.VisualStateManager.GoToElementState%2A> to transition to `TooHigh`, `TooLow`, or `Correct` to provide feedback to the user about the guess.  To try this example, call the `GenerateNumber` method when the application begins.  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Export Custom WSDL | Microsoft Docs"
+title: "How to: Export Custom WSDL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

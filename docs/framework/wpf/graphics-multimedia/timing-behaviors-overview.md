@@ -1,5 +1,5 @@
 ---
-title: "Timing Behaviors Overview | Microsoft Docs"
+title: "Timing Behaviors Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,6 @@ manager: "wpickett"
 # Timing Behaviors Overview
 This topic describes the timing behaviors of animations and other              <xref:System.Windows.Media.Animation.Timeline> objects.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with basic animation features. For more information, see the                  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
@@ -57,15 +56,15 @@ This topic describes the timing behaviors of animations and other              <
   
  The following example shows a                          <xref:System.Windows.Media.Animation.DoubleAnimation> with a                          <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of five seconds.  
   
- [!code-xml[animation_ovws_snippet#AnimationWith5SecondDurationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#animationwith5seconddurationinline)]  
+ [!code-xaml[animation_ovws_snippet#AnimationWith5SecondDurationInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#animationwith5seconddurationinline)]  
   
  Container timelines, such as                          <xref:System.Windows.Media.Animation.Storyboard> and                          <xref:System.Windows.Media.Animation.ParallelTimeline>, have a default duration of                          <xref:System.Windows.Duration.Automatic%2A>, which means they automatically end when their last child stops playing. The following example shows a                          <xref:System.Windows.Media.Animation.Storyboard> whose                          <xref:System.Windows.Media.Animation.Timeline.Duration%2A> resolves to five seconds, the length of time it takes all its child                          <xref:System.Windows.Media.Animation.DoubleAnimation> objects to complete.  
   
- [!code-xml[animation_ovws_snippet#ContainerTimelineExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#containertimelineexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#ContainerTimelineExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#containertimelineexampleinline)]  
   
  By setting the                          <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of a container timeline to a                          <xref:System.Windows.Duration.TimeSpan%2A> value, you can force to play longer or shorter than its child                          <xref:System.Windows.Media.Animation.Timeline> objects would play. If you set the                          <xref:System.Windows.Media.Animation.Timeline.Duration%2A> to a value that's smaller than the length of the container timeline's child                          <xref:System.Windows.Media.Animation.Timeline> objects, the child                          <xref:System.Windows.Media.Animation.Timeline> objects stop playing when the container timeline does. The following example sets the                          <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of the                          <xref:System.Windows.Media.Animation.Storyboard> from the preceding examples to three seconds. As a result, the first                          <xref:System.Windows.Media.Animation.DoubleAnimation> stops progressing after three seconds, when it has animated the target rectangle's width to 60.  
   
- [!code-xml[animation_ovws_snippet#ContainerTimelineWithShorterDurationExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#containertimelinewithshorterdurationexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#ContainerTimelineWithShorterDurationExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#containertimelinewithshorterdurationexampleinline)]  
   
 <a name="repeatinganimations"></a>   
 ### The RepeatBehavior Property  
@@ -73,15 +72,15 @@ This topic describes the timing behaviors of animations and other              <
   
  The following example uses the                          <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to make a                          <xref:System.Windows.Media.Animation.DoubleAnimation> play for twice its simple duration by specifying an iteration count.  
   
- [!code-xml[animation_ovws_snippet#TBRepeatBehavior2xExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehavior2xexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#TBRepeatBehavior2xExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehavior2xexampleinline)]  
   
  The next example uses the                          <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to make the                          <xref:System.Windows.Media.Animation.DoubleAnimation> play for half its simple duration.  
   
- [!code-xml[animation_ovws_snippet#TBRepeatBehavior05xExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehavior05xexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#TBRepeatBehavior05xExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehavior05xexampleinline)]  
   
  If you set the                          <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property of a                          <xref:System.Windows.Media.Animation.Timeline> to                          <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>, the                          <xref:System.Windows.Media.Animation.Timeline> repeats until stopped interactively or by the timing system. The following example uses the                          <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property to make the                          <xref:System.Windows.Media.Animation.DoubleAnimation> play indefinitely.  
   
- [!code-xml[animation_ovws_snippet#TBRepeatBehaviorForeverExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehaviorforeverexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#TBRepeatBehaviorForeverExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbrepeatbehaviorforeverexampleinline)]  
   
  For an additional example, see                          [Repeat an Animation](../../../../docs/framework/wpf/graphics-multimedia/how-to-repeat-an-animation.md).  
   
@@ -89,11 +88,11 @@ This topic describes the timing behaviors of animations and other              <
 ### The AutoReverse Property  
  The                          <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property specifies whether a                          <xref:System.Windows.Media.Animation.Timeline> will play backwards at the end of each forward iteration. The following example sets to the                          <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of a                          <xref:System.Windows.Media.Animation.DoubleAnimation> to                          `true`; as a result, it animates from zero to 100, and then from 100 to zero. It plays for a total of 10 seconds.  
   
- [!code-xml[animation_ovws_snippet#TBAutoReverseExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbautoreverseexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#TBAutoReverseExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbautoreverseexampleinline)]  
   
  When you use a                          <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> value to specify the                          <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> of a                          <xref:System.Windows.Media.Animation.Timeline> and the                          <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property of that                          <xref:System.Windows.Media.Animation.Timeline> is                          `true`, a single repetition consists of one forward iteration followed by one backwards iteration.  The following example sets the                          <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> of the                          <xref:System.Windows.Media.Animation.DoubleAnimation> from the preceding example to a                          <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> of two. As a result, the                          <xref:System.Windows.Media.Animation.DoubleAnimation> plays for 20 seconds: forward for five seconds, backwards for five seconds, forward for 5 seconds again, and then backwards for five seconds.  
   
- [!code-xml[animation_ovws_snippet#TBAutoReverseRepeatExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbautoreverserepeatexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#TBAutoReverseRepeatExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbautoreverserepeatexampleinline)]  
   
  If a container timeline has child                          <xref:System.Windows.Media.Animation.Timeline> objects, they reverse when the container timeline does. For additional examples, see                          [Specify Whether a Timeline Automatically Reverses](../../../../docs/framework/wpf/graphics-multimedia/how-to-specify-whether-a-timeline-automatically-reverses.md).  
   
@@ -105,7 +104,7 @@ This topic describes the timing behaviors of animations and other              <
   
  The                  <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property is useful for staggering timelines. The following example creates a                  <xref:System.Windows.Media.Animation.Storyboard> that has two child                  <xref:System.Windows.Media.Animation.DoubleAnimation> objects. The first animation has a                  <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of five seconds, and the second has a                  <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of 3 seconds. The example sets the                  <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> of the second                  <xref:System.Windows.Media.Animation.DoubleAnimation> to 5 seconds, so that it begins playing after the first                  <xref:System.Windows.Media.Animation.DoubleAnimation> ends.  
   
- [!code-xml[animation_ovws_snippet#TBBeginTimeExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbbegintimeexampleinline)]  
+ [!code-xaml[animation_ovws_snippet#TBBeginTimeExampleInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbbegintimeexampleinline)]  
   
 <a name="fillbehaviorproperty"></a>   
 ## The FillBehavior Property  
@@ -117,7 +116,7 @@ This topic describes the timing behaviors of animations and other              <
   
 -   The                          <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property of the second                          <xref:System.Windows.Media.Animation.DoubleAnimation> is set to                          <xref:System.Windows.Media.Animation.FillBehavior.Stop>. As a result, the                          <xref:System.Windows.FrameworkElement.Width%2A> of the second                          <xref:System.Windows.Shapes.Rectangle> reverts to 500 after the                          <xref:System.Windows.Media.Animation.DoubleAnimation> ends.  
   
- [!code-xml[animation_ovws_snippet#TBFillBehaviorExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbfillbehaviorexample)]  
+ [!code-xaml[animation_ovws_snippet#TBFillBehaviorExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/TimingBehaviorsExample1.xaml#tbfillbehaviorexample)]  
   
 <a name="speedproperties"></a>   
 ## Properties that Control the Speed of a Timeline  

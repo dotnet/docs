@@ -198,7 +198,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.Principal.NTAccount left, System.Security.Principal.NTAccount right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Principal.NTAccount left, System.Security.Principal.NTAccount right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Principal.NTAccount left, class System.Security.Principal.NTAccount right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.op_Equality(System.Security.Principal.NTAccount,System.Security.Principal.NTAccount)" />
       <MemberType>Method</MemberType>
@@ -229,7 +229,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.Principal.NTAccount left, System.Security.Principal.NTAccount right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Principal.NTAccount left, System.Security.Principal.NTAccount right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Principal.NTAccount left, class System.Security.Principal.NTAccount right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.NTAccount.op_Inequality(System.Security.Principal.NTAccount,System.Security.Principal.NTAccount)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Copying Document Fragments | Microsoft Docs"
+title: "Copying Document Fragments"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

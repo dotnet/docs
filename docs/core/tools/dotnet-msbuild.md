@@ -1,5 +1,5 @@
 ---
-title: dotnet-msbuild command - .NET Core CLI | Microsoft Docs
+title: dotnet-msbuild command - .NET Core CLI
 description: The dotnet-msbuild command provides access to the MSBuild command line.
 keywords: dotnet-msmsbuild, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -26,7 +26,7 @@ ms.assetid: ffdc40ba-ef33-463e-aa35-b0af1fe615a2
 
 The `dotnet msbuild` command allows access to a fully functional MSBuild.
 
-The command has the exact same capabilities as existing MSBuild command-line client. The options are all the same. Use the [MSBuild Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference) to obtain information on the available options. 
+The command has the exact same capabilities as existing MSBuild command-line client. The options are all the same. Use the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference) to obtain information on the available options. 
 
 ## Examples
 

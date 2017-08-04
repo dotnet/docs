@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Line | Microsoft Docs"
+title: "How to: Draw a Line"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -29,7 +29,7 @@ This example shows you how to draw lines by using the <xref:System.Windows.Shape
  The following example draws three lines inside a <xref:System.Windows.Controls.Canvas>element.  
   
 ## Example  
- [!code-xml[drawingwithshapeelements#LineExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/lineexample.xaml#lineexample1)]  
+ [!code-xaml[drawingwithshapeelements#LineExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/lineexample.xaml#lineexample1)]  
   
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
   

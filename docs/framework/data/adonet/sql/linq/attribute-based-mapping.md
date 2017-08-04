@@ -1,5 +1,5 @@
 ---
-title: "Attribute-Based Mapping | Microsoft Docs"
+title: "Attribute-Based Mapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Replacing a Principal Object | Microsoft Docs"
+title: "Replacing a Principal Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Provider Manifest Specification | Microsoft Docs"
+title: "Provider Manifest Specification"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

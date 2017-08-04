@@ -1,5 +1,5 @@
 ---
-title: "Instancing Extensibility | Microsoft Docs"
+title: "Instancing Extensibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

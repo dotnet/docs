@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugNativeFrame2::GetStackParameterSize Method | Microsoft Docs"
+title: "ICorDebugNativeFrame2::GetStackParameterSize Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

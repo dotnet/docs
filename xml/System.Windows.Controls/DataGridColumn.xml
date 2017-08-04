@@ -662,7 +662,7 @@
 ## Examples  
  The following example uses a style resource to change the style of column headers in the <xref:System.Windows.Controls.DataGrid>. The style of the first column header is then set with an inline style that overrides the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName>.  
   
- [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]   
+ [!code-xaml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]   
   
  ]]></format>
         </remarks>
@@ -818,7 +818,7 @@
 ## Examples  
  The following example shows how to freeze a column when "Freeze Column" is selected from the <xref:System.Windows.Controls.ContextMenu>. Columns are moved to the left in order to be included in the frozen columns.  
   
- [!code-xml[DataGrid_FrozenColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml#1)]  
+ [!code-xaml[DataGrid_FrozenColumn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml#1)]  
   
  [!code-csharp[DataGrid_FrozenColumn#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_frozencolumn/cs/window1.xaml.cs#2)]
  [!code-vb[DataGrid_FrozenColumn#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_frozencolumn/vb/window1.xaml.vb#2)]  
@@ -1276,8 +1276,8 @@
 ## Examples  
  The following example shows how to set the visibility of the column.  
   
- [!code-xml[DataGrid_ColumnsManipulation#Visible](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#visible)]  
-[!code-xml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
+ [!code-xaml[DataGrid_ColumnsManipulation#Visible](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#visible)]  
+[!code-xaml[DataGrid_ColumnsManipulation#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml#datagrid)]  
   
  [!code-csharp[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnsmanipulation/cs/datagrid_columnsmanipulation/window1.xaml.cs#visible2)]
  [!code-vb[DataGrid_ColumnsManipulation#Visible2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_columnsmanipulation/vb/datagrid_columnsmanipulation_vb/window1.xaml.vb#visible2)]  

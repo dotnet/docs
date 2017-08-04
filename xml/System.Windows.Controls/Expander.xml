@@ -48,7 +48,7 @@
 ## Examples  
  The following example shows how to create a simple <xref:System.Windows.Controls.Expander> control.  
   
- [!code-xml[ExpanderExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderExample/CSharp/Page1.xaml#2)]  
+ [!code-xaml[ExpanderExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderExample/CSharp/Page1.xaml#2)]  
   
  ]]></format>
     </remarks>
@@ -105,7 +105,7 @@
   
  [!code-csharp[ExpanderSnips#Collapsed](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml.cs#collapsed)]
  [!code-vb[ExpanderSnips#Collapsed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderSnips/visualbasic/window1.xaml.vb#collapsed)]
- [!code-xml[ExpanderSnips#Collapsed](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#collapsed)]  
+ [!code-xaml[ExpanderSnips#Collapsed](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#collapsed)]  
   
  The following example shows how to define the event handler.  
   
@@ -176,7 +176,7 @@
   
  [!code-csharp[ExpanderSnips#ExpandDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml.cs#expanddirection)]
  [!code-vb[ExpanderSnips#ExpandDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderSnips/visualbasic/window1.xaml.vb#expanddirection)]
- [!code-xml[ExpanderSnips#ExpandDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#expanddirection)]  
+ [!code-xaml[ExpanderSnips#ExpandDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#expanddirection)]  
   
  ]]></format>
         </remarks>
@@ -235,7 +235,7 @@
   
  [!code-csharp[ExpanderSnips#Expanded](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml.cs#expanded)]
  [!code-vb[ExpanderSnips#Expanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderSnips/visualbasic/window1.xaml.vb#expanded)]
- [!code-xml[ExpanderSnips#Expanded](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#expanded)]  
+ [!code-xaml[ExpanderSnips#Expanded](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#expanded)]  
   
  The following example shows how to define the event handler.  
   
@@ -307,7 +307,7 @@
   
  [!code-csharp[ExpanderSnips#IsExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml.cs#isexpanded)]
  [!code-vb[ExpanderSnips#IsExpanded](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderSnips/visualbasic/window1.xaml.vb#isexpanded)]
- [!code-xml[ExpanderSnips#IsExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#isexpanded)]  
+ [!code-xaml[ExpanderSnips#IsExpanded](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderSnips/CSharp/Window1.xaml#isexpanded)]  
   
  ]]></format>
         </remarks>

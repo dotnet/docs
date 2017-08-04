@@ -622,7 +622,7 @@
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
- [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
+ [!code-xaml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
  ]]></format>
         </remarks>
@@ -667,7 +667,7 @@
 ## Examples  
  The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
- [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
+ [!code-xaml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
  To see the full example, see [Binding Validation Sample](http://go.microsoft.com/fwlink/?LinkID=159972).  
   
@@ -907,19 +907,19 @@
   
  The following example instantiates the `Person` object with a `PersonName` property value of `Joe`. This is done in the `Resources` section and assigned an `x:Key`.  
   
- [!code-xml[SimpleBinding#Instantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#instantiation)]  
-[!code-xml[SimpleBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#2)]  
-[!code-xml[SimpleBinding#EndWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#endwindow)]  
+ [!code-xaml[SimpleBinding#Instantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#instantiation)]  
+[!code-xaml[SimpleBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#2)]  
+[!code-xaml[SimpleBinding#EndWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#endwindow)]  
   
  To bind to the `PersonName` property you would do the following:  
   
- [!code-xml[SimpleBinding#BDO1](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#bdo1)]  
+ [!code-xaml[SimpleBinding#BDO1](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#bdo1)]  
   
  As a result, the <xref:System.Windows.Controls.TextBlock> appears with the value "Joe".  
   
  In the following example, the <xref:System.Windows.Data.Binding.Source%2A> values of the <xref:System.Windows.Data.Binding> objects are set to the `static` property <xref:System.Windows.Application.Current%2A?displayProperty=fullName>:  
   
- [!code-xml[DataBindingLab#ComboBoxMultiBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#comboboxmultibinding)]  
+ [!code-xaml[DataBindingLab#ComboBoxMultiBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/AddProductWindow.xaml#comboboxmultibinding)]  
   
  For the full example, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
   
@@ -992,7 +992,7 @@
 ## Examples  
  The <xref:System.Windows.Controls.TextBox.Text%2A> property of the following <xref:System.Windows.Controls.TextBox> is data-bound to a source property `Age3` that is of type `int`. The <xref:System.Windows.Controls.ExceptionValidationRule> checks for exceptions that are thrown during the update of the source property (such as when the user enters a value that cannot be converted to an integer).  
   
- [!code-xml[BindValidation#tbExceptionFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#tbexceptionfilter)]  
+ [!code-xaml[BindValidation#tbExceptionFilter](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#tbexceptionfilter)]  
   
  You can provide custom logic to handle those exceptions. The following example shows how to use the <xref:System.Windows.Data.Binding.UpdateSourceExceptionFilter%2A> property to set an <xref:System.Windows.Data.UpdateSourceExceptionFilterCallback>.  
   
@@ -1083,7 +1083,7 @@
   
  The following example binds the `Age` property to the <xref:System.Windows.Controls.TextBox> and sets <xref:System.Windows.Data.Binding.ValidatesOnDataErrors%2A> to `true` on the <xref:System.Windows.Data.Binding>.  When the user enters an invalid value, a red border appears in the <xref:System.Windows.Controls.TextBox> and the <xref:System.Windows.Controls.ToolTip> reports the error message.  
   
- [!code-xml[BindingValidationAttributesSnippets#IDataErrorInfoXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingvalidationattributessnippets/csharp/window1.xaml#idataerrorinfoxaml)]  
+ [!code-xaml[BindingValidationAttributesSnippets#IDataErrorInfoXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingvalidationattributessnippets/csharp/window1.xaml#idataerrorinfoxaml)]  
   
  ]]></format>
         </remarks>
@@ -1128,7 +1128,7 @@
   
  The following example binds the `Age` property to the <xref:System.Windows.Controls.TextBox> and sets <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> to `true` on the <xref:System.Windows.Data.Binding>. When the user enters an invalid value, a red border appears in the <xref:System.Windows.Controls.TextBox> and the <xref:System.Windows.Controls.ToolTip> reports the error message.  
   
- [!code-xml[BindingValidationAttributesSnippets#ThrowExceptionXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingvalidationattributessnippets/csharp/window1.xaml#throwexceptionxaml)]  
+ [!code-xaml[BindingValidationAttributesSnippets#ThrowExceptionXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/bindingvalidationattributessnippets/csharp/window1.xaml#throwexceptionxaml)]  
   
  ]]></format>
         </remarks>

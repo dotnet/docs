@@ -49,7 +49,7 @@
 ## Examples  
  In the following code example, the <xref:System.Windows.FontWeight> is set to "UltraBold".  
   
- [!code-xml[FontSnippets#FontSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml#fontsnippet12)]  
+ [!code-xaml[FontSnippets#FontSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml#fontsnippet12)]  
   
  ]]></format>
     </remarks>
@@ -196,7 +196,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_Equality(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberType>Method</MemberType>
@@ -221,7 +221,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_GreaterThan(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberType>Method</MemberType>
@@ -253,7 +253,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_GreaterThanOrEqual(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberType>Method</MemberType>
@@ -285,7 +285,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_Inequality(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberType>Method</MemberType>
@@ -310,7 +310,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_LessThan(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberType>Method</MemberType>
@@ -342,7 +342,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Windows.FontWeight left, System.Windows.FontWeight right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Windows.FontWeight left, valuetype System.Windows.FontWeight right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontWeight.op_LessThanOrEqual(System.Windows.FontWeight,System.Windows.FontWeight)" />
       <MemberType>Method</MemberType>

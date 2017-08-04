@@ -1,5 +1,5 @@
 ---
-title: "ADO.NET DataSets | Microsoft Docs"
+title: "ADO.NET DataSets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

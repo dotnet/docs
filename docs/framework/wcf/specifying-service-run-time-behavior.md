@@ -1,5 +1,5 @@
 ---
-title: "Specifying Service Run-Time Behavior | Microsoft Docs"
+title: "Specifying Service Run-Time Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::SetModuleProps Method | Microsoft Docs"
+title: "IMetaDataEmit::SetModuleProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

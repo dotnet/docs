@@ -1,5 +1,5 @@
 ---
-title: "Task Cancellation | Microsoft Docs"
+title: "Task Cancellation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "XML Literals and the XML 1.0 Specification (Visual Basic) | Microsoft Docs"
+title: "XML Literals and the XML 1.0 Specification (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: Parallel programming | Microsoft Docs
+title: Parallel programming
 description: Parallel programming
 keywords: .NET, .NET Core
 ms.date: 06/20/2016
@@ -8,7 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 8045b1b8-7835-4a7a-980d-bc9c70d62a0c
-redirect_url: /dotnet/articles/csharp/index
+redirect_url: /dotnet/csharp/index
 ---
 
 # 🔧 Parallel programming

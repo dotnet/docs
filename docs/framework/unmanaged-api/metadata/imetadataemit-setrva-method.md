@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::SetRVA Method | Microsoft Docs"
+title: "IMetaDataEmit::SetRVA Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

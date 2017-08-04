@@ -1,5 +1,5 @@
 ---
-title: "Implementing Service Contracts | Microsoft Docs"
+title: "Implementing Service Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

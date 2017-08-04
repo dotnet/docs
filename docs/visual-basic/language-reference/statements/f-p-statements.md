@@ -1,5 +1,5 @@
 ---
-title: "F-P Statements | Microsoft Docs"
+title: "F-P Statements"
 
 ms.date: "2015-07-20"
 ms.prod: .net

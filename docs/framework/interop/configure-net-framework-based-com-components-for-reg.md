@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation | Microsoft Docs"
+title: "How to: Configure .NET Framework-Based COM Components for Registration-Free Activation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

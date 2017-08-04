@@ -1,5 +1,5 @@
 ---
-title: "UI Automation Threading Issues | Microsoft Docs"
+title: "UI Automation Threading Issues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

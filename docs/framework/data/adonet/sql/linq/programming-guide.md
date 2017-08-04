@@ -1,5 +1,5 @@
 ---
-title: "Programming Guide | Microsoft Docs"
+title: "Programming Guide"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

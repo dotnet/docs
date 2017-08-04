@@ -1,5 +1,5 @@
 ---
-title: "Root folder cannot be renamed | Microsoft Docs"
+title: "Root folder cannot be renamed"
 
 ms.date: "2015-07-20"
 ms.prod: .net

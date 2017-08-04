@@ -1,5 +1,5 @@
 ---
-title: "Configuring Bindings for Windows Communication Foundation Services | Microsoft Docs"
+title: "Configuring Bindings for Windows Communication Foundation Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

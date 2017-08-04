@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms | Microsoft Docs"
+title: "Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -51,7 +51,7 @@ This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient]
   
      This code defines a <xref:System.Windows.Controls.UserControl?displayProperty=fullName> that contains two child controls. The first child control is a <xref:System.Windows.Controls.Label?displayProperty=fullName> control; the second is a <xref:System.Windows.Controls.Viewport3D> control that displays a 3-D cone.  
   
-     [!code-xml[HostingWpfUserControlInWf#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
+     [!code-xaml[HostingWpfUserControlInWf#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWpfUserControlInWf/CSharp/HostingWpfUserControlInWf/ConeControl.xaml#1)]  
   
 <a name="To_Create_the_Windows_Forms_Host_Project"></a>   
 ## Creating the Windows Forms Host Project  

@@ -1,5 +1,5 @@
 ---
-title: "Data Templating Overview | Microsoft Docs"
+title: "Data Templating Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -36,9 +36,9 @@ The WPF data templating model provides you with great flexibility to define the 
   
  To demonstrate why <xref:System.Windows.DataTemplate> is important, let's walk through a data binding example. In this example, we have a <xref:System.Windows.Controls.ListBox> that is bound to a list of `Task` objects. Each `Task` object has a `TaskName` (string), a `Description` (string), a `Priority` (int), and a property of type `TaskType`, which is an `Enum` with values `Home` and `Work`.  
   
- [!code-xml[DataTemplatingIntro_snip#Resources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#resources)]  
-[!code-xml[DataTemplatingIntro_snip#UI1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#ui1)]  
-[!code-xml[DataTemplatingIntro_snip#UI2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#ui2)]  
+ [!code-xaml[DataTemplatingIntro_snip#Resources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#resources)]  
+[!code-xaml[DataTemplatingIntro_snip#UI1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#ui1)]  
+[!code-xaml[DataTemplatingIntro_snip#UI2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#ui2)]  
   
 <a name="without_a_datatemplate"></a>   
 ### Without a DataTemplate  
@@ -63,7 +63,7 @@ The WPF data templating model provides you with great flexibility to define the 
 ### Defining a Simple DataTemplate  
  The solution is to define a <xref:System.Windows.DataTemplate>. One way to do that is to set the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property of the <xref:System.Windows.Controls.ListBox> to a <xref:System.Windows.DataTemplate>. What you specify in your <xref:System.Windows.DataTemplate> becomes the visual structure of your data object. The following <xref:System.Windows.DataTemplate> is fairly simple. We are giving instructions that each item appears as three <xref:System.Windows.Controls.TextBlock> elements within a <xref:System.Windows.Controls.StackPanel>. Each <xref:System.Windows.Controls.TextBlock> element is bound to a property of the `Task` class.  
   
- [!code-xml[DataTemplatingIntro_snip#Inline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]  
+ [!code-xaml[DataTemplatingIntro_snip#Inline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]  
   
  The underlying data for the examples in this topic is a collection of [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] objects. If you are binding to [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, the fundamental concepts are the same, but there is a slight syntactic difference. For example, instead of having `Path=TaskName`, you would set <xref:System.Windows.Data.Binding.XPath%2A> to `@TaskName` (if `TaskName` is an attribute of your [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] node).  
   
@@ -75,13 +75,13 @@ The WPF data templating model provides you with great flexibility to define the 
 ### Creating the DataTemplate as a Resource  
  In the above example, we defined the <xref:System.Windows.DataTemplate> inline. It is more common to define it in the resources section so it can be a reusable object, as in the following example:  
   
- [!code-xml[DataTemplatingIntro_snip#R1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
-[!code-xml[DataTemplatingIntro_snip#AsResource](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#asresource)]  
-[!code-xml[DataTemplatingIntro_snip#R2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
+ [!code-xaml[DataTemplatingIntro_snip#R1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
+[!code-xaml[DataTemplatingIntro_snip#AsResource](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#asresource)]  
+[!code-xaml[DataTemplatingIntro_snip#R2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
   
  Now you can use `myTaskTemplate` as a resource, as in the following example:  
   
- [!code-xml[DataTemplatingIntro_snip#MyTaskTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#mytasktemplate)]  
+ [!code-xaml[DataTemplatingIntro_snip#MyTaskTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#mytasktemplate)]  
   
  Because `myTaskTemplate` is a resource, you can now use it on other controls that have a property that takes a <xref:System.Windows.DataTemplate> type. As shown above, for <xref:System.Windows.Controls.ItemsControl> objects, such as the <xref:System.Windows.Controls.ListBox>, it is the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property. For <xref:System.Windows.Controls.ContentControl> objects, it is the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.  
   
@@ -89,7 +89,7 @@ The WPF data templating model provides you with great flexibility to define the 
 ### The DataType Property  
  The <xref:System.Windows.DataTemplate> class has a <xref:System.Windows.DataTemplate.DataType%2A> property that is very similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style> class. Therefore, instead of specifying an `x:Key` for the <xref:System.Windows.DataTemplate> in the above example, you can do the following:  
   
- [!code-xml[DataTemplatingIntro_snip#DataType](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#datatype)]  
+ [!code-xaml[DataTemplatingIntro_snip#DataType](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#datatype)]  
   
  This <xref:System.Windows.DataTemplate> gets applied automatically to all `Task` objects. Note that in this case the `x:Key` is set implicitly. Therefore, if you assign this <xref:System.Windows.DataTemplate> an `x:Key` value, you are overriding the implicit `x:Key` and the <xref:System.Windows.DataTemplate> would not be applied automatically.  
   
@@ -101,8 +101,8 @@ The WPF data templating model provides you with great flexibility to define the 
 ## Adding More to the DataTemplate  
  Currently the data appears with the necessary information, but there's definitely room for improvement. Let's improve on the presentation by adding a <xref:System.Windows.Controls.Border>, a <xref:System.Windows.Controls.Grid>, and some <xref:System.Windows.Controls.TextBlock> elements that describe the data that is being displayed.  
   
- [!code-xml[DataTemplatingIntro#AddingMore](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore)]  
-[!code-xml[DataTemplatingIntro#AddingMore2](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
+ [!code-xaml[DataTemplatingIntro#AddingMore](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore)]  
+[!code-xaml[DataTemplatingIntro#AddingMore2](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
   
  The following screenshot shows the <xref:System.Windows.Controls.ListBox> with this modified <xref:System.Windows.DataTemplate>:  
   
@@ -110,7 +110,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  We can set <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> to <xref:System.Windows.HorizontalAlignment.Stretch> on the <xref:System.Windows.Controls.ListBox> to make sure the width of the items takes up the entire space:  
   
- [!code-xml[DataTemplatingIntro_snip#Stretch](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#stretch)]  
+ [!code-xaml[DataTemplatingIntro_snip#Stretch](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#stretch)]  
   
  With the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property set to <xref:System.Windows.HorizontalAlignment.Stretch>, the <xref:System.Windows.Controls.ListBox> now looks like this:  
   
@@ -122,9 +122,9 @@ The WPF data templating model provides you with great flexibility to define the 
   
  In the following example, the <xref:System.Windows.DataTrigger> sets the <xref:System.Windows.Controls.Border.BorderBrush%2A> of the element named `border` to `Yellow` if the `TaskType` property is `TaskType.Home`.  
   
- [!code-xml[DataTemplatingIntro#DT](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#dt)]  
-[!code-xml[DataTemplatingIntro#DataTrigger](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#datatrigger)]  
-[!code-xml[DataTemplatingIntro#AddingMore2](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
+ [!code-xaml[DataTemplatingIntro#DT](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#dt)]  
+[!code-xaml[DataTemplatingIntro#DataTrigger](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#datatrigger)]  
+[!code-xaml[DataTemplatingIntro#AddingMore2](../../../../samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore2)]  
   
  Our application now looks like the following. Home tasks appear with a yellow border and office tasks appear with an aqua border:  
   
@@ -146,7 +146,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  For example, when a `Task` object has a `Priority` value of `1`, you may want to give it a completely different look to serve as an alert for yourself. In that case, you create a <xref:System.Windows.DataTemplate> for the display of the high-priority `Task` objects. Let's add the following <xref:System.Windows.DataTemplate> to the resources section:  
   
- [!code-xml[DataTemplatingIntro_snip#ImportantTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#importanttemplate)]  
+ [!code-xaml[DataTemplatingIntro_snip#ImportantTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#importanttemplate)]  
   
  Notice this example uses the <xref:System.Windows.DataTemplate>.<xref:System.Windows.FrameworkTemplate.Resources%2A> property. Resources defined in that section are shared by the elements within the <xref:System.Windows.DataTemplate>.  
   
@@ -157,13 +157,13 @@ The WPF data templating model provides you with great flexibility to define the 
   
  We can then declare the `TaskListDataTemplateSelector` as a resource:  
   
- [!code-xml[DataTemplatingIntro_snip#R1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
-[!code-xml[DataTemplatingIntro_snip#DTS](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#dts)]  
-[!code-xml[DataTemplatingIntro_snip#R2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
+ [!code-xaml[DataTemplatingIntro_snip#R1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
+[!code-xaml[DataTemplatingIntro_snip#DTS](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#dts)]  
+[!code-xaml[DataTemplatingIntro_snip#R2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
   
  To use the template selector resource, assign it to the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property of the <xref:System.Windows.Controls.ListBox>. The <xref:System.Windows.Controls.ListBox> calls the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of the `TaskListDataTemplateSelector` for each of the items in the underlying collection. The call passes the data object as the item parameter. The <xref:System.Windows.DataTemplate> that is returned by the method is then applied to that data object.  
   
- [!code-xml[DataTemplatingIntro_snip#ItemTemplateSelector](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemtemplateselector)]  
+ [!code-xaml[DataTemplatingIntro_snip#ItemTemplateSelector](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemtemplateselector)]  
   
  With the template selector in place, the <xref:System.Windows.Controls.ListBox> now appears as follows:  
   
@@ -175,7 +175,7 @@ The WPF data templating model provides you with great flexibility to define the 
 ## Styling and Templating an ItemsControl  
  Even though the <xref:System.Windows.Controls.ItemsControl> is not the only control type that you can use a <xref:System.Windows.DataTemplate> with, it is a very common scenario to bind an <xref:System.Windows.Controls.ItemsControl> to a collection. In the [What Belongs in a DataTemplate](#what_belongs_in_datatemplate) section we discussed that the definition of your <xref:System.Windows.DataTemplate> should only be concerned with the presentation of data. In order to know when it is not suitable to use a <xref:System.Windows.DataTemplate> it is important to understand the different style and template properties provided by the <xref:System.Windows.Controls.ItemsControl>. The following example is designed to illustrate the function of each of these properties. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to the same `Tasks` collection as in the previous example. For demonstration purposes, the styles and templates in this example are all declared inline.  
   
- [!code-xml[DataTemplatingIntro_snip#ItemsControlProperties](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]  
+ [!code-xaml[DataTemplatingIntro_snip#ItemsControlProperties](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]  
   
  The following is a screenshot of the example when it is rendered:  
   
@@ -189,7 +189,7 @@ The WPF data templating model provides you with great flexibility to define the 
 ## Support for Hierarchical Data  
  So far we have only looked at how to bind to and display a single collection. Sometimes you have a collection that contains other collections. The <xref:System.Windows.HierarchicalDataTemplate> class is designed to be used with <xref:System.Windows.Controls.HeaderedItemsControl> types to display such data. In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
   
- [!code-xml[HierarchicalDataTemplateSnippet#HDT](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]  
+ [!code-xaml[HierarchicalDataTemplateSnippet#HDT](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]  
   
  The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
   

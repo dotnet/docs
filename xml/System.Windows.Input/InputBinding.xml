@@ -42,7 +42,7 @@
 ## Examples  
  The following example shows how to use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to the <xref:System.Windows.Input.ApplicationCommands.Open%2A> command. When the key gesture is performed, the Open command is invoked.  
   
- [!code-xml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
+ [!code-xaml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
  The following examples show how to bind a custom command to <xref:System.Windows.Input.InputBinding> objects. These examples create an application that enables the user to change the background color by performing one of the following actions:  
   
@@ -64,7 +64,7 @@
   
  Finally, the following example creates the user interface. The example adds a <xref:System.Windows.Input.KeyBinding> and a <xref:System.Windows.Input.MouseBinding> to a <xref:System.Windows.Controls.StackPanel> that contains a <xref:System.Windows.Controls.Button> and a <xref:System.Windows.Controls.ListBox>. When the user selects an item in the <xref:System.Windows.Controls.ListBox>, he or she can change the color of the background to the selected color. In each case, the `CommandParameter` property is bound to the selected item in the <xref:System.Windows.Controls.ListBox>, and the `Command` property is bound to the `ColorChangeCommand`. The <xref:System.Windows.Input.KeyBinding.Key%2A?displayProperty=fullName>, <xref:System.Windows.Input.KeyBinding.Modifiers%2A?displayProperty=fullName>, and <xref:System.Windows.Input.MouseBinding.MouseAction%2A?displayProperty=fullName> properties are bound to the corresponding properties on the `SimpleDelegateCommand` class.  
   
- [!code-xml[InputCommandBinding#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/inputcommandbinding/csharp/mainwindow.xaml#ui)]  
+ [!code-xaml[InputCommandBinding#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/inputcommandbinding/csharp/mainwindow.xaml#ui)]  
   
  ]]></format>
     </remarks>
@@ -238,7 +238,7 @@
 ## Examples  
  The following example shows how to use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to the <xref:System.Windows.Input.ApplicationCommands.Open%2A?displayProperty=fullName> command. When the key gesture is performed, the Open command is invoked.  
   
- [!code-xml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
+ [!code-xaml[commandingoverviewsnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
  [!code-csharp[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewkeybinding)]
  [!code-vb[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewkeybinding)]  
@@ -486,7 +486,7 @@
 ## Examples  
  The following example shows how to use a <xref:System.Windows.Input.KeyBinding> to bind a <xref:System.Windows.Input.KeyGesture> to a <xref:System.Windows.Input.RoutedCommand>. When the <xref:System.Windows.Input.KeyGesture> ALT+L is pressed, the <xref:System.Windows.Input.ApplicationCommands.Close%2A> command is invoked.  
   
- [!code-xml[commandlibrarysnippets#KeyBindingWithKeyAndModifiersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#keybindingwithkeyandmodifiersxaml)]  
+ [!code-xaml[commandlibrarysnippets#KeyBindingWithKeyAndModifiersXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml#keybindingwithkeyandmodifiersxaml)]  
   
  [!code-csharp[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#keybindingwithkeyandmodifiers)]
  [!code-vb[commandlibrarysnippets#KeyBindingWithKeyAndModifiers](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#keybindingwithkeyandmodifiers)]  

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.CommunicationObjectOpened | Microsoft Docs"
+title: "System.ServiceModel.CommunicationObjectOpened"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

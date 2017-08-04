@@ -1,5 +1,5 @@
 ---
-title: "Statement is not valid in a namespace | Microsoft Docs"
+title: "Statement is not valid in a namespace"
 
 ms.date: "2015-07-20"
 ms.prod: .net

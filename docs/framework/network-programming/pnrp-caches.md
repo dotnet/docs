@@ -1,5 +1,5 @@
 ---
-title: "PNRP Caches | Microsoft Docs"
+title: "PNRP Caches"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

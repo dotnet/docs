@@ -106,7 +106,6 @@ namespace VSMCustomControl
             {
                 VisualStateManager.GoToState(this, "Unfocused", useTransitions);
             }
-
         }
         //</SnippetUpdateStates>
 

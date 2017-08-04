@@ -1,5 +1,5 @@
 ---
-title: "How to: Drag and Drop Ink | Microsoft Docs"
+title: "How to: Drag and Drop Ink"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,7 +26,7 @@ manager: "wpickett"
 ## Example  
  The following example creates an application that enables the user to drag selected strokes from one <xref:System.Windows.Controls.InkCanvas> to the other.  
   
- [!code-xml[InkDragDrop#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml#1)]  
+ [!code-xaml[InkDragDrop#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml#1)]  
   
  [!code-csharp[InkDragDrop#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml.cs#2)]
  [!code-vb[InkDragDrop#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InkDragDrop/VisualBasic/Window1.xaml.vb#2)]

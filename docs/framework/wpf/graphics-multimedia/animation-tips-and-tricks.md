@@ -1,5 +1,5 @@
 ---
-title: "Animation Tips and Tricks | Microsoft Docs"
+title: "Animation Tips and Tricks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,6 @@ manager: "wpickett"
 # Animation Tips and Tricks
 When working with animations in              [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], there are a number of tips and tricks that can make your animations perform better and save you frustration.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="generalissuessection"></a>   
 ## General Issues  
   
@@ -58,7 +57,7 @@ When working with animations in              [!INCLUDE[TLA2#tla_wpf](../../../..
   
  The following example creates a                          <xref:System.Windows.Controls.Canvas>, a                          <xref:System.Windows.Shapes.Rectangle> and a                          <xref:System.Windows.Media.TranslateTransform>. The                          <xref:System.Windows.Media.TranslateTransform> will be animated to move the                          <xref:System.Windows.Shapes.Rectangle> around the                          <xref:System.Windows.Controls.Canvas>.  
   
- [!code-xml[AnimationTipsAndTricksSample_snip#FillBehaviorTipAnimatedObject](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipanimatedobject)]  
+ [!code-xaml[AnimationTipsAndTricksSample_snip#FillBehaviorTipAnimatedObject](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipanimatedobject)]  
   
  The examples in this section use the preceding objects to demonstrate several cases where the                          <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property doesn't behave as you might expect it to.  
   
@@ -67,11 +66,11 @@ When working with animations in              [!INCLUDE[TLA2#tla_wpf](../../../..
   
  The first                                  <xref:System.Windows.Media.Animation.Storyboard>,                                  `B1`, animates the                                  <xref:System.Windows.Media.TranslateTransform.X%2A> property of the                                  <xref:System.Windows.Media.TranslateTransform> from 0 to 350, which moves the rectangle 350 pixels to the right. When the animation reaches the end of its duration and stops playing, the                                  <xref:System.Windows.Media.TranslateTransform.X%2A> property reverts to its original value, 0. As a result, the rectangle moves to the right 350 pixels and then jumps back to its original position.  
   
- [!code-xml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardB1Button](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardb1button)]  
+ [!code-xaml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardB1Button](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardb1button)]  
   
  The second                                  <xref:System.Windows.Media.Animation.Storyboard>,                                  `B2`, also animates the                                  <xref:System.Windows.Media.TranslateTransform.X%2A> property of the same                                  <xref:System.Windows.Media.TranslateTransform>. Because only the                                  <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property of the animation in this                                  <xref:System.Windows.Media.Animation.Storyboard> is set, the animation uses the current value of the property it animates as its starting value.  
   
- [!code-xml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardB2Button](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardb2button)]  
+ [!code-xaml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardB2Button](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardb2button)]  
   
  If you click the second button while the first                                  <xref:System.Windows.Media.Animation.Storyboard> is playing, you might expect the following behavior:  
   
@@ -84,7 +83,7 @@ When working with animations in              [!INCLUDE[TLA2#tla_wpf](../../../..
 #### FillBehavior and the Completed Event  
  The next examples demonstrate another scenario in which the                                  <xref:System.Windows.Media.Animation.FillBehavior.Stop><xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> seems to have no effect. Again, the example uses a Storyboard to animate the                                  <xref:System.Windows.Media.TranslateTransform.X%2A> property of the                                  <xref:System.Windows.Media.TranslateTransform> from 0 to 350. However, this time the example registers for the                                  <xref:System.Windows.Media.Animation.Timeline.Completed> event.  
   
- [!code-xml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardCButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardcbutton)]  
+ [!code-xaml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardCButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardcbutton)]  
   
  The                                  <xref:System.Windows.Media.Animation.Timeline.Completed> event handler starts another                                  <xref:System.Windows.Media.Animation.Storyboard> that animates the same property from its current value to 500.  
   
@@ -93,7 +92,7 @@ When working with animations in              [!INCLUDE[TLA2#tla_wpf](../../../..
   
  The following is the markup that defines the second                                  <xref:System.Windows.Media.Animation.Storyboard> as a resource.  
   
- [!code-xml[AnimationTipsAndTricksSample_snip#FillBehaviorTipResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipresources)]  
+ [!code-xaml[AnimationTipsAndTricksSample_snip#FillBehaviorTipResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipresources)]  
   
  When you run the                                  <xref:System.Windows.Media.Animation.Storyboard>, you might expect the                                  <xref:System.Windows.Media.TranslateTransform.X%2A> property of the                                  <xref:System.Windows.Media.TranslateTransform> to animate from 0 to 350, then revert to 0 after it completes (because it has a                                  <xref:System.Windows.Media.Animation.FillBehavior> setting of                                  <xref:System.Windows.Media.Animation.FillBehavior.Stop>), and then animate from 0 to 500. Instead, the                                  <xref:System.Windows.Media.TranslateTransform> animates from 0 to 350 and then to 500.  
   

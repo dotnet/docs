@@ -1,5 +1,5 @@
 ---
-title: "How to: Enumerate Stores for Isolated Storage | Microsoft Docs"
+title: "How to: Enumerate Stores for Isolated Storage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

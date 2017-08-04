@@ -1,5 +1,5 @@
 ---
-title: "!= (Not Equal To) (Entity SQL) | Microsoft Docs"
+title: "!= (Not Equal To) (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "The Shape of the Command Trees | Microsoft Docs"
+title: "The Shape of the Command Trees"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintJobStatus op_Implicit (System.Printing.IndexedProperties.PrintJobStatusProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintJobStatus (System.Printing.IndexedProperties.PrintJobStatusProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintJobStatus op_Implicit(class System.Printing.IndexedProperties.PrintJobStatusProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintJobStatusProperty.op_Implicit(System.Printing.IndexedProperties.PrintJobStatusProperty)~System.Printing.PrintJobStatus" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintJobStatus op_Implicit (System.Printing.IndexedProperties.PrintJobStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintJobStatus (System.Printing.IndexedProperties.PrintJobStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintJobStatus op_Implicit(class System.Printing.IndexedProperties.PrintJobStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintJobStatusProperty.op_Implicit(System.Printing.IndexedProperties.PrintJobStatusProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintJobStatus" />
       <MemberType>Method</MemberType>

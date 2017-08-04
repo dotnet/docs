@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate the Color or Opacity of a SolidColorBrush | Microsoft Docs"
+title: "How to: Animate the Color or Opacity of a SolidColorBrush"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle a Routed Event | Microsoft Docs"
+title: "How to: Handle a Routed Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,7 +30,7 @@ This example shows how bubbling events work and how to write a handler that can 
   
  Note that on the parent <xref:System.Windows.Controls.StackPanel> element, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event name specified as the attribute is partially qualified by naming the <xref:System.Windows.Controls.Button> class. The <xref:System.Windows.Controls.Button> class is a <xref:System.Windows.Controls.Primitives.ButtonBase> derived class that has the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event in its members listing. This partial qualification technique for attaching an event handler is necessary if the event that is being handled does not exist in the members listing of the element where the routed event handler is attached.  
   
- [!code-xml[RoutedEventHandle#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml#xaml)]  
+ [!code-xaml[RoutedEventHandle#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventHandle/CSharp/default.xaml#xaml)]  
   
  The following example handles the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  The example reports which element handles the event and which element raises the event. The event handler is executed when the user clicks either button.  
   

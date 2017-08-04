@@ -1031,7 +1031,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Addition (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator + (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Addition(valuetype System.Numerics.Vector3 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Addition(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1073,7 +1073,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Division (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator / (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Division(valuetype System.Numerics.Vector3 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Division(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1115,7 +1115,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Division (System.Numerics.Vector3 value1, float value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator / (System.Numerics.Vector3 value1, float value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Division(valuetype System.Numerics.Vector3 value1, float32 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Division(System.Numerics.Vector3,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1157,7 +1157,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Vector3 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Equality(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1200,7 +1200,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Vector3 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Inequality(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1236,7 +1236,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Multiply (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator * (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Multiply(valuetype System.Numerics.Vector3 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Multiply(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1278,7 +1278,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Multiply (System.Numerics.Vector3 left, float right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator * (System.Numerics.Vector3 left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Multiply(valuetype System.Numerics.Vector3 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Multiply(System.Numerics.Vector3,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1320,7 +1320,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Multiply (float left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator * (float left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Multiply(float32 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Multiply(System.Single,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1362,7 +1362,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_Subtraction (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator - (System.Numerics.Vector3 left, System.Numerics.Vector3 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_Subtraction(valuetype System.Numerics.Vector3 left, valuetype System.Numerics.Vector3 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_Subtraction(System.Numerics.Vector3,System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>
@@ -1404,7 +1404,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 op_UnaryNegation (System.Numerics.Vector3 value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 operator - (System.Numerics.Vector3 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector3 op_UnaryNegation(valuetype System.Numerics.Vector3 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector3.op_UnaryNegation(System.Numerics.Vector3)" />
       <MemberType>Method</MemberType>

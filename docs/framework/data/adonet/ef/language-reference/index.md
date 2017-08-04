@@ -1,5 +1,5 @@
 ---
-title: "Entity SQL Language Reference | Microsoft Docs"
+title: "Entity SQL Language Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

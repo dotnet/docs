@@ -1,13 +1,11 @@
 ---
-title: "XML Element Literal (Visual Basic) | Microsoft Docs"
-
+title: "XML Element Literal (Visual Basic)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.XmlLiteralElement"
@@ -21,7 +19,6 @@ ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -38,6 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # XML Element Literal (Visual Basic)
+
 A literal that represents an <xref:System.Xml.Linq.XElement> object.  
   
 ## Syntax  
@@ -58,14 +56,14 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
      Required. Name of the element. The format is one of the following:  
   
-    -   Literal text for the element name, of the form [`ePrefix``:`]`eName`, where:  
+    -   Literal text for the element name, of the form `[ePrefix:]eName`, where:  
   
         |Part|Description|  
         |---|---|  
         |`ePrefix`|Optional. XML namespace prefix for the element. Must be a global XML namespace that is defined with an `Imports` statement in the file or at the project level, or a local XML namespace that is defined in this element or a parent element.|  
-        |`eName`|Required. Name of the element. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%=` e`NameExp` `%>`. The type of `eNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
+        |`eName`|Required. Name of the element. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%= eNameExp %>`. The type of `eNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
   
-    -   Embedded expression of the form `<%=` `nameExp` `%>`. The type of `nameExp` must be `String` or a type implicitly convertible to <xref:System.Xml.Linq.XName>. An embedded expression is not allowed in a closing tag of an element.  
+    -   Embedded expression of the form `<%= nameExp %>`. The type of `nameExp` must be `String` or a type implicitly convertible to <xref:System.Xml.Linq.XName>. An embedded expression is not allowed in a closing tag of an element.  
   
 -   `attributeList`  
   
@@ -75,15 +73,15 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
      Each `attribute` has one of the following syntaxes:  
   
-    -   Attribute assignment, of the form [`aPrefix``:`]`aName``=``aValue`, where:  
+    -   Attribute assignment, of the form `[aPrefix:]aName=aValue`, where:  
   
         |Part|Description|  
         |---|---|  
         |`aPrefix`|Optional. XML namespace prefix for the attribute. Must be a global XML namespace that is defined with an `Imports` statement, or a local XML namespace that is defined in this element or a parent element.|  
-        |`aName`|Required. Name of the attribute. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%=` `aNameExp` `%>`. The type of `aNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
-        |`aValue`|Optional. Value of the attribute. The format is one of the following:<br /><br /> -   Literal text, enclosed in quotation marks.<br />-   Embedded expression of the form `<%=` `aValueExp` `%>`. Any type is allowed.|  
+        |`aName`|Required. Name of the attribute. The format is one of the following:<br /><br /> -   Literal text. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-   Embedded expression of the form `<%= aNameExp %>`. The type of `aNameExp` must be `String` or a type that is implicitly convertible to <xref:System.Xml.Linq.XName>.|  
+        |`aValue`|Optional. Value of the attribute. The format is one of the following:<br /><br /> -   Literal text, enclosed in quotation marks.<br />-   Embedded expression of the form `<%= aValueExp %>`. Any type is allowed.|  
   
-    -   Embedded expression of the form `<%=` `aExp` `%>`.  
+    -   Embedded expression of the form `<%= aExp %>`.  
   
 -   `/>`  
   
@@ -103,7 +101,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
     -   Literal text. All the white space in `elementContents` becomes significant if there is any literal text.  
   
-    -   Embedded expression of the form `<%=` `contentExp` `%>`.  
+    -   Embedded expression of the form `<%= contentExp %>`.  
   
     -   XML element literal.  
   
@@ -113,7 +111,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
     -   XML CDATA literal. See [XML CDATA Literal](../../../visual-basic/language-reference/xml-literals/xml-cdata-literal.md).  
   
--   `</`[`name`]`>`  
+-   `</[name]>`  
   
      Optional. Represents the closing tag for the element. The optional `name` parameter is not allowed when it is the result of an embedded expression.  
   
@@ -126,12 +124,12 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
 > [!NOTE]
 >  An XML literal can span multiple lines without using line continuation characters. This feature enables you to copy content from an XML document and paste it directly into a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] program.  
   
- Embedded expressions of the form `<%=` `exp` `%>` enable you to add dynamic information to an XML element literal. For more information, see [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md).  
+ Embedded expressions of the form `<%= exp %>` enable you to add dynamic information to an XML element literal. For more information, see [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md).  
   
  The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler converts the XML element literal into calls to the <xref:System.Xml.Linq.XElement.%23ctor%2A> constructor and, if it is required, the <xref:System.Xml.Linq.XAttribute.%23ctor%2A> constructor.  
   
 ## XML Namespaces  
- XML namespace prefixes are useful when you have to create XML literals with elements from the same namespace many times in code. You can use global XML namespace prefixes, which you define by using the `Imports` statement, or local prefixes, which you define by using the `xmlns:``xmlPrefix`="`xmlNamespace`" attribute syntax. For more information, see [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md).  
+ XML namespace prefixes are useful when you have to create XML literals with elements from the same namespace many times in code. You can use global XML namespace prefixes, which you define by using the `Imports` statement, or local prefixes, which you define by using the `xmlns:xmlPrefix="xmlNamespace"` attribute syntax. For more information, see [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md).  
   
  In accordance with the scoping rules for XML namespaces, local prefixes take precedence over global prefixes. However, if an XML literal defines an XML namespace, that namespace is not available to expressions that appear in an embedded expression. The embedded expression can access only the global XML namespace.  
   

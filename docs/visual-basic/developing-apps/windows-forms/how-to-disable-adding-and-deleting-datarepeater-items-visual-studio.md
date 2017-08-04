@@ -1,5 +1,5 @@
 ---
-title: "How to: Disable Adding and Deleting DataRepeater Items (Visual Studio) | Microsoft Docs"
+title: "How to: Disable Adding and Deleting DataRepeater Items (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

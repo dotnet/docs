@@ -1,5 +1,5 @@
 ---
-title: "Methods of &#39;System.Nullable(Of T)&#39; cannot be used as operands of the &#39;AddressOf&#39; operator | Microsoft Docs"
+title: "Methods of &#39;System.Nullable(Of T)&#39; cannot be used as operands of the &#39;AddressOf&#39; operator"
 
 ms.date: "2015-07-20"
 ms.prod: .net

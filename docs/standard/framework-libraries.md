@@ -1,6 +1,6 @@
 ---
-title: Framework Libraries | Microsoft Docs
-description: Framework Libraries
+title: Framework Libraries
+description: Learn how libraries provide implementations for many general and app-specific types, algorithms, and utility functionality.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: ronpet

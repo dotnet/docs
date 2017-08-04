@@ -1,5 +1,5 @@
 ---
-title: "Compiled XPath Expressions | Microsoft Docs"
+title: "Compiled XPath Expressions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

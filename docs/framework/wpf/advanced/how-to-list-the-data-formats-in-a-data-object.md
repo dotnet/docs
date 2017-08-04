@@ -1,5 +1,5 @@
 ---
-title: "How to: List the Data Formats in a Data Object | Microsoft Docs"
+title: "How to: List the Data Formats in a Data Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

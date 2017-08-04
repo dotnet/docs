@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The exception that is thrown when composition problems occur.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +29,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:CompositionFailedException" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,9 +48,10 @@
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A message that contains information about the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.CompositionFailedException" /> class with the specified message.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,10 +69,11 @@
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="innerException">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="message">A message that contains information about the exception.</param>
+        <param name="innerException">The inner exception to wrap in this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.CompositionFailedException" /> class with the specified message and inner exception.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

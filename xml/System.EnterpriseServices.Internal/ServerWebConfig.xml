@@ -15,8 +15,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Creates a Web.config file for a SOAP-enabled COM+ application. Can also add component entries to the file for COM interfaces being published in the application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.ServerWebConfig> class is used to create a Web.config file during creation of a virtual root in Internet Information Services (IIS) 6.0 for a SOAP-enabled COM+ application. It also can add XML elements to the Web.config file for component interfaces being added to the application.  
+  
+ <xref:System.EnterpriseServices.Internal.ServerWebConfig> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +40,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.ServerWebConfig" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddElement">
@@ -55,14 +66,28 @@
         <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="FilePath">To be added.</param>
-        <param name="AssemblyName">To be added.</param>
-        <param name="TypeName">To be added.</param>
-        <param name="ProgId">To be added.</param>
-        <param name="WkoMode">To be added.</param>
-        <param name="Error">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="FilePath">The path of the existing Web.config file.</param>
+        <param name="AssemblyName">The name of the assembly that contains the type being added.</param>
+        <param name="TypeName">The name of the type being added.</param>
+        <param name="ProgId">The programmatic identifier for the type being added.</param>
+        <param name="WkoMode">A string constant that corresponds to the name of a member from the <see cref="T:System.Runtime.Remoting.WellKnownObjectMode" /> enumeration, which indicates how a well-known object is activated.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Adds XML elements to a Web.config file for a COM interface being published in a SOAP-enabled COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the specified type, the <xref:System.EnterpriseServices.Internal.ServerWebConfig.AddElement%2A> method adds to the Web.config file the `<wellknown>` and `<activated>` elements as children of the `<service>` element with the following XPath:  
+  
+ `/configuration/system.runtime.remoting/application/service`  
+  
+ The `AssemblyName`, `TypeName`, `ProgId`, and `WkoMode` parameters are incorporated into the attribute values of the two added elements.  
+  
+ <xref:System.EnterpriseServices.Internal.ServerWebConfig.AddElement%2A> should not be called directly. Instead, call the <xref:System.EnterpriseServices.Internal.Publish.ProcessServerTlb%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -83,11 +108,25 @@
         <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="FilePath">To be added.</param>
-        <param name="FilePrefix">To be added.</param>
-        <param name="Error">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="FilePath">The folder in which the configuration file should be created.</param>
+        <param name="FilePrefix">The string value "Web", to which a config extension is added.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Creates a Web.config file for a SOAP-enabled COM+ application so that the file is ready to have XML elements added for COM interfaces being published.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.ServerWebConfig.Create%2A> method creates a Web.config file that contains the hierarchy for an empty element with the following XPath:  
+  
+```  
+/configuration/system.runtime.remoting/application/service  
+```  
+  
+ Instead of instantiating a <xref:System.EnterpriseServices.Internal.ServerWebConfig> class object and calling <xref:System.EnterpriseServices.Internal.ServerWebConfig.Create%2A> directly, call the <xref:System.EnterpriseServices.Internal.Publish.CreateVirtualRoot%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 ---
-title: "Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39; | Microsoft Docs"
+title: "Value of type &#39;type1&#39; cannot be converted to &#39;type2&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

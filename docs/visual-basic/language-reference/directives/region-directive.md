@@ -1,5 +1,5 @@
 ---
-title: "#Region Directive | Microsoft Docs"
+title: "#Region Directive"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -66,5 +66,5 @@ Collapses and hides sections of code in Visual Basic files.
   
 ## See Also  
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining)   
+ [Outlining](/visualstudio/ide/outlining)   
  [How to: Collapse and Hide Sections of Code](../../../visual-basic/programming-guide/program-structure/how-to-collapse-and-hide-sections-of-code.md)

@@ -19,10 +19,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <typeparam name="TMetadata">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the created part.</typeparam>
+    <typeparam name="TMetadata">The metadata for the type of the created part.</typeparam>
+    <summary>A factory that creates new instances of a part that provides the specified export, with attached metadata.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,10 +41,11 @@
         <Parameter Name="metadata" Type="TMetadata" />
       </Parameters>
       <Docs>
-        <param name="exportCreator">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exportCreator">A function that returns the exported value in <see cref="M:System.Tuple&lt;T1,T2&gt;.Item1" /> and an <see cref="T:System.Action" /> that releases it in <see cref="M:System.Tuple&lt;T1,T2&gt;.Item2" />.</param>
+        <param name="metadata">The metadata to attach to the created parts.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportFactory&lt;T,TMetadata&gt;" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -60,9 +62,10 @@
         <ReturnType>TMetadata</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metadata to be attached to the created parts.</summary>
+        <value>A metadata object that will be attached to the created parts.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

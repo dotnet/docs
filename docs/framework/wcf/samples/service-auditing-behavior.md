@@ -1,5 +1,5 @@
 ---
-title: "Service Auditing Behavior | Microsoft Docs"
+title: "Service Auditing Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

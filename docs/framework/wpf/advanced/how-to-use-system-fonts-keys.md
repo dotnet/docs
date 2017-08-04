@@ -1,5 +1,5 @@
 ---
-title: "How to: Use System Fonts Keys | Microsoft Docs"
+title: "How to: Use System Fonts Keys"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,7 +30,7 @@ System resources expose a number of system metrics as resources to help develope
  The following example shows how to access and use system font dynamic resources to style or customize a button. This              [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example creates a button style that assigns              <xref:System.Windows.SystemFonts> values to a button.  
   
 ## Example  
- [!code-xml[SystemRes_snip#FontDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#fontdynamicresources)]  
+ [!code-xaml[SystemRes_snip#FontDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#fontdynamicresources)]  
   
 ## See Also  
  [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)   

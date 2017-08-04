@@ -1,5 +1,5 @@
 ---
-title: "Locale ID &#39;&lt;name&gt;&#39; is not supported on this system | Microsoft Docs"
+title: "Locale ID &#39;&lt;name&gt;&#39; is not supported on this system"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -41,4 +41,4 @@ You are attempting to use `VbStrConv`, but your system does not support the spec
   
 ## See Also  
  <xref:System.Globalization>   
- [Introduction to International Applications Based on the .NET Framework](https://docs.microsoft.com/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

@@ -1,5 +1,5 @@
 ---
-title: "illegalPrepareConstrainedRegion MDA | Microsoft Docs"
+title: "illegalPrepareConstrainedRegion MDA"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -36,7 +36,7 @@ The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activ
  The preparation pattern for a CER is not followed correctly.  This is an error event. The <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A>method call used to mark exception handlers as introducing a CER in their `catch`/`finally`/`fault`/`filter` blocks must be used immediately before the `try` statement.  
   
 ## Resolution  
- Ensure that the call to <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> happens immediately before the `try`statement.  
+ Ensure that the call to <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> happens immediately before the `try` statement.  
   
 ## Effect on the Runtime  
  This MDA has no effect on the CLR.  

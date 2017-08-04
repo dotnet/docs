@@ -1,5 +1,5 @@
 ---
-title: "Option Compare Statement | Microsoft Docs"
+title: "Option Compare Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -70,7 +70,7 @@ Option Compare { Binary | Text }
   
  A `Binary` comparison compares the numeric Unicode value of each character in each string. A `Text` comparison compares each Unicode character based on its lexical meaning in the current culture.  
   
- In Microsoft Windows, sort order is determined by the code page. For more information, see [Code Pages](https://docs.microsoft.com/cpp/c-runtime-library/code-pages).  
+ In Microsoft Windows, sort order is determined by the code page. For more information, see [Code Pages](/cpp/c-runtime-library/code-pages).  
   
  In the following example, characters in the English/European code page (ANSI 1252) are sorted by using `Option Compare Binary`, which produces a typical binary sort order.  
   
@@ -81,7 +81,7 @@ Option Compare { Binary | Text }
  `(A=a) < (À = à) < (B=b) < (E=e) < (Ê = ê) < (Z=z) < (Ø = ø)`  
   
 ## When an Option Compare Statement Is Not Present  
- If the source code does not contain an `Option Compare` statement, the **Option Compare** setting on the [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If you use the command-line compiler, the setting specified by the [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) compiler option is used.  
+ If the source code does not contain an `Option Compare` statement, the **Option Compare** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If you use the command-line compiler, the setting specified by the [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) compiler option is used.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

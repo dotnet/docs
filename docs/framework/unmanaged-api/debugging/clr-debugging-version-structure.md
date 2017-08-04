@@ -1,5 +1,5 @@
 ---
-title: "CLR_DEBUGGING_VERSION Structure | Microsoft Docs"
+title: "CLR_DEBUGGING_VERSION Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

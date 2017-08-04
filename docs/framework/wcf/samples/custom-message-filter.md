@@ -1,5 +1,5 @@
 ---
-title: "Custom Message Filter | Microsoft Docs"
+title: "Custom Message Filter"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

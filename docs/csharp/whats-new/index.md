@@ -1,5 +1,5 @@
 ---
-title: What's New in C# - C# Guide | Microsoft Docs
+title: What's New in C# - C# Guide
 description: How is the C# language evolving
 keywords: C#, Latest Features, What's New, Roslyn
 author: BillWagner
@@ -25,7 +25,7 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
     - This page describes C# Interactive, an interactive Read Eval Print Loop (REPL) that you can use to explore the C# language. You can use it to write code interactively and see it execute immediately, without any compile or build step.
 -->
 * [Cross Platform Support](../../core/index.md):
-    - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many support Linux distributions, learn more about .NET Core.
+    - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many supported Linux distributions, learn more about .NET Core.
 
 <!--
 - [.NET Compiler Platform SDK](../roslyn/index.md):

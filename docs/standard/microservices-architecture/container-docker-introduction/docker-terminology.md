@@ -1,5 +1,5 @@
 ---
-title: Docker terminology | Microsoft Docs 
+title: Docker terminology
 description: .NET Microservices Architecture for Containerized .NET Applications | Docker terminology
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

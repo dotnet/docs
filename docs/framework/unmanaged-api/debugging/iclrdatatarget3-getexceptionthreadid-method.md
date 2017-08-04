@@ -1,5 +1,5 @@
 ---
-title: "ICLRDataTarget3::GetExceptionThreadID Method | Microsoft Docs"
+title: "ICLRDataTarget3::GetExceptionThreadID Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

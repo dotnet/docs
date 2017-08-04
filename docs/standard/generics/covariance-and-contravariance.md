@@ -1,5 +1,5 @@
 ---
-title: "Covariance and Contravariance in Generics | Microsoft Docs"
+title: "Covariance and Contravariance in Generics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Secure a Service with an X.509 Certificate | Microsoft Docs"
+title: "How to: Secure a Service with an X.509 Certificate"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

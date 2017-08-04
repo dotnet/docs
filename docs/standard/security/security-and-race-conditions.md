@@ -1,5 +1,5 @@
 ---
-title: "Security and Race Conditions | Microsoft Docs"
+title: "Security and Race Conditions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

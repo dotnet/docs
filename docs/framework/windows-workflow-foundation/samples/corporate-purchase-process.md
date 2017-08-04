@@ -1,5 +1,5 @@
 ---
-title: "Corporate Purchase Process | Microsoft Docs"
+title: "Corporate Purchase Process"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

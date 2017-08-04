@@ -1,5 +1,5 @@
 ---
-title: "Development and Deployment Considerations | Microsoft Docs"
+title: "Development and Deployment Considerations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

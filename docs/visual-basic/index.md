@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic | Microsoft Docs"
+title: "Visual Basic"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -71,7 +71,7 @@ Visual Basic is engineered for productively building type-safe and object-orient
  Provides links to step-by-step instructions for common scenarios.  
   
 ## Related Sections  
- [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio)  
+ [Get Started Developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)  
  Provides links to topics that help you learn about the basics of Visual Studio.  
   
  [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=227195)  

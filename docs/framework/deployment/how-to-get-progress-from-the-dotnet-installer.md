@@ -1,5 +1,5 @@
 ---
-title: "How to: Get Progress from the .NET Framework 4.5 Installer | Microsoft Docs"
+title: "How to: Get Progress from the .NET Framework 4.5 Installer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

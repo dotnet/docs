@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component | Microsoft Docs"
+title: "How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

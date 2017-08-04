@@ -1,5 +1,5 @@
 ---
-title: "Extending Bindings | Microsoft Docs"
+title: "Extending Bindings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

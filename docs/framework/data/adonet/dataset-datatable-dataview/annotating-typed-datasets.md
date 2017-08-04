@@ -1,5 +1,5 @@
 ---
-title: "Annotating Typed DataSets | Microsoft Docs"
+title: "Annotating Typed DataSets"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

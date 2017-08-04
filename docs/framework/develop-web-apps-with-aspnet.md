@@ -1,5 +1,5 @@
 ---
-title: "Developing Web Applications with ASP.NET | Microsoft Docs"
+title: "Developing Web Applications with ASP.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

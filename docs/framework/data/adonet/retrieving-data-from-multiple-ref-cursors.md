@@ -1,5 +1,5 @@
 ---
-title: "Retrieving Data from Multiple REF CURSORs Using an OracleDataReader | Microsoft Docs"
+title: "Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

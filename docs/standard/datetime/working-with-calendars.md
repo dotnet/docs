@@ -1,5 +1,5 @@
 ---
-title: "Working with calendars | Microsoft Docs"
+title: "Working with calendars"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

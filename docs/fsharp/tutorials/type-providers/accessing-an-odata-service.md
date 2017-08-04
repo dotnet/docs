@@ -1,6 +1,6 @@
 ---
-title: "Walkthrough: Accessing an OData Service by Using Type Providers (F#) | Microsoft Docs"
-description: "Walkthrough: Accessing an OData Service by Using Type Providers (F#)"
+title: "Walkthrough: Accessing an OData Service by Using Type Providers (F#)"
+description: Learn how to use the F# ODataService type provider in F# 3.0 to generate client types for an OData service and query data feeds that the service provides.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

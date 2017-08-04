@@ -23,6 +23,7 @@ rebuild.cmd
 x64/
 x86/
 build/
+!/docs/core/build/
 bld/
 [Bb]in/
 [Oo]bj/
@@ -213,6 +214,8 @@ api_src/
 api/
 _themes/
 _themes.pdf/
+_csharplang/
+_vblang/
 log/
 .optemp/
 .openpublishing.buildcore.ps1

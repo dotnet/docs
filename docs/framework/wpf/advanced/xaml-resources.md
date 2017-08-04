@@ -1,5 +1,5 @@
 ---
-title: "XAML Resources | Microsoft Docs"
+title: "XAML Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -31,7 +31,7 @@ A resource is an object that can be reused in different places in your applicati
 ## Using Resources in XAML  
  The following example defines a                  <xref:System.Windows.Media.SolidColorBrush> as a resource on the root element of a page. The example then references the resource and uses it to set properties of several child elements, including an                  <xref:System.Windows.Shapes.Ellipse>, a                  <xref:System.Windows.Controls.TextBlock>, and a                  <xref:System.Windows.Controls.Button>.  
   
- [!code-xml[FEResourceSH_snip#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xaml)]  
+ [!code-xaml[FEResourceSH_snip#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xaml)]  
   
  Every framework-level element (                 <xref:System.Windows.FrameworkElement> or                  <xref:System.Windows.FrameworkContentElement>) has a                  <xref:System.Windows.FrameworkElement.Resources%2A> property, which is the property that contains the resources (as a                  <xref:System.Windows.ResourceDictionary>) that a resource defines. You can define resources on any element. However, resources are most often defined on the root element, which is                  <xref:System.Windows.Controls.Page> in the example.  
   
@@ -39,7 +39,7 @@ A resource is an object that can be reused in different places in your applicati
   
  After you define a resource, you can reference the resource to be used for a property value by using a resource markup extension syntax that specifies the key name, for example:  
   
- [!code-xml[FEResourceSH_snip#KeyNameUsage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page2.xaml#keynameusage)]  
+ [!code-xaml[FEResourceSH_snip#KeyNameUsage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page2.xaml#keynameusage)]  
   
  In the preceding example, when the                  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] loader processes the value                  `{StaticResource MyBrush}` for the                  <xref:System.Windows.Controls.Control.Background%2A> property on                  <xref:System.Windows.Controls.Button>, the resource lookup logic first checks the resource dictionary for the                  <xref:System.Windows.Controls.Button> element. If                  <xref:System.Windows.Controls.Button> does not have a definition of the resource key                  `MyBrush` (it does not; its resource collection is empty), the lookup next checks the parent element of                  <xref:System.Windows.Controls.Button>, which is                  <xref:System.Windows.Controls.Page>. Thus, when you define a resource on the                  <xref:System.Windows.Controls.Page> root element, all the elements in the logical tree of the                  <xref:System.Windows.Controls.Page> can access it, and you can reuse the same resource for setting the value of any property that accepts the                  <xref:System.Type> that the resource represents. In the previous example, the same                  `MyBrush` resource sets two different properties: the                  <xref:System.Windows.Controls.Control.Background%2A> of a                  <xref:System.Windows.Controls.Button>, and the                  <xref:System.Windows.Shapes.Shape.Fill%2A> of a                  <xref:System.Windows.Shapes.Rectangle>.  
   
@@ -149,7 +149,7 @@ A resource is an object that can be reused in different places in your applicati
   
  Styles for controls can be both created with and referenced with an implicit key. The theme styles that define the default appearance of a control rely on this implicit key. The implicit key from the standpoint of requesting it is the                  <xref:System.Type> of the control itself. The implicit key from the standpoint of defining the resource is the                  <xref:System.Windows.Style.TargetType%2A> of the style. Therefore, if you are creating themes for custom controls, creating styles that interact with existing theme styles, you do not need to specify an                  [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md) for that                  <xref:System.Windows.Style>. And if you want to use the themed styles, you do not need to specify any style at all. For instance, the following style definition works, even though the                  <xref:System.Windows.Style> resource does not appear to have a key:  
   
- [!code-xml[FEResourceSH_snip#ImplicitStyle](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page2.xaml#implicitstyle)]  
+ [!code-xaml[FEResourceSH_snip#ImplicitStyle](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page2.xaml#implicitstyle)]  
   
  That style really does have a key: the implicit key                  `typeof(`<xref:System.Windows.Controls.Button>`)`. In markup, you can specify a                  <xref:System.Windows.Style.TargetType%2A> directly as the type name (or you can optionally use                  [{x:Type...}](../../../../docs/framework/xaml-services/x-type-markup-extension.md) to return a                  <xref:System.Type>.  
   

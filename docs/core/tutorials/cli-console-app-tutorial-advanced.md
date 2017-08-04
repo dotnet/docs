@@ -1,6 +1,6 @@
 ---
-title: "Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide | Microsoft Docs"
-description: "Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide"
+title: "Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide"
+description: Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide
 keywords: .NET, .NET Core
 ms.date: 06/20/2016
 ms.topic: article
@@ -8,7 +8,7 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: dab9e2f9-9088-4089-b990-fbc3d8dcd611
-redirect_url: /dotnet/articles/core/tutorials/index
+redirect_url: /dotnet/core/tutorials/index
 ---
 
 # 🔧 Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide

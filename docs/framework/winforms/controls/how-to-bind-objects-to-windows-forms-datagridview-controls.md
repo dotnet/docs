@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind Objects to Windows Forms DataGridView Controls | Microsoft Docs"
+title: "How to: Bind Objects to Windows Forms DataGridView Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

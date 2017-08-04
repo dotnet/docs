@@ -1,5 +1,5 @@
 ---
-title: "Rapid Application Development with My.Resources and My.Settings (Visual Basic) | Microsoft Docs"
+title: "Rapid Application Development with My.Resources and My.Settings (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

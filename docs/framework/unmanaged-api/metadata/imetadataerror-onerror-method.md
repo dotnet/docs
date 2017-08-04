@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataError::OnError Method | Microsoft Docs"
+title: "IMetaDataError::OnError Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

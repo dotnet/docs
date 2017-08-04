@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform Action When a Dataflow Block Receives Data | Microsoft Docs"
+title: "How to: Perform Action When a Dataflow Block Receives Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

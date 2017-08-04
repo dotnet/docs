@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataTables::GetGuid Method | Microsoft Docs"
+title: "IMetaDataTables::GetGuid Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

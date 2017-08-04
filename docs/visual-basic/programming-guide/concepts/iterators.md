@@ -1,5 +1,5 @@
 ---
-title: "Iterators (Visual Basic) | Microsoft Docs"
+title: "Iterators (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -446,7 +446,7 @@ End Class
   
  Iterators do not support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
   
- For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification.md).  
+ For additional information, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).  
   
 ##  <a name="BKMK_UseOfIterators"></a> Use of Iterators  
  Iterators enable you to maintain the simplicity of a `For Each` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:  

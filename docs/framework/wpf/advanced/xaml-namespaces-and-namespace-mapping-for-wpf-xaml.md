@@ -1,5 +1,5 @@
 ---
-title: "XAML Namespaces and Namespace Mapping for WPF XAML | Microsoft Docs"
+title: "XAML Namespaces and Namespace Mapping for WPF XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

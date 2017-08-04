@@ -1,5 +1,5 @@
 ---
-title: "Vector Graphics Overview | Microsoft Docs"
+title: "Vector Graphics Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

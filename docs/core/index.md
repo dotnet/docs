@@ -1,6 +1,6 @@
 ---
-title: .NET Core | Microsoft Docs
-description: .NET Core
+title: .NET Core
+description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -47,17 +47,17 @@ The C# and F# compilers and the .NET Core tools are or can be integrated into se
 
 Look at the [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md) to learn more about the .NET Core API roadmap.
 
-### Relationship to the .NET Standard Library
+### Relationship to .NET Standard
 
-The [.NET Standard](../standard/net-standard.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard Library compliant and to support libraries that target the .NET Standard Library. 
+The [.NET Standard](../standard/net-standard.md) is an API spec that describes the consistent set of .NET APIs that developers can expect in each .NET implementation. .NET implementations need to implement this spec in order to be considered .NET Standard-compliant and to support libraries that target .NET Standard. 
 
-.NET Core implements the .NET Standard Library, and therefore supports .NET Standard Libraries.
+.NET Core implements .NET Standard, and therefore supports .NET Standard libraries.
 
 ### Workloads
 
 By itself, .NET Core includes a single application model -- console apps -- which is useful for tools, local services and text-based games. Additional application models have been built on top of .NET Core to extend its functionality, such as:
 
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/)
+- [ASP.NET Core](/aspnet/core/)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
 - [Xamarin.Forms when targeting UWP](https://www.xamarin.com/forms)
 
@@ -118,13 +118,13 @@ There are a mix of platform-specific and platform-neutral libraries in .NET Core
 - [System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO) and [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) are platform-specific, given that the storage and cryptography APIs differ significantly on each OS. 
 - [System.Collections](https://github.com/dotnet/corefx/tree/master/src/System.Collections) and [System.Linq](https://github.com/dotnet/corefx/tree/master/src/System.Linq) are platform-neutral, given that they create and operate over data structures.
 
-## Comparisons to other .NET Platforms
+## Comparisons to other .NET implementations
 
-It is perhaps easiest to understand the size and shape of .NET Core by comparing it to existing .NET platforms. 
+It is perhaps easiest to understand the size and shape of .NET Core by comparing it to existing .NET implementations. 
 
 ### Comparison with .NET Framework
 
-The .NET platform was first announced by Microsoft in 2000 and then evolved from there. The .NET Framework has been the primary .NET product produced by Microsoft during that 15+ year span. 
+.NET was first announced by Microsoft in 2000 and then evolved from there. The .NET Framework has been the primary .NET implementation produced by Microsoft during that 15+ year span. 
 
 The major differences between .NET Core and the .NET Framework: 
 
@@ -134,7 +134,7 @@ The major differences between .NET Core and the .NET Framework:
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.
 
-While .NET Core is unique and has significant differences to the .NET Framework and other .NET platforms, it is straightforward to share code, using either source or binary sharing techniques. 
+While .NET Core is unique and has significant differences to the .NET Framework and other .NET implementations, it is straightforward to share code, using either source or binary sharing techniques. 
 
 ### Comparison with Mono
 

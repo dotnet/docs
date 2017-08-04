@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Text Trimming | Microsoft Docs"
+title: "How to: Enable Text Trimming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,7 +25,7 @@ This example demonstrates the usage and effects of the values available in the  
 ## Example  
  The following example defines a                      <xref:System.Windows.Controls.TextBlock> element with the                      <xref:System.Windows.Controls.TextBlock.TextTrimming%2A> attribute set.  
   
- [!code-xml[TextTrimmingSnippets#_TextTrimmingXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextTrimmingSnippets/CSharp/Window1.xaml#_texttrimmingxaml)]  
+ [!code-xaml[TextTrimmingSnippets#_TextTrimmingXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextTrimmingSnippets/CSharp/Window1.xaml#_texttrimmingxaml)]  
   
 ## Example  
  Setting the corresponding                      <xref:System.Windows.TextTrimming> property in code is demonstrated below.  

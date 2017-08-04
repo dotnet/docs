@@ -1,5 +1,5 @@
 ---
-title: "Using a Gradient Brush to Fill Shapes | Microsoft Docs"
+title: "Using a Gradient Brush to Fill Shapes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

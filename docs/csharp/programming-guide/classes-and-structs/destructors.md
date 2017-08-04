@@ -1,5 +1,5 @@
 ---
-title: "Finalizers (C# Programming Guide) | Microsoft Docs"
+title: "Finalizers (C# Programming Guide)"
 
 ms.date: "2017-05-10"
 ms.prod: .net

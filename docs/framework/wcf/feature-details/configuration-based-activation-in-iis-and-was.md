@@ -1,5 +1,5 @@
 ---
-title: "Configuration-Based Activation in IIS and WAS | Microsoft Docs"
+title: "Configuration-Based Activation in IIS and WAS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

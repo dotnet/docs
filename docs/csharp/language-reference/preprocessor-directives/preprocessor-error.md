@@ -1,5 +1,5 @@
 ---
-title: "#error (C# Reference) | Microsoft Docs"
+title: "#error (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

@@ -28,11 +28,6 @@
       <InterfaceName>System.Collections.Generic.ISet&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents a hash set that mutates with little or no memory allocations and that can produce or build on immutable hash set instances very efficiently.  
   

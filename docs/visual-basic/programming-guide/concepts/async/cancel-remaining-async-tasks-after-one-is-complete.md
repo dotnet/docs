@@ -1,5 +1,5 @@
 ---
-title: "Cancel Remaining Async Tasks after One Is Complete (Visual Basic) | Microsoft Docs"
+title: "Cancel Remaining Async Tasks after One Is Complete (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

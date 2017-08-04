@@ -399,7 +399,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBinary op_Addition (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBinary operator + (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBinary op_Addition(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Addition(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>
@@ -434,7 +434,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Equality(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>
@@ -460,7 +460,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static byte[] op_Explicit (System.Data.OracleClient.OracleBinary x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator byte[] (System.Data.OracleClient.OracleBinary x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8[] op_Explicit(valuetype System.Data.OracleClient.OracleBinary x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Explicit(System.Data.OracleClient.OracleBinary)~System.Byte[]" />
       <MemberType>Method</MemberType>
@@ -482,7 +482,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_GreaterThan(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>
@@ -508,7 +508,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_GreaterThanOrEqual(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>
@@ -534,7 +534,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBinary op_Implicit (byte[] b);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.OracleClient.OracleBinary (byte[] b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBinary op_Implicit(unsigned int8[] b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Implicit(System.Byte[])~System.Data.OracleClient.OracleBinary" />
       <MemberType>Method</MemberType>
@@ -556,7 +556,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_Inequality(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>
@@ -582,7 +582,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_LessThan(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>
@@ -608,7 +608,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleBinary x, System.Data.OracleClient.OracleBinary y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleBinary x, valuetype System.Data.OracleClient.OracleBinary y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleBinary.op_LessThanOrEqual(System.Data.OracleClient.OracleBinary,System.Data.OracleClient.OracleBinary)" />
       <MemberType>Method</MemberType>

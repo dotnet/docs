@@ -1,5 +1,5 @@
 ---
-title: "Sub or Function not defined (Visual Basic) | Microsoft Docs"
+title: "Sub or Function not defined (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -54,6 +54,6 @@ A `Sub` or `Function` must be defined in order to be called. Possible causes of 
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Managing references in a project](https://docs.microsoft.com/visualstudio/ide/managing-references-in-a-project)   
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)

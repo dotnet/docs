@@ -1,5 +1,5 @@
 ---
-title: .NET Core Support | Microsoft Docs
+title: .NET Core Support
 description: Learn about the different release train supports (LTS and Current) for .NET Core
 keywords: .NET, .NET Core, lts, current, fts, support, support trains, support tracks, Lifecycle, release trains
 author: kendrahavens

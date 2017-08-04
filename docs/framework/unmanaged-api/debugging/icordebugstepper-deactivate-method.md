@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper::Deactivate Method | Microsoft Docs"
+title: "ICorDebugStepper::Deactivate Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

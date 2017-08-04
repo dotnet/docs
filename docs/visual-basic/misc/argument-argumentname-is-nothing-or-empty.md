@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing or empty | Microsoft Docs"
+title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing or empty"
 
 ms.date: "2015-07-20"
 ms.prod: .net

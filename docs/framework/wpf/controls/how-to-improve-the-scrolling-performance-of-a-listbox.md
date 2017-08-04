@@ -1,5 +1,5 @@
 ---
-title: "How to: Improve the Scrolling Performance of a ListBox | Microsoft Docs"
+title: "How to: Improve the Scrolling Performance of a ListBox"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,7 @@ If a <xref:System.Windows.Controls.ListBox> contains many items, the user interf
 The following example creates a <xref:System.Windows.Controls.ListBox> and sets the `VirtualizingStackPanel.VirtualizationMode` attached property to <xref:System.Windows.Controls.VirtualizationMode.Recycling?displayProperty=fullName> to improve performance during scrolling.  
   
 ## Code  
- [!code-xml[RecycleItemContainerShippets#VirtualizationMode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
+ [!code-xaml[RecycleItemContainerShippets#VirtualizationMode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizationmode)]  
   
  The following example shows the data that the previous example uses.  
   

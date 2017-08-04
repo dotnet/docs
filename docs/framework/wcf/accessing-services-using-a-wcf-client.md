@@ -1,5 +1,5 @@
 ---
-title: "Accessing Services Using a WCF Client | Microsoft Docs"
+title: "Accessing Services Using a WCF Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -65,108 +65,118 @@ Svcutil.exe <file1 [,file2]>
 ## Example  
  The following code example shows a service contract created for a service.  
   
-```csharp  
-// Define a service contract.  
-[ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
-public interface ICalculator  
-{  
-    [OperationContract]  
-    double Add(double n1, double n2);  
-    // Other methods are not shown here.  
-}  
-```  
+```csharp
+// Define a service contract.
+[ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
+public interface ICalculator
+{
+    [OperationContract]
+    double Add(double n1, double n2);
+    // Other methods are not shown here.
+}
+```
   
-```vb  
-' Define a service contract.  
-<ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")> _  
-Public Interface ICalculator  
-    <OperationContract()>  _  
-    Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double   
-    ' Other methods are not shown here.  
-End Interface   
-```  
+```vb
+' Define a service contract.
+<ServiceContract(Namespace:="http://Microsoft.ServiceModel.Samples")> _
+Public Interface ICalculator
+    <OperationContract()>  _
+    Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double
+    ' Other methods are not shown here.
+End Interface
+```
   
  The ServiceModel Metadata utility tool and Add Service Reference in Visual Studio generates the following [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client class. The class inherits from the generic <xref:System.ServiceModel.ClientBase%601> class and implements the `ICalculator` interface. The tool also generates the `ICalculator` interface (not shown here).  
   
-```csharp  
-public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator  
-{  
-    public CalculatorClient(){}  
-  
-    public CalculatorClient(string configurationName) :   
-            base(configurationName)  
-    {}  
-  
-    public CalculatorClient(System.ServiceModel.Binding binding) :   
-            base(binding)  
-    {}  
-  
-    public CalculatorClient(System.ServiceModel.EndpointAddress address,  
-    System.ServiceModel.Binding binding) :   
-            base(address, binding)  
-    {}  
-  
-    public double Add(double n1, double n2)  
-    {  
-        return base.InnerChannel.Add(n1, n2);  
-    }  
-}  
+```csharp
+public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
+{
+    public CalculatorClient()
+    {}
+
+    public CalculatorClient(string endpointConfigurationName) :
+            base(endpointConfigurationName)
+    {}
+
+    public CalculatorClient(string endpointConfigurationName, string remoteAddress) :
+            base(endpointConfigurationName, remoteAddress)
+    {}
+
+    public CalculatorClient(string endpointConfigurationName,
+        System.ServiceModel.EndpointAddress remoteAddress) :
+            base(endpointConfigurationName, remoteAddress)
+    {}
+
+    public CalculatorClient(System.ServiceModel.Channels.Binding binding,
+        System.ServiceModel.EndpointAddress remoteAddress) :
+            base(binding, remoteAddress)
+    {}
+
+    public double Add(double n1, double n2)
+    {
+        return base.Channel.Add(n1, n2);
+    }
+}
 ```  
   
 ```vb  
-Partial Public Class CalculatorClient  
-    Inherits System.ServiceModel.ClientBase(Of ICalculator)  
-    Implements ICalculator  
-  
-    Public Sub New()  
-        MyBase.New  
-    End Sub  
-  
-    Public Sub New(ByVal configurationName As String)  
-        MyBase.New(configurationName)  
-    End Sub  
-  
-    Public Sub New(ByVal binding As System.ServiceModel.Binding)  
-        MyBase.New(binding)  
-    End Sub  
-  
-    Public Sub New(ByVal address As _  
-    System.ServiceModel.EndpointAddress, _  
-    ByVal binding As System.ServiceModel.Binding)  
-        MyBase.New(address, binding)  
-    End Sub  
-  
-    Public Function Add(ByVal n1 As Double, ByVal n2 As Double) As _  
-    Double Implements ICalculator.Add  
-        Return MyBase.InnerChannel.Add(n1, n2)  
-    End Function   
-End Class  
-```  
+Partial Public Class CalculatorClient
+    Inherits System.ServiceModel.ClientBase(Of ICalculator)
+    Implements ICalculator
+
+    Public Sub New()
+        MyBase.New
+    End Sub
+
+    Public Sub New(ByVal endpointConfigurationName As String)
+        MyBase.New(endpointConfigurationName)
+    End Sub
+
+    Public Sub New(ByVal endpointConfigurationName As String, ByVal remoteAddress As String)
+        MyBase.New(endpointConfigurationName, remoteAddress)
+    End Sub
+
+    Public Sub New(ByVal endpointConfigurationName As String,
+        ByVal remoteAddress As System.ServiceModel.EndpointAddress)
+        MyBase.New(endpointConfigurationName, remoteAddress)
+    End Sub
+
+    Public Sub New(ByVal binding As System.ServiceModel.Channels.Binding,
+        ByVal remoteAddress As System.ServiceModel.EndpointAddress)
+        MyBase.New(binding, remoteAddress)
+    End Sub
+
+    Public Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double
+        Implements ICalculator.Add
+        Return MyBase.Channel.Add(n1, n2)
+    End Function
+End Class
+```
   
 ## Using the WCF Client  
  To use the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client, create an instance of the [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client, and then call its methods, as shown in the following code.  
   
-```csharp  
-// Create a client object with the given client endpoint configuration.  
-CalculatorClient calcClient = new CalculatorClient("CalculatorEndpoint"));  
-// Call the Add service operation.  
-double value1 = 100.00D;  
-double value2 = 15.99D;  
-double result = calcClient.Add(value1, value2);  
-Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
-```  
+```csharp
+// Create a client object with the given client endpoint configuration.
+CalculatorClient calcClient = new CalculatorClient("CalculatorEndpoint"));
+// Call the Add service operation.
+double value1 = 100.00D;
+double value2 = 15.99D;
+double result = calcClient.Add(value1, value2);
+Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+```
   
-```vb  
-' Create a client object with the given client endpoint configuration.  
-Dim calcClient As CalculatorClient = _  
-New CalculatorClient("CalculatorEndpoint")  
-  
-' Call the Add service operation.  
-Dim value1 As Double = 100.00D  
-Dim value2 As Double = 15.99D  
-Dim result As Double = calcClient.Add(value1, value2)  
-Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)  
-```  
+```vb
+' Create a client object with the given client endpoint configuration.
+Dim calcClient As CalculatorClient = _
+New CalculatorClient("CalculatorEndpoint")
+
+' Call the Add service operation.
+Dim value1 As Double = 100.00D
+Dim value2 As Double = 15.99D
+Dim result As Double = calcClient.Add(value1, value2)
+Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
+```
   
 ## Debugging Exceptions Thrown by a Client  
  Many exceptions thrown by a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] client are caused by an exception on the service. Some examples of this are:  

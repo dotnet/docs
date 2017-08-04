@@ -1,5 +1,5 @@
 ---
-title: "Contract First Workflow Service Development | Microsoft Docs"
+title: "Contract First Workflow Service Development"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

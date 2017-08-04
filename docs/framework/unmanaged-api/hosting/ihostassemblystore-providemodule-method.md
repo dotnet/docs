@@ -1,5 +1,5 @@
 ---
-title: "IHostAssemblyStore::ProvideModule Method | Microsoft Docs"
+title: "IHostAssemblyStore::ProvideModule Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

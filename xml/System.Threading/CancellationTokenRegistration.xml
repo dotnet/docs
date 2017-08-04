@@ -198,7 +198,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Threading.CancellationTokenRegistration left, System.Threading.CancellationTokenRegistration right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Threading.CancellationTokenRegistration left, System.Threading.CancellationTokenRegistration right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.CancellationTokenRegistration left, valuetype System.Threading.CancellationTokenRegistration right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.op_Equality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)" />
       <MemberType>Method</MemberType>
@@ -236,7 +236,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.CancellationTokenRegistration left, System.Threading.CancellationTokenRegistration right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Threading.CancellationTokenRegistration left, System.Threading.CancellationTokenRegistration right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.CancellationTokenRegistration left, valuetype System.Threading.CancellationTokenRegistration right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.CancellationTokenRegistration.op_Inequality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)" />
       <MemberType>Method</MemberType>

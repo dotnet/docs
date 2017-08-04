@@ -1,5 +1,5 @@
 ---
-title: "Versioning with the Override and New Keywords (C# Programming Guide) | Microsoft Docs"
+title: "Versioning with the Override and New Keywords (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -77,7 +77,7 @@ The C# language is designed so that versioning between [base](../../../csharp/la
   
  [!code-cs[csProgGuideInheritance#44](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/versioning-with-the-override-and-new-keywords_5.cs)]  
   
- If you do not want your method to override the new base class method, the following considerations apply. To avoid confusion between the two methods, you can rename your method. This can be time-consuming and error-prone, and just not practical in some cases. However, if your project is relatively small, you can use Visual Studio's Refactoring options to rename the method. For more information, see [Refactoring Classes and Types (Class Designer)](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer).  
+ If you do not want your method to override the new base class method, the following considerations apply. To avoid confusion between the two methods, you can rename your method. This can be time-consuming and error-prone, and just not practical in some cases. However, if your project is relatively small, you can use Visual Studio's Refactoring options to rename the method. For more information, see [Refactoring Classes and Types (Class Designer)](/visualstudio/ide/refactoring-classes-and-types-class-designer).  
   
  Alternatively, you can prevent the warning by using the keyword `new` in your derived class definition:  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Finally Blocks | Microsoft Docs"
+title: "How to: Use Finally Blocks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

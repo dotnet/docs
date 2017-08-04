@@ -1,5 +1,5 @@
 ---
-title: "HttpWebRequest._HttpResponse Field | Microsoft Docs"
+title: "HttpWebRequest._HttpResponse Field"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""

@@ -23,8 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>When applied to an import of an <see cref="T:System.Composition.ExportFactory`1" /> object, marks the boundary of a sharing scope.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,9 +48,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="sharingBoundaryNames">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sharingBoundaryNames">The boundary names to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.SharingBoundaryAttribute" /> class for the specified boundary names.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SharingBoundaryNames">
@@ -66,9 +68,10 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the boundary names.</summary>
+        <value>A collection of the boundary names.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

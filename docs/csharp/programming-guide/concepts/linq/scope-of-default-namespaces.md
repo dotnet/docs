@@ -1,5 +1,5 @@
 ---
-title: "Scope of Default Namespaces in C#1 | Microsoft Docs"
+title: "Scope of Default Namespaces in C#1"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

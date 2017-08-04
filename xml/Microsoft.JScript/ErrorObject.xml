@@ -78,7 +78,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Exception op_Explicit (Microsoft.JScript.ErrorObject err);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Exception (Microsoft.JScript.ErrorObject err);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Exception op_Explicit(class Microsoft.JScript.ErrorObject err) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.op_Explicit(Microsoft.JScript.ErrorObject)~System.Exception" />
       <MemberType>Method</MemberType>

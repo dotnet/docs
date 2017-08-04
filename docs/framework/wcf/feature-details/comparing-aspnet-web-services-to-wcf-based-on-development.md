@@ -1,5 +1,5 @@
 ---
-title: "Comparing ASP.NET Web Services to WCF Based on Development | Microsoft Docs"
+title: "Comparing ASP.NET Web Services to WCF Based on Development"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

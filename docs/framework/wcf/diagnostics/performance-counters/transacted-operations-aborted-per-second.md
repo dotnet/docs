@@ -1,5 +1,5 @@
 ---
-title: "Transacted Operations Aborted Per Second | Microsoft Docs"
+title: "Transacted Operations Aborted Per Second"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

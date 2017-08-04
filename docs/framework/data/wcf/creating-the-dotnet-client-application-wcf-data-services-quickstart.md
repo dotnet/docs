@@ -1,5 +1,5 @@
 ---
-title: "Creating the .NET Framework Client Application (WCF Data Services Quickstart) | Microsoft Docs"
+title: "Creating the .NET Framework Client Application (WCF Data Services Quickstart)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
@@ -31,7 +31,7 @@ This is the final task of the [!INCLUDE[ssAstoria](../../../../includes/ssastori
   
 4.  Open the file MainWindow.xaml and replace the XAML code with the following code:  
   
-     [!code-xml[Astoria Quickstart Client#Window1Xaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria quickstart client/vb/window1.xaml#window1xaml)]  
+     [!code-xaml[Astoria Quickstart Client#Window1Xaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria quickstart client/vb/window1.xaml#window1xaml)]  
   
 ### To add a data service reference to the project  
   

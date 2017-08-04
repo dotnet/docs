@@ -1,5 +1,5 @@
 ---
-title: "Ways to Select a Windows Forms Button Control | Microsoft Docs"
+title: "Ways to Select a Windows Forms Button Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

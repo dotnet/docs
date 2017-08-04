@@ -1,5 +1,5 @@
 ---
-title: "How to: Use mailto: to Send Mail From a Page | Microsoft Docs"
+title: "How to: Use mailto: to Send Mail From a Page"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,7 +25,7 @@ This example shows how to use <xref:System.Windows.Documents.Hyperlink> in conju
 ## Example  
  The following code shows how to use a **mailto:**[!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] to open a new mail window that contains an email address, and email address and a subject, and an email address, subject, and body.  
   
- [!code-xml[HOWTONavigationMailToSnippet#MailToMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
+ [!code-xaml[HOWTONavigationMailToSnippet#MailToMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
   
 ## See Also  
  [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)

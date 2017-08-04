@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Configuration to Add an ASP.NET AJAX Endpoint | Microsoft Docs"
+title: "How to: Use Configuration to Add an ASP.NET AJAX Endpoint"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

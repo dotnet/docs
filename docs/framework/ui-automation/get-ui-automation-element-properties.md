@@ -1,5 +1,5 @@
 ---
-title: "Get UI Automation Element Properties | Microsoft Docs"
+title: "Get UI Automation Element Properties"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

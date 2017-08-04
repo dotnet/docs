@@ -1,6 +1,6 @@
 ---
-title: Unit Testing in .NET Core | Microsoft Docs
-description: Unit Testing in .NET Core
+title: Unit Testing in .NET Core
+description: Unit testing has never been easier. See how to use unit testing in .NET Core projects.
 keywords: .NET, .NET Core
 author: ardalis
 ms.author: wiwagn
@@ -22,12 +22,12 @@ Having a suite of automated tests is one of the best ways to ensure a software a
 > [!NOTE]
 > Developers often struggle with coming up with good names for their test classes and methods. As a starting point, the ASP.NET product team follows [these conventions](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests).
 
-When writing unit tests, be careful you don’t accidentally introduce dependencies on infrastructure. These tend to make tests slower and more brittle, and thus should be reserved for integration tests. You can avoid these hidden dependencies in your application code by following the [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) to request your dependencies from the framework. You can also keep your unit tests in a separate project from your integration tests, and ensure your unit test project doesn’t have references to or dependencies on infrastructure packages.
+When writing unit tests, be careful you don’t accidentally introduce dependencies on infrastructure. These tend to make tests slower and more brittle, and thus should be reserved for integration tests. You can avoid these hidden dependencies in your application code by following the [Explicit Dependencies Principle](http://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection) to request your dependencies from the framework. You can also keep your unit tests in a separate project from your integration tests, and ensure your unit test project doesn’t have references to or dependencies on infrastructure packages.
 
 Learn more about unit testing in .NET Core projects:
 
-* Try this [walkthrough creating unit tests with xUnit and the .NET CLI](unit-testing-with-dotnet-test.md). 
+* Try this [walkthrough creating unit tests with xUnit and the .NET Core CLI](unit-testing-with-dotnet-test.md). 
 * The XUnit team has written a tutorial that shows
 [how to use xUnit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
-* If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET CLI](unit-testing-with-mstest.md).
+* If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET Core CLI](unit-testing-with-mstest.md).
 * For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).

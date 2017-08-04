@@ -1,5 +1,5 @@
 ---
-title: "How to: Hide a Variable with the Same Name as Your Variable (Visual Basic) | Microsoft Docs"
+title: "How to: Hide a Variable with the Same Name as Your Variable (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -120,7 +120,7 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
     End Class  
     ```  
   
-     The preceding example declares the variable `shadowString` in the base class and shadows it in the derived class. The procedure `showStrings` in the derived class displays the shadowing version of the string when the name `shadowString` is not qualified. It then displays the shadowed version when `shadowString` is qualified with the `MyBase`keyword.  
+     The preceding example declares the variable `shadowString` in the base class and shadows it in the derived class. The procedure `showStrings` in the derived class displays the shadowing version of the string when the name `shadowString` is not qualified. It then displays the shadowed version when `shadowString` is qualified with the `MyBase` keyword.  
   
 ## Robust Programming  
  Shadowing introduces more than one version of a variable with the same name. When a code statement refers to the variable name, the version to which the compiler resolves the reference depends on factors such as the location of the code statement and the presence of a qualifying string. This can increase the risk of referring to an unintended version of a shadowed variable. You can lower that risk by fully qualifying all references to a shadowed variable.  

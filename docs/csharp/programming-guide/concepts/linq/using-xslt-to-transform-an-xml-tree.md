@@ -1,5 +1,5 @@
 ---
-title: "Using XSLT to Transform an XML Tree (C#) | Microsoft Docs"
+title: "Using XSLT to Transform an XML Tree (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "4820 - SynchronizationContextReset | Microsoft Docs"
+title: "4820 - SynchronizationContextReset"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

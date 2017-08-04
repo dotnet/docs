@@ -1,5 +1,5 @@
 ---
-title: "The Managed Thread Pool | Microsoft Docs"
+title: "The Managed Thread Pool"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

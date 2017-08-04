@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugMutableDataTarget::WriteVirtual Method | Microsoft Docs"
+title: "ICorDebugMutableDataTarget::WriteVirtual Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

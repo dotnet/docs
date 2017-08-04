@@ -1,5 +1,5 @@
 ---
-title: "How to: Rotate Colors | Microsoft Docs"
+title: "How to: Rotate Colors"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

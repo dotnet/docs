@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Type Providers | Microsoft Docs
-description: Troubleshooting Type Providers
+title: Troubleshooting Type Providers
+description: Discover potential solutions for the problems that you are most likely to encounter when you use type providers in F#.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

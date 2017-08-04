@@ -1,5 +1,5 @@
 ---
-title: Building a class library with C# and .NET Core in Visual Studio 2017 | Microsoft Docs
+title: Building a class library with C# and .NET Core in Visual Studio 2017
 description: Learn how to build a class library written in C# using Visual Studio 2017
 keywords: .NET Core, .NET Standard class library, Visual Studio 2017
 author: BillWagner
@@ -14,7 +14,7 @@ ms.assetid: c849ca26-6a25-4d35-9544-f343af88e0e7
 
 # Building a class library with C# and .NET Core in Visual Studio 2017
 
-A *class library* defines types and methods that are called by an application. A class library developed using .NET Core supports the .NET Standard Library, which allows your library to be called by any .NET platform that supports that version of the .NET Standard Library. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. A class library developed using .NET Core supports the .NET Standard, which allows your library to be called by any .NET platform that supports that version of the .NET Standard. When you finish your class library, you can decide whether you want to distribute it as a third-party component or whether you want to include it as a bundled component with one or more applications.
 
 > [!NOTE]
 > For a list of the .NET Standard versions and the platforms they support, see [.NET Standard](../../standard/net-standard.md).

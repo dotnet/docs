@@ -1,5 +1,5 @@
 ---
-title: "&lt;userNameSecurityTokenHandlerRequirement&gt; | Microsoft Docs"
+title: "&lt;userNameSecurityTokenHandlerRequirement&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

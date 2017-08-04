@@ -1,5 +1,5 @@
 ---
-title: "Differences Between C++ Templates and C# Generics (C# Programming Guide) | Microsoft Docs"
+title: "Differences Between C++ Templates and C# Generics (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -57,4 +57,4 @@ C# Generics and C++ templates are both language features that provide support fo
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
- [Templates](https://docs.microsoft.com/cpp/cpp/templates-cpp)
+ [Templates](/cpp/cpp/templates-cpp)

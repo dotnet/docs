@@ -1,5 +1,5 @@
 ---
-title: "&lt;smtp&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;smtp&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -71,7 +71,7 @@ Configures the delivery format, delivery method, and from address for sending e-
 |[\<mailSettings> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md)|Configures mail sending options.|  
   
 ## Example  
- The following code example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
   
 ```xml  
 <configuration>  

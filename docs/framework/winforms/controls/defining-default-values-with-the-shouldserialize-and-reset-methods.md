@@ -1,5 +1,5 @@
 ---
-title: "Defining Default Values with the ShouldSerialize and Reset Methods | Microsoft Docs"
+title: "Defining Default Values with the ShouldSerialize and Reset Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

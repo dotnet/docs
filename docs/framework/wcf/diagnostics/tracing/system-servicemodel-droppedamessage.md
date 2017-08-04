@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.DroppedAMessage | Microsoft Docs"
+title: "System.ServiceModel.DroppedAMessage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

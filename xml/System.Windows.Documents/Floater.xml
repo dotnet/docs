@@ -43,7 +43,7 @@
 ## Examples  
  The following example defines a <xref:System.Windows.Documents.FlowDocument> that contains both <xref:System.Windows.Documents.Floater> and <xref:System.Windows.Documents.Figure> elements.  
   
- [!code-xml[FloaterFigureSnippets#_FloaterFigureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterfigurexaml)]  
+ [!code-xaml[FloaterFigureSnippets#_FloaterFigureXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterfigurexaml)]  
   
  The following illustration shows how this example renders.  
   
@@ -159,7 +159,7 @@
 ## Examples  
  The following example shows how to set this property.  
   
- [!code-xml[FloaterFigureSnippets#_FloaterPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterpropsxaml)]  
+ [!code-xaml[FloaterFigureSnippets#_FloaterPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterpropsxaml)]  
   
  [!code-csharp[FloaterFigureSnippets#_FloaterProps](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml.cs#_floaterprops)]
  [!code-vb[FloaterFigureSnippets#_FloaterProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FloaterFigureSnippets/visualbasic/window1.xaml.vb#_floaterprops)]  
@@ -255,7 +255,7 @@
 ## Examples  
  The following example shows how to set the <xref:System.Windows.Documents.Floater.Width%2A> attribute of a <xref:System.Windows.Documents.Floater> element.  
   
- [!code-xml[FloaterFigureSnippets#_FloaterPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterpropsxaml)]  
+ [!code-xaml[FloaterFigureSnippets#_FloaterPropsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml#_floaterpropsxaml)]  
   
  [!code-csharp[FloaterFigureSnippets#_FloaterProps](~/samples/snippets/csharp/VS_Snippets_Wpf/FloaterFigureSnippets/CSharp/Window1.xaml.cs#_floaterprops)]
  [!code-vb[FloaterFigureSnippets#_FloaterProps](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FloaterFigureSnippets/visualbasic/window1.xaml.vb#_floaterprops)]  

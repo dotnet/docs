@@ -1,5 +1,5 @@
 ---
-title: "out parameter modifier (C# Reference) | Microsoft Docs"
+title: "out parameter modifier (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -71,7 +71,7 @@ Overloading is legal, however, if one method takes a `ref` or `out` argument and
   
  [!code-cs[csrefKeywordsMethodParams#4](../../../../samples/snippets/csharp/language-reference/keywords/out/out-4.cs)]  
 
- The [Try pattern](https://docs.microsoft.com/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md) involves returning a `bool` to indicate whether an operation succeeded and failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the @System.DateTime.TryParse(System.String,@System.DateTime) method, use this pattern.
+ The [Try pattern](/visualstudio/code-quality/ca1021-avoid-out-parameters#try-pattern-methods.md) involves returning a `bool` to indicate whether an operation succeeded and failed, and returning the value produced by the operation in an `out` argument. A number of parsing methods, such as the @System.DateTime.TryParse(System.String,@System.DateTime) method, use this pattern.
    
 ## Calling a method with an `out` argument
 

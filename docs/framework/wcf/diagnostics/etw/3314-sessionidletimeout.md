@@ -1,5 +1,5 @@
 ---
-title: "3314 - SessionIdleTimeout | Microsoft Docs"
+title: "3314 - SessionIdleTimeout"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

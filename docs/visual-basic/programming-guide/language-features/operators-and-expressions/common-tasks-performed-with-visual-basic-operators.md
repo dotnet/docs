@@ -1,5 +1,5 @@
 ---
-title: "Common Tasks Performed with Visual Basic Operators | Microsoft Docs"
+title: "Common Tasks Performed with Visual Basic Operators"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

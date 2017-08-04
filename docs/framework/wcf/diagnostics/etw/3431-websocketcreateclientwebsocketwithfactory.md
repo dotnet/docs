@@ -1,5 +1,5 @@
 ---
-title: "3431 - WebSocketCreateClientWebSocketWithFactory | Microsoft Docs"
+title: "3431 - WebSocketCreateClientWebSocketWithFactory"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

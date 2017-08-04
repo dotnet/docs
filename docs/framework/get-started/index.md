@@ -1,5 +1,5 @@
 ---
-title: "Get started with the .NET Framework | Microsoft Docs"
+title: "Get started with the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -80,7 +80,7 @@ The .NET Framework is a runtime execution environment that manages applications 
 |[The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)|Describes the .NET Framework out-of-band releases and how to use them in your app.|
 |[System Requirements](../../../docs/framework/get-started/system-requirements.md)|Lists the hardware and software requirements for running the .NET Framework.|
 |[.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md)|Describes what .NET Core is in relation to the .NET Framework and how to access the open-source .NET Core projects.|
-|[.NET Core documentation](https://docs.microsoft.com/dotnet/)|The conceptual and API reference documentation for .NET Core.|
+|[.NET Core documentation](/dotnet/)|The conceptual and API reference documentation for .NET Core.|
 
 ## See Also
  [.NET Framework Guide](../../../docs/framework/index.md)   

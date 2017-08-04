@@ -1,5 +1,5 @@
 ---
-title: "Return Properties from a UI Automation Provider | Microsoft Docs"
+title: "Return Properties from a UI Automation Provider"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

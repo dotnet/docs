@@ -1,5 +1,5 @@
 ---
-title: "Using WorkflowInvoker and WorkflowApplication | Microsoft Docs"
+title: "Using WorkflowInvoker and WorkflowApplication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ manager: "erikre"
 > [!NOTE]
 >  The <xref:System.TimeoutException> is only thrown if the time-out interval elapses and the workflow becomes idle during execution. A workflow that takes longer than the specified time-out interval to complete completes successfully if the workflow does not become idle.  
   
- <xref:System.Activities.WorkflowInvoker> also provides asynchronous versions of the invoke method. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)]<xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> and <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
+ <xref:System.Activities.WorkflowInvoker> also provides asynchronous versions of the invoke method. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] <xref:System.Activities.WorkflowInvoker.InvokeAsync%2A> and <xref:System.Activities.WorkflowInvoker.BeginInvoke%2A>.  
   
 ### Setting Input Arguments of a Workflow  
  Data can be passed into a workflow using a dictionary of input parameters, keyed by argument name, that map to the input arguments of the workflow. In this example, a <xref:System.Activities.Statements.WriteLine> is invoked and the value for its <xref:System.Activities.Statements.WriteLine.Text%2A> argument is specified using the dictionary of input parameters.  
@@ -91,11 +91,15 @@ manager: "erikre"
  **What is your name?**   
 **BookmarkName: UserName - OwnerDisplayName: ReadLine**   
 **Steve**   
-**Hello, Steve**  [!code-csharp[CFX_WorkflowApplicationExample#14](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
+**Hello, Steve**
+
+[!code-csharp[CFX_WorkflowApplicationExample#14](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#14)]  
   
  The following code example inspects the <xref:System.Activities.WorkflowApplicationIdleEventArgs> passed into the <xref:System.Activities.WorkflowApplication.Idle%2A> handler of a <xref:System.Activities.WorkflowApplication> instance. In this example the workflow going idle has one <xref:System.Activities.Bookmark> with a name of `EnterGuess`, owned by an activity named `ReadInt`. This code example is based off of [How to: Run a Workflow](../../../docs/framework/windows-workflow-foundation/how-to-run-a-workflow.md), which is part of the [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md). If the <xref:System.Activities.WorkflowApplication.Idle%2A> handler in that step is modified to contain the code from this example, the following output is displayed.  
   
- **BookmarkName: EnterGuess - OwnerDisplayName: ReadInt** [!code-csharp[CFX_WorkflowApplicationExample#2](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#2)]  
+ **BookmarkName: EnterGuess - OwnerDisplayName: ReadInt**
+ 
+ [!code-csharp[CFX_WorkflowApplicationExample#2](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#2)]  
   
 ## Summary  
  <xref:System.Activities.WorkflowInvoker> provides a lightweight way to invoke workflows, and although it provides methods for passing data in at the start of a workflow and extracting data from a completed workflow, it does not provide for more complex scenarios which is where <xref:System.Activities.WorkflowApplication> can be used.

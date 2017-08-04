@@ -1,6 +1,6 @@
 ---
-title: F# Development Environment Features | Microsoft Docs
-description: F# Development Environment Features
+title: F# Development Environment Features
+description: Learn which features of Visual Studio 2012 are supported in F#.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -129,6 +129,6 @@ The following table summarizes the support for F# in Visual Studio tools.
 |Toolbox|Displays tabs that contain draggable objects such as controls and sections of text or code.|Yes|
 
 ## See Also
-[Getting Started with F# in Visual Studio](../tutorials/getting-started/getting-started-visual-studio.md)
+[Get Started with F# in Visual Studio](tutorials/get-started/get-started-visual-studio.md)
 
 [Configuring Projects](configuring-projects.md)

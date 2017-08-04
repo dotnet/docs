@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess5::GetArrayLayout Method | Microsoft Docs"
+title: "ICorDebugProcess5::GetArrayLayout Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -158,7 +158,7 @@
   
 -   By retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property.  
   
--   By retrieving the value of the [Thread.CurrentThread.CurrentCulture](../Topic/CurrentCulture%20Property.md) property.  
+-   By retrieving the value of the [Thread.CurrentThread.CurrentCulture](<xref:System.Threading.Thread.CurrentCulture>) property.  
   
  The following example retrieves both property values, compares them to show that they are equal, and displays the name of the current culture.  
   
@@ -169,7 +169,7 @@
   
 -   By retrieving the value of the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property.  
   
--   By retrieving the value of the [Thread.CurrentThread.CurrentUICulture](../Topic/CurrentUICulture%20Property.md) property.  
+-   By retrieving the value of the [Thread.CurrentThread.CurrentUICulture](<xref:System.Threading.Thread.CurrentUICulture>) property.  
   
  The following example retrieves both property values, compares them to show that they are equal, and displays the name of the current UI culture.  
   
@@ -312,52 +312,10 @@
 |ka-GE|Georgian (Georgia)|Traditional: 0x00000437|Modern Sort: 0x00010437|  
   
 <a name="Windows"></a>   
-## Culture and Windows apps  
- In Windows apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are read-only. You can set the current culture and current UI culture by using the Windows [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property. The following example uses it to change the application's current culture and current UI culture either to English (United States) or, if the current culture is already English (United States), to French (France). The value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are then displayed to a <xref:System.Windows.Controls.TextBlock> control named `block`. As the output from the example shows, both property values reflect the new value of the [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property.  
-  
-```csharp  
-  
-ResourceContext context = ResourceManager.Current.DefaultContext;  
-var list = new List<String>();  
-if (CultureInfo.CurrentCulture.Name == "en-US")  
-   list.Add("fr-FR");  
-else  
-   list.Add("en-US");  
-  
-context.Languages = list;  
-block.Text += String.Format("\nThe current culture is {0}\n",  
-                            CultureInfo.CurrentCulture);  
-block.Text += String.Format("The current culture UI is {0}\n",  
-                            CultureInfo.CurrentUICulture);  
-// The example displays output like the following if run on a system  
-// whose current culture is English (United States):  
-// The current culture is fr-FR  
-// The current UI culture is fr-FR  
-  
-```  
-  
-```  
-  
-Dim context As ResourceContext = ResourceManager.Current.DefaultContext  
-Dim list As New List(Of String)()  
-If CultureInfo.CurrentCulture.Name = "en-US" Then  
-   list.Add("fr-FR")  
-Else  
-   list.Add("en-US")  
-End If  
-context.Languages = list  
-block.Text += String.Format("{1}The current culture is {0}{1}",  
-                            CultureInfo.CurrentCulture, vbCrLf)  
-block.Text += String.Format("The current culture UI is {0}\n",  
-                            CultureInfo.CurrentUICulture)  
-' The example displays output Like the following if run on a system  
-' whose current culture Is English (United States):  
-'    The current culture Is fr-FR  
-'    The current UI culture Is fr-FR  
-  
-```  
-  
-   
+## The current culture and UWP apps  
+ In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are read-write, just as they are in .NET Framework and .NET Core apps. However, UWP apps recognize a single culture. The <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties map to the first value in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection.  
+
+In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties reflect the culture and UI culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> or <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.
   
 ## Examples  
  The following example shows how to create a <xref:System.Globalization.CultureInfo> object for Spanish (Spain) with the international sort and another <xref:System.Globalization.CultureInfo> object with the traditional sort.  
@@ -1072,55 +1030,13 @@ block.Text += String.Format("The current culture UI is {0}\n",
 -   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%2A> method, which returns a cached, read-only <xref:System.Globalization.CultureInfo> object.  
   
 <a name="WindowsAndCurr"></a>   
-## The Current Culture and Windows apps  
- In Windows apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property is read-only. You can set the current culture by using the Windows [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property. The following example uses it to change the application's current culture either to English (United States) or, if the current culture is already English (United States), to French (France). The value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are then displayed to a <xref:System.Windows.Controls.TextBlock> control named `block`. As the output from the example shows, the current culture changes when the [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property changes.  
-  
-```csharp  
-  
-ResourceContext context = ResourceManager.Current.DefaultContext;  
-var list = new List<String>();  
-if (CultureInfo.CurrentCulture.Name == "en-US")  
-   list.Add("fr-FR");  
-else  
-   list.Add("en-US");  
-  
-context.Languages = list;  
-block.Text += String.Format("\nThe current culture is {0}\n",  
-                            CultureInfo.CurrentCulture);  
-block.Text += String.Format("The current culture UI is {0}\n",  
-                            CultureInfo.CurrentUICulture);  
-// The example displays output like the following if run on a system  
-// whose current culture is English (United States):  
-// The current culture is fr-FR  
-// The current UI culture is fr-FR  
-  
-```  
-  
-```  
-  
-Dim context As ResourceContext = ResourceManager.Current.DefaultContext  
-Dim list As New List(Of String)()  
-If CultureInfo.CurrentCulture.Name = "en-US" Then  
-   list.Add("fr-FR")  
-Else  
-   list.Add("en-US")  
-End If  
-context.Languages = list  
-block.Text += String.Format("{1}The current culture is {0}{1}",  
-                            CultureInfo.CurrentCulture, vbCrLf)  
-block.Text += String.Format("The current culture UI is {0}\n",  
-                            CultureInfo.CurrentUICulture)  
-' The example displays output Like the following if run on a system  
-' whose current culture Is English (United States):  
-'    The current culture Is fr-FR  
-'    The current UI culture Is fr-FR  
-  
-```  
-  
-   
+## The current culture and UWP apps  
+ In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property is read-write, just as it is in .NET Framework and .NET Core apps; you can use it both to get and to set the current culture. However, UWP apps do not distinguish between the current culture and the current UI culture. The <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties map to the first value in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection.  
+
+In .NET Framework and .NET Core apps, the current culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property reflects the culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) property, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.
   
 ## Examples  
- The following code example demonstrates how to change the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.  
+ The following example demonstrates how to change the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.  
   
  [!code-cpp[System.Globalization.CultureInfo.CurrentCulture2#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.CultureInfo.CurrentCulture2/CPP/currentculture.cpp#11)]
  [!code-csharp[System.Globalization.CultureInfo.CurrentCulture2#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.CultureInfo.CurrentCulture2/CS/currentculture.cs#11)]
@@ -1232,52 +1148,11 @@ block.Text += String.Format("The current culture UI is {0}\n",
 >  Manipulating threads is dangerous because of the security state associated with threads. Therefore, this permission should be given only to trustworthy code, and then only as necessary. You cannot change thread culture in semi-trusted code.  
   
 <a name="WindowsAndCurrUI"></a>   
-## The Current UI Culture and Windows apps  
- In Windows apps, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property is read-only. You can set the current UI culture by using the Windows [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property. The following example uses it to change the application's current UI culture either to English (United States) or, if the current culture is already English (United States), to French (France). The value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties are then displayed to a <xref:System.Windows.Controls.TextBlock> control named `block`. As the output from the example shows, the current UI culture changes when the [ResourceContext.Languages](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.resources.core.resourcecontext.languages.aspx) property changes.  
-  
-```csharp  
-  
-ResourceContext context = ResourceManager.Current.DefaultContext;  
-var list = new List<String>();  
-if (CultureInfo.CurrentCulture.Name == "en-US")  
-   list.Add("fr-FR");  
-else  
-   list.Add("en-US");  
-  
-context.Languages = list;  
-block.Text += String.Format("\nThe current culture is {0}\n",  
-                            CultureInfo.CurrentCulture);  
-block.Text += String.Format("The current culture UI is {0}\n",  
-                            CultureInfo.CurrentUICulture);  
-// The example displays output like the following if run on a system  
-// whose current culture is English (United States):  
-// The current culture is fr-FR  
-// The current UI culture is fr-FR  
-  
-```  
-  
-```  
-  
-Dim context As ResourceContext = ResourceManager.Current.DefaultContext  
-Dim list As New List(Of String)()  
-If CultureInfo.CurrentCulture.Name = "en-US" Then  
-   list.Add("fr-FR")  
-Else  
-   list.Add("en-US")  
-End If  
-context.Languages = list  
-block.Text += String.Format("{1}The current culture is {0}{1}",  
-                            CultureInfo.CurrentCulture, vbCrLf)  
-block.Text += String.Format("The current culture UI is {0}\n",  
-                            CultureInfo.CurrentUICulture)  
-' The example displays output Like the following if run on a system  
-' whose current culture Is English (United States):  
-'    The current culture Is fr-FR  
-'    The current UI culture Is fr-FR  
-  
-```  
-  
-   
+## The current UI culture and UWP apps  
+ 
+In Universal Windows Platform (UWP) apps, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property is read-write, just as it is in .NET Framework and .NET Core apps; you can use it both to get and to set the current culture. However, UWP apps do not distinguish between the current culture and the current UI culture. The <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> properties map to the first value in the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) collection.
+
+In .NET Framework and .NET Core apps, the current UI culture is a per-thread setting, and the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property reflects the UI culture of the current thread only. In UWP apps, the current culture maps to the [Windows.ApplicationModel.Resources.Core.ResourceManager.DefaultContext.Languages](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.resources.core.resourcecontext#properties_) property, which is a global setting. Setting the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> property changes the culture of the entire app; culture cannot be set on a per-thread basis.    
   
 ## Examples  
  The following code example demonstrates how to change the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.  
@@ -2259,7 +2134,7 @@ csc /resource:GreetingStrings.resources Example1.cs
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a localized operating system, such as Japanese Windows 2000 Professional, this property returns the culture of the operating system. This property is the equivalent of `GetSystemDefaultUILanguage` in the Windows API.  
+ In a localized operating system, such as a Japanese edition of Windows, this property returns the culture of the operating system. This property is the equivalent of `GetSystemDefaultUILanguage` in the Windows API.  
   
  ]]></format>
         </remarks>

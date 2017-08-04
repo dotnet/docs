@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Visual Basic Application Model | Microsoft Docs"
+title: "Overview of the Visual Basic Application Model"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -74,7 +74,7 @@ translation.priority.ht:
 -   **Application shut down**. The application provides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown> event to signal when it is about to shut down. In that event handler, you can make sure that the operations your application needs to perform—closing and saving, for example—are completed. You can configure your application to shut down when the main form closes, or to shut down only when all forms close.  
   
 ## Availability  
- By default, the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model is available for Windows Forms projects. If you configure the application to use a different startup object, or start the application code with a custom `Sub Main`, then that object or class may need to provide an implementation of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class to use the application model. For information about changing the startup object, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ By default, the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model is available for Windows Forms projects. If you configure the application to use a different startup object, or start the application code with a custom `Sub Main`, then that object or class may need to provide an implementation of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class to use the application model. For information about changing the startup object, see [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>   

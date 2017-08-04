@@ -1,5 +1,5 @@
 ---
-title: "Discovery Find and FindCriteria | Microsoft Docs"
+title: "Discovery Find and FindCriteria"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

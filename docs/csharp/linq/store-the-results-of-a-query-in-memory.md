@@ -1,5 +1,5 @@
 ---
-title: Store the results of a query in memory | Microsoft Docs
+title: Store the results of a query in memory
 description: How to store results.
 keywords: .NET, .NET Core, C#
 author: BillWagner

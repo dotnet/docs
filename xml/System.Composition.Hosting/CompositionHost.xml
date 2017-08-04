@@ -16,8 +16,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A lightweight composition container that is assembled from specified providers.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateCompositionHost">
@@ -37,10 +38,11 @@
         <Parameter Name="providers" Type="System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorProvider&gt;" />
       </Parameters>
       <Docs>
-        <param name="providers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="providers">The providers, which contain export descriptions for the parts being composed.</param>
+        <summary>Creates the composition host with the specified collection of providers.</summary>
+        <returns>The created composition host.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCompositionHost">
@@ -66,10 +68,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="providers">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="providers">The providers, which contain export descriptions for the parts being composed.</param>
+        <summary>Creates the composition host with the specified array of providers.</summary>
+        <returns>The created composition host.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -87,8 +90,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the composition host and any globally shared parts.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -109,11 +113,13 @@
         <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contract">The export to retrieve.</param>
+        <param name="export">When this method returns, contains an instance of the export if available; otherwise, <see langword="null" />.</param>
+        <summary>Retrieves the specified export from the composition context.</summary>
+        <returns>
+          <see langword="true" /> if the export was retrieved; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

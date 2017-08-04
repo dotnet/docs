@@ -1,5 +1,5 @@
 ---
-title: "How to: Host and Run a Basic Windows Communication Foundation Service | Microsoft Docs"
+title: "How to: Host and Run a Basic Windows Communication Foundation Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

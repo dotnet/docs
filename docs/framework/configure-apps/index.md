@@ -1,5 +1,5 @@
 ---
-title: "Configuring Apps by using Configuration Files | Microsoft Docs"
+title: "Configuring Apps by using Configuration Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -65,7 +65,7 @@ The .NET Framework, through configuration files, gives developers and administra
 ## Machine Configuration Files  
  The machine configuration file, Machine.config, contains settings that apply to an entire computer. This file is located in the %*runtime install path*%\Config directory. Machine.config contains configuration settings for machine-wide assembly binding, built-in [remoting channels](http://msdn.microsoft.com/en-us/6e9b60e0-9bc0-47b4-a8ef-3b78585f9a18), and ASP.NET.  
   
- The configuration system first looks in the machine configuration file for the [appSettings element](http://msdn.microsoft.com/en-us/0d65a3f1-c522-423d-89b6-44921b6daebb) and other configuration sections that a developer might define. It then looks in the application configuration file. To keep the machine configuration file manageable, it is best to put these settings in the application configuration file. However, putting the settings in the machine configuration file can make your system more maintainable. For example, if you have a third-party component that both your client and server application uses, it is easier to put the settings for that component in one place. In this case, the machine configuration file is the appropriate place for the settings, so you don't have the same settings in two different files.  
+ The configuration system first looks in the machine configuration file for the [**\<appSettings>** element](~/docs/framework/configure-apps/file-schema/appsettings/index.md) and other configuration sections that a developer might define. It then looks in the application configuration file. To keep the machine configuration file manageable, it is best to put these settings in the application configuration file. However, putting the settings in the machine configuration file can make your system more maintainable. For example, if you have a third-party component that both your client and server application uses, it is easier to put the settings for that component in one place. In this case, the machine configuration file is the appropriate place for the settings, so you don't have the same settings in two different files.  
   
 > [!NOTE]
 >  Deploying an application using XCOPY will not copy the settings in the machine configuration file.  

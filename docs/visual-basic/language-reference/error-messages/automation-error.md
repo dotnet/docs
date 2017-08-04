@@ -1,5 +1,5 @@
 ---
-title: "Automation error | Microsoft Docs"
+title: "Automation error"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -44,4 +44,4 @@ An error occurred while executing a method or getting or setting a property of a
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

@@ -1,5 +1,5 @@
 ---
-title: "Interoperability Overview (C# Programming Guide) | Microsoft Docs"
+title: "Interoperability Overview (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -71,7 +71,7 @@ The topic describes methods to enable interoperability between C# managed code a
   
 1.  Add interop attributes in the C# project.  
   
-     You can make an assembly COM visible by modifying [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties. For more information, see [Assembly Information Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box).  
+     You can make an assembly COM visible by modifying [!INCLUDE[csprcs](~/includes/csprcs-md.md)] project properties. For more information, see [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box).  
   
 2.  Generate a COM type library and register it for COM usage.  
   

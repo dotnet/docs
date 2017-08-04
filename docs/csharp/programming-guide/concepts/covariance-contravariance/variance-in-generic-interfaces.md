@@ -1,5 +1,5 @@
 ---
-title: "Variance in Generic Interfaces (C#) | Microsoft Docs"
+title: "Variance in Generic Interfaces (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

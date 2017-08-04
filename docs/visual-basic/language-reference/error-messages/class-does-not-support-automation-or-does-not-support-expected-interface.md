@@ -1,5 +1,5 @@
 ---
-title: "Class does not support Automation or does not support expected interface | Microsoft Docs"
+title: "Class does not support Automation or does not support expected interface"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -44,4 +44,4 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
   
 ## See Also  
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

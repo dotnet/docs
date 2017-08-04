@@ -1,5 +1,5 @@
 ---
-title: "VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified | Microsoft Docs"
+title: "VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,4 +42,4 @@ The application is attempting to use the `VbStrConv` enumeration members `Wide` 
 ## See Also  
  <xref:System.Globalization>   
  [NOTINBUILD VbStrConv Enumeration](http://msdn.microsoft.com/en-us/59f83dd9-6361-47df-a836-02ba9d4cb936)   
- [Introduction to International Applications Based on the .NET Framework](https://docs.microsoft.com/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+ [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

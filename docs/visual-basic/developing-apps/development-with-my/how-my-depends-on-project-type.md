@@ -1,5 +1,5 @@
 ---
-title: "How My Depends on Project Type (Visual Basic) | Microsoft Docs"
+title: "How My Depends on Project Type (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

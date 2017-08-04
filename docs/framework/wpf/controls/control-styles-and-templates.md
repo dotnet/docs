@@ -1,5 +1,5 @@
 ---
-title: "Control Styles and Templates | Microsoft Docs"
+title: "Control Styles and Templates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -46,7 +46,7 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
  [ComboBox Styles and Templates](../../../../docs/framework/wpf/controls/combobox-styles-and-templates.md)  
  [ContextMenu Styles and Templates](../../../../docs/framework/wpf/controls/contextmenu-styles-and-templates.md)  
  [DataGrid Styles and Templates](../../../../docs/framework/wpf/controls/datagrid-styles-and-templates.md)  
- [DatePicker Syles and Templates](../../../../docs/framework/wpf/controls/datepicker-syles-and-templates.md)  
+ [DatePicker Syles and Templates](../../../../docs/framework/wpf/controls/datepicker-styles-and-templates.md)  
  [DocumentViewer Styles and Templates](../../../../docs/framework/wpf/controls/documentviewer-styles-and-templates.md)  
  [Expander Styles and Templates](../../../../docs/framework/wpf/controls/expander-styles-and-templates.md)  
  [Frame Styles and Templates](../../../../docs/framework/wpf/controls/frame-styles-and-templates.md)  

@@ -1,5 +1,5 @@
 ---
-title: "Using Dead-Letter Queues to Handle Message Transfer Failures | Microsoft Docs"
+title: "Using Dead-Letter Queues to Handle Message Transfer Failures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

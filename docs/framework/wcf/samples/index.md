@@ -1,5 +1,5 @@
 ---
-title: "Windows Communication Foundation (WCF) Samples | Microsoft Docs"
+title: "Windows Communication Foundation (WCF) Samples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

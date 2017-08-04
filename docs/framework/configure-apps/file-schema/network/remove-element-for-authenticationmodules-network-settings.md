@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for authenticationModules (Network Settings) | Microsoft Docs"
+title: "&lt;remove&gt; Element for authenticationModules (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -71,7 +71,7 @@ Removes an authentication module from the application.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example removes an authentication module.  
+ The following example removes an authentication module.  
   
 ```xml  
 <configuration>  

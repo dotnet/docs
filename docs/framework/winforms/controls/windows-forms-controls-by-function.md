@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Controls by Function | Microsoft Docs"
+title: "Windows Forms Controls by Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

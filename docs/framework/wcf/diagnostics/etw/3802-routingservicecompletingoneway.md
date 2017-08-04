@@ -1,5 +1,5 @@
 ---
-title: "3802 - RoutingServiceCompletingOneWay | Microsoft Docs"
+title: "3802 - RoutingServiceCompletingOneWay"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

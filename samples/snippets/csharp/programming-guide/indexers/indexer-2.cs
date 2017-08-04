@@ -11,7 +11,7 @@ class SampleCollection<T>
    
    public void Add(T value)
    {
-      if (nextIndex > arr.Length) 
+      if (nextIndex >= arr.Length) 
          throw new IndexOutOfRangeException($"The collection can hold only {arr.Length} elements.");
       arr[nextIndex++] = value;
    }

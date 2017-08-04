@@ -1,5 +1,5 @@
 ---
-title: "Basic Programming Lifecycle | Microsoft Docs"
+title: "Basic Programming Lifecycle"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,15 +26,15 @@ manager: "erikre"
 ## The Basic Tasks  
  The basic tasks to perform are, in order:  
   
-1.  Define the service contract. A service contract specifies the signature of a service, the data it exchanges, and other contractually required data. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md).  
+1.  Define the service contract. A service contract specifies the signature of a service, the data it exchanges, and other contractually required data. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md).  
   
-2.  Implement the contract. To implement a service contract, create a class that implements the contract and specify custom behaviors that the runtime should have. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md).  
+2.  Implement the contract. To implement a service contract, create a class that implements the contract and specify custom behaviors that the runtime should have. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md).  
   
-3.  Configure the service by specifying endpoints and other behavior information. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Configuring Services](../../../docs/framework/wcf/configuring-services.md).  
+3.  Configure the service by specifying endpoints and other behavior information. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Configuring Services](../../../docs/framework/wcf/configuring-services.md).  
   
-4.  Host the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+4.  Host the service. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
-5.  Build a client application. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Building Clients](../../../docs/framework/wcf/building-clients.md).  
+5.  Build a client application. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] [Building Clients](../../../docs/framework/wcf/building-clients.md).  
   
  Although the topics in this section follow this order, some scenarios do not start at the beginning. For example, if you want to build a client for a pre-existing service, you start at step 5. Or if you are building a service that others will use, you may skip step 5.  
   

@@ -11,8 +11,19 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Error handler for publishing SOAP-enabled services in COM+ applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.ComSoapPublishError> class provides a static <xref:System.EnterpriseServices.Internal.ComSoapPublishError.Report%2A> method for writing to an event log errors that were encountered while publishing SOAP-enabled COM interfaces in COM+ applications.  
+  
+ <xref:System.EnterpriseServices.Internal.ComSoapPublishError> is used internally by the .NET Framework. You do not need to use the class directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+    <altmember cref="T:System.EnterpriseServices.Internal.Publish" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,8 +37,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.Internal.ComSoapPublishError" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Report">
@@ -46,9 +58,17 @@
         <Parameter Name="s" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="s">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="s">An error message to be written to the event log.</param>
+        <summary>Writes to an event log an error encountered while publishing SOAP-enabled COM interfaces in COM+ applications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.ComSoapPublishError.Report%2A> method is used internally by the .NET Framework. You do not need to use the method directly in your code.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -353,7 +353,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Drawing.SizeF op_Addition (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.SizeF operator + (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.SizeF op_Addition(valuetype System.Drawing.SizeF sz1, valuetype System.Drawing.SizeF sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeF.op_Addition(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <MemberType>Method</MemberType>
@@ -405,7 +405,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.SizeF sz1, valuetype System.Drawing.SizeF sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeF.op_Equality(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <MemberType>Method</MemberType>
@@ -438,7 +438,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Drawing.PointF op_Explicit (System.Drawing.SizeF size);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Drawing.PointF (System.Drawing.SizeF size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Explicit(valuetype System.Drawing.SizeF size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeF.op_Explicit(System.Drawing.SizeF)~System.Drawing.PointF" />
       <MemberType>Method</MemberType>
@@ -469,7 +469,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.SizeF sz1, valuetype System.Drawing.SizeF sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeF.op_Inequality(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <MemberType>Method</MemberType>
@@ -502,7 +502,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Drawing.SizeF op_Subtraction (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.SizeF operator - (System.Drawing.SizeF sz1, System.Drawing.SizeF sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.SizeF op_Subtraction(valuetype System.Drawing.SizeF sz1, valuetype System.Drawing.SizeF sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.SizeF.op_Subtraction(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <MemberType>Method</MemberType>

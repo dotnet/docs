@@ -16,8 +16,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single composition operation.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNonPrerequisiteAction">
@@ -37,9 +38,18 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="action">The action to run.</param>
+        <summary>Specifies an action that can run after all prerequisite part dependencies have been satisfied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called during the activation process.
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="action" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddPostCompositionAction">
@@ -59,9 +69,17 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="action">The action to run.</param>
+        <summary>Specifies an action to run after all composition has completed, as indicated by the <see cref="T:System.Composition.OnImportsSatisfiedAttribute" />.
+        </summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called during the activation process.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -79,8 +97,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all locks held during the composition operation.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -101,11 +120,12 @@
         <Parameter Name="compositionRootActivator" Type="System.Composition.Hosting.Core.CompositeActivator" />
       </Parameters>
       <Docs>
-        <param name="outermostLifetimeContext">To be added.</param>
-        <param name="compositionRootActivator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="outermostLifetimeContext">The context in which to begin the operation (the operation can flow to the parents of the context if required).</param>
+        <param name="compositionRootActivator">The activator that drives the operation.</param>
+        <summary>Runs the composition operation starting within the specified lifetime context, driven by the specified activator.</summary>
+        <returns>The composed object graph.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

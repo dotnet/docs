@@ -1,5 +1,5 @@
 ---
-title: "&lt;idn&gt; Element (Uri Settings) | Microsoft Docs"
+title: "&lt;idn&gt; Element (Uri Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -91,7 +91,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ## Example  
   
 ### Description  
- The following code example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names.  
+ The following example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names.  
   
 ### Code  
   

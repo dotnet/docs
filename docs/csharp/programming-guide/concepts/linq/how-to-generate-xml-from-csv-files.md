@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate XML from CSV Files (C#) | Microsoft Docs"
+title: "How to: Generate XML from CSV Files (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

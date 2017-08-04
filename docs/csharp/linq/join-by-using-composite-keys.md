@@ -1,5 +1,5 @@
 ---
-title: Join by using composite keys | Microsoft Docs
+title: Join by using composite keys
 description: How to join by using composite keys.
 keywords: .NET, .NET Core, C#
 author: BillWagner

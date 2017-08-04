@@ -1,5 +1,5 @@
 ---
-title: "How to: Show Available Serial Ports in Visual Basic | Microsoft Docs"
+title: "How to: Show Available Serial Ports in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -48,7 +48,7 @@ This topic describes how to use `My.Computer.Ports` to show the available serial
   
  [!code-vb[VbVbalrMyComputer#45](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-show-available-serial-ports_1.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Compiling the Code  
  This example requires:  

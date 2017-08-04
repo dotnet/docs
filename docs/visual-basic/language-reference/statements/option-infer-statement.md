@@ -1,5 +1,5 @@
 ---
-title: "Option Infer Statement | Microsoft Docs"
+title: "Option Infer Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -66,20 +66,20 @@ Option Infer { On | Off }
  ![IntelliSense view of the declaration.](../../../visual-basic/language-reference/statements/media/optioninferasinteger.png "optionInferAsInteger")  
 IntelliSense when Option Infer is on  
   
- In the following illustration, `Option Infer` is turned off. The variable in the declaration `Dim someVar = 2` is declared as an `Object` by type inference. In this example, the **Option Strict** setting is set to **Off** on the [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+ In the following illustration, `Option Infer` is turned off. The variable in the declaration `Dim someVar = 2` is declared as an `Object` by type inference. In this example, the **Option Strict** setting is set to **Off** on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
  ![IntelliSense view of the declaration.](../../../visual-basic/language-reference/statements/media/optioninferasobject.png "optionInferAsObject")  
 IntelliSense when Option Infer is off  
   
 > [!NOTE]
->  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification.md).  
+>  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification/index.md).
   
  Type inference applies at the procedure level, and does not apply outside a procedure in a class, structure, module, or interface.  
   
  For additional information, see [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).  
   
 ## When an Option Infer Statement Is Not Present  
- If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.  
+ If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.  
   
 #### To set Option Infer in the IDE  
   
@@ -121,6 +121,6 @@ IntelliSense when Option Infer is off
  [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)   
  [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)   
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

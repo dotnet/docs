@@ -1,5 +1,5 @@
 ---
-title: "Denial of Service | Microsoft Docs"
+title: "Denial of Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Describes an export of a part known to the composition engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the only runtime overhead that is maintained per-part; all other part-specific information must be discarded once its export descriptors have been retrieved.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +35,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected constructor that can only be called from derived classes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Activator">
@@ -46,9 +60,10 @@
         <ReturnType>System.Composition.Hosting.Core.CompositeActivator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the activator used to retrieve instances of the export.</summary>
+        <value>The activator.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -69,11 +84,12 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="activator">To be added.</param>
-        <param name="metadata">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="activator">The activator used to retrieve instances of the export.</param>
+        <param name="metadata">The metadata associated with the export.</param>
+        <summary>Creates an export descriptor that has the specified activator and metadata.</summary>
+        <returns>The created descriptor.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -90,9 +106,10 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the metadata for the export.</summary>
+        <value>A collection of metadata.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

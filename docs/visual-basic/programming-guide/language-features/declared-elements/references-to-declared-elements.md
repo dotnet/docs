@@ -1,5 +1,5 @@
 ---
-title: "References to Declared Elements (Visual Basic) | Microsoft Docs"
+title: "References to Declared Elements (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -218,7 +218,7 @@ Dim xDoc As xD.XmlDocument
 ## See Also  
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
  [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
  [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
  [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
  [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)   

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.ServerMaxPooledConnectionsQuotaReached | Microsoft Docs"
+title: "System.ServiceModel.Channels.ServerMaxPooledConnectionsQuotaReached"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

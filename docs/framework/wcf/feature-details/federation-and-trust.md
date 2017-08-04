@@ -1,5 +1,5 @@
 ---
-title: "Federation and Trust | Microsoft Docs"
+title: "Federation and Trust"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

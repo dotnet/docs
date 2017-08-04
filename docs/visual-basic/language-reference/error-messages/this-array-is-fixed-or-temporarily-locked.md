@@ -1,5 +1,5 @@
 ---
-title: "This array is fixed or temporarily locked (Visual Basic) | Microsoft Docs"
+title: "This array is fixed or temporarily locked (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

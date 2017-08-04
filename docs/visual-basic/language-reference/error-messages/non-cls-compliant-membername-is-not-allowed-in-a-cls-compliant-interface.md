@@ -1,5 +1,5 @@
 ---
-title: "Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface | Microsoft Docs"
+title: "Non-CLS-compliant &lt;membername&gt; is not allowed in a CLS-compliant interface"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -45,7 +45,7 @@ A property, procedure, or event in an interface is marked as `<CLSCompliant(True
   
  If you do not apply the <xref:System.CLSCompliantAttribute> to an element, it is considered to be noncompliant.  
   
- By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40033  
   

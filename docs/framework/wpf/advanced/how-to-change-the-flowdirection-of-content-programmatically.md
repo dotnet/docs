@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the FlowDirection of Content Programmatically | Microsoft Docs"
+title: "How to: Change the FlowDirection of Content Programmatically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,7 @@ This example shows how to programmatically change the              <xref:System.
 ## Example  
  Two                      <xref:System.Windows.Controls.Button> elements are created, each representing one of the possible values of                      <xref:System.Windows.FlowDirection>. When a button is clicked, the associated property value is applied to the contents of a                      <xref:System.Windows.Controls.FlowDocumentReader> named                      `tf1`.  The property value is also written to a                      <xref:System.Windows.Controls.TextBlock> named                      `txt1`.  
   
- [!code-xml[FlowDirectionSnippets#_FlowDirectionXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml#_flowdirectionxaml)]  
+ [!code-xaml[FlowDirectionSnippets#_FlowDirectionXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml#_flowdirectionxaml)]  
   
 ## Example  
  The events associated with the button clicks defined above are handled in a                      [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)] code-behind file.  

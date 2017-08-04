@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure Tracking with WorkflowServiceHost | Microsoft Docs"
+title: "How to: Configure Tracking with WorkflowServiceHost"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

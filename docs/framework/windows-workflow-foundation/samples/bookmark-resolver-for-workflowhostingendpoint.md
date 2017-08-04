@@ -1,5 +1,5 @@
 ---
-title: "Bookmark Resolver for WorkflowHostingEndpoint | Microsoft Docs"
+title: "Bookmark Resolver for WorkflowHostingEndpoint"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

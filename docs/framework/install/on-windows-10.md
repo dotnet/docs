@@ -7,9 +7,6 @@ keywords: .NET Framework, Install
 ms.date: 08/03/2017
 ms.topic: article
 ms.prod: .net-framework
-ms.technology: vs-ide-deployment
-ms.devlang: dotnet
-ms.assetid: 85cda1d5-c6g4-4eb5-93e6-4f478de07ff7
 ---
 
 # Install the .NET Framework on Windows 10

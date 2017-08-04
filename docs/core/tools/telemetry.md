@@ -4,7 +4,7 @@ description: Discover the .NET Core tools telemetry features that collect usage 
 keywords: .NET, .NET Core, telemetry
 author: richlander
 ms.author: mairaw
-ms.date: 07/22/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -14,20 +14,20 @@ ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
 
 # .NET Core CLI Tools telemetry
 
-The .NET Core CLI Tools include a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It's important that the .NET Team understands how the tools are used so that we can improve them. For more information, see [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/).
+The [.NET Core Command-Line Interface (CLI) Tools](index.md) includes a [telemetry feature](https://github.com/dotnet/cli/pull/2145) that collects usage information. It's important that the .NET Team understands how the tools are used so that we can improve them. For more information, see [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/).
 
 The collected data is anonymous and published in an aggregated form for use by both Microsoft and the community under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/). 
 
 ## Scope
 
-The `dotnet` command is used to launch both apps and the .NET Core CLI Tools. The `dotnet` command itself doesn't collect telemetry. The .NET Core CLI Tools commands run by the `dotnet` command collect the telemetry.
+The `dotnet` command is used to launch both apps and the .NET Core CLI. The `dotnet` command itself doesn't collect telemetry. The .NET Core CLI commands run by the `dotnet` command collect the telemetry.
 
-Telemetry *isn't enabled* when using the .NET Core commands:
+Telemetry *isn't enabled* when using the `dotnet` command itself, with no command attached:
 
 - `dotnet`
 - `dotnet [path-to-app]`
 
-Telemetry *is enabled* when using the .NET Core CLI Tools [commands](index.md), such as:
+Telemetry *is enabled* when using the [.NET Core CLI commands](index.md), such as:
 
 - `dotnet build`
 - `dotnet pack`
@@ -42,16 +42,14 @@ The .NET Core CLI Tools telemetry feature is enabled by default. Opt-out of the 
 
 The feature collects the following data:
 
-- Timestamp&#8224;
-- Command (for example, "build")&#8224;
+- Timestamp of invocation&#8224;
+- Command invoked (for example, "build")&#8224;
 - Geographical location&#8224;
 - `ExitCode` of the command
 - Test runner (for test projects)
 - Operating system and version&#8224;
-- Runtime&#8224;
-- CLI (SDK) version&#8224;
-- CLI installation success/failure
-
+- Whether runtime IDs are present in the runtimes node&#8224;
+- .NET Core SDK version&#8224;
 
 &#8224;This metric is published.
 
@@ -72,7 +70,8 @@ Published data is available quarterly. The columns of a data file are:
 - OSVersion
 - SDKVersion
 
-&#8224;The *Occurrences* column displays the aggregate count of that command's use for that row's metrics that day. &#8225;Typically, the *Geography* column displays the name of a country. In some cases, the continent of Antarctica appears in this column, either due to researchers using .NET Core in Antarctica or incorrect location data.
+&#8224;The *Occurrences* column displays the aggregate count of that command's use for that row's metrics that day. 
+&#8225;Typically, the *Geography* column displays the name of a country. In some cases, the continent of Antarctica appears in this column, either due to researchers using .NET Core in Antarctica or incorrect location data.
 
 ### Example
 
@@ -87,7 +86,7 @@ Published data is available quarterly. The columns of a data file are:
 [2017 - Q1](https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-2017-q1.tsv)  
 [2017 - Q2](https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-2017-q2.tsv)
 
-Additional datasets are posted using a standard URL format. Replace `<YEAR>` with the year and replace `<QUARTER>` with the quarter of the year (use `1`, `2`, `3`, or `4`). The files are in *TSV* (tab-separated values) format.
+Additional datasets are posted using a standard URL format. Replace `<YEAR>` with the year and replace `<QUARTER>` with the quarter of the year (use `1`, `2`, `3`, or `4`). The files are in tab-separated values (*TSV*) format.
 
 ```
 https://dotnetcli.blob.core.windows.net/usagedata/dotnet-cli-usage-<YEAR>-q<QUARTER>.tsv

@@ -38,15 +38,15 @@ You choose a platform configuration when you create a portable library. These ar
 
 Many library developers have switched from producing multiple platform-specific libraries from one source (using conditional compilation directives) to portable libraries. There are [several approaches](http://blog.stephencleary.com/2012/11/portable-class-library-enlightenment.html) for accessing platform-specific functionality within portable libraries, with [bait-and-switch](http://log.paulbetts.org/the-bait-and-switch-pcl-trick/) being the most widely accepted technique at this point.
 
-### .NET Core Class Libraries
+### .NET Standard Class Libraries
 
-.NET Core libraries are a replacement of the platform-specific and portable libraries concepts. They are platform-specific in the sense that they expose all functionality from the underlying platform (no synthetic platforms or platform intersections). They are portable in the sense that they work on all supporting platforms.
+.NET Standard libraries are a replacement of the platform-specific and portable libraries concepts. They are platform-specific in the sense that they expose all functionality from the underlying platform (no synthetic platforms or platform intersections). They are portable in the sense that they work on all supporting platforms.
 
-.NET Core exposes a set of library _contracts_. .NET implementations must support each contract fully or not at all. Each implementation, therefore, supports a set of .NET Core contracts. The corollary is that each .NET Core class library is supported on the platforms that support it’s contract dependencies.
+The .NET Standard exposes a set of library _contracts_. .NET implementations must support each contract fully or not at all. Each implementation, therefore, supports a set of .NET Standard contracts. The corollary is that each .NET Standard class library is supported on the platforms that support it’s contract dependencies.
 
-.NET Core contracts do not expose the entire functionality of the .NET Framework (nor is that a goal), however, they do expose many more APIs than Portable Class Libraries. More APIs will be added over time.
+The .NET Standard does not expose the entire functionality of the .NET Framework (nor is that a goal), however, they do expose many more APIs than Portable Class Libraries. More APIs will be added over time.
 
-The following platforms support .NET Core class libraries:
+The following platforms support .NET Standard libraries:
 
 *   .NET Core
 *   ASP.NET Core

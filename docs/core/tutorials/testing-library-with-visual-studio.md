@@ -116,7 +116,7 @@ To create the test methods:
 # [Visual Basic](#tab/visual-basic) 
 1. In the *UnitTest1.vb* code window, replace the code with the following code:
 
-    [!CODE-vb[Test#1](../../../samples/snippets/core/tutorials/with_visual_studio_2017/testlib1.cs)]
+    [!CODE-vb[Test#1](../../../samples/snippets/core/tutorials/vb-library-with-visual-studio/testlib.vb)]
 
    Note that your test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 

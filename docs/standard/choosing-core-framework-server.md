@@ -14,7 +14,7 @@ ms.assetid: 155553e4-89a2-418d-be88-4e75f6c3cc69
 
 # Choosing between .NET Core and .NET Framework for server apps
 
-There are two supported choices of runtime for building server-side applications with .NET: .NET Framework and .NET Core. Both share a lot of the same .NET platform components and you can share code across the two. However, there are fundamental differences between the two and your choice will depend on what you want to accomplish.  This article provides guidance on when to use each.
+There are two supported implementations for building server-side applications with .NET: .NET Framework and .NET Core. Both share a lot of the same components and you can share code across the two. However, there are fundamental differences between the two and your choice will depend on what you want to accomplish.  This article provides guidance on when to use each.
 
 You should use .NET Core for your server application when:
 

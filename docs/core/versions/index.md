@@ -77,7 +77,7 @@ There are two primary metapackages for .NET Core.
 
 - v1.6 as of .NET Core 1.0 (these versions won't typically or intentionally match).
 - Maps to the `netstandard` framework. 
-- Describes the packages that are considered required for modern app development and that .NET platforms must implement to be considered a [.NET Standard](../../standard/net-standard.md) platform.
+- Describes the packages that are considered required for modern app development and that .NET implementations must implement to be considered a [.NET Standard](../../standard/net-standard.md) platform.
 
 **Microsoft.NETCore.App**
 
@@ -91,7 +91,7 @@ Note: [`Microsoft.NETCore.Portable.Compatibility`](https://www.nuget.org/package
 
 Framework versions are updated when new APIs are added. They have no concept of patch version, since they represent API shape and not implementation concerns. Major and minor versioning will follow the SemVer rules specified earlier.
 
-The `netcoreapp` framework is tied to the .NET Core distribution. It will follow the version numbers used by .NET Core. For example, when .NET Core 2.0 is released, it will target `netcoreapp2.0`. The `netstandard` framework will not match the versioning scheme of any .NET runtime, given that it is equally applicable to all of them.
+The `netcoreapp` framework is tied to the .NET Core distribution. It will follow the version numbers used by .NET Core. For example, when .NET Core 2.0 is released, it will target `netcoreapp2.0`. The `netstandard` framework will not match the versioning scheme of any .NET implementation, given that it is equally applicable to all of them.
 
 ## Versioning in Practice
 

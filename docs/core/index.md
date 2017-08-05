@@ -118,13 +118,13 @@ There are a mix of platform-specific and platform-neutral libraries in .NET Core
 - [System.IO](https://github.com/dotnet/corefx/tree/master/src/System.IO) and [System.Security.Cryptography.Algorithms](https://github.com/dotnet/corefx/tree/master/src/System.Security.Cryptography.Algorithms) are platform-specific, given that the storage and cryptography APIs differ significantly on each OS. 
 - [System.Collections](https://github.com/dotnet/corefx/tree/master/src/System.Collections) and [System.Linq](https://github.com/dotnet/corefx/tree/master/src/System.Linq) are platform-neutral, given that they create and operate over data structures.
 
-## Comparisons to other .NET Platforms
+## Comparisons to other .NET implementations
 
-It is perhaps easiest to understand the size and shape of .NET Core by comparing it to existing .NET platforms. 
+It is perhaps easiest to understand the size and shape of .NET Core by comparing it to existing .NET implementations. 
 
 ### Comparison with .NET Framework
 
-The .NET platform was first announced by Microsoft in 2000 and then evolved from there. The .NET Framework has been the primary .NET product produced by Microsoft during that 15+ year span. 
+.NET was first announced by Microsoft in 2000 and then evolved from there. The .NET Framework has been the primary .NET implementation produced by Microsoft during that 15+ year span. 
 
 The major differences between .NET Core and the .NET Framework: 
 
@@ -134,7 +134,7 @@ The major differences between .NET Core and the .NET Framework:
 - **Platforms** -- The .NET Framework supports Windows and Windows Server while .NET Core also supports macOS and Linux.
 - **Open Source** -- .NET Core is open source, while a [read-only subset of the .NET Framework](https://github.com/microsoft/referencesource) is open source.
 
-While .NET Core is unique and has significant differences to the .NET Framework and other .NET platforms, it is straightforward to share code, using either source or binary sharing techniques. 
+While .NET Core is unique and has significant differences to the .NET Framework and other .NET implementations, it is straightforward to share code, using either source or binary sharing techniques. 
 
 ### Comparison with Mono
 

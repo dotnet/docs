@@ -24,16 +24,19 @@ public class LabeledPoint
         this.Label = label;
     }
 
-    public static LabeledPoint MovePoint(LabeledPoint source, double xDistance, double yDistance)
+    public static LabeledPoint MovePoint(LabeledPoint source, 
+        double xDistance, double yDistance)
     {
         // return a default value:
         if (source == null)
             return default;
 
-        return new LabeledPoint(source.X + xDistance, source.Y + yDistance, source.Label);
+        return new LabeledPoint(source.X + xDistance, source.Y + yDistance, 
+        source.Label);
     }
 
-    public static LabeledPoint FindClosestLocation(IEnumerable<LabeledPoint> sequence, Point location)
+    public static LabeledPoint FindClosestLocation(IEnumerable<LabeledPoint> sequence, 
+        Point location)
     {
         // initialize variable:
         LabeledPoint rVal = default;

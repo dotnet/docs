@@ -40,7 +40,7 @@ The `default` keyword can be used in the `switch` statement or in a default valu
 
 - [The switch statement](switch.md): Specifies the default label.
 
-- [Default value expressions](../../programming-guide/statements-expressions-operators/default-value-expressions.md): Specifies the default value of the type. This will be null for reference types and zero for value types, and the 0 bit pattern for structs.
+- [Default value expressions](../../programming-guide/statements-expressions-operators/default-value-expressions.md): Produces the default value of the type. This will be null for reference types and zero for value types, and the 0 bit pattern for structs.
 
 ## See Also
 

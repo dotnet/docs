@@ -89,7 +89,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
         proxyaddress="http://192.168.1.10:3128"  
         bypassonlocal="true"  
       />  
-      <bypasslist  
+      <bypasslist>  
         <add address="[a-z]+\.contoso\.com" />  
       </bypasslist>  
     </defaultProxy>  

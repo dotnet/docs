@@ -54,7 +54,7 @@
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
 ## [Get started](core/get-started.md)
-## [What's new in .NET Core 2.0](core/whats-new/whats-new-in-dotnet-core-2-0.md)
+## [What's new in .NET Core](core/whats-new/)
 ## [Windows Prerequisites](core/windows-prerequisites.md)
 ## [macOS Prerequisites](core/macos-prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)

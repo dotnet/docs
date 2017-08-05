@@ -28,7 +28,7 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with Visual Studio Code
 
-- [Getting Started with C# using Visual Studio Code](../../csharp/getting-started/with-visual-studio-code.md)
+- [Getting Started with C# and Visual Studio Code](with-visual-studio-code.md)
 - [Getting started with .NET Core on macOS](using-on-macos.md)
 
 ## Building applications with Visual Studio for Mac

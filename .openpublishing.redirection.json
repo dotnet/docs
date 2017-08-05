@@ -276,6 +276,7 @@
             "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
         },
+        
         {
             "source_path": "docs/csharp/getting-started/publishing-with-visual-studio.md",
             "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
@@ -899,6 +900,11 @@
         {        
             "source_path": "fsharp/tutorials/getting-started/getting-started-command-line.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
             "redirect_document_id": true
         }
     ]

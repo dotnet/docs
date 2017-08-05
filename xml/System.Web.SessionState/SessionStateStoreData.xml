@@ -110,7 +110,7 @@
  Custom session-store implementers can obtain a reference to the <xref:System.Web.HttpStaticObjectsCollection> class for the current <xref:System.Web.HttpContext> instance using the <xref:System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects%2A> method.  
   
 > [!NOTE]
->  Custom objects stored in the <xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> collection must support binary serialization. For more information, see [Binary Serialization](~/docs/framework/serialization/binary-serialization.md).  
+>  Custom objects stored in the <xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> collection must support binary serialization. For more information, see [Binary Serialization](~/docs/standard/serialization/binary-serialization.md).  
   
  ]]></format>
         </remarks>

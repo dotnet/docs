@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class handles the configuration element [\&lt;dateTimeSerialization\&gt; Element](~/docs/framework/serialization/datetimeserialization-element.md) found under the [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md). For more information about configuration files, see [Configuration File Schema](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
+ This class handles the configuration element [\&lt;dateTimeSerialization\&gt; Element](~/docs/standard/serialization/datetimeserialization-element.md) found under the [\&lt;system.xml.serialization\&gt; Element](~/docs/standard/serialization/system-xml-serialization-element.md). For more information about configuration files, see [Configuration File Schema](~/docs/framework/configure-apps/file-schema/index.md).  
   
  ]]></format>
     </remarks>
@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is used when handling the `mode` attribute of the [\&lt;dateTimeSerialization\&gt; Element](~/docs/framework/serialization/datetimeserialization-element.md).  
+ This property is used when handling the `mode` attribute of the [\&lt;dateTimeSerialization\&gt; Element](~/docs/standard/serialization/datetimeserialization-element.md).  
   
  ]]></format>
         </remarks>

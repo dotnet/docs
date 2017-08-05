@@ -28,7 +28,7 @@
   
  Your XML Web service should be identified by a XML namespace that you control. For example, you could use your company's Internet domain name as part of the XML namespace. Although many XML Web service XML namespaces look like URLs, they need not point to an actual resource on the Web. (XML Web service XML namespaces are URIs.) For XML Web services created using ASP.NET, the default XML namespace can be changed using <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

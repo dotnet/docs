@@ -73,7 +73,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
    ![Reference manager](./media/consuming-library-with-visual-studio/referencemanager.png)
 
-1. In the code window for the *Program.cs* file, replace all of the code with the following code:
+1. In the code window for the *Program.vb* file, replace all of the code with the following code:
 
  [!CODE-vb[UsingClassLib#1](../../../samples/snippets/core/tutorials/vb-library-with-visual-studio/showcase.vb)]
 

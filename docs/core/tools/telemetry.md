@@ -1,7 +1,7 @@
 ---
 title: .NET Core CLI Tools telemetry
-description: Discover the .NET Core tools telemetry features that collect usage information for analysis.
-keywords: .NET, .NET Core, telemetry
+description: Discover the .NET Core tools telemetry features that collect usage information for analysis, which data is collected and how to disable it.
+keywords: .NET,.NET Core,telemetry
 author: richlander
 ms.author: mairaw
 ms.date: 08/04/2017

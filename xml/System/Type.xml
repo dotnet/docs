@@ -296,7 +296,7 @@
   
  Similarly, if the current <xref:System.Type> object represents an unassigned generic parameter `T`, this property returns the assembly that contains the generic type that defines `T`.  
   
- If the <xref:System.Type.Assembly%2A?displayProperty=fullName> property is not available on a particular .NET platform, such as .NET Core or the Universal Windows Platform, use the  `System.Reflection.TypeInfo.Assembly` property instead. ?qualifyHint=False&autoUpgrade=True  
+ If the <xref:System.Type.Assembly%2A?displayProperty=fullName> property is not available on a particular .NET implementation, such as .NET Core or the Universal Windows Platform, use the <xref:System.Reflection.TypeInfo.Assembly?displayProperty=fullName> property instead.      
   
  This property is read-only.  
   

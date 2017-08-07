@@ -1,5 +1,5 @@
 ---
-title: "Conceptual Model Canonical to SQL Server Functions Mapping | Microsoft Docs"
+title: "Conceptual Model Canonical to SQL Server Functions Mapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -58,7 +58,7 @@ This topic describes how conceptual model canonical functions map to the corresp
 |[Minute(expression)](../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)|`DatePart(minute, expression)`|  
 |[Month(expression)](../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)|`DatePart(month, expression)`|  
 |[Second(expression)](../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)|`DatePart(second, expression)`|  
-|[Truncate(expression)](../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)|For SQL Server 2000 and SQL Server 2005, a truncated `datetime`formatted value is created on the server. For SQL Server 2008 and later versions, a truncated`datetime2` or`datetimeoffset` value is created on the server.|  
+|[Truncate(expression)](../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)|For SQL Server 2000 and SQL Server 2005, a truncated `datetime` formatted value is created on the server. For SQL Server 2008 and later versions, a truncated `datetime2` or `datetimeoffset` value is created on the server.|  
 |[Year(expression)](../../../../../docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md)|`DatePart(YEAR, expression)`|  
   
 ## Aggregate Functions  

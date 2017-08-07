@@ -962,7 +962,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Addition (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator + (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Addition(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Addition(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1001,7 +1001,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_BitwiseAnd (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator &amp; (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_BitwiseAnd(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_BitwiseAnd(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1040,7 +1040,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_BitwiseOr (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator | (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_BitwiseOr(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_BitwiseOr(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1079,7 +1079,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Division (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator / (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Division(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Division(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1118,7 +1118,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Equality (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator == (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Equality(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1157,7 +1157,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_ExclusiveOr (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator ^ (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_ExclusiveOr(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_ExclusiveOr(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1196,7 +1196,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Explicit (System.Data.SqlTypes.SqlBoolean x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1231,7 +1231,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Explicit (System.Data.SqlTypes.SqlDecimal x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlDecimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1266,7 +1266,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Explicit (System.Data.SqlTypes.SqlDouble x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlDouble x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1301,7 +1301,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (System.Data.SqlTypes.SqlInt64 x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlInt64)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -1336,7 +1336,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Explicit (System.Data.SqlTypes.SqlMoney x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlMoney x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1371,7 +1371,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Explicit (System.Data.SqlTypes.SqlSingle x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlSingle x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1406,7 +1406,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Explicit (System.Data.SqlTypes.SqlString x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlString x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1441,7 +1441,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt; (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_GreaterThan(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1480,7 +1480,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt;= (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1519,7 +1519,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Implicit (System.Data.SqlTypes.SqlByte x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlByte x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1554,7 +1554,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Implicit (System.Data.SqlTypes.SqlInt16 x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlInt16 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1589,7 +1589,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Implicit (System.Data.SqlTypes.SqlInt32 x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlInt32 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1624,7 +1624,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Implicit (long x);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (long x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(int64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Int64)~System.Data.SqlTypes.SqlInt64" />
       <MemberType>Method</MemberType>
@@ -1659,7 +1659,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator != (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Inequality(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1698,7 +1698,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThan (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt; (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_LessThan(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1737,7 +1737,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt;= (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_LessThanOrEqual(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1776,7 +1776,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Modulus (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator % (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Modulus(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Modulus(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1815,7 +1815,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Multiply (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator * (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Multiply(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Multiply(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1854,7 +1854,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_OnesComplement (System.Data.SqlTypes.SqlInt64 x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator ~ (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_OnesComplement(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_OnesComplement(System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1891,7 +1891,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_Subtraction (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator - (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Subtraction(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Subtraction(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>
@@ -1930,7 +1930,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 op_UnaryNegation (System.Data.SqlTypes.SqlInt64 x);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator - (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_UnaryNegation(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_UnaryNegation(System.Data.SqlTypes.SqlInt64)" />
       <MemberType>Method</MemberType>

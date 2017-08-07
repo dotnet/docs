@@ -1,5 +1,5 @@
 ---
-title: "&lt;AppContextSwitchOverrides&gt; Element | Microsoft Docs"
+title: "&lt;AppContextSwitchOverrides&gt; Element"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

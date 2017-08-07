@@ -1,5 +1,5 @@
 ---
-title: "Using JSONP | Microsoft Docs"
+title: "Using JSONP"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

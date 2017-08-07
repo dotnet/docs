@@ -1,6 +1,6 @@
 ---
-title: Interpreting Expressions | Microsoft Docs
-description: Interpreting Expressions
+title: Interpreting Expressions
+description: Learn how to write code to examine the structure of an expression tree.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

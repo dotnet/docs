@@ -1,5 +1,5 @@
 ---
-title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt; | Microsoft Docs"
+title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

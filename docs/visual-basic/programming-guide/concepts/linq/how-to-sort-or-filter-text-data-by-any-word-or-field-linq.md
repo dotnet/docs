@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic) | Microsoft Docs"
+title: "How to: Sort or Filter Text Data by Any Word or Field (LINQ) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

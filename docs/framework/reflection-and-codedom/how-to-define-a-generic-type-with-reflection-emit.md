@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Generic Type with Reflection Emit | Microsoft Docs"
+title: "How to: Define a Generic Type with Reflection Emit"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

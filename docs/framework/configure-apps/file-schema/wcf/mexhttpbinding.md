@@ -1,5 +1,5 @@
 ---
-title: "&lt;mexHttpBinding&gt; | Microsoft Docs"
+title: "&lt;mexHttpBinding&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

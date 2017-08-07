@@ -1,5 +1,5 @@
 ---
-title: "IBindingDisplay Interface | Microsoft Docs"
+title: "IBindingDisplay Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Multiple Transformations to a 3-D Model | Microsoft Docs"
+title: "How to: Apply Multiple Transformations to a 3-D Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

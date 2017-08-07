@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET Compatibility | Microsoft Docs"
+title: "ASP.NET Compatibility"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

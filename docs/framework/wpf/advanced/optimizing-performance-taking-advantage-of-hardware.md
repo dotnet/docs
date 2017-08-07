@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Performance: Taking Advantage of Hardware | Microsoft Docs"
+title: "Optimizing Performance: Taking Advantage of Hardware"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

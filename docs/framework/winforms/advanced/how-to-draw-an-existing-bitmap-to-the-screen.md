@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw an Existing Bitmap to the Screen | Microsoft Docs"
+title: "How to: Draw an Existing Bitmap to the Screen"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

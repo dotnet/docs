@@ -1,5 +1,5 @@
 ---
-title: "How to: Adjust Spacing Between Paragraphs | Microsoft Docs"
+title: "How to: Adjust Spacing Between Paragraphs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

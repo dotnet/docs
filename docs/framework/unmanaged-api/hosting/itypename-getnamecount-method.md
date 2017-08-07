@@ -1,5 +1,5 @@
 ---
-title: "ITypeName::GetNameCount Method | Microsoft Docs"
+title: "ITypeName::GetNameCount Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

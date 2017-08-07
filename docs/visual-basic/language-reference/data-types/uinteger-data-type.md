@@ -1,5 +1,5 @@
 ---
-title: "UInteger Data Type | Microsoft Docs"
+title: "UInteger Data Type"
 
 ms.date: "2017-14-20"
 ms.prod: .net

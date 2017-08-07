@@ -1,5 +1,5 @@
 ---
-title: "Map Implicit Relations Between Nested Schema Elements | Microsoft Docs"
+title: "Map Implicit Relations Between Nested Schema Elements"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

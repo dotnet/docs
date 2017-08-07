@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Tools | Microsoft Docs"
+title: ".NET Framework Tools"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

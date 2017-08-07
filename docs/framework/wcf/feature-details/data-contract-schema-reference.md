@@ -1,5 +1,5 @@
 ---
-title: "Data Contract Schema Reference | Microsoft Docs"
+title: "Data Contract Schema Reference"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

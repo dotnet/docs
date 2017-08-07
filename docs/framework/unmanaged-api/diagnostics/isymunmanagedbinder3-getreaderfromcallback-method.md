@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedBinder3::GetReaderFromCallback Method | Microsoft Docs"
+title: "ISymUnmanagedBinder3::GetReaderFromCallback Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

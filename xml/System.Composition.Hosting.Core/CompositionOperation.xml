@@ -17,7 +17,8 @@
   </Interfaces>
   <Docs>
     <summary>Represents a single composition operation.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNonPrerequisiteAction">
@@ -47,7 +48,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="action"/> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="action" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddPostCompositionAction">
@@ -68,7 +70,7 @@
       </Parameters>
       <Docs>
         <param name="action">The action to run.</param>
-        <summary>Specifies an action to run after all composition has completed, as indicated by the <see cref="T:System.Composition.OnImportsSatisfiedAttribute"/>.
+        <summary>Specifies an action to run after all composition has completed, as indicated by the <see cref="T:System.Composition.OnImportsSatisfiedAttribute" />.
         </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -76,7 +78,7 @@
 ## Remarks  
  This method is called during the activation process.
   
- ]]></format>        
+ ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -96,7 +98,8 @@
       <Parameters />
       <Docs>
         <summary>Releases all locks held during the composition operation.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -121,7 +124,8 @@
         <param name="compositionRootActivator">The activator that drives the operation.</param>
         <summary>Runs the composition operation starting within the specified lifetime context, driven by the specified activator.</summary>
         <returns>The composed object graph.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure Client Application Services | Microsoft Docs"
+title: "How to: Configure Client Application Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

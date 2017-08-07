@@ -8056,7 +8056,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (string a, string b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.op_Equality(System.String,System.String)" />
       <MemberType>Method</MemberType>
@@ -8112,7 +8112,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (string a, string b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.op_Inequality(System.String,System.String)" />
       <MemberType>Method</MemberType>

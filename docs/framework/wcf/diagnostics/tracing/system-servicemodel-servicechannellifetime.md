@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ServiceChannelLifetime | Microsoft Docs"
+title: "System.ServiceModel.ServiceChannelLifetime"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Security Trust Levels in Accessing Resources | Microsoft Docs"
+title: "Security Trust Levels in Accessing Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

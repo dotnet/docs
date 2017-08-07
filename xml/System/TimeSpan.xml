@@ -1647,7 +1647,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Addition (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator + (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Addition(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Addition(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1697,7 +1697,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Division (TimeSpan timeSpan, double divisor);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator / (TimeSpan timeSpan, double divisor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Division(valuetype System.TimeSpan timeSpan, float64 divisor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Division(System.TimeSpan,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1721,7 +1721,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static double op_Division (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static double operator / (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Division(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Division(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1745,7 +1745,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Equality(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1794,7 +1794,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_GreaterThan(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1843,7 +1843,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_GreaterThanOrEqual(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1892,7 +1892,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Inequality(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1941,7 +1941,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_LessThan(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -1990,7 +1990,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_LessThanOrEqual(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -2039,7 +2039,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Multiply (double factor, TimeSpan timeSpan);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator * (double factor, TimeSpan timeSpan);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Multiply(float64 factor, valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Multiply(System.Double,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -2063,7 +2063,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Multiply (TimeSpan timeSpan, double factor);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator * (TimeSpan timeSpan, double factor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Multiply(valuetype System.TimeSpan timeSpan, float64 factor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Multiply(System.TimeSpan,System.Double)" />
       <MemberType>Method</MemberType>
@@ -2087,7 +2087,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Subtraction (TimeSpan t1, TimeSpan t2);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator - (TimeSpan t1, TimeSpan t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Subtraction(valuetype System.TimeSpan t1, valuetype System.TimeSpan t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_Subtraction(System.TimeSpan,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -2135,7 +2135,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_UnaryNegation (TimeSpan t);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator - (TimeSpan t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_UnaryNegation(valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_UnaryNegation(System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -2182,7 +2182,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_UnaryPlus (TimeSpan t);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator + (TimeSpan t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_UnaryPlus(valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeSpan.op_UnaryPlus(System.TimeSpan)" />
       <MemberType>Method</MemberType>

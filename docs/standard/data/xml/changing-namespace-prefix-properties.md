@@ -1,5 +1,5 @@
 ---
-title: "Changing Namespace Prefix Properties | Microsoft Docs"
+title: "Changing Namespace Prefix Properties"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Invoke a Print Dialog | Microsoft Docs"
+title: "How to: Invoke a Print Dialog"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

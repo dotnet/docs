@@ -1,5 +1,5 @@
 ---
-title: "ITypeName::GetModifiers Method | Microsoft Docs"
+title: "ITypeName::GetModifiers Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

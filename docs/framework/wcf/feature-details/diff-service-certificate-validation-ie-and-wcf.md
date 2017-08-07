@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Service Certificate Validation Done by Internet Explorer and WCF | Microsoft Docs"
+title: "Differences Between Service Certificate Validation Done by Internet Explorer and WCF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: What's New in C# 7 - C# Guide | Microsoft Docs
+title: What's New in C# 7 - C# Guide
 description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
 keywords: C#, .NET, .NET Core, Latest Features, What's New
 author: BillWagner
@@ -19,6 +19,8 @@ C# 7 adds a number of new features to the C# language:
     - You can declare `out` values inline as arguments to the method where they are used.
 * [Tuples](#tuples)
     - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
+* [Discards](#discards)
+    Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They are particularly useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
 * [Pattern Matching](#pattern-matching)
     - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
@@ -198,6 +200,26 @@ can rename the extract variables as part of the assignment:
 You can learn more in depth about tuples in the
 [tuples topic](../tuples.md).
 
+## Discards
+
+Often when deconstructing a tuple or calling a method with `out` parameters, you're forced to define a variable whose value you don't care about and don't intend to use. C# adds support for *discards* to handle this scenario. A discard is a write-only variable whose name is `_` (the underscore character); you can assign all of the values that you intend to discard to the single variable. A discard is like an unassigned variable; apart from the assignment statement, the discard can't be used in code.
+
+Discards are supported in the following scenarios:
+
+* When deconstructing tuples or user-defined types.
+
+* When calling methods with [out](..\language-reference\keywords\out.md) parameters.
+
+* In a pattern matching operation with the [is](..\language-reference\keywords\is.md) and [switch](language-reference\keywords\switch.md) statements.
+
+* As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
+
+The following example defines a `QueryCityDataForYears` method that returns a 6-tuple that contains a data for a city for two different years. The method call in the example is concerned only with the two population values returned by the method and so treats the remaining values in the tuple as discards when it deconstructs the tuple.
+
+[!code-csharp[Tuple-discard](../../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
+
+For more information, see [Discards](../discards.md).
+ 
 ## Pattern matching
 
 *Pattern matching* is a feature that allows you to implement method dispatch on
@@ -535,7 +557,7 @@ feature:
 
 > [!NOTE]
 > You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
-> in order to use the <xref:System.Threading.Tasks.Task.ValueTask%601> type.
+> in order to use the <xref:System.Threading.Tasks.ValueTask%601> type.
 
 A simple optimization would be to use `ValueTask` in places where
 `Task` would be used before. However, if you want to perform extra

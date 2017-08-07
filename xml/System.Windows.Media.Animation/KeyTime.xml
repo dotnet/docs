@@ -231,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Animation.KeyTime keyTime1, System.Windows.Media.Animation.KeyTime keyTime2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Animation.KeyTime keyTime1, System.Windows.Media.Animation.KeyTime keyTime2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Animation.KeyTime keyTime1, valuetype System.Windows.Media.Animation.KeyTime keyTime2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeyTime.op_Equality(System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeyTime)" />
       <MemberType>Method</MemberType>
@@ -263,7 +263,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Animation.KeyTime op_Implicit (TimeSpan timeSpan);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Windows.Media.Animation.KeyTime (TimeSpan timeSpan);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Animation.KeyTime op_Implicit(valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeyTime.op_Implicit(System.TimeSpan)~System.Windows.Media.Animation.KeyTime" />
       <MemberType>Method</MemberType>
@@ -285,7 +285,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Animation.KeyTime keyTime1, System.Windows.Media.Animation.KeyTime keyTime2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Animation.KeyTime keyTime1, System.Windows.Media.Animation.KeyTime keyTime2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Animation.KeyTime keyTime1, valuetype System.Windows.Media.Animation.KeyTime keyTime2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeyTime.op_Inequality(System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeyTime)" />
       <MemberType>Method</MemberType>

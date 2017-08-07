@@ -1,5 +1,5 @@
 ---
-title: "SYMLINEDELTA Structure | Microsoft Docs"
+title: "SYMLINEDELTA Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

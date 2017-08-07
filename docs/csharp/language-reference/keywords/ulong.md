@@ -1,5 +1,5 @@
 ---
-title: "ulong (C# Reference) | Microsoft Docs"
+title: "ulong (C# Reference)"
 ms.date: "2017-03-14"
 ms.prod: .net
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Cache Policy for a Request | Microsoft Docs"
+title: "How to: Set Cache Policy for a Request"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

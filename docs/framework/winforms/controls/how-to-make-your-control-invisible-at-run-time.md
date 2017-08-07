@@ -1,5 +1,5 @@
 ---
-title: "How to: Make Your Control Invisible at Run Time | Microsoft Docs"
+title: "How to: Make Your Control Invisible at Run Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Query an ArrayList with LINQ (C#) | Microsoft Docs"
+title: "How to: Query an ArrayList with LINQ (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

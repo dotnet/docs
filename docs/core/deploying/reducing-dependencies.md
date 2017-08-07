@@ -1,5 +1,5 @@
 ---
-title: Reducing Package Dependencies with project.json | Microsoft Docs
+title: Reducing Package Dependencies with project.json
 description: Reduce package dependencies when authoring project.json-based libraries.
 keywords: .NET, .NET Core
 author: cartermp

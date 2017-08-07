@@ -1,5 +1,5 @@
 ---
-title: "Language Independence and Language-Independent Components | Microsoft Docs"
+title: "Language Independence and Language-Independent Components"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Types of XML Nodes | Microsoft Docs"
+title: "Types of XML Nodes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

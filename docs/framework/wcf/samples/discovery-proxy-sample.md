@@ -1,5 +1,5 @@
 ---
-title: "Discovery Proxy Sample | Microsoft Docs"
+title: "Discovery Proxy Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: .NET Core CLI extensibility model | Microsoft Docs
+title: .NET Core CLI extensibility model
 description: Learn how you can extend the Command-line Interface (CLI) tools.
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf

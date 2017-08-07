@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Docker | Microsoft Docs
+title: Visual Studio Tools for Docker
 description: Using Visual Studio Tools for Docker 
 keywords: .NET, .NET Core, Docker, ASP.NET Core, Visual Studio
 author: spboyer
@@ -27,7 +27,7 @@ Install [Microsoft Visual Studio 2017](https://www.visualstudio.com/) with the .
 
 A required configuration is to setup **[Shared Drives](https://docs.docker.com/docker-for-windows/#shared-drives)** in Docker for Windows. The setting is required for the volume mapping and debugging support.
 
-Right click the Docker icon in the System Tray, click Settings and select Shared Drives.
+Right click the Docker icon in the System Tray, click **Settings** and select **Shared Drives**. Select the drive where Docker will store your files and apply changes.
 
 ![Shared Drives](./media/visual-studio-tools-for-docker/settings-shared-drives-win.png)
 
@@ -42,6 +42,8 @@ Project Menu
 Project Context Menu
 
 ![Right Click Add Docker Support](./media/visual-studio-tools-for-docker/right-click-add-docker-support.png)
+
+When you add Docker support to your project, you can choose either Windows or Linux containers. (The Docker host must be running the same container type. If you need change the container type in the running Docker instance, right click the **Docker** icon in the System Tray, and choose **Switch to Windows containers** or **Switch to Linux containers**.) 
 
 The following files are added to the project.
 

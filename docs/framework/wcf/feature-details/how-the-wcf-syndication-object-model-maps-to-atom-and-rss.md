@@ -1,5 +1,5 @@
 ---
-title: "How the WCF Syndication Object Model Maps to Atom and RSS | Microsoft Docs"
+title: "How the WCF Syndication Object Model Maps to Atom and RSS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "708 - HttpMessageReceiveStart | Microsoft Docs"
+title: "708 - HttpMessageReceiveStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

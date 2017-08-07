@@ -1,5 +1,5 @@
 ---
-title: "ServiceModel Metadata Utility Tool (Svcutil.exe) | Microsoft Docs"
+title: "ServiceModel Metadata Utility Tool (Svcutil.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

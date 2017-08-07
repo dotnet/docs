@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Working with the MaskedTextBox Control | Microsoft Docs"
+title: "Walkthrough: Working with the MaskedTextBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

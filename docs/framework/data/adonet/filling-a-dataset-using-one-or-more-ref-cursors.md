@@ -1,5 +1,5 @@
 ---
-title: "Filling a DataSet Using One or More REF CURSORs | Microsoft Docs"
+title: "Filling a DataSet Using One or More REF CURSORs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

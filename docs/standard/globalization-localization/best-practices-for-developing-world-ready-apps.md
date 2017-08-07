@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Developing World-Ready Applications | Microsoft Docs"
+title: "Best Practices for Developing World-Ready Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

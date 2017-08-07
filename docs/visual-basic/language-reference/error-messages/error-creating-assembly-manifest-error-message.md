@@ -1,5 +1,5 @@
 ---
-title: "Error creating assembly manifest: &lt;error message&gt; | Microsoft Docs"
+title: "Error creating assembly manifest: &lt;error message&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

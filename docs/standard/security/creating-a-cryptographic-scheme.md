@@ -1,5 +1,5 @@
 ---
-title: "Creating a Cryptographic Scheme | Microsoft Docs"
+title: "Creating a Cryptographic Scheme"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

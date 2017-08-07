@@ -1,5 +1,5 @@
 ---
-title: "Data Types of Operator Results (Visual Basic) | Microsoft Docs"
+title: "Data Types of Operator Results (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

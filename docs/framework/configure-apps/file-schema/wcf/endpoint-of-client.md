@@ -1,5 +1,5 @@
 ---
-title: "&lt;endpoint&gt; of &lt;client&gt; | Microsoft Docs"
+title: "&lt;endpoint&gt; of &lt;client&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

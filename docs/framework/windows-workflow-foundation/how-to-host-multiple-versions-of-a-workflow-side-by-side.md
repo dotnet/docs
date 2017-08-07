@@ -1,5 +1,5 @@
 ---
-title: "How to: Host Multiple Versions of a Workflow Side-by-Side | Microsoft Docs"
+title: "How to: Host Multiple Versions of a Workflow Side-by-Side"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

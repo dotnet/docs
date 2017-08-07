@@ -1,5 +1,5 @@
 ---
-title: "Using Variance in Delegates (C#) | Microsoft Docs"
+title: "Using Variance in Delegates (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -69,7 +69,7 @@ class Program
 ### Code  
   
 ```csharp  
-// Event hander that accepts a parameter of the EventArgs type.  
+// Event handler that accepts a parameter of the EventArgs type.  
 private void MultiHandler(object sender, System.EventArgs e)  
 {  
     label1.Text = System.DateTime.Now.ToString();  

@@ -1,5 +1,5 @@
 ---
-title: "Style Sheet Directives Embedded in a Document | Microsoft Docs"
+title: "Style Sheet Directives Embedded in a Document"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

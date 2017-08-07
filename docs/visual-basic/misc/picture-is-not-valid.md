@@ -1,5 +1,5 @@
 ---
-title: "Picture is not valid | Microsoft Docs"
+title: "Picture is not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

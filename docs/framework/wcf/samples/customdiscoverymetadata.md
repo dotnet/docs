@@ -1,5 +1,5 @@
 ---
-title: "CustomDiscoveryMetadata | Microsoft Docs"
+title: "CustomDiscoveryMetadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

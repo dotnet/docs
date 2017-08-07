@@ -1,5 +1,5 @@
 ---
-title: "ReceiveContext-Enabled WCF Channels | Microsoft Docs"
+title: "ReceiveContext-Enabled WCF Channels"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

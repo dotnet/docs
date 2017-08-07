@@ -1,5 +1,5 @@
 ---
-title: "How to: Remove a ToolStripMenuItem from an MDI Drop-Down Menu (Windows Forms) | Microsoft Docs"
+title: "How to: Remove a ToolStripMenuItem from an MDI Drop-Down Menu (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

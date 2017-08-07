@@ -1,5 +1,5 @@
 ---
-title: "Math Canonical Functions | Microsoft Docs"
+title: "Math Canonical Functions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

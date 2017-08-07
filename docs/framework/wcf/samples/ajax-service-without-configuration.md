@@ -1,5 +1,5 @@
 ---
-title: "AJAX Service Without Configuration | Microsoft Docs"
+title: "AJAX Service Without Configuration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

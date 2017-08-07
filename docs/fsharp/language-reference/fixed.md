@@ -1,6 +1,6 @@
 ---
 title: The Fixed Keyword (F#)
-description: The Fixed Keyword
+description: Learn how you can 'pin' a local onto the stack to prevent collection with the F# 'fixed' keyword.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

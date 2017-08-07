@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugProcess6::GetExportStepInfo Method | Microsoft Docs"
+title: "ICorDebugProcess6::GetExportStepInfo Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "1438 - ConcurrentInstancesRatio | Microsoft Docs"
+title: "1438 - ConcurrentInstancesRatio"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

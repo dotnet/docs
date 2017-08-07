@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.TxSourceTxScopeRequiredIsCreateNewTransaction | Microsoft Docs"
+title: "System.ServiceModel.TxSourceTxScopeRequiredIsCreateNewTransaction"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

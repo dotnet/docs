@@ -1,5 +1,5 @@
 ---
-title: A Tour of C# - C# Guide | Microsoft Docs
+title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
 keywords: .NET, .NET Core, C#, C# Primer, C# Guide
 author: BillWagner

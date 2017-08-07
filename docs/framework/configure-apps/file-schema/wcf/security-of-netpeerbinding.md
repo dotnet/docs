@@ -1,5 +1,5 @@
 ---
-title: "&lt;security&gt; of &lt;netPeerBinding&gt; | Microsoft Docs"
+title: "&lt;security&gt; of &lt;netPeerBinding&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (C#) | Microsoft Docs"
+title: "How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

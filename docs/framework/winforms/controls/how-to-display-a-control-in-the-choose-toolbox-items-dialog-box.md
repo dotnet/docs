@@ -1,5 +1,5 @@
 ---
-title: "How to: Display a Control in the Choose Toolbox Items Dialog Box | Microsoft Docs"
+title: "How to: Display a Control in the Choose Toolbox Items Dialog Box"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

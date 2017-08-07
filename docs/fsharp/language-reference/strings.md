@@ -1,6 +1,6 @@
 ---
-title: Strings (F#) | Microsoft Docs
-description: Strings (F#)
+title: Strings (F#)
+description: Learn how the F# 'string' type represents immutable text as a sequence of Unicode characters.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

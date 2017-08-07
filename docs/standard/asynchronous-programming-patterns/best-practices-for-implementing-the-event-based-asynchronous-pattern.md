@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Implementing the Event-based Asynchronous Pattern | Microsoft Docs"
+title: "Best Practices for Implementing the Event-based Asynchronous Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

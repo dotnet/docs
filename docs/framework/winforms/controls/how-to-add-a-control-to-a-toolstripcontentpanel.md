@@ -1,5 +1,5 @@
 ---
-title: "How to: Add a Control to a ToolStripContentPanel | Microsoft Docs"
+title: "How to: Add a Control to a ToolStripContentPanel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

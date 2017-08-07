@@ -1,5 +1,5 @@
 ---
-title: "Additional class libraries and APIs | Microsoft Docs"
+title: "Additional class libraries and APIs"
 ms.custom: ""
 ms.date: "04/12/2017"
 ms.prod: ".net-framework-oob"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;filters&gt; of &lt;routing&gt; | Microsoft Docs"
+title: "&lt;filters&gt; of &lt;routing&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

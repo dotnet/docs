@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Items from a ConcurrentDictionary | Microsoft Docs"
+title: "How to: Add and Remove Items from a ConcurrentDictionary"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

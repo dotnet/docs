@@ -1,5 +1,5 @@
 ---
-title: "COR_TYPE_LAYOUT Structure | Microsoft Docs"
+title: "COR_TYPE_LAYOUT Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

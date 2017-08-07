@@ -1,5 +1,5 @@
 ---
-title: "Managing the State of a Graphics Object | Microsoft Docs"
+title: "Managing the State of a Graphics Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

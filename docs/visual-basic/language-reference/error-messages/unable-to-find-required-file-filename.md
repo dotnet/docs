@@ -1,5 +1,5 @@
 ---
-title: "Unable to find required file &#39;&lt;filename&gt;&#39; | Microsoft Docs"
+title: "Unable to find required file &#39;&lt;filename&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

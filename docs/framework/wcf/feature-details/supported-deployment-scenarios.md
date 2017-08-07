@@ -1,5 +1,5 @@
 ---
-title: "Supported Deployment Scenarios | Microsoft Docs"
+title: "Supported Deployment Scenarios"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

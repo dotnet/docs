@@ -1,5 +1,5 @@
 ---
-title: "Cache Policy Interaction—Maximum Age and Minimum Freshness | Microsoft Docs"
+title: "Cache Policy Interaction—Maximum Age and Minimum Freshness"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

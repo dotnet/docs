@@ -1,5 +1,5 @@
 ---
-title: "Command-line build with csc.exe | Microsoft Docs"
+title: "Command-line build with csc.exe"
 ms.date: "2017-04-19"
 ms.prod: .net
 ms.technology: 

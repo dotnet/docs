@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic) | Microsoft Docs"
+title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

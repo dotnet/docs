@@ -1,5 +1,5 @@
 ---
-title: "Data Transfer Architectural Overview | Microsoft Docs"
+title: "Data Transfer Architectural Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

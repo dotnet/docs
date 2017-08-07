@@ -1,5 +1,5 @@
 ---
-title: "1103 - WorkflowActivitySuspend | Microsoft Docs"
+title: "1103 - WorkflowActivitySuspend"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

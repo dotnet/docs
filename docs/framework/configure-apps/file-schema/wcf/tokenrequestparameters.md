@@ -1,5 +1,5 @@
 ---
-title: "&lt;tokenRequestParameters&gt; | Microsoft Docs"
+title: "&lt;tokenRequestParameters&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

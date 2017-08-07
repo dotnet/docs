@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Reference Information (Visual Basic) | Microsoft Docs"
+title: ".NET Framework Reference Information (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

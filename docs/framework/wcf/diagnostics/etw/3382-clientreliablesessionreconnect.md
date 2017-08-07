@@ -1,5 +1,5 @@
 ---
-title: "3382 - ClientReliableSessionReconnect | Microsoft Docs"
+title: "3382 - ClientReliableSessionReconnect"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

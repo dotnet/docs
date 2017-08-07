@@ -1,5 +1,5 @@
 ---
-title: "AJAX Service with JSON and XML Sample | Microsoft Docs"
+title: "AJAX Service with JSON and XML Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Background of a Windows Forms Panel | Microsoft Docs"
+title: "How to: Set the Background of a Windows Forms Panel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

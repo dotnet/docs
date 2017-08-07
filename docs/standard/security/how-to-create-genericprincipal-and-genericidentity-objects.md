@@ -1,5 +1,5 @@
 ---
-title: "How to: Create GenericPrincipal and GenericIdentity Objects | Microsoft Docs"
+title: "How to: Create GenericPrincipal and GenericIdentity Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

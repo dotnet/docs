@@ -1,5 +1,5 @@
 ---
-title: "Length of argument &#39;&lt;argumentname&gt;&#39; must be greater than zero | Microsoft Docs"
+title: "Length of argument &#39;&lt;argumentname&gt;&#39; must be greater than zero"
 
 ms.date: "2015-07-20"
 ms.prod: .net

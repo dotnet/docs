@@ -1,5 +1,5 @@
 ---
-title: Using Azure Service Fabric | Microsoft Docs 
+title: Using Azure Service Fabric
 description: .NET Microservices Architecture for Containerized .NET Applications | Using Azure Service Fabric
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

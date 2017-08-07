@@ -1,5 +1,5 @@
 ---
-title: "Dead Letter Queues | Microsoft Docs"
+title: "Dead Letter Queues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

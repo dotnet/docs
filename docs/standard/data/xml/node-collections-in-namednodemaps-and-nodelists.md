@@ -1,5 +1,5 @@
 ---
-title: "Node Collections in NamedNodeMaps and NodeLists | Microsoft Docs"
+title: "Node Collections in NamedNodeMaps and NodeLists"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

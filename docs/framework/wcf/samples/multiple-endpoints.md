@@ -1,5 +1,5 @@
 ---
-title: "Multiple Endpoints | Microsoft Docs"
+title: "Multiple Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Flip a UIElement Horizontally or Vertically | Microsoft Docs"
+title: "How to: Flip a UIElement Horizontally or Vertically"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

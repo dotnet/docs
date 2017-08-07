@@ -1,5 +1,5 @@
 ---
-title: "Poison Message Handling in MSMQ 4.0 | Microsoft Docs"
+title: "Poison Message Handling in MSMQ 4.0"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

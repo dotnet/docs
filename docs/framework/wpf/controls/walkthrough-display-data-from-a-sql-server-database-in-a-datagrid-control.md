@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Display Data from a SQL Server Database in a DataGrid Control | Microsoft Docs"
+title: "Walkthrough: Display Data from a SQL Server Database in a DataGrid Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -52,7 +52,7 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
   
      ![Provide connection to database](../../../../docs/framework/wpf/controls/media/datagrid-sql-ef-step3.png "DataGrid_SQL_EF_Step3")  
   
-7.  Make sure that the name is`AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.  
+7.  Make sure that the name is `AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.  
   
 8.  In the Choose Your Database Objects screen, expand the Tables node, and select the **Product** and **ProductCategory** tables.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Regular Expression Options | Microsoft Docs"
+title: "Regular Expression Options"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

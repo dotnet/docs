@@ -1,5 +1,5 @@
 ---
-title: Running Console applications in Docker | Microsoft Docs
+title: Running Console applications in Docker
 description: Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.
 author: spboyer
 keywords: .NET, Container, Console, Applications

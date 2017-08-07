@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Application Basics (Visual Basic) | Microsoft Docs"
+title: "Windows Forms Application Basics (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

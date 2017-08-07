@@ -1,5 +1,5 @@
 ---
-title: "Expression of type &lt;type&gt; is not queryable | Microsoft Docs"
+title: "Expression of type &lt;type&gt; is not queryable"
 
 ms.date: "2015-07-20"
 ms.prod: .net

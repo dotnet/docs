@@ -1,5 +1,5 @@
 ---
-title: "1436 - PendingMessagesPerChannelRatio | Microsoft Docs"
+title: "1436 - PendingMessagesPerChannelRatio"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "WCF Data Services 4.5 | Microsoft Docs"
+title: "WCF Data Services 4.5"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

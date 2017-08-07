@@ -1,5 +1,5 @@
 ---
-title: "Hashtable and Dictionary Collection Types | Microsoft Docs"
+title: "Hashtable and Dictionary Collection Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

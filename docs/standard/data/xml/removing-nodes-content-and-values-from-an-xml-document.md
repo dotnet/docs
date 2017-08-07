@@ -1,5 +1,5 @@
 ---
-title: "Removing Nodes, Content, and Values from an XML Document | Microsoft Docs"
+title: "Removing Nodes, Content, and Values from an XML Document"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

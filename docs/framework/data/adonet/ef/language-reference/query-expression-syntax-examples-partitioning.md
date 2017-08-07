@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax Examples: Partitioning | Microsoft Docs"
+title: "Query Expression Syntax Examples: Partitioning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

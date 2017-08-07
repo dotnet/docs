@@ -1,5 +1,5 @@
 ---
-title: "How to: Navigate Through the Objects in a Data CollectionView | Microsoft Docs"
+title: "How to: Navigate Through the Objects in a Data CollectionView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

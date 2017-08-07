@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a Windows Forms Control to a Factory Object | Microsoft Docs"
+title: "How to: Bind a Windows Forms Control to a Factory Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

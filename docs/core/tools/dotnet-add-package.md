@@ -1,5 +1,5 @@
 ---
-title: dotnet-add package command - .NET Core CLI | Microsoft Docs
+title: dotnet-add package command - .NET Core CLI
 description: The dotnet-add package command provides a convenient option to add NuGet package reference to a project.
 keywords: dotnet-add, CLI, CLI command, .NET Core
 author: spboyer

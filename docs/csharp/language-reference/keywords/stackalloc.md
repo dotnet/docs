@@ -1,5 +1,5 @@
 ---
-title: "stackalloc (C# Reference) | Microsoft Docs"
+title: "stackalloc (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

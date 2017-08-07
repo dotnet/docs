@@ -1,5 +1,5 @@
 ---
-title: "Using Portable Class Library with Model-View-View Model | Microsoft Docs"
+title: "Using Portable Class Library with Model-View-View Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

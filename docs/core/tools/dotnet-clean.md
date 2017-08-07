@@ -1,5 +1,5 @@
 ---
-title: dotnet-clean command - .NET Core CLI | Microsoft Docs
+title: dotnet-clean command - .NET Core CLI
 description: The dotnet-clean command cleans the current directory.
 keywords: dotnet-clean, CLI, CLI command, .NET Core
 author: blackdwarf

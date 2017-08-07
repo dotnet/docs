@@ -1,5 +1,5 @@
 ---
-title: "451 - MessageLogInfo | Microsoft Docs"
+title: "451 - MessageLogInfo"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

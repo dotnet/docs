@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Specific Items in a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
+title: "How to: Access Specific Items in a Windows Forms ComboBox, ListBox, or CheckedListBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -29,7 +29,7 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
   
 ### To access a specific item  
   
-1.  Query the`Items` collection using the index of the specific item:  
+1.  Query the `Items` collection using the index of the specific item:  
   
     ```vb  
     Private Function GetItemText(i As Integer) As String  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement PriorityBinding | Microsoft Docs"
+title: "How to: Implement PriorityBinding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

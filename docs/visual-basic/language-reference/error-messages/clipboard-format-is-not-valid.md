@@ -1,5 +1,5 @@
 ---
-title: "Clipboard format is not valid | Microsoft Docs"
+title: "Clipboard format is not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

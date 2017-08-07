@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML vs. Other XML Technologies3 | Microsoft Docs"
+title: "LINQ to XML vs. Other XML Technologies3"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

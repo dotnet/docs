@@ -1,5 +1,5 @@
 ---
-title: "Get Supported UI Automation Control Patterns | Microsoft Docs"
+title: "Get Supported UI Automation Control Patterns"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

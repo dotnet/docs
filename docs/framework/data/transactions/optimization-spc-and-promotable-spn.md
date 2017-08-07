@@ -1,5 +1,5 @@
 ---
-title: "Optimization using Single Phase Commit and Promotable Single Phase Notification | Microsoft Docs"
+title: "Optimization using Single Phase Commit and Promotable Single Phase Notification"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

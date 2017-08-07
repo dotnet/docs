@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Simple or Complex TreeViews | Microsoft Docs"
+title: "How to: Create Simple or Complex TreeViews"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

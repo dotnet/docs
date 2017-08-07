@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Modifiable and Nonmodifiable Arguments (Visual Basic) | Microsoft Docs"
+title: "Differences Between Modifiable and Nonmodifiable Arguments (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

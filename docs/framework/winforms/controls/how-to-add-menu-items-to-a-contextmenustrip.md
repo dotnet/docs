@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Menu Items to a ContextMenuStrip | Microsoft Docs"
+title: "How to: Add Menu Items to a ContextMenuStrip"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

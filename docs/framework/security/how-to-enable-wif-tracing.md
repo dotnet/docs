@@ -1,5 +1,5 @@
 ---
-title: "How To: Enable WIF Tracing | Microsoft Docs"
+title: "How To: Enable WIF Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

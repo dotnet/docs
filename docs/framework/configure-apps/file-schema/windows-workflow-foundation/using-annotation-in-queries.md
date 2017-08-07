@@ -1,5 +1,5 @@
 ---
-title: "Using Annotation in Queries | Microsoft Docs"
+title: "Using Annotation in Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

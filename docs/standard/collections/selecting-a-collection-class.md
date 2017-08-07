@@ -1,5 +1,5 @@
 ---
-title: "Selecting a Collection Class | Microsoft Docs"
+title: "Selecting a Collection Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

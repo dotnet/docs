@@ -1261,7 +1261,7 @@ Console.WriteLine("CurrCult: " +
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.PropertyInfo left, System.Reflection.PropertyInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.PropertyInfo left, System.Reflection.PropertyInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.PropertyInfo left, class System.Reflection.PropertyInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfo.op_Equality(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo)" />
       <MemberType>Method</MemberType>
@@ -1295,7 +1295,7 @@ Console.WriteLine("CurrCult: " +
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.PropertyInfo left, System.Reflection.PropertyInfo right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.PropertyInfo left, System.Reflection.PropertyInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.PropertyInfo left, class System.Reflection.PropertyInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.PropertyInfo.op_Inequality(System.Reflection.PropertyInfo,System.Reflection.PropertyInfo)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "IHostMAlloc::Free Method | Microsoft Docs"
+title: "IHostMAlloc::Free Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

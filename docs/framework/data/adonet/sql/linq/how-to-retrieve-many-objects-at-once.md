@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve Many Objects At Once | Microsoft Docs"
+title: "How to: Retrieve Many Objects At Once"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

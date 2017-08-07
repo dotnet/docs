@@ -1,5 +1,5 @@
 ---
-title: "Coordinate Systems and Transformations | Microsoft Docs"
+title: "Coordinate Systems and Transformations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

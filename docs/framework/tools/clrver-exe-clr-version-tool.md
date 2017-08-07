@@ -1,5 +1,5 @@
 ---
-title: "Clrver.exe (CLR Version Tool) | Microsoft Docs"
+title: "Clrver.exe (CLR Version Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

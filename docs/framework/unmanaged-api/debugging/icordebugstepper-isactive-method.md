@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper::IsActive Method | Microsoft Docs"
+title: "ICorDebugStepper::IsActive Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

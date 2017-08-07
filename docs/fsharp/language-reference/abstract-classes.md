@@ -1,6 +1,6 @@
 ---
-title: Abstract Classes (F#) | Microsoft Docs
-description: Abstract Classes (F#)
+title: Abstract Classes (F#)
+description: Learn about F# abstract classes, which leave some or all members unimplemented and represent common functionality of a diverse set of object types.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

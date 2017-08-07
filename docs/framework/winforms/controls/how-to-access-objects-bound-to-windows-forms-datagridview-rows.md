@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Objects Bound to Windows Forms DataGridView Rows | Microsoft Docs"
+title: "How to: Access Objects Bound to Windows Forms DataGridView Rows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

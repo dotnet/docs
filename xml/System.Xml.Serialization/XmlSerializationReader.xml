@@ -290,7 +290,7 @@
 ## Remarks  
  The method is used by generated classes and should not be directly invoked.  
   
- The <xref:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount%2A> method is used when the `checkDeserializerAdvances` attribute of the `<xmlSerializer>` configuration element is set to `true`. For more information, see [\&lt;xmlSerializer\&gt; Element](~/docs/framework/serialization/xmlserializer-element.md).  
+ The <xref:System.Xml.Serialization.XmlSerializationReader.CheckReaderCount%2A> method is used when the `checkDeserializerAdvances` attribute of the `<xmlSerializer>` configuration element is set to `true`. For more information, see [\&lt;xmlSerializer\&gt; Element](~/docs/standard/serialization/xmlserializer-element.md).  
   
  ]]></format>
         </remarks>

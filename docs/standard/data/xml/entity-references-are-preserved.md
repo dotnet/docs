@@ -1,5 +1,5 @@
 ---
-title: "Entity References are Preserved | Microsoft Docs"
+title: "Entity References are Preserved"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

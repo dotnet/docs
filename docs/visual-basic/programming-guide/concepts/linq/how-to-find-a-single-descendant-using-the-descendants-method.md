@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a Single Descendant Using the Descendants Method (Visual Basic) | Microsoft Docs"
+title: "How to: Find a Single Descendant Using the Descendants Method (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

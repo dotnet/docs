@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the XML Schema, an element declared with a `minOccurs="0"` attribute value indicates that the element is optional. An attribute can be declared with a `use="optional"` attribute. The .NET Framework, using the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md), maps either of these constructs to a public field or property that is accompanied by a public field of type `bool` whose name is the first field's name with "Specified" appended. The <xref:System.Xml.Serialization.XmlMemberMapping.CheckSpecified%2A> property checks whether such a `bool` field exists.  
+ In the XML Schema, an element declared with a `minOccurs="0"` attribute value indicates that the element is optional. An attribute can be declared with a `use="optional"` attribute. The .NET Framework, using the [XML Schema Definition Tool (Xsd.exe)](~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md), maps either of these constructs to a public field or property that is accompanied by a public field of type `bool` whose name is the first field's name with "Specified" appended. The <xref:System.Xml.Serialization.XmlMemberMapping.CheckSpecified%2A> property checks whether such a `bool` field exists.  
   
  ]]></format>
         </remarks>

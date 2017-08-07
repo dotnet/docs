@@ -1,5 +1,5 @@
 ---
-title: Inheritance in C# | Microsoft Docs
+title: Inheritance in C#
 description: Learn to use inheritance in C# libraries and applications.
 keywords: inheritance (C#), base classes, derived classes, abstract base classes
 author: rpetrusha

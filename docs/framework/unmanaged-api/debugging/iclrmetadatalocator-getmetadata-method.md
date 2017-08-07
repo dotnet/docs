@@ -1,5 +1,5 @@
 ---
-title: "ICLRMetadataLocator::GetMetadata Method | Microsoft Docs"
+title: "ICLRMetadataLocator::GetMetadata Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

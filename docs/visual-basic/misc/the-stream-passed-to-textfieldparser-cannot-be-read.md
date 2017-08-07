@@ -1,5 +1,5 @@
 ---
-title: "The stream passed to TextFieldParser cannot be read | Microsoft Docs"
+title: "The stream passed to TextFieldParser cannot be read"
 
 ms.date: "2015-07-20"
 ms.prod: .net

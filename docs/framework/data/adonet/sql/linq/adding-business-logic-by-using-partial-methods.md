@@ -1,5 +1,5 @@
 ---
-title: "Adding Business Logic By Using Partial Methods | Microsoft Docs"
+title: "Adding Business Logic By Using Partial Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

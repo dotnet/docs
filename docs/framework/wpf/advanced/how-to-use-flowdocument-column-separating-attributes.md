@@ -1,5 +1,5 @@
 ---
-title: "How to: Use FlowDocument Column-Separating Attributes | Microsoft Docs"
+title: "How to: Use FlowDocument Column-Separating Attributes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

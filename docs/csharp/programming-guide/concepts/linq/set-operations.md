@@ -1,5 +1,5 @@
 ---
-title: "Set Operations (C#) | Microsoft Docs"
+title: "Set Operations (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

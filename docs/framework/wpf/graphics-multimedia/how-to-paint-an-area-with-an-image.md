@@ -1,5 +1,5 @@
 ---
-title: "How to: Paint an Area with an Image | Microsoft Docs"
+title: "How to: Paint an Area with an Image"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

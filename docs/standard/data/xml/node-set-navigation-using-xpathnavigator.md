@@ -1,5 +1,5 @@
 ---
-title: "Node Set Navigation Using XPathNavigator | Microsoft Docs"
+title: "Node Set Navigation Using XPathNavigator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

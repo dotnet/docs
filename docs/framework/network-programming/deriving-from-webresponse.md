@@ -1,5 +1,5 @@
 ---
-title: "Deriving from WebResponse | Microsoft Docs"
+title: "Deriving from WebResponse"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

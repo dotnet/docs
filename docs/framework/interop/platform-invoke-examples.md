@@ -1,5 +1,5 @@
 ---
-title: "Platform Invoke Examples | Microsoft Docs"
+title: "Platform Invoke Examples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

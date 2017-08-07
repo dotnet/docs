@@ -1,5 +1,5 @@
 ---
-title: "WCF Analytic Tracing | Microsoft Docs"
+title: "WCF Analytic Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

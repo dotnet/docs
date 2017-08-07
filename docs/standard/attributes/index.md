@@ -1,5 +1,5 @@
 ---
-title: "Extending Metadata Using Attributes | Microsoft Docs"
+title: "Extending Metadata Using Attributes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

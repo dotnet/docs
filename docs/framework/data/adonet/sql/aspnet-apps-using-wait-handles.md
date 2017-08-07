@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET Applications Using Wait Handles | Microsoft Docs"
+title: "ASP.NET Applications Using Wait Handles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

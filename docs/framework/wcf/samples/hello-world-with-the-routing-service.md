@@ -1,5 +1,5 @@
 ---
-title: "Hello World with the Routing Service | Microsoft Docs"
+title: "Hello World with the Routing Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

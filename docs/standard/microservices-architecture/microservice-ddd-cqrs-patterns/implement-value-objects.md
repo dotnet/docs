@@ -1,5 +1,5 @@
 ---
-title: Implementing value objects | Microsoft Docs 
+title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing value objects
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

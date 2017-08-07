@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; must be greater than or equal to -1 | Microsoft Docs"
+title: "Argument &#39;&lt;argumentname&gt;&#39; must be greater than or equal to -1"
 
 ms.date: "2015-07-20"
 ms.prod: .net

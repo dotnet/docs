@@ -1,5 +1,5 @@
 ---
-title: "Serialization2 | Microsoft Docs"
+title: "Serialization2"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

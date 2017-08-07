@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Hardware Encryption Devices | Microsoft Docs"
+title: "How to: Access Hardware Encryption Devices"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Queued Poison Messages | Microsoft Docs"
+title: "Queued Poison Messages"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

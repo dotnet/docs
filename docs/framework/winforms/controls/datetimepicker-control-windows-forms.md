@@ -1,5 +1,5 @@
 ---
-title: "DateTimePicker Control (Windows Forms) | Microsoft Docs"
+title: "DateTimePicker Control (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

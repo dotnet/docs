@@ -1,5 +1,5 @@
 ---
-title: "Arrays declared as structure members cannot be declared with an initial size | Microsoft Docs"
+title: "Arrays declared as structure members cannot be declared with an initial size"
 
 ms.date: "2015-07-20"
 ms.prod: .net

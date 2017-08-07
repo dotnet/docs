@@ -1,5 +1,5 @@
 ---
-title: "Deploying a WPF Application (WPF) | Microsoft Docs"
+title: "Deploying a WPF Application (WPF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

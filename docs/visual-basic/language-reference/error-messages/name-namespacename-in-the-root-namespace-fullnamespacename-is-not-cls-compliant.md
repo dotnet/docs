@@ -1,5 +1,5 @@
 ---
-title: "Name &lt;namespacename&gt; in the root namespace &lt;fullnamespacename&gt; is not CLS-compliant | Microsoft Docs"
+title: "Name &lt;namespacename&gt; in the root namespace &lt;fullnamespacename&gt; is not CLS-compliant"
 
 ms.date: "2015-07-20"
 ms.prod: .net

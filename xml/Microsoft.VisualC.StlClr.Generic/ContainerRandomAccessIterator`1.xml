@@ -318,7 +318,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Right);" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator + (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -344,7 +344,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public static Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator + (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Addition(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -397,7 +397,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
       <MemberType>Method</MemberType>
@@ -419,7 +419,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator -- (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Decrement(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -443,7 +443,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public bool op_Equality (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -470,7 +470,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public bool op_Equality (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -500,7 +500,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public bool op_GreaterThan (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator &gt; (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThan(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThan(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -527,7 +527,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThan(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0},Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -559,7 +559,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public bool op_GreaterThanOrEqual (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator &gt;= (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThanOrEqual(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThanOrEqual(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -581,7 +581,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public bool op_GreaterThanOrEqual (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator &gt;= (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_GreaterThanOrEqual(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_GreaterThanOrEqual(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -606,7 +606,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; op_Implicit ();" />
+      <MemberSignature Language="C#" Value="public implicit operator Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; op_Implicit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Implicit~Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0}" />
       <MemberType>Method</MemberType>
@@ -625,7 +625,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
       <MemberType>Method</MemberType>
@@ -647,7 +647,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int A_0);" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator ++ (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Increment(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , int32 A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -671,7 +671,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public bool op_Inequality (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -693,7 +693,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public bool op_Inequality (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -718,7 +718,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public bool op_LessThan (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator &lt; (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThan(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThan(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -745,7 +745,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public bool op_LessThan (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator &lt; (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThan(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThan(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -775,7 +775,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public bool op_LessThanOrEqual (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public bool operator &lt;= (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_LessThanOrEqual(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThanOrEqual(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -797,7 +797,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Left, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Left, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_LessThanOrEqual(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0},Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberType>Method</MemberType>
@@ -886,7 +886,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public int op_Subtraction (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="C#" Value="public int operator - (Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance int32 op_Subtraction(class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator{`0})" />
       <MemberType>Method</MemberType>
@@ -915,7 +915,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Subtraction (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Right);" />
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) operator - (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , int _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,System.Int32)" />
       <MemberType>Method</MemberType>

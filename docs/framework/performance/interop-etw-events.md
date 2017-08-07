@@ -1,5 +1,5 @@
 ---
-title: "Interop ETW Events | Microsoft Docs"
+title: "Interop ETW Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

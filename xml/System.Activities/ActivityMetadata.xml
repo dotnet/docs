@@ -505,7 +505,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.ActivityMetadata left, System.Activities.ActivityMetadata right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Activities.ActivityMetadata left, System.Activities.ActivityMetadata right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.ActivityMetadata left, valuetype System.Activities.ActivityMetadata right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.op_Equality(System.Activities.ActivityMetadata,System.Activities.ActivityMetadata)" />
       <MemberType>Method</MemberType>
@@ -530,7 +530,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.ActivityMetadata left, System.Activities.ActivityMetadata right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Activities.ActivityMetadata left, System.Activities.ActivityMetadata right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.ActivityMetadata left, valuetype System.Activities.ActivityMetadata right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityMetadata.op_Inequality(System.Activities.ActivityMetadata,System.Activities.ActivityMetadata)" />
       <MemberType>Method</MemberType>

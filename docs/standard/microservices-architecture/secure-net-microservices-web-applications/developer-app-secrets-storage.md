@@ -1,5 +1,5 @@
 ---
-title: Storing application secrets safely during development | Microsoft Docs 
+title: Storing application secrets safely during development
 description: .NET Microservices Architecture for Containerized .NET Applications | Storing application secrets safely during development
 keywords: Docker, Microservices, ASP.NET, Container
 author: mjrousos

@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::DeleteToken Method | Microsoft Docs"
+title: "IMetaDataEmit::DeleteToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

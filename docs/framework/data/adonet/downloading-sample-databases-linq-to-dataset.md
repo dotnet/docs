@@ -1,5 +1,5 @@
 ---
-title: "Downloading Sample Databases (LINQ to DataSet) | Microsoft Docs"
+title: "Downloading Sample Databases (LINQ to DataSet)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

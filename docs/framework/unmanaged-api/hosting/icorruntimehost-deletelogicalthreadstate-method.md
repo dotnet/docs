@@ -1,5 +1,5 @@
 ---
-title: "ICorRuntimeHost::DeleteLogicalThreadState Method | Microsoft Docs"
+title: "ICorRuntimeHost::DeleteLogicalThreadState Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

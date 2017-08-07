@@ -1,5 +1,5 @@
 ---
-title: "/platform (Visual Basic) | Microsoft Docs"
+title: "/platform (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

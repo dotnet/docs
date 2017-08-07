@@ -1,5 +1,5 @@
 ---
-title: "Node Sets in Transformations | Microsoft Docs"
+title: "Node Sets in Transformations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

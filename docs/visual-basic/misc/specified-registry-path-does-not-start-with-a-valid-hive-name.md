@@ -1,5 +1,5 @@
 ---
-title: "Specified registry path does not start with a valid hive name | Microsoft Docs"
+title: "Specified registry path does not start with a valid hive name"
 
 ms.date: "2015-07-20"
 ms.prod: .net

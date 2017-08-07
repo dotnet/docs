@@ -1,5 +1,5 @@
 ---
-title: "Mpgo.exe (Managed Profile Guided Optimization Tool) | Microsoft Docs"
+title: "Mpgo.exe (Managed Profile Guided Optimization Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

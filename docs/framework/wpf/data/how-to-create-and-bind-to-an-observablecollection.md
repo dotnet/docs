@@ -1,5 +1,5 @@
 ---
-title: "How to: Create and Bind to an ObservableCollection | Microsoft Docs"
+title: "How to: Create and Bind to an ObservableCollection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

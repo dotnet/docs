@@ -1,5 +1,5 @@
 ---
-title: "How to: Execute a Query that Returns PrimitiveType Results | Microsoft Docs"
+title: "How to: Execute a Query that Returns PrimitiveType Results"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

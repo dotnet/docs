@@ -1,5 +1,5 @@
 ---
-title: "IHostTaskManager::LeaveRuntime Method | Microsoft Docs"
+title: "IHostTaskManager::LeaveRuntime Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

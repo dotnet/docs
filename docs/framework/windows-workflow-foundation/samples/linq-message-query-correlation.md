@@ -1,5 +1,5 @@
 ---
-title: "LINQ Message Query Correlation | Microsoft Docs"
+title: "LINQ Message Query Correlation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

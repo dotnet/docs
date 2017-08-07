@@ -1,5 +1,5 @@
 ---
-title: "FunctionTailcall2 Function | Microsoft Docs"
+title: "FunctionTailcall2 Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

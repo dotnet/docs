@@ -1,5 +1,5 @@
 ---
-title: "Animation Tips and Tricks | Microsoft Docs"
+title: "Animation Tips and Tricks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,6 @@ manager: "wpickett"
 # Animation Tips and Tricks
 When working with animations in              [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], there are a number of tips and tricks that can make your animations perform better and save you frustration.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="generalissuessection"></a>   
 ## General Issues  
   

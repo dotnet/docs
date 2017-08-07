@@ -1,5 +1,5 @@
 ---
-title: "How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control Using the Designer | Microsoft Docs"
+title: "How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

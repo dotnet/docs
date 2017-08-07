@@ -1,5 +1,5 @@
 ---
-title: "NTLM and Kerberos Authentication | Microsoft Docs"
+title: "NTLM and Kerberos Authentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

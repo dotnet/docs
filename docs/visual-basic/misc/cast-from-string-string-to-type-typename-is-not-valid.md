@@ -1,5 +1,5 @@
 ---
-title: "Cast from string &quot;&lt;string&gt;&quot; to type &#39;&lt;typename&gt;&#39; is not valid | Microsoft Docs"
+title: "Cast from string &quot;&lt;string&gt;&quot; to type &#39;&lt;typename&gt;&#39; is not valid"
 
 ms.date: "2015-07-20"
 ms.prod: .net

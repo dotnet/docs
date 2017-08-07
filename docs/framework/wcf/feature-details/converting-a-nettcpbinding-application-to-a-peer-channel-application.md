@@ -1,5 +1,5 @@
 ---
-title: "Converting a NetTcpBinding Application to a Peer Channel Application | Microsoft Docs"
+title: "Converting a NetTcpBinding Application to a Peer Channel Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft.Transactions.TransactionBridge.ReplayMessageRetry | Microsoft Docs"
+title: "Microsoft.Transactions.TransactionBridge.ReplayMessageRetry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Runtime Callable Wrapper | Microsoft Docs"
+title: "Runtime Callable Wrapper"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

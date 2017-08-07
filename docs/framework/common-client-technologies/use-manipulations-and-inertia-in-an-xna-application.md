@@ -1,5 +1,5 @@
 ---
-title: "Using Manipulations and Inertia in an XNA Application | Microsoft Docs"
+title: "Using Manipulations and Inertia in an XNA Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

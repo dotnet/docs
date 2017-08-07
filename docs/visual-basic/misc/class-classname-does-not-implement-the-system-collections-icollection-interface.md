@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; does not implement the System.Collections.ICollection interface | Microsoft Docs"
+title: "Class &#39;&lt;classname&gt;&#39; does not implement the System.Collections.ICollection interface"
 
 ms.date: "2015-07-20"
 ms.prod: .net

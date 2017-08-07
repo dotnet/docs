@@ -1,5 +1,5 @@
 ---
-title: "Dependency Property Value Precedence | Microsoft Docs"
+title: "Dependency Property Value Precedence"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

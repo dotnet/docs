@@ -1,5 +1,5 @@
 ---
-title: Implementing resilient Entity Framework Core SQL connections | Microsoft Docs 
+title: Implementing resilient Entity Framework Core SQL connections
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing resilient Entity Framework Core SQL connections
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

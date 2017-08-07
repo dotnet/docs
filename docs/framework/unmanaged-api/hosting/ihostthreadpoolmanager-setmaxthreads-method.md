@@ -1,5 +1,5 @@
 ---
-title: "IHostThreadPoolManager::SetMaxThreads Method | Microsoft Docs"
+title: "IHostThreadPoolManager::SetMaxThreads Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

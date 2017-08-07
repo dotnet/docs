@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Service Endpoint in Configuration | Microsoft Docs"
+title: "How to: Create a Service Endpoint in Configuration"
 ms.custom: ""
 ms.date: "2016-06-16"
 ms.prod: ".net-framework"

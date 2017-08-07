@@ -1,5 +1,5 @@
 ---
-title: "Initializer expected | Microsoft Docs"
+title: "Initializer expected"
 
 ms.date: "2015-07-20"
 ms.prod: .net

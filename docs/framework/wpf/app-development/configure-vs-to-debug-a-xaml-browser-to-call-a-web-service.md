@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service | Microsoft Docs"
+title: "How to: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Ensuring Data Integrity with Hash Codes | Microsoft Docs"
+title: "Ensuring Data Integrity with Hash Codes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

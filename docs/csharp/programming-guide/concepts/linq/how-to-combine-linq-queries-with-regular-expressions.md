@@ -1,5 +1,5 @@
 ---
-title: "How to: Combine LINQ Queries with Regular Expressions (C#) | Microsoft Docs"
+title: "How to: Combine LINQ Queries with Regular Expressions (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

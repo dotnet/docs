@@ -1,5 +1,5 @@
 ---
-title: "foreign key property | Microsoft Docs"
+title: "foreign key property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

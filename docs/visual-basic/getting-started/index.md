@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Visual Basic | Microsoft Docs"
+title: "Getting started with Visual Basic"
 
 ms.date: "2017-05-01"
 ms.prod: .net

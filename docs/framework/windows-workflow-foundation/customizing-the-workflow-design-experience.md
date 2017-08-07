@@ -1,5 +1,5 @@
 ---
-title: "Customizing the Workflow Design Experience | Microsoft Docs"
+title: "Customizing the Workflow Design Experience"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "NAT Traversal using IPv6 and Teredo | Microsoft Docs"
+title: "NAT Traversal using IPv6 and Teredo"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

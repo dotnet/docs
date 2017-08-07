@@ -1,5 +1,5 @@
 ---
-title: "Exposing COM Components to the .NET Framework | Microsoft Docs"
+title: "Exposing COM Components to the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Bad DLL calling convention | Microsoft Docs"
+title: "Bad DLL calling convention"
 
 ms.date: "2015-07-20"
 ms.prod: .net

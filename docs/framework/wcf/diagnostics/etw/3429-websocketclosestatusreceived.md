@@ -1,5 +1,5 @@
 ---
-title: "3429 - WebSocketCloseStatusReceived | Microsoft Docs"
+title: "3429 - WebSocketCloseStatusReceived"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

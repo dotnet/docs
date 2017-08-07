@@ -1,5 +1,5 @@
 ---
-title: "Typographic and Code Conventions (Visual Basic) | Microsoft Docs"
+title: "Typographic and Code Conventions (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

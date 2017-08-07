@@ -420,7 +420,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point[] op_Explicit (System.Windows.Input.StylusPointCollection stylusPoints);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Point[] (System.Windows.Input.StylusPointCollection stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point[] op_Explicit(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.op_Explicit(System.Windows.Input.StylusPointCollection)~System.Windows.Point[]" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedMethod::GetRootScope Method | Microsoft Docs"
+title: "ISymUnmanagedMethod::GetRootScope Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

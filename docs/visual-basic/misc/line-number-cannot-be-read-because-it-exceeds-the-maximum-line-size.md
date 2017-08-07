@@ -1,5 +1,5 @@
 ---
-title: "Line &lt;number&gt; cannot be read because it exceeds the maximum line size. | Microsoft Docs"
+title: "Line &lt;number&gt; cannot be read because it exceeds the maximum line size."
 
 ms.date: "2015-07-20"
 ms.prod: .net

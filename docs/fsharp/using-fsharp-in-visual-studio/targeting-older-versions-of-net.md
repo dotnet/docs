@@ -1,6 +1,6 @@
 ---
-title: Targeting .NET Framework 2.0 on Windows 8 | Microsoft Docs
-description: Targeting .NET Framework 2.0 on Windows 8
+title: Targeting .NET Framework 2.0 on Windows 8
+description: Learn about targeting older version of the .NET Framework when using F#.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

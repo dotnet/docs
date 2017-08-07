@@ -1,5 +1,5 @@
 ---
-title: "ODBC Schema Collections | Microsoft Docs"
+title: "ODBC Schema Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

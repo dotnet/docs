@@ -3004,7 +3004,7 @@ ftp://myUrl/%2E%2E/%2E%2E
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Uri uri1, Uri uri2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Uri uri1, Uri uri2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Uri uri1, class System.Uri uri2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.op_Equality(System.Uri,System.Uri)" />
       <MemberType>Method</MemberType>
@@ -3057,7 +3057,7 @@ ftp://myUrl/%2E%2E/%2E%2E
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Uri uri1, Uri uri2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Uri uri1, Uri uri2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Uri uri1, class System.Uri uri2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Uri.op_Inequality(System.Uri,System.Uri)" />
       <MemberType>Method</MemberType>

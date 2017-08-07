@@ -1,5 +1,5 @@
 ---
-title: "Migrating Your Windows Store App to .NET Native | Microsoft Docs"
+title: "Migrating Your Windows Store App to .NET Native"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

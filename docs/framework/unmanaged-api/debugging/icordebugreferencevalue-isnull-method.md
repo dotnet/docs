@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugReferenceValue::IsNull Method | Microsoft Docs"
+title: "ICorDebugReferenceValue::IsNull Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

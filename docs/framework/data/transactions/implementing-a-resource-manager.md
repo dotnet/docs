@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Resource Manager | Microsoft Docs"
+title: "Implementing a Resource Manager"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

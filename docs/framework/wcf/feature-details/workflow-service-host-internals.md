@@ -1,5 +1,5 @@
 ---
-title: "Workflow Service Host Internals | Microsoft Docs"
+title: "Workflow Service Host Internals"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

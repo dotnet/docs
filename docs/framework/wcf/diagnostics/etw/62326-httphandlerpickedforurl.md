@@ -1,5 +1,5 @@
 ---
-title: "62326 - HttpHandlerPickedForUrl | Microsoft Docs"
+title: "62326 - HttpHandlerPickedForUrl"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

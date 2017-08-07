@@ -1,5 +1,5 @@
 ---
-title: "Exporting Schemas from Classes | Microsoft Docs"
+title: "Exporting Schemas from Classes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

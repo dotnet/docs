@@ -1,5 +1,5 @@
 ---
-title: "How to: Align Multiple Controls on Windows Forms | Microsoft Docs"
+title: "How to: Align Multiple Controls on Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

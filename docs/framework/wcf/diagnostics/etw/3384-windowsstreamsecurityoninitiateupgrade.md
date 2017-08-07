@@ -1,5 +1,5 @@
 ---
-title: "3384 - WindowsStreamSecurityOnInitiateUpgrade | Microsoft Docs"
+title: "3384 - WindowsStreamSecurityOnInitiateUpgrade"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert a BitmapSource to an Indexed Pixel Format | Microsoft Docs"
+title: "How to: Convert a BitmapSource to an Indexed Pixel Format"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

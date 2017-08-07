@@ -1,5 +1,5 @@
 ---
-title: "Creating an Activity at Runtime with DynamicActivity | Microsoft Docs"
+title: "Creating an Activity at Runtime with DynamicActivity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

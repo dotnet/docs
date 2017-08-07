@@ -1,5 +1,5 @@
 ---
-title: "This key is already associated with an element of this collection | Microsoft Docs"
+title: "This key is already associated with an element of this collection"
 
 ms.date: "2015-07-20"
 ms.prod: .net

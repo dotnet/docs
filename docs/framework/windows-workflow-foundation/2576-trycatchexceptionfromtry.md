@@ -1,5 +1,5 @@
 ---
-title: "2576 - TryCatchExceptionFromTry | Microsoft Docs"
+title: "2576 - TryCatchExceptionFromTry"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "1146 - FlowchartSwitchCase | Microsoft Docs"
+title: "1146 - FlowchartSwitchCase"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

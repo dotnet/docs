@@ -2,8 +2,6 @@
 ## [Serialization How-to Topics](serialization-how-to-topics.md)
 ## [Binary Serialization](binary-serialization.md)
 ### [Serialization Concepts](serialization-concepts.md)
-#### [Persistent Storage](persistent-storage.md)
-#### [Marshal by Value](marshal-by-value.md)
 ### [Basic Serialization](basic-serialization.md)
 ### [Selective Serialization](selective-serialization.md)
 ### [Custom Serialization](custom-serialization.md)

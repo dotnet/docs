@@ -1,13 +1,9 @@
 ---
 title: "Getting started with Visual Basic"
-
-ms.date: "2017-05-01"
+ms.date: "2017-08-07"
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +14,6 @@ ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -44,18 +39,18 @@ This section of the documentation helps you get started with Visual Basic applic
 Lists new features in each of the versions of Visual Basic .NET.
 
 [Visual Basic Breaking Changes in Visual Studio](breaking-changes-in-visual-studio.md)  
- Lists changes in this   release that might prevent an application from compiling or change its run-time behavior.  
+Lists changes in this release that might prevent an application from compiling or change its run-time behavior.  
   
- [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  
- Provides a list of Web sites and newsgroups that can help you find answers to common problems.  
+[Additional Resources for Visual Basic Programmers](additional-resources.md)  
+Provides a list of Web sites and newsgroups that can help you find answers to common problems.  
   
- [Learn Visual Basic](http://msdn.microsoft.com/vstudio/hh388573.aspx)  
- Provides links to resources for learning how to program in Visual Basic.  
-  
+## See also
  [Get Visual Basic](https://www.visualstudio.com/downloads/)  
  Provides download links for Visual Studio versions that include Visual basic support, including free versions.  
-  
-## Related sections  
+
+ [Visual Basic Fundamentals for Absolute Beginners](https://mva.microsoft.com/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+ Microsoft Virtual Academy course that teaches the fundamentals of Visual Basic programming.
+
  [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)  
  Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.  
   

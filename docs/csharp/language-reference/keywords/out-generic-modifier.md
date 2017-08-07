@@ -38,7 +38,7 @@ For generic type parameters, the `out` keyword specifies that the type parameter
   
  A covariant delegate can be assigned another delegate of the same type, but with a more derived generic type parameter.  
   
- For more information, see [Covariance and Contravariance](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/covariance-contravariance/index).  
+ For more information, see [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).  
   
 ## Example  
  The following example shows how to declare, extend, and implement a covariant generic interface. It also shows how to use implicit conversion for classes that implement a covariant interface.  

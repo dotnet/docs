@@ -6,7 +6,7 @@ author: BillWagner
 ms.author: wiwagn
 ms.date: 12/21/2016
 ms.topic: article
-ms.prod: visual-studio-dev-15
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
@@ -208,9 +208,9 @@ Discards are supported in the following scenarios:
 
 * When deconstructing tuples or user-defined types.
 
-* When calling methods with [out](..\language-reference\keywords\out.md) parameters.
+* When calling methods with [out](../language-reference/keywords/out.md) parameters.
 
-* In a pattern matching operation with the [is](..\language-reference\keywords\is.md) and [switch](language-reference\keywords\switch.md) statements.
+* In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
 
 * As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 

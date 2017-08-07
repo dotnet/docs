@@ -1593,11 +1593,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="T" /> must derive from <see langword="__ComObject" />.  
+          <typeparamref name="T" /> must derive from <see langword="__ComObject" />.  
   
  -or-  
   
- <paramref name="T" /> is a [!INCLUDE[wrt](~/includes/wrt-md.md)] type.</exception>
+ <typeparamref name="T" /> is a [!INCLUDE[wrt](~/includes/wrt-md.md)] type.</exception>
         <exception cref="T:System.InvalidCastException">
           <paramref name="o" /> cannot be converted to the <paramref name="TWrapper" /> because it does not support all required interfaces.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -1707,7 +1707,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="T" /> has an automatic layout. Use sequential or explicit instead.</exception>
+          <typeparamref name="T" /> has an automatic layout. Use sequential or explicit instead.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -2089,7 +2089,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="T" /> parameter is not an interface.  
+        <exception cref="T:System.ArgumentException">The <typeparamref name="T" /> parameter is not an interface.  
   
  -or-  
   
@@ -2097,13 +2097,13 @@
   
  -or-  
   
- The <paramref name="T" /> parameter is a generic type.</exception>
+ The <typeparamref name="T" /> parameter is a generic type.</exception>
         <exception cref="T:System.InvalidCastException">The <paramref name="o" /> parameter does not support the requested interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.  
   
  -or-  
   
- The <paramref name="T" /> parameter is <see langword="null" />.</exception>
+ The <typeparamref name="T" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -2152,7 +2152,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <paramref name="T" /> parameter is not an interface.  
+        <exception cref="T:System.ArgumentException">The <typeparamref name="T" /> parameter is not an interface.  
   
  -or-  
   
@@ -2160,13 +2160,13 @@
   
  -or-  
   
- The <paramref name="T" /> parameter is a generic type.</exception>
+ The <typeparamref name="T" /> parameter is a generic type.</exception>
         <exception cref="T:System.InvalidCastException">The object <paramref name="o" /> does not support the requested interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.  
   
  -or-  
   
- The <paramref name="T" /> parameter is <see langword="null" />.</exception>
+ The <typeparamref name="T" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -2232,7 +2232,7 @@
   
  -or-  
   
- The <paramref name="T" /> parameter is an open generic type.</exception>
+ The <typeparamref name="T" /> parameter is an open generic type.</exception>
         <exception cref="T:System.InvalidCastException">The <paramref name="o" /> parameter does not support the <paramref name="TInterface" /> interface.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="o" /> parameter is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
@@ -3635,7 +3635,7 @@
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Converts an array of COM VARIANTs to an array of a specified type.</summary>
-        <returns>An array of <paramref name="T" /> objects that corresponds to <paramref name="aSrcNativeVariant" />.</returns>
+        <returns>An array of <typeparamref name="T" /> objects that corresponds to <paramref name="aSrcNativeVariant" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5147,8 +5147,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The layout of <paramref name="T" /> is not sequential or explicit.</exception>
-        <exception cref="T:System.MissingMethodException">The class specified by <paramref name="T" /> does not have an accessible default constructor.</exception>
+        <exception cref="T:System.ArgumentException">The layout of <typeparamref name="T" /> is not sequential or explicit.</exception>
+        <exception cref="T:System.MissingMethodException">The class specified by <typeparamref name="T" /> does not have an accessible default constructor.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
@@ -6901,7 +6901,7 @@
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
  Returns the size of an unmanaged type in bytes.</summary>
-        <returns>The size, in bytes, of the type that is specified by the <paramref name="T" /> generic type parameter.</returns>
+        <returns>The size, in bytes, of the type that is specified by the <typeparamref name="T" /> generic type parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

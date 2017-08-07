@@ -1436,7 +1436,7 @@
  [!code-csharp[System.String.Compare#21](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Compare/cs/compare21.cs#21)]
  [!code-vb[System.String.Compare#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Compare/vb/compare21.vb#21)]  
   
- To recognize ignorable characters in a string comparison, call the <see cref="M:System.String.Compare(System.String,System.String,System.StringComparison)" /> method and supply a value of either <see cref="F:System.Globalization.CompareOptions.Ordinal" /> or <see cref="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" /> for the <paramref name="comparisonType" /> parameter.</para>
+ To recognize ignorable characters in a string comparison, call the <see cref="M:System.String.Compare(System.String,System.String,System.StringComparison)" /> method and supply a value of either <see cref="F:System.Globalization.CompareOptions.Ordinal" /> or <see cref="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" /> for the `comparisonType` parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -3669,7 +3669,7 @@
   
  -or-  
   
- <paramref name="count" /> is greater than the length of the substring from <paramref name="startIndex" /> to the end of this instance  
+ <paramref name="count" /> is greater than the length of the substring from <paramref name="sourceIndex" /> to the end of this instance  
   
  -or-  
   
@@ -5422,7 +5422,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring within a string instance by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring within a string instance by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its `comparisonType` parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -5548,7 +5548,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="startIndex" /> is less than 0 (zero) or greater than the length of this string.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring that occurs after a particular character position by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To find the first index of a substring that occurs after a particular character position by using the comparison rules of the current culture, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its `comparisonType` parameter.</para>
         </block>
       </Docs>
     </Member>
@@ -5760,7 +5760,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  <paramref name="count" /> is greater than the length of this string minus <paramref name="startIndex" />.</exception>
         <block subset="none" type="usage">
-          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To use the comparison rules of the current culture to perform this operation, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its <paramref name="comparisonType" /> parameter.</para>
+          <para>As explained in [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md), we recommend that you avoid calling string comparison methods that substitute default values and instead call methods that require parameters to be explicitly specified. To use the comparison rules of the current culture to perform this operation, call the <see cref="M:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> method overload with a value of <see cref="F:System.StringComparison.CurrentCulture" /> for its `comparisonType` parameter.</para>
         </block>
       </Docs>
     </Member>

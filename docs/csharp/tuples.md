@@ -81,8 +81,8 @@ unnamed tuple:
 
 [!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
 
-The tuple in the above example was initialized using literal constants and
-will not have field names created using *Tuple field name projections* in C# 7.1.
+The tuple in the previous example was initialized using literal constants and
+won't have field names created using *Tuple field name projections* in C# 7.1.
 
 However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
@@ -125,7 +125,7 @@ the rules for assigning named tuples to each other.
 ## Tuple projection initializers
 
 In general, tuple projection initializers work by using the variable or
-field names from the right hand side of a tuple initialization statement.
+field names from the right-hand side of a tuple initialization statement.
 If an explicit name is given, that takes precedence over any projected
 name. For example, in the following initializer, the fields are `explicitFieldOne`
 and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:

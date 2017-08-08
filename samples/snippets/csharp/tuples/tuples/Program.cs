@@ -67,11 +67,9 @@ namespace tuples
             // Accessing the first field:
             Console.WriteLine(projections.Item1);
             // There is no semantic name 'ToString'
-
             // Accessing the second field:
             Console.WriteLine(projections.one);
             Console.WriteLine(projections.Item2);
-
             // Accessing the third field:
             Console.WriteLine(projections.Item3);
             // There is no semantic name 'Item`.

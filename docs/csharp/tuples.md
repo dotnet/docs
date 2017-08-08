@@ -102,7 +102,7 @@ the compiled output. The compiled Microsoft Intermediate Language (MSIL)
 does not include the names you've given these fields. 
 
 Beginning with C# 7.1, the field names for a tuple may be provided from the
-variables used to initialize the tuple. THis is referred to as **tuple projection initializers**. The code below creates a tuple named
+variables used to initialize the tuple. This is referred to as **[tuple projection initializers](#tuple-projection-initializers)**. The code below creates a tuple named
 `accumulation` with fields `count` (an integer), and `sum` (a double).
 
 [!code-csharp[ProjectedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectedTupleNames "Named tuple")]
@@ -122,7 +122,7 @@ It is important to understand these underlying fundamentals of
 the new tuples and the `ValueTuple` type in order to understand
 the rules for assigning named tuples to each other.
 
-## Details on tuple projection initializers
+## Tuple projection initializers
 
 In general, tuple projection initializers work by using the variable or
 field names from the right hand side of a tuple initialization statement.
@@ -133,22 +133,21 @@ and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
 [!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
 
 For any field where an explicit name is not provided, an applicable implicit
-name will be applied. Note that there is no requirement to provide semantic names,
+name will be projected. Note that there is no requirement to provide semantic names,
 either explicitly or implicitly. The folowing initializer will have field
-names `Item1` and `StringContent`:
+names `Item1`, whose value is `42` and `StringContent`, whose value is "The answer to everything":
 
 [!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
 
-There are two conditions where candidate field names are dropped:
+There are two conditions where candidate field names are not projected onto the tuple field:
 
 1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString` or `Rest`.
 1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
 
 The reason is to avoid ambiguity. These names would cause an ambiguity
-if they were used as the field names for a field in a tuple.
-
-Neither of these conditions cause compile time errors. Instead, these
-fields do not have semantic names projected for them.  The following examples
+if they were used as the field names for a field in a tuple. Neither of these
+conditions cause compile time errors. Instead, the fields without projected names
+do not have semantic names projected for them.  The following examples
 demonstrate these conditions:
 
 [!code-csharp[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]

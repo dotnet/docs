@@ -10,7 +10,7 @@ ms.technology: dotnet-docker
 ---
 # What is Docker?
 
-[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. Docker works in collaboration with cloud, Linux, and Windows vendors (including Microsoft).
+[Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. Docker works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
 ![](./media/image2.png)
 
@@ -18,9 +18,9 @@ ms.technology: dotnet-docker
 
 Docker image containers run natively on Linux and Windows. Windows images run only on Windows hosts and Linux images run only on Linux hosts. The host is a server or a VM.
 
-You can develope on Windows, Linux, or macOS. The development computer runs a Docker host where Docker images are deployed (including the app and its dependencies). On Linux or macOS, you use a Docker host that is Linux based, and can create images only for Linux containers.( On macOS you can edit code or run the Docker CLI, but as of the time of this writing, containers do not run directly on macOS.) On Windows you can create images for either Linux or Windows Containers.
+You can develop on Windows, Linux, or macOS. The development computer runs a Docker host where Docker images are deployed, including the app and its dependencies. On Linux or macOS, you use a Docker host that is Linux based and can create images only for Linux containers.(On macOS you can edit code or run the Docker CLI, but as of the time of this writing, containers do not run directly on macOS.) On Windows you can create images for either Linux or Windows Containers.
 
-[Docker Community Edition (CE)](https://www.docker.com/community-edition) (for Windows or macOS), hosts containers in a development environment and provides additional developer tools. [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications. ~Both products install the necessary VM (the Docker host) to host the containers.~ 
+On Windows or macOS, [Docker Community Edition (CE)](https://www.docker.com/community-edition) hosts containers in a development environment and provides additional developer tools. [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition) is used by IT teams who build, ship, and run large business-critical applications. ~Both products install the necessary VM (the Docker host) to host the containers.~ 
 
 [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) work with two types of runtimes:
 
@@ -39,20 +39,20 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
                                                                                                                                                                                         
   ![](./media/image3.png)                                                                                                                                ![](./media/image4.png)
                                                                                                                                                                                         
-  Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization. Containers include the application and all its dependencies. However, containers share the OS kernel with other containers. Containers run as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)
+  Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization. Containers include the application and all its dependencies. However, containers share the OS kernel with other containers. Containers run as isolated processes in user space on the host operating system. Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
 
 Because containers require far fewer resources (for example, they do not need a full OS), they start fast and are easy to deploy. Low resource usage allows higher density. You can run more services on the same hardware unit and reduce costs.
 
-Running on the same kernel resultes in less isolation than VMs provide.
+Running on the same kernel results in less isolation than VMs provide.
 
 The main goal of an image is that it makes the environment (dependencies) the same across different deployments. This means that you can debug it on your machine and then deploy it to another machine with the same environment guaranteed.
 
 A container image is a way to package an app or service and deploy it in a reliable and reproducible way. You could say that Docker is not only a technology, but also a philosophy and a process.
 
-Docker developers don't say, "It works on my machine, why not in production?" They say, "It runs on Docker". Docker packaged apps can be executed on any supported Docker environment. Docker packaged apps run consistently on all deployment targets (Dev, QA, staging, production).
+Docker developers don't say, "It works on my machine, why not in production?" They say, "It runs on Docker". Docker-packaged apps can be executed on any supported Docker environment. Docker packaged apps run consistently on all deployment targets (Dev, QA, staging, production).
 
 >[!div class="step-by-step"]
 [Previous] (index.md)

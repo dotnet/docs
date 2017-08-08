@@ -42,29 +42,25 @@ different ways to use them, and initial guidance on working with Tuples.
 
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single
-object more easily. 
+object more easily.
 
 The .NET Framework already has generic `Tuple` classes. These classes,
 however, had two major limitations. For one, the `Tuple` classes named
 their fields `Item1`, `Item2`, and so on. Those names carry no semantic
 information. Using these `Tuple` types does not enable communicating the
-meaning of each of the fields. Another concern is that the `Tuple` classes are
+meaning of each of the fields. The new language features enable you to declare
+and use semantically meaningful names for the fields in a tuple.
+
+Another concern is that the `Tuple` classes are
 reference types. Using one of the `Tuple` types means allocating objects. On hot
-paths, this can have a measurable impact on your application's performance.
+paths, this can have a measurable impact on your application's performance. Therefore,
+the language support for tuples leverages the new `ValueTuple` classes.
 
 To avoid those deficiencies, you could create a `class` or a `struct`
 to carry multiple fields. Unfortunately, that's more work for you,
 and it obscures your design intent. Making a `struct` or `class` implies
 that you are defining a type with both data and behavior. Many times, you
 simply want to store multiple values in a single object.
-
-The new language features for tuples, combined with a new set of
-classes in the framework, address these deficiencies. These new tuples
-use the new `ValueTuple` generic structs. As the name implies, this type is a `struct`
-instead of a `class`. There are different versions of this struct to support
-tuples with different numbers of fields. New language support provides semantic
-names for the fields of the tuple type, along with features to make constructing
-or accessing tuple fields easy.
 
 The language features and the `ValueTuple` generic structs enforce the rule that
 you cannot add any behavior (methods) to these tuple types.
@@ -85,6 +81,9 @@ unnamed tuple:
 
 [!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
 
+The tuple in the above example was initialized using literal constants and
+will not have field names created using *Tuple field name projections* in C# 7.1.
+
 However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
 Named tuples still have fields named `Item1`, `Item2`, `Item3` and so on.
@@ -102,6 +101,12 @@ replaces the names you've defined with `Item*` equivalents when generating
 the compiled output. The compiled Microsoft Intermediate Language (MSIL)
 does not include the names you've given these fields. 
 
+Beginning with C# 7.1, the field names for a tuple may be provided from the
+variables used to initialize the tuple. THis is referred to as **tuple projection initializers**. The code below creates a tuple named
+`accumulation` with fields `count` (an integer), and `sum` (a double).
+
+[!code-csharp[ProjectedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectedTupleNames "Named tuple")]
+
 The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
 adds a `TupleElementNames` attribute on the method. This attribute contains
@@ -116,6 +121,40 @@ the fields in the Tuple.
 It is important to understand these underlying fundamentals of
 the new tuples and the `ValueTuple` type in order to understand
 the rules for assigning named tuples to each other.
+
+## Details on tuple projection initializers
+
+In general, tuple projection initializers work by using the variable or
+field names from the right hand side of a tuple initialization statement.
+If an explicit name is given, that takes precedence over any projected
+name. For example, in the following initializer, the fields are `explicitFieldOne`
+and `explicitFieldTwo`, not `localVariableOne` and `localVariableTwo`:
+
+[!code-csharp[ExplicitNamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionExample_Explicit "Explicitly named tuple")]
+
+For any field where an explicit name is not provided, an applicable implicit
+name will be applied. Note that there is no requirement to provide semantic names,
+either explicitly or implicitly. The folowing initializer will have field
+names `Item1` and `StringContent`:
+
+[!code-csharp[MixedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#MixedTuple "mixed tuple")]
+
+There are two conditions where candidate field names are dropped:
+
+1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString` or `Rest`.
+1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
+
+The reason is to avoid ambiguity. These names would cause an ambiguity
+if they were used as the field names for a field in a tuple.
+
+Neither of these conditions cause compile time errors. Instead, these
+fields do not have semantic names projected for them.  The following examples
+demonstrate these conditions:
+
+[!code-csharp[Ambiguity](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectionAmbiguities "tuples where projections are not performed")]
+
+These situations do not cause compiler errors because that would be a breaking change for
+code written with C# 7.0, when tuple field name projections were not available.
 
 ## Assignment and tuples
 
@@ -267,6 +306,10 @@ expresses that design very well:
 
 [!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
 
+> [!NOTE]
+> In C# 7.1, tuple projections enable you to create named tuples using fields, in a manner simlar to the property naming in anonymous types. In the above code,
+> the `select` statement in the query projection creates a tuple that has fields `ID` and `Title`.
+
 The named tuple can be part of the signature. It lets the compiler and IDE
 tools provide static checking that you are using the result correctly. The
 named tuple also carries the static type information so there is no need
@@ -293,6 +336,7 @@ declarations inside the parentheses.
 ```csharp
 (double sum, var sumOfSquares, var count) = ComputeSumAndSumOfSquares(sequence);
 ```
+
 Note that you cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.

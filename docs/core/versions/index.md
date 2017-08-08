@@ -1,10 +1,10 @@
 ---
 title: .NET Core versioning
-description: Understand how 
+description:  Understand how .NET Core versioning works.
 keywords: .NET,.NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 08/04/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet

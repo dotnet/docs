@@ -1,13 +1,9 @@
 ---
 title: "Out (Generic Modifier) (Visual Basic)"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceOut"
@@ -20,7 +16,6 @@ ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -42,7 +37,7 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
 ## Remarks  
  Covariance enables you to use a more derived type than that specified by the generic parameter. This allows for implicit conversion of classes that implement variant interfaces and implicit conversion of delegate types.  
   
- For more information, see [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8).  
+ For more information, see [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md).  
   
 ## Rules  
  You can use the `Out` keyword in generic interfaces and delegates.  
@@ -78,5 +73,5 @@ For generic type parameters, the `Out` keyword specifies that the type is covari
  [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_2.vb)]  
   
 ## See Also  
- [Variance in Generic Interfaces](http://msdn.microsoft.com/library/e14322da-1db3-42f2-9a67-397daddd6b6a)   
+ [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)

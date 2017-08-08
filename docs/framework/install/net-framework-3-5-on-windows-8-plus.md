@@ -1,5 +1,5 @@
 ---
-title: "Install the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10
+title: "Install the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10"
 ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.technology: 

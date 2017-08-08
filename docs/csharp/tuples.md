@@ -46,15 +46,15 @@ object more easily.
 
 The .NET Framework already has generic `Tuple` classes. These classes,
 however, had two major limitations. For one, the `Tuple` classes named
-their fields `Item1`, `Item2`, and so on. Those names carry no semantic
+their properties `Item1`, `Item2`, and so on. Those names carry no semantic
 information. Using these `Tuple` types does not enable communicating the
-meaning of each of the fields. The new language features enable you to declare
-and use semantically meaningful names for the fields in a tuple.
+meaning of each of the properties. The new language features enable you to declare
+and use semantically meaningful names for the elements in a tuple.
 
 Another concern is that the `Tuple` classes are
 reference types. Using one of the `Tuple` types means allocating objects. On hot
 paths, this can have a measurable impact on your application's performance. Therefore,
-the language support for tuples leverages the new `ValueTuple` classes.
+the language support for tuples leverages the new `ValueTuple` structs.
 
 To avoid those deficiencies, you could create a `class` or a `struct`
 to carry multiple fields. Unfortunately, that's more work for you,
@@ -82,7 +82,7 @@ unnamed tuple:
 [!code-csharp[UnnamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#01_UnNamedTuple "Unnamed tuple")]
 
 The tuple in the previous example was initialized using literal constants and
-won't have field names created using *Tuple field name projections* in C# 7.1.
+won't have element names created using *Tuple field name projections* in C# 7.1.
 
 However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
@@ -306,7 +306,7 @@ expresses that design very well:
 [!code-csharp[QueryReturningTuple](../../samples/snippets/csharp/tuples/tuples/projectionsample.cs#15_QueryReturningTuple "Query returning a tuple")]
 
 > [!NOTE]
-> In C# 7.1, tuple projections enable you to create named tuples using fields, in a manner simlar to the property naming in anonymous types. In the above code,
+> In C# 7.1, tuple projections enable you to create named tuples using fields, in a manner similar to the property naming in anonymous types. In the above code,
 > the `select` statement in the query projection creates a tuple that has fields `ID` and `Title`.
 
 The named tuple can be part of the signature. It lets the compiler and IDE

@@ -1,5 +1,5 @@
 ---
-title: "Using the iteration variable in a lambda expression may have unexpected results | Microsoft Docs"
+title: "Using the iteration variable in a lambda expression may have unexpected results"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -79,7 +79,7 @@ End Module
   
  `5`  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42324  
   

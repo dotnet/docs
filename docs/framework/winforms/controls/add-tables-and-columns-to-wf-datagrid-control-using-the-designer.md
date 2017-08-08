@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Tables and Columns to the Windows Forms DataGrid Control Using the Designer | Microsoft Docs"
+title: "How to: Add Tables and Columns to the Windows Forms DataGrid Control Using the Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

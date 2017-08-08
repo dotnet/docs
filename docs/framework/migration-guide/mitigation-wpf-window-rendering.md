@@ -1,5 +1,5 @@
 ---
-title: "Mitigation: WPF Window Rendering | Microsoft Docs"
+title: "Mitigation: WPF Window Rendering"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Partial Classes and Methods (C# Programming Guide) | Microsoft Docs"
+title: "Partial Classes and Methods (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

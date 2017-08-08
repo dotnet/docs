@@ -1,5 +1,5 @@
 ---
-title: "&lt;bypasslist&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;bypasslist&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -72,7 +72,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP addresses begin with 192.168.  
+ The following example adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP addresses begin with 192.168.  
   
 ```xml  
 <configuration>  

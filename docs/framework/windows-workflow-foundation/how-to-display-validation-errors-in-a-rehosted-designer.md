@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Validation Errors in a Rehosted Designer | Microsoft Docs"
+title: "How to: Display Validation Errors in a Rehosted Designer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

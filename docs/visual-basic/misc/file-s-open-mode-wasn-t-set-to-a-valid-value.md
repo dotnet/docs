@@ -1,5 +1,5 @@
 ---
-title: "File&#39;s open mode wasn&#39;t set to a valid value | Microsoft Docs"
+title: "File&#39;s open mode wasn&#39;t set to a valid value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

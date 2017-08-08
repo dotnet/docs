@@ -1,5 +1,5 @@
 ---
-title: "Deploying the .NET Framework and Applications | Microsoft Docs"
+title: "Deploying the .NET Framework and Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -169,7 +169,7 @@ This article helps you get started deploying the .NET Framework with your applic
 |[Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)|Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.|  
 |[Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)|Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using System Center Configuration Manager (SCCM).|  
 |[Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)|Explains how developers can install .NET Framework on their users' computers with their applications.|  
-|[Deploying Applications, Services, and Components](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.| 
+|[Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.| 
 |[Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)|Describes how to package a Windows Forms application and deploy it with ClickOnce to client computers on a network.|  
 |[Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)|Describes the hub and spoke model that the .NET Framework uses to package and deploy resources; covers resource naming conventions, fallback process, and packaging alternatives.|  
 |[Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)|Explains how to ship and install interop applications, which typically include a .NET Framework client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components.|  

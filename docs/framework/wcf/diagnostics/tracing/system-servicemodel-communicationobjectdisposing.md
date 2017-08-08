@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.CommunicationObjectDisposing | Microsoft Docs"
+title: "System.ServiceModel.CommunicationObjectDisposing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

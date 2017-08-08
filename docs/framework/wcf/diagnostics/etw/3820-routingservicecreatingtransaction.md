@@ -1,5 +1,5 @@
 ---
-title: "3820 - RoutingServiceCreatingTransaction | Microsoft Docs"
+title: "3820 - RoutingServiceCreatingTransaction"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

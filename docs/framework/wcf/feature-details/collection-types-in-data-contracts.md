@@ -1,5 +1,5 @@
 ---
-title: "Collection Types in Data Contracts | Microsoft Docs"
+title: "Collection Types in Data Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

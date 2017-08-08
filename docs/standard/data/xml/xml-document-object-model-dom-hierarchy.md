@@ -1,5 +1,5 @@
 ---
-title: "XML Document Object Model (DOM) Hierarchy | Microsoft Docs"
+title: "XML Document Object Model (DOM) Hierarchy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

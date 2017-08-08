@@ -1,5 +1,5 @@
 ---
-title: "Extending the My Namespace in Visual Basic | Microsoft Docs"
+title: "Extending the My Namespace in Visual Basic"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -126,6 +126,6 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
  [Packaging and Deploying Custom My Extensions](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)   
  [Extending the Visual Basic Application Model](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)   
  [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)   
- [My Extensions Page, Project Designer](https://docs.microsoft.com/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)   
- [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
+ [My Extensions Page, Project Designer](/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)   
+ [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)   
  [Partial](../../../visual-basic/language-reference/modifiers/partial.md)

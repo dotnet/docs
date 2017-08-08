@@ -1,5 +1,5 @@
 ---
-title: "Get not supported (write-only property) | Microsoft Docs"
+title: "Get not supported (write-only property)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -42,4 +42,4 @@ A property cannot be read because it is write only.
 2.  Remove the reference to the property.  
   
 ## See Also  
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

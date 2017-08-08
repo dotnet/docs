@@ -109,7 +109,7 @@
 ## Examples  
  This example shows how to use sRGB, ScRGB, and color profile values to create the color blue.  
   
- [!code-xml[GraphicsMMMiscSnippets_snip#ColorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GraphicsMMMiscSnippets_snip/CS/ColorExample.xaml#colorexample)]   
+ [!code-xaml[GraphicsMMMiscSnippets_snip#ColorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GraphicsMMMiscSnippets_snip/CS/ColorExample.xaml#colorexample)]   
   
  ]]></format>
     </remarks>
@@ -666,7 +666,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color op_Addition (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color operator + (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Addition(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Addition(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberType>Method</MemberType>
@@ -697,7 +697,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Equality(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberType>Method</MemberType>
@@ -731,7 +731,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Inequality(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberType>Method</MemberType>
@@ -765,7 +765,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color op_Multiply (System.Windows.Media.Color color, float coefficient);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color operator * (System.Windows.Media.Color color, float coefficient);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Multiply(valuetype System.Windows.Media.Color color, float32 coefficient) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Multiply(System.Windows.Media.Color,System.Single)" />
       <MemberType>Method</MemberType>
@@ -791,7 +791,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color op_Subtraction (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color operator - (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Subtraction(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Subtraction(System.Windows.Media.Color,System.Windows.Media.Color)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Runtime Library Members | Microsoft Docs"
+title: "Visual Basic Runtime Library Members"
 
 ms.date: "2015-07-20"
 ms.prod: .net

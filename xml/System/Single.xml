@@ -1183,7 +1183,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (float left, float right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (float left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(float32 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.op_Equality(System.Single,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1228,7 +1228,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (float left, float right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (float left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(float32 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.op_GreaterThan(System.Single,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1273,7 +1273,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (float left, float right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (float left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(float32 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.op_GreaterThanOrEqual(System.Single,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1318,7 +1318,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (float left, float right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (float left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(float32 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.op_Inequality(System.Single,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1363,7 +1363,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (float left, float right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (float left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(float32 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.op_LessThan(System.Single,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1408,7 +1408,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (float left, float right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (float left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(float32 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Single.op_LessThanOrEqual(System.Single,System.Single)" />
       <MemberType>Method</MemberType>

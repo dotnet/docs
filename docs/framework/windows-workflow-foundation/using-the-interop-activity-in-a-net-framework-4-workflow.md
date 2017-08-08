@@ -1,5 +1,5 @@
 ---
-title: "Using the Interop Activity in a .NET Framework 4 Workflow | Microsoft Docs"
+title: "Using the Interop Activity in a .NET Framework 4 Workflow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -15,8 +15,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies flags that control which phases of transaction completion should be received by the Compensating Resource Manager (CRM) Compensator, and whether recovery should fail if questionable transactions remain after recovery has been attempted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this enumeration.  
+  
+ [!code-cpp[EnterpriseServices_Crm#11](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_Crm/cpp/crmserver.cpp#11)]
+ [!code-csharp[EnterpriseServices_Crm#11](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_Crm/CS/crmserver.cs#11)]
+ [!code-vb[EnterpriseServices_Crm#11](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_Crm/VB/crmserver.vb#11)]  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AbortPhase">
@@ -32,7 +43,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the abort phase.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllPhases">
@@ -48,7 +59,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents all phases.</summary>
       </Docs>
     </Member>
     <Member MemberName="CommitPhase">
@@ -64,7 +75,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the commit phase.</summary>
       </Docs>
     </Member>
     <Member MemberName="FailIfInDoubtsRemain">
@@ -80,7 +91,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Fails if in-doubt transactions remain after recovery has been attempted.</summary>
       </Docs>
     </Member>
     <Member MemberName="PreparePhase">
@@ -96,7 +107,7 @@
         <ReturnType>System.EnterpriseServices.CompensatingResourceManager.CompensatorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the prepare phase.</summary>
       </Docs>
     </Member>
   </Members>

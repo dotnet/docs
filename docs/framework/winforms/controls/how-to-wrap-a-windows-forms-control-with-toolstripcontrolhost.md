@@ -1,5 +1,5 @@
 ---
-title: "How to: Wrap a Windows Forms Control with ToolStripControlHost | Microsoft Docs"
+title: "How to: Wrap a Windows Forms Control with ToolStripControlHost"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

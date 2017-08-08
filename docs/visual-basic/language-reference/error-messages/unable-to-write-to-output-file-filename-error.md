@@ -1,5 +1,5 @@
 ---
-title: "Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt; | Microsoft Docs"
+title: "Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -80,4 +80,4 @@ There was a problem creating the file.
 3.  Press **OK**.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

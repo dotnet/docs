@@ -1,5 +1,5 @@
 ---
-title: "Grouping Data (C#) | Microsoft Docs"
+title: "Grouping Data (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Winmdexp.exe (Windows Runtime Metadata Export Tool) | Microsoft Docs"
+title: "Winmdexp.exe (Windows Runtime Metadata Export Tool)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

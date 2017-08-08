@@ -1,5 +1,5 @@
 ---
-title: "ICLRPolicyManager::SetUnhandledExceptionPolicy Method | Microsoft Docs"
+title: "ICLRPolicyManager::SetUnhandledExceptionPolicy Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

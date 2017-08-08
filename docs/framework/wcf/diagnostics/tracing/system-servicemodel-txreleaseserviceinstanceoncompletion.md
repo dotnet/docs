@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.TxReleaseServiceInstanceOnCompletion | Microsoft Docs"
+title: "System.ServiceModel.TxReleaseServiceInstanceOnCompletion"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XSLT Extension Objects | Microsoft Docs"
+title: "XSLT Extension Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

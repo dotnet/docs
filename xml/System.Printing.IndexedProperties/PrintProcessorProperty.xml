@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintProcessor op_Implicit (System.Printing.IndexedProperties.PrintProcessorProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintProcessor (System.Printing.IndexedProperties.PrintProcessorProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintProcessor op_Implicit(class System.Printing.IndexedProperties.PrintProcessorProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProcessorProperty.op_Implicit(System.Printing.IndexedProperties.PrintProcessorProperty)~System.Printing.PrintProcessor" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintProcessor op_Implicit (System.Printing.IndexedProperties.PrintProcessorProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintProcessor (System.Printing.IndexedProperties.PrintProcessorProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintProcessor op_Implicit(class System.Printing.IndexedProperties.PrintProcessorProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintProcessorProperty.op_Implicit(System.Printing.IndexedProperties.PrintProcessorProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintProcessor" />
       <MemberType>Method</MemberType>

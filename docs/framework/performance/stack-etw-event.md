@@ -1,5 +1,5 @@
 ---
-title: "Stack ETW Event | Microsoft Docs"
+title: "Stack ETW Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

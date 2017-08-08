@@ -16,8 +16,19 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a node in the lifetime tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+The <xref:System.Composition.Hosting.Core.LifetimeContext> object is the unit of sharing for shared parts. It controls the disposal of bound parts and can be used to retrieve instances, either as part of an existing composition operation or as the basis of a new composition operation. An individual lifetime context can be marked to contain parts that are constrained by particular sharing boundaries.
+
+This object contains two pieces of independently protected shared state: shared part instances and bound part instances. 
+A shared part instance is lock-free, readable, and does not result in issues if it is added to during disposal. It is protected by being locked itself. Activation logic is unavoidably called under this lock. 
+A bound part instance is always protected by locking <see langword="this" />, and should never be written to after disposal. A bound part instance is set to <see langword="null" /> under a lock in the <xref:System.Composition.Hosting.Core.LifetimeContext.Dispose> method. If writing were allowed after disposal for a bound part instance, it would result in disposable parts not being released. The dispose method on a bound part is called outside of the lock. 
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddBoundInstance">
@@ -37,9 +48,11 @@
         <Parameter Name="instance" Type="System.IDisposable" />
       </Parameters>
       <Docs>
-        <param name="instance">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="instance">The part.</param>
+        <summary>Binds the lifetime of a disposable part to this lifetime context.</summary>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The operation was performed on a disposed object.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllocateSharingId">
@@ -57,9 +70,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Generates an identifier that can be used to locate shared part instances.</summary>
+        <returns>A new unique identifier.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -77,8 +91,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases the lifetime context and any part instances bound to it.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindContextWithin">
@@ -98,10 +113,17 @@
         <Parameter Name="sharingBoundary" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sharingBoundary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sharingBoundary">The sharing boundary to find a lifetime context within.</param>
+        <summary>Finds the broadest lifetime context within all of the specified sharing boundaries.</summary>
+        <returns>The broadest lifetime context within all of the specified sharing boundaries.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently, the root cannot be a boundary.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOrCreate">
@@ -123,12 +145,19 @@
         <Parameter Name="creator" Type="System.Composition.Hosting.Core.CompositeActivator" />
       </Parameters>
       <Docs>
-        <param name="sharingId">To be added.</param>
-        <param name="operation">To be added.</param>
-        <param name="creator">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sharingId">The ID of the shared part.</param>
+        <param name="operation">An operation in which to create a part, if necessary.</param>
+        <param name="creator">An activator that can activate a new part instance, if necessary.</param>
+        <summary>Retrieves a shared part instance with the specified ID, or if the part instance can not be found, creates and shares a part instance using the specified creator within the specified operation.</summary>
+        <returns>The new or retrieved part.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is lock-free if the part instance already exists. If the part instance must be created, a lock will be taken that will serialize other writes that use this method (concurrent reads will continue to be safe and lock-free). It is important that the composition, and thus lock acquisition, is strictly leaf-to-root in the lifetime tree.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -146,9 +175,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.LifetimeContext" /> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.LifetimeContext" /> object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -169,11 +199,13 @@
         <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contract">The contract.</param>
+        <param name="export">After this method returns, contains the contract instance if available; otherwise, <see langword="null" />.</param>
+        <summary>Retrieves a contract instance from the composition context.</summary>
+        <returns>
+          <see langword="true" /> if the instance was retrieved; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedScope::GetMethod Method | Microsoft Docs"
+title: "ISymUnmanagedScope::GetMethod Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

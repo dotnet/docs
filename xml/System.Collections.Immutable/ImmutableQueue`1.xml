@@ -22,14 +22,6 @@
       <InterfaceName>System.Collections.Immutable.IImmutableQueue&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("IsEmpty = {IsEmpty}")</AttributeName>
-    </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableEnumerableDebuggerProxy`1))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the queue.</typeparam>
     <summary>Represents an immutable queue.  

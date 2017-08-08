@@ -1,5 +1,5 @@
 ---
-title: "How to: Read Characters from a String | Microsoft Docs"
+title: "How to: Read Characters from a String"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

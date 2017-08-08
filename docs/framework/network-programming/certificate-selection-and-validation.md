@@ -1,5 +1,5 @@
 ---
-title: "Certificate Selection and Validation | Microsoft Docs"
+title: "Certificate Selection and Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

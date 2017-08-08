@@ -1,5 +1,5 @@
 ---
-title: "132 - BufferPoolChangeQuota | Microsoft Docs"
+title: "132 - BufferPoolChangeQuota"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

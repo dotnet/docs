@@ -73,7 +73,7 @@ Windows Media Player Jump List
   
  The following example shows how to declare a <xref:System.Windows.Shell.JumpList> in markup. The <xref:System.Windows.Shell.JumpList> contains two <xref:System.Windows.Shell.JumpTask> links and one <xref:System.Windows.Shell.JumpPath>. Applying the <xref:System.Windows.Shell.JumpPath> to the shell will fail if the application is not registered to handle the .txt file name extension.  
   
- [!code-xml[Shell_JumpListSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#000)]  
+ [!code-xaml[Shell_JumpListSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#000)]  
   
  The following example shows the code-behind page for `App.xaml`. This code handles the <xref:System.Windows.Shell.JumpList.JumpItemsRejected> and <xref:System.Windows.Shell.JumpList.JumpItemsRemovedByUser> events.  
   
@@ -81,7 +81,7 @@ Windows Media Player Jump List
   
  The following example shows the markup used to create the application user interface.  
   
- [!code-xml[Shell_JumpListSample#300](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml#300)]  
+ [!code-xaml[Shell_JumpListSample#300](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/mainwindow.xaml#300)]  
   
  The following example shows the code-behind page for `MainWindow.xaml`. This code demonstrates how to modify, clear, and create a <xref:System.Windows.Shell.JumpList> in procedural code. For the new Jump List, the static <xref:System.Windows.Shell.JumpList.SetJumpList%2A> method is called to associate the <xref:System.Windows.Shell.JumpList> with the current application and apply the <xref:System.Windows.Shell.JumpList> to the Windows shell.  
   
@@ -576,7 +576,7 @@ Windows Media Player Jump List
 ## Examples  
  The following example shows a <xref:System.Windows.Shell.JumpList> configured to show the **Frequent** category. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
   
- [!code-xml[Shell_JumpListSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#001)]  
+ [!code-xaml[Shell_JumpListSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#001)]  
   
  ]]></format>
         </remarks>
@@ -621,7 +621,7 @@ Windows Media Player Jump List
 ## Examples  
  The following example shows a <xref:System.Windows.Shell.JumpList> configured to show the **Recent** category. This example is part of a larger example available in the <xref:System.Windows.Shell.JumpList> class overview.  
   
- [!code-xml[Shell_JumpListSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#001)]  
+ [!code-xaml[Shell_JumpListSample#001](~/samples/snippets/csharp/VS_Snippets_Wpf/shell_jumplistsample/cs/app.xaml#001)]  
   
  ]]></format>
         </remarks>

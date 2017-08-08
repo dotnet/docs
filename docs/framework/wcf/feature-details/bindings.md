@@ -1,5 +1,5 @@
 ---
-title: "Windows Communcation Foundation Bindings | Microsoft Docs"
+title: "Windows Communcation Foundation Bindings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

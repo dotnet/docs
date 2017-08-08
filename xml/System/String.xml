@@ -239,7 +239,7 @@
   
 <a name="CultureSensitive"></a>   
 ## Ordinal vs. culture-sensitive operations  
- Members of the <xref:System.String> class perform either ordinal or culture-sensitive (linguistic) operations on a <xref:System.String> object. An ordinal operation acts on the numeric value of each <xref:System.Char> object. A culture-sensitive operation acts on the value of the <xref:System.String>object, and takes culture-specific casing, sorting, formatting, and parsing rules into account. Culture-sensitive operations execute in the context of an explicitly declared culture or the implicit current culture. The two kinds of operations can produce very different results when they are performed on the same string.  
+ Members of the <xref:System.String> class perform either ordinal or culture-sensitive (linguistic) operations on a <xref:System.String> object. An ordinal operation acts on the numeric value of each <xref:System.Char> object. A culture-sensitive operation acts on the value of the <xref:System.String> object, and takes culture-specific casing, sorting, formatting, and parsing rules into account. Culture-sensitive operations execute in the context of an explicitly declared culture or the implicit current culture. The two kinds of operations can produce very different results when they are performed on the same string.  
   
  The .NET Framework also supports culture-insensitive linguistic string operations by using the invariant culture (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>), which is loosely based on the culture settings of the English language independent of region. Unlike other <xref:System.Globalization.CultureInfo?displayProperty=fullName> settings, the settings of the invariant culture are guaranteed to remain consistent on a single computer, from system to system, and across versions of the .NET Framework. The invariant culture can be seen as a kind of black box that ensures stability of string comparisons and ordering across all cultures.  
   
@@ -326,7 +326,7 @@
   
  The .NET Framework supports word, string, and ordinal sort rules:  
   
--   A word sort performs a culture-sensitive comparison of strings in which certain nonalphanumeric Unicode characters might have special weights assigned to them. For example, the hyphen (-) might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list. For a list of the <xref:System.String>methods that compare two strings using word sort rules, see the [String operations by category](#ByCategory) section.  
+-   A word sort performs a culture-sensitive comparison of strings in which certain nonalphanumeric Unicode characters might have special weights assigned to them. For example, the hyphen (-) might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list. For a list of the <xref:System.String> methods that compare two strings using word sort rules, see the [String operations by category](#ByCategory) section.  
   
 -   A string sort also performs a culture-sensitive comparison. It is similar to a word sort, except that there are no special cases, and all nonalphanumeric symbols come before all alphanumeric Unicode characters. Two strings can be compared using string sort rules by calling the <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> method overloads that have an `options` parameter that is supplied a value of <xref:System.Globalization.CompareOptions?displayProperty=fullName>. Note that this is the only method that the .NET Framework provides to compare two strings using string sort rules.  
   
@@ -380,7 +380,7 @@
 ### Searching Strings  
  String search methods, such as <xref:System.String.StartsWith%2A?displayProperty=fullName> and <xref:System.String.IndexOf%2A?displayProperty=fullName>, also can perform culture-sensitive or ordinal string comparisons to determine whether a character or substring is found in a specified string.  
   
- The search methods in the <xref:System.String> class that search for an individual character, such as the<xref:System.String.IndexOf%2A> method, or one of a set of characters,   such as the <xref:System.String.IndexOfAny%2A> method, all perform an ordinal search. To perform a culture-sensitive search for a character, you must call a <xref:System.Globalization.CompareInfo> method such as <xref:System.Globalization.CompareInfo.IndexOf%28System.String%2CSystem.Char%29?displayProperty=fullName> or <xref:System.Globalization.CompareInfo.LastIndexOf%28System.String%2CSystem.Char%29?displayProperty=fullName>. Note that the results of searching for a character using ordinal and culture-sensitive comparison can be very different. For example, a search for a precomposed Unicode character such as the ligature "Æ" (U+00C6) might match any occurrence of its components in the correct sequence, such as "AE" (U+041U+0045), depending on the culture. The following example illustrates the difference between the <xref:System.String.IndexOf%28System.Char%29?displayProperty=fullName> and <xref:System.Globalization.CompareInfo.IndexOf%28System.String%2CSystem.Char%29?displayProperty=fullName> methods when searching for an individual character. The ligature "æ" (U+00E6) is found in the string "aerial" when using the conventions of the en-US culture, but not when using the conventions of the da-DK culture or when performing an ordinal comparison.  
+ The search methods in the <xref:System.String> class that search for an individual character, such as the <xref:System.String.IndexOf%2A> method, or one of a set of characters,   such as the <xref:System.String.IndexOfAny%2A> method, all perform an ordinal search. To perform a culture-sensitive search for a character, you must call a <xref:System.Globalization.CompareInfo> method such as <xref:System.Globalization.CompareInfo.IndexOf%28System.String%2CSystem.Char%29?displayProperty=fullName> or <xref:System.Globalization.CompareInfo.LastIndexOf%28System.String%2CSystem.Char%29?displayProperty=fullName>. Note that the results of searching for a character using ordinal and culture-sensitive comparison can be very different. For example, a search for a precomposed Unicode character such as the ligature "Æ" (U+00C6) might match any occurrence of its components in the correct sequence, such as "AE" (U+041U+0045), depending on the culture. The following example illustrates the difference between the <xref:System.String.IndexOf%28System.Char%29?displayProperty=fullName> and <xref:System.Globalization.CompareInfo.IndexOf%28System.String%2CSystem.Char%29?displayProperty=fullName> methods when searching for an individual character. The ligature "æ" (U+00E6) is found in the string "aerial" when using the conventions of the en-US culture, but not when using the conventions of the da-DK culture or when performing an ordinal comparison.  
   
  [!code-csharp[System.String.Class#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Class/cs/search1.cs#22)]
  [!code-vb[System.String.Class#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Class/vb/search1.vb#22)]  
@@ -414,15 +414,15 @@
   
  The Unicode standard defines a process called normalization that returns one binary representation of a Unicode character for any of its equivalent binary representations. Normalization can use several algorithms, called normalization forms, that follow different rules. The .NET Framework supports Unicode normalization forms C, D, KC, and KD. When strings have been normalized to the same normalization form, they can be compared by using ordinal comparison.  
   
- An ordinal comparison is a binary comparison of the Unicode scalar value of corresponding <xref:System.Char> objects in each string. The<xref:System.String> class includes a number of methods that can perform an ordinal comparison, including the following:  
+ An ordinal comparison is a binary comparison of the Unicode scalar value of corresponding <xref:System.Char> objects in each string. The <xref:System.String> class includes a number of methods that can perform an ordinal comparison, including the following:  
   
--   Any overload of the <xref:System.String.Compare%2A>, <xref:System.String.Equals%2A>, <xref:System.String.StartsWith%2A>,  <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>,and <xref:System.String.LastIndexOf%2A> methods that includes a <xref:System.StringComparison> parameter. The method performs an ordinal comparison if you supply a value of <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase> for this parameter.  
+-   Any overload of the <xref:System.String.Compare%2A>, <xref:System.String.Equals%2A>, <xref:System.String.StartsWith%2A>,  <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, and <xref:System.String.LastIndexOf%2A> methods that includes a <xref:System.StringComparison> parameter. The method performs an ordinal comparison if you supply a value of <xref:System.StringComparison?displayProperty=fullName> or <xref:System.StringComparison.OrdinalIgnoreCase> for this parameter.  
   
 -   The overloads of the <xref:System.String.CompareOrdinal%2A> method.  
   
 -   Methods that use ordinal comparison by default, such as <xref:System.String.Contains%2A>, <xref:System.String.Replace%2A>, and <xref:System.String.Split%2A>.  
   
--   Methods that search for a <xref:System.Char>value or for the elements in a <xref:System.Char> arrayin a string instance. Such methods include <xref:System.String.IndexOf%28System.Char%29> and <xref:System.String.Split%28System.Char%5B%5D%29>.  
+-   Methods that search for a <xref:System.Char> value or for the elements in a <xref:System.Char> array in a string instance. Such methods include <xref:System.String.IndexOf%28System.Char%29> and <xref:System.String.Split%28System.Char%5B%5D%29>.  
   
  You can determine whether a string is normalized to normalization form C by calling the <xref:System.String.IsNormalized?displayProperty=fullName> method, or you can call the <xref:System.String.IsNormalized%28System.Text.NormalizationForm%29?displayProperty=fullName> method to determine whether a string is normalized to a specified normalization form. You can also call the <xref:System.String.Normalize?displayProperty=fullName> method to convert a string to normalization form C, or you can call the <xref:System.String.Normalize%28System.Text.NormalizationForm%29?displayProperty=fullName> method to convert a string to a specified normalization form. For step-by-step information about normalizing and comparing strings, see the <xref:System.String.Normalize> and <xref:System.String.Normalize%28System.Text.NormalizationForm%29> methods.  
   
@@ -439,7 +439,7 @@
  The <xref:System.String> class provides members for comparing strings, testing strings for equality, finding characters or substrings in a string, modifying a string, extracting substrings from a string, combining strings, formatting values, copying a string, and normalizing a string.  
   
 ### Comparing strings  
- You can compare strings to determine their relative position in the sort order by using the following <xref:System.String>methods:  
+ You can compare strings to determine their relative position in the sort order by using the following <xref:System.String> methods:  
   
 -   <xref:System.String.Compare%2A> returns an integer that indicates the relationship of one string to a second string in the sort order.  
   
@@ -8056,7 +8056,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (string a, string b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.op_Equality(System.String,System.String)" />
       <MemberType>Method</MemberType>
@@ -8112,7 +8112,7 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (string a, string b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (string a, string b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(string a, string b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.String.op_Inequality(System.String,System.String)" />
       <MemberType>Method</MemberType>

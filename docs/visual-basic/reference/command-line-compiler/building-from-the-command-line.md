@@ -1,5 +1,5 @@
 ---
-title: "Building from the Command Line (Visual Basic) | Microsoft Docs"
+title: "Building from the Command Line (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -53,9 +53,9 @@ A [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project is made up of one or more 
  To compile source files from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] IDE, choose the **Build** command from the **Build** menu.  
   
 > [!TIP]
->  When you build project files by using the Visual Studio IDE, you can display information about the associated **vbc** command and its switches in the output window. To display this information, open the [Options Dialog Box,  Projects and Solutions, Build and Run](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run), and then set the **MSBuild project build output verbosity** to **Normal** or a higher level of verbosity. For more information, see [How to: View, Save, and Configure Build Log Files](http://msdn.microsoft.com/library/75d38b76-26d6-4f43-bbe7-cbacd7cc81e7).  
+>  When you build project files by using the Visual Studio IDE, you can display information about the associated **vbc** command and its switches in the output window. To display this information, open the [Options Dialog Box,  Projects and Solutions, Build and Run](/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run), and then set the **MSBuild project build output verbosity** to **Normal** or a higher level of verbosity. For more information, see [How to: View, Save, and Configure Build Log Files](http://msdn.microsoft.com/library/75d38b76-26d6-4f43-bbe7-cbacd7cc81e7).  
   
- You can compile project (.vbproj) files at a command prompt by using MSBuild. For more information, see [Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference) and [Walkthrough: Using MSBuild](/visualstudio/msbuild/walkthrough-using-msbuild).  
+ You can compile project (.vbproj) files at a command prompt by using MSBuild. For more information, see [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference) and [Walkthrough: Using MSBuild](/visualstudio/msbuild/walkthrough-using-msbuild).  
   
 ## In This Section  
  [How to: Invoke the Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)  
@@ -71,5 +71,5 @@ A [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] project is made up of one or more 
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
  Describes how to compile particular sections of code.  
   
- [Building and Cleaning Projects and Solutions in Visual Studio](https://docs.microsoft.com/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)  
+ [Building and Cleaning Projects and Solutions in Visual Studio](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)  
  Describes how to organize what will be included in different builds, choose project properties, and ensure that projects build in the correct order.

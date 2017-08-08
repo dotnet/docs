@@ -1,5 +1,5 @@
 ---
-title: "External Activity Validation | Microsoft Docs"
+title: "External Activity Validation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

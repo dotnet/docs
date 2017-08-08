@@ -1,5 +1,5 @@
 ---
-title: "Windows Identity Foundation 4.5 Overview | Microsoft Docs"
+title: "Windows Identity Foundation 4.5 Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

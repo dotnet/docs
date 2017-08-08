@@ -1,5 +1,5 @@
 ---
-title: "Language-Integrated Query (LINQ) (Visual Basic) | Microsoft Docs"
+title: "Language-Integrated Query (LINQ) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

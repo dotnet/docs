@@ -1,5 +1,5 @@
 ---
-title: "What Is Windows Communication Foundation | Microsoft Docs"
+title: "What Is Windows Communication Foundation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

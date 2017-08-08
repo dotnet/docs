@@ -1,5 +1,5 @@
 ---
-title: "How to: Use SystemFonts | Microsoft Docs"
+title: "How to: Use SystemFonts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -33,7 +33,7 @@ This example shows how to use the static resources of the              <xref:Sys
   
  The following example shows how to access and use the properties of                      <xref:System.Windows.SystemFonts> as static values in order to style or customize a button. This markup example assigns                      <xref:System.Windows.SystemFonts> values to a button.  
   
- [!code-xml[SystemRes_snip#FontStaticResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/Pane1.xaml#fontstaticresources)]  
+ [!code-xaml[SystemRes_snip#FontStaticResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/Pane1.xaml#fontstaticresources)]  
   
  To use the values of                      <xref:System.Windows.SystemFonts> in code, you do not have to use either a static value or a dynamic resource reference. Instead, use the non-key properties of the                      <xref:System.Windows.SystemFonts> class. Although the non-key properties are apparently defined as static properties, the run-time behavior of                      [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] as hosted by the system will reevaluate the properties in real time and will properly account for user-driven changes to system values. The following example shows how to specify the font settings of a button.  
   

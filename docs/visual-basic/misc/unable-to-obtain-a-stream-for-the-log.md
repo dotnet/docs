@@ -1,5 +1,5 @@
 ---
-title: "Unable to obtain a stream for the log | Microsoft Docs"
+title: "Unable to obtain a stream for the log"
 
 ms.date: "2015-07-20"
 ms.prod: .net

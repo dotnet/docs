@@ -1,5 +1,5 @@
 ---
-title: "IHostAutoEvent::Wait Method | Microsoft Docs"
+title: "IHostAutoEvent::Wait Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

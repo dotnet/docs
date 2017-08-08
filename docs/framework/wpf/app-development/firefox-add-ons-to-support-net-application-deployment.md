@@ -1,5 +1,5 @@
 ---
-title: "Firefox Add-ons to Support .NET Application Deployment | Microsoft Docs"
+title: "Firefox Add-ons to Support .NET Application Deployment"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

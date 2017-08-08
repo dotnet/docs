@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a Win32 Control in WPF | Microsoft Docs"
+title: "Walkthrough: Hosting a Win32 Control in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -67,7 +67,7 @@ manager: "wpickett"
   
  The                  code to implement this layout is quite simple. The root element is a                  <xref:System.Windows.Controls.DockPanel> that has two child elements. The first is a                  <xref:System.Windows.Controls.Border> element that hosts the ListBox Control. It occupies a 200x200 square in the upper right corner of the page. The second is a                  <xref:System.Windows.Controls.StackPanel> element that contains a set of                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls that display information and allow you to manipulate the ListBox Control by setting exposed interoperation properties. For each of the elements that are children of the                  <xref:System.Windows.Controls.StackPanel>, see the reference material for the various elements used for details on what these elements are or what they do, these are listed in the example code below but will not be explained here (the basic interoperation model does not require any of them, they are provided to add some interactivity to the sample).  
   
- [!code-xml[WPFHostingWin32Control#WPFUI](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml#wpfui)]  
+ [!code-xaml[WPFHostingWin32Control#WPFUI](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml#wpfui)]  
   
 <a name="host_class"></a>   
 ## Implement a Class to Host the Microsoft Win32 Control  

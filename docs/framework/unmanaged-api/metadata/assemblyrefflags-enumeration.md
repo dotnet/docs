@@ -1,5 +1,5 @@
 ---
-title: "AssemblyRefFlags Enumeration | Microsoft Docs"
+title: "AssemblyRefFlags Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

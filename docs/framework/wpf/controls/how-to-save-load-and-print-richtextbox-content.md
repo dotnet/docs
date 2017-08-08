@@ -1,5 +1,5 @@
 ---
-title: "How to: Save, Load, and Print RichTextBox Content | Microsoft Docs"
+title: "How to: Save, Load, and Print RichTextBox Content"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ The following example shows how to save content of a <xref:System.Windows.Contro
 ## Example  
  Below is the markup for the example.  
   
- [!code-xml[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/CSharp/SaveLoadPrintRTB.xaml#saveloadprintrtbexamplewholepage)]  
+ [!code-xaml[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/CSharp/SaveLoadPrintRTB.xaml#saveloadprintrtbexamplewholepage)]  
   
 ## Example  
  Below is the code behind for the example.  

@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides the description of an export for a part known to the composition engine.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +29,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected constructor that can only be called from derived classes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExportDescriptors">
@@ -50,11 +58,18 @@
         <Parameter Name="descriptorAccessor" Type="System.Composition.Hosting.Core.DependencyAccessor" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="descriptorAccessor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contract">The export key required by another component.</param>
+        <param name="descriptorAccessor">An accessor for the other descriptors in the composition.</param>
+        <summary>Retrieves promise export descriptors for the specified export key.</summary>
+        <returns>A collection of promises for new export descriptors.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A provider will only be queried once for each unique export key. The descriptor accessor can only be queried immediately if the descriptor being promised is an adapter, such as <see cref="Lazy{T}"/>; otherwise, dependencies should only be queried within execution of the function provided to the <xref:System.Composition.Hosting.Core.ExportDescriptorPromise>. The actual descriptors provided by this method, must not close over or reference any aspect of the dependency/promise structure, as this would prevent the structure from being garbage collected.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoDependencies">
@@ -71,8 +86,9 @@
         <ReturnType>System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates a lack of dependencies.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoExportDescriptors">
@@ -89,8 +105,9 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates a lack of export descriptors.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NoMetadata">
@@ -107,8 +124,9 @@
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Indicates a lack of metadata.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

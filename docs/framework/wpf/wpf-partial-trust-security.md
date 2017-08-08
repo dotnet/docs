@@ -1,5 +1,5 @@
 ---
-title: "WPF Partial Trust Security | Microsoft Docs"
+title: "WPF Partial Trust Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

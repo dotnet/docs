@@ -108,7 +108,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Emit.ParameterToken a, System.Reflection.Emit.ParameterToken b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Emit.ParameterToken a, System.Reflection.Emit.ParameterToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.ParameterToken a, valuetype System.Reflection.Emit.ParameterToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.op_Equality(System.Reflection.Emit.ParameterToken,System.Reflection.Emit.ParameterToken)" />
       <MemberType>Method</MemberType>
@@ -136,7 +136,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Emit.ParameterToken a, System.Reflection.Emit.ParameterToken b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Emit.ParameterToken a, System.Reflection.Emit.ParameterToken b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.ParameterToken a, valuetype System.Reflection.Emit.ParameterToken b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ParameterToken.op_Inequality(System.Reflection.Emit.ParameterToken,System.Reflection.Emit.ParameterToken)" />
       <MemberType>Method</MemberType>

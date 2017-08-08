@@ -710,7 +710,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Addition (System.Windows.Vector vector, System.Windows.Point point);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Point operator + (System.Windows.Vector vector, System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Addition(valuetype System.Windows.Vector vector, valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Addition(System.Windows.Vector,System.Windows.Point)" />
       <MemberType>Method</MemberType>
@@ -744,7 +744,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Addition (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator + (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Addition(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Addition(System.Windows.Vector,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -778,7 +778,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Division (System.Windows.Vector vector, double scalar);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator / (System.Windows.Vector vector, double scalar);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Division(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Division(System.Windows.Vector,System.Double)" />
       <MemberType>Method</MemberType>
@@ -812,7 +812,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Equality(System.Windows.Vector,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -852,7 +852,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Explicit (System.Windows.Vector vector);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Point (System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Explicit(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Explicit(System.Windows.Vector)~System.Windows.Point" />
       <MemberType>Method</MemberType>
@@ -874,7 +874,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Size op_Explicit (System.Windows.Vector vector);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Size (System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Size op_Explicit(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Explicit(System.Windows.Vector)~System.Windows.Size" />
       <MemberType>Method</MemberType>
@@ -896,7 +896,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Inequality(System.Windows.Vector,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -936,7 +936,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Multiply (double scalar, System.Windows.Vector vector);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator * (double scalar, System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(float64 scalar, valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Double,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -970,7 +970,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Multiply (System.Windows.Vector vector, double scalar);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator * (System.Windows.Vector vector, double scalar);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(valuetype System.Windows.Vector vector, float64 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Double)" />
       <MemberType>Method</MemberType>
@@ -1004,7 +1004,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Multiply (System.Windows.Vector vector, System.Windows.Media.Matrix matrix);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator * (System.Windows.Vector vector, System.Windows.Media.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Multiply(valuetype System.Windows.Vector vector, valuetype System.Windows.Media.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Windows.Media.Matrix)" />
       <MemberType>Method</MemberType>
@@ -1038,7 +1038,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static double op_Multiply (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="C#" Value="public static double operator * (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Multiply(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Multiply(System.Windows.Vector,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -1074,7 +1074,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Subtraction (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator - (System.Windows.Vector vector1, System.Windows.Vector vector2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Subtraction(valuetype System.Windows.Vector vector1, valuetype System.Windows.Vector vector2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_Subtraction(System.Windows.Vector,System.Windows.Vector)" />
       <MemberType>Method</MemberType>
@@ -1108,7 +1108,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_UnaryNegation (System.Windows.Vector vector);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Vector operator - (System.Windows.Vector vector);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_UnaryNegation(valuetype System.Windows.Vector vector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Vector.op_UnaryNegation(System.Windows.Vector)" />
       <MemberType>Method</MemberType>

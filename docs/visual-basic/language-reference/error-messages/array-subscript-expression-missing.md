@@ -1,5 +1,5 @@
 ---
-title: "Array subscript expression missing | Microsoft Docs"
+title: "Array subscript expression missing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

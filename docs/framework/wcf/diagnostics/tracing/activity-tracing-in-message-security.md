@@ -1,5 +1,5 @@
 ---
-title: "Activity Tracing in Message Security | Microsoft Docs"
+title: "Activity Tracing in Message Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

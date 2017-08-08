@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize Data Binding Behaviors (WCF Data Services) | Microsoft Docs"
+title: "How to: Customize Data Binding Behaviors (WCF Data Services)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
@@ -33,7 +33,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can supply
 ## Example  
  The following XAML defines the window for the previous example.  
   
- [!code-xml[Astoria Northwind Client#WpfDataBindingCustomXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom.xaml#wpfdatabindingcustomxaml)]  
+ [!code-xaml[Astoria Northwind Client#WpfDataBindingCustomXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom.xaml#wpfdatabindingcustomxaml)]  
   
 ## See Also  
  [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

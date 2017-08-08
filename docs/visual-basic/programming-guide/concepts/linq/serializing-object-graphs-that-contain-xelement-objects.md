@@ -1,5 +1,5 @@
 ---
-title: "Serializing Object Graphs that Contain XElement Objects (Visual Basic) | Microsoft Docs"
+title: "Serializing Object Graphs that Contain XElement Objects (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

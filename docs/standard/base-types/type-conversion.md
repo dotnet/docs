@@ -1,11 +1,11 @@
 ---
-title: "Type Conversion in the .NET Framework | Microsoft Docs"
+title: "Type Conversion in the .NET Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:v
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 

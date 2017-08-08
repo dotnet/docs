@@ -1,5 +1,5 @@
 ---
-title: "Trees in WPF | Microsoft Docs"
+title: "Trees in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -39,7 +39,7 @@ In many technologies, elements and components are organized in a tree structure 
   
  In [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], when you place list items in a <xref:System.Windows.Controls.ListBox> or controls or other UI elements in a <xref:System.Windows.Controls.DockPanel>, you also use the <xref:System.Windows.Controls.ItemsControl.Items%2A> and <xref:System.Windows.Controls.Panel.Children%2A> properties, either explicitly or implicitly, as in the following example.  
   
- [!code-xml[TreeOvwsSupport#AllCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeOvwsSupport/CS/page1.xaml#allcode)]  
+ [!code-xaml[TreeOvwsSupport#AllCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeOvwsSupport/CS/page1.xaml#allcode)]  
   
  If you were to process this XAML as XML under a document object model, and if you had included the tags commented out as implicit (which would have been legal), then the resulting XML DOM tree would have included elements for `<ListBox.Items>` and the other implicit items. But XAML does not process that way when you read the markup and write to objects, the resulting object graph does not literally include `ListBox.Items`. It does however have a <xref:System.Windows.Controls.ListBox> property named `Items` that contains a <xref:System.Windows.Controls.ItemCollection>, and that <xref:System.Windows.Controls.ItemCollection> is initialized but empty when the <xref:System.Windows.Controls.ListBox> XAML is processed. Then, each child object element that exists as content for the <xref:System.Windows.Controls.ListBox> is added to the <xref:System.Windows.Controls.ItemCollection> by parser calls to `ItemCollection.Add`. This example of processing XAML into an object tree is so far seemingly an example where the created object tree is basically the logical tree.  
   

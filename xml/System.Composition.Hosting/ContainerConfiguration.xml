@@ -17,8 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures and constructs a lightweight container.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +34,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.ContainerConfiguration" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateContainer">
@@ -52,9 +54,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates the container.</summary>
+        <returns>The created container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssemblies">
@@ -74,10 +77,11 @@
         <Parameter Name="assemblies" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assemblies">The assemblies to add part types from.</param>
+        <summary>Adds part types from the specified collection of assemblies to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssemblies">
@@ -98,11 +102,12 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="assemblies">To be added.</param>
-        <param name="conventions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assemblies">The assemblies to add part types from.</param>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Adds part types from the specified collection of assemblies to the container, using the specified conventions.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssembly">
@@ -122,10 +127,11 @@
         <Parameter Name="assembly" Type="System.Reflection.Assembly" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assembly">The assembly to add part types from.</param>
+        <summary>Adds part types from the specified assembly to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssembly">
@@ -146,11 +152,12 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="conventions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="assembly">The assembly to add part types from.</param>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Adds part types from the specified assembly to the container, using the specified conventions.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithDefaultConventions">
@@ -170,10 +177,11 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="conventions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Specifies the default conventions to use for added parts.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart">
@@ -193,10 +201,11 @@
         <Parameter Name="partType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="partType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="partType">The part type to add.</param>
+        <summary>Adds a specified part type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart">
@@ -217,11 +226,12 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="partType">To be added.</param>
-        <param name="conventions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="partType">The part type to add.</param>
+        <param name="conventions">The conventions to use for the part type.</param>
+        <summary>Adds a specified part type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart&lt;TPart&gt;">
@@ -242,10 +252,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TPart">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TPart">The type to add.</typeparam>
+        <summary>Adds the specified type to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart&lt;TPart&gt;">
@@ -268,11 +279,12 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <typeparam name="TPart">To be added.</typeparam>
-        <param name="conventions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TPart">The type to add.</typeparam>
+        <param name="conventions">The conventions to use for the part type.</param>
+        <summary>Adds the specified type to the container using the specified conventions.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
@@ -292,10 +304,11 @@
         <Parameter Name="partTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="partTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="partTypes">A collection of part types to add.</param>
+        <summary>Adds the specified part types to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
@@ -321,10 +334,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="partTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="partTypes">An array of part types to add.</param>
+        <summary>Adds the specified array of part types to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
@@ -345,11 +359,12 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="partTypes">To be added.</param>
-        <param name="conventions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="partTypes">A collection of part types to add.</param>
+        <param name="conventions">The conventions to use for part types.</param>
+        <summary>Adds the specified part types to the container using the specified conventions.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WithProvider">
@@ -369,10 +384,11 @@
         <Parameter Name="exportDescriptorProvider" Type="System.Composition.Hosting.Core.ExportDescriptorProvider" />
       </Parameters>
       <Docs>
-        <param name="exportDescriptorProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportDescriptorProvider">The provider to add.</param>
+        <summary>Adds the specified provider to the container.</summary>
+        <returns>An object that can be used to further configure the container.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

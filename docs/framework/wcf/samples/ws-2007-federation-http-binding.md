@@ -1,5 +1,5 @@
 ---
-title: "WS 2007 Federation HTTP Binding | Microsoft Docs"
+title: "WS 2007 Federation HTTP Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

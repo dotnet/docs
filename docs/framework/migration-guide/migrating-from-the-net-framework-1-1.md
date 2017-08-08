@@ -1,5 +1,5 @@
 ---
-title: "Migrating from the .NET Framework 1.1 | Microsoft Docs"
+title: "Migrating from the .NET Framework 1.1"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -63,7 +63,7 @@ manager: "wpickett"
   
 -   [Changes in .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=186989) documents changes between the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)] and the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)].  
   
--   [.NET Framework 4 Migration Issues](http://msdn.microsoft.com/library/ee941656\(v=vs.100\).aspx) documents changes between the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
+-   [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md) documents changes between the [!INCLUDE[net_v35SP1_short](../../../includes/net-v35sp1-short-md.md)] and the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)].  
   
 ## Obsolete Types and Members  
  The impact of deprecated types and members is somewhat different for retargeted applications and recompiled applications. The use of obsolete types and members will not affect a retargeted application unless the obsolete type or member has been physically removed from its assembly. Recompiling an application that uses obsolete types or members usually produces a compiler warning rather than a compiler error. However, in some cases, it produces a compiler error, and code that uses the obsolete type or member does not compile successfully. In this case, you must rewrite the source code that calls the obsolete type or member before you recompile your application. For more information about obsolete types and members, see [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md).  

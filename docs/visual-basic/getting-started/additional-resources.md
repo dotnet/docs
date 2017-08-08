@@ -1,5 +1,5 @@
 ---
-title: "Additional Resources for Visual Basic Programmers | Microsoft Docs"
+title: "Additional Resources for Visual Basic Programmers"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -106,4 +106,4 @@ The following web sites provide guidance and can help you find answers to common
   
 ## See Also  
  [Getting Started](../../visual-basic/getting-started/index.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

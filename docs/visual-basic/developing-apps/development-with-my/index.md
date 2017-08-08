@@ -1,5 +1,5 @@
 ---
-title: "Development with My (Visual Basic) | Microsoft Docs"
+title: "Development with My (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate an Object Along a Path (Point Animation) | Microsoft Docs"
+title: "How to: Animate an Object Along a Path (Point Animation)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,7 @@ This example shows how to use a              <xref:System.Windows.Media.Animatio
 ## Example  
  The following example moves an                      <xref:System.Windows.Media.EllipseGeometry> along a path defined by a                      <xref:System.Windows.Media.PathGeometry>. The ellipse geometry's                      <xref:System.Windows.Media.EllipseGeometry.Center%2A> property, which takes a                      <xref:System.Windows.Point> value, specifies its position; to move the ellipse geometry, you animate its                      <xref:System.Windows.Media.EllipseGeometry.Center%2A> property. The example uses a                      <xref:System.Windows.Media.Animation.PointAnimationUsingPath> to animate the                      <xref:System.Windows.Media.EllipseGeometry> object's                      <xref:System.Windows.Media.EllipseGeometry.Center%2A> property.  
   
- [!code-xml[PathAnimationGallery_snippet#PointAnimationUsingPathWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/pointanimationusingpathexample.xaml#pointanimationusingpathwholepage)]  
+ [!code-xaml[PathAnimationGallery_snippet#PointAnimationUsingPathWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/pointanimationusingpathexample.xaml#pointanimationusingpathwholepage)]  
   
  [!code-csharp[PathAnimationGallery_procedural_snip#PointAnimationUsingPathWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/CSharp/PointAnimationUsingPathExample.cs#pointanimationusingpathwholepage)]
  [!code-vb[PathAnimationGallery_procedural_snip#PointAnimationUsingPathWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/VisualBasic/PointAnimationUsingPathExample.vb#pointanimationusingpathwholepage)]  

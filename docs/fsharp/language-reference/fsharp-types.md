@@ -1,6 +1,6 @@
 ---
-title: F# Types | Microsoft Docs
-description: F# Types
+title: F# Types
+description: Learn about the types that are used in F# and how F# types are named and described.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -48,8 +48,8 @@ The following table shows aspects of the type syntax for F# types.
 |two-dimensional array|*type-name*[,]|`int[,]`<br /><br />`float[,]`|
 |three-dimensional array|*type-name*[,,]|`float[,,]`|
 |tuple|*type-name1* &#42; *type-name2* ...|For example, `(1,'b',3)` has type `int * char * int`|
-|generic type|*type-parameter`generic-type-name*<br /><br />or<br /><br />*generic-type-name*&lt;*type-parameter-list*&gt;|`'a list`<br /><br />`list<'a>`<br /><br />`Dictionary<'key, 'value>`|
-|constructed type (a generic type that has a specific type argument supplied)|*type-argument`generic-type-name*<br /><br />or<br /><br />*generic-type-name*&lt;*type-argument-list*&gt;|`int option`<br /><br />`string list`<br /><br />`int ref`<br /><br />`option<int>`<br /><br />`list<string>`<br /><br />`ref<int>`<br /><br />`Dictionary<int, string>`|
+|generic type|*type-parameter* *generic-type-name*<br /><br />or<br /><br />*generic-type-name*&lt;*type-parameter-list*&gt;|`'a list`<br /><br />`list<'a>`<br /><br />`Dictionary<'key, 'value>`|
+|constructed type (a generic type that has a specific type argument supplied)|*type-argument* *generic-type-name*<br /><br />or<br /><br />*generic-type-name*&lt;*type-argument-list*&gt;|`int option`<br /><br />`string list`<br /><br />`int ref`<br /><br />`option<int>`<br /><br />`list<string>`<br /><br />`ref<int>`<br /><br />`Dictionary<int, string>`|
 |function type that has a single parameter|*parameter-type1* -&gt; *return-type*|A function that takes an `int` and returns a `string` has type `int -> string`|
 |function type that has multiple parameters|*parameter-type1* -&gt; *parameter-type2* -&gt; ... -&gt; *return-type*|A function that takes an `int` and a `float` and returns a `string` has type `int -> float -> string`|
 |higher order function as a parameter|(*function-type*)|`List.map` has type `('a -> 'b) -> 'a list -> 'b list`|

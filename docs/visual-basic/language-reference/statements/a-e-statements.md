@@ -1,5 +1,5 @@
 ---
-title: "A-E Statements | Microsoft Docs"
+title: "A-E Statements"
 
 ms.date: "2015-07-20"
 ms.prod: .net

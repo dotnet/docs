@@ -1,5 +1,5 @@
 ---
-title: "&gt; (Greater Than) (Entity SQL) | Microsoft Docs"
+title: "&gt; (Greater Than) (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

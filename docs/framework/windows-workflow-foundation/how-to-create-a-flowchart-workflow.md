@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Flowchart Workflow | Microsoft Docs"
+title: "How to: Create a Flowchart Workflow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

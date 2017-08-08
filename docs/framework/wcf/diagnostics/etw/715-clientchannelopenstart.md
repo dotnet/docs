@@ -1,5 +1,5 @@
 ---
-title: "715 - ClientChannelOpenStart | Microsoft Docs"
+title: "715 - ClientChannelOpenStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

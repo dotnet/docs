@@ -1,5 +1,5 @@
 ---
-title: "Unable to write temporary file because temporary path is not available | Microsoft Docs"
+title: "Unable to write temporary file because temporary path is not available"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -48,4 +48,4 @@ translation.priority.ht:
 2.  If the problem persists, reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

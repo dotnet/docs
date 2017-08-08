@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement the ITypedList Interface | Microsoft Docs"
+title: "How to: Implement the ITypedList Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

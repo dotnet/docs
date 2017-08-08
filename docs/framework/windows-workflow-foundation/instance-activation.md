@@ -1,5 +1,5 @@
 ---
-title: "Instance Activation | Microsoft Docs"
+title: "Instance Activation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

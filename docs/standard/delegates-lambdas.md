@@ -1,6 +1,6 @@
 ---
-title: Delegates and lambdas | Microsoft Docs
-description: Delegates and lambdas
+title: Delegates and lambdas
+description: Learn how delegates define a type, which specify a particular method signature, that can be called directly or passed to another method and called.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: wiwagn

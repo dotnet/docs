@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve Information As Read-Only | Microsoft Docs"
+title: "How to: Retrieve Information As Read-Only"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

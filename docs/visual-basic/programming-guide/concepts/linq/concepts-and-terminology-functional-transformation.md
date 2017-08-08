@@ -1,5 +1,5 @@
 ---
-title: "Concepts and Terminology (Functional Transformation) (Visual Basic) | Microsoft Docs"
+title: "Concepts and Terminology (Functional Transformation) (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Creating an Ink Input Control | Microsoft Docs"
+title: "Creating an Ink Input Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

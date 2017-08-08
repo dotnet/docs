@@ -1,5 +1,5 @@
 ---
-title: Creating, evolving, and versioning microservice APIs and contracts | Microsoft Docs 
+title: Creating, evolving, and versioning microservice APIs and contracts
 description: .NET Microservices Architecture for Containerized .NET Applications | Creating, evolving, and versioning microservice APIs and contracts
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -28,7 +28,7 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
     <http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 
 -   **Versioning a RESTful web API**
-    [*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design\#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
+    [*https://docs.microsoft.com/azure/architecture/best-practices/api-design\#versioning-a-restful-web-api*](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 -   **Roy Fielding. Versioning, Hypermedia, and REST**
     <https://www.infoq.com/articles/roy-fielding-on-versioning>

@@ -1,5 +1,5 @@
 ---
-title: "How To: Enable WIF for a WCF Web Service Application | Microsoft Docs"
+title: "How To: Enable WIF for a WCF Web Service Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

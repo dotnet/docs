@@ -1,5 +1,5 @@
 ---
-title: "Events cannot be declared with a delegate type that has a return type | Microsoft Docs"
+title: "Events cannot be declared with a delegate type that has a return type"
 
 ms.date: "2015-07-20"
 ms.prod: .net

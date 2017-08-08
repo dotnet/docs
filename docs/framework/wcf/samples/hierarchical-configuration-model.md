@@ -1,5 +1,5 @@
 ---
-title: "Hierarchical Configuration Model | Microsoft Docs"
+title: "Hierarchical Configuration Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

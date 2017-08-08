@@ -1,5 +1,5 @@
 ---
-title: "3407 - HttpPipelineProcessInboundRequestStart | Microsoft Docs"
+title: "3407 - HttpPipelineProcessInboundRequestStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

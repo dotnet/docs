@@ -1,5 +1,5 @@
 ---
-title: "Security and Public Read-only Array Fields | Microsoft Docs"
+title: "Security and Public Read-only Array Fields"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

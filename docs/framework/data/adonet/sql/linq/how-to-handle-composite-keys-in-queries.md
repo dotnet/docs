@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle Composite Keys in Queries | Microsoft Docs"
+title: "How to: Handle Composite Keys in Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

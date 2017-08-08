@@ -1,5 +1,5 @@
 ---
-title: "My.Resources Object | Microsoft Docs"
+title: "My.Resources Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -41,7 +41,7 @@ translation.priority.ht:
 Provides properties and classes for accessing the application's resources.  
   
 ## Remarks  
- The `My.Resources` object provides access to the application's resources and lets you dynamically retrieve resources for your application. For more information, see [Managing Application Resources (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-resources-dotnet).  
+ The `My.Resources` object provides access to the application's resources and lets you dynamically retrieve resources for your application. For more information, see [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
   
  The `My.Resources` object exposes only global resources. It does not provide access to resource files associated with forms. You must access the form resources from the form. For more information, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
@@ -101,6 +101,6 @@ Provides properties and classes for accessing the application's resources.
   
 ## See Also  
  [How to: Add or Remove Resources](http://msdn.microsoft.com/en-us/7b77bc06-3952-4799-b029-def3f8f7f88d)   
- [Managing Application Resources (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-resources-dotnet)   
+ [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet)   
  [Resources in Desktop Apps](../../../framework/resources/index.md)   
  [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)

@@ -1,5 +1,5 @@
 ---
-title: "Unable to get serial port names because of an internal system error | Microsoft Docs"
+title: "Unable to get serial port names because of an internal system error"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -36,11 +36,11 @@ An internal error occurred when the `My.Computer.Ports.SerialPortNames` property
   
 ## To correct this error  
   
-1.  See [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics) for more troubleshooting information.  
+1.  See [Debugger Basics](/visualstudio/debugger/debugger-basics) for more troubleshooting information.  
   
 2.  Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames%2A>   
- [Debugger Basics](https://docs.microsoft.com/visualstudio/debugger/debugger-basics)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Debugger Basics](/visualstudio/debugger/debugger-basics)   
+ [Talk to Us](/visualstudio/ide/talk-to-us)

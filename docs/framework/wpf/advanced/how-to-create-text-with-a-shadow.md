@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Text with a Shadow | Microsoft Docs"
+title: "How to: Create Text with a Shadow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,7 +30,7 @@ Example of text with a soft shadow
   
  You can control the width of a shadow by setting the                      <xref:System.Windows.Media.Effects.DropShadowEffect.ShadowDepth%2A> property. A value of                      `4.0` indicates a shadow width of 4 pixels. You can control the softness, or blur, of a shadow by modifying the                      <xref:System.Windows.Media.Effects.DropShadowEffect.BlurRadius%2A> property. A value of                      `0.0` indicates no blurring. The following code example shows how to create a soft shadow.  
   
- [!code-xml[TextShadowSnippets#TextShadowSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/SingleShadows.xaml#textshadowsnippet1)]  
+ [!code-xaml[TextShadowSnippets#TextShadowSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/SingleShadows.xaml#textshadowsnippet1)]  
   
 > [!NOTE]
 >  These shadow effects do not go through the                          [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] text rendering pipeline. As a result, ClearType is disabled when using these effects.  
@@ -47,7 +47,7 @@ DropShadow Direction diagram
   
  The following code example shows how to create a hard shadow.  
   
- [!code-xml[TextShadowSnippets#TextShadowSnippet2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/SingleShadows.xaml#textshadowsnippet2)]  
+ [!code-xaml[TextShadowSnippets#TextShadowSnippet2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/SingleShadows.xaml#textshadowsnippet2)]  
   
 ## Using a Blur Effect  
  A                              <xref:System.Windows.Media.Effects.BlurBitmapEffect> can be used to create a shadow-like effect that can be placed behind a text object. A blur bitmap effect applied to text blurs the text evenly in all directions.  
@@ -59,7 +59,7 @@ Example of text with a blur effect
   
  The following code example shows how to create a blur effect.  
   
- [!code-xml[TextShadowSnippets#TextShadowSnippet6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/BlurShadows.xaml#textshadowsnippet6)]  
+ [!code-xaml[TextShadowSnippets#TextShadowSnippet6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/BlurShadows.xaml#textshadowsnippet6)]  
   
 ## Using a Translate Transform  
  A                              <xref:System.Windows.Media.TranslateTransform> can be used to create a shadow-like effect that can be placed behind a text object.  
@@ -71,4 +71,4 @@ Example of text using a transform for a shadow effect
   
  The following code example shows how to create a transform for a shadow effect.  
   
- [!code-xml[TextShadowSnippets#TextShadowSnippet7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/TransformShadows.xaml#textshadowsnippet7)]
+ [!code-xaml[TextShadowSnippets#TextShadowSnippet7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/TransformShadows.xaml#textshadowsnippet7)]

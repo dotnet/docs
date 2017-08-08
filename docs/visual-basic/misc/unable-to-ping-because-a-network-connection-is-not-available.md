@@ -1,5 +1,5 @@
 ---
-title: "Unable to ping because a network connection is not available | Microsoft Docs"
+title: "Unable to ping because a network connection is not available"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.web&gt; Element (Web Settings) | Microsoft Docs"
+title: "&lt;system.web&gt; Element (Web Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,6 +1,6 @@
 ---
-title: "Exceptions: The failwith Function (F#) | Microsoft Docs"
-description: "Exceptions: The failwith Function (F#)"
+title: "Exceptions: The failwith Function (F#)
+description: Learn how the 'failwith' function generates an F# exception.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

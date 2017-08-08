@@ -1,6 +1,6 @@
 ---
-title: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#) | Microsoft Docs"
-description: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#)"
+title: "Walkthrough: Accessing a SQL Database by Using Type Providers (F#)"
+description: Learn how to use the SqlDataConnection (LINQ to SQL) type provider in F# 3.0 to generate types for a SQL database when you have a live database connection.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.CommunicationObjectAbortFailed | Microsoft Docs"
+title: "System.ServiceModel.CommunicationObjectAbortFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

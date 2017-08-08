@@ -1,5 +1,5 @@
 ---
-title: "Contract-First Tool | Microsoft Docs"
+title: "Contract-First Tool"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

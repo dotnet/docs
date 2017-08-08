@@ -1,5 +1,5 @@
 ---
-title: "Control Authoring Overview | Microsoft Docs"
+title: "Control Authoring Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -163,14 +163,14 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
  The following example updates the <xref:System.Windows.Controls.TextBlock> of the `NumericUpDown` control, assigning a name to it and referencing the textbox by name in code.  
   
- [!code-xml[UserControlNumericUpDownSimple#UIRefMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDownSimple/CSharp/NumericUpDown.xaml#uirefmarkup)]  
+ [!code-xaml[UserControlNumericUpDownSimple#UIRefMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDownSimple/CSharp/NumericUpDown.xaml#uirefmarkup)]  
   
  [!code-csharp[UserControlNumericUpDownSimple#UIRefCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDownSimple/CSharp/NumericUpDown.xaml.cs#uirefcode)]
  [!code-vb[UserControlNumericUpDownSimple#UIRefCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UserControlNumericUpDownSimple/VisualBasic/NumericUpDown.xaml.vb#uirefcode)]  
   
  The following example uses binding to accomplish the same thing.  
   
- [!code-xml[UserControlNumericUpDown#Binding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]  
+ [!code-xaml[UserControlNumericUpDown#Binding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]  
   
  For more information about data binding, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
@@ -213,13 +213,13 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 #### Defining Resources at the Element Level  
  You can define shared resources at the element level by creating a custom resource dictionary and merging it with your control’s resource dictionary.  When you use this method, you can name your resource file anything you want, and it can be in the same folder as your controls. Resources at the element level can also use simple strings as keys. The following example creates a <xref:System.Windows.Media.LinearGradientBrush> resource file named Dictionary1.xaml.  
   
- [!code-xml[SharedResources#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/Dictionary1.xaml#1)]  
+ [!code-xaml[SharedResources#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/Dictionary1.xaml#1)]  
   
  Once you have defined your dictionary, you need to merge it with your control's resource dictionary.  You can do this by using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] or code.  
   
  The following example merges a resource dictionary by using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
- [!code-xml[SharedResources#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/ShapeResizer.xaml#2)]  
+ [!code-xaml[SharedResources#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/ShapeResizer.xaml#2)]  
   
  The disadvantage to this approach is that a <xref:System.Windows.ResourceDictionary> object is created each time you reference it.  For example, if you have 10 custom controls in your library and merge the shared resource dictionaries for each control by using XAML, you create 10 identical <xref:System.Windows.ResourceDictionary> objects.  You can avoid this by creating a static class that merges the resources in code and returns the resulting <xref:System.Windows.ResourceDictionary>.  
   
@@ -257,11 +257,11 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 ##### Defining and Referencing Keys for Theme Resources  
  When you define a resource at the element level, you can assign a string as its key and access the resource via the string. When you define a resource at the theme level, you must use a <xref:System.Windows.ComponentResourceKey> as the key.  The following example defines a resource in generic.xaml.  
   
- [!code-xml[ThemeResourcesControlLibrary#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThemeResourcesControlLibrary/CS/Themes/generic.xaml#5)]  
+ [!code-xaml[ThemeResourcesControlLibrary#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThemeResourcesControlLibrary/CS/Themes/generic.xaml#5)]  
   
  The following example references the resource by specifying the <xref:System.Windows.ComponentResourceKey> as the key.  
   
- [!code-xml[ThemeResourcesControlLibrary#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThemeResourcesControlLibrary/CS/NumericUpDown.xaml#6)]  
+ [!code-xaml[ThemeResourcesControlLibrary#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThemeResourcesControlLibrary/CS/NumericUpDown.xaml#6)]  
   
 ##### Specifying the Location of Theme Resources  
  To find the resources for a control, the hosting application needs to know that the assembly contains control-specific resources. You can accomplish that by adding the <xref:System.Windows.ThemeInfoAttribute> to the assembly that contains the control. The <xref:System.Windows.ThemeInfoAttribute> has a <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> property that specifies the location of generic resources, and a <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> property that specifies the location of the theme-specific resources.  

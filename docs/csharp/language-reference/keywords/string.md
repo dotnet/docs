@@ -1,5 +1,5 @@
 ---
-title: "string (C# Reference) | Microsoft Docs"
+title: "string (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -87,7 +87,7 @@ Console.WriteLine(a);
 ```  
   
 > [!NOTE]
->  The escape code `\`u`dddd` (where `dddd` is a four-digit number) represents the Unicode character U+`dddd`. Eight-digit Unicode escape codes are also recognized: `\Udddddddd`.  
+>  The escape code `\udddd` (where `dddd` is a four-digit number) represents the Unicode character U+`dddd`. Eight-digit Unicode escape codes are also recognized: `\Udddddddd`.  
   
  Verbatim string literals start with @ and are also enclosed in double quotation marks. For example:  
   

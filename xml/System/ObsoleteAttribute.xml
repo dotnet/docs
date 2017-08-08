@@ -45,7 +45,7 @@
   
 -   <xref:System.ObsoleteAttribute.IsError%2A>. This is a Boolean value that indicates to the compiler whether using the <xref:System.ObsoleteAttribute> attribute should cause it to emit an error (<xref:System.ObsoleteAttribute.IsError%2A> is `true`) or a warning (<xref:System.ObsoleteAttribute.IsError%2A> is `false`).  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
 ## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
  When you create a Windows Metadata library (.winmd file), the <xref:System.ObsoleteAttribute> is exported as both the <xref:System.ObsoleteAttribute> attribute and the [Windows.Foundation.Metadata.DeprecatedAttribute](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.deprecatedattribute.aspx) attribute if only the <xref:System.ObsoleteAttribute> is present in source code. The <xref:System.ObsoleteAttribute> is transformed to the `DeprecatedAttribute` as follows:  

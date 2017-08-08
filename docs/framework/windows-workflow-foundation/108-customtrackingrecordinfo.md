@@ -1,5 +1,5 @@
 ---
-title: "108 - CustomTrackingRecordInfo | Microsoft Docs"
+title: "108 - CustomTrackingRecordInfo"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

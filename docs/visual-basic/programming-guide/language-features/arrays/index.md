@@ -1,5 +1,5 @@
 ---
-title: "Arrays in Visual Basic | Microsoft Docs"
+title: "Arrays in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -50,22 +50,22 @@ An array is a set of values that are logically related to each other, such as th
 'Declare a single-dimension array of 5 values  
 Dim numbers(4) As Integer   
   
-‘Declare a single-dimension array and set array element values  
+'Declare a single-dimension array and set array element values  
 Dim numbers = New Integer() {1, 2, 4, 8}  
   
- ‘Redefine the size of an existing array retaining the current values  
+'Redefine the size of an existing array retaining the current values  
 ReDim Preserve numbers(15)  
   
- ‘Redefine the size of an existing array, resetting the values  
+'Redefine the size of an existing array, resetting the values  
 ReDim numbers(15)  
   
-‘Declare a multi-dimensional array  
+'Declare a multi-dimensional array  
 Dim matrix(5, 5) As Double  
   
-‘Declare a multi-dimensional array and set array element values  
+'Declare a multi-dimensional array and set array element values  
 Dim matrix = New Integer(4, 4) {{1, 2}, {3, 4}, {5, 6}, {7, 8}}  
   
- ‘Declare a jagged array  
+'Declare a jagged array  
 Dim sales()() As Double = New Double(11)() {}  
 ```  
   
@@ -98,7 +98,7 @@ Dim sales()() As Double = New Double(11)() {}
 ##  <a name="BKMK_ArrayElements"></a> Array Elements in a Simple Array  
  The following example declares an array variable to hold the number of students in each grade in a grammar school.  
   
- [!code-vb[VbVbalrArrays#2](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_1.vb)]  
+ [!code-vb[VbVbalrArrays#2](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#2)]  
   
  The array `students` in the preceding example contains seven elements. The indexes of the elements range from 0 through 6. Having this array is simpler than declaring seven variables.  
   
@@ -113,7 +113,7 @@ Elements of the "students" array
   
  The following example shows how to refer to the first, second, and last element of the array `students`.  
   
- [!code-vb[VbVbalrArrays#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_2.vb)]  
+ [!code-vb[VbVbalrArrays#3](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#3)]  
   
  You can refer to the array as a whole by using just the array variable name without indexes.  
   
@@ -122,55 +122,55 @@ Elements of the "students" array
 ##  <a name="BKMK_CreatingAnArray"></a> Creating an Array  
  You can define the size of an array several ways. You can supply the size when the array is declared, as the following example shows.  
   
- [!code-vb[VbVbalrArrays#12](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_3.vb)]  
+ [!code-vb[VbVbalrArrays#12](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#12)]  
   
  You can also use a `New` clause to supply the size of an array when it’s created, as the following example shows.  
   
- [!code-vb[VbVbalrArrays#11](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_4.vb)]  
+ [!code-vb[VbVbalrArrays#11](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#11)]  
   
  If you have an existing array, you can redefine its size by using the `Redim` statement. You can specify that the `Redim` statement should keep the values that are in the array, or you can specify that it create an empty array. The following example shows different uses of the `Redim` statement to modify the size of an existing array.  
   
- [!code-vb[VbVbalrArrays#13](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_5.vb)]  
+ [!code-vb[VbVbalrArrays#13](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#13)]  
   
  For more information, see [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md).  
   
 ##  <a name="BKMK_StoringValues"></a> Storing Values in an Array  
  You can access each location in an array by using an index of type `Integer`. You can store and retrieve values in an array by referencing each array location by using its index enclosed in parentheses. Indexes for multi-dimensional arrays are separated by commas (,). You need one index for each array dimension. The following example shows some statements that store values in arrays.  
   
- [!code-vb[VbVbalrArrays#5](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_6.vb)]  
+ [!code-vb[VbVbalrArrays#5](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#5)]  
   
  The following example shows some statements that get values from arrays.  
   
- [!code-vb[VbVbalrArrays#6](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_7.vb)]  
+ [!code-vb[VbVbalrArrays#6](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#6)]  
   
 ##  <a name="BKMK_Populating"></a> Populating an Array with Initial Values  
  By using an array literal, you can create an array that contains an initial set of values. An array literal consists of a list of comma-separated values that are enclosed in braces (`{}`).  
   
  When you create an array by using an array literal, you can either supply the array type or use type inference to determine the array type. The following code shows both options.  
   
- [!code-vb[VbVbalrCollectionInitializers#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_8.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#3](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#3)]  
   
  When you use type inference, the type of the array is determined by the dominant type in the list of values that’s supplied for the array literal. The dominant type is a unique type to which all other types in the array literal can widen. If this unique type can’t be determined, the dominant type is the unique type to which all other types in the array can narrow. If neither of these unique types can be determined, the dominant type is `Object`. For example, if the list of values that’s supplied to the array literal contains values of type `Integer`, `Long`, and `Double`, the resulting array is of type `Double`. Both `Integer` and `Long` widen only to `Double`. Therefore, `Double` is the dominant type. For more information, see [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md). These inference rules apply to types that are inferred for arrays that are local variables that are defined in a class member. Although you can use array literals when you create class-level variables, you can’t use type inference at the class level. As a result, array literals that are specified at the class level infer the values that are supplied for the array literal as type `Object`.  
   
  You can explicitly specify the type of the elements in an array that’s created by using an array literal. In this case, the values in the array literal must widen to the type of the elements of the array. The following code example creates an array of type `Double` from a list of integers.  
   
- [!code-vb[VbVbalrCollectionInitializers#4](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_9.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#4](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#4)]  
   
 ###  <a name="BKMK_NestedArrayLiterals"></a> Nested Array Literals  
  You can create a multidimensional array by using nested array literals. Nested array literals must have a dimension and number of dimensions, or rank, that’s consistent with the resulting array. The following code example creates a two-dimensional array of integers by using an array literal.  
   
- [!code-vb[VbVbalrCollectionInitializers#7](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_10.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#7](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#7)]  
   
  In the previous example, an error would occur if the number of elements in the nested array literals didn’t match. An error would also occur if you explicitly declared the array variable to be other than two-dimensional.  
   
 > [!NOTE]
 >  You can avoid an error when you supply nested array literals of different dimensions by enclosing the inner array literals in parentheses. The parentheses force the array literal expression to be evaluated, and the resulting values are used with the outer array literal, as the following code shows.  
   
- [!code-vb[VbVbalrCollectionInitializers#11](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_11.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#11](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#11)]  
   
  When you create a multidimensional array by using nested array literals, you can use type inference. When you use type inference, the inferred type is the dominant type for all the values in all the array literals for a nesting level. The following code example creates a two-dimensional array of type `Double` from values that are of type `Integer` and `Double`.  
   
- [!code-vb[VbVbalrCollectionInitializers#8](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_12.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#8](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializers/VB/Module1.vb#8)]  
   
  For additional examples, see [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md).  
   
@@ -179,19 +179,19 @@ Elements of the "students" array
   
  The following example iterates through a one-dimensional array by using the [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md). The <xref:System.Array.GetUpperBound%2A> method returns the highest value that the index can have. The lowest index value is always 0.  
   
- [!code-vb[VbVbalrArrays#41](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_13.vb)]  
+ [!code-vb[VbVbalrArrays#41](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#41)]  
   
  The following example iterates through a multidimensional array by using a `For...Next` statement. The <xref:System.Array.GetUpperBound%2A> method has a parameter that specifies the dimension. `GetUpperBound(0)` returns the high index value for the first dimension, and `GetUpperBound(1)` returns the high index value for the second dimension.  
   
- [!code-vb[VbVbalrArrays#42](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_14.vb)]  
+ [!code-vb[VbVbalrArrays#42](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#42)]  
   
  The following example iterates through a one-dimensional array by using a [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
   
- [!code-vb[VbVbalrArrays#43](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_15.vb)]  
+ [!code-vb[VbVbalrArrays#43](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#43)]  
   
  The following example iterates through a multidimensional array by using a `For Each...Next` statement. However, you have more control over the elements of a multidimensional array if you use a nested `For…Next` statement, as in a previous example, instead of a `For Each…Next` statement.  
   
- [!code-vb[VbVbalrArrays#44](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_16.vb)]  
+ [!code-vb[VbVbalrArrays#44](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#44)]  
   
 ##  <a name="BKMK_ReturnValues"></a> Arrays as Return Values and Parameters  
  To return an array from a `Function` procedure, specify the array data type and the number of dimensions as the return type of the [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md). Within the function, declare a local array variable with same data type and number of dimensions. In the [Return Statement](../../../../visual-basic/language-reference/statements/return-statement.md), include the local array variable without parentheses.  
@@ -200,23 +200,23 @@ Elements of the "students" array
   
  In the following example, the `GetNumbers` function returns an `Integer()`. This array type is a one dimensional array of type `Integer`. The `ShowNumbers` procedure accepts an `Integer()` argument.  
   
- [!code-vb[VbVbalrArrays#51](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_17.vb)]  
+ [!code-vb[VbVbalrArrays#51](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#51)]  
   
  In the following example, the `GetNumbersMultiDim` function returns an `Integer(,)`. This array type is a two dimensional array of type `Integer`.  The `ShowNumbersMultiDim` procedure accepts an `Integer(,)` argument.  
   
- [!code-vb[VbVbalrArrays#52](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_18.vb)]  
+ [!code-vb[VbVbalrArrays#52](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#52)]  
   
 ##  <a name="BKMK_JaggedArrays"></a> Jagged Arrays  
  An array that holds other arrays as elements is known as an array of arrays or a jagged array. A jagged array and each element in a jagged array can have one or more dimensions. Sometimes the data structure in your application is two-dimensional but not rectangular.  
   
  The following example has an array of months, each element of which is an array of days. Because different months have different numbers of days, the elements don’t form a rectangular two-dimensional array. Therefore, a jagged array is used instead of a multidimensional array.  
   
- [!code-vb[VbVbalrArrays#21](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_19.vb)]  
+ [!code-vb[VbVbalrArrays#21](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#21)]  
   
 ##  <a name="BKMK_ZeroLength"></a> Zero-Length Arrays  
  An array that contains no elements is also called a zero-length array. A variable that holds a zero-length array doesn’t have the value `Nothing`. To create an array that has no elements, declare one of the array's dimensions to be -1, as the following example shows.  
   
- [!code-vb[VbVbalrArrays#14](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_20.vb)]  
+ [!code-vb[VbVbalrArrays#14](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#14)]  
   
  You might need to create a zero-length array under the following circumstances:  
   
@@ -231,7 +231,7 @@ Elements of the "students" array
   
  The following example declares a three-dimensional array.  
   
-```  
+```vb
 Dim prices(3, 4, 5) As Long  
 ```  
   
@@ -265,7 +265,7 @@ Dim prices(3, 4, 5) As Long
   
  The following example calls the `TypeName` function to determine the type of the array and the type of the elements in the array. The array type is `Integer(,)` and the elements in the array are of type `Integer`.  
   
- [!code-vb[VbVbalrArrays#15](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_21.vb)]  
+ [!code-vb[VbVbalrArrays#15](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#15)]  
   
 ##  <a name="BKMK_Collections"></a> Collections as an Alternative to Arrays  
  Arrays are most useful for creating and working with a fixed number of strongly typed objects. Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects that you work with can grow and shrink dynamically as the needs of the application change.  
@@ -281,7 +281,7 @@ Dim prices(3, 4, 5) As Long
 ### Example  
  The following example uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  
   
- [!code-vb[VbVbalrArrays#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_22.vb)]  
+ [!code-vb[VbVbalrArrays#1](../../../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrArrays/VB/Class1.vb#1)]  
   
  The declaration of the `CustomerFile` collection specifies that it can contain elements only of type `Customer`. It also provides for an initial capacity of 200 elements. The procedure `AddNewCustomer` checks the new element for validity and then adds it to the collection. The procedure `PrintCustomers` uses a `For Each` loop to traverse the collection and display its elements.  
   

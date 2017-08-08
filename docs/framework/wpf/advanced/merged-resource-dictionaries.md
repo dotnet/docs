@@ -1,5 +1,5 @@
 ---
-title: "Merged Resource Dictionaries | Microsoft Docs"
+title: "Merged Resource Dictionaries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,7 @@ manager: "wpickett"
 ## Introducing a Merged Resource Dictionary  
  In markup, you use the following syntax to introduce a merged resource dictionary into a page:  
   
- [!code-xml[ResourceMergeDictionary#MergedXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ResourceMergeDictionary/CS/default.xaml#mergedxaml)]  
+ [!code-xaml[ResourceMergeDictionary#MergedXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ResourceMergeDictionary/CS/default.xaml#mergedxaml)]  
   
  Note that the <xref:System.Windows.ResourceDictionary> element does not have an [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md), which is generally required for all items in a resource collection. But another <xref:System.Windows.ResourceDictionary> reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. The <xref:System.Windows.ResourceDictionary> that introduces a merged resource dictionary cannot have an [x:Key Directive](../../../../docs/framework/xaml-services/x-key-directive.md). Typically, each <xref:System.Windows.ResourceDictionary> within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute. The value of <xref:System.Windows.ResourceDictionary.Source%2A> should be a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] that resolves to the location of the resources file to be merged. The destination of that [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] must be another [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file, with <xref:System.Windows.ResourceDictionary> as its root element.  
   

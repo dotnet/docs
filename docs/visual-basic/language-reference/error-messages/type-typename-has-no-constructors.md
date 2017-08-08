@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; has no constructors | Microsoft Docs"
+title: "Type &#39;&lt;typename&gt;&#39; has no constructors"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -53,4 +53,4 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
   
 ## See Also  
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)   
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

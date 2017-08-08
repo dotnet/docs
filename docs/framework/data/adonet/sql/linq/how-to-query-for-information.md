@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for Information | Microsoft Docs"
+title: "How to: Query for Information"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

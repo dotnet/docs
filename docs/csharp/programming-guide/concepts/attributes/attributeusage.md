@@ -1,5 +1,5 @@
 ---
-title: "AttributeUsage (C#) | Microsoft Docs"
+title: "AttributeUsage (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -45,9 +45,7 @@ class NewAttribute : System.Attribute { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]  
 class NewPropertyOrFieldAttribute : Attribute { }  
 ```  
@@ -56,9 +54,7 @@ class NewPropertyOrFieldAttribute : Attribute { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]  
 class MultiUseAttr : Attribute { }  
   
@@ -76,9 +72,7 @@ class Class2 { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]  
 class Attr1 : Attribute { }  
   
@@ -100,9 +94,7 @@ class DClass : BClass { }
   
 ```csharp  
 using System;  
-```  
-  
-```csharp  
+
 // Create some custom attributes:  
 [AttributeUsage(System.AttributeTargets.Class, Inherited = false)]  
 class A1 : System.Attribute { }  

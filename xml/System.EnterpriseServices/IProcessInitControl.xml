@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Supports setting the time-out for the <see cref="M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)" /> method.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,9 +36,16 @@
         <Parameter Name="dwSecondsRemaining" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dwSecondsRemaining">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="dwSecondsRemaining">The number of seconds that remain before the time taken to execute the start up method times out.</param>
+        <summary>Sets the number of seconds remaining before the <see cref="M:System.EnterpriseServices.IProcessInitializer.Startup(System.Object)" /> method times out.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each call to <xref:System.EnterpriseServices.IProcessInitializer.Startup%2A> is initially given a default 30 seconds to execute unless the time-out value is reset using this method.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

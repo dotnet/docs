@@ -1,5 +1,5 @@
 ---
-title: "Extending the Channel Layer | Microsoft Docs"
+title: "Extending the Channel Layer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

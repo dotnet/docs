@@ -1,5 +1,5 @@
 ---
-title: "How to: Verify that Strings Are in Valid Email Format | Microsoft Docs"
+title: "How to: Verify that Strings Are in Valid Email Format"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

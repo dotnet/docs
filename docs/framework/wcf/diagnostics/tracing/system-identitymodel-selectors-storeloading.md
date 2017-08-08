@@ -1,5 +1,5 @@
 ---
-title: "System.IdentityModel.Selectors.StoreLoading | Microsoft Docs"
+title: "System.IdentityModel.Selectors.StoreLoading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate in a Style | Microsoft Docs"
+title: "How to: Animate in a Style"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,7 @@ This example shows how to animate properties within a style. When animating with
  In the following example, several animations are defined within a style and applied to a <xref:System.Windows.Controls.Button>. When the user moves the mouse over the button, it fades from opaque to partially translucent and back again, repeatedly. When the user moves the mouse off the button, it becomes completely opaque. When the button is clicked, its background color changes from orange to white and back again. Because the <xref:System.Windows.Media.SolidColorBrush> used to paint the button can't be targeted directly, it is accessed by dotting down from the button's <xref:System.Windows.Controls.Control.Background%2A> property.  
   
 ## Example  
- [!code-xml[timingbehaviors_snip#21](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/StyleStoryboardsExample.xaml#21)]  
+ [!code-xaml[timingbehaviors_snip#21](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/StyleStoryboardsExample.xaml#21)]  
   
  Note that when animating within a style, it's possible to target objects that don't exist. For example, suppose your style uses a <xref:System.Windows.Media.SolidColorBrush> to set a Button's background property, but at some point the style is overridden and the button's background is set with a <xref:System.Windows.Media.LinearGradientBrush>.  Trying to animate the <xref:System.Windows.Media.SolidColorBrush> won't throw an exception; the animation will simply fail silently.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Threads and Threading | Microsoft Docs"
+title: "Threads and Threading"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

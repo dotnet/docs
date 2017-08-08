@@ -16,8 +16,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implemented by the <see cref="T:System.EnterpriseServices.ServicedComponent" /> class to obtain information about the component via the <see cref="M:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(System.Int32@,System.String[]@)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.IServicedComponentInfo> interface does not need to be implemented directly in your code. It is used internally by the .NET Framework infrastructure.  
+  
+ The <xref:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo%2A> method does not appear in the <xref:System.EnterpriseServices.ServicedComponent>class interface. Instead, <xref:System.EnterpriseServices.ServicedComponent> explicitly implements <xref:System.EnterpriseServices.IServicedComponentInfo>.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+    <altmember cref="T:System.EnterpriseServices.ServicedComponent" />
   </Docs>
   <Members>
     <Member MemberName="GetComponentInfo">
@@ -37,10 +48,18 @@
         <Parameter Name="infoArray" Type="System.String[]&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="infoMask">To be added.</param>
-        <param name="infoArray">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="infoMask">A bitmask where 0x00000001 is a key for the serviced component's process ID, 0x00000002 is a key for the application domain ID, and 0x00000004 is a key for the serviced component's remote URI.</param>
+        <param name="infoArray">A string array that may contain any or all of the following, in order: the serviced component's process ID, the application domain ID, and the serviced component's remote URI.</param>
+        <summary>Obtains certain information about the <see cref="T:System.EnterpriseServices.ServicedComponent" /> class instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo%2A> method does not belong to the published interface of the <xref:System.EnterpriseServices.ServicedComponent> class and does not need to be implemented elsewhere.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

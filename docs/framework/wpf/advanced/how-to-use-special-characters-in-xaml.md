@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Special Characters in XAML | Microsoft Docs"
+title: "How to: Use Special Characters in XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -39,4 +39,4 @@ Markup files that are created in              [!INCLUDE[TLA#tla_visualstu](../..
  The following example shows how you can use special characters in text when creating markup.  
   
 ## Example  
- [!code-xml[SpecialCharsSnippets#SpecialCharsSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SpecialCharsSnippets/CS/Window1.xaml#specialcharssnippet1)]
+ [!code-xaml[SpecialCharsSnippets#SpecialCharsSnippet1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SpecialCharsSnippets/CS/Window1.xaml#specialcharssnippet1)]

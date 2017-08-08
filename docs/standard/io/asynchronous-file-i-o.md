@@ -1,5 +1,5 @@
 ---
-title: "Asynchronous File I-O | Microsoft Docs"
+title: "Asynchronous File I-O"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -55,7 +55,7 @@ Asynchronous operations enable you to perform resource-intensive I/O operations 
  [!code-csharp[System.IO.WindowsRuntimeStorageExtensions#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestorageextensions/cs/blankpage.xaml.cs#2)]
  [!code-vb[System.IO.WindowsRuntimeStorageExtensions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestorageextensions/vb/blankpage.xaml.vb#2)]  
   
- [!code-xml[System.IO.WindowsRuntimeStorageExtensions#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestorageextensions/cs/blankpage.xaml#1)]  
+ [!code-xaml[System.IO.WindowsRuntimeStorageExtensions#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestorageextensions/cs/blankpage.xaml#1)]  
   
 ## See Also  
  <xref:System.IO.Stream>   

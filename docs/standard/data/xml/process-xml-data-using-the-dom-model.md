@@ -1,5 +1,5 @@
 ---
-title: "Process XML Data Using the DOM Model | Microsoft Docs"
+title: "Process XML Data Using the DOM Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

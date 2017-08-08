@@ -1,5 +1,5 @@
 ---
-title: "Error number must be within the range 0 and 65535 | Microsoft Docs"
+title: "Error number must be within the range 0 and 65535"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Consuming the Task-based Asynchronous Pattern | Microsoft Docs"
+title: "Consuming the Task-based Asynchronous Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Customizing Projects and Extending My with Visual Basic | Microsoft Docs"
+title: "Customizing Projects and Extending My with Visual Basic"
 
 ms.date: "2015-07-20"
 ms.prod: .net

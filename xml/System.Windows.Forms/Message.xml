@@ -212,7 +212,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.Message a, System.Windows.Forms.Message b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.Message a, System.Windows.Forms.Message b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Forms.Message a, valuetype System.Windows.Forms.Message b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.op_Equality(System.Windows.Forms.Message,System.Windows.Forms.Message)" />
       <MemberType>Method</MemberType>
@@ -239,7 +239,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.Message a, System.Windows.Forms.Message b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.Message a, System.Windows.Forms.Message b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Forms.Message a, valuetype System.Windows.Forms.Message b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.op_Inequality(System.Windows.Forms.Message,System.Windows.Forms.Message)" />
       <MemberType>Method</MemberType>

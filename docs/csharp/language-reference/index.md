@@ -1,5 +1,5 @@
 ---
-title: "C# Reference | Microsoft Docs"
+title: "C# Reference"
 ms.date: "2017-02-14"
 ms.prod: .net
 ms.technology: 
@@ -55,7 +55,7 @@ This section provides reference material about C# keywords, operators, special c
  [C# Compiler Errors](../../csharp/language-reference/compiler-messages/index.md)  
  Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.  
   
- [C# Language Specification](../../csharp/language-reference/language-specification.md)  
+ [C# Language Specification](../../csharp/language-reference/language-specification/index.md)  
  Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.  
   
 ## Related Sections  
@@ -69,7 +69,7 @@ This section provides reference material about C# keywords, operators, special c
  [C#](../../csharp/csharp.md)  
  Provides a portal to Visual C# documentation.  
   
- [Using the Visual Studio Development Environment for C#](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
+ [Using the Visual Studio Development Environment for C#](/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  
   
  [C# Programming Guide](../../csharp/programming-guide/index.md)  

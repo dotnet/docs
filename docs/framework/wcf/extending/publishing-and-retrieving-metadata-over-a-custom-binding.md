@@ -1,5 +1,5 @@
 ---
-title: "Publishing and Retrieving Metadata Over a Custom Binding | Microsoft Docs"
+title: "Publishing and Retrieving Metadata Over a Custom Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

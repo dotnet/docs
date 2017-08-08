@@ -1,5 +1,5 @@
 ---
-title: "Elevation of Privilege | Microsoft Docs"
+title: "Elevation of Privilege"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

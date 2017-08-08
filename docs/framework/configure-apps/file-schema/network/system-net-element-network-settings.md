@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.Net&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;system.Net&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -67,7 +67,7 @@ Contains settings that specify how the .NET Framework connects to the network.
  The [\<system.net>](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) element contains settings for classes in the <xref:System.Net> and related child namespaces. The settings configure authentication modules, connection management, mail settings, the proxy server, and Internet request modules for receiving information from Internet hosts.  
   
 ## Example  
- The following code example shows a typical configuration used by <xref:System.Net> classes.  
+ The following example shows a typical configuration used by <xref:System.Net> classes.  
   
 ```xml  
 <configuration>  

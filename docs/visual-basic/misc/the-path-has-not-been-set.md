@@ -1,5 +1,5 @@
 ---
-title: "The path has not been set | Microsoft Docs"
+title: "The path has not been set"
 
 ms.date: "2015-07-20"
 ms.prod: .net

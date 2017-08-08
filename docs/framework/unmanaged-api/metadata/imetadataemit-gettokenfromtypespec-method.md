@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::GetTokenFromTypeSpec Method | Microsoft Docs"
+title: "IMetaDataEmit::GetTokenFromTypeSpec Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

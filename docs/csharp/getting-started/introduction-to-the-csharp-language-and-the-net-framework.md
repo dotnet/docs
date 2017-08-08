@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the C# Language and the .NET Framework | Microsoft Docs"
+title: "Introduction to the C# Language and the .NET Framework"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -58,7 +58,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  The following are additional C# resources:  
   
--   For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification.md).  
+-   For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
   
 -   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   
@@ -83,4 +83,4 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 ## See Also  
  [C#](../../csharp/csharp.md)   
- [Getting Started with Visual C# and Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+ [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

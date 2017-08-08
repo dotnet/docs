@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure Network Tracing | Microsoft Docs"
+title: "How to: Configure Network Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

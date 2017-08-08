@@ -1,6 +1,6 @@
 ---
-title: F# Interactive Options | Microsoft Docs
-description: F# Interactive Options
+title: F# Interactive Options
+description: Learn about the command-line options supported by F# Interactive, fsi.exe.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

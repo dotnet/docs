@@ -1,5 +1,5 @@
 ---
-title: "Accessibility Levels (C# Reference) | Microsoft Docs"
+title: "Accessibility Levels (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -37,10 +37,10 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |`public`|Access is not restricted.|  
 |`protected`|Access is limited to the containing class or types derived from the containing class.|  
 |`internal`|Access is limited to the current assembly.|  
-|`protected` `internal`|Access is limited to the current assembly or types derived from the containing class.|  
+|`protected internal`|Access is limited to the current assembly or types derived from the containing class.|  
 |`private`|Access is limited to the containing type.|  
   
- Only one access modifier is allowed for a member or type, except when you use the `protected` `internal` combination.  
+ Only one access modifier is allowed for a member or type, except when you use the `protected internal` combination.  
   
  Access modifiers are not allowed on namespaces. Namespaces have no access restrictions.  
   
@@ -53,7 +53,7 @@ Use the access modifiers, [public](../../../csharp/language-reference/keywords/p
 |Members of|Default member accessibility|Allowed declared accessibility of the member|  
 |----------------|----------------------------------|--------------------------------------------------|  
 |`enum`|`public`|None|  
-|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected` `internal`|  
+|`class`|`private`|`public`<br /><br /> `protected`<br /><br /> `internal`<br /><br /> `private`<br /><br /> `protected internal`|  
 |`interface`|`public`|None|  
 |`struct`|`private`|`public`<br /><br /> `internal`<br /><br /> `private`|  
   

@@ -15,9 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The type of the export.</typeparam>
+    <summary>A factory that creates new instances of a part that provides the specified export.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,9 +35,12 @@
         <Parameter Name="exportCreator" Type="System.Func&lt;System.Tuple&lt;T,System.Action&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="exportCreator">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="exportCreator">A function that returns the exported value in <see cref="M:System.Tuple&lt;T1,T2&gt;.Item1" /> and an <see cref="T:System.Action" /> that releases it in <see cref="M:System.Tuple&lt;T1,T2&gt;.Item2" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportFactory`1" /> class. </summary>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exportCreator" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateExport">
@@ -54,9 +58,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an instance of the factory's export type.</summary>
+        <returns>A valid instance of the factory's export type.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

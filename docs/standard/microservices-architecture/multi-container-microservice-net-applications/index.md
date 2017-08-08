@@ -1,5 +1,5 @@
 ---
-title: Designing and Developing Multi Container and Microservice Based .NET Applications | Microsoft Docs 
+title: Designing and Developing Multi Container and Microservice Based .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing and Developing Multi Container and Microservice Based .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

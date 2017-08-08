@@ -1,5 +1,5 @@
 ---
-title: "Control Flow in Async Programs (C#) | Microsoft Docs"
+title: "Control Flow in Async Programs (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

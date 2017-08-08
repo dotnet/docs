@@ -1,5 +1,5 @@
 ---
-title: "Creating the Game1 Class | Microsoft Docs"
+title: "Creating the Game1 Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

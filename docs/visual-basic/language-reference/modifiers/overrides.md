@@ -1,5 +1,5 @@
 ---
-title: "Overrides (Visual Basic) | Microsoft Docs"
+title: "Overrides (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

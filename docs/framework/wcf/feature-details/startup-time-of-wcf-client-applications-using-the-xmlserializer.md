@@ -1,5 +1,5 @@
 ---
-title: "How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer | Microsoft Docs"
+title: "How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

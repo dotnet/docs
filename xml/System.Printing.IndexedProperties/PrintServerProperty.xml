@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintServer op_Implicit (System.Printing.IndexedProperties.PrintServerProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServer (System.Printing.IndexedProperties.PrintServerProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintServer op_Implicit(class System.Printing.IndexedProperties.PrintServerProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerProperty)~System.Printing.PrintServer" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintServer op_Implicit (System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServer (System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintServer op_Implicit(class System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintServer" />
       <MemberType>Method</MemberType>

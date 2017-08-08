@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.CommunicationObjectFaultReason | Microsoft Docs"
+title: "System.ServiceModel.CommunicationObjectFaultReason"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

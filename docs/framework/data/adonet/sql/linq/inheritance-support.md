@@ -1,5 +1,5 @@
 ---
-title: "Inheritance Support | Microsoft Docs"
+title: "Inheritance Support"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

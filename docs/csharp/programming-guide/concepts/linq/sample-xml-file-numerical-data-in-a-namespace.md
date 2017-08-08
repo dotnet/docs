@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Numerical Data in a Namespace3 | Microsoft Docs"
+title: "Sample XML File: Numerical Data in a Namespace3"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

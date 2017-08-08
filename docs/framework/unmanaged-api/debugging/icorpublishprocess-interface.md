@@ -1,5 +1,5 @@
 ---
-title: "ICorPublishProcess Interface | Microsoft Docs"
+title: "ICorPublishProcess Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

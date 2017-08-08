@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::IsGlobal Method | Microsoft Docs"
+title: "IMetaDataImport::IsGlobal Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

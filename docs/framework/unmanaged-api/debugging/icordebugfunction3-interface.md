@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFunction3 Interface | Microsoft Docs"
+title: "ICorDebugFunction3 Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

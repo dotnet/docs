@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Complex Grid | Microsoft Docs"
+title: "How to: Create a Complex Grid"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,7 @@ This example shows how to use a <xref:System.Windows.Controls.Grid> to create la
   
  The example uses vertical gradients to <xref:System.Windows.Shapes.Shape.Fill%2A> the columns and rows in order to improve the visual presentation and readability of the calendar. Styled <xref:System.Windows.Controls.TextBlock> elements represent the dates and days of the week. <xref:System.Windows.Controls.TextBlock> elements are absolutely positioned within their cells by using the <xref:System.Windows.FrameworkElement.Margin%2A> property and alignment properties that are defined within the style for the application.  
   
- [!code-xml[GridComplex#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridComplex/CS/default.xaml#1)]  
+ [!code-xaml[GridComplex#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridComplex/CS/default.xaml#1)]  
   
 ## See Also  
  <xref:System.Windows.Controls.Grid>   

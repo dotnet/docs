@@ -1,5 +1,5 @@
 ---
-title: "PFN_CLRDataCreateInstance Function Pointer | Microsoft Docs"
+title: "PFN_CLRDataCreateInstance Function Pointer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

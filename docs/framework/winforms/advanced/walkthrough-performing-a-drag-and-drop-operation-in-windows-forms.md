@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms | Microsoft Docs"
+title: "Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

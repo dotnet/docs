@@ -1,5 +1,5 @@
 ---
-title: "Transforms Overview | Microsoft Docs"
+title: "Transforms Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -93,7 +93,7 @@ This topic describes how to use the [!INCLUDE[TLA#tla_2d](../../../../includes/t
  ![A FrameworkElement rotated 45 degrees about &#40;0,0&#41;](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-fe-rotated-about-upperleft-corner.png "graphicsmm_FE_rotated_about_upperleft_corner")  
 A Rectangle element rotated 45 degrees about the point (0,0)  
   
- [!code-xml[Transforms_snip#TransformsFERotatedAboutTopLeft](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedabouttopleft)]  
+ [!code-xaml[Transforms_snip#TransformsFERotatedAboutTopLeft](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedabouttopleft)]  
   
  By default, the element rotates about its upper-left corner, (0, 0). The <xref:System.Windows.Media.RotateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.SkewTransform> classes provide CenterX and CenterY properties that enable you to specify the point at which the transform is applied.  
   
@@ -102,7 +102,7 @@ A Rectangle element rotated 45 degrees about the point (0,0)
  ![A Geometry rotated 45 degrees about &#40;25, 25&#41;](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-fe-rotated-about-center.png "graphicsmm_FE_rotated_about_center")  
 A Rectangle element rotated 45 degrees about the point (25, 25)  
   
- [!code-xml[Transforms_snip#TransformsFERotatedAboutCenter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedaboutcenter)]  
+ [!code-xaml[Transforms_snip#TransformsFERotatedAboutCenter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedaboutcenter)]  
   
 <a name="layoutTransformsAndRenderTransformsSection"></a>   
 ## Transforming a FrameworkElement  
@@ -125,21 +125,21 @@ A Rectangle element rotated 45 degrees about the point (25, 25)
  ![A button transformed using RenderTransform](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-rendertransformwithdefaultcenter.png "graphicsmm_RenderTransformWithDefaultCenter")  
 Clockwise rotation 45 degrees from upper-left corner  
   
- [!code-xml[Transforms_snip#GraphicsMMRotateButtonExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample1)]  
+ [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample1)]  
   
  The next example also uses a <xref:System.Windows.Media.RotateTransform> to rotate a button 45 degrees clockwise, but it also sets the <xref:System.Windows.UIElement.RenderTransformOrigin%2A> of the button to (0.5, 0.5). The value of the <xref:System.Windows.UIElement.RenderTransformOrigin%2A> property is relative to the size of the button. As a result, the rotation is applied to the center of the button, instead of its upper-left corner. The following illustration shows the result of the transformation.  
   
  ![A button transformed about its center](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-rendertransformrelativecenter.png "graphicsmm_RenderTransformRelativeCenter")  
 Clockwise rotation 45 degrees around center  
   
- [!code-xml[Transforms_snip#GraphicsMMRotateButtonExample2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample2)]  
+ [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample2)]  
   
  The following example uses the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property instead of the <xref:System.Windows.UIElement.RenderTransform%2A> property to rotate the button.  This causes the transformation to affect the layout of the button, which triggers a full pass by the layout system. As a result, the button is rotated and then repositioned because its size has changed. The following illustration shows the result of the transformation.  
   
  ![A button transformed using LayoutTransform](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-layouttransform.png "graphicsmm_LayoutTransform")  
 LayoutTransform used to rotate the button  
   
- [!code-xml[Transforms_snip#GraphicsMMRotateButtonExample3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample3)]  
+ [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample3)]  
   
 <a name="animate_transforms"></a>   
 ## Animating Transformations  
@@ -147,7 +147,7 @@ LayoutTransform used to rotate the button
   
  The following example uses a <xref:System.Windows.Media.Animation.Storyboard> and a <xref:System.Windows.Media.Animation.DoubleAnimation> with a <xref:System.Windows.Media.RotateTransform> to make a <xref:System.Windows.Controls.Button> spin in place when it is clicked.  
   
- [!code-xml[Transforms_snip#GraphicsMMAnimatedRotateButtonExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonAnimatedRotateTransformExample.xaml#graphicsmmanimatedrotatebuttonexamplewholepage)]  
+ [!code-xaml[Transforms_snip#GraphicsMMAnimatedRotateButtonExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonAnimatedRotateTransformExample.xaml#graphicsmmanimatedrotatebuttonexamplewholepage)]  
   
  For the complete sample, see [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252). For more information about animations, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
   

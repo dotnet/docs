@@ -1,6 +1,6 @@
 ---
-title: "Walkthrough: Generating F# Types from a DBML File (F#) | Microsoft Docs"
-description: "Walkthrough: Generating F# Types from a DBML File (F#)"
+title: "Walkthrough: Generating F# Types from a DBML File (F#)"
+description: Learn how to create F# types for data from a database in F# 3.0 when you have schema information encoded in a .dbml file.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate a Property by Using a Storyboard | Microsoft Docs"
+title: "How to: Animate a Property by Using a Storyboard"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ This example shows how to use a <xref:System.Windows.Media.Animation.Storyboard>
  The following example uses <xref:System.Windows.Media.Animation.Storyboard> objects to animate two <xref:System.Windows.Controls.Button> controls. To make the first button change in size, its <xref:System.Windows.FrameworkElement.Width%2A> is animated. To make the second button change color, the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of the <xref:System.Windows.Media.SolidColorBrush> is used to set the <xref:System.Windows.Controls.Control.Background%2A> of the button that is animated.  
   
 ## Example  
- [!code-xml[AnimatePropertyStoryboards#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/StoryboardExample.xaml#1)]  
+ [!code-xaml[AnimatePropertyStoryboards#1](../../../../samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/StoryboardExample.xaml#1)]  
   
 > [!NOTE]
 >  Although animations can target both a <xref:System.Windows.FrameworkElement> object, such as a <xref:System.Windows.Controls.Control> or <xref:System.Windows.Controls.Panel>, and a <xref:System.Windows.Freezable> object, such as a <xref:System.Windows.Media.Brush> or <xref:System.Windows.Media.Transform>, only framework elements have a <xref:System.Windows.FrameworkElement.Name%2A> property. To assign a name to a freezable so that it can be targeted by an animation, use the [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md), as the previous example shows.  

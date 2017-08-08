@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Type> object that is passed in as a parameter of the <xref:System.Web.UI.TemplateContainerAttribute> object is used by the parser as the type of <xref:System.ComponentModel.Container> object that is used in data-binding expressions. The control whose property returns an <xref:System.Web.UI.ITemplate> interface and is marked with the <xref:System.Web.UI.TemplateContainerAttribute>, must implement the <xref:System.Web.UI.INamingContainer> interface.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

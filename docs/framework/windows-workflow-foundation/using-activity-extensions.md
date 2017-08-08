@@ -1,5 +1,5 @@
 ---
-title: "Using Activity Extensions | Microsoft Docs"
+title: "Using Activity Extensions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

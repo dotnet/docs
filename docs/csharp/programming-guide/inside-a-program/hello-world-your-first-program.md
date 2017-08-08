@@ -1,5 +1,5 @@
 ---
-title: "Hello World -- Your First Program (C# Programming Guide) | Microsoft Docs"
+title: "Hello World -- Your First Program (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -40,7 +40,7 @@ translation.priority.ht:
 # Hello World -- Your First Program (C# Programming Guide)
 The following procedure creates a C# version of the traditional "Hello World!" program. The program displays the string `Hello World!`  
   
- For more examples of introductory concepts, see [Getting Started with Visual C# and Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).  
+ For more examples of introductory concepts, see [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -122,11 +122,11 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
 2.  Perform one of the following steps to open a command-prompt window:  
   
-    -   In Windows 8, on the **Start** screen, search for `Developer Command Prompt`, and then tap or choose **Developer Command Prompt for VS2012**.  
+    -   In Windows 10, on the **Start** menu, search for `Developer Command Prompt`, and then tap or choose **Developer Command Prompt for VS 2017**.  
   
          A Developer Command Prompt window appears.  
   
-    -   In Windows 7, open the **Start** menu, expand the folder for the current version of Visual Studio, open the shortcut menu for **Visual Studio Tools**, and then choose **Developer Command Prompt for VS2012**.  
+    -   In Windows 7, open the **Start** menu, expand the folder for the current version of Visual Studio, open the shortcut menu for **Visual Studio Tools**, and then choose **Developer Command Prompt for VS 2017**.  
   
          A Developer Command Prompt window appears.  
   
@@ -155,4 +155,4 @@ The following procedure creates a C# version of the traditional "Hello World!" p
  [\<paveover>C# Sample Applications](http://msdn.microsoft.com/en-us/9a9d7aaa-51d3-4224-b564-95409b0f3e15)   
  [C# Reference](../../../csharp/language-reference/index.md)   
  [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)   
- [Getting Started with Visual C# and Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+ [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

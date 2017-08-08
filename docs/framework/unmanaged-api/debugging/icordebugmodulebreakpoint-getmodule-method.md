@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugModuleBreakpoint::GetModule Method | Microsoft Docs"
+title: "ICorDebugModuleBreakpoint::GetModule Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

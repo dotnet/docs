@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply a Drawing to a 3-D Model | Microsoft Docs"
+title: "How to: Apply a Drawing to a 3-D Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,12 +25,12 @@ This example shows how to use a <xref:System.Windows.Media.DrawingBrush> as the 
   
  **Note:** It is often desirable to define complex objects and values like the drawing below as resources which can be reused and simplify your code. See [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md) for more information.  
   
- [!code-xml[3DGallery_snip#ApplyDrawingToMaterialInline1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialinline1)]  
+ [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialInline1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialinline1)]  
   
 ## Example  
  The following code shows the entire sample.  
   
- [!code-xml[3DGallery_snip#ApplyDrawingToMaterialExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
+ [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
   
 ## See Also  
  [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)   

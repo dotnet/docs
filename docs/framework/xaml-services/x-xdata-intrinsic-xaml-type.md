@@ -1,5 +1,5 @@
 ---
-title: "x:XData Intrinsic XAML Type | Microsoft Docs"
+title: "x:XData Intrinsic XAML Type"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

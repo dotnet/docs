@@ -1,5 +1,5 @@
 ---
-title: "Application Compatibility in the .NET Framework | Microsoft Docs"
+title: "Application Compatibility in the .NET Framework"
 ms.custom: ""
 ms.date: "05/19/2017"
 ms.prod: ".net-framework"
@@ -24,6 +24,7 @@ manager: "wpickett"
 # Application Compatibility in the .NET Framework
 
 ## Introduction
+
 Compatibility is a very important goal of each .NET release. Compatibility
 ensures that each version is additive, so previous versions will still work. On
 the other hand, changes to previous functionality (to improve performance,
@@ -36,9 +37,9 @@ running on a particular version.
 
 Each app targets a specific version of the .NET Framework, which can be specified by:
 
-* Defining a target framework in Visual Studio.
-* Specifying the target framework in a project file.
-* Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
+- Defining a target framework in Visual Studio.
+- Specifying the target framework in a project file.
+- Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
 
 When running on a newer version than what was targeted, the .NET Framework will
 use quirked behavior to mimic the older targeted version. In other words, the
@@ -99,14 +100,15 @@ Each issue includes the following information:
 -   The IDs of the available diagnostics
 
 ## Usage
+
 To begin, select the type of compatibility change below:
 
-* [Retargeting Changes](./retargeting/index.md)
-* [Runtime Changes](./runtime/index.md)
+- [Retargeting Changes](./retargeting/index.md)
+- [Runtime Changes](./runtime/index.md)
 
 
-## See Also
+## See also
 
-* [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
-* [What's New](../../../docs/framework/whats-new/index.md)
-* [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+[Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)   
+[What's New](../../../docs/framework/whats-new/index.md)   
+[What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)

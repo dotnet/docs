@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Antialiasing with Text | Microsoft Docs"
+title: "How to: Use Antialiasing with Text"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

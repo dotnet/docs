@@ -1,5 +1,5 @@
 ---
-title: "Dependency Property Metadata | Microsoft Docs"
+title: "Dependency Property Metadata"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

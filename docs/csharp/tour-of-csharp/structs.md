@@ -1,5 +1,5 @@
 ---
-title: C# structs - A tour of the C# language | Microsoft Docs
+title: C# structs - A tour of the C# language
 description: Learn the basics of C# value types, called structs
 keywords: .NET, C#, struct, value type
 author: BillWagner

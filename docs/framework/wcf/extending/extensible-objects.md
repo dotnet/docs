@@ -1,5 +1,5 @@
 ---
-title: "Extensible Objects | Microsoft Docs"
+title: "Extensible Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

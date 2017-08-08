@@ -1,5 +1,5 @@
 ---
-title: "Finding the Default Paragraph Style (C#) | Microsoft Docs"
+title: "Finding the Default Paragraph Style (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

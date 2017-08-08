@@ -1,5 +1,5 @@
 ---
-title: "4025 - OpenListenerChannelInstanceFailed | Microsoft Docs"
+title: "4025 - OpenListenerChannelInstanceFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

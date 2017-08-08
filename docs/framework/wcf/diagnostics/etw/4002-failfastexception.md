@@ -1,5 +1,5 @@
 ---
-title: "4002 - FailFastException | Microsoft Docs"
+title: "4002 - FailFastException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

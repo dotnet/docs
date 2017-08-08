@@ -1,5 +1,5 @@
 ---
-title: "710 - HttpContextBeforeProcessAuthentication | Microsoft Docs"
+title: "710 - HttpContextBeforeProcessAuthentication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

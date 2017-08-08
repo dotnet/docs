@@ -1,5 +1,5 @@
 ---
-title: "Multiple Bulk Copy Operations | Microsoft Docs"
+title: "Multiple Bulk Copy Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

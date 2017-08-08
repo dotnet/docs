@@ -1,5 +1,5 @@
 ---
-title: "XML Comment Literal (Visual Basic) | Microsoft Docs"
+title: "XML Comment Literal (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

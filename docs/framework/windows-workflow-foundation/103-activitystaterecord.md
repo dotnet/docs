@@ -1,5 +1,5 @@
 ---
-title: "103 - ActivityStateRecord | Microsoft Docs"
+title: "103 - ActivityStateRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Processing the XML File (C# Programming Guide) | Microsoft Docs"
+title: "Processing the XML File (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

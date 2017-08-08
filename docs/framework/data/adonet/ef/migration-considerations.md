@@ -1,5 +1,5 @@
 ---
-title: "Migration Considerations (Entity Framework) | Microsoft Docs"
+title: "Migration Considerations (Entity Framework)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

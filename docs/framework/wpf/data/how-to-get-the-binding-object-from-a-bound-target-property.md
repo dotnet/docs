@@ -1,5 +1,5 @@
 ---
-title: "How to: Get the Binding Object from a Bound Target Property | Microsoft Docs"
+title: "How to: Get the Binding Object from a Bound Target Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain2::GetFunctionPointerType Method | Microsoft Docs"
+title: "ICorDebugAppDomain2::GetFunctionPointerType Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

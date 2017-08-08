@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to an ADO.NET Data Source | Microsoft Docs"
+title: "How to: Bind to an ADO.NET Data Source"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,11 +30,11 @@ This example shows how to bind a [!INCLUDE[TLA#tla_winclient](../../../../includ
   
  We can then bind the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of the <xref:System.Windows.Controls.ListBox> to `BookTable` of the `DataSet`:  
   
- [!code-xml[ADODataSet#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ADODataSet/CSharp/Window1.xaml#2)]  
+ [!code-xaml[ADODataSet#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ADODataSet/CSharp/Window1.xaml#2)]  
   
  `BookItemTemplate` is the <xref:System.Windows.DataTemplate> that defines how the data appears:  
   
- [!code-xml[ADODataSet#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ADODataSet/CSharp/Window1.xaml#3)]  
+ [!code-xaml[ADODataSet#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ADODataSet/CSharp/Window1.xaml#3)]  
   
  The `IntColorConverter` converts an `int` to a color. With the use of this converter, the <xref:System.Windows.Controls.TextBlock.Background%2A> color of the third <xref:System.Windows.Controls.TextBlock> appears green if the value of `NumPages` is less than 350 and red otherwise. The implementation of the converter is not shown here.  
   

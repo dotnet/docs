@@ -1,5 +1,5 @@
 ---
-title: "Type Converters for XAML Overview | Microsoft Docs"
+title: "Type Converters for XAML Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

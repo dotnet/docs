@@ -1,5 +1,5 @@
 ---
-title: "Expression &#39;&lt;name&gt;&#39; is not a procedure, but occurs as the target of a procedure call | Microsoft Docs"
+title: "Expression &#39;&lt;name&gt;&#39; is not a procedure, but occurs as the target of a procedure call"
 
 ms.date: "2015-07-20"
 ms.prod: .net

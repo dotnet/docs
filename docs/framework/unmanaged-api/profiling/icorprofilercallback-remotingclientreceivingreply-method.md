@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::RemotingClientReceivingReply Method | Microsoft Docs"
+title: "ICorProfilerCallback::RemotingClientReceivingReply Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

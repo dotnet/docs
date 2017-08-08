@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Background Thread to Search for Files | Microsoft Docs"
+title: "How to: Use a Background Thread to Search for Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

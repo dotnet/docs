@@ -1,5 +1,5 @@
 ---
-title: "XML Integration with Relational Data and ADO.NET | Microsoft Docs"
+title: "XML Integration with Relational Data and ADO.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

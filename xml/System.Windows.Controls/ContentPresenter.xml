@@ -48,7 +48,7 @@
 ## Examples  
  The following shows a <xref:System.Windows.Controls.Button> <xref:System.Windows.Style> that sets the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button>. The <xref:System.Windows.Controls.ControlTemplate> defines that the <xref:System.Windows.Controls.Button> appears as an <xref:System.Windows.Shapes.Ellipse> within a <xref:System.Windows.Controls.Grid> element. The <xref:System.Windows.Controls.ContentPresenter> marks that the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Button> should be displayed and centered vertically and horizontally within the <xref:System.Windows.Controls.Grid>.  
   
- [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
+ [!code-xaml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
   
  The following image shows the appearance of the <xref:System.Windows.Controls.Button> when this gets applied:  
   
@@ -225,7 +225,7 @@
 ## Examples  
  The following example shows a style for a <xref:System.Windows.Controls.HeaderedContentControl> that demonstrates the usage of the <xref:System.Windows.Controls.ContentPresenter.ContentSource%2A> property:  
   
- [!code-xml[HeaderedContentControl#HeaderedContentControlStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headeredcontentcontrolstyle)]  
+ [!code-xaml[HeaderedContentControl#HeaderedContentControlStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/HeaderedContentControl/CSharp/Page1.xaml#headeredcontentcontrolstyle)]  
   
  ]]></format>
         </remarks>
@@ -340,7 +340,7 @@
 ## Examples  
  The following example shows a style for the <xref:System.Windows.Controls.ComboBox> control:  
   
- [!code-xml[ControlTemplateExamples#ComboBoxStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/combobox.xaml#comboboxstyle)]  
+ [!code-xaml[ControlTemplateExamples#ComboBoxStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/combobox.xaml#comboboxstyle)]  
   
  ]]></format>
         </remarks>

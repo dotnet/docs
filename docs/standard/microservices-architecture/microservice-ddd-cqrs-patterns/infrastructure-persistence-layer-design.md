@@ -1,5 +1,5 @@
 ---
-title: Designing the infrastructure persistence layer | Microsoft Docs 
+title: Designing the infrastructure persistence layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Designing the infrastructure persistence layer
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

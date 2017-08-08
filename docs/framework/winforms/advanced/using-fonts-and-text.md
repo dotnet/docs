@@ -1,5 +1,5 @@
 ---
-title: "Using Fonts and Text | Microsoft Docs"
+title: "Using Fonts and Text"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

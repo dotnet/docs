@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStackWalk::GetFrame Method | Microsoft Docs"
+title: "ICorDebugStackWalk::GetFrame Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

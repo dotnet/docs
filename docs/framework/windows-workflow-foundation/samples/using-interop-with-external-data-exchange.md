@@ -1,5 +1,5 @@
 ---
-title: "Using Interop with External Data Exchange | Microsoft Docs"
+title: "Using Interop with External Data Exchange"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

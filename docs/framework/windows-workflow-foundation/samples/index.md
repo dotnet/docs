@@ -1,5 +1,5 @@
 ---
-title: "Windows Workflow (WF) Samples | Microsoft Docs"
+title: "Windows Workflow (WF) Samples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

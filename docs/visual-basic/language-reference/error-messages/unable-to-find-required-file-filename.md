@@ -1,5 +1,5 @@
 ---
-title: "Unable to find required file &#39;&lt;filename&gt;&#39; | Microsoft Docs"
+title: "Unable to find required file &#39;&lt;filename&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -46,4 +46,4 @@ A file that is required by Visual Studio is missing or damaged.
 -   Reinstall Visual Studio.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

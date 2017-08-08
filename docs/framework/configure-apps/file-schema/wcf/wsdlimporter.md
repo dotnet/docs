@@ -1,5 +1,5 @@
 ---
-title: "&lt;wsdlImporter&gt; | Microsoft Docs"
+title: "&lt;wsdlImporter&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Exchange Messages Within a Reliable Session | Microsoft Docs"
+title: "How to: Exchange Messages Within a Reliable Session"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Because this call is not awaited, the current method continues to run before the call is completed | Microsoft Docs"
+title: "Because this call is not awaited, the current method continues to run before the call is completed"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -44,7 +44,7 @@ Because this call is not awaited, execution of the current method continues befo
   
  As a best practice, you should always await the call.  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42358  
   
@@ -138,7 +138,7 @@ Because this call is not awaited, execution of the current method continues befo
   
      A simple window that contains a button and a text box appears in the **Design** view of MainWindow.xaml.  
   
-     For more information about the XAML Designer, see [Creating a UI by using XAML Designer](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](http://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042).  
+     For more information about the XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). For information about how to build your own simple UI, see the "To create a WPF application" and "To design a simple WPF MainWindow" sections of [Walkthrough: Accessing the Web by Using Async and Await](http://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042).  
   
 4.  Replace the code in MainWindow.xaml.vb with the following code.  
   

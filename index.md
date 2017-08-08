@@ -82,7 +82,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/standard/">.NET Platform Guide</a></h3>
+                                                <h3><a href="/dotnet/standard/">.NET Guide</a></h3>
                                                 <p><a href="/dotnet/standard/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/standard/components">.NET Architectural Concepts</a></p>
@@ -106,6 +106,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 <p><a href="/dotnet/core/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/core/porting">Porting from .NET Framework</a></p>
                                                 <p><a href="/aspnet/core/getting-started">ASP.NET Core</a></p>
+                                                <p><a href="/ef/core/index">EF Core</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -269,7 +270,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                             <div class="cardText">
                                                 <a href="https://www.asp.net/learn">
                                                     <h3>What is ASP.NET?</h3>
-                                                    <p>Learn about the ASP.NET web platform.</p>
+                                                    <p>Learn how to build ASP.NET web applications.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -409,7 +410,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://azure.microsoft.com/documentation/services/storage/">
+                                                <a href="https://docs.microsoft.com/azure/storage/">
                                                     <h3>Azure Storage</h3>
                                                     <p>Learn about Azure Storage, and how to create applications using Azure
                                                         blobs, tables, queues, and files.</p>
@@ -474,7 +475,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                                             <div class="cardText">
                                                 <a href="https://developer.xamarin.com/guides/xamarin-forms">
                                                     <h3>Xamarin.Forms</h3>
-                                                    <p>Create cross-platform mobile Uis using C# and F# with Xamarin.Forms.</p>
+                                                    <p>Create cross-platform mobile UIs using C# and F# with Xamarin.Forms.</p>
                                                 </a>
                                             </div>
                                         </div>

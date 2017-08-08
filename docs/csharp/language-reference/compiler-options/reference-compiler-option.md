@@ -1,5 +1,5 @@
 ---
-title: "-reference (C# Compiler Options) | Microsoft Docs"
+title: "-reference (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -78,7 +78,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
  The csc response (.rsp) file, which references commonly used .NET Framework assemblies, is used by default. Use [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) if you do not want the compiler to use csc.rsp.  
   
 > [!NOTE]
-> In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `/reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  
+> In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `/reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  
   
 ## Example  
  This example shows how to use the [extern alias](../../../csharp/language-reference/keywords/extern-alias.md) feature.  
@@ -109,4 +109,4 @@ GridV2::Grid
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

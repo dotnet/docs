@@ -1,5 +1,5 @@
 ---
-title: "ICLRStrongName::StrongNameKeyInstall Method | Microsoft Docs"
+title: "ICLRStrongName::StrongNameKeyInstall Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

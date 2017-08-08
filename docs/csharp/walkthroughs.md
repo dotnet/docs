@@ -1,5 +1,5 @@
 ---
-title: "C# Walkthroughs | Microsoft Docs"
+title: "C# Walkthroughs"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -84,13 +84,13 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Querying Across Relationships (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
  Demonstrates the use of [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] associations to represent foreign-key relationships in a database.  
 
- [Writing a Visualizer in C#](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
+ [Writing a Visualizer in C#](/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
  Shows how to write a simple visualizer by using C#.  
   
 ## Related Sections  
- [Deployment Samples and Walkthroughs](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
+ [Deployment Samples and Walkthroughs](/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
  Provides step-by-step examples of common deployment scenarios.  
   
 ## See Also  
  [C# Programming Guide](../csharp/programming-guide/index.md)   
- [Visual Studio Samples](https://docs.microsoft.com/visualstudio/ide/visual-studio-samples)
+ [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)

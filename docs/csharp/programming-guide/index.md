@@ -1,5 +1,5 @@
 ---
-title: "C# Programming Guide | Microsoft Docs"
+title: "C# Programming Guide"
 
 ms.date: "2017-05-02"
 ms.prod: .net
@@ -41,9 +41,9 @@ translation.priority.ht:
 # C# programming guide
 This section provides detailed information on key C# language features and features accessible to C# through the .NET Framework.  
   
- Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [C# Developer Center](http://go.microsoft.com/fwlink/?linkid=95125), where you can find many tutorials, samples and videos to help you get started.  
+ Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [Getting Started with C#](https://www.microsoft.com/net/tutorials/csharp/getting-started) interactive tutorial, where no prior programming knowledge is required.  
   
- For information about specific keywords, operators and preprocessor directives, see [C# Reference](../../csharp/language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](../../csharp/language-reference/language-specification.md).  
+ For information about specific keywords, operators and preprocessor directives, see [C# Reference](../../csharp/language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
   
 ## Program sections
 

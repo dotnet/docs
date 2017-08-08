@@ -1,5 +1,5 @@
 ---
-title: "IDebuggerThreadControl Interface | Microsoft Docs"
+title: "IDebuggerThreadControl Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -282,7 +282,7 @@ WorkflowInvoker.Invoke(activity1);
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.InOutArgument&lt;T&gt; op_Implicit (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.InOutArgument&lt;T&gt; (System.Activities.Activity&lt;System.Activities.Location&lt;T&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.InOutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Activity`1&lt;class System.Activities.Location`1&lt;!T&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.op_Implicit(System.Activities.Activity{System.Activities.Location{`0}})~System.Activities.InOutArgument{`0}" />
       <MemberType>Method</MemberType>
@@ -304,7 +304,7 @@ WorkflowInvoker.Invoke(activity1);
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.InOutArgument&lt;T&gt; op_Implicit (System.Activities.Variable&lt;T&gt; variable);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.InOutArgument&lt;T&gt; (System.Activities.Variable&lt;T&gt; variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.InOutArgument`1&lt;!T&gt; op_Implicit(class System.Activities.Variable`1&lt;!T&gt; variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.InOutArgument`1.op_Implicit(System.Activities.Variable{`0})~System.Activities.InOutArgument{`0}" />
       <MemberType>Method</MemberType>

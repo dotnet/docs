@@ -1,5 +1,5 @@
 ---
-title: "Custom Find Criteria | Microsoft Docs"
+title: "Custom Find Criteria"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

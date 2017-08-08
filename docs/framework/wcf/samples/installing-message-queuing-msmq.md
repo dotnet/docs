@@ -1,5 +1,5 @@
 ---
-title: "Installing Message Queuing (MSMQ) | Microsoft Docs"
+title: "Installing Message Queuing (MSMQ)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

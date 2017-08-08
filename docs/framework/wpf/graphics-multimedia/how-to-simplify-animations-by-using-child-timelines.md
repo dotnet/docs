@@ -1,5 +1,5 @@
 ---
-title: "How to: Simplify Animations by Using Child Timelines | Microsoft Docs"
+title: "How to: Simplify Animations by Using Child Timelines"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -29,7 +29,7 @@ This example shows how to simplify animations by using child              <xref:
  **Performance Note:** Although you can nest              <xref:System.Windows.Media.Animation.Storyboard> timelines inside each other,              <xref:System.Windows.Media.Animation.ParallelTimeline>s are more suitable for nesting because they require less overhead. (The              <xref:System.Windows.Media.Animation.Storyboard> class inherits from the              <xref:System.Windows.Media.Animation.ParallelTimeline> class.)  
   
 ## Example  
- [!code-xml[Timelines_snip#ParallelTimelineWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Timelines_snip/CS/ParallelTimelineExample.xaml#paralleltimelinewholepage)]  
+ [!code-xaml[Timelines_snip#ParallelTimelineWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Timelines_snip/CS/ParallelTimelineExample.xaml#paralleltimelinewholepage)]  
   
 ## See Also  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   

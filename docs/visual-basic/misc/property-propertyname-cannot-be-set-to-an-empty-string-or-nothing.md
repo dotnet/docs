@@ -1,5 +1,5 @@
 ---
-title: "Property &lt;propertyname&gt; cannot be set to an empty string or Nothing | Microsoft Docs"
+title: "Property &lt;propertyname&gt; cannot be set to an empty string or Nothing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

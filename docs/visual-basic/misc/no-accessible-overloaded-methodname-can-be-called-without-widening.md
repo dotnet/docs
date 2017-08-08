@@ -1,5 +1,5 @@
 ---
-title: "No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a widening conversion: &lt;list&gt; | Microsoft Docs"
+title: "No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a widening conversion: &lt;list&gt;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "4201 - EndSqlCommandExecute | Microsoft Docs"
+title: "4201 - EndSqlCommandExecute"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

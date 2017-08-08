@@ -2083,7 +2083,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Addition (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 operator + (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Addition(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Addition(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberType>Method</MemberType>
@@ -2125,7 +2125,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Equality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberType>Method</MemberType>
@@ -2168,7 +2168,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Inequality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberType>Method</MemberType>
@@ -2204,7 +2204,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Multiply (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 operator * (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Multiply(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberType>Method</MemberType>
@@ -2246,7 +2246,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Multiply (System.Numerics.Matrix4x4 value1, float value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 operator * (System.Numerics.Matrix4x4 value1, float value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Multiply(valuetype System.Numerics.Matrix4x4 value1, float32 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Single)" />
       <MemberType>Method</MemberType>
@@ -2288,7 +2288,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Subtraction (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 operator - (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Subtraction(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Subtraction(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
       <MemberType>Method</MemberType>
@@ -2330,7 +2330,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_UnaryNegation (System.Numerics.Matrix4x4 value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 operator - (System.Numerics.Matrix4x4 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_UnaryNegation(valuetype System.Numerics.Matrix4x4 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_UnaryNegation(System.Numerics.Matrix4x4)" />
       <MemberType>Method</MemberType>

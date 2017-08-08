@@ -1,5 +1,5 @@
 ---
-title: "LINQ and Strings (C#) | Microsoft Docs"
+title: "LINQ and Strings (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

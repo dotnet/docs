@@ -1,5 +1,5 @@
 ---
-title: "3381 - SequenceAcknowledgementSent | Microsoft Docs"
+title: "3381 - SequenceAcknowledgementSent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

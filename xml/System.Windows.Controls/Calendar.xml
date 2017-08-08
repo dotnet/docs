@@ -85,7 +85,7 @@ Calendar controls
   
  [!code-csharp[CalendarSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#1)]
  [!code-vb[CalendarSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#1)]
- [!code-xml[CalendarSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#1)]  
+ [!code-xaml[CalendarSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -152,7 +152,7 @@ Calendar controls
   
  [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
  [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ [!code-xaml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
   
  The preceding example produces output that is similar to the following illustration.  
   
@@ -414,7 +414,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
  [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ [!code-xaml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -452,7 +452,7 @@ Calendar with dates that cannot be selected
 ## Examples  
  The following event handler updates a <xref:System.Windows.Controls.TextBox> with information from the <xref:System.Windows.Controls.Calendar.DisplayDateChanged> event. This example is part of a larger example available in the <xref:System.Windows.Controls.Calendar> overview.  
   
- [!code-xml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
+ [!code-xaml[CalendarSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#6)]  
   
  ]]></format>
         </remarks>
@@ -506,7 +506,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
  [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ [!code-xaml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -594,7 +594,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
  [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ [!code-xaml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -659,7 +659,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
  [!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
- [!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
+ [!code-xaml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
   
  [!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
  [!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
@@ -701,7 +701,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#4)]
  [!code-vb[CalendarSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#4)]
- [!code-xml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
+ [!code-xaml[CalendarSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#4)]  
   
  [!code-csharp[CalendarSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#5)]
  [!code-vb[CalendarSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#5)]  
@@ -764,7 +764,7 @@ Calendar with dates that cannot be selected
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.Calendar.FirstDayOfWeek%2A> property to <xref:System.DayOfWeek.Monday>.  
   
- [!code-xml[CalendarSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#8)]  
+ [!code-xaml[CalendarSnippets#8](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#8)]  
   
  ]]></format>
         </remarks>
@@ -830,7 +830,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
  [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ [!code-xaml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
   
  ]]></format>
         </remarks>
@@ -1118,7 +1118,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#2)]
  [!code-vb[CalendarSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#2)]
- [!code-xml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
+ [!code-xaml[CalendarSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#2)]  
   
  ]]></format>
         </remarks>
@@ -1199,7 +1199,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
  [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ [!code-xaml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
   
  ]]></format>
         </remarks>
@@ -1295,7 +1295,7 @@ Calendar with dates that cannot be selected
   
  [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
  [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
- [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+ [!code-xaml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
   
  ]]></format>
         </remarks>

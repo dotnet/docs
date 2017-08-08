@@ -1,5 +1,5 @@
 ---
-title: "Internal error in the Microsoft Visual Basic runtime | Microsoft Docs"
+title: "Internal error in the Microsoft Visual Basic runtime"
 
 ms.date: "2015-07-20"
 ms.prod: .net

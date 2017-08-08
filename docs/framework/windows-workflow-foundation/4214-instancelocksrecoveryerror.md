@@ -1,5 +1,5 @@
 ---
-title: "4214 - InstanceLocksRecoveryError | Microsoft Docs"
+title: "4214 - InstanceLocksRecoveryError"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Interoperating with ASMX Web Services | Microsoft Docs"
+title: "Interoperating with ASMX Web Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

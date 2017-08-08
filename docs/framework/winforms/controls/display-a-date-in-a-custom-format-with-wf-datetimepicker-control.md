@@ -1,5 +1,5 @@
 ---
-title: "How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control | Microsoft Docs"
+title: "How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,7 +26,7 @@ The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you f
   
 ### To display a custom format  
   
-1.  Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to`DateTimePickerFormat.Custom`.  
+1.  Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to `DateTimePickerFormat.Custom`.  
   
 2.  Set the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to a format string.  
   

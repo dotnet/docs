@@ -1,5 +1,5 @@
 ---
-title: "Deprecated CLR Hosting Interfaces and Coclasses | Microsoft Docs"
+title: "Deprecated CLR Hosting Interfaces and Coclasses"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

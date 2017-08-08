@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugCode2::GetCompilerFlags Method | Microsoft Docs"
+title: "ICorDebugCode2::GetCompilerFlags Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "WCF Service Publishing | Microsoft Docs"
+title: "WCF Service Publishing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

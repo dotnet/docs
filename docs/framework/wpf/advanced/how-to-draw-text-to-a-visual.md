@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw Text to a Visual | Microsoft Docs"
+title: "How to: Draw Text to a Visual"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

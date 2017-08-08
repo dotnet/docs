@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a helper type that is used when configuring a <see cref="T:System.Composition.Convention.PartConventionBuilder`1" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used only in expressions; instances of this type are never created.
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Import&lt;T&gt;">
@@ -34,10 +41,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type to import.</typeparam>
+        <summary>Imports the specified type.</summary>
+        <returns>The imported instance.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Import&lt;T&gt;">
@@ -60,11 +68,12 @@
         <Parameter Name="configure" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="configure">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type to import.</typeparam>
+        <param name="configure">The configuration for the import.</param>
+        <summary>Imports the specified generic type by using the specified configuration.</summary>
+        <returns>The imported instance.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

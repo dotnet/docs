@@ -1,5 +1,5 @@
 ---
-title: "-target:module (C# Compiler Options) | Microsoft Docs"
+title: "-target:module (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

@@ -17,8 +17,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a property, field, or parameter value should be provided by the host container.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +34,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportAttribute" /> class, importing the export with the default contract name.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +53,10 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractName">The contract name of the export to import, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportAttribute" /> class, importing the export with the specified contract name.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowDefault">
@@ -70,9 +73,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether the property, field, or parameter will be set to its type's default value when an export with the contract name is not present in the container.</summary>
+        <value>
+          <see langword="true" /> if the property, field, or parameter will be set to its type's default value when there is no export with the contract name in the host container; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractName">
@@ -89,9 +94,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contract name of the export to import.</summary>
+        <value>The contract name of the export to import. The default is an empty string ("").</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,14 @@
 # [Welcome](welcome.md)
 
-<!-- Start of .NET Platform Guide -->
-# [.NET Platform Guide](standard/index.md)
+<!-- Start of .NET Guide -->
+# [.NET Guide](standard/index.md)
 ## [Get Started with .NET](standard/get-started.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Microservices: Architecture for Containerized .NET Applications](standard/microservices-architecture/)
 ## [.NET Architectural Components](standard/components.md)
 ## [.NET Standard](standard/net-standard.md)
-## [Frameworks and Targets](standard/frameworks.md)
+## [Target Frameworks](standard/frameworks.md)
+## [.NET Glossary](standard/glossary.md)
 ## [Choosing between .NET Core and .NET Framework for server apps](standard/choosing-core-framework-server.md)
 ## [What is "managed code"?](standard/managed-code.md)
 ### [Automatic Memory Management](standard/automatic-memory-management.md) 
@@ -47,8 +48,9 @@
 ## [Threading](standard/threading/)
 ## [Parallel Programming](standard/parallel-programming/)
 ## [Security](standard/security/)
+## [Serialization](standard/serialization/)
 ## [Developing for Multiple Platforms](standard/cross-platform/)
-<!-- End of .NET Platform Guide -->
+<!-- End of .NET Guide -->
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
@@ -57,6 +59,7 @@
 ## [macOS Prerequisites](core/macos-prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
+### [Get Started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)
 ### [Getting started with .NET Core on macOS](core/tutorials/using-on-macos.md)
 ### [Getting started with .NET Core on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs.md)
 ### [Building a complete .NET Core solution on macOS using Visual Studio for Mac](core/tutorials/using-on-mac-vs-full-solution.md)
@@ -89,6 +92,7 @@
 ### [.NET Core Support](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->
 ## [Runtime IDentifier catalog](core/rid-catalog.md)
+## [.NET Core SDK Overview](core/sdk.md)
 ## [.NET Core CLI Tools](core/tools/index.md)
 ### [Telemetry](core/tools/telemetry.md)
 ### [Extensibility Model](core/tools/extensibility.md)
@@ -124,6 +128,8 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
+## [Build .NET Core from source](core/build/index.md)
+### [.NET Core distribution packaging](core/build/distribution-packaging.md)
 ## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->
 
@@ -149,7 +155,6 @@
 ### [Windows Service Applications](framework/windows-services/)
 ### [64-bit Applications](framework/64-bit-apps.md)
 ### [Web Applications with ASP.NET](framework/develop-web-apps-with-aspnet.md)
-### [Serialization](framework/serialization/)
 ### [Network Programming in the .NET Framework](framework/network-programming/)
 ### [Configuring Apps](framework/configure-apps/)
 ### [Compiling Apps with .NET Native](framework/net-native/)
@@ -187,12 +192,14 @@
 ### [Classes](csharp/classes.md)
 ### [Structs](csharp/structs.md)
 ### [Tuples](csharp/tuples.md)
+### [Deconstructing tuples and other types](csharp/deconstruct.md)
 ### [Interfaces](csharp/programming-guide/interfaces/index.md)
 <!--### [🔧 Methods and Lambda Expressions](csharp/methods-lambda-expressions.md)-->
-#### [Methods](csharp/methods.md)
+### [Methods](csharp/methods.md)
 #### [Lambda Expressions](csharp/lambda-expressions.md)
 ### [Properties](csharp/properties.md)
 ### [Indexers](csharp/indexers.md)
+### [Discards](csharp/discards.md)
 ### [Generics](csharp/programming-guide/generics/index.md)
 ### [Iterators](csharp/iterators.md)
 ### [Delegates & events](csharp/delegates-events.md)
@@ -201,7 +208,7 @@
 #### [Strongly Typed Delegates](csharp/delegates-strongly-typed.md)
 #### [Common Patterns for Delegates](csharp/delegates-patterns.md)
 #### [Introduction to Events](csharp/events-overview.md)
-#### [The .NET Event Pattern](csharp/event-pattern.md)
+#### [Standard .NET event patterns](csharp/event-pattern.md)
 #### [The Updated .NET Event Pattern](csharp/modern-events.md)
 #### [Distinguishing Delegates and Events](csharp/distinguish-delegates-events.md)
 ### [Language Integrated Query (LINQ)](csharp/linq/)
@@ -231,14 +238,13 @@
 # [F# Guide](fsharp/index.md)
 
 ## [Tour of F#](fsharp/tour.md)
-
+## [Get Started](fsharp/get-started/index.md)
+### [Get Started with Visual Studio](fsharp/get-started/get-started-visual-studio.md)
+### [Get Started with Visual Studio for Mac](fsharp/get-started/get-started-with-visual-studio-for-mac.md)
+### [Get Started with Visual Studio Code and Ionide](fsharp/get-started/get-started-vscode.md)
+### [Get Started with with the .NET Core CLI](fsharp/get-started/get-started-command-line.md)
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
 ## Tutorials
-### [Get Started](fsharp/tutorials/getting-started/index.md)
-#### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
-#### [Get Started with Visual Studio for Mac](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
-#### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
-#### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)
@@ -1058,7 +1064,7 @@
 ##### [/win32resource](visual-basic/reference/command-line-compiler/win32resource.md)
 #### [Compiler Options Listed by Category](visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
 ### [.NET Framework Reference Information](visual-basic/reference/net-framework-reference-information.md)
-### [Language Specification](visual-basic/reference/language-specification.md)
+### [Language Specification](visual-basic/reference/language-specification/)
 ## [Sample Applications](visual-basic/sample-applications.md)
 ## [Walkthroughs](visual-basic/walkthroughs.md)
 

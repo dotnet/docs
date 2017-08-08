@@ -926,7 +926,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Version v1, Version v2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Version v1, Version v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Version v1, class System.Version v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.op_Equality(System.Version,System.Version)" />
       <MemberType>Method</MemberType>
@@ -966,7 +966,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (Version v1, Version v2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (Version v1, Version v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(class System.Version v1, class System.Version v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.op_GreaterThan(System.Version,System.Version)" />
       <MemberType>Method</MemberType>
@@ -1006,7 +1006,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (Version v1, Version v2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (Version v1, Version v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(class System.Version v1, class System.Version v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.op_GreaterThanOrEqual(System.Version,System.Version)" />
       <MemberType>Method</MemberType>
@@ -1046,7 +1046,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Version v1, Version v2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Version v1, Version v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Version v1, class System.Version v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.op_Inequality(System.Version,System.Version)" />
       <MemberType>Method</MemberType>
@@ -1086,7 +1086,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (Version v1, Version v2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (Version v1, Version v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(class System.Version v1, class System.Version v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.op_LessThan(System.Version,System.Version)" />
       <MemberType>Method</MemberType>
@@ -1128,7 +1128,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (Version v1, Version v2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (Version v1, Version v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(class System.Version v1, class System.Version v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Version.op_LessThanOrEqual(System.Version,System.Version)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Message Security User Name | Microsoft Docs"
+title: "Message Security User Name"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

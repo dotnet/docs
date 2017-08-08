@@ -1,5 +1,5 @@
 ---
-title: "Unable to read delimited fields because Delimiters is Nothing or empty | Microsoft Docs"
+title: "Unable to read delimited fields because Delimiters is Nothing or empty"
 
 ms.date: "2015-07-20"
 ms.prod: .net

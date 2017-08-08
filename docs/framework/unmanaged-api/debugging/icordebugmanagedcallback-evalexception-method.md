@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugManagedCallback::EvalException Method | Microsoft Docs"
+title: "ICorDebugManagedCallback::EvalException Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

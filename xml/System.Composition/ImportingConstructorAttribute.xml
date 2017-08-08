@@ -17,8 +17,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies which constructor should be used when creating an attributed part.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+By default, only a default parameter-less constructor, if available, is used to construct an attributed part. Use this attribute to indicate that a specific constructor should be used.
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +40,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportingConstructorAttribute" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

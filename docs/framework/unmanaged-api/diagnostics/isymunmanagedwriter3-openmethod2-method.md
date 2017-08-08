@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter3::OpenMethod2 Method | Microsoft Docs"
+title: "ISymUnmanagedWriter3::OpenMethod2 Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

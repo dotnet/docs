@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services) | Microsoft Docs"
+title: "How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"
@@ -25,7 +25,7 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind d
 ## Example  
  The following XAML defines the window of the WPF application.  
   
- [!code-xml[Astoria Northwind Client#WpfDataBindingAsyncXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerordersasync.xaml#wpfdatabindingasyncxaml)]  
+ [!code-xaml[Astoria Northwind Client#WpfDataBindingAsyncXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerordersasync.xaml#wpfdatabindingasyncxaml)]  
   
 ## Example  
  The following code-behind page for the XAML file executes an asynchronous query by using the data service and binds the results to elements in the WPF window.  

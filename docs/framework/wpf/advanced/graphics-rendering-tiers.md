@@ -1,5 +1,5 @@
 ---
-title: "Graphics Rendering Tiers | Microsoft Docs"
+title: "Graphics Rendering Tiers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

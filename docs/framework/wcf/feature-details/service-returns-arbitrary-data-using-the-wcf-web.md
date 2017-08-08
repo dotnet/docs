@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model | Microsoft Docs"
+title: "How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

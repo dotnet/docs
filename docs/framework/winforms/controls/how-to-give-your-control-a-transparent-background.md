@@ -1,5 +1,5 @@
 ---
-title: "How to: Give Your Control a Transparent Background | Microsoft Docs"
+title: "How to: Give Your Control a Transparent Background"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

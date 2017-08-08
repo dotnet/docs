@@ -1,5 +1,5 @@
 ---
-title: "WPF Host (PresentationHost.exe) | Microsoft Docs"
+title: "WPF Host (PresentationHost.exe)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

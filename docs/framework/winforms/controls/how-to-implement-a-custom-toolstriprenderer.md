@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement a Custom ToolStripRenderer | Microsoft Docs"
+title: "How to: Implement a Custom ToolStripRenderer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

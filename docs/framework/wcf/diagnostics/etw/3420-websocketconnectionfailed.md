@@ -1,5 +1,5 @@
 ---
-title: "3420 - WebSocketConnectionFailed | Microsoft Docs"
+title: "3420 - WebSocketConnectionFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

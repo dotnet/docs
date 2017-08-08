@@ -12,11 +12,6 @@
     <BaseTypeName>System.Threading.Tasks.Dataflow.DataflowBlockOptions</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("TaskScheduler = {TaskScheduler}, MaxMessagesPerTask = {MaxMessagesPerTask}, BoundedCapacity = {BoundedCapacity}, MaxDegreeOfParallelism = {MaxDegreeOfParallelism}")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Provides options used to configure the processing performed by dataflow blocks that process each message through the invocation of a user-provided delegate. These are dataflow blocks such as  <see cref="T:System.Threading.Tasks.Dataflow.ActionBlock`1" /> and  <see cref="T:System.Threading.Tasks.Dataflow.TransformBlock`2" />.</summary>
     <remarks>

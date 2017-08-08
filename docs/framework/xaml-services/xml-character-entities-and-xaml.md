@@ -1,5 +1,5 @@
 ---
-title: "XML Character Entities and XAML | Microsoft Docs"
+title: "XML Character Entities and XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

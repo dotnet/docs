@@ -1,5 +1,5 @@
 ---
-title: "Transaction Convoy Scope | Microsoft Docs"
+title: "Transaction Convoy Scope"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

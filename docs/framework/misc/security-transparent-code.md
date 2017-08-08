@@ -1,5 +1,5 @@
 ---
-title: "Security-Transparent Code | Microsoft Docs"
+title: "Security-Transparent Code"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Object doesn&#39;t support this property or method (Visual Basic) | Microsoft Docs"
+title: "Object doesn&#39;t support this property or method (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

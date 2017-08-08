@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Custom Binding Using the SecurityBindingElement | Microsoft Docs"
+title: "How to: Create a Custom Binding Using the SecurityBindingElement"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

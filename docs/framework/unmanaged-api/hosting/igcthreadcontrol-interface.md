@@ -1,5 +1,5 @@
 ---
-title: "IGCThreadControl Interface | Microsoft Docs"
+title: "IGCThreadControl Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

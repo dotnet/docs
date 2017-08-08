@@ -1,5 +1,5 @@
 ---
-title: "&lt;httpListener&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;httpListener&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -125,7 +125,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
  The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property can be used to get the current value of the **unescapeRequestUrl** attribute from applicable configuration files.  
   
 ## Example  
- The following code example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
+ The following example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
   
 ```xml  
 <configuration>  

@@ -1,5 +1,5 @@
 ---
-title: "IfElse With Rules | Microsoft Docs"
+title: "IfElse With Rules"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

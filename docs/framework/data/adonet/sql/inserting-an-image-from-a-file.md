@@ -1,5 +1,5 @@
 ---
-title: "Inserting an Image from a File | Microsoft Docs"
+title: "Inserting an Image from a File"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

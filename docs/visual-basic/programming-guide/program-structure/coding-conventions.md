@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Coding Conventions | Microsoft Docs"
+title: "Visual Basic Coding Conventions"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -58,7 +58,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 -   Insert tabs as spaces, and use smart indenting with four-space indents.  
   
--   Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
+-   Use **Pretty listing (reformatting) of code** to reformat your code in the code editor. For more information, see [Options, Text Editor, Basic (Visual Basic)](/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
   
 -   Use only one statement per line. Don't use the Visual Basic line separator character (:).  
   

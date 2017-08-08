@@ -1,5 +1,5 @@
 ---
-title: "ICoreClrDebugTarget::FreeMemory Method | Microsoft Docs"
+title: "ICoreClrDebugTarget::FreeMemory Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

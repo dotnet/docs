@@ -1,5 +1,5 @@
 ---
-title: "Modifying Data with Stored Procedures | Microsoft Docs"
+title: "Modifying Data with Stored Procedures"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

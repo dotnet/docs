@@ -1,5 +1,5 @@
 ---
-title: "AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure | Microsoft Docs"
+title: "AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Indexers in Interfaces (C# Programming Guide) | Microsoft Docs"
+title: "Indexers in Interfaces (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

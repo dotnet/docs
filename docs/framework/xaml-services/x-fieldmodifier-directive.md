@@ -1,5 +1,5 @@
 ---
-title: "x:FieldModifier Directive | Microsoft Docs"
+title: "x:FieldModifier Directive"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

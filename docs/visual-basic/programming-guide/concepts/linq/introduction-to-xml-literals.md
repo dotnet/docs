@@ -1,5 +1,5 @@
 ---
-title: "Introduction to XML Literals in Visual Basic2 | Microsoft Docs"
+title: "Introduction to XML Literals in Visual Basic2"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

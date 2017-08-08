@@ -1,5 +1,5 @@
 ---
-title: "Events and Callbacks | Microsoft Docs"
+title: "Events and Callbacks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

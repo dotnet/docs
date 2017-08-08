@@ -470,7 +470,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (System.Management.ManagementBaseObject managementObject);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (System.Management.ManagementBaseObject managementObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(class System.Management.ManagementBaseObject managementObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.op_Explicit(System.Management.ManagementBaseObject)~System.IntPtr" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Expression Trees (C#) | Microsoft Docs"
+title: "Expression Trees (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

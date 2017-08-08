@@ -1,10 +1,10 @@
 ---
-title: .NET Core migration to the csproj format | Microsoft Docs
+title: .NET Core migration to the csproj format
 description: .NET Core project.json to csproj migration
 keywords: .NET, .NET Core, .NET Core migration
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/13/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -34,7 +34,7 @@ If you open a solution file, all the projects specified in the solution file wil
 
 ![One-way upgrade dialog showing the list of projects to be migrated](media/one-way-upgrade.jpg)
 
-Visual Studio will migrate the projects chosen automatically. When migrating a solution, if you don't choose all projects, the same dialog will appear asking you to upgrade the remaining projects from that solution.
+Visual Studio will migrate the projects chosen automatically. When migrating a solution, if you don't choose all projects, the same dialog will appear asking you to upgrade the remaining projects from that solution. After the project is migrated, you can see and modify its contents by right-clicking the project in the **Solution Explorer** window and selecting **Edit \<project name>.csproj**.
 
 Files that were migrated (*project.json*, *global.json*, *.xproj* and solution file) will be moved to a *Backup* folder. The solution file that is migrated will be upgraded to Visual Studio 2017 and you won't be able to open that solution file in previous versions of Visual Studio. 
 A file named *UpgradeLog.htm* is also saved and automatically opened that contains a migration report.
@@ -85,3 +85,6 @@ The .NET Core csproj format has been changing and evolving with each new pre-rel
 After these steps your project should be fully compatible with the RTM .NET Core csproj format. 
 
 For examples of before and after the migration from old csproj format to the new one, see the [Updating Visual Studio 2017 RC – .NET Core Tooling improvements](https://blogs.msdn.microsoft.com/dotnet/2016/12/12/updating-visual-studio-2017-rc-net-core-tooling-improvements/) article on the .NET blog.
+
+## See also
+[Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)

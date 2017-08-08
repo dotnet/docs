@@ -1,5 +1,5 @@
 ---
-title: "How to: Delete or Hide Columns in the Windows Forms DataGrid Control | Microsoft Docs"
+title: "How to: Delete or Hide Columns in the Windows Forms DataGrid Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -90,7 +90,7 @@ manager: "wpickett"
   
 3.  Add the new <xref:System.Windows.Forms.DataGridTableStyle> object to the datagrid's table styles collection.  
   
-4.  Hide the column by setting its`Width` property to 0, specifying the column index of the column to hide.  
+4.  Hide the column by setting its `Width` property to 0, specifying the column index of the column to hide.  
   
     ```vb  
     ' Declare a new DataGridTableStyle in the  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use ForEach to Remove Items in a BlockingCollection | Microsoft Docs"
+title: "How to: Use ForEach to Remove Items in a BlockingCollection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

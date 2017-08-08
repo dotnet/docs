@@ -1,5 +1,5 @@
 ---
-title: "Accessing OperationContext | Microsoft Docs"
+title: "Accessing OperationContext"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

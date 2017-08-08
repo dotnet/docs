@@ -1,5 +1,5 @@
 ---
-title: "Invalid pattern string | Microsoft Docs"
+title: "Invalid pattern string"
 
 ms.date: "2015-07-20"
 ms.prod: .net

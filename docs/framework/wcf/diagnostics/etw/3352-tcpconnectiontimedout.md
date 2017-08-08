@@ -1,5 +1,5 @@
 ---
-title: "3352 - TcpConnectionTimedOut | Microsoft Docs"
+title: "3352 - TcpConnectionTimedOut"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

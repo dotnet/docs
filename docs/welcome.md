@@ -1,10 +1,10 @@
 ---
-title: Welcome to .NET | Microsoft Docs
+title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 keywords: .NET, .NET Core, getting started, news
 author: richlander
 ms.author: mairaw
-ms.date: 05/11/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: .net
 ms.devlang: dotnet
@@ -20,8 +20,8 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 ## News
 
 - [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
-- [Announcing .NET Core 2.0 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2017/05/10/announcing-net-core-2-0-preview-1/)
-- [Announcing ASP.NET 2.0 Preview 1 and Updates for .NET Web Developers](https://blogs.msdn.microsoft.com/webdev/2017/05/10/aspnet-2-preview-1/)
+- [Announcing .NET Core 2.0 Preview 2](https://blogs.msdn.microsoft.com/dotnet/2017/06/28/announcing-net-core-2-0-preview-2/)
+- [Introducing ASP.NET Core 2.0 Preview 2](https://blogs.msdn.microsoft.com/webdev/2017/06/28/introducing-asp-net-core-2-0-preview-2/)
 - [A fresh update to Visual Studio 2017 and the next preview](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/update-to-visual-studio-2017-and-next-preview/)
 - [Visual Studio for Mac: now generally available](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/visual-studio-for-mac-now-generally-available/)
 - [Announcing .NET Core Tools 1.0 (.NET Core 1.0.4, .NET Core 1.1.1, .NET Core SDK 1.0.1)](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)
@@ -45,7 +45,7 @@ This documentation covers the breadth of .NET across platforms and languages.  Y
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
 
-Additionally, you can browse the [.NET API reference](https://docs.microsoft.com/dotnet/api).
+Additionally, you can browse the [.NET API reference](/dotnet/api).
 
 ## Open source
 

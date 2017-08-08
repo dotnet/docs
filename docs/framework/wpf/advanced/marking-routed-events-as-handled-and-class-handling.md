@@ -1,5 +1,5 @@
 ---
-title: "Marking Routed Events as Handled, and Class Handling | Microsoft Docs"
+title: "Marking Routed Events as Handled, and Class Handling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

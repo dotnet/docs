@@ -1,5 +1,5 @@
 ---
-title: Implementing an event bus with RabbitMQ for the development or test environment | Microsoft Docs 
+title: Implementing an event bus with RabbitMQ for the development or test environment
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing an event bus with RabbitMQ for the development or test environment
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -86,7 +86,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
             channel.QueueBind(queue: _queueName,
                 exchange: _brokerName,
                 routingKey: eventName);
-            _handlers.Add(eventName, new List<;IIntegrationEventHandler>());
+            _handlers.Add(eventName, new List<IIntegrationEventHandler>());
             _handlers[eventName].Add(handler);
             _eventTypes.Add(typeof(T));
         }

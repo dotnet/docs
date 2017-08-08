@@ -64,7 +64,7 @@ public class Circle : Shape
       Radius = radius;
    } 
 
-   public override double Area => Math.Round(Math.Pi * Radius * Radius, 2); 
+   public override double Area => Math.Round(Math.PI * Radius * Radius, 2); 
 
    public override double Perimeter => Math.Round(Math.PI * 2 * Radius, 2); 
 

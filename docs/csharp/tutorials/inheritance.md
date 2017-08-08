@@ -119,13 +119,13 @@ To see what implicit inheritance means, let's define a new class, `SimpleClass`,
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#1)]
 
-We can then use reflection (which lets us inspect a type's metadata to get information about that type) to get a list of the members that belong to the `SimpleClass` type. Although we haven't defined any members in our `SimpleClass` class, output from the example indicates that it actually has nine members. One of these is a parameterless (or default) constructor that is automatically supplied for the `SimpleClass` type by the C# compiler. The eight seven are members of @System.Object, the type from which all classes and interfaces in the .NET type system ultimately implicitly inherit.
+We can then use reflection (which lets us inspect a type's metadata to get information about that type) to get a list of the members that belong to the `SimpleClass` type. Although we haven't defined any members in our `SimpleClass` class, output from the example indicates that it actually has nine members. One of these is a parameterless (or default) constructor that is automatically supplied for the `SimpleClass` type by the C# compiler. The remaining eight are members of @System.Object, the type from which all classes and interfaces in the .NET type system ultimately implicitly inherit.
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#2)]
 
 Implicit inheritance from the @System.Object class makes these methods available to the `SimpleClass` class:
 
-- The public `ToString` method, which converts a `SimpleClass` object to its string representation, the fully qualified type name. In this case, the `ToString` method returns the string "SimpleClass".
+- The public `ToString` method, which converts a `SimpleClass` object to its string representation, returns the fully qualified type name. In this case, the `ToString` method returns the string "SimpleClass".
 
 - Three methods that test for equality of two objects: the public instance `Equals(Object)` method, the public static `Equals(Object, Object)` method, and the public static `ReferenceEquals(Object, Object)` method. By default, these methods test for reference equality; that is, to be equal, two object variables must refer to the same object.
 

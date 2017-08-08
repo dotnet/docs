@@ -69,11 +69,11 @@ Preview releases differ only slightly:
 | SDK       | .NET Core 2.0 Preview 1 SDK (x64) Installer     | .NET Core 2.0.0 Preview 1 SDK     | .NET Core 2.0.0 Preview 1 Tools + .NET Core 2.0.0 Preview 1 Runtime |
 | Runtime   | .NET Core 2.0 Preview 1 Runtime (x64) Installer | .NET Core 2.0.0 Preview 1 Runtime | .NET Core 2.0.0 Preview 1 Runtime                                   |
 
-It may happen that an SDK release contains more than one version of the runtime. When that happens, the installer UX looks like the following (only the SDK is shown since the Runtime is irrelevant):
+It may happen that an SDK release contains more than one version of the runtime. When that happens, the installer UX looks like the following (only the SDK version is shown and the installed Runtime versions are shown on a summary page at the end of the installation process on Windows and Mac):
 
 | Installer | Window Title                      | Other content in installer                                   | What is installed                                                         |
 | :--       | :--                               | :--                                                          | :--                                                                       |
-| SDK       | .NET Core 2.1 SDK (x64) Installer | .NET Core 2.1.1 SDK and Runtime <br> .NET Core 2.0.6 Runtime | .NET Core 2.1.1 Tools + .NET Core 2.1.1 Runtime + .NET Core 2.0.6 Runtime |
+| SDK       | .NET Core 2.1 SDK (x64) Installer | .NET Core 2.1.1 SDK <br> .NET Core 2.1.1 Runtime <br> .NET Core 2.0.6 Runtime | .NET Core 2.1.1 Tools + .NET Core 2.1.1 Runtime + .NET Core 2.0.6 Runtime |
 
 It's also possible that .NET Core Tools need to be updated, without runtime changes. In that case, the SDK version is increased (for example, to 2.1.2) and then the Runtime catches up the next time it ships (for example, both the Runtime and SDK ship the next time as 2.1.3).
 

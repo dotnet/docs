@@ -26,13 +26,6 @@ Objects are valid only in the application domain where they are created. Any att
  
 When an object derives from `MarshalByRefObject`, an object reference is passed from one application domain to another, rather than the object itself. You can also mark an object that derives from `MarshalByRefObject` as `Serializable`. When this object is used with remoting, the formatter responsible for serialization, which has been preconfigured with a surrogate selector (`SurrogateSelector`), takes control of the serialization process, and replaces all objects derived from `MarshalByRefObject` with a proxy. Without the `SurrogateSelector` in place, the serialization architecture follows the standard serialization rules described in [Steps in the Serialization Process](steps-in-the-serialization-process.md).  
 
-## In this section  
- [Persistent Storage](../../../docs/standard/serialization/persistent-storage.md)  
- Describes the need for serializing an object.  
-  
- [Marshal by Value](../../../docs/standard/serialization/marshal-by-value.md)  
- Describes the marshal-by-value process.  
-  
 ## Related sections  
  [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
  Describes the binary serialization mechanism that is included with the common language runtime.  

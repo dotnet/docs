@@ -1,5 +1,5 @@
 ---
-title: .NET Core
+title: .NET Core Guide
 description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
 keywords: .NET, .NET Core
 author: richlander
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 ---
 
-# .NET Core
+# .NET Core Guide
 
 > Check out the ["Getting Started" tutorials](get-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 

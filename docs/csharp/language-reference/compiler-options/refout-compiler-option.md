@@ -19,24 +19,24 @@ ms.author: "wiwagn"
 
 # /refout (C# Compiler Options)
 
-The **/refout** option specifies a file path where the ref assembly should be output. This translates to `metadataPeStream` in the Emit API. T
+The **/refout** option specifies a file path where the ref assembly should be output. This translates to `metadataPeStream` in the Emit API.
 
 ## Syntax
 
 ```console
-/refout:filename
+/refout:filepath
 ```
 
 ## Arguments
 
- `filename`
-The filename for the ref assembly. It should generally match that of the primary assembly. The recommended convention (used by MSBuild) is to place the ref assembly in a "ref/" sub-folder relative to the primary assembly.
+ `filepath`
+The filepath for the ref assembly. It should generally match that of the primary assembly. The recommended convention (used by MSBuild) is to place the ref assembly in a "ref/" sub-folder relative to the primary assembly.
 
 ## Remarks
 
 Metadata-only assembly have their method bodies replaced with a single `throw null` body, but include all members except anonymous types. The reason for using `throw null` bodies (as opposed to no bodies) is so that PEVerify could run and pass (thus validating the completeness of the metadata).
 
-Ref assemblies include an assembly-level `ReferenceAssembly` attribute. This attribute may be specified in source (then we won't need to synthesize it). Because of this attribute, runtimes will refuse to load ref assemblies for execution (but they can still be loaded in reflection-only mode). Some tools may be affected and will need to be updated (for example, `sgen.exe`).
+Ref assemblies include an assembly-level `ReferenceAssembly` attribute. This attribute may be specified in source (then we won't need to synthesize it). Because of this attribute, runtimes will refuse to load ref assemblies for execution (but they can still be loaded in reflection-only mode). Tools that reflect on assemblies need to ensure they load ref assemblies as reflection-only, otherwise they will receive a typeload error from the runtime.
 
 Ref assemblies further remove metadata (private members) from metadata-only assemblies:
 

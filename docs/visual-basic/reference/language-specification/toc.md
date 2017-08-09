@@ -1,7 +1,7 @@
 # [Visual Basic Language Specification](index.md)
 ## [Introduction](../../../../_vblang/spec/introduction.md)
 ## [Lexical Grammar](../../../../_vblang/spec/lexical-grammar.md)
-## [Preprocessing Directives](../../../../_vblang/spec/preprocessing-directives.md
+## [Preprocessing Directives](../../../../_vblang/spec/preprocessing-directives.md)
 ## [General Concepts](../../../../_vblang/spec/general-concepts.md)
 ## [Attributes](../../../../_vblang/spec/attributes.md)
 ## [Source Files and Namespaces](../../../../_vblang/spec/source-files-and-namespaces.md)

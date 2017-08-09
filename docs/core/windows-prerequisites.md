@@ -76,8 +76,9 @@ See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/rel
 > [!NOTE]
 > <em>For Windows 7 and Windows Server 2008 machines only:</em><br>
 > Make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/help/2533623) installed through Windows Update.
+---
 
-# Developing .NET Core Applications in Visual Studio 2017
+## Developing .NET Core Applications in Visual Studio 2017
 
 You can use any editor to develop .NET Core applications using the .NET Core SDK.  [Visual Studio 2017](#visual-studio-2017) provides an integrated development environment for .NET Core apps on Windows.
 
@@ -132,5 +133,5 @@ To develop .NET Core 2.0 apps in Visual Studio 2017:
   * In the **Target framework** selection menu, set the value to **.NET Core 2.0**.
 
 ![Screenshot of Visual Studio 2017 Application Project Property with the ".NET Core 2.0" Target framework menu item selected](./media/windows-prerequisites/Targeting-dotnetCore2.png)
-
+---
 

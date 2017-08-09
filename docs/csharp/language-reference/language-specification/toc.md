@@ -16,4 +16,4 @@
 ## [Exceptions](../../../../_csharplang/spec/exceptions.md)
 ## [Attributes](../../../../_csharplang/spec/attributes.md)
 ## [Unsafe code](../../../../_csharplang/spec/unsafe-code.md)
-## [Documentation comments](../../../../_csharplang/spec/documentation-comments.md
+## [Documentation comments](../../../../_csharplang/spec/documentation-comments.md)

@@ -12,10 +12,7 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
 ---
-
 # Inheritance in C# and .NET
-
-## Introduction
 
 This tutorial introduces you to inheritance in C#. Inheritance is a feature of object-oriented programming languages that allows you to define a base class that provides specific functionality (data and behavior) and to define derived classes that either inherit or override that functionality.
 
@@ -116,13 +113,13 @@ To see what implicit inheritance means, let's define a new class, `SimpleClass`,
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#1)]
 
-We can then use reflection (which lets us inspect a type's metadata to get information about that type) to get a list of the members that belong to the `SimpleClass` type. Although we haven't defined any members in our `SimpleClass` class, output from the example indicates that it actually has nine members. One of these is a parameterless (or default) constructor that is automatically supplied for the `SimpleClass` type by the C# compiler. The eight seven are members of <xref:System.Object>, the type from which all classes and interfaces in the .NET type system ultimately implicitly inherit.
+We can then use reflection (which lets us inspect a type's metadata to get information about that type) to get a list of the members that belong to the `SimpleClass` type. Although we haven't defined any members in our `SimpleClass` class, output from the example indicates that it actually has nine members. One of these is a parameterless (or default) constructor that is automatically supplied for the `SimpleClass` type by the C# compiler. The remaining eight are members of <xref:System.Object>, the type from which all classes and interfaces in the .NET type system ultimately implicitly inherit.
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#2)]
 
 Implicit inheritance from the <xref:System.Object> class makes these methods available to the `SimpleClass` class:
 
-- The public `ToString` method, which converts a `SimpleClass` object to its string representation, the fully qualified type name. In this case, the `ToString` method returns the string "SimpleClass".
+- The public `ToString` method, which converts a `SimpleClass` object to its string representation, returns the fully qualified type name. In this case, the `ToString` method returns the string "SimpleClass".
 
 - Three methods that test for equality of two objects: the public instance `Equals(Object)` method, the public static `Equals(Object, Object)` method, and the public static `ReferenceEquals(Object, Object)` method. By default, these methods test for reference equality; that is, to be equal, two object variables must refer to the same object.
 
@@ -154,7 +151,7 @@ Ordinarily, inheritance is used to express an "is a" relationship between a base
 > [!NOTE]
 > A class or struct can implement one more interfaces. While interface implementation is often presented as a workaround for single inheritance or as a way of using inheritance with structs, it is intended to express a different relationship (a "can do" relationship) between an interface and its implementing type than inheritance. An interface defines a subset of functionality (such as the ability to test for equality, to compare or sort objects, or to support culture-sensitive parsing and formatting) that the interface makes available to its implementing types.
 
-Note that "is a" also expresses the relationship between a type and a specific instantiation of that type. In the following example, `Automobile` is a class that has three unique read-only properties: `Moke`, the manufacturer of the automobile; `Model`, the kind of automobile; and `Year`, its year of manufacture. Our `Automobile` class also has a constructor whose arguments are assigned to the property values, and it overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method to produce a string that uniquely identifies the `Automobile` instance rather than the `Automobile` class.
+Note that "is a" also expresses the relationship between a type and a specific instantiation of that type. In the following example, `Automobile` is a class that has three unique read-only properties: `Make`, the manufacturer of the automobile; `Model`, the kind of automobile; and `Year`, its year of manufacture. Our `Automobile` class also has a constructor whose arguments are assigned to the property values, and it overrides the <xref:System.Object.ToString%2A?displayProperty=fullName> method to produce a string that uniquely identifies the `Automobile` instance rather than the `Automobile` class.
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#1)]
 

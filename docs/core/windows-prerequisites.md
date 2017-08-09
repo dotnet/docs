@@ -4,7 +4,7 @@ description: Learn what dependencies you need on your Windows machine to develop
 keywords: .NET Core, Windows, prerequisites, dependencies, Visual Studio
 author: mairaw
 ms.author: mairaw
-ms.date: 06/26/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -77,7 +77,7 @@ See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/rel
 > <em>For Windows 7 and Windows Server 2008 machines only:</em><br>
 > Make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/help/2533623) installed through Windows Update.
 
-## Developing .NET Core Applications in Visual Studio 2017
+# Developing .NET Core Applications in Visual Studio 2017
 
 You can use any editor to develop .NET Core applications using the .NET Core SDK.  [Visual Studio 2017](#visual-studio-2017) provides an integrated development environment for .NET Core apps on Windows.
 

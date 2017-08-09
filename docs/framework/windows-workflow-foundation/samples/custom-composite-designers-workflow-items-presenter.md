@@ -39,9 +39,9 @@ The <xref:System.Activities.Presentation.WorkflowItemsPresenter?displayProperty=
   
     -   Note the use of WPF data binding to bind to `ModelItem.Branches`. `ModelItem` is the property on `WorkflowElementDesigner` that refers to the underlying object the designer is being used for, in this case, our `Parallel`.  
   
-    -   The <xref:System.Activities.Design.WorkflowItemsPresenter.SpacerTemplate?displayProperty=fullName> can be used to put a visual to display between the individual items in the collection.  
+    -   The <xref:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate?displayProperty=fullName> can be used to put a visual to display between the individual items in the collection.  
   
-    -   <xref:System.Activities.Design.WorkflowItemsPresenter.ItemsPanel?displayProperty=fullName> is a template that can be provided to determine the layout of the items in the collection. In this case, a horizontal stack panel is used.  
+    -   <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=fullName> is a template that can be provided to determine the layout of the items in the collection. In this case, a horizontal stack panel is used.  
   
  This following example code shows this.  
   

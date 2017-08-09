@@ -180,7 +180,7 @@ echo "Hello World"
 ```
 
 On macOS, we can save this script as `dotnet-hello` and set its executable bit with `chmod +x dotnet-hello`. We can then
-create a symbolic link to it in `/usr/local/bin` using the command `ln -s dotnet-hello /usr/local/bin/`. This will make
+create a symbolic link to it in `/usr/local/bin` using the command `ln -s <full_path>/dotnet-hello /usr/local/bin/`. This will make
 it possible to invoke the command using the `dotnet hello` syntax.
 
 On Windows, we can save this script as `dotnet-hello.cmd` and put it in a location that is in a system path (or you can

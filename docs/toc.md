@@ -182,6 +182,7 @@
 ## [What's new in C#](csharp/whats-new/index.md) 
 ### [What's new in C# 7](csharp/whats-new/csharp-7.md)
 ### [What's new in C# 6](csharp/whats-new/csharp-6.md)
+### [C# Version History](csharp/whats-new/csharp-version-history.md)
 <!-- End What's New -->
 <!--## [🔧 C# Interactive](csharp/interactive/)-->
 <!-- Do this section later, once master redirects are in place -->

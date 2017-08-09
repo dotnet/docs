@@ -243,6 +243,6 @@ Every time a new major version of .NET Core ships, the `MAJOR` version number ge
 The various metapackages are updated to reference the updated .NET Core library packages. The [`Microsoft.NETCore.App`](https://www.nuget.org/packages/Microsoft.NETCore.App) metapackage and the `netcore` target framework are versioned as a major update matching the `MAJOR` version number of the new release.
 
 ## See also
-[Target frameworks](../../standard/frameworks.md)
-[.NET Core distribution packaging](../build/distribution-packaging.md)
-[.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)
+[Target frameworks](../../standard/frameworks.md)   
+[.NET Core distribution packaging](../build/distribution-packaging.md)   
+[.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)   

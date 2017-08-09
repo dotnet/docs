@@ -112,6 +112,6 @@ public class Example
 //            Is Square: False, Diagonal: 15.62
 //         Square: area, 25; perimeter, 20
 //            Diagonal: 7.07
-//         Circle: area, 88.83; perimeter, 18.85
+//         Circle: area, 28.27; perimeter, 18.85
 // </Snippet3>
 } // Namespace definition.

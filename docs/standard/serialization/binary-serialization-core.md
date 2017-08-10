@@ -1,7 +1,7 @@
 ---
 title: "Binary serialization in .NET Core"
 description: Learn which types support binary seralization in .NET Core.
-ms.date: "10/08/2017"
+ms.date: "08/10/2017"
 ms.prod: ".net"
 ms.topic: "article"
 helpviewer_keywords: 
@@ -16,7 +16,6 @@ ms.author: "mairaw"
 
 ## Serializable types
 
-- <xref:System.AdjustmentRule?displayProperty=fullName>   
 - <xref:System.AggregateException?displayProperty=fullName>   
 - <xref:System.Array?displayProperty=fullName>   
 - <xref:System.ArraySegment%601?displayProperty=fullName>   
@@ -28,8 +27,6 @@ ms.author: "mairaw"
 - <xref:System.Collections.BitArray?displayProperty=fullName>   
 - <xref:System.Collections.Comparer?displayProperty=fullName>   
 - <xref:System.Collections.DictionaryEntry?displayProperty=fullName>   
-- <xref:System.Collections.DictionaryNode?displayProperty=fullName>   
-- <xref:System.Collections.Generic.ByteEqualityComparer?displayProperty=fullName>   
 - <xref:System.Collections.Generic.Comparer%601?displayProperty=fullName>   
 - <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>   
 - <xref:System.Collections.Generic.EqualityComparer%601?displayProperty=fullName>   
@@ -94,7 +91,6 @@ ms.author: "mairaw"
 - <xref:System.Net.Cookie?displayProperty=fullName>   
 - <xref:System.Net.CookieCollection?displayProperty=fullName>   
 - <xref:System.Net.CookieContainer?displayProperty=fullName>   
-- <xref:System.Net.PathList?displayProperty=fullName>   
 - <xref:System.Nullable%601?displayProperty=fullName>   
 - <xref:System.Numerics.BigInteger?displayProperty=fullName>   
 - <xref:System.Numerics.Complex?displayProperty=fullName>   
@@ -106,6 +102,7 @@ ms.author: "mairaw"
 - <xref:System.Text.StringBuilder?displayProperty=fullName>   
 - <xref:System.TimeSpan?displayProperty=fullName>   
 - <xref:System.TimeZoneInfo?displayProperty=fullName>   
+- <xref:System.TimeZoneInfo.AdjustmentRule?displayProperty=fullName>   
 - <xref:System.Tuple?displayProperty=fullName>   
 - <xref:System.UInt16?displayProperty=fullName>   
 - <xref:System.UInt32?displayProperty=fullName>   

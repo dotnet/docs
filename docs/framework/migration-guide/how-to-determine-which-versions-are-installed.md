@@ -1,13 +1,9 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed | Microsoft Docs"
-ms.custom: ""
-ms.date: "04/07/2017"
+ms.date: "08/09/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"
@@ -160,6 +156,8 @@ Users can install and run multiple versions of the .NET Framework on their compu
     Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 } 
     ```
 
+    You can replace `394802` in the previous example with another value from the following table to check for a different minimum-required .NET Framework version.
+  
     |Version|Minimum value of the Release DWORD|
     |-------------|--------------------------------|
     |.NET Framework 4.5|378389|
@@ -169,8 +167,6 @@ Users can install and run multiple versions of the .NET Framework on their compu
     |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|394254|
     |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
     |.NET Framework 4.7|460798|
-
-     You can substitute another value listed in the table to check for a different minimum-required .NET Framework version.
 
 <a name="clr_a"></a> 
 #### To find the current runtime version by using the Clrver tool

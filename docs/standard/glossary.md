@@ -193,9 +193,9 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 ## package
 
-For a package-based target framework, a NuGet package that contains an assembly of the same name.
+A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more asemblies of the same name along with additional metadata such as the author name.
 
-The package is a *.zip* file wih  a *.nupkg* extension that may contain assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

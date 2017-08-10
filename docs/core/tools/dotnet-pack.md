@@ -61,7 +61,7 @@ Includes the source files in the NuGet package. The sources files are included i
 
 `-c|--configuration {Debug|Release}`
 
-Configuration to use when building the project. If not specified, configuration defaults to `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `--version-suffix <VERSION_SUFFIX>`
 

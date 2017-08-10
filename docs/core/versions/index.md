@@ -1,16 +1,14 @@
 ---
 title: .NET Core versioning
 description:  Understand how .NET Core versioning works.
-keywords: .NET,.NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 08/09/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 ---
-
 # .NET Core versioning
 
 .NET Core is made of [NuGet packages](../packages.md), tools, and frameworks that are distributed as a unit. Each of these platform layers can be versioned separately, enabling better agility. While there is significant versioning flexibility in that regard, there's also a desire to version the platform as a unit to make the product easier to understand.
@@ -246,3 +244,4 @@ The various metapackages are updated to reference the updated .NET Core library 
 [Target frameworks](../../standard/frameworks.md)   
 [.NET Core distribution packaging](../build/distribution-packaging.md)   
 [.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)   
+[.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)   

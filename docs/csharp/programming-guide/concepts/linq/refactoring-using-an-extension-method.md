@@ -1,5 +1,5 @@
 ---
-title: "Refactoring Using an Extension Method (C#) | Microsoft Docs"
+title: "Refactoring Using an Extension Method (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

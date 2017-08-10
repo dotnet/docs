@@ -1,5 +1,5 @@
 ---
-title: "x:Class Directive | Microsoft Docs"
+title: "x:Class Directive"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

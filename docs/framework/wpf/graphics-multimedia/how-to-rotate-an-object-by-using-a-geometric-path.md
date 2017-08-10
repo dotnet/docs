@@ -1,5 +1,5 @@
 ---
-title: "How to: Rotate an Object by Using a Geometric Path | Microsoft Docs"
+title: "How to: Rotate an Object by Using a Geometric Path"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ This example shows how to rotate (pivot) an object along a geometric path that i
   
 -   The other two objects animate the                              <xref:System.Windows.Media.TranslateTransform.X%2A> and                              <xref:System.Windows.Media.TranslateTransform.Y%2A> values of a                              <xref:System.Windows.Media.TranslateTransform> that is applied to the rectangle. They make the rectangle move horizontally and vertically along the path.  
   
- [!code-xml[PathAnimationGallery_snippet#RotateAnimationUsingPathWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/rotateanimationusingpathexample.xaml#rotateanimationusingpathwholepage)]  
+ [!code-xaml[PathAnimationGallery_snippet#RotateAnimationUsingPathWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/rotateanimationusingpathexample.xaml#rotateanimationusingpathwholepage)]  
   
  [!code-csharp[PathAnimationGallery_procedural_snip#RotateAnimationUsingPathWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/CSharp/RotateAnimationUsingPathExample.cs#rotateanimationusingpathwholepage)]
  [!code-vb[PathAnimationGallery_procedural_snip#RotateAnimationUsingPathWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/VisualBasic/RotateAnimationUsingPathExample.vb#rotateanimationusingpathwholepage)]  

@@ -1,5 +1,5 @@
 ---
-title: "Order Preservation in PLINQ | Microsoft Docs"
+title: "Order Preservation in PLINQ"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

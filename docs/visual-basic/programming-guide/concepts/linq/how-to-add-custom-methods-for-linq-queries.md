@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Custom Methods for LINQ Queries (Visual Basic) | Microsoft Docs"
+title: "How to: Add Custom Methods for LINQ Queries (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

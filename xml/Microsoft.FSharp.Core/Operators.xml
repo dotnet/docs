@@ -1440,7 +1440,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Addition&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator +&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Addition&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Addition``3(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -1514,7 +1514,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_BitwiseAnd&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static T operator &amp;&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_BitwiseAnd&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_BitwiseAnd``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -1552,7 +1552,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_BitwiseOr&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static T operator |&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_BitwiseOr&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_BitwiseOr``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -1764,7 +1764,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Division&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator /&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Division&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Division``3(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -1806,7 +1806,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Equality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator ==&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Equality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Equality``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -1841,7 +1841,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_ExclusiveOr&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static T operator ^&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_ExclusiveOr&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_ExclusiveOr``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -1916,7 +1916,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThan&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_GreaterThan``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -1951,7 +1951,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThanOrEqual&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_GreaterThanOrEqual``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -1986,7 +1986,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator !=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Inequality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Inequality``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -2021,7 +2021,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LeftShift&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_LeftShift&lt;T&gt; (T value, int shift);" />
+      <MemberSignature Language="C#" Value="public static T operator &lt;&lt;&lt;T&gt; (T value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_LeftShift&lt;T&gt;(!!T value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LeftShift``1(``0,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -2059,7 +2059,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThan&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LessThan``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -2094,7 +2094,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThanOrEqual&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LessThanOrEqual``1(``0,``0)" />
       <MemberType>Method</MemberType>
@@ -2129,7 +2129,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LogicalNot&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_LogicalNot&lt;T&gt; (T value);" />
+      <MemberSignature Language="C#" Value="public static T operator !&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_LogicalNot&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LogicalNot``1(``0)" />
       <MemberType>Method</MemberType>
@@ -2162,7 +2162,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Modulus&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Modulus&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator %&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Modulus&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Modulus``3(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -2204,7 +2204,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Multiply&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator *&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Multiply&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Multiply``3(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -2563,7 +2563,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_RightShift&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_RightShift&lt;T&gt; (T value, int shift);" />
+      <MemberSignature Language="C#" Value="public static T operator &gt;&gt;&lt;T&gt; (T value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_RightShift&lt;T&gt;(!!T value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_RightShift``1(``0,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -2601,7 +2601,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Subtraction&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator -&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Subtraction&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Subtraction``3(``0,``1)" />
       <MemberType>Method</MemberType>
@@ -2643,7 +2643,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_UnaryNegation&lt;T&gt; (T n);" />
+      <MemberSignature Language="C#" Value="public static T operator -&lt;T&gt; (T n);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_UnaryNegation&lt;T&gt;(!!T n) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_UnaryNegation``1(``0)" />
       <MemberType>Method</MemberType>
@@ -2676,7 +2676,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_UnaryPlus&lt;T&gt; (T value);" />
+      <MemberSignature Language="C#" Value="public static T operator +&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_UnaryPlus&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_UnaryPlus``1(``0)" />
       <MemberType>Method</MemberType>

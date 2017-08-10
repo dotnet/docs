@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Pen to Draw Rectangles | Microsoft Docs"
+title: "How to: Use a Pen to Draw Rectangles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

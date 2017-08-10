@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an MDI Form with Menu Merging and ToolStrip Controls | Microsoft Docs"
+title: "How to: Create an MDI Form with Menu Merging and ToolStrip Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

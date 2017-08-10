@@ -1,5 +1,5 @@
 ---
-title: "- (Negative) (Entity SQL) | Microsoft Docs"
+title: "- (Negative) (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

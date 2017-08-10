@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::GetSaveSize Method | Microsoft Docs"
+title: "IMetaDataEmit::GetSaveSize Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

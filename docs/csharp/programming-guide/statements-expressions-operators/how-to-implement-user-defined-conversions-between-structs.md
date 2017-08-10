@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement User-Defined Conversions Between Structs (C# Programming Guide) | Microsoft Docs"
+title: "How to: Implement User-Defined Conversions Between Structs (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "CorNativeLinkType Enumeration | Microsoft Docs"
+title: "CorNativeLinkType Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

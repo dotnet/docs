@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintJobPriority op_Implicit (System.Printing.IndexedProperties.PrintJobPriorityProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintJobPriority (System.Printing.IndexedProperties.PrintJobPriorityProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintJobPriority op_Implicit(class System.Printing.IndexedProperties.PrintJobPriorityProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintJobPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintJobPriorityProperty)~System.Printing.PrintJobPriority" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintJobPriority op_Implicit (System.Printing.IndexedProperties.PrintJobPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintJobPriority (System.Printing.IndexedProperties.PrintJobPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintJobPriority op_Implicit(class System.Printing.IndexedProperties.PrintJobPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintJobPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintJobPriorityProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintJobPriority" />
       <MemberType>Method</MemberType>

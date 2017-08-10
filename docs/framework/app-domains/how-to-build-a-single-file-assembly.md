@@ -1,5 +1,5 @@
 ---
-title: "How to: Build a Single-File Assembly | Microsoft Docs"
+title: "How to: Build a Single-File Assembly"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Writing a Transactional Application | Microsoft Docs"
+title: "Writing a Transactional Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

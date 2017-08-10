@@ -1,5 +1,5 @@
 ---
-title: "How to:Determine the Discovery Version of a Probe Request | Microsoft Docs"
+title: "How to:Determine the Discovery Version of a Probe Request"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Isolated Storage | Microsoft Docs"
+title: "Isolated Storage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Parallel Diagnostic Tools | Microsoft Docs"
+title: "Parallel Diagnostic Tools"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

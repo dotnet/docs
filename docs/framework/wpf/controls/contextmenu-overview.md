@@ -1,5 +1,5 @@
 ---
-title: "ContextMenu Overview | Microsoft Docs"
+title: "ContextMenu Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -31,7 +31,7 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
 ## Creating ContextMenus  
  The following examples show how to create a <xref:System.Windows.Controls.ContextMenu> with submenus. The <xref:System.Windows.Controls.ContextMenu> controls are attached to button controls.  
   
- [!code-xml[ContextMenu#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#1)]  
+ [!code-xaml[ContextMenu#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml#1)]  
   
  [!code-csharp[ContextMenu#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenu/CSharp/Pane1.xaml.cs#2)]
  [!code-vb[ContextMenu#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ContextMenu/VisualBasic/Pane1.xaml.vb#2)]  

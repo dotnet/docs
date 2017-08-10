@@ -1,5 +1,5 @@
 ---
-title: "Customizing Which Objects are Available in My (Visual Basic) | Microsoft Docs"
+title: "Customizing Which Objects are Available in My (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,6 +1,6 @@
 ---
-title: Flexible Types (F#) | Microsoft Docs
-description: Flexible Types (F#)
+title: Flexible Types (F#)
+description: Learn how to use F# flexible type annotation, which indicates that a parameter, variable, or value has a type that is compatible with a specifed type.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

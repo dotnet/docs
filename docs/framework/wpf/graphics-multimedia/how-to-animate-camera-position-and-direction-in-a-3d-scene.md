@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate Camera Position and Direction in a 3D Scene | Microsoft Docs"
+title: "How to: Animate Camera Position and Direction in a 3D Scene"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,7 +26,7 @@ manager: "wpickett"
 The following example shows how to animate the position of a camera and animate the direction it is pointing in a 3D scene. This is done by using <xref:System.Windows.Media.Animation.Point3DAnimation> and <xref:System.Windows.Media.Animation.Vector3DAnimation> to animate the <xref:System.Windows.Media.Media3D.ProjectionCamera.Position%2A> and <xref:System.Windows.Media.Media3D.ProjectionCamera.LookDirection%2A> properties respectively of the <xref:System.Windows.Media.Media3D.PerspectiveCamera>. You might use an animation like this to change the onlooker's view of a scene in response to an event.  
   
 ## Example  
- [!code-xml[Animation3DGallery_snip#PointVector3DAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/PointVector3DAnimationExample.xaml#pointvector3danimationexamplewholepage)]  
+ [!code-xaml[Animation3DGallery_snip#PointVector3DAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/PointVector3DAnimationExample.xaml#pointvector3danimationexamplewholepage)]  
   
 ## See Also  
  <xref:System.Windows.Media.Animation.Vector3DAnimation>   

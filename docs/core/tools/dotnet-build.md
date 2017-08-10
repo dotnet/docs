@@ -1,5 +1,5 @@
 ---
-title: dotnet-build command - .NET Core CLI | Microsoft Docs
+title: dotnet-build command - .NET Core CLI
 description: The dotnet-build command builds a project and all of its dependencies. 
 keywords: dotnet-build, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -30,9 +30,9 @@ If the project has third-party dependencies, such as libraries from NuGet, they'
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when you execute [`dotnet restore`](dotnet-restore.md) before building the project. Without the assets file in place, the tooling cannot resolve reference assemblies, which will result in errors.
 
-`dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](https://docs.microsoft.com/visualstudio/msbuild/incremental-builds) for more information. 
+`dotnet build` uses MSBuild to build the project; thus, it supports both parallel and incremental builds. Refer to [Incremental Builds](/visualstudio/msbuild/incremental-builds) for more information. 
 
-In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. Learn more about these options in the [MSBuild Command-Line Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference). 
+In addition to its options, the `dotnet build` command accepts MSBuild options, such as `/p` for setting properties or `/l` to define a logger. Learn more about these options in the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). 
 
 Whether the project is executable or not is determined by the `<OutputType>` property in the project file. The following example shows a project that will produce executable code:
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft.Transactions.TransactionBridge.CoordinatorRecovered | Microsoft Docs"
+title: "Microsoft.Transactions.TransactionBridge.CoordinatorRecovered"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Downloading the Validating Issuer Name Registry Package | Microsoft Docs"
+title: "Downloading the Validating Issuer Name Registry Package"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Token Authenticator | Microsoft Docs"
+title: "Token Authenticator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

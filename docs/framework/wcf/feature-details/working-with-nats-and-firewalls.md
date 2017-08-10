@@ -1,5 +1,5 @@
 ---
-title: "Working with NATs and Firewalls | Microsoft Docs"
+title: "Working with NATs and Firewalls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

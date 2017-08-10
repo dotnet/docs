@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.PortSharing.ReadNetPipeConfig | Microsoft Docs"
+title: "System.ServiceModel.PortSharing.ReadNetPipeConfig"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

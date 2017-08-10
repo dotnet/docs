@@ -1,5 +1,5 @@
 ---
-title: "Connection Strings and Configuration Files | Microsoft Docs"
+title: "Connection Strings and Configuration Files"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

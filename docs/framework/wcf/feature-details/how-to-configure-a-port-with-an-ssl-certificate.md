@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure a Port with an SSL Certificate | Microsoft Docs"
+title: "How to: Configure a Port with an SSL Certificate"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

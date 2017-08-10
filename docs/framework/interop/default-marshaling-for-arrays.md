@@ -1,5 +1,5 @@
 ---
-title: "Default Marshaling for Arrays | Microsoft Docs"
+title: "Default Marshaling for Arrays"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

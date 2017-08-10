@@ -1,5 +1,5 @@
 ---
-title: "Creating a Control That Has a Customizable Appearance | Microsoft Docs"
+title: "Creating a Control That Has a Customizable Appearance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,8 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Creating a Control That Has a Customizable Appearance
-<a name="introduction"></a> [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] gives you the ability to create a control whose appearance can be customized. For example, you can change the appearance of a <xref:System.Windows.Controls.CheckBox> beyond what setting properties will do by creating a new <xref:System.Windows.Controls.ControlTemplate>. The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a default <xref:System.Windows.Controls.ControlTemplate> and a <xref:System.Windows.Controls.CheckBox> that uses a custom <xref:System.Windows.Controls.ControlTemplate>.  
+<a name="introduction"></a>
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] gives you the ability to create a control whose appearance can be customized. For example, you can change the appearance of a <xref:System.Windows.Controls.CheckBox> beyond what setting properties will do by creating a new <xref:System.Windows.Controls.ControlTemplate>. The following illustration shows a <xref:System.Windows.Controls.CheckBox> that uses a default <xref:System.Windows.Controls.ControlTemplate> and a <xref:System.Windows.Controls.CheckBox> that uses a custom <xref:System.Windows.Controls.ControlTemplate>.  
   
  ![A checkbox with the default control template.](../../../../docs/framework/wpf/controls/media/ndp-checkboxdefault.png "NDP_CheckBoxDefault")  
 A CheckBox that uses the default control template  
@@ -78,14 +79,14 @@ A custom NumericUpDown control
   
  The following example shows the visual structure of the `NumericUpDown` control, which includes a <xref:System.Windows.Controls.Primitives.RepeatButton> to increase `Value`, a <xref:System.Windows.Controls.Primitives.RepeatButton> to decrease `Value`, and a <xref:System.Windows.Controls.TextBlock> to display `Value`.  
   
- [!code-xml[VSMCustomControl#VisualStructure](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#visualstructure)]  
+ [!code-xaml[VSMCustomControl#VisualStructure](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#visualstructure)]  
   
  A visual behavior of the `NumericUpDown` control is that the value is in a red font if it is negative.  If you change the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> in code when the `Value` is negative, the `NumericUpDown` will always show a red negative value. You specify the visual behavior of the control in the <xref:System.Windows.Controls.ControlTemplate> by adding <xref:System.Windows.VisualState> objects to the <xref:System.Windows.Controls.ControlTemplate>.  The following example shows the <xref:System.Windows.VisualState> objects for the `Positive` and `Negative` states.  `Positive` and `Negative` are mutually exclusive (the control is always in exactly one of the two), so the example puts the <xref:System.Windows.VisualState> objects into a single <xref:System.Windows.VisualStateGroup>.  When the control goes into the `Negative` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> turns red.  When the control is in the `Positive` state, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to it original value.  Defining <xref:System.Windows.VisualState> objects in a <xref:System.Windows.Controls.ControlTemplate> is further discussed in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
 > [!NOTE]
 >  Be sure to set the <xref:System.Windows.VisualStateManager.VisualStateGroups%2A?displayProperty=fullName> attached property on the root <xref:System.Windows.FrameworkElement> of the <xref:System.Windows.Controls.ControlTemplate>.  
   
- [!code-xml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
+ [!code-xaml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
   
 <a name="using_parts_of_the_controltemplate_in_code"></a>   
 ## Using Parts of the ControlTemplate in Code  
@@ -125,7 +126,7 @@ A custom NumericUpDown control
   
  The following example repeats the previous example that shows the <xref:System.Windows.VisualState> objects that corresponds to the `Positive` and `Negative` states of the control. The <xref:System.Windows.Media.Animation.Storyboard> in the `Negative`<xref:System.Windows.VisualState> turns the <xref:System.Windows.Controls.TextBlock.Foreground%2A> of the <xref:System.Windows.Controls.TextBlock> red.   When the `NumericUpDown` control is in the `Negative` state, the storyboard in the `Negative` state begins.  Then the <xref:System.Windows.Media.Animation.Storyboard> in the `Negative` state stops when the control returns to the `Positive` state.  The `Positive`<xref:System.Windows.VisualState> does not need to contain a <xref:System.Windows.Media.Animation.Storyboard> because when the <xref:System.Windows.Media.Animation.Storyboard> for the `Negative` stops, the <xref:System.Windows.Controls.TextBlock.Foreground%2A> returns to its original color.  
   
- [!code-xml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
+ [!code-xaml[VSMCustomControl#ValueStates](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/window1.xaml#valuestates)]  
   
  Note that the <xref:System.Windows.Controls.TextBlock> is given a name, but the <xref:System.Windows.Controls.TextBlock> is not in the control contract for `NumericUpDown` because the control's logic never references the <xref:System.Windows.Controls.TextBlock>.  Elements that are referenced in the <xref:System.Windows.Controls.ControlTemplate> have names, but do not need to be part of the control contract because a new <xref:System.Windows.Controls.ControlTemplate> for the control might not need to reference that element.  For example, someone who creates a new <xref:System.Windows.Controls.ControlTemplate> for `NumericUpDown` might decide to not indicate that `Value` is negative by changing the <xref:System.Windows.Controls.Control.Foreground%2A>.  In that case, neither the code nor the <xref:System.Windows.Controls.ControlTemplate> references the <xref:System.Windows.Controls.TextBlock> by name.  
   
@@ -232,7 +233,7 @@ A custom NumericUpDown control
 ## Complete Example  
  The following example is the entire <xref:System.Windows.Controls.ControlTemplate> for the `NumericUpDown` control.  
   
- [!code-xml[VSMCustomControl#NUDTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/themes/generic.xaml#nudtemplate)]  
+ [!code-xaml[VSMCustomControl#NUDTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmcustomcontrol/csharp/themes/generic.xaml#nudtemplate)]  
   
  The following example shows the logic for the `NumericUpDown`.  
   

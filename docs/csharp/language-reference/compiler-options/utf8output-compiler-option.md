@@ -1,5 +1,5 @@
 ---
-title: "-utf8output (C# Compiler Options) | Microsoft Docs"
+title: "-utf8output (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

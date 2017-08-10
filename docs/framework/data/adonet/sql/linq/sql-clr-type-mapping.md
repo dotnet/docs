@@ -1,5 +1,5 @@
 ---
-title: "SQL-CLR Type Mapping | Microsoft Docs"
+title: "SQL-CLR Type Mapping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -34,7 +34,7 @@
 ## Examples  
  In the following example, the <xref:System.Windows.Media.Media3D.ContainerUIElement3D> object contains two cubes as its children:  
   
- [!code-xml[ContainerModelSample#Viewport3D](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerModelSample/CSharp/Window1.xaml#viewport3d)]  
+ [!code-xaml[ContainerModelSample#Viewport3D](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerModelSample/CSharp/Window1.xaml#viewport3d)]  
   
  The following shows the event handler of the container:  
   

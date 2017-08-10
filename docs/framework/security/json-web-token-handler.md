@@ -1,5 +1,5 @@
 ---
-title: "JSON Web Token Handler | Microsoft Docs"
+title: "JSON Web Token Handler"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

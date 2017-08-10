@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a TreeViewItem in a TreeView | Microsoft Docs"
+title: "How to: Find a TreeViewItem in a TreeView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -42,7 +42,7 @@ The <xref:System.Windows.Controls.TreeView> control provides a convenient way to
   
  The following XAML shows how to create a <xref:System.Windows.Controls.TreeView> that uses the custom <xref:System.Windows.Controls.VirtualizingStackPanel>.  
   
- [!code-xml[TreeViewFindTVI#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewFindTVI/CSharp/MainWindow.xaml#3)]  
+ [!code-xaml[TreeViewFindTVI#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewFindTVI/CSharp/MainWindow.xaml#3)]  
   
 ## See Also  
  [Improve the Performance of a TreeView](../../../../docs/framework/wpf/controls/how-to-improve-the-performance-of-a-treeview.md)

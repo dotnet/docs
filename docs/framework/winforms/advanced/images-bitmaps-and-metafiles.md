@@ -1,5 +1,5 @@
 ---
-title: "Images, Bitmaps, and Metafiles | Microsoft Docs"
+title: "Images, Bitmaps, and Metafiles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

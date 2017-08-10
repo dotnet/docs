@@ -47,7 +47,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Windows.Input.KeyBinding> that associates a <xref:System.Windows.Input.KeyGesture> with a <xref:System.Windows.Input.RoutedCommand>.  The <xref:System.Windows.Input.KeyBinding> uses the <xref:System.Windows.Input.ModifierKeys> enumeration to specify the modifier key of the gesture.  
   
- [!code-xml[commandWithHandler#CommandHandlerKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlerkeybinding)]  
+ [!code-xaml[commandWithHandler#CommandHandlerKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlerkeybinding)]  
   
  [!code-csharp[commandhandlerprocedural#CommandHandlerKeyBindingCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandHandlerProcedural/CSharp/Window1.xaml.cs#commandhandlerkeybindingcodebehind)]
  [!code-vb[commandhandlerprocedural#CommandHandlerKeyBindingCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandHandlerProcedural/visualbasic/window1.xaml.vb#commandhandlerkeybindingcodebehind)]  

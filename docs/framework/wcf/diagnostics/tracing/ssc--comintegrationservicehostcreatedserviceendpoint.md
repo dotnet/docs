@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceEndpoint | Microsoft Docs"
+title: "System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceEndpoint"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

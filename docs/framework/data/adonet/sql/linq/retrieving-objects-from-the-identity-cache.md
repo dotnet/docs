@@ -1,5 +1,5 @@
 ---
-title: "Retrieving Objects from the Identity Cache | Microsoft Docs"
+title: "Retrieving Objects from the Identity Cache"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

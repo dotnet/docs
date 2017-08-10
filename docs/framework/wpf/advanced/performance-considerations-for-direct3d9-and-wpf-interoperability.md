@@ -1,5 +1,5 @@
 ---
-title: "Performance Considerations for Direct3D9 and WPF Interoperability | Microsoft Docs"
+title: "Performance Considerations for Direct3D9 and WPF Interoperability"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

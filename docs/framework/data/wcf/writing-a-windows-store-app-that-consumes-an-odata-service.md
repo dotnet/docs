@@ -1,5 +1,5 @@
 ---
-title: "Writing a Windows Store App that consumes an OData Service | Microsoft Docs"
+title: "Writing a Windows Store App that consumes an OData Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

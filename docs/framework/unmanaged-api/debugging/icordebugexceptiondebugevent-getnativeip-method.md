@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugExceptionDebugEvent::GetNativeIP Method | Microsoft Docs"
+title: "ICorDebugExceptionDebugEvent::GetNativeIP Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Transport: Custom Transactions over UDP Sample | Microsoft Docs"
+title: "Transport: Custom Transactions over UDP Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

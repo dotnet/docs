@@ -1,5 +1,5 @@
 ---
-title: "Using Data Contracts | Microsoft Docs"
+title: "Using Data Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

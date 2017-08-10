@@ -1,6 +1,6 @@
 ---
-title: Enumerations (F#) | Microsoft Docs
-description: Enumerations (F#)
+title: Enumerations (F#)
+description: Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

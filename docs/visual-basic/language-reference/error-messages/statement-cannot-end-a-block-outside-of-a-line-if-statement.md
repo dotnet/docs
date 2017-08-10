@@ -1,5 +1,5 @@
 ---
-title: "Statement cannot end a block outside of a line &#39;If&#39; statement | Microsoft Docs"
+title: "Statement cannot end a block outside of a line &#39;If&#39; statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

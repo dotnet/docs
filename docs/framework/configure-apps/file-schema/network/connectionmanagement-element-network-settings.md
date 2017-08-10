@@ -1,5 +1,5 @@
 ---
-title: "&lt;connectionManagement&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;connectionManagement&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -67,7 +67,7 @@ Specifies the maximum number of connections to a network host.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
+ The following example configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
   
 ```xml  
 <configuration>  

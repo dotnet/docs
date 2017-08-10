@@ -1,5 +1,5 @@
 ---
-title: "Flowchart Workflows | Microsoft Docs"
+title: "Flowchart Workflows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

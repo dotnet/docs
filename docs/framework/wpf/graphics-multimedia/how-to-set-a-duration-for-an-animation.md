@@ -1,5 +1,5 @@
 ---
-title: "How to: Set a Duration for an Animation | Microsoft Docs"
+title: "How to: Set a Duration for an Animation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,7 +27,7 @@ A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time an
  In the following example, the width, height and fill color of a <xref:System.Windows.Shapes.Rectangle> is animated. Durations are set on animation and container timelines resulting in animation effects including controlling the perceived speed of an animation and overriding the duration of child timelines with the duration of a container timeline.  
   
 ## Example  
- [!code-xml[timingbehaviors_snip#DurationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DurationExample.xaml#durationexamplewholepage)]  
+ [!code-xaml[timingbehaviors_snip#DurationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/DurationExample.xaml#durationexamplewholepage)]  
   
 ## See Also  
  <xref:System.Windows.Duration>   

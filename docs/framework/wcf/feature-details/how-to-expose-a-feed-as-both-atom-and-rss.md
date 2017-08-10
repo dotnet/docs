@@ -1,5 +1,5 @@
 ---
-title: "How to: Expose a Feed as Both Atom and RSS | Microsoft Docs"
+title: "How to: Expose a Feed as Both Atom and RSS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

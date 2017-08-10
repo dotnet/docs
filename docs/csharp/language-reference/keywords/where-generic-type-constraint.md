@@ -1,5 +1,5 @@
 ---
-title: "where (generic type constraint) (C# Reference) | Microsoft Docs"
+title: "where (generic type constraint) (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "Privacy and Data Security | Microsoft Docs"
+title: "Privacy and Data Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

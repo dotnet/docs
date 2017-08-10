@@ -1,5 +1,5 @@
 ---
-title: "How to: Restrict Access with the PrincipalPermissionAttribute Class | Microsoft Docs"
+title: "How to: Restrict Access with the PrincipalPermissionAttribute Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

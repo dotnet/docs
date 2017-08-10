@@ -1,5 +1,5 @@
 ---
-title: "-warnaserror (C# Compiler Options) | Microsoft Docs"
+title: "-warnaserror (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -70,4 +70,4 @@ csc /warnaserror:642,649,652 in.cs
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

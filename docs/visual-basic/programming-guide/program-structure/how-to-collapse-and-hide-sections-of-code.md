@@ -1,5 +1,5 @@
 ---
-title: "How to: Collapse and Hide Sections of Code (Visual Basic) | Microsoft Docs"
+title: "How to: Collapse and Hide Sections of Code (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Collapse and Hide Sections of Code (Visual Basic)
-The `#Region` directive enables you to collapse and hide sections of code in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files. The `#Region` directive lets you specify a block of code that you can expand or collapse when using the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] code editor. The ability to hide code selectively makes your files more manageable and easier to read. For more information, see [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining).  
+The `#Region` directive enables you to collapse and hide sections of code in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files. The `#Region` directive lets you specify a block of code that you can expand or collapse when using the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] code editor. The ability to hide code selectively makes your files more manageable and easier to read. For more information, see [Outlining](/visualstudio/ide/outlining).  
   
  `#Region` directives support code block semantics such as `#If...#End If`. This means they cannot begin in one block and end in another; the start and end must be in the same block. `#Region` directives are not supported within functions.  
   
@@ -55,4 +55,4 @@ The `#Region` directive enables you to collapse and hide sections of code in [!I
  [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
  [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)   
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   
- [Outlining](https://docs.microsoft.com/visualstudio/ide/outlining)
+ [Outlining](/visualstudio/ide/outlining)

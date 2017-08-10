@@ -1,5 +1,5 @@
 ---
-title: "Defining and Specifying Faults | Microsoft Docs"
+title: "Defining and Specifying Faults"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

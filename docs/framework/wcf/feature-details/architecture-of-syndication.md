@@ -1,5 +1,5 @@
 ---
-title: "Architecture of Syndication | Microsoft Docs"
+title: "Architecture of Syndication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

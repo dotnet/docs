@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Development Guide | Microsoft Docs"
+title: ".NET Framework Development Guide"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -73,7 +73,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Provides information about advanced development tasks and techniques in the .NET Framework, including extensibility, interoperability, and reflection. Also includes the reference topics for unmanaged APIs that can be used by managed apps, such as runtime hosts, compilers, disassemblers, debuggers, and profilers.  --> 
   
 ## Reference  
- [.NET Framework Class Library](https://docs.microsoft.com/en-us/dotnet/api/?view=netframework-4.7)  
+ [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  
  Supplies syntax, code examples, and usage information for each class that is contained in the [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] namespaces.  
   
 ## Related Sections  

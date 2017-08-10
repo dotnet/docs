@@ -1,5 +1,5 @@
 ---
-title: "Script Blocks Using msxsl:script | Microsoft Docs"
+title: "Script Blocks Using msxsl:script"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

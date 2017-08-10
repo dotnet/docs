@@ -1,5 +1,5 @@
 ---
-title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread | Microsoft Docs"
+title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

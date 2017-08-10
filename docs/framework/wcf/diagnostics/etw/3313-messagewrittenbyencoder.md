@@ -1,5 +1,5 @@
 ---
-title: "3313 - MessageWrittenByEncoder | Microsoft Docs"
+title: "3313 - MessageWrittenByEncoder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

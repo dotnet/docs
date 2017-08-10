@@ -401,7 +401,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Security.Cryptography.CngKeyBlobFormat left, System.Security.Cryptography.CngKeyBlobFormat right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Cryptography.CngKeyBlobFormat left, System.Security.Cryptography.CngKeyBlobFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Cryptography.CngKeyBlobFormat left, class System.Security.Cryptography.CngKeyBlobFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKeyBlobFormat.op_Equality(System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngKeyBlobFormat)" />
       <MemberType>Method</MemberType>
@@ -436,7 +436,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Security.Cryptography.CngKeyBlobFormat left, System.Security.Cryptography.CngKeyBlobFormat right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Cryptography.CngKeyBlobFormat left, System.Security.Cryptography.CngKeyBlobFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Cryptography.CngKeyBlobFormat left, class System.Security.Cryptography.CngKeyBlobFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngKeyBlobFormat.op_Inequality(System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngKeyBlobFormat)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Object Lifetime Events | Microsoft Docs"
+title: "Object Lifetime Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

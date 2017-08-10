@@ -79,7 +79,7 @@
 ## Examples  
  The following example demonstrates how to retrieve the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object and close the browser window.  
   
- [!code-xml[XbapBrowserInterop#1](~/samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml#1)]  
+ [!code-xaml[XbapBrowserInterop#1](~/samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml#1)]  
 [!code-csharp[XbapBrowserInterop#10](~/samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml.cs#10)]
 [!code-vb[XbapBrowserInterop#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]  
   

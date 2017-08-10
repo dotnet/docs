@@ -242,7 +242,7 @@
 ## Examples  
  The following markup example sets the <xref:System.Windows.UIElement.AllowDrop%2A> property `true` using an attribute on a <xref:System.Windows.Controls.TextBox>, as well as setting some other related properties that in aggregate enable that <xref:System.Windows.Controls.TextBox> to be the target of a multiline text data object when it is dragged in. For the complete sample, see [Load a Dropped File Sample](http://msdn.microsoft.com/en-us/be90d645-dd61-4f53-93bb-87902d086ef7).  
   
- [!code-xml[DragDrop_DropOpenTextFile#UIElementAllowDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DropOpenTextFile/CS/window1.xaml#uielementallowdrop)]  
+ [!code-xaml[DragDrop_DropOpenTextFile#UIElementAllowDrop](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DropOpenTextFile/CS/window1.xaml#uielementallowdrop)]  
   
  ]]></format>
         </remarks>
@@ -978,21 +978,21 @@
   
  The following example shows an <xref:System.Windows.Controls.Image>element without a defined clip region. Because no clip region is defined, the entire image is displayed.  
   
- [!code-xml[ClipPathExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#2)]  
+ [!code-xaml[ClipPathExample#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#2)]  
   
  ![An object before applying a clip region](~/add/media/mil-task-clip-region-noclip.png "An object before applying a clip region")  
 Image with No Clip Region  
   
  In the next example, an identical Image is created, except that it has a defined clip region. Only the part of the image that is within the area the <xref:System.Windows.Media.EllipseGeometry>will be displayed.  
   
- [!code-xml[ClipPathExample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#4)]  
+ [!code-xaml[ClipPathExample#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#4)]  
   
  ![A clipped object](~/add/media/mil-task-clip-region-ellispe.PNG "A clipped object")  
 Image with an Elliptical Clip Region  
   
  The following example shows how animate a framework element's <xref:System.Windows.UIElement.Clip%2A> region. In this example, an <xref:System.Windows.Media.EllipseGeometry> is used to define an elliptical clip region for an <xref:System.Windows.Controls.Image> element. A <xref:System.Windows.Media.Animation.PointAnimation> animates the ellipse geometry's <xref:System.Windows.Media.EllipseGeometry.Center%2A> property from (0, 0) to (200, 150). The animation starts playing after the image is loaded and repeats indefinitely.  
   
- [!code-xml[ClipPathExample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#5)]  
+ [!code-xaml[ClipPathExample#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ClipPathExample/CS/ClipExample.xaml#5)]  
   
  For the full sample, see the [Clip Region Sample](http://msdn.microsoft.com/en-us/83043a0b-f824-445f-9675-103280c5ca67).  
   
@@ -1121,7 +1121,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example adds a <xref:System.Windows.Input.CommandBinding> to a window using markup. Note that in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], the <xref:System.Windows.Input.CommandBindingCollection> is not declared in the markup as an element; the collection object is inferred by the type that the property takes, and you populate the property element with one or more <xref:System.Windows.Input.CommandBinding> elements:  
   
- [!code-xml[commandWithHandler#CommandHandlerCommandBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlercommandbinding)]  
+ [!code-xaml[commandWithHandler#CommandHandlerCommandBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlercommandbinding)]  
   
  For more information about the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for collections, see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
@@ -1458,7 +1458,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following XAML shows how to assign a custom <xref:System.Windows.Media.Effects.ShaderEffect> to the <xref:System.Windows.UIElement.Effect%2A> property.  
   
- [!code-xml[System.Windows.Media.Effects.ShaderEffect#1000](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/Window1.xaml#1000)]  
+ [!code-xaml[System.Windows.Media.Effects.ShaderEffect#1000](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Media.Effects.ShaderEffect/CS/Window1.xaml#1000)]  
   
  ]]></format>
         </remarks>
@@ -1573,7 +1573,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example code illustrates a control template for a particular custom control, which sets <xref:System.Windows.UIElement.Focusable%2A> `false` on one of the elements within the template.  
   
- [!code-xml[RichTextBox_NoScrollViewer#_ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBox_NoScrollViewer/CS/window1.xaml#_controltemplate)]
+ [!code-xaml[RichTextBox_NoScrollViewer#_ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBox_NoScrollViewer/CS/window1.xaml#_controltemplate)]
   
  ]]></format>
         </remarks>
@@ -2273,7 +2273,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example populates this property on a <xref:System.Windows.Window>, with a single <xref:System.Windows.Input.KeyBinding>.  
   
- [!code-xml[CommandingOverviewSnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
+ [!code-xaml[CommandingOverviewSnippets#CommandingOverviewXAMLKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml#commandingoverviewxamlkeybinding)]  
   
  For more information about the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax for collections, see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
@@ -2878,7 +2878,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example creates an application that has a red Rectangle.  The <xref:System.Windows.UIElement.IsManipulationEnabled%2A> property of the Rectangle is set to true and the application's window subscribes to the <xref:System.Windows.UIElement.ManipulationStarting>, <xref:System.Windows.UIElement.ManipulationDelta>, and <xref:System.Windows.UIElement.ManipulationInertiaStarting> events. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
- [!code-xml[BasicManipulation#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml#ui)]  
+ [!code-xaml[BasicManipulation#UI](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml#ui)]  
   
  ]]></format>
         </remarks>
@@ -3206,7 +3206,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example references this property as the property type of a <xref:System.Windows.Trigger>, part of a \<Style.Triggers> block. If the mouse is over the control, the control text turns blue and the cursor becomes a hand.  
   
- [!code-xml[ListViewChkBox#Trigger](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#trigger)]   
+ [!code-xaml[ListViewChkBox#Trigger](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#trigger)]   
   
  ]]></format>
         </remarks>
@@ -8330,7 +8330,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following markup example shows an <xref:System.Windows.Media.ImageBrush> opacity mask applied to another <xref:System.Windows.Controls.Image>.  
   
- [!code-xml[OpacityMasksSnippet#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/ImageBrushExample.xaml#uielementopacitymask)]   
+ [!code-xaml[OpacityMasksSnippet#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/ImageBrushExample.xaml#uielementopacitymask)]   
   
  ]]></format>
         </remarks>

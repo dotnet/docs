@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the Shallow Value of an Element (C#) | Microsoft Docs"
+title: "How to: Retrieve the Shallow Value of an Element (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

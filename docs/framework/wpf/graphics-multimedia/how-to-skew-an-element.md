@@ -1,5 +1,5 @@
 ---
-title: "How to: Skew an Element | Microsoft Docs"
+title: "How to: Skew an Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -32,15 +32,15 @@ This example shows how to use a              <xref:System.Windows.Media.SkewTran
  The following example applies a horizontal skew of 45 degrees to a              <xref:System.Windows.Shapes.Rectangle> from a center point of (0,0).  
   
 ## Example  
- [!code-xml[transformsSample#41](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/SkewTransformExample.xaml#41)]  
+ [!code-xaml[transformsSample#41](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/SkewTransformExample.xaml#41)]  
   
  The following example applies a horizontal skew of 45 degrees to a                      <xref:System.Windows.Shapes.Rectangle> from a center point of (25,25).  
   
- [!code-xml[transformsSample#42](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/SkewTransformExample.xaml#42)]  
+ [!code-xaml[transformsSample#42](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/SkewTransformExample.xaml#42)]  
   
  The following example applies a vertical skew of 45 degrees to a                      <xref:System.Windows.Shapes.Rectangle> from a center point of (25,25).  
   
- [!code-xml[transformsSample#43](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/SkewTransformExample.xaml#43)]  
+ [!code-xaml[transformsSample#43](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/SkewTransformExample.xaml#43)]  
   
  The following illustration shows the different skews that are used in this example.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting an ActiveX Control in WPF | Microsoft Docs"
+title: "Walkthrough: Hosting an ActiveX Control in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -91,7 +91,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
   
 5.  Name the <xref:System.Windows.Controls.Grid> element `grid1`.  
   
-     [!code-xml[HostingAxInWpf#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingAxInWpf/CSharp/HostingAxInWpf/window1.xaml#1)]  
+     [!code-xaml[HostingAxInWpf#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingAxInWpf/CSharp/HostingAxInWpf/window1.xaml#1)]  
   
 6.  In Design view or XAML view, select the <xref:System.Windows.Window> element.  
   

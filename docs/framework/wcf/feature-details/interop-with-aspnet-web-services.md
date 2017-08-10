@@ -1,5 +1,5 @@
 ---
-title: "Interoperability with ASP.NET Web Services | Microsoft Docs"
+title: "Interoperability with ASP.NET Web Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

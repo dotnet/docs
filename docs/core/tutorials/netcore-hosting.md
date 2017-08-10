@@ -1,5 +1,5 @@
 ---
-title: Hosting .NET Core | Microsoft Docs
+title: Hosting .NET Core
 description: Hosting the .NET Core runtime from native code 
 keywords: .NET, .NET Core, Hosting, Hosting .NET Core
 author: mjrousos

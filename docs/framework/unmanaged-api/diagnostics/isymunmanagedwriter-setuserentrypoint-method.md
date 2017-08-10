@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::SetUserEntryPoint Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::SetUserEntryPoint Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

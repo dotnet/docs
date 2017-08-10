@@ -1,5 +1,5 @@
 ---
-title: "Using CancellationScope | Microsoft Docs"
+title: "Using CancellationScope"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

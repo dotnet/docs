@@ -1,5 +1,5 @@
 ---
-title: "How to: Use System Parameters Keys | Microsoft Docs"
+title: "How to: Use System Parameters Keys"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -28,7 +28,7 @@ System resources expose a number of system metrics as resources to help develope
  The following example shows how to access and use system parameter dynamic resources to style or customize a button. This              [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example sizes a button by assigning              <xref:System.Windows.SystemParameters> values to the button's width and height.  
   
 ## Example  
- [!code-xml[SystemRes_snip#ParameterDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#parameterdynamicresources)]  
+ [!code-xaml[SystemRes_snip#ParameterDynamicResources](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SystemRes_snip/CSharp/MyApp.xaml#parameterdynamicresources)]  
   
 ## See Also  
  [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)   

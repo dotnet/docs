@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Security Context Token for a Secure Session | Microsoft Docs"
+title: "How to: Create a Security Context Token for a Secure Session"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

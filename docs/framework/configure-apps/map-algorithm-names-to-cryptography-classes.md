@@ -1,5 +1,5 @@
 ---
-title: "Mapping Algorithm Names to Cryptography Classes | Microsoft Docs"
+title: "Mapping Algorithm Names to Cryptography Classes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

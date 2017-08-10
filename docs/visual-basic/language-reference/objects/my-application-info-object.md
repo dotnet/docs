@@ -1,5 +1,5 @@
 ---
-title: "My.Application.Info Object | Microsoft Docs"
+title: "My.Application.Info Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

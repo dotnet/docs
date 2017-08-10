@@ -1,5 +1,5 @@
 ---
-title: "/win32manifest (Visual Basic) | Microsoft Docs"
+title: "/win32manifest (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -56,7 +56,7 @@ Identifies a user-defined Win32 application manifest file to be embedded into a 
 > [!NOTE]
 >  This option and the [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) option are mutually exclusive. If you try to use both options in the same command line, you will get a build error.  
   
- An application that has no application manifest that specifies a requested execution level will be subject to file/registry virtualization under the User Account Control feature in Windows Vista. For more information about virtualization, see [ClickOnce Deployment on Windows Vista](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
+ An application that has no application manifest that specifies a requested execution level will be subject to file/registry virtualization under the User Account Control feature in Windows Vista. For more information about virtualization, see [ClickOnce Deployment on Windows Vista](/visualstudio/deployment/clickonce-deployment-on-windows-vista).  
   
  Your application will be subject to virtualization if either of the following conditions is true:  
   
@@ -64,7 +64,7 @@ Identifies a user-defined Win32 application manifest file to be embedded into a 
   
 2.  You provide a custom manifest that does not specify a requested execution level.  
   
- [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] creates a default .manifest file and stores it in the debug and release directories alongside the executable file. You can view or edit the default app.manifest file by clicking **View UAC Settings** on the **Application** tab in the Project Designer. For more information, see [Application Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] creates a default .manifest file and stores it in the debug and release directories alongside the executable file. You can view or edit the default app.manifest file by clicking **View UAC Settings** on the **Application** tab in the Project Designer. For more information, see [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
  You can provide the application manifest as a custom post-build step or as part of a Win32 resource file by using the `/nowin32manifest` option. Use that same option if you want your application to be subject to file or registry virtualization on Windows Vista. This will prevent the compiler from creating and embedding a default manifest in the PE file.  
   

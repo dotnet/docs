@@ -229,7 +229,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (RuntimeMethodHandle left, RuntimeMethodHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (RuntimeMethodHandle left, RuntimeMethodHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.RuntimeMethodHandle left, valuetype System.RuntimeMethodHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.op_Equality(System.RuntimeMethodHandle,System.RuntimeMethodHandle)" />
       <MemberType>Method</MemberType>
@@ -269,7 +269,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (RuntimeMethodHandle left, RuntimeMethodHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (RuntimeMethodHandle left, RuntimeMethodHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.RuntimeMethodHandle left, valuetype System.RuntimeMethodHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeMethodHandle.op_Inequality(System.RuntimeMethodHandle,System.RuntimeMethodHandle)" />
       <MemberType>Method</MemberType>

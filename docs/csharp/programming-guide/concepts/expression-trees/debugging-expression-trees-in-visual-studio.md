@@ -1,5 +1,5 @@
 ---
-title: "Debugging Expression Trees in Visual Studio (C#) | Microsoft Docs"
+title: "Debugging Expression Trees in Visual Studio (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -23,9 +23,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Debugging Expression Trees in Visual Studio (C#)
-You can analyze the structure and content of expression trees when you debug your applications. To get a quick overview of the expression tree structure, you can use the `DebugView` property, which is available only in debug mode. For more information about debugging, see [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio).  
+You can analyze the structure and content of expression trees when you debug your applications. To get a quick overview of the expression tree structure, you can use the `DebugView` property, which is available only in debug mode. For more information about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
   
- To better represent the content of expression trees, the `DebugView` property uses Visual Studio visualizers. For more information, see [Create Custom Visualizers](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data).  
+ To better represent the content of expression trees, the `DebugView` property uses Visual Studio visualizers. For more information, see [Create Custom Visualizers](/visualstudio/debugger/create-custom-visualizers-of-data).  
   
 ### To open a visualizer for an expression tree  
   
@@ -118,5 +118,5 @@ You can analyze the structure and content of expression trees when you debug you
   
 ## See Also  
  [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)   
- [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio)   
- [Create Custom Visualizers](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data)
+ [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)   
+ [Create Custom Visualizers](/visualstudio/debugger/create-custom-visualizers-of-data)

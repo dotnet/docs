@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::JITCachedFunctionSearchStarted Method | Microsoft Docs"
+title: "ICorProfilerCallback::JITCachedFunctionSearchStarted Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

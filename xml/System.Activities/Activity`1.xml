@@ -130,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; op_Implicit (System.Activities.Variable variable);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Activity&lt;TResult&gt; (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable)~System.Activities.Activity{`0}" />
       <MemberType>Method</MemberType>
@@ -152,7 +152,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; op_Implicit (System.Activities.Variable&lt;TResult&gt; variable);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Activity&lt;TResult&gt; (System.Activities.Variable&lt;TResult&gt; variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable`1&lt;!TResult&gt; variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable{`0})~System.Activities.Activity{`0}" />
       <MemberType>Method</MemberType>
@@ -174,7 +174,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; op_Implicit (TResult constValue);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Activity&lt;TResult&gt; (TResult constValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(!TResult constValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(`0)~System.Activities.Activity{`0}" />
       <MemberType>Method</MemberType>

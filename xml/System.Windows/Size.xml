@@ -266,7 +266,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Size size1, System.Windows.Size size2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Size size1, System.Windows.Size size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Size size1, valuetype System.Windows.Size size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Equality(System.Windows.Size,System.Windows.Size)" />
       <MemberType>Method</MemberType>
@@ -290,7 +290,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Point op_Explicit (System.Windows.Size size);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Point (System.Windows.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point op_Explicit(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Explicit(System.Windows.Size)~System.Windows.Point" />
       <MemberType>Method</MemberType>
@@ -312,7 +312,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Vector op_Explicit (System.Windows.Size size);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Vector (System.Windows.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Vector op_Explicit(valuetype System.Windows.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Explicit(System.Windows.Size)~System.Windows.Vector" />
       <MemberType>Method</MemberType>
@@ -334,7 +334,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Size size1, System.Windows.Size size2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Size size1, System.Windows.Size size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Size size1, valuetype System.Windows.Size size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Size.op_Inequality(System.Windows.Size,System.Windows.Size)" />
       <MemberType>Method</MemberType>

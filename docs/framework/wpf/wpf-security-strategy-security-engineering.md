@@ -1,5 +1,5 @@
 ---
-title: "WPF Security Strategy - Security Engineering | Microsoft Docs"
+title: "WPF Security Strategy - Security Engineering"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

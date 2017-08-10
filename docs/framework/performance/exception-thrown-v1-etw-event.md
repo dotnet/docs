@@ -1,5 +1,5 @@
 ---
-title: "Exception Thrown_V1 ETW Event | Microsoft Docs"
+title: "Exception Thrown_V1 ETW Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

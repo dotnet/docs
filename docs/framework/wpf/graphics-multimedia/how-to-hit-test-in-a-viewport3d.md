@@ -1,5 +1,5 @@
 ---
-title: "How to: Hit Test in a Viewport3D | Microsoft Docs"
+title: "How to: Hit Test in a Viewport3D"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

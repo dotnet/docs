@@ -1,5 +1,5 @@
 ---
-title: "Cannot calculate number of periods using the arguments provided | Microsoft Docs"
+title: "Cannot calculate number of periods using the arguments provided"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Cannot calculate number of periods using the arguments provided
-A call to the `NPer`function does not contain all of the required arguments.  
+A call to the `NPer` function does not contain all of the required arguments.  
   
 ## To correct this error  
   

@@ -1,5 +1,5 @@
 ---
-title: "Basic Activity Composition | Microsoft Docs"
+title: "Basic Activity Composition"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

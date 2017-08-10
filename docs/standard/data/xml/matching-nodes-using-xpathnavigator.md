@@ -1,5 +1,5 @@
 ---
-title: "Matching Nodes using XPathNavigator | Microsoft Docs"
+title: "Matching Nodes using XPathNavigator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

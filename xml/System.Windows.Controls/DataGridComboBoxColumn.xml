@@ -53,8 +53,8 @@
 ## Examples  
  The following example shows how to populate the drop-down list for each <xref:System.Windows.Controls.ComboBox> in the column with the values of an enumeration. The selected item in the drop-down list is bound by setting the <xref:System.Windows.Controls.DataGridComboBoxColumn.SelectedItemBinding%2A> property to the property of the object displayed in each row.  
   
- [!code-xml[DataGrid_CustomColumns#ComboBox1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#combobox1)]  
-[!code-xml[DataGrid_CustomColumns#ComboBox2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#combobox2)]  
+ [!code-xaml[DataGrid_CustomColumns#ComboBox1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#combobox1)]  
+[!code-xaml[DataGrid_CustomColumns#ComboBox2](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml#combobox2)]  
   
  [!code-csharp[DataGrid_CustomColumns#Top](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_customcolumns/csharp/window1.xaml.cs#top)]
  [!code-vb[DataGrid_CustomColumns#Top](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_customcolumns/vb/window1.xaml.vb#top)]  
@@ -221,7 +221,7 @@
 ## Remarks  
  Use this property to define a simple template that describes how to display the data objects. Setting the <xref:System.Windows.Controls.DataGridComboBoxColumn.DisplayMemberPath%2A> property is equivalent to setting the <xref:System.Windows.Data.Binding.Path%2A> of the <xref:System.Windows.Controls.TextBlock.Text%2A?displayProperty=fullName> property binding in a template. The following template shows an example of the equivalent setting.  
   
- [!code-xml[DataGrid_ComboBoxColumnSample2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_comboboxcolumnsample2/CS/window1.xaml#1)]   
+ [!code-xaml[DataGrid_ComboBoxColumnSample2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_comboboxcolumnsample2/CS/window1.xaml#1)]   
   
  ]]></format>
         </remarks>

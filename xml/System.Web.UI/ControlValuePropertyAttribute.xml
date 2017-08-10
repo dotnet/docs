@@ -23,7 +23,7 @@
 ## Remarks  
  When defining a <xref:System.Web.UI.WebControls.ControlParameter> object, you typically bind a control's property to a parameter by setting both the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties. If the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> property is not set, a default property is used. The <xref:System.Web.UI.ControlValuePropertyAttribute> attribute is applied to a control to specify its default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
  For a list of initial property values for an instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class, see the <xref:System.Web.UI.ControlValuePropertyAttribute.%23ctor%2A> constructor.  
   

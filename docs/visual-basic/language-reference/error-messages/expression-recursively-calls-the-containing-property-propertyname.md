@@ -1,5 +1,5 @@
 ---
-title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39; | Microsoft Docs"
+title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -77,7 +77,7 @@ Public Class illustrateProperties
 End Class  
 ```  
   
- By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about hiding warnings or treating warnings as errors, please see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42026  
   

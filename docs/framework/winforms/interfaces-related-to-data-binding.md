@@ -1,5 +1,5 @@
 ---
-title: "Interfaces Related to Data Binding | Microsoft Docs"
+title: "Interfaces Related to Data Binding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

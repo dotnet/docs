@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Updating Status Bar Information at Run Time | Microsoft Docs"
+title: "Walkthrough: Updating Status Bar Information at Run Time"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Object-Oriented Programming (C#) | Microsoft Docs"
+title: "Object-Oriented Programming (C#)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

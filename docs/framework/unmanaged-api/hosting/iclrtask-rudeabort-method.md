@@ -1,5 +1,5 @@
 ---
-title: "ICLRTask::RudeAbort Method | Microsoft Docs"
+title: "ICLRTask::RudeAbort Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

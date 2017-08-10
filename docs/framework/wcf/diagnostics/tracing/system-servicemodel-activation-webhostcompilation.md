@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Activation.WebHostCompilation | Microsoft Docs"
+title: "System.ServiceModel.Activation.WebHostCompilation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Basic Data Contract for a Class or Structure | Microsoft Docs"
+title: "How to: Create a Basic Data Contract for a Class or Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

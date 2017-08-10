@@ -1,5 +1,5 @@
 ---
-title: "3301 - ReceiveContextAbandonFailed | Microsoft Docs"
+title: "3301 - ReceiveContextAbandonFailed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

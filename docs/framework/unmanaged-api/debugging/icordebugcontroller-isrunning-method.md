@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugController::IsRunning Method | Microsoft Docs"
+title: "ICorDebugController::IsRunning Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

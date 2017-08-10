@@ -1,5 +1,5 @@
 ---
-title: "MissingRuntimeArtifactException Class (.NET Native) | Microsoft Docs"
+title: "MissingRuntimeArtifactException Class (.NET Native)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

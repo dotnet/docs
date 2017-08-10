@@ -1,5 +1,5 @@
 ---
-title: "XAML and Custom Classes for WPF | Microsoft Docs"
+title: "XAML and Custom Classes for WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -58,9 +58,9 @@ XAML as implemented in [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-c
 ### TypeConverter Enabled Attribute Syntax  
  If you provide a dedicated, attributed type converter at the class level, the applied type conversion enables attribute syntax for any property that needs to instantiate that type. A type converter does not enable object element usage of the type; only the presence of a default constructor for that type enables object element usage. Therefore, properties that are type-converter enabled are generally speaking not usable in property syntax, unless the type itself also supports object element syntax. The exception to this is that you can specify a property element syntax, but have the property element contain a string. That usage is really essentially equivalent to an attribute syntax usage, and such a usage is not common unless there is a need for more robust whitespace handling of the attribute value. For example, the following is a property element usage that takes a string, and the attribute usage equivalent:  
   
- [!code-xml[XamlOvwSupport#GoofyTCPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe)]  
+ [!code-xaml[XamlOvwSupport#GoofyTCPE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe)]  
   
- [!code-xml[XamlOvwSupport#GoofyTCPE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe2)]  
+ [!code-xaml[XamlOvwSupport#GoofyTCPE2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#goofytcpe2)]  
   
  Examples of properties where attribute syntax is allowed but property element syntax that contains an object element is disallowed through XAML are various properties that take the <xref:System.Windows.Input.Cursor> type. The <xref:System.Windows.Input.Cursor> class has a dedicated type converter <xref:System.Windows.Input.CursorConverter>, but does not expose a default constructor, so the <xref:System.Windows.FrameworkElement.Cursor%2A> property can only be set through attribute syntax even though the actual <xref:System.Windows.Input.Cursor> type is a reference type.  
   

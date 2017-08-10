@@ -1,5 +1,5 @@
 ---
-title: "3816 - RoutingServiceTransmittingMessage | Microsoft Docs"
+title: "3816 - RoutingServiceTransmittingMessage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Using Windows Management Instrumentation for Diagnostics | Microsoft Docs"
+title: "Using Windows Management Instrumentation for Diagnostics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

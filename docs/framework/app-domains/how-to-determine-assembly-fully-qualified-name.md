@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine an Assembly&#39;s Fully Qualified Name | Microsoft Docs"
+title: "How to: Determine an Assembly&#39;s Fully Qualified Name"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

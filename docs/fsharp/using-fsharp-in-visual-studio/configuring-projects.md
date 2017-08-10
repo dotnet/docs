@@ -1,6 +1,6 @@
 ---
-title: Configuring Projects (F#) | Microsoft Docs
-description: Configuring Projects (F#)
+title: Configuring Projects (F#)
+description: Learn how to use the Project Designer when you work with F# projects.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -44,7 +44,7 @@ The following table summarizes settings that are specific to F#.
 |`Build`|`Other flags`|Allows you to specify additional compiler command-line options.|
 
 ## See Also
-[Getting Started with F# in Visual Studio](../tutorials/getting-started/getting-started-visual-studio.md)
+[Get Started with F# in Visual Studio](get-started/get-started/get-started-visual-studio.md)
 
 [Compiler Options](../language-reference/compiler-options.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method | Microsoft Docs"
+title: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

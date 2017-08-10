@@ -1,5 +1,5 @@
 ---
-title: "3559 - ServiceActivationStop | Microsoft Docs"
+title: "3559 - ServiceActivationStop"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

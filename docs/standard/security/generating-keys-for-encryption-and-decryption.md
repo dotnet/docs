@@ -1,5 +1,5 @@
 ---
-title: "Generating Keys for Encryption and Decryption | Microsoft Docs"
+title: "Generating Keys for Encryption and Decryption"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

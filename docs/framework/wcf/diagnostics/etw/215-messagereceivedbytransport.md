@@ -1,5 +1,5 @@
 ---
-title: "215 - MessageReceivedByTransport | Microsoft Docs"
+title: "215 - MessageReceivedByTransport"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

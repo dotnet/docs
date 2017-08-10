@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - Analyzing your Third-Party Party Dependencies | Microsoft Docs
+title: Porting to .NET Core - Analyzing your Third-Party Party Dependencies
 description: Porting to .NET Core - Analyzing your Third-Party Dependencies
 keywords: .NET, .NET Core
 author: cartermp
@@ -49,7 +49,7 @@ portable-net451-win81
 portable-net45-win8-wpa8-wpa81
 ```
 
-These are the Target Framework Monikers (TFM) which map to versions of [The .NET Standard Library](../../standard/net-standard.md) and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.
+These are the Target Framework Monikers (TFM) which map to versions of the [.NET Standard](../../standard/net-standard.md) and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.  Note that `netcoreapp1.0`, while compatible, is for applications and not libraries.  Although there's nothing wrong with using a library which is `netcoreapp1.0`-based, that library may not be intended for anything *other* than consumption by other `netcoreapp1.0` applications.
 
 There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:
 

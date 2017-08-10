@@ -1,5 +1,5 @@
 ---
-title: "Deploying WCF Applications with ClickOnce | Microsoft Docs"
+title: "Deploying WCF Applications with ClickOnce"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

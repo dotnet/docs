@@ -1,5 +1,5 @@
 ---
-title: "How to: Save Files Using the SaveFileDialog Component | Microsoft Docs"
+title: "How to: Save Files Using the SaveFileDialog Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

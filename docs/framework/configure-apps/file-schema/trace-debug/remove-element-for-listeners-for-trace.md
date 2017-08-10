@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt; | Microsoft Docs"
+title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

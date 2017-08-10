@@ -1,5 +1,5 @@
 ---
-title: "Querying the DataRowView Collection in a DataView | Microsoft Docs"
+title: "Querying the DataRowView Collection in a DataView"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

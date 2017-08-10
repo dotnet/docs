@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML | Microsoft Docs"
+title: "Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -53,7 +53,7 @@ manager: "wpickett"
   
      The <xref:System.Windows.Forms.MaskedTextBox> control is created as a child of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
   
-     [!code-xml[HostingWfInWpfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#3)]  
+     [!code-xaml[HostingWfInWpfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#3)]  
   
 6.  Press F5 to build and run the application.  
   

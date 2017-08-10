@@ -1,5 +1,5 @@
 ---
-title: "Element Tree and Serialization | Microsoft Docs"
+title: "Element Tree and Serialization"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

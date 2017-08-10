@@ -1,5 +1,5 @@
 ---
-title: "How to: Expose Properties of Constituent Controls | Microsoft Docs"
+title: "How to: Expose Properties of Constituent Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

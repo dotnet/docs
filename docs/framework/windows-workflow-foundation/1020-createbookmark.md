@@ -1,5 +1,5 @@
 ---
-title: "1020 - CreateBookmark | Microsoft Docs"
+title: "1020 - CreateBookmark"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "File information cannot be queried while open for writing | Microsoft Docs"
+title: "File information cannot be queried while open for writing"
 
 ms.date: "2015-07-20"
 ms.prod: .net

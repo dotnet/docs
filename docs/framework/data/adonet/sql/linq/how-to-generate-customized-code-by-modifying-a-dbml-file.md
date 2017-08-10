@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate Customized Code by Modifying a DBML File | Microsoft Docs"
+title: "How to: Generate Customized Code by Modifying a DBML File"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

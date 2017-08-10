@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInternalFrame2::IsCloserToLeaf Method | Microsoft Docs"
+title: "ICorDebugInternalFrame2::IsCloserToLeaf Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

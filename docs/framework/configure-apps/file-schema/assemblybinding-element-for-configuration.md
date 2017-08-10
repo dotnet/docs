@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyBinding&gt; Element for &lt;configuration&gt; | Microsoft Docs"
+title: "&lt;assemblyBinding&gt; element for &lt;configuration&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,57 +25,59 @@ author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
 ---
-# &lt;assemblyBinding&gt; Element for &lt;configuration&gt;
-Specifies assembly binding policy at the configuration level.  
-  
- \<configuration> Element  
-\<assemblyBinding> Element for \<configuration>  
-  
-## Syntax  
-  
-```xml  
-<assemblyBinding    
-   xmlns="urn:schemas-microsoft-com:asm.v1">  
-</assemblyBinding>  
-```  
-  
-## Attributes and Elements  
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
-  
-|Attribute|Description|  
-|---------------|-----------------|  
-|`xmlns`|Required attribute.<br /><br /> Specifies the XML namespace required for assembly binding. Use the string "urn:schemas-microsoft-com:asm.v1" as the value.|  
-  
-### Child Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<linkedConfiguration> Element](../../../../docs/framework/configure-apps/file-schema/linkedconfiguration-element.md)|Specifies a configuration file to include.|  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<configuration> Element](../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
-  
-## Remarks  
- The [\<linkedConfiguration> Element](../../../../docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.  
-  
+
+# \<assemblyBinding> element for \<configuration>
+
+Specifies assembly binding policy at the configuration level.
+
+[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
+&nbsp;&nbsp;**\<assemblyBinding>**
+
+## Syntax
+
+```xml
+<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+  <!-- Configuration files to include. -->
+</assemblyBinding>
+```
+
+## Attribute
+
+|           | Description |
+| --------- | ----------- |
+| **xmlns** | Required attribute.<br><br>Specifies the XML namespace required for assembly binding. Use the string "urn:schemas-microsoft-com:asm.v1" as the value. |
+
+## Parent element
+
+|     | Description |
+| --- | ----------- |
+| [**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+
+## Child element
+
+|     | Description |
+| --- | ----------- |
+| [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) | Specifies a configuration file to include. |
+
+## Remarks
+
+The [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/linkedconfiguration-element.md) element simplifies the management of component assemblies by allowing application configuration files to include assembly configuration files in well-known locations, rather than duplicating assembly configuration settings.
+
 > [!NOTE]
->  The `<linkedConfiguration>` element is not supported for applications with Windows side-by-side manifests.  
-  
-## Example  
- The following code example shows how to include a configuration file on the local hard disk.  
-  
-```xml  
-<configuration>  
-   <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
-      <linkedConfiguration href="file://c:\Program Files\Contoso\sharedConfig.xml"/>  
-   </assemblyBinding>  
-</configuration>  
-```  
-  
-## See Also  
- [Configuration File Schema](../../../../docs/framework/configure-apps/file-schema/index.md)
+> The **\<linkedConfiguration>** element is not supported for applications with Windows side-by-side manifests.
+
+## Example
+
+The following example shows how to include a configuration file on the local hard disk:
+
+```xml
+<configuration>
+  <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+    <linkedConfiguration href="file://c:\Program Files\Contoso\sharedConfig.xml" />
+  </assemblyBinding>
+</configuration>
+```
+
+## See also
+
+[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

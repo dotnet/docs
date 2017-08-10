@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Size of Status-Bar Panels | Microsoft Docs"
+title: "How to: Set the Size of Status-Bar Panels"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

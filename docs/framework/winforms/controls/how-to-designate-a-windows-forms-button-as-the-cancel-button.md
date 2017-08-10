@@ -1,5 +1,5 @@
 ---
-title: "How to: Designate a Windows Forms Button as the Cancel Button | Microsoft Docs"
+title: "How to: Designate a Windows Forms Button as the Cancel Button"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

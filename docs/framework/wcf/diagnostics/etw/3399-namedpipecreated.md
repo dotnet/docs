@@ -1,5 +1,5 @@
 ---
-title: "3399 - NamedPipeCreated | Microsoft Docs"
+title: "3399 - NamedPipeCreated"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

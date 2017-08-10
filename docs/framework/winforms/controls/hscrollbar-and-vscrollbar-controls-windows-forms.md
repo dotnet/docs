@@ -1,5 +1,5 @@
 ---
-title: "HScrollBar and VScrollBar Controls (Windows Forms) | Microsoft Docs"
+title: "HScrollBar and VScrollBar Controls (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

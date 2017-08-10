@@ -1,5 +1,5 @@
 ---
-title: "Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security | Microsoft Docs"
+title: "Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

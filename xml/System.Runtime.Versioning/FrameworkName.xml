@@ -405,7 +405,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Runtime.Versioning.FrameworkName left, System.Runtime.Versioning.FrameworkName right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Runtime.Versioning.FrameworkName left, System.Runtime.Versioning.FrameworkName right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Runtime.Versioning.FrameworkName left, class System.Runtime.Versioning.FrameworkName right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.op_Equality(System.Runtime.Versioning.FrameworkName,System.Runtime.Versioning.FrameworkName)" />
       <MemberType>Method</MemberType>
@@ -458,7 +458,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Runtime.Versioning.FrameworkName left, System.Runtime.Versioning.FrameworkName right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Runtime.Versioning.FrameworkName left, System.Runtime.Versioning.FrameworkName right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Runtime.Versioning.FrameworkName left, class System.Runtime.Versioning.FrameworkName right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.FrameworkName.op_Inequality(System.Runtime.Versioning.FrameworkName,System.Runtime.Versioning.FrameworkName)" />
       <MemberType>Method</MemberType>

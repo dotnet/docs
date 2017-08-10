@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Compiler Options Listed by Category | Microsoft Docs"
+title: "Visual Basic Compiler Options Listed by Category"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "System.Object Methods | Microsoft Docs"
+title: "System.Object Methods"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

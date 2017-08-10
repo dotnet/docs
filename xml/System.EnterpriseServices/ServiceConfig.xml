@@ -16,8 +16,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies and configures the services that are to be active in the domain which is entered when calling <see cref="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" /> or creating an <see cref="T:System.EnterpriseServices.Activity" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ServiceDomain.Enter%2A> and <xref:System.EnterpriseServices.Activity.%23ctor%2A> allow you to use the services configured by <xref:System.EnterpriseServices.ServiceConfig> with no need to tie those services to a component.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +38,40 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.ServiceConfig" /> class, setting the properties to configure the desired services.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.EnterpriseServices.ServiceConfig>.  
+  
+|Item|Description|  
+|----------|-----------------|  
+|`Binding`|<xref:System.EnterpriseServices.BindingOption.NoBinding>|  
+|`BringYourOwnTransaction`|`null`|  
+|`COMTIIntrinsicsEnabled`|`false`|  
+|`IISIntrinsicsEnabled`|`false`|  
+|`Inheritance`|<xref:System.EnterpriseServices.InheritanceOption.Inherit>|  
+|`IsolationLevel`|<xref:System.EnterpriseServices.TransactionIsolationLevel.Any>|  
+|`PartitionId`|A zero GUID.|  
+|`PartitionOption`|<xref:System.EnterpriseServices.PartitionOption.Ignore>|  
+|`SxsDirectory`|`null`|  
+|`SxsName`|`null`|  
+|`SxsOption`|<xref:System.EnterpriseServices.SxsOption.Ignore>|  
+|`Synchronization`|<xref:System.EnterpriseServices.SynchronizationOption.Disabled>|  
+|`ThreadPool`|<xref:System.EnterpriseServices.ThreadPoolOption.None>|  
+|`TipUrl`|`null`|  
+|`TrackingAppName`|`null`|  
+|`TrackingComponentName`|`null`|  
+|`TrackingEnabled`|`false`|  
+|`Transaction`|<xref:System.EnterpriseServices.TransactionOption.Disabled>|  
+|`TransactionDescription`|`null`|  
+|`TransactionTimeout`|The system default|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">
+          <see cref="T:System.EnterpriseServices.ServiceConfig" /> is not supported on the current platform.</exception>
       </Docs>
     </Member>
     <Member MemberName="Binding">
@@ -48,9 +87,16 @@
         <ReturnType>System.EnterpriseServices.BindingOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the binding option, which indicates whether all work submitted by the activity is to be bound to only one single-threaded apartment (STA).</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.BindingOption" /> values. The default is <see cref="F:System.EnterpriseServices.BindingOption.NoBinding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ServiceConfig.Binding%2A> has no impact on the multithreaded apartment (MTA). This property is used to set the thread pool binding only when creating a <xref:System.EnterpriseServices.Activity>. An error is returned if an attempt is made to set the thread pool binding when calling <xref:System.EnterpriseServices.ServiceDomain.Enter%2A>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BringYourOwnSystemTransaction">
@@ -66,9 +112,19 @@
         <ReturnType>System.Transactions.Transaction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.Transactions.Transaction" /> that represents an existing transaction that supplies the settings used to run the transaction identified by <see cref="T:System.EnterpriseServices.ServiceConfig" />.</summary>
+        <value>A <see cref="T:System.Transactions.Transaction" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ServiceConfig.BringYourOwnSystemTransaction%2A> (BYOT) identifies a transaction that supplies the context for the <xref:System.EnterpriseServices.ServiceConfig> transaction. When you bring your own transaction, that transaction's settings override the other transaction settings in the <xref:System.EnterpriseServices.ServiceConfig> object. The default value for <xref:System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction%2A> is `null`.  
+  
+ For more information on BYOT, see <xref:System.EnterpriseServices.BYOT>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.EnterpriseServices.BYOT" />
       </Docs>
     </Member>
     <Member MemberName="BringYourOwnTransaction">
@@ -84,9 +140,19 @@
         <ReturnType>System.EnterpriseServices.ITransaction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a <see cref="T:System.EnterpriseServices.ITransaction" /> that represents an existing transaction that supplies the settings used to run the transaction identified by <see cref="T:System.EnterpriseServices.ServiceConfig" />.</summary>
+        <value>An <see cref="T:System.EnterpriseServices.ITransaction" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction%2A> (BYOT) identifies a transaction that supplies the context for the <xref:System.EnterpriseServices.ServiceConfig> transaction. When you bring your own transaction, that transaction's settings override the other transaction settings in the <xref:System.EnterpriseServices.ServiceConfig> object. The default value for <xref:System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction%2A> is `null`.  
+  
+ For more information on BYOT, see <xref:System.EnterpriseServices.BYOT>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.EnterpriseServices.BYOT" />
       </Docs>
     </Member>
     <Member MemberName="COMTIIntrinsicsEnabled">
@@ -102,9 +168,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether COM Transaction Integrator (COMTI) intrinsics are enabled.</summary>
+        <value>
+          <see langword="true" /> if COMTI intrinsics are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enables passing context properties from the COMTI into the context for this class. The COMTI eases the task of wrapping mainframe transactions and business logic as COM components.  
+  
+ Configures the COMTI intrinsics for the work that is done. The COMTI eases the task of wrapping mainframe transactions and business logic with transactions.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IISIntrinsicsEnabled">
@@ -120,9 +196,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether Internet Information Services (IIS) intrinsics are enabled.</summary>
+        <value>
+          <see langword="true" /> if IIS intrinsics are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enables passing IIS context properties, such as an application session object or a user session object, into the context for this class.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Inheritance">
@@ -138,8 +222,8 @@
         <ReturnType>System.EnterpriseServices.InheritanceOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether to construct a new context based on the current context or to create a new context based solely on the information in <see cref="T:System.EnterpriseServices.ServiceConfig" />.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.InheritanceOption" /> values. The default is <see cref="F:System.EnterpriseServices.InheritanceOption.Inherit" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,9 +240,16 @@
         <ReturnType>System.EnterpriseServices.TransactionIsolationLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the isolation level of the transaction.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.TransactionIsolationLevel" /> values. The default is <see cref="F:System.EnterpriseServices.TransactionIsolationLevel.Any" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new transaction is created if the enclosing transaction is not running at the specified isolation level. <xref:System.EnterpriseServices.ServiceConfig.IsolationLevel%2A> is ignored if the enclosed code would not otherwise run in a transaction.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PartitionId">
@@ -174,8 +265,8 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the GUID for the COM+ partition that is to be used.</summary>
+        <value>The GUID for the partition to be used. The default is a zero GUID.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,8 +283,8 @@
         <ReturnType>System.EnterpriseServices.PartitionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates how partitions are used for the enclosed work.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.PartitionOption" /> values. The default is <see cref="F:System.EnterpriseServices.PartitionOption.Ignore" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,9 +301,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the directory for the side-by-side assembly for the enclosed work.</summary>
+        <value>The name of the directory to be used for the side-by-side assembly. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Configures side-by-side assemblies for this <xref:System.EnterpriseServices.ServiceConfig>.  
+  
+ You must set the <xref:System.EnterpriseServices.ServiceConfig.SxsDirectory%2A> property, if you create a new side-by-side assembly by setting the <xref:System.EnterpriseServices.ServiceConfig.SxsOption%2A> property to <xref:System.EnterpriseServices.SxsOption.New>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SxsName">
@@ -228,8 +328,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the file name of the side-by-side assembly for the enclosed work.</summary>
+        <value>The file name of the side-by-side assembly. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,8 +346,8 @@
         <ReturnType>System.EnterpriseServices.SxsOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates how to configure the side-by-side assembly.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.SxsOption" /> values. The default is <see cref="F:System.EnterpriseServices.SxsOption.Ignore" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,8 +364,8 @@
         <ReturnType>System.EnterpriseServices.SynchronizationOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value in that indicates the type of automatic synchronization requested by the component.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.SynchronizationOption" /> values. The default is <see cref="F:System.EnterpriseServices.SynchronizationOption.Disabled" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,8 +382,8 @@
         <ReturnType>System.EnterpriseServices.ThreadPoolOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates the thread pool which runs the work submitted by the activity.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.ThreadPoolOption" /> values. The default is <see cref="F:System.EnterpriseServices.ThreadPoolOption.None" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,9 +400,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the Transaction Internet Protocol (TIP) URL that allows the enclosed code to run in an existing transaction.</summary>
+        <value>A TIP URL. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.ServiceConfig.TipUrl%2A> is similar to the <xref:System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction%2A> property but allows the enclosed code to run as an existing transaction that is specified by a TIP URL.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackingAppName">
@@ -318,9 +425,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a text string that corresponds to the application ID under which tracker information is reported.</summary>
+        <value>The application ID under which tracker information is reported. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because no component is associated with this tracker property, tracker activity is reported as arising from a component with the name specified by <xref:System.EnterpriseServices.ServiceConfig.TrackingAppName%2A>.  
+  
+ For more information, see <xref:System.EnterpriseServices.ServiceConfig.TrackingEnabled%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="P:System.EnterpriseServices.ServiceConfig.TrackingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="TrackingComponentName">
@@ -336,9 +453,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a text string that corresponds to the context name under which tracker information is reported.</summary>
+        <value>The context name under which tracker information is reported. The default value is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
+        <altmember cref="P:System.EnterpriseServices.ServiceConfig.TrackingEnabled" />
       </Docs>
     </Member>
     <Member MemberName="TrackingEnabled">
@@ -354,9 +472,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates whether tracking is enabled.</summary>
+        <value>
+          <see langword="true" /> if tracking is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tracker is a reporting mechanism used by monitoring applications to watch running COM+ components. It is the reporting mechanism behind the spinning component icons in the Component Services administrative tool.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transaction">
@@ -372,8 +498,8 @@
         <ReturnType>System.EnterpriseServices.TransactionOption</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates how transactions are used in the enclosed work.</summary>
+        <value>One of the <see cref="T:System.EnterpriseServices.TransactionOption" /> values. The default is <see cref="F:System.EnterpriseServices.TransactionOption.Disabled" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,9 +516,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name that is used when transaction statistics are displayed.</summary>
+        <value>The name used when transaction statistics are displayed. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a description if not provided, the value of <xref:System.EnterpriseServices.ServiceConfig.TrackingComponentName%2A> is used to describe the transaction.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransactionTimeout">
@@ -408,8 +541,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the transaction time-out for a new transaction.</summary>
+        <value>The transaction time-out, in seconds.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

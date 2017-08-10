@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Pen Width and Alignment | Microsoft Docs"
+title: "How to: Set Pen Width and Alignment"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

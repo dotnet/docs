@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugLoadedModule::GetBaseAddress Method | Microsoft Docs"
+title: "ICorDebugLoadedModule::GetBaseAddress Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

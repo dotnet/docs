@@ -1,5 +1,5 @@
 ---
-title: "704 - ServiceChannelBeginCallStart | Microsoft Docs"
+title: "704 - ServiceChannelBeginCallStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

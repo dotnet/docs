@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt; | Microsoft Docs"
+title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -72,7 +72,7 @@ Adds a listener to the **Listeners** collection.
 ## Remarks  
  The <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes share the same **Listeners** collection. If you add a listener object to the collection in one of these classes, the other class uses the same listener. The listener classes derive from the <xref:System.Diagnostics.TraceListener>.  
   
- If you do not specify the `nam`e attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify unique names for each trace listener, which allows you to identify and manage individual trace listeners within the <xref:System.Diagnostics.Debug.Listeners%2A> and <xref:System.Diagnostics.Trace.Listeners%2A> collections.  
+ If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify unique names for each trace listener, which allows you to identify and manage individual trace listeners within the <xref:System.Diagnostics.Debug.Listeners%2A> and <xref:System.Diagnostics.Trace.Listeners%2A> collections.  
   
 > [!NOTE]
 >  Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  

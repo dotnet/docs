@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain3::GetCachedWinRTTypes Method | Microsoft Docs"
+title: "ICorDebugAppDomain3::GetCachedWinRTTypes Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

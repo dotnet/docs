@@ -16,7 +16,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Installs and configures assemblies in the COM+ catalog.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,12 +39,19 @@
         <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="application">To be added.</param>
-        <param name="tlb">To be added.</param>
-        <param name="installFlags">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="assembly">The assembly name as a file or the strong name of an assembly in the global assembly cache (GAC).</param>
+        <param name="application">The application parameter can be <see langword="null" />. If it is, the name of the application is automatically generated based on the name of the assembly or the <see langword="ApplicationName" /> attribute. If the application contains an <see langword="ApplicationID" /> attribute, the attribute takes precedence.</param>
+        <param name="tlb">The name of the output type library (TLB) file, or a string containing <see langword="null" /> if the registration helper is expected to generate the name. On call completion, the actual name used is placed in the parameter.</param>
+        <param name="installFlags">The installation options specified in the enumeration.</param>
+        <summary>Installs the assembly into the COM+ catalog.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UninstallAssembly">
@@ -64,9 +71,9 @@
         <Parameter Name="application" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="assembly">To be added.</param>
-        <param name="application">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="assembly">The assembly name as a file or the strong name of an assembly in the global assembly cache (GAC).</param>
+        <param name="application">The name of the COM+ application.</param>
+        <summary>Uninstalls the assembly from the COM+ catalog.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

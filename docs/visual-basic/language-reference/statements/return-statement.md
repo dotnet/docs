@@ -1,5 +1,5 @@
 ---
-title: "Return Statement (Visual Basic) | Microsoft Docs"
+title: "Return Statement (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

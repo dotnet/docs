@@ -1,5 +1,5 @@
 ---
-title: "Path Animations Overview | Microsoft Docs"
+title: "Path Animations Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,6 @@ manager: "wpickett"
 # Path Animations Overview
 <a name="introduction"></a> This topic introduces path animations, which enable you to use a geometric path to generate output values. Path animations are useful for moving and rotating objects along complex paths.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the                  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
@@ -34,7 +33,7 @@ manager: "wpickett"
   
  Path animations are very useful for animating an object along a complex path. One way to move an object along a path is to use a                  <xref:System.Windows.Media.MatrixTransform> and a                  <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> to transform an object along a complex path. The following example demonstrates this technique by using the                  <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> object to animate the                  <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property of a                  <xref:System.Windows.Media.MatrixTransform>. The                  <xref:System.Windows.Media.MatrixTransform> is applied to a button and causes it to move along a curved path. Because the                  <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.DoesRotateWithTangent%2A> property is set to                  `true`, the rectangle rotates along the tangent of the path.  
   
- [!code-xml[PathAnimationGallery_snippet#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/matrixanimationusingpathdoesrotatewithtangentexample.xaml#matrixanimationusingpathdoesrotatewithtangentwholepage)]  
+ [!code-xaml[PathAnimationGallery_snippet#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/matrixanimationusingpathdoesrotatewithtangentexample.xaml#matrixanimationusingpathdoesrotatewithtangentwholepage)]  
   
  [!code-csharp[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/CSharp/MatrixAnimationUsingPathDoesRotateWithTangentExample.cs#matrixanimationusingpathdoesrotatewithtangentwholepage)]
  [!code-vb[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/VisualBasic/MatrixAnimationUsingPathDoesRotateWithTangentExample.vb#matrixanimationusingpathdoesrotatewithtangentwholepage)]  

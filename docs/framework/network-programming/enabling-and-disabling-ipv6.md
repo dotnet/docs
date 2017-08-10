@@ -1,5 +1,5 @@
 ---
-title: "Enabling and Disabling IPv6 | Microsoft Docs"
+title: "Enabling and Disabling IPv6"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

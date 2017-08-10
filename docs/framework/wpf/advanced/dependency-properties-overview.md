@@ -1,5 +1,5 @@
 ---
-title: "Dependency Properties Overview | Microsoft Docs"
+title: "Dependency Properties Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -68,13 +68,13 @@ manager: "wpickett"
 ### Setting Property Values in XAML  
  The following XAML example specifies the background color of a button as red. This example illustrates a case where the simple string value for a XAML attribute is type-converted by the WPF XAML parser into a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] type (a <xref:System.Windows.Media.Color>, by way of a <xref:System.Windows.Media.SolidColorBrush>) in the generated code.  
   
- [!code-xml[PropertiesOvwSupport#MostBasicProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]  
+ [!code-xaml[PropertiesOvwSupport#MostBasicProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]  
   
  XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md) and [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
  As an example of non-attribute syntax, the following XAML example shows another button background. This time rather than setting a simple solid color, the background is set to an image, with an element representing that image and the source of that image specified as an attribute of the nested element. This is an example of property element syntax.  
   
- [!code-xml[PropertiesOvwSupport#PESyntaxProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#pesyntaxproperty)]  
+ [!code-xaml[PropertiesOvwSupport#PESyntaxProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#pesyntaxproperty)]  
   
 <a name="setting_properties_code"></a>   
 ### Setting Properties in Code  
@@ -114,11 +114,11 @@ manager: "wpickett"
 ### Resources  
  A dependency property value can be set by referencing a resource. Resources are typically specified as the `Resources` property value of a page root element, or of the application (these locations enable the most convenient access to the resource). The following example shows how to define a <xref:System.Windows.Media.SolidColorBrush> resource.  
   
- [!code-xml[PropertiesOvwSupport#ResourcesResource](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesresource)]  
+ [!code-xaml[PropertiesOvwSupport#ResourcesResource](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesresource)]  
   
  Once the resource is defined, you can reference the resource and use it to provide a property value:  
   
- [!code-xml[PropertiesOvwSupport#ResourcesReference](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesreference)]  
+ [!code-xaml[PropertiesOvwSupport#ResourcesReference](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesreference)]  
   
  This particular resource is referenced as a [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md) (in WPF XAML, you can use either a static or dynamic resource reference). To use a dynamic resource reference, you must be setting to a dependency property, so it is specifically the dynamic resource reference usage that is enabled by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system. For more information, see [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
   
@@ -131,7 +131,7 @@ manager: "wpickett"
   
  The following example sets the <xref:System.Windows.Controls.ContentControl.Content%2A> property for a <xref:System.Windows.Controls.Button>, using a binding declared in XAML. The binding uses an inherited data context and an <xref:System.Windows.Data.XmlDataProvider> data source (not shown). The binding itself specifies the desired source property by <xref:System.Windows.Data.Binding.XPath%2A> within the data source.  
   
- [!code-xml[PropertiesOvwSupport#BasicInlineBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#basicinlinebinding)]  
+ [!code-xaml[PropertiesOvwSupport#BasicInlineBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#basicinlinebinding)]  
   
 > [!NOTE]
 >  Bindings are treated as a local value, which means that if you set another local value, you will eliminate the binding. For details, see [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
@@ -144,9 +144,9 @@ manager: "wpickett"
   
  The following example creates a very simple style (which would be defined inside a <xref:System.Windows.FrameworkElement.Resources%2A> dictionary, not shown), then applies that style directly to the <xref:System.Windows.FrameworkElement.Style%2A> property for a <xref:System.Windows.Controls.Button>. The setter within the style sets the <xref:System.Windows.Controls.Control.Background%2A> property for a styled <xref:System.Windows.Controls.Button> to green.  
   
- [!code-xml[PropertiesOvwSupport#SimpleStyleDef](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyledef)]  
+ [!code-xaml[PropertiesOvwSupport#SimpleStyleDef](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyledef)]  
   
- [!code-xml[PropertiesOvwSupport#SimpleStyle](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyle)]  
+ [!code-xaml[PropertiesOvwSupport#SimpleStyle](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyle)]  
   
  For more information, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
   
@@ -156,7 +156,7 @@ manager: "wpickett"
   
  The following example animates the <xref:System.Windows.Controls.Control.Background%2A> on a <xref:System.Windows.Controls.Button> property (technically, the <xref:System.Windows.Controls.Control.Background%2A> is animated by using property element syntax to specify a blank <xref:System.Windows.Media.SolidColorBrush> as the <xref:System.Windows.Controls.Control.Background%2A>, then the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of that <xref:System.Windows.Media.SolidColorBrush> is the property that is directly animated).  
   
- [!code-xml[PropertiesOvwSupport#MiniAnimate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#minianimate)]  
+ [!code-xaml[PropertiesOvwSupport#MiniAnimate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#minianimate)]  
   
  For more information on animating properties, see [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md) and [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
@@ -180,7 +180,7 @@ manager: "wpickett"
   
  The following example shows a binding, and sets the <xref:System.Windows.FrameworkElement.DataContext%2A> property that specifies the source of the binding, which was not shown in the earlier binding example. Any subsequent bindings in child objects do not need to specify the source, they can use the inherited value from <xref:System.Windows.FrameworkElement.DataContext%2A> in the parent <xref:System.Windows.Controls.StackPanel> object. (Alternatively, a child object could instead choose to directly specify its own <xref:System.Windows.FrameworkElement.DataContext%2A> or a <xref:System.Windows.Data.Binding.Source%2A> in the <xref:System.Windows.Data.Binding>, and to deliberately not use the inherited value for data context of its bindings.)  
   
- [!code-xml[PropertiesOvwSupport#InheritanceContext](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#inheritancecontext)]  
+ [!code-xaml[PropertiesOvwSupport#InheritanceContext](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#inheritancecontext)]  
   
  For more information, see [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md).  
   
@@ -199,7 +199,7 @@ manager: "wpickett"
   
  In principle, for the first button, the property is set twice, but only one value applies: the value with the highest precedence. A locally set value has the highest precedence (except for a running animation, but no animation applies in this example) and thus the locally set value is used instead of the style setter value for the background on the first button. The second button has no local value (and no other value with higher precedence than a style setter) and thus the background in that button comes from the style setter.  
   
- [!code-xml[PropertiesOvwSupport#MiniPrecedence](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#miniprecedence)]  
+ [!code-xaml[PropertiesOvwSupport#MiniPrecedence](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#miniprecedence)]  
   
 ### Why Does Dependency Property Precedence Exist?  
  Typically, you would not want styles to always apply and to obscure even a locally set value of an individual element (otherwise, it would be very difficult to use either styles or elements in general). Therefore, the values that come from styles operate at a lower precedent than a locally set value. For a more thorough listing of dependency properties and where a dependency property effective value might come from, see [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md).  

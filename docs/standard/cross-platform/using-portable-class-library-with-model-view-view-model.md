@@ -1,5 +1,5 @@
 ---
-title: "Using Portable Class Library with Model-View-View Model | Microsoft Docs"
+title: "Using Portable Class Library with Model-View-View Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -91,7 +91,7 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
 ### View  
  From a [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] app, [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, Silverlight-based app, or Windows Phone 7.5 app, you can reference the assembly that contains the model and view model projects.  You then create a view that interacts with the view model. The following example shows a simplified Windows Presentation Foundation (WPF) app that retrieves and updates data from the view model. You could create similar views in Silverlight, Windows Phone, or [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.  
   
- [!code-xml[PortableClassLibraryMVVM#6](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/mainwindow.xaml#6)]  
+ [!code-xaml[PortableClassLibraryMVVM#6](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/mainwindow.xaml#6)]  
   
 ## See Also  
  [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)

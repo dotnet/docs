@@ -1,5 +1,5 @@
 ---
-title: "Binding Declarations Overview | Microsoft Docs"
+title: "Binding Declarations Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -43,7 +43,7 @@ This topic discusses the different ways you can declare a binding.
   
  When creating binding declaration strings in markup, they must be attached to the specific dependency property of a target object. The following example shows how to bind the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=fullName> property using the binding extension, specifying the <xref:System.Windows.Data.Binding.Source%2A> and <xref:System.Windows.Data.Binding.Path%2A> properties.  
   
- [!code-xml[SimpleBinding#BDO1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#bdo1)]  
+ [!code-xaml[SimpleBinding#BDO1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml#bdo1)]  
   
  You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension as well as for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md) overview.  
   
@@ -53,7 +53,7 @@ This topic discusses the different ways you can declare a binding.
   
  The following is an example of both the object element syntax and the markup extension usage:  
   
- [!code-xml[BindConversionMarkup#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindConversionMarkup/CSharp/Page1.xaml#1)]  
+ [!code-xaml[BindConversionMarkup#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindConversionMarkup/CSharp/Page1.xaml#1)]  
   
  The example binds the <xref:System.Windows.Controls.TextBlock.Foreground%2A> property by declaring a binding using the extension syntax. The binding declaration for the <xref:System.Windows.Controls.TextBlock.Text%2A> property uses the object element syntax.  
   

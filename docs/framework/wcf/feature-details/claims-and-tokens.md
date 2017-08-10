@@ -1,5 +1,5 @@
 ---
-title: "Claims and Tokens | Microsoft Docs"
+title: "Claims and Tokens"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -65,7 +65,7 @@ This topic describes the various claim types that [!INCLUDE[indigo1](../../../..
  Where an RSA key not associated with a certificate is used, the resulting `ClaimSet` is self-issued and contains an `Identity` claim oftype<xref:System.IdentityModel.Claims.ClaimTypes.Rsa%2A> whose resource is the RSA key. A corresponding claim has a `Right` of `PossessProperty`.  
   
 ## SAML  
- Where the client authenticates with a Security Assertions Markup Language (SAML) token, the resulting `ClaimSet` is issued by the entity that signed the SAML token, often the certificate of the security token service (STS) that issued the SAML token. The `ClaimSet` contains various claims as found in the SAML token. If the SAML token contains a `SamlSubject`with a non-`null` name, then an `Identity` claim with a type of <xref:System.IdentityModel.Claims.ClaimTypes.NameIdentifier%2A> and a resource type of <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> are created.  
+ Where the client authenticates with a Security Assertions Markup Language (SAML) token, the resulting `ClaimSet` is issued by the entity that signed the SAML token, often the certificate of the security token service (STS) that issued the SAML token. The `ClaimSet` contains various claims as found in the SAML token. If the SAML token contains a `SamlSubject` with a non-`null` name, then an `Identity` claim with a type of <xref:System.IdentityModel.Claims.ClaimTypes.NameIdentifier%2A> and a resource type of <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> are created.  
   
 ## Identity Claims and ServiceSecurityContext.IsAnonymous  
  If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity,` then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.  

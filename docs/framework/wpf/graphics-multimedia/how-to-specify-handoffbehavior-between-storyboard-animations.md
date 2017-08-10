@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify HandoffBehavior Between Storyboard Animations | Microsoft Docs"
+title: "How to: Specify HandoffBehavior Between Storyboard Animations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,7 @@ This example shows how to specify handoff behavior between storyboard animations
 ## Example  
  The following example creates two buttons that enlarge when the mouse cursor moves over them and become smaller when the cursor moves away. If you mouse over a button and then quickly remove the cursor, the second animation will be applied before the first one is finished. It is when two animations overlap like this that you can see the difference between the <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> values of <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> and <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace>. A value of <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> combines the overlapping animations causing a smoother transition between animations while a value of <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> causes the new animation to immediately replace the earlier overlapping animation.  
   
- [!code-xml[timingbehaviors_snip#HandoffBehaviorWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/HandoffBehaviorExample.xaml#handoffbehaviorwholepage)]  
+ [!code-xaml[timingbehaviors_snip#HandoffBehaviorWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/HandoffBehaviorExample.xaml#handoffbehaviorwholepage)]  
   
 ## See Also  
  <xref:System.Windows.Media.Animation.BeginStoryboard>   

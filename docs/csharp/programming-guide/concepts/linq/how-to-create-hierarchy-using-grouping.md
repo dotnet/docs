@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Hierarchy Using Grouping (C#) | Microsoft Docs"
+title: "How to: Create Hierarchy Using Grouping (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

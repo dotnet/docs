@@ -1,5 +1,5 @@
 ---
-title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments | Microsoft Docs"
+title: "Data type(s) of the type parameter(s) cannot be inferred from these arguments"
 
 ms.date: "2015-07-20"
 ms.prod: .net

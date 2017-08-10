@@ -1,5 +1,5 @@
 ---
-title: "Performing Culture-Insensitive String Operations | Microsoft Docs"
+title: "Performing Culture-Insensitive String Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

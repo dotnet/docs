@@ -60,7 +60,7 @@
    
   
 ## Examples  
- [!code-xml[animation3dgallery_snip#QuaternionAnimationExampleInline2](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationExample.xaml#quaternionanimationexampleinline2)]  
+ [!code-xaml[animation3dgallery_snip#QuaternionAnimationExampleInline2](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationExample.xaml#quaternionanimationexampleinline2)]  
   
  [!code-csharp[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/MatrixTransform3DView/CSharp/Window1.xaml.cs#matrixtransform3dview3dn4)]
  [!code-vb[matrixtransform3dview#MatrixTransform3DView3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MatrixTransform3DView/visualbasic/window1.xaml.vb#matrixtransform3dview3dn4)]  
@@ -446,7 +446,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion op_Addition (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion operator + (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Quaternion op_Addition(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Addition(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -470,7 +470,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Quaternion quaternion1, valuetype System.Windows.Media.Media3D.Quaternion quaternion2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Equality(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -502,7 +502,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Media3D.Quaternion quaternion1, System.Windows.Media.Media3D.Quaternion quaternion2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Quaternion quaternion1, valuetype System.Windows.Media.Media3D.Quaternion quaternion2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Inequality(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -534,7 +534,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion op_Multiply (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion operator * (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Quaternion op_Multiply(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Multiply(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -558,7 +558,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion op_Subtraction (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Quaternion operator - (System.Windows.Media.Media3D.Quaternion left, System.Windows.Media.Media3D.Quaternion right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Quaternion op_Subtraction(valuetype System.Windows.Media.Media3D.Quaternion left, valuetype System.Windows.Media.Media3D.Quaternion right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Quaternion.op_Subtraction(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion)" />
       <MemberType>Method</MemberType>

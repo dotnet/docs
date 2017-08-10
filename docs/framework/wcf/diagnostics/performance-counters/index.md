@@ -1,5 +1,5 @@
 ---
-title: "WCF Performance Counters | Microsoft Docs"
+title: "WCF Performance Counters"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

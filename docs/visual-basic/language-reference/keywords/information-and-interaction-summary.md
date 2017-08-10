@@ -1,5 +1,5 @@
 ---
-title: "Information and Interaction Summary (Visual Basic) | Microsoft Docs"
+title: "Information and Interaction Summary (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

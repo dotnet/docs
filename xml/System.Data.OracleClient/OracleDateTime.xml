@@ -662,7 +662,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Equality(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
       <MemberType>Method</MemberType>
@@ -689,7 +689,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static DateTime op_Explicit (System.Data.OracleClient.OracleDateTime x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator DateTime (System.Data.OracleClient.OracleDateTime x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(valuetype System.Data.OracleClient.OracleDateTime x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.Data.OracleClient.OracleDateTime)~System.DateTime" />
       <MemberType>Method</MemberType>
@@ -711,7 +711,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleDateTime op_Explicit (string x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleDateTime (string x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleDateTime op_Explicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.String)~System.Data.OracleClient.OracleDateTime" />
       <MemberType>Method</MemberType>
@@ -733,7 +733,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_GreaterThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
       <MemberType>Method</MemberType>
@@ -759,7 +759,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_GreaterThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
       <MemberType>Method</MemberType>
@@ -785,7 +785,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Inequality(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
       <MemberType>Method</MemberType>
@@ -811,7 +811,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_LessThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
       <MemberType>Method</MemberType>
@@ -837,7 +837,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_LessThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
       <MemberType>Method</MemberType>

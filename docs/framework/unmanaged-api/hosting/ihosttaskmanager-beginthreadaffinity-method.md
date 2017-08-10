@@ -1,5 +1,5 @@
 ---
-title: "IHostTaskManager::BeginThreadAffinity Method | Microsoft Docs"
+title: "IHostTaskManager::BeginThreadAffinity Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

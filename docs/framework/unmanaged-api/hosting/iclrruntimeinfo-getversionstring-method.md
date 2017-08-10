@@ -1,5 +1,5 @@
 ---
-title: "ICLRRuntimeInfo::GetVersionString Method | Microsoft Docs"
+title: "ICLRRuntimeInfo::GetVersionString Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -57,7 +57,7 @@ HRESULT GetVersionString(
  Example values are "v1.0.3705", "v1.1.4322", "v2.0.50727", and "v4.0.*x*", where *x* depends on the build number installed. Note that the "v" prefix is mandatory.  
   
  `pchBuffer`  
- [in, out] Specifies the size of `pwzBuffer` to avoid buffer overruns. If `pwzBuffer` is `null`, `pchBuffer` returns the required size of `pwzBuffer`to allow preallocation.  
+ [in, out] Specifies the size of `pwzBuffer` to avoid buffer overruns. If `pwzBuffer` is `null`, `pchBuffer` returns the required size of `pwzBuffer` to allow preallocation.  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  

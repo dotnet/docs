@@ -1,5 +1,5 @@
 ---
-title: "&lt;authentication&gt; of &lt;clientCertificate&gt; Element | Microsoft Docs"
+title: "&lt;authentication&gt; of &lt;clientCertificate&gt; Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

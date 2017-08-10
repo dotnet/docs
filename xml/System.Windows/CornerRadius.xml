@@ -65,7 +65,7 @@
   
  [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
  [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
- [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+ [!code-xaml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -238,7 +238,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.CornerRadius cr1, System.Windows.CornerRadius cr2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.CornerRadius cr1, System.Windows.CornerRadius cr2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.CornerRadius cr1, valuetype System.Windows.CornerRadius cr2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.op_Equality(System.Windows.CornerRadius,System.Windows.CornerRadius)" />
       <MemberType>Method</MemberType>
@@ -263,7 +263,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.CornerRadius cr1, System.Windows.CornerRadius cr2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.CornerRadius cr1, System.Windows.CornerRadius cr2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.CornerRadius cr1, valuetype System.Windows.CornerRadius cr2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.op_Inequality(System.Windows.CornerRadius,System.Windows.CornerRadius)" />
       <MemberType>Method</MemberType>

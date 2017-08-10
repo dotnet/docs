@@ -199,7 +199,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.VirtualizationCacheLength cl1, System.Windows.Controls.VirtualizationCacheLength cl2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.VirtualizationCacheLength cl1, System.Windows.Controls.VirtualizationCacheLength cl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.VirtualizationCacheLength cl1, valuetype System.Windows.Controls.VirtualizationCacheLength cl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.op_Equality(System.Windows.Controls.VirtualizationCacheLength,System.Windows.Controls.VirtualizationCacheLength)" />
       <MemberType>Method</MemberType>
@@ -231,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.VirtualizationCacheLength cl1, System.Windows.Controls.VirtualizationCacheLength cl2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.VirtualizationCacheLength cl1, System.Windows.Controls.VirtualizationCacheLength cl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.VirtualizationCacheLength cl1, valuetype System.Windows.Controls.VirtualizationCacheLength cl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizationCacheLength.op_Inequality(System.Windows.Controls.VirtualizationCacheLength,System.Windows.Controls.VirtualizationCacheLength)" />
       <MemberType>Method</MemberType>

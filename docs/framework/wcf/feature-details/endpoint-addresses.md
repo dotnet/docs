@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Addresses | Microsoft Docs"
+title: "Endpoint Addresses"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -141,7 +141,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 ### Custom SOAP Address Filter  
  The <xref:System.ServiceModel.EndpointAddress.Uri%2A> is used in conjunction with any <xref:System.ServiceModel.EndpointAddress.Headers%2A> property to define an endpoint’s SOAP address filter (<xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A>). By default, this filter verifies that an incoming message has a `To` message header that matches the endpoint’s URI and that all of the required endpoint headers are present in the message.  
   
- In some scenarios, an endpoint receives all messages that arrive on the underlying transport, and not just those with the appropriate `To`header. To enable this, the user can use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> class.  
+ In some scenarios, an endpoint receives all messages that arrive on the underlying transport, and not just those with the appropriate `To` header. To enable this, the user can use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> class.  
   
 ## See Also  
  [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md)   

@@ -1,5 +1,5 @@
 ---
-title: "How to: List Installed Encoders | Microsoft Docs"
+title: "How to: List Installed Encoders"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

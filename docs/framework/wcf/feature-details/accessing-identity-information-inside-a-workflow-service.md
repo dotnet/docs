@@ -1,5 +1,5 @@
 ---
-title: "Accessing Identity Information inside a Workflow Service | Microsoft Docs"
+title: "Accessing Identity Information inside a Workflow Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

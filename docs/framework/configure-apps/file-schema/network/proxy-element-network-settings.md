@@ -1,5 +1,5 @@
 ---
-title: "&lt;proxy&gt; Element (Network Settings) | Microsoft Docs"
+title: "&lt;proxy&gt; Element (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -85,7 +85,7 @@ proxyaddress="uriString"
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access.  
+ The following example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access.  
   
 ```xml  
 <configuration>  

@@ -1,5 +1,5 @@
 ---
-title: "WIF and Web Farms | Microsoft Docs"
+title: "WIF and Web Farms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Style Controls on a ToolBar | Microsoft Docs"
+title: "How to: Style Controls on a ToolBar"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -43,8 +43,8 @@ The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.Resource
 ## Example  
  The following example defines styles for the controls within a <xref:System.Windows.Controls.ToolBar>.  
   
- [!code-xml[ToolBar_snip#ToolBarAllStyles](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarallstyles)]  
-[!code-xml[ToolBar_snip#ToolBar](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbar)]  
+ [!code-xaml[ToolBar_snip#ToolBarAllStyles](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarallstyles)]  
+[!code-xaml[ToolBar_snip#ToolBar](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbar)]  
   
 ## See Also  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

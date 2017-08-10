@@ -1,5 +1,5 @@
 ---
-title: "Queues in Windows Communication Foundation | Microsoft Docs"
+title: "Queues in Windows Communication Foundation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

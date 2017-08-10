@@ -166,7 +166,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static string op_Explicit (Microsoft.Build.BuildEngine.BuildProperty propertyToCast);" />
+      <MemberSignature Language="C#" Value="public static explicit operator string (Microsoft.Build.BuildEngine.BuildProperty propertyToCast);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Explicit(class Microsoft.Build.BuildEngine.BuildProperty propertyToCast) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildProperty.op_Explicit(Microsoft.Build.BuildEngine.BuildProperty)~System.String" />
       <MemberType>Method</MemberType>

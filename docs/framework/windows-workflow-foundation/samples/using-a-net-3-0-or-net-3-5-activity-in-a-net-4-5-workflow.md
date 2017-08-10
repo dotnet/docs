@@ -1,5 +1,5 @@
 ---
-title: "Using a .NET Framework 3.0 or .NET Framework 3.5 Activity in a .NET Framework 4.5 Workflow | Microsoft Docs"
+title: "Using a .NET Framework 3.0 or .NET Framework 3.5 Activity in a .NET Framework 4.5 Workflow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

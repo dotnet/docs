@@ -1,5 +1,5 @@
 ---
-title: "Guidelines for Collections | Microsoft Docs"
+title: "Guidelines for Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

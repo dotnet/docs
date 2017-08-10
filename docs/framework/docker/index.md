@@ -1,6 +1,6 @@
 ---
-title: Docker on .NET Framework | Microsoft Docs
-description: Docker on .NET Framework
+title: Docker on .NET Framework
+description: Learn about deploying .NET Framework apps with Docker using Windows Containers.
 keywords: .NET, .NET Server, Docker, Windows Containers
 author: BillWagner
 ms.author: wiwagn
@@ -18,4 +18,4 @@ You can deploy .NET Framework applicaton with Docker, using Windows Containers. 
 
 You can begin by [running a console application with Docker](console.md).
 For running web applications in Docker, you can read
-[ASP.NET MVC applications in Docker](https://docs.microsoft.com/aspnet/mvc/overview/deployment/docker-aspnetmvc).
+[ASP.NET MVC applications in Docker](/aspnet/mvc/overview/deployment/docker-aspnetmvc).

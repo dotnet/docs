@@ -1,5 +1,5 @@
 ---
-title: "How to: Enumerate System Fonts | Microsoft Docs"
+title: "How to: Enumerate System Fonts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

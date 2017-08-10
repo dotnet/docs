@@ -1,5 +1,5 @@
 ---
-title: "Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1 | Microsoft Docs"
+title: "Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

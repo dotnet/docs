@@ -1,5 +1,5 @@
 ---
-title: "105 - FaultPropagationRecord | Microsoft Docs"
+title: "105 - FaultPropagationRecord"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

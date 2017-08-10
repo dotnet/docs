@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue2::GetVirtualMethodAndType Method | Microsoft Docs"
+title: "ICorDebugObjectValue2::GetVirtualMethodAndType Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

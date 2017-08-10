@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an agreement between parts that allows the composition engine to match imports with exports.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,9 +31,10 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractType">The contract type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.CompositionContract" /> class with the specified contract type.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -50,10 +52,11 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractType">The contract type.</param>
+        <param name="contractName">The contract name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.CompositionContract" /> class with the specified contract name and type.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,11 +75,12 @@
         <Parameter Name="metadataConstraints" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="metadataConstraints">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractType">The contract type.</param>
+        <param name="contractName">The contract name.</param>
+        <param name="metadataConstraints">A collection of metadata constraints for the contract.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.CompositionContract" /> class with the specified contract name, type, and metadata constraints.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeType">
@@ -96,10 +100,11 @@
         <Parameter Name="newContractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="newContractType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="newContractType">The new contract type.</param>
+        <summary>Creates a new contract that has the specified type but the same name and constraints as this object.</summary>
+        <returns>The created contract.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractName">
@@ -116,9 +121,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the contract.</summary>
+        <value>The contract name.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractType">
@@ -135,9 +141,10 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contract type.</summary>
+        <value>The contract type.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -157,10 +164,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare with this object.</param>
+        <summary>Determines whether the specified object is equal to this instance of <see cref="T:System.Composition.Hosting.Core.CompositionContract" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -178,9 +187,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the hash code for this <see cref="T:System.Composition.Hosting.Core.CompositionContract" /> object.</summary>
+        <returns>The hash code for the current object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MetadataConstraints">
@@ -197,9 +207,10 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a collection of metadata constraints for the contract.</summary>
+        <value>A collection of metadata constraints.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -217,9 +228,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.CompositionContract" /> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.CompositionContract" /> object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryUnwrapMetadataConstraint&lt;T&gt;">
@@ -244,13 +256,15 @@
         <Parameter Name="remainingContract" Type="System.Composition.Hosting.Core.CompositionContract&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="constraintName">To be added.</param>
-        <param name="constraintValue">To be added.</param>
-        <param name="remainingContract">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the metadata constraint value.</typeparam>
+        <param name="constraintName">The name of the metadata constraint.</param>
+        <param name="constraintValue">When this method returns, contains the value of the constraint if it was found. This parameter is treated as uninitialized.</param>
+        <param name="remainingContract">When this method returns, holds the contract with the constraint removed, if the constraint was found. This parameter is treated as uninitialized.</param>
+        <summary>Gets a metadata constraint that has the specified type and name, if it exists.</summary>
+        <returns>
+          <see langword="true" /> if the constrained metadata item was unwrapped and the value extracted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

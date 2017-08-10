@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates the transaction status.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.TransactionStatus> is the value returned by <xref:System.EnterpriseServices.ServiceDomain.Leave%2A>.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Aborted">
@@ -32,7 +39,7 @@
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction is aborted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Aborting">
@@ -48,7 +55,7 @@
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction is in the process of aborting.</summary>
       </Docs>
     </Member>
     <Member MemberName="Commited">
@@ -64,7 +71,7 @@
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction has committed.</summary>
       </Docs>
     </Member>
     <Member MemberName="LocallyOk">
@@ -80,7 +87,7 @@
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The transaction has neither committed nor aborted.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoTransaction">
@@ -96,7 +103,7 @@
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No transactions are being used through <see cref="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" />.</summary>
       </Docs>
     </Member>
   </Members>

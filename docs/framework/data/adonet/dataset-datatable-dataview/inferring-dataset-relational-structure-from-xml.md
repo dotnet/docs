@@ -1,5 +1,5 @@
 ---
-title: "Inferring DataSet Relational Structure from XML | Microsoft Docs"
+title: "Inferring DataSet Relational Structure from XML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

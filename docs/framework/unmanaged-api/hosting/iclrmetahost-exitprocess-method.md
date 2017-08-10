@@ -1,5 +1,5 @@
 ---
-title: "ICLRMetaHost::ExitProcess Method | Microsoft Docs"
+title: "ICLRMetaHost::ExitProcess Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

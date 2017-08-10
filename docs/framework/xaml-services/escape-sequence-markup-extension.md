@@ -1,5 +1,5 @@
 ---
-title: "{} Escape Sequence - Markup Extension | Microsoft Docs"
+title: "{} Escape Sequence - Markup Extension"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -62,7 +62,7 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
   
  The escape sequence ({}) is frequently required when specifying an XML type that must include a namespace qualifier in a location where a XAML markup extension might appear. This includes the start of a XAML attribute value, and in a markup extension, immediately after an equal sign (=). The following example shows escape sequences for an XML namespace that appears at the start of a XAML attribute value.  
   
- [!code-xml[XLINQExample#StackPanelResources](../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
+ [!code-xaml[XLINQExample#StackPanelResources](../../../samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
   
 ## See Also  
  [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)   

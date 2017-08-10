@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.MessageRead | Microsoft Docs"
+title: "System.ServiceModel.MessageRead"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

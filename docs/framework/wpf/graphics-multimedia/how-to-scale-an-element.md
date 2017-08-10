@@ -1,5 +1,5 @@
 ---
-title: "How to: Scale an Element | Microsoft Docs"
+title: "How to: Scale an Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,13 +30,13 @@ This example shows how to use a              <xref:System.Windows.Media.ScaleTra
  The following example uses a              <xref:System.Windows.Media.ScaleTransform> to double the size of a 50-by-50              <xref:System.Windows.Shapes.Rectangle>. The              <xref:System.Windows.Media.ScaleTransform> has a value of 0 (the default) for both              <xref:System.Windows.Media.ScaleTransform.CenterX%2A> and              <xref:System.Windows.Media.ScaleTransform.CenterY%2A>.  
   
 ## Example  
- [!code-xml[transformsSample#21](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/ScaleTransformExample.xaml#21)]  
+ [!code-xaml[transformsSample#21](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/ScaleTransformExample.xaml#21)]  
   
  Typically, you set                      <xref:System.Windows.Media.ScaleTransform.CenterX%2A> and                      <xref:System.Windows.Media.ScaleTransform.CenterY%2A> to the center of the object that is scaled: (                     <xref:System.Windows.FrameworkElement.Width%2A>/2,                      <xref:System.Windows.FrameworkElement.Height%2A>/2).  
   
  The following example shows another                      <xref:System.Windows.Shapes.Rectangle> that is doubled in size; however, this                      <xref:System.Windows.Media.ScaleTransform> has a value of 25 for both                      <xref:System.Windows.Media.ScaleTransform.CenterX%2A> and                      <xref:System.Windows.Media.ScaleTransform.CenterY%2A>, which corresponds to the center of the rectangle.  
   
- [!code-xml[transformsSample#22](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/ScaleTransformExample.xaml#22)]  
+ [!code-xaml[transformsSample#22](../../../../samples/snippets/csharp/VS_Snippets_Wpf/transformsSample/CS/ScaleTransformExample.xaml#22)]  
   
  The following illustration shows the difference between the two                      <xref:System.Windows.Media.ScaleTransform> operations. The dotted line shows the size and position of the rectangle before scaling.  
   

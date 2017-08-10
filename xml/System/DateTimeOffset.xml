@@ -2341,7 +2341,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static DateTimeOffset op_Addition (DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" />
+      <MemberSignature Language="C#" Value="public static DateTimeOffset operator + (DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Addition(valuetype System.DateTimeOffset dateTimeOffset, valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Addition(System.DateTimeOffset,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -2395,7 +2395,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Equality(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2450,7 +2450,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_GreaterThan(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2507,7 +2507,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_GreaterThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2564,7 +2564,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static DateTimeOffset op_Implicit (DateTime dateTime);" />
+      <MemberSignature Language="C#" Value="public static implicit operator DateTimeOffset (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Implicit(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Implicit(System.DateTime)~System.DateTimeOffset" />
       <MemberType>Method</MemberType>
@@ -2599,7 +2599,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Inequality(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2658,7 +2658,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_LessThan(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2715,7 +2715,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_LessThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2772,7 +2772,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Subtraction (DateTimeOffset left, DateTimeOffset right);" />
+      <MemberSignature Language="C#" Value="public static TimeSpan operator - (DateTimeOffset left, DateTimeOffset right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Subtraction(valuetype System.DateTimeOffset left, valuetype System.DateTimeOffset right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.DateTimeOffset)" />
       <MemberType>Method</MemberType>
@@ -2821,7 +2821,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static DateTimeOffset op_Subtraction (DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" />
+      <MemberSignature Language="C#" Value="public static DateTimeOffset operator - (DateTimeOffset dateTimeOffset, TimeSpan timeSpan);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Subtraction(valuetype System.DateTimeOffset dateTimeOffset, valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)" />
       <MemberType>Method</MemberType>

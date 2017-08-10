@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine If a Page is Browser Hosted | Microsoft Docs"
+title: "How to: Determine If a Page is Browser Hosted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

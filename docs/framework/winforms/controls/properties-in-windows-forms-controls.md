@@ -1,5 +1,5 @@
 ---
-title: "Properties in Windows Forms Controls | Microsoft Docs"
+title: "Properties in Windows Forms Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

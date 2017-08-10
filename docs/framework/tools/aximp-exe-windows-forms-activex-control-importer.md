@@ -1,5 +1,5 @@
 ---
-title: "Aximp.exe (Windows Forms ActiveX Control Importer) | Microsoft Docs"
+title: "Aximp.exe (Windows Forms ActiveX Control Importer)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

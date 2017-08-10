@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedReader::GetDocuments Method | Microsoft Docs"
+title: "ISymUnmanagedReader::GetDocuments Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

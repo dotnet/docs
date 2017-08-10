@@ -1,5 +1,5 @@
 ---
-title: "Custom Rendering Ink | Microsoft Docs"
+title: "Custom Rendering Ink"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

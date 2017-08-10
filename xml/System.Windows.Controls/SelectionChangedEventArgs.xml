@@ -18,7 +18,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
   
- [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+ [!code-xaml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
   
  [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
  [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
@@ -52,7 +52,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
   
- [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+ [!code-xaml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
   
  [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
  [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  
@@ -105,7 +105,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ListBox> and subscribes to the <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged> event. It uses the <xref:System.Windows.Controls.SelectionChangedEventArgs> to find the selected item in the <xref:System.Windows.Controls.ListBox>.  
   
- [!code-xml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
+ [!code-xaml[ListBoxEvent#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#8)]  
   
  [!code-csharp[ListBoxEvent#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml.cs#9)]
  [!code-vb[ListBoxEvent#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListBoxEvent/VisualBasic/Pane1.xaml.vb#9)]  

@@ -1,5 +1,5 @@
 ---
-title: "Generating SQL from Command Trees - Best Practices | Microsoft Docs"
+title: "Generating SQL from Command Trees - Best Practices"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

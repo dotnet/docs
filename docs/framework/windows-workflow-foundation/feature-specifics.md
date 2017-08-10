@@ -1,5 +1,5 @@
 ---
-title: "Windows Workflow Foundation Feature Specifics | Microsoft Docs"
+title: "Windows Workflow Foundation Feature Specifics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

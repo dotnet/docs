@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate Interop Assemblies from Type Libraries | Microsoft Docs"
+title: "How to: Generate Interop Assemblies from Type Libraries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

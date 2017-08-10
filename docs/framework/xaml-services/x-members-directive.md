@@ -1,5 +1,5 @@
 ---
-title: "x:Members Directive | Microsoft Docs"
+title: "x:Members Directive"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

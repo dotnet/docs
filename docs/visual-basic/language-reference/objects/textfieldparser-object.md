@@ -1,5 +1,5 @@
 ---
-title: "TextFieldParser Object | Microsoft Docs"
+title: "TextFieldParser Object"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Custom Data to Ink Data | Microsoft Docs"
+title: "How to: Add Custom Data to Ink Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -84,6 +84,6 @@ You can add custom data to ink that will be saved when the ink is saved as ink s
   
  The following example creates an application that displays an <xref:System.Windows.Controls.InkCanvas> and two buttons.  The button, `switchAuthor`, enables two pens to be used by two different authors.  The button `changePenColors` changes the color of each stroke on the <xref:System.Windows.Controls.InkCanvas> according to the author.  The application defines two <xref:System.Windows.Ink.DrawingAttributes> objects and adds a custom property to each one that indicates which author drew the <xref:System.Windows.Ink.Stroke>.  When the user clicks `changePenColors`, the application changes the appearance of the stroke according to the value of the custom property.  
   
- [!code-xml[HowToAddCustomDataToInk#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml#2)]  
+ [!code-xaml[HowToAddCustomDataToInk#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml#2)]  
   
  [!code-csharp[HowToAddCustomDataToInk#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml.cs#3)]

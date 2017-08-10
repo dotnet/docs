@@ -1,5 +1,5 @@
 ---
-title: "Implements Statement | Microsoft Docs"
+title: "Implements Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

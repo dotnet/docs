@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataTables::GetNextString Method | Microsoft Docs"
+title: "IMetaDataTables::GetNextString Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

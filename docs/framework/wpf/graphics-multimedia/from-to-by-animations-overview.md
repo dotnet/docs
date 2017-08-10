@@ -1,5 +1,5 @@
 ---
-title: "From-To-By Animations Overview | Microsoft Docs"
+title: "From-To-By Animations Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -21,9 +21,6 @@ manager: "wpickett"
 # From/To/By Animations Overview
 This topic describes how to use From/To/By animations to animate dependency properties. A From/To/By animation creates a transition between two values.  
   
- This topic contains the following sections.  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prereq"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the                  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  

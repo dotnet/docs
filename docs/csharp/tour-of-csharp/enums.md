@@ -1,5 +1,5 @@
 ---
-title: C# Enums - A tour of the C# language | Microsoft Docs
+title: C# Enums - A tour of the C# language
 description: Learn about enums, discrete named constants in C#
 keywords: .NET, csharp 
 author: BillWagner

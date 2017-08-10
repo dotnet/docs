@@ -1,5 +1,5 @@
 ---
-title: "Programming WCF Security | Microsoft Docs"
+title: "Programming WCF Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

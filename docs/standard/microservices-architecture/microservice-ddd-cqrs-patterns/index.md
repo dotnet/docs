@@ -1,5 +1,5 @@
 ---
-title: Tackling Business Complexity in a Microservice with DDD and CQRS Patterns | Microsoft Docs 
+title: Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
 description: .NET Microservices Architecture for Containerized .NET Applications | Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

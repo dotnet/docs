@@ -1,5 +1,5 @@
 ---
-title: "Usage of Standard Endpoints | Microsoft Docs"
+title: "Usage of Standard Endpoints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Maximize WPF 3D Performance | Microsoft Docs"
+title: "Maximize WPF 3D Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

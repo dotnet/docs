@@ -1,5 +1,5 @@
 ---
-title: "Channel Factory and Caching | Microsoft Docs"
+title: "Channel Factory and Caching"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

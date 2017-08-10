@@ -1,5 +1,5 @@
 ---
-title: "Large Data and Streaming | Microsoft Docs"
+title: "Large Data and Streaming"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

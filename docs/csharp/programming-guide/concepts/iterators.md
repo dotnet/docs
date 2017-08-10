@@ -1,5 +1,5 @@
 ---
-title: "Iterators (C#) | Microsoft Docs"
+title: "Iterators (C#)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -52,7 +52,7 @@ public static System.Collections.IEnumerable SomeNumbers()
   
  The return type of an iterator method or `get` accessor can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- You can use a`yield break` statement to end the iteration.  
+ You can use a `yield break` statement to end the iteration.  
   
  Iterators were introduced in C# in Visual Studio 2005.  
   
@@ -367,7 +367,7 @@ public class Stack<T> : IEnumerable<T>
   
  Iterators don't support the <xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName> method. To re-iterate from the start, you must obtain a new iterator.  
   
- For additional information, see the [C# Language Specification](../../../csharp/language-reference/language-specification.md).  
+ For additional information, see the [C# Language Specification](../../../csharp/language-reference/language-specification/index.md).  
   
 ##  <a name="BKMK_UseOfIterators"></a> Use of Iterators  
  Iterators enable you to maintain the simplicity of a `foreach` loop when you need to use complex code to populate a list sequence. This can be useful when you want to do the following:  

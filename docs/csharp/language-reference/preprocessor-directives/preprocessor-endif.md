@@ -1,5 +1,5 @@
 ---
-title: "#endif (C# Reference) | Microsoft Docs"
+title: "#endif (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

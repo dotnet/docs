@@ -1,5 +1,5 @@
 ---
-title: "Security and On-the-Fly Code Generation | Microsoft Docs"
+title: "Security and On-the-Fly Code Generation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

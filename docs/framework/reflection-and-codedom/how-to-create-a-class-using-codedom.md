@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Class Using CodeDOM | Microsoft Docs"
+title: "How to: Create a Class Using CodeDOM"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

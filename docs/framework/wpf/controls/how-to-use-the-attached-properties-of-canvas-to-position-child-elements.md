@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Attached Properties of Canvas to Position Child Elements | Microsoft Docs"
+title: "How to: Use the Attached Properties of Canvas to Position Child Elements"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

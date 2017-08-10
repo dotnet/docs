@@ -1,10 +1,10 @@
 ---
-title: Getting started with .NET Core on macOS using Visual Studio for Mac | Microsoft Docs
+title: Getting started with .NET Core on macOS using Visual Studio for Mac
 description: This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
-ms.date: 03/16/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -16,23 +16,19 @@ ms.assetid: 8902e849-dd17-42c0-8264-cc7ae3927a0c
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a simple console application using Visual Studio for Mac and .NET Core.
 
 > [!NOTE]
-> Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
-> * In Visual Studio for Mac, select **Help > Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which will open a window for filing a bug report.
-> * To make a suggestion, select **Help > Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
+> Your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
+> * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which will open a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) portal.
+> * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which will take you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
-[.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
-
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md).
+See the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md) topic.
 
 ## Getting started
 
 If you've already installed the prerequisites and Visual Studio for Mac, skip this section and proceed to [Creating a project](#creating-a-project). Follow these steps to install the prerequisites and Visual Studio for Mac:
 
-1. Download and install [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos).
-
-1. Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
+Download the [Visual Studio for Mac installer](https://www.visualstudio.com/vs/visual-studio-mac/). Run the installer. Read and accept the license agreement. During the install, you're provided the opportunity to install Xamarin, a cross-platform mobile app development technology. Installing Xamarin and its related components is optional for .NET Core development. For a walk-through of the Visual Studio for Mac install process, see [Introducing Visual Studio for Mac](https://developer.xamarin.com/guides/cross-platform/visual-studio-mac/). When the install is complete, start the Visual Studio for Mac IDE.
 
 ## Creating a project
 

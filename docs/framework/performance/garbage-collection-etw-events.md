@@ -1,5 +1,5 @@
 ---
-title: "Garbage Collection ETW Events | Microsoft Docs"
+title: "Garbage Collection ETW Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

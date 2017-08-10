@@ -1,5 +1,5 @@
 ---
-title: "Async Return Types (C#) | Microsoft Docs"
+title: "Async Return Types (C#)"
 ms.custom: ""
 ms.date: "2075-05-29"
 ms.prod: .net
@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +14,6 @@ ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"
@@ -38,9 +36,9 @@ For more information about async methods, see [Asynchronous Programming with asy
 Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
 ##  <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type  
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a[return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
   
-In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%601%2A> async method is a placeholder for an operation that returns a string.
+In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a string.
   
 [!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns1.cs)]
 

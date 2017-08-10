@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Language Runtime Overview | Microsoft Docs"
+title: "Dynamic Language Runtime Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -54,7 +54,7 @@ The *dynamic language runtime* (DLR) is a runtime environment that adds a set of
   
  Examples of languages developed by using the DLR include the following:  
   
--   IronPython. Available as open-source software from the [CodePlex](http://go.microsoft.com/fwlink/?LinkId=141040) Web site.  
+-   IronPython. Available as open-source software from the [GitHub](https://github.com/IronLanguages/ironpython2) Web site.  
   
 -   IronRuby. Available as open-source software from the [RubyForge](http://go.microsoft.com/fwlink/?LinkId=141044) Web site.  
   

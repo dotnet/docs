@@ -1,5 +1,5 @@
 ---
-title: "Claims and Denying Access to Resources | Microsoft Docs"
+title: "Claims and Denying Access to Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

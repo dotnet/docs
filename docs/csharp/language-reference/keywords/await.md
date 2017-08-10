@@ -1,5 +1,5 @@
 ---
-title: "await (C# Reference) | Microsoft Docs"
+title: "await (C# Reference)"
 ms.date: "2017-05-22"
 ms.prod: .net
 ms.technology: 
@@ -55,8 +55,6 @@ As shown in the previous example, if `await` is applied to the result of a metho
 // await keyword used with a method that returns a Task<TResult>.  
 TResult result = await AsyncMethodThatReturnsTaskTResult();  
   
-// await keyword used with a method that returns a ValueTask<TResult>.
-
 // await keyword used with a method that returns a Task.  
 await AsyncMethodThatReturnsTask();  
 

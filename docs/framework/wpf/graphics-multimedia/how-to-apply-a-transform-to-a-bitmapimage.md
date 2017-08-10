@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply a Transform to a BitmapImage | Microsoft Docs"
+title: "How to: Apply a Transform to a BitmapImage"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

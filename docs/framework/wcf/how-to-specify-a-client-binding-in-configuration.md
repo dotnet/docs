@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify a Client Binding in Configuration | Microsoft Docs"
+title: "How to: Specify a Client Binding in Configuration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

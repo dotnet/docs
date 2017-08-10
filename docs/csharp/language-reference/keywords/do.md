@@ -1,5 +1,5 @@
 ---
-title: "do (C# Reference) | Microsoft Docs"
+title: "do (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -52,5 +52,5 @@ The `do` statement executes a statement or a block of statements repeatedly unti
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [do-while Statement (C++)](https://docs.microsoft.com/cpp/cpp/do-while-statement-cpp)   
+ [do-while Statement (C++)](/cpp/cpp/do-while-statement-cpp)   
  [Iteration Statements](../../../csharp/language-reference/keywords/iteration-statements.md)

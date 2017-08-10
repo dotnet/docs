@@ -1,5 +1,5 @@
 ---
-title: "Applicability of Functional Transformation (C#) | Microsoft Docs"
+title: "Applicability of Functional Transformation (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "503 - ServiceHostFactoryCreationStart | Microsoft Docs"
+title: "503 - ServiceHostFactoryCreationStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

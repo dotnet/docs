@@ -1,5 +1,5 @@
 ---
-title: "User interrupt occurred | Microsoft Docs"
+title: "User interrupt occurred"
 
 ms.date: "2015-07-20"
 ms.prod: .net

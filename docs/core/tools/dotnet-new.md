@@ -1,5 +1,5 @@
 ---
-title: dotnet-new command - .NET Core CLI | Microsoft Docs
+title: dotnet-new command - .NET Core CLI
 description: The dotnet-new command creates new .NET Core projects in the current directory.
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -112,7 +112,7 @@ Create a new ASP.NET Core C# MVC application project in the current directory wi
  
 Create a new xUnit application targeting .NET Core 1.1:
 
-`dotnet new xunit --Framework netcoreapp1.1`
+`dotnet new xunit --framework netcoreapp1.1`
 
 List all templates available for MVC:
 

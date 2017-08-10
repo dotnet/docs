@@ -1,5 +1,5 @@
 ---
-title: "Object Variables in Visual Basic | Microsoft Docs"
+title: "Object Variables in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

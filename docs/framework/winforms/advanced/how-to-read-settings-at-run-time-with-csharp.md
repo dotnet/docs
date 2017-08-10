@@ -1,5 +1,5 @@
 ---
-title: "How To: Read Settings at Run Time With C# | Microsoft Docs"
+title: "How To: Read Settings at Run Time With C#"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

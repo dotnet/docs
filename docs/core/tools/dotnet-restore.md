@@ -1,5 +1,5 @@
 ---
-title: dotnet-restore command - .NET Core CLI | Microsoft Docs
+title: dotnet-restore command - .NET Core CLI
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -32,7 +32,7 @@ For dependencies, you specify where the restored packages are placed during the 
 
 For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
 
-The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](https://docs.microsoft.com/nuget/schema/nuget-config-file).
+The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](/nuget/schema/nuget-config-file).
 
 ## Arguments
 

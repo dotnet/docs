@@ -1,5 +1,5 @@
 ---
-title: "How to: Test Point4D structures for equality and inequality | Microsoft Docs"
+title: "How to: Test Point4D structures for equality and inequality"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

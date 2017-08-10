@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Windows Forms Controls in WPF | Microsoft Docs"
+title: "Walkthrough: Arranging Windows Forms Controls in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -84,7 +84,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 5.  In the                                  <xref:System.Windows.Controls.Grid> element set the                                  <xref:System.Windows.Controls.Grid.ShowGridLines%2A> property to                                  `true` and define five rows and three columns.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#2)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#2)]  
   
 ## Using Default Layout Settings  
  By default, the                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles the layout for the hosted                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.  
@@ -93,7 +93,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#3)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#3)]  
   
 2.  Press F5 to build and run the application. The                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]<xref:System.Windows.Forms.Button?displayProperty=fullName> control appears in the                                  <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.  
   
@@ -104,7 +104,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#4)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#4)]  
   
 2.  Press F5 to build and run the application. The two new button controls are sized to display the longer text string and larger font size properly, and the                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are resized to accommodate the hosted controls.  
   
@@ -115,7 +115,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#5)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#5)]  
   
 2.  Press F5 to build and run the application. The                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is placed 20 pixels from the top side of the grid cell and 20 pixels from the left.  
   
@@ -126,7 +126,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#6)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#6)]  
   
 2.  Press F5 to build and run the application. The                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is set to a size of 50 pixels wide by 70 pixels high, which is smaller than the default layout settings. The content of the                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is rearranged accordingly.  
   
@@ -139,7 +139,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#7)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#7)]  
   
 2.  In Solution Explorer, double-click MainWindow.xaml. vb or MainWindow.xaml.cs to open it in the Code Editor.  
   
@@ -159,7 +159,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#8)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#8)]  
   
 2.  Press F5 to build and run the application. The                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is painted over the label element.  
   
@@ -167,7 +167,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Replace the previous z-order                                  example with the following XAML.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#8b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#8b)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#8b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#8b)]  
   
      Press F5 to build and run the application. The label element is painted over the                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
   
@@ -178,7 +178,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#9)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#9)]  
   
 2.  Press F5 to build and run the application. The                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is docked to the right side of the                                  <xref:System.Windows.Controls.DockPanel> element.  
   
@@ -189,7 +189,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#10)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#10)]  
   
 2.  In MainWindow.xaml.vb or MainWindow.xaml.cs, copy the following code into the class definition.  
   
@@ -209,7 +209,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#11)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#11](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#11)]  
   
 2.  Press F5 to build and run the application. The                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is centered in the grid row, but it is not stretched to fill the available space. If the window is large enough, you may see two or more months displayed by the hosted                                  <xref:System.Windows.Forms.MonthCalendar> control, but these are centered in the row. The                                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout engine centers elements that cannot be sized to fill the available space.  
   
@@ -220,7 +220,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#12)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#12)]  
   
 2.  Press F5 to build and run the application. The hosted control and its surrounding elements are scaled by a factor of 0.5. However, the hosted control's font is not scaled.  
   
@@ -228,7 +228,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Replace the previous scaling example with the following XAML.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#12b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#12b)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#12b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#12b)]  
   
 2.  Press F5 to build and run the application. The hosted control, its surrounding elements, and the hosted control's font are scaled by a factor of 0.5.  
   
@@ -239,7 +239,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#13)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#13)]  
   
 2.  Press F5 to build and run the application. The hosted control is not rotated, but its surrounding elements are rotated by an angle of 180 degrees. You may have to resize the window to see the elements.  
   
@@ -247,7 +247,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Replace the previous rotation example with the following XAML.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#13b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#13b)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#13b](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml#13b)]  
   
 2.  Press F5 to build and run the application. The hosted control is rotated.  Note that the                                  <xref:System.Windows.Media.RotateTransform.Angle%2A> property can be set to any value. You may have to resize the window to see the elements.  
   
@@ -258,8 +258,8 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#14)]  
-    [!code-xml[WpfLayoutHostingWfWithXaml#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#15)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#14](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#14)]  
+    [!code-xaml[WpfLayoutHostingWfWithXaml#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#15)]  
   
 2.  Press F5 to build and run the application. The padding and margin settings are applied to the hosted                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in the same way they would be applied in                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)].  
   
@@ -270,7 +270,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
   
 1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
   
-     [!code-xml[WpfLayoutHostingWfWithXaml#16](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#16)]  
+     [!code-xaml[WpfLayoutHostingWfWithXaml#16](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#16)]  
   
 2.  In MainWindow.xaml.vb or MainWindow.xaml.cs copy the following code into the class definition.  
   

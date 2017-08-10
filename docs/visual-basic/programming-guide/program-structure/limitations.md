@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Limitations | Microsoft Docs"
+title: "Visual Basic Limitations"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

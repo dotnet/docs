@@ -1,5 +1,5 @@
 ---
-title: "Workflow Security | Microsoft Docs"
+title: "Workflow Security"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

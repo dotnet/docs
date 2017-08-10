@@ -1,6 +1,6 @@
 ---
-title: Iterators | Microsoft Docs
-description: Iterators
+title: Iterators
+description: Learn how to use built-in C# iterators and how to create your own custom iterator methods.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

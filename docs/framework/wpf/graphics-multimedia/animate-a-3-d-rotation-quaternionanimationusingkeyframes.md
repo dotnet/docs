@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate a 3-D Rotation Using Key Frames (QuaternionAnimationUsingKeyFrames) | Microsoft Docs"
+title: "How to: Animate a 3-D Rotation Using Key Frames (QuaternionAnimationUsingKeyFrames)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -29,7 +29,7 @@ In the following example, <xref:System.Windows.Media.Animation.QuaternionAnimati
 3.  <xref:System.Windows.Media.Animation.SplineRotation3DKeyFrame> is used to create a variable transition between values depending on the <xref:System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySpline%2A> property. In the example below, this part of the animation starts off slow but toward the end of the time segment, speeds up exponentially.  
   
 ## Example  
- [!code-xml[Animation3DGallery_snip#QuaternionAnimationUsingKeyFramesExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationUsingKeyFramesExample.xaml#quaternionanimationusingkeyframesexamplewholepage)]  
+ [!code-xaml[Animation3DGallery_snip#QuaternionAnimationUsingKeyFramesExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/QuaternionAnimationUsingKeyFramesExample.xaml#quaternionanimationusingkeyframesexamplewholepage)]  
   
 ## See Also  
  [Animate a 3-D Rotation Using Storyboards](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-3-d-rotation-using-storyboards.md)   

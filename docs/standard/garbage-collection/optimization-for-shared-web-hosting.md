@@ -1,5 +1,5 @@
 ---
-title: "Optimization for Shared Web Hosting | Microsoft Docs"
+title: "Optimization for Shared Web Hosting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

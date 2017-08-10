@@ -1,5 +1,5 @@
 ---
-title: "C# Coding Conventions (C# Programming Guide) | Microsoft Docs"
+title: "C# Coding Conventions (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -59,7 +59,7 @@ The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) d
 ## Layout Conventions  
  Good layout uses formatting to emphasize the structure of your code and to make the code easier to read. Microsoft examples and samples conform to the following conventions:  
   
--   Use the default Code Editor settings (smart indenting, four-character indents, tabs saved as spaces). For more information, see [Options, Text Editor, C#, Formatting](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-formatting).  
+-   Use the default Code Editor settings (smart indenting, four-character indents, tabs saved as spaces). For more information, see [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting).  
   
 -   Write only one statement per line.  
   

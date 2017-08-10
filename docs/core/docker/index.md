@@ -1,6 +1,6 @@
 ---
-title: Docker and .NET Core | Microsoft Docs
-description: Docker and .NET Core
+title: Docker and .NET Core
+description: Learn about using Docker with .NET Core using these fun tutorials.
 keywords: Docker, .NET, .NET Core
 author: spboyer
 ms.author: shboyer
@@ -19,4 +19,4 @@ The following tutorials are available for learning about using Docker with .NET 
 - [Building Docker Images for .NET Core Applications](building-net-docker-images.md)
 - [Visual Studio Tools for Docker](visual-studio-tools-for-docker.md)
 
-For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](https://docs.microsoft.com/aspnet/core/).
+For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

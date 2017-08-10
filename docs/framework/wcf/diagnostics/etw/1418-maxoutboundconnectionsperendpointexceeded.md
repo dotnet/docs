@@ -1,5 +1,5 @@
 ---
-title: "1418 - MaxOutboundConnectionsPerEndpointExceeded | Microsoft Docs"
+title: "1418 - MaxOutboundConnectionsPerEndpointExceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

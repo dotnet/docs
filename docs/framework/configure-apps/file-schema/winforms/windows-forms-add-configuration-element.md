@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Add Configuration Element | Microsoft Docs"
+title: "Windows Forms Add Configuration Element"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

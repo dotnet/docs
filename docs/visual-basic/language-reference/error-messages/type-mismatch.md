@@ -1,5 +1,5 @@
 ---
-title: "Type mismatch (Visual Basic) | Microsoft Docs"
+title: "Type mismatch (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the BetweenShowDelay Property | Microsoft Docs"
+title: "How to: Use the BetweenShowDelay Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -30,8 +30,8 @@ This example shows how to use the <xref:System.Windows.Controls.ToolTipService.B
   
 -   If the tooltip is not visible at the beginning of the time interval for the first ellipse.  
   
- [!code-xml[ToolTipService#ToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
-[!code-xml[ToolTipService#NoToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
+ [!code-xaml[ToolTipService#ToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
+[!code-xaml[ToolTipService#NoToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
   
 ## See Also  
  <xref:System.Windows.Controls.ToolTip>   

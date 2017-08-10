@@ -1,5 +1,5 @@
 ---
-title: "How to: Control an Animation using From, To, and By | Microsoft Docs"
+title: "How to: Control an Animation using From, To, and By"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -41,7 +41,7 @@ A "From/To/By" or "basic animation" creates a transition between two target valu
  The example below shows the different effects of setting              <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A>,              <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A>, and              <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> properties on animations.  
   
 ## Example  
- [!code-xml[BasicAnimations_snippet#AnimationTargetValuesWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snippet/CS/AnimationTargetValuesExample.xaml#animationtargetvalueswholepage)]  
+ [!code-xaml[BasicAnimations_snippet#AnimationTargetValuesWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snippet/CS/AnimationTargetValuesExample.xaml#animationtargetvalueswholepage)]  
   
 ## See Also  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   

@@ -1,5 +1,5 @@
 ---
-title: "5405 - GetIssuerNameSuccess | Microsoft Docs"
+title: "5405 - GetIssuerNameSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Using DrawingVisual Objects | Microsoft Docs"
+title: "Using DrawingVisual Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -20,19 +20,6 @@ manager: "wpickett"
 ---
 # Using DrawingVisual Objects
 This topic provides an overview of how to use <xref:System.Windows.Media.DrawingVisual> objects in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual layer.  
-  
- This topic contains the following sections.  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
--   [Drawing Visual Object](#drawingvisual_object)  
-  
--   [DrawingVisual Host Container](#drawingvisual_host_container)  
-  
--   [Creating DrawingVisual Objects](#creating_drawingvisual_objects)  
-  
--   [Creating Overrides for FrameworkElement Members](#creating_overrides)  
-  
--   [Providing Hit Testing Support](#providing_hit_testing_support)  
   
 <a name="drawingvisual_object"></a>   
 ## DrawingVisual Object  

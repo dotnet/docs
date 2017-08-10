@@ -65,7 +65,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   
@@ -636,7 +636,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   
@@ -996,7 +996,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   
@@ -1169,7 +1169,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Rect rect1, System.Windows.Rect rect2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Rect rect1, System.Windows.Rect rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Rect rect1, valuetype System.Windows.Rect rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.op_Equality(System.Windows.Rect,System.Windows.Rect)" />
       <MemberType>Method</MemberType>
@@ -1214,7 +1214,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Rect rect1, System.Windows.Rect rect2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Rect rect1, System.Windows.Rect rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Rect rect1, valuetype System.Windows.Rect rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Rect.op_Inequality(System.Windows.Rect,System.Windows.Rect)" />
       <MemberType>Method</MemberType>
@@ -1377,7 +1377,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   
@@ -1791,7 +1791,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   
@@ -1833,7 +1833,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   
@@ -1873,7 +1873,7 @@
   
  [!code-csharp[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/CSharp/RectExample.cs#rectexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/visualbasic/rectexample.vb#rectexamplewholepage)]
- [!code-xml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#RectExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/RectExample.xaml#rectexamplewholepage)]  
   
  The following example shows how to use code to create a rectangle and add it to the page. The example also illustrates how to find size and coordinate information about the new rectangle and render the information in a <xref:System.Windows.Controls.TextBox> below the rectangle.  
   

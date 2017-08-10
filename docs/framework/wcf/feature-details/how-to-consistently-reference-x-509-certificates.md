@@ -1,5 +1,5 @@
 ---
-title: "How to: Consistently Reference X.509 Certificates | Microsoft Docs"
+title: "How to: Consistently Reference X.509 Certificates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

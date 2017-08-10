@@ -1,5 +1,5 @@
 ---
-title: "Security Capabilities with Custom Bindings | Microsoft Docs"
+title: "Security Capabilities with Custom Bindings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -23,7 +23,7 @@
 ## Remarks  
  To invoke a Web service method from ECMAScript (JavaScript), you must apply the <xref:System.Web.Script.Services.ScriptServiceAttribute> attribute to the related Web service class. When you apply <xref:System.Web.Script.Services.ScriptServiceAttribute> to a Web service class definition that contains one or more methods with <xref:System.Web.Services.WebMethodAttribute> applied, the proxy generation script creates a proxy object that corresponds to the Web service class.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

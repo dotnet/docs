@@ -1,5 +1,5 @@
 ---
-title: "Using the Row for New Records in the Windows Forms DataGridView Control | Microsoft Docs"
+title: "Using the Row for New Records in the Windows Forms DataGridView Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Toolbox Service | Microsoft Docs"
+title: "Toolbox Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

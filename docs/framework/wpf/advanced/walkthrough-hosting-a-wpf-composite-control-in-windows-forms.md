@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Hosting a WPF Composite Control in Windows Forms | Microsoft Docs"
+title: "Walkthrough: Hosting a WPF Composite Control in Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -78,8 +78,8 @@ WPF composite control
   
  In MyControl1.xaml, replace the existing XAML with the following XAML.  
   
- [!code-xml[WindowsFormsHostingWpfControl#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#101)]  
-[!code-xml[WindowsFormsHostingWpfControl#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#102)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#101](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#101)]  
+[!code-xaml[WindowsFormsHostingWpfControl#102](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#102)]  
   
 #### Adding TextBlock and TextBox Elements to the Grid  
  You place a                                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] element in the grid by setting the element's                                  <xref:System.Windows.Controls.Grid.RowProperty> and                                  <xref:System.Windows.Controls.Grid.ColumnProperty> attributes to the appropriate row and column number. Remember that row and column numbering are zero-based. You can have an element span multiple columns by setting its                                  <xref:System.Windows.Controls.Grid.ColumnSpanProperty> attribute. For more information about                                  <xref:System.Windows.Controls.Grid> elements, see                                  [Create a Grid Element](../../../../docs/framework/wpf/controls/how-to-create-a-grid-element.md).  
@@ -88,7 +88,7 @@ WPF composite control
   
  In MyControl1.xaml, add the following XAML within the                                  <xref:System.Windows.Controls.Grid> element.  
   
- [!code-xml[WindowsFormsHostingWpfControl#103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#103)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#103](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#103)]  
   
 #### Styling the UI Elements  
  Many of the elements on the data-entry form have a similar appearance, which means that they have identical settings for several of their properties. Rather than setting each element's attributes separately, the previous XAML uses                                  <xref:System.Windows.Style> elements to define standard property settings for classes of elements. This approach reduces the complexity of the control and enables you to change the appearance of multiple elements through a single style attribute.  
@@ -99,14 +99,14 @@ WPF composite control
   
  In MyControl1.xaml, add the following XAML just after the                                  <xref:System.Windows.Controls.Grid> start element.  
   
- [!code-xml[WindowsFormsHostingWpfControl#104](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#104)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#104](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#104)]  
   
 #### Adding the OK and Cancel Buttons  
  The final elements on the composite control are the                                  **OK** and                                  **Cancel**<xref:System.Windows.Controls.Button> elements, which occupy the first two columns of the last row of the                                  <xref:System.Windows.Controls.Grid>. These elements use a common event handler,                                  `ButtonClicked`, and the default                                  <xref:System.Windows.Controls.Button> style defined in the previous XAML.  
   
  In MyControl1.xaml, add the following XAML after the last                                  <xref:System.Windows.Controls.TextBox> element. The                                  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] part of the composite control is now complete.  
   
- [!code-xml[WindowsFormsHostingWpfControl#105](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#105)]  
+ [!code-xaml[WindowsFormsHostingWpfControl#105](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#105)]  
   
 ### Implementing the Code-Behind File  
  The code-behind file, MyControl1.xaml.cs, implements three essential tasks                         :  

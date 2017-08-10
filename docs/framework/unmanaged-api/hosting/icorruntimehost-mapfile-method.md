@@ -1,5 +1,5 @@
 ---
-title: "ICorRuntimeHost::MapFile Method | Microsoft Docs"
+title: "ICorRuntimeHost::MapFile Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Declared Element Names (Visual Basic) | Microsoft Docs"
+title: "Declared Element Names (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -101,7 +101,7 @@ Every declared element has a name, also called an *identifier*, which is what th
   
 -   You are working with code written in another language in which the given keyword is not reserved.  
   
- Otherwise, you should consider renaming the element if its name conflicts with a keyword. The integrated development environment (IDE) provides an easy way to do this. For more information, see [Refactoring](https://docs.microsoft.com/visualstudio/vb-ide/refactoring-vb).  
+ Otherwise, you should consider renaming the element if its name conflicts with a keyword. The integrated development environment (IDE) provides an easy way to do this. For more information, see [Refactoring](/visualstudio/vb-ide/refactoring-vb).  
   
 ## Case Sensitivity in Names  
  Element names in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] are case-insensitive. This means that when the compiler compares two names that differ in alphabetic case only, it interprets them as the same name. For example, it considers `ABC` and `abc` to refer to the same declared element.  

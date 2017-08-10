@@ -296,7 +296,7 @@
   
  Similarly, if the current <xref:System.Type> object represents an unassigned generic parameter `T`, this property returns the assembly that contains the generic type that defines `T`.  
   
- If the <xref:System.Type.Assembly%2A?displayProperty=fullName> property is not available on a particular .NET platform, such as .NET Core or the Universal Windows Platform, use the  `System.Reflection.TypeInfo.Assembly` property instead. ?qualifyHint=False&autoUpgrade=True  
+ If the <xref:System.Type.Assembly%2A?displayProperty=fullName> property is not available on a particular .NET implementation, such as .NET Core or the Universal Windows Platform, use the <xref:System.Reflection.TypeInfo.Assembly?displayProperty=fullName> property instead.      
   
  This property is read-only.  
   
@@ -11424,7 +11424,7 @@ GetType(Array).IsAssignableFrom(type)
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Type left, Type right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Type left, Type right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Type left, class System.Type right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Type.op_Equality(System.Type,System.Type)" />
       <MemberType>Method</MemberType>
@@ -11458,7 +11458,7 @@ GetType(Array).IsAssignableFrom(type)
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Type left, Type right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Type left, Type right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Type left, class System.Type right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Type.op_Inequality(System.Type,System.Type)" />
       <MemberType>Method</MemberType>

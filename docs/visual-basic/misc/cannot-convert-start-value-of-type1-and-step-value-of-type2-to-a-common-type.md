@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert start value of type &#39;&lt;type1&gt;&#39; and step value of type &#39;&lt;type2&gt;&#39; to a common type | Microsoft Docs"
+title: "Cannot convert start value of type &#39;&lt;type1&gt;&#39; and step value of type &#39;&lt;type2&gt;&#39; to a common type"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -40,6 +40,6 @@ The specified `For...Next` control values have different types, and therefore ar
 1.  Change the type of one or more of the values so that all values can be converted to a common type.  
   
 ## See Also  
- [Navigating through Code with the Debugger](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)   
+ [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)   
  [Debugging Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/0e82bb0d-8bb2-4fe8-87d1-75f24c7cfd75)   
  [For...Next Statement](../../visual-basic/language-reference/statements/for-next-statement.md)

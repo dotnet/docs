@@ -1,5 +1,5 @@
 ---
-title: "1009 - ActivityScheduled | Microsoft Docs"
+title: "1009 - ActivityScheduled"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

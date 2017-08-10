@@ -1,5 +1,5 @@
 ---
-title: "Writing Queries in Visual Basic | Microsoft Docs"
+title: "Writing Queries in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -54,9 +54,9 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
 4.  In the list of project types, click **Console Application**. In the **Name** box, type a name for the project, and then click **OK**.  
   
-     A project is created. By default, it contains a reference to System.Core.dll. Also, the **Imported namespaces** list on the [References Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic) includes the <xref:System.Linq?displayProperty=fullName> namespace.  
+     A project is created. By default, it contains a reference to System.Core.dll. Also, the **Imported namespaces** list on the [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) includes the <xref:System.Linq?displayProperty=fullName> namespace.  
   
-5.  On the [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic), ensure that **Option infer** is set to **On**.  
+5.  On the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), ensure that **Option infer** is set to **On**.  
   
 ## Add an In-Memory Data Source  
  The data source for the queries in this walkthrough is a list of `Student` objects. Each `Student` object contains a first name, a last name, a class year, and an academic rank in the student body.  

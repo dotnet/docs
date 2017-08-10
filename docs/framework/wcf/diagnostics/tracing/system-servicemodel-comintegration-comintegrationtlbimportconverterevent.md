@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ComIntegration.ComIntegrationTLBImportConverterEvent | Microsoft Docs"
+title: "System.ServiceModel.ComIntegration.ComIntegrationTLBImportConverterEvent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

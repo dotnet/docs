@@ -1,5 +1,5 @@
 ---
-title: "ICeeFileGen Class | Microsoft Docs"
+title: "ICeeFileGen Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

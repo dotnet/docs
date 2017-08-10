@@ -382,7 +382,7 @@
 # [Visual Basic Guide](visual-basic/index.md)
 ## [Get Started](visual-basic/getting-started/index.md)
 ### [What's New for Visual Basic](visual-basic/getting-started/whats-new.md)
-### [Visual Basic Breaking Changes in Visual Studio 2015](visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md)
+### [Visual Basic Breaking Changes in Visual Studio](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [Additional Resources for Visual Basic Programmers](visual-basic/getting-started/additional-resources.md)
 
 ## [Developing Applications](visual-basic/developing-apps/index.md)

@@ -19,9 +19,9 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # How to: Load Assemblies into an Application Domain
-There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the [System.Reflection.Assembly](https://msdn.microsoft.com/en-us/library/system.reflection.aspx) class. Other ways assemblies can be loaded include:  
+There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=fullName> class. Other ways assemblies can be loaded include:  
   
--   The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the [Assembly](https://msdn.microsoft.com/en-us/library/system.reflection.aspx) class loads an assembly given its file location. Loading assemblies with this method uses a different load context.  
+-   The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.  
   
 -   The <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods load an assembly into the reflection-only context. Assemblies loaded into this context can be examined but not executed, allowing the examination of assemblies that target other platforms. See [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   

@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
-
 # dotnet-publish
 
 ## Name
@@ -57,9 +56,9 @@ Publishes the application for a given runtime. This is used when creating a [sel
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Configuration to use when building the project. The default value is `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `--version-suffix <VERSION_SUFFIX>`
 

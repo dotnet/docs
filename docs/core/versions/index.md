@@ -4,7 +4,7 @@ description:  Understand how .NET Core versioning works.
 keywords: .NET,.NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 08/08/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -149,7 +149,7 @@ When there are multiple changes, the highest element affected by individual chan
 
 ### Preview versions
 
-Preview versions have a `-preview-[number]-([build]|"final)"` appended to the version. For example, `2.0.0-preview-1-final`.
+Preview versions have a `-preview-[number]-([build]|"final")` appended to the version. For example, `2.0.0-preview-1-final`.
 
 ### LTS vs. current
 

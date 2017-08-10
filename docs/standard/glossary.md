@@ -35,6 +35,12 @@ A cross-platform, high-performance, open source implementation of ASP.NET built 
 
 See [ASP.NET Core](/aspnet/#pivot=core).
 
+## assembly
+
+A collection of APIs that can be called by apps or other assemblies.
+
+A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.
+
 ## CLR
 
 Common language runtime.
@@ -71,7 +77,7 @@ The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its
 
 ## framework
 
-In general, a comprehensive library that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks.
+In general, a comprehensive collection of APIs that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks. See also [library](#library).
 
 The word "framework" has a more specific technical meaning in the following terms:
 * [.NET Framework](#net-framework)
@@ -117,9 +123,9 @@ Examples of .NET implementations:
 
 ## library
 
- A collection of APIs that can be called by apps or other libraries.
+A collection of APIs that can be called by apps or other libraries. A .NET library is composed of one or more assemblies.
 
-A .NET library is a collection of types. A library includes interfaces, classes, structures, enumerations, and delegates.
+The words library and [framework](#framework) are often used synonymously in this general sense.
 
 ## metapackage
 
@@ -193,9 +199,9 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 ## package
 
-A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more asemblies of the same name along with additional metadata such as the author name.
+A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The *.zip* file has a *.nupkg* extension and may contain assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

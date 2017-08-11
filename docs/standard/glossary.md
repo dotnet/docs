@@ -39,7 +39,7 @@ See [ASP.NET Core](/aspnet/#pivot=core).
 
 A *.dll* file that contains a collection of APIs that can be called by apps or other assemblies.
 
-A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates. See also [library](#library).
+A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.  Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## CLR
 

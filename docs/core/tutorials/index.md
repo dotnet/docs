@@ -40,7 +40,7 @@ The following tutorials are available for learning about .NET Core.
 
 - [Getting started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
-- [Getting started with F#](../../fsharp/tutorials/getting-started/getting-started-command-line.md)
+- [Getting started with F#](../../fsharp/get-started/get-started-command-line.md)
 
 ## Other
 - [Unit Testing in .NET Core using dotnet test](../testing/unit-testing-with-dotnet-test.md)

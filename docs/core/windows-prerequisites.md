@@ -98,6 +98,7 @@ To develop .NET Core 2.x apps in Visual Studio 2017:
    * In the **Target framework** selection menu, set the value to **.NET Core 2.0**.
 
 ![Screenshot of Visual Studio 2017 Application Project Property with the ".NET Core 2.0" Target framework menu item selected](./media/windows-prerequisites/Targeting-dotnetCore2.png)
+
 Once the .NET Core 2.x SDK is installed, Visual Studio 2017 uses the .NET Core SDK 2.x, and supports the following actions:
 
   * Open, build, and run existing .NET Core 1.x projects.
@@ -117,5 +118,7 @@ To develop .NET Core 1.x apps in Visual Studio, download and install Visual Stud
 > It's possible to use Visual Studio 2015 for .NET Core 1.x development, but it's not recommended for the following reasons:
   > * The .NET Core tooling is a preview version, which is not supported.
   > * The projects are project.json-based, which is deprecated.
- > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
+>
+> For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
+
 ---

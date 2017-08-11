@@ -39,7 +39,6 @@ ms.author: "mairaw"
 - <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>   
 - <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName>   
 - <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>   
-- System.Collections.Generic.TreeSet<T>   
 - <xref:System.Collections.Hashtable?displayProperty=fullName>   
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>   
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>   

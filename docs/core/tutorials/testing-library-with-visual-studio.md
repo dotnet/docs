@@ -59,7 +59,7 @@ To create the unit test project, do the following:
    > [!NOTE]  
    > In addition to a Unit Test project, you can also use Visual Studio to create an xUnit test project for .NET Core.
 
-1. Visual Studio creates the project and opens the *UnitTest1.cs* file in the code window.
+1. Visual Studio creates the project and opens the *UnitTest1.vb* file in the code window.
 
    ![Visual Studio code window showing the default unit test project UnitTest1 class and TestMethod1 method](./media/testing-library-with-visual-studio/vb-unittestwindow.png)
 

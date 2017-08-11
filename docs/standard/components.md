@@ -1,10 +1,10 @@
 ---
-title: .NET Architectural Components | Microsoft Docs
-description: Describes .NET architectural components such as the .NET Standard, .NET implementations, and tooling.
-keywords: .NET, .NET Standard, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
+title: .NET architectural components
+description: Learn about .NET architectural components such as the .NET Standard, .NET Base Class Libraries, .NET runtimes, and tooling.
+keywords: .NET, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp
 ms.author: mairaw
-ms.date: 11/16/2016
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -12,16 +12,9 @@ ms.devlang: dotnet
 ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 ---
 
-# .NET Architectural Components
+# .NET architectural components
 
-The .NET Standard is an API specification common to all implementations of .NET. Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. Each implementation of .NET includes the following components:
-
-- One or more runtimes. Examples: CLR for .NET Framework, CoreCLR and CoreRT for .NET Core.
-- A class library that implements the .NET Standard and may implement additional APIs. Examples: .NET Framework Base Class Library, .NET Core Base Class Library.
-- Optionally, one or more application frameworks. Examples: ASP.NET, Windows Forms, and WPF are included in the .NET Framework.
-- Optionally, development tools. Some development tools are shared among multiple implementations.
-
-What follows is a brief explanation of the key components mentioned in this overview.
+A .NET app is developed for and runs in one or more *implementations of .NET*.  Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. There is an API specification common to all implementations of .NET that is called the .NET Standard. This article gives a brief introduction to each of these concepts.
 
 ## .NET Standard
 
@@ -32,6 +25,13 @@ The .NET Standard is also a target framework. If your code targets a version of 
 To learn more about the .NET Standard and how to target it, see the [.NET Standard](net-standard.md) topic.
 
 ## .NET implementations
+
+Each implementation of .NET includes the following components:
+
+- One or more runtimes. Examples: CLR for .NET Framework, CoreCLR and CoreRT for .NET Core.
+- A class library that implements the .NET Standard and may implement additional APIs. Examples: .NET Framework Base Class Library, .NET Core Base Class Library.
+- Optionally, one or more application frameworks. Examples: [ASP.NET](https://www.asp.net/), [Windows Forms](../framework/winforms/windows-forms-overview.md), and [Windows Presentation Foundation (WPF)](../framework/wpf/index.md) are included in the .NET Framework.
+- Optionally, development tools. Some development tools are shared among multiple implementations.
 
 There are three primary .NET implementations that Microsoft actively develops and maintains: .NET Core, .NET Framework, and Mono for Xamarin.
 
@@ -69,7 +69,7 @@ You have access to an extensive set of tools and infrastructure components that 
 - The .NET project system (based on *.csproj*, *.vbproj*, and *.fsproj* files)
 - [MSBuild](/visualstudio/msbuild/msbuild), the build engine used to build projects
 - [NuGet](/nuget/), Microsoft's package manager for .NET
-- Open Source build orchestration tools, such as [CAKE](http://cakebuild.net/) and [FAKE](https://fake.build/)
+- Open-source build orchestration tools, such as [CAKE](http://cakebuild.net/) and [FAKE](https://fake.build/)
 
 ## See also
 

@@ -43,13 +43,13 @@ A .NET assembly is a collection of types. An assembly includes interfaces, class
 
 ## CLR
 
-Common language runtime.
+Common Language Runtime.
 
 The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
-.NET Core common language runtime.
+.NET Core Common Language Runtime.
 
 This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 

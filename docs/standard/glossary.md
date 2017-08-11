@@ -1,4 +1,4 @@
-﻿---
+---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime

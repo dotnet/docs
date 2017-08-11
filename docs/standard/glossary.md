@@ -37,9 +37,9 @@ See [ASP.NET Core](/aspnet/#pivot=core).
 
 ## assembly
 
-A collection of APIs that can be called by apps or other assemblies.
+A *.dll* file that contains a collection of APIs that can be called by apps or other assemblies.
 
-A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.
+A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates. See also [library](#library).
 
 ## CLR
 
@@ -123,9 +123,9 @@ Examples of .NET implementations:
 
 ## library
 
-A collection of APIs that can be called by apps or other libraries. A .NET library is composed of one or more assemblies.
+A collection of APIs that can be called by apps or other libraries. A .NET library is composed of one or more [assemblies](#assembly).
 
-The words library and [framework](#framework) are often used synonymously in this general sense.
+The words library and [framework](#framework) are often used synonymously.
 
 ## metapackage
 

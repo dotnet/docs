@@ -188,5 +188,6 @@ manager: "wpickett"
 |<xref:System.Linq.IQueryable%601>|Yes||  
   
 ## See Also  
- [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
+ [Covariance and Contravariance (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/index.md)   
+ [Covariance and Contravariance (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/index.md)    
  [Variance in Delegates](http://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)

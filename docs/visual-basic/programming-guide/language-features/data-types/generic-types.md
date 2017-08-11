@@ -1,13 +1,9 @@
 ---
 title: "Generic Types in Visual Basic (Visual Basic)"
-ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -49,7 +45,6 @@ ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
 caps.latest.revision: 45
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -180,5 +175,5 @@ Screwdriver set as a generic tool
  [Of](../../../../visual-basic/language-reference/statements/of-clause.md)   
  [As](../../../../visual-basic/language-reference/statements/as-clause.md)   
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
+ [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)   
  [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)

@@ -204,7 +204,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey first, System.IdentityModel.Tokens.SessionSecurityTokenCacheKey second);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey first, System.IdentityModel.Tokens.SessionSecurityTokenCacheKey second);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey first, class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Equality(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey,System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
       <MemberType>Method</MemberType>
@@ -236,7 +236,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey first, System.IdentityModel.Tokens.SessionSecurityTokenCacheKey second);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey first, System.IdentityModel.Tokens.SessionSecurityTokenCacheKey second);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey first, class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey.op_Inequality(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey,System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
       <MemberType>Method</MemberType>

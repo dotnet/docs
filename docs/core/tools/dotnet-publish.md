@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: ff2471cd-07ed-49cf-bc1c-2a6f20acbd3f
 ---
-
 # dotnet publish
 
 ## Name
@@ -45,9 +44,9 @@ Optional. The project to publish, which defaults to the current directory if not
 
 Shows help information.
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Specifies the build configuration. The default is `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 

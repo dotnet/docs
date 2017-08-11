@@ -131,7 +131,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.RoutedEventHandlerInfo handlerInfo1, System.Windows.RoutedEventHandlerInfo handlerInfo2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.RoutedEventHandlerInfo handlerInfo1, System.Windows.RoutedEventHandlerInfo handlerInfo2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.RoutedEventHandlerInfo handlerInfo1, valuetype System.Windows.RoutedEventHandlerInfo handlerInfo2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.op_Equality(System.Windows.RoutedEventHandlerInfo,System.Windows.RoutedEventHandlerInfo)" />
       <MemberType>Method</MemberType>
@@ -157,7 +157,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.RoutedEventHandlerInfo handlerInfo1, System.Windows.RoutedEventHandlerInfo handlerInfo2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.RoutedEventHandlerInfo handlerInfo1, System.Windows.RoutedEventHandlerInfo handlerInfo2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.RoutedEventHandlerInfo handlerInfo1, valuetype System.Windows.RoutedEventHandlerInfo handlerInfo2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventHandlerInfo.op_Inequality(System.Windows.RoutedEventHandlerInfo,System.Windows.RoutedEventHandlerInfo)" />
       <MemberType>Method</MemberType>

@@ -22,7 +22,6 @@ manager: "wpickett"
 # Storyboards Overview
 This topic shows how to use              <xref:System.Windows.Media.Animation.Storyboard> objects to organize and apply animations. It describes how to interactively manipulate              <xref:System.Windows.Media.Animation.Storyboard> objects and describes indirect property targeting syntax.  
   
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
 <a name="prerequisites"></a>   
 ## Prerequisites  
  To understand this topic, you should be familiar with the different animation types and their basic features. For an introduction to animation, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md). You should also know how to use attached properties. For more information about attached properties, see the [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md).  

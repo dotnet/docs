@@ -189,7 +189,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence1, System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence1, System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence1, class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Equality(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberType>Method</MemberType>
@@ -214,7 +214,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence1, System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence1, System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence1, class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryMessageSequence.op_Inequality(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.DiscoveryMessageSequence)" />
       <MemberType>Method</MemberType>

@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
-
 # dotnet run
 
 ## Name 
@@ -42,9 +41,9 @@ For more information on the `dotnet` driver, see the [.NET Core CLI Tools](index
 
 Separates arguments to `dotnet run` from arguments for the app. The arguments after the `--` argument are passed to the app. 
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Configuration to use for building the project. The default value is `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 

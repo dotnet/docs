@@ -33,7 +33,7 @@
 ## Remarks  
  Apply <xref:System.ComponentModel.NotifyParentPropertyAttribute> to a property if its parent property should receive notification of changes to the property's values. For example, in the Properties window, the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=fullName> property has nested properties such as <xref:System.Windows.Forms.DataGridViewRow.Height%2A> and <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A>. These nested properties are marked with `NotifyParentPropertyAttribute(true)` so they notify the parent property to update its value and display when the property values change.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

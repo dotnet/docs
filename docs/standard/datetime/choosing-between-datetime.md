@@ -74,7 +74,7 @@ Unless a particular <xref:System.DateTime> value represents UTC, that date and t
 
 The <xref:System.DateTimeOffset> structure represents a date and time value, together with an offset that indicates how much that value differs from UTC. Thus, the value always unambiguously identifies a single point in time.
 
-The <xref:System.DateTimeOffset> type includes all of the functionality of the <xref:System.DateTime> type along with time zone awareness. This makes it is suitable for applications that do the following:
+The <xref:System.DateTimeOffset> type includes all of the functionality of the <xref:System.DateTime> type along with time zone awareness. This makes it suitable for applications that do the following:
 
 * Uniquely and unambiguously identify a single point in time. The <xref:System.DateTimeOffset> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.
 

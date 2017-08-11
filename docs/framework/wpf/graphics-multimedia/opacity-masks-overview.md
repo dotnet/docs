@@ -22,23 +22,6 @@ manager: "wpickett"
 # Opacity Masks Overview
 Opacity masks enable you to make portions of an element or visual either transparent or partially transparent. To create an opacity mask, you apply a <xref:System.Windows.Media.Brush> to the <xref:System.Windows.UIElement.OpacityMask%2A> property of an element or <xref:System.Windows.Media.Visual>.  The brush is mapped to the element or visual, and the opacity value of each brush pixel is used to determine the resulting opacity of each corresponding pixel of the element or visual.  
   
- This topic contains the following sections.  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
--   [Prerequisites](#prereqs)  
-  
--   [Creating Visual Effects with Opacity Masks](#opacitymasks)  
-  
--   [Creating an Opacity Mask](#creatingopacitymasks)  
-  
--   [Using a Gradient as an Opacity Mask](#creatingopacitymaskswithgradients)  
-  
--   [Specifying Gradient Stops for an Opacity Mask](#specifyinggradientcolors)  
-  
--   [Using an Image as an Opacity Mask](#usingimageasopacitymask)  
-  
--   [Creating an Opacity Mask from a Drawing](#drawingbrushasopacitymask)  
-  
 <a name="prereqs"></a>   
 ## Prerequisites  
  This overview assumes that you are familiar with <xref:System.Windows.Media.Brush> objects. For an introduction to using brushes, see [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md). For information about <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.DrawingBrush>, see [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md).  

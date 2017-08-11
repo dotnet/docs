@@ -18,7 +18,7 @@ This article gives guidance to developers who want to build and distribute their
 
 ## Build the CLR from source
 
-The source code for the .NET Core CLR can be found in [the `dotnet/coreclr` repository on GitHub](https://github.com/dotnet/coreclr/).
+The source code for the .NET CoreCLR can be found in [the `dotnet/coreclr` repository on GitHub](https://github.com/dotnet/coreclr/).
 
 The build currently depends on the following prerequisites:
 * [Git](https://git-scm.com/)
@@ -26,7 +26,7 @@ The build currently depends on the following prerequisites:
 * [Python](https://www.python.org/)
 * a C++ compiler.
 
-After you've installed these prerequisites are installed, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of [the Core CLR repository](https://github.com/dotnet/coreclr/).
+After you've installed these prerequisites are installed, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of [the CoreCLR repository](https://github.com/dotnet/coreclr/).
 
 Installing the components differ depending on the operating system (OS). See the build instructions for your specific OS:
 
@@ -41,8 +41,8 @@ You have to be on the particular platform to build that platform.
 
 The build has two main `buildTypes`:
 
- * Debug (default)- Compiles the runtime with additional runtime checks (asserts). These checks slow runtime execution but are really valuable for debugging. Recommended setting for development and testing environments.
- * Release - Compiles the runtime without any runtime checks. It can be difficult to debug. Pass `release` to the build script to select this.
+ * Debug (default)- Compiles the runtime with minimal optimizations and additional runtime checks (asserts). This reduction in optimization level and the additional checks slow runtime execution but are valuable for debugging. This is the recommended setting for development and testing environments.
+ * Release - Compiles the runtime with full optimizations and without the additional runtime checks. This will yield much faster run time performance but it can take a bit longer to build and can be difficult to debug. Pass `release` to the build script to select this build type.
 
 In addition, by default the build not only creates the runtime executables, but it also builds all the tests.
 There are quite a few tests, taking a significant amount of time that isn't necessary if you just want to experiment with changes.
@@ -52,7 +52,7 @@ You can skip the tests builds by adding the `skiptests` argument to the build sc
     .\build skiptests 
 ```
 
-The previous example showed how to build the `Debug` flavor, which has development time checks (asserts). To build the release (full speed) flavor, do the following:
+The previous example showed how to build the `Debug` flavor, which has development time checks (asserts) enabled and optimizations disabled. To build the release (full speed) flavor, do the following:
 
 ```bat 
     .\build release skiptests
@@ -76,7 +76,7 @@ There are two basic techniques for using your new runtime:
  2. **Use corerun.exe to run an application using unpackaged DLLs**.
     This repository also defines a simple host called corerun.exe that does NOT take any dependency on NuGet.
     You need to tell the host where to get the required DLLs you actually use, and you have to manually gather them together.
-    This technique is used by all the tests in [the Core CLR repo](https://github.com/dotnet/coreclr), and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
+    This technique is used by all the tests in [the CoreCLR repo](https://github.com/dotnet/coreclr), and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
     See [Executing .NET Core Apps with CoreRun.exe](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingCoreRun.md) for details on using this technique.
 
 ## Build the CLI from source

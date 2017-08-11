@@ -1,6 +1,6 @@
 ---
 title: .NET Architectural Components
-description: Describes key .NET architectural components such as the .NET Standard, .NET runtimes, and tooling.
+description: Learn about key .NET architectural components, such as the .NET Standard, .NET runtimes, and tooling.
 keywords: .NET, .NET Standard, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp
 ms.author: mairaw

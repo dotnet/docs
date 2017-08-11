@@ -212,7 +212,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.BindingMemberInfo a, System.Windows.Forms.BindingMemberInfo b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.BindingMemberInfo a, System.Windows.Forms.BindingMemberInfo b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Forms.BindingMemberInfo a, valuetype System.Windows.Forms.BindingMemberInfo b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.op_Equality(System.Windows.Forms.BindingMemberInfo,System.Windows.Forms.BindingMemberInfo)" />
       <MemberType>Method</MemberType>
@@ -239,7 +239,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.BindingMemberInfo a, System.Windows.Forms.BindingMemberInfo b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.BindingMemberInfo a, System.Windows.Forms.BindingMemberInfo b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Forms.BindingMemberInfo a, valuetype System.Windows.Forms.BindingMemberInfo b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingMemberInfo.op_Inequality(System.Windows.Forms.BindingMemberInfo,System.Windows.Forms.BindingMemberInfo)" />
       <MemberType>Method</MemberType>

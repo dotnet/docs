@@ -18,7 +18,8 @@
   </Attributes>
   <Docs>
     <summary>Specifies that an import requires certain metadata values.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,8 +39,9 @@
       <Docs>
         <param name="name">The metadata key to match.</param>
         <param name="value">The metadata value to match.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportMetadataConstraintAttribute"/> class.</summary>
-        <remarks></remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportMetadataConstraintAttribute" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -58,7 +60,8 @@
       <Docs>
         <summary>Gets the metadata key to match.</summary>
         <value>The metadata key.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -77,7 +80,8 @@
       <Docs>
         <summary>Gets the metadata value to match.</summary>
         <value>The metadata value.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
-
 # dotnet pack
 
 ## Name
@@ -40,9 +39,9 @@ The project to pack. It's either a path to a [*csproj* file](csproj.md) or to a 
 
 ## Options
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Specifies the build configuration. If not specified, the configuration defaults to `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `-h|--help`
 

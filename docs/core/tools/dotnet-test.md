@@ -11,8 +11,7 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
-
-#dotnet test
+# dotnet test
 
 ## Name
 
@@ -42,9 +41,9 @@ Specifies a path to the test project. If omitted, it defaults to current directo
 
 Use the custom test adapters from the specified path in the test run.
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Configuration under which to build. The default value is `Debug`, but your project's configuration overrides the default SDK setting.
+Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
 `-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
 

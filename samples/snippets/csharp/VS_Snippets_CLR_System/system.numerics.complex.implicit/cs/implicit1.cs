@@ -117,8 +117,8 @@ public class Example
    private static void ComplexFromUInt32()
    {
       // <Snippet9>
-      int intValue = 197461;
-      System.Numerics.Complex c1 = intValue;
+      uint value = 197461;
+      System.Numerics.Complex c1 = value;
       Console.WriteLine(c1);
       // The example displays the following output:
       //       (197461, 0)

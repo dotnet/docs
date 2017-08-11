@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ---
-
 # dotnet clean
 
 ## Name
@@ -37,9 +36,9 @@ The MSBuild project to clean. If a project file isn't specified, MSBuild searche
 
 ## Options
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Defines the configuration. If omitted, it defaults to `Debug`. This property is only required if you specified it when you built the project.
+Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
 
 `-f|--framework <FRAMEWORK>`
 

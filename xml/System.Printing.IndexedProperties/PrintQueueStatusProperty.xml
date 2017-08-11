@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintQueueStatus op_Implicit (System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintQueueStatus (System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueStatus op_Implicit(class System.Printing.IndexedProperties.PrintQueueStatusProperty attributeRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueStatusProperty)~System.Printing.PrintQueueStatus" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Printing.PrintQueueStatus op_Implicit (System.Printing.IndexedProperties.PrintQueueStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintQueueStatus (System.Printing.IndexedProperties.PrintQueueStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueStatus op_Implicit(class System.Printing.IndexedProperties.PrintQueueStatusProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueStatusProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueStatusProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintQueueStatus" />
       <MemberType>Method</MemberType>

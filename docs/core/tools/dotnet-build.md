@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 ---
-
 # dotnet build
 
 ## Name
@@ -63,9 +62,9 @@ The project file to build. If a project file isn't specified, MSBuild searches t
 
 ## Options
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Defines the build configuration. If omitted, the build configuration defaults to `Debug`. Use `Release` build a Release configuration.
+Defines the build configuration. The default value is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 

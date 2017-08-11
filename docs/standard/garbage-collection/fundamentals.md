@@ -78,8 +78,8 @@ manager: "wpickett"
   
 -   You can run out of memory if you run out of virtual address space to reserve or physical space to commit.  
   
- Your page file is used even if it will demand more physical memory then increase memory's pressure. The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low.  
-  
+ Your page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low. 
+ 
  [Back to top](#top)  
   
 <a name="conditions_for_a_garbage_collection"></a>   

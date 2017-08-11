@@ -56,7 +56,7 @@ The following example uses the `when` keyword to conditionally execute handlers 
 Starting with 7, `case` labels no longer need be mutually exclusive, and the order in which `case` labels appear in a `switch` statement can determine which switch block executes. The `when` keyword can be used to specify a filter condition that causes its associated case label to be true only if the filter condition is also true. Its syntax is:
 
 ```csharp
-case (expr) where (when-condition):
+case (expr) when (when-condition):
 ```
 where *expr* is a constant pattern or type pattern that is compared to the match expression, and *when-condition* is any Boolean expression. 
 

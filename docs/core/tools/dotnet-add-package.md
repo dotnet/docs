@@ -26,7 +26,7 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 
 The `dotnet add package` command provides a convenient option to add a package reference to a project file. After running the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes, a `<PackageReference>` element is added to the project file and [dotnet restore](dotnet-restore.md) is run.
 
-For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following:
+For example, adding `Newtonsoft.Json` to *ToDo.csproj* produces output similar to the following example:
 
 ```
   Writing C:\Users\mairaw\AppData\Local\Temp\tmp95A8.tmp

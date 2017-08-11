@@ -1,13 +1,9 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
-ms.custom: ""
-ms.date: "04/07/2017"
+ms.date: "08/09/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "versions, determining for .NET Framework"
@@ -31,6 +27,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
  [Viewing the registry (version 4.5 and later)](#net_b)  
  [Using code to query the registry (versions 1-4)](#net_c)  
  [Using code to query the registry (version 4.5 and later)](#net_d)  
+ [Using PowerShell to query the registry (version 4.5 and later)](#ps_a)  
   
  To find the CLR version, you can use a tool or code:  
   
@@ -149,6 +146,27 @@ Users can install and run multiple versions of the .NET Framework on their compu
     - It checks whether the value of the `Release` entry is *greater than or equal to* the value of the known release keys.
 
     - It checks in order from most recent version to earliest version.
+
+<a name="ps_a"></a> 
+#### To check for a minimum-required .NET Framework version by querying the registry in PowerShell (.NET Framework 4.5 and later)
+
+- The following example checks the value of the `Release` keyword to determine whether .NET Framework 4.6.2 or higher is installed, regardless of Windows OS version (returning `True` if it is and `False` otherwise).
+
+    ```PowerShell
+    Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" | Get-ItemPropertyValue -Name Release | % { $_ -ge 394802 } 
+    ```
+
+    You can replace `394802` in the previous example with another value from the following table to check for a different minimum-required .NET Framework version.
+  
+    |Version|Minimum value of the Release DWORD|
+    |-------------|--------------------------------|
+    |.NET Framework 4.5|378389|
+    |.NET Framework 4.5.1|378675|
+    |.NET Framework 4.5.2|379893|
+    |[!INCLUDE[net_v46](../../../includes/net-v46-md.md)]|393295|
+    |[!INCLUDE[net_v461](../../../includes/net-v461-md.md)]|394254|
+    |[!INCLUDE[net_v462](../../../includes/net-v462-md.md)]|394802|
+    |.NET Framework 4.7|460798|
 
 <a name="clr_a"></a> 
 #### To find the current runtime version by using the Clrver tool

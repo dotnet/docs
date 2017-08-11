@@ -1,13 +1,9 @@
 ---
 title: "Delegate Statement"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 f1_keywords: 
   - "vb.Delegate"
@@ -20,7 +16,6 @@ ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -92,6 +87,6 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
  [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Covariance and Contravariance](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
+ [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
  [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

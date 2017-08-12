@@ -41,7 +41,7 @@ The following commands are installed by default:
 * [migrate](dotnet-migrate.md)
 * [clean](dotnet-clean.md)
 * [sln](dotnet-sln.md)
-* [store](dotnet-store.md) - Available with .NET Core SDK 2.0 and later.
+* [store](dotnet-store.md) - Available with .NET Core 2.0 SDK and later versions.
 
 ### Project modification commands
 

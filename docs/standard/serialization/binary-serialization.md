@@ -1,17 +1,8 @@
 ---
-title: "Binary Serialization"
-ms.custom: ""
-ms.date: "03/30/2017"
+title: "Binary serialization"
+ms.date: "08/07/2017"
 ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
 helpviewer_keywords: 
   - "binary serialization"
   - "serialization, about serialization"
@@ -23,15 +14,17 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-# Binary Serialization
-Serialization can be defined as the process of storing the state of an object to a storage medium. During this process, the public and private fields of the object and the name of the class, including the assembly containing the class, are converted to a stream of bytes, which is then written to a data stream. When the object is subsequently deserialized, an exact clone of the original object is created.  
-  
- When implementing a serialization mechanism in an object-oriented environment, you have to make a number of tradeoffs between ease of use and flexibility. The process can be automated to a large extent, provided you are given sufficient control over the process. For example, situations may arise where simple binary serialization is not sufficient, or there might be a specific reason to decide which fields in a class need to be serialized. The following sections examine the robust serialization mechanism provided with the .NET Framework and highlight a number of important features that allow you to customize the process to meet your needs.  
+# Binary serialization
+Serialization can be defined as the process of storing the state of an object to a storage medium. During this process, the public and private fields of the object and the name of the class, including the assembly containing the class, are converted to a stream of bytes, which is then written to a data stream. When the object is subsequently deserialized, an exact clone of the original object is created.
+
+When implementing a serialization mechanism in an object-oriented environment, you have to make a number of tradeoffs between ease of use and flexibility. The process can be automated to a large extent, provided you are given sufficient control over the process. For example, situations may arise where simple binary serialization is not sufficient, or there might be a specific reason to decide which fields in a class need to be serialized. The following sections examine the robust serialization mechanism provided with .NET and highlight a number of important features that allow you to customize the process to meet your needs.
   
 > [!NOTE]
->  The state of a UTF-8 or UTF-7 encoded object is not preserved if the object is serialized and deserialized using different .NET Framework versions.  
+>  The state of a UTF-8 or UTF-7 encoded object is not preserved if the object is serialized and deserialized using different .NET Framework versions.
+
+[!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
-## In This Section  
+## In this section  
  [Serialization Concepts](../../../docs/standard/serialization/serialization-concepts.md)  
  Discusses two scenarios where serialization is useful: when persisting data to storage and when passing objects across application domains.  
   
@@ -57,7 +50,7 @@ Serialization can be defined as the process of storing the state of an object to
  <xref:System.Runtime.Serialization>  
  Contains classes that can be used for serializing and deserializing objects.  
   
-## Related Sections  
+## Related sections  
  [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
  Describes the XML serialization mechanism that is included with the common language runtime.  
   

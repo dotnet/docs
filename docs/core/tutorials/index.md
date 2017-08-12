@@ -49,5 +49,6 @@ The following tutorials are available for learning about .NET Core.
 - [Developing Libraries with Cross Platform Tools](libraries.md)
 - [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
+- [Create a custom template for dotnet new](create-custom-template.md)
 
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

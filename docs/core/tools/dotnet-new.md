@@ -29,7 +29,7 @@ dotnet new [-h|--help]
 ```
 dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
-dotnet new [-all|-show-all]
+dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
 ---

@@ -112,15 +112,17 @@ The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIB
 
 The .NET Core CLI Tools display the following text when you first run one of the commands (for example, `dotnet restore`). Text may vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
-> Welcome to .NET Core!
-> ---------------------
-> Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to see available commands or go to https://aka.ms/dotnet-cli-docs.
-> 
-> Telemetry
-> --------------
-> The .NET Core tools collect usage data in order to improve your experience. The data is anonymous and does not include command-line arguments. The data is collected by Microsoft and shared with the community.
-> You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT environment variable to 1 using your favorite shell.
-> You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
+```console
+Welcome to .NET Core!
+---------------------
+Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to see available commands or go to https://aka.ms/dotnet-cli-docs.
+ 
+Telemetry
+--------------
+The .NET Core tools collect usage data in order to improve your experience. The data is anonymous and does not include command-line arguments. The data is collected by Microsoft and shared with the community.
+You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT environment variable to 1 using your favorite shell.
+You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
+```
 
 ## See also
 

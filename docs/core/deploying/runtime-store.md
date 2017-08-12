@@ -1,21 +1,20 @@
 ---
-title: Runtime store | Microsoft Docs
-description: This topic explains the runtime store and target manifests used by .NET Core.
-keywords: .NET, .NET Core, dotnet store, runtime store
+title: Runtime package store
+description: This topic explains the runtime package store and target manifests used by .NET Core.
+keywords: .NET, .NET Core, dotnet store, runtime package store
 author: bleroy
 ms.author: mairaw
-ms.date: 06/26/2017
+ms.date: 08/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 9521d8b4-25fc-412b-a65b-4c975ebf6bfd
 ---
-
-# Runtime store
+# Runtime package store
 
 Starting with .NET Core 2.0, it's possible to package and deploy apps against a known set of packages that exist in the target environment. The benefits are faster deployments, lower disk space use, and improved startup performance in some cases.
 
-This feature is implemented as a *runtime store*, which is a directory on disk where packages are stored (typically at */usr/local/share/dotnet/store* on macOS/Linux and *C:/Program Files/.dotnet/store* on Windows). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
+This feature is implemented as a *runtime package store*, which is a directory on disk where packages are stored (typically at */usr/local/share/dotnet/store* on macOS/Linux and *C:/Program Files/.dotnet/store* on Windows). Under this directory, there are subdirectories for architectures and [target frameworks](../../standard/frameworks.md). The file layout is similar to the way that [NuGet assets are laid out on disk](/nuget/create-packages/supporting-multiple-target-frameworks#framework-version-folder-structure):
 
 \dotnet   
 &nbsp;&nbsp;\store   
@@ -38,13 +37,13 @@ This feature is implemented as a *runtime store*, which is a directory on disk w
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\microsoft.aspnetcore   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...   
 
-A *target manifest* file lists the packages in the runtime store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
+A *target manifest* file lists the packages in the runtime package store. Developers can target this manifest when publishing their app. The target manifest is typically provided by the owner of the targeted production environment.
 
 ## Preparing a runtime environment
 
-The administrator of a runtime environment can optimize apps for faster deployments and lower disk space use by building a runtime store and the corresponding target manifest.
+The administrator of a runtime environment can optimize apps for faster deployments and lower disk space use by building a runtime package store and the corresponding target manifest.
 
-The first step is to create a *package store manifest* that lists the packages that compose the runtime store. This file format is compatible with the project file format (*csproj*).
+The first step is to create a *package store manifest* that lists the packages that compose the runtime package store. This file format is compatible with the project file format (*csproj*).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -57,7 +56,7 @@ The first step is to create a *package store manifest* that lists the packages t
 
 **Example**
 
-The following example package store manifest (*packages.csproj*) is used to add [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) and [`Moq`](https://www.nuget.org/packages/moq/) to a runtime store:
+The following example package store manifest (*packages.csproj*) is used to add [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) and [`Moq`](https://www.nuget.org/packages/moq/) to a runtime package store:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -68,7 +67,7 @@ The following example package store manifest (*packages.csproj*) is used to add 
 </Project>
 ```
 
-Provision the runtime store by executing `dotnet store` with the package store manifest, runtime, and framework:
+Provision the runtime package store by executing `dotnet store` with the package store manifest, runtime, and framework:
 
 ```console
 dotnet store --manifest <PATH_TO_MANIFEST_FILE> --runtime <RUNTIME_IDENTIFIER> --framework <FRAMEWORK>
@@ -86,7 +85,7 @@ By default, the output of the command is a package store under the *.dotnet/stor
 
 **Example**
 
-The following *artifact.xml* file is produced after running the example command shown above. Note that [`Castle.Core`](https://www.nuget.org/packages/Castle.Core/) is a depdenency of `Moq`, so it's included automatically and appears in the *artifacts.xml* manifest file.
+The following *artifact.xml* file is produced after running the previous example. Note that [`Castle.Core`](https://www.nuget.org/packages/Castle.Core/) is a dependency of `Moq`, so it's included automatically and appears in the *artifacts.xml* manifest file.
 
 ```xml
 <StoreArtifacts>
@@ -128,11 +127,11 @@ Specify the target manifests in the project file only when the target environmen
 
 ## ASP.NET Core implicit store
 
-The runtime store feature is used implicitly by an ASP.NET Core app when the app is deployed as a [framework-dependent deployment (FDD)](index.md#framework-dependent-deployments-fdd) app. The targets in [`Microsoft.NET.Sdk.Web`](https://github.com/aspnet/websdk) include manifests referencing the implicit package store on the target system. Additionally, any FDD app that depends on the `Microsoft.AspNetCore.All` package results in a published app that contains only the app and its assets and not the packages listed in the `Microsoft.AspNetCore.All` metapackage. It's assumed that those packages are present on the target system.
+The runtime package store feature is used implicitly by an ASP.NET Core app when the app is deployed as a [framework-dependent deployment (FDD)](index.md#framework-dependent-deployments-fdd) app. The targets in [`Microsoft.NET.Sdk.Web`](https://github.com/aspnet/websdk) include manifests referencing the implicit package store on the target system. Additionally, any FDD app that depends on the `Microsoft.AspNetCore.All` package results in a published app that contains only the app and its assets and not the packages listed in the `Microsoft.AspNetCore.All` metapackage. It's assumed that those packages are present on the target system.
 
-The runtime store is installed on the host when the .NET Core SDK is installed. Other installers may provide the runtime store, including Zip/tarball installations of the .NET Core SDK, `apt-get`, redhat Yum, the .NET Core Windows Server Hosting bundle, and manual runtime store installations.
+The runtime package store is installed on the host when the .NET Core SDK is installed. Other installers may provide the runtime package store, including Zip/tarball installations of the .NET Core SDK, `apt-get`, Red Hat Yum, the .NET Core Windows Server Hosting bundle, and manual runtime package store installations.
 
-When deploying a [framework-dependent deployment (FDD)](index.md#framework-dependent-deployments-fdd) app, make sure that the target environment has the .NET Core SDK installed. If the app is deployed to an environment that doesn't include ASP.NET Core, you can opt out of the implicit store by specifying  **\<PublishWithAspNetCoreTargetManifest>** set to `false` in the project file as shown below:
+When deploying a [framework-dependent deployment (FDD)](index.md#framework-dependent-deployments-fdd) app, make sure that the target environment has the .NET Core SDK installed. If the app is deployed to an environment that doesn't include ASP.NET Core, you can opt out of the implicit store by specifying  **\<PublishWithAspNetCoreTargetManifest>** set to `false` in the project file as in the following example:
 
 ```xml
 <PropertyGroup>
@@ -143,13 +142,12 @@ When deploying a [framework-dependent deployment (FDD)](index.md#framework-depen
 > [!NOTE] 
 > For [self-contained deployment (SCD)](index.md#self-contained-deployments-scd) apps, it's assumed that the target system doesn't necessarily contain the required manifest packages. Therefore, **\<PublishWithAspNetCoreTargetManifest>** cannot be set to `true` for an SCD app.
 
-If you deploy an application with a manifest dependency that's present in the deployment (the assembly is present in the *bin* folder), the runtime store *isn't used* on the host for that assembly. The *bin* folder assembly is used regardless of its presence in the runtime store on the host.
+If you deploy an application with a manifest dependency that's present in the deployment (the assembly is present in the *bin* folder), the runtime package store *isn't used* on the host for that assembly. The *bin* folder assembly is used regardless of its presence in the runtime package store on the host.
 
-The version of the dependency indicated in the manifest must match the version of the dependency in the runtime store. If you have a version mismatch between the dependency in the target manifest and the version that exists in the runtime store and the app doesn't include the required version of the package in its deployment, the app will fail to start. The exception includes the name of the target manifest that called for the runtime store assembly, which will help you troubleshoot the mismatch.
+The version of the dependency indicated in the manifest must match the version of the dependency in the runtime package store. If you have a version mismatch between the dependency in the target manifest and the version that exists in the runtime package store and the app doesn't include the required version of the package in its deployment, the app fails to start. The exception includes the name of the target manifest that called for the runtime package store assembly, which helps you troubleshoot the mismatch.
 
 When the deployment is *trimmed* on publish, only the specific versions of the manifest packages you indicate are withheld from the published output. The packages at the versions indicated must be present on the host for the app to start.
 
 ## See also
-
-[dotnet-publish](../tools/dotnet-publish.md)   
-[dotnet-store](../tools/dotnet-store.md)   
+ [dotnet-publish](../tools/dotnet-publish.md)   
+ [dotnet-store](../tools/dotnet-store.md)   

@@ -19,11 +19,8 @@ This article is not up to date with the latest Visual Studio.  It will be update
 
 This topic includes information about which features of Visual Studio 2012 are supported in F#.
 
-
 ## Project Features
 The following table summarizes the templates that are available for use in F# projects. For information about project and item templates, see [NIB Creating Projects from Templates](https://msdn.microsoft.com/library/7c36d86a-6b79-4480-8228-0f925f1204b2).
-
-
 
 |Template type|Description|Supported templates|
 |-------------|-----------|-------------------|
@@ -34,8 +31,6 @@ To create an application that can run as a standalone executable, choose the F# 
 For more information about the item templates for data access, see [Type Providers](../tutorials/type-providers/index.md).
 
 The following table summarizes project-properties features supported and not supported in F#. For more information, see [Configuring Projects](configuring-projects.md) and [Introduction to the Project Designer](https://msdn.microsoft.com/library/898dd854-c98d-430c-ba1b-a913ce3c73d7).
-
-
 
 |Project setting|Supported in F#?|Notes|
 |---------------|----------------|-----|
@@ -52,8 +47,6 @@ The following table summarizes project-properties features supported and not sup
 
 ## Code and Text Editor Features
 The following features of the Visual Studiocode and text editors are supported in F#. For general information about editing code in Visual Studio, and features of the text editor, see [Writing Code in the Code and Text Editor](https://msdn.microsoft.com/library/efc4xwkb.aspx).
-
-
 
 |Feature|Description|Supported in F#?|
 |-------|-----------|----------------|
@@ -74,8 +67,6 @@ The following features of the Visual Studiocode and text editors are supported i
 ## IntelliSense Features
 The following table summarizes IntelliSense features supported and not supported in F#. For general information about IntelliSense, see [Using IntelliSense](https://msdn.microsoft.com/library/hcw1s69b.aspx).
 
-
-
 |Feature|Description|Supported in F#?|
 |-------|-----------|----------------|
 |Automatically implement interfaces|Generates code stubs for interface methods.|No|
@@ -89,11 +80,8 @@ The following table summarizes IntelliSense features supported and not supported
 |Quick Info|Displays the complete declaration for any identifier in your code.|Yes|
 Refactoring of F# code isn't supported in Visual Studio 2012.
 
-
 ## Debugging Features
 The following table summarizes features that are available when you debug F# code. For general information about the Visual Studio debugger, see [Debugging in Visual Studio](https://msdn.microsoft.com/library/sc65sadd.aspx).
-
-
 
 |Feature|Description|Supported in F#?|
 |-------|-----------|----------------|
@@ -129,6 +117,5 @@ The following table summarizes the support for F# in Visual Studio tools.
 |Toolbox|Displays tabs that contain draggable objects such as controls and sections of text or code.|Yes|
 
 ## See Also
-[Get Started with F# in Visual Studio](tutorials/get-started/get-started-visual-studio.md)
-
-[Configuring Projects](configuring-projects.md)
+ [Get Started with F# in Visual Studio](../get-started/get-started-visual-studio.md)   
+ [Configuring Projects](configuring-projects.md)   

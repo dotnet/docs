@@ -20,9 +20,10 @@ The following tutorials are available for learning about .NET Core.
 - [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio.md)
 - [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio.md)
 - [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio.md)
-- [Building a C# class library](../../csharp/getting-started/library-with-visual-studio.md)
-- [Testing a C# class library](../../csharp/getting-started/testing-library-with-visual-studio.md)
-- [Consuming a C# class library with .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
+- [Building a C# class library](../../core/tutorials/library-with-visual-studio.md)
+- [Building a class library with Visual Basic](../../core/tutorials/vb-library-with-visual-studio.md)
+- [Testing a class library](../../core/tutorials/testing-library-with-visual-studio.md)
+- [Consuming a class library](../../core/tutorials/consuming-library-with-visual-studio.md)
 - [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
 - [NoSQL tutorial: Build a DocumentDB C# console application on .NET Core](/azure/documentdb/documentdb-dotnetcore-get-started)
 
@@ -40,7 +41,7 @@ The following tutorials are available for learning about .NET Core.
 
 - [Getting started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
-- [Getting started with F#](../../fsharp/tutorials/getting-started/getting-started-command-line.md)
+- [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
 
 ## Other
 - [Unit Testing in .NET Core using dotnet test](../testing/unit-testing-with-dotnet-test.md)

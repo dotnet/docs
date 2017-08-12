@@ -4,7 +4,7 @@ description: Learn about the new features found in .NET Core.
 keywords: .NET, .NET Core
 author: rpetrusha
 ms.author: ronpet
-ms.date: 08/11/2017
+ms.date: 08/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -24,7 +24,7 @@ ms.devlang: dotnet
 
 ### dotnet restore runs implicitly
 
-In previous versions of the .NET Core, you had to run the [dotnet restore](../tools/dotnet-restore.md) command to download dependencies immediately after you created a new project with the [dotnet new](../tools/dotnet-new.md) command, as well as whenever you added a new dependency to your project. In .NET Core 2.0, `dotnet restore` runs implicitly when the `dotnet new` command executes. It also runs implicitly if dependencies need to be updated when other commands, such as the `run`, `build`, and `publish` commands, execute.
+In previous versions of .NET Core, you had to run the [dotnet restore](../tools/dotnet-restore.md) command to download dependencies immediately after you created a new project with the [dotnet new](../tools/dotnet-new.md) command, as well as whenever you added a new dependency to your project. In .NET Core 2.0, `dotnet restore` runs implicitly when the `dotnet new` command executes. It also runs implicitly if dependencies need to be updated when other commands, such as the `run`, `build`, and `publish` commands, execute.
 
 You can also disable the automatic invocation of `dotnet restore` by passing the `--no-restore` switch to the `new`, `run`, `build`, `publish`, `pack`, and `test` commands. 
 
@@ -32,7 +32,7 @@ You can also disable the automatic invocation of `dotnet restore` by passing the
 
 If the .NET Core 2.0 SDK is installed, projects that target .NET Core 1.x can be retargeted to .NET Core 2.0. 
 
-To retarget to .NET Core 2.0, edit your project file by changing the value of the `<TargetFramework>` element (or the `TargetFrameworks>` element if you have more than one target in your project file) from 1.x to 2.0:
+To retarget to .NET Core 2.0, edit your project file by changing the value of the `<TargetFramework>` element (or the `<TargetFrameworks>` element if you have more than one target in your project file) from 1.x to 2.0:
 
 ```xml
 <PropertyGroup>
@@ -54,9 +54,9 @@ For more information about migrating your project to .NET Core 2.0, see [Migrati
 
 In addition to supporting C# and F#, .NET Core 2.0 also supports Visual Basic.
 
-**Visual Basic**
+### Visual Basic
 
-With version 2.0, .NET Core now supports Visual Basic 2017.  You can use Visual Basic to create the following project types:
+With version 2.0, .NET Core now supports Visual Basic 2017. You can use Visual Basic to create the following project types:
 
 - .NET Core console apps
 - .NET Core class libraries
@@ -74,14 +74,13 @@ For example, to create a Visual Basic "Hello World" application, do the followin
   
 1.  Enter the command `dotnet run`. The [.NET Core CLI tools](../tools/index.md) automatically compile and execute the application, which displays the message "Hello World!" in the console window.
 
-**Support for C# 7.1**
+### Support for C# 7.1
 
 .NET Core 2.0 supports C# 7.1, which adds a number of new features, including:
 
 - The `Main` method, the application entry point, can be marked with the [async](../../csharp/language-reference/keywords/async.md) keyword.
 - Inferred tuple names.
 - Default expressions.
-- Pattern matching with generics. 
 
 <!-- For more information see [link to C# what's new](url). -->
 
@@ -89,7 +88,7 @@ For example, to create a Visual Basic "Hello World" application, do the followin
 
 .NET Core 2.0 includes a number of features that make it easier to install .NET Core and to use it on supported operating systems.
 
-### .NET Core for Linux is a single implementation**
+### .NET Core for Linux is a single implementation
 
 .NET Core 2.0 offers a single Linux implementation that works on multiple Linux distributions. .NET Core 1.x required that you download a distribution-specific Linux implementation.
 
@@ -103,9 +102,9 @@ You can also develop apps that target Linux as a single operating system. .NET C
 
 ### Support for .NET Standard 2.0
 
-The .NET Standard defines a versioned set of APIs that must be available on .NET implementations that comply with that version of the standard. The .NET Standard is targeted at library developers. It aims to guarantee the functionality that is available to a library that targets a version of the .NET Standard on each .NET implementation. .NET Core 1.x supports the .NET Standard version 1.6; .NET Core 2.0 supports the latest version, .NET Standard 2.0.  For more information, see [.NET Standard](../../standard/net-standard.md).
+The .NET Standard defines a versioned set of APIs that must be available on .NET implementations that comply with that version of the standard. The .NET Standard is targeted at library developers. It aims to guarantee the functionality that is available to a library that targets a version of the .NET Standard on each .NET implementation. .NET Core 1.x supports the .NET Standard version 1.6; .NET Core 2.0 supports the latest version, .NET Standard 2.0. For more information, see [.NET Standard](../../standard/net-standard.md).
 
-The .NET Standard 2.0 includes over 20,000 more APIs than were available in the .NET Standard 1.6. Much of this expanded surface area results from incorporating APIs that are common to the .NET Framework and Xamarin into .NET Standard.
+.NET Standard 2.0 includes over 20,000 more APIs than were available in the .NET Standard 1.6. Much of this expanded surface area results from incorporating APIs that are common to the .NET Framework and Xamarin into .NET Standard.
 
 .NET Standard 2.0 class libraries can also reference .NET Framework class libraries, provided that they call APIs that are present in the .NET Standard 2.0. No recompilation of the .NET Framework libraries is required.
 

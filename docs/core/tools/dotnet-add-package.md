@@ -3,7 +3,7 @@ title: dotnet add package command - .NET Core CLI
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/10/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,11 +12,11 @@ ms.assetid: 88e0da69-a5ea-46cc-8b46-5493242b7af9
 ---
 # dotnet add package
 
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+
 ## Name
 
 `dotnet add package` - Adds a package reference to a project file.
-
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Synopsis
 

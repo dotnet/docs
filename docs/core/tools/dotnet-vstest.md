@@ -1,10 +1,10 @@
 ---
-title: dotnet-vstest command
-description: The dotnet-vstest command builds a project and all of its dependencies. 
-keywords: dotnet-vstest, CLI, CLI command, .NET Core
+title: dotnet vstest command
+description: The 'dotnet vstest' command builds a project and all of its dependencies. 
+keywords: dotnet vstest, dotnet vstest, CLI, CLI command, .NET Core
 author: guardrex
 ms.author: mairaw
-ms.date: 03/09/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,19 +12,19 @@ ms.devlang: dotnet
 ms.assetid: 0e36c070-2242-41d3-96f1-aea0aca48d4d
 ---
 
-# dotnet-vstest
+# dotnet vstest
 
 ## Name
 
-`dotnet-vstest` - Runs tests from the specified files.
+`dotnet vstest` - Runs tests from the specified files.
 
 ## Synopsis
 
-`dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath] [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger] [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [[--] <args>...]] [-?|--Help|/?|/Help]`
+`dotnet vstest [<TEST_FILE_NAMES>] [--Collect|/Collect] [--Diag|/Diag] [--Framework|/Framework] [-?|--Help|/?|/Help] [-lt|--ListTests|/lt|/ListTests] [--logger|/logger] [--Parallel|/Parallel] [--ParentProcessId|/ParentProcessId] [--Platform|/Platform] [--Port|/Port] [--ResultsDirectory|/ResultsDirectory] [--Settings|/Settings] [--TestAdapterPath|/TestAdapterPath] [--TestCaseFilter|/TestCaseFilter] [--Tests|/Tests] [[--] <args>...]]`
 
 ## Description
 
-The `dotnet-vstest` command runs the `VSTest.Console` command-line application to run automated unit and coded UI application tests.
+The `dotnet vstest` command runs the `VSTest.Console` command-line app to run automated unit and coded UI app tests.
 
 ## Arguments
 
@@ -34,45 +34,33 @@ Run tests from the specified assemblies. Separate multiple test assembly names w
 
 ## Options
 
-`--Settings|/Settings:<Settings File>`
+`[--] args`
 
-Settings to use when running tests.
+Specifies extra arguments to pass to the adapter. Arguments are specified as name-value pairs of the form `<n>=<v>`, where `<n>` is the argument name and `<v>` is the argument value. Use a space to separate multiple arguments.
 
-`--Tests|/Tests:<Test Names>`
+`--Collect|/Collect:<DataCollector friendlyName>`
 
-Run tests with names that match the provided values. Separate multiple values with commas.
+Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
 
-`--TestAdapterPath|/TestAdapterPath`
+`--Diag|/Diag:<Path to log file>`
 
-Use custom test adapters from a given path (if any) in the test run.
-
-`--Platform|/Platform:<Platform type>`
-
-Target platform architecture used for test execution. Valid values are `x86`, `x64`, and `ARM`.
+Enables verbose logs for the test platform. Logs are written to the provided file.
 
 `--Framework|/Framework:<Framework Version>`
 
-Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6`, `.NETCoreApp,Version=v1.0`, etc. Other supported values are `Framework35`, `Framework40`, `Framework45`, and `FrameworkCore10`.
-
-`--Parallel|/Parallel`
-
-Execute tests in parallel. By default, all available cores on the machine are available for use. Set an explicit number of cores with a settings file.
-
-`--TestCaseFilter|/TestCaseFilter:<Expression>`
-
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`.  Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.7` and `.NETCoreApp,Version=v2.0`. Other supported values are `Framework35`, `Framework40`, `Framework45`, and `FrameworkCore10`.
 
 `-?|--Help|/?|/Help`
 
-Prints out a short help for the command.
+Shows help information.
 
 `--logger|/logger:<Logger Uri/FriendlyName>`
 
-Specify a logger for test results.  
+Specify a logger for test results.
 
-* To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
+- To publish test results to Team Foundation Server, use the `TfsPublisher` logger provider:
 
-  ```
+  ```console
   /logger:TfsPublisher;
       Collection=<team project collection url>;
       BuildName=<build name>;
@@ -82,9 +70,9 @@ Specify a logger for test results.
       [;RunTitle=<title>]
   ```
 
-* To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
+- To log results to a Visual Studio Test Results File (TRX), use the `trx` logger provider. This switch creates a file in the test results directory with given log file name. If `LogFileName` isn't provided, a unique file name is created to hold the test results.
 
-  ```
+  ```console
   /logger:trx [;LogFileName=<Defaults to unique file name>]
   ```
 
@@ -92,21 +80,41 @@ Specify a logger for test results.
 
 Lists discovered tests from the given test container.
 
+`--Parallel|/Parallel`
+
+Execute tests in parallel. By default, all available cores on the machine are available for use. Set an explicit number of cores with a settings file.
+
 `--ParentProcessId|/ParentProcessId:<ParentProcessId>`
 
 Process Id of the parent process responsible for launching the current process.
+
+`--Platform|/Platform:<Platform type>`
+
+Target platform architecture used for test execution. Valid values are `x86`, `x64`, and `ARM`.
 
 `--Port|/Port:<Port>`
 
 Specifies the port for the socket connection and receiving the event messages.
 
-`--Diag|/Diag:<Path to log file>`
+`--ResultsDirectory|/ResultsDirectory <DIRECTORY>`
 
-Enables verbose logs for the test platform. Logs are written to the provided file.
+The test results directory is created on the specified path if it doesn't exist.
 
-`args`
+`--Settings|/Settings:<Settings File>`
 
-Specifies extra arguments to pass to the adapter. Arguments are specified as name-value pairs of the form `<n>=<v>`, where `<n>` is the argument name and `<v>` is the argument value. Use a space to separate multiple arguments.
+Settings to use when running tests.
+
+`--TestAdapterPath|/TestAdapterPath`
+
+Use custom test adapters from a given path (if any) in the test run.
+
+`--TestCaseFilter|/TestCaseFilter:<Expression>`
+
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`.  Operator `~` has *contains* semantics and is applicable to string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+
+`--Tests|/Tests:<Test Names>`
+
+Run tests with names that match the provided values. Separate multiple values with commas.
 
 ## Examples
 

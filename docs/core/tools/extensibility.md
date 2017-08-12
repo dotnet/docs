@@ -53,7 +53,7 @@ For tools that need to load the build output of the project for execution, there
 listed under the regular dependencies in the project file. Since CLI uses MSBuild as its build engine, we recommend that these parts of the tool be written as custom MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and [tasks](/visualstudio/msbuild/msbuild-tasks), since they can then take part in the overall build process. Also, they can get any and all data easily that is produced via the build, such as the location of the output files, the current configuration being built, etc. All this information becomes a set of MSBuild properties that can be read from any target. You can see how to add a custom target using NuGet later in this document.
 
 Let's review an example of adding a simple tools-only tool to a simple project. Given an example command called
-`dotnet-api-search` that allows you to search through the NuGet packages for the specified
+`dotnet api search` that allows you to search through the NuGet packages for the specified
 API, here is a console application's project file that uses that tool:
 
 ```xml
@@ -76,7 +76,7 @@ The `<DotNetCliToolReference>` element is structured in a similar way as the `<P
 As mentioned, tools are just portable console applications. You build tools as you would build any other console application.
 After you build it, you use the [`dotnet pack`](dotnet-pack.md) command to create a NuGet package (.nupkg file) that contains
 your code, information about its dependencies, and so on. You can give any name to the package, but the
-application inside, the actual tool binary, has to conform to the convention of `dotnet-<command>` in order for `dotnet`
+application inside, the actual tool binary, has to conform to the convention of `dotnet <command>` in order for `dotnet`
 to be able to invoke it.
 
 > [!NOTE]

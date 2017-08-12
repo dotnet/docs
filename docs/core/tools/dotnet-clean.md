@@ -1,57 +1,64 @@
 ---
-title: dotnet-clean command - .NET Core CLI
-description: The dotnet-clean command cleans the current directory.
-keywords: dotnet-clean, CLI, CLI command, .NET Core
-author: blackdwarf
+title: dotnet clean command
+description: The 'dotnet clean' command cleans the current directory.
+keywords: dotnet clean, CLI, CLI command, .NET Core
+author: guardrex
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ---
-# dotnet-clean
+# dotnet clean
 
 ## Name
 
-`dotnet-clean` - Cleans the output of a project. 
+`dotnet clean` - Cleans the output of a project. 
 
 ## Synopsis
 
-`dotnet clean [<PROJECT>] [-o|--output] [-f|--framework] [-c|--configuration] [-v|--verbosity] [-h|--help]`
+`dotnet clean [<PROJECT>] [-c|--configuration] [-f|--framework] [-h|--help] [-o|--output] [-r|--runtime] [-v|--verbosity]`
 
 ## Description
 
-The `dotnet clean` command cleans the output of the previous build. It's implemented as an [MSBuild target](/visualstudio/msbuild/msbuild-targets), so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (*obj*) and final output (*bin*) folders are cleaned.
+The `dotnet clean` command cleans the output of the previous build. It's implemented as an [MSBuild target](/visualstudio/msbuild/msbuild-targets), so the project is evaluated when the command is run. Only the outputs created from a build are cleaned. Both intermediate (*obj*) and final output (*bin*) folders are cleaned.
+
+> [!NOTE]
+> Deployments created with the `dotnet publish` command (*publish* folder contents) aren't cleaned by the `dotnet clean` command.
 
 ## Arguments
 
 `PROJECT`
 
-The MSBuild project to clean. If a project file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* and uses that file.
+The MSBuild project to clean. If a project file isn't specified, MSBuild searches the current working directory for a file with a *proj* file extension.
 
 ## Options
-
-`-h|--help`
-
-Prints out a short help for the command.
-
-`-o|--output <OUTPUT_DIRECTORY>`
-
-Directory in which the build outputs are placed. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
-
-`-f|--framework <FRAMEWORK>`
-
-The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
 `-c|--configuration {Debug|Release}`
 
 Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
 
+`-f|--framework <FRAMEWORK>`
+
+The [framework](../../standard/frameworks.md) that was specified when you built the project. The framework must be defined in the [project file](csproj.md). If you specified the framework when you built the project, you must specify the framework when using `dotnet clean`.
+
+`-h|--help`
+
+Shows help information.
+
+`-o|--output <OUTPUT_DIRECTORY>`
+
+Directory in which the build outputs are placed. Specify the `-f|--framework <FRAMEWORK>` option with the `-o|--output <OUTPUT_DIRECTORY>` option if you specified the framework when the project was built.
+
+`-r|--runtime <RUNTIME_IDENTIFIER>`
+
+The [runtime](../rid-catalog.md) specified when you built the project. If you specified the runtime when you built the project, you must specify the runtime when using `dotnet clean`.
+
 `-v|--verbosity <LEVEL>`
 
-Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+Sets the verbosity level of the command. Allowed levels are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 

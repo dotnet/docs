@@ -1,10 +1,10 @@
 ---
-title: dotnet-add reference command - .NET Core CLI
-description: The dotnet-add reference command provides a convenient option to add project to project references.
-keywords: dotnet-add, CLI, CLI command, .NET Core
-author: spboyer
+title: dotnet add reference command
+description: The 'dotnet add reference' command provides a convenient option to add project to project references.
+keywords: dotnet add, dotnet add reference, CLI, CLI command, .NET Core
+author: guardrex
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,33 +12,39 @@ ms.devlang: dotnet
 ms.assetid: 5e2a3efd-443c-4f23-a1b1-a662a5387879
 ---
 
-# dotnet-add reference
+# dotnet add reference
 
 ## Name
 
-`dotnet-add reference` - Adds project-to-project (P2P) references.
+`dotnet add reference` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]`
+`dotnet add [<PROJECT>] reference <PROJECT_REFERENCES> [-f|--framework] [-h|--help]`
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](/visualstudio/msbuild/common-msbuild-project-items) elements are added to the project file.
+The `dotnet add reference` command adds project references to a project. After running the command, a [**\<ProjectReference>**](/visualstudio/msbuild/common-msbuild-project-items) element is added to the project file.
+
+For example, adding *lib1\lib1.csproj* to *ToDo.csproj* with `dotnet add reference lib1/lib1.csproj` produces:
 
 ```xml
-<ItemGroup>
-  <ProjectReference Include="app.csproj" />
-  <ProjectReference Include="..\lib2\lib2.csproj" />
-  <ProjectReference Include="..\lib1\lib1.csproj" />
-</ItemGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="lib1\lib1.csproj" />
+  </ItemGroup>
+</Project>
 ```
 
 ## Arguments
 
 `PROJECT`
 
-Specifies the project file. If not specified, the command will search the current directory for one.
+Specifies the project file. If not specified, the command searches the current directory for one.
 
 `PROJECT_REFERENCES`
 
@@ -46,17 +52,17 @@ Project-to-project (P2P) references to add. Specify one or more projects. [Glob 
 
 ## Options
 
-`-h|--help`
-
-Prints out a short help for the command.
-
 `-f|--framework <FRAMEWORK>`
 
 Adds project references only when targeting a specific [framework](../../standard/frameworks.md).
 
+`-h|--help`
+
+Shows help information.
+
 ## Examples
 
-Add a project reference:
+Add a library project reference:
 
 `dotnet add app/app.csproj reference lib/lib.csproj`
 

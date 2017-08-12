@@ -1,10 +1,10 @@
 ---
-title: dotnet-remove reference command - .NET Core CLI
-description: The dotnet-remove reference command provides a convenient option to remove project to project references.
-keywords: dotnet-remove, CLI, CLI command, .NET Core
-author: spboyer
+title: dotnet remove reference command
+description: The 'dotnet remove reference' command provides a convenient option to remove project to project references.
+keywords: dotnet remove reference, CLI, CLI command, .NET Core
+author: guardrex
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 06/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,11 +12,11 @@ ms.devlang: dotnet
 ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 ---
 
-# dotnet-remove reference
+# dotnet remove reference
 
 ## Name
 
-`dotnet-remove reference` - Removes project-to-project references.
+`dotnet remove reference` - Removes project-to-project references.
 
 ## Synopsis
 
@@ -24,27 +24,27 @@ ms.assetid: 889c6b7e-a313-40b1-9fd3-6a6f4c52f1d0
 
 ## Description
 
-The `dotnet remove reference` command provides a convenient option to remove project references from a project.
+The `dotnet remove reference` command removes project references from a project.
 
 ## Arguments
 
 `PROJECT`
 
-Target project file. If not specified, the command searches the current directory for one.
+Specifies the target project file. If not specified, the command searches the current directory for one.
 
 `PROJECT_REFERENCES`
 
-Project to project (P2P references to remove. You can specify one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
+Project to project (P2P) references to remove. The command accepts one or multiple projects. [Glob patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux systems.
 
 ## Options
-
-`-h|--help`
-
-Prints out a short help for the command.
 
 `-f|--framework <FRAMEWORK>`
 
 Removes the reference only when targeting a specific [framework](../../standard/frameworks.md).
+
+`-h|--help`
+
+Shows help information.
 
 ## Examples
 

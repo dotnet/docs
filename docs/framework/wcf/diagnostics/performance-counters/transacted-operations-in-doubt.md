@@ -1,5 +1,5 @@
 ---
-title: "Transacted Operations In Doubt | Microsoft Docs"
+title: "Transacted Operations In Doubt"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

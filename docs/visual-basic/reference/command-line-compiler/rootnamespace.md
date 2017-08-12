@@ -1,5 +1,5 @@
 ---
-title: "/rootnamespace | Microsoft Docs"
+title: "/rootnamespace"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -54,9 +54,9 @@ Specifies a namespace for all type declarations.
 |`namespace`|The name of the namespace in which to enclose all type declarations for the current project.|  
   
 ## Remarks  
- If you use the Visual Studio executable file (Devenv.exe) to compile a project created in the Visual Studio integrated development environment, use `/rootnamespace` to specify the value of the <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A> property. See [Devenv Command Line Switches](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches) for more information.  
+ If you use the Visual Studio executable file (Devenv.exe) to compile a project created in the Visual Studio integrated development environment, use `/rootnamespace` to specify the value of the <xref:VSLangProj80.VBProjectProperties3.RootNamespace%2A> property. See [Devenv Command Line Switches](/visualstudio/ide/reference/devenv-command-line-switches) for more information.  
   
- Use the common language runtime MSIL Disassembler (I`ldasm.exe`) to view the namespace names in your output file.  
+ Use the common language runtime MSIL Disassembler (`Ildasm.exe`) to view the namespace names in your output file.  
   
 |To set /rootnamespace in the Visual Studio integrated development environment|  
 |---|  

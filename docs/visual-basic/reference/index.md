@@ -1,5 +1,5 @@
 ---
-title: "Reference (Visual Basic) | Microsoft Docs"
+title: "Reference (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -47,7 +47,7 @@ This section provides links to reference information about various aspects of [!
  [.NET Framework Reference Information](../../visual-basic/reference/net-framework-reference-information.md)  
  Provides links to information on working with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
   
- [Visual Basic Language Specification](../../visual-basic/reference/language-specification.md)  
+ [Visual Basic Language Specification](../../visual-basic/reference/language-specification/index.md)  
  Provides links to the complete [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language specification, which contains detailed information on all aspects of the language.  
   
 ## Reference  
@@ -58,10 +58,10 @@ This section provides links to reference information about various aspects of [!
  This namespace provides a component that enables you to print a facsimile of the form as it appears on screen.  
   
 ## Related Sections  
- [General User Interface Elements (Visual Studio)](https://docs.microsoft.com/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
+ [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Contains topics for dialog boxes and windows used in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
- [XML Tools in Visual Studio](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)  
+ [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
  [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  

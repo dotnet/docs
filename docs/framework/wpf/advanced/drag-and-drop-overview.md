@@ -1,5 +1,5 @@
 ---
-title: "Drag and Drop Overview | Microsoft Docs"
+title: "Drag and Drop Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -128,7 +128,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
 ## Drag-and-Drop Example  
  This section describes how to implement drag-and-drop for an <xref:System.Windows.Shapes.Ellipse> element. The <xref:System.Windows.Shapes.Ellipse> is both a drag source and a drop target. The transferred data is the string representation of the ellipse’s <xref:System.Windows.Shapes.Shape.Fill%2A> property. The following XAML shows the <xref:System.Windows.Shapes.Ellipse> element and the drag-and-drop related events that it handles. For complete steps on how to implement drag-and-drop, see [Walkthrough: Enabling Drag and Drop on a User Control](../../../../docs/framework/wpf/advanced/walkthrough-enabling-drag-and-drop-on-a-user-control.md).  
   
- [!code-xml[DragDropSnippets#EllipseXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#ellipsexaml)]  
+ [!code-xaml[DragDropSnippets#EllipseXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/dragdropsnippets/cs/mainwindow.xaml#ellipsexaml)]  
   
 ### Enabling an Element to be a Drag Source  
  An object that is a drag source is responsible for:  

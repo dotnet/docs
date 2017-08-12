@@ -836,7 +836,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a <see cref="T:System.TimeSpan" /> to measure the time interval.</summary>
         <returns>A task that will complete with a result of <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />, otherwise with a result of <see langword="false" />.</returns>
         <remarks>
-                    <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If the timeout is set to -1 milliseconds, the method waits indefinitely.
@@ -932,7 +932,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
         <summary>Asynchronously waits to enter the <see cref="T:System.Threading.SemaphoreSlim" />, using a <see cref="T:System.TimeSpan" /> to measure the time interval, while observing a <see cref="T:System.Threading.CancellationToken" />.</summary>
         <returns>A task that will complete with a result of <see langword="true" /> if the current thread successfully entered the <see cref="T:System.Threading.SemaphoreSlim" />, otherwise with a result of <see langword="false" />.</returns>
         <remarks>
-            <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If the timeout is set to -1 milliseconds, the method waits indefinitely.
@@ -940,7 +940,7 @@ If `cancellationToken` is cancelled, the method throws an <xref:System.Operation
  If the timeout is set to zero milliseconds, the method doesn't block. It tests the state of the wait handle and returns immediately. 
   
  ]]></format>
- </remarks>
+        </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite timeout -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.OperationCanceledException">

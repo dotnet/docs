@@ -1,6 +1,6 @@
 ---
-title: Nullable Operators (F#) | Microsoft Docs
-description: Nullable Operators (F#)
+title: Nullable Operators (F#)
+description: Learn about the nullable operators that are available in the F# programming language.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -42,7 +42,7 @@ In query expressions, nullable types arise when selecting data from a data sourc
 Nullable types may be converted to non-nullable primitive types using the usual conversion operators such as `int` or `float`. It is also possible to convert from one nullable type to another nullable type by using the conversion operators for nullable types. The appropriate conversion operators have the same name as the standard ones, but they are in a separate module, the [Nullable](https://msdn.microsoft.com/library/e7a4ea13-28cc-462e-bc3a-33131ace976e) module in the [Microsoft.FSharp.Linq](https://msdn.microsoft.com/library/4765b4e8-4006-4d8c-a405-39c218b3c82d) namespace. Typically, you open this namespace when working with query expressions. In that case, you can use the nullable conversion operators by adding the prefix `Nullable.` to the appropriate conversion operator, as shown in the following code.
 
 ```fsharp
-open Microsoft.Fsharp.Linq
+open Microsoft.FSharp.Linq
 
 let nullableInt = new System.Nullable<int>(10)
 

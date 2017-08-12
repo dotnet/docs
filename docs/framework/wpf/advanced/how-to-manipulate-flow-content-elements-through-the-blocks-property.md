@@ -1,5 +1,5 @@
 ---
-title: "How to: Manipulate Flow Content Elements through the Blocks Property | Microsoft Docs"
+title: "How to: Manipulate Flow Content Elements through the Blocks Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

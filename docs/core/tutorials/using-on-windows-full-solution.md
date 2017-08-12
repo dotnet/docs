@@ -1,6 +1,6 @@
 ---
-title: Building a complete .NET Core solution on Windows, using Visual Studio 2017 | Microsoft Docs
-description: Building a complete .NET Core solution on Windows, using Visual Studio 2017
+title: Building a complete .NET Core solution on Windows, using Visual Studio 2017
+description: Learn how to build a complete .NET Core solution in Visual Studio 2017 on Windows.
 keywords: .NET, .NET Core
 author: bleroy
 ms.author: mairaw

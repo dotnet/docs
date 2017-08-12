@@ -245,7 +245,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (object left, RuntimeTypeHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (object left, RuntimeTypeHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(object left, valuetype System.RuntimeTypeHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Equality(System.Object,System.RuntimeTypeHandle)" />
       <MemberType>Method</MemberType>
@@ -285,12 +285,12 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.Object%2CSystem.RuntimeTypeHandle%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (RuntimeTypeHandle left, object right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (RuntimeTypeHandle left, object right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.RuntimeTypeHandle left, object right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Equality(System.RuntimeTypeHandle,System.Object)" />
       <MemberType>Method</MemberType>
@@ -330,12 +330,12 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.RuntimeTypeHandle%2CSystem.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (object left, RuntimeTypeHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (object left, RuntimeTypeHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(object left, valuetype System.RuntimeTypeHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Inequality(System.Object,System.RuntimeTypeHandle)" />
       <MemberType>Method</MemberType>
@@ -375,12 +375,12 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.Object%2CSystem.RuntimeTypeHandle%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (RuntimeTypeHandle left, object right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (RuntimeTypeHandle left, object right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.RuntimeTypeHandle left, object right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeTypeHandle.op_Inequality(System.RuntimeTypeHandle,System.Object)" />
       <MemberType>Method</MemberType>
@@ -420,7 +420,7 @@
 ## Remarks  
  Using this operator to compare two variables of type <xref:System.RuntimeTypeHandle> causes an ambiguous overload resolution error when compiled. Use the <xref:System.RuntimeTypeHandle.Equals%2A> method instead.  
   
- The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals%28System.RuntimeTypeHandle%2CSystem.Object%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.RuntimeTypeHandle.Equals(System.Object)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

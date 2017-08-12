@@ -1,5 +1,5 @@
 ---
-title: "Mapping XML Schema (XSD) Constraints to DataSet Constraints | Microsoft Docs"
+title: "Mapping XML Schema (XSD) Constraints to DataSet Constraints"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

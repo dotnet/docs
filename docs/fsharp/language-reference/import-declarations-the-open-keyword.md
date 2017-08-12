@@ -1,6 +1,6 @@
 ---
-title: "Import Declarations: The open Keyword (F#) | Microsoft Docs"
-description: "Import Declarations: The open Keyword (F#)"
+title: "Import Declarations: The open Keyword (F#)"
+description: Learn about F# import declarations and how they specify a module or namespace whose elements you can reference without using a fully qualified name.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -27,7 +27,7 @@ open module-or-namespace-name
 ```
 
 ## Remarks
-Referencing code by using the fully qualified namespace or module path every time can create code that is hard to write, read, and maintain. Instead, you can use the `open` keyword for frequently used modules and namespaces so that when you reference a member of that module or namespace, you can use the short form of the name instead of the fully qualified name. This keyword is similar to the `using` keyword in C#, `using``namespace` in Visual C++, and `Imports` in Visual Basic.
+Referencing code by using the fully qualified namespace or module path every time can create code that is hard to write, read, and maintain. Instead, you can use the `open` keyword for frequently used modules and namespaces so that when you reference a member of that module or namespace, you can use the short form of the name instead of the fully qualified name. This keyword is similar to the `using` keyword in C#, `using namespace` in Visual C++, and `Imports` in Visual Basic.
 
 The module or namespace provided must be in the same project or in a referenced project or assembly. If it is not, you can add a reference to the project, or use the `-reference` command`-`line option (or its abbreviation, `-r`). For more information, see [Compiler Options](compiler-options.md).
 

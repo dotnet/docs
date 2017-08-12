@@ -1,5 +1,5 @@
 ---
-title: "Peer Names and PNRP IDs | Microsoft Docs"
+title: "Peer Names and PNRP IDs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "XML and ADO.NET Types in Data Contracts | Microsoft Docs"
+title: "XML and ADO.NET Types in Data Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -90,7 +90,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
   
  Populating a data member of type <xref:System.Array> of `Object` or `Array` of `IEnumerable` with `XmlNode` instances does not result in the data member being treated as an `Array` of `XmlNode` instances. Each array member is serialized separately.  
   
- When used with the `DataContractSerializer`, arrays of `XmlNode` can be assigned polymorphically, but only to a data member of type `Object`. Even though it implements `IEnumerable`, an array of `XmlNode` cannot be used as a collection type and be assigned to an `IEnumerable` data member. As with all polymorphic assignments, the `DataContractSerializer` emits the data contract name in the resulting XML – in this case, it is "ArrayOfXmlNode" in the "http://schemas.datacontract.org/2004/07/System.Xml" namespace. When used with the Net`DataContractSerializer`, any valid assignment of an `XmlNode` array is supported.  
+ When used with the `DataContractSerializer`, arrays of `XmlNode` can be assigned polymorphically, but only to a data member of type `Object`. Even though it implements `IEnumerable`, an array of `XmlNode` cannot be used as a collection type and be assigned to an `IEnumerable` data member. As with all polymorphic assignments, the `DataContractSerializer` emits the data contract name in the resulting XML – in this case, it is "ArrayOfXmlNode" in the "http://schemas.datacontract.org/2004/07/System.Xml" namespace. When used with the `NetDataContractSerializer`, any valid assignment of an `XmlNode` array is supported.  
   
 ### Schema Considerations  
  For details about the schema mapping of XML types, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). This section provides a summary of the important points.  

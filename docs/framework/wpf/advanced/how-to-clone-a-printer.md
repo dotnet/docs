@@ -1,5 +1,5 @@
 ---
-title: "How to: Clone a Printer | Microsoft Docs"
+title: "How to: Clone a Printer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

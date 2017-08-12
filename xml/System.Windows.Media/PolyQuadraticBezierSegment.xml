@@ -23,7 +23,7 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Media.PolyQuadraticBezierSegment> to create two quadratic Bezier curve segments.  
   
- [!code-xml[GeometriesMiscSnippets_snip#PolyQuadraticBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyQuadraticBezierSegmentExample.xaml#polyquadraticbeziersegmentexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#PolyQuadraticBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyQuadraticBezierSegmentExample.xaml#polyquadraticbeziersegmentexamplewholepage)]  
   
  [!code-csharp[GeometriesMiscSnippets_procedural_snip#PolyQuadraticBezierSegmentCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/PolyQuadraticBezierSegmentExample.cs#polyquadraticbeziersegmentcodeexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_procedural_snip#PolyQuadraticBezierSegmentCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/polyquadraticbeziersegmentexample.vb#polyquadraticbeziersegmentcodeexamplewholepage)]  
@@ -177,7 +177,7 @@
 ## Examples  
  The following example shows how to use <xref:System.Windows.Media.PolyQuadraticBezierSegment> to create two quadratic Bezier curves. The control and end points of the curves are specified by setting the <xref:System.Windows.Media.PolyQuadraticBezierSegment.Points%2A> property.  
   
- [!code-xml[GeometriesMiscSnippets_snip#PolyQuadraticBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyQuadraticBezierSegmentExample.xaml#polyquadraticbeziersegmentexamplewholepage)]  
+ [!code-xaml[GeometriesMiscSnippets_snip#PolyQuadraticBezierSegmentExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/PolyQuadraticBezierSegmentExample.xaml#polyquadraticbeziersegmentexamplewholepage)]  
   
  [!code-csharp[GeometriesMiscSnippets_procedural_snip#PolyQuadraticBezierSegmentCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/CSharp/PolyQuadraticBezierSegmentExample.cs#polyquadraticbeziersegmentcodeexamplewholepage)]
  [!code-vb[GeometriesMiscSnippets_procedural_snip#PolyQuadraticBezierSegmentCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometriesMiscSnippets_procedural_snip/visualbasic/polyquadraticbeziersegmentexample.vb#polyquadraticbeziersegmentcodeexamplewholepage)]  

@@ -1,5 +1,5 @@
 ---
-title: "-errorreport (C# Compiler Options) | Microsoft Docs"
+title: "-errorreport (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -70,7 +70,7 @@ This option provides a convenient way to report a C# internal compiler error to 
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
 2.  Click the **Build** property page.  
   

@@ -1,5 +1,5 @@
 ---
-title: "&lt;allowedAudienceUris&gt; | Microsoft Docs"
+title: "&lt;allowedAudienceUris&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "EBindPolicyLevels Enumeration | Microsoft Docs"
+title: "EBindPolicyLevels Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

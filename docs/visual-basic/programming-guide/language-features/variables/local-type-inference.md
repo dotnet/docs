@@ -1,5 +1,5 @@
 ---
-title: "Local Type Inference (Visual Basic) | Microsoft Docs"
+title: "Local Type Inference (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -88,7 +88,7 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  If the value set for `Option Infer` in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.  
   
- For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
+ For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Restrictions  
  Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.  

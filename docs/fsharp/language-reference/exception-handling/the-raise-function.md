@@ -1,6 +1,6 @@
 ---
-title: "Exceptions: the raise Function (F#) | Microsoft Docs"
-description: "Exceptions: the raise Function (F#)"
+title: "Exceptions: the raise Function (F#)"
+description: Learn how the F# 'raise' function is used to indicate that an error or exceptional condition has occurred.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

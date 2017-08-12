@@ -1,5 +1,5 @@
 ---
-title: "3303 - ReceiveContextAbandonWithException | Microsoft Docs"
+title: "3303 - ReceiveContextAbandonWithException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

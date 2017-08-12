@@ -1,5 +1,5 @@
 ---
-title: "Cannot convert start value of type &#39;&lt;type1&gt;&#39;, limit value of &#39;&lt;type2&gt;&#39; and step value of &#39;&lt;type3&gt;&#39; to a common type | Microsoft Docs"
+title: "Cannot convert start value of type &#39;&lt;type1&gt;&#39;, limit value of &#39;&lt;type2&gt;&#39; and step value of &#39;&lt;type3&gt;&#39; to a common type"
 
 ms.date: "2015-07-20"
 ms.prod: .net

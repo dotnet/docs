@@ -1,5 +1,5 @@
 ---
-title: "Streaming Message Transfer | Microsoft Docs"
+title: "Streaming Message Transfer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Position the Child Elements of a Grid | Microsoft Docs"
+title: "How to: Position the Child Elements of a Grid"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -23,7 +23,7 @@ This example shows how to use the get and set methods that are defined on <xref:
 ## Example  
  The following example defines a parent <xref:System.Windows.Controls.Grid> element (`grid1`) that has three columns and three rows. A child <xref:System.Windows.Shapes.Rectangle> element (`rect1`) is added to the <xref:System.Windows.Controls.Grid> in column position zero, row position zero. <xref:System.Windows.Controls.Button> elements represent methods that can be called to reposition the <xref:System.Windows.Shapes.Rectangle> element within the <xref:System.Windows.Controls.Grid>. When a user clicks a button, the related method is activated.  
   
- [!code-xml[gridGetSetMethods#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml#1)]  
+ [!code-xaml[gridGetSetMethods#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml#1)]  
   
  The following code-behind example handles the methods that the button <xref:System.Windows.Controls.Primitives.ButtonBase.Click> events raise. The example writes these method calls to <xref:System.Windows.Controls.TextBlock> elements that use related get methods to output the new property values as strings.  
   

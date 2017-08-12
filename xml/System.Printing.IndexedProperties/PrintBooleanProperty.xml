@@ -112,7 +112,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static bool op_Implicit (System.Printing.IndexedProperties.PrintBooleanProperty attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator bool (System.Printing.IndexedProperties.PrintBooleanProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Implicit(class System.Printing.IndexedProperties.PrintBooleanProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintBooleanProperty.op_Implicit(System.Printing.IndexedProperties.PrintBooleanProperty)~System.Boolean" />
       <MemberType>Method</MemberType>
@@ -134,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static bool op_Implicit (System.Printing.IndexedProperties.PrintBooleanProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator bool (System.Printing.IndexedProperties.PrintBooleanProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Implicit(class System.Printing.IndexedProperties.PrintBooleanProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintBooleanProperty.op_Implicit(System.Printing.IndexedProperties.PrintBooleanProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Boolean" />
       <MemberType>Method</MemberType>

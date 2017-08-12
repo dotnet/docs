@@ -1,5 +1,5 @@
 ---
-title: "Managed Extensibility Framework (MEF) | Microsoft Docs"
+title: "Managed Extensibility Framework (MEF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

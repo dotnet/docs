@@ -1,5 +1,5 @@
 ---
-title: "1104 - WorkflowActivityResume | Microsoft Docs"
+title: "1104 - WorkflowActivityResume"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

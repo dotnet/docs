@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a ListBox to Data | Microsoft Docs"
+title: "How to: Bind a ListBox to Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -25,8 +25,8 @@ An application developer can create <xref:System.Windows.Controls.ListBox> contr
  The following example shows how to create a <xref:System.Windows.Controls.ListBox> that populates the <xref:System.Windows.Controls.ListBoxItem> elements by data binding to a data source called *Colors*. In this case it is not necessary to use <xref:System.Windows.Controls.ListBoxItem> tags to specify the content of each item.  
   
 ## Example  
- [!code-xml[ListBoxEvent#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#7)]  
-[!code-xml[ListBoxEvent#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#3)]  
+ [!code-xaml[ListBoxEvent#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#7)]  
+[!code-xaml[ListBoxEvent#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#3)]  
   
 ## See Also  
  <xref:System.Windows.Controls.ListBox>   

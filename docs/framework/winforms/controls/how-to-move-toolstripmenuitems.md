@@ -1,5 +1,5 @@
 ---
-title: "How to: Move ToolStripMenuItems | Microsoft Docs"
+title: "How to: Move ToolStripMenuItems"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

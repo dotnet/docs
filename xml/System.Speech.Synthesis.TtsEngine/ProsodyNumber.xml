@@ -181,7 +181,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber1, System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber1, System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber1, valuetype System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Equality(System.Speech.Synthesis.TtsEngine.ProsodyNumber,System.Speech.Synthesis.TtsEngine.ProsodyNumber)" />
       <MemberType>Method</MemberType>
@@ -203,12 +203,12 @@
         <returns>
           <see langword="true" /> if <paramref name="prosodyNumber1" /> is the same as <paramref name="prosodyNumber2" />;  otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals%28System.Speech.Synthesis.TtsEngine.ProsodyNumber%2CSystem.Speech.Synthesis.TtsEngine.ProsodyNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals%28System.Speech.Synthesis.TtsEngine.ProsodyNumber%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber1, System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber1, System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber1, valuetype System.Speech.Synthesis.TtsEngine.ProsodyNumber prosodyNumber2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ProsodyNumber.op_Inequality(System.Speech.Synthesis.TtsEngine.ProsodyNumber,System.Speech.Synthesis.TtsEngine.ProsodyNumber)" />
       <MemberType>Method</MemberType>
@@ -230,7 +230,7 @@
         <returns>
           <see langword="true" /> if <paramref name="prosodyNumber1" /> is different from <paramref name="prosodyNumber2" />; otherwise, <paramref name="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Compare%28System.Speech.Synthesis.TtsEngine.ProsodyNumber%2CSystem.Speech.Synthesis.TtsEngine.ProsodyNumber%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ProsodyNumber.Equals%28System.Speech.Synthesis.TtsEngine.ProsodyNumber%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

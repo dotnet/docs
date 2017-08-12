@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ExtensionCollectionIsEmpty | Microsoft Docs"
+title: "System.ServiceModel.ExtensionCollectionIsEmpty"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

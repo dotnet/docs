@@ -1,5 +1,5 @@
 ---
-title: "Caching Support for WCF Web HTTP Services | Microsoft Docs"
+title: "Caching Support for WCF Web HTTP Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Object Data to an XML File (C#) | Microsoft Docs"
+title: "How to: Write Object Data to an XML File (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Write Object Data to an XML File (C#)
-TThis example writes the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
+This example writes the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
 ## Example  
   

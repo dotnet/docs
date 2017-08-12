@@ -1,5 +1,5 @@
 ---
-title: "Connection Grouping | Microsoft Docs"
+title: "Connection Grouping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

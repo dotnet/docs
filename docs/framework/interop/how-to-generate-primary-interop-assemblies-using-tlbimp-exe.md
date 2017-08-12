@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate Primary Interop Assemblies Using Tlbimp.exe | Microsoft Docs"
+title: "How to: Generate Primary Interop Assemblies Using Tlbimp.exe"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

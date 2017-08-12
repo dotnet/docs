@@ -27,7 +27,7 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Windows.Controls.ScrollContentPresenter> to style the content of a <xref:System.Windows.Controls.ScrollViewer> control.  
   
- [!code-xml[custom_scrollviewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Custom_ScrollViewer/CS/default.xaml#1)]  
+ [!code-xaml[custom_scrollviewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Custom_ScrollViewer/CS/default.xaml#1)]  
   
  ]]></format>
     </remarks>
@@ -129,7 +129,7 @@
 ## Examples  
  The following example demonstrates how to use the <xref:System.Windows.Controls.ScrollContentPresenter.CanContentScroll%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
   
- [!code-xml[styled_scrollviewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Styled_ScrollViewer/CS/default.xaml#1)]  
+ [!code-xaml[styled_scrollviewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Styled_ScrollViewer/CS/default.xaml#1)]  
   
  ]]></format>
         </remarks>

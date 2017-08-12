@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedScope2::GetConstantCount Method | Microsoft Docs"
+title: "ISymUnmanagedScope2::GetConstantCount Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

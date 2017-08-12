@@ -1,5 +1,5 @@
 ---
-title: "Queue Dropped Messages | Microsoft Docs"
+title: "Queue Dropped Messages"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

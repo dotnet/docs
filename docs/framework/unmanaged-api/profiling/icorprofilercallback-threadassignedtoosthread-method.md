@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::ThreadAssignedToOSThread Method | Microsoft Docs"
+title: "ICorProfilerCallback::ThreadAssignedToOSThread Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

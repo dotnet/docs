@@ -1,5 +1,5 @@
 ---
-title: "&lt;servicePrincipalName&gt; | Microsoft Docs"
+title: "&lt;servicePrincipalName&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;workflowUnhandledException&gt; | Microsoft Docs"
+title: "&lt;workflowUnhandledException&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Synchronous Scenarios using HTTP, TCP or Named-Pipe | Microsoft Docs"
+title: "Synchronous Scenarios using HTTP, TCP or Named-Pipe"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

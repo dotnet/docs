@@ -1,5 +1,5 @@
 ---
-title: "How to: Verify the Digital Signatures of XML Documents | Microsoft Docs"
+title: "How to: Verify the Digital Signatures of XML Documents"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

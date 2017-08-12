@@ -920,12 +920,12 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <Parameters />
       <Docs>
         <summary>For a description of this member, see <see cref="M:System.ICloneable.Clone" />.</summary>
-        <returns>A new <see cref="T;System.Object" /> that is a copy of this instance.</returns>
+        <returns>A new <see cref="T:System.Object" /> that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcCommand> instance is cast to an <xref:InterfaceName> interface.  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Odbc.OdbcCommand> instance is cast to an <xref:System.ICloneable> interface.  
   
  ]]></format>
         </remarks>

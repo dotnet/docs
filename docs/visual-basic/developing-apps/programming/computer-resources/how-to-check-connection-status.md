@@ -1,5 +1,5 @@
 ---
-title: "How to: Check Connection Status in Visual Basic | Microsoft Docs"
+title: "How to: Check Connection Status in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -47,7 +47,7 @@ The <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property can be 
   
      [!code-vb[VbResourceTasks#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-check-connection-status_1.vb)]  
   
-     This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
+     This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Network?displayProperty=fullName>   

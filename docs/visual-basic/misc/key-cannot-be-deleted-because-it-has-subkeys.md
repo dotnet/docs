@@ -1,5 +1,5 @@
 ---
-title: "Key cannot be deleted because it has subkeys | Microsoft Docs"
+title: "Key cannot be deleted because it has subkeys"
 
 ms.date: "2015-07-20"
 ms.prod: .net

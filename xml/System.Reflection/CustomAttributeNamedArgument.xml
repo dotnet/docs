@@ -310,7 +310,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.CustomAttributeNamedArgument left, valuetype System.Reflection.CustomAttributeNamedArgument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.op_Equality(System.Reflection.CustomAttributeNamedArgument,System.Reflection.CustomAttributeNamedArgument)" />
       <MemberType>Method</MemberType>
@@ -345,12 +345,12 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%28System.Reflection.CustomAttributeNamedArgument%2CSystem.Reflection.CustomAttributeNamedArgument%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.CustomAttributeNamedArgument left, valuetype System.Reflection.CustomAttributeNamedArgument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.op_Inequality(System.Reflection.CustomAttributeNamedArgument,System.Reflection.CustomAttributeNamedArgument)" />
       <MemberType>Method</MemberType>
@@ -385,7 +385,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Reflection.CustomAttributeNamedArgument" /> structures are different; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Compare%28System.Reflection.CustomAttributeNamedArgument%2CSystem.Reflection.CustomAttributeNamedArgument%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Reflection.CustomAttributeNamedArgument.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

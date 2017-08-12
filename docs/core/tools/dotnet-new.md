@@ -131,7 +131,7 @@ Create a new ASP.NET Core C# MVC application project in the current directory wi
  
 Create a new xUnit application targeting .NET Core 2.0:
 
-`dotnet new xunit --Framework netcoreapp2.0`
+`dotnet new xunit --framework netcoreapp2.0`
 
 List all templates available for MVC:
 

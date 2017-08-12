@@ -1,5 +1,5 @@
 ---
-title: "Formulate Joins and Cross-Product Queries | Microsoft Docs"
+title: "Formulate Joins and Cross-Product Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

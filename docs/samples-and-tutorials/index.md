@@ -1,5 +1,5 @@
 ---
-title: Samples and tutorials | Microsoft Docs
+title: Samples and tutorials
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
 keywords: .NET, .NET Core, ASP.NET, C#, sample, tutorial
 author: BillWagner
@@ -35,7 +35,7 @@ This sample covers how to write libraries for .NET using cross-platform CLI tool
 
 ## ASP.NET Core
 
-See the [ASP.NET Core tutorials](https://docs.microsoft.com/aspnet/core/tutorials/). Many articles in the ASP.NET Core documentation have links to samples written for them.
+See the [ASP.NET Core tutorials](/aspnet/core/tutorials/). Many articles in the ASP.NET Core documentation have links to samples written for them.
 
 ## C# language
 

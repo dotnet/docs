@@ -1,5 +1,5 @@
 ---
-title: "Standard Numeric Format Strings | Microsoft Docs"
+title: "Standard Numeric Format Strings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -153,7 +153,7 @@ Standard numeric format strings are used to format common numeric types. A stand
   
 <a name="FFormatString"></a>   
 ## The Fixed-Point ("F") Format Specifier  
- The fixed-point ("F) format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.  
+ The fixed-point ("F") format specifier converts a number to a string of the form "-ddd.ddd…" where each "d" indicates a digit (0-9). The string starts with a minus sign if the number is negative.  
   
  The precision specifier indicates the desired number of decimal places. If the precision specifier is omitted, the current <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A?displayProperty=fullName> property supplies the numeric precision.  
   

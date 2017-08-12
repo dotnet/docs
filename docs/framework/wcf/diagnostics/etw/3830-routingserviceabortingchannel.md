@@ -1,5 +1,5 @@
 ---
-title: "3830 - RoutingServiceAbortingChannel | Microsoft Docs"
+title: "3830 - RoutingServiceAbortingChannel"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Automation object does not have a default value | Microsoft Docs"
+title: "Automation object does not have a default value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

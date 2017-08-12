@@ -1,5 +1,5 @@
 ---
-title: "ODBC Data Type Mappings | Microsoft Docs"
+title: "ODBC Data Type Mappings"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Service: Transactions Flowed | Microsoft Docs"
+title: "Service: Transactions Flowed"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

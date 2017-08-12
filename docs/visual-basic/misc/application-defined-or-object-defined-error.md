@@ -1,5 +1,5 @@
 ---
-title: "Application-defined or object-defined error | Microsoft Docs"
+title: "Application-defined or object-defined error"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use SpinWait to Implement a Two-Phase Wait Operation | Microsoft Docs"
+title: "How to: Use SpinWait to Implement a Two-Phase Wait Operation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

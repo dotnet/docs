@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Multiple Security Tokens of the Same Type | Microsoft Docs"
+title: "How to: Use Multiple Security Tokens of the Same Type"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

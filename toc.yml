@@ -9,13 +9,13 @@
     - name: API reference
       tocHref: /dotnet/api/
       topicHref: /dotnet/api/index
-    - name: .NET Platform Guide
+    - name: .NET Guide
       tocHref: /dotnet/standard/
       topicHref: /dotnet/standard/index
       items:
       - name: .NET Microservices -- Architecture for Containerized .NET Applications
-        tocHref: /dotnet/standard/architecture/
-        topicHref: /dotnet/standard/architecture/index
+        tocHref: /dotnet/standard/microservices-architecture/
+        topicHref: /dotnet/standard/microservices-architecture/index
       - name: Asynchronous Programming Patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
@@ -65,9 +65,12 @@
       - name: Parallel Programming in the .NET Framework
         tocHref: /dotnet/standard/parallel-programming/
         topicHref: /dotnet/standard/parallel-programming/index
-      - name: Security in the .NET Framework
+      - name: Security in .NET
         tocHref: /dotnet/standard/security/
         topicHref: /dotnet/standard/security/index
+      - name: Serialization in .NET
+        tocHref: /dotnet/standard/serialization/
+        topicHref: /dotnet/standard/serialization/index
       - name: Managed Threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index
@@ -211,9 +214,6 @@
       - name: Security in the .NET Framework
         tocHref: /dotnet/framework/security/
         topicHref: /dotnet/framework/security/index
-      - name: Serialization in the .NET Framework
-        tocHref: /dotnet/framework/serialization/
-        topicHref: /dotnet/framework/serialization/index
       - name: .NET Framework Tools
         tocHref: /dotnet/framework/tools/
         topicHref: /dotnet/framework/tools/index
@@ -470,6 +470,9 @@
         - name: Compiler errors
           tocHref: /dotnet/csharp/language-reference/compiler-messages/
           topicHref: /dotnet/csharp/language-reference/compiler-messages/index
+        - name: C# 6.0 draft specification
+          tocHref: /dotnet/csharp/language-reference/language-specification/
+          topicHref: /dotnet/csharp/language-reference/language-specification/index
     - name: F# Guide
       tocHref: /dotnet/fsharp/
       topicHref: /dotnet/fsharp/index

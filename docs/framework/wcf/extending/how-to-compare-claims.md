@@ -1,5 +1,5 @@
 ---
-title: "How to: Compare Claims | Microsoft Docs"
+title: "How to: Compare Claims"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "#region (C# Reference) | Microsoft Docs"
+title: "#region (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # #region (C# Reference)
-`#region` lets you specify a block of code that you can expand or collapse when using the [outlining](https://docs.microsoft.com/visualstudio/ide/outlining) feature of the Visual Studio Code Editor. In longer code files, it is convenient to be able to collapse or hide one or more regions so that you can focus on the part of the file that you are currently working on. The following example shows how to define a region:  
+`#region` lets you specify a block of code that you can expand or collapse when using the [outlining](/visualstudio/ide/outlining) feature of the Visual Studio Code Editor. In longer code files, it is convenient to be able to collapse or hide one or more regions so that you can focus on the part of the file that you are currently working on. The following example shows how to define a region:  
   
 ```csharp
 #region MyClass definition  

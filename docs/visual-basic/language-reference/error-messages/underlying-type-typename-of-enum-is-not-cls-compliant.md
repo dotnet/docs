@@ -1,5 +1,5 @@
 ---
-title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant | Microsoft Docs"
+title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -49,7 +49,7 @@ The data type specified for this enumeration is not part of the [Language Indepe
   
 -   [UShort Data Type](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
   
- By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC40032  
   

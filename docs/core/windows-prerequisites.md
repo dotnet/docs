@@ -1,10 +1,10 @@
 ---
-title: Prerequisites for .NET Core on Windows | Microsoft Docs
+title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
 keywords: .NET Core, Windows, prerequisites, dependencies, Visual Studio
 author: mairaw
 ms.author: mairaw
-ms.date: 03/07/2017
+ms.date: 06/26/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -24,7 +24,7 @@ This article shows you what dependencies you need to deploy and run .NET Core ap
 * Windows 10
 * Windows Server 2008 R2 SP1 (Full Server or Server Core)
 * Windows Server 2012 SP1 (Full Server or Server Core)
-* Windows Server 2012 R2 SP1 (Full Server or Server Core)
+* Windows Server 2012 R2 (Full Server or Server Core)
 * Windows Server 2016 (Full Server, Server Core or Nano Server)
 
 See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) for the full set of supported operating systems.
@@ -47,7 +47,7 @@ You can use any editor of your choice to develop .NET Core applications using th
 To use Visual Studio 2017 to develop .NET Core apps, you'll need to have the latest version of Visual Studio installed with the **.NET Core cross-platform development** toolset (in the **Other Toolsets** section) selected.
 ![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs_workloads.jpg)
 
-There are different editions of Visual Studio 2017. You can download [Visual Studio Community 2017](https://www.visualstudio.com/downloads/) for free to get started.  To learn more about the Visual Studio installation process, see [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
+There are different editions of Visual Studio 2017. You can download [Visual Studio Community 2017](https://www.visualstudio.com/downloads/) for free to get started.  To learn more about the Visual Studio installation process, see [Install Visual Studio 2017](/visualstudio/install/install-visual-studio).
 
 To verify that you're running the latest version of Visual Studio 2017, do the following:
 

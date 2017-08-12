@@ -1,5 +1,5 @@
 ---
-title: "216 - MessageSentByTransport | Microsoft Docs"
+title: "216 - MessageSentByTransport"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: Using C# Interactive with Powershell - C# Guide | Microsoft Docs
+title: Using C# Interactive with Powershell - C# Guide
 description: Explore the C# Interactive Shell from the Windows Command Line
 keywords: .NET, .NET Core, C#, REPL, 
 ms.date: 06/25/2016
@@ -8,7 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 675d962b-f711-4f1a-9eb6-e04220344b5a
-redirect_url: /dotnet/articles/csharp/index
+redirect_url: /dotnet/csharp/index
 ---
 
 # 🔧 Using C# Interactive with Powershell

@@ -1,5 +1,5 @@
 ---
-title: "End-to-End Tracing | Microsoft Docs"
+title: "End-to-End Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

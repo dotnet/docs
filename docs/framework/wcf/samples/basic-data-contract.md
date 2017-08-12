@@ -1,5 +1,5 @@
 ---
-title: "Basic Data Contract | Microsoft Docs"
+title: "Basic Data Contract"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

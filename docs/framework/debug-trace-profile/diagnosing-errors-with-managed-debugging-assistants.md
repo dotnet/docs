@@ -1,5 +1,5 @@
 ---
-title: "Diagnosing Errors with Managed Debugging Assistants | Microsoft Docs"
+title: "Diagnosing Errors with Managed Debugging Assistants"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

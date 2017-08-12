@@ -1,5 +1,5 @@
 ---
-title: "ICorRuntimeHost::LocksHeldByLogicalThread Method | Microsoft Docs"
+title: "ICorRuntimeHost::LocksHeldByLogicalThread Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

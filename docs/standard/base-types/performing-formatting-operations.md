@@ -1,5 +1,5 @@
 ---
-title: "Performing Formatting Operations | Microsoft Docs"
+title: "Performing Formatting Operations"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: .NET Core app deployment with Visual Studio | Microsoft Docs
+title: .NET Core app deployment with Visual Studio
 description: Learn .NET Core app deployment with Visual Studio
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha

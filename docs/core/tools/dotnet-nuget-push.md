@@ -1,5 +1,5 @@
 ---
-title: dotnet-nuget-push command - .NET Core CLI | Microsoft Docs
+title: dotnet-nuget-push command - .NET Core CLI
 description: The dotnet-nuget-push command pushes a package to the server and publishes it. 
 keywords: dotnet-nuget-push, CLI, CLI command, .NET Core
 author: karann-msft
@@ -24,7 +24,7 @@ ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 
 ## Description
 
-The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
+The `dotnet nuget push` command pushes a package to the server and publishes it. The push command uses server and credential details found in the system's NuGet config file or chain of config files. For more information on config files, see [Configuring NuGet Behavior](/nuget/consume-packages/configuring-nuget-behavior). NuGet's default configuration is obtained by loading *%AppData%\NuGet\NuGet.config* (Windows) or *$HOME/.local/share* (Linux/macOS), then loading any *nuget.config* or *.nuget\nuget.config* starting from the root of drive and ending in the current directory.
 
 ## Arguments
 

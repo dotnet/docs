@@ -1,5 +1,5 @@
 ---
-title: "ConnectionGroup.m_ConnectionList Field | Microsoft Docs"
+title: "ConnectionGroup.m_ConnectionList Field"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""

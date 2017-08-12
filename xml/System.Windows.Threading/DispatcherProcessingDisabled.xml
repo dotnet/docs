@@ -122,7 +122,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Threading.DispatcherProcessingDisabled left, System.Windows.Threading.DispatcherProcessingDisabled right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Threading.DispatcherProcessingDisabled left, System.Windows.Threading.DispatcherProcessingDisabled right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Threading.DispatcherProcessingDisabled left, valuetype System.Windows.Threading.DispatcherProcessingDisabled right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.op_Equality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)" />
       <MemberType>Method</MemberType>
@@ -147,7 +147,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Threading.DispatcherProcessingDisabled left, System.Windows.Threading.DispatcherProcessingDisabled right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Threading.DispatcherProcessingDisabled left, System.Windows.Threading.DispatcherProcessingDisabled right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Threading.DispatcherProcessingDisabled left, valuetype System.Windows.Threading.DispatcherProcessingDisabled right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherProcessingDisabled.op_Inequality(System.Windows.Threading.DispatcherProcessingDisabled,System.Windows.Threading.DispatcherProcessingDisabled)" />
       <MemberType>Method</MemberType>

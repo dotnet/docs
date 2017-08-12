@@ -1,5 +1,5 @@
 ---
-title: "701 - ServiceChannelOpenStart | Microsoft Docs"
+title: "701 - ServiceChannelOpenStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Application Development | Microsoft Docs"
+title: "Application Development"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -19,7 +19,8 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Application Development
-<a name="introduction"></a> [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] is a presentation framework that can be used to develop the following types of applications:  
+<a name="introduction"></a>
+[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] is a presentation framework that can be used to develop the following types of applications:  
   
 -   Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
   

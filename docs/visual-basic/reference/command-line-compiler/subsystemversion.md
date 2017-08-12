@@ -1,5 +1,5 @@
 ---
-title: "/subsystemversion (Visual Basic) | Microsoft Docs"
+title: "/subsystemversion (Visual Basic)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.reviewer: ""
@@ -77,11 +77,11 @@ Specifies the minimum version of the subsystem on which the generated executable
 -   The default value is 4.00 if none of the previous conditions is true.  
   
 ## Setting this option  
- To set the **/subsystemversion** compiler option in Visual Studio, you must open the .vbproj file and specify a value for the `SubsystemVersion` property in the MSBuild XML. You can't set this option in the Visual Studio IDE. For more information, see "Default values" earlier in this topic or [Common MSBuild Project Properties](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties).  
+ To set the **/subsystemversion** compiler option in Visual Studio, you must open the .vbproj file and specify a value for the `SubsystemVersion` property in the MSBuild XML. You can't set this option in the Visual Studio IDE. For more information, see "Default values" earlier in this topic or [Common MSBuild Project Properties](/visualstudio/msbuild/common-msbuild-project-properties).  
   
 
   
 ## See Also  
 [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 
-[MSBuild Properties](https://docs.microsoft.com/visualstudio/msbuild/msbuild-properties)
+[MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

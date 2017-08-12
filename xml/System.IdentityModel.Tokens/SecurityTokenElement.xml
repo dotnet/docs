@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this constructor is used, the <xref:System.IdentityModel.Tokens.SecurityTokenElement.GetIdentities%2A> method is not supported by the new instance unless the <xref:System.IdentityModel.Tokens.SecurityTokenElement.CreateSubject%2A> method is overridden.  
+ When this constructor is used, the <xref:System.IdentityModel.Tokens.SecurityTokenElement.GetIdentities%2A> method is not supported by the new instance unless the <xref:System.IdentityModel.Tokens.SecurityTokenElement.ValidateToken%2A> method is overridden.  
   
  If the `securityToken` parameter is an instance of <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken> then the <xref:System.IdentityModel.Tokens.SecurityTokenElement.SecurityTokenXml%2A> property is set to the value of the <xref:System.IdentityModel.Tokens.GenericXmlSecurityToken.TokenXml%2A?displayProperty=fullName> property.  
   

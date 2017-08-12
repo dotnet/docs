@@ -1,5 +1,5 @@
 ---
-title: "Select Nodes Using XPath Navigation | Microsoft Docs"
+title: "Select Nodes Using XPath Navigation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

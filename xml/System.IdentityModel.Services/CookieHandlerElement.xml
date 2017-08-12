@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `<cookieHandler>` element is a child element of the `<federatedAuthentication>` element; the <xref:System.IdentityModel.Services.FederatedAuthenticationElement.CookieHandler%2A?displayProperty=fullName> property is set to an instance of the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The `<cookieHandler>` element is used to configure the cookie handler used by the Session Authentication Module (SAM), which is represented by the <xref:System.IdentityModel.Services.SessionAuthenticationModule> class.  
+ The `<cookieHandler>` element is a child element of the `<federatedAuthentication>` element; the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A?displayProperty=fullName> property is set to an instance of the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The `<cookieHandler>` element is used to configure the cookie handler used by the Session Authentication Module (SAM), which is represented by the <xref:System.IdentityModel.Services.SessionAuthenticationModule> class.  
   
  A cookie handler can be configured in one of the following ways:  
   

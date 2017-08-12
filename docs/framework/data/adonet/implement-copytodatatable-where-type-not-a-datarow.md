@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement CopyToDataTable&lt;T&gt; Where the Generic Type T Is Not a DataRow | Microsoft Docs"
+title: "How to: Implement CopyToDataTable&lt;T&gt; Where the Generic Type T Is Not a DataRow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

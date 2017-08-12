@@ -1,6 +1,6 @@
 ---
-title: Expression Trees Explained | Microsoft Docs
-description: Expression Trees Explained
+title: Expression Trees Explained
+description: Learn about expression trees and how they're useful in translating algorithms for external execution and inspecting code before executing it.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn

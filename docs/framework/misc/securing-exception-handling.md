@@ -1,5 +1,5 @@
 ---
-title: "Securing Exception Handling | Microsoft Docs"
+title: "Securing Exception Handling"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

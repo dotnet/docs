@@ -1,5 +1,5 @@
 ---
-title: dotnet-clean command - .NET Core CLI | Microsoft Docs
+title: dotnet-clean command - .NET Core CLI
 description: The dotnet-clean command cleans the current directory.
 keywords: dotnet-clean, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ---
-
 # dotnet-clean
 
 ## Name
@@ -24,7 +23,7 @@ ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 
 ## Description
 
-The `dotnet clean` command cleans the output of the previous build. It's implemented as an [MSBuild target](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets), so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (*obj*) and final output (*bin*) folders are cleaned.
+The `dotnet clean` command cleans the output of the previous build. It's implemented as an [MSBuild target](/visualstudio/msbuild/msbuild-targets), so the project is evaluated when the command is run. Only the outputs created during the build are cleaned. Both intermediate (*obj*) and final output (*bin*) folders are cleaned.
 
 ## Arguments
 
@@ -46,9 +45,9 @@ Directory in which the build outputs are placed. Specify the `-f|--framework <FR
 
 The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Defines the configuration. If omitted, it defaults to `Debug`. This property is only required when cleaning if you specified it during build time.
+Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
 
 `-v|--verbosity <LEVEL>`
 

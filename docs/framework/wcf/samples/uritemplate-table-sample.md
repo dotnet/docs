@@ -1,5 +1,5 @@
 ---
-title: "UriTemplate Table Sample | Microsoft Docs"
+title: "UriTemplate Table Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

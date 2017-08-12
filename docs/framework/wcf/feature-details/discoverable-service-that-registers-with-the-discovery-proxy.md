@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement a Discoverable Service that Registers with the Discovery Proxy | Microsoft Docs"
+title: "How to: Implement a Discoverable Service that Registers with the Discovery Proxy"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

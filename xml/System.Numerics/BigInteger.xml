@@ -1482,7 +1482,7 @@
 ## Remarks  
  This property is a convenience feature that indicates whether a <xref:System.Numerics.BigInteger> value is evenly divisible by two. It is equivalent to the following expression:  
   
-```csharp  
+```csharp   
 value % 2 == 0;  
 ```  
   
@@ -1661,8 +1661,8 @@ value Mod 2 = 0
   
  You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=fullName> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=fullName> if the result is greater than <xref:System.Double.MaxValue?displayProperty=fullName>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
   
- [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)] 
- [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]   
+ [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)]
+ [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]
   
  This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for the primitive numeric types.  
   
@@ -2124,7 +2124,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Addition (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator + (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Addition(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Addition(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2175,7 +2175,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_BitwiseAnd (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator &amp; (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_BitwiseAnd(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_BitwiseAnd(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2230,7 +2230,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_BitwiseOr (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator | (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_BitwiseOr(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_BitwiseOr(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2285,7 +2285,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Decrement (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator -- (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Decrement(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Decrement(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2328,12 +2328,12 @@ value Mod 2 = 0
   
  Because <xref:System.Numerics.BigInteger> objects are immutable, the <xref:System.Numerics.BigInteger.op_Decrement%2A> operator creates a new <xref:System.Numerics.BigInteger> object whose value is one less than the <xref:System.Numerics.BigInteger> object represented by `value`. This means that repeated calls to <xref:System.Numerics.BigInteger.op_Decrement%2A> may be expensive.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Division (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator / (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Division(valuetype System.Numerics.BigInteger dividend, valuetype System.Numerics.BigInteger divisor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Division(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2394,7 +2394,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2438,12 +2438,12 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -2487,12 +2487,12 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2539,12 +2539,12 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> instance method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -2596,7 +2596,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2648,7 +2648,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_ExclusiveOr (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator ^ (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_ExclusiveOr(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_ExclusiveOr(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -2703,7 +2703,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Explicit (decimal value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.BigInteger (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Explicit(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -2728,14 +2728,32 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Decimal" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> object to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Decimal> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Decimal%29?displayProperty=fullName>.
+
+
+## Examples
+ The following example converts the individual elements in an array of <xref:System.Decimal> values to <xref:System.Numerics.BigInteger> objects, and then displays the result of each conversion. Note that any fractional part of a <xref:System.Decimal> value is truncated during the conversion.   
+
+ [!code-csharp[System.Numerics.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#1)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Explicit (double value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.BigInteger (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Explicit(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Double)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -2760,14 +2778,41 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Double" /> value to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Double.PositiveInfinity" />.
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Double> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Double%29?displayProperty=fullName>.
+
+
+## Examples
+ The following example converts the individual elements in an array of <xref:System.Double> values to <xref:System.Numerics.BigInteger> objects, and then displays the result of each conversion. Note that any fractional part of a <xref:System.Double> value is truncated during the conversion.   
+    
+ [!code-csharp[System.Numerics.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#2)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static byte op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator byte (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int8 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Byte" />
       <MemberType>Method</MemberType>
@@ -2792,14 +2837,34 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Byte" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned byte value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CByte` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Byte> data type. There is no loss of precision in the resulting <xref:System.Byte> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Byte> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Byte> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#1)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -2824,14 +2889,34 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Decimal" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a <see cref="T:System.Decimal" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Decimal.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDec` in Visual Basic) is used.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Decimal> data type. 
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Decimal> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Decimal> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#2)]
+ [!code-vb[System.Numeric.BigInteger.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#2)]  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static double op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator double (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Double" />
       <MemberType>Method</MemberType>
@@ -2861,14 +2946,36 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Double" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a <see cref="T:System.Double" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CDbl` in Visual Basic) is used.   
+
+ Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Double> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Double.MinValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Double.MaxValue?displayProperty=fullName>, the resulting <xref:System.Double> value is <xref:System.Double.PositiveInfinity?displayProperty=fullName>.
+ 
+ The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Double> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Double> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Double> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Double> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Double.MaxValue?displayProperty=fullName>.   
+    
+ [!code-csharp[System.Numerics.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#4)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#4)]   
+
+
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Double> values.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#3)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static short op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator short (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int16 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int16" />
       <MemberType>Method</MemberType>
@@ -2893,14 +3000,34 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a 16-bit signed integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 16-bit signed integer value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CShort` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int16> data type. There is no loss of precision in the resulting <xref:System.Int16> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int16> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int16> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#4)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#4)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -2930,14 +3057,34 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a 32-bit signed integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 32-bit signed integer value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CInt` in Visual Basic) is used. Otherwise, they display a compiler error.   
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int32> data type. There is no loss of precision in the resulting <xref:System.Int16> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int32> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int32> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#5)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#5)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -2967,14 +3114,34 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a 64-bit signed integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 64-bit signed integer value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CLng` in Visual Basic) is used. Otherwise, they display a compiler error.  
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int64> data type. 
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Int64> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Int64> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#6)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#6)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static sbyte op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator sbyte (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int8 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.SByte" />
       <MemberType>Method</MemberType>
@@ -3004,14 +3171,36 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a signed 8-bit value.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a signed 8-bit value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int16" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSByte` in Visual Basic) is used. Otherwise, they display a compiler error.  
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.SByte> data type. There is no loss of precision in the resulting <xref:System.SByte> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.SByte> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.SByte> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#7)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#7)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static float op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator float (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Single" />
       <MemberType>Method</MemberType>
@@ -3036,14 +3225,36 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a single-precision floating-point value.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a single-precision floating-point value.</summary>
+        <returns>An object that contains the closest possible representation of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss or a loss of precision. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CSng` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because the <xref:System.Numerics.BigInteger> value can be outside the range of the <xref:System.Single> data type, this operation is a narrowing conversion. If the conversion is unsuccessful, it does not throw an <xref:System.OverflowException>. Instead, if the <xref:System.Numerics.BigInteger> value is less than <xref:System.Single.MinValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.NegativeInfinity?displayProperty=fullName>. If the <xref:System.Numerics.BigInteger> value is greater than <xref:System.Single.MaxValue?displayProperty=fullName>, the resulting <xref:System.Single> value is <xref:System.Single.PositiveInfinity?displayProperty=fullName>.
+
+ The conversion of a <xref:System.Numerics.BigInteger> to a <xref:System.Single> may involve a loss of precision. In some cases, the loss of precision may cause the casting or conversion operation to succeed even if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.Single> data type. The following example provides an illustration. It assigns the maximum value of a <xref:System.Single> to two <xref:System.Numerics.BigInteger> variables, increments one <xref:System.Numerics.BigInteger> variable by 9.999e291, and tests the two variables for equality. As expected, the call to the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method shows that they are unequal. However, the conversion of the larger <xref:System.Numerics.BigInteger> value back to a <xref:System.Single> succeeds, although the <xref:System.Numerics.BigInteger> value now exceeds <xref:System.Single.MaxValue?displayProperty=fullName>.   
+    
+ [!code-csharp[System.Numerics.BigInteger.Explicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#5)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#5)]   
+
+
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.Single> values.   
+     
+ [!code-csharp[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#8)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#8)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ushort op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ushort (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int16 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt16" />
       <MemberType>Method</MemberType>
@@ -3073,14 +3284,36 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to an unsigned 16-bit integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 16-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int32" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUShort` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt16> data type. There is no loss of precision in the resulting <xref:System.UInt16> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt16> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt16> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#9)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#9)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static uint op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator uint (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int32 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt32" />
       <MemberType>Method</MemberType>
@@ -3110,14 +3343,36 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to an unsigned 32-bit integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 32-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int64" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CUInt` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt32> data type. There is no loss of precision in the resulting <xref:System.UInt32> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt32> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt32> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#10)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#10)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ulong op_Explicit (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ulong (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int64 op_Explicit(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt64" />
       <MemberType>Method</MemberType>
@@ -3147,14 +3402,36 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Numerics.BigInteger" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to an unsigned 64-bit integer.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned 64-bit integer value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Language compilers do not perform this conversion automatically because it can involve data loss. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` or `CULng` in Visual Basic) is used. Otherwise, they display a compiler error.    
+
+ Because this operation defines a narrowing conversion, it can throw an <xref:System.OverflowException> at run time if the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt64> data type. There is no loss of precision in the resulting <xref:System.UInt64> value if the conversion is successful.
+
+## Examples
+ The following example illustrates the conversion of <xref:System.Numerics.BigInteger> to <xref:System.UInt64> values. It also handles an <xref:System.OverflowException> that is thrown because the <xref:System.Numerics.BigInteger> value is outside the range of the <xref:System.UInt64> data type.   
+    
+ [!code-csharp[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/cs/System.Numeric.BigInteger.Explicit.cs#11)]   
+ [!code-vb[System.Numeric.BigInteger.Explicit#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Explicit/vb/System.Numeric.BigInteger.Explicit.vb#11)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Explicit (float value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Numerics.BigInteger (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Explicit(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Single)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3179,14 +3456,41 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an explicit conversion of a <see cref="T:System.Single" /> value to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Single.NaN" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Single.PositiveInfinity" />.
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Single.NegativeInfinity" />.</exception>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+ 
+ The overloads of the <xref:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger> method define the types to which or from which a <xref:System.Numerics.BigInteger> object can be converted. Because the conversion from <xref:System.Single> to <xref:System.Numerics.BigInteger> can involve truncating any fractional part of `value`, language compilers do not perform this conversion automatically. Instead, they perform the conversion only if a casting operator (in C#) or a conversion function (such as `CType` in Visual Basic) is used. Otherwise, they display a compiler error.
+
+ For languages that do not support custom operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Single%29?displayProperty=fullName>.
+
+
+## Examples
+ The following example converts the individual elements in an array of <xref:System.Single> values to <xref:System.Numerics.BigInteger> objects, and then displays the result of each conversion. Note that any fractional part of a <xref:System.Single> value is truncated during the conversion.
+ 
+ [!code-csharp[System.Numerics.BigInteger.Explicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/cs/Explicit1.cs#3)]   
+ [!code-vb[System.Numerics.BigInteger.Explicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Explicit/vb/Explicit1.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3232,12 +3536,12 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -3283,12 +3587,12 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3337,12 +3641,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#21)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.%2A> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -3396,7 +3700,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3450,7 +3754,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3496,12 +3800,12 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -3547,12 +3851,12 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3601,12 +3905,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#23)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.%2A> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -3655,12 +3959,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#22)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -3709,12 +4013,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#24)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (byte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3739,14 +4043,28 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of an unsigned byte to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any fractional part of the `value` parameter is truncated before conversion.
+
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Byte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#1)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#1)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (short value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int16)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3771,14 +4089,26 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a signed 16-bit integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#2)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#2)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (int value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3803,14 +4133,26 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a signed 32-bit integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.  
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#3)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#3)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (long value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3835,14 +4177,26 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a signed 64-bit integer to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int64%29?displayProperty=fullName>.   
+ 
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.Int64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#4)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#4)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (sbyte value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.SByte)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3872,14 +4226,28 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.SByte" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of an 8-bit signed integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.#ctor(System.Int32)" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.Int32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.SByte> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#5)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#5)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (ushort value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt16)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3909,14 +4277,28 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a 16-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt16> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#6)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#6)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (uint value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt32)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3946,14 +4328,28 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a 32-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt32%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt32> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#7)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#7)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Implicit (ulong value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Numerics.BigInteger (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Implicit(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt64)~System.Numerics.BigInteger" />
       <MemberType>Method</MemberType>
@@ -3983,14 +4379,28 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
+        <summary>Defines an implicit conversion of a 64-bit unsigned integer to a <see cref="T:System.Numerics.BigInteger" /> value.  
+  
+ This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
+        <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For languages that do not support implicit operators, the alternative method is <xref:System.Numerics.BigInteger.%23ctor%28System.UInt64%29?displayProperty=fullName>.   
+
+ The overloads of the <xref:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger> method define the types to which or from which a compiler can automatically convert a <xref:System.Numerics.BigInteger> value without an explicit casting operator (in C#) or a call to a conversion function (in Visual Basic). They are widening conversions that do not involve data loss and do not throw an <xref:System.OverflowException>. This overload lets the compiler handle conversions from a <xref:System.UInt64> value to a <xref:System.Numerics.BigInteger> value, as the following example shows.   
+   
+ [!code-csharp[System.Numeric.BigInteger.Implicit#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/cs/Implicit1.cs#8)]   
+ [!code-vb[System.Numeric.BigInteger.Implicit#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Implicit/vb/Implicit1.vb#8)]   
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Increment (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator ++ (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Increment(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Increment(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4032,12 +4442,12 @@ value Mod 2 = 0
   
  Because <xref:System.Numerics.BigInteger> objects are immutable, the <xref:System.Numerics.BigInteger.op_Increment%2A> operator creates a new <xref:System.Numerics.BigInteger> object whose value is one more than the <xref:System.Numerics.BigInteger> object represented by `value`. Therefore, repeated calls to <xref:System.Numerics.BigInteger.op_Increment%2A> may be expensive.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Add%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4090,7 +4500,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -4138,12 +4548,12 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4194,12 +4604,12 @@ value Mod 2 = 0
   
 -   Calling the <xref:System.Numerics.BigInteger.Equals%28System.Numerics.BigInteger%29?displayProperty=fullName> method and reversing its value.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -4255,7 +4665,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4311,7 +4721,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LeftShift">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_LeftShift (System.Numerics.BigInteger value, int shift);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator &lt;&lt; (System.Numerics.BigInteger value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_LeftShift(valuetype System.Numerics.BigInteger value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LeftShift(System.Numerics.BigInteger,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -4363,7 +4773,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4409,12 +4819,12 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -4460,12 +4870,12 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4514,12 +4924,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#28](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#28)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -4568,12 +4978,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#36](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#36)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4622,12 +5032,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#38](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#38)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (long left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (long left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Int64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4673,12 +5083,12 @@ value Mod 2 = 0
   
  If `left` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Numerics.BigInteger left, long right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Numerics.BigInteger left, long right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Numerics.BigInteger left, int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.Int64)" />
       <MemberType>Method</MemberType>
@@ -4724,12 +5134,12 @@ value Mod 2 = 0
   
  If `right` is a <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.SByte>, <xref:System.UInt16>, or <xref:System.UInt32> value, it is implicitly converted to an <xref:System.Int64> value when the operation is performed.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.Int64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4778,12 +5188,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#30](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#30)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Numerics.BigInteger left, ulong right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Numerics.BigInteger left, ulong right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Numerics.BigInteger left, unsigned int64 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.UInt64)" />
       <MemberType>Method</MemberType>
@@ -4832,12 +5242,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#44](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#44)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (ulong left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (ulong left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(unsigned int64 left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.UInt64,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4886,12 +5296,12 @@ value Mod 2 = 0
   
  [!code-vb[System.Numerics.BigInteger.Operators#46](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numerics.BigInteger.Operators/vb/Operator1.vb#46)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.CompareTo%28System.UInt64%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Modulus">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Modulus (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator % (System.Numerics.BigInteger dividend, System.Numerics.BigInteger divisor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Modulus(valuetype System.Numerics.BigInteger dividend, valuetype System.Numerics.BigInteger divisor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Modulus(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4939,14 +5349,14 @@ value Mod 2 = 0
   
  The sign of the value returned by the modulus operation depends on the sign of `dividend`: If `dividend` is positive, the modulus operation returns a positive result; if it is negative, the modulus operation returns a negative result. The behavior of the modulus operation with <xref:System.Numerics.BigInteger> values is identical to the modulus operation with other integral types.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Remainder%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Remainder%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
         <exception cref="T:System.DivideByZeroException">
           <paramref name="divisor" /> is 0 (zero).</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Multiply (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator * (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Multiply(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -4990,12 +5400,12 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#11)]
  [!code-vb[System.Numeric.BigInteger.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#11)]  
   
- The equivalent method for this operator is <xref:System.Numeric%2A> s .BigInteger.Multiply(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_OnesComplement (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator ~ (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_OnesComplement(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_OnesComplement(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -5041,7 +5451,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_RightShift">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_RightShift (System.Numerics.BigInteger value, int shift);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator &gt;&gt; (System.Numerics.BigInteger value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_RightShift(valuetype System.Numerics.BigInteger value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_RightShift(System.Numerics.BigInteger,System.Int32)" />
       <MemberType>Method</MemberType>
@@ -5092,7 +5502,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_Subtraction (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator - (System.Numerics.BigInteger left, System.Numerics.BigInteger right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_Subtraction(valuetype System.Numerics.BigInteger left, valuetype System.Numerics.BigInteger right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Subtraction(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -5138,12 +5548,12 @@ value Mod 2 = 0
   
  Languages that do not support custom operators can call the <xref:System.Numerics.BigInteger.Subtract%2A?displayProperty=fullName> method instead.  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Subtract%28System.Numerics.BigInteger%2CSystem.Numerics.BigInteger%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_UnaryNegation (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator - (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_UnaryNegation(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_UnaryNegation(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>
@@ -5195,7 +5605,7 @@ value Mod 2 = 0
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
-      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger op_UnaryPlus (System.Numerics.BigInteger value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.BigInteger operator + (System.Numerics.BigInteger value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.BigInteger op_UnaryPlus(valuetype System.Numerics.BigInteger value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_UnaryPlus(System.Numerics.BigInteger)" />
       <MemberType>Method</MemberType>

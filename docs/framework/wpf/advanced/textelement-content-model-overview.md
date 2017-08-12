@@ -1,5 +1,5 @@
 ---
-title: "TextElement Content Model Overview | Microsoft Docs"
+title: "TextElement Content Model Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -38,7 +38,7 @@ This content model overview describes the supported content for a              <
   
      Thus far, this is what the markup might look like.  
   
-     [!code-xml[FlowOvwSnippets_snip#SchemaWalkThrough1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/MiscSnippets.xaml#schemawalkthrough1)]  
+     [!code-xaml[FlowOvwSnippets_snip#SchemaWalkThrough1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/MiscSnippets.xaml#schemawalkthrough1)]  
   
 2.  According to the diagram, there are several                          <xref:System.Windows.Documents.Block> elements to choose from including                          <xref:System.Windows.Documents.Paragraph>,                          <xref:System.Windows.Documents.Section>,                          <xref:System.Windows.Documents.Table>,                          <xref:System.Windows.Documents.List>, and                          <xref:System.Windows.Documents.BlockUIContainer> (see Block-derived classes in the preceding diagram). Let's say we want a                          <xref:System.Windows.Documents.Table>. According to the preceding diagram, a                          <xref:System.Windows.Documents.Table> contains a                          <xref:System.Windows.Documents.TableRowGroup> containing                          <xref:System.Windows.Documents.TableRow> elements, which contain                          <xref:System.Windows.Documents.TableCell> elements which contain a                          <xref:System.Windows.Documents.Block>-derived object. The following is the corresponding segment for                          <xref:System.Windows.Documents.Table> taken from the preceding diagram.  
   
@@ -46,7 +46,7 @@ This content model overview describes the supported content for a              <
   
      The following is the corresponding markup.  
   
-     [!code-xml[FlowOvwSnippets_snip#SchemaWalkThrough2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/MiscSnippets.xaml#schemawalkthrough2)]  
+     [!code-xaml[FlowOvwSnippets_snip#SchemaWalkThrough2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/MiscSnippets.xaml#schemawalkthrough2)]  
   
 3.  Again, one or more                          <xref:System.Windows.Documents.Block> elements are required underneath a                          <xref:System.Windows.Documents.TableCell>. To make it simple, let's place some text inside the cell. We can do this using a                          <xref:System.Windows.Documents.Paragraph> with a                          <xref:System.Windows.Documents.Run> element. The following is the corresponding segments from the diagram showing that a                          <xref:System.Windows.Documents.Paragraph> can take an                          <xref:System.Windows.Documents.Inline> element and that a                          <xref:System.Windows.Documents.Run> (an                          <xref:System.Windows.Documents.Inline> element) can only take plain text.  
   
@@ -56,7 +56,7 @@ This content model overview describes the supported content for a              <
   
  The following is the entire example in markup.  
   
- [!code-xml[FlowOvwSnippets_snip#SchemaExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/SchemaExample.xaml#schemaexamplewholepage)]  
+ [!code-xaml[FlowOvwSnippets_snip#SchemaExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/SchemaExample.xaml#schemaexamplewholepage)]  
   
 <a name="Using_the_Content_Property"></a>   
 ## Working with TextElement Content Programmatically  

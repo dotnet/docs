@@ -1423,7 +1423,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xaml.XamlMember xamlMember1, System.Xaml.XamlMember xamlMember2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Xaml.XamlMember xamlMember1, System.Xaml.XamlMember xamlMember2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.XamlMember xamlMember1, class System.Xaml.XamlMember xamlMember2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.op_Equality(System.Xaml.XamlMember,System.Xaml.XamlMember)" />
       <MemberType>Method</MemberType>
@@ -1448,7 +1448,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xaml.XamlMember xamlMember1, System.Xaml.XamlMember xamlMember2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Xaml.XamlMember xamlMember1, System.Xaml.XamlMember xamlMember2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.XamlMember xamlMember1, class System.Xaml.XamlMember xamlMember2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.op_Inequality(System.Xaml.XamlMember,System.Xaml.XamlMember)" />
       <MemberType>Method</MemberType>

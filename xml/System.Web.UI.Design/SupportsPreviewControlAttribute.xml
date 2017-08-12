@@ -36,7 +36,7 @@
 > [!NOTE]
 >  Designer classes derived from the <xref:System.Web.UI.Design.ControlDesigner> class can override the <xref:System.Web.UI.Design.ControlDesigner.UsePreviewControl%2A> and <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> members, and ignore the <xref:System.Web.UI.Design.SupportsPreviewControlAttribute> attribute. To determine the expected behavior for <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> and <xref:System.Web.UI.Design.ControlDesigner.UsePreviewControl%2A>, see the reference documentation for the derived control designer class.  
   
- For general information about using attributes, see [Attributes Overview](http://msdn.microsoft.com/en-us/a4daf212-2410-423d-a800-7a08864e9bff) and [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87). For more information about design-time attributes, see [Attributes and Design-Time Support](http://msdn.microsoft.com/library/7aed9eb4-124b-4a15-a0a3-458f37ac9ef7).  
+ For general information about using attributes, see [Attributes Overview](http://msdn.microsoft.com/en-us/a4daf212-2410-423d-a800-7a08864e9bff) and [Attributes](~/docs/standard/attributes/index.md). For more information about design-time attributes, see [Attributes and Design-Time Support](http://msdn.microsoft.com/library/7aed9eb4-124b-4a15-a0a3-458f37ac9ef7).  
   
    
   

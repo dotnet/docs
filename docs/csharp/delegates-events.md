@@ -1,6 +1,6 @@
 ---
-title: Delegates & events | Microsoft Docs
-description: Delegates & events
+title: Delegates & events
+description: See where to find information on delegates and events in the .NET Core documentation.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
@@ -16,11 +16,6 @@ ms.assetid: 4e80e053-8022-4987-a8a0-209caec0315d
 
 This topic will be covered under the following articles:
 
-<style type="text/css">
-ol {
-    list-style-type: upper-roman;
-}
-</style>
 1. [Overview of Delegates](delegates-overview.md)
 
     This article covers an overview of delegates.
@@ -41,7 +36,7 @@ ol {
 
     This article covers an overview of events in .NET.
 
-6. [The .NET Event Pattern](event-pattern.md)
+6. [Standard .NET event patterns](event-pattern.md)
 
     This article covers the standard event pattern in .NET.
 

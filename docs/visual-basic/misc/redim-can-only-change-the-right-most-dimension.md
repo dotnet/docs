@@ -1,5 +1,5 @@
 ---
-title: "&#39;ReDim&#39; can only change the right-most dimension | Microsoft Docs"
+title: "&#39;ReDim&#39; can only change the right-most dimension"
 
 ms.date: "2015-07-20"
 ms.prod: .net

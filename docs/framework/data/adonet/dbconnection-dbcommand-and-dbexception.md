@@ -1,5 +1,5 @@
 ---
-title: "DbConnection, DbCommand and DbException | Microsoft Docs"
+title: "DbConnection, DbCommand and DbException"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

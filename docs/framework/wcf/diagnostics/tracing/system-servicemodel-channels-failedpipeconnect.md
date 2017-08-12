@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.Channels.FailedPipeConnect | Microsoft Docs"
+title: "System.ServiceModel.Channels.FailedPipeConnect"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder | Microsoft Docs"
+title: "Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

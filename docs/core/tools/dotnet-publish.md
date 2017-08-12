@@ -1,5 +1,5 @@
 ---
-title: dotnet-publish command - .NET Core CLI | Microsoft Docs
+title: dotnet-publish command - .NET Core CLI
 description: The dotnet-publish command publishes your .NET Core project into a directory. 
 keywords: dotnet-publish, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 ---
-
 # dotnet-publish
 
 ## Name
@@ -31,7 +30,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 * *\*.runtime.config.json* file that specifies the shared runtime that the application expects, as well as other configuration options for the runtime (for example, garbage collection type).
 * The application's dependencies. These are copied from the NuGet cache into the output folder.
 
-The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution and is the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [.NET Core Application Deployment](../deploying/index.md). For the directory structure of a published application, see [Directory structure](https://docs.microsoft.com/en-us/aspnet/core/hosting/directory-structure).
+The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution and is the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [.NET Core Application Deployment](../deploying/index.md). For the directory structure of a published application, see [Directory structure](/aspnet/core/hosting/directory-structure).
 
 ## Arguments
 
@@ -57,9 +56,9 @@ Publishes the application for a given runtime. This is used when creating a [sel
 
 Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Configuration to use when building the project. The default value is `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `--version-suffix <VERSION_SUFFIX>`
 

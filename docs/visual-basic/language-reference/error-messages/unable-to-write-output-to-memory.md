@@ -1,5 +1,5 @@
 ---
-title: "Unable to write output to memory | Microsoft Docs"
+title: "Unable to write output to memory"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -52,4 +52,4 @@ There was a problem writing output to memory.
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

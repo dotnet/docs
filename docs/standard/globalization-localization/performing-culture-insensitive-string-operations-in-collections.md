@@ -1,5 +1,5 @@
 ---
-title: "Performing Culture-Insensitive String Operations in Collections | Microsoft Docs"
+title: "Performing Culture-Insensitive String Operations in Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -39,7 +39,7 @@ internalHashtable = New Hashtable(CaseInsensitiveHashCodeProvider.Default, CaseI
 internalHashtable = new Hashtable(CaseInsensitiveHashCodeProvider.Default, CaseInsensitiveComparer.Default);  
 ```  
   
- If you want to create a culture-insensitive `Hashtable`using the `CaseInsensitiveComparer` and `CaseInsensitiveHashCodeProvider` classes, initialize new instances of these classes using the constructors that accept a `culture` parameter. For the `culture` parameter, specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>. The following code example demonstrates the constructor for a culture-insensitive `Hashtable`.  
+ If you want to create a culture-insensitive `Hashtable` using the `CaseInsensitiveComparer` and `CaseInsensitiveHashCodeProvider` classes, initialize new instances of these classes using the constructors that accept a `culture` parameter. For the `culture` parameter, specify <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>. The following code example demonstrates the constructor for a culture-insensitive `Hashtable`.  
   
 ```vb  
 internalHashtable = New Hashtable(New  

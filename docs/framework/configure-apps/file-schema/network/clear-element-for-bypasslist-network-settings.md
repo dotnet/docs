@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for bypasslist (Network Settings) | Microsoft Docs"
+title: "&lt;clear&gt; Element for bypasslist (Network Settings)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -65,7 +65,7 @@ Clears the proxy bypass list.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
- The following code example clears the bypass list and then adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP address begins with 192.168.  
+ The following example clears the bypass list and then adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP address begins with 192.168.  
   
 ```xml  
 <configuration>  

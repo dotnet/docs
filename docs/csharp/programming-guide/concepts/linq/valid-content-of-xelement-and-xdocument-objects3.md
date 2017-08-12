@@ -1,5 +1,5 @@
 ---
-title: "Valid Content of XElement and XDocument Objects3 | Microsoft Docs"
+title: "Valid Content of XElement and XDocument Objects3"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

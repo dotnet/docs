@@ -1,5 +1,5 @@
 ---
-title: "Working with Certificates | Microsoft Docs"
+title: "Working with Certificates"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

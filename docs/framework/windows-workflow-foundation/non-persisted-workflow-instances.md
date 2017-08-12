@@ -1,5 +1,5 @@
 ---
-title: "Non-Persisted Workflow Instances | Microsoft Docs"
+title: "Non-Persisted Workflow Instances"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

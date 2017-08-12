@@ -1,5 +1,5 @@
 ---
-title: "XML Type Support Implementation Notes | Microsoft Docs"
+title: "XML Type Support Implementation Notes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

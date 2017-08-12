@@ -1,5 +1,5 @@
 ---
-title: "Accessing application settings (Visual Basic) | Microsoft Docs"
+title: "Accessing application settings (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -53,5 +53,5 @@ This section contains topics describing the `My.Settings` object and the tasks i
 |Determine the values of user settings|[How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
   
 ## See also  
- [Managing Application Settings (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet)   
+ [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)   
  [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)

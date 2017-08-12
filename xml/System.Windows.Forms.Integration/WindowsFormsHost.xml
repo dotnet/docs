@@ -54,7 +54,7 @@
 ## Examples  
  The following code example demonstrates how to use a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a <xref:System.Windows.Forms.MaskedTextBox?displayProperty=fullName> control. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML](~/docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md).  
   
- [!code-xml[HostingWfInWpfWithXaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#1)]  
+ [!code-xaml[HostingWfInWpfWithXaml#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#1)]  
   
  ]]></format>
     </remarks>

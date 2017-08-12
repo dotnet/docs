@@ -1,5 +1,5 @@
 ---
-title: "Responsibilities of the Developer In Overriding Default Behavior | Microsoft Docs"
+title: "Responsibilities of the Developer In Overriding Default Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

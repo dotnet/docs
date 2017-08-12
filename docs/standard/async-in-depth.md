@@ -1,6 +1,6 @@
 ---
-title: Async in depth | Microsoft Docs
-description: In-depth explanation of how asynchronous code works in .NET
+title: Async in depth
+description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
 keywords: .NET, .NET Core, .NET Standard
 author: cartermp
 ms.author: wiwagn
@@ -47,7 +47,7 @@ public Task<string> GetHtmlAsync()
 }
 ```
 
-The second example adds the use of he `async` and `await` keywords to operate on the task.
+The second example adds the use of the `async` and `await` keywords to operate on the task.
 
 ```csharp
 public async Task<string> GetFirstCharactersCountAsync(string url, int count)

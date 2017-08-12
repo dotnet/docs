@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Lambda Expressions in a Query (C# Programming Guide) | Microsoft Docs"
+title: "How to: Use Lambda Expressions in a Query (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

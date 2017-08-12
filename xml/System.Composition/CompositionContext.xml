@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods to retrieve exports from the composition.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +29,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.CompositionContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Note that this constructor is protected; it can only be called by classes derived from the <see cref="T:System.Composition.CompositionContext"/> class. 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExport">
@@ -49,10 +57,12 @@
         <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contract">The contract to match.</param>
+        <summary>Retrieves the export that matches the specified contract.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.Composition.Hosting.CompositionFailedException">No export found for <paramref name="contract" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetExport">
@@ -72,10 +82,11 @@
         <Parameter Name="exportType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="exportType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportType">The type to match.</param>
+        <summary>Retrieves the export that matches the specified type.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExport">
@@ -96,11 +107,12 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="exportType">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportType">The type to match.</param>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves the export that matches the specified name and type.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExport&lt;TExport&gt;">
@@ -121,10 +133,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TExport">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <summary>Retrieves the export that matches the specified generic type parameter.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExport&lt;TExport&gt;">
@@ -147,11 +160,12 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TExport">To be added.</typeparam>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves the the export that matches the specified generic type parameter and contract name.</summary>
+        <returns>The exported value.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExports">
@@ -171,10 +185,11 @@
         <Parameter Name="exportType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="exportType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportType">The type to match.</param>
+        <summary>Retrieves a collection of all exports that match the specified type.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExports">
@@ -195,11 +210,12 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="exportType">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportType">The type to match.</param>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves all exports that match the specified contract name and type.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExports&lt;TExport&gt;">
@@ -220,10 +236,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TExport">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <summary>Retrieves all exports that match the specified generic type parameter.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExports&lt;TExport&gt;">
@@ -246,11 +263,12 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TExport">To be added.</typeparam>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="contractName">The name to match.</param>
+        <summary>Retrieves all exports that match the specified generic type parameter and contract name.</summary>
+        <returns>A collection of exported values.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -271,11 +289,13 @@
         <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contract">The contract to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified contract, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -296,11 +316,13 @@
         <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="exportType">To be added.</param>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportType">The type to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified type, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport">
@@ -322,12 +344,14 @@
         <Parameter Name="export" Type="System.Object&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="exportType">To be added.</param>
-        <param name="contractName">To be added.</param>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportType">The type to match.</param>
+        <param name="contractName">The name to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified contract name and type, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport&lt;TExport&gt;">
@@ -350,11 +374,13 @@
         <Parameter Name="export" Type="TExport&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TExport">To be added.</typeparam>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified generic type parameter, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetExport&lt;TExport&gt;">
@@ -378,12 +404,14 @@
         <Parameter Name="export" Type="TExport&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="TExport">To be added.</typeparam>
-        <param name="contractName">To be added.</param>
-        <param name="export">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="TExport">The type to match.</typeparam>
+        <param name="contractName">The name to match.</param>
+        <param name="export">When this method returns, contains the matched export or <see langword="null" />.</param>
+        <summary>Returns the export that matches the specified generic type parameter and contract name, or returns <see langword="null" /> if no match is found.</summary>
+        <returns>
+          <see langword="true" /> if an export was found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

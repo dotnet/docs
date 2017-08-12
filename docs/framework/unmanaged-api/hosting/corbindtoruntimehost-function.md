@@ -1,5 +1,5 @@
 ---
-title: "CorBindToRuntimeHost Function | Microsoft Docs"
+title: "CorBindToRuntimeHost Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -62,7 +62,7 @@ HRESULT CorBindToRuntimeHost (
  `pwszBuildFlavor`  
  [in] A string that specifies whether to load the server or the workstation build of the CLR. Valid values are `svr` and `wks`. The server build is optimized to take advantage of multiple processors for garbage collections, and the workstation build is optimized for client applications running on a single-processor machine.  
   
- If `pwszBuildFlavor`is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor`is set to `svr`. However, if `pwszBuildFlavor`is set to `svr` and concurrent garbage collection is specified (see the description of the `startupFlags` parameter), the server build is loaded.  
+ If `pwszBuildFlavor` is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor` is set to `svr`. However, if `pwszBuildFlavor` is set to `svr` and concurrent garbage collection is specified (see the description of the `startupFlags` parameter), the server build is loaded.  
   
 > [!NOTE]
 >  Concurrent garbage collection is not supported in applications running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](http://msdn.microsoft.com/library/windows/desktop/aa384249.aspx).  

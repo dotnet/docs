@@ -1,5 +1,5 @@
 ---
-title: "Data and Data Objects | Microsoft Docs"
+title: "Data and Data Objects"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

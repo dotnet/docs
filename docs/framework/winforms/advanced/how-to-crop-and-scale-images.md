@@ -1,5 +1,5 @@
 ---
-title: "How to: Crop and Scale Images | Microsoft Docs"
+title: "How to: Crop and Scale Images"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

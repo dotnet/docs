@@ -1,5 +1,5 @@
 ---
-title: "ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method | Microsoft Docs"
+title: "ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

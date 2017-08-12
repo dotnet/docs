@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Tab Characters in a TextBox Control | Microsoft Docs"
+title: "How to: Enable Tab Characters in a TextBox Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -24,7 +24,7 @@ This example shows how to enable the acceptance of tab characters as normal inpu
 ## Example  
  To enable the acceptance of tab characters as input in a <xref:System.Windows.Controls.TextBox> control, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsTab%2A> attribute to **true**.  
   
- [!code-xml[TextBox_EnablingTab#_AcceptsTab](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBox_EnablingTab/CS/Window1.xaml#_acceptstab)]  
+ [!code-xaml[TextBox_EnablingTab#_AcceptsTab](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBox_EnablingTab/CS/Window1.xaml#_acceptstab)]  
   
 ## See Also  
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)   

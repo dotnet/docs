@@ -1,5 +1,5 @@
 ---
-title: "3373 - BinaryMessageDecodingStart | Microsoft Docs"
+title: "3373 - BinaryMessageDecodingStart"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

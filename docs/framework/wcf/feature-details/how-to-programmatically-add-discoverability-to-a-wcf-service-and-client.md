@@ -1,5 +1,5 @@
 ---
-title: "How to: Programmatically Add Discoverability to a WCF Service and Client | Microsoft Docs"
+title: "How to: Programmatically Add Discoverability to a WCF Service and Client"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

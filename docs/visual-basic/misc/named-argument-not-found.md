@@ -1,5 +1,5 @@
 ---
-title: "Named argument not found (Visual Basic) | Microsoft Docs"
+title: "Named argument not found (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

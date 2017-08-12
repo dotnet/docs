@@ -1,5 +1,5 @@
 ---
-title: "Configuring Tracing | Microsoft Docs"
+title: "Configuring Tracing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -182,7 +182,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  [!INCLUDE[crabout](../../../../../includes/crabout-md.md)] activity tracing and propagation, see [Propagation](../../../../../docs/framework/wcf/diagnostics/tracing/propagation.md).  
   
- Both `propagateActivity`and `ActivityTracing`Boolean values apply to the System.ServiceModel TraceSource. The`ActivityTracing`value also applies to any trace source, including [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] or user-defined ones.  
+ Both `propagateActivity` and `ActivityTracing` Boolean values apply to the System.ServiceModel TraceSource. The `ActivityTracing` value also applies to any trace source, including [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] or user-defined ones.  
   
  You cannot use the `propagateActivity` attribute with user-defined trace sources. For user code activity ID propagation, make sure you do not set ServiceModel `ActivityTracing`, while still having ServiceModel `propagateActivity` attribute set to `true`.  
   

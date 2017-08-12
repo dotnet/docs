@@ -1,5 +1,5 @@
 ---
-title: "XmlSchemaCollection Schema Compilation | Microsoft Docs"
+title: "XmlSchemaCollection Schema Compilation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Oracle Sequences | Microsoft Docs"
+title: "Oracle Sequences"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Fine-Tuning Your Async Application (C#) | Microsoft Docs"
+title: "Fine-Tuning Your Async Application (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

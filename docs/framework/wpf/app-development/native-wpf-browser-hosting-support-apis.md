@@ -1,5 +1,5 @@
 ---
-title: "Native WPF Browser Hosting Support APIs | Microsoft Docs"
+title: "Native WPF Browser Hosting Support APIs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

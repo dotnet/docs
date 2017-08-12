@@ -1,5 +1,5 @@
 ---
-title: Organizing your project to support .NET Framework and .NET Core | Microsoft Docs
+title: Organizing your project to support .NET Framework and .NET Core
 description: Help for project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.
 keywords: .NET, .NET Core, .NET Framework, project layout, multiple frameworks
 author: conniey

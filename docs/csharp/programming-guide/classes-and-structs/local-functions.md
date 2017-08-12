@@ -1,5 +1,5 @@
 ---
-title: "Local functions (C# Programming Guide) | Microsoft Docs"
+title: "Local functions (C# Programming Guide)"
 ms.date: "2017-06-14"
 ms.prod: .net
 ms.technology: 

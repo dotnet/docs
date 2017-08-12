@@ -1,5 +1,5 @@
 ---
-title: "&lt;policyImporters&gt; | Microsoft Docs"
+title: "&lt;policyImporters&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

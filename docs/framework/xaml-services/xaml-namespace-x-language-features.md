@@ -1,5 +1,5 @@
 ---
-title: "XAML Namespace (x:) Language Features | Microsoft Docs"
+title: "XAML Namespace (x:) Language Features"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

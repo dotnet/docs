@@ -1,5 +1,5 @@
 ---
-title: "How to: Transform a Node Fragment | Microsoft Docs"
+title: "How to: Transform a Node Fragment"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

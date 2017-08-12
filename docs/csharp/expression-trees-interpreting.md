@@ -1,6 +1,6 @@
 ---
-title: Interpreting Expressions | Microsoft Docs
-description: Interpreting Expressions
+title: Interpreting Expressions
+description: Learn how to write code to examine the structure of an expression tree.
 keywords: .NET, .NET Core
 author: BillWagner
 ms.author: wiwagn
@@ -587,8 +587,8 @@ capabilities.
 
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
-A full implementation is included in the .NET Standard Library
-under the name [ExpressionVisitor](https://docs.microsoft.com/dotnet/core/api/System.Linq.Expressions.ExpressionVisitor)
+A full implementation is included in the .NET Standard 
+under the name [ExpressionVisitor](/dotnet/core/api/System.Linq.Expressions.ExpressionVisitor)
 and can handle all the possible node types.
 
 Finally, the library I used in this article was built for demonstration

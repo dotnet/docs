@@ -1,5 +1,5 @@
 ---
-title: "Basic XAML only Service | Microsoft Docs"
+title: "Basic XAML only Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

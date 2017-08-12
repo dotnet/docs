@@ -204,7 +204,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (RuntimeFieldHandle left, RuntimeFieldHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (RuntimeFieldHandle left, RuntimeFieldHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.RuntimeFieldHandle left, valuetype System.RuntimeFieldHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeFieldHandle.op_Equality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)" />
       <MemberType>Method</MemberType>
@@ -239,12 +239,12 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> is equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%2CSystem.RuntimeFieldHandle%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (RuntimeFieldHandle left, RuntimeFieldHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (RuntimeFieldHandle left, RuntimeFieldHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.RuntimeFieldHandle left, valuetype System.RuntimeFieldHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.RuntimeFieldHandle.op_Inequality(System.RuntimeFieldHandle,System.RuntimeFieldHandle)" />
       <MemberType>Method</MemberType>
@@ -279,7 +279,7 @@
         <returns>
           <see langword="true" /> if <paramref name="left" /> is not equal to <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Compare%2A> dHandle,System.RuntimeFieldHandle)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.RuntimeFieldHandle.Equals%28System.RuntimeFieldHandle%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 ---
-title: "Event-based Asynchronous Pattern Overview | Microsoft Docs"
+title: "Event-based Asynchronous Pattern Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"
@@ -128,7 +128,7 @@ public class AsyncExample
 ### Receiving Progress Updates and Incremental Results  
  A class that adheres to the Event-based Asynchronous Pattern may optionally provide an event for tracking progress and incremental results. This will typically be named `ProgressChanged` or *MethodName*`ProgressChanged`, and its corresponding event handler will take a <xref:System.ComponentModel.ProgressChangedEventArgs> parameter.  
   
- The event handler for the `ProgressChanged`event can examine the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A?displayProperty=fullName> property to determine what percentage of an asynchronous task has been completed. This property will range from 0 to 100, and it can be used to update the <xref:System.Windows.Forms.ProgressBar.Value%2A> property of a <xref:System.Windows.Forms.ProgressBar>. If multiple asynchronous operations are pending, you can use the <xref:System.ComponentModel.ProgressChangedEventArgs.UserState%2A?displayProperty=fullName> property to distinguish which operation is reporting progress.  
+ The event handler for the `ProgressChanged` event can examine the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A?displayProperty=fullName> property to determine what percentage of an asynchronous task has been completed. This property will range from 0 to 100, and it can be used to update the <xref:System.Windows.Forms.ProgressBar.Value%2A> property of a <xref:System.Windows.Forms.ProgressBar>. If multiple asynchronous operations are pending, you can use the <xref:System.ComponentModel.ProgressChangedEventArgs.UserState%2A?displayProperty=fullName> property to distinguish which operation is reporting progress.  
   
  Some classes may report incremental results as asynchronous operations proceed. These results will be stored in a class that derives from <xref:System.ComponentModel.ProgressChangedEventArgs> and they will appear as properties in the derived class. You can access these results in the event handler for the `ProgressChanged` event, just as you would access the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. If multiple asynchronous operations are pending, you can use the <xref:System.ComponentModel.ProgressChangedEventArgs.UserState%2A> property to distinguish which operation is reporting incremental results.  
   

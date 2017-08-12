@@ -1,5 +1,5 @@
 ---
-title: "Sessions and Queues | Microsoft Docs"
+title: "Sessions and Queues"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport2::GetVersionString Method | Microsoft Docs"
+title: "IMetaDataImport2::GetVersionString Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

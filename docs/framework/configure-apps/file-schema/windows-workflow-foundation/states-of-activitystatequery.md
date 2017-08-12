@@ -1,5 +1,5 @@
 ---
-title: "&lt;states&gt; of &lt;activityStateQuery&gt; | Microsoft Docs"
+title: "&lt;states&gt; of &lt;activityStateQuery&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

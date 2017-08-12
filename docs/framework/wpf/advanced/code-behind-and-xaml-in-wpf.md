@@ -1,5 +1,5 @@
 ---
-title: "Code-Behind and XAML in WPF | Microsoft Docs"
+title: "Code-Behind and XAML in WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -58,7 +58,7 @@ manager: "wpickett"
 ## x:Code  
  [x:Code](../../../../docs/framework/xaml-services/x-code-intrinsic-xaml-type.md) is a directive element defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. An `x:Code` directive element can contain inline programming code. The code that is defined inline can interact with the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] on the same page. The following example illustrates inline [!INCLUDE[TLA2#tla_cshrp](../../../../includes/tla2sharptla-cshrp-md.md)] code. Notice that the code is inside the `x:Code` element and that the code must be surrounded by `<CDATA[`...`]]>` to escape the contents for [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)], so that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor (interpreting either the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] schema or the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] schema) will not try to interpret the contents literally as [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)].  
   
- [!code-xml[XAMLOvwSupport#ButtonWithInlineCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page4.xaml#buttonwithinlinecode)]  
+ [!code-xaml[XAMLOvwSupport#ButtonWithInlineCode](../../../../samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page4.xaml#buttonwithinlinecode)]  
   
 <a name="Inline_Code_Limitations"></a>   
 ## Inline Code Limitations  

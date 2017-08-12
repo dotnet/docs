@@ -1,5 +1,5 @@
 ---
-title: "How to: Show a Color Palette with the ColorDialog Component | Microsoft Docs"
+title: "How to: Show a Color Palette with the ColorDialog Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

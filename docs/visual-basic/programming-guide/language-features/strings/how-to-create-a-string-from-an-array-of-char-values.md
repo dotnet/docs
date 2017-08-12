@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a String from An Array of Char Values (Visual Basic) | Microsoft Docs"
+title: "How to: Create a String from An Array of Char Values (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

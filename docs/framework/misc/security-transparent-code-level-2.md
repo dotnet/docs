@@ -1,5 +1,5 @@
 ---
-title: "Security-Transparent Code, Level 2 | Microsoft Docs"
+title: "Security-Transparent Code, Level 2"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -26,7 +26,8 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Security-Transparent Code, Level 2
-<a name="top"></a> [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
+<a name="top"></a>
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Level 2 transparency was introduced in the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.  
   

@@ -1,5 +1,5 @@
 ---
-title: Order the results of a join clause | Microsoft Docs
+title: Order the results of a join clause
 description: How to order the results of a join clause.
 keywords: .NET, .NET Core, C#
 author: BillWagner

@@ -1,0 +1,136 @@
+<Type Name="MustRunInClientContextAttribute" FullName="System.EnterpriseServices.MustRunInClientContextAttribute">
+  <TypeSignature Language="C#" Value="public sealed class MustRunInClientContextAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MustRunInClientContextAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.MustRunInClientContextAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Forces the attributed object to be created in the context of the creator, if possible. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the context attributes of the attributed object conflict with those of the context of the creator, a <xref:System.Runtime.InteropServices.COMException?displayProperty=fullName> is thrown when an attempt is made to create the object.  
+  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.EnterpriseServices.MustRunInClientContextAttribute> type.  
+  
+ [!code-csharp[EnterpriseServicesMustRunInClientContextAttribute#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/CS/class1.cs#0)]
+ [!code-vb[EnterpriseServicesMustRunInClientContextAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/VB/class1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.MustRunInClientContextAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MustRunInClientContextAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.MustRunInClientContextAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.MustRunInClientContextAttribute" /> class, requiring creation of the object in the context of the creator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.MustRunInClientContextAttribute>.  
+  
+ [!code-csharp[EnterpriseServicesMustRunInClientContextAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/CS/class1.cs#1)]
+ [!code-vb[EnterpriseServicesMustRunInClientContextAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MustRunInClientContextAttribute (bool val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.MustRunInClientContextAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="val" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="val">
+          <see langword="true" /> to create the object in the context of the creator; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.MustRunInClientContextAttribute" /> class, optionally not creating the object in the context of the creator.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new <xref:System.EnterpriseServices.MustRunInClientContextAttribute>.  
+  
+ [!code-csharp[EnterpriseServicesMustRunInClientContextAttribute#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/CS/class1.cs#2)]
+ [!code-vb[EnterpriseServicesMustRunInClientContextAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public bool Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
+      <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.MustRunInClientContextAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the attributed object is to be created in the context of the creator.</summary>
+        <value>
+          <see langword="true" /> if the object is to be created in the context of the creator; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the value of a `MustRunInClientContext` attribute's <xref:System.EnterpriseServices.MustRunInClientContextAttribute.Value%2A> property.  
+  
+ [!code-csharp[EnterpriseServicesMustRunInClientContextAttribute#3](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/CS/class1.cs#3)]
+ [!code-vb[EnterpriseServicesMustRunInClientContextAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServicesMustRunInClientContextAttribute/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

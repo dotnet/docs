@@ -1,5 +1,5 @@
 ---
-title: "Markup Compatibility (mc:) Language Features | Microsoft Docs"
+title: "Markup Compatibility (mc:) Language Features"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

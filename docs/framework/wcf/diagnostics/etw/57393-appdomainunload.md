@@ -1,5 +1,5 @@
 ---
-title: "57393 - AppDomainUnload | Microsoft Docs"
+title: "57393 - AppDomainUnload"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

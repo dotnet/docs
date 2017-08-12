@@ -172,7 +172,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Threading.AsyncFlowControl a, System.Threading.AsyncFlowControl b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Threading.AsyncFlowControl a, System.Threading.AsyncFlowControl b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.AsyncFlowControl a, valuetype System.Threading.AsyncFlowControl b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.op_Equality(System.Threading.AsyncFlowControl,System.Threading.AsyncFlowControl)" />
       <MemberType>Method</MemberType>
@@ -203,12 +203,12 @@
         <returns>
           <see langword="true" /> if the two structures are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%2CSystem.Threading.AsyncFlowControl%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.AsyncFlowControl a, System.Threading.AsyncFlowControl b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Threading.AsyncFlowControl a, System.Threading.AsyncFlowControl b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.AsyncFlowControl a, valuetype System.Threading.AsyncFlowControl b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.AsyncFlowControl.op_Inequality(System.Threading.AsyncFlowControl,System.Threading.AsyncFlowControl)" />
       <MemberType>Method</MemberType>
@@ -239,7 +239,7 @@
         <returns>
           <see langword="true" /> if the structures are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%2CSystem.Threading.AsyncFlowControl%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.AsyncFlowControl.Equals%28System.Threading.AsyncFlowControl%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

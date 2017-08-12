@@ -37,7 +37,7 @@
   
  Members that do not have a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> will be treated as though they have a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> with a value of <xref:System.ComponentModel.DesignerSerializationVisibility.Visible>. The values of a property marked as <xref:System.ComponentModel.DesignerSerializationVisibility.Visible> will be serialized, if possible, by a serializer for the type. To specify custom serialization for a particular type or property, use the <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute>.  
   
- For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

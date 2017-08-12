@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns an extension that implements (is or derives from) the specified type. If more than one extension implements the specified type, one is returned. The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation returns the most recently added, but this is not required of implementations. If no extension implements the specified type, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns null.  
+ <xref:System.ServiceModel.IExtensionCollection%601.Find%2A?displayProperty=fullName> returns an extension that implements (is or derives from) the specified type. If more than one extension implements the specified type, one is returned. The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation returns the most recently added, but this is not required of implementations. If no extension implements the specified type, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A?displayProperty=fullName> returns null.  
   
  ]]></format>
         </remarks>

@@ -1,5 +1,5 @@
 ---
-title: "OLE DB Schema Collections | Microsoft Docs"
+title: "OLE DB Schema Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

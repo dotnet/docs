@@ -1,5 +1,5 @@
 ---
-title: "IPv6 Routing | Microsoft Docs"
+title: "IPv6 Routing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

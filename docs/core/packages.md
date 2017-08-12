@@ -1,6 +1,6 @@
 ---
-title: Packages, Metapackages and Frameworks | Microsoft Docs
-description: Packages, Metapackages and Frameworks
+title: Packages, Metapackages and Frameworks
+description: Learn terminology for packages, metapackages, and frameworks.
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
@@ -15,7 +15,7 @@ ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
 
 .NET Core is a platform made of NuGet packages. Some product experiences benefit from fine-grained definition of packages while others from coarse-grained. To accommodate this duality, the product is distributed as a fine-grained set of packages and then described in coarser chunks with a package type informally called a "metapackage".
 
-Each of the .NET Core packages support being run on multiple .NET runtimes, represented as
+Each of the .NET Core packages support being run on multiple .NET implementations, represented as
 frameworks. Some of those frameworks are traditional frameworks, like `net46`, representing the .NET Framework. Another set is new frameworks that can be thought of as "package-based frameworks", which establish a new model for defining frameworks. These package-based frameworks are entirely formed and defined as packages, forming a strong relationship between packages and frameworks.
 
 ## Packages
@@ -66,9 +66,9 @@ There are advantages to using metapackages:
 - Provides a convenient user experience to reference a large set of fine-grained packages. 
 - Defines a set of packages (including specific versions) that are tested and work well together.
 
-The .NET Standard Library metapackage is:
+The .NET Standard metapackage is:
 
-- [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - Describes the libraries that are part of the ".NET Standard Library". Applies to all .NET implementations (for example, .NET Framework, .NET Core and Mono) that support the .NET Standard Library. Establishes the 'netstandard' framework.
+- [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) - Describes the libraries that are part of the ".NET Standard". Applies to all .NET implementations (for example, .NET Framework, .NET Core and Mono) that support .NET Standard. Establishes the 'netstandard' framework.
 
 The key .NET Core metapackages are:
 
@@ -108,9 +108,9 @@ The two primary package-based frameworks used with .NET Core are:
 
 ### .NET Standard
 
-The .NET Standard (target framework moniker: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard](../standard/net-standard.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement. 
+The .NET Standard (target framework moniker: `netstandard`) framework represents the APIs defined by and built on top of the [.NET Standard](../standard/net-standard.md). Libraries that are intended to run on multiple runtimes should target this framework. They will be supported on any .NET Standard compliant runtime, such as .NET Core, .NET Framework and Mono/Xamarin. Each of these runtimes supports a set of .NET Standard versions, depending on which APIs they implement.
 
-The `netstandard` framework implicitly references the `NETStandard.Library` metapackage. For example, the following MSBuild project file indicates that the project targets `netstandard1.6`, which references the .NET Standard Library version 1.6 metapackage. 
+The `netstandard` framework implicitly references the [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library) metapackage. For example, the following MSBuild project file indicates that the project targets `netstandard1.6`, which references the [`NETStandard.Library` version 1.6](https://www.nuget.org/packages/NETStandard.Library/1.6.0) metapackage.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

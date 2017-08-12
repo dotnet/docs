@@ -18,10 +18,11 @@
     <ReturnType>System.Object</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">To be added.</param>
-    <param name="operation">To be added.</param>
-    <summary>To be added.</summary>
-    <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <param name="context">The context in which the part or export is being accessed.</param>
+    <param name="operation">The operation within which the activation is occurring.</param>
+    <summary>The delegate that allows instances of parts and exports to be accessed during composition.</summary>
+    <returns>The activated part or export.</returns>
+    <remarks>
+    </remarks>
   </Docs>
 </Type>

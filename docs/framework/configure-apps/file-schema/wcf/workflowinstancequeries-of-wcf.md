@@ -1,5 +1,5 @@
 ---
-title: "&lt;workflowInstanceQueries&gt; of WCF | Microsoft Docs"
+title: "&lt;workflowInstanceQueries&gt; of WCF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

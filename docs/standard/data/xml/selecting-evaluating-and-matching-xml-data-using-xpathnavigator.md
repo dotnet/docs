@@ -1,5 +1,5 @@
 ---
-title: "Selecting, Evaluating and Matching XML Data using XPathNavigator | Microsoft Docs"
+title: "Selecting, Evaluating and Matching XML Data using XPathNavigator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

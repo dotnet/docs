@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an export descriptor that an available part can provide.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is central to the cycle-checking, adaptation, and compilation features of the container.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,13 +41,15 @@
         <Parameter Name="getDescriptor" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;,System.Composition.Hosting.Core.ExportDescriptor&gt;" />
       </Parameters>
       <Docs>
-        <param name="contract">To be added.</param>
-        <param name="origin">To be added.</param>
-        <param name="isShared">To be added.</param>
-        <param name="dependencies">To be added.</param>
-        <param name="getDescriptor">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contract">The promised contract.</param>
+        <param name="origin">A description of the promise's origin. For example, a part type.</param>
+        <param name="isShared">
+          <see langword="true" /> if the promise is shared, otherwise <see langword="false" />.</param>
+        <param name="dependencies">A function that provides the dependencies required to fulfill the promise.</param>
+        <param name="getDescriptor">A function that provides the promised descriptor.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> class.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contract">
@@ -57,9 +66,10 @@
         <ReturnType>System.Composition.Hosting.Core.CompositionContract</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contract fulfilled by this promise.</summary>
+        <value>The contract</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dependencies">
@@ -76,9 +86,10 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Composition.Hosting.Core.CompositionDependency&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the dependencies that are required to fulfill this promise.</summary>
+        <value>A collection of dependencies.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDescriptor">
@@ -96,9 +107,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves the promised descriptor.</summary>
+        <returns>The descriptor.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsShared">
@@ -115,9 +127,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether the promise is shared.</summary>
+        <value>
+          <see langword="true" /> if the promise is shared within some context; otherwise, <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Origin">
@@ -134,9 +148,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a description of where the promise originates (for example, a part type), used to provide readable errors.</summary>
+        <value>A description of the promise's origin.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -154,9 +169,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> object.</summary>
+        <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

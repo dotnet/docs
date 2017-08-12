@@ -808,7 +808,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.RectangleF left, System.Drawing.RectangleF right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.RectangleF left, System.Drawing.RectangleF right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.RectangleF left, valuetype System.Drawing.RectangleF right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleF.op_Equality(System.Drawing.RectangleF,System.Drawing.RectangleF)" />
       <MemberType>Method</MemberType>
@@ -852,7 +852,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Drawing.RectangleF op_Implicit (System.Drawing.Rectangle r);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Drawing.RectangleF (System.Drawing.Rectangle r);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.RectangleF op_Implicit(valuetype System.Drawing.Rectangle r) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleF.op_Implicit(System.Drawing.Rectangle)~System.Drawing.RectangleF" />
       <MemberType>Method</MemberType>
@@ -883,7 +883,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.RectangleF left, System.Drawing.RectangleF right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.RectangleF left, System.Drawing.RectangleF right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.RectangleF left, valuetype System.Drawing.RectangleF right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.RectangleF.op_Inequality(System.Drawing.RectangleF,System.Drawing.RectangleF)" />
       <MemberType>Method</MemberType>

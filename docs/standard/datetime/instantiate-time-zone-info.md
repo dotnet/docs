@@ -1,5 +1,5 @@
 ---
-title: "How to: Instantiate a TimeZoneInfo object | Microsoft Docs"
+title: "How to: Instantiate a TimeZoneInfo object"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

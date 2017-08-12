@@ -1,5 +1,5 @@
 ---
-title: "&lt;exposedMethod&gt; | Microsoft Docs"
+title: "&lt;exposedMethod&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

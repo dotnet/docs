@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a new BitmapSource | Microsoft Docs"
+title: "How to: Create a new BitmapSource"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

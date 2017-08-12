@@ -1,5 +1,5 @@
 ---
-title: "Method-Based Query Syntax Examples: Grouping | Microsoft Docs"
+title: "Method-Based Query Syntax Examples: Grouping"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

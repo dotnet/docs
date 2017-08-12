@@ -185,7 +185,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Speech.Synthesis.TtsEngine.ContourPoint point1, System.Speech.Synthesis.TtsEngine.ContourPoint point2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Speech.Synthesis.TtsEngine.ContourPoint point1, System.Speech.Synthesis.TtsEngine.ContourPoint point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point1, valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.op_Equality(System.Speech.Synthesis.TtsEngine.ContourPoint,System.Speech.Synthesis.TtsEngine.ContourPoint)" />
       <MemberType>Method</MemberType>
@@ -206,12 +206,12 @@
         <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> are equal.</summary>
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> instances referenced by <paramref name="point1" /> and <paramref name="point2" /> are equal, otherwise returns <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals%28System.Speech.Synthesis.TtsEngine.ContourPoint%2CSystem.Speech.Synthesis.TtsEngine.ContourPoint%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals%28System.Speech.Synthesis.TtsEngine.ContourPoint%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.ContourPoint point1, System.Speech.Synthesis.TtsEngine.ContourPoint point2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Speech.Synthesis.TtsEngine.ContourPoint point1, System.Speech.Synthesis.TtsEngine.ContourPoint point2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point1, valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.op_Inequality(System.Speech.Synthesis.TtsEngine.ContourPoint,System.Speech.Synthesis.TtsEngine.ContourPoint)" />
       <MemberType>Method</MemberType>
@@ -232,7 +232,7 @@
         <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> are NOT equal.</summary>
         <returns>Returns <see langword="true" /> if the <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> instances referenced by <paramref name="point1" /> and <paramref name="point2" /> are NOT equal, otherwise returns <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Compare%28System.Speech.Synthesis.TtsEngine.ContourPoint%2CSystem.Speech.Synthesis.TtsEngine.ContourPoint%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals%28System.Speech.Synthesis.TtsEngine.ContourPoint%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

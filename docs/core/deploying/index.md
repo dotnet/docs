@@ -1,5 +1,5 @@
 ---
-title: .NET Core Application Deployment | Microsoft Docs
+title: .NET Core Application Deployment
 description: Deploying a .NET Core application. 
 keywords: .NET, .NET Core, .NET Core deployment
 author: rpetrusha
@@ -41,7 +41,9 @@ There are also a few disadvantages:
 
 ## Self-contained deployments (SCD)
 
-For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms (for example, OpenSSL on macOS), so these must be present before the app runs.
+For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs.
+
+FDD and SCD deployments use separate host executables, so you can sign a host executable for an SCD with your publisher signature.
 
 ### Why deploy a self-contained deployment?
 

@@ -1,5 +1,5 @@
 ---
-title: "Location-Based Cache Policies | Microsoft Docs"
+title: "Location-Based Cache Policies"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

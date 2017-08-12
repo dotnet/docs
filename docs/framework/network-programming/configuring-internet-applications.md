@@ -1,5 +1,5 @@
 ---
-title: "Configuring Internet Applications | Microsoft Docs"
+title: "Configuring Internet Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

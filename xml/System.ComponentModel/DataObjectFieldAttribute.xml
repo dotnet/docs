@@ -34,7 +34,7 @@
   
  You apply the <xref:System.ComponentModel.DataObjectFieldAttribute> attribute to members of the data item objects that are returned by the Select method of an object marked with the <xref:System.ComponentModel.DataObjectAttribute> attribute. In the following example, the `NorthwindData` class is marked with the <xref:System.ComponentModel.DataObjectAttribute> attribute, and returns an <xref:System.Collections.IEnumerable> object containing `NorthwindEmployee` objects from the `GetAllEmployees` method. Fields in the `NorthwindEmployee` class are marked with the <xref:System.ComponentModel.DataObjectFieldAttribute> attribute to indicate they represent data fields in the underlying data source.  
   
- For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle the ContextMenuOpening Event | Microsoft Docs"
+title: "How to: Handle the ContextMenuOpening Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -50,7 +50,7 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
   
 1.  Insure that <xref:System.Windows.FrameworkElement.ContextMenuOpening> handlers always run against controls that have at least a placeholder <xref:System.Windows.Controls.ContextMenu> available, which you intend to be replaced by the handler code. In this case, you can still use the handler shown in the previous example, but you typically want to assign a placeholder <xref:System.Windows.Controls.ContextMenu> in the initial markup:  
   
-     [!code-xml[ContextMenuOpeningHandlers#XAMLWithInitCM](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuOpeningHandlers/CSharp/Pane1.xaml#xamlwithinitcm)]  
+     [!code-xaml[ContextMenuOpeningHandlers#XAMLWithInitCM](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuOpeningHandlers/CSharp/Pane1.xaml#xamlwithinitcm)]  
   
 2.  Assume that the initial <xref:System.Windows.Controls.ContextMenu> value might be null, based on some preliminary logic. You could either check <xref:System.Windows.Controls.ContextMenu> for null, or use a flag in your code to check whether your handler has been run at least once. Because you assume that the <xref:System.Windows.Controls.ContextMenu> is about to be displayed, your handler then sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` in the event data. To the <xref:System.Windows.Controls.ContextMenuService> that is responsible for context menu display, a `true` value for <xref:System.Windows.RoutedEventArgs.Handled%2A> in the event data represents a request to cancel the display for the context menu / control combination that raised the event.  
   

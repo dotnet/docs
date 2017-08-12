@@ -1,5 +1,5 @@
 ---
-title: dotnet-test command - .NET Core CLI | Microsoft Docs
+title: dotnet-test command - .NET Core CLI
 description: The `dotnet test` command is used to execute unit tests in a given project.
 keywords: dotnet-test, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -11,8 +11,7 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 ---
-
-#dotnet-test
+# dotnet-test
 
 ## Name
 
@@ -60,9 +59,9 @@ Use the custom test adapters from the specified path in the test run.
 
 Specifies a logger for test results. 
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Configuration under which to build. The default value is `Debug`, but your project's configuration could override this default SDK setting.
+Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
 `-f|--framework <FRAMEWORK>`
 

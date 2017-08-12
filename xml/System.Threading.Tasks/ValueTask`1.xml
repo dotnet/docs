@@ -1,6 +1,6 @@
 <Type Name="ValueTask&lt;TResult&gt;" FullName="System.Threading.Tasks.ValueTask&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public struct ValueTask&lt;TResult&gt; : IEquatable&lt;System.Threading.Tasks.ValueTask&lt;TResult&gt;&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValueTask`1&lt;TResult&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTask`1&lt;TResult&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ValueTask`1" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
@@ -25,9 +25,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="TResult">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="TResult">The result.</typeparam>
+    <summary>Provides a value type that wraps a <see cref="T:Task{TResult}" /> and a <typeparamref name="TResult" />, only one of which is used.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+A method may return an instance of this value type when it's likely that the result of its operation will be available synchronously, and when it's expected to be invoked so frequently that the cost of allocating a new <xref:System.Threading.Tasks.Task%601> for each call will be prohibitive.   
+
+There are tradeoffs to using a <xref:System.Threading.Tasks.ValueTask%601> instead of a <xref:System.Threading.Tasks.Task%601>. For example, while a <xref:System.Threading.Tasks.ValueTask%601> can help avoid an allocation in the case where the successful result is available synchronously, it also contains two fields, whereas a <xref:System.Threading.Tasks.Task%601> as a reference type is a single field. This means that a method call returns two fields worth of data instead of one, which is more data to copy. It also means, that if a method that returns a <xref:System.Threading.Tasks.ValueTask%601> is awaited within an async method, the state machine for that async method will be larger, because it must store a struct containing two fields instead of a single reference.   
+
+For uses other than consuming the result of an asynchronous operation using await, <xref:System.Threading.Tasks.ValueTask%601> can lead to a more convoluted programming model that requires more allocations. For example, consider a method that could return either a <xref:System.Threading.Tasks.Task%601> with a cached task as a common result or a <xref:System.Threading.Tasks.ValueTask%601>. If the consumer of the result wants to use it as a <xref:System.Threading.Tasks.Task%601> in a method like <xref:System.Threading.Tasks.Task.WhenAll%2A> or <xref:System.Threading.Tasks.Task.WhenAny%2A>, the <xref:System.Threading.Tasks.ValueTask%601> must first be converted to a <xref:System.Threading.Tasks.Task%601> using <xref:System.Threading.Tasks.ValueTask{TResult}.AsTask%2A>, leading to an allocation that would have been avoided if a cached <xref:System.Threading.Tasks.Task%601> had been used in the first place.   
+
+As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
+
+> [!NOTE]
+>  The use of the <see cref="ValueTask{TResult}"/> type is supported starting with C# 7, and is not supported by any version of Visual Basic.
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,9 +60,11 @@
         <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="task">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="task">The task.</param>
+        <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}" /> class using the supplied task that represents the operation.</summary>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,9 +82,10 @@
         <Parameter Name="result" Type="TResult" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The result.</param>
+        <summary>Initializes a new instance of the <see cref="T:ValueTask{TResult}" /> class using the supplied result of a successful operation.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsTask">
@@ -86,9 +104,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves a <see cref="T:Task{TResult}" /> object that represents this <see cref="T:ValueTask{TResult}" />.</summary>
+        <returns>The <see cref="T:Task{TResult}" /> object that is wrapped in this <see cref="T:ValueTask{TResult}" /> if one exists, or a new <see cref="T:Task{TResult}" /> object that represents the result.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -109,10 +128,12 @@
         <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="continueOnCapturedContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="continueOnCapturedContext">
+          <see langword="true" /> to attempt to marshal the continuation back to the captured context; otherwise, <see langword="false" />.</param>
+        <summary>Configures an awaiter for this value.</summary>
+        <returns>The configured awaiter.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAsyncMethodBuilder">
@@ -135,9 +156,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a method builder for use with an async method.</summary>
+        <returns>The created builder.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -158,10 +180,12 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -182,10 +206,12 @@
         <Parameter Name="other" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The object to compare with the current object.</param>
+        <summary>Determines whether the specified <see cref="T:ValueTask{TResult}" /> object is equal to the current <see cref="T:ValueTask{TResult}" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -204,9 +230,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates an awaiter for this value.</summary>
+        <returns>The awaiter.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -225,9 +252,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for the current object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCanceled">
@@ -245,9 +273,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this object represents a canceled operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a canceled operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -265,9 +295,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this object represents a completed operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a completed operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompletedSuccessfully">
@@ -285,9 +317,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this object represents a successfully completed operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a successfully completed operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFaulted">
@@ -305,13 +339,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether this object represents a failed operation.</summary>
+        <value>
+          <see langword="true" /> if this object represents a failed operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Threading.Tasks.ValueTask&lt;TResult&gt; left, System.Threading.Tasks.ValueTask&lt;TResult&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Threading.Tasks.ValueTask&lt;TResult&gt; left, System.Threading.Tasks.ValueTask&lt;TResult&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt; left, valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.op_Equality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})" />
       <MemberType>Method</MemberType>
@@ -329,15 +365,17 @@
         <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first value to compare.</param>
+        <param name="right">The second value to compare.</param>
+        <summary>Compares two values for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:ValueTask{TResult}" /> values are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.Tasks.ValueTask&lt;TResult&gt; left, System.Threading.Tasks.ValueTask&lt;TResult&gt; right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Threading.Tasks.ValueTask&lt;TResult&gt; left, System.Threading.Tasks.ValueTask&lt;TResult&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt; left, valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.ValueTask`1.op_Inequality(System.Threading.Tasks.ValueTask{`0},System.Threading.Tasks.ValueTask{`0})" />
       <MemberType>Method</MemberType>
@@ -355,11 +393,13 @@
         <Parameter Name="right" Type="System.Threading.Tasks.ValueTask&lt;TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first value to compare.</param>
+        <param name="right">The seconed value to compare.</param>
+        <summary>Determines whether two <see cref="T:ValueTask{TResult}" /> values are unequal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:ValueTask{TResult}" /> values are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -377,9 +417,17 @@
         <ReturnType>TResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the result.</summary>
+        <value>The result.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+## Remarks  
+ If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property returns it directly.
+
+ If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has faulted or was cancellecd, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -398,9 +446,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

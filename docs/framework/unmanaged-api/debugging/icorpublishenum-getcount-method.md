@@ -1,5 +1,5 @@
 ---
-title: "ICorPublishEnum::GetCount Method | Microsoft Docs"
+title: "ICorPublishEnum::GetCount Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

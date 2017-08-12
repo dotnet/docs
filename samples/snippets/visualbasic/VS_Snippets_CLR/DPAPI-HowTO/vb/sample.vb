@@ -190,7 +190,7 @@ Public Module MemoryProtectionSample
             Throw New IOException("Could not read the stream.")
         End If
 
-        ' Return the length that was written to the stream. 
+        ' Return the unencrypted data as byte array. 
         Return outBuffer
 
     End Function 'DecryptDataFromStream 

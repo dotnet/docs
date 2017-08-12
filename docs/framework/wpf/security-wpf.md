@@ -1,5 +1,5 @@
 ---
-title: "Security (WPF) | Microsoft Docs"
+title: "Security (WPF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -257,9 +257,9 @@ manager: "wpickett"
   
  In both cases, the loose                  [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file that is navigated to inherits the permissions of its host application. However, this behavior may be undesirable from a security perspective, particularly if a loose                  [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file was produced by an entity that is either not trusted or unknown. This type of content is known as                  *external content*, and both                  <xref:System.Windows.Controls.Frame> and                  <xref:System.Windows.Navigation.NavigationWindow> can be configured to isolate it when navigated to. Isolation is achieved by setting the                  **SandboxExternalContent** property to true, as shown in the following examples for                  <xref:System.Windows.Controls.Frame> and                  <xref:System.Windows.Navigation.NavigationWindow>:  
   
- [!code-xml[SecurityOverviewSnippets#FrameMARKUP](../../../samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window2.xaml#framemarkup)]  
+ [!code-xaml[SecurityOverviewSnippets#FrameMARKUP](../../../samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window2.xaml#framemarkup)]  
   
- [!code-xml[SecurityOverviewSnippets#NavigationWindowMARKUP](../../../samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window1.xaml#navigationwindowmarkup)]  
+ [!code-xaml[SecurityOverviewSnippets#NavigationWindowMARKUP](../../../samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window1.xaml#navigationwindowmarkup)]  
   
  With this setting, external content will be loaded into a process that is separate from the process that is hosting the application. This process is restricted to the default Internet zone permission set, effectively isolating it from the hosting application and the client computer.  
   

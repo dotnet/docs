@@ -1,5 +1,5 @@
 ---
-title: "-checked (C# Compiler Options) | Microsoft Docs"
+title: "-checked (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -50,7 +50,7 @@ The **/checked** option specifies whether an integer arithmetic statement that r
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1.  Open the project's **Properties** page. For more information, see [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
 2.  Click the **Build** property page.  
   
@@ -69,5 +69,5 @@ csc t2.cs /checked
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)   
  [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)

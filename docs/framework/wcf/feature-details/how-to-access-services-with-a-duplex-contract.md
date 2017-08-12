@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Services with a Duplex Contract | Microsoft Docs"
+title: "How to: Access Services with a Duplex Contract"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

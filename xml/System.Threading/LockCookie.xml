@@ -142,7 +142,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Threading.LockCookie a, System.Threading.LockCookie b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Threading.LockCookie a, System.Threading.LockCookie b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.LockCookie a, valuetype System.Threading.LockCookie b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.op_Equality(System.Threading.LockCookie,System.Threading.LockCookie)" />
       <MemberType>Method</MemberType>
@@ -173,12 +173,12 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Equals%28System.Threading.LockCookie%2CSystem.Threading.LockCookie%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Equals%28System.Threading.LockCookie%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.LockCookie a, System.Threading.LockCookie b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Threading.LockCookie a, System.Threading.LockCookie b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.LockCookie a, valuetype System.Threading.LockCookie b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.LockCookie.op_Inequality(System.Threading.LockCookie,System.Threading.LockCookie)" />
       <MemberType>Method</MemberType>
@@ -209,7 +209,7 @@
         <returns>
           <see langword="true" /> if <paramref name="a" /> is not equal to <paramref name="b" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Compare%28System.Threading.LockCookie%2CSystem.Threading.LockCookie%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Threading.LockCookie.Equals%28System.Threading.LockCookie%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -1,0 +1,157 @@
+<Type Name="SharedPropertyGroup" FullName="System.EnterpriseServices.SharedPropertyGroup">
+  <TypeSignature Language="C#" Value="public sealed class SharedPropertyGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SharedPropertyGroup extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SharedPropertyGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of shared properties. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The shared property group is synchronized by the containing manager.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.EnterpriseServices.SharedPropertyGroupManager> class to create a SharedPropertyGroup.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#0](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#0)]
+ [!code-csharp[EnterpriseServices_SharedProperties#0](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#0)]
+ [!code-vb[EnterpriseServices_SharedProperties#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateProperty">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty CreateProperty (string name, out bool fExists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty CreateProperty(string name, bool fExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.CreateProperty(System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the new property.</param>
+        <param name="fExists">Determines whether the property exists. Set to <see langword="true" /> on return if the property exists.</param>
+        <summary>Creates a property with the given name.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the `CreateProperty` method to create a shared property.  
+  
+ [!code-cpp[EnterpriseServices_SharedProperties#21](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CPP/receiptcounterclass.cpp#21)]
+ [!code-csharp[EnterpriseServices_SharedProperties#21](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/CS/receiptcounterclass.cs#21)]
+ [!code-vb[EnterpriseServices_SharedProperties#21](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices_SharedProperties/VB/receiptcounterclass.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePropertyByPosition">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty CreatePropertyByPosition (int position, out bool fExists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty CreatePropertyByPosition(int32 position, bool fExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.CreatePropertyByPosition(System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+        <Parameter Name="fExists" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="position">The index of the new property</param>
+        <param name="fExists">Determines whether the property exists. Set to <see langword="true" /> on return if the property exists.</param>
+        <summary>Creates a property at the given position.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty Property (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty Property(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.Property(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of requested property.</param>
+        <summary>Returns the property with the given name.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike <xref:System.EnterpriseServices.SharedPropertyGroup.CreateProperty%2A>, this property must already exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyByPosition">
+      <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedProperty PropertyByPosition (int position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedProperty PropertyByPosition(int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroup.PropertyByPosition(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EnterpriseServices.SharedProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="position">The index of the property.</param>
+        <summary>Returns the property at the given position.</summary>
+        <returns>The requested <see cref="T:System.EnterpriseServices.SharedProperty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike <xref:System.EnterpriseServices.SharedPropertyGroup.CreatePropertyByPosition%2A>, this property must already exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

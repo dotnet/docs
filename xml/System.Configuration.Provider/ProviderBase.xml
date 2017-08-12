@@ -108,7 +108,7 @@
       <Docs>
         <param name="name">The friendly name of the provider.</param>
         <param name="config">A collection of the name/value pairs representing the provider-specific attributes specified in the configuration for this provider.</param>
-        <summary>Initializes the provider.</summary>
+        <summary>Initializes the configuration builder.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

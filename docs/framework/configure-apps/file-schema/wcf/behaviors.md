@@ -1,5 +1,5 @@
 ---
-title: "&lt;behaviors&gt; | Microsoft Docs"
+title: "&lt;behaviors&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

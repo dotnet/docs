@@ -1,5 +1,5 @@
 ---
-title: "Use of TransactedReceiveScope | Microsoft Docs"
+title: "Use of TransactedReceiveScope"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

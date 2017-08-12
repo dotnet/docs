@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures an export that is associated with a part.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddMetadata">
@@ -34,11 +35,12 @@
         <Parameter Name="getValueFromPartType" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="getValueFromPartType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the metadata to add.</param>
+        <param name="getValueFromPartType">A function that provides the value of the metadata to add.</param>
+        <summary>Adds metadata that has the specified name and value to the export.</summary>
+        <returns>An export builder containing the metadata that allows for further configuration.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMetadata">
@@ -59,11 +61,12 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the metadata to add.</param>
+        <param name="value">The value of the metadata to add.</param>
+        <summary>Adds metadata that has the specified name and value to the export.</summary>
+        <returns>An export builder containing the metadata that allows for further configuration.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -83,10 +86,11 @@
         <Parameter Name="getContractNameFromPartType" Type="System.Func&lt;System.Type,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="getContractNameFromPartType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="getContractNameFromPartType">The function that provides the contract name.</param>
+        <summary>Specifies the contract name for the export based on the result of the specified function on the export type.</summary>
+        <returns>An export builder containing the contract name that allows for further configuration.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -106,10 +110,11 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contractName">The contract name.</param>
+        <summary>Specifies the contract name for the export.</summary>
+        <returns>An export builder containing the contract name that allows for further configuration.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractType">
@@ -129,10 +134,11 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type.</param>
+        <summary>Specifies the contract type for the export.</summary>
+        <returns>An export builder containing the contract type that allows for further configuration.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractType&lt;T&gt;">
@@ -153,10 +159,11 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The generic type.</typeparam>
+        <summary>Specifies the contract type for the export as a generic type.</summary>
+        <returns>An export builder containing the contract type that allows for further configuration.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -459,7 +459,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleString op_Addition (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleString operator + (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleString op_Addition(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Addition(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>
@@ -485,7 +485,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Equality(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>
@@ -511,7 +511,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static string op_Explicit (System.Data.OracleClient.OracleString x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator string (System.Data.OracleClient.OracleString x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Explicit(valuetype System.Data.OracleClient.OracleString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Explicit(System.Data.OracleClient.OracleString)~System.String" />
       <MemberType>Method</MemberType>
@@ -533,7 +533,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_GreaterThan(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>
@@ -559,7 +559,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_GreaterThanOrEqual(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>
@@ -585,7 +585,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleString op_Implicit (string s);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.OracleClient.OracleString (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleString op_Implicit(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Implicit(System.String)~System.Data.OracleClient.OracleString" />
       <MemberType>Method</MemberType>
@@ -607,7 +607,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_Inequality(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>
@@ -633,7 +633,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_LessThan(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>
@@ -659,7 +659,7 @@ public class Class1 {
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleString x, System.Data.OracleClient.OracleString y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleString x, valuetype System.Data.OracleClient.OracleString y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleString.op_LessThanOrEqual(System.Data.OracleClient.OracleString,System.Data.OracleClient.OracleString)" />
       <MemberType>Method</MemberType>

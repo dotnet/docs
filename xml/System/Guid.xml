@@ -741,7 +741,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (Guid a, Guid b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (Guid a, Guid b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Guid a, valuetype System.Guid b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.op_Equality(System.Guid,System.Guid)" />
       <MemberType>Method</MemberType>
@@ -789,7 +789,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (Guid a, Guid b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (Guid a, Guid b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Guid a, valuetype System.Guid b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Guid.op_Inequality(System.Guid,System.Guid)" />
       <MemberType>Method</MemberType>

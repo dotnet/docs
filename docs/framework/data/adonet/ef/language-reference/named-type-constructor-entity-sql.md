@@ -1,5 +1,5 @@
 ---
-title: "Named Type Constructor (Entity SQL) | Microsoft Docs"
+title: "Named Type Constructor (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

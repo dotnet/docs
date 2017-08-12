@@ -823,7 +823,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion op_Addition (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion operator + (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Quaternion op_Addition(valuetype System.Numerics.Quaternion value1, valuetype System.Numerics.Quaternion value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Addition(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -865,7 +865,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Division">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion op_Division (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion operator / (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Quaternion op_Division(valuetype System.Numerics.Quaternion value1, valuetype System.Numerics.Quaternion value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Division(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -907,7 +907,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Quaternion value1, valuetype System.Numerics.Quaternion value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Equality(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -952,7 +952,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Quaternion value1, valuetype System.Numerics.Quaternion value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Inequality(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -988,7 +988,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion op_Multiply (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion operator * (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Quaternion op_Multiply(valuetype System.Numerics.Quaternion value1, valuetype System.Numerics.Quaternion value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -1030,7 +1030,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion op_Multiply (System.Numerics.Quaternion value1, float value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion operator * (System.Numerics.Quaternion value1, float value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Quaternion op_Multiply(valuetype System.Numerics.Quaternion value1, float32 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Single)" />
       <MemberType>Method</MemberType>
@@ -1072,7 +1072,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion op_Subtraction (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion operator - (System.Numerics.Quaternion value1, System.Numerics.Quaternion value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Quaternion op_Subtraction(valuetype System.Numerics.Quaternion value1, valuetype System.Numerics.Quaternion value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_Subtraction(System.Numerics.Quaternion,System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>
@@ -1114,7 +1114,7 @@ w = cos(theta/2)
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion op_UnaryNegation (System.Numerics.Quaternion value);" />
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion operator - (System.Numerics.Quaternion value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Quaternion op_UnaryNegation(valuetype System.Numerics.Quaternion value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Quaternion.op_UnaryNegation(System.Numerics.Quaternion)" />
       <MemberType>Method</MemberType>

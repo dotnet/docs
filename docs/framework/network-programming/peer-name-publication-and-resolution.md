@@ -1,5 +1,5 @@
 ---
-title: "Peer Name Publication and Resolution | Microsoft Docs"
+title: "Peer Name Publication and Resolution"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Advanced LINQ to XML Programming (C#) | Microsoft Docs"
+title: "Advanced LINQ to XML Programming (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -34,7 +34,7 @@ This section provides information that will only be applicable to advanced devel
 |[Using XSLT to Transform an XML Tree (C#)](../../../../csharp/programming-guide/concepts/linq/using-xslt-to-transform-an-xml-tree.md)|Describes how to transform an XML tree using XSLT.|  
 |[How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style.md)|Describes how annotations can be used to facilitate transforms of an XML tree.|  
 |[Serializing Object Graphs that Contain XElement Objects (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)|Describes how to serialize object graphs that contain <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> objects.|  
-|[WPF Data Binding with LINQ to XML](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml)|Describes how to use LINQ to XML as the data source for data binding in Windows Presentation Foundation applications.|  
+|[WPF Data Binding with LINQ to XML](/visualstudio/designers/wpf-data-binding-with-linq-to-xml)|Describes how to use LINQ to XML as the data source for data binding in Windows Presentation Foundation applications.|  
   
 ## See Also  
  [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

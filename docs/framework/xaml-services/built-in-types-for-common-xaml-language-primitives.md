@@ -1,5 +1,5 @@
 ---
-title: "Built-in Types for Common XAML Language Primitives | Microsoft Docs"
+title: "Built-in Types for Common XAML Language Primitives"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

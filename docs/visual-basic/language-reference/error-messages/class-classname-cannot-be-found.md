@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; cannot be found | Microsoft Docs"
+title: "Class &#39;&lt;classname&gt;&#39; cannot be found"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -54,4 +54,4 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ## See Also  
- [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)
+ [Talk to Us](/visualstudio/ide/talk-to-us)

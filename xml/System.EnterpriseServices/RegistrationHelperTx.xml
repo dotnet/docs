@@ -1,0 +1,354 @@
+<Type Name="RegistrationHelperTx" FullName="System.EnterpriseServices.RegistrationHelperTx">
+  <TypeSignature Language="C#" Value="public sealed class RegistrationHelperTx : System.EnterpriseServices.ServicedComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistrationHelperTx extends System.EnterpriseServices.ServicedComponent" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationHelperTx" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EnterpriseServices.ServicedComponent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.EnterpriseServices.Transaction(System.EnterpriseServices.TransactionOption.RequiresNew)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The RegistrationHelperTx class has been deprecated.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("c89ac250-e18a-4fc7-abd5-b8897b6a78a5")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used by the .NET Framework infrastructure to install and configure assemblies in the COM+ catalog while maintaining a newly established transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.EnterpriseServices.TransactionAttribute> class attribute is applied to the <xref:System.EnterpriseServices.RegistrationHelperTx> class, with a parameter of the <xref:System.EnterpriseServices.TransactionOption.RequiresNew> field.  
+  
+ This type does not need to be used directly from your code. Instead, use the <xref:System.EnterpriseServices.RegistrationHelper> class.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+    <altmember cref="T:System.EnterpriseServices.RegistrationHelper" />
+    <altmember cref="T:System.EnterpriseServices.ServicedComponent" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegistrationHelperTx ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.RegistrationHelperTx" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="protected override void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.Activate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivate">
+      <MemberSignature Language="C#" Value="protected override void Deactivate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Deactivate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.Deactivate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="InstallAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <forInternalUseOnly />
+        <summary>Installs the named assembly in the COM+ catalog using transactional semantics</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags, object sync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
+        <Parameter Name="sync" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to install.</param>
+        <param name="application">Either the name of the COM+ application to install into or <see langword="null" />.</param>
+        <param name="tlb">Either the name of the output Type Library Exporter (Tlbexp.exe) file or <see langword="null" />.</param>
+        <param name="installFlags">A bitwise combination of the installation flags values.</param>
+        <param name="sync">A synchronization object generated by the infrastructure that can wait until the specified assembly has been configured in the COM+ catalog.</param>
+        <summary>Installs the named assembly in the COM+ catalog using transactional semantics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly%2A> method does not need to be called directly from your code. Instead, call the <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A> method with the same parameters except object sync.  
+  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, string partition, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags, object sync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string partition, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags, object sync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly(System.String,System.String@,System.String,System.String@,System.EnterpriseServices.InstallationFlags,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="partition" Type="System.String" />
+        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
+        <Parameter Name="sync" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to install.</param>
+        <param name="application">Either the name of the COM+ application to install into or a string that contains <see langword="null" />.</param>
+        <param name="partition">Either the name of the partition or <see langword="null" />.</param>
+        <param name="tlb">Either the name of the output Type Library Exporter (Tlbexp.exe) file or <see langword="null" />.</param>
+        <param name="installFlags">A bitwise combination of the installation flags values.</param>
+        <param name="sync">A synchronization object generated by the infrastructure that can wait until the specified assembly has been configured in the COM+ catalog.</param>
+        <summary>Installs the named assembly in the COM+ catalog using transactional semantics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.RegistrationHelperTx.InstallAssembly%2A> method does not need to be called directly from your code. Instead, call the <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A> method with the same parameters except object sync.  
+  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssemblyFromConfig">
+      <MemberSignature Language="C#" Value="public void InstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig, object sync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig, object sync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.InstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+        <Parameter Name="sync" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="regConfig">Configuration information for installing an assembly into the COM+ catalog.</param>
+        <param name="sync">A synchronization object generated by the infrastructure that waits until the specified assembly has been configured in the COM+ catalog.</param>
+        <summary>Installs a specified assembly in the COM+ catalog using transactional semantics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Under certain circumstances, the <xref:System.EnterpriseServices.RegistrationHelperTx.InstallAssemblyFromConfig%2A> method is called from within the .NET Framework infrastructure. It does not need to be called directly from your code. Instead, call the <xref:System.EnterpriseServices.RegistrationHelper.InstallAssemblyFromConfig%2A> method.  
+  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="IsInTransaction">
+      <MemberSignature Language="C#" Value="public bool IsInTransaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInTransaction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.IsInTransaction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the current context for the <see cref="T:System.EnterpriseServices.RegistrationHelperTx" /> class instance is transactional.</summary>
+        <returns>
+          <see langword="true" /> if the current context for the <see cref="T:System.EnterpriseServices.RegistrationHelperTx" /> class instance is transactional; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Under certain circumstances, the <xref:System.EnterpriseServices.RegistrationHelperTx.IsInTransaction%2A> method is called from within the .NET Framework infrastructure. It does not need to be called directly from your code.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="UninstallAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <forInternalUseOnly />
+        <summary>Uninstalls an assembly from a COM+ application using transactional semantics.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="UninstallAssembly">
+      <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application, object sync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssembly(string assembly, string application, object sync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssembly(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String" />
+        <Parameter Name="sync" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to uninstall.</param>
+        <param name="application">Either the name of the COM+ application that contains the components in the assembly or <see langword="null" />.</param>
+        <param name="sync">A synchronization object generated by the infrastructure that can wait until the specified assembly has been uninstalled.</param>
+        <summary>Uninstalls an assembly from a COM+ application using transactional semantics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.RegistrationHelperTx.UninstallAssembly%2A> method does not need to be called directly from your code. Instead, call the <xref:System.EnterpriseServices.RegistrationHelper.UninstallAssembly%2A> method with the same parameters except object sync.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssembly">
+      <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application, string partition, object sync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssembly(string assembly, string application, string partition, object sync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssembly(System.String,System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String" />
+        <Parameter Name="partition" Type="System.String" />
+        <Parameter Name="sync" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to uninstall.</param>
+        <param name="application">Either the name of the COM+ application that contains the components in the assembly or <see langword="null" />.</param>
+        <param name="partition">Either the name of the partition or <see langword="null" />.</param>
+        <param name="sync">A synchronization object generated by the infrastructure that can wait until the specified assembly has been uninstalled.</param>
+        <summary>Uninstalls an assembly from a COM+ application using transactional semantics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.RegistrationHelperTx.UninstallAssembly%2A> method does not need to be called directly from your code. Instead, call the <xref:System.EnterpriseServices.RegistrationHelper.UninstallAssembly%2A> method with the same parameters except object sync.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssemblyFromConfig">
+      <MemberSignature Language="C#" Value="public void UninstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig, object sync);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig, object sync) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelperTx.UninstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+        <Parameter Name="sync" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="regConfig">Configuration information that specifies an assembly to uninstall from an application.</param>
+        <param name="sync">A synchronization object generated by the infrastructure that waits until the specified assembly has been uninstalled.</param>
+        <summary>Uninstalls a specified assembly from a COM+ application using transactional semantics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Under certain circumstances, the <xref:System.EnterpriseServices.RegistrationHelperTx.UninstallAssemblyFromConfig%2A> method is called from within the .NET Framework infrastructure. It does not need to be called directly from your code. Instead, call the <xref:System.EnterpriseServices.RegistrationHelper.UninstallAssemblyFromConfig%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

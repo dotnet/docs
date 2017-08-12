@@ -1,5 +1,5 @@
 ---
-title: "Blocking Application Execution by Ending an Async Operation | Microsoft Docs"
+title: "Blocking Application Execution by Ending an Async Operation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

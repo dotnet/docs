@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a ResourceDictionary to Manage Localizable String Resources | Microsoft Docs"
+title: "How to: Use a ResourceDictionary to Manage Localizable String Resources"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,17 +27,17 @@ This example shows how to use a              <xref:System.Windows.ResourceDictio
   
 1.  Create a                          <xref:System.Windows.ResourceDictionary> that contains the strings you would like to localize. The following code shows an example.  
   
-     [!code-xml[StringLocalizationSample#StringResourceDictionary](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/StringResources.xaml#stringresourcedictionary)]  
+     [!code-xaml[StringLocalizationSample#StringResourceDictionary](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/StringResources.xaml#stringresourcedictionary)]  
   
      This code defines a string resource,                          `localizedMessage`, of type                          <xref:System.String>, from the                          <xref:System> namespace in mscorlib.dll.  
   
 2.  Add the                          <xref:System.Windows.ResourceDictionary> to your application, using the following code.  
   
-     [!code-xml[StringLocalizationSample#ReferencingStringResourceDictionary](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/App.xaml#referencingstringresourcedictionary)]  
+     [!code-xaml[StringLocalizationSample#ReferencingStringResourceDictionary](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/App.xaml#referencingstringresourcedictionary)]  
   
 3.  Use the string resource from markup, using                          [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] like the following.  
   
-     [!code-xml[StringLocalizationSample#GetLocalizedResourceFromMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/MainWindow.xaml#getlocalizedresourcefrommarkup)]  
+     [!code-xaml[StringLocalizationSample#GetLocalizedResourceFromMarkup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/MainWindow.xaml#getlocalizedresourcefrommarkup)]  
   
 4.  Use the string resource from code-behind, using code like the following.  
   

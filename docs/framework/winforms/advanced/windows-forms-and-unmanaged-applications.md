@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms and Unmanaged Applications | Microsoft Docs"
+title: "Windows Forms and Unmanaged Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

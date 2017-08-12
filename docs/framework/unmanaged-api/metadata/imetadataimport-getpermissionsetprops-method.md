@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::GetPermissionSetProps Method | Microsoft Docs"
+title: "IMetaDataImport::GetPermissionSetProps Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

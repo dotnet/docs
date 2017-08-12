@@ -1,5 +1,5 @@
 ---
-title: "How to: Fill a Shape with a Hatch Pattern | Microsoft Docs"
+title: "How to: Fill a Shape with a Hatch Pattern"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

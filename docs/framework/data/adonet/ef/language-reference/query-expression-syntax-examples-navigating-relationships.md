@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax Examples: Navigating Relationships | Microsoft Docs"
+title: "Query Expression Syntax Examples: Navigating Relationships"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

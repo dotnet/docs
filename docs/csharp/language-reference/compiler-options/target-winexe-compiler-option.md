@@ -1,5 +1,5 @@
 ---
-title: "-target:winexe (C# Compiler Options) | Microsoft Docs"
+title: "-target:winexe (C# Compiler Options)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

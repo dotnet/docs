@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; is not defined | Microsoft Docs"
+title: "Type &#39;&lt;typename&gt;&#39; is not defined"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -51,7 +51,7 @@ The statement has made reference to a type that has not been defined. You can de
   
 -   If the type is defined, but the object library or type library in which it is defined is not registered in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], click **Add Reference** on the **Project** menu, and then select the appropriate object library or type library.  
   
--   Ensure that the type is in an assembly that is part of the targeted .NET Framework profile. For more information, see [Troubleshooting .NET Framework Targeting Errors](https://docs.microsoft.com/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
+-   Ensure that the type is in an assembly that is part of the targeted .NET Framework profile. For more information, see [Troubleshooting .NET Framework Targeting Errors](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
   
 ## See Also  
  [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)   
@@ -59,4 +59,4 @@ The statement has made reference to a type that has not been defined. You can de
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)   
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   
  [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)   
- [Managing references in a project](https://docs.microsoft.com/visualstudio/ide/managing-references-in-a-project)
+ [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)

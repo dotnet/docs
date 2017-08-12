@@ -1,5 +1,5 @@
 ---
-title: "How to: Open and Append to a Log File | Microsoft Docs"
+title: "How to: Open and Append to a Log File"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

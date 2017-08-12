@@ -1,5 +1,5 @@
 ---
-title: "Fault Handling in a Flowchart Activity Using TryCatch | Microsoft Docs"
+title: "Fault Handling in a Flowchart Activity Using TryCatch"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

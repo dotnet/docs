@@ -1,5 +1,5 @@
 ---
-title: "Structure of the Graphics Interface | Microsoft Docs"
+title: "Structure of the Graphics Interface"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

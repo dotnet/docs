@@ -1,5 +1,5 @@
 ---
-title: "Downloading Sample Databases | Microsoft Docs"
+title: "Downloading Sample Databases"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

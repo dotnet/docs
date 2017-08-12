@@ -1,5 +1,5 @@
 ---
-title: "System Information and Windows Forms | Microsoft Docs"
+title: "System Information and Windows Forms"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

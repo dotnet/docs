@@ -1,5 +1,5 @@
 ---
-title: "Global Assembly Cache | Microsoft Docs"
+title: "Global Assembly Cache"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

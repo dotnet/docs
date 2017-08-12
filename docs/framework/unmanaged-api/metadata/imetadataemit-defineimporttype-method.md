@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataEmit::DefineImportType Method | Microsoft Docs"
+title: "IMetaDataEmit::DefineImportType Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

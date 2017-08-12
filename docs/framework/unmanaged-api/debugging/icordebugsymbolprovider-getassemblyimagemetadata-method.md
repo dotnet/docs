@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugSymbolProvider::GetAssemblyImageMetadata Method | Microsoft Docs"
+title: "ICorDebugSymbolProvider::GetAssemblyImageMetadata Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

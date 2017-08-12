@@ -1,5 +1,5 @@
 ---
-title: "Method ETW Events | Microsoft Docs"
+title: "Method ETW Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

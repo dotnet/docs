@@ -1,5 +1,5 @@
 ---
-title: "try-catch (C# Reference) | Microsoft Docs"
+title: "try-catch (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -183,7 +183,7 @@ static void Main()
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
- [try, throw, and catch Statements (C++)](https://docs.microsoft.com/cpp/cpp/try-throw-and-catch-statements-cpp)   
+ [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)   
  [Exception Handling Statements](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   

@@ -1,5 +1,5 @@
 ---
-title: "Type Conversion Functions (Visual Basic) | Microsoft Docs"
+title: "Type Conversion Functions (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

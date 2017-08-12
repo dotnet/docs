@@ -1,5 +1,5 @@
 ---
-title: "Argument cannot be an empty string | Microsoft Docs"
+title: "Argument cannot be an empty string"
 
 ms.date: "2015-07-20"
 ms.prod: .net

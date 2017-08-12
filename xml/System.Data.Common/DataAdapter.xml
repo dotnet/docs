@@ -1253,7 +1253,7 @@
   
 7.  <xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName> is called. This will raise both the <xref:System.Data.DataTable.RowChanging?displayProperty=fullName> and <xref:System.Data.DataTable.RowChanged?displayProperty=fullName> events for the updated <xref:System.Data.DataRow>.  
   
- Each command associated with the <xref:System.Data.Common.DataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a.NET data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DataAdapter> references to obtain parameter values for the current row.  
+ Each command associated with the <xref:System.Data.Common.DataAdapter> usually has a parameters collection associated with it. Parameters are mapped to the current row through the `SourceColumn` and `SourceVersion` properties of a .NET data provider's `Parameter` class. `SourceColumn` refers to a <xref:System.Data.DataTable> column that the <xref:System.Data.Common.DataAdapter> references to obtain parameter values for the current row.  
   
  `SourceColumn` refers to the unmapped column name before any table mappings have been applied. If `SourceColumn` refers to a nonexistent column, the action taken depends on one of the following <xref:System.Data.MissingMappingAction> values.  
   

@@ -1,5 +1,5 @@
 ---
-title: "CALL_ID Structure | Microsoft Docs"
+title: "CALL_ID Structure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

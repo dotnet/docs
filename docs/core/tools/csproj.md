@@ -1,5 +1,5 @@
 ---
-title: csproj reference | Microsoft Docs
+title: csproj reference
 description: Learn about the differences between existing and .NET Core csproj files
 keywords: reference, csproj, .NET Core
 author: blackdwarf
@@ -13,7 +13,7 @@ ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 
 # Additions to the csproj format for .NET Core
 
-This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
+This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
 
 ## Implicit package references
 Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.
@@ -33,7 +33,7 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 ### Recommendations
 Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
 
-* Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via the `<PackageReference>` property in your project file.
+* Never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via a `<PackageReference>` item in your project file.
 * If you need a specific version of the runtime, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
     * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
 * If you need a specific version of the `NetStandard.Library` metapackage, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need. 
@@ -71,7 +71,7 @@ With csproj, we recommend that you remove the default globs from your project an
 
 ## How to see the whole project as MSBuild sees it
 
-While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
+While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
 
 `dotnet msbuild /pp:fullproject.xml`
 
@@ -82,7 +82,7 @@ If the project has multiple target frameworks, the results of the command should
 ## Additions
 
 ### Sdk attribute 
-The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks) and [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
@@ -97,7 +97,7 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The element respects the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
 `IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
@@ -135,7 +135,7 @@ a replacement for the `tools` node in *project.json*.
 ```
 
 #### Version
-`Version` specifies the version of the package to restore. The attribute respect the rules of the NuGet versioning scheme.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 ### RuntimeIdentifiers
 The `<RuntimeIdentifiers>` element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project. 
@@ -145,7 +145,6 @@ RIDs enable publishing a self-contained deployments.
 <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
 ```
 
-
 ### RuntimeIdentifier
 The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identifier (RID)](../rid-catalog.md) for the project. RIDs enable publishing a self-contained deployment. 
 
@@ -153,9 +152,8 @@ The `<RuntimeIdentifier>` element allows you to specify only one [Runtime Identi
 <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
 ```
 
-
 ### PackageTargetFallback 
-The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](https://docs.microsoft.com/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet. 
+The `<PackageTargetFallback>` element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet. 
 
 The following example provides the fallbacks for all targets in your project: 
 

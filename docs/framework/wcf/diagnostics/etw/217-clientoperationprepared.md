@@ -1,5 +1,5 @@
 ---
-title: "217 - ClientOperationPrepared | Microsoft Docs"
+title: "217 - ClientOperationPrepared"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

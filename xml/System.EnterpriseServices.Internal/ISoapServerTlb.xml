@@ -1,0 +1,132 @@
+<Type Name="ISoapServerTlb" FullName="System.EnterpriseServices.Internal.ISoapServerTlb">
+  <TypeSignature Language="C#" Value="public interface ISoapServerTlb" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapServerTlb" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapServerTlb" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("1E7BA9F7-21DB-4482-929E-21BDE2DFE51C")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Processes authenticated, encrypted SOAP components on servers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.EnterpriseServices.Internal.SoapServerTlb> for the default implementation.  
+  
+ <xref:System.EnterpriseServices.Internal.ISoapServerTlb> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddServerTlb">
+      <MemberSignature Language="C#" Value="public void AddServerTlb (string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string clientActivated, string wellKnown, string discoFile, string operation, out string assemblyName, out string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddServerTlb(string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string clientActivated, string wellKnown, string discoFile, string operation, string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progId" Type="System.String" />
+        <Parameter Name="classId" Type="System.String" />
+        <Parameter Name="interfaceId" Type="System.String" />
+        <Parameter Name="srcTlbPath" Type="System.String" />
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+        <Parameter Name="clientActivated" Type="System.String" />
+        <Parameter Name="wellKnown" Type="System.String" />
+        <Parameter Name="discoFile" Type="System.String" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="typeName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="progId">The programmatic identifier of the class.</param>
+        <param name="classId">The class identifier (CLSID) for the type library.</param>
+        <param name="interfaceId">The IID for the type library.</param>
+        <param name="srcTlbPath">The path for the file containing the type library.</param>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="baseUrl">The base URL that contains the virtual root.</param>
+        <param name="virtualRoot">The name of the virtual root.</param>
+        <param name="clientActivated">
+          <see langword="true" /> if client activated; otherwise, <see langword="false" />.</param>
+        <param name="wellKnown">
+          <see langword="true" /> if well-known; otherwise, <see langword="false" />.</param>
+        <param name="discoFile">
+          <see langword="true" /> if a discovery file; otherwise, <see langword="false" />.</param>
+        <param name="operation">The operation to perform. Specify either "delete" or an empty string.</param>
+        <param name="assemblyName">When this method returns, contains the name of the assembly.</param>
+        <param name="typeName">When this method returns, contains the type of the assembly.</param>
+        <summary>Adds the entries for a server type library to the Web.config and Default.disco files, depending on security options, and generates a proxy if necessary.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+        <exception cref="T:System.EnterpriseServices.ServicedComponentException">The call to get the system directory failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteServerTlb">
+      <MemberSignature Language="C#" Value="public void DeleteServerTlb (string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string operation, string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteServerTlb(string progId, string classId, string interfaceId, string srcTlbPath, string rootWebServer, string baseUrl, string virtualRoot, string operation, string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.DeleteServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progId" Type="System.String" />
+        <Parameter Name="classId" Type="System.String" />
+        <Parameter Name="interfaceId" Type="System.String" />
+        <Parameter Name="srcTlbPath" Type="System.String" />
+        <Parameter Name="rootWebServer" Type="System.String" />
+        <Parameter Name="baseUrl" Type="System.String" />
+        <Parameter Name="virtualRoot" Type="System.String" />
+        <Parameter Name="operation" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="progId">The programmatic identifier of the class.</param>
+        <param name="classId">The class identifier (CLSID) for the type library.</param>
+        <param name="interfaceId">The IID for the type library.</param>
+        <param name="srcTlbPath">The path for the file containing the type library.</param>
+        <param name="rootWebServer">The root Web server.</param>
+        <param name="baseUrl">The base URL that contains the virtual root.</param>
+        <param name="virtualRoot">The name of the virtual root.</param>
+        <param name="operation">Not used. Specify <see langword="null" /> for this parameter.</param>
+        <param name="assemblyName">The name of the assembly.</param>
+        <param name="typeName">The type of the assembly.</param>
+        <summary>Removes entries for a server type library from the Web.config and Default.disco files, depending on security options.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">A caller in the call chain does not have permission to access unmanaged code.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The SOAP utility is not available.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

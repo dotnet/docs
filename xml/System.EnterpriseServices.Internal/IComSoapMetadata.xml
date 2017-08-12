@@ -1,0 +1,113 @@
+<Type Name="IComSoapMetadata" FullName="System.EnterpriseServices.Internal.IComSoapMetadata">
+  <TypeSignature Language="C#" Value="public interface IComSoapMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComSoapMetadata" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComSoapMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("d8013ff0-730b-45e2-ba24-874b7242c425")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies methods for generating common language runtime (CLR) metadata for a COM+ component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.EnterpriseServices.Internal.IComSoapMetadata> interface does not need to be implemented directly in your code. It is implemented by the <xref:System.EnterpriseServices.Internal.GenerateMetadata> class in the .NET Framework infrastructure.  
+  
+ If necessary, <xref:System.EnterpriseServices.Internal.IComSoapMetadata> specifies that an assembly that contains CLR metadata is generated for a specified type library.  
+  
+ <xref:System.EnterpriseServices.Internal.IComSoapMetadata> is used internally by the .NET Framework. You do not need to use it directly in your code.  
+  
+ ]]></format>
+    </remarks>
+    <forInternalUseOnly />
+  </Docs>
+  <Members>
+    <Member MemberName="Generate">
+      <MemberSignature Language="C#" Value="public string Generate (string SrcTypeLibFileName, string OutPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Generate(string SrcTypeLibFileName, string OutPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.Generate(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SrcTypeLibFileName" Type="System.String" />
+        <Parameter Name="OutPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SrcTypeLibFileName">The name of the type library for which to generate an assembly.</param>
+        <param name="OutPath">The folder in which to generate an assembly.</param>
+        <summary>Generates an assembly that contains common language runtime (CLR) metadata for a COM+ component represented by the specified type library.</summary>
+        <returns>The generated assembly name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If necessary, the <xref:System.EnterpriseServices.Internal.IComSoapMetadata.Generate%2A> method specifies that an assembly that contains CLR metadata is generated for a specified type library.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSigned">
+      <MemberSignature Language="C#" Value="public string GenerateSigned (string SrcTypeLibFileName, string OutPath, bool InstallGac, out string Error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateSigned(string SrcTypeLibFileName, string OutPath, bool InstallGac, string Error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SrcTypeLibFileName" Type="System.String" />
+        <Parameter Name="OutPath" Type="System.String" />
+        <Parameter Name="InstallGac" Type="System.Boolean" />
+        <Parameter Name="Error" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="SrcTypeLibFileName">The name of the type library for which to generate an assembly.</param>
+        <param name="OutPath">The folder in which to generate an assembly.</param>
+        <param name="InstallGac">A flag that indicates whether to install the assembly in the global assembly cache.</param>
+        <param name="Error">A string to which an error message can be written.</param>
+        <summary>Generates an assembly that contains common language runtime (CLR) metadata for a COM+ component represented by the specified type library, signs the assembly with a strong-named key pair, and installs it in the global assembly cache.</summary>
+        <returns>The generated assembly name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If necessary, the <xref:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned%2A> method specifies that an assembly that contains CLR metadata is generated for a specified type library. Additionally, <xref:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned%2A> generates a strong-named key pair and signs the assembly.  
+  
+ The `InstallGac` parameter indicates whether to install the assembly in the global assembly cache. However, the one implementation of <xref:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned%2A>, by the <xref:System.EnterpriseServices.Internal.GenerateMetadata> class, ignores this value and always attempts to install the signed assembly in the global assembly cache.  
+  
+ ]]></format>
+        </remarks>
+        <forInternalUseOnly />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

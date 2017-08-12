@@ -1,5 +1,5 @@
 ---
-title: "ClearType Overview | Microsoft Docs"
+title: "ClearType Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

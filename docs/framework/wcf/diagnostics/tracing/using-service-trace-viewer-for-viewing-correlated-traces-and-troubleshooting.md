@@ -1,5 +1,5 @@
 ---
-title: "Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting | Microsoft Docs"
+title: "Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

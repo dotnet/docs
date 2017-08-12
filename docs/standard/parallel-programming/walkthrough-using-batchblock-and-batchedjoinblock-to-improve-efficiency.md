@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency | Microsoft Docs"
+title: "Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

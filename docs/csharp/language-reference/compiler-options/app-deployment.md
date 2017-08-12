@@ -1,5 +1,5 @@
 ---
-title: "Deployment of C# Applications | Microsoft Docs"
+title: "Deployment of C# Applications"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 
@@ -35,7 +35,7 @@ translation.priority.ht:
 # Deployment of C# Applications
 After you have completed building your C# application, the next step is to distribute it. C# is a .NET language; therefore, distributing any C# executables to other machines requires the .NET Framework to be installed on each execution machine (and possibly other dependencies specific to your application). You have a variety of options available for distributing the .NET Framework. For an overview, see [Deployment Guide for Developers](https://msdn.microsoft.com/library/ee942965).  
   
- Moving completed applications to other computers is generally referred to as deployment. The Microsoft development environment provides mechanisms for deployment; for more information, see [Deploying Applications and Components](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components).  
+ Moving completed applications to other computers is generally referred to as deployment. The Microsoft development environment provides mechanisms for deployment; for more information, see [Deploying Applications and Components](/visualstudio/deployment/deploying-applications-services-and-components).  
   
  If you build and distribute mainly from the command line, you might need to consider other methods of deployment and redistributing dependencies.  
   

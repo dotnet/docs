@@ -1,5 +1,5 @@
 ---
-title: "Nullable Value Types (Visual Basic) | Microsoft Docs"
+title: "Nullable Value Types (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -117,7 +117,7 @@ Sometimes you work with a value type that does not have a defined value in certa
  [!code-vb[VbVbalrNullableValue#8](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_8.vb)]  
   
 ## Using Nullable Types with Data  
- A database is one of the most important places to use nullable types. Not all database objects currently support nullable types, but the designer-generated table adapters do. See "TableAdapter Support for Nullable Types" in [TableAdapter Overview](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview).  
+ A database is one of the most important places to use nullable types. Not all database objects currently support nullable types, but the designer-generated table adapters do. See "TableAdapter Support for Nullable Types" in [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview).  
   
 ## See Also  
  <xref:System.InvalidOperationException>   
@@ -126,7 +126,7 @@ Sometimes you work with a value type that does not have a defined value in certa
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
  [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
- [TableAdapter Overview](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)   
+ [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview)   
  [If Operator](../../../../visual-basic/language-reference/operators/if-operator.md)   
  [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)   
  [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)   

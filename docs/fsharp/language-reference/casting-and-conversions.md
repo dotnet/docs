@@ -1,6 +1,6 @@
 ---
-title: Casting and Conversions (F#) | Microsoft Docs
-description: Casting and Conversions (F#)
+title: Casting and Conversions (F#)
+description: Learn how the F# programming language provides conversion operators for arithmetic conversions between various primitive types.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -42,7 +42,7 @@ The following table shows conversion operators defined in F#.
 |`decimal`|Convert to `System.Decimal`.|
 |`char`|Convert to `System.Char`, a Unicode character.|
 |`enum`|Convert to an enumerated type.|
-In addition to built-in primitive types, you can use these operators with types that implement `op_Explicit` or `op_Implicit` methods with appropriate signatures. For example, the `int` conversion operator works with any type that provides a static method `op_Explicit` that takes the type as a parameter and returns `int`. As a special exception to the general rule that methods cannot be overloaded by return type, you can do this for`op_Explicit` and `op_Implicit`.
+In addition to built-in primitive types, you can use these operators with types that implement `op_Explicit` or `op_Implicit` methods with appropriate signatures. For example, the `int` conversion operator works with any type that provides a static method `op_Explicit` that takes the type as a parameter and returns `int`. As a special exception to the general rule that methods cannot be overloaded by return type, you can do this for `op_Explicit` and `op_Implicit`.
 
 ## Enumerated Types
 The `enum` operator is a generic operator that takes one type parameter that represents the type of the `enum` to convert to. When it converts to an enumerated type, type inference attempts to determine the type of the `enum` that you want to convert to. In the following example, the variable `col1` is not explicitly annotated, but its type is inferred from the later equality test. Therefore, the compiler can deduce that you are converting to a `Color` enumeration. Alternatively, you can supply a type annotation, as with `col2` in the following example.

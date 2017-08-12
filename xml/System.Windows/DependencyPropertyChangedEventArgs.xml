@@ -207,7 +207,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.DependencyPropertyChangedEventArgs left, System.Windows.DependencyPropertyChangedEventArgs right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.DependencyPropertyChangedEventArgs left, System.Windows.DependencyPropertyChangedEventArgs right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.DependencyPropertyChangedEventArgs left, valuetype System.Windows.DependencyPropertyChangedEventArgs right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.op_Equality(System.Windows.DependencyPropertyChangedEventArgs,System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberType>Method</MemberType>
@@ -239,7 +239,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.DependencyPropertyChangedEventArgs left, System.Windows.DependencyPropertyChangedEventArgs right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.DependencyPropertyChangedEventArgs left, System.Windows.DependencyPropertyChangedEventArgs right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.DependencyPropertyChangedEventArgs left, valuetype System.Windows.DependencyPropertyChangedEventArgs right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyChangedEventArgs.op_Inequality(System.Windows.DependencyPropertyChangedEventArgs,System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberType>Method</MemberType>

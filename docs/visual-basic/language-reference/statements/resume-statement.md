@@ -1,5 +1,5 @@
 ---
-title: "Resume Statement | Microsoft Docs"
+title: "Resume Statement"
 
 ms.date: "2015-07-20"
 ms.prod: .net

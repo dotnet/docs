@@ -1,5 +1,5 @@
 ---
-title: "Socket Performance Enhancements in Version 3.5 | Microsoft Docs"
+title: "Socket Performance Enhancements in Version 3.5"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Implementing an Implicit Transaction using Transaction Scope | Microsoft Docs"
+title: "Implementing an Implicit Transaction using Transaction Scope"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

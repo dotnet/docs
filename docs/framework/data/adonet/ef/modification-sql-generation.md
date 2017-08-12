@@ -1,5 +1,5 @@
 ---
-title: "Modification SQL Generation | Microsoft Docs"
+title: "Modification SQL Generation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

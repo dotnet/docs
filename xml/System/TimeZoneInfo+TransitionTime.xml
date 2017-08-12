@@ -511,7 +511,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (TimeZoneInfo.TransitionTime t1, TimeZoneInfo.TransitionTime t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (TimeZoneInfo.TransitionTime t1, TimeZoneInfo.TransitionTime t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.TimeZoneInfo/TransitionTime t1, valuetype System.TimeZoneInfo/TransitionTime t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Equality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
       <MemberType>Method</MemberType>
@@ -547,12 +547,12 @@
 ## Remarks  
  Two <xref:System.TimeZoneInfo.TransitionTime> objects are equal if they have identical values for each of their six properties. Otherwise, they are unequal.  
   
- The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%2CSystem.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (TimeZoneInfo.TransitionTime t1, TimeZoneInfo.TransitionTime t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (TimeZoneInfo.TransitionTime t1, TimeZoneInfo.TransitionTime t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.TimeZoneInfo/TransitionTime t1, valuetype System.TimeZoneInfo/TransitionTime t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.TransitionTime.op_Inequality(System.TimeZoneInfo.TransitionTime,System.TimeZoneInfo.TransitionTime)" />
       <MemberType>Method</MemberType>
@@ -588,7 +588,7 @@
 ## Remarks  
  Two <xref:System.TimeZoneInfo.TransitionTime> objects are unequal if they have different values for any of their six properties. Otherwise, they are equal.  
   
- The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Compare%28System.TimeZoneInfo.TransitionTime%2CSystem.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.TimeZoneInfo.TransitionTime.Equals%28System.TimeZoneInfo.TransitionTime%29?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

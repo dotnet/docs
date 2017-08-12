@@ -1,8 +1,6 @@
 // <Snippet2>
 using System;
 
-delegate int del(int i);  
-
 public class Example
 {
    static void Main()  

@@ -1,6 +1,6 @@
 ---
-title: How to Manage Package Dependency Versions for .NET Core 1.0 | Microsoft Docs
-description: How to Manage Package Dependency Versions for .NET Core 1.0
+title: How to Manage Package Dependency Versions for .NET Core 1.0
+description: Learn about package dependency version management for your .NET Core libraries and apps.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -76,7 +76,7 @@ You may have adopted a versioning pattern which uses a splat (\*) string like th
 
 ## Packages and Version Numbers organized by Metapackage
 
-[List of all .NET Standard library packages and their versions for 1.0](https://github.com/dotnet/versions/blob/master/build-info/dotnet/corefx/release/1.0.0/Latest_Packages.txt).
+[List of all .NET Standard packages and their versions for 1.0](https://github.com/dotnet/versions/blob/master/build-info/dotnet/corefx/release/1.0.0/Latest_Packages.txt).
 
 [List of all runtime packages and their versions for 1.0](https://github.com/dotnet/versions/blob/master/build-info/dotnet/coreclr/release/1.0.0/LKG_Packages.txt).
 

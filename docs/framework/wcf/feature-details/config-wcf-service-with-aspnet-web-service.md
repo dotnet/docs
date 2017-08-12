@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients | Microsoft Docs"
+title: "How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

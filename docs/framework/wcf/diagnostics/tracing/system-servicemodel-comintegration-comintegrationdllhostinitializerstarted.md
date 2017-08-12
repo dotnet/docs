@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarted | Microsoft Docs"
+title: "System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStarted"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -385,7 +385,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xml.UniqueId id1, class System.Xml.UniqueId id2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.op_Equality(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberType>Method</MemberType>
@@ -422,7 +422,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xml.UniqueId id1, class System.Xml.UniqueId id2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.op_Inequality(System.Xml.UniqueId,System.Xml.UniqueId)" />
       <MemberType>Method</MemberType>
@@ -579,7 +579,7 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
-     </Docs>
+      </Docs>
     </Member>
     <Member MemberName="TryGetGuid">
       <MemberSignature Language="C#" Value="public bool TryGetGuid (byte[] buffer, int offset);" />

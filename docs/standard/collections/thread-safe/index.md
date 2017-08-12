@@ -1,5 +1,5 @@
 ---
-title: "Thread-Safe Collections | Microsoft Docs"
+title: "Thread-Safe Collections"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

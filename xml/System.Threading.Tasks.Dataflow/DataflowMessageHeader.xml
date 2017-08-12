@@ -16,11 +16,6 @@
       <InterfaceName>System.IEquatable&lt;System.Threading.Tasks.Dataflow.DataflowMessageHeader&gt;</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("Id = {Id}")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Provides a container of data attributes for passing between dataflow blocks.</summary>
     <remarks>
@@ -168,7 +163,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Threading.Tasks.Dataflow.DataflowMessageHeader left, System.Threading.Tasks.Dataflow.DataflowMessageHeader right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Threading.Tasks.Dataflow.DataflowMessageHeader left, System.Threading.Tasks.Dataflow.DataflowMessageHeader right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader left, valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
       <MemberType>Method</MemberType>
@@ -195,7 +190,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.Tasks.Dataflow.DataflowMessageHeader left, System.Threading.Tasks.Dataflow.DataflowMessageHeader right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Threading.Tasks.Dataflow.DataflowMessageHeader left, System.Threading.Tasks.Dataflow.DataflowMessageHeader right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader left, valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
       <MemberType>Method</MemberType>

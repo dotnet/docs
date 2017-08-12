@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Event Triggers to Control a Storyboard After It Starts | Microsoft Docs"
+title: "How to: Use Event Triggers to Control a Storyboard After It Starts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -41,7 +41,7 @@ This example shows how to control a <xref:System.Windows.Media.Animation.Storybo
   
  **Note:** To see an example of controlling a storyboard by using code, see [Control a Storyboard After It Starts Using Its Interactive Methods](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
- [!code-xml[timingbehaviors_snip#ControlStoryboardExampleUsingWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/ControlStoryboardExample.xaml#controlstoryboardexampleusingwholepage)]  
+ [!code-xaml[timingbehaviors_snip#ControlStoryboardExampleUsingWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/ControlStoryboardExample.xaml#controlstoryboardexampleusingwholepage)]  
   
  For additional examples, see the [Animation Example Gallery](http://go.microsoft.com/fwlink/?LinkID=159969).  
   

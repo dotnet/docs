@@ -1,5 +1,5 @@
 ---
-title: "Dependency Property Value Precedence | Microsoft Docs"
+title: "Dependency Property Value Precedence"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -36,7 +36,7 @@ manager: "wpickett"
 ## Dependency Properties Might Be "Set" in Multiple Places  
  The following is example [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] where the same property (<xref:System.Windows.Controls.Control.Background%2A>) has three different "set" operations that might influence the value.  
   
- [!code-xml[PropertiesOvwSupport#DPPrecedence](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#dpprecedence)]  
+ [!code-xaml[PropertiesOvwSupport#DPPrecedence](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#dpprecedence)]  
   
  Here, which color do you expect will apply—red, green, or blue?  
   

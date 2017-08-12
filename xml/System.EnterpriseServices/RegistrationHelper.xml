@@ -1,0 +1,267 @@
+<Type Name="RegistrationHelper" FullName="System.EnterpriseServices.RegistrationHelper">
+  <TypeSignature Language="C#" Value="public sealed class RegistrationHelper : MarshalByRefObject, System.EnterpriseServices.IRegistrationHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegistrationHelper extends System.MarshalByRefObject implements class System.EnterpriseServices.IRegistrationHelper" />
+  <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.EnterpriseServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.EnterpriseServices.IRegistrationHelper</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("89a86e7b-c229-4008-9baa-2f5c8411d7e0")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Installs and configures assemblies in the COM+ catalog. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.RegistrationHelper> is used by both the .NET Services Installation Tool (Regsvcs.exe) and the automatic registration steps that are performed on first activation of a <xref:System.EnterpriseServices.ServicedComponent>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegistrationHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.EnterpriseServices.RegistrationHelper" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="InstallAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides the run-time components available to the COM+ catalog.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallAssembly(string assembly, string application, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to install.</param>
+        <param name="application">The name of the COM+ application to install into. This parameter can be <see langword="null" />. If the parameter is <see langword="null" /> and the assembly contains a <see cref="T:System.EnterpriseServices.ApplicationNameAttribute" />, then the attribute is used. Otherwise, the name of the application is generated based on the name of the assembly, then is returned.</param>
+        <param name="tlb">The name of the output Type Library Exporter (Tlbexp.exe) file, or a string that contains <see langword="null" /> if the registration helper is expected to generate the name. The actual name used is placed in the parameter on call completion.</param>
+        <param name="installFlags">A bitwise combination of the <see cref="T:System.EnterpriseServices.InstallationFlags" /> values.</param>
+        <summary>Installs the named assembly in a COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A> performs the following steps: registration, generation of a type library, registration of the type library, installation of the type library under the specified application, and configuration of the components contained in the type library.  
+  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the `InstalAssembly` method to install a named assembly in a COM+ application.  
+  
+ [!code-cpp[EnterpriseServices Registration#1](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices Registration/CPP/deployservicedcomponent.cpp#1)]
+ [!code-csharp[EnterpriseServices Registration#1](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices Registration/CS/deployservicedcomponent.cs#1)]
+ [!code-vb[EnterpriseServices Registration#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices Registration/VB/deployservicedcomponent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.EnterpriseServices.RegistrationException">The input assembly does not have a strong name.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to access the registry. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssembly">
+      <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, string partition, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string application, string partition, string tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String,System.String@,System.EnterpriseServices.InstallationFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="partition" Type="System.String" />
+        <Parameter Name="tlb" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="installFlags" Type="System.EnterpriseServices.InstallationFlags" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to install.</param>
+        <param name="application">The name of the COM+ application to install into. This parameter can be <see langword="null" />. If the parameter is <see langword="null" /> and the assembly contains a <see cref="T:System.EnterpriseServices.ApplicationNameAttribute" />, then the attribute is used. Otherwise, the name of the application is generated based on the name of the assembly, then is returned.</param>
+        <param name="partition">The name of the partition. This parameter can be <see langword="null" />.</param>
+        <param name="tlb">The name of the output Type Library Exporter (Tlbexp.exe) file, or a string that contains <see langword="null" /> if the registration helper is expected to generate the name. The actual name used is placed in the parameter on call completion.</param>
+        <param name="installFlags">A bitwise combination of the <see cref="T:System.EnterpriseServices.InstallationFlags" /> values.</param>
+        <summary>Installs the named assembly in a COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.EnterpriseServices.RegistrationHelper.InstallAssembly%2A> performs the following steps: registration, generation of a type library, registration of the type library, installation of the type library under the specified application, and configuration of the components contained in the type library.  
+  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.EnterpriseServices.RegistrationException">The input assembly does not have a strong name.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">for the ability to access the registry. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallAssemblyFromConfig">
+      <MemberSignature Language="C#" Value="public void InstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="regConfig">A <see cref="T:System.EnterpriseServices.RegistrationConfig" /> identifying the assembly to install.</param>
+        <summary>Installs the named assembly in a COM+ application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method requires the caller to have administrative privileges on the local computer.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the `InstalAssemblyFromConfig` method to install a named assembly in a COM+ application.  
+  
+ [!code-cpp[EnterpriseServices Registration#2](~/samples/snippets/cpp/VS_Snippets_Remoting/EnterpriseServices Registration/CPP/deployservicedcomponent.cpp#2)]
+ [!code-csharp[EnterpriseServices Registration#2](~/samples/snippets/csharp/VS_Snippets_Remoting/EnterpriseServices Registration/CS/deployservicedcomponent.cs#2)]
+ [!code-vb[EnterpriseServices Registration#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/EnterpriseServices Registration/VB/deployservicedcomponent.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="UninstallAssembly">
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uninstalls an assembly previous registered with <see cref="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)" />.</summary>
+      </Docs>
+    </MemberGroup>
+    <Member MemberName="UninstallAssembly">
+      <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UninstallAssembly(string assembly, string application) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssembly(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to uninstall.</param>
+        <param name="application">If this name is not <see langword="null" />, it is the name of the application that contains the components in the assembly.</param>
+        <summary>Uninstalls the assembly from the given application.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.EnterpriseServices.RegistrationException">The input assembly does not have a strong name.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssembly">
+      <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application, string partition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssembly(string assembly, string application, string partition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssembly(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.String" />
+        <Parameter Name="application" Type="System.String" />
+        <Parameter Name="partition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The file name of the assembly to uninstall.</param>
+        <param name="application">If this name is not <see langword="null" />, it is the name of the application that contains the components in the assembly.</param>
+        <param name="partition">The name of the partition. This parameter can be <see langword="null" />.</param>
+        <summary>Uninstalls the assembly from the given application.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.EnterpriseServices.RegistrationException">The input assembly does not have a strong name.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UninstallAssemblyFromConfig">
+      <MemberSignature Language="C#" Value="public void UninstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig regConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.EnterpriseServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regConfig" Type="System.EnterpriseServices.RegistrationConfig&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="regConfig">A <see cref="T:System.EnterpriseServices.RegistrationConfig" /> identifying the assembly to uninstall.</param>
+        <summary>Uninstalls the assembly from the given application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

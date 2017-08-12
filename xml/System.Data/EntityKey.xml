@@ -511,7 +511,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Data.EntityKey key1, System.Data.EntityKey key2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Data.EntityKey key1, System.Data.EntityKey key2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Data.EntityKey key1, class System.Data.EntityKey key2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.op_Equality(System.Data.EntityKey,System.Data.EntityKey)" />
       <MemberType>Method</MemberType>
@@ -584,6 +584,30 @@
   
  The equivalent method for this operator is <xref:System.Data.EntityKey.Equals%28System.Data.EntityKey%29?displayProperty=fullName>.]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Data.EntityKey key1, System.Data.EntityKey key2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Data.EntityKey key1, class System.Data.EntityKey key2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityKey.op_Inequality(System.Data.EntityKey,System.Data.EntityKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key1" Type="System.Data.EntityKey" />
+        <Parameter Name="key2" Type="System.Data.EntityKey" />
+      </Parameters>
+      <Docs>
+        <param name="key1">To be added.</param>
+        <param name="key2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -55,7 +55,7 @@
 ## Examples  
  The following example sets `"Italic"` as the <xref:System.Windows.FontStyle>.  
   
- [!code-xml[FontSnippets#FontStyleSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml#fontstylesnippet5)]  
+ [!code-xaml[FontSnippets#FontStyleSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml#fontstylesnippet5)]  
   
  ]]></format>
     </remarks>
@@ -134,7 +134,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.FontStyle left, System.Windows.FontStyle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.FontStyle left, System.Windows.FontStyle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.FontStyle left, valuetype System.Windows.FontStyle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.op_Equality(System.Windows.FontStyle,System.Windows.FontStyle)" />
       <MemberType>Method</MemberType>
@@ -159,7 +159,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.FontStyle left, System.Windows.FontStyle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.FontStyle left, System.Windows.FontStyle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.FontStyle left, valuetype System.Windows.FontStyle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FontStyle.op_Inequality(System.Windows.FontStyle,System.Windows.FontStyle)" />
       <MemberType>Method</MemberType>

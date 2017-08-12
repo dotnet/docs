@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback5::ConditionalWeakTableElementReferences Method | Microsoft Docs"
+title: "ICorProfilerCallback5::ConditionalWeakTableElementReferences Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

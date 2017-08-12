@@ -1,5 +1,5 @@
 ---
-title: "How to: Measure PLINQ Query Performance | Microsoft Docs"
+title: "How to: Measure PLINQ Query Performance"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

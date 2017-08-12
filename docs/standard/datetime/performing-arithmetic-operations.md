@@ -1,5 +1,5 @@
 ---
-title: "Performing arithmetic operations with dates and times | Microsoft Docs"
+title: "Performing arithmetic operations with dates and times"
 ms.custom: ""
 ms.date: "04/10/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Custom Token Handlers | Microsoft Docs"
+title: "Custom Token Handlers"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

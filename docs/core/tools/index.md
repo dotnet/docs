@@ -1,5 +1,5 @@
 ---
-title: .NET Core Command-Line Interface (CLI) Tools | Microsoft Docs
+title: .NET Core Command-Line Interface (CLI) Tools
 description: An overview of the Command-Line Interface (CLI) tools and features.
 keywords: CLI, CLI tools, .NET, .NET Core
 author: blackdwarf

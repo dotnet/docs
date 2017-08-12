@@ -211,7 +211,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Collections.Specialized.BitVector32.Section a, System.Collections.Specialized.BitVector32.Section b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Collections.Specialized.BitVector32.Section a, System.Collections.Specialized.BitVector32.Section b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Collections.Specialized.BitVector32/Section a, valuetype System.Collections.Specialized.BitVector32/Section b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.op_Equality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
       <MemberType>Method</MemberType>
@@ -248,7 +248,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Collections.Specialized.BitVector32.Section a, System.Collections.Specialized.BitVector32.Section b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Collections.Specialized.BitVector32.Section a, System.Collections.Specialized.BitVector32.Section b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Collections.Specialized.BitVector32/Section a, valuetype System.Collections.Specialized.BitVector32/Section b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.op_Inequality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
       <MemberType>Method</MemberType>
@@ -318,6 +318,35 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">

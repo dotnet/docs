@@ -1,5 +1,5 @@
 ---
-title: "Composing Nested Entity SQL Queries | Microsoft Docs"
+title: "Composing Nested Entity SQL Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

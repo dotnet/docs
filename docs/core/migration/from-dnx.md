@@ -1,6 +1,6 @@
 ---
-title: Migrating from DNX to .NET Core CLI | Microsoft Docs
-description: Migrating from DNX to .NET Core CLI
+title: Migrating from DNX to .NET Core CLI
+description: Migrate from using DNX tooling to .NET Core CLI tooling.
 keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
@@ -152,14 +152,14 @@ produce one application for each OS you wish to support. These portability types
 
 Once you make a call on what type of portability you want, you need to change your targeted framework(s). If you were 
 writing applications for .NET Core, you were most likely using `dnxcore50` as  your targeted framework. With the CLI 
-and the changes that the new [.NET Standard](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 
+and the changes that the new [.NET Standard](../../standard/net-standard.md) 
 brought, the framework needs to be one of the following:
 
 1. `netcoreapp1.0` - if you are writing applications on .NET Core (including ASP.NET Core applications)
 2. `netstandard1.6` - if you are writing class libraries for .NET Core
 
 If you are using other `dnx` targets, like `dnx451` you will need to change those as well. `dnx451` should be changed to `net451`. 
-Please refer to the [.NET Standard Library document](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md) 
+Please refer to the [.NET Standard](../../standard/net-standard.md) topic 
 for more information. 
 
 Your `project.json` is now mostly ready. You need to go through your dependencies list and update the dependencies to 

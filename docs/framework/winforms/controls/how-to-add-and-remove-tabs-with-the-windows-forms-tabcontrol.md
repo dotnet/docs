@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Tabs with the Windows Forms TabControl | Microsoft Docs"
+title: "How to: Add and Remove Tabs with the Windows Forms TabControl"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

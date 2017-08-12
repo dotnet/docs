@@ -1,5 +1,5 @@
 ---
-title: "WCF and ASP.NET Web API | Microsoft Docs"
+title: "WCF and ASP.NET Web API"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

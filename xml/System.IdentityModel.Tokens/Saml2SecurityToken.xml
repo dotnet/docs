@@ -97,7 +97,7 @@
 ## Remarks  
  For <xref:System.IdentityModel.Tokens.Saml2SecurityToken> security tokens, the claims are specified using a SAML assertion.  
   
- Use a constructor or the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.Initialize%28System.IdentityModel.Tokens.Saml2Assertion%29> method to set the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.Assertion%2A> property.  
+ Use a constructor or the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.%23ctor%28System.IdentityModel.Tokens.Saml2Assertion%29?displayProperty=fullName> method to set the <xref:System.IdentityModel.Tokens.Saml2SecurityToken.Assertion%2A> property.  
   
  ]]></format>
         </remarks>

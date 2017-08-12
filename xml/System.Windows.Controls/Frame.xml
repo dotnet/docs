@@ -108,9 +108,9 @@
 ## Examples  
  The following example shows how to create a simple <xref:System.Windows.Controls.Frame> control and specify initial source content to load from a [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] using the <xref:System.Windows.Controls.Frame.Source%2A> property.  
   
- [!code-xml[FrameSnippets#SetFrameSourceXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml1)]  
-[!code-xml[FrameSnippets#SetFrameSourceXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml2)]  
-[!code-xml[FrameSnippets#SetFrameSourceXAML3](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml3)]  
+ [!code-xaml[FrameSnippets#SetFrameSourceXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml1)]  
+[!code-xaml[FrameSnippets#SetFrameSourceXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml2)]  
+[!code-xaml[FrameSnippets#SetFrameSourceXAML3](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameSnippets/CS/MainWindow.xaml#setframesourcexaml3)]  
   
  ]]></format>
     </remarks>
@@ -650,7 +650,7 @@
 ## Examples  
  The following example illustrates a <xref:System.Windows.Controls.Frame> that is configured to use its own navigation history.  
   
- [!code-xml[FrameJournalOwnershipSnippetSample#SetJournalOwnershipProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameJournalOwnershipSnippetSample/CS/HomePage.xaml#setjournalownershipproperty)]  
+ [!code-xaml[FrameJournalOwnershipSnippetSample#SetJournalOwnershipProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameJournalOwnershipSnippetSample/CS/HomePage.xaml#setjournalownershipproperty)]  
   
  ]]></format>
         </remarks>
@@ -1044,7 +1044,7 @@
   
  [!code-csharp[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/csharp/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/CSharp/Window1.xaml.cs#setnavigationuivisibility)]
  [!code-vb[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/visualbasic/window1.xaml.vb#setnavigationuivisibility)]
- [!code-xml[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/xaml/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/XAML/Window1.xaml#setnavigationuivisibility)]  
+ [!code-xaml[FrameNavigationUIVisibilitySnippets#SetNavigationUIVisibility](~/samples/snippets/xaml/VS_Snippets_Wpf/FrameNavigationUIVisibilitySnippets/XAML/Window1.xaml#setnavigationuivisibility)]  
   
  ]]></format>
         </remarks>

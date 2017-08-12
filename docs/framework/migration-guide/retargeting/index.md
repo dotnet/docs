@@ -1,5 +1,5 @@
 ---
-title: "Retargeting Changes in the .NET Framework | Microsoft Docs"
+title: "Retargeting Changes in the .NET Framework"
 ms.date: "05/19/2017"
 ms.prod: ".net-framework"
 ms.technology:

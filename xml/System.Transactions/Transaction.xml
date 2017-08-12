@@ -685,7 +685,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Transactions.Transaction x, System.Transactions.Transaction y);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Transactions.Transaction x, System.Transactions.Transaction y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Transactions.Transaction x, class System.Transactions.Transaction y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.op_Equality(System.Transactions.Transaction,System.Transactions.Transaction)" />
       <MemberType>Method</MemberType>
@@ -716,12 +716,12 @@
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.Transaction.Equals%28System.Transactions.Transaction%2CSystem.Transactions.Transaction%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.Transaction.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Transactions.Transaction x, System.Transactions.Transaction y);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Transactions.Transaction x, System.Transactions.Transaction y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Transactions.Transaction x, class System.Transactions.Transaction y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.Transaction.op_Inequality(System.Transactions.Transaction,System.Transactions.Transaction)" />
       <MemberType>Method</MemberType>
@@ -752,7 +752,7 @@
         <returns>
           <see langword="true" /> if <paramref name="x" /> and <paramref name="y" /> are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.Transaction.Compare%28System.Transactions.Transaction%2CSystem.Transactions.Transaction%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Transactions.Transaction.Equals%2A?displayProperty=fullName>.]]></format>
         </remarks>
       </Docs>
     </Member>

@@ -1,6 +1,6 @@
 ---
-title: Classes (F#) | Microsoft Docs
-description: Classes (F#)
+title: Classes (F#)
+description: Learn how F# Classes are types that represent objects that can have properties, methods, and events.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

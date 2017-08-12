@@ -17,8 +17,180 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that a type, property, field, or method provides a particular export.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+In the attributed programming model, the ExportAttribute attribute declares that a part exports, or provides to the composition container, an object that fulfills a particular contract. During composition, parts with imports that have matching contracts have those dependencies filled by the exported object.
+
+The ExportAttribute attribute can apply to either an entire class, or a property, field, or method of a class. If it's applied to the entire class, an instance of the class is the exported object. If it's applied to a member of a class, the exported object will be the value of that member.
+
+Whether or not a contract matches is determined primarily by the contract name and the contract type. For more information, see the <xref:System.Composition.ImportAttribute> reference. 
+
+
+
+## Examples  
+ The following example shows ExportAttribute being applied to three classes, and three imports that match them.  
+
+```csharp
+//Default export infers type and contract name from the
+//exported type.  This is the preferred method.
+[Export]
+public class MyExport1
+{
+    public String data = "Test Data 1.";
+}
+
+public class MyImporter1
+{
+    [Import]
+    public MyExport1 importedMember { get; set; }
+}
+
+public interface MyInterface
+{
+
+}
+
+//Specifying the contract type may be important if
+//you want to export a type other then the base type,
+//such as an interface.
+[Export(typeof(MyInterface))]
+public class MyExport2 : MyInterface
+{
+    public String data = "Test Data 2.";
+}
+
+public class MyImporter2
+{
+    //The import must match the contract type!
+    [Import(typeof(MyInterface))]
+    public MyExport2 importedMember { get; set; }
+}
+
+//Specifying a contract name should only be 
+//needed in rare caes. Usually, using metadata
+//is a better approach.
+[Export("MyContractName", typeof(MyInterface))]
+public class MyExport3 : MyInterface
+{
+    public String data = "Test Data 3.";
+}
+
+public class MyImporter3
+{
+    //Both contract name and type must match!
+    [Import("MyContractName", typeof(MyInterface))]
+    public MyExport3 importedMember { get; set; }
+}
+
+class Program
+{      
+
+    static void Main(string[] args)
+    {
+        AggregateCatalog catalog = new AggregateCatalog();
+        catalog.Catalogs.Add(new AssemblyCatalog(typeof(MyExport1).Assembly));
+        CompositionContainer _container = new CompositionContainer(catalog);
+        MyImporter1 test1 = new MyImporter1();
+        MyImporter2 test2 = new MyImporter2();
+        MyImporter3 test3 = new MyImporter3();
+        _container.SatisfyImportsOnce(test1);
+        _container.SatisfyImportsOnce(test2);
+        _container.SatisfyImportsOnce(test3);
+        Console.WriteLine(test1.importedMember.data);
+        Console.WriteLine(test2.importedMember.data);
+        Console.WriteLine(test3.importedMember.data);
+        Console.ReadLine();
+
+    }
+}
+```
+
+```vb
+'Default export infers type and contract name from the
+'exported type.  This is the preferred method.
+<Export()>
+Public Class MyExport1
+    Public ReadOnly Property data As String
+        Get
+            Return "Test Data 1."
+        End Get
+    End Property
+End Class
+
+Public Class MyImporter1
+
+    <Import()>
+    Public Property ImportedMember As MyExport1
+
+End Class
+
+Public Interface MyInterface
+
+End Interface
+
+'Specifying the contract type may be important if
+'you want to export a type other then the base type,
+'such as an interface.
+<Export(GetType(MyInterface))>
+Public Class MyExport2
+    Implements MyInterface
+    Public ReadOnly Property data As String
+        Get
+            Return "Test Data 2."
+        End Get
+    End Property
+End Class
+
+Public Class MyImporter2
+    'The import must match the contract type!
+    <Import(GetType(MyInterface))>
+    Public Property ImportedMember As MyExport2
+End Class
+
+'Specifying a contract name should only be 
+'needed in rare caes. Usually, using metadata
+'is a better approach.
+<Export("MyContractName", GetType(MyInterface))>
+Public Class MyExport3
+    Implements MyInterface
+    Public ReadOnly Property data As String
+        Get
+            Return "Test Data 3."
+        End Get
+    End Property
+End Class
+
+Public Class MyImporter3
+    'Both contract name and type must match!
+    <Import("MyContractName", GetType(MyInterface))>
+    Public Property ImportedMember As MyExport3
+End Class
+
+
+
+Sub Main()
+    Dim catalog As AggregateCatalog = New AggregateCatalog()
+    catalog.Catalogs.Add(New AssemblyCatalog(GetType(MyExport1).Assembly))
+    Dim container As CompositionContainer = New CompositionContainer(catalog)
+    Dim test1 As MyImporter1 = New MyImporter1()
+    Dim test2 As MyImporter2 = New MyImporter2()
+    Dim test3 As MyImporter3 = New MyImporter3()
+    container.SatisfyImportsOnce(test1)
+    container.SatisfyImportsOnce(test2)
+    container.SatisfyImportsOnce(test3)
+    Console.WriteLine(test1.ImportedMember.data)
+    Console.WriteLine(test2.ImportedMember.data)
+    Console.WriteLine(test3.ImportedMember.data)
+    Console.ReadLine()
+End Sub
+```
+
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,8 +205,17 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportAttribute" /> class, exporting the type or member marked with this attribute under the default contract name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.Composition.ExportAttribute(String)> or the <xref:System.Composition.ExportAttribute(Type)> method.
+
+The contract name is compared by using the <xref:System.StringComparer.Ordinal> property to perform a case-sensitive, non-linguistic comparison. 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -51,9 +232,18 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractName">The contract name that is used to export the type or member marked with this attribute, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportAttribute" /> class, exporting the type or member marked with this attribute under the specified contract name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.Composition.ExportAttribute(String)> or the <xref:System.Composition.ExportAttribute(Type)> method.
+
+The contract name is compared by using the <xref:System.StringComparer.Ordinal> property to perform a case-sensitive, non-linguistic comparison. 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -70,9 +260,18 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractType">A type from which to derive the contract name that is used to export the type or member marked with this attribute, or <see langword="null" /> to use the default contract name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportAttribute" /> class, exporting the type or member marked with this attribute under a contract name derived from the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Methods that are marked with this attribute must specify a contract name or a type by using either the <xref:System.Composition.ExportAttribute(String)> or the <xref:System.Composition.ExportAttribute(Type)> method.
+
+The contract name is compared by using the <xref:System.StringComparer.Ordinal> property to perform a case-sensitive, non-linguistic comparison. 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,10 +289,11 @@
         <Parameter Name="contractType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <param name="contractType">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="contractName">The contract name that is used to export the type or member marked with this attribute, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
+        <param name="contractType">The type to export.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.ExportAttribute" /> class, exporting the specified type under the specified contract name.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractName">
@@ -110,9 +310,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contract name that is used to export the type or member marked with this attribute.</summary>
+        <value>The contract name that is used to export the type or member marked with this attribute. The default value is an empty string ("").</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractType">
@@ -129,9 +330,10 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the contract type that is exported by the member that is marked by this attribute.</summary>
+        <value>The type of export to be provided. The default value is <see langword="null" />, which means that the type will be obtained by looking at the type on the member that this export is attached to.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 ---
-title: "System.ServiceModel.MetadataExchangeClientSendRequest | Microsoft Docs"
+title: "System.ServiceModel.MetadataExchangeClientSendRequest"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

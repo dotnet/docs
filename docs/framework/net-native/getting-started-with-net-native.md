@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with .NET Native | Microsoft Docs"
+title: "Getting Started with .NET Native"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -20,11 +20,11 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
   
 1.  [Develop a Universal Windows Platform (UWP) app that targets Windows 10](#Step1), and test the debug builds of your app to ensure that it works properly.  
   
-2.  [Handle additional reflection and serialization usage](#Step4).  
+2.  [Handle additional reflection and serialization usage](#Step2).  
   
-3.  [Deploy and test the release builds of your app](#Step5).  
+3.  [Deploy and test the release builds of your app](#Step3).  
   
-4.  [Manually resolve missing metadata](#Step6), and repeat [step 3](#Step5) until all issues are resolved.  
+4.  [Manually resolve missing metadata](#Step4), and repeat [step 3](#Step3) until all issues are resolved.  
   
 > [!NOTE]
 >  If you are migrating an existing Windows Store app to [!INCLUDE[net_native](../../../includes/net-native-md.md)], be sure to review [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md).  
@@ -44,7 +44,7 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
   
  By default, debug builds are JIT-compiled to enable rapid F5 deployment, while release builds are compiled by using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] pre-compilation technology. This means you should build and test the debug builds of your app to ensure that they work normally before compiling them with the .NET Native tool chain.  
   
-<a name="Step4"></a>   
+<a name="Step2"></a>   
 ## Step 2: Handle additional reflection and serialization usage  
  A runtime directives file, Default.rd.xml, is automatically added to your project when you create it. If you develop in C#, it is found in your project's **Properties** folder. If you develop in Visual Basic, it is found in your project's **My Project** folder.  
   
@@ -74,17 +74,17 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
 > [!NOTE]
 >  Type names used in runtime directives files must be fully qualified. For example, the file must specify "System.String" instead of "String".  
   
-<a name="Step5"></a>   
+<a name="Step3"></a>   
 ## Step 3: Deploy and test the release builds of your app  
  After you’ve updated the runtime directives file, you can rebuild and deploy release builds of your app. .NET Native binaries are placed in the ILC.out subdirectory of the directory specified in the **Build output path** text box of  the project's **Properties** dialog box, **Compile** tab. Binaries that aren't in this folder haven't been compiled with .NET Native. Test your app thoroughly, and test all scenarios, including failure scenarios, on each of its target platforms.  
   
- If your app doesn’t work properly (particularly in cases where it throws [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) or [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) exceptions at run time), follow the instructions in the next section, [Step 5: Manually resolve missing metadata](#Step6). Enabling first-chance exceptions may help you find these bugs.  
+ If your app doesn’t work properly (particularly in cases where it throws [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) or [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) exceptions at run time), follow the instructions in the next section, [Step 4: Manually resolve missing metadata](#Step4). Enabling first-chance exceptions may help you find these bugs.  
   
  When you’ve tested and debugged the debug builds of your app and you’re confident that you’ve eliminated the [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) and [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) exceptions, you should test your app as an optimized [!INCLUDE[net_native](../../../includes/net-native-md.md)] app. To do this, change your active project configuration from **Debug** to **Release**.  
   
-<a name="Step6"></a>   
+<a name="Step4"></a>   
 ## Step 4: Manually resolve missing metadata  
- The most common failure you'll encounter with [!INCLUDE[net_native](../../../includes/net-native-md.md)] that you don't encounter on the desktop is a runtime [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), or [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exception. In some cases, the absence of metadata can manifest itself in unpredictable behavior or even in app failures. This section discusses how you can debug and resolve these exceptions by adding directives to the runtime directives file. For information about the format of runtime directives, see [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). After you’ve added runtime directives, you should [deploy and test your app](#Step5) again and resolve any new [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), and  [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions until you encounter no more exceptions.  
+ The most common failure you'll encounter with [!INCLUDE[net_native](../../../includes/net-native-md.md)] that you don't encounter on the desktop is a runtime [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), or [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exception. In some cases, the absence of metadata can manifest itself in unpredictable behavior or even in app failures. This section discusses how you can debug and resolve these exceptions by adding directives to the runtime directives file. For information about the format of runtime directives, see [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). After you’ve added runtime directives, you should [deploy and test your app](#Step3) again and resolve any new [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), and  [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions until you encounter no more exceptions.  
   
 > [!TIP]
 >  Specify the runtime directives at a high level to enable your app to be resilient to code changes.  We recommend adding runtime directives at the namespace and type levels rather than the member level. Note that there may be a tradeoff between resiliency and larger binaries with longer compile times.  

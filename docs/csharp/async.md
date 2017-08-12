@@ -1,6 +1,6 @@
 ---
-title: Asynchronous programming | Microsoft Docs
-description: Asynchronous programming
+title: Asynchronous programming
+description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn

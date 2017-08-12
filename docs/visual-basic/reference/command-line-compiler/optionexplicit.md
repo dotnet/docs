@@ -1,5 +1,5 @@
 ---
-title: "/optionexplicit | Microsoft Docs"
+title: "/optionexplicit"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -73,4 +73,4 @@ Causes the compiler to report errors if variables are not declared before they a
  [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)   
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
  [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)   
- [Visual Basic Defaults, Projects, Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+ [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

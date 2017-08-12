@@ -1,5 +1,5 @@
 ---
-title: "Attributes (C#) | Microsoft Docs"
+title: "Attributes (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Lambda expression will not be removed from this event handler | Microsoft Docs"
+title: "Lambda expression will not be removed from this event handler"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -76,7 +76,7 @@ Module Module1
 End Module  
 ```  
   
- By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
+ By default, this message is a warning. For more information about how to hide warnings or treat warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **Error ID:** BC42326  
   

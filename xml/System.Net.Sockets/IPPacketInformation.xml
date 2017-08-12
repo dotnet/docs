@@ -151,7 +151,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Net.Sockets.IPPacketInformation packetInformation1, System.Net.Sockets.IPPacketInformation packetInformation2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Net.Sockets.IPPacketInformation packetInformation1, System.Net.Sockets.IPPacketInformation packetInformation2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Net.Sockets.IPPacketInformation packetInformation1, valuetype System.Net.Sockets.IPPacketInformation packetInformation2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPPacketInformation.op_Equality(System.Net.Sockets.IPPacketInformation,System.Net.Sockets.IPPacketInformation)" />
       <MemberType>Method</MemberType>
@@ -188,12 +188,12 @@
 ## Remarks  
  This operator tests both the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> values for both arguments.  
   
- The equivalent method for this operator is <xref:System.Net.Sockets.IPPacketInformation.Equals%28System.Net.Sockets.IPPacketInformation%2CSystem.Net.Sockets.IPPacketInformation%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Net.Sockets.IPPacketInformation.Equals(System.Object)>.]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Net.Sockets.IPPacketInformation packetInformation1, System.Net.Sockets.IPPacketInformation packetInformation2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Net.Sockets.IPPacketInformation packetInformation1, System.Net.Sockets.IPPacketInformation packetInformation2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Net.Sockets.IPPacketInformation packetInformation1, valuetype System.Net.Sockets.IPPacketInformation packetInformation2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.IPPacketInformation.op_Inequality(System.Net.Sockets.IPPacketInformation,System.Net.Sockets.IPPacketInformation)" />
       <MemberType>Method</MemberType>
@@ -230,7 +230,7 @@
 ## Remarks  
  This operator tests both the <xref:System.Net.Sockets.IPPacketInformation.Address%2A> and <xref:System.Net.Sockets.IPPacketInformation.Interface%2A> values for both arguments.  
   
- The equivalent method for this operator is <xref:System.Net.Sockets.IPPacketInformation.Compare%28System.Net.Sockets.IPPacketInformation%2CSystem.Net.Sockets.IPPacketInformation%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Net.Sockets.IPPacketInformation.Equals(System.Object)>.]]></format>
         </remarks>
       </Docs>
     </Member>

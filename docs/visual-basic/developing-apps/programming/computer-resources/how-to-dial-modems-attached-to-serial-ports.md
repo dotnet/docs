@@ -1,5 +1,5 @@
 ---
-title: "How to: Dial Modems Attached to Serial Ports in Visual Basic | Microsoft Docs"
+title: "How to: Dial Modems Attached to Serial Ports in Visual Basic"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -61,7 +61,7 @@ This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE
 ## Example  
  [!code-vb[VbVbalrMyComputer#27](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-dial-modems-attached-to-serial-ports_4.vb)]  
   
- This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
+ This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Compiling the Code  
  This example requires a reference to the <xref:System?displayProperty=fullName> namespace.  

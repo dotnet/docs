@@ -1,5 +1,5 @@
 ---
-title: "Const Statement (Visual Basic) | Microsoft Docs"
+title: "Const Statement (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

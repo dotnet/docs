@@ -1,5 +1,5 @@
 ---
-title: "How to: Use an Application-Scope Resource Dictionary | Microsoft Docs"
+title: "How to: Use an Application-Scope Resource Dictionary"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -27,15 +27,15 @@ This example shows how to define and use an application-scope custom resource di
   
  If you have multiple resources that you set using                      <xref:System.Windows.Application.Resources%2A>, you can instead use a custom resource dictionary to store those resources and set                      <xref:System.Windows.Application.Resources%2A> with it instead. The following shows how you declare a custom resource dictionary using                      XAML                     .  
   
- [!code-xml[HOWTOResourceDictionaries#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/MyResourceDictionary.xaml#1)]  
+ [!code-xaml[HOWTOResourceDictionaries#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/MyResourceDictionary.xaml#1)]  
   
  Swapping entire resource dictionaries using                      <xref:System.Windows.Application.Resources%2A> allows you to support application-scope themes, where each theme is encapsulated by a single resource dictionary. The following example shows how to set the                      <xref:System.Windows.ResourceDictionary>.  
   
- [!code-xml[HOWTOResourceDictionaries#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/App.xaml#2)]  
+ [!code-xaml[HOWTOResourceDictionaries#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/App.xaml#2)]  
   
  The following shows how you can get application-scope resources from the resource dictionary exposed by                      <xref:System.Windows.Application.Resources%2A> in XAML.  
   
- [!code-xml[HOWTOResourceDictionaries#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/MainWindow.xaml#4)]  
+ [!code-xaml[HOWTOResourceDictionaries#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HowToResourceDictionaries/CSharp/MainWindow.xaml#4)]  
   
  The following shows how you can also get the resources in code.  
   

@@ -1,5 +1,5 @@
 ---
-title: "For loop not initialized (Visual Basic) | Microsoft Docs"
+title: "For loop not initialized (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

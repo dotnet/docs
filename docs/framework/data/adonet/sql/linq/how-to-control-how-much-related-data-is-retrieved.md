@@ -1,5 +1,5 @@
 ---
-title: "How to: Control How Much Related Data Is Retrieved | Microsoft Docs"
+title: "How to: Control How Much Related Data Is Retrieved"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

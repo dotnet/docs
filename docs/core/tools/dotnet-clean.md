@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: eff65fa1-bab4-4421-8260-d0a284b690b2
 ---
-
 # dotnet-clean
 
 ## Name
@@ -46,9 +45,9 @@ Directory in which the build outputs are placed. Specify the `-f|--framework <FR
 
 The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](csproj.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Defines the configuration. If omitted, it defaults to `Debug`. This property is only required when cleaning if you specified it during build time.
+Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
 
 `-v|--verbosity <LEVEL>`
 

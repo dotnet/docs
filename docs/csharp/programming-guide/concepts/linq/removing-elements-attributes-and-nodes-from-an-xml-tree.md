@@ -1,13 +1,9 @@
 ---
 title: "Removing Elements, Attributes, and Nodes from an XML Tree (C#)"
-ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
 dev_langs: 
   - "CSharp"
@@ -15,7 +11,6 @@ ms.assetid: 07dd06d6-1117-4077-bf98-9120cf51176e
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
-
 ---
 # Removing Elements, Attributes, and Nodes from an XML Tree (C#)
 You can modify an XML tree, removing elements, attributes, and other types of nodes.  
@@ -28,8 +23,8 @@ You can modify an XML tree, removing elements, attributes, and other types of no
   
 |Method|Description|  
 |------------|-----------------|  
-|[XAttribute.Remove](https://msdn.microsoft.com/library/system.xml.linq.xattribute.remove\(v=vs.110\).aspx)|Removes an <xref:System.Xml.Linq.XAttribute> from its parent.|  
-|[XContainer.RemoveNodes](https://msdn.microsoft.com/library/system.xml.linq.xcontainer.removenodes\(v=vs.110\).aspx)|Removes the child nodes from an <xref:System.Xml.Linq.XContainer>.|  
+|<xref:System.Xml.Linq.XAttribute.Remove%2A?displayProperty=fullName>|Removes an <xref:System.Xml.Linq.XAttribute> from its parent.|  
+|<xref:System.Xml.Linq.XContainer.RemoveNodes%2A?displayProperty=fullName>|Removes the child nodes from an <xref:System.Xml.Linq.XContainer>.|  
 |<xref:System.Xml.Linq.XElement.RemoveAll%2A?displayProperty=fullName>|Removes content and attributes from an <xref:System.Xml.Linq.XElement>.|  
 |<xref:System.Xml.Linq.XElement.RemoveAttributes%2A?displayProperty=fullName>|Removes the attributes of an <xref:System.Xml.Linq.XElement>.|  
 |<xref:System.Xml.Linq.XElement.SetAttributeValue%2A?displayProperty=fullName>|If you pass `null` for value, then removes the attribute.|  

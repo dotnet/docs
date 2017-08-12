@@ -11,7 +11,6 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
-
 # dotnet-pack
 
 ## Name
@@ -60,9 +59,9 @@ Generates the symbols `nupkg`.
 
 Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`. 
 
-`-c|--configuration <CONFIGURATION>`
+`-c|--configuration {Debug|Release}`
 
-Configuration to use when building the project. If not specified, configuration defaults to `Debug`.
+Defines the build configuration. The default value is `Debug`.
 
 `--version-suffix <VERSION_SUFFIX>`
 

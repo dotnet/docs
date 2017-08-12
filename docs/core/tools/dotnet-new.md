@@ -1,31 +1,38 @@
 ---
-title: dotnet-new command - .NET Core CLI
-description: The dotnet-new command creates new .NET Core projects in the current directory.
+title: dotnet new command - .NET Core CLI
+description: The dotnet new command creates new .NET Core projects based on the specified template.
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
-
-# dotnet-new
+# dotnet new
 
 ## Name
 
-`dotnet-new` - Creates a new project, configuration file, or solution based on the specified template.
+`dotnet new` - Creates a new project, configuration file, or solution based on the specified template.
 
 ## Synopsis
 
+# [.NET Core 2.x](#tab/netcore2x)
+```
+dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
+dotnet new <TEMPLATE> [-l|--list]
+dotnet new [-h|--help]
+```
+# [.NET Core 1.x](#tab/netcore1x)
 ```
 dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
 ```
+---
 
 ## Description
 
@@ -56,9 +63,21 @@ The command contains a default list of templates. Use `dotnet new -all` to obtai
 
 ## Options
 
+`-all|--show-all`
+
+Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. When running in the context of a specific template, such as `dotnet new web -all`, `-all` is interpreted as a force creation flag. This is required when the output directory already contains a project. This option is only available in .NET Core 1.x SDK.
+
+`--force`
+
+Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project. This option is available starting with .NET Core SDK 2.0.
+
 `-h|--help`
 
 Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
+
+`-i|--install <PATH|NUGET_ID>`
+
+Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md). This option is available starting with .NET Core SDK 2.0.
 
 `-l|--list`
 
@@ -76,9 +95,9 @@ The name for the created output. If no name is specified, the name of the curren
 
 Location to place the generated output. The default is the current directory.
 
-`-all|--show-all`
+`-u|--uninstall <PATH|NUGET_ID>`
 
-Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. When running in the context of a specific template, such as `dotnet new web -all`, `-all` is interpreted as a force creation flag. This is required when the output directory already contains a project.
+Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. This option is available starting with .NET Core SDK 2.0.
 
 ## Template options
 
@@ -110,10 +129,17 @@ Create a new ASP.NET Core C# MVC application project in the current directory wi
 
 `dotnet new mvc -au None -f netcoreapp1.0`
  
-Create a new xUnit application targeting .NET Core 1.1:
+Create a new xUnit application targeting .NET Core 2.0:
 
-`dotnet new xunit --framework netcoreapp1.1`
+`dotnet new xunit --framework netcoreapp2.0`
 
 List all templates available for MVC:
 
 `dotnet new mvc -l`
+
+## See also
+
+[Custom templates for dotnet new](custom-templates.md)  
+[Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md)  
+[dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
+[Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)

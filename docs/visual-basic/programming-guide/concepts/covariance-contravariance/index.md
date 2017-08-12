@@ -1,10 +1,7 @@
 ---
 title: "Covariance and Contravariance (Visual Basic)"
-ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
 ms.tgt_pltfrm: ""
@@ -15,7 +12,6 @@ ms.assetid: 59224c46-9931-466b-8c6e-3648c3e609c6
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.mt: 
   - "cs-cz"
   - "pl-pl"

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot blocked .NET Framework installations and uninstallations"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -84,4 +84,3 @@ The .NET Framework installer cannot run in Program Compatibility mode. To resolv
 [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)   
 [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)   
 [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
-

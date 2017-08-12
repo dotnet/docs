@@ -564,7 +564,7 @@ MsgBox(CStr(customers(1)))
 ## Remarks  
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:Microsoft.VisualBasic.Collection> object.  
   
- This method is an O(`n`) operation, where `n` is obtained from the <xref:Microsoft.VisualBasic.Collection.System#Collections#ICollection#ICollectionCount*>.  
+ This method is an O(`n`) operation, where `n` is obtained from the <xref:Microsoft.VisualBasic.Collection.System%23Collections%23ICollection%23Count>.  
   
  ]]></format>
         </remarks>

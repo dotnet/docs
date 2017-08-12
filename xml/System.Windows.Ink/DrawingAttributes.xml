@@ -778,7 +778,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Ink.DrawingAttributes first, System.Windows.Ink.DrawingAttributes second);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Ink.DrawingAttributes first, System.Windows.Ink.DrawingAttributes second);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Ink.DrawingAttributes first, class System.Windows.Ink.DrawingAttributes second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.op_Equality(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
       <MemberType>Method</MemberType>
@@ -839,7 +839,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Ink.DrawingAttributes first, System.Windows.Ink.DrawingAttributes second);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Ink.DrawingAttributes first, System.Windows.Ink.DrawingAttributes second);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Ink.DrawingAttributes first, class System.Windows.Ink.DrawingAttributes second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.op_Inequality(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
       <MemberType>Method</MemberType>

@@ -23,7 +23,7 @@
 ## Remarks  
  The [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine will only allow task properties marked with this attribute to output data from a task. Project authors can only use properties marked with this attribute in the `Output` element of a project file. All other task properties are treated as inputs to a task.  
   
- For more information about using attributes, see [Extending Metadata Using Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For more information about using attributes, see [Extending Metadata Using Attributes](~/docs/standard/attributes/index.md).  
   
    
   

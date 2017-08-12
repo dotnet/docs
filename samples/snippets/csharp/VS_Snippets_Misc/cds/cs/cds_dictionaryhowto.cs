@@ -140,7 +140,7 @@ namespace DictionaryHowTo
                     if (ci != existingVal)
                         throw new ArgumentException("Duplicate city names are not allowed: {0}.", ci.Name);
 
-                    // The only updatable fields are the temerature array and lastQueryDate.
+                    // The only updatable fields are the temperature array and lastQueryDate.
                     existingVal.lastQueryDate = DateTime.Now;
                     existingVal.RecentHighTemperatures = ci.RecentHighTemperatures;
                     return existingVal;

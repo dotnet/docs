@@ -657,7 +657,7 @@ http://www.adventure-works.com
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Xml.Linq.XName left, System.Xml.Linq.XName right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Xml.Linq.XName left, System.Xml.Linq.XName right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xml.Linq.XName left, class System.Xml.Linq.XName right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.op_Equality(System.Xml.Linq.XName,System.Xml.Linq.XName)" />
       <MemberType>Method</MemberType>
@@ -739,7 +739,7 @@ True
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XName op_Implicit (string expandedName);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Xml.Linq.XName (string expandedName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Xml.Linq.XName op_Implicit(string expandedName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.op_Implicit(System.String)~System.Xml.Linq.XName" />
       <MemberType>Method</MemberType>
@@ -777,7 +777,7 @@ True
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Xml.Linq.XName left, System.Xml.Linq.XName right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Xml.Linq.XName left, System.Xml.Linq.XName right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xml.Linq.XName left, class System.Xml.Linq.XName right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XName.op_Inequality(System.Xml.Linq.XName,System.Xml.Linq.XName)" />
       <MemberType>Method</MemberType>

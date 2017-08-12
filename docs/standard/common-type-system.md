@@ -14,16 +14,16 @@ ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
 
 # Common Type System & Common Language Specification
 
-Again, two terms that are freely used in the .NET world, they actually are crucial to understand how the .NET platform enables multi-language development and to understand how it works.
+Again, two terms that are freely used in the .NET world, they actually are crucial to understand how a .NET implementation enables multi-language development and to understand how it works.
 
 ## Common Type System
 
-To start from the beginning, remember that the .NET platform is _language agnostic_. This doesn’t just mean that a programmer can write her code in any language that can be compiled to IL. It also means that she needs to be able to interact with code written in other languages that are able to be used on the .NET platform.
+To start from the beginning, remember that a .NET implementation is _language agnostic_. This doesn’t just mean that a programmer can write her code in any language that can be compiled to IL. It also means that she needs to be able to interact with code written in other languages that are able to be used on a .NET implementation.
 
 In order to do this transparently, there has to be a common way to describe all supported types. This is what the Common Type System (CTS) is in charge of doing. It was made to do several things:
 
 *   Establish a framework for cross-language execution.
-*   Provide an object-oriented model to support implementing various languages on .NET platform.
+*   Provide an object-oriented model to support implementing various languages on a .NET implementation.
 *   Define a set of rules that all languages must follow when it comes to working with types.
 *   Provide a library that contains the basic primitive types that are used in application development (such as, `Boolean`, `Byte`, `Char` etc.)
 
@@ -45,9 +45,9 @@ CTS also defines all other properties of the types, such as access modifiers, wh
 
 ## Common Language Specification
 
-To enable full interoperability scenarios, all objects that are created in code must rely on some commonality in the languages that are consuming them (are their _callers_). Since there are numerous different languages, .NET platform has specified those commonalities in something called the **Common Language Specification** (CLS). CLS defines a set of features that are needed by many common applications. It also provides a sort of recipe for any language that is implemented on top of .NET platform on what it needs to support.
+To enable full interoperability scenarios, all objects that are created in code must rely on some commonality in the languages that are consuming them (are their _callers_). Since there are numerous different languages, .NET has specified those commonalities in something called the **Common Language Specification** (CLS). CLS defines a set of features that are needed by many common applications. It also provides a sort of recipe for any language that is implemented on top of .NET on what it needs to support.
 
-CLS is a subset of the CTS. This means that all of the rules in the CTS also apply to the CLS, unless the CLS rules are more strict. If a component is built using only the rules in the CLS, that is, it exposes only the CLS features in its API, it is said to be **CLS-compliant**. For instance, the `<framework-librares>` are CLS-compliant precisely because they need to work across all of the languages that are supported on the .NET platform.
+CLS is a subset of the CTS. This means that all of the rules in the CTS also apply to the CLS, unless the CLS rules are more strict. If a component is built using only the rules in the CLS, that is, it exposes only the CLS features in its API, it is said to be **CLS-compliant**. For instance, the `<framework-librares>` are CLS-compliant precisely because they need to work across all of the languages that are supported on .NET.
 
 You can consult the documents in the [More Resources](#more-resources) section below to get an overview of all the features in the CLS.
 

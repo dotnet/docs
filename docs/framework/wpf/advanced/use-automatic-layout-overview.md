@@ -21,19 +21,6 @@ manager: "wpickett"
 # Use Automatic Layout Overview
 This topic introduces guidelines for developers on how to write              [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications with localizable              [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]. In the past, localization of a              [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] was a time consuming process. Each language that the              [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] was adapted for required a pixel by pixel adjustment. Today with the right design and right coding standards,              [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] can be constructed so that localizers have less resizing and repositioning to do. The approach to writing applications that can be more easily resized and repositioned is called automatic layout, and can be achieved by using              [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application design.  
   
- This topic contains the following sections.  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
--   [Advantages of Using Automatic Layout](#advantages_of_autolayout)  
-  
--   [Automatic Layout and Controls](#autolayout_controls)  
-  
--   [Automatic Layout and Coding Standards](#autolayout_coding)  
-  
--   [Automatic Layout and Grids](#autolay_grids)  
-  
--   [Automatic Layout and Grids Using the IsSharedSizeScope Property](#autolay_grids_issharedsizescope)  
-  
 <a name="advantages_of_autolayout"></a>   
 ## Advantages of Using Automatic Layout  
  Because the                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation system is powerful and flexible, it provides the ability to layout elements in an application that can be adjusted to fit the requirements of different languages. The following list points out some of the advantages of automatic layout.  

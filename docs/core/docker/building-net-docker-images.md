@@ -47,7 +47,7 @@ In addition to the optimized scenarios of development, build and production, we 
 
 - `microsoft/dotnet:<version>-onbuild` : that is **microsoft/dotnet:1.0.0-preview2-onbuild**, contains [ONBUILD](https://docs.docker.com/engine/reference/builder/#/onbuild) triggers. The build will [COPY](https://docs.docker.com/engine/reference/builder/#/copy) your application, run `dotnet restore` and create an [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#/entrypoint) `dotnet run` instruction to run the application when the Docker image is run. While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it. 
 
-- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
+- `microsoft/dotnet:<version>-core-deps` : that is **microsoft/dotnet:1.0.0-core-deps**, if you wish to run self-contained applications use this image. It contains the operating system with all of the native dependencies needed by .NET Core. This image can also be used as a base image for your own custom CoreFX or CoreCLR builds. While the **onbuild** variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET runtime packaged with the application. This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.   
 
 Latest versions of each variant:
 
@@ -57,7 +57,7 @@ Latest versions of each variant:
 - `microsoft/dotnet:core-deps`
 
 Here is a list of the images after a `docker pull <imagename>` on a development machine to show the various sizes. Notice, the development/build variant, `microsoft/dotnet:1.0.0-preview2-sdk` is larger as it contains the SDK to develop and build your application. The production variant, `microsoft/dotnet:core` is smaller, as it only contains the .NET Core runtime. 
-The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
+The minimal image capable of being used on Linux, `core-deps`, is quite smaller, however your application will need to copy a private copy of the .NET runtime with it. Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers. 
 
 ```
 REPOSITORY          TAG                     IMAGE ID            SIZE

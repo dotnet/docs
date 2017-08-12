@@ -328,7 +328,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Windows.Duration op_Addition (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Duration operator + (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Duration op_Addition(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Addition(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -356,7 +356,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Equality(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -383,7 +383,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_GreaterThan(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -415,7 +415,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_GreaterThanOrEqual(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -447,7 +447,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Windows.Duration op_Implicit (TimeSpan timeSpan);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Windows.Duration (TimeSpan timeSpan);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Duration op_Implicit(valuetype System.TimeSpan timeSpan) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Implicit(System.TimeSpan)~System.Windows.Duration" />
       <MemberType>Method</MemberType>
@@ -469,7 +469,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Inequality(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -496,7 +496,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_LessThan(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -528,7 +528,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_LessThanOrEqual(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -560,7 +560,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Windows.Duration op_Subtraction (System.Windows.Duration t1, System.Windows.Duration t2);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Duration operator - (System.Windows.Duration t1, System.Windows.Duration t2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Duration op_Subtraction(valuetype System.Windows.Duration t1, valuetype System.Windows.Duration t2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_Subtraction(System.Windows.Duration,System.Windows.Duration)" />
       <MemberType>Method</MemberType>
@@ -605,7 +605,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus">
-      <MemberSignature Language="C#" Value="public static System.Windows.Duration op_UnaryPlus (System.Windows.Duration duration);" />
+      <MemberSignature Language="C#" Value="public static System.Windows.Duration operator + (System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Duration op_UnaryPlus(valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Duration.op_UnaryPlus(System.Windows.Duration)" />
       <MemberType>Method</MemberType>

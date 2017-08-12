@@ -111,7 +111,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Metadata.DocumentNameBlobHandle left, System.Reflection.Metadata.DocumentNameBlobHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Metadata.DocumentNameBlobHandle left, System.Reflection.Metadata.DocumentNameBlobHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.DocumentNameBlobHandle left, valuetype System.Reflection.Metadata.DocumentNameBlobHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentNameBlobHandle.op_Equality(System.Reflection.Metadata.DocumentNameBlobHandle,System.Reflection.Metadata.DocumentNameBlobHandle)" />
       <MemberType>Method</MemberType>
@@ -137,7 +137,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.DocumentNameBlobHandle op_Explicit (System.Reflection.Metadata.BlobHandle handle);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Reflection.Metadata.DocumentNameBlobHandle (System.Reflection.Metadata.BlobHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.DocumentNameBlobHandle op_Explicit(valuetype System.Reflection.Metadata.BlobHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentNameBlobHandle.op_Explicit(System.Reflection.Metadata.BlobHandle)~System.Reflection.Metadata.DocumentNameBlobHandle" />
       <MemberType>Method</MemberType>
@@ -161,7 +161,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobHandle op_Implicit (System.Reflection.Metadata.DocumentNameBlobHandle handle);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Reflection.Metadata.BlobHandle (System.Reflection.Metadata.DocumentNameBlobHandle handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Reflection.Metadata.BlobHandle op_Implicit(valuetype System.Reflection.Metadata.DocumentNameBlobHandle handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentNameBlobHandle.op_Implicit(System.Reflection.Metadata.DocumentNameBlobHandle)~System.Reflection.Metadata.BlobHandle" />
       <MemberType>Method</MemberType>
@@ -185,7 +185,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Metadata.DocumentNameBlobHandle left, System.Reflection.Metadata.DocumentNameBlobHandle right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Metadata.DocumentNameBlobHandle left, System.Reflection.Metadata.DocumentNameBlobHandle right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.DocumentNameBlobHandle left, valuetype System.Reflection.Metadata.DocumentNameBlobHandle right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.DocumentNameBlobHandle.op_Inequality(System.Reflection.Metadata.DocumentNameBlobHandle,System.Reflection.Metadata.DocumentNameBlobHandle)" />
       <MemberType>Method</MemberType>

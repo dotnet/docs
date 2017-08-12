@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptor"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptor" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +43,7 @@
  This is a protected constructor that can only be called from derived classes.  
   
  ]]></format>
-        </remarks>      
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Activator">
@@ -62,7 +62,8 @@
       <Docs>
         <summary>Gets the activator used to retrieve instances of the export.</summary>
         <value>The activator.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -87,7 +88,8 @@
         <param name="metadata">The metadata associated with the export.</param>
         <summary>Creates an export descriptor that has the specified activator and metadata.</summary>
         <returns>The created descriptor.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
@@ -106,7 +108,8 @@
       <Docs>
         <summary>Gets the metadata for the export.</summary>
         <value>A collection of metadata.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

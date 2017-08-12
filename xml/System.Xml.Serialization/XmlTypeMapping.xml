@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlTypeMapping> class is used to serialize an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1". Create an <xref:System.Xml.Serialization.XmlTypeMapping> by calling the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapReflectionImporter> class. Use the <xref:System.Xml.Serialization.XmlTypeMapping> to construct an instance of the <xref:System.Xml.Serialization.XmlSerializer> class. To control the serialization, use one of the attributes listed in [Attributes That Control Encoded SOAP Serialization](~/docs/framework/serialization/attributes-that-control-encoded-soap-serialization.md).  
+ The <xref:System.Xml.Serialization.XmlTypeMapping> class is used to serialize an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1". Create an <xref:System.Xml.Serialization.XmlTypeMapping> by calling the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapReflectionImporter> class. Use the <xref:System.Xml.Serialization.XmlTypeMapping> to construct an instance of the <xref:System.Xml.Serialization.XmlSerializer> class. To control the serialization, use one of the attributes listed in [Attributes That Control Encoded SOAP Serialization](~/docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
    
   

@@ -378,7 +378,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl left, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl left, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl left, valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Equality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)" />
       <MemberType>Method</MemberType>
@@ -403,7 +403,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl left, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl left, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl left, valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)" />
       <MemberType>Method</MemberType>

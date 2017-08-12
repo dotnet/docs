@@ -832,6 +832,14 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/serialization/marshal-by-value.md",
+            "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
+            "source_path": "docs/standard/serialization/persistent-storage.md",
+            "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
             "redirect_url": "/dotnet/csharp/tutorials/microservices"
         },
@@ -842,6 +850,11 @@
         {
             "source_path": "docs/tutorials/index.md",
             "redirect_url": "/dotnet/samples-and-tutorials/"
+        },        
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",
+            "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/covariance-contravariance/index",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/visual-basic/developing-apps/debugging.md",
@@ -893,6 +906,11 @@
         {        
             "source_path": "fsharp/tutorials/getting-started/getting-started-command-line.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
+            "redirect_document_id": true
+        },
+        {        
+            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
             "redirect_document_id": true
         }
     ]

@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Add Service Reference in a Portable Subset Project
-Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any core .NET platform.  
+Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET implementations (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET implementation.  
   
 ## Add Service Reference Details  
  When adding a service reference in a portable subset project the following restrictions are enforced:  

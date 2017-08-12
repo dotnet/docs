@@ -285,7 +285,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Drawing.PointF op_Addition (System.Drawing.PointF pt, System.Drawing.Size sz);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator + (System.Drawing.PointF pt, System.Drawing.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Addition(valuetype System.Drawing.PointF pt, valuetype System.Drawing.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
@@ -330,7 +330,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Drawing.PointF op_Addition (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator + (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Addition(valuetype System.Drawing.PointF pt, valuetype System.Drawing.SizeF sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Addition(System.Drawing.PointF,System.Drawing.SizeF)" />
       <MemberType>Method</MemberType>
@@ -378,7 +378,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.PointF left, System.Drawing.PointF right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.PointF left, System.Drawing.PointF right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.PointF left, valuetype System.Drawing.PointF right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Equality(System.Drawing.PointF,System.Drawing.PointF)" />
       <MemberType>Method</MemberType>
@@ -422,7 +422,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.PointF left, System.Drawing.PointF right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.PointF left, System.Drawing.PointF right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.PointF left, valuetype System.Drawing.PointF right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Inequality(System.Drawing.PointF,System.Drawing.PointF)" />
       <MemberType>Method</MemberType>
@@ -466,7 +466,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Drawing.PointF op_Subtraction (System.Drawing.PointF pt, System.Drawing.Size sz);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator - (System.Drawing.PointF pt, System.Drawing.Size sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Subtraction(valuetype System.Drawing.PointF pt, valuetype System.Drawing.Size sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.Size)" />
       <MemberType>Method</MemberType>
@@ -499,7 +499,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Drawing.PointF op_Subtraction (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
+      <MemberSignature Language="C#" Value="public static System.Drawing.PointF operator - (System.Drawing.PointF pt, System.Drawing.SizeF sz);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.PointF op_Subtraction(valuetype System.Drawing.PointF pt, valuetype System.Drawing.SizeF sz) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.PointF.op_Subtraction(System.Drawing.PointF,System.Drawing.SizeF)" />
       <MemberType>Method</MemberType>

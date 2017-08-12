@@ -1,7 +1,7 @@
 ---
 title: "Install the .NET Framework for developers"
 ms.custom: ""
-ms.date: "04/28/2017"
+ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -23,7 +23,7 @@ manager: "wpickett"
 
 # Install the .NET Framework for developers
 
-.NET is an integral part of many applications running on Windows and provides common functionality for those applications to run. For developers, the .NET Framework provides a comprehensive and consistent programming model for building applications that have visually stunning user experiences and seamless and secure communication.  
+.NET is an integral part of many apps running on Windows and provides common functionality for those apps to run. For developers, the .NET Framework provides a comprehensive and consistent programming model for building apps that have visually stunning user experiences and seamless and secure communication.  
 
 This article provides links for installing the .NET Framework 4.5, its point releases (4.5.1, 4.5.2), the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], its point releases (4.6.1, 4.6.2), and the .NET Framework 4.7 on your computer. If you're a developer, you can also use these links to download and redistribute the .NET Framework with your apps.
 

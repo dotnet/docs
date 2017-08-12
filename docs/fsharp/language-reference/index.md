@@ -14,7 +14,7 @@ ms.assetid: b1707be1-7b7c-4fdd-a717-d9c190bc5fb5
 
 # F# Language Reference
 
-This section is a reference to the F# language, a multi-paradigm programming language targeting the .NET platform. The F# language supports functional, object-oriented and imperative programming models.
+This section is a reference to the F# language, a multi-paradigm programming language targeting .NET. The F# language supports functional, object-oriented and imperative programming models.
 
 
 ## F# Tokens

@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.IO.Stream op_Implicit (System.Printing.IndexedProperties.PrintStreamProperty attributeRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.IO.Stream (System.Printing.IndexedProperties.PrintStreamProperty attributeRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.IO.Stream op_Implicit(class System.Printing.IndexedProperties.PrintStreamProperty attributeRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit(System.Printing.IndexedProperties.PrintStreamProperty)~System.IO.Stream" />
       <MemberType>Method</MemberType>
@@ -116,7 +116,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.IO.Stream op_Implicit (System.Printing.IndexedProperties.PrintStreamProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.IO.Stream (System.Printing.IndexedProperties.PrintStreamProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.IO.Stream op_Implicit(class System.Printing.IndexedProperties.PrintStreamProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit(System.Printing.IndexedProperties.PrintStreamProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.IO.Stream" />
       <MemberType>Method</MemberType>

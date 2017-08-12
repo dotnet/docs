@@ -4,7 +4,7 @@ description: Learn how to create a custom template for the dotnet new command in
 keywords: .NET, .NET Core, template, templating, tutorial, dotnet new
 author: guardrex
 ms.author: mairaw
-ms.date: 07/31/2017
+ms.date: 08/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -22,42 +22,47 @@ This tutorial shows you how to:
 
 If you prefer to proceed through the tutorial with a complete sample, download the [sample project template](https://github.com/dotnet/dotnet-template-samples/tree/master/16-nuget-package). The sample template is configured for NuGet distribution.
 
-If you wish to use the downloaded sample with file system distribution, move the contents of the *content* folder of the sample up one level into the *GarciaSoftware.ConsoleTemplate.CSharp* folder, delete the empty *content* folder, and delete the *nuspec* file.
+If you wish to use the downloaded sample with file system distribution, do the following:
+
+- Move the contents of the *content* folder of the sample up one level into the *GarciaSoftware.ConsoleTemplate.CSharp* folder.
+- Delete the empty *content* folder.
+- Delete the *nuspec* file.
 
 ## Prerequisites
 
-- Install the [.NET Core SDK](https://www.microsoft.com/net/core) version 2.0 or later.
-- Read the reference topic [Custom templates for dotnet new](~/docs/core/tools/custom-templates.md).
+- Install the [.NET Core 2.0 SDK](https://www.microsoft.com/net/core) or later versions.
+- Read the reference topic [Custom templates for dotnet new](../tools/custom-templates.md).
 
 ## Create a template from a project
 
-Use an existing project that you've confirmed compiles and runs or create a new console app project in a folder on your hard drive. This tutorial assumes that the name of the project folder is *GarciaSoftware.ConsoleTemplate.CSharp* stored at *Documents/Templates* in the user's profile. The tutorial project template name is in the format *\<Company Name>.\<Template Type>.\<Programming Language>*, but you're free to name your project and template anything you wish.
+Use an existing project that you've confirmed it compiles and runs, or create a new console app project in a folder on your hard drive. This tutorial assumes that the name of the project folder is *GarciaSoftware.ConsoleTemplate.CSharp* stored at *Documents/Templates* in the user's profile. The tutorial project template name is in the format *\<Company Name>.\<Template Type>.\<Programming Language>*, but you're free to name your project and template anything you wish.
 
 1. Add a folder to the root of the project named *.template.config*.
-1. Inside the *.template.config* folder, create a *template.json* file to configure your template. For more information and member definitions for the *template.json* file, see the [Custom templates for dotnet new](~/docs/core/tools/custom-templates.md#templatejson) topic and the [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template).
-   ```json
-   {
-     "$schema": "http://json.schemastore.org/template",
-     "author": "Catalina Garcia",
-     "classifications": [ "Common", "Console" ],
-     "identity": "GarciaSoftware.ConsoleTemplate.CSharp",
-     "name": "Garcia Software Console Application",
-     "shortName": "garciaconsole"
-   }
-   ```
+1. Inside the *.template.config* folder, create a *template.json* file to configure your template. For more information and member definitions for the *template.json* file, see the [Custom templates for dotnet new](../tools/custom-templates.md#templatejson) topic and the [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template).
 
-The template is finished. At this point, you have two options for template distribution. You should proceed with this tutorial along one path or the other:
+```json
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Catalina Garcia",
+    "classifications": [ "Common", "Console" ],
+    "identity": "GarciaSoftware.ConsoleTemplate.CSharp",
+    "name": "Garcia Software Console Application",
+    "shortName": "garciaconsole"
+}
+```
 
-1. You can [use NuGet distribution](#use-nuget-distribution), install the template from NuGet or from the local *nupkg* file, and use the installed template.
-2. You can [use file system distribution](#use-file-system-distribution).
+The template is finished. At this point, you have two options for template distribution. To continue this tutorial, choose one path or the other:
+
+1. [NuGet distribution](#use-nuget-distribution): install the template from NuGet or from the local *nupkg* file, and use the installed template.
+2. [File system distribution](#use-file-system-distribution).
 
 ## Use NuGet Distribution
 
 ### Pack the template into a NuGet package
 
 1. Create a folder for the NuGet package. For the tutorial, the folder name *GarciaSoftware.ConsoleTemplate.CSharp* is used, and the folder is created inside a *Documents/NuGetTemplates* folder in the user's profile. Create a folder named *content* inside of the new template folder to hold the project files.
-1. Copy the contents of your project folder, together with its *.template.config/template.json* file, into the *content* folder you just created.
-1. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package), which is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
+1. Copy the contents of your project folder, together with its *.template.config/template.json* file, into the *content* folder you created.
+1. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package). The nuspec file is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
    
    ![Directory structure showing the layout of the NuGet package](./media/create-custom-template/nugetdirectorylayout.png)
 
@@ -65,7 +70,7 @@ The template is finished. At this point, you have two options for template distr
 
    | Element            | Type   | Description |
    | ------------------ | ------ | ----------- |
-   | **\<authors>**     | string | A comma-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors. |
+   | **\<authors>**     | string | A comma-separated list of packages authors, matching the profile names on nuget.org. Authors are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors. |
    | **\<description>** | string | A long description of the package for UI display. |
    | **\<id>**          | string | The case-insensitive package identifier, which must be unique across nuget.org or whatever gallery the package will reside in. IDs may not contain spaces or characters that are not valid for a URL and generally follow .NET namespace rules. See [Choosing a unique package identifier and setting the version number](/nuget/create-packages/creating-a-package#choosing-a-unique-package-identifier-and-setting-the-version-number) for guidance. |
    | **\<packageType>** | string | Place this element inside a **\<packageTypes>** element among the **\<metadata>** elements. Set the `name` attribute of the **\<packageType>** element to `Template`. |
@@ -92,7 +97,7 @@ The template is finished. At this point, you have two options for template distr
    </package>
    ```
 
-1. [Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <PATH_TO_NUSPEC_FILE>` command. The following command assumes that the folder holding the NuGet assets is at *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp/*; but wherever you place the folder on your system, the `nuget pack` command accepts the path to the *nuspec* file:
+1. [Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <PATH_TO_NUSPEC_FILE>` command. The following command assumes that the folder that holds the NuGet assets is at *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp/*. But wherever you place the folder on your system, the `nuget pack` command accepts the path to the *nuspec* file:
 
    ```console
    nuget pack C:/Users/<USER>/Documents/NuGetTemplates/GarciaSoftware.ConsoleTemplate.CSharp/GarciaSoftware.ConsoleTemplate.CSharp.nuspec
@@ -100,11 +105,11 @@ The template is finished. At this point, you have two options for template distr
 
 ### Publishing the package to nuget.org
 
-To publish a NuGet package, follow the instructions in the [Create and publish a package](/nuget/quickstart/create-and-publish-a-package#publish-the-package) topic. However, we don't recommend that you publish the tutorial template to NuGet as it can never be deleted once published, only delisted. Now that you have the NuGet package in the form of a *nupkg* file, we suggest that you follow the instructions below to install the template directly from the local *nupkg* file.
+To publish a NuGet package, follow the instructions in the [Create and publish a package](/nuget/quickstart/create-and-publish-a-package#publish-the-package) topic. However, we recommend that you don't publish the tutorial template to NuGet as it can never be deleted once published, only delisted. Now that you have the NuGet package in the form of a *nupkg* file, we suggest that you follow the instructions below to install the template directly from the local *nupkg* file.
 
 ### Install the template from a NuGet package
 
-**Install the template from the local *nupkg* file**
+#### Install the template from the local *nupkg* file
 
 To install the template from the *nupkg* file that you produced, use the `dotnet new` command with the `-i|--install` option and provide the path to the *nupkg* file:
 
@@ -112,7 +117,7 @@ To install the template from the *nupkg* file that you produced, use the `dotnet
 dotnet new -i C:/Users/<USER>/GarciaSoftware.ConsoleTemplate.CSharp.1.0.0.nupkg
 ```
 
-**Install the template from a NuGet package stored at nuget.org**
+#### Install the template from a NuGet package stored at nuget.org
 
 If you wish to install a template from a NuGet package stored at nuget.org, use the `dotnet new` command with the `-i|--install` option and supply the name of the NuGet package:
 
@@ -121,21 +126,21 @@ dotnet new -i GarciaSoftware.ConsoleTemplate.CSharp
 ```
 
 > [!NOTE]
-> The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org, and we don't recommend that you publish and consume test templates from NuGet. If you run the command, no template is installed. However, you can install a template that hasn't been published to nuget.org by referencing the *nupkg* file directly on your local file system as shown in the previous section, *Install the template from the local nupkg file*.
+> The example is for demonstration purposes only. There isn't a `GarciaSoftware.ConsoleTemplate.CSharp` NuGet package at nuget.org, and we don't recommend that you publish and consume test templates from NuGet. If you run the command, no template is installed. However, you can install a template that hasn't been published to nuget.org by referencing the *nupkg* file directly on your local file system as shown in the previous section [Install the template from the local nupkg file](#install-the-template-from-the-local-nupkg-file).
 
-If you would like a live example of how to install a template from a package at nuget.org, you can use the [NUnit 3 template for dotnet-new](https://www.nuget.org/packages/NUnit3.DotNetNew.Template/), which is a template that sets up a project to use NUnit unit testing:
+If you'd like a live example of how to install a template from a package at nuget.org, you can use the [NUnit 3 template for dotnet-new](https://www.nuget.org/packages/NUnit3.DotNetNew.Template/). This template sets up a project to use NUnit unit testing. Use the following command to install it:
 
 ```console
 dotnet new -i NUnit3.DotNetNew.Template
 ```
 
-When you list the tempates with `dotnet new -l`, you see the *NUnit 3 Test Project* with a short name of *nunit* in the template list. You're ready to use the template in the next section.
+When you list the templates with `dotnet new -l`, you see the *NUnit 3 Test Project* with a short name of *nunit* in the template list. You're ready to use the template in the next section.
 
 ![Console window showing the NUnit template listed with other installed templates](./media/create-custom-template/nunit1.png)
 
 ### Create a project from the template
 
-After the template is installed from NuGet, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `-o|--output` option to specify a specific directory; see [`dotnet new` Options](~/docs/core/tools/dotnet-new.md#options) for more information). Supply the template's short name directly to the `dotnet new` command. To create a project from the NUnit template, run the following command:
+After the template is installed from NuGet, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `-o|--output` option to specify a specific directory). For more information, see [`dotnet new` Options](~/docs/core/tools/dotnet-new.md#options). Supply the template's short name directly to the `dotnet new` command. To create a project from the NUnit template, run the following command:
 
 ```console
 dotnet new nunit
@@ -182,7 +187,7 @@ dotnet new -i C:/Users/<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate
 
 ### Create a project from the template
 
-After the template is installed from the file system, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `-o|--output` option to specify a specific directory; see [`dotnet new` Options](~/docs/core/tools/dotnet-new.md#options) for more information). Supply the template's short name directly to the `dotnet new` command.
+After the template is installed from the file system, use the template by executing the `dotnet new <TEMPLATE>` command from the directory where you want to the template engine's output placed (unless you're using the `-o|--output` option to specify a specific directory). For more information, see [`dotnet new` Options](~/docs/core/tools/dotnet-new.md#options). Supply the template's short name directly to the `dotnet new` command.
 
 From a new project folder created at *C:/Users/\<USER>/Documents/Projects/MyConsoleApp*, create a project from the `garciaconsole` template:
 

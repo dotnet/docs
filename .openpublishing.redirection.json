@@ -177,11 +177,16 @@
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/csharp/getting-started/with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        
+        {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
@@ -225,7 +230,7 @@
         },
         {
             "source_path": "docs/core/tutorials/using-on-windows.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
             "source_path": "docs/csharp/csharp-6.md",
@@ -256,7 +261,11 @@
         },
         {
             "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/debugging-with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/debugging-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
         },
         {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
@@ -265,8 +274,14 @@
         },
         {
             "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/publishing-with-visual-studio"
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
         },
+        
+        {
+            "source_path": "docs/csharp/getting-started/publishing-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
+        },
+        
         {
             "source_path": "docs/csharp/getting-started/whats-new.md",
             "redirect_url": "/dotnet/csharp/whats-new/index"

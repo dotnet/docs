@@ -1,10 +1,10 @@
 ---
-title: Publishing your Hello World application with Visual Studio 2017
+title: Publish your Hello World application with Visual Studio 2017
 description: Publishing creates the set of files that are needed to run your application.
 keywords: .NET, .NET Core, console application, publishing, deployment
 author: BillWagner
 ms.author: wiwagn
-ms.date: 04/17/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -12,9 +12,9 @@ ms.devlang: csharp
 ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
 ---
 
-# Publishing your Hello World application with Visual Studio 2017
+# Publish your Hello World application with Visual Studio 2017
 
-In [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md), you built a Hello World console application. In [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application, and you can deploy the files by copying them to a target machine.
+In [Build a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md), you built a Hello World console application. In [Debug your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application, and you can deploy the files by copying them to a target machine.
 
 To publish and run your application: 
 
@@ -26,11 +26,10 @@ To publish and run your application:
 
    ![Visual Studio toolbar](media/publishing-with-visual-studio/publish1.png)
 
-1. In the **HelloWorld** publish window, the default publish output folder is supplied for you in the **Choose a folder** text box. Select the **Publish** button.
 
    ![Visual Studio toolbar](media/publishing-with-visual-studio/publishwindow.png)
 
-1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
+1. Open a console window. For example in the **Type here to search** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 
 1. Navigate to the published application in the `bin\release\PublishOutput` subdirectory of your application's project directory. As the following figure shows, the published output includes the following four files:
 

@@ -13,19 +13,19 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 
 # Prerequisites for .NET Core on windows
 
-This article shows the needed dependencies to develop .NET Core applications on Windows. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on Windows:
+This article shows the dependencies needed to develop .NET Core applications on Windows. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on Windows:
 
 * [Command line](tutorials/using-with-xplat-cli.md)
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-##.NET Core 2.x/1.x supported windows versions
+## .NET Core supported windows versions
 
-.NET Core 2.x/1.x is supported on the following versions of Windows:
+.NET Core is supported on the following versions of :
 
 * Windows 7 SP1
 * Windows 8.1
-* Windows 10, Version 1607+
+* Windows 10, Windows 10 Anniversary Update (version 1607) or later versions
 * Windows Server 2008 R2 SP1 (Full Server or Server Core)
 * Windows Server 2012 SP1 (Full Server or Server Core)
 * Windows Server 2012 R2 (Full Server or Server Core)
@@ -36,19 +36,20 @@ See [.NET Core 2.x - Supported OS Versions](https://github.com/dotnet/core/blob/
 
 See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems.
 
-##.NET Core 2.x/1.x dependencies
+## .NET Core dependencies
 
-.NET Core 2.x/1.x require the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed by the .NET Core 2.x/1.x installer.
+.NET Core requires the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed by the .NET Core installer.
 
 [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/en-us/download/details.aspx?id=52685) must be manually installed when:
-   * Installing .NET Core 2.x with the [installer script](./tools/dotnet-install-script.md).
-   * Deploying a self-contained .NET Core 2.x application.
+
+   * Installing .NET Core with the [installer script](./tools/dotnet-install-script.md).
+   * Deploying a self-contained .NET Core application.
 
 > [!NOTE]
 > <em>For Windows 7 and Windows Server 2008 machines only:</em><br>
 > Make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/help/2533623) installed through Windows Update.
 
-## Prerequisites with Visual Studio 2017 
+## Prerequisites with Visual Studio 2017
 
 You can use any editor to develop .NET Core applications using the .NET Core SDK.  [Visual Studio 2017](#visual-studio-2017) provides an integrated development environment for .NET Core apps on Windows.
 
@@ -64,8 +65,8 @@ After the **.NET Core cross-platform development** toolset is installed, Visual 
 
  2. Install the [.NET Core 2.x SDK](https://www.microsoft.com/net/download/core).
  3. Retarget existing or new .NET Core 1.x projects to .NET Core 2.x using the following instructions:
-   * On the **Project** menu, Choose **Properties**. 
-   * In the **Target framework** selection menu, set the value to **.NET Core 2.0**.
+    * On the **Project** menu, Choose **Properties**. 
+    * In the **Target framework** selection menu, set the value to **.NET Core 2.0**.
 
 ![Screenshot of Visual Studio 2017 Application Project Property with the ".NET Core 2.0" Target framework menu item selected](./media/windows-prerequisites/Targeting-dotnetCore2.png)
 
@@ -85,8 +86,11 @@ To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Stu
 >
 > For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 ---
+
 >[!TIP]
   > To verify your Visual Studio 2017 version:
 >
      > * On the **Help** menu, choose **About Microsoft Visual Studio**.
      > * In the **About Microsoft Visual Studio** dialog, verify the version number.
+>     * For .NET Core 2.x apps, Visual Studio 2017 version 15.3.0 or higher.
+>     * For .NET Core 1.x apps, Visual Studio 2017 RTM (version 15.0.26228.4) or higher.

@@ -17,13 +17,13 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with Visual Studio 2017
 
-- [Building a C# Hello World application](../../csharp/getting-started/with-visual-studio.md)
-- [Debugging your C# Hello World application](../../csharp/getting-started/debugging-with-visual-studio.md)
-- [Publishing your C# Hello World application](../../csharp/getting-started/publishing-with-visual-studio.md)
-- [Building a C# class library](../../core/tutorials/library-with-visual-studio.md)
-- [Building a class library with Visual Basic](../../core/tutorials/vb-library-with-visual-studio.md)
-- [Testing a class library](../../core/tutorials/testing-library-with-visual-studio.md)
-- [Consuming a class library](../../core/tutorials/consuming-library-with-visual-studio.md)
+- [Building a C# Hello World application](with-visual-studio.md)
+- [Debugging your C# Hello World application](debugging-with-visual-studio.md)
+- [Publishing your C# Hello World application](publishing-with-visual-studio.md)
+- [Building a C# class library](library-with-visual-studio.md)
+- [Building a class library with Visual Basic](vb-library-with-visual-studio.md)
+- [Testing a class library](testing-library-with-visual-studio.md)
+- [Consuming a class library](consuming-library-with-visual-studio.md)
 - [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
 - [NoSQL tutorial: Build a DocumentDB C# console application on .NET Core](/azure/documentdb/documentdb-dotnetcore-get-started)
 

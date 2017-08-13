@@ -18,11 +18,11 @@ This section provides short, simple tutorials that let you quickly build an appl
 
 The following topics are available:
 
-* [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md)
+* [Building a C# Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/with-visual-studio.md)
 
    Visual Studio 2017, the latest release of Visual Studio, lets you code, compile, run, debug, profile, and publish your applications from a integrated development environment for Windows.
 
-   The topic lets you create and run a simple Hello World application and then modify it to run a slightly more interactive Hello World application. Once you've finished building and running your application, you can also learn how to [debug it](debugging-with-visual-studio.md) and how to [publish it](publishing-with-visual-studio.md) so that it can be run on any platform supported by .NET Core.
+   The topic lets you create and run a simple Hello World application and then modify it to run a slightly more interactive Hello World application. Once you've finished building and running your application, you can also learn how to [debug it](../../core/tutorials/debugging-with-visual-studio.md) and how to [publish it](../../core/tutorials/publishing-with-visual-studio.md) so that it can be run on any platform supported by .NET Core.
 
 * [Building a class library with C# and .NET Core in Visual Studio 2017](../../core/tutorials/library-with-visual-studio.md)
 

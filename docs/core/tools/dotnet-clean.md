@@ -62,7 +62,7 @@ Directory in which the build outputs are placed. Specify the `-f|--framework <FR
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#selfcontained-deployments-scd) was created.
+Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd) was created.
 
 `-v|--verbosity <LEVEL>`
 

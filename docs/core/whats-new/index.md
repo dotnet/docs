@@ -4,7 +4,7 @@ description: Learn about the new features found in .NET Core.
 keywords: .NET, .NET Core
 author: rpetrusha
 ms.author: ronpet
-ms.date: 08/12/2017
+ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -48,7 +48,7 @@ You can also retarget .NET Standard libraries to .NET Standard 2.0 the same way:
  </PropertyGroup>
 ```
 
-For more information about migrating your project to .NET Core 2.0, see [Migrating from ASP.NET Core 1.x to ASP.NET Core 2.0](aspnet/core/migration/1x-to-2x/index).
+For more information about migrating your project to .NET Core 2.0, see [Migrating from ASP.NET Core 1.x to ASP.NET Core 2.0](/aspnet/core/migration/1x-to-2x/index).
 
 ## Language support
 

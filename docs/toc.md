@@ -55,9 +55,9 @@
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
 ## [Get started](core/get-started.md)
-## [Windows Prerequisites](core/windows-prerequisites.md)
-## [macOS Prerequisites](core/macos-prerequisites.md)
-## [Linux Prerequisites](core/linux-prerequisites.md)
+### [Windows Prerequisites](core/windows-prerequisites.md)
+### [macOS Prerequisites](core/macos-prerequisites.md)
+### [Linux Prerequisites](core/linux-prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)
 ### [Building a complete .NET Core solution on Windows, using Visual Studio 2017](core/tutorials/using-on-windows-full-solution.md)
 ### [Get Started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)

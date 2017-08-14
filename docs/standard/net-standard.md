@@ -4,7 +4,7 @@ description: Learn about .NET Standard, its versions and the .NET implementation
 keywords: .NET Standard, PCL, .NET
 author: mairaw
 ms.author: mairaw
-ms.date: 08/11/2017
+ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -19,7 +19,7 @@ The .NET Standard enables the following key scenarios:
 
 - Defines uniform set of BCL APIs for all .NET implementations to implement, independent of workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
-- Reduces and hopefully eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
+- Reduces or even eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
 
 The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET Core 1.0 implements .NET Standard 1.6.
 

@@ -7,8 +7,7 @@ ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core
 ---
-
-# Prerequisites for .NET Core on windows
+# Prerequisites for .NET Core on Windows
 
 This article shows the dependencies needed to develop .NET Core applications on Windows. The supported OS versions and dependencies that follow apply to the three ways of developing .NET Core apps on Windows:
 
@@ -27,7 +26,6 @@ This article shows the dependencies needed to develop .NET Core applications on 
 * Windows Server 2012 SP1 (Full Server or Server Core)
 * Windows Server 2012 R2 (Full Server or Server Core)
 * Windows Server 2016 (Full Server, Server Core, or Nano Server)
-
 
 See [.NET Core 2.x - Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems.
 

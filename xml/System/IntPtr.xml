@@ -465,7 +465,8 @@
         <param name="value">A 32-bit signed integer.</param>
         <summary>Converts the value of a 32-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -505,8 +506,9 @@
         <param name="value">A 64-bit signed integer.</param>
         <summary>Converts the value of a 64-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
+        <remarks>
+        </remarks>
         <exception cref="T:System.OverflowException">On a 32-bit platform, <paramref name="value" /> is too large to represent as an <see cref="T:System.IntPtr" />.</exception>
-        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -541,7 +543,6 @@
         <param name="value">The pointer or handle to convert.</param>
         <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a 32-bit signed integer.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <exception cref="T:System.OverflowException">On a 64-bit platform, the value of <paramref name="value" /> is too large to represent as a 32-bit signed integer.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -549,6 +550,7 @@
  An exception is only thrown if the value of `value` requires more bits than the current platform supports.
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">On a 64-bit platform, the value of <paramref name="value" /> is too large to represent as a 32-bit signed integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -583,7 +585,8 @@
         <param name="value">The pointer or handle to convert.</param>
         <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a 64-bit signed integer.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -625,7 +628,8 @@
   
  This API is not CLS-compliant.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -670,7 +674,8 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>

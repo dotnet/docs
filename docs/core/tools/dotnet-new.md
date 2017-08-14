@@ -22,7 +22,7 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 # [.NET Core 2.x](#tab/netcore2x)
 ```
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
-dotnet new <TEMPLATE> [-l|--list]
+dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
 # [.NET Core 1.x](#tab/netcore1x)
@@ -110,7 +110,7 @@ Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For i
 
 Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
 
-`-lang|--language {C#|F#}`
+`-lang|--language {C#|F#|VB}`
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
@@ -121,6 +121,10 @@ The name for the created output. If no name is specified, the name of the curren
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Location to place the generated output. The default is the current directory.
+
+`--type`
+
+Filters templates based on available types. Predefined values are "project", "item" or "other".
 
 `-u|--uninstall <PATH|NUGET_ID>`
 
@@ -156,23 +160,133 @@ Location to place the generated output. The default is the current directory.
 
 ## Template options
 
-Each project template may have additional options available. The core templates have the following options:
+Each project template may have additional options available. The core templates have the following additional options:
 
-**console, xunit, mstest, web, webapi**
+# [.NET Core 2.x](#tab/netcore2x)
 
-`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (Default: `netcoreapp1.0`)
+**console, angular, react, reactredux**
 
-**mvc**
-
-`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (`Default: netcoreapp1.0`)
-
-`-au|--auth` - The type of authentication to use. Values: `None` or `Individual` (Default: `None`)
-
-`-uld|--use-local-db` - Specifies whether or not to use LocalDB instead of SQLite. Values: `true` or `false` (Default: `false`)
+`--no-restore` - Skips automatic restore of the project during project creation.
 
 **classlib**
 
-`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0`, `netcoreapp1.1`, or `netstandard1.0` to `netstandard1.6` (Default: `netstandard1.4`)
+`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.0` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
+
+`--no-restore` - Skips automatic restore of the project during project creation.
+
+**mstest, xunit**
+
+`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack).
+
+`--no-restore` - Skips automatic restore of the project during project creation.
+
+**globaljson**
+
+`--sdk-version <VERSION_NUMBER>` - Specifies the version of the .NET Core SDK to use in the *global.json* file.
+
+**web**
+
+`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+
+`--no-restore` - Skips automatic restore of the project during project creation.
+
+**webapi**
+
+`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+
+- `None` - No authentication (Default).
+- `IndividualB2C` - Individual authentication with Azure AD B2C.
+- `SingleOrg` - Organizational authentication for a single tenant.
+- `Windows` - Windows authentication.
+
+`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+
+`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+
+`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+
+`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+
+`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+
+`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+
+`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+
+`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+
+`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+
+`--no-restore` - Skips automatic restore of the project during project creation.
+
+**mvc, razor**
+
+`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+
+- `None` - No authentication (Default).
+- `Individual` - Individual authentication.
+- `IndividualB2C` - Individual authentication with Azure AD B2C.
+- `SingleOrg` - Organizational authentication for a single tenant.
+- `MultiOrg` - Organizational authentication for multiple tenants.
+- `Windows` - Windows authentication.
+
+`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/` .
+
+`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+
+`-rp|--reset-password-policy-id <ID>` - The reset password policy ID for this project. Use with `IndividualB2C` authentication.
+
+`-ep|--edit-profile-policy-id <ID>` - The edit profile policy ID for this project. Use with `IndividualB2C` authentication.
+
+`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` or `MultiOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+
+`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `MultiOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+
+`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication.. The default value is `qualified.domain.name`.
+
+`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication.. The default value is `22222222-2222-2222-2222-222222222222`.
+
+`--callback-path <PATH>` - The request path within the application's base path of the redirect URI. Use with `SingleOrg` or `IndividualB2C` authentication.. The default value is `/signin-oidc`.
+
+`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+
+`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+
+`--use-browserlink` - Includes BrowserLink in the project.
+
+`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+
+`--no-restore` - Skips automatic restore of the project during project creation.
+
+**page**
+
+`-na|--namespace <NAMESPACE_NAME>`- Namespace for the generated code. The default value is `MyApp.Namespace`.
+
+`-np|--no-pagemodel` - Creates the page without a PageModel.
+
+**viewimports**
+
+`-na|--namespace <NAMESPACE_NAME>`- Namespace for the generated code. The default value is `MyApp.Namespace`.
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+**console, xunit, mstest, web, webapi**
+
+`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1`. The default value is `netcoreapp1.0`.
+
+**classlib**
+
+`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0`, `netcoreapp1.1`, or `netstandard1.0` to `netstandard1.6`. The default value is `netstandard1.4`.
+
+**mvc**
+
+`-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1`. The default value is `netcoreapp1.0`.
+
+`-au|--auth` - The type of authentication to use. Values: `None` or `Individual`. The default value is `None`.
+
+`-uld|--use-local-db` - Specifies whether or not to use LocalDB instead of SQLite. Values: `true` or `false`. The default value is `false`.
+
+---
 
 ## Examples
 

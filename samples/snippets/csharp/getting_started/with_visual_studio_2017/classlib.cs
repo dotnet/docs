@@ -1,5 +1,4 @@
-﻿// <Snippet1>
-using System;
+﻿using System;
 
 namespace UtilityLibraries
 {
@@ -15,4 +14,3 @@ namespace UtilityLibraries
         }
     }
 }
-// </Snippet1>

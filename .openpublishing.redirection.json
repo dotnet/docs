@@ -288,9 +288,14 @@
         },
         {
             "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
-            "redirect_url": "/dotnet/csharp/getting-started/with-visual-studio",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
             "redirect_document_id": true
         },
+        {        
+            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
+            "redirect_document_id": true
+        },        
         {
             "source_path": "docs/csharp/interactive.md",
             "redirect_url": "/dotnet/csharp/index"
@@ -913,11 +918,6 @@
         {        
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
-            "redirect_document_id": true
-        },
-        {        
-            "source_path": "docs/csharp/getting-started/with-visual-studio-code.md",
-            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code",
             "redirect_document_id": true
         }
     ]

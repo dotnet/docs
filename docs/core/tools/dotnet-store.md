@@ -1,15 +1,16 @@
 ---
 title: dotnet store command
 description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
-keywords: dotnet store, dotnet store, CLI, CLI command, .NET Core
 author: bleroy
 ms.author: mairaw
-ms.date: 08/12/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ---
 # dotnet store
+
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-2plus.md)]
 
 ## Name
 

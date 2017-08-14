@@ -73,7 +73,7 @@ Generates the symbols `nupkg`.
 
 `--no-build`
 
-Don't build the project before packing.
+Doesn't build the project before packing.
 
 `--no-dependencies`
 
@@ -81,7 +81,7 @@ Ignores project-to-project references and only restores the root project.
 
 `--no-restore`
 
-Doesn't perform an implicit restore during project creation.
+Doesn't perform an implicit restore when running the command.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -123,7 +123,7 @@ Generates the symbols `nupkg`.
 
 `--no-build`
 
-Don't build the project before packing.
+Doesn't build the project before packing.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 

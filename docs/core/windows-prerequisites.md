@@ -15,7 +15,7 @@ This article shows the dependencies needed to develop .NET Core applications on 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-## .NET Core supported windows versions
+## .NET Core supported Windows versions
 
 .NET Core is supported on the following versions of :
 

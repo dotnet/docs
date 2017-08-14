@@ -2,7 +2,7 @@
 title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
 author: JRAlexander
-ms.author: JRAlexander
+ms.author: johalex
 ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core

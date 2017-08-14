@@ -3,7 +3,7 @@ title: .NET Core versioning
 description:  Understand how .NET Core versioning works.
 author: bleroy
 ms.author: mairaw
-ms.date: 08/10/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -148,6 +148,10 @@ When there are multiple changes, the highest element affected by individual chan
 ### Preview versions
 
 Preview versions have a `-preview-[number]-([build]|"final")` appended to the version. For example, `2.0.0-preview-1-final`.
+
+### Servicing versions
+
+After a release goes out, the release branches generally stop producing daily builds and instead start producing servicing builds. Servicing versions have a `-servicing-[number]` appended to the version. For example, `2.0.1-servicing-006924`.
 
 ### LTS vs. current
 

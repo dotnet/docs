@@ -1870,7 +1870,6 @@
         <param name="value">The value to convert.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to an 8-bit unsigned integer.</summary>
         <returns>An 8-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1887,6 +1886,8 @@
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" /> or greater than <see cref="F:System.Byte.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1921,7 +1922,6 @@
         <param name="value">The value to convert.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a Unicode character.</summary>
         <returns>A Unicode character that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Char.MinValue" /> or greater than <see cref="F:System.Char.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1935,7 +1935,10 @@
  [!code-csharp[System.Decimal.ConvTo#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctochar.cs#6)]
  [!code-vb[System.Decimal.ConvTo#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctochar.vb#6)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.Char.MinValue" /> or greater than <see cref="F:System.Char.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -1986,7 +1989,8 @@
  [!code-csharp[System.Decimal.ConvTo#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctosgl_dbl.cs#5)]
  [!code-vb[System.Decimal.ConvTo#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctosgl_dbl.vb#5)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2021,7 +2025,6 @@
         <param name="value">The value to convert.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 16-bit signed integer.</summary>
         <returns>A 16-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2037,7 +2040,10 @@
  [!code-csharp[System.Decimal.ConvTo#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int16.cs#3)] 
  [!code-vb[System.Decimal.ConvTo#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int16.vb#3)]   
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" /> or greater than <see cref="F:System.Int16.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2072,7 +2078,6 @@
         <param name="value">The value to convert.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 32-bit signed integer.</summary>
         <returns>A 32-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2087,7 +2092,10 @@
  [!code-csharp[System.Decimal.ConvTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int32.cs#2)] 
  [!code-vb[System.Decimal.ConvTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int32.vb#2)]   
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2122,7 +2130,6 @@
         <param name="value">The value to convert.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Decimal" /> to a 64-bit signed integer.</summary>
         <returns>A 64-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2136,7 +2143,10 @@
  [!code-csharp[System.Decimal.ConvTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int64.cs#1)] 
  [!code-vb[System.Decimal.ConvTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int64.vb#1)]   
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" /> or greater than <see cref="F:System.Int64.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2178,7 +2188,6 @@
   
  This API is not CLS-compliant.</summary>
         <returns>An 8-bit signed integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2193,7 +2202,10 @@
  [!code-csharp[System.Decimal.Operators.Explicit#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cs/tosbyte.cs#1)]
  [!code-vb[System.Decimal.Operators.Explicit#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators.explicit/vb/tosbyte.vb#1)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" /> or greater than <see cref="F:System.SByte.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2244,7 +2256,8 @@
  [!code-csharp[System.Decimal.Operators.Explicit#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.decimal.operators.explicit/cs/tosingle1.cs#2)]
  [!code-vb[System.Decimal.Operators.Explicit#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.decimal.operators.explicit/vb/tosingle1.vb#2)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2286,7 +2299,6 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A 16-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" /> or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2301,7 +2313,10 @@
  [!code-csharp[System.Decimal.ConvTo#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int16.cs#3)]
  [!code-vb[System.Decimal.ConvTo#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int16.vb#3)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" /> or greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2343,7 +2358,6 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A 32-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" /> or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2358,7 +2372,10 @@
  [!code-csharp[System.Decimal.ConvTo#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int32.cs#2)]
  [!code-vb[System.Decimal.ConvTo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int32.vb#2)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" /> or greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2400,7 +2417,6 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A 64-bit unsigned integer that represents the converted <see cref="T:System.Decimal" />.</returns>
-        <exception cref="T:System.OverflowException"><paramref name="value" /> is negative or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2415,7 +2431,10 @@
  [!code-csharp[System.Decimal.ConvTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Decimal.ConvTo/CS/ctou_int64.cs#1)]
  [!code-vb[System.Decimal.ConvTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Decimal.ConvTo/VB/ctou_int64.vb#1)]
 
- ]]></format></remarks>
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OverflowException">
+          <paramref name="value" /> is negative or greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">

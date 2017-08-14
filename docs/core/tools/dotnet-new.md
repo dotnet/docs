@@ -4,7 +4,7 @@ description: The dotnet new command creates new .NET Core projects based on the 
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: mairaw
 ms.author: mairaw
-ms.date: 08/11/2017
+ms.date: 08/13/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -12,6 +12,8 @@ ms.devlang: dotnet
 ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ---
 # dotnet new
+
+[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
 
 ## Name
 
@@ -166,19 +168,19 @@ Each project template may have additional options available. The core templates 
 
 **console, angular, react, reactredux**
 
-`--no-restore` - Skips automatic restore of the project during project creation.
+`--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **classlib**
 
 `-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.0` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
 
-`--no-restore` - Skips automatic restore of the project during project creation.
+`--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **mstest, xunit**
 
-`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack).
+`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
-`--no-restore` - Skips automatic restore of the project during project creation.
+`--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **globaljson**
 
@@ -188,7 +190,7 @@ Each project template may have additional options available. The core templates 
 
 `--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
 
-`--no-restore` - Skips automatic restore of the project during project creation.
+`--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **webapi**
 
@@ -217,7 +219,7 @@ Each project template may have additional options available. The core templates 
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--no-restore` - Skips automatic restore of the project during project creation.
+`--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **mvc, razor**
 
@@ -256,7 +258,7 @@ Each project template may have additional options available. The core templates 
 
 `-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--no-restore` - Skips automatic restore of the project during project creation.
+`--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **page**
 

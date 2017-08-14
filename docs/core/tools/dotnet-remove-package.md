@@ -1,7 +1,6 @@
 ---
-title: dotnet-remove package command - .NET Core CLI
-description: The dotnet-remove package command provides a convenient option to remove NuGet package reference to a project.
-keywords: dotnet-remove, CLI, CLI command, .NET Core
+title: dotnet remove package command - .NET Core CLI
+description: The dotnet remove package command provides a convenient option to remove NuGet package reference to a project.
 author: spboyer
 ms.author: mairaw
 ms.date: 03/15/2017
@@ -11,12 +10,11 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 2fcc8d37-16b3-4581-8038-832160e72d36
 ---
-
-# dotnet-remove package
+# dotnet remove package
 
 ## Name
 
-`dotnet-remove package` - Removes package reference from a project file.
+`dotnet remove package` - Removes package reference from a project file.
 
 ## Synopsis
 

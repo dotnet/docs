@@ -12,7 +12,7 @@ ms.assetid: "18cf7a4b-29f0-4b14-85b8-80af754aabd8"
 ---
 # Ref returns and ref locals
 
-Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. The caller can then choose to treat the returned object returned as if it were returned by value or by reference. A value returned by reference that the caller handles as a reference rather than a value is a ref local).
+Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. The caller can then choose to treat the returned object returned as if it were returned by value or by reference. A value returned by reference that the caller handles as a reference rather than a value is a ref local.
 
 ## What is a reference return value?
 

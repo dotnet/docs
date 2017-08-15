@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # WCF and ASP.NET Web API
-WCF is Microsoft’s unified programming model for building service-oriented applications. It enables developers to build secure, reliable, transacted solutions that integrate across platforms and interoperate with existing investments. ([ASP.NET Web API](http://www.asp.net/web-api)is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is an ideal platform for building RESTful applications on the .NET Framework. This topic presents some guidance to help you decide which technology will best meet your needs.  
+WCF is Microsoft’s unified programming model for building service-oriented applications. It enables developers to build secure, reliable, transacted solutions that integrate across platforms and interoperate with existing investments. [ASP.NET Web API](http://www.asp.net/web-api) is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is an ideal platform for building RESTful applications on the .NET Framework. This topic presents some guidance to help you decide which technology will best meet your needs.  
   
 ## Choosing which technology to use  
  The following table describes the major features of each technology.  
@@ -26,7 +26,7 @@ WCF is Microsoft’s unified programming model for building service-oriented app
 |Enables building services that support multiple transport protocols (HTTP, TCP, UDP, and custom transports) and allows switching between them.|HTTP only. First-class programming model for HTTP. More suitable for access from various browsers, mobile devices etc enabling wide reach.|  
 |Enables building services that support multiple encodings (Text, MTOM, and Binary) of the same message type and allows switching between them.|Enables building Web APIs that support wide variety of media types including XML, JSON etc.|  
 |Supports building services with WS-* standards like Reliable Messaging, Transactions, Message Security.|Uses basic protocol and formats such as HTTP, WebSockets, SSL, JQuery, JSON, and XML. There is no support for higher level protocols such as Reliable Messaging or Transactions.|  
-|Supports Request-Reply, One Way, and Duplex message exchange patterns.|HTTP is request/response but additional patterns can be supported through [SignalR](https://github.com/SignalR/SignalR)and WebSockets integration.|  
+|Supports Request-Reply, One Way, and Duplex message exchange patterns.|HTTP is request/response but additional patterns can be supported through [SignalR](https://github.com/SignalR/SignalR) and WebSockets integration.|  
 |WCF SOAP services can be described in WSDL allowing automated tools to generate client proxies even for services with complex schemas.|There is a variety of ways to describe a Web API ranging from auto-generated HTML help page describing snippets to structured metadata for OData integrated APIs.|  
 |Ships with the .NET framework.|Ships with .NET framework but is open-source and is also available out-of-band as independent download.|  
   

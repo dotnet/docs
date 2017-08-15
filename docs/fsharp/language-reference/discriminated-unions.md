@@ -81,22 +81,23 @@ let getShapeHeight shape =
 
 Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute to the union type definition.
 
-### Unwrapping DU's
+### Unwrapping Discriminated Unions
 
-Single case unions like this can be easily unwrapped without explicit matching.
-
-```fsharp
-type ShaderProgram = | ShaderProgram of id:int
-```
-
-Where unwrapping follows this pattern,
+In F# Discriminated Unions are often used in Domain-Modelling for wrapping a single type.
+To ease usage of such single-case discriminated unions, F# provides a nice handy syntax to unwrap them fast.
 ```fsharp
 let ([UnionCaseName] [values]) = [UnionValue]
 ```
 
-the results for our example would be:
+The following example demonstrates unwrapping a single-case discriminated union:
+
 ```fsharp
-let (ShaderProgram id) = shaderProgram
+type ShaderProgram = | ShaderProgram of id:int
+
+let someMethodUsingShaderProgram shaderProgram =
+    let (ShaderProgram id) = shaderProgram
+    // Use the unwrapped value
+    ..
 ```
 
 ## Struct Discriminated Unions

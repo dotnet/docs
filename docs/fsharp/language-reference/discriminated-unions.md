@@ -83,13 +83,12 @@ Normally, the case identifiers can be used without qualifying them with the name
 
 ### Unwrapping Discriminated Unions
 
-In F# Discriminated Unions are often used in Domain-Modelling for wrapping a single type.
-To ease usage of such single-case discriminated unions, F# provides a nice handy syntax to unwrap them fast.
+In F# Discriminated Unions are often used in Domain-Modelling for wrapping a single type. It's easy to extract the underlying value via Pattern Matching as well. You don't need to use a match espression for a single case:
 ```fsharp
 let ([UnionCaseName] [values]) = [UnionValue]
 ```
 
-The following example demonstrates unwrapping a single-case discriminated union:
+The following example demonstrates this:
 
 ```fsharp
 type ShaderProgram = | ShaderProgram of id:int

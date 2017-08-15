@@ -55,6 +55,11 @@
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
 ## [Get started](core/get-started.md)
+### [Get started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)
+### [Build a C# Hello World app with .NET Core in Visual Studio 2017](core/tutorials/with-visual-studio.md)
+### [Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017](core/tutorials/w)
+### [Build a class library with C# and .NET Core in Visual Studio 2017](core/tutorials/library-with-visual-studio.md)
+### [Build a class library with Visual Basic and .NET Core in Visual Studio 2017](core/tutorials/vb-library-with-visual-studio.md)
 ## [What's new in .NET Core](core/whats-new/index.md)
 ## [Windows Prerequisites](core/windows-prerequisites.md)
 ## [macOS Prerequisites](core/macos-prerequisites.md)
@@ -390,6 +395,8 @@
 # [Visual Basic Guide](visual-basic/index.md)
 ## [Get Started](visual-basic/getting-started/index.md)
 ### [What's New for Visual Basic](visual-basic/getting-started/whats-new.md)
+### [Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017](core/tutorials/w)
+### [Build a class library with Visual Basic and .NET Core in Visual Studio 2017](core/tutorials/vb-library-with-visual-studio.md)
 ### [Visual Basic Breaking Changes in Visual Studio](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [Additional Resources for Visual Basic Programmers](visual-basic/getting-started/additional-resources.md)
 

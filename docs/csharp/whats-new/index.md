@@ -14,6 +14,12 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 
 # What's new in C# #
 
+This page provides a roadmap of new features in each major release of
+the C# language. The links below provide detailed information on the
+major features added in each release.
+
+> [!IMPORTANT]
+> The C# language relies on types and methods in a *standard library* for some of the features. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from @System.Exception. Similarly, every `catch` is checked to ensure that the type being caught is derived from @System.Exception. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency. 
 
 * [C# 7](csharp-7.md):
     - This page describes the latest features in the C# language. This covers C# 7, currently available in [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/).

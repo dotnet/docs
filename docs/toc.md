@@ -189,6 +189,7 @@
 ## [What's new in C#](csharp/whats-new/index.md) 
 ### [What's new in C# 7](csharp/whats-new/csharp-7.md)
 ### [What's new in C# 6](csharp/whats-new/csharp-6.md)
+### [Relationships between language and framework](csharp/whats-new/relationships-between-language-and-library.md)
 <!-- End What's New -->
 <!--## [🔧 C# Interactive](csharp/interactive/)-->
 <!-- Do this section later, once master redirects are in place -->

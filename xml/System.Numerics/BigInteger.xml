@@ -2781,15 +2781,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Double" /> value to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Double.PositiveInfinity" />.
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2809,6 +2800,15 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Double.NaN" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Double.PositiveInfinity" />.
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Double.NegativeInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2840,11 +2840,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a <see cref="T:System.Byte" />.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to an unsigned byte value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2861,6 +2856,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Byte.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Byte.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -2892,11 +2892,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a <see cref="T:System.Decimal" />.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a <see cref="T:System.Decimal" /> value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Decimal.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2913,6 +2908,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Decimal.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3003,11 +3003,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a 16-bit signed integer.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 16-bit signed integer value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3024,6 +3019,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int16.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int16.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3060,11 +3060,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a 32-bit signed integer.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 32-bit signed integer value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3081,6 +3076,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int32.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3117,11 +3117,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a 64-bit signed integer.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Numerics.BigInteger" /> object to a 64-bit signed integer value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3138,6 +3133,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.Int64.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.Int64.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3176,11 +3176,6 @@ value Mod 2 = 0
   
  This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int16" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3197,6 +3192,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.SByte.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.SByte.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3289,11 +3289,6 @@ value Mod 2 = 0
   
  This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int32" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3310,6 +3305,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt16.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt16.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3348,11 +3348,6 @@ value Mod 2 = 0
   
  This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Int64" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3369,6 +3364,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt32.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3407,11 +3407,6 @@ value Mod 2 = 0
   
  This API is not CLS-compliant. The compliant alternative is <see cref="T:System.Double" />.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3428,6 +3423,11 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is less than <see cref="F:System.UInt64.MinValue" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is greater than <see cref="F:System.UInt64.MaxValue" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -3459,15 +3459,6 @@ value Mod 2 = 0
         <param name="value">The value to convert to a <see cref="T:System.Numerics.BigInteger" />.</param>
         <summary>Defines an explicit conversion of a <see cref="T:System.Single" /> value to a <see cref="T:System.Numerics.BigInteger" /> value.</summary>
         <returns>An object that contains the value of the <paramref name="value" /> parameter.</returns>
-        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Single.NaN" />.  
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Single.PositiveInfinity" />.
-  
- -or-  
-  
- The value of <paramref name="value" /> is <see cref="F:System.Single.NegativeInfinity" />.</exception>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3487,6 +3478,15 @@ value Mod 2 = 0
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.OverflowException">The value of <paramref name="value" /> is <see cref="F:System.Single.NaN" />.  
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Single.PositiveInfinity" />.
+  
+ -or-  
+  
+ The value of <paramref name="value" /> is <see cref="F:System.Single.NegativeInfinity" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">

@@ -39,7 +39,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If available, a custom resolver is used.  If one is unavailable, the PNRP peer resolver is used. A peer resolver is considered "available" if the <xref:%2A> System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address?qualifyHint=False&autoUpgrade=True and <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding%2A> properties are set on it.  
+ If available, a custom resolver is used.  If one is unavailable, the PNRP peer resolver is used. A peer resolver is considered "available" if the <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Address%2A> and <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings.Binding%2A> properties are set on it.  
   
  ]]></format>
         </remarks>

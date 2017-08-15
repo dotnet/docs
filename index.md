@@ -26,7 +26,7 @@ description: Learn how to use .NET to create a variety of applications on any pl
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-1.1">
+                <a href="/dotnet/api/?view=netcore-2.0">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

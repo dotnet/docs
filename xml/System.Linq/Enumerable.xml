@@ -1875,7 +1875,7 @@ From i As Integer In objects
 ## Remarks  
  Enumeration is terminated as soon as a matching element is found.  
   
- If c`omparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare elements to the specified value.  
+ If `comparer` is `null`, the default equality comparer, <xref:System.Collections.Generic.EqualityComparer%601.Default%2A>, is used to compare elements to the specified value.  
   
    
   

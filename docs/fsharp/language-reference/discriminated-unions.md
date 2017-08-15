@@ -83,7 +83,7 @@ Normally, the case identifiers can be used without qualifying them with the name
 
 ### Unwrapping Discriminated Unions
 
-In F# Discriminated Unions are often used in domain-modelling for wrapping a single type. It's easy to extract the underlying value via pattern matching as well. You don't need to use a match expression for a single case:
+In F# Discriminated Unions are often used in domain-modeling for wrapping a single type. It's easy to extract the underlying value via pattern matching as well. You don't need to use a match expression for a single case:
 ```fsharp
 let ([UnionCaseName] [values]) = [UnionValue]
 ```

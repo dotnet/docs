@@ -2,9 +2,9 @@
 title: Get started with .NET Core
 description: Find resources to learn how to build .NET Core applications on Windows, Linux and macOS.
 keywords: .NET, .NET Core
-author: mairaw
-ms.author: mairaw
-ms.date: 03/22/2017
+author: johalex
+ms.author: johalex
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -27,18 +27,18 @@ You can get started developing .NET Core apps by following these step-by-step tu
 * [Get Started with .NET Core and Visual Studio 2017](https://channel9.msdn.com/Blogs/dotnet/Get-Started-NET-Core-Visual-Studio-2017) - This [Channel9](https://channel9.msdn.com) video shows you how to install and use [Visual Studio 2017](https://www.visualstudio.com/), Microsoft's fully-featured IDE, to create your first cross-platform console application in .NET Core.
 * [Getting started with .NET Core using the command-line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
 
-See the [Prerequisites for Windows development](windows-prerequisites.md) topic for a list of the supported Windows versions. 
+See the [Prerequisites for Windows development](windows-prerequisites.md) topic for a list of the supported Windows versions.
 
 ## Linux
 
 Install .NET Core on your distribution/version:
 
 * [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#linuxredhat)
-* [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#linuxubuntu)
-* [Debian 8.2](https://www.microsoft.com/net/core#linuxdebian)
-* [Fedora 23](https://www.microsoft.com/net/core#linuxfedora)
+* [Ubuntu 14.04, 16.04, 16.10, 17.04 & Linux Mint 17, 18](https://www.microsoft.com/net/core#linuxubuntu)
+* [Debian 8.2+, 8.7+, 9](https://www.microsoft.com/net/core#linuxdebian)
+* [Fedora 24, 25, 26](https://www.microsoft.com/net/core#linuxfedora)
 * [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#linuxcentos)
-* [openSUSE 13.2](https://www.microsoft.com/net/core#linuxopensuse)
+* [SUSE Enterprise Linux (SLES) 12 SP2, openSUSE 42.1, 42.2](https://www.microsoft.com/net/core#linuxopensuse)
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
@@ -58,3 +58,5 @@ You can get started developing .NET Core apps by following these step-by-step tu
 * [Getting started with .NET Core using the command-line](tutorials/using-with-xplat-cli.md) - Use any code editor with the [.NET Core cross-platform command-line interface (CLI)](tools/index.md).
 * [Getting started with .NET Core on macOS using Visual Studio for Mac](tutorials/using-on-mac-vs.md) - This tutorial shows you how to build a simple .NET Core console application using Visual Studio for Mac.
 * [Building a complete .NET Core solution on macOS using Visual Studio for Mac](tutorials/using-on-mac-vs-full-solution.md) - This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
+
+See the [Prerequisites for macOS development](macos-prerequisites.md) topic for a list of the supported OS X / macOS versions.

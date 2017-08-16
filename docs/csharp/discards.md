@@ -41,7 +41,7 @@ The `Deconstruct` method of a class, structure, or interface also allows you to 
 
 [!code-csharp[Class-discard](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/class-discard1.cs)]
 
-For more information on deconstructing user-defined types with discards, see [Deconstructing tuples and other types](deconstruct.md#deconstructing-a-user-defined type-with-discards).
+For more information on deconstructing user-defined types with discards, see [Deconstructing tuples and other types](deconstruct.md#deconstructing-a-user-defined-type-with-discards).
 
 ## Pattern matching with `switch` and `is`
 

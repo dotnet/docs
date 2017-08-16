@@ -38,7 +38,7 @@ There are some restrictions on the value that a method can return as a reference
  
 - The return value cannot be a constant, an enumeration member, or a property of a `class` or `struct`. Attempting to return these generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
-In addition, because an asynchronous method may return before it has finished execution and its return value is known, reference return values are not allowed on `async` methods.
+In addition, because an asynchronous method may return before it has finished execution, while its return value is still unknown, reference return values are not allowed on async methods.
  
 ## Defining a ref return value
 

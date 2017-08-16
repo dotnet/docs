@@ -395,8 +395,6 @@
 # [Visual Basic Guide](visual-basic/index.md)
 ## [Get Started](visual-basic/getting-started/index.md)
 ### [What's New for Visual Basic](visual-basic/getting-started/whats-new.md)
-### [Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017](core/tutorials/w)
-### [Build a class library with Visual Basic and .NET Core in Visual Studio 2017](core/tutorials/vb-library-with-visual-studio.md)
 ### [Visual Basic Breaking Changes in Visual Studio](visual-basic/getting-started/breaking-changes-in-visual-studio.md)
 ### [Additional Resources for Visual Basic Programmers](visual-basic/getting-started/additional-resources.md)
 

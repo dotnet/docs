@@ -25,15 +25,15 @@ This article shows the dependencies needed to develop .NET Core applications on 
 .NET Core 2.x is supported on the following Linux distributions/versions:
 
 > [!NOTE]
-> Red Hat will be providing a distribution of .NET Core 2.0 very soon. For more information, see [the Microsoft .NET download center](https://www.microsoft.com/net/core#linuxredhat).
+> Red Hat will provide a distribution of .NET Core 2.0 soon.
 
  * CentOS 7 x64
  * Oracle Linux 7 x64
- * Fedora 25, 26 x64
- * Debian 9, 8.7+ x64 
- * Ubuntu 17.04, 16.04, 14.04  x64
- * Linux Mint 18, 17 x64
- * openSUSE 42.2+ x64
+ * Fedora 25, Fedora 26 x64
+ * Debian 9, Debian 8.7 or later versions x64 
+ * Ubuntu 17.04, Ubuntu 16.04, Ubuntu 14.04  x64
+ * Linux Mint 18, Linux Mint 17 x64
+ * openSUSE 42.2 or later versions x64
  * SUSE Enterprise Linux (SLES) 12 SP2+ x64
 
 See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
@@ -42,13 +42,15 @@ See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 .NET Core 1.x is supported on the following Linux distributions/versions:
 
-* Red Hat Enterprise Linux / CentOS / Oracle Linux 7 x64
+* Red Hat Enterprise Linux 7 x64
+* CentOS 7 x64
+* Oracle Linux 7 x64
 * Fedora 24 x64
-* Debian 8.2+ x64
-* Ubuntu / Linux Mint 14.04, 16.04, 16.10*, 17 x64
-* openSUSE 42.1 (1.1) x64
-> [!NOTE]
-> Ubuntu / Linux 16.10 is supported by the latest patch release of .NET Core 1.1
+* Debian 8.2 or later versions x64
+* Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10* x64
+* Linux Mint 17 x64
+* openSUSE 42.1 (.NET Core 1.1) x64
+    *Ubuntu / Linux 16.10 is supported by the latest patch release of .NET Core 1.1
 
 See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
 
@@ -105,28 +107,33 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 ## Install .NET Core 1.x dependencies for Red Hat Enterprise Linux (RHEL) 7 Server
 
+To install **.NET Core 1.x** dependencies on RHEL Server:
+
+1. Enable the Red Hat .NET channel, available under your RHEL 7 Server subscription.
+
 > [!Warning]
 > Before you start, remove any **previous preview** versions of .NET Core from your system.
 
-### Verify and Enable the .NET channel for RHEL 7 Server
-
-To install .NET Core 1.x dependencies on RHEL Server:
-
-1. Enable the Red Hat .NET channel, available under your RHEL 7 Server subscription. 
     * For Red Hat Enterprise 7 Server, use:
+
          ```bash
         subscription-manager repos --enable=rhel-7-server-dotnet-rpms
         ```
+
     * For Red Hat Enterprise 7 Workstation, use:
+
          ```bash
         subscription-manager repos --enable=rhel-7-workstation-dotnet-rpms
         ```
+
     * For Red Hat Enterprise 7 HPC Compute Node, use:
+
          ```bash
         subscription-manager repos --enable=rhel-7-hpc-node-dotnet-rpms
         ```
 
 2. Install the scl tool.
+
     ```bash
     yum install scl-utils
     ```
@@ -143,14 +150,14 @@ To install .NET Core 1.x dependencies on RHEL Server:
 
 For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Core 1.1 Getting Started Guide](https://access.redhat.com/documentation/en/net-core/1.1/paged/getting-started-guide/) at Red Hat.
 
-## Install .NET Core for Ubuntu 14.04, 16.04, 16.10 & Linux Mint 17, 18 (64 bit)
+## Install .NET Core for Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10 & Linux Mint 17, Linux Mint 18 (64 bit)
 
 ### Add the dotnet apt-get feed
 
-> [!Warning]
-> Before you start, remove any previous versions of .NET Core from your system.
-
 1. Set up the desired version host package feed.
+
+> [!Warning]
+> Before you start, remove any **previous preview** versions of .NET Core from your system.
 
    **Ubuntu 14.04 / Linux Mint 17**
 
@@ -180,7 +187,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-After host package feed setup, install .NET Core 2.0 on Ubuntu or Linux Mint:
+Install .NET Core 2.0 on Ubuntu or Linux Mint:
 
 ```bash
 sudo apt-get install dotnet-sdk-2.0.0
@@ -188,7 +195,8 @@ sudo apt-get install dotnet-sdk-2.0.0
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-After host package feed setup, install .NET Core 1.x on Ubuntu or Linux Mint:
+Install .NET Core 1.x on Ubuntu or Linux Mint:
+
 ```bash
 sudo apt-get install dotnet-dev-1.0.4
 ```
@@ -201,15 +209,15 @@ sudo apt-get install dotnet-dev-1.0.4
          dotnet --help
      ```
 
-## Install .NET Core for Debian 8 or 9 (64 bit).
+ ## Install .NET Core for Debian 8 or Debian 9 (64 bit).
 
 
-To install .NET Core on Debian 8 or 9 (64 bit):
+To install .NET Core on Debian 8 or Debian 9 (64 bit):
+
+1. Get the prerequisites.
 
 > [!Warning]
-> Before you start, remove any previous versions of .NET Core from your system.
-
-1. Get the prerequisites. 
+> Before you start, remove any **previous preview** versions of .NET Core from your system.
 
     ```bash
     sudo apt-get install curl libunwind8 gettext
@@ -217,13 +225,13 @@ To install .NET Core on Debian 8 or 9 (64 bit):
 
 2. Download the .NET Core SDK binaries (tarball).
 
-# [.NET Core 2.x](#tab/netcore2x)   
+# [.NET Core 2.x](#tab/netcore2x)
 
 ```bash
      curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 ```
 
-# [.NET Core 1.x](#tab/netcore1x)   
+# [.NET Core 1.x](#tab/netcore1x)
 
 ```bash
      curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848826
@@ -249,17 +257,15 @@ To install .NET Core on Debian 8 or 9 (64 bit):
      dotnet --help
      ```
 
-## Install .NET Core for Fedora 24, 25, or 26 (64 bit)
+## Install .NET Core for Fedora 24, Fedora 25, or Fedora 26 (64 bit)
+
+To Install .NET Core for Fedora 26, Fedora 25 (.NET Core 2.x) or Fedora 24 (.NET Core 1.x):
+
+1. Get the prerequisites.
 
 > [!Warning]
 > Before you start, remove any **previous preview** versions of .NET Core from your system.
 
-To Install .NET Core for Fedora 26,25(.NET Core 2.x) or 24 (.NET Core 1.x): 
-
-> [!Warning]
-> Before you start, remove any **previous preview** versions of .NET Core from your system.
-
-1. Get the prerequisites. 
     ```bash
     sudo dnf install libunwind libicu
     ```
@@ -268,7 +274,7 @@ To Install .NET Core for Fedora 26,25(.NET Core 2.x) or 24 (.NET Core 1.x):
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-**Fedora 26 or 25**
+**Fedora 26 or Fedora 25**
 
 ```bash
 curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
@@ -306,10 +312,10 @@ curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848833
 
 To Install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit):
 
+1. Get the prerequisites.
+
 > [!Warning]
 > Before you start, remove any **previous preview** versions of .NET Core from your system.
-
-1. Get the prerequisites.
 
     ```bash
     sudo dnf install libunwind libicu
@@ -353,10 +359,10 @@ curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848821
 
 To Install .NET Core for SUSE Linux Enterprise Server (SLES) 12 SP2 (64 bit) and openSUSE 42.2 on NET Core 2.x, or openSUSE 42.1(64 bit) on .NET Core 1.x:
 
+1. Get the prerequisites.
+
 > [!Warning]
 > Before you start, remove any **previous preview** versions of .NET Core from your system.
-
-1. Get the prerequisites.
 
     ```bash
     sudo zypper install libunwind libicu

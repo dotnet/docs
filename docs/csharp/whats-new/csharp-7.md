@@ -210,7 +210,7 @@ Discards are supported in the following scenarios:
 
 * When calling methods with [out](..\language-reference\keywords\out.md) parameters.
 
-* In a pattern matching operation with the [is](..\language-reference\keywords\is.md) and [switch](language-reference\keywords\switch.md) statements.
+* In a pattern matching operation with the [is](..\language-reference\keywords\is.md) and [switch](../language-reference/keywords/switch.md) statements.
 
 * As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 

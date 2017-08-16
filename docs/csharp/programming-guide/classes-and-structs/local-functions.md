@@ -48,7 +48,7 @@ Unlike a method definition, a local function definition cannot include the follo
 
 - The member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
  
-- The [static](..\..\language-reference\keywords\static.md) keyword. Including the `static` keyword generates compiler error CS0106, "The modifier 'static' is not valid for this item."
+- The [static](../../language-reference/keywords/static.md) keyword. Including the `static` keyword generates compiler error CS0106, "The modifier 'static' is not valid for this item."
 
 In addition, attributes can't be applied to the local function or to its parameters and type parameters. 
  

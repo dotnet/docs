@@ -112,7 +112,7 @@ Prints out the version of the .NET Core SDK in use.
 
 ### General
 
-# [.NET Core 2.x](#tab/netcore1x)
+# [.NET Core 2.x](#tab/netcore2x)
 
 | Command                             | Function                                                            |
 | ----------------------------------- | ------------------------------------------------------------------- |

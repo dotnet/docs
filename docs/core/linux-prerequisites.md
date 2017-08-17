@@ -56,7 +56,7 @@ See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 ---
 
-## Linux Distribution Dependencies
+## Linux distribution dependencies
 
 ### Ubuntu
 
@@ -87,7 +87,7 @@ CentOS distributions require the following libraries installed:
 
 For more information about the dependencies, see [Self contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
-## Installing .NET Core Prerequisites With the Native Installers
+## Installing .NET Core prerequisites with the native installers
 
 .NET Core native installers are available for supported Linux distributions/ versions. The native installers require admin (sudo) access to the server. The advantage of using a native installer is that the all of the .NET Core native dependencies are installed. Native installers also install the .NET Core SDK system-wide.
 
@@ -96,7 +96,7 @@ On Linux, there are two installer package choices:
 * Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS.
 * Using the packages themselves, DEB or RPM.
 
-### Scripting Installs With the .NET Core Installer Script
+### Scripting Installs with the .NET Core installer script
 
 The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from the [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain). 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
@@ -35,23 +35,29 @@ A cross-platform, high-performance, open source implementation of ASP.NET built 
 
 See [ASP.NET Core](/aspnet/#pivot=core).
 
+## assembly
+
+A *.dll* file that contains a collection of APIs that can be called by apps or other assemblies.
+
+A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.  Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
+
 ## CLR
 
-Common language runtime.
+Common Language Runtime.
 
 The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
-.NET Core common language runtime.
+.NET Core Common Language Runtime.
 
 This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 
 ## CoreFX
 
-.NET Core framework.
+.NET Core Base Class Library (BCL)
 
-Also known as the .NET Core Base Class Library (BCL). A set of libraries that comprise the System.* (and to a limited extent  Microsoft.*) namespaces. The BCL is a general purpose, lower-level frarmework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
+A set of libraries that comprise the System.* (and to a limited extent  Microsoft.*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
 
 ## CoreRT
 
@@ -71,7 +77,7 @@ The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its
 
 ## framework
 
-In general, a comprehensive library that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks.
+In general, a comprehensive collection of APIs that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks. See also [library](#library).
 
 The word "framework" has a more specific technical meaning in the following terms:
 * [.NET Framework](#net-framework)
@@ -117,9 +123,9 @@ Examples of .NET implementations:
 
 ## library
 
- A collection of APIs that can be called by apps or other libraries.
+A collection of APIs that can be called by apps or other libraries. A .NET library is composed of one or more [assemblies](#assembly).
 
-A .NET library is a collection of types. A library includes interfaces, classes, structures, enumerations, and delegates.
+The words library and [framework](#framework) are often used synonymously.
 
 ## metapackage
 
@@ -193,9 +199,9 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 ## package
 
-For a package-based target framework, a NuGet package that contains an assembly of the same name.
+A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The package is a *.zip* file wih  a *.nupkg* extension that may contain assets (such as *.dll* files and *.xml* files) for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

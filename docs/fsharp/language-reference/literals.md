@@ -52,16 +52,16 @@ As of F# 3.1, you can use the `+` sign to combine string literals. You can also 
 
 ```fsharp
 [<Literal>]
-let literal1 = "a" + "b"
+let Literal1 = "a" + "b"
 
 [<Literal>]
-let fileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let FileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let literal2 = 1 ||| 64
+let Literal2 = 1 ||| 64
 
 [<Literal>]
-let literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
+let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
 
 The use of other bitwise operators isn't allowed.
@@ -77,8 +77,8 @@ In pattern matching expressions, identifiers that begin with lowercase character
 Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
 
 ```fsharp
-let numbers = (0x9F, 0o77, 0b1010)
-// Result: numbers : int * int * int = (159, 63, 10)
+let Numbers = (0x9F, 0o77, 0b1010)
+// Result: Numbers : int * int * int = (159, 63, 10)
 ```
 
 ## Underscores in Numeric Literals
@@ -86,11 +86,11 @@ let numbers = (0x9F, 0o77, 0b1010)
 Starting with F# 4.1, you can separate digits with the underscore character (`_`).
 
 ```fsharp
-let deadBeef = 0xDEAD_BEEF
+let DeadBeef = 0xDEAD_BEEF
 
-let deadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
+let DeadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
-let ssn = 123_456_7890
+let ExampleSSN = 123_456_7890
 ```
 
 ## See Also

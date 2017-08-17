@@ -12,7 +12,7 @@ ms.assetid: "18cf7a4b-29f0-4b14-85b8-80af754aabd8"
 ---
 # Ref returns and ref locals
 
-Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. The caller can then choose to treat the returned object returned as if it were returned by value or by reference. A value returned by reference that the caller handles as a reference rather than a value is a ref local).
+Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. The caller can then choose to treat the returned object returned as if it were returned by value or by reference. A value returned by reference that the caller handles as a reference rather than a value is a ref local.
 
 ## What is a reference return value?
 
@@ -38,7 +38,7 @@ There are some restrictions on the value that a method can return as a reference
  
 - The return value cannot be a constant, an enumeration member, or a property of a `class` or `struct`. Attempting to return these generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
-In addition, because an asynchronous method may return before it has finished execution and its return value is known, reference return values are not allowed on `async` methods.
+In addition, because an asynchronous method may return before it has finished execution, while its return value is still unknown, reference return values are not allowed on async methods.
  
 ## Defining a ref return value
 

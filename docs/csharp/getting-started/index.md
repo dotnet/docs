@@ -1,7 +1,7 @@
 ---
 
 title: Get Started - C# Guide
-description: Find short, simple tutorials that let you quickly learn introductory C# concepts and how to write .NET Core applications.
+description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
 keywords: C#, Get Started, Acquisition, Install
 author: rpetrusha
 ms.author: ronpet

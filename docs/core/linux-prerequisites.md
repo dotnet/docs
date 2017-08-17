@@ -4,7 +4,7 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
 author: johalex
 ms.author: johalex
-ms.date: 08/14/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -183,7 +183,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
     sudo apt-get update
     ```
 
-2. Install .NET Core.
+2. Install .NET Core. 
 
 # [.NET Core 2.x](#tab/netcore2x)
 

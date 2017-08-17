@@ -210,13 +210,13 @@ The following example shows the source code for the `Publication` class, as well
 
 - Two publication-related properties
 
-  `Title` is a read-only <xref:System.String> property whose value is supplied by calling the `Publication` constructor, which stores the value in a private field named `pubTitle`.
+  `Title` is a read-only <xref:System.String> property whose value is supplied by calling the `Publication` constructor.
 
   `Pages` is a read-write <xref:System.Int32> property that indicates how many total pages the publication has. The value is stored in a private field named `totalPages`. It must be a positive number or an <xref:System.ArgumentOutOfRangeException> is thrown.
 
 - Publisher-related members
 
-  Two read-only properties, `Publisher` and `Type`, return the value of the private `pubName` and `pubType` fields. The values are originally supplied by the call to the `Publication` class constructor.
+  Two read-only properties, `Publisher` and `Type`. The values are originally supplied by the call to the `Publication` class constructor.
 
 - Publishing-related members
 
@@ -224,7 +224,7 @@ The following example shows the source code for the `Publication` class, as well
 
 - Copyright-related members
 
-  The `Copyright` method takes the name of the copyright holder and the year of the copyright as arguments and assigns them to the private `copyrName` and `copyrDate` fields. The values can be retrieved from the `CopyrightName` and `CopyrightDate` properties.
+  The `Copyright` method takes the name of the copyright holder and the year of the copyright as arguments and assigns them to the `CopyrightName` and `CopyrightDate` properties.
 
 - An override of the `ToString` method
 

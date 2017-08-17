@@ -1,7 +1,7 @@
 ---
 title: .NET architectural components
 description: Describes .NET architectural components such as the .NET Standard, .NET implementations, .NET runtimes, and tooling.
-keywords: .NET, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
+keywords: .NET, .NET Standard, .NET Core, .NET Framework, Mono, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp
 ms.author: mairaw
 ms.date: 08/10/2017
@@ -14,7 +14,7 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 
 # .NET architectural components
 
-A .NET app is developed for and runs in one or more *implementations of .NET*.  Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
+A .NET app is developed for and runs in one or more *implementations of .NET*.  Implementations of .NET include the .NET Framework, .NET Core, and Mono. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
 
 ## .NET Standard
 
@@ -49,7 +49,13 @@ To learn more about the .NET Framework, see the [.NET Framework Guide](../framew
 
 ### Mono
 
-Mono is the .NET implementation used by Xamarin apps. It implements the .NET Standard, so code that targets the .NET Standard can run on Xamarin apps. It contains additional APIs for iOS, Android, Xamarin.Forms, and Xamarin.Mac. It's optimized for building mobile applications on iOS and Android.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on a small footprint.
+
+It supports all of the currently published .NET Standard versions.
+
+Historically, Mono implemented the larger API of the .NET Framework and emulated some of the most popular capabilities on Unix. It is sometimes used to run .NET applications that rely on those capabilities on Unix.
+
+Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
 
 To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
 
@@ -66,6 +72,7 @@ A runtime is the execution environment for a managed program. The OS is part of 
  - Common Language Runtime (CLR) for the .NET Framework
  - Core Common Language Runtime (CoreCLR) for .NET Core
  - .NET Native for Universal Windows Platform 
+ - The Mono runtime for Xamarin.iOS, Xamarin.Android, Xamarin.Mac, and the Mono desktop framework
 
 ## .NET tooling and common infrastructure
 

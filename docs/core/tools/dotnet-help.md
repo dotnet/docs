@@ -3,7 +3,7 @@ title: dotnet help command - .NET Core CLI
 description: The dotnet help command shows more detailed documentation online for the specified command.
 author: mairaw
 ms.author: mairaw
-ms.date: 08/14/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -18,7 +18,7 @@ ms.technology: dotnet-cli
 
 ## Synopsis
 
-`dotnet list <COMMAND_NAME> [-h|--help]`
+`dotnet help <COMMAND_NAME> [-h|--help]`
 
 ## Description
 
@@ -38,10 +38,6 @@ Prints out a short help for the command.
 
 ## Examples
 
-List the project references for the specified project:
+Opens the documentation page for the [dotnet new](dotnet-new.md) command:
 
-`dotnet list app/app.csproj reference`
-
-List the project references for the project in the current directory:
-
-`dotnet list reference`
+`dotnet help new`

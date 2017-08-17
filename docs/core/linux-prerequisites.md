@@ -48,9 +48,9 @@ See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 * Fedora 24 x64
 * Debian 8.2 or later versions x64
 * Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10* x64
+ * Ubuntu 16.10 is supported by the latest patch release of .NET Core 1.1
 * Linux Mint 17 x64
 * openSUSE 42.1 (.NET Core 1.1) x64
-    *Ubuntu / Linux 16.10 is supported by the latest patch release of .NET Core 1.1
 
 See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
 

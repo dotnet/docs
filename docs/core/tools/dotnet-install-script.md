@@ -63,8 +63,8 @@ The default value is `LTS`. For more information on .NET support channels, see t
 Represents a specific build version. The possible values are:
 
 - `latest` - Latest build on the channel (used with the `-Channel` option)
-- `coherent` - Latest coherent build on the channel; uses the latest stable package combination (used with the `-Channel` option)
-- Three-part version in X.Y.Z format representing a specific build version (for example, a specific build, such as `2.0.0-preview2-006120`)
+- `coherent` - Latest coherent build on the channel; uses the latest stable package combination (used with Branch name `-Channel` options)
+- Three-part version in X.Y.Z format representing a specific build version; supercedes the `-Channel` option (for example, a specific build, such as `2.0.0-preview2-006120`)
 
 If omitted, `-Version` defaults to `latest`.
 
@@ -125,6 +125,16 @@ Windows:
 macOS/Linux:
 
 `./dotnet-install.sh --channel 2.0 --install-dir ~/cli`
+
+Install the 1.1.0 version of the shared runtime
+
+Windows:
+
+`./dotnet-install.ps1 -SharedRuntime -Version 1.1.0`
+
+macOS/Linux:
+
+`./dotnet-install.sh --shared-runtime --version 1.1.0`
 
 ## See also
 

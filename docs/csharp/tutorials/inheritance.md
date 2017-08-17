@@ -220,7 +220,7 @@ The following example shows the source code for the `Publication` class, as well
 
 - Publishing-related members
 
-  Two methods, `Publish` and `GetPublicationDate`, set and return the publication date. The `Publish` method sets a private  `published` flag to `true` when it is called and assigns the date passed to it as an argument to the private `datePublished` field. The `GetPublicationDate` method returns the string "NYP" if the `published` flag is `false`, and the value of the `datePublished` field if it is `true`.
+  Two methods, `Publish` and `GetPublicationDate`, set and return the publication date. The `Publish` method sets a private  `published` flag to `true` when it is called and assigns the date passed to it as an argument to the private `datePublished` field. The `GetPublicationDate` method returns the string "NYP" if the `published` flag is `false`, and the value of the `datePublished` field if it is `title`.
 
 - Copyright-related members
 

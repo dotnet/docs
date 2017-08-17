@@ -35,11 +35,11 @@ public abstract class Publication
 
    public string CopyrightName { get; private set; }
    
-   public int CopyrightDate
-   { get; private set; }
+   public int CopyrightDate { get; private set; }
 
    public int Pages
-   { get { return totalPages; }
+   {
+     get { return totalPages; }
      set 
      {
          if (value <= 0)

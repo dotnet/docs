@@ -14,13 +14,13 @@ ms.assetid: 2e38e9d9-8284-46ee-a15f-199adc4f26f4
 
 # .NET architectural components
 
-A .NET app is developed for and runs in one or more *implementations of .NET*.  Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. There is an API specification common to all implementations of .NET that is called the .NET Standard. This article gives a brief introduction to each of these concepts.
+A .NET app is developed for and runs in one or more *implementations of .NET*.  Implementations of .NET include the .NET Framework, .NET Core, and Mono for Xamarin. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
 
 ## .NET Standard
 
-The .NET Standard is a set of APIs that are implemented by the Base Class Library of a .NET implementation. More formally, it's a specification of .NET APIs that make up a uniform set of contracts that you compile your code against. These contracts are implemented in each .NET implementation. This enables portability across different .NET implementations, making it so that your code can effectively run everywhere.
+The .NET Standard is a set of APIs that are implemented by the Base Class Library of a .NET implementation. More formally, it's a specification of .NET APIs that make up a uniform set of contracts that you compile your code against. These contracts are implemented in each .NET implementation. This enables portability across different .NET implementations, effectively allowing your code to run everywhere.
 
-The .NET Standard is also a target framework. If your code targets a version of the .NET Standard, it can run on any .NET implementation which supports that version of .NET Standard.
+The .NET Standard is also a target framework. If your code targets a version of the .NET Standard, it can run on any .NET implementation which supports that version of the .NET Standard.
 
 To learn more about the .NET Standard and how to target it, see the [.NET Standard](net-standard.md) topic.
 
@@ -57,7 +57,7 @@ To learn more about Mono, see the [Mono documentation](http://www.mono-project.c
 
 A runtime is the execution environment for a managed program. The OS is part of the runtime environment but is not part of the .NET runtime. Here are some examples of .NET runtimes:
  
- - Common Language Runtime (CLR) for .NET Framework
+ - Common Language Runtime (CLR) for the .NET Framework
  - Core Common Language Runtime (CoreCLR) for .NET Core
  - .NET Native for Universal Windows Platform 
 

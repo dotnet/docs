@@ -1,6 +1,6 @@
 ---
 title: "&lt;supportedRuntime&gt; Element"
-ms.date: "03/30/2017"
+ms.date: "08/18/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"

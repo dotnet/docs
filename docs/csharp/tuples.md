@@ -88,7 +88,7 @@ However, when you initialize a tuple, you can use new language features
 that give better names to each field. Doing so creates a *named tuple*.
 Named tuples still have elements named `Item1`, `Item2`, `Item3` and so on.
 But they also have synonyms for any of those elements that you have named.
-You create a named tuple by specifying the names for each field. One way
+You create a named tuple by specifying the names for each element. One way
 is to specify the names as part of the tuple initialization:
 
 [!code-csharp[NamedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#02_NamedTuple "Named tuple")]
@@ -102,15 +102,15 @@ the compiled output. The compiled Microsoft Intermediate Language (MSIL)
 does not include the names you've given these elements.
 
 Beginning with C# 7.1, the field names for a tuple may be provided from the
-variables used to initialize the tuple. This is referred to as **[tuple projection initializers](#tuple-projection-initializers)**. The code below creates a tuple named
+variables used to initialize the tuple. This is referred to as **[tuple projection initializers](#tuple-projection-initializers)**. The following code creates a tuple named
 `accumulation` with elements `count` (an integer), and `sum` (a double).
 
 [!code-csharp[ProjectedTuple](../../samples/snippets/csharp/tuples/tuples/program.cs#ProjectedTupleNames "Named tuple")]
 
 The compiler must communicate those names you created for tuples that
 are returned from public methods or properties. In those cases, the compiler
-adds a `TupleElementNames` attribute on the method. This attribute contains
-a `TransformNames` list property that contains the names given to each of
+adds a @System.Runtime.CompilerServices.TupleElementNames attribute on the method. This attribute contains
+a @System.Runtime.CompilerServices.TupleElementNames.TransformNames list property that contains the names given to each of
 the elements in the Tuple.
 
 > [!NOTE]
@@ -144,7 +144,7 @@ There are two conditions where candidate field names are not projected onto the 
 1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString` or `Rest`.
 1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
 
-The reason is to avoid ambiguity. These names would cause an ambiguity
+These conditions avoid ambiguity. These names would cause an ambiguity
 if they were used as the field names for a field in a tuple. Neither of these
 conditions cause compile time errors. Instead, the elements without projected names
 do not have semantic names projected for them.  The following examples

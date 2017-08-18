@@ -1,7 +1,7 @@
 ---
 
 title: Get Started - C# Guide
-description: Get Started with C#
+description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
 keywords: C#, Get Started, Acquisition, Install
 author: rpetrusha
 ms.author: ronpet
@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
-ms.assetid: b77c7263-7cbf-4729-9626-8fbc3f5f14d9
 ---
 # Get started with C# #
 
@@ -28,7 +27,7 @@ The following topics are available:
 
    A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](../../core/tutorials/testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](../../core/tutorials/consuming-library-with-visual-studio.md).
 
-- [Get started with C# and Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)
+* [Get started with C# and Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)
 
    Visual Studio Code is a free code editor optimized for building and debugging modern web and cloud applications. It supports IntelliSense and is available for Linux, macOS, and Windows.
 

@@ -1,6 +1,6 @@
 ---
 title: "&lt;supportedRuntime&gt; Element"
-ms.date: "08/18/2017"
+ms.date: "08/19/2017"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-clr"
@@ -70,7 +70,7 @@ The `runtime` attribute specifies the Common Language Runtime (CLR) version that
   
 <a name="sku"></a>   
 ## "sku id" values  
-The `sku` attribute indicates the version of the .NET Framework that the app targets and requires to run on, using a target framework moniker (TFM). The following table lists valid values that are supported by the `sku` attribute, starting with the .NET Framework 4.
+The `sku` attribute uses a target framework moniker (TFM) to indicate the version of the .NET Framework that the app targets and requires to run. The following table lists valid values that are supported by the `sku` attribute, starting with the .NET Framework 4.
   
 |.NET Framework version|`sku` attribute|  
 |----------------------------|---------------------|  

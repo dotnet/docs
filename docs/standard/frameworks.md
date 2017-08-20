@@ -16,7 +16,7 @@ ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 
 When you target a framework in an app or library, you're specifying the set of APIs that you'd like to make available to the app or library. You specify the target framework in your project file using Target Framework Monikers (TFMs).
 
-An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
+An app or library can target a version of [.NET Standard](~/docs/standard/net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 2.0 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
 
 An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Xamarin.iOS (for example, `Xamarin.iOS10`) gets access to Xamarin-provided iOS API wrappers for iOS 10, or an app that targets the Universal Windows Platform (UWP, `uap10.0`) has access to APIs that compile for devices that run Windows 10.
 
@@ -30,8 +30,8 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target Framework      | Latest Version | Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
 | :-------------------: | :------------: | :----------------------------: | :-------------------: | :---------: |
-| .NET Standard         | 1.6.1          | netstandard1.6                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
-| .NET Core Application | 1.1.2          | netcoreapp1.1                  | 1.6                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
+| .NET Standard         | 2.0.0          | netstandard2.0                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
+| .NET Core Application | 2.0.0          | netcoreapp2.0                  | 2.0                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
 | .NET Framework        | 4.7            | net47                          | 1.5                   | N/A |
 
 ## Supported target framework versions
@@ -40,8 +40,8 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6 |
-| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1 |
+| .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0 |
+| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
 | .NET Micro Framework       | netmf |
@@ -51,14 +51,14 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 ## How to specify target frameworks
 
-Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 1.1:
+Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 2.0:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
 </Project>

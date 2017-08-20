@@ -135,7 +135,26 @@ of this new syntax. You can learn more in the topic on default value expressions
 ## Inferred tuple element names
 
 This feature is a small enhancement to the tuples feature introduced in
-C# 7.0. 
+C# 7.0. Many times that you initialize a tuple, the variable used for the
+right side of the assignment is the same as the name you'd like for the
+tuple element:
+
+```csharp
+int count = 5;
+string label = "Colors used in the map";
+var pair = (count: count, label: label);
+```
+
+The names of tuple elements can be inferred from the variables used to initialize
+the tuple:
+
+```csharp
+int count = 5;
+string label = "Colors used in the map";
+var pair = (count, label); // element names are "count" and "label"
+```
+
+You can learn more about the details for this feature in the [Tuples](../tuples.md)) topic.
 
 ## Reference assembly generation
 

@@ -141,11 +141,7 @@ If you use ClickOnce, InstallAware, InstallShield, or WiX to deploy your app, yo
 
 <a name="installaware"></a> 
 ### InstallAware deployment
-InstallAware has built a track record of being the first to support [the latest technology runtimes from Microsoft](https://www.installaware.com/press-room.htm), with [Partial Web Deployment](https://www.installaware.com/web-deployment-partial-web-deployment.htm) and [Advanced 64-bit Compression](https://www.installaware.com/web-deployment-superior-compression.htm), often reducing runtime payloads to less than half of their already-compressed sizes.
-
-InstallAware integrates with [Visual Studio](https://www.installaware.com/visual-studio-installer-2015.htm) and [Team Foundation Server](https://www.installaware.com/team-foundation-server.htm), building [MSI Windows Installer](https://www.installaware.com/msi-installer.htm), [EXE Native Code](https://www.installaware.com/hybrid-installation-technology.htm), [App-V Application Virtualization](https://www.installaware.com/appv-builder.htm), and [APPX Desktop Bridge](https://www.installaware.com/appx-builder.htm) apps, all from a single click on the Visual Studio toolbar (and from the same source).
-
-In addition to [one-click inclusion of any version of the Microsoft .NET Framework](https://www.installaware.com/one-click-pre-requisite-installer.htm) in your setups, the InstallAware IDE features [fully automated, multiple/simultaneous virtual machine testing with customizable unit tests](https://www.installaware.com/virtual-machines.htm), and visual [InstallTailor MST Transform Creation](https://www.installaware.com/installtailor.htm) for any MSI file.
+InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EXE), and App-V (Application Virtualization) packages from a single source. Easily [include any version of the .NET Framework](https://www.installaware.com/one-click-pre-requisite-installer.htm) in your setup, optionally customizing the installation by [editing the default scripts](https://www.installaware.com/msicode.htm) (for example, InstallAware pre-installs certificates on Windows 7, without which the .NET 4.7 setup fails). For more information on InstallAware, see the [InstallAware for Windows Installer](https://www.installaware.com/) website.
 
 ### InstallShield deployment
  In Visual Studio, to choose InstallShield deployment and add a dependency on the .NET Framework:

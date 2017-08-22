@@ -33,7 +33,13 @@ translation.priority.mt:
 # Get started with Visual Basic
 This section of the documentation helps you get started with Visual Basic application development.  
   
-## In this section  
+## Get started with Visual Basic and .NET Core
+
+[Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/vb-with-visual-studio.md)
+
+[Build a class library with Visual Basic and .NET Core in Visual Studio 2017](../../core/tutorials/vb-library-with-visual-studio.md)  
+
+## Additional information
 
 [What's new for Visual Basic](whats-new.md)   
 Lists new features in each of the versions of Visual Basic .NET.

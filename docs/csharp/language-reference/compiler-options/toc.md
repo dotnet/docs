@@ -27,7 +27,7 @@
 ### [-link](link-compiler-option.md)
 ### [-linkresource](linkresource-compiler-option.md)
 ### [-main](main-compiler-option.md)
-### [-moduleassemblyname (C# Compiler Option)](moduleassemblyname-compiler-option.md)
+### [-moduleassemblyname](moduleassemblyname-compiler-option.md)
 ### [-noconfig](noconfig-compiler-option.md)
 ### [-nologo](nologo-compiler-option.md)
 ### [-nostdlib](nostdlib-compiler-option.md)

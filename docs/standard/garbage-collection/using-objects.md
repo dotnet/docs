@@ -26,7 +26,7 @@ The common language runtime's garbage collector reclaims the memory used by mana
 * With the C# `using` statement or the Visual Basic `Using` statement.  
   
 * By implementing a `try/finally` block.  
-  
+
 ## The using statement
 
 The `using` statement in C# and the `Using` statement in Visual Basic simplify the code that you must write to create and clean up an object. The `using` statement obtains one or more resources, executes the statements that you specify, and automatically disposes of the object. However, the `using` statement is useful only for objects that are used within the scope of the method in which they are constructed.  
@@ -62,6 +62,6 @@ You can follow this basic pattern if you choose to implement or must implement a
   
 ## See also
 
-[Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)
-[using Statement](~/docs/csharp/language-reference/keywords/using-statement.md)   
-[Using Statement](~/docs/visual-basic/language-reference/statements/using-statement.md)
+[Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)   
+[using Statement (C# Reference)](~/docs/csharp/language-reference/keywords/using-statement.md)   
+[Using Statement (Visual Basic)](~/docs/visual-basic/language-reference/statements/using-statement.md)

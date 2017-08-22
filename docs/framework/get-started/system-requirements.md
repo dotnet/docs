@@ -1,13 +1,9 @@
 ---
 title: ".NET Framework system requirements"
-ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "08/22/2017"
 ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "software requirements"
@@ -25,6 +21,8 @@ manager: "wpickett"
 # .NET Framework system requirements
 
 The tables in this topic provide the hardware, operating system, and software requirements for the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases (4.6.1 and 4.6.2), and the .NET Framework 4.7. Development environments that enable you to develop apps for the .NET Framework have a separate set of requirements.
+
+All .NET Framework versions since .NET Framework 4 are in-place updates. In other words, if there's a later version installed on the machine already, you don't have to install the previous versions. Similarly, if you install a later version, you don't have to first uninstall the previous versions. And, if an OS already comes pre-installed with a particular .NET Framework version, you cannot install previous 4.x versions on the same machine.
 
 For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).
 

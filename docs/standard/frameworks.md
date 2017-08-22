@@ -1,15 +1,12 @@
 ---
 title: Target frameworks
 description: Learn about target frameworks for .NET Core apps and libraries.
-keywords: .NET, .NET Core, framework, TFM
 author: richlander
 ms.author: mairaw
-ms.date: 07/23/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 ---
 
 # Target frameworks
@@ -28,11 +25,11 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
 
-| Target Framework      | Latest Version | Target Framework Moniker (TFM) | .NET Standard Version | Metapackage |
-| :-------------------: | :------------: | :----------------------------: | :-------------------: | :---------: |
-| .NET Standard         | 1.6.1          | netstandard1.6                 | N/A                   | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
-| .NET Core Application | 1.1.2          | netcoreapp1.1                  | 1.6                   | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
-| .NET Framework        | 4.7            | net47                          | 1.5                   | N/A |
+| Target Framework      | Latest Version | Target Framework Moniker (TFM) | Minimum <br/> .NET Standard Version | Metapackage |
+| :-------------------: | :------------: | :----------------------------: | :---------------------------: | :---------: |
+| .NET Standard         | 2.0            | netstandard2.0                 | N/A                           | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
+| .NET Core Application | 2.0            | netcoreapp2.0                  | 2.0                           | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
+| .NET Framework        | 4.7            | net47                          | 1.0                           | N/A |
 
 ## Supported target framework versions
 
@@ -51,14 +48,14 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 ## How to specify target frameworks
 
-Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 1.1:
+Target frameworks are specified in your project file. When a single target framework is specified, use the **TargetFramework** element. The following console app project file demonstrates how to target .NET Core 2.0:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
 </Project>

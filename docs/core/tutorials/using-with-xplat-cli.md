@@ -5,7 +5,7 @@ keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
 ms.date: 03/08/2017
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet

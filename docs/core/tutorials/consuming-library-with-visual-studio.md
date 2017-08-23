@@ -6,7 +6,7 @@ author: BillWagner
 ms.author: wiwang
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: .net
+ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: d7b94076-1108-4174-94e7-a18f00072bb7

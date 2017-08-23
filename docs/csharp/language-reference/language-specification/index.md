@@ -42,7 +42,7 @@ Issues on the draft specification should be created in the [dotnet/csharplang](h
 in fixing any errors you find, you may submit a [Pull Request](https://github.com/dotnet/csharplang/pulls) to the same repository.
 
 ## See Also  
- [C# Reference](../../language-reference/index.md)
+ [C# Reference](../../language-reference/index.md)  
  [C# Programming Guide](../../programming-guide/index.md)
 
 >[!div class="step-by-step"]

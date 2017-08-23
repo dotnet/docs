@@ -3,7 +3,7 @@ title: .NET architectural components
 description: Describes .NET architectural components such as the .NET Standard, .NET implementations, .NET runtimes, and tooling.
 author: cartermp
 ms.author: mairaw
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -33,7 +33,7 @@ There are four primary .NET implementations that Microsoft actively develops and
 
 ### .NET Core
 
-.NET Core is a cross-platform implementation of .NET optimized for server workloads. It runs on Windows, macOS and Linux. It's modern, efficient, and designed to handle server and cloud workloads at scale. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. ASP.NET Core runs on .NET Core. 
+.NET Core is a cross-platform implementation of .NET and designed to handle server and cloud workloads at scale. It runs on Windows, macOS and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. ASP.NET Core runs on .NET Core. 
 
 To learn more about .NET Core, see the [.NET Core Guide](../core/index.md) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
 

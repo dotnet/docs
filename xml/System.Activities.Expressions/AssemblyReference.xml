@@ -95,7 +95,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.Expressions.AssemblyReference op_Implicit (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Expressions.AssemblyReference (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Expressions.AssemblyReference op_Implicit(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.AssemblyReference.op_Implicit(System.Reflection.Assembly)~System.Activities.Expressions.AssemblyReference" />
       <MemberType>Method</MemberType>
@@ -117,7 +117,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Activities.Expressions.AssemblyReference op_Implicit (System.Reflection.AssemblyName assemblyName);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Expressions.AssemblyReference (System.Reflection.AssemblyName assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Expressions.AssemblyReference op_Implicit(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.AssemblyReference.op_Implicit(System.Reflection.AssemblyName)~System.Activities.Expressions.AssemblyReference" />
       <MemberType>Method</MemberType>

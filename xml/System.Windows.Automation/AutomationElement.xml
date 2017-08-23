@@ -2755,7 +2755,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Automation.AutomationElement left, System.Windows.Automation.AutomationElement right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Automation.AutomationElement left, System.Windows.Automation.AutomationElement right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Automation.AutomationElement left, class System.Windows.Automation.AutomationElement right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.op_Equality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       <MemberType>Method</MemberType>
@@ -2787,7 +2787,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Automation.AutomationElement left, System.Windows.Automation.AutomationElement right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Automation.AutomationElement left, System.Windows.Automation.AutomationElement right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Automation.AutomationElement left, class System.Windows.Automation.AutomationElement right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.op_Inequality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
       <MemberType>Method</MemberType>

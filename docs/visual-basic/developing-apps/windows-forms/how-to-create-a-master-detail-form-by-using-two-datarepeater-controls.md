@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Master-Detail Form by Using Two DataRepeater Controls (Visual Studio) | Microsoft Docs"
+title: "How to: Create a Master-Detail Form by Using Two DataRepeater Controls (Visual Studio)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

@@ -1,5 +1,5 @@
 ---
-title: "Miscellaneous Constructs in Regular Expressions | Microsoft Docs"
+title: "Miscellaneous Constructs in Regular Expressions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

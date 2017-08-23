@@ -1,5 +1,5 @@
 ---
-title: "Basic Sample | Microsoft Docs"
+title: "Basic Sample"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

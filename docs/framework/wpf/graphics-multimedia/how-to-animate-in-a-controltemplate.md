@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate in a ControlTemplate | Microsoft Docs"
+title: "How to: Animate in a ControlTemplate"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

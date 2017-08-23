@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Visual Basic Application Model | Microsoft Docs"
+title: "Overview of the Visual Basic Application Model"
 
 ms.date: "2015-07-20"
 ms.prod: .net

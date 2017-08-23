@@ -1,5 +1,5 @@
 ---
-title: "Regular Expression Example: Scanning for HREFs | Microsoft Docs"
+title: "Regular Expression Example: Scanning for HREFs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

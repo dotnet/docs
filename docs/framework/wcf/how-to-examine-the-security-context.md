@@ -1,5 +1,5 @@
 ---
-title: "How to: Examine the Security Context | Microsoft Docs"
+title: "How to: Examine the Security Context"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

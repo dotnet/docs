@@ -1,5 +1,5 @@
 ---
-title: "Version-Tolerant Serialization Callbacks | Microsoft Docs"
+title: "Version-Tolerant Serialization Callbacks"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -53,4 +53,4 @@ The data contract programming model fully supports the version-tolerant serializ
  <xref:System.Runtime.Serialization.OnDeserializingAttribute>   
  <xref:System.Runtime.Serialization.OnDeserializedAttribute>   
  <xref:System.Runtime.Serialization.StreamingContext>   
- [Version Tolerant Serialization](../../../../docs/framework/serialization/version-tolerant-serialization.md)
+ [Version Tolerant Serialization](../../../../docs/standard/serialization/version-tolerant-serialization.md)

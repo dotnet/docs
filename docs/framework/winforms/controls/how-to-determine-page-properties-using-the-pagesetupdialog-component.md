@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Page Properties Using the PageSetupDialog Component | Microsoft Docs"
+title: "How to: Determine Page Properties Using the PageSetupDialog Component"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -34,7 +34,7 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
   
      In the example below, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens an instance of the <xref:System.Windows.Forms.PageSetupDialog> component. An existing document is specified in the <xref:System.Windows.Forms.PageSetupDialog.Document%2A> property, and its <xref:System.Drawing.Printing.PageSettings.Color%2A?displayProperty=fullName> property is set to `false`.  
   
-     The example assumes your form has a <xref:System.Windows.Forms.Button> control, a <xref:System.Drawing.Printing.PrintDocument> component named`myDocument`, and a <xref:System.Windows.Forms.PageSetupDialog> component.  
+     The example assumes your form has a <xref:System.Windows.Forms.Button> control, a <xref:System.Drawing.Printing.PrintDocument> component named `myDocument`, and a <xref:System.Windows.Forms.PageSetupDialog> component.  
   
     ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, _  

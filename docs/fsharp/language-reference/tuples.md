@@ -1,6 +1,6 @@
 ---
-title: Tuples (F#) | Microsoft Docs
-description: Tuples (F#)
+title: Tuples (F#)
+description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -126,7 +126,7 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 
 ### Compiled Form of Struct Tuples
 
-Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the [`System.ValueTuple`](xref::system.valuetuple) type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../csharp/tuples.md) and VB.NET 15 Tuples, and interoperate bidirectionally.
+Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the <xref:System.ValueTuple> type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../csharp/tuples.md) and [Visual Basic 2017 Tuples](../../visual-basic/programming-guide/language-features/data-types/tuples.md), and interoperate bidirectionally.
 
 ## See Also
 [F# Language Reference](index.md)

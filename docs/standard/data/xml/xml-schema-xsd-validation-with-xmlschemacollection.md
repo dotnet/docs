@@ -1,5 +1,5 @@
 ---
-title: "XML Schema (XSD) Validation with XmlSchemaCollection | Microsoft Docs"
+title: "XML Schema (XSD) Validation with XmlSchemaCollection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

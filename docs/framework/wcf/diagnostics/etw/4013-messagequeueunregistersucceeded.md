@@ -1,5 +1,5 @@
 ---
-title: "4013 - MessageQueueUnregisterSucceeded | Microsoft Docs"
+title: "4013 - MessageQueueUnregisterSucceeded"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

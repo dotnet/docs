@@ -1,5 +1,5 @@
 ---
-title: "How to: Manipulate a Table&#39;s Columns through the Columns Property | Microsoft Docs"
+title: "How to: Manipulate a Table&#39;s Columns through the Columns Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Efficient Combination of Operators (Visual Basic) | Microsoft Docs"
+title: "Efficient Combination of Operators (Visual Basic)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

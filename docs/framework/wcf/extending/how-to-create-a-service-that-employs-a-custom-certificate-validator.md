@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Service that Employs a Custom Certificate Validator | Microsoft Docs"
+title: "How to: Create a Service that Employs a Custom Certificate Validator"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

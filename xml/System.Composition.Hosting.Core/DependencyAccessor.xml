@@ -12,8 +12,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Allows <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider"/> objects to locate their dependencies.</summary>
-    <remarks></remarks>
+    <summary>Allows <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider" /> objects to locate their dependencies.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,7 +29,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.DependencyAccessor"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.DependencyAccessor" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +60,8 @@
         <param name="exportKey">The export key that the promises must supply.</param>
         <summary>Retrieves all promises for the specified contract.</summary>
         <returns>A collection of promises for the contract.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveDependencies">
@@ -83,10 +85,12 @@
       <Docs>
         <param name="site">A tag that describes the dependency site.</param>
         <param name="contract">The contract required by the site.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
+        <param name="isPrerequisite">
+          <see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
         <summary>Resolves dependencies on all implementations of a contract.</summary>
         <returns>A collection of resolved dependencies.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveRequiredDependency">
@@ -110,10 +114,12 @@
       <Docs>
         <param name="site">A tag that describes the dependency site.</param>
         <param name="contract">The contract required by the site.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
+        <param name="isPrerequisite">
+          <see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
         <summary>Resolves a required dependency on one implementation of a contract.</summary>
         <returns>The resolved dependency.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveOptionalDependency">
@@ -138,11 +144,14 @@
       <Docs>
         <param name="site">A tag that describes the dependency site.</param>
         <param name="contract">The contract required by the site.</param>
-        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
+        <param name="isPrerequisite">
+          <see langword="true" /> to indicate that the dependency must be satisfied before exports are made available; otherwise, <see langword="false" />.</param>
         <param name="dependency">After this method returns, contains the resolved dependency or <see langword="null" />.</param>
         <summary>Resolves an optional dependency on one implementation of a contract.</summary>
-        <returns><see langword="true" /> if the dependency was resolved; otherwise, <see langword="false"/>.</returns>
-        <remarks></remarks>
+        <returns>
+          <see langword="true" /> if the dependency was resolved; otherwise, <see langword="false" />.</returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

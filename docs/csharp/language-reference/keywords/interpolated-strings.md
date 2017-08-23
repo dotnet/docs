@@ -1,5 +1,5 @@
 ---
-title: "Interpolated Strings (C#) | Microsoft Docs"
+title: "Interpolated Strings (C#)"
 ms.date: "2017-02-03"
 ms.prod: .net
 ms.technology: 

@@ -1,5 +1,5 @@
 ---
-title: "Constructors (C# Programming Guide) | Microsoft Docs"
+title: "Constructors (C# Programming Guide)"
 
 ms.date: "2017-05-05"
 ms.prod: .net

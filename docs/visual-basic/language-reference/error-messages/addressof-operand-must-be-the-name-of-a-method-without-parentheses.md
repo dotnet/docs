@@ -1,5 +1,5 @@
 ---
-title: "&#39;AddressOf&#39; operand must be the name of a method (without parentheses) | Microsoft Docs"
+title: "&#39;AddressOf&#39; operand must be the name of a method (without parentheses)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

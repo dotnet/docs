@@ -1,5 +1,5 @@
 ---
-title: Get Started with .NET | Microsoft Docs
+title: Get Started with .NET
 description: Lists various articles for getting started with .NET, both from a language and platform perspective.
 keywords: .NET, Getting Started, C#, F#, Visual Basic
 author: cartermp
@@ -24,7 +24,7 @@ There are a number of ways to get started with .NET.  Because .NET is a massive 
 
 * The [Visual Basic Getting Started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio.
 
-## Get started using .NET core
+## Get started using .NET Core
 
 * [Getting Started with .NET Core](../core/get-started.md) provides an overview of articles which show how to get started with .NET Core on different operating systems and using different tools.
 

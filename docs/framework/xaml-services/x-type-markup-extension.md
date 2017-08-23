@@ -1,5 +1,5 @@
 ---
-title: "x:Type Markup Extension | Microsoft Docs"
+title: "x:Type Markup Extension"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

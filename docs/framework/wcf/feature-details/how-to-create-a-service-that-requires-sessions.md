@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Service That Requires Sessions | Microsoft Docs"
+title: "How to: Create a Service That Requires Sessions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

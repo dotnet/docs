@@ -1,5 +1,5 @@
 ---
-title: "association end multiplicity | Microsoft Docs"
+title: "association end multiplicity"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

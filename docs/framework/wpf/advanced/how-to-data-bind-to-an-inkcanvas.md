@@ -1,5 +1,5 @@
 ---
-title: "How to: Data Bind to an InkCanvas | Microsoft Docs"
+title: "How to: Data Bind to an InkCanvas"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

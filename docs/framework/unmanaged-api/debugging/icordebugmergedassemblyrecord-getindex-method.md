@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugMergedAssemblyRecord::GetIndex Method | Microsoft Docs"
+title: "ICorDebugMergedAssemblyRecord::GetIndex Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

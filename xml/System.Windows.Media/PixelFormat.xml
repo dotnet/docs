@@ -202,7 +202,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.op_Equality(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
       <MemberType>Method</MemberType>
@@ -227,7 +227,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.op_Inequality(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
       <MemberType>Method</MemberType>

@@ -1,5 +1,5 @@
 ---
-title: "Display of Asian Characters with the ImeMode Property | Microsoft Docs"
+title: "Display of Asian Characters with the ImeMode Property"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

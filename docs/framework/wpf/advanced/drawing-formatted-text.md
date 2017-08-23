@@ -1,5 +1,5 @@
 ---
-title: "Drawing Formatted Text | Microsoft Docs"
+title: "Drawing Formatted Text"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

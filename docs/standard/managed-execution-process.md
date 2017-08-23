@@ -1,5 +1,5 @@
 ---
-title: "Managed Execution Process | Microsoft Docs"
+title: "Managed Execution Process"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

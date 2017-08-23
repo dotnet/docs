@@ -1,6 +1,6 @@
 ---
-title: Compiler Directives (F#) | Microsoft Docs
-description: Compiler Directives (F#)
+title: Compiler Directives (F#)
+description: Learn about F# language preprocessor directives, conditional compilation directives, line directives, and compiler directives.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

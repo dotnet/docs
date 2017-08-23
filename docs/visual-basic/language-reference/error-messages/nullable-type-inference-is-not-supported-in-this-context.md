@@ -1,5 +1,5 @@
 ---
-title: "Nullable type inference is not supported in this context | Microsoft Docs"
+title: "Nullable type inference is not supported in this context"
 
 ms.date: "2015-07-20"
 ms.prod: .net

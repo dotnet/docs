@@ -1,5 +1,5 @@
 ---
-title: "Trusted Facade Service | Microsoft Docs"
+title: "Trusted Facade Service"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Types Supported by the Data Contract Serializer | Microsoft Docs"
+title: "Types Supported by the Data Contract Serializer"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

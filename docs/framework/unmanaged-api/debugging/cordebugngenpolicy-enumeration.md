@@ -1,5 +1,5 @@
 ---
-title: "CorDebugNGenPolicy Enumeration | Microsoft Docs"
+title: "CorDebugNGenPolicy Enumeration"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

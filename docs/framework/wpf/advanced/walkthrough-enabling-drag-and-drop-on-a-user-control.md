@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Enabling Drag and Drop on a User Control | Microsoft Docs"
+title: "Walkthrough: Enabling Drag and Drop on a User Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

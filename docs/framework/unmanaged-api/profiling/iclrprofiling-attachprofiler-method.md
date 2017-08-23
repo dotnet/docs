@@ -1,5 +1,5 @@
 ---
-title: "ICLRProfiling::AttachProfiler Method | Microsoft Docs"
+title: "ICLRProfiling::AttachProfiler Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

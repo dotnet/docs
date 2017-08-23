@@ -1,5 +1,5 @@
 ---
-title: "Get not supported (write-only property) | Microsoft Docs"
+title: "Get not supported (write-only property)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

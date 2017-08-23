@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper::SetUnmappedStopMask Method | Microsoft Docs"
+title: "ICorDebugStepper::SetUnmappedStopMask Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "WS Transaction Flow | Microsoft Docs"
+title: "WS Transaction Flow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

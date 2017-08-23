@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataValidate::ValidatorInit Method | Microsoft Docs"
+title: "IMetaDataValidate::ValidatorInit Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

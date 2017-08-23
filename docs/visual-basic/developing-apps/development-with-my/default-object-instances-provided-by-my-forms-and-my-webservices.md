@@ -1,5 +1,5 @@
 ---
-title: "Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic) | Microsoft Docs"
+title: "Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

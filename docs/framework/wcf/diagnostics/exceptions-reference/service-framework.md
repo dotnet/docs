@@ -1,5 +1,5 @@
 ---
-title: "Service Framework | Microsoft Docs"
+title: "Service Framework"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

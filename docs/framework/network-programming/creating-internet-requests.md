@@ -1,5 +1,5 @@
 ---
-title: "Creating Internet Requests | Microsoft Docs"
+title: "Creating Internet Requests"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

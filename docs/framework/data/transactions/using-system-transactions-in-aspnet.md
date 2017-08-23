@@ -1,5 +1,5 @@
 ---
-title: "Using System.Transactions in ASP.NET | Microsoft Docs"
+title: "Using System.Transactions in ASP.NET"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

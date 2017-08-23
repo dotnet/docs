@@ -1,5 +1,5 @@
 ---
-title: "Cannot call friend function on object which is not an instance of defining class | Microsoft Docs"
+title: "Cannot call friend function on object which is not an instance of defining class"
 
 ms.date: "2015-07-20"
 ms.prod: .net

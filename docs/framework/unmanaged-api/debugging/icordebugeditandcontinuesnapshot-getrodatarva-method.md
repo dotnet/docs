@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEditAndContinueSnapshot::GetRoDataRVA Method | Microsoft Docs"
+title: "ICorDebugEditAndContinueSnapshot::GetRoDataRVA Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

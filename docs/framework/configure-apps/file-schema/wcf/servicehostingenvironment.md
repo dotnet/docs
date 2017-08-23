@@ -1,5 +1,5 @@
 ---
-title: "&lt;serviceHostingEnvironment&gt; | Microsoft Docs"
+title: "&lt;serviceHostingEnvironment&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

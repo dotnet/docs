@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting the Getting Started Tutorial | Microsoft Docs"
+title: "Troubleshooting the Getting Started Tutorial"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

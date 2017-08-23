@@ -1,5 +1,5 @@
 ---
-title: "Query Execution | Microsoft Docs"
+title: "Query Execution"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

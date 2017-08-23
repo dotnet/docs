@@ -1,6 +1,6 @@
 ---
-title: Attributes (F#) | Microsoft Docs
-description: Attributes (F#)
+title: Attributes (F#)
+description: Learn how F# Attributes enable metadata to be applied to a programming construct.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

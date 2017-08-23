@@ -1,5 +1,5 @@
 ---
-title: "Handling DataTable Events | Microsoft Docs"
+title: "Handling DataTable Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

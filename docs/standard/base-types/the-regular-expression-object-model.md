@@ -1,5 +1,5 @@
 ---
-title: "The Regular Expression Object Model | Microsoft Docs"
+title: "The Regular Expression Object Model"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

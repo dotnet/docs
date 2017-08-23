@@ -1,5 +1,5 @@
 ---
-title: "Using an AsyncCallback Delegate to End an Asynchronous Operation | Microsoft Docs"
+title: "Using an AsyncCallback Delegate to End an Asynchronous Operation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating Custom Client and Service Credentials | Microsoft Docs"
+title: "Walkthrough: Creating Custom Client and Service Credentials"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

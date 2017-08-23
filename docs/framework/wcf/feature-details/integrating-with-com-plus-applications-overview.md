@@ -1,5 +1,5 @@
 ---
-title: "Integrating with COM+ Applications Overview | Microsoft Docs"
+title: "Integrating with COM+ Applications Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

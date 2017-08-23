@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugExceptionDebugEvent::GetStackPointer Method | Microsoft Docs"
+title: "ICorDebugExceptionDebugEvent::GetStackPointer Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Debugging LINQ to DataSet Queries | Microsoft Docs"
+title: "Debugging LINQ to DataSet Queries"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

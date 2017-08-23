@@ -265,7 +265,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.FragmentState state1, valuetype System.Speech.Synthesis.TtsEngine.FragmentState state2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.op_Equality(System.Speech.Synthesis.TtsEngine.FragmentState,System.Speech.Synthesis.TtsEngine.FragmentState)" />
       <MemberType>Method</MemberType>
@@ -291,7 +291,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.FragmentState state1, valuetype System.Speech.Synthesis.TtsEngine.FragmentState state2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.op_Inequality(System.Speech.Synthesis.TtsEngine.FragmentState,System.Speech.Synthesis.TtsEngine.FragmentState)" />
       <MemberType>Method</MemberType>

@@ -401,7 +401,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (MulticastDelegate d1, MulticastDelegate d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (MulticastDelegate d1, MulticastDelegate d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.MulticastDelegate d1, class System.MulticastDelegate d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.op_Equality(System.MulticastDelegate,System.MulticastDelegate)" />
       <MemberType>Method</MemberType>
@@ -450,7 +450,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (MulticastDelegate d1, MulticastDelegate d2);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (MulticastDelegate d1, MulticastDelegate d2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.MulticastDelegate d1, class System.MulticastDelegate d2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.MulticastDelegate.op_Inequality(System.MulticastDelegate,System.MulticastDelegate)" />
       <MemberType>Method</MemberType>

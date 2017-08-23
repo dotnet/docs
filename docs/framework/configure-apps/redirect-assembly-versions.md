@@ -1,5 +1,5 @@
 ---
-title: "Redirecting Assembly Versions | Microsoft Docs"
+title: "Redirecting Assembly Versions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

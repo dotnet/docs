@@ -1,5 +1,5 @@
 ---
-title: "How to: Find DataTemplate-Generated Elements | Microsoft Docs"
+title: "How to: Find DataTemplate-Generated Elements"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

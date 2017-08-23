@@ -1,5 +1,5 @@
 ---
-title: "System Requirements for the .NET Framework Data Provider for Oracle | Microsoft Docs"
+title: "System Requirements for the .NET Framework Data Provider for Oracle"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

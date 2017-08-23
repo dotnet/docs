@@ -1,6 +1,6 @@
 ---
-title: let Bindings in Classes (F#) | Microsoft Docs
-description: let Bindings in Classes (F#)
+title: let Bindings in Classes (F#)
+description: Learn how to define private fields and private functions for F# classes by using 'let' bindings in the class definition.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

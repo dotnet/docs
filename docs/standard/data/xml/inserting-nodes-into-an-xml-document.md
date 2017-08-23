@@ -1,5 +1,5 @@
 ---
-title: "Inserting Nodes into an XML Document | Microsoft Docs"
+title: "Inserting Nodes into an XML Document"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

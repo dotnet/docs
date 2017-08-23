@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Dataflow Pipeline | Microsoft Docs"
+title: "Walkthrough: Creating a Dataflow Pipeline"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Using Serviced Components with the Global Assembly Cache | Microsoft Docs"
+title: "Using Serviced Components with the Global Assembly Cache"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

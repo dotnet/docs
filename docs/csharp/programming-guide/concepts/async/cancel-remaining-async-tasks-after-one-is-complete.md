@@ -1,5 +1,5 @@
 ---
-title: "Cancel Remaining Async Tasks after One Is Complete (C#) | Microsoft Docs"
+title: "Cancel Remaining Async Tasks after One Is Complete (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

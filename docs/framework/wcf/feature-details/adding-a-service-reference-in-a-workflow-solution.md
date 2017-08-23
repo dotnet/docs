@@ -1,5 +1,5 @@
 ---
-title: "Adding a Service Reference in a Workflow Solution | Microsoft Docs"
+title: "Adding a Service Reference in a Workflow Solution"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

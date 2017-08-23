@@ -1,5 +1,5 @@
 ---
-title: "Tracking Profiles | Microsoft Docs"
+title: "Tracking Profiles"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -65,7 +65,7 @@ TrackingProfile profile = new TrackingProfile()
   
  The two visibility modes specified by the `implementationVisibility` attribute in the tracking profile are `RootScope` and `All`. Using the `RootScope` mode suppresses the tracking records for activities that form the implementation of an activity in the case where a composite activity is not the root of a workflow.  This implies that, when an activity that is implemented using other activities is added to a workflow, and the `implementationVisibility` set to RootScope, only the top-level activity within that composite activity is tracked. If an activity is the root of the workflow, then the implementation of the activity is the workflow itself and tracking records are emitted for activities that form the implementation. Using the All mode permits all tracking records to be emitted for the root activity and all its composite activities.  
   
- For example, suppose *MyActivity* is a composite activity whose implementation contains two activities, *Activity1* and *Activity2*.  When this activity is added to a workflow and tracking is enabled with a tracking profile with`implementationVisibility` set to `RootScope`, tracking records are emitted only for *MyActivity*.  However, no records are emitted for activities *Activity1* and *Activity2*.  
+ For example, suppose *MyActivity* is a composite activity whose implementation contains two activities, *Activity1* and *Activity2*.  When this activity is added to a workflow and tracking is enabled with a tracking profile with `implementationVisibility` set to `RootScope`, tracking records are emitted only for *MyActivity*.  However, no records are emitted for activities *Activity1* and *Activity2*.  
   
  However, if the `implementationVisisbility` attribute for the tracking profile is  set to `All`, then tracking records are emitted not only for *MyActivity*, but also for activities *Activity1* and *Activity2*.  
   

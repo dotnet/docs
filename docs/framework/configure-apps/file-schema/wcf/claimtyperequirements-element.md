@@ -1,5 +1,5 @@
 ---
-title: "&lt;claimTypeRequirements&gt; element | Microsoft Docs"
+title: "&lt;claimTypeRequirements&gt; element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

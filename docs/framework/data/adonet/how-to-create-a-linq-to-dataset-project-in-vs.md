@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a LINQ to DataSet Project In Visual Studio | Microsoft Docs"
+title: "How to: Create a LINQ to DataSet Project In Visual Studio"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

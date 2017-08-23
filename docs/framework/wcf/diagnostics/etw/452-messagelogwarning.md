@@ -1,5 +1,5 @@
 ---
-title: "452 - MessageLogWarning | Microsoft Docs"
+title: "452 - MessageLogWarning"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

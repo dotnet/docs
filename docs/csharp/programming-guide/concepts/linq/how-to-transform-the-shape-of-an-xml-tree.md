@@ -1,5 +1,5 @@
 ---
-title: "How to: Transform the Shape of an XML Tree (C#) | Microsoft Docs"
+title: "How to: Transform the Shape of an XML Tree (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

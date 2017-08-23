@@ -1,5 +1,5 @@
 ---
-title: "Methods (C# Programming Guide) | Microsoft Docs"
+title: "Methods (C# Programming Guide)"
 
 ms.date: "2015-07-20"
 ms.prod: .net

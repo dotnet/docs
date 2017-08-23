@@ -1,5 +1,5 @@
 ---
-title: "Argument BasePath must be a path to a folder | Microsoft Docs"
+title: "Argument BasePath must be a path to a folder"
 
 ms.date: "2015-07-20"
 ms.prod: .net

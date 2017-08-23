@@ -1,5 +1,5 @@
 ---
-title: "How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control | Microsoft Docs"
+title: "How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -34,7 +34,7 @@ manager: "wpickett"
     > [!NOTE]
     >  To specify the first table of the <xref:System.Data.DataSet> or the first row of the table, use 0.  
   
-     The following example shows how to change the second entry of the first row of the first table of a dataset by clicking`Button1`. The <xref:System.Data.DataSet> (`ds`) and Tables (`0` and`1`) were previously created.  
+     The following example shows how to change the second entry of the first row of the first table of a dataset by clicking `Button1`. The <xref:System.Data.DataSet> (`ds`) and Tables (`0` and `1`) were previously created.  
   
     ```vb  
     Protected Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  

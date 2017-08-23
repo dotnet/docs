@@ -1,5 +1,5 @@
 ---
-title: "Code Contracts | Microsoft Docs"
+title: "Code Contracts"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -78,7 +78,7 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
 ### Standard Postconditions  
  You can express standard postconditions by using the <xref:System.Diagnostics.Contracts.Contract.Ensures%2A> method. Postconditions express a condition that must be `true` upon normal termination of the method.  
   
- `Contract.Ensures( this .F > 0 );`  
+ `Contract.Ensures( this.F > 0 );`  
   
 ### Exceptional Postconditions  
  Exceptional postconditions are postconditions that should be `true` when a particular exception is thrown by a method. You can specify these postconditions by using the <xref:System.Diagnostics.Contracts.Contract.EnsuresOnThrow%2A?displayProperty=fullName> method, as the following example shows.  
@@ -92,7 +92,7 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
 ### Special Postconditions  
  The following methods may be used only within postconditions:  
   
--   You can refer to method return values in postconditions by using the expression `Contract. Result<T>()`, where `T` is replaced by the return type of the method. When the compiler is unable to infer the type, you must explicitly provide it. For example, the C# compiler is unable to infer types for methods that do not take any arguments, so it requires the following postcondition: `Contract.Ensures(0 < Contract.Result<int>())` Methods with a return type of `void` cannot refer to `Contract. Result<T>()` in their postconditions.  
+-   You can refer to method return values in postconditions by using the expression `Contract.Result<T>()`, where `T` is replaced by the return type of the method. When the compiler is unable to infer the type, you must explicitly provide it. For example, the C# compiler is unable to infer types for methods that do not take any arguments, so it requires the following postcondition: `Contract.Ensures(0 <Contract.Result<int>())` Methods with a return type of `void` cannot refer to `Contract.Result<T>()` in their postconditions.  
   
 -   A prestate value in a postcondition refers to the value of an expression at the start of a method or property. It uses the expression `Contract.OldValue<T>(e)`, where `T` is the type of `e`. You can omit the generic type argument whenever the compiler is able to infer its type. (For example, the C# compiler always infers the type because it takes an argument.) There are several restrictions on what can occur in `e` and the contexts in which an old expression may appear. An old expression cannot contain another old expression. Most importantly, an old expression must refer to a value that existed in the method's precondition state. In other words, it must be an expression that can be evaluated as long as the method's precondition is `true`. Here are several instances of that rule.  
   
@@ -110,14 +110,14 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
   
         ```  
         Contract. ForAll (0,Contract. Result<int>(),  
-        i => Contract.OldValue(xs[i]) > 3 ); // ERROR  
+        i => Contract.OldValue(xs[i]) > 3); // ERROR  
         ```  
   
     -   An old expression cannot refer to the parameter of the anonymous delegate in a <xref:System.Diagnostics.Contracts.Contract.ForAll%2A> or <xref:System.Diagnostics.Contracts.Contract.Exists%2A> call unless it is used as an indexer or argument to a method call:  
   
         ```  
         Contract. ForAll (0, xs .Length, i => Contract.OldValue(xs[i]) > 3); // OK  
-        Contract. ForAll (0, xs .Length, i => Contract.OldValue(i) > 3 ); // ERROR  
+        Contract. ForAll (0, xs .Length, i => Contract.OldValue(i) > 3); // ERROR  
         ```  
   
     -   An old expression cannot occur in the body of an anonymous delegate if the value of the old expression depends on any of the parameters of the anonymous delegate, unless the anonymous delegate is an argument to the <xref:System.Diagnostics.Contracts.Contract.ForAll%2A> or <xref:System.Diagnostics.Contracts.Contract.Exists%2A> method:  
@@ -148,8 +148,8 @@ Contract.EndContractBlock(); // All previous "if" checks are preconditions
 [ContractInvariantMethod]  
 protected void ObjectInvariant ()   
 {  
-Contract.Invariant ( this.y >= 0 );  
-Contract.Invariant ( this.x > this.y );  
+Contract.Invariant(this.y >= 0);  
+Contract.Invariant(this.x > this.y);  
 ...  
 }  
 ```  

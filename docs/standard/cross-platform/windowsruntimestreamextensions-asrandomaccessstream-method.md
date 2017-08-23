@@ -1,5 +1,5 @@
 ---
-title: "WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method | Microsoft Docs"
+title: "WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

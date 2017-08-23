@@ -1,5 +1,5 @@
 ---
-title: "Support for the msxsl:node-set() Function | Microsoft Docs"
+title: "Support for the msxsl:node-set() Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

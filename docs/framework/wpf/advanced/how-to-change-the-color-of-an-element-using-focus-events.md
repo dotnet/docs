@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Color of an Element Using Focus Events | Microsoft Docs"
+title: "How to: Change the Color of an Element Using Focus Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

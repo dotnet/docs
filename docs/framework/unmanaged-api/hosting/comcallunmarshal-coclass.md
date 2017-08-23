@@ -1,5 +1,5 @@
 ---
-title: "ComCallUnmarshal Coclass | Microsoft Docs"
+title: "ComCallUnmarshal Coclass"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

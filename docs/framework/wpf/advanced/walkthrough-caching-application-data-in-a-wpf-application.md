@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Caching Application Data in a WPF Application | Microsoft Docs"
+title: "Walkthrough: Caching Application Data in a WPF Application"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

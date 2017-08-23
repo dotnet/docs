@@ -1,5 +1,5 @@
 ---
-title: "ScrollViewer Overview | Microsoft Docs"
+title: "ScrollViewer Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -20,19 +20,6 @@ manager: "wpickett"
 ---
 # ScrollViewer Overview
 Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
-  
- This topic contains the following sections:  
-  
-<a name="autoTopLevelSectionsOUTLINE0"></a>   
--   [The ScrollViewer Control](#what_is_a_scrollviewer_element)  
-  
--   [Physical vs. Logical Scrolling](#scrollviewer_physical_vs_logical)  
-  
--   [Defining and Using a ScrollViewer Element](#scrollviewer_markup_syntax_and_sample)  
-  
--   [Styling a ScrollViewer](#scrollviewer_styling_scrollviewer)  
-  
--   [Paginating Documents](#scrollviewer_scroll_vs_paginate)  
   
 <a name="what_is_a_scrollviewer_element"></a>   
 ## The ScrollViewer Control  

@@ -101,7 +101,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (System.Runtime.InteropServices.HandleRef value);" />
+      <MemberSignature Language="C#" Value="public static explicit operator IntPtr (System.Runtime.InteropServices.HandleRef value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(valuetype System.Runtime.InteropServices.HandleRef value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.HandleRef.op_Explicit(System.Runtime.InteropServices.HandleRef)~System.IntPtr" />
       <MemberType>Method</MemberType>

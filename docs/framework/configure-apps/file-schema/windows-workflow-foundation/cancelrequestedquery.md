@@ -1,5 +1,5 @@
 ---
-title: "&lt;cancelRequestedQuery&gt; | Microsoft Docs"
+title: "&lt;cancelRequestedQuery&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

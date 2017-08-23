@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Bounding and Blocking Functionality to a Collection | Microsoft Docs"
+title: "How to: Add Bounding and Blocking Functionality to a Collection"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -259,7 +259,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Net.Http.HttpMethod left, System.Net.Http.HttpMethod right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Net.Http.HttpMethod left, System.Net.Http.HttpMethod right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Net.Http.HttpMethod left, class System.Net.Http.HttpMethod right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMethod.op_Equality(System.Net.Http.HttpMethod,System.Net.Http.HttpMethod)" />
       <MemberType>Method</MemberType>
@@ -291,7 +291,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Net.Http.HttpMethod left, System.Net.Http.HttpMethod right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Net.Http.HttpMethod left, System.Net.Http.HttpMethod right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Net.Http.HttpMethod left, class System.Net.Http.HttpMethod right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMethod.op_Inequality(System.Net.Http.HttpMethod,System.Net.Http.HttpMethod)" />
       <MemberType>Method</MemberType>

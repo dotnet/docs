@@ -1,6 +1,6 @@
 ---
-title: Modules (F#) | Microsoft Docs
-description: Modules (F#)
+title: Modules (F#)
+description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program. 
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

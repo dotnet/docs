@@ -1,5 +1,5 @@
 ---
-title: Using NoSQL databases as a persistence infrastructure | Microsoft Docs 
+title: Using NoSQL databases as a persistence infrastructure
 description: .NET Microservices Architecture for Containerized .NET Applications | Using NoSQL databases as a persistence infrastructure
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -121,7 +121,7 @@ However, when you persist your model into the NoSQL database, the code and API c
 #### Additional resources
 
 -   **Modeling data in DocumentDB**
-    [*https://docs.microsoft.com/en-us/azure/documentdb/documentdb-modeling-data*](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-modeling-data)
+    [*https://docs.microsoft.com/azure/documentdb/documentdb-modeling-data*](https://docs.microsoft.com/azure/documentdb/documentdb-modeling-data)
 
 -   **Vaughn Vernon. The Ideal Domain-Driven Design Aggregate Store?**
     [*https://vaughnvernon.co/?p=942*](https://vaughnvernon.co/?p=942)

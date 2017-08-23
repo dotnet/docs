@@ -1,5 +1,5 @@
 ---
-title: "Microsoft.Transactions.TransactionBridge.RegisterParticipantFailure | Microsoft Docs"
+title: "Microsoft.Transactions.TransactionBridge.RegisterParticipantFailure"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

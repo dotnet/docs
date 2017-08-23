@@ -1,6 +1,6 @@
 ---
-title: C# Guide | Microsoft Docs
-description: C# Guide
+title: C# Guide
+description: Learn how the C# Guide can help you gain extensive knowledge on C#, whether you're a new developer or a seasoned expert.
 keywords: .NET, .NET Core
 author: BillWagner
 

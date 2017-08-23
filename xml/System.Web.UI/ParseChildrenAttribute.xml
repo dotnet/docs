@@ -29,7 +29,7 @@
   
  Marking your server control with the metadata attribute `ParseChildren(false)`, the default value, instructs the parser to interpret the elements that are contained within the server control's tags as content that will be parsed with an associated <xref:System.Web.UI.ControlBuilder> that is, as controls. In this scenario, the <xref:System.Web.UI.ParseChildrenAttribute.ChildrenAsProperties%2A> property is `false`.  
   
- For information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ For information about using attributes, see [Attributes](~/docs/standard/attributes/index.md).  
   
    
   

@@ -1,5 +1,5 @@
 ---
-title: "Ngen.exe (Native Image Generator) | Microsoft Docs"
+title: "Ngen.exe (Native Image Generator)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -196,7 +196,7 @@ ngen /? | /help
 ## Generating images for     different scenarios  
  After you have generated a native image for an assembly, the runtime automatically attempts to locate and use this native   image each time it runs the assembly. Multiple images can be generated, depending on usage scenarios.  
   
- For example, if you run an assembly in a debugging or profiling scenario, the runtime looks for a native image that was generated with the `/Debug` or `/Profile` options. If it is unable to find a matching native image, the runtime reverts to standard JIT compilation. The only way to debug native images is to create a native image with the `/Debug`option.  
+ For example, if you run an assembly in a debugging or profiling scenario, the runtime looks for a native image that was generated with the `/Debug` or `/Profile` options. If it is unable to find a matching native image, the runtime reverts to standard JIT compilation. The only way to debug native images is to create a native image with the `/Debug` option.  
   
  The `uninstall` action also recognize scenarios, so you can uninstall all scenarios or only selected scenarios.  
   

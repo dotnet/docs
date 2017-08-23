@@ -1,5 +1,5 @@
 ---
-title: "What You Can Do With LINQ to SQL | Microsoft Docs"
+title: "What You Can Do With LINQ to SQL"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

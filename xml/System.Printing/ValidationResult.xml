@@ -96,7 +96,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Printing.ValidationResult a, System.Printing.ValidationResult b);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Printing.ValidationResult a, System.Printing.ValidationResult b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Printing.ValidationResult a, valuetype System.Printing.ValidationResult b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.ValidationResult.op_Equality(System.Printing.ValidationResult,System.Printing.ValidationResult)" />
       <MemberType>Method</MemberType>
@@ -121,7 +121,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Printing.ValidationResult a, System.Printing.ValidationResult b);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Printing.ValidationResult a, System.Printing.ValidationResult b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Printing.ValidationResult a, valuetype System.Printing.ValidationResult b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.ValidationResult.op_Inequality(System.Printing.ValidationResult,System.Printing.ValidationResult)" />
       <MemberType>Method</MemberType>

@@ -1,6 +1,6 @@
 ---
-title: Local functions vs. lambda expressions | Microsoft Docs
-description: Why Local Functions might be a better choice than Lambda Expressions    
+title: Local functions vs. lambda expressions
+description: Learn why local functions might be a better choice than lambda expressions.
 keywords: C#, .NET, .NET Core, Latest Features, What's New, local functions, lambda expressions
 author: BillWagner
 ms.author: wiwagn
@@ -15,7 +15,7 @@ ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 
 ### Local functions compared to Lambda expressions
 
-At first glance, [local functions](programming-guide/classes-and/structs/local-functions.md) and [lambda expressions](lambda-expressions.md) are very similar.
+At first glance, [local functions](programming-guide/classes-and-structs/local-functions.md) and [lambda expressions](lambda-expressions.md) are very similar.
 Depending on your needs, local functions may be a much better and simpler
 solution.
 

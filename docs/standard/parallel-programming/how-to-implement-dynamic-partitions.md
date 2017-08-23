@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Dynamic Partitions | Microsoft Docs"
+title: "How to: Implement Dynamic Partitions"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Creating a Type Provider (F#) | Microsoft Docs"
-description: "Tutorial: Creating a Type Provider (F#)"
+title: "Tutorial: Creating a Type Provider (F#)"
+description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

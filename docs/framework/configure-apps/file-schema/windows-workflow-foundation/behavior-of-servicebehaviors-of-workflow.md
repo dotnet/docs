@@ -1,5 +1,5 @@
 ---
-title: "&lt;behavior&gt; of &lt;serviceBehaviors&gt; of workflow | Microsoft Docs"
+title: "&lt;behavior&gt; of &lt;serviceBehaviors&gt; of workflow"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

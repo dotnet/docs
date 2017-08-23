@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Anonymous Pipes for Local Interprocess Communication | Microsoft Docs"
+title: "How to: Use Anonymous Pipes for Local Interprocess Communication"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

@@ -1,5 +1,5 @@
 ---
-title: "Compensation (Samples) | Microsoft Docs"
+title: "Compensation (Samples)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

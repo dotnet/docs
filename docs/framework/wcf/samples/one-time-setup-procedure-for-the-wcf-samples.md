@@ -1,5 +1,5 @@
 ---
-title: "One-Time Setup Procedure for the Windows Communication Foundation Samples | Microsoft Docs"
+title: "One-Time Setup Procedure for the Windows Communication Foundation Samples"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

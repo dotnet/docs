@@ -1,6 +1,6 @@
 ---
-title: Structures (F#) | Microsoft Docs
-description: Structures (F#)
+title: Structures (F#)
+description: Learn about the F# structure, a compact object type often more efficient than a class for types with a small amount of data and simple behavior.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

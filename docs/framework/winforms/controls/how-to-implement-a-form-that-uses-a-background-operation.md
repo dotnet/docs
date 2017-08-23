@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement a Form That Uses a Background Operation | Microsoft Docs"
+title: "How to: Implement a Form That Uses a Background Operation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

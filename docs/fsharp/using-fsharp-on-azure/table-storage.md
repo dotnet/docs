@@ -1,5 +1,5 @@
 ---
-title: Get started with Azure Table storage using F# | Microsoft Docs
+title: Get started with Azure Table storage using F#
 description: Store structured data in the cloud using Azure Table storage, a NoSQL data store.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
@@ -33,7 +33,7 @@ You'll also need your storage access key for this account.
 
 The samples in this article can be used in either an F# application or an F# script. To create an F# script, create a file with the `.fsx` extension, for example `tables.fsx`, in your F# development environment.
 
-Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive.
+Next, use a [package manager](package-management.md) such as [Paket](https://fsprojects.github.io/Paket/) or [NuGet](https://www.nuget.org/) to install the `WindowsAzure.Storage` package and reference `WindowsAzure.Storage.dll` in your script using a `#r` directive. Do it again for `Microsoft.WindowsAzure.ConfigurationManager' in order to get the Microsoft.Azure namespace.
 
 ### Add namespace declarations
 

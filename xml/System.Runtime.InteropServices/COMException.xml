@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/standard/serialization/xml-and-soap-serialization.md).  
   
  <xref:System.Runtime.InteropServices.COMException> inherits from <xref:System.Runtime.InteropServices.ExternalException>.  
   

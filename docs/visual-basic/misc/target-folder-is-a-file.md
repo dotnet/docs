@@ -1,5 +1,5 @@
 ---
-title: "Target folder is a file | Microsoft Docs"
+title: "Target folder is a file"
 
 ms.date: "2015-07-20"
 ms.prod: .net

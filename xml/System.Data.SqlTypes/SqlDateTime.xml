@@ -925,7 +925,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDateTime op_Addition (System.Data.SqlTypes.SqlDateTime x, TimeSpan t);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDateTime operator + (System.Data.SqlTypes.SqlDateTime x, TimeSpan t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Addition(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Addition(System.Data.SqlTypes.SqlDateTime,System.TimeSpan)" />
       <MemberType>Method</MemberType>
@@ -962,7 +962,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Equality (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator == (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Equality(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
@@ -1002,7 +1002,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static DateTime op_Explicit (System.Data.SqlTypes.SqlDateTime x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator DateTime (System.Data.SqlTypes.SqlDateTime x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(valuetype System.Data.SqlTypes.SqlDateTime x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Explicit(System.Data.SqlTypes.SqlDateTime)~System.DateTime" />
       <MemberType>Method</MemberType>
@@ -1037,7 +1037,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDateTime op_Explicit (System.Data.SqlTypes.SqlString x);" />
+      <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlDateTime (System.Data.SqlTypes.SqlString x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlDateTime" />
       <MemberType>Method</MemberType>
@@ -1072,7 +1072,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThan (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt; (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_GreaterThan(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
@@ -1111,7 +1111,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt;= (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
@@ -1150,7 +1150,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDateTime op_Implicit (DateTime value);" />
+      <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlDateTime (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Implicit(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Implicit(System.DateTime)~System.Data.SqlTypes.SqlDateTime" />
       <MemberType>Method</MemberType>
@@ -1185,7 +1185,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_Inequality (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator != (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Inequality(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
@@ -1222,7 +1222,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThan (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt; (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_LessThan(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
@@ -1261,7 +1261,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt;= (System.Data.SqlTypes.SqlDateTime x, System.Data.SqlTypes.SqlDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.Data.SqlTypes.SqlDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_LessThanOrEqual(System.Data.SqlTypes.SqlDateTime,System.Data.SqlTypes.SqlDateTime)" />
       <MemberType>Method</MemberType>
@@ -1300,7 +1300,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDateTime op_Subtraction (System.Data.SqlTypes.SqlDateTime x, TimeSpan t);" />
+      <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlDateTime operator - (System.Data.SqlTypes.SqlDateTime x, TimeSpan t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlDateTime op_Subtraction(valuetype System.Data.SqlTypes.SqlDateTime x, valuetype System.TimeSpan t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlDateTime.op_Subtraction(System.Data.SqlTypes.SqlDateTime,System.TimeSpan)" />
       <MemberType>Method</MemberType>

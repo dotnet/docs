@@ -1,5 +1,5 @@
 ---
-title: "Retrieving Data Using a DataReader | Microsoft Docs"
+title: "Retrieving Data Using a DataReader"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself | Microsoft Docs"
+title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself"
 
 ms.date: "2015-07-20"
 ms.prod: .net

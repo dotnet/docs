@@ -1,5 +1,5 @@
 ---
-title: "Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes | Microsoft Docs"
+title: "Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

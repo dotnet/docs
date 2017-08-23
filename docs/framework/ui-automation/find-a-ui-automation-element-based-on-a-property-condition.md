@@ -1,5 +1,5 @@
 ---
-title: "Find a UI Automation Element Based on a Property Condition | Microsoft Docs"
+title: "Find a UI Automation Element Based on a Property Condition"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

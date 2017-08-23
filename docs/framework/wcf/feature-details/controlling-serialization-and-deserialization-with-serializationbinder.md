@@ -1,5 +1,5 @@
 ---
-title: "Controlling Serialization and Deserialization with SerializationBinder | Microsoft Docs"
+title: "Controlling Serialization and Deserialization with SerializationBinder"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

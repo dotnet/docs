@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Emissive Material to a 3-D Object | Microsoft Docs"
+title: "How to: Apply Emissive Material to a 3-D Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

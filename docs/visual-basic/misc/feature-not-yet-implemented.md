@@ -1,5 +1,5 @@
 ---
-title: "Feature not yet implemented | Microsoft Docs"
+title: "Feature not yet implemented"
 
 ms.date: "2015-07-20"
 ms.prod: .net

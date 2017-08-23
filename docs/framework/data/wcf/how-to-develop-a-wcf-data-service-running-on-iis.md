@@ -1,5 +1,5 @@
 ---
-title: "How to: Develop a WCF Data Service Running on IIS | Microsoft Docs"
+title: "How to: Develop a WCF Data Service Running on IIS"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-oob"

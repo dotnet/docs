@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerInfo5::SetEventMask2 Method | Microsoft Docs"
+title: "ICorProfilerInfo5::SetEventMask2 Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

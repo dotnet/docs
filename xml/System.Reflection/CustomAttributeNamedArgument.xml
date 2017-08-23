@@ -310,7 +310,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.CustomAttributeNamedArgument left, valuetype System.Reflection.CustomAttributeNamedArgument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.op_Equality(System.Reflection.CustomAttributeNamedArgument,System.Reflection.CustomAttributeNamedArgument)" />
       <MemberType>Method</MemberType>
@@ -350,7 +350,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.CustomAttributeNamedArgument left, System.Reflection.CustomAttributeNamedArgument right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.CustomAttributeNamedArgument left, valuetype System.Reflection.CustomAttributeNamedArgument right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.CustomAttributeNamedArgument.op_Inequality(System.Reflection.CustomAttributeNamedArgument,System.Reflection.CustomAttributeNamedArgument)" />
       <MemberType>Method</MemberType>

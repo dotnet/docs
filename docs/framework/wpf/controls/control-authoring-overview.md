@@ -1,5 +1,5 @@
 ---
-title: "Control Authoring Overview | Microsoft Docs"
+title: "Control Authoring Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Hook Up a Command to a Control with No Command Support | Microsoft Docs"
+title: "How to: Hook Up a Command to a Control with No Command Support"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

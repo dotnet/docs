@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Performance: Object Behavior | Microsoft Docs"
+title: "Optimizing Performance: Object Behavior"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

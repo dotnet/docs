@@ -1,5 +1,5 @@
 ---
-title: "TreeView How-to Topics | Microsoft Docs"
+title: "TreeView How-to Topics"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

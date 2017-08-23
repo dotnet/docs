@@ -1,5 +1,5 @@
 ---
-title: "NetTCPBinding | Microsoft Docs"
+title: "NetTCPBinding"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

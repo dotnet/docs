@@ -1,5 +1,5 @@
 ---
-title: "Using Application Protocols | Microsoft Docs"
+title: "Using Application Protocols"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

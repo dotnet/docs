@@ -1,5 +1,5 @@
 ---
-title: "ISymUnmanagedWriter::CloseMethod Method | Microsoft Docs"
+title: "ISymUnmanagedWriter::CloseMethod Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

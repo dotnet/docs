@@ -1,5 +1,5 @@
 ---
-title: "How to: Control Key-Frame Animation Timing | Microsoft Docs"
+title: "How to: Control Key-Frame Animation Timing"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

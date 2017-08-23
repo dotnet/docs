@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerCallback::ExceptionCLRCatcherExecute Method | Microsoft Docs"
+title: "ICorProfilerCallback::ExceptionCLRCatcherExecute Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

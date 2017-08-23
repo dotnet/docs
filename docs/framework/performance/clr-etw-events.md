@@ -1,5 +1,5 @@
 ---
-title: "CLR ETW Events | Microsoft Docs"
+title: "CLR ETW Events"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

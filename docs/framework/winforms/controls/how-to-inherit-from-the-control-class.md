@@ -1,5 +1,5 @@
 ---
-title: "How to: Inherit from the Control Class | Microsoft Docs"
+title: "How to: Inherit from the Control Class"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

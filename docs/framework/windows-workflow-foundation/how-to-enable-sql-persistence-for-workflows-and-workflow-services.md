@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable SQL Persistence for Workflows and Workflow Services | Microsoft Docs"
+title: "How to: Enable SQL Persistence for Workflows and Workflow Services"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

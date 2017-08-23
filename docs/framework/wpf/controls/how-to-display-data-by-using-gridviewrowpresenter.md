@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Data by Using GridViewRowPresenter | Microsoft Docs"
+title: "How to: Display Data by Using GridViewRowPresenter"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Statement is not valid inside a method-multiline lambda | Microsoft Docs"
+title: "Statement is not valid inside a method-multiline lambda"
 
 ms.date: "2015-07-20"
 ms.prod: .net

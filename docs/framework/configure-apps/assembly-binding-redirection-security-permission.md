@@ -1,5 +1,5 @@
 ---
-title: "Assembly Binding Redirection Security Permission | Microsoft Docs"
+title: "Assembly Binding Redirection Security Permission"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

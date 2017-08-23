@@ -1,5 +1,5 @@
 ---
-title: "1035 - RuntimeTransactionSet | Microsoft Docs"
+title: "1035 - RuntimeTransactionSet"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

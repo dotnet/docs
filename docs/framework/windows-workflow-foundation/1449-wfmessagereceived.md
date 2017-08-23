@@ -1,5 +1,5 @@
 ---
-title: "1449 - WfMessageReceived | Microsoft Docs"
+title: "1449 - WfMessageReceived"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

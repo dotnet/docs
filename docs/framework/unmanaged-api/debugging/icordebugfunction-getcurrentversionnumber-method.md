@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFunction::GetCurrentVersionNumber Method | Microsoft Docs"
+title: "ICorDebugFunction::GetCurrentVersionNumber Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

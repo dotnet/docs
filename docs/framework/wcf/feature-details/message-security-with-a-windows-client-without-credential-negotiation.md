@@ -1,5 +1,5 @@
 ---
-title: "Message Security with a Windows Client without Credential Negotiation | Microsoft Docs"
+title: "Message Security with a Windows Client without Credential Negotiation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

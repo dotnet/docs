@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the Thumbprint of a Certificate | Microsoft Docs"
+title: "How to: Retrieve the Thumbprint of a Certificate"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

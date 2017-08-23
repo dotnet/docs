@@ -1,5 +1,5 @@
 ---
-title: "Writing DataSet Contents as XML Data | Microsoft Docs"
+title: "Writing DataSet Contents as XML Data"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

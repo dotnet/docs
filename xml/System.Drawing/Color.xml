@@ -4191,7 +4191,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Drawing.Color left, System.Drawing.Color right);" />
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.Color left, System.Drawing.Color right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.Color left, valuetype System.Drawing.Color right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.op_Equality(System.Drawing.Color,System.Drawing.Color)" />
       <MemberType>Method</MemberType>
@@ -4240,7 +4240,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Drawing.Color left, System.Drawing.Color right);" />
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.Color left, System.Drawing.Color right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.Color left, valuetype System.Drawing.Color right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Color.op_Inequality(System.Drawing.Color,System.Drawing.Color)" />
       <MemberType>Method</MemberType>

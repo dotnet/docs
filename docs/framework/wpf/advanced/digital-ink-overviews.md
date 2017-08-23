@@ -1,5 +1,5 @@
 ---
-title: "Digital Ink Overviews | Microsoft Docs"
+title: "Digital Ink Overviews"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

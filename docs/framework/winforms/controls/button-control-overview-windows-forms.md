@@ -1,5 +1,5 @@
 ---
-title: "Button Control Overview (Windows Forms) | Microsoft Docs"
+title: "Button Control Overview (Windows Forms)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

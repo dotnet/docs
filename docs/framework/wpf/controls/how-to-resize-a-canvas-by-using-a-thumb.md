@@ -1,5 +1,5 @@
 ---
-title: "How to: Resize a Canvas by Using a Thumb | Microsoft Docs"
+title: "How to: Resize a Canvas by Using a Thumb"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

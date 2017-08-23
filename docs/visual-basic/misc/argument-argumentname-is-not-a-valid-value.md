@@ -1,5 +1,5 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; is not a valid value | Microsoft Docs"
+title: "Argument &#39;&lt;argumentname&gt;&#39; is not a valid value"
 
 ms.date: "2015-07-20"
 ms.prod: .net

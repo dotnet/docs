@@ -1,5 +1,5 @@
 ---
-title: "ICorDebug::SetManagedHandler Method | Microsoft Docs"
+title: "ICorDebug::SetManagedHandler Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

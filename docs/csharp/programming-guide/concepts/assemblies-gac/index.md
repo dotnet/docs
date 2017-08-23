@@ -1,5 +1,5 @@
 ---
-title: "Assemblies and the Global Assembly Cache (C#) | Microsoft Docs"
+title: "Assemblies and the Global Assembly Cache (C#)"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net

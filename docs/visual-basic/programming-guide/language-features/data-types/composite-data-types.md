@@ -1,5 +1,5 @@
 ---
-title: "Composite Data Types (Visual Basic) | Microsoft Docs"
+title: "Composite Data Types (Visual Basic)"
 ms.custom: ""
 ms.date: "2017-04-25"
 ms.prod: .net

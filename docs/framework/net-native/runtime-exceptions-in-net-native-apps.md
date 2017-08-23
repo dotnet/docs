@@ -1,5 +1,5 @@
 ---
-title: "Runtime Exceptions in .NET Native Apps | Microsoft Docs"
+title: "Runtime Exceptions in .NET Native Apps"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

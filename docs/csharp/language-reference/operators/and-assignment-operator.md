@@ -1,5 +1,5 @@
 ---
-title: "&amp;= Operator (C# Reference) | Microsoft Docs"
+title: "&amp;= Operator (C# Reference)"
 ms.date: "2015-07-20"
 ms.prod: .net
 ms.technology: 

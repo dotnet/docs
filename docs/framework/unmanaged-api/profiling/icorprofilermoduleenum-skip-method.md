@@ -1,5 +1,5 @@
 ---
-title: "ICorProfilerModuleEnum::Skip Method | Microsoft Docs"
+title: "ICorProfilerModuleEnum::Skip Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

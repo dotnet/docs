@@ -1,5 +1,5 @@
 ---
-title: "XAML and Custom Classes for WPF | Microsoft Docs"
+title: "XAML and Custom Classes for WPF"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

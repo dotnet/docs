@@ -1,5 +1,5 @@
 ---
-title: "How to: Draw a Polyline by Using the Polyline Element | Microsoft Docs"
+title: "How to: Draw a Polyline by Using the Polyline Element"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -157,7 +157,7 @@ Namespace DictionaryHowToVB
                                                 If (ci.Name = existingVal.Name And ci.Longitude = existingVal.Longitude) = False Then
                                                     Throw New ArgumentException("Duplicate city names are not allowed: {0}.", ci.Name)
                                                 End If
-                                                ' The only updatable fields are the temerature array and lastQueryDate.
+                                                ' The only updatable fields are the temperature array and lastQueryDate.
                                                 existingVal.LastQueryDate = DateTime.Now
                                                 existingVal.RecentHighTemperatures = ci.RecentHighTemperatures
                                                 Return existingVal

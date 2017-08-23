@@ -1,5 +1,5 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; has no parameter named &#39;&lt;parametername&gt;&#39; | Microsoft Docs"
+title: "Method &#39;&lt;methodname&gt;&#39; has no parameter named &#39;&lt;parametername&gt;&#39;"
 
 ms.date: "2015-07-20"
 ms.prod: .net

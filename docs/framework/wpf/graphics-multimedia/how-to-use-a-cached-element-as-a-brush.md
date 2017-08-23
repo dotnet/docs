@@ -1,5 +1,5 @@
 ---
-title: "How to: Use a Cached Element as a Brush | Microsoft Docs"
+title: "How to: Use a Cached Element as a Brush"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

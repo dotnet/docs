@@ -1,5 +1,5 @@
 ---
-title: "&lt;security&gt; of &lt;wsFederationHttpBinding&gt; | Microsoft Docs"
+title: "&lt;security&gt; of &lt;wsFederationHttpBinding&gt;"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

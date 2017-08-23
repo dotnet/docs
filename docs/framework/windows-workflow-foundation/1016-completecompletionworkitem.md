@@ -1,5 +1,5 @@
 ---
-title: "1016 - CompleteCompletionWorkItem | Microsoft Docs"
+title: "1016 - CompleteCompletionWorkItem"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

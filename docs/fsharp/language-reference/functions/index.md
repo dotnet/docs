@@ -1,6 +1,6 @@
 ---
-title: Functions (F#) | Microsoft Docs
-description: Functions (F#)
+title: Functions (F#)
+description: Learn about functions in F# and how F# supports common functional programming constructs.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart

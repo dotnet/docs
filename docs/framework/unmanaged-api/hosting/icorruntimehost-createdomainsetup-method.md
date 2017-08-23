@@ -1,5 +1,5 @@
 ---
-title: "ICorRuntimeHost::CreateDomainSetup Method | Microsoft Docs"
+title: "ICorRuntimeHost::CreateDomainSetup Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

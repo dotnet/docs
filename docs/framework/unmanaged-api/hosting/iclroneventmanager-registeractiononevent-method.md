@@ -1,5 +1,5 @@
 ---
-title: "ICLROnEventManager::RegisterActionOnEvent Method | Microsoft Docs"
+title: "ICLROnEventManager::RegisterActionOnEvent Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

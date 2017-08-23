@@ -1,5 +1,5 @@
 ---
-title: "Input Character Set (Entity SQL) | Microsoft Docs"
+title: "Input Character Set (Entity SQL)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

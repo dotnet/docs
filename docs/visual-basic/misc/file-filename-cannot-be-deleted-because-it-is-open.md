@@ -1,5 +1,5 @@
 ---
-title: "File &#39;&lt;filename&gt;&#39; cannot be deleted because it is open | Microsoft Docs"
+title: "File &#39;&lt;filename&gt;&#39; cannot be deleted because it is open"
 
 ms.date: "2015-07-20"
 ms.prod: .net

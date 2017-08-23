@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEditAndContinueErrorInfo::GetToken Method | Microsoft Docs"
+title: "ICorDebugEditAndContinueErrorInfo::GetToken Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

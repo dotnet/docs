@@ -1,5 +1,5 @@
 ---
-title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type | Microsoft Docs"
+title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type"
 
 ms.date: "2015-07-20"
 ms.prod: .net

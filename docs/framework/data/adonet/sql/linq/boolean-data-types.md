@@ -1,5 +1,5 @@
 ---
-title: "Boolean Data Types | Microsoft Docs"
+title: "Boolean Data Types"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

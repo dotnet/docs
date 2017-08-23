@@ -1,5 +1,5 @@
 ---
-title: Implementing HTTP call retries with exponential backoff with Polly | Microsoft Docs 
+title: Implementing HTTP call retries with exponential backoff with Polly
 description: .NET Microservices Architecture for Containerized .NET Applications | Implementing HTTP call retries with exponential backoff with Polly
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

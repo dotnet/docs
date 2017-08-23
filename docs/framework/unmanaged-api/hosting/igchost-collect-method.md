@@ -1,5 +1,5 @@
 ---
-title: "IGCHost::Collect Method | Microsoft Docs"
+title: "IGCHost::Collect Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

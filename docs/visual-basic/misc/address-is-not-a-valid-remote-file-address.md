@@ -1,5 +1,5 @@
 ---
-title: "&lt;address&gt; is not a valid remote file address | Microsoft Docs"
+title: "&lt;address&gt; is not a valid remote file address"
 
 ms.date: "2015-07-20"
 ms.prod: .net

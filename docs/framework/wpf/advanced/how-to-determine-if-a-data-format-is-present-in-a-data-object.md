@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine if a Data Format is Present in a Data Object | Microsoft Docs"
+title: "How to: Determine if a Data Format is Present in a Data Object"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

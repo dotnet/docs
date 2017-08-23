@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Power Packs Controls | Microsoft Docs"
+title: "Visual Basic Power Packs Controls"
 
 ms.date: "2015-07-20"
 ms.prod: .net

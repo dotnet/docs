@@ -1,5 +1,5 @@
 ---
-title: "Application Settings for Windows Forms | Microsoft Docs"
+title: "Application Settings for Windows Forms"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"

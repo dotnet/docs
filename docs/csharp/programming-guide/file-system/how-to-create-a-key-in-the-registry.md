@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Key In the Registry (Visual C#) | Microsoft Docs"
+title: "How to: Create a Key In the Registry (Visual C#)"
 
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -53,7 +53,7 @@ key.Close();
   
 -   Replace the `Names` parameter with the name of a key that exists directly under the HKEY_CURRENT_USER node of the registry.  
   
--   Replace the `Nam`e parameter with the name of a value that exists directly under the Names node.  
+-   Replace the `Name` parameter with the name of a value that exists directly under the Names node.  
   
 ## Robust Programming  
  Examine the registry structure to find a suitable location for your key. For example, you might want to open the Software key of the current user, and create a key with your company's name. Then add the registry values to your company's key.  

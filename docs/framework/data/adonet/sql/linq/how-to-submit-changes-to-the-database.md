@@ -1,5 +1,5 @@
 ---
-title: "How to: Submit Changes to the Database | Microsoft Docs"
+title: "How to: Submit Changes to the Database"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

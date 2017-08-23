@@ -1,5 +1,5 @@
 ---
-title: "How to: Animate a 3-D Rotation Using Rotation3DAnimation | Microsoft Docs"
+title: "How to: Animate a 3-D Rotation Using Rotation3DAnimation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

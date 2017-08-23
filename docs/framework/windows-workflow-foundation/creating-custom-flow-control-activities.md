@@ -1,5 +1,5 @@
 ---
-title: "Creating custom flow control activities | Microsoft Docs"
+title: "Creating custom flow control activities"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

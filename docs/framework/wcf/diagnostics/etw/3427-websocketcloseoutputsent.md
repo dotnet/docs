@@ -1,5 +1,5 @@
 ---
-title: "3427 - WebSocketCloseOutputSent | Microsoft Docs"
+title: "3427 - WebSocketCloseOutputSent"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

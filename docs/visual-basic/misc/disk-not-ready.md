@@ -1,5 +1,5 @@
 ---
-title: "Disk not ready | Microsoft Docs"
+title: "Disk not ready"
 
 ms.date: "2015-07-20"
 ms.prod: .net

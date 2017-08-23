@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle the ScrollChanged Event | Microsoft Docs"
+title: "How to: Handle the ScrollChanged Event"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

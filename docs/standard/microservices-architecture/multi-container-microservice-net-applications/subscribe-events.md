@@ -1,5 +1,5 @@
 ---
-title: Subscribing to events | Microsoft Docs 
+title: Subscribing to events
 description: .NET Microservices Architecture for Containerized .NET Applications | Subscribing to events
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE

@@ -1,5 +1,5 @@
 ---
-title: "Markup Extensions and WPF XAML | Microsoft Docs"
+title: "Markup Extensions and WPF XAML"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

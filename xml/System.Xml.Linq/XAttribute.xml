@@ -601,7 +601,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static bool op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator bool (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Boolean" />
       <MemberType>Method</MemberType>
@@ -639,7 +639,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static DateTime op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator DateTime (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.DateTime" />
       <MemberType>Method</MemberType>
@@ -677,7 +677,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static DateTimeOffset op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator DateTimeOffset (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTimeOffset op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.DateTimeOffset" />
       <MemberType>Method</MemberType>
@@ -715,7 +715,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator decimal (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Decimal" />
       <MemberType>Method</MemberType>
@@ -753,7 +753,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static double op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator double (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Double" />
       <MemberType>Method</MemberType>
@@ -791,7 +791,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Guid op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Guid (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Guid op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Guid" />
       <MemberType>Method</MemberType>
@@ -829,7 +829,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static int op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator int (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int32" />
       <MemberType>Method</MemberType>
@@ -867,7 +867,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static long op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator long (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Int64" />
       <MemberType>Method</MemberType>
@@ -905,7 +905,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;bool&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;bool&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Boolean}" />
       <MemberType>Method</MemberType>
@@ -943,7 +943,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;DateTime&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.DateTime}" />
       <MemberType>Method</MemberType>
@@ -981,7 +981,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;DateTimeOffset&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;DateTimeOffset&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.DateTimeOffset}" />
       <MemberType>Method</MemberType>
@@ -1019,7 +1019,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;decimal&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;decimal&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Decimal}" />
       <MemberType>Method</MemberType>
@@ -1057,7 +1057,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;double&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;float64&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Double}" />
       <MemberType>Method</MemberType>
@@ -1095,7 +1095,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;Guid&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;Guid&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype System.Guid&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Guid}" />
       <MemberType>Method</MemberType>
@@ -1133,7 +1133,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;int&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;int32&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int32}" />
       <MemberType>Method</MemberType>
@@ -1171,7 +1171,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;long&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;long&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;int64&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Int64}" />
       <MemberType>Method</MemberType>
@@ -1209,7 +1209,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;float&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;float&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;float32&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.Single}" />
       <MemberType>Method</MemberType>
@@ -1247,7 +1247,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;TimeSpan&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;TimeSpan&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.TimeSpan}" />
       <MemberType>Method</MemberType>
@@ -1285,7 +1285,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;uint&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;uint&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;unsigned int32&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt32}" />
       <MemberType>Method</MemberType>
@@ -1323,7 +1323,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static Nullable&lt;ulong&gt; op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator Nullable&lt;ulong&gt; (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Nullable`1&lt;unsigned int64&gt; op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Nullable{System.UInt64}" />
       <MemberType>Method</MemberType>
@@ -1361,7 +1361,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static float op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator float (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.Single" />
       <MemberType>Method</MemberType>
@@ -1399,7 +1399,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static string op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator string (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.String" />
       <MemberType>Method</MemberType>
@@ -1437,7 +1437,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static TimeSpan op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator TimeSpan (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.TimeSpan" />
       <MemberType>Method</MemberType>
@@ -1475,7 +1475,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static uint op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator uint (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int32 op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt32" />
       <MemberType>Method</MemberType>
@@ -1513,7 +1513,7 @@ Attribute
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
-      <MemberSignature Language="C#" Value="public static ulong op_Explicit (System.Xml.Linq.XAttribute attribute);" />
+      <MemberSignature Language="C#" Value="public static explicit operator ulong (System.Xml.Linq.XAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname unsigned int64 op_Explicit(class System.Xml.Linq.XAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XAttribute.op_Explicit(System.Xml.Linq.XAttribute)~System.UInt64" />
       <MemberType>Method</MemberType>

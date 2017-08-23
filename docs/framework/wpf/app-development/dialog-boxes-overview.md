@@ -1,5 +1,5 @@
 ---
-title: "Dialog Boxes Overview | Microsoft Docs"
+title: "Dialog Boxes Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

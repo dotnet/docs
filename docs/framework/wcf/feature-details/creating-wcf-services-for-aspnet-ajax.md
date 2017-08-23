@@ -1,5 +1,5 @@
 ---
-title: "Creating WCF Services for ASP.NET AJAX | Microsoft Docs"
+title: "Creating WCF Services for ASP.NET AJAX"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

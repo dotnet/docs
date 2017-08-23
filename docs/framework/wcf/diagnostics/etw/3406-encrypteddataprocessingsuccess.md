@@ -1,5 +1,5 @@
 ---
-title: "3406 - EncryptedDataProcessingSuccess | Microsoft Docs"
+title: "3406 - EncryptedDataProcessingSuccess"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "Shapes and Basic Drawing in WPF Overview | Microsoft Docs"
+title: "Shapes and Basic Drawing in WPF Overview"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

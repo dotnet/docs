@@ -1,5 +1,5 @@
 ---
-title: "How to: Expose a Contract to SOAP and Web Clients | Microsoft Docs"
+title: "How to: Expose a Contract to SOAP and Web Clients"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

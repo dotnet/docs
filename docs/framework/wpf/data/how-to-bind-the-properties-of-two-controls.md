@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind the Properties of Two Controls | Microsoft Docs"
+title: "How to: Bind the Properties of Two Controls"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

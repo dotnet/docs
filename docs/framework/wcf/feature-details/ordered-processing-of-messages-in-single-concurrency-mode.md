@@ -1,5 +1,5 @@
 ---
-title: "Ordered Processing of Messages in Single Concurrency Mode | Microsoft Docs"
+title: "Ordered Processing of Messages in Single Concurrency Mode"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

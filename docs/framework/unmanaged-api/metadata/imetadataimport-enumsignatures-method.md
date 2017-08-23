@@ -1,5 +1,5 @@
 ---
-title: "IMetaDataImport::EnumSignatures Method | Microsoft Docs"
+title: "IMetaDataImport::EnumSignatures Method"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

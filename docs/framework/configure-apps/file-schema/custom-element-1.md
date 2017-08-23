@@ -1,5 +1,5 @@
 ---
-title: "Custom element for SingleTagSectionHandler | Microsoft Docs"
+title: "Custom element for SingleTagSectionHandler"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: 
@@ -49,7 +49,7 @@ None
 
 ## Remarks
 
-The **\<sectionName>** element is a custom element defined by a [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) tag in the [**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.ConfigurationManager.GetSection?displayProperty=fullName>.
+The **\<sectionName>** element is a custom element defined by a [**\<section>**](~/docs/framework/configure-apps/file-schema/section-element.md) tag in the [**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=fullName>.
 
 ## Example
 

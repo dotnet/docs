@@ -1,5 +1,5 @@
 ---
-title: "Class Library (WPF) | Microsoft Docs"
+title: "Class Library (WPF)"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

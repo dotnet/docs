@@ -1,5 +1,5 @@
 ---
-title: "Networking in Windows Forms Applications | Microsoft Docs"
+title: "Networking in Windows Forms Applications"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

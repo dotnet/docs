@@ -1,5 +1,5 @@
 ---
-title: "Ordered Node Retrieval by Index | Microsoft Docs"
+title: "Ordered Node Retrieval by Index"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net"

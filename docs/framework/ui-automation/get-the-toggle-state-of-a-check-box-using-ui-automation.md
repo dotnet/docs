@@ -1,5 +1,5 @@
 ---
-title: "Get the Toggle State of a Check Box Using UI Automation | Microsoft Docs"
+title: "Get the Toggle State of a Check Box Using UI Automation"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

@@ -1,5 +1,5 @@
 ---
-title: "CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5 | Microsoft Docs"
+title: "CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

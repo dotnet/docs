@@ -1,5 +1,5 @@
 ---
-title: "Pens, Lines, and Rectangles in GDI+ | Microsoft Docs"
+title: "Pens, Lines, and Rectangles in GDI+"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

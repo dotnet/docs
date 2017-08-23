@@ -1,5 +1,5 @@
 ---
-title: "Modeling Cancellation Behavior in Workflows | Microsoft Docs"
+title: "Modeling Cancellation Behavior in Workflows"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

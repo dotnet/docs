@@ -1,5 +1,5 @@
 ---
-title: "StrongNameKeyInstall Function | Microsoft Docs"
+title: "StrongNameKeyInstall Function"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"

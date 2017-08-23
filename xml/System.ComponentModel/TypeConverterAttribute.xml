@@ -33,7 +33,7 @@
 ## Remarks  
  The class you use for conversion must inherit from <xref:System.ComponentModel.TypeConverter>. Use the <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> property to get the name of the class that provides the data conversion for the object this attribute is bound to.  
   
- For more information about attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87). For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+ For more information about attributes, see [Attributes](~/docs/standard/attributes/index.md). For more information about type converters, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
   
  In order to establish a type converter on a custom class that provides type conversion behavior for XAML, you apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type. The argument of the attribute references your type converter implementation. Your type converter should be able to accept values from a string that is used for attributes or initialization text in XAML markup, and convert that string into your intended destination type. For more information, see[TypeConverters and XAML](~/docs/framework/wpf/advanced/typeconverters-and-xaml.md).  
   

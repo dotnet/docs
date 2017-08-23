@@ -91,7 +91,7 @@ The <xref:System.ValueTuple> structure represents a tuple that has no elements. 
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current instance.</param>
-        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified <see cref="T:System.ValueTuple`1" /> instance. </summary>
+        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified <see cref="T:System.ValueTuple" /> instance. </summary>
         <returns>This method always returns 0. </returns>
         <remarks>Because a <xref:System.ValueTuple> instance has no elements, any two <xref:System.ValueTuple> instances are considered to be equivalent.</remarks>
       </Docs>

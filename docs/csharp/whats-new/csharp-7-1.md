@@ -75,7 +75,7 @@ following lines:
 </PropertyGroup>
 ```
 
-Valid settings for `LangVersion` element are:
+Valid settings for the `LangVersion` element are:
 
 * `ISO-1`
 * `ISO-2`

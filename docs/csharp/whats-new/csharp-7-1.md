@@ -35,16 +35,16 @@ The new language features in this release are:
 
 ## Language version selection
 
-The C# compiler that ships with Visual Studio 2017 version 15.3 or with
-the .NET Core SDK 2.0 supports C# 7.1. However, the 7.1 features are turned
-off by default. To enable 7.1 features, you need to change the language
+The C# compiler supports C# 7.1 starting with Visual Studio 2017 version 15.3, or
+the .NET Core SDK 2.0. However, the 7.1 features are turned
+off by default. To enable the 7.1 features, you need to change the language
 version setting for your project.
 
 In Visual Studio, right-click on the project node in Solution Explorer and select
-'Properties'. Select the "Build" tab and select the "Advanced" button. In the dropdown,
-select "C# latest minor version (latest)", or the specific version "C# 7.1"
-as shown in the image below. The 'latest' value means you want to use the latest
-minor version on the current machine. The 'C# 7.1' means that you want to use C# 7.1,
+**Properties**. Select the **Build** tab and select the **Advanced** button. In the dropdown,
+select **C# latest minor version (latest)**, or the specific version **C# 7.1**
+as shown in the image following. The `latest` value means you want to use the latest
+minor version on the current machine. The `C# 7.1` means that you want to use C# 7.1,
 even after newer minor versions are released.
 
 [Setting the language version](./csharp-7-1/media/advanced-build-settings.png)
@@ -75,20 +75,20 @@ following lines:
 </PropertyGroup>
 ```
 
-Valid settings for "langVersion" element are:
+Valid settings for `LangVersion` element are:
 
-* ISO-1
-* ISO-2
-* 3
-* 4
-* 5
-* 6
-* 7
-* 7.1
-* default
-* latest
+* `ISO-1`
+* `ISO-2`
+* `3`
+* `4`
+* `5`
+* `6`
+* `7`
+* `7.1`
+* `default`
+* `latest`
 
-The special strings "default" and "latest" resolve to the latest major
+The special strings `default` and `latest` resolve to the latest major
 and minor language versions installed on the build machine, respectively.
 
 This setting decouples installing new versions of the SDK and tools
@@ -109,7 +109,7 @@ static int Main()
 }
 ```
 
-You can know write:
+You can now write:
 
 ```csharp
 static async Task<int> Main()
@@ -120,8 +120,8 @@ static async Task<int> Main()
 }
 ```
 
-If your program does not return an exit code, you can declare a `Main` method
-that returns a @System.Threading.Tasks.Task:
+If your program doesn't return an exit code, you can declare a `Main` method
+that returns a <xref:System.Threading.Tasks.Task>:
 
 ```csharp
 static async Task Main()
@@ -137,14 +137,14 @@ in the programming guide.
 ## Default literal expressions
 
 Default literal expressions are an enhancement to default value expressions.
-These initialize a variable to the default value. Where you previously
+These expressions initialize a variable to the default value. Where you previously
 would write:
 
 ```csharp
 Func<string, bool> whereClause = default(Func<string, bool>);
 ```
 
-You can now omit the type on the right hand side of the initialization:
+You can now omit the type on the right-hand side of the initialization:
 
 ```csharp
 Func<string, bool> whereClause = default;

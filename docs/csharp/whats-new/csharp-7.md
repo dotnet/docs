@@ -6,7 +6,7 @@ author: BillWagner
 ms.author: wiwagn
 ms.date: 12/21/2016
 ms.topic: article
-ms.prod: visual-studio-dev-15
+ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
@@ -15,12 +15,12 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7
 
 C# 7 adds a number of new features to the C# language:
-* [`out` variables](#out-variables):
+* [`out` variables](#out-variables)
     - You can declare `out` values inline as arguments to the method where they are used.
 * [Tuples](#tuples)
     - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
 * [Discards](#discards)
-    Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They are particularly useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
+    - Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They are particularly useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
 * [Pattern Matching](#pattern-matching)
     - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
@@ -208,9 +208,9 @@ Discards are supported in the following scenarios:
 
 * When deconstructing tuples or user-defined types.
 
-* When calling methods with [out](..\language-reference\keywords\out.md) parameters.
+* When calling methods with [out](../language-reference/keywords/out.md) parameters.
 
-* In a pattern matching operation with the [is](..\language-reference\keywords\is.md) and [switch](../language-reference/keywords/switch.md) statements.
+* In a pattern matching operation with the [is](../language-reference/keywords/is.md) and [switch](../language-reference/keywords/switch.md) statements.
 
 * As a standalone identifier when you want to explicitly identify the value of an assignment as a discard.
 

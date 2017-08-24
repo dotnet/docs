@@ -604,7 +604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property returns a task whose <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>. To create task that returns a value and runs to completion, call the <xref:System.Threading.Tasks.Task.FromResult%2A> method.  
+ This property returns a task whose <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>. To create task that returns a value and runs to completion, call the <xref:System.Threading.Tasks.Task.FromResult%2A> method.  
   
  Repeated attempts to retrieve this property value may not always return the same instance.  
   
@@ -1918,7 +1918,7 @@ End Sub
      [!code-csharp[System.Threading.Tasks.Task.Delay#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.delay/cs/delay5.cs#7)]
      [!code-vb[System.Threading.Tasks.Task.Delay#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.delay/vb/delay5.vb#7)]  
   
- After the specified time delay, the task is completed in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ After the specified time delay, the task is completed in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  
   
  This method depends on the system clock. This means that the time delay will approximately equal the resolution of the system clock if the `millisecondsDelay` argument is less than the resolution of the system clock, which is approximately 15 milliseconds on Windows systems.  
   
@@ -1972,7 +1972,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After the specified time delay, the task is completed in <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ After the specified time delay, the task is completed in <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  
   
  For usage scenarios and additional examples, see the documentation for the <xref:System.Threading.Tasks.Task.Delay%28System.Int32%29> overload.  
   
@@ -2035,7 +2035,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the cancellation token is signaled before the specified time delay, a <xref:System.Threading.Tasks.TaskCanceledException> exception results, and the task is completed in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  Otherwise, the task is completed in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state once the specified time delay has elapsed.  
+ If the cancellation token is signaled before the specified time delay, a <xref:System.Threading.Tasks.TaskCanceledException> exception results, and the task is completed in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.  Otherwise, the task is completed in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state once the specified time delay has elapsed.  
   
  For usage scenarios and additional examples, see the documentation for the <xref:System.Threading.Tasks.Task.Delay%28System.Int32%29> overload.  
   
@@ -2044,7 +2044,7 @@ End Sub
    
   
 ## Examples  
- The following example launches a task that includes a call to the <xref:System.Threading.Tasks.Task.Delay%28System.Int32%2CSystem.Threading.CancellationToken%29> method with a one second delay. Before the delay interval elapses, the token is cancelled. The output from the example shows that, as a result, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown, and the tasks' <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ The following example launches a task that includes a call to the <xref:System.Threading.Tasks.Task.Delay%28System.Int32%2CSystem.Threading.CancellationToken%29> method with a one second delay. Before the delay interval elapses, the token is cancelled. The output from the example shows that, as a result, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown, and the tasks' <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
   
  [!code-csharp[System.Threading.Tasks.Task.Delay#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.delay/cs/delay3.cs#3)]
  [!code-vb[System.Threading.Tasks.Task.Delay#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.delay/vb/delay3.vb#3)]  
@@ -2095,7 +2095,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the cancellation token is signaled before the specified time delay, a <xref:System.Threading.Tasks.TaskCanceledException> exception results, and the task is completed in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  Otherwise, the task is completed in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state once the specified time delay has elapsed.  
+ If the cancellation token is signaled before the specified time delay, a <xref:System.Threading.Tasks.TaskCanceledException> exception results, and the task is completed in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.  Otherwise, the task is completed in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state once the specified time delay has elapsed.  
   
  For usage scenarios and additional examples, see the documentation for the <xref:System.Threading.Tasks.Task.Delay%28System.Int32%29> overload.  
   
@@ -2104,7 +2104,7 @@ End Sub
    
   
 ## Examples  
- The following example launches a task that includes a call to the <xref:System.Threading.Tasks.Task.Delay%28System.TimeSpan%2CSystem.Threading.CancellationToken%29> method with a one-and-a-half second delay. Before the delay interval elapses, the token is cancelled. The output from the example shows that, as a result, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown, and the tasks' <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ The following example launches a task that includes a call to the <xref:System.Threading.Tasks.Task.Delay%28System.TimeSpan%2CSystem.Threading.CancellationToken%29> method with a one-and-a-half second delay. Before the delay interval elapses, the token is cancelled. The output from the example shows that, as a result, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown, and the tasks' <xref:System.Threading.Tasks.Task.Status%2A> property is set to <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
   
  [!code-csharp[System.Threading.Tasks.Task.Delay#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.delay/cs/delay4.cs#4)]
  [!code-vb[System.Threading.Tasks.Task.Delay#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.delay/vb/delay4.vb#4)]  
@@ -2408,7 +2408,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates a <xref:System.Threading.Tasks.Task> object whose <xref:System.Threading.Tasks.Task.Status%2A> property is <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> and whose <xref:System.Threading.Tasks.Task.Exception%2A> property contains `exception`. The method is commonly used when you immediately know that the work that a task performs will throw an exception before executing a longer code path. For an example, see the <xref:System.Threading.Tasks.Task.FromException%60%601%28System.Exception%29> overload.  
+ This method creates a <xref:System.Threading.Tasks.Task> object whose <xref:System.Threading.Tasks.Task.Status%2A> property is <xref:System.Threading.Tasks.TaskStatus.Faulted> and whose <xref:System.Threading.Tasks.Task.Exception%2A> property contains `exception`. The method is commonly used when you immediately know that the work that a task performs will throw an exception before executing a longer code path. For an example, see the <xref:System.Threading.Tasks.Task.FromException%60%601%28System.Exception%29> overload.  
   
  ]]></format>
         </remarks>
@@ -2454,7 +2454,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates a <xref:System.Threading.Tasks.Task%601> object whose <xref:System.Threading.Tasks.Task.Status%2A> property is <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> and whose <xref:System.Threading.Tasks.Task.Exception%2A> property contains `exception`. The method is commonly used when you immediately know that the work that a task performs will throw an exception before executing a longer code path. The example provides an illustration.  
+ This method creates a <xref:System.Threading.Tasks.Task%601> object whose <xref:System.Threading.Tasks.Task.Status%2A> property is <xref:System.Threading.Tasks.TaskStatus.Faulted> and whose <xref:System.Threading.Tasks.Task.Exception%2A> property contains `exception`. The method is commonly used when you immediately know that the work that a task performs will throw an exception before executing a longer code path. The example provides an illustration.  
   
    
   
@@ -2509,7 +2509,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates a <xref:System.Threading.Tasks.Task%601> object whose <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property is `result` and whose <xref:System.Threading.Tasks.Task.Status%2A> property is <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>. The method is commonly used when the return value of a task is immediately known without executing a longer code path. The example provides an illustration.  
+ This method creates a <xref:System.Threading.Tasks.Task%601> object whose <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property is `result` and whose <xref:System.Threading.Tasks.Task.Status%2A> property is <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>. The method is commonly used when the return value of a task is immediately known without executing a longer code path. The example provides an illustration.  
   
  To create a Task object that does not return a value, retrieve the Task object from the <xref:System.Threading.Tasks.Task.CompletedTask%2A> property.  
   
@@ -2640,7 +2640,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Threading.Tasks.Task> will complete in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state under any of the following conditions:  
+ A <xref:System.Threading.Tasks.Task> will complete in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state under any of the following conditions:  
   
 -   Its <xref:System.Threading.Tasks.TaskFactory.CancellationToken%2A> was marked for cancellation before the task started executing,  
   
@@ -3285,7 +3285,7 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  Ordinarily, tasks are executed asynchronously on a thread pool thread and do not block the calling thread. Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method are associated with the current <xref:System.Threading.Tasks.TaskScheduler> and are run on the calling thread. If the target scheduler does not support running this task on the calling thread, the task will be scheduled for execution on the scheduler, and the calling thread will block until the task has completed execution. Even though the task runs synchronously, the calling thread should still call <xref:System.Threading.Tasks.Task.Wait%2A> to handle any exceptions that the task might throw.  For more information on exception handling, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
- Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously%2A> method are instantiated by calling a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> class constructor. The task to be run synchronously must be in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state. A task may be started and run only once. Any attempts to schedule a task a second time results in an exception.  
+ Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously%2A> method are instantiated by calling a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> class constructor. The task to be run synchronously must be in the <xref:System.Threading.Tasks.TaskStatus.Created> state. A task may be started and run only once. Any attempts to schedule a task a second time results in an exception.  
   
    
   
@@ -3337,7 +3337,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously%2A> method are instantiated by calling a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> class constructor. The task to be run synchronously must be in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state. A task may be started and run only once. Any attempts to schedule a task a second time results in an exception.  
+ Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously%2A> method are instantiated by calling a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> class constructor. The task to be run synchronously must be in the <xref:System.Threading.Tasks.TaskStatus.Created> state. A task may be started and run only once. Any attempts to schedule a task a second time results in an exception.  
   
  If the target scheduler does not support running this task on the current thread, the task will be scheduled for execution on the scheduler, and the current thread will block until the task has completed execution. Because of this, the calling thread does not need to call a method such as <xref:System.Threading.Tasks.Task.Wait%2A> to ensure that the task has completed execution. For more information on exception handling for task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
@@ -3740,7 +3740,7 @@ Task t Status: RanToCompletion, Result: 42
    
   
 ## Examples  
- The following example illustrates the simple use of a cancellation token to cancel waiting for a task's completion. A task is launched, calls the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> method to cancel any of the token source's cancellation tokens, and then delays for five seconds. Note that the task itself has not been passed the cancellation token and is not cancelable. The application thread calls the task's <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method to wait for the task to complete, but the wait is canceled once the cancellation token is cancelled and an <xref:System.OperationCanceledException> is thrown. The exception handler reports the exception and then sleeps for six seconds. As the output from the example shows, that delay allows the task to complete in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ The following example illustrates the simple use of a cancellation token to cancel waiting for a task's completion. A task is launched, calls the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> method to cancel any of the token source's cancellation tokens, and then delays for five seconds. Note that the task itself has not been passed the cancellation token and is not cancelable. The application thread calls the task's <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> method to wait for the task to complete, but the wait is canceled once the cancellation token is cancelled and an <xref:System.OperationCanceledException> is thrown. The exception handler reports the exception and then sleeps for six seconds. As the output from the example shows, that delay allows the task to complete in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  
   
  [!code-csharp[System.Threading.Tasks.Task.Wait#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task.wait/cs/wait3.cs#3)]
  [!code-vb[System.Threading.Tasks.Task.Wait#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task.wait/vb/wait3.vb#3)]  
@@ -4470,13 +4470,13 @@ Task t Status: RanToCompletion, Result: 42
 > [!NOTE]
 >  The call to <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29> method does not block the calling thread.  
   
- If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state,  where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
+ If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus.Faulted> state,  where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
   
- If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.  
   
- If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  
   
- If the supplied array/enumerable contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state before it's returned to the caller.  
+ If the supplied array/enumerable contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state before it's returned to the caller.  
   
    
   
@@ -4540,13 +4540,13 @@ Task t Status: RanToCompletion, Result: 42
 > [!NOTE]
 >  The call to <xref:System.Threading.Tasks.Task.WhenAll%28System.Threading.Tasks.Task%5B%5D%29> method does not block the calling thread.  
   
- If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state, where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
+ If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus.Faulted> state, where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
   
- If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.  
   
- If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  
   
- If the supplied array/enumerable contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state before it's returned to the caller.  
+ If the supplied array/enumerable contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state before it's returned to the caller.  
   
    
   
@@ -4605,13 +4605,13 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  The call to <xref:System.Threading.Tasks.Task.WhenAll%60%601%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7B%60%600%7D%7D%29> method does not block the calling thread. However, a call to the returned <xref:System.Threading.Tasks.Task%601.Result%2A> property does block the calling thread.  
   
- If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state, where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
+ If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus.Faulted> state, where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
   
- If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.  
   
- If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  The <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property of the returned task will be set to an array containing all of the results of the supplied tasks in the same order as they were provided (e.g. if the input tasks array contained t1, t2, t3, the output task's <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property will return an `TResult[]` where `arr[0] == t1.Result, arr[1] == t2.Result, and arr[2] == t3.Result)`.  
+ If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  The <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property of the returned task will be set to an array containing all of the results of the supplied tasks in the same order as they were provided (e.g. if the input tasks array contained t1, t2, t3, the output task's <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property will return an `TResult[]` where `arr[0] == t1.Result, arr[1] == t2.Result, and arr[2] == t3.Result)`.  
   
- If the `tasks` argument contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state before it's returned to the caller. The returned `TResult[]` will be an array of 0 elements.  
+ If the `tasks` argument contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state before it's returned to the caller. The returned `TResult[]` will be an array of 0 elements.  
   
    
   
@@ -4678,13 +4678,13 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  The call to <xref:System.Threading.Tasks.Task.WhenAll%60%601%28System.Threading.Tasks.Task%7B%60%600%7D%5B%5D%29> method does not block the calling thread. However, a call to the returned <xref:System.Threading.Tasks.Task%601.Result%2A> property does block the calling thread.  
   
- If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state, where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
+ If any of the supplied tasks completes in a faulted state, the returned task will also complete in a <xref:System.Threading.Tasks.TaskStatus.Faulted> state, where its exceptions will contain the aggregation of the set of unwrapped exceptions from each of the supplied tasks.  
   
- If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  
+ If none of the supplied tasks faulted but at least one of them was canceled, the returned task will end in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state.  
   
- If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state.  The <xref:System.Threading.Tasks.Task%601.Result%2A> of the returned task will be set to an array containing all of the results of the supplied tasks in the same order as they were provided (e.g. if the input tasks array contained t1, t2, t3, the output   task's <xref:System.Threading.Tasks.Task%601.Result%2A> will return an `TResult[]` where `arr[0] == t1.Result, arr[1] == t2.Result, and arr[2] == t3.Result)`.  
+ If none of the tasks faulted and none of the tasks were canceled, the resulting task will end in the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state.  The <xref:System.Threading.Tasks.Task%601.Result%2A> of the returned task will be set to an array containing all of the results of the supplied tasks in the same order as they were provided (e.g. if the input tasks array contained t1, t2, t3, the output   task's <xref:System.Threading.Tasks.Task%601.Result%2A> will return an `TResult[]` where `arr[0] == t1.Result, arr[1] == t2.Result, and arr[2] == t3.Result)`.  
   
- If the supplied array/enumerable contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state before it's returned to the caller.  The returned `TResult[]` will be an array of 0 elements.  
+ If the supplied array/enumerable contains no tasks, the returned task will immediately transition to a <xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state before it's returned to the caller.  The returned `TResult[]` will be an array of 0 elements.  
   
    
   

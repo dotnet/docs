@@ -55,7 +55,7 @@ Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/ne
   
 -   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
   
-The <xref:System.ValueTuple> structure itself does not represent a value tuple. Instead, it provides static methods for creating instances of value tuple types. It provides helper methods that you can call to instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static `Create` methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
+The <xref:System.ValueTuple> structure represents a tuple that has no elements. It is useful primarily for its static methods that let you create and compare instances of value tuple types. Its helper methods let you instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static <xref:System.ValueTuple.Create%2A> methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
   
  ]]></format>
     </remarks>
@@ -91,11 +91,13 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current instance.</param>
-        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance with a specified object.</summary>
-        <returns>Returns 0 if <paramref name="other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">
-          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
+        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified <see cref="T:System.ValueTuple" /> instance. </summary>
+        <returns>This method always returns 0. </returns>
+        <remarks>
+           <format type="text/markdown"><![CDATA[  
+        Because a <xref:System.ValueTuple> instance has no elements, any two <xref:System.ValueTuple> instances are considered to be equivalent.
+           ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">

@@ -3,6 +3,9 @@
 title: Get Started - C# Guide
 description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
 keywords: C#, Get Started, Acquisition, Install
+helpviewer_keywords: 
+  - "Visual C#, getting started"
+  - "getting started, Visual C#"
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/23/2017
@@ -10,21 +13,6 @@ ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Get started with C# #
 
@@ -78,6 +66,6 @@ The following topics are available:
 
     Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
 
-## See Also
- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+## See also
+ [Getting Started with Visual C# and Visual Basic using Visual Studio](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
  [Beginner Developer Learning Center](http://go.microsoft.com/fwlink/?LinkId=123826)

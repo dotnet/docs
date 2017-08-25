@@ -153,7 +153,7 @@ Func<string, bool> whereClause = default;
 You can learn more about this enhancement in the C# Programming Guide topic
 on [default value expressions](../programming-guide/statements-expressions-operators/default-value-expressions.md).
 
-This enhancement also changes some of the parsing rules for the [`default` keyword](../language-reference/keywords/default.md)
+This enhancement also changes some of the parsing rules for the [default keyword](../language-reference/keywords/default.md).
 
 ## Inferred tuple element names
 

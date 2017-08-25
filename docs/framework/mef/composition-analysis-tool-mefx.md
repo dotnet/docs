@@ -24,7 +24,7 @@ The Composition Analysis Tool (Mefx) is a command-line application that analyzes
   
 <a name="getting_mefx"></a>   
 ## Getting Mefx  
- Mefx is available on Codeplex at [Managed Extensibility Framework](http://go.microsoft.com/fwlink/?LinkID=187078). Simply download and unzip the tool.  
+ Mefx is available on GitHub at [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef/releases/tag/4.0). Simply download and unzip the tool.  
   
 <a name="basic_syntax"></a>   
 ## Basic Syntax  

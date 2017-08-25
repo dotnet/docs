@@ -25,11 +25,11 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](~/docs/standard/net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A Target Framework Moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library. 
 
-| Target Framework      | Latest Version | Target Framework Moniker (TFM) | Minimum <br/> .NET Standard Version | Metapackage |
-| :-------------------: | :------------: | :----------------------------: | :---------------------------: | :---------: |
-| .NET Standard         | 2.0            | netstandard2.0                 | N/A                           | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
-| .NET Core Application | 2.0            | netcoreapp2.0                  | 2.0                           | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
-| .NET Framework        | 4.7            | net47                          | 1.0                           | N/A |
+| Target Framework      | Latest Version | Target Framework Moniker (TFM)   | Minimum <br/> .NET Standard Version | Metapackage |
+| :-------------------: | :------------: | :------------------------------: | :---------------------------: | :---------: |
+| .NET Standard         | 2.0.0            | netstandard2.0                 | N/A                           | [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) |
+| .NET Core Application | 2.0.0            | netcoreapp2.0                  | 2.0                           | [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) |
+| .NET Framework        | 4.7            | net47                            | 1.0                           | N/A |
 
 ## Supported target framework versions
 
@@ -37,8 +37,8 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6 |
-| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1 |
+| .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0 |
+| .NET Core                  | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
 | .NET Micro Framework       | netmf |

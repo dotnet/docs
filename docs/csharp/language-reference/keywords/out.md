@@ -35,7 +35,7 @@ translation.priority.ht:
 # out (C# Reference)
 You can use the `out` contextual keyword in two contexts:
 
-- As a [parameter modifier](../../../csharp/language-reference/keywords/out-parameter-modifier.md), which lets pass an argument to a method by reference rather than by value.
+- As a [parameter modifier](../../../csharp/language-reference/keywords/out-parameter-modifier.md), which lets you pass an argument to a method by reference rather than by value.
 
 - In [generic type parameter declarations](../../../csharp/language-reference/keywords/out-generic-modifier.md) for interfaces and delegates, which specifies that a type parameter is covariant.
    

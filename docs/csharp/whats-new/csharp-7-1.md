@@ -20,7 +20,7 @@ separate the decision to upgrade tools from the decision to upgrade language
 versions.
 
 C# 7.1 adds the [language version selection](#language-version-selection)
-configuration element, and four new language features.
+configuration element, three new language features and new compiler behavior.
 
 The new language features in this release are:
 
@@ -30,8 +30,9 @@ The new language features in this release are:
   - You can use default literal expressions in default value expressions when the target type can be inferred.
 * [Inferred tuple element names](#inferred-tuple-element-names)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-* [Reference assembly generation](#reference-assembly-generation)
-  - The `/refout` and `/refonly` compiler options enable reference assembly generation.
+
+Finally, the compiler has two options `/refout` and `/refonly` that
+control [reference assembly generation](#reference-assembly-generation).
 
 ## Language version selection
 

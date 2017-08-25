@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-keywords: .NET, .NET Core, getting started, news
+keywords: .NET, .NET Core, getting started, news 
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017

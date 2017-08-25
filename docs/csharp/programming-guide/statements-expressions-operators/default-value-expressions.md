@@ -1,16 +1,11 @@
 ---
 title: "default value expressions (C# Programming Guide)"
-
-ms.date: "2017-08-03"
+description: "default value expressions produce the default value for any reference type or value type"
+ms.date: "2017-08-23"
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 helpviewer_keywords: 
   - "generics [C#], default keyword"
   - "default keyword [C#], generic programming"
@@ -18,38 +13,23 @@ ms.assetid: b9daf449-4e64-496e-8592-6ed2c8875a98
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
-
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # default value expressions (C# programming guide)
 
 A default value expression produces the default value for a type. Default value expressions are particularly useful in generic classes and methods. One issue that arises using generics is how to assign a default value to a parameterized type `T` when you do not know the following in advance:
 
-- Whether `T` will be a reference type or a value type.
-- If `T` is a value type, whether it will be a numeric value or a user defined struct.
+- Whether `T` is a reference type or a value type.
+- If `T` is a value type, whether is a numeric value or a user defined struct.
 
- Given a variable `t` of a parameterized type `T`, the statement `t = null` is only valid if `T` is a reference type and `t = 0` will only work for numeric value types but not for structs. The solution is to use a default value expression, which will return `null` for reference types (class types and interface types) and zero for numeric value types. For user defined structs, it will return the struct initialized to the zero bit pattern, which produces 0 or `null` for each member depending on whether that member is a value or reference types. For nullable value types, default returns a <xref:System.Nullable%601?displayProperty=fullName>, which is initialized like any struct.
+ Given a variable `t` of a parameterized type `T`, the statement `t = null` is only valid if `T` is a reference type. The assignment `t = 0` only works for numeric value types but not for structs. The solution is to use a default value expression, which returns `null` for reference types (class types and interface types) and zero for numeric value types. For user-defined structs, it returns the struct initialized to the zero bit pattern, which produces 0 or `null` for each member depending on whether that member is a value or reference type. For nullable value types, `default` returns a <xref:System.Nullable%601?displayProperty=fullName>, which is initialized like any struct.
 
 The `default(T)` expression is not limited to generic classes and methods. Default value expressions can be used with any managed type. Any of these expressions are valid:
 
- [!code-cs[csProgGuideGenerics#1](codesnippet/CSharp/default-value-expressions.cs)]
+ [!code-cs[csProgGuideGenerics#1](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-value-expressions.cs)]
 
  The following example from the `GenericList<T>` class shows how to use the `default(T)` operator in a generic class. For more information, see [Generics Overview](../generics/introduction-to-generics.md).
 
- [!code-cs[csProgGuideGenerics#2](codesnippet/CSharp/default-keyword-in-generic-code_1.cs)]
+ [!code-cs[csProgGuideGenerics#2](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#Snippet41)]
 
 ## default literal and type inference
 
@@ -63,11 +43,9 @@ Beginning with C# 7.1, the `default` literal can be used for default value expre
 
 The following example shows many usages of the `default` literal in a default value expression:
 
-[!code-cs[csProgGuideGenerics#3](codesnippet/CSharp/default-literal.cs)]
+[!code-cs[csProgGuideGenerics#3](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-literal.cs)]
 
-
-
-## See Also
+## See also
 
  <xref:System.Collections.Generic>
  [C# Programming Guide](../index.md)

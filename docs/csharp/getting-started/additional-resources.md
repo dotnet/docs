@@ -46,8 +46,8 @@ The following sites can help you find answers to common problems.
  [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=108287)  
  Provides access to Knowledge Base (KB) articles, downloads and updates, support Webcasts, and other services.  
   
- [CodePlex](http://go.microsoft.com/fwlink/?LinkId=137330)  
- Hosts open source software projects. You can use CodePlex to create new projects to share with the world or join others who have already started their own projects.  
+ [Microsoft](https://github.com/Microsoft)  
+ Hosts open source software projects. You can use GitHub to create new projects to share with the world or join others who have already started their own projects.  
   
 ### Forums  
  [Visual C# Language](http://go.microsoft.com/fwlink/?LinkId=165947)  

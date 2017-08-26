@@ -40,7 +40,7 @@ Visual Basic 6.0 is made up of these key deliverables:
 
 ## The Visual Basic 6.0 IDE
 
-The Visual Basic 6.0 IDE is no longer supported as of April 8, 2008. However, Custom Support Agreements may be available from Microsoft. Additionally, both the Windows and Visual Basic teams have tested Visual Basic 6.0 IDE on Windows Vista, Windows 7, Windows Server 2008, Windows 8, and Windows 8.1 to understand and mitigate (if appropriate) compatibility issues on 32-bit versions of Windows (see the [64-Bit Windows](#62-bit-windows) section below for further information about 64-bit systems). This announcement does not change the support policy for the IDE.
+The Visual Basic 6.0 IDE is no longer supported as of April 8, 2008. Additionally, both the Windows and Visual Basic teams have tested Visual Basic 6.0 IDE on Windows Vista, Windows 7, Windows Server 2008, Windows 8, and Windows 8.1 to understand and mitigate (if appropriate) compatibility issues on 32-bit versions of Windows (see the [64-Bit Windows](#62-bit-windows) section below for further information about 64-bit systems). This announcement does not change the support policy for the IDE.
 
 ## The Visual Basic 6.0 runtime
 
@@ -139,20 +139,20 @@ This section provides additional information regarding the operating systems tha
 
 |Windows operating system|VB6 Supported Runtime</br>Files Shipping in Windows have support?|VB6 Supported Rutime</br>Extended Files</br>to distribute with your application have support?| VB6 IDE has support?|
 |---|---|---|---|
-|Windows 10, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+|Windows 10, all 32-bit editions|Yes *|Yes *|No|
 |Windows 10, all 64-bit editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes* </br> 32-bit apps running in WOW only|No|
-|Windows 8.1, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+|Windows 8.1, all 32-bit editions|Yes *|Yes *|No|
 | Windows 8.1, all 64-bit editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes* </br> 32-bit apps running in WOW only|No|
 |Windows Server 2012 R2, all 64-bit editions (WOW only)<br>Windows Server 2012, all 64-bit editions (WOW only)|Yes* </br> 32-bit apps running in WOW only|Yes* </br> 32-bit apps running in WOW only|No|
-|Windows 8, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+|Windows 8, all 32-bit editions|Yes *|Yes *|No|
 |Windows 8, all 64-bit editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
-|Windows 7, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+|Windows 7, all 32-bit editions|Yes *|Yes *|No|
 |Windows 7, all 64-bit editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
-| Windows Vista, all  32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+| Windows Vista, all  32-bit editions|Yes *|Yes *|No|
 |Windows Vista, all x64 editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
 |Windows Server 2008 R2, all x64 editions (WOW only)</br>Windows Server 2008, all x64 editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
-|Windows Server 2008, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
-|Windows 2003 server, all 32-bit editions including R2|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+|Windows Server 2008, all 32-bit editions|Yes *|Yes *|No|
+|Windows 2003 server, all 32-bit editions including R2|Yes *|Yes *|No|
 |Windows 2003 server. all x64 editions including R2|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
 
 > [!NOTE]

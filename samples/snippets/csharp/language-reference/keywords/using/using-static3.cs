@@ -16,7 +16,7 @@ class Program
          s = s + Format("   Radius: {0:N2}\n", c.Radius);
          s = s + Format("   Diameter: {0:N2}\n", c.Diameter);
          s = s + Format("   Circumference: {0:N2}\n", c.Circumference);
-         s = s + Format("   Area: {0:N2}\n", c.Radius);
+         s = s + Format("   Area: {0:N2}\n", c.Area);
          WriteLine(s);
       }
       else {
@@ -56,5 +56,5 @@ public class Circle
 //          Radius: 12.45
 //          Diameter: 24.90
 //          Circumference: 486.95
-//          Area: 12.45
+//          Area: 78.23
    

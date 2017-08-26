@@ -1,0 +1,93 @@
+﻿@model UIWebRole.Models.IndexViewModel
+
+@{
+	ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style type="text/css">
+	.picture-container { border:1px solid blue; float:left; margin-right:20px; }
+</style>
+
+<p>
+    @Html.ActionLink("Create a new file entity by uploading the file", "Create")
+</p>
+
+<p>
+    File entities in Table:
+</p>
+@if (Model.ListInTable != null && 0 < Model.ListInTable.Count()) {
+<table width="100%">
+    <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Content Type</th>
+        <th>Blob Address</th>
+        <th>Upload Time</th>
+    </tr>
+@foreach (var item in Model.ListInTable) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size) Bytes
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentType)
+        </td>
+        <td>
+            <a href="@SharedLib.StorageHelper.DefaultBlobBaseAddress/@Html.DisplayFor(model => item.BlobAddress)">@Html.DisplayFor(modelItem => item.BlobAddress)</a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UploadTime)
+        </td>
+    </tr>
+}
+</table>
+} else {
+<p>No file entities available in Table.</p>
+}
+
+<p><hr /></p>
+
+<p>
+    File entities in Cache:
+</p>
+@if (@Model.CacheLastUpdateTime.HasValue) {
+<p style="font-style:italic">
+    Cache Last Updated: @Model.CacheLastUpdateTime
+</p>
+}
+@if (Model.ListInCache != null && 0 < Model.ListInCache.Count()) {
+<table width="100%">
+    <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Content Type</th>
+        <th>Blob Address</th>
+        <th>Upload Time</th>
+    </tr>
+@foreach (var item in Model.ListInCache) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size) Bytes
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentType)
+        </td>
+        <td>
+            <a href="@SharedLib.StorageHelper.DefaultBlobBaseAddress/@Html.DisplayFor(model => item.BlobAddress)">@Html.DisplayFor(modelItem => item.BlobAddress)</a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UploadTime)
+        </td>
+    </tr>
+}
+</table>
+} else {
+<p>No file entities available in Cache.</p>
+}

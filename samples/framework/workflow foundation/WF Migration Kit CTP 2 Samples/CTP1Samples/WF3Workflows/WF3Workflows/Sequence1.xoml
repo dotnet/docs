@@ -1,0 +1,15 @@
+﻿<SequentialWorkflowActivity x:Class="WF3Workflows.Sequence1" x:Name="Sequence1" xmlns:ns0="clr-namespace:WF3Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<ns0:Write x:Name="Write1" Input="hello" />
+	<DelayActivity x:Name="Delay1" TimeoutDuration="00:00:05" />
+	<ns0:Beep x:Name="Beep1" />
+	<WhileActivity x:Name="While1">
+		<WhileActivity.Condition>
+			<RuleConditionReference ConditionName="Condition1" />
+		</WhileActivity.Condition>
+		<SequenceActivity x:Name="Seq1">
+			<ns0:Write x:Name="Write2" Input="An extra beep!" />
+			<ns0:Beep x:Name="Beep2" />
+		</SequenceActivity>
+	</WhileActivity>
+	<ns0:Write x:Name="Write3" Input="goodbye" />
+</SequentialWorkflowActivity>

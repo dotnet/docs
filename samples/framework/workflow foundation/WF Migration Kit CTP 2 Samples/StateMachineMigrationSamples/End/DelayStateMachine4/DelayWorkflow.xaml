@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activity x:Class="MigratedWorkflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <StateMachine InitialState="{x:Reference __ReferenceID10}" DisplayName="DelayWorkflow">
+    <State x:Name="__ReferenceID10" DisplayName="Workflow1InitialState">
+      <State.Entry>
+        <Sequence DisplayName="stateInitializationActivity1">
+          <WriteLine DisplayName="codeActivity1" Text="The CodeActivity named 'codeActivity1' in the source workflow could not be migrated. This WriteLine activity is executing in its place." />
+        </Sequence>
+      </State.Entry>
+      <State.Transitions>
+        <Transition DisplayName="setStateActivity1">
+          <Transition.Trigger>
+            <Sequence DisplayName="eventDrivenActivity1">
+              <Delay DisplayName="delayActivity1" Duration="00:00:01" />
+              <Assign x:TypeArguments="x:String" Value="stateActivity3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <VariableReference x:TypeArguments="x:String">
+                      <VariableReference.Variable>
+                        <Variable x:TypeArguments="x:String" x:Name="__ReferenceID4" Name="Workflow1InitialState" />
+                      </VariableReference.Variable>
+                    </VariableReference>
+                  </OutArgument>
+                </Assign.To>
+              </Assign>
+            </Sequence>
+          </Transition.Trigger>
+          <Transition.Condition>[setStateActivity1= Workflow1InitialState]</Transition.Condition>
+          <Transition.To>
+            <State x:Name="__ReferenceID8" DisplayName="stateActivity3">
+              <State.Entry>
+                <Sequence DisplayName="stateInitializationActivity2">
+                  <WriteLine DisplayName="codeActivity2" Text="The CodeActivity named 'codeActivity2' in the source workflow could not be migrated. This WriteLine activity is executing in its place." />
+                </Sequence>
+              </State.Entry>
+              <State.Transitions>
+                <Transition DisplayName="setStateActivity3">
+                  <Transition.Trigger>
+                    <Sequence DisplayName="eventDrivenActivity3">
+                      <Delay DisplayName="delayActivity3" Duration="00:00:02" />
+                      <Assign x:TypeArguments="x:String" Value="stateActivity4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">
+                            <VariableReference x:TypeArguments="x:String">
+                              <VariableReference.Variable>
+                                <Variable x:TypeArguments="x:String" x:Name="__ReferenceID3" Name="stateActivity3" />
+                              </VariableReference.Variable>
+                            </VariableReference>
+                          </OutArgument>
+                        </Assign.To>
+                      </Assign>
+                    </Sequence>
+                  </Transition.Trigger>
+                  <Transition.Condition>[setStateActivity3= stateActivity3]</Transition.Condition>
+                  <Transition.To>
+                    <State x:Name="__ReferenceID5" DisplayName="stateActivity4">
+                      <State.Entry>
+                        <Sequence DisplayName="stateInitializationActivity3">
+                          <WriteLine DisplayName="codeActivity3" Text="The CodeActivity named 'codeActivity3' in the source workflow could not be migrated. This WriteLine activity is executing in its place." />
+                        </Sequence>
+                      </State.Entry>
+                      <State.Transitions>
+                        <Transition DisplayName="setStateActivity4">
+                          <Transition.Trigger>
+                            <Sequence DisplayName="eventDrivenActivity4">
+                              <Delay DisplayName="delayActivity4" Duration="00:00:02" />
+                              <Assign x:TypeArguments="x:String" Value="stateActivity5">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <VariableReference x:TypeArguments="x:String">
+                                      <VariableReference.Variable>
+                                        <Variable x:TypeArguments="x:String" x:Name="__ReferenceID2" Name="stateActivity4" />
+                                      </VariableReference.Variable>
+                                    </VariableReference>
+                                  </OutArgument>
+                                </Assign.To>
+                              </Assign>
+                            </Sequence>
+                          </Transition.Trigger>
+                          <Transition.Condition>[setStateActivity4= stateActivity4]</Transition.Condition>
+                          <Transition.To>
+                            <State x:Name="__ReferenceID7" DisplayName="stateActivity5">
+                              <State.Entry>
+                                <Sequence DisplayName="stateInitializationActivity4">
+                                  <WriteLine DisplayName="codeActivity4" Text="The CodeActivity named 'codeActivity4' in the source workflow could not be migrated. This WriteLine activity is executing in its place." />
+                                </Sequence>
+                              </State.Entry>
+                              <State.Transitions>
+                                <Transition DisplayName="setStateActivity5">
+                                  <Transition.Trigger>
+                                    <Sequence DisplayName="eventDrivenActivity5">
+                                      <Delay DisplayName="delayActivity6" Duration="00:00:02" />
+                                      <Assign x:TypeArguments="x:String" Value="stateActivity1">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">
+                                            <VariableReference x:TypeArguments="x:String">
+                                              <VariableReference.Variable>
+                                                <Variable x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="stateActivity5" />
+                                              </VariableReference.Variable>
+                                            </VariableReference>
+                                          </OutArgument>
+                                        </Assign.To>
+                                      </Assign>
+                                    </Sequence>
+                                  </Transition.Trigger>
+                                  <Transition.Condition>[setStateActivity5= stateActivity5]</Transition.Condition>
+                                  <Transition.To>
+                                    <State x:Name="__ReferenceID6" DisplayName="stateActivity1">
+                                      <State.Entry>
+                                        <Sequence DisplayName="stateInitializationActivity5">
+                                          <WriteLine DisplayName="codeActivity5" Text="The CodeActivity named 'codeActivity5' in the source workflow could not be migrated. This WriteLine activity is executing in its place." />
+                                        </Sequence>
+                                      </State.Entry>
+                                      <State.Transitions>
+                                        <Transition DisplayName="setStateActivity6">
+                                          <Transition.Trigger>
+                                            <Sequence DisplayName="eventDrivenActivity7">
+                                              <Delay DisplayName="delayActivity5" Duration="00:00:02" />
+                                              <Assign x:TypeArguments="x:String" Value="stateActivity2">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">
+                                                    <VariableReference x:TypeArguments="x:String">
+                                                      <VariableReference.Variable>
+                                                        <Variable x:TypeArguments="x:String" x:Name="__ReferenceID0" Name="stateActivity1" />
+                                                      </VariableReference.Variable>
+                                                    </VariableReference>
+                                                  </OutArgument>
+                                                </Assign.To>
+                                              </Assign>
+                                            </Sequence>
+                                          </Transition.Trigger>
+                                          <Transition.Condition>[setStateActivity6= stateActivity1]</Transition.Condition>
+                                          <Transition.To>
+                                            <State x:Name="__ReferenceID9" DisplayName="stateActivity2" IsFinal="True">
+                                              <State.Variables>
+                                                <Variable x:TypeArguments="x:String" Name="stateActivity2" />
+                                              </State.Variables>
+                                            </State>
+                                          </Transition.To>
+                                        </Transition>
+                                      </State.Transitions>
+                                      <State.Variables>
+                                        <x:Reference>__ReferenceID0</x:Reference>
+                                        <Variable x:TypeArguments="x:String" Default="stateActivity2" Name="setStateActivity6" />
+                                      </State.Variables>
+                                    </State>
+                                  </Transition.To>
+                                </Transition>
+                              </State.Transitions>
+                              <State.Variables>
+                                <x:Reference>__ReferenceID1</x:Reference>
+                                <Variable x:TypeArguments="x:String" Default="stateActivity1" Name="setStateActivity5" />
+                              </State.Variables>
+                            </State>
+                          </Transition.To>
+                        </Transition>
+                      </State.Transitions>
+                      <State.Variables>
+                        <x:Reference>__ReferenceID2</x:Reference>
+                        <Variable x:TypeArguments="x:String" Default="stateActivity5" Name="setStateActivity4" />
+                      </State.Variables>
+                    </State>
+                  </Transition.To>
+                </Transition>
+              </State.Transitions>
+              <State.Variables>
+                <x:Reference>__ReferenceID3</x:Reference>
+                <Variable x:TypeArguments="x:String" Default="stateActivity4" Name="setStateActivity3" />
+              </State.Variables>
+            </State>
+          </Transition.To>
+        </Transition>
+        <Transition DisplayName="setStateActivity2">
+          <Transition.Trigger>
+            <Sequence DisplayName="eventDrivenActivity2">
+              <Delay DisplayName="delayActivity2" Duration="00:00:02" />
+              <Assign x:TypeArguments="x:String" Value="stateActivity4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID4}" />
+                  </OutArgument>
+                </Assign.To>
+              </Assign>
+            </Sequence>
+          </Transition.Trigger>
+          <Transition.To>
+            <x:Reference>__ReferenceID5</x:Reference>
+          </Transition.To>
+          <Transition.Condition>[setStateActivity2= Workflow1InitialState]</Transition.Condition>
+        </Transition>
+      </State.Transitions>
+      <State.Variables>
+        <x:Reference>__ReferenceID4</x:Reference>
+        <Variable x:TypeArguments="x:String" Default="stateActivity3" Name="setStateActivity1" />
+        <Variable x:TypeArguments="x:String" Default="stateActivity4" Name="setStateActivity2" />
+      </State.Variables>
+    </State>
+    <x:Reference>__ReferenceID6</x:Reference>
+    <x:Reference>__ReferenceID7</x:Reference>
+    <x:Reference>__ReferenceID8</x:Reference>
+    <x:Reference>__ReferenceID5</x:Reference>
+    <x:Reference>__ReferenceID9</x:Reference>
+  </StateMachine>
+</Activity>

@@ -1,0 +1,40 @@
+﻿<RuleDefinitions xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<RuleDefinitions.Conditions>
+		<RuleExpressionCondition Name="Condition1">
+			<RuleExpressionCondition.Expression>
+				<ns0:CodeBinaryOperatorExpression Operator="ValueEquality" xmlns:ns0="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					<ns1:CodeBinaryOperatorExpression.Right xmlns:ns1="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						<ns2:CodePrimitiveExpression xmlns:ns2="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+							<ns3:CodePrimitiveExpression.Value xmlns:ns3="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+								<ns4:Int32 xmlns:ns4="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1</ns4:Int32>
+							</ns3:CodePrimitiveExpression.Value>
+						</ns2:CodePrimitiveExpression>
+					</ns1:CodeBinaryOperatorExpression.Right>
+					<ns5:CodeBinaryOperatorExpression.Left xmlns:ns5="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						<ns6:CodeMethodInvokeExpression xmlns:ns6="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+							<ns7:CodeMethodInvokeExpression.Parameters xmlns:ns7="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+								<ns8:CodePrimitiveExpression xmlns:ns8="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+									<ns9:CodePrimitiveExpression.Value xmlns:ns9="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+										<ns10:Int32 xmlns:ns10="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1</ns10:Int32>
+									</ns9:CodePrimitiveExpression.Value>
+								</ns8:CodePrimitiveExpression>
+								<ns11:CodePrimitiveExpression xmlns:ns11="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+									<ns12:CodePrimitiveExpression.Value xmlns:ns12="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+										<ns13:Int32 xmlns:ns13="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">3</ns13:Int32>
+									</ns12:CodePrimitiveExpression.Value>
+								</ns11:CodePrimitiveExpression>
+							</ns7:CodeMethodInvokeExpression.Parameters>
+							<ns14:CodeMethodInvokeExpression.Method xmlns:ns14="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+								<ns15:CodeMethodReferenceExpression MethodName="Next" xmlns:ns15="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+									<ns16:CodeMethodReferenceExpression.TargetObject xmlns:ns16="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+										<ns17:CodeObjectCreateExpression CreateType="System.Random, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:ns17="clr-namespace:System.CodeDom;Assembly=System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+									</ns16:CodeMethodReferenceExpression.TargetObject>
+								</ns15:CodeMethodReferenceExpression>
+							</ns14:CodeMethodInvokeExpression.Method>
+						</ns6:CodeMethodInvokeExpression>
+					</ns5:CodeBinaryOperatorExpression.Left>
+				</ns0:CodeBinaryOperatorExpression>
+			</RuleExpressionCondition.Expression>
+		</RuleExpressionCondition>
+	</RuleDefinitions.Conditions>
+</RuleDefinitions>

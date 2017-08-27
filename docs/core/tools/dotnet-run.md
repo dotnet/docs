@@ -85,6 +85,10 @@ The name of the launch profile (if any) to use when launching the application. L
 
 Doesn't build the project before running.
 
+`--no-dependencies`
+
+Set this flag to ignore project to project references and only restore the root project.
+
 `--no-launch-profile`
 
 Doesn't attempt to use *launchSettings.json* to configure the application.

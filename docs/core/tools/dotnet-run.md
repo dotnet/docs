@@ -68,6 +68,10 @@ Defines the build configuration. The default value is `Debug`.
 
 Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
 
+`--force`
+
+Set this flag to force all dependencies to be resolved even if the last restore was successful. This is equivalent to deleting *project.assets.json*.
+
 `-h|--help`
 
 Prints out a short help for the command.

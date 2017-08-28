@@ -1,7 +1,6 @@
 # [C# Compiler Options](index.md)
 ## [Command-line Building With csc.exe](command-line-building-with-csc-exe.md)
 ## [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
-## [Deployment of C# Applications](app-deployment.md)
 ## [C# Compiler Options Listed by Category](listed-by-category.md)
 ## [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)
 ### [@ (C# Compiler Options)](response-file-compiler-option.md)

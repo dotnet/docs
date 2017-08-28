@@ -76,7 +76,7 @@ CentOS distributions require the following libraries installed:
 .NET Core native installers are available for supported Linux distributions/ versions. The native installers require admin (sudo) access to the server. The advantage of using a native installer is that the all of the .NET Core native dependencies are installed. Native installers also install the .NET Core SDK system-wide.
 
 On Linux, there are two installer package choices: 
-* Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS. 
+* Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
 * Using the packages themselves, DEB or RPM. 
 
 ### Scripting Installs With the .NET Core Installer Script 
@@ -88,15 +88,11 @@ The installer bash script is used in automation scenarios and non-admin installa
 > [!IMPORTANT]
 > Before running the script, install the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
 
-## Install .NET Core dependencies for Red Hat Enterprise Linux (RHEL) 7 Server
+## Install .NET Core for Red Hat Enterprise Linux (RHEL) 7
 
-> [!Warning]
-> Before you start, remove any previous versions of .NET Core from your system.
+To install .NET Core on RHEL 7:
 
-### Verify and Enable the .NET channel for RHEL 7 Server
-To install .NET Core dependencies on RHEL Server:
-
-1. Enable the Red Hat .NET channel, available under your RHEL 7 Server subscription. 
+1. Enable the Red Hat .NET channel, available under your RHEL 7 subscription.
     * For Red Hat Enterprise 7 Server, use:
          ```bash
         subscription-manager repos --enable=rhel-7-server-dotnet-rpms
@@ -114,11 +110,42 @@ To install .NET Core dependencies on RHEL Server:
     ```bash
     yum install scl-utils
     ```
-3. Install .NET Core 1.1 (and all dependencies):
-    ```bash
-    yum install rh-dotnetcore11
-    scl enable rh-dotnetcore11 bash
-    ```
+3. Install .NET Core
+# [.NET Core 2.x](#tab/netcore2x)
+
+Install .NET Core 2.0 SDK and Runtime:
+```bash
+yum install rh-dotnet20
+```
+Enable .NET Core 2.0 SDK/Runtime for your environment:
+```bash
+scl enable rh-dotnet20 bash
+```
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+**.NET Core 1.1**
+
+Install .NET Core 1.1 SDK and Runtime:
+```bash
+yum install rh-dotnetcore11
+```
+Enable .NET Core 1.1 SDK and Runtime for your environment:
+```bash
+scl enable rh-dotnetcore11 bash
+```
+
+**.NET Core 1.0**
+
+Install .NET Core 1.0 SDK and Runtime:
+```bash
+yum install rh-dotnetcore10
+```
+Enable .NET Core 1.0 SDK and Runtime for your environment:
+```bash
+scl enable rh-dotnetcore10 bash
+```
+---
 4. Run the `dotnet --help` command to prove the installation succeeded.
 
      ```bash

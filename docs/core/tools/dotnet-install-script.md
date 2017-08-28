@@ -4,7 +4,7 @@ description: Learn about the dotnet-install scripts to install the .NET Core CLI
 keywords: dotnet-install, dotnet-install scripts, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 07/10/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -16,7 +16,7 @@ ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 
 ## Name
 
-`dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the .NET Core Command-line Interface (CLI) tools and the shared runtime.
+`dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the .NET Core CLI tools and the shared runtime.
 
 ## Synopsis
 
@@ -30,20 +30,22 @@ macOS/Linux:
 
 ## Description
 
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime.
+The `dotnet-install` scripts are used to perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI tools and the shared runtime.
 
-It is recommended to use the stable version that is hosted on [.NET Core main website](https://dot.net). The direct path to the scripts are:
+We recommended to use the stable version that is hosted on [.NET Core main website](https://dot.net). The direct paths to the scripts are:
 
 * https://dot.net/v1/dotnet-install.sh (bash, UNIX)
-* https://dot.net/v1/dotnet-install.ps1 (powershell, Windows)
+* https://dot.net/v1/dotnet-install.ps1 (Powershell, Windows)
 
-The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: One is a PowerShell script that works on Windows. The other script is a bash script that works on Linux/OS X. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/OS X systems. 
+The main usefulness of these scripts is in automation scenarios and non-admin installations. There are two scripts: One is a PowerShell script that works on Windows. The other script is a bash script that works on Linux/macOS. Both scripts have the same behavior. The bash script also reads PowerShell switches, so you can use PowerShell switches with the script on Linux/macOS systems. 
 
 The installation scripts download the ZIP/tarball file from the CLI build drops and proceed to install it in either the default location or in a location specified by `-InstallDir|--install-dir`. By default, the installation scripts download the SDK and install it. If you wish to only obtain the shared runtime, specify the `--shared-runtime` argument. 
 
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `--no-path` argument. 
 
-You can install a specific version using the `--version` argument. The version must be specified as a 3-part version (for example, 1.0.0-13232). If omitted, it will use the `latest` version.
+-Before running the script, install the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). 
+
+You can install a specific version using the `--version` argument. The version must be specified as a 3-part version (for example, 1.0.0-13232). If omitted, it uses the `latest` version.
 
 ## Options
 
@@ -64,7 +66,7 @@ Represents a specific build version. The possible values are:
 
 - `latest` - Latest build on the channel (used with the `-Channel` option)
 - `coherent` - Latest coherent build on the channel; uses the latest stable package combination (used with Branch name `-Channel` options)
-- Three-part version in X.Y.Z format representing a specific build version; supercedes the `-Channel` option (for example, a specific build, such as `2.0.0-preview2-006120`)
+- Three-part version in X.Y.Z format representing a specific build version; supersedes the `-Channel` option. For example: `2.0.0-preview2-006120`
 
 If omitted, `-Version` defaults to `latest`.
 
@@ -94,7 +96,7 @@ Specifies the URL for the Azure feed to the installer. It isn't recommended that
 
 `-ProxyAddress`
 
-If set, the installer uses the proxy when making web requests.
+If set, the installer uses the proxy when making web requests. (Only valid for Windows)
 
 `--verbose`
 
@@ -106,7 +108,7 @@ Prints out help for the script.
 
 ## Examples
 
-Install the latest long-term supported version to the default location:
+Install the latest long-term supported (LTS) version to the default location:
 
 Windows:
 
@@ -116,7 +118,7 @@ macOS/Linux:
 
 `./dotnet-install.sh --channel LTS`
 
-Install the latest 2.0 version to the specified location:
+Install the latest version from 2.0 channel to the specified location:
 
 Windows:
 
@@ -126,7 +128,7 @@ macOS/Linux:
 
 `./dotnet-install.sh --channel 2.0 --install-dir ~/cli`
 
-Install the 1.1.0 version of the shared runtime
+Install the 1.1.0 version of the shared runtime:
 
 Windows:
 

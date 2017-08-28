@@ -1,6 +1,6 @@
 ---
-title: "default value expressions (C# Programming Guide)"
-description: "default value expressions produce the default value for any reference type or value type"
+title: "Default value expressions (C# Programming Guide)"
+description: "Default value expressions produce the default value for any reference type or value type"
 ms.date: "2017-08-23"
 ms.prod: .net
 ms.technology: 
@@ -48,7 +48,7 @@ The following example shows many usages of the `default` literal in a default va
 ## See also
 
  <xref:System.Collections.Generic>
- [C# Programming Guide](../index.md)
- [Generics](../generics/index.md)
- [Generic Methods](../generics/generic-methods.md)
- [Generics](~/docs/standard/generics/index.md)
+ [C# Programming Guide](../index.md)   
+ [Generics](../generics/index.md)   
+ [Generic Methods](../generics/generic-methods.md)   
+ [Generics](~/docs/standard/generics/index.md)   

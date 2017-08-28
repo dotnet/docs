@@ -1,6 +1,6 @@
 ---
 title: "default (C# Reference)"
-ms.date: "2015-07-20"
+ms.date: "2017-08-04"
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -31,16 +31,19 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
+
 # default (C# Reference)
-The `default` keyword.  
-  
- The `default` keyword can be used in the `switch` statement or in generic code:  
-  
--   [The switch statement](../../../csharp/language-reference/keywords/switch.md): Specifies the default label.  
-  
--   [Generic code](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md): Specifies the default value of the type parameter. This will be null for reference types and zero for value types.  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)   
- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+
+The `default` keyword.
+
+The `default` keyword can be used in the `switch` statement or in a default value expression:
+
+- [The switch statement](switch.md): Specifies the default label.
+
+- [Default value expressions](../../programming-guide/statements-expressions-operators/default-value-expressions.md): Produces the default value of the type. This will be null for reference types and zero for value types, and the 0 bit pattern for structs.
+
+## See Also
+
+ [C# Reference](../index.md)   
+ [C# Programming Guide](../../programming-guide/index.md)   
+ [C# Keywords](index.md)   

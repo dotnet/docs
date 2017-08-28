@@ -2,9 +2,9 @@
 title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
-author: johalex
+author: jralexander
 ms.author: johalex
-ms.date: 08/17/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -15,39 +15,40 @@ ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 
 This article shows the dependencies needed to develop .NET Core applications on Linux. The supported Linux distributions/versions, and dependencies that follow apply to the two ways of developing .NET Core apps on Linux:
 
-* [Command line](tutorials/using-with-xplat-cli.md)
+* [your favorite Command line editor](tutorials/using-with-xplat-cli.md)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Supported Linux versions
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-.NET Core 2.x is supported on the following Linux distributions/versions:
+NET Core 2.x is supported on the following Linux x64 distributions/versions:
 
- * CentOS 7 x64
- * Oracle Linux 7 x64
- * Fedora 25, Fedora 26 x64
- * Debian 9, Debian 8.7 or later versions x64 
- * Ubuntu 17.04, Ubuntu 16.04, Ubuntu 14.04  x64
- * Linux Mint 18, Linux Mint 17 x64
- * openSUSE 42.2 or later versions x64
- * SUSE Enterprise Linux (SLES) 12 SP2+ x64
+ * Red Hat Enterprise Linux 7
+ * CentOS 7
+ * Oracle Linux 7
+ * Fedora 25, Fedora 26
+ * Debian 9, Debian 8.7 or later versions 
+ * Ubuntu 17.04, Ubuntu 16.04, Ubuntu 14.04
+ * Linux Mint 18, Linux Mint 17
+ * openSUSE 42.2 or later versions
+ * SUSE Enterprise Linux (SLES) 12 SP2 or later versions
 
 See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-.NET Core 1.x is supported on the following Linux distributions/versions:
+.NET Core 1.x is supported on the following Linux x64 distributions/versions:
 
-* Red Hat Enterprise Linux 7 x64
-* CentOS 7 x64
-* Oracle Linux 7 x64
-* Fedora 24 x64
-* Debian 8.2 or later versions x64
-* Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10* x64
+* Red Hat Enterprise Linux 7
+* CentOS 7
+* Oracle Linux 7
+* Fedora 24
+* Debian 8.2 or later versions
+* Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10*
  * Ubuntu 16.10 is supported by the latest patch release of .NET Core 1.1
-* Linux Mint 17 x64
-* openSUSE 42.1 (.NET Core 1.1) x64
+* Linux Mint 17
+* openSUSE 42.1 (.NET Core 1.1)
 
 See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
 
@@ -72,6 +73,7 @@ Ubuntu distributions require the following libraries installed:
 ### CentOS
 
 CentOS distributions require the following libraries installed:
+
 * deltarpm
 * epel-release
 * unzip
@@ -88,13 +90,14 @@ For more information about the dependencies, see [Self-contained Linux applicati
 
 .NET Core native installers are available for supported Linux distributions/ versions. The native installers require admin (sudo) access to the server. The advantage of using a native installer is that the all of the .NET Core native dependencies are installed. Native installers also install the .NET Core SDK system-wide.
 
-On Linux, there are two installer package choices: 
+On Linux, there are two installer package choices:
+
 * Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
-* Using the packages themselves, DEB or RPM. 
+* Using the packages themselves, DEB or RPM.
 
 ### Scripting Installs with the .NET Core installer script
 
-The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from the [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain). 
+The `dotnet-install` scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the scripts from the [CLI GitHub repo](https://github.com/dotnet/cli/tree/rel/1.0.0/scripts/obtain).
 
 The installer bash script is used in automation scenarios and non-admin installations. This script also reads PowerShell switches, so they can be used with the script on Linux/OS X systems.
 
@@ -106,7 +109,6 @@ The installer bash script is used in automation scenarios and non-admin installa
 To install .NET Core on RHEL 7:
 
 1. Enable the Red Hat .NET channel, available under your RHEL 7 subscription.
-
     * For Red Hat Enterprise 7 Server, use:
     
          ```bash
@@ -130,15 +132,18 @@ To install .NET Core on RHEL 7:
     ```bash
     yum install scl-utils
     ```
-    
 3. Install .NET Core
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 Install .NET Core 2.0 SDK and Runtime:
+
 ```bash
 yum install rh-dotnet20
 ```
+
 Enable .NET Core 2.0 SDK/Runtime for your environment:
+
 ```bash
 scl enable rh-dotnet20 bash
 ```
@@ -148,10 +153,13 @@ scl enable rh-dotnet20 bash
 **.NET Core 1.1**
 
 Install .NET Core 1.1 SDK and Runtime:
+
 ```bash
 yum install rh-dotnetcore11
 ```
+
 Enable .NET Core 1.1 SDK and Runtime for your environment:
+
 ```bash
 scl enable rh-dotnetcore11 bash
 ```
@@ -159,13 +167,17 @@ scl enable rh-dotnetcore11 bash
 **.NET Core 1.0**
 
 Install .NET Core 1.0 SDK and Runtime:
+
 ```bash
 yum install rh-dotnetcore10
 ```
+
 Enable .NET Core 1.0 SDK and Runtime for your environment:
+
 ```bash
 scl enable rh-dotnetcore10 bash
 ```
+
 ---
 4. Run the `dotnet --version` command to prove the installation succeeded.
 
@@ -179,12 +191,57 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
 
 1. Remove any **previous preview** versions of .NET Core from your system.
 
+# [.NET Core 2.x](#tab/netcore2x)
+
+2. Register the Microsoft Product key as trusted.
+    ```bash
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+    ```
+
+3. Set up the desired version host package feed.
+
+   **Ubuntu 14.04 / Linux Mint 17**
+
+    ```bash
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
+    sudo apt-get update
+    ```
+
+    **Ubuntu 16.04 / Linux Mint 18**
+
+    ```bash
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
+    sudo apt-get update
+    ```
+
+    **Ubuntu 17.04**
+
+    ```bash
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-zesty-prod zesty main" > /etc/apt/sources.list.d/dotnetdev.list'
+    sudo apt-get update
+    ```
+
+4. Install .NET Core.
+
+    ```bash
+    sudo apt-get install dotnet-sdk-2.0.0
+    ```
+
+4. Run the `dotnet --version` command to prove the installation succeeded.
+
+    ```bash
+    dotnet --version
+     ```
+
+# [.NET Core 1.x](#tab/netcore1x)
+
 2. Set up the desired version host package feed.
 
    **Ubuntu 14.04 / Linux Mint 17**
 
     ```bash
-    sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list' 
+    sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys B02C46DF417A0893
     sudo apt-get update
     ```
@@ -192,7 +249,7 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
     **Ubuntu 16.04 / Linux Mint 18**
 
     ```bash
-    sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list' 
+    sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys B02C46DF417A0893
     sudo apt-get update
     ```
@@ -200,39 +257,26 @@ For Red Hat .NET channel access registration help, see [Chapter 1 of the .NET Co
     **Ubuntu 16.10**
 
     ```bash
-    sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ yakkety main" > /etc/apt/sources.list.d/dotnetdev.list' 
+    sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ yakkety main" > /etc/apt/sources.list.d/dotnetdev.list'
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys B02C46DF417A0893
     sudo apt-get update
     ```
 
-3. Install .NET Core. 
+3. Install .NET Core 1.x on Ubuntu or Linux Mint:
 
-# [.NET Core 2.x](#tab/netcore2x)
-
-Install .NET Core 2.0 on Ubuntu or Linux Mint:
-
-```bash
-sudo apt-get install dotnet-sdk-2.0.0
-```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-Install .NET Core 1.x on Ubuntu or Linux Mint:
-
-```bash
-sudo apt-get install dotnet-dev-1.0.4
-```
-
----
+    ```bash
+    sudo apt-get install dotnet-dev-1.0.4
+    ```
 
 4. Run the `dotnet --version` command to prove the installation succeeded.
 
-     ```bash
-         dotnet --version
-     ```
+    ```bash
+        dotnet --version
+    ```
 
- ## Install .NET Core for Debian 8 or Debian 9 (64 bit).
+---
 
+ ## Install .NET Core for Debian 8 or Debian 9 (64 bit)
 
 To install .NET Core on Debian 8 or Debian 9 (64 bit):
 
@@ -240,43 +284,60 @@ To install .NET Core on Debian 8 or Debian 9 (64 bit):
 
 2. Get the prerequisites.
 
-    ```bash
-    sudo apt-get install curl libunwind8 gettext
-    ```
+```bash
+sudo apt-get install curl libunwind8 gettext
+```
 
-3. Download the .NET Core SDK binaries (tarball).
+> [!Note]
+> A user-controlled directory is required for Linux system installs from tar.gz.
 
 # [.NET Core 2.x](#tab/netcore2x)
 
-```bash
-     curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
-```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-```bash
-     curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848826
-```
-
----
-
-4. Extract the .NET Core SDK binaries.
+3. Download the .NET Core SDK binaries (tarball).
 
     ```bash
-    sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+    curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
+    ```
+1. Extract the .NET Core SDK binaries.
+
+    ```bash
+    mkdir -p ~/dotnet && tar zxf dotnet.tar.gz -C ~/dotnet
     ```
 
 5. Add dotnet to your PATH.
 
     ```bash
-    sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+    export PATH=$PATH:$HOME/dotnet
     ```
+
+# [.NET Core 1.x](#tab/netcore1x)
+
+3. Download the .NET Core SDK binaries (tarball).
+
+```bash
+curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848826
+```
+
+4. Extract the .NET Core SDK binaries.
+
+```bash
+sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+```
+
+5. Add dotnet to your PATH.
+
+```bash
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+```
+
+---
+
 
 6. Run the `dotnet --version` command to prove the installation succeeded.
 
-     ```bash
-     dotnet --version
-     ```
+```bash
+dotnet --version
+```
 
 ## Install .NET Core for Fedora 24, Fedora 25, or Fedora 26 (64 bit)
 
@@ -286,21 +347,37 @@ To Install .NET Core for Fedora 26, Fedora 25 (.NET Core 2.x) or Fedora 24 (.NET
 
 2. Get the prerequisites.
 
-    ```bash
-    sudo dnf install libunwind libicu
-    ```
-
-3. Download the .NET Core SDK binary  (tarball).
+```bash
+sudo dnf install libunwind libicu
+```
+> [!Note]
+> A user-controlled directory is required for Linux system installs from tar.gz.
 
 # [.NET Core 2.x](#tab/netcore2x)
 
 **Fedora 26 or Fedora 25**
 
+3. Download the .NET Core SDK binary  (tarball).
+
 ```bash
 curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 ```
 
+4. Extract the .NET Core SDK binaries.
+
+```bash
+mkdir -p ~/dotnet && tar zxf dotnet.tar.gz -C ~/dotnet
+```
+
+5. Add dotnet to your PATH.
+
+```bash
+export PATH=$PATH:$HOME/dotnet
+```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
+3. Download the .NET Core SDK binary  (tarball).
 
 **Fedora 24**
 
@@ -308,19 +385,19 @@ curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848833
 ```
 
----
-
 4. Extract the .NET Core SDK binaries.
-    
-    ```bash
-    sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
-    ```
+
+```bash
+sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+```
 
 5. Add dotnet to your PATH.
 
-    ```bash
-    sudo ln -s /opt/dotnet/dotnet /usr/local/bin
-    ```
+```bash
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+```
+
+---
 
 6. Run the `dotnet --version` command to prove the installation succeeded.
 
@@ -337,36 +414,53 @@ To Install .NET Core for CentOS 7.1 (64 bit) & Oracle Linux 7.1 (64 bit):
 2. Get the prerequisites.
 
     ```bash
-    sudo dnf install libunwind libicu
+    sudo yum install libunwind libicu
     ```
 
-3. Download the .NET Core SDK binary (tarball).
+> [!Note]
+> A user-controlled directory is required for Linux system installs from tar.gz.
 
 # [.NET Core 2.x](#tab/netcore2x)
+
+3. Download the .NET Core SDK binary (tarball).
 
 ```bash
 curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 ```
 
+4. Extract the .NET Core SDK binaries.
+
+```bash
+mkdir -p ~/dotnet && tar zxf dotnet.tar.gz -C ~/dotnet
+```
+
+5. Add dotnet to your PATH.
+
+```bash
+export PATH=$PATH:$HOME/dotnet
+```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
+3. Download the .NET Core SDK binary (tarball).
 
 ```bash
 curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848821
 ```
 
----
-
 4. Extract the .NET Core SDK binaries.
 
-    ```bash
-    sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
-    ```
+```bash
+sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+```
 
 5. Add dotnet to your PATH.
 
-    ```bash
-    sudo ln -s /opt/dotnet/dotnet /usr/local/bin
-    ```
+```bash
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+```
+
+---
 
 6. Run the `dotnet --version` command to prove the installation succeeded.
 
@@ -394,12 +488,12 @@ curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 
 4. Extract the .NET Core SDK binaries.
     ```bash
-    sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+    mkdir -p ~/dotnet && tar zxf dotnet.tar.gz -C ~/dotnet
     ```
 
 5. Add dotnet to your PATH.
     ```bash
-   sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+   export PATH=$PATH:$HOME/dotnet
     ```
 
 6. Run the `dotnet --version` command to prove the installation succeeded.
@@ -419,9 +513,9 @@ To Install .NET Core 2.x for openSUSE 42.2, or .NET Core 1.x for openSUSE 42.1(6
     sudo zypper install libunwind libicu
     ```
 
-3. Download the .NET Core SDK binary (tarball).
-
 # [.NET Core 2.x](#tab/netcore2x)
+
+3. Download the .NET Core SDK binary (tarball).
 
 **openSUSE 42.2**
 
@@ -429,7 +523,21 @@ To Install .NET Core 2.x for openSUSE 42.2, or .NET Core 1.x for openSUSE 42.1(6
 curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 ```
 
+4. Extract the .NET Core SDK binaries.
+
+```bash
+mkdir -p ~/dotnet && tar zxf dotnet.tar.gz -C ~/dotnet
+```
+
+5. Add dotnet to your PATH.
+
+```bash
+export PATH=$PATH:$HOME/dotnet
+```
+
 # [.NET Core 1.x](#tab/netcore1x)
+
+3. Download the .NET Core SDK binary (tarball).
 
 **openSUSE 42.1**
 
@@ -437,26 +545,24 @@ curl -sSL -o dotnet.tar.gz https://aka.ms/dotnet-sdk-2.0.0-linux-x64
 curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848824
 ```
 
----
-
 4. Extract the .NET Core SDK binaries.
-    ```bash
-    sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
-    ```
+
+```bash
+sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
+```
 
 5. Add dotnet to your PATH.
-    ```bash
-   sudo ln -s /opt/dotnet/dotnet /usr/local/bin
-    ```
+
+```bash
+sudo ln -s /opt/dotnet/dotnet /usr/local/bin
+```
+---
 
 6. Run the `dotnet --version` command to prove the installation succeeded.
 
      ```bash
      dotnet --version
      ```
-
-
 > [!IMPORTANT]
 > If you have problems with the .NET Core 2.x installation on a supported Linux distribution/version, consult the [2.0 Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for your installed distributions/versions.
->
 > If you have problems with the .NET Core 1.x installation on a supported Linux distribution/version, consult the [1.0.0 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0-known-issues.md) and [1.0.1 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.1-known-issues.md) topics for your installed distributions/versions.

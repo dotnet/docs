@@ -23,7 +23,7 @@ Tasks are constructs used to implement what is known as the [Promise Model of Co
 *   `Task` represents a single operation which does not return a value.
 *   `Task<T>` represents a single operation which returns a value of type `T`.
 
-It’s important to reason about tasks as abstractions of work happening asynchronously, and *not* an abstraction over threading. By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate. Optionally, tasks can be be explicitly requested to run on a separate thread via the `Task.Run` API.
+It’s important to reason about tasks as abstractions of work happening asynchronously, and *not* an abstraction over threading. By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate. Optionally, tasks can be explicitly requested to run on a separate thread via the `Task.Run` API.
 
 Tasks expose an API protocol for monitoring, waiting upon and accessing the result value (in the case of `Task<T>`) of a task. Language integration, with the `await` keyword, provides a higher-level abstraction for using tasks. 
 

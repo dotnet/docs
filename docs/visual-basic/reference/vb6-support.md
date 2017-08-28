@@ -1,6 +1,6 @@
 ---
 title: "Support Statement for Visual Basic 6.0"
-ms.date: "2017-03-23"
+ms.date: "08/28/2017"
 ms.prod: VB
 ms.technology: 
   - "devlang-visual-basic"
@@ -146,7 +146,7 @@ This section provides additional information regarding the operating systems tha
 
 
 > [!NOTE]
-> &#42;  VB6 runtime support is limited by the OS support lifecycle.  For example, if the target OS is in Extended support, VB6 cannot have a higher level of support than Extended support.
+> &#42;  VB6 runtime support is limited by the Windows support lifecycle.  For example, if the target OS is in Extended support, VB6 cannot have a higher level of support than Extended support.  The [Windows support lifecycle fact sheet](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contains additional lifecycle information about previous and current Windows versions.
 
 ## Visual Basic 6.0 runtime usage inside VBA and Office
 

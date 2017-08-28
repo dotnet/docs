@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application should provide an inner handler either in the constructor or through the InnerHandler property before calling SendAsync() otherwise an InvalidOperationException will be thrown.
+ An application should provide an inner handler either in the constructor or through the <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property before calling <xref:System.Net.Http.DelegatingHandler.SendAsync%2A>; otherwise, an <xref:System.InvalidOperationException> will be thrown.
   
  Note that <xref:System.Net.Http.DelegatingHandler.InnerHandler%2A> property may be a delegating handler as well. This approach allows the creation of handler stacks to process the HTTP response messages.  
   

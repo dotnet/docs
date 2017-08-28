@@ -1,23 +1,17 @@
 ---
 title: "Refactoring Into Pure Functions (C#)"
-ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "devlang-csharp"
-
 ms.topic: "article"
-dev_langs: 
-  - "CSharp"
 ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
-
 ---
 # Refactoring Into Pure Functions (C#)
+
 An important aspect of pure functional transformations is learning how to refactor code using pure functions.  
   
 > [!NOTE]
@@ -91,7 +85,7 @@ public class Program
 >  For reference types, if you pass a parameter by value, it results in a copy of the reference to an object being passed. This copy is still associated with the same instance data as the original reference (until the reference variable is assigned to a new object). Call-by-reference is not necessarily required for a function to modify a parameter.  
   
 ### Pure Function  
- This next version of the program hows how to implement the `HypenatedConcat` function as a pure function.  
+This next version of the program shows how to implement the `HypenatedConcat` function as a pure function.  
   
 ```csharp  
 class Program  

@@ -426,6 +426,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/deployment/repair.md",
+            "redirect_url": "/dotnet/framework/install/repair"
+        },
+        {
             "source_path": "docs/framework/deployment/windows/index.md",
             "redirect_url": "/dotnet/framework/install/"
         },
@@ -537,6 +541,10 @@
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+        },
+        {
+            "source_path": "docs/framework/wcf/windows-communication-foundation.md",
+            "redirect_url": "/dotnet/framework/wcf/index"
         },
         {
             "source_path": "docs/framework/whats-new/whats-new.md",
@@ -919,6 +927,18 @@
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/getting-started/library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/testing-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
         }
     ]
 }

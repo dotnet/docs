@@ -41,6 +41,51 @@ namespace tuples
             foreach (var item in sequence)
                 Console.WriteLine($"{item.ID}, {item.Title}");
 
+            FunWithProjections();
+
+        }
+
+        private static void FunWithProjections()
+        {
+            #region ProjectionExample_Explicit
+            var localVariableOne = 5;
+            var localVariableTwo = "some text";
+
+            var tuple = (explicitFieldOne: localVariableOne, explicitFieldTwo: localVariableTwo);
+            #endregion
+
+            #region MixedTuple
+            var stringContent = "The answer to everything";
+            var mixedTuple = (42, stringContent);
+            #endregion
+
+            #region ProjectionAmbiguities
+            var ToString = "This is some text";
+            var one = 1;
+            var Item1 = 5;
+            var projections = (ToString, one, Item1);
+            // Accessing the first field:
+            Console.WriteLine(projections.Item1);
+            // There is no semantic name 'ToString'
+            // Accessing the second field:
+            Console.WriteLine(projections.one);
+            Console.WriteLine(projections.Item2);
+            // Accessing the third field:
+            Console.WriteLine(projections.Item3);
+            // There is no semantic name 'Item`.
+
+            var pt1 = (X: 3, Y: 0);
+            var pt2 = (X: 3, Y: 4);
+
+            var xCoords = (pt1.X, pt2.X);
+            // There are no semantic names for the fields
+            // of xCoords. 
+
+            // Accessing the first field:
+            Console.WriteLine(xCoords.Item1);
+            // Accessing the second field:
+            Console.WriteLine(xCoords.Item2);
+            #endregion
         }
 
         private static void AssignmentStatements()
@@ -86,6 +131,12 @@ namespace tuples
 
             #region 02_NamedTuple
             var named = (first: "one", second: "two");
+            #endregion
+
+            #region ProjectedTupleNames
+            var sum = 12.5;
+            var count = 5;
+            var accumulation = (count, sum);
             #endregion
         }
 

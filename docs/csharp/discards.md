@@ -27,7 +27,7 @@ In C# 7, discards are supported in assignments in the following contexts:
 - Calls to methods with `out` parameters.
 - A standalone `_` when no `_` is in scope.
 
-When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '_' does not exist in the current context". This is because `_` is not assigned a value, and may not even be assigned a storage location. If it were an actual variable, you could not discard more than one value, as the previous example did.
+When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '\_' does not exist in the current context". This is because `_` is not assigned a value, and may not even be assigned a storage location. If it were an actual variable, you could not discard more than one value, as the previous example did.
 
 ## Tuple and object deconstruction
 

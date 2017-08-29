@@ -83,7 +83,7 @@ Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
-When restoring a project with project-to-project (P2P) references, restore the root project and not the references.
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 `--packages <PACKAGES_DIRECTORY>`
 
@@ -125,7 +125,7 @@ Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
-When restoring a project with project-to-project (P2P) references, restore the root project and not the references.
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 `--packages <PACKAGES_DIRECTORY>`
 

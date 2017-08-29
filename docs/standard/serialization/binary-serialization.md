@@ -126,7 +126,7 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.UInt64?displayProperty=fullName>   
 - <xref:System.UIntPtr?displayProperty=fullName>   
 - <xref:System.Uri?displayProperty=fullName>   
-- <xref:System.ValueTuple?displayProperty=fullName>   
+- <xref:System.ValueTuple?displayProperty=fullName> (not serializable in .NET Framework 4.7 and earlier versions)  
 - <xref:System.ValueType?displayProperty=fullName>   
 - <xref:System.Version?displayProperty=fullName>   
 - <xref:System.WeakReference?displayProperty=fullName>   

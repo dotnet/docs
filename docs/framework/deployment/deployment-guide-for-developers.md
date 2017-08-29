@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "08/29/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -141,7 +141,7 @@ If you use ClickOnce, InstallAware, InstallShield, or WiX to deploy your app, yo
 
 <a name="installaware"></a> 
 ### InstallAware deployment
-InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EXE), and App-V (Application Virtualization) packages from a single source. Easily [include any version of the .NET Framework](https://www.installaware.com/one-click-pre-requisite-installer.htm) in your setup, optionally customizing the installation by [editing the default scripts](https://www.installaware.com/msicode.htm) (for example, InstallAware pre-installs certificates on Windows 7, without which the .NET 4.7 setup fails). For more information on InstallAware, see the [InstallAware for Windows Installer](https://www.installaware.com/) website.
+InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EXE), and App-V (Application Virtualization) packages from a single source. Easily [include any version of the .NET Framework](https://www.installaware.com/one-click-pre-requisite-installer.htm) in your setup, optionally customizing the installation by [editing the default scripts](https://www.installaware.com/msicode.htm). For example, InstallAware pre-installs certificates on Windows 7, without which the .NET Framework 4.7 setup fails. For more information on InstallAware, see the [InstallAware for Windows Installer](https://www.installaware.com/) website.
 
 ### InstallShield deployment
  In Visual Studio, to choose InstallShield deployment and add a dependency on the .NET Framework:

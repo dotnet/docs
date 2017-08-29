@@ -4,7 +4,7 @@ description: Supported Linux versions and .NET Core dependencies to develop, dep
 keywords: .NET, .NET Core, Linux, debian, ubuntu, RHEL, centOS,
 author: jralexander
 ms.author: johalex
-ms.date: 08/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -21,6 +21,8 @@ This article shows the dependencies needed to develop .NET Core applications on 
 ## Supported Linux versions
 
 # [.NET Core 2.x](#tab/netcore2x)
+
+.NET Core 2.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distros.
 
 NET Core 2.x is supported on the following Linux x64 distributions/versions:
 
@@ -564,5 +566,6 @@ sudo ln -s /opt/dotnet/dotnet /usr/local/bin
      dotnet --version
      ```
 > [!IMPORTANT]
-> If you have problems with the .NET Core 2.x installation on a supported Linux distribution/version, consult the [2.0 Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for your installed distributions/versions.
+> If you have problems with the .NET Core 2.x installation on a supported Linux distribution/version, consult the [2.0 Known issues](https://github.com/dotnet/core/tree/master/release-notes/2.0) topic for your installed distributions/versions. 
+>
 > If you have problems with the .NET Core 1.x installation on a supported Linux distribution/version, consult the [1.0.0 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.0-known-issues.md) and [1.0.1 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0.1-known-issues.md) topics for your installed distributions/versions.

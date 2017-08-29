@@ -72,8 +72,6 @@ Generics were added to version 2.0 of the C# language and the common language ru
   
 -   [Generic Delegates](../../../csharp/programming-guide/generics/generic-delegates.md)  
   
--   [default Keyword](../../../csharp/programming-guide/generics/default-keyword-in-generic-code.md)  
-  
 -   [Differences Between C++ Templates and C# Generics](../../../csharp/programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md)  
   
 -   [Generics and Reflection](../../../csharp/programming-guide/generics/generics-and-reflection.md)  

@@ -83,7 +83,7 @@ Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
-When restoring a project with project-to-project (P2P) references, restore the root project and not the references.
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 `--packages <PACKAGES_DIRECTORY>`
 
@@ -101,7 +101,7 @@ Specifies a NuGet package source to use during the restore operation. This overr
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 1.x](#tab/netcore1x)
 
 `--configfile <FILE>`
 
@@ -125,7 +125,7 @@ Specifies to not cache packages and HTTP requests.
 
 `--no-dependencies`
 
-When restoring a project with project-to-project (P2P) references, restore the root project and not the references.
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 `--packages <PACKAGES_DIRECTORY>`
 

@@ -49,7 +49,13 @@ Lists changes in this release that might prevent an application from compiling o
   
 [Additional Resources for Visual Basic Programmers](additional-resources.md)  
 Provides a list of Web sites and newsgroups that can help you find answers to common problems.  
-  
+
+## Develop .NET Core applications with Visual Basic
+
+[Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017](../../core/tutorials/vb-with-visual-studio.md) 
+
+[Build a class library with Visual Basic and .NET Core in Visual Studio 2017](../../core/tutorials/vb-library-with-visual-studio.md) 
+
 ## See also
  [Get Visual Basic](https://www.visualstudio.com/downloads/)  
  Provides download links for Visual Studio versions that include Visual basic support, including free versions.  

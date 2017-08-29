@@ -19,7 +19,7 @@ These samples provide instruction on various aspects of [!INCLUDE[wf](../../../.
  The samples can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=150780).  
   
 > [!NOTE]
->  These samples were created with [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] and [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]. Additional samples for [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [Codeplex](http://aka.ms/WF45Samples).  
+>  These samples were created with [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] and [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)]. Additional samples for [!INCLUDE[wf2](../../../../includes/wf2-md.md)] in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [Microsoft Code](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=Technology&f%5B0%5D.Value=Windows%20Workflow%204.5)
   
 ## In This Section  
  [Application](../../../../docs/framework/windows-workflow-foundation/samples/application.md)  

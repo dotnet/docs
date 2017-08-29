@@ -18,7 +18,7 @@ This tutorial takes you through an interactive experience building a sample solu
 ### Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-using-dotnet-test* to hold the solution. Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create
-a new solution file for the class library and the test project. Next, create a *PrimeService* directory. The directory structure thus far is shown below:
+a new solution file for the class library and the test project. Next, create a *PrimeService* directory. The following outline shows the directory structure thus far:
 
 ```
 /unit-testing-using-mstest
@@ -26,7 +26,7 @@ a new solution file for the class library and the test project. Next, create a *
     /PrimeService
 ```
 
-Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you'll create a failing implementation of the `PrimeService` class:
+Make *PrimeService* the current directory and run [`dotnet new classlib`](../tools/dotnet-new.md) to create the source project. Rename *Class1.cs* to *PrimeService.cs*. To use test-driven development (TDD), you create a failing implementation of the `PrimeService` class:
 
 ```csharp
 using System;
@@ -45,7 +45,7 @@ namespace Prime.Services
 
 ### Creating the test project
 
-Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add PrimeService/PrimeService.csproj`](../tools/dotnet-sln.md) to add the class library project to the solution. Next, create the *PrimeService.Tests* directory. The directory structure is shown below:
+Change the directory back to the *unit-testing-using-mstest* directory. Run [`dotnet sln add PrimeService/PrimeService.csproj`](../tools/dotnet-sln.md) to add the class library project to the solution. Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
 ```
 /unit-testing-using-mstest
@@ -56,7 +56,7 @@ Change the directory back to the *unit-testing-using-mstest* directory. Run [`do
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new mstest`](../tools/dotnet-new.md). This creates a test project that uses MStest as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new mstest`](../tools/dotnet-new.md). The Botnet new command creates a test project that uses MStest as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file:
 
 ```xml
 <ItemGroup>
@@ -82,7 +82,7 @@ Another option is to edit the *PrimeService.Tests.csproj* file. Directly under t
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.
 
-The final solution layout is shown below:
+The following outline shows the final solution layout:
 
 ```
 /unit-testing-using-mstest
@@ -130,9 +130,9 @@ namespace Prime.UnitTests.Services
 
 The `[TestClass]` attribute denotes a class that contains unit tests. The `[TestMethod]` attribute denotes a method as a single test. 
 
-Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner and provides a command-line argument to the test runner indicating the assembly that contains your tests.
+Save this file and execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The MSTest test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
-Your test fails. You haven't created the implementation yet. Write the simplest code in the `PrimeService` class to make this test pass:
+Your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the `PrimeService` class that works:
 
 ```csharp
 public bool IsPrime(int candidate)
@@ -149,9 +149,10 @@ In the *unit-testing-using-mstest* directory, run `dotnet test` again. The `dotn
 
 ## Adding more features
 
-Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add those as new tests with the `[TestMethod]` attribute, but that quickly becomes tedious. There are other MSTest attributes that enable you to write a suite of similar tests.  A `[DataTestMethod]`attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `[DataRow]` attribute to specify values for those inputs.
+Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add new tests with the `[TestMethod]` attribute, but that quickly becomes tedious. There are other MSTest attributes that enable you to write a suite of similar tests.  A `[DataTestMethod]`attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `[DataRow]` attribute to specify values for those inputs.
 
-Instead of creating new tests, leverage these two attributes to create a single data test method that tests several values less than two, which is the lowest prime number:
+Instead of creating new tests, apply these two attributes to create a single data driven test. The data driven test is a method that tests several values less than two, which is the lowest prime number:
+:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
@@ -161,6 +162,6 @@ Run `dotnet test`, and two of these tests fail. To make all of the tests pass, c
 if (candidate < 2)
 ```
 
-Continue to iterate by adding more tests, more theories, and more code in the main library. You'll end up with the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService/PrimeService.cs).
+Continue to iterate by adding more tests, more theories, and more code in the main library. You have the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-mstest/PrimeService/PrimeService.cs).
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is seamless, and you can concentrate most of your time and effort on solving the goals of the applicaiton.
+You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is seamless. You concentrate most of your time and effort on solving the goals of the application.

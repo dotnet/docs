@@ -44,7 +44,7 @@ namespace Prime.Services
 ## Creating the test project
 
 Change the directory back to the *unit-testing-using-dotnet-test* directory. Run [`dotnet sln add .\PrimeService\PrimeService.csproj`](../tools/dotnet-sln.md)
-to add the class library project to the solution. Next, create the *PrimeService.Tests* directory. The directory structure is shown below:
+to add the class library project to the solution. Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
 ```
 /unit-testing-using-dotnet-test
@@ -81,7 +81,7 @@ Another option is to edit the *PrimeService.Tests.csproj* file. Directly under t
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.
 
-The final solution layout is shown below:
+The following shows the final solution layout:
 
 ```
 /unit-testing-using-dotnet-test
@@ -98,7 +98,7 @@ The final solution layout is shown below:
 
 Before building the library or the tests, execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-restore.md) in the *unit-testing-using-dotnet-test* directory. 
 
-The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs* with the following content:
+The TDD approach calls for writing one failing test, making it pass, then repeating the process. Remove *UnitTest1.cs* from the *PrimeService.Tests* directory and create a new C# file named *PrimeService_IsPrimeShould.cs*. Add the following code:
 
 ```csharp
 using Xunit;
@@ -126,9 +126,9 @@ namespace Prime.UnitTests.Services
 }
 ```
 
-The `[Fact]` attribute denotes a method as a single test. From the *unit-testing-using-dotnet-test*, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner and provides a command-line argument to the test runner indicating the assembly that contains your tests.
+The `[Fact]` attribute denotes a method as a single test. From the *unit-testing-using-dotnet-test*, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
-Your test fails. You haven't created the implementation yet. Write the simplest code in the `PrimeService` class to make this test pass:
+Your test fails. You haven't created the implementation yet. Make this test by writing the simplest code in the `PrimeService` class that works:
 
 ```csharp
 public bool IsPrime(int candidate)
@@ -145,9 +145,9 @@ In the *unit-testing-using-dotnet-test* directory, run `dotnet test` again. The 
 
 ## Adding more features
 
-Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add those as new tests with the `[Fact]` attribute, but that quickly becomes tedious. There are other xUnit attributes that enable you to write a suite of similar tests.  A `[Theory]` attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `[InlineData]` attribute to specify values for those inputs.
+Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add those cases as new tests with the `[Fact]` attribute, but that quickly becomes tedious. There are other xUnit attributes that enable you to write a suite of similar tests.  A `[Theory]` attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `[InlineData]` attribute to specify values for those inputs.
 
-Instead of creating new tests, leverage these two attributes to create a single theory that tests several values less than two, which is the lowest prime number:
+Instead of creating new tests, apply these two attributes to create a single theory. The theory is a method that tests several values less than two, which is the lowest prime number:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
@@ -157,6 +157,6 @@ Run `dotnet test`, and two of these tests fail. To make all of the tests pass, c
 if (candidate < 2)
 ```
 
-Continue to iterate by adding more tests, more theories, and more code in the main library. You'll end up with the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
+Continue to iterate by adding more tests, more theories, and more code in the main library. You'll have the [finished version of the tests](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is seamless, and you can concentrate most of your time and effort on solving the goals of the applicaiton.
+You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is seamless. You concentrate most of your time and effort on solving the goals of the application.

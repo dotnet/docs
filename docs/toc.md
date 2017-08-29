@@ -55,6 +55,11 @@
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
 ## [Get started](core/get-started.md)
+### [Get started with C# and Visual Studio Code](core/tutorials/with-visual-studio-code.md)
+### [Build a C# Hello World app with .NET Core in Visual Studio 2017](core/tutorials/with-visual-studio.md)
+### [Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017](core/tutorials/vb-with-visual-studio.md)
+### [Build a class library with C# and .NET Core in Visual Studio 2017](core/tutorials/library-with-visual-studio.md)
+### [Build a class library with Visual Basic and .NET Core in Visual Studio 2017](core/tutorials/vb-library-with-visual-studio.md)
 ## [What's new in .NET Core](core/whats-new/index.md)
 ## [Windows Prerequisites](core/windows-prerequisites.md)
 ## [macOS Prerequisites](core/macos-prerequisites.md)

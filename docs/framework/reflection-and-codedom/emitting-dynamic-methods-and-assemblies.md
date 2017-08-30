@@ -51,7 +51,7 @@ Shows how to execute a simple dynamic method and a dynamic method bound to an in
 [How to: Define a generic type with reflection emit](how-to-define-a-generic-type-with-reflection-emit.md)   
 Shows how to create a simple generic type with two type parameters, how to apply class, interface, and special constraints to the type parameters, and how to create memers that use the type parameters of the class as parameter types and return types.
 
-[How to: Define a genreic method with reflection emit](how-to-define-a-generic-method-with-reflection-emit.md)   
+[How to: Define a generic method with reflection emit](how-to-define-a-generic-method-with-reflection-emit.md)   
 Shows how to create, emit, and invoke a simple generic method.
 
 [Collectible assemblies for dynamic type generation](collectible-assemblies.md)   

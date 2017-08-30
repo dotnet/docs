@@ -29,7 +29,7 @@ The lifetime of a collectible assembly is controlled by the existence of referen
 
 - An instance of an array of `T`.
  
-- An instance of a generic collection that has `T` as one of its type arguments, even if that array or collection is empty.
+- An instance of a generic type that has `T` as one of its type arguments. This includes generic collections of `T`, even if that collection is empty.
 
 - An instance of <xref:System.Type> or <xref:System.Reflection.Emit.TypeBuilder> that represents `T`. 
 
@@ -74,8 +74,8 @@ The following restrictions apply to collectible assemblies:
 - **Assembly loading**   
    Reflection emit is the only mechanism that is supported for loading collectible assemblies. Assemblies that are loaded by using any other form of assembly loading cannot be unloaded.
  
-- **Context-bound objects**   
-   Context-static variables are not supported. Types in a collectible assembly cannot extend ContextBoundObject. However, code in collectible assemblies can use context-bound objects that are defined elsewhere.
+- **Context-bound objects**    
+   Context-static variables are not supported. Types in a collectible assembly cannot extend <xref:System.ContextBoundObject>. However, code in collectible assemblies can use context-bound objects that are defined elsewhere.
 
 - **Thread-static data**       
    Thread-static variables are not supported.

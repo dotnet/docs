@@ -22,7 +22,7 @@ A repository performs the tasks of an intermediary between the domain model laye
 
 ### Define one repository per aggregate
 
-For each aggregate or aggregate root, you should create one repository class. In a microservice based on DDD patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It is okay to query the database through other channels (as you can do following a CQRS approach), because queries do not change the state of the database. However, the transactional area—the updates—must always be controlled by the repositories and the aggregate roots.
+For each aggregate or aggregate root, you should create one repository class. In a microservice based on domain-driven design patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate’s invariants and transactional consistency. It is okay to query the database through other channels (as you can do following a CQRS approach), because queries do not change the state of the database. However, the transactional area—the updates—must always be controlled by the repositories and the aggregate roots.
 
 Basically, a repository allows you to populate data in memory that comes from the database in the form of the domain entities. Once the entities are in memory, they can be changed and then persisted back to the database through transactions.
 

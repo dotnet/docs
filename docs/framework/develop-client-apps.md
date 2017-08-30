@@ -27,7 +27,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Developing Client Applications with the .NET Framework
-There are multiple ways to develop Windows-based applications with the .NET framework that run locally on users' computers or devices. This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation (WPF) or by using Windows Forms. However, you also create client applications using the .NET Framework and make them available to your users through the Windows Store and Windows Phone store for computers or devices, web applications that can be viewed in a browser.  
+There are multiple ways to develop Windows-based applications with the .NET framework that run locally on users' computers or devices. This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation (WPF) or by using Windows Forms. However, you can also create client applications using the .NET Framework and make them available to your users through the Windows Store and Windows Phone store for computers or devices, and web applications that can be viewed in a browser.  
   
 ## In This Section  
  [Windows Presentation Foundation](../../docs/framework/wpf/index.md)  

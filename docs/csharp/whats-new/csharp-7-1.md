@@ -9,10 +9,9 @@ ms.topic: article
 ms.prod: .net
 ms.devlang: devlang-csharp
 ---
-
 # What's new in C# 7.1
 
-C# 7.1 is the first point release to the C# Language. It marks an increased
+C# 7.1 is the first point release to the C# language. It marks an increased
 release cadence for the language. You can use the new features sooner, ideally
 when each new feature is ready. C# 7.1 adds the ability to configure
 the compiler to match a specified version of the language. That enables you to
@@ -48,7 +47,7 @@ as shown in the image following. The `latest` value means you want to use the la
 minor version on the current machine. The `C# 7.1` means that you want to use C# 7.1,
 even after newer minor versions are released.
 
-[Setting the language version](./csharp-7-1/media/advanced-build-settings.png)
+![Setting the language version](./media/csharp-7-1/advanced-build-settings.png)
 
 Alternatively, you can edit the "csproj" file and add or modify the
 following lines:
@@ -132,7 +131,7 @@ static async Task Main()
 ```
 
 You can read more about the details in the
-[async main](../programming-guid/main-and-command-args/index.md) topic
+[async main](../programming-guide/main-and-command-args/index.md) topic
 in the programming guide.
 
 ## Default literal expressions

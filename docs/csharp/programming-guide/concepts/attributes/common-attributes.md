@@ -189,16 +189,18 @@ static void DoIfAorB()
   
  To achieve the effect of logically linking symbols by using the AND operator, you can define serial conditional methods. For example, the second method below will execute only if both `A` and `B` are defined:  
   
-```csharp  
-<Conditional("A")>   
-Shared Sub DoIfA()  
-    DoIfAandB()  
-End Sub  
+```csharp
+[Conditional("A")]  
+static void DoIfA()  
+{  
+    DoIfAandB();  
+}  
   
-<Conditional("B")>   
-Shared Sub DoIfAandB()  
-    ' Code to execute when both A and B are defined...  
-End Sub  
+[Conditional("B")]  
+static void DoIfAandB()  
+{  
+    // Code to execute when both A and B are defined...  
+}  
 ```  
   
 ### Using Conditional with Attribute Classes  

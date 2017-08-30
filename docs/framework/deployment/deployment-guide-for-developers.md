@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "08/29/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -70,8 +70,8 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 |Deployment strategy for your app|Deployment methods available|.NET Framework redistributable to use|
 |--------------------------------------|----------------------------------|-------------------------------------------|
-|Install from the web|- [InstallShield](#installshield-deployment)<br />- [WiX toolset](#wix)<br />- [Manual installation](#installing_manually)|[Web installer](#redistributable-packages)|
-|Install from disc|- [InstallShield](#installshield-deployment)<br />- [WiX toolset](#wix)<br />- [Manual installation](#installing_manually)|[Offline installer](#redistributable-packages)|
+|Install from the web|- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [WiX toolset](#wix)<br />- [Manual installation](#installing_manually)|[Web installer](#redistributable-packages)|
+|Install from disc|- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [WiX toolset](#wix)<br />- [Manual installation](#installing_manually)|[Offline installer](#redistributable-packages)|
 |Install from a local area network (for enterprise apps)|- [ClickOnce](#clickonce-deployment)|Either [web installer](#redistributable-packages) (see [ClickOnce](#clickonce-deployment) for restrictions) or [offline installer](#redistributable-packages)|
 
 ## Redistributable Packages
@@ -83,19 +83,21 @@ For download links, see the section [Redistributable Packages](#redistributable-
 |Internet connection required?|Yes|No|
 |Size of download|Smaller (includes installer for target platform only)*|Larger*|
 |Language packs|Included**|Must be [installed separately](#chain_langpack), unless you use the package that targets all operating systems|
-|Deployment method|Supports all methods:<br /><br /> - [ClickOnce](#clickonce-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|Supports all methods:<br /><br /> - [ClickOnce](#clickonce-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|
+|Deployment method|Supports all methods:<br /><br />- [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|Supports all methods:<br /><br /> - [ClickOnce](#clickonce-deployment)<br />- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [Windows Installer XML (WiX)](#wix)<br />- [Manual installation](#installing_manually)<br />- [Custom setup (chaining)](#chaining)|
 |Location of download for ClickOnce deployment|Microsoft Download Center:<br /><br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825298) <br/> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780596)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671728)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528222)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/?LinkId=397703)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310158)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|Your own server or the Microsoft Download Center:<br /><br /> - [.NET Framework 4.7](http://go.microsoft.com/fwlink/?LinkId=825302)<br /> - [.NET Framework 4.6.2](http://go.microsoft.com/fwlink/?LinkId=780600)<br />- [.NET Framework 4.6.1](http://go.microsoft.com/fwlink/?LinkId=671743)<br />- [.NET Framework 4.6](http://go.microsoft.com/fwlink/?LinkId=528232)<br />- [.NET Framework 4.5.2](http://go.microsoft.com/fwlink/p/?LinkId=397706)<br />- [.NET Framework 4.5.1](http://go.microsoft.com/fwlink/p/?LinkId=310159)<br />- [.NET Framework 4.5](http://go.microsoft.com/fwlink/p/?LinkId=245484)|
 
- \* The offline installer is larger because it contains the components for all the target platforms. When you finish running setup, the Windows operating system caches only the installer that was used. If the offline installer is deleted after the installation, the disk space used is the same as that used by the web installer. If the tool you use (for example, [InstallShield](#installshield-deployment)) to create your app's setup program provides a setup file folder that is removed after installation, the offline installer can be automatically deleted by placing it into the setup folder.
+ \* The offline installer is larger because it contains the components for all the target platforms. When you finish running setup, the Windows operating system caches only the installer that was used. If the offline installer is deleted after the installation, the disk space used is the same as that used by the web installer. If the tool you use (for example, [InstallAware](#installaware-deployment) or [InstallShield](#installshield-deployment)) to create your app's setup program provides a setup file folder that is removed after installation, the offline installer can be automatically deleted by placing it into the setup folder.
 
  ** If you're using the web installer with custom setup, you can use default language settings based on the user's Multilingual User Interface (MUI) setting, or specify another language pack by using the `/LCID` option on the command line. See the section [Chaining by Using the Default .NET Framework UI](#chaining_default) for examples.
 
 ## Deployment methods
- Three deployment methods are available:
+ Four deployment methods are available:
 
 - You can set a dependency on the .NET Framework. You can specify the .NET Framework as a prerequisite in your app's installation, using one of these methods:
 
     - Use [ClickOnce deployment](#clickonce-deployment) (available with Visual Studio)
+
+    - Create an [InstallAware project](#installaware-deployment) (free edition available for Visual Studio users)
 
     - Create an [InstallShield project](#installshield-deployment) (available with Visual Studio)
 
@@ -112,7 +114,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
  These deployment methods are discussed in detail in the following sections.
 
 ## Setting a dependency on the .NET Framework
-If you use ClickOnce, InstallShield, or WiX to deploy your app, you can add a dependency on the .NET Framework so it can be installed as part of your app.
+If you use ClickOnce, InstallAware, InstallShield, or WiX to deploy your app, you can add a dependency on the .NET Framework so it can be installed as part of your app.
 
 ### ClickOnce deployment
  ClickOnce deployment is available for projects that are created with Visual Basic and Visual C#, but it is not available for Visual C++.
@@ -137,6 +139,10 @@ If you use ClickOnce, InstallShield, or WiX to deploy your app, you can add a de
 
 8.  In the **Property Pages** dialog box, choose **OK**.
 
+<a name="installaware"></a> 
+### InstallAware deployment
+InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EXE), and App-V (Application Virtualization) packages from a single source. Easily [include any version of the .NET Framework](https://www.installaware.com/one-click-pre-requisite-installer.htm) in your setup, optionally customizing the installation by [editing the default scripts](https://www.installaware.com/msicode.htm). For example, InstallAware pre-installs certificates on Windows 7, without which the .NET Framework 4.7 setup fails. For more information on InstallAware, see the [InstallAware for Windows Installer](https://www.installaware.com/) website.
+
 ### InstallShield deployment
  In Visual Studio, to choose InstallShield deployment and add a dependency on the .NET Framework:
 
@@ -153,7 +159,7 @@ If you use ClickOnce, InstallShield, or WiX to deploy your app, you can add a de
 6.  Go to **Installation Requirements** and select the operating systems and the version of the .NET Framework you want to install.
 
 7.  Open the shortcut menu for your setup project and choose **Build**.
-
+ 
 <a name="wix"></a> 
 ### Windows Installer XML (WiX) deployment
  The Windows Installer XML (WiX) toolset builds Windows installation packages from XML source code. WiX supports a command-line environment that can be integrated into your build processes to build MSI and MSM setup packages. By using WiX, you can [specify the .NET Framework as a prerequisite](http://wixtoolset.org/documentation/manual/v3/howtos/redistributables_and_install_checks/install_dotnet.html), or [create a chainer](http://wixtoolset.org/documentation/manual/v3/xsd/wix/exepackage.html) to fully control the .NET Framework deployment experience. For more information about WiX, see the [Windows Installer XML (WiX) toolset](http://wixtoolset.org/) website.

@@ -34,7 +34,7 @@ See the [Prerequisites for Windows development](windows-prerequisites.md) topic 
 
 Install .NET Core on your distribution/version:
 
-* [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#linuxredhat)
+* [Red Hat Enterprise Linux 7](https://www.microsoft.com/net/core#linuxredhat)
 * [Ubuntu 14.04, 16.04, 16.10, 17.04 & Linux Mint 17, 18](https://www.microsoft.com/net/core#linuxubuntu)
 * [Debian 8.2+, 8.7+, 9](https://www.microsoft.com/net/core#linuxdebian)
 * [Fedora 24, 25, 26](https://www.microsoft.com/net/core#linuxfedora)

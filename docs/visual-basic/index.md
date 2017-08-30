@@ -1,13 +1,9 @@
 ---
 title: "Visual Basic"
-
 ms.date: "2015-07-20"
 ms.prod: .net
-
-
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -18,7 +14,6 @@ ms.assetid: 5cc578fe-d9e5-4015-937d-b34b83207072
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "de-de"
   - "es-es"
@@ -35,7 +30,8 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Visual Basic
+# Visual Basic Guide
+
 Visual Basic is engineered for productively building type-safe and object-oriented applications. Visual Basic enables developers to target Windows, Web, and mobile devices. As with all languages targeting the Microsoft .NET Framework, programs written in Visual Basic benefit from security and language interoperability.  
   
  This generation of Visual Basic continues the tradition of giving you a fast and easy way to create .NET Framework-based applications.  

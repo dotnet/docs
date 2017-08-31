@@ -1,0 +1,20 @@
+{
+  "Filters": [
+    {
+      "Files": [
+        "**/*.md"
+      ],
+      "Priorities": [
+        {
+          "Priority": "ht",
+          "Locales": [],
+          "Type": "ht"
+        }
+      ]
+    }
+  ],
+  "IncludeDependencies": true,
+  "AutoPush": true,
+  "XliffVersion": "1.2",
+  "UseJavascriptMarkdownTransformer": true
+}

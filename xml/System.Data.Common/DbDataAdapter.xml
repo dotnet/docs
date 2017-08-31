@@ -32,11 +32,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Common.DbDataAdapter> class inherits from the <xref:System.Data.Common.DataAdapter> class and helps a class implement a **DataAdapter** designed for use with a relational database.  
+ The <xref:System.Data.Common.DbDataAdapter> class inherits from the <xref:System.Data.Common.DataAdapter> class and implements the <xref:System.Data.IDbDataAdapter> interface. It helps a class implement a **DataAdapter** designed for use with a relational database.  
   
- An application does not create an instance of the <xref:System.Data.Common.DbDataAdapter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDbDataAdapter> and <xref:System.Data.Common.DbDataAdapter>.  
+ An application does not create an instance of the <xref:System.Data.Common.DbDataAdapter> class directly, but creates an instance of a class that inherits from it.  
   
- Classes that inherit <xref:System.Data.Common.DbDataAdapter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.Common.DbDataAdapter> class defines the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property, and the <xref:System.Data.Common.DbDataAdapter> interface defines eight overloads of the <xref:System.Data.IDataAdapter.Fill%2A> method. In turn, the <xref:System.Data.OleDb.OleDbDataAdapter> class inherits the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method, and also defines two additional overloads of <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> that take an ADO Recordset object as a parameter.  
+ Classes that inherit <xref:System.Data.Common.DbDataAdapter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.Common.DbDataAdapter> class defines the <xref:System.Data.IDbDataAdapter.SelectCommand%2A> property, and the <xref:System.Data.Common.DbDataAdapter> class defines eight overloads of the <xref:System.Data.IDataAdapter.Fill%2A> method. In turn, the <xref:System.Data.OleDb.OleDbDataAdapter> class inherits the <xref:System.Data.Common.DbDataAdapter.Fill%2A> method, and also defines two additional overloads of <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> that take an ADO Recordset object as a parameter.  
   
  ]]></format>
     </remarks>

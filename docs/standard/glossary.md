@@ -135,13 +135,15 @@ See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
 
-An open source alternative to the .NET Framework.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
 
-Mono started around the same time the .NET Framework was first released. Since the .NET Framework wasn't open source, Mono was forced to start from scratch and is thus a complete re-implementation of the .NET Framework with no shared code.
+It supports all of the currently published .NET Standard versions.
 
-When .NET Core was released under the MIT license, Microsoft also released [large chunks of the .NET Framework under the MIT license](https://github.com/microsoft/referencesource) as well. This enabled the Mono community to use the same code the .NET Framework uses in order to close gaps and avoid behavioral differences.
+Historically, Mono implemented the larger API of the .NET Framework and emulated some of the most popular capabilities on Unix. It is sometimes used to run .NET applications that rely on those capabilities on Unix.
 
-Mono is primarily used to run .NET applications on Linux and macOS. There are ports of Mono to other platforms; see [Mono's Supported Platforms](http://www.mono-project.com/docs/about-mono/supported-platforms/). Mono has implementations (though not necessarily complete) of WinForms, ASP.NET, and `System.Drawing`.
+Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
+
+To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
 
 ## .NET
 

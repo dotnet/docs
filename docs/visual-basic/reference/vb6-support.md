@@ -16,7 +16,6 @@ ms.author: "paulyuk"
 ---
 # Support Statement for Visual Basic 6.0 on Windows
 
-Update: August 2017
 
 ## Executive summary
 

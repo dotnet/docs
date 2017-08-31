@@ -32,7 +32,7 @@ macOS/Linux:
 
 The `dotnet-install` scripts are used to perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI tools and the shared runtime.
 
-We recommended to use the stable version that is hosted on [.NET Core main website](https://dot.net). The direct paths to the scripts are:
+We recommend that you use the stable version that is hosted on [.NET Core main website](https://dot.net). The direct paths to the scripts are:
 
 * https://dot.net/v1/dotnet-install.sh (bash, UNIX)
 * https://dot.net/v1/dotnet-install.ps1 (Powershell, Windows)
@@ -43,7 +43,7 @@ The installation scripts download the ZIP/tarball file from the CLI build drops 
 
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `--no-path` argument. 
 
--Before running the script, install the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). 
+Before running the script, install the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
 
 You can install a specific version using the `--version` argument. The version must be specified as a 3-part version (for example, 1.0.0-13232). If omitted, it uses the `latest` version.
 

@@ -148,7 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the key in the key/value pair.</summary>
-        <value>A <paramref name="TKey" /> that is the key of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
+        <value>A <typeparamref name="TKey" /> that is the key of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -239,7 +239,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value in the key/value pair.</summary>
-        <value>A <paramref name="TValue" /> that is the value of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
+        <value>A <typeparamref name="TValue" /> that is the value of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -299,7 +299,7 @@ using System.Runtime.CompilerServices;
 [assembly:DependencyAttribute("Assembly2", LoadHint.Sometimes)]  
 ```  
   
-```cpp#  
+```cpp  
 using namespace System::Runtime::CompilerServices;  
 [assembly:DependencyAttribute("Assembly1", LoadHint.Always)];  
 [assembly:DependencyAttribute("Assembly2", LoadHint.Sometimes)];  
